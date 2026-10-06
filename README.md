@@ -1040,29 +1040,50 @@ Os cards que eu acrescentar depois chegam nele sozinhos: a página carrega o
 
 ## Estrutura
 
+Desde a etapa 5 da Taioé (outubro de 2026), o app de estudo mora em
+`public/cards/` e é publicado em **taioe.com.br/cards/**, com login pela conta
+da Taioé e o progresso no banco (anexo do banco, §2, no plano da plataforma).
+As páginas de revisão continuam na raiz, por enquanto.
+
 ```
-index.html            telas do app de estudo
+public/cards/index.html        telas do app de estudo (Taioé Cards)
+public/cards/style.css         o visual do app (a Nunito vem de public/cards/fontes/)
+public/cards/js/inicio.js      a porta: sessão, cadastro, escolha do curso, uma aba por vez
+public/cards/js/app.js         fluxo, painel, lista de cards
+public/cards/js/sincronia.js   a fila de respostas, o lote, o recibo e a carga do curso
+public/cards/js/armazem.js     o IndexedDB «cards:dados» (progresso e fila)
+public/cards/js/motor.js       gerado — cópia do js/motor.js
+public/cards/js/versoes.js     gerado — o ?v= dos baralhos, que o inicio.js carrega
+public/cards/js/taioe-sessao.js e vendor/   cópias do taioe-hub (conferidas no CI)
+public/cards/data/cards-es.js  gerado — o curso de espanhol (es-pt), sem o lado inglês
+public/cards/data/cards-en.js  gerado — o curso de inglês (en-pt), sem o lado espanhol
+public/cards/data/textos-es.js gerado — os textos de recompensa
+fonte/sql/catalogo-*.sql       gerado — o catálogo de cada curso, para o workflow
+                               Catálogo do taioe-infra (antes do push da leva)
 revisar-es-en.html    revisão do Yoisser (só por URL)
 revisar-en-pt.html    revisão do Gere (só por URL)
 professor.html        página do Yoisser (só por URL)
-style.css
+style.css             o visual das páginas da raiz
 style-revisao.css     as telas de revisão
 style-professor.css   a página do professor
 img/                  a foto do professor
-js/motor.js           fila, tempos, conferência das respostas
-js/github.js          fábrica de clientes: GH (dados) e GH_REV (revisão)
-js/app.js             fluxo, painel, relatórios
+js/motor.js           fila, conferência das respostas (o original; o app usa a cópia)
+js/github.js          fábrica de clientes do GitHub, só para as páginas de revisão
 js/revisao.js         o que as duas páginas de revisão têm em comum
 js/revisar-es-en.js   a tela do Yoisser
 js/revisar-en-pt.js   a tela do Gere
-fonte/build.js        valida e gera o baralho, nas duas línguas
+fonte/build.js        valida e gera os baralhos, o catálogo e as cópias do app
 fonte/MANUAL-DOS-CARDS.md  como se escreve e se confere um card
 fonte/revisar.js      a leva em cinco linhas por card, para ler
-fonte/historico.js    tira do repositório de dados a história do painel
+fonte/historico.js    tira do repositório de dados antigo a história do painel
 fonte/cards/*.json    os cards
 fonte/tags.json       os temas em pt/en/es
-data/cards.js         gerado — o baralho do app de estudo, sem o inglês
 data/cards-revisao.js gerado — o baralho inteiro, para as páginas de revisão
 data/tags.js          gerado
-data/historico.js     gerado — a semente da curva e do diário do painel
+data/historico.js     gerado — a semente antiga da curva e do diário
 ```
+
+Cada card publicado leva `v`, o hash do próprio conteúdo: é a versão que vai
+em cada resposta. Uma leva nova segue esta ordem: `node fonte/build.js`, o
+workflow Catálogo no teste e na produção com `fonte/sql/catalogo-<curso>.sql`,
+e só então o push para a main.

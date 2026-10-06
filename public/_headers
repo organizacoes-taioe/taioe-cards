@@ -11,3 +11,12 @@
   Cache-Control: no-cache
 /cards/vendor/*
   Cache-Control: public, max-age=31536000, immutable
+# Os arquivos do app vão sempre com ?v=<hash do conteúdo> (fonte/build.js): mudou, muda o endereço.
+/cards/js/*
+  Cache-Control: public, max-age=31536000, immutable
+/cards/data/*
+  Cache-Control: public, max-age=31536000, immutable
+/cards/style.css
+  Cache-Control: public, max-age=31536000, immutable
+/cards/fontes/*
+  Cache-Control: public, max-age=31536000, immutable
