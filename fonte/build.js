@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /* ────────────────────────────────────────────────────────────────
    fonte/build.js — junta e valida os arquivos de fonte/cards/ e
-   gera data/cards.json (para ferramentas), data/cards-revisao.js (o
-   baralho com o inglês, para a revisão) e, para a Taioé, os baralhos
+   gera data/cards.json (para ferramentas) e, para a Taioé, os baralhos
    do app em public/cards/data/, a cópia do motor em public/cards/js/
    e o SQL do catálogo de cada curso em fonte/sql/.
 
@@ -705,9 +704,8 @@ if (erros.length) {
 
 /* ── saída ──
    Um arquivo por baralho, todos no mesmo formato: data/cards-<idioma>.js, que
-   põe o baralho em window.BARALHOS[idioma]. O espanhol completo sai como
-   data/cards-revisao.js, que é o que as telas de revisão carregam. O app da
-   Taioé carrega os baralhos de public/cards/data/ (ver mais abaixo).
+   põe o baralho em window.BARALHOS[idioma]. O app da Taioé carrega os
+   baralhos de public/cards/data/ (ver mais abaixo).
 
    A data só muda quando o baralho muda. Carimbada a cada build, ela fazia todo
    build em dia novo reescrever o baralho e trocar o ?v= dele, mesmo sem card
@@ -739,12 +737,6 @@ for (const { idioma, cards } of baralhos) {
       comoJs(baralho, ["window.BARALHOS['" + idioma + "']"]), 'utf8');
   }
 
-  if (legado) {
-    /* O espanhol completo sai com o nome antigo, que as telas de revisão
-       carregam, e responde também pelo nome novo. */
-    fs.writeFileSync(path.join(raiz, 'data', 'cards-revisao.js'),
-      comoJs(baralho, ['window.CARDS_RAW', "window.BARALHOS['es']"]), 'utf8');
-  }
 }
 
 /* ── o app da Taioé: public/cards/ ──
@@ -885,8 +877,8 @@ if (fs.existsSync(pastaCandidatos)) {
 const assets = [
   'style.css', 'style-revisao.css', 'style-professor.css',
   'js/motor.js', 'js/github.js', 'js/app.js',
-  'js/revisao.js', 'js/revisar-es-en.js', 'js/revisar-en-pt.js',
-  'data/cards-revisao.js', 'data/tags.js', 'data/historico.js',
+  'js/revisao.js',
+  'data/tags.js', 'data/historico.js',
   'data/cards-es.js', 'data/cards-en.js', 'data/cards-pt.js',
   'data/textos-es.js', 'data/textos-en.js', 'data/textos-pt.js',
   'data/candidatos-es.js', 'js/revisao.js', 'js/escolher-textos.js'
@@ -944,7 +936,7 @@ for (const pagina of fs.readdirSync(pastaPublica).filter(f => f.endsWith('.html'
 }
 
 console.log('\n  ok → ' + baralhos.map(b => b.idioma === 'es'
-  ? 'data/cards-revisao.js'
+  ? 'data/cards.json'
   : 'data/cards-' + b.idioma + '.js').join(', ') +
   '; app em public/cards/data/; catálogo em fonte/sql/');
 console.log('  carimbo ?v= por arquivo; ' + trocadas + ' página(s) regravada(s)\n');
