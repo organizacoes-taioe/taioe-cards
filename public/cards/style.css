@@ -392,8 +392,7 @@ svg.grafico-etapas{display:block;width:100%;height:auto;margin:4px 0 14px}
 svg.grafico-etapas .malha{stroke:var(--borda);stroke-width:1}
 svg.grafico-etapas .eixo{fill:var(--texto-2);font-size:10px}
 /* a fresta é o fundo da ficha passando entre duas bandas */
-svg.grafico-etapas .fresta{stroke:var(--fundo-2);stroke-width:2;stroke-linejoin:round}
-svg.grafico-etapas .fresta.fina{stroke-width:1}
+svg.grafico-etapas .fresta{stroke:var(--fundo-2);stroke-width:1;stroke-linejoin:round}
 svg.grafico-etapas .cursor{stroke:var(--texto-2);stroke-width:1}
 .chaves{display:flex;flex-wrap:wrap;gap:6px 18px;margin:2px 0 4px}
 .chaves .chave{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--texto-2)}
@@ -606,5 +605,13 @@ label input:focus{outline:0;border-color:var(--acento)}
 
 /* ── Taioé: a porta e a escolha do curso ── */
 #porta-texto.erro{color:var(--erro)}
-.escolha-curso{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:18px}
-.escolha-curso .primario{min-width:200px}
+.escolha-curso{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:22px}
+.curso{
+  display:flex;align-items:center;gap:14px;min-width:210px;padding:16px 22px;
+  background:var(--fundo-2);color:var(--texto);border:1px solid var(--borda);border-radius:var(--raio);
+  font:inherit;font-weight:700;font-size:18px;cursor:pointer;box-shadow:var(--sombra);
+  transition:border-color .15s,transform .15s;
+}
+.curso:hover,.curso:focus-visible{border-color:var(--acento);transform:translateY(-1px);outline:none}
+.curso-bandeira{width:36px;height:24px;border-radius:3px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+.curso-nome{letter-spacing:.2px}
