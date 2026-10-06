@@ -555,8 +555,8 @@ Card com alguns desses campos e não todos é erro: é tradução pela metade.
   defeitos de 6.1 e 6.3 atravessam a tradução: corrigido o português, confira
   o inglês do mesmo card.
 
-As checagens de formato do inglês saem como aviso, e quem decide é a revisão
-(`revisar-es-en.html`), cujas decisões ficam à parte e prevalecem sobre a fonte.
+As checagens de formato do inglês saem como aviso, e quem decide é quem
+escreve a leva (as telas de revisão foram apagadas em 06/10/2026).
 Num card de gênero, as telas de revisão mostram o texto com as chaves: quem
 mexer no inglês tem de devolvê-las, ou o card passa a variar de um lado só.
 

@@ -844,10 +844,9 @@ node fonte/build.js
 
 Isso valida tudo (ids repetidos, distrator — ou metade de distrator — igual à
 resposta, resposta com parêntese cuja forma nua não é aceita, conjugação sem
-quatro `formasEs`, nível inválido, card duplicado) e regenera `data/cards.json`, `data/cards.js` e
-`data/cards-revisao.js`. O `cards.js` é o que o app de estudo carrega, e vai
-**sem o lado inglês**, que é um terço do baralho e só a revisão usa; o
-`cards-revisao.js` tem tudo.
+quatro `formasEs`, nível inválido, card duplicado) e regenera `data/cards.json`
+(o baralho inteiro, para as ferramentas) e os baralhos do app em
+`public/cards/data/` (cada curso sem o lado da outra língua).
 
 O build também carimba o `?v=` dos assets nos HTML — **um por arquivo**, tirado
 do conteúdo de cada um. Mexer no CSS não obriga ninguém a baixar o baralho de
@@ -951,99 +950,12 @@ escolha**, **escrevendo em português**, **na volta (você produz o espanhol)** 
 mesmo recado de relance — cinza para o que nunca saiu, laranja para o que está
 em curso, verde para o que já foi vencido nas duas direções.
 
-## O circuito de revisão
-
-A tradução portuguesa nunca tinha passado por um falante nativo de espanhol, e o
-card `f045` mostrou como o erro entra: a resposta era um decalque do espanhol
-(«tomara que ele viesse») que soa estranho em português. A revisão usa o inglês
-como língua-ponte, em duas etapas independentes:
-
-1. **Yoisser** (venezuelano, professor de espanhol) confere `es → en`. Ele julga
-   se o inglês diz o que o espanhol diz. **Não vê o português** — é isso que
-   torna a conferência dele uma medida independente da tradução auditada.
-2. **Gere** confere `en → pt`, com o inglês já validado como referência.
-
-São duas páginas soltas, **não ligadas a partir do `index.html`**: só se chega
-por URL, e as duas levam `noindex`.
-
-| Quem | URL |
-|---|---|
-| Yoisser | `gereneto.github.io/espanhol-cards/revisar-es-en.html` |
-| Gere | `gereneto.github.io/espanhol-cards/revisar-en-pt.html` |
-
-Um card por vez. O Yoisser corrige a resposta, as variantes, os quatro
-distratores e a nota **nos próprios campos**, e decide entre *Aceptar todo*,
-*Guardar sugerencia* e *Proponer eliminar*, com um comentário livre em qualquer
-dos três casos. A tela dele é toda em espanhol.
-
-Na página do Gere aparecem **só os cards que o Yoisser já decidiu**: o espanhol,
-o inglês validado (com o que ele mudou marcado e o original riscado ao lado), e
-então o português a julgar — `pt`, `aceitas`, os quatro `distratores` e a `nota`.
-Marca-se **ok**, **rever** ou **apagar**, com observação. Há filtros para ver só
-os pendentes, só os que ele alterou, só os que ele quer excluir ou só os que ele
-comentou.
-
-### Onde os dados ficam
-
-Repositório **[espanhol-cards-revisao](https://github.com/gereneto/espanhol-cards-revisao)**,
-separado do de progresso:
-
-- `revisao-es-en.json` — o que o Yoisser decidiu. Guarda **só os campos que ele
-  mudou**, então o arquivo diz exatamente onde ele meteu a mão.
-- `revisao-en-pt.json` — o que o Gere marcou. O campo `base_en` guarda o inglês
-  que estava na tela na hora; se o Yoisser reeditar depois, a página avisa que o
-  inglês mudou desde a marcação.
-
-Cada decisão vai para o `localStorage` na hora e sobe ao GitHub a cada oito, mais
-ao fechar a aba. Nada se perde se a rede cair.
-
-O app de estudo e as páginas de revisão usam **tokens diferentes**, guardados em
-chaves separadas (`espanhol-cards:github` e `espanhol-cards:github-revisao`), de
-modo que os dois convivem no mesmo navegador sem brigar.
-
-### O token, e por que ele é emprestado
-
-Um **fine-grained token só alcança recursos de um único dono** — você mesmo ou
-uma organização. A documentação do GitHub é explícita: ele *não* serve para
-repositório onde a pessoa é apenas colaboradora. Como `espanhol-cards-revisao`
-está numa conta pessoal, um token que o Yoisser criasse na conta dele nunca
-enxergaria esse repositório. As saídas seriam um token *classic* com escopo
-`repo` (que alcança tudo o que ele tem), mover o repositório para uma
-organização, ou emprestar o token.
-
-Optamos por **emprestar**: um único fine-grained token, criado por mim, com
-acesso **apenas** a `espanhol-cards-revisao` e permissão **Contents: Read and
-write**, usado nas duas páginas. O repositório não guarda nada sensível — só as
-decisões da revisão — e se o token vazar é só revogar e gerar outro. Em troca, o
-Yoisser não precisa nem criar conta no GitHub.
-
-Criar o token: `github.com/settings/personal-access-tokens/new` →
-**Repository access: Only select repositories** → `espanhol-cards-revisao` →
-**Permissions: Contents = Read and write**.
-
-### O que passar ao Yoisser
-
-> Abre esta página: `gereneto.github.io/espanhol-cards/revisar-es-en.html`
->
-> Abajo del todo hay un desplegable, «Conexión con GitHub». Pega ahí el token
-> que te mando aparte y pulsa Guardar — se queda solo en tu ordenador. No hace
-> falta que crees ninguna cuenta.
->
-> Si el token te da problemas, revisa igual y pulsa **Descargar archivo** al
-> terminar: me mandas el `.json` y yo lo cargo.
-
-O botão **Importar arquivo** da página do Gere reconhece os dois formatos pelo
-campo `revisor`, então esse caminho manual funciona ponta a ponta sem token.
-
-Os cards que eu acrescentar depois chegam nele sozinhos: a página carrega o
-`data/cards-revisao.js` do próprio site, então basta dar push e pedir que recarregue.
-
 ## Estrutura
 
 Desde a etapa 5 da Taioé (outubro de 2026), o app de estudo mora em
 `public/cards/` e é publicado em **taioe.com.br/cards/**, com login pela conta
 da Taioé e o progresso no banco (anexo do banco, §2, no plano da plataforma).
-As páginas de revisão continuam na raiz, por enquanto.
+As telas de revisão (es-en e en-pt) foram apagadas em 06/10/2026.
 
 ```
 public/cards/index.html        telas do app de estudo (Taioé Cards)
@@ -1060,25 +972,20 @@ public/cards/data/cards-en.js  gerado — o curso de inglês (en-pt), sem o lado
 public/cards/data/textos-es.js gerado — os textos de recompensa
 fonte/sql/catalogo-*.sql       gerado — o catálogo de cada curso, para o workflow
                                Catálogo do taioe-infra (antes do push da leva)
-revisar-es-en.html    revisão do Yoisser (só por URL)
-revisar-en-pt.html    revisão do Gere (só por URL)
 professor.html        página do Yoisser (só por URL)
 style.css             o visual das páginas da raiz
-style-revisao.css     as telas de revisão
+style-revisao.css     a página de escolha de textos
 style-professor.css   a página do professor
 img/                  a foto do professor
 js/motor.js           fila, conferência das respostas (o original; o app usa a cópia)
-js/github.js          fábrica de clientes do GitHub, só para as páginas de revisão
-js/revisao.js         o que as duas páginas de revisão têm em comum
-js/revisar-es-en.js   a tela do Yoisser
-js/revisar-en-pt.js   a tela do Gere
+js/github.js          cliente do GitHub, só para a página de escolha de textos
+js/revisao.js         o apoio da página de escolha de textos (escolher-textos.html)
 fonte/build.js        valida e gera os baralhos, o catálogo e as cópias do app
 fonte/MANUAL-DOS-CARDS.md  como se escreve e se confere um card
 fonte/revisar.js      a leva em cinco linhas por card, para ler
 fonte/historico.js    tira do repositório de dados antigo a história do painel
 fonte/cards/*.json    os cards
 fonte/tags.json       os temas em pt/en/es
-data/cards-revisao.js gerado — o baralho inteiro, para as páginas de revisão
 data/tags.js          gerado
 data/historico.js     gerado — a semente antiga da curva e do diário
 ```
