@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /* ────────────────────────────────────────────────────────────────
    fonte/build.js — junta e valida os arquivos de fonte/cards/ e
-   gera data/cards.json (para ferramentas), data/cards.js (que o app
-   de estudo carrega, para funcionar até abrindo o index.html direto)
-   e data/cards-revisao.js (o baralho com o inglês, para a revisão).
+   gera data/cards.json (para ferramentas), data/cards-revisao.js (o
+   baralho com o inglês, para a revisão) e, para a Taioé, os baralhos
+   do app em public/cards/data/, a cópia do motor em public/cards/js/
+   e o SQL do catálogo de cada curso em fonte/sql/.
 
    Uso:  node fonte/build.js
    ──────────────────────────────────────────────────────────────── */
@@ -704,11 +705,9 @@ if (erros.length) {
 
 /* ── saída ──
    Um arquivo por baralho, todos no mesmo formato: data/cards-<idioma>.js, que
-   põe o baralho em window.BARALHOS[idioma]. O espanhol também continua saindo
-   nos dois nomes antigos — data/cards.js, sem o lado inglês, que é o que o app
-   de hoje carrega, e data/cards-revisao.js, completo, que é o que as telas de
-   revisão carregam. Quando a tela de escolha do curso existir, ela lê o
-   BARALHOS e os dois nomes antigos podem ser aposentados.
+   põe o baralho em window.BARALHOS[idioma]. O espanhol completo sai como
+   data/cards-revisao.js, que é o que as telas de revisão carregam. O app da
+   Taioé carrega os baralhos de public/cards/data/ (ver mais abaixo).
 
    A data só muda quando o baralho muda. Carimbada a cada build, ela fazia todo
    build em dia novo reescrever o baralho e trocar o ?v= dele, mesmo sem card
@@ -741,24 +740,100 @@ for (const { idioma, cards } of baralhos) {
   }
 
   if (legado) {
-    /* O app de estudo de hoje não usa o lado inglês, e ele é um terço do
-       baralho: o cards.js vai sem esses campos. Quem quer ler o baralho lê o
-       cards.json, que continua indentado. */
-    const semIngles = Object.assign({}, baralho, {
-      cards: cards.map(c => {
-        const limpo = Object.assign({}, c);
-        CAMPOS_SO_DA_REVISAO.forEach(k => delete limpo[k]);
-        return limpo;
-      })
-    });
-    fs.writeFileSync(path.join(raiz, 'data', 'cards.js'), comoJs(semIngles, ['window.CARDS_RAW']), 'utf8');
-    /* O espanhol completo continua saindo com o nome antigo, que as telas de
-       revisão carregam — e já responde também pelo nome novo, para quem vier
-       ler os três baralhos do mesmo jeito. No dia em que o app escolher curso,
-       este arquivo vira data/cards-es.js e o CARDS_RAW sai de cena. */
+    /* O espanhol completo sai com o nome antigo, que as telas de revisão
+       carregam, e responde também pelo nome novo. */
     fs.writeFileSync(path.join(raiz, 'data', 'cards-revisao.js'),
       comoJs(baralho, ['window.CARDS_RAW', "window.BARALHOS['es']"]), 'utf8');
   }
+}
+
+/* ── o app da Taioé: public/cards/ ──
+   Cada curso é um baralho respondido em português (es-pt, en-pt). O app só
+   carrega o que o curso usa: do baralho de espanhol sai o lado inglês, do de
+   inglês sai o lado espanhol — um terço do arquivo cada.
+
+   Cada card ganha «v», a versão DELE: o hash do conteúdo do card na fonte
+   (correção 18 do anexo do banco). Muda só quando o card muda, e é ela que
+   vai em cada resposta, para a calibragem saber de que texto se fala. */
+const pastaPublica = path.join(raiz, 'public', 'cards');
+const dataPublica = path.join(pastaPublica, 'data');
+fs.mkdirSync(dataPublica, { recursive: true });
+fs.mkdirSync(path.join(pastaPublica, 'js'), { recursive: true });
+
+const crypto = require('crypto');
+const hash8 = texto => crypto.createHash('sha1').update(texto).digest('hex').slice(0, 8);
+const CAMPOS_DE_OUTRA_AUDIENCIA = {
+  es: ['en', 'aceitasEn', 'distratoresEn', 'notaEn', 'formasEsEn', 'sinonimosEn', 'regionaisEn'],
+  en: ['es', 'aceitasEs', 'distratoresEs', 'notaEs', 'formasEnEs', 'sinonimosEs', 'regionaisEs']
+};
+const ID_DO_CATALOGO = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+
+for (const { idioma, cards } of baralhos) {
+  if (!CAMPOS_DE_OUTRA_AUDIENCIA[idioma]) continue;      // o baralho de português ainda não é curso
+  const curso = idioma + '-pt';
+  const doApp = cards.map(c => {
+    if (!ID_DO_CATALOGO.test(c.id) || c.id.length > 24) {
+      console.error('\n  id fora do formato do catálogo (minúsculas, números e hífens, até 24): ' + c.id + '\n');
+      process.exit(1);
+    }
+    const limpo = Object.assign({}, c);
+    CAMPOS_DE_OUTRA_AUDIENCIA[idioma].forEach(k => delete limpo[k]);
+    limpo.v = hash8(JSON.stringify(c));
+    return limpo;
+  });
+  const leva = hash8(doApp.map(c => c.id + ':' + c.v).join('\n'));
+  const pacote = { versao: 1, idioma: idioma, curso: curso, leva: leva, total: doApp.length, cards: doApp };
+  fs.writeFileSync(path.join(dataPublica, 'cards-' + idioma + '.js'),
+    comoJs(pacote, ["window.BARALHOS['" + idioma + "']"]), 'utf8');
+  escreverCatalogo(curso, leva, doApp);
+}
+
+/* O motor do app é o mesmo das ferramentas: uma cópia byte a byte, conferida no
+   CI (workflow Cópias). */
+fs.copyFileSync(arqMotor, path.join(pastaPublica, 'js', 'motor.js'));
+
+/* ── o catálogo de cada curso (anexo do banco, §3.2) ──
+   fonte/sql/catalogo-<curso>.sql: a lista de cards da leva, aplicada pelo
+   workflow Catálogo do taioe-infra no teste e na produção ANTES de a leva ir
+   para a main. Card que saiu do baralho não é apagado: ganha arquivado_em, e o
+   estado de quem o estudou continua válido. «alternativas» são os textos que a
+   múltipla mostra na ida (a resposta e os distratores, nos dois gêneros): só
+   eles entram no agregado de distratores (correção 16). */
+function escreverCatalogo(curso, leva, doApp) {
+  const q = t => "'" + String(t).replace(/'/g, "''") + "'";
+  const lista = xs => xs.length ? 'array[' + xs.map(q).join(', ') + ']::text[]' : "'{}'::text[]";
+  const linhas = doApp.map(c => {
+    const alternativas = new Set();
+    [0, 1].forEach(g => {
+      const f = Motor.formaDoCard(c, g);
+      [f.pt].concat(f.distratores || []).forEach(t => { if (t) alternativas.add(String(t)); });
+    });
+    const requer = typeof c.requer === 'string' ? q(c.requer) : 'null';
+    return '  (' + [q(curso), q(c.id), q(c.tipo), q(c.nivel), lista(c.tags || []), requer, q(c.v),
+      lista([...alternativas].sort())].join(', ') + ')';
+  });
+  const sql = [
+    '-- GERADO POR fonte/build.js — não edite à mão.',
+    '-- Catálogo do curso ' + curso + ', leva ' + leva + ', ' + doApp.length + ' cards.',
+    '-- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.',
+    '',
+    'insert into cards.versoes (curso, versao, notas)',
+    'values (' + q(curso) + ', ' + q(leva) + ', ' + q(doApp.length + ' cards') + ')',
+    'on conflict (curso, versao) do nothing;',
+    '',
+    'insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values',
+    linhas.join(',\n'),
+    'on conflict (curso, card_id) do update set',
+    '  tipo = excluded.tipo, nivel = excluded.nivel, tags = excluded.tags, requer = excluded.requer,',
+    '  versao = excluded.versao, alternativas = excluded.alternativas, arquivado_em = null;',
+    '',
+    'update cards.catalogo set arquivado_em = now()',
+    ' where curso = ' + q(curso) + ' and arquivado_em is null',
+    '   and card_id <> all (' + lista(doApp.map(c => c.id)) + ');',
+    ''
+  ].join('\n');
+  fs.mkdirSync(path.join(__dirname, 'sql'), { recursive: true });
+  fs.writeFileSync(path.join(__dirname, 'sql', 'catalogo-' + curso + '.sql'), sql, 'utf8');
 }
 
 /* ── os textos, à parte do baralho ──
@@ -770,10 +845,11 @@ for (const b of baralhos) {
   const pacote = { versao: 2, idioma: b.idioma, total: b.textos.length, textos: b.textos };
   fs.writeFileSync(path.join(raiz, 'data', 'textos-' + b.idioma + '.json'),
     JSON.stringify(pacote, null, 1), 'utf8');
-  fs.writeFileSync(path.join(raiz, 'data', 'textos-' + b.idioma + '.js'),
-    '/* GERADO POR fonte/build.js — não edite à mão. */\n' +
+  const js = '/* GERADO POR fonte/build.js — não edite à mão. */\n' +
     'window.TEXTOS = window.TEXTOS || {};\n' +
-    "window.TEXTOS['" + b.idioma + "'] = " + JSON.stringify(pacote) + ';\n', 'utf8');
+    "window.TEXTOS['" + b.idioma + "'] = " + JSON.stringify(pacote) + ';\n';
+  fs.writeFileSync(path.join(raiz, 'data', 'textos-' + b.idioma + '.js'), js, 'utf8');
+  fs.writeFileSync(path.join(dataPublica, 'textos-' + b.idioma + '.js'), js, 'utf8');
 }
 
 /* ── os candidatos a texto ──
@@ -806,12 +882,11 @@ if (fs.existsSync(pastaCandidatos)) {
    todos, e mexer numa linha do CSS obrigava o navegador a baixar de novo o
    baralho inteiro. Agora só muda o ?v= de quem mudou — e a página só é
    regravada se algum carimbo dela mudou. */
-const crypto = require('crypto');
 const assets = [
   'style.css', 'style-revisao.css', 'style-professor.css',
   'js/motor.js', 'js/github.js', 'js/app.js',
   'js/revisao.js', 'js/revisar-es-en.js', 'js/revisar-en-pt.js',
-  'data/cards.js', 'data/cards-revisao.js', 'data/tags.js', 'data/historico.js',
+  'data/cards-revisao.js', 'data/tags.js', 'data/historico.js',
   'data/cards-es.js', 'data/cards-en.js', 'data/cards-pt.js',
   'data/textos-es.js', 'data/textos-en.js', 'data/textos-pt.js',
   'data/candidatos-es.js', 'js/revisao.js', 'js/escolher-textos.js'
@@ -838,7 +913,38 @@ for (const pagina of fs.readdirSync(raiz).filter(f => f.endsWith('.html'))) {
   if (html !== antes) { fs.writeFileSync(caminho, html, 'utf8'); trocadas++; }
 }
 
+/* As páginas do app carimbam os arquivos de public/cards/, com o caminho
+   relativo a elas (js/app.js, data/cards-es.js…). O baralho é carregado por
+   script, e o carimbo dele vai para o js/versoes.js. */
+const assetsDoApp = [];
+(function listar(dir) {
+  for (const f of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, f.name);
+    if (f.isDirectory()) listar(p);
+    else if (/\.(js|css|woff2)$/.test(f.name) && f.name !== 'versoes.js') assetsDoApp.push(path.relative(pastaPublica, p).split(path.sep).join('/'));
+  }
+})(pastaPublica);
+const versaoDoApp = {};
+for (const a of assetsDoApp) versaoDoApp[a] = hash8(fs.readFileSync(path.join(pastaPublica, a)));
+const versoesJs = '/* GERADO POR fonte/build.js — não edite à mão. */\nwindow.CARDS_VERSOES = ' +
+  JSON.stringify(Object.fromEntries(Object.entries(versaoDoApp).filter(([a]) => a.startsWith('data/')))) + ';\n';
+const arqVersoes = path.join(pastaPublica, 'js', 'versoes.js');
+if (!fs.existsSync(arqVersoes) || fs.readFileSync(arqVersoes, 'utf8') !== versoesJs) fs.writeFileSync(arqVersoes, versoesJs, 'utf8');
+versaoDoApp['js/versoes.js'] = hash8(versoesJs);
+for (const pagina of fs.readdirSync(pastaPublica).filter(f => f.endsWith('.html'))) {
+  const caminho = path.join(pastaPublica, pagina);
+  const antes = fs.readFileSync(caminho, 'utf8');
+  let html = antes;
+  for (const a of Object.keys(versaoDoApp)) {
+    const escapado = a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    html = html.replace(new RegExp('(href|src)="' + escapado + '(\\?v=[^"]*)?"', 'g'),
+      '$1="' + a + '?v=' + versaoDoApp[a] + '"');
+  }
+  if (html !== antes) { fs.writeFileSync(caminho, html, 'utf8'); trocadas++; }
+}
+
 console.log('\n  ok → ' + baralhos.map(b => b.idioma === 'es'
-  ? 'data/cards.js e data/cards-revisao.js'
-  : 'data/cards-' + b.idioma + '.js').join(', '));
+  ? 'data/cards-revisao.js'
+  : 'data/cards-' + b.idioma + '.js').join(', ') +
+  '; app em public/cards/data/; catálogo em fonte/sql/');
 console.log('  carimbo ?v= por arquivo; ' + trocadas + ' página(s) regravada(s)\n');

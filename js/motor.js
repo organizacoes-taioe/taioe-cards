@@ -324,6 +324,21 @@ window.Motor = (function () {
     const l = String(direcao || 'es-pt').split('-')[1];
     return LINGUAS[l] ? l : 'pt';
   }
+  /* ── o baralho da vez ──
+     A ida é reconhecer a língua ensinada (es→pt); a volta é produzi-la
+     (pt→es). O espanhol foi o primeiro e é o padrão; o app troca de baralho
+     com usarBaralho('en'), e daí a ida é en→pt e a volta pt→en. O que é
+     próprio do espanhol (o ñ, a conjugação, a leitura espanhola da pergunta)
+     continua preso a 'es-pt' e 'pt-es', e no inglês simplesmente não dispara. */
+  let IDA = 'es-pt', VOLTA = 'pt-es';
+  function usarBaralho(lingua) {
+    const l = LINGUAS[lingua] && lingua !== 'pt' ? lingua : 'es';
+    IDA = l + '-pt';
+    VOLTA = 'pt-' + l;
+  }
+  function ehVolta(direcao) { return direcao === VOLTA; }
+  function direcoes() { return { ida: IDA, volta: VOLTA }; }
+
   /* distância de Levenshtein, só para deslize de digitação em palavra única */
   function distancia(a, b) {
     if (a === b) return 0;
@@ -1804,7 +1819,7 @@ window.Motor = (function () {
          Voltar em dez posições seria pedir que se reconheça o que se acabou
          de ler — a mesma muleta que o piso do acerto nessa direção evita.
          Aqui o piso é menor do que aquele: errou, então precisa voltar. */
-      if (r.direcao === 'pt-es') base = r.quase ? 26 : 20;
+      if (ehVolta(r.direcao)) base = r.quase ? 26 : 20;
       base *= (1 + 0.5 * Math.min(est.errosSeguidos || 0, 4));
     } else if (r.modo === 'multipla') {
       // acertar na múltipla escolha vale pouco: pode ter sido chute
@@ -1814,7 +1829,7 @@ window.Motor = (function () {
          nada: a grafia espanhola acabou de passar na frente dos olhos, e o
          que se recupera é a memória da tela, não a da palavra. O card só
          reaparece bem mais adiante, quando a imagem já não sirva de muleta. */
-      if (r.acertou && r.direcao === 'pt-es') base = Math.max(base, 90);
+      if (r.acertou && ehVolta(r.direcao)) base = Math.max(base, 90);
     } else {
       /* Escrever pedia 110, mais de três vezes o que pede a escolha (32).
          Agora é o dobro. */
@@ -1910,7 +1925,7 @@ window.Motor = (function () {
        cinco, depois escrever, e três acertos seguidos escrevendo fecham a
        direção. Errar devolve para a múltipla escolha da direção em que está
        — quem já provou o espanhol→português não volta à estaca zero. */
-    const inversa = r.direcao === 'pt-es';
+    const inversa = ehVolta(r.direcao);
     const jaDominado = est.etapa === 'dominado';
     if (r.acertou) {
       if (jaDominado) {
@@ -1994,16 +2009,17 @@ window.Motor = (function () {
      você tem que produzir o espanhol, que é bem mais difícil. Cada direção
      repete o mesmo caminho — primeiro escolher entre cinco, depois escrever. */
   const FASES = {
-    'multipla':         { direcao: 'es-pt', modo: 'multipla' },
-    'escrita':          { direcao: 'es-pt', modo: 'escrita' },
-    'consolidado':      { direcao: 'pt-es', modo: 'multipla' },  // valor antigo
-    'inversa-multipla': { direcao: 'pt-es', modo: 'multipla' },
-    'inversa-escrita':  { direcao: 'pt-es', modo: 'escrita' },
-    'dominado':         { direcao: 'pt-es', modo: 'escrita' }
+    'multipla':         { volta: false, modo: 'multipla' },
+    'escrita':          { volta: false, modo: 'escrita' },
+    'consolidado':      { volta: true,  modo: 'multipla' },  // valor antigo
+    'inversa-multipla': { volta: true,  modo: 'multipla' },
+    'inversa-escrita':  { volta: true,  modo: 'escrita' },
+    'dominado':         { volta: true,  modo: 'escrita' }
   };
 
   function faseDe(est) {
-    return FASES[(est && est.etapa)] || FASES['multipla'];
+    const f = FASES[(est && est.etapa)] || FASES['multipla'];
+    return { direcao: f.volta ? VOLTA : IDA, modo: f.modo };
   }
 
   function modoDe(est) { return faseDe(est).modo; }
@@ -2011,10 +2027,10 @@ window.Motor = (function () {
 
   /* O que o card pergunta e o que ele espera, conforme a direção. */
   function pergunta(card, direcao) {
-    return direcao === 'pt-es' ? card.pt : card.es;
+    return card[linguaDaPergunta(direcao)];
   }
   function resposta(card, direcao) {
-    return direcao === 'pt-es' ? card.es : card.pt;
+    return card[linguaDaResposta(direcao)];
   }
   /* ── montagem da fila inicial ──
      Intercala os níveis e alterna palavra/frase, para medir logo de cara
@@ -2250,13 +2266,15 @@ window.Motor = (function () {
       const fim = classe.slice(3);
       if (trechos.filter(t => semCauda(t.daOutra).slice(-1) === fim).length < 3) return prontos;
     }
-    const semArtigoEs = t => semAcento(String(t || '').trim().toLowerCase().replace(ARTIGOS_ES, ''));
-    const alvoEs = semArtigoEs(palavra.es);
+    const ensinada = idiomaDoCard(palavra);
+    const artigoDela = ensinada === 'es' ? ARTIGOS_ES : (ARTIGO_DA_LINGUA[ensinada] || ARTIGOS_ES);
+    const semArtigoEs = t => semAcento(String(t || '').trim().toLowerCase().replace(artigoDela, ''));
+    const alvoEs = semArtigoEs(palavra[ensinada]);
     const assuntos = (palavra.tags || []).filter(t => !TAGS_GERAIS.has(t));
     const traducoes = c => formasPt(c).map(f => normalizar(f.nucleo, 'pt')).filter(Boolean);
     const daPalavra = new Set(traducoes(palavra));
     const jaNaTela = new Set(trechos.map(t => normalizar(semCauda(t.daOutra), 'pt')));
-    const certas = new Set(respostasAceitas(card, 'es-pt'));
+    const certas = new Set(respostasAceitas(card, IDA));
     const maiuscula = /^[A-ZÀ-Ý]/.test(miolo);
     const montar = nucleo => {
       const x = card.pt.split(/\s+/);
@@ -2273,7 +2291,7 @@ window.Motor = (function () {
       const chave = normalizar(forma.nucleo, 'pt');
       if (!chave || jaNaTela.has(chave) || traducoes(c).some(t => daPalavra.has(t))) return;
 
-      const es = semArtigoEs(c.es);
+      const es = semArtigoEs(c[ensinada]);
       const parecida = 1 - distancia(es, alvoEs) / Math.max(es.length, alvoEs.length, 1);
       const mesmoAssunto = (c.tags || []).some(t => assuntos.includes(t));
       if (parecida < (mesmoAssunto ? PARECIDA_NO_ASSUNTO : PARECIDA_MINIMA)) return;
@@ -2356,7 +2374,7 @@ window.Motor = (function () {
     const minha = partes(palavra[campo.certa] || '');
     if (!minha.nucleo) return [];
     const frase = String(card[campo.certa] || '');
-    const escapado = minha.nucleo.replace(/[.*+?^${}()|[\]\\]/g, '\\  function distratoresDaLingua(card, todos, lingua) {');
+    const escapado = minha.nucleo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const onde = new RegExp('(^|[^' + LETRA_U + '])(' + escapado + ')(?![' + LETRA_U + '])', 'iu').exec(frase);
     if (!onde) return [];
     const ini = onde.index + onde[1].length, fim = ini + onde[2].length;
@@ -2517,6 +2535,7 @@ window.Motor = (function () {
     normalizar, conferir,
     estadoInicial, registrar, modoDe, direcaoDe, faseDe, anotarDiario, diaLocal,
     pergunta, resposta, normalizarEs, normalizarEn, formaReconhecida,
+    usarBaralho, ehVolta, direcoes,
     erroDeGenero, formasAceitas, LIMITES, cortar,
     linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
     indiceEspanhol, leituraEspanhola, erroDeFlexao,

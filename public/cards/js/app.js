@@ -1,12 +1,23 @@
 /* ────────────────────────────────────────────────────────────────
-   app.js — telas, fluxo de estudo e sincronização.
+   app.js — telas e fluxo de estudo. Quem chama é o inicio.js, com o
+   curso, a sessão e o progresso guardado neste aparelho (ctx). A
+   sincronização com a conta mora em sincronia.js (anexo do banco, §2).
    ──────────────────────────────────────────────────────────────── */
-(function () {
+window.TaioeCardsApp = function (ctx) {
 
-  const CHAVE_PROGRESSO = 'espanhol-cards:progresso';
-  const SINCRONIZAR_A_CADA = 3;   // respostas
-  const SINCRONIZAR_COMPLETO_A_CADA = 8;  // sincronizações
-  const REDE_DE_SEGURANCA = 45000;        // ms parado com resposta pendente
+  /* ── o curso ──
+     O baralho ensina uma língua (L) e é respondido em português. A ida é
+     reconhecer a língua (L → pt), a volta é produzi-la (pt → L). O que é
+     só do espanhol — o ñ, a conjugação, as regiões, os textos — continua
+     no motor e simplesmente não dispara no inglês. */
+  const L = ctx.lingua;
+  const NOME_L = { es: 'espanhol', en: 'inglês' }[L] || L;
+  const BANDEIRA_L = ctx.bandeira || '🏳️';
+  const CHAVE = ctx.uid + ':' + ctx.curso;
+  Motor.usarBaralho(L);
+  const IDA = Motor.direcoes().ida;
+  const ROTULO_IDA = L + ' → pt', ROTULO_VOLTA = 'pt → ' + L;
+  let Sinc = null;   // a sincronização, criada no arranque
 
   /* ── o baralho, e o baralho como ele aparece ──
      O card de gênero guarda as duas formas num texto só («Tu herman{o|a} es
@@ -15,7 +26,7 @@
      tirados de outros cards — trabalha com a forma masculina, que é a
      canônica. Daí os dois baralhos: FONTE é o que o build gerou, CARDS é o
      que se mostra. */
-  const FONTE = (window.CARDS_RAW && window.CARDS_RAW.cards) || [];
+  const FONTE = (window.BARALHOS && window.BARALHOS[L] && window.BARALHOS[L].cards) || [];
   const PORID_FONTE = {};
   FONTE.forEach(c => { PORID_FONTE[c.id] = c; });
 
@@ -27,7 +38,7 @@
      Desde outubro de 2026 o texto não tem card: é a recompensa (manual, seção
      17.4). Vem em data/textos-es.js com o original, a tradução e a lista das
      palavras que exige; o app o mostra inteiro quando todas estão dominadas. */
-  const TEXTOS = (window.TEXTOS && window.TEXTOS['es'] && window.TEXTOS['es'].textos) || [];
+  const TEXTOS = (window.TEXTOS && window.TEXTOS[L] && window.TEXTOS[L].textos) || [];
   const TEXTO_POR_ID = {};
   TEXTOS.forEach(txt => { TEXTO_POR_ID[txt.id] = txt; });
 
@@ -57,46 +68,26 @@
     'btn-comentario-enviar', 'btn-comentario-fechar',
     'btn-proximo', 'painel-conteudo', 'dica',
     'btn-texto', 'tela-texto', 'texto-conteudo',
-    'cfg-repo', 'cfg-token', 'cfg-auto', 'btn-salvar-cfg', 'btn-enviar',
-    'btn-baixar', 'estado-sync', 'btn-exportar', 'btn-importar',
-    'arquivo-importar', 'btn-zerar', 'rodape-sync'
+    'cfg-conta', 'cfg-curso', 'btn-conta', 'btn-sair', 'btn-trocar-curso',
+    'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync'
   ].forEach(id => { el[id] = document.getElementById(id); });
 
   /* ═══════════════ estado ═══════════════ */
 
   let progresso = carregarProgresso();
   let sessao = novaSessao();
-  /* ── a sessão que não chegou a subir ──
-     A sessão morava só na memória da página, e subia quando a aba era
-     escondida. Só que a subida começa lendo o progresso.json, e no celular a
-     página escondida é congelada no meio do caminho; se o sistema a
-     descarta, ou se outra sincronização estava em curso, o fim da sessão
-     nunca sobe. Foi assim que 136 das 1.202 respostas desde 15 de setembro
-     sumiram dos logs — sempre os últimos minutos de uma sessão — e, com
-     elas, o u184 comentado sem a resposta que o motivou.
-
-     Agora cada resposta também grava a sessão neste navegador, e a próxima
-     abertura manda o que tinha ficado para trás. Só com token: sem ele nada
-     sobe mesmo. */
-  const CHAVE_SESSOES = 'espanhol-cards:sessoes';
-  let sessoesPendentes = lerSessoesGuardadas();
-  const sessoesSubidas = [];   // as pendentes que esta abertura já mandou
   let cardAtual = null;
   let generoAtual = 0;      // 0 masculino, 1 feminino — só no card que muda de gênero
   let outraForma = null;    // o mesmo card no outro gênero, para a nota
   let modoAtual = null;
-  let direcaoAtual = 'es-pt';
+  let direcaoAtual = IDA;
   let alvoAtual = null;
   let inicioResposta = 0;
   let pausou = false;
   let respostaPendente = null;
   let ultimoRegistro = null;
   let chanceUsada = false;   // o aviso de língua trocada só devolve a vez uma vez
-  let dinamicosAtuais = [];  // distratores que saíram do progresso, e não do card
-  let respostasDesdeSync = 0;
-  let sincronizando = false;
-  let sincronizacoes = 0;
-  let temporizadorSync = null;
+  let dinamicosAtuais = [];  // alternativas que não vêm do card: vão na resposta, para a calibragem
 
   function progressoVazio() {
     return {
@@ -106,8 +97,8 @@
          (ver Motor.pesosDasFilas); a dos dominados tem gatilho de calendário
          e fura a fila quando a data chega. */
       ineditos: Motor.montarFila(CARDS),       // nunca apareceu
-      filaEsPt: [],                            // você reconhece o espanhol
-      filaPtEs: [],                            // você produz o espanhol
+      filaEsPt: [],                            // você reconhece a língua (ida)
+      filaPtEs: [],                            // você produz a língua (volta)
       dominados: [],                           // vencido nas duas, esperando data
       serie: [],                               // [respostas, es→pt, pt→es, 6 degraus]
       cards: {},
@@ -120,9 +111,11 @@
     };
   }
 
+  /* O progresso vem do IndexedDB deste aparelho (TaioeArmazem), lido pelo
+     inicio.js antes de o app nascer; o que a conta tiver chega depois, pela
+     sincronia (puxar), e é mesclado por cima. */
   function carregarProgresso() {
-    let p = null;
-    try { p = JSON.parse(localStorage.getItem(CHAVE_PROGRESSO) || 'null'); } catch (e) { p = null; }
+    let p = ctx.progressoSalvo;
     if (!p || !p.cards) p = progressoVazio();
     return conciliarFila(p);
   }
@@ -435,87 +428,22 @@
     return saida;
   }
 
-  function salvarProgresso() {
+  /* Grava no IndexedDB, um instante depois: uma resposta mexe no progresso
+     em três lugares seguidos, e uma gravação só basta. «agora» é para
+     quando a aba vai sumir. */
+  let esperaSalvar = null, apagando = false;
+  function salvarProgresso(agora) {
+    if (apagando) return;
     progresso.atualizado_em = new Date().toISOString();
-    try {
-      localStorage.setItem(CHAVE_PROGRESSO, JSON.stringify(progresso));
-    } catch (e) {
-      console.warn('não consegui salvar no localStorage', e);
-    }
+    clearTimeout(esperaSalvar);
+    if (agora) { TaioeArmazem.gravar('progresso', CHAVE, progresso); return; }
+    esperaSalvar = setTimeout(() => TaioeArmazem.gravar('progresso', CHAVE, progresso), 400);
   }
 
+  /* A sessão é só desta abertura, para o «Nesta sessão» da tela inicial: as
+     respostas sobem pela fila da sincronia. */
   function novaSessao() {
-    return {
-      id: new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19),
-      inicio: new Date().toISOString(),
-      eventos: [],
-      enviados: 0          // quantos eventos já estão no arquivo do GitHub
-    };
-  }
-
-  function faltaSubir(s) {
-    return !!s && Array.isArray(s.eventos) && s.eventos.length > (s.enviados || 0);
-  }
-
-  /* As sessões de aberturas anteriores que ainda têm resposta por subir. */
-  function lerSessoesGuardadas() {
-    let lista;
-    try { lista = JSON.parse(localStorage.getItem(CHAVE_SESSOES) || '[]'); } catch (e) { lista = []; }
-    return (Array.isArray(lista) ? lista : []).filter(s => s && s.id && faltaSubir(s));
-  }
-
-  /* Grava as pendentes e a atual, se ela tiver o que subir. Duas abas abertas
-     dividem a chave: a lista guardada é mesclada por id, e nenhuma apaga a
-     sessão da outra. */
-  function guardarSessoes() {
-    if (!GH.configurado()) return;
-    const porId = new Map();
-    lerSessoesGuardadas().forEach(s => porId.set(s.id, s));
-    sessoesPendentes.concat(sessoesSubidas, [sessao]).forEach(s => {
-      if (faltaSubir(s)) { porId.set(s.id, s); return; }
-      /* subiu: sai da lista — a menos que a cópia guardada tenha mais do
-         que subiu, e aí é de outra aba, que ainda está respondendo nela */
-      const guardada = porId.get(s.id);
-      if (guardada && guardada.eventos.length <= (s.enviados || 0)) porId.delete(s.id);
-    });
-    /* teto: sem subir por semanas, a lista não cresce sem fim */
-    const lista = [...porId.values()].sort((a, b) => (a.id < b.id ? -1 : 1)).slice(-20);
-    try {
-      if (lista.length) localStorage.setItem(CHAVE_SESSOES, JSON.stringify(lista));
-      else localStorage.removeItem(CHAVE_SESSOES);
-    } catch (e) {
-      console.warn('não consegui guardar a sessão no localStorage', e);
-    }
-  }
-
-  function textoDaSessao(s, eventos, fim) {
-    return JSON.stringify({
-      id: s.id, inicio: s.inicio, fim: fim,
-      respostas: eventos.length,
-      acertos: eventos.filter(e => e.acertou).length,
-      eventos: eventos
-    }, null, 1);
-  }
-
-  /* A sessão de antes pode ter subido pela metade. O arquivo do GitHub é
-     lido e juntado ao que ficou aqui, evento por evento, para que a subida
-     atrasada nunca troque um arquivo maior por um menor. */
-  async function subirSessaoPendente(s, opcoes) {
-    const caminho = 'sessoes/' + s.id + '.json';
-    /* arquivo que não existe volta null; leitura que falha interrompe a
-       subida, e a sessão fica guardada para a próxima — escrever sem ter
-       lido poderia trocar o arquivo inteiro por um pedaço dele */
-    const arq = await GH.ler(caminho);
-    let remotos = [];
-    if (arq) {
-      try { remotos = JSON.parse(arq.texto).eventos || []; } catch (e) { remotos = []; }
-    }
-    const juntos = new Map();
-    remotos.concat(s.eventos).forEach(e => juntos.set(e.em + '|' + e.card, e));
-    const eventos = [...juntos.values()].sort((a, b) => (a.em < b.em ? -1 : 1));
-    const fim = eventos.length ? eventos[eventos.length - 1].em : s.inicio;
-    await GH.escrever(caminho, textoDaSessao(s, eventos, fim), 'sessão ' + s.id + ' (o que faltava)',
-      { keepalive: opcoes.keepalive, sha: arq ? arq.sha : undefined });
+    return { inicio: new Date().toISOString(), eventos: [] };
   }
 
   function estadoDe(id) {
@@ -716,11 +644,11 @@
     if (!cardAtual) return;
     const c = PORID[cardAtual.id] || cardAtual;
     const pergunta = c.tipo === 'palavra'
-      ? 'Tem certeza que deseja arquivar a palavra «' + c.es + '»? Ela será tratada como dominada.'
-      : 'Tem certeza que deseja arquivar a frase «' + c.es + '»? Ela não vai mais aparecer.';
+      ? 'Tem certeza que deseja arquivar a palavra «' + c[L] + '»? Ela será tratada como dominada.'
+      : 'Tem certeza que deseja arquivar a frase «' + c[L] + '»? Ela não vai mais aparecer.';
     if (!window.confirm(pergunta)) return;
     marcarArquivo(c.id, true);
-    statusSync('«' + c.es + '» arquivado. Para trazer de volta: Todos os cards → arquivados.', 'ok');
+    statusSync('«' + c[L] + '» arquivado. Para trazer de volta: Todos os cards → arquivados.', 'ok');
     respostaPendente = null;
     proximoCard();
   }
@@ -734,6 +662,7 @@
     conciliarFila(progresso);
     salvarProgresso();
     atualizarPlacar();
+    if (Sinc) Sinc.agendar(3000);   // o arquivo é extra do curso: sobe com gravar_extras
   }
 
   function retirarDasFilas(id) {
@@ -778,7 +707,7 @@
        tomar um banho» entrega metade da resposta; e na ida diz qual palavra
        da frase é a que conta. Quem mostra é o concluir. */
     const palavra = cardAtual.requer && PORID[cardAtual.requer];
-    el['meta-origem'].textContent = palavra ? 'de ' + palavra.es : '';
+    el['meta-origem'].textContent = palavra ? 'de ' + palavra[L] : '';
     el['meta-origem'].classList.add('oculto');
     /* o «não quero aprender» chama atenção só na estreia do card */
     const estreando = !estadoDe(id) || !estadoDe(id).vistas;
@@ -788,19 +717,19 @@
        esforço antes de ler. */
     el['aba-nivel'].textContent = Motor.ROTULO_NIVEL[cardAtual.nivel] || cardAtual.nivel;
 
-    const inversa = direcaoAtual === 'pt-es';
+    const inversa = Motor.ehVolta(direcaoAtual);
     el.enunciado.textContent = inversa
-      ? (cardAtual.tipo === 'palavra' ? 'Como se diz esta palavra em espanhol?' : 'Como se diz isto em espanhol?')
+      ? (cardAtual.tipo === 'palavra' ? 'Como se diz esta palavra em ' + NOME_L + '?' : 'Como se diz isto em ' + NOME_L + '?')
       : (cardAtual.tipo === 'palavra' ? 'O que significa esta palavra?' : 'O que quer dizer esta frase?');
 
-    el['bandeira-pergunta'].textContent = inversa ? '🇧🇷' : '🇪🇸';
-    el['bandeira-resposta'].textContent = inversa ? '🇪🇸' : '🇧🇷';
-    el['bandeira-feedback'].textContent = inversa ? '🇪🇸' : '🇧🇷';
+    el['bandeira-pergunta'].textContent = inversa ? '🇧🇷' : BANDEIRA_L;
+    el['bandeira-resposta'].textContent = inversa ? BANDEIRA_L : '🇧🇷';
+    el['bandeira-feedback'].textContent = inversa ? BANDEIRA_L : '🇧🇷';
     /* na múltipla escolha a bandeira já diz tudo; o texto só ajuda quando
        é você quem tem que produzir a resposta */
     el['rotulo-resposta-txt'].textContent = modoAtual === 'multipla' ? ''
-      : (inversa ? 'responda em espanhol' : 'responda em português');
-    el.entrada.placeholder = inversa ? 'escreva em espanhol…' : 'escreva o significado…';
+      : (inversa ? 'responda em ' + NOME_L : 'responda em português');
+    el.entrada.placeholder = inversa ? 'escreva em ' + NOME_L + '…' : 'escreva o significado…';
 
     el.termo.textContent = Motor.pergunta(cardAtual, direcaoAtual);
     el.termo.classList.toggle('frase', cardAtual.tipo === 'frase');
@@ -851,10 +780,13 @@
     /* com o progresso, a frase de uso pode trocar distrator pronto por
        palavra já vista (ver Motor.distratoresDinamicos) */
     const opcoes = Motor.alternativas(cardAtual, direcaoAtual, CARDS, progresso.cards);
-    /* quais alternativas não são do card: vão para o log da sessão, para a
-       calibragem saber quando o erro foi num distrator dinâmico */
-    dinamicosAtuais = direcaoAtual === 'pt-es' ? []
-      : opcoes.filter(o => o !== cardAtual.pt && cardAtual.distratores.indexOf(o) < 0);
+    /* quais alternativas não são do card: vão com a resposta, para a
+       calibragem saber quando o erro foi num distrator que não está no card.
+       Na volta, as quatro erradas saem de outros cards. */
+    const certa = Motor.resposta(cardAtual, direcaoAtual);
+    dinamicosAtuais = Motor.ehVolta(direcaoAtual)
+      ? opcoes.filter(o => o !== certa)
+      : opcoes.filter(o => o !== cardAtual.pt && (cardAtual.distratores || []).indexOf(o) < 0);
     el['area-multipla'].innerHTML = '';
     opcoes.forEach((texto, i) => {
       const b = document.createElement('button');
@@ -944,8 +876,8 @@
     chanceUsada = true;
     el['aviso-lingua'].innerHTML =
       '<b>' + escapar(l.resposta) + '</b> é a tradução de <b>' + escapar(l.espanhol) +
-      '</b>, em espanhol 🇪🇸. Mas aqui <b>' + escapar(l.pergunta) + '</b> está em ' +
-      'português 🇧🇷, e o que se pede é o espanhol dela — tente de novo.';
+      '</b>, em ' + NOME_L + ' ' + BANDEIRA_L + '. Mas aqui <b>' + escapar(l.pergunta) + '</b> está em ' +
+      'português 🇧🇷, e o que se pede é o ' + NOME_L + ' dela — tente de novo.';
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
       ajustarEntrada();
@@ -970,8 +902,8 @@
     chanceUsada = true;
     el['aviso-lingua'].innerHTML = troca.propria
       ? '<b>' + escapar(troca.palavra) + '</b> é a própria palavra da pergunta, ' +
-        'em espanhol 🇪🇸. O que se pede é a tradução, em português 🇧🇷 — tente de novo.'
-      : '<b>' + escapar(troca.palavra) + '</b> está em espanhol 🇪🇸: é a resposta da ' +
+        'em ' + NOME_L + ' ' + BANDEIRA_L + '. O que se pede é a tradução, em português 🇧🇷 — tente de novo.'
+      : '<b>' + escapar(troca.palavra) + '</b> está em ' + NOME_L + ' ' + BANDEIRA_L + ': é a resposta da ' +
         'pergunta ao contrário. Aqui a tradução vai em português 🇧🇷 — tente de novo.';
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
@@ -1005,7 +937,7 @@
     const nota = [cardAtual.nota,
       outraForma && outraForma.pt === cardAtual.pt
         ? '🔁 ' + (generoAtual ? 'No masculino' : 'No feminino') +
-          ': «' + outraForma.es + '» — ' + outraForma.pt : ''
+          ': «' + outraForma[L] + '» — ' + outraForma.pt : ''
     ].filter(Boolean).join('\n');
     el.nota.textContent = nota;
     el.nota.classList.toggle('oculto', !nota);
@@ -1395,14 +1327,35 @@
   }
 
   /* Grava a resposta e devolve o card para a fila. */
+  /* Identidade de cada resposta: gerada aqui, na hora, e guardada na fila;
+     o reenvio bate na mesma chave e não duplica (anexo do banco, §2.1). */
+  function novoId() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    const b = crypto.getRandomValues(new Uint8Array(16));
+    b[6] = (b[6] & 15) | 64; b[8] = (b[8] & 63) | 128;
+    const h = [...b].map(x => x.toString(16).padStart(2, '0')).join('');
+    return h.slice(0, 8) + '-' + h.slice(8, 12) + '-' + h.slice(12, 16) + '-' + h.slice(16, 20) + '-' + h.slice(20);
+  }
+
+  /* O tempo não decide nada no app (ver «o relógio saiu do motor»), mas a
+     calibragem conta as respostas lentas. A régua é larga de propósito:
+     escrever leva mais que escolher. */
+  function velocidadeDe(r) {
+    const [rapido, medio] = r.modo === 'multipla' ? [4000, 10000] : [8000, 20000];
+    return r.ms < rapido ? 'rapido' : r.ms < medio ? 'medio' : 'lento';
+  }
+
   function registrar(r) {
     const id = cardAtual.id;
+    /* o relógio das filas antes desta resposta: é o mesmo valor que vira
+       naFila.desde e estreouNa, e o que a resposta leva para o servidor */
+    const relogioAntes = progresso.totais.respostas;
     const est = progresso.cards[id] || (progresso.cards[id] = Motor.estadoInicial(id));
     const etapaAntes = est.etapa;
     const degrauAntes = Math.min(est.revisoes || 0, 5);
     /* a resposta em que o card estreou: é dela que sai a conta do piso e do
        teto de card novo (ver respostasDesdeNovo) */
-    if (!est.vistas) est.estreouNa = progresso.totais.respostas;
+    if (!est.vistas) est.estreouNa = relogioAntes;
     Motor.registrar(est, r);
     /* Para o painel: o dia, a hora e o tempo desta resposta, e — se era a
        revisão de um dominado — se a memória aguentou a espera daquele degrau. */
@@ -1431,36 +1384,38 @@
     });
     progresso.serie.push([progresso.totais.respostas, d.esPt, d.ptEs].concat(degraus));
 
+    /* A resposta, no formato que a RPC registrar_respostas lê (anexo do
+       banco, §2.1). O texto do acerto limpo o servidor descarta. */
     const evento = {
-      em: new Date().toISOString(),
+      id: novoId(),
+      em: est.ultima,
+      fuso: -new Date().getTimezoneOffset(),
       card: id,
-      es: cardAtual.es,
-      tipo: cardAtual.tipo,
-      nivel: cardAtual.nivel,
-      tags: cardAtual.tags,
-      modo: r.modo,
-      direcao: r.direcao,
-      acertou: r.acertou,
-      quase: !!r.quase,
-      desistiu: !!r.desistiu,
-      ms: r.ms,
-      resposta: r.resposta || null,
-      pausado: !!r.pausado,
-      julgado_por_voce: !!r.julgadoPorVoce,
+      versao: (PORID_FONTE[id] && PORID_FONTE[id].v) || '00000000',
+      etapa_antes: etapaAntes,
       etapa_depois: est.etapa,
-      fila: guardado.fila,
-      distancia_fila: guardado.distancia
+      acertou: !!r.acertou,
+      quase: !!r.quase,
+      julgado: !!r.julgadoPorVoce,
+      desistiu: !!r.desistiu,
+      pausado: !!r.pausado,
+      ms: Math.max(0, Math.round(r.ms || 0)),
+      velocidade: velocidadeDe(r),
+      relogio: relogioAntes,
+      vista: est.vistas,
+      distancia: guardado.distancia,
+      degrau: etapaAntes === 'dominado' ? degrauAntes : null,
+      resposta: r.resposta ? Motor.cortar(r.resposta, 120) : null,
+      dinamicos: r.modo === 'multipla' && dinamicosAtuais.length ? dinamicosAtuais.slice(0, 4) : null
     };
-    if (r.modo === 'multipla' && dinamicosAtuais.length) evento.dinamicos = dinamicosAtuais.slice();
-    sessao.eventos.push(evento);
-    guardarSessoes();
+    sessao.eventos.push({ acertou: evento.acertou });
+    if (Sinc) Sinc.anotar(evento, id);
 
     ultimoRegistro = { id, est, evento, r };
 
     reordenarNovos();
     salvarProgresso();
     atualizarPlacar();
-    talvezSincronizar();
   }
 
   /* Reordena só a parte inédita da fila, mantendo as mesmas posições — o
@@ -1488,23 +1443,23 @@
       c.card === id && Motor.normalizar(c.resposta) === Motor.normalizar(r.resposta));
 
     if (!repetida) {
+      const agora = new Date().toISOString();
+      const esperado = Motor.resposta(cardAtual, r.direcao);
       progresso.contestacoes.push({
-        em: new Date().toISOString(),
-        card: id,
-        es: cardAtual.es,
-        pt: cardAtual.pt,
-        nivel: cardAtual.nivel,
-        direcao: r.direcao,
-        esperado: Motor.resposta(cardAtual, r.direcao),
-        resposta: r.resposta
+        em: agora, card: id, pergunta: Motor.pergunta(cardAtual, r.direcao), pt: cardAtual.pt,
+        nivel: cardAtual.nivel, direcao: r.direcao, esperado: esperado, resposta: r.resposta
       });
       salvarProgresso();
+      if (Sinc) Sinc.retorno('contestacoes', {
+        id: novoId(), usuario_id: ctx.uid, curso: ctx.curso, card_id: id, versao: evento.versao,
+        etapa: evento.etapa_antes === 'consolidado' ? 'inversa-multipla' : evento.etapa_antes,
+        resposta: Motor.cortar(r.resposta, 120), esperado: Motor.cortar(esperado, 300),
+        resposta_id: evento.id, feito_em: agora
+      });
     }
-    evento.contestado = true;
 
     el['btn-contestar'].disabled = true;
     el['aviso-contestado'].classList.remove('oculto');
-    if (GH.cfg().auto && GH.configurado()) sincronizar({ silencioso: true });
   }
 
   /* ── comentário livre sobre um card ──
@@ -1517,7 +1472,7 @@
   function abrirComentario(id) {
     const c = PORID[id]; if (!c) return;
     comentandoId = id;
-    el['comentario-alvo'].textContent = c.es + ' → ' + c.pt;
+    el['comentario-alvo'].textContent = c[L] + ' → ' + c.pt;
     el['comentario-texto'].value = '';
     contarComentario();
     el['comentario-fundo'].classList.remove('oculto');
@@ -1547,41 +1502,22 @@
     if (!texto) { fecharComentario(); return; }
 
     const c = PORID[comentandoId];
+    const agora = new Date().toISOString();
     progresso.comentarios = progresso.comentarios || [];
-    progresso.comentarios.push({
-      em: new Date().toISOString(),
-      card: comentandoId, es: c.es, pt: c.pt, nivel: c.nivel,
-      texto: texto
-    });
-    salvarProgresso();
-    fecharComentario();
-    statusSync('Comentário anotado.', 'ok');
-    if (GH.cfg().auto && GH.configurado()) sincronizar({ silencioso: true, completo: true });
-  }
-
-  function talvezSincronizar() {
-    if (!(GH.cfg().auto && GH.configurado())) return;
-    agendarRedeDeSeguranca();
-    if (++respostasDesdeSync >= SINCRONIZAR_A_CADA) {
-      respostasDesdeSync = 0;
-      sincronizar({ silencioso: true, completo: (++sincronizacoes % SINCRONIZAR_COMPLETO_A_CADA) === 0 });
+    /* o mesmo reparo anotado duas vezes é um só (card + texto normalizado) */
+    const repetido = progresso.comentarios.some(x =>
+      x.card === comentandoId && Motor.normalizar(x.texto) === Motor.normalizar(texto));
+    if (!repetido) {
+      progresso.comentarios.push({ em: agora, card: comentandoId, pergunta: c[L], pt: c.pt, nivel: c.nivel, texto: texto });
+      salvarProgresso();
+      if (Sinc) Sinc.retorno('comentarios', {
+        id: novoId(), usuario_id: ctx.uid, curso: ctx.curso, card_id: comentandoId,
+        versao: (PORID_FONTE[comentandoId] && PORID_FONTE[comentandoId].v) || '00000000',
+        texto: texto, feito_em: agora
+      });
     }
-  }
-
-  /* Se você parar no meio — três respostas dadas, a quarta nunca vem — o
-     contador sozinho nunca dispararia. O relógio dispara. */
-  function agendarRedeDeSeguranca() {
-    clearTimeout(temporizadorSync);
-    temporizadorSync = setTimeout(() => {
-      if (respostasDesdeSync && GH.cfg().auto && GH.configurado()) {
-        respostasDesdeSync = 0;
-        sincronizar({ silencioso: true, completo: true });
-      }
-    }, REDE_DE_SEGURANCA);
-  }
-
-  function marcaDeSalvo() {
-    return 'Salvo às ' + new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    fecharComentario();
+    statusSync('Comentário anotado. Obrigado!', 'ok');
   }
 
   function avancar() {
@@ -1635,7 +1571,7 @@
       /* É o alvo que a escolha de fila persegue — vê-lo explica por que o
          card novo às vezes vem depressa e às vezes rareia. */
       metrica(dir.esPt + ' · ' + dir.ptEs,
-              'es → pt e pt → es (alvo ' + alvo + ' em cada, pelos ' +
+              ROTULO_IDA + ' e ' + ROTULO_VOLTA + ' (alvo ' + alvo + ' em cada, pelos ' +
                 Math.round(100 * recente.taxa) + '% de acerto recente)') +
       metrica(dominados, 'dominados nas duas direções') +
       '</div>';
@@ -1655,8 +1591,17 @@
 
     esconderDica();
     el['painel-conteudo'].innerHTML = html;
+    aplicarEstilos(el['painel-conteudo']);
     ligarGrafico();
     mostrar('tela-painel');
+  }
+
+  /* A CSP da Taioé não aceita atributo style vindo de HTML montado em texto;
+     cor, largura e teto entram depois, pelo CSSOM, que ela permite. */
+  function aplicarEstilos(raiz) {
+    raiz.querySelectorAll('[data-cor]').forEach(e => { e.style.background = e.dataset.cor; });
+    raiz.querySelectorAll('[data-largura]').forEach(e => { e.style.width = e.dataset.largura + '%'; });
+    raiz.querySelectorAll('[data-max]').forEach(e => { e.style.maxWidth = e.dataset.max + 'px'; });
   }
 
   function pctDe(parte, total) {
@@ -1692,8 +1637,8 @@
      separadas, com o último — seis meses, o card que ficou — em branco. A
      claridade sobe a cada degrau, então a ordem continua visível. */
   const SERIES = [
-    { chave: 0, nome: 'es → pt',   cor: 'var(--serie-espt)' },
-    { chave: 1, nome: 'pt → es',   cor: 'var(--serie-ptes)' },
+    { chave: 0, nome: ROTULO_IDA,   cor: 'var(--serie-espt)' },
+    { chave: 1, nome: ROTULO_VOLTA, cor: 'var(--serie-ptes)' },
     { chave: 2, nome: '3 dias',    cor: 'var(--escada-0)', degrau: true },
     { chave: 3, nome: '1 semana',  cor: 'var(--escada-1)', degrau: true },
     { chave: 4, nome: '2 semanas', cor: 'var(--escada-2)', degrau: true },
@@ -1770,7 +1715,7 @@
       svg += '<text x="' + px.toFixed(1) + '" y="' + (B + 15) + '" class="eixo" ' +
         'text-anchor="middle">' + v + '</text>';
     }
-    svg += '<line id="g-cursor" y1="' + T + '" y2="' + B + '" class="cursor" style="display:none"/>';
+    svg += '<line id="g-cursor" y1="' + T + '" y2="' + B + '" class="cursor" display="none"/>';
     svg += '<rect x="' + L + '" y="' + T + '" width="' + (R - L) + '" height="' + (B - T) +
       '" fill="transparent" id="g-toque"/>';
 
@@ -1778,7 +1723,7 @@
        lado, com o mesmo peso — o degrau não é mais um apêndice do dominado. */
     const ult = serie[n - 1];
     const chaves = SERIES.map(s =>
-      '<span class="chave"><i style="background:' + s.cor + '"></i>' + s.nome +
+      '<span class="chave"><i data-cor="' + s.cor + '"></i>' + s.nome +
       ' <b data-serie="' + s.chave + '">' + ult[s.chave] + '</b></span>').join('');
 
     return '<h3>O caminho até aqui</h3>' +
@@ -1829,7 +1774,7 @@
       const px = emX(p);
       cursor.setAttribute('x1', px);
       cursor.setAttribute('x2', px);
-      cursor.style.display = '';
+      cursor.removeAttribute('display');
       valores.forEach(b => { b.textContent = p[1 + Number(b.dataset.serie)]; });
     });
   }
@@ -1940,7 +1885,7 @@
         '<td class="num">' + pctDe(x.certasEstreia, x.estreias) + '</td>' +
         '<td class="num">' + pctDe(x.certasDepois, x.depois) + '</td>' +
         '<td class="num">' + (x.respostas ? geral + '%' : '—') + '</td>' +
-        '<td class="col-barra"><div class="barra"><i style="width:' + geral + '%"></i></div></td></tr>';
+        '<td class="col-barra"><div class="barra"><i data-largura="' + geral + '"></i></div></td></tr>';
     }).join('');
 
     if (!linhas) return '';
@@ -2053,7 +1998,7 @@
     });
     const W = L + colunas * (tam + vao), H = T + 7 * (tam + vao);
     return '<h3>Calendário de estudo</h3>' +
-      '<div class="calendario" style="max-width:' + Math.round(W * 1.2) + 'px">' +
+      '<div class="calendario" data-max="' + Math.round(W * 1.2) + '">' +
       figura(W, H, m, 'Respostas por dia, em calendário') + '</div>';
   }
 
@@ -2295,7 +2240,7 @@
       if (!Motor.liberado(c, progresso.cards, null, progresso.arquivados)) {
         const faltam = Motor.requeridas(c)
           .filter(r => Motor.sabidaEm(r, progresso.cards, progresso.arquivados) === Infinity)
-          .map(r => String(r)[0] === '+' ? String(r).slice(1) : (PORID[r] || {}).es || r);
+          .map(r => String(r)[0] === '+' ? String(r).slice(1) : (PORID[r] || {})[L] || r);
         return { chave: 'preso', rotulo: faltam.length
           ? 'espera você dominar ' + faltam.map(f => '«' + f + '»').join(', ')
           : 'destrava à meia-noite' };
@@ -2303,7 +2248,7 @@
       return { chave: 'novo', rotulo: 'ainda não apareceu' };
     }
     if (e.etapa === 'dominado') return { chave: 'dominado', rotulo: 'dominado nas duas direções' };
-    if (Motor.direcaoDe(e) === 'pt-es') return { chave: 'invertido', rotulo: 'na volta: você produz o espanhol' };
+    if (Motor.ehVolta(Motor.direcaoDe(e))) return { chave: 'invertido', rotulo: 'na volta: você produz o ' + NOME_L };
     return {
       chave: 'andamento',
       rotulo: Motor.modoDe(e) === 'escrita' ? 'escrevendo em português' : 'múltipla escolha'
@@ -2339,11 +2284,11 @@
     /* e as palavras de outros lugares que o card também aceita */
     /* agrupadas por lugar: «A» e «B», na América Latina; «C», no México */
     const porLugar = new Map();
-    Object.entries(c.regionaisEs || {}).forEach(([forma, onde]) =>
+    Object.entries(c[L === 'es' ? 'regionaisEs' : 'regionaisEn'] || {}).forEach(([forma, onde]) =>
       porLugar.set(onde, (porLugar.get(onde) || []).concat('«' + forma.replace(/\.$/, '') + '»')));
     const regionais = [...porLugar].map(([onde, formas]) =>
       formas.join(formas.length > 2 ? ', ' : ' e ') + ', ' + onde);
-    return [c.nota, outra ? '🔁 No feminino: «' + outra.es + '» — ' + outra.pt : '',
+    return [c.nota, outra ? '🔁 No feminino: «' + outra[L] + '» — ' + outra.pt : '',
       regionais.length ? '🌎 Também vale: ' + regionais.join('; ') + '.' : '']
       .filter(Boolean).join('\n');
   }
@@ -2368,7 +2313,7 @@
 
       if (busca) {
         const alvo = Motor.normalizar(
-          [c.es, c.pt, c.nota, (c.aceitas || []).join(' '), Object.keys(c.regionaisEs || {}).join(' '),
+          [c[L], c.pt, c.nota, (c.aceitas || []).join(' '), Object.keys(c.regionaisEs || c.regionaisEn || {}).join(' '),
            (c.tags || []).join(' ')].join(' '));
         if (!busca.split(' ').every(termo => alvo.includes(termo))) return false;
       }
@@ -2395,7 +2340,7 @@
         : (s.chave === 'novo' || s.chave === 'preso') ? '' : 'visto';
       return '<div class="card-linha ' + marca + '">' +
         '<div class="card-linha-topo">' +
-          '<span class="es">' + escapar(c.es) + '</span>' +
+          '<span class="es">' + escapar(c[L]) + '</span>' +
           '<span class="seta">→</span>' +
           '<span class="pt">' + escapar(c.pt) + '</span>' +
         '</div>' +
@@ -2422,403 +2367,15 @@
     el['rodape-sync'].textContent = texto;
   }
 
-  async function sincronizar(opcoes) {
-    opcoes = opcoes || {};
-    if (sincronizando) return;
-    if (!GH.configurado()) {
-      if (!opcoes.silencioso) statusSync('Informe o repositório e o token primeiro.', 'erro');
-      return;
-    }
-    sincronizando = true;
-    if (!opcoes.silencioso) statusSync('Enviando…');
-
-    try {
-      const agora = new Date().toISOString();
-
-      /* Ler antes de escrever. Outro aparelho pode ter estudado desde a
-         última subida, e escrever por cima apagaria o que ele fez — foi
-         exatamente assim que 604 respostas viraram 25.
-
-         Se a leitura falha, a subida não acontece. Antes ela seguia «com o
-         que se tem», mas sem rede a escrita falha do mesmo jeito, e quando a
-         leitura falhava por outro motivo — foi o caso do arquivo que passou
-         de 1 MB — o que seguia era justamente a gravação por cima, sem
-         mescla. As respostas ficam no navegador e sobem na próxima. */
-      const arq = await GH.ler('progresso.json');
-      if (arq) {
-        let remoto;
-        try { remoto = JSON.parse(arq.texto); }
-        catch (e) { throw new Error('o progresso.json do GitHub veio ilegível; nada foi gravado por cima dele.'); }
-        progresso = conciliarFila(mesclar(progresso, remoto));
-        salvarProgresso();
-        atualizarPlacar();
-      }
-
-      /* o sha da leitura vai junto: sem ele o escrever baixava o arquivo
-         inteiro outra vez só para descobri-lo. E o arquivo vai sem
-         indentação: ela era um terço do tamanho, e este é o arquivo que sobe
-         e desce inteiro a cada três respostas. Quem o lê é programa — o app e
-         o fonte/historico.js —, e para os olhos há o «Exportar arquivo». */
-      await GH.escrever('progresso.json',
-        JSON.stringify(progresso),
-        'progresso — ' + agora,
-        { keepalive: opcoes.keepalive, sha: arq ? arq.sha : undefined });
-
-      /* O progresso sobe sempre; sessão, contestações e resumo só de vez em
-         quando. São o registro para calibrar levas, não o seu avanço, e
-         subir os quatro a cada três respostas encheria o repositório de
-         commits sem nenhum ganho. */
-      if (!opcoes.completo) {
-        statusSync(marcaDeSalvo(), 'ok');
-        return;
-      }
-
-      /* primeiro o que ficou de aberturas anteriores (ver CHAVE_SESSOES) */
-      for (const s of sessoesPendentes.slice()) {
-        await subirSessaoPendente(s, opcoes);
-        sessoesPendentes = sessoesPendentes.filter(x => x !== s);
-        s.enviados = s.eventos.length;
-        sessoesSubidas.push(s);
-        guardarSessoes();
-      }
-
-      if (sessao.eventos.length) {
-        /* o texto sai agora, e o que for respondido durante a subida fica
-           para a próxima: por isso a conta dos enviados é tirada antes */
-        const eventos = sessao.eventos.slice();
-        await GH.escrever('sessoes/' + sessao.id + '.json',
-          textoDaSessao(sessao, eventos, agora),
-          'sessão ' + sessao.id,
-          { keepalive: opcoes.keepalive });
-        sessao.enviados = Math.max(sessao.enviados || 0, eventos.length);
-        guardarSessoes();
-      }
-
-      const contestacoes = progresso.contestacoes || [];
-      if (contestacoes.length) {
-        await GH.escrever('contestacoes.json',
-          JSON.stringify({ atualizado_em: agora, total: contestacoes.length, casos: contestacoes }, null, 1),
-          'respostas contestadas — ' + agora,
-          { keepalive: opcoes.keepalive });
-      }
-
-      const comentarios = progresso.comentarios || [];
-      if (comentarios.length) {
-        await GH.escrever('comentarios.json',
-          JSON.stringify({ atualizado_em: agora, total: comentarios.length, casos: comentarios }, null, 1),
-          'comentários sobre cards — ' + agora,
-          { keepalive: opcoes.keepalive });
-      }
-
-      await GH.escrever('resumo.md', gerarResumo(), 'resumo — ' + agora,
-        { keepalive: opcoes.keepalive });
-
-      statusSync(marcaDeSalvo(), 'ok');
-    } catch (e) {
-      statusSync('Não consegui salvar no GitHub: ' + e.message +
-                 ' — o avanço está guardado neste navegador.', 'erro');
-    } finally {
-      sincronizando = false;
-    }
-  }
-
-  async function baixar(op) {
-    op = op || {};
-    if (!GH.configurado()) {
-      if (!op.silencioso) statusSync('Informe o repositório e o token primeiro.', 'erro');
-      return;
-    }
-    if (!op.silencioso) statusSync('Baixando…');
-    try {
-      const arq = await GH.ler('progresso.json');
-      if (!arq) {
-        if (!op.silencioso) statusSync('Ainda não há progresso gravado no GitHub.', 'erro');
-        return;
-      }
-      const remoto = JSON.parse(arq.texto);
-      const antes = Object.keys(progresso.cards).length;
-      progresso = mesclar(progresso, remoto);
-      salvarProgresso();
-      atualizarPlacar();
-      const ganhou = Object.keys(progresso.cards).length - antes;
-      statusSync(op.silencioso && !ganhou ? 'Sincronização ligada.'
-        : ganhou ? 'Progresso de outro aparelho incorporado: +' + ganhou + ' cards.'
-                 : 'Progresso do GitHub incorporado.', 'ok');
-    } catch (e) {
-      statusSync((op.silencioso ? 'Não consegui trazer o progresso do GitHub: '
-                                : 'Falhou: ') + e.message, 'erro');
-    }
-  }
-
-  /* Mescla card a card, ficando com a versão de mais respostas. */
-  function juntarTextos(a, b) {
-    a = a || textosVazio(); b = b || textosVazio();
-    const lidos = Object.assign({}, b.lidos || {});
-    Object.keys(a.lidos || {}).forEach(id => {
-      if (!lidos[id] || String(a.lidos[id]) < String(lidos[id])) lidos[id] = a.lidos[id];
-    });
-    const vista = (a.emVista && (a.emVista.poema || a.emVista.prosa)) ? a.emVista : (b.emVista || {});
-    return { emVista: Object.assign({ poema: null, prosa: null }, vista), lidos: lidos };
-  }
-
-  function mesclar(local, remoto) {
-    const saida = {
-      versao: 1,
-      atualizado_em: new Date().toISOString(),
-      /* A ordem das filas é só uma dica: o conciliarFila reconstrói tudo a
-         partir da etapa de cada card, que é o que a mescla card a card
-         resolve logo abaixo. Fico com a lista de quem tem mais o que dizer. */
-      ineditos: (local.ineditos && local.ineditos.length) ? local.ineditos : (remoto.ineditos || []),
-      filaEsPt: (local.filaEsPt && local.filaEsPt.length) ? local.filaEsPt : (remoto.filaEsPt || []),
-      filaPtEs: (local.filaPtEs && local.filaPtEs.length) ? local.filaPtEs : (remoto.filaPtEs || []),
-      dominados: (local.dominados && local.dominados.length) ? local.dominados : (remoto.dominados || []),
-      /* A série é histórico: fica a mais longa das duas. */
-      serie: ((local.serie || []).length >= (remoto.serie || []).length
-                ? local.serie : remoto.serie) || [],
-      /* Diário e retenção também: dia a dia, e degrau a degrau, fica o lado
-         que viu mais respostas. */
-      diario: juntarDiarios(local.diario, remoto.diario),
-      retencao: (local.retencao || remoto.retencao) && Motor.DIAS_DOMINADO.map((_, i) => {
-        const a = (local.retencao || [])[i] || [0, 0], b = (remoto.retencao || [])[i] || [0, 0];
-        return (b[0] > a[0] ? b : a).slice();
-      }),
-      contestacoes: juntarContestacoes(local.contestacoes, remoto.contestacoes),
-      comentarios: juntarComentarios(local.comentarios, remoto.comentarios),
-      /* arquivar e desarquivar: fica o gesto mais recente de cada card */
-      arquivados: juntarArquivados(local.arquivados, remoto.arquivados),
-      emVista: (local.emVista && local.emVista.length) ? local.emVista : (remoto.emVista || []),
-      textos: juntarTextos(local.textos, remoto.textos),
-      cards: {},
-      totais: {
-        respostas: Math.max(local.totais.respostas, (remoto.totais || {}).respostas || 0),
-        acertos: Math.max(local.totais.acertos, (remoto.totais || {}).acertos || 0),
-        sessoes: Math.max(local.totais.sessoes, (remoto.totais || {}).sessoes || 0)
-      }
-    };
-    const ids = new Set([...Object.keys(local.cards || {}), ...Object.keys(remoto.cards || {})]);
-    ids.forEach(id => {
-      const a = (local.cards || {})[id], b = (remoto.cards || {})[id];
-      if (!a) { saida.cards[id] = b; return; }
-      if (!b) { saida.cards[id] = a; return; }
-      saida.cards[id] = (b.vistas > a.vistas) ? b : a;
-    });
-    return conciliarFila(saida);
-  }
-
-  function juntarArquivados(a, b) {
-    const saida = {};
-    new Set([...Object.keys(a || {}), ...Object.keys(b || {})]).forEach(id => {
-      const x = (a || {})[id], y = (b || {})[id];
-      saida[id] = !x ? y : !y ? x : (String(y.em) > String(x.em) ? y : x);
-    });
-    return saida;
-  }
-
-  function juntarDiarios(a, b) {
-    if (!a && !b) return undefined;
-    const saida = {};
-    new Set([...Object.keys(a || {}), ...Object.keys(b || {})]).forEach(d => {
-      const x = (a || {})[d], y = (b || {})[d];
-      saida[d] = !x ? y : !y ? x : (y.n > x.n ? y : x);
-    });
-    return saida;
-  }
-
-  /* Comentário some do aparelho que não o escreveu, então a mesclagem junta
-     os dois lados. A chave é card + texto: o mesmo reparo anotado duas vezes
-     é um; dois reparos diferentes sobre o mesmo card são dois. */
-  function juntarComentarios(a, b) {
-    const saida = [], vistos = new Set();
-    for (const c of [...(a || []), ...(b || [])]) {
-      if (!c || !c.card) continue;
-      const chave = c.card + '|' + Motor.normalizar(c.texto);
-      if (vistos.has(chave)) continue;
-      vistos.add(chave);
-      saida.push(c);
-    }
-    return saida;
-  }
-
-  /* Contestação é registro do que ele pensou: nunca se perde numa mesclagem. */
-  function juntarContestacoes(a, b) {
-    const saida = [];
-    const vistas = new Set();
-    for (const c of [...(a || []), ...(b || [])]) {
-      const chave = c.card + '|' + Motor.normalizar(c.resposta);
-      if (vistas.has(chave)) continue;
-      vistas.add(chave);
-      saida.push(c);
-    }
-    return saida;
-  }
-
-  /* Relatório legível — é por ele que a calibragem começa da próxima vez. */
-  function gerarResumo() {
-    const ids = Object.keys(progresso.cards);
-    const t = progresso.totais;
-    const taxa = t.respostas ? Math.round(100 * t.acertos / t.respostas) : 0;
-    const L = [];
-
-    L.push('# Resumo de estudo — espanhol');
-    L.push('');
-    L.push('Atualizado em ' + new Date().toISOString());
-    L.push('');
-    L.push('- Cards no baralho: **' + CARDS.length + '**');
-    L.push('- Cards já vistos: **' + ids.length + '**');
-    L.push('- Respostas: **' + t.respostas + '** · acerto geral: **' + taxa + '%**');
-    L.push('- Dominados nas duas direções: **' +
-      ids.filter(id => progresso.cards[id].etapa === 'dominado').length + '**');
-    L.push('');
-
-    const porNivel = agregar(c => c.nivel);
-    L.push('## Desempenho por nível');
-    L.push('');
-    L.push('| Nível | Cards | Respostas | Acerto | Já conhecia |');
-    L.push('|---|---:|---:|---:|---:|');
-    Motor.NIVEIS.forEach(n => {
-      const g = porNivel[n]; if (!g) return;
-      L.push('| ' + n + ' | ' + g.cards + ' | ' + g.total + ' | ' + pct(g) + ' | ' + g.conhecia + ' |');
-    });
-    L.push('');
-
-    const porTipo = agregar(c => c.tipo);
-    L.push('## Palavras x frases');
-    L.push('');
-    L.push('| Tipo | Cards | Respostas | Acerto |');
-    L.push('|---|---:|---:|---:|');
-    ['palavra', 'frase'].forEach(k => {
-      const g = porTipo[k]; if (!g) return;
-      L.push('| ' + k + ' | ' + g.cards + ' | ' + g.total + ' | ' + pct(g) + ' |');
-    });
-    L.push('');
-
-    const porTag = {};
-    ids.forEach(id => {
-      const c = PORID[id]; if (!c) return;
-      (c.tags || []).forEach(tg => {
-        const g = porTag[tg] || (porTag[tg] = { cards: 0, certas: 0, total: 0, conhecia: 0 });
-        g.cards++;
-        (progresso.cards[id].historico || []).forEach(h => {
-          g.total++; if (h.acertou) g.certas++;
-        });
-      });
-    });
-    const tags = Object.keys(porTag).filter(k => porTag[k].total >= 3)
-      .sort((a, b) => (porTag[a].certas / porTag[a].total) - (porTag[b].certas / porTag[b].total));
-    if (tags.length) {
-      L.push('## Por tema (do mais difícil para o mais fácil)');
-      L.push('');
-      L.push('| Tema | Cards | Respostas | Acerto |');
-      L.push('|---|---:|---:|---:|');
-      tags.forEach(k => L.push('| ' + k + ' | ' + porTag[k].cards + ' | ' +
-        porTag[k].total + ' | ' + pct(porTag[k]) + ' |'));
-      L.push('');
-    }
-
-    const dificeis = ids.map(id => ({ id, e: progresso.cards[id] }))
-      .filter(x => x.e.erros > 0)
-      .sort((a, b) => (b.e.erros - a.e.erros) || (b.e.vistas - a.e.vistas))
-      .slice(0, 25);
-    if (dificeis.length) {
-      L.push('## Cards que mais deram trabalho');
-      L.push('');
-      L.push('| Card | Significado | Nível | Erros | Vistas | Etapa | Conhecia |');
-      L.push('|---|---|---|---:|---:|---|---|');
-      dificeis.forEach(x => {
-        const c = PORID[x.id];
-        L.push('| ' + c.es + ' | ' + c.pt + ' | ' + c.nivel + ' | ' + x.e.erros + ' | ' +
-          x.e.vistas + ' | ' + x.e.etapa + ' | ' + (x.e.conhecia || '—') + ' |');
-      });
-      L.push('');
-    }
-
-    const naoConhecia = ids.filter(id => progresso.cards[id].conhecia === 'nao');
-    if (naoConhecia.length) {
-      L.push('## Vocabulário novo para você (' + naoConhecia.length + ')');
-      L.push('');
-      L.push(naoConhecia.map(id => '`' + PORID[id].es + '`').join(' · '));
-      L.push('');
-    }
-
-    const contestadas = progresso.contestacoes || [];
-    if (contestadas.length) {
-      L.push('## Respostas que ele acha que deveriam ser aceitas (' + contestadas.length + ')');
-      L.push('');
-      L.push('**Revisar uma a uma antes da próxima leva.** Ele escreveu isto, foi');
-      L.push('contado como erro, e discordou.');
-      L.push('');
-      L.push('| Card | Pediu | Ele escreveu | Esperava |');
-      L.push('|---|---|---|---|');
-      contestadas.forEach(c => {
-        const pediu = c.direcao === 'pt-es' ? c.pt : c.es;
-        L.push('| `' + c.card + '` | ' + pediu + ' | **' + c.resposta + '** | ' + c.esperado + ' |');
-      });
-      L.push('');
-    }
-
-    const comentados = progresso.comentarios || [];
-    if (comentados.length) {
-      L.push('## Comentários sobre cards (' + comentados.length + ')');
-      L.push('');
-      L.push('**Avaliar um a um antes da próxima leva.** Escrito por ele durante o');
-      L.push('estudo, sobre qualquer card — não só sobre resposta contada como erro.');
-      L.push('');
-      L.push('| Card | Card diz | Comentário |');
-      L.push('|---|---|---|');
-      comentados.forEach(c => {
-        const limpo = String(c.texto || '').replace(/\|/g, '\\|').replace(/\n+/g, ' ');
-        L.push('| `' + c.card + '` | ' + c.es + ' → ' + c.pt + ' | ' + limpo + ' |');
-      });
-      L.push('');
-    }
-
-    L.push('---');
-    L.push('');
-    L.push('_Gerado pelo app. Serve de base para calibrar a próxima leva de cards._');
-    return L.join('\n');
-
-    function agregar(chave) {
-      const g = {};
-      ids.forEach(id => {
-        const c = PORID[id]; if (!c) return;
-        const k = chave(c);
-        const x = g[k] || (g[k] = { cards: 0, certas: 0, total: 0, conhecia: 0 });
-        x.cards++;
-        if (progresso.cards[id].conhecia === 'sim') x.conhecia++;
-        (progresso.cards[id].historico || []).forEach(h => {
-          x.total++;
-          if (h.acertou) x.certas++;
-        });
-      });
-      return g;
-    }
-    function pct(g) { return g.total ? Math.round(100 * g.certas / g.total) + '%' : '—'; }
-  }
-
-  /* ═══════════════ exportar / importar ═══════════════ */
+  /* ═══════════════ exportar ═══════════════ */
 
   function exportar() {
     const blob = new Blob([JSON.stringify(progresso, null, 1)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'espanhol-progresso-' + new Date().toISOString().slice(0, 10) + '.json';
+    a.download = 'taioe-cards-' + ctx.curso + '-' + new Date().toISOString().slice(0, 10) + '.json';
     a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-  }
-
-  function importar(arquivo) {
-    const leitor = new FileReader();
-    leitor.onload = () => {
-      try {
-        progresso = mesclar(progresso, JSON.parse(leitor.result));
-        salvarProgresso();
-        atualizarPlacar();
-        statusSync('Arquivo incorporado.', 'ok');
-      } catch (e) {
-        statusSync('Arquivo inválido: ' + e.message, 'erro');
-      }
-    };
-    leitor.readAsText(arquivo);
   }
 
   /* ═══════════════ eventos ═══════════════ */
@@ -2902,6 +2459,7 @@
            é uma espera que nenhum outro card alcança. */
         if (est && est.etapa !== 'dominado') {
           est.naFila = { desde: progresso.totais.respostas - 1e6, distancia: 1 };
+          if (Sinc) Sinc.marcarSujo(id);
         }
         salvarProgresso();
       }
@@ -2934,6 +2492,7 @@
     progresso.textos.emVista = Motor.atualizarTextosEmVista(progresso.textos.emVista, TEXTOS,
       progresso.cards, progresso.arquivados || {}, progresso.textos.lidos);
     salvarProgresso();
+    if (Sinc) Sinc.agendar(3000);
     el['texto-conteudo'].innerHTML =
       '<p class="recompensa">Você destravou ' + (txt.tipo === 'poema' ? 'um poema' : 'um texto') +
       ': todas as palavras dele já são suas.</p>' + cartaDoTexto(txt) +
@@ -2985,7 +2544,7 @@
         if (!txt) { partes.push('<p class="ajuda">Nenhum ' + (tipo === 'poema' ? 'poema' : 'texto em prosa') + ' por ler.</p>'); continue; }
         const a = Motor.andamentoDoTexto(txt, progresso.cards, Date.now(), progresso.arquivados || {});
         const faltam = Motor.requeridas(txt).filter(id => Motor.sabidaEm(id, progresso.cards, progresso.arquivados || {}) === Infinity)
-          .map(id => (PORID[id] || {}).es || id);
+          .map(id => (PORID[id] || {})[L] || id);
         partes.push('<p><b>' + escapar(txt.titulo) + '</b>, de ' + escapar(txt.autor) + ' — ' +
           a.dominadas + ' de ' + a.palavras + ' palavras dominadas' +
           (faltam.length ? '. Faltam: ' + escapar(faltam.join(', ')) + '.' : '; aparece amanhã.') + '</p>');
@@ -3022,39 +2581,47 @@
   });
 
   function abrirConfig() {
-    const c = GH.cfg();
-    el['cfg-repo'].value = c.repo;
-    el['cfg-token'].value = c.token;
-    el['cfg-auto'].checked = !!c.auto;
+    el['cfg-conta'].textContent = (ctx.nome || '') + ' · ' + (ctx.email || '');
+    el['cfg-curso'].textContent = 'Você está no curso de ' + NOME_L + ', respondido em português.';
+    el['btn-trocar-curso'].textContent = 'Estudar ' + ctx.nomeDoCurso(ctx.outroCurso).toLowerCase();
     mostrar('tela-config');
   }
 
-  el['btn-salvar-cfg'].addEventListener('click', () => {
-    GH.salvarCfg({
-      repo: el['cfg-repo'].value.trim(),
-      token: el['cfg-token'].value.trim(),
-      auto: el['cfg-auto'].checked
-    });
-    statusSync('Configuração salva neste navegador.', 'ok');
+  el['btn-conta'].addEventListener('click', () => { salvarProgresso(true); location.href = '/conta/'; });
+
+  /* Sair manda antes o que estiver na fila. O que não subir fica guardado
+     neste aparelho, ligado à conta, e sobe quando ela entrar de novo. */
+  el['btn-sair'].addEventListener('click', async () => {
+    el['btn-sair'].disabled = true;
+    statusSync('Enviando o que falta…');
+    salvarProgresso(true);
+    const faltam = await Sinc.antesDeSair().catch(() => Sinc.pendentes());
+    if (faltam && !confirm(faltam + (faltam === 1 ? ' resposta ainda não subiu e fica' : ' respostas ainda não subiram e ficam') +
+        ' guardada(s) neste aparelho até você entrar de novo. Sair mesmo assim?')) {
+      el['btn-sair'].disabled = false;
+      return;
+    }
+    await TaioeSessao.sair(false);
+    location.replace('/');
   });
-  el['btn-enviar'].addEventListener('click', () => sincronizar({ completo: true }));
-  el['btn-baixar'].addEventListener('click', baixar);
+
+  el['btn-trocar-curso'].addEventListener('click', async () => {
+    el['btn-trocar-curso'].disabled = true;
+    salvarProgresso(true);
+    await Sinc.antesDeSair().catch(() => 0);
+    await ctx.trocarCurso(ctx.outroCurso);
+  });
+
   el['btn-exportar'].addEventListener('click', exportar);
-  el['btn-importar'].addEventListener('click', () => el['arquivo-importar'].click());
-  el['arquivo-importar'].addEventListener('change', e => {
-    if (e.target.files[0]) importar(e.target.files[0]);
-  });
-  el['btn-zerar'].addEventListener('click', () => {
-    if (!confirm('Apagar todo o progresso guardado neste navegador?')) return;
-    localStorage.removeItem(CHAVE_PROGRESSO);
-    localStorage.removeItem(CHAVE_SESSOES);
-    sessoesPendentes = [];
-    progresso = progressoVazio();
-    cardAtual = null;
-    salvarProgresso();
-    atualizarPlacar();
-    statusSync('Progresso local apagado.', 'ok');
-    mostrar('tela-inicio');
+
+  el['btn-zerar'].addEventListener('click', async () => {
+    const n = Sinc.pendentes();
+    const aviso = n ? n + ' resposta(s) ainda não subiram e serão perdidas. ' : '';
+    if (!confirm(aviso + 'Apagar a cópia deste curso guardada neste navegador? O que já subiu continua na sua conta.')) return;
+    apagando = true;
+    clearTimeout(esperaSalvar);
+    await Sinc.apagarLocal();
+    location.reload();
   });
 
   /* teclado */
@@ -3086,20 +2653,15 @@
     }
   });
 
-  /* tempo só conta enquanto a aba está visível */
+  /* tempo só conta enquanto a aba está visível; e a aba que some grava já
+     (o envio do fechamento é com a sincronia) */
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
       if (cardAtual && !respostaPendente) pausou = true;
-      if (GH.cfg().auto && GH.configurado() && sessao.eventos.length) {
-        sincronizar({ silencioso: true, keepalive: true, completo: true });
-      }
+      salvarProgresso(true);
     }
   });
-  window.addEventListener('pagehide', () => {
-    if (GH.cfg().auto && GH.configurado() && sessao.eventos.length) {
-      sincronizar({ silencioso: true, keepalive: true, completo: true });
-    }
-  });
+  window.addEventListener('pagehide', () => salvarProgresso(true));
 
   /* A frase do card gruda logo abaixo do cabeçalho, e para isso precisa saber
      a altura dele — que não é fixa: em tela estreita o placar quebra de linha e
@@ -3114,28 +2676,46 @@
 
   /* ═══════════════ arranque ═══════════════ */
 
+  /* Os textos da tela que dependem da língua do curso. */
+  function ajustarTextosDaLingua() {
+    el['busca-cards'].placeholder = 'buscar em ' + NOME_L + ', português, tema ou nota…';
+    const op = el['filtro-estado'].querySelector('option[value="invertido"]');
+    if (op) op.textContent = 'já na volta (' + ROTULO_VOLTA + ')';
+    el['btn-texto'].hidden = !TEXTOS.length;
+    const icone = document.querySelector('link[rel="icon"]');
+    if (icone) icone.href = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>" +
+      BANDEIRA_L + '</text></svg>';
+    document.title = 'Taioé Cards · ' + ctx.nomeCurso;
+  }
+
   montarFiltros();
+  ajustarTextosDaLingua();
 
   progresso.totais.sessoes = (progresso.totais.sessoes || 0) + 1;
   salvarProgresso();
   atualizarPlacar();
-  statusSync(GH.configurado() ? 'Sincronização ligada.' : 'Sem token — dados só neste navegador.');
   mostrar('tela-inicio');
 
-  /* Trazer antes de mandar. A sincronização só subia sozinha: abrir o app num
-     aparelho novo, com o localStorage vazio, começava do zero e a primeira
-     subida apagava o progresso do outro aparelho. Agora todo arranque com
-     token configurado mescla o que está no GitHub antes de qualquer coisa. */
-  if (GH.configurado()) {
-    baixar({ silencioso: true }).then(() => {
-      conciliarFila(progresso);
-      salvarProgresso();
-      /* sessão de antes que não subiu inteira: sobe agora, com calma, em vez
-         de esperar a próxima vez que a aba for escondida — que é justamente
-         a hora em que a subida costuma morrer */
-      if (sessoesPendentes.length) sincronizar({ silencioso: true, completo: true });
-    });
-  }
+  Sinc = TaioeSincronia.criar({
+    sb: ctx.sb, uid: ctx.uid, curso: ctx.curso,
+    progresso: () => progresso,
+    aoMudar: () => { conciliarFila(progresso); salvarProgresso(); atualizarPlacar(); },
+    retrato: () => (progresso.serie && progresso.serie.length ? progresso.serie[progresso.serie.length - 1] : null),
+    extras: () => ({
+      arquivados: progresso.arquivados || {},
+      emVista: progresso.emVista || [],
+      textos: { emVista: (progresso.textos || textosVazio()).emVista, lidos: (progresso.textos || textosVazio()).lidos }
+    }),
+    aplicarExtras: x => {
+      x = x || {};
+      progresso.arquivados = x.arquivados || {};
+      progresso.emVista = Array.isArray(x.emVista) ? x.emVista : [];
+      const t = x.textos || {};
+      progresso.textos = { emVista: Object.assign({ poema: null, prosa: null }, t.emVista || {}), lidos: t.lidos || {} };
+    },
+    estado: statusSync
+  });
+  Sinc.iniciar();
 
-  window.Espanhol = { progresso: () => progresso, sessao: () => sessao, resumo: gerarResumo };
-})();
+  window.TaioeCards = { progresso: () => progresso, sessao: () => sessao };
+};
