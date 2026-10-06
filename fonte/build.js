@@ -329,7 +329,12 @@ for (const bruto of cards) {
   textos.set(normalizar(c[L.texto]), c.id);
 
   const pelaMesmaRegua = Motor.normalizar(c[L.texto], idioma);
-  if (pelaMesmaRegua && pelaRegua.has(pelaMesmaRegua) && pelaRegua.get(pelaMesmaRegua) !== c.id) {
+  /* homógrafo declarado: «the back» (as costas) e «back» (de volta) são palavras diferentes que o
+     funil lê igual; o card diz em «homografos» que sabe disso, e a guarda deixa passar */
+  const outro = pelaRegua.get(pelaMesmaRegua);
+  const declarado = outro && ((bruto.homografos || []).includes(outro) ||
+    ((cards.find(x => x.id === outro) || {}).homografos || []).includes(c.id));
+  if (pelaMesmaRegua && pelaRegua.has(pelaMesmaRegua) && outro !== c.id && !declarado) {
     erros.push('o funil não distingue este card de ' + pelaRegua.get(pelaMesmaRegua) + ': ' + onde +
       ' — os dois viram «' + pelaMesmaRegua + '»');
   }
