@@ -615,3 +615,11 @@ label input:focus{outline:0;border-color:var(--acento)}
 .curso:hover,.curso:focus-visible{border-color:var(--acento);transform:translateY(-1px);outline:none}
 .curso-bandeira{width:36px;height:24px;border-radius:3px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
 .curso-nome{letter-spacing:.2px}
+
+/* ── Seus comentários (Configurações) ── */
+.meus-comentarios{display:flex;flex-direction:column;gap:10px;font-size:14px;color:var(--texto-2)}
+.meu-comentario{border-left:3px solid var(--borda);padding:2px 10px}
+.meu-comentario p{margin:2px 0}
+.mc-topo{font-size:12px;font-weight:700;letter-spacing:.02em}
+.mc-texto{color:var(--texto)}
+.mc-retorno{color:var(--ok)}

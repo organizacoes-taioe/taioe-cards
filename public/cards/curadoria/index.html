@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#12141c">
+<title>Curadoria · Taioé Cards</title>
+<link rel="stylesheet" href="../style.css?v=75ae23fc">
+<link rel="stylesheet" href="curadoria.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="/cards/" title="Voltar aos Cards">Taioé <span>Cards</span></a>
+  <div class="placar">Curadoria dos comentários</div>
+</header>
+
+<main class="curadoria">
+  <p class="sub" id="cur-estado">Abrindo…</p>
+
+  <section id="cur-app" hidden>
+    <div class="cur-resumo" id="cur-resumo"></div>
+
+    <div class="cur-filtros" role="group" aria-label="Quais itens mostrar">
+      <button type="button" data-filtro="gere" aria-pressed="true">Para você</button>
+      <button type="button" data-filtro="novos" aria-pressed="false">Ainda não avaliados</button>
+      <button type="button" data-filtro="avaliados" aria-pressed="false">Avaliados</button>
+      <button type="button" data-filtro="todos" aria-pressed="false">Todos</button>
+    </div>
+    <div id="cur-itens" class="cur-itens"></div>
+
+    <section class="cur-geral">
+      <h2>Conversa geral</h2>
+      <p class="ajuda">Orientações que valem para todos os casos: o Claude lê na próxima rodada e leva em conta.</p>
+      <div id="cur-geral-fio" class="cur-fio"></div>
+      <form class="cur-escrever" data-item-tipo="geral">
+        <textarea rows="3" maxlength="4000" placeholder="Escreva uma orientação para o Claude…" aria-label="Orientação geral"></textarea>
+        <button type="submit" class="primario">Enviar</button>
+      </form>
+    </section>
+  </section>
+</main>
+
+<script src="../vendor/supabase-js-2.117.2.js?v=16aeff36"></script>
+<script src="../js/taioe-sessao.js?v=c04dd1f9"></script>
+<script src="../js/versoes.js?v=466b7533"></script>
+<script src="curadoria.js"></script>
+</body>
+</html>
