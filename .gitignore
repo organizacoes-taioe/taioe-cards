@@ -2,3 +2,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 .claude/
+
+# O SQL da importação (fonte/migrar-supabase.js) leva o histórico de estudo: nunca versionar.
+migracao*.sql
