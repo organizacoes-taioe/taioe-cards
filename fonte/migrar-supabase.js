@@ -9,8 +9,10 @@
    connection string que só ele tem):
 
      cd espanhol/dados && git pull
-     node fonte/migrar-supabase.js <pasta dos dados> <email da conta> [--substituir] > %TEMP%\migracao.sql
+     node fonte/migrar-supabase.js <pasta dos dados> <email da conta> [--substituir] --saida %TEMP%\migracao.sql
      psql "<Session pooler da produção>" -v ON_ERROR_STOP=1 -f %TEMP%\migracao.sql
+
+   Use --saida: no Windows PowerShell o «>» grava em UTF-16, e o psql recusa o arquivo.
 
    O SQL roda numa transação só. Ele recusa se o email não tiver conta com
    cadastro feito, se faltar o catálogo es-pt e se a conta já tiver estudo
@@ -26,7 +28,9 @@ const crypto = require('crypto');
 
 const args = process.argv.slice(2);
 const substituir = args.includes('--substituir');
-const [pastaDados, email] = args.filter(a => a !== '--substituir');
+const iSaida = args.indexOf('--saida');
+const saida = iSaida >= 0 ? args[iSaida + 1] : null;
+const [pastaDados, email] = args.filter((a, i) => a !== '--substituir' && i !== iSaida && i !== iSaida + 1);
 if (!pastaDados || !email || !/^[^@\s']+@[^@\s']+$/.test(email)) {
   console.error('uso: node fonte/migrar-supabase.js <pasta dos dados> <email da conta> [--substituir] > migracao.sql');
   process.exit(1);
@@ -264,7 +268,8 @@ union all select 'fora de fila (tem de ser 0)', count(*)::text from cards.estado
 commit;
 `;
 
-process.stdout.write(sql);
+if (saida) fs.writeFileSync(saida, sql, 'utf8');   // UTF-8 sem BOM
+else process.stdout.write(sql);
 console.error('  ' + estados.length + ' cards, relógio ' + contadores.respostas + ', ' + diario.length + ' dias, ' +
   respostas.length + ' respostas brutas (' + foraDoCorte + ' antes de ' + corte.slice(0, 10) + ' fora), ' +
   comentarios.length + ' comentários, ' + contestacoes.length + ' contestações' + (substituir ? ' — com --substituir' : ''));
