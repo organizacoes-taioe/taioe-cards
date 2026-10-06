@@ -613,5 +613,5 @@ label input:focus{outline:0;border-color:var(--acento)}
   transition:border-color .15s,transform .15s;
 }
 .curso:hover,.curso:focus-visible{border-color:var(--acento);transform:translateY(-1px);outline:none}
-.curso-bandeira{font-size:30px;line-height:1}
+.curso-bandeira{width:36px;height:24px;border-radius:3px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
 .curso-nome{letter-spacing:.2px}
