@@ -530,12 +530,20 @@ window.TaioeCardsApp = function (ctx) {
 
   function escolherProximoId() {
     const agora = new Date().toISOString();
+    const respostas = progresso.totais.respostas;
     const vencidos = progresso.dominados.filter(id =>
       progresso.cards[id] && !Motor.esperando(progresso.cards[id], agora)).length;
+    /* Só concorrem os cards que já esperaram o intervalo mínimo (ver
+       Motor.podeVoltar). Fila sem nenhum deles conta como vazia: aí o card
+       novo vem mesmo que o teto o vetasse. */
+    const livre = id => Motor.podeVoltar(progresso.cards[id], respostas);
+    const livres = { esPt: progresso.filaEsPt.filter(livre), ptEs: progresso.filaPtEs.filter(livre) };
+    const filaDe = k => (k === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs);
+    const tirar = (k, id) => filaDe(k).splice(filaDe(k).indexOf(id), 1)[0];
     const tem = {
       ineditos: progresso.ineditos.length > 0,
-      esPt: progresso.filaEsPt.length > 0,
-      ptEs: progresso.filaPtEs.length > 0
+      esPt: livres.esPt.length > 0,
+      ptEs: livres.ptEs.length > 0
     };
     const temOutro = tem.ineditos || tem.esPt || tem.ptEs;
     /* Sem nada nas outras filas, o vencido vem sem esperar espaço. */
@@ -544,11 +552,8 @@ window.TaioeCardsApp = function (ctx) {
     }
 
     /* quem esperou demais fura a fila, qualquer que seja o peso dela */
-    const fura = Motor.atrasadoQueFura(
-      { esPt: progresso.filaEsPt, ptEs: progresso.filaPtEs }, progresso.cards, progresso.totais.respostas);
-    if (fura) {
-      return (fura.fila === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs).splice(fura.indice, 1)[0];
-    }
+    const fura = Motor.atrasadoQueFura(livres, progresso.cards, respostas);
+    if (fura) return tirar(fura.fila, livres[fura.fila][fura.indice]);
 
     /* o piso e o teto do card novo */
     const novo = tem.ineditos ? Motor.vezDoNovo(respostasDesdeNovo()) : 'vetado';
@@ -559,13 +564,20 @@ window.TaioeCardsApp = function (ctx) {
       Motor.pesosDasFilas(progresso.cards, tem, Motor.alvoDaFila(progresso.diario)));
     if (escolhida === 'ineditos') return proximoNovo();
     if (escolhida === 'esPt' || escolhida === 'ptEs') {
-      const fila = escolhida === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs;
-      const i = Motor.escolherNaFila(fila, progresso.cards, progresso.totais.respostas);
-      return fila.splice(i, 1)[0];
+      const i = Motor.escolherNaFila(livres[escolhida], progresso.cards, respostas);
+      return tirar(escolhida, livres[escolhida][i]);
     }
 
     const proximo = dominadoMaisProximo(null);
-    return proximo === null ? null : progresso.dominados.splice(proximo, 1)[0];
+    if (proximo !== null) return progresso.dominados.splice(proximo, 1)[0];
+    /* Nada novo, nada vencido e ninguém fora do intervalo: antes repetir um
+       card cedo do que ficar sem card. Vem o que espera há mais tempo. */
+    let melhor = null;
+    ['esPt', 'ptEs'].forEach(k => filaDe(k).forEach(id => {
+      const d = (progresso.cards[id].naFila || {}).desde;
+      if (melhor === null || d < melhor.desde) melhor = { k, id, desde: d };
+    }));
+    return melhor ? tirar(melhor.k, melhor.id) : null;
   }
 
   function proximoNovo() {
@@ -1696,15 +1708,14 @@ window.TaioeCardsApp = function (ctx) {
       svg += '<path d="M' + cima.concat(baixo).join('L') + 'Z" fill="' + s.cor + '"/>';
       base = topoBanda;
     });
-    /* Uma fresta entre cada etapa e a seguinte. Entre as direções e o
-       dominado ela tem dois pixels; entre os degraus, um só: um card vale
-       menos de um pixel nesta escala, e a fresta de dois apagaria o degrau
-       fino por inteiro — ali quem mais separa é a cor. */
+    /* Uma fresta de um pixel entre cada etapa e a seguinte, a mesma em
+       todas (pedido do Gere, 06/10/2026): a de dois pixels nas direções
+       parecia linha mais grossa, e nos degraus apagaria o degrau fino. */
     let sep = new Array(n).fill(0);
     for (let k = 0; k < SERIES.length - 1; k++) {
       sep = sep.map((b, i) => b + serie[i][SERIES[k].chave]);
       svg += '<path d="M' + idx.map(i => x(i).toFixed(1) + ' ' + y(sep[i]).toFixed(1)).join('L') +
-        '" fill="none" class="fresta' + (k >= 2 ? ' fina' : '') + '"/>';
+        '" fill="none" class="fresta"/>';
     }
 
     /* Rótulos em números redondos de resposta, e não no valor do ponto que
@@ -2050,7 +2061,7 @@ window.TaioeCardsApp = function (ctx) {
     const passo = passoRedondo(maior);
     const topo = Math.ceil(maior / passo) * passo;
     const y = v => B - (v / topo) * (B - T);
-    const coluna = (W - L - R) / dias.length, larg = Math.max(2, coluna * 0.72);
+    const coluna = (W - L - R) / dias.length, larg = Math.max(2, Math.min(14, coluna * 0.72));
     const cadaRotulo = Math.ceil(dias.length / 7);
     let m = '';
     for (let v = 0; v <= topo; v += passo) {
@@ -2088,8 +2099,11 @@ window.TaioeCardsApp = function (ctx) {
     if (!horas.length) return '';
     const h0 = horas[0], h1 = horas[horas.length - 1];
     const cols = h1 - h0 + 1, L = 36, T = 6, vao = 3;
-    const cel = Math.min(28, Math.floor((LARGURA - L) / cols) - vao);
-    const alta = Math.max(cel, 24);             // altura da linha: os nomes dos dias respiram
+    /* O quadrado tem sempre o tamanho que terá com as 24 horas, e a figura
+       ocupa só a fração da largura que lhe cabe: com poucas horas, esticá-la
+       até a borda dava quadrados e letras enormes, com cara de erro. */
+    const cel = Math.floor((LARGURA - L) / 24) - vao;
+    const alta = 24;                            // altura da linha: os nomes dos dias respiram
     const maior = Math.max(...mapa.map(l => Math.max(...l)));
     const ordem = [1, 2, 3, 4, 5, 6, 0];
     let m = '';
@@ -2118,7 +2132,7 @@ window.TaioeCardsApp = function (ctx) {
       '<p class="legenda">O horário mais cheio é o das <b>' + pico + 'h</b>, e o dia da semana com mais respostas é <b>' +
       ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'][diaPico] +
       '</b>. Quanto mais claro o quadrado, mais respostas.</p>' +
-      figura(W, H, m, 'Respostas por dia da semana e hora');
+      figura(W, H, m, 'Respostas por dia da semana e hora', ' data-largura="' + (100 * W / LARGURA).toFixed(1) + '"');
   }
 
   /* ── quantas respostas até dominar ──

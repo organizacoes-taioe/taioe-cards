@@ -1564,6 +1564,19 @@ window.Motor = (function () {
     return Math.random() < Math.min(1, chance) ? pior : null;
   }
 
+  /* ── o intervalo mínimo ──
+     Nenhum card volta antes de INTERVALO_MINIMO outras respostas (pedido do
+     Gere, 06/10/2026). No começo, com um card só na fila e o card novo
+     vetado pelo teto, o mesmo card se repetia cinco vezes seguidas; agora,
+     sem card na fila que já tenha esperado o intervalo, vem um card novo —
+     e as primeiras respostas de quem começa são todas de cards novos. */
+  const INTERVALO_MINIMO = 10;
+
+  function podeVoltar(est, respostas) {
+    const f = est && est.naFila;
+    return !f || respostas - f.desde > INTERVALO_MINIMO;
+  }
+
   function cumpriu(est, respostas) {
     const f = est && est.naFila;
     return !f || respostas - f.desde >= (f.distancia || 0);
@@ -2546,7 +2559,7 @@ window.Motor = (function () {
     tempoConfiavel, MS_ABANDONO,
     contarDirecoes,
     filaDe, pesosDasFilas, chancesDasFilas, sortearFila,
-    urgencia, cumpriu, escolherNaFila, vezDoDominado, ESPACO_DOMINADO,
+    urgencia, cumpriu, escolherNaFila, podeVoltar, INTERVALO_MINIMO, vezDoDominado, ESPACO_DOMINADO,
     ALVO_MIN, ALVO_MAX, alvoDaFila, acertoRecente, vezDoNovo, atrasadoQueFura,
     DOMINADOS_PARA_TEXTOS, dominadosNoTotal, textosLiberados,
     atualizarTextosEmVista, palavrasDosTextos, andamentoDoTexto,
