@@ -16,72 +16,88 @@
    {
     "es": "Caminante, son tus huellas",
     "pt": "Andante, são os teus rastros",
-    "en": "Wanderer, your footprints are"
+    "en": "Wanderer, your footprints are",
+    "requer": [
+     "p911",
+     "p351",
+     "p348"
+    ]
    },
    {
     "es": "el camino, y nada más;",
     "pt": "o caminho, e nada mais;",
-    "en": "the road, and nothing more;"
+    "en": "the road, and nothing more;",
+    "requer": [
+     "p491",
+     "p403"
+    ]
    },
    {
     "es": "caminante, no hay camino,",
     "pt": "andante, não há caminho:",
-    "en": "wanderer, there is no road:"
+    "en": "wanderer, there is no road:",
+    "requer": [
+     "p352"
+    ]
    },
    {
     "es": "se hace camino al andar.",
     "pt": "faz-se caminho ao andar.",
-    "en": "the road is made by walking."
+    "en": "the road is made by walking.",
+    "requer": [
+     "p353",
+     "p474"
+    ]
    },
    {
     "es": "Al andar se hace camino,",
     "pt": "Ao andar se faz caminho,",
-    "en": "By walking one makes the road,"
+    "en": "By walking one makes the road,",
+    "requer": []
    },
    {
     "es": "y al volver la vista atrás",
     "pt": "e ao voltar a vista atrás",
-    "en": "and on looking back"
+    "en": "and on looking back",
+    "requer": [
+     "p435",
+     "p829",
+     "p912"
+    ]
    },
    {
     "es": "se ve la senda que nunca",
     "pt": "se vê a senda que nunca",
-    "en": "one sees the path that never"
+    "en": "one sees the path that never",
+    "requer": [
+     "p368",
+     "p913",
+     "p548"
+    ]
    },
    {
     "es": "se ha de volver a pisar.",
     "pt": "se há de tornar a pisar.",
-    "en": "will be trodden again."
+    "en": "will be trodden again.",
+    "requer": [
+     "p914"
+    ]
    },
    {
     "es": "caminante, no hay camino,",
     "pt": "Andante, não há caminho,",
-    "en": "Wanderer, there is no road,"
+    "en": "Wanderer, there is no road,",
+    "requer": []
    },
    {
     "es": "sino estelas en la mar.",
     "pt": "senão esteiras no mar.",
-    "en": "only wakes upon the sea."
+    "en": "only wakes upon the sea.",
+    "requer": [
+     "p350",
+     "p915"
+    ]
    }
   ]
- ],
- "requerTodas": [
-  "p911",
-  "p351",
-  "p348",
-  "p491",
-  "p403",
-  "p352",
-  "p353",
-  "p474",
-  "p435",
-  "p829",
-  "p912",
-  "p368",
-  "p913",
-  "p548",
-  "p914",
-  "p350",
-  "p915"
  ]
 }

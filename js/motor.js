@@ -1429,6 +1429,36 @@ window.Motor = (function () {
     };
   }
 
+  /* ── o poema verso a verso ──
+     Pedido do Gere, 07/10/2026: o poema não espera ficar completo. Cada
+     linha diz em «requer» as palavras que traz (o build monta o requerTodas
+     a partir delas, na ordem de leitura), e o verso k aparece quando as
+     palavras dos versos 1 a k estão sabidas, na meia-noite seguinte, a mesma
+     régua da frase. O aluno vê 1/8, depois 2/8, até o poema inteiro. Prosa e
+     poema sem «requer» por linha continuam aparecendo só inteiros. */
+  function versosDoTexto(texto) {
+    return ((texto && texto.blocos) || []).reduce((a, b) => a.concat(b || []), []);
+  }
+
+  function revelaPorVerso(texto) {
+    const vs = versosDoTexto(texto);
+    return !!texto && texto.tipo === 'poema' && vs.length > 0 && vs.every(l => l && Array.isArray(l.requer));
+  }
+
+  /* Quantos versos, a contar do primeiro, já podem ser lidos. */
+  function versosLiberados(texto, estados, agora, arquivados) {
+    const vs = versosDoTexto(texto);
+    if (!revelaPorVerso(texto)) return liberado(texto, estados, agora, arquivados) ? vs.length : 0;
+    const ate = [];
+    let k = 0;
+    for (const l of vs) {
+      ate.push(...l.requer);
+      if (!liberado({ requerTodas: ate }, estados, agora, arquivados)) break;
+      k++;
+    }
+    return k;
+  }
+
   /* O peso de cada fila no sorteio. «tem» diz quais filas têm card para dar;
      fila vazia sai da conta em vez de roubar chance das outras. «alvo» é o
      de alvoDaFila; sem ele, vale o menor. */
@@ -2562,7 +2592,7 @@ window.Motor = (function () {
     urgencia, cumpriu, escolherNaFila, podeVoltar, INTERVALO_MINIMO, vezDoDominado, ESPACO_DOMINADO,
     ALVO_MIN, ALVO_MAX, alvoDaFila, acertoRecente, vezDoNovo, atrasadoQueFura,
     DOMINADOS_PARA_TEXTOS, dominadosNoTotal, textosLiberados,
-    atualizarTextosEmVista, palavrasDosTextos, andamentoDoTexto,
+    atualizarTextosEmVista, palavrasDosTextos, andamentoDoTexto, versosDoTexto, revelaPorVerso, versosLiberados,
     liberado, liberadaEm, venceuEm, requeridas, arquivado, sabidaEm,
     situacaoDaFrase, atualizarEmVista, palavrasEmVista, FRASES_EM_VISTA,
     montarFila, alternativas, distratoresDinamicos, distratoresDaLingua, embaralhar,

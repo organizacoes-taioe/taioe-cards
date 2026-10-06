@@ -17,66 +17,79 @@
    {
     "es": "Volverán las oscuras golondrinas",
     "pt": "Voltarão as escuras andorinhas",
-    "en": "The dark swallows will return"
+    "en": "The dark swallows will return",
+    "requer": [
+     "p435",
+     "p916",
+     "p917"
+    ]
    },
    {
     "es": "en tu balcón sus nidos a colgar,",
     "pt": "seus ninhos na sacada a pendurar,",
-    "en": "to hang their nests on your balcony,"
+    "en": "to hang their nests on your balcony,",
+    "requer": [
+     "p617",
+     "p660",
+     "p308"
+    ]
    },
    {
     "es": "y, otra vez, con el ala a sus cristales",
     "pt": "e de novo, com a asa, nas vidraças",
-    "en": "and once again, with their wings, at its windows"
+    "en": "and once again, with their wings, at its windows",
+    "requer": [
+     "p858",
+     "p828",
+     "p918",
+     "p919"
+    ]
    },
    {
     "es": "jugando llamarán.",
     "pt": "brincando chamarão.",
-    "en": "they will knock in play."
+    "en": "they will knock in play.",
+    "requer": [
+     "p399",
+     "p381"
+    ]
    }
   ],
   [
    {
     "es": "Pero aquellas que el vuelo refrenaban",
     "pt": "Mas aquelas que o voo refreavam",
-    "en": "But those that used to slow their flight"
+    "en": "But those that used to slow their flight",
+    "requer": [
+     "p920",
+     "p921"
+    ]
    },
    {
     "es": "tu hermosura y mi dicha a contemplar,",
     "pt": "teu rosto e minha dita a contemplar,",
-    "en": "to gaze upon your beauty and my joy,"
+    "en": "to gaze upon your beauty and my joy,",
+    "requer": [
+     "p922",
+     "p923",
+     "p924"
+    ]
    },
    {
     "es": "aquellas que aprendieron nuestros nombres…",
     "pt": "aquelas que aprenderam nossos nomes,",
-    "en": "those that learned our names…"
+    "en": "those that learned our names…",
+    "requer": [
+     "p574",
+     "p661"
+    ]
    },
    {
     "es": "esas… ¡no volverán!",
     "pt": "essas… não voltarão!",
-    "en": "those… will not return!"
+    "en": "those… will not return!",
+    "requer": []
    }
   ]
- ],
- "requerTodas": [
-  "p435",
-  "p916",
-  "p917",
-  "p617",
-  "p660",
-  "p308",
-  "p858",
-  "p828",
-  "p918",
-  "p919",
-  "p399",
-  "p381",
-  "p920",
-  "p921",
-  "p922",
-  "p923",
-  "p924",
-  "p574",
-  "p661"
  ]
 }

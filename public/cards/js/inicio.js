@@ -54,7 +54,7 @@
     var uid = sessao.user.id, c = CURSOS[curso];
     porta('Abrindo o curso de ' + c.nome.toLowerCase() + '…');
     await carregar('data/cards-' + c.lingua + '.js');
-    if (c.lingua === 'es') await carregar('data/textos-es.js').catch(function () {});
+    await carregar('data/textos-' + c.lingua + '.js').catch(function () {});
     var salvo = await TaioeArmazem.ler('progresso', uid + ':' + curso);
     $('tela-porta').classList.add('oculto');
     window.TaioeCardsApp({
