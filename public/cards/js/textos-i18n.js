@@ -13,6 +13,7 @@ window.TAIOE_TEXTOS = {
     'lista.e': ' e ',
 
     'topo.marca': 'Início da Taioé',
+    'topo.marcaCards': 'Página inicial dos Cards',
     'topo.inicio': 'Página inicial',
     'topo.painel': 'Estatísticas',
     'topo.cards': 'Todos os cards',
@@ -280,6 +281,7 @@ window.TAIOE_TEXTOS = {
     'lista.e': ' y ',
 
     'topo.marca': 'Inicio de Taioé',
+    'topo.marcaCards': 'Página de inicio de Taioé Cards',
     'topo.inicio': 'Página de inicio',
     'topo.painel': 'Estadísticas',
     'topo.cards': 'Todas las tarjetas',
@@ -545,6 +547,7 @@ window.TAIOE_TEXTOS = {
     'lista.e': ' and ',
 
     'topo.marca': 'Taioé home',
+    'topo.marcaCards': 'Taioé Cards home',
     'topo.inicio': 'Home',
     'topo.painel': 'Statistics',
     'topo.cards': 'All cards',
