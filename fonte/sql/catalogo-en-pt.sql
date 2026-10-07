@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso en-pt, leva 9fe69565, 2004 cards.
+-- Catálogo do curso en-pt, leva 2d85b67b, 2004 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('en-pt', '9fe69565', '2004 cards')
+values ('en-pt', '2d85b67b', '2004 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -161,8 +161,8 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-pt', 'en-u041', 'frase', 'B1', array['casa', 'roupa']::text[], 'en-p041', '8d188614', array['Ponha a camisa na gaveta.', 'Ponha a camisa na mala.', 'Ponha a camisa na máquina.', 'Ponha a camisa no cabide.', 'Ponha a camisa no varal.']::text[]),
   ('en-pt', 'en-p042', 'palavra', 'A2', array['roupa', 'substantivo']::text[], null, '37088558', array['a barra da calça', 'a costura da camisa', 'a etiqueta da camisa', 'a gola da camisa', 'a manga da camisa']::text[]),
   ('en-pt', 'en-u042', 'frase', 'A2', array['roupa', 'cotidiano']::text[], 'en-p042', '258d7bdc', array['As alças estão compridas demais.', 'As barras estão compridas demais.', 'As calças estão compridas demais.', 'As mangas estão compridas demais.', 'As saias estão compridas demais.']::text[]),
-  ('en-pt', 'en-p043', 'palavra', 'B1', array['comida', 'objetos', 'substantivo']::text[], null, '40753c8f', array['o canudo', 'o copo', 'o garfo', 'o guardanapo', 'o palito']::text[]),
-  ('en-pt', 'en-u043', 'frase', 'B1', array['comida', 'cotidiano']::text[], 'en-p043', '47f89f32', array['Pode me dar um canudo?', 'Pode me dar um copo?', 'Pode me dar um garfo?', 'Pode me dar um guardanapo?', 'Pode me dar um palito?']::text[]),
+  ('en-pt', 'en-p043', 'palavra', 'B1', array['comida', 'objetos', 'substantivo']::text[], null, '108bf86e', array['o canudo', 'o copo', 'o garfo', 'o guardanapo', 'o palito']::text[]),
+  ('en-pt', 'en-u043', 'frase', 'B1', array['comida', 'cotidiano']::text[], 'en-p043', 'dd887d04', array['Pode me dar um canudo?', 'Pode me dar um copo?', 'Pode me dar um garfo?', 'Pode me dar um guardanapo?', 'Pode me dar um palito?']::text[]),
   ('en-pt', 'en-p044', 'palavra', 'A2', array['casa', 'substantivo']::text[], null, 'b40a701f', array['o chão', 'o piso', 'o porão', 'o telhado', 'o teto']::text[]),
   ('en-pt', 'en-u044', 'frase', 'A2', array['casa', 'cotidiano']::text[], 'en-p044', 'c04d7cf3', array['Tem uma lâmpada na escada.', 'Tem uma lâmpada na mesa.', 'Tem uma lâmpada na parede.', 'Tem uma lâmpada na varanda.', 'Tem uma lâmpada no teto.']::text[]),
   ('en-pt', 'en-p045', 'palavra', 'A2', array['casa', 'objetos', 'substantivo']::text[], null, 'b222a15d', array['a caixa', 'a lixeira', 'a peneira', 'a prateleira', 'a vassoura']::text[]),

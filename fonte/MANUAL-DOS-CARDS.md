@@ -81,7 +81,14 @@ ela não é do card: é do motor ou da leva inteira.
   que seja grosseira ou de duplo sentido em algum país da língua («coger»,
   «concha», «pico», «bicho», «polla», «pinche»…) — nem como resposta, nem
   como distrator, nem dentro da frase ou da nota. Quando a palavra é
-  inevitável, a nota avisa do perigo sem repeti-lo.
+  inevitável, a nota avisa do perigo sem repeti-lo. Duas medidas do Gere
+  (07/10/2026): **vocabulário comum de armas e de violência fica** («the
+  gun», «la pistola» são palavras do dia a dia e não ofendem por si; o que
+  sai é o exemplo gratuito); e a **palavra comum demais, neutra quase em toda
+  parte e sem substituto, fica** («pisar»), cuidando só do contexto que acende
+  o duplo sentido («te he pisado» virou «te he pisado el pie»). Quando não há
+  forma universal, o card ensina a do país com mais falantes e aceita as
+  outras: «el popote» (México), com «la pajita», «el sorbete», «el pitillo».
 - **Nada repetido.** O build barra `es` igual ao de outro card; sinônimo muito
   próximo de card existente também não vale a vaga.
 
@@ -316,6 +323,24 @@ Latina. A forma deste card é **el ordenador**.»
   carro», «Llevé el coche al taller» também aceita «Llevé el carro al taller»
   (contestação do u043). Card novo com palavra que tem variante leva a
   variante na frase.
+
+### 5.3 As formas verbais da América Latina
+
+O espanhol do card pode ser o da Espanha, mas a resposta escrita na forma
+corrente da América vale (pedido do Gere, 07/10/2026), em `regionaisEs`:
+
+- **o pretérito simples onde a Espanha usa o perfeito**: «Todavía no he
+  comido» aceita «Todavía no comí» («na América Latina»). Toda frase com o
+  perfeito composto leva a forma simples; no card de conjugação do perfeito,
+  ela vai em `regionaisEs` e nunca em `formasEs` (seção 10);
+- **o voseo** onde o «tú» muda de forma: «¿Me puedes echar una mano?» aceita
+  «¿Me podés echar una mano?», «¿De dónde eres?» aceita «¿De dónde sos?»,
+  «Yo que tú» aceita «Yo que vos», o imperativo «ve» aceita «andá»
+  («na Argentina, no Uruguai e na América Central»). Onde a forma não muda
+  («¿cómo estás?»), nada a fazer;
+- **«vosotros» nunca é a resposta do card**: o plural é «ustedes», que vale em
+  toda parte. «Vosotros» pode entrar nas aceitas, como forma da Espanha.
+
 
 ## 6. Distratores
 
