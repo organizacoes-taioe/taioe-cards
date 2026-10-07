@@ -23,6 +23,8 @@ jobs:
           sha256sum -c "$RUNNER_TEMP/esperado.txt"
       - name: O motor do app é o das ferramentas
         run: cmp js/motor.js public/cards/js/motor.js
+      - name: A interface nas três línguas (mesmas chaves, nada fora do dicionário)
+        run: node fonte/conferir-i18n.js
       - name: O build está em dia (baralhos, catálogo, carimbos)
         run: |
           node fonte/build.js

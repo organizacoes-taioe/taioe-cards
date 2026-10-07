@@ -19,9 +19,24 @@ window.TaioeCardsApp = function (ctx) {
   const A = ctx.audiencia || 'pt';
   const CA = Motor.CAMPOS[A];
   const notaDe = c => (c && c[A === 'pt' ? 'nota' : 'nota' + A[0].toUpperCase() + A[1]]) || '';
-  const NOMES_LINGUA = { es: 'espanhol', en: 'inglês', pt: 'português' };
-  const NOME_L = NOMES_LINGUA[L] || L;
-  const NOME_A = NOMES_LINGUA[A] || A;
+  /* A interface fala a língua de quem estuda (A): no curso en-es, tudo em
+     espanhol. Os textos moram em textos-i18n.js; «t» traduz sempre em A,
+     mesmo que a página esteja mostrando outra língua por um instante (a
+     escolha de curso, depois de trocar a língua nas configurações). */
+  const I18N = window.TaioeI18n;
+  const t = (k, v) => I18N.tEm(A, k, v);
+  /* singular e plural: «chave.1» e «chave.n», com {n} */
+  const tn = (k, n, v) => t(k + (n === 1 ? '.1' : '.n'), Object.assign({ n: n }, v));
+  const LOCAL = I18N.local(A);
+  const aspas = x => t('aspas', { x: x });
+  const NOME_L = t('lingua.' + L);
+  const NOME_A = t('lingua.' + A);
+  /* Os temas são guardados em português; a tradução vem de fonte/tags.json,
+     que o build põe em data/tags.js. */
+  const TAGS = window.TAGS_RAW || {};
+  const nomeTag = tag => (A === 'pt' ? tag : ((TAGS[tag] || {})[A] || tag));
+  /* o lugar da forma regional, escrito em português no card */
+  const lugar = onde => I18N.lugar(onde, A);
   const BANDEIRA_L = ctx.bandeira || '🏳️';
   const BANDEIRA_A = ctx.bandeiraAudiencia || { pt: '🇧🇷', es: '🇪🇸', en: '🇺🇸' }[A];
   const CHAVE = ctx.uid + ':' + ctx.curso;
@@ -79,7 +94,7 @@ window.TaioeCardsApp = function (ctx) {
     'btn-comentario-enviar', 'btn-comentario-fechar',
     'btn-proximo', 'painel-conteudo', 'dica',
     'btn-texto', 'tela-texto', 'texto-conteudo',
-    'cfg-conta', 'cfg-curso', 'btn-conta', 'btn-sair', 'btn-trocar-curso',
+    'cfg-conta', 'cfg-curso', 'btn-conta', 'btn-sair', 'cfg-outros-cursos', 'cfg-lingua',
     'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync', 'cfg-comentarios'
   ].forEach(id => { el[id] = document.getElementById(id); });
 
@@ -507,21 +522,19 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   function atualizarPlacar() {
-    const t = progresso.totais;
+    const tt = progresso.totais;
     const vistos = Object.keys(progresso.cards).length;
-    const taxa = t.respostas ? Math.round(100 * t.acertos / t.respostas) : 0;
+    const taxa = tt.respostas ? Math.round(100 * tt.acertos / tt.respostas) : 0;
     /* Sem o total do baralho (pedido do Gere, 07/10/2026): quem começa não
        precisa ver quantos milhares faltam, só o que já andou. */
-    const jaVistos = vistos === 1 ? '1 card já visto' : vistos + ' cards já vistos';
-    el.placar.innerHTML =
-      '<b>' + vistos + '</b> ' + (vistos === 1 ? 'card visto' : 'cards vistos') + ' · ' +
-      '<b>' + t.respostas + '</b> respostas · <b>' + taxa + '%</b> de acerto';
+    el.placar.innerHTML = tn('placar.cards', vistos) + ' · ' +
+      t('placar.resto', { respostas: tt.respostas, taxa: taxa });
 
     const naSessao = sessao.eventos.length;
     const acertosSessao = sessao.eventos.filter(e => e.acertou).length;
     el['resumo-inicio'].innerHTML = (naSessao
-      ? 'Nesta sessão: <b>' + naSessao + '</b> respostas, <b>' + acertosSessao + '</b> certas. ' : '') +
-      (vistos ? jaVistos + '.' : 'Nenhum card visto ainda.');
+      ? t('inicio.sessao', { n: naSessao, certas: acertosSessao }) : '') +
+      (vistos ? tn('inicio.vistos', vistos) : t('inicio.nenhum'));
   }
 
   /* ═══════════════ fluxo do card ═══════════════ */
@@ -698,14 +711,10 @@ window.TaioeCardsApp = function (ctx) {
   function arquivarCardAtual() {
     if (!cardAtual) return;
     const c = PORID[cardAtual.id] || cardAtual;
-    const pergunta = c.tipo === 'palavra'
-      ? 'Você já conhece «' + c[L] + '»?\n\nEla sai dos seus estudos e passa a contar como dominada: as frases ' +
-        'e os textos que usam essa palavra podem aparecer. Se mudar de ideia, ela volta em Todos os cards → arquivados.'
-      : 'Você já conhece «' + c[L] + '»?\n\nEla sai dos seus estudos e não aparece mais. Se mudar de ideia, ' +
-        'ela volta em Todos os cards → arquivados.';
+    const pergunta = t(c.tipo === 'palavra' ? 'arquivar.perguntaPalavra' : 'arquivar.perguntaFrase', { x: c[L] });
     if (!window.confirm(pergunta)) return;
     marcarArquivo(c.id, true);
-    statusSync('«' + c[L] + '» arquivado. Para trazer de volta: Todos os cards → arquivados.', 'ok');
+    statusSync(t('arquivar.feito', { x: c[L] }), 'ok');
     respostaPendente = null;
     proximoCard();
   }
@@ -755,8 +764,8 @@ window.TaioeCardsApp = function (ctx) {
     chanceUsada = false;
     pausou = false;
 
-    el['meta-tipo'].textContent = cardAtual.tipo;
-    el['meta-modo'].textContent = modoAtual === 'multipla' ? 'múltipla escolha' : 'escreva a resposta';
+    el['meta-tipo'].textContent = nomeTipo(cardAtual.tipo);
+    el['meta-modo'].textContent = t(modoAtual === 'multipla' ? 'modo.multipla' : 'modo.escrita');
 
     /* A frase destravada diz de que palavra veio — ela está aqui porque
        você venceu aquela palavra, e ver as duas juntas é metade da lição.
@@ -764,13 +773,13 @@ window.TaioeCardsApp = function (ctx) {
        tomar um banho» entrega metade da resposta; e na ida diz qual palavra
        da frase é a que conta. Quem mostra é o concluir. */
     const palavra = cardAtual.requer && PORID[cardAtual.requer];
-    el['meta-origem'].textContent = palavra ? 'de ' + palavra[L] : '';
+    el['meta-origem'].textContent = palavra ? t('card.origem', { x: palavra[L] }) : '';
     el['meta-origem'].classList.add('oculto');
     /* o «já conheço» chama atenção só na estreia do card; o texto diz o que
        a pessoa está afirmando (pedido do Gere, 07/10/2026) */
     const estreando = !estadoDe(id) || !estadoDe(id).vistas;
     el['btn-arquivar'].classList.toggle('evidente', estreando);
-    el['btn-arquivar'].textContent = cardAtual.tipo === 'palavra' ? 'Já conheço essa palavra' : 'Já conheço essa frase';
+    el['btn-arquivar'].textContent = t(cardAtual.tipo === 'palavra' ? 'card.jaConhecoPalavra' : 'card.jaConhecoFrase');
     /* O nível vive na aba do fichário e fica à mostra o tempo todo: saber que
        o card é A1 ou C2 não entrega resposta nenhuma, e ajuda a calibrar o
        esforço antes de ler. */
@@ -778,8 +787,8 @@ window.TaioeCardsApp = function (ctx) {
 
     const inversa = Motor.ehVolta(direcaoAtual);
     el.enunciado.textContent = inversa
-      ? (cardAtual.tipo === 'palavra' ? 'Como se diz esta palavra em ' + NOME_L + '?' : 'Como se diz isto em ' + NOME_L + '?')
-      : (cardAtual.tipo === 'palavra' ? 'O que significa esta palavra?' : 'O que quer dizer esta frase?');
+      ? t(cardAtual.tipo === 'palavra' ? 'card.enunciado.voltaPalavra' : 'card.enunciado.voltaFrase', { L: NOME_L })
+      : t(cardAtual.tipo === 'palavra' ? 'card.enunciado.idaPalavra' : 'card.enunciado.idaFrase');
 
     el['bandeira-pergunta'].textContent = inversa ? BANDEIRA_A : BANDEIRA_L;
     el['bandeira-resposta'].textContent = inversa ? BANDEIRA_L : BANDEIRA_A;
@@ -787,8 +796,8 @@ window.TaioeCardsApp = function (ctx) {
     /* na múltipla escolha a bandeira já diz tudo; o texto só ajuda quando
        é você quem tem que produzir a resposta */
     el['rotulo-resposta-txt'].textContent = modoAtual === 'multipla' ? ''
-      : (inversa ? 'responda em ' + NOME_L : 'responda em ' + NOME_A);
-    el.entrada.placeholder = inversa ? 'escreva em ' + NOME_L + '…' : 'escreva o significado…';
+      : t('card.respondaEm', { x: inversa ? NOME_L : NOME_A });
+    el.entrada.placeholder = inversa ? t('card.escrevaEm', { x: NOME_L }) : t('card.escrevaSignificado');
 
     el.termo.textContent = Motor.pergunta(cardAtual, direcaoAtual);
     el.termo.classList.toggle('frase', cardAtual.tipo === 'frase');
@@ -854,6 +863,17 @@ window.TaioeCardsApp = function (ctx) {
       b.addEventListener('click', () => responderMultipla(texto, b));
       el['area-multipla'].appendChild(b);
     });
+  }
+
+  /* «palavra» e «frase», na língua da interface */
+  function nomeTipo(tipo) {
+    return tipo === 'palavra' || tipo === 'frase' ? t('tipo.' + tipo) : tipo;
+  }
+
+  /* a linha da tradução do texto, quando o texto a traz na língua de quem
+     estuda («traducao» é a do português; «traducaoEs», «traducaoEn») */
+  function traducaoDe(txt) {
+    return A === 'pt' ? txt.traducao : txt['traducao' + A[0].toUpperCase() + A[1]];
   }
 
   function escapar(s) {
@@ -933,10 +953,9 @@ window.TaioeCardsApp = function (ctx) {
 
   function avisarLeituraEspanhola(l) {
     chanceUsada = true;
-    el['aviso-lingua'].innerHTML =
-      '<b>' + escapar(l.resposta) + '</b> é a tradução de <b>' + escapar(l.espanhol) +
-      '</b>, em ' + NOME_L + ' ' + BANDEIRA_L + '. Mas aqui <b>' + escapar(l.pergunta) + '</b> está em ' +
-      NOME_A + ' ' + BANDEIRA_A + ', e o que se pede é o ' + NOME_L + ' dela — tente de novo.';
+    el['aviso-lingua'].innerHTML = t('aviso.leitura', {
+      resposta: escapar(l.resposta), original: escapar(l.espanhol), pergunta: escapar(l.pergunta),
+      L: NOME_L, bL: BANDEIRA_L, A: NOME_A, bA: BANDEIRA_A });
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
       ajustarEntrada();
@@ -948,9 +967,8 @@ window.TaioeCardsApp = function (ctx) {
      puxar a palavra da memória, pouco para entregá-la. */
   function avisarSinonimo(s) {
     chanceUsada = true;
-    el['aviso-lingua'].innerHTML =
-      '<b>' + escapar(s.palavra) + '</b> também está certo, mas não é a palavra deste card. ' +
-      'Tente de novo' + (s.dica ? ': começa com <b>' + escapar(s.dica) + '</b>.' : '.');
+    el['aviso-lingua'].innerHTML = t('aviso.sinonimo', { x: escapar(s.palavra) }) +
+      (s.dica ? t('aviso.sinonimoDica', { d: escapar(s.dica) }) : t('aviso.sinonimoSemDica'));
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
       ajustarEntrada();
@@ -959,11 +977,8 @@ window.TaioeCardsApp = function (ctx) {
 
   function avisarLinguaTrocada(troca) {
     chanceUsada = true;
-    el['aviso-lingua'].innerHTML = troca.propria
-      ? '<b>' + escapar(troca.palavra) + '</b> é a própria palavra da pergunta, ' +
-        'em ' + NOME_L + ' ' + BANDEIRA_L + '. O que se pede é a tradução, em ' + NOME_A + ' ' + BANDEIRA_A + ' — tente de novo.'
-      : '<b>' + escapar(troca.palavra) + '</b> está em ' + NOME_L + ' ' + BANDEIRA_L + ': é a resposta da ' +
-        'pergunta ao contrário. Aqui a tradução vai em ' + NOME_A + ' ' + BANDEIRA_A + ' — tente de novo.';
+    el['aviso-lingua'].innerHTML = t(troca.propria ? 'aviso.propria' : 'aviso.trocada', {
+      x: escapar(troca.palavra), L: NOME_L, bL: BANDEIRA_L, A: NOME_A, bA: BANDEIRA_A });
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
       ajustarEntrada();
@@ -995,8 +1010,7 @@ window.TaioeCardsApp = function (ctx) {
        sem ensinar nada. */
     const nota = [notaDe(cardAtual),
       outraForma && outraForma[A] === cardAtual[A]
-        ? '🔁 ' + (generoAtual ? 'No masculino' : 'No feminino') +
-          ': «' + outraForma[L] + '» — ' + outraForma[A] : ''
+        ? t('nota.outraForma', { g: t(generoAtual ? 'nota.masculino' : 'nota.feminino'), x: outraForma[L], y: outraForma[A] }) : ''
     ].filter(Boolean).join('\n');
     el.nota.textContent = nota;
     el.nota.classList.toggle('oculto', !nota);
@@ -1004,7 +1018,7 @@ window.TaioeCardsApp = function (ctx) {
     /* Só as etiquetas: o nível já está na aba do fichário, e o tempo da
        resposta saiu daqui junto com o relógio. */
     el.medidas.innerHTML =
-      (cardAtual.tags || []).map(t => '<span class="medida">' + escapar(t) + '</span>').join('');
+      (cardAtual.tags || []).map(g => '<span class="medida">' + escapar(nomeTag(g)) + '</span>').join('');
 
     /* Escreveu outra conjugação: mostra qual foi, para o erro ensinar algo. */
     const escrevendo = r.modo === 'escrita' && !r.desistiu;
@@ -1027,8 +1041,7 @@ window.TaioeCardsApp = function (ctx) {
       ? Motor.acentoFaltando(cardAtual, r.resposta, r.direcao) : null;
     el['aviso-acento'].classList.toggle('oculto', !soAcento);
     if (soAcento) {
-      el['aviso-acento'].innerHTML = 'atenção ao acento: <b>' +
-        soAcento.palavras.map(escapar).join(', ') + '</b>';
+      el['aviso-acento'].innerHTML = t('aviso.acento', { x: soAcento.palavras.map(escapar).join(', ') });
       el['resposta-certa'].innerHTML = soAcento.pedacos.map(p => p.destaque
         ? '<mark class="acento">' + escapar(p.texto) + '</mark>'
         : escapar(p.texto)).join('');
@@ -1042,9 +1055,9 @@ window.TaioeCardsApp = function (ctx) {
     if (regiao) {
       /* entre aspas e sem o ponto final: numa frase, o ponto dela encostava
          no da linha — «…en coche..» */
-      const citar = t => '«<b>' + escapar(String(t).replace(/\.$/, '')) + '</b>»';
-      el['aviso-regiao'].innerHTML = '🌎 ' + citar(regiao.forma) + ' é como se diz ' +
-        escapar(regiao.onde) + '. A forma deste card é ' + citar(regiao.certa) + '.';
+      const citar = x => aspas('<b>' + escapar(String(x).replace(/\.$/, '')) + '</b>');
+      el['aviso-regiao'].innerHTML = t('aviso.regiao', {
+        forma: citar(regiao.forma), onde: escapar(lugar(regiao.onde)), certa: citar(regiao.certa) });
     }
 
     if (forma || genero || acento || flexao) {
@@ -1052,12 +1065,12 @@ window.TaioeCardsApp = function (ctx) {
         ? escapar(forma.forma) + ' <span class="forma-rotulo">' + escapar(forma.rotulo) + '</span>'
         : genero
         ? escapar(r.resposta) +
-          ' <span class="forma-rotulo">gênero errado — era «' + escapar(genero) + '»</span>'
+          ' <span class="forma-rotulo">' + t('feedback.genero', { x: aspas(escapar(genero)) }) + '</span>'
         : acento
         ? escapar(r.resposta) +
-          ' <span class="forma-rotulo">preste atenção ao ñ</span>'
+          ' <span class="forma-rotulo">' + t('feedback.ene') + '</span>'
         : escapar(r.resposta) +
-          ' <span class="forma-rotulo">forma errada — era «' + escapar(flexao) + '»</span>';
+          ' <span class="forma-rotulo">' + t('feedback.flexao', { x: aspas(escapar(flexao)) }) + '</span>';
       el['resposta-dada'].classList.remove('oculto');
       el['resposta-dada'].classList.add('conjugacao');
     } else {
@@ -1067,7 +1080,7 @@ window.TaioeCardsApp = function (ctx) {
     if (r.quase) {
       // chegou perto: mostra o que você escreveu e devolve a decisão
       el.veredito.className = 'veredito quase';
-      el.veredito.textContent = 'Deu quase';
+      el.veredito.textContent = t('feedback.quase');
       el['texto-dado'].textContent = r.resposta;
       /* a diferença pintada dos dois lados, como no acento: achar uma letra
          numa frase inteira, a olho, custa mais do que devia */
@@ -1122,8 +1135,8 @@ window.TaioeCardsApp = function (ctx) {
       el['resposta-certa'].innerHTML = escapar(alvoAtual.slice(0, onde)) + pintarPedacos(dif.certa) +
         escapar(alvoAtual.slice(onde + dif.forma.length));
     } else {
-      el['texto-dado'].innerHTML += ' <span class="forma-rotulo variante">também vale «' +
-        pintarPedacos(dif.certa) + '»</span>';
+      el['texto-dado'].innerHTML += ' <span class="forma-rotulo variante">' +
+        t('feedback.tambemVale', { x: aspas(pintarPedacos(dif.certa)) }) + '</span>';
     }
   }
 
@@ -1334,10 +1347,10 @@ window.TaioeCardsApp = function (ctx) {
     el.veredito.className = 'veredito ' + (r.acertou ? 'ok' : 'erro');
     /* Acertou: a caixa da resposta fica verde. Desistir não é acerto. */
     el['caixa-resposta'].classList.toggle('certa', r.acertou && !r.desistiu);
-    el.veredito.textContent = r.desistiu ? 'Sem problema — fica para a próxima'
-      : r.julgadoPorVoce ? (r.acertou ? 'Certo — você contou como acerto' : 'Contado como erro')
-      : r.acertou ? 'Certo!'
-      : 'Não foi dessa vez';
+    el.veredito.textContent = t(r.desistiu ? 'feedback.desistiu'
+      : r.julgadoPorVoce ? (r.acertou ? 'feedback.julgadoCerto' : 'feedback.julgadoErro')
+      : r.acertou ? 'feedback.certo'
+      : 'feedback.errado');
   }
 
   /* Você decide se o quase-certo valeu. Só depois disso a resposta é gravada. */
@@ -1379,8 +1392,8 @@ window.TaioeCardsApp = function (ctx) {
     /* O dominado acertado de novo não muda de etapa, e o que ele ganhou só
        se via no painel: uma espera mais longa. Dizer quanto é o que dá peso
        à revisão certa. */
-    const texto = virou ? 'Card dominado!'
-      : diasDeVolta ? 'volta em ' + rotuloEspera(diasDeVolta) : '';
+    const texto = virou ? t('feedback.dominado')
+      : diasDeVolta ? t('feedback.voltaEm', { x: rotuloEspera(diasDeVolta) }) : '';
     el.conquista.textContent = texto;
     el.conquista.classList.toggle('oculto', !texto);
   }
@@ -1576,7 +1589,7 @@ window.TaioeCardsApp = function (ctx) {
       });
     }
     fecharComentario();
-    statusSync('Comentário anotado. Obrigado!', 'ok');
+    statusSync(t('comentario.anotado'), 'ok');
   }
 
   function avancar() {
@@ -1589,8 +1602,8 @@ window.TaioeCardsApp = function (ctx) {
 
   function abrirPainel() {
     const ids = Object.keys(progresso.cards);
-    const t = progresso.totais;
-    const taxa = t.respostas ? Math.round(100 * t.acertos / t.respostas) : 0;
+    const tt = progresso.totais;
+    const taxa = tt.respostas ? Math.round(100 * tt.acertos / tt.respostas) : 0;
 
     /* Estreias: a primeira vez de cada card é a única medida limpa do que
        você já sabia antes de o app te mostrar a resposta. */
@@ -1617,22 +1630,20 @@ window.TaioeCardsApp = function (ctx) {
     let html = '<div class="grade">' +
       /* a ordem faz pares na tela de duas colunas: o que já saiu e a chance
          de sair mais; as duas taxas de acerto; as filas e onde elas acabam */
-      metrica(ids.length + '/' + CARDS.length, 'cards já vistos') +
+      metrica(ids.length + '/' + CARDS.length, t('painel.vistos')) +
       metrica(!temIneditos ? '—' : Math.round(100 * chances.ineditos) + '%',
-              !temIneditos
-                ? (presos ? 'frases esperando você dominar a palavra'
-                          : 'todos os cards já apareceram')
-                : 'chance de o próximo ser card novo') +
-      metrica(pctDe(dePrimeira.length, estreados.length), 'acertou de primeira') +
-      metrica(taxa + '%', 'acerto geral (' + t.respostas + ' respostas)') +
+              t(!temIneditos
+                ? (presos ? 'painel.presos' : 'painel.todosApareceram')
+                : 'painel.chanceNovo')) +
+      metrica(pctDe(dePrimeira.length, estreados.length), t('painel.dePrimeira')) +
+      metrica(taxa + '%', t('painel.geral', { n: milhar(tt.respostas) })) +
       /* é o equilíbrio que a admissão de inéditos persegue — vê-lo explica
          por que o card novo às vezes vem depressa e às vezes espera */
       /* É o alvo que a escolha de fila persegue — vê-lo explica por que o
          card novo às vezes vem depressa e às vezes rareia. */
       metrica(dir.esPt + ' · ' + dir.ptEs,
-              ROTULO_IDA + ' e ' + ROTULO_VOLTA + ' (alvo ' + alvo + ' em cada, pelos ' +
-                Math.round(100 * recente.taxa) + '% de acerto recente)') +
-      metrica(dominados, 'dominados nas duas direções') +
+              t('painel.direcoes', { ida: ROTULO_IDA, volta: ROTULO_VOLTA, alvo: alvo, taxa: Math.round(100 * recente.taxa) })) +
+      metrica(dominados, t('painel.dominados')) +
       '</div>';
 
     /* O caminho vem primeiro: é a figura do estudo inteiro, etapa por etapa,
@@ -1698,12 +1709,12 @@ window.TaioeCardsApp = function (ctx) {
   const SERIES = [
     { chave: 0, nome: ROTULO_IDA,   cor: 'var(--serie-espt)' },
     { chave: 1, nome: ROTULO_VOLTA, cor: 'var(--serie-ptes)' },
-    { chave: 2, nome: '3 dias',    cor: 'var(--escada-0)', degrau: true },
-    { chave: 3, nome: '1 semana',  cor: 'var(--escada-1)', degrau: true },
-    { chave: 4, nome: '2 semanas', cor: 'var(--escada-2)', degrau: true },
-    { chave: 5, nome: '1 mês',     cor: 'var(--escada-3)', degrau: true },
-    { chave: 6, nome: '3 meses',   cor: 'var(--escada-4)', degrau: true },
-    { chave: 7, nome: '6 meses',   cor: 'var(--escada-5)', degrau: true }
+    { chave: 2, nome: rotuloEspera(3),   cor: 'var(--escada-0)', degrau: true },
+    { chave: 3, nome: rotuloEspera(7),   cor: 'var(--escada-1)', degrau: true },
+    { chave: 4, nome: rotuloEspera(14),  cor: 'var(--escada-2)', degrau: true },
+    { chave: 5, nome: rotuloEspera(30),  cor: 'var(--escada-3)', degrau: true },
+    { chave: 6, nome: rotuloEspera(90),  cor: 'var(--escada-4)', degrau: true },
+    { chave: 7, nome: rotuloEspera(180), cor: 'var(--escada-5)', degrau: true }
   ];
 
   function graficoEtapas() {
@@ -1784,12 +1795,11 @@ window.TaioeCardsApp = function (ctx) {
       '<span class="chave"><i data-cor="' + s.cor + '"></i>' + s.nome +
       ' <b data-serie="' + s.chave + '">' + ult[s.chave] + '</b></span>').join('');
 
-    return '<h3>O caminho até aqui</h3>' +
-      '<p class="legenda">Cards em cada etapa ao longo das suas <b>' +
-      eixoX[n - 1] + '</b> respostas. Toque para ler um ponto.</p>' +
+    return '<h3>' + t('painel.caminho') + '</h3>' +
+      '<p class="legenda">' + t('painel.caminhoLegenda', { n: milhar(eixoX[n - 1]) }) + '</p>' +
       '<div class="chaves" id="g-chaves">' + chaves + '</div>' +
       '<svg class="grafico-etapas" viewBox="0 0 640 ' + ALT + '" role="img" ' +
-      'aria-label="Cards em cada etapa ao longo das respostas">' + svg + '</svg>' +
+      'aria-label="' + escapar(t('painel.caminhoAria')) + '">' + svg + '</svg>' +
       '<script type="application/json" id="g-dados">' +
       JSON.stringify(idx.map(i => [i].concat(serie[i], [eixoX[i]]))) +
       '</' + 'script>';
@@ -1847,12 +1857,12 @@ window.TaioeCardsApp = function (ctx) {
      Errar recua um degrau e não tira ninguém daqui: um card de 90 dias passa
      a voltar em 30, e continua dominado. */
   function rotuloEspera(dias) {
-    if (dias === 7) return '1 semana';
-    if (dias === 30) return '1 mês';
-    if (dias < 7) return dias + ' dias';
-    if (dias < 30 && dias % 7 === 0) return (dias / 7) + ' semanas';
-    if (dias % 30 === 0) return (dias / 30) + ' meses';
-    return dias + ' dias';
+    if (dias === 7) return t('espera.semana1');
+    if (dias === 30) return t('espera.mes1');
+    if (dias < 7) return t('espera.dias', { n: dias });
+    if (dias < 30 && dias % 7 === 0) return t('espera.semanas', { n: dias / 7 });
+    if (dias % 30 === 0) return t('espera.meses', { n: dias / 30 });
+    return t('espera.dias', { n: dias });
   }
 
   /* Perto da hora, dias não dizem nada: «amanhã» pode ser daqui a uma hora ou
@@ -1860,13 +1870,13 @@ window.TaioeCardsApp = function (ctx) {
      minutos vira minuto. */
   function quandoVolta(iso) {
     const min = Math.round((Date.parse(iso) - Date.now()) / 60000);
-    if (min <= 0) return 'agora';
-    if (min < 100) return min + ' min';
+    if (min <= 0) return t('volta.agora');
+    if (min < 100) return t('volta.min', { n: min });
     const horas = Math.round(min / 60);
-    if (horas < 48) return horas + ' h';
+    if (horas < 48) return t('volta.h', { n: horas });
     const dias = Math.round(horas / 24);
-    if (dias < 60) return dias + ' dias';
-    return Math.round(dias / 30) + ' meses';
+    if (dias < 60) return t('volta.dias', { n: dias });
+    return t('volta.meses', { n: Math.round(dias / 30) });
   }
 
   function tabelaDominados() {
@@ -1891,18 +1901,17 @@ window.TaioeCardsApp = function (ctx) {
       const vazio = d.n ? '' : ' class="vago"';
       /* Havendo um vencido no degrau, o próximo é ele, e volta agora — a data
          do seguinte, ainda de molho, não diz nada. */
-      const quando = d.vencidos ? 'agora' : d.proxima ? quandoVolta(d.proxima) : '—';
+      const quando = d.vencidos ? t('volta.agora') : d.proxima ? quandoVolta(d.proxima) : '—';
       return '<tr' + vazio + '><td>' + rotuloEspera(d.dias) + '</td>' +
         '<td class="num">' + (d.n || '—') + '</td>' +
         '<td class="num">' + quando + '</td></tr>';
     }).join('');
 
-    return '<h3>A escada dos dominados</h3>' +
-      '<p class="legenda">O dominado volta por data. Cada revisão certa sobe um ' +
-      'degrau; <b>errar desce um</b>, e não tira o card daqui.</p>' +
-      '<table><tr><th>Espera</th><th class="num">Cards</th>' +
-      '<th class="num">O próximo volta em</th></tr>' + linhas +
-      '<tr class="soma"><td>Todos</td><td class="num">' + total + '</td>' +
+    return '<h3>' + t('painel.escada') + '</h3>' +
+      '<p class="legenda">' + t('painel.escadaLegenda') + '</p>' +
+      '<table><tr><th>' + t('painel.espera') + '</th><th class="num">' + t('painel.cards') + '</th>' +
+      '<th class="num">' + t('painel.proximoVolta') + '</th></tr>' + linhas +
+      '<tr class="soma"><td>' + t('painel.todos') + '</td><td class="num">' + total + '</td>' +
       '<td class="num">—</td></tr></table>';
   }
 
@@ -1948,12 +1957,11 @@ window.TaioeCardsApp = function (ctx) {
 
     if (!linhas) return '';
     const semEstreia = Motor.NIVEIS.reduce((a, n) => a + g[n].semEstreia, 0);
-    return '<h3>Percentual de acerto</h3><p class="legenda">“De primeira” é o que você já sabia; ' +
-      '“depois”, o que fixou repetindo. A barra é o acerto geral do nível.' +
-      (semEstreia ? ' <b>' + semEstreia + '</b> sem estreia anotada.' : '') +
+    return '<h3>' + t('painel.acerto') + '</h3><p class="legenda">' + t('painel.acertoLegenda') +
+      (semEstreia ? t('painel.semEstreia', { n: semEstreia }) : '') +
       '</p>' +
-      '<table class="nivel"><tr><th>Nível</th>' +
-      ['Cards', 'De primeira', 'Depois', 'Geral'].map(r =>
+      '<table class="nivel"><tr><th>' + t('painel.nivel') + '</th>' +
+      [t('painel.cards'), t('painel.colDePrimeira'), t('painel.colDepois'), t('painel.colGeral')].map(r =>
         '<th class="vert"><span>' + r + '</span></th>').join('') +
       '<th></th></tr>' + linhas + '</table>';
   }
@@ -1964,14 +1972,18 @@ window.TaioeCardsApp = function (ctx) {
      de largura fixa que a tela encolhe; tocar num quadrado, numa barra ou
      num ponto mostra o número dele na dica. */
 
-  const MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
-  const SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'];
+  const MESES = t('datas.meses').split(',');
+  const SEMANA = t('datas.semana').split(',');
+  const SEMANA_LONGA = t('datas.semanaLonga').split(',');
+  const hora = h => t('datas.hora', { h: h });
+  /* «seg, 06/10»: o dia da semana e o dia, na ordem e no formato da língua */
+  const diaDaSemana = d => t('datas.diaSemana', { semana: SEMANA[meioDia(d).getDay()], dia: diaMes(d) });
   const RAMPA = ['var(--degrau-0)', 'var(--degrau-1)', 'var(--degrau-2)',
                  'var(--degrau-3)', 'var(--degrau-4)', 'var(--degrau-5)'];
   const LARGURA = 500;
 
-  const milhar = n => n.toLocaleString('pt-BR');
-  const diaMes = d => d.slice(8, 10) + '/' + d.slice(5, 7);
+  const milhar = n => Number(n).toLocaleString(LOCAL);
+  const diaMes = d => meioDia(d).toLocaleDateString(LOCAL, { day: '2-digit', month: '2-digit' });
   const comDica = texto => ' class="alvo" data-dica="' + escapar(texto) + '"';
   const figura = (w, h, miolo, rotulo, extra) =>
     '<svg class="grafico"' + (extra || '') + ' viewBox="0 0 ' + w + ' ' + h +
@@ -2034,7 +2046,7 @@ window.TaioeCardsApp = function (ctx) {
     const maior = Math.max(...dias.map(x => x.n));
     const tam = 20, vao = 4, L = 32, T = 20;
     let m = '', colunas = 0, ultimoMes = -9;
-    ['seg', 'qua', 'sex'].forEach((n, i) => {
+    [SEMANA[1], SEMANA[3], SEMANA[5]].forEach((n, i) => {
       m += '<text x="' + (L - 6) + '" y="' + (T + 2 * i * (tam + vao) + tam / 2 + 4) +
         '" text-anchor="end">' + n + '</text>';
     });
@@ -2043,8 +2055,8 @@ window.TaioeCardsApp = function (ctx) {
       colunas = Math.max(colunas, col + 1);
       const lin = segundaDe(x.d);
       const tom = x.n ? RAMPA[Math.min(5, Math.floor(5 * x.n / (maior + 1)) + 1)] : 'var(--fundo-3)';
-      const nome = SEMANA[meioDia(x.d).getDay()] + ', ' + diaMes(x.d);
-      m += '<rect' + comDica(nome + ' — ' + (x.n ? milhar(x.n) + (x.n === 1 ? ' resposta' : ' respostas') : 'sem estudo')) +
+      const nome = diaDaSemana(x.d);
+      m += '<rect' + comDica(nome + ' — ' + (x.n ? tn('painel.respostas', x.n, { n: milhar(x.n) }) : t('painel.semEstudo'))) +
         ' x="' + (L + col * (tam + vao)) + '" y="' + (T + lin * (tam + vao)) +
         '" width="' + tam + '" height="' + tam + '" rx="5" fill="' + tom + '"/>';
       /* o mês no alto da coluna em que ele começa, se couber */
@@ -2055,9 +2067,9 @@ window.TaioeCardsApp = function (ctx) {
       }
     });
     const W = L + colunas * (tam + vao), H = T + 7 * (tam + vao);
-    return '<h3>Calendário de estudo</h3>' +
+    return '<h3>' + t('painel.calendario') + '</h3>' +
       '<div class="calendario" data-max="' + Math.round(W * 1.2) + '">' +
-      figura(W, H, m, 'Respostas por dia, em calendário') + '</div>';
+      figura(W, H, m, t('painel.calendarioAria')) + '</div>';
   }
 
   /* ── respostas por dia ──
@@ -2069,11 +2081,10 @@ window.TaioeCardsApp = function (ctx) {
     const antes = todos.slice(0, -1).slice(-7);
     const media = Math.round(antes.reduce((a, x) => a + x.n, 0) / antes.length);
     const recorde = todos.reduce((a, x) => x.n > a.n ? x : a);
-    return '<h3>Respostas por dia</h3>' +
-      '<p class="legenda">Nos últimos ' + (antes.length === 7 ? '7 dias' : antes.length + (antes.length === 1 ? ' dia' : ' dias')) +
-      ', foram <b>' + milhar(media) + ' respostas por dia</b>, em média. O recorde é <b>' +
-      milhar(recorde.n) + '</b>, em ' + diaMes(recorde.d) + '.</p>' +
-      barrasPorDia(todos.slice(-60), 'var(--degrau-2)', 'resposta', 'respostas', 'Respostas por dia');
+    return '<h3>' + t('painel.respostasDia') + '</h3>' +
+      '<p class="legenda">' + t('painel.respostasDiaLegenda', {
+        periodo: tn('painel.dias', antes.length), media: milhar(media), recorde: milhar(recorde.n), dia: diaMes(recorde.d) }) + '</p>' +
+      barrasPorDia(todos.slice(-60), 'var(--degrau-2)', n => tn('painel.respostas', n, { n: milhar(n) }), t('painel.respostasDia'));
   }
 
   /* ── cards novos por dia ──
@@ -2094,15 +2105,16 @@ window.TaioeCardsApp = function (ctx) {
     const media = antes.reduce((a, x) => a + x.n, 0) / antes.length;
     const recorde = todos.reduce((a, x) => x.n > a.n ? x : a);
     const hoje = todos[todos.length - 1].n;
-    return '<h3>Cards novos por dia</h3>' +
-      '<p class="legenda">Nos últimos ' + (antes.length === 7 ? '7 dias' : antes.length + (antes.length === 1 ? ' dia' : ' dias')) +
-      ', estrearam <b>' + media.toFixed(1).replace('.', ',') + ' cards por dia</b>, em média' +
-      (hoje ? ' — hoje, <b>' + hoje + '</b> até agora' : '') + '. O recorde é <b>' +
-      milhar(recorde.n) + '</b>, em ' + diaMes(recorde.d) + '.</p>' +
-      barrasPorDia(todos.slice(-60), 'var(--serie-espt)', 'card novo', 'cards novos', 'Cards novos por dia');
+    return '<h3>' + t('painel.novosDia') + '</h3>' +
+      '<p class="legenda">' + t('painel.novosDiaLegenda', {
+        periodo: tn('painel.dias', antes.length),
+        media: media.toLocaleString(LOCAL, { minimumFractionDigits: 1, maximumFractionDigits: 1 }),
+        hoje: hoje ? t('painel.novosHoje', { n: hoje }) : '',
+        recorde: milhar(recorde.n), dia: diaMes(recorde.d) }) + '</p>' +
+      barrasPorDia(todos.slice(-60), 'var(--serie-espt)', n => tn('painel.novos', n, { n: milhar(n) }), t('painel.novosDia'));
   }
 
-  function barrasPorDia(dias, cor, um, varios, titulo) {
+  function barrasPorDia(dias, cor, rotulo, titulo) {
     const W = LARGURA, L = 36, R = 6, T = 10, B = 196;
     const maior = Math.max(1, ...dias.map(x => x.n));
     const passo = passoRedondo(maior);
@@ -2118,8 +2130,7 @@ window.TaioeCardsApp = function (ctx) {
     dias.forEach((x, i) => {
       const bx = L + i * coluna + (coluna - larg) / 2;
       if (x.n) {
-        m += '<path' + comDica(SEMANA[meioDia(x.d).getDay()] + ', ' + diaMes(x.d) + ' — ' +
-          milhar(x.n) + ' ' + (x.n === 1 ? um : varios)) +
+        m += '<path' + comDica(diaDaSemana(x.d) + ' — ' + rotulo(x.n)) +
           ' d="' + barra(bx, y(x.n), larg, B - y(x.n), 3) + '" fill="' + cor + '"/>';
       }
       if ((dias.length - 1 - i) % cadaRotulo === 0) {
@@ -2159,7 +2170,7 @@ window.TaioeCardsApp = function (ctx) {
       for (let h = h0; h <= h1; h++) {
         const n = mapa[d][h];
         const tom = n ? RAMPA[Math.min(5, Math.floor(6 * n / (maior + 1)))] : 'var(--fundo-3)';
-        m += '<rect' + comDica(SEMANA[d] + ', ' + h + 'h — ' + (n ? milhar(n) + (n === 1 ? ' resposta' : ' respostas') : 'nada')) +
+        m += '<rect' + comDica(SEMANA[d] + ', ' + hora(h) + ' — ' + (n ? tn('painel.respostas', n, { n: milhar(n) }) : t('painel.nada'))) +
           ' x="' + (L + (h - h0) * (cel + vao)) + '" y="' + (T + lin * (alta + vao)) +
           '" width="' + cel + '" height="' + alta + '" rx="4" fill="' + tom + '"/>';
       }
@@ -2168,18 +2179,16 @@ window.TaioeCardsApp = function (ctx) {
     for (let h = h0; h <= h1; h++) {
       if ((h - h0) % cadaHora) continue;
       m += '<text x="' + (L + (h - h0) * (cel + vao) + cel / 2) + '" y="' + (T + 7 * (alta + vao) + 16) +
-        '" text-anchor="middle">' + h + 'h</text>';
+        '" text-anchor="middle">' + hora(h) + '</text>';
     }
     const porHora = new Array(24).fill(0), porDia = mapa.map(l => l.reduce((a, b) => a + b, 0));
     mapa.forEach(l => l.forEach((n, h) => { porHora[h] += n; }));
     const pico = porHora.indexOf(Math.max(...porHora));
     const diaPico = porDia.indexOf(Math.max(...porDia));
     const W = L + cols * (cel + vao), H = T + 7 * (alta + vao) + 22;
-    return '<h3>Quando você estuda</h3>' +
-      '<p class="legenda">O horário mais cheio é o das <b>' + pico + 'h</b>, e o dia da semana com mais respostas é <b>' +
-      ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'][diaPico] +
-      '</b>. Quanto mais claro o quadrado, mais respostas.</p>' +
-      figura(W, H, m, 'Respostas por dia da semana e hora', ' data-largura="' + (100 * W / LARGURA).toFixed(1) + '"');
+    return '<h3>' + t('painel.horario') + '</h3>' +
+      '<p class="legenda">' + t('painel.horarioLegenda', { h: hora(pico), dia: SEMANA_LONGA[diaPico] }) + '</p>' +
+      figura(W, H, m, t('painel.horarioAria'), ' data-largura="' + (100 * W / LARGURA).toFixed(1) + '"');
   }
 
   /* ── quantas respostas até dominar ──
@@ -2213,15 +2222,14 @@ window.TaioeCardsApp = function (ctx) {
       const bx = L + i * coluna + (coluna - larg) / 2, n = hist[k] || 0;
       const rotulo = k === TETO ? TETO + '+' : String(k);
       if (n) {
-        m += '<path' + comDica((k === TETO ? TETO + ' ou mais' : k) + ' respostas — ' + n + (n === 1 ? ' card' : ' cards')) +
+        m += '<path' + comDica(t('painel.ateDominarDica', { k: k === TETO ? t('painel.ouMais', { n: TETO }) : k, cards: tn('painel.cardsN', n) })) +
           ' d="' + barra(bx, y(n), larg, B - y(n), 4) + '" fill="' + (k === mediana ? 'var(--degrau-4)' : 'var(--degrau-1)') + '"/>';
       }
       m += '<text x="' + (bx + larg / 2).toFixed(1) + '" y="' + (B + 22) + '" text-anchor="middle">' + rotulo + '</text>';
     });
-    return '<h3>Quantas respostas até dominar</h3>' +
-      '<p class="legenda">Dos <b>' + valores.length + '</b> cards que já chegaram ao domínio, a metade precisou de <b>' +
-      mediana + ' respostas ou menos</b>, e <b>' + pctDe(ate5, valores.length) + '</b> chegaram lá em até cinco.</p>' +
-      figura(W, B + 30, m, 'Quantas respostas cada card levou até o domínio');
+    return '<h3>' + t('painel.ateDominar') + '</h3>' +
+      '<p class="legenda">' + t('painel.ateDominarLegenda', { n: milhar(valores.length), m: mediana, p: pctDe(ate5, valores.length) }) + '</p>' +
+      figura(W, B + 30, m, t('painel.ateDominarAria'));
   }
 
   /* ── a memória depois da espera ──
@@ -2232,12 +2240,12 @@ window.TaioeCardsApp = function (ctx) {
     if (!ret.some(g => g && g[0])) return '';
     const linhas = Motor.DIAS_DOMINADO.map((dias, i) => {
       const g = ret[i] || [0, 0];
-      const acerto = g[0] >= 5 ? pctDe(g[1], g[0]) : g[0] ? 'poucos dados' : '—';
+      const acerto = g[0] >= 5 ? pctDe(g[1], g[0]) : g[0] ? t('painel.poucosDados') : '—';
       return '<tr' + (g[0] < 5 ? ' class="vago"' : '') + '><td>' + rotuloEspera(dias) + '</td>' +
         '<td class="num">' + (g[0] || '—') + '</td><td class="num">' + acerto + '</td></tr>';
     }).join('');
-    return '<h3>A memória depois da espera</h3>' +
-      '<table><tr><th>Espera</th><th class="num">Revisões</th><th class="num">Acerto</th></tr>' +
+    return '<h3>' + t('painel.memoria') + '</h3>' +
+      '<table><tr><th>' + t('painel.espera') + '</th><th class="num">' + t('painel.revisoes') + '</th><th class="num">' + t('painel.colAcerto') + '</th></tr>' +
       linhas + '</table>';
   }
 
@@ -2291,8 +2299,8 @@ window.TaioeCardsApp = function (ctx) {
   function situacaoDe(id) {
     const e = progresso.cards[id];
     if (Motor.arquivado(id, progresso.arquivados)) {
-      return { chave: 'arquivado', rotulo: (PORID[id] || {}).tipo === 'palavra'
-        ? 'arquivado — conta como dominado' : 'arquivado' };
+      return { chave: 'arquivado', rotulo: t((PORID[id] || {}).tipo === 'palavra'
+        ? 'situacao.arquivadoPalavra' : 'situacao.arquivado') };
     }
     if (!e || !e.vistas) {
       /* «Ainda não apareceu» sugere que é questão de tempo. A frase presa
@@ -2303,16 +2311,16 @@ window.TaioeCardsApp = function (ctx) {
           .filter(r => Motor.sabidaEm(r, progresso.cards, progresso.arquivados) === Infinity)
           .map(r => String(r)[0] === '+' ? String(r).slice(1) : (PORID[r] || {})[L] || r);
         return { chave: 'preso', rotulo: faltam.length
-          ? 'espera você dominar ' + faltam.map(f => '«' + f + '»').join(', ')
-          : 'destrava à meia-noite' };
+          ? t('situacao.espera', { lista: faltam.map(aspas).join(', ') })
+          : t('situacao.meiaNoite') };
       }
-      return { chave: 'novo', rotulo: 'ainda não apareceu' };
+      return { chave: 'novo', rotulo: t('situacao.novo') };
     }
-    if (e.etapa === 'dominado') return { chave: 'dominado', rotulo: 'dominado nas duas direções' };
-    if (Motor.ehVolta(Motor.direcaoDe(e))) return { chave: 'invertido', rotulo: 'na volta: você produz o ' + NOME_L };
+    if (e.etapa === 'dominado') return { chave: 'dominado', rotulo: t('situacao.dominado') };
+    if (Motor.ehVolta(Motor.direcaoDe(e))) return { chave: 'invertido', rotulo: t('situacao.volta', { L: NOME_L }) };
     return {
       chave: 'andamento',
-      rotulo: Motor.modoDe(e) === 'escrita' ? 'escrevendo em ' + NOME_A : 'múltipla escolha'
+      rotulo: Motor.modoDe(e) === 'escrita' ? t('situacao.escrevendo', { A: NOME_A }) : t('modo.multipla')
     };
   }
 
@@ -2324,11 +2332,11 @@ window.TaioeCardsApp = function (ctx) {
     });
 
     const conta = {};
-    CARDS.forEach(c => (c.tags || []).forEach(t => { conta[t] = (conta[t] || 0) + 1; }));
-    Object.keys(conta).sort((a, b) => conta[b] - conta[a] || a.localeCompare(b, 'pt'))
-      .forEach(t => {
+    CARDS.forEach(c => (c.tags || []).forEach(g => { conta[g] = (conta[g] || 0) + 1; }));
+    Object.keys(conta).sort((a, b) => conta[b] - conta[a] || nomeTag(a).localeCompare(nomeTag(b), LOCAL))
+      .forEach(g => {
         el['filtro-tag'].insertAdjacentHTML('beforeend',
-          '<option value="' + escapar(t) + '">' + escapar(t) + ' (' + conta[t] + ')</option>');
+          '<option value="' + escapar(g) + '">' + escapar(nomeTag(g)) + ' (' + conta[g] + ')</option>');
       });
   }
 
@@ -2346,11 +2354,11 @@ window.TaioeCardsApp = function (ctx) {
     /* agrupadas por lugar: «A» e «B», na América Latina; «C», no México */
     const porLugar = new Map();
     Object.entries(c[Motor.CAMPOS[L].regionais] || {}).forEach(([forma, onde]) =>
-      porLugar.set(onde, (porLugar.get(onde) || []).concat('«' + forma.replace(/\.$/, '') + '»')));
+      porLugar.set(onde, (porLugar.get(onde) || []).concat(aspas(forma.replace(/\.$/, '')))));
     const regionais = [...porLugar].map(([onde, formas]) =>
-      formas.join(formas.length > 2 ? ', ' : ' e ') + ', ' + onde);
-    return [notaDe(c), outra ? '🔁 No feminino: «' + outra[L] + '» — ' + outra[A] : '',
-      regionais.length ? '🌎 Também vale: ' + regionais.join('; ') + '.' : '']
+      formas.join(formas.length > 2 ? ', ' : t('lista.e')) + ', ' + lugar(onde));
+    return [notaDe(c), outra ? t('nota.outraForma', { g: t('nota.feminino'), x: outra[L], y: outra[A] }) : '',
+      regionais.length ? t('nota.tambemVale', { lista: regionais.join('; ') }) : '']
       .filter(Boolean).join('\n');
   }
 
@@ -2375,18 +2383,18 @@ window.TaioeCardsApp = function (ctx) {
       if (busca) {
         const alvo = Motor.normalizar(
           [c[L], c[A], notaDe(c), (c[CA.aceitas] || []).join(' '), Object.keys(c[Motor.CAMPOS[L].regionais] || {}).join(' '),
-           (c.tags || []).join(' ')].join(' '));
+           (c.tags || []).map(nomeTag).join(' '), (c.tags || []).join(' ')].join(' '));
         if (!busca.split(' ').every(termo => alvo.includes(termo))) return false;
       }
       return true;
     });
 
     el['contagem-cards'].innerHTML = visiveis.length === CARDS.length
-      ? 'Mostrando todos os <b>' + CARDS.length + '</b> cards.'
-      : 'Mostrando <b>' + visiveis.length + '</b> de ' + CARDS.length + ' cards.';
+      ? t('cards.mostrandoTodos', { n: milhar(CARDS.length) })
+      : t('cards.mostrando', { n: milhar(visiveis.length), total: milhar(CARDS.length) });
 
     if (!visiveis.length) {
-      el['lista-cards'].innerHTML = '<p class="vazio">Nenhum card com esses filtros.</p>';
+      el['lista-cards'].innerHTML = '<p class="vazio">' + t('cards.nenhum') + '</p>';
       return;
     }
 
@@ -2394,7 +2402,7 @@ window.TaioeCardsApp = function (ctx) {
       const s = situacaoDe(c.id);
       const e = progresso.cards[c.id];
       const placar = e && e.vistas
-        ? '<span class="selo">' + e.acertos + ' certas · ' + e.erros + ' erradas</span>' : '';
+        ? '<span class="selo">' + t('cards.placar', { a: e.acertos, e: e.erros }) + '</span>' : '';
 
       /* «visto» é para o que já circulou. Preso e inédito nunca apareceram. */
       const marca = s.chave === 'dominado' ? 'dominado'
@@ -2407,15 +2415,15 @@ window.TaioeCardsApp = function (ctx) {
         '</div>' +
         '<div class="card-linha-meta">' +
           '<span class="selo nivel">' + escapar(c.nivel) + '</span>' +
-          '<span class="selo">' + c.tipo + '</span>' +
-          '<span class="selo situacao ' + s.chave + '">' + s.rotulo + '</span>' +
+          '<span class="selo">' + escapar(nomeTipo(c.tipo)) + '</span>' +
+          '<span class="selo situacao ' + s.chave + '">' + escapar(s.rotulo) + '</span>' +
           placar +
-          (c.tags || []).map(t => '<span class="selo">' + escapar(t) + '</span>').join('') +
+          (c.tags || []).map(g => '<span class="selo">' + escapar(nomeTag(g)) + '</span>').join('') +
         '</div>' +
         (linhaDaNota(c) ? '<p class="card-linha-nota">' + escapar(linhaDaNota(c)) + '</p>' : '') +
-        '<button class="link-comentar na-lista" data-comentar="' + escapar(c.id) + '">Comentar</button>' +
+        '<button class="link-comentar na-lista" data-comentar="' + escapar(c.id) + '">' + t('cards.comentar') + '</button>' +
         (s.chave === 'arquivado'
-          ? ' <button class="link-comentar na-lista" data-desarquivar="' + escapar(c.id) + '">Voltar ao jogo</button>' : '') +
+          ? ' <button class="link-comentar na-lista" data-desarquivar="' + escapar(c.id) + '">' + t('cards.desarquivar') + '</button>' : '') +
       '</div>';
     }).join('');
   }
@@ -2585,15 +2593,15 @@ window.TaioeCardsApp = function (ctx) {
     if (Sinc) Sinc.agendar(3000);
     let aviso;
     if (!Motor.revelaPorVerso(txt)) {
-      aviso = 'Você destravou ' + (txt.tipo === 'poema' ? 'um poema' : 'um texto') + ': todas as palavras dele já são suas.';
+      aviso = t(txt.tipo === 'poema' ? 'texto.destravouPoema' : 'texto.destravouTexto');
     } else if (inteiro) {
-      aviso = 'O poema está completo: ' + r.total + '/' + r.total + '. Todas as palavras dele já são suas.';
+      aviso = t('texto.poemaCompleto', { n: r.total });
     } else {
-      aviso = (r.versos - antes > 1 ? 'Novos versos' : 'Um verso novo') + ' de «' + escapar(txt.titulo) + '»: ' +
-        r.versos + '/' + r.total + '. Os outros chegam com as próximas palavras.';
+      aviso = t(r.versos - antes > 1 ? 'texto.versosNovos' : 'texto.versoNovo',
+        { t: escapar(txt.titulo), k: r.versos, n: r.total });
     }
     el['texto-conteudo'].innerHTML = '<p class="recompensa">' + aviso + '</p>' + cartaDoTexto(txt, r.versos) +
-      '<button class="primario" id="btn-seguir-texto">Continuar estudando</button>';
+      '<button class="primario" id="btn-seguir-texto">' + t('texto.continuar') + '</button>';
     document.getElementById('btn-seguir-texto').addEventListener('click', () => { mostrar('tela-card'); proximoCard(); });
     mostrar('tela-texto');
   }
@@ -2621,44 +2629,42 @@ window.TaioeCardsApp = function (ctx) {
         linhas.map(l => '<tr><td class="verso-or" lang="' + L + '">' + escapar(l[L] || '') + '</td>' +
           '<td class="verso-pt">' + escapar(l[A] || '') + '</td></tr>').join('') + '</table>';
     }).join('');
-    const conta = parte ? '<p class="contador-versos">' + ate + '/' + total + ' versos</p>' : '';
+    const conta = parte ? '<p class="contador-versos">' + t('texto.contador', { k: ate, n: total }) + '</p>' : '';
     const pe = '<p class="ajuda">' + escapar(notaDe(txt)) + '</p>' +
-      (txt.traducao ? '<p class="ajuda">Tradução ' + escapar(txt.traducao) + '.</p>' : '');
+      (traducaoDe(txt) ? '<p class="ajuda">' + t('texto.traducao', { x: escapar(traducaoDe(txt)) }) + '</p>' : '');
     return '<div class="carta-texto">' + cab + blocos + conta + pe + '</div>';
   }
 
   function renderizarTexto() {
     const alvo = el['texto-conteudo'];
     if (!TEXTOS.length) {
-      alvo.innerHTML = '<p class="ajuda">Nenhum texto no app ainda.</p>';
+      alvo.innerHTML = '<p class="ajuda">' + t('texto.nenhum') + '</p>';
       return;
     }
     const tx = progresso.textos = progresso.textos || textosVazio();
     const dominados = Motor.dominadosNoTotal(progresso.cards);
     const partes = [];
-    partes.push('<p class="ajuda">Um poema e um texto em prosa ficam na lista de espera. As palavras ' +
-      'deles vão chegando como cards novos. O poema aparece verso a verso, à medida que as palavras de ' +
-      'cada verso ficam dominadas; o texto em prosa aparece inteiro, quando todas estiverem.</p>');
+    partes.push('<p class="ajuda">' + t('texto.explica') + '</p>');
     if (dominados < Motor.DOMINADOS_PARA_TEXTOS) {
-      partes.push('<p class="ajuda">Os textos começam com <b>' + Motor.DOMINADOS_PARA_TEXTOS +
-        '</b> cards dominados. Você tem <b>' + dominados + '</b>.</p>');
+      partes.push('<p class="ajuda">' + t('texto.comecam', { n: Motor.DOMINADOS_PARA_TEXTOS, m: dominados }) + '</p>');
     } else {
       tx.emVista = Motor.atualizarTextosEmVista(tx.emVista, TEXTOS, progresso.cards, progresso.arquivados || {}, tx.lidos);
-      partes.push('<div class="grupo"><h3>Na lista de espera</h3>');
+      partes.push('<div class="grupo"><h3>' + t('texto.espera') + '</h3>');
       for (const tipo of ['poema', 'prosa']) {
         const txt = tx.emVista[tipo] && TEXTO_POR_ID[tx.emVista[tipo]];
-        if (!txt) { partes.push('<p class="ajuda">Nenhum ' + (tipo === 'poema' ? 'poema' : 'texto em prosa') + ' por ler.</p>'); continue; }
+        if (!txt) { partes.push('<p class="ajuda">' + t(tipo === 'poema' ? 'texto.nenhumPoema' : 'texto.nenhumaProsa') + '</p>'); continue; }
         const a = Motor.andamentoDoTexto(txt, progresso.cards, Date.now(), progresso.arquivados || {});
         const faltam = Motor.requeridas(txt).filter(id => Motor.sabidaEm(id, progresso.cards, progresso.arquivados || {}) === Infinity)
           .map(id => (PORID[id] || {})[L] || id);
         const vistos = Motor.revelaPorVerso(txt) ? versosVistos(txt) : 0;
         const total = Motor.versosDoTexto(txt).length;
-        partes.push('<p><b>' + escapar(txt.titulo) + '</b>, de ' + escapar(txt.autor) + ' — ' +
-          (Motor.revelaPorVerso(txt) ? vistos + '/' + total + ' versos, ' : '') +
-          a.dominadas + ' de ' + a.palavras + ' palavras dominadas' +
-          (faltam.length ? '. Faltam: ' + escapar(faltam.join(', ')) + '.' : '; aparece amanhã.') + '</p>');
+        partes.push('<p>' + t('texto.andamento', {
+          titulo: escapar(txt.titulo), autor: escapar(txt.autor),
+          versos: Motor.revelaPorVerso(txt) ? t('texto.andamentoVersos', { k: vistos, n: total }) : '',
+          dominadas: a.dominadas, total: a.palavras,
+          fim: faltam.length ? t('texto.faltam', { lista: escapar(faltam.join(', ')) }) : t('texto.amanha') }) + '</p>');
         if (vistos) {
-          partes.push('<details class="texto-lido"><summary>Os versos que você já descobriu</summary>' +
+          partes.push('<details class="texto-lido"><summary>' + t('texto.descobertos') + '</summary>' +
             cartaDoTexto(txt, vistos) + '</details>');
         }
       }
@@ -2667,7 +2673,7 @@ window.TaioeCardsApp = function (ctx) {
     const lidos = TEXTOS.filter(t => tx.lidos[t.id])
       .sort((a, b) => String(tx.lidos[b.id]).localeCompare(String(tx.lidos[a.id])));
     if (lidos.length) {
-      partes.push('<div class="grupo"><h3>Os que você já leu</h3>');
+      partes.push('<div class="grupo"><h3>' + t('texto.lidos') + '</h3>');
       lidos.forEach(t => partes.push('<details class="texto-lido"><summary>' + escapar(t.titulo) + ' — ' +
         escapar(t.autor) + '</summary>' + cartaDoTexto(t) + '</details>'));
       partes.push('</div>');
@@ -2695,35 +2701,55 @@ window.TaioeCardsApp = function (ctx) {
 
   function abrirConfig() {
     el['cfg-conta'].textContent = (ctx.nome || '') + ' · ' + (ctx.email || '');
-    el['cfg-curso'].textContent = 'Você está no curso de ' + NOME_L + ', respondido em ' + NOME_A + '.';
-    el['btn-trocar-curso'].textContent = 'Estudar ' + ctx.nomeDoCurso(ctx.outroCurso).toLowerCase();
+    el['cfg-curso'].textContent = t('config.noCurso', { L: NOME_L, A: NOME_A });
+    /* os outros cursos para quem fala a mesma língua, um botão cada */
+    const outros = el['cfg-outros-cursos'];
+    outros.textContent = '';
+    (ctx.outrosCursos || []).forEach(k => {
+      const b = document.createElement('button');
+      b.className = 'secundario';
+      b.dataset.curso = k;
+      b.textContent = t('config.estudar', { x: t('lingua.' + ctx.linguaDoCurso(k)) });
+      outros.appendChild(b);
+    });
+    el['cfg-lingua'].value = A;
+    el['cfg-lingua'].disabled = false;
     mostrar('tela-config');
     mostrarMeusComentarios();
   }
 
+  /* Vai para outro curso: o progresso deste sobe antes (o de cada curso fica
+     guardado na conta e no aparelho, e nada se perde na troca). */
+  async function irParaCurso(k) {
+    salvarProgresso(true);
+    await Sinc.antesDeSair().catch(() => 0);
+    await ctx.trocarCurso(k);
+  }
+
   /* O que a pessoa enviou e o que a curadoria respondeu (colunas triagem e retorno). */
-  const SITUACAO = { aberto: 'aguardando', aceito: 'aceito', recusado: 'não aceito', resolvido: 'resolvido' };
+  const SITUACAO = { aberto: t('config.sitAberto'), aceito: t('config.sitAceito'),
+    recusado: t('config.sitRecusado'), resolvido: t('config.sitResolvido') };
   async function mostrarMeusComentarios() {
     const caixa = el['cfg-comentarios'];
-    caixa.textContent = 'Carregando…';
+    caixa.textContent = t('config.carregando');
     const sb = ctx.sb;
     const [a, b] = await Promise.all([
       sb.schema('cards').from('comentarios').select('card_id, curso, texto, triagem, retorno, feito_em').order('feito_em', { ascending: false }).limit(100),
       sb.schema('cards').from('contestacoes').select('card_id, curso, resposta, triagem, retorno, feito_em').order('feito_em', { ascending: false }).limit(100)
     ]).catch(() => [{ error: true }, { error: true }]);
     caixa.textContent = '';
-    if (a.error || b.error) { caixa.textContent = 'Sem conexão para mostrar agora.'; return; }
-    const todos = a.data.map(x => Object.assign({ tipo: 'Comentário', dito: x.texto }, x))
-      .concat(b.data.map(x => Object.assign({ tipo: 'Contestação', dito: '«' + x.resposta + '»' }, x)))
+    if (a.error || b.error) { caixa.textContent = t('config.semConexao'); return; }
+    const todos = a.data.map(x => Object.assign({ tipo: t('config.tipoComentario'), dito: x.texto }, x))
+      .concat(b.data.map(x => Object.assign({ tipo: t('config.tipoContestacao'), dito: aspas(x.resposta) }, x)))
       .sort((x, y) => (x.feito_em < y.feito_em ? 1 : -1));
-    if (!todos.length) { caixa.textContent = 'Você ainda não enviou nenhum.'; return; }
+    if (!todos.length) { caixa.textContent = t('config.nenhumComentario'); return; }
     todos.forEach(x => {
       const d = document.createElement('div'); d.className = 'meu-comentario';
       const c = (window.BARALHOS[x.curso.split('-')[0]] || { cards: [] }).cards.find(k => k.id === x.card_id);
-      const t = document.createElement('p'); t.className = 'mc-topo';
-      t.textContent = x.tipo + ' · ' + (c ? c[x.curso.split('-')[0]] : x.card_id) + ' · ' + (SITUACAO[x.triagem] || x.triagem);
+      const topo = document.createElement('p'); topo.className = 'mc-topo';
+      topo.textContent = x.tipo + ' · ' + (c ? c[x.curso.split('-')[0]] : x.card_id) + ' · ' + (SITUACAO[x.triagem] || x.triagem);
       const p = document.createElement('p'); p.className = 'mc-texto'; p.textContent = x.dito;
-      d.appendChild(t); d.appendChild(p);
+      d.appendChild(topo); d.appendChild(p);
       if (x.retorno) { const r = document.createElement('p'); r.className = 'mc-retorno'; r.textContent = x.retorno; d.appendChild(r); }
       caixa.appendChild(d);
     });
@@ -2735,11 +2761,10 @@ window.TaioeCardsApp = function (ctx) {
      neste aparelho, ligado à conta, e sobe quando ela entrar de novo. */
   el['btn-sair'].addEventListener('click', async () => {
     el['btn-sair'].disabled = true;
-    statusSync('Enviando o que falta…');
+    statusSync(t('config.enviando'));
     salvarProgresso(true);
     const faltam = await Sinc.antesDeSair().catch(() => Sinc.pendentes());
-    if (faltam && !confirm(faltam + (faltam === 1 ? ' resposta ainda não subiu e fica' : ' respostas ainda não subiram e ficam') +
-        ' guardada(s) neste aparelho até você entrar de novo. Sair mesmo assim?')) {
+    if (faltam && !confirm(tn('config.sairPendentes', faltam))) {
       el['btn-sair'].disabled = false;
       return;
     }
@@ -2747,19 +2772,31 @@ window.TaioeCardsApp = function (ctx) {
     location.replace('/');
   });
 
-  el['btn-trocar-curso'].addEventListener('click', async () => {
-    el['btn-trocar-curso'].disabled = true;
-    salvarProgresso(true);
-    await Sinc.antesDeSair().catch(() => 0);
-    await ctx.trocarCurso(ctx.outroCurso);
+  el['cfg-outros-cursos'].addEventListener('click', e => {
+    const b = e.target.closest('[data-curso]');
+    if (!b) return;
+    [...el['cfg-outros-cursos'].children].forEach(x => { x.disabled = true; });
+    irParaCurso(b.dataset.curso);
+  });
+
+  /* Trocar a língua da interface: se for a língua deste curso, nada muda na
+     tela; se não, a escolha mostra os cursos da língua nova (ctx.mudarLingua,
+     no inicio.js). Escolhido outro curso, este sobe antes; continuando neste,
+     a língua volta à dele e as configurações reaparecem. */
+  el['cfg-lingua'].addEventListener('change', async () => {
+    const l = el['cfg-lingua'].value;
+    el['cfg-lingua'].disabled = true;
+    const k = await ctx.mudarLingua(l);
+    if (k && k !== ctx.curso) { await irParaCurso(k); return; }
+    abrirConfig();
   });
 
   el['btn-exportar'].addEventListener('click', exportar);
 
   el['btn-zerar'].addEventListener('click', async () => {
     const n = Sinc.pendentes();
-    const aviso = n ? n + ' resposta(s) ainda não subiram e serão perdidas. ' : '';
-    if (!confirm(aviso + 'Apagar a cópia deste curso guardada neste navegador? O que já subiu continua na sua conta.')) return;
+    const aviso = n ? tn('config.zerarPerdidas', n) : '';
+    if (!confirm(aviso + t('config.zerarConfirma'))) return;
     apagando = true;
     clearTimeout(esperaSalvar);
     await Sinc.apagarLocal();
@@ -2820,9 +2857,9 @@ window.TaioeCardsApp = function (ctx) {
 
   /* Os textos da tela que dependem da língua do curso. */
   function ajustarTextosDaLingua() {
-    el['busca-cards'].placeholder = 'buscar em ' + NOME_L + ', ' + NOME_A + ', tema ou nota…';
+    el['busca-cards'].placeholder = t('cards.buscar', { L: NOME_L, A: NOME_A });
     const op = el['filtro-estado'].querySelector('option[value="invertido"]');
-    if (op) op.textContent = 'já na volta (' + ROTULO_VOLTA + ')';
+    if (op) op.textContent = t('cards.fInvertido', { x: ROTULO_VOLTA });
     el['btn-texto'].hidden = !TEXTOS.length;
     const icone = document.querySelector('link[rel="icon"]');
     if (icone) icone.href = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>" +
@@ -2855,7 +2892,8 @@ window.TaioeCardsApp = function (ctx) {
       const t = x.textos || {};
       progresso.textos = { emVista: Object.assign({ poema: null, prosa: null }, t.emVista || {}), lidos: t.lidos || {} };
     },
-    estado: statusSync
+    estado: statusSync,
+    t: t, local: LOCAL
   });
   Sinc.iniciar();
 
