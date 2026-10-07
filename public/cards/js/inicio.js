@@ -4,10 +4,21 @@
    Uma aba estuda por vez: duas abas no mesmo curso brigariam pela mesma fila (Web Locks). */
 (function () {
   'use strict';
+  /* Cada curso: a língua ensinada e a de quem estuda (audiencia). Os quatro
+     para quem fala espanhol e inglês ficam prontos aqui, mas só aparecem na
+     escolha quando o banco os ativar (cards.cursos.ativo). */
   var CURSOS = {
-    'es-pt': { lingua: 'es', nome: 'Espanhol', bandeira: '🇪🇸' },
-    'en-pt': { lingua: 'en', nome: 'Inglês', bandeira: '🇺🇸' }
+    'es-pt': { lingua: 'es', audiencia: 'pt', nome: 'Espanhol', bandeira: '🇪🇸' },
+    'en-pt': { lingua: 'en', audiencia: 'pt', nome: 'Inglês', bandeira: '🇺🇸' },
+    'en-es': { lingua: 'en', audiencia: 'es', nome: 'Inglés', bandeira: '🇺🇸' },
+    'pt-es': { lingua: 'pt', audiencia: 'es', nome: 'Portugués', bandeira: '🇧🇷' },
+    'es-en': { lingua: 'es', audiencia: 'en', nome: 'Spanish', bandeira: '🇪🇸' },
+    'pt-en': { lingua: 'pt', audiencia: 'en', nome: 'Portuguese', bandeira: '🇧🇷' }
   };
+  function outroDaMesmaLingua(curso) {
+    var a = CURSOS[curso].audiencia;
+    return Object.keys(CURSOS).filter(function (k) { return k !== curso && CURSOS[k].audiencia === a; })[0] || curso;
+  }
 
   function $(id) { return document.getElementById(id); }
   function lerLocal(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }
@@ -53,14 +64,14 @@
   async function abrir(sb, sessao, perfil, curso) {
     var uid = sessao.user.id, c = CURSOS[curso];
     porta('Abrindo o curso de ' + c.nome.toLowerCase() + '…');
-    await carregar('data/cards-' + c.lingua + '.js');
+    await carregar('data/cards-' + curso + '.js');
     await carregar('data/textos-' + c.lingua + '.js').catch(function () {});
     var salvo = await TaioeArmazem.ler('progresso', uid + ':' + curso);
     $('tela-porta').classList.add('oculto');
     window.TaioeCardsApp({
       sb: sb, uid: uid, email: sessao.user.email, nome: perfil.nome,
-      curso: curso, lingua: c.lingua, nomeCurso: c.nome, bandeira: c.bandeira,
-      outroCurso: curso === 'es-pt' ? 'en-pt' : 'es-pt',
+      curso: curso, lingua: c.lingua, audiencia: c.audiencia, nomeCurso: c.nome, bandeira: c.bandeira,
+      outroCurso: outroDaMesmaLingua(curso),
       nomeDoCurso: function (k) { return CURSOS[k] ? CURSOS[k].nome : k; },
       progressoSalvo: salvo || null,
       trocarCurso: async function (novo) {
