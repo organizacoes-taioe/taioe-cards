@@ -1,0 +1,95 @@
+{
+ "id": "txt-en-006",
+ "idioma": "en",
+ "tipo": "prosa",
+ "titulo": "The Adventures of Tom Sawyer",
+ "autor": "Mark Twain",
+ "obra": "The Adventures of Tom Sawyer, cap. I",
+ "ano": 1876,
+ "dominio": "Mark Twain morreu em 1910; o livro é de 1876. Domínio público há mais de um século.",
+ "fonte": "https://en.wikisource.org/wiki/The_Adventures_of_Tom_Sawyer/Chapter_I",
+ "recorte": "os sete primeiros parágrafos do capítulo I",
+ "traducao": "em prosa",
+ "nota": "O começo do livro: a velha senhora é a tia Polly, que procura o sobrinho pela casa. «What's gone with that boy?» é coloquial do Missouri, o mesmo que «what has become of», e hoje ninguém diz assim. Os verbos com partícula estão no sentido literal: «pulled down» e «put up» (os óculos descem e sobem), «looked over» e «looked out under» (por cima e por baixo deles).",
+ "notaEs": "El comienzo del libro: la anciana es la tía Polly, que busca a su sobrino por la casa. «What's gone with that boy?» es coloquial de Misuri, lo mismo que «what has become of», y hoy nadie lo dice así. Los verbos con partícula están en sentido literal: «pulled down» y «put up» (las gafas bajan y suben), «looked over» y «looked out under» (por encima y por debajo de ellas).",
+ "blocos": [
+  [
+   {
+    "en": "\"TOM!\"",
+    "pt": "\"TOM!\"",
+    "es": "\"¡TOM!\"",
+    "requer": []
+   }
+  ],
+  [
+   {
+    "en": "No answer.",
+    "pt": "Nenhuma resposta.",
+    "es": "Ninguna respuesta.",
+    "requer": [
+     "en-p552"
+    ]
+   }
+  ],
+  [
+   {
+    "en": "\"TOM!\"",
+    "pt": "\"TOM!\"",
+    "es": "\"¡TOM!\"",
+    "requer": []
+   }
+  ],
+  [
+   {
+    "en": "No answer.",
+    "pt": "Nenhuma resposta.",
+    "es": "Ninguna respuesta.",
+    "requer": []
+   }
+  ],
+  [
+   {
+    "en": "\"What's gone with that boy, I wonder?",
+    "pt": "\"Que fim terá levado esse menino?",
+    "es": "\"¿Qué habrá sido de ese chico?",
+    "requer": [
+     "en-p230",
+     "en-p237",
+     "en-p1037",
+     "en-p1038"
+    ]
+   },
+   {
+    "en": "You TOM!\"",
+    "pt": "Você aí, TOM!\"",
+    "es": "¡Eh, tú, TOM!\"",
+    "requer": []
+   }
+  ],
+  [
+   {
+    "en": "No answer.",
+    "pt": "Nenhuma resposta.",
+    "es": "Ninguna respuesta.",
+    "requer": []
+   }
+  ],
+  [
+   {
+    "en": "The old lady pulled her spectacles down and looked over them about the room; then she put them up and looked out under them.",
+    "pt": "A velha senhora puxou os óculos para baixo e olhou a sala por cima deles; depois os empurrou para cima e olhou por baixo deles.",
+    "es": "La anciana se bajó las gafas y miró la habitación por encima de ellas; luego se las subió y miró por debajo de ellas.",
+    "requer": [
+     "en-p287",
+     "en-p1039",
+     "en-p439",
+     "en-p609",
+     "en-p339",
+     "en-p669",
+     "en-p722",
+     "en-p256"
+    ]
+   }
+  ]
+ ]
+}

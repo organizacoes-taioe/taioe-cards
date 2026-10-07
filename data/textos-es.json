@@ -21,52 +21,87 @@
      {
       "es": "Caminante, son tus huellas",
       "pt": "Andante, são os teus rastros",
-      "en": "Wanderer, your footprints are"
+      "en": "Wanderer, your footprints are",
+      "requer": [
+       "p911",
+       "p351",
+       "p348"
+      ]
      },
      {
       "es": "el camino, y nada más;",
       "pt": "o caminho, e nada mais;",
-      "en": "the road, and nothing more;"
+      "en": "the road, and nothing more;",
+      "requer": [
+       "p491",
+       "p403"
+      ]
      },
      {
       "es": "caminante, no hay camino,",
       "pt": "andante, não há caminho:",
-      "en": "wanderer, there is no road:"
+      "en": "wanderer, there is no road:",
+      "requer": [
+       "p352"
+      ]
      },
      {
       "es": "se hace camino al andar.",
       "pt": "faz-se caminho ao andar.",
-      "en": "the road is made by walking."
+      "en": "the road is made by walking.",
+      "requer": [
+       "p353",
+       "p474"
+      ]
      },
      {
       "es": "Al andar se hace camino,",
       "pt": "Ao andar se faz caminho,",
-      "en": "By walking one makes the road,"
+      "en": "By walking one makes the road,",
+      "requer": []
      },
      {
       "es": "y al volver la vista atrás",
       "pt": "e ao voltar a vista atrás",
-      "en": "and on looking back"
+      "en": "and on looking back",
+      "requer": [
+       "p435",
+       "p829",
+       "p912"
+      ]
      },
      {
       "es": "se ve la senda que nunca",
       "pt": "se vê a senda que nunca",
-      "en": "one sees the path that never"
+      "en": "one sees the path that never",
+      "requer": [
+       "p368",
+       "p913",
+       "p548"
+      ]
      },
      {
       "es": "se ha de volver a pisar.",
       "pt": "se há de tornar a pisar.",
-      "en": "will be trodden again."
+      "en": "will be trodden again.",
+      "requer": [
+       "p914"
+      ]
      },
      {
       "es": "caminante, no hay camino,",
       "pt": "Andante, não há caminho,",
-      "en": "Wanderer, there is no road,"
+      "en": "Wanderer, there is no road,",
+      "requer": []
      },
      {
       "es": "sino estelas en la mar.",
       "pt": "senão esteiras no mar.",
-      "en": "only wakes upon the sea."
+      "en": "only wakes upon the sea.",
+      "requer": [
+       "p350",
+       "p915"
+      ]
      }
     ]
    ],
@@ -109,44 +144,78 @@
      {
       "es": "Volverán las oscuras golondrinas",
       "pt": "Voltarão as escuras andorinhas",
-      "en": "The dark swallows will return"
+      "en": "The dark swallows will return",
+      "requer": [
+       "p435",
+       "p916",
+       "p917"
+      ]
      },
      {
       "es": "en tu balcón sus nidos a colgar,",
       "pt": "seus ninhos na sacada a pendurar,",
-      "en": "to hang their nests on your balcony,"
+      "en": "to hang their nests on your balcony,",
+      "requer": [
+       "p617",
+       "p660",
+       "p308"
+      ]
      },
      {
       "es": "y, otra vez, con el ala a sus cristales",
       "pt": "e de novo, com a asa, nas vidraças",
-      "en": "and once again, with their wings, at its windows"
+      "en": "and once again, with their wings, at its windows",
+      "requer": [
+       "p858",
+       "p828",
+       "p918",
+       "p919"
+      ]
      },
      {
       "es": "jugando llamarán.",
       "pt": "brincando chamarão.",
-      "en": "they will knock in play."
+      "en": "they will knock in play.",
+      "requer": [
+       "p399",
+       "p381"
+      ]
      }
     ],
     [
      {
       "es": "Pero aquellas que el vuelo refrenaban",
       "pt": "Mas aquelas que o voo refreavam",
-      "en": "But those that used to slow their flight"
+      "en": "But those that used to slow their flight",
+      "requer": [
+       "p920",
+       "p921"
+      ]
      },
      {
       "es": "tu hermosura y mi dicha a contemplar,",
       "pt": "teu rosto e minha dita a contemplar,",
-      "en": "to gaze upon your beauty and my joy,"
+      "en": "to gaze upon your beauty and my joy,",
+      "requer": [
+       "p922",
+       "p923",
+       "p924"
+      ]
      },
      {
       "es": "aquellas que aprendieron nuestros nombres…",
       "pt": "aquelas que aprenderam nossos nomes,",
-      "en": "those that learned our names…"
+      "en": "those that learned our names…",
+      "requer": [
+       "p574",
+       "p661"
+      ]
      },
      {
       "es": "esas… ¡no volverán!",
       "pt": "essas… não voltarão!",
-      "en": "those… will not return!"
+      "en": "those… will not return!",
+      "requer": []
      }
     ]
    ],
@@ -191,88 +260,157 @@
      {
       "es": "Yo soy un hombre sincero",
       "pt": "Eu sou um homem sincero",
-      "en": "I am an honest man"
+      "en": "I am an honest man",
+      "requer": [
+       "p351",
+       "p925",
+       "p926"
+      ]
      },
      {
       "es": "de donde crece la palma.",
       "pt": "da terra em que cresce a palma,",
-      "en": "from where the palm tree grows,"
+      "en": "from where the palm tree grows,",
+      "requer": [
+       "p927",
+       "p928"
+      ]
      },
      {
       "es": "Y antes de morirme quiero",
       "pt": "e antes de morrer espero",
-      "en": "and before I die I want"
+      "en": "and before I die I want",
+      "requer": [
+       "p374",
+       "p546",
+       "p377"
+      ]
      },
      {
       "es": "echar mis versos del alma.",
       "pt": "soltar os meus versos da alma.",
-      "en": "to pour my verses from my soul."
+      "en": "to pour my verses from my soul.",
+      "requer": [
+       "p379",
+       "p929",
+       "p930"
+      ]
      }
     ],
     [
      {
       "es": "Yo vengo de todas partes,",
       "pt": "Venho de todas as partes",
-      "en": "I come from everywhere,"
+      "en": "I come from everywhere,",
+      "requer": [
+       "p362",
+       "p385",
+       "p795"
+      ]
      },
      {
       "es": "y hacia todas partes voy:",
       "pt": "e a toda parte me vou:",
-      "en": "and everywhere I go:"
+      "en": "and everywhere I go:",
+      "requer": [
+       "p355"
+      ]
      },
      {
       "es": "arte soy entre las artes,",
       "pt": "arte sou em meio às artes,",
-      "en": "I am art among the arts,"
+      "en": "I am art among the arts,",
+      "requer": [
+       "p931"
+      ]
      },
      {
       "es": "en los montes, monte soy.",
       "pt": "e nos montes, monte sou.",
-      "en": "among the mountains, a mountain."
+      "en": "among the mountains, a mountain.",
+      "requer": [
+       "p932"
+      ]
      }
     ],
     [
      {
       "es": "Yo sé los nombres extraños",
       "pt": "Eu sei os nomes arcanos",
-      "en": "I know the strange names"
+      "en": "I know the strange names",
+      "requer": [
+       "p392",
+       "p661",
+       "p933"
+      ]
      },
      {
       "es": "de las yerbas y las flores,",
       "pt": "das ervas, também das flores,",
-      "en": "of the herbs and the flowers,"
+      "en": "of the herbs and the flowers,",
+      "requer": [
+       "p934",
+       "p767"
+      ]
      },
      {
       "es": "y de mortales engaños,",
       "pt": "e de mortais desenganos,",
-      "en": "and of deadly deceptions,"
+      "en": "and of deadly deceptions,",
+      "requer": [
+       "p935",
+       "p936"
+      ]
      },
      {
       "es": "y de sublimes dolores.",
       "pt": "e das mais sublimes dores.",
-      "en": "and of sublime sorrows."
+      "en": "and of sublime sorrows.",
+      "requer": [
+       "p937",
+       "p938"
+      ]
      }
     ],
     [
      {
       "es": "Yo he visto en la noche oscura",
       "pt": "Eu vi, pela noite escura,",
-      "en": "I have seen in the dark night"
+      "en": "I have seen in the dark night",
+      "requer": [
+       "p352",
+       "p368",
+       "p789",
+       "p916"
+      ]
      },
      {
       "es": "llover sobre mi cabeza",
       "pt": "chover sobre a fronte acesa",
-      "en": "rain upon my head"
+      "en": "rain upon my head",
+      "requer": [
+       "p382",
+       "p740"
+      ]
      },
      {
       "es": "los rayos de lumbre pura",
       "pt": "os raios de chama pura",
-      "en": "the rays of pure fire"
+      "en": "the rays of pure fire",
+      "requer": [
+       "p939",
+       "p940",
+       "p876"
+      ]
      },
      {
       "es": "de la divina belleza.",
       "pt": "da mais divina beleza.",
-      "en": "of divine beauty."
+      "en": "of divine beauty.",
+      "requer": [
+       "p941",
+       "p942"
+      ]
      }
     ]
    ],

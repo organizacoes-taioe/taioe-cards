@@ -528,6 +528,15 @@ window.TaioeCardsApp = function (ctx) {
     return progresso.totais.respostas - ultima;
   }
 
+  /* Os cards em jogo: os que já estrearam e não foram arquivados. */
+  function cardsEmJogo() {
+    let n = 0;
+    for (const id in progresso.cards) {
+      if (progresso.cards[id].vistas && !Motor.arquivado(id, progresso.arquivados || {})) n++;
+    }
+    return n;
+  }
+
   function escolherProximoId() {
     const agora = new Date().toISOString();
     const respostas = progresso.totais.respostas;
@@ -551,12 +560,16 @@ window.TaioeCardsApp = function (ctx) {
       return progresso.dominados.splice(dominadoMaisProximo(agora), 1)[0];
     }
 
+    /* o piso e o teto do card novo (no começo, um a cada três, e aí nem o
+       atrasado passa na frente) */
+    const emJogo = cardsEmJogo();
+    const novo = tem.ineditos ? Motor.vezDoNovo(respostasDesdeNovo(), emJogo) : 'vetado';
+    if (novo === 'obrigado' && emJogo < Motor.CARDS_DO_COMECO) return proximoNovo();
+
     /* quem esperou demais fura a fila, qualquer que seja o peso dela */
     const fura = Motor.atrasadoQueFura(livres, progresso.cards, respostas);
     if (fura) return tirar(fura.fila, livres[fura.fila][fura.indice]);
 
-    /* o piso e o teto do card novo */
-    const novo = tem.ineditos ? Motor.vezDoNovo(respostasDesdeNovo()) : 'vetado';
     if (novo === 'obrigado') return proximoNovo();
     if (novo === 'vetado' && (tem.esPt || tem.ptEs)) tem.ineditos = false;
 
@@ -2486,30 +2499,66 @@ window.TaioeCardsApp = function (ctx) {
 
   /* ═══════════════ textos ═══════════════ */
 
-  /* O texto da vez que já pode ser lido: todas as palavras dominadas (ou
-     arquivadas) e a meia-noite seguinte passada. */
+  /* Quantos versos do poema a pessoa já viu. Não há campo próprio para isso
+     no servidor: cada verso mostrado vira uma entrada «<id>#<k>» em
+     textos.lidos, com a data, e a mescla dos lidos (a data mais antiga de
+     cada chave) já viaja entre aparelhos. O poema inteiro continua sendo a
+     entrada «<id>», como antes. */
+  function versosVistos(txt) {
+    const lidos = (progresso.textos && progresso.textos.lidos) || {};
+    let k = 0;
+    const pre = txt.id + '#';
+    for (const chave in lidos) {
+      if (chave.indexOf(pre) === 0) k = Math.max(k, parseInt(chave.slice(pre.length), 10) || 0);
+    }
+    return k;
+  }
+
+  /* O que mostrar no lugar do próximo card: o texto inteiro, quando todas as
+     palavras estão sabidas e passou a meia-noite seguinte; ou, no poema, os
+     versos que acabaram de destravar (pedido do Gere, 07/10/2026: o poema se
+     descobre aos poucos, 1/8, 2/8…). A prosa espera ficar completa. */
   function textoParaLer() {
     if (!TEXTOS.length || !Motor.textosLiberados(progresso.cards)) return null;
     const tx = progresso.textos = progresso.textos || textosVazio();
     tx.emVista = Motor.atualizarTextosEmVista(tx.emVista, TEXTOS, progresso.cards, progresso.arquivados || {}, tx.lidos);
     for (const tipo of ['poema', 'prosa']) {
       const txt = tx.emVista[tipo] && TEXTO_POR_ID[tx.emVista[tipo]];
-      if (txt && Motor.andamentoDoTexto(txt, progresso.cards, Date.now(), progresso.arquivados || {}).pronto) return txt;
+      if (!txt) continue;
+      const total = Motor.versosDoTexto(txt).length;
+      const k = Motor.versosLiberados(txt, progresso.cards, Date.now(), progresso.arquivados || {});
+      if (k >= total && total) return { txt: txt, versos: total, total: total };
+      if (Motor.revelaPorVerso(txt) && k > versosVistos(txt)) return { txt: txt, versos: k, total: total };
     }
     return null;
   }
 
-  /* A recompensa: o texto inteiro, no lugar do próximo card. Fica marcado
-     como lido na hora, e o próximo do mesmo tipo entra na lista de espera. */
-  function mostrarRecompensa(txt) {
-    progresso.textos.lidos[txt.id] = new Date().toISOString();
-    progresso.textos.emVista = Motor.atualizarTextosEmVista(progresso.textos.emVista, TEXTOS,
-      progresso.cards, progresso.arquivados || {}, progresso.textos.lidos);
+  /* A recompensa, no lugar do próximo card. Inteiro, o texto fica marcado
+     como lido na hora e o próximo do mesmo tipo entra na lista de espera;
+     em parte, só os versos novos ficam marcados como vistos. */
+  function mostrarRecompensa(r) {
+    const txt = r.txt, inteiro = r.versos >= r.total;
+    const lidos = progresso.textos.lidos;
+    const agora = new Date().toISOString();
+    const antes = versosVistos(txt);
+    for (let k = antes + 1; k <= r.versos; k++) if (Motor.revelaPorVerso(txt)) lidos[txt.id + '#' + k] = agora;
+    if (inteiro) {
+      lidos[txt.id] = agora;
+      progresso.textos.emVista = Motor.atualizarTextosEmVista(progresso.textos.emVista, TEXTOS,
+        progresso.cards, progresso.arquivados || {}, lidos);
+    }
     salvarProgresso();
     if (Sinc) Sinc.agendar(3000);
-    el['texto-conteudo'].innerHTML =
-      '<p class="recompensa">Você destravou ' + (txt.tipo === 'poema' ? 'um poema' : 'um texto') +
-      ': todas as palavras dele já são suas.</p>' + cartaDoTexto(txt) +
+    let aviso;
+    if (!Motor.revelaPorVerso(txt)) {
+      aviso = 'Você destravou ' + (txt.tipo === 'poema' ? 'um poema' : 'um texto') + ': todas as palavras dele já são suas.';
+    } else if (inteiro) {
+      aviso = 'O poema está completo: ' + r.total + '/' + r.total + '. Todas as palavras dele já são suas.';
+    } else {
+      aviso = (r.versos - antes > 1 ? 'Novos versos' : 'Um verso novo') + ' de «' + escapar(txt.titulo) + '»: ' +
+        r.versos + '/' + r.total + '. Os outros chegam com as próximas palavras.';
+    }
+    el['texto-conteudo'].innerHTML = '<p class="recompensa">' + aviso + '</p>' + cartaDoTexto(txt, r.versos) +
       '<button class="primario" id="btn-seguir-texto">Continuar estudando</button>';
     document.getElementById('btn-seguir-texto').addEventListener('click', () => { mostrar('tela-card'); proximoCard(); });
     mostrar('tela-texto');
@@ -2520,19 +2569,28 @@ window.TaioeCardsApp = function (ctx) {
     mostrar('tela-texto');
   }
 
-  /* O texto inteiro, original e tradução lado a lado, com quem, quando e o
-     que vale saber antes de ler. */
-  function cartaDoTexto(txt) {
+  /* O texto, original e tradução lado a lado, com quem, quando e o que vale
+     saber antes de ler. Com «ate», só os primeiros versos (o poema que ainda
+     se revela), e o contador 3/8. */
+  function cartaDoTexto(txt, ate) {
+    const total = Motor.versosDoTexto(txt).length;
+    const parte = ate !== undefined && ate < total;
     const cab = '<h3 class="texto-titulo">' + escapar(txt.titulo) + '</h3>' +
       '<p class="texto-autor">' + escapar(txt.autor) + (txt.ano ? ', ' + txt.ano : '') +
       (txt.recorte ? ' · ' + escapar(txt.recorte) : '') + '</p>';
-    const blocos = (txt.blocos || []).map(b =>
-      '<table class="tabela-texto ' + (txt.tipo === 'prosa' ? 'prosa' : 'poema') + '">' +
-      b.map(l => '<tr><td class="verso-es" lang="es">' + escapar(l.es) + '</td>' +
-        '<td class="verso-pt">' + escapar(l.pt) + '</td></tr>').join('') + '</table>').join('');
+    let resta = parte ? ate : Infinity;
+    const blocos = (txt.blocos || []).map(b => {
+      const linhas = b.slice(0, Math.max(0, resta));
+      resta -= linhas.length;
+      if (!linhas.length) return '';
+      return '<table class="tabela-texto ' + (txt.tipo === 'prosa' ? 'prosa' : 'poema') + '">' +
+        linhas.map(l => '<tr><td class="verso-or" lang="' + L + '">' + escapar(l[L] || '') + '</td>' +
+          '<td class="verso-pt">' + escapar(l.pt) + '</td></tr>').join('') + '</table>';
+    }).join('');
+    const conta = parte ? '<p class="contador-versos">' + ate + '/' + total + ' versos</p>' : '';
     const pe = '<p class="ajuda">' + escapar(txt.nota || '') + '</p>' +
       (txt.traducao ? '<p class="ajuda">Tradução ' + escapar(txt.traducao) + '.</p>' : '');
-    return '<div class="carta-texto">' + cab + blocos + pe + '</div>';
+    return '<div class="carta-texto">' + cab + blocos + conta + pe + '</div>';
   }
 
   function renderizarTexto() {
@@ -2545,8 +2603,8 @@ window.TaioeCardsApp = function (ctx) {
     const dominados = Motor.dominadosNoTotal(progresso.cards);
     const partes = [];
     partes.push('<p class="ajuda">Um poema e um texto em prosa ficam na lista de espera. As palavras ' +
-      'deles vão chegando como cards novos, e quando todas estiverem dominadas o texto aparece ' +
-      'inteiro, no lugar do próximo card.</p>');
+      'deles vão chegando como cards novos. O poema aparece verso a verso, à medida que as palavras de ' +
+      'cada verso ficam dominadas; o texto em prosa aparece inteiro, quando todas estiverem.</p>');
     if (dominados < Motor.DOMINADOS_PARA_TEXTOS) {
       partes.push('<p class="ajuda">Os textos começam com <b>' + Motor.DOMINADOS_PARA_TEXTOS +
         '</b> cards dominados. Você tem <b>' + dominados + '</b>.</p>');
@@ -2559,9 +2617,16 @@ window.TaioeCardsApp = function (ctx) {
         const a = Motor.andamentoDoTexto(txt, progresso.cards, Date.now(), progresso.arquivados || {});
         const faltam = Motor.requeridas(txt).filter(id => Motor.sabidaEm(id, progresso.cards, progresso.arquivados || {}) === Infinity)
           .map(id => (PORID[id] || {})[L] || id);
+        const vistos = Motor.revelaPorVerso(txt) ? versosVistos(txt) : 0;
+        const total = Motor.versosDoTexto(txt).length;
         partes.push('<p><b>' + escapar(txt.titulo) + '</b>, de ' + escapar(txt.autor) + ' — ' +
+          (Motor.revelaPorVerso(txt) ? vistos + '/' + total + ' versos, ' : '') +
           a.dominadas + ' de ' + a.palavras + ' palavras dominadas' +
           (faltam.length ? '. Faltam: ' + escapar(faltam.join(', ')) + '.' : '; aparece amanhã.') + '</p>');
+        if (vistos) {
+          partes.push('<details class="texto-lido"><summary>Os versos que você já descobriu</summary>' +
+            cartaDoTexto(txt, vistos) + '</details>');
+        }
       }
       partes.push('</div>');
     }
