@@ -1,8 +1,8 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-10-05",
- "total": 1907,
+ "gerado_em": "2026-10-07",
+ "total": 1943,
  "cards": [
   {
    "idioma": "es",
@@ -2960,7 +2960,6 @@
    "nota": "'Me pilló mintiendo' = me flagrou mentindo. '¿Lo pillas?' = tá sacando?\n🇪🇸 pegar → 🇧🇷 colar, bater",
    "notaEn": "'Me pilló mintiendo' = he caught me lying. Spanish slang, and it stretches: '¿lo pillas?' is do you get it, and 'me pilla lejos' is it's out of my way.",
    "sinonimosEs": [
-    "coger",
     "atrapar",
     "agarrar"
    ]
@@ -3322,56 +3321,6 @@
   },
   {
    "idioma": "es",
-   "id": "f006",
-   "tipo": "frase",
-   "es": "Ni de coña.",
-   "pt": "De jeito nenhum. / Nem a pau.",
-   "en": "Not a chance.",
-   "aceitas": [
-    "de jeito nenhum",
-    "nem a pau",
-    "nem morto",
-    "de forma alguma",
-    "nem pensar",
-    "jamais",
-    "nem sonhando",
-    "de maneira nenhuma",
-    "nem ferrando"
-   ],
-   "aceitasEn": [
-    "not a chance",
-    "no way",
-    "not a hope",
-    "absolutely not",
-    "no chance",
-    "not on your life",
-    "you must be joking"
-   ],
-   "distratores": [
-    "Nem de brincadeira. / Sem graça nenhuma.",
-    "Que piada boa. / Muito engraçado.",
-    "Nem que fosse grátis. / Não vale a pena.",
-    "Só de sacanagem. / Para irritar."
-   ],
-   "distratoresEn": [
-    "Not even joking.",
-    "What a good joke.",
-    "Not even for free.",
-    "Just to annoy you."
-   ],
-   "nivel": "C1",
-   "tags": [
-    "gíria",
-    "Espanha"
-   ],
-   "nota": "Vulgar-ish na Espanha. Versão neutra: 'ni de broma', 'ni hablar'.",
-   "notaEn": "Emphatic refusal, and a shade crude in Spain. The neutral versions are 'ni de broma' and 'ni hablar'. 'De coña' on its own means as a joke.",
-   "requerTodas": [
-    "p752"
-   ]
-  },
-  {
-   "idioma": "es",
    "id": "f007",
    "tipo": "frase",
    "es": "Está en las nubes.",
@@ -3700,13 +3649,13 @@
    ],
    "distratores": [
     "Meter o pé na porta. / Forçar a entrada.",
-    "Enfiar o pé na jaca. / Exagerar na bebida.",
+    "Pôr o pé na estrada. / Viajar.",
     "Meter o bedelho. / Dar palpite.",
     "Abrir o bico. / Contar o segredo."
    ],
    "distratoresEn": [
     "To get your foot in the door.",
-    "To drink far too much.",
+    "To hit the road.",
     "To plant your feet firmly.",
     "To dig your heels in."
    ],
@@ -3768,8 +3717,8 @@
     "expressão",
     "Espanha"
    ],
-   "nota": "Sinônimo: 'en el quinto infierno', 'donde Cristo perdió el gorro'.",
-   "notaEn": "'Vive en el quinto pino' = he lives miles out. Spain has funnier versions of the same idea: 'en el quinto infierno', 'donde Cristo perdió el gorro'.",
+   "nota": "Sinônimo: 'en el quinto infierno'.",
+   "notaEn": "'Vive en el quinto pino' = he lives miles out. Spain also says 'en el quinto infierno'.",
    "requerTodas": [
     "p358",
     "p877",
@@ -4373,7 +4322,6 @@
     "rejeitou",
     "deu o fora",
     "recusou o pedido",
-    "deu um pe na bunda",
     "dispensou ele",
     "deu o fora nele",
     "recusou ele"
@@ -4566,7 +4514,6 @@
     "detonou ele",
     "criticou muito",
     "malhou ele",
-    "meteu o pau",
     "falou muito mal dele",
     "acabou com ele",
     "desceu a lenha nele"
@@ -4669,7 +4616,6 @@
     "pouco me importa",
     "tanto faz",
     "nao dou a minima",
-    "estou pouco me lixando",
     "nao me importo nem um pouco",
     "nao ligo",
     "nao faz diferenca para mim",
@@ -4680,7 +4626,6 @@
     "i could not care less",
     "i couldn t care less",
     "i dont care at all",
-    "i dont give a damn",
     "it means nothing to me",
     "i dont care"
    ],
@@ -4846,13 +4791,12 @@
    ],
    "nivel": "A1",
    "tags": [
+    "primeiros passos",
     "cotidiano"
    ],
    "nota": "Cumprimento informal padrão.",
    "notaEn": "The standard informal greeting. '¿Qué tal?' on its own is how are you; put a noun after it and it asks how something went: '¿qué tal el viaje?'",
-   "requerTodas": [
-    "p557"
-   ]
+   "requerTodas": []
   },
   {
    "idioma": "es",
@@ -5946,7 +5890,7 @@
     "Espanha"
    ],
    "nota": "'Tener mala leche' também pode significar ter má índole.",
-   "notaEn": "'Estar de mala leche' is a passing mood; 'tener mala leche' is a permanent streak of nastiness. Milk turns up all over Spanish slang, rarely politely.",
+   "notaEn": "'Estar de mala leche' is a passing mood; 'tener mala leche' is a permanent streak of nastiness. Both are colloquial and mostly heard in Spain.",
    "requerTodas": [
     "p358",
     "p840",
@@ -6239,56 +6183,6 @@
     "p427",
     "p589",
     "p393"
-   ]
-  },
-  {
-   "idioma": "es",
-   "id": "f068",
-   "tipo": "frase",
-   "es": "¡Es la leche!",
-   "pt": "É incrível! / É demais!",
-   "en": "It's amazing!",
-   "aceitas": [
-    "e incrivel",
-    "e demais",
-    "e o maximo",
-    "e sensacional",
-    "e fantastico",
-    "e demais da conta",
-    "e show",
-    "e espetacular"
-   ],
-   "aceitasEn": [
-    "its amazing",
-    "it s amazing",
-    "it is amazing",
-    "its incredible",
-    "its unbelievable",
-    "its the best",
-    "its something else"
-   ],
-   "distratores": [
-    "É leite puro! / Sem mistura!",
-    "Que nojo! / Não dá para olhar!",
-    "É muito ruim! / Uma porcaria!",
-    "É indiferente! / Dá na mesma!"
-   ],
-   "distratoresEn": [
-    "It's pure milk!",
-    "That's disgusting!",
-    "It's absolutely terrible!",
-    "It makes no difference!"
-   ],
-   "nivel": "C1",
-   "tags": [
-    "gíria",
-    "Espanha"
-   ],
-   "nota": "Ambíguo: pelo contexto pode ser elogio ou reclamação.",
-   "notaEn": "'Ser la leche' can go either way: astonishing good or astonishing bad. Tone and context carry the whole meaning — 'este tío es la leche' could be praise or despair.",
-   "requerTodas": [
-    "p351",
-    "p463"
    ]
   },
   {
@@ -7698,13 +7592,12 @@
    ],
    "nivel": "A1",
    "tags": [
+    "primeiros passos",
     "cotidiano"
    ],
    "nota": "'Llamarse' = chamar-se. Resposta: 'me llamo…'.",
    "notaEn": "'Llamarse' is literally to call oneself. The answer comes back in the same shape: 'me llamo Ana'.",
-   "requerTodas": [
-    "p381"
-   ]
+   "requerTodas": []
   },
   {
    "idioma": "es",
@@ -7743,15 +7636,13 @@
    ],
    "nivel": "A1",
    "tags": [
+    "primeiros passos",
     "cotidiano",
     "viagem"
    ],
    "nota": "Na América Latina se diz mais 'el baño'; na Espanha, 'el servicio'.",
    "notaEn": "In Latin America ask for 'el baño'; in Spain, 'el servicio' or 'los aseos'. In a bar, '¿dónde están los servicios?' is the polite version.",
-   "requerTodas": [
-    "p358",
-    "p442"
-   ]
+   "requerTodas": []
   },
   {
    "idioma": "es",
@@ -7830,14 +7721,13 @@
    ],
    "nivel": "A1",
    "tags": [
+    "primeiros passos",
     "cotidiano",
     "viagem"
    ],
    "nota": "'Costar' também significa 'ser difícil': 'me cuesta entenderlo'.",
    "notaEn": "'Costar' also means to be hard: 'me cuesta entenderlo' = I find it hard to understand. Same verb, quite a different bill.",
-   "requerTodas": [
-    "p484"
-   ]
+   "requerTodas": []
   },
   {
    "idioma": "es",
@@ -7915,13 +7805,12 @@
    ],
    "nivel": "A1",
    "tags": [
+    "primeiros passos",
     "cotidiano"
    ],
    "nota": "'Mañana' é amanhã; 'la mañana' é a manhã. O artigo muda tudo.",
    "notaEn": "'Mañana' with no article is tomorrow; 'la mañana' with one is the morning. 'Mañana por la mañana' = tomorrow morning, and it is not a joke.",
-   "requerTodas": [
-    "p372"
-   ]
+   "requerTodas": []
   },
   {
    "idioma": "es",
@@ -13105,7 +12994,7 @@
     "animais"
    ],
    "nota": "Também vira adjetivo: 'ser un zorro' = ser esperto.",
-   "notaEn": "'El zorro' is the fox, and 'ser un zorro' is to be a sly one. The female, 'la zorra', is far coarser as an insult — use with care."
+   "notaEn": "'El zorro' is the fox, and 'ser un zorro' is to be a sly one. Keep to the masculine: the feminine form is an insult almost everywhere."
   },
   {
    "idioma": "es",
@@ -13157,13 +13046,13 @@
     "the butterfly"
    ],
    "distratores": [
-    "a mariquinha",
+    "a maresia",
     "a margarida",
     "a marina",
     "a maravilha"
    ],
    "distratoresEn": [
-    "the ladybird",
+    "the sea air",
     "the daisy",
     "the marina",
     "the marvel"
@@ -14900,7 +14789,7 @@
     "cidade"
    ],
    "nota": "De 'atajar' (cortar caminho). Não confunda com 'ataque'.",
-   "notaEn": "From 'atajar', to cut across. 'Coger un atajo' = to take a shortcut. Careful with 'el ataque', which is an attack."
+   "notaEn": "From 'atajar', to cut across. 'Tomar un atajo' = to take a shortcut. Careful with 'el ataque', which is an attack."
   },
   {
    "idioma": "es",
@@ -19908,13 +19797,13 @@
    "distratores": [
     "Não consigo acordar cedo como antes.",
     "Não consigo correr rápido como antes.",
-    "Não consigo beber tanto como antes.",
+    "Não consigo comer tanto como antes.",
     "Não consigo estudar tanto como antes."
    ],
    "distratoresEn": [
     "I can't get up early like before.",
     "I can't run fast like before.",
-    "I can't drink as much as before.",
+    "I can't eat as much as before.",
     "I can't study as much as before."
    ],
    "nivel": "B2",
@@ -20332,13 +20221,13 @@
    "distratores": [
     "Denunciaram a violência nas prisões.",
     "Denunciaram a corrupção nas prisões.",
-    "Denunciaram a tortura nas prisões.",
+    "Denunciaram a falta de médicos nas prisões.",
     "Denunciaram o abandono nas prisões."
    ],
    "distratoresEn": [
     "They denounced the violence in the prisons.",
     "They denounced the corruption in the prisons.",
-    "They denounced the torture in the prisons.",
+    "They denounced the lack of doctors in the prisons.",
     "They denounced the neglect in the prisons."
    ],
    "nivel": "C1",
@@ -20575,7 +20464,7 @@
    "tags": [
     "substantivo"
    ],
-   "nota": "Usa-se muito no figurado, para lei, projeto ou obra malfeita: é a coisa mal parida. No sentido literal, é a criatura disforme.\n🇪🇸 el engendro → 🇧🇷 a aberração, o monstrengo\n🇪🇸 engendrar → 🇧🇷 gerar, engendrar",
+   "nota": "Usa-se muito no figurado, para lei, projeto ou obra malfeita: é a coisa que já nasceu torta. No sentido literal, é a criatura disforme.\n🇪🇸 el engendro → 🇧🇷 a aberração, o monstrengo\n🇪🇸 engendrar → 🇧🇷 gerar, engendrar",
    "notaEn": "Most often figurative — a law, a plan or a building that came out badly formed. Literally it is a malformed creature.",
    "requerTodas": [
     "p677",
@@ -20928,7 +20817,6 @@
    ],
    "aceitasEn": [
     "the dog had five puppies",
-    "the bitch had five puppies",
     "the dog had five pups",
     "our dog had five puppies"
    ],
@@ -25154,8 +25042,8 @@
    "tags": [
     "animais"
    ],
-   "nota": "Dizer de alguém que é «un zorro» é chamá-lo de esperto e manhoso, como em português. A fêmea, «la zorra», é insulto — evite.",
-   "notaEn": "Calling someone 'un zorro' means cunning and wily. The feminine 'zorra' is an insult — avoid it.",
+   "nota": "Dizer de alguém que é «un zorro» é chamá-lo de esperto e manhoso, como em português. Use só no masculino: a forma feminina é insulto em quase todo o mundo hispânico.",
+   "notaEn": "Calling someone 'un zorro' means cunning and wily. Keep to the masculine: the feminine form is an insult.",
    "requerTodas": [
     "p673",
     "p351",
@@ -30433,13 +30321,13 @@
    "distratores": [
     "Calçamos as botas.",
     "Compramos sapatos novos.",
-    "Bebemos até cair.",
+    "Dormimos até tarde.",
     "Trabalhamos até cansar."
    ],
    "distratoresEn": [
     "We put our boots on.",
     "We bought new shoes.",
-    "We drank until we dropped.",
+    "We slept in late.",
     "We worked until we were worn out."
    ],
    "nivel": "B2",
@@ -34231,8 +34119,8 @@
    "tags": [
     "saúde"
    ],
-   "nota": "«Jarabe» é o xarope de remédio e o de açúcar. «Jarabe de palo», literalmente xarope de pau, é uma surra — expressão antiga.",
-   "notaEn": "'Jarabe' is cough syrup or sugar syrup. 'Jarabe de palo' — stick syrup — is an old joke for a beating."
+   "nota": "«Jarabe» é o xarope de remédio e o de açúcar: «jarabe para la tos».",
+   "notaEn": "'Jarabe' is cough syrup or sugar syrup: 'jarabe para la tos'."
   },
   {
    "idioma": "es",
@@ -40168,8 +40056,7 @@
    "aceitas": [
     "a reprovacao",
     "a nota vermelha",
-    "a bomba",
-    "o pau"
+    "a bomba"
    ],
    "aceitasEn": [
     "the fail",
@@ -40888,7 +40775,7 @@
     "Espanha",
     "cotidiano"
    ],
-   "nota": "«¡Qué va!» nega o que o outro acabou de dizer, sempre com bom humor — é o nosso «que nada!». Para negar com rispidez, a Espanha tem «ni de coña» e «ni hablar».",
+   "nota": "«¡Qué va!» nega o que o outro acabou de dizer, sempre com bom humor — é o nosso «que nada!». Para negar com rispidez, a Espanha tem «ni hablar».",
    "notaEn": "«¡Qué va!» brushes aside what the other person just said, always good naturedly. For a blunt no, Spain has «ni hablar».",
    "requerTodas": [
     "p355"
@@ -44992,57 +44879,10 @@
   },
   {
    "idioma": "es",
-   "id": "p338",
-   "tipo": "palavra",
-   "es": "coger",
-   "pt": "pegar (o ônibus)",
-   "en": "to catch (the bus)",
-   "aceitas": [
-    "pegar",
-    "pegar o onibus",
-    "tomar",
-    "agarrar",
-    "segurar",
-    "apanhar",
-    "colher"
-   ],
-   "aceitasEn": [
-    "to catch",
-    "to take",
-    "to grab",
-    "to pick up"
-   ],
-   "distratores": [
-    "descer (do ônibus)",
-    "perder (a hora)",
-    "esperar (na fila)",
-    "empurrar (a porta)"
-   ],
-   "distratoresEn": [
-    "to get off (the bus)",
-    "to miss (the time)",
-    "to wait (in line)",
-    "to push (the door)"
-   ],
-   "nivel": "A2",
-   "tags": [
-    "verbo",
-    "Espanha",
-    "cotidiano"
-   ],
-   "nota": "«Coger» é o verbo mais usado da Espanha para pegar qualquer coisa: «coger el autobús», «coger el teléfono», «coger frío». Em boa parte da América Latina é palavrão, e lá se diz «tomar» ou «agarrar».",
-   "notaEn": "«Coger» is Spains all purpose verb for taking or catching: «coger el autobús», «coger el teléfono», «coger frío». In much of Latin America it is obscene; they say «tomar» or «agarrar».",
-   "regionaisEs": {
-    "tomar": "na América Latina",
-    "agarrar": "na América Latina"
-   }
-  },
-  {
-   "idioma": "es",
    "id": "u334",
    "tipo": "frase",
-   "requer": "p338",
-   "es": "Cogemos el metro todos los días.",
+   "requer": "p409",
+   "es": "Tomamos el metro todos los días.",
    "pt": "A gente pega o metrô todo dia.",
    "en": "We take the metro every day.",
    "aceitas": [
@@ -45073,13 +44913,10 @@
     "cidade",
     "cotidiano"
    ],
-   "nota": "Na primeira pessoa o g vira j: cojo, coges, coge. É a mesma troca de «escojo» e «recojo».",
-   "notaEn": "In the first person the g turns into j: cojo, coges, coge — the same swap as «escojo» and «recojo».",
-   "regionaisEs": {
-    "Tomamos el metro todos los días.": "na América Latina"
-   },
+   "nota": "«Tomar» é o verbo de transporte que vale em todo o mundo hispânico: «tomar el metro», «tomar el autobús». Na Espanha se ouve outro verbo que na América Latina é palavrão; fique com «tomar».",
+   "notaEn": "«Tomar» is the transport verb understood everywhere: «tomar el metro», «tomar el autobús». Spain often uses another verb that is obscene in much of Latin America, so stick with «tomar».",
    "requerTodas": [
-    "p338",
+    "p409",
     "p503",
     "p385",
     "p419"
@@ -48198,8 +48035,8 @@
    "tags": [
     "verbo"
    ],
-   "nota": "Tomar remédio, bebida e, na América Latina, o ônibus. «Tómate tu tiempo» é sem pressa.",
-   "notaEn": "To take medicine, to have a drink and, in Latin America, to catch the bus."
+   "nota": "Tomar remédio, bebida e condução: «tomar el autobús», «tomar el metro», que vale em todo o mundo hispânico. «Tómate tu tiempo» é sem pressa.",
+   "notaEn": "To take medicine, to have a drink, and to catch a bus or train: «tomar el autobús», understood everywhere."
   },
   {
    "idioma": "es",
@@ -51817,8 +51654,8 @@
     "substantivo",
     "tecnologia"
    ],
-   "nota": "Atender o telefone é «coger el teléfono»; desligar, «colgar».",
-   "notaEn": "«Coger el teléfono» is to answer; «colgar», to hang up."
+   "nota": "Atender o telefone é «contestar el teléfono»; desligar, «colgar».",
+   "notaEn": "«Contestar el teléfono» is to answer; «colgar», to hang up."
   },
   {
    "idioma": "es",
@@ -55884,7 +55721,7 @@
     "substantivo",
     "cultura"
    ],
-   "nota": "A língua e a pessoa. «Me suena a chino» é para mim é grego. «El chino» também é a lojinha de bairro.",
+   "nota": "A língua e a pessoa. «Me suena a chino» é para mim é grego.",
    "notaEn": "«Me suena a chino», it is all Greek to me."
   },
   {
@@ -57655,8 +57492,7 @@
    ],
    "aceitasEn": [
     "dog",
-    "the dog",
-    "bitch"
+    "the dog"
    ],
    "distratores": [
     "o gato",
@@ -60615,49 +60451,6 @@
   },
   {
    "idioma": "es",
-   "id": "p752",
-   "tipo": "palavra",
-   "es": "la coña",
-   "pt": "a zoeira",
-   "en": "the joke",
-   "aceitas": [
-    "zoeira",
-    "a brincadeira",
-    "a gozacao",
-    "brincadeira"
-   ],
-   "aceitasEn": [
-    "joke",
-    "the joke",
-    "kidding",
-    "piss-take"
-   ],
-   "distratores": [
-    "a cunhada",
-    "a conta",
-    "a cama",
-    "a coisa"
-   ],
-   "distratoresEn": [
-    "the sister-in-law",
-    "the bill",
-    "the bed",
-    "the thing"
-   ],
-   "nivel": "C1",
-   "tags": [
-    "substantivo",
-    "gíria",
-    "Espanha"
-   ],
-   "nota": "Vulgar, da Espanha. «Ni de coña», nem a pau. «Estar de coña», estar de brincadeira.",
-   "notaEn": "Vulgar, Spain. «Ni de coña», no way.",
-   "sinonimosEs": [
-    "la broma"
-   ]
-  },
-  {
-   "idioma": "es",
    "id": "p753",
    "tipo": "palavra",
    "es": "la conversación",
@@ -60922,13 +60715,13 @@
     "the choice"
    ],
    "distratores": [
-    "a ereção",
+    "a elevação",
     "a lição",
     "a seleção",
     "a eletricidade"
    ],
    "distratoresEn": [
-    "the erection",
+    "the elevation",
     "the lesson",
     "the selection",
     "the electricity"
@@ -62717,13 +62510,13 @@
     "a ponte",
     "o ponto",
     "a pontada",
-    "a punhalada"
+    "a pontaria"
    ],
    "distratoresEn": [
     "the bridge",
     "the dot",
     "the twinge",
-    "the stab"
+    "the aim"
    ],
    "nivel": "B1",
    "tags": [
@@ -63355,14 +63148,14 @@
    ],
    "distratores": [
     "a vingança",
-    "a verga",
-    "a virgem",
+    "a vertigem",
+    "a vereda",
     "a varanda"
    ],
    "distratoresEn": [
     "the revenge / the payback",
-    "the rod / the stick",
-    "the virgin / the maiden",
+    "the vertigo / the dizziness",
+    "the path / the trail",
     "the balcony / the porch"
    ],
    "nivel": "A2",
@@ -64568,8 +64361,8 @@
     "verbo",
     "falso-amigo"
    ],
-   "nota": "Colar e bater: «pega la foto», «le pegó». Pegar, segurar, é «coger». Ganha u antes de e: «pegué».",
-   "notaEn": "To stick, and to hit. To grab is «coger»."
+   "nota": "Colar e bater: «pega la foto», «le pegó». Pegar, segurar, é «agarrar» ou «tomar». Ganha u antes de e: «pegué».",
+   "notaEn": "To stick, and to hit. To grab is «agarrar»."
   },
   {
    "idioma": "es",
@@ -66540,8 +66333,8 @@
    "tags": [
     "verbo"
    ],
-   "nota": "«Me pisaste», você pisou no meu pé. O andar do prédio é «el piso»: é a mesma família.",
-   "notaEn": "«Me pisaste», you stepped on my foot. A floor, «el piso», is the same family."
+   "nota": "«Me pisaste el pie», você pisou no meu pé. O andar do prédio é «el piso»: é a mesma família.",
+   "notaEn": "«Me pisaste el pie», you stepped on my foot. A floor, «el piso», is the same family."
   },
   {
    "idioma": "es",
@@ -67265,8 +67058,7 @@
     "grass",
     "the grass",
     "herb",
-    "the herb",
-    "weed"
+    "the herb"
    ],
    "distratores": [
     "a erva-doce",
@@ -70025,40 +69817,39 @@
    "id": "u350",
    "tipo": "frase",
    "requer": "p914",
-   "es": "Perdona, te he pisado.",
-   "pt": "Desculpa, pisei em você.",
-   "en": "Sorry, I stepped on you.",
+   "es": "Perdona, te he pisado el pie.",
+   "pt": "Desculpa, pisei no seu pé.",
+   "en": "Sorry, I stepped on your foot.",
    "aceitas": [
-    "desculpa pisei em voce",
     "desculpa pisei no seu pe",
-    "desculpe pisei em voce",
+    "desculpe pisei no seu pe",
     "foi mal pisei no seu pe",
-    "desculpa te pisei"
+    "desculpa pisei no teu pe"
    ],
    "aceitasEn": [
-    "sorry i stepped on you",
     "sorry i stepped on your foot",
-    "sorry i trod on you",
-    "sorry i trod on your foot"
+    "sorry i trod on your foot",
+    "sorry ive stepped on your foot",
+    "sorry i ve stepped on your foot"
    ],
    "distratores": [
-    "Desculpa, esbarrei em você.",
-    "Desculpa, cuspi em você.",
-    "Desculpa, toquei em você.",
-    "Desculpa, mexi em você."
+    "Desculpa, esbarrei no seu braço.",
+    "Desculpa, sujei o seu sapato.",
+    "Desculpa, toquei no seu ombro.",
+    "Desculpa, chutei a sua mala."
    ],
    "distratoresEn": [
-    "Sorry, I bumped into you.",
-    "Sorry, I spat on you.",
-    "Sorry, I touched you.",
-    "Sorry, I nudged you."
+    "Sorry, I bumped your arm.",
+    "Sorry, I got your shoe dirty.",
+    "Sorry, I touched your shoulder.",
+    "Sorry, I kicked your bag."
    ],
    "nivel": "B1",
    "tags": [
     "cotidiano"
    ],
-   "nota": "«Pisar» leva objeto direto: «te he pisado», e não «pisado en ti». O pretérito perfeito, «he pisado», é o da Espanha para o que acabou de acontecer.",
-   "notaEn": "«Pisar» takes a direct object: «te he pisado». The present perfect is Spain's tense for what just happened.",
+   "nota": "«Pisar» leva objeto direto: «he pisado el pie», e não «pisado en el pie»; o «te» diz de quem é o pé. O pretérito perfeito, «he pisado», é o da Espanha para o que acabou de acontecer.",
+   "notaEn": "«Pisar» takes a direct object, and the «te» says whose foot it was. The present perfect is Spain's tense for what just happened.",
    "requerTodas": [
     "p862",
     "p352",
@@ -71097,13 +70888,13 @@
    "distratores": [
     "Estou com uma crise de tosse horrível.",
     "Estou com um ataque de espirros horrível.",
-    "Estou com uma ressaca de festa horrível.",
+    "Estou com uma dor de garganta horrível.",
     "Estou com uma coceira na cabeça horrível."
    ],
    "distratoresEn": [
     "I have a horrible coughing fit.",
     "I have a horrible sneezing fit.",
-    "I have a horrible party hangover.",
+    "I have a horrible sore throat.",
     "I have a horrible itchy scalp."
    ],
    "nivel": "A2",
@@ -80778,6 +80569,1910 @@
    ],
    "nota": "Os pontos cardeais: «el norte», «el sur», «el este», «el oeste». «Perder el norte», perder o rumo.",
    "notaEn": "«Perder el norte», to lose one's bearings."
+  },
+  {
+   "idioma": "es",
+   "id": "b001",
+   "tipo": "frase",
+   "es": "¡Buenos días!",
+   "pt": "Bom dia!",
+   "en": "Good morning!",
+   "aceitas": [
+    "bom dia pra voce",
+    "bom dia para voce",
+    "muito bom dia"
+   ],
+   "aceitasEn": [
+    "morning",
+    "good morning to you"
+   ],
+   "aceitasEs": [
+    "¡Buen día!"
+   ],
+   "distratores": [
+    "Boa tarde!",
+    "Boa noite!",
+    "Bom apetite!",
+    "Bom fim de semana!"
+   ],
+   "distratoresEn": [
+    "Good afternoon!",
+    "Good evening!",
+    "Enjoy your meal!",
+    "Have a nice weekend!"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "Sempre no plural: «buenos días». Vale até a hora do almoço; depois, «buenas tardes». Na Argentina e no Uruguai também se ouve «buen día».",
+   "notaEn": "Always plural: «buenos días». It runs until lunchtime; after that, «buenas tardes». In Argentina and Uruguay you also hear «buen día».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b002",
+   "tipo": "frase",
+   "es": "¡Buenas tardes!",
+   "pt": "Boa tarde!",
+   "en": "Good afternoon!",
+   "aceitas": [
+    "boa tarde pra voce",
+    "boa tarde para voce",
+    "muito boa tarde"
+   ],
+   "aceitasEn": [
+    "afternoon",
+    "good afternoon to you"
+   ],
+   "distratores": [
+    "Bom dia!",
+    "Boa noite!",
+    "Até mais tarde!",
+    "Boa sorte!"
+   ],
+   "distratoresEn": [
+    "Good morning!",
+    "Good night!",
+    "See you later!",
+    "Good luck!"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "Do almoço até escurecer, e serve tanto para chegar quanto para sair.",
+   "notaEn": "From lunchtime until dark, and it works for arriving and for leaving.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b003",
+   "tipo": "frase",
+   "es": "¡Buenas noches!",
+   "pt": "Boa noite!",
+   "en": "Good evening!",
+   "aceitas": [
+    "boa noite pra voce",
+    "boa noite para voce",
+    "boa noite a todos"
+   ],
+   "aceitasEn": [
+    "good night",
+    "evening",
+    "good evening to you",
+    "good night to you",
+    "goodnight"
+   ],
+   "distratores": [
+    "Bom dia!",
+    "Boa tarde!",
+    "Até amanhã!",
+    "Boa sorte!"
+   ],
+   "distratoresEn": [
+    "Good morning!",
+    "Good afternoon!",
+    "See you tomorrow!",
+    "Good luck!"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "Como «boa noite»: depois que escurece, é cumprimento ao chegar e despedida ao sair.",
+   "notaEn": "Once it is dark, it is both the greeting and the goodbye: good evening and good night.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b004",
+   "tipo": "frase",
+   "es": "Hola, ¿cómo estás?",
+   "pt": "Oi, como vai?",
+   "en": "Hi, how are you?",
+   "aceitas": [
+    "oi tudo bem",
+    "ola como vai",
+    "ola tudo bem",
+    "oi como voce esta",
+    "ola como voce esta",
+    "oi como esta",
+    "oi tudo bom",
+    "oi como voce vai",
+    "e ai tudo bem",
+    "e ai como vai"
+   ],
+   "aceitasEn": [
+    "hello how are you",
+    "hi how are you doing",
+    "hello how are you doing",
+    "hey how are you",
+    "hi hows it going",
+    "hi how s it going",
+    "hi how is it going"
+   ],
+   "aceitasEs": [
+    "Hola, ¿qué tal?",
+    "Hola, ¿cómo está?",
+    "Hola, ¿cómo te va?"
+   ],
+   "distratores": [
+    "Oi, onde você está?",
+    "Oi, quem é você?",
+    "Oi, você vem?",
+    "Oi, como você se chama?"
+   ],
+   "distratoresEn": [
+    "Hi, where are you?",
+    "Hi, who are you?",
+    "Hi, are you coming?",
+    "Hi, what's your name?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "«¿Cómo estás?» é com tú; com usted, «¿cómo está?». O h de «hola» não soa.",
+   "notaEn": "«¿Cómo estás?» is for tú; with usted it is «¿cómo está?». The h in «hola» is silent.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b005",
+   "tipo": "frase",
+   "es": "Muy bien, gracias. ¿Y tú?",
+   "pt": "Muito bem, obrigado. E você?",
+   "en": "Very well, thanks. And you?",
+   "aceitas": [
+    "muito bem obrigada e voce",
+    "tudo bem obrigado e voce",
+    "tudo bem obrigada e voce",
+    "bem obrigado e voce",
+    "bem obrigada e voce",
+    "muito bem obrigado e tu",
+    "muito bem obrigada e tu",
+    "tudo otimo obrigado e voce",
+    "tudo otimo obrigada e voce"
+   ],
+   "aceitasEn": [
+    "very well thank you and you",
+    "fine thanks and you",
+    "fine thank you and you",
+    "im fine thanks and you",
+    "i m fine thanks and you",
+    "very good thanks and you",
+    "good thanks and you",
+    "very well thanks and yourself",
+    "very well thanks how about you",
+    "very well thanks what about you"
+   ],
+   "aceitasEs": [
+    "Muy bien, gracias. ¿Y usted?"
+   ],
+   "distratores": [
+    "Muito mal, obrigado. E você?",
+    "Mais ou menos, obrigado. E você?",
+    "Muito bem, obrigado. E a família?",
+    "Muito bem, obrigado. E agora?"
+   ],
+   "distratoresEn": [
+    "Very bad, thanks. And you?",
+    "So-so, thanks. And you?",
+    "Very well, thanks. And your family?",
+    "Very well, thanks. And now?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "«Gracias» não muda: serve a homem e a mulher. Com quem se trata por usted, «¿y usted?».",
+   "notaEn": "«Gracias» never changes. With someone you address as usted, it is «¿y usted?».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b006",
+   "tipo": "frase",
+   "es": "Me llamo Ana.",
+   "pt": "Meu nome é Ana.",
+   "en": "My name is Ana.",
+   "aceitas": [
+    "me chamo ana",
+    "eu me chamo ana",
+    "o meu nome e ana",
+    "sou a ana",
+    "eu sou a ana"
+   ],
+   "aceitasEn": [
+    "im ana",
+    "i m ana",
+    "i am ana",
+    "my names ana",
+    "my name s ana"
+   ],
+   "aceitasEs": [
+    "Mi nombre es Ana.",
+    "Soy Ana."
+   ],
+   "distratores": [
+    "Eu ligo para a Ana.",
+    "A Ana me ligou.",
+    "Eu chamei a Ana.",
+    "Eu moro com a Ana."
+   ],
+   "distratoresEn": [
+    "I'm calling Ana.",
+    "Ana called me.",
+    "I called Ana over.",
+    "I live with Ana."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "«Llamarse» é chamar-se: «me llamo», «te llamas», «se llama». Sem o pronome, «llamar» é chamar ou telefonar: «te llamo luego».",
+   "notaEn": "«Llamarse» is to be called: «me llamo», «te llamas», «se llama». Without the pronoun, «llamar» is to call or to phone: «te llamo luego».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b007",
+   "tipo": "frase",
+   "es": "¿Cómo se llama usted?",
+   "pt": "Como o senhor se chama?",
+   "en": "What's your name?",
+   "aceitas": [
+    "como a senhora se chama",
+    "qual e o seu nome",
+    "qual o seu nome",
+    "qual e o nome do senhor",
+    "qual e o nome da senhora",
+    "como e o seu nome",
+    "como e que o senhor se chama",
+    "como e que a senhora se chama",
+    "como voce se chama"
+   ],
+   "aceitasEn": [
+    "what is your name",
+    "what s your name",
+    "whats your name",
+    "may i ask your name",
+    "may i have your name"
+   ],
+   "aceitasEs": [
+    "¿Cuál es su nombre?"
+   ],
+   "distratores": [
+    "Como o senhor está?",
+    "Onde o senhor mora?",
+    "Como se chama isso?",
+    "Quem é o senhor?"
+   ],
+   "distratoresEn": [
+    "How are you?",
+    "Where do you live?",
+    "What is this called?",
+    "Who are you?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social",
+    "formal"
+   ],
+   "nota": "«Usted» é o tratamento de respeito, como «o senhor», e o verbo vai na terceira pessoa: «se llama». Com quem se trata por tú: «¿Cómo te llamas?».",
+   "notaEn": "«Usted» is the polite you, and it takes the third-person verb: «se llama». With someone you address as tú: «¿Cómo te llamas?».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b008",
+   "tipo": "frase",
+   "es": "Mucho gusto.",
+   "pt": "Muito prazer.",
+   "en": "Nice to meet you.",
+   "aceitas": [
+    "prazer",
+    "muito prazer em conhecer voce",
+    "prazer em conhecer",
+    "prazer em conhecer voce",
+    "prazer em te conhecer",
+    "encantado",
+    "encantada",
+    "um prazer"
+   ],
+   "aceitasEn": [
+    "pleased to meet you",
+    "good to meet you",
+    "a pleasure",
+    "its a pleasure",
+    "it s a pleasure",
+    "how do you do",
+    "nice meeting you"
+   ],
+   "aceitasEs": [
+    "Encantado.",
+    "Encantada.",
+    "Un placer."
+   ],
+   "distratores": [
+    "Gosto muito.",
+    "Muito obrigado.",
+    "Que bom te ver de novo.",
+    "Quanto tempo!"
+   ],
+   "distratoresEn": [
+    "I like it a lot.",
+    "Thanks a lot.",
+    "Nice to see you again.",
+    "Long time no see!"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "É o que se diz ao ser apresentado. Também «encantado» ou «encantada», conforme quem fala.",
+   "notaEn": "What you say when you are introduced. Also «encantado» or «encantada», depending on who is speaking.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b009",
+   "tipo": "frase",
+   "es": "¿De dónde eres?",
+   "pt": "De onde você é?",
+   "en": "Where are you from?",
+   "aceitas": [
+    "voce e de onde",
+    "de onde e voce",
+    "e de onde",
+    "de onde tu es",
+    "tu es de onde"
+   ],
+   "aceitasEn": [
+    "where do you come from",
+    "where are you from originally",
+    "where re you from"
+   ],
+   "aceitasEs": [
+    "¿De dónde es usted?",
+    "¿De dónde es?"
+   ],
+   "distratores": [
+    "Onde você mora?",
+    "Para onde você vai?",
+    "Onde você está?",
+    "Quem é você?"
+   ],
+   "distratoresEn": [
+    "Where do you live?",
+    "Where are you going?",
+    "Where are you?",
+    "Who are you?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "Com «ser», é a origem. A resposta: «Soy de Brasil» ou «Soy brasileño». Com usted: «¿De dónde es usted?».",
+   "notaEn": "With «ser», it asks where you come from. The answer: «Soy de Brasil» or «Soy brasileño». With usted: «¿De dónde es usted?».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b010",
+   "tipo": "frase",
+   "es": "Soy brasileñ{o|a}.",
+   "pt": "Sou brasileir{o|a}.",
+   "en": "I'm Brazilian.",
+   "aceitas": [
+    "sou do brasil"
+   ],
+   "aceitasEn": [
+    "i am brazilian",
+    "im brazilian",
+    "i m brazilian",
+    "im from brazil",
+    "i m from brazil",
+    "i am from brazil"
+   ],
+   "aceitasEs": [
+    "Soy de Brasil."
+   ],
+   "distratores": [
+    "Sou portugu{ês|esa}.",
+    "Moro no Brasil.",
+    "Sou estrangeir{o|a}.",
+    "Estou no Brasil."
+   ],
+   "distratoresEn": [
+    "I'm Portuguese.",
+    "I live in Brazil.",
+    "I'm a foreigner.",
+    "I'm in Brazil."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "Nacionalidade vai com minúscula, como no português. O «ñ» soa como o nosso «nh».",
+   "notaEn": "Nationalities are lowercase in Spanish. «Ñ» sounds like the ny in canyon.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b011",
+   "tipo": "frase",
+   "es": "¡Hasta luego!",
+   "pt": "Até logo!",
+   "en": "See you later!",
+   "aceitas": [
+    "ate mais",
+    "ate depois",
+    "ate mais tarde",
+    "a gente se ve",
+    "tchau",
+    "ate mais ver"
+   ],
+   "aceitasEn": [
+    "see you",
+    "bye for now",
+    "catch you later",
+    "later",
+    "see ya"
+   ],
+   "aceitasEs": [
+    "¡Nos vemos!"
+   ],
+   "distratores": [
+    "Até amanhã!",
+    "Até que enfim!",
+    "Até semana que vem!",
+    "Bom dia!"
+   ],
+   "distratoresEn": [
+    "See you tomorrow!",
+    "At last!",
+    "See you next week!",
+    "Good morning!"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "Serve até para quem não se vai ver de novo, como ao sair de uma loja. «Adiós» é o tchau mais definitivo; na América, também «chao».",
+   "notaEn": "It works even when you will not meet again, as when leaving a shop. «Adiós» is a more final goodbye; in Latin America, «chao» too.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b012",
+   "tipo": "frase",
+   "es": "¡Que tengas un buen día!",
+   "pt": "Tenha um bom dia!",
+   "en": "Have a nice day!",
+   "aceitas": [
+    "tenha um otimo dia",
+    "tenha um dia bom",
+    "que voce tenha um bom dia",
+    "um bom dia pra voce",
+    "um otimo dia pra voce"
+   ],
+   "aceitasEn": [
+    "have a good day",
+    "have a great day",
+    "enjoy your day"
+   ],
+   "aceitasEs": [
+    "¡Que tenga un buen día!"
+   ],
+   "distratores": [
+    "Tive um bom dia!",
+    "Hoje é um bom dia!",
+    "Tenha uma boa viagem!",
+    "Tenha um bom fim de semana!"
+   ],
+   "distratoresEn": [
+    "I had a nice day!",
+    "Today is a good day!",
+    "Have a nice trip!",
+    "Have a nice weekend!"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "Depois de «que», o desejo vai no subjuntivo: «que tengas». Com usted, «que tenga».",
+   "notaEn": "After «que», a wish takes the subjunctive: «que tengas». With usted, «que tenga».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b013",
+   "tipo": "frase",
+   "es": "Muchas gracias.",
+   "pt": "Muito obrigado.",
+   "en": "Thank you very much.",
+   "aceitas": [
+    "muito obrigada",
+    "obrigado",
+    "obrigada",
+    "obrigadao",
+    "valeu",
+    "obrigado mesmo",
+    "obrigada mesmo",
+    "muitissimo obrigado",
+    "muitissimo obrigada"
+   ],
+   "aceitasEn": [
+    "thanks a lot",
+    "thank you so much",
+    "many thanks",
+    "thanks very much",
+    "thanks so much",
+    "thank you",
+    "thanks"
+   ],
+   "aceitasEs": [
+    "Gracias.",
+    "Muchísimas gracias."
+   ],
+   "distratores": [
+    "Muito prazer.",
+    "De nada.",
+    "Por favor.",
+    "Muito bem."
+   ],
+   "distratoresEn": [
+    "Nice to meet you.",
+    "You're welcome.",
+    "Please.",
+    "Very good."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "«Gracias» é igual para homem e mulher. «Obligado», em espanhol, é só forçado.",
+   "notaEn": "«Gracias» is the same whoever says it. «Muchas» agrees with it: «muchas gracias», never «muchos».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b014",
+   "tipo": "frase",
+   "es": "De nada.",
+   "pt": "De nada.",
+   "en": "You're welcome.",
+   "aceitas": [
+    "por nada",
+    "nao ha de que",
+    "nao tem de que",
+    "nao por isso",
+    "imagina",
+    "disponha",
+    "nao foi nada"
+   ],
+   "aceitasEn": [
+    "you are welcome",
+    "youre welcome",
+    "you re welcome",
+    "not at all",
+    "dont mention it",
+    "don t mention it",
+    "no problem",
+    "my pleasure"
+   ],
+   "aceitasEs": [
+    "No hay de qué.",
+    "Por nada."
+   ],
+   "distratores": [
+    "De novo.",
+    "Nada mal.",
+    "Nada mais.",
+    "Nem pensar."
+   ],
+   "distratoresEn": [
+    "Again.",
+    "Not bad.",
+    "Nothing else.",
+    "No way."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "Também «no hay de qué». Em vários países da América se responde ainda «con gusto».",
+   "notaEn": "Also «no hay de qué». In several Latin American countries people also say «con gusto».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b015",
+   "tipo": "frase",
+   "es": "Con permiso.",
+   "pt": "Com licença.",
+   "en": "Excuse me.",
+   "aceitas": [
+    "licenca",
+    "da licenca",
+    "me da licenca",
+    "com sua licenca",
+    "da licenca por favor",
+    "com licenca por favor"
+   ],
+   "aceitasEn": [
+    "excuse me please",
+    "pardon me",
+    "may i get past",
+    "may i get by",
+    "may i come through"
+   ],
+   "aceitasEs": [
+    "Permiso."
+   ],
+   "distratores": [
+    "Sem problema.",
+    "Com prazer.",
+    "Com cuidado.",
+    "Sem pressa."
+   ],
+   "distratoresEn": [
+    "No problem.",
+    "With pleasure.",
+    "Carefully.",
+    "No rush."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "social"
+   ],
+   "nota": "Para passar, entrar ou sair. Para chamar a atenção de alguém, «disculpe» ou «perdón». Em muitos países, só «permiso».",
+   "notaEn": "For getting past, coming in or leaving. To get someone's attention, «disculpe» or «perdón». In many countries, just «permiso».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b016",
+   "tipo": "frase",
+   "es": "Perdón, fue sin querer.",
+   "pt": "Desculpa, foi sem querer.",
+   "en": "Sorry, it was an accident.",
+   "aceitas": [
+    "desculpe foi sem querer",
+    "perdao foi sem querer",
+    "foi mal foi sem querer",
+    "foi sem querer desculpa",
+    "foi sem querer desculpe",
+    "desculpa nao foi de proposito",
+    "desculpe nao foi de proposito"
+   ],
+   "aceitasEn": [
+    "sorry i didnt mean to",
+    "sorry i didn t mean to",
+    "sorry i did not mean to",
+    "sorry that was an accident",
+    "sorry it wasnt on purpose",
+    "sorry it wasn t on purpose",
+    "sorry it was not on purpose",
+    "sorry it was by accident"
+   ],
+   "aceitasEs": [
+    "Disculpa, fue sin querer.",
+    "Disculpe, fue sin querer.",
+    "Lo siento, fue sin querer.",
+    "Perdón, no fue a propósito."
+   ],
+   "distratores": [
+    "Desculpa, foi de propósito.",
+    "Desculpa, eu não quero.",
+    "Desculpa, foi ontem.",
+    "Desculpa, foi culpa dele."
+   ],
+   "distratoresEn": [
+    "Sorry, it was on purpose.",
+    "Sorry, I don't want to.",
+    "Sorry, it was yesterday.",
+    "Sorry, it was his fault."
+   ],
+   "nivel": "A2",
+   "tags": [
+    "primeiros passos",
+    "social",
+    "expressão"
+   ],
+   "nota": "«Sin querer» é como em português. De propósito, em espanhol, é «a propósito».",
+   "notaEn": "«Sin querer» is unintentionally. The opposite is «a propósito», on purpose.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b017",
+   "tipo": "frase",
+   "es": "Disculpe, ¿me puede ayudar?",
+   "pt": "Desculpe, pode me ajudar?",
+   "en": "Excuse me, can you help me?",
+   "aceitas": [
+    "com licenca pode me ajudar",
+    "desculpa pode me ajudar",
+    "desculpe o senhor pode me ajudar",
+    "desculpe a senhora pode me ajudar",
+    "com licenca o senhor pode me ajudar",
+    "desculpe voce pode me ajudar",
+    "desculpe me ajuda",
+    "desculpe pode ajudar me",
+    "por favor pode me ajudar"
+   ],
+   "aceitasEn": [
+    "excuse me could you help me",
+    "sorry can you help me",
+    "pardon me can you help me",
+    "excuse me can you help me please"
+   ],
+   "aceitasEs": [
+    "Perdón, ¿me puede ayudar?",
+    "Disculpe, ¿puede ayudarme?",
+    "Disculpa, ¿me puedes ayudar?",
+    "Disculpa, ¿puedes ayudarme?"
+   ],
+   "distratores": [
+    "Desculpe, posso te ajudar?",
+    "Desculpe, pode me esperar?",
+    "Desculpe, pode me ouvir?",
+    "Desculpe, pode me ligar?"
+   ],
+   "distratoresEn": [
+    "Excuse me, can I help you?",
+    "Excuse me, can you wait for me?",
+    "Excuse me, can you hear me?",
+    "Excuse me, can you call me?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "cotidiano",
+    "formal"
+   ],
+   "nota": "«Disculpe» é de usted, o jeito educado de abordar um desconhecido; com tú, «disculpa». O pronome pode ir antes ou colado: «¿me puede ayudar?» ou «¿puede ayudarme?».",
+   "notaEn": "«Disculpe» is the usted form, the polite way to approach a stranger; with tú, «disculpa». The pronoun can go before or attached: «¿me puede ayudar?» or «¿puede ayudarme?».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b018",
+   "tipo": "frase",
+   "es": "Sí, claro.",
+   "pt": "Sim, claro.",
+   "en": "Yes, of course.",
+   "aceitas": [
+    "claro",
+    "claro que sim",
+    "sim claro que sim",
+    "com certeza",
+    "sim com certeza",
+    "e claro",
+    "sim e claro"
+   ],
+   "aceitasEn": [
+    "of course",
+    "sure",
+    "yes sure",
+    "certainly",
+    "yes certainly"
+   ],
+   "aceitasEs": [
+    "Claro que sí.",
+    "Sí, por supuesto.",
+    "Claro."
+   ],
+   "distratores": [
+    "Sim, mais ou menos.",
+    "Não, obrigado.",
+    "Talvez depois.",
+    "Sim, às vezes."
+   ],
+   "distratoresEn": [
+    "Yes, more or less.",
+    "No, thanks.",
+    "Maybe later.",
+    "Yes, sometimes."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "cotidiano"
+   ],
+   "nota": "«Claro» é o sim educado de todo dia. «Por supuesto» diz o mesmo, um pouco mais formal.",
+   "notaEn": "«Claro» is the everyday polite yes. «Por supuesto» says the same, a little more formally.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b019",
+   "tipo": "frase",
+   "es": "No, gracias.",
+   "pt": "Não, obrigado.",
+   "en": "No, thanks.",
+   "aceitas": [
+    "nao obrigada",
+    "nao muito obrigado",
+    "nao muito obrigada",
+    "obrigado nao",
+    "obrigada nao",
+    "nao valeu"
+   ],
+   "aceitasEn": [
+    "no thank you",
+    "no thanks",
+    "no thank you very much",
+    "no thanks very much"
+   ],
+   "aceitasEs": [
+    "No, muchas gracias.",
+    "No, gracias, muy amable."
+   ],
+   "distratores": [
+    "Sim, obrigado.",
+    "Ainda não, obrigado.",
+    "Não, desculpe.",
+    "Sim, por favor."
+   ],
+   "distratoresEn": [
+    "Yes, thanks.",
+    "Not yet, thanks.",
+    "No, sorry.",
+    "Yes, please."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "cotidiano"
+   ],
+   "nota": "A recusa educada de qualquer oferta. Mais caloroso: «No, gracias, muy amable».",
+   "notaEn": "The polite refusal of any offer. Warmer: «No, gracias, muy amable».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b020",
+   "tipo": "frase",
+   "es": "Perdón, no entiendo.",
+   "pt": "Desculpe, não entendo.",
+   "en": "Sorry, I don't understand.",
+   "aceitas": [
+    "desculpa nao entendo",
+    "perdao nao entendo",
+    "desculpe eu nao entendo",
+    "desculpe nao estou entendendo",
+    "desculpa nao estou entendendo",
+    "desculpe nao compreendo"
+   ],
+   "aceitasEn": [
+    "sorry i dont understand",
+    "sorry i don t understand",
+    "sorry i do not understand",
+    "im sorry i dont understand",
+    "i m sorry i don t understand",
+    "excuse me i dont understand",
+    "pardon i dont understand"
+   ],
+   "aceitasEs": [
+    "Disculpe, no entiendo.",
+    "Disculpa, no entiendo.",
+    "Lo siento, no entiendo.",
+    "Perdón, no comprendo."
+   ],
+   "distratores": [
+    "Desculpe, não sei.",
+    "Desculpe, não posso.",
+    "Desculpe, não ouvi.",
+    "Desculpe, não quero."
+   ],
+   "distratoresEn": [
+    "Sorry, I don't know.",
+    "Sorry, I can't.",
+    "Sorry, I didn't hear.",
+    "Sorry, I don't want to."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "cotidiano"
+   ],
+   "nota": "«Entender» muda o e em ie: «entiendo», «entiendes», «entiende». Para o que acabou de ouvir, também no passado: «no entendí».",
+   "notaEn": "«Entender» changes e to ie: «entiendo», «entiendes», «entiende». For something you just heard, the past works too: «no entendí».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b021",
+   "tipo": "frase",
+   "es": "No lo sé.",
+   "pt": "Não sei.",
+   "en": "I don't know.",
+   "aceitas": [
+    "nao sei nao",
+    "isso eu nao sei"
+   ],
+   "aceitasEn": [
+    "i dont know",
+    "i don t know",
+    "i do not know"
+   ],
+   "aceitasEs": [
+    "No sé."
+   ],
+   "distratores": [
+    "Já sei.",
+    "Não posso.",
+    "Não quero.",
+    "Não vejo."
+   ],
+   "distratoresEn": [
+    "I already know.",
+    "I can't.",
+    "I don't want to.",
+    "I can't see."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "cotidiano"
+   ],
+   "nota": "O «lo» retoma o que foi perguntado; «no sé» sozinho também vale. «Sé», com acento, é de «saber»; «se», sem acento, é pronome.",
+   "notaEn": "The «lo» refers back to what was asked; plain «no sé» works too. «Sé» with an accent is from «saber»; «se» without one is a pronoun.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b022",
+   "tipo": "frase",
+   "es": "¿Puede repetir, por favor?",
+   "pt": "Pode repetir, por favor?",
+   "en": "Can you repeat that, please?",
+   "aceitas": [
+    "o senhor pode repetir por favor",
+    "a senhora pode repetir por favor",
+    "voce pode repetir por favor",
+    "pode repetir",
+    "repete por favor",
+    "repita por favor",
+    "pode falar de novo por favor",
+    "pode dizer de novo por favor",
+    "pode repetir isso por favor"
+   ],
+   "aceitasEn": [
+    "could you repeat that please",
+    "can you repeat please",
+    "could you repeat please",
+    "can you say that again please",
+    "could you say that again please",
+    "repeat please",
+    "please repeat that",
+    "can you repeat that"
+   ],
+   "aceitasEs": [
+    "¿Puedes repetir, por favor?",
+    "¿Me lo puede repetir, por favor?",
+    "¿Puede repetirlo, por favor?"
+   ],
+   "distratores": [
+    "Pode responder, por favor?",
+    "Pode esperar, por favor?",
+    "Pode entrar, por favor?",
+    "Pode sentar, por favor?"
+   ],
+   "distratoresEn": [
+    "Can you answer, please?",
+    "Can you wait, please?",
+    "Can you come in, please?",
+    "Can you sit down, please?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "cotidiano"
+   ],
+   "nota": "«Puede» é de usted; com tú, «¿puedes repetir?». Para não ter de repetir tudo: «¿Cómo?».",
+   "notaEn": "«Puede» is the usted form; with tú, «¿puedes repetir?». The shortest way to ask: «¿Cómo?».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b023",
+   "tipo": "frase",
+   "es": "Más despacio, por favor.",
+   "pt": "Mais devagar, por favor.",
+   "en": "Slower, please.",
+   "aceitas": [
+    "devagar por favor",
+    "fala mais devagar por favor",
+    "fale mais devagar por favor",
+    "mais devagar",
+    "pode falar mais devagar por favor",
+    "mais devagarinho por favor"
+   ],
+   "aceitasEn": [
+    "more slowly please",
+    "slowly please",
+    "slow down please",
+    "speak more slowly please",
+    "speak slower please",
+    "a bit slower please",
+    "slower please"
+   ],
+   "aceitasEs": [
+    "Más lento, por favor.",
+    "Hable más despacio, por favor.",
+    "Habla más despacio, por favor."
+   ],
+   "distratores": [
+    "Mais depressa, por favor.",
+    "Mais uma vez, por favor.",
+    "Mais perto, por favor.",
+    "Mais tarde, por favor."
+   ],
+   "distratoresEn": [
+    "Faster, please.",
+    "Once more, please.",
+    "Closer, please.",
+    "Later, please."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "cotidiano"
+   ],
+   "nota": "«Despacio» é devagar, e não tem nada de «despachar». O contrário é «rápido» ou «deprisa».",
+   "notaEn": "«Despacio» means slowly. The opposite is «rápido» or «deprisa».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b024",
+   "tipo": "frase",
+   "es": "¿Habla usted portugués?",
+   "pt": "Você fala português?",
+   "en": "Do you speak Portuguese?",
+   "aceitas": [
+    "o senhor fala portugues",
+    "a senhora fala portugues",
+    "fala portugues",
+    "voce sabe falar portugues",
+    "o senhor sabe falar portugues",
+    "a senhora sabe falar portugues"
+   ],
+   "aceitasEn": [
+    "can you speak portuguese",
+    "you speak portuguese"
+   ],
+   "aceitasEs": [
+    "¿Hablas portugués?",
+    "¿Habla portugués?"
+   ],
+   "distratores": [
+    "Você fala inglês?",
+    "Você entende espanhol?",
+    "Você é de Portugal?",
+    "Você estuda português?"
+   ],
+   "distratoresEn": [
+    "Do you speak English?",
+    "Do you understand Spanish?",
+    "Are you from Portugal?",
+    "Do you study Portuguese?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "viagem"
+   ],
+   "nota": "Com usted, o verbo vai na terceira pessoa, e o «usted» pode cair: «¿Habla portugués?». Com tú, «¿Hablas portugués?».",
+   "notaEn": "With usted the verb is third person, and «usted» itself can be dropped: «¿Habla portugués?». With tú, «¿Hablas portugués?».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b025",
+   "tipo": "frase",
+   "es": "¿Alguien aquí habla inglés?",
+   "pt": "Alguém aqui fala inglês?",
+   "en": "Does anyone here speak English?",
+   "aceitas": [
+    "alguem fala ingles aqui",
+    "tem alguem aqui que fala ingles",
+    "alguem fala ingles",
+    "aqui alguem fala ingles",
+    "alguem aqui sabe falar ingles"
+   ],
+   "aceitasEn": [
+    "does anybody here speak english",
+    "does anyone speak english here",
+    "does anybody speak english here",
+    "does anyone speak english",
+    "is there anyone here who speaks english"
+   ],
+   "aceitasEs": [
+    "¿Alguien habla inglés aquí?",
+    "¿Aquí alguien habla inglés?",
+    "¿Hay alguien que hable inglés?"
+   ],
+   "distratores": [
+    "Alguém aqui fala espanhol?",
+    "Ninguém aqui fala inglês.",
+    "Alguém aqui estuda inglês?",
+    "Alguém aqui é inglês?"
+   ],
+   "distratoresEn": [
+    "Does anyone here speak Spanish?",
+    "Nobody here speaks English.",
+    "Is anyone here studying English?",
+    "Is anyone here English?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "viagem"
+   ],
+   "nota": "«Alguien» é alguém; o contrário é «nadie». O nome da língua vai com minúscula: «inglés», «portugués».",
+   "notaEn": "«Alguien» is someone; the opposite is «nadie». Language names are lowercase: «inglés», «portugués».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b026",
+   "tipo": "frase",
+   "es": "Hablo un poco de español.",
+   "pt": "Falo um pouco de espanhol.",
+   "en": "I speak a little Spanish.",
+   "aceitas": [
+    "falo um pouquinho de espanhol",
+    "eu falo um pouco de espanhol",
+    "falo um pouco o espanhol",
+    "falo um pouco espanhol"
+   ],
+   "aceitasEn": [
+    "i speak a bit of spanish",
+    "i speak a little bit of spanish",
+    "i speak some spanish",
+    "i speak a little bit spanish"
+   ],
+   "aceitasEs": [
+    "Hablo un poquito de español."
+   ],
+   "distratores": [
+    "Falo espanhol muito bem.",
+    "Não falo nada de espanhol.",
+    "Estudo um pouco de espanhol.",
+    "Entendo um pouco de espanhol."
+   ],
+   "distratoresEn": [
+    "I speak Spanish very well.",
+    "I don't speak any Spanish.",
+    "I study a little Spanish.",
+    "I understand a little Spanish."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "viagem"
+   ],
+   "nota": "«Un poco de» pede o «de», como «um pouco de». Sem o «un», «hablo poco español» diz que fala quase nada.",
+   "notaEn": "«Un poco de» needs the «de». Without «un», «hablo poco español» means you hardly speak any.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b027",
+   "tipo": "frase",
+   "es": "¿Cómo se dice esto en español?",
+   "pt": "Como se diz isso em espanhol?",
+   "en": "How do you say this in Spanish?",
+   "aceitas": [
+    "como e que se diz isso em espanhol",
+    "como fala isso em espanhol",
+    "como se fala isso em espanhol",
+    "como e isso em espanhol",
+    "como eu digo isso em espanhol",
+    "como digo isso em espanhol"
+   ],
+   "aceitasEn": [
+    "how do you say that in spanish",
+    "how do i say this in spanish",
+    "how do i say that in spanish",
+    "whats this in spanish",
+    "what s this in spanish",
+    "what is this in spanish",
+    "how is this said in spanish"
+   ],
+   "aceitasEs": [
+    "¿Cómo se dice eso en español?"
+   ],
+   "distratores": [
+    "O que quer dizer isso em espanhol?",
+    "Como se escreve isso em espanhol?",
+    "Como se diz isso em português?",
+    "Como se pronuncia isso em espanhol?"
+   ],
+   "distratoresEn": [
+    "What does this mean in Spanish?",
+    "How do you spell this in Spanish?",
+    "How do you say this in Portuguese?",
+    "How do you pronounce this in Spanish?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "cotidiano"
+   ],
+   "nota": "O «se» impessoal, como no português: «se dice», «se escribe», «se pronuncia».",
+   "notaEn": "The impersonal «se»: «se dice», «se escribe», «se pronuncia» — how one says, writes, pronounces it.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b028",
+   "tipo": "frase",
+   "es": "¿Qué hora es?",
+   "pt": "Que horas são?",
+   "en": "What time is it?",
+   "aceitas": [
+    "que hora e",
+    "que horas sao agora",
+    "tem horas",
+    "voce tem horas",
+    "sabe que horas sao",
+    "voce sabe que horas sao",
+    "que horas e"
+   ],
+   "aceitasEn": [
+    "whats the time",
+    "what s the time",
+    "what is the time",
+    "do you have the time",
+    "have you got the time",
+    "what time is it now"
+   ],
+   "aceitasEs": [
+    "¿Tiene hora?",
+    "¿Qué horas son?"
+   ],
+   "distratores": [
+    "Que dia é hoje?",
+    "A que horas abre?",
+    "Quanto tempo falta?",
+    "Que horas você chega?"
+   ],
+   "distratoresEn": [
+    "What day is it today?",
+    "What time does it open?",
+    "How much time is left?",
+    "What time are you arriving?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "cotidiano"
+   ],
+   "nota": "No singular, ao contrário do português. A resposta muda com o número: «es la una», mas «son las dos».",
+   "notaEn": "Singular in the question. The answer changes with the number: «es la una», but «son las dos».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b029",
+   "tipo": "frase",
+   "es": "¿Dónde está la estación de tren?",
+   "pt": "Onde fica a estação de trem?",
+   "en": "Where is the train station?",
+   "aceitas": [
+    "onde e a estacao de trem",
+    "onde esta a estacao de trem",
+    "onde fica a estacao ferroviaria",
+    "onde e a estacao ferroviaria",
+    "cade a estacao de trem"
+   ],
+   "aceitasEn": [
+    "wheres the train station",
+    "where s the train station",
+    "where is the railway station",
+    "where s the railway station",
+    "where is the station"
+   ],
+   "aceitasEs": [
+    "¿Dónde queda la estación de tren?"
+   ],
+   "distratores": [
+    "Onde fica o ponto de ônibus?",
+    "Quando sai o trem?",
+    "Onde fica a estação de metrô?",
+    "Onde está o meu trem?"
+   ],
+   "distratoresEn": [
+    "Where is the bus stop?",
+    "When does the train leave?",
+    "Where is the metro station?",
+    "Where is my train?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "viagem",
+    "cidade"
+   ],
+   "nota": "Para lugar, «estar»: «¿dónde está?». Em boa parte da América também «¿dónde queda?». «Estación» é ainda a estação do ano.",
+   "notaEn": "For location, «estar»: «¿dónde está?». In much of Latin America also «¿dónde queda?». «Estación» is also a season of the year.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b030",
+   "tipo": "frase",
+   "es": "¿Dónde hay una farmacia?",
+   "pt": "Onde tem uma farmácia?",
+   "en": "Where can I find a pharmacy?",
+   "aceitas": [
+    "onde ha uma farmacia",
+    "onde fica uma farmacia",
+    "onde tem farmacia",
+    "tem uma farmacia por aqui",
+    "onde encontro uma farmacia",
+    "onde existe uma farmacia",
+    "onde eu acho uma farmacia"
+   ],
+   "aceitasEn": [
+    "where is there a pharmacy",
+    "is there a pharmacy around here",
+    "is there a pharmacy near here",
+    "where is a pharmacy",
+    "where can i find a chemist",
+    "where is there a chemist",
+    "where can i find a drugstore",
+    "where is there a drugstore"
+   ],
+   "aceitasEs": [
+    "¿Hay una farmacia por aquí?"
+   ],
+   "distratores": [
+    "A farmácia está aberta?",
+    "Onde fica o hospital?",
+    "Que horas fecha a farmácia?",
+    "Onde tem um mercado?"
+   ],
+   "distratoresEn": [
+    "Is the pharmacy open?",
+    "Where is the hospital?",
+    "What time does the pharmacy close?",
+    "Where is there a supermarket?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "viagem",
+    "saúde"
+   ],
+   "nota": "«Hay» é o «tem» de existir: serve para o que pode haver por perto. Para um lugar já conhecido, «está»: «¿Dónde está la farmacia?».",
+   "notaEn": "«Hay» is there is: for something that may exist nearby. For a place already known, «está»: «¿Dónde está la farmacia?». (Pharmacy is understood everywhere; chemist's in the UK, drugstore in the US.)",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b031",
+   "tipo": "frase",
+   "es": "¿Está lejos de aquí?",
+   "pt": "É longe daqui?",
+   "en": "Is it far from here?",
+   "aceitas": [
+    "fica longe daqui",
+    "esta longe daqui",
+    "e longe",
+    "fica longe"
+   ],
+   "aceitasEn": [
+    "is it far",
+    "is that far from here",
+    "is it a long way from here",
+    "is it far away from here",
+    "is it a long way"
+   ],
+   "aceitasEs": [
+    "¿Queda lejos de aquí?"
+   ],
+   "distratores": [
+    "É perto daqui?",
+    "Está longe de acabar?",
+    "É perto da praia?",
+    "Dá para ir a pé?"
+   ],
+   "distratoresEn": [
+    "Is it close to here?",
+    "Is it far from finished?",
+    "Is it near the beach?",
+    "Can I walk there?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "viagem",
+    "cidade"
+   ],
+   "nota": "«Lejos» é longe; perto é «cerca», que não tem nada de cerca. «Lejos de aquí» é longe daqui.",
+   "notaEn": "«Lejos» is far; near is «cerca». «Lejos de aquí» is far from here.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b032",
+   "tipo": "frase",
+   "es": "Estoy perdid{o|a}.",
+   "pt": "Estou perdid{o|a}.",
+   "en": "I'm lost.",
+   "aceitas": [
+    "eu estou perdid{o|a}"
+   ],
+   "aceitasEn": [
+    "i am lost",
+    "i m lost",
+    "im lost",
+    "ive lost my way",
+    "i ve lost my way",
+    "i have lost my way"
+   ],
+   "distratores": [
+    "Estou cansad{o|a}.",
+    "Estou atrasad{o|a}.",
+    "Estou sozinh{o|a}.",
+    "Estou preocupad{o|a}."
+   ],
+   "distratoresEn": [
+    "I'm tired.",
+    "I'm late.",
+    "I'm alone.",
+    "I'm worried."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "viagem"
+   ],
+   "nota": "Com «estar», porque é um estado. Para contar o que aconteceu: «me perdí», me perdi.",
+   "notaEn": "With «estar», because it is a state. To say what happened: «me perdí», I got lost.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b033",
+   "tipo": "frase",
+   "es": "¡Ayuda, por favor!",
+   "pt": "Ajuda, por favor!",
+   "en": "Help, please!",
+   "aceitas": [
+    "socorro",
+    "me ajuda por favor",
+    "me ajude por favor",
+    "me ajudem por favor",
+    "ajudem por favor",
+    "ajude por favor",
+    "socorro por favor"
+   ],
+   "aceitasEn": [
+    "help",
+    "help me please",
+    "please help",
+    "please help me",
+    "help me"
+   ],
+   "aceitasEs": [
+    "¡Socorro!",
+    "¡Auxilio!",
+    "¡Ayúdenme, por favor!",
+    "¡Ayúdeme, por favor!",
+    "¡Ayúdame, por favor!"
+   ],
+   "distratores": [
+    "Cuidado, por favor!",
+    "Silêncio, por favor!",
+    "Calma, por favor!",
+    "Depressa, por favor!"
+   ],
+   "distratoresEn": [
+    "Careful, please!",
+    "Quiet, please!",
+    "Calm down, please!",
+    "Hurry, please!"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "saúde"
+   ],
+   "nota": "Em perigo, grita-se «¡Socorro!», como em português, ou «¡Auxilio!». «Ayuda» com y, como «ayudar».",
+   "notaEn": "In danger, people shout «¡Socorro!» or «¡Auxilio!». «Ayuda» is spelled with a y, like «ayudar».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b034",
+   "tipo": "frase",
+   "es": "¡Llamen a una ambulancia!",
+   "pt": "Chamem uma ambulância!",
+   "en": "Call an ambulance!",
+   "aceitas": [
+    "liguem para uma ambulancia",
+    "chama uma ambulancia",
+    "chame uma ambulancia",
+    "liga para uma ambulancia",
+    "ligue para uma ambulancia",
+    "alguem chama uma ambulancia",
+    "alguem chame uma ambulancia",
+    "chamem uma ambulancia por favor"
+   ],
+   "aceitasEn": [
+    "somebody call an ambulance",
+    "someone call an ambulance",
+    "call an ambulance please",
+    "get an ambulance",
+    "somebody get an ambulance"
+   ],
+   "aceitasEs": [
+    "¡Llamen una ambulancia!",
+    "¡Llame a una ambulancia!",
+    "¡Llama a una ambulancia!"
+   ],
+   "distratores": [
+    "Chamem a polícia!",
+    "Chamem um táxi!",
+    "Chamem um médico!",
+    "Esperem a ambulância!"
+   ],
+   "distratoresEn": [
+    "Call the police!",
+    "Call a taxi!",
+    "Call a doctor!",
+    "Wait for the ambulance!"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "primeiros passos",
+    "saúde"
+   ],
+   "nota": "«Llamen» é de «ustedes», para todos em volta. A uma pessoa só: «¡llame!» (usted) ou «¡llama!» (tú).",
+   "notaEn": "«Llamen» is the «ustedes» form, for everyone around. To one person: «¡llame!» (usted) or «¡llama!» (tú).",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b035",
+   "tipo": "frase",
+   "es": "Un café, por favor.",
+   "pt": "Um café, por favor.",
+   "en": "A coffee, please.",
+   "aceitas": [
+    "um cafezinho por favor",
+    "cafe por favor",
+    "me ve um cafe por favor",
+    "me da um cafe por favor",
+    "quero um cafe por favor",
+    "me traz um cafe por favor"
+   ],
+   "aceitasEn": [
+    "one coffee please",
+    "coffee please",
+    "can i have a coffee please",
+    "could i have a coffee please",
+    "id like a coffee please",
+    "i d like a coffee please"
+   ],
+   "aceitasEs": [
+    "Un cafecito, por favor.",
+    "¿Me da un café, por favor?"
+   ],
+   "distratores": [
+    "Um chá, por favor.",
+    "Um suco, por favor.",
+    "Mais um café, por favor.",
+    "A conta, por favor."
+   ],
+   "distratoresEn": [
+    "A tea, please.",
+    "A juice, please.",
+    "Another coffee, please.",
+    "The bill, please."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "comida"
+   ],
+   "nota": "Pedir assim, com «por favor» no fim, serve em qualquer balcão. Com leite: «café con leche».",
+   "notaEn": "Ordering like this, with «por favor» at the end, works at any counter. With milk: «café con leche».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b036",
+   "tipo": "frase",
+   "es": "¿Me trae la carta, por favor?",
+   "pt": "Pode me trazer o cardápio, por favor?",
+   "en": "Can you bring me the menu, please?",
+   "aceitas": [
+    "me traz o cardapio por favor",
+    "me traga o cardapio por favor",
+    "o cardapio por favor",
+    "pode trazer o cardapio por favor",
+    "o senhor me traz o cardapio por favor",
+    "me traz o menu por favor",
+    "pode me trazer o menu por favor",
+    "o menu por favor",
+    "pode me trazer o cardapio"
+   ],
+   "aceitasEn": [
+    "could you bring me the menu please",
+    "can i have the menu please",
+    "could i have the menu please",
+    "the menu please",
+    "can i see the menu please",
+    "may i have the menu please",
+    "can you bring the menu please"
+   ],
+   "aceitasEs": [
+    "¿Me trae el menú, por favor?",
+    "¿Me puede traer la carta, por favor?",
+    "¿Me puede traer el menú, por favor?"
+   ],
+   "distratores": [
+    "Pode me trazer a conta, por favor?",
+    "Pode me trazer a sobremesa, por favor?",
+    "Pode me trazer a bebida, por favor?",
+    "Pode me trazer o troco, por favor?"
+   ],
+   "distratoresEn": [
+    "Can you bring me the bill, please?",
+    "Can you bring me the dessert, please?",
+    "Can you bring me the drink, please?",
+    "Can you bring me my change, please?"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "comida"
+   ],
+   "nota": "No restaurante, «la carta» é o cardápio. «El menú» se entende em toda parte; na Espanha, é também o prato do dia a preço fixo.",
+   "notaEn": "In a restaurant, «la carta» is the menu. «El menú» is understood everywhere; in Spain it is also the fixed-price set meal.",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b037",
+   "tipo": "frase",
+   "es": "La cuenta, por favor.",
+   "pt": "A conta, por favor.",
+   "en": "The bill, please.",
+   "aceitas": [
+    "me traz a conta por favor",
+    "pode trazer a conta por favor",
+    "pode me trazer a conta por favor",
+    "a conta",
+    "fecha a conta por favor",
+    "pode fechar a conta por favor",
+    "me ve a conta por favor"
+   ],
+   "aceitasEn": [
+    "the check please",
+    "can i have the bill please",
+    "could i have the bill please",
+    "can we have the bill please",
+    "could we have the check please",
+    "can i have the check please",
+    "can we have the check please",
+    "check please",
+    "bill please"
+   ],
+   "aceitasEs": [
+    "¿Me trae la cuenta, por favor?",
+    "¿Me da la cuenta, por favor?"
+   ],
+   "distratores": [
+    "O cardápio, por favor.",
+    "O troco, por favor.",
+    "A sobremesa, por favor.",
+    "O recibo, por favor."
+   ],
+   "distratoresEn": [
+    "The menu, please.",
+    "My change, please.",
+    "The dessert, please.",
+    "The receipt, please."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "comida"
+   ],
+   "nota": "«La cuenta» é também a conta de somar e a do banco. Mais completo: «¿Me trae la cuenta, por favor?».",
+   "notaEn": "«La cuenta» is also a sum and a bank account. (In the US, «the check»; elsewhere, «the bill».)",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b038",
+   "tipo": "frase",
+   "es": "Para llevar, por favor.",
+   "pt": "Para viagem, por favor.",
+   "en": "To go, please.",
+   "aceitas": [
+    "pra viagem por favor",
+    "pra levar por favor",
+    "para levar por favor",
+    "para viagem",
+    "e para viagem",
+    "e pra levar",
+    "pra viagem"
+   ],
+   "aceitasEn": [
+    "to take away please",
+    "takeaway please",
+    "to take out please",
+    "for takeaway please",
+    "to go",
+    "take away please",
+    "takeout please"
+   ],
+   "aceitasEs": [
+    "Es para llevar."
+   ],
+   "distratores": [
+    "Para comer aqui, por favor.",
+    "Para dividir, por favor.",
+    "Com gelo, por favor.",
+    "Sem açúcar, por favor."
+   ],
+   "distratoresEn": [
+    "For here, please.",
+    "To share, please.",
+    "With ice, please.",
+    "Without sugar, please."
+   ],
+   "nivel": "A2",
+   "tags": [
+    "primeiros passos",
+    "comida"
+   ],
+   "nota": "Vale em todo o mundo hispânico. O contrário é «para comer aquí» ou «para tomar aquí».",
+   "notaEn": "Used across the Spanish-speaking world. The opposite is «para comer aquí» or «para tomar aquí». («To go» in the US; «to take away» in the UK.)",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b039",
+   "tipo": "frase",
+   "es": "¿Aceptan tarjeta?",
+   "pt": "Aceitam cartão?",
+   "en": "Do you take cards?",
+   "aceitas": [
+    "voces aceitam cartao",
+    "aceita cartao",
+    "pode ser no cartao",
+    "passa cartao",
+    "da para pagar com cartao",
+    "posso pagar com cartao",
+    "pode ser cartao"
+   ],
+   "aceitasEn": [
+    "do you accept cards",
+    "do you accept card",
+    "do you take card",
+    "can i pay by card",
+    "can i pay with card",
+    "can i pay with a card"
+   ],
+   "aceitasEs": [
+    "¿Puedo pagar con tarjeta?",
+    "¿Se puede pagar con tarjeta?"
+   ],
+   "distratores": [
+    "Aceitam dinheiro?",
+    "Vocês têm cartão?",
+    "Aceitam reserva?",
+    "Cobram taxa?"
+   ],
+   "distratoresEn": [
+    "Do you take cash?",
+    "Do you have a card?",
+    "Do you take reservations?",
+    "Is there a fee?"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "primeiros passos",
+    "compras"
+   ],
+   "nota": "«Tarjeta» é o cartão; «cartón» é papelão. Em dinheiro vivo: «en efectivo».\n🇪🇸 el cartón → 🇧🇷 o papelão",
+   "notaEn": "«Tarjeta» is a card; «cartón» is cardboard. In cash: «en efectivo».",
+   "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "b040",
+   "tipo": "frase",
+   "es": "¡Buen provecho!",
+   "pt": "Bom apetite!",
+   "en": "Enjoy your meal!",
+   "aceitas": [
+    "bom proveito",
+    "bom apetite pra voce",
+    "bom apetite a todos",
+    "aproveite a refeicao",
+    "bom apetite para voce"
+   ],
+   "aceitasEn": [
+    "bon appetit",
+    "enjoy",
+    "enjoy your food",
+    "have a nice meal",
+    "enjoy the meal"
+   ],
+   "aceitasEs": [
+    "¡Que aproveche!",
+    "¡Provecho!"
+   ],
+   "distratores": [
+    "Boa viagem!",
+    "Bom descanso!",
+    "Boa sorte!",
+    "Saúde!"
+   ],
+   "distratoresEn": [
+    "Have a nice trip!",
+    "Have a good rest!",
+    "Good luck!",
+    "Cheers!"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "primeiros passos",
+    "comida",
+    "expressão"
+   ],
+   "nota": "Diz-se a quem está comendo, até a um desconhecido na mesa ao lado. No México e em outros países, só «¡provecho!»; na Espanha, também «¡que aproveche!».",
+   "notaEn": "Said to anyone eating, even a stranger at the next table. In Mexico and elsewhere, just «¡provecho!»; in Spain, also «¡que aproveche!».",
+   "requerTodas": []
   }
  ]
 }

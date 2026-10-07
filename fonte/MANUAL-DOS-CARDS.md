@@ -70,6 +70,18 @@ ela não é do card: é do motor ou da leva inteira.
   corrente de outro lugar — «la computadora», «el carro», «el sartén» — vale
   como resposta certa, e o app diz onde ela se usa (seção 5.2). Palavra ou
   gíria só da Espanha leva a etiqueta `Espanha`.
+- **O mais universal primeiro** (decisão do Gere, 07/10/2026). Entre duas
+  formas, o card ensina a que é entendida em todo o mundo da língua, e as
+  outras entram nas aceitas com o lugar (seção 5.2). Expressão que só se usa
+  num país (no espanhol, só na Espanha: «vale», «molar», «currar»; no inglês,
+  só britânica ou só americana) vira card **raramente**, e só quando for muito
+  frequente lá; leva a etiqueta do lugar (`Espanha`).
+- **Nada que ofenda em algum lugar** (decisão do Gere, 07/10/2026). Nenhum
+  palavrão nem expressão chula («ni de coña», «me cago en…»), e nenhuma palavra
+  que seja grosseira ou de duplo sentido em algum país da língua («coger»,
+  «concha», «pico», «bicho», «polla», «pinche»…) — nem como resposta, nem
+  como distrator, nem dentro da frase ou da nota. Quando a palavra é
+  inevitável, a nota avisa do perigo sem repeti-lo.
 - **Nada repetido.** O build barra `es` igual ao de outro card; sinônimo muito
   próximo de card existente também não vale a vaga.
 
@@ -909,6 +921,18 @@ Como ficou no app (outubro de 2026), no lugar da trilha de cards de verso de
 4. as palavras que ainda não têm card ganham card (forma de dicionário), e
    depois frases, como qualquer palavra (seção 18).
 
+### 17.4.1 As frases de primeiros passos
+
+A frase espera as palavras dela (17.2), e por isso quem começa do zero passava
+as primeiras sessões vendo só palavras. Desde 07/10/2026 (pedido do Gere) todo
+baralho tem **umas 40 frases de primeiros passos**, livres desde o primeiro
+dia: `requerTodas: []` (lista vazia, de propósito), etiqueta
+`primeiros passos`, nível A1–A2, 2 a 6 palavras. São o kit de quem chega:
+cumprimentos, apresentar-se, por favor/obrigado/desculpa, «não entendo»,
+«pode repetir?», onde fica, quanto custa, a conta. O app as intercala com as
+palavras novas, uma a cada duas, na ordem do arquivo. **Toda língua nova
+começa por elas** (seção 18, passo 0).
+
 ### 17.5 «Não quero aprender este card»
 
 Todo card tem o botão — em destaque na estreia, que é quando a pessoa sabe se
@@ -922,6 +946,7 @@ que o óbvio sai do caminho sem custar cinco respostas.
 
 Para uma **língua do zero**:
 
+0. **As 40 frases de primeiros passos** (seção 17.4.1), livres desde o começo.
 1. **50 palavras** de todos os tipos (substantivos, verbos, adjetivos,
    advérbios), as mais frequentes e úteis primeiro.
 2. **Frases** que mostrem os principais usos de **cada** palavra criada — podem
