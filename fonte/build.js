@@ -107,6 +107,19 @@ for (const b of baralhos) {
   for (const f of fs.readdirSync(pasta).filter(f => f.endsWith('.json')).sort()) {
     const texto = JSON.parse(fs.readFileSync(path.join(pasta, f), 'utf8'));
     const linhas = (texto.blocos || []).reduce((a, bl) => a + (bl || []).length, 0);
+    /* O poema se revela verso a verso (pedido do Gere, 07/10/2026): cada
+       linha diz em «requer» as palavras que ela traz, e o «requerTodas» do
+       texto é a união delas, na ordem de leitura — é essa ordem que faz as
+       palavras estrearem verso após verso. */
+    const todas = (texto.blocos || []).flat();
+    if (todas.length && todas.every(l => l && Array.isArray(l.requer))) {
+      if (Array.isArray(texto.requerTodas)) {
+        erros.push('texto ' + texto.id + ': tem «requer» nas linhas e «requerTodas»; fica só o das linhas');
+      }
+      texto.requerTodas = [...new Set(todas.flatMap(l => l.requer))];
+    } else if (todas.some(l => l && l.requer)) {
+      erros.push('texto ' + texto.id + ': «requer» só em algumas linhas; ou todas, ou nenhuma');
+    }
     console.log('  ' + ('textos/' + b.idioma + '/' + f).padEnd(36) + (texto.tipo || '?') + ', ' + linhas + ' linhas, ' +
       (texto.requerTodas || []).length + ' palavras');
     b.textos.push(texto);
@@ -322,13 +335,23 @@ for (const bruto of cards) {
   const c = formas[g];
   const onde = c.id + ' (' + c[L.texto] + ')' + (formas.length > 1 ? (g ? ' [feminino]' : ' [masculino]') : '');
 
-  if (textos.has(normalizar(c[L.texto]))) {
-    erros.push('card repetido: ' + onde + ' já existe em ' + textos.get(normalizar(c[L.texto])));
+  /* «May» (o mês) e «may» (o modal) só diferem na maiúscula: com «homografos»
+     declarado, não é repetição */
+  const igual = textos.get(normalizar(c[L.texto]));
+  const homografo = igual && ((bruto.homografos || []).includes(igual) ||
+    ((cards.find(x => x.id === igual) || {}).homografos || []).includes(c.id));
+  if (igual && !homografo) {
+    erros.push('card repetido: ' + onde + ' já existe em ' + igual);
   }
   textos.set(normalizar(c[L.texto]), c.id);
 
   const pelaMesmaRegua = Motor.normalizar(c[L.texto], idioma);
-  if (pelaMesmaRegua && pelaRegua.has(pelaMesmaRegua) && pelaRegua.get(pelaMesmaRegua) !== c.id) {
+  /* homógrafo declarado: «the back» (as costas) e «back» (de volta) são palavras diferentes que o
+     funil lê igual; o card diz em «homografos» que sabe disso, e a guarda deixa passar */
+  const outro = pelaRegua.get(pelaMesmaRegua);
+  const declarado = outro && ((bruto.homografos || []).includes(outro) ||
+    ((cards.find(x => x.id === outro) || {}).homografos || []).includes(c.id));
+  if (pelaMesmaRegua && pelaRegua.has(pelaMesmaRegua) && outro !== c.id && !declarado) {
     erros.push('o funil não distingue este card de ' + pelaRegua.get(pelaMesmaRegua) + ': ' + onde +
       ' — os dois viram «' + pelaMesmaRegua + '»');
   }
@@ -645,6 +668,9 @@ for (const b of baralhos) {
       });
     });
     if (!Array.isArray(txt.requerTodas)) { avisos.push(onde + ': sem «requerTodas» — aparece assim que liberar'); continue; }
+    if (txt.tipo === 'poema' && !(txt.blocos || []).flat().every(l => l && Array.isArray(l.requer))) {
+      avisos.push(onde + ': poema sem «requer» por verso — aparece só inteiro');
+    }
     const vistos = new Set();
     for (const r of txt.requerTodas) {
       if (vistos.has(r)) erros.push(onde + ': palavra repetida em «requerTodas» → ' + r);

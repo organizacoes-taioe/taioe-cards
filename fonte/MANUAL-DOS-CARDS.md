@@ -888,7 +888,13 @@ Como ficou no app (outubro de 2026), no lugar da trilha de cards de verso de
 - **na meia-noite seguinte ao domínio da última palavra**, o texto aparece no
   lugar do próximo card, inteiro, com a tradução ao lado. Fica como lido, o
   próximo do mesmo tipo entra na espera (o mais perto de destravar), e a tela
-  Textos guarda os já lidos.
+  Textos guarda os já lidos;
+- **o poema se revela verso a verso** (pedido do Gere, 07/10/2026): cada linha
+  traz em `requer` as palavras dela, e o build monta o `requerTodas` a partir
+  das linhas, na ordem de leitura. O verso k aparece no lugar do próximo card
+  na meia-noite seguinte ao domínio das palavras dos versos 1 a k, com o
+  contador (3/8). A prosa continua aparecendo só inteira. Os versos já vistos
+  viajam em `textos.lidos` como `<id>#<k>`, sem coluna nova no banco.
 
 **Para pôr um texto novo:**
 
