@@ -26,7 +26,7 @@
   };
   /* Os que aparecem na escolha e nas configurações. O de português (pt-es,
      pt-en) entra quando o baralho existir. */
-  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'en-es', 'es-en'];
+  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'en-es', 'es-en', 'pt-es', 'pt-en'];
   var ativo = function (k) { return !!CURSOS[k] && CURSOS_ATIVOS.indexOf(k) >= 0; };
   function cursosDa(l) {
     return CURSOS_ATIVOS.filter(function (k) { return CURSOS[k] && CURSOS[k].audiencia === l; });
