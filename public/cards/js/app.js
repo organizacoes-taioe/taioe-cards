@@ -69,7 +69,7 @@ window.TaioeCardsApp = function (ctx) {
     'btn-proximo', 'painel-conteudo', 'dica',
     'btn-texto', 'tela-texto', 'texto-conteudo',
     'cfg-conta', 'cfg-curso', 'btn-conta', 'btn-sair', 'btn-trocar-curso',
-    'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync'
+    'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync', 'cfg-comentarios'
   ].forEach(id => { el[id] = document.getElementById(id); });
 
   /* ═══════════════ estado ═══════════════ */
@@ -2664,6 +2664,35 @@ window.TaioeCardsApp = function (ctx) {
     el['cfg-curso'].textContent = 'Você está no curso de ' + NOME_L + ', respondido em português.';
     el['btn-trocar-curso'].textContent = 'Estudar ' + ctx.nomeDoCurso(ctx.outroCurso).toLowerCase();
     mostrar('tela-config');
+    mostrarMeusComentarios();
+  }
+
+  /* O que a pessoa enviou e o que a curadoria respondeu (colunas triagem e retorno). */
+  const SITUACAO = { aberto: 'aguardando', aceito: 'aceito', recusado: 'não aceito', resolvido: 'resolvido' };
+  async function mostrarMeusComentarios() {
+    const caixa = el['cfg-comentarios'];
+    caixa.textContent = 'Carregando…';
+    const sb = ctx.sb;
+    const [a, b] = await Promise.all([
+      sb.schema('cards').from('comentarios').select('card_id, curso, texto, triagem, retorno, feito_em').order('feito_em', { ascending: false }).limit(100),
+      sb.schema('cards').from('contestacoes').select('card_id, curso, resposta, triagem, retorno, feito_em').order('feito_em', { ascending: false }).limit(100)
+    ]).catch(() => [{ error: true }, { error: true }]);
+    caixa.textContent = '';
+    if (a.error || b.error) { caixa.textContent = 'Sem conexão para mostrar agora.'; return; }
+    const todos = a.data.map(x => Object.assign({ tipo: 'Comentário', dito: x.texto }, x))
+      .concat(b.data.map(x => Object.assign({ tipo: 'Contestação', dito: '«' + x.resposta + '»' }, x)))
+      .sort((x, y) => (x.feito_em < y.feito_em ? 1 : -1));
+    if (!todos.length) { caixa.textContent = 'Você ainda não enviou nenhum.'; return; }
+    todos.forEach(x => {
+      const d = document.createElement('div'); d.className = 'meu-comentario';
+      const c = (window.BARALHOS[x.curso.split('-')[0]] || { cards: [] }).cards.find(k => k.id === x.card_id);
+      const t = document.createElement('p'); t.className = 'mc-topo';
+      t.textContent = x.tipo + ' · ' + (c ? c[x.curso.split('-')[0]] : x.card_id) + ' · ' + (SITUACAO[x.triagem] || x.triagem);
+      const p = document.createElement('p'); p.className = 'mc-texto'; p.textContent = x.dito;
+      d.appendChild(t); d.appendChild(p);
+      if (x.retorno) { const r = document.createElement('p'); r.className = 'mc-retorno'; r.textContent = x.retorno; d.appendChild(r); }
+      caixa.appendChild(d);
+    });
   }
 
   el['btn-conta'].addEventListener('click', () => { salvarProgresso(true); location.href = '/conta/'; });

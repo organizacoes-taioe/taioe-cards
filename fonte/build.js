@@ -949,14 +949,19 @@ const versoesJs = '/* GERADO POR fonte/build.js — não edite à mão. */\nwind
 const arqVersoes = path.join(pastaPublica, 'js', 'versoes.js');
 if (!fs.existsSync(arqVersoes) || fs.readFileSync(arqVersoes, 'utf8') !== versoesJs) fs.writeFileSync(arqVersoes, versoesJs, 'utf8');
 versaoDoApp['js/versoes.js'] = hash8(versoesJs);
-for (const pagina of fs.readdirSync(pastaPublica).filter(f => f.endsWith('.html'))) {
+/* as páginas de public/cards/ e das subpastas (a curadoria), com o caminho relativo a cada uma */
+const paginasDoApp = fs.readdirSync(pastaPublica).filter(f => f.endsWith('.html')).map(f => [f, ''])
+  .concat(fs.readdirSync(pastaPublica, { withFileTypes: true })
+    .filter(d => d.isDirectory() && fs.existsSync(path.join(pastaPublica, d.name, 'index.html')))
+    .map(d => [path.join(d.name, 'index.html'), '../']));
+for (const [pagina, prefixo] of paginasDoApp) {
   const caminho = path.join(pastaPublica, pagina);
   const antes = fs.readFileSync(caminho, 'utf8');
   let html = antes;
   for (const a of Object.keys(versaoDoApp)) {
-    const escapado = a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const escapado = (prefixo + a).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     html = html.replace(new RegExp('(href|src)="' + escapado + '(\\?v=[^"]*)?"', 'g'),
-      '$1="' + a + '?v=' + versaoDoApp[a] + '"');
+      '$1="' + prefixo + a + '?v=' + versaoDoApp[a] + '"');
   }
   if (html !== antes) { fs.writeFileSync(caminho, html, 'utf8'); trocadas++; }
 }
