@@ -335,8 +335,13 @@ for (const bruto of cards) {
   const c = formas[g];
   const onde = c.id + ' (' + c[L.texto] + ')' + (formas.length > 1 ? (g ? ' [feminino]' : ' [masculino]') : '');
 
-  if (textos.has(normalizar(c[L.texto]))) {
-    erros.push('card repetido: ' + onde + ' já existe em ' + textos.get(normalizar(c[L.texto])));
+  /* «May» (o mês) e «may» (o modal) só diferem na maiúscula: com «homografos»
+     declarado, não é repetição */
+  const igual = textos.get(normalizar(c[L.texto]));
+  const homografo = igual && ((bruto.homografos || []).includes(igual) ||
+    ((cards.find(x => x.id === igual) || {}).homografos || []).includes(c.id));
+  if (igual && !homografo) {
+    erros.push('card repetido: ' + onde + ' já existe em ' + igual);
   }
   textos.set(normalizar(c[L.texto]), c.id);
 

@@ -1,0 +1,130 @@
+{
+ "id": "txt-en-002",
+ "idioma": "en",
+ "tipo": "poema",
+ "titulo": "The Tyger",
+ "autor": "William Blake",
+ "obra": "Songs of Experience; texto da edição Sampson (1905)",
+ "ano": 1794,
+ "dominio": "William Blake morreu em 1827. Domínio público há quase dois séculos.",
+ "fonte": "https://en.wikisource.org/wiki/The_poetical_works_of_William_Blake;_a_new_and_verbatim_text_from_the_manuscript_engraved_and_letterpress_originals/The_Tyger",
+ "recorte": "a primeira e as duas últimas das seis quadras (pula as três da forja)",
+ "traducao": "em verso, na medida e na rima do original",
+ "nota": "Versos de quatro tempos com a batida na primeira sílaba — «TY-ger! TY-ger! BURN-ing BRIGHT» —, que às vezes ganham uma sílaba átona na frente («Could FRAME thy FEAR-ful SYM-me-TRY»), em dísticos rimados. A primeira e a última estrofe só diferem numa palavra: «Could» (pôde) vira «Dare» (ousa). A grafia é a de Blake: «Tyger» por «tiger», «thy» e «thee» são o «teu» e o «te» antigos, «water'd» é «watered», e «his work to see» é a ordem invertida de «to see his work». «Dare frame» é verbo sem «to». Na tradução, a troca de palavra subiu um verso: «podia» → «ousaria».",
+ "notaEs": "Versos de cuatro tiempos con el golpe en la primera sílaba — «TY-ger! TY-ger! BURN-ing BRIGHT» —, que a veces ganan una sílaba átona delante («Could FRAME thy FEAR-ful SYM-me-TRY»), en pareados rimados. La primera y la última estrofa solo difieren en una palabra: «Could» (pudo) se vuelve «Dare» (se atreve). La grafía es la de Blake: «Tyger» por «tiger», «thy» y «thee» son el «tu» y el «te» antiguos, «water'd» es «watered», y «his work to see» es el orden invertido de «to see his work». «Dare frame» es verbo sin «to».",
+ "blocos": [
+  [
+   {
+    "en": "Tyger! Tyger! burning bright",
+    "pt": "Tigre! Tigre! fogo e lume",
+    "es": "¡Tigre! ¡Tigre!, que ardes brillante",
+    "requer": [
+     "en-p954",
+     "en-p418",
+     "en-p955"
+    ]
+   },
+   {
+    "en": "In the forests of the night,",
+    "pt": "nas florestas do negrume,",
+    "es": "en los bosques de la noche,",
+    "requer": [
+     "en-p956",
+     "en-p275"
+    ]
+   },
+   {
+    "en": "What immortal hand or eye",
+    "pt": "que mão eterna podia",
+    "es": "¿qué mano u ojo inmortal",
+    "requer": [
+     "en-p957",
+     "en-p142",
+     "en-p167"
+    ]
+   },
+   {
+    "en": "Could frame thy fearful symmetry?",
+    "pt": "moldar-te a fera simetria?",
+    "es": "pudo dar forma a tu temible simetría?",
+    "requer": [
+     "en-p246",
+     "en-p958",
+     "en-p959",
+     "en-p960"
+    ]
+   }
+  ],
+  [
+   {
+    "en": "When the stars threw down their spears,",
+    "pt": "Quando os astros desarmaram",
+    "es": "Cuando las estrellas arrojaron sus lanzas",
+    "requer": [
+     "en-p961",
+     "en-p300",
+     "en-p962",
+     "en-p963"
+    ]
+   },
+   {
+    "en": "And water'd heaven with their tears,",
+    "pt": "e com seu pranto o céu regaram,",
+    "es": "y regaron el cielo con sus lágrimas,",
+    "requer": [
+     "en-p964",
+     "en-p952",
+     "en-p965"
+    ]
+   },
+   {
+    "en": "Did he smile his work to see?",
+    "pt": "sorriu ao ver-te, talvez?",
+    "es": "¿sonrió al ver su obra?",
+    "requer": [
+     "en-p231",
+     "en-p966",
+     "en-p410",
+     "en-p252"
+    ]
+   },
+   {
+    "en": "Did he who made the Lamb make thee?",
+    "pt": "Fez o Cordeiro quem te fez?",
+    "es": "¿El que hizo al Cordero te hizo a ti?",
+    "requer": [
+     "en-p250",
+     "en-p967"
+    ]
+   }
+  ],
+  [
+   {
+    "en": "Tyger! Tyger! burning bright",
+    "pt": "Tigre! Tigre! fogo e lume",
+    "es": "¡Tigre! ¡Tigre!, que ardes brillante",
+    "requer": []
+   },
+   {
+    "en": "In the forests of the night,",
+    "pt": "nas florestas do negrume,",
+    "es": "en los bosques de la noche,",
+    "requer": []
+   },
+   {
+    "en": "What immortal hand or eye,",
+    "pt": "que mão eterna ousaria",
+    "es": "¿qué mano u ojo inmortal",
+    "requer": []
+   },
+   {
+    "en": "Dare frame thy fearful symmetry?",
+    "pt": "moldar-te a fera simetria?",
+    "es": "se atreve a dar forma a tu temible simetría?",
+    "requer": [
+     "en-p968"
+    ]
+   }
+  ]
+ ]
+}
