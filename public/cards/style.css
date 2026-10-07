@@ -616,6 +616,15 @@ label input:focus{outline:0;border-color:var(--acento)}
 .curso:hover,.curso:focus-visible{border-color:var(--acento);transform:translateY(-1px);outline:none}
 .curso-bandeira{width:36px;height:24px;border-radius:3px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
 .curso-nome{letter-spacing:.2px}
+/* a língua da interface: na escolha do curso e nas configurações */
+.seletor-lingua{display:inline-flex;align-items:center;gap:9px;margin:26px 0 0;font-size:13px;color:var(--texto-2)}
+.grupo .seletor-lingua{margin:0}
+.seletor-lingua select,select.seletor-lingua{
+  background:var(--fundo);border:1px solid var(--borda);color:var(--texto);
+  border-radius:9px;padding:8px 10px;font:inherit;font-size:14px;
+}
+.seletor-lingua select:focus,select.seletor-lingua:focus{outline:0;border-color:var(--acento)}
+.linha-manter{margin:18px 0 0}
 
 /* ── Seus comentários (Configurações) ── */
 .meus-comentarios{display:flex;flex-direction:column;gap:10px;font-size:14px;color:var(--texto-2)}

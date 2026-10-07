@@ -59,21 +59,26 @@
 
   function criar(o) {
     var sb = o.sb, uid = o.uid, curso = o.curso, chave = uid + ':' + curso;
+    /* os textos da linha de estado, na língua da interface (o app passa o
+       tradutor dele; sem ele, o da página) */
+    var t = o.t || function (k, v) { return window.TaioeI18n ? TaioeI18n.t(k, v) : k; };
+    var tn = function (k, n, v) { return t(k + (n === 1 ? '.1' : '.n'), Object.assign({ n: n }, v)); };
+    var local = o.local || 'pt-BR';
     var fila = filaVazia();
     var emVoo = false, temporizador = null, recuo = 0, pausaAte = 0, sessao = null, parado = false;
 
-    function hora() { return new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }); }
+    function hora() { return new Date().toLocaleTimeString(local, { hour: '2-digit', minute: '2-digit' }); }
     function salvarFila() { return TaioeArmazem.gravar('fila', chave, fila); }
     function pendentes() { return fila.eventos.length + (fila.retorno || []).length; }
 
     function contarEstado() {
       if (parado) return;
       var n = pendentes();
-      if (!n) { o.estado('Tudo salvo na sua conta às ' + hora() + '.', 'ok'); return; }
+      if (!n) { o.estado(t('sinc.tudoSalvo', { hora: hora() }), 'ok'); return; }
       var velho = fila.eventos.length && (Date.now() - Date.parse(fila.eventos[0].em)) > 3 * 864e5;
-      o.estado(n + (n === 1 ? ' resposta esperando' : ' respostas esperando') + ' para subir' +
-        (navigator.onLine === false ? ' (sem conexão)' : '') + '.' +
-        (velho ? ' Há respostas de mais de 3 dias neste aparelho: fique online para não perdê-las.' : ''),
+      o.estado(tn('sinc.esperando', n) +
+        (navigator.onLine === false ? t('sinc.semConexao') : '') + '.' +
+        (velho ? t('sinc.velho') : ''),
         velho ? 'erro' : '');
     }
 
@@ -205,8 +210,7 @@
     function avisarRelogio(servidorEm) {
       var dif = Math.abs(Date.now() - Date.parse(servidorEm));
       if (dif > 5 * 60000) {
-        o.estado('O relógio deste aparelho está ' + Math.round(dif / 60000) +
-          ' minutos fora da hora certa. Acerte-o para as datas de revisão saírem certas.', 'erro');
+        o.estado(t('sinc.relogio', { n: Math.round(dif / 60000) }), 'erro');
         parado = true;
         setTimeout(function () { parado = false; }, 60000);
       }
@@ -221,12 +225,12 @@
         var r = await sb.auth.refreshSession().catch(function () { return { error: true }; });
         if (r && !r.error && r.data && r.data.session) { agendar(500); return; }
         parado = true;
-        o.estado('Sua sessão terminou. Entre de novo para as respostas subirem (elas continuam guardadas aqui).', 'erro');
+        o.estado(t('sinc.sessao'), 'erro');
         return;
       }
       if (cod === 'PT403' || status === 403) {
         parado = true;
-        o.estado('Falta terminar o cadastro na sua conta.', 'erro');
+        o.estado(t('sinc.cadastro'), 'erro');
         TaioeSessao.irParaEntrar();
         return;
       }
@@ -245,7 +249,7 @@
       }
       if (cod === 'PT400' && /curso/i.test(erro && erro.message)) {
         parado = true;
-        o.estado('Este curso não está aberto no servidor. As respostas ficam guardadas aqui.', 'erro');
+        o.estado(t('sinc.cursoFechado'), 'erro');
         return;
       }
       if (cod === 'PT413' || status === 413) {
@@ -260,7 +264,7 @@
         var amanha = new Date();
         amanha.setUTCHours(24, 5, 0, 0);
         pausaAte = amanha.getTime();
-        o.estado('Você chegou ao limite de respostas por dia. As novas ficam guardadas aqui e sobem amanhã.', 'erro');
+        o.estado(t('sinc.limite'), 'erro');
         return;
       }
       if (lote && (status === 400 || cod === '22P02' || cod === '23514' || cod === 'PT400') &&

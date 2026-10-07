@@ -1,5 +1,10 @@
 /* GERADO POR fonte/build.js — não edite à mão. */
 window.TAGS_RAW = {
+ "Espanha": {
+  "en": "Spain",
+  "es": "España",
+  "cards": 22
+ },
  "adjetivo": {
   "en": "adjective",
   "es": "adjetivo",
@@ -20,6 +25,16 @@ window.TAGS_RAW = {
   "es": "animales",
   "cards": 8
  },
+ "bring": {
+  "en": "bring",
+  "es": "bring",
+  "cards": 0
+ },
+ "buy": {
+  "en": "buy",
+  "es": "buy",
+  "cards": 0
+ },
  "caber": {
   "en": "caber",
   "es": "caber",
@@ -34,6 +49,11 @@ window.TAGS_RAW = {
   "en": "home",
   "es": "casa",
   "cards": 24
+ },
+ "catch": {
+  "en": "catch",
+  "es": "catch",
+  "cards": 0
  },
  "cidade": {
   "en": "city",
@@ -105,6 +125,11 @@ window.TAGS_RAW = {
   "es": "dormir",
   "cards": 2
  },
+ "eat": {
+  "en": "eat",
+  "es": "eat",
+  "cards": 0
+ },
  "economia": {
   "en": "economy",
   "es": "economía",
@@ -129,11 +154,6 @@ window.TAGS_RAW = {
   "en": "office",
   "es": "oficina",
   "cards": 1
- },
- "Espanha": {
-  "en": "Spain",
-  "es": "España",
-  "cards": 22
  },
  "estar": {
   "en": "estar",
@@ -285,6 +305,11 @@ window.TAGS_RAW = {
   "es": "perder",
   "cards": 0
  },
+ "phrasal verb": {
+  "en": "phrasal verb",
+  "es": "phrasal verb",
+  "cards": 0
+ },
  "poder": {
   "en": "poder",
   "es": "poder",
@@ -299,6 +324,16 @@ window.TAGS_RAW = {
   "en": "poner",
   "es": "poner",
   "cards": 1
+ },
+ "preposição": {
+  "en": "preposition",
+  "es": "preposición",
+  "cards": 0
+ },
+ "present perfect": {
+  "en": "present perfect",
+  "es": "present perfect",
+  "cards": 0
  },
  "presente": {
   "en": "present",
@@ -405,10 +440,20 @@ window.TAGS_RAW = {
   "es": "sustantivo",
   "cards": 26
  },
+ "teach": {
+  "en": "teach",
+  "es": "teach",
+  "cards": 0
+ },
  "tecnologia": {
   "en": "technology",
   "es": "tecnología",
   "cards": 1
+ },
+ "tell": {
+  "en": "tell",
+  "es": "tell",
+  "cards": 0
  },
  "tener": {
   "en": "tener",
@@ -453,6 +498,759 @@ window.TAGS_RAW = {
  "vivir": {
   "en": "vivir",
   "es": "vivir",
+  "cards": 0
+ },
+ "go": {
+  "en": "go",
+  "es": "go",
+  "cards": 0
+ },
+ "take": {
+  "en": "take",
+  "es": "take",
+  "cards": 0
+ },
+ "give": {
+  "en": "give",
+  "es": "give",
+  "cards": 0
+ },
+ "make": {
+  "en": "make",
+  "es": "make",
+  "cards": 0
+ },
+ "come": {
+  "en": "come",
+  "es": "come",
+  "cards": 0
+ },
+ "see": {
+  "en": "see",
+  "es": "see",
+  "cards": 0
+ },
+ "know": {
+  "en": "know",
+  "es": "know",
+  "cards": 0
+ },
+ "think": {
+  "en": "think",
+  "es": "think",
+  "cards": 0
+ },
+ "find": {
+  "en": "find",
+  "es": "find",
+  "cards": 0
+ },
+ "leave": {
+  "en": "leave",
+  "es": "leave",
+  "cards": 0
+ },
+ "put": {
+  "en": "put",
+  "es": "put",
+  "cards": 0
+ },
+ "write": {
+  "en": "write",
+  "es": "write",
+  "cards": 0
+ },
+ "speak": {
+  "en": "speak",
+  "es": "speak",
+  "cards": 0
+ },
+ "break": {
+  "en": "break",
+  "es": "break",
+  "cards": 0
+ },
+ "drive": {
+  "en": "drive",
+  "es": "drive",
+  "cards": 0
+ },
+ "feel": {
+  "en": "feel",
+  "es": "feel",
+  "cards": 0
+ },
+ "lose": {
+  "en": "lose",
+  "es": "lose",
+  "cards": 0
+ },
+ "pay": {
+  "en": "pay",
+  "es": "pay",
+  "cards": 0
+ },
+ "understand": {
+  "en": "understand",
+  "es": "understand",
+  "cards": 0
+ },
+ "get": {
+  "en": "get",
+  "es": "get",
+  "cards": 0
+ },
+ "sit": {
+  "en": "sit",
+  "es": "sit",
+  "cards": 0
+ },
+ "stand": {
+  "en": "stand",
+  "es": "stand",
+  "cards": 0
+ },
+ "read": {
+  "en": "read",
+  "es": "read",
+  "cards": 0
+ },
+ "hear": {
+  "en": "hear",
+  "es": "hear",
+  "cards": 0
+ },
+ "meet": {
+  "en": "meet",
+  "es": "meet",
+  "cards": 0
+ },
+ "win": {
+  "en": "win",
+  "es": "win",
+  "cards": 0
+ },
+ "send": {
+  "en": "send",
+  "es": "send",
+  "cards": 0
+ },
+ "sell": {
+  "en": "sell",
+  "es": "sell",
+  "cards": 0
+ },
+ "spend": {
+  "en": "spend",
+  "es": "spend",
+  "cards": 0
+ },
+ "keep": {
+  "en": "keep",
+  "es": "keep",
+  "cards": 0
+ },
+ "hold": {
+  "en": "hold",
+  "es": "hold",
+  "cards": 0
+ },
+ "choose": {
+  "en": "choose",
+  "es": "choose",
+  "cards": 0
+ },
+ "grow": {
+  "en": "grow",
+  "es": "grow",
+  "cards": 0
+ },
+ "forget": {
+  "en": "forget",
+  "es": "forget",
+  "cards": 0
+ },
+ "fall": {
+  "en": "fall",
+  "es": "fall",
+  "cards": 0
+ },
+ "begin": {
+  "en": "begin",
+  "es": "begin",
+  "cards": 0
+ },
+ "build": {
+  "en": "build",
+  "es": "build",
+  "cards": 0
+ },
+ "sleep": {
+  "en": "sleep",
+  "es": "sleep",
+  "cards": 0
+ },
+ "cut": {
+  "en": "cut",
+  "es": "cut",
+  "cards": 0
+ },
+ "become": {
+  "en": "become",
+  "es": "become",
+  "cards": 0
+ },
+ "run": {
+  "en": "run",
+  "es": "run",
+  "cards": 0
+ },
+ "wear": {
+  "en": "wear",
+  "es": "wear",
+  "cards": 0
+ },
+ "throw": {
+  "en": "throw",
+  "es": "throw",
+  "cards": 0
+ },
+ "draw": {
+  "en": "draw",
+  "es": "draw",
+  "cards": 0
+ },
+ "ride": {
+  "en": "ride",
+  "es": "ride",
+  "cards": 0
+ },
+ "shake": {
+  "en": "shake",
+  "es": "shake",
+  "cards": 0
+ },
+ "steal": {
+  "en": "steal",
+  "es": "steal",
+  "cards": 0
+ },
+ "swim": {
+  "en": "swim",
+  "es": "swim",
+  "cards": 0
+ },
+ "tear": {
+  "en": "tear",
+  "es": "tear",
+  "cards": 0
+ },
+ "hide": {
+  "en": "hide",
+  "es": "hide",
+  "cards": 0
+ },
+ "mean": {
+  "en": "mean",
+  "es": "mean",
+  "cards": 0
+ },
+ "ring": {
+  "en": "ring",
+  "es": "ring",
+  "cards": 0
+ },
+ "sing": {
+  "en": "sing",
+  "es": "sing",
+  "cards": 0
+ },
+ "bite": {
+  "en": "bite",
+  "es": "bite",
+  "cards": 0
+ },
+ "hang": {
+  "en": "hang",
+  "es": "hang",
+  "cards": 0
+ },
+ "fight": {
+  "en": "fight",
+  "es": "fight",
+  "cards": 0
+ },
+ "fly": {
+  "en": "fly",
+  "es": "fly",
+  "cards": 0
+ },
+ "lead": {
+  "en": "lead",
+  "es": "lead",
+  "cards": 0
+ },
+ "forgive": {
+  "en": "forgive",
+  "es": "forgive",
+  "cards": 0
+ },
+ "freeze": {
+  "en": "freeze",
+  "es": "freeze",
+  "cards": 0
+ },
+ "drink": {
+  "en": "drink",
+  "es": "drink",
+  "cards": 0
+ },
+ "wake": {
+  "en": "wake",
+  "es": "wake",
+  "cards": 0
+ },
+ "blow": {
+  "en": "blow",
+  "es": "blow",
+  "cards": 0
+ },
+ "rise": {
+  "en": "rise",
+  "es": "rise",
+  "cards": 0
+ },
+ "shoot": {
+  "en": "shoot",
+  "es": "shoot",
+  "cards": 0
+ },
+ "strike": {
+  "en": "strike",
+  "es": "strike",
+  "cards": 0
+ },
+ "swear": {
+  "en": "swear",
+  "es": "swear",
+  "cards": 0
+ },
+ "dig": {
+  "en": "dig",
+  "es": "dig",
+  "cards": 0
+ },
+ "feed": {
+  "en": "feed",
+  "es": "feed",
+  "cards": 0
+ },
+ "seek": {
+  "en": "seek",
+  "es": "seek",
+  "cards": 0
+ },
+ "shine": {
+  "en": "shine",
+  "es": "shine",
+  "cards": 0
+ },
+ "sink": {
+  "en": "sink",
+  "es": "sink",
+  "cards": 0
+ },
+ "stick": {
+  "en": "stick",
+  "es": "stick",
+  "cards": 0
+ },
+ "sweep": {
+  "en": "sweep",
+  "es": "sweep",
+  "cards": 0
+ },
+ "spin": {
+  "en": "spin",
+  "es": "spin",
+  "cards": 0
+ },
+ "withdraw": {
+  "en": "withdraw",
+  "es": "withdraw",
+  "cards": 0
+ },
+ "bend": {
+  "en": "bend",
+  "es": "bend",
+  "cards": 0
+ },
+ "deal": {
+  "en": "deal",
+  "es": "deal",
+  "cards": 0
+ },
+ "overcome": {
+  "en": "overcome",
+  "es": "overcome",
+  "cards": 0
+ },
+ "mistake": {
+  "en": "mistake",
+  "es": "mistake",
+  "cards": 0
+ },
+ "light": {
+  "en": "light",
+  "es": "light",
+  "cards": 0
+ },
+ "slide": {
+  "en": "slide",
+  "es": "slide",
+  "cards": 0
+ },
+ "bleed": {
+  "en": "bleed",
+  "es": "bleed",
+  "cards": 0
+ },
+ "sting": {
+  "en": "sting",
+  "es": "sting",
+  "cards": 0
+ },
+ "swing": {
+  "en": "swing",
+  "es": "swing",
+  "cards": 0
+ },
+ "shrink": {
+  "en": "shrink",
+  "es": "shrink",
+  "cards": 0
+ },
+ "burn": {
+  "en": "burn",
+  "es": "burn",
+  "cards": 0
+ },
+ "smell": {
+  "en": "smell",
+  "es": "smell",
+  "cards": 0
+ },
+ "spell": {
+  "en": "spell",
+  "es": "spell",
+  "cards": 0
+ },
+ "lie": {
+  "en": "lie",
+  "es": "lie",
+  "cards": 0
+ },
+ "lay": {
+  "en": "lay",
+  "es": "lay",
+  "cards": 0
+ },
+ "creep": {
+  "en": "creep",
+  "es": "creep",
+  "cards": 0
+ },
+ "kneel": {
+  "en": "kneel",
+  "es": "kneel",
+  "cards": 0
+ },
+ "grind": {
+  "en": "grind",
+  "es": "grind",
+  "cards": 0
+ },
+ "flee": {
+  "en": "flee",
+  "es": "flee",
+  "cards": 0
+ },
+ "cling": {
+  "en": "cling",
+  "es": "cling",
+  "cards": 0
+ },
+ "weave": {
+  "en": "weave",
+  "es": "weave",
+  "cards": 0
+ },
+ "weep": {
+  "en": "weep",
+  "es": "weep",
+  "cards": 0
+ },
+ "arise": {
+  "en": "arise",
+  "es": "arise",
+  "cards": 0
+ },
+ "undergo": {
+  "en": "undergo",
+  "es": "undergo",
+  "cards": 0
+ },
+ "be": {
+  "en": "be",
+  "es": "be",
+  "cards": 0
+ },
+ "have": {
+  "en": "have",
+  "es": "have",
+  "cards": 0
+ },
+ "do": {
+  "en": "do",
+  "es": "do",
+  "cards": 0
+ },
+ "say": {
+  "en": "say",
+  "es": "say",
+  "cards": 0
+ },
+ "learn": {
+  "en": "learn",
+  "es": "learn",
+  "cards": 0
+ },
+ "stink": {
+  "en": "stink",
+  "es": "stink",
+  "cards": 0
+ },
+ "dream": {
+  "en": "dream",
+  "es": "dream",
+  "cards": 0
+ },
+ "oversleep": {
+  "en": "oversleep",
+  "es": "oversleep",
+  "cards": 0
+ },
+ "misunderstand": {
+  "en": "misunderstand",
+  "es": "misunderstand",
+  "cards": 0
+ },
+ "swell": {
+  "en": "swell",
+  "es": "swell",
+  "cards": 0
+ },
+ "lean": {
+  "en": "lean",
+  "es": "lean",
+  "cards": 0
+ },
+ "sew": {
+  "en": "sew",
+  "es": "sew",
+  "cards": 0
+ },
+ "lend": {
+  "en": "lend",
+  "es": "lend",
+  "cards": 0
+ },
+ "watch": {
+  "en": "watch",
+  "es": "watch",
+  "cards": 0
+ },
+ "leap": {
+  "en": "leap",
+  "es": "leap",
+  "cards": 0
+ },
+ "wind": {
+  "en": "wind",
+  "es": "wind",
+  "cards": 0
+ },
+ "forbid": {
+  "en": "forbid",
+  "es": "forbid",
+  "cards": 0
+ },
+ "mislead": {
+  "en": "mislead",
+  "es": "mislead",
+  "cards": 0
+ },
+ "speed": {
+  "en": "speed",
+  "es": "speed",
+  "cards": 0
+ },
+ "rewrite": {
+  "en": "rewrite",
+  "es": "rewrite",
+  "cards": 0
+ },
+ "awake": {
+  "en": "awake",
+  "es": "awake",
+  "cards": 0
+ },
+ "spit": {
+  "en": "spit",
+  "es": "spit",
+  "cards": 0
+ },
+ "overtake": {
+  "en": "overtake",
+  "es": "overtake",
+  "cards": 0
+ },
+ "outgrow": {
+  "en": "outgrow",
+  "es": "outgrow",
+  "cards": 0
+ },
+ "breed": {
+  "en": "breed",
+  "es": "breed",
+  "cards": 0
+ },
+ "oversee": {
+  "en": "oversee",
+  "es": "oversee",
+  "cards": 0
+ },
+ "withstand": {
+  "en": "withstand",
+  "es": "withstand",
+  "cards": 0
+ },
+ "undertake": {
+  "en": "undertake",
+  "es": "undertake",
+  "cards": 0
+ },
+ "interview": {
+  "en": "interview",
+  "es": "interview",
+  "cards": 0
+ },
+ "travel": {
+  "en": "travel",
+  "es": "travel",
+  "cards": 0
+ },
+ "call": {
+  "en": "call",
+  "es": "call",
+  "cards": 0
+ },
+ "live": {
+  "en": "live",
+  "es": "live",
+  "cards": 0
+ },
+ "work": {
+  "en": "work",
+  "es": "work",
+  "cards": 0
+ },
+ "rain": {
+  "en": "rain",
+  "es": "rain",
+  "cards": 0
+ },
+ "wait": {
+  "en": "wait",
+  "es": "wait",
+  "cards": 0
+ },
+ "ask": {
+  "en": "ask",
+  "es": "ask",
+  "cards": 0
+ },
+ "walk": {
+  "en": "walk",
+  "es": "walk",
+  "cards": 0
+ },
+ "like": {
+  "en": "like",
+  "es": "like",
+  "cards": 0
+ },
+ "worry": {
+  "en": "worry",
+  "es": "worry",
+  "cards": 0
+ },
+ "start": {
+  "en": "start",
+  "es": "start",
+  "cards": 0
+ },
+ "condicional composto": {
+  "en": "perfect conditional",
+  "es": "condicional compuesto",
+  "cards": 0
+ },
+ "natureza": {
+  "en": "nature",
+  "es": "naturaleza",
+  "cards": 0
+ },
+ "compras": {
+  "en": "shopping",
+  "es": "compras",
+  "cards": 0
+ },
+ "paint": {
+  "en": "paint",
+  "es": "paint",
+  "cards": 0
+ },
+ "volver": {
+  "en": "volver",
+  "es": "volver"
+ },
+ "escribir": {
+  "en": "escribir",
+  "es": "escribir"
+ },
+ "abrir": {
+  "en": "abrir",
+  "es": "abrir"
+ },
+ "hablar": {
+  "en": "hablar",
+  "es": "hablar"
+ },
+ "comer": {
+  "en": "comer",
+  "es": "comer"
+ },
+ "encantar": {
+  "en": "encantar",
+  "es": "encantar"
+ },
+ "llamar": {
+  "en": "llamar",
+  "es": "llamar"
+ },
+ "primeiros passos": {
+  "en": "first steps",
+  "es": "primeros pasos",
   "cards": 0
  }
 };

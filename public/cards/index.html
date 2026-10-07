@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#12141c">
 <title>Taioé Cards</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇪🇸</text></svg>">
-<link rel="stylesheet" href="style.css?v=3c2c0c13">
+<link rel="stylesheet" href="style.css?v=cf810223">
 </head>
 <body>
 
 <header class="topo">
-  <a class="marca" href="/" title="Início da Taioé">Taioé <span>Cards</span></a>
+  <a class="marca" href="/" title="Taioé" data-i18n-attr="title:topo.marca">Taioé <span>Cards</span></a>
   <div class="placar" id="placar"></div>
   <!-- Ícones de traço, herdando a cor da paleta: emoji trazem cor própria e
        brigavam com o verde-noite. O de «todos os cards» é a própria pilha. -->
   <nav class="acoes-topo">
-    <button class="icone" id="btn-inicio" title="Página inicial" aria-label="Página inicial">
+    <button class="icone" id="btn-inicio" data-i18n-attr="title:topo.inicio;aria-label:topo.inicio">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M3.6 10.7 12 4.2l8.4 6.5"/>
         <path d="M6.2 9.6V19.8h11.6V9.6"/>
         <path d="M10 19.8v-4.6h4v4.6"/>
       </svg>
     </button>
-    <button class="icone" id="btn-painel" title="Estatísticas" aria-label="Estatísticas">
+    <button class="icone" id="btn-painel" data-i18n-attr="title:topo.painel;aria-label:topo.painel">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M3.6 17.6h16.8"/>
         <path d="M7.4 17.6v-5.6"/>
@@ -32,20 +32,20 @@
         <path d="M16.6 17.6v-8.2"/>
       </svg>
     </button>
-    <button class="icone" id="btn-cards" title="Todos os cards" aria-label="Todos os cards">
+    <button class="icone" id="btn-cards" data-i18n-attr="title:topo.cards;aria-label:topo.cards">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <rect x="8.2" y="3.4" width="12.4" height="12.4" rx="2.4"/>
         <path d="M15.8 20.6H5.8a2.4 2.4 0 0 1-2.4-2.4V8.2"/>
       </svg>
     </button>
-    <button class="icone" id="btn-texto" title="Textos" aria-label="Textos">
+    <button class="icone" id="btn-texto" data-i18n-attr="title:topo.textos;aria-label:topo.textos">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M12 6.4C9.8 4.9 6.9 4.6 4 5v13c2.9-.4 5.8-.1 8 1.4"/>
         <path d="M12 6.4c2.2-1.5 5.1-1.8 8-1.4v13c-2.9-.4-5.8-.1-8 1.4"/>
         <path d="M12 6.4v13"/>
       </svg>
     </button>
-    <button class="icone" id="btn-config" title="Configurações" aria-label="Configurações">
+    <button class="icone" id="btn-config" data-i18n-attr="title:topo.config;aria-label:topo.config">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M4 7.2h16"/><path d="M4 12h16"/><path d="M4 16.8h16"/>
         <circle cx="9.2" cy="7.2" r="2.3"/>
@@ -61,35 +61,35 @@
   <!-- ══════════ PORTA: enquanto a conta e o curso abrem ══════════ -->
   <section id="tela-porta" class="tela">
     <div class="bloco-inicio">
-      <p class="sub" id="porta-texto">Abrindo sua conta…</p>
-      <noscript><p class="sub">Os Cards precisam de JavaScript.</p></noscript>
+      <p class="sub" id="porta-texto" data-i18n="porta.abrindoConta"></p>
+      <noscript><p class="sub" lang="pt-BR">Os Cards precisam de JavaScript.</p><p class="sub" lang="es">Taioé Cards necesita JavaScript.</p><p class="sub" lang="en">Taioé Cards needs JavaScript.</p></noscript>
     </div>
   </section>
 
-  <!-- ══════════ ESCOLHA DO CURSO (só na primeira vez) ══════════ -->
+  <!-- ══════════ ESCOLHA DO CURSO (na primeira vez, e ao trocar de língua) ══════════ -->
   <section id="tela-escolha" class="tela oculto">
     <div class="bloco-inicio">
-      <h1>O que você quer estudar?</h1>
-      <p class="sub">Os dois cursos são respondidos em português. Dá para trocar depois, nas configurações, sem perder nada.</p>
-      <div class="escolha-curso">
-        <button class="curso" data-curso="es-pt">
-          <svg class="curso-bandeira" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#c60b1e"/><rect y="5" width="30" height="10" fill="#ffc400"/></svg>
-          <span class="curso-nome">Espanhol</span>
-        </button>
-        <button class="curso" data-curso="en-pt">
-          <svg class="curso-bandeira" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#b22234"/><rect y="1.538" width="30" height="1.538" fill="#fff"/><rect y="4.615" width="30" height="1.538" fill="#fff"/><rect y="7.692" width="30" height="1.538" fill="#fff"/><rect y="10.769" width="30" height="1.538" fill="#fff"/><rect y="13.846" width="30" height="1.538" fill="#fff"/><rect y="16.923" width="30" height="1.538" fill="#fff"/><rect width="13" height="10.769" fill="#3c3b6e"/><circle cx="1.6" cy="1.4" r="0.45" fill="#fff"/><circle cx="4.0" cy="1.4" r="0.45" fill="#fff"/><circle cx="6.4" cy="1.4" r="0.45" fill="#fff"/><circle cx="8.8" cy="1.4" r="0.45" fill="#fff"/><circle cx="11.2" cy="1.4" r="0.45" fill="#fff"/><circle cx="2.8" cy="3.3" r="0.45" fill="#fff"/><circle cx="5.2" cy="3.3" r="0.45" fill="#fff"/><circle cx="7.6" cy="3.3" r="0.45" fill="#fff"/><circle cx="10.0" cy="3.3" r="0.45" fill="#fff"/><circle cx="1.6" cy="5.2" r="0.45" fill="#fff"/><circle cx="4.0" cy="5.2" r="0.45" fill="#fff"/><circle cx="6.4" cy="5.2" r="0.45" fill="#fff"/><circle cx="8.8" cy="5.2" r="0.45" fill="#fff"/><circle cx="11.2" cy="5.2" r="0.45" fill="#fff"/><circle cx="2.8" cy="7.1" r="0.45" fill="#fff"/><circle cx="5.2" cy="7.1" r="0.45" fill="#fff"/><circle cx="7.6" cy="7.1" r="0.45" fill="#fff"/><circle cx="10.0" cy="7.1" r="0.45" fill="#fff"/><circle cx="1.6" cy="9.0" r="0.45" fill="#fff"/><circle cx="4.0" cy="9.0" r="0.45" fill="#fff"/><circle cx="6.4" cy="9.0" r="0.45" fill="#fff"/><circle cx="8.8" cy="9.0" r="0.45" fill="#fff"/><circle cx="11.2" cy="9.0" r="0.45" fill="#fff"/></svg>
-          <span class="curso-nome">Inglês</span>
-        </button>
-      </div>
+      <h1 data-i18n="escolha.titulo"></h1>
+      <p class="sub" data-i18n="escolha.apoio"></p>
+      <div class="escolha-curso" id="escolha-cursos"></div>
+      <p class="sub oculto" id="escolha-nenhum" data-i18n="escolha.nenhum"></p>
+      <p class="linha-manter"><button class="secundario oculto" id="btn-escolha-manter"></button></p>
+      <label class="seletor-lingua"><span data-i18n="escolha.lingua"></span>
+        <select id="escolha-lingua">
+          <option value="pt" lang="pt-BR">Português</option>
+          <option value="es" lang="es">Español</option>
+          <option value="en" lang="en">English</option>
+        </select>
+      </label>
     </div>
   </section>
 
   <!-- ══════════ INÍCIO ══════════ -->
   <section id="tela-inicio" class="tela oculto">
     <div class="bloco-inicio">
-      <h1>Pronto para estudar?</h1>
+      <h1 data-i18n="inicio.titulo"></h1>
       <p class="sub" id="resumo-inicio"></p>
-      <button class="primario grande" id="btn-comecar">Próximo card</button>
+      <button class="primario grande" id="btn-comecar" data-i18n="inicio.proximo"></button>
     </div>
   </section>
 
@@ -97,43 +97,43 @@
   <section id="tela-card" class="tela oculto">
     <div class="fichario">
     <div class="card">
-      <span class="aba" id="aba-nivel">A1</span>
+      <span class="aba" id="aba-nivel"></span>
       <div class="card-meta">
-        <span class="etiqueta" id="meta-tipo">palavra</span>
-        <span class="etiqueta suave" id="meta-modo">múltipla escolha</span>
+        <span class="etiqueta" id="meta-tipo"></span>
+        <span class="etiqueta suave" id="meta-modo"></span>
         <!-- só nas frases presas a uma palavra: diz qual foi -->
         <span class="etiqueta origem oculto" id="meta-origem"></span>
       </div>
 
       <!-- Este bloco gruda ao rolar: ver .pergunta-fixa no style.css -->
       <div class="pergunta-fixa">
-        <p class="enunciado" id="enunciado">O que significa em português?</p>
+        <p class="enunciado" id="enunciado"></p>
         <div class="termo-linha">
-          <span class="bandeira" id="bandeira-pergunta" title="idioma da pergunta">🇪🇸</span>
+          <span class="bandeira" id="bandeira-pergunta" data-i18n-attr="title:card.bandeiraPergunta">🇪🇸</span>
           <div class="termo" id="termo"></div>
         </div>
       </div>
 
       <p class="rotulo-resposta">
-        <span class="bandeira" id="bandeira-resposta" title="idioma da resposta">🇧🇷</span>
-        <span id="rotulo-resposta-txt">responda em português</span>
+        <span class="bandeira" id="bandeira-resposta" data-i18n-attr="title:card.bandeiraResposta">🇧🇷</span>
+        <span id="rotulo-resposta-txt"></span>
       </p>
 
       <!-- múltipla escolha -->
       <div id="area-multipla" class="alternativas"></div>
       <!-- não saber também é resposta, e conta como erro sem chute -->
       <div id="area-nao-sei-multipla" class="linha-botoes oculto">
-        <button class="secundario" id="btn-nao-sei-multipla">Não sei</button>
+        <button class="secundario" id="btn-nao-sei-multipla" data-i18n="card.naoSei"></button>
       </div>
 
       <!-- escrita -->
       <div id="area-escrita" class="oculto">
         <textarea id="entrada" rows="1" autocomplete="off" autocorrect="off"
                autocapitalize="off" spellcheck="false" maxlength="120"
-               placeholder="escreva o significado…"></textarea>
+               placeholder=""></textarea>
         <div class="linha-botoes">
-          <button class="primario" id="btn-responder">Responder</button>
-          <button class="secundario" id="btn-nao-sei">Não sei</button>
+          <button class="primario" id="btn-responder" data-i18n="card.responder"></button>
+          <button class="secundario" id="btn-nao-sei" data-i18n="card.naoSei"></button>
         </div>
         <!-- respondeu em espanhol: avisa e devolve a vez, sem contar erro -->
         <p id="aviso-lingua" class="aviso-lingua oculto" role="status"></p>
@@ -141,7 +141,7 @@
 
       <!-- não aprender: em destaque na estreia, discreto depois -->
       <p class="linha-arquivar">
-        <button class="link-arquivar" id="btn-arquivar">Já conheço essa palavra</button>
+        <button class="link-arquivar" id="btn-arquivar"></button>
       </p>
 
       <!-- feedback -->
@@ -153,19 +153,19 @@
         <!-- acertou com a palavra de outro lugar: vale, e diz de onde ela é -->
         <p id="aviso-regiao" class="aviso-regiao oculto"></p>
         <div class="resposta-dada oculto" id="resposta-dada">
-          <span class="rotulo">Você escreveu</span>
+          <span class="rotulo" data-i18n="card.voceEscreveu"></span>
           <strong id="texto-dado"></strong>
         </div>
         <div class="resposta-certa" id="caixa-resposta">
-          <span class="rotulo"><span id="bandeira-feedback">🇧🇷</span> Resposta</span>
+          <span class="rotulo"><span id="bandeira-feedback">🇧🇷</span> <span data-i18n="card.resposta"></span></span>
           <strong id="resposta-certa"></strong>
         </div>
 
         <div id="area-julgamento" class="julgamento oculto">
-          <p class="pergunta-julgamento">Não foi exatamente isso. Você considera que acertou?</p>
+          <p class="pergunta-julgamento" data-i18n="card.julgamento"></p>
           <div class="linha-botoes">
-            <button class="opcao-julgamento acertei" data-julgamento="certo">Acertei</button>
-            <button class="opcao-julgamento errei" data-julgamento="errado">Errei</button>
+            <button class="opcao-julgamento acertei" data-julgamento="certo" data-i18n="card.acertei"></button>
+            <button class="opcao-julgamento errei" data-julgamento="errado" data-i18n="card.errei"></button>
           </div>
         </div>
         <p class="nota" id="nota"></p>
@@ -173,20 +173,16 @@
 
 
         <div id="area-contestar" class="contestar oculto">
-          <button class="link-contestar" id="btn-contestar">
-            Acho que essa resposta deveria ser aceita
-          </button>
-          <p class="aviso-contestado oculto" id="aviso-contestado">
-            Anotado. Vou trazer este caso quando formos atualizar o app.
-          </p>
+          <button class="link-contestar" id="btn-contestar" data-i18n="card.contestar"></button>
+          <p class="aviso-contestado oculto" id="aviso-contestado" data-i18n="card.contestado"></p>
         </div>
 
         <!-- vale para qualquer card, tendo acertado ou não -->
         <p class="linha-comentar">
-          <button class="link-comentar" id="btn-comentar-card">Comentar este card</button>
+          <button class="link-comentar" id="btn-comentar-card" data-i18n="card.comentar"></button>
         </p>
 
-        <button class="primario grande" id="btn-proximo">Próximo card</button>
+        <button class="primario grande" id="btn-proximo" data-i18n="inicio.proximo"></button>
       </div>
     </div>
     </div>
@@ -194,35 +190,35 @@
 
   <!-- ══════════ TODOS OS CARDS ══════════ -->
   <section id="tela-cards" class="tela oculto">
-    <h2>Todos os cards</h2>
+    <h2 data-i18n="cards.titulo"></h2>
 
     <div class="filtros">
       <input type="search" id="busca-cards" autocomplete="off"
-             placeholder="buscar…">
+             placeholder="">
       <div class="linha-filtros">
-        <label class="filtro">Tipo
+        <label class="filtro"><span data-i18n="cards.tipo"></span>
           <select id="filtro-tipo">
-            <option value="">todos</option>
-            <option value="palavra">palavras</option>
-            <option value="frase">frases</option>
+            <option value="" data-i18n="cards.todos"></option>
+            <option value="palavra" data-i18n="cards.palavras"></option>
+            <option value="frase" data-i18n="cards.frases"></option>
           </select>
         </label>
-        <label class="filtro">Nível
-          <select id="filtro-nivel"><option value="">todos</option></select>
+        <label class="filtro"><span data-i18n="cards.nivel"></span>
+          <select id="filtro-nivel"><option value="" data-i18n="cards.todos"></option></select>
         </label>
-        <label class="filtro">Tema
-          <select id="filtro-tag"><option value="">todos</option></select>
+        <label class="filtro"><span data-i18n="cards.tema"></span>
+          <select id="filtro-tag"><option value="" data-i18n="cards.todos"></option></select>
         </label>
-        <label class="filtro">Situação
+        <label class="filtro"><span data-i18n="cards.situacao"></span>
           <select id="filtro-estado">
-            <option value="">todas</option>
-            <option value="novo">ainda não apareceu</option>
-            <option value="preso">presos a uma palavra</option>
-            <option value="andamento">em andamento</option>
-            <option value="invertido">já na volta</option>
-            <option value="dominado">dominado</option>
-            <option value="errei">já errei alguma vez</option>
-            <option value="arquivado">arquivados</option>
+            <option value="" data-i18n="cards.todas"></option>
+            <option value="novo" data-i18n="cards.fNovo"></option>
+            <option value="preso" data-i18n="cards.fPreso"></option>
+            <option value="andamento" data-i18n="cards.fAndamento"></option>
+            <option value="invertido"></option>
+            <option value="dominado" data-i18n="cards.fDominado"></option>
+            <option value="errei" data-i18n="cards.fErrei"></option>
+            <option value="arquivado" data-i18n="cards.fArquivado"></option>
           </select>
         </label>
       </div>
@@ -230,63 +226,73 @@
     </div>
 
     <div id="lista-cards" class="lista-cards"></div>
-    <button class="secundario" data-voltar>Voltar</button>
+    <button class="secundario" data-voltar data-i18n="comum.voltar"></button>
   </section>
 
   <!-- ══════════ PAINEL ══════════ -->
   <section id="tela-painel" class="tela oculto">
-    <h2>Como você está indo</h2>
+    <h2 data-i18n="painel.titulo"></h2>
     <div id="painel-conteudo"></div>
     <div id="dica" class="dica" role="status" hidden></div>
-    <button class="secundario" data-voltar>Voltar</button>
+    <button class="secundario" data-voltar data-i18n="comum.voltar"></button>
   </section>
 
   <!-- ══════════ TEXTOS (TRILHAS) ══════════ -->
   <section id="tela-texto" class="tela oculto">
-    <h2>Textos</h2>
+    <h2 data-i18n="texto.titulo"></h2>
     <div id="texto-conteudo"></div>
-    <button class="secundario" data-voltar>Voltar</button>
+    <button class="secundario" data-voltar data-i18n="comum.voltar"></button>
   </section>
 
   <!-- ══════════ CONFIGURAÇÕES ══════════ -->
   <section id="tela-config" class="tela oculto">
-    <h2>Configurações</h2>
+    <h2 data-i18n="config.titulo"></h2>
 
     <div class="grupo">
-      <h3>Sua conta</h3>
+      <h3 data-i18n="config.conta"></h3>
       <p class="ajuda" id="cfg-conta"></p>
       <p class="estado-sync" id="estado-sync"></p>
       <div class="linha-botoes">
-        <button class="secundario" id="btn-conta">Minha conta</button>
-        <button class="secundario" id="btn-sair">Sair</button>
+        <button class="secundario" id="btn-conta" data-i18n="config.minhaConta"></button>
+        <button class="secundario" id="btn-sair" data-i18n="config.sair"></button>
       </div>
     </div>
 
     <div class="grupo">
-      <h3>Curso</h3>
+      <h3 data-i18n="config.curso"></h3>
       <p class="ajuda" id="cfg-curso"></p>
-      <button class="secundario" id="btn-trocar-curso">Trocar de curso</button>
+      <div class="linha-botoes" id="cfg-outros-cursos"></div>
     </div>
 
     <div class="grupo">
-      <h3>Cópia do progresso</h3>
-      <p class="ajuda">Um arquivo com o progresso deste curso, para guardar. Todos os dados da conta saem em Minha conta.</p>
-      <button class="secundario" id="btn-exportar">Exportar arquivo</button>
+      <h3 id="cfg-lingua-titulo" data-i18n="config.lingua"></h3>
+      <p class="ajuda" data-i18n="config.linguaAjuda"></p>
+      <select id="cfg-lingua" class="seletor-lingua" aria-labelledby="cfg-lingua-titulo">
+        <option value="pt" lang="pt-BR">Português</option>
+        <option value="es" lang="es">Español</option>
+        <option value="en" lang="en">English</option>
+      </select>
     </div>
 
     <div class="grupo">
-      <h3>Seus comentários</h3>
-      <p class="ajuda">Os comentários e as contestações que você enviou, com o retorno da curadoria.</p>
+      <h3 data-i18n="config.copia"></h3>
+      <p class="ajuda" data-i18n="config.copiaAjuda"></p>
+      <button class="secundario" id="btn-exportar" data-i18n="config.exportar"></button>
+    </div>
+
+    <div class="grupo">
+      <h3 data-i18n="config.comentarios"></h3>
+      <p class="ajuda" data-i18n="config.comentariosAjuda"></p>
       <div id="cfg-comentarios" class="meus-comentarios"></div>
     </div>
 
     <div class="grupo perigo">
-      <h3>Este aparelho</h3>
-      <p class="ajuda">Apaga a cópia deste curso guardada neste navegador. O que já subiu continua na sua conta e volta na próxima abertura.</p>
-      <button class="secundario" id="btn-zerar">Apagar a cópia deste aparelho</button>
+      <h3 data-i18n="config.aparelho"></h3>
+      <p class="ajuda" data-i18n="config.aparelhoAjuda"></p>
+      <button class="secundario" id="btn-zerar" data-i18n="config.zerar"></button>
     </div>
 
-    <button class="secundario" data-voltar>Voltar</button>
+    <button class="secundario" data-voltar data-i18n="comum.voltar"></button>
   </section>
 
 </main>
@@ -295,14 +301,14 @@
      que as duas portas de entrada abrem apontando para um id. -->
 <div class="comentario-fundo oculto" id="comentario-fundo">
   <div class="comentario-painel" role="dialog" aria-modal="true" aria-labelledby="comentario-titulo">
-    <h3 id="comentario-titulo">Comentar o card</h3>
+    <h3 id="comentario-titulo" data-i18n="comentario.titulo"></h3>
     <p class="comentario-alvo" id="comentario-alvo"></p>
     <textarea id="comentario-texto" rows="4" maxlength="500"
-              placeholder="o que você notou neste card…"></textarea>
-    <p class="comentario-conta"><span id="comentario-restam">500</span> caracteres restantes</p>
+              data-i18n-attr="placeholder:comentario.placeholder"></textarea>
+    <p class="comentario-conta"><span id="comentario-restam">500</span> <span data-i18n="comentario.restantes"></span></p>
     <div class="linha-botoes">
-      <button class="primario" id="btn-comentario-enviar">Enviar</button>
-      <button class="secundario" id="btn-comentario-fechar">Cancelar</button>
+      <button class="primario" id="btn-comentario-enviar" data-i18n="comentario.enviar"></button>
+      <button class="secundario" id="btn-comentario-fechar" data-i18n="comentario.cancelar"></button>
     </div>
   </div>
 </div>
@@ -311,13 +317,16 @@
   <span id="rodape-sync">•</span>
 </footer>
 
+<script src="js/textos-i18n.js?v=2dd6f542"></script>
+<script src="js/i18n.js?v=a99747e0"></script>
 <script src="vendor/supabase-js-2.117.2.js?v=16aeff36"></script>
 <script src="js/taioe-sessao.js?v=c04dd1f9"></script>
-<script src="js/versoes.js?v=7098781c"></script>
+<script src="js/versoes.js?v=a2ac0b4f"></script>
+<script src="data/tags.js?v=8e79eb74"></script>
 <script src="js/motor.js?v=e6885f31"></script>
 <script src="js/armazem.js?v=131120d0"></script>
-<script src="js/sincronia.js?v=a8e86be8"></script>
-<script src="js/app.js?v=aed57622"></script>
-<script src="js/inicio.js?v=1b8bacbe"></script>
+<script src="js/sincronia.js?v=bfd1ddb0"></script>
+<script src="js/app.js?v=c1bede0f"></script>
+<script src="js/inicio.js?v=f9d649dc"></script>
 </body>
 </html>

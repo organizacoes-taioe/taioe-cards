@@ -823,6 +823,21 @@ for (const { idioma, cards } of baralhos) {
   }
 }
 
+/* ── os temas, traduzidos ──
+   A lista de cards e o filtro de tema mostram o nome do tema na língua da
+   interface (07/10/2026): data/tags.js leva, de cada tema, só o «es» e o
+   «en» (o nome em português é a própria chave). O de data/ na raiz, com a
+   contagem, é o das páginas de revisão. */
+if (TAGS) {
+  const doApp = {};
+  Object.keys(TAGS).sort().forEach(k => { doApp[k] = { es: TAGS[k].es || k, en: TAGS[k].en || k }; });
+  const cabeca = '/* GERADO POR fonte/build.js — não edite à mão. */\n';
+  fs.writeFileSync(path.join(dataPublica, 'tags.js'),
+    cabeca + 'window.TAGS_RAW = ' + JSON.stringify(doApp) + ';\n', 'utf8');
+  fs.writeFileSync(path.join(raiz, 'data', 'tags.js'),
+    cabeca + 'window.TAGS_RAW = ' + JSON.stringify(TAGS, null, 1) + ';\n', 'utf8');
+}
+
 /* O motor do app é o mesmo das ferramentas: uma cópia byte a byte, conferida no
    CI (workflow Cópias). */
 fs.copyFileSync(arqMotor, path.join(pastaPublica, 'js', 'motor.js'));
