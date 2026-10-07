@@ -2,7 +2,7 @@
  "versao": 1,
  "idioma": "pt",
  "gerado_em": "2026-10-07",
- "total": 401,
+ "total": 494,
  "cards": [
   {
    "idioma": "pt",
@@ -3124,8 +3124,7 @@
    "tipo": "palavra",
    "pt": "falar",
    "aceitas": [
-    "falar",
-    "conversar"
+    "falar"
    ],
    "es": "hablar",
    "aceitasEs": [
@@ -3945,9 +3944,7 @@
    "tipo": "palavra",
    "pt": "o trabalho",
    "aceitas": [
-    "trabalho",
-    "o emprego",
-    "emprego"
+    "trabalho"
    ],
    "es": "el trabajo",
    "aceitasEs": [
@@ -5140,8 +5137,7 @@
    "tipo": "palavra",
    "pt": "beber",
    "aceitas": [
-    "beber",
-    "tomar"
+    "beber"
    ],
    "es": "beber",
    "aceitasEs": [
@@ -5222,8 +5218,7 @@
    "pt": "pegar",
    "aceitas": [
     "pegar",
-    "agarrar",
-    "tomar"
+    "agarrar"
    ],
    "regionais": {
     "apanhar": "em Portugal"
@@ -6298,7 +6293,7 @@
    "notaEn": "Portuguese says be with for feelings and needs: «estou com pressa», «estou com fome», «estou com frio». Literally, I am with hurry.",
    "requerTodas": [
     "pt-p002",
-    "+a pressa"
+    "pt-p122"
    ]
   },
   {
@@ -6439,7 +6434,7 @@
    "requerTodas": [
     "pt-p069",
     "pt-p002",
-    "+frio"
+    "pt-p123"
    ]
   },
   {
@@ -6758,7 +6753,7 @@
    "notaEn": "«Ter» has an irregular preterite: «tive», «teve», «tivemos», «tiveram». «Tinha» (imperfect) would be an ongoing problem; English had covers both.",
    "requerTodas": [
     "pt-p003",
-    "+o problema",
+    "pt-p108",
     "pt-p049"
    ]
   },
@@ -7006,7 +7001,7 @@
     "pt-p046",
     "pt-p004",
     "pt-p006",
-    "+o frio"
+    "pt-p124"
    ]
   },
   {
@@ -7125,7 +7120,7 @@
    "notaEn": "«Fazer» has an irregular preterite: «fiz» (I did), «fez» (she did). «O jantar» is dinner; «o almoço», lunch.",
    "requerTodas": [
     "pt-p004",
-    "+o jantar"
+    "pt-p125"
    ]
   },
   {
@@ -7193,7 +7188,7 @@
    "notaEn": "«Farei» is the simple future of «fazer», irregular (fa-, not faze-). In conversation people say «vou fazer»; «farei» sounds formal, written or official.",
    "requerTodas": [
     "pt-p004",
-    "+possível"
+    "pt-p126"
    ]
   },
   {
@@ -7292,7 +7287,7 @@
    "notaEn": "The everyday future is «ir» + infinitive, with nothing in between: «vai chover», it's going to rain. «Choverá» (it will rain) sounds like a weather report.",
    "requerTodas": [
     "pt-p005",
-    "+chover",
+    "pt-p102",
     "pt-p077"
    ]
   },
@@ -7411,7 +7406,7 @@
    "notaEn": "«Fui» is the past of both «ir» (to go) and «ser» (to be); context tells them apart. «Ao» is «a» (to) + «o» (the).",
    "requerTodas": [
     "pt-p005",
-    "+o cinema",
+    "pt-p109",
     "pt-p075"
    ]
   },
@@ -7612,7 +7607,7 @@
    "notaEn": "Polite requests just use «pode» (can): «pode me ajudar?». Brazil puts the pronoun before the verb; Portugal after it, with a hyphen: «pode ajudar-me?».",
    "requerTodas": [
     "pt-p007",
-    "+ajudar"
+    "pt-p127"
    ]
   },
   {
@@ -7660,7 +7655,7 @@
    "notaEn": "«Posso?» (can I?) is the all-purpose way to ask permission: «posso entrar?», «posso sentar aqui?» (may I sit here?).",
    "requerTodas": [
     "pt-p007",
-    "+entrar"
+    "pt-p128"
    ]
   },
   {
@@ -7824,7 +7819,7 @@
    "requerTodas": [
     "pt-p021",
     "pt-p008",
-    "+o café"
+    "pt-p101"
    ]
   },
   {
@@ -7873,7 +7868,7 @@
    "requerTodas": [
     "pt-p001",
     "pt-p008",
-    "+alto"
+    "pt-p129"
    ]
   },
   {
@@ -8343,7 +8338,7 @@
    "requerTodas": [
     "pt-p034",
     "pt-p010",
-    "+a verdade"
+    "pt-p130"
    ]
   },
   {
@@ -8501,7 +8496,7 @@
    "notaEn": "Next year is «o ano que vem», the year that comes, or «o próximo ano». Time expressions take «em» + article: «no ano que vem».",
    "requerTodas": [
     "pt-p005",
-    "+viajar",
+    "pt-p131",
     "pt-p012",
     "pt-p029"
    ]
@@ -8547,7 +8542,7 @@
    "notaEs": "Igual que en español, pero sin ñ: «ano». La fiesta del 31 de diciembre es «o Réveillon» en Brasil, y se pasa vestido de blanco.",
    "notaEn": "The New Year's Eve party in Brazil is «o Réveillon», and tradition says to wear white. «Novo» (new) goes after the noun, as most adjectives do.",
    "requerTodas": [
-    "+feliz",
+    "pt-p110",
     "pt-p012",
     "pt-p038"
    ]
@@ -8639,10 +8634,10 @@
    "notaEs": "Delante de adjetivo, «bem» es «muy»: «bem quente», muy caliente, como el «bien caliente» de América.",
    "notaEn": "Before an adjective, «bem» means really, very: «bem quente», really hot. It's as common as «muito».",
    "requerTodas": [
-    "+o café",
+    "pt-p101",
     "pt-p002",
     "pt-p013",
-    "+quente"
+    "pt-p132"
    ]
   },
   {
@@ -8700,7 +8695,7 @@
    "notaEn": "Asking with «me dá…?» (give me…?) is normal and polite enough in Brazil, especially with «por favor». «Um copo de água» is a glass of water.",
    "requerTodas": [
     "pt-p014",
-    "+o copo",
+    "pt-p111",
     "pt-p069"
    ]
   },
@@ -8814,7 +8809,7 @@
    "notaEn": "«Dar» in the preterite: «dei», «deu», «demos», «deram». «O presente» is both a present (gift) and the present tense, as in English.",
    "requerTodas": [
     "pt-p014",
-    "+o presente"
+    "pt-p133"
    ]
   },
   {
@@ -8865,7 +8860,7 @@
    "notaEn": "Brazil uses the simple past where English often has the present perfect: «você viu…?», have you seen…? The past of «ver»: «vi», «viu», «vimos», «viram».",
    "requerTodas": [
     "pt-p015",
-    "+a chave"
+    "pt-p104"
    ]
   },
   {
@@ -8919,7 +8914,7 @@
    "requerTodas": [
     "pt-p005",
     "pt-p015",
-    "+o filme"
+    "pt-p105"
    ]
   },
   {
@@ -9030,7 +9025,7 @@
    "notaEn": "The preterite of «ver»: «vi», «viu», «vimos», «viram». «Seu» is your (for «você») and can also be his or her.",
    "requerTodas": [
     "pt-p015",
-    "+o irmão",
+    "pt-p112",
     "pt-p088"
    ]
   },
@@ -9080,7 +9075,7 @@
    "requerTodas": [
     "pt-p016",
     "pt-p062",
-    "+o café"
+    "pt-p101"
    ]
   },
   {
@@ -9223,7 +9218,7 @@
    "notaEn": "Learned skills take «saber» (to know), not «poder» (can): «você sabe nadar?», can you swim?",
    "requerTodas": [
     "pt-p017",
-    "+nadar"
+    "pt-p134"
    ]
   },
   {
@@ -9333,8 +9328,8 @@
    "notaEn": "«Dois» (two) has a feminine form: «dois cafés», but «duas águas». Careful: «doze» is twelve.",
    "requerTodas": [
     "pt-p018",
-    "+o café",
-    "+o favor"
+    "pt-p101",
+    "pt-p103"
    ]
   },
   {
@@ -9388,7 +9383,7 @@
     "pt-p005",
     "pt-p020",
     "pt-p018",
-    "+a semana"
+    "pt-p135"
    ]
   },
   {
@@ -9634,7 +9629,7 @@
    "notaEn": "«Ficar» + adjective is to become: «ficou triste», she got sad; «fiquei feliz», I was glad.",
    "requerTodas": [
     "pt-p020",
-    "+triste"
+    "pt-p136"
    ]
   },
   {
@@ -9687,7 +9682,7 @@
    "requerTodas": [
     "pt-p094",
     "pt-p020",
-    "+o centro"
+    "pt-p137"
    ]
   },
   {
@@ -9740,7 +9735,7 @@
    "requerTodas": [
     "pt-p007",
     "pt-p020",
-    "+o troco"
+    "pt-p138"
    ]
   },
   {
@@ -9849,7 +9844,7 @@
    "requerTodas": [
     "pt-p021",
     "pt-p069",
-    "+o favor"
+    "pt-p103"
    ]
   },
   {
@@ -10264,7 +10259,7 @@
    "requerTodas": [
     "pt-p025",
     "pt-p080",
-    "+o pai"
+    "pt-p139"
    ]
   },
   {
@@ -10519,7 +10514,7 @@
    "requerTodas": [
     "pt-p027",
     "pt-p002",
-    "+o café"
+    "pt-p101"
    ]
   },
   {
@@ -10570,7 +10565,7 @@
    "notaEn": "«Por aqui» is around here. Brazilians ask «tem…?» (has?) for is there?: «tem um banco por aqui?».",
    "requerTodas": [
     "pt-p003",
-    "+o banco",
+    "pt-p140",
     "pt-p027"
    ]
   },
@@ -10617,7 +10612,7 @@
    "requerTodas": [
     "pt-p028",
     "pt-p036",
-    "+a língua"
+    "pt-p141"
    ]
   },
   {
@@ -11100,7 +11095,7 @@
    "notaEs": "«Bom» tiene femenino «boa»: «comida boa», «boa noite». No se acorta como «buen»: «um bom dia», un buen día.",
    "notaEn": "«Bom» (good) has the feminine «boa»: «a comida está boa». Food that tastes good right now takes «estar».",
    "requerTodas": [
-    "+a comida",
+    "pt-p142",
     "pt-p002",
     "pt-p006",
     "pt-p031"
@@ -11207,7 +11202,7 @@
    "notaEs": "Igual que en español. «Assim» es «así»; la doble s suena como una sola s.",
    "notaEn": "«Assim» means like this, so: «assim é a vida». The double s sounds like the s in sun.",
    "requerTodas": [
-    "+assim",
+    "pt-p143",
     "pt-p001",
     "pt-p032"
    ]
@@ -11354,7 +11349,7 @@
    "notaEn": "At someone's place is «na casa de»: «na casa de um amigo», at a friend's. «Dormir» (to sleep) has an irregular «eu» form: «durmo».",
    "requerTodas": [
     "pt-p005",
-    "+dormir",
+    "pt-p106",
     "pt-p033",
     "pt-p075"
    ]
@@ -11408,7 +11403,7 @@
    "requerTodas": [
     "pt-p034",
     "pt-p043",
-    "+tarde"
+    "pt-p107"
    ]
   },
   {
@@ -11502,7 +11497,7 @@
    "notaEn": "«Há» is there is, there are, for singular and plural alike. In everyday Brazilian speech, «tem» is more common.",
    "requerTodas": [
     "pt-p035",
-    "+o problema"
+    "pt-p108"
    ]
   },
   {
@@ -11610,7 +11605,7 @@
    "notaEn": "«Houve» (preterite of «haver») reports an event: there was an accident. «Havia» (imperfect) describes what was there; English there was covers both. Speech often uses «teve».",
    "requerTodas": [
     "pt-p035",
-    "+o acidente"
+    "pt-p144"
    ]
   },
   {
@@ -11655,7 +11650,7 @@
    "requerTodas": [
     "pt-p003",
     "pt-p036",
-    "+o irmão"
+    "pt-p112"
    ]
   },
   {
@@ -11753,8 +11748,8 @@
    "notaEn": "«Passar» is to spend time: «passei as férias na praia». Spending money is «gastar». «As férias» (vacation) is always plural.",
    "requerTodas": [
     "pt-p037",
-    "+as férias",
-    "+a praia"
+    "pt-p145",
+    "pt-p113"
    ]
   },
   {
@@ -11862,7 +11857,7 @@
    "requerTodas": [
     "pt-p026",
     "pt-p037",
-    "+rápido"
+    "pt-p146"
    ]
   },
   {
@@ -11911,7 +11906,7 @@
    "notaEn": "To pass an exam is «passar na prova» (pass in the test). To fail is «ser reprovado» or «não passar».",
    "requerTodas": [
     "pt-p037",
-    "+a prova"
+    "pt-p147"
    ]
   },
   {
@@ -11959,7 +11954,7 @@
    "notaEs": "«Novo» va después del sustantivo: «carro novo». Delante, como en español, cambia el sentido: «um novo carro» es otro carro, no uno recién salido de fábrica.",
    "notaEn": "«Novo» goes after the noun: «um carro novo», a new car. The feminine is «nova»: «uma casa nova».",
    "requerTodas": [
-    "+comprar",
+    "pt-p148",
     "pt-p096",
     "pt-p038"
    ]
@@ -12066,7 +12061,7 @@
    "notaEn": "Again is «de novo» (of new) or «outra vez». «Vamos» + infinitive is let's: «vamos tentar», let's try.",
    "requerTodas": [
     "pt-p005",
-    "+tentar",
+    "pt-p149",
     "pt-p038"
    ]
   },
@@ -12122,7 +12117,7 @@
    "notaEn": "«A gente» is the everyday we, with a singular verb: «a gente conversa», we'll talk. The present often stands in for the future.",
    "requerTodas": [
     "pt-p039",
-    "+conversar"
+    "pt-p150"
    ]
   },
   {
@@ -12232,7 +12227,7 @@
    "notaEn": "«Dever» + infinitive is should: «você deve descansar». In speech, the imperfect «devia» is the softer you should.",
    "requerTodas": [
     "pt-p040",
-    "+descansar"
+    "pt-p151"
    ]
   },
   {
@@ -12492,7 +12487,7 @@
     "pt-p041",
     "pt-p027",
     "pt-p001",
-    "+simpático"
+    "pt-p152"
    ]
   },
   {
@@ -12542,7 +12537,7 @@
    "notaEn": "«Achar» means to find: «não acho a chave», I can't find the key. Where English says can't find, Portuguese just says don't find.",
    "requerTodas": [
     "pt-p042",
-    "+a chave"
+    "pt-p104"
    ]
   },
   {
@@ -12595,7 +12590,7 @@
    "requerTodas": [
     "pt-p042",
     "pt-p005",
-    "+chover"
+    "pt-p102"
    ]
   },
   {
@@ -12757,7 +12752,7 @@
    "notaEn": "«Chega» (it arrives) also means enough: «chega!», that's enough; «chega de conversa», enough talk.",
    "requerTodas": [
     "pt-p043",
-    "+a conversa"
+    "pt-p153"
    ]
   },
   {
@@ -12809,7 +12804,7 @@
    "requerTodas": [
     "pt-p043",
     "pt-p033",
-    "+tarde"
+    "pt-p107"
    ]
   },
   {
@@ -12919,7 +12914,7 @@
    "requerTodas": [
     "pt-p021",
     "pt-p044",
-    "+o café"
+    "pt-p101"
    ]
   },
   {
@@ -12974,7 +12969,7 @@
    "notaEn": "Again is «outra vez» (other time) or «de novo». Late, for a person, is «atrasado»: «estou atrasado», I'm running late.",
    "requerTodas": [
     "pt-p043",
-    "+atrasado",
+    "pt-p114",
     "pt-p044",
     "pt-p019"
    ]
@@ -13023,7 +13018,7 @@
    "notaEs": "«O dia todo» es todo el día; «todo dia», cada día. Y «todo» no es «tudo», que es «todo» como pronombre: «tudo bem».",
    "notaEn": "All day is «o dia todo»; every day is «todo dia». And «todo» (all, every) is not «tudo» (everything).",
    "requerTodas": [
-    "+chover",
+    "pt-p102",
     "pt-p022",
     "pt-p045"
    ]
@@ -13083,7 +13078,7 @@
    "notaEn": "Everybody is «todo mundo» (all world) in Brazil, and «toda a gente» in Portugal. The verb is singular: «todo mundo sabe».",
    "requerTodas": [
     "pt-p045",
-    "+o mundo",
+    "pt-p154",
     "pt-p017"
    ]
   },
@@ -13128,7 +13123,7 @@
    "requerTodas": [
     "pt-p046",
     "pt-p001",
-    "+o domingo"
+    "pt-p155"
    ]
   },
   {
@@ -13229,7 +13224,7 @@
    "notaEn": "«Deixar» is to leave something somewhere: «deixei a chave em casa». It also means to let: «me deixa ver», let me see.",
    "requerTodas": [
     "pt-p047",
-    "+a chave",
+    "pt-p104",
     "pt-p033"
    ]
   },
@@ -13330,7 +13325,7 @@
    "notaEn": "To stop doing something is «deixar de» + infinitive, or «parar de»: «deixei de fumar», «parei de fumar».",
    "requerTodas": [
     "pt-p047",
-    "+fumar"
+    "pt-p156"
    ]
   },
   {
@@ -13381,7 +13376,7 @@
    "notaEn": "«Levar» is take (away from here); «trazer» is bring (toward here). «Leva» is the casual command; «leve» is the textbook one.",
    "requerTodas": [
     "pt-p048",
-    "+o guarda-chuva"
+    "pt-p157"
    ]
   },
   {
@@ -13566,7 +13561,7 @@
     "pt-p005",
     "pt-p048",
     "pt-p074",
-    "+a escola"
+    "pt-p115"
    ]
   },
   {
@@ -13832,7 +13827,7 @@
    "requerTodas": [
     "pt-p078",
     "pt-p006",
-    "+o almoço"
+    "pt-p158"
    ]
   },
   {
@@ -13935,7 +13930,7 @@
    "requerTodas": [
     "pt-p052",
     "pt-p021",
-    "+o café"
+    "pt-p101"
    ]
   },
   {
@@ -13991,7 +13986,7 @@
     "pt-p001",
     "pt-p085",
     "pt-p052",
-    "+caro"
+    "pt-p159"
    ]
   },
   {
@@ -14038,7 +14033,7 @@
    "notaEn": "«Conhecer» is to know a person or a place; facts take «saber». The «a» here is just the article: «a minha irmã», my sister.",
    "requerTodas": [
     "pt-p053",
-    "+a irmã"
+    "pt-p160"
    ]
   },
   {
@@ -14082,7 +14077,7 @@
    "notaEn": "In the past, «conhecer» means to meet for the first time: «conheci», I met.",
    "requerTodas": [
     "pt-p053",
-    "+o marido",
+    "pt-p161",
     "pt-p049"
    ]
   },
@@ -14362,7 +14357,7 @@
     "pt-p055",
     "pt-p022",
     "pt-p001",
-    "+difícil"
+    "pt-p162"
    ]
   },
   {
@@ -14461,7 +14456,7 @@
    "notaEn": "«Num» = em + um, in a. «Morar» = to live somewhere.",
    "requerTodas": [
     "pt-p080",
-    "+o apartamento",
+    "pt-p163",
     "pt-p056"
    ]
   },
@@ -14570,7 +14565,7 @@
    "requerTodas": [
     "pt-p057",
     "pt-p079",
-    "+o café",
+    "pt-p101",
     "pt-p076"
    ]
   },
@@ -14732,10 +14727,10 @@
    "notaEn": "«Então» also means «so», therefore. «Vou dormir» is the everyday future: ir + infinitive, with no preposition.",
    "requerTodas": [
     "pt-p002",
-    "+cansado",
+    "pt-p116",
     "pt-p058",
     "pt-p005",
-    "+dormir"
+    "pt-p106"
    ]
   },
   {
@@ -14898,7 +14893,7 @@
    "requerTodas": [
     "pt-p060",
     "pt-p002",
-    "+ocupado"
+    "pt-p164"
    ]
   },
   {
@@ -14954,7 +14949,7 @@
    "notaEn": "«Em todo lugar» = everywhere. «Procurar» = to look for, with no preposition.",
    "requerTodas": [
     "pt-p009",
-    "+procurar",
+    "pt-p165",
     "pt-p045",
     "pt-p060"
    ]
@@ -15108,7 +15103,7 @@
    "requerTodas": [
     "pt-p062",
     "pt-p006",
-    "+o café"
+    "pt-p101"
    ]
   },
   {
@@ -15282,7 +15277,7 @@
    "notaEs": "Tras «espero que» va subjuntivo, como en español: «goste», guste. En los verbos en -ar la a se vuelve e: «gosta» → «goste». Y el que gusta es «você».",
    "notaEn": "«Espero que» takes the subjunctive: in -ar verbs the a becomes e, «gosta» → «goste».",
    "requerTodas": [
-    "+esperar",
+    "pt-p166",
     "pt-p062"
    ]
   },
@@ -15327,7 +15322,7 @@
    "notaEn": "Before a noun, «precisar» needs «de»: «preciso de um táxi».",
    "requerTodas": [
     "pt-p063",
-    "+o táxi"
+    "pt-p167"
    ]
   },
   {
@@ -15385,7 +15380,7 @@
    "notaEn": "Before a verb, Brazil needs no «de»: «não precisa pagar». «Não precisa!» alone = no need!",
    "requerTodas": [
     "pt-p063",
-    "+pagar"
+    "pt-p117"
    ]
   },
   {
@@ -15430,7 +15425,7 @@
    "notaEn": "«Não consigo» = I can't (I try and fail); «não posso» = I can't (not allowed, no time).",
    "requerTodas": [
     "pt-p064",
-    "+dormir"
+    "pt-p106"
    ]
   },
   {
@@ -15479,7 +15474,7 @@
    "notaEn": "«Conseguir» = to get, obtain, as well as to manage. «Consegui» = I got.",
    "requerTodas": [
     "pt-p064",
-    "+o emprego"
+    "pt-p168"
    ]
   },
   {
@@ -15526,8 +15521,8 @@
    "notaEn": "Weekdays are numbered: «segunda-feira» (Monday), «terça», «quarta», «quinta», «sexta» (Friday). People drop the «-feira».",
    "requerTodas": [
     "pt-p065",
-    "+a segunda-feira",
-    "+a sexta-feira"
+    "pt-p169",
+    "pt-p170"
    ]
   },
   {
@@ -15691,7 +15686,7 @@
    "requerTodas": [
     "pt-p066",
     "pt-p001",
-    "+o médico"
+    "pt-p171"
    ]
   },
   {
@@ -15837,7 +15832,7 @@
    "requerTodas": [
     "pt-p002",
     "pt-p067",
-    "+cansado"
+    "pt-p116"
    ]
   },
   {
@@ -15936,7 +15931,7 @@
    "notaEn": "«Em dinheiro» = in cash; by card is «no cartão».",
    "requerTodas": [
     "pt-p007",
-    "+pagar",
+    "pt-p117",
     "pt-p068"
    ]
   },
@@ -15984,9 +15979,9 @@
    "notaEs": "«D'água» es «de água». Y el vaso es «o copo»; el «vaso» portugués es el florero o la maceta.\n🇧🇷 copo → 🇪🇸 vaso\n🇧🇷 vaso → 🇪🇸 florero, maceta",
    "notaEn": "«D'água» is «de água». «Copo» = a glass to drink from.",
    "requerTodas": [
-    "+o copo",
+    "pt-p111",
     "pt-p069",
-    "+o favor"
+    "pt-p103"
    ]
   },
   {
@@ -16034,7 +16029,7 @@
    "requerTodas": [
     "pt-p069",
     "pt-p002",
-    "+gelado"
+    "pt-p172"
    ]
   },
   {
@@ -16079,9 +16074,9 @@
    "notaEs": "«Às oito», a las ocho: la preposición «a» y el artículo «as» se funden en «às». «Começa», con ç, que suena siempre s.",
    "notaEn": "«Às oito» = at eight: «a» + «as» merge into «às». The ç always sounds like s.",
    "requerTodas": [
-    "+o filme",
+    "pt-p105",
     "pt-p070",
-    "+oito"
+    "pt-p118"
    ]
   },
   {
@@ -16130,7 +16125,7 @@
    "notaEn": "«Começar a» + infinitive. «-ou» marks the past of -ar verbs: «começou», it started.",
    "requerTodas": [
     "pt-p070",
-    "+chover"
+    "pt-p102"
    ]
   },
   {
@@ -16192,8 +16187,8 @@
    "notaEn": "«Comecei» = I started: ç turns into c before e. «Ele começou» keeps the ç.",
    "requerTodas": [
     "pt-p070",
-    "+estudar",
-    "+o português"
+    "pt-p173",
+    "pt-p174"
    ]
   },
   {
@@ -16615,7 +16610,7 @@
    "requerTodas": [
     "pt-p072",
     "pt-p033",
-    "+oito"
+    "pt-p118"
    ]
   },
   {
@@ -16674,7 +16669,7 @@
    "notaEn": "Past of «sair»: «saí» (I left), «saiu» (he/she left). «Cedo» = early.",
    "requerTodas": [
     "pt-p072",
-    "+cedo"
+    "pt-p175"
    ]
   },
   {
@@ -16968,7 +16963,7 @@
    "notaEn": "«Melhor» = best, better. The possessive agrees with the friend: «meu amigo», «minha amiga».",
    "requerTodas": [
     "pt-p001",
-    "+melhor",
+    "pt-p176",
     "pt-p075"
    ]
   },
@@ -17070,7 +17065,7 @@
     "pt-p095",
     "pt-p076",
     "pt-p005",
-    "+o cinema"
+    "pt-p109"
    ]
   },
   {
@@ -17118,7 +17113,7 @@
    "notaEs": "«A noite toda», toda la noche: en Brasil el «todo» suele ir detrás. «Choveu», llovió, sin sujeto.",
    "notaEn": "«A noite toda» = all night, with «toda» after the noun. «Choveu» = it rained, no subject.",
    "requerTodas": [
-    "+chover",
+    "pt-p102",
     "pt-p076",
     "pt-p045"
    ]
@@ -17168,7 +17163,7 @@
    "requerTodas": [
     "pt-p077",
     "pt-p001",
-    "+o feriado"
+    "pt-p177"
    ]
   },
   {
@@ -17223,7 +17218,7 @@
    "requerTodas": [
     "pt-p015",
     "pt-p077",
-    "+a manhã"
+    "pt-p178"
    ]
   },
   {
@@ -17816,9 +17811,9 @@
    "notaEn": "«Morasse» = (if I) lived: the past subjunctive ends in «-sse». «Seria» = would be; casually, «ia ser».",
    "requerTodas": [
     "pt-p080",
-    "+a praia",
+    "pt-p113",
     "pt-p001",
-    "+feliz"
+    "pt-p110"
    ]
   },
   {
@@ -18001,8 +17996,8 @@
    "requerTodas": [
     "pt-p007",
     "pt-p081",
-    "+a criança",
-    "+a escola"
+    "pt-p119",
+    "pt-p115"
    ]
   },
   {
@@ -18059,7 +18054,7 @@
    "notaEn": "«Peguei» = I grabbed: g becomes gu before e. In Portugal, «pegar na chave».",
    "requerTodas": [
     "pt-p081",
-    "+a chave",
+    "pt-p104",
     "pt-p072"
    ]
   },
@@ -18109,7 +18104,7 @@
    "notaEn": "«Acordar» = to wake up, with no reflexive pronoun. «Todo dia» = every day.",
    "requerTodas": [
     "pt-p082",
-    "+sete",
+    "pt-p120",
     "pt-p045",
     "pt-p022"
    ]
@@ -18167,7 +18162,7 @@
    "notaEn": "With an object, «acordar» = to wake someone up. In Brazil the pronoun comes first, even at the start of the sentence.",
    "requerTodas": [
     "pt-p082",
-    "+seis"
+    "pt-p179"
    ]
   },
   {
@@ -18224,7 +18219,7 @@
    "notaEn": "The 3rd-person simple past of -ar verbs ends in «-ou»: «acordou», she woke up.",
    "requerTodas": [
     "pt-p082",
-    "+tarde"
+    "pt-p107"
    ]
   },
   {
@@ -18330,8 +18325,8 @@
    "notaEn": "«Ligar» = to turn on (a light, the TV); «desligar» = to turn off. «Liga» and «ligue» both work as requests.",
    "requerTodas": [
     "pt-p083",
-    "+a luz",
-    "+o favor"
+    "pt-p180",
+    "pt-p103"
    ]
   },
   {
@@ -18448,7 +18443,7 @@
    "notaEn": "«Liguei» = I called: g becomes gu before e. You call «para» someone.",
    "requerTodas": [
     "pt-p083",
-    "+a mãe"
+    "pt-p181"
    ]
   },
   {
@@ -18508,7 +18503,7 @@
    "requerTodas": [
     "pt-p007",
     "pt-p084",
-    "+a foto"
+    "pt-p121"
    ]
   },
   {
@@ -18559,8 +18554,8 @@
    "notaEn": "«Tirar» clothes = to take them off. No possessive needed: «os sapatos», the shoes.",
    "requerTodas": [
     "pt-p084",
-    "+o sapato",
-    "+o favor"
+    "pt-p182",
+    "pt-p103"
    ]
   },
   {
@@ -18623,7 +18618,7 @@
    "notaEn": "Negative commands use the subjunctive form: «não tire». Casual Brazilian speech also says «não tira».",
    "requerTodas": [
     "pt-p084",
-    "+a foto",
+    "pt-p121",
     "pt-p027"
    ]
   },
@@ -18785,7 +18780,7 @@
    "notaEs": "«Ruim» no cambia: «o filme é ruim», «a comida é ruim». Y no es ruin, mezquino: es malo, a secas.\n🇧🇷 ruim → 🇪🇸 malo\n🇧🇷 mesquinho → 🇪🇸 ruin",
    "notaEn": "«Ruim» = bad, the same in masculine and feminine. In Portugal «mau» is more usual.",
    "requerTodas": [
-    "+o filme",
+    "pt-p105",
     "pt-p001",
     "pt-p006",
     "pt-p086"
@@ -18959,7 +18954,7 @@
    "notaEn": "«O cara» = guy (informal); «a cara» = the face. For people, «legal» = nice, fun to be around.",
    "requerTodas": [
     "pt-p001",
-    "+o cara",
+    "pt-p183",
     "pt-p006",
     "pt-p087"
    ]
@@ -19056,9 +19051,9 @@
    "notaEs": "«Brincar» es jugar, el juego de los niños; saltar es «pular». «Na rua» es en la calle, y también afuera, fuera de casa.\n🇧🇷 brincar → 🇪🇸 jugar\n🇧🇷 pular → 🇪🇸 brincar, saltar",
    "notaEn": "«Brincar» = to play (children's play); sports and games use «jogar». «Na rua» also means outside.",
    "requerTodas": [
-    "+a criança",
+    "pt-p119",
     "pt-p002",
-    "+brincar",
+    "pt-p184",
     "pt-p088"
    ]
   },
@@ -19156,7 +19151,7 @@
    "notaEs": "«O nome dele», su nombre (de él): en Brasil la tercera persona se dice con «dele» y «dela», porque «seu» ya es de «você».",
    "notaEn": "«O nome dele» = his name: Brazil uses «dele/dela» for his/her, since «seu» usually means your.",
    "requerTodas": [
-    "+esquecer",
+    "pt-p185",
     "pt-p089"
    ]
   },
@@ -19203,9 +19198,9 @@
    "notaEs": "«Quatro», con «qu», como «quarenta», cuarenta. En la charla, «para» suena «pra»: «pra quatro».",
    "notaEn": "«Quatro» = four. In speech «para» often sounds like «pra».",
    "requerTodas": [
-    "+a mesa",
+    "pt-p186",
     "pt-p090",
-    "+o favor"
+    "pt-p103"
    ]
   },
   {
@@ -19256,7 +19251,7 @@
    "requerTodas": [
     "pt-p043",
     "pt-p091",
-    "+o minuto"
+    "pt-p187"
    ]
   },
   {
@@ -19549,7 +19544,7 @@
    "notaEn": "«Ontem» = yesterday; «anteontem» = the day before yesterday. «Choveu» = it rained.",
    "requerTodas": [
     "pt-p095",
-    "+chover",
+    "pt-p102",
     "pt-p006"
    ]
   },
@@ -19647,7 +19642,7 @@
    "notaEs": "«O carro» es el auto, el coche: en Brasil es la palabra de todos los días. La rr suena como una j suave: «cá-ho».",
    "notaEn": "«O carro» = the car. The double r sounds like an English h: «KAH-ho».",
    "requerTodas": [
-    "+estacionar",
+    "pt-p188",
     "pt-p096",
     "pt-p088"
    ]
@@ -19707,7 +19702,7 @@
    "requerTodas": [
     "pt-p097",
     "pt-p002",
-    "+atrasado"
+    "pt-p114"
    ]
   },
   {
@@ -19758,7 +19753,7 @@
    "requerTodas": [
     "pt-p098",
     "pt-p002",
-    "+pronto"
+    "pt-p189"
    ]
   },
   {
@@ -19804,9 +19799,9 @@
    "notaEs": "Desayunar no tiene verbo propio en portugués: es «tomar café da manhã». Almorzar y cenar sí lo tienen: «almoçar», «jantar».",
    "notaEn": "There's no single verb for having breakfast: «tomar café da manhã». Lunch and dinner do have verbs: «almoçar», «jantar».",
    "requerTodas": [
-    "+tomar",
+    "pt-p190",
     "pt-p098",
-    "+sete"
+    "pt-p120"
    ]
   },
   {
@@ -19864,7 +19859,7 @@
    "notaEs": "«Cadeira» es silla; la cadera es «o quadril». En Brasil «sentar» va muchas veces sin «se»: «senta aqui».\n🇧🇷 cadeira → 🇪🇸 silla\n🇧🇷 quadril → 🇪🇸 cadera",
    "notaEn": "«Cadeira» = chair. In Brazil «sentar» often drops the «se»: «senta aqui», sit here.",
    "requerTodas": [
-    "+sentar",
+    "pt-p191",
     "pt-p099"
    ]
   },
@@ -19916,7 +19911,7 @@
    "notaEs": "«Esquisito» es raro, extraño; lo exquisito es «delicioso» o «gostoso». Y «cheiro» es olor.\n🇧🇷 esquisito → 🇪🇸 raro, extraño\n🇧🇷 delicioso → 🇪🇸 exquisito",
    "notaEn": "«Esquisito» = weird, never exquisite. «Cheiro» = smell.",
    "requerTodas": [
-    "+o cheiro",
+    "pt-p192",
     "pt-p100"
    ]
   },
@@ -19968,9 +19963,3866 @@
    "notaEn": "«Meio» = kind of, a bit: «meio esquisito», a bit weird.",
    "requerTodas": [
     "pt-p001",
-    "+meio",
+    "pt-p193",
     "pt-p100"
    ]
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p101",
+   "tipo": "palavra",
+   "pt": "o café",
+   "aceitas": [
+    "cafe",
+    "o cafezinho",
+    "cafezinho"
+   ],
+   "es": "el café",
+   "aceitasEs": [
+    "café"
+   ],
+   "distratoresEs": [
+    "el té",
+    "la leche",
+    "el jugo",
+    "el chocolate"
+   ],
+   "en": "coffee",
+   "aceitasEn": [
+    "coffee",
+    "the coffee",
+    "a coffee"
+   ],
+   "distratoresEn": [
+    "tea",
+    "milk",
+    "juice",
+    "cocoa"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "comida"
+   ],
+   "notaEs": "Como en español: la bebida, y también el lugar donde se toma. «Tomar café» puede ser desayunar, y el «cafezinho», el café solo y chico, se ofrece en todas partes. El plural se pide sin problema: «dois cafés».",
+   "notaEn": "Coffee, and the café where you drink it. «Tomar café» can mean having breakfast, and «um cafezinho» is the small black coffee offered everywhere in Brazil. «Dois cafés», two coffees."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p102",
+   "tipo": "palavra",
+   "pt": "chover",
+   "aceitas": [
+    "chover"
+   ],
+   "es": "llover",
+   "aceitasEs": [
+    "llover"
+   ],
+   "distratoresEs": [
+    "llorar",
+    "nevar",
+    "tronar",
+    "mojar"
+   ],
+   "en": "to rain",
+   "aceitasEn": [
+    "to rain",
+    "rain"
+   ],
+   "distratoresEn": [
+    "to cry",
+    "to snow",
+    "to thunder",
+    "to flood"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "natureza"
+   ],
+   "notaEs": "Es llover: la «ch» portuguesa responde muchas veces a la «ll» española («chover», «chave», «chegar»), y suena «sh». Ojo con «chorar», que es llorar. Sin sujeto, como en español: «choveu o dia todo».\n🇧🇷 chover → 🇪🇸 llover\n🇧🇷 chorar → 🇪🇸 llorar",
+   "notaEn": "To rain, with no subject at all — no «it»: «chove», it rains; «vai chover», it's going to rain; «choveu muito», it rained a lot. The ch sounds like English sh."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p103",
+   "tipo": "palavra",
+   "pt": "o favor",
+   "aceitas": [
+    "favor"
+   ],
+   "es": "el favor",
+   "aceitasEs": [
+    "favor"
+   ],
+   "distratoresEs": [
+    "el valor",
+    "el sabor",
+    "el honor",
+    "el deber"
+   ],
+   "en": "the favor",
+   "aceitasEn": [
+    "favor",
+    "the favor",
+    "favour",
+    "the favour"
+   ],
+   "distratoresEn": [
+    "the value",
+    "the flavor",
+    "the honor",
+    "the duty"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "social"
+   ],
+   "notaEs": "Igual que en español: «por favor», «fazer um favor», «pode me fazer um favor?». En Portugal se oye mucho «se faz favor» para pedir algo o llamar a alguien.",
+   "notaEn": "Please is «por favor», before or after the request. A favor: «pode me fazer um favor?», can you do me a favor? In Portugal you'll also hear «se faz favor», please, excuse me."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p104",
+   "tipo": "palavra",
+   "pt": "a chave",
+   "aceitas": [
+    "chave"
+   ],
+   "es": "la llave",
+   "aceitasEs": [
+    "llave"
+   ],
+   "distratoresEs": [
+    "la llama",
+    "la cerradura",
+    "la puerta",
+    "el candado"
+   ],
+   "en": "the key",
+   "aceitasEn": [
+    "key",
+    "the key"
+   ],
+   "distratoresEn": [
+    "the lock",
+    "the door",
+    "the padlock",
+    "the handle"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "casa",
+    "objetos"
+   ],
+   "notaEs": "Es la llave, con la «ch» que en portugués ocupa el lugar de la «ll» («chave», «chover», «chegar») y suena «sh». La e final se dice casi «i»: «sha-vi». También es la clave de algo: «a chave do problema».",
+   "notaEn": "Key: «a chave de casa», the house key; «as chaves do carro», the car keys. The ch is an English sh, and the final e sounds like ee: «SHA-vee». A wrench is «a chave inglesa»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p105",
+   "tipo": "palavra",
+   "pt": "o filme",
+   "aceitas": [
+    "filme"
+   ],
+   "es": "la película",
+   "aceitasEs": [
+    "película",
+    "el filme",
+    "filme",
+    "la peli",
+    "peli"
+   ],
+   "distratoresEs": [
+    "la serie",
+    "el programa",
+    "el canal",
+    "la obra"
+   ],
+   "en": "the movie",
+   "aceitasEn": [
+    "movie",
+    "the movie",
+    "film",
+    "the film",
+    "picture"
+   ],
+   "distratoresEn": [
+    "the show",
+    "the series",
+    "the channel",
+    "the play"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cultura",
+    "mídia",
+    "falso-amigo"
+   ],
+   "notaEs": "Es la película, pero masculino: «o filme», «um filme bom». Ver una película es «ver um filme» o, muy brasileño, «assistir (a) um filme». La «película» portuguesa es una capa fina, como la del film plástico.\n🇧🇷 filme → 🇪🇸 película\n🇧🇷 película → 🇪🇸 lámina, capa fina",
+   "notaEn": "Movie, film: «ver um filme» or, very Brazilian, «assistir a um filme», to watch a movie. It's also camera film and plastic wrap, «filme plástico»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p106",
+   "tipo": "palavra",
+   "pt": "dormir",
+   "aceitas": [
+    "dormir"
+   ],
+   "es": "dormir",
+   "aceitasEs": [
+    "dormir"
+   ],
+   "distratoresEs": [
+    "soñar",
+    "despertar",
+    "descansar",
+    "bostezar"
+   ],
+   "en": "to sleep",
+   "aceitasEn": [
+    "to sleep",
+    "sleep"
+   ],
+   "distratoresEn": [
+    "to dream",
+    "to wake up",
+    "to rest",
+    "to yawn"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "notaEs": "Como en español, pero sin diptongo: en el presente solo «eu durmo» cambia la o en u; luego «dorme», «dormimos», y el pasado «dormi», «dormiu». «Vou dormir» es me voy a dormir, y «dormir fora», pasar la noche fuera.",
+   "notaEn": "To sleep: «durmo» (only the I form changes the vowel), «dorme», «dormimos». «Vou dormir» is I'm going to bed; «dormir na casa de alguém», to sleep over at someone's place."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p107",
+   "tipo": "palavra",
+   "pt": "tarde",
+   "aceitas": [
+    "tarde"
+   ],
+   "sinonimos": [
+    "atrasado"
+   ],
+   "es": "tarde",
+   "aceitasEs": [
+    "tarde"
+   ],
+   "distratoresEs": [
+    "temprano",
+    "pronto",
+    "antes",
+    "nunca"
+   ],
+   "en": "late",
+   "aceitasEn": [
+    "late"
+   ],
+   "distratoresEn": [
+    "early",
+    "soon",
+    "before",
+    "never"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "notaEs": "Igual que en español, en los dos sentidos: «chegar tarde», llegar tarde, y «a tarde», la tarde del día («boa tarde»). De una persona o un transporte se dice mucho «atrasado»: «estou atrasado», voy tarde.",
+   "notaEn": "Late, the adverb: «chegou tarde», he arrived late; «mais tarde», later. With an article, «a tarde» is the afternoon: «boa tarde», good afternoon. Running late is «atrasado»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p108",
+   "tipo": "palavra",
+   "pt": "o problema",
+   "aceitas": [
+    "problema"
+   ],
+   "es": "el problema",
+   "aceitasEs": [
+    "problema"
+   ],
+   "distratoresEs": [
+    "la solución",
+    "la pregunta",
+    "el error",
+    "la duda"
+   ],
+   "en": "the problem",
+   "aceitasEn": [
+    "problem",
+    "the problem",
+    "trouble",
+    "the trouble",
+    "issue",
+    "the issue"
+   ],
+   "distratoresEn": [
+    "the solution",
+    "the question",
+    "the mistake",
+    "the doubt"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Masculino, como en español: «um problema sério». «Sem problema» o «não tem problema» es no pasa nada, no hay problema; «qual é o problema?», ¿qué pasa?",
+   "notaEn": "Masculine despite the -a: «o problema», «um problema sério». «Sem problema», no problem; «não tem problema», it's fine, don't worry."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p109",
+   "tipo": "palavra",
+   "pt": "o cinema",
+   "aceitas": [
+    "cinema"
+   ],
+   "es": "el cine",
+   "aceitasEs": [
+    "cine",
+    "la sala de cine"
+   ],
+   "distratoresEs": [
+    "el teatro",
+    "el museo",
+    "el estadio",
+    "la biblioteca"
+   ],
+   "en": "the movie theater",
+   "aceitasEn": [
+    "movie theater",
+    "the movie theater",
+    "movie theatre",
+    "the movie theatre",
+    "cinema",
+    "the cinema",
+    "the movies",
+    "movies"
+   ],
+   "distratoresEn": [
+    "the museum",
+    "the stadium",
+    "the library",
+    "the concert hall"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cidade",
+    "cultura"
+   ],
+   "notaEs": "Es el cine, la sala y el arte, y en Brasil no se acorta: «vamos ao cinema?», ¿vamos al cine? Con «a» más el artículo: «fui ao cinema».",
+   "notaEn": "The movie theater, and the art of film: «ir ao cinema», to go to the movies — note the «ao», to the. Brazilians don't shorten it."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p110",
+   "tipo": "palavra",
+   "pt": "feliz",
+   "aceitas": [
+    "feliz"
+   ],
+   "es": "feliz",
+   "aceitasEs": [
+    "feliz"
+   ],
+   "distratoresEs": [
+    "triste",
+    "fácil",
+    "fiel",
+    "enojado"
+   ],
+   "en": "happy",
+   "aceitasEn": [
+    "happy",
+    "glad"
+   ],
+   "distratoresEn": [
+    "sad",
+    "easy",
+    "faithful",
+    "angry"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo"
+   ],
+   "notaEs": "Igual que en español, pero el plural guarda la z: «felizes». Va en los saludos: «Feliz aniversário», feliz cumpleaños; «Feliz Natal», feliz Navidad.",
+   "notaEn": "Happy; it doesn't change for gender, and the plural is «felizes». Greetings: «Feliz aniversário», happy birthday; «Feliz Natal», Merry Christmas."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p111",
+   "tipo": "palavra",
+   "pt": "o copo",
+   "aceitas": [
+    "copo"
+   ],
+   "es": "el vaso",
+   "aceitasEs": [
+    "vaso"
+   ],
+   "distratoresEs": [
+    "la copa",
+    "la taza",
+    "la botella",
+    "el plato"
+   ],
+   "en": "the glass",
+   "aceitasEn": [
+    "glass",
+    "the glass",
+    "drinking glass",
+    "tumbler"
+   ],
+   "distratoresEn": [
+    "the mug",
+    "the bottle",
+    "the plate",
+    "the bowl"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "casa",
+    "objetos",
+    "falso-amigo"
+   ],
+   "notaEs": "Es el vaso: «um copo d'água», un vaso de agua. La copa de vino es «a taça», y «o vaso» portugués es el florero o la maceta (y el inodoro, «o vaso sanitário»).\n🇧🇷 copo → 🇪🇸 vaso\n🇧🇷 taça → 🇪🇸 copa\n🇧🇷 vaso → 🇪🇸 florero, maceta",
+   "notaEn": "A glass to drink from: «um copo d'água», a glass of water — also when it's plastic or paper. A cup with a handle is «a xícara», and glass, the material, is «o vidro».\n🇧🇷 copo → 🇺🇸 glass\n🇧🇷 xícara → 🇺🇸 cup"
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p112",
+   "tipo": "palavra",
+   "pt": "o irmão",
+   "aceitas": [
+    "irmao"
+   ],
+   "es": "el hermano",
+   "aceitasEs": [
+    "hermano"
+   ],
+   "distratoresEs": [
+    "el primo",
+    "el tío",
+    "el sobrino",
+    "el abuelo"
+   ],
+   "en": "the brother",
+   "aceitasEn": [
+    "brother",
+    "the brother"
+   ],
+   "distratoresEn": [
+    "the cousin",
+    "the uncle",
+    "the nephew",
+    "the grandfather"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "família"
+   ],
+   "notaEs": "Es hermano, sin h y con la «ão» nasal; la hermana es «a irmã». Como en español, el plural sirve para todos: «tenho três irmãos», tengo tres hermanos.",
+   "notaEn": "Brother; sister is «a irmã». The plural covers siblings of either sex: «tenho três irmãos», I have three siblings. The «ão» is a nasal diphthong, roughly «eer-MOWN» through the nose."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p113",
+   "tipo": "palavra",
+   "pt": "a praia",
+   "aceitas": [
+    "praia"
+   ],
+   "es": "la playa",
+   "aceitasEs": [
+    "playa"
+   ],
+   "distratoresEs": [
+    "la plaza",
+    "la piscina",
+    "el río",
+    "el puerto"
+   ],
+   "en": "the beach",
+   "aceitasEn": [
+    "beach",
+    "the beach",
+    "seaside",
+    "the seaside"
+   ],
+   "distratoresEn": [
+    "the square",
+    "the pool",
+    "the river",
+    "the harbor"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "natureza",
+    "viagem"
+   ],
+   "notaEs": "Es la playa: la «pl» española se vuelve «pr» en muchas palabras («praia», «prata», «praça»). Y ojo, que «a praça» es la plaza. Se está «na praia» y se va «à praia».\n🇧🇷 praia → 🇪🇸 playa\n🇧🇷 praça → 🇪🇸 plaza",
+   "notaEn": "Beach: «na praia», at the beach; «ir à praia», to go to the beach. «Morar na praia» is to live by the sea."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p114",
+   "tipo": "palavra",
+   "pt": "atrasado",
+   "aceitas": [
+    "atrasado",
+    "atrasada"
+   ],
+   "sinonimos": [
+    "tarde"
+   ],
+   "es": "atrasado",
+   "aceitasEs": [
+    "atrasado",
+    "atrasada",
+    "con retraso"
+   ],
+   "distratoresEs": [
+    "adelantado",
+    "puntual",
+    "ocupado",
+    "perdido"
+   ],
+   "en": "late (behind schedule)",
+   "aceitasEn": [
+    "late",
+    "delayed",
+    "running late",
+    "behind schedule",
+    "behind"
+   ],
+   "distratoresEn": [
+    "early (ahead of schedule)",
+    "on time (as planned)",
+    "busy (tied up)",
+    "lost (gone astray)"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "cotidiano"
+   ],
+   "notaEs": "Como en el español de América: «o ônibus está atrasado». De una persona, Brasil dice «chegar atrasado» donde el español prefiere llegar tarde: «estou atrasado», voy tarde. Y el reloj que atrasa también está «atrasado».",
+   "notaEn": "Running late, behind schedule, for people and things: «estou atrasado», I'm late; «o voo está atrasado», the flight is delayed. Feminine «atrasada». The plain adverb late, after a verb, is often «tarde»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p115",
+   "tipo": "palavra",
+   "pt": "a escola",
+   "aceitas": [
+    "escola",
+    "o colegio",
+    "colegio"
+   ],
+   "es": "la escuela",
+   "aceitasEs": [
+    "escuela",
+    "el colegio",
+    "colegio"
+   ],
+   "distratoresEs": [
+    "la iglesia",
+    "la oficina",
+    "la universidad",
+    "la biblioteca"
+   ],
+   "en": "the school",
+   "aceitasEn": [
+    "school",
+    "the school"
+   ],
+   "distratoresEn": [
+    "the church",
+    "the office",
+    "the university",
+    "the library"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "escola"
+   ],
+   "notaEs": "Es la escuela, sin el diptongo: «escola». Se va «à escola» y se está «na escola». «O colégio» también se usa, sobre todo para la escuela privada.",
+   "notaEn": "School: «ir à escola», to go to school; «na escola», at school — Portuguese keeps the article. «A escola de samba» is a samba school, one of the Carnival groups."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p116",
+   "tipo": "palavra",
+   "pt": "cansado",
+   "aceitas": [
+    "cansado",
+    "cansada"
+   ],
+   "es": "cansado",
+   "aceitasEs": [
+    "cansado",
+    "cansada"
+   ],
+   "distratoresEs": [
+    "casado",
+    "enfermo",
+    "aburrido",
+    "ocupado"
+   ],
+   "en": "tired",
+   "aceitasEn": [
+    "tired",
+    "weary"
+   ],
+   "distratoresEn": [
+    "married",
+    "sick",
+    "bored",
+    "busy"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "saúde"
+   ],
+   "notaEs": "Igual que en español, con «estar»: «estou cansado». «Cansado de» es harto de: «estou cansado de esperar». Ojo con «casado», sin n.",
+   "notaEn": "Tired, always with «estar»: «estou cansado», feminine «cansada». «Cansado de» is fed up with: «cansado de esperar». Don't mix it up with «casado», married."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p117",
+   "tipo": "palavra",
+   "pt": "pagar",
+   "aceitas": [
+    "pagar"
+   ],
+   "es": "pagar",
+   "aceitasEs": [
+    "pagar"
+   ],
+   "distratoresEs": [
+    "cobrar",
+    "gastar",
+    "prestar",
+    "apagar"
+   ],
+   "en": "to pay",
+   "aceitasEn": [
+    "to pay",
+    "pay",
+    "to pay for",
+    "pay for"
+   ],
+   "distratoresEn": [
+    "to charge",
+    "to spend",
+    "to lend",
+    "to turn off"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "compras",
+    "economia"
+   ],
+   "notaEs": "Igual que en español. «Pagar em dinheiro» es pagar en efectivo (el «dinheiro» es también el efectivo); «pagar com cartão», con tarjeta. El participio de uso es el corto: «já está pago».",
+   "notaEn": "To pay, with no «for»: «paguei o almoço», I paid for lunch. «Pagar em dinheiro», to pay in cash; «pagar com cartão», by card; «pagar a conta», to pay the bill."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p118",
+   "tipo": "palavra",
+   "pt": "oito",
+   "aceitas": [
+    "oito"
+   ],
+   "es": "ocho",
+   "aceitasEs": [
+    "ocho"
+   ],
+   "distratoresEs": [
+    "seis",
+    "siete",
+    "nueve",
+    "dieciocho"
+   ],
+   "en": "eight",
+   "aceitasEn": [
+    "eight"
+   ],
+   "distratoresEn": [
+    "six",
+    "seven",
+    "nine",
+    "eighteen"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "notaEs": "Es ocho: donde el español tiene «ch» de origen latino, el portugués suele tener «it»: «oito», «noite» (noche), «leite» (leche), «feito» (hecho). La hora: «às oito», a las ocho. Dieciocho es «dezoito».",
+   "notaEn": "Eight; at eight o'clock is «às oito». Eighteen is «dezoito», eighty «oitenta»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p119",
+   "tipo": "palavra",
+   "pt": "a criança",
+   "aceitas": [
+    "crianca"
+   ],
+   "regionais": {
+    "o miúdo": "em Portugal"
+   },
+   "sinonimos": [
+    "o menino",
+    "a menina",
+    "o filho"
+   ],
+   "es": "el niño",
+   "aceitasEs": [
+    "niño",
+    "la niña",
+    "niña",
+    "el chico",
+    "chico"
+   ],
+   "distratoresEs": [
+    "el adolescente",
+    "el adulto",
+    "el alumno",
+    "el vecino"
+   ],
+   "en": "the child",
+   "aceitasEn": [
+    "child",
+    "the child",
+    "kid",
+    "the kid",
+    "children",
+    "kids"
+   ],
+   "distratoresEn": [
+    "the teenager",
+    "the adult",
+    "the student",
+    "the neighbor"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "família"
+   ],
+   "notaEs": "Es el niño o la niña, pero la palabra es siempre femenina: «a criança», también cuando es un niño. No tiene que ver con «criada»: viene de «criar», criar a los hijos. Y lo que hacen los niños al jugar es «brincar»: «as crianças estão brincando».",
+   "notaEn": "Child, kid — and always feminine, even for a boy: «a criança», «as crianças». Children play, «brincam»: «as crianças estão brincando». In Portugal you'll also hear «o miúdo»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p120",
+   "tipo": "palavra",
+   "pt": "sete",
+   "aceitas": [
+    "sete"
+   ],
+   "es": "siete",
+   "aceitasEs": [
+    "siete"
+   ],
+   "distratoresEs": [
+    "seis",
+    "ocho",
+    "nueve",
+    "diecisiete"
+   ],
+   "en": "seven",
+   "aceitasEn": [
+    "seven"
+   ],
+   "distratoresEn": [
+    "six",
+    "eight",
+    "nine",
+    "seventeen"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "notaEs": "Es siete, sin diptongo, como «tempo» (tiempo) y «pedra» (piedra). La hora: «às sete», a las siete. Diecisiete es «dezessete».",
+   "notaEn": "Seven; at seven is «às sete». Seventeen is «dezessete», seventy «setenta»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p121",
+   "tipo": "palavra",
+   "pt": "a foto",
+   "aceitas": [
+    "foto",
+    "a fotografia",
+    "fotografia"
+   ],
+   "es": "la foto",
+   "aceitasEs": [
+    "foto",
+    "la fotografía",
+    "fotografía"
+   ],
+   "distratoresEs": [
+    "el video",
+    "el dibujo",
+    "el cuadro",
+    "el mapa"
+   ],
+   "en": "the photo",
+   "aceitasEn": [
+    "photo",
+    "the photo",
+    "picture",
+    "the picture",
+    "photograph",
+    "the photograph",
+    "pic"
+   ],
+   "distratoresEn": [
+    "the video",
+    "the drawing",
+    "the painting",
+    "the map"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Femenina, como en español. Sacar una foto es «tirar uma foto» (aquí «tirar» es sacar): «pode tirar uma foto nossa?», ¿nos sacas una foto?",
+   "notaEn": "Photo, picture, short for «a fotografia», and feminine. To take a picture is «tirar uma foto»: «pode tirar uma foto nossa?», can you take a picture of us?"
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p122",
+   "tipo": "palavra",
+   "pt": "a pressa",
+   "aceitas": [
+    "pressa"
+   ],
+   "es": "la prisa",
+   "aceitasEs": [
+    "prisa",
+    "el apuro",
+    "apuro"
+   ],
+   "distratoresEs": [
+    "la presa",
+    "la pereza",
+    "la calma",
+    "la pausa"
+   ],
+   "en": "the hurry",
+   "aceitasEn": [
+    "hurry",
+    "the hurry",
+    "rush",
+    "the rush",
+    "haste"
+   ],
+   "distratoresEn": [
+    "the delay",
+    "the laziness",
+    "the calm",
+    "the pause"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Es la prisa, y se tiene con «estar com»: «estou com pressa», tengo prisa, estoy apurado. «Sem pressa», sin prisa; «depressa», rápido. La «ss» suena sorda, como la s del español.",
+   "notaEn": "Hurry, rush. It goes with «estar com»: «estou com pressa», I'm in a hurry — literally I'm with hurry. «Sem pressa», no rush; «depressa», quickly."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p123",
+   "tipo": "palavra",
+   "pt": "frio",
+   "aceitas": [
+    "frio",
+    "fria"
+   ],
+   "es": "frío",
+   "aceitasEs": [
+    "frío",
+    "fría"
+   ],
+   "distratoresEs": [
+    "caliente",
+    "tibio",
+    "fresco",
+    "húmedo"
+   ],
+   "en": "cold",
+   "aceitasEn": [
+    "cold",
+    "chilly"
+   ],
+   "distratoresEn": [
+    "hot",
+    "warm",
+    "wet",
+    "dry"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo"
+   ],
+   "homografos": [
+    "pt-p124"
+   ],
+   "notaEs": "Es frío, sin tilde: «a água está fria», el agua está fría. De una persona, distante: «ele é muito frio». Lo contrario es «quente».",
+   "notaEn": "Cold, of things and people: «a água está fria», the water is cold; «ele é frio», he's cold, distant. For the weather and for feeling cold, Portuguese uses the noun: «faz frio», «estou com frio»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p124",
+   "tipo": "palavra",
+   "pt": "o frio",
+   "aceitas": [
+    "frio"
+   ],
+   "es": "el frío",
+   "aceitasEs": [
+    "frío"
+   ],
+   "distratoresEs": [
+    "el calor",
+    "el viento",
+    "la lluvia",
+    "la nieve"
+   ],
+   "en": "the cold",
+   "aceitasEn": [
+    "cold",
+    "the cold"
+   ],
+   "distratoresEn": [
+    "the heat",
+    "the wind",
+    "the rain",
+    "the snow"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "natureza"
+   ],
+   "homografos": [
+    "pt-p123"
+   ],
+   "notaEs": "Como en español: «faz frio», hace frío. Pero sentir frío no va con «ter»: «estou com frio», tengo frío. «Que frio!», ¡qué frío!",
+   "notaEn": "The cold: «faz frio», it's cold out; «estou com frio», I'm cold — literally I'm with cold. A cold, the illness, is «o resfriado»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p125",
+   "tipo": "palavra",
+   "pt": "o jantar",
+   "aceitas": [
+    "jantar",
+    "a janta",
+    "janta"
+   ],
+   "es": "la cena",
+   "aceitasEs": [
+    "cena"
+   ],
+   "distratoresEs": [
+    "el almuerzo",
+    "el desayuno",
+    "la merienda",
+    "el postre"
+   ],
+   "en": "dinner",
+   "aceitasEn": [
+    "dinner",
+    "the dinner",
+    "supper",
+    "the supper"
+   ],
+   "distratoresEn": [
+    "lunch",
+    "breakfast",
+    "snack",
+    "dessert"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "comida"
+   ],
+   "notaEs": "Es la cena, pero masculino: «o jantar», «fazer o jantar». Es también el verbo cenar: «vamos jantar fora?». En casa se dice mucho «a janta». La comida del mediodía es «o almoço».",
+   "notaEn": "Dinner, the evening meal: «fazer o jantar», to make dinner. The same word is the verb to have dinner: «vamos jantar fora?», shall we eat out? At home people also say «a janta»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p126",
+   "tipo": "palavra",
+   "pt": "possível",
+   "aceitas": [
+    "possivel"
+   ],
+   "es": "posible",
+   "aceitasEs": [
+    "posible"
+   ],
+   "distratoresEs": [
+    "imposible",
+    "probable",
+    "fácil",
+    "visible"
+   ],
+   "en": "possible",
+   "aceitasEn": [
+    "possible"
+   ],
+   "distratoresEn": [
+    "impossible",
+    "likely",
+    "easy",
+    "visible"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "adjetivo"
+   ],
+   "notaEs": "Es posible, con «ss». Y donde el español dice «lo», el portugués dice «o»: «farei o possível», haré lo posible; «o importante», lo importante. Plural «possíveis».",
+   "notaEn": "Possible; plural «possíveis». «Fazer o possível» is to do one's best: «farei o possível», I'll do what I can. «O mais rápido possível», as soon as possible."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p127",
+   "tipo": "palavra",
+   "pt": "ajudar",
+   "aceitas": [
+    "ajudar",
+    "auxiliar"
+   ],
+   "es": "ayudar",
+   "aceitasEs": [
+    "ayudar"
+   ],
+   "distratoresEs": [
+    "ayunar",
+    "juzgar",
+    "cuidar",
+    "pedir"
+   ],
+   "en": "to help",
+   "aceitasEn": [
+    "to help",
+    "help",
+    "to assist",
+    "assist"
+   ],
+   "distratoresEn": [
+    "to fast",
+    "to judge",
+    "to look after",
+    "to ask"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "notaEs": "Es ayudar, con una j que suena como la «ll» del Río de la Plata, nunca como la jota. A la persona no se le pone «a»: «ajudei meu irmão», ayudé a mi hermano. Y el pronombre va antes: «me ajuda?», ¿me ayudas?",
+   "notaEn": "To help, with a direct object: «ajudei meu irmão», I helped my brother; «pode me ajudar?», can you help me? With a verb, «ajudar a»: «me ajuda a carregar?». The j sounds like the s in measure."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p128",
+   "tipo": "palavra",
+   "pt": "entrar",
+   "aceitas": [
+    "entrar"
+   ],
+   "es": "entrar",
+   "aceitasEs": [
+    "entrar",
+    "ingresar"
+   ],
+   "distratoresEs": [
+    "salir",
+    "enterrar",
+    "quedarse",
+    "subir"
+   ],
+   "en": "to enter",
+   "aceitasEn": [
+    "to enter",
+    "enter",
+    "to come in",
+    "come in",
+    "to go in",
+    "go in",
+    "to get in",
+    "get in",
+    "to go into",
+    "go into"
+   ],
+   "distratoresEn": [
+    "to leave",
+    "to knock",
+    "to climb",
+    "to bury"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "notaEs": "Igual que en español, pero siempre con «em»: «entrar na sala», entrar en la sala (o a la sala). Para pedir permiso: «posso entrar?», ¿puedo pasar?, ¿se puede?",
+   "notaEn": "To go in and to come in — Portuguese doesn't mark the direction. It takes «em»: «entrar na loja», to go into the store. «Posso entrar?», may I come in?"
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p129",
+   "tipo": "palavra",
+   "pt": "alto",
+   "aceitas": [
+    "alto",
+    "alta"
+   ],
+   "es": "alto",
+   "aceitasEs": [
+    "alto",
+    "alta"
+   ],
+   "distratoresEs": [
+    "bajo",
+    "ancho",
+    "delgado",
+    "grueso"
+   ],
+   "en": "tall / high",
+   "aceitasEn": [
+    "tall",
+    "high",
+    "loud"
+   ],
+   "distratoresEn": [
+    "short / low",
+    "wide / broad",
+    "thin / slim",
+    "thick / dense"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo"
+   ],
+   "notaEs": "Igual que en español: personas, cosas y voz («falar alto», hablar fuerte). La comparación también: «mais alto que eu», más alto que yo. Lo contrario es «baixo».",
+   "notaEn": "Tall for people, high for things, loud for sound: «ele é mais alto que eu», he's taller than me; «falar alto», to speak loudly. The opposite is «baixo»: short, low, quiet."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p130",
+   "tipo": "palavra",
+   "pt": "a verdade",
+   "aceitas": [
+    "verdade"
+   ],
+   "es": "la verdad",
+   "aceitasEs": [
+    "verdad"
+   ],
+   "distratoresEs": [
+    "la mentira",
+    "la verdura",
+    "la duda",
+    "la razón"
+   ],
+   "en": "the truth",
+   "aceitasEn": [
+    "truth",
+    "the truth"
+   ],
+   "distratoresEn": [
+    "the lie",
+    "the reason",
+    "the doubt",
+    "the secret"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Es la verdad, con «-dade», como «cidade» (ciudad) y «vontade» (voluntad). «Dizer a verdade», decir la verdad; «de verdade», de verdad; «na verdade», en realidad.",
+   "notaEn": "Truth: «dizer a verdade», to tell the truth; «é verdade», it's true. «Na verdade» is actually, in fact: «na verdade, não gostei»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p131",
+   "tipo": "palavra",
+   "pt": "viajar",
+   "aceitas": [
+    "viajar"
+   ],
+   "es": "viajar",
+   "aceitasEs": [
+    "viajar"
+   ],
+   "distratoresEs": [
+    "volar",
+    "mudarse",
+    "pasear",
+    "visitar"
+   ],
+   "en": "to travel",
+   "aceitasEn": [
+    "to travel",
+    "travel",
+    "to take a trip",
+    "take a trip",
+    "to go on a trip",
+    "go on a trip"
+   ],
+   "distratoresEn": [
+    "to fly",
+    "to move",
+    "to walk",
+    "to visit"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "viagem"
+   ],
+   "notaEs": "Igual que en español. El destino va con «para»: «vou viajar para o Chile», voy a viajar a Chile. Y solo, sin destino, es estar de viaje: «ele está viajando», está de viaje.",
+   "notaEn": "To travel; the destination takes «para»: «vou viajar para o Chile». «Ele está viajando» is he's away, on a trip. The noun is «a viagem»: «boa viagem!», have a good trip!"
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p132",
+   "tipo": "palavra",
+   "pt": "quente",
+   "aceitas": [
+    "quente"
+   ],
+   "es": "caliente",
+   "aceitasEs": [
+    "caliente",
+    "cálido",
+    "cálida",
+    "caluroso",
+    "calurosa"
+   ],
+   "distratoresEs": [
+    "frío",
+    "tibio",
+    "fresco",
+    "helado"
+   ],
+   "en": "hot",
+   "aceitasEn": [
+    "hot",
+    "warm"
+   ],
+   "distratoresEn": [
+    "cold",
+    "lukewarm",
+    "cool",
+    "frozen"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo"
+   ],
+   "notaEs": "Es caliente, y no cambia con el género: «a água está quente». Del clima, «está quente» o «faz calor», hace calor. Y quien siente calor dice «estou com calor», tengo calor.",
+   "notaEn": "Hot, and also warm: «o café está quente». For the weather, «está quente» or «faz calor»; for feeling hot yourself, «estou com calor». Same form for both genders."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p133",
+   "tipo": "palavra",
+   "pt": "o presente",
+   "aceitas": [
+    "presente"
+   ],
+   "regionais": {
+    "a prenda": "em Portugal"
+   },
+   "es": "el regalo",
+   "aceitasEs": [
+    "regalo",
+    "el obsequio",
+    "obsequio"
+   ],
+   "sinonimosEs": [
+    "el presente"
+   ],
+   "distratoresEs": [
+    "la sorpresa",
+    "la tarjeta",
+    "el premio",
+    "la propina"
+   ],
+   "en": "the gift",
+   "aceitasEn": [
+    "gift",
+    "the gift",
+    "present",
+    "the present"
+   ],
+   "distratoresEn": [
+    "the surprise",
+    "the card",
+    "the prize",
+    "the tip"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "social",
+    "falso-amigo"
+   ],
+   "notaEs": "En Brasil, «o presente» es el regalo: «ele me deu um presente», me dio un regalo. Regalar es «dar de presente» o «presentear». El presente del tiempo existe también, como en español. En Portugal se dice además «a prenda».\n🇧🇷 presente → 🇪🇸 regalo",
+   "notaEn": "Gift, present: «ele me deu um presente», he gave me a present. To give as a gift is «dar de presente»; a birthday present, «um presente de aniversário». In Portugal also «a prenda»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p134",
+   "tipo": "palavra",
+   "pt": "nadar",
+   "aceitas": [
+    "nadar"
+   ],
+   "es": "nadar",
+   "aceitasEs": [
+    "nadar"
+   ],
+   "distratoresEs": [
+    "bucear",
+    "flotar",
+    "navegar",
+    "remar"
+   ],
+   "en": "to swim",
+   "aceitasEn": [
+    "to swim",
+    "swim"
+   ],
+   "distratoresEn": [
+    "to dive",
+    "to float",
+    "to sail",
+    "to row"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "notaEs": "Igual que en español, y la habilidad también va con «saber»: «você sabe nadar?», ¿sabes nadar? La natación es «a natação», y la piscina, «a piscina».",
+   "notaEn": "To swim. Being able to swim takes «saber», not «poder»: «você sabe nadar?», can you swim? A swimming pool is «a piscina»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p135",
+   "tipo": "palavra",
+   "pt": "a semana",
+   "aceitas": [
+    "semana"
+   ],
+   "es": "la semana",
+   "aceitasEs": [
+    "semana"
+   ],
+   "distratoresEs": [
+    "el mes",
+    "el día",
+    "el año",
+    "la quincena"
+   ],
+   "en": "the week",
+   "aceitasEn": [
+    "week",
+    "the week"
+   ],
+   "distratoresEn": [
+    "the month",
+    "the day",
+    "the year",
+    "the weekend"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Igual que en español. Los días de la semana van numerados: «segunda-feira» (lunes), «terça-feira» (martes)… «A semana que vem», la semana que viene; «o fim de semana», el fin de semana.",
+   "notaEn": "Week: «semana que vem», next week; «duas semanas», two weeks; «o fim de semana», the weekend. Weekdays are numbered: «segunda-feira», Monday, is the second day."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p136",
+   "tipo": "palavra",
+   "pt": "triste",
+   "aceitas": [
+    "triste"
+   ],
+   "es": "triste",
+   "aceitasEs": [
+    "triste"
+   ],
+   "distratoresEs": [
+    "feliz",
+    "enojado",
+    "cansado",
+    "aburrido"
+   ],
+   "en": "sad",
+   "aceitasEn": [
+    "sad",
+    "unhappy"
+   ],
+   "distratoresEn": [
+    "happy",
+    "angry",
+    "tired",
+    "bored"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo"
+   ],
+   "notaEs": "Igual que en español. Ponerse triste es «ficar triste»: «ela ficou triste», se puso triste. «Que triste!», ¡qué pena!",
+   "notaEn": "Sad, same form for both genders. To get sad is «ficar triste»: «ela ficou triste», she got upset. «Que triste!», how sad!"
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p137",
+   "tipo": "palavra",
+   "pt": "o centro",
+   "aceitas": [
+    "centro",
+    "o centro da cidade",
+    "centro da cidade"
+   ],
+   "es": "el centro",
+   "aceitasEs": [
+    "centro",
+    "el centro de la ciudad"
+   ],
+   "distratoresEs": [
+    "las afueras",
+    "la esquina",
+    "el barrio",
+    "el borde"
+   ],
+   "en": "the center",
+   "aceitasEn": [
+    "center",
+    "the center",
+    "centre",
+    "the centre",
+    "downtown",
+    "the city center",
+    "city center",
+    "the city centre",
+    "city centre",
+    "the town center",
+    "town center"
+   ],
+   "distratoresEn": [
+    "the outskirts",
+    "the corner",
+    "the neighborhood",
+    "the edge"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cidade"
+   ],
+   "notaEs": "Igual que en español, y solo, sin más, es el centro de la ciudad: «o escritório fica no centro». «Ir ao centro», ir al centro. El centro comercial es «o shopping».",
+   "notaEn": "The center, and on its own the city center, downtown: «o escritório fica no centro», the office is downtown. A shopping mall is «o shopping»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p138",
+   "tipo": "palavra",
+   "pt": "o troco",
+   "aceitas": [
+    "troco"
+   ],
+   "es": "el cambio",
+   "aceitasEs": [
+    "cambio",
+    "el vuelto",
+    "vuelto",
+    "la vuelta",
+    "vuelta"
+   ],
+   "distratoresEs": [
+    "la propina",
+    "la cuenta",
+    "el precio",
+    "el recibo"
+   ],
+   "en": "the change",
+   "aceitasEn": [
+    "change",
+    "the change"
+   ],
+   "distratoresEn": [
+    "the tip",
+    "the bill",
+    "the price",
+    "the receipt"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "compras",
+    "economia"
+   ],
+   "notaEs": "Es el cambio, el vuelto: el dinero que se devuelve. «Pode ficar com o troco», quédate con el cambio. Viene de «trocar», cambiar; y el dinero suelto es «o trocado»: «tem trocado?», ¿tienes suelto?",
+   "notaEn": "Change, the money you get back: «pode ficar com o troco», keep the change. Small bills and coins are «trocado»: «tem trocado?», do you have change? Any other change is «a mudança»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p139",
+   "tipo": "palavra",
+   "pt": "o pai",
+   "aceitas": [
+    "pai",
+    "o papai",
+    "papai"
+   ],
+   "es": "el padre",
+   "aceitasEs": [
+    "padre",
+    "el papá",
+    "papá"
+   ],
+   "distratoresEs": [
+    "el abuelo",
+    "el tío",
+    "el padrino",
+    "el suegro"
+   ],
+   "en": "the father",
+   "aceitasEn": [
+    "father",
+    "the father",
+    "dad",
+    "the dad"
+   ],
+   "distratoresEn": [
+    "the grandfather",
+    "the uncle",
+    "the godfather",
+    "the father-in-law"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "família",
+    "falso-amigo"
+   ],
+   "notaEs": "Es el padre, y «os pais» son los padres, el papá y la mamá: «moro com meus pais». Sin tilde, «pais» son los padres; con tilde, «país» es el país. Y el «padre» portugués es el cura.\n🇧🇷 pai → 🇪🇸 padre\n🇧🇷 padre → 🇪🇸 cura, sacerdote",
+   "notaEn": "Father, dad («papai»). The plural «os pais» means parents: «moro com meus pais», I live with my parents. Careful: with an accent, «o país» is the country."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p140",
+   "tipo": "palavra",
+   "pt": "o banco",
+   "aceitas": [
+    "banco"
+   ],
+   "es": "el banco",
+   "aceitasEs": [
+    "banco"
+   ],
+   "distratoresEs": [
+    "la caja",
+    "la oficina",
+    "el mercado",
+    "la tienda"
+   ],
+   "en": "the bank / the bench",
+   "aceitasEn": [
+    "bank",
+    "the bank",
+    "bench",
+    "the bench",
+    "seat",
+    "the seat"
+   ],
+   "distratoresEn": [
+    "the office / the desk",
+    "the store / the shelf",
+    "the market / the stall",
+    "the safe / the vault"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cidade",
+    "economia"
+   ],
+   "notaEs": "Igual que en español, en los dos sentidos: el del dinero («tem um banco por aqui?») y el asiento («o banco da praça»). En el carro, «o banco de trás» es el asiento de atrás.",
+   "notaEn": "Both the bank and the bench: «tem um banco por aqui?», is there a bank around here?; «o banco da praça», the park bench. In a car it's the seat: «o banco de trás», the back seat."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p141",
+   "tipo": "palavra",
+   "pt": "a língua",
+   "aceitas": [
+    "lingua",
+    "o idioma",
+    "idioma"
+   ],
+   "es": "la lengua",
+   "aceitasEs": [
+    "lengua",
+    "el idioma",
+    "idioma"
+   ],
+   "distratoresEs": [
+    "la boca",
+    "la palabra",
+    "la voz",
+    "la letra"
+   ],
+   "en": "the language / the tongue",
+   "aceitasEn": [
+    "language",
+    "the language",
+    "tongue",
+    "the tongue"
+   ],
+   "distratoresEn": [
+    "the mouth / the lips",
+    "the voice / the sound",
+    "the word / the phrase",
+    "the accent / the tone"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "corpo",
+    "cultura"
+   ],
+   "notaEs": "Como en español, la del cuerpo y la que se habla: «ela fala três línguas», habla tres idiomas. «Idioma» también existe. La u suena, como en «lengua»: «LÍN-gua».",
+   "notaEn": "Both the language and the tongue: «ela fala três línguas», she speaks three languages; «língua materna», mother tongue. «O idioma» also means language. The u is pronounced: «LEEN-gwa»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p142",
+   "tipo": "palavra",
+   "pt": "a comida",
+   "aceitas": [
+    "comida",
+    "o alimento",
+    "alimento"
+   ],
+   "es": "la comida",
+   "aceitasEs": [
+    "comida",
+    "el alimento",
+    "alimento"
+   ],
+   "distratoresEs": [
+    "la bebida",
+    "la cocina",
+    "la cena",
+    "la receta"
+   ],
+   "en": "food",
+   "aceitasEn": [
+    "food",
+    "the food"
+   ],
+   "distratoresEn": [
+    "drink",
+    "dinner",
+    "recipe",
+    "kitchen"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "comida"
+   ],
+   "notaEs": "En Brasil, «a comida» es lo que se come, nunca una hora del día: el almuerzo es «o almoço», y la cena, «o jantar». La comida rica es «gostosa»: «a comida está muito boa».",
+   "notaEn": "Food: «a comida está muito boa», the food is really good; «comida caseira», home cooking. A meal is «a refeição»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p143",
+   "tipo": "palavra",
+   "pt": "assim",
+   "aceitas": [
+    "assim",
+    "desse jeito",
+    "dessa forma",
+    "desse modo"
+   ],
+   "es": "así",
+   "aceitasEs": [
+    "así",
+    "de este modo",
+    "de esta manera"
+   ],
+   "distratoresEs": [
+    "allí",
+    "aquí",
+    "aún",
+    "ahí"
+   ],
+   "en": "like this",
+   "aceitasEn": [
+    "like this",
+    "like that",
+    "this way",
+    "that way",
+    "so",
+    "thus"
+   ],
+   "distratoresEn": [
+    "right here",
+    "even so",
+    "so much",
+    "no way"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "notaEs": "Es así: «assim é a vida», así es la vida; «mesmo assim», aun así. Pero «assim que» es en cuanto: «assim que chegar, te ligo», en cuanto llegue, te llamo. El así que de consecuencia es «então».\n🇧🇷 assim que → 🇪🇸 en cuanto\n🇧🇷 então → 🇪🇸 así que",
+   "notaEn": "Like this, like that, this way: «faz assim», do it like this; «assim é a vida», that's life. «Mesmo assim» is even so, and «assim que» is as soon as."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p144",
+   "tipo": "palavra",
+   "pt": "o acidente",
+   "aceitas": [
+    "acidente"
+   ],
+   "es": "el accidente",
+   "aceitasEs": [
+    "accidente"
+   ],
+   "distratoresEs": [
+    "el incidente",
+    "el incendio",
+    "el atraso",
+    "el asalto"
+   ],
+   "en": "the accident",
+   "aceitasEn": [
+    "accident",
+    "the accident",
+    "crash",
+    "the crash"
+   ],
+   "distratoresEn": [
+    "the incident",
+    "the fire",
+    "the delay",
+    "the robbery"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Es el accidente, con una sola c: el portugués no escribe «cc» («acidente», «ação», «direção»). «Houve um acidente», hubo un accidente; «sofrer um acidente», tener un accidente.",
+   "notaEn": "Accident: «houve um acidente», there was an accident; «sofrer um acidente», to have an accident. By accident, unintentionally, is «sem querer»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p145",
+   "tipo": "palavra",
+   "pt": "as férias",
+   "aceitas": [
+    "ferias"
+   ],
+   "es": "las vacaciones",
+   "aceitasEs": [
+    "vacaciones"
+   ],
+   "distratoresEs": [
+    "las ferias",
+    "las fiestas",
+    "las visitas",
+    "las compras"
+   ],
+   "en": "the vacation",
+   "aceitasEn": [
+    "vacation",
+    "the vacation",
+    "holidays",
+    "the holidays",
+    "holiday",
+    "the holiday"
+   ],
+   "distratoresEn": [
+    "the fair",
+    "the party",
+    "the weekend",
+    "the visit"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "viagem",
+    "trabalho",
+    "falso-amigo"
+   ],
+   "notaEs": "Siempre en plural: «as férias», las vacaciones. «Estar de férias», estar de vacaciones; «tirar férias», tomarse vacaciones. La feria es «a feira», y el día feriado, «o feriado».\n🇧🇷 férias → 🇪🇸 vacaciones\n🇧🇷 feira → 🇪🇸 feria",
+   "notaEn": "Vacation, always plural: «as férias». «Estar de férias», to be on vacation; «tirar férias», to take time off. A single public holiday is «o feriado»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p146",
+   "tipo": "palavra",
+   "pt": "rápido",
+   "aceitas": [
+    "rapido",
+    "rapida",
+    "veloz",
+    "depressa"
+   ],
+   "es": "rápido",
+   "aceitasEs": [
+    "rápido",
+    "rápida",
+    "veloz",
+    "deprisa",
+    "rápidamente"
+   ],
+   "distratoresEs": [
+    "lento",
+    "tarde",
+    "tranquilo",
+    "temprano"
+   ],
+   "en": "fast",
+   "aceitasEn": [
+    "fast",
+    "quick",
+    "quickly",
+    "rapid",
+    "speedy"
+   ],
+   "distratoresEn": [
+    "slow",
+    "late",
+    "calm",
+    "soon"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo"
+   ],
+   "notaEs": "Igual que en español, adjetivo y adverbio: «um carro rápido», «o tempo passa rápido». También se dice «depressa». Y «rapidinho» es un momentito: «é rapidinho», es un minuto.",
+   "notaEn": "Fast, quick, and as an adverb quickly, with no ending: «o tempo passa rápido», time flies. «Depressa» also means quickly, and «rapidinho» is real quick, just a sec."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p147",
+   "tipo": "palavra",
+   "pt": "a prova",
+   "aceitas": [
+    "prova",
+    "o exame",
+    "exame",
+    "o teste",
+    "teste"
+   ],
+   "es": "el examen",
+   "aceitasEs": [
+    "examen",
+    "la prueba",
+    "prueba"
+   ],
+   "distratoresEs": [
+    "la nota",
+    "la clase",
+    "la tarea",
+    "la lección"
+   ],
+   "en": "the test",
+   "aceitasEn": [
+    "test",
+    "the test",
+    "exam",
+    "the exam",
+    "quiz",
+    "the quiz"
+   ],
+   "distratoresEn": [
+    "the grade",
+    "the lesson",
+    "the homework",
+    "the class"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "substantivo",
+    "escola"
+   ],
+   "notaEs": "Es el examen, la prueba. Aprobar es «passar na prova»: «passei na prova!», ¡aprobé el examen!; «fazer uma prova», hacer o rendir un examen. Y es también la prueba de algo: «a prova do crime».",
+   "notaEn": "Test, exam: «passar na prova», to pass the test; «fazer uma prova», to take a test. It also means proof: «a prova do crime», the evidence."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p148",
+   "tipo": "palavra",
+   "pt": "comprar",
+   "aceitas": [
+    "comprar",
+    "adquirir"
+   ],
+   "es": "comprar",
+   "aceitasEs": [
+    "comprar",
+    "adquirir"
+   ],
+   "distratoresEs": [
+    "vender",
+    "cobrar",
+    "pagar",
+    "cambiar"
+   ],
+   "en": "to buy",
+   "aceitasEn": [
+    "to buy",
+    "buy",
+    "to purchase",
+    "purchase"
+   ],
+   "distratoresEn": [
+    "to sell",
+    "to charge",
+    "to pay",
+    "to change"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "compras"
+   ],
+   "notaEs": "Igual que en español: «comprei», compré; «comprou», compró. Ir de compras es «fazer compras».",
+   "notaEn": "To buy: «comprei um carro novo», I bought a new car. Going shopping is «fazer compras». Regular -ar verb: «compro», «comprei», «comprou»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p149",
+   "tipo": "palavra",
+   "pt": "tentar",
+   "aceitas": [
+    "tentar"
+   ],
+   "es": "intentar",
+   "aceitasEs": [
+    "intentar",
+    "tratar de",
+    "tratar"
+   ],
+   "distratoresEs": [
+    "lograr",
+    "dejar",
+    "temer",
+    "tardar"
+   ],
+   "en": "to try",
+   "aceitasEn": [
+    "to try",
+    "try",
+    "to attempt",
+    "attempt"
+   ],
+   "distratoresEn": [
+    "to manage",
+    "to quit",
+    "to fear",
+    "to delay"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "notaEs": "En portugués es sobre todo intentar: «vou tentar», voy a intentarlo; «vamos tentar de novo», intentémoslo otra vez. El intento es «a tentativa». El tentar de la tentación también existe, pero se oye mucho menos.",
+   "notaEn": "To try, to attempt: «vamos tentar de novo», let's try again. «A tentativa» is an attempt, not something tentative. It can also mean to tempt, but that is the rarer use."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p150",
+   "tipo": "palavra",
+   "pt": "conversar",
+   "aceitas": [
+    "conversar",
+    "bater papo",
+    "papear"
+   ],
+   "es": "conversar",
+   "aceitasEs": [
+    "conversar",
+    "charlar",
+    "platicar"
+   ],
+   "distratoresEs": [
+    "pelear",
+    "gritar",
+    "susurrar",
+    "escuchar"
+   ],
+   "en": "to talk",
+   "aceitasEn": [
+    "to talk",
+    "talk",
+    "to chat",
+    "chat",
+    "to converse",
+    "converse",
+    "to have a chat"
+   ],
+   "distratoresEn": [
+    "to argue",
+    "to shout",
+    "to whisper",
+    "to listen"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "social"
+   ],
+   "notaEs": "Brasil lo usa mucho más que el español: es el charlar de todos los días. «Conversar com alguém», hablar con alguien; «depois a gente conversa», después hablamos («a gente» es nosotros). Charlar también es «bater papo».",
+   "notaEn": "To talk, to chat — far more everyday than English converse: «depois a gente conversa», we'll talk later («a gente» means we). Talking with someone is «conversar com». Chatting is also «bater papo»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p151",
+   "tipo": "palavra",
+   "pt": "descansar",
+   "aceitas": [
+    "descansar",
+    "repousar"
+   ],
+   "es": "descansar",
+   "aceitasEs": [
+    "descansar",
+    "reposar"
+   ],
+   "distratoresEs": [
+    "cansar",
+    "correr",
+    "trabajar",
+    "esperar"
+   ],
+   "en": "to rest",
+   "aceitasEn": [
+    "to rest",
+    "rest",
+    "to relax",
+    "relax",
+    "to take a break",
+    "take a break"
+   ],
+   "distratoresEn": [
+    "to tire",
+    "to run",
+    "to work",
+    "to wait"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "saúde"
+   ],
+   "notaEs": "Igual que en español: «você deve descansar», deberías descansar. También es quedarse tranquilo: «pode descansar, eu resolvo», tranquilo, yo me encargo.",
+   "notaEn": "To rest: «você deve descansar», you should rest. It also means to stop worrying: «pode descansar, eu resolvo», relax, I'll handle it. «Descanse em paz», rest in peace."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p152",
+   "tipo": "palavra",
+   "pt": "simpático",
+   "aceitas": [
+    "simpatico",
+    "simpatica",
+    "gente boa",
+    "amavel",
+    "agradavel"
+   ],
+   "es": "simpático",
+   "aceitasEs": [
+    "simpático",
+    "simpática",
+    "amable",
+    "agradable",
+    "majo",
+    "maja"
+   ],
+   "distratoresEs": [
+    "antipático",
+    "tímido",
+    "aburrido",
+    "serio"
+   ],
+   "en": "friendly",
+   "aceitasEn": [
+    "friendly",
+    "nice",
+    "pleasant",
+    "likeable",
+    "likable",
+    "kind"
+   ],
+   "distratoresEn": [
+    "rude",
+    "shy",
+    "boring",
+    "serious"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "social",
+    "falso-amigo"
+   ],
+   "notaEs": "Igual que en español, para la persona agradable y amable: «as pessoas aqui são simpáticas». En la conversación de Brasil también se dice «legal» o «gente boa».",
+   "notaEn": "Nice, friendly, pleasant to be around: «ela é muito simpática». It is not sympathetic, which is «compreensivo». In conversation Brazilians also say «legal» or «gente boa».\n🇧🇷 simpático → 🇺🇸 friendly, nice\n🇧🇷 compreensivo → 🇺🇸 sympathetic"
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p153",
+   "tipo": "palavra",
+   "pt": "a conversa",
+   "aceitas": [
+    "conversa",
+    "o papo",
+    "papo",
+    "o bate papo",
+    "bate papo",
+    "a conversacao",
+    "conversacao"
+   ],
+   "es": "la conversación",
+   "aceitasEs": [
+    "conversación",
+    "la charla",
+    "charla",
+    "la plática",
+    "plática"
+   ],
+   "distratoresEs": [
+    "la pelea",
+    "el silencio",
+    "el discurso",
+    "la reunión"
+   ],
+   "en": "the conversation",
+   "aceitasEn": [
+    "conversation",
+    "the conversation",
+    "talk",
+    "the talk",
+    "chat",
+    "the chat"
+   ],
+   "distratoresEn": [
+    "the fight",
+    "the silence",
+    "the speech",
+    "the meeting"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "substantivo",
+    "social"
+   ],
+   "notaEs": "Es la conversación y también la charla: «chega de conversa!», ¡basta de charla! «Conversação» existe, pero suena a clase de idiomas. Con artículo es el sustantivo; sin él puede ser el verbo: «ela conversa muito», ella habla mucho.",
+   "notaEn": "Conversation, and also mere talk: «chega de conversa!», enough talk!; «isso é conversa», that's just talk. «Conversação» exists but sounds like a language class. «Conversa fiada», idle chatter."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p154",
+   "tipo": "palavra",
+   "pt": "o mundo",
+   "aceitas": [
+    "mundo"
+   ],
+   "es": "el mundo",
+   "aceitasEs": [
+    "mundo"
+   ],
+   "distratoresEs": [
+    "el país",
+    "el cielo",
+    "el mar",
+    "el pueblo"
+   ],
+   "en": "the world",
+   "aceitasEn": [
+    "world",
+    "the world"
+   ],
+   "distratoresEn": [
+    "the country",
+    "the sky",
+    "the sea",
+    "the town"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Es el mundo, y «todo mundo», sin artículo, es todo el mundo, todos: «todo mundo sabe disso», todo el mundo lo sabe. El mundo entero es «o mundo todo». En Portugal se dice «toda a gente».",
+   "notaEn": "World: «o mundo todo», the whole world. «Todo mundo», with no article, means everybody: «todo mundo sabe disso», everybody knows that. In Portugal it's «toda a gente»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p155",
+   "tipo": "palavra",
+   "pt": "o domingo",
+   "aceitas": [
+    "domingo"
+   ],
+   "es": "el domingo",
+   "aceitasEs": [
+    "domingo"
+   ],
+   "distratoresEs": [
+    "el sábado",
+    "el lunes",
+    "el viernes",
+    "el jueves"
+   ],
+   "en": "Sunday",
+   "aceitasEn": [
+    "sunday",
+    "on sunday"
+   ],
+   "distratoresEn": [
+    "Saturday",
+    "Monday",
+    "Friday",
+    "Thursday"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Es el domingo, con minúscula. «No domingo», el domingo; «aos domingos», los domingos. Solo sábado y domingo tienen nombre: los otros días se cuentan, «segunda-feira», «terça-feira»…",
+   "notaEn": "Sunday, lowercase like every weekday: «no domingo», on Sunday; «aos domingos», on Sundays. Only Saturday and Sunday have names; the other days are numbered: «segunda-feira», Monday…"
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p156",
+   "tipo": "palavra",
+   "pt": "fumar",
+   "aceitas": [
+    "fumar"
+   ],
+   "es": "fumar",
+   "aceitasEs": [
+    "fumar"
+   ],
+   "distratoresEs": [
+    "toser",
+    "beber",
+    "respirar",
+    "quemar"
+   ],
+   "en": "to smoke",
+   "aceitasEn": [
+    "to smoke",
+    "smoke"
+   ],
+   "distratoresEn": [
+    "to cough",
+    "to drink",
+    "to breathe",
+    "to burn"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "saúde"
+   ],
+   "notaEs": "Igual que en español. Dejar de fumar es «deixar de fumar» o «parar de fumar». En los carteles: «proibido fumar».",
+   "notaEn": "To smoke: «você fuma?», do you smoke? Quitting is «deixar de fumar» or «parar de fumar». Signs say «proibido fumar», no smoking."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p157",
+   "tipo": "palavra",
+   "pt": "o guarda-chuva",
+   "aceitas": [
+    "guarda chuva"
+   ],
+   "regionais": {
+    "o chapéu de chuva": "em Portugal"
+   },
+   "es": "el paraguas",
+   "aceitasEs": [
+    "paraguas",
+    "la sombrilla",
+    "sombrilla"
+   ],
+   "distratoresEs": [
+    "el impermeable",
+    "el sombrero",
+    "la bufanda",
+    "el abrigo"
+   ],
+   "en": "the umbrella",
+   "aceitasEn": [
+    "umbrella",
+    "the umbrella",
+    "brolly"
+   ],
+   "distratoresEn": [
+    "the raincoat",
+    "the hat",
+    "the scarf",
+    "the coat"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "substantivo",
+    "objetos"
+   ],
+   "notaEs": "Es el paraguas: palabra por palabra, el que guarda de la «chuva», la lluvia (la ch portuguesa es muchas veces la ll española). La sombrilla de playa es «o guarda-sol». En Portugal también se dice «o chapéu de chuva».",
+   "notaEn": "Umbrella, literally rain-guard: «chuva» is rain. Plural «os guarda-chuvas». The beach kind is «o guarda-sol»; in Portugal «o chapéu de chuva» is also common."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p158",
+   "tipo": "palavra",
+   "pt": "o almoço",
+   "aceitas": [
+    "almoco"
+   ],
+   "es": "el almuerzo",
+   "aceitasEs": [
+    "almuerzo",
+    "la comida",
+    "comida"
+   ],
+   "distratoresEs": [
+    "el desayuno",
+    "la cena",
+    "la merienda",
+    "el postre"
+   ],
+   "en": "lunch",
+   "aceitasEn": [
+    "lunch",
+    "the lunch"
+   ],
+   "distratoresEn": [
+    "breakfast",
+    "dinner",
+    "snack",
+    "dessert"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "comida"
+   ],
+   "notaEs": "Es el almuerzo, la comida del mediodía, que en Brasil es la principal. El verbo es «almoçar»: «já almoçou?», ¿ya almorzaste? La ç suena siempre s.",
+   "notaEn": "Lunch, the main meal of the day in Brazil: «no almoço», at lunch. The verb is «almoçar»: «já almoçou?», have you had lunch?"
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p159",
+   "tipo": "palavra",
+   "pt": "caro",
+   "aceitas": [
+    "caro",
+    "cara"
+   ],
+   "es": "caro",
+   "aceitasEs": [
+    "caro",
+    "cara",
+    "costoso",
+    "costosa"
+   ],
+   "distratoresEs": [
+    "barato",
+    "gratis",
+    "raro",
+    "rico"
+   ],
+   "en": "expensive",
+   "aceitasEn": [
+    "expensive",
+    "costly",
+    "pricey",
+    "dear"
+   ],
+   "distratoresEn": [
+    "cheap",
+    "free",
+    "rare",
+    "rich"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "compras"
+   ],
+   "notaEs": "Igual que en español: «é caro», es caro; lo barato es «barato». En las cartas también es querido: «caro amigo».",
+   "notaEn": "Expensive: «é bonito, só que é caro», it's nice, but it's expensive. Cheap is «barato». In letters it means dear: «caro amigo»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p160",
+   "tipo": "palavra",
+   "pt": "a irmã",
+   "aceitas": [
+    "irma"
+   ],
+   "es": "la hermana",
+   "aceitasEs": [
+    "hermana"
+   ],
+   "distratoresEs": [
+    "la prima",
+    "la hija",
+    "la tía",
+    "la sobrina"
+   ],
+   "en": "the sister",
+   "aceitasEn": [
+    "sister",
+    "the sister"
+   ],
+   "distratoresEn": [
+    "the cousin",
+    "the daughter",
+    "the aunt",
+    "the niece"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "família"
+   ],
+   "notaEs": "Es la hermana, sin la h ni la e. La ã final es una a nasal, dicha por la nariz y sin n al final. El masculino es «o irmão», y «os irmãos» son los hermanos.",
+   "notaEn": "Sister; brother is «o irmão», and «os irmãos» can mean brothers and sisters. The final ã is a nasal a, with no n sound at the end."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p161",
+   "tipo": "palavra",
+   "pt": "o marido",
+   "aceitas": [
+    "marido",
+    "o esposo",
+    "esposo"
+   ],
+   "es": "el marido",
+   "aceitasEs": [
+    "marido",
+    "el esposo",
+    "esposo"
+   ],
+   "distratoresEs": [
+    "el novio",
+    "el hermano",
+    "el suegro",
+    "el padre"
+   ],
+   "en": "the husband",
+   "aceitasEn": [
+    "husband",
+    "the husband"
+   ],
+   "distratoresEn": [
+    "the boyfriend",
+    "the brother",
+    "the father-in-law",
+    "the father"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "família"
+   ],
+   "notaEs": "Es el marido, el esposo: «conheci meu marido no trabalho», conocí a mi marido en el trabajo. Ojo con los vecinos: el novio es «o namorado», y el prometido, «o noivo».",
+   "notaEn": "Husband: «meu marido». «Esposo» also exists, a bit more formal. Wife is «a mulher» or «a esposa»; a boyfriend is «o namorado»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p162",
+   "tipo": "palavra",
+   "pt": "difícil",
+   "aceitas": [
+    "dificil"
+   ],
+   "es": "difícil",
+   "aceitasEs": [
+    "difícil"
+   ],
+   "distratoresEs": [
+    "fácil",
+    "sencillo",
+    "barato",
+    "rápido"
+   ],
+   "en": "difficult",
+   "aceitasEn": [
+    "difficult",
+    "hard",
+    "tough",
+    "tricky"
+   ],
+   "distratoresEn": [
+    "easy",
+    "simple",
+    "cheap",
+    "fast"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo"
+   ],
+   "notaEs": "Igual que en español, pero el plural cambia: «difícil», «difíceis» (como «fácil», «fáceis»). Y «é difícil» también es poco probable: «é difícil ele vir», es difícil que venga.",
+   "notaEn": "Difficult, hard: «o primeiro dia foi difícil». The plural is «difíceis». «É difícil» also means unlikely: «é difícil ele vir», he's unlikely to come."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p163",
+   "tipo": "palavra",
+   "pt": "o apartamento",
+   "aceitas": [
+    "apartamento",
+    "o ape",
+    "ape"
+   ],
+   "es": "el apartamento",
+   "aceitasEs": [
+    "apartamento",
+    "el departamento",
+    "departamento",
+    "el piso",
+    "piso"
+   ],
+   "distratoresEs": [
+    "el edificio",
+    "la casa",
+    "el cuarto",
+    "el ascensor"
+   ],
+   "en": "the apartment",
+   "aceitasEn": [
+    "apartment",
+    "the apartment",
+    "flat",
+    "the flat"
+   ],
+   "distratoresEn": [
+    "the building",
+    "the house",
+    "the room",
+    "the elevator"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "casa"
+   ],
+   "notaEs": "Es el departamento, el piso: «moro num apartamento», vivo en un departamento. En la conversación, «o apê». Y «o andar» es el piso del edificio: «moro no quinto andar», vivo en el quinto piso.",
+   "notaEn": "Apartment, flat; casually «o apê». The floor it's on is «o andar»: «moro no quinto andar», I live on the fifth floor. «Num» is «em» + «um»: «num apartamento», in an apartment."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p164",
+   "tipo": "palavra",
+   "pt": "ocupado",
+   "aceitas": [
+    "ocupado",
+    "ocupada"
+   ],
+   "es": "ocupado",
+   "aceitasEs": [
+    "ocupado",
+    "ocupada"
+   ],
+   "distratoresEs": [
+    "libre",
+    "vacío",
+    "cansado",
+    "cerrado"
+   ],
+   "en": "busy / taken",
+   "aceitasEn": [
+    "busy",
+    "taken",
+    "occupied",
+    "engaged"
+   ],
+   "distratoresEn": [
+    "free / available",
+    "empty / vacant",
+    "tired / worn out",
+    "closed / shut"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "cotidiano"
+   ],
+   "notaEs": "Igual que en español, para personas y lugares: «estou ocupado»; «esse lugar está ocupado?», ¿está ocupado este asiento? Y el teléfono que comunica «dá ocupado».",
+   "notaEn": "Busy («estou ocupado», I'm busy) and taken: «esse lugar está ocupado?», is this seat taken? A busy phone line «dá ocupado»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p165",
+   "tipo": "palavra",
+   "pt": "procurar",
+   "aceitas": [
+    "procurar"
+   ],
+   "es": "buscar",
+   "aceitasEs": [
+    "buscar"
+   ],
+   "distratoresEs": [
+    "encontrar",
+    "perder",
+    "esconder",
+    "guardar"
+   ],
+   "en": "to look for",
+   "aceitasEn": [
+    "to look for",
+    "look for",
+    "to search for",
+    "search for",
+    "to search",
+    "search",
+    "to seek",
+    "seek"
+   ],
+   "distratoresEn": [
+    "to find",
+    "to lose",
+    "to hide",
+    "to keep"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "falso-amigo"
+   ],
+   "notaEs": "Es buscar: «procuro meu celular», busco mi celular; «procurar emprego», buscar trabajo. El «buscar» de Brasil es ir a buscar, recoger: «vou te buscar no aeroporto», voy a buscarte al aeropuerto. En registro formal también es tratar de: «procurei ajudar».\n🇧🇷 procurar → 🇪🇸 buscar\n🇧🇷 buscar → 🇪🇸 ir a buscar, recoger\n🇧🇷 tentar → 🇪🇸 intentar, procurar",
+   "notaEn": "To look for: «procuro meu celular», I'm looking for my phone; «procurar emprego», to look for a job. «Procurar alguém» is also to go and see someone: «procure o gerente», ask for the manager."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p166",
+   "tipo": "palavra",
+   "pt": "esperar",
+   "aceitas": [
+    "esperar",
+    "aguardar"
+   ],
+   "es": "esperar",
+   "aceitasEs": [
+    "esperar",
+    "aguardar"
+   ],
+   "distratoresEs": [
+    "apurarse",
+    "irse",
+    "dudar",
+    "desesperar"
+   ],
+   "en": "to wait / to hope",
+   "aceitasEn": [
+    "to wait",
+    "wait",
+    "to hope",
+    "hope",
+    "to wait for",
+    "wait for",
+    "to expect",
+    "expect"
+   ],
+   "distratoresEn": [
+    "to hurry / to rush",
+    "to leave / to go away",
+    "to doubt / to distrust",
+    "to give up / to despair"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "notaEs": "Igual que en español, con sus dos sentidos: aguardar («espera aí!», ¡espera!) y tener esperanza («espero que você goste», espero que te guste). Como en español, «esperar que» pide subjuntivo.",
+   "notaEn": "Both to wait and to hope: «espera aí!», hold on!; «espero que você goste», I hope you like it — «esperar que» takes the subjunctive. Waiting for something takes no preposition: «espero o ônibus»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p167",
+   "tipo": "palavra",
+   "pt": "o táxi",
+   "aceitas": [
+    "taxi"
+   ],
+   "es": "el taxi",
+   "aceitasEs": [
+    "taxi"
+   ],
+   "distratoresEs": [
+    "el autobús",
+    "el metro",
+    "el tren",
+    "el avión"
+   ],
+   "en": "the taxi",
+   "aceitasEn": [
+    "taxi",
+    "the taxi",
+    "cab",
+    "the cab",
+    "taxicab"
+   ],
+   "distratoresEn": [
+    "the bus",
+    "the subway",
+    "the train",
+    "the plane"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cidade",
+    "viagem"
+   ],
+   "notaEs": "Es el taxi, pero con tilde: «táxi». Se toma con «pegar»: «pegar um táxi», tomar un taxi. El que lo maneja es «o taxista».",
+   "notaEn": "Taxi, cab, written with an accent: «táxi». You catch one with «pegar»: «vamos pegar um táxi». The driver is «o taxista»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p168",
+   "tipo": "palavra",
+   "pt": "o emprego",
+   "aceitas": [
+    "emprego"
+   ],
+   "es": "el empleo",
+   "aceitasEs": [
+    "empleo",
+    "el trabajo",
+    "trabajo",
+    "el puesto",
+    "puesto",
+    "el puesto de trabajo"
+   ],
+   "distratoresEs": [
+    "el sueldo",
+    "el jefe",
+    "el ascenso",
+    "la entrevista"
+   ],
+   "en": "employment",
+   "aceitasEn": [
+    "employment",
+    "job",
+    "the job",
+    "position",
+    "the position"
+   ],
+   "distratoresEn": [
+    "salary",
+    "promotion",
+    "retirement",
+    "unemployment"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "trabalho"
+   ],
+   "notaEs": "Es el empleo, el puesto que uno tiene: «consegui o emprego!», ¡conseguí el trabajo!; «procurar emprego», buscar trabajo. «O trabalho» es más amplio: la actividad y el lugar. Sin empleo es «desempregado».",
+   "notaEn": "Job, employment — the position you hold: «consegui o emprego!», I got the job! «O trabalho» is broader: work in general, the workplace. Unemployed is «desempregado»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p169",
+   "tipo": "palavra",
+   "pt": "a segunda-feira",
+   "aceitas": [
+    "segunda feira",
+    "segunda"
+   ],
+   "es": "el lunes",
+   "aceitasEs": [
+    "lunes"
+   ],
+   "distratoresEs": [
+    "el martes",
+    "el miércoles",
+    "el domingo",
+    "el sábado"
+   ],
+   "en": "Monday",
+   "aceitasEn": [
+    "monday",
+    "on monday"
+   ],
+   "distratoresEn": [
+    "Tuesday",
+    "Wednesday",
+    "Sunday",
+    "Saturday"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Es el lunes, no el martes: la semana se cuenta desde el domingo, y la «segunda» es el segundo día. Casi siempre se acorta: «de segunda a sexta», de lunes a viernes. Es femenina: «na segunda», el lunes.",
+   "notaEn": "Monday. Weekdays are numbered from Sunday, so «segunda», the second day, is Monday. People shorten it: «de segunda a sexta», Monday to Friday; «na segunda», on Monday."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p170",
+   "tipo": "palavra",
+   "pt": "a sexta-feira",
+   "aceitas": [
+    "sexta feira",
+    "sexta"
+   ],
+   "es": "el viernes",
+   "aceitasEs": [
+    "viernes"
+   ],
+   "distratoresEs": [
+    "el sábado",
+    "el jueves",
+    "el miércoles",
+    "el domingo"
+   ],
+   "en": "Friday",
+   "aceitasEn": [
+    "friday",
+    "on friday"
+   ],
+   "distratoresEn": [
+    "Saturday",
+    "Thursday",
+    "Wednesday",
+    "Sunday"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Es el viernes, no el sábado: contando desde el domingo, el sexto día es el viernes. Casi siempre se acorta: «na sexta», el viernes; «de segunda a sexta», de lunes a viernes.",
+   "notaEn": "Friday — the sixth day, counting from Sunday. Usually shortened: «na sexta», on Friday; «de segunda a sexta», Monday to Friday."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p171",
+   "tipo": "palavra",
+   "pt": "o médico",
+   "aceitas": [
+    "medico",
+    "a medica",
+    "medica",
+    "o doutor",
+    "doutor",
+    "a doutora",
+    "doutora"
+   ],
+   "es": "el médico",
+   "aceitasEs": [
+    "médico",
+    "la médica",
+    "médica",
+    "el doctor",
+    "doctor",
+    "la doctora",
+    "doctora"
+   ],
+   "distratoresEs": [
+    "el enfermero",
+    "el dentista",
+    "el paciente",
+    "el farmacéutico"
+   ],
+   "en": "the doctor",
+   "aceitasEn": [
+    "doctor",
+    "the doctor",
+    "physician",
+    "the physician",
+    "doc"
+   ],
+   "distratoresEn": [
+    "the nurse",
+    "the dentist",
+    "the patient",
+    "the pharmacist"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "profissões",
+    "saúde"
+   ],
+   "notaEs": "Es el médico; la mujer es «a médica». La profesión va sin artículo, como en español: «ela é médica». Al médico se le dice «doutor»: «marquei consulta com o doutor».",
+   "notaEn": "Doctor; a woman doctor is «a médica». Jobs take no article: «aquela mulher é médica», that woman is a doctor. Doctors are addressed as «doutor» or «doutora»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p172",
+   "tipo": "palavra",
+   "pt": "gelado",
+   "aceitas": [
+    "gelado",
+    "gelada"
+   ],
+   "es": "helado",
+   "aceitasEs": [
+    "helado",
+    "helada",
+    "muy frío",
+    "muy fría"
+   ],
+   "distratoresEs": [
+    "tibio",
+    "caliente",
+    "sucio",
+    "salado"
+   ],
+   "en": "ice-cold",
+   "aceitasEn": [
+    "ice-cold",
+    "ice cold",
+    "icy",
+    "freezing",
+    "chilled",
+    "freezing cold"
+   ],
+   "distratoresEn": [
+    "lukewarm",
+    "hot",
+    "dirty",
+    "salty"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "adjetivo",
+    "comida"
+   ],
+   "notaEs": "Es helado, muy frío: «a água está gelada», «uma cerveja bem gelada». Pero el helado que se come es, en Brasil, «o sorvete»; en Portugal sí es «o gelado».",
+   "notaEn": "Ice-cold, chilled: «a água está gelada», the water is ice-cold; Brazilians want their beer «bem gelada». Ice cream is «o sorvete» in Brazil, though in Portugal it's «o gelado»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p173",
+   "tipo": "palavra",
+   "pt": "estudar",
+   "aceitas": [
+    "estudar"
+   ],
+   "es": "estudiar",
+   "aceitasEs": [
+    "estudiar"
+   ],
+   "distratoresEs": [
+    "enseñar",
+    "olvidar",
+    "leer",
+    "escribir"
+   ],
+   "en": "to study",
+   "aceitasEn": [
+    "to study",
+    "study"
+   ],
+   "distratoresEn": [
+    "to teach",
+    "to forget",
+    "to read",
+    "to write"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "escola"
+   ],
+   "notaEs": "Es estudiar, pero sin la i: «estudo», «estudei», «estuda». La lengua va sin artículo detrás del verbo: «comecei a estudar português», empecé a estudiar portugués.",
+   "notaEn": "To study: «comecei a estudar português», I started studying Portuguese — no article before a language after estudar or falar. «Estudar para a prova», to study for the test."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p174",
+   "tipo": "palavra",
+   "pt": "o português",
+   "aceitas": [
+    "portugues",
+    "a lingua portuguesa",
+    "lingua portuguesa",
+    "o idioma portugues",
+    "idioma portugues"
+   ],
+   "es": "el portugués",
+   "aceitasEs": [
+    "portugués",
+    "el idioma portugués",
+    "idioma portugués",
+    "la lengua portuguesa",
+    "lengua portuguesa"
+   ],
+   "distratoresEs": [
+    "el español",
+    "el italiano",
+    "el francés",
+    "el inglés"
+   ],
+   "en": "Portuguese",
+   "aceitasEn": [
+    "portuguese",
+    "the portuguese language",
+    "portuguese language"
+   ],
+   "distratoresEn": [
+    "Spanish",
+    "Italian",
+    "French",
+    "English"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "escola",
+    "cultura"
+   ],
+   "notaEs": "Es el idioma, con circunflejo: «português». Detrás de «falar» o «estudar» va sin artículo («falo português»); como sujeto lo lleva: «o português é bonito». La misma palabra es el adjetivo y la persona de Portugal, con femenino «portuguesa».",
+   "notaEn": "Portuguese, the language: «falo português», I speak Portuguese — no article after falar or estudar. The same word is the nationality, with a feminine «portuguesa». Like every language name, it is written in lowercase."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p175",
+   "tipo": "palavra",
+   "pt": "cedo",
+   "aceitas": [
+    "cedo"
+   ],
+   "es": "temprano",
+   "aceitasEs": [
+    "temprano",
+    "pronto"
+   ],
+   "distratoresEs": [
+    "tarde",
+    "después",
+    "ahora",
+    "nunca"
+   ],
+   "en": "early",
+   "aceitasEn": [
+    "early"
+   ],
+   "distratoresEn": [
+    "late",
+    "later",
+    "now",
+    "never"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "notaEs": "Es temprano: «ele saiu cedo», salió temprano; «acordo cedo», me despierto temprano. No tiene nada que ver con ceder. Y el «pronto» portugués no es temprano: es listo.",
+   "notaEn": "Early: «ele saiu cedo», he left early; «muito cedo», very early. Late is «tarde». «Mais cedo ou mais tarde», sooner or later."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p176",
+   "tipo": "palavra",
+   "pt": "melhor",
+   "aceitas": [
+    "melhor"
+   ],
+   "es": "mejor",
+   "aceitasEs": [
+    "mejor"
+   ],
+   "distratoresEs": [
+    "peor",
+    "mayor",
+    "menor",
+    "más"
+   ],
+   "en": "better / best",
+   "aceitasEn": [
+    "better",
+    "best",
+    "the best"
+   ],
+   "distratoresEn": [
+    "worse / worst",
+    "bigger / biggest",
+    "smaller / smallest",
+    "more / most"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo"
+   ],
+   "notaEs": "Es mejor, con «lh»: «meu melhor amigo», mi mejor amigo; «o melhor», lo mejor. «É melhor» va con infinitivo donde el español pide subjuntivo: «é melhor você ir», es mejor que vayas.",
+   "notaEn": "Better and best: «muito melhor», much better; «meu melhor amigo», my best friend. «É melhor…» is you'd better: «é melhor você ir», you'd better go. Never «mais bom»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p177",
+   "tipo": "palavra",
+   "pt": "o feriado",
+   "aceitas": [
+    "feriado"
+   ],
+   "es": "el feriado",
+   "aceitasEs": [
+    "feriado",
+    "el día feriado",
+    "día feriado",
+    "el festivo",
+    "festivo",
+    "el día festivo",
+    "día festivo"
+   ],
+   "distratoresEs": [
+    "las vacaciones",
+    "el fin de semana",
+    "el cumpleaños",
+    "el día hábil"
+   ],
+   "en": "the public holiday",
+   "aceitasEn": [
+    "public holiday",
+    "the public holiday",
+    "holiday",
+    "the holiday",
+    "bank holiday",
+    "national holiday"
+   ],
+   "distratoresEn": [
+    "the vacation",
+    "the weekend",
+    "the birthday",
+    "the workday"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "substantivo",
+    "trabalho"
+   ],
+   "notaEs": "Es el feriado, el día festivo: «amanhã é feriado». Las vacaciones son otra palabra, «as férias». Y el fin de semana largo es «o feriadão».",
+   "notaEn": "A public holiday, a day off for everyone: «amanhã é feriado», tomorrow is a holiday. A vacation is a different word, «as férias». A long holiday weekend is «o feriadão»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p178",
+   "tipo": "palavra",
+   "pt": "a manhã",
+   "aceitas": [
+    "manha"
+   ],
+   "es": "la mañana",
+   "aceitasEs": [
+    "mañana"
+   ],
+   "distratoresEs": [
+    "la tarde",
+    "la noche",
+    "el mediodía",
+    "la madrugada"
+   ],
+   "en": "the morning",
+   "aceitasEn": [
+    "morning",
+    "the morning"
+   ],
+   "distratoresEn": [
+    "the afternoon",
+    "the evening",
+    "the night",
+    "the dawn"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Es la mañana del día; el día siguiente se escribe junto, «amanhã». Por la mañana es «de manhã»: «amanhã de manhã», mañana por la mañana. Y buenos días es «bom dia», nunca «boa manhã».",
+   "notaEn": "Morning: «de manhã», in the morning. Tomorrow is a separate word, «amanhã»: «amanhã de manhã», tomorrow morning. The greeting is «bom dia», never «boa manhã»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p179",
+   "tipo": "palavra",
+   "pt": "seis",
+   "aceitas": [
+    "seis"
+   ],
+   "es": "seis",
+   "aceitasEs": [
+    "seis"
+   ],
+   "distratoresEs": [
+    "siete",
+    "dieciséis",
+    "sesenta",
+    "cinco"
+   ],
+   "en": "six",
+   "aceitasEn": [
+    "six"
+   ],
+   "distratoresEn": [
+    "seven",
+    "sixteen",
+    "sixty",
+    "five"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "notaEs": "Igual que en español. Dieciséis es «dezesseis», y sesenta, «sessenta». Al dictar números de teléfono, Brasil dice «meia» por seis, de «meia dúzia», media docena.",
+   "notaEn": "Six. Sixteen is «dezesseis», sixty «sessenta». When reading out phone numbers, Brazilians say «meia» for six, from «meia dúzia», half a dozen."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p180",
+   "tipo": "palavra",
+   "pt": "a luz",
+   "aceitas": [
+    "luz"
+   ],
+   "es": "la luz",
+   "aceitasEs": [
+    "luz"
+   ],
+   "distratoresEs": [
+    "la sombra",
+    "la voz",
+    "el sonido",
+    "el calor"
+   ],
+   "en": "the light",
+   "aceitasEn": [
+    "light",
+    "the light"
+   ],
+   "distratoresEn": [
+    "the shadow",
+    "the voice",
+    "the sound",
+    "the heat"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "casa"
+   ],
+   "notaEs": "Igual que en español, también la electricidad: «acabou a luz», se fue la luz; «a conta de luz», la cuenta de la luz. Se enciende con «ligar» y se apaga con «apagar»: «liga a luz».",
+   "notaEn": "Light, and also the electricity: «acabou a luz», the power went out; «a conta de luz», the electric bill. You turn it on with «ligar» and off with «apagar»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p181",
+   "tipo": "palavra",
+   "pt": "a mãe",
+   "aceitas": [
+    "mae",
+    "a mamae",
+    "mamae"
+   ],
+   "es": "la madre",
+   "aceitasEs": [
+    "madre",
+    "la mamá",
+    "mamá"
+   ],
+   "distratoresEs": [
+    "la madrina",
+    "la abuela",
+    "la tía",
+    "la hermana"
+   ],
+   "en": "the mother",
+   "aceitasEn": [
+    "mother",
+    "the mother",
+    "mom",
+    "the mom",
+    "mum",
+    "the mum",
+    "mommy"
+   ],
+   "distratoresEn": [
+    "the godmother",
+    "the grandmother",
+    "the aunt",
+    "the sister"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "família"
+   ],
+   "notaEs": "Es la madre: «mãe», con un diptongo nasal, casi «mãin» dicho por la nariz. «Mamãe» es mamá, más de niños y de cariño.",
+   "notaEn": "Mother; «mamãe» is mom, mostly from children or with affection. The ãe is a nasal diphthong, roughly «mine» said through the nose."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p182",
+   "tipo": "palavra",
+   "pt": "o sapato",
+   "aceitas": [
+    "sapato"
+   ],
+   "es": "el zapato",
+   "aceitasEs": [
+    "zapato"
+   ],
+   "distratoresEs": [
+    "la bota",
+    "la sandalia",
+    "el calcetín",
+    "el sombrero"
+   ],
+   "en": "the shoe",
+   "aceitasEn": [
+    "shoe",
+    "the shoe"
+   ],
+   "distratoresEn": [
+    "the boot",
+    "the sandal",
+    "the sock",
+    "the hat"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "roupa"
+   ],
+   "notaEs": "Es el zapato, escrito con s: «tire os sapatos», quítate los zapatos. Las zapatillas deportivas son «o tênis», y el calcetín, «a meia».",
+   "notaEn": "Shoe: «tire os sapatos», take off your shoes. Sneakers are «o tênis», with the s even for one pair: «um tênis novo»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p183",
+   "tipo": "palavra",
+   "pt": "o cara (sujeito)",
+   "aceitas": [
+    "cara",
+    "o cara",
+    "o sujeito",
+    "sujeito"
+   ],
+   "es": "el tipo",
+   "aceitasEs": [
+    "tipo",
+    "el chico",
+    "el muchacho",
+    "el sujeto",
+    "el tío",
+    "el chavo",
+    "el man"
+   ],
+   "distratoresEs": [
+    "la cara",
+    "el vecino",
+    "el niño",
+    "el abuelo"
+   ],
+   "en": "the guy",
+   "aceitasEn": [
+    "guy",
+    "the guy",
+    "dude",
+    "the dude",
+    "fellow",
+    "the fellow",
+    "bloke",
+    "the bloke",
+    "chap",
+    "the chap"
+   ],
+   "distratoresEn": [
+    "the face",
+    "the neighbor",
+    "the kid",
+    "the grandfather"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "substantivo",
+    "social",
+    "gíria"
+   ],
+   "notaEs": "Es el tipo, informal de Brasil: «ele é um cara muito legal», es un tipo muy simpático. Es masculino aunque termine en -a; «a cara» es la cara. Suelto, es muletilla entre amigos: «cara, que legal!». En Portugal se oye «o gajo», también informal y a veces despectivo.\n🇧🇷 o cara → 🇪🇸 el tipo\n🇧🇷 a cara → 🇪🇸 la cara",
+   "notaEn": "Guy, dude — informal Brazilian Portuguese: «ele é um cara muito legal», he's a really nice guy. It's masculine despite the -a; «a cara» is the face. On its own it's a filler among friends: «cara, que legal!», dude, that's cool! In Portugal you'll hear «o gajo», also informal and sometimes disparaging."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p184",
+   "tipo": "palavra",
+   "pt": "brincar",
+   "aceitas": [
+    "brincar"
+   ],
+   "es": "jugar / bromear",
+   "aceitasEs": [
+    "jugar",
+    "bromear"
+   ],
+   "distratoresEs": [
+    "saltar / brincar",
+    "pelear / discutir",
+    "dormir / descansar",
+    "llorar / gritar"
+   ],
+   "en": "to play / to joke",
+   "aceitasEn": [
+    "to play",
+    "play",
+    "to joke",
+    "joke",
+    "to kid",
+    "kid",
+    "to be kidding",
+    "to fool around"
+   ],
+   "distratoresEn": [
+    "to jump / to leap",
+    "to fight / to argue",
+    "to sleep / to rest",
+    "to cry / to shout"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "falso-amigo"
+   ],
+   "notaEs": "No es saltar: es jugar, sobre todo los niños («as crianças estão brincando na rua»), y bromear: «tô brincando», estoy bromeando. Los juegos con reglas y los deportes van con «jogar», y saltar es «pular».\n🇧🇷 brincar → 🇪🇸 jugar, bromear\n🇧🇷 pular → 🇪🇸 brincar, saltar\n🇧🇷 jogar → 🇪🇸 jugar (deportes, juegos)",
+   "notaEn": "To play, the way children do («as crianças estão brincando na rua», the kids are playing in the street), and to joke: «tô brincando», just kidding. Games and sports take «jogar»; an instrument, «tocar»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p185",
+   "tipo": "palavra",
+   "pt": "esquecer",
+   "aceitas": [
+    "esquecer",
+    "esquecer se",
+    "se esquecer"
+   ],
+   "es": "olvidar",
+   "aceitasEs": [
+    "olvidar",
+    "olvidarse"
+   ],
+   "distratoresEs": [
+    "recordar",
+    "esconder",
+    "perder",
+    "dudar"
+   ],
+   "en": "to forget",
+   "aceitasEn": [
+    "to forget",
+    "forget"
+   ],
+   "distratoresEn": [
+    "to remember",
+    "to hide",
+    "to lose",
+    "to doubt"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "notaEs": "Es olvidar, con o sin pronombre: «esqueci o nome dele» o «me esqueci do nome dele». También es dejarse algo olvidado: «esqueci o guarda-chuva no ônibus». La sc suena s.",
+   "notaEn": "To forget: «esqueci o nome dele», I forgot his name; also «me esqueci de…», with the pronoun and «de». It covers leaving things behind too: «esqueci a chave em casa», I left my key at home."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p186",
+   "tipo": "palavra",
+   "pt": "a mesa",
+   "aceitas": [
+    "mesa"
+   ],
+   "es": "la mesa",
+   "aceitasEs": [
+    "mesa",
+    "el escritorio",
+    "escritorio"
+   ],
+   "distratoresEs": [
+    "la silla",
+    "la misa",
+    "la cama",
+    "el estante"
+   ],
+   "en": "the table",
+   "aceitasEn": [
+    "table",
+    "the table",
+    "desk",
+    "the desk"
+   ],
+   "distratoresEn": [
+    "the chair",
+    "the bed",
+    "the shelf",
+    "the couch"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "casa",
+    "objetos"
+   ],
+   "notaEs": "Igual que en español: «uma mesa para quatro», una mesa para cuatro; «pôr a mesa», poner la mesa. En Brasil también es el escritorio donde se trabaja. La misa de la iglesia es «a missa», con ss.",
+   "notaEn": "Table, and also a desk: «a mesa do escritório». «Uma mesa para quatro», a table for four; «pôr a mesa», to set the table."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p187",
+   "tipo": "palavra",
+   "pt": "o minuto",
+   "aceitas": [
+    "minuto"
+   ],
+   "es": "el minuto",
+   "aceitasEs": [
+    "minuto"
+   ],
+   "distratoresEs": [
+    "el segundo",
+    "la hora",
+    "el día",
+    "la semana"
+   ],
+   "en": "the minute",
+   "aceitasEn": [
+    "minute",
+    "the minute"
+   ],
+   "distratoresEn": [
+    "the second",
+    "the hour",
+    "the day",
+    "the week"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "notaEs": "Igual que en español: «chego em cinco minutos», llego en cinco minutos. Para pedir un momento: «só um minutinho», un minutito.",
+   "notaEn": "Minute: «chego em cinco minutos», I'll be there in five minutes. Asking someone to wait: «só um minutinho», just a sec."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p188",
+   "tipo": "palavra",
+   "pt": "estacionar",
+   "aceitas": [
+    "estacionar"
+   ],
+   "es": "estacionar",
+   "aceitasEs": [
+    "estacionar",
+    "aparcar",
+    "parquear"
+   ],
+   "distratoresEs": [
+    "frenar",
+    "conducir",
+    "acelerar",
+    "chocar"
+   ],
+   "en": "to park",
+   "aceitasEn": [
+    "to park",
+    "park"
+   ],
+   "distratoresEn": [
+    "to brake",
+    "to drive",
+    "to speed up",
+    "to crash"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "cidade"
+   ],
+   "notaEs": "Es estacionar, la palabra de todo Brasil: «estacionei o carro na rua». El lugar es «o estacionamento», y el sitio libre, «a vaga»: «não tem vaga», no hay dónde estacionar.",
+   "notaEn": "To park: «estacionei o carro na rua», I parked the car on the street. A parking lot is «o estacionamento», a parking space «a vaga». A green park is «o parque»."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p189",
+   "tipo": "palavra",
+   "pt": "pronto",
+   "aceitas": [
+    "pronto",
+    "pronta",
+    "preparado",
+    "preparada"
+   ],
+   "es": "listo",
+   "aceitasEs": [
+    "listo",
+    "lista",
+    "preparado",
+    "preparada"
+   ],
+   "distratoresEs": [
+    "temprano",
+    "lento",
+    "roto",
+    "vacío"
+   ],
+   "en": "ready",
+   "aceitasEn": [
+    "ready",
+    "prepared",
+    "done",
+    "finished"
+   ],
+   "distratoresEn": [
+    "early",
+    "slow",
+    "broken",
+    "empty"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "falso-amigo"
+   ],
+   "notaEs": "Es listo, preparado: «o café da manhã está pronto!», ¡el desayuno está listo! No es el pronto de dentro de poco, que se dice «logo», ni el de temprano, «cedo». Suelto, «pronto!» es ¡listo!, ¡ya está!\n🇧🇷 pronto → 🇪🇸 listo\n🇧🇷 logo → 🇪🇸 pronto, enseguida\n🇧🇷 cedo → 🇪🇸 temprano, pronto",
+   "notaEn": "Ready: «o café da manhã está pronto!», breakfast is ready!; «está pronta?», are you ready? On its own, «pronto!» means done!, there you go. In Portugal it's also a filler, like well or right."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p190",
+   "tipo": "palavra",
+   "pt": "tomar",
+   "aceitas": [
+    "tomar"
+   ],
+   "es": "tomar",
+   "aceitasEs": [
+    "tomar"
+   ],
+   "distratoresEs": [
+    "tocar",
+    "tirar",
+    "dejar",
+    "traer"
+   ],
+   "en": "to take / to have",
+   "aceitasEn": [
+    "to take",
+    "take",
+    "to have",
+    "have",
+    "to drink",
+    "drink"
+   ],
+   "distratoresEn": [
+    "to touch / to play",
+    "to throw / to toss",
+    "to leave / to let",
+    "to bring / to fetch"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "notaEs": "Como en español, con usos fijos: «tomar café» (también desayunar: «tomo café da manhã às sete», desayuno a las siete), «tomar banho», ducharse o bañarse, «tomar remédio». Para el autobús Brasil prefiere «pegar o ônibus», aunque «tomar o ônibus» también se dice.",
+   "notaEn": "To take or to have, in set phrases worth learning: «tomar café», to have coffee (or breakfast: «tomo café da manhã às sete», I have breakfast at seven); «tomar banho», to take a shower or bath; «tomar remédio», to take medicine. For buses Brazilians usually say «pegar o ônibus», though «tomar o ônibus» is heard too."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p191",
+   "tipo": "palavra",
+   "pt": "sentar",
+   "aceitas": [
+    "sentar",
+    "sentar se",
+    "se sentar"
+   ],
+   "es": "sentarse",
+   "aceitasEs": [
+    "sentarse",
+    "sentar"
+   ],
+   "distratoresEs": [
+    "levantarse",
+    "acostarse",
+    "sentir",
+    "despertarse"
+   ],
+   "en": "to sit down",
+   "aceitasEn": [
+    "to sit",
+    "sit",
+    "to sit down",
+    "sit down",
+    "to take a seat",
+    "take a seat"
+   ],
+   "distratoresEn": [
+    "to stand up",
+    "to lie down",
+    "to feel",
+    "to wake up"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "notaEs": "Es sentarse, y en Brasil casi siempre sin pronombre: «senta aqui», siéntate aquí; «sente nesta cadeira», siéntate en esta silla. Cuidado con el vecino: «sento» es me siento (en una silla), pero «sinto» es siento (de sentir).",
+   "notaEn": "To sit down; in Brazil usually without the pronoun: «senta aqui», sit here — «sentar-se» is more formal, and the norm in Portugal. Careful: «sento», I sit, but «sinto», I feel (from «sentir»)."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p192",
+   "tipo": "palavra",
+   "pt": "o cheiro",
+   "aceitas": [
+    "cheiro",
+    "o odor",
+    "odor",
+    "o aroma",
+    "aroma"
+   ],
+   "es": "el olor",
+   "aceitasEs": [
+    "olor",
+    "el aroma",
+    "aroma"
+   ],
+   "distratoresEs": [
+    "el sabor",
+    "el ruido",
+    "el humo",
+    "el color"
+   ],
+   "en": "the smell",
+   "aceitasEn": [
+    "smell",
+    "the smell",
+    "scent",
+    "the scent",
+    "odor",
+    "odour",
+    "aroma"
+   ],
+   "distratoresEn": [
+    "the taste",
+    "the noise",
+    "the smoke",
+    "the color"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "substantivo"
+   ],
+   "notaEs": "Es el olor, bueno o malo: «que cheiro esquisito!», ¡qué olor tan raro! El verbo es «cheirar», oler: «cheira bem», huele bien. La ch suena «sh».",
+   "notaEn": "Smell, good or bad: «que cheiro esquisito!», what a strange smell! The verb is «cheirar»: «cheira mal», it smells bad. «Cheiroso», nice-smelling."
+  },
+  {
+   "idioma": "pt",
+   "id": "pt-p193",
+   "tipo": "palavra",
+   "pt": "meio",
+   "aceitas": [
+    "meio",
+    "meia"
+   ],
+   "es": "medio",
+   "aceitasEs": [
+    "medio",
+    "media",
+    "algo"
+   ],
+   "distratoresEs": [
+    "entero",
+    "doble",
+    "muy",
+    "apenas"
+   ],
+   "en": "half / kind of",
+   "aceitasEn": [
+    "half",
+    "kind of",
+    "sort of",
+    "a bit",
+    "somewhat",
+    "rather"
+   ],
+   "distratoresEn": [
+    "whole / entire",
+    "double / twice",
+    "very / really",
+    "barely / hardly"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "cotidiano"
+   ],
+   "notaEs": "Es medio en sus dos usos: la mitad («meio quilo», «meia hora», concuerda con el sustantivo) y, delante de adjetivo, un poco: «ela é meio esquisita», es medio rara — y ahí no cambia. «Meio-dia» es el mediodía.",
+   "notaEn": "Half («meio quilo», «meia hora», agreeing with the noun) and, before an adjective, kind of: «ela é meio esquisita», she's kind of weird — and then it doesn't change. «Meio-dia» is noon."
   }
  ]
 }
