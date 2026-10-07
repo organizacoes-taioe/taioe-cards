@@ -532,11 +532,18 @@ window.Motor = (function () {
 
      Quem chama isto é o app, e só depois de a resposta ter sido dada como
      errada — então nunca há risco de barrar uma tradução boa. */
-  function espanhoisDoCard(card) {
-    const saida = [String((card && card.es) || '')].concat(Object.keys((card && card.regionaisEs) || {}));
-    const par = /🇪🇸\s*([^→\n]+?)\s*→\s*🇧🇷/g;
+  /* Desde 07/10/2026 vale em todo curso: a língua da pergunta é a ensinada,
+     os pares vêm da nota do público («nota», «notaEs», «notaEn»), no formato
+     «bandeira da ensinada x → bandeira do público y» — «🇺🇸 gun → 🇧🇷 a
+     arma» no inglês, «🇧🇷 esquisito → 🇪🇸 raro» no português. */
+  const BANDEIRA_DA_LINGUA = { es: '🇪🇸', pt: '🇧🇷', en: '🇺🇸' };
+  const notaDoPublico = (card, a) => String((card && card[a === 'pt' ? 'nota' : 'nota' + a[0].toUpperCase() + a[1]]) || '');
+  function espanhoisDoCard(card, direcao) {
+    const l = linguaDaPergunta(direcao || IDA), a = linguaDaResposta(direcao || IDA);
+    const saida = [String((card && card[CAMPOS[l].certa]) || '')].concat(Object.keys((card && card[CAMPOS[l].regionais]) || {}));
+    const par = new RegExp(BANDEIRA_DA_LINGUA[l] + '\\s*([^→\\n]+?)\\s*→\\s*' + BANDEIRA_DA_LINGUA[a], 'g');
     let m;
-    while ((m = par.exec(String((card && card.nota) || '')))) {
+    while ((m = par.exec(notaDoPublico(card, a)))) {
       m[1].split(',').forEach(t => saida.push(t.trim()));
     }
     return saida.filter(Boolean);
@@ -726,12 +733,13 @@ window.Motor = (function () {
   }
 
   function linguaTrocada(card, texto, direcao) {
-    if (direcao !== 'es-pt') return null;
-    const dado = semAcento(normalizarEs(texto));
+    if (direcao !== IDA) return null;
+    const l = linguaDaPergunta(direcao);
+    const dado = semAcento(normalizar(texto, l));
     if (!dado) return null;
-    const espanhois = espanhoisDoCard(card);
+    const espanhois = espanhoisDoCard(card, direcao);
     for (let i = 0; i < espanhois.length; i++) {
-      if (semAcento(normalizarEs(espanhois[i])) === dado) {
+      if (semAcento(normalizar(espanhois[i], l)) === dado) {
         return { palavra: espanhois[i], propria: i === 0 };
       }
     }
