@@ -780,30 +780,47 @@ fs.mkdirSync(path.join(pastaPublica, 'js'), { recursive: true });
 
 const crypto = require('crypto');
 const hash8 = texto => crypto.createHash('sha1').update(texto).digest('hex').slice(0, 8);
-const CAMPOS_DE_OUTRA_AUDIENCIA = {
-  es: ['en', 'aceitasEn', 'distratoresEn', 'notaEn', 'formasEsEn', 'sinonimosEn', 'regionaisEn'],
-  en: ['es', 'aceitasEs', 'distratoresEs', 'notaEs', 'formasEnEs', 'sinonimosEs', 'regionaisEs']
+/* ── um pacote por curso ──
+   Desde 07/10/2026 cada baralho serve aos dois públicos dele como cursos
+   próprios: o de espanhol vira es-pt e es-en, o de inglês en-pt e en-es, o de
+   português pt-es e pt-en. O pacote de cada curso leva os campos da língua
+   ensinada e os do público, e deixa de fora os da terceira língua; as formas
+   verbais vão com o rótulo na língua do público (formasEsEn → formasEs no
+   curso es-en). Os nomes antigos, cards-es.js e cards-en.js (es-pt e en-pt),
+   continuam saindo, para a aba que ainda estiver aberta na versão anterior. */
+const sufixo = l => l[0].toUpperCase() + l[1];
+const camposDe = l => {
+  const c = CAMPOS_DA_LINGUA[l];
+  return [c.texto, c.aceitas, c.distratores, c.nota,
+    l === 'pt' ? 'sinonimos' : 'sinonimos' + sufixo(l), l === 'pt' ? 'regionais' : 'regionais' + sufixo(l)];
 };
 const ID_DO_CATALOGO = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 for (const { idioma, cards } of baralhos) {
-  if (!CAMPOS_DE_OUTRA_AUDIENCIA[idioma]) continue;      // o baralho de português ainda não é curso
-  const curso = idioma + '-pt';
-  const doApp = cards.map(c => {
-    if (!ID_DO_CATALOGO.test(c.id) || c.id.length > 24) {
-      console.error('\n  id fora do formato do catálogo (minúsculas, números e hífens, até 24): ' + c.id + '\n');
-      process.exit(1);
-    }
-    const limpo = Object.assign({}, c);
-    CAMPOS_DE_OUTRA_AUDIENCIA[idioma].forEach(k => delete limpo[k]);
-    limpo.v = hash8(JSON.stringify(c));
-    return limpo;
-  });
-  const leva = hash8(doApp.map(c => c.id + ':' + c.v).join('\n'));
-  const pacote = { versao: 1, idioma: idioma, curso: curso, leva: leva, total: doApp.length, cards: doApp };
-  fs.writeFileSync(path.join(dataPublica, 'cards-' + idioma + '.js'),
-    comoJs(pacote, ["window.BARALHOS['" + idioma + "']"]), 'utf8');
-  escreverCatalogo(curso, leva, doApp);
+  for (const audiencia of audienciasDe(idioma)) {
+    const curso = idioma + '-' + audiencia;
+    const terceira = IDIOMAS.find(l => l !== idioma && l !== audiencia);
+    const doApp = cards.map(c => {
+      if (!ID_DO_CATALOGO.test(c.id) || c.id.length > 24) {
+        console.error('\n  id fora do formato do catálogo (minúsculas, números e hífens, até 24): ' + c.id + '\n');
+        process.exit(1);
+      }
+      const limpo = Object.assign({}, c);
+      camposDe(terceira).forEach(k => { if (k !== CAMPOS_DA_LINGUA[idioma].texto) delete limpo[k]; });
+      // as formas verbais com o rótulo na língua do público
+      const formas = CAMPOS_DA_LINGUA[idioma].formas, daAudiencia = campoDasFormas(idioma, audiencia);
+      if (c[daAudiencia]) limpo[formas] = c[daAudiencia];
+      IDIOMAS.forEach(l => { if (l !== idioma) delete limpo[formas + sufixo(l)]; });
+      limpo.v = hash8(JSON.stringify(c));
+      return limpo;
+    });
+    const leva = hash8(doApp.map(c => c.id + ':' + c.v).join('\n'));
+    const pacote = { versao: 1, idioma: idioma, curso: curso, audiencia: audiencia, leva: leva, total: doApp.length, cards: doApp };
+    const js = comoJs(pacote, ["window.BARALHOS['" + idioma + "']"]);
+    fs.writeFileSync(path.join(dataPublica, 'cards-' + curso + '.js'), js, 'utf8');
+    if (audiencia === 'pt') fs.writeFileSync(path.join(dataPublica, 'cards-' + idioma + '.js'), js, 'utf8');
+    escreverCatalogo(curso, leva, doApp, audiencia);
+  }
 }
 
 /* O motor do app é o mesmo das ferramentas: uma cópia byte a byte, conferida no
@@ -817,14 +834,15 @@ fs.copyFileSync(arqMotor, path.join(pastaPublica, 'js', 'motor.js'));
    estado de quem o estudou continua válido. «alternativas» são os textos que a
    múltipla mostra na ida (a resposta e os distratores, nos dois gêneros): só
    eles entram no agregado de distratores (correção 16). */
-function escreverCatalogo(curso, leva, doApp) {
+function escreverCatalogo(curso, leva, doApp, audiencia) {
+  const casa = CAMPOS_DA_LINGUA[audiencia || 'pt'];
   const q = t => "'" + String(t).replace(/'/g, "''") + "'";
   const lista = xs => xs.length ? 'array[' + xs.map(q).join(', ') + ']::text[]' : "'{}'::text[]";
   const linhas = doApp.map(c => {
     const alternativas = new Set();
     [0, 1].forEach(g => {
       const f = Motor.formaDoCard(c, g);
-      [f.pt].concat(f.distratores || []).forEach(t => { if (t) alternativas.add(String(t)); });
+      [f[casa.texto]].concat(f[casa.distratores] || []).forEach(t => { if (t) alternativas.add(String(t)); });
     });
     const requer = typeof c.requer === 'string' ? q(c.requer) : 'null';
     return '  (' + [q(curso), q(c.id), q(c.tipo), q(c.nivel), lista(c.tags || []), requer, q(c.v),

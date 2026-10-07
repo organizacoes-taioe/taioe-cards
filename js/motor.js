@@ -331,10 +331,14 @@ window.Motor = (function () {
      próprio do espanhol (o ñ, a conjugação, a leitura espanhola da pergunta)
      continua preso a 'es-pt' e 'pt-es', e no inglês simplesmente não dispara. */
   let IDA = 'es-pt', VOLTA = 'pt-es';
-  function usarBaralho(lingua) {
-    const l = LINGUAS[lingua] && lingua !== 'pt' ? lingua : 'es';
-    IDA = l + '-pt';
-    VOLTA = 'pt-' + l;
+  /* Desde 07/10/2026 a língua de quem estuda também varia (cursos para quem
+     fala espanhol e inglês, inclusive o de português): usarBaralho('pt', 'es')
+     faz a ida pt→es e a volta es→pt. Sem a segunda, é o português. */
+  function usarBaralho(lingua, audiencia) {
+    const a = LINGUAS[audiencia] ? audiencia : 'pt';
+    const l = LINGUAS[lingua] && lingua !== a ? lingua : (a === 'es' ? 'en' : 'es');
+    IDA = l + '-' + a;
+    VOLTA = a + '-' + l;
   }
   function ehVolta(direcao) { return direcao === VOLTA; }
   function direcoes() { return { ida: IDA, volta: VOLTA }; }
@@ -2591,7 +2595,7 @@ window.Motor = (function () {
     normalizar, conferir,
     estadoInicial, registrar, modoDe, direcaoDe, faseDe, anotarDiario, diaLocal,
     pergunta, resposta, normalizarEs, normalizarEn, formaReconhecida,
-    usarBaralho, ehVolta, direcoes,
+    usarBaralho, ehVolta, direcoes, CAMPOS,
     erroDeGenero, formasAceitas, LIMITES, cortar,
     linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
     indiceEspanhol, leituraEspanhola, erroDeFlexao,

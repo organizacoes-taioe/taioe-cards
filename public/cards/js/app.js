@@ -11,12 +11,23 @@ window.TaioeCardsApp = function (ctx) {
      só do espanhol — o ñ, a conjugação, as regiões, os textos — continua
      no motor e simplesmente não dispara no inglês. */
   const L = ctx.lingua;
-  const NOME_L = { es: 'espanhol', en: 'inglês' }[L] || L;
+  /* A língua de quem estuda: o português, e desde 07/10/2026 também o
+     espanhol e o inglês (os cursos para quem fala essas línguas, inclusive o
+     de português). Os campos da resposta, das aceitas, dos distratores e da
+     nota saem dela (Motor.CAMPOS); a nota do português é «nota», as outras
+     levam o sufixo («notaEs», «notaEn»). */
+  const A = ctx.audiencia || 'pt';
+  const CA = Motor.CAMPOS[A];
+  const notaDe = c => (c && c[A === 'pt' ? 'nota' : 'nota' + A[0].toUpperCase() + A[1]]) || '';
+  const NOMES_LINGUA = { es: 'espanhol', en: 'inglês', pt: 'português' };
+  const NOME_L = NOMES_LINGUA[L] || L;
+  const NOME_A = NOMES_LINGUA[A] || A;
   const BANDEIRA_L = ctx.bandeira || '🏳️';
+  const BANDEIRA_A = ctx.bandeiraAudiencia || { pt: '🇧🇷', es: '🇪🇸', en: '🇺🇸' }[A];
   const CHAVE = ctx.uid + ':' + ctx.curso;
-  Motor.usarBaralho(L);
+  Motor.usarBaralho(L, A);
   const IDA = Motor.direcoes().ida;
-  const ROTULO_IDA = L + ' → pt', ROTULO_VOLTA = 'pt → ' + L;
+  const ROTULO_IDA = L + ' → ' + A, ROTULO_VOLTA = A + ' → ' + L;
   let Sinc = null;   // a sincronização, criada no arranque
 
   /* ── o baralho, e o baralho como ele aparece ──
@@ -770,13 +781,13 @@ window.TaioeCardsApp = function (ctx) {
       ? (cardAtual.tipo === 'palavra' ? 'Como se diz esta palavra em ' + NOME_L + '?' : 'Como se diz isto em ' + NOME_L + '?')
       : (cardAtual.tipo === 'palavra' ? 'O que significa esta palavra?' : 'O que quer dizer esta frase?');
 
-    el['bandeira-pergunta'].textContent = inversa ? '🇧🇷' : BANDEIRA_L;
-    el['bandeira-resposta'].textContent = inversa ? BANDEIRA_L : '🇧🇷';
-    el['bandeira-feedback'].textContent = inversa ? BANDEIRA_L : '🇧🇷';
+    el['bandeira-pergunta'].textContent = inversa ? BANDEIRA_A : BANDEIRA_L;
+    el['bandeira-resposta'].textContent = inversa ? BANDEIRA_L : BANDEIRA_A;
+    el['bandeira-feedback'].textContent = inversa ? BANDEIRA_L : BANDEIRA_A;
     /* na múltipla escolha a bandeira já diz tudo; o texto só ajuda quando
        é você quem tem que produzir a resposta */
     el['rotulo-resposta-txt'].textContent = modoAtual === 'multipla' ? ''
-      : (inversa ? 'responda em ' + NOME_L : 'responda em português');
+      : (inversa ? 'responda em ' + NOME_L : 'responda em ' + NOME_A);
     el.entrada.placeholder = inversa ? 'escreva em ' + NOME_L + '…' : 'escreva o significado…';
 
     el.termo.textContent = Motor.pergunta(cardAtual, direcaoAtual);
@@ -834,7 +845,7 @@ window.TaioeCardsApp = function (ctx) {
     const certa = Motor.resposta(cardAtual, direcaoAtual);
     dinamicosAtuais = Motor.ehVolta(direcaoAtual)
       ? opcoes.filter(o => o !== certa)
-      : opcoes.filter(o => o !== cardAtual.pt && (cardAtual.distratores || []).indexOf(o) < 0);
+      : opcoes.filter(o => o !== cardAtual[A] && (cardAtual[CA.distratores] || []).indexOf(o) < 0);
     el['area-multipla'].innerHTML = '';
     opcoes.forEach((texto, i) => {
       const b = document.createElement('button');
@@ -925,7 +936,7 @@ window.TaioeCardsApp = function (ctx) {
     el['aviso-lingua'].innerHTML =
       '<b>' + escapar(l.resposta) + '</b> é a tradução de <b>' + escapar(l.espanhol) +
       '</b>, em ' + NOME_L + ' ' + BANDEIRA_L + '. Mas aqui <b>' + escapar(l.pergunta) + '</b> está em ' +
-      'português 🇧🇷, e o que se pede é o ' + NOME_L + ' dela — tente de novo.';
+      NOME_A + ' ' + BANDEIRA_A + ', e o que se pede é o ' + NOME_L + ' dela — tente de novo.';
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
       ajustarEntrada();
@@ -950,9 +961,9 @@ window.TaioeCardsApp = function (ctx) {
     chanceUsada = true;
     el['aviso-lingua'].innerHTML = troca.propria
       ? '<b>' + escapar(troca.palavra) + '</b> é a própria palavra da pergunta, ' +
-        'em ' + NOME_L + ' ' + BANDEIRA_L + '. O que se pede é a tradução, em português 🇧🇷 — tente de novo.'
+        'em ' + NOME_L + ' ' + BANDEIRA_L + '. O que se pede é a tradução, em ' + NOME_A + ' ' + BANDEIRA_A + ' — tente de novo.'
       : '<b>' + escapar(troca.palavra) + '</b> está em ' + NOME_L + ' ' + BANDEIRA_L + ': é a resposta da ' +
-        'pergunta ao contrário. Aqui a tradução vai em português 🇧🇷 — tente de novo.';
+        'pergunta ao contrário. Aqui a tradução vai em ' + NOME_A + ' ' + BANDEIRA_A + ' — tente de novo.';
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
       ajustarEntrada();
@@ -982,10 +993,10 @@ window.TaioeCardsApp = function (ctx) {
        mesma pergunta é lição. Quando o português muda junto («o médico», «a
        médica»), a outra forma é só a mesma frase no feminino, e ocupa a nota
        sem ensinar nada. */
-    const nota = [cardAtual.nota,
-      outraForma && outraForma.pt === cardAtual.pt
+    const nota = [notaDe(cardAtual),
+      outraForma && outraForma[A] === cardAtual[A]
         ? '🔁 ' + (generoAtual ? 'No masculino' : 'No feminino') +
-          ': «' + outraForma[L] + '» — ' + outraForma.pt : ''
+          ': «' + outraForma[L] + '» — ' + outraForma[A] : ''
     ].filter(Boolean).join('\n');
     el.nota.textContent = nota;
     el.nota.classList.toggle('oculto', !nota);
@@ -1494,7 +1505,7 @@ window.TaioeCardsApp = function (ctx) {
       const agora = new Date().toISOString();
       const esperado = Motor.resposta(cardAtual, r.direcao);
       progresso.contestacoes.push({
-        em: agora, card: id, pergunta: Motor.pergunta(cardAtual, r.direcao), pt: cardAtual.pt,
+        em: agora, card: id, pergunta: Motor.pergunta(cardAtual, r.direcao), pt: cardAtual[A],
         nivel: cardAtual.nivel, direcao: r.direcao, esperado: esperado, resposta: r.resposta
       });
       salvarProgresso();
@@ -1520,7 +1531,7 @@ window.TaioeCardsApp = function (ctx) {
   function abrirComentario(id) {
     const c = PORID[id]; if (!c) return;
     comentandoId = id;
-    el['comentario-alvo'].textContent = c[L] + ' → ' + c.pt;
+    el['comentario-alvo'].textContent = c[L] + ' → ' + c[A];
     el['comentario-texto'].value = '';
     contarComentario();
     el['comentario-fundo'].classList.remove('oculto');
@@ -1556,7 +1567,7 @@ window.TaioeCardsApp = function (ctx) {
     const repetido = progresso.comentarios.some(x =>
       x.card === comentandoId && Motor.normalizar(x.texto) === Motor.normalizar(texto));
     if (!repetido) {
-      progresso.comentarios.push({ em: agora, card: comentandoId, pergunta: c[L], pt: c.pt, nivel: c.nivel, texto: texto });
+      progresso.comentarios.push({ em: agora, card: comentandoId, pergunta: c[L], pt: c[A], nivel: c.nivel, texto: texto });
       salvarProgresso();
       if (Sinc) Sinc.retorno('comentarios', {
         id: novoId(), usuario_id: ctx.uid, curso: ctx.curso, card_id: comentandoId,
@@ -2301,7 +2312,7 @@ window.TaioeCardsApp = function (ctx) {
     if (Motor.ehVolta(Motor.direcaoDe(e))) return { chave: 'invertido', rotulo: 'na volta: você produz o ' + NOME_L };
     return {
       chave: 'andamento',
-      rotulo: Motor.modoDe(e) === 'escrita' ? 'escrevendo em português' : 'múltipla escolha'
+      rotulo: Motor.modoDe(e) === 'escrita' ? 'escrevendo em ' + NOME_A : 'múltipla escolha'
     };
   }
 
@@ -2334,11 +2345,11 @@ window.TaioeCardsApp = function (ctx) {
     /* e as palavras de outros lugares que o card também aceita */
     /* agrupadas por lugar: «A» e «B», na América Latina; «C», no México */
     const porLugar = new Map();
-    Object.entries(c[L === 'es' ? 'regionaisEs' : 'regionaisEn'] || {}).forEach(([forma, onde]) =>
+    Object.entries(c[Motor.CAMPOS[L].regionais] || {}).forEach(([forma, onde]) =>
       porLugar.set(onde, (porLugar.get(onde) || []).concat('«' + forma.replace(/\.$/, '') + '»')));
     const regionais = [...porLugar].map(([onde, formas]) =>
       formas.join(formas.length > 2 ? ', ' : ' e ') + ', ' + onde);
-    return [c.nota, outra ? '🔁 No feminino: «' + outra[L] + '» — ' + outra.pt : '',
+    return [notaDe(c), outra ? '🔁 No feminino: «' + outra[L] + '» — ' + outra[A] : '',
       regionais.length ? '🌎 Também vale: ' + regionais.join('; ') + '.' : '']
       .filter(Boolean).join('\n');
   }
@@ -2363,7 +2374,7 @@ window.TaioeCardsApp = function (ctx) {
 
       if (busca) {
         const alvo = Motor.normalizar(
-          [c[L], c.pt, c.nota, (c.aceitas || []).join(' '), Object.keys(c.regionaisEs || c.regionaisEn || {}).join(' '),
+          [c[L], c[A], notaDe(c), (c[CA.aceitas] || []).join(' '), Object.keys(c[Motor.CAMPOS[L].regionais] || {}).join(' '),
            (c.tags || []).join(' ')].join(' '));
         if (!busca.split(' ').every(termo => alvo.includes(termo))) return false;
       }
@@ -2392,7 +2403,7 @@ window.TaioeCardsApp = function (ctx) {
         '<div class="card-linha-topo">' +
           '<span class="es">' + escapar(c[L]) + '</span>' +
           '<span class="seta">→</span>' +
-          '<span class="pt">' + escapar(c.pt) + '</span>' +
+          '<span class="pt">' + escapar(c[A]) + '</span>' +
         '</div>' +
         '<div class="card-linha-meta">' +
           '<span class="selo nivel">' + escapar(c.nivel) + '</span>' +
@@ -2608,10 +2619,10 @@ window.TaioeCardsApp = function (ctx) {
       if (!linhas.length) return '';
       return '<table class="tabela-texto ' + (txt.tipo === 'prosa' ? 'prosa' : 'poema') + '">' +
         linhas.map(l => '<tr><td class="verso-or" lang="' + L + '">' + escapar(l[L] || '') + '</td>' +
-          '<td class="verso-pt">' + escapar(l.pt) + '</td></tr>').join('') + '</table>';
+          '<td class="verso-pt">' + escapar(l[A] || '') + '</td></tr>').join('') + '</table>';
     }).join('');
     const conta = parte ? '<p class="contador-versos">' + ate + '/' + total + ' versos</p>' : '';
-    const pe = '<p class="ajuda">' + escapar(txt.nota || '') + '</p>' +
+    const pe = '<p class="ajuda">' + escapar(notaDe(txt)) + '</p>' +
       (txt.traducao ? '<p class="ajuda">Tradução ' + escapar(txt.traducao) + '.</p>' : '');
     return '<div class="carta-texto">' + cab + blocos + conta + pe + '</div>';
   }
@@ -2684,7 +2695,7 @@ window.TaioeCardsApp = function (ctx) {
 
   function abrirConfig() {
     el['cfg-conta'].textContent = (ctx.nome || '') + ' · ' + (ctx.email || '');
-    el['cfg-curso'].textContent = 'Você está no curso de ' + NOME_L + ', respondido em português.';
+    el['cfg-curso'].textContent = 'Você está no curso de ' + NOME_L + ', respondido em ' + NOME_A + '.';
     el['btn-trocar-curso'].textContent = 'Estudar ' + ctx.nomeDoCurso(ctx.outroCurso).toLowerCase();
     mostrar('tela-config');
     mostrarMeusComentarios();
@@ -2809,7 +2820,7 @@ window.TaioeCardsApp = function (ctx) {
 
   /* Os textos da tela que dependem da língua do curso. */
   function ajustarTextosDaLingua() {
-    el['busca-cards'].placeholder = 'buscar em ' + NOME_L + ', português, tema ou nota…';
+    el['busca-cards'].placeholder = 'buscar em ' + NOME_L + ', ' + NOME_A + ', tema ou nota…';
     const op = el['filtro-estado'].querySelector('option[value="invertido"]');
     if (op) op.textContent = 'já na volta (' + ROTULO_VOLTA + ')';
     el['btn-texto'].hidden = !TEXTOS.length;
