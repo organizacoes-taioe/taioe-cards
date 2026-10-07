@@ -679,7 +679,7 @@ window.TaioeCardsApp = function (ctx) {
 
   /* Tira o card de onde quer que ele esteja — a resposta sobre conhecimento
      prévio chega depois do registro e pode mudar a distância. */
-  /* ── não quero aprender este card ──
+  /* ── «já conheço essa palavra» (antes, «não quero aprender este card») ──
      O card sai do jogo; se for de vocabulário, a palavra passa a contar como
      dominada para destravar frases e textos (ver Motor.liberadaEm). É para o
      óbvio, que custaria cinco respostas sem ensinar nada. Volta pela lista
@@ -688,8 +688,10 @@ window.TaioeCardsApp = function (ctx) {
     if (!cardAtual) return;
     const c = PORID[cardAtual.id] || cardAtual;
     const pergunta = c.tipo === 'palavra'
-      ? 'Tem certeza que deseja arquivar a palavra «' + c[L] + '»? Ela será tratada como dominada.'
-      : 'Tem certeza que deseja arquivar a frase «' + c[L] + '»? Ela não vai mais aparecer.';
+      ? 'Você já conhece «' + c[L] + '»?\n\nEla sai dos seus estudos e passa a contar como dominada: as frases ' +
+        'e os textos que usam essa palavra podem aparecer. Se mudar de ideia, ela volta em Todos os cards → arquivados.'
+      : 'Você já conhece «' + c[L] + '»?\n\nEla sai dos seus estudos e não aparece mais. Se mudar de ideia, ' +
+        'ela volta em Todos os cards → arquivados.';
     if (!window.confirm(pergunta)) return;
     marcarArquivo(c.id, true);
     statusSync('«' + c[L] + '» arquivado. Para trazer de volta: Todos os cards → arquivados.', 'ok');
@@ -753,9 +755,11 @@ window.TaioeCardsApp = function (ctx) {
     const palavra = cardAtual.requer && PORID[cardAtual.requer];
     el['meta-origem'].textContent = palavra ? 'de ' + palavra[L] : '';
     el['meta-origem'].classList.add('oculto');
-    /* o «não quero aprender» chama atenção só na estreia do card */
+    /* o «já conheço» chama atenção só na estreia do card; o texto diz o que
+       a pessoa está afirmando (pedido do Gere, 07/10/2026) */
     const estreando = !estadoDe(id) || !estadoDe(id).vistas;
     el['btn-arquivar'].classList.toggle('evidente', estreando);
+    el['btn-arquivar'].textContent = cardAtual.tipo === 'palavra' ? 'Já conheço essa palavra' : 'Já conheço essa frase';
     /* O nível vive na aba do fichário e fica à mostra o tempo todo: saber que
        o card é A1 ou C2 não entrega resposta nenhuma, e ajuda a calibrar o
        esforço antes de ler. */
