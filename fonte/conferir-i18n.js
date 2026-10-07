@@ -150,7 +150,7 @@ const CARA_DE_FRASE = s => {
 };
 /* o que pode ficar: nomes próprios, o que não é texto de tela, e as linhas de console */
 const PODE = [
-  /^Taioé Cards( ·)?$/, /^taioe-cards-$/, /^Taioé$/,
+  /^Taioé Cards( ·)?$/, /^Taioé <span>Cards<\/span>$/, /^taioe-cards-$/, /^Taioé$/,
   /^(Português|Español|English)$/,
   /^http:\/\/www\.w3\.org\/2000\/svg$/,
   /^data:image\/svg\+xml/, /^<\/svg>$/, /^'><text /

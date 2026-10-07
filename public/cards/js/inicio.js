@@ -118,6 +118,14 @@
       });
       visiveis.forEach(function (t) { t.classList.add('oculto'); });
       if (nav) nav.hidden = true;
+      /* a escolha do curso é página principal: a marca volta a «Taioé», para o início da Taioé */
+      var marca = document.querySelector('.topo .marca');
+      if (marca && marca.classList.contains('fora-do-inicio')) {
+        marca.textContent = 'Taioé';
+        marca.setAttribute('href', '/');
+        marca.setAttribute('data-i18n-attr', 'title:topo.marca');
+        marca.classList.remove('fora-do-inicio');
+      }
       var caixa = $('escolha-cursos'), seletor = $('escolha-lingua'), manter = $('btn-escolha-manter');
 
       function desenhar() {

@@ -512,6 +512,7 @@ window.TaioeCardsApp = function (ctx) {
     el.dica.hidden = true;
     const aceso = BOTAO_DA_TELA[tela];
     Object.values(BOTAO_DA_TELA).forEach(b => el[b].classList.toggle('aqui', b === aceso));
+    acertarMarca(tela === 'tela-inicio');
     /* Tela nova abre no topo. Sem isto o painel herdava a rolagem de onde
        se estava — no meio do feedback de um card, em geral — e abria já nos
        gráficos. O card fica de fora: ele tem a sua subida (voltarAoTopo). */
@@ -520,6 +521,25 @@ window.TaioeCardsApp = function (ctx) {
       window.scrollTo(0, 0);
     }
   }
+
+  /* A marca do topo (pedido do Gere, 07/10/2026): na página inicial dos
+     Cards é só «Taioé» e leva ao início da Taioé; em qualquer outra tela é
+     «Taioé Cards» e leva à página inicial dos Cards, como na Biblioteca. */
+  const marca = document.querySelector('.topo .marca');
+  function acertarMarca(naInicial) {
+    if (!marca) return;
+    const chave = naInicial ? 'topo.marca' : 'topo.marcaCards';
+    marca.innerHTML = naInicial ? 'Taioé' : 'Taioé <span>Cards</span>';
+    marca.setAttribute('href', naInicial ? '/' : '/cards/');
+    marca.setAttribute('data-i18n-attr', 'title:' + chave);
+    marca.title = t(chave);
+    marca.classList.toggle('fora-do-inicio', !naInicial);
+  }
+  if (marca) marca.addEventListener('click', e => {
+    if (!marca.classList.contains('fora-do-inicio')) return;
+    e.preventDefault();
+    irParaInicio();
+  });
 
   function atualizarPlacar() {
     const tt = progresso.totais;
