@@ -412,8 +412,28 @@ window.TaioeCardsApp = function (ctx) {
     }
     pedidas = intercalar(pedidas, doTexto, 2);
     const pedidasSet = new Set(pedidas);
-    const avulsas = Motor.ordenarNovos(resto.filter(id => !pedidasSet.has(id)), pesos, PORID);
-    const ordemDoResto = intercalar(pedidas, avulsas, PALAVRAS_PEDIDAS_POR_AVULSA);
+    /* As frases de primeiros passos («requerTodas»: [], pedido do Gere,
+       07/10/2026) não esperam palavra nenhuma: quem começa do zero já vê
+       frases desde o primeiro dia, uma a cada duas palavras novas. */
+    const livre = id => { const c = PORID[id] || {}; return c.tipo === 'frase' && Array.isArray(c.requerTodas) && !c.requerTodas.length; };
+    /* na ordem do arquivo: «Olá» antes de «A conta, por favor» */
+    const livres = resto.filter(id => !pedidasSet.has(id) && livre(id))
+      .sort((x, y) => CARDS.indexOf(PORID[x]) - CARDS.indexOf(PORID[y]));
+    const avulsas = Motor.ordenarNovos(resto.filter(id => !pedidasSet.has(id) && !livre(id)), pesos, PORID);
+    /* A fila se refaz a cada estreia, então a frase livre não pode ter um
+       lugar fixo nela (ficaria sempre em terceiro e nunca chegaria à
+       frente): conta-se quantas estreias houve desde a última frase livre,
+       e a próxima entra quando chega a vez dela — uma a cada três novos. */
+    const semLivres = intercalar(pedidas, avulsas, PALAVRAS_PEDIDAS_POR_AVULSA);
+    let ordemDoResto = semLivres;
+    if (livres.length) {
+      const estreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined)
+        .sort((x, y) => p.cards[y].estreouNa - p.cards[x].estreouNa);
+      let desde = 0;
+      while (desde < estreias.length && !livre(estreias[desde])) desde++;
+      const vez = Math.max(0, 2 - desde);
+      ordemDoResto = semLivres.slice(0, vez).concat([livres[0]], intercalar(semLivres.slice(vez), livres.slice(1), 2));
+    }
     p.ineditos = frescas.concat(intercalar(ordemDoResto, antigas, 2));
   }
 
@@ -479,19 +499,18 @@ window.TaioeCardsApp = function (ctx) {
     const t = progresso.totais;
     const vistos = Object.keys(progresso.cards).length;
     const taxa = t.respostas ? Math.round(100 * t.acertos / t.respostas) : 0;
+    /* Sem o total do baralho (pedido do Gere, 07/10/2026): quem começa não
+       precisa ver quantos milhares faltam, só o que já andou. */
+    const jaVistos = vistos === 1 ? '1 card já visto' : vistos + ' cards já vistos';
     el.placar.innerHTML =
-      '<b>' + vistos + '</b>/' + CARDS.length + ' cards · ' +
+      '<b>' + vistos + '</b> ' + (vistos === 1 ? 'card visto' : 'cards vistos') + ' · ' +
       '<b>' + t.respostas + '</b> respostas · <b>' + taxa + '%</b> de acerto';
 
     const naSessao = sessao.eventos.length;
     const acertosSessao = sessao.eventos.filter(e => e.acertou).length;
-    const novos = CARDS.length - vistos;
-    el['resumo-inicio'].innerHTML = naSessao
-      ? 'Nesta sessão: <b>' + naSessao + '</b> respostas, <b>' + acertosSessao + '</b> certas. ' +
-        (novos ? novos + ' cards ainda não apareceram.' : 'Você já viu todos os cards pelo menos uma vez.')
-      : CARDS.length + ' cards prontos — ' +
-        CARDS.filter(c => c.tipo === 'palavra').length + ' palavras e ' +
-        CARDS.filter(c => c.tipo === 'frase').length + ' frases, do A1 ao C2.';
+    el['resumo-inicio'].innerHTML = (naSessao
+      ? 'Nesta sessão: <b>' + naSessao + '</b> respostas, <b>' + acertosSessao + '</b> certas. ' : '') +
+      (vistos ? jaVistos + '.' : 'Nenhum card visto ainda.');
   }
 
   /* ═══════════════ fluxo do card ═══════════════ */
