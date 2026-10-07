@@ -1289,6 +1289,10 @@ window.Motor = (function () {
        mais cheias que as filas estejam: a seca da passagem não se repete.
        E no máximo um a cada cinco: quando o alvo sobe, a fila enche em
        dias, e não com quarenta estreias numa tarde (ver vezDoNovo).
+     — NO COMEÇO, UM NOVO A CADA TRÊS. Enquanto o aluno tem menos de
+       CARDS_DO_COMECO cards em jogo, pelo menos um de cada três cards é
+       novo, e o teto não vale (pedido do Gere, 06/10/2026: o intervalo
+       mínimo de dez respostas, sozinho, ainda deixava o começo repetitivo).
      — QUEM ESPEROU DEMAIS FURA A FILA, qualquer que seja o peso da fila dele
        (ver atrasadoQueFura). */
   const ALVO_MIN = 40;       // cards em cada direção, para quem acerta pouco
@@ -1297,6 +1301,8 @@ window.Motor = (function () {
   const JANELA_DO_ACERTO = 300;   // respostas recentes que contam
   const NOVO_A_CADA_NO_MAXIMO = 20;   // piso: um card novo a cada vinte respostas, pelo menos
   const NOVO_A_CADA_NO_MINIMO = 5;    // teto: nunca mais de um a cada cinco
+  const CARDS_DO_COMECO = 50;         // até aqui, é o começo:
+  const NOVO_A_CADA_NO_COMECO = 3;    // um card novo a cada três, pelo menos, e sem teto
   const GANHO = 4;           // quanto pesa cada card de desvio do alvo
   const PISO_REVISAO = 10;   // nenhuma fila de revisão morre de fome
   const PISO_INEDITO = 2;    // card novo nunca deixa de vir, mas em conta-gotas
@@ -1348,8 +1354,13 @@ window.Motor = (function () {
 
   /* O piso e o teto do card novo, pela conta de respostas desde a última
      estreia: 'obrigado' quando passou do piso, 'vetado' quando ainda não
-     chegou ao teto, e 'livre' no meio, que é onde o sorteio decide. */
-  function vezDoNovo(desdeNovo) {
+     chegou ao teto, e 'livre' no meio, que é onde o sorteio decide. No
+     começo (menos de CARDS_DO_COMECO cards em jogo), o piso é de três e não
+     há teto. Sem «emJogo», vale a régua de sempre. */
+  function vezDoNovo(desdeNovo, emJogo) {
+    if (emJogo !== undefined && emJogo < CARDS_DO_COMECO) {
+      return desdeNovo >= NOVO_A_CADA_NO_COMECO ? 'obrigado' : 'livre';
+    }
     if (desdeNovo >= NOVO_A_CADA_NO_MAXIMO) return 'obrigado';
     if (desdeNovo < NOVO_A_CADA_NO_MINIMO) return 'vetado';
     return 'livre';
@@ -2590,7 +2601,7 @@ window.Motor = (function () {
     contarDirecoes,
     filaDe, pesosDasFilas, chancesDasFilas, sortearFila,
     urgencia, cumpriu, escolherNaFila, podeVoltar, INTERVALO_MINIMO, vezDoDominado, ESPACO_DOMINADO,
-    ALVO_MIN, ALVO_MAX, alvoDaFila, acertoRecente, vezDoNovo, atrasadoQueFura,
+    ALVO_MIN, ALVO_MAX, alvoDaFila, acertoRecente, vezDoNovo, CARDS_DO_COMECO, NOVO_A_CADA_NO_COMECO, atrasadoQueFura,
     DOMINADOS_PARA_TEXTOS, dominadosNoTotal, textosLiberados,
     atualizarTextosEmVista, palavrasDosTextos, andamentoDoTexto, versosDoTexto, revelaPorVerso, versosLiberados,
     liberado, liberadaEm, venceuEm, requeridas, arquivado, sabidaEm,

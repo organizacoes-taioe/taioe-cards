@@ -528,6 +528,15 @@ window.TaioeCardsApp = function (ctx) {
     return progresso.totais.respostas - ultima;
   }
 
+  /* Os cards em jogo: os que já estrearam e não foram arquivados. */
+  function cardsEmJogo() {
+    let n = 0;
+    for (const id in progresso.cards) {
+      if (progresso.cards[id].vistas && !Motor.arquivado(id, progresso.arquivados || {})) n++;
+    }
+    return n;
+  }
+
   function escolherProximoId() {
     const agora = new Date().toISOString();
     const respostas = progresso.totais.respostas;
@@ -551,12 +560,16 @@ window.TaioeCardsApp = function (ctx) {
       return progresso.dominados.splice(dominadoMaisProximo(agora), 1)[0];
     }
 
+    /* o piso e o teto do card novo (no começo, um a cada três, e aí nem o
+       atrasado passa na frente) */
+    const emJogo = cardsEmJogo();
+    const novo = tem.ineditos ? Motor.vezDoNovo(respostasDesdeNovo(), emJogo) : 'vetado';
+    if (novo === 'obrigado' && emJogo < Motor.CARDS_DO_COMECO) return proximoNovo();
+
     /* quem esperou demais fura a fila, qualquer que seja o peso dela */
     const fura = Motor.atrasadoQueFura(livres, progresso.cards, respostas);
     if (fura) return tirar(fura.fila, livres[fura.fila][fura.indice]);
 
-    /* o piso e o teto do card novo */
-    const novo = tem.ineditos ? Motor.vezDoNovo(respostasDesdeNovo()) : 'vetado';
     if (novo === 'obrigado') return proximoNovo();
     if (novo === 'vetado' && (tem.esPt || tem.ptEs)) tem.ineditos = false;
 
