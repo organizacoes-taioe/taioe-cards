@@ -1610,8 +1610,10 @@ window.Motor = (function () {
      Gere, 06/10/2026). No começo, com um card só na fila e o card novo
      vetado pelo teto, o mesmo card se repetia cinco vezes seguidas; agora,
      sem card na fila que já tenha esperado o intervalo, vem um card novo —
-     e as primeiras respostas de quem começa são todas de cards novos. */
-  const INTERVALO_MINIMO = 10;
+     e as primeiras respostas de quem começa são todas de cards novos.
+     Era 10; em 07/10/2026 o Gere baixou para 6, porque com o novo a cada
+     três do começo o card já não se repete em sequência. */
+  const INTERVALO_MINIMO = 6;
 
   function podeVoltar(est, respostas) {
     const f = est && est.naFila;
