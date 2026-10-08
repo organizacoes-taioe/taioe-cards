@@ -606,6 +606,7 @@ node fonte/conferir-candidatos.js lista.json en   # ANTES de escrever: já exist
 node fonte/build.js          # valida, regenera data/ e recarimba os ?v=
 node fonte/revisar.js 12-    # a leva em cinco linhas por card, para ler
 node fonte/varrer-motor.js en   # o motor por cima do data/, nas quatro direções
+node fonte/cruzar-respostas.js fr  # nenhuma resposta certa repetida entre cards, em nenhuma língua
 ```
 
 **A primeira linha vem antes de todas as outras.** Monte a lista de candidatos
