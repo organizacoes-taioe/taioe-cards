@@ -809,7 +809,7 @@ nenhum outro baralho.
   **fica**: «je parle» e «il parle» se escrevem igual, e só o pronome diz a
   pessoa. Por isso, no francês, «Je suis…» e «Il est…» são respostas
   diferentes, e a variante com outro sujeito («Elles ont faim» ao lado de «Ils
-  ont faim») vai em `aceitasFr`. O artigo escrito errado («le maison») é erro
+  ont faim») vai em `aceitasFr`. O plural também não cai: o «-s» final é terminação de verbo e separa «je serai» de «je serais». O artigo escrito errado («le maison») é erro
   seco, como no espanhol.
 - **O funil das línguas de casa derruba o sujeito**, e isso pega frase curta:
   «Moi aussi» (Eu também) e «aussi» (também) viram a mesma resposta em
