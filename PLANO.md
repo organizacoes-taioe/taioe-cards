@@ -313,6 +313,7 @@ como o de todo curso.
 | leva | o que | estado |
 |---|---|---|
 | fr 1 | 40 primeiros passos + 50 palavras | **feito** (08/10) — 90 cards |
+| fr 2 | 67 frases de uso (uma ou mais por palavra) + 24 de conjugação (presente dos irregulares, passé composé com «avoir» e «être», imperfeito, futuro próximo, futuro, condicional) | **feito** (08/10) — 181 cards; 53 palavras pedidas pelas frases ficam para a leva 3 |
 
 ---
 

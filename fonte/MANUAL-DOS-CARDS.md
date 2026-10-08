@@ -803,9 +803,17 @@ nenhum outro baralho.
   fala português (`attendre` não é atender), a `notaEs` o de quem fala espanhol
   (`prendre` ao lado de `apprendre`), a `notaEn` o de quem fala inglês. Os pares
   vão no formato `🇫🇷 x → 🇧🇷 y` e `🇫🇷 x → 🇪🇸 y`.
-- **O funil do francês** (em `js/motor.js`) tira acento, artigo — inclusive o
-  elidido: «l'eau» = «eau» — e pronome-sujeito, como o do inglês. O artigo
-  escrito errado («le maison») é erro seco, como no espanhol.
+- **O funil do francês** (em `js/motor.js`) tira acento e o artigo da frente —
+  inclusive o elidido: «l'eau» = «eau» —, como o do espanhol. O pronome-sujeito
+  **fica**: «je parle» e «il parle» se escrevem igual, e só o pronome diz a
+  pessoa. Por isso, no francês, «Je suis…» e «Il est…» são respostas
+  diferentes, e a variante com outro sujeito («Elles ont faim» ao lado de «Ils
+  ont faim») vai em `aceitasFr`. O artigo escrito errado («le maison») é erro
+  seco, como no espanhol.
+- **O funil das línguas de casa derruba o sujeito**, e isso pega frase curta:
+  «Moi aussi» (Eu também) e «aussi» (também) viram a mesma resposta em
+  português e em espanhol. Antes de gravar, a conferência cruzada das
+  respostas certas nas quatro línguas (seção 12) acha esses choques.
 - **A conferência de candidatos** recebe quádruplas: `[inglês, português,
   espanhol, francês]`.
 

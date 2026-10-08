@@ -168,17 +168,13 @@ window.Motor = (function () {
     'i', 'he', 'she', 'it', 'they', 'we', 'you'
   ]);
 
-  /* O francês é como o inglês: exige o sujeito e exige o artigo, e nenhum
-     dos dois diz se a pessoa sabe a palavra. Caem o artigo (também o
-     elidido: «l'eau» chega aqui como «l eau») e o pronome-sujeito, inclusive
-     o «j» de «j'ai». «Nous» e «vous» também são pronomes de objeto, mas a
-     pessoa continua no verbo, que fica inteiro («vous êtes» não vira «tu
-     es»). O «ne» da negação, não: é o «ne… pas» escrito, e quem fala sem ele
-     ainda escreve o «pas», que fica. */
-  const OMISSIVEIS_FR = new Set([
-    'le', 'la', 'les', 'l', 'un', 'une', 'des',
-    'je', 'j', 'tu', 'il', 'elle', 'on', 'nous', 'vous', 'ils', 'elles'
-  ]);
+  /* O francês, diferente do espanhol e do português, não dispensa o sujeito,
+     e a pessoa muitas vezes só aparece nele: «je parle» e «il parle» se
+     escrevem igual. Se o pronome caísse, a pessoa errada contaria como certa.
+     Então nada é omissível no meio da frase; só o artigo da frente cai (ver
+     preFr), como no espanhol: quem responde «maison» sabe tanto quanto quem
+     responde «la maison». */
+  const OMISSIVEIS_FR = new Set();
 
   /* Plural = singular. Em português basta tirar o "s".
 
@@ -206,9 +202,11 @@ window.Motor = (function () {
     return p.replace(/^(\w{3,})[sx]$/, '$1');
   }
 
-  /* As ligaduras não se desfazem com o acento: «cœur» viraria «c ur». */
+  /* As ligaduras não se desfazem com o acento: «cœur» viraria «c ur». E o
+     artigo da frente cai, também o elidido: «l'eau» = «eau». */
+  const ARTIGOS_FR = /^(le|la|les|un|une|des)\s+|^l['’´`]\s*/;
   function preFr(s) {
-    return s.replace(/œ/g, 'oe').replace(/æ/g, 'ae');
+    return s.trim().replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(ARTIGOS_FR, '');
   }
 
   /* O espanhol dispensa o artigo do mesmo jeito que o português: quem
@@ -277,8 +275,7 @@ window.Motor = (function () {
     /* O francês chega sem acento ao funil, como o português: o acento grave
        e o circunflexo raramente separam palavras («a»/«à», «ou»/«où» são
        palavras de função), e cobrar o teclado do celular não ensina nada. O
-       apóstrofo vira espaço com a pontuação, e o artigo elidido cai como
-       palavra. */
+       apóstrofo vira espaço com a pontuação. */
     fr: {
       omissiveis: OMISSIVEIS_FR, numeros: NUMEROS_FR,
       grafias: tabela({}), plural: pluralFr, pre: preFr,
