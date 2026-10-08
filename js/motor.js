@@ -195,11 +195,12 @@ window.Motor = (function () {
     return p.replace(/(s|x|z|ch|sh)e$/, '$1');                          // boxe → box
   }
 
-  /* No francês o plural escrito é quase sempre um «-s» ou um «-x» mudo
-     («les chevaux» fica com o «-x»: «cheval» e «chevaux» não se encontram,
-     e a lista de aceitas resolve). */
+  /* No francês o «-s» final também é terminação de verbo, e é ela que separa
+     o futuro do condicional: «je serai» e «je serais». Tirá-lo juntava os dois
+     (a leva 4 achou o choque). Então o francês não iguala plural e singular:
+     a forma pedida é a do card, e a variante entra em aceitasFr. */
   function pluralFr(p) {
-    return p.replace(/^(\w{3,})[sx]$/, '$1');
+    return p;
   }
 
   /* As ligaduras não se desfazem com o acento: «cœur» viraria «c ur». E o
