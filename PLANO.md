@@ -318,6 +318,7 @@ como o de todo curso.
 | fr 4 | 74 frases de uso (todas as palavras com frase, e os usos mais comuns das que já tinham) + 30 de conjugação (presente de -ir e -re, passé composé com particípios irregulares, imperfeito, futuro dos irregulares, condicional, pronominais, negação no passado); o funil do francês deixou de igualar plural e singular, porque o «-s» separava «je serai» de «je serais» | **feito** (08/10) — 349 cards; 70 palavras pedidas pelas frases |
 | fr 5 | 70 palavras que as frases pediam + 20 avulsas; parêntese para separar «le soir»/«la nuit», «la journée»/«le jour», «le matin»/«demain» (espanhol), «connaître»/«savoir» (inglês), «la gare» (estação de trem), «la douche»/«le bain» | **feito** (08/10) — 439 cards; falta frase para as 20 avulsas |
 | fr 6 | 111 frases de uso (as 20 avulsas, os usos das palavras da leva 5 e frases de situação: loja, café, transporte, direção, hora, saúde) + 27 de conjugação (concordância do particípio com «être», imperfeito de «être» e «avoir», pronominais, verbos da leva 5) | **feito** (08/10) — 577 cards; 69 palavras pedidas pelas frases |
+| fr 7 | 69 palavras que as frases pediam + 27 avulsas (corpo, roupa, comida, estações…); primeiros `sinonimosFr` e `regionaisFr` (cellulaire no Quebec, GSM na Bélgica, natel na Suíça) | **feito** (08/10) — 673 cards; falta frase para as 27 avulsas |
 
 ---
 
