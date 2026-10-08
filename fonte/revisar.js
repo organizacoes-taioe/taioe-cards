@@ -30,15 +30,16 @@ const janela = {};
 new Function('window', fs.readFileSync(path.join(__dirname, '..', 'js', 'motor.js'), 'utf8'))(janela);
 const Motor = janela.Motor;
 
-const IDIOMAS = ['es', 'en', 'pt'];
-const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es' };
+const IDIOMAS = ['es', 'en', 'pt', 'fr'];
+const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt' };
+const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'] };
 const CAMPOS = {
   pt: { texto: 'pt', aceitas: 'aceitas',   distratores: 'distratores',   nota: 'nota',   formas: 'formasPt' },
   en: { texto: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', nota: 'notaEn', formas: 'formasEn' },
-  es: { texto: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', nota: 'notaEs', formas: 'formasEs' }
+  es: { texto: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', nota: 'notaEs', formas: 'formasEs' },
+  fr: { texto: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', nota: 'notaFr', formas: 'formasFr' }
 };
-const audienciasDe = idioma => [AUDIENCIA_PRINCIPAL[idioma]]
-  .concat(IDIOMAS.filter(a => a !== idioma && a !== AUDIENCIA_PRINCIPAL[idioma]));
+const audienciasDe = idioma => AUDIENCIAS[idioma];
 
 const pastaCards = path.join(__dirname, 'cards');
 const filtros = process.argv.slice(2);

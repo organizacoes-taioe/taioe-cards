@@ -785,6 +785,30 @@ aqui fica só o que muda para quem escreve um card.
   uso, etiqueta, gênero: as regras são das seções 2 a 14, e nenhuma delas é do
   espanhol.
 
+### 15.1 O quarto baralho: francês
+
+Desde 08/10/2026 há um quarto baralho, `fonte/cards/fr`, com ids `fr-…`, e
+ele é diferente dos outros três num ponto: **serve às três línguas da casa**
+(cursos `fr-pt`, `fr-es` e `fr-en`). Por isso o card de francês traz
+**três quartetos inteiros** — `pt`/`aceitas`/`distratores`/`nota`,
+`es`/`aceitasEs`/`distratoresEs`/`notaEs`, `en`/`aceitasEn`/`distratoresEn`/
+`notaEn` —, mais `fr` e, quando houver, `aceitasFr`, `regionaisFr`,
+`sinonimosFr` e `formasFr` (rótulo em português; `formasFrEs` e `formasFrEn`
+com o mesmo texto e o rótulo nas outras línguas). O francês não é resposta de
+nenhum outro baralho.
+
+- **O francês é o da França**, com o do Quebec, da Bélgica e da Suíça em
+  `regionaisFr` («no Quebec», «na Bélgica», «na Suíça») e na nota.
+- **Cada nota ensina o seu público**: a `nota` aponta o falso amigo de quem
+  fala português (`attendre` não é atender), a `notaEs` o de quem fala espanhol
+  (`prendre` ao lado de `apprendre`), a `notaEn` o de quem fala inglês. Os pares
+  vão no formato `🇫🇷 x → 🇧🇷 y` e `🇫🇷 x → 🇪🇸 y`.
+- **O funil do francês** (em `js/motor.js`) tira acento, artigo — inclusive o
+  elidido: «l'eau» = «eau» — e pronome-sujeito, como o do inglês. O artigo
+  escrito errado («le maison») é erro seco, como no espanhol.
+- **A conferência de candidatos** recebe quádruplas: `[inglês, português,
+  espanhol, francês]`.
+
 ---
 
 ## 16. O card de verso

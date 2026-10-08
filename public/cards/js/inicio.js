@@ -22,11 +22,15 @@
     'en-es': { lingua: 'en', audiencia: 'es', bandeira: '🇺🇸' },
     'pt-es': { lingua: 'pt', audiencia: 'es', bandeira: '🇧🇷' },
     'es-en': { lingua: 'es', audiencia: 'en', bandeira: '🇪🇸' },
-    'pt-en': { lingua: 'pt', audiencia: 'en', bandeira: '🇧🇷' }
+    'pt-en': { lingua: 'pt', audiencia: 'en', bandeira: '🇧🇷' },
+    /* o francês (08/10/2026) serve às três línguas da casa */
+    'fr-pt': { lingua: 'fr', audiencia: 'pt', bandeira: '🇫🇷' },
+    'fr-es': { lingua: 'fr', audiencia: 'es', bandeira: '🇫🇷' },
+    'fr-en': { lingua: 'fr', audiencia: 'en', bandeira: '🇫🇷' }
   };
   /* Os que aparecem na escolha e nas configurações. O de português (pt-es,
      pt-en) entra quando o baralho existir. */
-  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'en-es', 'es-en', 'pt-es', 'pt-en'];
+  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'en-es', 'es-en', 'pt-es', 'pt-en', 'fr-pt', 'fr-es', 'fr-en'];
   var ativo = function (k) { return !!CURSOS[k] && CURSOS_ATIVOS.indexOf(k) >= 0; };
   function cursosDa(l) {
     return CURSOS_ATIVOS.filter(function (k) { return CURSOS[k] && CURSOS[k].audiencia === l; });
@@ -80,6 +84,10 @@
           forma(s, 'circle', { cx: ((lin % 2 ? 2.8 : 1.6) + 2.4 * col).toFixed(1), cy: (1.4 + 1.9 * lin).toFixed(1), r: 0.45, fill: '#fff' });
         }
       }
+    } else if (lingua === 'fr') {
+      forma(s, 'rect', { width: 30, height: 20, fill: '#ce1126' });
+      forma(s, 'rect', { width: 20, height: 20, fill: '#fff' });
+      forma(s, 'rect', { width: 10, height: 20, fill: '#002654' });
     } else {
       forma(s, 'rect', { width: 30, height: 20, fill: '#009b3a' });
       forma(s, 'path', { d: 'M15 2.6 27.4 10 15 17.4 2.6 10Z', fill: '#fedf00' });

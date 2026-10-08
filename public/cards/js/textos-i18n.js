@@ -7,8 +7,8 @@ window.TAIOE_TEXTOS = {
 
   /* ═══════════════════════ português ═══════════════════════ */
   pt: {
-    'lingua.es': 'espanhol', 'lingua.en': 'inglês', 'lingua.pt': 'português',
-    'curso.es': 'Espanhol', 'curso.en': 'Inglês', 'curso.pt': 'Português',
+    'lingua.es': 'espanhol', 'lingua.en': 'inglês', 'lingua.pt': 'português', 'lingua.fr': 'francês',
+    'curso.es': 'Espanhol', 'curso.en': 'Inglês', 'curso.pt': 'Português', 'curso.fr': 'Francês',
     'aspas': '«{x}»',
     'lista.e': ' e ',
 
@@ -270,13 +270,14 @@ window.TAIOE_TEXTOS = {
     'lugar.Inglaterra': 'Inglaterra', 'lugar.Escócia': 'Escócia', 'lugar.Irlanda': 'Irlanda',
     'lugar.Reino Unido': 'Reino Unido', 'lugar.Estados Unidos': 'Estados Unidos',
     'lugar.Canadá': 'Canadá', 'lugar.Austrália': 'Austrália', 'lugar.Nova Zelândia': 'Nova Zelândia',
-    'lugar.Índia': 'Índia', 'lugar.África do Sul': 'África do Sul'
+    'lugar.Índia': 'Índia', 'lugar.África do Sul': 'África do Sul',
+    'lugar.França': 'França', 'lugar.Bélgica': 'Bélgica', 'lugar.Suíça': 'Suíça', 'lugar.Quebec': 'Quebec'
   },
 
   /* ═══════════════════════ español ═══════════════════════ */
   es: {
-    'lingua.es': 'español', 'lingua.en': 'inglés', 'lingua.pt': 'portugués',
-    'curso.es': 'Español', 'curso.en': 'Inglés', 'curso.pt': 'Portugués',
+    'lingua.es': 'español', 'lingua.en': 'inglés', 'lingua.pt': 'portugués', 'lingua.fr': 'francés',
+    'curso.es': 'Español', 'curso.en': 'Inglés', 'curso.pt': 'Portugués', 'curso.fr': 'Francés',
     'aspas': '«{x}»',
     'lista.e': ' y ',
 
@@ -536,13 +537,14 @@ window.TAIOE_TEXTOS = {
     'lugar.Inglaterra': 'Inglaterra', 'lugar.Escócia': 'Escocia', 'lugar.Irlanda': 'Irlanda',
     'lugar.Reino Unido': 'el Reino Unido', 'lugar.Estados Unidos': 'Estados Unidos',
     'lugar.Canadá': 'Canadá', 'lugar.Austrália': 'Australia', 'lugar.Nova Zelândia': 'Nueva Zelanda',
-    'lugar.Índia': 'la India', 'lugar.África do Sul': 'Sudáfrica'
+    'lugar.Índia': 'la India', 'lugar.África do Sul': 'Sudáfrica',
+    'lugar.França': 'Francia', 'lugar.Bélgica': 'Bélgica', 'lugar.Suíça': 'Suiza', 'lugar.Quebec': 'Quebec'
   },
 
   /* ═══════════════════════ English ═══════════════════════ */
   en: {
-    'lingua.es': 'Spanish', 'lingua.en': 'English', 'lingua.pt': 'Portuguese',
-    'curso.es': 'Spanish', 'curso.en': 'English', 'curso.pt': 'Portuguese',
+    'lingua.es': 'Spanish', 'lingua.en': 'English', 'lingua.pt': 'Portuguese', 'lingua.fr': 'French',
+    'curso.es': 'Spanish', 'curso.en': 'English', 'curso.pt': 'Portuguese', 'curso.fr': 'French',
     'aspas': '“{x}”',
     'lista.e': ' and ',
 
@@ -802,6 +804,7 @@ window.TAIOE_TEXTOS = {
     'lugar.Inglaterra': 'England', 'lugar.Escócia': 'Scotland', 'lugar.Irlanda': 'Ireland',
     'lugar.Reino Unido': 'the United Kingdom', 'lugar.Estados Unidos': 'the United States',
     'lugar.Canadá': 'Canada', 'lugar.Austrália': 'Australia', 'lugar.Nova Zelândia': 'New Zealand',
-    'lugar.Índia': 'India', 'lugar.África do Sul': 'South Africa'
+    'lugar.Índia': 'India', 'lugar.África do Sul': 'South Africa',
+    'lugar.França': 'France', 'lugar.Bélgica': 'Belgium', 'lugar.Suíça': 'Switzerland', 'lugar.Quebec': 'Quebec'
   }
 };

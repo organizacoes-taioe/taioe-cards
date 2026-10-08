@@ -66,6 +66,17 @@ window.Motor = (function () {
     '80': 'eighty', '90': 'ninety', '100': 'hundred'
   });
 
+  /* O francês, como o inglês, tem os números corridos até vinte; os
+     compostos («vingt et un», «soixante-dix») ficam como estão. */
+  const NUMEROS_FR = tabela({
+    '0': 'zero', '1': 'un', '2': 'deux', '3': 'trois', '4': 'quatre',
+    '5': 'cinq', '6': 'six', '7': 'sept', '8': 'huit', '9': 'neuf',
+    '10': 'dix', '11': 'onze', '12': 'douze', '13': 'treize', '14': 'quatorze',
+    '15': 'quinze', '16': 'seize', '17': 'dix sept', '18': 'dix huit',
+    '19': 'dix neuf', '20': 'vingt', '30': 'trente', '40': 'quarante',
+    '50': 'cinquante', '60': 'soixante', '100': 'cent'
+  });
+
   /* Contrações e grafias alternativas da mesma palavra. O valor pode trazer
      mais de uma palavra: cada uma volta para o funil e é conferida sozinha,
      então "im" vira "i am" e o "i" ainda cai como pronome-sujeito. */
@@ -157,6 +168,18 @@ window.Motor = (function () {
     'i', 'he', 'she', 'it', 'they', 'we', 'you'
   ]);
 
+  /* O francês é como o inglês: exige o sujeito e exige o artigo, e nenhum
+     dos dois diz se a pessoa sabe a palavra. Caem o artigo (também o
+     elidido: «l'eau» chega aqui como «l eau») e o pronome-sujeito, inclusive
+     o «j» de «j'ai». «Nous» e «vous» também são pronomes de objeto, mas a
+     pessoa continua no verbo, que fica inteiro («vous êtes» não vira «tu
+     es»). O «ne» da negação, não: é o «ne… pas» escrito, e quem fala sem ele
+     ainda escreve o «pas», que fica. */
+  const OMISSIVEIS_FR = new Set([
+    'le', 'la', 'les', 'l', 'un', 'une', 'des',
+    'je', 'j', 'tu', 'il', 'elle', 'on', 'nous', 'vous', 'ils', 'elles'
+  ]);
+
   /* Plural = singular. Em português basta tirar o "s".
 
      Em inglês o "es" é ambíguo: "boxes" é "box"+es, mas "houses" é "house"+s.
@@ -174,6 +197,18 @@ window.Motor = (function () {
     if (/^\w{3,}ies$/.test(p)) p = p.slice(0, -3) + 'y';                // babies → baby
     else if (/^\w{3,}s$/.test(p) && !/ss$/.test(p)) p = p.slice(0, -1); // cats → cat
     return p.replace(/(s|x|z|ch|sh)e$/, '$1');                          // boxe → box
+  }
+
+  /* No francês o plural escrito é quase sempre um «-s» ou um «-x» mudo
+     («les chevaux» fica com o «-x»: «cheval» e «chevaux» não se encontram,
+     e a lista de aceitas resolve). */
+  function pluralFr(p) {
+    return p.replace(/^(\w{3,})[sx]$/, '$1');
+  }
+
+  /* As ligaduras não se desfazem com o acento: «cœur» viraria «c ur». */
+  function preFr(s) {
+    return s.replace(/œ/g, 'oe').replace(/æ/g, 'ae');
   }
 
   /* O espanhol dispensa o artigo do mesmo jeito que o português: quem
@@ -238,6 +273,16 @@ window.Motor = (function () {
       omissiveis: OMISSIVEIS_EN, numeros: NUMEROS_EN,
       grafias: GRAFIAS_EN, plural: pluralEn, pre: preEn,
       pontuacao: PONTUACAO_PT
+    },
+    /* O francês chega sem acento ao funil, como o português: o acento grave
+       e o circunflexo raramente separam palavras («a»/«à», «ou»/«où» são
+       palavras de função), e cobrar o teclado do celular não ensina nada. O
+       apóstrofo vira espaço com a pontuação, e o artigo elidido cai como
+       palavra. */
+    fr: {
+      omissiveis: OMISSIVEIS_FR, numeros: NUMEROS_FR,
+      grafias: tabela({}), plural: pluralFr, pre: preFr,
+      pontuacao: PONTUACAO_PT
     }
   };
 
@@ -260,7 +305,8 @@ window.Motor = (function () {
   const TEMPO = {
     pt: new Set(['hoje', 'ontem', 'amanha', 'agora', 'sempre', 'nunca']),
     es: new Set(['hoy', 'ayer', 'manana', 'ahora', 'siempre', 'nunca']),
-    en: new Set(['today', 'yesterday', 'tomorrow', 'now', 'always', 'never'])
+    en: new Set(['today', 'yesterday', 'tomorrow', 'now', 'always', 'never']),
+    fr: new Set(['hier', 'demain', 'maintenant', 'toujours'])
   };
 
   function tempoParaOFim(palavras, lingua) {
@@ -373,7 +419,8 @@ window.Motor = (function () {
   const CAMPOS = {
     pt: { certa: 'pt', aceitas: 'aceitas',   distratores: 'distratores',   formas: 'formasPt', sinonimos: 'sinonimos',   regionais: 'regionais' },
     es: { certa: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', formas: 'formasEs', sinonimos: 'sinonimosEs', regionais: 'regionaisEs' },
-    en: { certa: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', formas: 'formasEn', sinonimos: 'sinonimosEn', regionais: 'regionaisEn' }
+    en: { certa: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', formas: 'formasEn', sinonimos: 'sinonimosEn', regionais: 'regionaisEn' },
+    fr: { certa: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', formas: 'formasFr', sinonimos: 'sinonimosFr', regionais: 'regionaisFr' }
   };
 
   /* ── a língua que o baralho ensina ──
@@ -505,7 +552,8 @@ window.Motor = (function () {
   const ARTIGOS_GENERO = {
     es: tabela({ el:'m', los:'m', un:'m', unos:'m', la:'f', las:'f', una:'f', unas:'f' }),
     pt: tabela({ o:'m', os:'m', um:'m', uns:'m', a:'f', as:'f', uma:'f', umas:'f' }),
-    en: tabela({})
+    en: tabela({}),
+    fr: tabela({ le:'m', un:'m', la:'f', une:'f' })
   };
 
   function generoDaFrente(txt, lingua) {
@@ -536,7 +584,7 @@ window.Motor = (function () {
      os pares vêm da nota do público («nota», «notaEs», «notaEn»), no formato
      «bandeira da ensinada x → bandeira do público y» — «🇺🇸 gun → 🇧🇷 a
      arma» no inglês, «🇧🇷 esquisito → 🇪🇸 raro» no português. */
-  const BANDEIRA_DA_LINGUA = { es: '🇪🇸', pt: '🇧🇷', en: '🇺🇸' };
+  const BANDEIRA_DA_LINGUA = { es: '🇪🇸', pt: '🇧🇷', en: '🇺🇸', fr: '🇫🇷' };
   const notaDoPublico = (card, a) => String((card && card[a === 'pt' ? 'nota' : 'nota' + a[0].toUpperCase() + a[1]]) || '');
   function espanhoisDoCard(card, direcao) {
     const l = linguaDaPergunta(direcao || IDA), a = linguaDaResposta(direcao || IDA);
@@ -812,7 +860,8 @@ window.Motor = (function () {
   function primeiraLetra(txt) {
     const t = String(txt || '').normalize('NFC').toLowerCase().trim()
       .replace(/^[¿¡"«(\s]+/, '')
-      .replace(/^(el|la|los|las|un|una|unos|unas|o|a|os|as|um|uma|the|an)\s+/, '');
+      .replace(/^(el|la|los|las|un|una|unos|unas|o|a|os|as|um|uma|the|an|le|les|une|des)\s+/, '')
+      .replace(/^l['’]/, '');
     const m = t.match(/[a-záéíóúüñ]/);
     return m ? m[0] : '';
   }
@@ -2395,7 +2444,7 @@ window.Motor = (function () {
      Sem elas, «Ayer lo supe» aparecia entre «Yo puse la mesa» e «No lo hagas»,
      sozinha no assunto, e a pergunta se respondia sem saber o verbo. As formas
      entram primeiro; o sorteio só completa o que faltar (há cards com três). */
-  const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es' };
+  const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt' };
 
   /* As palavras de uma frase, já no funil, para medir o que duas frases têm
      em comum. */
@@ -2429,7 +2478,7 @@ window.Motor = (function () {
      com a palavra do card. Quando a palavra não aparece na frase tal como
      está no card (verbo conjugado, plural), não há troca, e valem as frases
      vizinhas, como antes. */
-  const ARTIGO_DA_LINGUA = { es: /^(el|la|los|las)\s+/i, en: /^(the)\s+/i, pt: /^(o|a|os|as)\s+/i };
+  const ARTIGO_DA_LINGUA = { es: /^(el|la|los|las)\s+/i, en: /^(the)\s+/i, pt: /^(o|a|os|as)\s+/i, fr: /^(le\s+|la\s+|les\s+|l['’])/i };
   const cacheTraducoes = new Map();
   const LETRA_U = '\\p{L}';
   function trocasDePalavra(card, todos, lingua, certas) {
@@ -2438,7 +2487,7 @@ window.Motor = (function () {
     const palavra = todos.find(c => c.id === card.requer);
     if (!palavra) return [];
     const artigoRe = ARTIGO_DA_LINGUA[lingua] || /^$/;
-    const partes = t => { const m = String(t).match(artigoRe); return { artigo: m ? m[1].toLowerCase() : '', nucleo: String(t).replace(artigoRe, '').trim() }; };
+    const partes = t => { const m = String(t).match(artigoRe); return { artigo: m ? m[1].trim().toLowerCase() : '', nucleo: String(t).replace(artigoRe, '').trim() }; };
     const minha = partes(palavra[campo.certa] || '');
     if (!minha.nucleo) return [];
     const frase = String(card[campo.certa] || '');

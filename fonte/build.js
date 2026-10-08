@@ -45,8 +45,8 @@ if (!Motor || typeof Motor.respostasAceitas !== 'function') {
    baralho de espanhol responde em português e em inglês; o de inglês responde
    em português e em espanhol; o de português, em espanhol e em inglês. O
    porquê de cada decisão está em PLANO.md. */
-const IDIOMAS = ['es', 'en', 'pt'];
-const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português' };
+const IDIOMAS = ['es', 'en', 'pt', 'fr'];
+const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português', fr: 'francês' };
 
 /* Cada língua tem o seu quarteto de campos. A do baralho é a que se cobra; as
    outras duas são as respostas, e cada uma leva os seus distratores e a sua
@@ -55,23 +55,30 @@ const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português' };
 const CAMPOS_DA_LINGUA = {
   pt: { texto: 'pt', aceitas: 'aceitas',   distratores: 'distratores',   nota: 'nota',   formas: 'formasPt' },
   en: { texto: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', nota: 'notaEn', formas: 'formasEn' },
-  es: { texto: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', nota: 'notaEs', formas: 'formasEs' }
+  es: { texto: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', nota: 'notaEs', formas: 'formasEs' },
+  fr: { texto: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', nota: 'notaFr', formas: 'formasFr' }
 };
 
 /* De cada baralho, o público de origem: aquele em cuja língua o card é
    escrito e relido. É dele o rótulo que vai sem sufixo. */
-const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es' };
+const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt' };
+
+/* Quem estuda cada baralho. Os três primeiros servem às outras duas línguas
+   da casa; o de francês (08/10/2026) serve às três — português, espanhol e
+   inglês —, e por isso o card de francês traz os três quartetos inteiros. O
+   francês não é língua de resposta de nenhum outro baralho. */
+const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'] };
 
 /* O que vem colado na frente da palavra e não faz parte dela: o artigo, e o
    «to» do infinitivo inglês. */
 const ARTIGOS = {
   es: /^(el|la|los|las|un|una)\s+/,
   pt: /^(o|a|os|as|um|uma)\s+/,
-  en: /^(the|a|an|to)\s+/
+  en: /^(the|a|an|to)\s+/,
+  fr: /^(le\s+|la\s+|les\s+|un\s+|une\s+|l['’])/
 };
 
-const audienciasDe = idioma => [AUDIENCIA_PRINCIPAL[idioma]]
-  .concat(IDIOMAS.filter(a => a !== idioma && a !== AUDIENCIA_PRINCIPAL[idioma]));
+const audienciasDe = idioma => AUDIENCIAS[idioma];
 
 /* Os rótulos das formas verbais saem na língua de quem lê a pergunta:
    formasEs traz o rótulo em português (o público de origem do baralho) e
@@ -138,7 +145,7 @@ const ids = new Set();
 /* Arquivo largado direto em fonte/cards/ não pertence a baralho nenhum, e
    passaria despercebido: o build não o leria e ninguém saberia por quê. */
 for (const f of fs.readdirSync(pastaCards).filter(f => f.endsWith('.json'))) {
-  erros.push('arquivo fora de baralho: fonte/cards/' + f + ' (tem de estar em cards/es, cards/en ou cards/pt)');
+  erros.push('arquivo fora de baralho: fonte/cards/' + f + ' (tem de estar em cards/es, cards/en, cards/pt ou cards/fr)');
 }
 if (!baralhos.length) erros.push('nenhum baralho em fonte/cards/');
 
@@ -799,14 +806,16 @@ const ID_DO_CATALOGO = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 for (const { idioma, cards } of baralhos) {
   for (const audiencia of audienciasDe(idioma)) {
     const curso = idioma + '-' + audiencia;
-    const terceira = IDIOMAS.find(l => l !== idioma && l !== audiencia);
+    /* as línguas que não são nem a ensinada nem a do público: uma nos
+       baralhos de três línguas, duas no de francês */
+    const terceiras = IDIOMAS.filter(l => l !== idioma && l !== audiencia);
     const doApp = cards.map(c => {
       if (!ID_DO_CATALOGO.test(c.id) || c.id.length > 24) {
         console.error('\n  id fora do formato do catálogo (minúsculas, números e hífens, até 24): ' + c.id + '\n');
         process.exit(1);
       }
       const limpo = Object.assign({}, c);
-      camposDe(terceira).forEach(k => { if (k !== CAMPOS_DA_LINGUA[idioma].texto) delete limpo[k]; });
+      terceiras.forEach(t => camposDe(t).forEach(k => { if (k !== CAMPOS_DA_LINGUA[idioma].texto) delete limpo[k]; }));
       // as formas verbais com o rótulo na língua do público
       const formas = CAMPOS_DA_LINGUA[idioma].formas, daAudiencia = campoDasFormas(idioma, audiencia);
       if (c[daAudiencia]) limpo[formas] = c[daAudiencia];
@@ -938,7 +947,7 @@ const assets = [
   'js/motor.js', 'js/github.js', 'js/app.js',
   'js/revisao.js',
   'data/tags.js', 'data/historico.js',
-  'data/cards-es.js', 'data/cards-en.js', 'data/cards-pt.js',
+  'data/cards-es.js', 'data/cards-en.js', 'data/cards-pt.js', 'data/cards-fr.js',
   'data/textos-es.js', 'data/textos-en.js', 'data/textos-pt.js',
   'data/candidatos-es.js', 'js/revisao.js', 'js/escolher-textos.js'
 ].filter(a => fs.existsSync(path.join(raiz, a)));   // as páginas de revisão podem ainda não existir

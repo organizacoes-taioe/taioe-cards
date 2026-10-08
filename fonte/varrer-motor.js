@@ -61,11 +61,13 @@ const DE_TEXTO = fs.existsSync(arqTextos)
 const CAMPOS = {
   pt: { certa: 'pt', aceitas: 'aceitas', regionais: 'regionais' },
   en: { certa: 'en', aceitas: 'aceitasEn', regionais: 'regionaisEn' },
-  es: { certa: 'es', aceitas: 'aceitasEs', regionais: 'regionaisEs' }
+  es: { certa: 'es', aceitas: 'aceitasEs', regionais: 'regionaisEs' },
+  fr: { certa: 'fr', aceitas: 'aceitasFr', regionais: 'regionaisFr' }
 };
 
-/* as quatro direções: o idioma do baralho contra cada um dos dois públicos */
-const audiencias = ['pt', 'en', 'es'].filter(a => a !== idioma);
+/* as direções: o idioma do baralho contra cada um dos públicos (dois nos
+   três primeiros baralhos, três no de francês) */
+const audiencias = idioma === 'fr' ? ['pt', 'es', 'en'] : ['pt', 'en', 'es'].filter(a => a !== idioma);
 const direcoes = [];
 audiencias.forEach(a => { direcoes.push(idioma + '-' + a); direcoes.push(a + '-' + idioma); });
 

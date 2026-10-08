@@ -1,4 +1,4 @@
-# Plano dos três baralhos
+# Plano dos baralhos
 
 Este arquivo é o contrato do trabalho grande: levar o app de um baralho de
 espanhol a **três baralhos**, que cobrem as seis direções entre português,
@@ -287,6 +287,32 @@ sujeito. Três lições, nessa ordem de importância:
   palavra espanhola serve ao aparelho e à sala.
 
 Depois disso, commit e push. É o commit que serve de memória, não a conversa.
+
+### O baralho de francês (08/10/2026)
+
+Pedido do Gere: um curso de francês para quem fala português, com mil cards
+pelo menos. Decisões tomadas com ele antes de começar:
+
+1. **Os três públicos de uma vez.** O card de francês carrega português,
+   espanhol e inglês inteiros, e o baralho rende três cursos: `fr-pt`, `fr-es`
+   e `fr-en`. O build passou a ter a lista explícita de públicos por baralho
+   (`AUDIENCIAS`), e o pacote de cada curso tira os campos de todas as línguas
+   que não são a ensinada nem a do público.
+2. **O francês da França**, com o Quebec, a Bélgica e a Suíça como variantes.
+3. **Os três cursos entram na escolha do curso** (`inicio.js`), com a bandeira
+   e os nomes nas três línguas da interface.
+4. **Língua do zero, pelo ciclo do manual (seção 18).** A leva de estreia teve
+   as 40 frases de primeiros passos e 50 palavras (18 verbos, 17 substantivos,
+   7 adjetivos, 8 advérbios). A próxima é a das frases de uso dessas palavras,
+   com as conjugações; depois, as palavras que as frases pedirem.
+
+O catálogo dos três cursos (`fonte/sql/catalogo-fr-*.sql`) precisa ser
+aplicado pelo workflow Catálogo do taioe-infra antes de a leva ir para a main,
+como o de todo curso.
+
+| leva | o que | estado |
+|---|---|---|
+| fr 1 | 40 primeiros passos + 50 palavras | **feito** (08/10) — 90 cards |
 
 ---
 
