@@ -2,7 +2,7 @@
  "versao": 1,
  "idioma": "fr",
  "gerado_em": "2026-10-08",
- "total": 181,
+ "total": 245,
  "cards": [
   {
    "idioma": "fr",
@@ -4123,7 +4123,6 @@
    "aceitasEn": [
     "big",
     "large",
-    "great",
     "tall"
    ],
    "distratoresEn": [
@@ -4426,15 +4425,15 @@
    "id": "fr-p043",
    "tipo": "palavra",
    "fr": "très",
-   "pt": "muito",
+   "pt": "muito (antes de adjetivo)",
    "aceitas": [
     "muito"
    ],
    "distratores": [
-    "três",
-    "trás",
-    "tarde",
-    "tanto"
+    "três (o número)",
+    "trás (atrás de)",
+    "tarde (horário)",
+    "tanto (assim)"
    ],
    "es": "muy",
    "aceitasEs": [
@@ -5010,8 +5009,8 @@
    "notaEn": "In French you have an age instead of being it: «j'ai vingt ans», literally I have twenty years. For counting years the word is «an», not «année».",
    "requerTodas": [
     "fr-p002",
-    "+vingt",
-    "+l'an"
+    "fr-p051",
+    "fr-p052"
    ]
   },
   {
@@ -5064,7 +5063,7 @@
    "notaEn": "«Il y a» is there is / there are. The verb is «avoir», and «il» refers to nobody. «C'est un problème» would be it's a problem.",
    "requerTodas": [
     "fr-p002",
-    "+le problème"
+    "fr-p053"
    ]
   },
   {
@@ -5317,7 +5316,7 @@
    "notaEn": "«On» is the impersonal one or people, and the casual we: «on dit», people say. It takes the «il» form of the verb.",
    "requerTodas": [
     "fr-p005",
-    "+le français"
+    "fr-p054"
    ]
   },
   {
@@ -5372,7 +5371,7 @@
    "requerTodas": [
     "fr-p005",
     "fr-p046",
-    "+la vérité"
+    "fr-p055"
    ]
   },
   {
@@ -5434,7 +5433,7 @@
    "notaEn": "A rising tone is enough to ask permission: «Je peux… ?». More formal: «Puis-je entrer ?».",
    "requerTodas": [
     "fr-p006",
-    "+entrer"
+    "fr-p056"
    ]
   },
   {
@@ -5560,7 +5559,7 @@
    "notaEn": "«Tu» for people you're close to; «vous» for everyone else: «Vous voulez un café ?». Even more polite: «Tu voudrais un café ?».",
    "requerTodas": [
     "fr-p007",
-    "+le café"
+    "fr-p057"
    ]
   },
   {
@@ -5673,7 +5672,7 @@
    "notaEn": "A learned skill takes «savoir», to know: «je sais nager», I can swim. «Je peux nager» means I'm able or allowed to.",
    "requerTodas": [
     "fr-p008",
-    "+nager"
+    "fr-p058"
    ]
   },
   {
@@ -5842,7 +5841,7 @@
    "notaEn": "«On se voit», literally one sees each other: «on» is the casual we. The present stands in for the future, as in English «see you».",
    "requerTodas": [
     "fr-p010",
-    "+demain"
+    "fr-p059"
    ]
   },
   {
@@ -5963,7 +5962,7 @@
    "notaEn": "Transport takes «prendre», to take: «prendre le bus», «prendre le train».",
    "requerTodas": [
     "fr-p011",
-    "+le bus"
+    "fr-p060"
    ]
   },
   {
@@ -6090,8 +6089,8 @@
    "notaEn": "«Trop» means too and goes before the word: «trop vite», too fast.",
    "requerTodas": [
     "fr-p012",
-    "+trop",
-    "+vite"
+    "fr-p061",
+    "fr-p062"
    ]
   },
   {
@@ -6150,7 +6149,7 @@
    "notaEn": "You talk «à» someone: «parler à quelqu'un». «Parler avec» also exists, more for chatting with.",
    "requerTodas": [
     "fr-p012",
-    "+la mère"
+    "fr-p063"
    ]
   },
   {
@@ -6212,7 +6211,7 @@
    "notaEn": "«On» is the casual we, but it takes the «il» form: «on mange», we eat.",
    "requerTodas": [
     "fr-p013",
-    "+midi"
+    "fr-p064"
    ]
   },
   {
@@ -6267,7 +6266,7 @@
    "notaEn": "After a negative, «du», «de la» and «des» become «de»: «je mange de la viande», but «je ne mange pas de viande».",
    "requerTodas": [
     "fr-p013",
-    "+la viande"
+    "fr-p065"
    ]
   },
   {
@@ -6391,7 +6390,7 @@
    "notaEn": "Literally «do we drink a glass?»: «boire un verre» means to go for a drink, alcoholic or not.",
    "requerTodas": [
     "fr-p014",
-    "+le verre"
+    "fr-p066"
    ]
   },
   {
@@ -6446,8 +6445,8 @@
    "notaEn": "What you like takes the article: «j'aime le chocolat». «Beaucoup» goes right after the verb.",
    "requerTodas": [
     "fr-p015",
-    "+beaucoup",
-    "+le chocolat"
+    "fr-p067",
+    "fr-p068"
    ]
   },
   {
@@ -6610,7 +6609,7 @@
    "notaEn": "«Dans» means in, inside. The «h» of «hôpital» is silent: «l'hôpital».",
    "requerTodas": [
     "fr-p017",
-    "+l'hôpital"
+    "fr-p069"
    ]
   },
   {
@@ -6724,7 +6723,7 @@
    "notaEn": "«Tous les jours», every day (literally all the days): «tout» agrees, becoming «tous» in the masculine plural.",
    "requerTodas": [
     "fr-p017",
-    "+tout",
+    "fr-p070",
     "fr-p019"
    ]
   },
@@ -6788,7 +6787,7 @@
    "notaEs": "«Rentrer» es volver a casa o entrar de nuevo. En casa, quieto, es «je suis à la maison».",
    "notaEn": "«Rentrer» is to go back home, or back inside. Being at home is «je suis à la maison».",
    "requerTodas": [
-    "+rentrer",
+    "fr-p071",
     "fr-p020"
    ]
   },
@@ -6846,7 +6845,7 @@
    "requerTodas": [
     "fr-p021",
     "fr-p001",
-    "+le voisin"
+    "fr-p072"
    ]
   },
   {
@@ -6902,7 +6901,7 @@
    "requerTodas": [
     "fr-p022",
     "fr-p001",
-    "+français"
+    "fr-p054"
    ]
   },
   {
@@ -6957,7 +6956,7 @@
    "notaEn": "«Jouer» is to play, games or instruments: «jouer au foot», «jouer du piano». The «-ent» ending of «jouent» is silent.",
    "requerTodas": [
     "fr-p023",
-    "+jouer",
+    "fr-p073",
     "fr-p032"
    ]
   },
@@ -7011,7 +7010,7 @@
    "notaEn": "«Meilleur» is best or better; feminine «ma meilleure amie» sounds the same.",
    "requerTodas": [
     "fr-p001",
-    "+meilleur",
+    "fr-p074",
     "fr-p024"
    ]
   },
@@ -7183,7 +7182,7 @@
    "notaEs": "«Le verre» es el vaso, y también el vidrio. Vaso de agua: «un verre d'eau», con «de» y sin artículo.",
    "notaEn": "«Le verre» is a glass, for drinking or the material. A glass of water: «un verre d'eau», with «de» and no article.",
    "requerTodas": [
-    "+le verre",
+    "fr-p066",
     "fr-p026"
    ]
   },
@@ -7240,7 +7239,7 @@
    "notaEs": "Pan sin cantidad lleva partitivo: «du pain». «Acheter» lleva acento grave cuando la terminación es muda: «j'achète», pero «nous achetons».",
    "notaEn": "Bread with no quantity takes the partitive: «du pain», some bread. «Acheter» gets a grave accent before a silent ending: «j'achète», but «nous achetons».",
    "requerTodas": [
-    "+acheter",
+    "fr-p075",
     "fr-p027"
    ]
   },
@@ -7405,7 +7404,7 @@
    "requerTodas": [
     "fr-p036",
     "fr-p030",
-    "+demain"
+    "fr-p059"
    ]
   },
   {
@@ -7677,7 +7676,7 @@
    "notaEs": "«Lire» es leer: je lis, tu lis, il lit, nous lisons. El presente vale también por «estoy leyendo».",
    "notaEn": "«Lire» is to read: je lis, tu lis, il lit, nous lisons. The present also means I'm reading.",
    "requerTodas": [
-    "+lire",
+    "fr-p076",
     "fr-p033"
    ]
   },
@@ -7740,7 +7739,7 @@
    "requerTodas": [
     "fr-p034",
     "fr-p001",
-    "+la panne"
+    "fr-p077"
    ]
   },
   {
@@ -7919,7 +7918,7 @@
    "notaEs": "Para personas, «grand» es alto, y «petit» es bajo.",
    "notaEn": "For people, «grand» is tall and «petit» is short.",
    "requerTodas": [
-    "+le frère",
+    "fr-p078",
     "fr-p001",
     "fr-p043",
     "fr-p037"
@@ -7975,7 +7974,7 @@
    "notaEs": "«Petit» tras «être» va al final, como en español. Delante del sustantivo también: «un petit appartement».",
    "notaEn": "«Petit» can follow «être», as here, or go before the noun: «un petit appartement».",
    "requerTodas": [
-    "+l'appartement",
+    "fr-p079",
     "fr-p001",
     "fr-p038"
    ]
@@ -8270,7 +8269,7 @@
    "requerTodas": [
     "fr-p004",
     "fr-p043",
-    "+froid"
+    "fr-p080"
    ]
   },
   {
@@ -8333,7 +8332,7 @@
     "fr-p012",
     "fr-p043",
     "fr-p044",
-    "+le français"
+    "fr-p054"
    ]
   },
   {
@@ -8394,7 +8393,7 @@
    "requerTodas": [
     "fr-p045",
     "fr-p012",
-    "+l'anglais"
+    "fr-p081"
    ]
   },
   {
@@ -8510,8 +8509,8 @@
    "notaEs": "«Devoir» es tener que, deber. «Partir» es irse, marcharse; partir algo en pedazos es «casser».\n🇫🇷 casser → 🇪🇸 romper",
    "notaEn": "«Devoir» is to have to, must. «Partir» is to leave, go away.",
    "requerTodas": [
-    "+devoir",
-    "+partir",
+    "fr-p082",
+    "fr-p083",
     "fr-p047"
    ]
   },
@@ -8570,7 +8569,7 @@
    "requerTodas": [
     "fr-p048",
     "fr-p012",
-    "+le français"
+    "fr-p054"
    ]
   },
   {
@@ -8627,7 +8626,7 @@
    "requerTodas": [
     "fr-p049",
     "fr-p001",
-    "+lundi"
+    "fr-p084"
    ]
   },
   {
@@ -8761,7 +8760,7 @@
    "notaEn": "«En retard» doesn't change for gender. Present of «être»: je suis, tu es, il est, nous sommes, vous êtes, ils sont.",
    "requerTodas": [
     "fr-p001",
-    "+le retard"
+    "fr-p085"
    ]
   },
   {
@@ -8837,7 +8836,7 @@
    "notaEn": "«Ils ont» (they have) links with a «z» sound: «eel-ZON». «Ils sont» (they are) has an «s» sound: watch the difference.",
    "requerTodas": [
     "fr-p002",
-    "+la faim"
+    "fr-p086"
    ]
   },
   {
@@ -8914,86 +8913,86 @@
    "notaEn": "Present of «aller»: je vais, tu vas, il va, nous allons, vous allez, ils vont. The future switches stems: «j'irai».",
    "requerTodas": [
     "fr-p003",
-    "+la plage"
+    "fr-p087"
    ]
   },
   {
    "idioma": "fr",
    "id": "fr-v004",
    "tipo": "frase",
-   "fr": "Il fait la cuisine.",
-   "pt": "Ele cozinha.",
+   "fr": "Elle fait du sport.",
+   "pt": "Ela faz esporte.",
    "aceitas": [
-    "ele cozinha",
-    "ele esta cozinhando",
-    "ele ta cozinhando",
-    "ele faz a comida",
-    "ele faz comida"
+    "ela faz esporte",
+    "faz esporte",
+    "ela pratica esporte",
+    "ela faz exercicio",
+    "ela faz esportes"
    ],
    "distratores": [
-    "Ele cozinhava.",
-    "Ele cozinhou.",
-    "Ele vai cozinhar.",
-    "Ele cozinharia."
+    "Ela fazia esporte.",
+    "Ela fez esporte.",
+    "Ela vai fazer esporte.",
+    "Ela faria esporte."
    ],
-   "es": "Él cocina.",
+   "es": "Hace deporte.",
    "aceitasEs": [
-    "Él cocina.",
-    "Cocina.",
-    "Está cocinando.",
-    "Él está cocinando.",
-    "Hace la comida."
+    "Hace deporte.",
+    "Ella hace deporte.",
+    "Practica deporte.",
+    "Hace ejercicio."
    ],
    "distratoresEs": [
-    "Cocinaba.",
-    "Cocinó.",
-    "Cocinará.",
-    "Cocinaría."
+    "Hacía deporte.",
+    "Hizo deporte.",
+    "Hará deporte.",
+    "Haría deporte."
    ],
-   "en": "He's cooking.",
+   "en": "She does sports.",
    "aceitasEn": [
-    "hes cooking",
-    "he is cooking",
-    "he cooks",
-    "he does the cooking"
+    "she does sports",
+    "she plays sports",
+    "she does sport",
+    "she exercises",
+    "she works out"
    ],
    "distratoresEn": [
-    "He was cooking.",
-    "He cooked.",
-    "He'll cook.",
-    "He would cook."
+    "She used to do sports.",
+    "She did sports.",
+    "She'll do sports.",
+    "She would do sports."
    ],
    "formasFr": {
-    "Il faisait la cuisine": "imperfeito",
-    "Il a fait la cuisine": "passé composé",
-    "Il fera la cuisine": "futuro",
-    "Il ferait la cuisine": "condicional"
+    "Elle faisait du sport": "imperfeito",
+    "Elle a fait du sport": "passé composé",
+    "Elle fera du sport": "futuro",
+    "Elle ferait du sport": "condicional"
    },
    "formasFrEs": {
-    "Il faisait la cuisine": "imperfecto",
-    "Il a fait la cuisine": "passé composé",
-    "Il fera la cuisine": "futuro",
-    "Il ferait la cuisine": "condicional"
+    "Elle faisait du sport": "imperfecto",
+    "Elle a fait du sport": "passé composé",
+    "Elle fera du sport": "futuro",
+    "Elle ferait du sport": "condicional"
    },
    "formasFrEn": {
-    "Il faisait la cuisine": "imperfect",
-    "Il a fait la cuisine": "passé composé",
-    "Il fera la cuisine": "future",
-    "Il ferait la cuisine": "conditional"
+    "Elle faisait du sport": "imperfect",
+    "Elle a fait du sport": "passé composé",
+    "Elle fera du sport": "future",
+    "Elle ferait du sport": "conditional"
    },
    "nivel": "A1",
    "tags": [
     "conjugação",
     "presente",
     "irregular",
-    "comida"
+    "saúde"
    ],
-   "nota": "«Faire la cuisine» é cozinhar; «la cuisine» também é a cozinha. Futuro de «faire»: «il fera».",
-   "notaEs": "«Faire la cuisine» es cocinar; «la cuisine» también es la cocina. Futuro de «faire»: «il fera».",
-   "notaEn": "«Faire la cuisine» is to cook; «la cuisine» is also the kitchen. Future of «faire»: «il fera».",
+   "nota": "«Faire du sport», com o partitivo, é praticar esporte. Presente de «faire»: je fais, nous faisons, vous faites, ils font; futuro «elle fera».",
+   "notaEs": "«Faire du sport», con partitivo, es hacer deporte. Presente de «faire»: je fais, nous faisons, vous faites, ils font; futuro «elle fera».",
+   "notaEn": "«Faire du sport», with the partitive, is to do sports. Present of «faire»: je fais, nous faisons, vous faites, ils font; future «elle fera».",
    "requerTodas": [
     "fr-p004",
-    "+la cuisine"
+    "+le sport"
    ]
   },
   {
@@ -9074,7 +9073,7 @@
    "notaEn": "Present of «prendre»: je prends, nous prenons, ils prennent (double «n»). Past participle: «pris».",
    "requerTodas": [
     "fr-p011",
-    "+le train"
+    "fr-p089"
    ]
   },
   {
@@ -9221,7 +9220,7 @@
    "notaEn": "Present of «vouloir»: je veux, tu veux, il veut, nous voulons, ils veulent. The conditional, «elle voudrait», is would like.",
    "requerTodas": [
     "fr-p007",
-    "+le chien"
+    "fr-p090"
    ]
   },
   {
@@ -9294,7 +9293,7 @@
    "notaEn": "Irregular future: «je saurai». In the passé composé, «j'ai su» means I found out.",
    "requerTodas": [
     "fr-p008",
-    "+la réponse"
+    "fr-p091"
    ]
   },
   {
@@ -9518,7 +9517,7 @@
    "notaEn": "«La mer» is feminine. The future of «voir» has a double «r»: «je verrai». Past participle: «vu».",
    "requerTodas": [
     "fr-p010",
-    "+la mer"
+    "fr-p092"
    ]
   },
   {
@@ -9593,7 +9592,7 @@
    "notaEn": "«Boire» changes stem in the plural and the imperfect: «nous buvons», «il buvait». Past participle: «bu».",
    "requerTodas": [
     "fr-p014",
-    "+le vin"
+    "fr-p093"
    ]
   },
   {
@@ -9666,8 +9665,8 @@
    "notaEn": "The regular «-er» pattern: future and conditional are built on the whole infinitive, «parler-a», «parler-ait».",
    "requerTodas": [
     "fr-p012",
-    "+trois",
-    "+la langue"
+    "fr-p094",
+    "fr-p095"
    ]
   },
   {
@@ -9741,7 +9740,7 @@
    "notaEn": "The everyday past is the passé composé: «avoir» + participle, used for both I ate and I have eaten. In «-er» verbs the participle ends in «-é».",
    "requerTodas": [
     "fr-p013",
-    "+la pomme"
+    "fr-p096"
    ]
   },
   {
@@ -9821,7 +9820,7 @@
    "requerTodas": [
     "fr-p001",
     "fr-p003",
-    "+le cinéma"
+    "fr-p097"
    ]
   },
   {
@@ -9898,7 +9897,7 @@
    "notaEn": "«Partir» takes «être» in the passé composé, and the participle agrees with her: «elle est partie».",
    "requerTodas": [
     "fr-p001",
-    "+partir"
+    "fr-p083"
    ]
   },
   {
@@ -10039,7 +10038,7 @@
    "notaEn": "The imperfect describes the background: what the weather was like. The passé composé, «il a fait froid», reports a closed period.",
    "requerTodas": [
     "fr-p004",
-    "+froid"
+    "fr-p080"
    ]
   },
   {
@@ -10118,7 +10117,7 @@
    "requerTodas": [
     "fr-p003",
     "fr-p013",
-    "+le restaurant"
+    "fr-p098"
    ]
   },
   {
@@ -10268,7 +10267,7 @@
    "notaEn": "The conditional joins the future stem and the imperfect endings: «ser-» + «-ait» = «serait».",
    "requerTodas": [
     "fr-p001",
-    "+génial"
+    "fr-p099"
    ]
   },
   {
@@ -10352,7 +10351,7 @@
    "requerTodas": [
     "fr-p002",
     "fr-p010",
-    "+le film"
+    "fr-p100"
    ]
   },
   {
@@ -10430,7 +10429,7 @@
    "requerTodas": [
     "fr-p002",
     "fr-p011",
-    "+le métro"
+    "fr-p101"
    ]
   },
   {
@@ -10508,8 +10507,3114 @@
    "notaEn": "Fear is something you have: «avoir peur». The participle of «avoir» is «eu», pronounced like the «u» in «tu».",
    "requerTodas": [
     "fr-p002",
-    "+la peur"
+    "fr-p102"
    ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p051",
+   "tipo": "palavra",
+   "fr": "vingt",
+   "pt": "vinte",
+   "aceitas": [
+    "vinte",
+    "20"
+   ],
+   "distratores": [
+    "trinta",
+    "doze",
+    "dois",
+    "cem"
+   ],
+   "es": "veinte",
+   "aceitasEs": [
+    "veinte",
+    "20"
+   ],
+   "distratoresEs": [
+    "treinta",
+    "doce",
+    "dos",
+    "cien"
+   ],
+   "en": "twenty",
+   "aceitasEn": [
+    "twenty",
+    "20"
+   ],
+   "distratoresEn": [
+    "thirty",
+    "twelve",
+    "two",
+    "a hundred"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "O «gt» é mudo: «vingt» soa como «vin» (vinho). O «t» volta em «vingt et un» e de «vingt-deux» a «vingt-neuf».",
+   "notaEs": "La «gt» es muda: «vingt» suena como «vin» (vino). La «t» vuelve a sonar en «vingt et un» y de «vingt-deux» a «vingt-neuf».",
+   "notaEn": "The «gt» is silent: «vingt» sounds like «vin» (wine). The «t» is heard again in «vingt et un» and from «vingt-deux» to «vingt-neuf»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p052",
+   "tipo": "palavra",
+   "fr": "l'an",
+   "aceitasFr": [
+    "un an"
+   ],
+   "pt": "o ano (para contar)",
+   "aceitas": [
+    "ano",
+    "o ano"
+   ],
+   "distratores": [
+    "o mês (do calendário)",
+    "o dia (da semana)",
+    "o anel (de ouro)",
+    "o ninho (de ave)"
+   ],
+   "es": "el año (al contar)",
+   "aceitasEs": [
+    "el año",
+    "año"
+   ],
+   "distratoresEs": [
+    "el mes (del calendario)",
+    "el día (de la semana)",
+    "el anillo (de oro)",
+    "el nido (de ave)"
+   ],
+   "en": "the year (counting)",
+   "aceitasEn": [
+    "year",
+    "the year",
+    "years"
+   ],
+   "distratoresEn": [
+    "the month (calendar)",
+    "the day (of the week)",
+    "the ring (gold)",
+    "the nest (bird)"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Masculino. É o ano que se conta: a idade («vingt ans»), a duração («deux ans»), a data («l'an 2000»). O ano vivido, com o que acontece nele, é «l'année».",
+   "notaEs": "Masculino. Es el año que se cuenta: la edad («vingt ans»), la duración («deux ans»), la fecha («l'an 2000»). El año vivido es «l'année».",
+   "notaEn": "Masculine. The year you count with: age («vingt ans»), duration («deux ans»), dates («l'an 2000»). The year as lived is «l'année»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p053",
+   "tipo": "palavra",
+   "fr": "le problème",
+   "pt": "o problema",
+   "aceitas": [
+    "problema"
+   ],
+   "distratores": [
+    "o poema",
+    "o prêmio",
+    "o programa",
+    "o propósito"
+   ],
+   "es": "el problema",
+   "aceitasEs": [
+    "el problema",
+    "problema"
+   ],
+   "distratoresEs": [
+    "el poema",
+    "el premio",
+    "el programa",
+    "el propósito"
+   ],
+   "en": "the problem",
+   "aceitasEn": [
+    "problem",
+    "the problem",
+    "the issue",
+    "the trouble"
+   ],
+   "distratoresEn": [
+    "the poem",
+    "the prize",
+    "the program",
+    "the purpose"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Masculino, como em português. «Pas de problème», sem problema.",
+   "notaEs": "Masculino, como en español. «Pas de problème», no hay problema.",
+   "notaEn": "Masculine. «Pas de problème», no problem."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p054",
+   "tipo": "palavra",
+   "fr": "français",
+   "aceitasFr": [
+    "française",
+    "le français"
+   ],
+   "pt": "francês",
+   "aceitas": [
+    "frances",
+    "francesa",
+    "o frances"
+   ],
+   "distratores": [
+    "fresco",
+    "franco",
+    "flamengo",
+    "inglês"
+   ],
+   "es": "francés",
+   "aceitasEs": [
+    "francés",
+    "francesa",
+    "el francés"
+   ],
+   "distratoresEs": [
+    "fresco",
+    "franco",
+    "flamenco",
+    "inglés"
+   ],
+   "en": "French",
+   "aceitasEn": [
+    "french"
+   ],
+   "distratoresEn": [
+    "fresh",
+    "frank",
+    "Flemish",
+    "English"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "cultura"
+   ],
+   "nota": "Adjetivo e língua: «un livre français», «parler français». Em minúscula; com maiúscula, só o povo: «les Français».",
+   "notaEs": "Adjetivo e idioma: «un livre français», «parler français». En minúscula; con mayúscula, solo el pueblo: «les Français».",
+   "notaEn": "Adjective and language: «un livre français», «parler français». Lowercase; only the people are capitalized: «les Français»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p055",
+   "tipo": "palavra",
+   "fr": "la vérité",
+   "pt": "a verdade",
+   "aceitas": [
+    "verdade"
+   ],
+   "distratores": [
+    "a verdura",
+    "a variedade",
+    "a vontade",
+    "a mentira"
+   ],
+   "es": "la verdad",
+   "aceitasEs": [
+    "la verdad",
+    "verdad"
+   ],
+   "distratoresEs": [
+    "la verdura",
+    "la variedad",
+    "la voluntad",
+    "la mentira"
+   ],
+   "en": "the truth",
+   "aceitasEn": [
+    "truth",
+    "the truth"
+   ],
+   "distratoresEn": [
+    "the vegetable",
+    "the variety",
+    "the will",
+    "the lie"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "A terminação «-té» costuma ser o «-dade» do português: «la vérité», «la liberté», «la société».",
+   "notaEs": "La terminación «-té» suele ser el «-dad» del español: «la vérité», «la liberté», «la société».",
+   "notaEn": "French «-té» often matches English «-ty»: «la liberté», liberty; «la société», society."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p056",
+   "tipo": "palavra",
+   "fr": "entrer",
+   "pt": "entrar",
+   "aceitas": [
+    "entrar"
+   ],
+   "distratores": [
+    "enterrar",
+    "entregar",
+    "entreter",
+    "encontrar"
+   ],
+   "es": "entrar",
+   "aceitasEs": [
+    "entrar"
+   ],
+   "distratoresEs": [
+    "enterrar",
+    "entregar",
+    "entretener",
+    "encontrar"
+   ],
+   "en": "to enter",
+   "aceitasEn": [
+    "to enter",
+    "enter",
+    "to come in",
+    "to go in"
+   ],
+   "distratoresEn": [
+    "to bury",
+    "to deliver",
+    "to entertain",
+    "to meet"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "nota": "Regular em «-er». O passé composé é com «être»: «je suis entré». A entrada é «l'entrée», que no restaurante também é a entrada do cardápio.",
+   "notaEs": "Regular en «-er». El passé composé va con «être»: «je suis entré». La entrada es «l'entrée», que en el restaurante es también el entrante.",
+   "notaEn": "Regular «-er» verb, with «être» in the passé composé: «je suis entré». The entrance is «l'entrée», which on a menu is the starter."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p057",
+   "tipo": "palavra",
+   "fr": "le café",
+   "pt": "o café",
+   "aceitas": [
+    "cafe",
+    "a cafeteria"
+   ],
+   "distratores": [
+    "o chá",
+    "o cacau",
+    "o leite",
+    "o açúcar"
+   ],
+   "es": "el café",
+   "aceitasEs": [
+    "el café",
+    "café",
+    "la cafetería"
+   ],
+   "distratoresEs": [
+    "el té",
+    "el cacao",
+    "el chocolate",
+    "el azúcar"
+   ],
+   "en": "coffee",
+   "aceitasEn": [
+    "coffee",
+    "the coffee",
+    "cafe",
+    "the cafe",
+    "a cafe"
+   ],
+   "distratoresEn": [
+    "tea",
+    "cocoa",
+    "milk",
+    "sugar"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "comida",
+    "cidade"
+   ],
+   "nota": "É a bebida e o lugar: «on se retrouve au café», a gente se encontra no café. Pedido sozinho, «un café» é um expresso.",
+   "notaEs": "Es la bebida y el lugar: «on se retrouve au café», quedamos en el café. Pedido solo, «un café» es un expreso.",
+   "notaEn": "Both the drink and the place: «on se retrouve au café», let's meet at the café. Ordered on its own, «un café» is an espresso."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p058",
+   "tipo": "palavra",
+   "fr": "nager",
+   "pt": "nadar",
+   "aceitas": [
+    "nadar"
+   ],
+   "distratores": [
+    "negar",
+    "navegar",
+    "nascer",
+    "mergulhar"
+   ],
+   "es": "nadar",
+   "aceitasEs": [
+    "nadar"
+   ],
+   "distratoresEs": [
+    "negar",
+    "navegar",
+    "nacer",
+    "bucear"
+   ],
+   "en": "to swim",
+   "aceitasEn": [
+    "to swim",
+    "swim"
+   ],
+   "distratoresEn": [
+    "to deny",
+    "to sail",
+    "to be born",
+    "to dive"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "natureza"
+   ],
+   "nota": "Como «manger», ganha um «e» em «nous nageons». A natação é «la natation».",
+   "notaEs": "Como «manger», gana una «e» en «nous nageons». La natación es «la natation».",
+   "notaEn": "Like «manger», it adds an «e» in «nous nageons». Swimming, the sport, is «la natation»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p059",
+   "tipo": "palavra",
+   "fr": "demain",
+   "pt": "amanhã",
+   "aceitas": [
+    "amanha"
+   ],
+   "distratores": [
+    "ontem",
+    "depois",
+    "de manhã",
+    "hoje"
+   ],
+   "es": "mañana",
+   "aceitasEs": [
+    "mañana"
+   ],
+   "distratoresEs": [
+    "ayer",
+    "después",
+    "por la mañana",
+    "hoy"
+   ],
+   "en": "tomorrow",
+   "aceitasEn": [
+    "tomorrow"
+   ],
+   "distratoresEn": [
+    "yesterday",
+    "afterwards",
+    "in the morning",
+    "today"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Amanhã, o dia seguinte. A manhã, parte do dia, é «le matin». «À demain !», até amanhã.",
+   "notaEs": "Mañana, el día siguiente. La mañana, parte del día, es «le matin»: el francés no las confunde. «À demain !», ¡hasta mañana!",
+   "notaEn": "Tomorrow. The morning is «le matin». «À demain !», see you tomorrow."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p060",
+   "tipo": "palavra",
+   "fr": "le bus",
+   "pt": "o ônibus",
+   "aceitas": [
+    "onibus"
+   ],
+   "distratores": [
+    "o bonde",
+    "o barco",
+    "o táxi",
+    "o busto"
+   ],
+   "es": "el autobús",
+   "aceitasEs": [
+    "el autobús",
+    "autobús",
+    "el bus",
+    "el colectivo",
+    "la guagua"
+   ],
+   "distratoresEs": [
+    "el tranvía",
+    "el barco",
+    "el taxi",
+    "el busto"
+   ],
+   "en": "the bus",
+   "aceitasEn": [
+    "bus",
+    "the bus"
+   ],
+   "distratoresEn": [
+    "the streetcar",
+    "the boat",
+    "the taxi",
+    "the bust"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cidade",
+    "viagem"
+   ],
+   "nota": "O «s» final soa: «büs». O de viagem, entre cidades, é «le car».",
+   "notaEs": "La «s» final suena: «büs». El de viaje, entre ciudades, es «le car».",
+   "notaEn": "The final «s» is pronounced. A long-distance coach is «le car»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p061",
+   "tipo": "palavra",
+   "fr": "trop",
+   "pt": "demais",
+   "aceitas": [
+    "demais",
+    "demasiado",
+    "em excesso"
+   ],
+   "distratores": [
+    "pouco",
+    "tarde",
+    "tanto",
+    "quase"
+   ],
+   "es": "demasiado",
+   "aceitasEs": [
+    "demasiado"
+   ],
+   "distratoresEs": [
+    "poco",
+    "tarde",
+    "tanto",
+    "casi"
+   ],
+   "en": "too / too much",
+   "aceitasEn": [
+    "too",
+    "too much",
+    "too many"
+   ],
+   "distratoresEn": [
+    "little / not much",
+    "late / later",
+    "so much / so",
+    "almost / nearly"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Antes de adjetivo, «trop» é demais: «trop cher», caro demais. Com substantivo, pede «de»: «trop de gens», gente demais.",
+   "notaEs": "Delante de adjetivo, «trop» es demasiado: «trop cher». Con sustantivo, pide «de»: «trop de gens», demasiada gente.",
+   "notaEn": "Before an adjective, «trop» is too: «trop cher», too expensive. With a noun it takes «de»: «trop de gens», too many people."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p062",
+   "tipo": "palavra",
+   "fr": "vite",
+   "pt": "rápido",
+   "aceitas": [
+    "rapido",
+    "depressa",
+    "rapidamente"
+   ],
+   "distratores": [
+    "devagar",
+    "cedo",
+    "longe",
+    "tarde"
+   ],
+   "es": "rápido",
+   "aceitasEs": [
+    "rápido",
+    "deprisa",
+    "rápidamente",
+    "pronto"
+   ],
+   "distratoresEs": [
+    "despacio",
+    "temprano",
+    "lejos",
+    "tarde"
+   ],
+   "en": "fast / quickly",
+   "aceitasEn": [
+    "fast",
+    "quickly",
+    "quick"
+   ],
+   "distratoresEn": [
+    "slowly / slow",
+    "early / ahead",
+    "far / away",
+    "late / later"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Advérbio: «parler vite», falar rápido. O adjetivo é «rapide». «Vite !», rápido!",
+   "notaEs": "Adverbio: «parler vite», hablar rápido. El adjetivo es «rapide». «Vite !», ¡rápido!",
+   "notaEn": "Adverb: «parler vite», to talk fast. The adjective is «rapide». «Vite !», quick!"
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p063",
+   "tipo": "palavra",
+   "fr": "la mère",
+   "pt": "a mãe",
+   "aceitas": [
+    "mae"
+   ],
+   "distratores": [
+    "a mesa",
+    "a moça",
+    "a irmã",
+    "a avó"
+   ],
+   "es": "la madre",
+   "aceitasEs": [
+    "la madre",
+    "madre",
+    "la mamá"
+   ],
+   "distratoresEs": [
+    "la mesa",
+    "la moza",
+    "la hermana",
+    "la abuela"
+   ],
+   "en": "the mother",
+   "aceitasEn": [
+    "mother",
+    "the mother",
+    "mom",
+    "the mom"
+   ],
+   "distratoresEn": [
+    "the table",
+    "the girl",
+    "the sister",
+    "the grandmother"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "família"
+   ],
+   "nota": "Soa igual a «la mer» (o mar). Mamãe é «maman».",
+   "notaEs": "Suena igual que «la mer» (el mar). Mamá es «maman».",
+   "notaEn": "It sounds exactly like «la mer» (the sea). Mom is «maman»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p064",
+   "tipo": "palavra",
+   "fr": "midi",
+   "pt": "o meio-dia",
+   "aceitas": [
+    "meio dia",
+    "o meio dia"
+   ],
+   "distratores": [
+    "o meio",
+    "o mês",
+    "o domingo",
+    "o entardecer"
+   ],
+   "es": "el mediodía",
+   "aceitasEs": [
+    "el mediodía",
+    "mediodía"
+   ],
+   "distratoresEs": [
+    "el medio",
+    "el mes",
+    "el domingo",
+    "el atardecer"
+   ],
+   "en": "noon",
+   "aceitasEn": [
+    "noon",
+    "midday"
+   ],
+   "distratoresEn": [
+    "middle",
+    "month",
+    "Sunday",
+    "dusk"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Sem artigo: «à midi», ao meio-dia. Com maiúscula, «le Midi» é o sul da França.",
+   "notaEs": "Sin artículo: «à midi», a mediodía. Con mayúscula, «le Midi» es el sur de Francia.",
+   "notaEn": "No article: «à midi», at noon. Capitalized, «le Midi» is the south of France."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p065",
+   "tipo": "palavra",
+   "fr": "la viande",
+   "pt": "a carne",
+   "aceitas": [
+    "carne"
+   ],
+   "distratores": [
+    "a fruta",
+    "a verdura",
+    "a vinha",
+    "a massa"
+   ],
+   "es": "la carne",
+   "aceitasEs": [
+    "la carne",
+    "carne"
+   ],
+   "distratoresEs": [
+    "la fruta",
+    "la verdura",
+    "la viña",
+    "la masa"
+   ],
+   "en": "meat",
+   "aceitasEn": [
+    "meat",
+    "the meat"
+   ],
+   "distratoresEn": [
+    "fruit",
+    "vegetables",
+    "vineyard",
+    "pasta"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "comida"
+   ],
+   "nota": "A carne de comer. A do corpo é «la chair».",
+   "notaEs": "La carne que se come. La del cuerpo es «la chair».",
+   "notaEn": "Meat as food. Flesh is «la chair»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p066",
+   "tipo": "palavra",
+   "fr": "le verre",
+   "pt": "o copo / o vidro",
+   "aceitas": [
+    "copo",
+    "vidro",
+    "o copo",
+    "o vidro"
+   ],
+   "distratores": [
+    "o prato / a louça",
+    "o vaso / a jarra",
+    "o garfo / o metal",
+    "o verso / a rima"
+   ],
+   "es": "el vaso / el vidrio",
+   "aceitasEs": [
+    "el vaso",
+    "el vidrio",
+    "vaso",
+    "vidrio",
+    "la copa"
+   ],
+   "distratoresEs": [
+    "el plato / la vajilla",
+    "el jarrón / la jarra",
+    "el tenedor / el metal",
+    "el verso / la rima"
+   ],
+   "en": "the glass",
+   "aceitasEn": [
+    "glass",
+    "the glass"
+   ],
+   "distratoresEn": [
+    "the plate",
+    "the vase",
+    "the fork",
+    "the verse"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "comida",
+    "casa"
+   ],
+   "nota": "O copo e o material: «un verre d'eau», «une table en verre». Os óculos são «les lunettes».",
+   "notaEs": "El vaso y el material: «un verre d'eau», «une table en verre». Las gafas son «les lunettes».",
+   "notaEn": "Both a drinking glass and the material: «un verre d'eau», «une table en verre». Eyeglasses are «les lunettes»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p067",
+   "tipo": "palavra",
+   "fr": "beaucoup",
+   "pt": "muito (quantidade)",
+   "aceitas": [
+    "muito",
+    "bastante",
+    "um monte"
+   ],
+   "distratores": [
+    "pouco (quantidade)",
+    "bonito (aparência)",
+    "barato (preço)",
+    "demais (excesso)"
+   ],
+   "es": "mucho",
+   "aceitasEs": [
+    "mucho",
+    "bastante"
+   ],
+   "distratoresEs": [
+    "poco",
+    "bonito",
+    "barato",
+    "demasiado"
+   ],
+   "en": "a lot",
+   "aceitasEn": [
+    "a lot",
+    "much",
+    "very much",
+    "lots"
+   ],
+   "distratoresEn": [
+    "a little",
+    "nicely",
+    "cheaply",
+    "too much"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Com verbo, «beaucoup»: «j'aime beaucoup». Com substantivo, «beaucoup de»: «beaucoup d'amis». Antes de adjetivo, o muito é «très».",
+   "notaEs": "«Beaucoup» es mucho: «j'aime beaucoup», me gusta mucho; «beaucoup d'amis», muchos amigos. Delante de adjetivo, muy es «très».",
+   "notaEn": "«Beaucoup» is a lot, very much: «j'aime beaucoup»; with a noun, «beaucoup de»: «beaucoup d'amis». Before adjectives, very is «très»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p068",
+   "tipo": "palavra",
+   "fr": "le chocolat",
+   "pt": "o chocolate",
+   "aceitas": [
+    "chocolate"
+   ],
+   "distratores": [
+    "o cacau",
+    "o chiclete",
+    "o caramelo",
+    "o chocalho"
+   ],
+   "es": "el chocolate",
+   "aceitasEs": [
+    "el chocolate",
+    "chocolate"
+   ],
+   "distratoresEs": [
+    "el cacao",
+    "el chicle",
+    "el caramelo",
+    "el cascabel"
+   ],
+   "en": "chocolate",
+   "aceitasEn": [
+    "chocolate",
+    "the chocolate"
+   ],
+   "distratoresEn": [
+    "cocoa",
+    "chewing gum",
+    "caramel",
+    "rattle"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "comida"
+   ],
+   "nota": "O «t» final é mudo. «Un chocolat chaud» é um chocolate quente; o pão de chocolate é «un pain au chocolat».",
+   "notaEs": "La «t» final es muda. «Un chocolat chaud» es un chocolate caliente; la napolitana es «un pain au chocolat».",
+   "notaEn": "The final «t» is silent. Hot chocolate is «un chocolat chaud»; the pastry is «un pain au chocolat»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p069",
+   "tipo": "palavra",
+   "fr": "l'hôpital",
+   "pt": "o hospital",
+   "aceitas": [
+    "hospital"
+   ],
+   "distratores": [
+    "o hotel",
+    "o hospício",
+    "o hóspede",
+    "o posto"
+   ],
+   "es": "el hospital",
+   "aceitasEs": [
+    "el hospital",
+    "hospital"
+   ],
+   "distratoresEs": [
+    "el hotel",
+    "el hospicio",
+    "el huésped",
+    "el puesto"
+   ],
+   "en": "the hospital",
+   "aceitasEn": [
+    "hospital",
+    "the hospital"
+   ],
+   "distratoresEn": [
+    "the hotel",
+    "the hospice",
+    "the guest",
+    "the post office"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "saúde",
+    "cidade"
+   ],
+   "nota": "O acento circunflexo marca um «s» que caiu: «hospital» virou «hôpital». O mesmo em «forêt» (floresta) e «fête» (festa).",
+   "notaEs": "El acento circunflejo marca una «s» que se perdió: «hospital» se volvió «hôpital». Igual en «forêt» (bosque) y «fête» (fiesta).",
+   "notaEn": "The circumflex marks a lost «s»: «hospital» became «hôpital». Same in «forêt» (forest) and «fête» (feast)."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p070",
+   "tipo": "palavra",
+   "fr": "tout",
+   "aceitasFr": [
+    "toute",
+    "tous",
+    "toutes"
+   ],
+   "pt": "todo",
+   "aceitas": [
+    "todo",
+    "toda",
+    "tudo",
+    "todos",
+    "todas"
+   ],
+   "distratores": [
+    "tanto",
+    "outro",
+    "nenhum",
+    "pouco"
+   ],
+   "es": "todo",
+   "aceitasEs": [
+    "todo",
+    "toda",
+    "todos",
+    "todas"
+   ],
+   "distratoresEs": [
+    "tanto",
+    "otro",
+    "ninguno",
+    "poco"
+   ],
+   "en": "all / every",
+   "aceitasEn": [
+    "all",
+    "every",
+    "everything",
+    "whole"
+   ],
+   "distratoresEn": [
+    "so much / so many",
+    "other / another",
+    "none / no",
+    "few / little"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Quatro formas: «tout», «toute», «tous», «toutes». Sozinho, é tudo: «c'est tout», é só isso.",
+   "notaEs": "Cuatro formas: «tout», «toute», «tous», «toutes». Solo, es todo: «c'est tout», eso es todo.",
+   "notaEn": "Four forms: «tout», «toute», «tous», «toutes». Alone, it means everything: «c'est tout», that's all."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p071",
+   "tipo": "palavra",
+   "fr": "rentrer",
+   "pt": "voltar (para casa)",
+   "aceitas": [
+    "voltar",
+    "voltar para casa",
+    "voltar pra casa",
+    "regressar"
+   ],
+   "distratores": [
+    "entrar (num lugar)",
+    "render (dar lucro)",
+    "retirar (tirar)",
+    "sair (de casa)"
+   ],
+   "es": "volver (a casa)",
+   "aceitasEs": [
+    "volver",
+    "volver a casa",
+    "regresar"
+   ],
+   "distratoresEs": [
+    "entrar (en un lugar)",
+    "rendir (dar fruto)",
+    "retirar (quitar)",
+    "salir (de casa)"
+   ],
+   "en": "to go back (home)",
+   "aceitasEn": [
+    "to go back",
+    "to go home",
+    "to come home",
+    "to come back",
+    "to get home",
+    "to return"
+   ],
+   "distratoresEn": [
+    "to go in (somewhere)",
+    "to yield (a profit)",
+    "to withdraw (take out)",
+    "to go out (of the house)"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "casa"
+   ],
+   "nota": "Voltar para casa, ou para dentro. Passé composé com «être»: «je suis rentré tard», voltei tarde.",
+   "notaEs": "Volver a casa, o volver a entrar. Passé composé con «être»: «je suis rentré tard», volví tarde.",
+   "notaEn": "To go back home, or back inside. It takes «être» in the passé composé: «je suis rentré tard», I got home late."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p072",
+   "tipo": "palavra",
+   "fr": "le voisin",
+   "aceitasFr": [
+    "la voisine"
+   ],
+   "pt": "o vizinho",
+   "aceitas": [
+    "vizinho",
+    "a vizinha"
+   ],
+   "distratores": [
+    "o visitante",
+    "o veneno",
+    "o primo",
+    "o colega"
+   ],
+   "es": "el vecino",
+   "aceitasEs": [
+    "el vecino",
+    "la vecina",
+    "vecino"
+   ],
+   "distratoresEs": [
+    "el visitante",
+    "el veneno",
+    "el primo",
+    "el colega"
+   ],
+   "en": "the neighbor",
+   "aceitasEn": [
+    "neighbor",
+    "the neighbor",
+    "the neighbour",
+    "neighbour"
+   ],
+   "distratoresEn": [
+    "the visitor",
+    "the poison",
+    "the cousin",
+    "the colleague"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "casa",
+    "social"
+   ],
+   "nota": "Feminino «la voisine». O bairro é «le quartier».",
+   "notaEs": "Femenino «la voisine». El barrio es «le quartier».",
+   "notaEn": "Feminine «la voisine». The neighborhood is «le quartier»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p073",
+   "tipo": "palavra",
+   "fr": "jouer",
+   "pt": "jogar / brincar",
+   "aceitas": [
+    "jogar",
+    "brincar",
+    "tocar"
+   ],
+   "distratores": [
+    "julgar / pensar",
+    "juntar / somar",
+    "jurar / prometer",
+    "rolar / girar"
+   ],
+   "es": "jugar",
+   "aceitasEs": [
+    "jugar",
+    "tocar"
+   ],
+   "distratoresEs": [
+    "juzgar",
+    "juntar",
+    "jurar",
+    "rodar"
+   ],
+   "en": "to play",
+   "aceitasEn": [
+    "to play",
+    "play"
+   ],
+   "distratoresEn": [
+    "to judge",
+    "to join",
+    "to swear",
+    "to roll"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "nota": "Jogar e brincar, e também tocar instrumento: «jouer au foot» (com «à»), «jouer du piano» (com «de»).",
+   "notaEs": "Jugar, y también tocar un instrumento: «jouer au foot» (con «à»), «jouer du piano» (con «de»).",
+   "notaEn": "To play games («jouer au foot», with «à») or instruments («jouer du piano», with «de»)."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p074",
+   "tipo": "palavra",
+   "fr": "meilleur",
+   "aceitasFr": [
+    "meilleure"
+   ],
+   "pt": "melhor",
+   "aceitas": [
+    "melhor",
+    "o melhor"
+   ],
+   "distratores": [
+    "maior",
+    "menor",
+    "pior",
+    "mais"
+   ],
+   "es": "mejor",
+   "aceitasEs": [
+    "mejor",
+    "el mejor"
+   ],
+   "distratoresEs": [
+    "mayor",
+    "menor",
+    "peor",
+    "más"
+   ],
+   "en": "better / best",
+   "aceitasEn": [
+    "better",
+    "best",
+    "the best"
+   ],
+   "distratoresEn": [
+    "bigger / biggest",
+    "smaller / smallest",
+    "worse / worst",
+    "more / most"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo"
+   ],
+   "nota": "O adjetivo: «un meilleur prix», um preço melhor. O advérbio, melhor com verbo, é «mieux»: «ça va mieux».",
+   "notaEs": "El adjetivo: «un meilleur prix», un precio mejor. El adverbio, mejor con verbo, es «mieux»: «ça va mieux».",
+   "notaEn": "The adjective: «un meilleur prix», a better price. The adverb, better with verbs, is «mieux»: «ça va mieux», things are better."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p075",
+   "tipo": "palavra",
+   "fr": "acheter",
+   "pt": "comprar",
+   "aceitas": [
+    "comprar",
+    "adquirir"
+   ],
+   "distratores": [
+    "achar",
+    "aceitar",
+    "acertar",
+    "vender"
+   ],
+   "es": "comprar",
+   "aceitasEs": [
+    "comprar",
+    "adquirir"
+   ],
+   "distratoresEs": [
+    "hallar",
+    "aceptar",
+    "acertar",
+    "vender"
+   ],
+   "en": "to buy",
+   "aceitasEn": [
+    "to buy",
+    "buy",
+    "to purchase"
+   ],
+   "distratoresEn": [
+    "to find",
+    "to accept",
+    "to guess right",
+    "to sell"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "compras"
+   ],
+   "nota": "Ganha acento grave quando a terminação é muda: «j'achète», mas «nous achetons». Achar, encontrar, é «trouver».\n🇫🇷 trouver → 🇧🇷 achar",
+   "notaEs": "Lleva acento grave cuando la terminación es muda: «j'achète», pero «nous achetons». Encontrar es «trouver».",
+   "notaEn": "It takes a grave accent before a silent ending: «j'achète», but «nous achetons». To find is «trouver»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p076",
+   "tipo": "palavra",
+   "fr": "lire",
+   "pt": "ler",
+   "aceitas": [
+    "ler"
+   ],
+   "distratores": [
+    "rir",
+    "ligar",
+    "livrar",
+    "escrever"
+   ],
+   "es": "leer",
+   "aceitasEs": [
+    "leer"
+   ],
+   "distratoresEs": [
+    "reír",
+    "ligar",
+    "librar",
+    "escribir"
+   ],
+   "en": "to read",
+   "aceitasEn": [
+    "to read",
+    "read"
+   ],
+   "distratoresEn": [
+    "to laugh",
+    "to tie",
+    "to free",
+    "to write"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "escola"
+   ],
+   "nota": "Irregular: je lis, il lit, nous lisons, ils lisent; o particípio é «lu». Rir é «rire», com «r».",
+   "notaEs": "Irregular: je lis, il lit, nous lisons, ils lisent; el participio es «lu». Reír es «rire», con «r».",
+   "notaEn": "Irregular: je lis, il lit, nous lisons, ils lisent; past participle «lu». To laugh is «rire»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p077",
+   "tipo": "palavra",
+   "fr": "la panne",
+   "pt": "a pane",
+   "aceitas": [
+    "pane",
+    "o defeito",
+    "a avaria",
+    "o enguico"
+   ],
+   "distratores": [
+    "a pena",
+    "a panela",
+    "a pausa",
+    "a peça"
+   ],
+   "es": "la avería",
+   "aceitasEs": [
+    "la avería",
+    "avería",
+    "la falla",
+    "el desperfecto"
+   ],
+   "distratoresEs": [
+    "la pena",
+    "la olla",
+    "la pausa",
+    "la pieza"
+   ],
+   "en": "the breakdown",
+   "aceitasEn": [
+    "breakdown",
+    "the breakdown",
+    "failure",
+    "the failure"
+   ],
+   "distratoresEn": [
+    "the pity",
+    "the pan",
+    "the pause",
+    "the part"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "cidade",
+    "tecnologia"
+   ],
+   "nota": "«En panne», quebrado, parado: serve para carro, elevador, máquina. A falta de luz é «la panne de courant».",
+   "notaEs": "«En panne», averiado, parado: sirve para coche, ascensor, máquina. El apagón es «la panne de courant».",
+   "notaEn": "«En panne», broken down, out of order: for cars, elevators, machines. A power outage is «la panne de courant»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p078",
+   "tipo": "palavra",
+   "fr": "le frère",
+   "pt": "o irmão",
+   "aceitas": [
+    "irmao"
+   ],
+   "distratores": [
+    "o freio",
+    "o frete",
+    "o primo",
+    "o filho"
+   ],
+   "es": "el hermano",
+   "aceitasEs": [
+    "el hermano",
+    "hermano"
+   ],
+   "distratoresEs": [
+    "el freno",
+    "el flete",
+    "el primo",
+    "el hijo"
+   ],
+   "en": "the brother",
+   "aceitasEn": [
+    "brother",
+    "the brother"
+   ],
+   "distratoresEn": [
+    "the brake",
+    "the freight",
+    "the cousin",
+    "the son"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "família"
+   ],
+   "nota": "Irmão mais velho, «le grand frère»; mais novo, «le petit frère».",
+   "notaEs": "Hermano mayor, «le grand frère»; menor, «le petit frère».",
+   "notaEn": "Big brother, «le grand frère»; little brother, «le petit frère»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p079",
+   "tipo": "palavra",
+   "fr": "l'appartement",
+   "pt": "o apartamento",
+   "aceitas": [
+    "apartamento"
+   ],
+   "distratores": [
+    "o aparelho",
+    "o escritório",
+    "o armário",
+    "o aposento"
+   ],
+   "es": "el apartamento",
+   "aceitasEs": [
+    "el apartamento",
+    "apartamento",
+    "el piso",
+    "el departamento"
+   ],
+   "distratoresEs": [
+    "el aparato",
+    "el despacho",
+    "el armario",
+    "el aposento"
+   ],
+   "en": "the apartment",
+   "aceitasEn": [
+    "apartment",
+    "the apartment",
+    "the flat",
+    "flat"
+   ],
+   "distratoresEn": [
+    "the device",
+    "the office",
+    "the closet",
+    "the chamber"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "casa"
+   ],
+   "nota": "Masculino. Com dois «p» e sem o «a» do português no meio: «appartement».",
+   "notaEs": "Masculino. Con dos «p»: «appartement».",
+   "notaEn": "Masculine. Double «p»: «appartement»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p080",
+   "tipo": "palavra",
+   "fr": "froid",
+   "aceitasFr": [
+    "froide",
+    "le froid"
+   ],
+   "pt": "frio",
+   "aceitas": [
+    "frio",
+    "fria",
+    "o frio"
+   ],
+   "distratores": [
+    "fraco",
+    "frito",
+    "forte",
+    "fresco"
+   ],
+   "es": "frío",
+   "aceitasEs": [
+    "frío",
+    "fría",
+    "el frío"
+   ],
+   "distratoresEs": [
+    "flojo",
+    "frito",
+    "fuerte",
+    "fresco"
+   ],
+   "en": "cold",
+   "aceitasEn": [
+    "cold",
+    "the cold"
+   ],
+   "distratoresEn": [
+    "weak",
+    "fried",
+    "strong",
+    "cool"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "natureza"
+   ],
+   "nota": "Feminino «froide». Do tempo, com «faire»: «il fait froid»; da pessoa, com «avoir»: «j'ai froid», estou com frio.",
+   "notaEs": "Femenino «froide». Del tiempo, con «faire»: «il fait froid»; de la persona, con «avoir»: «j'ai froid», tengo frío.",
+   "notaEn": "Feminine «froide». Weather takes «faire»: «il fait froid»; people take «avoir»: «j'ai froid», I'm cold."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p081",
+   "tipo": "palavra",
+   "fr": "anglais",
+   "aceitasFr": [
+    "anglaise",
+    "l'anglais"
+   ],
+   "pt": "inglês",
+   "aceitas": [
+    "ingles",
+    "inglesa",
+    "o ingles"
+   ],
+   "distratores": [
+    "angolano",
+    "alemão",
+    "espanhol",
+    "francês"
+   ],
+   "es": "inglés",
+   "aceitasEs": [
+    "inglés",
+    "inglesa",
+    "el inglés"
+   ],
+   "distratoresEs": [
+    "angoleño",
+    "alemán",
+    "español",
+    "francés"
+   ],
+   "en": "English",
+   "aceitasEn": [
+    "english"
+   ],
+   "distratoresEn": [
+    "Angolan",
+    "German",
+    "Spanish",
+    "French"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "cultura"
+   ],
+   "nota": "Adjetivo e língua, em minúscula: «parler anglais». O povo, com maiúscula: «les Anglais».",
+   "notaEs": "Adjetivo e idioma, en minúscula: «parler anglais». El pueblo, con mayúscula: «les Anglais».",
+   "notaEn": "Adjective and language, lowercase: «parler anglais». The people are capitalized: «les Anglais»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p082",
+   "tipo": "palavra",
+   "fr": "devoir",
+   "pt": "dever / ter que",
+   "aceitas": [
+    "dever",
+    "ter que",
+    "ter de",
+    "precisar"
+   ],
+   "distratores": [
+    "deixar / largar",
+    "doer / machucar",
+    "dar / entregar",
+    "duvidar / hesitar"
+   ],
+   "es": "deber / tener que",
+   "aceitasEs": [
+    "deber",
+    "tener que"
+   ],
+   "distratoresEs": [
+    "dejar / soltar",
+    "doler / lastimar",
+    "dar / entregar",
+    "dudar / vacilar"
+   ],
+   "en": "must / to have to",
+   "aceitasEn": [
+    "must",
+    "to have to",
+    "have to",
+    "to owe",
+    "owe"
+   ],
+   "distratoresEn": [
+    "to leave / to drop",
+    "to hurt / to ache",
+    "to give / to hand",
+    "to doubt / to hesitate"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "nota": "Obrigação e dívida: «je dois partir» (tenho que ir), «je te dois dix euros» (te devo dez euros). Formas: je dois, nous devons, ils doivent; particípio «dû».",
+   "notaEs": "Obligación y deuda: «je dois partir» (tengo que irme), «je te dois dix euros» (te debo diez euros). Formas: je dois, nous devons, ils doivent; participio «dû».",
+   "notaEn": "Obligation and debt: «je dois partir» (I have to go), «je te dois dix euros» (I owe you ten euros). Forms: je dois, nous devons, ils doivent; participle «dû»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p083",
+   "tipo": "palavra",
+   "fr": "partir",
+   "pt": "ir embora",
+   "aceitas": [
+    "ir embora",
+    "partir"
+   ],
+   "distratores": [
+    "partilhar",
+    "parar",
+    "pular",
+    "perder"
+   ],
+   "es": "irse",
+   "aceitasEs": [
+    "irse",
+    "marcharse",
+    "partir"
+   ],
+   "distratoresEs": [
+    "compartir",
+    "parar",
+    "saltar",
+    "perder"
+   ],
+   "en": "to leave",
+   "aceitasEn": [
+    "to leave",
+    "leave",
+    "to go away",
+    "to depart"
+   ],
+   "distratoresEn": [
+    "to share",
+    "to stop",
+    "to jump",
+    "to lose"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "viagem",
+    "falso-amigo"
+   ],
+   "nota": "Ir embora, sair de viagem: «je pars demain», vou embora amanhã. Não é partir no sentido de quebrar, que é «casser». Passé composé com «être»: «elle est partie».\n🇫🇷 casser → 🇧🇷 partir (quebrar)\n🇫🇷 partager → 🇧🇷 partilhar",
+   "notaEs": "Irse, salir de viaje: «je pars demain», me voy mañana. Partir en pedazos es «casser»; compartir, «partager». Passé composé con «être»: «elle est partie».\n🇫🇷 partager → 🇪🇸 compartir",
+   "notaEn": "To leave, set off: «je pars demain», I'm leaving tomorrow. To share is «partager». It takes «être» in the passé composé: «elle est partie»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p084",
+   "tipo": "palavra",
+   "fr": "le lundi",
+   "aceitasFr": [
+    "lundi"
+   ],
+   "pt": "a segunda-feira",
+   "aceitas": [
+    "segunda feira",
+    "a segunda",
+    "segunda"
+   ],
+   "distratores": [
+    "a terça-feira",
+    "a sexta-feira",
+    "a quarta-feira",
+    "a quinta-feira"
+   ],
+   "es": "el lunes",
+   "aceitasEs": [
+    "el lunes",
+    "lunes"
+   ],
+   "distratoresEs": [
+    "el martes",
+    "el viernes",
+    "el miércoles",
+    "el jueves"
+   ],
+   "en": "Monday",
+   "aceitasEn": [
+    "monday"
+   ],
+   "distratoresEn": [
+    "Tuesday",
+    "Friday",
+    "Wednesday",
+    "Thursday"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "O dia da lua. Sem artigo é um dia só: «lundi», na segunda. Com artigo, todas: «le lundi», às segundas. Em minúscula.",
+   "notaEs": "El día de la luna, como «lunes». Sin artículo es un solo día: «lundi», el lunes. Con artículo, todos: «le lundi», los lunes.",
+   "notaEn": "Moon day. Without an article it's one Monday: «lundi», on Monday. With one, every Monday: «le lundi». Lowercase."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p085",
+   "tipo": "palavra",
+   "fr": "le retard",
+   "pt": "o atraso",
+   "aceitas": [
+    "atraso",
+    "a demora"
+   ],
+   "distratores": [
+    "o retrato",
+    "o retorno",
+    "o recado",
+    "o resto"
+   ],
+   "es": "el retraso",
+   "aceitasEs": [
+    "el retraso",
+    "retraso",
+    "la demora",
+    "el atraso"
+   ],
+   "distratoresEs": [
+    "el retrato",
+    "el retorno",
+    "el recado",
+    "el resto"
+   ],
+   "en": "the delay",
+   "aceitasEn": [
+    "delay",
+    "the delay",
+    "lateness"
+   ],
+   "distratoresEn": [
+    "the portrait",
+    "the return",
+    "the message",
+    "the rest"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "cotidiano",
+    "viagem"
+   ],
+   "nota": "«Être en retard», estar atrasado; «le train a du retard», o trem está atrasado. Retardar é «retarder».",
+   "notaEs": "«Être en retard», llegar tarde; «le train a du retard», el tren viene con retraso.",
+   "notaEn": "«Être en retard», to be late; «le train a du retard», the train is delayed."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p086",
+   "tipo": "palavra",
+   "fr": "la faim",
+   "pt": "a fome",
+   "aceitas": [
+    "fome"
+   ],
+   "distratores": [
+    "a fama",
+    "a fé",
+    "a febre",
+    "a sede"
+   ],
+   "es": "el hambre",
+   "aceitasEs": [
+    "el hambre",
+    "hambre"
+   ],
+   "distratoresEs": [
+    "el afán",
+    "el fin",
+    "el frío",
+    "el sueño"
+   ],
+   "en": "hunger",
+   "aceitasEn": [
+    "hunger",
+    "the hunger"
+   ],
+   "distratoresEn": [
+    "fame",
+    "faith",
+    "fever",
+    "thirst"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "comida",
+    "corpo"
+   ],
+   "nota": "Soa igual a «la fin» (o fim). Com «avoir», sem artigo: «j'ai faim», estou com fome.",
+   "notaEs": "Suena igual que «la fin» (el fin). Con «avoir», sin artículo: «j'ai faim», tengo hambre.",
+   "notaEn": "It sounds like «la fin» (the end). With «avoir» and no article: «j'ai faim», I'm hungry."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p087",
+   "tipo": "palavra",
+   "fr": "la plage",
+   "pt": "a praia",
+   "aceitas": [
+    "praia"
+   ],
+   "distratores": [
+    "a praga",
+    "a página",
+    "a placa",
+    "a piscina"
+   ],
+   "es": "la playa",
+   "aceitasEs": [
+    "la playa",
+    "playa"
+   ],
+   "distratoresEs": [
+    "la plaga",
+    "la página",
+    "la placa",
+    "la piscina"
+   ],
+   "en": "the beach",
+   "aceitasEn": [
+    "beach",
+    "the beach"
+   ],
+   "distratoresEn": [
+    "the plague",
+    "the page",
+    "the plate",
+    "the pool"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "viagem",
+    "natureza"
+   ],
+   "nota": "Feminino. «À la plage», na praia. A página é «la page».",
+   "notaEs": "Femenino. «À la plage», en la playa. La página es «la page».",
+   "notaEn": "Feminine. «À la plage», at the beach. A page is «la page»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p088",
+   "tipo": "palavra",
+   "fr": "la cuisine",
+   "pt": "a cozinha",
+   "aceitas": [
+    "cozinha",
+    "a culinaria"
+   ],
+   "distratores": [
+    "a cortina",
+    "a cozinheira",
+    "a sala",
+    "a lavanderia"
+   ],
+   "es": "la cocina",
+   "aceitasEs": [
+    "la cocina",
+    "cocina",
+    "la gastronomía"
+   ],
+   "distratoresEs": [
+    "la cortina",
+    "la cocinera",
+    "la sala",
+    "la lavandería"
+   ],
+   "en": "kitchen / cooking",
+   "aceitasEn": [
+    "kitchen",
+    "the kitchen",
+    "cooking",
+    "cuisine"
+   ],
+   "distratoresEn": [
+    "curtain / drape",
+    "cook / chef",
+    "living room / lounge",
+    "laundry / washroom"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "casa",
+    "comida"
+   ],
+   "nota": "O cômodo e a arte de cozinhar: «la cuisine française». Cozinhar é «faire la cuisine».",
+   "notaEs": "La habitación y el arte de cocinar: «la cuisine française». Cocinar es «faire la cuisine».",
+   "notaEn": "Both the room and the cooking: «la cuisine française». To cook is «faire la cuisine»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p089",
+   "tipo": "palavra",
+   "fr": "le train",
+   "pt": "o trem",
+   "aceitas": [
+    "trem",
+    "o comboio"
+   ],
+   "distratores": [
+    "o trilho",
+    "o treino",
+    "o traje",
+    "o trigo"
+   ],
+   "es": "el tren",
+   "aceitasEs": [
+    "el tren",
+    "tren"
+   ],
+   "distratoresEs": [
+    "el carril",
+    "el entrenamiento",
+    "el traje",
+    "el trigo"
+   ],
+   "en": "the train",
+   "aceitasEn": [
+    "train",
+    "the train"
+   ],
+   "distratoresEn": [
+    "the rail",
+    "the training",
+    "the suit",
+    "the wheat"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "viagem"
+   ],
+   "nota": "«En train de» + infinitivo é estar fazendo: «je suis en train de manger», estou comendo.",
+   "notaEs": "«En train de» + infinitivo es estar haciendo: «je suis en train de manger», estoy comiendo.",
+   "notaEn": "«En train de» + infinitive means in the middle of doing: «je suis en train de manger», I'm eating right now."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p090",
+   "tipo": "palavra",
+   "fr": "le chien",
+   "pt": "o cachorro",
+   "aceitas": [
+    "cachorro",
+    "o cao"
+   ],
+   "distratores": [
+    "o gato",
+    "o cheiro",
+    "o chefe",
+    "o pato"
+   ],
+   "es": "el perro",
+   "aceitasEs": [
+    "el perro",
+    "perro"
+   ],
+   "distratoresEs": [
+    "el gato",
+    "el olor",
+    "el jefe",
+    "el pato"
+   ],
+   "en": "the dog",
+   "aceitasEn": [
+    "dog",
+    "the dog"
+   ],
+   "distratoresEn": [
+    "the cat",
+    "the smell",
+    "the boss",
+    "the duck"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "animais"
+   ],
+   "nota": "Feminino «la chienne». O gato é «le chat».",
+   "notaEs": "Femenino «la chienne». El gato es «le chat».",
+   "notaEn": "Feminine «la chienne». A cat is «le chat»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p091",
+   "tipo": "palavra",
+   "fr": "la réponse",
+   "pt": "a resposta",
+   "aceitas": [
+    "resposta"
+   ],
+   "distratores": [
+    "a pergunta",
+    "a renda",
+    "a reserva",
+    "a recusa"
+   ],
+   "es": "la respuesta",
+   "aceitasEs": [
+    "la respuesta",
+    "respuesta"
+   ],
+   "distratoresEs": [
+    "la pregunta",
+    "la renta",
+    "la reserva",
+    "la negativa"
+   ],
+   "en": "the answer",
+   "aceitasEn": [
+    "answer",
+    "the answer",
+    "the reply",
+    "the response"
+   ],
+   "distratoresEn": [
+    "the question",
+    "the rent",
+    "the reservation",
+    "the refusal"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "escola"
+   ],
+   "nota": "Responder é «répondre». A pergunta é «la question».",
+   "notaEs": "Responder es «répondre». La pregunta es «la question».",
+   "notaEn": "To answer is «répondre». A question is «la question»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p092",
+   "tipo": "palavra",
+   "fr": "la mer",
+   "pt": "o mar",
+   "aceitas": [
+    "mar"
+   ],
+   "distratores": [
+    "o rio",
+    "o lago",
+    "o mês",
+    "o mel"
+   ],
+   "es": "el mar",
+   "aceitasEs": [
+    "el mar",
+    "mar"
+   ],
+   "distratoresEs": [
+    "el río",
+    "el lago",
+    "el mes",
+    "el muelle"
+   ],
+   "en": "the sea",
+   "aceitasEn": [
+    "sea",
+    "the sea",
+    "the ocean"
+   ],
+   "distratoresEn": [
+    "the river",
+    "the lake",
+    "the month",
+    "the pier"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "natureza",
+    "viagem"
+   ],
+   "nota": "Feminino em francês, e soa igual a «la mère» (a mãe). «Au bord de la mer», na beira do mar.",
+   "notaEs": "Femenino en francés, y suena igual que «la mère» (la madre). «Au bord de la mer», a orillas del mar.",
+   "notaEn": "Feminine in French, and it sounds just like «la mère» (the mother). «Au bord de la mer», at the seaside."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p093",
+   "tipo": "palavra",
+   "fr": "le vin",
+   "pt": "o vinho",
+   "aceitas": [
+    "vinho"
+   ],
+   "distratores": [
+    "o vinagre",
+    "o vento",
+    "o suco",
+    "o vime"
+   ],
+   "es": "el vino",
+   "aceitasEs": [
+    "el vino",
+    "vino"
+   ],
+   "distratoresEs": [
+    "el vinagre",
+    "el viento",
+    "el refresco",
+    "el mimbre"
+   ],
+   "en": "wine",
+   "aceitasEn": [
+    "wine",
+    "the wine"
+   ],
+   "distratoresEn": [
+    "vinegar",
+    "wind",
+    "soda",
+    "wicker"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "comida"
+   ],
+   "nota": "«Vin rouge», tinto; «vin blanc», branco. Soa igual a «vingt» (vinte).",
+   "notaEs": "«Vin rouge», tinto; «vin blanc», blanco. Suena igual que «vingt» (veinte).",
+   "notaEn": "«Vin rouge», red; «vin blanc», white. It sounds like «vingt» (twenty)."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p094",
+   "tipo": "palavra",
+   "fr": "trois",
+   "pt": "três",
+   "aceitas": [
+    "tres",
+    "3"
+   ],
+   "distratores": [
+    "treze",
+    "trinta",
+    "dois",
+    "seis"
+   ],
+   "es": "tres",
+   "aceitasEs": [
+    "tres",
+    "3"
+   ],
+   "distratoresEs": [
+    "trece",
+    "treinta",
+    "dos",
+    "seis"
+   ],
+   "en": "three",
+   "aceitasEn": [
+    "three",
+    "3"
+   ],
+   "distratoresEn": [
+    "thirteen",
+    "thirty",
+    "two",
+    "six"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "O «s» só soa antes de vogal: «trois amis», «trwa-zami». Não confundir com «très», muito.\n🇫🇷 très → 🇧🇷 muito",
+   "notaEs": "La «s» solo suena delante de vocal: «trois amis», «trua-zamí». No confundir con «très», muy.\n🇫🇷 très → 🇪🇸 muy",
+   "notaEn": "The «s» is heard only before a vowel: «trois amis», «trwah-zah-MEE». Don't mix it up with «très», very."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p095",
+   "tipo": "palavra",
+   "fr": "la langue",
+   "pt": "a língua",
+   "aceitas": [
+    "lingua",
+    "o idioma"
+   ],
+   "distratores": [
+    "a lenha",
+    "a lança",
+    "a lua",
+    "a luva"
+   ],
+   "es": "la lengua",
+   "aceitasEs": [
+    "la lengua",
+    "lengua",
+    "el idioma"
+   ],
+   "distratoresEs": [
+    "la leña",
+    "la lanza",
+    "la luna",
+    "la lluvia"
+   ],
+   "en": "language / tongue",
+   "aceitasEn": [
+    "language",
+    "tongue",
+    "the language",
+    "the tongue"
+   ],
+   "distratoresEn": [
+    "firewood / logs",
+    "spear / lance",
+    "moon / moonlight",
+    "glove / mitten"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "escola",
+    "corpo"
+   ],
+   "nota": "Como em português, é o idioma e a parte da boca. «Ma langue maternelle», minha língua materna.",
+   "notaEs": "Como en español, es el idioma y el órgano de la boca. «Ma langue maternelle», mi lengua materna.",
+   "notaEn": "Both a language and the tongue in your mouth. «Ma langue maternelle», my mother tongue."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p096",
+   "tipo": "palavra",
+   "fr": "la pomme",
+   "pt": "a maçã",
+   "aceitas": [
+    "maca"
+   ],
+   "distratores": [
+    "a pomada",
+    "a ameixa",
+    "a pera",
+    "a pomba"
+   ],
+   "es": "la manzana",
+   "aceitasEs": [
+    "la manzana",
+    "manzana"
+   ],
+   "distratoresEs": [
+    "la pomada",
+    "la ciruela",
+    "la pera",
+    "la paloma"
+   ],
+   "en": "the apple",
+   "aceitasEn": [
+    "apple",
+    "the apple"
+   ],
+   "distratoresEn": [
+    "the ointment",
+    "the plum",
+    "the pear",
+    "the dove"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "comida"
+   ],
+   "nota": "A batata é «la pomme de terre», a maçã da terra; as fritas, «les frites».",
+   "notaEs": "La papa es «la pomme de terre», la manzana de la tierra; las papas fritas, «les frites».",
+   "notaEn": "A potato is «la pomme de terre», literally earth apple; fries are «les frites»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p097",
+   "tipo": "palavra",
+   "fr": "le cinéma",
+   "pt": "o cinema",
+   "aceitas": [
+    "cinema"
+   ],
+   "distratores": [
+    "o teatro",
+    "o museu",
+    "o circo",
+    "o cenário"
+   ],
+   "es": "el cine",
+   "aceitasEs": [
+    "el cine",
+    "cine"
+   ],
+   "distratoresEs": [
+    "el teatro",
+    "el museo",
+    "el circo",
+    "el escenario"
+   ],
+   "en": "the movie theater",
+   "aceitasEn": [
+    "movie theater",
+    "the movie theater",
+    "the movies",
+    "movies",
+    "cinema",
+    "the cinema"
+   ],
+   "distratoresEn": [
+    "the theater",
+    "the museum",
+    "the circus",
+    "the stage"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cultura",
+    "cidade"
+   ],
+   "nota": "«Aller au cinéma», ir ao cinema. Na conversa, «le ciné».",
+   "notaEs": "«Aller au cinéma», ir al cine. En la conversación, «le ciné».",
+   "notaEn": "«Aller au cinéma», to go to the movies. Casually, «le ciné»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p098",
+   "tipo": "palavra",
+   "fr": "le restaurant",
+   "pt": "o restaurante",
+   "aceitas": [
+    "restaurante"
+   ],
+   "distratores": [
+    "o restante",
+    "o mercado",
+    "o hotel",
+    "o bar"
+   ],
+   "es": "el restaurante",
+   "aceitasEs": [
+    "el restaurante",
+    "restaurante"
+   ],
+   "distratoresEs": [
+    "el resto",
+    "el mercado",
+    "el hotel",
+    "el bar"
+   ],
+   "en": "the restaurant",
+   "aceitasEn": [
+    "restaurant",
+    "the restaurant"
+   ],
+   "distratoresEn": [
+    "the rest",
+    "the market",
+    "the hotel",
+    "the bar"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "comida",
+    "cidade"
+   ],
+   "nota": "Sem o «e» final do português, e o «t» é mudo: «restorã».",
+   "notaEs": "Sin la «e» final del español, y la «t» es muda: «restorán».",
+   "notaEn": "English took the word as is; in French the final «t» is silent."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p099",
+   "tipo": "palavra",
+   "fr": "génial",
+   "aceitasFr": [
+    "géniale"
+   ],
+   "pt": "genial",
+   "aceitas": [
+    "genial",
+    "otimo",
+    "incrivel",
+    "sensacional"
+   ],
+   "distratores": [
+    "gentil",
+    "geral",
+    "gelado",
+    "genuíno"
+   ],
+   "es": "genial",
+   "aceitasEs": [
+    "genial",
+    "estupendo",
+    "fantástico"
+   ],
+   "distratoresEs": [
+    "gentil",
+    "general",
+    "helado",
+    "genuino"
+   ],
+   "en": "great",
+   "aceitasEn": [
+    "great",
+    "brilliant",
+    "awesome",
+    "fantastic"
+   ],
+   "distratoresEn": [
+    "kind",
+    "general",
+    "frozen",
+    "genuine"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "adjetivo",
+    "gíria"
+   ],
+   "nota": "Na conversa, é o «ótimo», o «demais»: «c'est génial !». Gentil, simpático, é «gentil».",
+   "notaEs": "En la conversación, es «genial», «estupendo»: «c'est génial !». Amable es «gentil».",
+   "notaEn": "In conversation, great or awesome: «c'est génial !». Kind is «gentil»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p100",
+   "tipo": "palavra",
+   "fr": "le film",
+   "pt": "o filme",
+   "aceitas": [
+    "filme"
+   ],
+   "distratores": [
+    "o filho",
+    "o fio",
+    "o fim",
+    "o livro"
+   ],
+   "es": "la película",
+   "aceitasEs": [
+    "la película",
+    "película",
+    "el filme",
+    "el film"
+   ],
+   "distratoresEs": [
+    "la fila",
+    "la final",
+    "la novela",
+    "la fiesta"
+   ],
+   "en": "the movie",
+   "aceitasEn": [
+    "movie",
+    "the movie",
+    "film",
+    "the film"
+   ],
+   "distratoresEn": [
+    "the son",
+    "the thread",
+    "the end",
+    "the book"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Sem o «e» do português. O fio é «le fil»; o fim, «la fin»; o filho, «le fils».",
+   "notaEs": "El hilo es «le fil»; el fin, «la fin»; el hijo, «le fils».",
+   "notaEn": "The thread is «le fil»; the end, «la fin»; the son, «le fils»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p101",
+   "tipo": "palavra",
+   "fr": "le métro",
+   "pt": "o metrô",
+   "aceitas": [
+    "metro",
+    "o metropolitano"
+   ],
+   "distratores": [
+    "o trem",
+    "o bonde",
+    "o túnel",
+    "o ônibus"
+   ],
+   "es": "el metro",
+   "aceitasEs": [
+    "el metro",
+    "metro",
+    "el subte",
+    "el subterráneo"
+   ],
+   "distratoresEs": [
+    "el tren",
+    "el tranvía",
+    "el túnel",
+    "el autobús"
+   ],
+   "en": "the subway",
+   "aceitasEn": [
+    "subway",
+    "the subway",
+    "the metro",
+    "metro",
+    "the underground",
+    "the tube"
+   ],
+   "distratoresEn": [
+    "the train",
+    "the streetcar",
+    "the tunnel",
+    "the bus"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cidade",
+    "viagem"
+   ],
+   "nota": "«Prendre le métro», pegar o metrô. A estação é «la station de métro».",
+   "notaEs": "«Prendre le métro», tomar el metro. La estación es «la station de métro».",
+   "notaEn": "«Prendre le métro», to take the subway. A station is «la station de métro»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p102",
+   "tipo": "palavra",
+   "fr": "la peur",
+   "pt": "o medo",
+   "aceitas": [
+    "medo"
+   ],
+   "distratores": [
+    "o pelo",
+    "o perigo",
+    "o peso",
+    "o pudor"
+   ],
+   "es": "el miedo",
+   "aceitasEs": [
+    "el miedo",
+    "miedo"
+   ],
+   "distratoresEs": [
+    "el pelo",
+    "el peligro",
+    "el peso",
+    "el pudor"
+   ],
+   "en": "fear",
+   "aceitasEn": [
+    "fear",
+    "the fear",
+    "fright"
+   ],
+   "distratoresEn": [
+    "hair",
+    "danger",
+    "weight",
+    "modesty"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Feminino em francês. Com «avoir», sem artigo: «j'ai peur», tenho medo. «Avoir peur de», ter medo de.",
+   "notaEs": "Femenino en francés. Con «avoir», sin artículo: «j'ai peur», tengo miedo. «Avoir peur de», tener miedo de.",
+   "notaEn": "Feminine in French. With «avoir» and no article: «j'ai peur», I'm scared. «Avoir peur de», to be afraid of."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p103",
+   "tipo": "palavra",
+   "fr": "le père",
+   "pt": "o pai",
+   "aceitas": [
+    "pai"
+   ],
+   "distratores": [
+    "o peru",
+    "o perdão",
+    "o avô",
+    "o tio"
+   ],
+   "es": "el padre",
+   "aceitasEs": [
+    "el padre",
+    "padre",
+    "el papá"
+   ],
+   "distratoresEs": [
+    "el pavo",
+    "el perdón",
+    "el abuelo",
+    "el tío"
+   ],
+   "en": "the father",
+   "aceitasEn": [
+    "father",
+    "the father",
+    "dad",
+    "the dad"
+   ],
+   "distratoresEn": [
+    "the turkey",
+    "the forgiveness",
+    "the grandfather",
+    "the uncle"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "família"
+   ],
+   "nota": "Papai é «papa». Os pais, pai e mãe, são «les parents».",
+   "notaEs": "Papá es «papa». Los padres, padre y madre, son «les parents».",
+   "notaEn": "Dad is «papa». Parents, mother and father, are «les parents»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p104",
+   "tipo": "palavra",
+   "fr": "la sœur",
+   "pt": "a irmã",
+   "aceitas": [
+    "irma"
+   ],
+   "distratores": [
+    "a sorte",
+    "a senhora",
+    "a prima",
+    "a filha"
+   ],
+   "es": "la hermana",
+   "aceitasEs": [
+    "la hermana",
+    "hermana"
+   ],
+   "distratoresEs": [
+    "la suerte",
+    "la señora",
+    "la prima",
+    "la hija"
+   ],
+   "en": "the sister",
+   "aceitasEn": [
+    "sister",
+    "the sister"
+   ],
+   "distratoresEn": [
+    "the luck",
+    "the lady",
+    "the cousin",
+    "the daughter"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "família"
+   ],
+   "nota": "Escreve-se com o «œ» ligado. Também é a freira, como a irmã do português.",
+   "notaEs": "Se escribe con la «œ» unida. También es la monja, como «sor».",
+   "notaEn": "Spelled with the «œ» ligature. It also means a nun, like Sister in English."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p105",
+   "tipo": "palavra",
+   "fr": "la famille",
+   "pt": "a família",
+   "aceitas": [
+    "familia"
+   ],
+   "distratores": [
+    "a fileira",
+    "a falha",
+    "a firma",
+    "a fábrica"
+   ],
+   "es": "la familia",
+   "aceitasEs": [
+    "la familia",
+    "familia"
+   ],
+   "distratoresEs": [
+    "la fila",
+    "la falla",
+    "la firma",
+    "la fábrica"
+   ],
+   "en": "the family",
+   "aceitasEn": [
+    "family",
+    "the family"
+   ],
+   "distratoresEn": [
+    "the row",
+    "the fault",
+    "the firm",
+    "the factory"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "família"
+   ],
+   "nota": "O «-ille» soa «-iê»: «famiê». «En famille», em família.",
+   "notaEs": "La terminación «-ille» suena «-iye»: «famiye». «En famille», en familia.",
+   "notaEn": "The «-ille» sounds like «-ee-y»: «fa-MEE-y». «En famille», with the family."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p106",
+   "tipo": "palavra",
+   "fr": "l'école",
+   "aceitasFr": [
+    "une école"
+   ],
+   "pt": "a escola",
+   "aceitas": [
+    "escola"
+   ],
+   "distratores": [
+    "a escada",
+    "a esquina",
+    "a eclusa",
+    "a igreja"
+   ],
+   "es": "la escuela",
+   "aceitasEs": [
+    "la escuela",
+    "escuela",
+    "el colegio"
+   ],
+   "distratoresEs": [
+    "la escalera",
+    "la esquina",
+    "la esclusa",
+    "la iglesia"
+   ],
+   "en": "the school",
+   "aceitasEn": [
+    "school",
+    "the school"
+   ],
+   "distratoresEn": [
+    "the stairs",
+    "the corner",
+    "the lock",
+    "the church"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "escola"
+   ],
+   "nota": "Feminino. O acento agudo no começo marca um «s» antigo: «escola» virou «école». A igreja é «l'église».",
+   "notaEs": "Femenino. El acento al principio marca una «s» antigua: «escuela», «école». La iglesia es «l'église».",
+   "notaEn": "Feminine. The initial «é» often marks a lost «s»: school, «école»; state, «état». A church is «l'église»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p107",
+   "tipo": "palavra",
+   "fr": "la chambre",
+   "pt": "o quarto",
+   "aceitas": [
+    "quarto",
+    "o dormitorio",
+    "o quarto de dormir"
+   ],
+   "distratores": [
+    "o camarim",
+    "o câmbio",
+    "o banheiro",
+    "o salão"
+   ],
+   "es": "la habitación",
+   "aceitasEs": [
+    "la habitación",
+    "habitación",
+    "el dormitorio",
+    "el cuarto",
+    "la recámara",
+    "la pieza"
+   ],
+   "distratoresEs": [
+    "la cama",
+    "la cocina",
+    "la sala",
+    "la oficina"
+   ],
+   "en": "the bedroom",
+   "aceitasEn": [
+    "bedroom",
+    "the bedroom",
+    "the room",
+    "room"
+   ],
+   "distratoresEn": [
+    "the bed",
+    "the kitchen",
+    "the living room",
+    "the office"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "casa",
+    "viagem"
+   ],
+   "nota": "É o quarto de dormir, também o de hotel. A sala é «le salon»; a cama, «le lit».",
+   "notaEs": "Es el dormitorio, también la habitación de hotel. La sala es «le salon»; la cama, «le lit».",
+   "notaEn": "A bedroom, or a hotel room. The living room is «le salon»; the bed, «le lit»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p108",
+   "tipo": "palavra",
+   "fr": "sortir",
+   "pt": "sair",
+   "aceitas": [
+    "sair"
+   ],
+   "distratores": [
+    "sortear",
+    "surtir",
+    "subir",
+    "entrar"
+   ],
+   "es": "salir",
+   "aceitasEs": [
+    "salir"
+   ],
+   "distratoresEs": [
+    "sortear",
+    "surtir",
+    "subir",
+    "entrar"
+   ],
+   "en": "to go out",
+   "aceitasEn": [
+    "to go out",
+    "go out",
+    "to get out",
+    "to come out"
+   ],
+   "distratoresEn": [
+    "to draw lots",
+    "to have an effect",
+    "to go up",
+    "to go in"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "cidade"
+   ],
+   "nota": "Sair de um lugar, ou sair para se divertir: «on sort ce soir ?». Passé composé com «être»: «je suis sorti». A saída é «la sortie».",
+   "notaEs": "Salir de un lugar, o salir a divertirse: «on sort ce soir ?». Passé composé con «être»: «je suis sorti». La salida es «la sortie».",
+   "notaEn": "To go out of a place, or out for fun: «on sort ce soir ?». It takes «être»: «je suis sorti». The exit is «la sortie»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p109",
+   "tipo": "palavra",
+   "fr": "dormir",
+   "pt": "dormir",
+   "aceitas": [
+    "dormir"
+   ],
+   "distratores": [
+    "morar",
+    "durar",
+    "domar",
+    "acordar"
+   ],
+   "es": "dormir",
+   "aceitasEs": [
+    "dormir"
+   ],
+   "distratoresEs": [
+    "morar",
+    "durar",
+    "domar",
+    "despertar"
+   ],
+   "en": "to sleep",
+   "aceitasEn": [
+    "to sleep",
+    "sleep"
+   ],
+   "distratoresEn": [
+    "to dwell",
+    "to last",
+    "to tame",
+    "to wake up"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "casa"
+   ],
+   "nota": "Irregular no singular: je dors, tu dors, il dort; plural regular: nous dormons. «Bien dormir», dormir bem.",
+   "notaEs": "Irregular en singular: je dors, tu dors, il dort; plural regular: nous dormons.",
+   "notaEn": "Irregular singular: je dors, tu dors, il dort; regular plural: nous dormons."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p110",
+   "tipo": "palavra",
+   "fr": "comprendre",
+   "pt": "entender",
+   "aceitas": [
+    "entender",
+    "compreender"
+   ],
+   "distratores": [
+    "comprar",
+    "prender",
+    "aprender",
+    "completar"
+   ],
+   "es": "entender",
+   "aceitasEs": [
+    "entender",
+    "comprender"
+   ],
+   "distratoresEs": [
+    "comprar",
+    "prender",
+    "aprender",
+    "completar"
+   ],
+   "en": "to understand",
+   "aceitasEn": [
+    "to understand",
+    "understand"
+   ],
+   "distratoresEn": [
+    "to buy",
+    "to arrest",
+    "to learn",
+    "to complete"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "escola"
+   ],
+   "nota": "Conjuga como «prendre»: je comprends, nous comprenons; particípio «compris». «Compris !», entendido!",
+   "notaEs": "Se conjuga como «prendre»: je comprends, nous comprenons; participio «compris». «Compris !», ¡entendido!",
+   "notaEn": "Conjugated like «prendre»: je comprends, nous comprenons; participle «compris». «Compris !», got it!"
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p111",
+   "tipo": "palavra",
+   "fr": "aider",
+   "pt": "ajudar",
+   "aceitas": [
+    "ajudar",
+    "auxiliar"
+   ],
+   "distratores": [
+    "adiar",
+    "odiar",
+    "agir",
+    "aguardar"
+   ],
+   "es": "ayudar",
+   "aceitasEs": [
+    "ayudar"
+   ],
+   "distratoresEs": [
+    "aplazar",
+    "odiar",
+    "actuar",
+    "aguardar"
+   ],
+   "en": "to help",
+   "aceitasEn": [
+    "to help",
+    "help"
+   ],
+   "distratoresEn": [
+    "to postpone",
+    "to hate",
+    "to act",
+    "to wait"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo"
+   ],
+   "nota": "Regular em «-er», e direto, sem preposição: «aider quelqu'un», ajudar alguém. A ajuda é «l'aide».",
+   "notaEs": "Regular en «-er», y directo, sin preposición: «aider quelqu'un», ayudar a alguien. La ayuda es «l'aide».",
+   "notaEn": "Regular «-er» verb, taking a direct object: «aider quelqu'un», to help someone. Help, the noun, is «l'aide»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p112",
+   "tipo": "palavra",
+   "fr": "chaud",
+   "aceitasFr": [
+    "chaude",
+    "le chaud"
+   ],
+   "pt": "quente",
+   "aceitas": [
+    "quente",
+    "o calor"
+   ],
+   "distratores": [
+    "chato",
+    "caro",
+    "morno",
+    "frio"
+   ],
+   "es": "caliente",
+   "aceitasEs": [
+    "caliente",
+    "caluroso",
+    "cálido",
+    "el calor"
+   ],
+   "distratoresEs": [
+    "chato",
+    "caro",
+    "tibio",
+    "frío"
+   ],
+   "en": "hot / warm",
+   "aceitasEn": [
+    "hot",
+    "warm"
+   ],
+   "distratoresEn": [
+    "flat / dull",
+    "dear / pricey",
+    "lukewarm / tepid",
+    "cold / chilly"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "natureza"
+   ],
+   "nota": "Feminino «chaude». Do tempo, «il fait chaud»; da pessoa, «j'ai chaud», estou com calor.",
+   "notaEs": "Femenino «chaude». Del tiempo, «il fait chaud», hace calor; de la persona, «j'ai chaud», tengo calor.",
+   "notaEn": "Feminine «chaude». Weather: «il fait chaud», it's hot; people: «j'ai chaud», I'm hot."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p113",
+   "tipo": "palavra",
+   "fr": "fatigué",
+   "aceitasFr": [
+    "fatiguée"
+   ],
+   "pt": "cansado",
+   "aceitas": [
+    "cansado",
+    "cansada",
+    "exausto",
+    "exausta"
+   ],
+   "distratores": [
+    "fatiado",
+    "faminto",
+    "furioso",
+    "ferido"
+   ],
+   "es": "cansado",
+   "aceitasEs": [
+    "cansado",
+    "cansada",
+    "agotado",
+    "agotada"
+   ],
+   "distratoresEs": [
+    "rebanado",
+    "hambriento",
+    "furioso",
+    "herido"
+   ],
+   "en": "tired",
+   "aceitasEn": [
+    "tired",
+    "exhausted",
+    "weary"
+   ],
+   "distratoresEn": [
+    "sliced",
+    "starving",
+    "furious",
+    "injured"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "adjetivo",
+    "saúde"
+   ],
+   "nota": "Feminino «fatiguée», com a mesma pronúncia. «Je suis fatigué», estou cansado.",
+   "notaEs": "Femenino «fatiguée», con la misma pronunciación. «Je suis fatigué», estoy cansado.",
+   "notaEn": "Feminine «fatiguée»; it sounds the same. «Je suis fatigué», I'm tired."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p114",
+   "tipo": "palavra",
+   "fr": "souvent",
+   "pt": "muitas vezes",
+   "aceitas": [
+    "muitas vezes",
+    "frequentemente",
+    "com frequencia"
+   ],
+   "distratores": [
+    "poucas vezes",
+    "às vezes",
+    "nunca mais",
+    "de novo"
+   ],
+   "es": "a menudo",
+   "aceitasEs": [
+    "a menudo",
+    "seguido",
+    "con frecuencia",
+    "muchas veces",
+    "frecuentemente"
+   ],
+   "distratoresEs": [
+    "pocas veces",
+    "a veces",
+    "nunca más",
+    "de nuevo"
+   ],
+   "en": "often",
+   "aceitasEn": [
+    "often",
+    "frequently"
+   ],
+   "distratoresEn": [
+    "rarely",
+    "sometimes",
+    "never again",
+    "again"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Vai depois do verbo: «je vais souvent au cinéma», vou muito ao cinema. Às vezes é «parfois».",
+   "notaEs": "Va detrás del verbo: «je vais souvent au cinéma», voy a menudo al cine. A veces es «parfois».",
+   "notaEn": "It goes after the verb: «je vais souvent au cinéma», I often go to the movies. Sometimes is «parfois»."
   }
  ]
 }

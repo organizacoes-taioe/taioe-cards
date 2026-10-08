@@ -314,6 +314,7 @@ como o de todo curso.
 |---|---|---|
 | fr 1 | 40 primeiros passos + 50 palavras | **feito** (08/10) — 90 cards |
 | fr 2 | 67 frases de uso (uma ou mais por palavra) + 24 de conjugação (presente dos irregulares, passé composé com «avoir» e «être», imperfeito, futuro próximo, futuro, condicional) | **feito** (08/10) — 181 cards; 53 palavras pedidas pelas frases ficam para a leva 3 |
+| fr 3 | 52 palavras que as frases pediam («le français» e «français» viraram um card só) + 12 avulsas; «très» e «beaucoup», «l'an» e «l'année» separados por parêntese no português | **feito** (08/10) — 245 cards; falta frase para as 12 avulsas, para «la cuisine» e para «le sport» |
 
 ---
 
