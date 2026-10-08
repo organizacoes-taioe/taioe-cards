@@ -320,6 +320,7 @@ como o de todo curso.
 | fr 6 | 111 frases de uso (as 20 avulsas, os usos das palavras da leva 5 e frases de situação: loja, café, transporte, direção, hora, saúde) + 27 de conjugação (concordância do particípio com «être», imperfeito de «être» e «avoir», pronominais, verbos da leva 5) | **feito** (08/10) — 577 cards; 69 palavras pedidas pelas frases |
 | fr 7 | 69 palavras que as frases pediam + 27 avulsas (corpo, roupa, comida, estações…); primeiros `sinonimosFr` e `regionaisFr` (cellulaire no Quebec, GSM na Bélgica, natel na Suíça) | **feito** (08/10) — 673 cards; falta frase para as 27 avulsas |
 | fr 8 | 126 frases de uso (as 27 avulsas, um por sentido nas de dois; os usos das palavras da leva 7; situações de hotel, médico, telefone, direção) + 25 de conjugação (os primeiros mais-que-perfeitos, imperfeito, futuro, passé composé) | **feito** (08/10) — 824 cards; 37 palavras pedidas pelas frases |
+| fr 9 | 37 palavras que as frases pediam + 47 avulsas (dias, estações, cores, comida, casa, roupa, corpo, profissões, verbos e advérbios comuns); parêntese em «mieux», «la fois», «l'étage», «perdre», «le menu», «proche», «sympa», «d'abord» | **feito** (08/10) — 908 cards; falta frase para as 47 avulsas |
 
 ---
 
