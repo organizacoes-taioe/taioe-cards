@@ -1028,3 +1028,39 @@ Toda frase nova já nasce com o `requerTodas` completo. O build confere que
 cada entrada é um card de palavra do baralho (ou uma `+` pendente) e que a
 palavra do `requer` está na lista; e avisa as frases sem lista, as palavras
 pendentes e as palavras que nenhuma frase usa.
+
+## 19. O começo do app: o que isso pede do card
+
+Desde 09/10/2026 o começo de um curso tem nivelamento, palavras
+transparentes, dominado provisório e o card desafio (plano inteiro em
+[`../PLANO.md`](../PLANO.md), seção 7). Quatro coisas disso dependem de quem
+escreve o card:
+
+- **Toda palavra tem um tema**, além da classe: `casa`, `comida`, `corpo`,
+  `cidade`, `viagem`, `trabalho`, `escola`, `família`, `saúde`, `natureza`,
+  `compras`, `cultura`, `cotidiano`… O nivelamento sorteia uma palavra de cada
+  tema por bloco, para achar os pontos cegos (a palavra da cozinha que não
+  aparece em filme nenhum); palavra sem tema cai num «geral» e some da
+  conta. O build avisa.
+- **`falso-amigo`, `expressão`, `gíria` e `provérbio` têm de ser verdade.**
+  Elas tiram o card da transparência e da dedução do nivelamento — falso amigo
+  presumido como sabido seria o pior erro possível — e escolhem os cards
+  desafio. Etiqueta faltando é card que vira transparente ou presumido sem
+  dever.
+- **A palavra transparente continua sendo criada.** As frases precisam dela
+  no `requerTodas`, e ela só é óbvia para um dos públicos («la pared» é
+  transparente para quem fala português, não para quem fala inglês). O build
+  calcula, curso por curso, quem é transparente (igual sem acento e sem
+  artigo, mesmo gênero) e quem é parecida (uma ou duas letras de diferença),
+  e o app tira do jogo a primeira e faz a segunda pular a ida.
+- **Depois de cada leva**, `node fonte/transparentes.js <curso>` para cada
+  curso do baralho (`es-pt`, `es-en`, `fr-pt`…), lido de olho. Onde a regra
+  errar — o falso amigo sem etiqueta, a palavra igual de sentido principal
+  diferente, o gênero que a regra não viu —, o card ganha
+  `"transparencia": { "pt": "nenhuma" }` (ou `"parecida"`, `"total"`), que
+  manda sobre a regra naquele público.
+
+**Para uma língua nova**: os artigos e gêneros dela entram na tabela da
+transparência do build; o banco do nivelamento precisa de pelo menos 6 temas
+com 3 palavras cada em todo nível de A1 a B2 (o build avisa quando falta); e
+os textos dela alimentam a vitrine do painel desde o primeiro dia.
