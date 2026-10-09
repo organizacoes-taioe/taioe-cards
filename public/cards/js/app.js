@@ -99,7 +99,9 @@ window.TaioeCardsApp = function (ctx) {
     'btn-proximo', 'painel-conteudo', 'dica',
     'btn-texto', 'tela-texto', 'texto-conteudo',
     'cfg-conta', 'cfg-curso', 'btn-conta', 'btn-sair', 'cfg-outros-cursos', 'cfg-lingua',
-    'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync', 'cfg-comentarios'
+    'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync', 'cfg-comentarios',
+    /* o começo do app (PLANO.md, seção 7) */
+    'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'aviso-previa', 'btn-refazer', 'btn-rever-dicas'
   ].forEach(id => { el[id] = document.getElementById(id); });
 
   /* ═══════════════ estado ═══════════════ */
@@ -118,6 +120,21 @@ window.TaioeCardsApp = function (ctx) {
   let ultimoRegistro = null;
   let chanceUsada = false;   // o aviso de língua trocada só devolve a vez uma vez
   let dinamicosAtuais = [];  // alternativas que não vêm do card: vão na resposta, para a calibragem
+
+  /* ── o que fica só neste aparelho ──
+     O teste do nivelamento em andamento (sobrevive a recarregar a página e
+     não toca a rede até acabar), a reserva das dicas vistas e os desafios já
+     mostrados. Tudo por conta + curso. */
+  function lerLocal(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }
+  function guardarLocal(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  function esquecerLocal(k) { try { localStorage.removeItem(k); } catch (e) {} }
+
+  /* Os reativados que valem: os de data sem o «-» na frente. */
+  function reativadosAtivos(x) {
+    const saida = {};
+    Object.keys(x || {}).forEach(id => { if (TaioeSincronia.gestoAtivo(x[id])) saida[id] = x[id]; });
+    return saida;
+  }
 
   function progressoVazio() {
     return {
@@ -233,7 +250,9 @@ window.TaioeCardsApp = function (ctx) {
     p.reativados = objeto(p.reativados);
     p.dicasVistas = objeto(p.dicasVistas);
     if (!p.nivelamento || typeof p.nivelamento !== 'object') delete p.nivelamento;
-    Motor.usarExtras({ nivelamento: p.nivelamento, reativados: p.reativados });
+    /* «-ISO» é o gesto de desfazer (o «voltar a contar como conhecida», ver
+       sincronia.js): o motor só recebe os reativados de verdade */
+    Motor.usarExtras({ nivelamento: p.nivelamento, reativados: reativadosAtivos(p.reativados) });
     const solto = id => Motor.liberado(PORID[id], p.cards, null, p.arquivados);
     /* card arquivado sai de todas as filas — e volta a elas se for desarquivado.
        A transparente total também: conta como dominada e nunca é servida
@@ -539,12 +558,18 @@ window.TaioeCardsApp = function (ctx) {
   };
 
   function mostrar(tela) {
-    ['tela-inicio', 'tela-card', 'tela-painel', 'tela-config', 'tela-cards', 'tela-texto']
+    ['tela-inicio', 'tela-comeco', 'tela-card', 'tela-painel', 'tela-config', 'tela-cards', 'tela-texto']
       .forEach(t => el[t].classList.toggle('oculto', t !== tela));
     el.dica.hidden = true;
+    /* o balão da dica é da tela em que nasceu */
+    fecharDica();
     const aceso = BOTAO_DA_TELA[tela];
     Object.values(BOTAO_DA_TELA).forEach(b => el[b].classList.toggle('aqui', b === aceso));
-    acertarMarca(tela === 'tela-inicio');
+    /* A avaliação do começo é a página principal enquanto dura: sem os
+       botões do topo, que levariam para telas ainda vazias no meio do teste. */
+    const nav = document.querySelector('.acoes-topo');
+    if (nav) nav.hidden = tela === 'tela-comeco';
+    acertarMarca(tela === 'tela-inicio' || tela === 'tela-comeco');
     /* Tela nova abre no topo. Sem isto o painel herdava a rolagem de onde
        se estava — no meio do feedback de um card, em geral — e abria já nos
        gráficos. O card fica de fora: ele tem a sua subida (voltarAoTopo). */
@@ -689,6 +714,15 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   function proximoNovo() {
+    /* A vaga de card novo pode ser de um desafio (PLANO.md, 7.4): o motor
+       diz se é a hora e qual; a frase ainda presa vem como prévia. */
+    const desafio = Motor.escolherDesafio(CARDS, progresso.cards, contextoDoDesafio());
+    if (desafio && PORID_FONTE[desafio.card.id]) {
+      const i = progresso.ineditos.indexOf(desafio.card.id);
+      if (i >= 0) progresso.ineditos.splice(i, 1);
+      desafioAtual = { id: desafio.card.id, previa: !!desafio.previa };
+      return desafio.card.id;
+    }
     /* Em cada cinco cards novos, pelo menos um é de vocabulário (pedido do
        Gere, 03/10): se as quatro últimas estreias foram frase, a próxima é
        a primeira palavra da fila de inéditos. É
@@ -795,6 +829,9 @@ window.TaioeCardsApp = function (ctx) {
     const lido = textoParaLer();
     if (lido) { mostrarRecompensa(lido); return; }
     if (window.scrollY >= 2) el['tela-card'].style.minHeight = el['tela-card'].offsetHeight + 'px';
+    /* o desafio, se vier, é marcado por proximoNovo durante a escolha */
+    desafioAtual = null;
+    dicaNoCard = false;
     const id = tirarProximoId();
     if (!id) { irParaInicio(); return; }
     const bruto = PORID_FONTE[id];
@@ -834,6 +871,12 @@ window.TaioeCardsApp = function (ctx) {
     const estreando = (!estadoDe(id) || !estadoDe(id).vistas) && !Motor.presumidoEm(id, progresso.cards);
     el['btn-arquivar'].classList.toggle('evidente', estreando);
     el['btn-arquivar'].textContent = t(cardAtual.tipo === 'palavra' ? 'card.jaConhecoPalavra' : 'card.jaConhecoFrase');
+    /* o desafio leva a marca; a prévia (frase ainda presa) é uma pergunta
+       só, e arquivar uma frase que nem entrou no jogo não faz sentido */
+    const previa = !!(desafioAtual && desafioAtual.previa);
+    el['meta-desafio'].classList.toggle('oculto', !desafioAtual);
+    el['btn-arquivar'].parentElement.classList.toggle('oculto', previa);
+    el['aviso-previa'].classList.add('oculto');
     /* O nível vive na aba do fichário e fica à mostra o tempo todo: saber que
        o card é A1 ou C2 não entrega resposta nenhuma, e ajuda a calibrar o
        esforço antes de ler. */
@@ -889,6 +932,15 @@ window.TaioeCardsApp = function (ctx) {
     }
 
     mostrar('tela-card');
+    /* As dicas da estreia (PLANO.md, 7.5), uma por card, embaixo das
+       respostas — nunca no caminho de quem vai responder: o desafio; o
+       «já conheço» no primeiro card novo; a frase que as palavras soltaram. */
+    const linhaArquivar = el['btn-arquivar'].parentElement;
+    if (desafioAtual) dicaDoCard('desafio', linhaArquivar);
+    if (estreando && !previa) {
+      dicaDoCard('arquivar', linhaArquivar, { x: aspas(escapar(el['btn-arquivar'].textContent)) }, { seta: true });
+      if (cardAtual.tipo === 'frase' && Motor.requeridas(cardAtual).length) dicaDoCard('frase', linhaArquivar);
+    }
     /* O foco no campo espera a subida acabar: focar antes faz o navegador
        rolar até o campo por conta própria, e as duas rolagens brigam. */
     voltarAoTopo(() => {
@@ -1143,6 +1195,7 @@ window.TaioeCardsApp = function (ctx) {
       el['resposta-dada'].classList.remove('oculto');
       el['area-julgamento'].classList.remove('oculto');
       el['btn-proximo'].classList.add('oculto');
+      dicaDoCard('quase', el['area-julgamento'], null, { antes: true });
     } else {
       /* Errou escrevendo, e o erro não tem nome (gênero, ñ, conjugação). A
          resposta certa sozinha obrigava a comparar de cabeça com o que foi
@@ -1163,8 +1216,19 @@ window.TaioeCardsApp = function (ctx) {
       el['area-julgamento'].classList.add('oculto');
       el['btn-proximo'].classList.remove('oculto');
       mostrarVeredito(r);
-      registrar(r);
+      /* A prévia do desafio errada não vira estado: a frase continua presa,
+         e volta quando as palavras dela chegarem (PLANO.md, 7.4). Certa,
+         ela estreia como qualquer card e entra no jogo. */
+      const previa = desafioAtual && desafioAtual.id === cardAtual.id && desafioAtual.previa;
+      if (previa && !r.acertou) guardarPreviaErrada(r);
+      else registrar(r);
+      if (desafioAtual && desafioAtual.id === cardAtual.id) anotarDesafio(r);
+      if (previa) {
+        el['aviso-previa'].textContent = t(r.acertou ? 'card.previaEntra' : 'card.previaVolta');
+        el['aviso-previa'].classList.remove('oculto');
+      }
       mostrarContestar(r);
+      dicaDepoisDaResposta(r);
     }
 
     el['area-feedback'].classList.remove('oculto');
@@ -1419,6 +1483,7 @@ window.TaioeCardsApp = function (ctx) {
     mostrarVeredito(r);
     registrar(r);
     mostrarContestar(r);
+    dicaDepoisDaResposta(r);
     el['btn-proximo'].focus({ preventScroll: true });
     /* Sem rolar (pedido do Gere, 03/10): quem julgou o próprio «quase» está
        olhando para a resposta, e a tela que desce depois do clique tira dela
@@ -1450,6 +1515,7 @@ window.TaioeCardsApp = function (ctx) {
       : diasDeVolta ? t('feedback.voltaEm', { x: rotuloEspera(diasDeVolta) }) : '';
     el.conquista.textContent = texto;
     el.conquista.classList.toggle('oculto', !texto);
+    if (virou) dicaDoCard('dominado', el.conquista, { escada: Motor.DIAS_DOMINADO.map(rotuloEspera).join(' → ') });
   }
 
   /* Grava a resposta e devolve o card para a fila. */
@@ -1490,7 +1556,16 @@ window.TaioeCardsApp = function (ctx) {
     /* a resposta em que o card estreou: é dela que sai a conta do piso e do
        teto de card novo (ver respostasDesdeNovo). O presumido não é card
        novo, e não conta. */
-    if (!est.vistas && !presumido) est.estreouNa = relogioAntes;
+    if (!est.vistas && !presumido) {
+      est.estreouNa = relogioAntes;
+      /* A estreia do desafio não conta no domínio por nível
+         (Motor.marcarDesafio); «desafioEm» é a data dela, para o ritmo de um
+         por dia (ver contextoDoDesafio). Os dois viajam com o estado. */
+      if (desafioAtual && desafioAtual.id === id) {
+        Motor.marcarDesafio(est);
+        est.desafioEm = new Date().toISOString();
+      }
+    }
     if (presumido) est = progresso.cards[id] = Motor.responderPresumido(id, r);
     else Motor.registrar(est, r);
     /* Para o painel: o dia, a hora e o tempo desta resposta, e — se era a
@@ -1694,6 +1769,7 @@ window.TaioeCardsApp = function (ctx) {
       esPt: progresso.filaEsPt.length > 0,
       ptEs: progresso.filaPtEs.length > 0
     }, alvo);
+    const aConfirmar = presumidosAConfirmar();
 
     let html = '<div class="grade">' +
       /* a ordem faz pares na tela de duas colunas: o que já saiu e a chance
@@ -1712,7 +1788,12 @@ window.TaioeCardsApp = function (ctx) {
       metrica(dir.esPt + ' · ' + dir.ptEs,
               t('painel.direcoes', { ida: ROTULO_IDA, volta: ROTULO_VOLTA, alvo: alvo, taxa: Math.round(100 * recente.taxa) })) +
       metrica(dominados, t('painel.dominados')) +
+      /* os presumidos do nivelamento ainda sem resposta (PLANO.md, 7.2) */
+      (aConfirmar.n ? metrica(milhar(aConfirmar.n), t('painel.aConfirmar')) : '') +
       '</div>';
+
+    /* A vitrine (PLANO.md, 7.4): desde o primeiro dia, o próximo texto. */
+    html += vitrine();
 
     /* O caminho vem primeiro: é a figura do estudo inteiro, etapa por etapa,
        e a tabela de acerto por nível lê melhor depois dela. «Em que pé está
@@ -1731,7 +1812,52 @@ window.TaioeCardsApp = function (ctx) {
     el['painel-conteudo'].innerHTML = html;
     aplicarEstilos(el['painel-conteudo']);
     ligarGrafico();
+    const verTextos = document.getElementById('btn-vitrine');
+    if (verTextos) verTextos.addEventListener('click', abrirTexto);
     mostrar('tela-painel');
+  }
+
+  /* Os presumidos que ainda esperam confirmação — sem estado, fora do
+     arquivo — e a data do mais próximo. */
+  function presumidosAConfirmar() {
+    const pres = (progresso.nivelamento && progresso.nivelamento.presumidos) || {};
+    let n = 0, proxima = null;
+    Object.keys(pres).forEach(id => {
+      if (!PORID[id] || Motor.arquivado(id, progresso.arquivados || {})) return;
+      const volta = Motor.presumidoEm(id, progresso.cards);
+      if (!volta) return;
+      n++;
+      if (!proxima || volta < proxima) proxima = volta;
+    });
+    return { n: n, proxima: proxima };
+  }
+
+  /* ── a vitrine ──
+     O próximo texto do curso, o poema primeiro: título, autor, o primeiro
+     verso com a tradução e quantas palavras faltam. A conta é a mesma da
+     tela dos textos (Motor.atualizarTextosEmVista e andamentoDoTexto), só que
+     calculada aqui e não gravada: antes dos 400 dominados a lista de espera
+     dos textos ainda não existe, e a vitrine não a inventa. Curso sem texto
+     (o francês, por enquanto) não tem vitrine. */
+  function vitrine() {
+    if (!TEXTOS.length) return '';
+    const tx = progresso.textos || textosVazio();
+    const arq = progresso.arquivados || {};
+    const emVista = Motor.atualizarTextosEmVista(tx.emVista, TEXTOS, progresso.cards, arq, tx.lidos || {});
+    const txt = TEXTO_POR_ID[emVista.poema] || TEXTO_POR_ID[emVista.prosa];
+    if (!txt) return '';
+    const verso = Motor.versosDoTexto(txt)[0] || {};
+    const a = Motor.andamentoDoTexto(txt, progresso.cards, Date.now(), arq);
+    const faltam = Math.max(0, a.palavras - a.dominadas);
+    const dominados = Motor.dominadosNoTotal(progresso.cards);
+    return '<div class="vitrine"><h3>' + t('painel.vitrine') + '</h3>' +
+      '<p class="vitrine-titulo"><b>' + escapar(txt.titulo) + '</b> · ' + escapar(txt.autor) + '</p>' +
+      (verso[L] ? '<p class="vitrine-verso" lang="' + L + '">' + escapar(verso[L]) + '</p>' : '') +
+      (verso[A] ? '<p class="vitrine-traducao">' + escapar(verso[A]) + '</p>' : '') +
+      '<p class="vitrine-conta">' + (faltam ? tn('painel.vitrineFaltam', faltam, { n: milhar(faltam) }) : t('painel.vitrinePronto')) +
+      (dominados < Motor.DOMINADOS_PARA_TEXTOS
+        ? ' ' + t('painel.vitrineEspera', { n: milhar(Motor.DOMINADOS_PARA_TEXTOS), m: milhar(dominados) }) : '') + '</p>' +
+      '<button class="link-comentar" id="btn-vitrine">' + t('painel.vitrineVer') + '</button></div>';
   }
 
   /* A CSP da Taioé não aceita atributo style vindo de HTML montado em texto;
@@ -1961,7 +2087,12 @@ window.TaioeCardsApp = function (ctx) {
     });
 
     const total = degraus.reduce((s, d) => s + d.n, 0);
-    if (!total) return '';
+    /* ao lado da escada, os presumidos do nivelamento: dominados provisórios,
+       que voltam por data como revisão e só então ganham degrau */
+    const conf = presumidosAConfirmar();
+    const aConfirmar = conf.n ? '<p class="legenda">' + t('painel.aConfirmarLegenda',
+      { n: milhar(conf.n), quando: quandoVolta(conf.proxima) }) + '</p>' : '';
+    if (!total) return aConfirmar ? '<h3>' + t('painel.escada') + '</h3>' + aConfirmar : '';
 
     const linhas = degraus.map(d => {
       /* Degrau vazio fica na tabela, esmaecido: a escada é a mesma para todo
@@ -1980,7 +2111,7 @@ window.TaioeCardsApp = function (ctx) {
       '<table><tr><th>' + t('painel.espera') + '</th><th class="num">' + t('painel.cards') + '</th>' +
       '<th class="num">' + t('painel.proximoVolta') + '</th></tr>' + linhas +
       '<tr class="soma"><td>' + t('painel.todos') + '</td><td class="num">' + total + '</td>' +
-      '<td class="num">—</td></tr></table>';
+      '<td class="num">—</td></tr></table>' + aConfirmar;
   }
 
   function tabelaNivel() {
@@ -2370,6 +2501,12 @@ window.TaioeCardsApp = function (ctx) {
       return { chave: 'arquivado', rotulo: t((PORID[id] || {}).tipo === 'palavra'
         ? 'situacao.arquivadoPalavra' : 'situacao.arquivado') };
     }
+    /* a transparente total do curso conta como dominada e não entra em jogo;
+       a presumida pelo nivelamento é dominada provisória (PLANO.md, 7.1 e 7.2) */
+    if (Motor.transparenteTotal(id)) return { chave: 'transparente', rotulo: t('situacao.transparente') };
+    if ((!e || !e.vistas) && Motor.presumidoEm(id, progresso.cards)) {
+      return { chave: 'presumido', rotulo: t('situacao.presumido') };
+    }
     if (!e || !e.vistas) {
       /* «Ainda não apareceu» sugere que é questão de tempo. A frase presa
          não é: ela depende de você vencer as palavras, e diz quais faltam. */
@@ -2409,8 +2546,34 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   function abrirCards() {
-    renderizarCards();
     mostrar('tela-cards');
+    renderizarCards();
+  }
+
+  /* ── «estudar mesmo assim» ──
+     A transparente total volta ao jogo como card comum (extras.reativados,
+     id → ISO); o caminho de volta grava a data com «-» na frente, o gesto de
+     desfazer, para a mescla entre aparelhos saber qual veio por último (ver
+     sincronia.js). Com o motor avisado (conciliarFila → usarExtras), o card
+     entra nos inéditos — ou sai das filas, no caminho de volta. */
+  function reativada(id) {
+    return TaioeSincronia.gestoAtivo((progresso.reativados || {})[id]);
+  }
+
+  function marcarReativada(id, sim) {
+    const c = PORID[id];
+    if (!c) return;
+    const agora = new Date().toISOString();
+    progresso.reativados = progresso.reativados || {};
+    progresso.reativados[id] = sim ? agora : '-' + agora;
+    retirarDasFilas(id);
+    const i = progresso.ineditos.indexOf(id);
+    if (i >= 0) progresso.ineditos.splice(i, 1);
+    conciliarFila(progresso);
+    salvarProgresso();
+    atualizarPlacar();
+    if (Sinc) Sinc.agendar(3000);
+    statusSync(t(sim ? 'cards.reativada' : 'cards.desreativada', { x: aspas(c[L]) }), 'ok');
   }
 
   /* A lista mostra o masculino, que é a forma canônica; o feminino entra
@@ -2445,6 +2608,9 @@ window.TaioeCardsApp = function (ctx) {
       if (estado) {
         const e = progresso.cards[c.id];
         if (estado === 'errei') { if (!e || !e.erros) return false; }
+        /* as transparentes do curso, inclusive as que a pessoa quis estudar
+           mesmo assim — é daqui que elas voltam a contar como conhecidas */
+        else if (estado === 'transparente') { if (c.transp !== 'total') return false; }
         else if (situacaoDe(c.id).chave !== estado) return false;
       }
 
@@ -2461,6 +2627,11 @@ window.TaioeCardsApp = function (ctx) {
       ? t('cards.mostrandoTodos', { n: milhar(CARDS.length) })
       : t('cards.mostrando', { n: milhar(visiveis.length), total: milhar(CARDS.length) });
 
+    /* a primeira vez no filtro das transparentes: o que elas são */
+    if (estado === 'transparente') {
+      abrirDica('transparente', el['lista-cards'], { A: NOME_A, x: aspas(escapar(t('cards.reativar'))) }, { antes: true });
+    }
+
     if (!visiveis.length) {
       el['lista-cards'].innerHTML = '<p class="vazio">' + t('cards.nenhum') + '</p>';
       return;
@@ -2473,7 +2644,7 @@ window.TaioeCardsApp = function (ctx) {
         ? '<span class="selo">' + t('cards.placar', { a: e.acertos, e: e.erros }) + '</span>' : '';
 
       /* «visto» é para o que já circulou. Preso e inédito nunca apareceram. */
-      const marca = s.chave === 'dominado' ? 'dominado'
+      const marca = (s.chave === 'dominado' || s.chave === 'transparente' || s.chave === 'presumido') ? 'dominado'
         : (s.chave === 'novo' || s.chave === 'preso') ? '' : 'visto';
       return '<div class="card-linha ' + marca + '">' +
         '<div class="card-linha-topo">' +
@@ -2492,6 +2663,10 @@ window.TaioeCardsApp = function (ctx) {
         '<button class="link-comentar na-lista" data-comentar="' + escapar(c.id) + '">' + t('cards.comentar') + '</button>' +
         (s.chave === 'arquivado'
           ? ' <button class="link-comentar na-lista" data-desarquivar="' + escapar(c.id) + '">' + t('cards.desarquivar') + '</button>' : '') +
+        (s.chave === 'transparente'
+          ? ' <button class="link-comentar na-lista" data-reativar="' + escapar(c.id) + '">' + t('cards.reativar') + '</button>' : '') +
+        (c.transp === 'total' && reativada(c.id)
+          ? ' <button class="link-comentar na-lista" data-desreativar="' + escapar(c.id) + '">' + t('cards.desreativar') + '</button>' : '') +
       '</div>';
     }).join('');
   }
@@ -2517,7 +2692,8 @@ window.TaioeCardsApp = function (ctx) {
 
   /* ═══════════════ eventos ═══════════════ */
 
-  el['btn-comecar'].addEventListener('click', proximoCard);
+  /* com a avaliação do começo em aberto, é para ela que o «próximo» leva */
+  el['btn-comecar'].addEventListener('click', () => { if (comeco) desenharComeco(); else proximoCard(); });
   el['btn-proximo'].addEventListener('click', avancar);
   el['btn-contestar'].addEventListener('click', contestar);
 
@@ -2530,6 +2706,11 @@ window.TaioeCardsApp = function (ctx) {
     const d = e.target.closest('[data-desarquivar]');
     if (d) {
       marcarArquivo(d.dataset.desarquivar, false);
+      renderizarCards();
+    }
+    const r = e.target.closest('[data-reativar]') || e.target.closest('[data-desreativar]');
+    if (r) {
+      marcarReativada(r.dataset.reativar || r.dataset.desreativar, !!r.dataset.reativar);
       renderizarCards();
     }
   });
@@ -2583,6 +2764,18 @@ window.TaioeCardsApp = function (ctx) {
      Inédito volta para os inéditos — se fosse para a fila, entraria em
      circulação sem nunca ter sido respondido. */
   function irParaInicio() {
+    devolverCardAtual();
+    atualizarPlacar();
+    mostrar('tela-inicio');
+  }
+
+  function devolverCardAtual() {
+    /* A prévia do desafio que saiu sem resposta é de uma frase ainda presa:
+       não volta para os inéditos, continua esperando as palavras. */
+    if (cardAtual && !respostaPendente && desafioAtual && desafioAtual.previa && desafioAtual.id === cardAtual.id) {
+      cardAtual = null;
+    }
+    desafioAtual = null;
     if (cardAtual && !respostaPendente) {
       const id = cardAtual.id;
       const est = estadoParaFila(id);
@@ -2603,8 +2796,6 @@ window.TaioeCardsApp = function (ctx) {
     }
     cardAtual = null;
     respostaPendente = null;
-    atualizarPlacar();
-    mostrar('tela-inicio');
   }
 
   /* ═══════════════ textos ═══════════════ */
@@ -2749,6 +2940,490 @@ window.TaioeCardsApp = function (ctx) {
     alvo.innerHTML = partes.join('');
   }
 
+  /* ═══════════════ as dicas do momento certo (PLANO.md, 7.5) ═══════════════
+     Cada uma aparece na primeira vez em que a situação acontece, uma vez só,
+     num balão pequeno logo abaixo (ou acima) do que ela explica — nunca por
+     cima das respostas — e no máximo uma por card. Vista é vista ao
+     aparecer, e não ao fechar: o «Entendi» só tira o balão da frente.
+
+     As vistas moram em progresso.dicasVistas (chave → ISO), que viaja nos
+     extras, com uma reserva neste aparelho (localStorage) para o servidor que
+     ainda não guarda o campo. «Rever dicas» grava o gesto de desfazer
+     («-ISO», como o «voltar a contar como conhecida»): a mescla entre
+     aparelhos fica com o gesto mais recente de cada chave. */
+  const DICAS = {
+    arquivar: 'dica.arquivar', quase: 'dica.quase', comentar: 'dica.comentar', frase: 'dica.frase',
+    dominado: 'dica.dominado', transparente: 'dica.transparente', desafio: 'dica.desafio'
+  };
+  const CHAVE_DICAS = 'cards:dicas:' + CHAVE;
+  let dicaNoCard = false;    // o card da vez já mostrou a dele
+  let dicaNaTela = null;     // o balão aberto
+
+  function dicasDoAparelho() {
+    const x = lerLocal(CHAVE_DICAS);
+    return x && typeof x === 'object' ? x : {};
+  }
+
+  function dicaVista(id) {
+    const a = (progresso.dicasVistas || {})[id], b = dicasDoAparelho()[id];
+    const ultimo = !a ? b : !b ? a
+      : (TaioeSincronia.dataDoGesto(b) > TaioeSincronia.dataDoGesto(a) ? b : a);
+    return TaioeSincronia.gestoAtivo(ultimo);
+  }
+
+  function marcarDica(id) {
+    const agora = new Date().toISOString();
+    progresso.dicasVistas = progresso.dicasVistas || {};
+    progresso.dicasVistas[id] = agora;
+    const local = dicasDoAparelho();
+    local[id] = agora;
+    guardarLocal(CHAVE_DICAS, local);
+    salvarProgresso();
+    if (Sinc) Sinc.agendar(3000);
+  }
+
+  /* Abre o balão da dica «id» junto de «ancora»: depois dela, ou antes, com
+     { antes: true }. { seta: true } desenha a ponta apontando para cima, para
+     o botão que a dica explica. «vars» já vêm escapadas. Devolve se abriu. */
+  function abrirDica(id, ancora, vars, opcoes) {
+    if (!DICAS[id] || !ancora || dicaVista(id)) return false;
+    const o = opcoes || {};
+    fecharDica();
+    const caixa = document.createElement('div');
+    caixa.className = 'dica-contexto' + (o.seta ? ' seta' : '');
+    caixa.setAttribute('role', 'note');
+    const texto = document.createElement('p');
+    texto.innerHTML = t(DICAS[id], vars || {});
+    const fechar = document.createElement('button');
+    fechar.className = 'dica-fechar';
+    fechar.textContent = t('dica.entendi');
+    fechar.addEventListener('click', fecharDica);
+    caixa.appendChild(texto);
+    caixa.appendChild(fechar);
+    ancora.insertAdjacentElement(o.antes ? 'beforebegin' : 'afterend', caixa);
+    dicaNaTela = caixa;
+    marcarDica(id);
+    return true;
+  }
+
+  function fecharDica() {
+    if (dicaNaTela && dicaNaTela.parentNode) dicaNaTela.parentNode.removeChild(dicaNaTela);
+    dicaNaTela = null;
+  }
+
+  /* A dica que pertence a um card: uma por card, no máximo. */
+  function dicaDoCard(id, ancora, vars, opcoes) {
+    if (dicaNoCard) return;
+    if (abrirDica(id, ancora, vars, opcoes)) dicaNoCard = true;
+  }
+
+  /* Depois da resposta: o comentário, no primeiro erro ou da décima resposta
+     em diante — como pedido de ajuda para melhorar os cards. */
+  function dicaDepoisDaResposta(r) {
+    if (r.acertou && progresso.totais.respostas < 10) return;
+    dicaDoCard('comentar', el['btn-comentar-card'].parentElement,
+      { x: aspas(escapar(el['btn-comentar-card'].textContent)) }, { seta: true });
+  }
+
+  function reverDicas() {
+    const desfeito = '-' + new Date().toISOString();
+    progresso.dicasVistas = progresso.dicasVistas || {};
+    Object.keys(progresso.dicasVistas).concat(Object.keys(dicasDoAparelho())).forEach(k => {
+      progresso.dicasVistas[k] = desfeito;
+    });
+    esquecerLocal(CHAVE_DICAS);
+    salvarProgresso();
+    if (Sinc) Sinc.agendar(3000);
+    statusSync(t('config.dicasZeradas'), 'ok');
+  }
+
+  /* ═══════════════ o card desafio (PLANO.md, 7.4) ═══════════════
+     Quem escolhe é o Motor.escolherDesafio, chamado a cada vaga de card novo
+     (proximoNovo); o app só guarda os contadores e os entrega:
+
+       desafios       quantos já houve — os estados com «desafio» (a estreia
+                      marcada por Motor.marcarDesafio, que viaja com o estado)
+                      mais os anotados neste aparelho (as prévias erradas não
+                      criam estado);
+       ultimoDesafio  o mais recente: «desafioEm» do estado, ou a data anotada;
+       inicio         o começo do curso: o primeiro dia do diário (que vem do
+                      servidor), o dia do nivelamento ou a primeira estreia;
+       mostrados      os ids de todos eles, para nenhum se repetir.
+
+     A anotação deste aparelho é cards:desafios:<conta>:<curso>, id →
+     { em, previa, acertou }: é a única memória da prévia errada, que não tem
+     estado nem resposta no servidor (outro aparelho pode mostrá-la uma vez
+     mais, e é só). */
+  const CHAVE_DESAFIOS = 'cards:desafios:' + CHAVE;
+  let desafioAtual = null;   // { id, previa }: o card na tela é um desafio
+
+  function desafiosDoAparelho() {
+    const x = lerLocal(CHAVE_DESAFIOS);
+    return x && typeof x === 'object' ? x : {};
+  }
+
+  function anotarDesafio(r) {
+    if (!desafioAtual) return;
+    const x = desafiosDoAparelho();
+    if (!x[desafioAtual.id]) {
+      x[desafioAtual.id] = { em: new Date().toISOString(), previa: desafioAtual.previa, acertou: !!r.acertou };
+      guardarLocal(CHAVE_DESAFIOS, x);
+    }
+  }
+
+  /* A prévia errada: nada se grava no progresso, a frase continua presa.
+     O registro de mentira só serve para o «próximo» saber que a pergunta
+     foi respondida. */
+  function guardarPreviaErrada(r) {
+    ultimoRegistro = { id: cardAtual.id, previa: true, r: r };
+    sessao.eventos.push({ acertou: false });
+    atualizarPlacar();
+  }
+
+  function inicioDoCurso() {
+    let menor = Infinity;
+    const diario = progresso.diario || {};
+    Object.keys(diario).forEach(d => {
+      if (diario[d] && diario[d].n && /^\d{4}-\d\d-\d\d$/.test(d)) menor = Math.min(menor, meioDia(d).getTime());
+    });
+    const feito = Date.parse(progresso.nivelamento && progresso.nivelamento.feitoEm);
+    if (isFinite(feito)) menor = Math.min(menor, feito);
+    Object.keys(progresso.cards).forEach(id => {
+      const e = progresso.cards[id];
+      if (e && /^\d{4}-\d\d-\d\d$/.test(e.estreia || '')) menor = Math.min(menor, meioDia(e.estreia).getTime());
+    });
+    return new Date(isFinite(menor) ? menor : Date.now()).toISOString();
+  }
+
+  function contextoDoDesafio() {
+    const doAparelho = desafiosDoAparelho();
+    const mostrados = new Set(Object.keys(doAparelho));
+    const datas = Object.keys(doAparelho).map(id => doAparelho[id] && doAparelho[id].em);
+    Object.keys(progresso.cards).forEach(id => {
+      const e = progresso.cards[id];
+      if (e && e.desafio) { mostrados.add(id); datas.push(e.desafioEm); }
+    });
+    const ordem = datas.filter(Boolean).sort();
+    return {
+      agora: Date.now(),
+      respostas: progresso.totais.respostas,
+      desafios: mostrados.size,
+      ultimoDesafio: ordem.length ? ordem[ordem.length - 1] : null,
+      inicio: inicioDoCurso(),
+      mostrados: [...mostrados],
+      arquivados: progresso.arquivados || {},
+      prior: progresso.nivelamento && progresso.nivelamento.porNivel
+    };
+  }
+
+  /* ═══════════════ o começo: avaliação, resultado e «como funciona» ═══════════════
+     PLANO.md, 7.3 a 7.5. Na primeira entrada num curso — sem nivelamento e
+     sem nenhum card respondido — o app abre aqui, e não na página inicial:
+
+       entrada       «Para começar, vamos avaliar o seu nível atual.» e «Você
+                     já estudou…?» — Nunca pula o teste (pulou: true);
+       teste         uma palavra por vez, «Já conheço» / «Quero aprender», a
+                     barra e o «Pular»; quando o motor pede a conferência, a
+                     mesma palavra vira múltipla escolha (Motor.alternativas
+                     na ida, a língua de quem estuda);
+       resultado     «Você já conhece cerca de N palavras deste baralho»;
+       comoFunciona  escolher → escrever → o card se inverte; sem relógio.
+
+     O teste (Motor.nivelamento) é JSON puro e mora em localStorage
+     (cards:comeco:<conta>:<curso>) a cada resposta: recarregar a página no
+     meio retoma de onde parou, e nada vai à rede até o fim. No fim, o
+     resultado vai para progresso.nivelamento (o deduzir do motor, com
+     feitoEm, pulou e comeco), que sobe nos extras.
+
+     Quem já tem progresso no curso nunca cai aqui sozinho. Num aparelho novo
+     o progresso local ainda está vazio até a primeira carga: se ela trouxer
+     estados ou um nivelamento, a avaliação que ainda não acabou some
+     (conferirComeco). «Refazer avaliação», nas configurações, abre o mesmo
+     caminho; os presumidos ainda não respondidos saem quando o teste novo
+     termina (o nivelamento inteiro é trocado, e o deduzir não presume card
+     que já tem estado). */
+  const CHAVE_COMECO = 'cards:comeco:' + CHAVE;
+  const ROTULO_COMECO = { nunca: 'comeco.nunca', pouco: 'comeco.pouco', bastante: 'comeco.bastante' };
+  let comeco = null;          // { fase, refazer, automatico, teste }
+  let comecoOcupado = false;  // a pausa em que a conferência mostra a certa
+
+  function precisaDoComeco(p) {
+    return !p.nivelamento && !Object.keys(p.cards || {}).some(id => p.cards[id] && p.cards[id].vistas);
+  }
+
+  /* Só o que vale retomar fica guardado: o teste em andamento e as duas
+     telas que vêm depois dele. A entrada se refaz sozinha. */
+  function guardarComeco() {
+    if (!comeco || comeco.fase === 'entrada') { esquecerLocal(CHAVE_COMECO); return; }
+    guardarLocal(CHAVE_COMECO, { fase: comeco.fase, refazer: !!comeco.refazer,
+      automatico: !!comeco.automatico, teste: comeco.teste || null });
+  }
+
+  function abrirComeco(opcoes) {
+    devolverCardAtual();
+    comeco = { fase: 'entrada', refazer: !!opcoes.refazer, automatico: !!opcoes.automatico, teste: null };
+    guardarComeco();
+    desenharComeco();
+  }
+
+  /* Na abertura do app: o que ficou pela metade, ou a primeira entrada. */
+  function retomarComeco() {
+    const salvo = lerLocal(CHAVE_COMECO);
+    const fases = ['teste', 'resultado', 'comoFunciona'];
+    if (salvo && fases.indexOf(salvo.fase) >= 0 &&
+        (salvo.fase !== 'teste' || (salvo.teste && Array.isArray(salvo.teste.cartas))) &&
+        !(salvo.automatico && salvo.fase === 'teste' && !precisaDoComeco(progresso))) {
+      comeco = { fase: salvo.fase, refazer: !!salvo.refazer, automatico: !!salvo.automatico, teste: salvo.teste || null };
+      desenharComeco();
+      return true;
+    }
+    esquecerLocal(CHAVE_COMECO);
+    if (precisaDoComeco(progresso)) { abrirComeco({ automatico: true }); return true; }
+    return false;
+  }
+
+  /* Chegou progresso do servidor: quem já estudou este curso em outro
+     aparelho não precisa da avaliação que se abriu sozinha. */
+  function conferirComeco() {
+    if (comeco && comeco.automatico && (comeco.fase === 'entrada' || comeco.fase === 'teste') &&
+        !precisaDoComeco(progresso)) {
+      comeco = null;
+      guardarComeco();
+      mostrar('tela-inicio');
+    }
+  }
+
+  function fimDoComeco(jogar) {
+    comeco = null;
+    guardarComeco();
+    if (jogar) proximoCard();
+    else irParaInicio();
+  }
+
+  /* ── o desenho ── */
+  function no(tag, classe, texto) {
+    const e = document.createElement(tag);
+    if (classe) e.className = classe;
+    if (texto !== undefined) e.textContent = texto;
+    return e;
+  }
+  function noHtml(tag, classe, html) {
+    const e = no(tag, classe);
+    e.innerHTML = html;
+    return e;
+  }
+
+  function desenharComeco() {
+    if (!comeco) return;
+    const caixa = el['comeco-conteudo'];
+    caixa.textContent = '';
+    if (comeco.fase === 'teste') desenharTeste(caixa);
+    else if (comeco.fase === 'resultado') desenharResultado(caixa);
+    else if (comeco.fase === 'comoFunciona') desenharComoFunciona(caixa);
+    else desenharEntrada(caixa);
+    if (comeco) mostrar('tela-comeco');
+  }
+
+  function desenharEntrada(caixa) {
+    caixa.appendChild(no('h1', 'comeco-titulo', t(comeco.refazer ? 'comeco.refazendo' : 'comeco.aviso')));
+    caixa.appendChild(no('p', 'comeco-pergunta', t('comeco.pergunta', { L: NOME_L })));
+    const lista = no('div', 'escolhas-comeco');
+    ['nunca', 'pouco', 'bastante'].forEach(k => {
+      const b = no('button', 'secundario', t(ROTULO_COMECO[k]));
+      b.addEventListener('click', () => escolherComeco(k));
+      lista.appendChild(b);
+    });
+    caixa.appendChild(lista);
+    caixa.appendChild(no('p', 'ajuda', t('comeco.entradaAjuda')));
+    if (comeco.refazer) {
+      const voltar = no('button', 'link-arquivar', t('comum.voltar'));
+      voltar.addEventListener('click', () => { comeco = null; guardarComeco(); abrirConfig(); });
+      const linha = no('p', 'linha-pular');
+      linha.appendChild(voltar);
+      caixa.appendChild(linha);
+    }
+  }
+
+  function escolherComeco(k) {
+    if (k === 'nunca') {
+      progresso.nivelamento = { feitoEm: new Date().toISOString(), pulou: true, comeco: 'nunca' };
+      depoisDoTeste();
+      return;
+    }
+    comeco.teste = Motor.nivelamento.novo(CARDS, { comeco: k });
+    comeco.fase = 'teste';
+    guardarComeco();
+    desenharComeco();
+  }
+
+  function desenharTeste(caixa) {
+    const teste = comeco.teste;
+    let carta = Motor.nivelamento.proximaCarta(teste);
+    /* card que saiu do baralho entre uma abertura e outra: conta como não
+       conhecido, e o teste segue */
+    while (carta && !PORID[carta.id]) {
+      if (carta.conferir) Motor.nivelamento.conferir(teste, carta.id, false);
+      else Motor.nivelamento.responder(teste, carta.id, false);
+      carta = Motor.nivelamento.proximaCarta(teste);
+    }
+    if (!carta) { terminarTeste(false); return; }
+    const c = PORID[carta.id];
+
+    const topo = no('div', 'comeco-topo');
+    topo.appendChild(no('span', 'etiqueta', Motor.ROTULO_NIVEL[carta.nivel] || carta.nivel));
+    const barra = no('div', 'barra-teste');
+    barra.setAttribute('role', 'progressbar');
+    barra.setAttribute('aria-label', t('comeco.barra'));
+    barra.setAttribute('aria-valuemin', '0');
+    barra.setAttribute('aria-valuemax', String(carta.teto));
+    barra.setAttribute('aria-valuenow', String(carta.feitas));
+    const cheio = no('i');
+    /* a CSP não deixa estilo em HTML, mas deixa o CSSOM */
+    cheio.style.width = Math.min(100, Math.round(100 * carta.feitas / carta.teto)) + '%';
+    barra.appendChild(cheio);
+    topo.appendChild(barra);
+    caixa.appendChild(topo);
+
+    const ficha = no('div');
+    ficha.className = 'card ficha-teste';
+    ficha.appendChild(no('p', 'enunciado', t(carta.conferir ? 'comeco.conferir' : 'comeco.conhece')));
+    const linha = no('div', 'termo-linha');
+    linha.appendChild(no('span', 'bandeira', BANDEIRA_L));
+    const termo = no('div', 'termo', c[L]);
+    termo.setAttribute('lang', L);
+    linha.appendChild(termo);
+    ficha.appendChild(linha);
+
+    if (carta.conferir) {
+      /* a conferência: a palavra vira múltipla escolha, com as alternativas
+         do jogo na língua de quem estuda */
+      const certa = Motor.resposta(c, IDA);
+      const opcoes = Motor.alternativas(c, IDA, CARDS, progresso.cards);
+      const lista = no('div', 'alternativas');
+      opcoes.forEach((texto, i) => {
+        const b = no('button', 'alternativa');
+        b.appendChild(no('span', 'num', String(i + 1)));
+        b.appendChild(no('span', null, texto));
+        b.addEventListener('click', () => conferirNoTeste(carta.id, texto === certa, b, lista, certa));
+        lista.appendChild(b);
+      });
+      ficha.appendChild(lista);
+      const naoSei = no('button', 'secundario', t('card.naoSei'));
+      naoSei.addEventListener('click', () => conferirNoTeste(carta.id, false, null, lista, certa));
+      const linhaNaoSei = no('div', 'linha-botoes');
+      linhaNaoSei.appendChild(naoSei);
+      ficha.appendChild(linhaNaoSei);
+    } else {
+      const botoes = no('div', 'botoes-teste');
+      const sim = no('button', 'opcao-teste', t('comeco.jaConheco'));
+      const nao = no('button', 'opcao-teste', t('comeco.queroAprender'));
+      sim.addEventListener('click', () => responderNoTeste(carta.id, true));
+      nao.addEventListener('click', () => responderNoTeste(carta.id, false));
+      botoes.appendChild(sim);
+      botoes.appendChild(nao);
+      ficha.appendChild(botoes);
+    }
+    caixa.appendChild(ficha);
+
+    const pular = no('button', 'link-arquivar', t('comeco.pular'));
+    pular.addEventListener('click', () => { if (!comecoOcupado) terminarTeste(true); });
+    const linhaPular = no('p', 'linha-pular');
+    linhaPular.appendChild(pular);
+    caixa.appendChild(linhaPular);
+  }
+
+  function responderNoTeste(id, conhece) {
+    if (comecoOcupado || !comeco || !comeco.teste) return;
+    Motor.nivelamento.responder(comeco.teste, id, conhece);
+    guardarComeco();
+    desenharComeco();
+  }
+
+  /* A múltipla escolha da conferência: mostra a certa (e a errada, se foi
+     o caso) por um instante, e segue. */
+  function conferirNoTeste(id, acertou, botao, lista, certa) {
+    if (comecoOcupado || !comeco || !comeco.teste) return;
+    comecoOcupado = true;
+    [...lista.children].forEach(b => {
+      b.disabled = true;
+      if (b.lastChild.textContent === certa) b.classList.add('certa');
+      else if (b === botao) b.classList.add('errada');
+    });
+    Motor.nivelamento.conferir(comeco.teste, id, acertou);
+    guardarComeco();
+    setTimeout(() => {
+      comecoOcupado = false;
+      if (comeco && comeco.fase === 'teste') desenharComeco();
+    }, acertou ? 650 : 1400);
+  }
+
+  /* O fim do teste, ou o «Pular» no meio dele: a dedução fica com o que foi
+     respondido até ali. */
+  function terminarTeste(pulou) {
+    const agora = new Date().toISOString();
+    const teste = comeco.teste;
+    const d = Motor.nivelamento.deduzir(teste, CARDS, {
+      uid: ctx.uid, agora: agora, estados: progresso.cards, arquivados: progresso.arquivados || {} });
+    progresso.nivelamento = Object.assign({ feitoEm: agora, pulou: !!pulou, comeco: teste.comeco }, d);
+    depoisDoTeste();
+  }
+
+  /* O nivelamento novo entra no jogo: o motor recebe os presumidos (ou
+     perde os antigos, no refazer) e o prior do nível, as filas e os inéditos
+     se refazem, e os extras sobem. */
+  function depoisDoTeste() {
+    comeco.teste = null;
+    conciliarFila(progresso);
+    salvarProgresso();
+    atualizarPlacar();
+    if (Sinc) Sinc.agendar(3000);
+    comeco.fase = Motor.palavrasConhecidas(CARDS) ? 'resultado' : (comeco.refazer ? null : 'comoFunciona');
+    if (!comeco.fase) { fimDoComeco(false); return; }
+    guardarComeco();
+    desenharComeco();
+  }
+
+  function desenharResultado(caixa) {
+    const n = Motor.palavrasConhecidas(CARDS);
+    const transparentes = Motor.palavrasConhecidas(CARDS, {});
+    const presumidas = n - transparentes;
+    caixa.appendChild(noHtml('h1', 'comeco-titulo', tn('comeco.resultado', n, { n: milhar(n) })));
+    /* todas transparentes (o «Nunca», em geral): «71 delas» depois de «71
+       palavras» soaria torto */
+    if (transparentes && !presumidas) {
+      caixa.appendChild(noHtml('p', 'comeco-nota', t('comeco.soTransparentes', { A: escapar(NOME_A) })));
+    } else if (transparentes) {
+      caixa.appendChild(noHtml('p', 'comeco-nota', tn('comeco.transparentes', transparentes, { n: milhar(transparentes), A: escapar(NOME_A) })));
+    }
+    if (presumidas > 0) {
+      caixa.appendChild(noHtml('p', 'comeco-nota', tn('comeco.presumidas', presumidas, { n: milhar(presumidas) })));
+    }
+    const seguir = no('button', null, t('comeco.continuar'));
+    seguir.className = 'primario grande';
+    seguir.addEventListener('click', () => {
+      /* quem refez a avaliação já sabe como o jogo funciona */
+      if (comeco.refazer) { fimDoComeco(false); return; }
+      comeco.fase = 'comoFunciona';
+      guardarComeco();
+      desenharComeco();
+    });
+    caixa.appendChild(seguir);
+  }
+
+  function desenharComoFunciona(caixa) {
+    caixa.appendChild(no('h1', 'comeco-titulo', t('comeco.comoFunciona')));
+    const passos = no('ol', 'passos-comeco');
+    [t('comeco.passo1', { L: escapar(NOME_L) }), t('comeco.passo2'),
+     t('comeco.passo3', { A: escapar(NOME_A), L: escapar(NOME_L) }), t('comeco.passo4')]
+      .forEach(html => passos.appendChild(noHtml('li', null, html)));
+    caixa.appendChild(passos);
+    caixa.appendChild(no('p', 'comeco-nota', t('comeco.semRelogio')));
+    const estudar = no('button', null, t('comeco.estudar'));
+    estudar.className = 'primario grande';
+    estudar.addEventListener('click', () => fimDoComeco(true));
+    caixa.appendChild(estudar);
+  }
+
   el['btn-inicio'].addEventListener('click', irParaInicio);
   el['btn-cards'].addEventListener('click', abrirCards);
   el['btn-painel'].addEventListener('click', abrirPainel);
@@ -2764,7 +3439,10 @@ window.TaioeCardsApp = function (ctx) {
   });
   el['btn-config'].addEventListener('click', abrirConfig);
   document.querySelectorAll('[data-voltar]').forEach(b => {
-    b.addEventListener('click', () => mostrar(cardAtual ? 'tela-card' : 'tela-inicio'));
+    b.addEventListener('click', () => {
+      if (comeco) desenharComeco();
+      else mostrar(cardAtual ? 'tela-card' : 'tela-inicio');
+    });
   });
 
   function abrirConfig() {
@@ -2861,6 +3539,13 @@ window.TaioeCardsApp = function (ctx) {
 
   el['btn-exportar'].addEventListener('click', exportar);
 
+  /* «Refazer avaliação» e «Rever dicas» (PLANO.md, 7.3 item 9, e 7.5) */
+  el['btn-refazer'].addEventListener('click', () => {
+    if (!confirm(t('config.refazerConfirma'))) return;
+    abrirComeco({ refazer: true });
+  });
+  el['btn-rever-dicas'].addEventListener('click', reverDicas);
+
   el['btn-zerar'].addEventListener('click', async () => {
     const n = Sinc.pendentes();
     const aviso = n ? tn('config.zerarPerdidas', n) : '';
@@ -2873,6 +3558,14 @@ window.TaioeCardsApp = function (ctx) {
 
   /* teclado */
   document.addEventListener('keydown', e => {
+    /* no teste do começo, «1» e «2» são «Já conheço» e «Quero aprender»; na
+       conferência, de 1 a 5 escolhem a alternativa */
+    if (!el['tela-comeco'].classList.contains('oculto')) {
+      if (!comeco || comeco.fase !== 'teste' || !/^[1-5]$/.test(e.key)) return;
+      const b = el['comeco-conteudo'].querySelectorAll('.botoes-teste button, .alternativas button')[+e.key - 1];
+      if (b && !b.disabled) { e.preventDefault(); b.click(); }
+      return;
+    }
     if (el['tela-card'].classList.contains('oculto')) return;
     const alvo = e.target.tagName;
     if (alvo === 'INPUT' && e.key !== 'Escape') return;
@@ -2941,12 +3634,14 @@ window.TaioeCardsApp = function (ctx) {
   progresso.totais.sessoes = (progresso.totais.sessoes || 0) + 1;
   salvarProgresso();
   atualizarPlacar();
-  mostrar('tela-inicio');
+  /* a primeira entrada no curso (ou a avaliação que ficou pela metade) abre
+     no começo; o resto, na página inicial */
+  if (!retomarComeco()) mostrar('tela-inicio');
 
   Sinc = TaioeSincronia.criar({
     sb: ctx.sb, uid: ctx.uid, curso: ctx.curso,
     progresso: () => progresso,
-    aoMudar: () => { conciliarFila(progresso); salvarProgresso(); atualizarPlacar(); },
+    aoMudar: () => { conciliarFila(progresso); salvarProgresso(); atualizarPlacar(); conferirComeco(); },
     retrato: () => (progresso.serie && progresso.serie.length ? progresso.serie[progresso.serie.length - 1] : null),
     extras: () => {
       const x = {

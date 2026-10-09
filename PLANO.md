@@ -649,7 +649,7 @@ Está também no manual (seção 19), que é onde quem escreve leva lê:
 | especificação (esta seção) | **feito** (09/10) |
 | transparência | **feito** (09/10) |
 | presumidos, prior, desafio no motor | **feito** (09/10) |
-| telas e dicas | — |
+| telas e dicas | **feito** (09/10) |
 | banco (extras novos) e teste no navegador | — (local) |
 
 ### 7.8 Como ficou o código
@@ -717,8 +717,9 @@ já é o prior da ordem dos inéditos. `progresso.nivelamento`,
 `progresso.reativados` (id → ISO) e `progresso.dicasVistas` (chave → ISO)
 viajam nos extras **só quando existem**, e a ausência deles na resposta do
 servidor não apaga o que o aparelho tem. A mescla (`mesclarExtras`):
-nivelamento inteiro pelo `feitoEm` mais recente; reativados e dicas por
-união, com a data mais antiga de cada chave. Falta o banco guardá-los
+nivelamento inteiro pelo `feitoEm` mais recente; reativados e dicas chave a
+chave, **o gesto mais recente vence** (ver «As telas», abaixo: a união da
+primeira versão não deixava desfazer). Falta o banco guardá-los
 (`gravar_extras`, `carregar_curso`; local).
 
 **Decidido no caminho.** A frase de primeiros passos com «expressão»
@@ -731,3 +732,74 @@ passa com umas 8 conferências certas e nenhuma errada — num teste de 30
 cartas é raro, e o grosso dos presumidos é o que a pessoa disse conhecer.
 
 Conferido por `node fonte/testar-comeco.js` (no CI, workflow Cópias).
+
+**As telas** (09/10, `public/cards/js/app.js`, `index.html`, `style.css`,
+textos nas três línguas em `textos-i18n.js`). Tudo do lado do aparelho; a
+rede só entra no fim do teste, quando o nivelamento sobe nos extras.
+
+- **O começo** mora na `tela-comeco` (um `comeco-conteudo` que o app
+  redesenha a cada passo: entrada, teste, resultado, «como funciona»), no
+  bloco «o começo» do app. Abre sozinho na abertura do curso quando não há
+  `progresso.nivelamento` nem card respondido; num aparelho novo, se a
+  primeira carga trouxer estados ou nivelamento, a avaliação que ainda não
+  acabou some (`conferirComeco`, no `aoMudar` da sincronia). Os botões do
+  topo somem enquanto ela dura. O teste (`Motor.nivelamento`) fica em
+  `localStorage` `cards:comeco:<uid>:<curso>` a cada resposta, com a fase
+  — recarregar retoma o teste, o resultado ou o «como funciona». A
+  conferência usa `Motor.alternativas` na ida. O fim (ou o «Pular», que
+  deduz com o que já foi respondido) grava `progresso.nivelamento` =
+  `deduzir()` + `{ feitoEm, pulou, comeco }` (`testados` vai junto), chama
+  o `conciliarFila` (que faz o `usarExtras` e refaz filas e inéditos com o
+  prior novo) e agenda a sincronia. «Nunca» grava `{ feitoEm, pulou: true,
+  comeco: 'nunca' }`. O resultado separa as transparentes das presumidas;
+  com N = 0 vai direto ao «como funciona».
+- **Refazer avaliação** (configurações, grupo «Avaliação e dicas») abre o
+  mesmo caminho; o nivelamento inteiro é trocado no fim, com `feitoEm` novo
+  (é ele que decide a mescla), e o `deduzir` não presume card com estado —
+  então os presumidos ainda não respondidos saem, e os respondidos já
+  tinham virado card comum. Quem refaz não vê o «como funciona» de novo.
+- **As dicas** (`DICAS`, `abrirDica`, `dicaDoCard`): um balão no fluxo da
+  página, embaixo ou em cima do que explica, nunca sobre as respostas; uma
+  por card; vista ao aparecer. Gravadas em `progresso.dicasVistas` e na
+  reserva `cards:dicas:<uid>:<curso>`. «Rever dicas» grava em cada chave o
+  **gesto de desfazer**, a data com «-» na frente (`-2026-10-09T…`).
+- **Reativadas**: a lista ganhou os filtros «transparentes» (todas as
+  `transp: 'total'` do curso, reativadas ou não) e «a confirmar» (os
+  presumidos sem estado); as situações «transparente — conta como
+  dominada» e «a confirmar»; «Estudar mesmo assim» grava
+  `reativados[id] = ISO`, e «Voltar a contar como conhecida» grava
+  `-ISO`. O motor só recebe as datas sem «-» (`reativadosAtivos`).
+- **A mescla mudou** (`sincronia.js`, `mesclarExtras`): em `reativados` e
+  `dicasVistas`, chave a chave, fica o valor de **data mais recente**,
+  ignorando o «-» na comparação; no empate, o do servidor. **A RPC
+  `gravar_extras` tem de fazer o mesmo** (é o que falta do lado local): a
+  união com a data mais antiga desfaria o «Rever dicas» e manteria o
+  «-ISO» velho por cima de uma dica vista de novo. `TaioeSincronia.gestoAtivo`
+  e `dataDoGesto` são as duas regras; o `testar-comeco.js` confere.
+- **O painel**: a métrica «a confirmar» na grade e uma linha embaixo da
+  escada dos dominados (quantos e quando volta o próximo); a **vitrine**
+  logo depois da grade — o poema da vez (senão a prosa) por
+  `atualizarTextosEmVista`, calculado e não gravado, com título, autor, o
+  primeiro verso e a tradução, «faltam N palavras» (`andamentoDoTexto`) e,
+  antes dos 400 dominados, quantos faltam para as palavras dele começarem a
+  chegar. Curso sem textos (francês, português) não tem vitrine.
+- **O desafio**: `proximoNovo` pergunta ao `Motor.escolherDesafio` a cada
+  vaga de card novo. Os contadores vêm do que já viaja — `est.desafio` (o
+  `marcarDesafio` da estreia) e `est.desafioEm` (a data), no estado do
+  card; o começo do curso é o primeiro dia do diário, o `feitoEm` ou a
+  primeira estreia — mais a anotação deste aparelho
+  `cards:desafios:<uid>:<curso>` (id → `{ em, previa, acertou }`), que é a
+  única memória da **prévia errada**: ela não cria estado nem resposta no
+  servidor, e por isso outro aparelho pode mostrá-la uma vez mais. A
+  prévia certa estreia como qualquer card (com a marca de desafio) e entra
+  no jogo, mesmo presa. Na tela, a etiqueta «Desafio»; na prévia, sem o
+  «já conheço», e com a linha «essa volta quando você tiver as palavras
+  dela» (ou «entra no seu jogo»).
+
+Conferido num arnês sem servidor (Chromium a 390 px, com a CSP do
+`_headers`): o caminho «Um pouco» com recarga no meio do teste, «Nunca»,
+«Bastante» no refazer, as dicas de arquivar, comentar, quase, dominado,
+desafio e transparente, a prévia errada, a palavra desafio, reativar e
+desfazer na lista, o painel com a vitrine e «a confirmar», «Rever dicas»,
+e a avaliação que some quando a carga traz estados. Falta o teste com
+login de verdade (local).

@@ -419,8 +419,14 @@ ok(mesclar(Object.assign({}, base, { nivelamento: nB }), Object.assign({}, base,
 ok(mesclar(Object.assign({}, base, { nivelamento: nA }), base).nivelamento === nA, 'nivelamento só de um lado fica');
 const mr = mesclar(Object.assign({}, base, { reativados: { x: '2026-10-09', y: '2026-10-05' }, dicasVistas: { quase: '2026-10-02' } }),
   Object.assign({}, base, { reativados: { x: '2026-10-01', z: '2026-10-03' } }));
-ok(mr.reativados.x === '2026-10-01' && mr.reativados.y === '2026-10-05' && mr.reativados.z === '2026-10-03', 'reativados: união, a data mais antiga');
-ok(mr.dicasVistas.quase === '2026-10-02', 'dicasVistas: união');
+ok(mr.reativados.x === '2026-10-09' && mr.reativados.y === '2026-10-05' && mr.reativados.z === '2026-10-03', 'reativados: chave a chave, o gesto mais recente');
+ok(mr.dicasVistas.quase === '2026-10-02', 'dicasVistas: a chave de um lado só fica');
+/* desfazer é gesto: «-ISO» vence a data mais velha e perde para a mais nova */
+const md = mesclar(Object.assign({}, base, { reativados: { x: '-2026-10-09T12:00:00Z' }, dicasVistas: { quase: '-2026-10-09T12:00:00Z', frase: '2026-10-09T13:00:00Z' } }),
+  Object.assign({}, base, { reativados: { x: '2026-10-01T10:00:00Z' }, dicasVistas: { quase: '2026-10-02T10:00:00Z', frase: '-2026-10-09T12:00:00Z' } }));
+ok(md.reativados.x === '-2026-10-09T12:00:00Z' && !jan.TaioeSincronia.gestoAtivo(md.reativados.x), 'reativados: o «voltar a contar como conhecida» mais novo vence');
+ok(md.dicasVistas.quase === '-2026-10-09T12:00:00Z', 'dicasVistas: o «Rever dicas» mais novo vence');
+ok(jan.TaioeSincronia.gestoAtivo(md.dicasVistas.frase), 'dicasVistas: a dica vista depois do «Rever dicas» fica vista');
 
 zerar();
 console.log('\n  ' + (falhas ? falhas + ' de ' + feitas + ' conferências falharam' : feitas + ' conferências, todas passaram') + '\n');

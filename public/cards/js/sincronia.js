@@ -61,20 +61,27 @@
       saida.nivelamento = !nl ? ns : !ns ? nl
         : (String(ns.feitoEm || '') >= String(nl.feitoEm || '') ? ns : nl);
     }
-    // — reativados (id → ISO) e dicasVistas (chave → ISO): união, e de cada chave fica a data
-    //   MAIS ANTIGA — o primeiro «estudar mesmo assim», a primeira vez que a dica apareceu —, a
-    //   mesma regra dos textos lidos. Nada se desfaz por aqui: a união só cresce.
+    // — reativados (id → ISO) e dicasVistas (chave → ISO): chave a chave, o GESTO MAIS RECENTE
+    //   vence, como no arquivo. A primeira versão era a união com a data mais antiga, e a união
+    //   não desfaz nada: o «Rever dicas» e o «voltar a contar como conhecida» (09/10, as telas)
+    //   precisam desfazer. Desfazer grava a data com um «-» na frente («-2026-10-09T…»): a
+    //   chave fica, com a data do gesto, e quem lê trata o «-» como «não» (ver gestoAtivo).
+    //   No empate, o do servidor.
     ['reativados', 'dicasVistas'].forEach(function (campo) {
       var l = local[campo], s = servidor[campo];
       if (!l && !s) return;
       var u = Object.assign({}, l || {});
       Object.keys(s || {}).forEach(function (k) {
-        if (!u[k] || String(s[k]) < String(u[k])) u[k] = s[k];
+        if (!u[k] || dataDoGesto(s[k]) >= dataDoGesto(u[k])) u[k] = s[k];
       });
       saida[campo] = u;
     });
     return saida;
   }
+
+  // o valor de reativados e dicasVistas: «ISO» é sim, «-ISO» é o gesto de desfazer
+  function dataDoGesto(v) { return String(v || '').replace(/^-/, ''); }
+  function gestoAtivo(v) { return typeof v === 'string' && v !== '' && v[0] !== '-'; }
 
   function filaVazia() {
     return { base: 0, eventos: [], sujos: [], puxadoEm: null, loteSemRecibo: null,
@@ -510,5 +517,5 @@
     };
   }
 
-  window.TaioeSincronia = { criar: criar, mesclarExtras: mesclarExtras };
+  window.TaioeSincronia = { criar: criar, mesclarExtras: mesclarExtras, gestoAtivo: gestoAtivo, dataDoGesto: dataDoGesto };
 })();
