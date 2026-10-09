@@ -321,6 +321,15 @@ como o de todo curso.
 | fr 7 | 69 palavras que as frases pediam + 27 avulsas (corpo, roupa, comida, estações…); primeiros `sinonimosFr` e `regionaisFr` (cellulaire no Quebec, GSM na Bélgica, natel na Suíça) | **feito** (08/10) — 673 cards; falta frase para as 27 avulsas |
 | fr 8 | 126 frases de uso (as 27 avulsas, um por sentido nas de dois; os usos das palavras da leva 7; situações de hotel, médico, telefone, direção) + 25 de conjugação (os primeiros mais-que-perfeitos, imperfeito, futuro, passé composé) | **feito** (08/10) — 824 cards; 37 palavras pedidas pelas frases |
 | fr 9 | 37 palavras que as frases pediam + 47 avulsas (dias, estações, cores, comida, casa, roupa, corpo, profissões, verbos e advérbios comuns); parêntese em «mieux», «la fois», «l'étage», «perdre», «le menu», «proche», «sympa», «d'abord» | **feito** (08/10) — 908 cards; falta frase para as 47 avulsas |
+| fr 10 | 95 frases de uso (as 47 avulsas, um por sentido nas de dois; os usos das palavras da leva 9) + 20 de conjugação, só com palavras que já têm card | **feito** (09/10) — **1023 cards**: 40 de primeiros passos, 384 palavras, 473 frases de uso, 126 de conjugação; nenhuma frase presa, nenhuma palavra sem frase |
+
+**O baralho de francês passou de mil em 09/10/2026.** A curva de níveis ficou
+quase toda em A1 (939 A1, 84 A2): é a base de quem começa do zero, e o ciclo
+vai subindo de nível sozinho conforme as palavras novas saem das frases. O que
+falta para ir à main: aplicar os três catálogos (`fonte/sql/catalogo-fr-*.sql`)
+pelo workflow Catálogo do taioe-infra e conferir que o banco aceita os cursos
+`fr-pt`, `fr-es` e `fr-en`; depois, o estudo de verdade — os três canais de
+retorno (manual, seção 1) é que vão consertar o baralho dali em diante.
 
 ---
 
