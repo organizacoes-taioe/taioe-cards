@@ -1437,9 +1437,17 @@ window.Motor = (function () {
   const DOMINADOS_PARA_TEXTOS = 400;
   const TIPOS_DE_TEXTO = ['poema', 'prosa'];
 
+  /* Desde 09/10/2026 (PLANO.md, 7.1 e 7.2) contam também a palavra
+     transparente total do curso e a presumida pelo nivelamento que ainda não
+     foi respondida: as duas são dominadas para o motor, e os 400 dos textos
+     são de palavras que a pessoa sabe, não de respostas que ela deu. */
   function dominadosNoTotal(estados) {
     let n = 0;
     for (const id in estados) if (estados[id] && estados[id].etapa === 'dominado') n++;
+    for (const id in TRANSP) {
+      if (transparenteTotal(id) && !(estados && estados[id] && estados[id].etapa === 'dominado')) n++;
+    }
+    for (const id in PRESUMIDOS) if (presumidoEm(id, estados)) n++;
     return n;
   }
 
@@ -1766,10 +1774,14 @@ window.Motor = (function () {
   /* Quando a palavra passou a contar como sabida: o domínio, ou o
      arquivamento. Infinity quando ainda não conta. Sem data (dominada antes
      de «dominadoEm» existir) vale zero, como vencida há muito tempo. */
+  /* Desde 09/10/2026 (PLANO.md, 7.1 e 7.2): a transparente total do curso
+     conta como sabida desde sempre (zero), e a presumida pelo nivelamento,
+     enquanto não tiver estado, desde o dia do nivelamento. */
   function sabidaEm(id, estados, arquivados) {
     if (arquivado(id, arquivados)) return Date.parse(arquivados[id].em) || 0;
+    if (transparenteTotal(id)) return 0;
     const e = estados && estados[id];
-    if (!e || e.etapa !== 'dominado') return Infinity;
+    if (!e || e.etapa !== 'dominado') return presumidoEm(id, estados) ? PRESUMIDOS_EM : Infinity;
     return e.dominadoEm ? Date.parse(e.dominadoEm) || 0 : 0;
   }
 
@@ -1830,8 +1842,10 @@ window.Motor = (function () {
   function situacaoDaFrase(card, estados, arquivados) {
     const req = requeridas(card);
     const buraco = req.some(id => String(id)[0] === '+');
+    /* a transparente e a presumida não estreiam como card novo: não há o que
+       trazer para elas, e contá-las aqui prenderia a frase na lista de vista */
     const naoVistas = req.filter(id => String(id)[0] !== '+' &&
-      !(estados[id] && estados[id].vistas) && !arquivado(id, arquivados));
+      !(estados[id] && estados[id].vistas) && !arquivado(id, arquivados) && !conhecidaSemEstado(id, estados));
     const faltamDominar = req.filter(id => sabidaEm(id, estados, arquivados) === Infinity).length;
     return { buraco: buraco, naoVistas: naoVistas, faltamDominar: faltamDominar };
   }
@@ -2192,16 +2206,26 @@ window.Motor = (function () {
      respostas seguintes valem 1 quando certas — elas não dizem o que já se
      sabia, mas dizem em que nível está custando fixar. Tudo é puxado para
      0,5 enquanto há pouca evidência, para um acerto solto não decidir nada. */
-  function dominioPorNivel(cards, estados) {
+  /* Desde 09/10/2026 (PLANO.md, 7.1 a 7.4):
+     — «prior», opcional, é a taxa de cada nível medida no nivelamento
+       (extras.nivelamento.porNivel), e toma o lugar do 0,5 fixo naquele
+       nível: o sorteio dos inéditos já começa na altura certa. Sem ele, ou
+       no nível que ele não traz, vale o 0,5 de sempre;
+     — a transparente total não é evidência de nada e fica fora (a presumida
+       sem resposta já fica, porque não tem estado);
+     — a estreia do card desafio (est.desafio) não conta: é um gostinho de
+       dois níveis acima, e o erro dela não pode puxar o nível para baixo. */
+  function dominioPorNivel(cards, estados, prior) {
     const g = {};
     for (const n of NIVEIS) g[n] = { pontos: 0, respostas: 0 };
 
     for (const c of cards) {
       const e = estados[c.id];
-      if (!e || !e.vistas) continue;
+      if (!e || !e.vistas || !g[c.nivel]) continue;
+      if (transparenteTotal(c.id)) continue;
       const x = g[c.nivel];
 
-      if (e.primeiraCerta !== undefined) {
+      if (e.primeiraCerta !== undefined && !e.desafio) {
         x.respostas++;
         if (e.primeiraCerta) x.pontos += (e.conhecia === 'nao' ? 0.4 : 1);
       }
@@ -2214,7 +2238,8 @@ window.Motor = (function () {
     const K = 4, PRIOR = 0.5;
     const saida = {};
     for (const n of NIVEIS) {
-      saida[n] = (g[n].pontos + K * PRIOR) / (g[n].respostas + K);
+      const p = prior && typeof prior[n] === 'number' && isFinite(prior[n]) ? prior[n] : PRIOR;
+      saida[n] = (g[n].pontos + K * p) / (g[n].respostas + K);
     }
     return saida;
   }
@@ -2645,6 +2670,585 @@ window.Motor = (function () {
       .map(f => (/^[¿¡]/.test(f) ? '' : abre) + f + (/[.!?…]$/.test(f) ? '' : fecha));
   }
 
+  /* ════════════════ o começo do app sem tédio ════════════════
+     PLANO.md, seção 7 (decidido em 09/10/2026), e o manual, seção 19. Quatro
+     peças, aqui como funções puras ou de estado pequeno e serializável, para
+     as telas só chamarem:
+
+       7.1 a palavra transparente  — o build calcula, curso a curso, «transp»
+           ('total' | 'parecida') e põe no card do pacote; o motor só lê;
+       7.2 o dominado provisório   — o que o nivelamento presume fica em
+           extras.nivelamento.presumidos { id: voltaEmISO }, sem estado;
+       7.3 o nivelamento           — a escada de blocos e a dedução
+           (Motor.nivelamento);
+       7.4 o card desafio          — quem, quando e de que nível.
+
+     ── como o app entrega o que é de cada um ──
+     O motor já guarda o baralho da vez (usarBaralho). Do mesmo jeito, e sem
+     mexer na assinatura de nenhuma função que já existia, ele guarda:
+
+       usarTransparencias(cards)  o «transp» de cada card do curso — uma vez,
+                                  na abertura do curso;
+       usarExtras({ nivelamento, reativados })
+                                  o que é da pessoa e muda o jogo: os
+                                  presumidos (e o dia do nivelamento) e os
+                                  reativados («estudar mesmo assim», id → ISO).
+                                  O app chama de novo sempre que os extras
+                                  mudam (é a primeira coisa do conciliarFila).
+
+     Foi a opção menos invasiva: sabidaEm, liberadaEm, dominadosNoTotal,
+     situacaoDaFrase e dominioPorNivel são chamadas em dezenas de lugares com
+     (id, estados, arquivados), e um argumento a mais em cada uma espalharia
+     a mudança pelo app inteiro. Sem as duas chamadas tudo funciona como
+     antes — é o caso do build, do varrer-motor e das ferramentas. */
+
+  /* ── o tema ──
+     A primeira etiqueta que não é de classe nem de comportamento. É por ele
+     que o nivelamento acha os pontos cegos (um bloco = uma carta de cada
+     tema), e é ele que o build cobra de toda palavra. A lista é uma só para
+     o build e para o app: o build a lê daqui (Motor.TAGS_DE_CLASSE).
+
+     Os verbos que dão nome às etiquetas da conjugação («hacer», «be»… — em
+     fonte/tags.json, os que mapeiam para si mesmos nas duas línguas) também
+     não são tema. O build avisa quando aparece um novo fora desta lista. */
+  const TAGS_DE_CLASSE = new Set([
+    'substantivo', 'verbo', 'adjetivo', 'advérbio', 'gramática', 'pronomes', 'preposição',
+    'falso-amigo', 'gíria', 'expressão', 'provérbio', 'Espanha', 'formal', 'primeiros passos',
+    'conjugação', 'regular', 'irregular', 'phrasal verb', 'present perfect',
+    'presente', 'pretérito', 'pretérito perfeito', 'mais-que-perfeito', 'imperfeito', 'futuro',
+    'condicional', 'condicional composto', 'subjuntivo', 'imperativo', 'gerúndio'
+  ].concat((
+    'abrir agradecer andar caber caer comer conducir conocer contar dar decir doler dormir elegir ' +
+    'empezar encantar escribir estar gustar haber hablar hacer huir ir jugar leer llamar llover ' +
+    'morir oler oír pedir perder poder poner querer reír romper saber salir seguir sentarse sentir ' +
+    'ser tener traer venir ver vestirse vivir volver ' +
+    'arise ask awake be become begin bend bite bleed blow break breed bring build burn buy call ' +
+    'catch choose cling come creep cut deal dig do draw dream drink drive eat fall feed feel fight ' +
+    'find flee fly forbid forget forgive freeze get give go grind grow hang have hear hide hold ' +
+    'interview keep kneel know lay lead lean leap learn leave lend lie light like live lose make ' +
+    'mean meet mislead mistake misunderstand outgrow overcome oversee oversleep overtake paint pay ' +
+    'put rain read rewrite ride ring rise run say see seek sell send sew shake shine shoot shrink ' +
+    'sing sink sit sleep slide smell speak speed spell spend spin spit stand start steal stick ' +
+    'sting stink strike swear sweep swell swim swing take teach tear tell think throw travel ' +
+    'undergo understand undertake wait wake walk watch wear weave weep win wind withdraw ' +
+    'withstand work worry write').split(' ')));
+
+  /* O tema do card, ou null — a palavra sem tema cai no «geral» do plano, e
+     some da conta: não entra no banco do teste nem na dedução. */
+  function temaDe(card) {
+    const t = ((card && card.tags) || []).find(x => !TAGS_DE_CLASSE.has(x));
+    return t || null;
+  }
+
+  /* As etiquetas que tiram o card da dedução do nivelamento (falso amigo
+     presumido como sabido seria o pior erro possível), e as que escolhem o
+     card desafio. */
+  const TAGS_FORA_DA_DEDUCAO = ['falso-amigo', 'expressão', 'gíria', 'provérbio', 'conjugação'];
+  const TAGS_DO_DESAFIO = ['falso-amigo', 'expressão', 'gíria', 'provérbio'];
+  const TAG_PRIMEIROS_PASSOS = 'primeiros passos';
+  const temTag = (card, lista) => ((card && card.tags) || []).some(t => lista.indexOf(t) >= 0);
+
+  /* ── o que o app entregou ── */
+  let TRANSP = Object.create(null);       // id → 'total' | 'parecida', do pacote do curso
+  let PRESUMIDOS = Object.create(null);   // id → voltaEm ISO (extras.nivelamento.presumidos)
+  let PRESUMIDOS_EM = 0;                  // o dia do nivelamento, em ms (0 se não se sabe)
+  let REATIVADOS = Object.create(null);   // id → ISO: «estudar mesmo assim»
+
+  function usarTransparencias(cards) {
+    TRANSP = Object.create(null);
+    (cards || []).forEach(c => {
+      if (c && (c.transp === 'total' || c.transp === 'parecida')) TRANSP[c.id] = c.transp;
+    });
+  }
+
+  /* Aceita os extras como o app os guarda ({ nivelamento, reativados }) ou
+     os presumidos soltos ({ presumidos, reativados }). Sem nada, zera. */
+  function usarExtras(x) {
+    x = x || {};
+    const niv = (x.nivelamento && typeof x.nivelamento === 'object') ? x.nivelamento : {};
+    PRESUMIDOS = Object.assign(Object.create(null), x.presumidos || niv.presumidos || {});
+    PRESUMIDOS_EM = Date.parse(niv.feitoEm) || 0;
+    REATIVADOS = Object.assign(Object.create(null), x.reativados || {});
+  }
+
+  function reativado(id) { return !!REATIVADOS[id]; }
+
+  /* O grau do card NESTE curso, já com o «estudar mesmo assim»: o card
+     reativado volta a ser card comum. Aceita o card (lê o «transp» dele) ou
+     o id (lê o que o app entregou em usarTransparencias). */
+  function transparencia(cardOuId) {
+    const card = cardOuId && typeof cardOuId === 'object' ? cardOuId : null;
+    const id = card ? card.id : cardOuId;
+    if (reativado(id)) return null;
+    const g = (card && card.transp) || TRANSP[id];
+    return g === 'total' || g === 'parecida' ? g : null;
+  }
+
+  function transparenteTotal(id) { return !reativado(id) && TRANSP[id] === 'total'; }
+
+  /* A data de volta do card presumido que ainda não foi respondido, ou null.
+     Respondido (tem estado de verdade), ele é card como os outros; e a
+     transparente total não precisa de confirmação nenhuma. */
+  function presumidoEm(id, estados) {
+    const v = PRESUMIDOS[id];
+    if (!v || transparenteTotal(id)) return null;
+    const e = estados && estados[id];
+    if (e && e.vistas) return null;
+    return String(v);
+  }
+
+  /* Conta como sabida sem nunca ter sido respondida: não estreia como card
+     novo, e a frase que precisa dela não espera por ela. */
+  function conhecidaSemEstado(id, estados) {
+    return transparenteTotal(id) || !!presumidoEm(id, estados);
+  }
+
+  /* ── a estreia do card ──
+     estadoInicial(id) continua como sempre; este é o que o app usa quando
+     tem o card na mão. A transparente «parecida» pula a ida: reconhecer é de
+     graça, escrever é a lição, e ela estreia direto na volta
+     (inversa-multipla). */
+  function estadoInicialDo(card) {
+    const est = estadoInicial(card && card.id);
+    if (transparencia(card) === 'parecida') est.etapa = 'inversa-multipla';
+    return est;
+  }
+
+  /* ── o dominado provisório ──
+     Para a fila, o presumido sem estado é um dominado com data de volta: o
+     app o põe na fila dos dominados e o serve como revisão de dominado
+     (volta, escrita), com o espaçamento que os dominados já têm. Este é o
+     estado que ele mostra à fila — calculado, NUNCA gravado: o estado só
+     nasce de resposta de verdade (responderPresumido). */
+  const DEGRAU_DO_PRESUMIDO = DIAS_DOMINADO.indexOf(90);   // 4: o degrau de três meses
+
+  function estadoDoPresumido(id, estados) {
+    const volta = presumidoEm(id, estados);
+    if (!volta) return null;
+    return Object.assign(estadoInicial(id), { etapa: 'dominado', voltaEm: volta, presumido: true });
+  }
+
+  /* A resposta à revisão do presumido. Acertou: nasce o estado «dominado»
+     no degrau de três meses — revisoes = 4, então a próxima volta é em 90
+     dias (proximaVolta) e um erro lá na frente desce para um mês, como em
+     qualquer dominado. Errou: nasce o estado comum, do zero (multipla), com
+     esta resposta registrada como um erro normal, e o card segue o caminho
+     de todos. Devolve o estado novo, para o app guardar em progresso.cards. */
+  function responderPresumido(id, r) {
+    const est = estadoInicial(id);
+    if (r && r.acertou) {
+      est.etapa = 'dominado';
+      registrar(est, r);
+      est.revisoes = DEGRAU_DO_PRESUMIDO;
+      est.voltaEm = proximaVolta(est.revisoes, est.ultima);
+      est.dominadoEm = est.ultima;
+    } else {
+      registrar(est, Object.assign({}, r, { acertou: false }));
+      est.etapa = 'multipla';
+      est.revisoes = 0;
+      est.voltaEm = null;
+    }
+    return est;
+  }
+
+  /* A data da primeira volta do presumido: entre 7 e 60 dias depois do
+     nivelamento, espalhada por um hash de usuário + card — estável em
+     qualquer aparelho, para os presumidos não vencerem em lote. */
+  const PRESUMIDO_DIAS_MIN = 7, PRESUMIDO_DIAS_MAX = 60;
+
+  function hashDeTexto(s) {                 // FNV-1a de 32 bits
+    let h = 0x811c9dc5;
+    s = String(s);
+    for (let i = 0; i < s.length; i++) {
+      h ^= s.charCodeAt(i);
+      h = Math.imul(h, 0x01000193) >>> 0;
+    }
+    return h >>> 0;
+  }
+
+  function dataDoPresumido(uid, id, feitoEm) {
+    const base = feitoEm instanceof Date ? feitoEm.getTime()
+      : typeof feitoEm === 'number' ? feitoEm : Date.parse(feitoEm);
+    const t0 = isFinite(base) ? base : Date.now();
+    const dias = PRESUMIDO_DIAS_MIN +
+      hashDeTexto(String(uid) + '|' + String(id)) % (PRESUMIDO_DIAS_MAX - PRESUMIDO_DIAS_MIN + 1);
+    return new Date(t0 + dias * 864e5).toISOString();
+  }
+
+  /* ── o nivelamento (7.3) ──
+     O teste é um objeto simples e serializável — dá para guardar no meio e
+     retomar —, e o acaso dele também: um gerador com a semente dentro do
+     próprio objeto (opcoes.semente fixa o sorteio, para os testes).
+
+       const t = Motor.nivelamento.novo(cards, { comeco: 'pouco' });
+       let c;
+       while ((c = Motor.nivelamento.proximaCarta(t))) {
+         if (c.conferir) Motor.nivelamento.conferir(t, c.id, acertouAMultipla);
+         else Motor.nivelamento.responder(t, c.id, jaConheco);
+       }
+       const r = Motor.nivelamento.deduzir(t, cards, { uid, agora });
+
+     A escada: começa em A1 («um pouco») ou A2 («bastante»), pulando o nível
+     que o banco não tem. Bloco = 6 palavras do nível, cada uma de um tema
+     (rodízio pelos temas). 5 ou 6 conhecidas sobem; 2 ou menos param; 3 ou 4
+     pedem mais um bloco no mesmo nível, que sobe se as 12 somarem 9 ou mais.
+     Teto de 40 cartas. A conferência: 1 em cada 4 «Já conheço» vira na hora
+     uma múltipla escolha, e pelo menos uma por bloco — se o bloco acabar sem
+     nenhuma, uma das «Já conheço» dele é conferida antes de o bloco contar. */
+  const BLOCO_DO_TESTE = 6, TETO_DO_TESTE = 40, CONFERE_UM_EM = 4;
+  const FORCA_DO_NIVEL = 4, LIMIAR_PRESUMIR = 0.9;
+
+  /* O banco do teste: palavras com tema, sem transparente total e sem falso
+     amigo, por nível e por tema: { A1: { casa: [ids], … }, … }. */
+  function bancoDoTeste(cards) {
+    const banco = {};
+    (cards || []).forEach(c => {
+      if (!c || c.tipo !== 'palavra' || NIVEIS.indexOf(c.nivel) < 0) return;
+      if (transparencia(c) === 'total' || temTag(c, ['falso-amigo'])) return;
+      const tema = temaDe(c);
+      if (!tema) return;
+      const n = banco[c.nivel] || (banco[c.nivel] = {});
+      (n[tema] || (n[tema] = [])).push(c.id);
+    });
+    return banco;
+  }
+
+  /* mulberry32, com o estado no próprio teste */
+  function sortearNoTeste(teste) {
+    let t = (teste.semente = (teste.semente + 0x6D2B79F5) >>> 0);
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  }
+
+  function novoTeste(cards, opcoes) {
+    const o = opcoes || {};
+    const comeco = ['nunca', 'pouco', 'bastante'].indexOf(o.comeco) >= 0 ? o.comeco : 'pouco';
+    const banco = bancoDoTeste(cards);
+    const niveis = NIVEIS.filter(n => banco[n]);
+    const desde = NIVEIS.indexOf(comeco === 'bastante' ? 'A2' : 'A1');
+    const nivel = niveis.find(n => NIVEIS.indexOf(n) >= desde) || null;
+    return {
+      versao: 1, comeco: comeco, pulou: comeco === 'nunca',
+      semente: typeof o.semente === 'number' ? o.semente >>> 0 : Math.floor(Math.random() * 4294967296),
+      banco: banco, niveis: niveis, nivel: nivel,
+      bloco: null,                        // { nivel, ids, temas: { id: tema } }
+      noNivel: { blocos: 0, cartas: 0, conhecidas: 0 },
+      rodizio: {},                        // nivel → { temas: [...], i }
+      cartas: [],                         // { id, nivel, tema, resposta, conferida?, acertou? }
+      pendente: null,                     // id da carta que espera a conferência
+      fim: comeco === 'nunca' || !nivel
+    };
+  }
+
+  /* A carta conta como conhecida: «Já conheço», e não reprovada na
+     conferência. */
+  function cartaConhecida(c) {
+    return c.resposta === 'conheco' && !(c.conferida && c.acertou === false);
+  }
+
+  function montarBloco(teste) {
+    const n = teste.nivel;
+    const doNivel = (teste.banco && teste.banco[n]) || {};
+    let r = teste.rodizio[n];
+    if (!r) {
+      const temas = Object.keys(doNivel).sort();
+      for (let i = temas.length - 1; i > 0; i--) {
+        const j = Math.floor(sortearNoTeste(teste) * (i + 1));
+        const x = temas[i]; temas[i] = temas[j]; temas[j] = x;
+      }
+      r = teste.rodizio[n] = { temas: temas, i: 0 };
+    }
+    const usados = new Set(teste.cartas.map(c => c.id));
+    const tamanho = Math.min(BLOCO_DO_TESTE, TETO_DO_TESTE - teste.cartas.length);
+    const ids = [], temas = {};
+    /* uma volta pelo rodízio dá uma palavra de cada tema; só repete tema se
+       o nível tiver menos temas do que cartas no bloco */
+    while (ids.length < tamanho && r.temas.length) {
+      let achou = false;
+      for (let k = 0; k < r.temas.length && ids.length < tamanho; k++) {
+        const tema = r.temas[r.i];
+        r.i = (r.i + 1) % r.temas.length;
+        const livres = doNivel[tema].filter(id => !usados.has(id) && ids.indexOf(id) < 0);
+        if (!livres.length) continue;
+        const id = livres[Math.floor(sortearNoTeste(teste) * livres.length)];
+        ids.push(id);
+        temas[id] = tema;
+        achou = true;
+      }
+      if (!achou) break;
+    }
+    if (!ids.length) return null;
+    teste.bloco = { nivel: n, ids: ids, temas: temas };
+    return teste.bloco;
+  }
+
+  /* Fecha o bloco quando ele está todo respondido e conferido, e decide a
+     escada: sobe, outro bloco, ou para. */
+  function avancarTeste(teste) {
+    const b = teste.bloco;
+    if (teste.pendente || !b) return;
+    const doBloco = teste.cartas.filter(c => b.ids.indexOf(c.id) >= 0);
+    if (doBloco.length < b.ids.length) return;
+    const k = doBloco.filter(cartaConhecida).length, m = doBloco.length;
+    const x = teste.noNivel;
+    x.blocos++; x.cartas += m; x.conhecidas += k;
+    teste.bloco = null;
+    /* as contas valem para o bloco de 6; o último bloco, cortado pelo teto,
+       usa as mesmas proporções (e o teto o encerra de todo jeito) */
+    let decisao;
+    if (x.blocos === 1) {
+      decisao = k >= Math.ceil(m * 5 / 6) ? 'sobe' : k <= Math.floor(m * 2 / 6) ? 'para' : 'outro';
+    } else {
+      decisao = x.conhecidas >= x.cartas * 9 / 12 ? 'sobe' : 'para';
+    }
+    if (teste.cartas.length >= TETO_DO_TESTE) decisao = 'para';
+    if (decisao === 'sobe') {
+      const i = teste.niveis.indexOf(teste.nivel);
+      if (i + 1 < teste.niveis.length) {
+        teste.nivel = teste.niveis[i + 1];
+        teste.noNivel = { blocos: 0, cartas: 0, conhecidas: 0 };
+      } else teste.fim = true;
+    } else if (decisao === 'para') teste.fim = true;
+  }
+
+  /* A próxima carta, ou null no fim. { id, nivel, tema, conferir, feitas,
+     teto }: com «conferir», a tela mostra a múltipla escolha da palavra (os
+     distratores do card, na língua de quem estuda) e chama conferir(); sem,
+     os dois botões, e responder(). */
+  function proximaCarta(teste) {
+    if (!teste || teste.fim) return null;
+    if (teste.pendente) {
+      const c = teste.cartas.find(x => x.id === teste.pendente);
+      return { id: c.id, nivel: c.nivel, tema: c.tema, conferir: true,
+        feitas: teste.cartas.length, teto: TETO_DO_TESTE };
+    }
+    if (!teste.bloco && !montarBloco(teste)) { teste.fim = true; return null; }
+    const b = teste.bloco;
+    const feitas = new Set(teste.cartas.map(c => c.id));
+    const id = b.ids.find(x => !feitas.has(x));
+    return { id: id, nivel: b.nivel, tema: b.temas[id], conferir: false,
+      feitas: teste.cartas.length, teto: TETO_DO_TESTE };
+  }
+
+  /* «Já conheço» (conhece = true) ou «Quero aprender». Devolve
+     { conferir, id }: se é hora de conferir, e qual carta — quase sempre a
+     que acabou de ser respondida; no fim de um bloco sem conferência, outra
+     «Já conheço» dele. Carta fora da vez é ignorada. */
+  function responderNoTeste(teste, id, conhece) {
+    const vez = proximaCarta(teste);
+    if (!vez || vez.conferir || vez.id !== id) return { conferir: false, id: null, ignorada: true };
+    const carta = { id: id, nivel: vez.nivel, tema: vez.tema, resposta: conhece ? 'conheco' : 'aprender' };
+    teste.cartas.push(carta);
+    const b = teste.bloco;
+    const doBloco = teste.cartas.filter(c => b.ids.indexOf(c.id) >= 0);
+    const ultima = doBloco.length === b.ids.length;
+    const semConferencia = !doBloco.some(c => c.conferida);
+    if (conhece && (sortearNoTeste(teste) < 1 / CONFERE_UM_EM || (ultima && semConferencia))) {
+      teste.pendente = id;
+    } else if (ultima && semConferencia) {
+      const ja = doBloco.filter(c => c.resposta === 'conheco');
+      if (ja.length) teste.pendente = ja[Math.floor(sortearNoTeste(teste) * ja.length)].id;
+    }
+    if (teste.pendente) teste.cartas.find(c => c.id === teste.pendente).conferida = true;
+    avancarTeste(teste);
+    return { conferir: !!teste.pendente, id: teste.pendente || null };
+  }
+
+  /* O resultado da múltipla escolha da conferência. Errou: a palavra conta
+     como não conhecida. */
+  function conferirNoTeste(teste, id, acertou) {
+    if (!teste || teste.pendente !== id) return false;
+    const c = teste.cartas.find(x => x.id === id);
+    c.conferida = true;
+    c.acertou = !!acertou;
+    teste.pendente = null;
+    avancarTeste(teste);
+    return true;
+  }
+
+  /* ── a dedução, conservadora ──
+     Para cada nível testado, a taxa r = conhecidas ÷ cartas; para cada
+     célula nível × tema, p = (k + 4r) / (m + 4), com k conhecidas de m
+     cartas da célula; p × confiança ≥ 0,9 → presume as palavras da célula.
+     confiança = (acertos + 3) / (conferências + 3): otimista de propósito.
+     Com a régua (acertos + 1) / (conferências + 2) da primeira versão, a
+     célula só passava depois de umas oito conferências certas, e a dedução
+     não deduzia nada; agora a confiança é 1 enquanto ninguém erra, e uma
+     conferência errada em duas já a derruba para 0,8 — abaixo do limiar,
+     tudo volta a depender só do que a pessoa respondeu. Só nos níveis até o mais
+     alto testado; nunca falso-amigo, expressão, gíria, provérbio, conjugação
+     nem frase. A palavra respondida «Já conheço» e não reprovada é
+     presumida; a «Quero aprender» (e a reprovada) nunca é, mesmo numa célula
+     que passou. Se o teste passou do A2, as frases de primeiros passos
+     também são presumidas — todas, menos falso amigo: a etiqueta
+     «expressão» de «¡Buen provecho!» não a tira do kit de quem chega.
+
+     As taxas por nível (porNivel) são o prior de dominioPorNivel. Nível
+     abaixo do primeiro testado (o A1 de quem começou no A2) leva a taxa do
+     testado logo acima — é o que a dedução usa para ele também; nível acima
+     do mais alto testado leva a metade do nível de baixo, a cada degrau,
+     para o sorteio dos inéditos não pular para onde ninguém mediu nada.
+
+     opcoes: { uid, agora, estados, arquivados } — «agora» é o feitoEm, de
+     onde saem as datas; card que já tem estado ou está arquivado não é
+     presumido (é o caso do «refazer»). Devolve
+     { porNivel, confianca, presumidos: { id: voltaEmISO }, testados,
+       cartas: [{ id, resposta, conferida, acertou }] } — o que vai para
+     extras.nivelamento, junto com feitoEm, pulou e comeco, que são da tela. */
+  function deduzir(teste, cards, opcoes) {
+    const o = opcoes || {};
+    const agora = o.agora || new Date().toISOString();
+    const estados = o.estados || {}, arquivados = o.arquivados || {};
+    const cartas = (teste && teste.cartas) || [];
+    const conferidas = cartas.filter(c => c.conferida && typeof c.acertou === 'boolean');
+    const confianca = (conferidas.filter(c => c.acertou).length + 3) / (conferidas.length + 3);
+    const resumo = cartas.map(c => {
+      const x = { id: c.id, resposta: c.resposta };
+      if (c.conferida && typeof c.acertou === 'boolean') { x.conferida = true; x.acertou = c.acertou; }
+      return x;
+    });
+
+    const medida = {}, testados = [];
+    NIVEIS.forEach(n => {
+      const m = cartas.filter(c => c.nivel === n);
+      if (!m.length) return;
+      testados.push(n);
+      medida[n] = m.filter(cartaConhecida).length / m.length;
+    });
+    const presumidos = {};
+    if (!testados.length) {
+      return { porNivel: {}, confianca: confianca, presumidos: presumidos, testados: testados, cartas: resumo };
+    }
+    const iAlto = NIVEIS.indexOf(testados[testados.length - 1]);
+    const porNivel = {};
+    let acima = medida[testados[testados.length - 1]];
+    for (let i = iAlto; i >= 0; i--) {
+      if (medida[NIVEIS[i]] !== undefined) acima = medida[NIVEIS[i]];
+      porNivel[NIVEIS[i]] = acima;
+    }
+    for (let i = iAlto + 1; i < NIVEIS.length; i++) porNivel[NIVEIS[i]] = porNivel[NIVEIS[i - 1]] / 2;
+
+    const celulas = {};
+    cartas.forEach(c => {
+      const x = celulas[c.nivel + '|' + c.tema] || (celulas[c.nivel + '|' + c.tema] = { k: 0, m: 0 });
+      x.m++;
+      if (cartaConhecida(c)) x.k++;
+    });
+    const conhecidas = new Set(cartas.filter(cartaConhecida).map(c => c.id));
+    const recusadas = new Set(cartas.filter(c => !cartaConhecida(c)).map(c => c.id));
+    const livre = c => !(estados[c.id] && estados[c.id].vistas) && !arquivado(c.id, arquivados);
+
+    (cards || []).forEach(c => {
+      if (!c || c.tipo !== 'palavra') return;
+      const i = NIVEIS.indexOf(c.nivel);
+      if (i < 0 || i > iAlto) return;
+      if (temTag(c, TAGS_FORA_DA_DEDUCAO) || transparencia(c) === 'total') return;
+      if (!livre(c) || recusadas.has(c.id)) return;
+      const tema = temaDe(c);
+      if (!tema) return;
+      const x = celulas[c.nivel + '|' + tema] || { k: 0, m: 0 };
+      const p = (x.k + FORCA_DO_NIVEL * porNivel[c.nivel]) / (x.m + FORCA_DO_NIVEL);
+      /* o épsilon é da aritmética, não da régua: 0,9 tem de passar */
+      if (conhecidas.has(c.id) || p * confianca >= LIMIAR_PRESUMIR - 1e-9) {
+        presumidos[c.id] = dataDoPresumido(o.uid, c.id, agora);
+      }
+    });
+    if (iAlto > NIVEIS.indexOf('A2')) {
+      (cards || []).forEach(c => {
+        /* as de primeiros passos são o kit de quem chega (manual, 17.4.1):
+           entram inteiras, mesmo a que leva «expressão» («¡Buen provecho!»);
+           só o falso amigo continua fora */
+        if (c && c.tipo === 'frase' && temTag(c, [TAG_PRIMEIROS_PASSOS]) && !temTag(c, ['falso-amigo']) && livre(c)) {
+          presumidos[c.id] = dataDoPresumido(o.uid, c.id, agora);
+        }
+      });
+    }
+    return { porNivel: porNivel, confianca: confianca, presumidos: presumidos, testados: testados, cartas: resumo };
+  }
+
+  /* O N da tela de resultado: «Você já conhece cerca de N palavras deste
+     baralho» — as transparentes totais mais as palavras presumidas. Sem
+     «presumidos», os que o app entregou em usarExtras. */
+  function palavrasConhecidas(cards, presumidos) {
+    const pres = presumidos || PRESUMIDOS;
+    let n = 0;
+    (cards || []).forEach(c => {
+      if (c && c.tipo === 'palavra' && (transparencia(c) === 'total' || pres[c.id])) n++;
+    });
+    return n;
+  }
+
+  /* ── o card desafio (7.4) ──
+     Um gostinho do que vem pela frente, sem desanimar: um card inédito com
+     falso-amigo, expressão, gíria ou provérbio, DOIS níveis acima do nível
+     atual (o mais alto com domínio ≥ o alvo de pesosDeNivel, já com o prior
+     do nivelamento; ou contexto.nivel; ou A1), no máximo C1. Sem card nesse
+     nível, o mais perto abaixo dele, até um acima do atual.
+
+     O ritmo é do app, que guarda os contadores e os passa aqui:
+       contexto = { agora, respostas (no curso), desafios (quantos já),
+                    ultimoDesafio (ISO), inicio (ISO: o começo do curso),
+                    mostrados (ids já oferecidos), arquivados, prior, nivel,
+                    aleatorio (função, para os testes) }
+     O primeiro depois de 15 respostas; no máximo um por dia (no fuso do
+     aparelho); só nas duas primeiras semanas do curso; no máximo 10.
+
+     Devolve null ou { card, previa, nivel }. «previa» é a frase ainda presa:
+     aparece uma vez em múltipla escolha; acertou, entra no jogo; errou,
+     continua presa. A estreia de um desafio leva est.desafio = true
+     (marcarDesafio), e dominioPorNivel a ignora. */
+  const DESAFIO_DEPOIS_DE = 15, DESAFIOS_NO_MAXIMO = 10, DIAS_DE_DESAFIO = 14, DESAFIO_ACIMA = 2;
+
+  function nivelAtual(cards, estados, contexto) {
+    const c = contexto || {};
+    const dom = dominioPorNivel(cards || [], estados || {}, c.prior);
+    let i = -1;
+    NIVEIS.forEach((n, k) => { if (dom[n] >= ALVO) i = k; });
+    if (i < 0 && c.nivel) i = NIVEIS.indexOf(c.nivel);
+    return NIVEIS[Math.max(0, i)];
+  }
+
+  function escolherDesafio(cards, estados, contexto) {
+    const c = contexto || {};
+    estados = estados || {};
+    const agora = c.agora !== undefined ? new Date(c.agora).getTime() : Date.now();
+    if ((c.respostas || 0) < DESAFIO_DEPOIS_DE) return null;
+    if ((c.desafios || 0) >= DESAFIOS_NO_MAXIMO) return null;
+    if (c.ultimoDesafio && diaLocal(c.ultimoDesafio) === diaLocal(agora)) return null;
+    const inicio = Date.parse(c.inicio);
+    if (isFinite(inicio) && agora - inicio > DIAS_DE_DESAFIO * 864e5) return null;
+
+    const arquivados = c.arquivados || {};
+    const mostrados = new Set(Array.isArray(c.mostrados) ? c.mostrados : Object.keys(c.mostrados || {}));
+    const atual = NIVEIS.indexOf(nivelAtual(cards, estados, c));
+    const alvo = Math.min(NIVEIS.indexOf('C1'), atual + DESAFIO_ACIMA);
+    const grupo = (cards || []).filter(x => x && temTag(x, TAGS_DO_DESAFIO) &&
+      !(estados[x.id] && estados[x.id].vistas) && !arquivado(x.id, arquivados) &&
+      !conhecidaSemEstado(x.id, estados) && transparencia(x) !== 'total' && !mostrados.has(x.id));
+    let doNivel = [];
+    for (let i = alvo; i > atual && !doNivel.length; i--) doNivel = grupo.filter(x => x.nivel === NIVEIS[i]);
+    if (!doNivel.length) return null;
+    const sorte = typeof c.aleatorio === 'function' ? c.aleatorio : Math.random;
+    const card = doNivel[Math.min(doNivel.length - 1, Math.floor(sorte() * doNivel.length))];
+    const previa = card.tipo === 'frase' && !liberado(card, estados, agora, arquivados);
+    return { card: card, previa: previa, nivel: card.nivel };
+  }
+
+  /* A estreia foi um desafio: o app chama logo depois de criar o estado. */
+  function marcarDesafio(est) {
+    if (est) est.desafio = true;
+    return est;
+  }
+
+  const nivelamento = {
+    banco: bancoDoTeste, novo: novoTeste, proximaCarta: proximaCarta,
+    responder: responderNoTeste, conferir: conferirNoTeste, deduzir: deduzir,
+    conhecida: cartaConhecida,
+    BLOCO: BLOCO_DO_TESTE, TETO: TETO_DO_TESTE, CONFERE_UM_EM: CONFERE_UM_EM,
+    FORCA_DO_NIVEL: FORCA_DO_NIVEL, LIMIAR: LIMIAR_PRESUMIR
+  };
+
   return {
     NIVEIS, ROTULO_NIVEL,
     normalizar, conferir,
@@ -2669,6 +3273,11 @@ window.Motor = (function () {
     situacaoDaFrase, atualizarEmVista, palavrasEmVista, FRASES_EM_VISTA,
     montarFila, alternativas, distratoresDinamicos, distratoresDaLingua, embaralhar,
     dominioPorNivel, pesosDeNivel, ordenarNovos,
-    respostasAceitas
+    respostasAceitas,
+    /* o começo do app (PLANO.md, seção 7) */
+    TAGS_DE_CLASSE, temaDe, usarTransparencias, usarExtras, transparencia, transparenteTotal,
+    presumidoEm, conhecidaSemEstado, estadoInicialDo, estadoDoPresumido, responderPresumido,
+    dataDoPresumido, DEGRAU_DO_PRESUMIDO, nivelamento, palavrasConhecidas,
+    escolherDesafio, marcarDesafio, nivelAtual
   };
 })();

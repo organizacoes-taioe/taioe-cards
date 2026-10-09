@@ -59,6 +59,10 @@ window.TaioeCardsApp = function (ctx) {
   const CARDS = FONTE.map(c => Motor.formaDoCard(c, 0));
   const PORID = {};
   CARDS.forEach(c => { PORID[c.id] = c; });
+  /* As palavras transparentes deste curso (PLANO.md, 7.1): o build pôs
+     «transp» nos cards do pacote, e o motor passa a saber que a «total» conta
+     como dominada e não entra em jogo, e que a «parecida» estreia na volta. */
+  Motor.usarTransparencias(CARDS);
 
   /* ── os textos ──
      Desde outubro de 2026 o texto não tem card: é a recompensa (manual, seção
@@ -219,9 +223,22 @@ window.TaioeCardsApp = function (ctx) {
        frase em todos, sem nada de novo trafegar no progresso.json. */
     p.arquivados = (p.arquivados && typeof p.arquivados === 'object') ? p.arquivados : {};
     p.emVista = Array.isArray(p.emVista) ? p.emVista : [];
+    /* ── o começo do app (PLANO.md, seção 7) ──
+       Três extras novos, que viajam com os outros (ver extras(), no fim):
+       «nivelamento» (o resultado do teste, com os presumidos), «reativados»
+       (id → ISO: a transparente que a pessoa quis estudar mesmo assim) e
+       «dicasVistas» (chave → ISO). O motor precisa dos dois primeiros, e é
+       aqui que ele os recebe — toda mudança de extras passa por aqui. */
+    const objeto = x => (x && typeof x === 'object' && !Array.isArray(x)) ? x : {};
+    p.reativados = objeto(p.reativados);
+    p.dicasVistas = objeto(p.dicasVistas);
+    if (!p.nivelamento || typeof p.nivelamento !== 'object') delete p.nivelamento;
+    Motor.usarExtras({ nivelamento: p.nivelamento, reativados: p.reativados });
     const solto = id => Motor.liberado(PORID[id], p.cards, null, p.arquivados);
-    /* card arquivado sai de todas as filas — e volta a elas se for desarquivado */
-    const fora = id => Motor.arquivado(id, p.arquivados);
+    /* card arquivado sai de todas as filas — e volta a elas se for desarquivado.
+       A transparente total também: conta como dominada e nunca é servida
+       (volta se for reativada). */
+    const fora = id => Motor.arquivado(id, p.arquivados) || Motor.transparenteTotal(id);
 
     /* A ordem que já existia é a dica de quem vem primeiro. «p.fila» é o
        formato antigo, de fila única: quem vinha de lá se distribui pelas
@@ -234,7 +251,11 @@ window.TaioeCardsApp = function (ctx) {
 
     const filas = { esPt: [], ptEs: [], dominados: [] };
     CARDS.forEach(c => {
-      if (visto(c.id) && !fora(c.id)) filas[Motor.filaDe(p.cards[c.id])].push(c.id);
+      if (fora(c.id)) return;
+      if (visto(c.id)) filas[Motor.filaDe(p.cards[c.id])].push(c.id);
+      /* o presumido pelo nivelamento, ainda sem estado, mora com os
+         dominados e volta na data dele (PLANO.md, 7.2) */
+      else if (Motor.presumidoEm(c.id, p.cards)) filas.dominados.push(c.id);
     });
     for (const k in filas) filas[k].sort((a, b) => lugar(a) - lugar(b));
     p.filaEsPt = filas.esPt;
@@ -244,9 +265,10 @@ window.TaioeCardsApp = function (ctx) {
 
     const antes = Array.isArray(p.ineditos) ? p.ineditos : [];
     const conhecidos = new Set(antes);
-    p.ineditos = antes.filter(id => PORID[id] && !visto(id) && !fora(id) && solto(id))
-      .concat(CARDS.filter(c => !conhecidos.has(c.id) && !visto(c.id) && !fora(c.id) && solto(c.id))
-                   .map(c => c.id));
+    /* nem a transparente total nem o presumido estreiam como card novo */
+    const novo = id => !visto(id) && !fora(id) && !Motor.conhecidaSemEstado(id, p.cards) && solto(id);
+    p.ineditos = antes.filter(id => PORID[id] && novo(id))
+      .concat(CARDS.filter(c => !conhecidos.has(c.id) && novo(c.id)).map(c => c.id));
 
     delete p.fila;          // formato antigo, de fila única
     delete p.desdeInedito;  // a contagem regressiva deu lugar ao sorteio
@@ -420,7 +442,10 @@ window.TaioeCardsApp = function (ctx) {
     const frescas = presas.filter(id => agora - quando(id) < 864e5).slice(0, FRESCAS_NA_FRENTE);
     const antigas = presas.filter(id => frescas.indexOf(id) < 0);
 
-    const pesos = Motor.pesosDeNivel(Motor.dominioPorNivel(CARDS, p.cards));
+    /* as taxas do nivelamento, quando houver, são o ponto de partida de cada
+       nível (o prior de Motor.dominioPorNivel) */
+    const pesos = Motor.pesosDeNivel(Motor.dominioPorNivel(CARDS, p.cards,
+      p.nivelamento && p.nivelamento.porNivel));
     p.emVista = Motor.atualizarEmVista(p.emVista, CARDS, PORID, p.cards, p.arquivados || {}, pesos);
     const naFila = new Set(resto);
     let pedidas = Motor.palavrasEmVista(p.emVista, PORID, p.cards, p.arquivados || {})
@@ -494,6 +519,13 @@ window.TaioeCardsApp = function (ctx) {
 
   function estadoDe(id) {
     return progresso.cards[id] || null;
+  }
+
+  /* O estado que a fila enxerga: o de verdade, ou — para o presumido pelo
+     nivelamento que ainda não foi respondido — o dominado calculado pelo
+     motor, com a data de volta dele. Nunca é gravado (PLANO.md, 7.2). */
+  function estadoParaFila(id) {
+    return progresso.cards[id] || Motor.estadoDoPresumido(id, progresso.cards) || null;
   }
 
   /* ═══════════════ telas ═══════════════ */
@@ -574,7 +606,7 @@ window.TaioeCardsApp = function (ctx) {
 
   function tirarProximoId() {
     const id = escolherProximoId();
-    const e = id && progresso.cards[id];
+    const e = id && estadoParaFila(id);
     desdeDominado = e && e.etapa === 'dominado' ? 0 : desdeDominado + 1;
     return id;
   }
@@ -604,7 +636,7 @@ window.TaioeCardsApp = function (ctx) {
     const agora = new Date().toISOString();
     const respostas = progresso.totais.respostas;
     const vencidos = progresso.dominados.filter(id =>
-      progresso.cards[id] && !Motor.esperando(progresso.cards[id], agora)).length;
+      estadoParaFila(id) && !Motor.esperando(estadoParaFila(id), agora)).length;
     /* Só concorrem os cards que já esperaram o intervalo mínimo (ver
        Motor.podeVoltar). Fila sem nenhum deles conta como vazia: aí o card
        novo vem mesmo que o teto o vetasse. */
@@ -685,10 +717,10 @@ window.TaioeCardsApp = function (ctx) {
   function dominadoMaisProximo(agora) {
     let melhor = -1;
     progresso.dominados.forEach((id, i) => {
-      const e = progresso.cards[id];
+      const e = estadoParaFila(id);
       if (!e) return;
       if (agora && Motor.esperando(e, agora)) return;
-      const atual = melhor >= 0 ? progresso.cards[progresso.dominados[melhor]] : null;
+      const atual = melhor >= 0 ? estadoParaFila(progresso.dominados[melhor]) : null;
       if (!atual || String(e.voltaEm) < String(atual.voltaEm)) melhor = i;
     });
     return melhor >= 0 ? melhor : null;
@@ -774,7 +806,9 @@ window.TaioeCardsApp = function (ctx) {
     cardAtual = Motor.formaDoCard(bruto, generoAtual);
     outraForma = Motor.temVariante(bruto) ? Motor.formaDoCard(bruto, 1 - generoAtual) : null;
 
-    const est = estadoDe(id);
+    /* Sem estado, a fase é a da estreia: a «parecida» estreia na volta
+       (Motor.estadoInicialDo); o presumido aparece como dominado. */
+    const est = estadoParaFila(id) || Motor.estadoInicialDo(PORID[id] || { id: id });
     const fase = Motor.faseDe(est);
     modoAtual = fase.modo;
     direcaoAtual = fase.direcao;
@@ -797,7 +831,7 @@ window.TaioeCardsApp = function (ctx) {
     el['meta-origem'].classList.add('oculto');
     /* o «já conheço» chama atenção só na estreia do card; o texto diz o que
        a pessoa está afirmando (pedido do Gere, 07/10/2026) */
-    const estreando = !estadoDe(id) || !estadoDe(id).vistas;
+    const estreando = (!estadoDe(id) || !estadoDe(id).vistas) && !Motor.presumidoEm(id, progresso.cards);
     el['btn-arquivar'].classList.toggle('evidente', estreando);
     el['btn-arquivar'].textContent = t(cardAtual.tipo === 'palavra' ? 'card.jaConhecoPalavra' : 'card.jaConhecoFrase');
     /* O nível vive na aba do fichário e fica à mostra o tempo todo: saber que
@@ -1442,17 +1476,29 @@ window.TaioeCardsApp = function (ctx) {
     /* o relógio das filas antes desta resposta: é o mesmo valor que vira
        naFila.desde e estreouNa, e o que a resposta leva para o servidor */
     const relogioAntes = progresso.totais.respostas;
-    const est = progresso.cards[id] || (progresso.cards[id] = Motor.estadoInicial(id));
+    /* O presumido pelo nivelamento não tem estado: a resposta dele é a
+       revisão de um dominado, e é ela que faz o estado nascer — dominado no
+       degrau de três meses, se acertou; do zero, se errou
+       (Motor.responderPresumido; PLANO.md, 7.2). O card novo nasce pelo
+       Motor.estadoInicialDo, que faz a transparente «parecida» estrear na
+       volta. */
+    const presumido = !progresso.cards[id] && !!Motor.presumidoEm(id, progresso.cards);
+    let est = progresso.cards[id] || (presumido ? Motor.estadoDoPresumido(id, progresso.cards)
+      : (progresso.cards[id] = Motor.estadoInicialDo(PORID[id] || { id: id })));
     const etapaAntes = est.etapa;
     const degrauAntes = Math.min(est.revisoes || 0, 5);
     /* a resposta em que o card estreou: é dela que sai a conta do piso e do
-       teto de card novo (ver respostasDesdeNovo) */
-    if (!est.vistas) est.estreouNa = relogioAntes;
-    Motor.registrar(est, r);
+       teto de card novo (ver respostasDesdeNovo). O presumido não é card
+       novo, e não conta. */
+    if (!est.vistas && !presumido) est.estreouNa = relogioAntes;
+    if (presumido) est = progresso.cards[id] = Motor.responderPresumido(id, r);
+    else Motor.registrar(est, r);
     /* Para o painel: o dia, a hora e o tempo desta resposta, e — se era a
-       revisão de um dominado — se a memória aguentou a espera daquele degrau. */
+       revisão de um dominado — se a memória aguentou a espera daquele degrau.
+       A confirmação do presumido fica fora da retenção: ela não mede espera
+       nenhuma de quem já tinha estudado o card. */
     Motor.anotarDiario(progresso.diario, r, est.ultima);
-    if (etapaAntes === 'dominado') {
+    if (etapaAntes === 'dominado' && !presumido) {
       progresso.retencao[degrauAntes][0]++;
       if (r.acertou) progresso.retencao[degrauAntes][1]++;
     }
@@ -1496,7 +1542,9 @@ window.TaioeCardsApp = function (ctx) {
       relogio: relogioAntes,
       vista: est.vistas,
       distancia: guardado.distancia,
-      degrau: etapaAntes === 'dominado' ? degrauAntes : null,
+      /* a confirmação do presumido vai como etapa_antes «dominado» e degrau
+         nulo: é por aí que a calibragem a separa da revisão de verdade */
+      degrau: etapaAntes === 'dominado' && !presumido ? degrauAntes : null,
       resposta: r.resposta ? Motor.cortar(r.resposta, 120) : null,
       dinamicos: r.modo === 'multipla' && dinamicosAtuais.length ? dinamicosAtuais.slice(0, 4) : null
     };
@@ -2537,7 +2585,7 @@ window.TaioeCardsApp = function (ctx) {
   function irParaInicio() {
     if (cardAtual && !respostaPendente) {
       const id = cardAtual.id;
-      const est = progresso.cards[id];
+      const est = estadoParaFila(id);
       const baralho = !est ? progresso.ineditos
         : Motor.filaDe(est) === 'esPt' ? progresso.filaEsPt
         : Motor.filaDe(est) === 'ptEs' ? progresso.filaPtEs
@@ -2900,17 +2948,36 @@ window.TaioeCardsApp = function (ctx) {
     progresso: () => progresso,
     aoMudar: () => { conciliarFila(progresso); salvarProgresso(); atualizarPlacar(); },
     retrato: () => (progresso.serie && progresso.serie.length ? progresso.serie[progresso.serie.length - 1] : null),
-    extras: () => ({
-      arquivados: progresso.arquivados || {},
-      emVista: progresso.emVista || [],
-      textos: { emVista: (progresso.textos || textosVazio()).emVista, lidos: (progresso.textos || textosVazio()).lidos }
-    }),
+    extras: () => {
+      const x = {
+        arquivados: progresso.arquivados || {},
+        emVista: progresso.emVista || [],
+        textos: { emVista: (progresso.textos || textosVazio()).emVista, lidos: (progresso.textos || textosVazio()).lidos }
+      };
+      /* Os extras do começo do app (PLANO.md, 7) só viajam quando existem.
+         Vazios a mais mudariam a assinatura dos extras de todo mundo e os
+         mandariam de novo sem motivo — e o banco só passa a guardá-los com a
+         RPC nova (gravar_extras e carregar_curso, no taioe-infra). */
+      if (progresso.nivelamento) x.nivelamento = progresso.nivelamento;
+      if (Object.keys(progresso.reativados || {}).length) x.reativados = progresso.reativados;
+      if (Object.keys(progresso.dicasVistas || {}).length) x.dicasVistas = progresso.dicasVistas;
+      return x;
+    },
     aplicarExtras: x => {
       x = x || {};
       progresso.arquivados = x.arquivados || {};
       progresso.emVista = Array.isArray(x.emVista) ? x.emVista : [];
       const t = x.textos || {};
       progresso.textos = { emVista: Object.assign({ poema: null, prosa: null }, t.emVista || {}), lidos: t.lidos || {} };
+      /* Os do começo do app: o servidor que ainda não os guarda devolve os
+         extras sem eles, e a ausência não apaga o que este aparelho tem. Quem
+         chega com o campo (mesclado por mesclarExtras, ou do servidor) manda. */
+      if (x.nivelamento !== undefined) {
+        if (x.nivelamento && typeof x.nivelamento === 'object') progresso.nivelamento = x.nivelamento;
+        else delete progresso.nivelamento;
+      }
+      if (x.reativados !== undefined) progresso.reativados = x.reativados || {};
+      if (x.dicasVistas !== undefined) progresso.dicasVistas = x.dicasVistas || {};
     },
     estado: statusSync,
     t: t, local: LOCAL

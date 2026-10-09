@@ -39,6 +39,10 @@ if (!Motor || typeof Motor.respostasAceitas !== 'function') {
   process.exit(1);
 }
 
+/* A regra das palavras transparentes (PLANO.md, 7.1) mora em
+   fonte/transparencia.js, e o relatório fonte/transparentes.js usa a mesma. */
+const Transp = require('./transparencia');
+
 /* ── três baralhos, uma pasta cada ──
    fonte/cards/es, /en, /pt: a pasta diz que língua aquele baralho ENSINA, e é
    ela que decide qual campo do card é a pergunta e quais são as respostas. O
@@ -335,6 +339,9 @@ for (const bruto of cards) {
   if (ids.has(bruto.id)) erros.push('id repetido: ' + bruto.id + ' (' + bruto[L.texto] + ')');
   ids.add(bruto.id);
   checarVariantes(bruto, bruto.id + ' (' + bruto[L.texto] + ')');
+  /* o campo que corrige a regra da transparência: públicos do baralho,
+     graus que existem, só em palavra */
+  Transp.errosDoCampo(bruto, audiencias, bruto.id + ' (' + bruto[L.texto] + ')').forEach(e => erros.push(e));
 
   /* Card comum devolve uma forma só, e o laço roda uma vez. */
   const formas = Motor.formasDoCard(bruto);
@@ -693,6 +700,62 @@ for (const b of baralhos) {
   if (b.pendentesDeTexto) avisos.push('[' + b.idioma + '] ' + b.pendentesDeTexto + ' palavra(s) de texto ainda sem card');
 }
 
+/* ── as transparentes, curso a curso (PLANO.md, 7.1 e 7.3) ──
+   O grau é do curso (língua ensinada × público): «la pared» é transparente
+   para quem fala português e não para quem fala inglês. Sai aqui, antes das
+   estatísticas, para elas contarem, e vai para o pacote de cada curso lá
+   embaixo. Junto, os dois avisos que o começo do app pede de quem escreve:
+   a palavra sem tema (o nivelamento não a acha) e o banco do teste curto
+   (menos de 6 temas com 3 palavras em algum nível de A1 a B2). Um aviso por
+   baralho ou por curso, não um por card. */
+const TRANSPARENTES = {};   // curso → Map(id → 'total' | 'parecida')
+const TEMAS_DO_BANCO = 6, PALAVRAS_POR_TEMA = 3;
+for (const { idioma, cards } of baralhos) {
+  const L = CAMPOS_DA_LINGUA[idioma];
+  const palavras = cards.filter(c => c.tipo === 'palavra');
+  const semTema = palavras.filter(c => !Motor.temaDe(c));
+  if (semTema.length) {
+    const mostra = 12;
+    avisos.push('[' + idioma + '] ' + semTema.length + ' palavra(s) sem tema (só classe ou comportamento; ' +
+      'o nivelamento não as acha): ' + semTema.slice(0, mostra).map(c => c.id + ' (' + c[L.texto] + ')').join(', ') +
+      (semTema.length > mostra ? ', …' : ''));
+  }
+  const niveisDoBaralho = ['A1', 'A2', 'B1', 'B2'].filter(n => palavras.some(c => c.nivel === n));
+  for (const a of audienciasDe(idioma)) {
+    const curso = idioma + '-' + a;
+    const m = new Map();
+    cards.forEach(c => { const g = Transp.grau(c, idioma, a); if (g) m.set(c.id, g); });
+    TRANSPARENTES[curso] = m;
+    const banco = Motor.nivelamento.banco(palavras.map(c =>
+      ({ id: c.id, tipo: c.tipo, nivel: c.nivel, tags: c.tags, transp: m.get(c.id) })));
+    const curtos = niveisDoBaralho.map(n => {
+      const temas = Object.values(banco[n] || {}).filter(ids => ids.length >= PALAVRAS_POR_TEMA).length;
+      return temas < TEMAS_DO_BANCO ? n + ' tem ' + temas : null;
+    }).filter(Boolean);
+    if (curtos.length) {
+      avisos.push('[' + curso + '] banco do nivelamento curto — pede ' + TEMAS_DO_BANCO + ' temas com ' +
+        PALAVRAS_POR_TEMA + '+ palavras por nível: ' + curtos.join(', '));
+    }
+  }
+}
+/* Os verbos que dão nome às etiquetas da conjugação mapeiam para si mesmos
+   em tags.json, e não são tema; o motor os lista em TAGS_DE_CLASSE. Etiqueta
+   nova desse jeito fora da lista viraria tema sem ninguém ver. */
+if (TAGS_JSON_PARA_TEMA()) {
+  const fora = Object.keys(TAGS_JSON_PARA_TEMA()).filter(k => {
+    const x = TAGS_JSON_PARA_TEMA()[k];
+    return x && x.en === k && x.es === k && !Motor.TAGS_DE_CLASSE.has(k);
+  });
+  if (fora.length) {
+    avisos.push('etiqueta(s) que parecem nome de verbo (iguais a si mesmas em tags.json) e não estão em ' +
+      'TAGS_DE_CLASSE do motor — viram tema: ' + fora.join(', '));
+  }
+}
+function TAGS_JSON_PARA_TEMA() {
+  const arq = path.join(__dirname, 'tags.json');
+  return fs.existsSync(arq) ? JSON.parse(fs.readFileSync(arq, 'utf8')) : null;
+}
+
 /* ── estatísticas, um bloco por baralho ── */
 for (const { idioma, cards } of baralhos) {
   const L = CAMPOS_DA_LINGUA[idioma];
@@ -721,6 +784,17 @@ for (const { idioma, cards } of baralhos) {
     const feitos = cards.filter(c => typeof c[campo] === 'string' && c[campo].trim()).length;
     console.log('  em ' + NOME_DO_IDIOMA[a].padEnd(12) + ' ' + feitos + ' de ' + cards.length +
       (feitos === cards.length ? '  ✓' : '  (faltam ' + (cards.length - feitos) + ')'));
+  }
+
+  /* as transparentes de cada curso (relatório: node fonte/transparentes.js <curso>) */
+  const nPalavras = cards.filter(c => c.tipo === 'palavra').length;
+  const pct = n => nPalavras ? Math.round(100 * n / nPalavras) + '%' : '—';
+  for (const a of audienciasDe(idioma)) {
+    const m = TRANSPARENTES[idioma + '-' + a] || new Map();
+    const tot = [...m.values()].filter(g => g === 'total').length;
+    const par = [...m.values()].filter(g => g === 'parecida').length;
+    console.log('  transparentes ' + (idioma + '-' + a) + ' ' + tot + ' total (' + pct(tot) + '), ' +
+      par + ' parecida(s) (' + pct(par) + ') de ' + nPalavras + ' palavras');
   }
 }
 
@@ -820,7 +894,17 @@ for (const { idioma, cards } of baralhos) {
       const formas = CAMPOS_DA_LINGUA[idioma].formas, daAudiencia = campoDasFormas(idioma, audiencia);
       if (c[daAudiencia]) limpo[formas] = c[daAudiencia];
       IDIOMAS.forEach(l => { if (l !== idioma) delete limpo[formas + sufixo(l)]; });
-      limpo.v = hash8(JSON.stringify(c));
+      /* A versão do card não vê o campo «transparencia»: corrigir a regra
+         da transparência não muda o que o card pergunta nem o que ele aceita,
+         e não deve mudar a versão que vai em cada resposta. */
+      const semCampo = Object.assign({}, c);
+      delete semCampo.transparencia;
+      limpo.v = hash8(JSON.stringify(semCampo));
+      /* O grau da transparência neste curso (PLANO.md, 7.1), depois do «v»:
+         ele é do curso, não do card, e não muda a versão. Só quando há grau. */
+      delete limpo.transparencia;
+      const grau = (TRANSPARENTES[curso] || new Map()).get(c.id);
+      if (grau) limpo.transp = grau;
       return limpo;
     });
     const leva = hash8(doApp.map(c => c.id + ':' + c.v).join('\n'));

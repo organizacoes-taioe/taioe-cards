@@ -30,3 +30,5 @@ jobs:
           node fonte/build.js
           git status --porcelain
           test -z "$(git status --porcelain)"
+      - name: "O começo do app: transparência, presumidos, nivelamento"
+        run: node fonte/testar-comeco.js

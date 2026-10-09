@@ -552,7 +552,7 @@ Na primeira entrada num curso (sem `extras.nivelamento` e sem nenhum estado).
 5. **Conferência embutida**: em 1 de cada 4 «Já conheço» (e pelo menos uma por
    bloco), a carta vira na hora uma múltipla escolha com os distratores do
    card na língua de quem estuda. Errou: a palavra conta como não conhecida.
-   `confianca = (acertos + 1) / (conferências + 2)`.
+   `confianca = (acertos + 3) / (conferências + 3)` — otimista: é 1 enquanto ninguém erra, e uma conferência errada em duas já a põe abaixo do limiar (a primeira versão, `(acertos + 1) / (conferências + 2)`, exigia umas oito conferências certas e não deduzia nada).
 6. **Dedução, conservadora**: para cada nível testado, a taxa do nível
    `r` = conhecidas ÷ cartas; para cada célula nível × tema,
    `p = (k + 4r) / (m + 4)` (k conhecidas de m cartas da célula); `p × confianca`
@@ -647,7 +647,87 @@ Está também no manual (seção 19), que é onde quem escreve leva lê:
 | etapa | estado |
 |---|---|
 | especificação (esta seção) | **feito** (09/10) |
-| transparência | — |
-| presumidos, prior, desafio no motor | — |
+| transparência | **feito** (09/10) |
+| presumidos, prior, desafio no motor | **feito** (09/10) |
 | telas e dicas | — |
 | banco (extras novos) e teste no navegador | — (local) |
+
+### 7.8 Como ficou o código
+
+Feito em 09/10 o que não é tela: a regra no build, a lógica no motor, e o
+mínimo de app para o jogo já obedecer. É o contrato das telas.
+
+**Build.** A regra da 7.1 mora em `fonte/transparencia.js` (artigos e gêneros
+de `es`, `pt` e `fr`; o «ñ» conta como letra; o campo `transparencia` manda
+sobre a regra e é validado: públicos do baralho, três graus, só em palavra).
+O `fonte/build.js` põe `transp: 'total' | 'parecida'` no card do pacote de
+cada curso — só quando há grau, depois do `v`, que não vê o campo
+`transparencia` (o catálogo não muda) —, imprime as contagens por curso e
+avisa, uma linha por baralho ou curso, a palavra sem tema, o banco do
+nivelamento curto (menos de 6 temas com 3 palavras em algum nível de A1 a
+B2 que o baralho tem) e a etiqueta de verbo que ficou fora da lista de
+classe. `node fonte/transparentes.js <curso>` é o relatório card a card.
+Contagens de 09/10: es-pt 278 total (26%) e 122 parecidas (11%) de 1.070
+palavras; pt-es 71 (37%) e 19 (10%) de 193; fr-pt 13 (3%) e 23 (6%) de 384.
+
+**Motor** (`js/motor.js`, bloco «o começo do app sem tédio»). Nenhuma
+assinatura antiga mudou; o que é do curso e da pessoa entra como estado do
+módulo, igual ao `usarBaralho`:
+
+- `Motor.usarTransparencias(cards)` — uma vez, na abertura do curso;
+- `Motor.usarExtras({ nivelamento, reativados })` — a cada mudança dos
+  extras (o app chama no começo do `conciliarFila`);
+- `Motor.TAGS_DE_CLASSE`, `Motor.temaDe(card)` — o tema (null = «geral»);
+- `Motor.transparencia(card|id)`, `transparenteTotal(id)`,
+  `presumidoEm(id, estados)`, `conhecidaSemEstado(id, estados)`;
+- `Motor.estadoInicialDo(card)` — a estreia (a parecida nasce em
+  `inversa-multipla`); `estadoInicial(id)` continua igual;
+- `Motor.estadoDoPresumido(id, estados)` — o dominado calculado que a fila
+  enxerga (nunca gravado); `Motor.responderPresumido(id, r)` — o estado que
+  nasce da resposta: acertou, `dominado` com `revisoes = 4` (volta em 90
+  dias, `dominadoEm`); errou, `multipla` com o erro registrado;
+- `Motor.dataDoPresumido(uid, id, feitoEm)` — de 7 a 60 dias, por hash;
+- `Motor.dominioPorNivel(cards, estados, prior)` — `prior` =
+  `nivelamento.porNivel`; ignora a transparente total e a estreia com
+  `est.desafio`;
+- `sabidaEm`, `liberadaEm`, `situacaoDaFrase` e `dominadosNoTotal` já contam
+  a transparente total (sabida desde sempre) e o presumido sem estado
+  (sabido desde o `feitoEm`);
+- `Motor.nivelamento` — `novo(cards, { comeco, semente })`,
+  `proximaCarta(teste)` → `{ id, nivel, tema, conferir, feitas, teto }` ou
+  null, `responder(teste, id, conhece)`, `conferir(teste, id, acertou)` (a
+  carta com `conferir: true` é a múltipla escolha da conferência),
+  `deduzir(teste, cards, { uid, agora, estados, arquivados })` →
+  `{ porNivel, confianca, presumidos, testados, cartas }`, e `banco(cards)`.
+  O teste é JSON puro, sorteio incluído. A tela junta `feitoEm`, `pulou` e
+  `comeco` e grava em `progresso.nivelamento`;
+- `Motor.palavrasConhecidas(cards, presumidos?)` — o N do resultado;
+- `Motor.escolherDesafio(cards, estados, { agora, respostas, desafios,
+  ultimoDesafio, inicio, mostrados, arquivados, prior })` → null ou
+  `{ card, previa, nivel }`; `Motor.marcarDesafio(est)` na estreia. Os
+  contadores (`desafios`, `ultimoDesafio`, `mostrados`, `inicio`) são da
+  tela guardar.
+
+**App.** Já obedece, sem tela nova: a transparente total sai das filas e
+dos inéditos (como a arquivada, e volta se reativada); a parecida estreia na
+volta; o presumido sem estado mora na fila dos dominados e é servido como
+revisão de dominado — a resposta vai ao servidor com `etapa_antes`
+`dominado` e `degrau` nulo, fora da retenção; o `porNivel` do nivelamento
+já é o prior da ordem dos inéditos. `progresso.nivelamento`,
+`progresso.reativados` (id → ISO) e `progresso.dicasVistas` (chave → ISO)
+viajam nos extras **só quando existem**, e a ausência deles na resposta do
+servidor não apaga o que o aparelho tem. A mescla (`mesclarExtras`):
+nivelamento inteiro pelo `feitoEm` mais recente; reativados e dicas por
+união, com a data mais antiga de cada chave. Falta o banco guardá-los
+(`gravar_extras`, `carregar_curso`; local).
+
+**Decidido no caminho.** A frase de primeiros passos com «expressão»
+(«¡Buen provecho!») entra no presumido quando o teste passa do A2; só o
+falso amigo fica fora. «Quero aprender» e a reprovada na conferência nunca
+são presumidas, mesmo em célula que passou. Nível não testado abaixo do
+mais baixo leva a taxa dele; acima do mais alto, a metade do de baixo a
+cada degrau (prior). Com a régua de 0,9 sobre `p × confiança`, a célula só
+passa com umas 8 conferências certas e nenhuma errada — num teste de 30
+cartas é raro, e o grosso dos presumidos é o que a pessoa disse conhecer.
+
+Conferido por `node fonte/testar-comeco.js` (no CI, workflow Cópias).
