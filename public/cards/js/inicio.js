@@ -102,8 +102,11 @@
     if (!conta) return;
     conta.perfil.lingua_interface = l;
     guardarLocal('cards:perfil:' + conta.uid, conta.perfil);
-    var r = await conta.sb.schema('conta').from('perfis').update({ lingua_interface: l }).eq('usuario_id', conta.uid)
-      .catch(function (e) { return { error: e }; });
+    /* o construtor do supabase-js só tem then, não catch: o erro de rede vem
+       pelo try (sem ele, a troca de língua parava aqui) */
+    var r;
+    try { r = await conta.sb.schema('conta').from('perfis').update({ lingua_interface: l }).eq('usuario_id', conta.uid); }
+    catch (e) { r = { error: e }; }
     if (r && r.error) console.warn('a língua escolhida fica só neste aparelho até a próxima conexão', r.error);
   }
   /* A escolha da pessoa: grava no aparelho e no perfil. Não muda a língua da
