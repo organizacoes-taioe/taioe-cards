@@ -3417,7 +3417,6 @@ window.TaioeCardsApp = function (ctx) {
      t('comeco.passo3', { A: escapar(NOME_A), L: escapar(NOME_L) }), t('comeco.passo4')]
       .forEach(html => passos.appendChild(noHtml('li', null, html)));
     caixa.appendChild(passos);
-    caixa.appendChild(no('p', 'comeco-nota', t('comeco.semRelogio')));
     const estudar = no('button', null, t('comeco.estudar'));
     estudar.className = 'primario grande';
     estudar.addEventListener('click', () => fimDoComeco(true));
