@@ -803,3 +803,76 @@ desafio e transparente, a prévia errada, a palavra desafio, reativar e
 desfazer na lista, o painel com a vitrine e «a confirmar», «Rever dicas»,
 e a avaliação que some quando a carga traz estados. Falta o teste com
 login de verdade (local).
+
+### 7.9 O nivelamento pela lista (decidido em 16/10/2026)
+
+O Gere testou o francês e não gostou do teste por temas da 7.3. Proposta dele, com a
+contraproposta aceita inteira. Vale **só para o francês** por agora; os outros cursos ficam
+com a 7.3 até ganharem a lista deles.
+
+**A lista.** `fonte/frequencia/fr.tsv`: umas 5.000 palavras do francês, da mais básica à
+mais rara, com **todas** as palavras que já têm card e as que ainda não têm (é também o
+roteiro dos cards que vierem). Cada linha: posição, lema (o substantivo com o artigo),
+classe, gênero, nível, tradução curta em português, espanhol e inglês, e o id do card
+quando houver. A ordem: primeiro o nível em que a palavra aparece nos livros didáticos de
+francês para estrangeiros (FLELex, UCLouvain), depois, dentro do nível, a frequência nas
+legendas (Lexique 4, com a prevalência para as raras), e o ajuste à mão nas primeiras
+centenas (palavras de sala de aula e do dia a dia, que a frequência põe baixo demais).
+Licenças: FLELex CC BY-NC-SA 4.0, Lexique 4 de uso não comercial; a lista derivada sai sob
+CC BY-NC-SA 4.0, com o crédito em `fonte/frequencia/README.md` (ponto para o advogado). Os
+arquivos originais ficam fora do git, em `fonte/frequencia/brutos/`.
+
+**O teste.**
+
+1. **O aviso**: o objetivo do teste é a pessoa não perder tempo vendo um monte de palavras
+   que já conhece.
+2. **A pergunta de entrada** (Nunca / Um pouco / Bastante) só define o ponto de partida e o
+   primeiro salto. «Nunca» começa na primeira palavra e termina em dois ou três toques.
+3. **A busca**: uma palavra por vez, «Já conheço» ou «Quero aprender». Conhece, a próxima é
+   mais difícil; não conhece, mais fácil. Os primeiros saltos são grandes, e o salto cai
+   pela metade a cada inversão de direção, até umas dez posições.
+4. **A conferência**: nos três primeiros saltos todo «Já conheço» vira múltipla escolha (um
+   sim falso ali joga a busca longe demais); depois, um em cada quatro. Os distratores são
+   os do card ou, na palavra sem card, as traduções de vizinhas da lista da mesma classe.
+   Errou, conta como «não conheço».
+5. **A janela e a divisa**: com o salto no mínimo, cinco vizinhas seguidas. Duas «não
+   conheço» entre as cinco: a **divisa** é o começo dessa janela. Uma ou nenhuma: a janela
+   anda cinco posições e repete. Teto de 35 perguntas.
+6. **Não se pergunta** falso amigo (nem é presumido: quem diz conhecer *attendre* talvez
+   ache que é «atender») nem transparente total (já conta como sabida).
+
+**O que o teste marca.** Toda palavra antes da divisa, mais as «Já conheço» da janela, é
+**presumida** (7.2: dominado provisório, volta entre 7 e 60 dias para confirmar), menos as
+respondidas «Quero aprender» e as reprovadas na conferência. A divisa fica guardada
+(`nivelamento.divisa`), e o card de palavra que for feito depois, antes da divisa, nasce
+presumido sozinho. As **frases** nunca são presumidas: a frase cujas palavras são todas
+presumidas ou transparentes **estreia na volta** (`inversa-multipla`), como a palavra
+parecida; as de primeiros passos, quando a divisa passou da posição 300. Depois do teste,
+os **cards novos de palavra chegam na ordem da lista**, a partir da divisa (as frases em
+vista continuam pedindo as palavras delas primeiro).
+
+`extras.nivelamento` ganha `versao: 2`, `divisa`, `lista` (a versão da lista) e as cartas
+com a posição; `presumidos` e `porNivel` continuam (o `porNivel` vira a parte de cada nível
+da lista que ficou antes da divisa).
+
+**Recomeçar o curso.** Nas configurações, «Recomeçar este curso», com confirmação: apaga no
+servidor o estado, os extras, o diário, os contadores e as respostas daquele curso, e a
+cópia do aparelho. Os outros aparelhos percebem na carga (`recomecado_em`) e apagam a cópia
+deles. Comentários e contestações ficam (são retorno para quem faz os cards). Serve aos
+testes do Gere e a qualquer pessoa.
+
+**Depois.** Cards de palavra do francês em todos os níveis, de A1 a C2, e as frases delas,
+pelo ciclo do manual (seção 18), seguindo a lista, para quem já sabe francês aproveitar o
+app (pedido do Gere, 16/10).
+
+| etapa | estado |
+|---|---|
+| «Como funciona»: «Primeiro, uma questão de múltipla escolha;» e sem a nota do relógio | **feito** (16/10) |
+| especificação (esta seção) | **feito** (16/10) |
+| a lista do francês (`fonte/frequencia/fr.tsv`) | — |
+| build: a posição no card e a lista no pacote do curso | — |
+| motor: o teste novo, as frases na volta, os inéditos pela lista | — |
+| telas do teste novo, nas três línguas | — |
+| recomeçar o curso (taioe-infra e app) | — |
+| teste com login no localhost e produção | — |
+| cards de francês em todos os níveis | — |
