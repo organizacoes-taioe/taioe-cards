@@ -208,7 +208,11 @@
     I.usar(c.audiencia);
     porta('porta.abrindoCurso', false, { L: I.t('lingua.' + c.lingua) });
     await carregar('data/cards-' + curso + '.js');
-    await carregar('data/textos-' + c.lingua + '.js').catch(function () {});
+    /* os textos e a lista de frequência (PLANO.md, 7.9) só existem em alguns cursos: o
+       versoes.js diz quais, e o que não existe nem é pedido */
+    var temArquivo = function (a) { return !!(window.CARDS_VERSOES || {})[a]; };
+    if (temArquivo('data/textos-' + c.lingua + '.js')) await carregar('data/textos-' + c.lingua + '.js').catch(function () {});
+    if (temArquivo('data/lista-' + curso + '.js')) await carregar('data/lista-' + curso + '.js').catch(function () {});
     var salvo = await TaioeArmazem.ler('progresso', uid + ':' + curso);
     $('tela-porta').classList.add('oculto');
     window.TaioeCardsApp({

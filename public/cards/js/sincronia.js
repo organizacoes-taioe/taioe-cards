@@ -418,6 +418,19 @@
       var r = await sb.schema('cards').rpc('carregar_curso', { curso: curso, desde: desde });
       if (r.error) { if (!r.status || r.status >= 500) return null; throw r.error; }
       var c = r.data;
+      /* o curso recomeçou (cards.recomecar_curso) depois da última carga
+         deste aparelho: a cópia daqui é da vida anterior, e sai inteira */
+      var recomecado = Date.parse(c.recomecado_em) || 0;
+      if (recomecado > (Date.parse(fila.recomecadoEm) || 0)) {
+        var velha = !!fila.puxadoEm && Date.parse(fila.puxadoEm) < recomecado;
+        if (velha && o.recomecado) {
+          parado = true;
+          await apagarLocal({ recomecadoEm: c.recomecado_em });
+          o.recomecado();
+          return null;
+        }
+        fila.recomecadoEm = c.recomecado_em;
+      }
       var sujos = {};
       fila.sujos.forEach(function (id) { sujos[id] = true; });
       (c.estados || []).forEach(function (e) {
@@ -503,16 +516,27 @@
       return pendentes();
     }
 
-    async function apagarLocal() {
+    /* Apaga a cópia deste curso. Com «recomecadoEm», a fila nova já nasce
+       sabendo do recomeço, para a carga seguinte não apagar de novo. */
+    async function apagarLocal(opcoes) {
       await TaioeArmazem.apagar('fila', chave);
       await TaioeArmazem.apagar('progresso', chave);
       fila = filaVazia();
+      if (opcoes && opcoes.recomecadoEm) {
+        fila.recomecadoEm = opcoes.recomecadoEm;
+        await TaioeArmazem.gravar('fila', chave, fila);
+      }
     }
+
+    /* Para tudo (o «Recomeçar este curso» espera o servidor sem nada subir
+       no meio) e volta. */
+    function parar() { parado = true; clearTimeout(temporizador); }
+    function continuar() { parado = false; agendar(1000); }
 
     return {
       iniciar: iniciar, anotar: anotar, marcarSujo: marcarSujo, retorno: retorno,
       agendar: agendar, enviar: enviar, puxar: puxar, antesDeSair: antesDeSair,
-      apagarLocal: apagarLocal, pendentes: pendentes,
+      apagarLocal: apagarLocal, pendentes: pendentes, parar: parar, continuar: continuar,
       quarentena: function () { return (fila.quarentena || []).length; }
     };
   }
