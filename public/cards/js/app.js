@@ -63,6 +63,11 @@ window.TaioeCardsApp = function (ctx) {
      «transp» nos cards do pacote, e o motor passa a saber que a «total» conta
      como dominada e não entra em jogo, e que a «parecida» estreia na volta. */
   Motor.usarTransparencias(CARDS);
+  /* A lista de frequência do curso (PLANO.md, 7.9): só no curso que a tem
+     (hoje, o francês). Com ela, o começo usa o nivelamento pela lista. */
+  const LISTA = (window.TAIOE_LISTA && window.TAIOE_LISTA.curso === ctx.curso)
+    ? Motor.nivelamentoLista.itens(window.TAIOE_LISTA) : null;
+  const NL = Motor.nivelamentoLista;
 
   /* ── os textos ──
      Desde outubro de 2026 o texto não tem card: é a recompensa (manual, seção
@@ -252,7 +257,7 @@ window.TaioeCardsApp = function (ctx) {
     if (!p.nivelamento || typeof p.nivelamento !== 'object') delete p.nivelamento;
     /* «-ISO» é o gesto de desfazer (o «voltar a contar como conhecida», ver
        sincronia.js): o motor só recebe os reativados de verdade */
-    Motor.usarExtras({ nivelamento: p.nivelamento, reativados: reativadosAtivos(p.reativados) });
+    Motor.usarExtras({ nivelamento: p.nivelamento, reativados: reativadosAtivos(p.reativados), uid: ctx.uid });
     const solto = id => Motor.liberado(PORID[id], p.cards, null, p.arquivados);
     /* card arquivado sai de todas as filas — e volta a elas se for desarquivado.
        A transparente total também: conta como dominada e nunca é servida
@@ -3225,7 +3230,10 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   function desenharEntrada(caixa) {
-    caixa.appendChild(no('h1', 'comeco-titulo', t(comeco.refazer ? 'comeco.refazendo' : 'comeco.aviso')));
+    caixa.appendChild(no('h1', 'comeco-titulo',
+      t(comeco.refazer ? 'comeco.refazendo' : LISTA ? 'comeco.avisoLista' : 'comeco.aviso')));
+    /* 7.9: o aviso do objetivo do teste */
+    if (LISTA) caixa.appendChild(no('p', 'comeco-nota', t('comeco.objetivoLista')));
     caixa.appendChild(no('p', 'comeco-pergunta', t('comeco.pergunta', { L: NOME_L })));
     const lista = no('div', 'escolhas-comeco');
     ['nunca', 'pouco', 'bastante'].forEach(k => {
@@ -3234,7 +3242,7 @@ window.TaioeCardsApp = function (ctx) {
       lista.appendChild(b);
     });
     caixa.appendChild(lista);
-    caixa.appendChild(no('p', 'ajuda', t('comeco.entradaAjuda')));
+    caixa.appendChild(no('p', 'ajuda', t(LISTA ? 'comeco.entradaAjudaLista' : 'comeco.entradaAjuda')));
     if (comeco.refazer) {
       const voltar = no('button', 'link-arquivar', t('comum.voltar'));
       voltar.addEventListener('click', () => { comeco = null; guardarComeco(); abrirConfig(); });
@@ -3245,6 +3253,15 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   function escolherComeco(k) {
+    /* 7.9: com a lista, a resposta só define o ponto de partida — o «Nunca»
+       também faz o teste, a partir da primeira palavra */
+    if (LISTA) {
+      comeco.teste = NL.novo(LISTA, { comeco: k });
+      comeco.fase = 'teste';
+      guardarComeco();
+      desenharComeco();
+      return;
+    }
     if (k === 'nunca') {
       progresso.nivelamento = { feitoEm: new Date().toISOString(), pulou: true, comeco: 'nunca' };
       depoisDoTeste();
@@ -3256,8 +3273,93 @@ window.TaioeCardsApp = function (ctx) {
     desenharComeco();
   }
 
+  /* O teste pela lista (7.9): a mesma tela, com a palavra da lista (com ou
+     sem card) e, na conferência, as alternativas do card ou, sem card, as
+     traduções das vizinhas da lista (Motor.nivelamentoLista.alternativas). */
+  function desenharTesteDaLista(caixa) {
+    const teste = comeco.teste;
+    const carta = NL.proximaCarta(teste, LISTA);
+    if (!carta) { terminarTeste(false); return; }
+    const item = carta.item;
+
+    const topo = no('div', 'comeco-topo');
+    topo.appendChild(no('span', 'etiqueta', Motor.ROTULO_NIVEL[item.nivel] || item.nivel));
+    const barra = no('div', 'barra-teste');
+    barra.setAttribute('role', 'progressbar');
+    barra.setAttribute('aria-label', t('comeco.barra'));
+    barra.setAttribute('aria-valuemin', '0');
+    barra.setAttribute('aria-valuemax', String(carta.teto));
+    barra.setAttribute('aria-valuenow', String(carta.feitas));
+    const cheio = no('i');
+    cheio.style.width = Math.min(100, Math.round(100 * carta.feitas / carta.teto)) + '%';
+    barra.appendChild(cheio);
+    topo.appendChild(barra);
+    caixa.appendChild(topo);
+
+    const ficha = no('div');
+    ficha.className = 'card ficha-teste';
+    ficha.appendChild(no('p', 'enunciado', t(carta.conferir ? 'comeco.conferir' : 'comeco.conhece')));
+    const linha = no('div', 'termo-linha');
+    linha.appendChild(no('span', 'bandeira', BANDEIRA_L));
+    const termo = no('div', 'termo', item.fr);
+    termo.setAttribute('lang', L);
+    linha.appendChild(termo);
+    ficha.appendChild(linha);
+
+    if (carta.conferir) {
+      const card = (item.cards || []).map(id => PORID[id]).find(Boolean);
+      let certa, opcoes;
+      if (card) {
+        certa = Motor.resposta(card, IDA);
+        opcoes = Motor.alternativas(card, IDA, CARDS, progresso.cards);
+      } else {
+        const a = NL.alternativas(teste, LISTA, carta.pos);
+        certa = a.certa;
+        opcoes = a.opcoes;
+      }
+      const lista = no('div', 'alternativas');
+      opcoes.forEach((texto, i) => {
+        const b = no('button', 'alternativa');
+        b.appendChild(no('span', 'num', String(i + 1)));
+        b.appendChild(no('span', null, texto));
+        b.addEventListener('click', () => conferirNoTeste(carta.pos, texto === certa, b, lista, certa));
+        lista.appendChild(b);
+      });
+      ficha.appendChild(lista);
+      const naoSei = no('button', 'secundario', t('card.naoSei'));
+      naoSei.addEventListener('click', () => conferirNoTeste(carta.pos, false, null, lista, certa));
+      const linhaNaoSei = no('div', 'linha-botoes');
+      linhaNaoSei.appendChild(naoSei);
+      ficha.appendChild(linhaNaoSei);
+    } else {
+      const botoes = no('div', 'botoes-teste');
+      const sim = no('button', 'opcao-teste', t('comeco.jaConheco'));
+      const nao = no('button', 'opcao-teste', t('comeco.queroAprender'));
+      sim.addEventListener('click', () => responderNoTeste(carta.pos, true));
+      nao.addEventListener('click', () => responderNoTeste(carta.pos, false));
+      botoes.appendChild(sim);
+      botoes.appendChild(nao);
+      ficha.appendChild(botoes);
+    }
+    caixa.appendChild(ficha);
+
+    const pular = no('button', 'link-arquivar', t('comeco.pular'));
+    pular.addEventListener('click', () => { if (!comecoOcupado) terminarTeste(true); });
+    const linhaPular = no('p', 'linha-pular');
+    linhaPular.appendChild(pular);
+    caixa.appendChild(linhaPular);
+  }
+
+  const testeDaLista = teste => !!(teste && teste.versao === 2);
+
   function desenharTeste(caixa) {
     const teste = comeco.teste;
+    if (testeDaLista(teste)) {
+      /* o teste guardado é da lista, mas o curso não a tem mais: recomeça */
+      if (!LISTA) { comeco.fase = 'entrada'; comeco.teste = null; guardarComeco(); desenharEntrada(caixa); return; }
+      desenharTesteDaLista(caixa);
+      return;
+    }
     let carta = Motor.nivelamento.proximaCarta(teste);
     /* card que saiu do baralho entre uma abertura e outra: conta como não
        conhecido, e o teste segue */
@@ -3334,7 +3436,8 @@ window.TaioeCardsApp = function (ctx) {
 
   function responderNoTeste(id, conhece) {
     if (comecoOcupado || !comeco || !comeco.teste) return;
-    Motor.nivelamento.responder(comeco.teste, id, conhece);
+    if (testeDaLista(comeco.teste)) NL.responder(comeco.teste, LISTA, id, conhece);
+    else Motor.nivelamento.responder(comeco.teste, id, conhece);
     guardarComeco();
     desenharComeco();
   }
@@ -3349,7 +3452,8 @@ window.TaioeCardsApp = function (ctx) {
       if (b.lastChild.textContent === certa) b.classList.add('certa');
       else if (b === botao) b.classList.add('errada');
     });
-    Motor.nivelamento.conferir(comeco.teste, id, acertou);
+    if (testeDaLista(comeco.teste)) NL.conferir(comeco.teste, LISTA, id, acertou);
+    else Motor.nivelamento.conferir(comeco.teste, id, acertou);
     guardarComeco();
     setTimeout(() => {
       comecoOcupado = false;
@@ -3362,8 +3466,9 @@ window.TaioeCardsApp = function (ctx) {
   function terminarTeste(pulou) {
     const agora = new Date().toISOString();
     const teste = comeco.teste;
-    const d = Motor.nivelamento.deduzir(teste, CARDS, {
-      uid: ctx.uid, agora: agora, estados: progresso.cards, arquivados: progresso.arquivados || {} });
+    const opcoes = { uid: ctx.uid, agora: agora, estados: progresso.cards, arquivados: progresso.arquivados || {} };
+    const d = testeDaLista(teste) ? NL.deduzir(teste, LISTA, CARDS, opcoes)
+      : Motor.nivelamento.deduzir(teste, CARDS, opcoes);
     progresso.nivelamento = Object.assign({ feitoEm: agora, pulou: !!pulou, comeco: teste.comeco }, d);
     depoisDoTeste();
   }

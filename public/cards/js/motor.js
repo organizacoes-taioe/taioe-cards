@@ -2260,8 +2260,31 @@ window.Motor = (function () {
   }
 
   /* Sorteia a ordem dos cards inéditos conforme o peso do nível,
-     alternando palavra e frase quando dá. */
+     alternando palavra e frase quando dá.
+
+     No baralho que tem a lista de frequência (7.9; o card de palavra traz
+     «pos»), as palavras vêm na ordem da lista — a mais básica que falta
+     primeiro, e depois do nivelamento isso é a partir da divisa —, e os
+     outros cards (frases livres, conjugações) entram pelo sorteio de sempre,
+     um a cada duas palavras. */
   function ordenarNovos(ids, pesos, porId) {
+    const naLista = ids.filter(id => porId[id] && porId[id].pos > 0);
+    if (naLista.length) {
+      naLista.sort((a, b) => porId[a].pos - porId[b].pos);
+      const dentro = new Set(naLista);
+      const outros = ordenarPorPeso(ids.filter(id => !dentro.has(id)), pesos, porId);
+      const ordem = [];
+      let i = 0, j = 0;
+      while (i < naLista.length || j < outros.length) {
+        for (let k = 0; k < 2 && i < naLista.length; k++) ordem.push(naLista[i++]);
+        if (j < outros.length) ordem.push(outros[j++]);
+      }
+      return ordem;
+    }
+    return ordenarPorPeso(ids, pesos, porId);
+  }
+
+  function ordenarPorPeso(ids, pesos, porId) {
     const restantes = ids.slice();
     const ordem = [];
     let tipoAnterior = null;
@@ -2753,11 +2776,25 @@ window.Motor = (function () {
   let PRESUMIDOS = Object.create(null);   // id → voltaEm ISO (extras.nivelamento.presumidos)
   let PRESUMIDOS_EM = 0;                  // o dia do nivelamento, em ms (0 se não se sabe)
   let REATIVADOS = Object.create(null);   // id → ISO: «estudar mesmo assim»
+  /* o nivelamento pela lista (7.9) */
+  let POS = Object.create(null);          // id → posição na lista de frequência (card.pos, do pacote)
+  let TIPO = Object.create(null);         // id → tipo do card
+  let FALSO_AMIGO = Object.create(null);  // id → true
+  let DIVISA = 0;                         // nivelamento.divisa (0: sem nivelamento pela lista)
+  let FORA_DA_DIVISA = Object.create(null); // nivelamento.fora: antes da divisa, mas não presumidos
+  let UID = '';                           // para a data do presumido pela divisa
 
   function usarTransparencias(cards) {
     TRANSP = Object.create(null);
+    POS = Object.create(null);
+    TIPO = Object.create(null);
+    FALSO_AMIGO = Object.create(null);
     (cards || []).forEach(c => {
-      if (c && (c.transp === 'total' || c.transp === 'parecida')) TRANSP[c.id] = c.transp;
+      if (!c) return;
+      if (c.transp === 'total' || c.transp === 'parecida') TRANSP[c.id] = c.transp;
+      if (c.pos > 0) POS[c.id] = c.pos;
+      TIPO[c.id] = c.tipo;
+      if (temTag(c, ['falso-amigo'])) FALSO_AMIGO[c.id] = true;
     });
   }
 
@@ -2769,6 +2806,10 @@ window.Motor = (function () {
     PRESUMIDOS = Object.assign(Object.create(null), x.presumidos || niv.presumidos || {});
     PRESUMIDOS_EM = Date.parse(niv.feitoEm) || 0;
     REATIVADOS = Object.assign(Object.create(null), x.reativados || {});
+    DIVISA = niv.versao === 2 && niv.divisa > 0 ? niv.divisa : 0;
+    FORA_DA_DIVISA = Object.create(null);
+    (Array.isArray(niv.fora) ? niv.fora : []).forEach(id => { FORA_DA_DIVISA[id] = true; });
+    UID = x.uid || '';
   }
 
   function reativado(id) { return !!REATIVADOS[id]; }
@@ -2790,7 +2831,7 @@ window.Motor = (function () {
      Respondido (tem estado de verdade), ele é card como os outros; e a
      transparente total não precisa de confirmação nenhuma. */
   function presumidoEm(id, estados) {
-    const v = PRESUMIDOS[id];
+    const v = PRESUMIDOS[id] || (pelaDivisa(id) ? dataDoPresumido(UID, id, PRESUMIDOS_EM) : null);
     if (!v || transparenteTotal(id)) return null;
     const e = estados && estados[id];
     if (e && e.vistas) return null;
@@ -2811,6 +2852,16 @@ window.Motor = (function () {
   function estadoInicialDo(card) {
     const est = estadoInicial(card && card.id);
     if (transparencia(card) === 'parecida') est.etapa = 'inversa-multipla';
+    /* 7.9: a frase cujas palavras o nivelamento pela lista já deu como
+       conhecidas estreia na volta; a de primeiros passos, quando a divisa
+       passou da posição PRIMEIROS_PASSOS_NA_VOLTA */
+    if (DIVISA && card && card.tipo === 'frase') {
+      const req = requeridas(card);
+      if (req.length ? req.every(conhecidaPeloNivelamento)
+                     : temTag(card, [TAG_PRIMEIROS_PASSOS]) && DIVISA > PRIMEIROS_PASSOS_NA_VOLTA) {
+        est.etapa = 'inversa-multipla';
+      }
+    }
     return est;
   }
 
@@ -3179,6 +3230,305 @@ window.Motor = (function () {
     return n;
   }
 
+  /* ── o nivelamento pela lista (7.9) ──
+     Para o curso cujo baralho tem a lista de frequência (hoje, o francês:
+     fonte/frequencia/fr.tsv). A lista vem no pacote do curso já com a tradução
+     de quem estuda; a tela a entrega aqui como itens
+     { pos, fr, classe, nivel, trad, cards: [ids] }, em ordem de posição
+     (itensDaLista converte o formato compacto do pacote).
+
+       const L = Motor.nivelamentoLista;
+       const itens = L.itens(window.TAIOE_LISTA);
+       const t = L.novo(itens, { comeco: 'pouco' });
+       let c;
+       while ((c = L.proximaCarta(t, itens))) {
+         if (c.conferir) L.conferir(t, itens, c.pos, acertouAMultipla);
+         else L.responder(t, itens, c.pos, jaConheco);
+       }
+       const r = L.deduzir(t, itens, cards, { uid, agora, estados, arquivados });
+
+     A busca anda pelas palavras PERGUNTÁVEIS (com tradução, sem falso amigo e
+     sem transparente total). Começa na posição de partida da resposta de
+     entrada, com o salto dela; conhece, sobe um salto; não conhece, desce;
+     depois da primeira inversão de direção, o salto cai pela metade a cada
+     inversão, até o salto mínimo (10 posições, ou 3% da posição). Aí a
+     JANELA: cinco perguntáveis seguidas a partir de duas antes de onde a
+     busca parou. Duas «não conheço» na janela, a divisa é o começo dela; uma
+     ou nenhuma, a busca volta logo acima dela. Até a primeira inversão o salto
+     dobra. Teto de 30 palavras (as conferências não contam). A
+     conferência: todo «Já conheço» dos três primeiros saltos, depois um em
+     cada quatro, e pelo menos uma por janela; reprovada, conta como «não
+     conheço». O teste é JSON puro, sorteio incluído, como o da 7.3. */
+  const PARTIDA_DA_LISTA = { nunca: 1, pouco: 400, bastante: 1500 };   // posição na lista
+  const SALTO_DA_LISTA = { nunca: 100, pouco: 250, bastante: 500 };
+  const SALTO_MINIMO = 10, JANELA_DA_LISTA = 5, NAO_NA_JANELA = 2, TETO_DA_LISTA = 30;
+  const CONFERE_NOS_PRIMEIROS = 2;
+  const SALTO_RELATIVO = 0.03;            // o salto mínimo cresce com a posição: 3% dela
+  const PRIMEIROS_PASSOS_NA_VOLTA = 300;   // posição da divisa a partir da qual eles estreiam na volta
+
+  /* O pacote traz { versao, itens: [[pos, fr, classe, nivel, trad, ids?], …] }. */
+  function itensDaLista(bruto) {
+    const linhas = (bruto && Array.isArray(bruto.itens)) ? bruto.itens : Array.isArray(bruto) ? bruto : [];
+    return linhas.map(l => Array.isArray(l)
+      ? { pos: l[0], fr: l[1], classe: l[2], nivel: l[3], trad: l[4], cards: l[5] ? String(l[5]).split(',') : [] }
+      : l).filter(x => x && x.pos > 0).sort((a, b) => a.pos - b.pos);
+  }
+
+  function perguntavel(item) {
+    if (!item || !item.trad) return false;
+    return !(item.cards || []).some(id => FALSO_AMIGO[id] || transparenteTotal(id));
+  }
+  const perguntaveisDa = itens => (itens || []).filter(perguntavel);
+
+  function novoTesteDaLista(itens, opcoes) {
+    const o = opcoes || {};
+    const comeco = ['nunca', 'pouco', 'bastante'].indexOf(o.comeco) >= 0 ? o.comeco : 'pouco';
+    const q = perguntaveisDa(itens);
+    let k = q.findIndex(x => x.pos >= PARTIDA_DA_LISTA[comeco]);
+    if (k < 0) k = Math.max(0, q.length - 1);
+    return {
+      versao: 2, comeco: comeco,
+      semente: typeof o.semente === 'number' ? o.semente >>> 0 : Math.floor(Math.random() * 4294967296),
+      k: k, salto: SALTO_DA_LISTA[comeco], direcao: 0, inversoes: 0, saltos: 0,
+      fase: 'busca', janela: null,
+      cartas: [],                          // { pos, resposta, fase, conferida?, acertou? }
+      pendente: null,                      // pos da carta que espera a conferência
+      divisa: null, fim: !q.length
+    };
+  }
+
+  function cartaDaPos(teste, pos) { return teste.cartas.find(c => c.pos === pos); }
+
+  function proximaCartaDaLista(teste, itens) {
+    if (!teste || teste.fim) return null;
+    const q = perguntaveisDa(itens);
+    const carta = (item, conferir) => ({ pos: item.pos, item: item, nivel: item.nivel, conferir: conferir,
+      feitas: teste.cartas.length, teto: TETO_DA_LISTA });
+    if (teste.pendente) {
+      const item = q.find(x => x.pos === teste.pendente) || itens.find(x => x.pos === teste.pendente);
+      return item ? carta(item, true) : null;
+    }
+    if (teste.fase === 'busca') return q[teste.k] ? carta(q[teste.k], false) : null;
+    for (let i = teste.janela; i < Math.min(q.length, teste.janela + JANELA_DA_LISTA); i++) {
+      if (!cartaDaPos(teste, q[i].pos)) return carta(q[i], false);
+    }
+    return null;
+  }
+
+  function responderNaLista(teste, itens, pos, conhece) {
+    const vez = proximaCartaDaLista(teste, itens);
+    if (!vez || vez.conferir || vez.pos !== pos) return { conferir: false, pos: null, ignorada: true };
+    const c = { pos: pos, resposta: conhece ? 'conheco' : 'aprender', fase: teste.fase };
+    teste.cartas.push(c);
+    if (teste.fase === 'busca') teste.saltos++;
+    if (conhece && ((teste.fase === 'busca' && teste.saltos <= CONFERE_NOS_PRIMEIROS) ||
+                    sortearNoTeste(teste) < 1 / CONFERE_UM_EM)) {
+      teste.pendente = pos;
+      c.conferida = true;
+    }
+    if (!teste.pendente) avancarNaLista(teste, itens);
+    return { conferir: !!teste.pendente, pos: teste.pendente };
+  }
+
+  function conferirNaLista(teste, itens, pos, acertou) {
+    if (!teste || teste.pendente !== pos) return false;
+    const c = cartaDaPos(teste, pos);
+    c.conferida = true;
+    c.acertou = !!acertou;
+    teste.pendente = null;
+    avancarNaLista(teste, itens);
+    return true;
+  }
+
+  function fecharNaLista(teste, divisa) {
+    teste.divisa = divisa;
+    teste.fim = true;
+    teste.pendente = null;
+  }
+
+  function abrirJanela(teste, q, desde) {
+    teste.fase = 'janela';
+    teste.janela = Math.max(0, Math.min(desde, q.length - JANELA_DA_LISTA));
+  }
+
+  function avancarNaLista(teste, itens) {
+    const q = perguntaveisDa(itens);
+    const ultima = teste.cartas[teste.cartas.length - 1];
+    if (!ultima || !q.length) { fecharNaLista(teste, 1); return; }
+    if (teste.fase === 'busca') {
+      const conhece = cartaConhecida(ultima);
+      const dir = conhece ? 1 : -1;
+      /* até a primeira inversão o salto dobra (a pessoa pode estar muito
+         longe do ponto de partida); depois, cai pela metade a cada inversão */
+      if (teste.direcao && dir !== teste.direcao) {
+        teste.inversoes = (teste.inversoes || 0) + 1;
+        teste.salto = Math.max(saltoMinimo(q, teste.k), Math.floor(teste.salto / 2));
+      } else if (teste.direcao && !teste.inversoes) teste.salto *= 2;
+      teste.direcao = dir;
+      if (teste.salto <= saltoMinimo(q, teste.k) && teste.saltos > 1) abrirJanela(teste, q, teste.k - 2);
+      else {
+        let alvo = Math.max(0, Math.min(q.length - 1, teste.k + dir * teste.salto));
+        while (alvo !== teste.k && cartaDaPos(teste, q[alvo].pos)) alvo -= dir;
+        if (alvo === teste.k) abrirJanela(teste, q, conhece ? q.length - JANELA_DA_LISTA : 0);
+        else teste.k = alvo;
+      }
+    }
+    if (teste.cartas.length >= TETO_DA_LISTA) {
+      fecharNaLista(teste, teste.fase === 'janela' ? q[teste.janela].pos : estimarDivisa(teste, q));
+      return;
+    }
+    if (teste.fase !== 'janela') return;
+    /* a janela: duas «não» fecham na hora; completa com uma ou nenhuma, anda */
+    while (true) {
+      const fim = Math.min(q.length, teste.janela + JANELA_DA_LISTA);
+      const nela = q.slice(teste.janela, fim).map(x => cartaDaPos(teste, x.pos));
+      const nao = nela.filter(c => c && teste.pendente !== c.pos && !cartaConhecida(c)).length;
+      if (nao >= NAO_NA_JANELA) { fecharNaLista(teste, q[teste.janela].pos); return; }
+      if (nela.some(c => !c)) return;                     // ainda falta perguntar
+      /* completa: pelo menos uma conferência nela, se houver «Já conheço» */
+      const sim = nela.filter(c => c.resposta === 'conheco');
+      if (sim.length && !nela.some(c => c.conferida)) {
+        const c = sim[Math.floor(sortearNoTeste(teste) * sim.length)];
+        c.conferida = true;
+        teste.pendente = c.pos;
+        return;
+      }
+      if (fim >= q.length) { fecharNaLista(teste, q[q.length - 1].pos + 1); return; }
+      /* passou: a divisa está mais acima, e a busca volta, com o salto
+         dobrando de novo (um «não» falso no começo não prende o teste lá) */
+      teste.fase = 'busca';
+      teste.janela = null;
+      teste.direcao = 1;
+      teste.inversoes = (teste.janelasQuePassaram = (teste.janelasQuePassaram || 0) + 1) > 1 ? 1 : 0;
+      teste.salto = 2 * saltoMinimo(q, fim);
+      teste.k = fim;
+      return;
+    }
+  }
+
+  function saltoMinimo(q, k) {
+    const item = q[Math.max(0, Math.min(q.length - 1, k))];
+    return Math.max(SALTO_MINIMO, Math.round((item ? item.pos : 0) * SALTO_RELATIVO));
+  }
+
+  /* No «Pular» ou no teto, no meio da busca: a divisa é o corte que mais
+     concorda com as respostas — o máximo de «conheço» abaixo dele e de «não
+     conheço» acima. Um «não» falso lá no começo não derruba a estimativa. */
+  function estimarDivisa(teste, q) {
+    const cartas = teste.cartas.filter(c => teste.pendente !== c.pos)
+      .map(c => ({ pos: c.pos, sim: cartaConhecida(c) })).sort((a, b) => a.pos - b.pos);
+    if (!cartas.length) return 1;
+    const totalNao = cartas.filter(c => !c.sim).length;
+    let melhor = totalNao, corte = cartas[0].pos;          // corte antes de todas: só os «não» concordam
+    let simAbaixo = 0, naoAbaixo = 0;
+    cartas.forEach((c, i) => {
+      if (c.sim) simAbaixo++; else naoAbaixo++;
+      const placar = simAbaixo + (totalNao - naoAbaixo);
+      if (placar > melhor) {
+        melhor = placar;
+        const seguinte = cartas[i + 1];
+        const j = q.findIndex(x => x.pos > c.pos);
+        corte = seguinte ? (j >= 0 ? Math.min(q[j].pos, seguinte.pos) : seguinte.pos) : (j >= 0 ? q[j].pos : c.pos + 1);
+      }
+    });
+    return corte;
+  }
+
+  /* O resultado (7.9): toda palavra antes da divisa é presumida, mais as
+     «Já conheço» acima dela, menos as «Quero aprender», as reprovadas, o
+     falso amigo, a transparente total (já conta), o card com estado e o
+     arquivado. As não presumidas antes da divisa vão para «fora», para a
+     regra da divisa não as presumir depois (presumidoEm). O porNivel é a
+     parte de cada nível da lista que ficou antes da divisa. */
+  function deduzirDaLista(teste, itens, cards, opcoes) {
+    const o = opcoes || {};
+    const agora = o.agora || new Date().toISOString();
+    const estados = o.estados || {}, arquivados = o.arquivados || {};
+    const q = perguntaveisDa(itens);
+    const divisa = teste && teste.divisa != null ? teste.divisa : estimarDivisa(teste || { cartas: [] }, q);
+    const cartas = (teste && teste.cartas) || [];
+    const porPos = new Map(itens.map(x => [x.pos, x]));
+    const sim = new Set(), nao = new Set();
+    cartas.forEach(c => {
+      const item = porPos.get(c.pos);
+      ((item && item.cards) || []).forEach(id => (cartaConhecida(c) && !(teste.pendente === c.pos) ? sim : nao).add(id));
+    });
+    const presumidos = {}, fora = [];
+    (cards || []).forEach(c => {
+      if (!c || c.tipo !== 'palavra' || !POS[c.id]) return;
+      const antes = POS[c.id] < divisa;
+      if (!antes && !sim.has(c.id)) return;
+      const pode = !FALSO_AMIGO[c.id] && transparencia(c) !== 'total' &&
+        !(estados[c.id] && estados[c.id].vistas) && !arquivado(c.id, arquivados) && !nao.has(c.id);
+      if (pode) presumidos[c.id] = dataDoPresumido(o.uid, c.id, agora);
+      else if (antes) fora.push(c.id);
+    });
+    const porNivel = {};
+    NIVEIS.forEach(n => {
+      const doNivel = itens.filter(x => x.nivel === n);
+      if (doNivel.length) porNivel[n] = doNivel.filter(x => x.pos < divisa).length / doNivel.length;
+    });
+    const resumo = cartas.map(c => {
+      const x = { pos: c.pos, resposta: c.resposta };
+      if (c.conferida && typeof c.acertou === 'boolean') { x.conferida = true; x.acertou = c.acertou; }
+      return x;
+    });
+    return { versao: 2, divisa: divisa, porNivel: porNivel, presumidos: presumidos, fora: fora,
+             cartas: resumo, perguntas: resumo.length };
+  }
+
+  /* As alternativas da conferência da palavra sem card: a tradução certa e
+     as de quatro vizinhas da lista, da mesma classe e de tradução diferente,
+     escolhidas pelo sorteio do teste. Com card, a tela usa as do card. */
+  function alternativasDaLista(teste, itens, pos) {
+    const item = itens.find(x => x.pos === pos);
+    if (!item) return { certa: null, opcoes: [] };
+    const i = itens.indexOf(item);
+    const vistas = new Set([normalizar(item.trad)]);
+    const candidatas = [];
+    for (let d = 1; d < 80 && candidatas.length < 12; d++) {
+      [itens[i - d], itens[i + d]].forEach(x => {
+        if (!x || !x.trad || x.classe !== item.classe) return;
+        const n = normalizar(x.trad);
+        if (vistas.has(n)) return;
+        vistas.add(n);
+        candidatas.push(x.trad);
+      });
+    }
+    const escolhidas = [];
+    while (escolhidas.length < 4 && candidatas.length) {
+      escolhidas.push(candidatas.splice(Math.floor(sortearNoTeste(teste) * candidatas.length), 1)[0]);
+    }
+    const opcoes = [item.trad].concat(escolhidas);
+    for (let k = opcoes.length - 1; k > 0; k--) {
+      const j = Math.floor(sortearNoTeste(teste) * (k + 1));
+      const x = opcoes[k]; opcoes[k] = opcoes[j]; opcoes[j] = x;
+    }
+    return { certa: item.trad, opcoes: opcoes };
+  }
+
+  /* Conta como conhecida pelo nivelamento — presumida (respondida ou não) ou
+     transparente total. É o que decide a frase que estreia na volta. */
+  function conhecidaPeloNivelamento(id) {
+    return transparenteTotal(id) || !!PRESUMIDOS[id] || pelaDivisa(id);
+  }
+
+  /* A regra da divisa (7.9): o card de palavra que veio depois do teste,
+     antes da divisa, nasce presumido sozinho — menos o falso amigo e o que
+     o teste deixou de fora. */
+  function pelaDivisa(id) {
+    return !!(DIVISA && POS[id] && POS[id] < DIVISA && !FORA_DA_DIVISA[id] && !FALSO_AMIGO[id] && TIPO[id] === 'palavra');
+  }
+
+  const nivelamentoLista = {
+    itens: itensDaLista, perguntavel: perguntavel, novo: novoTesteDaLista,
+    proximaCarta: proximaCartaDaLista, responder: responderNaLista, conferir: conferirNaLista,
+    deduzir: deduzirDaLista, alternativas: alternativasDaLista, conhecida: cartaConhecida,
+    PARTIDA: PARTIDA_DA_LISTA, SALTO: SALTO_DA_LISTA, SALTO_MINIMO: SALTO_MINIMO,
+    JANELA: JANELA_DA_LISTA, NAO_NA_JANELA: NAO_NA_JANELA, TETO: TETO_DA_LISTA,
+    CONFERE_NOS_PRIMEIROS: CONFERE_NOS_PRIMEIROS, PRIMEIROS_PASSOS_NA_VOLTA: PRIMEIROS_PASSOS_NA_VOLTA
+  };
+
   /* ── o card desafio (7.4) ──
      Um gostinho do que vem pela frente, sem desanimar: um card inédito com
      falso-amigo, expressão, gíria ou provérbio, DOIS níveis acima do nível
@@ -3278,6 +3628,8 @@ window.Motor = (function () {
     TAGS_DE_CLASSE, temaDe, usarTransparencias, usarExtras, transparencia, transparenteTotal,
     presumidoEm, conhecidaSemEstado, estadoInicialDo, estadoDoPresumido, responderPresumido,
     dataDoPresumido, DEGRAU_DO_PRESUMIDO, nivelamento, palavrasConhecidas,
-    escolherDesafio, marcarDesafio, nivelAtual
+    escolherDesafio, marcarDesafio, nivelAtual,
+    /* o nivelamento pela lista (7.9) */
+    nivelamentoLista, conhecidaPeloNivelamento
   };
 })();

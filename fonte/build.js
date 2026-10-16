@@ -877,6 +877,36 @@ const camposDe = l => {
 };
 const ID_DO_CATALOGO = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
+/* ── a lista de frequência (PLANO.md, 7.9) ──
+   fonte/frequencia/<idioma>.tsv, quando existe: a posição de cada palavra, da mais básica à
+   mais rara, e a tradução curta nas línguas dos públicos. O card de palavra ganha a «pos» no
+   pacote (depois do «v»: é do baralho, não muda a versão do card), e cada curso ganha
+   data/lista-<curso>.js, que o nivelamento percorre. Toda palavra com card tem de estar
+   na lista. */
+const LISTAS = {};
+for (const { idioma, cards } of baralhos) {
+  const arq = path.join(raiz, 'fonte', 'frequencia', idioma + '.tsv');
+  if (!fs.existsSync(arq)) continue;
+  const linhas = fs.readFileSync(arq, 'utf8').replace(/\r/g, '').split('\n').filter(Boolean);
+  const cab = linhas[0].split('\t');
+  const col = k => cab.indexOf(k);
+  const itens = linhas.slice(1).map(l => l.split('\t')).map(c => ({
+    pos: Number(c[col('pos')]), fr: c[col('fr')], classe: c[col('classe')], nivel: c[col('nivel')],
+    trad: { pt: c[col('pt')], es: c[col('es')], en: c[col('en')] },
+    cards: c[col('cards')] ? c[col('cards')].split(',') : [] }));
+  const posDe = new Map();
+  itens.forEach((x, i) => {
+    if (x.pos !== i + 1) { console.error('\n  ' + path.relative(raiz, arq) + ': a posição da linha ' + (i + 2) + ' devia ser ' + (i + 1) + '\n'); process.exit(1); }
+    x.cards.forEach(id => posDe.set(id, x.pos));
+  });
+  const ids = new Set(cards.map(c => c.id));
+  const fora = cards.filter(c => c.tipo === 'palavra' && !posDe.has(c.id)).map(c => c.id);
+  const sobra = [...posDe.keys()].filter(id => !ids.has(id));
+  if (fora.length) console.warn('  ' + idioma + ': palavra com card fora da lista de frequência: ' + fora.join(', '));
+  if (sobra.length) console.warn('  ' + idioma + ': a lista de frequência cita card que não existe: ' + sobra.join(', '));
+  LISTAS[idioma] = { itens, posDe };
+}
+
 for (const { idioma, cards } of baralhos) {
   for (const audiencia of audienciasDe(idioma)) {
     const curso = idioma + '-' + audiencia;
@@ -905,6 +935,8 @@ for (const { idioma, cards } of baralhos) {
       delete limpo.transparencia;
       const grau = (TRANSPARENTES[curso] || new Map()).get(c.id);
       if (grau) limpo.transp = grau;
+      const pos = LISTAS[idioma] && c.tipo === 'palavra' && LISTAS[idioma].posDe.get(c.id);
+      if (pos) limpo.pos = pos;
       return limpo;
     });
     const leva = hash8(doApp.map(c => c.id + ':' + c.v).join('\n'));
@@ -913,6 +945,19 @@ for (const { idioma, cards } of baralhos) {
     fs.writeFileSync(path.join(dataPublica, 'cards-' + curso + '.js'), js, 'utf8');
     if (audiencia === 'pt') fs.writeFileSync(path.join(dataPublica, 'cards-' + idioma + '.js'), js, 'utf8');
     escreverCatalogo(curso, leva, doApp, audiencia);
+    if (LISTAS[idioma]) {
+      /* compacta: [pos, forma, classe, nível, tradução, cards] — só a tradução deste público */
+      const itens = LISTAS[idioma].itens.map(x => {
+        const l = [x.pos, x.fr, x.classe, x.nivel, x.trad[audiencia] || ''];
+        if (x.cards.length) l.push(x.cards.join(','));
+        return l;
+      });
+      const lista = { versao: hash8(JSON.stringify(itens)), curso: curso, itens: itens };
+      fs.writeFileSync(path.join(dataPublica, 'lista-' + curso + '.js'),
+        '/* GERADO POR fonte/build.js a partir de fonte/frequencia/' + idioma + '.tsv — não edite à mão.\n' +
+        '   FLELex (UCLouvain) e Lexique 4; CC BY-NC-SA 4.0 (ver fonte/frequencia/README.md). */\n' +
+        'window.TAIOE_LISTA = ' + JSON.stringify(lista) + ';\n', 'utf8');
+    }
   }
 }
 

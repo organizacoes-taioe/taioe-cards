@@ -429,5 +429,121 @@ ok(md.dicasVistas.quase === '-2026-10-09T12:00:00Z', 'dicasVistas: o «Rever dic
 ok(jan.TaioeSincronia.gestoAtivo(md.dicasVistas.frase), 'dicasVistas: a dica vista depois do «Rever dicas» fica vista');
 
 zerar();
+/* ── 7.9: o nivelamento pela lista (o francês) ── */
+{
+secao('o nivelamento pela lista (7.9)');
+const jl = {};
+new Function('window', fs.readFileSync(path.join(RAIZ, 'public', 'cards', 'data', 'cards-fr-pt.js'), 'utf8'))(Object.assign(jl, { BARALHOS: {} }));
+new Function('window', fs.readFileSync(path.join(RAIZ, 'public', 'cards', 'data', 'lista-fr-pt.js'), 'utf8'))(jl);
+const FR = jl.BARALHOS.fr.cards.map(c => M.formaDoCard(c, 0));
+const NL = M.nivelamentoLista;
+const LISTA = NL.itens(jl.TAIOE_LISTA);
+M.usarTransparencias(FR);
+M.usarExtras({});
+const palavrasFr = FR.filter(c => c.tipo === 'palavra');
+ok(palavrasFr.every(c => c.pos > 0), 'o pacote do fr-pt traz a posição da lista em toda palavra');
+ok(LISTA.length > 5000 && LISTA.every((x, i) => x.pos === i + 1), 'a lista do fr-pt vem inteira, em ordem de posição');
+const naLista = new Set(LISTA.flatMap(x => x.cards));
+ok(palavrasFr.every(c => naLista.has(c.id)), 'toda palavra com card está na lista');
+const falsoFr = palavrasFr.filter(c => (c.tags || []).includes('falso-amigo'));
+const totalFr = palavrasFr.filter(c => c.transp === 'total');
+const perguntaveis = LISTA.filter(NL.perguntavel);
+ok(falsoFr.length && !falsoFr.some(c => perguntaveis.some(x => x.cards.includes(c.id))), 'falso amigo não é perguntado');
+ok(totalFr.length && !totalFr.some(c => perguntaveis.some(x => x.cards.includes(c.id))), 'transparente total não é perguntada');
+
+/* a pessoa: conhece com 93% de chance o que está antes de T, com 7% o depois */
+function rodar(T, comeco, semente, verdade) {
+  let s = semente;
+  const sorte = () => { s = (s * 1103515245 + 12345) % 2147483648; return s / 2147483648; };
+  const t = NL.novo(LISTA, { comeco: comeco, semente: semente });
+  let c, telas = 0;
+  while ((c = NL.proximaCarta(t, LISTA)) && telas < 120) {
+    telas++;
+    const sabe = verdade ? verdade(c.pos) : c.pos < T;
+    if (c.conferir) NL.conferir(t, LISTA, c.pos, sabe ? sorte() < 0.95 : sorte() < 0.25);
+    else NL.responder(t, LISTA, c.pos, verdade ? sabe : sorte() < (sabe ? 0.93 : 0.07));
+  }
+  return { t, telas };
+}
+const mediana = a => a.slice().sort((x, y) => x - y)[Math.floor(a.length / 2)];
+for (const [T, comeco] of [[300, 'pouco'], [900, 'pouco'], [2000, 'bastante'], [150, 'nunca']]) {
+  const r = [];
+  for (let k = 0; k < 40; k++) r.push(rodar(T, comeco, 1000 + k));
+  const d = mediana(r.map(x => x.t.divisa)), telas = mediana(r.map(x => x.telas));
+  ok(Math.abs(d - T) <= T * 0.12 + 15, `quem sabe ~${T} palavras («${comeco}»): a divisa mediana fica perto (${d})`);
+  ok(telas <= 30, `quem sabe ~${T} palavras («${comeco}»): até 30 telas na mediana (${telas})`);
+  ok(r.every(x => x.t.cartas.length <= NL.TETO), `quem sabe ~${T} palavras: nunca passa do teto de ${NL.TETO} palavras`);
+}
+const iniciante = rodar(0, 'nunca', 7, () => false);
+ok(iniciante.t.fim && iniciante.t.cartas.length <= 3 && iniciante.t.divisa === 1, '«Nunca» de quem não sabe nada termina em 2 ou 3 palavras, sem divisa');
+const tudo = rodar(0, 'bastante', 7, () => true);
+ok(tudo.t.fim && tudo.t.divisa > LISTA[LISTA.length - 1].pos - 30, 'quem sabe tudo chega ao fim da lista');
+ok(tudo.t.cartas.length <= NL.TETO, 'e sem passar do teto');
+
+/* a conferência e a dedução */
+const t1 = NL.novo(LISTA, { comeco: 'pouco', semente: 3 });
+const p1 = NL.proximaCarta(t1, LISTA);
+const r1 = NL.responder(t1, LISTA, p1.pos, true);
+ok(r1.conferir && NL.proximaCarta(t1, LISTA).conferir, 'o primeiro «Já conheço» vira múltipla escolha');
+NL.conferir(t1, LISTA, p1.pos, false);
+ok(!NL.conhecida(t1.cartas[0]), 'reprovada na conferência, conta como não conhecida');
+const alt = NL.alternativas(t1, LISTA, 2000);
+ok(alt.opcoes.length === 5 && alt.opcoes.includes(alt.certa) && new Set(alt.opcoes).size === 5,
+  'a conferência da palavra sem card tem cinco alternativas diferentes, com a certa');
+
+const agora = '2026-10-16T12:00:00.000Z';
+const fim = rodar(0, 'pouco', 11, p => p < 600);
+const ded = NL.deduzir(fim.t, LISTA, FR, { uid: 'u1', agora: agora, estados: {}, arquivados: {} });
+const antes = palavrasFr.filter(c => c.pos < ded.divisa && c.transp !== 'total' && !(c.tags || []).includes('falso-amigo'));
+const recusadas = new Set(fim.t.cartas.filter(c => !NL.conhecida(c)).flatMap(c => (LISTA[c.pos - 1].cards || [])));
+ok(ded.versao === 2 && ded.divisa > 500 && ded.divisa < 700, `a dedução guarda a divisa (${ded.divisa})`);
+ok(antes.filter(c => !recusadas.has(c.id)).every(c => ded.presumidos[c.id]), 'toda palavra antes da divisa é presumida');
+ok(!falsoFr.some(c => ded.presumidos[c.id]), 'falso amigo nunca é presumido');
+ok(!palavrasFr.some(c => c.pos >= ded.divisa && ded.presumidos[c.id] &&
+  !fim.t.cartas.some(x => NL.conhecida(x) && (LISTA[x.pos - 1].cards || []).includes(c.id))), 'depois da divisa, só a «Já conheço» é presumida');
+ok(Object.keys(ded.porNivel).length && ded.porNivel.A1 > ded.porNivel.B1, 'o porNivel sai da parte de cada nível antes da divisa');
+const comEstado = rodar(0, 'pouco', 11, p => p < 600);
+const umComEstado = antes[0].id;
+const ded2 = NL.deduzir(comEstado.t, LISTA, FR, { uid: 'u1', agora: agora, estados: { [umComEstado]: { vistas: 2 } }, arquivados: {} });
+ok(!ded2.presumidos[umComEstado], 'card que já tem estado não é presumido (o refazer)');
+const salvo = rodar(0, 'bastante', 5, p => p < 1200);
+const meio = NL.novo(LISTA, { comeco: 'pouco', semente: 9 });
+for (let k = 0; k < 4; k++) {
+  const c = NL.proximaCarta(meio, LISTA);
+  if (c.conferir) NL.conferir(meio, LISTA, c.pos, true); else NL.responder(meio, LISTA, c.pos, c.pos < 900);
+}
+const copia = JSON.parse(JSON.stringify(meio));
+ok(JSON.stringify(NL.proximaCarta(copia, LISTA).pos) === JSON.stringify(NL.proximaCarta(meio, LISTA).pos),
+  'o teste é JSON puro: guardado no meio, retoma na mesma palavra');
+ok(salvo.t.fim, 'o teste termina');
+
+/* a regra da divisa, as frases na volta e os inéditos pela lista */
+const niv = Object.assign({ feitoEm: agora, pulou: false, comeco: 'pouco' }, ded);
+M.usarExtras({ nivelamento: niv, uid: 'u1' });
+const novaAntes = { id: 'fr-novo1', tipo: 'palavra', pos: 50, nivel: 'A1', tags: ['verbo'] };
+const novaFalso = { id: 'fr-novo2', tipo: 'palavra', pos: 51, nivel: 'A1', tags: ['falso-amigo'] };
+const novaDepois = { id: 'fr-novo3', tipo: 'palavra', pos: ded.divisa + 10, nivel: 'A1', tags: ['verbo'] };
+M.usarTransparencias(FR.concat([novaAntes, novaFalso, novaDepois]));
+M.usarExtras({ nivelamento: niv, uid: 'u1' });
+ok(!!M.presumidoEm('fr-novo1', {}), 'o card feito depois do teste, antes da divisa, nasce presumido');
+ok(!M.presumidoEm('fr-novo2', {}) && !M.presumidoEm('fr-novo3', {}), 'menos o falso amigo e o que está depois da divisa');
+ok(!ded.fora.length || ded.fora.every(id => !M.presumidoEm(id, {})), 'o que o teste deixou de fora não é presumido pela regra');
+const presumidasIds = Object.keys(ded.presumidos);
+const fraseConhecida = { id: 'fr-fx1', tipo: 'frase', requerTodas: presumidasIds.slice(0, 2), tags: [] };
+const fraseNova = { id: 'fr-fx2', tipo: 'frase', requerTodas: [presumidasIds[0], novaDepois.id], tags: [] };
+const passos = { id: 'fr-fx3', tipo: 'frase', requerTodas: [], tags: ['primeiros passos'] };
+ok(M.estadoInicialDo(fraseConhecida).etapa === 'inversa-multipla', 'a frase de palavras todas conhecidas estreia na volta');
+ok(M.estadoInicialDo(fraseNova).etapa === 'multipla', 'a frase com uma palavra nova estreia na ida');
+ok(M.estadoInicialDo(passos).etapa === (ded.divisa > NL.PRIMEIROS_PASSOS_NA_VOLTA ? 'inversa-multipla' : 'multipla'),
+  'a de primeiros passos estreia na volta quando a divisa passou da posição ' + NL.PRIMEIROS_PASSOS_NA_VOLTA);
+const porIdFr = Object.fromEntries(FR.map(c => [c.id, c]));
+const ineditas = palavrasFr.slice().reverse().slice(0, 30).map(c => c.id).concat(['fr-b001']);
+const ordem = M.ordenarNovos(ineditas, M.pesosDeNivel({}), porIdFr);
+const soPalavras = ordem.filter(id => porIdFr[id].pos);
+ok(soPalavras.every((id, i) => !i || porIdFr[soPalavras[i - 1]].pos <= porIdFr[id].pos), 'os inéditos de palavra vêm na ordem da lista');
+ok(ordem.length === ineditas.length && ordem.includes('fr-b001'), 'e os outros cards entram no meio');
+}
+
+zerar();
 console.log('\n  ' + (falhas ? falhas + ' de ' + feitas + ' conferências falharam' : feitas + ' conferências, todas passaram') + '\n');
 process.exit(falhas ? 1 : 0);
