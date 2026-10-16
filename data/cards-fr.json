@@ -1,8 +1,8 @@
 {
  "versao": 1,
  "idioma": "fr",
- "gerado_em": "2026-10-09",
- "total": 1023,
+ "gerado_em": "2026-10-16",
+ "total": 1148,
  "cards": [
   {
    "idioma": "fr",
@@ -2410,8 +2410,7 @@
    "fr": "avoir",
    "pt": "ter",
    "aceitas": [
-    "ter",
-    "possuir"
+    "ter"
    ],
    "distratores": [
     "ouvir",
@@ -2421,8 +2420,7 @@
    ],
    "es": "tener",
    "aceitasEs": [
-    "tener",
-    "poseer"
+    "tener"
    ],
    "distratoresEs": [
     "oír",
@@ -3406,7 +3404,6 @@
    "pt": "a criança",
    "aceitas": [
     "crianca",
-    "o menino",
     "a menina",
     "o filho",
     "a filha"
@@ -3705,7 +3702,6 @@
    "pt": "o trabalho",
    "aceitas": [
     "trabalho",
-    "o emprego",
     "o servico"
    ],
    "distratores": [
@@ -3717,8 +3713,7 @@
    "es": "el trabajo",
    "aceitasEs": [
     "el trabajo",
-    "trabajo",
-    "el empleo"
+    "trabajo"
    ],
    "distratoresEs": [
     "el trébol",
@@ -3729,9 +3724,7 @@
    "en": "work",
    "aceitasEn": [
     "work",
-    "the work",
-    "job",
-    "the job"
+    "the work"
    ],
    "distratoresEn": [
     "clover",
@@ -3939,8 +3932,7 @@
    "fr": "la voiture",
    "pt": "o carro",
    "aceitas": [
-    "carro",
-    "o automovel"
+    "carro"
    ],
    "distratores": [
     "o ônibus",
@@ -3953,8 +3945,7 @@
     "el coche",
     "coche",
     "el carro",
-    "el auto",
-    "el automóvil"
+    "el auto"
    ],
    "distratoresEs": [
     "el autobús",
@@ -3965,8 +3956,7 @@
    "en": "the car",
    "aceitasEn": [
     "the car",
-    "car",
-    "the automobile"
+    "car"
    ],
    "distratoresEn": [
     "the bus",
@@ -4164,7 +4154,6 @@
    "aceitasEs": [
     "pequeño",
     "pequeña",
-    "chico",
     "chica",
     "bajo",
     "baja"
@@ -20602,9 +20591,7 @@
     "arrive",
     "to get",
     "to happen",
-    "happen",
-    "to manage",
-    "manage"
+    "happen"
    ],
    "distratoresEn": [
     "to arrange / to tidy",
@@ -21055,7 +21042,6 @@
    ],
    "en": "kind",
    "aceitasEn": [
-    "kind",
     "nice",
     "sweet"
    ],
@@ -24395,8 +24381,7 @@
     "to ask",
     "ask",
     "to ask for",
-    "ask for",
-    "to request"
+    "ask for"
    ],
    "distratoresEn": [
     "to send / to order",
@@ -60282,6 +60267,6888 @@
     "fr-p070",
     "fr-p030"
    ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p385",
+   "tipo": "palavra",
+   "fr": "comment",
+   "pt": "como",
+   "aceitas": [
+    "como",
+    "de que jeito",
+    "de que maneira"
+   ],
+   "distratores": [
+    "quando",
+    "onde",
+    "por que",
+    "quem"
+   ],
+   "es": "cómo",
+   "aceitasEs": [
+    "cómo",
+    "como",
+    "de qué manera"
+   ],
+   "distratoresEs": [
+    "cuándo",
+    "dónde",
+    "por qué",
+    "quién"
+   ],
+   "en": "how",
+   "aceitasEn": [
+    "how"
+   ],
+   "distratoresEn": [
+    "when",
+    "where",
+    "why",
+    "who"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Para perguntar: «Comment ça va ?», como vai?; «Comment tu t'appelles ?», como você se chama? Sozinho, «Comment ?» pede para repetir. Na comparação, como é «comme»: «comme toi».",
+   "notaEs": "Para preguntar: «Comment ça va ?», ¿qué tal?; «Comment tu t'appelles ?», ¿cómo te llamas? Solo, «Comment ?» pide que te repitan. En la comparación, como es «comme»: «comme toi».",
+   "notaEn": "For questions: «Comment ça va ?», how are you?; «Comment tu t'appelles ?», what's your name? On its own, «Comment ?» means sorry, what? A comment, the noun, is «un commentaire»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p386",
+   "tipo": "palavra",
+   "fr": "le garçon",
+   "pt": "o menino",
+   "aceitas": [
+    "menino",
+    "o garoto",
+    "o rapaz",
+    "o moco",
+    "o guri"
+   ],
+   "distratores": [
+    "o primo",
+    "o senhor",
+    "o noivo",
+    "o tio"
+   ],
+   "es": "el chico",
+   "aceitasEs": [
+    "el chico",
+    "chico",
+    "el muchacho",
+    "el chaval"
+   ],
+   "distratoresEs": [
+    "el primo",
+    "el señor",
+    "el novio",
+    "el tío"
+   ],
+   "en": "the boy",
+   "aceitasEn": [
+    "boy",
+    "the boy",
+    "young man",
+    "lad",
+    "kid"
+   ],
+   "distratoresEn": [
+    "the cousin",
+    "the gentleman",
+    "the groom",
+    "the uncle"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "família",
+    "falso-amigo"
+   ],
+   "nota": "É o menino, o rapaz: «un petit garçon», um menininho; «mon garçon», meu filho. Garçom ele só era no francês antigo, «garçon de café»; hoje o garçom é «le serveur».\n🇫🇷 le serveur → 🇧🇷 o garçom",
+   "notaEs": "Es el niño, el chico: «un petit garçon», un niño pequeño; «mon garçon», mi hijo. Antes también era el mesero («garçon de café»), de ahí el «garzón» de Chile; hoy es «le serveur».\n🇫🇷 le serveur → 🇪🇸 el mesero",
+   "notaEn": "A boy or a young man: «un petit garçon», a little boy; «mon garçon», my son. The waiter sense English borrowed is dated in France: a waiter today is «le serveur»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p387",
+   "tipo": "palavra",
+   "fr": "la façon",
+   "pt": "a maneira",
+   "aceitas": [
+    "maneira",
+    "o jeito",
+    "o modo",
+    "a forma"
+   ],
+   "distratores": [
+    "a fachada",
+    "a facção",
+    "a razão",
+    "a vontade"
+   ],
+   "es": "la manera",
+   "aceitasEs": [
+    "la manera",
+    "manera",
+    "la forma",
+    "el modo"
+   ],
+   "distratoresEs": [
+    "la fachada",
+    "la facción",
+    "la razón",
+    "la voluntad"
+   ],
+   "en": "the way",
+   "aceitasEn": [
+    "way",
+    "the way",
+    "manner",
+    "the manner"
+   ],
+   "distratoresEn": [
+    "the facade",
+    "the faction",
+    "the reason",
+    "the will"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Feminino, e o «ç» soa como «s»: «de quelle façon ?», de que jeito? «De toute façon», de qualquer jeito. Sinônimo: «la manière». A fachada é «la façade».",
+   "notaEs": "Femenino, y la «ç» suena como «s»: «de quelle façon ?», ¿de qué manera? «De toute façon», de todos modos. Sinónimo: «la manière». La fachada es «la façade».",
+   "notaEn": "Feminine: «de quelle façon ?», in what way? «De toute façon», anyway. English fashion comes from it, but fashion as style is «la mode»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p388",
+   "tipo": "palavra",
+   "fr": "le corps",
+   "pt": "o corpo",
+   "aceitas": [
+    "corpo",
+    "o cadaver"
+   ],
+   "distratores": [
+    "a alma",
+    "a pele",
+    "o osso",
+    "o coração"
+   ],
+   "es": "el cuerpo",
+   "aceitasEs": [
+    "el cuerpo",
+    "cuerpo",
+    "el cadáver"
+   ],
+   "distratoresEs": [
+    "el alma",
+    "la piel",
+    "el hueso",
+    "el corazón"
+   ],
+   "en": "the body",
+   "aceitasEn": [
+    "body",
+    "the body",
+    "corpse",
+    "the corpse",
+    "corps"
+   ],
+   "distratoresEn": [
+    "the soul",
+    "the skin",
+    "the bone",
+    "the heart"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "corpo"
+   ],
+   "nota": "Masculino, igual no plural: «le corps», «les corps». O «ps» é mudo, e soa «cor». «Le corps humain», o corpo humano.",
+   "notaEs": "Masculino, igual en plural: «le corps», «les corps». La «ps» es muda, y suena «cor». «Le corps humain», el cuerpo humano.",
+   "notaEn": "Masculine, the same in the plural: «le corps», «les corps». The «ps» is silent, as in English corps. It also means a dead body: «on a retrouvé le corps»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p389",
+   "tipo": "palavra",
+   "fr": "surtout",
+   "pt": "principalmente",
+   "aceitas": [
+    "principalmente",
+    "sobretudo",
+    "especialmente",
+    "acima de tudo",
+    "em especial"
+   ],
+   "distratores": [
+    "apenas",
+    "raramente",
+    "finalmente",
+    "novamente"
+   ],
+   "es": "sobre todo",
+   "aceitasEs": [
+    "sobre todo",
+    "sobretodo",
+    "especialmente",
+    "principalmente",
+    "ante todo"
+   ],
+   "distratoresEs": [
+    "solamente",
+    "raramente",
+    "finalmente",
+    "nuevamente"
+   ],
+   "en": "especially",
+   "aceitasEn": [
+    "especially",
+    "above all",
+    "mostly",
+    "mainly",
+    "particularly",
+    "in particular"
+   ],
+   "distratoresEn": [
+    "only",
+    "rarely",
+    "finally",
+    "again"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "«Sur» + «tout», sobre tudo: «j'aime surtout le fromage», gosto principalmente de queijo. Num pedido, reforça: «surtout, ne dis rien !», não vá dizer nada! E «surtout pas !», de jeito nenhum!",
+   "notaEs": "«Sur» + «tout», como sobre todo: «j'aime surtout le fromage», me gusta sobre todo el queso. En un pedido, insiste: «surtout, ne dis rien !», ¡ni se te ocurra decir nada! Y «surtout pas !», ¡ni hablar!",
+   "notaEn": "«Sur» + «tout», over everything: «j'aime surtout le fromage», I especially like cheese. With a request, it insists: «surtout, ne dis rien !», whatever you do, don't say anything! «Surtout pas !», definitely not!"
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p390",
+   "tipo": "palavra",
+   "fr": "se souvenir",
+   "pt": "lembrar-se",
+   "aceitas": [
+    "lembrar se",
+    "se lembrar",
+    "lembrar",
+    "recordar",
+    "recordar se",
+    "se recordar"
+   ],
+   "distratores": [
+    "esquecer-se",
+    "arrepender-se",
+    "acostumar-se",
+    "divertir-se"
+   ],
+   "es": "acordarse",
+   "aceitasEs": [
+    "acordarse",
+    "acordarse de",
+    "recordar"
+   ],
+   "distratoresEs": [
+    "olvidarse",
+    "arrepentirse",
+    "acostumbrarse",
+    "divertirse"
+   ],
+   "en": "to remember",
+   "aceitasEn": [
+    "to remember",
+    "remember",
+    "to recall",
+    "recall"
+   ],
+   "distratoresEn": [
+    "to forget",
+    "to regret",
+    "to get used to",
+    "to have fun"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "Com «de»: «je me souviens de toi», eu me lembro de você. Conjuga como «venir»: je me souviens, nous nous souvenons. «Un souvenir» é a lembrança, e também o suvenir de viagem.",
+   "notaEs": "Con «de», como acordarse: «je me souviens de toi», me acuerdo de ti. Se conjuga como «venir»: je me souviens, nous nous souvenons. «Un souvenir» es el recuerdo, también el que se trae de un viaje.",
+   "notaEn": "With «de»: «je me souviens de toi», I remember you. Conjugated like «venir»: je me souviens, nous nous souvenons. «Un souvenir» is a memory as well as a keepsake."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p391",
+   "tipo": "palavra",
+   "fr": "le client",
+   "aceitasFr": [
+    "la cliente"
+   ],
+   "pt": "o cliente",
+   "aceitas": [
+    "cliente",
+    "a cliente",
+    "o fregues",
+    "a freguesa"
+   ],
+   "distratores": [
+    "o vendedor",
+    "o fornecedor",
+    "o patrão",
+    "o gerente"
+   ],
+   "es": "el cliente",
+   "aceitasEs": [
+    "el cliente",
+    "cliente",
+    "la cliente",
+    "la clienta"
+   ],
+   "distratoresEs": [
+    "el vendedor",
+    "el proveedor",
+    "el patrón",
+    "el gerente"
+   ],
+   "en": "the customer",
+   "aceitasEn": [
+    "customer",
+    "the customer",
+    "client",
+    "the client"
+   ],
+   "distratoresEn": [
+    "the seller",
+    "the supplier",
+    "the boss",
+    "the manager"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "compras",
+    "trabalho"
+   ],
+   "nota": "Feminino «la cliente». Na loja e no escritório: «un client fidèle», um cliente fiel. O conjunto deles é «la clientèle», a clientela.",
+   "notaEs": "Femenino «la cliente». En la tienda y en la oficina: «un client fidèle», un cliente fiel. Todos juntos son «la clientèle», la clientela.",
+   "notaEn": "Feminine «la cliente». Both a store's customer and a lawyer's client: «un client fidèle», a loyal customer. All of them together are «la clientèle»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p392",
+   "tipo": "palavra",
+   "fr": "la sorte",
+   "pt": "o tipo",
+   "aceitas": [
+    "tipo",
+    "a especie",
+    "o genero",
+    "a classe"
+   ],
+   "distratores": [
+    "o sorteio",
+    "a saída",
+    "o destino",
+    "o tamanho"
+   ],
+   "es": "el tipo",
+   "aceitasEs": [
+    "el tipo",
+    "tipo",
+    "la clase",
+    "la especie",
+    "el género"
+   ],
+   "distratoresEs": [
+    "el sorteo",
+    "la salida",
+    "el destino",
+    "el tamaño"
+   ],
+   "en": "the sort",
+   "aceitasEn": [
+    "sort",
+    "the sort",
+    "type",
+    "the type"
+   ],
+   "distratoresEn": [
+    "the raffle",
+    "the exit",
+    "the fate",
+    "the size"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "cotidiano",
+    "falso-amigo"
+   ],
+   "nota": "Quase sempre em «une sorte de», uma espécie de: «une sorte de gâteau». «En quelque sorte», de certa forma. A sorte de quem ganha é «la chance»; o destino, «le sort»; a saída, «la sortie».\n🇫🇷 la chance → 🇧🇷 a sorte\n🇫🇷 le sort → 🇧🇷 o destino",
+   "notaEs": "Casi siempre en «une sorte de», una especie de: «une sorte de gâteau». «En quelque sorte», en cierto modo. La suerte de quien gana es «la chance»; el destino, «le sort»; la salida, «la sortie».\n🇫🇷 la chance → 🇪🇸 la suerte\n🇫🇷 le sort → 🇪🇸 el destino",
+   "notaEn": "Mostly in «une sorte de», a sort of: «une sorte de gâteau». «En quelque sorte», in a way. Don't mix it up with «la sortie», the exit, or «le sort», fate."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p393",
+   "tipo": "palavra",
+   "fr": "le président",
+   "aceitasFr": [
+    "la présidente"
+   ],
+   "pt": "o presidente",
+   "aceitas": [
+    "presidente",
+    "a presidente",
+    "a presidenta"
+   ],
+   "distratores": [
+    "o ministro",
+    "o prefeito",
+    "o rei",
+    "o senador"
+   ],
+   "es": "el presidente",
+   "aceitasEs": [
+    "el presidente",
+    "presidente",
+    "la presidenta",
+    "la presidente"
+   ],
+   "distratoresEs": [
+    "el ministro",
+    "el alcalde",
+    "el rey",
+    "el senador"
+   ],
+   "en": "the president",
+   "aceitasEn": [
+    "president",
+    "the president",
+    "chairman",
+    "the chairman"
+   ],
+   "distratoresEn": [
+    "the minister",
+    "the mayor",
+    "the king",
+    "the senator"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "política"
+   ],
+   "nota": "Feminino «la présidente». O da França é «le président de la République»; o da empresa costuma ser «le PDG». O prefeito é «le maire».",
+   "notaEs": "Femenino «la présidente». El de Francia es «le président de la République»; el de una empresa suele ser «le PDG». El alcalde es «le maire».",
+   "notaEn": "Feminine «la présidente». France's is «le président de la République»; a company's chairman and CEO is «le PDG». A mayor is «le maire»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p394",
+   "tipo": "palavra",
+   "fr": "protéger",
+   "pt": "proteger",
+   "aceitas": [
+    "proteger",
+    "defender",
+    "resguardar"
+   ],
+   "distratores": [
+    "abandonar",
+    "ameaçar",
+    "atacar",
+    "prejudicar"
+   ],
+   "es": "proteger",
+   "aceitasEs": [
+    "proteger",
+    "defender",
+    "resguardar"
+   ],
+   "distratoresEs": [
+    "abandonar",
+    "amenazar",
+    "atacar",
+    "perjudicar"
+   ],
+   "en": "to protect",
+   "aceitasEn": [
+    "to protect",
+    "protect",
+    "to shield",
+    "shield",
+    "to defend",
+    "defend"
+   ],
+   "distratoresEn": [
+    "to abandon",
+    "to threaten",
+    "to attack",
+    "to harm"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "Do quê, com «de» ou «contre»: «protéger les enfants du soleil». O acento muda com a sílaba: je protège, nous protégeons; o «e» depois do «g» mantém o som de «j».",
+   "notaEs": "De qué, con «de» o «contre»: «protéger les enfants du soleil». El acento cambia según la sílaba: je protège, nous protégeons; la «e» tras la «g» mantiene el sonido suave.",
+   "notaEn": "From something, with «de» or «contre»: «protéger les enfants du soleil». The accent shifts: je protège, nous protégeons; the «e» after «g» keeps it soft."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p395",
+   "tipo": "palavra",
+   "fr": "s'inquiéter",
+   "pt": "preocupar-se",
+   "aceitas": [
+    "preocupar se",
+    "se preocupar",
+    "ficar preocupado",
+    "ficar preocupada",
+    "inquietar se",
+    "se inquietar"
+   ],
+   "distratores": [
+    "acalmar-se",
+    "irritar-se",
+    "envergonhar-se",
+    "atrasar-se"
+   ],
+   "es": "preocuparse",
+   "aceitasEs": [
+    "preocuparse",
+    "inquietarse",
+    "intranquilizarse"
+   ],
+   "distratoresEs": [
+    "calmarse",
+    "enojarse",
+    "avergonzarse",
+    "retrasarse"
+   ],
+   "en": "to worry",
+   "aceitasEn": [
+    "to worry",
+    "worry",
+    "to be worried",
+    "be worried",
+    "to get worried"
+   ],
+   "distratoresEn": [
+    "to calm down",
+    "to get angry",
+    "to be ashamed",
+    "to be late"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "O uso mais comum: «ne t'inquiète pas», não se preocupe. Por alguém, «pour»: «je m'inquiète pour toi». O acento muda: je m'inquiète, nous nous inquiétons.",
+   "notaEs": "El uso más común: «ne t'inquiète pas», no te preocupes. Por alguien, «pour»: «je m'inquiète pour toi». El acento cambia: je m'inquiète, nous nous inquiétons.",
+   "notaEn": "The commonest use: «ne t'inquiète pas», don't worry. About someone, «pour»: «je m'inquiète pour toi». The adjective «inquiet» means worried, not quiet."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p396",
+   "tipo": "palavra",
+   "fr": "l'image",
+   "aceitasFr": [
+    "une image"
+   ],
+   "pt": "a imagem",
+   "aceitas": [
+    "imagem",
+    "a figura",
+    "a ilustracao",
+    "a gravura"
+   ],
+   "distratores": [
+    "a moldura",
+    "a tela",
+    "a página",
+    "a cor"
+   ],
+   "es": "la imagen",
+   "aceitasEs": [
+    "la imagen",
+    "imagen",
+    "la figura",
+    "la ilustración"
+   ],
+   "distratoresEs": [
+    "el marco",
+    "la pantalla",
+    "la página",
+    "el color"
+   ],
+   "en": "the picture",
+   "aceitasEn": [
+    "picture",
+    "the picture",
+    "image",
+    "the image",
+    "illustration"
+   ],
+   "distratoresEn": [
+    "the frame",
+    "the screen",
+    "the page",
+    "the color"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Feminino, como em português: «une belle image». É também a fama de alguém: «soigner son image», cuidar da imagem. A foto é «la photo».",
+   "notaEs": "Femenino, como en español: «une belle image». También es la fama de alguien: «soigner son image», cuidar su imagen. La foto es «la photo».",
+   "notaEn": "Feminine: «une belle image», a beautiful picture. Also someone's public image: «soigner son image», to look after one's image. A photo is «la photo»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p397",
+   "tipo": "palavra",
+   "fr": "le menton",
+   "pt": "o queixo",
+   "aceitas": [
+    "queixo"
+   ],
+   "distratores": [
+    "a menta",
+    "a testa",
+    "a bochecha",
+    "o pescoço"
+   ],
+   "es": "la barbilla",
+   "aceitasEs": [
+    "la barbilla",
+    "barbilla",
+    "el mentón",
+    "mentón"
+   ],
+   "distratoresEs": [
+    "la menta",
+    "la frente",
+    "la mejilla",
+    "el cuello"
+   ],
+   "en": "the chin",
+   "aceitasEn": [
+    "chin",
+    "the chin"
+   ],
+   "distratoresEn": [
+    "the mint",
+    "the forehead",
+    "the cheek",
+    "the neck"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "corpo"
+   ],
+   "nota": "Masculino: «le menton». A bochecha é «la joue», e a testa, «le front». Não confunda com «la menthe», a hortelã.",
+   "notaEs": "Masculino, como el mentón: «le menton». La mejilla es «la joue», y la frente, «le front». La barba es «la barbe».",
+   "notaEn": "Masculine: «le menton». The cheek is «la joue», the forehead «le front». Don't confuse it with «la menthe», mint."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p398",
+   "tipo": "palavra",
+   "fr": "le bateau",
+   "pt": "o barco",
+   "aceitas": [
+    "barco",
+    "o navio",
+    "a embarcacao",
+    "o bote"
+   ],
+   "distratores": [
+    "o avião",
+    "o trem",
+    "o porto",
+    "a ilha"
+   ],
+   "es": "el barco",
+   "aceitasEs": [
+    "el barco",
+    "barco",
+    "el buque",
+    "el bote",
+    "la embarcación",
+    "el navío"
+   ],
+   "distratoresEs": [
+    "el avión",
+    "el tren",
+    "el puerto",
+    "la isla"
+   ],
+   "en": "the boat",
+   "aceitasEn": [
+    "boat",
+    "the boat",
+    "ship",
+    "the ship"
+   ],
+   "distratoresEn": [
+    "the plane",
+    "the train",
+    "the port",
+    "the island"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "viagem"
+   ],
+   "nota": "Masculino; o «-eau» soa «ô», e o plural leva «x»: «des bateaux». «En bateau», de barco. «Mener quelqu'un en bateau» é enganar alguém.",
+   "notaEs": "Masculino; «-eau» suena «o», y el plural lleva «x»: «des bateaux». «En bateau», en barco. «Mener quelqu'un en bateau» es tomarle el pelo a alguien.",
+   "notaEn": "Masculine; «-eau» sounds like «oh», and the plural takes «x»: «des bateaux». «En bateau», by boat. «Mener quelqu'un en bateau» is to take someone for a ride."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p399",
+   "tipo": "palavra",
+   "fr": "Noël",
+   "pt": "o Natal",
+   "aceitas": [
+    "natal"
+   ],
+   "distratores": [
+    "a Semana Santa",
+    "o Ano-Novo",
+    "o Carnaval",
+    "o Dia de Reis"
+   ],
+   "es": "la Navidad",
+   "aceitasEs": [
+    "la Navidad",
+    "Navidad",
+    "las Navidades"
+   ],
+   "distratoresEs": [
+    "la Semana Santa",
+    "el Año Nuevo",
+    "el Carnaval",
+    "el Día de Reyes"
+   ],
+   "en": "Christmas",
+   "aceitasEn": [
+    "christmas",
+    "xmas"
+   ],
+   "distratoresEn": [
+    "Easter",
+    "New Year's",
+    "Carnival",
+    "Epiphany"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Sem artigo e com maiúscula: «à Noël», no Natal; «Joyeux Noël !», Feliz Natal! O trema separa as vogais: «no-él». O Papai Noel é «le Père Noël».\n🇫🇷 natal → 🇧🇷 natal (de nascimento)",
+   "notaEs": "Masculino y sin artículo: «à Noël», en Navidad; «Joyeux Noël !», ¡Feliz Navidad! La diéresis separa las vocales: «no-el». Papá Noel es «le Père Noël».",
+   "notaEn": "No article, capitalized: «à Noël», at Christmas; «Joyeux Noël !», Merry Christmas! The dieresis splits the vowels: «no-el». Santa Claus is «le Père Noël»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p400",
+   "tipo": "palavra",
+   "fr": "l'oreille",
+   "aceitasFr": [
+    "une oreille"
+   ],
+   "pt": "a orelha / o ouvido",
+   "aceitas": [
+    "orelha",
+    "ouvido",
+    "a orelha",
+    "o ouvido"
+   ],
+   "distratores": [
+    "o olho / a visão",
+    "o nariz / o olfato",
+    "a boca / o paladar",
+    "a pele / o tato"
+   ],
+   "es": "la oreja / el oído",
+   "aceitasEs": [
+    "la oreja",
+    "oreja",
+    "el oído",
+    "oído"
+   ],
+   "distratoresEs": [
+    "el ojo / la vista",
+    "la nariz / el olfato",
+    "la boca / el gusto",
+    "la piel / el tacto"
+   ],
+   "en": "the ear",
+   "aceitasEn": [
+    "ear",
+    "the ear",
+    "the inner ear"
+   ],
+   "distratoresEn": [
+    "the eye",
+    "the nose",
+    "the cheek",
+    "the neck"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "corpo"
+   ],
+   "nota": "Feminino, e é a orelha e o ouvido ao mesmo tempo: «j'ai mal à l'oreille», estou com dor de ouvido. «Dur d'oreille», que ouve mal; «avoir l'oreille musicale», ter bom ouvido.",
+   "notaEs": "Femenino, y es la oreja y el oído a la vez: «j'ai mal à l'oreille», me duele el oído. «Dur d'oreille», duro de oído; «avoir l'oreille musicale», tener buen oído.",
+   "notaEn": "Feminine, and it covers the whole ear, inside and out: «j'ai mal à l'oreille», I have an earache. «Dur d'oreille», hard of hearing; «avoir l'oreille musicale», to have a good ear."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p401",
+   "tipo": "palavra",
+   "fr": "retirer",
+   "pt": "tirar / sacar",
+   "aceitas": [
+    "tirar",
+    "sacar",
+    "retirar",
+    "remover",
+    "recolher"
+   ],
+   "distratores": [
+    "pôr / depositar",
+    "reter / segurar",
+    "guardar / poupar",
+    "esconder / ocultar"
+   ],
+   "es": "quitar / sacar",
+   "aceitasEs": [
+    "quitar",
+    "sacar",
+    "retirar",
+    "quitarse",
+    "recoger"
+   ],
+   "distratoresEs": [
+    "poner / depositar",
+    "retener / sujetar",
+    "guardar / ahorrar",
+    "esconder / ocultar"
+   ],
+   "en": "to remove / to withdraw",
+   "aceitasEn": [
+    "to remove",
+    "remove",
+    "to withdraw",
+    "withdraw",
+    "to take off",
+    "take off",
+    "to take out",
+    "take out",
+    "to take away",
+    "take away",
+    "to take back",
+    "take back",
+    "to pick up",
+    "pick up"
+   ],
+   "distratoresEn": [
+    "to put / to deposit",
+    "to hold / to keep",
+    "to save / to store",
+    "to hide / to conceal"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "Tirar de onde estava: «retirer son manteau», tirar o casaco. No banco, sacar: «retirer de l'argent». Também retirar uma encomenda ou o que se disse: «je retire ce que j'ai dit».\n🇫🇷 tirer → 🇧🇷 puxar",
+   "notaEs": "Quitar algo de donde estaba: «retirer son manteau», quitarse el abrigo. En el banco, sacar: «retirer de l'argent». También recoger un paquete o retirar lo dicho: «je retire ce que j'ai dit».\n🇫🇷 quitter → 🇪🇸 dejar",
+   "notaEn": "To take something away: «retirer son manteau», to take off your coat. At the bank, to withdraw: «retirer de l'argent». Also to pick up a parcel or take back your words: «je retire ce que j'ai dit»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p402",
+   "tipo": "palavra",
+   "fr": "mentir",
+   "pt": "mentir",
+   "aceitas": [
+    "mentir",
+    "contar mentira",
+    "contar mentiras"
+   ],
+   "distratores": [
+    "sentir",
+    "medir",
+    "mencionar",
+    "confessar"
+   ],
+   "es": "mentir",
+   "aceitasEs": [
+    "mentir",
+    "decir mentiras"
+   ],
+   "distratoresEs": [
+    "sentir",
+    "medir",
+    "mencionar",
+    "confesar"
+   ],
+   "en": "to lie",
+   "aceitasEn": [
+    "to lie",
+    "lie",
+    "to tell lies",
+    "tell lies",
+    "to tell a lie",
+    "tell a lie"
+   ],
+   "distratoresEn": [
+    "to feel",
+    "to measure",
+    "to mention",
+    "to confess"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "social"
+   ],
+   "nota": "Mentir para alguém leva «à»: «il m'a menti», ele mentiu para mim. Conjuga como «sentir»: je mens, nous mentons. A mentira é «le mensonge».",
+   "notaEs": "Mentir a alguien lleva «à»: «il m'a menti», me mintió. Se conjuga como «sentir»: je mens, nous mentons. La mentira es «le mensonge».",
+   "notaEn": "Lying to someone takes «à»: «il m'a menti», he lied to me. Conjugated like «sentir»: je mens, nous mentons. A lie is «un mensonge»; lying down is «s'allonger»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p403",
+   "tipo": "palavra",
+   "fr": "posséder",
+   "pt": "possuir",
+   "aceitas": [
+    "possuir",
+    "ser dono de"
+   ],
+   "distratores": [
+    "perder",
+    "precisar",
+    "pousar",
+    "emprestar"
+   ],
+   "es": "poseer",
+   "aceitasEs": [
+    "poseer",
+    "ser dueño de"
+   ],
+   "distratoresEs": [
+    "perder",
+    "necesitar",
+    "posar",
+    "prestar"
+   ],
+   "en": "to own",
+   "aceitasEn": [
+    "to own",
+    "own",
+    "to possess",
+    "possess"
+   ],
+   "distratoresEn": [
+    "to lose",
+    "to need",
+    "to lend",
+    "to borrow"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "economia"
+   ],
+   "nota": "Mais formal que «avoir»: «il possède trois maisons», ele tem três casas. O acento muda: je possède, nous possédons. «Posséder une langue» é dominá-la.",
+   "notaEs": "Más formal que «avoir»: «il possède trois maisons», tiene tres casas. El acento cambia: je possède, nous possédons. «Posséder une langue» es dominarla.",
+   "notaEn": "More formal than «avoir»: «il possède trois maisons», he owns three houses. The accent shifts: je possède, nous possédons. «Posséder une langue» is to master a language."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p404",
+   "tipo": "palavra",
+   "fr": "la poche",
+   "pt": "o bolso",
+   "aceitas": [
+    "bolso"
+   ],
+   "distratores": [
+    "a manga",
+    "a gola",
+    "o botão",
+    "o punho"
+   ],
+   "es": "el bolsillo",
+   "aceitasEs": [
+    "el bolsillo",
+    "bolsillo"
+   ],
+   "distratoresEs": [
+    "la manga",
+    "el cuello",
+    "el botón",
+    "el puño"
+   ],
+   "en": "the pocket",
+   "aceitasEn": [
+    "pocket",
+    "the pocket"
+   ],
+   "distratoresEn": [
+    "the sleeve",
+    "the collar",
+    "the button",
+    "the cuff"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "roupa"
+   ],
+   "nota": "Feminino. «Dans ma poche», no meu bolso. «Un livre de poche», um livro de bolso; «l'argent de poche», a mesada.",
+   "notaEs": "Femenino. «Dans ma poche», en mi bolsillo. «Un livre de poche», un libro de bolsillo; «l'argent de poche», el dinero de bolsillo que se da a los hijos.",
+   "notaEn": "Feminine. «Dans ma poche», in my pocket. «Un livre de poche», a paperback; «l'argent de poche», pocket money, an allowance."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p405",
+   "tipo": "palavra",
+   "fr": "l'emploi",
+   "aceitasFr": [
+    "un emploi"
+   ],
+   "pt": "o emprego",
+   "aceitas": [
+    "emprego",
+    "a vaga",
+    "o uso",
+    "a utilizacao"
+   ],
+   "distratores": [
+    "o empréstimo",
+    "o salário",
+    "a aposentadoria",
+    "o patrão"
+   ],
+   "es": "el empleo",
+   "aceitasEs": [
+    "el empleo",
+    "empleo",
+    "el puesto",
+    "el uso"
+   ],
+   "distratoresEs": [
+    "el préstamo",
+    "el sueldo",
+    "la jubilación",
+    "el jefe"
+   ],
+   "en": "the job",
+   "aceitasEn": [
+    "job",
+    "the job",
+    "employment",
+    "the position",
+    "use",
+    "the use"
+   ],
+   "distratoresEn": [
+    "the loan",
+    "the salary",
+    "the pension",
+    "the boss"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "trabalho"
+   ],
+   "nota": "Masculino. O emprego: «chercher un emploi», procurar emprego. E o uso: «le mode d'emploi», o modo de usar. «L'emploi du temps» é o horário, a agenda.",
+   "notaEs": "Masculino. El empleo: «chercher un emploi», buscar trabajo. Y el uso: «le mode d'emploi», las instrucciones. «L'emploi du temps» es el horario.",
+   "notaEn": "Masculine. A job: «chercher un emploi», to look for a job. Also use: «le mode d'emploi», the instructions. «L'emploi du temps» is a schedule."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p406",
+   "tipo": "palavra",
+   "fr": "nécessaire",
+   "pt": "necessário",
+   "aceitas": [
+    "necessario",
+    "necessaria",
+    "preciso",
+    "precisa"
+   ],
+   "distratores": [
+    "possível",
+    "suficiente",
+    "urgente",
+    "inútil"
+   ],
+   "es": "necesario",
+   "aceitasEs": [
+    "necesario",
+    "necesaria",
+    "preciso",
+    "precisa"
+   ],
+   "distratoresEs": [
+    "posible",
+    "suficiente",
+    "urgente",
+    "inútil"
+   ],
+   "en": "necessary",
+   "aceitasEn": [
+    "necessary",
+    "needed",
+    "required"
+   ],
+   "distratoresEn": [
+    "possible",
+    "sufficient",
+    "urgent",
+    "useless"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "adjetivo",
+    "cotidiano"
+   ],
+   "nota": "Igual no masculino e no feminino. «Il est nécessaire de partir», é preciso ir embora; com «que», pede subjuntivo: «il est nécessaire que tu viennes». «Faire le nécessaire», tomar as providências.",
+   "notaEs": "Igual en masculino y femenino. «Il est nécessaire de partir», hay que irse; con «que», pide subjuntivo: «il est nécessaire que tu viennes». «Faire le nécessaire», hacer lo necesario.",
+   "notaEn": "Same form for masculine and feminine. «Il est nécessaire de partir», we need to leave; with «que» it takes the subjunctive: «il est nécessaire que tu viennes». «Faire le nécessaire», to do what's needed."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p407",
+   "tipo": "palavra",
+   "fr": "inventer",
+   "pt": "inventar",
+   "aceitas": [
+    "inventar",
+    "criar"
+   ],
+   "distratores": [
+    "investir",
+    "imitar",
+    "copiar",
+    "esquecer"
+   ],
+   "es": "inventar",
+   "aceitasEs": [
+    "inventar",
+    "crear"
+   ],
+   "distratoresEs": [
+    "invertir",
+    "imitar",
+    "copiar",
+    "olvidar"
+   ],
+   "en": "to invent / to make up",
+   "aceitasEn": [
+    "to invent",
+    "invent",
+    "to make up",
+    "make up",
+    "to come up with",
+    "come up with",
+    "to devise",
+    "to dream up"
+   ],
+   "distratoresEn": [
+    "to invest / to fund",
+    "to imitate / to copy",
+    "to forget / to overlook",
+    "to admit / to confess"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "Inventar uma máquina e inventar uma desculpa: «il invente toujours des excuses», ele vive inventando desculpas. «Je n'invente rien», não estou inventando nada.",
+   "notaEs": "Inventar una máquina e inventar una excusa: «il invente toujours des excuses», siempre se inventa excusas. «Je n'invente rien», no me lo estoy inventando.",
+   "notaEn": "Both to invent and to make up: «il invente toujours des excuses», he's always making up excuses. «Je n'invente rien», I'm not making this up."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p408",
+   "tipo": "palavra",
+   "fr": "le métier",
+   "pt": "a profissão",
+   "aceitas": [
+    "profissao",
+    "o oficio"
+   ],
+   "distratores": [
+    "o mistério",
+    "o diploma",
+    "o escritório",
+    "o salário"
+   ],
+   "es": "el oficio",
+   "aceitasEs": [
+    "el oficio",
+    "oficio",
+    "la profesión"
+   ],
+   "distratoresEs": [
+    "el misterio",
+    "el título",
+    "la oficina",
+    "el sueldo"
+   ],
+   "en": "the profession",
+   "aceitasEn": [
+    "profession",
+    "the profession",
+    "trade",
+    "the trade",
+    "occupation",
+    "the occupation",
+    "craft",
+    "line of work"
+   ],
+   "distratoresEn": [
+    "the mystery",
+    "the degree",
+    "the office",
+    "the salary"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "trabalho"
+   ],
+   "nota": "Masculino. «Quel est ton métier ?», o que você faz da vida? É o ofício que se aprende: «apprendre un métier». «Avoir du métier» é ter experiência.",
+   "notaEs": "Masculino. «Quel est ton métier ?», ¿a qué te dedicas? Es el oficio que se aprende: «apprendre un métier». «Avoir du métier» es tener experiencia.",
+   "notaEn": "Masculine. «Quel est ton métier ?», what do you do for a living? It's a trade you learn: «apprendre un métier». «Avoir du métier», to be experienced."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p409",
+   "tipo": "palavra",
+   "fr": "le détail",
+   "pt": "o detalhe",
+   "aceitas": [
+    "detalhe",
+    "o pormenor"
+   ],
+   "distratores": [
+    "o defeito",
+    "o resumo",
+    "o conjunto",
+    "o desenho"
+   ],
+   "es": "el detalle",
+   "aceitasEs": [
+    "el detalle",
+    "detalle",
+    "el pormenor"
+   ],
+   "distratoresEs": [
+    "el defecto",
+    "el resumen",
+    "el conjunto",
+    "el dibujo"
+   ],
+   "en": "the detail",
+   "aceitasEn": [
+    "detail",
+    "the detail",
+    "particular"
+   ],
+   "distratoresEn": [
+    "the flaw",
+    "the summary",
+    "the outline",
+    "the drawing"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Masculino. «En détail», em detalhe. No comércio, «au détail» é no varejo, por unidade, e o contrário é «en gros», no atacado.",
+   "notaEs": "Masculino. «En détail», en detalle. En el comercio, «au détail» es al por menor, y lo contrario es «en gros», al por mayor.",
+   "notaEn": "Masculine. «En détail», in detail. In shops, «au détail» means retail, by the unit; the opposite is «en gros», wholesale."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p410",
+   "tipo": "palavra",
+   "fr": "la naissance",
+   "pt": "o nascimento",
+   "aceitas": [
+    "nascimento",
+    "a nascenca"
+   ],
+   "distratores": [
+    "o aniversário",
+    "o casamento",
+    "a gravidez",
+    "o batizado"
+   ],
+   "es": "el nacimiento",
+   "aceitasEs": [
+    "el nacimiento",
+    "nacimiento"
+   ],
+   "distratoresEs": [
+    "el cumpleaños",
+    "la boda",
+    "el embarazo",
+    "el bautizo"
+   ],
+   "en": "the birth",
+   "aceitasEn": [
+    "birth",
+    "the birth"
+   ],
+   "distratoresEn": [
+    "the birthday",
+    "the wedding",
+    "the pregnancy",
+    "the baptism"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "família"
+   ],
+   "nota": "Feminino. «La date de naissance», a data de nascimento; «aveugle de naissance», cego de nascença. O aniversário é «l'anniversaire».",
+   "notaEs": "Femenino. «La date de naissance», la fecha de nacimiento; «aveugle de naissance», ciego de nacimiento. El cumpleaños es «l'anniversaire».",
+   "notaEn": "Feminine. «La date de naissance», date of birth; «aveugle de naissance», blind from birth. A birthday is «un anniversaire»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p411",
+   "tipo": "palavra",
+   "fr": "le titre",
+   "pt": "o título",
+   "aceitas": [
+    "titulo"
+   ],
+   "distratores": [
+    "o capítulo",
+    "o resumo",
+    "o autor",
+    "a página"
+   ],
+   "es": "el título",
+   "aceitasEs": [
+    "el título",
+    "título"
+   ],
+   "distratoresEs": [
+    "el capítulo",
+    "el resumen",
+    "el autor",
+    "la página"
+   ],
+   "en": "the title",
+   "aceitasEn": [
+    "title",
+    "the title",
+    "headline",
+    "heading"
+   ],
+   "distratoresEn": [
+    "the chapter",
+    "the summary",
+    "the author",
+    "the page"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Masculino. O título do livro e o do campeão; «les gros titres», as manchetes. «À titre d'exemple», a título de exemplo. Na linguagem oficial, a passagem é «le titre de transport».",
+   "notaEs": "Masculino. El título del libro y el del campeón; «les gros titres», los titulares. «À titre d'exemple», a modo de ejemplo. En lenguaje oficial, el boleto es «le titre de transport».",
+   "notaEn": "Masculine. A book's title or a champion's; «les gros titres», the headlines. «À titre d'exemple», by way of example. Official signs call a ticket «un titre de transport»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p412",
+   "tipo": "palavra",
+   "fr": "le tableau",
+   "pt": "o quadro",
+   "aceitas": [
+    "quadro",
+    "a lousa",
+    "o quadro negro",
+    "a pintura",
+    "a tabela"
+   ],
+   "distratores": [
+    "a moldura",
+    "a mesa",
+    "o espelho",
+    "o tapete"
+   ],
+   "es": "el cuadro / la pizarra",
+   "aceitasEs": [
+    "el cuadro",
+    "cuadro",
+    "la pizarra",
+    "pizarra",
+    "el pizarrón",
+    "el tablero",
+    "la pintura",
+    "la tabla"
+   ],
+   "distratoresEs": [
+    "el marco / el borde",
+    "la mesa / el escritorio",
+    "el espejo / la ventana",
+    "la alfombra / la cortina"
+   ],
+   "en": "the painting / the board",
+   "aceitasEn": [
+    "painting",
+    "the painting",
+    "board",
+    "the board",
+    "blackboard",
+    "the blackboard",
+    "whiteboard",
+    "the whiteboard",
+    "chart",
+    "the chart"
+   ],
+   "distratoresEn": [
+    "the frame / the edge",
+    "the desk / the shelf",
+    "the mirror / the window",
+    "the rug / the curtain"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "escola"
+   ],
+   "nota": "Masculino. O quadro na parede e o da sala de aula: «écrire au tableau», escrever na lousa. Também a tabela: «un tableau Excel». A moldura é «le cadre».",
+   "notaEs": "Masculino. El cuadro de la pared y la pizarra del aula: «écrire au tableau», escribir en la pizarra. También la tabla: «un tableau Excel». El marco es «le cadre».",
+   "notaEn": "Masculine. A painting on the wall and the board in class: «écrire au tableau», to write on the board. Also a table or chart: «un tableau Excel», a spreadsheet. A frame is «un cadre»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p413",
+   "tipo": "palavra",
+   "fr": "l'unité",
+   "aceitasFr": [
+    "une unité"
+   ],
+   "pt": "a unidade",
+   "aceitas": [
+    "unidade"
+   ],
+   "distratores": [
+    "a medida",
+    "a metade",
+    "a dezena",
+    "a quantidade"
+   ],
+   "es": "la unidad",
+   "aceitasEs": [
+    "la unidad",
+    "unidad"
+   ],
+   "distratoresEs": [
+    "la medida",
+    "la mitad",
+    "la decena",
+    "la cantidad"
+   ],
+   "en": "the unit",
+   "aceitasEn": [
+    "unit",
+    "the unit",
+    "unity",
+    "the unity"
+   ],
+   "distratoresEn": [
+    "the measure",
+    "the half",
+    "the dozen",
+    "the amount"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Feminino, como quase todo nome em «-té». «Le prix à l'unité», o preço por unidade; e a unidade de um grupo: «l'unité nationale».",
+   "notaEs": "Femenino, como casi todo nombre en «-té», que suele ser el «-dad» del español. «Le prix à l'unité», el precio por unidad; «l'unité nationale», la unidad nacional.",
+   "notaEn": "Feminine, like most nouns in «-té», often English «-ty». Both unit and unity: «le prix à l'unité», the price per unit; «l'unité nationale», national unity."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p414",
+   "tipo": "palavra",
+   "fr": "appuyer",
+   "pt": "apertar / apoiar",
+   "aceitas": [
+    "apertar",
+    "apoiar",
+    "pressionar",
+    "encostar",
+    "carregar",
+    "respaldar"
+   ],
+   "distratores": [
+    "puxar / arrancar",
+    "soltar / largar",
+    "girar / torcer",
+    "levantar / erguer"
+   ],
+   "es": "presionar / apoyar",
+   "aceitasEs": [
+    "presionar",
+    "apretar",
+    "pulsar",
+    "oprimir",
+    "apoyar",
+    "respaldar",
+    "recostar"
+   ],
+   "distratoresEs": [
+    "tirar / arrancar",
+    "soltar / largar",
+    "girar / torcer",
+    "levantar / alzar"
+   ],
+   "en": "to press / to lean",
+   "aceitasEn": [
+    "to press",
+    "press",
+    "to push",
+    "push",
+    "to lean",
+    "lean",
+    "to rest",
+    "rest",
+    "to support",
+    "support"
+   ],
+   "distratoresEn": [
+    "to pull / to tear off",
+    "to release / to let go",
+    "to turn / to twist",
+    "to lift / to raise"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "Apertar pede «sur»: «appuyez sur le bouton», aperte o botão. Apoiar é encostar («appuyer son vélo contre le mur») e dar apoio: «j'appuie ta demande». O «y» vira «i» antes de terminação muda: j'appuie.",
+   "notaEs": "Presionar lleva «sur»: «appuyez sur le bouton», pulse el botón. Apoyar es arrimar («appuyer son vélo contre le mur») y respaldar: «j'appuie ta demande». La «y» pasa a «i» delante de terminación muda: j'appuie.",
+   "notaEn": "Pressing takes «sur»: «appuyez sur le bouton», press the button. It's also to lean («appuyer son vélo contre le mur») and to back: «j'appuie ta demande». The «y» becomes «i» before a silent ending: j'appuie."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p415",
+   "tipo": "palavra",
+   "fr": "se disputer",
+   "pt": "brigar",
+   "aceitas": [
+    "brigar",
+    "discutir",
+    "bater boca",
+    "desentender se",
+    "se desentender",
+    "disputar"
+   ],
+   "distratores": [
+    "fazer as pazes",
+    "desculpar-se",
+    "conversar",
+    "reclamar"
+   ],
+   "es": "pelearse",
+   "aceitasEs": [
+    "pelearse",
+    "pelear",
+    "discutir",
+    "reñir",
+    "disputarse"
+   ],
+   "distratoresEs": [
+    "reconciliarse",
+    "disculparse",
+    "conversar",
+    "quejarse"
+   ],
+   "en": "to argue",
+   "aceitasEn": [
+    "to argue",
+    "argue",
+    "to fight",
+    "fight",
+    "to quarrel",
+    "quarrel",
+    "to have a fight",
+    "have a fight",
+    "to fall out",
+    "fall out",
+    "to fight over",
+    "fight over"
+   ],
+   "distratoresEn": [
+    "to agree",
+    "to apologize",
+    "to chat",
+    "to complain"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "social"
+   ],
+   "nota": "Brigar, discutir feio: «ils se disputent tout le temps», eles vivem brigando. «Se disputer quelque chose» é disputar algo, e conversar, debater, é «discuter».\n🇫🇷 discuter → 🇧🇷 conversar",
+   "notaEs": "Pelearse, discutir fuerte: «ils se disputent tout le temps», se pelean todo el tiempo. «Se disputer quelque chose» es disputarse algo, y conversar, debatir, es «discuter».\n🇫🇷 discuter → 🇪🇸 conversar",
+   "notaEn": "Reciprocal, with «se»: «ils se disputent tout le temps», they're always arguing. «Se disputer quelque chose» is to fight over something. To discuss, or just to chat, is «discuter»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p416",
+   "tipo": "palavra",
+   "fr": "rapprocher",
+   "pt": "aproximar",
+   "aceitas": [
+    "aproximar",
+    "juntar",
+    "unir",
+    "reaproximar",
+    "trazer para perto",
+    "puxar para perto"
+   ],
+   "distratores": [
+    "afastar",
+    "aprofundar",
+    "apressar",
+    "atrasar"
+   ],
+   "es": "acercar",
+   "aceitasEs": [
+    "acercar",
+    "aproximar",
+    "arrimar",
+    "juntar",
+    "unir"
+   ],
+   "distratoresEs": [
+    "alejar",
+    "profundizar",
+    "apresurar",
+    "atrasar"
+   ],
+   "en": "to bring closer",
+   "aceitasEn": [
+    "to bring closer",
+    "bring closer",
+    "to move closer",
+    "move closer",
+    "to draw closer",
+    "draw closer",
+    "to bring together",
+    "bring together",
+    "to bring nearer",
+    "bring nearer"
+   ],
+   "distratoresEn": [
+    "to push away",
+    "to deepen",
+    "to hurry up",
+    "to delay"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "Trazer para mais perto: «rapproche ta chaise», puxe a cadeira para mais perto. Também aproxima pessoas: «le voyage nous a rapprochés». Com «se», aproximar-se: «se rapprocher de la fenêtre».",
+   "notaEs": "Acercar algo: «rapproche ta chaise», acerca la silla. También acerca a las personas: «le voyage nous a rapprochés». Con «se», acercarse: «se rapprocher de la fenêtre».",
+   "notaEn": "To move something nearer: «rapproche ta chaise», bring your chair closer. Also to bring people together: «le voyage nous a rapprochés». With «se», to get closer: «se rapprocher de la fenêtre»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p417",
+   "tipo": "palavra",
+   "fr": "supérieur",
+   "aceitasFr": [
+    "supérieure"
+   ],
+   "pt": "superior",
+   "aceitas": [
+    "superior",
+    "maior",
+    "mais alto",
+    "mais alta",
+    "de cima"
+   ],
+   "distratores": [
+    "inferior",
+    "anterior",
+    "exterior",
+    "posterior"
+   ],
+   "es": "superior",
+   "aceitasEs": [
+    "superior",
+    "mayor",
+    "más alto",
+    "más alta",
+    "de arriba"
+   ],
+   "distratoresEs": [
+    "inferior",
+    "anterior",
+    "exterior",
+    "posterior"
+   ],
+   "en": "higher / superior",
+   "aceitasEn": [
+    "higher",
+    "superior",
+    "upper",
+    "greater",
+    "above"
+   ],
+   "distratoresEn": [
+    "lower / inferior",
+    "earlier / previous",
+    "outer / external",
+    "later / subsequent"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "adjetivo",
+    "cotidiano"
+   ],
+   "nota": "Feminino «supérieure». Mais alto ou maior: «l'étage supérieur», o andar de cima; «supérieur à 10», acima de 10. «L'enseignement supérieur», o ensino superior.",
+   "notaEs": "Femenino «supérieure». Más alto o mayor: «l'étage supérieur», el piso de arriba; «supérieur à 10», más de 10. «L'enseignement supérieur», la educación superior.",
+   "notaEn": "Feminine «supérieure». Upper, higher or better: «l'étage supérieur», the floor above; «supérieur à 10», over 10. «L'enseignement supérieur», higher education."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p418",
+   "tipo": "palavra",
+   "fr": "échanger",
+   "pt": "trocar",
+   "aceitas": [
+    "trocar",
+    "intercambiar",
+    "permutar"
+   ],
+   "distratores": [
+    "emprestar",
+    "devolver",
+    "vender",
+    "dividir"
+   ],
+   "es": "intercambiar",
+   "aceitasEs": [
+    "intercambiar",
+    "cambiar",
+    "canjear",
+    "trocar"
+   ],
+   "distratoresEs": [
+    "prestar",
+    "devolver",
+    "vender",
+    "repartir"
+   ],
+   "en": "to exchange",
+   "aceitasEn": [
+    "to exchange",
+    "exchange",
+    "to swap",
+    "swap",
+    "to trade",
+    "trade",
+    "to switch",
+    "switch"
+   ],
+   "distratoresEn": [
+    "to lend",
+    "to return",
+    "to sell",
+    "to divide"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "compras"
+   ],
+   "nota": "Trocar uma coisa por outra, com «contre»: «échanger un pull contre un autre». E trocar palavras: «on a échangé quelques mots». Trocar de roupa ou de lugar é «changer de».",
+   "notaEs": "Intercambiar una cosa por otra, con «contre»: «échanger un pull contre un autre», cambiar un suéter por otro. Cambiarse de ropa o de sitio es «changer de».",
+   "notaEn": "To exchange one thing for another, with «contre»: «échanger un pull contre un autre». Also to exchange words: «on a échangé quelques mots». To change clothes or seats is «changer de»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p419",
+   "tipo": "palavra",
+   "fr": "joyeux",
+   "aceitasFr": [
+    "joyeuse"
+   ],
+   "pt": "alegre",
+   "aceitas": [
+    "alegre",
+    "feliz",
+    "jovial"
+   ],
+   "distratores": [
+    "jovem",
+    "triste",
+    "cansado",
+    "nervoso"
+   ],
+   "es": "alegre",
+   "aceitasEs": [
+    "alegre",
+    "feliz",
+    "contenta",
+    "jovial"
+   ],
+   "distratoresEs": [
+    "joven",
+    "triste",
+    "cansado",
+    "nervioso"
+   ],
+   "en": "joyful",
+   "aceitasEn": [
+    "joyful",
+    "joyous",
+    "cheerful",
+    "merry",
+    "jolly"
+   ],
+   "distratoresEn": [
+    "young",
+    "sad",
+    "tired",
+    "nervous"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "adjetivo",
+    "social"
+   ],
+   "nota": "Feminino «joyeuse». Cheio de alegria («un enfant joyeux»), e é a palavra das festas: «Joyeux Noël !», Feliz Natal! «Joyeux anniversaire !», Feliz aniversário!",
+   "notaEs": "Femenino «joyeuse». Lleno de alegría («un enfant joyeux»), y es la palabra de las fiestas: «Joyeux Noël !», ¡Feliz Navidad! «Joyeux anniversaire !», ¡Feliz cumpleaños!",
+   "notaEn": "Feminine «joyeuse». Full of joy («un enfant joyeux»), and the word for holiday greetings: «Joyeux Noël !», Merry Christmas! «Joyeux anniversaire !», Happy birthday!"
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p420",
+   "tipo": "palavra",
+   "fr": "interrompre",
+   "pt": "interromper",
+   "aceitas": [
+    "interromper",
+    "cortar",
+    "suspender"
+   ],
+   "distratores": [
+    "interpretar",
+    "intervir",
+    "interrogar",
+    "irritar"
+   ],
+   "es": "interrumpir",
+   "aceitasEs": [
+    "interrumpir",
+    "cortar",
+    "suspender"
+   ],
+   "distratoresEs": [
+    "interpretar",
+    "intervenir",
+    "interrogar",
+    "irritar"
+   ],
+   "en": "to interrupt",
+   "aceitasEn": [
+    "to interrupt",
+    "interrupt",
+    "to break off",
+    "break off",
+    "to cut off",
+    "cut off",
+    "to suspend",
+    "suspend"
+   ],
+   "distratoresEn": [
+    "to interpret",
+    "to intervene",
+    "to question",
+    "to irritate"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "social"
+   ],
+   "nota": "Conjuga como «rompre», com o «t» mudo no «il»: «il interrompt». «Ne m'interromps pas !», não me interrompa! «S'interrompre», parar no meio.",
+   "notaEs": "Se conjuga como «rompre», con la «t» muda en «il interrompt». «Ne m'interromps pas !», ¡no me interrumpas! «S'interrompre», pararse a la mitad.",
+   "notaEn": "Conjugated like «rompre», with a silent «t» in «il interrompt». «Ne m'interromps pas !», don't interrupt me! «S'interrompre», to break off."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p421",
+   "tipo": "palavra",
+   "fr": "le cabinet",
+   "pt": "o consultório",
+   "aceitas": [
+    "consultorio",
+    "o escritorio",
+    "o gabinete",
+    "a clinica"
+   ],
+   "distratores": [
+    "a farmácia",
+    "o hospital",
+    "a recepção",
+    "o armazém"
+   ],
+   "es": "el consultorio",
+   "aceitasEs": [
+    "el consultorio",
+    "consultorio",
+    "la consulta",
+    "el despacho",
+    "el bufete",
+    "el gabinete"
+   ],
+   "distratoresEs": [
+    "la farmacia",
+    "el hospital",
+    "la recepción",
+    "el almacén"
+   ],
+   "en": "the office",
+   "aceitasEn": [
+    "office",
+    "the office",
+    "practice",
+    "the practice",
+    "firm",
+    "the firm",
+    "the doctor's office",
+    "surgery",
+    "the surgery"
+   ],
+   "distratoresEn": [
+    "the cupboard",
+    "the pharmacy",
+    "the hospital",
+    "the lobby"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "saúde",
+    "falso-amigo"
+   ],
+   "nota": "Masculino. O consultório do médico («le cabinet médical») e o escritório de profissionais: «un cabinet d'avocats», um escritório de advocacia. No governo, o gabinete do ministro.",
+   "notaEs": "Masculino. El consultorio del médico («le cabinet médical») y el despacho de profesionales: «un cabinet d'avocats», un bufete de abogados. En el gobierno, el gabinete del ministro.",
+   "notaEn": "Not a kitchen cabinet, which is «un placard». It's a doctor's office («le cabinet médical») or a firm: «un cabinet d'avocats», a law firm. In government, a minister's staff."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p422",
+   "tipo": "palavra",
+   "fr": "la tradition",
+   "pt": "a tradição",
+   "aceitas": [
+    "tradicao"
+   ],
+   "distratores": [
+    "a tradução",
+    "a traição",
+    "a transição",
+    "a tendência"
+   ],
+   "es": "la tradición",
+   "aceitasEs": [
+    "la tradición",
+    "tradición"
+   ],
+   "distratoresEs": [
+    "la traducción",
+    "la traición",
+    "la transición",
+    "la tendencia"
+   ],
+   "en": "the tradition",
+   "aceitasEn": [
+    "tradition",
+    "the tradition",
+    "custom"
+   ],
+   "distratoresEn": [
+    "the translation",
+    "the betrayal",
+    "the transition",
+    "the trend"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Feminino, como todo nome em «-tion». «Par tradition», por tradição. A tradução é «la traduction», e a traição, «la trahison».",
+   "notaEs": "Femenino, como todo nombre en «-tion». «Par tradition», por tradición. La traducción es «la traduction», y la traición, «la trahison».",
+   "notaEn": "Feminine, like every noun in «-tion». «Par tradition», traditionally. Don't mix it up with «la traduction», a translation."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p423",
+   "tipo": "palavra",
+   "fr": "le garage",
+   "pt": "a garagem / a oficina",
+   "aceitas": [
+    "garagem",
+    "oficina",
+    "a garagem",
+    "a oficina",
+    "a oficina mecanica",
+    "a mecanica"
+   ],
+   "distratores": [
+    "o porão / o sótão",
+    "a varanda / o quintal",
+    "a fábrica / o armazém",
+    "a estrada / a ponte"
+   ],
+   "es": "el garaje / el taller",
+   "aceitasEs": [
+    "el garaje",
+    "garaje",
+    "el taller",
+    "taller",
+    "el taller mecánico",
+    "la cochera",
+    "el garage"
+   ],
+   "distratoresEs": [
+    "el sótano / el desván",
+    "el balcón / el patio",
+    "la fábrica / el almacén",
+    "la carretera / el puente"
+   ],
+   "en": "the garage",
+   "aceitasEn": [
+    "garage",
+    "the garage",
+    "the repair shop",
+    "the auto shop",
+    "the shop"
+   ],
+   "distratoresEn": [
+    "the basement",
+    "the porch",
+    "the warehouse",
+    "the driveway"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "casa"
+   ],
+   "nota": "Masculino, como quase todo nome em «-age». Guarda o carro e também o conserta: «ma voiture est au garage», meu carro está na oficina. O mecânico é «le garagiste».",
+   "notaEs": "Masculino. Guarda el coche y también lo repara: «ma voiture est au garage», mi coche está en el taller. El mecánico es «le garagiste».",
+   "notaEn": "Masculine. Both where the car is kept and where it's fixed: «ma voiture est au garage», my car is in the shop. The mechanic is «le garagiste»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p424",
+   "tipo": "palavra",
+   "fr": "comparer",
+   "pt": "comparar",
+   "aceitas": [
+    "comparar",
+    "confrontar",
+    "cotejar"
+   ],
+   "distratores": [
+    "comprar",
+    "compartilhar",
+    "comparecer",
+    "preparar"
+   ],
+   "es": "comparar",
+   "aceitasEs": [
+    "comparar",
+    "cotejar"
+   ],
+   "distratoresEs": [
+    "comprar",
+    "compartir",
+    "comparecer",
+    "preparar"
+   ],
+   "en": "to compare",
+   "aceitasEn": [
+    "to compare",
+    "compare",
+    "to liken",
+    "liken"
+   ],
+   "distratoresEn": [
+    "to buy",
+    "to share",
+    "to appear",
+    "to prepare"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "Com «à» ou «avec»: «comparer les prix», comparar os preços; «on le compare à son père», todo mundo o compara com o pai. A comparação é «la comparaison».",
+   "notaEs": "Con «à» o «avec»: «comparer les prix», comparar los precios; «on le compare à son père», lo comparan con su padre. La comparación es «la comparaison».",
+   "notaEn": "With «à» or «avec»: «comparer les prix», to compare prices; «on le compare à son père», people compare him to his father. A comparison is «une comparaison»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p425",
+   "tipo": "palavra",
+   "fr": "mystérieux",
+   "aceitasFr": [
+    "mystérieuse"
+   ],
+   "pt": "misterioso",
+   "aceitas": [
+    "misterioso",
+    "misteriosa",
+    "enigmatico",
+    "enigmatica"
+   ],
+   "distratores": [
+    "milagroso",
+    "miserável",
+    "meticuloso",
+    "famoso"
+   ],
+   "es": "misterioso",
+   "aceitasEs": [
+    "misterioso",
+    "misteriosa",
+    "enigmático",
+    "enigmática"
+   ],
+   "distratoresEs": [
+    "milagroso",
+    "miserable",
+    "meticuloso",
+    "famoso"
+   ],
+   "en": "mysterious",
+   "aceitasEn": [
+    "mysterious",
+    "enigmatic"
+   ],
+   "distratoresEn": [
+    "miraculous",
+    "miserable",
+    "meticulous",
+    "famous"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "adjetivo",
+    "cultura"
+   ],
+   "nota": "Feminino «mystérieuse». Escreve-se com «y», como «le mystère», o mistério: «un inconnu mystérieux», um desconhecido misterioso.",
+   "notaEs": "Femenino «mystérieuse». Se escribe con «y», como «le mystère», el misterio: «un inconnu mystérieux», un desconocido misterioso.",
+   "notaEn": "Feminine «mystérieuse». From «le mystère», mystery: «un inconnu mystérieux», a mysterious stranger."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p426",
+   "tipo": "palavra",
+   "fr": "entièrement",
+   "pt": "inteiramente",
+   "aceitas": [
+    "inteiramente",
+    "completamente",
+    "por inteiro",
+    "por completo"
+   ],
+   "distratores": [
+    "parcialmente",
+    "raramente",
+    "lentamente",
+    "certamente"
+   ],
+   "es": "enteramente",
+   "aceitasEs": [
+    "enteramente",
+    "completamente",
+    "por completo",
+    "del todo",
+    "íntegramente"
+   ],
+   "distratoresEs": [
+    "parcialmente",
+    "raramente",
+    "lentamente",
+    "ciertamente"
+   ],
+   "en": "entirely",
+   "aceitasEn": [
+    "entirely",
+    "completely",
+    "fully",
+    "wholly"
+   ],
+   "distratoresEn": [
+    "partially",
+    "rarely",
+    "slowly",
+    "certainly"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Vem de «entier», inteiro, e leva «è»: «entièrement». «La maison est entièrement rénovée», a casa foi inteiramente reformada.",
+   "notaEs": "Viene de «entier», entero, y lleva «è»: «entièrement». «La maison est entièrement rénovée», la casa está totalmente reformada.",
+   "notaEn": "From «entier», whole, with an «è»: «entièrement». «La maison est entièrement rénovée», the house has been entirely renovated."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p427",
+   "tipo": "palavra",
+   "fr": "l'urgence",
+   "pt": "a urgência / a emergência",
+   "aceitas": [
+    "urgencia",
+    "emergencia",
+    "a urgencia",
+    "a emergencia",
+    "o pronto-socorro",
+    "pronto-socorro",
+    "pronto socorro"
+   ],
+   "distratores": [
+    "a agência / o escritório",
+    "a exigência / a cobrança",
+    "a demora / o atraso",
+    "a calma / a tranquilidade"
+   ],
+   "es": "la urgencia / la emergencia",
+   "aceitasEs": [
+    "la urgencia",
+    "urgencia",
+    "la emergencia",
+    "emergencia",
+    "las urgencias",
+    "urgencias"
+   ],
+   "distratoresEs": [
+    "la agencia / la oficina",
+    "la exigencia / la demanda",
+    "la demora / el retraso",
+    "la calma / la tranquilidad"
+   ],
+   "en": "urgency / emergency",
+   "aceitasEn": [
+    "urgency",
+    "emergency",
+    "the emergency",
+    "an emergency",
+    "the er",
+    "er",
+    "emergency room",
+    "the emergency room"
+   ],
+   "distratoresEn": [
+    "agency / office",
+    "demand / requirement",
+    "delay / holdup",
+    "calm / quiet"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "saúde"
+   ],
+   "nota": "Feminino. A pressa do que não pode esperar («en urgence», às pressas) e a emergência: «en cas d'urgence», em caso de emergência. No plural, «les urgences» é o pronto-socorro.",
+   "notaEs": "Femenino. La prisa de lo que no puede esperar («en urgence», de urgencia) y la emergencia: «en cas d'urgence», en caso de emergencia. En plural, «les urgences» son las urgencias del hospital.",
+   "notaEn": "Feminine. Urgency («en urgence», urgently) and an emergency: «en cas d'urgence», in case of emergency. In the plural, «les urgences» is the ER."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p428",
+   "tipo": "palavra",
+   "fr": "douter",
+   "pt": "duvidar",
+   "aceitas": [
+    "duvidar",
+    "ter duvidas"
+   ],
+   "distratores": [
+    "dourar",
+    "dobrar",
+    "durar",
+    "ousar"
+   ],
+   "es": "dudar",
+   "aceitasEs": [
+    "dudar",
+    "tener dudas"
+   ],
+   "distratoresEs": [
+    "dorar",
+    "doblar",
+    "durar",
+    "osar"
+   ],
+   "en": "to doubt",
+   "aceitasEn": [
+    "to doubt",
+    "doubt",
+    "to have doubts"
+   ],
+   "distratoresEn": [
+    "to gild",
+    "to double",
+    "to last",
+    "to dare"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "Pede «de»: «je doute de sa sincérité», duvido da sinceridade dele; com «que», vem o subjuntivo: «je doute qu'il vienne». Pronominal, é desconfiar: «je m'en doutais», eu já imaginava.",
+   "notaEs": "Lleva «de»: «je doute de sa sincérité», dudo de su sinceridad; con «que», va el subjuntivo: «je doute qu'il vienne». En pronominal es sospechar: «je m'en doutais», ya me lo imaginaba.",
+   "notaEn": "Takes «de»: «je doute de sa sincérité», I doubt his sincerity; with «que», the subjunctive follows: «je doute qu'il vienne». Reflexive, it means to suspect: «je m'en doutais», I thought as much."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p429",
+   "tipo": "palavra",
+   "fr": "la monnaie",
+   "pt": "o troco / a moeda",
+   "aceitas": [
+    "troco",
+    "moeda",
+    "o troco",
+    "a moeda",
+    "trocado",
+    "os trocados",
+    "as moedas",
+    "o dinheiro trocado"
+   ],
+   "distratores": [
+    "a conta / o recibo",
+    "a carteira / a bolsa",
+    "o salário / o pagamento",
+    "o desconto / a promoção"
+   ],
+   "es": "el cambio / la moneda",
+   "aceitasEs": [
+    "el cambio",
+    "cambio",
+    "la moneda",
+    "moneda",
+    "las monedas",
+    "el vuelto",
+    "vuelto",
+    "el suelto",
+    "el sencillo"
+   ],
+   "distratoresEs": [
+    "la cuenta / el recibo",
+    "la cartera / el bolso",
+    "el sueldo / el pago",
+    "el descuento / la oferta"
+   ],
+   "en": "the change / the currency",
+   "aceitasEn": [
+    "change",
+    "the change",
+    "currency",
+    "the currency",
+    "coins",
+    "coin",
+    "small change",
+    "loose change"
+   ],
+   "distratoresEn": [
+    "the check / the receipt",
+    "the wallet / the purse",
+    "the salary / the payment",
+    "the discount / the sale"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "compras",
+    "falso-amigo"
+   ],
+   "nota": "Feminino. O troco («rendre la monnaie», dar o troco), os trocados («tu as de la monnaie ?») e a moeda de um país: «l'euro est la monnaie de la France». Uma moeda, a peça de metal, é «une pièce».",
+   "notaEs": "Femenino. El cambio («rendre la monnaie», dar el cambio), las monedas sueltas («tu as de la monnaie ?») y la moneda de un país: «l'euro est la monnaie de la France». Una moneda, la pieza de metal, es «une pièce».",
+   "notaEn": "Not money, which is «l'argent»: it's change («rendre la monnaie», to give change) and currency: «l'euro est la monnaie de la France». A single coin is «une pièce»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p430",
+   "tipo": "palavra",
+   "fr": "totalement",
+   "pt": "totalmente",
+   "aceitas": [
+    "totalmente",
+    "completamente",
+    "por completo",
+    "absolutamente"
+   ],
+   "distratores": [
+    "normalmente",
+    "levemente",
+    "finalmente",
+    "raramente"
+   ],
+   "es": "totalmente",
+   "aceitasEs": [
+    "totalmente",
+    "completamente",
+    "del todo",
+    "por completo",
+    "absolutamente"
+   ],
+   "distratoresEs": [
+    "normalmente",
+    "levemente",
+    "finalmente",
+    "raramente"
+   ],
+   "en": "totally",
+   "aceitasEn": [
+    "totally",
+    "completely",
+    "fully",
+    "utterly",
+    "absolutely"
+   ],
+   "distratoresEn": [
+    "normally",
+    "slightly",
+    "finally",
+    "rarely"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Vem de «total», e reforça como em português: «tu as totalement raison», você tem toda a razão. Na conversa, «carrément» faz o mesmo papel.",
+   "notaEs": "Viene de «total», y refuerza como en español: «tu as totalement raison», tienes toda la razón. En la conversación, «carrément» cumple el mismo papel.",
+   "notaEn": "From «total»: «tu as totalement raison», you're totally right. In casual speech, «carrément» does the same job."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p431",
+   "tipo": "palavra",
+   "fr": "les habits",
+   "pt": "as roupas",
+   "aceitas": [
+    "roupas",
+    "roupa",
+    "a roupa",
+    "as vestimentas",
+    "os trajes"
+   ],
+   "distratores": [
+    "as habitações",
+    "os sapatos",
+    "os lençóis",
+    "os móveis"
+   ],
+   "es": "la ropa",
+   "aceitasEs": [
+    "la ropa",
+    "ropa",
+    "las prendas",
+    "las prendas de vestir",
+    "la vestimenta"
+   ],
+   "distratoresEs": [
+    "la vivienda",
+    "el calzado",
+    "el mobiliario",
+    "el equipaje"
+   ],
+   "en": "clothes",
+   "aceitasEn": [
+    "clothes",
+    "the clothes",
+    "clothing",
+    "garments"
+   ],
+   "distratoresEn": [
+    "housing",
+    "footwear",
+    "furniture",
+    "luggage"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "roupa",
+    "falso-amigo"
+   ],
+   "nota": "Masculino, quase sempre no plural: «mets tes habits», põe a roupa. O mais neutro é «les vêtements». Hábito, costume, é «l'habitude»; só o do monge é «habit»: «l'habit ne fait pas le moine», o hábito não faz o monge.\n🇫🇷 l'habitude → 🇧🇷 o hábito",
+   "notaEs": "Masculino, casi siempre en plural: «mets tes habits», ponte la ropa. Lo más neutro es «les vêtements». El hábito, la costumbre, es «l'habitude»; solo el del monje es «habit»: «l'habit ne fait pas le moine», el hábito no hace al monje.\n🇫🇷 l'habitude → 🇪🇸 el hábito",
+   "notaEn": "Masculine, almost always plural: «mets tes habits», put your clothes on. The neutral word is «les vêtements». Not habits, which are «les habitudes»; only a monk's habit is «habit»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p432",
+   "tipo": "palavra",
+   "fr": "apparemment",
+   "pt": "aparentemente",
+   "aceitas": [
+    "aparentemente",
+    "pelo visto",
+    "ao que parece",
+    "parece que",
+    "pelo jeito"
+   ],
+   "distratores": [
+    "raramente",
+    "deliberadamente",
+    "finalmente",
+    "imediatamente"
+   ],
+   "es": "aparentemente",
+   "aceitasEs": [
+    "aparentemente",
+    "al parecer",
+    "por lo visto",
+    "según parece",
+    "parece que"
+   ],
+   "distratoresEs": [
+    "raramente",
+    "deliberadamente",
+    "finalmente",
+    "inmediatamente"
+   ],
+   "en": "apparently",
+   "aceitasEn": [
+    "apparently",
+    "seemingly",
+    "it seems",
+    "by the look of it"
+   ],
+   "distratoresEn": [
+    "rarely",
+    "deliberately",
+    "finally",
+    "immediately"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Vem de «apparent», com dois «p», e «-emment» se pronuncia como «-amment». Abre a frase quando se conta o que se ouviu: «apparemment, il a démissionné», pelo visto, ele pediu demissão.",
+   "notaEs": "Viene de «apparent», con dos «p», y «-emment» se pronuncia como «-amment». Abre la frase cuando se cuenta lo que se ha oído: «apparemment, il a démissionné», al parecer, renunció.",
+   "notaEn": "From «apparent», double «p»; «-emment» sounds like «-amment». It opens a sentence to pass on what you heard: «apparemment, il a démissionné», apparently he quit."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p433",
+   "tipo": "palavra",
+   "fr": "réduire",
+   "pt": "reduzir",
+   "aceitas": [
+    "reduzir",
+    "diminuir",
+    "baixar",
+    "cortar"
+   ],
+   "distratores": [
+    "seduzir",
+    "produzir",
+    "conduzir",
+    "traduzir"
+   ],
+   "es": "reducir",
+   "aceitasEs": [
+    "reducir",
+    "disminuir",
+    "rebajar",
+    "recortar"
+   ],
+   "distratoresEs": [
+    "seducir",
+    "producir",
+    "conducir",
+    "traducir"
+   ],
+   "en": "to reduce",
+   "aceitasEn": [
+    "to reduce",
+    "reduce",
+    "to cut",
+    "to lower",
+    "to decrease",
+    "to cut down"
+   ],
+   "distratoresEn": [
+    "to seduce",
+    "to produce",
+    "to drive",
+    "to translate"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "verbo",
+    "economia"
+   ],
+   "nota": "Conjuga-se como «conduire»: je réduis, nous réduisons, j'ai réduit. «Réduire les dépenses», cortar gastos; e «une réduction» é também um desconto.",
+   "notaEs": "Se conjuga como «conduire»: je réduis, nous réduisons, j'ai réduit. «Réduire les dépenses», recortar gastos; y «une réduction» también es un descuento.",
+   "notaEn": "Conjugated like «conduire»: je réduis, nous réduisons, j'ai réduit. «Réduire les dépenses», to cut spending; «une réduction» is also a discount."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p434",
+   "tipo": "palavra",
+   "fr": "le gaz",
+   "pt": "o gás",
+   "aceitas": [
+    "gas"
+   ],
+   "distratores": [
+    "a gaze",
+    "o carvão",
+    "o vapor",
+    "o petróleo"
+   ],
+   "es": "el gas",
+   "aceitasEs": [
+    "el gas",
+    "gas"
+   ],
+   "distratoresEs": [
+    "la gasa",
+    "el carbón",
+    "el vapor",
+    "el petróleo"
+   ],
+   "en": "gas",
+   "aceitasEn": [
+    "gas",
+    "the gas",
+    "natural gas"
+   ],
+   "distratoresEn": [
+    "gauze",
+    "coal",
+    "steam",
+    "oil"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "casa"
+   ],
+   "nota": "Masculino, com «z»: «le gaz»; o fogão a gás é «la cuisinière à gaz». A gasolina do carro é outra palavra: «l'essence».",
+   "notaEs": "Masculino, con «z»: «le gaz»; la cocina de gas es «la cuisinière à gaz». La gasolina del coche es otra palabra: «l'essence».",
+   "notaEn": "Masculine, with a «z»: «le gaz»; a gas stove is «une cuisinière à gaz». Gas for the car is «l'essence» in France (in Quebec, «le gaz»)."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p435",
+   "tipo": "palavra",
+   "fr": "la majorité",
+   "pt": "a maioria",
+   "aceitas": [
+    "maioria",
+    "a maior parte",
+    "maior parte",
+    "a maioridade",
+    "maioridade"
+   ],
+   "distratores": [
+    "a minoria",
+    "a média",
+    "a totalidade",
+    "o restante"
+   ],
+   "es": "la mayoría",
+   "aceitasEs": [
+    "la mayoría",
+    "mayoría",
+    "la mayor parte",
+    "la mayoría de edad"
+   ],
+   "distratoresEs": [
+    "la minoría",
+    "la media",
+    "la totalidad",
+    "el resto"
+   ],
+   "en": "the majority",
+   "aceitasEn": [
+    "majority",
+    "the majority",
+    "most"
+   ],
+   "distratoresEn": [
+    "the minority",
+    "the average",
+    "the whole",
+    "the rest"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "social"
+   ],
+   "nota": "Feminino, e com «de»: «la majorité des gens», a maioria das pessoas. Também é a maioridade: «à sa majorité», ao completar dezoito anos.",
+   "notaEs": "Femenino, y con «de»: «la majorité des gens», la mayoría de la gente. También es la mayoría de edad: «à sa majorité», al cumplir dieciocho años.",
+   "notaEn": "Feminine, with «de»: «la majorité des gens», most people. It's also the age of majority: «à sa majorité», when he turns eighteen."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p436",
+   "tipo": "palavra",
+   "fr": "la catastrophe",
+   "pt": "a catástrofe",
+   "aceitas": [
+    "catastrofe",
+    "o desastre",
+    "desastre",
+    "a tragedia",
+    "a calamidade"
+   ],
+   "distratores": [
+    "a estrofe",
+    "a crise",
+    "a ameaça",
+    "a façanha"
+   ],
+   "es": "la catástrofe",
+   "aceitasEs": [
+    "la catástrofe",
+    "catástrofe",
+    "el desastre",
+    "desastre",
+    "la tragedia",
+    "la calamidad"
+   ],
+   "distratoresEs": [
+    "la estrofa",
+    "la crisis",
+    "la amenaza",
+    "la hazaña"
+   ],
+   "en": "the disaster",
+   "aceitasEn": [
+    "disaster",
+    "the disaster",
+    "catastrophe",
+    "the catastrophe",
+    "calamity",
+    "tragedy"
+   ],
+   "distratoresEn": [
+    "the stanza",
+    "the crisis",
+    "the threat",
+    "the feat"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Feminino, e na conversa serve para qualquer desastre: «c'est la catastrophe !», é um desastre! «Atterrir en catastrophe» é fazer um pouso de emergência.",
+   "notaEs": "Femenino, y en la conversación sirve para cualquier desastre: «c'est la catastrophe !», ¡es un desastre! «Atterrir en catastrophe» es hacer un aterrizaje de emergencia.",
+   "notaEn": "Feminine, and in conversation it covers any mess: «c'est la catastrophe !», it's a disaster! «Atterrir en catastrophe» is to make an emergency landing."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p437",
+   "tipo": "palavra",
+   "fr": "occupé",
+   "aceitasFr": [
+    "occupée"
+   ],
+   "pt": "ocupado",
+   "aceitas": [
+    "ocupado",
+    "ocupada",
+    "atarefado",
+    "atarefada"
+   ],
+   "distratores": [
+    "oculto",
+    "livre",
+    "cansado",
+    "atrasado"
+   ],
+   "es": "ocupado",
+   "aceitasEs": [
+    "ocupado",
+    "ocupada",
+    "atareado",
+    "atareada"
+   ],
+   "distratoresEs": [
+    "oculto",
+    "libre",
+    "cansado",
+    "atrasado"
+   ],
+   "en": "busy",
+   "aceitasEn": [
+    "busy",
+    "occupied",
+    "taken",
+    "engaged"
+   ],
+   "distratoresEn": [
+    "hidden",
+    "free",
+    "tired",
+    "late"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "adjetivo",
+    "trabalho"
+   ],
+   "nota": "Feminino «occupée». Ocupado de gente («je suis très occupé»), de lugar («la place est occupée») e de telefone («ça sonne occupé»). O verbo «s'occuper de» é cuidar de: «je m'occupe des enfants».",
+   "notaEs": "Femenino «occupée». Ocupado de gente («je suis très occupé»), de sitio («la place est occupée») y de teléfono («ça sonne occupé»). El verbo «s'occuper de» es encargarse de: «je m'occupe des enfants».",
+   "notaEn": "Feminine «occupée». Busy («je suis très occupé»), taken, of a seat («la place est occupée»), and engaged, of a phone («ça sonne occupé»). «S'occuper de» is to take care of: «je m'occupe des enfants»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p438",
+   "tipo": "palavra",
+   "fr": "biologique",
+   "aceitasFr": [
+    "bio"
+   ],
+   "pt": "biológico",
+   "aceitas": [
+    "biologico",
+    "biologica",
+    "organico",
+    "organica"
+   ],
+   "distratores": [
+    "químico",
+    "geológico",
+    "psicológico",
+    "biográfico"
+   ],
+   "es": "biológico",
+   "aceitasEs": [
+    "biológico",
+    "biológica",
+    "orgánico",
+    "orgánica",
+    "ecológico",
+    "ecológica"
+   ],
+   "distratoresEs": [
+    "químico",
+    "geológico",
+    "psicológico",
+    "biográfico"
+   ],
+   "en": "biological",
+   "aceitasEn": [
+    "biological",
+    "organic"
+   ],
+   "distratoresEn": [
+    "chemical",
+    "geological",
+    "psychological",
+    "biographical"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "adjetivo",
+    "comida"
+   ],
+   "nota": "Feminino igual. O biológico da ciência («le père biologique») e o orgânico do mercado: «des légumes biologiques», que na conversa são só «bio».",
+   "notaEs": "Femenino igual. Lo biológico de la ciencia («le père biologique») y lo ecológico, lo orgánico del mercado: «des légumes biologiques», que en la conversación son solo «bio».",
+   "notaEn": "Same in the feminine. Biological («le père biologique») and organic, at the market: «des légumes biologiques», casually just «bio»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p439",
+   "tipo": "palavra",
+   "fr": "le pot",
+   "pt": "o pote",
+   "aceitas": [
+    "pote",
+    "potinho",
+    "o vaso",
+    "vaso",
+    "o vidro",
+    "vidro"
+   ],
+   "distratores": [
+    "a tampa",
+    "o pacote",
+    "o porto",
+    "o poste"
+   ],
+   "es": "el frasco",
+   "aceitasEs": [
+    "el frasco",
+    "frasco",
+    "el tarro",
+    "tarro",
+    "el bote",
+    "bote",
+    "el pote",
+    "la maceta"
+   ],
+   "distratoresEs": [
+    "la tapa",
+    "el paquete",
+    "el puerto",
+    "el poste"
+   ],
+   "en": "the jar",
+   "aceitasEn": [
+    "jar",
+    "the jar",
+    "pot",
+    "the pot",
+    "flowerpot",
+    "tub",
+    "container"
+   ],
+   "distratoresEn": [
+    "the lid",
+    "the package",
+    "the harbor",
+    "the pole"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "casa",
+    "comida"
+   ],
+   "nota": "Masculino, com «t» mudo. O pote de geleia («un pot de confiture») e o vaso de planta («un pot de fleurs»). Na conversa, «prendre un pot» é tomar um drinque, e «avoir du pot», ter sorte.",
+   "notaEs": "Masculino, con la «t» muda. El frasco de mermelada («un pot de confiture») y la maceta («un pot de fleurs»). En la conversación, «prendre un pot» es tomar algo, y «avoir du pot», tener suerte.",
+   "notaEn": "Masculine, silent «t». A jar of jam («un pot de confiture») or a flowerpot («un pot de fleurs»). Casually, «prendre un pot» is to grab a drink, and «avoir du pot», to be lucky."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p440",
+   "tipo": "palavra",
+   "fr": "gérer",
+   "pt": "gerenciar",
+   "aceitas": [
+    "gerenciar",
+    "gerir",
+    "administrar",
+    "lidar com",
+    "cuidar de",
+    "dar conta de"
+   ],
+   "distratores": [
+    "gerar",
+    "gemer",
+    "gelar",
+    "guardar"
+   ],
+   "es": "gestionar",
+   "aceitasEs": [
+    "gestionar",
+    "administrar",
+    "manejar",
+    "llevar",
+    "lidiar con",
+    "encargarse de"
+   ],
+   "distratoresEs": [
+    "generar",
+    "gemir",
+    "helar",
+    "guardar"
+   ],
+   "en": "to manage",
+   "aceitasEn": [
+    "to manage",
+    "manage",
+    "to handle",
+    "to deal with",
+    "to cope with",
+    "to administer"
+   ],
+   "distratoresEn": [
+    "to generate",
+    "to groan",
+    "to freeze",
+    "to keep"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "verbo",
+    "trabalho",
+    "falso-amigo"
+   ],
+   "nota": "Falso amigo: é gerenciar, administrar, e não gerar, que é «générer». Também é lidar com: «gérer le stress»; na conversa, «je gère», eu dou conta.\n🇫🇷 générer → 🇧🇷 gerar",
+   "notaEs": "Gestionar, administrar: «gérer une entreprise». También es lidiar con algo: «gérer le stress»; en la conversación, «je gère», lo tengo controlado.",
+   "notaEn": "To manage, run: «gérer une entreprise». Also to handle, cope with: «gérer le stress». Casually, «je gère» means I've got this."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p441",
+   "tipo": "palavra",
+   "fr": "le commandement",
+   "pt": "o comando / o mandamento",
+   "aceitas": [
+    "comando",
+    "mandamento",
+    "o comando",
+    "o mandamento",
+    "a chefia",
+    "a ordem"
+   ],
+   "distratores": [
+    "a encomenda / o pedido",
+    "o comandante / o capitão",
+    "a oração / a prece",
+    "o castigo / a pena"
+   ],
+   "es": "el mando / el mandamiento",
+   "aceitasEs": [
+    "el mando",
+    "mando",
+    "el mandamiento",
+    "mandamiento",
+    "el comando",
+    "comando",
+    "la orden"
+   ],
+   "distratoresEs": [
+    "el encargo / el pedido",
+    "el comandante / el capitán",
+    "la oración / el rezo",
+    "el castigo / la pena"
+   ],
+   "en": "the command / the commandment",
+   "aceitasEn": [
+    "command",
+    "the command",
+    "commandment",
+    "the commandment",
+    "leadership"
+   ],
+   "distratoresEn": [
+    "the purchase / the delivery",
+    "the commander / the captain",
+    "the prayer / the blessing",
+    "the punishment / the penalty"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Masculino. O comando, a chefia («prendre le commandement», assumir o comando), e o mandamento: «les dix commandements». O pedido, a encomenda, é «la commande».",
+   "notaEs": "Masculino. El mando («prendre le commandement», tomar el mando) y el mandamiento: «les dix commandements». El pedido, el encargo, es «la commande».",
+   "notaEn": "Masculine. Command, leadership («prendre le commandement», to take command), and a commandment: «les dix commandements». An order you place is «une commande»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p442",
+   "tipo": "palavra",
+   "fr": "le beau-père",
+   "pt": "o sogro / o padrasto",
+   "aceitas": [
+    "sogro",
+    "padrasto",
+    "o sogro",
+    "o padrasto"
+   ],
+   "distratores": [
+    "o cunhado / o genro",
+    "o padrinho / o afilhado",
+    "o avô / o bisavô",
+    "o tio / o primo"
+   ],
+   "es": "el suegro / el padrastro",
+   "aceitasEs": [
+    "el suegro",
+    "suegro",
+    "el padrastro",
+    "padrastro"
+   ],
+   "distratoresEs": [
+    "el cuñado / el yerno",
+    "el padrino / el ahijado",
+    "el abuelo / el bisabuelo",
+    "el tío / el primo"
+   ],
+   "en": "the father-in-law / the stepfather",
+   "aceitasEn": [
+    "father-in-law",
+    "the father-in-law",
+    "stepfather",
+    "the stepfather",
+    "stepdad"
+   ],
+   "distratoresEn": [
+    "the brother-in-law / the son-in-law",
+    "the godfather / the godson",
+    "the grandfather / the great-grandfather",
+    "the uncle / the cousin"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "família"
+   ],
+   "nota": "Masculino, e serve aos dois: o pai do cônjuge e o marido da mãe. «Beau» aqui não é bonito: é o prefixo dos parentes por afinidade («la belle-mère», «le beau-frère»). Plural «beaux-pères».",
+   "notaEs": "Masculino, y sirve para los dos: el padre del cónyuge y el marido de la madre. «Beau» aquí no es guapo: es el prefijo de los parientes políticos («la belle-mère», «le beau-frère»). Plural «beaux-pères».",
+   "notaEn": "Masculine, and it covers both: your spouse's father and your mother's husband. «Beau» here isn't handsome: it's the prefix for in-laws and step-relatives («la belle-mère», «le beau-frère»). Plural «beaux-pères»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p443",
+   "tipo": "palavra",
+   "fr": "la serviette",
+   "pt": "a toalha / o guardanapo",
+   "aceitas": [
+    "toalha",
+    "guardanapo",
+    "a toalha",
+    "o guardanapo",
+    "a toalha de banho",
+    "pasta",
+    "a pasta",
+    "a pasta de documentos"
+   ],
+   "distratores": [
+    "o lençol / a fronha",
+    "o avental / a luva",
+    "a bandeja / o pires",
+    "o tapete / a cortina"
+   ],
+   "es": "la toalla / la servilleta",
+   "aceitasEs": [
+    "la toalla",
+    "toalla",
+    "la servilleta",
+    "servilleta",
+    "el portafolios",
+    "la cartera"
+   ],
+   "distratoresEs": [
+    "la sábana / la funda",
+    "el delantal / el guante",
+    "la bandeja / el platillo",
+    "la alfombra / la cortina"
+   ],
+   "en": "the towel / the napkin",
+   "aceitasEn": [
+    "towel",
+    "the towel",
+    "napkin",
+    "the napkin",
+    "serviette",
+    "briefcase",
+    "the briefcase"
+   ],
+   "distratoresEn": [
+    "the sheet / the pillowcase",
+    "the apron / the glove",
+    "the tray / the saucer",
+    "the rug / the curtain"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "casa"
+   ],
+   "nota": "Feminino. A toalha de banho («la serviette de bain») e o guardanapo («la serviette de table»); é também a pasta de documentos. A toalha de mesa é «la nappe».",
+   "notaEs": "Femenino. La toalla de baño («la serviette de bain») y la servilleta («la serviette de table»); también es el portafolios. El mantel es «la nappe».",
+   "notaEn": "Feminine. A bath towel («la serviette de bain») and a napkin («la serviette de table»); also a briefcase. A tablecloth is «la nappe»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p444",
+   "tipo": "palavra",
+   "fr": "pénible",
+   "pt": "penoso / chato",
+   "aceitas": [
+    "penoso",
+    "penosa",
+    "chato",
+    "chata",
+    "cansativo",
+    "cansativa",
+    "doloroso",
+    "dolorosa",
+    "duro",
+    "dura",
+    "arduo",
+    "ardua",
+    "pesado",
+    "pesada",
+    "irritante"
+   ],
+   "distratores": [
+    "perigoso / arriscado",
+    "engraçado / divertido",
+    "possível / viável",
+    "preguiçoso / lento"
+   ],
+   "es": "penoso / pesado",
+   "aceitasEs": [
+    "penoso",
+    "penosa",
+    "pesado",
+    "pesada",
+    "molesto",
+    "molesta",
+    "fastidioso",
+    "fastidiosa",
+    "agotador",
+    "agotadora",
+    "duro",
+    "dura",
+    "doloroso",
+    "dolorosa"
+   ],
+   "distratoresEs": [
+    "peligroso / arriesgado",
+    "gracioso / divertido",
+    "posible / viable",
+    "perezoso / lento"
+   ],
+   "en": "tiresome / annoying",
+   "aceitasEn": [
+    "tiresome",
+    "annoying",
+    "painful",
+    "hard",
+    "tough",
+    "exhausting",
+    "a pain",
+    "grueling",
+    "tedious"
+   ],
+   "distratoresEn": [
+    "dangerous / risky",
+    "funny / amusing",
+    "possible / feasible",
+    "lazy / slow"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "adjetivo",
+    "cotidiano"
+   ],
+   "nota": "Feminino igual. Penoso, do que cansa ou dói («un travail pénible», «une nouvelle pénible»), e chato, de quem irrita: «arrête, tu es pénible !», para, você está sendo chato!",
+   "notaEs": "Femenino igual. Penoso, de lo que cansa o duele («un travail pénible», «une nouvelle pénible»), y pesado, de quien molesta: «arrête, tu es pénible !», ¡para, eres un pesado!",
+   "notaEn": "Same in the feminine. Hard going, of what tires or hurts («un travail pénible», «une nouvelle pénible»), and annoying, of a person: «arrête, tu es pénible !», stop, you're being a pain!"
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p445",
+   "tipo": "palavra",
+   "fr": "l'apparence",
+   "pt": "a aparência",
+   "aceitas": [
+    "aparencia",
+    "o aspecto",
+    "aspecto",
+    "as aparencias"
+   ],
+   "distratores": [
+    "a aparição",
+    "o aparelho",
+    "a semelhança",
+    "a transparência"
+   ],
+   "es": "la apariencia",
+   "aceitasEs": [
+    "la apariencia",
+    "apariencia",
+    "el aspecto",
+    "aspecto",
+    "las apariencias"
+   ],
+   "distratoresEs": [
+    "la aparición",
+    "el aparato",
+    "la semejanza",
+    "la transparencia"
+   ],
+   "en": "the appearance",
+   "aceitasEn": [
+    "appearance",
+    "the appearance",
+    "look",
+    "the look",
+    "looks",
+    "appearances"
+   ],
+   "distratoresEn": [
+    "the apparition",
+    "the device",
+    "the resemblance",
+    "the transparency"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "social"
+   ],
+   "nota": "Feminino. O aspecto de fora: «il ne faut pas se fier aux apparences», não se deve confiar nas aparências. «En apparence», aparentemente. A aparição é «l'apparition».",
+   "notaEs": "Femenino. El aspecto de fuera: «il ne faut pas se fier aux apparences», no hay que fiarse de las apariencias. «En apparence», aparentemente. La aparición es «l'apparition».",
+   "notaEn": "Feminine. How something looks: «il ne faut pas se fier aux apparences», don't trust appearances. Showing up, as in to make an appearance, is «faire son apparition»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p446",
+   "tipo": "palavra",
+   "fr": "le steak",
+   "pt": "o bife",
+   "aceitas": [
+    "bife",
+    "o steak",
+    "steak"
+   ],
+   "distratores": [
+    "a costeleta",
+    "o frango",
+    "a salsicha",
+    "o presunto"
+   ],
+   "es": "el bistec",
+   "aceitasEs": [
+    "el bistec",
+    "bistec",
+    "el bisté",
+    "el filete",
+    "filete",
+    "el bife",
+    "bife"
+   ],
+   "distratoresEs": [
+    "la chuleta",
+    "el pollo",
+    "la salchicha",
+    "el jamón"
+   ],
+   "en": "the steak",
+   "aceitasEn": [
+    "steak",
+    "the steak",
+    "beefsteak"
+   ],
+   "distratoresEn": [
+    "the chop",
+    "the chicken",
+    "the sausage",
+    "the ham"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "comida"
+   ],
+   "nota": "Masculino, e soa «stéc». O ponto: «saignant», malpassado; «à point», ao ponto; «bien cuit», bem passado. O «steak haché» é o hambúrguer.",
+   "notaEs": "Masculino, y suena «stek». El punto: «saignant», poco hecho; «à point», en su punto; «bien cuit», bien hecho. El «steak haché» es la carne de hamburguesa.",
+   "notaEn": "Masculine, said «stek». Doneness: «saignant», rare; «à point», medium; «bien cuit», well done. A «steak haché» is a hamburger patty."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p447",
+   "tipo": "palavra",
+   "fr": "la facture",
+   "pt": "a fatura",
+   "aceitas": [
+    "fatura",
+    "a conta",
+    "conta",
+    "a nota fiscal",
+    "nota fiscal"
+   ],
+   "distratores": [
+    "a fratura",
+    "a multa",
+    "o orçamento",
+    "a tarifa"
+   ],
+   "es": "la factura",
+   "aceitasEs": [
+    "la factura",
+    "factura",
+    "la cuenta",
+    "el recibo"
+   ],
+   "distratoresEs": [
+    "la fractura",
+    "la multa",
+    "el presupuesto",
+    "la tarifa"
+   ],
+   "en": "the bill",
+   "aceitasEn": [
+    "bill",
+    "the bill",
+    "invoice",
+    "the invoice"
+   ],
+   "distratoresEn": [
+    "the fracture",
+    "the fine",
+    "the estimate",
+    "the rate"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "compras"
+   ],
+   "nota": "Feminino. A fatura, a conta de luz ou de telefone: «payer la facture d'électricité». A conta do restaurante é «l'addition».",
+   "notaEs": "Femenino. La factura, el recibo de la luz o del teléfono: «payer la facture d'électricité». La cuenta del restaurante es «l'addition».",
+   "notaEn": "Feminine. An invoice or a utility bill: «payer la facture d'électricité». The check at a restaurant is «l'addition»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p448",
+   "tipo": "palavra",
+   "fr": "le poumon",
+   "pt": "o pulmão",
+   "aceitas": [
+    "pulmao"
+   ],
+   "distratores": [
+    "o fígado",
+    "o rim",
+    "o estômago",
+    "o coração"
+   ],
+   "es": "el pulmón",
+   "aceitasEs": [
+    "el pulmón",
+    "pulmón"
+   ],
+   "distratoresEs": [
+    "el hígado",
+    "el riñón",
+    "el estómago",
+    "el corazón"
+   ],
+   "en": "the lung",
+   "aceitasEn": [
+    "lung",
+    "the lung"
+   ],
+   "distratoresEn": [
+    "the liver",
+    "the kidney",
+    "the stomach",
+    "the heart"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "corpo",
+    "saúde"
+   ],
+   "nota": "Masculino, com «ou»: «le poumon», plural «les poumons». «Respirer à pleins poumons», respirar a plenos pulmões.",
+   "notaEs": "Masculino, con «ou»: «le poumon», plural «les poumons». «Respirer à pleins poumons», respirar a pleno pulmón.",
+   "notaEn": "Masculine: «le poumon», plural «les poumons». «Respirer à pleins poumons», to breathe deeply."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p449",
+   "tipo": "palavra",
+   "fr": "le poème",
+   "pt": "o poema",
+   "aceitas": [
+    "poema",
+    "a poesia",
+    "poesia"
+   ],
+   "distratores": [
+    "o romance",
+    "o conto",
+    "a canção",
+    "o ensaio"
+   ],
+   "es": "el poema",
+   "aceitasEs": [
+    "el poema",
+    "poema",
+    "la poesía"
+   ],
+   "distratoresEs": [
+    "la novela",
+    "el cuento",
+    "la canción",
+    "el ensayo"
+   ],
+   "en": "the poem",
+   "aceitasEn": [
+    "poem",
+    "the poem"
+   ],
+   "distratoresEn": [
+    "the novel",
+    "the short story",
+    "the song",
+    "the essay"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Masculino, como em português, e com «è»: «le poème». A poesia, a arte, é «la poésie»; o verso, «le vers».",
+   "notaEs": "Masculino, con «è»: «le poème». La poesía como arte es «la poésie», y el verso, «le vers».",
+   "notaEn": "Masculine, with «è»: «le poème». Poetry as an art is «la poésie»; a line of verse, «un vers»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p450",
+   "tipo": "palavra",
+   "fr": "la cabine",
+   "pt": "a cabine",
+   "aceitas": [
+    "cabine",
+    "camarote",
+    "provador"
+   ],
+   "distratores": [
+    "a cantina",
+    "a varanda",
+    "o porão",
+    "a cabeceira"
+   ],
+   "es": "la cabina",
+   "aceitasEs": [
+    "la cabina",
+    "cabina",
+    "el camarote",
+    "el probador"
+   ],
+   "distratoresEs": [
+    "la cantina",
+    "la terraza",
+    "el sótano",
+    "la cabecera"
+   ],
+   "en": "the booth",
+   "aceitasEn": [
+    "booth",
+    "the booth",
+    "cabin",
+    "the cabin",
+    "cab",
+    "the cab",
+    "fitting room",
+    "the fitting room"
+   ],
+   "distratoresEn": [
+    "the canteen",
+    "the porch",
+    "the cellar",
+    "the cabinet"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "viagem"
+   ],
+   "nota": "Feminino. A cabine telefônica («la cabine téléphonique») e a do avião; no navio, é o camarote. Na loja, «la cabine d'essayage» é o provador.",
+   "notaEs": "Femenino. La cabina telefónica («la cabine téléphonique») y la del avión; en el barco, el camarote. En la tienda, «la cabine d'essayage» es el probador.",
+   "notaEn": "Feminine. A phone booth («la cabine téléphonique»), a plane or ship cabin, a truck cab. In a store, «la cabine d'essayage» is the fitting room."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p451",
+   "tipo": "palavra",
+   "fr": "photographier",
+   "sinonimosFr": [
+    "prendre en photo"
+   ],
+   "pt": "fotografar",
+   "aceitas": [
+    "fotografar",
+    "tirar foto",
+    "tirar uma foto",
+    "tirar fotos",
+    "bater foto",
+    "bater uma foto"
+   ],
+   "distratores": [
+    "filmar",
+    "desenhar",
+    "imprimir",
+    "emoldurar"
+   ],
+   "es": "fotografiar",
+   "aceitasEs": [
+    "fotografiar",
+    "sacar una foto",
+    "sacar fotos",
+    "tomar una foto",
+    "tomar fotos",
+    "hacer una foto",
+    "hacer fotos"
+   ],
+   "distratoresEs": [
+    "filmar",
+    "dibujar",
+    "imprimir",
+    "enmarcar"
+   ],
+   "en": "to photograph",
+   "aceitasEn": [
+    "to photograph",
+    "photograph",
+    "to take a picture",
+    "take a picture",
+    "to take a photo",
+    "take a photo",
+    "to take pictures",
+    "take pictures"
+   ],
+   "distratoresEn": [
+    "to film",
+    "to draw",
+    "to print",
+    "to frame"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "verbo",
+    "viagem"
+   ],
+   "nota": "No dia a dia, o mais comum é «prendre en photo» ou «prendre une photo»: «je peux te prendre en photo ?», posso tirar uma foto sua? «Photographier» soa mais cuidado, e é o verbo de quem fotografa por ofício.",
+   "notaEs": "En el día a día se dice más «prendre en photo» o «prendre une photo»: «je peux te prendre en photo ?», ¿te puedo sacar una foto? «Photographier» es más cuidado, y es el verbo del oficio.",
+   "notaEn": "In everyday speech, «prendre en photo» or «prendre une photo» is more common: «je peux te prendre en photo ?», can I take your picture? «Photographier» is more formal, the photographer's word."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p452",
+   "tipo": "palavra",
+   "fr": "isoler",
+   "pt": "isolar",
+   "aceitas": [
+    "isolar"
+   ],
+   "distratores": [
+    "consolar",
+    "ignorar",
+    "aliviar",
+    "ilustrar"
+   ],
+   "es": "aislar",
+   "aceitasEs": [
+    "aislar",
+    "incomunicar"
+   ],
+   "distratoresEs": [
+    "consolar",
+    "ignorar",
+    "aliviar",
+    "ilustrar"
+   ],
+   "en": "to isolate",
+   "aceitasEn": [
+    "to isolate",
+    "isolate",
+    "to insulate",
+    "insulate",
+    "to cut off",
+    "cut off",
+    "to soundproof",
+    "soundproof"
+   ],
+   "distratoresEn": [
+    "to console",
+    "to ignore",
+    "to relieve",
+    "to illustrate"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "verbo",
+    "casa"
+   ],
+   "nota": "Isolar alguém ou algo («isoler un malade») e isolar do frio ou do barulho: «isoler une maison». O isolamento térmico é «l'isolation»; o de uma pessoa, «l'isolement».",
+   "notaEs": "Aislar a alguien («isoler un malade») y aislar del frío o del ruido: «isoler une maison». Empieza por «i», sin la «a» del español. El aislamiento térmico es «l'isolation»; el de una persona, «l'isolement».",
+   "notaEn": "Both to isolate («isoler un malade») and to insulate: «isoler une maison». Careful with the nouns: «l'isolation» is insulation, and isolation is «l'isolement»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p453",
+   "tipo": "palavra",
+   "fr": "le continent",
+   "pt": "o continente",
+   "aceitas": [
+    "continente"
+   ],
+   "distratores": [
+    "o conteúdo",
+    "o hemisfério",
+    "o arquipélago",
+    "o oceano"
+   ],
+   "es": "el continente",
+   "aceitasEs": [
+    "el continente",
+    "continente"
+   ],
+   "distratoresEs": [
+    "el contenido",
+    "el hemisferio",
+    "el archipiélago",
+    "el océano"
+   ],
+   "en": "the continent",
+   "aceitasEn": [
+    "continent",
+    "the continent",
+    "the mainland",
+    "mainland"
+   ],
+   "distratoresEn": [
+    "the content",
+    "the hemisphere",
+    "the archipelago",
+    "the ocean"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "natureza"
+   ],
+   "nota": "Masculino, como em português. Para quem mora numa ilha, «le continent» é a terra firme: na Córsega, é a França do outro lado do mar.",
+   "notaEs": "Masculino, como en español. Para quien vive en una isla, «le continent» es la tierra firme: en Córcega, es la Francia del otro lado del mar.",
+   "notaEn": "Masculine. For islanders it means the mainland: in Corsica, «le continent» is mainland France. The adjective is «continental»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p454",
+   "tipo": "palavra",
+   "fr": "la panique",
+   "pt": "o pânico",
+   "aceitas": [
+    "panico"
+   ],
+   "distratores": [
+    "a raiva",
+    "o tédio",
+    "o alívio",
+    "o ciúme"
+   ],
+   "es": "el pánico",
+   "aceitasEs": [
+    "el pánico",
+    "pánico"
+   ],
+   "distratoresEs": [
+    "la rabia",
+    "el aburrimiento",
+    "el alivio",
+    "la envidia"
+   ],
+   "en": "panic",
+   "aceitasEn": [
+    "panic",
+    "the panic"
+   ],
+   "distratoresEn": [
+    "anger",
+    "boredom",
+    "relief",
+    "jealousy"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "saúde"
+   ],
+   "nota": "Feminino em francês: «la panique». «Pas de panique !», calma, sem pânico. Entrar em pânico é «paniquer» ou «s'affoler».",
+   "notaEs": "Femenino en francés: «la panique». «Pas de panique !», ¡calma, que no cunda el pánico! Entrar en pánico es «paniquer» o «s'affoler».",
+   "notaEn": "Feminine. «Pas de panique !», don't panic! The verb is «paniquer» or «s'affoler»: «ne panique pas»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p455",
+   "tipo": "palavra",
+   "fr": "fédéral",
+   "aceitasFr": [
+    "fédérale"
+   ],
+   "pt": "federal",
+   "aceitas": [
+    "federal"
+   ],
+   "distratores": [
+    "feudal",
+    "municipal",
+    "estadual",
+    "regional"
+   ],
+   "es": "federal",
+   "aceitasEs": [
+    "federal"
+   ],
+   "distratoresEs": [
+    "feudal",
+    "municipal",
+    "provincial",
+    "regional"
+   ],
+   "en": "federal",
+   "aceitasEn": [
+    "federal"
+   ],
+   "distratoresEn": [
+    "feudal",
+    "municipal",
+    "provincial",
+    "regional"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "política"
+   ],
+   "nota": "Feminino «fédérale»; plural «fédéraux». Na Suíça, é o que vem da Confederação: «le Conseil fédéral» é o governo. A França não é uma federação, e a palavra fala mais da Suíça, da Bélgica e do Canadá.",
+   "notaEs": "Femenino «fédérale»; plural «fédéraux». En Suiza, es lo que viene de la Confederación: «le Conseil fédéral» es el gobierno. Francia no es una federación, y la palabra habla más de Suiza, Bélgica y Canadá.",
+   "notaEn": "Feminine «fédérale»; plural «fédéraux». In Switzerland it refers to the Confederation: «le Conseil fédéral» is the government. France isn't a federation, so the word is mostly about Switzerland, Belgium and Canada."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p456",
+   "tipo": "palavra",
+   "fr": "la pose",
+   "pt": "a pose",
+   "aceitas": [
+    "pose",
+    "postura",
+    "colocacao",
+    "instalacao"
+   ],
+   "distratores": [
+    "a pausa",
+    "a posse",
+    "o retrato",
+    "a moldura"
+   ],
+   "es": "la pose",
+   "aceitasEs": [
+    "la pose",
+    "pose",
+    "la postura",
+    "la colocación",
+    "la instalación"
+   ],
+   "distratoresEs": [
+    "la pausa",
+    "la posesión",
+    "el retrato",
+    "el marco"
+   ],
+   "en": "the pose",
+   "aceitasEn": [
+    "pose",
+    "the pose",
+    "posture",
+    "the posture",
+    "laying",
+    "fitting",
+    "installation",
+    "the installation"
+   ],
+   "distratoresEn": [
+    "the pause",
+    "the possession",
+    "the portrait",
+    "the frame"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Feminino. A pose da foto («prendre la pose», fazer pose) e, em obra, a colocação: «la pose du carrelage», a colocação do piso. Não confunda com «la pause», a pausa.",
+   "notaEs": "Femenino. La pose de la foto («prendre la pose», posar) y, en una obra, la colocación: «la pose du carrelage», la colocación del suelo. No la confundas con «la pause», la pausa.",
+   "notaEn": "Feminine. A pose for a photo («prendre la pose», to strike a pose) and, in building work, laying or fitting: «la pose du carrelage», tiling. Don't mix it up with «la pause», a break."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p457",
+   "tipo": "palavra",
+   "fr": "la couronne",
+   "pt": "a coroa",
+   "aceitas": [
+    "coroa",
+    "grinalda"
+   ],
+   "distratores": [
+    "o trono",
+    "o cetro",
+    "o colar",
+    "a coluna"
+   ],
+   "es": "la corona",
+   "aceitasEs": [
+    "la corona",
+    "corona",
+    "la guirnalda"
+   ],
+   "distratoresEs": [
+    "el trono",
+    "el cetro",
+    "el collar",
+    "la columna"
+   ],
+   "en": "the crown",
+   "aceitasEn": [
+    "crown",
+    "the crown",
+    "wreath",
+    "the wreath"
+   ],
+   "distratoresEn": [
+    "the throne",
+    "the scepter",
+    "the necklace",
+    "the column"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Feminino. A do rei, a de flores («une couronne de fleurs») e a do dentista. Com maiúscula, «la Couronne» é a monarquia.",
+   "notaEs": "Femenino. La del rey, la de flores («une couronne de fleurs») y la del dentista. Con mayúscula, «la Couronne» es la monarquía.",
+   "notaEn": "Feminine. A king's crown, a wreath («une couronne de fleurs») and a dental crown. Capitalized, «la Couronne» is the monarchy."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p458",
+   "tipo": "palavra",
+   "fr": "le tueur",
+   "sinonimosFr": [
+    "l'assassin",
+    "le meurtrier"
+   ],
+   "pt": "o assassino",
+   "aceitas": [
+    "assassino",
+    "matador"
+   ],
+   "distratores": [
+    "o ladrão",
+    "o sequestrador",
+    "o traidor",
+    "o detetive"
+   ],
+   "es": "el asesino",
+   "aceitasEs": [
+    "el asesino",
+    "asesino",
+    "el matador"
+   ],
+   "distratoresEs": [
+    "el ladrón",
+    "el secuestrador",
+    "el traidor",
+    "el detective"
+   ],
+   "en": "the killer",
+   "aceitasEn": [
+    "killer",
+    "the killer",
+    "murderer",
+    "the murderer"
+   ],
+   "distratoresEn": [
+    "the thief",
+    "the kidnapper",
+    "the traitor",
+    "the detective"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "mídia"
+   ],
+   "nota": "De «tuer», matar: é quem mata. «Un tueur en série», um assassino em série; «un tueur à gages», um matador de aluguel. Feminino «tueuse».",
+   "notaEs": "De «tuer», matar: es quien mata. «Un tueur en série», un asesino en serie; «un tueur à gages», un sicario. Femenino «tueuse».",
+   "notaEn": "From «tuer», to kill. «Un tueur en série», a serial killer; «un tueur à gages», a hitman. Feminine «tueuse»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p459",
+   "tipo": "palavra",
+   "fr": "ordinaire",
+   "sinonimosFr": [
+    "commun",
+    "habituel",
+    "courant"
+   ],
+   "pt": "comum",
+   "aceitas": [
+    "comum",
+    "normal",
+    "habitual",
+    "usual",
+    "corriqueiro",
+    "corriqueira"
+   ],
+   "distratores": [
+    "ordenado",
+    "organizado",
+    "raro",
+    "antigo"
+   ],
+   "es": "común",
+   "aceitasEs": [
+    "común",
+    "corriente",
+    "normal",
+    "habitual",
+    "usual",
+    "ordinario",
+    "ordinaria"
+   ],
+   "distratoresEs": [
+    "ordenado",
+    "organizado",
+    "raro",
+    "antiguo"
+   ],
+   "en": "ordinary",
+   "aceitasEn": [
+    "ordinary",
+    "common",
+    "usual",
+    "normal",
+    "everyday",
+    "average"
+   ],
+   "distratoresEn": [
+    "orderly",
+    "organized",
+    "rare",
+    "old"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "cotidiano"
+   ],
+   "nota": "Comum, de todo dia: «une journée ordinaire». Às vezes é depreciativo, de pouca qualidade («un vin ordinaire»), mas é bem mais brando que o «ordinário» do Brasil. «D'ordinaire», normalmente.",
+   "notaEs": "Común, de todos los días: «une journée ordinaire». A veces es despectivo, de poca calidad: «un vin ordinaire», un vino corriente. «D'ordinaire», normalmente.",
+   "notaEn": "Ordinary, everyday: «une journée ordinaire». It can be slightly dismissive, meaning low quality: «un vin ordinaire», a cheap table wine. «D'ordinaire», usually."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p460",
+   "tipo": "palavra",
+   "fr": "cruel",
+   "aceitasFr": [
+    "cruelle"
+   ],
+   "pt": "cruel",
+   "aceitas": [
+    "cruel"
+   ],
+   "distratores": [
+    "cru",
+    "crédulo",
+    "teimoso",
+    "covarde"
+   ],
+   "es": "cruel",
+   "aceitasEs": [
+    "cruel"
+   ],
+   "distratoresEs": [
+    "crudo",
+    "crédulo",
+    "terco",
+    "cobarde"
+   ],
+   "en": "cruel",
+   "aceitasEn": [
+    "cruel",
+    "heartless"
+   ],
+   "distratoresEn": [
+    "raw",
+    "gullible",
+    "stubborn",
+    "cowardly"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "social"
+   ],
+   "nota": "Feminino «cruelle», com dois «l». Pede «avec» ou «envers»: «cruel envers les animaux», cruel com os animais. A crueldade é «la cruauté».",
+   "notaEs": "Femenino «cruelle», con dos «l». Lleva «avec» o «envers»: «cruel envers les animaux», cruel con los animales. La crueldad es «la cruauté».",
+   "notaEn": "Feminine «cruelle», with a double «l». It takes «avec» or «envers»: «cruel envers les animaux», cruel to animals. Cruelty is «la cruauté»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p461",
+   "tipo": "palavra",
+   "fr": "la bombe",
+   "pt": "a bomba (explosivo)",
+   "aceitas": [
+    "bomba",
+    "spray",
+    "aerossol"
+   ],
+   "distratores": [
+    "a bala (de revólver)",
+    "o balão (de ar)",
+    "a pomba (ave)",
+    "a lâmpada (elétrica)"
+   ],
+   "es": "la bomba (explosivo)",
+   "aceitasEs": [
+    "la bomba",
+    "bomba",
+    "el aerosol",
+    "el espray",
+    "el spray"
+   ],
+   "distratoresEs": [
+    "la bala (de pistola)",
+    "el globo (de aire)",
+    "la paloma (ave)",
+    "la bombilla (de luz)"
+   ],
+   "en": "the bomb",
+   "aceitasEn": [
+    "bomb",
+    "the bomb",
+    "spray can",
+    "the spray can",
+    "aerosol",
+    "the aerosol"
+   ],
+   "distratoresEn": [
+    "the bullet",
+    "the balloon",
+    "the dove",
+    "the light bulb"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "mídia"
+   ],
+   "nota": "Feminino. Além da que explode, é a lata de spray: «une bombe de peinture», «une bombe anti-moustiques». A bomba de água ou de gasolina é «la pompe».\n🇫🇷 la pompe → 🇧🇷 a bomba (de água)",
+   "notaEs": "Femenino. Además de la que explota, es el aerosol: «une bombe de peinture», «une bombe anti-moustiques». La bomba de agua o de gasolina es «la pompe».\n🇫🇷 la pompe → 🇪🇸 la bomba (de agua)",
+   "notaEn": "Feminine. Besides the explosive, it's a spray can: «une bombe de peinture», a can of spray paint. A water or gas pump is «la pompe»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p462",
+   "tipo": "palavra",
+   "fr": "régulier",
+   "aceitasFr": [
+    "régulière"
+   ],
+   "pt": "regular",
+   "aceitas": [
+    "regular",
+    "constante",
+    "frequente",
+    "uniforme",
+    "periodico",
+    "periodica"
+   ],
+   "distratores": [
+    "raro",
+    "rígido",
+    "razoável",
+    "rápido"
+   ],
+   "es": "regular",
+   "aceitasEs": [
+    "regular",
+    "constante",
+    "frecuente",
+    "uniforme",
+    "periódico",
+    "periódica"
+   ],
+   "distratoresEs": [
+    "raro",
+    "rígido",
+    "mediocre",
+    "rápido"
+   ],
+   "en": "regular",
+   "aceitasEn": [
+    "regular",
+    "steady",
+    "even",
+    "consistent",
+    "frequent",
+    "scheduled"
+   ],
+   "distratoresEn": [
+    "rare",
+    "rigid",
+    "mediocre",
+    "rapid"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "cotidiano"
+   ],
+   "nota": "Feminino «régulière». De ritmo e frequência: «un client régulier», «à intervalles réguliers». Não quer dizer mais ou menos, como «regular» numa nota de prova: isso é «moyen» ou «passable».",
+   "notaEs": "Femenino «régulière». De ritmo y frecuencia: «un client régulier», «à intervalles réguliers». No significa regular de más o menos: eso es «moyen» o «passable».",
+   "notaEn": "Feminine «régulière». Steady or frequent: «un client régulier», a regular customer; «à intervalles réguliers», at regular intervals. «Un vol régulier» is a scheduled flight."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p463",
+   "tipo": "palavra",
+   "fr": "la librairie",
+   "pt": "a livraria",
+   "aceitas": [
+    "livraria"
+   ],
+   "distratores": [
+    "a papelaria",
+    "a gráfica",
+    "a padaria",
+    "a lavanderia"
+   ],
+   "es": "la librería",
+   "aceitasEs": [
+    "la librería",
+    "librería"
+   ],
+   "distratoresEs": [
+    "la papelería",
+    "la imprenta",
+    "la panadería",
+    "la lavandería"
+   ],
+   "en": "the bookstore",
+   "aceitasEn": [
+    "bookstore",
+    "the bookstore",
+    "bookshop",
+    "the bookshop"
+   ],
+   "distratoresEn": [
+    "the stationery store",
+    "the print shop",
+    "the bakery",
+    "the laundromat"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "compras",
+    "falso-amigo"
+   ],
+   "nota": "Feminino. É a loja que vende livros, como a livraria. A biblioteca, que empresta, é «la bibliothèque»; o livreiro, «le libraire».",
+   "notaEs": "Femenino. Es la tienda donde se venden libros, como la librería. La biblioteca, donde se prestan, es «la bibliothèque»; el librero, «le libraire».",
+   "notaEn": "False friend: not a library but a bookstore, where books are sold. A library is «la bibliothèque»; a bookseller, «le libraire»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p464",
+   "tipo": "palavra",
+   "fr": "le verrou",
+   "sinonimosFr": [
+    "le loquet"
+   ],
+   "pt": "o ferrolho",
+   "aceitas": [
+    "ferrolho",
+    "trinco",
+    "tranca"
+   ],
+   "distratores": [
+    "a dobradiça",
+    "a maçaneta",
+    "o vidro",
+    "o parafuso"
+   ],
+   "es": "el cerrojo",
+   "aceitasEs": [
+    "el cerrojo",
+    "cerrojo",
+    "el pestillo",
+    "el pasador"
+   ],
+   "distratoresEs": [
+    "la bisagra",
+    "la manija",
+    "el vidrio",
+    "el tornillo"
+   ],
+   "en": "the bolt",
+   "aceitasEn": [
+    "bolt",
+    "the bolt",
+    "latch",
+    "the latch",
+    "deadbolt",
+    "the deadbolt",
+    "lock",
+    "the lock"
+   ],
+   "distratoresEn": [
+    "the hinge",
+    "the handle",
+    "the glass",
+    "the screw"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "casa"
+   ],
+   "nota": "Masculino. O ferrolho da porta: «mettre le verrou», passar o ferrolho. «Sous les verrous», atrás das grades. A fechadura de chave é «la serrure».",
+   "notaEs": "Masculino. El cerrojo de la puerta: «mettre le verrou», echar el cerrojo. «Sous les verrous», entre rejas. La cerradura de llave es «la serrure».",
+   "notaEn": "Masculine. A door bolt: «mettre le verrou», to bolt the door. «Sous les verrous», behind bars. A keyed lock is «la serrure»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p465",
+   "tipo": "palavra",
+   "fr": "l'étiquette",
+   "pt": "a etiqueta",
+   "aceitas": [
+    "etiqueta",
+    "rotulo"
+   ],
+   "distratores": [
+    "a etapa",
+    "a embalagem",
+    "o recibo",
+    "a sacola"
+   ],
+   "es": "la etiqueta",
+   "aceitasEs": [
+    "la etiqueta",
+    "etiqueta"
+   ],
+   "distratoresEs": [
+    "la etapa",
+    "el envase",
+    "el recibo",
+    "la bolsa"
+   ],
+   "en": "the label",
+   "aceitasEn": [
+    "label",
+    "the label",
+    "tag",
+    "the tag",
+    "price tag",
+    "the price tag",
+    "sticker",
+    "the sticker",
+    "etiquette"
+   ],
+   "distratoresEn": [
+    "the stage",
+    "the packaging",
+    "the receipt",
+    "the bag"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "compras"
+   ],
+   "nota": "Feminino. A etiqueta da roupa e do preço, o rótulo da garrafa, e também a de boas maneiras. Não confunda com «l'étape», a etapa.",
+   "notaEs": "Femenino. La etiqueta de la ropa, del precio, de la botella, y también la de los buenos modales. No la confundas con «l'étape», la etapa.",
+   "notaEn": "Feminine. A label or price tag, and also etiquette, the rules of manners. Don't confuse it with «l'étape», a stage."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p466",
+   "tipo": "palavra",
+   "fr": "exploiter",
+   "pt": "explorar",
+   "aceitas": [
+    "explorar",
+    "aproveitar"
+   ],
+   "distratores": [
+    "explodir",
+    "exportar",
+    "expulsar",
+    "explicar"
+   ],
+   "es": "explotar",
+   "aceitasEs": [
+    "explotar",
+    "aprovechar"
+   ],
+   "distratoresEs": [
+    "explorar",
+    "exportar",
+    "expulsar",
+    "explicar"
+   ],
+   "en": "to exploit",
+   "aceitasEn": [
+    "to exploit",
+    "exploit",
+    "to operate",
+    "operate",
+    "to make use of",
+    "make use of",
+    "to take advantage of",
+    "take advantage of"
+   ],
+   "distratoresEn": [
+    "to explore",
+    "to export",
+    "to expel",
+    "to explain"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "verbo",
+    "economia"
+   ],
+   "nota": "Explorar no sentido de tirar proveito: uma mina, uma terra, um negócio, ou uma pessoa («exploiter les ouvriers»). Explorar um lugar, percorrer, é «explorer».\n🇫🇷 explorer → 🇧🇷 explorar (percorrer)",
+   "notaEs": "Explotar en el sentido de sacar provecho: una mina, una tierra, un negocio o a una persona («exploiter les ouvriers»). Explotar de estallar es «exploser», y explorar es «explorer».\n🇫🇷 exploser → 🇪🇸 explotar (estallar)\n🇫🇷 explorer → 🇪🇸 explorar",
+   "notaEn": "To exploit, and also to run or operate: «exploiter une ferme», to run a farm; «exploiter une mine», to work a mine. To explore is «explorer»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p467",
+   "tipo": "palavra",
+   "fr": "le recours",
+   "pt": "o recurso",
+   "aceitas": [
+    "recurso"
+   ],
+   "distratores": [
+    "o percurso",
+    "o concurso",
+    "o discurso",
+    "o retorno"
+   ],
+   "es": "el recurso",
+   "aceitasEs": [
+    "el recurso",
+    "recurso"
+   ],
+   "distratoresEs": [
+    "el recorrido",
+    "el concurso",
+    "el discurso",
+    "el retorno"
+   ],
+   "en": "recourse",
+   "aceitasEn": [
+    "recourse",
+    "the recourse",
+    "resort",
+    "the resort",
+    "appeal",
+    "the appeal",
+    "remedy",
+    "legal remedy"
+   ],
+   "distratoresEn": [
+    "route",
+    "contest",
+    "speech",
+    "return"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "jurídico"
+   ],
+   "nota": "Masculino. «Avoir recours à», recorrer a; «en dernier recours», em último caso. Na Justiça, é o recurso contra uma decisão. O recurso que é meio ou bem, como os recursos naturais, é «la ressource».\n🇫🇷 la ressource → 🇧🇷 o recurso (meio, bem)",
+   "notaEs": "Masculino. «Avoir recours à», recurrir a; «en dernier recours», como último recurso. En la justicia, es el recurso contra una decisión. El recurso que es medio o bien, como los recursos naturales, es «la ressource».\n🇫🇷 la ressource → 🇪🇸 el recurso (medio, bien)",
+   "notaEn": "Masculine. «Avoir recours à», to resort to; «en dernier recours», as a last resort. In law, an appeal against a decision. Resources are «les ressources»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p468",
+   "tipo": "palavra",
+   "fr": "toutefois",
+   "sinonimosFr": [
+    "cependant",
+    "pourtant",
+    "néanmoins"
+   ],
+   "pt": "no entanto",
+   "aceitas": [
+    "no entanto",
+    "contudo",
+    "todavia",
+    "entretanto",
+    "porem",
+    "mesmo assim",
+    "ainda assim"
+   ],
+   "distratores": [
+    "toda vez",
+    "por isso",
+    "além disso",
+    "de repente"
+   ],
+   "es": "sin embargo",
+   "aceitasEs": [
+    "sin embargo",
+    "no obstante",
+    "aun así",
+    "con todo",
+    "empero"
+   ],
+   "distratoresEs": [
+    "cada vez",
+    "por eso",
+    "además",
+    "de repente"
+   ],
+   "en": "however",
+   "aceitasEn": [
+    "however",
+    "nevertheless",
+    "nonetheless",
+    "yet",
+    "still",
+    "even so",
+    "though"
+   ],
+   "distratoresEn": [
+    "every time",
+    "therefore",
+    "moreover",
+    "suddenly"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "escola",
+    "formal"
+   ],
+   "nota": "Mais formal que «mais» e «pourtant», e muito da escrita: «c'est cher ; toutefois, ça vaut le coup». Vem de «toutes fois», mas não quer dizer toda vez.",
+   "notaEs": "Más formal que «mais» y «pourtant», y muy de la lengua escrita: «c'est cher ; toutefois, ça vaut le coup». Viene de «toutes fois», pero no significa cada vez.",
+   "notaEn": "More formal than «mais» or «pourtant», and mostly written: «c'est cher ; toutefois, ça vaut le coup», it's expensive; however, it's worth it. It comes from «toutes fois», but doesn't mean every time."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p469",
+   "tipo": "palavra",
+   "fr": "affecter",
+   "pt": "afetar",
+   "aceitas": [
+    "afetar",
+    "atingir",
+    "abalar",
+    "comover",
+    "designar",
+    "destinar",
+    "alocar"
+   ],
+   "distratores": [
+    "efetuar",
+    "afiar",
+    "afastar",
+    "afinar"
+   ],
+   "es": "afectar",
+   "aceitasEs": [
+    "afectar",
+    "conmover",
+    "destinar",
+    "asignar"
+   ],
+   "distratoresEs": [
+    "efectuar",
+    "afilar",
+    "alejar",
+    "afinar"
+   ],
+   "en": "to affect",
+   "aceitasEn": [
+    "to affect",
+    "affect",
+    "to upset",
+    "upset",
+    "to assign",
+    "assign",
+    "to allocate",
+    "allocate",
+    "to post"
+   ],
+   "distratoresEn": [
+    "to carry out",
+    "to sharpen",
+    "to push away",
+    "to tune"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "verbo",
+    "trabalho"
+   ],
+   "nota": "Afetar, atingir («la crise affecte l'économie»), e também abalar, comover. No trabalho, é designar: «il a été affecté à Lyon», ele foi designado para Lyon.",
+   "notaEs": "Afectar («la crise affecte l'économie»), y también conmover. En el trabajo, es destinar: «il a été affecté à Lyon», lo destinaron a Lyon.",
+   "notaEn": "To affect («la crise affecte l'économie»), also to upset. At work it means to assign or post: «il a été affecté à Lyon», he was posted to Lyon."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p470",
+   "tipo": "palavra",
+   "fr": "la suggestion",
+   "pt": "a sugestão",
+   "aceitas": [
+    "sugestao",
+    "proposta"
+   ],
+   "distratores": [
+    "a digestão",
+    "a gestão",
+    "a pergunta",
+    "a reclamação"
+   ],
+   "es": "la sugerencia",
+   "aceitasEs": [
+    "la sugerencia",
+    "sugerencia",
+    "la propuesta",
+    "la sugestión"
+   ],
+   "distratoresEs": [
+    "la digestión",
+    "la gestión",
+    "la pregunta",
+    "la queja"
+   ],
+   "en": "the suggestion",
+   "aceitasEn": [
+    "suggestion",
+    "the suggestion",
+    "proposal",
+    "the proposal"
+   ],
+   "distratoresEn": [
+    "the digestion",
+    "the management",
+    "the question",
+    "the complaint"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "trabalho"
+   ],
+   "nota": "Feminino, com dois «g»: «suggestion». «Faire une suggestion», dar uma sugestão; sugerir é «suggérer».",
+   "notaEs": "Femenino, con dos «g». Una sola palabra para la sugerencia y la sugestión: «faire une suggestion», hacer una sugerencia. Sugerir es «suggérer».",
+   "notaEn": "Feminine, with a double «g», as in English. «Faire une suggestion», to make a suggestion; to suggest is «suggérer»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p471",
+   "tipo": "palavra",
+   "fr": "tolérer",
+   "sinonimosFr": [
+    "supporter"
+   ],
+   "pt": "tolerar",
+   "aceitas": [
+    "tolerar",
+    "aguentar",
+    "suportar",
+    "admitir"
+   ],
+   "distratores": [
+    "odiar",
+    "temer",
+    "exigir",
+    "proibir"
+   ],
+   "es": "tolerar",
+   "aceitasEs": [
+    "tolerar",
+    "aguantar",
+    "soportar",
+    "admitir"
+   ],
+   "distratoresEs": [
+    "odiar",
+    "temer",
+    "exigir",
+    "prohibir"
+   ],
+   "en": "to tolerate",
+   "aceitasEn": [
+    "to tolerate",
+    "tolerate",
+    "to put up with",
+    "put up with",
+    "to bear",
+    "bear",
+    "to stand",
+    "stand"
+   ],
+   "distratoresEn": [
+    "to hate",
+    "to fear",
+    "to demand",
+    "to forbid"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "verbo",
+    "social"
+   ],
+   "nota": "Tolerar, suportar: «je ne tolère pas le retard», não tolero atraso. Também é deixar acontecer sem autorizar: «le stationnement est toléré». O acento muda: «tolérer», mas «je tolère».",
+   "notaEs": "Tolerar, soportar: «je ne tolère pas le retard», no tolero los retrasos. También es dejar pasar sin autorizar: «le stationnement est toléré». El acento cambia: «tolérer», pero «je tolère».",
+   "notaEn": "To tolerate, to put up with: «je ne tolère pas le retard», I won't put up with lateness. Also to allow without authorizing: «le stationnement est toléré». The accent changes: «tolérer», but «je tolère»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p472",
+   "tipo": "palavra",
+   "fr": "quelconque",
+   "pt": "qualquer / banal",
+   "aceitas": [
+    "qualquer",
+    "banal",
+    "sem graca",
+    "mediocre",
+    "algum"
+   ],
+   "distratores": [
+    "cada / especial",
+    "todo / notável",
+    "único / excelente",
+    "mesmo / estranho"
+   ],
+   "es": "cualquiera / mediocre",
+   "aceitasEs": [
+    "cualquiera",
+    "cualquier",
+    "mediocre",
+    "corriente",
+    "del montón",
+    "banal",
+    "alguno"
+   ],
+   "distratoresEs": [
+    "cada / especial",
+    "todo / notable",
+    "único / excelente",
+    "mismo / extraño"
+   ],
+   "en": "any / mediocre",
+   "aceitasEn": [
+    "any",
+    "some",
+    "whatever",
+    "some or other",
+    "mediocre",
+    "nondescript",
+    "unremarkable",
+    "plain"
+   ],
+   "distratoresEn": [
+    "each / special",
+    "every / remarkable",
+    "only / excellent",
+    "same / strange"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "cotidiano"
+   ],
+   "nota": "Depois do substantivo, é qualquer: «pour une raison quelconque», por um motivo qualquer. Com «très», ou depois do verbo, é depreciativo: «un film très quelconque», um filme muito sem graça.",
+   "notaEs": "Detrás del sustantivo, es cualquiera: «pour une raison quelconque», por una razón cualquiera. Con «très», o detrás del verbo, es despectivo: «un film très quelconque», una película del montón.",
+   "notaEn": "After a noun, it means any, some or other: «pour une raison quelconque», for some reason or other. With «très», or after a verb, it's dismissive: «un film très quelconque», a very mediocre film."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p473",
+   "tipo": "palavra",
+   "fr": "le consommateur",
+   "pt": "o consumidor",
+   "aceitas": [
+    "consumidor",
+    "fregues"
+   ],
+   "distratores": [
+    "o consumo",
+    "o fornecedor",
+    "o produtor",
+    "o vendedor"
+   ],
+   "es": "el consumidor",
+   "aceitasEs": [
+    "el consumidor",
+    "consumidor"
+   ],
+   "distratoresEs": [
+    "el consumo",
+    "el proveedor",
+    "el productor",
+    "el vendedor"
+   ],
+   "en": "the consumer",
+   "aceitasEn": [
+    "consumer",
+    "the consumer"
+   ],
+   "distratoresEn": [
+    "the consumption",
+    "the supplier",
+    "the producer",
+    "the seller"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "compras",
+    "economia"
+   ],
+   "nota": "Masculino; feminino «consommatrice». No café, é também o cliente que consome: «terrasse réservée aux consommateurs». O consumo é «la consommation».",
+   "notaEs": "Masculino; femenino «consommatrice». En el café, es también el cliente que consume: «terrasse réservée aux consommateurs». El consumo es «la consommation».",
+   "notaEn": "Masculine; feminine «consommatrice». In a café it's also the paying customer: «terrasse réservée aux consommateurs». Consumption is «la consommation»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p474",
+   "tipo": "palavra",
+   "fr": "naviguer",
+   "pt": "navegar",
+   "aceitas": [
+    "navegar",
+    "velejar"
+   ],
+   "distratores": [
+    "nadar",
+    "mergulhar",
+    "naufragar",
+    "ancorar"
+   ],
+   "es": "navegar",
+   "aceitasEs": [
+    "navegar"
+   ],
+   "distratoresEs": [
+    "nadar",
+    "bucear",
+    "naufragar",
+    "anclar"
+   ],
+   "en": "to sail",
+   "aceitasEn": [
+    "to sail",
+    "sail",
+    "to navigate",
+    "navigate",
+    "to browse",
+    "browse",
+    "to surf",
+    "surf"
+   ],
+   "distratoresEn": [
+    "to swim",
+    "to dive",
+    "to sink",
+    "to anchor"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "verbo",
+    "viagem"
+   ],
+   "nota": "Navegar no mar, no rio e na internet: «naviguer sur Internet». O «u» depois do «g» fica em todas as formas: «nous naviguons». O navio é «le navire».",
+   "notaEs": "Navegar por el mar, por el río y por internet: «naviguer sur Internet». La «u» después de la «g» se queda en todas las formas: «nous naviguons». El barco es «le navire».",
+   "notaEn": "To sail, and to browse: «naviguer sur Internet». The «u» after the «g» stays in every form: «nous naviguons». A ship is «un navire»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p475",
+   "tipo": "palavra",
+   "fr": "naïf",
+   "aceitasFr": [
+    "naïve"
+   ],
+   "pt": "ingênuo",
+   "aceitas": [
+    "ingenuo",
+    "ingenua",
+    "inocente",
+    "credulo",
+    "credula",
+    "naif"
+   ],
+   "distratores": [
+    "esperto",
+    "nativo",
+    "nervoso",
+    "vaidoso"
+   ],
+   "es": "ingenuo",
+   "aceitasEs": [
+    "ingenuo",
+    "ingenua",
+    "inocente",
+    "crédulo",
+    "crédula",
+    "naíf",
+    "naif"
+   ],
+   "distratoresEs": [
+    "astuto",
+    "nativo",
+    "nervioso",
+    "vanidoso"
+   ],
+   "en": "naive",
+   "aceitasEn": [
+    "naive",
+    "naïve",
+    "innocent",
+    "gullible",
+    "credulous"
+   ],
+   "distratoresEn": [
+    "shrewd",
+    "native",
+    "nervous",
+    "vain"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "social"
+   ],
+   "nota": "Feminino «naïve». O trema separa as vogais: na-if. «Ne sois pas si naïf», não seja tão ingênuo; na pintura, «l'art naïf» é a arte naïf.",
+   "notaEs": "Femenino «naïve». La diéresis separa las vocales: na-if. «Ne sois pas si naïf», no seas tan ingenuo; en pintura, «l'art naïf» es el arte naíf.",
+   "notaEn": "Feminine «naïve». The diaeresis splits the vowels: na-if. «Ne sois pas si naïf», don't be so naive; in painting, «l'art naïf» is naive art."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p476",
+   "tipo": "palavra",
+   "fr": "se remarier",
+   "pt": "casar-se de novo",
+   "aceitas": [
+    "casar se de novo",
+    "se casar de novo",
+    "casar de novo",
+    "casar se novamente",
+    "se casar novamente",
+    "casar novamente",
+    "casar se outra vez",
+    "se casar outra vez",
+    "casar outra vez",
+    "recasar",
+    "recasar se",
+    "se recasar"
+   ],
+   "distratores": [
+    "divorciar-se de novo",
+    "separar-se de novo",
+    "apaixonar-se de novo",
+    "mudar-se de novo"
+   ],
+   "es": "volver a casarse",
+   "aceitasEs": [
+    "volver a casarse",
+    "volverse a casar",
+    "casarse de nuevo",
+    "casarse otra vez",
+    "recasarse"
+   ],
+   "distratoresEs": [
+    "volver a divorciarse",
+    "volver a separarse",
+    "volver a enamorarse",
+    "volver a mudarse"
+   ],
+   "en": "to remarry",
+   "aceitasEn": [
+    "to remarry",
+    "remarry",
+    "to marry again",
+    "marry again",
+    "to get married again",
+    "get married again"
+   ],
+   "distratoresEn": [
+    "to divorce",
+    "to separate",
+    "to get engaged",
+    "to move house"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "verbo",
+    "família"
+   ],
+   "nota": "O «re-» é o de repetir: «elle s'est remariée avec un collègue», ela se casou de novo com um colega. Como «se marier», pede «avec» e faz o passado com «être».",
+   "notaEs": "La «re-» es la de repetir: «elle s'est remariée avec un collègue», volvió a casarse con un colega. Como «se marier», pide «avec» y forma el pasado con «être».",
+   "notaEn": "The «re-» of doing again: «elle s'est remariée avec un collègue», she remarried a colleague. Like «se marier», it takes «avec» rather than a direct object, and «être» in the past."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p477",
+   "tipo": "palavra",
+   "fr": "le tirage",
+   "aceitasFr": [
+    "un tirage"
+   ],
+   "pt": "o sorteio / a tiragem",
+   "aceitas": [
+    "sorteio",
+    "o sorteio",
+    "tiragem",
+    "a tiragem",
+    "a copia",
+    "a impressao"
+   ],
+   "distratores": [
+    "o leilão / a assinatura",
+    "a aposta / a manchete",
+    "o prêmio / a tinta",
+    "o empate / a capa"
+   ],
+   "es": "el sorteo / la tirada",
+   "aceitasEs": [
+    "el sorteo",
+    "sorteo",
+    "la tirada",
+    "tirada",
+    "el tiraje",
+    "la copia"
+   ],
+   "distratoresEs": [
+    "la subasta / la suscripción",
+    "la apuesta / el titular",
+    "el premio / la tinta",
+    "el empate / la portada"
+   ],
+   "en": "the draw / the print run",
+   "aceitasEn": [
+    "the draw",
+    "draw",
+    "the drawing",
+    "drawing",
+    "the print run",
+    "print run",
+    "the circulation",
+    "circulation",
+    "the print",
+    "print"
+   ],
+   "distratoresEn": [
+    "the auction / the subscription",
+    "the bet / the headline",
+    "the prize / the ink",
+    "the refund / the cover"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "mídia"
+   ],
+   "nota": "Vem de «tirer», puxar, tirar: «le tirage au sort», o sorteio; «le tirage d'un journal», a tiragem. Na fotografia, é a cópia em papel.",
+   "notaEs": "Viene de «tirer», tirar, sacar: «le tirage au sort», el sorteo; «le tirage d'un journal», la tirada. En fotografía, es la copia en papel.",
+   "notaEn": "From «tirer», to pull or draw: «le tirage au sort», the drawing of lots; «le tirage d'un journal», a newspaper's circulation. In photography, a print."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p478",
+   "tipo": "palavra",
+   "fr": "les fiançailles",
+   "pt": "o noivado",
+   "aceitas": [
+    "noivado"
+   ],
+   "distratores": [
+    "o casamento",
+    "o divórcio",
+    "o namoro",
+    "o batizado"
+   ],
+   "es": "el compromiso",
+   "aceitasEs": [
+    "el compromiso",
+    "compromiso",
+    "el compromiso matrimonial",
+    "los esponsales"
+   ],
+   "distratoresEs": [
+    "la boda",
+    "el divorcio",
+    "la cita",
+    "el bautizo"
+   ],
+   "en": "the engagement",
+   "aceitasEn": [
+    "engagement",
+    "the engagement",
+    "betrothal",
+    "the betrothal"
+   ],
+   "distratoresEn": [
+    "the wedding",
+    "the divorce",
+    "the honeymoon",
+    "the christening"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "família"
+   ],
+   "nota": "Só existe no plural, e é feminino: «leurs fiançailles», o noivado deles. O noivo é «le fiancé», e noivar é «se fiancer» — nada a ver com fiança, que é «la caution».",
+   "notaEs": "Solo existe en plural, y es femenino: «leurs fiançailles», su compromiso. El novio es «le fiancé», y prometerse es «se fiancer». Ojo: «le compromis» es el acuerdo en que cada parte cede.\n🇫🇷 le compromis → 🇪🇸 la solución intermedia",
+   "notaEn": "Plural only, and feminine: «leurs fiançailles», their engagement. The fiancé is «le fiancé», and to get engaged is «se fiancer». Careful: «l'engagement» is a commitment, not this."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p479",
+   "tipo": "palavra",
+   "fr": "le journalisme",
+   "pt": "o jornalismo",
+   "aceitas": [
+    "jornalismo"
+   ],
+   "distratores": [
+    "a publicidade",
+    "a fotografia",
+    "o turismo",
+    "a política"
+   ],
+   "es": "el periodismo",
+   "aceitasEs": [
+    "el periodismo",
+    "periodismo"
+   ],
+   "distratoresEs": [
+    "la publicidad",
+    "la fotografía",
+    "el turismo",
+    "la política"
+   ],
+   "en": "journalism",
+   "aceitasEn": [
+    "journalism",
+    "the journalism"
+   ],
+   "distratoresEn": [
+    "advertising",
+    "photography",
+    "tourism",
+    "politics"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "mídia"
+   ],
+   "nota": "Masculino, como os «-isme»: «faire du journalisme», trabalhar com jornalismo. O jornalista é «le journaliste», e o jornal, «le journal», de «jour», dia.",
+   "notaEs": "Masculino, como los «-isme»: «faire du journalisme», dedicarse al periodismo. El periodista es «le journaliste», y el periódico, «le journal», de «jour», día.",
+   "notaEn": "Masculine, like all «-isme» nouns: «faire du journalisme», to work in journalism. A journalist is «un journaliste»; the newspaper, «le journal», from «jour», day."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p480",
+   "tipo": "palavra",
+   "fr": "égyptien",
+   "aceitasFr": [
+    "égyptienne"
+   ],
+   "pt": "egípcio",
+   "aceitas": [
+    "egipcio",
+    "egipcia"
+   ],
+   "distratores": [
+    "etíope",
+    "marroquino",
+    "libanês",
+    "sírio"
+   ],
+   "es": "egipcio",
+   "aceitasEs": [
+    "egipcio",
+    "egipcia"
+   ],
+   "distratoresEs": [
+    "etíope",
+    "marroquí",
+    "libanés",
+    "sirio"
+   ],
+   "en": "Egyptian",
+   "aceitasEn": [
+    "egyptian"
+   ],
+   "distratoresEn": [
+    "Ethiopian",
+    "Moroccan",
+    "Lebanese",
+    "Syrian"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "adjetivo",
+    "cultura"
+   ],
+   "nota": "Feminino «égyptienne», com dois «n». Minúscula no adjetivo, maiúscula no povo: «les Égyptiens». O país é feminino: «l'Égypte», «en Égypte».",
+   "notaEs": "Femenino «égyptienne», con dos «n». Minúscula en el adjetivo, mayúscula en el pueblo: «les Égyptiens». El país es femenino: «l'Égypte», «en Égypte».",
+   "notaEn": "Feminine «égyptienne», with a double «n». Lowercase as an adjective, capitalized for the people: «les Égyptiens». The country is feminine: «l'Égypte», «en Égypte»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p481",
+   "tipo": "palavra",
+   "fr": "susceptible",
+   "pt": "suscetível",
+   "aceitas": [
+    "suscetivel",
+    "susceptivel",
+    "melindroso",
+    "melindrosa",
+    "sensivel",
+    "capaz de",
+    "passivel de"
+   ],
+   "distratores": [
+    "suspeito",
+    "suspenso",
+    "sustentável",
+    "tranquilo"
+   ],
+   "es": "susceptible",
+   "aceitasEs": [
+    "susceptible",
+    "quisquilloso",
+    "quisquillosa",
+    "sensible",
+    "picajoso",
+    "picajosa"
+   ],
+   "distratoresEs": [
+    "sospechoso",
+    "suspendido",
+    "sostenible",
+    "tranquilo"
+   ],
+   "en": "touchy",
+   "aceitasEn": [
+    "touchy",
+    "oversensitive",
+    "thin-skinned",
+    "sensitive",
+    "easily offended",
+    "prickly",
+    "liable",
+    "liable to",
+    "likely",
+    "likely to"
+   ],
+   "distratoresEn": [
+    "suspicious",
+    "suspended",
+    "sustainable",
+    "calm"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "social"
+   ],
+   "nota": "Mesma forma no feminino. O sentido mais comum é o de quem se ofende à toa: «il est très susceptible». Com «de», é passível de: «un prix susceptible de changer», um preço que pode mudar.",
+   "notaEs": "Misma forma en femenino. El sentido más común es el de quien se ofende por nada: «il est très susceptible». Con «de», es que puede: «un prix susceptible de changer», un precio que puede cambiar.",
+   "notaEn": "Same form in the feminine. Mostly touchy, easily offended: «il est très susceptible». With «de», liable to: «un prix susceptible de changer», a price that may change. Prone to an illness is rather «sujet à»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p482",
+   "tipo": "palavra",
+   "fr": "la participation",
+   "pt": "a participação",
+   "aceitas": [
+    "participacao"
+   ],
+   "distratores": [
+    "a partida",
+    "a preparação",
+    "a parceria",
+    "a ausência"
+   ],
+   "es": "la participación",
+   "aceitasEs": [
+    "la participación",
+    "participación"
+   ],
+   "distratoresEs": [
+    "la partida",
+    "la preparación",
+    "la asociación",
+    "la ausencia"
+   ],
+   "en": "participation",
+   "aceitasEn": [
+    "participation",
+    "the participation",
+    "involvement",
+    "share",
+    "stake",
+    "contribution",
+    "turnout"
+   ],
+   "distratoresEn": [
+    "departure",
+    "preparation",
+    "partnership",
+    "absence"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "social"
+   ],
+   "nota": "Pede «à»: «la participation à la réunion». «La participation aux frais» é a contribuição nas despesas, e «le taux de participation», o comparecimento numa eleição.",
+   "notaEs": "Pide «à»: «la participation à la réunion». «La participation aux frais» es la contribución a los gastos, y «le taux de participation», la participación electoral.",
+   "notaEn": "Takes «à»: «la participation à la réunion». «La participation aux frais» is a share of the costs, and «le taux de participation», voter turnout."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p483",
+   "tipo": "palavra",
+   "fr": "fleurir",
+   "pt": "florescer",
+   "aceitas": [
+    "florescer",
+    "florir",
+    "dar flor",
+    "dar flores",
+    "desabrochar",
+    "prosperar",
+    "enfeitar com flores"
+   ],
+   "distratores": [
+    "murchar",
+    "regar",
+    "colher",
+    "podar"
+   ],
+   "es": "florecer",
+   "aceitasEs": [
+    "florecer",
+    "florear",
+    "dar flor",
+    "dar flores",
+    "prosperar",
+    "adornar con flores"
+   ],
+   "distratoresEs": [
+    "marchitarse",
+    "regar",
+    "cosechar",
+    "podar"
+   ],
+   "en": "to bloom",
+   "aceitasEn": [
+    "to bloom",
+    "bloom",
+    "to flower",
+    "flower",
+    "to blossom",
+    "blossom",
+    "to flourish",
+    "flourish",
+    "to thrive",
+    "thrive"
+   ],
+   "distratoresEn": [
+    "to wilt",
+    "to water",
+    "to harvest",
+    "to prune"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "verbo",
+    "natureza"
+   ],
+   "nota": "Florescer: «les cerisiers fleurissent en avril». Com objeto, é enfeitar com flores: «fleurir une tombe». No sentido de prosperar, o imperfeito muda de radical: «le commerce florissait».",
+   "notaEs": "Florecer: «les cerisiers fleurissent en avril». Con complemento, es adornar con flores: «fleurir une tombe». En el sentido de prosperar, el imperfecto cambia de raíz: «le commerce florissait».",
+   "notaEn": "To bloom: «les cerisiers fleurissent en avril». With an object, to decorate with flowers: «fleurir une tombe». Meaning to thrive, the imperfect changes stem: «le commerce florissait»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p484",
+   "tipo": "palavra",
+   "fr": "l'agenda",
+   "aceitasFr": [
+    "un agenda"
+   ],
+   "pt": "a agenda",
+   "aceitas": [
+    "agenda"
+   ],
+   "distratores": [
+    "a caderneta",
+    "a pasta",
+    "a carteira",
+    "a apostila"
+   ],
+   "es": "la agenda",
+   "aceitasEs": [
+    "la agenda",
+    "agenda"
+   ],
+   "distratoresEs": [
+    "la libreta",
+    "la carpeta",
+    "la cartera",
+    "la ficha"
+   ],
+   "en": "the planner",
+   "aceitasEn": [
+    "planner",
+    "the planner",
+    "diary",
+    "the diary",
+    "datebook",
+    "the datebook",
+    "calendar",
+    "the calendar",
+    "appointment book",
+    "the appointment book",
+    "agenda",
+    "the agenda"
+   ],
+   "distratoresEn": [
+    "the notebook",
+    "the folder",
+    "the wallet",
+    "the handout"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "trabalho"
+   ],
+   "nota": "Masculino, ao contrário do português: «mon agenda est plein», minha agenda está cheia. Vale para a de papel e a do celular. A pauta de uma reunião é «l'ordre du jour».",
+   "notaEs": "Masculino, al revés del español: «mon agenda est plein», tengo la agenda llena. Vale para la de papel y la del móvil. El orden del día de una reunión es «l'ordre du jour».",
+   "notaEn": "Masculine: «mon agenda est plein», my calendar is full. It's the planner, on paper or on a phone; a meeting's agenda is «l'ordre du jour».",
+   "transparencia": {
+    "pt": "nenhuma",
+    "es": "nenhuma"
+   }
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p485",
+   "tipo": "palavra",
+   "fr": "le disciple",
+   "aceitasFr": [
+    "un disciple",
+    "la disciple",
+    "une disciple"
+   ],
+   "pt": "o discípulo",
+   "aceitas": [
+    "discipulo",
+    "a discipula",
+    "o seguidor",
+    "a seguidora",
+    "o pupilo",
+    "a pupila"
+   ],
+   "distratores": [
+    "o mestre",
+    "o profeta",
+    "o rival",
+    "o herdeiro"
+   ],
+   "es": "el discípulo",
+   "aceitasEs": [
+    "el discípulo",
+    "discípulo",
+    "la discípula",
+    "el seguidor",
+    "la seguidora"
+   ],
+   "distratoresEs": [
+    "el maestro",
+    "el profeta",
+    "el rival",
+    "el heredero"
+   ],
+   "en": "the disciple",
+   "aceitasEn": [
+    "disciple",
+    "the disciple",
+    "follower",
+    "the follower",
+    "pupil",
+    "the pupil"
+   ],
+   "distratoresEn": [
+    "the master",
+    "the prophet",
+    "the rival",
+    "the heir"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "A mesma forma serve aos dois gêneros: «un disciple», «une disciple». É o seguidor de um mestre: «les disciples de Socrate». A disciplina é «la discipline».",
+   "notaEs": "La misma forma sirve para los dos géneros: «un disciple», «une disciple». Es el seguidor de un maestro: «les disciples de Socrate». La disciplina es «la discipline».",
+   "notaEn": "One form for both genders: «un disciple», «une disciple». A master's follower: «les disciples de Socrate». Discipline is «la discipline»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p486",
+   "tipo": "palavra",
+   "fr": "humble",
+   "pt": "humilde",
+   "aceitas": [
+    "humilde",
+    "modesto",
+    "modesta"
+   ],
+   "distratores": [
+    "orgulhoso",
+    "úmido",
+    "honesto",
+    "arrogante"
+   ],
+   "es": "humilde",
+   "aceitasEs": [
+    "humilde",
+    "modesto",
+    "modesta"
+   ],
+   "distratoresEs": [
+    "orgulloso",
+    "húmedo",
+    "honesto",
+    "arrogante"
+   ],
+   "en": "humble",
+   "aceitasEn": [
+    "humble",
+    "modest",
+    "lowly"
+   ],
+   "distratoresEn": [
+    "proud",
+    "humid",
+    "honest",
+    "arrogant"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "social"
+   ],
+   "nota": "Mesma forma no feminino, e o «h» é mudo: «l'humble». Costuma vir antes do nome: «à mon humble avis», na minha humilde opinião. Úmido é «humide».",
+   "notaEs": "Misma forma en femenino, y la «h» es muda: «l'humble». Suele ir delante del nombre: «à mon humble avis», en mi humilde opinión. Húmedo es «humide».",
+   "notaEn": "Same form in the feminine, and the «h» is silent: «l'humble». It often comes before the noun: «à mon humble avis», in my humble opinion. Humid is «humide»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p487",
+   "tipo": "palavra",
+   "fr": "solliciter",
+   "pt": "solicitar",
+   "aceitas": [
+    "solicitar",
+    "pedir",
+    "requerer",
+    "requisitar"
+   ],
+   "distratores": [
+    "soltar",
+    "solucionar",
+    "consolar",
+    "recusar"
+   ],
+   "es": "solicitar",
+   "aceitasEs": [
+    "solicitar",
+    "pedir",
+    "requerir"
+   ],
+   "distratoresEs": [
+    "soltar",
+    "solucionar",
+    "consolar",
+    "rechazar"
+   ],
+   "en": "to request",
+   "aceitasEn": [
+    "to request",
+    "request",
+    "to solicit",
+    "solicit",
+    "to ask for",
+    "ask for",
+    "to apply for",
+    "apply for",
+    "to seek",
+    "seek"
+   ],
+   "distratoresEn": [
+    "to release",
+    "to solve",
+    "to console",
+    "to refuse"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "verbo",
+    "trabalho",
+    "formal"
+   ],
+   "nota": "Formal, e com dois «l»: «solliciter un entretien», pedir uma entrevista; «solliciter un poste», candidatar-se a um cargo. Também é exigir esforço: «ce sport sollicite les genoux».",
+   "notaEs": "Formal, y con dos «l»: «solliciter un entretien», solicitar una entrevista; «solliciter un poste», postularse a un puesto. También es exigir esfuerzo: «ce sport sollicite les genoux».",
+   "notaEn": "Formal, with a double «l»: «solliciter un entretien», to request an interview; «solliciter un poste», to apply for a job. It also means to put strain on: «ce sport sollicite les genoux»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p488",
+   "tipo": "palavra",
+   "fr": "la destruction",
+   "pt": "a destruição",
+   "aceitas": [
+    "destruicao"
+   ],
+   "distratores": [
+    "a construção",
+    "a distração",
+    "a instrução",
+    "a restauração"
+   ],
+   "es": "la destrucción",
+   "aceitasEs": [
+    "la destrucción",
+    "destrucción"
+   ],
+   "distratoresEs": [
+    "la construcción",
+    "la distracción",
+    "la instrucción",
+    "la restauración"
+   ],
+   "en": "destruction",
+   "aceitasEn": [
+    "destruction",
+    "the destruction"
+   ],
+   "distratoresEn": [
+    "construction",
+    "distraction",
+    "instruction",
+    "restoration"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Feminino, como todo «-tion». O verbo é «détruire», com particípio «détruit»: «la ville a été détruite», a cidade foi destruída.",
+   "notaEs": "Femenino, como todo «-tion». El verbo es «détruire», con participio «détruit»: «la ville a été détruite», la ciudad fue destruida.",
+   "notaEn": "Feminine, like every «-tion» noun. The verb is «détruire», past participle «détruit»: «la ville a été détruite», the city was destroyed."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p489",
+   "tipo": "palavra",
+   "fr": "le conduit",
+   "aceitasFr": [
+    "un conduit"
+   ],
+   "pt": "o duto",
+   "aceitas": [
+    "duto",
+    "o ducto",
+    "o conduto",
+    "o cano",
+    "o tubo",
+    "o canal",
+    "a tubulacao"
+   ],
+   "distratores": [
+    "o comportamento",
+    "o filtro",
+    "o parafuso",
+    "o motorista"
+   ],
+   "es": "el conducto",
+   "aceitasEs": [
+    "el conducto",
+    "conducto",
+    "el ducto",
+    "el tubo",
+    "el caño",
+    "la tubería",
+    "el canal"
+   ],
+   "distratoresEs": [
+    "el comportamiento",
+    "el filtro",
+    "el tornillo",
+    "el conductor"
+   ],
+   "en": "the duct",
+   "aceitasEn": [
+    "duct",
+    "the duct",
+    "conduit",
+    "the conduit",
+    "pipe",
+    "the pipe",
+    "channel",
+    "the channel",
+    "canal",
+    "the canal",
+    "tube",
+    "the tube"
+   ],
+   "distratoresEn": [
+    "the behavior",
+    "the filter",
+    "the screw",
+    "the driver"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "casa"
+   ],
+   "nota": "Masculino, sem «e»: «le conduit d'aération», o duto de ventilação; «le conduit auditif», o canal auditivo. Com «e», «la conduite» é a conduta — e o jeito de dirigir.",
+   "notaEs": "Masculino, sin «e»: «le conduit d'aération», el conducto de ventilación; «le conduit auditif», el conducto auditivo. Con «e», «la conduite» es la conducta, y también la forma de conducir.",
+   "notaEn": "Masculine, no final «e»: «le conduit d'aération», the air duct; «le conduit auditif», the ear canal. With an «e», «la conduite» is behavior, and also driving."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p490",
+   "tipo": "palavra",
+   "fr": "l'automobile",
+   "aceitasFr": [
+    "une automobile",
+    "l'auto",
+    "une auto"
+   ],
+   "pt": "o automóvel",
+   "aceitas": [
+    "automovel"
+   ],
+   "distratores": [
+    "o caminhão",
+    "o ônibus",
+    "o barco",
+    "o avião"
+   ],
+   "es": "el automóvil",
+   "aceitasEs": [
+    "el automóvil",
+    "automóvil",
+    "el carro",
+    "el auto"
+   ],
+   "distratoresEs": [
+    "el camión",
+    "el autobús",
+    "el barco",
+    "el avión"
+   ],
+   "en": "the automobile",
+   "aceitasEn": [
+    "automobile",
+    "the automobile",
+    "auto",
+    "the auto",
+    "motorcar"
+   ],
+   "distratoresEn": [
+    "the truck",
+    "the bus",
+    "the boat",
+    "the airplane"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "cidade"
+   ],
+   "nota": "Feminino, ao contrário do português: «une automobile». No dia a dia se diz «la voiture»; «automobile» fica para o setor: «l'industrie automobile», «le Salon de l'automobile».",
+   "notaEs": "Femenino, al revés del español: «une automobile». En el día a día se dice «la voiture»; «automobile» queda para el sector: «l'industrie automobile», «le Salon de l'automobile».",
+   "notaEn": "Feminine: «une automobile». Everyday French says «la voiture»; «automobile» is for the industry: «l'industrie automobile», «le Salon de l'automobile», the motor show."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p491",
+   "tipo": "palavra",
+   "fr": "infiltrer",
+   "pt": "infiltrar",
+   "aceitas": [
+    "infiltrar",
+    "infiltrar se",
+    "se infiltrar",
+    "penetrar"
+   ],
+   "distratores": [
+    "infligir",
+    "inflar",
+    "informar",
+    "expulsar"
+   ],
+   "es": "infiltrar",
+   "aceitasEs": [
+    "infiltrar",
+    "infiltrarse",
+    "penetrar"
+   ],
+   "distratoresEs": [
+    "infligir",
+    "inflar",
+    "informar",
+    "expulsar"
+   ],
+   "en": "to infiltrate",
+   "aceitasEn": [
+    "to infiltrate",
+    "infiltrate",
+    "to penetrate",
+    "penetrate",
+    "to seep into",
+    "seep into",
+    "to seep",
+    "seep"
+   ],
+   "distratoresEn": [
+    "to inflict",
+    "to inflate",
+    "to inform",
+    "to expel"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "verbo",
+    "política"
+   ],
+   "nota": "Com objeto, para gente: «infiltrer un réseau», infiltrar-se numa rede. Para líquido, pronominal: «l'eau s'infiltre dans le mur», a água se infiltra na parede.",
+   "notaEs": "Con complemento, para personas: «infiltrer un réseau», infiltrarse en una red. Para un líquido, pronominal: «l'eau s'infiltre dans le mur», el agua se filtra en la pared.",
+   "notaEn": "With an object, for people: «infiltrer un réseau», to infiltrate a network. For liquids, it's reflexive: «l'eau s'infiltre dans le mur», water seeps into the wall."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p492",
+   "tipo": "palavra",
+   "fr": "parallèle",
+   "pt": "paralelo",
+   "aceitas": [
+    "paralelo",
+    "paralela"
+   ],
+   "distratores": [
+    "perpendicular",
+    "diagonal",
+    "vertical",
+    "horizontal"
+   ],
+   "es": "paralelo",
+   "aceitasEs": [
+    "paralelo",
+    "paralela"
+   ],
+   "distratoresEs": [
+    "perpendicular",
+    "diagonal",
+    "vertical",
+    "horizontal"
+   ],
+   "en": "parallel",
+   "aceitasEn": [
+    "parallel"
+   ],
+   "distratoresEn": [
+    "perpendicular",
+    "diagonal",
+    "vertical",
+    "horizontal"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "escola"
+   ],
+   "nota": "Mesma forma no feminino: «une rue parallèle». Escreve-se com «ll» antes do «è». «En parallèle», ao mesmo tempo; «le marché parallèle», o mercado informal.",
+   "notaEs": "Misma forma en femenino: «une rue parallèle». Se escribe con «ll» delante de la «è». «En parallèle», al mismo tiempo; «le marché parallèle», el mercado informal.",
+   "notaEn": "Same form in the feminine: «une rue parallèle». Spelled with «ll» before the «è». «En parallèle», at the same time; «le marché parallèle», the black market."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p493",
+   "tipo": "palavra",
+   "fr": "la dentelle",
+   "pt": "a renda (tecido)",
+   "aceitas": [
+    "renda",
+    "a renda"
+   ],
+   "distratores": [
+    "a seda (tecido)",
+    "a malha (tecido)",
+    "a flanela (tecido)",
+    "a gaze (tecido)"
+   ],
+   "es": "el encaje (tejido)",
+   "aceitasEs": [
+    "el encaje",
+    "encaje",
+    "el encaje de bolillos",
+    "la puntilla"
+   ],
+   "distratoresEs": [
+    "el terciopelo (tejido)",
+    "el raso (tejido)",
+    "el lino (tejido)",
+    "el algodón (tejido)"
+   ],
+   "en": "lace (fabric)",
+   "aceitasEn": [
+    "lace",
+    "the lace"
+   ],
+   "distratoresEn": [
+    "silk (fabric)",
+    "velvet (fabric)",
+    "linen (fabric)",
+    "gauze (fabric)"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "roupa"
+   ],
+   "nota": "Feminino: «une robe en dentelle», um vestido de renda. «Ne pas faire dans la dentelle» é agir sem delicadeza nenhuma. A renda do dinheiro é «le revenu».",
+   "notaEs": "Femenino: «une robe en dentelle», un vestido de encaje. «Ne pas faire dans la dentelle» es actuar sin ninguna delicadeza.",
+   "notaEn": "Feminine: «une robe en dentelle», a lace dress. «Ne pas faire dans la dentelle» means to be anything but subtle. A shoelace is «un lacet»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p494",
+   "tipo": "palavra",
+   "fr": "verbal",
+   "aceitasFr": [
+    "verbale"
+   ],
+   "pt": "verbal",
+   "aceitas": [
+    "verbal",
+    "oral",
+    "de boca"
+   ],
+   "distratores": [
+    "visual",
+    "escrito",
+    "nominal",
+    "mental"
+   ],
+   "es": "verbal",
+   "aceitasEs": [
+    "verbal",
+    "oral",
+    "de palabra"
+   ],
+   "distratoresEs": [
+    "visual",
+    "escrito",
+    "nominal",
+    "mental"
+   ],
+   "en": "verbal",
+   "aceitasEn": [
+    "verbal",
+    "oral",
+    "spoken"
+   ],
+   "distratoresEn": [
+    "visual",
+    "written",
+    "nominal",
+    "mental"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "escola"
+   ],
+   "nota": "Feminino «verbale», plural «verbaux». «Un accord verbal» é de boca, sem papel. «Le procès-verbal» é a ata — e também a multa.",
+   "notaEs": "Femenino «verbale», plural «verbaux». «Un accord verbal» es de palabra, sin papel. «Le procès-verbal» es el acta, y también la multa.",
+   "notaEn": "Feminine «verbale», plural «verbaux». «Un accord verbal» is a spoken agreement, nothing on paper. «Le procès-verbal» is the minutes, and also a traffic ticket."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p495",
+   "tipo": "palavra",
+   "fr": "implorer",
+   "pt": "implorar",
+   "aceitas": [
+    "implorar",
+    "suplicar",
+    "rogar"
+   ],
+   "distratores": [
+    "explorar",
+    "deplorar",
+    "recusar",
+    "agradecer"
+   ],
+   "es": "implorar",
+   "aceitasEs": [
+    "implorar",
+    "suplicar",
+    "rogar"
+   ],
+   "distratoresEs": [
+    "explorar",
+    "deplorar",
+    "rechazar",
+    "agradecer"
+   ],
+   "en": "to beg",
+   "aceitasEn": [
+    "to beg",
+    "beg",
+    "to implore",
+    "implore",
+    "to plead",
+    "plead",
+    "to plead with",
+    "to beseech",
+    "beseech"
+   ],
+   "distratoresEn": [
+    "to explore",
+    "to deplore",
+    "to refuse",
+    "to thank"
+   ],
+   "nivel": "C2",
+   "tags": [
+    "verbo",
+    "social"
+   ],
+   "nota": "A pessoa vem sem preposição, e o que se pede vem com «de»: «il m'a imploré de rester», ele me implorou que ficasse. Na conversa, ouve-se mais «supplier»: «je t'en supplie», eu te imploro.",
+   "notaEs": "La persona va sin preposición, y lo que se pide va con «de»: «il m'a imploré de rester», me imploró que me quedara. En la conversación se oye más «supplier»: «je t'en supplie», te lo suplico.",
+   "notaEn": "The person is a direct object, and the action takes «de»: «il m'a imploré de rester», he begged me to stay. In everyday speech «supplier» is more common: «je t'en supplie», I'm begging you."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p496",
+   "tipo": "palavra",
+   "fr": "le coiffeur",
+   "aceitasFr": [
+    "la coiffeuse"
+   ],
+   "pt": "o cabeleireiro",
+   "aceitas": [
+    "cabeleireiro",
+    "a cabeleireira"
+   ],
+   "distratores": [
+    "o cozinheiro",
+    "o costureiro",
+    "o jardineiro",
+    "o carteiro"
+   ],
+   "es": "el peluquero",
+   "aceitasEs": [
+    "el peluquero",
+    "peluquero",
+    "la peluquera",
+    "el estilista",
+    "la estilista"
+   ],
+   "distratoresEs": [
+    "el cocinero",
+    "el sastre",
+    "el jardinero",
+    "el cartero"
+   ],
+   "en": "the hairdresser",
+   "aceitasEn": [
+    "hairdresser",
+    "the hairdresser",
+    "hairstylist",
+    "the hairstylist",
+    "hair stylist",
+    "stylist"
+   ],
+   "distratoresEn": [
+    "the cook",
+    "the tailor",
+    "the gardener",
+    "the mail carrier"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "profissões",
+    "cotidiano"
+   ],
+   "nota": "Feminino «la coiffeuse», que também é a penteadeira. «Aller chez le coiffeur», ir ao cabeleireiro: a pessoa e o salão. Vem de «coiffer», pentear, e «la coiffure» é o penteado.",
+   "notaEs": "Femenino «la coiffeuse», que también es el tocador. «Aller chez le coiffeur», ir a la peluquería. Viene de «coiffer», peinar, y «la coiffure» es el peinado.",
+   "notaEn": "Feminine «la coiffeuse», which is also a dressing table. «Aller chez le coiffeur», to go to the hairdresser's. From «coiffer», to do someone's hair; «la coiffure» is the hairstyle."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p497",
+   "tipo": "palavra",
+   "fr": "clandestin",
+   "aceitasFr": [
+    "clandestine"
+   ],
+   "pt": "clandestino",
+   "aceitas": [
+    "clandestino",
+    "clandestina",
+    "ilegal",
+    "irregular",
+    "secreto",
+    "secreta"
+   ],
+   "distratores": [
+    "oficial",
+    "autorizado",
+    "perigoso",
+    "provisório"
+   ],
+   "es": "clandestino",
+   "aceitasEs": [
+    "clandestino",
+    "clandestina",
+    "ilegal",
+    "irregular",
+    "secreto",
+    "secreta"
+   ],
+   "distratoresEs": [
+    "oficial",
+    "autorizado",
+    "peligroso",
+    "provisional"
+   ],
+   "en": "clandestine",
+   "aceitasEn": [
+    "clandestine",
+    "illegal",
+    "undocumented",
+    "secret",
+    "underground",
+    "covert"
+   ],
+   "distratoresEn": [
+    "official",
+    "authorized",
+    "dangerous",
+    "temporary"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "política"
+   ],
+   "nota": "Feminino «clandestine». Muito do noticiário: «un travailleur clandestin», um trabalhador sem documentos; «un passager clandestin», um passageiro clandestino. Como substantivo, «les clandestins» são os imigrantes em situação irregular.",
+   "notaEs": "Femenino «clandestine». Muy de noticiero: «un travailleur clandestin», un trabajador sin papeles; «un passager clandestin», un polizón. Como sustantivo, «les clandestins» son los inmigrantes sin papeles.",
+   "notaEn": "Feminine «clandestine». Common in the news: «un travailleur clandestin», an undocumented worker; «un passager clandestin», a stowaway. As a noun, «les clandestins» are undocumented migrants."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p498",
+   "tipo": "palavra",
+   "fr": "s'aventurer",
+   "pt": "aventurar-se",
+   "aceitas": [
+    "aventurar se",
+    "se aventurar",
+    "arriscar se",
+    "se arriscar",
+    "atrever se",
+    "se atrever",
+    "embrenhar se",
+    "se embrenhar"
+   ],
+   "distratores": [
+    "acomodar-se",
+    "esconder-se",
+    "divertir-se",
+    "arrepender-se"
+   ],
+   "es": "aventurarse",
+   "aceitasEs": [
+    "aventurarse",
+    "arriesgarse",
+    "atreverse",
+    "adentrarse"
+   ],
+   "distratoresEs": [
+    "acomodarse",
+    "esconderse",
+    "divertirse",
+    "arrepentirse"
+   ],
+   "en": "to venture",
+   "aceitasEn": [
+    "to venture",
+    "venture",
+    "to venture out",
+    "venture out",
+    "to venture into",
+    "to risk",
+    "to dare",
+    "dare"
+   ],
+   "distratoresEn": [
+    "to settle in",
+    "to hide",
+    "to have fun",
+    "to regret"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "verbo",
+    "viagem"
+   ],
+   "nota": "Com «dans» para o lugar: «s'aventurer dans la forêt», aventurar-se na floresta; com «à» para o que se ousa: «je ne m'aventurerais pas à le dire», eu não me arriscaria a dizer isso. No passado, com «être»: «elle s'est aventurée».",
+   "notaEs": "Con «dans» para el lugar: «s'aventurer dans la forêt», adentrarse en el bosque; con «à» para lo que uno se atreve a hacer: «je ne m'aventurerais pas à le dire», no me atrevería a decirlo. En pasado, con «être»: «elle s'est aventurée».",
+   "notaEn": "With «dans» for a place: «s'aventurer dans la forêt», to venture into the forest; with «à» for a risky act: «je ne m'aventurerais pas à le dire», I wouldn't venture to say so. Past tense with «être»: «elle s'est aventurée»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p499",
+   "tipo": "palavra",
+   "fr": "la rubrique",
+   "pt": "a seção (de jornal)",
+   "aceitas": [
+    "secao",
+    "a secao do jornal",
+    "a coluna",
+    "coluna",
+    "a editoria",
+    "editoria",
+    "a categoria"
+   ],
+   "distratores": [
+    "a manchete (de jornal)",
+    "a tiragem (de jornal)",
+    "a margem (da página)",
+    "a assinatura (num documento)"
+   ],
+   "es": "la sección (del periódico)",
+   "aceitasEs": [
+    "la sección",
+    "sección",
+    "la sección del periódico",
+    "la columna",
+    "columna",
+    "el apartado",
+    "la categoría"
+   ],
+   "distratoresEs": [
+    "el titular (del periódico)",
+    "la tirada (del periódico)",
+    "el margen (de la página)",
+    "la firma (en un documento)"
+   ],
+   "en": "the section (of a newspaper)",
+   "aceitasEn": [
+    "section",
+    "the section",
+    "column",
+    "the column",
+    "heading",
+    "category",
+    "rubric"
+   ],
+   "distratoresEn": [
+    "the headline (of a newspaper)",
+    "the circulation (of a newspaper)",
+    "the margin (of a page)",
+    "the signature (on a document)"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "mídia",
+    "falso-amigo"
+   ],
+   "nota": "A seção de jornal, revista ou site: «la rubrique cinéma», a seção de cinema; também o título de uma categoria numa lista. Falso amigo: a rubrica, a assinatura abreviada, é «le paraphe».\n🇫🇷 le paraphe → 🇧🇷 a rubrica",
+   "notaEs": "La sección de un periódico, una revista o un sitio web: «la rubrique cinéma», la sección de cine; también el encabezado de una categoría en una lista. Falso amigo: la rúbrica de la firma es «le paraphe».\n🇫🇷 le paraphe → 🇪🇸 la rúbrica",
+   "notaEn": "A section of a newspaper, magazine or website: «la rubrique cinéma», the film section; also a heading in a list. Not a grading rubric, which is «une grille d'évaluation»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p500",
+   "tipo": "palavra",
+   "fr": "l'éloge",
+   "aceitasFr": [
+    "un éloge"
+   ],
+   "pt": "o elogio",
+   "aceitas": [
+    "elogio",
+    "o louvor",
+    "a louvacao",
+    "o enaltecimento"
+   ],
+   "distratores": [
+    "a crítica",
+    "o insulto",
+    "o conselho",
+    "o desafio"
+   ],
+   "es": "el elogio",
+   "aceitasEs": [
+    "el elogio",
+    "elogio",
+    "la alabanza",
+    "el encomio",
+    "el panegírico"
+   ],
+   "distratoresEs": [
+    "la crítica",
+    "el insulto",
+    "el consejo",
+    "el desafío"
+   ],
+   "en": "praise",
+   "aceitasEn": [
+    "praise",
+    "the praise",
+    "eulogy",
+    "the eulogy",
+    "tribute",
+    "acclaim"
+   ],
+   "distratoresEn": [
+    "criticism",
+    "mockery",
+    "advice",
+    "blame"
+   ],
+   "nivel": "C2",
+   "tags": [
+    "social"
+   ],
+   "nota": "Masculino, apesar do «-e»: «un éloge». «Faire l'éloge de», elogiar; «l'éloge funèbre», o discurso fúnebre. O elogio do dia a dia, a uma roupa ou a um prato, é «le compliment».",
+   "notaEs": "Masculino, aunque acabe en «-e»: «un éloge». «Faire l'éloge de», elogiar; «l'éloge funèbre», el discurso fúnebre. El halago del día a día, a una prenda o a un plato, es «le compliment».",
+   "notaEn": "Masculine despite the «-e»: «un éloge». «Faire l'éloge de», to praise; «l'éloge funèbre», the eulogy. Everyday praise for an outfit or a dish is «un compliment»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p501",
+   "tipo": "palavra",
+   "fr": "l'initiation",
+   "pt": "a iniciação",
+   "aceitas": [
+    "iniciacao",
+    "a introducao",
+    "introducao"
+   ],
+   "distratores": [
+    "a imitação",
+    "a inscrição",
+    "a inovação",
+    "a conclusão"
+   ],
+   "es": "la iniciación",
+   "aceitasEs": [
+    "la iniciación",
+    "iniciación",
+    "la introducción",
+    "introducción"
+   ],
+   "distratoresEs": [
+    "la imitación",
+    "la inscripción",
+    "la innovación",
+    "la conclusión"
+   ],
+   "en": "initiation",
+   "aceitasEn": [
+    "initiation",
+    "the initiation",
+    "introduction",
+    "the introduction",
+    "induction"
+   ],
+   "distratoresEn": [
+    "imitation",
+    "enrollment",
+    "innovation",
+    "conclusion"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "escola"
+   ],
+   "nota": "Além do rito, o primeiro contato com um assunto: «un cours d'initiation à la photo», um curso de introdução à fotografia. Pede «à»: «une initiation au yoga».",
+   "notaEs": "Además del rito, el primer contacto con una materia: «un cours d'initiation à la photo», un curso de introducción a la fotografía. Pide «à»: «une initiation au yoga».",
+   "notaEn": "Besides the rite, a first taste of a subject: «un cours d'initiation à la photo», an introductory photography course. It takes «à»: «une initiation au yoga»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p502",
+   "tipo": "palavra",
+   "fr": "le vétéran",
+   "pt": "o veterano",
+   "aceitas": [
+    "veterano",
+    "a veterana",
+    "o ex combatente",
+    "o excombatente"
+   ],
+   "distratores": [
+    "o novato",
+    "o recruta",
+    "o desertor",
+    "o herdeiro"
+   ],
+   "es": "el veterano",
+   "aceitasEs": [
+    "el veterano",
+    "veterano",
+    "la veterana",
+    "el excombatiente",
+    "el ex combatiente"
+   ],
+   "distratoresEs": [
+    "el novato",
+    "el recluta",
+    "el desertor",
+    "el heredero"
+   ],
+   "en": "the veteran",
+   "aceitasEn": [
+    "veteran",
+    "the veteran",
+    "war veteran",
+    "old hand"
+   ],
+   "distratoresEn": [
+    "the newcomer",
+    "the recruit",
+    "the deserter",
+    "the heir"
+   ],
+   "nivel": "C2",
+   "tags": [
+    "social"
+   ],
+   "nota": "O ex-combatente («un vétéran de la guerre d'Algérie») e quem tem longa experiência: «un vétéran du cinéma». No esporte, «les vétérans» são a categoria master.",
+   "notaEs": "El excombatiente («un vétéran de la guerre d'Algérie») y quien lleva mucho tiempo en algo: «un vétéran du cinéma», un veterano del cine. En el deporte, «les vétérans» son la categoría máster.",
+   "notaEn": "A former soldier («un vétéran de la guerre d'Algérie») or anyone long in a field: «un vétéran du cinéma». In sports, «les vétérans» are the masters category."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p503",
+   "tipo": "palavra",
+   "fr": "la fabrication",
+   "pt": "a fabricação",
+   "aceitas": [
+    "fabricacao",
+    "a producao",
+    "producao",
+    "a manufatura",
+    "o fabrico"
+   ],
+   "distratores": [
+    "a fábrica",
+    "a venda",
+    "a embalagem",
+    "a entrega"
+   ],
+   "es": "la fabricación",
+   "aceitasEs": [
+    "la fabricación",
+    "fabricación",
+    "la producción",
+    "producción",
+    "la manufactura"
+   ],
+   "distratoresEs": [
+    "la fábrica",
+    "la venta",
+    "el embalaje",
+    "la entrega"
+   ],
+   "en": "manufacturing",
+   "aceitasEn": [
+    "manufacturing",
+    "manufacture",
+    "the manufacture",
+    "production",
+    "making",
+    "fabrication"
+   ],
+   "distratoresEn": [
+    "sales",
+    "packaging",
+    "delivery",
+    "deceit"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "trabalho",
+    "economia",
+    "falso-amigo"
+   ],
+   "nota": "Feminino, e diz a origem: «de fabrication française», de fabricação francesa; «fabrication artisanale», fabricação artesanal. O verbo é «fabriquer»; a fábrica é «l'usine».",
+   "notaEs": "Femenino, y dice el origen: «de fabrication française», de fabricación francesa; «fabrication artisanale», fabricación artesanal. El verbo es «fabriquer»; la fábrica es «l'usine».",
+   "notaEn": "Making things, not making things up: «de fabrication française», made in France. A made-up story is «une invention» or «un mensonge». The verb is «fabriquer»; the factory is «l'usine»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p504",
+   "tipo": "palavra",
+   "fr": "honnêtement",
+   "pt": "honestamente",
+   "aceitas": [
+    "honestamente",
+    "sinceramente",
+    "francamente",
+    "com honestidade",
+    "para ser sincero",
+    "para ser honesto",
+    "honradamente",
+    "decentemente",
+    "razoavelmente"
+   ],
+   "distratores": [
+    "humildemente",
+    "felizmente",
+    "provavelmente",
+    "discretamente"
+   ],
+   "es": "honestamente",
+   "aceitasEs": [
+    "honestamente",
+    "sinceramente",
+    "francamente",
+    "con honestidad",
+    "honradamente",
+    "decentemente",
+    "razonablemente"
+   ],
+   "distratoresEs": [
+    "humildemente",
+    "afortunadamente",
+    "probablemente",
+    "discretamente"
+   ],
+   "en": "honestly",
+   "aceitasEn": [
+    "honestly",
+    "frankly",
+    "sincerely",
+    "truthfully",
+    "to be honest",
+    "decently",
+    "fairly"
+   ],
+   "distratoresEn": [
+    "humbly",
+    "luckily",
+    "probably",
+    "discreetly"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "De «honnête», honesto, com dois «n» e «ê». No começo da frase, sinceramente: «Honnêtement, je n'en sais rien». E também razoavelmente: «c'est honnêtement payé», paga direitinho.",
+   "notaEs": "De «honnête», honesto, con dos «n» y «ê». Al principio de la frase, sinceramente: «Honnêtement, je n'en sais rien». También razonablemente: «c'est honnêtement payé», está bien pagado.",
+   "notaEn": "From «honnête», honest, with a double «n» and «ê». At the start of a sentence: «Honnêtement, je n'en sais rien», honestly, I have no idea. Also decently: «c'est honnêtement payé», the pay is fair."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p505",
+   "tipo": "palavra",
+   "fr": "le livret",
+   "pt": "a caderneta",
+   "aceitas": [
+    "caderneta",
+    "o livreto",
+    "livreto",
+    "o libreto",
+    "o livrinho"
+   ],
+   "distratores": [
+    "a livraria",
+    "a etiqueta",
+    "a gaveta",
+    "a prancheta"
+   ],
+   "es": "la libreta",
+   "aceitasEs": [
+    "la libreta",
+    "libreta",
+    "el librito",
+    "el libreto",
+    "el cuadernillo",
+    "la cartilla"
+   ],
+   "distratoresEs": [
+    "la librería",
+    "la etiqueta",
+    "el cajón",
+    "la carpeta"
+   ],
+   "en": "the booklet",
+   "aceitasEn": [
+    "booklet",
+    "the booklet",
+    "passbook",
+    "bankbook",
+    "libretto",
+    "record book",
+    "little book"
+   ],
+   "distratoresEn": [
+    "the bookstore",
+    "the label",
+    "the drawer",
+    "the folder"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "escola",
+    "economia"
+   ],
+   "nota": "Livrinho de registro: «le livret scolaire», o boletim escolar; «le livret de famille», o caderno oficial que a prefeitura entrega no casamento; «le livret A», a caderneta de poupança mais popular da França. Na ópera, o libreto.",
+   "notaEs": "Librito de registro: «le livret scolaire», el boletín de notas; «le livret de famille», el libro de familia que entrega el ayuntamiento al casarse; «le livret A», la libreta de ahorros más popular de Francia. En la ópera, el libreto.",
+   "notaEn": "A small record book: «le livret scolaire», the school report book; «le livret de famille», the family record book issued at marriage; «le livret A», France's most popular savings account. In opera, the libretto."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p506",
+   "tipo": "palavra",
+   "fr": "le détecteur",
+   "pt": "o detector",
+   "aceitas": [
+    "detector"
+   ],
+   "distratores": [
+    "o extintor",
+    "o projetor",
+    "o regulador",
+    "o aquecedor"
+   ],
+   "es": "el detector",
+   "aceitasEs": [
+    "el detector",
+    "detector"
+   ],
+   "distratoresEs": [
+    "el extintor",
+    "el proyector",
+    "el regulador",
+    "el calentador"
+   ],
+   "en": "the detector",
+   "aceitasEn": [
+    "detector",
+    "the detector"
+   ],
+   "distratoresEn": [
+    "the extinguisher",
+    "the projector",
+    "the regulator",
+    "the heater"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "objetos",
+    "tecnologia"
+   ],
+   "nota": "«Le détecteur de fumée», o detector de fumaça, obrigatório em toda moradia da França; «le détecteur de métaux», «le détecteur de mensonges». O verbo é «détecter».",
+   "notaEs": "«Le détecteur de fumée», el detector de humo, obligatorio en toda vivienda de Francia; «le détecteur de métaux», «le détecteur de mensonges». El verbo es «détecter».",
+   "notaEn": "«Le détecteur de fumée», the smoke detector, required in every home in France; «le détecteur de métaux», the metal detector. The verb is «détecter»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p507",
+   "tipo": "palavra",
+   "fr": "la mayonnaise",
+   "aceitasFr": [
+    "la mayo"
+   ],
+   "pt": "a maionese",
+   "aceitas": [
+    "maionese"
+   ],
+   "distratores": [
+    "a mostarda",
+    "a manteiga",
+    "o vinagre",
+    "o azeite"
+   ],
+   "es": "la mayonesa",
+   "aceitasEs": [
+    "la mayonesa",
+    "mayonesa",
+    "la mahonesa",
+    "la mayo"
+   ],
+   "distratoresEs": [
+    "la mostaza",
+    "la mantequilla",
+    "el vinagre",
+    "el aceite"
+   ],
+   "en": "mayonnaise",
+   "aceitasEn": [
+    "mayonnaise",
+    "the mayonnaise",
+    "mayo"
+   ],
+   "distratoresEn": [
+    "mustard",
+    "butter",
+    "vinegar",
+    "oil"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "comida"
+   ],
+   "nota": "Feminino. «Monter une mayonnaise», bater a maionese; no figurado, «la mayonnaise prend», a coisa engrena. Na conversa, «la mayo».",
+   "notaEs": "Femenino. «Monter une mayonnaise», batir la mayonesa; en sentido figurado, «la mayonnaise prend», la cosa cuaja. En la conversación, «la mayo».",
+   "notaEn": "Feminine. «Monter une mayonnaise», to whisk up mayonnaise; figuratively, «la mayonnaise prend», things are coming together. Informally, «la mayo»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p508",
+   "tipo": "palavra",
+   "fr": "la vogue",
+   "sinonimosFr": [
+    "la mode"
+   ],
+   "pt": "a voga",
+   "aceitas": [
+    "voga",
+    "em voga"
+   ],
+   "distratores": [
+    "a voz",
+    "a vontade",
+    "a vaidade",
+    "a crise"
+   ],
+   "es": "la boga",
+   "aceitasEs": [
+    "la boga",
+    "boga",
+    "en boga"
+   ],
+   "distratoresEs": [
+    "la voz",
+    "la voluntad",
+    "la vanidad",
+    "la crisis"
+   ],
+   "en": "vogue",
+   "aceitasEn": [
+    "vogue",
+    "the vogue",
+    "in vogue"
+   ],
+   "distratoresEn": [
+    "voice",
+    "will",
+    "vanity",
+    "crisis"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Quase sempre em «en vogue», em voga, na moda: «un mot très en vogue». «La vogue de», a moda de: «la vogue des séries». A onda é «la vague», e a moda de todo dia é «la mode».",
+   "notaEs": "Casi siempre en «en vogue», en boga, de moda: «un mot très en vogue». «La vogue de», la moda de: «la vogue des séries». La ola es «la vague», y la moda de todos los días es «la mode».",
+   "notaEn": "Mostly in «en vogue», as in English: «un mot très en vogue». «La vogue de», the craze for: «la vogue des séries». Everyday fashion is «la mode»; a wave is «la vague»."
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-p509",
+   "tipo": "palavra",
+   "fr": "le faîte",
+   "pt": "o cume",
+   "aceitas": [
+    "cume",
+    "o topo",
+    "topo",
+    "o auge",
+    "o apice",
+    "o alto",
+    "o cimo",
+    "o pinaculo",
+    "a cumeeira"
+   ],
+   "distratores": [
+    "o feito",
+    "a festa",
+    "o fundo",
+    "a base"
+   ],
+   "es": "la cima",
+   "aceitasEs": [
+    "la cima",
+    "cima",
+    "la cumbre",
+    "la cúspide",
+    "el apogeo",
+    "el auge",
+    "lo alto",
+    "la cumbrera"
+   ],
+   "distratoresEs": [
+    "el hecho",
+    "la fiesta",
+    "el fondo",
+    "la base"
+   ],
+   "en": "the top",
+   "aceitasEn": [
+    "top",
+    "the top",
+    "summit",
+    "the summit",
+    "peak",
+    "the peak",
+    "height",
+    "the height",
+    "pinnacle",
+    "apex",
+    "ridge",
+    "the ridge",
+    "crest"
+   ],
+   "distratoresEn": [
+    "the fact",
+    "the party",
+    "the bottom",
+    "the base"
+   ],
+   "nivel": "C2",
+   "tags": [
+    "natureza"
+   ],
+   "nota": "Palavra literária: o ponto mais alto do telhado (a cumeeira), da árvore ou da montanha. Mais usada no figurado: «au faîte de la gloire», no auge da glória. Soa igual a «la fête», a festa.",
+   "notaEs": "Palabra literaria: el punto más alto del tejado (la cumbrera), del árbol o de la montaña. Se usa sobre todo en sentido figurado: «au faîte de la gloire», en la cima de la gloria. Suena igual que «la fête», la fiesta.",
+   "notaEn": "A literary word for the highest point of a roof (the ridge), a tree or a mountain. Mostly figurative: «au faîte de la gloire», at the height of fame. It sounds just like «la fête», the party."
   }
  ]
 }
