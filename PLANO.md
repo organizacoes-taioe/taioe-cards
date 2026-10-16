@@ -1,4 +1,4 @@
-# Plano dos três baralhos
+# Plano dos baralhos
 
 Este arquivo é o contrato do trabalho grande: levar o app de um baralho de
 espanhol a **três baralhos**, que cobrem as seis direções entre português,
@@ -288,6 +288,49 @@ sujeito. Três lições, nessa ordem de importância:
 
 Depois disso, commit e push. É o commit que serve de memória, não a conversa.
 
+### O baralho de francês (08/10/2026)
+
+Pedido do Gere: um curso de francês para quem fala português, com mil cards
+pelo menos. Decisões tomadas com ele antes de começar:
+
+1. **Os três públicos de uma vez.** O card de francês carrega português,
+   espanhol e inglês inteiros, e o baralho rende três cursos: `fr-pt`, `fr-es`
+   e `fr-en`. O build passou a ter a lista explícita de públicos por baralho
+   (`AUDIENCIAS`), e o pacote de cada curso tira os campos de todas as línguas
+   que não são a ensinada nem a do público.
+2. **O francês da França**, com o Quebec, a Bélgica e a Suíça como variantes.
+3. **Os três cursos entram na escolha do curso** (`inicio.js`), com a bandeira
+   e os nomes nas três línguas da interface.
+4. **Língua do zero, pelo ciclo do manual (seção 18).** A leva de estreia teve
+   as 40 frases de primeiros passos e 50 palavras (18 verbos, 17 substantivos,
+   7 adjetivos, 8 advérbios). A próxima é a das frases de uso dessas palavras,
+   com as conjugações; depois, as palavras que as frases pedirem.
+
+O catálogo dos três cursos (`fonte/sql/catalogo-fr-*.sql`) precisa ser
+aplicado pelo workflow Catálogo do taioe-infra antes de a leva ir para a main,
+como o de todo curso.
+
+| leva | o que | estado |
+|---|---|---|
+| fr 1 | 40 primeiros passos + 50 palavras | **feito** (08/10) — 90 cards |
+| fr 2 | 67 frases de uso (uma ou mais por palavra) + 24 de conjugação (presente dos irregulares, passé composé com «avoir» e «être», imperfeito, futuro próximo, futuro, condicional) | **feito** (08/10) — 181 cards; 53 palavras pedidas pelas frases ficam para a leva 3 |
+| fr 3 | 52 palavras que as frases pediam («le français» e «français» viraram um card só) + 12 avulsas; «très» e «beaucoup», «l'an» e «l'année» separados por parêntese no português | **feito** (08/10) — 245 cards; falta frase para as 12 avulsas, para «la cuisine» e para «le sport» |
+| fr 4 | 74 frases de uso (todas as palavras com frase, e os usos mais comuns das que já tinham) + 30 de conjugação (presente de -ir e -re, passé composé com particípios irregulares, imperfeito, futuro dos irregulares, condicional, pronominais, negação no passado); o funil do francês deixou de igualar plural e singular, porque o «-s» separava «je serai» de «je serais» | **feito** (08/10) — 349 cards; 70 palavras pedidas pelas frases |
+| fr 5 | 70 palavras que as frases pediam + 20 avulsas; parêntese para separar «le soir»/«la nuit», «la journée»/«le jour», «le matin»/«demain» (espanhol), «connaître»/«savoir» (inglês), «la gare» (estação de trem), «la douche»/«le bain» | **feito** (08/10) — 439 cards; falta frase para as 20 avulsas |
+| fr 6 | 111 frases de uso (as 20 avulsas, os usos das palavras da leva 5 e frases de situação: loja, café, transporte, direção, hora, saúde) + 27 de conjugação (concordância do particípio com «être», imperfeito de «être» e «avoir», pronominais, verbos da leva 5) | **feito** (08/10) — 577 cards; 69 palavras pedidas pelas frases |
+| fr 7 | 69 palavras que as frases pediam + 27 avulsas (corpo, roupa, comida, estações…); primeiros `sinonimosFr` e `regionaisFr` (cellulaire no Quebec, GSM na Bélgica, natel na Suíça) | **feito** (08/10) — 673 cards; falta frase para as 27 avulsas |
+| fr 8 | 126 frases de uso (as 27 avulsas, um por sentido nas de dois; os usos das palavras da leva 7; situações de hotel, médico, telefone, direção) + 25 de conjugação (os primeiros mais-que-perfeitos, imperfeito, futuro, passé composé) | **feito** (08/10) — 824 cards; 37 palavras pedidas pelas frases |
+| fr 9 | 37 palavras que as frases pediam + 47 avulsas (dias, estações, cores, comida, casa, roupa, corpo, profissões, verbos e advérbios comuns); parêntese em «mieux», «la fois», «l'étage», «perdre», «le menu», «proche», «sympa», «d'abord» | **feito** (08/10) — 908 cards; falta frase para as 47 avulsas |
+| fr 10 | 95 frases de uso (as 47 avulsas, um por sentido nas de dois; os usos das palavras da leva 9) + 20 de conjugação, só com palavras que já têm card | **feito** (09/10) — **1023 cards**: 40 de primeiros passos, 384 palavras, 473 frases de uso, 126 de conjugação; nenhuma frase presa, nenhuma palavra sem frase |
+
+**O baralho de francês passou de mil em 09/10/2026.** A curva de níveis ficou
+quase toda em A1 (939 A1, 84 A2): é a base de quem começa do zero, e o ciclo
+vai subindo de nível sozinho conforme as palavras novas saem das frases. O que
+falta para ir à main: aplicar os três catálogos (`fonte/sql/catalogo-fr-*.sql`)
+pelo workflow Catálogo do taioe-infra e conferir que o banco aceita os cursos
+`fr-pt`, `fr-es` e `fr-en`; depois, o estudo de verdade — os três canais de
+retorno (manual, seção 1) é que vão consertar o baralho dali em diante.
+
 ---
 
 ## 6. Os textos (trilhas)
@@ -414,3 +457,349 @@ Conferido no navegador com 500 dominados semeados: duas estreias do baralho, a
 terceira «la huella» — e o contador voltou a zero. Com «la huella» vista e não
 dominada, a trilha pula o verso 1 e dá o verso 2; com ela dominada, dá o verso
 1; com tudo dominado, dá `null` e a tela anuncia o texto fechado.
+
+---
+
+## 7. O começo do app sem tédio (decidido em 09/10/2026)
+
+Pedido do Gere: que o início de um curso não seja tedioso. Quatro ideias dele,
+com a contraproposta aceita inteira. Tudo aqui é **especificação para
+implementar**; o que já foi feito vai sendo marcado na tabela do fim da seção.
+
+A ordem da primeira entrada num curso fica:
+
+1. mensagem «Para começar, vamos avaliar o seu nível atual.»;
+2. o **nivelamento** (7.3), que pode ser pulado;
+3. a tela de **resultado** («Você já conhece cerca de N palavras deste baralho»);
+4. **uma** tela de «como funciona» (escolher → escrever → o card se inverte);
+5. o jogo, com as **dicas no momento certo** (7.5).
+
+### 7.1 Palavras transparentes
+
+**Transparente** é a palavra que quem estuda já entende sem estudar, porque é
+a mesma na língua dele. Medido em 09/10: no espanhol para quem fala português,
+26% das palavras são idênticas sem acento e 15% quase idênticas; no português
+para quem fala espanhol, 38% e 15%; nos cursos com inglês e francês, de 1% a 8%.
+O problema do tédio por cognato é quase todo espanhol ↔ português.
+
+- **É propriedade do curso (língua ensinada × público), não do card.** «La
+  idea» é transparente para quem fala português e para quem fala inglês; «la
+  pared» só para quem fala português. O build calcula e põe no pacote de cada
+  curso; nada se grava por usuário.
+- **Dois graus**, só em cards de `tipo: palavra`:
+  - **total** — a forma sem acento e sem o artigo da frente é **igual** nas
+    duas línguas («la madrugada» / «a madrugada», «acatar»). Não entra em
+    jogo e conta como dominada **para sempre**;
+  - **parecida** — diferença de 1 letra (palavras de 5+ letras) ou de 2 (8+
+    letras), na mesma comparação («la hormiga» / «a formiga», «la pared» / «a
+    parede»). Reconhecer é de graça, escrever é a lição: o card **pula a ida**
+    e estreia direto na volta (`inversa-multipla`).
+- **Ficam de fora das duas**: gênero diferente quando as duas línguas têm
+  artigo («la leche» / «o leite» — o gênero é a lição); etiqueta
+  `falso-amigo`; resposta com «/» (dois sentidos) ou com parêntese;
+  conjugação. O público inglês não tem gênero, e aí só a grafia conta.
+- **A regra erra, e a curadoria corrige.** Campo opcional no card,
+  `transparencia: { "<público>": "nenhuma" | "parecida" | "total" }`, que manda
+  sobre a regra. O relatório `node fonte/transparentes.js <curso>` lista os
+  dois grupos para o Gere ler uma vez por curso e depois de cada leva; falso
+  amigo sem etiqueta é o erro típico.
+- **No jogo**: a transparente total conta como dominada em `sabidaEm` (frases
+  e textos destravam), conta para os 400 dominados que liberam os textos e
+  para o número de palavras conhecidas; **não** entra em `dominioPorNivel`
+  (não é evidência de nada). A lista ganha o filtro «transparentes», com
+  «estudar mesmo assim» por card, que a devolve ao jogo como card comum
+  (`extras.reativados`).
+
+### 7.2 Dominado provisório
+
+O que o nivelamento declara ou deduz como conhecido **não é arquivado**: vira
+**dominado provisório**. Arquivar continua sendo só gesto da pessoa.
+
+- Fica em `extras.nivelamento.presumidos`: `{ id: voltaEmISO }`. Não cria
+  estado de card (o estado só nasce de resposta de verdade, e o protocolo do
+  banco é de respostas).
+- Para o motor, o card presumido e sem estado é **dominado**, com data de
+  volta. Conta para `sabidaEm`, para os 400 dos textos e para o número de
+  conhecidas; fica fora de `dominioPorNivel`.
+- A data é espalhada **entre 7 e 60 dias** depois do nivelamento, por um hash
+  de usuário + card (estável em qualquer aparelho), para os presumidos não
+  vencerem em lote.
+- Na data, ele aparece como **revisão de dominado** (volta, escrita), com o
+  espaçamento que os dominados já têm. **Acertou**: nasce o estado
+  `dominado` no degrau de 3 meses. **Errou**: nasce o estado comum, do zero
+  (`multipla`), e o card segue o caminho normal.
+- O painel mostra os presumidos à parte: «a confirmar».
+
+### 7.3 O nivelamento
+
+Na primeira entrada num curso (sem `extras.nivelamento` e sem nenhum estado).
+
+1. **Pergunta de entrada**: «Você já estudou {língua}?» — *Nunca* / *Um
+   pouco* / *Bastante*. *Nunca* pula o teste (`nivelamento.pulou = true`):
+   iniciante respondendo «quero aprender» trinta vezes é o pior começo.
+2. **Cartas**: uma palavra por vez, na língua ensinada, com dois botões —
+   «Já conheço» e «Quero aprender» —, barra de progresso e «pular».
+3. **Escada por blocos**: começa em A1 (*Um pouco*) ou A2 (*Bastante*). Bloco
+   = 6 palavras do nível, **cada uma de um tema** (rodízio pelos temas, para
+   achar os pontos cegos). 5 ou 6 conhecidas → sobe de nível; 2 ou menos →
+   para; 3 ou 4 → mais um bloco no mesmo nível, e sobe se as 12 somarem 9 ou
+   mais, senão para. Teto de 40 cartas. Fica entre 15 e 35, uns 2 minutos.
+4. **Banco do teste**: cards de palavra, sem transparente total, sem
+   `falso-amigo`, com um tema. **Tema** = a primeira etiqueta que não é de
+   classe nem de comportamento (verbo, adjetivo, substantivo, gramática,
+   falso-amigo, gíria, expressão, Espanha, conjugação, regular, irregular,
+   formal…); sem tema, «geral».
+5. **Conferência embutida**: em 1 de cada 4 «Já conheço» (e pelo menos uma por
+   bloco), a carta vira na hora uma múltipla escolha com os distratores do
+   card na língua de quem estuda. Errou: a palavra conta como não conhecida.
+   `confianca = (acertos + 3) / (conferências + 3)` — otimista: é 1 enquanto ninguém erra, e uma conferência errada em duas já a põe abaixo do limiar (a primeira versão, `(acertos + 1) / (conferências + 2)`, exigia umas oito conferências certas e não deduzia nada).
+6. **Dedução, conservadora**: para cada nível testado, a taxa do nível
+   `r` = conhecidas ÷ cartas; para cada célula nível × tema,
+   `p = (k + 4r) / (m + 4)` (k conhecidas de m cartas da célula); `p × confianca`
+   ≥ **0,9** → presumir as palavras daquela célula. Só em níveis **até o mais
+   alto testado**. Nunca: `falso-amigo`, `expressão`, `gíria`, conjugação,
+   frases. Palavra respondida «Já conheço» e não reprovada na conferência é
+   presumida; «Quero aprender» não muda nada. Se o teste passou do A2, as 40
+   frases de primeiros passos também são presumidas.
+7. **O nível inicial**: as taxas por nível entram como o *prior* de
+   `dominioPorNivel` (no lugar do 0,5 fixo), e o sorteio dos inéditos já começa
+   na altura certa, sem o tateio dos primeiros cards.
+8. **Resultado**: «Você já conhece cerca de N palavras deste baralho» (N =
+   transparentes totais + presumidas), com a nota de que elas vão aparecer de
+   vez em quando para confirmar.
+9. **Refazer** nas configurações: apaga os presumidos ainda não respondidos e
+   roda de novo.
+10. **Depois, com dados**: as respostas do teste de todo mundo ficam no log; com
+    usuários suficientes, a dedução troca nível × tema por padrões reais
+    («quem conhece X conhece Y»). Não agora.
+
+`extras.nivelamento = { feitoEm, pulou, comeco: 'nunca'|'pouco'|'bastante',
+porNivel: { A1: taxa, … }, confianca, cartas: [{ id, resposta, conferida,
+acertou }], presumidos: { id: voltaEm } }`.
+
+### 7.4 O card desafio e a vitrine dos textos
+
+**Desafio** — um gostinho do que vem pela frente, sem desanimar.
+
+- **Grupo**: cards com `falso-amigo`, `expressão`, `gíria` ou `provérbio`,
+  inéditos, **dois níveis acima** do nível atual (o mais alto com domínio ≥ o
+  alvo, ou o do nivelamento), no máximo C1.
+- **Ritmo**: o primeiro depois de 15 respostas no curso; depois no máximo 1
+  por dia; só nas duas primeiras semanas do curso; no máximo 10 no total.
+- **Na tela**: a marca «Desafio», para o erro não pesar. A estreia dele **não
+  entra** em `dominioPorNivel` (`est.desafio = true`).
+- **Frase ainda presa**: aparece uma vez como prévia, em múltipla escolha.
+  Acertou: entra no jogo. Errou: «essa volta quando você tiver as palavras
+  dela», e continua presa.
+
+**Vitrine** — desde o primeiro dia, o painel mostra o próximo texto (o poema
+primeiro): título, autor, o primeiro verso com a tradução e «faltam N
+palavras». O limite de 400 dominados continua valendo para o texto entrar na
+espera, mas transparentes e presumidas contam.
+
+### 7.5 As dicas no momento certo
+
+Uma tela de «como funciona» depois do nivelamento; o resto aparece **na
+primeira vez em que a situação acontece**, uma vez só:
+
+| dica | quando |
+|---|---|
+| `arquivar` | primeiro card novo: o botão «não quero aprender» (já em destaque na estreia) |
+| `quase` | primeiro «deu quase»: «aqui quem decide é você» |
+| `comentar` | primeiro erro, ou a 10ª resposta: o comentário como pedido de ajuda para melhorar os cards |
+| `frase` | primeira frase destravada: por que as frases esperam as palavras |
+| `dominado` | primeiro card dominado: a escada |
+| `transparente` | primeira vez no filtro «transparentes» |
+| `desafio` | primeiro desafio |
+
+As vistas ficam em `extras.dicasVistas` (com `localStorage` de reserva).
+«Rever dicas» nas configurações zera a lista. Todo texto nas três línguas da
+interface.
+
+### 7.6 O que muda para quem cria cards e línguas
+
+Está também no manual (seção 19), que é onde quem escreve leva lê:
+
+- **Toda palavra precisa de um tema** além da classe: é por ele que o
+  nivelamento acha os pontos cegos. O build avisa a palavra sem tema.
+- **`falso-amigo`, `expressão`, `gíria` e `provérbio` têm de ser verdade**:
+  tiram o card da transparência e da dedução, e alimentam o desafio.
+- **Não deixar de criar a palavra transparente**: as frases precisam dela no
+  `requerTodas`. O build a tira do jogo sozinho, no curso em que ela é óbvia.
+- **Depois de cada leva**, rodar `node fonte/transparentes.js <curso>` para
+  cada curso do baralho e corrigir com o campo `transparencia` o que a regra
+  errar.
+- **Língua nova**: artigos e gêneros na tabela da transparência (build); um
+  banco de teste com **pelo menos 6 temas e 3 palavras por tema** em cada
+  nível de A1 a B2 (o build avisa); textos para a vitrine; os textos novos
+  da interface nas três línguas.
+
+### 7.7 Onde cada parte mora, e quem faz
+
+| parte | onde | quem |
+|---|---|---|
+| transparência (regra, campo, relatório, pacote) | `fonte/build.js`, `fonte/transparentes.js` | nuvem |
+| transparência e presumidos no jogo; prior do nível; desafio | `js/motor.js` | nuvem |
+| nivelamento, resultado, «como funciona», dicas, filtro, vitrine | `public/cards/js/app.js`, `inicio.js`, `index.html`, `style.css`, i18n | nuvem |
+| guardar `nivelamento`, `dicasVistas` e `reativados` nos extras | RPC `gravar_extras` e `carregar_curso` (taioe-infra) e a mescla de `sincronia.js` | **local** (o banco) + nuvem (a mescla do aparelho) |
+| testar no navegador com login, aplicar catálogos, publicar | — | **local** |
+
+| etapa | estado |
+|---|---|
+| especificação (esta seção) | **feito** (09/10) |
+| transparência | **feito** (09/10) |
+| presumidos, prior, desafio no motor | **feito** (09/10) |
+| telas e dicas | **feito** (09/10) |
+| banco (extras novos) e teste no navegador | **feito** (16/10) — migrações `20261009120000_comeco_e_frances` e `20261016120000_em_vista_objetos` do taioe-infra no teste e na produção, catálogos do francês nos dois; teste com login no localhost (Supabase local, 390 px). Achados no caminho: a troca de língua nas configurações travava (`inicio.js`) e o banco descartava as frases em vista `{id, origem}`; os dois consertados. A dica `frase` só foi conferida no código |
+
+### 7.8 Como ficou o código
+
+Feito em 09/10 o que não é tela: a regra no build, a lógica no motor, e o
+mínimo de app para o jogo já obedecer. É o contrato das telas.
+
+**Build.** A regra da 7.1 mora em `fonte/transparencia.js` (artigos e gêneros
+de `es`, `pt` e `fr`; o «ñ» conta como letra; o campo `transparencia` manda
+sobre a regra e é validado: públicos do baralho, três graus, só em palavra).
+O `fonte/build.js` põe `transp: 'total' | 'parecida'` no card do pacote de
+cada curso — só quando há grau, depois do `v`, que não vê o campo
+`transparencia` (o catálogo não muda) —, imprime as contagens por curso e
+avisa, uma linha por baralho ou curso, a palavra sem tema, o banco do
+nivelamento curto (menos de 6 temas com 3 palavras em algum nível de A1 a
+B2 que o baralho tem) e a etiqueta de verbo que ficou fora da lista de
+classe. `node fonte/transparentes.js <curso>` é o relatório card a card.
+Contagens de 09/10: es-pt 278 total (26%) e 122 parecidas (11%) de 1.070
+palavras; pt-es 71 (37%) e 19 (10%) de 193; fr-pt 13 (3%) e 23 (6%) de 384.
+
+**Motor** (`js/motor.js`, bloco «o começo do app sem tédio»). Nenhuma
+assinatura antiga mudou; o que é do curso e da pessoa entra como estado do
+módulo, igual ao `usarBaralho`:
+
+- `Motor.usarTransparencias(cards)` — uma vez, na abertura do curso;
+- `Motor.usarExtras({ nivelamento, reativados })` — a cada mudança dos
+  extras (o app chama no começo do `conciliarFila`);
+- `Motor.TAGS_DE_CLASSE`, `Motor.temaDe(card)` — o tema (null = «geral»);
+- `Motor.transparencia(card|id)`, `transparenteTotal(id)`,
+  `presumidoEm(id, estados)`, `conhecidaSemEstado(id, estados)`;
+- `Motor.estadoInicialDo(card)` — a estreia (a parecida nasce em
+  `inversa-multipla`); `estadoInicial(id)` continua igual;
+- `Motor.estadoDoPresumido(id, estados)` — o dominado calculado que a fila
+  enxerga (nunca gravado); `Motor.responderPresumido(id, r)` — o estado que
+  nasce da resposta: acertou, `dominado` com `revisoes = 4` (volta em 90
+  dias, `dominadoEm`); errou, `multipla` com o erro registrado;
+- `Motor.dataDoPresumido(uid, id, feitoEm)` — de 7 a 60 dias, por hash;
+- `Motor.dominioPorNivel(cards, estados, prior)` — `prior` =
+  `nivelamento.porNivel`; ignora a transparente total e a estreia com
+  `est.desafio`;
+- `sabidaEm`, `liberadaEm`, `situacaoDaFrase` e `dominadosNoTotal` já contam
+  a transparente total (sabida desde sempre) e o presumido sem estado
+  (sabido desde o `feitoEm`);
+- `Motor.nivelamento` — `novo(cards, { comeco, semente })`,
+  `proximaCarta(teste)` → `{ id, nivel, tema, conferir, feitas, teto }` ou
+  null, `responder(teste, id, conhece)`, `conferir(teste, id, acertou)` (a
+  carta com `conferir: true` é a múltipla escolha da conferência),
+  `deduzir(teste, cards, { uid, agora, estados, arquivados })` →
+  `{ porNivel, confianca, presumidos, testados, cartas }`, e `banco(cards)`.
+  O teste é JSON puro, sorteio incluído. A tela junta `feitoEm`, `pulou` e
+  `comeco` e grava em `progresso.nivelamento`;
+- `Motor.palavrasConhecidas(cards, presumidos?)` — o N do resultado;
+- `Motor.escolherDesafio(cards, estados, { agora, respostas, desafios,
+  ultimoDesafio, inicio, mostrados, arquivados, prior })` → null ou
+  `{ card, previa, nivel }`; `Motor.marcarDesafio(est)` na estreia. Os
+  contadores (`desafios`, `ultimoDesafio`, `mostrados`, `inicio`) são da
+  tela guardar.
+
+**App.** Já obedece, sem tela nova: a transparente total sai das filas e
+dos inéditos (como a arquivada, e volta se reativada); a parecida estreia na
+volta; o presumido sem estado mora na fila dos dominados e é servido como
+revisão de dominado — a resposta vai ao servidor com `etapa_antes`
+`dominado` e `degrau` nulo, fora da retenção; o `porNivel` do nivelamento
+já é o prior da ordem dos inéditos. `progresso.nivelamento`,
+`progresso.reativados` (id → ISO) e `progresso.dicasVistas` (chave → ISO)
+viajam nos extras **só quando existem**, e a ausência deles na resposta do
+servidor não apaga o que o aparelho tem. A mescla (`mesclarExtras`):
+nivelamento inteiro pelo `feitoEm` mais recente; reativados e dicas chave a
+chave, **o gesto mais recente vence** (ver «As telas», abaixo: a união da
+primeira versão não deixava desfazer). Falta o banco guardá-los
+(`gravar_extras`, `carregar_curso`; local).
+
+**Decidido no caminho.** A frase de primeiros passos com «expressão»
+(«¡Buen provecho!») entra no presumido quando o teste passa do A2; só o
+falso amigo fica fora. «Quero aprender» e a reprovada na conferência nunca
+são presumidas, mesmo em célula que passou. Nível não testado abaixo do
+mais baixo leva a taxa dele; acima do mais alto, a metade do de baixo a
+cada degrau (prior). Com a régua de 0,9 sobre `p × confiança`, a célula só
+passa com umas 8 conferências certas e nenhuma errada — num teste de 30
+cartas é raro, e o grosso dos presumidos é o que a pessoa disse conhecer.
+
+Conferido por `node fonte/testar-comeco.js` (no CI, workflow Cópias).
+
+**As telas** (09/10, `public/cards/js/app.js`, `index.html`, `style.css`,
+textos nas três línguas em `textos-i18n.js`). Tudo do lado do aparelho; a
+rede só entra no fim do teste, quando o nivelamento sobe nos extras.
+
+- **O começo** mora na `tela-comeco` (um `comeco-conteudo` que o app
+  redesenha a cada passo: entrada, teste, resultado, «como funciona»), no
+  bloco «o começo» do app. Abre sozinho na abertura do curso quando não há
+  `progresso.nivelamento` nem card respondido; num aparelho novo, se a
+  primeira carga trouxer estados ou nivelamento, a avaliação que ainda não
+  acabou some (`conferirComeco`, no `aoMudar` da sincronia). Os botões do
+  topo somem enquanto ela dura. O teste (`Motor.nivelamento`) fica em
+  `localStorage` `cards:comeco:<uid>:<curso>` a cada resposta, com a fase
+  — recarregar retoma o teste, o resultado ou o «como funciona». A
+  conferência usa `Motor.alternativas` na ida. O fim (ou o «Pular», que
+  deduz com o que já foi respondido) grava `progresso.nivelamento` =
+  `deduzir()` + `{ feitoEm, pulou, comeco }` (`testados` vai junto), chama
+  o `conciliarFila` (que faz o `usarExtras` e refaz filas e inéditos com o
+  prior novo) e agenda a sincronia. «Nunca» grava `{ feitoEm, pulou: true,
+  comeco: 'nunca' }`. O resultado separa as transparentes das presumidas;
+  com N = 0 vai direto ao «como funciona».
+- **Refazer avaliação** (configurações, grupo «Avaliação e dicas») abre o
+  mesmo caminho; o nivelamento inteiro é trocado no fim, com `feitoEm` novo
+  (é ele que decide a mescla), e o `deduzir` não presume card com estado —
+  então os presumidos ainda não respondidos saem, e os respondidos já
+  tinham virado card comum. Quem refaz não vê o «como funciona» de novo.
+- **As dicas** (`DICAS`, `abrirDica`, `dicaDoCard`): um balão no fluxo da
+  página, embaixo ou em cima do que explica, nunca sobre as respostas; uma
+  por card; vista ao aparecer. Gravadas em `progresso.dicasVistas` e na
+  reserva `cards:dicas:<uid>:<curso>`. «Rever dicas» grava em cada chave o
+  **gesto de desfazer**, a data com «-» na frente (`-2026-10-09T…`).
+- **Reativadas**: a lista ganhou os filtros «transparentes» (todas as
+  `transp: 'total'` do curso, reativadas ou não) e «a confirmar» (os
+  presumidos sem estado); as situações «transparente — conta como
+  dominada» e «a confirmar»; «Estudar mesmo assim» grava
+  `reativados[id] = ISO`, e «Voltar a contar como conhecida» grava
+  `-ISO`. O motor só recebe as datas sem «-» (`reativadosAtivos`).
+- **A mescla mudou** (`sincronia.js`, `mesclarExtras`): em `reativados` e
+  `dicasVistas`, chave a chave, fica o valor de **data mais recente**,
+  ignorando o «-» na comparação; no empate, o do servidor. **A RPC
+  `gravar_extras` tem de fazer o mesmo** (é o que falta do lado local): a
+  união com a data mais antiga desfaria o «Rever dicas» e manteria o
+  «-ISO» velho por cima de uma dica vista de novo. `TaioeSincronia.gestoAtivo`
+  e `dataDoGesto` são as duas regras; o `testar-comeco.js` confere.
+- **O painel**: a métrica «a confirmar» na grade e uma linha embaixo da
+  escada dos dominados (quantos e quando volta o próximo); a **vitrine**
+  logo depois da grade — o poema da vez (senão a prosa) por
+  `atualizarTextosEmVista`, calculado e não gravado, com título, autor, o
+  primeiro verso e a tradução, «faltam N palavras» (`andamentoDoTexto`) e,
+  antes dos 400 dominados, quantos faltam para as palavras dele começarem a
+  chegar. Curso sem textos (francês, português) não tem vitrine.
+- **O desafio**: `proximoNovo` pergunta ao `Motor.escolherDesafio` a cada
+  vaga de card novo. Os contadores vêm do que já viaja — `est.desafio` (o
+  `marcarDesafio` da estreia) e `est.desafioEm` (a data), no estado do
+  card; o começo do curso é o primeiro dia do diário, o `feitoEm` ou a
+  primeira estreia — mais a anotação deste aparelho
+  `cards:desafios:<uid>:<curso>` (id → `{ em, previa, acertou }`), que é a
+  única memória da **prévia errada**: ela não cria estado nem resposta no
+  servidor, e por isso outro aparelho pode mostrá-la uma vez mais. A
+  prévia certa estreia como qualquer card (com a marca de desafio) e entra
+  no jogo, mesmo presa. Na tela, a etiqueta «Desafio»; na prévia, sem o
+  «já conheço», e com a linha «essa volta quando você tiver as palavras
+  dela» (ou «entra no seu jogo»).
+
+Conferido num arnês sem servidor (Chromium a 390 px, com a CSP do
+`_headers`): o caminho «Um pouco» com recarga no meio do teste, «Nunca»,
+«Bastante» no refazer, as dicas de arquivar, comentar, quase, dominado,
+desafio e transparente, a prévia errada, a palavra desafio, reativar e
+desfazer na lista, o painel com a vitrine e «a confirmar», «Rever dicas»,
+e a avaliação que some quando a carga traz estados. Falta o teste com
+login de verdade (local).

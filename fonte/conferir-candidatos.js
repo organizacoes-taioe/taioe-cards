@@ -22,7 +22,8 @@
    repetir dentro da leva é tão ruim quanto repetir o baralho.
 
    uso: node fonte/conferir-candidatos.js <arquivo.json> [idioma]
-        node fonte/conferir-candidatos.js /tmp/cand.json en   (o padrão é en) */
+        node fonte/conferir-candidatos.js /tmp/cand.json en   (o padrão é en)
+        no francês, a tripla vira quádrupla: [inglês, português, espanhol, francês] */
 
 const fs = require('fs');
 const path = require('path');
@@ -47,8 +48,8 @@ for (const f of fs.readdirSync(pasta)) {
 }
 
 /* uma forma de gênero por chave: o card {o|a} entra duas vezes */
-const LINGUAS = ['en', 'pt', 'es'];
-const noBaralho = { en: new Map(), pt: new Map(), es: new Map() };
+const LINGUAS = ['en', 'pt', 'es', 'fr'];
+const noBaralho = { en: new Map(), pt: new Map(), es: new Map(), fr: new Map() };
 baralho.forEach(bruto => M.formasDoCard(bruto).forEach(c => {
   LINGUAS.forEach(L => {
     const k = M.normalizar(c[L], L);
@@ -57,13 +58,14 @@ baralho.forEach(bruto => M.formasDoCard(bruto).forEach(c => {
 }));
 
 const candidatos = JSON.parse(fs.readFileSync(arquivo, 'utf8'));
-const naLista = { en: new Map(), pt: new Map(), es: new Map() };
+const naLista = { en: new Map(), pt: new Map(), es: new Map(), fr: new Map() };
 let choques = 0;
 
 for (const tripla of candidatos) {
-  const [en, pt, es] = tripla;
+  /* no baralho de francês, a quarta posição é o francês */
+  const [en, pt, es, fr] = tripla;
   const achados = [];
-  for (const [L, texto] of [['en', en], ['pt', pt], ['es', es]]) {
+  for (const [L, texto] of [['en', en], ['pt', pt], ['es', es], ['fr', fr]]) {
     if (texto == null) continue;
     const k = M.normalizar(texto, L);
     if (!k) continue;

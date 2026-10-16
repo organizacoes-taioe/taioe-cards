@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#12141c">
 <title>Taioé Cards</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇪🇸</text></svg>">
-<link rel="stylesheet" href="style.css?v=cf810223">
+<link rel="stylesheet" href="style.css?v=c4fdfb4f">
 </head>
 <body>
 
@@ -93,6 +93,12 @@
     </div>
   </section>
 
+  <!-- ══════════ O COMEÇO: a avaliação, o resultado e «como funciona» (PLANO.md, 7) ══════════
+       Uma tela só; o app desenha cada passo dentro dela (comeco-conteudo). -->
+  <section id="tela-comeco" class="tela oculto">
+    <div id="comeco-conteudo" class="comeco"></div>
+  </section>
+
   <!-- ══════════ CARD ══════════ -->
   <section id="tela-card" class="tela oculto">
     <div class="fichario">
@@ -103,6 +109,8 @@
         <span class="etiqueta suave" id="meta-modo"></span>
         <!-- só nas frases presas a uma palavra: diz qual foi -->
         <span class="etiqueta origem oculto" id="meta-origem"></span>
+        <!-- o card desafio (PLANO.md, 7.4): a marca é para o erro não pesar -->
+        <span class="etiqueta desafio oculto" id="meta-desafio" data-i18n="card.desafio"></span>
       </div>
 
       <!-- Este bloco gruda ao rolar: ver .pergunta-fixa no style.css -->
@@ -148,6 +156,8 @@
       <div id="area-feedback" class="oculto">
         <div class="veredito" id="veredito"></div>
         <div class="conquista oculto" id="conquista"></div>
+        <!-- a prévia do desafio (frase ainda presa): entra no jogo, ou volta depois -->
+        <p id="aviso-previa" class="aviso-previa oculto" role="status"></p>
         <!-- acertou sem o acento: conta como certo, e a linha chama atenção -->
         <p id="aviso-acento" class="aviso-acento oculto"></p>
         <!-- acertou com a palavra de outro lugar: vale, e diz de onde ela é -->
@@ -219,6 +229,8 @@
             <option value="dominado" data-i18n="cards.fDominado"></option>
             <option value="errei" data-i18n="cards.fErrei"></option>
             <option value="arquivado" data-i18n="cards.fArquivado"></option>
+            <option value="transparente" data-i18n="cards.fTransparente"></option>
+            <option value="presumido" data-i18n="cards.fPresumido"></option>
           </select>
         </label>
       </div>
@@ -262,6 +274,15 @@
       <h3 data-i18n="config.curso"></h3>
       <p class="ajuda" id="cfg-curso"></p>
       <div class="linha-botoes" id="cfg-outros-cursos"></div>
+    </div>
+
+    <div class="grupo">
+      <h3 data-i18n="config.comeco"></h3>
+      <p class="ajuda" data-i18n="config.comecoAjuda"></p>
+      <div class="linha-botoes">
+        <button class="secundario" id="btn-refazer" data-i18n="config.refazer"></button>
+        <button class="secundario" id="btn-rever-dicas" data-i18n="config.reverDicas"></button>
+      </div>
     </div>
 
     <div class="grupo">
@@ -317,16 +338,16 @@
   <span id="rodape-sync">•</span>
 </footer>
 
-<script src="js/textos-i18n.js?v=cc7d08c3"></script>
+<script src="js/textos-i18n.js?v=e26b8b9c"></script>
 <script src="js/i18n.js?v=a99747e0"></script>
 <script src="vendor/supabase-js-2.117.2.js?v=16aeff36"></script>
 <script src="js/taioe-sessao.js?v=c04dd1f9"></script>
-<script src="js/versoes.js?v=020729ae"></script>
+<script src="js/versoes.js?v=ae45f72e"></script>
 <script src="data/tags.js?v=8e79eb74"></script>
-<script src="js/motor.js?v=e6885f31"></script>
+<script src="js/motor.js?v=9b8607bd"></script>
 <script src="js/armazem.js?v=131120d0"></script>
-<script src="js/sincronia.js?v=bfd1ddb0"></script>
-<script src="js/app.js?v=a3cb3c44"></script>
-<script src="js/inicio.js?v=cb42bc34"></script>
+<script src="js/sincronia.js?v=28c9375c"></script>
+<script src="js/app.js?v=86fe5931"></script>
+<script src="js/inicio.js?v=402f4e4a"></script>
 </body>
 </html>

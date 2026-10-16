@@ -10,7 +10,8 @@
      progresso()        o objeto progresso, vivo
      aoMudar(motivo)    o servidor mexeu no progresso: reconciliar filas, salvar, redesenhar
      retrato()          o ponto da série agora: [respostas, ida, volta, d0..d5], ou null
-     extras()           { arquivados, emVista, textos: { emVista, lidos } }
+     extras()           { arquivados, emVista, textos: { emVista, lidos } }, e, quando existem,
+                        nivelamento, reativados e dicasVistas (o começo do app, PLANO.md, 7)
      aplicarExtras(x)   adota os extras mesclados pelo servidor
      estado(txt, cls)   a linha de estado da sincronização, para a tela */
 (function () {
@@ -49,8 +50,38 @@
     });
     var tev = ts.emVista && (ts.emVista.poema || ts.emVista.prosa) ? ts.emVista : (tl.emVista || {});
     var ev = (servidor.emVista || []).length ? servidor.emVista : (local.emVista || []);
-    return { arquivados: arq, emVista: ev, textos: { emVista: tev, lidos: lidos } };
+    var saida = { arquivados: arq, emVista: ev, textos: { emVista: tev, lidos: lidos } };
+
+    // o começo do app (PLANO.md, seção 7). Cada campo só entra na mescla se um dos lados o tem:
+    // vazio a mais mudaria a assinatura dos extras (ver o extras() do app).
+    // — nivelamento: o feito mais recente (feitoEm) vence, inteiro — o «refazer» troca o teste
+    //   e os presumidos juntos, e misturar dois testes não tem sentido; no empate, o do servidor;
+    var nl = local.nivelamento, ns = servidor.nivelamento;
+    if (nl || ns) {
+      saida.nivelamento = !nl ? ns : !ns ? nl
+        : (String(ns.feitoEm || '') >= String(nl.feitoEm || '') ? ns : nl);
+    }
+    // — reativados (id → ISO) e dicasVistas (chave → ISO): chave a chave, o GESTO MAIS RECENTE
+    //   vence, como no arquivo. A primeira versão era a união com a data mais antiga, e a união
+    //   não desfaz nada: o «Rever dicas» e o «voltar a contar como conhecida» (09/10, as telas)
+    //   precisam desfazer. Desfazer grava a data com um «-» na frente («-2026-10-09T…»): a
+    //   chave fica, com a data do gesto, e quem lê trata o «-» como «não» (ver gestoAtivo).
+    //   No empate, o do servidor.
+    ['reativados', 'dicasVistas'].forEach(function (campo) {
+      var l = local[campo], s = servidor[campo];
+      if (!l && !s) return;
+      var u = Object.assign({}, l || {});
+      Object.keys(s || {}).forEach(function (k) {
+        if (!u[k] || dataDoGesto(s[k]) >= dataDoGesto(u[k])) u[k] = s[k];
+      });
+      saida[campo] = u;
+    });
+    return saida;
   }
+
+  // o valor de reativados e dicasVistas: «ISO» é sim, «-ISO» é o gesto de desfazer
+  function dataDoGesto(v) { return String(v || '').replace(/^-/, ''); }
+  function gestoAtivo(v) { return typeof v === 'string' && v !== '' && v[0] !== '-'; }
 
   function filaVazia() {
     return { base: 0, eventos: [], sujos: [], puxadoEm: null, loteSemRecibo: null,
@@ -486,5 +517,5 @@
     };
   }
 
-  window.TaioeSincronia = { criar: criar };
+  window.TaioeSincronia = { criar: criar, mesclarExtras: mesclarExtras, gestoAtivo: gestoAtivo, dataDoGesto: dataDoGesto };
 })();

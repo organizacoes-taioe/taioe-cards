@@ -606,6 +606,7 @@ node fonte/conferir-candidatos.js lista.json en   # ANTES de escrever: já exist
 node fonte/build.js          # valida, regenera data/ e recarimba os ?v=
 node fonte/revisar.js 12-    # a leva em cinco linhas por card, para ler
 node fonte/varrer-motor.js en   # o motor por cima do data/, nas quatro direções
+node fonte/cruzar-respostas.js fr  # nenhuma resposta certa repetida entre cards, em nenhuma língua
 ```
 
 **A primeira linha vem antes de todas as outras.** Monte a lista de candidatos
@@ -784,6 +785,38 @@ aqui fica só o que muda para quem escreve um card.
 - **O resto do manual vale igual.** Distrator, parêntese, `aceitas`, frase de
   uso, etiqueta, gênero: as regras são das seções 2 a 14, e nenhuma delas é do
   espanhol.
+
+### 15.1 O quarto baralho: francês
+
+Desde 08/10/2026 há um quarto baralho, `fonte/cards/fr`, com ids `fr-…`, e
+ele é diferente dos outros três num ponto: **serve às três línguas da casa**
+(cursos `fr-pt`, `fr-es` e `fr-en`). Por isso o card de francês traz
+**três quartetos inteiros** — `pt`/`aceitas`/`distratores`/`nota`,
+`es`/`aceitasEs`/`distratoresEs`/`notaEs`, `en`/`aceitasEn`/`distratoresEn`/
+`notaEn` —, mais `fr` e, quando houver, `aceitasFr`, `regionaisFr`,
+`sinonimosFr` e `formasFr` (rótulo em português; `formasFrEs` e `formasFrEn`
+com o mesmo texto e o rótulo nas outras línguas). O francês não é resposta de
+nenhum outro baralho.
+
+- **O francês é o da França**, com o do Quebec, da Bélgica e da Suíça em
+  `regionaisFr` («no Quebec», «na Bélgica», «na Suíça») e na nota.
+- **Cada nota ensina o seu público**: a `nota` aponta o falso amigo de quem
+  fala português (`attendre` não é atender), a `notaEs` o de quem fala espanhol
+  (`prendre` ao lado de `apprendre`), a `notaEn` o de quem fala inglês. Os pares
+  vão no formato `🇫🇷 x → 🇧🇷 y` e `🇫🇷 x → 🇪🇸 y`.
+- **O funil do francês** (em `js/motor.js`) tira acento e o artigo da frente —
+  inclusive o elidido: «l'eau» = «eau» —, como o do espanhol. O pronome-sujeito
+  **fica**: «je parle» e «il parle» se escrevem igual, e só o pronome diz a
+  pessoa. Por isso, no francês, «Je suis…» e «Il est…» são respostas
+  diferentes, e a variante com outro sujeito («Elles ont faim» ao lado de «Ils
+  ont faim») vai em `aceitasFr`. O plural também não cai: o «-s» final é terminação de verbo e separa «je serai» de «je serais». O artigo escrito errado («le maison») é erro
+  seco, como no espanhol.
+- **O funil das línguas de casa derruba o sujeito**, e isso pega frase curta:
+  «Moi aussi» (Eu também) e «aussi» (também) viram a mesma resposta em
+  português e em espanhol. Antes de gravar, a conferência cruzada das
+  respostas certas nas quatro línguas (seção 12) acha esses choques.
+- **A conferência de candidatos** recebe quádruplas: `[inglês, português,
+  espanhol, francês]`.
 
 ---
 
@@ -995,3 +1028,39 @@ Toda frase nova já nasce com o `requerTodas` completo. O build confere que
 cada entrada é um card de palavra do baralho (ou uma `+` pendente) e que a
 palavra do `requer` está na lista; e avisa as frases sem lista, as palavras
 pendentes e as palavras que nenhuma frase usa.
+
+## 19. O começo do app: o que isso pede do card
+
+Desde 09/10/2026 o começo de um curso tem nivelamento, palavras
+transparentes, dominado provisório e o card desafio (plano inteiro em
+[`../PLANO.md`](../PLANO.md), seção 7). Quatro coisas disso dependem de quem
+escreve o card:
+
+- **Toda palavra tem um tema**, além da classe: `casa`, `comida`, `corpo`,
+  `cidade`, `viagem`, `trabalho`, `escola`, `família`, `saúde`, `natureza`,
+  `compras`, `cultura`, `cotidiano`… O nivelamento sorteia uma palavra de cada
+  tema por bloco, para achar os pontos cegos (a palavra da cozinha que não
+  aparece em filme nenhum); palavra sem tema cai num «geral» e some da
+  conta. O build avisa.
+- **`falso-amigo`, `expressão`, `gíria` e `provérbio` têm de ser verdade.**
+  Elas tiram o card da transparência e da dedução do nivelamento — falso amigo
+  presumido como sabido seria o pior erro possível — e escolhem os cards
+  desafio. Etiqueta faltando é card que vira transparente ou presumido sem
+  dever.
+- **A palavra transparente continua sendo criada.** As frases precisam dela
+  no `requerTodas`, e ela só é óbvia para um dos públicos («la pared» é
+  transparente para quem fala português, não para quem fala inglês). O build
+  calcula, curso por curso, quem é transparente (igual sem acento e sem
+  artigo, mesmo gênero) e quem é parecida (uma ou duas letras de diferença),
+  e o app tira do jogo a primeira e faz a segunda pular a ida.
+- **Depois de cada leva**, `node fonte/transparentes.js <curso>` para cada
+  curso do baralho (`es-pt`, `es-en`, `fr-pt`…), lido de olho. Onde a regra
+  errar — o falso amigo sem etiqueta, a palavra igual de sentido principal
+  diferente, o gênero que a regra não viu —, o card ganha
+  `"transparencia": { "pt": "nenhuma" }` (ou `"parecida"`, `"total"`), que
+  manda sobre a regra naquele público.
+
+**Para uma língua nova**: os artigos e gêneros dela entram na tabela da
+transparência do build; o banco do nivelamento precisa de pelo menos 6 temas
+com 3 palavras cada em todo nível de A1 a B2 (o build avisa quando falta); e
+os textos dela alimentam a vitrine do painel desde o primeiro dia.
