@@ -650,7 +650,7 @@ Está também no manual (seção 19), que é onde quem escreve leva lê:
 | transparência | **feito** (09/10) |
 | presumidos, prior, desafio no motor | **feito** (09/10) |
 | telas e dicas | **feito** (09/10) |
-| banco (extras novos) e teste no navegador | — (local) |
+| banco (extras novos) e teste no navegador | **feito** (16/10) — migrações `20261009120000_comeco_e_frances` e `20261016120000_em_vista_objetos` do taioe-infra no teste e na produção, catálogos do francês nos dois; teste com login no localhost (Supabase local, 390 px). Achados no caminho: a troca de língua nas configurações travava (`inicio.js`) e o banco descartava as frases em vista `{id, origem}`; os dois consertados. A dica `frase` só foi conferida no código |
 
 ### 7.8 Como ficou o código
 
