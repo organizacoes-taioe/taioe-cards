@@ -106,7 +106,8 @@ window.TaioeCardsApp = function (ctx) {
     'cfg-conta', 'cfg-curso', 'btn-conta', 'btn-sair', 'cfg-outros-cursos', 'cfg-lingua',
     'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync', 'cfg-comentarios',
     /* o começo do app (PLANO.md, seção 7) */
-    'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'aviso-previa', 'btn-refazer', 'btn-rever-dicas'
+    'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'aviso-previa', 'btn-refazer', 'btn-rever-dicas',
+    'btn-recomecar'
   ].forEach(id => { el[id] = document.getElementById(id); });
 
   /* ═══════════════ estado ═══════════════ */
@@ -3650,6 +3651,29 @@ window.TaioeCardsApp = function (ctx) {
   });
   el['btn-rever-dicas'].addEventListener('click', reverDicas);
 
+  /* «Recomeçar este curso» (PLANO.md, 7.9): o servidor apaga o progresso do
+     curso (cards.recomecar_curso), e este aparelho apaga a cópia dele, o
+     teste guardado, as dicas e os desafios anotados. Os outros aparelhos
+     percebem na próxima carga (recomecado_em, em sincronia.js). */
+  el['btn-recomecar'].addEventListener('click', async () => {
+    if (!confirm(t('config.recomecarConfirma', { L: NOME_L }))) return;
+    el['btn-recomecar'].disabled = true;
+    Sinc.parar();
+    const r = await ctx.sb.schema('cards').rpc('recomecar_curso', { curso: ctx.curso });
+    if (r.error) {
+      console.warn('o curso não recomeçou', r.error);
+      el['btn-recomecar'].disabled = false;
+      Sinc.continuar();
+      statusSync(t('config.recomecarFalhou'), 'erro');
+      return;
+    }
+    apagando = true;
+    clearTimeout(esperaSalvar);
+    await Sinc.apagarLocal({ recomecadoEm: r.data });
+    [CHAVE_COMECO, CHAVE_DICAS, CHAVE_DESAFIOS].forEach(esquecerLocal);
+    location.reload();
+  });
+
   el['btn-zerar'].addEventListener('click', async () => {
     const n = Sinc.pendentes();
     const aviso = n ? tn('config.zerarPerdidas', n) : '';
@@ -3761,6 +3785,14 @@ window.TaioeCardsApp = function (ctx) {
       if (Object.keys(progresso.reativados || {}).length) x.reativados = progresso.reativados;
       if (Object.keys(progresso.dicasVistas || {}).length) x.dicasVistas = progresso.dicasVistas;
       return x;
+    },
+    /* o curso foi recomeçado em outro aparelho: a cópia daqui já foi
+       apagada pela sincronia; falta o que mora no localStorage */
+    recomecado: () => {
+      apagando = true;
+      clearTimeout(esperaSalvar);
+      [CHAVE_COMECO, CHAVE_DICAS, CHAVE_DESAFIOS].forEach(esquecerLocal);
+      location.reload();
     },
     aplicarExtras: x => {
       x = x || {};
