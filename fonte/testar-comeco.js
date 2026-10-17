@@ -183,8 +183,9 @@ const certo = M.responderPresumido(leche.id, { modo: 'escrita', direcao: 'pt-es'
 const diasDeVolta = (Date.parse(certo.voltaEm) - Date.parse(certo.ultima)) / 864e5;
 ok(certo.etapa === 'dominado' && certo.revisoes === M.DEGRAU_DO_PRESUMIDO && M.DIAS_DOMINADO[certo.revisoes] === 90,
   'acertou: nasce dominado no degrau de três meses');
-ok(Math.round(diasDeVolta) >= 89 && Math.round(diasDeVolta) <= 91 && !!certo.dominadoEm && certo.vistas === 1 && certo.acertos === 1,
-  'acertou: volta em 90 dias, com dominadoEm e a resposta registrada');
+ok(diasDeVolta >= 90 * M.VARIACAO_DA_VOLTA[0] - 1e-6 && diasDeVolta <= 90 * M.VARIACAO_DA_VOLTA[1] + 1e-6
+   && !!certo.dominadoEm && certo.vistas === 1 && certo.acertos === 1,
+  'acertou: volta em torno de 90 dias (de metade ao dobro), com dominadoEm e a resposta registrada');
 const errado = M.responderPresumido(leche.id, { modo: 'escrita', direcao: 'pt-es', acertou: false, resposta: 'la lechi' });
 ok(errado.etapa === 'multipla' && errado.erros === 1 && errado.vistas === 1 && errado.voltaEm === null &&
   errado.primeiraCerta === false && errado.historico.length === 1, 'errou: nasce do zero (multipla), com o erro registrado');
