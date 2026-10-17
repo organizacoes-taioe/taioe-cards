@@ -1918,10 +1918,31 @@ window.Motor = (function () {
      o intervalo máximo seria uma passada pelo baralho — perto demais. */
   const DIAS_DOMINADO = [3, 7, 14, 30, 90, 180];
 
-  function proximaVolta(revisoes, agora) {
+  /* ── a espera sorteada (pedido do Gere, 17/10/2026) ──
+     Para escolher os intervalos com dado, e não com palpite, cada volta é
+     sorteada em torno do degrau: de metade ao dobro, por igual na escala
+     dos fatores (log-uniforme). O meio do sorteio é o próprio degrau, e
+     metade das voltas vem antes dele — um card de duas semanas volta entre
+     7 e 28 dias. O banco anota quanto cada card de fato esperou e se a
+     resposta saiu certa (cards.retornos, no taioe-infra), e o gráfico de
+     /admin/estatisticas/ cruza as duas coisas.
+
+     O degrau, a escada e o rótulo «volta em 2 semanas» continuam os
+     mesmos: o que varia é só a data. Por que de metade ao dobro: as
+     revisões de 09/09 a 16/10 acertaram de 92% a 99% em todos os degraus,
+     perto do teto — a espera pode estar curta, e o lado de lá do degrau é
+     o que mais ensina; o lado de cá mostra onde a curva começa a cair. */
+  const VARIACAO_DA_VOLTA = [0.5, 2];
+
+  function fatorDaVolta() {
+    const [menor, maior] = VARIACAO_DA_VOLTA;
+    return menor * Math.pow(maior / menor, Math.random());
+  }
+
+  function proximaVolta(revisoes, agora, fator) {
     const dias = DIAS_DOMINADO[Math.min(revisoes || 0, DIAS_DOMINADO.length - 1)];
     const d = agora ? new Date(agora) : new Date();
-    d.setDate(d.getDate() + dias);
+    d.setTime(d.getTime() + dias * (fator === undefined ? fatorDaVolta() : fator) * 864e5);
     return d.toISOString();
   }
 
@@ -3629,7 +3650,7 @@ window.Motor = (function () {
     descontoDePassos, acertosParaVirar, ACERTOS_PARA_VIRAR,
     linguaDaPergunta, linguaDaResposta,
     temVariante, formaDoCard, formasDoCard, sortearForma, idiomaDoCard,
-    distanciaNaFila, esperando, proximaVolta, DIAS_DOMINADO,
+    distanciaNaFila, esperando, proximaVolta, DIAS_DOMINADO, VARIACAO_DA_VOLTA,
     tempoConfiavel, MS_ABANDONO,
     contarDirecoes,
     filaDe, pesosDasFilas, chancesDasFilas, sortearFila,
