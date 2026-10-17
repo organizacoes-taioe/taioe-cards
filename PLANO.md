@@ -810,8 +810,11 @@ login de verdade (local).
 ### 7.9 O nivelamento pela lista (decidido em 16/10/2026)
 
 O Gere testou o francês e não gostou do teste por temas da 7.3. Proposta dele, com a
-contraproposta aceita inteira. Vale **só para o francês** por agora; os outros cursos ficam
-com a 7.3 até ganharem a lista deles.
+contraproposta aceita inteira. Nasceu no francês; desde 17/10, a pedido do Gere («acrescente
+o teste de vocabulário das outras línguas, seguindo os moldes do que foi feito para
+francês»), vale para os nove cursos, com uma lista por baralho (`fonte/frequencia/es.tsv`,
+`en.tsv`, `pt.tsv`; ver «As listas do espanhol, do inglês e do português», no fim da seção).
+A 7.3 fica só para curso que não tenha lista.
 
 **A lista.** `fonte/frequencia/fr.tsv`: umas 5.000 palavras do francês, da mais básica à
 mais rara, com **todas** as palavras que já têm card e as que ainda não têm (é também o
@@ -890,3 +893,25 @@ app (pedido do Gere, 16/10).
 | recomeçar o curso (taioe-infra e app) | **feito** (16/10) — migração `20261016170000_recomecar_curso`, no teste e na produção |
 | teste com login no localhost e produção | **feito** (16/10) — os três começos, a conferência da palavra sem card, o banco, o recomeço e o outro aparelho com cópia velha |
 | cards de francês em todos os níveis | **feito** (17/10) — levas fr 11 a 13 (§ do francês), 347 cards; PR #19 |
+| as listas do espanhol, do inglês e do português, e o teste nos outros seis cursos | **feito** (17/10) — ver abaixo |
+
+**As listas do espanhol, do inglês e do português (17/10/2026).** Mesmo método do francês
+(`fonte/frequencia/README.md`): `ordenar.js <língua>` cruza a lista dos livros didáticos
+(ELELex e EFLLex, da mesma família CEFRLex do FLELex) com a frequência nas legendas
+(OpenSubtitles 2018, somada por lema); o português não tem lista de livros didáticos e vai
+só pelas legendas. A curadoria seguiu `fonte/frequencia/brutos/CURADORIA.md`, em trechos, e
+`juntar.js <língua>` montou as listas: **es 5.091** palavras (os 1.070 cards de palavra
+ligados), **en 5.101** (1.064) e **pt 5.067** (193). As legendas trazem muito nome próprio
+e forma flexionada, e por isso a cauda foi curada até a lista passar de 5.000 (as linhas
+`5600.0001…` de `candidatos-<língua>-extra.tsv`). Saiu também, por cautela, todo termo
+sexual ou de crime sexual, mesmo neutro.
+
+- Os cards de palavra que a frequência pôs no fim (as palavras raras e as expressões sem
+  frequência) foram para a faixa do nível do card; os básicos de curso (números, dias,
+  comida, família, corpo, casa) para o A1.
+- **Regra 6 estendida**: a palavra escrita igual à tradução, a menos de artigo e acento
+  («pensar», «la casa» → «a casa»), é transparente total mesmo sem card e não se pergunta
+  (`igualATraducao` no motor). Pesa no es-pt (739 palavras) e no pt-es (731); o «ñ» conta.
+- Como no francês, os cards novos de palavra passam a vir na ordem da lista em todos os
+  cursos, também para quem já estudava (a ordem dos inéditos; as filas de revisão não mudam).
+- O catálogo do banco não muda (a posição vai só no pacote do app), e não houve Catálogo.
