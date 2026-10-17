@@ -915,3 +915,47 @@ sexual ou de crime sexual, mesmo neutro.
 - Como no francês, os cards novos de palavra passam a vir na ordem da lista em todos os
   cursos, também para quem já estudava (a ordem dos inéditos; as filas de revisão não mudam).
 - O catálogo do banco não muda (a posição vai só no pacote do app), e não houve Catálogo.
+
+## 8. O tempo de retorno dos dominados (decidido em 17/10/2026)
+
+**O pedido.** Estudar quanto tempo o card dominado deve esperar para voltar: anotar, em cada
+revisão, quanto ele de fato esperou e se a resposta saiu certa (o histórico também), mostrar
+isso num gráfico em `/admin/estatisticas/` e, mantendo o tempo nominal, variar a espera por
+card para juntar dado dos dois lados do degrau.
+
+**O que a pesquisa diz, e o que se tirou dela.**
+- A curva do esquecimento (Ebbinghaus, 1885) cai rápido e depois devagar; cada revisão certa
+  a achata. Os sistemas de hoje modelam isso como a «estabilidade» do card: o tempo até a
+  chance de lembrar cair a um alvo (SuperMemo, de Wozniak; FSRS, de Ye e outros, 2022–2023,
+  hoje no Anki; a «meia-vida» do Duolingo, Settles e Meeder, 2016).
+- O alvo mais usado é **90% de acerto na revisão** (o índice de esquecimento de 10% do
+  SuperMemo; a retenção padrão do FSRS). Abaixo de ~80% o custo dos erros come o ganho;
+  acima de ~95% revisa-se cedo demais, e cada revisão fortalece pouco.
+- Recordar com algum esforço fortalece mais que recordar o que ainda está fresco
+  («dificuldades desejáveis», Bjork). Daí a espera crescer a cada acerto.
+- O intervalo bom cresce com o prazo que se quer lembrar (Cepeda e outros, 2006 e 2008), e
+  a expansão em si (3 → 7 → 14…) não é mágica: comparada a intervalos iguais, o que pesa é o
+  primeiro intervalo e a espera total (Karpicke e Roediger, 2007; Kang e outros, 2014).
+- Conclusão para cá: escolher cada degrau pelo tempo em que o acerto cai a uns 90%, medido
+  nos cards do próprio app. As revisões de 09/09 a 16/10 acertaram de 92% a 99% em todos os
+  degraus — a escada pode estar curta, e por isso o sorteio vai também para depois do degrau.
+
+**O que foi feito (infra PR #13, cards PR #22, hub PR #9; no ar em 17/10).**
+- `Motor.proximaVolta` sorteia a espera entre **metade e o dobro** do degrau, por igual na
+  escala dos fatores (log-uniforme; mediana no degrau, metade antes). O degrau, a escada
+  (3, 7, 14, 30, 90, 180 dias), a subida de um ou dois degraus e o rótulo «volta em 2
+  semanas» não mudam. Constante: `VARIACAO_DA_VOLTA`. Custo: uns **8% a mais** de revisões
+  de dominado; os cards que já tinham data não mudam, então não há transição.
+- Banco: `cards.retornos` (cada revisão: a resposta anterior, a volta marcada, o degrau, se
+  acertou; dura 4 meses, como as respostas) e `cards.retornos_resumo` (contagens por degrau ×
+  dias previstos × dias passados, para sempre). O gatilho em `cards.respostas` preenche os
+  dois; o histórico entrou pela migração. Nas respostas importadas do app antigo (até 06/10)
+  não há degrau: ele foi deduzido do tempo passado (`inferido`).
+- `/admin/estatisticas/`, bloco «Cards: o retorno dos dominados»: acerto por faixa de dias
+  esperados, com a margem de 95% e a linha dos 90%; um painel por degrau com a espera ÷ o
+  degrau (½×, 1×, 2×); a tabela antes / depois do degrau; a sua conta ou todos.
+
+**Próximo passo.** Com umas 4 a 8 semanas de sorteio, ajustar em cada degrau a curva do
+acerto pela espera e pôr o degrau onde ela cruza ~90% (o Gere escolhe o alvo). Degrau novo
+vai ao Gere com os números e o custo, como manda a regra de agendamento. Os degraus de 1, 3 e
+6 meses só terão dado bastante daqui a meses.
