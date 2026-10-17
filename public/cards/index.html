@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#12141c">
 <title>Taioé Cards</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇪🇸</text></svg>">
-<link rel="stylesheet" href="style.css?v=c4fdfb4f">
+<link rel="stylesheet" href="style.css?v=53ddb876">
 </head>
 <body>
 
@@ -340,11 +340,28 @@
   </div>
 </div>
 
+<!-- «Recomeçar este curso»: diz quanto vai ser apagado e só libera o botão
+     depois que a pessoa digita a frase, como os sites fazem nas exclusões. -->
+<div class="comentario-fundo oculto" id="recomecar-fundo">
+  <div class="comentario-painel" role="dialog" aria-modal="true" aria-labelledby="recomecar-titulo">
+    <h3 id="recomecar-titulo"></h3>
+    <p class="recomecar-texto" id="recomecar-vistos"></p>
+    <p class="recomecar-texto" data-i18n="config.recomecarApaga"></p>
+    <label class="recomecar-texto" for="recomecar-frase" id="recomecar-pede"></label>
+    <input type="text" id="recomecar-frase" autocomplete="off" autocapitalize="off"
+           autocorrect="off" spellcheck="false" enterkeyhint="done">
+    <div class="linha-botoes">
+      <button class="primario perigo" id="btn-recomecar-sim" data-i18n="config.recomecarSim" disabled></button>
+      <button class="secundario" id="btn-recomecar-nao" data-i18n="comentario.cancelar"></button>
+    </div>
+  </div>
+</div>
+
 <footer class="rodape">
   <span id="rodape-sync">•</span>
 </footer>
 
-<script src="js/textos-i18n.js?v=e9eee660"></script>
+<script src="js/textos-i18n.js?v=399d68b7"></script>
 <script src="js/i18n.js?v=a99747e0"></script>
 <script src="vendor/supabase-js-2.117.2.js?v=16aeff36"></script>
 <script src="js/taioe-sessao.js?v=c04dd1f9"></script>
@@ -353,7 +370,7 @@
 <script src="js/motor.js?v=17cbb5d4"></script>
 <script src="js/armazem.js?v=131120d0"></script>
 <script src="js/sincronia.js?v=eed2d3f7"></script>
-<script src="js/app.js?v=3d98726e"></script>
+<script src="js/app.js?v=bec29164"></script>
 <script src="js/inicio.js?v=4f77ecd8"></script>
 </body>
 </html>
