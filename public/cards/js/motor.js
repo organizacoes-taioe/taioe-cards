@@ -3231,10 +3231,10 @@ window.Motor = (function () {
   }
 
   /* ── o nivelamento pela lista (7.9) ──
-     Para o curso cujo baralho tem a lista de frequência (hoje, o francês:
-     fonte/frequencia/fr.tsv). A lista vem no pacote do curso já com a tradução
-     de quem estuda; a tela a entrega aqui como itens
-     { pos, fr, classe, nivel, trad, cards: [ids] }, em ordem de posição
+     Para o curso cujo baralho tem a lista de frequência (todos, desde
+     17/10/2026: fonte/frequencia/<língua>.tsv). A lista vem no pacote do curso
+     já com a tradução de quem estuda; a tela a entrega aqui como itens
+     { pos, fr (a forma, em qualquer língua), classe, nivel, trad, cards: [ids] }, em ordem de posição
      (itensDaLista converte o formato compacto do pacote).
 
        const L = Motor.nivelamentoLista;
@@ -3276,7 +3276,25 @@ window.Motor = (function () {
 
   function perguntavel(item) {
     if (!item || !item.trad) return false;
+    if (igualATraducao(item)) return false;
     return !(item.cards || []).some(id => FALSO_AMIGO[id] || transparenteTotal(id));
+  }
+  /* A palavra escrita igual à tradução, a menos de artigo, acento, parêntese e do
+     «to» do inglês («pensar» → «pensar», «la casa» → «a casa»), é transparente
+     total mesmo sem card: não se pergunta (7.9, regra 6). Pesa no espanhol e no
+     português, que dividem centenas de palavras; o «ñ» continua letra. */
+  const ARTIGO_NA_LISTA = /^(?:l'|(?:el|la|los|las|lo|o|a|os|as|le|les|the|to)\s+)/;
+  function formaNua(t) {
+    return String(t || '').toLowerCase().replace(/ñ/g, '\u0001').normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/\s*\(.*?\)\s*/g, ' ').trim().replace(ARTIGO_NA_LISTA, '').trim();
+  }
+  const IGUAL_A_TRADUCAO = new WeakMap();   // a busca pergunta a cada passo: a conta é uma vez por item
+  function igualATraducao(item) {
+    if (IGUAL_A_TRADUCAO.has(item)) return IGUAL_A_TRADUCAO.get(item);
+    const forma = formaNua(item.fr);
+    const igual = !!forma && String(item.trad).split('/').some(t => formaNua(t) === forma);
+    IGUAL_A_TRADUCAO.set(item, igual);
+    return igual;
   }
   const perguntaveisDa = itens => (itens || []).filter(perguntavel);
 

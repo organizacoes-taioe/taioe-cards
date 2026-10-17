@@ -884,16 +884,22 @@ const ID_DO_CATALOGO = /^[a-z0-9]+(-[a-z0-9]+)*$/;
    data/lista-<curso>.js, que o nivelamento percorre. Toda palavra com card tem de estar
    na lista. */
 const LISTAS = {};
+const FONTES_DA_LISTA = {
+  fr: 'FLELex (UCLouvain) e Lexique 4', es: 'ELELex (UCLouvain) e OpenSubtitles 2018 (FrequencyWords)',
+  en: 'EFLLex (UCLouvain) e OpenSubtitles 2018 (FrequencyWords)', pt: 'OpenSubtitles 2018 (FrequencyWords)' };
 for (const { idioma, cards } of baralhos) {
   const arq = path.join(raiz, 'fonte', 'frequencia', idioma + '.tsv');
   if (!fs.existsSync(arq)) continue;
   const linhas = fs.readFileSync(arq, 'utf8').replace(/\r/g, '').split('\n').filter(Boolean);
   const cab = linhas[0].split('\t');
   const col = k => cab.indexOf(k);
-  const itens = linhas.slice(1).map(l => l.split('\t')).map(c => ({
-    pos: Number(c[col('pos')]), fr: c[col('fr')], classe: c[col('classe')], nivel: c[col('nivel')],
-    trad: { pt: c[col('pt')], es: c[col('es')], en: c[col('en')] },
-    cards: c[col('cards')] ? c[col('cards')].split(',') : [] }));
+  // a coluna da forma tem o nome da língua (fr, es, en, pt); as das traduções, o dos públicos
+  const itens = linhas.slice(1).map(l => l.split('\t')).map(c => {
+    const trad = {};
+    audienciasDe(idioma).forEach(a => { trad[a] = col(a) >= 0 ? c[col(a)] : ''; });
+    return { pos: Number(c[col('pos')]), fr: c[col(idioma)], classe: c[col('classe')], nivel: c[col('nivel')],
+      trad, cards: c[col('cards')] ? c[col('cards')].split(',') : [] };
+  });
   const posDe = new Map();
   itens.forEach((x, i) => {
     if (x.pos !== i + 1) { console.error('\n  ' + path.relative(raiz, arq) + ': a posição da linha ' + (i + 2) + ' devia ser ' + (i + 1) + '\n'); process.exit(1); }
@@ -955,7 +961,7 @@ for (const { idioma, cards } of baralhos) {
       const lista = { versao: hash8(JSON.stringify(itens)), curso: curso, itens: itens };
       fs.writeFileSync(path.join(dataPublica, 'lista-' + curso + '.js'),
         '/* GERADO POR fonte/build.js a partir de fonte/frequencia/' + idioma + '.tsv — não edite à mão.\n' +
-        '   FLELex (UCLouvain) e Lexique 4; CC BY-NC-SA 4.0 (ver fonte/frequencia/README.md). */\n' +
+        '   ' + FONTES_DA_LISTA[idioma] + '; CC BY-NC-SA 4.0 (ver fonte/frequencia/README.md). */\n' +
         'window.TAIOE_LISTA = ' + JSON.stringify(lista) + ';\n', 'utf8');
     }
   }

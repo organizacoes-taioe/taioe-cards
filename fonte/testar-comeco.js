@@ -545,5 +545,53 @@ ok(ordem.length === ineditas.length && ordem.includes('fr-b001'), 'e os outros c
 }
 
 zerar();
+/* ── 7.9 nos outros cursos: a lista de cada baralho, para cada público ── */
+for (const curso of ['es-pt', 'es-en', 'en-pt', 'en-es', 'pt-es', 'pt-en']) {
+  secao('a lista do ' + curso);
+  const lingua = curso.split('-')[0];
+  const arq = path.join(RAIZ, 'public', 'cards', 'data', 'lista-' + curso + '.js');
+  ok(fs.existsSync(arq), 'o curso ' + curso + ' tem a lista');
+  if (!fs.existsSync(arq)) continue;
+  const j = { BARALHOS: {} };
+  new Function('window', fs.readFileSync(path.join(RAIZ, 'public', 'cards', 'data', 'cards-' + curso + '.js'), 'utf8'))(j);
+  new Function('window', fs.readFileSync(arq, 'utf8'))(j);
+  const CS = j.BARALHOS[lingua].cards.map(c => M.formaDoCard(c, 0));
+  const NL = M.nivelamentoLista;
+  const LISTA = NL.itens(j.TAIOE_LISTA);
+  M.usarTransparencias(CS);
+  M.usarExtras({});
+  const palavras = CS.filter(c => c.tipo === 'palavra');
+  ok(j.TAIOE_LISTA.curso === curso, 'a lista é a do curso');
+  ok(LISTA.length > 4500 && LISTA.every((x, i) => x.pos === i + 1), `a lista vem inteira, em ordem de posição (${LISTA.length})`);
+  ok(palavras.every(c => c.pos > 0), 'o pacote traz a posição em toda palavra');
+  const naLista = new Set(LISTA.flatMap(x => x.cards));
+  ok(palavras.every(c => naLista.has(c.id)), 'toda palavra com card está na lista');
+  const perguntaveis = LISTA.filter(NL.perguntavel);
+  ok(LISTA.every(x => x.trad), 'toda palavra da lista tem tradução no público');
+  const iguais = LISTA.filter(x => x.trad.split('/').some(t => t.trim().replace(/^(el|la|o|a|the|to) /, '') === x.fr.replace(/^(el|la|o|a|the|to) /, '')));
+  ok(iguais.length && !iguais.some(NL.perguntavel), `a escrita igual à tradução não é perguntada (${iguais.length})`);
+  ok(perguntaveis.length > 2000, `perguntáveis: ${perguntaveis.length}`);
+  for (const [T, comeco] of [[300, 'pouco'], [1500, 'bastante']]) {
+    const r = [];
+    for (let k = 0; k < 30; k++) {
+      let s = 500 + k;
+      const sorte = () => { s = (s * 1103515245 + 12345) % 2147483648; return s / 2147483648; };
+      const t = NL.novo(LISTA, { comeco: comeco, semente: s });
+      let c, telas = 0;
+      while ((c = NL.proximaCarta(t, LISTA)) && telas < 120) {
+        telas++;
+        const sabe = c.pos < T;
+        if (c.conferir) NL.conferir(t, LISTA, c.pos, sabe ? sorte() < 0.95 : sorte() < 0.25);
+        else NL.responder(t, LISTA, c.pos, sorte() < (sabe ? 0.93 : 0.07));
+      }
+      r.push({ t, telas });
+    }
+    const mediana = a => a.slice().sort((x, y) => x - y)[Math.floor(a.length / 2)];
+    const d = mediana(r.map(x => x.t.divisa)), telas = mediana(r.map(x => x.telas));
+    ok(Math.abs(d - T) <= T * 0.12 + 15 && telas <= 30, `quem sabe ~${T} palavras: divisa ${d}, ${telas} telas na mediana`);
+  }
+}
+
+zerar();
 console.log('\n  ' + (falhas ? falhas + ' de ' + feitas + ' conferências falharam' : feitas + ' conferências, todas passaram') + '\n');
 process.exit(falhas ? 1 : 0);

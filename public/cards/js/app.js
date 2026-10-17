@@ -64,7 +64,7 @@ window.TaioeCardsApp = function (ctx) {
      como dominada e não entra em jogo, e que a «parecida» estreia na volta. */
   Motor.usarTransparencias(CARDS);
   /* A lista de frequência do curso (PLANO.md, 7.9): só no curso que a tem
-     (hoje, o francês). Com ela, o começo usa o nivelamento pela lista. */
+     (todos, desde 17/10/2026). Com ela, o começo usa o nivelamento pela lista. */
   const LISTA = (window.TAIOE_LISTA && window.TAIOE_LISTA.curso === ctx.curso)
     ? Motor.nivelamentoLista.itens(window.TAIOE_LISTA) : null;
   const NL = Motor.nivelamentoLista;
