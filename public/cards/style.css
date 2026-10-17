@@ -525,6 +525,17 @@ label input:focus{outline:0;border-color:var(--acento)}
 .comentario-conta{margin:6px 0 14px;font-size:12.5px;color:var(--texto-2);text-align:right}
 .comentario-conta.no-fim{color:var(--quase)}
 
+/* o aviso do «Recomeçar este curso» usa o mesmo painel */
+.recomecar-texto{display:block;margin:0 0 10px;font-size:14.5px;line-height:1.5;color:var(--texto-2)}
+.recomecar-texto b{color:var(--texto)}
+#recomecar-frase{
+  width:100%;background:var(--fundo);border:1px solid var(--borda);color:var(--texto);
+  border-radius:10px;padding:11px 13px;font:inherit;font-size:16px;
+}
+#recomecar-frase:focus{outline:none;border-color:var(--erro)}
+.primario.perigo{background:var(--erro);color:#2a0d0a}
+.primario:disabled{opacity:.4;cursor:default;filter:none;transform:none}
+
 /* ── lista de todos os cards ── */
 .filtros{
   background:var(--fundo-2);border:1px solid var(--borda);border-radius:12px;

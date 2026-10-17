@@ -107,7 +107,8 @@ window.TaioeCardsApp = function (ctx) {
     'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync', 'cfg-comentarios',
     /* o começo do app (PLANO.md, seção 7) */
     'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'aviso-previa', 'btn-refazer', 'btn-rever-dicas',
-    'btn-recomecar'
+    'btn-recomecar', 'recomecar-fundo', 'recomecar-titulo', 'recomecar-vistos', 'recomecar-pede',
+    'recomecar-frase', 'btn-recomecar-sim', 'btn-recomecar-nao'
   ].forEach(id => { el[id] = document.getElementById(id); });
 
   /* ═══════════════ estado ═══════════════ */
@@ -3654,15 +3655,58 @@ window.TaioeCardsApp = function (ctx) {
   /* «Recomeçar este curso» (PLANO.md, 7.9): o servidor apaga o progresso do
      curso (cards.recomecar_curso), e este aparelho apaga a cópia dele, o
      teste guardado, as dicas e os desafios anotados. Os outros aparelhos
-     percebem na próxima carga (recomecado_em, em sincronia.js). */
-  el['btn-recomecar'].addEventListener('click', async () => {
-    if (!confirm(t('config.recomecarConfirma', { L: NOME_L }))) return;
+     percebem na próxima carga (recomecado_em, em sincronia.js).
+     O aviso diz quantos cards já foram vistos e só libera o botão quando a
+     pessoa digita «recomeçar francês» (pedido do Gere, 17/10/2026), sem
+     cobrar maiúscula, acento nem espaço a mais: o celular atrapalha nisso. */
+  const fraseRecomecar = () => t('config.recomecarFrase', { L: NOME_L });
+  const soLetras = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/\s+/g, ' ').trim();
+  const fraseConfere = () => soLetras(el['recomecar-frase'].value) === soLetras(fraseRecomecar());
+
+  function abrirRecomecar() {
+    const vistos = Object.keys(progresso.cards).length;
+    el['recomecar-titulo'].textContent = t('config.recomecarPergunta', { L: NOME_L });
+    el['recomecar-vistos'].innerHTML = vistos ? tn('config.recomecarVistos', vistos) : t('config.recomecarNenhum');
+    el['recomecar-pede'].innerHTML = t('config.recomecarPede', { frase: fraseRecomecar() });
+    el['recomecar-frase'].value = '';
+    el['btn-recomecar-sim'].disabled = true;
+    el['recomecar-fundo'].classList.remove('oculto');
+    el['recomecar-frase'].focus();
+  }
+
+  function fecharRecomecar() {
+    el['recomecar-fundo'].classList.add('oculto');
+    el['btn-recomecar'].focus();
+  }
+
+  el['btn-recomecar'].addEventListener('click', abrirRecomecar);
+  el['btn-recomecar-nao'].addEventListener('click', fecharRecomecar);
+  el['recomecar-frase'].addEventListener('input', () => {
+    el['btn-recomecar-sim'].disabled = !fraseConfere();
+  });
+  el['recomecar-frase'].addEventListener('keydown', e => {
+    if (e.key === 'Enter' && fraseConfere()) el['btn-recomecar-sim'].click();
+  });
+  el['recomecar-fundo'].addEventListener('click', e => {
+    if (e.target === el['recomecar-fundo']) fecharRecomecar();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !el['recomecar-fundo'].classList.contains('oculto')) fecharRecomecar();
+  });
+
+  el['btn-recomecar-sim'].addEventListener('click', async () => {
+    if (!fraseConfere()) return;
+    el['btn-recomecar-sim'].disabled = true;
+    el['btn-recomecar-nao'].disabled = true;
     el['btn-recomecar'].disabled = true;
     Sinc.parar();
     const r = await ctx.sb.schema('cards').rpc('recomecar_curso', { curso: ctx.curso });
     if (r.error) {
       console.warn('o curso não recomeçou', r.error);
       el['btn-recomecar'].disabled = false;
+      el['btn-recomecar-nao'].disabled = false;
+      fecharRecomecar();
       Sinc.continuar();
       statusSync(t('config.recomecarFalhou'), 'erro');
       return;
