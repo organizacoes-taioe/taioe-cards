@@ -322,6 +322,9 @@ como o de todo curso.
 | fr 8 | 126 frases de uso (as 27 avulsas, um por sentido nas de dois; os usos das palavras da leva 7; situações de hotel, médico, telefone, direção) + 25 de conjugação (os primeiros mais-que-perfeitos, imperfeito, futuro, passé composé) | **feito** (08/10) — 824 cards; 37 palavras pedidas pelas frases |
 | fr 9 | 37 palavras que as frases pediam + 47 avulsas (dias, estações, cores, comida, casa, roupa, corpo, profissões, verbos e advérbios comuns); parêntese em «mieux», «la fois», «l'étage», «perdre», «le menu», «proche», «sympa», «d'abord» | **feito** (08/10) — 908 cards; falta frase para as 47 avulsas |
 | fr 10 | 95 frases de uso (as 47 avulsas, um por sentido nas de dois; os usos das palavras da leva 9) + 20 de conjugação, só com palavras que já têm card | **feito** (09/10) — **1023 cards**: 40 de primeiros passos, 384 palavras, 473 frases de uso, 126 de conjugação; nenhuma frase presa, nenhuma palavra sem frase |
+| fr 11 | 125 palavras de A1 a C2, escolhidas na lista de frequência (7.9) e espaçadas por igual em cada faixa, para haver card logo acima de qualquer divisa | **feito** (16/10) — 1.148 cards |
+| fr 12 | 198 frases de uso das palavras da leva 11 | **feito** (16/10) — 1.346 cards; 24 palavras pedidas pelas frases |
+| fr 13 | as 24 palavras que as frases pediam (dernier, changer, recevoir, garder, le roi, la photo…) | **feito** (17/10) — **1.370 cards**; com card na lista: A1 276, A2 124, B1 62, B2 33, C1 23, C2 15 |
 
 **O baralho de francês passou de mil em 09/10/2026.** A curva de níveis ficou
 quase toda em A1 (939 A1, 84 A2): é a base de quem começa do zero, e o ciclo
@@ -886,4 +889,4 @@ app (pedido do Gere, 16/10).
 | telas do teste novo, nas três línguas | **feito** (16/10) |
 | recomeçar o curso (taioe-infra e app) | **feito** (16/10) — migração `20261016170000_recomecar_curso`, no teste e na produção |
 | teste com login no localhost e produção | **feito** (16/10) — os três começos, a conferência da palavra sem card, o banco, o recomeço e o outro aparelho com cópia velha |
-| cards de francês em todos os níveis | em andamento |
+| cards de francês em todos os níveis | **feito** (17/10) — levas fr 11 a 13 (§ do francês), 347 cards; PR #19 |
