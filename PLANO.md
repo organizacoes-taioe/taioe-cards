@@ -602,6 +602,15 @@ espera, mas transparentes e presumidas contam.
 
 ### 7.5 As dicas no momento certo
 
+> **Retiradas em 19/10/2026**, a pedido do Gere: «já vi que as pessoas
+> simplesmente pulam isso. Precisamos deixar tudo mais intuitivo». Saíram a
+> tela «como funciona» (o resultado do nivelamento leva direto ao primeiro
+> card), os balões abaixo e o botão «Rever dicas». O «Já conheço essa
+> palavra» agora só aparece na estreia do card, em vermelho, logo acima dos
+> botões da vez (do «Responder» ou do «Não sei»; depois da resposta, do
+> «Próximo»). O campo `dicasVistas` continua nos extras e na mescla, sem uso.
+> O texto abaixo fica como registro do que existiu.
+
 Uma tela de «como funciona» depois do nivelamento; o resto aparece **na
 primeira vez em que a situação acontece**, uma vez só:
 

@@ -493,15 +493,17 @@ label input:focus{outline:0;border-color:var(--acento)}
 }
 .link-comentar:hover{color:var(--texto);text-decoration-color:var(--texto-2)}
 .link-comentar.na-lista{margin-top:8px;font-size:12.5px}
-/* «Não quero aprender este card»: um link miúdo, que na estreia do card vira
-   botão — é a hora em que a pessoa sabe se a palavra já é dela. */
-.linha-arquivar{margin:10px 0 0;text-align:right}
 .link-arquivar{background:none;border:0;padding:4px 0;font-size:12.5px;color:var(--texto-2);
   text-decoration:underline;text-decoration-color:var(--borda);text-underline-offset:3px;cursor:pointer}
 .link-arquivar:hover{color:var(--texto)}
-.link-arquivar.evidente{border:1px solid var(--borda);border-radius:10px;padding:8px 12px;
-  text-decoration:none;font-size:13.5px;color:var(--texto)}
-.link-arquivar.evidente:hover{border-color:var(--texto-2)}
+/* «Já conheço essa palavra»: só na estreia do card, em vermelho, logo acima
+   dos botões da vez — é a hora em que a pessoa sabe se a palavra já é dela. */
+.linha-ja-conheco{margin:14px 0 0}
+#area-feedback .linha-ja-conheco{margin:0 0 14px}
+.ja-conheco{display:block;width:100%;padding:11px 14px;border-radius:12px;
+  background:var(--erro-fraco);border:1.5px solid var(--erro);color:var(--erro);
+  font:inherit;font-size:15.5px;font-weight:800;cursor:pointer}
+.ja-conheco:hover{background:var(--erro-borda)}
 
 .comentario-fundo{
   position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.55);
@@ -649,13 +651,8 @@ label input:focus{outline:0;border-color:var(--acento)}
 .mc-retorno{color:var(--ok)}
 
 /* ── o começo do app (PLANO.md, seção 7) ──
-   A avaliação do nível, o resultado e «como funciona»: uma coluna só, no
+   A avaliação do nível e o resultado: uma coluna só, no
    meio da tela, com a mesma ficha do jogo para a palavra do teste. */
-:root{
-  /* o balão da dica: o âmbar fraco já misturado à ficha, opaco, para a ponta
-     cobrir a borda de quem ela aponta */
-  --dica-fundo:#313523;
-}
 .comeco{max-width:520px;margin:0 auto;padding:18px 0 8px;text-align:center}
 .comeco-titulo{font-size:23px;line-height:1.3;margin:0 0 12px}
 .comeco-titulo b{color:var(--acento)}
@@ -684,34 +681,6 @@ label input:focus{outline:0;border-color:var(--acento)}
 }
 .opcao-teste:hover{border-color:var(--acento);background:var(--acento-fraco)}
 .ficha-teste .alternativas{margin-top:2px}
-
-/* «como funciona»: os quatro passos, numerados, alinhados à esquerda */
-.passos-comeco{text-align:left;margin:4px auto 18px;padding-left:22px;max-width:440px}
-.passos-comeco li{margin:0 0 12px;line-height:1.55;color:var(--texto-2)}
-.passos-comeco li b{color:var(--texto)}
-.passos-comeco li::marker{color:var(--acento);font-weight:800}
-
-/* ── as dicas do momento certo (7.5) ──
-   Um balão no fluxo da página, junto do que ele explica: empurra, mas
-   nunca cobre, as respostas. A ponta (com .seta) aponta para cima, para o
-   botão da linha de cima, que nas duas dicas que a usam fica à direita. */
-.dica-contexto{
-  position:relative;margin:12px 0 4px;padding:11px 14px 9px;text-align:left;
-  background:var(--dica-fundo);border:1px solid var(--acento-borda);border-radius:12px;
-  font-size:13.5px;line-height:1.5;color:var(--texto);
-}
-.dica-contexto p{margin:0}
-.dica-contexto.seta{margin-top:14px}
-.dica-contexto.seta::before{
-  content:"";position:absolute;top:-7px;right:30px;width:12px;height:12px;
-  background:var(--dica-fundo);border-left:1px solid var(--acento-borda);border-top:1px solid var(--acento-borda);
-  transform:rotate(45deg);
-}
-.dica-fechar{
-  display:block;margin:6px 0 0 auto;background:none;border:0;padding:2px 0;
-  color:var(--acento);font-size:13px;font-weight:700;cursor:pointer;
-}
-.dica-fechar:hover{text-decoration:underline}
 
 /* o card desafio: a marca em vermelho-claro, para dizer «este é difícil» */
 .etiqueta.desafio{background:var(--erro-fraco);color:var(--erro);border-color:var(--erro-borda)}
