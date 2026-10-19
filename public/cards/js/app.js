@@ -106,7 +106,7 @@ window.TaioeCardsApp = function (ctx) {
     'cfg-conta', 'cfg-curso', 'btn-conta', 'btn-sair', 'cfg-outros-cursos', 'cfg-lingua',
     'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync', 'cfg-comentarios',
     /* o começo do app (PLANO.md, seção 7) */
-    'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'aviso-previa', 'btn-refazer', 'btn-rever-dicas',
+    'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'aviso-previa', 'btn-refazer',
     'btn-recomecar', 'recomecar-fundo', 'recomecar-titulo', 'recomecar-vistos', 'recomecar-pede',
     'recomecar-frase', 'btn-recomecar-sim', 'btn-recomecar-nao'
   ].forEach(id => { el[id] = document.getElementById(id); });
@@ -130,8 +130,7 @@ window.TaioeCardsApp = function (ctx) {
 
   /* ── o que fica só neste aparelho ──
      O teste do nivelamento em andamento (sobrevive a recarregar a página e
-     não toca a rede até acabar), a reserva das dicas vistas e os desafios já
-     mostrados. Tudo por conta + curso. */
+     não toca a rede até acabar), e os desafios já mostrados. Tudo por conta + curso. */
   function lerLocal(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }
   function guardarLocal(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   function esquecerLocal(k) { try { localStorage.removeItem(k); } catch (e) {} }
@@ -568,8 +567,6 @@ window.TaioeCardsApp = function (ctx) {
     ['tela-inicio', 'tela-comeco', 'tela-card', 'tela-painel', 'tela-config', 'tela-cards', 'tela-texto']
       .forEach(t => el[t].classList.toggle('oculto', t !== tela));
     el.dica.hidden = true;
-    /* o balão da dica é da tela em que nasceu */
-    fecharDica();
     const aceso = BOTAO_DA_TELA[tela];
     Object.values(BOTAO_DA_TELA).forEach(b => el[b].classList.toggle('aqui', b === aceso));
     /* A avaliação do começo é a página principal enquanto dura: sem os
@@ -812,6 +809,19 @@ window.TaioeCardsApp = function (ctx) {
     proximoCard();
   }
 
+  /* Onde o «já conheço» fica: logo acima dos botões da vez, para não passar
+     despercebido — antes da resposta, acima do «Responder» (ou do «Não sei»,
+     na múltipla escolha); depois dela, acima do «Próximo». */
+  let jaConhecoNoCard = false;
+  function posicionarJaConheco(respondido) {
+    const linha = el['btn-arquivar'].parentElement;
+    linha.classList.toggle('oculto', !jaConhecoNoCard);
+    const antes = respondido ? el['btn-proximo']
+      : modoAtual === 'multipla' ? el['area-nao-sei-multipla']
+      : el['btn-responder'].parentElement;
+    if (linha.nextElementSibling !== antes) antes.parentElement.insertBefore(linha, antes);
+  }
+
   function marcarArquivo(id, ativo) {
     progresso.arquivados = progresso.arquivados || {};
     progresso.arquivados[id] = { em: new Date().toISOString(), ativo: ativo };
@@ -838,7 +848,6 @@ window.TaioeCardsApp = function (ctx) {
     if (window.scrollY >= 2) el['tela-card'].style.minHeight = el['tela-card'].offsetHeight + 'px';
     /* o desafio, se vier, é marcado por proximoNovo durante a escolha */
     desafioAtual = null;
-    dicaNoCard = false;
     const id = tirarProximoId();
     if (!id) { irParaInicio(); return; }
     const bruto = PORID_FONTE[id];
@@ -873,16 +882,17 @@ window.TaioeCardsApp = function (ctx) {
     const palavra = cardAtual.requer && PORID[cardAtual.requer];
     el['meta-origem'].textContent = palavra ? t('card.origem', { x: palavra[L] }) : '';
     el['meta-origem'].classList.add('oculto');
-    /* o «já conheço» chama atenção só na estreia do card; o texto diz o que
-       a pessoa está afirmando (pedido do Gere, 07/10/2026) */
-    const estreando = (!estadoDe(id) || !estadoDe(id).vistas) && !Motor.presumidoEm(id, progresso.cards);
-    el['btn-arquivar'].classList.toggle('evidente', estreando);
+    /* O «já conheço» só existe na primeira vez que o card aparece, que é a
+       hora em que a pessoa sabe se a palavra já é dela (pedido do Gere,
+       19/10/2026). O texto diz o que ela está afirmando (07/10). */
+    const estreando = !estadoDe(id) || !estadoDe(id).vistas;
     el['btn-arquivar'].textContent = t(cardAtual.tipo === 'palavra' ? 'card.jaConhecoPalavra' : 'card.jaConhecoFrase');
     /* o desafio leva a marca; a prévia (frase ainda presa) é uma pergunta
        só, e arquivar uma frase que nem entrou no jogo não faz sentido */
     const previa = !!(desafioAtual && desafioAtual.previa);
     el['meta-desafio'].classList.toggle('oculto', !desafioAtual);
-    el['btn-arquivar'].parentElement.classList.toggle('oculto', previa);
+    jaConhecoNoCard = estreando && !previa;
+    posicionarJaConheco(false);
     el['aviso-previa'].classList.add('oculto');
     /* O nível vive na aba do fichário e fica à mostra o tempo todo: saber que
        o card é A1 ou C2 não entrega resposta nenhuma, e ajuda a calibrar o
@@ -939,15 +949,6 @@ window.TaioeCardsApp = function (ctx) {
     }
 
     mostrar('tela-card');
-    /* As dicas da estreia (PLANO.md, 7.5), uma por card, embaixo das
-       respostas — nunca no caminho de quem vai responder: o desafio; o
-       «já conheço» no primeiro card novo; a frase que as palavras soltaram. */
-    const linhaArquivar = el['btn-arquivar'].parentElement;
-    if (desafioAtual) dicaDoCard('desafio', linhaArquivar);
-    if (estreando && !previa) {
-      dicaDoCard('arquivar', linhaArquivar, { x: aspas(escapar(el['btn-arquivar'].textContent)) }, { seta: true });
-      if (cardAtual.tipo === 'frase' && Motor.requeridas(cardAtual).length) dicaDoCard('frase', linhaArquivar);
-    }
     /* O foco no campo espera a subida acabar: focar antes faz o navegador
        rolar até o campo por conta própria, e as duas rolagens brigam. */
     voltarAoTopo(() => {
@@ -1202,7 +1203,6 @@ window.TaioeCardsApp = function (ctx) {
       el['resposta-dada'].classList.remove('oculto');
       el['area-julgamento'].classList.remove('oculto');
       el['btn-proximo'].classList.add('oculto');
-      dicaDoCard('quase', el['area-julgamento'], null, { antes: true });
     } else {
       /* Errou escrevendo, e o erro não tem nome (gênero, ñ, conjugação). A
          resposta certa sozinha obrigava a comparar de cabeça com o que foi
@@ -1235,10 +1235,10 @@ window.TaioeCardsApp = function (ctx) {
         el['aviso-previa'].classList.remove('oculto');
       }
       mostrarContestar(r);
-      dicaDepoisDaResposta(r);
     }
 
     el['area-feedback'].classList.remove('oculto');
+    posicionarJaConheco(true);
     el['btn-proximo'].focus({ preventScroll: true });
     trazerBotaoParaAVista();
   }
@@ -1490,7 +1490,6 @@ window.TaioeCardsApp = function (ctx) {
     mostrarVeredito(r);
     registrar(r);
     mostrarContestar(r);
-    dicaDepoisDaResposta(r);
     el['btn-proximo'].focus({ preventScroll: true });
     /* Sem rolar (pedido do Gere, 03/10): quem julgou o próprio «quase» está
        olhando para a resposta, e a tela que desce depois do clique tira dela
@@ -1522,7 +1521,6 @@ window.TaioeCardsApp = function (ctx) {
       : diasDeVolta ? t('feedback.voltaEm', { x: rotuloEspera(diasDeVolta) }) : '';
     el.conquista.textContent = texto;
     el.conquista.classList.toggle('oculto', !texto);
-    if (virou) dicaDoCard('dominado', el.conquista, { escada: Motor.DIAS_DOMINADO.map(rotuloEspera).join(' → ') });
   }
 
   /* Grava a resposta e devolve o card para a fila. */
@@ -2634,10 +2632,6 @@ window.TaioeCardsApp = function (ctx) {
       ? t('cards.mostrandoTodos', { n: milhar(CARDS.length) })
       : t('cards.mostrando', { n: milhar(visiveis.length), total: milhar(CARDS.length) });
 
-    /* a primeira vez no filtro das transparentes: o que elas são */
-    if (estado === 'transparente') {
-      abrirDica('transparente', el['lista-cards'], { A: NOME_A, x: aspas(escapar(t('cards.reativar'))) }, { antes: true });
-    }
 
     if (!visiveis.length) {
       el['lista-cards'].innerHTML = '<p class="vazio">' + t('cards.nenhum') + '</p>';
@@ -2947,103 +2941,6 @@ window.TaioeCardsApp = function (ctx) {
     alvo.innerHTML = partes.join('');
   }
 
-  /* ═══════════════ as dicas do momento certo (PLANO.md, 7.5) ═══════════════
-     Cada uma aparece na primeira vez em que a situação acontece, uma vez só,
-     num balão pequeno logo abaixo (ou acima) do que ela explica — nunca por
-     cima das respostas — e no máximo uma por card. Vista é vista ao
-     aparecer, e não ao fechar: o «Entendi» só tira o balão da frente.
-
-     As vistas moram em progresso.dicasVistas (chave → ISO), que viaja nos
-     extras, com uma reserva neste aparelho (localStorage) para o servidor que
-     ainda não guarda o campo. «Rever dicas» grava o gesto de desfazer
-     («-ISO», como o «voltar a contar como conhecida»): a mescla entre
-     aparelhos fica com o gesto mais recente de cada chave. */
-  const DICAS = {
-    arquivar: 'dica.arquivar', quase: 'dica.quase', comentar: 'dica.comentar', frase: 'dica.frase',
-    dominado: 'dica.dominado', transparente: 'dica.transparente', desafio: 'dica.desafio'
-  };
-  const CHAVE_DICAS = 'cards:dicas:' + CHAVE;
-  let dicaNoCard = false;    // o card da vez já mostrou a dele
-  let dicaNaTela = null;     // o balão aberto
-
-  function dicasDoAparelho() {
-    const x = lerLocal(CHAVE_DICAS);
-    return x && typeof x === 'object' ? x : {};
-  }
-
-  function dicaVista(id) {
-    const a = (progresso.dicasVistas || {})[id], b = dicasDoAparelho()[id];
-    const ultimo = !a ? b : !b ? a
-      : (TaioeSincronia.dataDoGesto(b) > TaioeSincronia.dataDoGesto(a) ? b : a);
-    return TaioeSincronia.gestoAtivo(ultimo);
-  }
-
-  function marcarDica(id) {
-    const agora = new Date().toISOString();
-    progresso.dicasVistas = progresso.dicasVistas || {};
-    progresso.dicasVistas[id] = agora;
-    const local = dicasDoAparelho();
-    local[id] = agora;
-    guardarLocal(CHAVE_DICAS, local);
-    salvarProgresso();
-    if (Sinc) Sinc.agendar(3000);
-  }
-
-  /* Abre o balão da dica «id» junto de «ancora»: depois dela, ou antes, com
-     { antes: true }. { seta: true } desenha a ponta apontando para cima, para
-     o botão que a dica explica. «vars» já vêm escapadas. Devolve se abriu. */
-  function abrirDica(id, ancora, vars, opcoes) {
-    if (!DICAS[id] || !ancora || dicaVista(id)) return false;
-    const o = opcoes || {};
-    fecharDica();
-    const caixa = document.createElement('div');
-    caixa.className = 'dica-contexto' + (o.seta ? ' seta' : '');
-    caixa.setAttribute('role', 'note');
-    const texto = document.createElement('p');
-    texto.innerHTML = t(DICAS[id], vars || {});
-    const fechar = document.createElement('button');
-    fechar.className = 'dica-fechar';
-    fechar.textContent = t('dica.entendi');
-    fechar.addEventListener('click', fecharDica);
-    caixa.appendChild(texto);
-    caixa.appendChild(fechar);
-    ancora.insertAdjacentElement(o.antes ? 'beforebegin' : 'afterend', caixa);
-    dicaNaTela = caixa;
-    marcarDica(id);
-    return true;
-  }
-
-  function fecharDica() {
-    if (dicaNaTela && dicaNaTela.parentNode) dicaNaTela.parentNode.removeChild(dicaNaTela);
-    dicaNaTela = null;
-  }
-
-  /* A dica que pertence a um card: uma por card, no máximo. */
-  function dicaDoCard(id, ancora, vars, opcoes) {
-    if (dicaNoCard) return;
-    if (abrirDica(id, ancora, vars, opcoes)) dicaNoCard = true;
-  }
-
-  /* Depois da resposta: o comentário, no primeiro erro ou da décima resposta
-     em diante — como pedido de ajuda para melhorar os cards. */
-  function dicaDepoisDaResposta(r) {
-    if (r.acertou && progresso.totais.respostas < 10) return;
-    dicaDoCard('comentar', el['btn-comentar-card'].parentElement,
-      { x: aspas(escapar(el['btn-comentar-card'].textContent)) }, { seta: true });
-  }
-
-  function reverDicas() {
-    const desfeito = '-' + new Date().toISOString();
-    progresso.dicasVistas = progresso.dicasVistas || {};
-    Object.keys(progresso.dicasVistas).concat(Object.keys(dicasDoAparelho())).forEach(k => {
-      progresso.dicasVistas[k] = desfeito;
-    });
-    esquecerLocal(CHAVE_DICAS);
-    salvarProgresso();
-    if (Sinc) Sinc.agendar(3000);
-    statusSync(t('config.dicasZeradas'), 'ok');
-  }
-
   /* ═══════════════ o card desafio (PLANO.md, 7.4) ═══════════════
      Quem escolhe é o Motor.escolherDesafio, chamado a cada vaga de card novo
      (proximoNovo); o app só guarda os contadores e os entrega:
@@ -3123,8 +3020,8 @@ window.TaioeCardsApp = function (ctx) {
     };
   }
 
-  /* ═══════════════ o começo: avaliação, resultado e «como funciona» ═══════════════
-     PLANO.md, 7.3 a 7.5. Na primeira entrada num curso — sem nivelamento e
+  /* ═══════════════ o começo: avaliação e resultado ═══════════════
+     PLANO.md, 7.3 e 7.4. Na primeira entrada num curso — sem nivelamento e
      sem nenhum card respondido — o app abre aqui, e não na página inicial:
 
        entrada       «Para começar, vamos avaliar o seu nível atual.» e «Você
@@ -3133,8 +3030,10 @@ window.TaioeCardsApp = function (ctx) {
                      barra e o «Pular»; quando o motor pede a conferência, a
                      mesma palavra vira múltipla escolha (Motor.alternativas
                      na ida, a língua de quem estuda);
-       resultado     «Você já conhece cerca de N palavras deste baralho»;
-       comoFunciona  escolher → escrever → o card se inverte; sem relógio.
+       resultado     «Você já conhece cerca de N palavras deste baralho».
+
+     A tela «como funciona» e os balões de dica saíram em 19/10/2026: o Gere
+     viu que as pessoas pulavam tudo, e o app tem de se explicar sozinho.
 
      O teste (Motor.nivelamento) é JSON puro e mora em localStorage
      (cards:comeco:<conta>:<curso>) a cada resposta: recarregar a página no
@@ -3176,7 +3075,7 @@ window.TaioeCardsApp = function (ctx) {
   /* Na abertura do app: o que ficou pela metade, ou a primeira entrada. */
   function retomarComeco() {
     const salvo = lerLocal(CHAVE_COMECO);
-    const fases = ['teste', 'resultado', 'comoFunciona'];
+    const fases = ['teste', 'resultado'];
     if (salvo && fases.indexOf(salvo.fase) >= 0 &&
         (salvo.fase !== 'teste' || (salvo.teste && Array.isArray(salvo.teste.cartas))) &&
         !(salvo.automatico && salvo.fase === 'teste' && !precisaDoComeco(progresso))) {
@@ -3226,7 +3125,6 @@ window.TaioeCardsApp = function (ctx) {
     caixa.textContent = '';
     if (comeco.fase === 'teste') desenharTeste(caixa);
     else if (comeco.fase === 'resultado') desenharResultado(caixa);
-    else if (comeco.fase === 'comoFunciona') desenharComoFunciona(caixa);
     else desenharEntrada(caixa);
     if (comeco) mostrar('tela-comeco');
   }
@@ -3484,8 +3382,10 @@ window.TaioeCardsApp = function (ctx) {
     salvarProgresso();
     atualizarPlacar();
     if (Sinc) Sinc.agendar(3000);
-    comeco.fase = Motor.palavrasConhecidas(CARDS) ? 'resultado' : (comeco.refazer ? null : 'comoFunciona');
-    if (!comeco.fase) { fimDoComeco(false); return; }
+    /* sem tela de «como funciona» (tirada a pedido do Gere, 19/10/2026):
+       quem não ganhou palavra nenhuma vai direto ao primeiro card */
+    comeco.fase = Motor.palavrasConhecidas(CARDS) ? 'resultado' : null;
+    if (!comeco.fase) { fimDoComeco(!comeco.refazer); return; }
     guardarComeco();
     desenharComeco();
   }
@@ -3505,29 +3405,11 @@ window.TaioeCardsApp = function (ctx) {
     if (presumidas > 0) {
       caixa.appendChild(noHtml('p', 'comeco-nota', tn('comeco.presumidas', presumidas, { n: milhar(presumidas) })));
     }
-    const seguir = no('button', null, t('comeco.continuar'));
+    /* quem refez a avaliação volta ao início; quem estreia vai ao primeiro card */
+    const seguir = no('button', null, t(comeco.refazer ? 'comeco.continuar' : 'comeco.estudar'));
     seguir.className = 'primario grande';
-    seguir.addEventListener('click', () => {
-      /* quem refez a avaliação já sabe como o jogo funciona */
-      if (comeco.refazer) { fimDoComeco(false); return; }
-      comeco.fase = 'comoFunciona';
-      guardarComeco();
-      desenharComeco();
-    });
+    seguir.addEventListener('click', () => fimDoComeco(!comeco.refazer));
     caixa.appendChild(seguir);
-  }
-
-  function desenharComoFunciona(caixa) {
-    caixa.appendChild(no('h1', 'comeco-titulo', t('comeco.comoFunciona')));
-    const passos = no('ol', 'passos-comeco');
-    [t('comeco.passo1', { L: escapar(NOME_L) }), t('comeco.passo2'),
-     t('comeco.passo3', { A: escapar(NOME_A), L: escapar(NOME_L) }), t('comeco.passo4')]
-      .forEach(html => passos.appendChild(noHtml('li', null, html)));
-    caixa.appendChild(passos);
-    const estudar = no('button', null, t('comeco.estudar'));
-    estudar.className = 'primario grande';
-    estudar.addEventListener('click', () => fimDoComeco(true));
-    caixa.appendChild(estudar);
   }
 
   el['btn-inicio'].addEventListener('click', irParaInicio);
@@ -3645,16 +3527,15 @@ window.TaioeCardsApp = function (ctx) {
 
   el['btn-exportar'].addEventListener('click', exportar);
 
-  /* «Refazer avaliação» e «Rever dicas» (PLANO.md, 7.3 item 9, e 7.5) */
+  /* «Refazer avaliação» (PLANO.md, 7.3 item 9) */
   el['btn-refazer'].addEventListener('click', () => {
     if (!confirm(t('config.refazerConfirma'))) return;
     abrirComeco({ refazer: true });
   });
-  el['btn-rever-dicas'].addEventListener('click', reverDicas);
 
   /* «Recomeçar este curso» (PLANO.md, 7.9): o servidor apaga o progresso do
      curso (cards.recomecar_curso), e este aparelho apaga a cópia dele, o
-     teste guardado, as dicas e os desafios anotados. Os outros aparelhos
+     teste guardado e os desafios anotados. Os outros aparelhos
      percebem na próxima carga (recomecado_em, em sincronia.js).
      O aviso diz quantos cards já foram vistos e só libera o botão quando a
      pessoa digita «recomeçar francês» (pedido do Gere, 17/10/2026), sem
@@ -3714,7 +3595,7 @@ window.TaioeCardsApp = function (ctx) {
     apagando = true;
     clearTimeout(esperaSalvar);
     await Sinc.apagarLocal({ recomecadoEm: r.data });
-    [CHAVE_COMECO, CHAVE_DICAS, CHAVE_DESAFIOS].forEach(esquecerLocal);
+    [CHAVE_COMECO, CHAVE_DESAFIOS].forEach(esquecerLocal);
     location.reload();
   });
 
@@ -3835,7 +3716,7 @@ window.TaioeCardsApp = function (ctx) {
     recomecado: () => {
       apagando = true;
       clearTimeout(esperaSalvar);
-      [CHAVE_COMECO, CHAVE_DICAS, CHAVE_DESAFIOS].forEach(esquecerLocal);
+      [CHAVE_COMECO, CHAVE_DESAFIOS].forEach(esquecerLocal);
       location.reload();
     },
     aplicarExtras: x => {
