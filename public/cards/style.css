@@ -496,8 +496,8 @@ label input:focus{outline:0;border-color:var(--acento)}
 .link-arquivar{background:none;border:0;padding:4px 0;font-size:12.5px;color:var(--texto-2);
   text-decoration:underline;text-decoration-color:var(--borda);text-underline-offset:3px;cursor:pointer}
 .link-arquivar:hover{color:var(--texto)}
-/* «Já conheço essa palavra»: só na estreia do card, em vermelho, logo acima
-   dos botões da vez — é a hora em que a pessoa sabe se a palavra já é dela. */
+/* «Já conheço essa palavra»: só na estreia do card, depois de uma resposta
+   certa de primeira, em vermelho, logo acima do «Próximo». */
 .linha-ja-conheco{margin:14px 0 0}
 #area-feedback .linha-ja-conheco{margin:0 0 14px}
 .ja-conheco{display:block;width:100%;padding:11px 14px;border-radius:12px;

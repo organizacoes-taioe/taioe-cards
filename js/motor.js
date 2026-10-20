@@ -1298,8 +1298,9 @@ window.Motor = (function () {
      furam a fila quando a data chega, com espaço entre eles (ver
      vezDoDominado).
 
-     Entre as outras três, a escolha persegue um alvo: **de ALVO_MIN a ALVO_MAX cards em cada
-     direção**. Quem está abaixo do alvo precisa de entrada, quem está acima
+     Entre as outras três, a escolha persegue um alvo em cada direção: **de
+     ALVO_IDA_MIN a ALVO_IDA_MAX cards em es→pt e de ALVO_VOLTA_MIN a
+     ALVO_VOLTA_MAX em pt→es**. Quem está abaixo do alvo precisa de entrada, quem está acima
      precisa de saída — e cada fila mexe no que mexe:
 
        tirar um inédito       +1 em es→pt        (a única torneira desse lado)
@@ -1340,7 +1341,7 @@ window.Motor = (function () {
 
      — O ALVO ACOMPANHA O ACERTO. Quem acerta muito aguenta mais cards em
        circulação; quem está errando precisa de menos, voltando mais cedo. O
-       alvo vai de ALVO_MIN, com 65% de acerto ou menos, a ALVO_MAX, com 85%
+       alvo vai do mínimo, com 65% de acerto ou menos, ao máximo, com 85%
        ou mais, em linha reta entre os dois. O acerto é o das últimas
        trezentas respostas, e não o geral, que depois de milhares de
        respostas já não se mexe (ver alvoDaFila).
@@ -1353,9 +1354,15 @@ window.Motor = (function () {
        novo, e o teto não vale (pedido do Gere, 06/10/2026: o intervalo
        mínimo de dez respostas, sozinho, ainda deixava o começo repetitivo).
      — QUEM ESPEROU DEMAIS FURA A FILA, qualquer que seja o peso da fila dele
-       (ver atrasadoQueFura). */
-  const ALVO_MIN = 40;       // cards em cada direção, para quem acerta pouco
-  const ALVO_MAX = 60;       // e para quem acerta muito
+       (ver atrasadoQueFura).
+
+     Até 20/10/2026 as duas direções tinham o mesmo alvo, de 40 a 60. Nesse
+     dia o Gere pediu 30 a 50 na primeira fase (es→pt, a resposta na língua
+     de quem estuda); a volta ficou em 40 a 60. */
+  const ALVO_IDA_MIN = 30;     // cards em es→pt, para quem acerta pouco
+  const ALVO_IDA_MAX = 50;     // e para quem acerta muito
+  const ALVO_VOLTA_MIN = 40;   // o mesmo em pt→es
+  const ALVO_VOLTA_MAX = 60;
   const ACERTO_DO_MIN = 0.65, ACERTO_DO_MAX = 0.85;
   const JANELA_DO_ACERTO = 300;   // respostas recentes que contam
   const NOVO_A_CADA_NO_MAXIMO = 20;   // piso: um card novo a cada vinte respostas, pelo menos
@@ -1403,12 +1410,16 @@ window.Motor = (function () {
 
   /* Quantos cards se quer em cada direção, para este acerto. Com menos de
      cinquenta respostas a taxa ainda não diz nada, e vale o alvo menor: quem
-     está começando não precisa de sessenta cards abertos. */
+     está começando não precisa de sessenta cards abertos. Devolve
+     { esPt, ptEs }. */
   function alvoDaFila(diario) {
     const a = acertoRecente(diario);
-    if (a.n < 50) return ALVO_MIN;
-    const t = Math.min(1, Math.max(0, (a.taxa - ACERTO_DO_MIN) / (ACERTO_DO_MAX - ACERTO_DO_MIN)));
-    return Math.round(ALVO_MIN + t * (ALVO_MAX - ALVO_MIN));
+    const t = a.n < 50 ? 0
+      : Math.min(1, Math.max(0, (a.taxa - ACERTO_DO_MIN) / (ACERTO_DO_MAX - ACERTO_DO_MIN)));
+    return {
+      esPt: Math.round(ALVO_IDA_MIN + t * (ALVO_IDA_MAX - ALVO_IDA_MIN)),
+      ptEs: Math.round(ALVO_VOLTA_MIN + t * (ALVO_VOLTA_MAX - ALVO_VOLTA_MIN))
+    };
   }
 
   /* O piso e o teto do card novo, pela conta de respostas desde a última
@@ -1539,15 +1550,16 @@ window.Motor = (function () {
 
   /* O peso de cada fila no sorteio. «tem» diz quais filas têm card para dar;
      fila vazia sai da conta em vez de roubar chance das outras. «alvo» é o
-     de alvoDaFila; sem ele, vale o menor. */
+     de alvoDaFila; sem ele, vale o menor de cada direção. */
   function pesosDasFilas(estados, tem, alvo) {
     const c = contarDirecoes(estados);
-    const A = alvo || ALVO_MIN;
+    const ida = (alvo && alvo.esPt) || ALVO_IDA_MIN;
+    const volta = (alvo && alvo.ptEs) || ALVO_VOLTA_MIN;
     const corta = v => Math.min(TETO_PESO, Math.max(0, GANHO * v));
     const p = {
-      ineditos: PISO_INEDITO + corta(A - c.esPt),
-      esPt:     PISO_REVISAO + corta(A - c.ptEs) + corta(c.esPt - A),
-      ptEs:     PISO_REVISAO + corta(c.ptEs - A)
+      ineditos: PISO_INEDITO + corta(ida - c.esPt),
+      esPt:     PISO_REVISAO + corta(volta - c.ptEs) + corta(c.esPt - ida),
+      ptEs:     PISO_REVISAO + corta(c.ptEs - volta)
     };
     if (tem) for (const k in p) if (!tem[k]) p[k] = 0;
     return p;
@@ -3655,7 +3667,7 @@ window.Motor = (function () {
     contarDirecoes,
     filaDe, pesosDasFilas, chancesDasFilas, sortearFila,
     urgencia, cumpriu, escolherNaFila, podeVoltar, INTERVALO_MINIMO, vezDoDominado, ESPACO_DOMINADO,
-    ALVO_MIN, ALVO_MAX, alvoDaFila, acertoRecente, vezDoNovo, CARDS_DO_COMECO, NOVO_A_CADA_NO_COMECO, atrasadoQueFura,
+    ALVO_IDA_MIN, ALVO_IDA_MAX, ALVO_VOLTA_MIN, ALVO_VOLTA_MAX, alvoDaFila, acertoRecente, vezDoNovo, CARDS_DO_COMECO, NOVO_A_CADA_NO_COMECO, atrasadoQueFura,
     DOMINADOS_PARA_TEXTOS, dominadosNoTotal, textosLiberados,
     atualizarTextosEmVista, palavrasDosTextos, andamentoDoTexto, versosDoTexto, revelaPorVerso, versosLiberados,
     liberado, liberadaEm, venceuEm, requeridas, arquivado, sabidaEm,
