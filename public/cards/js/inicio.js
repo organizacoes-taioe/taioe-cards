@@ -243,6 +243,12 @@
     if (!TaioeSessao.temSessaoSalva()) { TaioeSessao.irParaEntrar(); return; }
     var sb = TaioeSessao.cliente();
     var lida = await sb.auth.getSession();
+    // online, um erro aqui costuma ser passageiro (a trava da sessão presa noutra aba, a rede
+    // que oscilou): tenta de novo uma vez antes de cair na sessão guardada
+    if (lida.error && navigator.onLine !== false) {
+      await new Promise(function (ok) { setTimeout(ok, 1500); });
+      lida = await sb.auth.getSession();
+    }
     var sessao = lida.data && lida.data.session;
     // offline com o token vencido o supabase-js não renova, mas a sessão guardada continua
     // valendo para estudar: as respostas sobem quando a conexão voltar
@@ -267,7 +273,26 @@
       perfil = lerLocal(chavePerfil);
     }
     if (!perfil) {
-      porta('porta.semConexao', true);
+      if (navigator.onLine === false) { porta('porta.semConexao', true); return; }
+      // online e sem perfil: a conta não abriu por outro motivo. Diz qual e oferece entrar de novo
+      console.error('perfil não abriu', lida.error, r.error);
+      var falha = lida.error || r.error || {};
+      porta('porta.erroConta', true, { detalhe: [r.status, falha.code, falha.message].filter(Boolean).join(' · ') });
+      $('porta-entrar').classList.remove('oculto');
+      $('porta-entrar').addEventListener('click', function () {
+        // sem resposta do servidor o signOut fica tentando renovar a sessão; três segundos
+        // bastam, e aí apaga a sessão deste navegador como o sair() apagaria
+        var espera = new Promise(function (ok) { setTimeout(ok, 3000); });
+        Promise.race([TaioeSessao.sair(false), espera]).then(function () {
+          try {
+            for (var i = localStorage.length - 1; i >= 0; i--) {
+              var k = localStorage.key(i);
+              if (k === 'taioe-auth' || k.indexOf('taioe-auth-') === 0) localStorage.removeItem(k);
+            }
+          } catch (e) {}
+          TaioeSessao.irParaEntrar();
+        });
+      });
       return;
     }
     conta = { sb: sb, uid: uid, perfil: perfil };
