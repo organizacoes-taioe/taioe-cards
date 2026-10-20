@@ -597,27 +597,31 @@ label input:focus{outline:0;border-color:var(--acento)}
 }
 
 /* ── os textos ──
-   O texto inteiro, original e tradução lado a lado: a recompensa (manual,
-   seção 17.4). Cada estrofe ou parágrafo é uma tabela; no celular as duas
-   colunas viram uma, com a tradução sob cada linha. */
+   O poema da Biblioteca na língua original, sem tradução (PLANO.md, seção 9):
+   cada palavra é um botão que abre a nota logo abaixo do verso. */
 .carta-texto{margin:8px 0 16px}
 .texto-titulo{margin:0 0 2px;font-size:18px}
 .texto-autor{margin:0 0 12px;color:var(--texto-2);font-size:14px}
-.recompensa{font-weight:600;margin:0 0 12px}
-.tabela-texto{width:100%;border-collapse:collapse;font-size:15px;margin-bottom:14px}
-.tabela-texto td{padding:3px 8px;vertical-align:top}
-.tabela-texto .verso-or{width:50%}
-.verso-or{color:var(--texto);font-style:italic}
-.verso-pt{color:var(--texto-2)}
-.tabela-texto.prosa td{padding:6px 8px;line-height:1.5}
-.tabela-texto.prosa .verso-or{font-style:normal}
+.recompensa{font-weight:600;margin:0 0 12px;line-height:1.45}
+.estrofe{margin:0 0 14px}
+.verso{margin:0;font-size:17px;line-height:1.55;font-style:italic;color:var(--texto-2)}
+.verso-novo{color:var(--texto)}
+.palavra-texto{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;
+  border-bottom:1px dotted var(--borda)}
+.palavra-texto:hover,.palavra-texto.ativa{color:var(--acento);border-bottom-color:var(--acento)}
+.nota-palavra{margin:4px 0 10px;padding:8px 12px;border-left:3px solid var(--acento-borda);
+  background:var(--acento-fraco);font-size:14.5px;line-height:1.45;font-style:normal}
+.nota-palavra p{margin:0 0 4px}
+.nota-palavra .classe{color:var(--texto-2);font-size:13px}
+.fonte-nota{font-size:12px;color:var(--texto-2)}
 .contador-versos{font-size:13px;color:var(--texto-2);letter-spacing:.04em;margin:-6px 0 12px;font-variant-numeric:tabular-nums}
+.botoes-texto{display:flex;flex-direction:column;gap:10px;margin:8px 0 16px}
+.item-texto{padding:10px 0;border-bottom:1px solid var(--borda)}
+.item-texto label{cursor:pointer}
+.andamento-texto{margin:4px 0 0 26px;font-size:13.5px;color:var(--texto-2)}
+.item-texto .texto-lido{margin-left:26px}
 .texto-lido{margin:6px 0}
 .texto-lido summary{cursor:pointer}
-@media (max-width:600px){
-  .tabela-texto td{display:block;width:auto;padding:1px 4px}
-  .tabela-texto .verso-pt{padding-bottom:8px}
-}
 
 
 /* ── Taioé: a porta e a escolha do curso ── */

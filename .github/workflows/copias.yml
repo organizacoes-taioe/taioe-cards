@@ -32,3 +32,5 @@ jobs:
           test -z "$(git status --porcelain)"
       - name: "O começo do app: transparência, presumidos, nivelamento"
         run: node fonte/testar-comeco.js
+      - name: "Os textos da Biblioteca: card de leitura, escolha, versos"
+        run: node fonte/testar-textos.js
