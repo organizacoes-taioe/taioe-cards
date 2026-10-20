@@ -102,9 +102,10 @@ fila quando a data chega — com espaço entre eles (ver adiante).
 
 #### De qual fila vem o próximo card
 
-Entre as outras três, a escolha persegue um alvo: **de 40 a 60 cards em cada
-direção**, conforme o acerto recente (ver adiante; a tabela abaixo é a do
-alvo 40). Quem está abaixo do alvo precisa de entrada, quem está acima precisa
+Entre as outras três, a escolha persegue um alvo em cada direção: **de 30 a
+50 cards em `es → pt` e de 40 a 60 em `pt → es`** (desde 20/10/2026; antes,
+40 a 60 nas duas), conforme o acerto recente (ver adiante; a tabela abaixo é
+a de um alvo só, 40). Quem está abaixo do alvo precisa de entrada, quem está acima precisa
 de saída — e cada fila mexe no que mexe:
 
 | Tirar um card de | O que isso faz com as contagens |

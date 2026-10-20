@@ -809,13 +809,14 @@ window.TaioeCardsApp = function (ctx) {
     proximoCard();
   }
 
-  /* Onde o «já conheço» fica: logo acima dos botões da vez, para não passar
-     despercebido — antes da resposta, acima do «Responder» (ou do «Não sei»,
-     na múltipla escolha); depois dela, acima do «Próximo». */
+  /* Onde o «já conheço» fica: logo acima do «Próximo», para não passar
+     despercebido. Só aparece depois da resposta, e só se ela saiu certa de
+     primeira — sem «deu quase» e sem a segunda chance dos avisos (pedido do
+     Gere, 20/10/2026: antes ele ficava à mostra desde a pergunta). */
   let jaConhecoNoCard = false;
   function posicionarJaConheco(respondido) {
     const linha = el['btn-arquivar'].parentElement;
-    linha.classList.toggle('oculto', !jaConhecoNoCard);
+    linha.classList.toggle('oculto', !(jaConhecoNoCard && respondido));
     const antes = respondido ? el['btn-proximo']
       : modoAtual === 'multipla' ? el['area-nao-sei-multipla']
       : el['btn-responder'].parentElement;
@@ -1238,6 +1239,7 @@ window.TaioeCardsApp = function (ctx) {
     }
 
     el['area-feedback'].classList.remove('oculto');
+    if (!r.acertou || r.quase || chanceUsada) jaConhecoNoCard = false;
     posicionarJaConheco(true);
     el['btn-proximo'].focus({ preventScroll: true });
     trazerBotaoParaAVista();
@@ -1791,7 +1793,7 @@ window.TaioeCardsApp = function (ctx) {
       /* É o alvo que a escolha de fila persegue — vê-lo explica por que o
          card novo às vezes vem depressa e às vezes rareia. */
       metrica(dir.esPt + ' · ' + dir.ptEs,
-              t('painel.direcoes', { ida: ROTULO_IDA, volta: ROTULO_VOLTA, alvo: alvo, taxa: Math.round(100 * recente.taxa) })) +
+              t('painel.direcoes', { ida: ROTULO_IDA, volta: ROTULO_VOLTA, alvoIda: alvo.esPt, alvoVolta: alvo.ptEs, taxa: Math.round(100 * recente.taxa) })) +
       metrica(dominados, t('painel.dominados')) +
       /* os presumidos do nivelamento ainda sem resposta (PLANO.md, 7.2) */
       (aConfirmar.n ? metrica(milhar(aConfirmar.n), t('painel.aConfirmar')) : '') +
