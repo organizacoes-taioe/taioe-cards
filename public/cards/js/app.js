@@ -1836,9 +1836,6 @@ window.TaioeCardsApp = function (ctx) {
     html += tabelaMemoria();
     html += calendarioEstudo();
     html += graficoRespostasDia();
-    html += graficoNovosDia();
-    html += mapaHorario();
-    html += graficoAteDominar();
 
     esconderDica();
     el['painel-conteudo'].innerHTML = html;
@@ -2121,9 +2118,11 @@ window.TaioeCardsApp = function (ctx) {
       /* Degrau vazio fica na tabela, esmaecido: a escada é a mesma para todo
          mundo, e ver o degrau vago diz que ninguém chegou lá ainda. */
       const vazio = d.n ? '' : ' class="vago"';
-      /* Havendo um vencido no degrau, o próximo é ele, e volta agora — a data
-         do seguinte, ainda de molho, não diz nada. */
-      const quando = d.vencidos ? t('volta.agora') : d.proxima ? quandoVolta(d.proxima) : '—';
+      /* Havendo vencidos no degrau, o próximo é um deles, e volta agora — a
+         data do seguinte, ainda de molho, não diz nada. O número diz quantos
+         já esperam a vez na fila. */
+      const quando = d.vencidos ? tn('painel.agoraFila', d.vencidos, { n: milhar(d.vencidos) })
+        : d.proxima ? quandoVolta(d.proxima) : '—';
       return '<tr' + vazio + '><td>' + rotuloEspera(d.dias) + '</td>' +
         '<td class="num">' + (d.n || '—') + '</td>' +
         '<td class="num">' + quando + '</td></tr>';
@@ -2190,14 +2189,12 @@ window.TaioeCardsApp = function (ctx) {
 
   /* ═══════════════ os gráficos do diário ═══════════════
      Tudo daqui para baixo sai de progresso.diario (um resumo por dia), de
-     progresso.retencao e do «ateDominar» de cada card. Os desenhos são SVG
+     progresso.retencao e da ficha de cada card. Os desenhos são SVG
      de largura fixa que a tela encolhe; tocar num quadrado, numa barra ou
      num ponto mostra o número dele na dica. */
 
   const MESES = t('datas.meses').split(',');
   const SEMANA = t('datas.semana').split(',');
-  const SEMANA_LONGA = t('datas.semanaLonga').split(',');
-  const hora = h => t('datas.hora', { h: h });
   /* «seg, 06/10»: o dia da semana e o dia, na ordem e no formato da língua */
   const diaDaSemana = d => t('datas.diaSemana', { semana: SEMANA[meioDia(d).getDay()], dia: diaMes(d) });
   const RAMPA = ['var(--degrau-0)', 'var(--degrau-1)', 'var(--degrau-2)',
@@ -2309,33 +2306,6 @@ window.TaioeCardsApp = function (ctx) {
       barrasPorDia(todos.slice(-60), 'var(--degrau-2)', n => tn('painel.respostas', n, { n: milhar(n) }), t('painel.respostasDia'));
   }
 
-  /* ── cards novos por dia ──
-     O mesmo desenho, contando estreias: em quantos cards você pôs os olhos
-     pela primeira vez em cada dia. Os dias são os do diário, para as duas
-     figuras ficarem alinhadas uma embaixo da outra. */
-  function graficoNovosDia() {
-    const dias = diasDoDiario();
-    if (dias.length < 2) return '';
-    const porDia = {};
-    Object.keys(progresso.cards).forEach(id => {
-      const d = progresso.cards[id].estreia;
-      if (d) porDia[d] = (porDia[d] || 0) + 1;
-    });
-    const todos = dias.map(x => ({ d: x.d, n: porDia[x.d] || 0 }));
-    if (!todos.some(x => x.n)) return '';
-    const antes = todos.slice(0, -1).slice(-7);
-    const media = antes.reduce((a, x) => a + x.n, 0) / antes.length;
-    const recorde = todos.reduce((a, x) => x.n > a.n ? x : a);
-    const hoje = todos[todos.length - 1].n;
-    return '<h3>' + t('painel.novosDia') + '</h3>' +
-      '<p class="legenda">' + t('painel.novosDiaLegenda', {
-        periodo: tn('painel.dias', antes.length),
-        media: media.toLocaleString(LOCAL, { minimumFractionDigits: 1, maximumFractionDigits: 1 }),
-        hoje: hoje ? t('painel.novosHoje', { n: hoje }) : '',
-        recorde: milhar(recorde.n), dia: diaMes(recorde.d) }) + '</p>' +
-      barrasPorDia(todos.slice(-60), 'var(--serie-espt)', n => tn('painel.novos', n, { n: milhar(n) }), t('painel.novosDia'));
-  }
-
   function barrasPorDia(dias, cor, rotulo, titulo) {
     const W = LARGURA, L = 36, R = 6, T = 10, B = 196;
     const maior = Math.max(1, ...dias.map(x => x.n));
@@ -2360,98 +2330,6 @@ window.TaioeCardsApp = function (ctx) {
       }
     });
     return figura(W, B + 30, m, titulo);
-  }
-
-  /* ── quando você estuda ──
-     Dia da semana contra hora do dia, somando tudo o que o diário tem. Só
-     entram as horas que já tiveram alguma resposta. */
-  function mapaHorario() {
-    const mapa = Array.from({ length: 7 }, () => new Array(24).fill(0));
-    const diario = progresso.diario || {};
-    Object.keys(diario).forEach(d => {
-      const g = diario[d];
-      if (!g || !Array.isArray(g.h)) return;
-      const dia = meioDia(d).getDay();
-      g.h.forEach((n, h) => { mapa[dia][h] += n || 0; });
-    });
-    const horas = [];
-    for (let h = 0; h < 24; h++) if (mapa.some(l => l[h])) horas.push(h);
-    if (!horas.length) return '';
-    const h0 = horas[0], h1 = horas[horas.length - 1];
-    const cols = h1 - h0 + 1, L = 36, T = 6, vao = 3;
-    /* O quadrado tem sempre o tamanho que terá com as 24 horas, e a figura
-       ocupa só a fração da largura que lhe cabe: com poucas horas, esticá-la
-       até a borda dava quadrados e letras enormes, com cara de erro. */
-    const cel = Math.floor((LARGURA - L) / 24) - vao;
-    const alta = 24;                            // altura da linha: os nomes dos dias respiram
-    const maior = Math.max(...mapa.map(l => Math.max(...l)));
-    const ordem = [1, 2, 3, 4, 5, 6, 0];
-    let m = '';
-    ordem.forEach((d, lin) => {
-      m += '<text x="' + (L - 6) + '" y="' + (T + lin * (alta + vao) + alta / 2 + 5) + '" text-anchor="end">' + SEMANA[d] + '</text>';
-      for (let h = h0; h <= h1; h++) {
-        const n = mapa[d][h];
-        const tom = n ? RAMPA[Math.min(5, Math.floor(6 * n / (maior + 1)))] : 'var(--fundo-3)';
-        m += '<rect' + comDica(SEMANA[d] + ', ' + hora(h) + ' — ' + (n ? tn('painel.respostas', n, { n: milhar(n) }) : t('painel.nada'))) +
-          ' x="' + (L + (h - h0) * (cel + vao)) + '" y="' + (T + lin * (alta + vao)) +
-          '" width="' + cel + '" height="' + alta + '" rx="4" fill="' + tom + '"/>';
-      }
-    });
-    const cadaHora = cols > 12 ? 3 : 2;
-    for (let h = h0; h <= h1; h++) {
-      if ((h - h0) % cadaHora) continue;
-      m += '<text x="' + (L + (h - h0) * (cel + vao) + cel / 2) + '" y="' + (T + 7 * (alta + vao) + 16) +
-        '" text-anchor="middle">' + hora(h) + '</text>';
-    }
-    const porHora = new Array(24).fill(0), porDia = mapa.map(l => l.reduce((a, b) => a + b, 0));
-    mapa.forEach(l => l.forEach((n, h) => { porHora[h] += n; }));
-    const pico = porHora.indexOf(Math.max(...porHora));
-    const diaPico = porDia.indexOf(Math.max(...porDia));
-    const W = L + cols * (cel + vao), H = T + 7 * (alta + vao) + 22;
-    return '<h3>' + t('painel.horario') + '</h3>' +
-      '<p class="legenda">' + t('painel.horarioLegenda', { h: hora(pico), dia: SEMANA_LONGA[diaPico] }) + '</p>' +
-      figura(W, H, m, t('painel.horarioAria'), ' data-largura="' + (100 * W / LARGURA).toFixed(1) + '"');
-  }
-
-  /* ── quantas respostas até dominar ──
-     Conta as aparições do card nas duas direções até o primeiro domínio. O
-     fim da escala junta tudo o que passou de quatorze. */
-  function graficoAteDominar() {
-    const TETO = 14;
-    const valores = Object.keys(progresso.cards)
-      .map(id => progresso.cards[id].ateDominar).filter(n => n > 0);
-    if (valores.length < 5) return '';
-    const hist = {};
-    valores.forEach(n => { const k = Math.min(n, TETO); hist[k] = (hist[k] || 0) + 1; });
-    const ks = [];
-    for (let k = Math.min(...valores); k <= Math.min(TETO, Math.max(...valores)); k++) ks.push(k);
-    const ordenados = valores.slice().sort((a, b) => a - b);
-    const mediana = Math.min(TETO, ordenados[Math.floor((ordenados.length - 1) / 2)]);
-    const ate5 = valores.filter(n => n <= 5).length;
-
-    const W = LARGURA, L = 36, R = 6, T = 22, B = 186;
-    const maior = Math.max(...ks.map(k => hist[k] || 0));
-    const passo = passoRedondo(maior);
-    const topo = Math.ceil(maior / passo) * passo;
-    const y = v => B - (v / topo) * (B - T);
-    const coluna = (W - L - R) / ks.length, larg = coluna * 0.74;
-    let m = '';
-    for (let v = 0; v <= topo; v += passo) {
-      m += linhaDeGrade(L, W - R, y(v)) +
-        '<text x="' + (L - 6) + '" y="' + (y(v) + 4).toFixed(1) + '" text-anchor="end">' + v + '</text>';
-    }
-    ks.forEach((k, i) => {
-      const bx = L + i * coluna + (coluna - larg) / 2, n = hist[k] || 0;
-      const rotulo = k === TETO ? TETO + '+' : String(k);
-      if (n) {
-        m += '<path' + comDica(t('painel.ateDominarDica', { k: k === TETO ? t('painel.ouMais', { n: TETO }) : k, cards: tn('painel.cardsN', n) })) +
-          ' d="' + barra(bx, y(n), larg, B - y(n), 4) + '" fill="' + (k === mediana ? 'var(--degrau-4)' : 'var(--degrau-1)') + '"/>';
-      }
-      m += '<text x="' + (bx + larg / 2).toFixed(1) + '" y="' + (B + 22) + '" text-anchor="middle">' + rotulo + '</text>';
-    });
-    return '<h3>' + t('painel.ateDominar') + '</h3>' +
-      '<p class="legenda">' + t('painel.ateDominarLegenda', { n: milhar(valores.length), m: mediana, p: pctDe(ate5, valores.length) }) + '</p>' +
-      figura(W, B + 30, m, t('painel.ateDominarAria'));
   }
 
   /* ── a memória depois da espera ──
@@ -2771,6 +2649,31 @@ window.TaioeCardsApp = function (ctx) {
   el.entrada.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.keyCode === 13) { e.preventDefault(); responderEscrita(false); }
   });
+
+  /* Enquanto o card espera a resposta escrita, a tela não tem outra coisa a
+     fazer: o que se digitar vai para a caixa (pedido do Gere, 20/10). Clicar
+     fora devolve o foco a ela, e a tecla apertada com o foco num botão também
+     cai lá. Enter e Tab seguem com o botão, para quem navega pelo teclado. */
+  function esperandoEscrita() {
+    return modoAtual === 'escrita' && !!cardAtual && !respostaPendente && !el.entrada.disabled &&
+      !el['tela-card'].classList.contains('oculto') && el['comentario-fundo'].classList.contains('oculto');
+  }
+  function ehCampo(n) {
+    return !!n && (n.tagName === 'INPUT' || n.tagName === 'TEXTAREA' || n.tagName === 'SELECT' || n.isContentEditable);
+  }
+  function devolverFoco() {
+    if (!esperandoEscrita()) return;
+    const a = document.activeElement;
+    if (!a || a === document.body || a === document.documentElement) el.entrada.focus({ preventScroll: true });
+  }
+  /* o blur não dispara quando a janela está sem foco; o toque cobre esse caso */
+  el.entrada.addEventListener('blur', () => setTimeout(devolverFoco, 0));
+  document.addEventListener('pointerup', () => setTimeout(devolverFoco, 0));
+  window.addEventListener('focus', () => setTimeout(devolverFoco, 0));
+  document.addEventListener('keydown', e => {
+    if (e.ctrlKey || e.metaKey || e.altKey || !esperandoEscrita() || ehCampo(document.activeElement)) return;
+    if (e.key.length === 1 || e.key === 'Backspace' || e.key === 'Dead') el.entrada.focus({ preventScroll: true });
+  }, true);
 
   ligarDicas();
 
