@@ -1,1197 +1,1847 @@
 {
- "versao": 2,
+ "versao": 3,
  "idioma": "en",
- "total": 7,
+ "total": 2,
  "textos": [
   {
-   "id": "txt-en-001",
+   "id": "emily-dickinson/i-m-nobody-who-are-you",
    "idioma": "en",
    "tipo": "poema",
-   "titulo": "Annabel Lee",
-   "autor": "Edgar Allan Poe",
-   "obra": "The Works of the Late Edgar Allan Poe, vol. 2",
-   "ano": 1849,
-   "dominio": "Edgar Allan Poe morreu em 1849, ano em que o poema saiu. Domínio público há mais de um século e meio.",
-   "fonte": "https://en.wikisource.org/wiki/The_Works_of_the_Late_Edgar_Allan_Poe_(1859)/Volume_2/Annabel_Lee",
-   "recorte": "as duas primeiras das seis estrofes",
-   "traducao": "em verso, na medida e na rima do original",
-   "nota": "Versos de quatro e de três tempos, alternados, com o embalo de três em três sílabas que faz de «Annabel Lee» o poema mais musical de Poe. Os versos pares rimam todos em /i/ — «sea», «Lee», «me» —, e «kingdom by the sea» volta como refrão. São as duas primeiras das seis estrofes, antes da morte da moça. A sintaxe é de balada: «a maiden there lived» inverte a ordem, e «this maiden she lived» repete o sujeito. O nome se lê à inglesa: «Á-na-bel LI».",
-   "notaEs": "Versos de cuatro y de tres acentos, alternados, con el vaivén de tres en tres sílabas que hace de «Annabel Lee» el poema más musical de Poe. Los versos pares riman todos en /i/ —«sea», «Lee», «me»—, y «kingdom by the sea» vuelve como estribillo. Son las dos primeras de las seis estrofas, antes de la muerte de la muchacha. La sintaxis es de balada: «a maiden there lived» invierte el orden, y «this maiden she lived» repite el sujeto. El nombre se lee a la inglesa: «Á-na-bel LI».",
-   "blocos": [
-    [
-     {
-      "en": "It was many and many a year ago,",
-      "pt": "Foi há muitos e muitos e muitos natais,",
-      "es": "Fue hace muchos y muchos años,",
-      "requer": [
-       "en-p229",
-       "en-p942",
-       "en-p254",
-       "en-p943"
-      ]
-     },
-     {
-      "en": "In a kingdom by the sea,",
-      "pt": "em um reino à beira-mar,",
-      "es": "en un reino junto al mar,",
-      "requer": [
-       "en-p944",
-       "en-p945"
-      ]
-     },
-     {
-      "en": "That a maiden there lived whom you may know",
-      "pt": "que uma moça viveu, que talvez conheçais,",
-      "es": "que allí vivía una doncella a quien tal vez conozcas",
-      "requer": [
-       "en-p946",
-       "en-p723",
-       "en-p267",
-       "en-p309",
-       "en-p248"
-      ]
-     },
-     {
-      "en": "By the name of Annabel Lee;",
-      "pt": "pelo nome de Annabel Lee;",
-      "es": "por el nombre de Annabel Lee;",
-      "requer": [
-       "en-p145"
-      ]
-     },
-     {
-      "en": "And this maiden she lived with no other thought",
-      "pt": "e esta moça viveu sem outro pensamento",
-      "es": "y esta doncella vivía sin otro pensamiento",
-      "requer": [
-       "en-p947",
-       "en-p698"
-      ]
-     },
-     {
-      "en": "Than to love and be loved by me.",
-      "pt": "que o de amar, ser amada por mim.",
-      "es": "que amar y ser amada por mí.",
-      "requer": [
-       "en-p948"
-      ]
-     }
-    ],
-    [
-     {
-      "en": "I was a child and she was a child,",
-      "pt": "Eu era criança, e criança a menina,",
-      "es": "Yo era un niño y ella era una niña,",
-      "requer": [
-       "en-p166"
-      ]
-     },
-     {
-      "en": "In this kingdom by the sea:",
-      "pt": "neste reino à beira-mar:",
-      "es": "en este reino junto al mar:",
-      "requer": []
-     },
-     {
-      "en": "But we loved with a love that was more than love—",
-      "pt": "mas amávamos nós de amor, e mais que amor —",
-      "es": "pero nos amábamos con un amor que era más que amor—",
-      "requer": [
-       "en-p949",
-       "en-p510"
-      ]
-     },
-     {
-      "en": "I and my Annabel Lee;",
-      "pt": "eu e minha Annabel Lee;",
-      "es": "yo y mi Annabel Lee;",
-      "requer": []
-     },
-     {
-      "en": "With a love that the winged seraphs of heaven",
-      "pt": "de um amor que no céu alados serafins",
-      "es": "con un amor que los alados serafines del cielo",
-      "requer": [
-       "en-p950",
-       "en-p951",
-       "en-p952"
-      ]
-     },
-     {
-      "en": "Coveted her and me.",
-      "pt": "cobiçavam a ela e a mim.",
-      "es": "nos envidiaban, a ella y a mí.",
-      "requer": [
-       "en-p953"
-      ]
-     }
-    ]
-   ],
-   "requerTodas": [
-    "en-p229",
-    "en-p942",
-    "en-p254",
-    "en-p943",
-    "en-p944",
-    "en-p945",
-    "en-p946",
-    "en-p723",
-    "en-p267",
-    "en-p309",
-    "en-p248",
-    "en-p145",
-    "en-p947",
-    "en-p698",
-    "en-p948",
-    "en-p166",
-    "en-p949",
-    "en-p510",
-    "en-p950",
-    "en-p951",
-    "en-p952",
-    "en-p953"
-   ]
-  },
-  {
-   "id": "txt-en-002",
-   "idioma": "en",
-   "tipo": "poema",
-   "titulo": "The Tyger",
-   "autor": "William Blake",
-   "obra": "Songs of Experience; texto da edição Sampson (1905)",
-   "ano": 1794,
-   "dominio": "William Blake morreu em 1827. Domínio público há quase dois séculos.",
-   "fonte": "https://en.wikisource.org/wiki/The_poetical_works_of_William_Blake;_a_new_and_verbatim_text_from_the_manuscript_engraved_and_letterpress_originals/The_Tyger",
-   "recorte": "a primeira e as duas últimas das seis quadras (pula as três da forja)",
-   "traducao": "em verso, na medida e na rima do original",
-   "nota": "Versos de quatro tempos com a batida na primeira sílaba — «TY-ger! TY-ger! BURN-ing BRIGHT» —, que às vezes ganham uma sílaba átona na frente («Could FRAME thy FEAR-ful SYM-me-TRY»), em dísticos rimados. A primeira e a última estrofe só diferem numa palavra: «Could» (pôde) vira «Dare» (ousa). A grafia é a de Blake: «Tyger» por «tiger», «thy» e «thee» são o «teu» e o «te» antigos, «water'd» é «watered», e «his work to see» é a ordem invertida de «to see his work». «Dare frame» é verbo sem «to». Na tradução, a troca de palavra subiu um verso: «podia» → «ousaria».",
-   "notaEs": "Versos de cuatro tiempos con el golpe en la primera sílaba — «TY-ger! TY-ger! BURN-ing BRIGHT» —, que a veces ganan una sílaba átona delante («Could FRAME thy FEAR-ful SYM-me-TRY»), en pareados rimados. La primera y la última estrofa solo difieren en una palabra: «Could» (pudo) se vuelve «Dare» (se atreve). La grafía es la de Blake: «Tyger» por «tiger», «thy» y «thee» son el «tu» y el «te» antiguos, «water'd» es «watered», y «his work to see» es el orden invertido de «to see his work». «Dare frame» es verbo sin «to».",
-   "blocos": [
-    [
-     {
-      "en": "Tyger! Tyger! burning bright",
-      "pt": "Tigre! Tigre! fogo e lume",
-      "es": "¡Tigre! ¡Tigre!, que ardes brillante",
-      "requer": [
-       "en-p954",
-       "en-p418",
-       "en-p955"
-      ]
-     },
-     {
-      "en": "In the forests of the night,",
-      "pt": "nas florestas do negrume,",
-      "es": "en los bosques de la noche,",
-      "requer": [
-       "en-p956",
-       "en-p275"
-      ]
-     },
-     {
-      "en": "What immortal hand or eye",
-      "pt": "que mão eterna podia",
-      "es": "¿qué mano u ojo inmortal",
-      "requer": [
-       "en-p957",
-       "en-p142",
-       "en-p167"
-      ]
-     },
-     {
-      "en": "Could frame thy fearful symmetry?",
-      "pt": "moldar-te a fera simetria?",
-      "es": "pudo dar forma a tu temible simetría?",
-      "requer": [
-       "en-p246",
-       "en-p958",
-       "en-p959",
-       "en-p960"
-      ]
-     }
-    ],
-    [
-     {
-      "en": "When the stars threw down their spears,",
-      "pt": "Quando os astros desarmaram",
-      "es": "Cuando las estrellas arrojaron sus lanzas",
-      "requer": [
-       "en-p961",
-       "en-p300",
-       "en-p962",
-       "en-p963"
-      ]
-     },
-     {
-      "en": "And water'd heaven with their tears,",
-      "pt": "e com seu pranto o céu regaram,",
-      "es": "y regaron el cielo con sus lágrimas,",
-      "requer": [
-       "en-p964",
-       "en-p952",
-       "en-p965"
-      ]
-     },
-     {
-      "en": "Did he smile his work to see?",
-      "pt": "sorriu ao ver-te, talvez?",
-      "es": "¿sonrió al ver su obra?",
-      "requer": [
-       "en-p231",
-       "en-p966",
-       "en-p410",
-       "en-p252"
-      ]
-     },
-     {
-      "en": "Did he who made the Lamb make thee?",
-      "pt": "Fez o Cordeiro quem te fez?",
-      "es": "¿El que hizo al Cordero te hizo a ti?",
-      "requer": [
-       "en-p250",
-       "en-p967"
-      ]
-     }
-    ],
-    [
-     {
-      "en": "Tyger! Tyger! burning bright",
-      "pt": "Tigre! Tigre! fogo e lume",
-      "es": "¡Tigre! ¡Tigre!, que ardes brillante",
-      "requer": []
-     },
-     {
-      "en": "In the forests of the night,",
-      "pt": "nas florestas do negrume,",
-      "es": "en los bosques de la noche,",
-      "requer": []
-     },
-     {
-      "en": "What immortal hand or eye,",
-      "pt": "que mão eterna ousaria",
-      "es": "¿qué mano u ojo inmortal",
-      "requer": []
-     },
-     {
-      "en": "Dare frame thy fearful symmetry?",
-      "pt": "moldar-te a fera simetria?",
-      "es": "se atreve a dar forma a tu temible simetría?",
-      "requer": [
-       "en-p968"
-      ]
-     }
-    ]
-   ],
-   "requerTodas": [
-    "en-p954",
-    "en-p418",
-    "en-p955",
-    "en-p956",
-    "en-p275",
-    "en-p957",
-    "en-p142",
-    "en-p167",
-    "en-p246",
-    "en-p958",
-    "en-p959",
-    "en-p960",
-    "en-p961",
-    "en-p300",
-    "en-p962",
-    "en-p963",
-    "en-p964",
-    "en-p952",
-    "en-p965",
-    "en-p231",
-    "en-p966",
-    "en-p410",
-    "en-p252",
-    "en-p250",
-    "en-p967",
-    "en-p968"
-   ]
-  },
-  {
-   "id": "txt-en-003",
-   "idioma": "en",
-   "tipo": "poema",
-   "titulo": "\"Hope\" is the thing with feathers",
+   "titulo": "I'm nobody! Who are you?",
    "autor": "Emily Dickinson",
-   "obra": "Poems: Second Series",
    "ano": 1891,
-   "dominio": "Emily Dickinson morreu em 1886, e o poema saiu em 1891, na segunda série póstuma. Domínio público em qualquer cálculo.",
-   "fonte": "https://en.wikisource.org/wiki/Poems:_Second_Series_(Dickinson)/Hope",
-   "recorte": "o poema inteiro",
-   "traducao": "em verso, na medida e na rima do original",
-   "nota": "Metro de balada, o dos hinos de igreja que a Dickinson ouviu a vida toda: versos de quatro e de três tempos alternados, com as rimas aproximadas que eram dela («soul» com «all»; «extremity» rima com «sea» e «me» pela última sílaba). A esperança é um passarinho que canta dentro da gente e não pede nada. A ordem é invertida em dois lugares: «sweetest in the gale is heard» é «is heard sweetest in the gale», e «sore must be the storm» é «the storm must be sore», com «sore» no sentido antigo de terrível, e não no de dolorido. «Asked a crumb of me» é o «ask something of someone», pedir algo a alguém.",
-   "notaEs": "Metro de balada, el de los himnos de iglesia que Dickinson oyó toda la vida: versos de cuatro y de tres acentos alternados, con las rimas aproximadas que eran suyas («soul» con «all»; «extremity» rima con «sea» y «me» por la última sílaba). La esperanza es un pajarito que canta dentro de uno y no pide nada. El orden está invertido en dos lugares: «sweetest in the gale is heard» es «is heard sweetest in the gale», y «sore must be the storm» es «the storm must be sore», con «sore» en el sentido antiguo de terrible, y no en el de dolorido. «Asked a crumb of me» es el «ask something of someone», pedirle algo a alguien.",
+   "biblioteca": "/biblioteca/emily-dickinson/i-m-nobody-who-are-you/",
    "blocos": [
     [
      {
-      "en": "Hope is the thing with feathers",
-      "pt": "Tem plumas a esperança,",
-      "es": "La esperanza es la cosa con plumas",
+      "t": "I'm nobody! Who are you?",
+      "p": [
+       [
+        "I'm",
+        "i'm"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nobody",
+        "nobody"
+       ],
+       [
+        "! ",
+        null
+       ],
+       [
+        "Who",
+        "who"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "are",
+        "are"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "you",
+        "you"
+       ],
+       [
+        "?",
+        null
+       ]
+      ],
       "requer": [
-       "en-p969",
        "en-p229",
-       "en-p406",
-       "en-p970"
+       "en-p1078"
       ]
      },
      {
-      "en": "That perches in the soul,",
-      "pt": "que pousa dentro da alma,",
-      "es": "que se posa en el alma,",
+      "t": "Are you nobody, too?",
+      "p": [
+       [
+        "Are",
+        "are"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "you",
+        "you"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nobody",
+        "nobody"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "too",
+        "too"
+       ],
+       [
+        "?",
+        null
+       ]
+      ],
       "requer": [
-       "en-p971",
-       "en-p972"
-      ]
-     },
-     {
-      "en": "And sings the tune without the words,",
-      "pt": "e canta a música sem letra,",
-      "es": "y canta la melodía sin la letra,",
-      "requer": [
-       "en-p885",
-       "en-p973",
-       "en-p409"
-      ]
-     },
-     {
-      "en": "And never stops at all,",
-      "pt": "e nunca, nunca acalma.",
-      "es": "y no se detiene nunca jamás,",
-      "requer": [
-       "en-p253",
-       "en-p281",
-       "en-p239"
-      ]
-     }
-    ],
-    [
-     {
-      "en": "And sweetest in the gale is heard;",
-      "pt": "Mais doce se ouve ao torvelinho;",
-      "es": "y se oye más dulce en el vendaval;",
-      "requer": [
-       "en-p974",
-       "en-p975",
-       "en-p337"
-      ]
-     },
-     {
-      "en": "And sore must be the storm",
-      "pt": "e só feroz tormenta",
-      "es": "y muy dura ha de ser la tormenta",
-      "requer": [
-       "en-p976",
-       "en-p364",
-       "en-p687"
-      ]
-     },
-     {
-      "en": "That could abash the little bird",
-      "pt": "acanharia o passarinho",
-      "es": "que pudiera intimidar al pajarito",
-      "requer": [
-       "en-p246",
-       "en-p977",
-       "en-p362",
-       "en-p188"
-      ]
-     },
-     {
-      "en": "That kept so many warm.",
-      "pt": "que a tantos acalenta.",
-      "es": "que a tantos dio calor.",
-      "requer": [
-       "en-p266",
-       "en-p315",
-       "en-p942",
-       "en-p978"
-      ]
-     }
-    ],
-    [
-     {
-      "en": "I've heard it in the chillest land,",
-      "pt": "Eu já a ouvi no chão mais frio",
-      "es": "La he oído en la tierra más fría",
-      "requer": [
-       "en-p230",
-       "en-p979",
-       "en-p980"
-      ]
-     },
-     {
-      "en": "And on the strangest sea;",
-      "pt": "e no mar mais estranho;",
-      "es": "y en el mar más extraño;",
-      "requer": [
-       "en-p540",
-       "en-p945"
-      ]
-     },
-     {
-      "en": "Yet, never, in extremity,",
-      "pt": "jamais pediu, em mal tamanho,",
-      "es": "pero nunca, ni en el peor trance,",
-      "requer": [
-       "en-p981"
-      ]
-     },
-     {
-      "en": "It asked a crumb of me.",
-      "pt": "migalha do que ganho.",
-      "es": "me pidió una migaja.",
-      "requer": [
-       "en-p732",
-       "en-p982"
-      ]
-     }
-    ]
-   ],
-   "requerTodas": [
-    "en-p969",
-    "en-p229",
-    "en-p406",
-    "en-p970",
-    "en-p971",
-    "en-p972",
-    "en-p885",
-    "en-p973",
-    "en-p409",
-    "en-p253",
-    "en-p281",
-    "en-p239",
-    "en-p974",
-    "en-p975",
-    "en-p337",
-    "en-p976",
-    "en-p364",
-    "en-p687",
-    "en-p246",
-    "en-p977",
-    "en-p362",
-    "en-p188",
-    "en-p266",
-    "en-p315",
-    "en-p942",
-    "en-p978",
-    "en-p230",
-    "en-p979",
-    "en-p980",
-    "en-p540",
-    "en-p945",
-    "en-p981",
-    "en-p732",
-    "en-p982"
-   ]
-  },
-  {
-   "id": "txt-en-004",
-   "idioma": "en",
-   "tipo": "poema",
-   "titulo": "There Will Come Soft Rains",
-   "autor": "Sara Teasdale",
-   "obra": "Flame and Shadow",
-   "ano": 1920,
-   "dominio": "Sara Teasdale morreu em 1933. No Brasil (70 anos depois da morte) é domínio público desde 2004; nos Estados Unidos, por ter saído antes de 1929 (Flame and Shadow, 1920).",
-   "fonte": "https://en.wikisource.org/wiki/Flame_and_Shadow/%22There_Will_Come_Soft_Rains%22",
-   "recorte": "o poema inteiro",
-   "traducao": "em verso, na medida e na rima do original",
-   "nota": "Seis dísticos com rima aguda (ground/sound, night/white, fire/wire…) e quatro tempos por verso: os primeiros correm em anapestos, de nove a onze sílabas, e os do fim encurtam para o jâmbico de oito. No livro, o título leva o subtítulo «War Time»: é poema da Primeira Guerra, e deu nome a um conto de Ray Bradbury. As quatro primeiras estrofes são uma lista de primavera pendurada no «There will come» do começo, com o futuro em «will»; as duas últimas passam ao condicional, «would» com «if mankind perished», o passado que no inglês marca a hipótese. «Not one» volta três vezes, como refrão. Os «robins» são os tordos americanos, de peito vermelho, daí o «fogo de penas»; a tradução os fez sabiás, que são primos deles.",
-   "notaEs": "Seis pareados con rima aguda (ground/sound, night/white, fire/wire…) y cuatro acentos por verso: los primeros corren en anapestos, de nueve a once sílabas, y los del final se acortan al yámbico de ocho. En el libro, el título lleva el subtítulo «War Time»: es un poema de la Primera Guerra, y le dio nombre a un cuento de Ray Bradbury. Las cuatro primeras estrofas son una lista de primavera colgada del «There will come» del comienzo, con el futuro en «will»; las dos últimas pasan al condicional, «would» con «if mankind perished», el pasado que en inglés marca la hipótesis. «Not one» vuelve tres veces, como estribillo. Los «robins» son los zorzales americanos, de pecho rojo, de ahí el «fuego de plumas»; en español suelen llamarse petirrojos.",
-   "blocos": [
-    [
-     {
-      "en": "There will come soft rains and the smell of the ground,",
-      "pt": "Virão chuvas mansas e o cheiro do chão,",
-      "es": "Vendrán lluvias suaves y el olor de la tierra,",
-      "requer": [
-       "en-p235",
-       "en-p255",
-       "en-p537",
-       "en-p144",
-       "en-p983",
-       "en-p614"
-      ]
-     },
-     {
-      "en": "And swallows circling with their shimmering sound;",
-      "pt": "e andorinhas girando em fulgente canção;",
-      "es": "y golondrinas volando en círculos con su sonido centelleante;",
-      "requer": [
-       "en-p984",
-       "en-p985",
-       "en-p986",
-       "en-p987"
-      ]
-     }
-    ],
-    [
-     {
-      "en": "And frogs in the pools singing at night,",
-      "pt": "e as rãs pelos charcos, à noite, a cantar,",
-      "es": "y ranas en las charcas cantando de noche,",
-      "requer": [
-       "en-p988",
-       "en-p989",
-       "en-p885",
-       "en-p275"
-      ]
-     },
-     {
-      "en": "And wild plum-trees in tremulous white;",
-      "pt": "e ameixeiras bravias num branco a vibrar;",
-      "es": "y ciruelos silvestres de un blanco tembloroso;",
-      "requer": [
-       "en-p990",
-       "en-p991",
-       "en-p102",
-       "en-p992",
-       "en-p993"
-      ]
-     }
-    ],
-    [
-     {
-      "en": "Robins will wear their feathery fire",
-      "pt": "sabiás vestirão o seu fogo emplumado,",
-      "es": "los petirrojos vestirán su fuego de plumas",
-      "requer": [
-       "en-p994",
-       "en-p347",
-       "en-p995",
-       "en-p996"
-      ]
-     },
-     {
-      "en": "Whistling their whims on a low fence-wire;",
-      "pt": "trinando caprichos no baixo cercado;",
-      "es": "silbando sus caprichos en el alambre bajo de una cerca;",
-      "requer": [
-       "en-p997",
-       "en-p998",
-       "en-p504",
-       "en-p389",
-       "en-p718"
-      ]
-     }
-    ],
-    [
-     {
-      "en": "And not one will know of the war, not one",
-      "pt": "nenhum, nenhum da guerra saberá,",
-      "es": "y ninguno sabrá de la guerra, ninguno",
-      "requer": [
-       "en-p366",
-       "en-p248",
-       "en-p999"
-      ]
-     },
-     {
-      "en": "Will care at last when it is done.",
-      "pt": "nem ao final se importará.",
-      "es": "se preocupará al fin, cuando haya terminado.",
-      "requer": [
-       "en-p1000",
-       "en-p258",
        "en-p229",
-       "en-p231"
+       "en-p1078",
+       "en-p269"
       ]
-     }
-    ],
-    [
+     },
      {
-      "en": "Not one would mind, neither bird nor tree",
-      "pt": "Nenhum, ave ou planta, teria saudade",
-      "es": "A ninguno le importaría, ni al pájaro ni al árbol,",
+      "t": "Then there's a pair of us — don't tell!",
+      "p": [
+       [
+        "Then",
+        "then"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "there's",
+        "there's"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "a",
+        "a"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pair",
+        "pair"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "of",
+        "of"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "us",
+        "us"
+       ],
+       [
+        " — ",
+        null
+       ],
+       [
+        "don't",
+        "don't"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tell",
+        "tell"
+       ],
+       [
+        "!",
+        null
+       ]
+      ],
+      "requer": [
+       "en-p722",
+       "en-p723",
+       "en-p229",
+       "en-p1067",
+       "en-p231",
+       "en-p282"
+      ]
+     },
+     {
+      "t": "They'd banish us, you know.",
+      "p": [
+       [
+        "They'd",
+        "they'd"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "banish",
+        "banish"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "us",
+        "us"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "you",
+        "you"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "know",
+        "know"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
       "requer": [
        "en-p233",
-       "en-p048",
-       "en-p188"
-      ]
-     },
-     {
-      "en": "If mankind perished utterly;",
-      "pt": "se perecesse inteira a humanidade;",
-      "es": "si la humanidad pereciera por completo;",
-      "requer": [
-       "en-p1001",
-       "en-p1002",
-       "en-p1003"
+       "en-p1080",
+       "en-p248"
       ]
      }
     ],
     [
      {
-      "en": "And Spring herself, when she woke at dawn,",
-      "pt": "e a própria Primavera, ao sol nascente,",
-      "es": "y la propia Primavera, al despertar al alba,",
+      "t": "How dreary to be somebody!",
+      "p": [
+       [
+        "How",
+        "how"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dreary",
+        "dreary"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "to",
+        "to"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "be",
+        "be"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "somebody",
+        "somebody"
+       ],
+       [
+        "!",
+        null
+       ]
+      ],
       "requer": [
-       "en-p1004",
-       "en-p924",
-       "en-p591"
+       "en-p1081",
+       "en-p229",
+       "en-p1079"
       ]
      },
      {
-      "en": "Would scarcely know that we were gone.",
-      "pt": "mal notaria a gente ausente.",
-      "es": "apenas sabría que nos habíamos ido.",
+      "t": "How public, like a frog",
+      "p": [
+       [
+        "How",
+        "how"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "public",
+        "public"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "like",
+        "like"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "a",
+        "a"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "frog",
+        "frog"
+       ]
+      ],
       "requer": [
-       "en-p530",
-       "en-p237"
+       "en-p659",
+       "en-p249",
+       "en-p988"
       ]
-     }
-    ]
-   ],
-   "requerTodas": [
-    "en-p235",
-    "en-p255",
-    "en-p537",
-    "en-p144",
-    "en-p983",
-    "en-p614",
-    "en-p984",
-    "en-p985",
-    "en-p986",
-    "en-p987",
-    "en-p988",
-    "en-p989",
-    "en-p885",
-    "en-p275",
-    "en-p990",
-    "en-p991",
-    "en-p102",
-    "en-p992",
-    "en-p993",
-    "en-p994",
-    "en-p347",
-    "en-p995",
-    "en-p996",
-    "en-p997",
-    "en-p998",
-    "en-p504",
-    "en-p389",
-    "en-p718",
-    "en-p366",
-    "en-p248",
-    "en-p999",
-    "en-p1000",
-    "en-p258",
-    "en-p229",
-    "en-p231",
-    "en-p233",
-    "en-p048",
-    "en-p188",
-    "en-p1001",
-    "en-p1002",
-    "en-p1003",
-    "en-p1004",
-    "en-p924",
-    "en-p591",
-    "en-p530",
-    "en-p237"
-   ]
-  },
-  {
-   "id": "txt-en-005",
-   "idioma": "en",
-   "tipo": "poema",
-   "titulo": "Sonnet 18",
-   "autor": "William Shakespeare",
-   "obra": "Shake-speares Sonnets; texto de Shakespeare's Sonnets (Yale, 1923)",
-   "ano": 1609,
-   "dominio": "Shakespeare morreu em 1616; os sonetos saíram em 1609. Domínio público há quatro séculos.",
-   "fonte": "https://en.wikisource.org/wiki/Shakespeare's_Sonnets_(1923)_Yale/Text/Sonnet_18",
-   "recorte": "o soneto inteiro",
-   "traducao": "em verso, na medida e na rima do original",
-   "nota": "Pentâmetro jâmbico, cinco tempos em dez sílabas — «so LONG lives THIS, and THIS gives LIFE to THEE» —, na forma do soneto inglês: três quadras de rima cruzada e um dístico que fecha o argumento (ABAB CDCD EFEF GG). Na tradução, decassílabo heroico, com a mesma ordem de rimas. É o inglês de 1609: «thou», «thee» e «thy» são o «tu», o «te» e o «teu» antigos; «art» é «are» e «hath» é «has»; as formas em «-st» («ow'st», «wander'st», «grow'st») são a segunda pessoa do «thou»; e «dimm'd» é «dimmed». «Fair» aparece como substantivo, a beleza; «lease» é o arrendamento e «date», o prazo; o «olho do céu» é o sol; «ow'st» vem do «owe» antigo, que queria dizer possuir; e «untrimm'd» é despojado do enfeite.",
-   "notaEs": "Pentámetro yámbico, cinco tiempos en diez sílabas — «so LONG lives THIS, and THIS gives LIFE to THEE» —, en la forma del soneto inglés: tres cuartetos de rima cruzada y un pareado que cierra el argumento (ABAB CDCD EFEF GG). Es el inglés de 1609: «thou», «thee» y «thy» son el «tú», el «te» y el «tu» antiguos; «art» es «are» y «hath» es «has»; las formas en «-st» («ow'st», «wander'st», «grow'st») son la segunda persona de «thou»; y «dimm'd» es «dimmed». «Fair» aparece como sustantivo, la belleza; «lease» es el arriendo y «date», el plazo; el «ojo del cielo» es el sol; «ow'st» viene del antiguo «owe», que quería decir poseer; y «untrimm'd» es despojado de su adorno.",
-   "blocos": [
-    [
+     },
      {
-      "en": "Shall I compare thee to a summer's day?",
-      "pt": "A um dia de verão te igualaria?",
-      "es": "¿Debo compararte con un día de verano?",
+      "t": "To tell your name the livelong day",
+      "p": [
+       [
+        "To",
+        "to"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tell",
+        "tell#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "your",
+        "your"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "name",
+        "name"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "the",
+        "the"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "livelong",
+        "livelong"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "day",
+        "day"
+       ]
+      ],
       "requer": [
-       "en-p1005",
-       "en-p1006",
-       "en-p1007",
+       "en-p282",
+       "en-p145",
+       "en-p1082",
        "en-p289"
       ]
      },
      {
-      "en": "Thou art more lovely and more temperate:",
-      "pt": "Tu és mais adorável, mais ameno:",
-      "es": "Tú eres más encantador y más apacible:",
+      "t": "To an admiring bog!",
+      "p": [
+       [
+        "To",
+        "to#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "an",
+        "an"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "admiring",
+        "admiring"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bog",
+        "bog"
+       ],
+       [
+        "!",
+        null
+       ]
+      ],
       "requer": [
-       "en-p229",
-       "en-p510",
-       "en-p1008",
-       "en-p1009"
-      ]
-     },
-     {
-      "en": "Rough winds do shake the darling buds of May,",
-      "pt": "sacode o broto em maio a ventania,",
-      "es": "los vientos bruscos sacuden los queridos brotes de mayo,",
-      "requer": [
-       "en-p1010",
-       "en-p716",
-       "en-p231",
-       "en-p878",
-       "en-p1011",
-       "en-p1012",
-       "en-p1013"
-      ]
-     },
-     {
-      "en": "And summer's lease hath all too short a date:",
-      "pt": "e o verão tem um prazo tão pequeno:",
-      "es": "y el arriendo del verano tiene un plazo demasiado corto:",
-      "requer": [
-       "en-p1014",
-       "en-p230",
-       "en-p239",
-       "en-p269",
-       "en-p313",
-       "en-p1015"
-      ]
-     },
-     {
-      "en": "Sometime too hot the eye of heaven shines,",
-      "pt": "às vezes, quente, o sol demais fulgura,",
-      "es": "a veces brilla demasiado caliente el ojo del cielo,",
-      "requer": [
-       "en-p1016",
-       "en-p1017",
-       "en-p167",
-       "en-p952",
-       "en-p879"
-      ]
-     },
-     {
-      "en": "And often is his gold complexion dimm'd;",
-      "pt": "e muita vez se nubla a tez acesa;",
-      "es": "y a menudo se empaña su tez dorada;",
-      "requer": [
-       "en-p1018",
-       "en-p1019",
-       "en-p1020",
-       "en-p1021"
-      ]
-     },
-     {
-      "en": "And every fair from fair sometime declines,",
-      "pt": "e o belo perde, um dia, a formosura,",
-      "es": "y toda belleza alguna vez decae de su belleza,",
-      "requer": [
-       "en-p1022",
-       "en-p1023",
-       "en-p770"
-      ]
-     },
-     {
-      "en": "By chance, or nature's changing course untrimm'd;",
-      "pt": "despido por acaso ou natureza;",
-      "es": "despojada por el azar o por el curso cambiante de la naturaleza;",
-      "requer": [
-       "en-p1024",
-       "en-p1025",
-       "en-p1026",
-       "en-p383",
-       "en-p1027"
-      ]
-     },
-     {
-      "en": "But thy eternal summer shall not fade,",
-      "pt": "mas no verão eterno não te apagas,",
-      "es": "pero tu eterno verano no se marchitará,",
-      "requer": [
-       "en-p1028",
-       "en-p1029"
-      ]
-     },
-     {
-      "en": "Nor lose possession of that fair thou ow'st,",
-      "pt": "nem perdes a beleza, o teu encanto,",
-      "es": "ni perderá la posesión de esa belleza que posees,",
-      "requer": [
-       "en-p296",
-       "en-p1030",
-       "en-p343"
-      ]
-     },
-     {
-      "en": "Nor shall death brag thou wander'st in his shade,",
-      "pt": "nem diz a morte, ufana: «À sombra vagas»,",
-      "es": "ni se jactará la muerte de que vagas en su sombra,",
-      "requer": [
-       "en-p1031",
-       "en-p1032",
-       "en-p1033",
-       "en-p1034"
-      ]
-     },
-     {
-      "en": "When in eternal lines to time thou grow'st;",
-      "pt": "quando ao tempo te enlaça o eterno canto;",
-      "es": "cuando en versos eternos crezcas unido al tiempo;",
-      "requer": [
-       "en-p173",
-       "en-p242",
-       "en-p807"
-      ]
-     },
-     {
-      "en": "So long as man can breathe, or eyes can see,",
-      "pt": "enquanto alguém respire e possa ver,",
-      "es": "mientras el hombre pueda respirar, o los ojos puedan ver,",
-      "requer": [
-       "en-p315",
-       "en-p259",
-       "en-p1035",
-       "en-p232",
-       "en-p156",
-       "en-p252"
-      ]
-     },
-     {
-      "en": "So long lives this, and this gives life to thee.",
-      "pt": "viverá isto, e a ti fará viver.",
-      "es": "tanto tiempo vivirá esto, y esto te dará vida.",
-      "requer": [
-       "en-p267",
-       "en-p264",
-       "en-p1036"
+       "en-p1068",
+       "en-p1083"
       ]
      }
     ]
    ],
    "requerTodas": [
-    "en-p1005",
-    "en-p1006",
-    "en-p1007",
-    "en-p289",
     "en-p229",
-    "en-p510",
-    "en-p1008",
-    "en-p1009",
-    "en-p1010",
-    "en-p716",
-    "en-p231",
-    "en-p878",
-    "en-p1011",
-    "en-p1012",
-    "en-p1013",
-    "en-p1014",
-    "en-p230",
-    "en-p239",
+    "en-p1078",
     "en-p269",
-    "en-p313",
-    "en-p1015",
-    "en-p1016",
-    "en-p1017",
-    "en-p167",
-    "en-p952",
-    "en-p879",
-    "en-p1018",
-    "en-p1019",
-    "en-p1020",
-    "en-p1021",
-    "en-p1022",
-    "en-p1023",
-    "en-p770",
-    "en-p1024",
-    "en-p1025",
-    "en-p1026",
-    "en-p383",
-    "en-p1027",
-    "en-p1028",
-    "en-p1029",
-    "en-p296",
-    "en-p1030",
-    "en-p343",
-    "en-p1031",
-    "en-p1032",
-    "en-p1033",
-    "en-p1034",
-    "en-p173",
-    "en-p242",
-    "en-p807",
-    "en-p315",
-    "en-p259",
-    "en-p1035",
-    "en-p232",
-    "en-p156",
-    "en-p252",
-    "en-p267",
-    "en-p264",
-    "en-p1036"
-   ]
-  },
-  {
-   "id": "txt-en-006",
-   "idioma": "en",
-   "tipo": "prosa",
-   "titulo": "The Adventures of Tom Sawyer",
-   "autor": "Mark Twain",
-   "obra": "The Adventures of Tom Sawyer, cap. I",
-   "ano": 1876,
-   "dominio": "Mark Twain morreu em 1910; o livro é de 1876. Domínio público há mais de um século.",
-   "fonte": "https://en.wikisource.org/wiki/The_Adventures_of_Tom_Sawyer/Chapter_I",
-   "recorte": "os sete primeiros parágrafos do capítulo I",
-   "traducao": "em prosa",
-   "nota": "O começo do livro: a velha senhora é a tia Polly, que procura o sobrinho pela casa. «What's gone with that boy?» é coloquial do Missouri, o mesmo que «what has become of», e hoje ninguém diz assim. Os verbos com partícula estão no sentido literal: «pulled down» e «put up» (os óculos descem e sobem), «looked over» e «looked out under» (por cima e por baixo deles).",
-   "notaEs": "El comienzo del libro: la anciana es la tía Polly, que busca a su sobrino por la casa. «What's gone with that boy?» es coloquial de Misuri, lo mismo que «what has become of», y hoy nadie lo dice así. Los verbos con partícula están en sentido literal: «pulled down» y «put up» (las gafas bajan y suben), «looked over» y «looked out under» (por encima y por debajo de ellas).",
-   "blocos": [
-    [
-     {
-      "en": "\"TOM!\"",
-      "pt": "\"TOM!\"",
-      "es": "\"¡TOM!\"",
-      "requer": []
-     }
-    ],
-    [
-     {
-      "en": "No answer.",
-      "pt": "Nenhuma resposta.",
-      "es": "Ninguna respuesta.",
-      "requer": [
-       "en-p552"
-      ]
-     }
-    ],
-    [
-     {
-      "en": "\"TOM!\"",
-      "pt": "\"TOM!\"",
-      "es": "\"¡TOM!\"",
-      "requer": []
-     }
-    ],
-    [
-     {
-      "en": "No answer.",
-      "pt": "Nenhuma resposta.",
-      "es": "Ninguna respuesta.",
-      "requer": []
-     }
-    ],
-    [
-     {
-      "en": "\"What's gone with that boy, I wonder?",
-      "pt": "\"Que fim terá levado esse menino?",
-      "es": "\"¿Qué habrá sido de ese chico?",
-      "requer": [
-       "en-p230",
-       "en-p237",
-       "en-p1037",
-       "en-p1038"
-      ]
-     },
-     {
-      "en": "You TOM!\"",
-      "pt": "Você aí, TOM!\"",
-      "es": "¡Eh, tú, TOM!\"",
-      "requer": []
-     }
-    ],
-    [
-     {
-      "en": "No answer.",
-      "pt": "Nenhuma resposta.",
-      "es": "Ninguna respuesta.",
-      "requer": []
-     }
-    ],
-    [
-     {
-      "en": "The old lady pulled her spectacles down and looked over them about the room; then she put them up and looked out under them.",
-      "pt": "A velha senhora puxou os óculos para baixo e olhou a sala por cima deles; depois os empurrou para cima e olhou por baixo deles.",
-      "es": "La anciana se bajó las gafas y miró la habitación por encima de ellas; luego se las subió y miró por debajo de ellas.",
-      "requer": [
-       "en-p287",
-       "en-p1039",
-       "en-p439",
-       "en-p609",
-       "en-p339",
-       "en-p669",
-       "en-p722",
-       "en-p256"
-      ]
-     }
-    ]
-   ],
-   "requerTodas": [
-    "en-p552",
-    "en-p230",
-    "en-p237",
-    "en-p1037",
-    "en-p1038",
-    "en-p287",
-    "en-p1039",
-    "en-p439",
-    "en-p609",
-    "en-p339",
-    "en-p669",
     "en-p722",
-    "en-p256"
-   ]
+    "en-p723",
+    "en-p1067",
+    "en-p231",
+    "en-p282",
+    "en-p233",
+    "en-p1080",
+    "en-p248",
+    "en-p1081",
+    "en-p1079",
+    "en-p659",
+    "en-p249",
+    "en-p988",
+    "en-p145",
+    "en-p1082",
+    "en-p289",
+    "en-p1068",
+    "en-p1083"
+   ],
+   "destinos": {
+    "i'm": {
+     "defEs": "Contracción de «I am»: «I», pronombre personal, yo; «am», soy, estoy.",
+     "partes": [
+      {
+       "lema": "I",
+       "classe": "pronome pessoal",
+       "def": [
+        "Quem fala ou escreve, tratado como sujeito gramatical da frase."
+       ],
+       "g": "gramatical"
+      },
+      {
+       "lema": "be",
+       "classe": "verbo",
+       "forma": "presente do indicativo, 1ª pessoa do singular («am»)",
+       "def": [
+        "Usado para indicar que um predicativo nominal se aplica ao sujeito."
+       ],
+       "card": "en-p229"
+      }
+     ]
+    },
+    "nobody": {
+     "lema": "nobody",
+     "classe": "substantivo",
+     "def": [
+      "(Informal) Pessoa tida como sem importância."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/nobody",
+     "card": "en-p1078"
+    },
+    "who": {
+     "lema": "who",
+     "classe": "pronome interrogativo",
+     "def": [
+      "Que pessoa ou pessoas; qual pessoa ou quais pessoas."
+     ],
+     "defEs": "Pronombre interrogativo: quién, quiénes.",
+     "wiki": "https://en.wiktionary.org/wiki/who",
+     "g": "gramatical"
+    },
+    "are": {
+     "lema": "be",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa (singular ou plural)",
+     "def": [
+      "Usado para indicar que um predicativo nominal se aplica ao sujeito."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/be",
+     "card": "en-p229"
+    },
+    "you": {
+     "lema": "you",
+     "classe": "pronome pessoal",
+     "def": [
+      "A pessoa a quem se fala ou escreve, tratada como sujeito."
+     ],
+     "defEs": "Pronombre personal de segunda persona: tú, usted, vosotros, ustedes.",
+     "wiki": "https://en.wiktionary.org/wiki/you",
+     "g": "gramatical"
+    },
+    "too": {
+     "lema": "too",
+     "classe": "advérbio",
+     "def": [
+      "Também, além disso (marca uma afirmação como igualmente válida à anterior)."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/too",
+     "card": "en-p269"
+    },
+    "then": {
+     "lema": "then",
+     "classe": "advérbio",
+     "def": [
+      "Nesse caso."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/then",
+     "card": "en-p722"
+    },
+    "there's": {
+     "partes": [
+      {
+       "lema": "there",
+       "classe": "pronome",
+       "def": [
+        "Usado como sujeito expletivo de «be» no sentido de «existir», com o sujeito semântico, em geral indefinido, posposto."
+       ],
+       "card": "en-p723"
+      },
+      {
+       "lema": "be",
+       "classe": "verbo",
+       "forma": "presente do indicativo, 3ª pessoa do singular («is»)",
+       "def": [
+        "Existir."
+       ],
+       "card": "en-p229"
+      }
+     ]
+    },
+    "a": {
+     "lema": "a",
+     "classe": "artigo indefinido",
+     "def": [
+      "Um exemplar não específico de (algo); o artigo indefinido."
+     ],
+     "defEs": "Artículo indefinido: un, una.",
+     "wiki": "https://en.wiktionary.org/wiki/a",
+     "g": "gramatical"
+    },
+    "pair": {
+     "lema": "pair",
+     "classe": "substantivo",
+     "def": [
+      "Duas pessoas numa relação, numa parceria ou numa amizade."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/pair",
+     "card": "en-p1067"
+    },
+    "of": {
+     "lema": "of",
+     "classe": "preposição",
+     "def": [
+      "Indica a composição de um substantivo coletivo ou de quantidade."
+     ],
+     "defEs": "Preposición: de.",
+     "wiki": "https://en.wiktionary.org/wiki/of",
+     "g": "gramatical"
+    },
+    "us": {
+     "lema": "us",
+     "classe": "pronome pessoal",
+     "def": [
+      "Eu e pelo menos uma outra pessoa, incluindo a pessoa a quem se fala."
+     ],
+     "defEs": "Pronombre personal, complemento: nos, nosotros.",
+     "wiki": "https://en.wiktionary.org/wiki/us",
+     "g": "gramatical"
+    },
+    "don't": {
+     "partes": [
+      {
+       "lema": "do",
+       "classe": "verbo auxiliar",
+       "def": [
+        "Marcador sintático nas negações com os modos indicativo e imperativo."
+       ],
+       "card": "en-p231"
+      },
+      {
+       "lema": "not",
+       "classe": "advérbio",
+       "def": [
+        "Nega o sentido do verbo que modifica."
+       ],
+       "defEs": "«Not»: adverbio de negación, no. «Don't» = «do not».",
+       "g": "gramatical"
+      }
+     ]
+    },
+    "tell": {
+     "lema": "tell",
+     "classe": "verbo",
+     "def": [
+      "Revelar."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/tell",
+     "card": "en-p282"
+    },
+    "they'd": {
+     "defEs": "Contracción de «they would»: «they», pronombre personal, ellos, ellas; aquí, la gente, los que mandan.",
+     "partes": [
+      {
+       "lema": "they",
+       "classe": "pronome pessoal",
+       "def": [
+        "Pessoas em geral que estão no poder: as autoridades, as elites, o sistema (governo, polícia, empregadores etc.)."
+       ],
+       "g": "gramatical"
+      },
+      {
+       "lema": "would",
+       "classe": "verbo auxiliar modal",
+       "def": [
+        "Subjuntivo do modal «will»; em geral seguido de infinitivo sem «to»."
+       ],
+       "card": "en-p233"
+      }
+     ]
+    },
+    "banish": {
+     "lema": "banish",
+     "classe": "verbo",
+     "def": [
+      "Mandar (alguém) para longe e proibi-lo de voltar."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/banish",
+     "card": "en-p1080"
+    },
+    "know": {
+     "lema": "know",
+     "classe": "verbo",
+     "def": [
+      "Ter conhecimento; estar informado."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/know",
+     "card": "en-p248"
+    },
+    "how": {
+     "lema": "how",
+     "classe": "advérbio",
+     "def": [
+      "Usado como modificador para indicar surpresa, deleite ou outro sentimento forte numa exclamação."
+     ],
+     "defEs": "Adverbio: qué, cuán (en exclamaciones: «How dreary», qué aburrido).",
+     "wiki": "https://en.wiktionary.org/wiki/how",
+     "g": "gramatical"
+    },
+    "dreary": {
+     "lema": "dreary",
+     "classe": "adjetivo",
+     "def": [
+      "Sem graça; escuro, sem cor ou sem alegria."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/dreary",
+     "card": "en-p1081"
+    },
+    "to": {
+     "lema": "to",
+     "classe": "partícula",
+     "def": [
+      "Partícula que marca o verbo seguinte como infinitivo."
+     ],
+     "defEs": "Partícula que marca el infinitivo: «to be», ser.",
+     "wiki": "https://en.wiktionary.org/wiki/to",
+     "g": "gramatical"
+    },
+    "be": {
+     "lema": "be",
+     "classe": "verbo",
+     "def": [
+      "Usado para indicar que um predicativo nominal se aplica ao sujeito."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/be",
+     "card": "en-p229"
+    },
+    "somebody": {
+     "lema": "somebody",
+     "classe": "substantivo",
+     "def": [
+      "Pessoa reconhecida ou importante; celebridade."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/somebody",
+     "card": "en-p1079"
+    },
+    "public": {
+     "lema": "public",
+     "classe": "adjetivo",
+     "def": [
+      "Que pode ser conhecido ou visto por todos; que acontece sem ocultação, aberto à vista de todos."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/public",
+     "card": "en-p659"
+    },
+    "like": {
+     "lema": "like",
+     "classe": "preposição",
+     "def": [
+      "Semelhante a; que lembra."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/like",
+     "card": "en-p249"
+    },
+    "frog": {
+     "lema": "frog",
+     "classe": "substantivo",
+     "def": [
+      "Qualquer anfíbio sem cauda da ordem dos anuros, que em geral salta."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/frog",
+     "card": "en-p988"
+    },
+    "tell#2": {
+     "lema": "tell",
+     "classe": "verbo",
+     "def": [
+      "Transmitir pela fala; dizer."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/tell",
+     "card": "en-p282"
+    },
+    "your": {
+     "lema": "your",
+     "classe": "determinante possessivo",
+     "def": [
+      "Que pertence a você; relativo a você (um só dono)."
+     ],
+     "defEs": "Posesivo: tu, tus; su, sus (de usted o ustedes).",
+     "wiki": "https://en.wiktionary.org/wiki/your",
+     "g": "gramatical"
+    },
+    "name": {
+     "lema": "name",
+     "classe": "substantivo",
+     "def": [
+      "Palavra ou locução nominal que designa uma pessoa, lugar, classe ou coisa em particular."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/name",
+     "card": "en-p145"
+    },
+    "the": {
+     "lema": "the",
+     "classe": "artigo definido",
+     "def": [
+      "Usado antes de um sintagma nominal para mostrar que ele é definidamente identificável."
+     ],
+     "defEs": "Artículo definido: el, la, los, las.",
+     "wiki": "https://en.wiktionary.org/wiki/the",
+     "g": "gramatical"
+    },
+    "livelong": {
+     "lema": "livelong",
+     "classe": "adjetivo",
+     "def": [
+      "Total, completo, inteiro."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/livelong",
+     "card": "en-p1082"
+    },
+    "day": {
+     "lema": "day",
+     "classe": "substantivo",
+     "def": [
+      "O tempo em que o Sol está acima do horizonte e ilumina o céu."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/day",
+     "card": "en-p289"
+    },
+    "to#2": {
+     "lema": "to",
+     "classe": "preposição",
+     "def": [
+      "Usado para indicar o alvo ou o destinatário de uma ação."
+     ],
+     "defEs": "Preposición: a, para (indica el destinatario).",
+     "wiki": "https://en.wiktionary.org/wiki/to",
+     "g": "gramatical"
+    },
+    "an": {
+     "lema": "a",
+     "classe": "artigo indefinido",
+     "forma": "variante usada diante de som vocálico («an»)",
+     "def": [
+      "Um exemplar não específico de (algo); o artigo indefinido."
+     ],
+     "defEs": "Artículo indefinido: un, una (forma de «a» ante sonido vocálico).",
+     "wiki": "https://en.wiktionary.org/wiki/a",
+     "g": "gramatical"
+    },
+    "admiring": {
+     "lema": "admire",
+     "classe": "verbo",
+     "forma": "particípio presente, usado como adjetivo",
+     "def": [
+      "Olhar com um sentimento elevado de prazer, como algo que desperta aprovação, estima ou reverência."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/admire",
+     "card": "en-p1068"
+    },
+    "bog": {
+     "lema": "bog",
+     "classe": "substantivo",
+     "def": [
+      "Área de vegetação em decomposição (em especial musgo de esfagno) que forma um terreno úmido e esponjoso, mole demais para se andar."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/bog",
+     "card": "en-p1083"
+    }
+   },
+   "fila": 1
   },
   {
-   "id": "txt-en-007",
+   "id": "robert-louis-stevenson/requiem",
    "idioma": "en",
-   "tipo": "prosa",
-   "titulo": "Gettysburg Address",
-   "autor": "Abraham Lincoln",
-   "obra": "Gettysburg Address (cópia Bliss)",
-   "ano": 1863,
-   "dominio": "Abraham Lincoln morreu em 1865; o discurso é de 1863. Domínio público há mais de um século e meio.",
-   "fonte": "https://en.wikisource.org/wiki/Gettysburg_Address_(Bliss_copy)",
-   "recorte": "as cinco primeiras frases do discurso (são dez)",
-   "traducao": "em prosa",
-   "nota": "O discurso de dois minutos que Lincoln fez em novembro de 1863, na inauguração do cemitério militar de Gettysburg, quatro meses depois da batalha. «Four score» são quatro vintenas, e a conta de oitenta e sete anos volta a 1776, à Declaração de Independência. «We are met» é o «estamos reunidos» antigo, com «be» no lugar de «have». Em «that that nation might live», o primeiro «that» é «para que», e o segundo, «aquela».",
-   "notaEs": "El discurso de dos minutos que Lincoln pronunció en noviembre de 1863, en la inauguración del cementerio militar de Gettysburg, cuatro meses después de la batalla. «Four score» son cuatro veintenas, y la cuenta de ochenta y siete años vuelve a 1776, a la Declaración de Independencia. «We are met» es el «estamos reunidos» antiguo, con «be» en lugar de «have». En «that that nation might live», el primer «that» es «para que», y el segundo, «aquella».",
+   "tipo": "poema",
+   "titulo": "Requiem",
+   "autor": "Robert Louis Stevenson",
+   "ano": 1887,
+   "biblioteca": "/biblioteca/robert-louis-stevenson/requiem/",
    "blocos": [
     [
      {
-      "en": "Four score and seven years ago our fathers brought forth, on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.",
-      "pt": "Há oitenta e sete anos, os nossos pais fizeram nascer, neste continente, uma nação nova, concebida na Liberdade e dedicada à proposição de que todos os homens são criados iguais.",
-      "es": "Hace ochenta y siete años, nuestros padres dieron a luz, en este continente, una nación nueva, concebida en la Libertad y dedicada a la proposición de que todos los hombres son creados iguales.",
+      "t": "Under the wide and starry sky,",
+      "p": [
+       [
+        "Under",
+        "under"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "the",
+        "the"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "wide",
+        "wide"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "and",
+        "and"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "starry",
+        "starry"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sky",
+        "sky"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
       "requer": [
-       "en-p1040",
-       "en-p1041",
-       "en-p1042",
-       "en-p254",
-       "en-p943",
-       "en-p1043",
-       "en-p1044",
-       "en-p1045",
-       "en-p310",
-       "en-p1046",
-       "en-p1047",
-       "en-p1048",
-       "en-p1049",
-       "en-p1050",
-       "en-p239",
-       "en-p1035",
+       "en-p1069",
+       "en-p1084",
+       "en-p1070"
+      ]
+     },
+     {
+      "t": "Dig the grave and let me lie.",
+      "p": [
+       [
+        "Dig",
+        "dig"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "the",
+        "the"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "grave",
+        "grave"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "and",
+        "and"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "let",
+        "let"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "me",
+        "me"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "lie",
+        "lie"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "en-p774",
+       "en-p1071",
+       "en-p234",
+       "en-p338"
+      ]
+     },
+     {
+      "t": "Glad did I live and gladly die,",
+      "p": [
+       [
+        "Glad",
+        "glad"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "did",
+        "did"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "I",
+        "i"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "live",
+        "live"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "and",
+        "and"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "gladly",
+        "gladly"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "die",
+        "die"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "en-p1072",
+       "en-p231",
+       "en-p267",
+       "en-p1085",
+       "en-p1073"
+      ]
+     },
+     {
+      "t": "And I laid me down with a will.",
+      "p": [
+       [
+        "And",
+        "and"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "I",
+        "i"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "laid",
+        "laid"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "me",
+        "me#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "down",
+        "down"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "with",
+        "with"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "a",
+        "a"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "will",
+        "will"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "en-p1074",
+       "en-p962",
+       "en-p235"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "This be the verse you grave for me:",
+      "p": [
+       [
+        "This",
+        "this"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "be",
+        "be"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "the",
+        "the"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "verse",
+        "verse"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "you",
+        "you"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "grave",
+        "grave#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "for",
+        "for"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "me",
+        "me"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
        "en-p229",
-       "en-p1051",
-       "en-p1052"
+       "en-p1075",
+       "en-p1086"
       ]
      },
      {
-      "en": "Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure.",
-      "pt": "Agora estamos empenhados numa grande guerra civil, que põe à prova se essa nação, ou qualquer nação assim concebida e assim dedicada, pode durar muito tempo.",
-      "es": "Ahora estamos empeñados en una gran guerra civil, que pone a prueba si esa nación, o cualquier nación así concebida y así dedicada, puede perdurar mucho tiempo.",
+      "t": "Here he lies where he longed to be;",
+      "p": [
+       [
+        "Here",
+        "here"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "he",
+        "he"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "lies",
+        "lies"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "where",
+        "where"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "he",
+        "he"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "longed",
+        "longed"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "to",
+        "to"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "be",
+        "be#2"
+       ],
+       [
+        ";",
+        null
+       ]
+      ],
       "requer": [
-       "en-p261",
-       "en-p1053",
-       "en-p1054",
-       "en-p1055",
-       "en-p999",
-       "en-p1056",
-       "en-p353",
-       "en-p315",
-       "en-p232",
-       "en-p259",
-       "en-p1057"
-      ]
-     },
-     {
-      "en": "We are met on a great battle-field of that war.",
-      "pt": "Estamos reunidos num grande campo de batalha dessa guerra.",
-      "es": "Estamos reunidos en un gran campo de batalla de esa guerra.",
-      "requer": [
-       "en-p438",
-       "en-p1058"
-      ]
-     },
-     {
-      "en": "We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live.",
-      "pt": "Viemos dedicar uma parte desse campo como última morada daqueles que aqui deram a vida para que essa nação pudesse viver.",
-      "es": "Hemos venido a dedicar una parte de ese campo como última morada de quienes aquí dieron la vida para que esa nación pudiera vivir.",
-      "requer": [
-       "en-p230",
-       "en-p255",
-       "en-p1059",
-       "en-p1060",
-       "en-p1061",
-       "en-p1062",
        "en-p241",
-       "en-p264",
-       "en-p1036",
-       "en-p363",
-       "en-p267"
+       "en-p338",
+       "en-p259",
+       "en-p229"
       ]
      },
      {
-      "en": "It is altogether fitting and proper that we should do this.",
-      "pt": "É de todo adequado e justo que façamos isto.",
-      "es": "Es del todo adecuado y justo que hagamos esto.",
+      "t": "Home is the sailor, home from sea,",
+      "p": [
+       [
+        "Home",
+        "home"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "is",
+        "is"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "the",
+        "the"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sailor",
+        "sailor"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "home",
+        "home"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "from",
+        "from"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sea",
+        "sea"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
       "requer": [
-       "en-p1063",
-       "en-p1064",
-       "en-p1065",
-       "en-p262",
-       "en-p231"
+       "en-p321",
+       "en-p229",
+       "en-p1076",
+       "en-p945"
+      ]
+     },
+     {
+      "t": "And the hunter home from the hill.",
+      "p": [
+       [
+        "And",
+        "and"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "the",
+        "the"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "hunter",
+        "hunter"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "home",
+        "home"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "from",
+        "from"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "the",
+        "the"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "hill",
+        "hill"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "en-p1077",
+       "en-p321",
+       "en-p618"
       ]
      }
     ]
    ],
    "requerTodas": [
-    "en-p1040",
-    "en-p1041",
-    "en-p1042",
-    "en-p254",
-    "en-p943",
-    "en-p1043",
-    "en-p1044",
-    "en-p1045",
-    "en-p310",
-    "en-p1046",
-    "en-p1047",
-    "en-p1048",
-    "en-p1049",
-    "en-p1050",
-    "en-p239",
-    "en-p1035",
-    "en-p229",
-    "en-p1051",
-    "en-p1052",
-    "en-p261",
-    "en-p1053",
-    "en-p1054",
-    "en-p1055",
-    "en-p999",
-    "en-p1056",
-    "en-p353",
-    "en-p315",
-    "en-p232",
-    "en-p259",
-    "en-p1057",
-    "en-p438",
-    "en-p1058",
-    "en-p230",
-    "en-p255",
-    "en-p1059",
-    "en-p1060",
-    "en-p1061",
-    "en-p1062",
-    "en-p241",
-    "en-p264",
-    "en-p1036",
-    "en-p363",
+    "en-p1069",
+    "en-p1084",
+    "en-p1070",
+    "en-p774",
+    "en-p1071",
+    "en-p234",
+    "en-p338",
+    "en-p1072",
+    "en-p231",
     "en-p267",
-    "en-p1063",
-    "en-p1064",
-    "en-p1065",
-    "en-p262",
-    "en-p231"
-   ]
+    "en-p1085",
+    "en-p1073",
+    "en-p1074",
+    "en-p962",
+    "en-p235",
+    "en-p229",
+    "en-p1075",
+    "en-p1086",
+    "en-p241",
+    "en-p259",
+    "en-p321",
+    "en-p1076",
+    "en-p945",
+    "en-p1077",
+    "en-p618"
+   ],
+   "destinos": {
+    "under": {
+     "lema": "under",
+     "classe": "preposição",
+     "def": [
+      "Debaixo de; abaixo de; na parte de baixo ou na área coberta por algo."
+     ],
+     "defEs": "Preposición: bajo, debajo de.",
+     "wiki": "https://en.wiktionary.org/wiki/under",
+     "g": "gramatical"
+    },
+    "the": {
+     "lema": "the",
+     "classe": "artigo definido",
+     "def": [
+      "O, a, os, as: indica algo já identificado ou conhecido."
+     ],
+     "defEs": "Artículo definido: el, la, los, las.",
+     "wiki": "https://en.wiktionary.org/wiki/the",
+     "g": "gramatical"
+    },
+    "wide": {
+     "lema": "wide",
+     "classe": "adjetivo",
+     "def": [
+      "Que tem grande extensão física de um lado a outro; largo, amplo."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/wide",
+     "card": "en-p1069"
+    },
+    "and": {
+     "lema": "and",
+     "classe": "conjunção",
+     "def": [
+      "Conjunção coordenativa que liga dois elementos, tomados em conjunto ou em acréscimo um ao outro."
+     ],
+     "defEs": "Conjunción: y.",
+     "wiki": "https://en.wiktionary.org/wiki/and",
+     "g": "gramatical"
+    },
+    "starry": {
+     "lema": "starry",
+     "classe": "adjetivo",
+     "def": [
+      "Em que há estrelas visíveis; estrelado."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/starry",
+     "card": "en-p1084"
+    },
+    "sky": {
+     "lema": "sky",
+     "classe": "substantivo",
+     "def": [
+      "A atmosfera acima de um ponto dado, em especial como se vê da superfície da Terra, lugar onde se veem o sol, a lua, as estrelas e as nuvens; o céu."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/sky",
+     "card": "en-p1070"
+    },
+    "dig": {
+     "lema": "dig",
+     "classe": "verbo",
+     "forma": "imperativo",
+     "def": [
+      "Remover terra compacta do caminho, em especial para baixo, a fim de abrir um buraco; cavar."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/dig",
+     "card": "en-p774"
+    },
+    "grave": {
+     "lema": "grave",
+     "classe": "substantivo",
+     "def": [
+      "Escavação na terra como lugar de sepultamento; cova, sepultura."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/grave",
+     "card": "en-p1071"
+    },
+    "let": {
+     "lema": "let",
+     "classe": "verbo",
+     "def": [
+      "Permitir; não impedir."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/let",
+     "card": "en-p234"
+    },
+    "me": {
+     "lema": "me",
+     "classe": "pronome pessoal",
+     "def": [
+      "Primeira pessoa do singular, como objeto (de um verbo, preposição etc.)."
+     ],
+     "defEs": "Pronombre personal, complemento: me, mí.",
+     "wiki": "https://en.wiktionary.org/wiki/me",
+     "g": "gramatical"
+    },
+    "lie": {
+     "lema": "lie",
+     "classe": "verbo",
+     "def": [
+      "Repousar em posição horizontal sobre uma superfície; estar deitado."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/lie",
+     "card": "en-p338"
+    },
+    "glad": {
+     "lema": "glad",
+     "classe": "adjetivo",
+     "def": [
+      "Contente; feliz; satisfeito."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/glad",
+     "card": "en-p1072"
+    },
+    "did": {
+     "lema": "do",
+     "classe": "verbo auxiliar",
+     "forma": "passado",
+     "def": [
+      "Marcador sintático de ênfase, nos modos indicativo, imperativo e subjuntivo."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/do",
+     "card": "en-p231"
+    },
+    "i": {
+     "lema": "I",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome da primeira pessoa do singular, caso reto (sujeito): quem fala ou escreve."
+     ],
+     "defEs": "Pronombre personal: yo.",
+     "wiki": "https://en.wiktionary.org/wiki/I",
+     "g": "gramatical"
+    },
+    "live": {
+     "lema": "live",
+     "classe": "verbo",
+     "def": [
+      "Estar vivo; ter vida."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/live",
+     "card": "en-p267"
+    },
+    "gladly": {
+     "lema": "gladly",
+     "classe": "advérbio",
+     "def": [
+      "De modo contente; alegremente; de bom grado."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/gladly",
+     "card": "en-p1085"
+    },
+    "die": {
+     "lema": "die",
+     "classe": "verbo",
+     "def": [
+      "Deixar de viver; tornar-se morto; passar pela morte."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/die",
+     "card": "en-p1073"
+    },
+    "laid": {
+     "lema": "lay",
+     "classe": "verbo",
+     "forma": "passado",
+     "def": [
+      "Pôr em posição de repouso ou na horizontal; deitar."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/lay",
+     "card": "en-p1074"
+    },
+    "me#2": {
+     "lema": "me",
+     "classe": "pronome pessoal",
+     "def": [
+      "Primeira pessoa do singular, como objeto (de um verbo, preposição etc.)."
+     ],
+     "defEs": "Pronombre personal, complemento: me. «I laid me down», me acosté.",
+     "wiki": "https://en.wiktionary.org/wiki/me",
+     "g": "gramatical"
+    },
+    "down": {
+     "lema": "down",
+     "classe": "advérbio",
+     "def": [
+      "De uma posição mais alta para uma mais baixa; para baixo."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/down",
+     "card": "en-p962"
+    },
+    "with": {
+     "lema": "with",
+     "classe": "preposição",
+     "def": [
+      "Indica o modo ou a disposição com que algo se faz; com."
+     ],
+     "defEs": "Preposición: con.",
+     "wiki": "https://en.wiktionary.org/wiki/with",
+     "g": "gramatical"
+    },
+    "a": {
+     "lema": "a",
+     "classe": "artigo indefinido",
+     "def": [
+      "Um, uma: indica algo ainda não identificado, em geral singular."
+     ],
+     "defEs": "Artículo indefinido: un, una.",
+     "wiki": "https://en.wiktionary.org/wiki/a",
+     "g": "gramatical"
+    },
+    "will": {
+     "lema": "will",
+     "classe": "substantivo",
+     "def": [
+      "Firmeza de propósito; fixidez de intenção; determinação."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/will",
+     "card": "en-p235"
+    },
+    "this": {
+     "lema": "this",
+     "classe": "determinante",
+     "def": [
+      "O (coisa) que está aqui, perto de quem fala; este, esta."
+     ],
+     "defEs": "Demostrativo: este, esta, esto.",
+     "wiki": "https://en.wiktionary.org/wiki/this",
+     "g": "gramatical"
+    },
+    "be": {
+     "lema": "be",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo (arcaico)",
+     "def": [
+      "Declarar que o sujeito e o predicativo são idênticos ou equivalentes; ser."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/be",
+     "card": "en-p229"
+    },
+    "verse": {
+     "lema": "verse",
+     "classe": "substantivo",
+     "def": [
+      "Forma poética de metro regular e esquema fixo de rimas; poesia em geral."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/verse",
+     "card": "en-p1075"
+    },
+    "you": {
+     "lema": "you",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome da segunda pessoa (singular ou plural), designando a pessoa ou as pessoas a quem se fala."
+     ],
+     "defEs": "Pronombre personal de segunda persona: tú, usted, vosotros, ustedes.",
+     "wiki": "https://en.wiktionary.org/wiki/you",
+     "g": "gramatical"
+    },
+    "grave#2": {
+     "lema": "grave",
+     "classe": "verbo",
+     "def": [
+      "(Arcaico) Cortar ou entalhar, como letras ou figuras, em superfície dura; gravar, inscrever."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/grave",
+     "card": "en-p1086"
+    },
+    "for": {
+     "lema": "for",
+     "classe": "preposição",
+     "def": [
+      "Em benefício de, em favor de (alguém ou algo)."
+     ],
+     "defEs": "Preposición: para, por.",
+     "wiki": "https://en.wiktionary.org/wiki/for",
+     "g": "gramatical"
+    },
+    "here": {
+     "lema": "here",
+     "classe": "advérbio",
+     "def": [
+      "Neste lugar (percebido como próximo de quem fala); aqui."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/here",
+     "card": "en-p241"
+    },
+    "he": {
+     "lema": "he",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pessoa do sexo masculino já conhecida ou mencionada; ele."
+     ],
+     "defEs": "Pronombre personal: él.",
+     "wiki": "https://en.wiktionary.org/wiki/he",
+     "g": "gramatical"
+    },
+    "lies": {
+     "lema": "lie",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Repousar em posição horizontal sobre uma superfície; estar deitado."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/lie",
+     "card": "en-p338"
+    },
+    "where": {
+     "lema": "where",
+     "classe": "advérbio",
+     "def": [
+      "No lugar em que, ou a um lugar em que; onde."
+     ],
+     "defEs": "Adverbio: donde, adonde.",
+     "wiki": "https://en.wiktionary.org/wiki/where",
+     "g": "gramatical"
+    },
+    "longed": {
+     "lema": "long",
+     "classe": "verbo",
+     "forma": "passado",
+     "def": [
+      "Aguardar, aspirar, desejar muito (que algo aconteça ou seja verdade); ansiar."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/long",
+     "card": "en-p259"
+    },
+    "to": {
+     "lema": "to",
+     "classe": "partícula",
+     "def": [
+      "Partícula que marca o verbo seguinte como infinitivo."
+     ],
+     "defEs": "Partícula que marca el infinitivo: «to be», estar, ser.",
+     "wiki": "https://en.wiktionary.org/wiki/to",
+     "g": "gramatical"
+    },
+    "be#2": {
+     "lema": "be",
+     "classe": "verbo",
+     "def": [
+      "(Hoje sobretudo literário) Existir; ter existência real; estar vivo."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/be",
+     "card": "en-p229"
+    },
+    "home": {
+     "lema": "home",
+     "classe": "advérbio",
+     "def": [
+      "Para a sua casa; ao local de residência ou ao lugar em que se é de casa."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/home",
+     "card": "en-p321"
+    },
+    "is": {
+     "lema": "be",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Declarar que o sujeito e o predicativo são idênticos ou equivalentes; ser, estar."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/be",
+     "card": "en-p229"
+    },
+    "sailor": {
+     "lema": "sailor",
+     "classe": "substantivo",
+     "def": [
+      "Pessoa que navega; aquela cuja ocupação é navegar em navios ou outras embarcações; marinheiro."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/sailor",
+     "card": "en-p1076"
+    },
+    "from": {
+     "lema": "from",
+     "classe": "preposição",
+     "def": [
+      "Indica origem, procedência ou ponto de partida; de."
+     ],
+     "defEs": "Preposición: de, desde (indica el origen).",
+     "wiki": "https://en.wiktionary.org/wiki/from",
+     "g": "gramatical"
+    },
+    "sea": {
+     "lema": "sea",
+     "classe": "substantivo",
+     "def": [
+      "Grande massa de água salgada; o mar."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/sea",
+     "card": "en-p945"
+    },
+    "hunter": {
+     "lema": "hunter",
+     "classe": "substantivo",
+     "def": [
+      "Aquele que caça por esporte ou para alimento; caçador."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/hunter",
+     "card": "en-p1077"
+    },
+    "hill": {
+     "lema": "hill",
+     "classe": "substantivo",
+     "def": [
+      "Elevação de terreno menor que uma montanha; colina, morro."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/hill",
+     "card": "en-p618"
+    }
+   },
+   "fila": 2
   }
  ]
 }

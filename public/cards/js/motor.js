@@ -1437,21 +1437,23 @@ window.Motor = (function () {
   }
 
   /* ── os textos ──
-     Desde outubro de 2026 (manual, seção 17.4; decisão do Gere) o texto não
-     tem card: é a recompensa. A partir de DOMINADOS_PARA_TEXTOS cards
-     dominados, a lista de espera ganha UM POEMA e UM TEXTO EM PROSA — dois,
-     para o poema de palavra rara não travar a fila de textos. As palavras
-     deles estreiam como as das frases em vista, e o texto aparece inteiro na
-     meia-noite seguinte ao domínio da última (a mesma régua da frase, em
-     liberadaEm). Lido, sai da lista, e o próximo do mesmo tipo entra. Isto
-     substitui a trilha de 01/10, que dava um card por verso. */
-  const DOMINADOS_PARA_TEXTOS = 400;
-  const TIPOS_DE_TEXTO = ['poema', 'prosa'];
+     Desde 20/10/2026 (PLANO.md, seção 9; decisões do Gere) o texto vem da
+     Biblioteca e não espera mais 400 dominados: todo mundo começa com um poema
+     automático, a pessoa pode escolher até MAX_TEXTOS (ou nenhum), e as
+     palavras dos textos escolhidos ocupam 1 de cada TEXTO_A_CADA vagas de card
+     novo, na ordem de leitura, em rodízio entre os textos. O verso aparece na
+     hora em que a última palavra dele fica sabida (não é card: não espera a
+     meia-noite). A escolha mora em textos.emVista.escolha = { textos: [ids],
+     em: ISO, propria: bool }. */
+  const MAX_TEXTOS = 3;
+  const TEXTO_A_CADA = 3;
+  /* o poema automático que a pessoa já lê pela metade (o nivelamento deu as
+     palavras dele) é pulado: começar por ele não ensinaria nada */
+  const QUASE_LIDO = 0.5;
 
-  /* Desde 09/10/2026 (PLANO.md, 7.1 e 7.2) contam também a palavra
-     transparente total do curso e a presumida pelo nivelamento que ainda não
-     foi respondida: as duas são dominadas para o motor, e os 400 dos textos
-     são de palavras que a pessoa sabe, não de respostas que ela deu. */
+  /* Conta também a palavra transparente total do curso e a presumida pelo
+     nivelamento que ainda não foi respondida (PLANO.md, 7.1 e 7.2): as duas
+     são dominadas para o motor. Fica para o painel. */
   function dominadosNoTotal(estados) {
     let n = 0;
     for (const id in estados) if (estados[id] && estados[id].etapa === 'dominado') n++;
@@ -1462,90 +1464,103 @@ window.Motor = (function () {
     return n;
   }
 
-  function textosLiberados(estados) {
-    return dominadosNoTotal(estados) >= DOMINADOS_PARA_TEXTOS;
-  }
-
-  /* O poema e a prosa da vez. Fica o que já estava, se ainda não foi lido;
-     no lugar do lido entra o do mesmo tipo mais perto de destravar (menos
-     palavras por dominar), e no empate o primeiro da lista. Texto com palavra
-     sem card («+») espera a leva que a cria. */
-  function atualizarTextosEmVista(atual, textos, estados, arquivados, lidos) {
-    const saida = {};
-    const porId = {};
-    (textos || []).forEach(t => { porId[t.id] = t; });
-    const pode = t => t && Array.isArray(t.requerTodas) && !(lidos && lidos[t.id]) &&
-      !situacaoDaFrase(t, estados, arquivados).buraco;
-    for (const tipo of TIPOS_DE_TEXTO) {
-      const ja = atual && atual[tipo] && porId[atual[tipo]];
-      if (ja && ja.tipo === tipo && pode(ja)) { saida[tipo] = ja.id; continue; }
-      let melhor = null, nota = Infinity;
-      for (const t of textos || []) {
-        if (t.tipo !== tipo || !pode(t)) continue;
-        const n = situacaoDaFrase(t, estados, arquivados).faltamDominar;
-        if (n < nota) { nota = n; melhor = t; }
-      }
-      saida[tipo] = melhor ? melhor.id : null;
-    }
-    return saida;
-  }
-
-  /* As palavras que os dois textos da vez ainda não mostraram, na ordem de
-     leitura, alternando poema e prosa. */
-  function palavrasDosTextos(emVista, textos, estados, arquivados) {
-    const porId = {};
-    (textos || []).forEach(t => { porId[t.id] = t; });
-    const listas = TIPOS_DE_TEXTO.map(tipo => {
-      const t = emVista && emVista[tipo] && porId[emVista[tipo]];
-      return t ? situacaoDaFrase(t, estados, arquivados).naoVistas : [];
-    });
-    const saida = [], ja = new Set();
-    for (let k = 0; k < Math.max(...listas.map(l => l.length), 0); k++) {
-      for (const l of listas) if (k < l.length && !ja.has(l[k])) { ja.add(l[k]); saida.push(l[k]); }
-    }
-    return saida;
-  }
-
-  /* Quanto do texto já está de pé: palavras dominadas (ou arquivadas) sobre
-     o total, e se ele já pode ser lido. */
-  function andamentoDoTexto(texto, estados, agora, arquivados) {
-    const req = requeridas(texto);
-    const faltam = situacaoDaFrase(texto, estados, arquivados).faltamDominar;
-    return {
-      palavras: req.length,
-      dominadas: req.length - faltam,
-      pronto: Array.isArray(texto && texto.requerTodas) && liberado(texto, estados, agora, arquivados)
-    };
-  }
-
-  /* ── o poema verso a verso ──
-     Pedido do Gere, 07/10/2026: o poema não espera ficar completo. Cada
-     linha diz em «requer» as palavras que traz (o build monta o requerTodas
-     a partir delas, na ordem de leitura), e o verso k aparece quando as
-     palavras dos versos 1 a k estão sabidas, na meia-noite seguinte, a mesma
-     régua da frase. O aluno vê 1/8, depois 2/8, até o poema inteiro. Prosa e
-     poema sem «requer» por linha continuam aparecendo só inteiros. */
   function versosDoTexto(texto) {
     return ((texto && texto.blocos) || []).reduce((a, b) => a.concat(b || []), []);
   }
 
-  function revelaPorVerso(texto) {
+  /* Quantos versos, a contar do primeiro, já podem ser lidos: todas as
+     palavras deles sabidas (dominadas, arquivadas, transparentes ou
+     presumidas). O verso sem palavra de card (só artigo, preposição, nome)
+     vem junto com o seguinte, e não sozinho. */
+  function versosProntos(texto, estados, arquivados) {
     const vs = versosDoTexto(texto);
-    return !!texto && texto.tipo === 'poema' && vs.length > 0 && vs.every(l => l && Array.isArray(l.requer));
-  }
-
-  /* Quantos versos, a contar do primeiro, já podem ser lidos. */
-  function versosLiberados(texto, estados, agora, arquivados) {
-    const vs = versosDoTexto(texto);
-    if (!revelaPorVerso(texto)) return liberado(texto, estados, agora, arquivados) ? vs.length : 0;
-    const ate = [];
     let k = 0;
     for (const l of vs) {
-      ate.push(...l.requer);
-      if (!liberado({ requerTodas: ate }, estados, agora, arquivados)) break;
+      const req = (l && l.requer) || [];
+      if (req.some(id => String(id)[0] === '+' || sabidaEm(id, estados || {}, arquivados) === Infinity)) break;
       k++;
     }
+    while (k > 0 && k < vs.length && !((vs[k - 1] && vs[k - 1].requer) || []).length) k--;
     return k;
+  }
+
+  /* Quantos versos a pessoa já viu (textos.lidos guarda «<id>#<k>» por verso,
+     e «<id>» quando o texto fechou). */
+  function versosVistos(texto, lidos) {
+    if (!texto) return 0;
+    const total = versosDoTexto(texto).length;
+    if (lidos && lidos[texto.id]) return total;
+    let k = 0;
+    const pre = texto.id + '#';
+    for (const chave in (lidos || {})) {
+      if (chave.indexOf(pre) === 0) k = Math.max(k, Number(chave.slice(pre.length)) || 0);
+    }
+    return Math.min(k, total);
+  }
+
+  function textoTerminado(texto, lidos) {
+    return !!(texto && lidos && lidos[texto.id]);
+  }
+
+  /* Palavras sabidas sobre o total, e os versos prontos sobre o total. */
+  function andamentoDoTexto(texto, estados, arquivados) {
+    const req = requeridas(texto);
+    const faltam = situacaoDaFrase(texto, estados || {}, arquivados).faltamDominar;
+    const versos = versosDoTexto(texto).length;
+    const prontos = versosProntos(texto, estados, arquivados);
+    return { palavras: req.length, sabidas: req.length - faltam, faltam: faltam, versos: versos, prontos: prontos };
+  }
+
+  /* A fila dos poemas automáticos do curso (o campo «fila», do mais fácil ao
+     mais difícil). */
+  function textosAutomaticos(textos) {
+    return (textos || []).filter(t => t && typeof t.fila === 'number').sort((a, b) => a.fila - b.fila);
+  }
+
+  /* A escolha em vigor. A da pessoa («propria») manda como está, só sem os
+     textos que saíram do baralho. Sem escolha própria vale o automático: o que
+     já estava, enquanto não termina; terminado (ou na primeira vez), o
+     próximo da fila que a pessoa ainda não lê pela metade. Devolve o MESMO
+     objeto quando nada muda, para o app saber que não há o que gravar. */
+  function escolhaDosTextos(escolha, textos, estados, arquivados, lidos, agora) {
+    const porId = {};
+    (textos || []).forEach(t => { porId[t.id] = t; });
+    if (escolha && escolha.propria) {
+      const ids = (Array.isArray(escolha.textos) ? escolha.textos : []).filter(id => porId[id]).slice(0, MAX_TEXTOS);
+      if (ids.length === (escolha.textos || []).length) return escolha;
+      return { textos: ids, em: escolha.em, propria: true };
+    }
+    const atual = escolha && Array.isArray(escolha.textos) ? escolha.textos[0] : null;
+    if (atual && porId[atual] && !textoTerminado(porId[atual], lidos)) return escolha;
+    const fila = textosAutomaticos(textos).filter(t => !textoTerminado(t, lidos));
+    const novo = fila.find(t => {
+      const a = andamentoDoTexto(t, estados, arquivados);
+      return !a.versos || a.prontos / a.versos < QUASE_LIDO;
+    }) || fila[0] || null;
+    const ids = novo ? [novo.id] : [];
+    if (escolha && !escolha.propria && Array.isArray(escolha.textos) &&
+        escolha.textos.length === ids.length && escolha.textos.every((x, i) => x === ids[i])) return escolha;
+    return { textos: ids, em: new Date(agora || Date.now()).toISOString(), propria: false };
+  }
+
+  /* Os textos que estão soltando palavras: os da escolha que ainda não
+     terminaram. */
+  function textosAtivos(escolha, textos, lidos) {
+    const porId = {};
+    (textos || []).forEach(t => { porId[t.id] = t; });
+    return ((escolha && escolha.textos) || []).map(id => porId[id]).filter(t => t && !textoTerminado(t, lidos));
+  }
+
+  /* As palavras que os textos ativos ainda não mostraram, cada texto na ordem
+     de leitura, em rodízio entre eles. */
+  function palavrasDosTextos(ativos, estados, arquivados) {
+    const listas = (ativos || []).map(t => situacaoDaFrase(t, estados || {}, arquivados).naoVistas);
+    const saida = [], ja = new Set();
+    const n = Math.max(0, ...listas.map(l => l.length));
+    for (let k = 0; k < n; k++) {
+      for (const l of listas) if (k < l.length && !ja.has(l[k])) { ja.add(l[k]); saida.push(l[k]); }
+    }
+    return saida;
   }
 
   /* O peso de cada fila no sorteio. «tem» diz quais filas têm card para dar;
@@ -2104,11 +2119,13 @@ window.Motor = (function () {
         if (inversa) est.etapa = 'inversa-escrita';
         else est.etapa = 'escrita';
       } else if (est.seguidas >= acertosParaVirar(est, inversa)) {
-        est.etapa = inversa ? 'dominado' : 'inversa-multipla';
+        /* o card de leitura não tem volta: a ida fechada já é o domínio */
+        const fecha = inversa || ehLeitura(est.id);
+        est.etapa = fecha ? 'dominado' : 'inversa-multipla';
         /* a primeira vez só: é dela que a frase de uso conta o dia seguinte */
-        if (inversa && !est.dominadoEm) est.dominadoEm = new Date().toISOString();
+        if (fecha && !est.dominadoEm) est.dominadoEm = new Date().toISOString();
         /* e quantas respostas custou chegar lá, para o painel */
-        if (inversa && est.ateDominar === undefined) est.ateDominar = est.vistas;
+        if (fecha && est.ateDominar === undefined) est.ateDominar = est.vistas;
         est.seguidas = 0;   // a direção nova começa do zero
         /* «revisoes» não zera aqui. Quem chega pela primeira vez já vem com
            zero, e quem está voltando de um tropeço tem de reencontrar o
@@ -2180,6 +2197,11 @@ window.Motor = (function () {
   };
 
   function faseDe(est) {
+    /* o card de leitura só conhece a ida, também quando dominado */
+    if (est && ehLeitura(est.id)) {
+      if (est.etapa === 'dominado' || est.etapa === 'escrita') return { direcao: IDA, modo: 'escrita' };
+      return { direcao: IDA, modo: 'multipla' };
+    }
     const f = FASES[(est && est.etapa)] || FASES['multipla'];
     return { direcao: f.volta ? VOLTA : IDA, modo: f.modo };
   }
@@ -2255,7 +2277,7 @@ window.Motor = (function () {
     for (const c of cards) {
       const e = estados[c.id];
       if (!e || !e.vistas || !g[c.nivel]) continue;
-      if (transparenteTotal(c.id)) continue;
+      if (transparenteTotal(c.id) || c.leitura) continue;
       const x = g[c.nivel];
 
       if (e.primeiraCerta !== undefined && !e.desafio) {
@@ -2816,15 +2838,20 @@ window.Motor = (function () {
   let DIVISA = 0;                         // nivelamento.divisa (0: sem nivelamento pela lista)
   let FORA_DA_DIVISA = Object.create(null); // nivelamento.fora: antes da divisa, mas não presumidos
   let UID = '';                           // para a data do presumido pela divisa
+  let LEITURA = Object.create(null);      // id → true: card de leitura (PLANO.md, 9.2)
 
   function usarTransparencias(cards) {
     TRANSP = Object.create(null);
     POS = Object.create(null);
     TIPO = Object.create(null);
     FALSO_AMIGO = Object.create(null);
+    LEITURA = Object.create(null);
     (cards || []).forEach(c => {
       if (!c) return;
-      if (c.transp === 'total' || c.transp === 'parecida') TRANSP[c.id] = c.transp;
+      if (c.leitura) LEITURA[c.id] = true;
+      /* no card de leitura, a «parecida» conta como total: ler é de graça, e
+         ele não tem a volta, que é onde a parecida estrearia */
+      if (c.transp === 'total' || c.transp === 'parecida') TRANSP[c.id] = c.leitura ? 'total' : c.transp;
       if (c.pos > 0) POS[c.id] = c.pos;
       TIPO[c.id] = c.tipo;
       if (temTag(c, ['falso-amigo'])) FALSO_AMIGO[c.id] = true;
@@ -2847,6 +2874,12 @@ window.Motor = (function () {
 
   function reativado(id) { return !!REATIVADOS[id]; }
 
+  /* O card de leitura (PLANO.md, 9.2): a palavra rara que só entra para quem
+     escolheu um texto que a pede. Só tem a primeira fase — a palavra na língua
+     ensinada, a resposta na língua de quem estuda —, fica dominado ao fim dela
+     e é revisto nessa mesma direção. */
+  function ehLeitura(id) { return !!LEITURA[id]; }
+
   /* O grau do card NESTE curso, já com o «estudar mesmo assim»: o card
      reativado volta a ser card comum. Aceita o card (lê o «transp» dele) ou
      o id (lê o que o app entregou em usarTransparencias). */
@@ -2854,7 +2887,8 @@ window.Motor = (function () {
     const card = cardOuId && typeof cardOuId === 'object' ? cardOuId : null;
     const id = card ? card.id : cardOuId;
     if (reativado(id)) return null;
-    const g = (card && card.transp) || TRANSP[id];
+    let g = (card && card.transp) || TRANSP[id];
+    if (g === 'parecida' && ((card && card.leitura) || LEITURA[id])) g = 'total';
     return g === 'total' || g === 'parecida' ? g : null;
   }
 
@@ -3668,8 +3702,8 @@ window.Motor = (function () {
     filaDe, pesosDasFilas, chancesDasFilas, sortearFila,
     urgencia, cumpriu, escolherNaFila, podeVoltar, INTERVALO_MINIMO, vezDoDominado, ESPACO_DOMINADO,
     ALVO_IDA_MIN, ALVO_IDA_MAX, ALVO_VOLTA_MIN, ALVO_VOLTA_MAX, alvoDaFila, acertoRecente, vezDoNovo, CARDS_DO_COMECO, NOVO_A_CADA_NO_COMECO, atrasadoQueFura,
-    DOMINADOS_PARA_TEXTOS, dominadosNoTotal, textosLiberados,
-    atualizarTextosEmVista, palavrasDosTextos, andamentoDoTexto, versosDoTexto, revelaPorVerso, versosLiberados,
+    MAX_TEXTOS, TEXTO_A_CADA, dominadosNoTotal, versosDoTexto, versosProntos, versosVistos, textoTerminado,
+    andamentoDoTexto, textosAutomaticos, escolhaDosTextos, textosAtivos, palavrasDosTextos, ehLeitura,
     liberado, liberadaEm, venceuEm, requeridas, arquivado, sabidaEm,
     situacaoDaFrase, atualizarEmVista, palavrasEmVista, FRASES_EM_VISTA,
     montarFila, alternativas, distratoresDinamicos, distratoresDaLingua, embaralhar,

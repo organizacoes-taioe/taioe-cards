@@ -70,16 +70,18 @@ window.TaioeCardsApp = function (ctx) {
   const NL = Motor.nivelamentoLista;
 
   /* ── os textos ──
-     Desde outubro de 2026 o texto não tem card: é a recompensa (manual, seção
-     17.4). Vem em data/textos-es.js com o original, a tradução e a lista das
-     palavras que exige; o app o mostra inteiro quando todas estão dominadas. */
+     Desde 20/10/2026 (PLANO.md, seção 9) os poemas vêm da Biblioteca, em
+     data/textos-<língua>.js: os versos com as palavras, o destino de cada
+     palavra (o card do lema, «gramatical» ou «nome») e a fila dos automáticos. */
   const TEXTOS = (window.TEXTOS && window.TEXTOS[L] && window.TEXTOS[L].textos) || [];
   const TEXTO_POR_ID = {};
   TEXTOS.forEach(txt => { TEXTO_POR_ID[txt.id] = txt; });
 
-  /* emVista: o poema e a prosa da vez; lidos: id → quando o texto apareceu */
+  /* emVista.escolha: os textos que a pessoa estuda ({ textos, em, propria });
+     poema e prosa ficaram do formato de antes; lidos: «<id>#<k>» por verso
+     visto e «<id>» pelo texto inteiro */
   function textosVazio() {
-    return { emVista: { poema: null, prosa: null }, lidos: {} };
+    return { emVista: { poema: null, prosa: null, escolha: null }, lidos: {} };
   }
 
 
@@ -182,7 +184,7 @@ window.TaioeCardsApp = function (ctx) {
     /* a trilha de 01/10 saiu; ninguém chegou a ligá-la */
     delete p.trilha;
     p.textos = Object.assign(textosVazio(), p.textos || {});
-    p.textos.emVista = Object.assign({ poema: null, prosa: null }, p.textos.emVista || {});
+    p.textos.emVista = Object.assign({ poema: null, prosa: null, escolha: null }, p.textos.emVista || {});
     p.textos.lidos = p.textos.lidos || {};
 
     /* Card apagado do baralho deixa para trás o estado dele. Sem varrer, ele
@@ -291,7 +293,10 @@ window.TaioeCardsApp = function (ctx) {
     const antes = Array.isArray(p.ineditos) ? p.ineditos : [];
     const conhecidos = new Set(antes);
     /* nem a transparente total nem o presumido estreiam como card novo */
-    const novo = id => !visto(id) && !fora(id) && !Motor.conhecidaSemEstado(id, p.cards) && solto(id);
+    /* o card de leitura (PLANO.md, 9.2) só estreia para quem estuda um texto que o pede */
+    const deTexto = palavrasDosAtivos(p);
+    const novo = id => !visto(id) && !fora(id) && !Motor.conhecidaSemEstado(id, p.cards) && solto(id) &&
+      (!Motor.ehLeitura(id) || deTexto.has(id));
     p.ineditos = antes.filter(id => PORID[id] && novo(id))
       .concat(CARDS.filter(c => !conhecidos.has(c.id) && novo(c.id)).map(c => c.id));
 
@@ -428,6 +433,23 @@ window.TaioeCardsApp = function (ctx) {
     });
   }
 
+  /* A escolha dos textos em vigor (o automático, sem escolha da pessoa) e as
+     palavras de todos os textos ativos. O automático só é escolhido depois do
+     nivelamento (ou da primeira resposta), para pular o poema que a pessoa já
+     lê pela metade. */
+  function textosAtivosDe(p) {
+    if (!TEXTOS.length) return [];
+    const tx = p.textos;
+    if (p.nivelamento || Object.keys(p.cards || {}).length) {
+      const e = Motor.escolhaDosTextos(tx.emVista.escolha, TEXTOS, p.cards, p.arquivados || {}, tx.lidos, Date.now());
+      if (e !== tx.emVista.escolha) tx.emVista.escolha = e;
+    }
+    return Motor.textosAtivos(tx.emVista.escolha, TEXTOS, tx.lidos);
+  }
+  function palavrasDosAtivos(p) {
+    return new Set(textosAtivosDe(p).flatMap(x => Motor.requeridas(x)));
+  }
+
   /* O baralho de inéditos é ordenado pelo desempenho: sai primeiro o nível
      que você ainda não domina mas já consegue acompanhar. Como agora ele é
      uma lista à parte, basta reordená-la — não há posição alheia a respeitar. */
@@ -473,21 +495,15 @@ window.TaioeCardsApp = function (ctx) {
       p.nivelamento && p.nivelamento.porNivel));
     p.emVista = Motor.atualizarEmVista(p.emVista, CARDS, PORID, p.cards, p.arquivados || {}, pesos);
     const naFila = new Set(resto);
-    let pedidas = Motor.palavrasEmVista(p.emVista, PORID, p.cards, p.arquivados || {})
-      .filter(id => naFila.has(id));
-    /* As palavras do poema e da prosa da vez (a partir de 400 dominados)
-       entram uma a cada duas das frases — se viessem depois de todas, nunca
-       chegariam, porque a lista de frases em vista se renova. */
-    let doTexto = [];
-    if (Motor.textosLiberados(p.cards)) {
-      p.textos = p.textos || textosVazio();
-      p.textos.emVista = Motor.atualizarTextosEmVista(p.textos.emVista, TEXTOS, p.cards, p.arquivados || {}, p.textos.lidos);
-      const jaPedida = new Set(pedidas);
-      doTexto = Motor.palavrasDosTextos(p.textos.emVista, TEXTOS, p.cards, p.arquivados || {})
-        .filter(id => naFila.has(id) && !jaPedida.has(id));
-    }
-    pedidas = intercalar(pedidas, doTexto, 2);
-    const pedidasSet = new Set(pedidas);
+    /* As palavras dos textos ativos (PLANO.md, 9.1) ficam com 1 de cada
+       TEXTO_A_CADA vagas de card novo, na ordem de leitura e em rodízio entre
+       os textos; saem das outras listas para não estrear por dois caminhos. */
+    const ativos = textosAtivosDe(p);
+    const doTexto = Motor.palavrasDosTextos(ativos, p.cards, p.arquivados || {}).filter(id => naFila.has(id));
+    const doTextoSet = new Set(doTexto);
+    const pedidas = Motor.palavrasEmVista(p.emVista, PORID, p.cards, p.arquivados || {})
+      .filter(id => naFila.has(id) && !doTextoSet.has(id));
+    const pedidasSet = new Set(pedidas.concat(doTexto));
     /* As frases de primeiros passos («requerTodas»: [], pedido do Gere,
        07/10/2026) não esperam palavra nenhuma: quem começa do zero já vê
        frases desde o primeiro dia, uma a cada duas palavras novas. */
@@ -510,7 +526,22 @@ window.TaioeCardsApp = function (ctx) {
       const vez = Math.max(0, 2 - desde);
       ordemDoResto = semLivres.slice(0, vez).concat([livres[0]], intercalar(semLivres.slice(vez), livres.slice(1), 2));
     }
-    p.ineditos = frescas.concat(intercalar(ordemDoResto, antigas, 2));
+    let fila = frescas.concat(intercalar(ordemDoResto, antigas, 2));
+    /* A fila se refaz a cada estreia, então a palavra do texto também não tem
+       lugar fixo: conta-se quantas estreias houve desde a última palavra de
+       texto, e a próxima entra quando chega a vez dela. Entra por último,
+       depois das frases, para nada empurrar o lugar dela. */
+    if (doTexto.length) {
+      const dosTextos = new Set(ativos.flatMap(x => Motor.requeridas(x)));
+      const estreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined)
+        .sort((x, y) => p.cards[y].estreouNa - p.cards[x].estreouNa);
+      let desde = 0;
+      while (desde < estreias.length && !dosTextos.has(estreias[desde])) desde++;
+      const cada = Motor.TEXTO_A_CADA - 1;
+      const vez = Math.max(0, cada - desde);
+      fila = fila.slice(0, vez).concat([doTexto[0]], intercalar(fila.slice(vez), doTexto.slice(1), cada));
+    }
+    p.ineditos = fila;
   }
 
   /* «cada» cards de «muitos», depois um de «poucos», até acabarem os dois. */
@@ -872,7 +903,7 @@ window.TaioeCardsApp = function (ctx) {
     chanceUsada = false;
     pausou = false;
 
-    el['meta-tipo'].textContent = nomeTipo(cardAtual.tipo);
+    el['meta-tipo'].textContent = nomeTipo(cardAtual.tipo) + (bruto.leitura ? ' · ' + t('card.leitura') : '');
     el['meta-modo'].textContent = t(modoAtual === 'multipla' ? 'modo.multipla' : 'modo.escrita');
 
     /* A frase destravada diz de que palavra veio — ela está aqui porque
@@ -983,12 +1014,6 @@ window.TaioeCardsApp = function (ctx) {
   /* «palavra» e «frase», na língua da interface */
   function nomeTipo(tipo) {
     return tipo === 'palavra' || tipo === 'frase' ? t('tipo.' + tipo) : tipo;
-  }
-
-  /* a linha da tradução do texto, quando o texto a traz na língua de quem
-     estuda («traducao» é a do português; «traducaoEs», «traducaoEn») */
-  function traducaoDe(txt) {
-    return A === 'pt' ? txt.traducao : txt['traducao' + A[0].toUpperCase() + A[1]];
   }
 
   function escapar(s) {
@@ -1837,30 +1862,21 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   /* ── a vitrine ──
-     O próximo texto do curso, o poema primeiro: título, autor, o primeiro
-     verso com a tradução e quantas palavras faltam. A conta é a mesma da
-     tela dos textos (Motor.atualizarTextosEmVista e andamentoDoTexto), só que
-     calculada aqui e não gravada: antes dos 400 dominados a lista de espera
-     dos textos ainda não existe, e a vitrine não a inventa. Curso sem texto
-     (o francês, por enquanto) não tem vitrine. */
+     O texto que a pessoa estuda agora (o primeiro dos ativos): título, autor,
+     o primeiro verso, quantos versos já leu e quantas palavras faltam. Curso
+     sem texto não tem vitrine. */
   function vitrine() {
     if (!TEXTOS.length) return '';
-    const tx = progresso.textos || textosVazio();
-    const arq = progresso.arquivados || {};
-    const emVista = Motor.atualizarTextosEmVista(tx.emVista, TEXTOS, progresso.cards, arq, tx.lidos || {});
-    const txt = TEXTO_POR_ID[emVista.poema] || TEXTO_POR_ID[emVista.prosa];
+    const txt = textosAtivosAgora()[0];
     if (!txt) return '';
     const verso = Motor.versosDoTexto(txt)[0] || {};
-    const a = Motor.andamentoDoTexto(txt, progresso.cards, Date.now(), arq);
-    const faltam = Math.max(0, a.palavras - a.dominadas);
-    const dominados = Motor.dominadosNoTotal(progresso.cards);
+    const a = Motor.andamentoDoTexto(txt, progresso.cards, progresso.arquivados || {});
+    const vistos = Motor.versosVistos(txt, progresso.textos.lidos);
     return '<div class="vitrine"><h3>' + t('painel.vitrine') + '</h3>' +
-      '<p class="vitrine-titulo"><b>' + escapar(txt.titulo) + '</b> · ' + escapar(txt.autor) + '</p>' +
-      (verso[L] ? '<p class="vitrine-verso" lang="' + L + '">' + escapar(verso[L]) + '</p>' : '') +
-      (verso[A] ? '<p class="vitrine-traducao">' + escapar(verso[A]) + '</p>' : '') +
-      '<p class="vitrine-conta">' + (faltam ? tn('painel.vitrineFaltam', faltam, { n: milhar(faltam) }) : t('painel.vitrinePronto')) +
-      (dominados < Motor.DOMINADOS_PARA_TEXTOS
-        ? ' ' + t('painel.vitrineEspera', { n: milhar(Motor.DOMINADOS_PARA_TEXTOS), m: milhar(dominados) }) : '') + '</p>' +
+      '<p class="vitrine-titulo"><b lang="' + L + '">' + escapar(txt.titulo) + '</b> · ' + escapar(txt.autor) + '</p>' +
+      (verso.t ? '<p class="vitrine-verso" lang="' + L + '">' + escapar(verso.t) + '</p>' : '') +
+      '<p class="vitrine-conta">' + t('texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
+      (a.faltam ? tn('painel.vitrineFaltam', a.faltam, { n: milhar(a.faltam) }) : t('painel.vitrinePronto')) + '</p>' +
       '<button class="link-comentar" id="btn-vitrine">' + t('painel.vitrineVer') + '</button></div>';
   }
 
@@ -2704,70 +2720,99 @@ window.TaioeCardsApp = function (ctx) {
     respostaPendente = null;
   }
 
-  /* ═══════════════ textos ═══════════════ */
+  /* ═══════════════ textos ═══════════════
+     Desde 20/10/2026 (PLANO.md, seção 9): os poemas vêm da Biblioteca, sem
+     tradução, e todo mundo começa com um poema automático. A escolha mora em
+     textos.emVista.escolha ({ textos, em, propria }); cada verso mostrado vira
+     uma entrada «<id>#<k>» em textos.lidos, e o poema inteiro, «<id>». */
 
-  /* Quantos versos do poema a pessoa já viu. Não há campo próprio para isso
-     no servidor: cada verso mostrado vira uma entrada «<id>#<k>» em
-     textos.lidos, com a data, e a mescla dos lidos (a data mais antiga de
-     cada chave) já viaja entre aparelhos. O poema inteiro continua sendo a
-     entrada «<id>», como antes. */
-  function versosVistos(txt) {
-    const lidos = (progresso.textos && progresso.textos.lidos) || {};
-    let k = 0;
-    const pre = txt.id + '#';
-    for (const chave in lidos) {
-      if (chave.indexOf(pre) === 0) k = Math.max(k, parseInt(chave.slice(pre.length), 10) || 0);
-    }
-    return k;
+  function escolhaDosTextos() {
+    const tx = progresso.textos = progresso.textos || textosVazio();
+    return (tx.emVista && tx.emVista.escolha) || null;
   }
 
-  /* O que mostrar no lugar do próximo card: o texto inteiro, quando todas as
-     palavras estão sabidas e passou a meia-noite seguinte; ou, no poema, os
-     versos que acabaram de destravar (pedido do Gere, 07/10/2026: o poema se
-     descobre aos poucos, 1/8, 2/8…). A prosa espera ficar completa. */
+  function gravarEscolha(ids) {
+    const tx = progresso.textos;
+    tx.emVista.escolha = { textos: ids.slice(0, Motor.MAX_TEXTOS), em: new Date().toISOString(), propria: true };
+    conciliarFila(progresso);
+    salvarProgresso();
+    if (Sinc) Sinc.agendar(3000);
+  }
+
+  function textosAtivosAgora() {
+    const tx = progresso.textos || textosVazio();
+    return Motor.textosAtivos(escolhaDosTextos(), TEXTOS, tx.lidos || {});
+  }
+
+  /* Os versos que acabaram de ficar prontos num texto ativo: todas as
+     palavras deles sabidas. Vem logo antes do próximo card, sem esperar a
+     meia-noite: o verso não é card. */
   function textoParaLer() {
-    if (!TEXTOS.length || !Motor.textosLiberados(progresso.cards)) return null;
-    const tx = progresso.textos = progresso.textos || textosVazio();
-    tx.emVista = Motor.atualizarTextosEmVista(tx.emVista, TEXTOS, progresso.cards, progresso.arquivados || {}, tx.lidos);
-    for (const tipo of ['poema', 'prosa']) {
-      const txt = tx.emVista[tipo] && TEXTO_POR_ID[tx.emVista[tipo]];
-      if (!txt) continue;
+    if (!TEXTOS.length) return null;
+    const lidos = progresso.textos.lidos;
+    for (const txt of textosAtivosAgora()) {
       const total = Motor.versosDoTexto(txt).length;
-      const k = Motor.versosLiberados(txt, progresso.cards, Date.now(), progresso.arquivados || {});
-      if (k >= total && total) return { txt: txt, versos: total, total: total };
-      if (Motor.revelaPorVerso(txt) && k > versosVistos(txt)) return { txt: txt, versos: k, total: total };
+      const k = Motor.versosProntos(txt, progresso.cards, progresso.arquivados || {});
+      const vistos = Motor.versosVistos(txt, lidos);
+      if (total && k > vistos) return { txt: txt, de: vistos, versos: k, total: total };
     }
     return null;
   }
 
-  /* A recompensa, no lugar do próximo card. Inteiro, o texto fica marcado
-     como lido na hora e o próximo do mesmo tipo entra na lista de espera;
-     em parte, só os versos novos ficam marcados como vistos. */
+  /* Algum verso, de qualquer texto, já foi mostrado? O primeiro aviso é o
+     que explica o poema e oferece os três caminhos. */
+  function jaViuVerso() {
+    return Object.keys(progresso.textos.lidos || {}).some(k => k.indexOf('#') > 0);
+  }
+
+  /* O aviso, no lugar do próximo card. */
   function mostrarRecompensa(r) {
     const txt = r.txt, inteiro = r.versos >= r.total;
+    const primeiro = !jaViuVerso();
     const lidos = progresso.textos.lidos;
     const agora = new Date().toISOString();
-    const antes = versosVistos(txt);
-    for (let k = antes + 1; k <= r.versos; k++) if (Motor.revelaPorVerso(txt)) lidos[txt.id + '#' + k] = agora;
+    for (let k = r.de + 1; k <= r.versos; k++) lidos[txt.id + '#' + k] = agora;
+    const escolha = escolhaDosTextos();
+    const propria = !!(escolha && escolha.propria);
+    let aviso, botoes;
+    const nomeDe = x => '«' + escapar(x.titulo) + '», ' + t('texto.de', { a: escapar(x.autor) });
     if (inteiro) {
       lidos[txt.id] = agora;
-      progresso.textos.emVista = Motor.atualizarTextosEmVista(progresso.textos.emVista, TEXTOS,
-        progresso.cards, progresso.arquivados || {}, lidos);
+      /* o texto terminado sai da escolha da pessoa; o automático dá lugar ao
+         próximo da fila na conciliação */
+      if (propria) {
+        const ids = (escolha.textos || []).filter(id => id !== txt.id);
+        progresso.textos.emVista.escolha = { textos: ids, em: agora, propria: true };
+      }
+      conciliarFila(progresso);
+      aviso = t('texto.inteiro', { t: nomeDe(txt) });
+      const prox = !propria && textosAtivosAgora()[0];
+      if (prox) aviso += ' ' + t('texto.proximoAutomatico', { t: nomeDe(prox) });
+      botoes = '<button class="primario" data-acao="seguir">' + t('texto.continuar') + '</button>' +
+        (propria ? '<button class="secundario" data-acao="escolher">' + t('texto.escolherOutroTexto') + '</button>' : '');
+    } else if (primeiro && !propria) {
+      aviso = t('texto.primeiroVerso', { t: nomeDe(txt) });
+      botoes = '<button class="primario" data-acao="seguir">' + t('texto.continuarPoema') + '</button>' +
+        '<button class="secundario" data-acao="escolher">' + t('texto.escolherOutro') + '</button>' +
+        '<button class="secundario" data-acao="soltos">' + t('texto.soCardsSoltos') + '</button>';
+    } else {
+      aviso = t(r.versos - r.de > 1 ? 'texto.versosNovos' : 'texto.versoNovo',
+        { t: nomeDe(txt), a: r.de + 1, k: r.versos, n: r.total });
+      botoes = '<button class="primario" data-acao="seguir">' + t('texto.continuar') + '</button>';
     }
     salvarProgresso();
     if (Sinc) Sinc.agendar(3000);
-    let aviso;
-    if (!Motor.revelaPorVerso(txt)) {
-      aviso = t(txt.tipo === 'poema' ? 'texto.destravouPoema' : 'texto.destravouTexto');
-    } else if (inteiro) {
-      aviso = t('texto.poemaCompleto', { n: r.total });
-    } else {
-      aviso = t(r.versos - antes > 1 ? 'texto.versosNovos' : 'texto.versoNovo',
-        { t: escapar(txt.titulo), k: r.versos, n: r.total });
-    }
-    el['texto-conteudo'].innerHTML = '<p class="recompensa">' + aviso + '</p>' + cartaDoTexto(txt, r.versos) +
-      '<button class="primario" id="btn-seguir-texto">' + t('texto.continuar') + '</button>';
-    document.getElementById('btn-seguir-texto').addEventListener('click', () => { mostrar('tela-card'); proximoCard(); });
+    const alvo = el['texto-conteudo'];
+    alvo.innerHTML = '<p class="recompensa">' + aviso + '</p>' + cartaDoTexto(txt, r.versos, r.de) +
+      '<div class="botoes-texto">' + botoes + '</div>';
+    ligarCarta(alvo);
+    alvo.querySelectorAll('[data-acao]').forEach(b => b.addEventListener('click', () => {
+      const acao = b.dataset.acao;
+      if (acao === 'soltos') gravarEscolha([]);
+      if (acao === 'escolher') { abrirTexto(); return; }
+      mostrar('tela-card');
+      proximoCard();
+    }));
     mostrar('tela-texto');
   }
 
@@ -2776,74 +2821,145 @@ window.TaioeCardsApp = function (ctx) {
     mostrar('tela-texto');
   }
 
-  /* O texto, original e tradução lado a lado, com quem, quando e o que vale
-     saber antes de ler. Com «ate», só os primeiros versos (o poema que ainda
-     se revela), e o contador 3/8. */
-  function cartaDoTexto(txt, ate) {
+  /* O poema na língua original, sem tradução, com cada palavra clicável.
+     Com «ate», só os primeiros versos, e os que vêm depois de «novos» ficam
+     marcados. */
+  function cartaDoTexto(txt, ate, novos) {
     const total = Motor.versosDoTexto(txt).length;
     const parte = ate !== undefined && ate < total;
-    const cab = '<h3 class="texto-titulo">' + escapar(txt.titulo) + '</h3>' +
-      '<p class="texto-autor">' + escapar(txt.autor) + (txt.ano ? ', ' + txt.ano : '') +
-      (txt.recorte ? ' · ' + escapar(txt.recorte) : '') + '</p>';
-    let resta = parte ? ate : Infinity;
+    const cab = '<h3 class="texto-titulo" lang="' + L + '">' + escapar(txt.titulo) + '</h3>' +
+      '<p class="texto-autor">' + escapar(txt.autor) + (txt.ano ? ', ' + txt.ano : '') + '</p>';
+    let n = 0, resta = parte ? ate : Infinity;
     const blocos = (txt.blocos || []).map(b => {
       const linhas = b.slice(0, Math.max(0, resta));
       resta -= linhas.length;
       if (!linhas.length) return '';
-      return '<table class="tabela-texto ' + (txt.tipo === 'prosa' ? 'prosa' : 'poema') + '">' +
-        linhas.map(l => '<tr><td class="verso-or" lang="' + L + '">' + escapar(l[L] || '') + '</td>' +
-          '<td class="verso-pt">' + escapar(l[A] || '') + '</td></tr>').join('') + '</table>';
+      return '<div class="estrofe" lang="' + L + '">' + linhas.map(l => {
+        n++;
+        const novo = novos !== undefined && n > novos;
+        return '<p class="verso' + (novo ? ' verso-novo' : '') + '">' + (l.p || [[l.t, null]]).map(x => x[1]
+          ? '<button type="button" class="palavra-texto" data-ch="' + escapar(x[1]) + '">' + escapar(x[0]) + '</button>'
+          : escapar(x[0])).join('') + '</p>';
+      }).join('') + '</div>';
     }).join('');
     const conta = parte ? '<p class="contador-versos">' + t('texto.contador', { k: ate, n: total }) + '</p>' : '';
-    const pe = '<p class="ajuda">' + escapar(notaDe(txt)) + '</p>' +
-      (traducaoDe(txt) ? '<p class="ajuda">' + t('texto.traducao', { x: escapar(traducaoDe(txt)) }) + '</p>' : '');
-    return '<div class="carta-texto">' + cab + blocos + conta + pe + '</div>';
+    const pe = '<p class="ajuda">' + t('texto.toque') + (txt.biblioteca
+      ? ' <a href="' + escapar(txt.biblioteca) + '">' + t('texto.naBiblioteca') + '</a>' : '') + '</p>';
+    return '<div class="carta-texto" data-texto="' + escapar(txt.id) + '">' + cab + blocos + conta + pe + '</div>';
   }
 
-  function renderizarTexto() {
+  /* A nota da palavra: o lema, a classe (e a forma, para quem lê
+     português) e a tradução do card no público de quem estuda; sem card, a
+     definição do glossário da Biblioteca (ou a nota curta em es/en). */
+  /* as classes do glossário, sem acento, que têm nome em es e en (classe.*) */
+  const CLASSES = ['substantivo', 'verbo', 'adjetivo', 'adverbio', 'preposicao', 'conjuncao', 'artigo',
+    'pronome', 'interjeicao', 'numeral', 'contracao', 'determinante'];
+  function classeDe(c) {
+    if (!c) return '';
+    if (A === 'pt') return c;
+    const x = c.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    if (x.indexOf('proprio') >= 0) return t('classe.nome');
+    const k = CLASSES.find(y => x.indexOf(y) === 0) || CLASSES.find(y => x.indexOf(y) >= 0);
+    return k ? t('classe.' + k) : '';
+  }
+  function notaDaPalavra(d) {
+    const partes = Array.isArray(d.partes) ? d.partes : [d];
+    const html = partes.map(x => {
+      const card = x.card && PORID_FONTE[x.card] ? Motor.formaDoCard(PORID_FONTE[x.card], 0) : null;
+      const def = A === 'pt' ? x.def : x['def' + A[0].toUpperCase() + A[1]];
+      const sentido = card ? escapar(card[A] || '') : escapar(Array.isArray(def) ? def.join(' ') : (def || ''));
+      const classe = classeDe(x.classe);
+      return '<p><b lang="' + L + '">' + escapar(x.lema || '') + '</b>' +
+        (classe ? ' <span class="classe">' + escapar(classe) + (A === 'pt' && x.forma ? ', ' + escapar(x.forma) : '') + '</span>' : '') +
+        (sentido ? '<br>' + sentido : '') +
+        (card && PORID_FONTE[x.card].leitura ? '<br><span class="classe">' + t('card.leitura') + '</span>' : '') + '</p>';
+    }).join('');
+    const fonte = !partes.some(x => x.card) && d.wiki
+      ? '<p class="fonte-nota">' + t('texto.fonteNota', { u: escapar(d.wiki) }) + '</p>' : '';
+    return html + fonte;
+  }
+
+  function ligarCarta(raiz) {
+    raiz.querySelectorAll('.carta-texto').forEach(carta => {
+      const txt = TEXTO_POR_ID[carta.dataset.texto];
+      if (!txt) return;
+      carta.addEventListener('click', ev => {
+        const b = ev.target.closest('.palavra-texto');
+        if (!b) return;
+        const aberta = carta.querySelector('.nota-palavra');
+        const mesma = aberta && aberta.dataset.de === b.dataset.ch && aberta.previousElementSibling === b.closest('.verso');
+        carta.querySelectorAll('.palavra-texto.ativa').forEach(x => x.classList.remove('ativa'));
+        if (aberta) aberta.remove();
+        if (mesma) return;
+        const d = (txt.destinos || {})[b.dataset.ch];
+        if (!d) return;
+        b.classList.add('ativa');
+        const nota = document.createElement('div');
+        nota.className = 'nota-palavra';
+        nota.dataset.de = b.dataset.ch;
+        nota.innerHTML = notaDaPalavra(d);
+        b.closest('.verso').insertAdjacentElement('afterend', nota);
+      });
+    });
+  }
+
+  /* A tela Textos: os textos do curso, cada um com a caixa de escolher (até
+     MAX_TEXTOS, ou nenhum), os versos já lidos e quantas palavras faltam; e,
+     embaixo, os que a pessoa já leu inteiros. */
+  /* «novo»: o texto pedido pela Biblioteca quando já há MAX_TEXTOS escolhidos;
+     a tela diz que é preciso desmarcar um e põe o pedido em primeiro. */
+  function renderizarTexto(novo) {
     const alvo = el['texto-conteudo'];
     if (!TEXTOS.length) {
       alvo.innerHTML = '<p class="ajuda">' + t('texto.nenhum') + '</p>';
       return;
     }
-    const tx = progresso.textos = progresso.textos || textosVazio();
-    const dominados = Motor.dominadosNoTotal(progresso.cards);
-    const partes = [];
-    partes.push('<p class="ajuda">' + t('texto.explica') + '</p>');
-    if (dominados < Motor.DOMINADOS_PARA_TEXTOS) {
-      partes.push('<p class="ajuda">' + t('texto.comecam', { n: Motor.DOMINADOS_PARA_TEXTOS, m: dominados }) + '</p>');
-    } else {
-      tx.emVista = Motor.atualizarTextosEmVista(tx.emVista, TEXTOS, progresso.cards, progresso.arquivados || {}, tx.lidos);
-      partes.push('<div class="grupo"><h3>' + t('texto.espera') + '</h3>');
-      for (const tipo of ['poema', 'prosa']) {
-        const txt = tx.emVista[tipo] && TEXTO_POR_ID[tx.emVista[tipo]];
-        if (!txt) { partes.push('<p class="ajuda">' + t(tipo === 'poema' ? 'texto.nenhumPoema' : 'texto.nenhumaProsa') + '</p>'); continue; }
-        const a = Motor.andamentoDoTexto(txt, progresso.cards, Date.now(), progresso.arquivados || {});
-        const faltam = Motor.requeridas(txt).filter(id => Motor.sabidaEm(id, progresso.cards, progresso.arquivados || {}) === Infinity)
-          .map(id => (PORID[id] || {})[L] || id);
-        const vistos = Motor.revelaPorVerso(txt) ? versosVistos(txt) : 0;
-        const total = Motor.versosDoTexto(txt).length;
-        partes.push('<p>' + t('texto.andamento', {
-          titulo: escapar(txt.titulo), autor: escapar(txt.autor),
-          versos: Motor.revelaPorVerso(txt) ? t('texto.andamentoVersos', { k: vistos, n: total }) : '',
-          dominadas: a.dominadas, total: a.palavras,
-          fim: faltam.length ? t('texto.faltam', { lista: escapar(faltam.join(', ')) }) : t('texto.amanha') }) + '</p>');
-        if (vistos) {
-          partes.push('<details class="texto-lido"><summary>' + t('texto.descobertos') + '</summary>' +
-            cartaDoTexto(txt, vistos) + '</details>');
-        }
-      }
-      partes.push('</div>');
+    conciliarFila(progresso);
+    const tx = progresso.textos;
+    const escolha = escolhaDosTextos();
+    const ativos = new Set(textosAtivosAgora().map(x => x.id));
+    const arq = progresso.arquivados || {};
+    const partes = ['<p class="ajuda">' + t('texto.explica', { n: Motor.MAX_TEXTOS }) + '</p>'];
+    if (novo && TEXTO_POR_ID[novo]) {
+      partes.push('<p class="recompensa">' + t('texto.trocar', { n: Motor.MAX_TEXTOS, t: escapar(TEXTO_POR_ID[novo].titulo) }) + '</p>');
     }
-    const lidos = TEXTOS.filter(t => tx.lidos[t.id])
+    const abertos = TEXTOS.filter(x => !Motor.textoTerminado(x, tx.lidos))
+      .sort((a, b) => ((b.id === novo) - (a.id === novo)) || (ativos.has(b.id) - ativos.has(a.id)) || ((a.fila === undefined ? 1e9 : a.fila) - (b.fila === undefined ? 1e9 : b.fila)));
+    partes.push('<div class="grupo lista-textos">');
+    abertos.forEach(x => {
+      const a = Motor.andamentoDoTexto(x, progresso.cards, arq);
+      const vistos = Motor.versosVistos(x, tx.lidos);
+      const marcado = ativos.has(x.id);
+      partes.push('<div class="item-texto"><label><input type="checkbox" data-texto="' + escapar(x.id) + '"' +
+        (marcado ? ' checked' : '') + '> <b lang="' + L + '">' + escapar(x.titulo) + '</b> · ' + escapar(x.autor) + '</label>' +
+        '<p class="andamento-texto">' + t('texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
+        (a.faltam ? tn('texto.faltamPalavras', a.faltam, { n: milhar(a.faltam) }) : t('texto.semFalta')) +
+        (marcado && escolha && !escolha.propria ? ' · ' + t('texto.automatico') : '') + '</p>' +
+        (vistos ? '<details class="texto-lido"><summary>' + t('texto.descobertos') + '</summary>' + cartaDoTexto(x, vistos) + '</details>' : '') +
+        '</div>');
+    });
+    partes.push('<p class="ajuda" id="aviso-maximo" hidden>' + t('texto.maximo', { n: Motor.MAX_TEXTOS }) + '</p></div>');
+    const lidos = TEXTOS.filter(x => Motor.textoTerminado(x, tx.lidos))
       .sort((a, b) => String(tx.lidos[b.id]).localeCompare(String(tx.lidos[a.id])));
     if (lidos.length) {
       partes.push('<div class="grupo"><h3>' + t('texto.lidos') + '</h3>');
-      lidos.forEach(t => partes.push('<details class="texto-lido"><summary>' + escapar(t.titulo) + ' — ' +
-        escapar(t.autor) + '</summary>' + cartaDoTexto(t) + '</details>'));
+      lidos.forEach(x => partes.push('<details class="texto-lido"><summary>' + escapar(x.titulo) + ' · ' +
+        escapar(x.autor) + '</summary>' + cartaDoTexto(x) + '</details>'));
       partes.push('</div>');
     }
     alvo.innerHTML = partes.join('');
+    ligarCarta(alvo);
+    const caixas = [...alvo.querySelectorAll('input[data-texto]')];
+    const limitar = () => {
+      const n = caixas.filter(c => c.checked).length;
+      caixas.forEach(c => { c.disabled = !c.checked && n >= Motor.MAX_TEXTOS; });
+      document.getElementById('aviso-maximo').hidden = n < Motor.MAX_TEXTOS;
+    };
+    limitar();
+    caixas.forEach(c => c.addEventListener('change', () => {
+      gravarEscolha(caixas.filter(x => x.checked).map(x => x.dataset.texto));
+      limitar();
+    }));
   }
 
   /* ═══════════════ o card desafio (PLANO.md, 7.4) ═══════════════
@@ -3589,12 +3705,34 @@ window.TaioeCardsApp = function (ctx) {
   montarFiltros();
   ajustarTextosDaLingua();
 
+  /* O texto pedido pela Biblioteca (PLANO.md, 9.1): entra na escolha da
+     pessoa e tira o automático; com MAX_TEXTOS já escolhidos, a tela Textos
+     pergunta qual trocar. O endereço perde o «?texto=», para recarregar não
+     repetir o pedido. */
+  let textoParaTrocar = null;
+  if (ctx.textoPedido && TEXTO_POR_ID[ctx.textoPedido]) {
+    const id = ctx.textoPedido;
+    const e = escolhaDosTextos();
+    const ativos = textosAtivosAgora().map(x => x.id);
+    if (ativos.indexOf(id) < 0) {
+      if (!e || !e.propria) gravarEscolha([id]);
+      else if (ativos.length < Motor.MAX_TEXTOS) gravarEscolha(ativos.concat([id]));
+      else textoParaTrocar = id;
+    }
+  }
+  if (ctx.textoPedido) {
+    try { history.replaceState(null, '', location.pathname); } catch (e) { /* sem history, fica */ }
+  }
+
   progresso.totais.sessoes = (progresso.totais.sessoes || 0) + 1;
   salvarProgresso();
   atualizarPlacar();
   /* a primeira entrada no curso (ou a avaliação que ficou pela metade) abre
      no começo; o resto, na página inicial */
-  if (!retomarComeco()) mostrar('tela-inicio');
+  if (!retomarComeco()) {
+    if (textoParaTrocar) { renderizarTexto(textoParaTrocar); mostrar('tela-texto'); }
+    else mostrar('tela-inicio');
+  }
 
   Sinc = TaioeSincronia.criar({
     sb: ctx.sb, uid: ctx.uid, curso: ctx.curso,
@@ -3629,7 +3767,7 @@ window.TaioeCardsApp = function (ctx) {
       progresso.arquivados = x.arquivados || {};
       progresso.emVista = Array.isArray(x.emVista) ? x.emVista : [];
       const t = x.textos || {};
-      progresso.textos = { emVista: Object.assign({ poema: null, prosa: null }, t.emVista || {}), lidos: t.lidos || {} };
+      progresso.textos = { emVista: Object.assign({ poema: null, prosa: null, escolha: null }, t.emVista || {}), lidos: t.lidos || {} };
       /* Os do começo do app: o servidor que ainda não os guarda devolve os
          extras sem eles, e a ausência não apaga o que este aparelho tem. Quem
          chega com o campo (mesclado por mesclarExtras, ou do servidor) manda. */

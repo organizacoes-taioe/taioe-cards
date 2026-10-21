@@ -49,6 +49,10 @@
       if (!lidos[id] || String(ts.lidos[id]) < String(lidos[id])) lidos[id] = ts.lidos[id];
     });
     var tev = ts.emVista && (ts.emVista.poema || ts.emVista.prosa) ? ts.emVista : (tl.emVista || {});
+    // a escolha dos textos (PLANO.md, 9.3): a de «em» mais recente; no empate, a do servidor
+    var el = (tl.emVista || {}).escolha, es = (ts.emVista || {}).escolha;
+    var escolha = !el ? (es || null) : !es ? el : (String(es.em || '') >= String(el.em || '') ? es : el);
+    tev = Object.assign({}, tev, { escolha: escolha });
     var ev = (servidor.emVista || []).length ? servidor.emVista : (local.emVista || []);
     var saida = { arquivados: arq, emVista: ev, textos: { emVista: tev, lidos: lidos } };
 

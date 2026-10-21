@@ -968,3 +968,104 @@ card para juntar dado dos dois lados do degrau.
 acerto pela espera e pôr o degrau onde ela cruza ~90% (o Gere escolhe o alvo). Degrau novo
 vai ao Gere com os números e o custo, como manda a regra de agendamento. Os degraus de 1, 3 e
 6 meses só terão dado bastante daqui a meses.
+
+---
+
+## 9. Os textos da Biblioteca (decidido em 20/10/2026)
+
+Substitui a seção 6 e o manual 17.4 (textos de recompensa com tradução, depois de 400
+dominados). Pedido e contraproposta aceita na conversa de 20/10; as decisões do Gere estão
+marcadas com ✔.
+
+### 9.1 As regras
+
+- ✔ **O texto mora na Biblioteca**: os poemas na língua original
+  (`edicoes/lingua-original/<pasta>/poema.txt` + `glossario.json`) e, no curso de português,
+  os poemas portugueses dela. O id do texto nos Cards é o caminho dele na Biblioteca
+  (`victor-hugo/demain-des-l-aube`), que dá também o link.
+- ✔ **Cada palavra se liga ao lema**: «partirai» cai no card de «partir». Nada de card por
+  conjugação. O glossário da Biblioteca já diz o lema de cada ocorrência.
+- **Toda palavra tem destino**, e o build recusa o texto que deixar alguma sem: card comum;
+  card de leitura (9.2); transparente para o público; gramatical (artigo, preposição,
+  conjunção, pronome: aprende-se nas frases e não trava o verso); nome próprio.
+- ✔ **Card de leitura** = a palavra fora da lista de frequência do curso (regra fixa; se
+  ficar rara demais coisa simples, aumenta-se a lista). Ver 9.2.
+- ✔ **Todo mundo começa com um poema**, e os 400 dominados acabam de vez. Cada curso tem uma
+  fila de poemas automáticos, do mais fácil ao mais difícil; depois do nivelamento, o app
+  pula o que a pessoa já lê quase inteiro. O automático só sai quando a pessoa escolhe por
+  conta própria. Fim de um automático: entra o próximo da fila. Fim de um escolhido: oferece
+  escolher outro. Tudo desmarcado: fica sem texto.
+- ✔ **Até 3 textos** escolhidos, ou nenhum.
+- ✔ **Ritmo**: com texto, as palavras dos textos ocupam **1 de cada 3** vagas de card novo,
+  na ordem de leitura, em rodízio entre os textos escolhidos. Sem texto, tudo como antes.
+- ✔ **O verso aparece na hora**: logo depois da resposta que domina a última palavra que
+  faltava (não é card, não espera a meia-noite). Domínio por outro caminho (nivelamento,
+  «Já conheço», outro aparelho): na próxima troca de card. Vários versos juntos vêm juntos
+  («versos 3 a 5 de 12»); verso só de palavras sem card vem com o seguinte.
+- ✔ **Sem tradução**, com as palavras clicáveis: o clique mostra o lema, a classe/forma e a
+  tradução do próprio card no público de quem estuda; a palavra sem card mostra a definição
+  do glossário (pt) ou uma nota curta em es/en para os outros públicos.
+- ✔ **Primeiro aviso**, três botões: «Continuar com este poema», «Escolher outro poema» e
+  «Prefiro só cards soltos» (desmarca todos).
+- ✔ No fim do poema: ele inteiro, com o link para a Biblioteca.
+- ✔ **A vitrine do painel fica** (não precisa ser surpresa).
+- ✔ **Botão na Biblioteca**: «Aprender as palavras deste poema» («deste texto» na prosa), só
+  no texto todo coberto. Sem login → entra e volta; primeira vez no curso → nivelamento; com
+  3 escolhidos → pergunta qual trocar. Nos poemas portugueses, só para quem está logado com
+  outra língua no perfil.
+- ✔ **Português entra já** (poemas da Biblioteca, para quem fala es ou en).
+- ✔ **Prosa** (próximo passo, a escolher com o Gere): a obra inteira na Biblioteca, cards só
+  para o começo (~300 palavras, terminando num parágrafo que feche o sentido), revelado
+  parágrafo a parágrafo; no fim, «Quero aprender o resto deste texto» registra o interesse.
+  Os trechos antigos (Quixote, Quiroga, Martí, Twain, Lincoln) ficam guardados como
+  candidatos. Até lá, a tela Textos só tem poemas.
+
+### 9.2 O card de leitura
+
+- Campo `leitura: true` no card (palavra fora da lista de frequência). Só estreia para quem
+  tem escolhido um texto que a pede; nunca no sorteio geral, nas frases em vista, no
+  nivelamento, no desafio nem em `dominioPorNivel`.
+- Só a primeira fase (a palavra no original → resposta na língua de quem estuda): fica
+  **dominado ao fim dela**, e as revisões de dominado também são nessa direção.
+- Etiqueta na tela: «palavra rara · só para leitura». Não ganha frases de uso.
+- Transparente «parecida» num card de leitura conta como total (ler é de graça).
+
+### 9.3 Os dados
+
+- `fonte/textos/<l>/<autor>--<poema>.json`, gerado por `fonte/importar-texto.js` a partir da
+  Biblioteca e completado à mão: título, autor, ano, `biblioteca` (o caminho), e as linhas,
+  cada uma com as palavras `{w, k}` (k = a chave do glossário) e o mapa `destinos`
+  (chave → id do card | `gramatical` | `nome` | `transparente` | `+lema` por fazer), com `lema`,
+  `classe`, `forma` e `def` (pt) do glossário, e `defEs`/`defEn` só nas palavras sem card.
+  O build monta o `requer` de cada linha e o `requerTodas`, e só publica texto sem `+`.
+- `public/cards/data/textos-<l>.js` (o app) e `public/cards/data/textos.json` (a lista dos
+  prontos, que a Biblioteca lê para mostrar o botão).
+- Progresso: `textos.emVista` ganha `escolha = { textos: [ids], em: ISO, propria: bool }`;
+  a mescla (aparelho e `gravar_extras`) fica com a de `em` mais recente. `textos.lidos`
+  continua com `<id>#<k>` para cada verso visto. Migração nova no `taioe-infra`.
+
+### 9.4 Poemas automáticos (primeiros da fila)
+
+| curso | 1º | depois |
+|---|---|---|
+| espanhol | Bécquer, Rima XXI | Machado, Proverbios y cantares XXIX |
+| francês | Verlaine, «Il pleure dans mon cœur» | Hugo, «Demain dès l'aube» |
+| inglês | Dickinson, «I'm nobody! Who are you?» | Stevenson, «Requiem» |
+| português | Gonçalves Dias, «Canção do exílio» | — |
+
+Martí e Teasdale ficaram de fora: os primeiros versos dos escolhidos são mais simples, e a
+Rossetti não está no Wikisource.
+
+### 9.5 Etapas
+
+| # | etapa | situação |
+|---|---|---|
+| 1 | plano (esta seção) | feito (20/10) |
+| 2 | formato novo, `importar-texto.py`, `destino-texto.py` e as checagens do build | feito (20/10) |
+| 3 | motor: card de leitura, escolha, fatia de 1 em 3, fila automática, verso na hora; fim dos 400 | feito (20/10), `testar-textos.js` |
+| 4 | app: aviso do verso (palavras clicáveis, três botões), tela Textos, vitrine | feito (20–21/10), testado no local |
+| 5 | infra: `escolha` em `gravar_extras` (migração) | infra PR #14; testes do banco no local passaram |
+| 6 | Biblioteca: os poemas automáticos na língua original, com glossário; o lema dos poemas pt | feito (biblioteca branch `textos-nos-cards`) |
+| 7 | cards das palavras dos poemas automáticos (levas) | es, en, pt feitos (21/10); fr em andamento |
+| 8 | Biblioteca: o botão e a entrada pelo texto (`/cards/?texto=<id>`) | feito (21/10), testado no local |
+| 9 | teste, produção, manual 17.4 reescrito | manual feito; falta publicar |

@@ -2,7 +2,7 @@
  "versao": 1,
  "idioma": "es",
  "gerado_em": "2026-10-21",
- "total": 1900,
+ "total": 1905,
  "cards": [
   {
    "idioma": "es",
@@ -64855,15 +64855,13 @@
    "pt": "o verso",
    "en": "the verse / the line",
    "aceitas": [
-    "verso",
-    "a poesia"
+    "verso"
    ],
    "aceitasEn": [
     "verse",
     "the verse",
     "line",
-    "poem",
-    "poetry"
+    "the line"
    ],
    "distratores": [
     "o vesgo",
@@ -80454,6 +80452,237 @@
    "nota": "Diz-se a quem está comendo, até a um desconhecido na mesa ao lado. No México e em outros países, só «¡provecho!»; na Espanha, também «¡que aproveche!».",
    "notaEn": "Said to anyone eating, even a stranger at the next table. In Mexico and elsewhere, just «¡provecho!»; in Spain, also «¡que aproveche!».",
    "requerTodas": []
+  },
+  {
+   "idioma": "es",
+   "id": "p1073",
+   "tipo": "palavra",
+   "es": "la poesía",
+   "pt": "a poesia",
+   "en": "poetry",
+   "aceitas": [
+    "poesia",
+    "o poema",
+    "poema"
+   ],
+   "aceitasEn": [
+    "poetry",
+    "the poetry",
+    "poem",
+    "the poem",
+    "a poem"
+   ],
+   "distratores": [
+    "a prosa",
+    "a poeira",
+    "a pintura",
+    "a cortesia"
+   ],
+   "distratoresEn": [
+    "prose",
+    "painting",
+    "courtesy",
+    "prophecy"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "substantivo",
+    "cultura"
+   ],
+   "nota": "Acento no í, como «alegría». É a arte e também um poema avulso: «se sabe una poesía de memoria», sabe um poema de cor. Quem a escreve é «el poeta» ou «la poeta».",
+   "notaEn": "Stress on the í, as in «alegría». It is the art and also a single poem: «se sabe una poesía de memoria», she knows a poem by heart. The writer is «el poeta» or «la poeta»."
+  },
+  {
+   "idioma": "es",
+   "id": "p1074",
+   "tipo": "palavra",
+   "es": "clavar",
+   "pt": "cravar",
+   "en": "to nail / to stick in",
+   "aceitas": [
+    "pregar",
+    "fincar",
+    "fixar",
+    "enfiar",
+    "espetar",
+    "pregar com prego"
+   ],
+   "aceitasEn": [
+    "to nail",
+    "to stick in",
+    "to drive in",
+    "to hammer in"
+   ],
+   "distratores": [
+    "lavar",
+    "cavar",
+    "parafusar",
+    "arrancar"
+   ],
+   "distratoresEn": [
+    "to carve / to engrave",
+    "to clap / to applaud",
+    "to screw / to bolt",
+    "to pull out / to uproot"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "verbo",
+    "objetos"
+   ],
+   "sinonimosEs": [
+    "fijar"
+   ],
+   "nota": "Crava-se um prego, uma faca, o olhar: «clavar un clavo», «me clavó los ojos». Na conversa, é acertar em cheio: «¡lo has clavado!». E «ser clavado a alguien» é ser a cara dele: «es clavado a su padre».",
+   "notaEn": "You drive in a nail, a knife, a stare: «clavar un clavo», «me clavó los ojos», he fixed his eyes on me. Colloquially, to nail it: «¡lo has clavado!». «Ser clavado a alguien» is to be the spitting image of them: «es clavado a su padre»."
+  },
+  {
+   "idioma": "es",
+   "id": "p1075",
+   "tipo": "palavra",
+   "leitura": true,
+   "es": "la pupila",
+   "pt": "a pupila",
+   "en": "the pupil",
+   "aceitas": [
+    "pupila",
+    "o olho",
+    "olho",
+    "os olhos",
+    "o olhar",
+    "olhar",
+    "a menina do olho"
+   ],
+   "aceitasEn": [
+    "pupil",
+    "the pupil",
+    "the eye",
+    "eye",
+    "the eyes",
+    "the gaze",
+    "gaze"
+   ],
+   "distratores": [
+    "a pálpebra",
+    "a pestana",
+    "a sobrancelha",
+    "a lágrima"
+   ],
+   "distratoresEn": [
+    "the eyelid",
+    "the eyelash",
+    "the eyebrow",
+    "the tear"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "substantivo",
+    "corpo"
+   ],
+   "nota": "Palavra rara fora da medicina e da poesia. Nos versos, a pupila vale pelo olho inteiro e pelo olhar, como em Bécquer: «en mi pupila tu pupila azul». No dia a dia se diz «el ojo» ou «la mirada».",
+   "notaEn": "A rare word outside medicine and poetry. In verse, the pupil stands for the whole eye and the gaze, as in Bécquer: «en mi pupila tu pupila azul». Everyday Spanish says «el ojo» or «la mirada»."
+  },
+  {
+   "idioma": "es",
+   "id": "u495",
+   "tipo": "frase",
+   "requer": "p1073",
+   "es": "Leo poesía antes de dormir.",
+   "pt": "Leio poesia antes de dormir.",
+   "en": "I read poetry before bed.",
+   "aceitas": [
+    "leio poesia antes de dormir",
+    "eu leio poesia antes de dormir",
+    "leio poesia antes de ir dormir",
+    "leio poesia antes de deitar",
+    "leio poemas antes de dormir",
+    "eu leio poemas antes de dormir"
+   ],
+   "aceitasEn": [
+    "i read poetry before bed",
+    "i read poetry before going to bed",
+    "i read poetry before sleeping",
+    "i read poetry before i go to sleep",
+    "i read poetry before going to sleep",
+    "i read poems before bed"
+   ],
+   "distratores": [
+    "Leio prosa antes de dormir.",
+    "Leio filosofia antes de dormir.",
+    "Leio história antes de dormir.",
+    "Leio ficção antes de dormir."
+   ],
+   "distratoresEn": [
+    "I read prose before bed.",
+    "I read philosophy before bed.",
+    "I read history before bed.",
+    "I read fiction before bed."
+   ],
+   "nivel": "B1",
+   "tags": [
+    "cultura"
+   ],
+   "nota": "Depois de «leer» e «escribir», o gênero vai sem artigo: «leer poesía», «escribir novela». Com artigo, «una poesía» é um poema só.",
+   "notaEn": "After «leer» or «escribir», the genre takes no article: «leer poesía», «escribir novela». With an article, «una poesía» is a single poem.",
+   "requerTodas": [
+    "p537",
+    "p1073",
+    "p374",
+    "p387"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u496",
+   "tipo": "frase",
+   "requer": "p1074",
+   "es": "Clavó los ojos en el reloj.",
+   "pt": "Cravou os olhos no relógio.",
+   "en": "He fixed his eyes on the clock.",
+   "aceitas": [
+    "cravou os olhos no relogio",
+    "ele cravou os olhos no relogio",
+    "ela cravou os olhos no relogio",
+    "fixou os olhos no relogio",
+    "cravou o olhar no relogio",
+    "fixou o olhar no relogio",
+    "pregou os olhos no relogio",
+    "ficou com os olhos pregados no relogio",
+    "ficou com os olhos cravados no relogio"
+   ],
+   "aceitasEn": [
+    "he fixed his eyes on the clock",
+    "she fixed her eyes on the clock",
+    "he fixed his gaze on the clock",
+    "she fixed her gaze on the clock",
+    "he riveted his eyes on the clock",
+    "his eyes were fixed on the clock",
+    "he stared at the clock",
+    "she stared at the clock"
+   ],
+   "distratores": [
+    "Bateu os olhos no relógio.",
+    "Desviou os olhos do relógio.",
+    "Passou os olhos pelo relógio.",
+    "Tirou os olhos do relógio."
+   ],
+   "distratoresEn": [
+    "He glanced at the clock.",
+    "He looked away from the clock.",
+    "He ran his eyes over the clock.",
+    "He took his eyes off the clock."
+   ],
+   "nivel": "B2",
+   "tags": [
+    "corpo"
+   ],
+   "nota": "«Clavar los ojos (o la mirada) en» é fixá-los com força, sem desviar: «me clavó la mirada». A olhada rápida, o nosso «bater os olhos», é «echar un vistazo».",
+   "notaEn": "«Clavar los ojos (or la mirada) en» is to fix one's eyes hard on something: «me clavó la mirada». A quick look is «echar un vistazo».",
+   "requerTodas": [
+    "p1074",
+    "p452",
+    "p509"
+   ]
   }
  ]
 }

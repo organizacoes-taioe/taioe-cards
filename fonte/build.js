@@ -105,34 +105,30 @@ for (const idioma of IDIOMAS) {
 }
 
 /* ── os textos ──
-   Desde outubro de 2026 (manual, seção 17.4) o texto não tem card: é a
-   recompensa. Ele mora em fonte/textos/<idioma>/ com o original e a tradução
-   de cada linha em «blocos» (estrofe ou parágrafo), e lista em «requerTodas»
-   as palavras que exige, como a frase. Quando todas estão dominadas, o app o
-   mostra inteiro. A trilha de cards de verso, de 01/10, saiu. */
+   Desde 20/10/2026 (PLANO.md, seção 9) o texto vem da Biblioteca: fonte/textos/<idioma>/
+   <autor>--<poema>.json, gravado por fonte/importar-texto.py, com os versos em «blocos» (cada
+   um com as palavras em «p»: [pedaço, chave]) e, em «destinos», o que cada chave é — o card
+   do lema, «gramatical» ou «nome». Aqui sai o «requer» de cada verso, na ordem de leitura,
+   e o «requerTodas» do texto. Os textos de antes (com tradução, em fonte/textos/<idioma>/
+   antigos/) ficam guardados como candidatos e não entram no app. */
 const pastaTextos = path.join(__dirname, 'textos');
+function cardsDoDestino(d) {
+  if (!d) return [];
+  if (Array.isArray(d.partes)) return d.partes.flatMap(cardsDoDestino);
+  return d.card ? [d.card] : [];
+}
 for (const b of baralhos) {
   b.textos = [];
   const pasta = path.join(pastaTextos, b.idioma);
   if (!fs.existsSync(pasta)) continue;
   for (const f of fs.readdirSync(pasta).filter(f => f.endsWith('.json')).sort()) {
     const texto = JSON.parse(fs.readFileSync(path.join(pasta, f), 'utf8'));
-    const linhas = (texto.blocos || []).reduce((a, bl) => a + (bl || []).length, 0);
-    /* O poema se revela verso a verso (pedido do Gere, 07/10/2026): cada
-       linha diz em «requer» as palavras que ela traz, e o «requerTodas» do
-       texto é a união delas, na ordem de leitura — é essa ordem que faz as
-       palavras estrearem verso após verso. */
-    const todas = (texto.blocos || []).flat();
-    if (todas.length && todas.every(l => l && Array.isArray(l.requer))) {
-      if (Array.isArray(texto.requerTodas)) {
-        erros.push('texto ' + texto.id + ': tem «requer» nas linhas e «requerTodas»; fica só o das linhas');
-      }
-      texto.requerTodas = [...new Set(todas.flatMap(l => l.requer))];
-    } else if (todas.some(l => l && l.requer)) {
-      erros.push('texto ' + texto.id + ': «requer» só em algumas linhas; ou todas, ou nenhuma');
+    texto.arquivo = f;
+    const destinos = texto.destinos || {};
+    for (const l of (texto.blocos || []).flat()) {
+      l.requer = [...new Set((l.p || []).filter(x => x[1]).flatMap(x => cardsDoDestino(destinos[x[1]])))];
     }
-    console.log('  ' + ('textos/' + b.idioma + '/' + f).padEnd(36) + (texto.tipo || '?') + ', ' + linhas + ' linhas, ' +
-      (texto.requerTodas || []).length + ' palavras');
+    texto.requerTodas = [...new Set((texto.blocos || []).flat().flatMap(l => l.requer))];
     b.textos.push(texto);
   }
 }
@@ -648,56 +644,65 @@ for (const { idioma, cards } of baralhos) {
      numa leva e a frase na seguinte. */
   const comFrase = new Set(cards.filter(c => c.requer).map(c => c.requer));
   cards.forEach(c => (Array.isArray(c.requerTodas) ? c.requerTodas : []).forEach(r => comFrase.add(r)));
-  const soltas = cards.filter(c => c.tipo === 'palavra' && !comFrase.has(c.id));
+  /* o card de leitura (PLANO.md, 9.2) não tem frase de uso, de propósito */
+  const soltas = cards.filter(c => c.tipo === 'palavra' && !c.leitura && !comFrase.has(c.id));
   if (soltas.length) {
     avisos.push('[' + idioma + '] ' + soltas.length + ' palavra(s) que nenhuma frase usa: ' +
       soltas.map(c => c.id + ' (' + c[L.texto] + ')').join(', '));
   }
 }
 
-/* ── o que é só do texto ── */
+/* ── os textos: cobertura ──
+   Toda palavra do texto tem destino (PLANO.md, 9.1): o card do lema, «gramatical» ou «nome».
+   O texto só vai ao app «pronto»: sem card por fazer («+lema»), sem «conferir» e com a
+   definição das palavras sem card em cada público («def» em português, «defEs», «defEn»). */
 const idsDeTexto = new Set();
+const CAMPO_DA_DEF = { pt: 'def', es: 'defEs', en: 'defEn' };
 for (const b of baralhos) {
   const palavrasDoBaralho = new Map(b.cards.filter(c => c.tipo === 'palavra').map(c => [c.id, c]));
-  const porForma = new Map([...palavrasDoBaralho.values()].map(c => [normalizar(Motor.formaDoCard(c, 0)[CAMPOS_DA_LINGUA[b.idioma].texto]), c.id]));
   b.pendentesDeTexto = 0;
   for (const txt of b.textos || []) {
-    const onde = 'texto ' + (txt.id || '(sem id)');
+    const onde = 'texto ' + (txt.id || txt.arquivo);
+    const falta = [];
     if (!txt.id) erros.push(onde + ': falta o id');
     else if (idsDeTexto.has(txt.id)) erros.push(onde + ': id de texto repetido');
     idsDeTexto.add(txt.id);
-    for (const campo of ['idioma', 'tipo', 'titulo', 'autor', 'dominio', 'fonte']) {
+    for (const campo of ['idioma', 'tipo', 'titulo', 'autor', 'biblioteca', 'blocos', 'destinos']) {
       if (!txt[campo]) erros.push(onde + ': falta «' + campo + '»');
     }
     if (txt.tipo && txt.tipo !== 'poema' && txt.tipo !== 'prosa') erros.push(onde + ': o tipo é «poema» ou «prosa», não «' + txt.tipo + '»');
     if (txt.idioma && txt.idioma !== b.idioma) erros.push(onde + ': diz idioma «' + txt.idioma + '» e está na pasta de ' + b.idioma);
-    if (txt.cards || txt.versos) erros.push(onde + ': «cards» e «versos» eram da trilha; o texto agora é «blocos»');
-    if (!Array.isArray(txt.blocos) || !txt.blocos.length) erros.push(onde + ': nenhum bloco');
-    (txt.blocos || []).forEach((bl, i) => {
-      if (!Array.isArray(bl) || !bl.length) { erros.push(onde + ': o bloco ' + (i + 1) + ' está vazio'); return; }
-      bl.forEach((l, k) => {
-        for (const lg of ['es', 'pt', 'en']) {
-          if (typeof (l || {})[lg] !== 'string' || !l[lg].trim()) erros.push(onde + ', bloco ' + (i + 1) + ', linha ' + (k + 1) + ': falta «' + lg + '»');
+    const destinos = txt.destinos || {};
+    const usadas = new Set((txt.blocos || []).flat().flatMap(l => (l.p || []).filter(x => x[1]).map(x => x[1])));
+    for (const ch of usadas) if (!destinos[ch]) erros.push(onde + ': a chave «' + ch + '» não tem destino');
+    for (const ch of usadas) {
+      const d = destinos[ch];
+      if (!d) continue;
+      const partes = Array.isArray(d.partes) ? d.partes : [d];
+      for (const x of partes) {
+        const tem = ['card', 'g'].filter(k => x[k]);
+        if (tem.length !== 1) { erros.push(onde + ': «' + ch + '» precisa de um destino só (card ou g)'); continue; }
+        if (x.g && x.g !== 'gramatical' && x.g !== 'nome') erros.push(onde + ': «' + ch + '» com g «' + x.g + '» (é «gramatical» ou «nome»)');
+        if (x.card && x.card[0] === '+') { falta.push(x.card + (x.leitura ? ' (leitura)' : '')); continue; }
+        if (x.card && !palavrasDoBaralho.has(x.card)) erros.push(onde + ': «' + ch + '» aponta para «' + x.card + '», que não é card de palavra do baralho');
+        if (x.g) {
+          for (const a of audienciasDe(b.idioma)) {
+            const campo = CAMPO_DA_DEF[a] || ('def' + a[0].toUpperCase() + a[1]);
+            const v = campo === 'def' ? (x.def || d.def) : (x[campo] || d[campo]);
+            if (!v || (Array.isArray(v) && !v.length)) falta.push(campo + ' de «' + ch + '»');
+          }
         }
-      });
-    });
-    if (!Array.isArray(txt.requerTodas)) { avisos.push(onde + ': sem «requerTodas» — aparece assim que liberar'); continue; }
-    if (txt.tipo === 'poema' && !(txt.blocos || []).flat().every(l => l && Array.isArray(l.requer))) {
-      avisos.push(onde + ': poema sem «requer» por verso — aparece só inteiro');
-    }
-    const vistos = new Set();
-    for (const r of txt.requerTodas) {
-      if (vistos.has(r)) erros.push(onde + ': palavra repetida em «requerTodas» → ' + r);
-      vistos.add(r);
-      if (String(r)[0] === '+') {
-        b.pendentesDeTexto++;
-        if (porForma.has(normalizar(r.slice(1)))) erros.push(onde + ': «' + r + '» já tem card (use ' + porForma.get(normalizar(r.slice(1))) + ')');
-        continue;
       }
-      if (!palavrasDoBaralho.has(r)) erros.push(onde + ': exige «' + r + '», que não é card de palavra do baralho');
+      if (d.conferir) falta.push('conferir «' + ch + '»: ' + d.conferir);
+    }
+    txt.pronto = !falta.length;
+    if (falta.length) {
+      b.pendentesDeTexto++;
+      const unicos = [...new Set(falta)];
+      avisos.push(onde + ': ainda não vai ao app — ' + unicos.length + ' pendência(s): ' +
+        unicos.slice(0, 10).join(', ') + (unicos.length > 10 ? ', …' : ''));
     }
   }
-  if (b.pendentesDeTexto) avisos.push('[' + b.idioma + '] ' + b.pendentesDeTexto + ' palavra(s) de texto ainda sem card');
 }
 
 /* ── as transparentes, curso a curso (PLANO.md, 7.1 e 7.3) ──
@@ -774,9 +779,8 @@ for (const { idioma, cards } of baralhos) {
 
   const bar = baralhos.find(b => b.idioma === idioma);
   if ((bar.textos || []).length) {
-    const poemas = bar.textos.filter(t => t.tipo === 'poema').length;
-    console.log('  textos .......... ' + bar.textos.length + ' (' + poemas + ' poema(s), ' +
-      (bar.textos.length - poemas) + ' em prosa) — recompensa, fora da fila');
+    const prontos = bar.textos.filter(t => t.pronto).length;
+    console.log('  textos .......... ' + bar.textos.length + ' da Biblioteca, ' + prontos + ' pronto(s) para o app');
   }
 
   for (const a of audienciasDe(idioma)) {
@@ -906,7 +910,10 @@ for (const { idioma, cards } of baralhos) {
     x.cards.forEach(id => posDe.set(id, x.pos));
   });
   const ids = new Set(cards.map(c => c.id));
-  const fora = cards.filter(c => c.tipo === 'palavra' && !posDe.has(c.id)).map(c => c.id);
+  const fora = cards.filter(c => c.tipo === 'palavra' && !c.leitura && !posDe.has(c.id)).map(c => c.id);
+  /* o card de leitura (PLANO.md, 9.2) é justamente a palavra fora da lista */
+  const naLista = cards.filter(c => c.leitura && posDe.has(c.id)).map(c => c.id);
+  if (naLista.length) { console.error('\n  ' + idioma + ': card de leitura que está na lista de frequência (tire o «leitura»): ' + naLista.join(', ') + '\n'); process.exit(1); }
   const sobra = [...posDe.keys()].filter(id => !ids.has(id));
   if (fora.length) console.warn('  ' + idioma + ': palavra com card fora da lista de frequência: ' + fora.join(', '));
   if (sobra.length) console.warn('  ' + idioma + ': a lista de frequência cita card que não existe: ' + sobra.join(', '));
@@ -1032,12 +1039,28 @@ function escreverCatalogo(curso, leva, doApp, audiencia) {
 }
 
 /* ── os textos, à parte do baralho ──
-   data/textos-<idioma>.js põe os textos em window.TEXTOS[idioma]. Ficam fora
-   do baralho de propósito: texto não é card, e até
-   lá nenhum verso aparece na fila de ninguém. */
+   data/textos-<idioma>.js põe os textos prontos em window.TEXTOS[idioma] (o app), e
+   data/textos.json lista os de todas as línguas para a Biblioteca saber em que texto pôr o
+   botão «Aprender as palavras deste poema» (PLANO.md, 9.1). */
+const PARA_O_APP = ['lema', 'classe', 'forma', 'def', 'defEs', 'defEn', 'wiki', 'card', 'g', 'leitura'];
+const prontos = [];
 for (const b of baralhos) {
-  if (!(b.textos || []).length) continue;
-  const pacote = { versao: 2, idioma: b.idioma, total: b.textos.length, textos: b.textos };
+  const textos = (b.textos || []).filter(t => t.pronto).map(t => {
+    const destinos = {};
+    Object.keys(t.destinos).forEach(ch => {
+      const d = t.destinos[ch], x = {};
+      PARA_O_APP.forEach(k => { if (d[k] !== undefined) x[k] = d[k]; });
+      if (Array.isArray(d.partes)) x.partes = d.partes.map(p => { const y = {}; PARA_O_APP.forEach(k => { if (p[k] !== undefined) y[k] = p[k]; }); return y; });
+      destinos[ch] = x;
+    });
+    const saida = { id: t.id, idioma: t.idioma, tipo: t.tipo, titulo: t.titulo, autor: t.autor, ano: t.ano,
+      biblioteca: t.biblioteca, blocos: t.blocos.map(bl => bl.map(l => ({ t: l.t, p: l.p, requer: l.requer }))),
+      requerTodas: t.requerTodas, destinos };
+    if (typeof t.fila === 'number') saida.fila = t.fila;
+    prontos.push({ id: t.id, idioma: t.idioma, tipo: t.tipo, titulo: t.titulo, autor: t.autor, biblioteca: t.biblioteca });
+    return saida;
+  });
+  const pacote = { versao: 3, idioma: b.idioma, total: textos.length, textos };
   fs.writeFileSync(path.join(raiz, 'data', 'textos-' + b.idioma + '.json'),
     JSON.stringify(pacote, null, 1), 'utf8');
   const js = '/* GERADO POR fonte/build.js — não edite à mão. */\n' +
@@ -1046,6 +1069,7 @@ for (const b of baralhos) {
   fs.writeFileSync(path.join(raiz, 'data', 'textos-' + b.idioma + '.js'), js, 'utf8');
   fs.writeFileSync(path.join(dataPublica, 'textos-' + b.idioma + '.js'), js, 'utf8');
 }
+fs.writeFileSync(path.join(dataPublica, 'textos.json'), JSON.stringify({ versao: 1, textos: prontos }) + '\n', 'utf8');
 
 /* ── os candidatos a texto ──
    Nada disso é card nem trilha: é a lista do que PODE virar trilha, para o

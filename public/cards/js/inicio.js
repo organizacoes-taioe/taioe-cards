@@ -203,7 +203,7 @@
     if (r.error) console.warn('o curso escolhido fica só neste aparelho até a próxima conexão', r.error);
   }
 
-  async function abrir(sb, sessao, perfil, curso) {
+  async function abrir(sb, sessao, perfil, curso, textoPedido) {
     var uid = sessao.user.id, c = CURSOS[curso];
     I.usar(c.audiencia);
     porta('porta.abrindoCurso', false, { L: I.t('lingua.' + c.lingua) });
@@ -223,6 +223,8 @@
       linguaDoCurso: function (k) { return CURSOS[k] ? CURSOS[k].lingua : null; },
       nomeDoCurso: function (k) { return nomeDoCurso(k, c.audiencia); },
       progressoSalvo: salvo || null,
+      /* o texto pedido pela Biblioteca («Aprender as palavras deste poema»), ou null */
+      textoPedido: textoPedido || null,
       trocarCurso: async function (novo) {
         await gravarCurso(sb, uid, perfil, novo);
         location.reload();
@@ -304,12 +306,24 @@
     TaioeSessao.aoSair(function () { location.replace('/'); });
 
     var curso = perfil.curso_atual;
+    /* «Aprender as palavras deste poema», na Biblioteca (PLANO.md, 9.1): /cards/?texto=<id>
+       abre o curso da língua do texto, para quem fala a língua da interface */
+    var textoPedido = null;
+    try { textoPedido = new URLSearchParams(location.search).get('texto'); } catch (e) {}
+    if (textoPedido) {
+      var prontos = await fetch('data/textos.json').then(function (x) { return x.ok ? x.json() : null; }).catch(function () { return null; });
+      var pedido = ((prontos && prontos.textos) || []).filter(function (t) { return t.id === textoPedido; })[0];
+      var doTexto = pedido ? pedido.idioma + '-' + I.lingua() : null;
+      if (doTexto && ativo(doTexto)) {
+        if (doTexto !== curso) { curso = doTexto; await gravarCurso(sb, uid, perfil, curso); }
+      } else textoPedido = null;
+    }
     if (!ativo(curso) || CURSOS[curso].audiencia !== I.lingua()) {
       var escolhido = await escolherCurso(I.lingua(), ativo(curso) ? curso : null);
       if (escolhido !== curso) { curso = escolhido; await gravarCurso(sb, uid, perfil, curso); }
     }
 
-    if (!navigator.locks) { await abrir(sb, sessao, perfil, curso); return; }
+    if (!navigator.locks) { await abrir(sb, sessao, perfil, curso, textoPedido); return; }
     navigator.locks.request('cards:estudo:' + uid + ':' + curso, { ifAvailable: true }, function (trava) {
       if (!trava) {
         porta('porta.outraAba', true);
@@ -317,7 +331,7 @@
       }
       // a trava fica com esta aba enquanto ela viver
       return new Promise(function () {
-        abrir(sb, sessao, perfil, curso).catch(function (e) {
+        abrir(sb, sessao, perfil, curso, textoPedido).catch(function (e) {
           console.error(e);
           porta('porta.erroCurso', true);
         });

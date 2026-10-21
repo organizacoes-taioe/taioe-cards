@@ -441,7 +441,8 @@ const NL = M.nivelamentoLista;
 const LISTA = NL.itens(jl.TAIOE_LISTA);
 M.usarTransparencias(FR);
 M.usarExtras({});
-const palavrasFr = FR.filter(c => c.tipo === 'palavra');
+/* o card de leitura (PLANO.md, 9.2) fica fora da lista de propósito */
+const palavrasFr = FR.filter(c => c.tipo === 'palavra' && !c.leitura);
 ok(palavrasFr.every(c => c.pos > 0), 'o pacote do fr-pt traz a posição da lista em toda palavra');
 ok(LISTA.length > 5000 && LISTA.every((x, i) => x.pos === i + 1), 'a lista do fr-pt vem inteira, em ordem de posição');
 const naLista = new Set(LISTA.flatMap(x => x.cards));
@@ -561,7 +562,7 @@ for (const curso of ['es-pt', 'es-en', 'en-pt', 'en-es', 'pt-es', 'pt-en']) {
   const LISTA = NL.itens(j.TAIOE_LISTA);
   M.usarTransparencias(CS);
   M.usarExtras({});
-  const palavras = CS.filter(c => c.tipo === 'palavra');
+  const palavras = CS.filter(c => c.tipo === 'palavra' && !c.leitura);
   ok(j.TAIOE_LISTA.curso === curso, 'a lista é a do curso');
   ok(LISTA.length > 4500 && LISTA.every((x, i) => x.pos === i + 1), `a lista vem inteira, em ordem de posição (${LISTA.length})`);
   ok(palavras.every(c => c.pos > 0), 'o pacote traz a posição em toda palavra');
