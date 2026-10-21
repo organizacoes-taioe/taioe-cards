@@ -1067,8 +1067,10 @@ window.TaioeCardsApp = function (ctx) {
     el['aba-nivel'].textContent = Motor.ROTULO_NIVEL[cardAtual.nivel] || cardAtual.nivel;
 
     const inversa = Motor.ehVolta(direcaoAtual);
-    el.enunciado.textContent = cardAtual.tipo === 'conceito'
-      ? t(ENUNCIADO_DO_CONCEITO[cardAtual.familia] || ENUNCIADO_DO_CONCEITO.caso)
+    /* no card de conceito a pergunta vai em destaque, logo acima das alternativas (pedido do
+       Gere, 21/10), e não na linha pequena do topo */
+    const conceito = cardAtual.tipo === 'conceito';
+    el.enunciado.textContent = conceito ? ''
       : inversa
       ? t(cardAtual.tipo === 'palavra' ? 'card.enunciado.voltaPalavra' : 'card.enunciado.voltaFrase', { L: NOME_L })
       : t(cardAtual.tipo === 'palavra' ? 'card.enunciado.idaPalavra' : 'card.enunciado.idaFrase');
@@ -1078,8 +1080,12 @@ window.TaioeCardsApp = function (ctx) {
     el['bandeira-feedback'].textContent = inversa ? BANDEIRA_L : BANDEIRA_A;
     /* na múltipla escolha a bandeira já diz tudo; o texto só ajuda quando
        é você quem tem que produzir a resposta */
-    el['rotulo-resposta-txt'].textContent = modoAtual === 'multipla' ? ''
+    el['rotulo-resposta-txt'].textContent = conceito
+      ? t(ENUNCIADO_DO_CONCEITO[cardAtual.familia] || ENUNCIADO_DO_CONCEITO.caso)
+      : modoAtual === 'multipla' ? ''
       : t('card.respondaEm', { x: inversa ? NOME_L : NOME_A });
+    el['rotulo-resposta-txt'].parentNode.classList.toggle('pergunta', conceito);
+    el.enunciado.classList.toggle('oculto', conceito);
     el.entrada.placeholder = inversa ? t('card.escrevaEm', { x: NOME_L })
       : t(cardAtual.tipo === 'conceito' ? 'card.escrevaConceito' : 'card.escrevaSignificado');
 

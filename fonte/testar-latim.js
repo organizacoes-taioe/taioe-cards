@@ -111,6 +111,16 @@ M.usarExtras({});
 ok(M.transparenteTotal('x1') && M.transparenteTotal('x2'), 'no modo trilhas a «parecida» conta como total');
 ok(M.escolherDesafio(CARDS, {}, {}) === null, 'não há card desafio');
 
+/* ═══════════ 7b. novo × revisão ═══════════ */
+secao('novo × revisão no começo');
+const estadosIda = k => { const e = {}; for (let i = 0; i < k; i++) e['x' + i] = { etapa: 'escrita', vistas: 1 }; return e; };
+const alvo = { esPt: 30, ptEs: 40 };
+const p0 = M.pesosDasFilas(estadosIda(0), null, alvo), p15 = M.pesosDasFilas(estadosIda(15), null, alvo), p30 = M.pesosDasFilas(estadosIda(30), null, alvo);
+ok(p0.esPt >= p0.ineditos, 'no começo a revisão pesa tanto quanto o card novo (' + p0.esPt + ' × ' + p0.ineditos + ')');
+ok(p15.esPt > 0.8 * p15.ineditos && p15.esPt < 1.5 * p15.ineditos, 'a meio caminho do alvo, perto de meio a meio (' + p15.esPt + ' × ' + p15.ineditos + ')');
+ok(p30.ineditos === 2 && p30.esPt === 10, 'no alvo, o card novo vem pelo piso (' + p30.esPt + ' × ' + p30.ineditos + ')');
+ok(p0.ptEs === 10, 'a volta não existe, e o peso dela não importa');
+
 /* ═══════════ 8. os textos ═══════════ */
 secao('os textos e os trechos');
 const pastaTextos = path.join(RAIZ, 'fonte', 'textos', 'la');
