@@ -1252,5 +1252,80 @@ window.TAGS_RAW = {
   "en": "first steps",
   "es": "primeros pasos",
   "cards": 0
+ },
+ "advérbio": {
+  "en": "adverb",
+  "es": "adverbio",
+  "cards": 0
+ },
+ "conjunção": {
+  "en": "conjunction",
+  "es": "conjunción",
+  "cards": 0
+ },
+ "interjeição": {
+  "en": "interjection",
+  "es": "interjección",
+  "cards": 0
+ },
+ "1ª declinação": {
+  "en": "1st declension",
+  "es": "1.ª declinación",
+  "cards": 0
+ },
+ "2ª declinação": {
+  "en": "2nd declension",
+  "es": "2.ª declinación",
+  "cards": 0
+ },
+ "3ª declinação": {
+  "en": "3rd declension",
+  "es": "3.ª declinación",
+  "cards": 0
+ },
+ "4ª declinação": {
+  "en": "4th declension",
+  "es": "4.ª declinación",
+  "cards": 0
+ },
+ "5ª declinação": {
+  "en": "5th declension",
+  "es": "5.ª declinación",
+  "cards": 0
+ },
+ "1ª conjugação": {
+  "en": "1st conjugation",
+  "es": "1.ª conjugación",
+  "cards": 0
+ },
+ "2ª conjugação": {
+  "en": "2nd conjugation",
+  "es": "2.ª conjugación",
+  "cards": 0
+ },
+ "3ª conjugação": {
+  "en": "3rd conjugation",
+  "es": "3.ª conjugación",
+  "cards": 0
+ },
+ "4ª conjugação": {
+  "en": "4th conjugation",
+  "es": "4.ª conjugación",
+  "cards": 0
+ },
+ "depoente": {
+  "en": "deponent",
+  "es": "deponente",
+  "cards": 0
+ },
+ "trecho": {
+  "en": "text excerpt",
+  "es": "fragmento",
+  "cards": 0
+ },
+ "frase de uso": {
+  "en": "usage sentence",
+  "es": "frase de uso",
+  "cards": 0
  }
 };

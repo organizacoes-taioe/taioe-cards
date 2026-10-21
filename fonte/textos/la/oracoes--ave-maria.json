@@ -1,0 +1,556 @@
+{
+ "id": "oracoes/ave-maria",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Ave Maria",
+ "autor": "Orações",
+ "ano": null,
+ "biblioteca": "/biblioteca/oracoes/ave-maria/",
+ "ordem": 3,
+ "blocos": [
+  [
+   {
+    "t": "Ave, Maria, gratia plena,",
+    "p": [
+     [
+      "Ave",
+      "ave"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Maria",
+      "maria"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "gratia",
+      "gratia"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "plena",
+      "plena"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "card": "la-t013"
+   },
+   {
+    "t": "Dominus tecum.",
+    "p": [
+     [
+      "Dominus",
+      "dominus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tecum",
+      "tecum"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t014"
+   },
+   {
+    "t": "Benedicta tu in mulieribus,",
+    "p": [
+     [
+      "Benedicta",
+      "benedicta"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tu",
+      "tu"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mulieribus",
+      "mulieribus"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "card": "la-t015"
+   },
+   {
+    "t": "et benedictus fructus ventris tui, Iesus.",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "benedictus",
+      "benedictus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "fructus",
+      "fructus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ventris",
+      "ventris"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tui",
+      "tui"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Iesus",
+      "iesus"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t016"
+   },
+   {
+    "t": "Sancta Maria, Mater Dei,",
+    "p": [
+     [
+      "Sancta",
+      "sancta"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Maria",
+      "maria#2"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Mater",
+      "mater"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Dei",
+      "dei"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "card": "la-t017"
+   },
+   {
+    "t": "ora pro nobis peccatoribus,",
+    "p": [
+     [
+      "ora",
+      "ora"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "pro",
+      "pro"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nobis",
+      "nobis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "peccatoribus",
+      "peccatoribus"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "card": "la-t018"
+   },
+   {
+    "t": "nunc et in hora mortis nostrae. Amen.",
+    "p": [
+     [
+      "nunc",
+      "nunc"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "hora",
+      "hora"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mortis",
+      "mortis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nostrae",
+      "nostrae"
+     ],
+     [
+      ". ",
+      null
+     ],
+     [
+      "Amen",
+      "amen"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t019"
+   }
+  ]
+ ],
+ "destinos": {
+  "ave": {
+   "lema": "ave",
+   "classe": "interjeição",
+   "funcao": "a saudação",
+   "card": "la-p110",
+   "wiki": "https://en.wiktionary.org/wiki/ave#Latin"
+  },
+  "maria": {
+   "lema": "Maria",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Maria, a mãe de Jesus."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Maria#Latin",
+   "forma": "vocativo",
+   "funcao": "a quem se fala"
+  },
+  "gratia": {
+   "lema": "gratia",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "de que está cheia",
+   "card": "la-p050",
+   "wiki": "https://en.wiktionary.org/wiki/gratia#Latin"
+  },
+  "plena": {
+   "lema": "plenus",
+   "classe": "adjetivo",
+   "forma": "vocativo feminino singular",
+   "funcao": "concorda com Maria",
+   "card": "la-p111",
+   "wiki": "https://en.wiktionary.org/wiki/plenus#Latin"
+  },
+  "dominus": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "o sujeito",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "tecum": {
+   "partes": [
+    {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "ablativo singular",
+     "funcao": "depois de cum",
+     "card": "la-p007",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+    },
+    {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "card": "la-p053",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+    }
+   ]
+  },
+  "benedicta": {
+   "lema": "benedico",
+   "classe": "verbo",
+   "forma": "particípio perfeito, nominativo feminino singular",
+   "funcao": "o predicativo, com es subentendido",
+   "card": "la-p112",
+   "wiki": "https://en.wiktionary.org/wiki/benedico#Latin"
+  },
+  "tu": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "nominativo singular",
+   "funcao": "o sujeito",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "funcao": "entre",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "mulieribus": {
+   "lema": "mulier",
+   "classe": "substantivo feminino",
+   "forma": "ablativo plural",
+   "card": "la-p113",
+   "wiki": "https://en.wiktionary.org/wiki/mulier#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "benedictus": {
+   "lema": "benedico",
+   "classe": "verbo",
+   "forma": "particípio perfeito, nominativo masculino singular",
+   "funcao": "concorda com fructus",
+   "card": "la-p112",
+   "wiki": "https://en.wiktionary.org/wiki/benedico#Latin"
+  },
+  "fructus": {
+   "lema": "fructus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "o sujeito (4ª declinação)",
+   "card": "la-p114",
+   "wiki": "https://en.wiktionary.org/wiki/fructus#Latin"
+  },
+  "ventris": {
+   "lema": "venter",
+   "classe": "substantivo masculino",
+   "forma": "genitivo singular",
+   "funcao": "de quem é o fruto",
+   "card": "la-p115",
+   "wiki": "https://en.wiktionary.org/wiki/venter#Latin"
+  },
+  "tui": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "genitivo masculino singular",
+   "funcao": "concorda com ventris",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  },
+  "iesus": {
+   "lema": "Iesus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Jesus."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Iesus#Latin",
+   "forma": "nominativo",
+   "funcao": "aposto de fructus"
+  },
+  "sancta": {
+   "lema": "sanctus",
+   "classe": "adjetivo",
+   "forma": "vocativo feminino singular",
+   "funcao": "concorda com Maria",
+   "card": "la-p084",
+   "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin"
+  },
+  "maria#2": {
+   "lema": "Maria",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Maria, a mãe de Jesus."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Maria#Latin",
+   "forma": "vocativo"
+  },
+  "mater": {
+   "lema": "mater",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "aposto de Maria",
+   "card": "la-p116",
+   "wiki": "https://en.wiktionary.org/wiki/mater#Latin"
+  },
+  "dei": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "genitivo singular",
+   "funcao": "de quem é Mãe",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "ora": {
+   "lema": "oro",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "card": "la-p077",
+   "wiki": "https://en.wiktionary.org/wiki/oro#Latin"
+  },
+  "pro": {
+   "lema": "pro",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p078",
+   "wiki": "https://en.wiktionary.org/wiki/pro#Latin"
+  },
+  "nobis": {
+   "lema": "nos",
+   "classe": "pronome",
+   "forma": "ablativo plural",
+   "funcao": "depois de pro",
+   "card": "la-p079",
+   "wiki": "https://en.wiktionary.org/wiki/nos#Latin"
+  },
+  "peccatoribus": {
+   "lema": "peccator",
+   "classe": "substantivo masculino",
+   "forma": "ablativo plural",
+   "funcao": "concorda com nobis: quem somos nós",
+   "card": "la-p117",
+   "wiki": "https://en.wiktionary.org/wiki/peccator#Latin"
+  },
+  "nunc": {
+   "lema": "nunc",
+   "classe": "advérbio",
+   "card": "la-p086",
+   "wiki": "https://en.wiktionary.org/wiki/nunc#Latin"
+  },
+  "in#2": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "hora": {
+   "lema": "hora",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "quando",
+   "card": "la-p118",
+   "wiki": "https://en.wiktionary.org/wiki/hora#Latin"
+  },
+  "mortis": {
+   "lema": "mors",
+   "classe": "substantivo feminino",
+   "forma": "genitivo singular",
+   "card": "la-p119",
+   "wiki": "https://en.wiktionary.org/wiki/mors#Latin"
+  },
+  "nostrae": {
+   "lema": "noster",
+   "classe": "adjetivo",
+   "forma": "genitivo feminino singular",
+   "funcao": "concorda com mortis",
+   "card": "la-p089",
+   "wiki": "https://en.wiktionary.org/wiki/noster#Latin"
+  },
+  "amen": {
+   "lema": "amen",
+   "classe": "interjeição",
+   "g": "gramatical",
+   "def": [
+    "Amém: assim seja. Palavra hebraica que fecha a oração."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/amen#Latin"
+  }
+ }
+}

@@ -6,3 +6,8 @@ Thumbs.db
 # O SQL da importação (fonte/migrar-supabase.js) leva o histórico de estudo: nunca versionar.
 migracao*.sql
 fonte/frequencia/brutos/
+
+# Latim: a biblioteca de apoio e o cache (LATIM.md §7) ficam fora do git; fonte/latim/fontes.json diz como baixar de novo.
+fonte/latim/corpus/
+fonte/latim/cache/
+__pycache__/

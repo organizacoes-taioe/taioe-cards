@@ -72,7 +72,7 @@ for (const m of html.matchAll(/data-i18n-attr="([^"]+)"/g)) {
 const CODIGO = ['js/app.js', 'js/inicio.js', 'js/sincronia.js'];
 /* as chaves montadas na hora: o prefixo, e os sufixos que ele pode ter */
 const MONTADAS = {
-  'lingua.': ['es', 'en', 'pt'], 'curso.': ['es', 'en', 'pt'], 'tipo.': ['palavra', 'frase']
+  'lingua.': ['es', 'en', 'pt', 'la'], 'curso.': ['es', 'en', 'pt', 'la'], 'tipo.': ['palavra', 'frase', 'conceito']
 };
 for (const f of CODIGO) {
   const src = ler(f);

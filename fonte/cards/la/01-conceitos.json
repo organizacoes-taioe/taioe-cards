@@ -1,0 +1,1008 @@
+[
+ {
+  "id": "la-g001",
+  "tipo": "conceito",
+  "familia": "caso",
+  "la": "nominativo",
+  "pt": "nominativo",
+  "aceitas": [
+   "nominativo",
+   "nom",
+   "caso nominativo"
+  ],
+  "distratores": [
+   "acusativo",
+   "genitivo",
+   "dativo",
+   "vocativo"
+  ],
+  "nota": "O caso do sujeito (quem faz a ação, ou de quem se fala) e do predicativo, com o verbo ser. Singular: rosa, dominus, lux, spiritus, dies; plural: rosae, domini, luces, spiritus, dies.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Deus caritas est.",
+    "w": "Deus",
+    "exp": "Deus: nominativo singular, o sujeito.",
+    "fonte": "1Jo 4,16"
+   },
+   {
+    "la": "Ego sum lux mundi.",
+    "w": "lux",
+    "exp": "lux: nominativo, o predicativo (o que Jesus diz que é).",
+    "fonte": "Jo 8,12"
+   },
+   {
+    "la": "Omnia vincit Amor.",
+    "w": "Amor",
+    "exp": "Amor: nominativo, o sujeito: é o Amor que vence.",
+    "fonte": "Vergílio, Bucólicas X,69"
+   },
+   {
+    "la": "Ecce ancilla Domini.",
+    "w": "ancilla",
+    "exp": "ancilla: nominativo, o que se aponta depois de ecce.",
+    "fonte": "Lc 1,38"
+   },
+   {
+    "la": "Magnificat anima mea Dominum.",
+    "w": "anima",
+    "exp": "anima: nominativo, o sujeito de magnificat.",
+    "fonte": "Lc 1,46"
+   },
+   {
+    "la": "Veritas liberabit vos.",
+    "w": "Veritas",
+    "exp": "Veritas: nominativo, o sujeito de liberabit.",
+    "fonte": "Jo 8,32"
+   },
+   {
+    "la": "Fiat lux.",
+    "w": "lux",
+    "exp": "lux: nominativo, o sujeito de fiat.",
+    "fonte": "Gn 1,3"
+   }
+  ]
+ },
+ {
+  "id": "la-g002",
+  "tipo": "conceito",
+  "familia": "caso",
+  "la": "vocativo",
+  "pt": "vocativo",
+  "aceitas": [
+   "vocativo",
+   "voc",
+   "caso vocativo"
+  ],
+  "distratores": [
+   "nominativo",
+   "acusativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "O caso de quem se chama, a quem se fala. É igual ao nominativo, menos na 2ª declinação em -us, que faz -e (Domine), e nos nomes em -ius, que fazem -i (fili, Sabidi).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Magnus es, Domine.",
+    "w": "Domine",
+    "exp": "Domine: vocativo de Dominus: é com Deus que Agostinho fala.",
+    "fonte": "Agostinho, Confissões I,1"
+   },
+   {
+    "la": "Domine, quo vadis?",
+    "w": "Domine",
+    "exp": "Domine: vocativo, Pedro chamando Jesus.",
+    "fonte": "Jo 13,36"
+   },
+   {
+    "la": "Pater, in manus tuas commendo spiritum meum.",
+    "w": "Pater",
+    "exp": "Pater: vocativo, a quem Jesus fala (igual ao nominativo).",
+    "fonte": "Lc 23,46"
+   },
+   {
+    "la": "Laudate Dominum, omnes gentes.",
+    "w": "gentes",
+    "exp": "gentes: vocativo plural, os povos chamados a louvar.",
+    "fonte": "Sl 117 (116),1"
+   },
+   {
+    "la": "Pater noster, qui es in caelis,",
+    "w": "Pater",
+    "exp": "Pater: vocativo, a quem se reza.",
+    "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "Sancta Maria, Mater Dei,",
+    "w": "Mater",
+    "exp": "Mater: vocativo, a quem se reza.",
+    "fonte": "Ave-Maria"
+   },
+   {
+    "la": "Non amo te, Sabidi, nec possum dicere quare:",
+    "w": "Sabidi",
+    "exp": "Sabidi: vocativo de Sabidius (os nomes em -ius fazem -i).",
+    "fonte": "Marcial I,32"
+   }
+  ]
+ },
+ {
+  "id": "la-g003",
+  "tipo": "conceito",
+  "familia": "caso",
+  "la": "acusativo",
+  "pt": "acusativo",
+  "aceitas": [
+   "acusativo",
+   "acus",
+   "ac",
+   "caso acusativo"
+  ],
+  "distratores": [
+   "nominativo",
+   "genitivo",
+   "dativo",
+   "ablativo"
+  ],
+  "nota": "O caso do objeto direto (o que recebe a ação) e, com preposições como in, ad e per, do lugar para onde se vai. Singular: -am, -um, -em, -um, -em; plural: -as, -os, -es, -us, -es. No neutro, é igual ao nominativo (verbum, arma).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Laudate Dominum, omnes gentes.",
+    "w": "Dominum",
+    "exp": "Dominum: acusativo singular, o objeto direto de laudate.",
+    "fonte": "Sl 117 (116),1"
+   },
+   {
+    "la": "Carpe diem.",
+    "w": "diem",
+    "exp": "diem: acusativo de dies (5ª declinação), o objeto de carpe.",
+    "fonte": "Horácio, Odes I,11"
+   },
+   {
+    "la": "Arma virumque cano.",
+    "w": "virum",
+    "exp": "virum: acusativo singular, um dos objetos de cano.",
+    "fonte": "Vergílio, Eneida I,1"
+   },
+   {
+    "la": "Sero te amavi.",
+    "w": "te",
+    "exp": "te: acusativo de tu, o objeto de amavi.",
+    "fonte": "Agostinho, Confissões X,27"
+   },
+   {
+    "la": "Credo in unum Deum.",
+    "w": "Deum",
+    "exp": "Deum: acusativo depois de in: em quem se crê.",
+    "fonte": "Credo"
+   },
+   {
+    "la": "Pater, in manus tuas commendo spiritum meum.",
+    "w": "spiritum",
+    "exp": "spiritum: acusativo (4ª declinação), o que se entrega.",
+    "fonte": "Lc 23,46"
+   },
+   {
+    "la": "Panem nostrum quotidianum da nobis hodie,",
+    "w": "Panem",
+    "exp": "Panem: acusativo de panis, o objeto de da.",
+    "fonte": "Pai-Nosso"
+   }
+  ]
+ },
+ {
+  "id": "la-g004",
+  "tipo": "conceito",
+  "familia": "caso",
+  "la": "genitivo",
+  "pt": "genitivo",
+  "aceitas": [
+   "genitivo",
+   "gen",
+   "caso genitivo"
+  ],
+  "distratores": [
+   "dativo",
+   "ablativo",
+   "acusativo",
+   "nominativo"
+  ],
+  "nota": "O caso do complemento de um nome: de quem, de quê (posse, parte, relação). Singular: -ae, -i, -is, -us, -ei; plural: -arum, -orum, -um, -uum, -erum.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Ecce ancilla Domini.",
+    "w": "Domini",
+    "exp": "Domini: genitivo singular, «do Senhor».",
+    "fonte": "Lc 1,38"
+   },
+   {
+    "la": "Ego sum lux mundi.",
+    "w": "mundi",
+    "exp": "mundi: genitivo, «do mundo».",
+    "fonte": "Jo 8,12"
+   },
+   {
+    "la": "Tu es Christus, Filius Dei vivi.",
+    "w": "Dei",
+    "exp": "Dei: genitivo de Deus, «de Deus».",
+    "fonte": "Mt 16,16"
+   },
+   {
+    "la": "Vanitas vanitatum, et omnia vanitas.",
+    "w": "vanitatum",
+    "exp": "vanitatum: genitivo plural, «das vaidades».",
+    "fonte": "Ecl 1,2"
+   },
+   {
+    "la": "et in saecula saeculorum. Amen.",
+    "w": "saeculorum",
+    "exp": "saeculorum: genitivo plural (-orum), «dos séculos».",
+    "fonte": "Glória ao Pai"
+   },
+   {
+    "la": "et benedictus fructus ventris tui, Iesus.",
+    "w": "ventris",
+    "exp": "ventris: genitivo de venter, «do ventre».",
+    "fonte": "Ave-Maria"
+   },
+   {
+    "la": "nunc et in hora mortis nostrae. Amen.",
+    "w": "mortis",
+    "exp": "mortis: genitivo de mors, «da morte».",
+    "fonte": "Ave-Maria"
+   }
+  ]
+ },
+ {
+  "id": "la-g005",
+  "tipo": "conceito",
+  "familia": "caso",
+  "la": "dativo",
+  "pt": "dativo",
+  "aceitas": [
+   "dativo",
+   "dat",
+   "caso dativo"
+  ],
+  "distratores": [
+   "ablativo",
+   "genitivo",
+   "acusativo",
+   "nominativo"
+  ],
+  "nota": "O caso do objeto indireto: a quem, para quem (dar, dizer, agradecer, desejar). Singular: -ae, -o, -i, -ui, -ei; plural: -is, -is, -ibus, -ibus, -ebus.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Deo gratias.",
+    "w": "Deo",
+    "exp": "Deo: dativo, a quem se dão graças.",
+    "fonte": "Missal Romano"
+   },
+   {
+    "la": "Pax vobis.",
+    "w": "vobis",
+    "exp": "vobis: dativo de vos, a quem se deseja a paz.",
+    "fonte": "Jo 20,19"
+   },
+   {
+    "la": "Gloria in excelsis Deo.",
+    "w": "Deo",
+    "exp": "Deo: dativo, a quem se dá glória.",
+    "fonte": "Missal Romano"
+   },
+   {
+    "la": "Gloria Patri, et Filio, et Spiritui Sancto.",
+    "w": "Patri",
+    "exp": "Patri: dativo de pater (3ª declinação, -i).",
+    "fonte": "Glória ao Pai"
+   },
+   {
+    "la": "Gloria Patri, et Filio, et Spiritui Sancto.",
+    "w": "Spiritui",
+    "exp": "Spiritui: dativo de spiritus (4ª declinação, -ui).",
+    "fonte": "Glória ao Pai"
+   },
+   {
+    "la": "Panem nostrum quotidianum da nobis hodie,",
+    "w": "nobis",
+    "exp": "nobis: dativo de nos, a quem se dá.",
+    "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "sicut et nos dimittimus debitoribus nostris.",
+    "w": "debitoribus",
+    "exp": "debitoribus: dativo plural (-ibus), a quem se perdoa.",
+    "fonte": "Pai-Nosso"
+   }
+  ]
+ },
+ {
+  "id": "la-g006",
+  "tipo": "conceito",
+  "familia": "caso",
+  "la": "ablativo",
+  "pt": "ablativo",
+  "aceitas": [
+   "ablativo",
+   "abl",
+   "caso ablativo"
+  ],
+  "distratores": [
+   "dativo",
+   "genitivo",
+   "acusativo",
+   "vocativo"
+  ],
+  "nota": "O caso das circunstâncias: onde, quando, com quê, com quem, de onde, em quê; quase sempre depois de preposição (in, cum, a/ab, pro). Singular: -a, -o, -e, -u, -e; plural: -is, -is, -ibus, -ibus, -ebus.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Requiescat in pace.",
+    "w": "pace",
+    "exp": "pace: ablativo de pax, depois de in (onde).",
+    "fonte": "Ritual de exéquias"
+   },
+   {
+    "la": "In principio erat Verbum.",
+    "w": "principio",
+    "exp": "principio: ablativo depois de in (quando).",
+    "fonte": "Jo 1,1"
+   },
+   {
+    "la": "Et cum spiritu tuo.",
+    "w": "spiritu",
+    "exp": "spiritu: ablativo (4ª declinação, -u) depois de cum.",
+    "fonte": "Missal Romano"
+   },
+   {
+    "la": "Mens sana in corpore sano.",
+    "w": "corpore",
+    "exp": "corpore: ablativo de corpus, depois de in.",
+    "fonte": "Juvenal, Sátiras X,356"
+   },
+   {
+    "la": "Qui sequitur me, non ambulat in tenebris.",
+    "w": "tenebris",
+    "exp": "tenebris: ablativo plural, depois de in (onde).",
+    "fonte": "Jo 8,12"
+   },
+   {
+    "la": "Beati pauperes spiritu.",
+    "w": "spiritu",
+    "exp": "spiritu: ablativo, em quê são pobres.",
+    "fonte": "Mt 5,3"
+   },
+   {
+    "la": "sed libera nos a malo. Amen.",
+    "w": "malo",
+    "exp": "malo: ablativo depois de a (de onde: afastamento).",
+    "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "Ave, Maria, gratia plena,",
+    "w": "gratia",
+    "exp": "gratia: ablativo com plena, de que está cheia.",
+    "fonte": "Ave-Maria"
+   }
+  ]
+ },
+ {
+  "id": "la-g007",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "presente do indicativo",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "presente do indicativo",
+   "presente",
+   "indicativo presente",
+   "presente indicativo"
+  ],
+  "distratores": [
+   "imperfeito do indicativo",
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo"
+  ],
+  "nota": "O que acontece agora ou sempre. Pessoas: -o (ou -m), -s, -t, -mus, -tis, -nt (amo, amas, amat…); em sum: sum, es, est, sumus, estis, sunt.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Deus caritas est.",
+    "w": "est",
+    "exp": "est: presente de sum, 3ª pessoa do singular: «é».",
+    "fonte": "1Jo 4,16"
+   },
+   {
+    "la": "Sitio.",
+    "w": "Sitio",
+    "exp": "Sitio: presente, 1ª pessoa do singular: «tenho sede».",
+    "fonte": "Jo 19,28"
+   },
+   {
+    "la": "Omnia vincit Amor.",
+    "w": "vincit",
+    "exp": "vincit: presente, 3ª pessoa do singular: «vence».",
+    "fonte": "Vergílio, Bucólicas X,69"
+   },
+   {
+    "la": "Credo in unum Deum.",
+    "w": "Credo",
+    "exp": "Credo: presente, 1ª pessoa do singular: «creio».",
+    "fonte": "Credo"
+   },
+   {
+    "la": "Magnificat anima mea Dominum.",
+    "w": "Magnificat",
+    "exp": "Magnificat: presente, 3ª pessoa do singular: «engrandece».",
+    "fonte": "Lc 1,46"
+   },
+   {
+    "la": "Domine, quo vadis?",
+    "w": "vadis",
+    "exp": "vadis: presente, 2ª pessoa do singular: «vais».",
+    "fonte": "Jo 13,36"
+   },
+   {
+    "la": "sicut et nos dimittimus debitoribus nostris.",
+    "w": "dimittimus",
+    "exp": "dimittimus: presente, 1ª pessoa do plural: «perdoamos».",
+    "fonte": "Pai-Nosso"
+   }
+  ]
+ },
+ {
+  "id": "la-g008",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "imperfeito do indicativo",
+  "pt": "imperfeito do indicativo",
+  "aceitas": [
+   "imperfeito do indicativo",
+   "imperfeito",
+   "preterito imperfeito",
+   "preterito imperfeito do indicativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo"
+  ],
+  "nota": "O que acontecia, durava ou se repetia no passado. A marca é -ba- (amabat, videbat); em sum: eram, eras, erat.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "In principio erat Verbum.",
+    "w": "erat",
+    "exp": "erat: imperfeito de sum: «era», o que já estava e durava.",
+    "fonte": "Jo 1,1"
+   },
+   {
+    "la": "Sicut erat in principio, et nunc, et semper,",
+    "w": "erat",
+    "exp": "erat: imperfeito de sum: «era».",
+    "fonte": "Glória ao Pai"
+   },
+   {
+    "la": "In ipso vita erat, et vita erat lux hominum:",
+    "w": "erat",
+    "exp": "erat: imperfeito de sum: «a vida era a luz».",
+    "fonte": "Jo 1,4"
+   },
+   {
+    "la": "In mundo erat, et mundus per ipsum factus est,",
+    "w": "erat",
+    "exp": "erat: imperfeito de sum: «estava no mundo».",
+    "fonte": "Jo 1,10"
+   },
+   {
+    "la": "Videbam Satanam sicut fulgur de caelo cadentem.",
+    "w": "Videbam",
+    "exp": "Videbam: imperfeito de video (-ba-), 1ª pessoa: «eu via».",
+    "fonte": "Lc 10,18"
+   },
+   {
+    "la": "Erat ergo recumbens unus ex discipulis eius in sinu Iesu, quem diligebat Iesus.",
+    "w": "diligebat",
+    "exp": "diligebat: imperfeito de diligo (-ba-): «amava».",
+    "fonte": "Jo 13,23"
+   }
+  ]
+ },
+ {
+  "id": "la-g009",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "perfeito do indicativo",
+  "pt": "perfeito do indicativo",
+  "aceitas": [
+   "perfeito do indicativo",
+   "perfeito",
+   "preterito perfeito",
+   "preterito perfeito do indicativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "futuro do indicativo",
+   "imperativo"
+  ],
+  "nota": "O que aconteceu e acabou. Pessoas: -i, -isti, -it, -imus, -istis, -erunt (amavi, amavisti, amavit…). O radical do perfeito muitas vezes muda: venio → veni, video → vidi, vinco → vici.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Veni, vidi, vici.",
+    "w": "vici",
+    "exp": "vici: perfeito de vinco, 1ª pessoa: «venci».",
+    "fonte": "Suetônio, César 37"
+   },
+   {
+    "la": "Veni, vidi, vici.",
+    "w": "Veni",
+    "exp": "Veni: perfeito de venio, 1ª pessoa: «vim».",
+    "fonte": "Suetônio, César 37"
+   },
+   {
+    "la": "Sero te amavi.",
+    "w": "amavi",
+    "exp": "amavi: perfeito de amo (-v-i), 1ª pessoa: «amei».",
+    "fonte": "Agostinho, Confissões X,27"
+   },
+   {
+    "la": "In principio creavit Deus caelum et terram.",
+    "w": "creavit",
+    "exp": "creavit: perfeito de creo, 3ª pessoa: «criou».",
+    "fonte": "Gn 1,1"
+   },
+   {
+    "la": "Et vidit Deus lucem quod esset bona:",
+    "w": "vidit",
+    "exp": "vidit: perfeito de video, 3ª pessoa: «viu».",
+    "fonte": "Gn 1,4"
+   },
+   {
+    "la": "Et Verbum caro factum est, et habitavit in nobis:",
+    "w": "habitavit",
+    "exp": "habitavit: perfeito de habito, 3ª pessoa: «habitou».",
+    "fonte": "Jo 1,14"
+   }
+  ]
+ },
+ {
+  "id": "la-g010",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "futuro do indicativo",
+  "pt": "futuro do indicativo",
+  "aceitas": [
+   "futuro do indicativo",
+   "futuro",
+   "futuro do presente",
+   "futuro do presente do indicativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "perfeito do indicativo",
+   "presente do subjuntivo"
+  ],
+  "nota": "O que vai acontecer. Na 1ª e na 2ª conjugações, -bo, -bis, -bit… (amabo, liberabit); na 3ª e na 4ª, -am, -es, -et… (dicam, veniet); em sum: ero, eris, erit.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Veritas liberabit vos.",
+    "w": "liberabit",
+    "exp": "liberabit: futuro de libero (-bi-): «libertará».",
+    "fonte": "Jo 8,32"
+   },
+   {
+    "la": "qui sequitur me, non ambulat in tenebris, sed habebit lumen vitae.",
+    "w": "habebit",
+    "exp": "habebit: futuro de habeo (-bi-): «terá».",
+    "fonte": "Jo 8,12"
+   },
+   {
+    "la": "quoniam ipsi Deum videbunt.",
+    "w": "videbunt",
+    "exp": "videbunt: futuro de video (-bu-), 3ª pessoa do plural: «verão».",
+    "fonte": "Mt 5,8"
+   },
+   {
+    "la": "quoniam ipsi possidebunt terram.",
+    "w": "possidebunt",
+    "exp": "possidebunt: futuro de possideo: «possuirão».",
+    "fonte": "Mt 5,4"
+   },
+   {
+    "la": "ecce enim ex hoc beatam me dicent omnes generationes,",
+    "w": "dicent",
+    "exp": "dicent: futuro de dico (3ª conjugação, -e-): «dirão».",
+    "fonte": "Lc 1,48"
+   },
+   {
+    "la": "Nam etsi ambulavero in medio umbrae mortis, non timebo mala,",
+    "w": "timebo",
+    "exp": "timebo: futuro de timeo (-bo), 1ª pessoa: «temerei».",
+    "fonte": "Sl 23 (22),4"
+   }
+  ]
+ },
+ {
+  "id": "la-g011",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "imperativo",
+  "pt": "imperativo",
+  "aceitas": [
+   "imperativo",
+   "imperativo presente",
+   "imperativo afirmativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "presente do subjuntivo",
+   "infinitivo",
+   "perfeito do indicativo"
+  ],
+  "nota": "A ordem ou o pedido. No singular, o radical do verbo (lauda, carpe, tolle, ora, libera); no plural, com -te (laudate). A proibição se faz com noli + infinitivo ou ne + subjuntivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Laudate Dominum, omnes gentes.",
+    "w": "Laudate",
+    "exp": "Laudate: imperativo plural (-te): «louvai».",
+    "fonte": "Sl 117 (116),1"
+   },
+   {
+    "la": "Carpe diem.",
+    "w": "Carpe",
+    "exp": "Carpe: imperativo singular de carpo: «colhe», «aproveita».",
+    "fonte": "Horácio, Odes I,11"
+   },
+   {
+    "la": "Tolle, lege.",
+    "w": "lege",
+    "exp": "lege: imperativo singular de lego: «lê».",
+    "fonte": "Agostinho, Confissões VIII,12"
+   },
+   {
+    "la": "Ora pro nobis.",
+    "w": "Ora",
+    "exp": "Ora: imperativo singular de oro: «roga».",
+    "fonte": "Ladainha de Nossa Senhora"
+   },
+   {
+    "la": "sed libera nos a malo. Amen.",
+    "w": "libera",
+    "exp": "libera: imperativo singular de libero: «livra».",
+    "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "Panem nostrum quotidianum da nobis hodie,",
+    "w": "da",
+    "exp": "da: imperativo singular de do: «dá».",
+    "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "Noli me tangere.",
+    "w": "Noli",
+    "exp": "Noli: imperativo de nolo: com o infinitivo, a proibição.",
+    "fonte": "Jo 20,17"
+   }
+  ]
+ },
+ {
+  "id": "la-g012",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "presente do subjuntivo",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "presente do subjuntivo",
+   "subjuntivo presente",
+   "subjuntivo",
+   "presente do conjuntivo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperativo",
+   "futuro do indicativo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "O desejo, o pedido, a finalidade: «que seja», «que venha». A vogal é -e- na 1ª conjugação (sanctificetur, amet) e -a- nas outras (adveniat, requiescat, fiat); em sum: sim, sis, sit.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Fiat lux.",
+    "w": "Fiat",
+    "exp": "Fiat: subjuntivo de fio: «faça-se», «que seja feita».",
+    "fonte": "Gn 1,3"
+   },
+   {
+    "la": "Requiescat in pace.",
+    "w": "Requiescat",
+    "exp": "Requiescat: subjuntivo (-a-): «que descanse».",
+    "fonte": "Ritual de exéquias"
+   },
+   {
+    "la": "sanctificetur nomen tuum.",
+    "w": "sanctificetur",
+    "exp": "sanctificetur: subjuntivo (-e-, 1ª conjugação), passivo: «seja santificado».",
+    "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "Adveniat regnum tuum.",
+    "w": "Adveniat",
+    "exp": "Adveniat: subjuntivo (-a-): «venha».",
+    "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "Fiat voluntas tua, sicut in caelo et in terra.",
+    "w": "Fiat",
+    "exp": "Fiat: subjuntivo: «seja feita».",
+    "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "Et ne nos inducas in tentationem,",
+    "w": "inducas",
+    "exp": "inducas: subjuntivo (-a-) com ne: o pedido negativo.",
+    "fonte": "Pai-Nosso"
+   }
+  ]
+ },
+ {
+  "id": "la-g013",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "infinitivo",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo",
+   "infinitivo presente",
+   "infinitivo impessoal"
+  ],
+  "distratores": [
+   "imperativo",
+   "presente do indicativo",
+   "presente do subjuntivo",
+   "particípio perfeito"
+  ],
+  "nota": "O nome do verbo: -re no presente ativo (amare, videre, dicere, venire; esse, posse). Completa verbos como possum, volo e nolo: «possum dicere», «posso dizer».",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Noli me tangere.",
+    "w": "tangere",
+    "exp": "tangere: infinitivo de tango, depois de noli.",
+    "fonte": "Jo 20,17"
+   },
+   {
+    "la": "Non amo te, Sabidi, nec possum dicere quare:",
+    "w": "dicere",
+    "exp": "dicere: infinitivo de dico, depois de possum.",
+    "fonte": "Marcial I,32"
+   },
+   {
+    "la": "hoc tantum possum dicere, non amo te.",
+    "w": "dicere",
+    "exp": "dicere: infinitivo, o que se pode fazer: «dizer».",
+    "fonte": "Marcial I,32"
+   },
+   {
+    "la": "Ecce quam bonum et quam iucundum, habitare fratres in unum!",
+    "w": "habitare",
+    "exp": "habitare: infinitivo de habito, o sujeito da frase: «morar».",
+    "fonte": "Sl 133 (132),1"
+   },
+   {
+    "la": "Quo ego vado non potes me modo sequi:",
+    "w": "sequi",
+    "exp": "sequi: infinitivo do depoente sequor (-i), depois de potes.",
+    "fonte": "Jo 13,36"
+   }
+  ]
+ },
+ {
+  "id": "la-g014",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "particípio perfeito",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito",
+   "participio passado",
+   "participio",
+   "participio perfeito passivo"
+  ],
+  "distratores": [
+   "infinitivo",
+   "imperativo",
+   "perfeito do indicativo",
+   "presente do indicativo"
+  ],
+  "nota": "Adjetivo formado do verbo, de sentido passivo e passado: benedictus, «bendito»; consummatum, «consumado». Concorda com o nome como qualquer adjetivo; com sum, forma o perfeito passivo (consummatum est).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Benedicta tu in mulieribus,",
+    "w": "Benedicta",
+    "exp": "Benedicta: particípio de benedico, feminino: «bendita».",
+    "fonte": "Ave-Maria"
+   },
+   {
+    "la": "et benedictus fructus ventris tui, Iesus.",
+    "w": "benedictus",
+    "exp": "benedictus: particípio, masculino, concorda com fructus: «bendito».",
+    "fonte": "Ave-Maria"
+   },
+   {
+    "la": "Consummatum est.",
+    "w": "Consummatum",
+    "exp": "Consummatum: particípio de consummo (neutro), com est: «está consumado».",
+    "fonte": "Jo 19,30"
+   },
+   {
+    "la": "Et Verbum caro factum est, et habitavit in nobis:",
+    "w": "factum",
+    "exp": "factum: particípio de facio (neutro), com est: «se fez».",
+    "fonte": "Jo 1,14"
+   },
+   {
+    "la": "Et facta est lux.",
+    "w": "facta",
+    "exp": "facta: particípio de facio (feminino, com lux), com est: «foi feita».",
+    "fonte": "Gn 1,3"
+   }
+  ]
+ },
+ {
+  "id": "la-g015",
+  "tipo": "conceito",
+  "familia": "voz",
+  "la": "voz passiva",
+  "pt": "voz passiva",
+  "aceitas": [
+   "voz passiva",
+   "passiva",
+   "passivo"
+  ],
+  "distratores": [
+   "voz ativa",
+   "verbo depoente",
+   "verbo impessoal",
+   "verbo reflexivo"
+  ],
+  "nota": "O sujeito sofre a ação. Terminações: -r, -ris, -tur, -mur, -mini, -ntur (sanctificetur: «seja santificado»); nos tempos do perfeito, particípio + sum (consummatum est: «foi consumado»).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "sanctificetur nomen tuum.",
+    "w": "sanctificetur",
+    "exp": "sanctificetur: passiva (-tur): o nome é santificado, não santifica.",
+    "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "Consummatum est.",
+    "w": "Consummatum",
+    "exp": "Consummatum est: perfeito passivo: «foi consumado».",
+    "fonte": "Jo 19,30"
+   },
+   {
+    "la": "Et facta est lux.",
+    "w": "facta",
+    "exp": "facta est: perfeito passivo: «foi feita».",
+    "fonte": "Gn 1,3"
+   },
+   {
+    "la": "quoniam ipsi saturabuntur.",
+    "w": "saturabuntur",
+    "exp": "saturabuntur: futuro passivo (-ntur): «serão saciados».",
+    "fonte": "Mt 5,6"
+   },
+   {
+    "la": "quoniam filii Dei vocabuntur.",
+    "w": "vocabuntur",
+    "exp": "vocabuntur: futuro passivo (-ntur): «serão chamados».",
+    "fonte": "Mt 5,9"
+   }
+  ]
+ },
+ {
+  "id": "la-g016",
+  "tipo": "conceito",
+  "familia": "voz",
+  "la": "verbo depoente",
+  "pt": "verbo depoente",
+  "aceitas": [
+   "verbo depoente",
+   "depoente"
+  ],
+  "distratores": [
+   "voz ativa",
+   "voz passiva",
+   "verbo impessoal",
+   "verbo reflexivo"
+  ],
+  "nota": "Verbo de forma passiva e sentido ativo: sequor, «sigo»; sequitur, «segue»; loquor, «falo». No dicionário, o enunciado termina em sum (sequor, sequi, secutus sum).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Qui sequitur me, non ambulat in tenebris.",
+    "w": "sequitur",
+    "exp": "sequitur: forma passiva (-tur), sentido ativo: «segue».",
+    "fonte": "Jo 8,12"
+   },
+   {
+    "la": "Quo ego vado non potes me modo sequi:",
+    "w": "sequi",
+    "exp": "sequi: infinitivo depoente (-i): «seguir».",
+    "fonte": "Jo 13,36"
+   },
+   {
+    "la": "sicut locutus est ad patres nostros, Abraham et semini eius in saecula.",
+    "w": "locutus",
+    "exp": "locutus est: perfeito do depoente loquor: «falou».",
+    "fonte": "Lc 1,55"
+   },
+   {
+    "la": "Te Deum laudamus: te Dominum confitemur.",
+    "w": "confitemur",
+    "exp": "confitemur: presente do depoente confiteor: «proclamamos».",
+    "fonte": "Te Deum"
+   }
+  ]
+ }
+]

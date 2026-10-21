@@ -281,7 +281,26 @@ window.Motor = (function () {
       omissiveis: OMISSIVEIS_FR, numeros: NUMEROS_FR,
       grafias: tabela({}), plural: pluralFr, pre: preFr,
       pontuacao: PONTUACAO_PT
+    },
+    /* O latim (cards/LATIM.md) só é pergunta: quem estuda responde em português. O funil dele
+       serve para comparar latim com latim (o card repetido, a resposta escrita na língua
+       errada), e iguala o que as edições escrevem de jeitos diferentes: sem acento nem mácron,
+       j = i, v = u, a ligadura desfeita. Nada de plural nem de palavra omissível: no latim a
+       terminação é a lição. */
+    la: {
+      omissiveis: new Set(), numeros: tabela({}), grafias: tabela({}), plural: p => p,
+      pre: s => s.trim().replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i').replace(/v/g, 'u'),
+      pontuacao: PONTUACAO_PT
     }
+  };
+
+  /* No latim (modo trilhas) o número e a pessoa são justamente o que se lê: a resposta em
+     português não iguala plural e singular, e o pronome fica — «vos libertará» não é «nos
+     libertará», «os dias» não é «o dia». Cai só o artigo (e o «já»); o resto do funil é o de
+     sempre. O sujeito opcional vai no gabarito («[eu ~] creio»). */
+  const PT_DO_LATIM = {
+    omissiveis: new Set(['o', 'a', 'os', 'as', 'um', 'uma', 'uns', 'umas', 'ja']), numeros: NUMEROS_PT,
+    grafias: GRAFIAS_PT, plural: p => p, pre: prePt, pontuacao: PONTUACAO_PT
   };
 
   /* ── o advérbio de tempo que anda pela frase ──
@@ -304,7 +323,8 @@ window.Motor = (function () {
     pt: new Set(['hoje', 'ontem', 'amanha', 'agora', 'sempre', 'nunca']),
     es: new Set(['hoy', 'ayer', 'manana', 'ahora', 'siempre', 'nunca']),
     en: new Set(['today', 'yesterday', 'tomorrow', 'now', 'always', 'never']),
-    fr: new Set(['hier', 'demain', 'maintenant', 'toujours'])
+    fr: new Set(['hier', 'demain', 'maintenant', 'toujours']),
+    la: new Set()
   };
 
   function tempoParaOFim(palavras, lingua) {
@@ -319,7 +339,7 @@ window.Motor = (function () {
   /* «opcoes.plural = false» desliga o plural = singular. Só a conferência da
      flexão usa: para ela, o «-s» de «apeteces» é a pessoa do verbo. */
   function normalizar(txt, lingua, opcoes) {
-    const L = LINGUAS[lingua] || LINGUAS.pt;
+    const L = (!lingua || lingua === 'pt') && soIda() ? PT_DO_LATIM : (LINGUAS[lingua] || LINGUAS.pt);
     const comPlural = !opcoes || opcoes.plural !== false;
     /* «opcoes.cru» deixa o sujeito na frase e o advérbio de tempo onde está.
        Só o «deu quase» usa (ver conferir). */
@@ -387,6 +407,16 @@ window.Motor = (function () {
   function ehVolta(direcao) { return direcao === VOLTA; }
   function direcoes() { return { ida: IDA, volta: VOLTA }; }
 
+  /* ── o modo do curso (cards/LATIM.md §10) ──
+     «livre» é o de sempre. «trilhas» é o do latim: só se aprende pelos textos, todo card só
+     tem a ida (como o card de leitura) e fica dominado ao fim dela, não há volta nem desafio,
+     e a fila da ida não espera mais a volta encher. O app chama usarModo logo depois de
+     usarBaralho; quem nunca chama (o build, as ferramentas) fica no «livre». */
+  let MODO = 'livre';
+  function usarModo(modo) { MODO = modo === 'trilhas' ? 'trilhas' : 'livre'; }
+  function modo() { return MODO; }
+  function soIda() { return MODO === 'trilhas'; }
+
   /* distância de Levenshtein, só para deslize de digitação em palavra única */
   function distancia(a, b) {
     if (a === b) return 0;
@@ -418,7 +448,8 @@ window.Motor = (function () {
     pt: { certa: 'pt', aceitas: 'aceitas',   distratores: 'distratores',   formas: 'formasPt', sinonimos: 'sinonimos',   regionais: 'regionais' },
     es: { certa: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', formas: 'formasEs', sinonimos: 'sinonimosEs', regionais: 'regionaisEs' },
     en: { certa: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', formas: 'formasEn', sinonimos: 'sinonimosEn', regionais: 'regionaisEn' },
-    fr: { certa: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', formas: 'formasFr', sinonimos: 'sinonimosFr', regionais: 'regionaisFr' }
+    fr: { certa: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', formas: 'formasFr', sinonimos: 'sinonimosFr', regionais: 'regionaisFr' },
+    la: { certa: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', formas: 'formasLa', sinonimos: 'sinonimosLa', regionais: 'regionaisLa' }
   };
 
   /* ── a língua que o baralho ensina ──
@@ -434,18 +465,78 @@ window.Motor = (function () {
   }
 
   const Maiuscula = l => l[0].toUpperCase() + l[1];
+
+  /* ── o gabarito (cards/LATIM.md §4) ──
+     A frase latina tem muitas traduções certas, e listar todas à mão não acaba. O card traz
+     um molde: as alternativas entre colchetes, separadas por «~» («[louvai ~ louvem] o
+     Senhor»), a parte opcional com uma alternativa vazia («[eu ~] creio»), colchete dentro de
+     colchete. Aqui ele se abre em todas as frases que descreve, e o funil faz o resto (acento,
+     artigo, plural…). Chave e barra ficam de fora de propósito: { | } são do card de gênero, e
+     a barra separa dois sentidos. Molde malformado ou grande demais devolve a lista vazia com
+     «erro», que o build mostra. */
+  const GABARITO_MAXIMO = 2000;
+  const GABARITOS = new Map();
+  function expandirGabarito(g) {
+    g = String(g || '');
+    if (GABARITOS.has(g)) return GABARITOS.get(g);
+    let i = 0;
+    function sequencia() {
+      let saida = [''];
+      while (i < g.length && g[i] !== ']' && g[i] !== '~') {
+        if (g[i] === '[') {
+          i++;
+          const alternativas = [];
+          for (;;) {
+            alternativas.push(...sequencia());
+            if (g[i] === '~') { i++; continue; }
+            if (g[i] === ']') { i++; break; }
+            throw new Error('falta o «]»');
+          }
+          const juntas = [];
+          for (const a of saida) {
+            for (const b of alternativas) {
+              juntas.push(a + b);
+              if (juntas.length > GABARITO_MAXIMO) throw new Error('mais de ' + GABARITO_MAXIMO + ' frases');
+            }
+          }
+          saida = juntas;
+        } else {
+          let j = i;
+          while (j < g.length && '[]~'.indexOf(g[j]) < 0) j++;
+          const pedaco = g.slice(i, j);
+          saida = saida.map(a => a + pedaco);
+          i = j;
+        }
+      }
+      return saida;
+    }
+    let lista;
+    try {
+      lista = sequencia();
+      if (i < g.length) throw new Error('«' + g[i] + '» fora de colchete');
+      lista = lista.map(s => s.replace(/\s+/g, ' ').replace(/\s+([,.;:!?])/g, '$1').trim()).filter(Boolean);
+    } catch (e) {
+      lista = [];
+      lista.erro = e.message;
+    }
+    GABARITOS.set(g, lista);
+    return lista;
+  }
+
   function formasAceitas(card, direcao) {
     const lingua = linguaDaResposta(direcao);
     const campo = CAMPOS[lingua];
     const certa = String(card[campo.certa] || '');
     /* a variante regional vale como resposta certa (ver regionalDoCard) */
     const extras = (card[campo.aceitas] || []).concat(Object.keys(card[campo.regionais] || {}));
+    /* o gabarito é da língua de quem responde: na ida, nunca da língua ensinada */
+    const gabarito = card.gabarito && lingua !== idiomaDoCard(card) ? expandirGabarito(card.gabarito) : [];
 
     /* No espanhol a barra não separa duas respostas: o card traz uma forma
        só, e as variantes vêm por aceitasEs. */
     return lingua === 'es'
-      ? [certa, ...extras]
-      : [certa, ...certa.split('/'), ...extras];
+      ? [certa, ...extras, ...gabarito]
+      : [certa, ...certa.split('/'), ...extras, ...gabarito];
   }
 
   function respostasAceitas(card, direcao) {
@@ -582,7 +673,7 @@ window.Motor = (function () {
      os pares vêm da nota do público («nota», «notaEs», «notaEn»), no formato
      «bandeira da ensinada x → bandeira do público y» — «🇺🇸 gun → 🇧🇷 a
      arma» no inglês, «🇧🇷 esquisito → 🇪🇸 raro» no português. */
-  const BANDEIRA_DA_LINGUA = { es: '🇪🇸', pt: '🇧🇷', en: '🇺🇸', fr: '🇫🇷' };
+  const BANDEIRA_DA_LINGUA = { es: '🇪🇸', pt: '🇧🇷', en: '🇺🇸', fr: '🇫🇷', la: '🇻🇦' };
   const notaDoPublico = (card, a) => String((card && card[a === 'pt' ? 'nota' : 'nota' + a[0].toUpperCase() + a[1]]) || '');
   function espanhoisDoCard(card, direcao) {
     const l = linguaDaPergunta(direcao || IDA), a = linguaDaResposta(direcao || IDA);
@@ -944,6 +1035,11 @@ window.Motor = (function () {
     const aceitas = respostasAceitas(card, direcao);
     if (aceitas.includes(dado)) return 'certo';
 
+    /* No modo trilhas, o distrator da frase é a leitura errada que o card já conhece (a
+       gramática mal lida): escrito igual, é erro seco, e não «deu quase». */
+    if (soIda() && card.tipo === 'frase' &&
+        (card[CAMPOS[lingua].distratores] || []).some(d => normalizar(d, lingua) === dado)) return 'errado';
+
     /* Se o que ele escreveu é outra conjugação registrada do mesmo verbo,
        não foi a mão que escorregou: foi o tempo ou a pessoa que ele errou,
        que é justamente o que o card cobra. Erro seco, sem perguntar. */
@@ -969,6 +1065,7 @@ window.Motor = (function () {
     if (formasAceitas(card, direcao).some(f => parecido(cru, normalizar(f, lingua, { cru: true }), lingua))) {
       return 'quase';
     }
+    if (soIda() && card.tipo === 'frase' && aceitas.some(alvo => parecidoDeFrase(dado, alvo))) return 'quase';
     return 'errado';
   }
 
@@ -1101,6 +1198,22 @@ window.Motor = (function () {
        «estuve allí» (dez contra onze) caía como errado seco — era uma tecla. */
     if (inversa && d === 1 && maior >= 6) return true;
     return 1 - d / maior >= (inversa ? 0.92 : 0.82);
+  }
+
+  /* ── o «deu quase» da frase traduzida (cards/LATIM.md §4) ──
+     Traduzindo uma frase latina, quem acerta o sentido erra fácil na ordem («o Senhor louvai»)
+     ou numa palavra («cantai o Senhor»). Com as mesmas palavras em outra ordem, ou uma
+     palavra só trocada, a pergunta vale: quem decide se está certo é a pessoa, e o que ela
+     aceitar vai para a curadoria, que amplia o gabarito. Só no modo trilhas. */
+  function parecidoDeFrase(a, b) {
+    const x = String(a || '').split(' ').filter(Boolean), y = String(b || '').split(' ').filter(Boolean);
+    if (Math.min(x.length, y.length) < 3) return false;
+    const conta = new Map();
+    x.forEach(p => conta.set(p, (conta.get(p) || 0) + 1));
+    y.forEach(p => conta.set(p, (conta.get(p) || 0) - 1));
+    let sobra = 0, falta = 0;
+    for (const v of conta.values()) { if (v > 0) sobra += v; else falta -= v; }
+    return sobra <= 1 && falta <= 1;
   }
 
   /* ── onde foi que deu quase ──
@@ -1578,9 +1691,11 @@ window.Motor = (function () {
     const ida = (alvo && alvo.esPt) || ALVO_IDA_MIN;
     const volta = (alvo && alvo.ptEs) || ALVO_VOLTA_MIN;
     const corta = v => Math.min(TETO_PESO, Math.max(0, GANHO * v));
+    /* No modo trilhas não há volta para encher: a ida não ganha o peso de quem empurra card
+       para lá (ver usarModo). Sem isso a ida ficava com +100 para sempre e o card novo minguava. */
     const p = {
       ineditos: PISO_INEDITO + corta(ida - c.esPt),
-      esPt:     PISO_REVISAO + corta(volta - c.ptEs) + corta(c.esPt - ida),
+      esPt:     PISO_REVISAO + (soIda() ? 0 : corta(volta - c.ptEs)) + corta(c.esPt - ida),
       ptEs:     PISO_REVISAO + corta(c.ptEs - volta)
     };
     if (tem) for (const k in p) if (!tem[k]) p[k] = 0;
@@ -2126,8 +2241,9 @@ window.Motor = (function () {
         if (inversa) est.etapa = 'inversa-escrita';
         else est.etapa = 'escrita';
       } else if (est.seguidas >= acertosParaVirar(est, inversa)) {
-        /* o card de leitura não tem volta: a ida fechada já é o domínio */
-        const fecha = inversa || ehLeitura(est.id);
+        /* o card de leitura não tem volta: a ida fechada já é o domínio; no modo trilhas,
+           nenhum card tem */
+        const fecha = inversa || soIda() || ehLeitura(est.id);
         est.etapa = fecha ? 'dominado' : 'inversa-multipla';
         /* a primeira vez só: é dela que a frase de uso conta o dia seguinte */
         if (fecha && !est.dominadoEm) est.dominadoEm = new Date().toISOString();
@@ -2204,8 +2320,8 @@ window.Motor = (function () {
   };
 
   function faseDe(est) {
-    /* o card de leitura só conhece a ida, também quando dominado */
-    if (est && ehLeitura(est.id)) {
+    /* o card de leitura só conhece a ida, também quando dominado; no modo trilhas, todos */
+    if (est && (soIda() || ehLeitura(est.id))) {
       if (est.etapa === 'dominado' || est.etapa === 'escrita') return { direcao: IDA, modo: 'escrita' };
       return { direcao: IDA, modo: 'multipla' };
     }
@@ -2223,13 +2339,25 @@ window.Motor = (function () {
   function resposta(card, direcao) {
     return card[linguaDaResposta(direcao)];
   }
+
+  /* ── o card de conceito (cards/LATIM.md §3.5) ──
+     Pergunta-se com um exemplo real e uma palavra em destaque («Em que caso está Dominum?»),
+     e cada vez é outro exemplo, para ninguém decorar a frase em vez de ler a forma. A vez
+     é a das respostas já dadas ao card: o mesmo exemplo em qualquer aparelho. */
+  function exemploDoConceito(card, est) {
+    const ex = (card && card.exemplos) || [];
+    if (!ex.length) return null;
+    const n = (est && est.vistas) || 0;
+    return ex[n % ex.length];
+  }
   /* ── montagem da fila inicial ──
      Intercala os níveis e alterna palavra/frase, para medir logo de cara
      onde está o seu teto. */
   function montarFila(cards) {
     const baldes = {};
     for (const n of NIVEIS) baldes[n] = { palavra: [], frase: [] };
-    for (const c of cards) baldes[c.nivel][c.tipo].push(c.id);
+    /* o card de conceito do latim vai com as frases; nível fora da escala, no primeiro */
+    for (const c of cards) (baldes[c.nivel] || baldes[NIVEIS[0]])[c.tipo === 'palavra' ? 'palavra' : 'frase'].push(c.id);
     for (const n of NIVEIS) {
       embaralhar(baldes[n].palavra);
       embaralhar(baldes[n].frase);
@@ -2552,7 +2680,7 @@ window.Motor = (function () {
      Sem elas, «Ayer lo supe» aparecia entre «Yo puse la mesa» e «No lo hagas»,
      sozinha no assunto, e a pergunta se respondia sem saber o verbo. As formas
      entram primeiro; o sorteio só completa o que faltar (há cards com três). */
-  const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt' };
+  const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt' };
 
   /* As palavras de uma frase, já no funil, para medir o que duas frases têm
      em comum. */
@@ -2858,7 +2986,7 @@ window.Motor = (function () {
       if (c.leitura) LEITURA[c.id] = true;
       /* no card de leitura, a «parecida» conta como total: ler é de graça, e
          ele não tem a volta, que é onde a parecida estrearia */
-      if (c.transp === 'total' || c.transp === 'parecida') TRANSP[c.id] = c.leitura ? 'total' : c.transp;
+      if (c.transp === 'total' || c.transp === 'parecida') TRANSP[c.id] = (c.leitura || soIda()) ? 'total' : c.transp;
       if (c.pos > 0) POS[c.id] = c.pos;
       TIPO[c.id] = c.tipo;
       if (temTag(c, ['falso-amigo'])) FALSO_AMIGO[c.id] = true;
@@ -2895,7 +3023,7 @@ window.Motor = (function () {
     const id = card ? card.id : cardOuId;
     if (reativado(id)) return null;
     let g = (card && card.transp) || TRANSP[id];
-    if (g === 'parecida' && ((card && card.leitura) || LEITURA[id])) g = 'total';
+    if (g === 'parecida' && (soIda() || (card && card.leitura) || LEITURA[id])) g = 'total';
     return g === 'total' || g === 'parecida' ? g : null;
   }
 
@@ -3652,6 +3780,7 @@ window.Motor = (function () {
   }
 
   function escolherDesafio(cards, estados, contexto) {
+    if (soIda()) return null;   // no modo trilhas tudo sai dos textos (cards/LATIM.md §5)
     const c = contexto || {};
     estados = estados || {};
     const agora = c.agora !== undefined ? new Date(c.agora).getTime() : Date.now();
@@ -3697,6 +3826,8 @@ window.Motor = (function () {
     estadoInicial, registrar, modoDe, direcaoDe, faseDe, anotarDiario, diaLocal,
     pergunta, resposta, normalizarEs, normalizarEn, formaReconhecida,
     usarBaralho, ehVolta, direcoes, CAMPOS,
+    /* o latim (cards/LATIM.md) */
+    usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
     erroDeGenero, formasAceitas, LIMITES, cortar,
     linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
     indiceEspanhol, leituraEspanhola, erroDeFlexao,

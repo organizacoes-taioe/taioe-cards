@@ -1,0 +1,17 @@
+{
+ "_leia": "A biblioteca de apoio do latim (cards/LATIM.md §7): de onde veio cada arquivo de fonte/latim/corpus/, que fica fora do git. Para refazer: baixar cada url na pasta indicada e rodar python -I fonte/latim/corpus.py <comando>.",
+ "fontes": [
+  {
+   "pasta": "vulgata-clementina",
+   "arquivo": "latVUC_vpl.zip",
+   "url": "https://eBible.org/Scriptures/latVUC_vpl.zip",
+   "obra": "Biblia Sacra Vulgatae Editionis (Vulgata Clementina, 1592/1598)",
+   "edicao": "texto do eBible.org (latVUC, atualizado em 2014-08-23), um versículo por linha",
+   "licenca": "domínio público",
+   "baixado": "2026-10-21",
+   "sha256": "7dbb990cbd3f98406a0482903bdae0b16794231243b0eed82a0b680fcaf6f3ee",
+   "comando": "vulgata",
+   "notas": "Grafia do arquivo: ligaduras æ/œ, j, colchetes marcando fala e o começo do salmo depois do título; o corpus.py normaliza (latim.grafia). Salmos na numeração da Vulgata; a referência sai na hebraica com a latina entre parênteses."
+  }
+ ]
+}

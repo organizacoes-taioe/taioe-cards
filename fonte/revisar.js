@@ -30,14 +30,15 @@ const janela = {};
 new Function('window', fs.readFileSync(path.join(__dirname, '..', 'js', 'motor.js'), 'utf8'))(janela);
 const Motor = janela.Motor;
 
-const IDIOMAS = ['es', 'en', 'pt', 'fr'];
-const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt' };
-const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'] };
+const IDIOMAS = ['es', 'en', 'pt', 'fr', 'la'];
+const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt' };
+const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], la: ['pt'] };
 const CAMPOS = {
   pt: { texto: 'pt', aceitas: 'aceitas',   distratores: 'distratores',   nota: 'nota',   formas: 'formasPt' },
   en: { texto: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', nota: 'notaEn', formas: 'formasEn' },
   es: { texto: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', nota: 'notaEs', formas: 'formasEs' },
-  fr: { texto: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', nota: 'notaFr', formas: 'formasFr' }
+  fr: { texto: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', nota: 'notaFr', formas: 'formasFr' },
+  la: { texto: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', nota: 'notaLa', formas: 'formasLa' }
 };
 const audienciasDe = idioma => AUDIENCIAS[idioma];
 
@@ -83,6 +84,15 @@ cards.forEach(c => {
     console.log('  D   ' + (c[A.distratores] || []).join(' | '));
   }
 
+  /* o latim (cards/LATIM.md): o enunciado, a fonte, o molde do gabarito (com quantas frases ele
+     abre), os conceitos e os exemplos do card de conceito */
+  if (c.idioma === 'la') {
+    if (c.enunciado) console.log('  E   ' + c.enunciado);
+    if (c.fonte) console.log('  ↳   ' + c.fonte + (c.texto ? '  (' + c.texto + ', linha ' + c.linha + ')' : ''));
+    if (c.gabarito) console.log('  [ ] ' + c.gabarito + '  (' + Motor.expandirGabarito(c.gabarito).length + ' frases)');
+    if ((c.conceitos || []).length) console.log('  C   ' + c.conceitos.join(', '));
+    (c.exemplos || []).forEach(x => console.log('  ex  ' + x.la + '  «' + x.w + '»  ' + x.exp + (x.fonte ? ' (' + x.fonte + ')' : '')));
+  }
   if (Motor.temVariante(c)) {
     const f = Motor.formaDoCard(c, 1);
     console.log('  G   ' + f[L.texto] + '  ‖ ' + f[CAMPOS[AUDIENCIA_PRINCIPAL[c.idioma]].texto]);
