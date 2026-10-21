@@ -422,7 +422,7 @@ window.TaioeCardsApp = function (ctx) {
     const chances = Motor.chancesDasFilas(p.cards, {
       ineditos: (p.ineditos || []).length > 0,
       esPt: p.filaEsPt.length > 0, ptEs: p.filaPtEs.length > 0
-    }, Motor.alvoDaFila(p.diario));
+    }, Motor.alvoDaFila(p.diario), p.arquivados);
     [['esPt', p.filaEsPt], ['ptEs', p.filaPtEs]].forEach(([k, fila]) => {
       fila.forEach((id, i) => {
         const e = p.cards[id];
@@ -729,7 +729,7 @@ window.TaioeCardsApp = function (ctx) {
     if (novo === 'vetado' && (tem.esPt || tem.ptEs)) tem.ineditos = false;
 
     const escolhida = Motor.sortearFila(
-      Motor.pesosDasFilas(progresso.cards, tem, Motor.alvoDaFila(progresso.diario)));
+      Motor.pesosDasFilas(progresso.cards, tem, Motor.alvoDaFila(progresso.diario), progresso.arquivados));
     if (escolhida === 'ineditos') return proximoNovo();
     if (escolhida === 'esPt' || escolhida === 'ptEs') {
       const i = Motor.escolherNaFila(livres[escolhida], progresso.cards, respostas);
@@ -1518,9 +1518,12 @@ window.TaioeCardsApp = function (ctx) {
     registrar(r);
     mostrarContestar(r);
     el['btn-proximo'].focus({ preventScroll: true });
-    /* Sem rolar (pedido do Gere, 03/10): quem julgou o próprio «quase» está
-       olhando para a resposta, e a tela que desce depois do clique tira dela
-       os olhos. Muda só a cor — o veredito e a caixa da resposta. */
+    /* A tela desliza até o «Próximo» aparecer (pedido do Gere, 21/10/2026).
+       Em 03/10 ele tinha pedido o contrário — sem rolar, para não tirar os
+       olhos da resposta —, mas aí o botão ficava abaixo da dobra no
+       celular. A rolagem é a mesma da resposta: só o bastante para o botão
+       caber, e a resposta não sai de vista. */
+    trazerBotaoParaAVista();
   }
   /* Frases cuja palavra foi dominada até ontem e que ainda não estão nos
      inéditos. Antes elas entravam na hora do domínio; agora esperam o dia
@@ -1621,7 +1624,7 @@ window.TaioeCardsApp = function (ctx) {
     /* Um ponto por resposta, para o gráfico do painel: as duas direções e os
        dominados divididos pelos seis degraus. Nove números; mil respostas
        somam uns 25 KB no progresso.json, que já tem 500. */
-    const d = Motor.contarDirecoes(progresso.cards);
+    const d = Motor.contarDirecoes(progresso.cards, progresso.arquivados);
     const degraus = [0, 0, 0, 0, 0, 0];
     progresso.dominados.forEach(id => {
       const e = progresso.cards[id];
@@ -1787,7 +1790,7 @@ window.TaioeCardsApp = function (ctx) {
 
     const etapaDe = id => progresso.cards[id].etapa;
     const dominados = ids.filter(id => etapaDe(id) === 'dominado').length;
-    const dir = Motor.contarDirecoes(progresso.cards);
+    const dir = Motor.contarDirecoes(progresso.cards, progresso.arquivados);
     const presos = CARDS.filter(c => !progresso.cards[c.id] &&
                                      !Motor.liberado(c, progresso.cards, null, progresso.arquivados)).length;
     /* A chance de o próximo card ser inédito. Não é mais uma contagem
@@ -1800,7 +1803,7 @@ window.TaioeCardsApp = function (ctx) {
       ineditos: temIneditos,
       esPt: progresso.filaEsPt.length > 0,
       ptEs: progresso.filaPtEs.length > 0
-    }, alvo);
+    }, alvo, progresso.arquivados);
     const aConfirmar = presumidosAConfirmar();
 
     let html = '<div class="grade">' +

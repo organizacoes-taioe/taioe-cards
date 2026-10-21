@@ -1382,12 +1382,18 @@ window.Motor = (function () {
   }
 
   /* Quantos cards em cada direção, sem contar os dominados: esses já saíram
-     do circuito de aprendizado e só voltam pela data. */
-  function contarDirecoes(estados) {
+     do circuito de aprendizado e só voltam pela data. Nem os arquivados
+     («Já conheço essa palavra»): o estado deles fica, parado na etapa em que
+     saíram, mas eles estão fora das filas. Até 21/10/2026 contavam, e cada
+     «Já conheço» deixava um card fantasma na ida — a fila parecia cheia, e o
+     card novo quase não vinha (na simulação, com um quinto das estreias
+     arquivadas, o painel mostrava 53 na ida e havia 3). */
+  function contarDirecoes(estados, arquivados) {
     let esPt = 0, ptEs = 0;
     for (const id in estados) {
       const e = estados[id];
       if (!e || !e.vistas || e.etapa === 'dominado') continue;
+      if (arquivados && arquivado(id, arquivados)) continue;
       if (e.etapa === 'multipla' || e.etapa === 'escrita') esPt++;
       else ptEs++;
     }
@@ -1565,9 +1571,10 @@ window.Motor = (function () {
 
   /* O peso de cada fila no sorteio. «tem» diz quais filas têm card para dar;
      fila vazia sai da conta em vez de roubar chance das outras. «alvo» é o
-     de alvoDaFila; sem ele, vale o menor de cada direção. */
-  function pesosDasFilas(estados, tem, alvo) {
-    const c = contarDirecoes(estados);
+     de alvoDaFila; sem ele, vale o menor de cada direção. «arquivados» tira
+     da conta os cards do «Já conheço» (ver contarDirecoes). */
+  function pesosDasFilas(estados, tem, alvo, arquivados) {
+    const c = contarDirecoes(estados, arquivados);
     const ida = (alvo && alvo.esPt) || ALVO_IDA_MIN;
     const volta = (alvo && alvo.ptEs) || ALVO_VOLTA_MIN;
     const corta = v => Math.min(TETO_PESO, Math.max(0, GANHO * v));
@@ -1582,8 +1589,8 @@ window.Motor = (function () {
 
   /* A chance de cada fila, em fração de 1. É o que o painel mostra e o que
      converte distância em posição, logo abaixo. */
-  function chancesDasFilas(estados, tem, alvo) {
-    const p = pesosDasFilas(estados, tem, alvo);
+  function chancesDasFilas(estados, tem, alvo, arquivados) {
+    const p = pesosDasFilas(estados, tem, alvo, arquivados);
     const soma = p.ineditos + p.esPt + p.ptEs;
     if (!soma) return { ineditos: 0, esPt: 0, ptEs: 0 };
     return { ineditos: p.ineditos / soma, esPt: p.esPt / soma, ptEs: p.ptEs / soma };
