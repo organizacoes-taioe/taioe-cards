@@ -3136,8 +3136,9 @@ window.TaioeCardsApp = function (ctx) {
     const caixas = [...alvo.querySelectorAll('input[data-texto]')];
     const limitar = () => {
       const n = caixas.filter(c => c.checked).length;
-      /* no modo trilhas o último marcado não sai: troca-se marcando outro antes */
-      caixas.forEach(c => { c.disabled = (!c.checked && n >= Motor.MAX_TEXTOS) || (TRILHAS && c.checked && n === 1); });
+      /* No modo trilhas a caixa marcada nunca se desativa (desativada, ela fica cinza e parece
+         pular de cor a cada clique, 21/10): sem nenhum texto, quem segura é o «Começar». */
+      caixas.forEach(c => { c.disabled = !c.checked && n >= Motor.MAX_TEXTOS; });
       document.getElementById('aviso-maximo').hidden = n < Motor.MAX_TEXTOS;
       if (TRILHAS) {
         document.getElementById('aviso-escolha').hidden = n > 0;
