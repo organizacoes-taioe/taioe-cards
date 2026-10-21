@@ -2646,11 +2646,13 @@ window.TaioeCardsApp = function (ctx) {
     return !!n && (n.tagName === 'INPUT' || n.tagName === 'TEXTAREA' || n.tagName === 'SELECT' || n.isContentEditable);
   }
   function devolverFoco() {
-    if (document.hidden || !esperandoEscrita()) return;
+    if (!esperandoEscrita()) return;
     const a = document.activeElement;
     if (!a || a === document.body || a === document.documentElement) el.entrada.focus({ preventScroll: true });
   }
+  /* o blur não dispara quando a janela está sem foco; o toque cobre esse caso */
   el.entrada.addEventListener('blur', () => setTimeout(devolverFoco, 0));
+  document.addEventListener('pointerup', () => setTimeout(devolverFoco, 0));
   window.addEventListener('focus', () => setTimeout(devolverFoco, 0));
   document.addEventListener('keydown', e => {
     if (e.ctrlKey || e.metaKey || e.altKey || !esperandoEscrita() || ehCampo(document.activeElement)) return;
