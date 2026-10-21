@@ -1691,11 +1691,13 @@ window.Motor = (function () {
     const ida = (alvo && alvo.esPt) || ALVO_IDA_MIN;
     const volta = (alvo && alvo.ptEs) || ALVO_VOLTA_MIN;
     const corta = v => Math.min(TETO_PESO, Math.max(0, GANHO * v));
-    /* No modo trilhas não há volta para encher: a ida não ganha o peso de quem empurra card
-       para lá (ver usarModo). Sem isso a ida ficava com +100 para sempre e o card novo minguava. */
+    /* No modo trilhas não há volta para encher. O peso que nos outros cursos vem da volta vazia
+       (e equilibra novo e revisão no começo, meio a meio) vem da própria ida longe do alvo: cai
+       à medida que ela enche. Com a volta, ficava +100 para sempre e o card novo minguava; sem
+       nada, a revisão ficava com 10 contra 100 e quase só vinha card novo (o Gere viu, 21/10). */
     const p = {
       ineditos: PISO_INEDITO + corta(ida - c.esPt),
-      esPt:     PISO_REVISAO + (soIda() ? 0 : corta(volta - c.ptEs)) + corta(c.esPt - ida),
+      esPt:     PISO_REVISAO + (soIda() ? corta(ida - c.esPt) : corta(volta - c.ptEs)) + corta(c.esPt - ida),
       ptEs:     PISO_REVISAO + corta(c.ptEs - volta)
     };
     if (tem) for (const k in p) if (!tem[k]) p[k] = 0;

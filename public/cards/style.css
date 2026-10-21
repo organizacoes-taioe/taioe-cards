@@ -229,6 +229,9 @@ button{font:inherit}
   padding-top:13px;
 }
 .rotulo-resposta .bandeira{font-size:17px}
+/* o card de conceito do latim: a pergunta em destaque, logo acima das alternativas */
+.rotulo-resposta.pergunta{font-size:19px;font-weight:700;line-height:1.3;color:var(--texto);
+  text-transform:none;letter-spacing:0}
 .resposta-certa .rotulo span{font-size:13px;margin-right:2px}
 
 /* Respondeu em espanhol num card de falso amigo: o aviso devolve a vez em

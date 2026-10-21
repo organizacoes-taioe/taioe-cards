@@ -203,6 +203,10 @@ também são na ida.
 - **Ritmo**: o do motor de hoje (até 50 em jogo, pelo menos um novo a cada três, 6 respostas entre
   duas aparições), com a meta da ida, já que só há ida. Antes de publicar, simular o motor no modo
   novo com progresso inventado e levar os números a você (regra de agendamento).
+  Feito em 21/10: sem a volta, a revisão da ida ficava com peso 10 contra ~100 do card novo, e o
+  Gere viu quase só card novo. Agora a revisão ganha o peso da ida longe do alvo (`pesosDasFilas`),
+  como a volta vazia dá nos outros cursos: no começo, meio a meio (simulado: 39 novos em 70
+  respostas, contra uns 9 em 10 antes), caindo até o piso quando a ida chega ao alvo.
 - **Texto terminado**: o app oferece outro do mesmo nível ou do nível de cima.
 
 ## 6. Os textos propostos
