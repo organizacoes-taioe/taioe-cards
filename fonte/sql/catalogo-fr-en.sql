@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso fr-en, leva 606db8b5, 1439 cards.
+-- Catálogo do curso fr-en, leva 9f90e990, 1439 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('fr-en', '606db8b5', '1439 cards')
+values ('fr-en', '9f90e990', '1439 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -796,7 +796,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-en', 'fr-u366', 'frase', 'A1', array['social']::text[], 'fr-p042', '572fb454', array['I''m very angry with you.', 'I''m very happy for you.', 'I''m very proud of you.', 'I''m very sad for you.', 'I''m very worried about you.']::text[]),
   ('fr-en', 'fr-u367', 'frase', 'A1', array['cotidiano']::text[], 'fr-p102', '5bd41896', array['That disgusts me.', 'That makes me cold.', 'That makes me hungry.', 'That makes me sleepy.', 'That scares me.']::text[]),
   ('fr-en', 'fr-u368', 'frase', 'A1', array['família', 'natureza']::text[], 'fr-p136', '2d4932ba', array['My aunt lives in the country.', 'My godmother lives in the country.', 'My grandmother lives in the country.', 'My mother-in-law lives in the country.', 'My neighbor lives in the country.']::text[]),
-  ('fr-en', 'fr-u369', 'frase', 'A1', array['casa', 'social']::text[], 'fr-p072', 'f15e234c', array['My boss is really nice.', 'My brother-in-law is really nice.', 'My coworker is really nice.', 'My neighbor is really nice.', 'My teacher is really nice.']::text[]),
+  ('fr-en', 'fr-u369', 'frase', 'A1', array['casa', 'social']::text[], 'fr-p072', '7831f147', array['My boss is really nice.', 'My brother-in-law is really nice.', 'My coworker is really nice.', 'My neighbor is really nice.', 'My teacher is really nice.']::text[]),
   ('fr-en', 'fr-u370', 'frase', 'A1', array['cultura', 'mídia']::text[], 'fr-p149', 'bf2f013b', array['I watch basketball on TV.', 'I watch cycling on TV.', 'I watch soccer on TV.', 'I watch tennis on TV.', 'I watch volleyball on TV.']::text[]),
   ('fr-en', 'fr-u371', 'frase', 'A1', array['compras', 'cidade']::text[], 'fr-p182', 'c3d5d7cb', array['I''m fixing my bike.', 'I''m lending my bike.', 'I''m painting my bike.', 'I''m selling my bike.', 'I''m washing my bike.']::text[]),
   ('fr-en', 'fr-u372', 'frase', 'A1', array['família', 'social']::text[], 'fr-p104', '50b2992c', array['It''s my aunt''s birthday.', 'It''s my cousin''s birthday.', 'It''s my grandmother''s birthday.', 'It''s my sister''s birthday.', 'It''s my sister-in-law''s birthday.']::text[]),
@@ -1084,7 +1084,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-en', 'fr-p436', 'palavra', 'B1', array['cotidiano']::text[], null, '602dbdd4', array['the crisis', 'the disaster', 'the feat', 'the stanza', 'the threat']::text[]),
   ('fr-en', 'fr-p437', 'palavra', 'B1', array['adjetivo', 'trabalho']::text[], null, '98dfb964', array['busy', 'free', 'hidden', 'late', 'tired']::text[]),
   ('fr-en', 'fr-p438', 'palavra', 'B1', array['adjetivo', 'comida']::text[], null, 'e352f11d', array['biographical', 'biological', 'chemical', 'geological', 'psychological']::text[]),
-  ('fr-en', 'fr-p439', 'palavra', 'B1', array['casa', 'comida']::text[], null, '1348dcf7', array['the harbor', 'the jar', 'the lid', 'the package', 'the pole']::text[]),
+  ('fr-en', 'fr-p439', 'palavra', 'B1', array['casa', 'comida']::text[], null, '68834725', array['the harbor', 'the jar', 'the lid', 'the package', 'the pole']::text[]),
   ('fr-en', 'fr-p440', 'palavra', 'B1', array['verbo', 'trabalho', 'falso-amigo']::text[], null, '67f5379e', array['to freeze', 'to generate', 'to groan', 'to keep', 'to manage']::text[]),
   ('fr-en', 'fr-p441', 'palavra', 'B1', array['cultura']::text[], null, '00ff72d8', array['the command / the commandment', 'the commander / the captain', 'the prayer / the blessing', 'the punishment / the penalty', 'the purchase / the delivery']::text[]),
   ('fr-en', 'fr-p442', 'palavra', 'B1', array['família']::text[], null, 'b1023ea2', array['the brother-in-law / the son-in-law', 'the father-in-law / the stepfather', 'the godfather / the godson', 'the grandfather / the great-grandfather', 'the uncle / the cousin']::text[]),

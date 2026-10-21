@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso fr-pt, leva 606db8b5, 1439 cards.
+-- Catálogo do curso fr-pt, leva 9f90e990, 1439 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('fr-pt', '606db8b5', '1439 cards')
+values ('fr-pt', '9f90e990', '1439 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -796,7 +796,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-pt', 'fr-u366', 'frase', 'A1', array['social']::text[], 'fr-p042', '572fb454', array['Estou muito chateado com você.', 'Estou muito feliz por você.', 'Estou muito orgulhoso de você.', 'Estou muito preocupado com você.', 'Estou muito triste por você.']::text[]),
   ('fr-pt', 'fr-u367', 'frase', 'A1', array['cotidiano']::text[], 'fr-p102', '5bd41896', array['Isso me dá fome.', 'Isso me dá frio.', 'Isso me dá medo.', 'Isso me dá nojo.', 'Isso me dá sono.']::text[]),
   ('fr-pt', 'fr-u368', 'frase', 'A1', array['família', 'natureza']::text[], 'fr-p136', '2d4932ba', array['Minha avó mora no interior.', 'Minha madrinha mora no interior.', 'Minha sogra mora no interior.', 'Minha tia mora no interior.', 'Minha vizinha mora no interior.']::text[]),
-  ('fr-pt', 'fr-u369', 'frase', 'A1', array['casa', 'social']::text[], 'fr-p072', 'f15e234c', array['Meu chefe é muito legal.', 'Meu colega é muito legal.', 'Meu cunhado é muito legal.', 'Meu professor é muito legal.', 'Meu vizinho é muito legal.']::text[]),
+  ('fr-pt', 'fr-u369', 'frase', 'A1', array['casa', 'social']::text[], 'fr-p072', '7831f147', array['Meu chefe é muito legal.', 'Meu colega é muito legal.', 'Meu cunhado é muito legal.', 'Meu professor é muito legal.', 'Meu vizinho é muito legal.']::text[]),
   ('fr-pt', 'fr-u370', 'frase', 'A1', array['cultura', 'mídia']::text[], 'fr-p149', 'bf2f013b', array['Assisto basquete na TV.', 'Assisto ciclismo na TV.', 'Assisto futebol na TV.', 'Assisto tênis na TV.', 'Assisto vôlei na TV.']::text[]),
   ('fr-pt', 'fr-u371', 'frase', 'A1', array['compras', 'cidade']::text[], 'fr-p182', 'c3d5d7cb', array['Estou consertando minha bicicleta.', 'Estou emprestando minha bicicleta.', 'Estou lavando minha bicicleta.', 'Estou pintando minha bicicleta.', 'Estou vendendo minha bicicleta.']::text[]),
   ('fr-pt', 'fr-u372', 'frase', 'A1', array['família', 'social']::text[], 'fr-p104', '50b2992c', array['É o aniversário da minha avó.', 'É o aniversário da minha cunhada.', 'É o aniversário da minha irmã.', 'É o aniversário da minha prima.', 'É o aniversário da minha tia.']::text[]),
@@ -1084,7 +1084,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-pt', 'fr-p436', 'palavra', 'B1', array['cotidiano']::text[], null, '602dbdd4', array['a ameaça', 'a catástrofe', 'a crise', 'a estrofe', 'a façanha']::text[]),
   ('fr-pt', 'fr-p437', 'palavra', 'B1', array['adjetivo', 'trabalho']::text[], null, '98dfb964', array['atrasado', 'cansado', 'livre', 'oculto', 'ocupado']::text[]),
   ('fr-pt', 'fr-p438', 'palavra', 'B1', array['adjetivo', 'comida']::text[], null, 'e352f11d', array['biográfico', 'biológico', 'geológico', 'psicológico', 'químico']::text[]),
-  ('fr-pt', 'fr-p439', 'palavra', 'B1', array['casa', 'comida']::text[], null, '1348dcf7', array['a tampa', 'o pacote', 'o porto', 'o poste', 'o pote']::text[]),
+  ('fr-pt', 'fr-p439', 'palavra', 'B1', array['casa', 'comida']::text[], null, '68834725', array['a tampa', 'o pacote', 'o porto', 'o poste', 'o pote']::text[]),
   ('fr-pt', 'fr-p440', 'palavra', 'B1', array['verbo', 'trabalho', 'falso-amigo']::text[], null, '67f5379e', array['gelar', 'gemer', 'gerar', 'gerenciar', 'guardar']::text[]),
   ('fr-pt', 'fr-p441', 'palavra', 'B1', array['cultura']::text[], null, '00ff72d8', array['a encomenda / o pedido', 'a oração / a prece', 'o castigo / a pena', 'o comandante / o capitão', 'o comando / o mandamento']::text[]),
   ('fr-pt', 'fr-p442', 'palavra', 'B1', array['família']::text[], null, 'b1023ea2', array['o avô / o bisavô', 'o cunhado / o genro', 'o padrinho / o afilhado', 'o sogro / o padrasto', 'o tio / o primo']::text[]),

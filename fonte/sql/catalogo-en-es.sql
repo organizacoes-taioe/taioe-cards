@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso en-es, leva 6c508da4, 2035 cards.
+-- Catálogo do curso en-es, leva a0165613, 2035 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('en-es', '6c508da4', '2035 cards')
+values ('en-es', 'a0165613', '2035 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -424,7 +424,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-v071', 'frase', 'B2', array['conjugação', 'irregular', 'shoot', 'pretérito', 'cultura']::text[], null, 'f0fe3476', array['Habían rodado la película en Brasil.', 'Rodaron la película en Brasil.', 'Rodarán la película en Brasil.', 'Rodarían la película en Brasil.', 'Ruedan la película en Brasil.']::text[]),
   ('en-es', 'en-v072', 'frase', 'B2', array['conjugação', 'irregular', 'strike', 'pretérito']::text[], null, '34aa963f', array['El reloj da las doce.', 'El reloj dará las doce.', 'El reloj daría las doce.', 'El reloj dio las doce.', 'El reloj había dado las doce.']::text[]),
   ('en-es', 'en-v073', 'frase', 'B2', array['conjugação', 'irregular', 'swear', 'pretérito', 'jurídico']::text[], null, '8d05b20f', array['Había jurado que era inocente.', 'Jura que es inocente.', 'Jurará que es inocente.', 'Juraría que era inocente.', 'Juró que era inocente.']::text[]),
-  ('en-es', 'en-v074', 'frase', 'B1', array['conjugação', 'irregular', 'dig', 'pretérito']::text[], null, '5796e1a1', array['Cavan un agujero.', 'Cavaron un agujero.', 'Cavarán un agujero.', 'Cavarían un agujero.', 'Habían cavado un agujero.']::text[]),
+  ('en-es', 'en-v074', 'frase', 'B1', array['conjugação', 'irregular', 'dig', 'pretérito']::text[], null, '96cdb308', array['Cavan un agujero.', 'Cavaron un agujero.', 'Cavarán un agujero.', 'Cavarían un agujero.', 'Habían cavado un agujero.']::text[]),
   ('en-es', 'en-v075', 'frase', 'B1', array['conjugação', 'irregular', 'feed', 'pretérito', 'família']::text[], null, '0604d6b9', array['Alimenta al bebé.', 'Alimentará al bebé.', 'Alimentaría al bebé.', 'Alimentó al bebé.', 'Había alimentado al bebé.']::text[]),
   ('en-es', 'en-v076', 'frase', 'C1', array['conjugação', 'irregular', 'seek', 'pretérito', 'formal']::text[], null, 'e1284837', array['Busca consejo.', 'Buscará consejo.', 'Buscaría consejo.', 'Buscó consejo.', 'Había buscado consejo.']::text[]),
   ('en-es', 'en-v077', 'frase', 'B1', array['conjugação', 'irregular', 'shine', 'pretérito']::text[], null, '8e6bdf83', array['El sol brilla todo el día.', 'El sol brillará todo el día.', 'El sol brillaría todo el día.', 'El sol brilló todo el día.', 'El sol había brillado todo el día.']::text[]),
@@ -514,7 +514,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-f183', 'frase', 'B1', array['expressão', 'social']::text[], null, '4a142b43', array['¿Me das un consejo?', '¿Me das un ejemplo?', '¿Me das un momento?', '¿Me echas una mano?', '¿Me llevas en coche?']::text[]),
   ('en-es', 'en-f184', 'frase', 'B1', array['gramática', 'viagem']::text[], null, 'e6ff7202', array['¿Cuándo es?', '¿Cómo es?', '¿Le gusta eso?', '¿Qué le gusta?', '¿Qué quiere?']::text[]),
   ('en-es', 'en-f185', 'frase', 'B1', array['expressão']::text[], null, '85eec008', array['La idea no fue mía.', 'Ni idea.', 'No me gustó la idea.', 'No tengo esa idea.', 'Tengo otra idea.']::text[]),
-  ('en-es', 'en-f186', 'frase', 'B1', array['expressão', 'comida', 'social']::text[], null, '2b0e9dea', array['Arréglatelas como puedas.', 'Ayúdate solo.', 'Hazlo tú mismo.', 'Pide ayuda a alguien.', 'Sírvete.']::text[]),
+  ('en-es', 'en-f186', 'frase', 'B1', array['expressão', 'comida', 'social']::text[], null, '855388b2', array['Arréglatelas como puedas.', 'Ayúdate solo.', 'Hazlo tú mismo.', 'Pide ayuda a alguien.', 'Sírvete.']::text[]),
   ('en-es', 'en-f187', 'frase', 'B1', array['expressão', 'cotidiano']::text[], null, 'a1ef55c1', array['Es mi parte.', 'Es mi sitio.', 'Es mi turno de trabajo.', 'Es mi vuelta.', 'Me toca a mí.']::text[]),
   ('en-es', 'en-f188', 'frase', 'B1', array['expressão', 'social']::text[], null, 'ed8e40e1', array['El traje es tuyo.', 'Haz lo que yo te mande.', 'Tú verás.', 'Vístete tú mismo.', 'Yo sí que sé.']::text[]),
   ('en-es', 'en-v087', 'frase', 'B1', array['conjugação', 'irregular', 'light', 'pretérito', 'casa']::text[], null, 'ac02c529', array['Encenderá la vela.', 'Encendería la vela.', 'Encendió la vela.', 'Enciende la vela.', 'Había encendido la vela.']::text[]),
@@ -1055,7 +1055,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-p274', 'palavra', 'A2', array['substantivo', 'cotidiano']::text[], null, '86536805', array['el accidente', 'el defecto', 'el error', 'la culpa', 'la duda']::text[]),
   ('en-es', 'en-p275', 'palavra', 'A1', array['substantivo', 'cotidiano']::text[], null, '16920ca7', array['el día', 'la mañana', 'la noche', 'la oscuridad', 'la tarde']::text[]),
   ('en-es', 'en-p276', 'palavra', 'A2', array['verbo', 'social']::text[], null, '186287b3', array['estar de acuerdo', 'estar en contra', 'llevar la contraria', 'negarse', 'poner en duda']::text[]),
-  ('en-es', 'en-p277', 'palavra', 'A2', array['verbo', 'objetos']::text[], null, 'c7c20303', array['arreglar', 'doblar', 'pegar', 'rasgar', 'romper']::text[]),
+  ('en-es', 'en-p277', 'palavra', 'A2', array['verbo', 'objetos']::text[], null, '87e51405', array['arreglar', 'doblar', 'pegar', 'rasgar', 'romper']::text[]),
   ('en-es', 'en-p278', 'palavra', 'A2', array['verbo', 'cotidiano']::text[], null, '16abe220', array['cortar', 'coser', 'doblar', 'pegar', 'rasgar']::text[]),
   ('en-es', 'en-p279', 'palavra', 'A1', array['verbo', 'cotidiano']::text[], null, '10c839b8', array['caminar', 'correr', 'nadar', 'saltar', 'tropezar']::text[]),
   ('en-es', 'en-p280', 'palavra', 'A2', array['verbo', 'cotidiano']::text[], null, 'c48244d5', array['estar acostado', 'estar agachado', 'estar de pie', 'estar de rodillas', 'estar sentado']::text[]),
@@ -1294,7 +1294,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-p514', 'palavra', 'A1', array['cotidiano']::text[], null, '454d4ad9', array['diecinueve', 'noventa', 'nueve', 'once', 'seis']::text[]),
   ('en-es', 'en-p515', 'palavra', 'B1', array['adjetivo', 'economia', 'compras']::text[], null, '57de9f24', array['no deducible', 'no negociable', 'no obligatorio', 'no reembolsable', 'no transferible']::text[]),
   ('en-es', 'en-p516', 'palavra', 'A2', array['substantivo', 'cotidiano']::text[], null, 'b97f228b', array['el amanecer', 'el atardecer', 'el mediodía', 'la madrugada', 'la medianoche']::text[]),
-  ('en-es', 'en-p517', 'palavra', 'B1', array['adjetivo']::text[], null, '4d9e46cd', array['aburrido / exacto', 'común / entero', 'normal / par', 'obvio / primo', 'raro / impar']::text[]),
+  ('en-es', 'en-p517', 'palavra', 'B1', array['adjetivo']::text[], null, 'aab74a6e', array['aburrido / exacto', 'común / entero', 'normal / par', 'obvio / primo', 'raro / impar']::text[]),
   ('en-es', 'en-p518', 'palavra', 'A2', array['tecnologia']::text[], null, 'cbf532dd', array['en línea', 'impreso', 'por teléfono', 'presencial', 'sin conexión']::text[]),
   ('en-es', 'en-p519', 'palavra', 'A1', array['adjetivo']::text[], null, 'de94593e', array['abierto', 'cerrado', 'ocupado', 'roto', 'vacío']::text[]),
   ('en-es', 'en-p520', 'palavra', 'A2', array['preposição', 'phrasal verb']::text[], null, '173f3e39', array['cerca / pendiente', 'detrás / parado', 'por debajo / empezado', 'por dentro / aplazado', 'por encima / terminado']::text[]),
@@ -1318,7 +1318,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-p538', 'palavra', 'A2', array['gramática', 'cotidiano']::text[], null, 'e5301e22', array['de nuevo', 'pronto', 'también', 'todavía', 'ya']::text[]),
   ('en-es', 'en-p539', 'palavra', 'A2', array['adjetivo']::text[], null, 'cfd00f75', array['curvo', 'inclinado', 'recto', 'rizado', 'torcido']::text[]),
   ('en-es', 'en-p540', 'palavra', 'A2', array['adjetivo']::text[], null, '16faf9dc', array['conocido', 'extraño', 'fuerte', 'normal', 'rico']::text[]),
-  ('en-es', 'en-p541', 'palavra', 'B1', array['gramática']::text[], null, 'ff8f380e', array['alguno', 'cada', 'ninguno', 'otro', 'tal']::text[]),
+  ('en-es', 'en-p541', 'palavra', 'B1', array['gramática']::text[], null, 'ef557fc9', array['alguno', 'cada', 'ninguno', 'otro', 'tal']::text[]),
   ('en-es', 'en-p542', 'palavra', 'A2', array['gramática']::text[], null, '15fc9bb5', array['a propósito', 'de nuevo', 'de repente', 'poco a poco', 'sin querer']::text[]),
   ('en-es', 'en-p543', 'palavra', 'A2', array['adjetivo', 'social']::text[], null, 'e5130b11', array['asustado', 'confundido', 'decepcionado', 'emocionado', 'sorprendido']::text[]),
   ('en-es', 'en-p544', 'palavra', 'A1', array['pronomes', 'gramática']::text[], null, 'f9bccf96', array['alguno / casi nada', 'cada / mucho menos', 'cuál / un poco', 'ese / así de', 'otro / aún más']::text[]),
@@ -1535,7 +1535,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-p756', 'palavra', 'B2', array['verbo', 'phrasal verb', 'trabalho']::text[], null, 'cde657b3', array['cambiar de tema', 'eludir el tema', 'olvidar el tema', 'volver al tema', 'zanjar el tema']::text[]),
   ('en-es', 'en-p757', 'palavra', 'B2', array['verbo', 'cotidiano']::text[], null, 'e653e335', array['aferrarse a', 'alejarse de', 'esconderse de', 'librarse de', 'soltarse de']::text[]),
   ('en-es', 'en-p758', 'palavra', 'B2', array['verbo', 'phrasal verb', 'cotidiano']::text[], null, '0bab5a0d', array['deshacerse de', 'despedirse de', 'librarse de', 'olvidarse de', 'toparse con']::text[]),
-  ('en-es', 'en-p759', 'palavra', 'B1', array['verbo', 'phrasal verb', 'cotidiano']::text[], null, '37dc570f', array['acabar (terminar)', 'desaparecer (esfumarse)', 'empeorar (agravarse)', 'fallar (fracasar)', 'surgir (aparecer)']::text[]),
+  ('en-es', 'en-p759', 'palavra', 'B1', array['verbo', 'phrasal verb', 'cotidiano']::text[], null, '4a27d5ad', array['acabar (terminar)', 'desaparecer (esfumarse)', 'empeorar (agravarse)', 'fallar (fracasar)', 'surgir (aparecer)']::text[]),
   ('en-es', 'en-p760', 'palavra', 'B1', array['verbo', 'phrasal verb', 'trabalho']::text[], null, '2174cc8d', array['aplazar', 'copiar', 'descartar', 'idear', 'olvidar']::text[]),
   ('en-es', 'en-p761', 'palavra', 'B1', array['verbo', 'cotidiano']::text[], null, '9dfcfbb6', array['aplazar', 'considerar', 'despreciar', 'ignorar', 'olvidar']::text[]),
   ('en-es', 'en-p762', 'palavra', 'A2', array['verbo', 'cotidiano']::text[], null, 'e283d834', array['anotar (datos)', 'contar (números)', 'dividir (cuentas)', 'medir (distancias)', 'pesar (objetos)']::text[]),
@@ -1550,7 +1550,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-p771', 'palavra', 'B1', array['verbo', 'social']::text[], null, '448b230d', array['admitir', 'confesar', 'confirmar', 'negar', 'prometer']::text[]),
   ('en-es', 'en-p772', 'palavra', 'A2', array['verbo', 'preposição']::text[], null, '242ab02e', array['acordarse de', 'cuidar de', 'depender de', 'desconfiar de', 'huir de']::text[]),
   ('en-es', 'en-p773', 'palavra', 'B2', array['verbo', 'formal']::text[], null, '32c8f34f', array['coincidir', 'concordar', 'diferir', 'encajar', 'igualar']::text[]),
-  ('en-es', 'en-p774', 'palavra', 'B1', array['verbo', 'natureza']::text[], null, '1a4548de', array['barrer', 'cavar', 'enterrar', 'plantar', 'regar']::text[]),
+  ('en-es', 'en-p774', 'palavra', 'B1', array['verbo', 'natureza']::text[], null, 'a51db8e5', array['barrer', 'cavar', 'enterrar', 'plantar', 'regar']::text[]),
   ('en-es', 'en-p775', 'palavra', 'B2', array['verbo', 'phrasal verb', 'trabalho']::text[], null, '48c5951f', array['adelantarse', 'apresurarse', 'concluirse', 'prolongarse', 'resolverse']::text[]),
   ('en-es', 'en-p776', 'palavra', 'A2', array['verbo', 'cotidiano']::text[], null, '458ce313', array['despertar', 'dormir', 'dormitar', 'roncar', 'soñar']::text[]),
   ('en-es', 'en-p777', 'palavra', 'A1', array['verbo', 'comida']::text[], null, '24e528ed', array['beber', 'comer', 'derramar', 'servir', 'tragar']::text[]),
@@ -1625,7 +1625,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-p846', 'palavra', 'B2', array['verbo', 'trabalho']::text[], null, '1ce61a10', array['aplazar', 'contratar', 'delegar', 'pasar por alto', 'supervisar']::text[]),
   ('en-es', 'en-p847', 'palavra', 'B1', array['verbo', 'cotidiano']::text[], null, '9c201b83', array['despertarse de madrugada', 'echarse una siesta', 'perder el sueño', 'quedarse despierto', 'quedarse dormido']::text[]),
   ('en-es', 'en-p848', 'palavra', 'B1', array['verbo', 'viagem']::text[], null, '943a935b', array['adelantar', 'atropellar', 'esquivar', 'frenar', 'seguir']::text[]),
-  ('en-es', 'en-p849', 'palavra', 'B2', array['verbo', 'phrasal verb', 'social']::text[], null, '0ac72835', array['asumir (la culpa de)', 'culpar (a otra persona)', 'lamentar (lo que hizo)', 'negar (lo que hizo)', 'ocultar (lo que hizo)']::text[]),
+  ('en-es', 'en-p849', 'palavra', 'B2', array['verbo', 'phrasal verb', 'social']::text[], null, 'face1542', array['asumir (la culpa de)', 'culpar (a otra persona)', 'lamentar (lo que hizo)', 'negar (lo que hizo)', 'ocultar (lo que hizo)']::text[]),
   ('en-es', 'en-p850', 'palavra', 'A2', array['verbo', 'casa', 'cultura']::text[], null, '011b1ee6', array['arreglar', 'dibujar', 'lavar', 'limpiar', 'pintar']::text[]),
   ('en-es', 'en-p851', 'palavra', 'A2', array['verbo', 'cidade']::text[], null, '452227a1', array['acelerar', 'aparcar', 'conducir', 'frenar', 'repostar']::text[]),
   ('en-es', 'en-p852', 'palavra', 'B1', array['verbo', 'phrasal verb', 'saúde']::text[], null, '3816fbc1', array['atragantarse', 'desmayarse', 'fallecer', 'tropezar', 'vomitar']::text[]),
