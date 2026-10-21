@@ -1,2920 +1,2822 @@
-{
-  "summary": "Julgar, por língua, quais cards de expressão só são conhecidos no país de referência",
-  "agentCount": 4,
-  "logs": [],
-  "result": [
-    {
-      "lingua": "es",
-      "cards": [
-        {
-          "id": "f004",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Echar una mano» é corrente na Espanha e em toda a América."
-        },
-        {
-          "id": "f007",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Estar en las nubes» é universal."
-        },
-        {
-          "id": "f012",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Caer bien/mal» é de uso geral em todos os países."
-        },
-        {
-          "id": "f013",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Meter la pata» é corrente em toda parte."
-        },
-        {
-          "id": "f014",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "Na América se diz «donde el diablo perdió el poncho», «en la Conchinchina»; «el quinto pino» é peninsular."
-        },
-        {
-          "id": "f015",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Tirar la toalla» é universal."
-        },
-        {
-          "id": "f016",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«No tener pelos en la lengua» é conhecida em todos os países."
-        },
-        {
-          "id": "f017",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Ser pan comido» é universal."
-        },
-        {
-          "id": "f018",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Costar un ojo de la cara» é corrente em toda parte."
-        },
-        {
-          "id": "f019",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Espanha",
-          "motivo": "«Estar como una cabra» é peninsular; na América se diz «estar chiflado», «le falta un tornillo»."
-        },
-        {
-          "id": "f020",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Dar en el clavo» é universal."
-        },
-        {
-          "id": "f021",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, México, Colômbia, Argentina e demais",
-          "motivo": "«Ponerse las pilas» é corrente em toda parte."
-        },
-        {
-          "id": "f022",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Hacer la vista gorda» é universal."
-        },
-        {
-          "id": "f023",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Ir al grano» é universal."
-        },
-        {
-          "id": "f024",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha e entendida em toda a América",
-          "motivo": "«Estar hecho polvo» é usada e reconhecida no México, na Argentina e em outros."
-        },
-        {
-          "id": "f025",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Por si las moscas» é corrente em todos os países."
-        },
-        {
-          "id": "f026",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "Locução geral, de uso culto e coloquial em toda parte."
-        },
-        {
-          "id": "f027",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "«Dar calabazas» é pouco corrente na América, onde se diz «batear», «dar plantón», «rechazar»."
-        },
-        {
-          "id": "f028",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, México, Argentina e demais",
-          "motivo": "«No dar pie con bola» é conhecida em toda parte."
-        },
-        {
-          "id": "f029",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Chollo» é gíria peninsular; na América se diz «ganga»."
-        },
-        {
-          "id": "f030",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Írsele la olla» é gíria peninsular, desconhecida na América."
-        },
-        {
-          "id": "f031",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Poner verde a alguien» é peninsular; na América não se usa com esse sentido."
-        },
-        {
-          "id": "f032",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Montar un pollo» é gíria peninsular."
-        },
-        {
-          "id": "f033",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Argentina, México e demais",
-          "motivo": "«Importar un pepino» é conhecida em toda parte."
-        },
-        {
-          "id": "f034",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "Locução universal."
-        },
-        {
-          "id": "f035",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "Na América se diz «hacerse el loco», «el desentendido», «el leso», «el gil»."
-        },
-        {
-          "id": "f042",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "«Estar al caer» é peninsular; na América se diz «está por llegar»."
-        },
-        {
-          "id": "f054",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "Provérbio universal."
-        },
-        {
-          "id": "f055",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "Provérbio universal."
-        },
-        {
-          "id": "f056",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "Provérbio universal."
-        },
-        {
-          "id": "f057",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Dar gato por liebre» é universal."
-        },
-        {
-          "id": "f058",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Ser uña y carne» é universal."
-        },
-        {
-          "id": "f059",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Andarse por las ramas» é universal."
-        },
-        {
-          "id": "f060",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Salirse con la suya» é universal."
-        },
-        {
-          "id": "f061",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Espanha",
-          "motivo": "«Estar de mala leche» como mau humor é peninsular; no México «mala leche» é azar ou má intenção."
-        },
-        {
-          "id": "f062",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha e entendida em toda a América",
-          "motivo": "«Quedarse de piedra» é reconhecida em toda parte."
-        },
-        {
-          "id": "f063",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Argentina, Chile, México e demais",
-          "motivo": "«Bajón» como queda de ânimo é corrente em muitos países."
-        },
-        {
-          "id": "f064",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Echar leña al fuego» é universal."
-        },
-        {
-          "id": "f065",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Argentina, México e demais",
-          "motivo": "«A troche y moche» é locução geral, viva também na América."
-        },
-        {
-          "id": "f066",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "«Erre que erre» é pouco conhecida na América."
-        },
-        {
-          "id": "f067",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«A duras penas» é universal."
-        },
-        {
-          "id": "f069",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (frase do dia a dia)",
-          "motivo": "Frase literal de combinar encontro, não é expressão idiomática."
-        },
-        {
-          "id": "f080",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Llover a cántaros» é universal."
-        },
-        {
-          "id": "f083",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (frase do dia a dia)",
-          "motivo": "Pergunta literal com o verbo «apetecer», não é expressão."
-        },
-        {
-          "id": "f086",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha e boa parte da América",
-          "motivo": "É uma construção gramatical («dársele bien»), não expressão figurada."
-        },
-        {
-          "id": "f087",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«A fin de cuentas» é universal."
-        },
-        {
-          "id": "f088",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Por lo visto» é universal."
-        },
-        {
-          "id": "f090",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Dicho sea de paso» é locução geral."
-        },
-        {
-          "id": "f092",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, México, Argentina e demais",
-          "motivo": "«Dar largas» é conhecida em toda parte."
-        },
-        {
-          "id": "f093",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Irse de rositas» é peninsular, desconhecida na América."
-        },
-        {
-          "id": "f094",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Hay gato encerrado» é universal."
-        },
-        {
-          "id": "f095",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico (registro formal)",
-          "motivo": "Locução formal de uso geral."
-        },
-        {
-          "id": "f099",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«No dar su brazo a torcer» é universal."
-        },
-        {
-          "id": "f100",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "Provérbio universal."
-        },
-        {
-          "id": "f101",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Hacerse agua la boca» é universal (Espanha também diz «la boca agua»)."
-        },
-        {
-          "id": "f103",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Chile, Peru, Colômbia, Venezuela; entendida no resto",
-          "motivo": "«Pillar» é corrente em vários países e a locução se entende em toda parte."
-        },
-        {
-          "id": "f104",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Para chuparse los dedos» é universal."
-        },
-        {
-          "id": "f105",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Salir el tiro por la culata» é universal."
-        },
-        {
-          "id": "f108",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "Na América se diz «hasta la coronilla», «hasta el gorro»; «hasta las narices» é peninsular."
-        },
-        {
-          "id": "f109",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, México, Argentina e demais",
-          "motivo": "«Ni fu ni fa» é conhecida em toda parte."
-        },
-        {
-          "id": "f110",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Dar corte» como vergonha é peninsular."
-        },
-        {
-          "id": "f111",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha e uso culto na América",
-          "motivo": "Locução antiga de todo o idioma, aparece também na imprensa do México e da Argentina."
-        },
-        {
-          "id": "f112",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "Provérbio universal."
-        },
-        {
-          "id": "f113",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«No me hace gracia» é universal."
-        },
-        {
-          "id": "f114",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (construção gramatical)",
-          "motivo": "É gramática («ir a por»), não expressão."
-        },
-        {
-          "id": "f115",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (frase do dia a dia)",
-          "motivo": "Pedido literal no balcão, não é expressão idiomática."
-        },
-        {
-          "id": "f116",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Pillar de camino» no sentido de ficar situado é peninsular."
-        },
-        {
-          "id": "f117",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Tener morro» é gíria peninsular; na América se diz «ser caradura», «concha»."
-        },
-        {
-          "id": "f118",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«No dar abasto» é universal."
-        },
-        {
-          "id": "f119",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Sonar a chino» é conhecida em toda parte."
-        },
-        {
-          "id": "f120",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Ni corto ni perezoso» é locução geral."
-        },
-        {
-          "id": "f121",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Argentina e entendida no resto",
-          "motivo": "«Lío» e «estar hecho un lío» se entendem em toda parte."
-        },
-        {
-          "id": "f122",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, México e demais",
-          "motivo": "«Dar la lata» é corrente na Espanha e no México e entendida no resto."
-        },
-        {
-          "id": "f123",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Ponerse morado» é peninsular."
-        },
-        {
-          "id": "f124",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Hacer de tripas corazón» é universal."
-        },
-        {
-          "id": "u023",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Majo» é gíria peninsular, desconhecida na América."
-        },
-        {
-          "id": "u030",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«A regañadientes» é locução geral."
-        },
-        {
-          "id": "u065",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Cutre» é gíria peninsular."
-        },
-        {
-          "id": "u066",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Currar» é gíria peninsular."
-        },
-        {
-          "id": "u068",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "Na América se diz «arreglárselas»; «apañárselas» é peninsular."
-        },
-        {
-          "id": "u069",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Espanha",
-          "motivo": "«Chapuza» como serviço malfeito é peninsular; no México «chapuza» é trapaça."
-        },
-        {
-          "id": "u127",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Frase literal; «zumo» é vocabulário, não expressão."
-        },
-        {
-          "id": "u167",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Frase literal; «paro» é vocabulário, não expressão."
-        },
-        {
-          "id": "f125",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, México, Argentina e demais",
-          "motivo": "«Estar en su salsa» é conhecida em toda parte."
-        },
-        {
-          "id": "f126",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Ser un cero a la izquierda» é universal."
-        },
-        {
-          "id": "f127",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Tomar el pelo» é universal."
-        },
-        {
-          "id": "f128",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "«Ponerse las botas» é peninsular; um mexicano não a reconhece."
-        },
-        {
-          "id": "f129",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Estar sin blanca» é peninsular; na América se diz «estar sin un peso», «pelado»."
-        },
-        {
-          "id": "f130",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Hablar por los codos» é universal."
-        },
-        {
-          "id": "f131",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha e entendida na América",
-          "motivo": "«Con la mosca detrás de la oreja» é locução geral, reconhecida também na América."
-        },
-        {
-          "id": "f132",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Argentina, Chile, Uruguai, México",
-          "motivo": "«Darse vuelta la tortilla» é corrente na Espanha e no Cone Sul e entendida no resto."
-        },
-        {
-          "id": "f133",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, México, Argentina e demais",
-          "motivo": "«Llover sobre mojado» é locução geral."
-        },
-        {
-          "id": "f134",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Guay» é gíria peninsular."
-        },
-        {
-          "id": "f135",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Molar» é gíria peninsular."
-        },
-        {
-          "id": "f136",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Flipar» é gíria peninsular."
-        },
-        {
-          "id": "f137",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "Na América se diz «lambiscón», «chupamedias», «barbero»; «pelota» é peninsular."
-        },
-        {
-          "id": "f138",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«De punta en blanco» é universal."
-        },
-        {
-          "id": "f139",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«No hay tu tía» é peninsular."
-        },
-        {
-          "id": "f140",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "Na América se diz «palanca», «cuña», «pituto»; «enchufe» é peninsular."
-        },
-        {
-          "id": "f141",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Buscarle tres (o cinco) pies al gato» é universal."
-        },
-        {
-          "id": "f142",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "«A la chita callando» é peninsular e pouco conhecida na América."
-        },
-        {
-          "id": "f143",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "Na América se diz «irse de pinta», «hacerse la rata», «capar clase»."
-        },
-        {
-          "id": "f144",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Pasarlo bomba» é peninsular."
-        },
-        {
-          "id": "f145",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "«Quedarse frito» como pegar no sono é peninsular; na América «estar frito» é estar encrencado."
-        },
-        {
-          "id": "f146",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "«Estar forrado» é peninsular; no México «forrada» tem outro sentido."
-        },
-        {
-          "id": "f147",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Currárselo» é gíria peninsular."
-        },
-        {
-          "id": "f148",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Tirar la casa por la ventana» é universal."
-        },
-        {
-          "id": "f149",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Pedir peras al olmo» é universal."
-        },
-        {
-          "id": "f150",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Quedarse en blanco» é universal."
-        },
-        {
-          "id": "u252",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Frase literal; «tapas» é vocabulário."
-        },
-        {
-          "id": "u255",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Frase literal; «pipas» é vocabulário."
-        },
-        {
-          "id": "u260",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Frase literal de informática, não é expressão."
-        },
-        {
-          "id": "f181",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Colômbia e entendida em toda a América",
-          "motivo": "«Echar de menos» é conhecida em toda parte, embora na América se prefira «extrañar»."
-        },
-        {
-          "id": "f184",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Argentina e entendida no resto",
-          "motivo": "«Tener buena pinta» é corrente na Espanha e no Cone Sul e se entende em toda parte."
-        },
-        {
-          "id": "f187",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«No me da la gana» é universal."
-        },
-        {
-          "id": "f192",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "O «menudo» exclamativo é peninsular; na América se diz «¡qué lío!»."
-        },
-        {
-          "id": "f193",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Argentina, Uruguai e entendida no resto",
-          "motivo": "«Ir tirando» é corrente na Espanha e no Cone Sul e se entende em toda parte."
-        },
-        {
-          "id": "u291",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Frase literal de restaurante."
-        },
-        {
-          "id": "u293",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Pedido literal no bar; «caña» é vocabulário."
-        },
-        {
-          "id": "u294",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Frase literal; «setas» é vocabulário."
-        },
-        {
-          "id": "u300",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Cotilleo» é coloquial peninsular; na América se diz «chisme»."
-        },
-        {
-          "id": "u301",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Chaval» é gíria peninsular; na América se diz «chavo», «pibe», «chamo»."
-        },
-        {
-          "id": "u302",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Chuleta» como cola de prova é peninsular; na América se diz «acordeón», «machete», «torpedo»."
-        },
-        {
-          "id": "f202",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Dar pena» existe em toda parte (o card já explica a diferença de sentido)."
-        },
-        {
-          "id": "f204",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha e boa parte da América",
-          "motivo": "É marcador de conversa, não expressão figurada."
-        },
-        {
-          "id": "f206",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«¡Venga!» como incentivo é muleta peninsular; na América se diz «¡ándale!», «¡dale!», «¡vamos!»."
-        },
-        {
-          "id": "f207",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Ni se te ocurra» é universal."
-        },
-        {
-          "id": "f208",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha e entendida na América",
-          "motivo": "«Hacer ilusión» se usa e se entende também na América («me ilusiona», «tengo ilusión»)."
-        },
-        {
-          "id": "f210",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha, Cuba, Venezuela, Colômbia, Caribe; entendida no resto",
-          "motivo": "«¡Qué va!» é corrente em muitos países além da Espanha."
-        },
-        {
-          "id": "f211",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Sobretudo Espanha",
-          "motivo": "«Poner de los nervios» é peninsular; na América se diz «me saca de quicio», «me pone nervioso»."
-        },
-        {
-          "id": "f213",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Espanha; entendida em toda a América",
-          "motivo": "Fórmula de mesa que qualquer latino-americano entende, ao lado de «buen provecho»."
-        },
-        {
-          "id": "f218",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«No tener nada que ver» é universal."
-        },
-        {
-          "id": "u316",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Frase literal de restaurante."
-        },
-        {
-          "id": "u337",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Pesado» como chato é de uso geral, e a frase é literal."
-        },
-        {
-          "id": "u401",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Espanha (vocabulário)",
-          "motivo": "Frase literal; «Hacienda» é vocabulário."
-        },
-        {
-          "id": "u435",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Notarse a la legua» é locução geral."
-        },
-        {
-          "id": "u453",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Echar la siesta» é frase comum e geral."
-        },
-        {
-          "id": "u458",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "Só Espanha",
-          "motivo": "«Dejarlo con alguien» é peninsular; na América se diz «terminar con», «cortar con»."
-        },
-        {
-          "id": "b016",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«Sin querer» é universal."
-        },
-        {
-          "id": "b040",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Todo o mundo hispânico",
-          "motivo": "«¡Buen provecho!» é universal."
-        }
-      ]
-    },
-    {
-      "lingua": "en",
-      "cards": [
-        {
-          "id": "en-f001",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum com phrasal verb, sem sentido figurado local."
-        },
-        {
-          "id": "en-f003",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase feita de uso geral em todas as variedades."
-        },
-        {
-          "id": "en-f008",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em todos os países de língua inglesa."
-        },
-        {
-          "id": "en-f012",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Phrasal verb comum, de sentido direto."
-        },
-        {
-          "id": "en-f020",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Grito de aviso universal no inglês."
-        },
-        {
-          "id": "en-f037",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá, Índia etc.",
-          "motivo": "«Big deal» é corrente e entendido em toda parte."
-        },
-        {
-          "id": "en-f038",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "«Just kidding» é coloquial geral, não gíria local."
-        },
-        {
-          "id": "en-f039",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula de hospitalidade universal."
-        },
-        {
-          "id": "en-f040",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "«Make it» (conseguir ir) é geral em todas as variedades."
-        },
-        {
-          "id": "en-f041",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá etc.",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f042",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase feita universal."
-        },
-        {
-          "id": "en-f043",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum e literal."
-        },
-        {
-          "id": "en-f044",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em todas as variedades."
-        },
-        {
-          "id": "en-f075",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase feita universal."
-        },
-        {
-          "id": "en-f076",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em toda parte."
-        },
-        {
-          "id": "en-f077",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão de cobrança comum em todas as variedades."
-        },
-        {
-          "id": "en-f078",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente nos EUA, Reino Unido, Austrália etc."
-        },
-        {
-          "id": "en-f079",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Canadá, Reino Unido, Austrália",
-          "motivo": "Muito americana, mas usada e entendida em toda parte."
-        },
-        {
-          "id": "en-f080",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em todas as variedades."
-        },
-        {
-          "id": "en-f087",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Índia, Austrália etc.",
-          "motivo": "Construção conhecida em todas as variedades."
-        },
-        {
-          "id": "en-f092",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase feita universal."
-        },
-        {
-          "id": "en-f093",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Construção gramatical comum, sem sentido figurado."
-        },
-        {
-          "id": "en-f097",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f101",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "«Boil down to» é geral."
-        },
-        {
-          "id": "en-f103",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Índia etc.",
-          "motivo": "Expressão conhecida em todo o mundo anglófono."
-        },
-        {
-          "id": "en-f104",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f105",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA (around), Reino Unido (about), demais",
-          "motivo": "Reconhecida em toda parte; o britânico diz «about», mas entende."
-        },
-        {
-          "id": "en-f106",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f107",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Corrente em todas as variedades."
-        },
-        {
-          "id": "en-f108",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Provérbio conhecido em todas as variedades."
-        },
-        {
-          "id": "en-f109",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f110",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Provérbio corrente em todas as variedades."
-        },
-        {
-          "id": "en-f111",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f112",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "«Cold feet» é corrente em toda parte."
-        },
-        {
-          "id": "en-f113",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f114",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Provérbio universal."
-        },
-        {
-          "id": "en-f115",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá, Índia",
-          "motivo": "Nasceu nos EUA e hoje é corrente em toda parte."
-        },
-        {
-          "id": "en-f116",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-u090",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "«Hassle» é coloquial geral, não gíria local."
-        },
-        {
-          "id": "en-f122",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Construção corrente em todas as variedades."
-        },
-        {
-          "id": "en-f126",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Construção comum, sem sentido figurado."
-        },
-        {
-          "id": "en-f138",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Canadá; entendida no Reino Unido e na Austrália",
-          "motivo": "Mais americana, mas reconhecida e usada nos demais países."
-        },
-        {
-          "id": "en-f139",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f140",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f141",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Provérbio conhecido em todas as variedades."
-        },
-        {
-          "id": "en-f142",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "«On the fence» é corrente em toda parte."
-        },
-        {
-          "id": "en-f143",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f144",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f145",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f146",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f147",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f148",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA (grain), Reino Unido e Austrália (pinch)",
-          "motivo": "A forma americana é reconhecida pelos britânicos e australianos."
-        },
-        {
-          "id": "en-f149",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Reino Unido, EUA, Austrália, Índia etc.",
-          "motivo": "De origem britânica, mas corrente também nos EUA."
-        },
-        {
-          "id": "en-f150",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f151",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Canadá, Reino Unido, Austrália",
-          "motivo": "Americana de origem, hoje corrente também no Reino Unido e na Austrália."
-        },
-        {
-          "id": "en-f152",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão do golfe conhecida em todas as variedades."
-        },
-        {
-          "id": "en-f160",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f161",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula conhecida em toda parte."
-        },
-        {
-          "id": "en-f163",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f164",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f167",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Fórmula corrente em todas as variedades."
-        },
-        {
-          "id": "en-f168",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f169",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f170",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f171",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Canadá; jargão de escritório também no Reino Unido, Austrália e Índia",
-          "motivo": "Americana, mas difundida e entendida no inglês corporativo de toda parte."
-        },
-        {
-          "id": "en-f172",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Canadá; conhecida no Reino Unido e na Austrália",
-          "motivo": "Americana de origem, mas reconhecida e usada na maioria dos outros países."
-        },
-        {
-          "id": "en-f173",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA; no Reino Unido e Austrália «rub up the wrong way»",
-          "motivo": "Varia só a preposição; britânicos e australianos a reconhecem."
-        },
-        {
-          "id": "en-f176",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em toda parte."
-        },
-        {
-          "id": "en-f177",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f178",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f179",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Fórmula corrente em todas as variedades."
-        },
-        {
-          "id": "en-f180",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f181",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em toda parte."
-        },
-        {
-          "id": "en-f183",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f185",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-f186",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula de mesa universal."
-        },
-        {
-          "id": "en-f187",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum e literal."
-        },
-        {
-          "id": "en-f188",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em todas as variedades."
-        },
-        {
-          "id": "en-u135",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase literal, com piada conhecida em toda parte."
-        },
-        {
-          "id": "en-f196",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-f198",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum e literal."
-        },
-        {
-          "id": "en-f201",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase feita universal."
-        },
-        {
-          "id": "en-f202",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase feita universal."
-        },
-        {
-          "id": "en-f203",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-f204",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-f205",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-f206",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em toda parte."
-        },
-        {
-          "id": "en-f207",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Pergunta comum."
-        },
-        {
-          "id": "en-f208",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Despedida universal."
-        },
-        {
-          "id": "en-f209",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f210",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f211",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f212",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f213",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f214",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f215",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f216",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f217",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f223",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-u155",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f236",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f238",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Reino Unido, Austrália, Nova Zelândia, EUA, Canadá",
-          "motivo": "Mais britânica, mas corrente também nos EUA."
-        },
-        {
-          "id": "en-f240",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Pergunta comum."
-        },
-        {
-          "id": "en-f241",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f242",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Provérbio universal."
-        },
-        {
-          "id": "en-f243",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f244",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f245",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f246",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Americana de origem, hoje corrente em toda parte."
-        },
-        {
-          "id": "en-f247",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum e literal."
-        },
-        {
-          "id": "en-f248",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase feita universal."
-        },
-        {
-          "id": "en-f249",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-f250",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f251",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f252",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Canadá, Reino Unido, Austrália",
-          "motivo": "Americana de origem, mas reconhecida nos demais (o britânico também diz «through the net»)."
-        },
-        {
-          "id": "en-f253",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f254",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f255",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal; só a grafia varia (gray/grey)."
-        },
-        {
-          "id": "en-f282",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum, com adjetivo de uso geral."
-        },
-        {
-          "id": "en-f284",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Canadá; jargão corporativo também no Reino Unido, Austrália e Índia",
-          "motivo": "Jargão americano de escritório, mas difundido e entendido em toda parte."
-        },
-        {
-          "id": "en-f285",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Recente, mas já difundida e entendida em todas as variedades."
-        },
-        {
-          "id": "en-f286",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Coloquial geral."
-        },
-        {
-          "id": "en-f287",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f288",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase feita universal."
-        },
-        {
-          "id": "en-f289",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f297",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Pergunta comum de compra."
-        },
-        {
-          "id": "en-f298",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Pergunta comum e literal."
-        },
-        {
-          "id": "en-f299",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Pergunta comum e literal."
-        },
-        {
-          "id": "en-f300",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum de compra."
-        },
-        {
-          "id": "en-f301",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f302",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em toda parte."
-        },
-        {
-          "id": "en-f303",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em toda parte."
-        },
-        {
-          "id": "en-f304",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f305",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f306",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f307",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em toda parte."
-        },
-        {
-          "id": "en-f308",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f309",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em todas as variedades."
-        },
-        {
-          "id": "en-f310",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-f311",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f312",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f313",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f314",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f315",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f316",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f317",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f318",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f319",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f320",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula formal universal."
-        },
-        {
-          "id": "en-f321",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA (for), Reino Unido (to); demais",
-          "motivo": "Reconhecida em toda parte; só a preposição varia."
-        },
-        {
-          "id": "en-f322",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula formal universal."
-        },
-        {
-          "id": "en-f323",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula formal universal."
-        },
-        {
-          "id": "en-f324",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f325",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula formal universal."
-        },
-        {
-          "id": "en-f326",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Pergunta básica e literal."
-        },
-        {
-          "id": "en-f327",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum de restaurante."
-        },
-        {
-          "id": "en-f328",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Canadá; entendida no Reino Unido e na Austrália (lá «takeaway»)",
-          "motivo": "Fórmula americana, mas um britânico ou australiano a entende de pronto."
-        },
-        {
-          "id": "en-f329",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum e literal."
-        },
-        {
-          "id": "en-f330",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f331",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-f332",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em todas as variedades."
-        },
-        {
-          "id": "en-f333",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f334",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em toda parte."
-        },
-        {
-          "id": "en-f335",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula corrente em todas as variedades."
-        },
-        {
-          "id": "en-f336",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-f337",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-f338",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f339",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA, Reino Unido, Austrália, Canadá",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f340",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f341",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão corrente em todas as variedades."
-        },
-        {
-          "id": "en-f342",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA (of), Reino Unido (in); demais",
-          "motivo": "Reconhecida em toda parte; só a preposição varia."
-        },
-        {
-          "id": "en-f343",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão conhecida em todas as variedades."
-        },
-        {
-          "id": "en-f344",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Reino Unido, Irlanda, Austrália, Índia, EUA (imprensa)",
-          "motivo": "Mais britânica, mas corrente no registro escrito americano."
-        },
-        {
-          "id": "en-f345",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula formal conhecida em toda parte."
-        },
-        {
-          "id": "en-f346",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula formal universal."
-        },
-        {
-          "id": "en-f347",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-f348",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão conhecida em todas as variedades."
-        },
-        {
-          "id": "en-f349",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Conhecida em toda parte, com nuance de sentido entre EUA e Reino Unido."
-        },
-        {
-          "id": "en-f350",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "EUA (in stride), Reino Unido (in his stride)",
-          "motivo": "Reconhecida em toda parte; só o possessivo varia."
-        },
-        {
-          "id": "en-u255",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-u259",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "«Not a soul» é universal."
-        },
-        {
-          "id": "en-u271",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Reino Unido, Irlanda, Austrália, EUA",
-          "motivo": "Provérbio conhecido em toda parte, embora antigo."
-        },
-        {
-          "id": "en-u285",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "en-u349",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula de lápide e obituário universal."
-        },
-        {
-          "id": "en-b014",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        },
-        {
-          "id": "en-b033",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "en-b038",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todo o mundo anglófono",
-          "motivo": "Frase comum."
-        }
-      ]
-    },
-    {
-      "lingua": "pt",
-      "cards": [
-        {
-          "id": "pt-b008",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Fórmula de apresentação comum a toda a lusofonia."
-        },
-        {
-          "id": "pt-b012",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Resposta padrão ao agradecimento em toda parte."
-        },
-        {
-          "id": "pt-b014",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Fórmula de cortesia universal no português."
-        },
-        {
-          "id": "pt-b031",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Fórmula fixa usada no Brasil, em Portugal e na África."
-        },
-        {
-          "id": "pt-b039",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Brasil; «passar mal» é corrente e entendido em Portugal e na África",
-          "motivo": "Só o gerúndio é brasileiro; a locução «passar mal» é conhecida em todos os países."
-        },
-        {
-          "id": "pt-u036",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase comum e literal, usada em toda parte."
-        },
-        {
-          "id": "pt-u041",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "«Querer dizer» é português geral."
-        },
-        {
-          "id": "pt-u050",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Brasil e Portugal, entendido em toda parte",
-          "motivo": "«Não dá tempo» é corrente também em Portugal."
-        },
-        {
-          "id": "pt-u063",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u083",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Brasil; entendido em todos os outros",
-          "motivo": "Frase comum; Portugal prefere «há muito tempo», mas entende sem dificuldade."
-        },
-        {
-          "id": "pt-u094",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u096",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "«Que bom» é geral; só o «você» é mais brasileiro, sem afetar a compreensão."
-        },
-        {
-          "id": "pt-u097",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase feita universal."
-        },
-        {
-          "id": "pt-u104",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Pergunta comum em toda parte."
-        },
-        {
-          "id": "pt-u110",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u114",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u127",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "«Chega de…» é corrente no Brasil, em Portugal e na África."
-        },
-        {
-          "id": "pt-u133",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Brasil; entendido em Portugal e na África",
-          "motivo": "Frase comum; «todo mundo» é entendido onde se diz «toda a gente»."
-        },
-        {
-          "id": "pt-u144",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "«Dar trabalho» é locução geral do português."
-        },
-        {
-          "id": "pt-u214",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u222",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "«Está na hora de» é geral."
-        },
-        {
-          "id": "pt-u228",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Brasil; entendido em toda parte",
-          "motivo": "Frase comum; só a regência é mais brasileira."
-        },
-        {
-          "id": "pt-u245",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "«Volto já» é geral, inclusive em Portugal."
-        },
-        {
-          "id": "pt-u283",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Brasil e Portugal («não ligo nenhuma»), entendido na África",
-          "motivo": "«Não ligar para/a» é conhecido em toda a lusofonia."
-        },
-        {
-          "id": "pt-u292",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "só no Brasil; Portugal diz «que fixe!»",
-          "motivo": "A graça é a gíria brasileira «legal» (= bacana)."
-        },
-        {
-          "id": "pt-u293",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "só no Brasil; Portugal diz «gajo» e «fixe»",
-          "motivo": "Sustentada nas gírias brasileiras «cara» e «legal»."
-        },
-        {
-          "id": "pt-u404",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Pedido comum em toda parte."
-        },
-        {
-          "id": "pt-u405",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u407",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Metáfora comum e geral."
-        },
-        {
-          "id": "pt-u413",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Provérbio conhecido no Brasil, em Portugal e na África."
-        },
-        {
-          "id": "pt-u414",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Brasil; entendido em toda parte",
-          "motivo": "Frase comum; Portugal prefere «não há problema», mas entende."
-        },
-        {
-          "id": "pt-u419",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Brasil e Angola; Portugal diz «Parabéns!» mas entende",
-          "motivo": "Fórmula conhecida em toda a lusofonia."
-        },
-        {
-          "id": "pt-u436",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Brasil; entendido em toda parte",
-          "motivo": "Frase comum; Portugal diz «não há pressa», mas entende."
-        },
-        {
-          "id": "pt-u445",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u446",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Construção gramatical geral."
-        },
-        {
-          "id": "pt-u454",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "«Na verdade» é geral."
-        },
-        {
-          "id": "pt-u503",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u505",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "«A semana que vem» é geral."
-        },
-        {
-          "id": "pt-u515",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u527",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u533",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u546",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u604",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "Brasil e Portugal, entendido na África",
-          "motivo": "«Espera aí!» é corrente também em Portugal."
-        },
-        {
-          "id": "pt-u606",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Frase literal comum."
-        },
-        {
-          "id": "pt-u626",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Brasil; entendido em Portugal e na África",
-          "motivo": "Frase comum; Portugal diz mais «faltou a luz», mas entende."
-        },
-        {
-          "id": "pt-u629",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "só no Brasil; Portugal diz «gajo»",
-          "motivo": "A frase se apoia na gíria brasileira «cara» (= sujeito)."
-        },
-        {
-          "id": "pt-u630",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "só no Brasil",
-          "motivo": "Junta duas gírias brasileiras, «cara» e «legal»."
-        },
-        {
-          "id": "pt-u637",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "todos os países lusófonos",
-          "motivo": "Diminutivo e pedido comuns em toda parte."
-        },
-        {
-          "id": "pt-u643",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "Brasil; entendido em Portugal («tem cuidado») e na África",
-          "motivo": "«Tomar cuidado» é português geral."
-        }
-      ]
-    },
-    {
-      "lingua": "fr",
-      "cards": [
-        {
-          "id": "fr-b003",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Cumprimento informal corrente em todos os países francófonos, não é gíria local."
-        },
-        {
-          "id": "fr-u027",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "França, Bélgica, Suíça, Quebec, África",
-          "motivo": "«Boire/prendre un verre» é universal na francofonia."
-        },
-        {
-          "id": "fr-u090",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Frase comum de advertência, usada em toda parte."
-        },
-        {
-          "id": "fr-u115",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "França, Bélgica, Suíça, África; entendida no Quebec",
-          "motivo": "Fórmula de aceitar educada, de francês padrão, reconhecida em todos os países."
-        },
-        {
-          "id": "fr-u117",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Uso corrente e transparente de «voir» como entender, em todo lugar."
-        },
-        {
-          "id": "fr-u120",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Locução adverbial padrão, universal."
-        },
-        {
-          "id": "fr-u127",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Fórmula universal."
-        },
-        {
-          "id": "fr-u137",
-          "ehExpressao": false,
-          "veredito": "fica",
-          "onde": "toda a francofonia (muito usada também no Quebec)",
-          "motivo": "Construção comum e universal."
-        },
-        {
-          "id": "fr-u155",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "França, Bélgica, Suíça, Quebec, África",
-          "motivo": "«Coup de main» é conhecido e usado em toda a francofonia."
-        },
-        {
-          "id": "fr-u189",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Resposta corrente de quem foi chamado, em todos os países."
-        },
-        {
-          "id": "fr-u199",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Hipérbole universal."
-        },
-        {
-          "id": "fr-u200",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Cumprimento de reencontro usado em todos os países."
-        },
-        {
-          "id": "fr-u211",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "França, Bélgica, Suíça, África; conhecida no Quebec (onde se diz também «bouder»)",
-          "motivo": "Expressão de francês geral, reconhecida pela maioria dos falantes fora da França."
-        },
-        {
-          "id": "fr-u276",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Frase feita universal."
-        },
-        {
-          "id": "fr-u321",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "França, Bélgica, Suíça, África; entendida no Quebec",
-          "motivo": "«Coup de fil» é francês geral, conhecido na maioria dos países."
-        },
-        {
-          "id": "fr-u327",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Cumprimento informal universal."
-        },
-        {
-          "id": "fr-u333",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia (e além)",
-          "motivo": "Expressão universal."
-        },
-        {
-          "id": "fr-u365",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Exclamação comum em todos os países."
-        },
-        {
-          "id": "fr-u481",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Resposta enfática de francês padrão, entendida em todo lugar."
-        },
-        {
-          "id": "fr-u487",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Locução padrão, universal."
-        },
-        {
-          "id": "fr-u561",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia",
-          "motivo": "Exagero transparente, entendido em todos os países."
-        },
-        {
-          "id": "fr-u567",
-          "ehExpressao": true,
-          "veredito": "sai",
-          "onde": "sobretudo França e Bélgica",
-          "motivo": "«Prendre un pot» é coloquial da França; no Quebec não se usa («pot» lá é maconha) e na África é pouco corrente; «boire un verre» já cobre o sentido."
-        },
-        {
-          "id": "fr-u569",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "França, Bélgica, Suíça, África (onde «gérer» é muito usado); transparente no Quebec",
-          "motivo": "Uso coloquial de verbo padrão, entendido sem esforço na maioria dos países."
-        },
-        {
-          "id": "fr-u606",
-          "ehExpressao": true,
-          "veredito": "fica",
-          "onde": "toda a francofonia, sobretudo na imprensa",
-          "motivo": "Expressão de francês padrão, conhecida em todos os países."
-        }
-      ]
-    }
-  ],
-  "workflowProgress": [
-    {
-      "type": "workflow_phase",
-      "index": 1,
-      "title": "Julgar"
-    },
-    {
-      "type": "workflow_agent",
-      "index": 1,
-      "label": "julgar:es",
-      "phaseIndex": 1,
-      "phaseTitle": "Julgar",
-      "agentId": "afc3b2ab5f858bab1",
-      "model": "claude-opus-5-5",
-      "state": "done",
-      "startedAt": 1792524243380,
-      "queuedAt": 1792524242723,
-      "attempt": 1,
-      "lastToolName": "StructuredOutput",
-      "promptPreview": "Você é um dialetólogo do espanhol. Leia o arquivo C:/Users/geren/AppData/Local/Temp/claude/C--Users-geren-OneDrive-Documentos-Onedrive-do-Gere-Software-MEU-taioe/10552bda-dfed-4b6b-8def-6bdb45acd9e6/scratchpad/expr/es.json (use a ferramenta Read). Cada item é um card de um app de línguas, marcado como expressão, gíria, provérbio ou «Espanha». Julgue TODOS os itens, sem pular nenhum.\n\nA regra do do…",
-      "promptFramed": true,
-      "lastProgressAt": 1792524387636,
-      "tokens": 89205,
-      "toolCalls": 2,
-      "durationMs": 144199,
-      "resultPreview": "{\"cards\":[{\"id\":\"f004\",\"ehExpressao\":true,\"veredito\":\"fica\",\"onde\":\"Todo o mundo hispânico\",\"motivo\":\"«Echar una mano» é corrente na Espanha e em toda a América.\"},{\"id\":\"f007\",\"ehExpressao\":true,\"veredito\":\"fica\",\"onde\":\"Todo o mundo hispânico\",\"motivo\":\"«Estar en las nubes» é universal.\"},{\"id\":\"f012\",\"ehExpressao\":true,\"veredito\":\"fica\",\"onde\":\"Todo o mundo hispânico\",\"motivo\":\"«Caer bien/mal» …"
-    },
-    {
-      "type": "workflow_agent",
-      "index": 2,
-      "label": "julgar:en",
-      "phaseIndex": 1,
-      "phaseTitle": "Julgar",
-      "agentId": "aaae229020160c70c",
-      "model": "claude-opus-5-5",
-      "state": "done",
-      "startedAt": 1792524243383,
-      "queuedAt": 1792524242725,
-      "attempt": 1,
-      "lastToolName": "StructuredOutput",
-      "promptPreview": "Você é um dialetólogo do inglês. Leia o arquivo C:/Users/geren/AppData/Local/Temp/claude/C--Users-geren-OneDrive-Documentos-Onedrive-do-Gere-Software-MEU-taioe/10552bda-dfed-4b6b-8def-6bdb45acd9e6/scratchpad/expr/en.json (use a ferramenta Read). Cada item é um card de um app de línguas, marcado como expressão, gíria, provérbio ou «Espanha». Julgue TODOS os itens, sem pular nenhum.\n\nA regra do dono…",
-      "promptFramed": true,
-      "lastProgressAt": 1792524354532,
-      "tokens": 103234,
-      "toolCalls": 3,
-      "durationMs": 107982,
-      "resultPreview": "{\"cards\":[{\"id\":\"en-f001\",\"ehExpressao\":false,\"veredito\":\"fica\",\"onde\":\"todo o mundo anglófono\",\"motivo\":\"Frase comum com phrasal verb, sem sentido figurado local.\"},{\"id\":\"en-f003\",\"ehExpressao\":true,\"veredito\":\"fica\",\"onde\":\"todo o mundo anglófono\",\"motivo\":\"Frase feita de uso geral em todas as variedades.\"},{\"id\":\"en-f008\",\"ehExpressao\":true,\"veredito\":\"fica\",\"onde\":\"todo o mundo anglófono\",\"mo…"
-    },
-    {
-      "type": "workflow_agent",
-      "index": 3,
-      "label": "julgar:pt",
-      "phaseIndex": 1,
-      "phaseTitle": "Julgar",
-      "agentId": "ac66971804c3db0db",
-      "model": "claude-opus-5-5",
-      "state": "done",
-      "startedAt": 1792524243384,
-      "queuedAt": 1792524242734,
-      "attempt": 1,
-      "lastToolName": "StructuredOutput",
-      "promptPreview": "Você é um dialetólogo do português. Leia o arquivo C:/Users/geren/AppData/Local/Temp/claude/C--Users-geren-OneDrive-Documentos-Onedrive-do-Gere-Software-MEU-taioe/10552bda-dfed-4b6b-8def-6bdb45acd9e6/scratchpad/expr/pt.json (use a ferramenta Read). Cada item é um card de um app de línguas, marcado como expressão, gíria, provérbio ou «Espanha». Julgue TODOS os itens, sem pular nenhum.\n\nA regra do d…",
-      "promptFramed": true,
-      "lastProgressAt": 1792524286467,
-      "tokens": 73025,
-      "toolCalls": 2,
-      "durationMs": 39907,
-      "resultPreview": "{\"cards\":[{\"id\":\"pt-b008\",\"ehExpressao\":true,\"veredito\":\"fica\",\"onde\":\"todos os países lusófonos\",\"motivo\":\"Fórmula de apresentação comum a toda a lusofonia.\"},{\"id\":\"pt-b012\",\"ehExpressao\":true,\"veredito\":\"fica\",\"onde\":\"todos os países lusófonos\",\"motivo\":\"Resposta padrão ao agradecimento em toda parte.\"},{\"id\":\"pt-b014\",\"ehExpressao\":true,\"veredito\":\"fica\",\"onde\":\"todos os países lusófonos\",\"mot…"
-    },
-    {
-      "type": "workflow_agent",
-      "index": 4,
-      "label": "julgar:fr",
-      "phaseIndex": 1,
-      "phaseTitle": "Julgar",
-      "agentId": "a0fe873c8ec1c995d",
-      "model": "claude-opus-5-5",
-      "state": "done",
-      "startedAt": 1792524243385,
-      "queuedAt": 1792524242735,
-      "attempt": 1,
-      "lastToolName": "StructuredOutput",
-      "promptPreview": "Você é um dialetólogo do francês. Leia o arquivo C:/Users/geren/AppData/Local/Temp/claude/C--Users-geren-OneDrive-Documentos-Onedrive-do-Gere-Software-MEU-taioe/10552bda-dfed-4b6b-8def-6bdb45acd9e6/scratchpad/expr/fr.json (use a ferramenta Read). Cada item é um card de um app de línguas, marcado como expressão, gíria, provérbio ou «Espanha». Julgue TODOS os itens, sem pular nenhum.\n\nA regra do don…",
-      "promptFramed": true,
-      "lastProgressAt": 1792524277738,
-      "tokens": 69778,
-      "toolCalls": 2,
-      "durationMs": 31144,
-      "resultPreview": "{\"cards\":[{\"id\":\"fr-b003\",\"ehExpressao\":false,\"veredito\":\"fica\",\"onde\":\"toda a francofonia\",\"motivo\":\"Cumprimento informal corrente em todos os países francófonos, não é gíria local.\"},{\"id\":\"fr-u027\",\"ehExpressao\":true,\"veredito\":\"fica\",\"onde\":\"França, Bélgica, Suíça, Quebec, África\",\"motivo\":\"«Boire/prendre un verre» é universal na francofonia.\"},{\"id\":\"fr-u090\",\"ehExpressao\":false,\"veredito\":\"f…"
-    }
-  ],
-  "totalTokens": 335242,
-  "totalToolCalls": 9
-}
+[
+ {
+  "lingua": "es",
+  "cards": [
+   {
+    "id": "f004",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Echar una mano» é corrente na Espanha e em toda a América."
+   },
+   {
+    "id": "f007",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Estar en las nubes» é universal."
+   },
+   {
+    "id": "f012",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Caer bien/mal» é de uso geral em todos os países."
+   },
+   {
+    "id": "f013",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Meter la pata» é corrente em toda parte."
+   },
+   {
+    "id": "f014",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "Na América se diz «donde el diablo perdió el poncho», «en la Conchinchina»; «el quinto pino» é peninsular."
+   },
+   {
+    "id": "f015",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Tirar la toalla» é universal."
+   },
+   {
+    "id": "f016",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«No tener pelos en la lengua» é conhecida em todos os países."
+   },
+   {
+    "id": "f017",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Ser pan comido» é universal."
+   },
+   {
+    "id": "f018",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Costar un ojo de la cara» é corrente em toda parte."
+   },
+   {
+    "id": "f019",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Espanha",
+    "motivo": "«Estar como una cabra» é peninsular; na América se diz «estar chiflado», «le falta un tornillo»."
+   },
+   {
+    "id": "f020",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Dar en el clavo» é universal."
+   },
+   {
+    "id": "f021",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, México, Colômbia, Argentina e demais",
+    "motivo": "«Ponerse las pilas» é corrente em toda parte."
+   },
+   {
+    "id": "f022",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Hacer la vista gorda» é universal."
+   },
+   {
+    "id": "f023",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Ir al grano» é universal."
+   },
+   {
+    "id": "f024",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha e entendida em toda a América",
+    "motivo": "«Estar hecho polvo» é usada e reconhecida no México, na Argentina e em outros."
+   },
+   {
+    "id": "f025",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Por si las moscas» é corrente em todos os países."
+   },
+   {
+    "id": "f026",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "Locução geral, de uso culto e coloquial em toda parte."
+   },
+   {
+    "id": "f027",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "«Dar calabazas» é pouco corrente na América, onde se diz «batear», «dar plantón», «rechazar»."
+   },
+   {
+    "id": "f028",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, México, Argentina e demais",
+    "motivo": "«No dar pie con bola» é conhecida em toda parte."
+   },
+   {
+    "id": "f029",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Chollo» é gíria peninsular; na América se diz «ganga»."
+   },
+   {
+    "id": "f030",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Írsele la olla» é gíria peninsular, desconhecida na América."
+   },
+   {
+    "id": "f031",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Poner verde a alguien» é peninsular; na América não se usa com esse sentido."
+   },
+   {
+    "id": "f032",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Montar un pollo» é gíria peninsular."
+   },
+   {
+    "id": "f033",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Argentina, México e demais",
+    "motivo": "«Importar un pepino» é conhecida em toda parte."
+   },
+   {
+    "id": "f034",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "Locução universal."
+   },
+   {
+    "id": "f035",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "Na América se diz «hacerse el loco», «el desentendido», «el leso», «el gil»."
+   },
+   {
+    "id": "f042",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "«Estar al caer» é peninsular; na América se diz «está por llegar»."
+   },
+   {
+    "id": "f054",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "Provérbio universal."
+   },
+   {
+    "id": "f055",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "Provérbio universal."
+   },
+   {
+    "id": "f056",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "Provérbio universal."
+   },
+   {
+    "id": "f057",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Dar gato por liebre» é universal."
+   },
+   {
+    "id": "f058",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Ser uña y carne» é universal."
+   },
+   {
+    "id": "f059",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Andarse por las ramas» é universal."
+   },
+   {
+    "id": "f060",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Salirse con la suya» é universal."
+   },
+   {
+    "id": "f061",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Espanha",
+    "motivo": "«Estar de mala leche» como mau humor é peninsular; no México «mala leche» é azar ou má intenção."
+   },
+   {
+    "id": "f062",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha e entendida em toda a América",
+    "motivo": "«Quedarse de piedra» é reconhecida em toda parte."
+   },
+   {
+    "id": "f063",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Argentina, Chile, México e demais",
+    "motivo": "«Bajón» como queda de ânimo é corrente em muitos países."
+   },
+   {
+    "id": "f064",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Echar leña al fuego» é universal."
+   },
+   {
+    "id": "f065",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Argentina, México e demais",
+    "motivo": "«A troche y moche» é locução geral, viva também na América."
+   },
+   {
+    "id": "f066",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "«Erre que erre» é pouco conhecida na América."
+   },
+   {
+    "id": "f067",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«A duras penas» é universal."
+   },
+   {
+    "id": "f069",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (frase do dia a dia)",
+    "motivo": "Frase literal de combinar encontro, não é expressão idiomática."
+   },
+   {
+    "id": "f080",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Llover a cántaros» é universal."
+   },
+   {
+    "id": "f083",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (frase do dia a dia)",
+    "motivo": "Pergunta literal com o verbo «apetecer», não é expressão."
+   },
+   {
+    "id": "f086",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha e boa parte da América",
+    "motivo": "É uma construção gramatical («dársele bien»), não expressão figurada."
+   },
+   {
+    "id": "f087",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«A fin de cuentas» é universal."
+   },
+   {
+    "id": "f088",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Por lo visto» é universal."
+   },
+   {
+    "id": "f090",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Dicho sea de paso» é locução geral."
+   },
+   {
+    "id": "f092",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, México, Argentina e demais",
+    "motivo": "«Dar largas» é conhecida em toda parte."
+   },
+   {
+    "id": "f093",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Irse de rositas» é peninsular, desconhecida na América."
+   },
+   {
+    "id": "f094",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Hay gato encerrado» é universal."
+   },
+   {
+    "id": "f095",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico (registro formal)",
+    "motivo": "Locução formal de uso geral."
+   },
+   {
+    "id": "f099",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«No dar su brazo a torcer» é universal."
+   },
+   {
+    "id": "f100",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "Provérbio universal."
+   },
+   {
+    "id": "f101",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Hacerse agua la boca» é universal (Espanha também diz «la boca agua»)."
+   },
+   {
+    "id": "f103",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Chile, Peru, Colômbia, Venezuela; entendida no resto",
+    "motivo": "«Pillar» é corrente em vários países e a locução se entende em toda parte."
+   },
+   {
+    "id": "f104",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Para chuparse los dedos» é universal."
+   },
+   {
+    "id": "f105",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Salir el tiro por la culata» é universal."
+   },
+   {
+    "id": "f108",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "Na América se diz «hasta la coronilla», «hasta el gorro»; «hasta las narices» é peninsular."
+   },
+   {
+    "id": "f109",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, México, Argentina e demais",
+    "motivo": "«Ni fu ni fa» é conhecida em toda parte."
+   },
+   {
+    "id": "f110",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Dar corte» como vergonha é peninsular."
+   },
+   {
+    "id": "f111",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha e uso culto na América",
+    "motivo": "Locução antiga de todo o idioma, aparece também na imprensa do México e da Argentina."
+   },
+   {
+    "id": "f112",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "Provérbio universal."
+   },
+   {
+    "id": "f113",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«No me hace gracia» é universal."
+   },
+   {
+    "id": "f114",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (construção gramatical)",
+    "motivo": "É gramática («ir a por»), não expressão."
+   },
+   {
+    "id": "f115",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (frase do dia a dia)",
+    "motivo": "Pedido literal no balcão, não é expressão idiomática."
+   },
+   {
+    "id": "f116",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Pillar de camino» no sentido de ficar situado é peninsular."
+   },
+   {
+    "id": "f117",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Tener morro» é gíria peninsular; na América se diz «ser caradura», «concha»."
+   },
+   {
+    "id": "f118",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«No dar abasto» é universal."
+   },
+   {
+    "id": "f119",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Sonar a chino» é conhecida em toda parte."
+   },
+   {
+    "id": "f120",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Ni corto ni perezoso» é locução geral."
+   },
+   {
+    "id": "f121",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Argentina e entendida no resto",
+    "motivo": "«Lío» e «estar hecho un lío» se entendem em toda parte."
+   },
+   {
+    "id": "f122",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, México e demais",
+    "motivo": "«Dar la lata» é corrente na Espanha e no México e entendida no resto."
+   },
+   {
+    "id": "f123",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Ponerse morado» é peninsular."
+   },
+   {
+    "id": "f124",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Hacer de tripas corazón» é universal."
+   },
+   {
+    "id": "u023",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Majo» é gíria peninsular, desconhecida na América."
+   },
+   {
+    "id": "u030",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«A regañadientes» é locução geral."
+   },
+   {
+    "id": "u065",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Cutre» é gíria peninsular."
+   },
+   {
+    "id": "u066",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Currar» é gíria peninsular."
+   },
+   {
+    "id": "u068",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "Na América se diz «arreglárselas»; «apañárselas» é peninsular."
+   },
+   {
+    "id": "u069",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Espanha",
+    "motivo": "«Chapuza» como serviço malfeito é peninsular; no México «chapuza» é trapaça."
+   },
+   {
+    "id": "u127",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Frase literal; «zumo» é vocabulário, não expressão."
+   },
+   {
+    "id": "u167",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Frase literal; «paro» é vocabulário, não expressão."
+   },
+   {
+    "id": "f125",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, México, Argentina e demais",
+    "motivo": "«Estar en su salsa» é conhecida em toda parte."
+   },
+   {
+    "id": "f126",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Ser un cero a la izquierda» é universal."
+   },
+   {
+    "id": "f127",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Tomar el pelo» é universal."
+   },
+   {
+    "id": "f128",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "«Ponerse las botas» é peninsular; um mexicano não a reconhece."
+   },
+   {
+    "id": "f129",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Estar sin blanca» é peninsular; na América se diz «estar sin un peso», «pelado»."
+   },
+   {
+    "id": "f130",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Hablar por los codos» é universal."
+   },
+   {
+    "id": "f131",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha e entendida na América",
+    "motivo": "«Con la mosca detrás de la oreja» é locução geral, reconhecida também na América."
+   },
+   {
+    "id": "f132",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Argentina, Chile, Uruguai, México",
+    "motivo": "«Darse vuelta la tortilla» é corrente na Espanha e no Cone Sul e entendida no resto."
+   },
+   {
+    "id": "f133",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, México, Argentina e demais",
+    "motivo": "«Llover sobre mojado» é locução geral."
+   },
+   {
+    "id": "f134",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Guay» é gíria peninsular."
+   },
+   {
+    "id": "f135",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Molar» é gíria peninsular."
+   },
+   {
+    "id": "f136",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Flipar» é gíria peninsular."
+   },
+   {
+    "id": "f137",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "Na América se diz «lambiscón», «chupamedias», «barbero»; «pelota» é peninsular."
+   },
+   {
+    "id": "f138",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«De punta en blanco» é universal."
+   },
+   {
+    "id": "f139",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«No hay tu tía» é peninsular."
+   },
+   {
+    "id": "f140",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "Na América se diz «palanca», «cuña», «pituto»; «enchufe» é peninsular."
+   },
+   {
+    "id": "f141",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Buscarle tres (o cinco) pies al gato» é universal."
+   },
+   {
+    "id": "f142",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "«A la chita callando» é peninsular e pouco conhecida na América."
+   },
+   {
+    "id": "f143",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "Na América se diz «irse de pinta», «hacerse la rata», «capar clase»."
+   },
+   {
+    "id": "f144",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Pasarlo bomba» é peninsular."
+   },
+   {
+    "id": "f145",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "«Quedarse frito» como pegar no sono é peninsular; na América «estar frito» é estar encrencado."
+   },
+   {
+    "id": "f146",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "«Estar forrado» é peninsular; no México «forrada» tem outro sentido."
+   },
+   {
+    "id": "f147",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Currárselo» é gíria peninsular."
+   },
+   {
+    "id": "f148",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Tirar la casa por la ventana» é universal."
+   },
+   {
+    "id": "f149",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Pedir peras al olmo» é universal."
+   },
+   {
+    "id": "f150",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Quedarse en blanco» é universal."
+   },
+   {
+    "id": "u252",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Frase literal; «tapas» é vocabulário."
+   },
+   {
+    "id": "u255",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Frase literal; «pipas» é vocabulário."
+   },
+   {
+    "id": "u260",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Frase literal de informática, não é expressão."
+   },
+   {
+    "id": "f181",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Colômbia e entendida em toda a América",
+    "motivo": "«Echar de menos» é conhecida em toda parte, embora na América se prefira «extrañar»."
+   },
+   {
+    "id": "f184",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Argentina e entendida no resto",
+    "motivo": "«Tener buena pinta» é corrente na Espanha e no Cone Sul e se entende em toda parte."
+   },
+   {
+    "id": "f187",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«No me da la gana» é universal."
+   },
+   {
+    "id": "f192",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "O «menudo» exclamativo é peninsular; na América se diz «¡qué lío!»."
+   },
+   {
+    "id": "f193",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Argentina, Uruguai e entendida no resto",
+    "motivo": "«Ir tirando» é corrente na Espanha e no Cone Sul e se entende em toda parte."
+   },
+   {
+    "id": "u291",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Frase literal de restaurante."
+   },
+   {
+    "id": "u293",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Pedido literal no bar; «caña» é vocabulário."
+   },
+   {
+    "id": "u294",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Frase literal; «setas» é vocabulário."
+   },
+   {
+    "id": "u300",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Cotilleo» é coloquial peninsular; na América se diz «chisme»."
+   },
+   {
+    "id": "u301",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Chaval» é gíria peninsular; na América se diz «chavo», «pibe», «chamo»."
+   },
+   {
+    "id": "u302",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Chuleta» como cola de prova é peninsular; na América se diz «acordeón», «machete», «torpedo»."
+   },
+   {
+    "id": "f202",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Dar pena» existe em toda parte (o card já explica a diferença de sentido)."
+   },
+   {
+    "id": "f204",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha e boa parte da América",
+    "motivo": "É marcador de conversa, não expressão figurada."
+   },
+   {
+    "id": "f206",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«¡Venga!» como incentivo é muleta peninsular; na América se diz «¡ándale!», «¡dale!», «¡vamos!»."
+   },
+   {
+    "id": "f207",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Ni se te ocurra» é universal."
+   },
+   {
+    "id": "f208",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha e entendida na América",
+    "motivo": "«Hacer ilusión» se usa e se entende também na América («me ilusiona», «tengo ilusión»)."
+   },
+   {
+    "id": "f210",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha, Cuba, Venezuela, Colômbia, Caribe; entendida no resto",
+    "motivo": "«¡Qué va!» é corrente em muitos países além da Espanha."
+   },
+   {
+    "id": "f211",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Sobretudo Espanha",
+    "motivo": "«Poner de los nervios» é peninsular; na América se diz «me saca de quicio», «me pone nervioso»."
+   },
+   {
+    "id": "f213",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Espanha; entendida em toda a América",
+    "motivo": "Fórmula de mesa que qualquer latino-americano entende, ao lado de «buen provecho»."
+   },
+   {
+    "id": "f218",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«No tener nada que ver» é universal."
+   },
+   {
+    "id": "u316",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Frase literal de restaurante."
+   },
+   {
+    "id": "u337",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Pesado» como chato é de uso geral, e a frase é literal."
+   },
+   {
+    "id": "u401",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Espanha (vocabulário)",
+    "motivo": "Frase literal; «Hacienda» é vocabulário."
+   },
+   {
+    "id": "u435",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Notarse a la legua» é locução geral."
+   },
+   {
+    "id": "u453",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Echar la siesta» é frase comum e geral."
+   },
+   {
+    "id": "u458",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "Só Espanha",
+    "motivo": "«Dejarlo con alguien» é peninsular; na América se diz «terminar con», «cortar con»."
+   },
+   {
+    "id": "b016",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«Sin querer» é universal."
+   },
+   {
+    "id": "b040",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Todo o mundo hispânico",
+    "motivo": "«¡Buen provecho!» é universal."
+   }
+  ]
+ },
+ {
+  "lingua": "en",
+  "cards": [
+   {
+    "id": "en-f001",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum com phrasal verb, sem sentido figurado local."
+   },
+   {
+    "id": "en-f003",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase feita de uso geral em todas as variedades."
+   },
+   {
+    "id": "en-f008",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em todos os países de língua inglesa."
+   },
+   {
+    "id": "en-f012",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Phrasal verb comum, de sentido direto."
+   },
+   {
+    "id": "en-f020",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Grito de aviso universal no inglês."
+   },
+   {
+    "id": "en-f037",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá, Índia etc.",
+    "motivo": "«Big deal» é corrente e entendido em toda parte."
+   },
+   {
+    "id": "en-f038",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "«Just kidding» é coloquial geral, não gíria local."
+   },
+   {
+    "id": "en-f039",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula de hospitalidade universal."
+   },
+   {
+    "id": "en-f040",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "«Make it» (conseguir ir) é geral em todas as variedades."
+   },
+   {
+    "id": "en-f041",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá etc.",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f042",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase feita universal."
+   },
+   {
+    "id": "en-f043",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum e literal."
+   },
+   {
+    "id": "en-f044",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em todas as variedades."
+   },
+   {
+    "id": "en-f075",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase feita universal."
+   },
+   {
+    "id": "en-f076",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em toda parte."
+   },
+   {
+    "id": "en-f077",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão de cobrança comum em todas as variedades."
+   },
+   {
+    "id": "en-f078",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente nos EUA, Reino Unido, Austrália etc."
+   },
+   {
+    "id": "en-f079",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Canadá, Reino Unido, Austrália",
+    "motivo": "Muito americana, mas usada e entendida em toda parte."
+   },
+   {
+    "id": "en-f080",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em todas as variedades."
+   },
+   {
+    "id": "en-f087",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Índia, Austrália etc.",
+    "motivo": "Construção conhecida em todas as variedades."
+   },
+   {
+    "id": "en-f092",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase feita universal."
+   },
+   {
+    "id": "en-f093",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Construção gramatical comum, sem sentido figurado."
+   },
+   {
+    "id": "en-f097",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f101",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "«Boil down to» é geral."
+   },
+   {
+    "id": "en-f103",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Índia etc.",
+    "motivo": "Expressão conhecida em todo o mundo anglófono."
+   },
+   {
+    "id": "en-f104",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f105",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA (around), Reino Unido (about), demais",
+    "motivo": "Reconhecida em toda parte; o britânico diz «about», mas entende."
+   },
+   {
+    "id": "en-f106",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f107",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Corrente em todas as variedades."
+   },
+   {
+    "id": "en-f108",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Provérbio conhecido em todas as variedades."
+   },
+   {
+    "id": "en-f109",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f110",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Provérbio corrente em todas as variedades."
+   },
+   {
+    "id": "en-f111",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f112",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "«Cold feet» é corrente em toda parte."
+   },
+   {
+    "id": "en-f113",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f114",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Provérbio universal."
+   },
+   {
+    "id": "en-f115",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá, Índia",
+    "motivo": "Nasceu nos EUA e hoje é corrente em toda parte."
+   },
+   {
+    "id": "en-f116",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-u090",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "«Hassle» é coloquial geral, não gíria local."
+   },
+   {
+    "id": "en-f122",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Construção corrente em todas as variedades."
+   },
+   {
+    "id": "en-f126",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Construção comum, sem sentido figurado."
+   },
+   {
+    "id": "en-f138",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Canadá; entendida no Reino Unido e na Austrália",
+    "motivo": "Mais americana, mas reconhecida e usada nos demais países."
+   },
+   {
+    "id": "en-f139",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f140",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f141",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Provérbio conhecido em todas as variedades."
+   },
+   {
+    "id": "en-f142",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "«On the fence» é corrente em toda parte."
+   },
+   {
+    "id": "en-f143",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f144",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f145",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f146",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f147",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f148",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA (grain), Reino Unido e Austrália (pinch)",
+    "motivo": "A forma americana é reconhecida pelos britânicos e australianos."
+   },
+   {
+    "id": "en-f149",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Reino Unido, EUA, Austrália, Índia etc.",
+    "motivo": "De origem britânica, mas corrente também nos EUA."
+   },
+   {
+    "id": "en-f150",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f151",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Canadá, Reino Unido, Austrália",
+    "motivo": "Americana de origem, hoje corrente também no Reino Unido e na Austrália."
+   },
+   {
+    "id": "en-f152",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão do golfe conhecida em todas as variedades."
+   },
+   {
+    "id": "en-f160",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f161",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula conhecida em toda parte."
+   },
+   {
+    "id": "en-f163",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f164",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f167",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Fórmula corrente em todas as variedades."
+   },
+   {
+    "id": "en-f168",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f169",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f170",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f171",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Canadá; jargão de escritório também no Reino Unido, Austrália e Índia",
+    "motivo": "Americana, mas difundida e entendida no inglês corporativo de toda parte."
+   },
+   {
+    "id": "en-f172",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Canadá; conhecida no Reino Unido e na Austrália",
+    "motivo": "Americana de origem, mas reconhecida e usada na maioria dos outros países."
+   },
+   {
+    "id": "en-f173",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA; no Reino Unido e Austrália «rub up the wrong way»",
+    "motivo": "Varia só a preposição; britânicos e australianos a reconhecem."
+   },
+   {
+    "id": "en-f176",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em toda parte."
+   },
+   {
+    "id": "en-f177",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f178",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f179",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Fórmula corrente em todas as variedades."
+   },
+   {
+    "id": "en-f180",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f181",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em toda parte."
+   },
+   {
+    "id": "en-f183",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f185",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-f186",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula de mesa universal."
+   },
+   {
+    "id": "en-f187",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum e literal."
+   },
+   {
+    "id": "en-f188",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em todas as variedades."
+   },
+   {
+    "id": "en-u135",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase literal, com piada conhecida em toda parte."
+   },
+   {
+    "id": "en-f196",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-f198",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum e literal."
+   },
+   {
+    "id": "en-f201",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase feita universal."
+   },
+   {
+    "id": "en-f202",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase feita universal."
+   },
+   {
+    "id": "en-f203",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-f204",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-f205",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-f206",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em toda parte."
+   },
+   {
+    "id": "en-f207",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Pergunta comum."
+   },
+   {
+    "id": "en-f208",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Despedida universal."
+   },
+   {
+    "id": "en-f209",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f210",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f211",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f212",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f213",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f214",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f215",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f216",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f217",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f223",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-u155",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f236",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f238",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Reino Unido, Austrália, Nova Zelândia, EUA, Canadá",
+    "motivo": "Mais britânica, mas corrente também nos EUA."
+   },
+   {
+    "id": "en-f240",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Pergunta comum."
+   },
+   {
+    "id": "en-f241",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f242",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Provérbio universal."
+   },
+   {
+    "id": "en-f243",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f244",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f245",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f246",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Americana de origem, hoje corrente em toda parte."
+   },
+   {
+    "id": "en-f247",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum e literal."
+   },
+   {
+    "id": "en-f248",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase feita universal."
+   },
+   {
+    "id": "en-f249",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-f250",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f251",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f252",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Canadá, Reino Unido, Austrália",
+    "motivo": "Americana de origem, mas reconhecida nos demais (o britânico também diz «through the net»)."
+   },
+   {
+    "id": "en-f253",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f254",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f255",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal; só a grafia varia (gray/grey)."
+   },
+   {
+    "id": "en-f282",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum, com adjetivo de uso geral."
+   },
+   {
+    "id": "en-f284",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Canadá; jargão corporativo também no Reino Unido, Austrália e Índia",
+    "motivo": "Jargão americano de escritório, mas difundido e entendido em toda parte."
+   },
+   {
+    "id": "en-f285",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Recente, mas já difundida e entendida em todas as variedades."
+   },
+   {
+    "id": "en-f286",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Coloquial geral."
+   },
+   {
+    "id": "en-f287",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f288",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase feita universal."
+   },
+   {
+    "id": "en-f289",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f297",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Pergunta comum de compra."
+   },
+   {
+    "id": "en-f298",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Pergunta comum e literal."
+   },
+   {
+    "id": "en-f299",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Pergunta comum e literal."
+   },
+   {
+    "id": "en-f300",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum de compra."
+   },
+   {
+    "id": "en-f301",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f302",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em toda parte."
+   },
+   {
+    "id": "en-f303",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em toda parte."
+   },
+   {
+    "id": "en-f304",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f305",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f306",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f307",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em toda parte."
+   },
+   {
+    "id": "en-f308",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f309",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em todas as variedades."
+   },
+   {
+    "id": "en-f310",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-f311",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f312",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f313",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f314",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f315",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f316",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f317",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f318",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f319",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f320",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula formal universal."
+   },
+   {
+    "id": "en-f321",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA (for), Reino Unido (to); demais",
+    "motivo": "Reconhecida em toda parte; só a preposição varia."
+   },
+   {
+    "id": "en-f322",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula formal universal."
+   },
+   {
+    "id": "en-f323",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula formal universal."
+   },
+   {
+    "id": "en-f324",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f325",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula formal universal."
+   },
+   {
+    "id": "en-f326",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Pergunta básica e literal."
+   },
+   {
+    "id": "en-f327",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum de restaurante."
+   },
+   {
+    "id": "en-f328",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Canadá; entendida no Reino Unido e na Austrália (lá «takeaway»)",
+    "motivo": "Fórmula americana, mas um britânico ou australiano a entende de pronto."
+   },
+   {
+    "id": "en-f329",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum e literal."
+   },
+   {
+    "id": "en-f330",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f331",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-f332",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em todas as variedades."
+   },
+   {
+    "id": "en-f333",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f334",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em toda parte."
+   },
+   {
+    "id": "en-f335",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula corrente em todas as variedades."
+   },
+   {
+    "id": "en-f336",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-f337",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-f338",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f339",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA, Reino Unido, Austrália, Canadá",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f340",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f341",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão corrente em todas as variedades."
+   },
+   {
+    "id": "en-f342",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA (of), Reino Unido (in); demais",
+    "motivo": "Reconhecida em toda parte; só a preposição varia."
+   },
+   {
+    "id": "en-f343",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão conhecida em todas as variedades."
+   },
+   {
+    "id": "en-f344",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Reino Unido, Irlanda, Austrália, Índia, EUA (imprensa)",
+    "motivo": "Mais britânica, mas corrente no registro escrito americano."
+   },
+   {
+    "id": "en-f345",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula formal conhecida em toda parte."
+   },
+   {
+    "id": "en-f346",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula formal universal."
+   },
+   {
+    "id": "en-f347",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-f348",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão conhecida em todas as variedades."
+   },
+   {
+    "id": "en-f349",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Conhecida em toda parte, com nuance de sentido entre EUA e Reino Unido."
+   },
+   {
+    "id": "en-f350",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "EUA (in stride), Reino Unido (in his stride)",
+    "motivo": "Reconhecida em toda parte; só o possessivo varia."
+   },
+   {
+    "id": "en-u255",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-u259",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "«Not a soul» é universal."
+   },
+   {
+    "id": "en-u271",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Reino Unido, Irlanda, Austrália, EUA",
+    "motivo": "Provérbio conhecido em toda parte, embora antigo."
+   },
+   {
+    "id": "en-u285",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "en-u349",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula de lápide e obituário universal."
+   },
+   {
+    "id": "en-b014",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   },
+   {
+    "id": "en-b033",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "en-b038",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todo o mundo anglófono",
+    "motivo": "Frase comum."
+   }
+  ]
+ },
+ {
+  "lingua": "pt",
+  "cards": [
+   {
+    "id": "pt-b008",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Fórmula de apresentação comum a toda a lusofonia."
+   },
+   {
+    "id": "pt-b012",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Resposta padrão ao agradecimento em toda parte."
+   },
+   {
+    "id": "pt-b014",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Fórmula de cortesia universal no português."
+   },
+   {
+    "id": "pt-b031",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Fórmula fixa usada no Brasil, em Portugal e na África."
+   },
+   {
+    "id": "pt-b039",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Brasil; «passar mal» é corrente e entendido em Portugal e na África",
+    "motivo": "Só o gerúndio é brasileiro; a locução «passar mal» é conhecida em todos os países."
+   },
+   {
+    "id": "pt-u036",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase comum e literal, usada em toda parte."
+   },
+   {
+    "id": "pt-u041",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "«Querer dizer» é português geral."
+   },
+   {
+    "id": "pt-u050",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Brasil e Portugal, entendido em toda parte",
+    "motivo": "«Não dá tempo» é corrente também em Portugal."
+   },
+   {
+    "id": "pt-u063",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u083",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Brasil; entendido em todos os outros",
+    "motivo": "Frase comum; Portugal prefere «há muito tempo», mas entende sem dificuldade."
+   },
+   {
+    "id": "pt-u094",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u096",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "«Que bom» é geral; só o «você» é mais brasileiro, sem afetar a compreensão."
+   },
+   {
+    "id": "pt-u097",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase feita universal."
+   },
+   {
+    "id": "pt-u104",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Pergunta comum em toda parte."
+   },
+   {
+    "id": "pt-u110",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u114",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u127",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "«Chega de…» é corrente no Brasil, em Portugal e na África."
+   },
+   {
+    "id": "pt-u133",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Brasil; entendido em Portugal e na África",
+    "motivo": "Frase comum; «todo mundo» é entendido onde se diz «toda a gente»."
+   },
+   {
+    "id": "pt-u144",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "«Dar trabalho» é locução geral do português."
+   },
+   {
+    "id": "pt-u214",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u222",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "«Está na hora de» é geral."
+   },
+   {
+    "id": "pt-u228",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Brasil; entendido em toda parte",
+    "motivo": "Frase comum; só a regência é mais brasileira."
+   },
+   {
+    "id": "pt-u245",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "«Volto já» é geral, inclusive em Portugal."
+   },
+   {
+    "id": "pt-u283",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Brasil e Portugal («não ligo nenhuma»), entendido na África",
+    "motivo": "«Não ligar para/a» é conhecido em toda a lusofonia."
+   },
+   {
+    "id": "pt-u292",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "só no Brasil; Portugal diz «que fixe!»",
+    "motivo": "A graça é a gíria brasileira «legal» (= bacana)."
+   },
+   {
+    "id": "pt-u293",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "só no Brasil; Portugal diz «gajo» e «fixe»",
+    "motivo": "Sustentada nas gírias brasileiras «cara» e «legal»."
+   },
+   {
+    "id": "pt-u404",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Pedido comum em toda parte."
+   },
+   {
+    "id": "pt-u405",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u407",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Metáfora comum e geral."
+   },
+   {
+    "id": "pt-u413",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Provérbio conhecido no Brasil, em Portugal e na África."
+   },
+   {
+    "id": "pt-u414",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Brasil; entendido em toda parte",
+    "motivo": "Frase comum; Portugal prefere «não há problema», mas entende."
+   },
+   {
+    "id": "pt-u419",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Brasil e Angola; Portugal diz «Parabéns!» mas entende",
+    "motivo": "Fórmula conhecida em toda a lusofonia."
+   },
+   {
+    "id": "pt-u436",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Brasil; entendido em toda parte",
+    "motivo": "Frase comum; Portugal diz «não há pressa», mas entende."
+   },
+   {
+    "id": "pt-u445",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u446",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Construção gramatical geral."
+   },
+   {
+    "id": "pt-u454",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "«Na verdade» é geral."
+   },
+   {
+    "id": "pt-u503",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u505",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "«A semana que vem» é geral."
+   },
+   {
+    "id": "pt-u515",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u527",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u533",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u546",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u604",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "Brasil e Portugal, entendido na África",
+    "motivo": "«Espera aí!» é corrente também em Portugal."
+   },
+   {
+    "id": "pt-u606",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Frase literal comum."
+   },
+   {
+    "id": "pt-u626",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Brasil; entendido em Portugal e na África",
+    "motivo": "Frase comum; Portugal diz mais «faltou a luz», mas entende."
+   },
+   {
+    "id": "pt-u629",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "só no Brasil; Portugal diz «gajo»",
+    "motivo": "A frase se apoia na gíria brasileira «cara» (= sujeito)."
+   },
+   {
+    "id": "pt-u630",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "só no Brasil",
+    "motivo": "Junta duas gírias brasileiras, «cara» e «legal»."
+   },
+   {
+    "id": "pt-u637",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "todos os países lusófonos",
+    "motivo": "Diminutivo e pedido comuns em toda parte."
+   },
+   {
+    "id": "pt-u643",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "Brasil; entendido em Portugal («tem cuidado») e na África",
+    "motivo": "«Tomar cuidado» é português geral."
+   }
+  ]
+ },
+ {
+  "lingua": "fr",
+  "cards": [
+   {
+    "id": "fr-b003",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Cumprimento informal corrente em todos os países francófonos, não é gíria local."
+   },
+   {
+    "id": "fr-u027",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "França, Bélgica, Suíça, Quebec, África",
+    "motivo": "«Boire/prendre un verre» é universal na francofonia."
+   },
+   {
+    "id": "fr-u090",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Frase comum de advertência, usada em toda parte."
+   },
+   {
+    "id": "fr-u115",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "França, Bélgica, Suíça, África; entendida no Quebec",
+    "motivo": "Fórmula de aceitar educada, de francês padrão, reconhecida em todos os países."
+   },
+   {
+    "id": "fr-u117",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Uso corrente e transparente de «voir» como entender, em todo lugar."
+   },
+   {
+    "id": "fr-u120",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Locução adverbial padrão, universal."
+   },
+   {
+    "id": "fr-u127",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Fórmula universal."
+   },
+   {
+    "id": "fr-u137",
+    "ehExpressao": false,
+    "veredito": "fica",
+    "onde": "toda a francofonia (muito usada também no Quebec)",
+    "motivo": "Construção comum e universal."
+   },
+   {
+    "id": "fr-u155",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "França, Bélgica, Suíça, Quebec, África",
+    "motivo": "«Coup de main» é conhecido e usado em toda a francofonia."
+   },
+   {
+    "id": "fr-u189",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Resposta corrente de quem foi chamado, em todos os países."
+   },
+   {
+    "id": "fr-u199",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Hipérbole universal."
+   },
+   {
+    "id": "fr-u200",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Cumprimento de reencontro usado em todos os países."
+   },
+   {
+    "id": "fr-u211",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "França, Bélgica, Suíça, África; conhecida no Quebec (onde se diz também «bouder»)",
+    "motivo": "Expressão de francês geral, reconhecida pela maioria dos falantes fora da França."
+   },
+   {
+    "id": "fr-u276",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Frase feita universal."
+   },
+   {
+    "id": "fr-u321",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "França, Bélgica, Suíça, África; entendida no Quebec",
+    "motivo": "«Coup de fil» é francês geral, conhecido na maioria dos países."
+   },
+   {
+    "id": "fr-u327",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Cumprimento informal universal."
+   },
+   {
+    "id": "fr-u333",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia (e além)",
+    "motivo": "Expressão universal."
+   },
+   {
+    "id": "fr-u365",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Exclamação comum em todos os países."
+   },
+   {
+    "id": "fr-u481",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Resposta enfática de francês padrão, entendida em todo lugar."
+   },
+   {
+    "id": "fr-u487",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Locução padrão, universal."
+   },
+   {
+    "id": "fr-u561",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia",
+    "motivo": "Exagero transparente, entendido em todos os países."
+   },
+   {
+    "id": "fr-u567",
+    "ehExpressao": true,
+    "veredito": "sai",
+    "onde": "sobretudo França e Bélgica",
+    "motivo": "«Prendre un pot» é coloquial da França; no Quebec não se usa («pot» lá é maconha) e na África é pouco corrente; «boire un verre» já cobre o sentido."
+   },
+   {
+    "id": "fr-u569",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "França, Bélgica, Suíça, África (onde «gérer» é muito usado); transparente no Quebec",
+    "motivo": "Uso coloquial de verbo padrão, entendido sem esforço na maioria dos países."
+   },
+   {
+    "id": "fr-u606",
+    "ehExpressao": true,
+    "veredito": "fica",
+    "onde": "toda a francofonia, sobretudo na imprensa",
+    "motivo": "Expressão de francês padrão, conhecida em todos os países."
+   }
+  ]
+ }
+]

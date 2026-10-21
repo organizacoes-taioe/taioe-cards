@@ -72,10 +72,22 @@ ela não é do card: é do motor ou da leva inteira.
   gíria só da Espanha leva a etiqueta `Espanha`.
 - **O mais universal primeiro** (decisão do Gere, 07/10/2026). Entre duas
   formas, o card ensina a que é entendida em todo o mundo da língua, e as
-  outras entram nas aceitas com o lugar (seção 5.2). Expressão que só se usa
+  outras entram nas aceitas com o lugar (seção 5.2). Palavra que só se usa
   num país (no espanhol, só na Espanha: «vale», «molar», «currar»; no inglês,
   só britânica ou só americana) vira card **raramente**, e só quando for muito
   frequente lá; leva a etiqueta do lugar (`Espanha`).
+- **Expressão, só a universal** (decisão do Gere, 20/10/2026). Frase que é
+  expressão, gíria ou provérbio só entra se for corrente no país de referência
+  (Espanha, Estados Unidos, Brasil, França) **e** na maioria dos outros países
+  da língua; não precisa ser de todos. Expressão que só se conhece no país de
+  referência — ou que não é dele, como a só britânica no inglês — não vira
+  card, nem com etiqueta. O teste: um mexicano ou um argentino reconhece? (no
+  inglês, um britânico ou um australiano; no português, um português; no
+  francês, um belga ou um quebequense). Em 20/10 saíram por essa regra 43
+  cards do espanhol («Estar en el quinto pino», «¡Qué guay!», «Me pilla de
+  camino»), 4 do português («Que legal!», «Quem é esse cara?») e 1 do francês
+  («On prend un pot ?»); o julgamento card a card está em
+  `fonte/julgamento-expressoes-2026-10-20.json`.
 - **Nada que ofenda em algum lugar** (decisão do Gere, 07/10/2026). Nenhum
   palavrão nem expressão chula («ni de coña», «me cago en…»), e nenhuma palavra
   que seja grosseira ou de duplo sentido em algum país da língua («coger»,
@@ -749,6 +761,7 @@ sem ele o navegador serve o baralho velho.
 | O `pt` que não diz o tratamento aceita tú e usted | `u014` «Deje la propina en la mesa», recusado no «quase» sem estar errado |
 | A forma padrão ao lado do leísmo | `f031` «Lo puso verde», recusado duas vezes no «quase» sem estar errado |
 | Recusa que também vai para a nota | `f077` «de acuerdo» sozinho é «combinado»; `f046` o «lo» de «de haberlo sabido» |
+| Expressão só do país de referência sai, mesmo em jogo | 20/10/2026: 48 cards, de `f014` «el quinto pino» a `fr-u567` «prendre un pot»; alguns ids acima são desses cards e ficam só como história |
 
 ---
 
