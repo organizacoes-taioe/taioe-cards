@@ -88,7 +88,7 @@ window.TaioeCardsApp = function (ctx) {
   const $ = s => document.querySelector(s);
   const el = {};
   [
-    'placar', 'btn-inicio', 'btn-cards', 'btn-painel', 'btn-config', 'resumo-inicio', 'btn-comecar',
+    'placar', 'btn-menu', 'menu-topo', 'btn-inicio', 'btn-cards', 'btn-painel', 'btn-config', 'resumo-inicio', 'btn-comecar',
     'tela-inicio', 'tela-card', 'tela-painel', 'tela-config', 'tela-cards',
     'busca-cards', 'filtro-tipo', 'filtro-nivel', 'filtro-tag', 'filtro-estado',
     'contagem-cards', 'lista-cards',
@@ -586,6 +586,34 @@ window.TaioeCardsApp = function (ctx) {
 
   /* ═══════════════ telas ═══════════════ */
 
+  /* ── o menu do topo ──
+     Os cinco destinos ficam num painel que desce do botão do canto (ideia do
+     Gere, 21/10/2026): com ícone e nome, ninguém precisa adivinhar o que é
+     cada um. Escolher um item, tocar fora, o Esc ou trocar de tela fecham. */
+  function menuAberto() { return !el['menu-topo'].hidden; }
+  function abrirMenu() {
+    el['menu-topo'].hidden = false;
+    el['btn-menu'].setAttribute('aria-expanded', 'true');
+  }
+  function fecharMenu(devolverFocoAoBotao) {
+    if (!menuAberto()) return;
+    el['menu-topo'].hidden = true;
+    el['btn-menu'].setAttribute('aria-expanded', 'false');
+    if (devolverFocoAoBotao) el['btn-menu'].focus({ preventScroll: true });
+  }
+  el['btn-menu'].addEventListener('click', () => (menuAberto() ? fecharMenu() : abrirMenu()));
+  el['menu-topo'].addEventListener('click', e => { if (e.target.closest('.item-menu')) fecharMenu(); });
+  document.addEventListener('pointerdown', e => {
+    if (menuAberto() && !e.target.closest('.acoes-topo')) fecharMenu();
+  });
+  /* Com o menu aberto, as teclas são dele: o Esc fecha, e o Enter num item
+     não pode também avançar o card que está atrás. */
+  document.addEventListener('keydown', e => {
+    if (!menuAberto()) return;
+    if (e.key === 'Escape') { e.preventDefault(); fecharMenu(true); }
+    e.stopPropagation();
+  }, true);
+
   /* Qual botão do topo corresponde a cada tela. A de card não tem botão:
      ela é para onde o «começar» leva, não um destino do menu. */
   const BOTAO_DA_TELA = {
@@ -595,6 +623,7 @@ window.TaioeCardsApp = function (ctx) {
   };
 
   function mostrar(tela) {
+    fecharMenu();
     ['tela-inicio', 'tela-comeco', 'tela-card', 'tela-painel', 'tela-config', 'tela-cards', 'tela-texto']
       .forEach(t => el[t].classList.toggle('oculto', t !== tela));
     el.dica.hidden = true;
@@ -982,9 +1011,12 @@ window.TaioeCardsApp = function (ctx) {
 
     mostrar('tela-card');
     /* O foco no campo espera a subida acabar: focar antes faz o navegador
-       rolar até o campo por conta própria, e as duas rolagens brigam. */
+       rolar até o campo por conta própria, e as duas rolagens brigam. A
+       subida interrompida (um toque, a roda do mouse) também foca: antes o
+       foco só vinha no fim dela, e o card abria sem foco nenhum — o Gere
+       digitava à toa (21/10/2026). */
     voltarAoTopo(() => {
-      if (modoAtual === 'escrita' && cardAtual) el.entrada.focus({ preventScroll: true });
+      if (esperandoEscrita() && !ehCampo(document.activeElement)) el.entrada.focus({ preventScroll: true });
     });
 
     inicioResposta = performance.now();
@@ -1365,6 +1397,8 @@ window.TaioeCardsApp = function (ctx) {
     if (rolagemAtual) rolagemAtual.parar();
     const esperarTeclado = !!(opcoes && opcoes.esperarTeclado);
     const subida = !!(opcoes && opcoes.subida);
+    /* «aoTerminar» roda também quando a rolagem é interrompida */
+    const sempre = !!(opcoes && opcoes.sempre);
     const ESPERA_TECLADO = 500;   // ms: se ele não fechar nisso, desce assim mesmo
     const raiz = document.documentElement;
     const chao = el['area-feedback'];
@@ -1406,7 +1440,7 @@ window.TaioeCardsApp = function (ctx) {
         chao.style.paddingBottom = (pad - tirar) ? (pad - tirar) + 'px' : '';
       }
       if (rolagemAtual === controle) rolagemAtual = null;
-      if (concluiu && aoTerminar) aoTerminar();
+      if ((concluiu || sempre) && aoTerminar) aoTerminar();
     }
 
     /* Leva a tela até «y». Descer além do fim da página precisa de chão:
@@ -1492,7 +1526,7 @@ window.TaioeCardsApp = function (ctx) {
     rolarSuave(() => -window.scrollY, () => {
       el['tela-card'].style.minHeight = '';
       if (aoTerminar) aoTerminar();
-    }, { subida: true });
+    }, { subida: true, sempre: true });
   }
 
   function mostrarVeredito(r) {
@@ -2659,7 +2693,8 @@ window.TaioeCardsApp = function (ctx) {
      cai lá. Enter e Tab seguem com o botão, para quem navega pelo teclado. */
   function esperandoEscrita() {
     return modoAtual === 'escrita' && !!cardAtual && !respostaPendente && !el.entrada.disabled &&
-      !el['tela-card'].classList.contains('oculto') && el['comentario-fundo'].classList.contains('oculto');
+      !el['tela-card'].classList.contains('oculto') && el['comentario-fundo'].classList.contains('oculto') &&
+      el['menu-topo'].hidden;
   }
   function ehCampo(n) {
     return !!n && (n.tagName === 'INPUT' || n.tagName === 'TEXTAREA' || n.tagName === 'SELECT' || n.isContentEditable);

@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#12141c">
 <title>Taioé Cards</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇪🇸</text></svg>">
-<link rel="stylesheet" href="style.css?v=3384eb3d">
+<link rel="stylesheet" href="style.css?v=6283c864">
 </head>
 <body>
 
@@ -15,44 +15,59 @@
   <a class="marca" href="/" title="Taioé" data-i18n-attr="title:topo.marca">Taioé</a>
   <div class="placar" id="placar"></div>
   <!-- Ícones de traço, herdando a cor da paleta: emoji trazem cor própria e
-       brigavam com o verde-noite. O de «todos os cards» é a própria pilha. -->
+       brigavam com o verde-noite. O de «todos os cards» é a própria pilha.
+       Desde 21/10/2026 os destinos ficam num menu (ideia do Gere): o ícone
+       sozinho obrigava a adivinhar, e no menu cada um tem o seu nome. -->
   <nav class="acoes-topo">
-    <button class="icone" id="btn-inicio" data-i18n-attr="title:topo.inicio;aria-label:topo.inicio">
+    <button class="icone" id="btn-menu" aria-haspopup="true" aria-expanded="false" aria-controls="menu-topo"
+            data-i18n-attr="title:topo.menu;aria-label:topo.menu">
       <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M3.6 10.7 12 4.2l8.4 6.5"/>
-        <path d="M6.2 9.6V19.8h11.6V9.6"/>
-        <path d="M10 19.8v-4.6h4v4.6"/>
+        <path d="M4.5 7h15"/><path d="M4.5 12h15"/><path d="M4.5 17h15"/>
       </svg>
     </button>
-    <button class="icone" id="btn-painel" data-i18n-attr="title:topo.painel;aria-label:topo.painel">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M3.6 17.6h16.8"/>
-        <path d="M7.4 17.6v-5.6"/>
-        <path d="M12 17.6V6.4"/>
-        <path d="M16.6 17.6v-8.2"/>
-      </svg>
-    </button>
-    <button class="icone" id="btn-cards" data-i18n-attr="title:topo.cards;aria-label:topo.cards">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="8.2" y="3.4" width="12.4" height="12.4" rx="2.4"/>
-        <path d="M15.8 20.6H5.8a2.4 2.4 0 0 1-2.4-2.4V8.2"/>
-      </svg>
-    </button>
-    <button class="icone" id="btn-texto" data-i18n-attr="title:topo.textos;aria-label:topo.textos">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 6.4C9.8 4.9 6.9 4.6 4 5v13c2.9-.4 5.8-.1 8 1.4"/>
-        <path d="M12 6.4c2.2-1.5 5.1-1.8 8-1.4v13c-2.9-.4-5.8-.1-8 1.4"/>
-        <path d="M12 6.4v13"/>
-      </svg>
-    </button>
-    <button class="icone" id="btn-config" data-i18n-attr="title:topo.config;aria-label:topo.config">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4 7.2h16"/><path d="M4 12h16"/><path d="M4 16.8h16"/>
-        <circle cx="9.2" cy="7.2" r="2.3"/>
-        <circle cx="15" cy="12" r="2.3"/>
-        <circle cx="8.2" cy="16.8" r="2.3"/>
-      </svg>
-    </button>
+    <div class="menu-topo" id="menu-topo" role="menu" hidden>
+      <button class="item-menu" id="btn-inicio" role="menuitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3.6 10.7 12 4.2l8.4 6.5"/>
+          <path d="M6.2 9.6V19.8h11.6V9.6"/>
+          <path d="M10 19.8v-4.6h4v4.6"/>
+        </svg>
+        <span data-i18n="topo.inicio"></span>
+      </button>
+      <button class="item-menu" id="btn-painel" role="menuitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3.6 17.6h16.8"/>
+          <path d="M7.4 17.6v-5.6"/>
+          <path d="M12 17.6V6.4"/>
+          <path d="M16.6 17.6v-8.2"/>
+        </svg>
+        <span data-i18n="topo.painel"></span>
+      </button>
+      <button class="item-menu" id="btn-cards" role="menuitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="8.2" y="3.4" width="12.4" height="12.4" rx="2.4"/>
+          <path d="M15.8 20.6H5.8a2.4 2.4 0 0 1-2.4-2.4V8.2"/>
+        </svg>
+        <span data-i18n="topo.cards"></span>
+      </button>
+      <button class="item-menu" id="btn-texto" role="menuitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 6.4C9.8 4.9 6.9 4.6 4 5v13c2.9-.4 5.8-.1 8 1.4"/>
+          <path d="M12 6.4c2.2-1.5 5.1-1.8 8-1.4v13c-2.9-.4-5.8-.1-8 1.4"/>
+          <path d="M12 6.4v13"/>
+        </svg>
+        <span data-i18n="topo.textos"></span>
+      </button>
+      <button class="item-menu" id="btn-config" role="menuitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7.2h16"/><path d="M4 12h16"/><path d="M4 16.8h16"/>
+          <circle cx="9.2" cy="7.2" r="2.3"/>
+          <circle cx="15" cy="12" r="2.3"/>
+          <circle cx="8.2" cy="16.8" r="2.3"/>
+        </svg>
+        <span data-i18n="topo.config"></span>
+      </button>
+    </div>
   </nav>
 </header>
 
@@ -362,7 +377,7 @@
   <span id="rodape-sync">•</span>
 </footer>
 
-<script src="js/textos-i18n.js?v=8b607441"></script>
+<script src="js/textos-i18n.js?v=c0565beb"></script>
 <script src="js/i18n.js?v=a99747e0"></script>
 <script src="vendor/supabase-js-2.117.2.js?v=16aeff36"></script>
 <script src="js/taioe-sessao.js?v=4c9cdaf3"></script>
@@ -371,7 +386,7 @@
 <script src="js/motor.js?v=eff7fd8f"></script>
 <script src="js/armazem.js?v=131120d0"></script>
 <script src="js/sincronia.js?v=490291ca"></script>
-<script src="js/app.js?v=2677b3e1"></script>
+<script src="js/app.js?v=ee2d7a1b"></script>
 <script src="js/inicio.js?v=a841a37d"></script>
 </body>
 </html>
