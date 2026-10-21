@@ -578,16 +578,19 @@ window.TaioeCardsApp = function (ctx) {
   /* ── a ordem do modo trilhas (cards/LATIM.md §5) ──
      Na frente, até duas frases recém-destravadas (trecho de texto ou frase de uso). Depois,
      duas estreias do texto zero para uma dos textos escolhidos: no texto zero, frase a frase,
-     os conceitos que ela pede, ela (é livre) e as palavras dela; nos textos, as palavras na
-     ordem de leitura, em rodízio, cada uma depois dos conceitos do primeiro trecho em que
-     aparece. As outras frases destravadas entram uma a cada duas estreias. Nada de avulsa nem
+     ela (é livre) e as palavras dela; nos textos, as palavras na ordem de leitura, em rodízio.
+     A palavra que os dois pedem vem pelo texto escolhido («pater» está no Glória e na 36ª frase
+     inicial). As outras frases destravadas entram uma a cada duas estreias. Nada de avulsa nem
      de sorteio por nível: tudo sai dos textos.
      A fila se refaz a cada estreia, então nada que entra «um a cada dois» tem lugar fixo nela
      (ficaria sempre em terceiro e nunca chegaria à frente): conta-se quantas estreias houve
-     desde a última daquele tipo, e a próxima entra quando chega a vez dela. A estreia de um
-     conceito não conta: ele vem colado à palavra ou à frase que o pede. */
+     desde a última daquele tipo, e a próxima entra quando chega a vez dela.
+     O conceito entra por último, já com a ordem feita: logo antes do primeiro card que o pede
+     (a frase, pelos «conceitos» dela; a palavra do texto, pelos do primeiro trecho em que ela
+     aparece). A estreia de um conceito não conta na alternância. */
   function ordenarTrilhas(p) {
     const CADA = 2;
+    const ehConceito = id => (PORID[id] || {}).tipo === 'conceito';
     const pendentes = new Set(p.ineditos), postos = new Set();
     const pega = id => (pendentes.has(id) && !postos.has(id) ? (postos.add(id), [id]) : []);
     const ehPresa = id => { const c = PORID[id] || {}; return c.tipo === 'frase' && Motor.requeridas(c).length > 0; };
@@ -600,35 +603,40 @@ window.TaioeCardsApp = function (ctx) {
     presas.forEach(id => postos.add(id));
     const ativos = textosAtivosDe(p);
     const ativosIds = new Set(ativos.map(x => x.id));
-    const conceitosDe = id => {
+    const conceitosDaPalavra = id => {
       const tr = TRECHOS.find(c => ativosIds.has(c.texto) && (c.requerTodas || []).indexOf(id) >= 0);
       return (tr && tr.conceitos) || [];
     };
-    /* Cada palavra dos textos com os conceitos que vêm antes dela: um bloco só. Os textos
-       escolhidos passam na frente do texto zero: a palavra que os dois pedem («pater», no
-       Glória e na 36ª frase inicial) vem na ordem de leitura do texto, e não lá no fim. */
     const dosTextos = [];
     for (const id of Motor.palavrasDosTextos(ativos, p.cards, p.arquivados || {})) {
-      const bloco = [];
-      conceitosDe(id).forEach(g => bloco.push(...pega(g)));
-      bloco.push(...pega(id));
+      const bloco = pega(id);
       if (bloco.length) dosTextos.push(bloco);
     }
     const zero = [];
     for (const f of TZ_FRASES) {
-      (f.conceitos || []).forEach(g => zero.push(...pega(g)));
       zero.push(...pega(f.id));
       (f.palavras || []).forEach(x => { if (x.c) zero.push(...pega(x.c)); });
     }
-    const resto = p.ineditos.filter(id => !postos.has(id));
-    const estreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined && (PORID[id] || {}).tipo !== 'conceito')
+    const resto = p.ineditos.filter(id => !postos.has(id) && !ehConceito(id));
+    const estreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined && !ehConceito(id))
       .sort((x, y) => p.cards[y].estreouNa - p.cards[x].estreouNa);
     const desde = teste => { let n = 0; while (n < estreias.length && !teste(estreias[n])) n++; return n; };
     const palavrasDosTextos = new Set(ativos.flatMap(x => Motor.requeridas(x)));
     let fila = zero.concat(resto);
     if (dosTextos.length) fila = naVez(fila, dosTextos, desde(id => palavrasDosTextos.has(id)), CADA);
     if (antigas.length) fila = naVez(fila, antigas, desde(ehPresa), CADA);
-    p.ineditos = frescas.concat(fila);
+    fila = frescas.concat(fila);
+    /* os conceitos, cada um antes do primeiro card que o pede; o que nenhum pede vai no fim */
+    const pede = id => {
+      const c = PORID[id] || {};
+      return c.tipo === 'palavra' ? (palavrasDosTextos.has(id) ? conceitosDaPalavra(id) : []) : (c.conceitos || []);
+    };
+    const saida = [];
+    for (const id of fila) {
+      pede(id).forEach(g => saida.push(...pega(g)));
+      saida.push(id);
+    }
+    p.ineditos = saida.concat(p.ineditos.filter(id => ehConceito(id) && !postos.has(id)));
   }
 
   /* Os blocos de «poucos» entram um a cada «cada» cards de «muitos», e o primeiro já depois
