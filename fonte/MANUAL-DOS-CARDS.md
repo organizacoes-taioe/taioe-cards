@@ -83,11 +83,17 @@ ela não é do card: é do motor ou da leva inteira.
   referência — ou que não é dele, como a só britânica no inglês — não vira
   card, nem com etiqueta. O teste: um mexicano ou um argentino reconhece? (no
   inglês, um britânico ou um australiano; no português, um português; no
-  francês, um belga ou um quebequense). Em 20/10 saíram por essa regra 43
-  cards do espanhol («Estar en el quinto pino», «¡Qué guay!», «Me pilla de
-  camino»), 4 do português («Que legal!», «Quem é esse cara?») e 1 do francês
-  («On prend un pot ?»); o julgamento card a card está em
-  `fonte/julgamento-expressoes-2026-10-20.json`. **A expressão que sai leva
+  francês, um belga ou um quebequense). Em 20/10 saíram por essa regra 28
+  cards do espanhol («Estar en el quinto pino», «Me pilla de camino», «Le dio
+  calabazas») e 1 do francês («On prend un pot ?»); o julgamento card a card
+  está em `fonte/julgamento-expressoes-2026-10-20.json`.
+- **A gíria do país de referência fica** (decisão do Gere, 21/10/2026). A
+  regra acima é da frase feita, e não da palavra: a gíria que já tem card
+  («guay», «currar», «majo», «el chollo»; no português, «legal» e «o cara»)
+  continua, com a etiqueta do lugar, e as frases dela também, inclusive a
+  exclamação curta que é só a gíria em uso («¡Qué guay!», «Que legal!»). Por
+  isso voltaram em 21/10 as 19 frases dessas palavras que tinham saído em
+  20/10 (15 do espanhol, 4 do português), com os mesmos ids. **A expressão que sai leva
   junto o que dependia dela**: a nota das palavras que a citam (em todos os
   baralhos, inclusive a `notaEs` do inglês e do francês), o sentido que só ela
   dava às `aceitas` da palavra («frito» = dormindo, «la pelota» = puxa-saco,
@@ -767,6 +773,7 @@ sem ele o navegador serve o baralho velho.
 | A forma padrão ao lado do leísmo | `f031` «Lo puso verde», recusado duas vezes no «quase» sem estar errado |
 | Recusa que também vai para a nota | `f077` «de acuerdo» sozinho é «combinado»; `f046` o «lo» de «de haberlo sabido» |
 | Expressão só do país de referência sai, mesmo em jogo | 20/10/2026: 48 cards, de `f014` «el quinto pino» a `fr-u567` «prendre un pot»; alguns ids acima são desses cards e ficam só como história |
+| A gíria do país de referência fica, com as frases dela | 21/10/2026: «todas ficam», sobre as 14 gírias da Espanha e «legal» e «o cara»; voltaram 19 frases, de `u023` majo a `pt-u630` «Cara, que legal!» |
 
 ---
 
