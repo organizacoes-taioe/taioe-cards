@@ -196,8 +196,9 @@ também são na ida.
   (sem isso a palavra do texto ficava sempre em terceiro e nunca chegava); a estreia de conceito não
   conta. Sem palavra avulsa e sem sorteio por nível: tudo sai dos textos e das primeiras frases. O
   trecho e a frase de uso esperam o dia seguinte ao domínio da última palavra, como nas outras línguas.
-- **A tela Textos** abre direto na primeira vez; «Começar» só com um texto marcado, e o último
-  marcado não sai (troca-se marcando outro antes). Texto terminado sai da escolha; sem nenhum, o app
+- **A tela Textos** abre direto na primeira vez; «Começar» só com um texto marcado (sem nenhum,
+  ele fica apagado e um aviso pede um texto). A caixa marcada nunca se desativa: desativada, ela
+  ficava cinza e parecia pular de cor a cada clique (o Gere apontou, 21/10). Texto terminado sai da escolha; sem nenhum, o app
   volta à escolha.
 - **Ritmo**: o do motor de hoje (até 50 em jogo, pelo menos um novo a cada três, 6 respostas entre
   duas aparições), com a meta da ida, já que só há ida. Antes de publicar, simular o motor no modo
