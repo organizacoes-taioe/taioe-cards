@@ -49,8 +49,10 @@ const Transp = require('./transparencia');
    baralho de espanhol responde em português e em inglês; o de inglês responde
    em português e em espanhol; o de português, em espanhol e em inglês. O
    porquê de cada decisão está em PLANO.md. */
-const IDIOMAS = ['es', 'en', 'pt', 'fr'];
-const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português', fr: 'francês' };
+/* O latim (21/10/2026, cards/LATIM.md) vem por último: assim a ordem de tudo o que já saía
+   não muda. */
+const IDIOMAS = ['es', 'en', 'pt', 'fr', 'la'];
+const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português', fr: 'francês', la: 'latim' };
 
 /* Cada língua tem o seu quarteto de campos. A do baralho é a que se cobra; as
    outras duas são as respostas, e cada uma leva os seus distratores e a sua
@@ -60,18 +62,19 @@ const CAMPOS_DA_LINGUA = {
   pt: { texto: 'pt', aceitas: 'aceitas',   distratores: 'distratores',   nota: 'nota',   formas: 'formasPt' },
   en: { texto: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', nota: 'notaEn', formas: 'formasEn' },
   es: { texto: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', nota: 'notaEs', formas: 'formasEs' },
-  fr: { texto: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', nota: 'notaFr', formas: 'formasFr' }
+  fr: { texto: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', nota: 'notaFr', formas: 'formasFr' },
+  la: { texto: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', nota: 'notaLa', formas: 'formasLa' }
 };
 
 /* De cada baralho, o público de origem: aquele em cuja língua o card é
    escrito e relido. É dele o rótulo que vai sem sufixo. */
-const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt' };
+const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt' };
 
 /* Quem estuda cada baralho. Os três primeiros servem às outras duas línguas
    da casa; o de francês (08/10/2026) serve às três — português, espanhol e
    inglês —, e por isso o card de francês traz os três quartetos inteiros. O
    francês não é língua de resposta de nenhum outro baralho. */
-const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'] };
+const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], la: ['pt'] };
 
 /* O que vem colado na frente da palavra e não faz parte dela: o artigo, e o
    «to» do infinitivo inglês. */
@@ -79,7 +82,8 @@ const ARTIGOS = {
   es: /^(el|la|los|las|un|una)\s+/,
   pt: /^(o|a|os|as|um|uma)\s+/,
   en: /^(the|a|an|to)\s+/,
-  fr: /^(le\s+|la\s+|les\s+|un\s+|une\s+|l['’])/
+  fr: /^(le\s+|la\s+|les\s+|un\s+|une\s+|l['’])/,
+  la: /^(?!)/
 };
 
 const audienciasDe = idioma => AUDIENCIAS[idioma];
@@ -131,6 +135,9 @@ for (const b of baralhos) {
     texto.requerTodas = [...new Set((texto.blocos || []).flat().flatMap(l => l.requer))];
     b.textos.push(texto);
   }
+  /* «ordem», quando há, é a ordem da lista na tela Textos (o latim: as orações primeiro); sem
+     ela, a dos arquivos */
+  b.textos.sort((x, y) => (typeof x.ordem === 'number' ? x.ordem : 1e9) - (typeof y.ordem === 'number' ? y.ordem : 1e9));
 }
 
 /* ── validação ──
@@ -317,6 +324,9 @@ function checarVariantes(c, onde) {
 
 for (const { idioma, cards } of baralhos) {
   const L = CAMPOS_DA_LINGUA[idioma];
+  /* o latim se confere no modo dele (só a ida, e o funil que não iguala plural nem tira o
+     pronome: ver usarModo no motor); os outros, no de sempre */
+  Motor.usarModo(idioma === 'la' ? 'trilhas' : 'livre');
   /* as línguas de quem estuda este baralho são as outras duas */
   const audiencias = audienciasDe(idioma);
   const textos = new Map();
@@ -370,7 +380,8 @@ for (const bruto of cards) {
   for (const campo of ['tipo', L.texto, 'nivel']) {
     if (typeof c[campo] !== 'string' || !c[campo].trim()) erros.push('falta "' + campo + '": ' + onde);
   }
-  if (!['palavra', 'frase'].includes(c.tipo)) erros.push('tipo inválido: ' + onde);
+  /* o card de conceito (cards/LATIM.md §3.5) só existe no latim */
+  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito'] : ['palavra', 'frase']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
   if (!NIVEIS.includes(c.nivel)) erros.push('nível inválido: ' + onde);
   if (!Array.isArray(c.tags) || !c.tags.length) erros.push('sem tags: ' + onde);
 
@@ -465,7 +476,8 @@ for (const bruto of cards) {
       continue;
     }
     if (typeof c[A.nota] !== 'string' || !c[A.nota].trim()) erros.push('falta "' + A.nota + '": ' + ondeA);
-    if (!Array.isArray(c[A.aceitas]) || !c[A.aceitas].length) erros.push('sem ' + A.aceitas + ': ' + ondeA);
+    /* a frase latina pode ter só o gabarito (cards/LATIM.md §4) */
+    if (!Array.isArray(c[A.aceitas]) || (!c[A.aceitas].length && !(idioma === 'la' && c.gabarito))) erros.push('sem ' + A.aceitas + ': ' + ondeA);
     if (!Array.isArray(c[A.distratores]) || c[A.distratores].length !== 4) {
       erros.push('precisa de exatamente 4 ' + A.distratores + ': ' + ondeA);
     }
@@ -511,6 +523,8 @@ for (const bruto of cards) {
 }
 }
 
+Motor.usarModo('livre');
+
 /* ── dicionário de temas ──
    Vira data/tags.js, e não um .json buscado por fetch, pela mesma razão do
    baralho: assim as páginas de revisão abrem direto do disco, sem servidor.
@@ -555,7 +569,7 @@ for (const { idioma, cards } of baralhos) {
     /* A frase tem de usar mesmo a palavra. Aviso, e não erro: a língua
        flexiona (el vaso → los vasos, quitar → me quitó, bring → brought), e a
        comparação é por radical, então erra para menos de vez em quando. */
-    if (alvo.tipo === 'palavra') {
+    if (alvo.tipo === 'palavra' && idioma !== 'la') {
       const limpar = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
       const nucleo = limpar(Motor.formaDoCard(alvo, 0)[L.texto])
         .replace(ARTIGOS[idioma], '')
@@ -644,11 +658,83 @@ for (const { idioma, cards } of baralhos) {
      numa leva e a frase na seguinte. */
   const comFrase = new Set(cards.filter(c => c.requer).map(c => c.requer));
   cards.forEach(c => (Array.isArray(c.requerTodas) ? c.requerTodas : []).forEach(r => comFrase.add(r)));
+  /* no latim, a palavra das primeiras frases (que não prendem nada) também está em uso */
+  if (idioma === 'la') cards.forEach(c => (c.palavras || []).forEach(p => { if (p.c) comFrase.add(p.c); }));
   /* o card de leitura (PLANO.md, 9.2) não tem frase de uso, de propósito */
   const soltas = cards.filter(c => c.tipo === 'palavra' && !c.leitura && !comFrase.has(c.id));
   if (soltas.length) {
     avisos.push('[' + idioma + '] ' + soltas.length + ' palavra(s) que nenhuma frase usa: ' +
       soltas.map(c => c.id + ' (' + c[L.texto] + ')').join(', '));
+  }
+}
+
+/* ── o latim (cards/LATIM.md) ──
+   Toda frase latina traz a anotação palavra por palavra («palavras»: forma, card do lema,
+   rótulo da forma, função), que faz a nota, prende a frase às palavras e ensina os casos. Aqui
+   se confere que ela bate com o texto (a enclítica e o «cum» posposto vêm separados: virumque =
+   virum + -que, vobiscum = vobis + cum), que o «requerTodas» é o das palavras (as primeiras
+   frases, livres, têm a lista vazia), que os conceitos existem, que o gabarito abre, e o teto:
+   até 10 palavras latinas e 120 letras de resposta. O card de conceito pede família e exemplos. */
+const chaveLatina = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/^-/, '').replace(/j/g, 'i').replace(/v/g, 'u');
+const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz'];
+for (const { idioma, cards } of baralhos) {
+  if (idioma !== 'la') continue;
+  const PORID = new Map(cards.map(c => [c.id, c]));
+  for (const c of cards) {
+    const onde = c.id + ' (' + c.la + ')';
+    if (c.gabarito !== undefined) {
+      const lista = Motor.expandirGabarito(c.gabarito);
+      if (lista.erro) erros.push('gabarito malformado: ' + onde + ' → ' + lista.erro);
+      else if (!lista.length) erros.push('gabarito vazio: ' + onde);
+    }
+    if (c.tipo === 'conceito') {
+      if (!FAMILIAS_DO_CONCEITO.includes(c.familia)) erros.push('conceito sem família (' + FAMILIAS_DO_CONCEITO.join(', ') + '): ' + onde);
+      const ex = Array.isArray(c.exemplos) ? c.exemplos : [];
+      if (ex.length < 3) erros.push('conceito com menos de 3 exemplos: ' + onde);
+      ex.forEach((e, i) => {
+        if (!e || !e.la || !e.w || !e.exp || !e.fonte) { erros.push('exemplo ' + (i + 1) + ' incompleto (la, w, exp, fonte): ' + onde); return; }
+        const palavrasDoEx = (e.la.match(/[A-Za-zÀ-ÿĀ-ſ]+/g) || []).map(chaveLatina);
+        const w = chaveLatina(e.w);
+        /* a palavra pode vir com a enclítica ou o «cum» colados: virum em «virumque» */
+        if (!palavrasDoEx.some(x => x === w || ['que', 'ne', 've', 'cum'].some(s => x === w + s))) erros.push('exemplo ' + (i + 1) + ' sem a palavra destacada «' + e.w + '»: ' + onde);
+      });
+      continue;
+    }
+    if (c.tipo !== 'frase') continue;
+    if (!c.fonte) erros.push('frase latina sem «fonte» (a passagem de onde vem): ' + onde);
+    if (String(c.pt || '').length > Motor.LIMITES.resposta) erros.push('resposta com mais de ' + Motor.LIMITES.resposta + ' letras: ' + onde);
+    const pal = Array.isArray(c.palavras) ? c.palavras : null;
+    if (!pal) { erros.push('frase latina sem «palavras» (a anotação): ' + onde); continue; }
+    if (pal.filter(p => !String(p.w || '').startsWith('-')).length > 10) erros.push('frase latina com mais de 10 palavras: ' + onde);
+    /* o alinhamento: cada palavra do texto é uma entrada, ou duas coladas (enclítica, cum) */
+    const doTexto = (c.la.match(/[A-Za-zÀ-ÿĀ-ſ]+/g) || []).map(chaveLatina);
+    let j = 0, alinhou = true;
+    for (const w of doTexto) {
+      const um = pal[j] && chaveLatina(pal[j].w);
+      const dois = pal[j + 1] && um + chaveLatina(pal[j + 1].w);
+      if (um === w) j += 1;
+      else if (dois === w) j += 2;
+      else { alinhou = false; break; }
+    }
+    if (!alinhou || j !== pal.length) erros.push('as «palavras» não batem com o texto latino: ' + onde);
+    for (const p of pal) {
+      if (p.c === undefined) continue;
+      const alvo = PORID.get(p.c);
+      if (!alvo || alvo.tipo !== 'palavra') erros.push('«' + p.w + '» aponta para ' + p.c + ', que não é card de palavra: ' + onde);
+    }
+    const dasPalavras = [...new Set(pal.filter(p => p.c).map(p => p.c))];
+    const livre = (c.tags || []).includes('primeiros passos');
+    const req = Array.isArray(c.requerTodas) ? c.requerTodas : [];
+    if (livre ? req.length : req.join(' ') !== dasPalavras.join(' ')) {
+      erros.push((livre ? 'primeira frase com «requerTodas» (tem de ser vazia): '
+        : '«requerTodas» diferente das palavras anotadas: ') + onde);
+    }
+    for (const g of c.conceitos || []) {
+      const alvo = PORID.get(g);
+      if (!alvo || alvo.tipo !== 'conceito') erros.push('conceito que não existe: ' + onde + ' → ' + g);
+    }
+    if (c.texto && !Number.isInteger(c.linha)) erros.push('trecho de texto sem «linha»: ' + onde);
   }
 }
 
@@ -695,6 +781,16 @@ for (const b of baralhos) {
       }
       if (d.conferir) falta.push('conferir «' + ch + '»: ' + d.conferir);
     }
+    /* no latim cada linha é um card de frase (o trecho, cards/LATIM.md §3.3): o card existe, é
+       deste texto e tem a linha como está */
+    if (b.idioma === 'la') {
+      const porId = new Map(b.cards.map(c => [c.id, c]));
+      (txt.blocos || []).flat().forEach((l, i) => {
+        const c = l.card && porId.get(l.card);
+        if (!c) erros.push(onde + ': a linha ' + (i + 1) + ' não tem card de trecho' + (l.card ? ' («' + l.card + '» não existe)' : ''));
+        else if (c.texto !== txt.id || c.la !== l.t) erros.push(onde + ': a linha ' + (i + 1) + ' não bate com o trecho ' + c.id);
+      });
+    }
     txt.pronto = !falta.length;
     if (falta.length) {
       b.pendentesDeTexto++;
@@ -718,7 +814,7 @@ const TEMAS_DO_BANCO = 6, PALAVRAS_POR_TEMA = 3;
 for (const { idioma, cards } of baralhos) {
   const L = CAMPOS_DA_LINGUA[idioma];
   const palavras = cards.filter(c => c.tipo === 'palavra');
-  const semTema = palavras.filter(c => !Motor.temaDe(c));
+  const semTema = idioma === 'la' ? [] : palavras.filter(c => !Motor.temaDe(c));
   if (semTema.length) {
     const mostra = 12;
     avisos.push('[' + idioma + '] ' + semTema.length + ' palavra(s) sem tema (só classe ou comportamento; ' +
@@ -737,7 +833,7 @@ for (const { idioma, cards } of baralhos) {
       const temas = Object.values(banco[n] || {}).filter(ids => ids.length >= PALAVRAS_POR_TEMA).length;
       return temas < TEMAS_DO_BANCO ? n + ' tem ' + temas : null;
     }).filter(Boolean);
-    if (curtos.length) {
+    if (curtos.length && idioma !== 'la') {
       avisos.push('[' + curso + '] banco do nivelamento curto — pede ' + TEMAS_DO_BANCO + ' temas com ' +
         PALAVRAS_POR_TEMA + '+ palavras por nível: ' + curtos.join(', '));
     }
@@ -1042,7 +1138,7 @@ function escreverCatalogo(curso, leva, doApp, audiencia) {
    data/textos-<idioma>.js põe os textos prontos em window.TEXTOS[idioma] (o app), e
    data/textos.json lista os de todas as línguas para a Biblioteca saber em que texto pôr o
    botão «Aprender as palavras deste poema» (PLANO.md, 9.1). */
-const PARA_O_APP = ['lema', 'classe', 'forma', 'def', 'defEs', 'defEn', 'wiki', 'card', 'g', 'leitura'];
+const PARA_O_APP = ['lema', 'classe', 'forma', 'funcao', 'def', 'defEs', 'defEn', 'wiki', 'card', 'g', 'leitura'];
 const prontos = [];
 for (const b of baralhos) {
   const textos = (b.textos || []).filter(t => t.pronto).map(t => {
@@ -1054,7 +1150,7 @@ for (const b of baralhos) {
       destinos[ch] = x;
     });
     const saida = { id: t.id, idioma: t.idioma, tipo: t.tipo, titulo: t.titulo, autor: t.autor, ano: t.ano,
-      biblioteca: t.biblioteca, blocos: t.blocos.map(bl => bl.map(l => ({ t: l.t, p: l.p, requer: l.requer }))),
+      biblioteca: t.biblioteca, blocos: t.blocos.map(bl => bl.map(l => Object.assign({ t: l.t, p: l.p, requer: l.requer }, l.card ? { card: l.card } : {}))),
       requerTodas: t.requerTodas, destinos };
     if (typeof t.fila === 'number') saida.fila = t.fila;
     prontos.push({ id: t.id, idioma: t.idioma, tipo: t.tipo, titulo: t.titulo, autor: t.autor, biblioteca: t.biblioteca });

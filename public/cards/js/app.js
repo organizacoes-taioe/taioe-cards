@@ -41,6 +41,11 @@ window.TaioeCardsApp = function (ctx) {
   const BANDEIRA_A = ctx.bandeiraAudiencia || { pt: '🇧🇷', es: '🇪🇸', en: '🇺🇸' }[A];
   const CHAVE = ctx.uid + ':' + ctx.curso;
   Motor.usarBaralho(L, A);
+  /* O modo do curso (cards/LATIM.md §10). No latim é «trilhas»: só se aprende pelos textos,
+     todo card só tem a ida, não há teste de nível nem desafio, e a pessoa escolhe de 1 a 3
+     textos antes de começar. Vem antes de usarTransparencias, que depende dele. */
+  const TRILHAS = ctx.modo === 'trilhas';
+  Motor.usarModo(TRILHAS ? 'trilhas' : 'livre');
   const IDA = Motor.direcoes().ida;
   const ROTULO_IDA = L + ' → ' + A, ROTULO_VOLTA = A + ' → ' + L;
   let Sinc = null;   // a sincronização, criada no arranque
@@ -76,6 +81,17 @@ window.TaioeCardsApp = function (ctx) {
   const TEXTOS = (window.TEXTOS && window.TEXTOS[L] && window.TEXTOS[L].textos) || [];
   const TEXTO_POR_ID = {};
   TEXTOS.forEach(txt => { TEXTO_POR_ID[txt.id] = txt; });
+
+  /* As primeiras frases do latim (o «texto zero», cards/LATIM.md §3.4): livres desde o
+     primeiro card, na ordem do arquivo, com as palavras delas, que todos estudam; e os trechos
+     dos textos (o card de cada linha), com os conceitos que cada um pede. */
+  const TZ_FRASES = TRILHAS ? CARDS.filter(c => c.tipo === 'frase' && Array.isArray(c.requerTodas) && !c.requerTodas.length) : [];
+  const TZ_PALAVRAS = new Set(TZ_FRASES.flatMap(c => (c.palavras || []).map(x => x.c).filter(Boolean)));
+  const TRECHOS = TRILHAS ? CARDS.filter(c => c.tipo === 'frase' && c.texto).sort((a, b) => (a.linha || 0) - (b.linha || 0)) : [];
+  /* a pergunta do card de conceito, pela família */
+  const ENUNCIADO_DO_CONCEITO = {
+    caso: 'card.enunciado.conceito.caso', verbo: 'card.enunciado.conceito.verbo', voz: 'card.enunciado.conceito.voz'
+  };
 
   /* emVista.escolha: os textos que a pessoa estuda ({ textos, em, propria });
      poema e prosa ficaram do formato de antes; lidos: «<id>#<k>» por verso
@@ -128,6 +144,7 @@ window.TaioeCardsApp = function (ctx) {
   let respostaPendente = null;
   let ultimoRegistro = null;
   let chanceUsada = false;   // o aviso de língua trocada só devolve a vez uma vez
+  let exemploAtual = null;   // o exemplo do card de conceito na tela (Motor.exemploDoConceito)
   let dinamicosAtuais = [];  // alternativas que não vêm do card: vão na resposta, para a calibragem
 
   /* ── o que fica só neste aparelho ──
@@ -295,8 +312,9 @@ window.TaioeCardsApp = function (ctx) {
     /* nem a transparente total nem o presumido estreiam como card novo */
     /* o card de leitura (PLANO.md, 9.2) só estreia para quem estuda um texto que o pede */
     const deTexto = palavrasDosAtivos(p);
+    const ativosIds = new Set(TRILHAS ? textosAtivosDe(p).map(x => x.id) : []);
     const novo = id => !visto(id) && !fora(id) && !Motor.conhecidaSemEstado(id, p.cards) && solto(id) &&
-      (!Motor.ehLeitura(id) || deTexto.has(id));
+      (TRILHAS ? daTrilha(id, deTexto, ativosIds) : (!Motor.ehLeitura(id) || deTexto.has(id)));
     p.ineditos = antes.filter(id => PORID[id] && novo(id))
       .concat(CARDS.filter(c => !conhecidos.has(c.id) && novo(c.id)).map(c => c.id));
 
@@ -450,6 +468,18 @@ window.TaioeCardsApp = function (ctx) {
     return new Set(textosAtivosDe(p).flatMap(x => Motor.requeridas(x)));
   }
 
+  /* No modo trilhas, o que pode estrear: a palavra do texto zero ou de um texto escolhido; o
+     conceito (a ordem decide quando, ver ordenarTrilhas); a primeira frase; o trecho de um
+     texto escolhido; e a frase de uso, que só chega aqui com as palavras dela dominadas. */
+  function daTrilha(id, deTexto, ativosIds) {
+    const c = PORID[id];
+    if (!c) return false;
+    if (c.tipo === 'palavra') return TZ_PALAVRAS.has(id) || deTexto.has(id);
+    if (c.tipo === 'conceito') return true;
+    if (c.texto) return ativosIds.has(c.texto);
+    return true;
+  }
+
   /* O baralho de inéditos é ordenado pelo desempenho: sai primeiro o nível
      que você ainda não domina mas já consegue acompanhar. Como agora ele é
      uma lista à parte, basta reordená-la — não há posição alheia a respeitar. */
@@ -457,6 +487,7 @@ window.TaioeCardsApp = function (ctx) {
     /* uma palavra avulsa a cada seis estreias de palavra (pedido do Gere) */
     const PALAVRAS_PEDIDAS_POR_AVULSA = 5;
     if (!p.ineditos || p.ineditos.length < 2) return;
+    if (TRILHAS) { ordenarTrilhas(p); return; }
     /* A frase que a palavra acabou de destravar fura a fila. Estar aqui já
        quer dizer que ela foi liberada — presa nenhuma chega a este ponto —,
        e a promessa é que ela seja o próximo card novo. Entre duas, primeiro
@@ -542,6 +573,69 @@ window.TaioeCardsApp = function (ctx) {
       fila = fila.slice(0, vez).concat([doTexto[0]], intercalar(fila.slice(vez), doTexto.slice(1), cada));
     }
     p.ineditos = fila;
+  }
+
+  /* ── a ordem do modo trilhas (cards/LATIM.md §5) ──
+     Na frente, até duas frases recém-destravadas (trecho de texto ou frase de uso). Depois,
+     duas estreias do texto zero para uma dos textos escolhidos: no texto zero, frase a frase,
+     os conceitos que ela pede, ela (é livre) e as palavras dela; nos textos, as palavras na
+     ordem de leitura, em rodízio, cada uma depois dos conceitos do primeiro trecho em que
+     aparece. As outras frases destravadas entram uma a cada duas estreias. Nada de avulsa nem
+     de sorteio por nível: tudo sai dos textos.
+     A fila se refaz a cada estreia, então nada que entra «um a cada dois» tem lugar fixo nela
+     (ficaria sempre em terceiro e nunca chegaria à frente): conta-se quantas estreias houve
+     desde a última daquele tipo, e a próxima entra quando chega a vez dela. A estreia de um
+     conceito não conta: ele vem colado à palavra ou à frase que o pede. */
+  function ordenarTrilhas(p) {
+    const CADA = 2;
+    const pendentes = new Set(p.ineditos), postos = new Set();
+    const pega = id => (pendentes.has(id) && !postos.has(id) ? (postos.add(id), [id]) : []);
+    const ehPresa = id => { const c = PORID[id] || {}; return c.tipo === 'frase' && Motor.requeridas(c).length > 0; };
+    const presas = p.ineditos.filter(ehPresa);
+    const quando = id => Motor.venceuEm(PORID[id], p.cards, p.arquivados);
+    presas.sort((a, b) => quando(b) - quando(a));
+    const agora = Date.now();
+    const frescas = presas.filter(id => agora - quando(id) < 864e5).slice(0, 2);
+    const antigas = presas.filter(id => frescas.indexOf(id) < 0).map(id => [id]);
+    presas.forEach(id => postos.add(id));
+    const ativos = textosAtivosDe(p);
+    const ativosIds = new Set(ativos.map(x => x.id));
+    const conceitosDe = id => {
+      const tr = TRECHOS.find(c => ativosIds.has(c.texto) && (c.requerTodas || []).indexOf(id) >= 0);
+      return (tr && tr.conceitos) || [];
+    };
+    /* Cada palavra dos textos com os conceitos que vêm antes dela: um bloco só. Os textos
+       escolhidos passam na frente do texto zero: a palavra que os dois pedem («pater», no
+       Glória e na 36ª frase inicial) vem na ordem de leitura do texto, e não lá no fim. */
+    const dosTextos = [];
+    for (const id of Motor.palavrasDosTextos(ativos, p.cards, p.arquivados || {})) {
+      const bloco = [];
+      conceitosDe(id).forEach(g => bloco.push(...pega(g)));
+      bloco.push(...pega(id));
+      if (bloco.length) dosTextos.push(bloco);
+    }
+    const zero = [];
+    for (const f of TZ_FRASES) {
+      (f.conceitos || []).forEach(g => zero.push(...pega(g)));
+      zero.push(...pega(f.id));
+      (f.palavras || []).forEach(x => { if (x.c) zero.push(...pega(x.c)); });
+    }
+    const resto = p.ineditos.filter(id => !postos.has(id));
+    const estreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined && (PORID[id] || {}).tipo !== 'conceito')
+      .sort((x, y) => p.cards[y].estreouNa - p.cards[x].estreouNa);
+    const desde = teste => { let n = 0; while (n < estreias.length && !teste(estreias[n])) n++; return n; };
+    const palavrasDosTextos = new Set(ativos.flatMap(x => Motor.requeridas(x)));
+    let fila = zero.concat(resto);
+    if (dosTextos.length) fila = naVez(fila, dosTextos, desde(id => palavrasDosTextos.has(id)), CADA);
+    if (antigas.length) fila = naVez(fila, antigas, desde(ehPresa), CADA);
+    p.ineditos = frescas.concat(fila);
+  }
+
+  /* Os blocos de «poucos» entram um a cada «cada» cards de «muitos», e o primeiro já depois
+     de «cada» menos «desde» (as estreias que houve desde o último daquele tipo). */
+  function naVez(muitos, poucos, desde, cada) {
+    const vez = Math.max(0, cada - desde);
+    return muitos.slice(0, vez).concat(poucos[0], intercalar(muitos.slice(vez), poucos.slice(1), cada).flat());
   }
 
   /* «cada» cards de «muitos», depois um de «poucos», até acabarem os dois. */
@@ -832,7 +926,8 @@ window.TaioeCardsApp = function (ctx) {
   function arquivarCardAtual() {
     if (!cardAtual) return;
     const c = PORID[cardAtual.id] || cardAtual;
-    const pergunta = t(c.tipo === 'palavra' ? 'arquivar.perguntaPalavra' : 'arquivar.perguntaFrase', { x: c[L] });
+    const pergunta = t(c.tipo === 'palavra' ? 'arquivar.perguntaPalavra'
+      : c.tipo === 'conceito' ? 'arquivar.perguntaConceito' : 'arquivar.perguntaFrase', { x: c[L] });
     if (!window.confirm(pergunta)) return;
     marcarArquivo(c.id, true);
     statusSync(t('arquivar.feito', { x: c[L] }), 'ok');
@@ -874,6 +969,8 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   function proximoCard() {
+    /* no modo trilhas, sem texto escolhido não há o que estudar: a escolha vem antes */
+    if (TRILHAS && !textosAtivosAgora().length) { abrirTexto(); return; }
     recolherFrasesLiberadas();
     const lido = textoParaLer();
     if (lido) { mostrarRecompensa(lido); return; }
@@ -918,7 +1015,8 @@ window.TaioeCardsApp = function (ctx) {
        hora em que a pessoa sabe se a palavra já é dela (pedido do Gere,
        19/10/2026). O texto diz o que ela está afirmando (07/10). */
     const estreando = !estadoDe(id) || !estadoDe(id).vistas;
-    el['btn-arquivar'].textContent = t(cardAtual.tipo === 'palavra' ? 'card.jaConhecoPalavra' : 'card.jaConhecoFrase');
+    el['btn-arquivar'].textContent = t(cardAtual.tipo === 'palavra' ? 'card.jaConhecoPalavra'
+      : cardAtual.tipo === 'conceito' ? 'card.jaConhecoConceito' : 'card.jaConhecoFrase');
     /* o desafio leva a marca; a prévia (frase ainda presa) é uma pergunta
        só, e arquivar uma frase que nem entrou no jogo não faz sentido */
     const previa = !!(desafioAtual && desafioAtual.previa);
@@ -932,7 +1030,9 @@ window.TaioeCardsApp = function (ctx) {
     el['aba-nivel'].textContent = Motor.ROTULO_NIVEL[cardAtual.nivel] || cardAtual.nivel;
 
     const inversa = Motor.ehVolta(direcaoAtual);
-    el.enunciado.textContent = inversa
+    el.enunciado.textContent = cardAtual.tipo === 'conceito'
+      ? t(ENUNCIADO_DO_CONCEITO[cardAtual.familia] || ENUNCIADO_DO_CONCEITO.caso)
+      : inversa
       ? t(cardAtual.tipo === 'palavra' ? 'card.enunciado.voltaPalavra' : 'card.enunciado.voltaFrase', { L: NOME_L })
       : t(cardAtual.tipo === 'palavra' ? 'card.enunciado.idaPalavra' : 'card.enunciado.idaFrase');
 
@@ -943,10 +1043,15 @@ window.TaioeCardsApp = function (ctx) {
        é você quem tem que produzir a resposta */
     el['rotulo-resposta-txt'].textContent = modoAtual === 'multipla' ? ''
       : t('card.respondaEm', { x: inversa ? NOME_L : NOME_A });
-    el.entrada.placeholder = inversa ? t('card.escrevaEm', { x: NOME_L }) : t('card.escrevaSignificado');
+    el.entrada.placeholder = inversa ? t('card.escrevaEm', { x: NOME_L })
+      : t(cardAtual.tipo === 'conceito' ? 'card.escrevaConceito' : 'card.escrevaSignificado');
 
-    el.termo.textContent = Motor.pergunta(cardAtual, direcaoAtual);
-    el.termo.classList.toggle('frase', cardAtual.tipo === 'frase');
+    /* O card de conceito pergunta com um exemplo real e a palavra em destaque; a palavra do
+       latim aparece pelo enunciado do dicionário («dominus, domini, m.»). */
+    exemploAtual = cardAtual.tipo === 'conceito' ? Motor.exemploDoConceito(cardAtual, est) : null;
+    if (exemploAtual) el.termo.innerHTML = comDestaque(exemploAtual.la, exemploAtual.w);
+    else el.termo.textContent = !inversa && cardAtual.enunciado ? cardAtual.enunciado : Motor.pergunta(cardAtual, direcaoAtual);
+    el.termo.classList.toggle('frase', cardAtual.tipo === 'frase' || !!exemploAtual);
 
     el['aviso-lingua'].classList.add('oculto');
     el['aviso-acento'].classList.add('oculto');
@@ -1011,9 +1116,26 @@ window.TaioeCardsApp = function (ctx) {
     });
   }
 
-  /* «palavra» e «frase», na língua da interface */
+  /* «palavra», «frase» e (no latim) «conceito», na língua da interface */
   function nomeTipo(tipo) {
-    return tipo === 'palavra' || tipo === 'frase' ? t('tipo.' + tipo) : tipo;
+    return tipo === 'palavra' || tipo === 'frase' || tipo === 'conceito' ? t('tipo.' + tipo) : tipo;
+  }
+
+  /* A frase do exemplo com a palavra em destaque (só ela: em «virumque», o «virum»). */
+  function comDestaque(frase, palavra) {
+    const chave = s => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const alvo = chave(palavra);
+    const re = /[A-Za-zÀ-ÿĀ-ſ]+/g;
+    let m;
+    while ((m = re.exec(frase))) {
+      const k = chave(m[0]);
+      if (k === alvo || ['que', 'ne', 've', 'cum'].some(s => k === alvo + s)) {
+        const fim = m.index + palavra.length;
+        return escapar(frase.slice(0, m.index)) + '<mark class="destaque">' + escapar(frase.slice(m.index, fim)) +
+          '</mark>' + escapar(frase.slice(fim));
+      }
+    }
+    return escapar(frase);
   }
 
   function escapar(s) {
@@ -1148,9 +1270,13 @@ window.TaioeCardsApp = function (ctx) {
        mesma pergunta é lição. Quando o português muda junto («o médico», «a
        médica»), a outra forma é só a mesma frase no feminino, e ocupa a nota
        sem ensinar nada. */
-    const nota = [notaDe(cardAtual),
+    /* no card de conceito, primeiro o exemplo explicado, depois a definição; na frase latina,
+       no fim, a passagem de onde ela vem */
+    const nota = [exemploAtual ? exemploAtual.exp + (exemploAtual.fonte ? ' (' + exemploAtual.fonte + ')' : '') : '',
+      notaDe(cardAtual),
       outraForma && outraForma[A] === cardAtual[A]
-        ? t('nota.outraForma', { g: t(generoAtual ? 'nota.masculino' : 'nota.feminino'), x: outraForma[L], y: outraForma[A] }) : ''
+        ? t('nota.outraForma', { g: t(generoAtual ? 'nota.masculino' : 'nota.feminino'), x: outraForma[L], y: outraForma[A] }) : '',
+      cardAtual.fonte ? t('nota.fonte', { x: cardAtual.fonte }) : ''
     ].filter(Boolean).join('\n');
     el.nota.textContent = nota;
     el.nota.classList.toggle('oculto', !nota);
@@ -1532,8 +1658,11 @@ window.TaioeCardsApp = function (ctx) {
   function recolherFrasesLiberadas() {
     const agora = Date.now();
     const jaEsta = new Set(progresso.ineditos);
+    /* no modo trilhas, o trecho só entra se o texto dele estiver escolhido */
+    const ativosIds = TRILHAS ? new Set(textosAtivosAgora().map(x => x.id)) : null;
     const novas = CARDS.filter(c => c.tipo === 'frase' && Motor.requeridas(c).length &&
       !progresso.cards[c.id] && !jaEsta.has(c.id) && !Motor.arquivado(c.id, progresso.arquivados) &&
+      (!ativosIds || !c.texto || ativosIds.has(c.texto)) &&
       Motor.liberado(c, progresso.cards, agora, progresso.arquivados));
     if (!novas.length) return;
     novas.forEach(c => progresso.ineditos.push(c.id));
@@ -1820,9 +1949,10 @@ window.TaioeCardsApp = function (ctx) {
          por que o card novo às vezes vem depressa e às vezes espera */
       /* É o alvo que a escolha de fila persegue — vê-lo explica por que o
          card novo às vezes vem depressa e às vezes rareia. */
-      metrica(dir.esPt + ' · ' + dir.ptEs,
-              t('painel.direcoes', { ida: ROTULO_IDA, volta: ROTULO_VOLTA, alvoIda: alvo.esPt, alvoVolta: alvo.ptEs, taxa: Math.round(100 * recente.taxa) })) +
-      metrica(dominados, t('painel.dominados')) +
+      /* no modo trilhas só há a ida: nem as duas filas, nem «nas duas direções» */
+      (TRILHAS ? '' : metrica(dir.esPt + ' · ' + dir.ptEs,
+              t('painel.direcoes', { ida: ROTULO_IDA, volta: ROTULO_VOLTA, alvoIda: alvo.esPt, alvoVolta: alvo.ptEs, taxa: Math.round(100 * recente.taxa) }))) +
+      metrica(dominados, t(TRILHAS ? 'painel.dominadosIda' : 'painel.dominados')) +
       /* os presumidos do nivelamento ainda sem resposta (PLANO.md, 7.2) */
       (aConfirmar.n ? metrica(milhar(aConfirmar.n), t('painel.aConfirmar')) : '') +
       '</div>';
@@ -1925,7 +2055,8 @@ window.TaioeCardsApp = function (ctx) {
      claridade sobe a cada degrau, então a ordem continua visível. */
   const SERIES = [
     { chave: 0, nome: ROTULO_IDA,   cor: 'var(--serie-espt)' },
-    { chave: 1, nome: ROTULO_VOLTA, cor: 'var(--serie-ptes)' },
+    /* a volta, que o modo trilhas não tem */
+    ...(TRILHAS ? [] : [{ chave: 1, nome: ROTULO_VOLTA, cor: 'var(--serie-ptes)' }]),
     { chave: 2, nome: rotuloEspera(3),   cor: 'var(--escada-0)', degrau: true },
     { chave: 3, nome: rotuloEspera(7),   cor: 'var(--escada-1)', degrau: true },
     { chave: 4, nome: rotuloEspera(14),  cor: 'var(--escada-2)', degrau: true },
@@ -2425,7 +2556,7 @@ window.TaioeCardsApp = function (ctx) {
       }
       return { chave: 'novo', rotulo: t('situacao.novo') };
     }
-    if (e.etapa === 'dominado') return { chave: 'dominado', rotulo: t('situacao.dominado') };
+    if (e.etapa === 'dominado') return { chave: 'dominado', rotulo: t(TRILHAS ? 'situacao.dominadoIda' : 'situacao.dominado') };
     if (Motor.ehVolta(Motor.direcaoDe(e))) return { chave: 'invertido', rotulo: t('situacao.volta', { L: NOME_L }) };
     return {
       chave: 'andamento',
@@ -2872,9 +3003,11 @@ window.TaioeCardsApp = function (ctx) {
       const def = A === 'pt' ? x.def : x['def' + A[0].toUpperCase() + A[1]];
       const sentido = card ? escapar(card[A] || '') : escapar(Array.isArray(def) ? def.join(' ') : (def || ''));
       const classe = classeDe(x.classe);
-      return '<p><b lang="' + L + '">' + escapar(x.lema || '') + '</b>' +
+      /* no latim, o enunciado do dicionário e a função da palavra na linha */
+      return '<p><b lang="' + L + '">' + escapar((card && card.enunciado) || x.lema || '') + '</b>' +
         (classe ? ' <span class="classe">' + escapar(classe) + (A === 'pt' && x.forma ? ', ' + escapar(x.forma) : '') + '</span>' : '') +
         (sentido ? '<br>' + sentido : '') +
+        (x.funcao ? '<br><span class="classe">' + escapar(x.funcao) + '</span>' : '') +
         (card && PORID_FONTE[x.card].leitura ? '<br><span class="classe">' + t('card.leitura') + '</span>' : '') + '</p>';
     }).join('');
     const fonte = !partes.some(x => x.card) && d.wiki
@@ -2922,7 +3055,7 @@ window.TaioeCardsApp = function (ctx) {
     const escolha = escolhaDosTextos();
     const ativos = new Set(textosAtivosAgora().map(x => x.id));
     const arq = progresso.arquivados || {};
-    const partes = ['<p class="ajuda">' + t('texto.explica', { n: Motor.MAX_TEXTOS }) + '</p>'];
+    const partes = ['<p class="ajuda">' + t(TRILHAS ? 'texto.explicaTrilhas' : 'texto.explica', { n: Motor.MAX_TEXTOS }) + '</p>'];
     if (novo && TEXTO_POR_ID[novo]) {
       partes.push('<p class="recompensa">' + t('texto.trocar', { n: Motor.MAX_TEXTOS, t: escapar(TEXTO_POR_ID[novo].titulo) }) + '</p>');
     }
@@ -2942,6 +3075,11 @@ window.TaioeCardsApp = function (ctx) {
         '</div>');
     });
     partes.push('<p class="ajuda" id="aviso-maximo" hidden>' + t('texto.maximo', { n: Motor.MAX_TEXTOS }) + '</p></div>');
+    /* no modo trilhas a escolha é obrigatória (de 1 a 3), e daqui se começa */
+    if (TRILHAS) {
+      partes.push('<p class="ajuda" id="aviso-escolha" hidden>' + t('texto.escolhaUm') + '</p>' +
+        '<div class="botoes-texto"><button class="primario" id="btn-comecar-trilha">' + t('texto.comecarTrilha') + '</button></div>');
+    }
     const lidos = TEXTOS.filter(x => Motor.textoTerminado(x, tx.lidos))
       .sort((a, b) => String(tx.lidos[b.id]).localeCompare(String(tx.lidos[a.id])));
     if (lidos.length) {
@@ -2955,14 +3093,21 @@ window.TaioeCardsApp = function (ctx) {
     const caixas = [...alvo.querySelectorAll('input[data-texto]')];
     const limitar = () => {
       const n = caixas.filter(c => c.checked).length;
-      caixas.forEach(c => { c.disabled = !c.checked && n >= Motor.MAX_TEXTOS; });
+      /* no modo trilhas o último marcado não sai: troca-se marcando outro antes */
+      caixas.forEach(c => { c.disabled = (!c.checked && n >= Motor.MAX_TEXTOS) || (TRILHAS && c.checked && n === 1); });
       document.getElementById('aviso-maximo').hidden = n < Motor.MAX_TEXTOS;
+      if (TRILHAS) {
+        document.getElementById('aviso-escolha').hidden = n > 0;
+        document.getElementById('btn-comecar-trilha').disabled = !n;
+      }
     };
     limitar();
     caixas.forEach(c => c.addEventListener('change', () => {
       gravarEscolha(caixas.filter(x => x.checked).map(x => x.dataset.texto));
       limitar();
     }));
+    const comecar = document.getElementById('btn-comecar-trilha');
+    if (comecar) comecar.addEventListener('click', () => { mostrar('tela-card'); proximoCard(); });
   }
 
   /* ═══════════════ o card desafio (PLANO.md, 7.4) ═══════════════
@@ -3078,6 +3223,7 @@ window.TaioeCardsApp = function (ctx) {
   let comecoOcupado = false;  // a pausa em que a conferência mostra a certa
 
   function precisaDoComeco(p) {
+    if (TRILHAS) return false;   // o latim não tem teste de nível: começa pela escolha dos textos
     return !p.nivelamento && !Object.keys(p.cards || {}).some(id => p.cards[id] && p.cards[id].vistas);
   }
 
@@ -3699,6 +3845,17 @@ window.TaioeCardsApp = function (ctx) {
     const op = el['filtro-estado'].querySelector('option[value="invertido"]');
     if (op) op.textContent = t('cards.fInvertido', { x: ROTULO_VOLTA });
     el['btn-texto'].hidden = !TEXTOS.length;
+    const opConceito = el['filtro-tipo'].querySelector('option[value="conceito"]');
+    if (opConceito) opConceito.hidden = !TRILHAS;
+    /* no modo trilhas não há volta nem teste de nível: sai o filtro da volta, sai o grupo da
+       avaliação, e o recomeço volta à escolha dos textos */
+    if (TRILHAS) {
+      if (op) op.hidden = true;
+      const grupo = el['btn-refazer'] && el['btn-refazer'].closest('.grupo');
+      if (grupo) grupo.hidden = true;
+      [['config.recomecarAjuda', 'config.recomecarAjudaTrilhas'], ['config.recomecarApaga', 'config.recomecarApagaTrilhas']].forEach(([de, para]) =>
+        document.querySelectorAll('[data-i18n="' + de + '"]').forEach(x => { x.setAttribute('data-i18n', para); x.textContent = t(para); }));
+    }
     const icone = document.querySelector('link[rel="icon"]');
     if (icone) icone.href = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>" +
       BANDEIRA_L + '</text></svg>';
@@ -3732,8 +3889,11 @@ window.TaioeCardsApp = function (ctx) {
   atualizarPlacar();
   /* a primeira entrada no curso (ou a avaliação que ficou pela metade) abre
      no começo; o resto, na página inicial */
+  if (TRILHAS) esquecerLocal(CHAVE_COMECO);
   if (!retomarComeco()) {
     if (textoParaTrocar) { renderizarTexto(textoParaTrocar); mostrar('tela-texto'); }
+    /* no modo trilhas, quem ainda não escolheu texto começa pela escolha */
+    else if (TRILHAS && !textosAtivosAgora().length) abrirTexto();
     else mostrar('tela-inicio');
   }
 

@@ -1,0 +1,311 @@
+{
+ "id": "oracoes/gloria-patri",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Gloria Patri",
+ "autor": "Orações",
+ "ano": null,
+ "biblioteca": "/biblioteca/oracoes/gloria-patri/",
+ "ordem": 1,
+ "blocos": [
+  [
+   {
+    "t": "Gloria Patri, et Filio, et Spiritui Sancto.",
+    "p": [
+     [
+      "Gloria",
+      "gloria"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Patri",
+      "patri"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Filio",
+      "filio"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Spiritui",
+      "spiritui"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Sancto",
+      "sancto"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t001"
+   },
+   {
+    "t": "Sicut erat in principio, et nunc, et semper,",
+    "p": [
+     [
+      "Sicut",
+      "sicut"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "erat",
+      "erat"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "principio",
+      "principio"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nunc",
+      "nunc"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "semper",
+      "semper"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "card": "la-t002"
+   },
+   {
+    "t": "et in saecula saeculorum. Amen.",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "saecula",
+      "saecula"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "saeculorum",
+      "saeculorum"
+     ],
+     [
+      ". ",
+      null
+     ],
+     [
+      "Amen",
+      "amen"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t003"
+   }
+  ]
+ ],
+ "destinos": {
+  "gloria": {
+   "lema": "gloria",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "o sujeito, com o verbo subentendido",
+   "card": "la-p051",
+   "wiki": "https://en.wiktionary.org/wiki/gloria#Latin"
+  },
+  "patri": {
+   "lema": "pater",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "funcao": "a quem se dá glória",
+   "card": "la-p072",
+   "wiki": "https://en.wiktionary.org/wiki/pater#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "filio": {
+   "lema": "filius",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "card": "la-p043",
+   "wiki": "https://en.wiktionary.org/wiki/filius#Latin"
+  },
+  "spiritui": {
+   "lema": "spiritus",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "funcao": "4ª declinação",
+   "card": "la-p054",
+   "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin"
+  },
+  "sancto": {
+   "lema": "sanctus",
+   "classe": "adjetivo",
+   "forma": "dativo masculino singular",
+   "funcao": "concorda com Spiritui",
+   "card": "la-p084",
+   "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin"
+  },
+  "sicut": {
+   "lema": "sicut",
+   "classe": "advérbio",
+   "card": "la-p085",
+   "wiki": "https://en.wiktionary.org/wiki/sicut#Latin"
+  },
+  "erat": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "imperfeito do indicativo, 3ª pessoa do singular",
+   "funcao": "o sujeito é a glória",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "principio": {
+   "lema": "principium",
+   "classe": "substantivo neutro",
+   "forma": "ablativo singular",
+   "funcao": "quando",
+   "card": "la-p056",
+   "wiki": "https://en.wiktionary.org/wiki/principium#Latin"
+  },
+  "nunc": {
+   "lema": "nunc",
+   "classe": "advérbio",
+   "card": "la-p086",
+   "wiki": "https://en.wiktionary.org/wiki/nunc#Latin"
+  },
+  "semper": {
+   "lema": "semper",
+   "classe": "advérbio",
+   "card": "la-p087",
+   "wiki": "https://en.wiktionary.org/wiki/semper#Latin"
+  },
+  "in#2": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "funcao": "a duração: por, até",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "saecula": {
+   "lema": "saeculum",
+   "classe": "substantivo neutro",
+   "forma": "acusativo plural neutro",
+   "card": "la-p088",
+   "wiki": "https://en.wiktionary.org/wiki/saeculum#Latin"
+  },
+  "saeculorum": {
+   "lema": "saeculum",
+   "classe": "substantivo neutro",
+   "forma": "genitivo plural",
+   "card": "la-p088",
+   "wiki": "https://en.wiktionary.org/wiki/saeculum#Latin"
+  },
+  "amen": {
+   "lema": "amen",
+   "classe": "interjeição",
+   "g": "gramatical",
+   "def": [
+    "Amém: assim seja. Palavra hebraica que fecha a oração."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/amen#Latin"
+  }
+ }
+}
