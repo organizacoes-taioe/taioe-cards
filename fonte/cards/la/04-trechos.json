@@ -1,0 +1,1373 @@
+[
+ {
+  "id": "la-t001",
+  "tipo": "frase",
+  "la": "Gloria Patri, et Filio, et Spiritui Sancto.",
+  "pt": "Glória ao Pai, ao Filho e ao Espírito Santo.",
+  "gabarito": "Glória ao Pai[, ~] [e ~] ao Filho e ao Espírito Santo",
+  "aceitas": [],
+  "distratores": [
+   "Glória do Pai, do Filho e do Espírito Santo.",
+   "Glória ao Pai e ao Filho do Espírito Santo.",
+   "Glória aos pais, aos filhos e aos santos.",
+   "O Pai, o Filho e o Espírito Santo dão glória."
+  ],
+  "nota": "Gloria: nominativo singular, o sujeito, com o verbo subentendido.\nPatri: dativo singular, a quem se dá glória.\nFilio: dativo singular.\nSpiritui: dativo singular, 4ª declinação.\nSancto: dativo masculino singular, concorda com Spiritui.\nTrês dativos de três declinações: Patri (3ª, -i), Filio (2ª, -o), Spiritui (4ª, -ui). Glória a quem? O dativo responde.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Glória ao Pai",
+  "requerTodas": [
+   "la-p051",
+   "la-p072",
+   "la-p009",
+   "la-p043",
+   "la-p054",
+   "la-p084"
+  ],
+  "palavras": [
+   {
+    "w": "Gloria",
+    "c": "la-p051",
+    "f": "nominativo singular",
+    "fn": "o sujeito, com o verbo subentendido"
+   },
+   {
+    "w": "Patri",
+    "c": "la-p072",
+    "f": "dativo singular",
+    "fn": "a quem se dá glória"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "Filio",
+    "c": "la-p043",
+    "f": "dativo singular"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "Spiritui",
+    "c": "la-p054",
+    "f": "dativo singular",
+    "fn": "4ª declinação"
+   },
+   {
+    "w": "Sancto",
+    "c": "la-p084",
+    "f": "dativo masculino singular",
+    "fn": "concorda com Spiritui"
+   }
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g001"
+  ],
+  "texto": "oracoes/gloria-patri",
+  "linha": 1
+ },
+ {
+  "id": "la-t002",
+  "tipo": "frase",
+  "la": "Sicut erat in principio, et nunc, et semper,",
+  "pt": "Como era no princípio, agora e sempre,",
+  "gabarito": "[Como ~ Assim como] era no [princípio ~ início ~ começo][, ~] [e ~] agora e sempre",
+  "aceitas": [],
+  "distratores": [
+   "Como é no princípio, agora e sempre,",
+   "Como será no princípio, agora e sempre,",
+   "Como era o princípio, agora e sempre,",
+   "Como era no princípio, e não agora nem sempre,"
+  ],
+  "nota": "erat: imperfeito do indicativo, 3ª pessoa do singular, o sujeito é a glória.\nin: preposição com ablativo.\nprincipio: ablativo singular, quando.\nErat é o imperfeito de sum: «era». A frase continua no verso seguinte: «et in saecula saeculorum».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Glória ao Pai",
+  "requerTodas": [
+   "la-p085",
+   "la-p003",
+   "la-p022",
+   "la-p056",
+   "la-p009",
+   "la-p086",
+   "la-p087"
+  ],
+  "palavras": [
+   {
+    "w": "Sicut",
+    "c": "la-p085"
+   },
+   {
+    "w": "erat",
+    "c": "la-p003",
+    "f": "imperfeito do indicativo, 3ª pessoa do singular",
+    "fn": "o sujeito é a glória"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "principio",
+    "c": "la-p056",
+    "f": "ablativo singular",
+    "fn": "quando"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "nunc",
+    "c": "la-p086"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "semper",
+    "c": "la-p087"
+   }
+  ],
+  "conceitos": [
+   "la-g008",
+   "la-g006"
+  ],
+  "texto": "oracoes/gloria-patri",
+  "linha": 2
+ },
+ {
+  "id": "la-t003",
+  "tipo": "frase",
+  "la": "et in saecula saeculorum. Amen.",
+  "pt": "e pelos séculos dos séculos. Amém.",
+  "gabarito": "[e ~] [pelos séculos dos séculos ~ por todos os séculos dos séculos ~ por todos os séculos ~ para sempre][ Amém ~ Assim seja ~]",
+  "aceitas": [],
+  "distratores": [
+   "e no século dos séculos. Amém.",
+   "e nos séculos passados. Amém.",
+   "e pelos séculos do século. Amém.",
+   "e para os santos dos séculos. Amém."
+  ],
+  "nota": "in: preposição com acusativo, a duração: por, até.\nsaecula: acusativo plural neutro.\nsaeculorum: genitivo plural.\nAmen: palavra hebraica: amém, assim seja.\nIn + acusativo plural é a duração, «pelos séculos»; saeculorum, genitivo plural (-orum), «dos séculos»: o jeito hebraico de dizer «para todo o sempre».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Glória ao Pai",
+  "requerTodas": [
+   "la-p009",
+   "la-p022",
+   "la-p088"
+  ],
+  "palavras": [
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com acusativo",
+    "fn": "a duração: por, até"
+   },
+   {
+    "w": "saecula",
+    "c": "la-p088",
+    "f": "acusativo plural neutro"
+   },
+   {
+    "w": "saeculorum",
+    "c": "la-p088",
+    "f": "genitivo plural"
+   },
+   {
+    "w": "Amen",
+    "fn": "palavra hebraica: amém, assim seja"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g004"
+  ],
+  "texto": "oracoes/gloria-patri",
+  "linha": 3
+ },
+ {
+  "id": "la-t004",
+  "tipo": "frase",
+  "la": "Pater noster, qui es in caelis,",
+  "pt": "Pai nosso, que estás nos céus,",
+  "gabarito": "[Pai nosso ~ Nosso Pai ~ Ó Pai nosso][, ~] que [estás ~ estais ~ está ~ és ~ sois] [nos céus ~ no céu]",
+  "aceitas": [],
+  "distratores": [
+   "O Pai nosso está nos céus,",
+   "Pai nosso, que estavas nos céus,",
+   "Pai dos nossos, que estás nos céus,",
+   "Pai nosso, que vais aos céus,"
+  ],
+  "nota": "Pater: vocativo singular, a quem se reza.\nnoster: vocativo masculino singular, concorda com Pater.\nqui: nominativo masculino singular, o sujeito de es.\nes: presente do indicativo, 2ª pessoa do singular.\nin: preposição com ablativo.\ncaelis: ablativo plural, onde.\nQui es, «que és»: na 2ª pessoa, porque se fala com o Pai. Caelis, ablativo plural de caelum: «nos céus».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Pai-Nosso",
+  "requerTodas": [
+   "la-p072",
+   "la-p089",
+   "la-p064",
+   "la-p003",
+   "la-p022",
+   "la-p090"
+  ],
+  "palavras": [
+   {
+    "w": "Pater",
+    "c": "la-p072",
+    "f": "vocativo singular",
+    "fn": "a quem se reza"
+   },
+   {
+    "w": "noster",
+    "c": "la-p089",
+    "f": "vocativo masculino singular",
+    "fn": "concorda com Pater"
+   },
+   {
+    "w": "qui",
+    "c": "la-p064",
+    "f": "nominativo masculino singular",
+    "fn": "o sujeito de es"
+   },
+   {
+    "w": "es",
+    "c": "la-p003",
+    "f": "presente do indicativo, 2ª pessoa do singular"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "caelis",
+    "c": "la-p090",
+    "f": "ablativo plural",
+    "fn": "onde"
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g006",
+   "la-g007"
+  ],
+  "texto": "oracoes/pater-noster",
+  "linha": 1
+ },
+ {
+  "id": "la-t005",
+  "tipo": "frase",
+  "la": "sanctificetur nomen tuum.",
+  "pt": "santificado seja o teu nome.",
+  "gabarito": "[santificado seja o [teu ~ vosso] nome ~ seja santificado o [teu ~ vosso] nome ~ que o [teu ~ vosso] nome seja santificado ~ o [teu ~ vosso] nome seja santificado]",
+  "aceitas": [],
+  "distratores": [
+   "santifica o teu nome.",
+   "santificaste o teu nome.",
+   "o teu nome santifica.",
+   "santificado foi o teu nome."
+  ],
+  "nota": "sanctificetur: presente do subjuntivo, 3ª pessoa do singular, voz passiva, o desejo.\nnomen: nominativo singular neutro, o sujeito.\ntuum: nominativo neutro singular, concorda com nomen.\nSanctificetur junta o -e- do subjuntivo da 1ª conjugação e o -tur da passiva: «seja santificado».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Pai-Nosso",
+  "requerTodas": [
+   "la-p091",
+   "la-p092",
+   "la-p055"
+  ],
+  "palavras": [
+   {
+    "w": "sanctificetur",
+    "c": "la-p091",
+    "f": "presente do subjuntivo, 3ª pessoa do singular, voz passiva",
+    "fn": "o desejo"
+   },
+   {
+    "w": "nomen",
+    "c": "la-p092",
+    "f": "nominativo singular neutro",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "tuum",
+    "c": "la-p055",
+    "f": "nominativo neutro singular",
+    "fn": "concorda com nomen"
+   }
+  ],
+  "conceitos": [
+   "la-g012",
+   "la-g015",
+   "la-g001"
+  ],
+  "texto": "oracoes/pater-noster",
+  "linha": 2
+ },
+ {
+  "id": "la-t006",
+  "tipo": "frase",
+  "la": "Adveniat regnum tuum.",
+  "pt": "Venha o teu reino.",
+  "gabarito": "[Venha ~ Que venha ~ Chegue ~ Que chegue ~ Venha a nós] o [teu ~ vosso] reino",
+  "aceitas": [],
+  "distratores": [
+   "Veio o teu reino.",
+   "O teu reino virá.",
+   "Vem ao teu reino.",
+   "Venham os teus reinos."
+  ],
+  "nota": "Adveniat: presente do subjuntivo, 3ª pessoa do singular, o pedido.\nregnum: nominativo singular neutro, o sujeito.\ntuum: nominativo neutro singular, concorda com regnum.\nAdveniat tem o -a- do subjuntivo (4ª conjugação): um pedido, «venha».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Pai-Nosso",
+  "requerTodas": [
+   "la-p093",
+   "la-p094",
+   "la-p055"
+  ],
+  "palavras": [
+   {
+    "w": "Adveniat",
+    "c": "la-p093",
+    "f": "presente do subjuntivo, 3ª pessoa do singular",
+    "fn": "o pedido"
+   },
+   {
+    "w": "regnum",
+    "c": "la-p094",
+    "f": "nominativo singular neutro",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "tuum",
+    "c": "la-p055",
+    "f": "nominativo neutro singular",
+    "fn": "concorda com regnum"
+   }
+  ],
+  "conceitos": [
+   "la-g012",
+   "la-g001"
+  ],
+  "texto": "oracoes/pater-noster",
+  "linha": 3
+ },
+ {
+  "id": "la-t007",
+  "tipo": "frase",
+  "la": "Fiat voluntas tua, sicut in caelo et in terra.",
+  "pt": "Seja feita a tua vontade, assim na terra como no céu.",
+  "gabarito": "[Seja feita ~ Faça-se ~ Que seja feita ~ Que se faça] a [tua ~ vossa] vontade[, ~] [assim na terra como no céu ~ como no céu, assim na terra ~ como no céu, assim também na terra ~ assim no céu como na terra ~ como no céu e na terra ~ tanto no céu como na terra]",
+  "aceitas": [],
+  "distratores": [
+   "Foi feita a tua vontade, assim na terra como no céu.",
+   "Faze a tua vontade, assim na terra como no céu.",
+   "Seja feita a vontade do céu e da terra.",
+   "A tua vontade fará o céu e a terra."
+  ],
+  "nota": "Fiat: presente do subjuntivo, 3ª pessoa do singular.\nvoluntas: nominativo singular, o sujeito.\ntua: nominativo feminino singular, concorda com voluntas.\nin: preposição com ablativo.\ncaelo: ablativo singular, onde.\nin: preposição com ablativo.\nterra: ablativo singular, onde.\nIn caelo, in terra: in + ablativo, o lugar onde. O latim diz «como no céu, assim também na terra»; a oração em português inverte.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Pai-Nosso",
+  "requerTodas": [
+   "la-p069",
+   "la-p095",
+   "la-p055",
+   "la-p085",
+   "la-p022",
+   "la-p090",
+   "la-p009",
+   "la-p096"
+  ],
+  "palavras": [
+   {
+    "w": "Fiat",
+    "c": "la-p069",
+    "f": "presente do subjuntivo, 3ª pessoa do singular"
+   },
+   {
+    "w": "voluntas",
+    "c": "la-p095",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "tua",
+    "c": "la-p055",
+    "f": "nominativo feminino singular",
+    "fn": "concorda com voluntas"
+   },
+   {
+    "w": "sicut",
+    "c": "la-p085"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "caelo",
+    "c": "la-p090",
+    "f": "ablativo singular",
+    "fn": "onde"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "terra",
+    "c": "la-p096",
+    "f": "ablativo singular",
+    "fn": "onde"
+   }
+  ],
+  "conceitos": [
+   "la-g012",
+   "la-g006"
+  ],
+  "texto": "oracoes/pater-noster",
+  "linha": 4
+ },
+ {
+  "id": "la-t008",
+  "tipo": "frase",
+  "la": "Panem nostrum quotidianum da nobis hodie,",
+  "pt": "O pão nosso de cada dia dá-nos hoje,",
+  "gabarito": "[[O ~] pão nosso de cada dia ~ [O ~] nosso pão de cada dia ~ [O ~] nosso pão cotidiano ~ [O ~] pão nosso cotidiano][, ~] [nos dá ~ nos dai ~ nos dê ~ dá-nos ~ dai-nos ~ dê-nos] hoje",
+  "aceitas": [
+   "da nos hoje o pao nosso de cada dia",
+   "dai nos hoje o pao nosso de cada dia",
+   "nos da hoje o pao de cada dia"
+  ],
+  "distratores": [
+   "O pão nosso de cada dia nos deste hoje,",
+   "O pão nosso de cada dia damos hoje,",
+   "O pão de cada dia é nosso hoje,",
+   "Dá-nos hoje o pão de cada um,"
+  ],
+  "nota": "Panem: acusativo singular, o objeto direto de da.\nnostrum: acusativo masculino singular, concorda com panem.\nquotidianum: acusativo masculino singular, concorda com panem.\nda: imperativo presente, 2ª pessoa do singular.\nnobis: dativo plural, a quem se dá.\nO objeto (panem, no acusativo, com os dois adjetivos que concordam com ele) vem antes do verbo. Da é o imperativo de do; nobis, o dativo, «a nós».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Pai-Nosso",
+  "requerTodas": [
+   "la-p097",
+   "la-p089",
+   "la-p098",
+   "la-p099",
+   "la-p079",
+   "la-p100"
+  ],
+  "palavras": [
+   {
+    "w": "Panem",
+    "c": "la-p097",
+    "f": "acusativo singular",
+    "fn": "o objeto direto de da"
+   },
+   {
+    "w": "nostrum",
+    "c": "la-p089",
+    "f": "acusativo masculino singular",
+    "fn": "concorda com panem"
+   },
+   {
+    "w": "quotidianum",
+    "c": "la-p098",
+    "f": "acusativo masculino singular",
+    "fn": "concorda com panem"
+   },
+   {
+    "w": "da",
+    "c": "la-p099",
+    "f": "imperativo presente, 2ª pessoa do singular"
+   },
+   {
+    "w": "nobis",
+    "c": "la-p079",
+    "f": "dativo plural",
+    "fn": "a quem se dá"
+   },
+   {
+    "w": "hodie",
+    "c": "la-p100"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g011",
+   "la-g005"
+  ],
+  "texto": "oracoes/pater-noster",
+  "linha": 5
+ },
+ {
+  "id": "la-t009",
+  "tipo": "frase",
+  "la": "et dimitte nobis debita nostra,",
+  "pt": "e perdoa-nos as nossas dívidas,",
+  "gabarito": "[e ~] [perdoa-nos ~ perdoai-nos ~ nos perdoa ~ nos perdoai ~ perdoe-nos ~ nos perdoe] as nossas [dívidas ~ ofensas ~ faltas ~ culpas]",
+  "aceitas": [],
+  "distratores": [
+   "e perdoamos as nossas dívidas,",
+   "e nos perdoaste as nossas dívidas,",
+   "e perdoa as dívidas que nos deves,",
+   "e perdoa-nos a nossa dívida,"
+  ],
+  "nota": "dimitte: imperativo presente, 2ª pessoa do singular.\nnobis: dativo plural, a quem se perdoa.\ndebita: acusativo plural neutro, o objeto direto.\nnostra: acusativo neutro plural, concorda com debita.\nDimitte, imperativo de 3ª conjugação (-e): «perdoa», «deixa ir». Debita, neutro plural (-a), é o objeto.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Pai-Nosso",
+  "requerTodas": [
+   "la-p009",
+   "la-p101",
+   "la-p079",
+   "la-p102",
+   "la-p089"
+  ],
+  "palavras": [
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "dimitte",
+    "c": "la-p101",
+    "f": "imperativo presente, 2ª pessoa do singular"
+   },
+   {
+    "w": "nobis",
+    "c": "la-p079",
+    "f": "dativo plural",
+    "fn": "a quem se perdoa"
+   },
+   {
+    "w": "debita",
+    "c": "la-p102",
+    "f": "acusativo plural neutro",
+    "fn": "o objeto direto"
+   },
+   {
+    "w": "nostra",
+    "c": "la-p089",
+    "f": "acusativo neutro plural",
+    "fn": "concorda com debita"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g003",
+   "la-g005"
+  ],
+  "texto": "oracoes/pater-noster",
+  "linha": 6
+ },
+ {
+  "id": "la-t010",
+  "tipo": "frase",
+  "la": "sicut et nos dimittimus debitoribus nostris.",
+  "pt": "assim como nós perdoamos aos nossos devedores.",
+  "gabarito": "[assim como ~ como] [também ~] nós [também ~] perdoamos [aos ~ os] nossos devedores",
+  "aceitas": [
+   "assim como nos perdoamos a quem nos tem ofendido"
+  ],
+  "distratores": [
+   "assim como os nossos devedores nos perdoam.",
+   "assim como nós perdoávamos aos nossos devedores.",
+   "assim como vós perdoais aos vossos devedores.",
+   "assim como nós devemos aos nossos devedores."
+  ],
+  "nota": "et: aqui é «também».\nnos: nominativo plural, o sujeito.\ndimittimus: presente do indicativo, 1ª pessoa do plural.\ndebitoribus: dativo plural, a quem se perdoa.\nnostris: dativo masculino plural, concorda com debitoribus.\nDimittimus, com -mus, é a 1ª pessoa do plural: «perdoamos». Debitoribus, dativo plural da 3ª declinação (-ibus).",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Pai-Nosso",
+  "requerTodas": [
+   "la-p085",
+   "la-p009",
+   "la-p079",
+   "la-p101",
+   "la-p103",
+   "la-p089"
+  ],
+  "palavras": [
+   {
+    "w": "sicut",
+    "c": "la-p085"
+   },
+   {
+    "w": "et",
+    "c": "la-p009",
+    "fn": "aqui é «também»"
+   },
+   {
+    "w": "nos",
+    "c": "la-p079",
+    "f": "nominativo plural",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "dimittimus",
+    "c": "la-p101",
+    "f": "presente do indicativo, 1ª pessoa do plural"
+   },
+   {
+    "w": "debitoribus",
+    "c": "la-p103",
+    "f": "dativo plural",
+    "fn": "a quem se perdoa"
+   },
+   {
+    "w": "nostris",
+    "c": "la-p089",
+    "f": "dativo masculino plural",
+    "fn": "concorda com debitoribus"
+   }
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g005",
+   "la-g001"
+  ],
+  "texto": "oracoes/pater-noster",
+  "linha": 7
+ },
+ {
+  "id": "la-t011",
+  "tipo": "frase",
+  "la": "Et ne nos inducas in tentationem,",
+  "pt": "E não nos induzas à tentação,",
+  "gabarito": "[E ~] não nos [induzas ~ induzais ~ leves ~ leveis ~ conduzas ~ conduzais ~ deixes cair ~ deixeis cair] [à ~ em ~ na ~ para a] tentação",
+  "aceitas": [],
+  "distratores": [
+   "E não nos induziste à tentação,",
+   "E nós não te induzimos à tentação,",
+   "E não nos induzirás à tentação,",
+   "E não induzas a tentação,"
+  ],
+  "nota": "ne: a negação do pedido.\nnos: acusativo plural, o objeto.\ninducas: presente do subjuntivo, 2ª pessoa do singular, o pedido negativo.\nin: preposição com acusativo, para dentro de.\ntentationem: acusativo singular.\nNe + subjuntivo (inducas, com -a-) é o pedido negativo. No Brasil se reza «e não nos deixeis cair em tentação».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Pai-Nosso",
+  "requerTodas": [
+   "la-p009",
+   "la-p104",
+   "la-p079",
+   "la-p105",
+   "la-p022",
+   "la-p106"
+  ],
+  "palavras": [
+   {
+    "w": "Et",
+    "c": "la-p009"
+   },
+   {
+    "w": "ne",
+    "c": "la-p104",
+    "fn": "a negação do pedido"
+   },
+   {
+    "w": "nos",
+    "c": "la-p079",
+    "f": "acusativo plural",
+    "fn": "o objeto"
+   },
+   {
+    "w": "inducas",
+    "c": "la-p105",
+    "f": "presente do subjuntivo, 2ª pessoa do singular",
+    "fn": "o pedido negativo"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com acusativo",
+    "fn": "para dentro de"
+   },
+   {
+    "w": "tentationem",
+    "c": "la-p106",
+    "f": "acusativo singular"
+   }
+  ],
+  "conceitos": [
+   "la-g012",
+   "la-g003"
+  ],
+  "texto": "oracoes/pater-noster",
+  "linha": 8
+ },
+ {
+  "id": "la-t012",
+  "tipo": "frase",
+  "la": "sed libera nos a malo. Amen.",
+  "pt": "mas livra-nos do mal. Amém.",
+  "gabarito": "[mas ~ porém] [livra-nos ~ livrai-nos ~ nos livra ~ nos livrai ~ livre-nos ~ nos livre ~ liberta-nos ~ libertai-nos ~ nos liberta] [do mal ~ do maligno][ Amém ~ Assim seja ~]",
+  "aceitas": [],
+  "distratores": [
+   "mas livramo-nos do mal. Amém.",
+   "mas livrou-nos do mal. Amém.",
+   "mas livra-nos para o mal. Amém.",
+   "mas o mal nos livra. Amém."
+  ],
+  "nota": "libera: imperativo presente, 2ª pessoa do singular.\nnos: acusativo plural, o objeto.\na: preposição com ablativo, o afastamento.\nmalo: ablativo singular, depois de a.\nAmen: palavra hebraica: amém, assim seja.\nLibera é o imperativo de 1ª conjugação, «livra»; a + ablativo, o afastamento, «do mal». Malo pode ser «o mal» ou «o Maligno».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Pai-Nosso",
+  "requerTodas": [
+   "la-p107",
+   "la-p070",
+   "la-p079",
+   "la-p108",
+   "la-p109"
+  ],
+  "palavras": [
+   {
+    "w": "sed",
+    "c": "la-p107"
+   },
+   {
+    "w": "libera",
+    "c": "la-p070",
+    "f": "imperativo presente, 2ª pessoa do singular"
+   },
+   {
+    "w": "nos",
+    "c": "la-p079",
+    "f": "acusativo plural",
+    "fn": "o objeto"
+   },
+   {
+    "w": "a",
+    "c": "la-p108",
+    "f": "preposição com ablativo",
+    "fn": "o afastamento"
+   },
+   {
+    "w": "malo",
+    "c": "la-p109",
+    "f": "ablativo singular",
+    "fn": "depois de a"
+   },
+   {
+    "w": "Amen",
+    "fn": "palavra hebraica: amém, assim seja"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g006"
+  ],
+  "texto": "oracoes/pater-noster",
+  "linha": 9
+ },
+ {
+  "id": "la-t013",
+  "tipo": "frase",
+  "la": "Ave, Maria, gratia plena,",
+  "pt": "Ave, Maria, cheia de graça,",
+  "gabarito": "[Ave ~ Salve ~ Alegra-te][, ~] Maria[, ~] cheia de graça",
+  "aceitas": [],
+  "distratores": [
+   "Ave, Maria, graça cheia,",
+   "Ave, Maria, a graça te enche,",
+   "Ave, Maria, cheia de graças,",
+   "Ave, Maria, cheia da graça de Deus,"
+  ],
+  "nota": "Ave: a saudação.\nMaria: vocativo, nome próprio, Maria: a quem se fala.\ngratia: ablativo singular, de que está cheia.\nplena: vocativo feminino singular, concorda com Maria.\nGratia é ablativo: com plenus vai o de que se está cheio. A saudação do anjo (Lc 1,28).",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Ave-Maria",
+  "requerTodas": [
+   "la-p110",
+   "la-p050",
+   "la-p111"
+  ],
+  "palavras": [
+   {
+    "w": "Ave",
+    "c": "la-p110",
+    "fn": "a saudação"
+   },
+   {
+    "w": "Maria",
+    "f": "vocativo",
+    "fn": "nome próprio, Maria: a quem se fala"
+   },
+   {
+    "w": "gratia",
+    "c": "la-p050",
+    "f": "ablativo singular",
+    "fn": "de que está cheia"
+   },
+   {
+    "w": "plena",
+    "c": "la-p111",
+    "f": "vocativo feminino singular",
+    "fn": "concorda com Maria"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g002"
+  ],
+  "texto": "oracoes/ave-maria",
+  "linha": 1
+ },
+ {
+  "id": "la-t014",
+  "tipo": "frase",
+  "la": "Dominus tecum.",
+  "pt": "O Senhor é contigo.",
+  "gabarito": "[O ~] Senhor [é ~ está ~ esteja] [contigo ~ convosco ~ com você ~ com vós]",
+  "aceitas": [],
+  "distratores": [
+   "O Senhor é teu.",
+   "O Senhor está comigo.",
+   "Tu és o Senhor.",
+   "O Senhor estava contigo."
+  ],
+  "nota": "Dominus: nominativo singular, o sujeito.\nte: ablativo singular, depois de cum.\ncum: preposição com ablativo.\nTecum é cum te, com a preposição colada depois (como vobiscum): «contigo». O verbo est fica subentendido.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Ave-Maria",
+  "requerTodas": [
+   "la-p012",
+   "la-p007",
+   "la-p053"
+  ],
+  "palavras": [
+   {
+    "w": "Dominus",
+    "c": "la-p012",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "te",
+    "c": "la-p007",
+    "f": "ablativo singular",
+    "fn": "depois de cum"
+   },
+   {
+    "w": "cum",
+    "c": "la-p053",
+    "f": "preposição com ablativo"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g001"
+  ],
+  "texto": "oracoes/ave-maria",
+  "linha": 2
+ },
+ {
+  "id": "la-t015",
+  "tipo": "frase",
+  "la": "Benedicta tu in mulieribus,",
+  "pt": "bendita és tu entre as mulheres,",
+  "gabarito": "[bendita [és tu ~ sois vós ~ és] ~ tu és bendita ~ vós sois bendita] [entre as ~ entre ~ nas] mulheres",
+  "aceitas": [],
+  "distratores": [
+   "benditas são as mulheres em ti,",
+   "abençoas tu as mulheres,",
+   "bendita tu és para as mulheres,",
+   "bendita és tu por uma mulher,"
+  ],
+  "nota": "Benedicta: particípio perfeito, nominativo feminino singular, o predicativo, com es subentendido.\ntu: nominativo singular, o sujeito.\nin: preposição com ablativo, entre.\nmulieribus: ablativo plural.\nBenedicta é o particípio de benedico, «bendita» (de quem se diz bem). In + ablativo plural (-ibus): «entre as mulheres».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Ave-Maria",
+  "requerTodas": [
+   "la-p112",
+   "la-p007",
+   "la-p022",
+   "la-p113"
+  ],
+  "palavras": [
+   {
+    "w": "Benedicta",
+    "c": "la-p112",
+    "f": "particípio perfeito, nominativo feminino singular",
+    "fn": "o predicativo, com es subentendido"
+   },
+   {
+    "w": "tu",
+    "c": "la-p007",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo",
+    "fn": "entre"
+   },
+   {
+    "w": "mulieribus",
+    "c": "la-p113",
+    "f": "ablativo plural"
+   }
+  ],
+  "conceitos": [
+   "la-g014",
+   "la-g006"
+  ],
+  "texto": "oracoes/ave-maria",
+  "linha": 3
+ },
+ {
+  "id": "la-t016",
+  "tipo": "frase",
+  "la": "et benedictus fructus ventris tui, Iesus.",
+  "pt": "e bendito é o fruto do teu ventre, Jesus.",
+  "gabarito": "[e ~] bendito [é ~] o fruto do [teu ~ vosso] ventre[, ~] Jesus",
+  "aceitas": [],
+  "distratores": [
+   "e bendito é o teu ventre, fruto de Jesus.",
+   "e bendito é o ventre do teu fruto, Jesus.",
+   "e benditos são os frutos do teu ventre, Jesus.",
+   "e Jesus bendiz o fruto do teu ventre."
+  ],
+  "nota": "benedictus: particípio perfeito, nominativo masculino singular, concorda com fructus.\nfructus: nominativo singular, o sujeito (4ª declinação).\nventris: genitivo singular, de quem é o fruto.\ntui: genitivo masculino singular, concorda com ventris.\nIesus: nominativo, nome próprio, Jesus: aposto de fructus.\nFructus, da 4ª declinação, é o sujeito, e benedictus concorda com ele no masculino. Ventris tui, genitivo: «do teu ventre».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Ave-Maria",
+  "requerTodas": [
+   "la-p009",
+   "la-p112",
+   "la-p114",
+   "la-p115",
+   "la-p055"
+  ],
+  "palavras": [
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "benedictus",
+    "c": "la-p112",
+    "f": "particípio perfeito, nominativo masculino singular",
+    "fn": "concorda com fructus"
+   },
+   {
+    "w": "fructus",
+    "c": "la-p114",
+    "f": "nominativo singular",
+    "fn": "o sujeito (4ª declinação)"
+   },
+   {
+    "w": "ventris",
+    "c": "la-p115",
+    "f": "genitivo singular",
+    "fn": "de quem é o fruto"
+   },
+   {
+    "w": "tui",
+    "c": "la-p055",
+    "f": "genitivo masculino singular",
+    "fn": "concorda com ventris"
+   },
+   {
+    "w": "Iesus",
+    "f": "nominativo",
+    "fn": "nome próprio, Jesus: aposto de fructus"
+   }
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g014",
+   "la-g001"
+  ],
+  "texto": "oracoes/ave-maria",
+  "linha": 4
+ },
+ {
+  "id": "la-t017",
+  "tipo": "frase",
+  "la": "Sancta Maria, Mater Dei,",
+  "pt": "Santa Maria, Mãe de Deus,",
+  "gabarito": "Santa Maria[, ~] Mãe de Deus",
+  "aceitas": [],
+  "distratores": [
+   "Santa Maria, Mãe dos deuses,",
+   "Santa Maria e a Mãe de Deus,",
+   "Santa Maria, Mãe para Deus,",
+   "Santa Maria, a Mãe é de Deus,"
+  ],
+  "nota": "Sancta: vocativo feminino singular, concorda com Maria.\nMaria: vocativo, nome próprio, Maria.\nMater: vocativo singular, aposto de Maria.\nDei: genitivo singular, de quem é Mãe.\nTrês vocativos (a quem se fala) e um genitivo: Dei, «de Deus».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Ave-Maria",
+  "requerTodas": [
+   "la-p084",
+   "la-p116",
+   "la-p001"
+  ],
+  "palavras": [
+   {
+    "w": "Sancta",
+    "c": "la-p084",
+    "f": "vocativo feminino singular",
+    "fn": "concorda com Maria"
+   },
+   {
+    "w": "Maria",
+    "f": "vocativo",
+    "fn": "nome próprio, Maria"
+   },
+   {
+    "w": "Mater",
+    "c": "la-p116",
+    "f": "vocativo singular",
+    "fn": "aposto de Maria"
+   },
+   {
+    "w": "Dei",
+    "c": "la-p001",
+    "f": "genitivo singular",
+    "fn": "de quem é Mãe"
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g004"
+  ],
+  "texto": "oracoes/ave-maria",
+  "linha": 5
+ },
+ {
+  "id": "la-t018",
+  "tipo": "frase",
+  "la": "ora pro nobis peccatoribus,",
+  "pt": "roga por nós, pecadores,",
+  "gabarito": "[roga ~ rogai ~ rogue ~ ora ~ orai ~ reza ~ rezai ~ intercede ~ intercedei] por nós[, ~] pecadores",
+  "aceitas": [],
+  "distratores": [
+   "rogamos por vós, pecadores,",
+   "roga pelos pecadores e por nós,",
+   "rogou por nós, pecadores,",
+   "roga conosco, pecadores,"
+  ],
+  "nota": "ora: imperativo presente, 2ª pessoa do singular.\npro: preposição com ablativo.\nnobis: ablativo plural, depois de pro.\npeccatoribus: ablativo plural, concorda com nobis: quem somos nós.\nPro pede ablativo: nobis e peccatoribus (3ª declinação, -ibus).",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Ave-Maria",
+  "requerTodas": [
+   "la-p077",
+   "la-p078",
+   "la-p079",
+   "la-p117"
+  ],
+  "palavras": [
+   {
+    "w": "ora",
+    "c": "la-p077",
+    "f": "imperativo presente, 2ª pessoa do singular"
+   },
+   {
+    "w": "pro",
+    "c": "la-p078",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "nobis",
+    "c": "la-p079",
+    "f": "ablativo plural",
+    "fn": "depois de pro"
+   },
+   {
+    "w": "peccatoribus",
+    "c": "la-p117",
+    "f": "ablativo plural",
+    "fn": "concorda com nobis: quem somos nós"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g006"
+  ],
+  "texto": "oracoes/ave-maria",
+  "linha": 6
+ },
+ {
+  "id": "la-t019",
+  "tipo": "frase",
+  "la": "nunc et in hora mortis nostrae. Amen.",
+  "pt": "agora e na hora da nossa morte. Amém.",
+  "gabarito": "agora e na hora da [nossa morte ~ morte nossa][ Amém ~ Assim seja ~]",
+  "aceitas": [],
+  "distratores": [
+   "agora e na hora da vossa morte. Amém.",
+   "agora e na hora para a nossa morte. Amém.",
+   "agora e nas horas da nossa morte. Amém.",
+   "agora e na morte da nossa hora. Amém."
+  ],
+  "nota": "in: preposição com ablativo.\nhora: ablativo singular, quando.\nmortis: genitivo singular.\nnostrae: genitivo feminino singular, concorda com mortis.\nAmen: palavra hebraica: amém, assim seja.\nIn hora, ablativo: o tempo, «na hora». Mortis nostrae, genitivo: «da nossa morte».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Ave-Maria",
+  "requerTodas": [
+   "la-p086",
+   "la-p009",
+   "la-p022",
+   "la-p118",
+   "la-p119",
+   "la-p089"
+  ],
+  "palavras": [
+   {
+    "w": "nunc",
+    "c": "la-p086"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "hora",
+    "c": "la-p118",
+    "f": "ablativo singular",
+    "fn": "quando"
+   },
+   {
+    "w": "mortis",
+    "c": "la-p119",
+    "f": "genitivo singular"
+   },
+   {
+    "w": "nostrae",
+    "c": "la-p089",
+    "f": "genitivo feminino singular",
+    "fn": "concorda com mortis"
+   },
+   {
+    "w": "Amen",
+    "fn": "palavra hebraica: amém, assim seja"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g004"
+  ],
+  "texto": "oracoes/ave-maria",
+  "linha": 7
+ },
+ {
+  "id": "la-t020",
+  "tipo": "frase",
+  "la": "Non amo te, Sabidi, nec possum dicere quare:",
+  "pt": "Não te amo, Sabídio, e não posso dizer por quê:",
+  "gabarito": "[[Eu ~] não te amo ~ [Eu ~] não gosto de [ti ~ você] ~ [Eu ~] não amo você][, ~] Sabídio[, ~] [e não ~ nem] [posso ~ sei ~ consigo] dizer [por quê ~ porque ~ o porquê ~ por que motivo]",
+  "aceitas": [],
+  "distratores": [
+   "Não me amas, Sabídio, e não podes dizer por quê:",
+   "Não te amei, Sabídio, e não pude dizer por quê:",
+   "Não te amo, Sabídio, mas posso dizer por quê:",
+   "Não amo Sabídio, e ele não pode dizer por quê:"
+  ],
+  "nota": "amo: presente do indicativo, 1ª pessoa do singular.\nte: acusativo singular, o objeto.\nSabidi: vocativo singular, nome próprio, Sabídio: a quem se fala.\nnec: e não.\npossum: presente do indicativo, 1ª pessoa do singular.\ndicere: infinitivo presente, completa possum.\nquare: por quê.\nSabidi é o vocativo de Sabidius (os nomes em -ius fazem o vocativo em -i). Possum pede infinitivo: dicere. Nec é et non.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Marcial I,32",
+  "requerTodas": [
+   "la-p066",
+   "la-p037",
+   "la-p007",
+   "la-p120",
+   "la-p121",
+   "la-p122",
+   "la-p123"
+  ],
+  "palavras": [
+   {
+    "w": "Non",
+    "c": "la-p066"
+   },
+   {
+    "w": "amo",
+    "c": "la-p037",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "te",
+    "c": "la-p007",
+    "f": "acusativo singular",
+    "fn": "o objeto"
+   },
+   {
+    "w": "Sabidi",
+    "f": "vocativo singular",
+    "fn": "nome próprio, Sabídio: a quem se fala"
+   },
+   {
+    "w": "nec",
+    "c": "la-p120",
+    "fn": "e não"
+   },
+   {
+    "w": "possum",
+    "c": "la-p121",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "dicere",
+    "c": "la-p122",
+    "f": "infinitivo presente",
+    "fn": "completa possum"
+   },
+   {
+    "w": "quare",
+    "c": "la-p123",
+    "fn": "por quê"
+   }
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g002",
+   "la-g013"
+  ],
+  "texto": "marcial/non-amo-te",
+  "linha": 1
+ },
+ {
+  "id": "la-t021",
+  "tipo": "frase",
+  "la": "hoc tantum possum dicere, non amo te.",
+  "pt": "só isto posso dizer: não te amo.",
+  "gabarito": "[[só ~ apenas ~ somente] isto [eu ~] [posso ~ consigo ~ sei] dizer ~ [eu ~] [posso ~ consigo ~ sei] dizer [só ~ apenas ~ somente] isto][: ~ , ~] [eu ~] não te amo",
+  "aceitas": [],
+  "distratores": [
+   "só isto podes dizer: não te amo.",
+   "isto não posso dizer: não te amo.",
+   "só isto pude dizer: não te amei.",
+   "tanto posso dizer que te amo."
+  ],
+  "nota": "hoc: acusativo neutro singular, o objeto de dicere: isto.\ntantum: só.\npossum: presente do indicativo, 1ª pessoa do singular.\ndicere: infinitivo presente.\namo: presente do indicativo, 1ª pessoa do singular.\nte: acusativo singular, o objeto.\nHoc é o acusativo neutro de hic, «isto». O epigrama fecha com a frase com que abriu: a resposta é não dar resposta.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Marcial I,32",
+  "requerTodas": [
+   "la-p124",
+   "la-p125",
+   "la-p121",
+   "la-p122",
+   "la-p066",
+   "la-p037",
+   "la-p007"
+  ],
+  "palavras": [
+   {
+    "w": "hoc",
+    "c": "la-p124",
+    "f": "acusativo neutro singular",
+    "fn": "o objeto de dicere: isto"
+   },
+   {
+    "w": "tantum",
+    "c": "la-p125",
+    "fn": "só"
+   },
+   {
+    "w": "possum",
+    "c": "la-p121",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "dicere",
+    "c": "la-p122",
+    "f": "infinitivo presente"
+   },
+   {
+    "w": "non",
+    "c": "la-p066"
+   },
+   {
+    "w": "amo",
+    "c": "la-p037",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "te",
+    "c": "la-p007",
+    "f": "acusativo singular",
+    "fn": "o objeto"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g013",
+   "la-g007"
+  ],
+  "texto": "marcial/non-amo-te",
+  "linha": 2
+ }
+]

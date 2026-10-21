@@ -149,8 +149,11 @@
     var pode = await sb.schema('conta').rpc('tem_papel', { papel: 'revisor', escopo: '*' });
     if (pode.error || !pode.data) { estado('Esta página é só para a curadoria dos Cards.', true); return; }
     estado('Carregando os comentários…');
-    await Promise.all([carregarScript('data/cards-es.js'), carregarScript('data/cards-en.js')]);
-    ['es', 'en'].forEach(function (l) {
+    /* os baralhos publicados (o versoes.js diz quais), para o comentário mostrar o card; o
+       francês e o latim (21/10/2026) entraram com eles */
+    var LINGUAS = ['es', 'en', 'pt', 'fr', 'la'].filter(function (l) { return !!(window.CARDS_VERSOES || {})['data/cards-' + l + '.js']; });
+    await Promise.all(LINGUAS.map(function (l) { return carregarScript('data/cards-' + l + '.js'); }));
+    LINGUAS.forEach(function (l) {
       var b = window.BARALHOS && window.BARALHOS[l];
       cardsPorCurso[l] = {};
       if (b) b.cards.forEach(function (c) { cardsPorCurso[l][c.id] = c; });

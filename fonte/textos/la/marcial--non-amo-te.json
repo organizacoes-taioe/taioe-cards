@@ -1,0 +1,231 @@
+{
+ "id": "marcial/non-amo-te",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Non amo te",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/non-amo-te/",
+ "ordem": 4,
+ "fonte": "Epigramas, livro I, 32",
+ "blocos": [
+  [
+   {
+    "t": "Non amo te, Sabidi, nec possum dicere quare:",
+    "p": [
+     [
+      "Non",
+      "non"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "amo",
+      "amo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "te",
+      "te"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Sabidi",
+      "sabidi"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "nec",
+      "nec"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "possum",
+      "possum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dicere",
+      "dicere"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "quare",
+      "quare"
+     ],
+     [
+      ":",
+      null
+     ]
+    ],
+    "card": "la-t020"
+   },
+   {
+    "t": "hoc tantum possum dicere, non amo te.",
+    "p": [
+     [
+      "hoc",
+      "hoc"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tantum",
+      "tantum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "possum",
+      "possum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dicere",
+      "dicere#2"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "non",
+      "non"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "amo",
+      "amo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "te",
+      "te"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t021"
+   }
+  ]
+ ],
+ "destinos": {
+  "non": {
+   "lema": "non",
+   "classe": "advérbio",
+   "card": "la-p066",
+   "wiki": "https://en.wiktionary.org/wiki/non#Latin"
+  },
+  "amo": {
+   "lema": "amo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "card": "la-p037",
+   "wiki": "https://en.wiktionary.org/wiki/amo#Latin"
+  },
+  "te": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "acusativo singular",
+   "funcao": "o objeto",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  },
+  "sabidi": {
+   "lema": "Sabidius",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Sabídio, o homem a quem o epigrama se dirige."
+   ],
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala"
+  },
+  "nec": {
+   "lema": "nec",
+   "classe": "conjunção",
+   "funcao": "e não",
+   "card": "la-p120",
+   "wiki": "https://en.wiktionary.org/wiki/nec#Latin"
+  },
+  "possum": {
+   "lema": "possum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "card": "la-p121",
+   "wiki": "https://en.wiktionary.org/wiki/possum#Latin"
+  },
+  "dicere": {
+   "lema": "dico",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "completa possum",
+   "card": "la-p122",
+   "wiki": "https://en.wiktionary.org/wiki/dico#Latin"
+  },
+  "quare": {
+   "lema": "quare",
+   "classe": "advérbio",
+   "funcao": "por quê",
+   "card": "la-p123",
+   "wiki": "https://en.wiktionary.org/wiki/quare#Latin"
+  },
+  "hoc": {
+   "lema": "hic",
+   "classe": "pronome",
+   "forma": "acusativo neutro singular",
+   "funcao": "o objeto de dicere: isto",
+   "card": "la-p124",
+   "wiki": "https://en.wiktionary.org/wiki/hic#Latin"
+  },
+  "tantum": {
+   "lema": "tantum",
+   "classe": "advérbio",
+   "funcao": "só",
+   "card": "la-p125",
+   "wiki": "https://en.wiktionary.org/wiki/tantum#Latin"
+  },
+  "dicere#2": {
+   "lema": "dico",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "card": "la-p122",
+   "wiki": "https://en.wiktionary.org/wiki/dico#Latin"
+  }
+ }
+}

@@ -1,0 +1,1910 @@
+[
+ {
+  "id": "la-f001",
+  "tipo": "frase",
+  "la": "Deus caritas est.",
+  "pt": "Deus é amor.",
+  "gabarito": "Deus é [amor ~ caridade]",
+  "aceitas": [],
+  "distratores": [
+   "Deus era amor.",
+   "Deus será amor.",
+   "Deus ama a caridade.",
+   "Os deuses são amor."
+  ],
+  "nota": "Deus: nominativo singular, o sujeito.\ncaritas: nominativo singular, o predicativo: o que se diz de Deus.\nest: presente do indicativo, 3ª pessoa do singular, o verbo de ligação.\nCom o verbo sum, o que se diz do sujeito também vai no nominativo.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "1Jo 4,16",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Deus",
+    "c": "la-p001",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "caritas",
+    "c": "la-p002",
+    "f": "nominativo singular",
+    "fn": "o predicativo: o que se diz de Deus"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "o verbo de ligação"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f002",
+  "tipo": "frase",
+  "la": "Ego sum pastor bonus.",
+  "pt": "Eu sou o bom pastor.",
+  "gabarito": "[Eu ~] sou o [bom pastor ~ pastor bom]",
+  "aceitas": [],
+  "distratores": [
+   "Eu era o bom pastor.",
+   "Eu tenho um bom pastor.",
+   "Tu és o bom pastor.",
+   "Eu sou o pastor dos bons."
+  ],
+  "nota": "Ego: nominativo singular, o sujeito, com ênfase.\nsum: presente do indicativo, 1ª pessoa do singular.\npastor: nominativo singular, o predicativo.\nbonus: nominativo masculino singular, concorda com pastor.\nO adjetivo concorda com o nome em gênero, número e caso. Ego dá ênfase: «sou eu o bom pastor».",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 10,11",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Ego",
+    "c": "la-p004",
+    "f": "nominativo singular",
+    "fn": "o sujeito, com ênfase"
+   },
+   {
+    "w": "sum",
+    "c": "la-p003",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "pastor",
+    "c": "la-p005",
+    "f": "nominativo singular",
+    "fn": "o predicativo"
+   },
+   {
+    "w": "bonus",
+    "c": "la-p006",
+    "f": "nominativo masculino singular",
+    "fn": "concorda com pastor"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f003",
+  "tipo": "frase",
+  "la": "Tu es Petrus.",
+  "pt": "Tu és Pedro.",
+  "gabarito": "[Tu és ~ Você é ~ És] Pedro",
+  "aceitas": [],
+  "distratores": [
+   "Tu eras Pedro.",
+   "Eu sou Pedro.",
+   "Tu serás Pedro.",
+   "Ele é Pedro."
+  ],
+  "nota": "Tu: nominativo singular, o sujeito.\nes: presente do indicativo, 2ª pessoa do singular.\nPetrus: nominativo singular, nome próprio, Pedro: o predicativo.\nes é a 2ª pessoa de sum: sum, es, est (sou, és, é).",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Mt 16,18",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Tu",
+    "c": "la-p007",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "es",
+    "c": "la-p003",
+    "f": "presente do indicativo, 2ª pessoa do singular"
+   },
+   {
+    "w": "Petrus",
+    "f": "nominativo singular",
+    "fn": "nome próprio, Pedro: o predicativo"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f004",
+  "tipo": "frase",
+  "la": "Ego sum via, et veritas, et vita.",
+  "pt": "Eu sou o caminho, a verdade e a vida.",
+  "gabarito": "[Eu ~] sou o caminho [e ~] a verdade e a vida",
+  "aceitas": [],
+  "distratores": [
+   "Eu sou o caminho da verdade e da vida.",
+   "Eu era o caminho, a verdade e a vida.",
+   "Eu vou pelo caminho da verdade e da vida.",
+   "Tu és o caminho, a verdade e a vida."
+  ],
+  "nota": "Ego: nominativo singular, o sujeito.\nsum: presente do indicativo, 1ª pessoa do singular.\nvia: nominativo singular, predicativo.\nveritas: nominativo singular, predicativo.\nvita: nominativo singular, predicativo.\nOs três nomes estão no nominativo, como predicativos de ego. Nenhum está no genitivo (que seria viae, veritatis, vitae).",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 14,6",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Ego",
+    "c": "la-p004",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "sum",
+    "c": "la-p003",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "via",
+    "c": "la-p008",
+    "f": "nominativo singular",
+    "fn": "predicativo"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "veritas",
+    "c": "la-p010",
+    "f": "nominativo singular",
+    "fn": "predicativo"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "vita",
+    "c": "la-p011",
+    "f": "nominativo singular",
+    "fn": "predicativo"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f005",
+  "tipo": "frase",
+  "la": "Dominus meus et Deus meus.",
+  "pt": "Meu Senhor e meu Deus.",
+  "gabarito": "[Meu Senhor e meu Deus ~ Senhor meu e Deus meu]",
+  "aceitas": [],
+  "distratores": [
+   "O Senhor do meu Deus.",
+   "Meus senhores e meus deuses.",
+   "O Deus do meu Senhor.",
+   "Senhor meu e Deus teu."
+  ],
+  "nota": "Dominus: nominativo singular, exclamação.\nmeus: nominativo masculino singular, concorda com Dominus.\nDeus: nominativo singular, exclamação.\nmeus: nominativo masculino singular, concorda com Deus.\nA confissão de Tomé diante de Jesus ressuscitado: só nominativos, sem verbo. É Dominus, e não o vocativo Domine: o nominativo também serve à exclamação.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 20,28",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Dominus",
+    "c": "la-p012",
+    "f": "nominativo singular",
+    "fn": "exclamação"
+   },
+   {
+    "w": "meus",
+    "c": "la-p013",
+    "f": "nominativo masculino singular",
+    "fn": "concorda com Dominus"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "Deus",
+    "c": "la-p001",
+    "f": "nominativo singular",
+    "fn": "exclamação"
+   },
+   {
+    "w": "meus",
+    "c": "la-p013",
+    "f": "nominativo masculino singular",
+    "fn": "concorda com Deus"
+   }
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f006",
+  "tipo": "frase",
+  "la": "Ecce homo.",
+  "pt": "Eis o homem.",
+  "gabarito": "[Eis ~ Eis aqui ~ Aqui está ~ Vede] o homem",
+  "aceitas": [],
+  "distratores": [
+   "Eis os homens.",
+   "Eis o filho do homem.",
+   "Eis que o homem vem.",
+   "Eis o caminho do homem."
+  ],
+  "nota": "homo: nominativo singular, o que se mostra.\nPilatos mostrando Jesus coroado de espinhos. Depois de ecce, o que se aponta fica no nominativo.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 19,5",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Ecce",
+    "c": "la-p014"
+   },
+   {
+    "w": "homo",
+    "c": "la-p015",
+    "f": "nominativo singular",
+    "fn": "o que se mostra"
+   }
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f007",
+  "tipo": "frase",
+  "la": "Magnus es, Domine.",
+  "pt": "Tu és grande, Senhor.",
+  "gabarito": "[[Tu és ~ És ~ Você é] grande, Senhor ~ Senhor, [tu és ~ és ~ você é] grande]",
+  "aceitas": [],
+  "distratores": [
+   "O Senhor é grande.",
+   "Teu Senhor é grande.",
+   "Tu eras grande, Senhor.",
+   "Tu serás grande, Senhor."
+  ],
+  "nota": "Magnus: nominativo masculino singular, o predicativo do sujeito tu, que está no verbo.\nes: presente do indicativo, 2ª pessoa do singular.\nDomine: vocativo singular, a quem se fala.\nDomine é o vocativo de Dominus: é com Deus que Agostinho fala, logo na primeira linha das Confissões.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Agostinho, Confissões I,1",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Magnus",
+    "c": "la-p016",
+    "f": "nominativo masculino singular",
+    "fn": "o predicativo do sujeito tu, que está no verbo"
+   },
+   {
+    "w": "es",
+    "c": "la-p003",
+    "f": "presente do indicativo, 2ª pessoa do singular"
+   },
+   {
+    "w": "Domine",
+    "c": "la-p012",
+    "f": "vocativo singular",
+    "fn": "a quem se fala"
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f008",
+  "tipo": "frase",
+  "la": "Sitio.",
+  "pt": "Tenho sede.",
+  "gabarito": "[Eu ~] [tenho sede ~ estou com sede]",
+  "aceitas": [],
+  "distratores": [
+   "Tive sede.",
+   "Ele tem sede.",
+   "Teremos sede.",
+   "Tens sede?"
+  ],
+  "nota": "Sitio: presente do indicativo, 1ª pessoa do singular.\nUma palavra, uma frase inteira: a terminação -o diz «eu», e o presente diz «agora». Uma das sete palavras de Jesus na cruz.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 19,28",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Sitio",
+    "c": "la-p017",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "homografos": [
+   "la-p017"
+  ]
+ },
+ {
+  "id": "la-f009",
+  "tipo": "frase",
+  "la": "Laudate Dominum, omnes gentes.",
+  "pt": "Louvai o Senhor, todas as nações.",
+  "gabarito": "[[Louvai ~ Louvem] [o ~ ao] Senhor, [todas as nações ~ todos os povos ~ ó nações todas ~ todas as gentes ~ povos todos] ~ [Todas as nações ~ Todos os povos ~ Nações todas ~ Todas as gentes ~ Povos todos], [louvai ~ louvem] [o ~ ao] Senhor]",
+  "aceitas": [],
+  "distratores": [
+   "O Senhor louva todas as nações.",
+   "Todas as nações louvam o Senhor.",
+   "Louvaram o Senhor todas as nações.",
+   "Louvai o Senhor de todas as nações."
+  ],
+  "nota": "Laudate: imperativo presente, 2ª pessoa do plural, a ordem a vários.\nDominum: acusativo singular, o objeto direto de laudate.\nomnes: vocativo feminino plural, concorda com gentes.\ngentes: vocativo plural, os chamados a louvar.\nDominum, no acusativo (-um), é quem recebe o louvor; omnes gentes são os chamados, no vocativo plural (igual ao nominativo).",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Sl 117 (116),1",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Laudate",
+    "c": "la-p018",
+    "f": "imperativo presente, 2ª pessoa do plural",
+    "fn": "a ordem a vários"
+   },
+   {
+    "w": "Dominum",
+    "c": "la-p012",
+    "f": "acusativo singular",
+    "fn": "o objeto direto de laudate"
+   },
+   {
+    "w": "omnes",
+    "c": "la-p019",
+    "f": "vocativo feminino plural",
+    "fn": "concorda com gentes"
+   },
+   {
+    "w": "gentes",
+    "c": "la-p020",
+    "f": "vocativo plural",
+    "fn": "os chamados a louvar"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g003",
+   "la-g002"
+  ]
+ },
+ {
+  "id": "la-f010",
+  "tipo": "frase",
+  "la": "Credo in unum Deum.",
+  "pt": "Creio em um só Deus.",
+  "gabarito": "[Eu ~] [creio ~ acredito] em [um só ~ um ~ um único ~ único] Deus",
+  "aceitas": [],
+  "distratores": [
+   "Creio que Deus é um.",
+   "Cremos em um só Deus.",
+   "Um só Deus crê em mim.",
+   "Crerei em um só Deus."
+  ],
+  "nota": "Credo: presente do indicativo, 1ª pessoa do singular.\nin: preposição com acusativo, em quem se crê.\nunum: acusativo masculino singular, concorda com Deum.\nDeum: acusativo singular, depois de in.\nCredo in + acusativo: crer em alguém, confiar nele. É a primeira palavra do Credo da Missa.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Credo",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Credo",
+    "c": "la-p021",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com acusativo",
+    "fn": "em quem se crê"
+   },
+   {
+    "w": "unum",
+    "c": "la-p023",
+    "f": "acusativo masculino singular",
+    "fn": "concorda com Deum"
+   },
+   {
+    "w": "Deum",
+    "c": "la-p001",
+    "f": "acusativo singular",
+    "fn": "depois de in"
+   }
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-f011",
+  "tipo": "frase",
+  "la": "Carpe diem.",
+  "pt": "Aproveita o dia.",
+  "gabarito": "[Aproveita ~ Aproveite ~ Colhe ~ Colha ~ Goza ~ Desfruta ~ Desfrute] o dia",
+  "aceitas": [],
+  "distratores": [
+   "Aproveitei o dia.",
+   "O dia aproveita.",
+   "Aproveita os dias.",
+   "Aproveitará o dia."
+  ],
+  "nota": "Carpe: imperativo presente, 2ª pessoa do singular.\ndiem: acusativo singular, o objeto direto.\nCarpe é o imperativo de carpo, colher: «colhe o dia», como se colhe um fruto. Diem é o acusativo de dies, da 5ª declinação.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Horácio, Odes I,11",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Carpe",
+    "c": "la-p024",
+    "f": "imperativo presente, 2ª pessoa do singular"
+   },
+   {
+    "w": "diem",
+    "c": "la-p025",
+    "f": "acusativo singular",
+    "fn": "o objeto direto"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-f012",
+  "tipo": "frase",
+  "la": "Arma virumque cano.",
+  "pt": "Canto as armas e o herói.",
+  "gabarito": "[Eu ~] [canto ~ celebro] as armas e o [herói ~ homem ~ varão]",
+  "aceitas": [],
+  "distratores": [
+   "As armas e o herói cantam.",
+   "Canto as armas do herói.",
+   "Cantei as armas e o herói.",
+   "Canto ao herói das armas."
+  ],
+  "nota": "Arma: acusativo plural neutro, objeto direto de cano.\nvirum: acusativo singular, objeto direto de cano.\n-que: e.\ncano: presente do indicativo, 1ª pessoa do singular.\nOs dois objetos vêm antes do verbo: arma (neutro plural, igual no nominativo e no acusativo) e virum (-um). O -que colado em virum é «e». O herói é Eneias.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Vergílio, Eneida I,1",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Arma",
+    "c": "la-p026",
+    "f": "acusativo plural neutro",
+    "fn": "objeto direto de cano"
+   },
+   {
+    "w": "virum",
+    "c": "la-p027",
+    "f": "acusativo singular",
+    "fn": "objeto direto de cano"
+   },
+   {
+    "w": "-que",
+    "c": "la-p028",
+    "fn": "e"
+   },
+   {
+    "w": "cano",
+    "c": "la-p029",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f013",
+  "tipo": "frase",
+  "la": "Omnia vincit Amor.",
+  "pt": "O amor vence tudo.",
+  "gabarito": "[O ~] amor [vence tudo ~ tudo vence ~ vence todas as coisas ~ vence a tudo]",
+  "aceitas": [],
+  "distratores": [
+   "Tudo vence o amor.",
+   "O amor venceu tudo.",
+   "Todos vencem o amor.",
+   "O amor vence todos."
+  ],
+  "nota": "Omnia: acusativo plural neutro, o objeto: todas as coisas.\nvincit: presente do indicativo, 3ª pessoa do singular.\nAmor: nominativo singular, o sujeito, o deus Amor.\nA ordem das palavras não diz quem faz o quê; o caso é que diz. O verso continua: «et nos cedamus Amori» (e nós cedamos ao Amor).",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Vergílio, Bucólicas X,69",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Omnia",
+    "c": "la-p019",
+    "f": "acusativo plural neutro",
+    "fn": "o objeto: todas as coisas"
+   },
+   {
+    "w": "vincit",
+    "c": "la-p030",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "Amor",
+    "c": "la-p031",
+    "f": "nominativo singular",
+    "fn": "o sujeito, o deus Amor"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f014",
+  "tipo": "frase",
+  "la": "Tolle, lege.",
+  "pt": "Toma e lê.",
+  "gabarito": "[Toma ~ Tome ~ Pega ~ Pegue], [e ~] [lê ~ leia]",
+  "aceitas": [],
+  "distratores": [
+   "Tomou e leu.",
+   "Tomo e leio.",
+   "Tomai e lede.",
+   "Tomará e lerá."
+  ],
+  "nota": "Tolle: imperativo presente, 2ª pessoa do singular.\nlege: imperativo presente, 2ª pessoa do singular.\nDois imperativos de 3ª conjugação, em -e. É o canto de criança que Agostinho ouviu no jardim, em Milão, antes de abrir a carta de São Paulo.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Agostinho, Confissões VIII,12",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Tolle",
+    "c": "la-p032",
+    "f": "imperativo presente, 2ª pessoa do singular"
+   },
+   {
+    "w": "lege",
+    "c": "la-p033",
+    "f": "imperativo presente, 2ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g011"
+  ]
+ },
+ {
+  "id": "la-f015",
+  "tipo": "frase",
+  "la": "Noli me tangere.",
+  "pt": "Não me toques.",
+  "gabarito": "[Não me [toques ~ toque] ~ Não [toques ~ toque] em mim]",
+  "aceitas": [],
+  "distratores": [
+   "Não te toco.",
+   "Não quero tocar-te.",
+   "Ele não me toca.",
+   "Não me tocaste."
+  ],
+  "nota": "Noli: imperativo presente, 2ª pessoa do singular, a proibição.\nme: acusativo singular, o objeto de tangere.\ntangere: infinitivo presente, depois de noli.\nNoli + infinitivo é a proibição: «não queiras tocar», isto é, «não me toques». Jesus a Maria Madalena, na manhã da Páscoa.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 20,17",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Noli",
+    "c": "la-p034",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "a proibição"
+   },
+   {
+    "w": "me",
+    "c": "la-p004",
+    "f": "acusativo singular",
+    "fn": "o objeto de tangere"
+   },
+   {
+    "w": "tangere",
+    "c": "la-p035",
+    "f": "infinitivo presente",
+    "fn": "depois de noli"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g013",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-f016",
+  "tipo": "frase",
+  "la": "Sero te amavi.",
+  "pt": "Tarde te amei.",
+  "gabarito": "[[Tarde ~ Tarde demais] [eu ~] te amei ~ [Eu ~] te amei [tarde ~ tarde demais] ~ Amei-te tarde]",
+  "aceitas": [],
+  "distratores": [
+   "Tarde tu me amaste.",
+   "Tarde te amarei.",
+   "Tarde te amava.",
+   "Tarde fui amado."
+  ],
+  "nota": "te: acusativo singular, o objeto.\namavi: perfeito do indicativo, 1ª pessoa do singular.\nAmavi, com o -v- do perfeito e o -i da 1ª pessoa: «amei». Agostinho fala a Deus, a «beleza tão antiga e tão nova».",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Agostinho, Confissões X,27",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Sero",
+    "c": "la-p036"
+   },
+   {
+    "w": "te",
+    "c": "la-p007",
+    "f": "acusativo singular",
+    "fn": "o objeto"
+   },
+   {
+    "w": "amavi",
+    "c": "la-p037",
+    "f": "perfeito do indicativo, 1ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g009",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-f017",
+  "tipo": "frase",
+  "la": "Veni, vidi, vici.",
+  "pt": "Vim, vi, venci.",
+  "gabarito": "[Eu ~] vim[, ~] vi[, ~] [e ~] venci",
+  "aceitas": [],
+  "distratores": [
+   "Venho, vejo, venço.",
+   "Virei, verei, vencerei.",
+   "Veio, viu, venceu.",
+   "Vinha, via, vencia."
+  ],
+  "nota": "Veni: perfeito do indicativo, 1ª pessoa do singular.\nvidi: perfeito do indicativo, 1ª pessoa do singular.\nvici: perfeito do indicativo, 1ª pessoa do singular.\nTrês perfeitos de 1ª pessoa, todos em -i. A mensagem de César depois da vitória sobre Fárnaces, em 47 a.C.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Suetônio, Vida de César 37",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Veni",
+    "c": "la-p038",
+    "f": "perfeito do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "vidi",
+    "c": "la-p039",
+    "f": "perfeito do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "vici",
+    "c": "la-p030",
+    "f": "perfeito do indicativo, 1ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-f018",
+  "tipo": "frase",
+  "la": "Ecce ancilla Domini.",
+  "pt": "Eis a serva do Senhor.",
+  "gabarito": "[Eis ~ Eis aqui ~ Aqui está] a [serva ~ escrava] do Senhor",
+  "aceitas": [],
+  "distratores": [
+   "Eis a serva e o Senhor.",
+   "Eis a serva para o Senhor.",
+   "Eis o Senhor da serva.",
+   "Eis as servas do Senhor."
+  ],
+  "nota": "ancilla: nominativo singular, o que se mostra.\nDomini: genitivo singular, de quem é a serva.\nDomini é o genitivo de Dominus: «do Senhor». A resposta de Maria ao anjo.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Lc 1,38",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Ecce",
+    "c": "la-p014"
+   },
+   {
+    "w": "ancilla",
+    "c": "la-p040",
+    "f": "nominativo singular",
+    "fn": "o que se mostra"
+   },
+   {
+    "w": "Domini",
+    "c": "la-p012",
+    "f": "genitivo singular",
+    "fn": "de quem é a serva"
+   }
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f019",
+  "tipo": "frase",
+  "la": "Ego sum lux mundi.",
+  "pt": "Eu sou a luz do mundo.",
+  "gabarito": "[Eu ~] sou a luz do mundo",
+  "aceitas": [],
+  "distratores": [
+   "Eu sou a luz e o mundo.",
+   "Eu sou o mundo da luz.",
+   "Eu era a luz do mundo.",
+   "Eu sou a luz para o mundo."
+  ],
+  "nota": "Ego: nominativo singular, o sujeito.\nsum: presente do indicativo, 1ª pessoa do singular.\nlux: nominativo singular, o predicativo.\nmundi: genitivo singular, de quê é a luz.\nMundi, genitivo de mundus (-i), liga-se a lux: «a luz do mundo».",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 8,12",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Ego",
+    "c": "la-p004",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "sum",
+    "c": "la-p003",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "lux",
+    "c": "la-p041",
+    "f": "nominativo singular",
+    "fn": "o predicativo"
+   },
+   {
+    "w": "mundi",
+    "c": "la-p042",
+    "f": "genitivo singular",
+    "fn": "de quê é a luz"
+   }
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f020",
+  "tipo": "frase",
+  "la": "Tu es Christus, Filius Dei vivi.",
+  "pt": "Tu és o Cristo, o Filho do Deus vivo.",
+  "gabarito": "[Tu és ~ Você é ~ És] [o ~] Cristo[, ~] o Filho do Deus vivo",
+  "aceitas": [],
+  "distratores": [
+   "Tu és o Cristo, o Filho vivo de Deus.",
+   "Tu és o Cristo, o Deus do Filho vivo.",
+   "Tu eras o Cristo, o Filho do Deus vivo.",
+   "Tu és o Cristo e o Filho, Deus vivo."
+  ],
+  "nota": "Tu: nominativo singular, o sujeito.\nes: presente do indicativo, 2ª pessoa do singular.\nChristus: nominativo singular, nome próprio, Cristo: o predicativo.\nFilius: nominativo singular, aposto de Christus.\nDei: genitivo singular, de quem é o Filho.\nvivi: genitivo masculino singular, concorda com Dei.\nDei vivi, os dois no genitivo (-i): «do Deus vivo». Vivi concorda com Dei, e não com Filius, que está no nominativo. A confissão de Pedro.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Mt 16,16",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Tu",
+    "c": "la-p007",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "es",
+    "c": "la-p003",
+    "f": "presente do indicativo, 2ª pessoa do singular"
+   },
+   {
+    "w": "Christus",
+    "f": "nominativo singular",
+    "fn": "nome próprio, Cristo: o predicativo"
+   },
+   {
+    "w": "Filius",
+    "c": "la-p043",
+    "f": "nominativo singular",
+    "fn": "aposto de Christus"
+   },
+   {
+    "w": "Dei",
+    "c": "la-p001",
+    "f": "genitivo singular",
+    "fn": "de quem é o Filho"
+   },
+   {
+    "w": "vivi",
+    "c": "la-p044",
+    "f": "genitivo masculino singular",
+    "fn": "concorda com Dei"
+   }
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f021",
+  "tipo": "frase",
+  "la": "Vanitas vanitatum, et omnia vanitas.",
+  "pt": "Vaidade das vaidades, e tudo é vaidade.",
+  "gabarito": "[Vaidade das vaidades ~ Ilusão das ilusões ~ Vazio dos vazios][, ~] [e ~] tudo [é ~] [vaidade ~ ilusão ~ vazio]",
+  "aceitas": [],
+  "distratores": [
+   "Vaidade da vaidade, e tudo é vaidade.",
+   "Vaidades das vaidades, e tudo são vaidades.",
+   "Vaidade de todas as vaidades.",
+   "A vaidade é vã, e tudo é vaidade."
+  ],
+  "nota": "Vanitas: nominativo singular.\nvanitatum: genitivo plural, das vaidades.\nomnia: nominativo plural neutro, o sujeito: tudo.\nvanitas: nominativo singular, o predicativo, com est subentendido.\nVanitatum é o genitivo plural (-um, da 3ª declinação). «Vaidade das vaidades» é o superlativo hebraico: o maior dos vazios.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Ecl 1,2",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Vanitas",
+    "c": "la-p045",
+    "f": "nominativo singular"
+   },
+   {
+    "w": "vanitatum",
+    "c": "la-p045",
+    "f": "genitivo plural",
+    "fn": "das vaidades"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "omnia",
+    "c": "la-p019",
+    "f": "nominativo plural neutro",
+    "fn": "o sujeito: tudo"
+   },
+   {
+    "w": "vanitas",
+    "c": "la-p045",
+    "f": "nominativo singular",
+    "fn": "o predicativo, com est subentendido"
+   }
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f022",
+  "tipo": "frase",
+  "la": "Magnificat anima mea Dominum.",
+  "pt": "A minha alma engrandece o Senhor.",
+  "gabarito": "[[A ~] minha alma ~ [A ~] alma minha] [engrandece ~ glorifica ~ exalta ~ magnifica ~ louva] [o ~ ao] Senhor",
+  "aceitas": [
+   "minha alma proclama a grandeza do senhor"
+  ],
+  "distratores": [
+   "O Senhor engrandece a minha alma.",
+   "A minha alma engrandeceu o Senhor.",
+   "A alma do meu Senhor engrandece.",
+   "A minha alma engrandecerá o Senhor."
+  ],
+  "nota": "Magnificat: presente do indicativo, 3ª pessoa do singular.\nanima: nominativo singular, o sujeito.\nmea: nominativo feminino singular, concorda com anima.\nDominum: acusativo singular, o objeto direto.\nO verbo vem primeiro, mas o sujeito é anima (nominativo) e o objeto é Dominum (acusativo). O começo do cântico de Maria.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Lc 1,46",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Magnificat",
+    "c": "la-p046",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "anima",
+    "c": "la-p047",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "mea",
+    "c": "la-p013",
+    "f": "nominativo feminino singular",
+    "fn": "concorda com anima"
+   },
+   {
+    "w": "Dominum",
+    "c": "la-p012",
+    "f": "acusativo singular",
+    "fn": "o objeto direto"
+   }
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-f023",
+  "tipo": "frase",
+  "la": "Pax vobis.",
+  "pt": "A paz esteja convosco.",
+  "gabarito": "[A ~] paz [esteja convosco ~ a vós ~ para vós ~ esteja com vocês ~ para vocês ~ a vocês ~ convosco ~ esteja com vós ~ seja convosco ~ seja com vocês]",
+  "aceitas": [],
+  "distratores": [
+   "Vós sois a paz.",
+   "A paz conosco.",
+   "Dai-nos a paz.",
+   "A paz de vós."
+  ],
+  "nota": "Pax: nominativo singular, o sujeito, com o verbo subentendido.\nvobis: dativo plural, a quem se deseja a paz.\nVobis é o dativo de vos, «a vós». Não há verbo: «(esteja) a paz convosco». A saudação de Jesus ressuscitado.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 20,19",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Pax",
+    "c": "la-p048",
+    "f": "nominativo singular",
+    "fn": "o sujeito, com o verbo subentendido"
+   },
+   {
+    "w": "vobis",
+    "c": "la-p049",
+    "f": "dativo plural",
+    "fn": "a quem se deseja a paz"
+   }
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f024",
+  "tipo": "frase",
+  "la": "Deo gratias.",
+  "pt": "Graças a Deus.",
+  "gabarito": "[Graças a Deus ~ Damos graças a Deus ~ Demos graças a Deus ~ Agradecemos a Deus]",
+  "aceitas": [],
+  "distratores": [
+   "Graças de Deus.",
+   "Deus dá graças.",
+   "Damos graças por Deus.",
+   "Deus agradece."
+  ],
+  "nota": "Deo: dativo singular, a quem se agradece.\ngratias: acusativo plural, o objeto de um verbo que não se diz (agimus).\nDeo é dativo, a quem se dá; gratias, acusativo plural de gratia: «(agimus) gratias», damos graças.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Missal Romano",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Deo",
+    "c": "la-p001",
+    "f": "dativo singular",
+    "fn": "a quem se agradece"
+   },
+   {
+    "w": "gratias",
+    "c": "la-p050",
+    "f": "acusativo plural",
+    "fn": "o objeto de um verbo que não se diz (agimus)"
+   }
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-f025",
+  "tipo": "frase",
+  "la": "Gloria in excelsis Deo.",
+  "pt": "Glória a Deus nas alturas.",
+  "gabarito": "[Glória a Deus nas alturas ~ Glória nas alturas a Deus ~ Glória a Deus no mais alto dos céus]",
+  "aceitas": [],
+  "distratores": [
+   "Glória ao Deus das alturas.",
+   "A glória de Deus está nas alturas.",
+   "Deus está na glória das alturas.",
+   "Glória aos deuses das alturas."
+  ],
+  "nota": "Gloria: nominativo singular, o sujeito, com o verbo subentendido.\nin: preposição com ablativo.\nexcelsis: ablativo plural neutro, as alturas.\nDeo: dativo singular, a quem se dá glória.\nDeo é dativo, «a Deus»; in excelsis, in + ablativo plural, «nas alturas». É o canto dos anjos em Belém, que a Vulgata escreve «in altissimis» (Lc 2,14).",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Missal Romano",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Gloria",
+    "c": "la-p051",
+    "f": "nominativo singular",
+    "fn": "o sujeito, com o verbo subentendido"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "excelsis",
+    "c": "la-p052",
+    "f": "ablativo plural neutro",
+    "fn": "as alturas"
+   },
+   {
+    "w": "Deo",
+    "c": "la-p001",
+    "f": "dativo singular",
+    "fn": "a quem se dá glória"
+   }
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f026",
+  "tipo": "frase",
+  "la": "Dominus vobiscum.",
+  "pt": "O Senhor esteja convosco.",
+  "gabarito": "[O ~] Senhor [esteja convosco ~ está convosco ~ esteja com vocês ~ está com vocês ~ seja convosco ~ convosco ~ com vocês ~ esteja com vós ~ está com vós]",
+  "aceitas": [],
+  "distratores": [
+   "O Senhor está conosco.",
+   "Vós estais com o Senhor.",
+   "O Senhor de vós.",
+   "Os senhores estão convosco."
+  ],
+  "nota": "Dominus: nominativo singular, o sujeito.\nvobis: ablativo plural, depois de cum.\ncum: preposição com ablativo.\nVobiscum é cum vobis: com os pronomes, a preposição cum vem depois e colada. A saudação do padre na Missa.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Missal Romano",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Dominus",
+    "c": "la-p012",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "vobis",
+    "c": "la-p049",
+    "f": "ablativo plural",
+    "fn": "depois de cum"
+   },
+   {
+    "w": "cum",
+    "c": "la-p053",
+    "f": "preposição com ablativo"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f027",
+  "tipo": "frase",
+  "la": "Et cum spiritu tuo.",
+  "pt": "E com o teu espírito.",
+  "gabarito": "[E ~] com [o teu ~ teu ~ o vosso ~ vosso] espírito",
+  "aceitas": [],
+  "distratores": [
+   "E o teu espírito.",
+   "E com os teus espíritos.",
+   "E o espírito contigo.",
+   "E com o espírito dele."
+  ],
+  "nota": "cum: preposição com ablativo.\nspiritu: ablativo singular, depois de cum.\ntuo: ablativo masculino singular, concorda com spiritu.\nCum pede ablativo: spiritu (4ª declinação, -u) e tuo, que concorda com ele. É a resposta a «Dominus vobiscum»; no Brasil, a Missa traduz «Ele está no meio de nós».",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Missal Romano",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Et",
+    "c": "la-p009"
+   },
+   {
+    "w": "cum",
+    "c": "la-p053",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "spiritu",
+    "c": "la-p054",
+    "f": "ablativo singular",
+    "fn": "depois de cum"
+   },
+   {
+    "w": "tuo",
+    "c": "la-p055",
+    "f": "ablativo masculino singular",
+    "fn": "concorda com spiritu"
+   }
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-f028",
+  "tipo": "frase",
+  "la": "In principio erat Verbum.",
+  "pt": "No princípio era o Verbo.",
+  "gabarito": "[No princípio ~ No início ~ No começo] [era ~ existia ~ estava] [o Verbo ~ a Palavra]",
+  "aceitas": [],
+  "distratores": [
+   "No princípio é o Verbo.",
+   "O princípio era o Verbo.",
+   "No princípio será o Verbo.",
+   "O Verbo era o princípio."
+  ],
+  "nota": "In: preposição com ablativo.\nprincipio: ablativo singular, quando.\nerat: imperfeito do indicativo, 3ª pessoa do singular.\nVerbum: nominativo singular neutro, o sujeito.\nErat é o imperfeito de sum, «era»: o que já estava e durava. Principio, ablativo depois de in, «no princípio».",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 1,1",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "In",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "principio",
+    "c": "la-p056",
+    "f": "ablativo singular",
+    "fn": "quando"
+   },
+   {
+    "w": "erat",
+    "c": "la-p003",
+    "f": "imperfeito do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "Verbum",
+    "c": "la-p057",
+    "f": "nominativo singular neutro",
+    "fn": "o sujeito"
+   }
+  ],
+  "conceitos": [
+   "la-g008",
+   "la-g006",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f029",
+  "tipo": "frase",
+  "la": "Requiescat in pace.",
+  "pt": "Descanse em paz.",
+  "gabarito": "[Que ~] [descanse ~ repouse] em paz",
+  "aceitas": [],
+  "distratores": [
+   "Descansou em paz.",
+   "Descansarão em paz.",
+   "Descansemos em paz.",
+   "Descansava em paz."
+  ],
+  "nota": "Requiescat: presente do subjuntivo, 3ª pessoa do singular, o desejo.\nin: preposição com ablativo.\npace: ablativo singular, depois de in.\nRequiescat tem o -a- do subjuntivo (o indicativo seria requiescit): é um desejo, «que descanse».",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Ritual de exéquias",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Requiescat",
+    "c": "la-p058",
+    "f": "presente do subjuntivo, 3ª pessoa do singular",
+    "fn": "o desejo"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "pace",
+    "c": "la-p048",
+    "f": "ablativo singular",
+    "fn": "depois de in"
+   }
+  ],
+  "conceitos": [
+   "la-g012",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-f030",
+  "tipo": "frase",
+  "la": "Beati pauperes spiritu.",
+  "pt": "Bem-aventurados os pobres em espírito.",
+  "gabarito": "[Bem-aventurados ~ Felizes ~ Ditosos] os pobres [em ~ de] espírito",
+  "aceitas": [],
+  "distratores": [
+   "Bem-aventurado o espírito dos pobres.",
+   "Os pobres são bem-aventurados pelo espírito.",
+   "Bem-aventurados os pobres do Espírito.",
+   "Bem-aventurado o pobre em espírito."
+  ],
+  "nota": "Beati: nominativo masculino plural, o predicativo, com sunt subentendido.\npauperes: nominativo plural, o sujeito: os pobres.\nspiritu: ablativo singular, em quê são pobres.\nSpiritu é ablativo (4ª declinação) e diz em quê são pobres. A primeira das bem-aventuranças.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Mt 5,3",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Beati",
+    "c": "la-p059",
+    "f": "nominativo masculino plural",
+    "fn": "o predicativo, com sunt subentendido"
+   },
+   {
+    "w": "pauperes",
+    "c": "la-p060",
+    "f": "nominativo plural",
+    "fn": "o sujeito: os pobres"
+   },
+   {
+    "w": "spiritu",
+    "c": "la-p054",
+    "f": "ablativo singular",
+    "fn": "em quê são pobres"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f031",
+  "tipo": "frase",
+  "la": "Mens sana in corpore sano.",
+  "pt": "Mente sã em corpo são.",
+  "gabarito": "[Uma ~] mente [sã ~ sadia] [em ~ num] corpo [são ~ sadio]",
+  "aceitas": [],
+  "distratores": [
+   "A mente sã de um corpo são.",
+   "A mente cura o corpo.",
+   "Mentes sãs em corpos sãos.",
+   "Um corpo são numa mente sã."
+  ],
+  "nota": "Mens: nominativo singular, o sujeito.\nsana: nominativo feminino singular, concorda com mens.\nin: preposição com ablativo.\ncorpore: ablativo singular, depois de in.\nsano: ablativo neutro singular, concorda com corpore.\nSana e sano são o mesmo adjetivo, cada um concordando com o seu nome. Em Juvenal, é o que se deve pedir aos deuses: «orandum est ut sit mens sana in corpore sano».",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Juvenal, Sátiras X,356",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Mens",
+    "c": "la-p061",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "sana",
+    "c": "la-p062",
+    "f": "nominativo feminino singular",
+    "fn": "concorda com mens"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "corpore",
+    "c": "la-p063",
+    "f": "ablativo singular",
+    "fn": "depois de in"
+   },
+   {
+    "w": "sano",
+    "c": "la-p062",
+    "f": "ablativo neutro singular",
+    "fn": "concorda com corpore"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f032",
+  "tipo": "frase",
+  "la": "Qui sequitur me, non ambulat in tenebris.",
+  "pt": "Quem me segue não anda nas trevas.",
+  "gabarito": "[Quem me segue ~ Aquele que me segue ~ O que me segue ~ Quem segue a mim][, ~] não [anda ~ caminha] [nas ~ em] trevas",
+  "aceitas": [],
+  "distratores": [
+   "Quem eu sigo não anda nas trevas.",
+   "Quem me seguiu não anda nas trevas.",
+   "Quem me segue anda nas trevas.",
+   "Eu sigo quem não anda nas trevas."
+  ],
+  "nota": "Qui: nominativo masculino singular, o sujeito de sequitur e de ambulat.\nsequitur: presente do indicativo, 3ª pessoa do singular, verbo depoente.\nme: acusativo singular, o objeto.\nambulat: presente do indicativo, 3ª pessoa do singular.\nin: preposição com ablativo.\ntenebris: ablativo plural, depois de in.\nSequitur tem forma passiva (-tur) e sentido ativo, «segue»: é um verbo depoente.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 8,12",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Qui",
+    "c": "la-p064",
+    "f": "nominativo masculino singular",
+    "fn": "o sujeito de sequitur e de ambulat"
+   },
+   {
+    "w": "sequitur",
+    "c": "la-p065",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "verbo depoente"
+   },
+   {
+    "w": "me",
+    "c": "la-p004",
+    "f": "acusativo singular",
+    "fn": "o objeto"
+   },
+   {
+    "w": "non",
+    "c": "la-p066"
+   },
+   {
+    "w": "ambulat",
+    "c": "la-p067",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "tenebris",
+    "c": "la-p068",
+    "f": "ablativo plural",
+    "fn": "depois de in"
+   }
+  ],
+  "conceitos": [
+   "la-g016",
+   "la-g007",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-f033",
+  "tipo": "frase",
+  "la": "Fiat lux.",
+  "pt": "Faça-se a luz.",
+  "gabarito": "[Faça-se a luz ~ Haja luz ~ Que haja luz ~ Que se faça a luz ~ Seja feita a luz ~ Que a luz seja feita ~ Exista a luz ~ Que exista luz]",
+  "aceitas": [],
+  "distratores": [
+   "A luz foi feita.",
+   "A luz faz.",
+   "Fez-se a luz.",
+   "Farei a luz."
+  ],
+  "nota": "Fiat: presente do subjuntivo, 3ª pessoa do singular, a ordem em forma de desejo.\nlux: nominativo singular, o sujeito.\nFiat é o subjuntivo de fio, «que seja feita». A primeira palavra de Deus na criação; logo depois vem «Et facta est lux» (e a luz foi feita).",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Gn 1,3",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Fiat",
+    "c": "la-p069",
+    "f": "presente do subjuntivo, 3ª pessoa do singular",
+    "fn": "a ordem em forma de desejo"
+   },
+   {
+    "w": "lux",
+    "c": "la-p041",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   }
+  ],
+  "conceitos": [
+   "la-g012",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-f034",
+  "tipo": "frase",
+  "la": "Veritas liberabit vos.",
+  "pt": "A verdade vos libertará.",
+  "gabarito": "[A ~] verdade [vos [libertará ~ livrará] ~ [libertará ~ livrará] vocês ~ [libertará ~ livrará] a vós]",
+  "aceitas": [],
+  "distratores": [
+   "A verdade vos libertou.",
+   "Vós libertareis a verdade.",
+   "A verdade vos liberta.",
+   "A verdade nos libertará."
+  ],
+  "nota": "Veritas: nominativo singular, o sujeito.\nliberabit: futuro do indicativo, 3ª pessoa do singular.\nvos: acusativo plural, o objeto direto.\nLiberabit tem o -bi- do futuro da 1ª conjugação: «libertará». Vos é igual no nominativo e no acusativo: quem diz que é o objeto é o verbo, na 3ª pessoa, com o sujeito veritas.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 8,32",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Veritas",
+    "c": "la-p010",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "liberabit",
+    "c": "la-p070",
+    "f": "futuro do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "vos",
+    "c": "la-p049",
+    "f": "acusativo plural",
+    "fn": "o objeto direto"
+   }
+  ],
+  "conceitos": [
+   "la-g010",
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-f035",
+  "tipo": "frase",
+  "la": "Consummatum est.",
+  "pt": "Está consumado.",
+  "gabarito": "[[Tudo ~] [está ~ foi] [consumado ~ cumprido ~ terminado ~ acabado ~ completo] ~ Consumou-se]",
+  "aceitas": [],
+  "distratores": [
+   "Será consumado.",
+   "Consumará.",
+   "Está consumindo.",
+   "Ele consumou."
+  ],
+  "nota": "Consummatum: particípio perfeito, nominativo neutro singular.\nest: presente do indicativo, 3ª pessoa do singular, com o particípio, o perfeito passivo.\nO particípio (consummatum, neutro) com est faz o perfeito da voz passiva: «foi consumado», «está consumado». A última palavra de Jesus em São João.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 19,30",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Consummatum",
+    "c": "la-p071",
+    "f": "particípio perfeito, nominativo neutro singular"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "com o particípio, o perfeito passivo"
+   }
+  ],
+  "conceitos": [
+   "la-g014",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-f036",
+  "tipo": "frase",
+  "la": "Pater, in manus tuas commendo spiritum meum.",
+  "pt": "Pai, em tuas mãos entrego o meu espírito.",
+  "gabarito": "[Pai ~ Ó Pai][, ~] [em tuas mãos ~ nas tuas mãos ~ em vossas mãos ~ nas vossas mãos ~ em suas mãos ~ nas suas mãos] [entrego ~ confio ~ encomendo ~ deposito] [o ~] meu espírito",
+  "aceitas": [],
+  "distratores": [
+   "Pai, em tuas mãos entregaste o meu espírito.",
+   "O Pai entrega o espírito em minhas mãos.",
+   "Pai, em tuas mãos entrego o teu espírito.",
+   "Pai, entrega o meu espírito nas tuas mãos."
+  ],
+  "nota": "Pater: vocativo singular, a quem se fala.\nin: preposição com acusativo, para dentro de.\nmanus: acusativo plural, 4ª declinação.\ntuas: acusativo feminino plural, concorda com manus.\ncommendo: presente do indicativo, 1ª pessoa do singular.\nspiritum: acusativo singular, o objeto direto.\nmeum: acusativo masculino singular, concorda com spiritum.\nIn + acusativo (manus, plural da 4ª declinação) é o movimento, «para as tuas mãos». A última palavra de Jesus em São Lucas, tirada do Sl 31,6.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Lc 23,46",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Pater",
+    "c": "la-p072",
+    "f": "vocativo singular",
+    "fn": "a quem se fala"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com acusativo",
+    "fn": "para dentro de"
+   },
+   {
+    "w": "manus",
+    "c": "la-p073",
+    "f": "acusativo plural",
+    "fn": "4ª declinação"
+   },
+   {
+    "w": "tuas",
+    "c": "la-p055",
+    "f": "acusativo feminino plural",
+    "fn": "concorda com manus"
+   },
+   {
+    "w": "commendo",
+    "c": "la-p074",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   },
+   {
+    "w": "spiritum",
+    "c": "la-p054",
+    "f": "acusativo singular",
+    "fn": "o objeto direto"
+   },
+   {
+    "w": "meum",
+    "c": "la-p013",
+    "f": "acusativo masculino singular",
+    "fn": "concorda com spiritum"
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g003",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f037",
+  "tipo": "frase",
+  "la": "Domine, quo vadis?",
+  "pt": "Senhor, aonde vais?",
+  "gabarito": "[Senhor ~ Ó Senhor][, ~] [aonde ~ para onde ~ onde] [vais ~ vai ~ você vai ~ tu vais]",
+  "aceitas": [],
+  "distratores": [
+   "Senhor, de onde vens?",
+   "Senhor, aonde vamos?",
+   "Senhor, aonde foste?",
+   "Senhor, aonde irás?"
+  ],
+  "nota": "Domine: vocativo singular, a quem se fala.\nquo: para onde.\nvadis: presente do indicativo, 2ª pessoa do singular.\nVadis é a 2ª pessoa (-s) de vado. Pedro a Jesus, na Última Ceia; a lenda põe a pergunta de novo na boca de Pedro, quando ele fugia de Roma.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Jo 13,36",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Domine",
+    "c": "la-p012",
+    "f": "vocativo singular",
+    "fn": "a quem se fala"
+   },
+   {
+    "w": "quo",
+    "c": "la-p075",
+    "fn": "para onde"
+   },
+   {
+    "w": "vadis",
+    "c": "la-p076",
+    "f": "presente do indicativo, 2ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f038",
+  "tipo": "frase",
+  "la": "Ora pro nobis.",
+  "pt": "Rogai por nós.",
+  "gabarito": "[Rogai ~ Roga ~ Rogue ~ Orai ~ Ora ~ Ore ~ Reza ~ Reze ~ Rezai ~ Intercede ~ Interceda] por nós",
+  "aceitas": [],
+  "distratores": [
+   "Rogamos por vós.",
+   "Rogou por nós.",
+   "Rogarás por nós.",
+   "Rogai conosco."
+  ],
+  "nota": "Ora: imperativo presente, 2ª pessoa do singular.\npro: preposição com ablativo.\nnobis: ablativo plural, depois de pro.\nOra é o imperativo singular de oro; em português se reza no plural de respeito, «rogai». Pro + ablativo: em favor de.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Ladainha de Nossa Senhora",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Ora",
+    "c": "la-p077",
+    "f": "imperativo presente, 2ª pessoa do singular"
+   },
+   {
+    "w": "pro",
+    "c": "la-p078",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "nobis",
+    "c": "la-p079",
+    "f": "ablativo plural",
+    "fn": "depois de pro"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-f039",
+  "tipo": "frase",
+  "la": "Christus vincit, Christus regnat, Christus imperat.",
+  "pt": "Cristo vence, Cristo reina, Cristo impera.",
+  "gabarito": "Cristo vence[, ~] Cristo reina[, ~] [e ~] Cristo [impera ~ manda ~ governa]",
+  "aceitas": [],
+  "distratores": [
+   "Cristo venceu, Cristo reinou, Cristo imperou.",
+   "Cristo vencerá, Cristo reinará, Cristo imperará.",
+   "Vencei, reinai e imperai com Cristo.",
+   "Cristo vence o rei e o império."
+  ],
+  "nota": "Christus: nominativo singular, nome próprio, Cristo: o sujeito.\nvincit: presente do indicativo, 3ª pessoa do singular.\nChristus: nominativo singular, o sujeito.\nregnat: presente do indicativo, 3ª pessoa do singular.\nChristus: nominativo singular, o sujeito.\nimperat: presente do indicativo, 3ª pessoa do singular.\nTrês presentes de 3ª pessoa (-t): vincit, da 3ª conjugação; regnat e imperat, da 1ª. A aclamação medieval das Laudes régias.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Laudes régias",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Christus",
+    "f": "nominativo singular",
+    "fn": "nome próprio, Cristo: o sujeito"
+   },
+   {
+    "w": "vincit",
+    "c": "la-p030",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "Christus",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "regnat",
+    "c": "la-p080",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "Christus",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "imperat",
+    "c": "la-p081",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-f040",
+  "tipo": "frase",
+  "la": "Ubi caritas et amor, Deus ibi est.",
+  "pt": "Onde há caridade e amor, Deus aí está.",
+  "gabarito": "Onde [há ~ existe ~ houver ~ estão] caridade e amor[, ~] [Deus [aí ~ ali ~ lá] está ~ [aí ~ ali ~ lá] está Deus ~ Deus está [aí ~ ali ~ lá]]",
+  "aceitas": [],
+  "distratores": [
+   "Onde há caridade e amor, Deus aí estava.",
+   "Deus é caridade e amor.",
+   "Onde está Deus, há caridade e amor.",
+   "Onde há caridade, Deus ama."
+  ],
+  "nota": "caritas: nominativo singular, o sujeito de um verbo que não se diz.\namor: nominativo singular.\nDeus: nominativo singular, o sujeito.\nest: presente do indicativo, 3ª pessoa do singular.\nUbi… ibi…: onde…, aí… A primeira parte não tem verbo. É a antífona do lava-pés, na Quinta-feira Santa.",
+  "nivel": "A1",
+  "tags": [
+   "primeiros passos"
+  ],
+  "fonte": "Antífona Ubi caritas",
+  "requerTodas": [],
+  "palavras": [
+   {
+    "w": "Ubi",
+    "c": "la-p082"
+   },
+   {
+    "w": "caritas",
+    "c": "la-p002",
+    "f": "nominativo singular",
+    "fn": "o sujeito de um verbo que não se diz"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "amor",
+    "c": "la-p031",
+    "f": "nominativo singular"
+   },
+   {
+    "w": "Deus",
+    "c": "la-p001",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "ibi",
+    "c": "la-p083"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ }
+]
