@@ -2,7 +2,7 @@
  "versao": 1,
  "idioma": "es",
  "gerado_em": "2026-10-21",
- "total": 1925,
+ "total": 1940,
  "cards": [
   {
    "idioma": "es",
@@ -4249,6 +4249,54 @@
     "p356",
     "p506",
     "p736"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "f029",
+   "tipo": "frase",
+   "es": "¡Vaya chollo!",
+   "pt": "Que pechincha!",
+   "en": "What a bargain!",
+   "aceitas": [
+    "que pechincha",
+    "que barganha",
+    "que negocio bom",
+    "que oferta",
+    "que achado",
+    "que baita negocio",
+    "que preco bom"
+   ],
+   "aceitasEn": [
+    "what a bargain",
+    "what a steal",
+    "what a deal",
+    "what a find",
+    "bargain",
+    "real bargain"
+   ],
+   "distratores": [
+    "Que chatice!",
+    "Que choro!",
+    "Que bagunça!",
+    "Que caro!"
+   ],
+   "distratoresEn": [
+    "What a nuisance!",
+    "What a racket!",
+    "What a mess!",
+    "What a rip-off!"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "'Chollo' = coisa muito boa por pouco dinheiro.",
+   "notaEn": "'Un chollo' is a lot for very little — a bargain, or a cushy job. Common in Spain, less so elsewhere.",
+   "requerTodas": [
+    "p355",
+    "p624"
    ]
   },
   {
@@ -17666,6 +17714,52 @@
   },
   {
    "idioma": "es",
+   "id": "f117",
+   "tipo": "frase",
+   "es": "¡Qué morro tienes!",
+   "pt": "Que cara de pau você tem!",
+   "en": "You've got some nerve!",
+   "aceitas": [
+    "que cara de pau",
+    "que cara de pau voce tem",
+    "voce e muito cara de pau",
+    "que petulancia",
+    "que folgado voce e"
+   ],
+   "aceitasEn": [
+    "youve got some nerve",
+    "you ve got some nerve",
+    "you have got some nerve",
+    "what a cheek",
+    "youve got a nerve",
+    "the cheek of you"
+   ],
+   "distratores": [
+    "Que cara feia você tem!",
+    "Que boca grande você tem!",
+    "Que sorte danada você tem!",
+    "Que cara cansada você tem!"
+   ],
+   "distratoresEn": [
+    "What a grumpy face you have!",
+    "What a big mouth you have!",
+    "What amazing luck you have!",
+    "What a tired face you have!"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "'El morro' é o focinho do animal, e por extensão o descaramento. 'Tener morro' = ser folgado. Também existe 'tener cara', com a mesma ideia.",
+   "notaEn": "'El morro' is an animal's snout, and by extension sheer cheek. 'Tener morro' = to be brazen. 'Tener cara' works the same way.",
+   "requerTodas": [
+    "p656",
+    "p354"
+   ]
+  },
+  {
+   "idioma": "es",
    "id": "f118",
    "tipo": "frase",
    "es": "No doy abasto.",
@@ -18982,6 +19076,56 @@
     "p383",
     "p037",
     "p374"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u023",
+   "tipo": "frase",
+   "requer": "p043",
+   "es": "Tu herman{o|a} es muy maj{o|a}.",
+   "pt": "{Seu irmão|Sua irmã} é muito simpátic{o|a}.",
+   "en": "Your {brother|sister} is really nice.",
+   "aceitas": [
+    "{seu irmao|sua irma} e muito simpatic{o|a}",
+    "{teu irmao|tua irma} e muito simpatic{o|a}",
+    "{seu irmao|sua irma} e muito legal",
+    "{seu irmao|sua irma} e bem legal",
+    "{seu irmao|sua irma} e gente boa"
+   ],
+   "aceitasEn": [
+    "your {brother|sister} is really nice",
+    "your {brother|sister} is very nice",
+    "your {brother is a nice guy|sister is a nice girl}",
+    "your {brother|sister} is really lovely"
+   ],
+   "distratores": [
+    "{Seu irmão|Sua irmã} é muito alt{o|a}.",
+    "{Seu irmão|Sua irmã} é muito quiet{o|a}.",
+    "{Seu irmão|Sua irmã} é muito teimos{o|a}.",
+    "{Seu irmão|Sua irmã} é muito ric{o|a}."
+   ],
+   "distratoresEn": [
+    "Your {brother|sister} is really tall.",
+    "Your {brother|sister} is really quiet.",
+    "Your {brother|sister} is really stubborn.",
+    "Your {brother|sister} is really rich."
+   ],
+   "nivel": "B2",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "Palavra da Espanha, muito usada e sempre elogiosa. Aplicada a coisa, muda de sentido e vira bonitinho.\n🇪🇸 majo (persona) → 🇧🇷 simpático, gente boa\n🇪🇸 majo (cosa) → 🇧🇷 bonitinho, bacana",
+   "notaEn": "A Spain word, very common and always positive. Applied to an object it shifts meaning and describes something pretty rather than friendly.",
+   "aceitasEs": [
+    "Su herman{o|a} es muy maj{o|a}."
+   ],
+   "requerTodas": [
+    "p217",
+    "p351",
+    "p360",
+    "p043"
    ]
   },
   {
@@ -20899,6 +21043,110 @@
   },
   {
    "idioma": "es",
+   "id": "u065",
+   "tipo": "frase",
+   "requer": "p041",
+   "es": "Cenamos en un bar muy cutre.",
+   "pt": "Jantamos num bar muito vagabundo.",
+   "en": "We had dinner in a really grotty bar.",
+   "aceitas": [
+    "jantamos num bar muito vagabundo",
+    "jantamos num bar muito cafona",
+    "jantamos em um bar muito vagabundo",
+    "jantamos num bar caindo aos pedacos",
+    "jantamos num bar muito pe sujo",
+    "jantamos num bar muito brega",
+    "jantamos num bar bem vagabundo",
+    "jantamos num bar muito fuleiro",
+    "jantamos em um bar muito fuleiro",
+    "jantamos num bar bem fuleiro"
+   ],
+   "aceitasEn": [
+    "we had dinner in a really grotty bar",
+    "we had dinner in a really shabby bar",
+    "we ate in a really dingy bar",
+    "we had dinner in a very seedy bar"
+   ],
+   "distratores": [
+    "Jantamos num bar muito chique.",
+    "Jantamos num bar muito cheio.",
+    "Jantamos num bar muito barulhento.",
+    "Jantamos num bar muito longe."
+   ],
+   "distratoresEn": [
+    "We had dinner in a really posh bar.",
+    "We had dinner in a really crowded bar.",
+    "We had dinner in a really noisy bar.",
+    "We had dinner in a really distant bar."
+   ],
+   "nivel": "C1",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "«Cutre» é o feio e malcuidado, com um quê de pobreza. Gíria da Espanha, não se ouve do outro lado do mar.",
+   "notaEn": "'Cutre' is shabby, tacky, run-down — Spain-only slang. It can also mean stingy.",
+   "requerTodas": [
+    "p481",
+    "p618",
+    "p360",
+    "p041"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u066",
+   "tipo": "frase",
+   "requer": "p042",
+   "es": "Mañana curro todo el día.",
+   "pt": "Amanhã trampo o dia todo.",
+   "en": "I'm working all day tomorrow.",
+   "aceitas": [
+    "amanha trampo o dia todo",
+    "amanha trabalho o dia todo",
+    "amanha trabalho o dia inteiro",
+    "amanha eu trabalho o dia todo",
+    "amanha vou trabalhar o dia todo",
+    "amanha ralo o dia todo",
+    "amanha vou trampar o dia inteiro",
+    "amanha vou trampar o dia todo",
+    "amanha trampo o dia inteiro",
+    "amanha vou trabalhar o dia inteiro"
+   ],
+   "aceitasEn": [
+    "i m working all day tomorrow",
+    "tomorrow i work all day",
+    "i m grafting all day tomorrow",
+    "i work all day tomorrow"
+   ],
+   "distratores": [
+    "Amanhã descanso o dia todo.",
+    "Amanhã viajo o dia todo.",
+    "Amanhã estudo o dia todo.",
+    "Amanhã durmo o dia todo."
+   ],
+   "distratoresEn": [
+    "I'm resting all day tomorrow.",
+    "I'm travelling all day tomorrow.",
+    "I'm studying all day tomorrow.",
+    "I'm sleeping all day tomorrow."
+   ],
+   "nivel": "C1",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "«Currar» é o trabalhar da conversa espanhola, e «el curro» é o emprego. Em texto formal, «trabajar».",
+   "notaEn": "'Currar' is Spain's everyday slang for working, and 'el curro' is the job. Formal writing keeps 'trabajar'.",
+   "requerTodas": [
+    "p372",
+    "p042",
+    "p385",
+    "p419"
+   ]
+  },
+  {
+   "idioma": "es",
    "id": "u067",
    "tipo": "frase",
    "requer": "p046",
@@ -20944,6 +21192,98 @@
     "p046",
     "p606",
     "p396"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u068",
+   "tipo": "frase",
+   "requer": "p048",
+   "es": "No sé cómo, pero me las apañaré.",
+   "pt": "Não sei como, mas eu me viro.",
+   "en": "I don't know how, but I'll manage.",
+   "aceitas": [
+    "nao sei como mas eu me viro",
+    "nao sei como mas vou me virar",
+    "nao sei como mas dou um jeito",
+    "nao sei como mas vou dar um jeito",
+    "nao sei como mas me viro"
+   ],
+   "aceitasEn": [
+    "i don t know how but i ll manage",
+    "i don t know how but i ll get by",
+    "i don t know how but i ll sort it out",
+    "don t know how but i ll manage"
+   ],
+   "distratores": [
+    "Não sei como, mas eu desisto.",
+    "Não sei como, mas eu peço ajuda.",
+    "Não sei como, mas eu me perco.",
+    "Não sei como, mas eu reclamo."
+   ],
+   "distratoresEn": [
+    "I don't know how, but I give up.",
+    "I don't know how, but I'll ask for help.",
+    "I don't know how, but I get lost.",
+    "I don't know how, but I complain."
+   ],
+   "nivel": "C1",
+   "tags": [
+    "expressão",
+    "verbo"
+   ],
+   "nota": "O «las» não se refere a nada: faz parte da locução. Por isso «me las apaño», «te las apañas», sempre no feminino plural.",
+   "notaEn": "The 'las' in 'apañárselas' refers to nothing — it is frozen into the phrase: 'me las apaño', 'te las apañas'.",
+   "requerTodas": [
+    "p392",
+    "p048"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u069",
+   "tipo": "frase",
+   "requer": "p049",
+   "es": "La reforma del baño fue una chapuza.",
+   "pt": "A reforma do banheiro foi uma gambiarra.",
+   "en": "The bathroom renovation was a botch job.",
+   "aceitas": [
+    "a reforma do banheiro foi uma gambiarra",
+    "a reforma do banheiro foi mal feita",
+    "a reforma do banheiro foi um servico porco",
+    "a reforma do banheiro foi uma porcaria",
+    "a reforma do banheiro ficou mal feita",
+    "a reforma do banheiro foi um trabalho malfeito"
+   ],
+   "aceitasEn": [
+    "the bathroom renovation was a botch job",
+    "the bathroom refurbishment was a botched job",
+    "the bathroom renovation was a shoddy job",
+    "the bathroom renovation was botched"
+   ],
+   "distratores": [
+    "A reforma do banheiro foi uma pechincha.",
+    "A reforma do banheiro foi uma surpresa.",
+    "A reforma do banheiro foi uma beleza.",
+    "A reforma do banheiro foi uma demora."
+   ],
+   "distratoresEn": [
+    "The bathroom renovation was a bargain.",
+    "The bathroom renovation was a surprise.",
+    "The bathroom renovation was a delight.",
+    "The bathroom renovation took forever."
+   ],
+   "nivel": "C1",
+   "tags": [
+    "gíria"
+   ],
+   "nota": "«Chapuza» é o serviço malfeito, feito às pressas; quem faz é «chapucero». Também é o bico, o trabalhinho avulso.",
+   "notaEn": "'Chapuza' is a botched, slapdash job, and whoever does it is a 'chapucero'. It can also mean an odd job on the side.",
+   "requerTodas": [
+    "p812",
+    "p442",
+    "p351",
+    "p049"
    ]
   },
   {
@@ -29398,6 +29738,147 @@
   },
   {
    "idioma": "es",
+   "id": "f134",
+   "tipo": "frase",
+   "es": "¡Qué guay!",
+   "pt": "Que legal!",
+   "en": "How cool!",
+   "aceitas": [
+    "que legal",
+    "que massa",
+    "que bacana",
+    "que demais",
+    "que irado",
+    "que maneiro",
+    "que show",
+    "que da hora"
+   ],
+   "aceitasEn": [
+    "how cool",
+    "that s cool",
+    "awesome",
+    "brilliant",
+    "great"
+   ],
+   "distratores": [
+    "Que chato!",
+    "Que pena!",
+    "Que nojo!",
+    "Que medo!"
+   ],
+   "distratoresEn": [
+    "How annoying!",
+    "What a shame!",
+    "How gross!",
+    "How scary!"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "«Guay» é o legal da gíria jovem espanhola, e não muda: «un plan guay», «unas zapatillas guay».",
+   "notaEn": "'Guay' is Spain's all-purpose 'cool'. It hardly changes form: 'un plan guay', 'unas zapatillas guay'.",
+   "requerTodas": [
+    "p717"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "f135",
+   "tipo": "frase",
+   "es": "Esa película mola mucho.",
+   "pt": "Esse filme é muito legal.",
+   "en": "That film is really cool.",
+   "aceitas": [
+    "esse filme e muito legal",
+    "esse filme e muito bom",
+    "esse filme e demais",
+    "esse filme e muito massa",
+    "adoro esse filme",
+    "esse filme e muito maneiro",
+    "esse filme e sensacional"
+   ],
+   "aceitasEn": [
+    "that film is really cool",
+    "that movie is really cool",
+    "that film is awesome",
+    "that film rocks"
+   ],
+   "distratores": [
+    "Esse filme cansa muito.",
+    "Esse filme demora muito.",
+    "Esse filme assusta muito.",
+    "Esse filme custa muito."
+   ],
+   "distratoresEn": [
+    "That film is really tiring.",
+    "That film goes on forever.",
+    "That film is really scary.",
+    "That film costs a lot."
+   ],
+   "nivel": "B2",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "«Molar» é gostar muito, na gíria: «me mola» é curto isso. Funciona como «gustar»: a coisa que mola é o sujeito.",
+   "notaEn": "'Molar' is slang for being great; 'me mola' works like 'me gusta', with the cool thing as the subject.",
+   "requerTodas": [
+    "p402",
+    "p847",
+    "p361"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "f136",
+   "tipo": "frase",
+   "es": "Estoy flipando con lo que me cuentas.",
+   "pt": "Estou pasmo com o que você está me contando.",
+   "en": "I can't believe what you're telling me.",
+   "aceitas": [
+    "estou pasmo com o que voce esta me contando",
+    "estou chocado com o que voce me conta",
+    "estou impressionado com o que voce me conta",
+    "to passado com o que voce ta me contando",
+    "nao acredito no que voce esta me contando",
+    "estou de boca aberta com o que voce me conta",
+    "estou pasmo com o que voce me conta"
+   ],
+   "aceitasEn": [
+    "i can t believe what you re telling me",
+    "i m blown away by what you re telling me",
+    "i m gobsmacked by what you re telling me",
+    "i m amazed at what you re telling me"
+   ],
+   "distratores": [
+    "Estou cansado do que você está me contando.",
+    "Estou rindo do que você está me contando.",
+    "Estou anotando o que você está me contando.",
+    "Estou esquecendo o que você está me contando."
+   ],
+   "distratoresEn": [
+    "I'm tired of what you're telling me.",
+    "I'm laughing at what you're telling me.",
+    "I'm writing down what you're telling me.",
+    "I'm forgetting what you're telling me."
+   ],
+   "nivel": "B2",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "«Flipar» é ficar de queixo caído, na gíria. «¡Flipa!» sozinho vale por «imagina só!».",
+   "notaEn": "'Flipar' is slang for being stunned or amazed. On its own, '¡flipa!' means 'get this!'.",
+   "requerTodas": [
+    "p358",
+    "p708",
+    "p483"
+   ]
+  },
+  {
+   "idioma": "es",
    "id": "f138",
    "tipo": "frase",
    "es": "Iba de punta en blanco.",
@@ -29488,6 +29969,100 @@
     "p473",
     "p506",
     "p449"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "f146",
+   "tipo": "frase",
+   "es": "Su familia está forrada.",
+   "pt": "A família dele é cheia da grana.",
+   "en": "His family is loaded.",
+   "aceitas": [
+    "a familia dele e cheia da grana",
+    "a familia dele e rica",
+    "a familia dele esta cheia de dinheiro",
+    "a familia dele e podre de rica",
+    "a familia dele tem muito dinheiro",
+    "a familia dela e rica",
+    "a familia dele e milionaria"
+   ],
+   "aceitasEn": [
+    "his family is loaded",
+    "her family is loaded",
+    "his family is rolling in it",
+    "his family is very rich"
+   ],
+   "distratores": [
+    "A família dele é muito agasalhada.",
+    "A família dele é muito numerosa.",
+    "A família dele é muito fechada.",
+    "A família dele está endividada."
+   ],
+   "distratoresEn": [
+    "His family is very wrapped up.",
+    "His family is very large.",
+    "His family is very private.",
+    "His family is in debt."
+   ],
+   "nivel": "B2",
+   "tags": [
+    "gíria",
+    "economia"
+   ],
+   "nota": "«Forrado» é o forrado de dinheiro: rico. Numa roupa, é ter forro.",
+   "notaEn": "'Forrado' is literally 'lined' — lined with money, loaded. On a coat it just means lined.",
+   "requerTodas": [
+    "p764",
+    "p358",
+    "p709"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "f147",
+   "tipo": "frase",
+   "es": "Te lo has currado mucho.",
+   "pt": "Você caprichou muito.",
+   "en": "You've really put the work in.",
+   "aceitas": [
+    "voce caprichou muito",
+    "voce se esforcou muito",
+    "voce ralou muito",
+    "voce se dedicou muito",
+    "voce trabalhou muito nisso",
+    "voce se empenhou muito",
+    "voce mandou muito bem"
+   ],
+   "aceitasEn": [
+    "you ve really put the work in",
+    "you ve worked really hard on it",
+    "you ve really outdone yourself",
+    "you really went to town on it"
+   ],
+   "distratores": [
+    "Você se machucou muito.",
+    "Você gastou muito.",
+    "Você demorou muito.",
+    "Você reclamou muito."
+   ],
+   "distratoresEn": [
+    "You've really hurt yourself.",
+    "You've really spent a lot.",
+    "You've really taken ages.",
+    "You've really complained a lot."
+   ],
+   "nivel": "C1",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "«Currárselo» é dar duro em algo e fazer bem-feito; é elogio. O verbo é o mesmo «currar» do trabalho.",
+   "notaEn": "'Currárselo' is to work hard on something and do it well — a compliment. It is built on the slang verb 'currar'.",
+   "requerTodas": [
+    "p352",
+    "p042",
+    "p361"
    ]
   },
   {
@@ -38040,6 +38615,50 @@
   },
   {
    "idioma": "es",
+   "id": "u300",
+   "tipo": "frase",
+   "requer": "p304",
+   "es": "No me gusta el cotilleo de oficina.",
+   "pt": "Não gosto de fofoca de escritório.",
+   "en": "I dont like office gossip.",
+   "aceitas": [
+    "nao gosto de fofoca de escritorio",
+    "eu nao gosto de fofoca de escritorio",
+    "nao gosto da fofoca do escritorio",
+    "nao gosto de fofoca no trabalho"
+   ],
+   "aceitasEn": [
+    "i dont like office gossip",
+    "i do not like office gossip",
+    "im not keen on office gossip"
+   ],
+   "distratores": [
+    "Não gosto de piada de escritório.",
+    "Não gosto de política de escritório.",
+    "Não gosto de festa de escritório.",
+    "Não gosto de rotina de escritório."
+   ],
+   "distratoresEn": [
+    "I dont like office jokes.",
+    "I dont like office politics.",
+    "I dont like office parties.",
+    "I dont like office routine."
+   ],
+   "nivel": "B2",
+   "tags": [
+    "gíria",
+    "trabalho"
+   ],
+   "nota": "«De oficina», solto e sem artigo, é «de escritório». Os programas de fofoca da televisão espanhola chamam-se «programas del corazón».",
+   "notaEn": "«De oficina», bare and article free, means «office» as a modifier. Spanish celebrity gossip shows are «programas del corazón».",
+   "requerTodas": [
+    "p398",
+    "p304",
+    "p005"
+   ]
+  },
+  {
+   "idioma": "es",
    "id": "p305",
    "tipo": "palavra",
    "es": "el chaval",
@@ -38081,6 +38700,52 @@
    "sinonimosEs": [
     "el chico",
     "el muchacho"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u301",
+   "tipo": "frase",
+   "requer": "p305",
+   "es": "Es{e chaval|a chavala} juega muy bien.",
+   "pt": "Ess{e garoto|a garota} joga muito bem.",
+   "en": "That kid plays really well.",
+   "aceitas": [
+    "ess{e garoto|a garota} joga muito bem",
+    "ess{e moleque|a moleca} joga muito bem",
+    "ess{e menino|a menina} joga muito bem",
+    "ess{e rapaz|a moca} joga muito bem",
+    "ess{e guri|a guria} joga muito bem"
+   ],
+   "aceitasEn": [
+    "that kid plays really well",
+    "that lad plays really well",
+    "that boy plays very well"
+   ],
+   "distratores": [
+    "Ess{e goleiro|a goleira} joga muito bem.",
+    "Esse time joga muito bem.",
+    "Ess{e veterano|a veterana} joga muito bem.",
+    "Ess{e estreante|a estreante} joga muito bem."
+   ],
+   "distratoresEn": [
+    "That goalkeeper plays really well.",
+    "That team plays really well.",
+    "That veteran plays really well.",
+    "That debutant plays really well."
+   ],
+   "nivel": "B1",
+   "tags": [
+    "gíria",
+    "Espanha"
+   ],
+   "nota": "«Ese» diante de nome de pessoa tem um quê de apontar de longe, nem sempre elogioso — aqui vem com elogio. No futebol, o craque é «un crack».",
+   "notaEn": "«Ese» before a person carries a hint of pointing from afar, not always kindly — here it comes with praise. In football the star is «un crack».",
+   "requerTodas": [
+    "p305",
+    "p399",
+    "p360",
+    "p369"
    ]
   },
   {
@@ -38128,6 +38793,50 @@
     "el acordeón": "no México",
     "el machete": "na Argentina e no Uruguai"
    }
+  },
+  {
+   "idioma": "es",
+   "id": "u302",
+   "tipo": "frase",
+   "requer": "p306",
+   "es": "Le pillaron con una chuleta en el examen.",
+   "pt": "Pegaram ele com uma cola na prova.",
+   "en": "They caught him with a crib sheet in the exam.",
+   "aceitas": [
+    "pegaram ele com uma cola na prova",
+    "pegaram ele colando na prova",
+    "flagraram ele com uma cola na prova",
+    "ele foi pego com uma cola na prova",
+    "pegaram ele com cola na prova"
+   ],
+   "aceitasEn": [
+    "they caught him with a crib sheet in the exam",
+    "he was caught with a cheat sheet in the exam"
+   ],
+   "distratores": [
+    "Pegaram ele com uma calculadora na prova.",
+    "Pegaram ele com uma caneta na prova.",
+    "Pegaram ele com uma folha na prova.",
+    "Pegaram ele com uma revista na prova."
+   ],
+   "distratoresEn": [
+    "They caught him with a calculator in the exam.",
+    "They caught him with a pen in the exam.",
+    "They caught him with a sheet of paper in the exam.",
+    "They caught him with a magazine in the exam."
+   ],
+   "nivel": "B2",
+   "tags": [
+    "escola",
+    "gíria"
+   ],
+   "nota": "«Pillar» é flagrar, apanhar em cima do ato. A prova é «el examen», e o que se ganha ao ser pego costuma ser «un cero».",
+   "notaEn": "«Pillar» is to catch somebody in the act. The exam is «el examen», and getting caught usually earns «un cero».",
+   "requerTodas": [
+    "p068",
+    "p306",
+    "p420"
+   ]
   },
   {
    "idioma": "es",
