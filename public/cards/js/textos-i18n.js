@@ -20,6 +20,7 @@ window.TAIOE_TEXTOS = {
     'topo.cards': 'Todos os cards',
     'topo.textos': 'Textos',
     'topo.config': 'Configurações',
+    'topo.menu': 'Menu',
 
     'porta.abrindoConta': 'Abrindo sua conta…',
     'porta.abrindoCurso': 'Abrindo o curso de {L}…',
@@ -377,6 +378,7 @@ window.TAIOE_TEXTOS = {
     'topo.cards': 'Todas las tarjetas',
     'topo.textos': 'Textos',
     'topo.config': 'Configuración',
+    'topo.menu': 'Menú',
 
     'porta.abrindoConta': 'Abriendo tu cuenta…',
     'porta.abrindoCurso': 'Abriendo el curso de {L}…',
@@ -731,6 +733,7 @@ window.TAIOE_TEXTOS = {
     'topo.cards': 'All cards',
     'topo.textos': 'Texts',
     'topo.config': 'Settings',
+    'topo.menu': 'Menu',
 
     'porta.abrindoConta': 'Opening your account…',
     'porta.abrindoCurso': 'Opening the {L} course…',
