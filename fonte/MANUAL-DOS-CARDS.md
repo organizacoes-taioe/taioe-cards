@@ -87,7 +87,12 @@ ela não é do card: é do motor ou da leva inteira.
   cards do espanhol («Estar en el quinto pino», «¡Qué guay!», «Me pilla de
   camino»), 4 do português («Que legal!», «Quem é esse cara?») e 1 do francês
   («On prend un pot ?»); o julgamento card a card está em
-  `fonte/julgamento-expressoes-2026-10-20.json`.
+  `fonte/julgamento-expressoes-2026-10-20.json`. **A expressão que sai leva
+  junto o que dependia dela**: a nota das palavras que a citam (em todos os
+  baralhos, inclusive a `notaEs` do inglês e do francês), o sentido que só ela
+  dava às `aceitas` da palavra («frito» = dormindo, «la pelota» = puxa-saco,
+  «menudo» = que baita), e a frase da palavra que ficou sem nenhuma — que
+  ganha frase de uso nova (leva `32-frases-das-palavras-sem-frase`, 21/10).
 - **Nada que ofenda em algum lugar** (decisão do Gere, 07/10/2026). Nenhum
   palavrão nem expressão chula («ni de coña», «me cago en…»), e nenhuma palavra
   que seja grosseira ou de duplo sentido em algum país da língua («coger»,

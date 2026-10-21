@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso fr-es, leva 606db8b5, 1439 cards.
+-- Catálogo do curso fr-es, leva 9f90e990, 1439 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('fr-es', '606db8b5', '1439 cards')
+values ('fr-es', '9f90e990', '1439 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -796,7 +796,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-es', 'fr-u366', 'frase', 'A1', array['social']::text[], 'fr-p042', '572fb454', array['Estoy muy contento por ti.', 'Estoy muy enojado contigo.', 'Estoy muy orgulloso de ti.', 'Estoy muy preocupado por ti.', 'Estoy muy triste por ti.']::text[]),
   ('fr-es', 'fr-u367', 'frase', 'A1', array['cotidiano']::text[], 'fr-p102', '5bd41896', array['Eso me da asco.', 'Eso me da frío.', 'Eso me da hambre.', 'Eso me da miedo.', 'Eso me da sueño.']::text[]),
   ('fr-es', 'fr-u368', 'frase', 'A1', array['família', 'natureza']::text[], 'fr-p136', '2d4932ba', array['Mi abuela vive en el campo.', 'Mi madrina vive en el campo.', 'Mi suegra vive en el campo.', 'Mi tía vive en el campo.', 'Mi vecina vive en el campo.']::text[]),
-  ('fr-es', 'fr-u369', 'frase', 'A1', array['casa', 'social']::text[], 'fr-p072', 'f15e234c', array['Mi colega es muy simpático.', 'Mi cuñado es muy simpático.', 'Mi jefe es muy simpático.', 'Mi profesor es muy simpático.', 'Mi vecino es muy simpático.']::text[]),
+  ('fr-es', 'fr-u369', 'frase', 'A1', array['casa', 'social']::text[], 'fr-p072', '7831f147', array['Mi colega es muy simpático.', 'Mi cuñado es muy simpático.', 'Mi jefe es muy simpático.', 'Mi profesor es muy simpático.', 'Mi vecino es muy simpático.']::text[]),
   ('fr-es', 'fr-u370', 'frase', 'A1', array['cultura', 'mídia']::text[], 'fr-p149', 'bf2f013b', array['Veo el básquet en la tele.', 'Veo el ciclismo en la tele.', 'Veo el fútbol en la tele.', 'Veo el tenis en la tele.', 'Veo el vóley en la tele.']::text[]),
   ('fr-es', 'fr-u371', 'frase', 'A1', array['compras', 'cidade']::text[], 'fr-p182', 'c3d5d7cb', array['Arreglo mi bicicleta.', 'Lavo mi bicicleta.', 'Pinto mi bicicleta.', 'Presto mi bicicleta.', 'Vendo mi bicicleta.']::text[]),
   ('fr-es', 'fr-u372', 'frase', 'A1', array['família', 'social']::text[], 'fr-p104', '50b2992c', array['Es el cumpleaños de mi abuela.', 'Es el cumpleaños de mi cuñada.', 'Es el cumpleaños de mi hermana.', 'Es el cumpleaños de mi prima.', 'Es el cumpleaños de mi tía.']::text[]),
@@ -1084,7 +1084,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-es', 'fr-p436', 'palavra', 'B1', array['cotidiano']::text[], null, '602dbdd4', array['la amenaza', 'la catástrofe', 'la crisis', 'la estrofa', 'la hazaña']::text[]),
   ('fr-es', 'fr-p437', 'palavra', 'B1', array['adjetivo', 'trabalho']::text[], null, '98dfb964', array['atrasado', 'cansado', 'libre', 'oculto', 'ocupado']::text[]),
   ('fr-es', 'fr-p438', 'palavra', 'B1', array['adjetivo', 'comida']::text[], null, 'e352f11d', array['biográfico', 'biológico', 'geológico', 'psicológico', 'químico']::text[]),
-  ('fr-es', 'fr-p439', 'palavra', 'B1', array['casa', 'comida']::text[], null, '1348dcf7', array['el frasco', 'el paquete', 'el poste', 'el puerto', 'la tapa']::text[]),
+  ('fr-es', 'fr-p439', 'palavra', 'B1', array['casa', 'comida']::text[], null, '68834725', array['el frasco', 'el paquete', 'el poste', 'el puerto', 'la tapa']::text[]),
   ('fr-es', 'fr-p440', 'palavra', 'B1', array['verbo', 'trabalho', 'falso-amigo']::text[], null, '67f5379e', array['gemir', 'generar', 'gestionar', 'guardar', 'helar']::text[]),
   ('fr-es', 'fr-p441', 'palavra', 'B1', array['cultura']::text[], null, '00ff72d8', array['el castigo / la pena', 'el comandante / el capitán', 'el encargo / el pedido', 'el mando / el mandamiento', 'la oración / el rezo']::text[]),
   ('fr-es', 'fr-p442', 'palavra', 'B1', array['família']::text[], null, 'b1023ea2', array['el abuelo / el bisabuelo', 'el cuñado / el yerno', 'el padrino / el ahijado', 'el suegro / el padrastro', 'el tío / el primo']::text[]),
