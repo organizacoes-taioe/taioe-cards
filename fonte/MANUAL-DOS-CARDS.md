@@ -822,6 +822,8 @@ nenhum outro baralho.
 
 ## 16. O card de verso
 
+> **Saiu em outubro de 2026**: o texto não tem card (seção 17.4). Fica como registro.
+
 O baralho ganhou um vizinho: as **trilhas de texto**, em
 `fonte/textos/<idioma>/`. O texto não é card — é uma faixa que o app liga e
 que vai soltando cards na ordem. O plano inteiro está em
@@ -866,9 +868,9 @@ existe e a que vier. O motor está em `js/motor.js` (`liberadaEm`,
   feminino e conjugação **não têm card**: são aprendidos nas frases.
 - **Frase** — de dois tipos: a que mostra os usos de uma palavra, e a que
   mostra as conjugações de um verbo (o card de conjugação, seção 10).
-- **Texto** — poema ou trecho de prosa em domínio público, que aparece como
-  **recompensa** quando todas as palavras dele estão dominadas. O texto não tem
-  card para decorar; as frases dele que funcionam sozinhas podem ganhar card
+- **Texto** — poema da Biblioteca Taioé, que aparece verso a verso à medida
+  que as palavras de cada verso ficam dominadas (17.4). O texto não tem card
+  para decorar; as frases dele que funcionam sozinhas podem ganhar card
   próprio, e aí são frases como as outras.
 
 ### 17.2 A frase só aparece com todas as palavras dela dominadas
@@ -940,44 +942,39 @@ a cada cinco cards novos**.
 
 ### 17.4 Os textos
 
-A partir de **400 cards dominados**, além das frases, a lista de espera ganha
-**um texto em prosa e um poema** — dois, para o poema de palavra rara não
-travar a fila de textos. As palavras deles entram como as das frases em vista,
-e o texto aparece inteiro, como recompensa, quando todas estão dominadas.
+Desde 20/10/2026 (`PLANO.md`, seção 9) os textos vêm da **Biblioteca Taioé**: os
+poemas na língua original, com o glossário de cada palavra, e, no curso de
+português, os poemas portugueses dela. Não há mais tradução nem a espera de 400
+dominados.
 
-Como ficou no app (outubro de 2026), no lugar da trilha de cards de verso de
-01/10:
-
-- **o texto não tem card.** Mora em `fonte/textos/<idioma>/`, com o original
-  e a tradução de cada linha em `blocos` (estrofe ou parágrafo), a lista
-  `requerTodas` das palavras que exige — anotada como a da frase, seção 17.2 —
-  e `autor`, `ano`, `dominio`, `fonte`, `recorte`, `nota`;
-- **as palavras do texto estreiam uma a cada duas das frases em vista**, na
-  ordem de leitura, alternando poema e prosa. Se viessem depois das das
-  frases, nunca chegariam, porque a lista de frases se renova;
-- **na meia-noite seguinte ao domínio da última palavra**, o texto aparece no
-  lugar do próximo card, inteiro, com a tradução ao lado. Fica como lido, o
-  próximo do mesmo tipo entra na espera (o mais perto de destravar), e a tela
-  Textos guarda os já lidos;
-- **o poema se revela verso a verso** (pedido do Gere, 07/10/2026): cada linha
-  traz em `requer` as palavras dela, e o build monta o `requerTodas` a partir
-  das linhas, na ordem de leitura. O verso k aparece no lugar do próximo card
-  na meia-noite seguinte ao domínio das palavras dos versos 1 a k, com o
-  contador (3/8). A prosa continua aparecendo só inteira. Os versos já vistos
-  viajam em `textos.lidos` como `<id>#<k>`, sem coluna nova no banco.
+- **Todo mundo começa com um poema** automático (o campo `fila` do texto, do mais
+  fácil ao mais difícil), e pode escolher até três, ou nenhum, na tela Textos ou
+  pelo botão «Aprender as palavras deste poema», na Biblioteca.
+- **As palavras dos textos ficam com 1 de cada 3 vagas de card novo**, na ordem
+  de leitura e em rodízio entre os textos escolhidos.
+- **O verso aparece na hora** em que a última palavra dele fica sabida, sem
+  tradução, com as palavras clicáveis (o lema, a classe e a tradução do card).
+- **Cada palavra se liga ao lema**: «partirai» é o card de «partir». Flexão não
+  ganha card.
 
 **Para pôr um texto novo:**
 
-1. o Gere aprova (`escolher-textos.html`); só domínio público;
-2. o original vem de uma edição de verdade — o Wikisource, pelo
-   `ferramentas/fonte.mjs` do Versificador —, com a grafia atualizada («á»
-   vira «a») e nada digitado de memória. Os candidatos de 02/10 tinham sido
-   escritos de cabeça, e um deles misturava uma quadra de outro poema;
-3. **poema se traduz em verso, pelo método do Versificador** (medida, rima,
-   número de versos), com os arquivos em `fonte/textos/<idioma>/versos/` e o
-   `molde.mjs` sem ✗ nem ≠; prosa, numa tradução fiel e corrente;
-4. as palavras que ainda não têm card ganham card (forma de dicionário), e
-   depois frases, como qualquer palavra (seção 18).
+1. o poema entra na Biblioteca, com o glossário (`edicoes/lingua-original/README.md`
+   da Biblioteca; no português, só o arquivo de lemas em `fonte/textos/pt/lemas/`);
+2. `python fonte/importar-texto.py <pasta-da-biblioteca> <poema> [--fila N]` grava
+   `fonte/textos/<língua>/<autor>--<poema>.json` e dá o destino de cada palavra:
+   o card do lema (pela coluna `cards` da lista de frequência), `gramatical`
+   (artigo, preposição, pronome… aprende-se nas frases) ou `nome`;
+3. o que falta vira card: a palavra da lista ganha **card comum** e frase de uso,
+   como qualquer palavra (seção 18); a palavra **fora da lista** ganha **card de
+   leitura** (17.4.2);
+4. o que o automático errou se corrige com `python fonte/destino-texto.py`
+   (a decisão fica marcada `manual` e sobrevive à reimportação);
+5. as palavras sem card levam `defEs`/`defEn` (e `def`, para o público português)
+   no destino: uma definição curta, como num glossário;
+6. o build só publica o texto **pronto** — sem `+lema`, sem `conferir`, com as
+   definições — em `data/textos-<língua>.js` e na lista `data/textos.json`, que a
+   Biblioteca lê para pôr o botão.
 
 ### 17.4.1 As frases de primeiros passos
 
@@ -990,6 +987,19 @@ cumprimentos, apresentar-se, por favor/obrigado/desculpa, «não entendo»,
 «pode repetir?», onde fica, quanto custa, a conta. O app as intercala com as
 palavras novas, uma a cada duas, na ordem do arquivo. **Toda língua nova
 começa por elas** (seção 18, passo 0).
+
+### 17.4.2 O card de leitura
+
+A palavra rara de um texto (fora da lista de frequência do curso) entra como card
+com `"leitura": true`:
+
+- só estreia para quem escolheu um texto que a pede;
+- só tem a ida (a palavra na língua ensinada, a resposta na língua de quem
+  estuda) e fica dominada ao fim dela; a revisão também é na ida;
+- traz os quartetos de resposta dos públicos, sem distratores na língua ensinada,
+  e **não tem frase de uso** (o build não cobra);
+- **não entra na lista de frequência** (o build barra);
+- a resposta é o sentido que a palavra tem no texto; a nota pode dizer que é rara.
 
 ### 17.5 «Não quero aprender este card»
 

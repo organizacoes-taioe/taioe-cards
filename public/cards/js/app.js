@@ -526,9 +526,11 @@ window.TaioeCardsApp = function (ctx) {
       const vez = Math.max(0, 2 - desde);
       ordemDoResto = semLivres.slice(0, vez).concat([livres[0]], intercalar(semLivres.slice(vez), livres.slice(1), 2));
     }
+    let fila = frescas.concat(intercalar(ordemDoResto, antigas, 2));
     /* A fila se refaz a cada estreia, então a palavra do texto também não tem
        lugar fixo: conta-se quantas estreias houve desde a última palavra de
-       texto, e a próxima entra quando chega a vez dela. */
+       texto, e a próxima entra quando chega a vez dela. Entra por último,
+       depois das frases, para nada empurrar o lugar dela. */
     if (doTexto.length) {
       const dosTextos = new Set(ativos.flatMap(x => Motor.requeridas(x)));
       const estreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined)
@@ -537,9 +539,9 @@ window.TaioeCardsApp = function (ctx) {
       while (desde < estreias.length && !dosTextos.has(estreias[desde])) desde++;
       const cada = Motor.TEXTO_A_CADA - 1;
       const vez = Math.max(0, cada - desde);
-      ordemDoResto = ordemDoResto.slice(0, vez).concat([doTexto[0]], intercalar(ordemDoResto.slice(vez), doTexto.slice(1), cada));
+      fila = fila.slice(0, vez).concat([doTexto[0]], intercalar(fila.slice(vez), doTexto.slice(1), cada));
     }
-    p.ineditos = frescas.concat(intercalar(ordemDoResto, antigas, 2));
+    p.ineditos = fila;
   }
 
   /* «cada» cards de «muitos», depois um de «poucos», até acabarem os dois. */
@@ -3001,7 +3003,9 @@ window.TaioeCardsApp = function (ctx) {
   /* A tela Textos: os textos do curso, cada um com a caixa de escolher (até
      MAX_TEXTOS, ou nenhum), os versos já lidos e quantas palavras faltam; e,
      embaixo, os que a pessoa já leu inteiros. */
-  function renderizarTexto() {
+  /* «novo»: o texto pedido pela Biblioteca quando já há MAX_TEXTOS escolhidos;
+     a tela diz que é preciso desmarcar um e põe o pedido em primeiro. */
+  function renderizarTexto(novo) {
     const alvo = el['texto-conteudo'];
     if (!TEXTOS.length) {
       alvo.innerHTML = '<p class="ajuda">' + t('texto.nenhum') + '</p>';
@@ -3013,8 +3017,11 @@ window.TaioeCardsApp = function (ctx) {
     const ativos = new Set(textosAtivosAgora().map(x => x.id));
     const arq = progresso.arquivados || {};
     const partes = ['<p class="ajuda">' + t('texto.explica', { n: Motor.MAX_TEXTOS }) + '</p>'];
+    if (novo && TEXTO_POR_ID[novo]) {
+      partes.push('<p class="recompensa">' + t('texto.trocar', { n: Motor.MAX_TEXTOS, t: escapar(TEXTO_POR_ID[novo].titulo) }) + '</p>');
+    }
     const abertos = TEXTOS.filter(x => !Motor.textoTerminado(x, tx.lidos))
-      .sort((a, b) => (ativos.has(b.id) - ativos.has(a.id)) || ((a.fila === undefined ? 1e9 : a.fila) - (b.fila === undefined ? 1e9 : b.fila)));
+      .sort((a, b) => ((b.id === novo) - (a.id === novo)) || (ativos.has(b.id) - ativos.has(a.id)) || ((a.fila === undefined ? 1e9 : a.fila) - (b.fila === undefined ? 1e9 : b.fila)));
     partes.push('<div class="grupo lista-textos">');
     abertos.forEach(x => {
       const a = Motor.andamentoDoTexto(x, progresso.cards, arq);
@@ -3795,12 +3802,34 @@ window.TaioeCardsApp = function (ctx) {
   montarFiltros();
   ajustarTextosDaLingua();
 
+  /* O texto pedido pela Biblioteca (PLANO.md, 9.1): entra na escolha da
+     pessoa e tira o automático; com MAX_TEXTOS já escolhidos, a tela Textos
+     pergunta qual trocar. O endereço perde o «?texto=», para recarregar não
+     repetir o pedido. */
+  let textoParaTrocar = null;
+  if (ctx.textoPedido && TEXTO_POR_ID[ctx.textoPedido]) {
+    const id = ctx.textoPedido;
+    const e = escolhaDosTextos();
+    const ativos = textosAtivosAgora().map(x => x.id);
+    if (ativos.indexOf(id) < 0) {
+      if (!e || !e.propria) gravarEscolha([id]);
+      else if (ativos.length < Motor.MAX_TEXTOS) gravarEscolha(ativos.concat([id]));
+      else textoParaTrocar = id;
+    }
+  }
+  if (ctx.textoPedido) {
+    try { history.replaceState(null, '', location.pathname); } catch (e) { /* sem history, fica */ }
+  }
+
   progresso.totais.sessoes = (progresso.totais.sessoes || 0) + 1;
   salvarProgresso();
   atualizarPlacar();
   /* a primeira entrada no curso (ou a avaliação que ficou pela metade) abre
      no começo; o resto, na página inicial */
-  if (!retomarComeco()) mostrar('tela-inicio');
+  if (!retomarComeco()) {
+    if (textoParaTrocar) { renderizarTexto(textoParaTrocar); mostrar('tela-texto'); }
+    else mostrar('tela-inicio');
+  }
 
   Sinc = TaioeSincronia.criar({
     sb: ctx.sb, uid: ctx.uid, curso: ctx.curso,

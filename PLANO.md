@@ -1048,21 +1048,24 @@ marcadas com ✔.
 
 | curso | 1º | depois |
 |---|---|---|
-| espanhol | Martí, «Yo soy un hombre sincero» | Bécquer, Rima XXI; Machado, «Caminante» |
+| espanhol | Bécquer, Rima XXI | Machado, Proverbios y cantares XXIX |
 | francês | Verlaine, «Il pleure dans mon cœur» | Hugo, «Demain dès l'aube» |
-| inglês | Dickinson, «I'm Nobody! Who are you?» | Teasdale, «There will come soft rains» |
+| inglês | Dickinson, «I'm nobody! Who are you?» | Stevenson, «Requiem» |
 | português | Gonçalves Dias, «Canção do exílio» | — |
+
+Martí e Teasdale ficaram de fora: os primeiros versos dos escolhidos são mais simples, e a
+Rossetti não está no Wikisource.
 
 ### 9.5 Etapas
 
 | # | etapa | situação |
 |---|---|---|
 | 1 | plano (esta seção) | feito (20/10) |
-| 2 | formato novo, `importar-texto.js` e as checagens do build | |
-| 3 | motor: card de leitura, escolha, fatia de 1 em 3, fila automática, verso na hora; fim dos 400 | |
-| 4 | app: aviso do verso (palavras clicáveis, três botões), tela Textos, vitrine | |
-| 5 | infra: `escolha` em `gravar_extras` (migração) | |
-| 6 | Biblioteca: os poemas automáticos na língua original, com glossário; o lema dos poemas pt | |
-| 7 | cards das palavras dos poemas automáticos (levas) | |
-| 8 | Biblioteca: o botão e a entrada pelo texto (`/cards/?texto=<id>`) | |
-| 9 | teste, produção, manual 17.4 reescrito | |
+| 2 | formato novo, `importar-texto.py`, `destino-texto.py` e as checagens do build | feito (20/10) |
+| 3 | motor: card de leitura, escolha, fatia de 1 em 3, fila automática, verso na hora; fim dos 400 | feito (20/10), `testar-textos.js` |
+| 4 | app: aviso do verso (palavras clicáveis, três botões), tela Textos, vitrine | feito (20–21/10), testado no local |
+| 5 | infra: `escolha` em `gravar_extras` (migração) | infra PR #14; testes do banco no local passaram |
+| 6 | Biblioteca: os poemas automáticos na língua original, com glossário; o lema dos poemas pt | feito (biblioteca branch `textos-nos-cards`) |
+| 7 | cards das palavras dos poemas automáticos (levas) | es, en, pt feitos (21/10); fr em andamento |
+| 8 | Biblioteca: o botão e a entrada pelo texto (`/cards/?texto=<id>`) | feito (21/10), testado no local |
+| 9 | teste, produção, manual 17.4 reescrito | manual feito; falta publicar |

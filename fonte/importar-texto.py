@@ -1,6 +1,7 @@
 """Traz um poema da Biblioteca para os Cards (PLANO.md, seção 9).
 
     python fonte/importar-texto.py <pasta-da-biblioteca> <pasta-do-poema> [--fila N]
+    python fonte/importar-texto.py <pasta-da-biblioteca> --pt <autor>/<poema> [--fila N]
 
 Lê edicoes/lingua-original/<pasta>/poema.txt e glossario.json pela própria ferramenta da
 Biblioteca (ferramentas/lingua_original.py: a mesma divisão em palavras e as mesmas chaves) e
@@ -33,7 +34,7 @@ ARTIGO = {
     'fr': re.compile(r"^(le\s+|la\s+|les\s+|l['’])", re.I),
     'pt': re.compile(r'^(o|a|os|as)\s+', re.I),
 }
-GRAMATICAL = re.compile(r'artigo|preposi|conjun|pronome|contra[cç]|interjei|determinante|numeral', re.I)
+GRAMATICAL = re.compile(r'artigo|preposi|conjun|pronome|contra[cç]|interjei|determinante|numeral|possessiv|demonstrativ|interrogativ|part[íi]cula', re.I)
 PROPRIO = re.compile(r'pr[óo]prio', re.I)
 MANUAIS = ('card', 'g', 'leitura', 'defEs', 'defEn', 'conferir', 'cards')
 
@@ -92,6 +93,50 @@ def destino_automatico(v, lista):
     return {'card': '+' + lema, 'leitura': True}
 
 
+def poema_portugues(raiz, caminho):
+    """Um poema da Literatura em português (conteudo/<autor>/poesia.js), que na Biblioteca não tem
+    glossário: o lema de cada palavra fica nos Cards, em fonte/textos/pt/lemas/<autor>--<poema>.json,
+    no formato do glossário ({"verbetes": {chave: {lema, classe, forma}}, "ocorrencias": {}})."""
+    autor, slug = caminho.split('/', 1)
+    ident = autor + '-' + slug
+    texto = None
+    m = re.search(r'"%s":\s*\{"t":\[(".*?(?<!\\)")' % re.escape(ident),
+                  open(os.path.join(raiz, 'conteudo', autor, 'poesia.js'), encoding='utf-8').read())
+    if not m:
+        sys.exit('não achei o poema %s em conteudo/%s/poesia.js' % (ident, autor))
+    texto = json.loads(m.group(1)).replace('\r\n', '\n').strip('\n')
+    indice = open(os.path.join(raiz, 'conteudo', 'poesia.js'), encoding='utf-8').read()
+    bloco = indice[indice.index('autor: "%s"' % autor):]
+    livros = json.loads(re.search(r'livros: (\[.*?\]),\n', bloco).group(1))
+    item = json.loads(re.search(r'(\{"id":"%s".*?\})' % re.escape(ident), bloco).group(1))
+    livro = livros[item['livro']] if isinstance(item.get('livro'), int) and item['livro'] < len(livros) else {}
+    poema = {'pasta': slug, 'autor': autor, 'lingua': 'pt', 'titulo': item['titulo'],
+             'ano': item.get('ano') or livro.get('ano'), 'fontes': []}
+    bruto = texto.split('\n')
+    por_indice, n = {}, 0
+    for i, l in enumerate(bruto):
+        if l.strip() and not l.startswith('::'):
+            n += 1
+            por_indice[i] = (n, l)
+    arq = os.path.join(AQUI, 'textos', 'pt', 'lemas', '%s--%s.json' % (autor, slug))
+    glos = json.load(open(arq, encoding='utf-8')) if os.path.exists(arq) else None
+    if glos is None:
+        # o esqueleto, para preencher: uma chave por palavra, com a lista das ocorrências
+        from collections import OrderedDict
+        lo_sep = re.compile(r"[^\W\d_]+(?:[-'’][^\W\d_]+)*")
+        chaves = OrderedDict()
+        for i, (num, l) in sorted(por_indice.items()):
+            for k, mm in enumerate(lo_sep.finditer(l), 1):
+                chaves.setdefault(mm.group().lower(), []).append('%d.%d' % (num, k))
+        os.makedirs(os.path.dirname(arq), exist_ok=True)
+        with open(arq, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({'verbetes': {c: {'lema': '', 'classe': '', 'em': v} for c, v in chaves.items()},
+                       'ocorrencias': {}}, f, ensure_ascii=False, indent=1)
+            f.write('\n')
+        sys.exit('gravei o esqueleto em %s: preencha lema e classe (e forma) de cada chave' % os.path.relpath(arq, AQUI))
+    return poema, bruto, por_indice, glos
+
+
 def main():
     a = sys.argv[1:]
     fila = None
@@ -99,21 +144,28 @@ def main():
         i = a.index('--fila')
         fila = int(a[i + 1])
         del a[i:i + 2]
+    if len(a) == 3 and a[1] == '--pt':
+        a = [a[0], 'pt:' + a[2]]
     if len(a) != 2:
         sys.exit(__doc__)
     raiz, pasta = a
     lo = carregar_biblioteca(raiz)
-    poema = lo.achar(pasta)
+    if pasta.startswith('pt:'):
+        poema, bruto, por_indice, glos = poema_portugues(raiz, pasta[3:])
+    else:
+        poema = lo.achar(pasta)
+        glos = lo.ler_glossario(pasta)
+        # os versos com palavras: o índice da linha no arquivo → (número, texto)
+        bruto = lo.ler_texto(pasta).split('\n')
+        por_indice = {i: (n, t) for (n, t, i, d) in lo.linhas_do_poema(poema) if isinstance(i, int)}
     lingua = poema['lingua']
-    glos = lo.ler_glossario(pasta)
     if not glos:
-        sys.exit('o poema ainda não tem glossario.json na Biblioteca')
+        sys.exit('o poema ainda não tem glossário (na Biblioteca; no português, em fonte/textos/pt/lemas/)')
     verbetes, ocorr = glos['verbetes'], glos.get('ocorrencias', {})
     lista = ler_lista(lingua)
+    pasta = poema['pasta']
 
     # os versos, com as palavras, em estrofes (linha em branco separa); título e marcas ficam fora
-    bruto = lo.ler_texto(pasta).split('\n')
-    por_indice = {i: (n, t) for (n, t, i, d) in lo.linhas_do_poema(poema) if isinstance(i, int)}
     blocos, atual, usadas = [], [], []
     for i, l in enumerate(bruto):
         if not l.strip():
@@ -166,7 +218,7 @@ def main():
         else:
             d.update({k: v[k] for k in ('lema', 'classe', 'forma', 'def') if v.get(k)})
             d.update(destino_automatico(v, lista))
-        if v.get('wiki') is not None or 'wiki' not in v:
+        if lingua != 'pt' and (v.get('wiki') is not None or 'wiki' not in v):
             d['wiki'] = lo.url_wiki(v.get('wiki') or lingua, v.get('lema') or '', lingua) if v.get('lema') else None
             if not d['wiki']:
                 del d['wiki']

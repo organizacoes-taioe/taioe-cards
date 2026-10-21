@@ -644,7 +644,8 @@ for (const { idioma, cards } of baralhos) {
      numa leva e a frase na seguinte. */
   const comFrase = new Set(cards.filter(c => c.requer).map(c => c.requer));
   cards.forEach(c => (Array.isArray(c.requerTodas) ? c.requerTodas : []).forEach(r => comFrase.add(r)));
-  const soltas = cards.filter(c => c.tipo === 'palavra' && !comFrase.has(c.id));
+  /* o card de leitura (PLANO.md, 9.2) não tem frase de uso, de propósito */
+  const soltas = cards.filter(c => c.tipo === 'palavra' && !c.leitura && !comFrase.has(c.id));
   if (soltas.length) {
     avisos.push('[' + idioma + '] ' + soltas.length + ' palavra(s) que nenhuma frase usa: ' +
       soltas.map(c => c.id + ' (' + c[L.texto] + ')').join(', '));

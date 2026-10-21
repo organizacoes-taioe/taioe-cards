@@ -3,7 +3,7 @@
  "idioma": "fr",
  "tipo": "poema",
  "titulo": "Demain, dès l’aube…",
- "autor": "victor-hugo",
+ "autor": "Victor Hugo",
  "ano": 1856,
  "biblioteca": "/biblioteca/victor-hugo/demain-des-l-aube/",
  "fonte": "https://fr.wikisource.org/wiki/%C2%AB_Demain,_d%C3%A8s_l%E2%80%99aube,_%C3%A0_l%E2%80%99heure_o%C3%B9_blanchit_la_campagne_%C2%BB",
@@ -957,7 +957,9 @@
     "A partir de (um tempo)."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/d%C3%A8s"
+   "wiki": "https://fr.wiktionary.org/wiki/d%C3%A8s",
+   "defEs": "Preposición: desde, ya en: «dès l’aube», al alba.",
+   "defEn": "Preposition: from, as early as: «dès l’aube», at first light."
   },
   "l’": {
    "lema": "l’",
@@ -967,7 +969,9 @@
     "Elisão dos artigos definidos «le» e «la» diante de vogal ou de h mudo."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/l%E2%80%99"
+   "wiki": "https://fr.wiktionary.org/wiki/l%E2%80%99",
+   "defEs": "Artículo «le» o «la» delante de vocal: el, la.",
+   "defEn": "Article «le» or «la» before a vowel: the."
   },
   "aube": {
    "lema": "aube",
@@ -975,7 +979,7 @@
    "def": [
     "Claridade que embranquece o oriente no momento que precede o nascer do sol; esse próprio momento."
    ],
-   "card": "+aube",
+   "card": "fr-p550",
    "wiki": "https://fr.wiktionary.org/wiki/aube"
   },
   "à": {
@@ -985,7 +989,9 @@
     "Introduz um complemento circunstancial de tempo."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/%C3%A0"
+   "wiki": "https://fr.wiktionary.org/wiki/%C3%A0",
+   "defEs": "Preposición: a, en (de tiempo): «à l’heure où», a la hora en que.",
+   "defEn": "Preposition: at (of time): «à l’heure où», at the hour when."
   },
   "heure": {
    "lema": "heure",
@@ -1003,9 +1009,11 @@
     "Ao qual; no qual.",
     "Usado, por analogia, para falar do tempo."
    ],
-   "card": "+où",
-   "leitura": true,
-   "wiki": "https://fr.wiktionary.org/wiki/o%C3%B9"
+   "wiki": "https://fr.wiktionary.org/wiki/o%C3%B9",
+   "g": "gramatical",
+   "manual": true,
+   "defEs": "Relativo: donde, en que (también de tiempo).",
+   "defEn": "Relative: where, when."
   },
   "blanchit": {
    "lema": "blanchir",
@@ -1014,7 +1022,7 @@
    "def": [
     "Tornar-se branco."
    ],
-   "card": "+blanchir",
+   "card": "fr-p551",
    "wiki": "https://fr.wiktionary.org/wiki/blanchir"
   },
   "la": {
@@ -1025,7 +1033,9 @@
     "Feminino singular de «le»; determina um grupo nominal feminino singular."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/la"
+   "wiki": "https://fr.wiktionary.org/wiki/la",
+   "defEs": "Artículo: la.",
+   "defEn": "Article: the (feminine)."
   },
   "campagne": {
    "lema": "campagne",
@@ -1043,7 +1053,9 @@
     "Pronome da primeira pessoa do singular, usado exclusivamente como sujeito."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/je"
+   "wiki": "https://fr.wiktionary.org/wiki/je",
+   "defEs": "Pronombre: yo.",
+   "defEn": "Pronoun: I."
   },
   "partirai": {
    "lema": "partir",
@@ -1072,7 +1084,9 @@
     "Pronome pessoal sujeito da segunda pessoa do singular."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/tu"
+   "wiki": "https://fr.wiktionary.org/wiki/tu",
+   "defEs": "Pronombre: tú.",
+   "defEn": "Pronoun: you (familiar)."
   },
   "sais": {
    "lema": "savoir",
@@ -1091,7 +1105,9 @@
     "Complementador que introduz uma oração subordinada completiva."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/que"
+   "wiki": "https://fr.wiktionary.org/wiki/que",
+   "defEs": "Conjunción: que.",
+   "defEn": "Conjunction: that."
   },
   "m’": {
    "lema": "m’",
@@ -1101,7 +1117,9 @@
     "Elisão do pronome pessoal «me» diante de vogal ou de h mudo."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/m%E2%80%99"
+   "wiki": "https://fr.wiktionary.org/wiki/m%E2%80%99",
+   "defEs": "Pronombre «me» delante de vocal: me.",
+   "defEn": "Pronoun «me» before a vowel: me."
   },
   "attends": {
    "lema": "attendre",
@@ -1121,7 +1139,9 @@
     "Elisão do pronome da primeira pessoa do singular «je» diante de vogal ou de h mudo."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/j%E2%80%99"
+   "wiki": "https://fr.wiktionary.org/wiki/j%E2%80%99",
+   "defEs": "Pronombre «je» delante de vocal: yo.",
+   "defEn": "Pronoun «je» before a vowel: I."
   },
   "irai": {
    "lema": "aller",
@@ -1140,7 +1160,9 @@
     "Através de."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/par"
+   "wiki": "https://fr.wiktionary.org/wiki/par",
+   "defEs": "Preposición: por, a través de.",
+   "defEn": "Preposition: through, by way of."
   },
   "forêt": {
    "lema": "forêt",
@@ -1148,7 +1170,7 @@
    "def": [
     "Vasto terreno coberto de mata, com muitas árvores próximas umas das outras."
    ],
-   "card": "+forêt",
+   "card": "fr-p552",
    "wiki": "https://fr.wiktionary.org/wiki/for%C3%AAt"
   },
   "montagne": {
@@ -1157,7 +1179,7 @@
    "def": [
     "Relevo topográfico que apresenta vertentes pronunciadas (em oposição a «altiplano», situado em altitude mas sem caráter montanhoso)."
    ],
-   "card": "+montagne",
+   "card": "fr-p553",
    "wiki": "https://fr.wiktionary.org/wiki/montagne"
   },
   "ne": {
@@ -1166,9 +1188,10 @@
    "def": [
     "Negação. Primeira parte de um morfema negativo que enquadra o verbo, em geral completado por «pas», «plus», «jamais», «rien» etc. Em linguagem formal, basta às vezes sozinho para marcar a negação."
    ],
-   "card": "+ne",
-   "leitura": true,
-   "wiki": "https://fr.wiktionary.org/wiki/ne"
+   "g": "gramatical",
+   "wiki": "https://fr.wiktionary.org/wiki/ne",
+   "defEs": "Negación; en lengua literaria basta sola: «je ne puis», no puedo.",
+   "defEn": "Negation; in literary French it can stand alone: «je ne puis», I cannot."
   },
   "puis": {
    "lema": "pouvoir",
@@ -1186,7 +1209,7 @@
    "def": [
     "Encontrar-se, ficar ou estar em certo estado."
    ],
-   "card": "+demeurer",
+   "card": "fr-p554",
    "wiki": "https://fr.wiktionary.org/wiki/demeurer"
   },
   "loin": {
@@ -1205,7 +1228,9 @@
     "Marca a relação de uma distância ou de uma duração qualquer com o lugar ou com a época em que ela começa."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/de"
+   "wiki": "https://fr.wiktionary.org/wiki/de",
+   "defEs": "Preposición: de.",
+   "defEn": "Preposition: from."
   },
   "toi": {
    "lema": "toi",
@@ -1215,7 +1240,9 @@
     "Usado, depois de uma preposição, como complemento indireto ou circunstancial."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/toi"
+   "wiki": "https://fr.wiktionary.org/wiki/toi",
+   "defEs": "Pronombre tónico: ti, tú.",
+   "defEn": "Stressed pronoun: you."
   },
   "plus": {
    "lema": "plus",
@@ -1223,8 +1250,11 @@
    "def": [
     "Com um adjetivo ou advérbio, indica o comparativo; mais."
    ],
-   "card": "+plus",
-   "wiki": "https://fr.wiktionary.org/wiki/plus"
+   "wiki": "https://fr.wiktionary.org/wiki/plus",
+   "g": "gramatical",
+   "manual": true,
+   "defEs": "Adverbio: más.",
+   "defEn": "Adverb: more, longer."
   },
   "longtemps": {
    "lema": "longtemps",
@@ -1253,7 +1283,9 @@
     "Plural de «le» ou «la»."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/les"
+   "wiki": "https://fr.wiktionary.org/wiki/les",
+   "defEs": "Artículo plural: los, las.",
+   "defEn": "Article: the (plural)."
   },
   "yeux": {
    "lema": "œil",
@@ -1272,7 +1304,7 @@
    "def": [
     "Olhar, observar ou encarar com atenção e por muito tempo."
    ],
-   "card": "+fixer",
+   "card": "fr-p555",
    "wiki": "https://fr.wiktionary.org/wiki/fixer"
   },
   "sur": {
@@ -1282,7 +1314,9 @@
     "Indica uma direção."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/sur"
+   "wiki": "https://fr.wiktionary.org/wiki/sur",
+   "defEs": "Preposición: sobre, en.",
+   "defEn": "Preposition: on, upon."
   },
   "mes": {
    "lema": "mon",
@@ -1292,7 +1326,9 @@
     "Marca a posse ou a pertença; o possuidor é quem fala."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/mon"
+   "wiki": "https://fr.wiktionary.org/wiki/mon",
+   "defEs": "Posesivo plural: mis.",
+   "defEn": "Possessive: my (plural)."
   },
   "pensées": {
    "lema": "pensée",
@@ -1301,7 +1337,7 @@
    "def": [
     "Meditação; devaneio."
    ],
-   "card": "+pensée",
+   "card": "fr-p556",
    "wiki": "https://fr.wiktionary.org/wiki/pens%C3%A9e"
   },
   "sans": {
@@ -1311,7 +1347,9 @@
     "Coloca-se também diante de um infinitivo para marcar a ausência, a falta de uma maneira de ser ou de agir."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/sans"
+   "wiki": "https://fr.wiktionary.org/wiki/sans",
+   "defEs": "Preposición: sin.",
+   "defEn": "Preposition: without."
   },
   "rien": {
    "lema": "rien",
@@ -1321,7 +1359,9 @@
     "«Sans rien» + verbo no infinitivo: construção que torna totalmente negativa a ação do verbo."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/rien"
+   "wiki": "https://fr.wiktionary.org/wiki/rien",
+   "defEs": "Pronombre: nada.",
+   "defEn": "Pronoun: nothing, anything."
   },
   "voir": {
    "lema": "voir",
@@ -1340,7 +1380,9 @@
     "Contração da preposição «à» e do artigo definido «le»."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/au"
+   "wiki": "https://fr.wiktionary.org/wiki/au",
+   "defEs": "Contracción de «à» + «le»: al; «au dehors», afuera.",
+   "defEn": "Contraction of «à» + «le»: to the, at the; «au dehors», outside."
   },
   "dehors": {
    "lema": "dehors",
@@ -1348,7 +1390,7 @@
    "def": [
     "Parte exterior de uma coisa."
    ],
-   "card": "+dehors",
+   "card": "fr-p557",
    "wiki": "https://fr.wiktionary.org/wiki/dehors"
   },
   "entendre": {
@@ -1357,7 +1399,7 @@
    "def": [
     "Perceber um som."
    ],
-   "card": "+entendre",
+   "card": "fr-p558",
    "wiki": "https://fr.wiktionary.org/wiki/entendre"
   },
   "aucun": {
@@ -1366,9 +1408,11 @@
    "def": [
     "Nenhum; nem um (associado a uma negação: ne, sans…)."
    ],
-   "card": "+aucun",
-   "leitura": true,
-   "wiki": "https://fr.wiktionary.org/wiki/aucun"
+   "wiki": "https://fr.wiktionary.org/wiki/aucun",
+   "g": "gramatical",
+   "manual": true,
+   "defEs": "Ninguno, con negación: «sans… aucun bruit», sin ningún ruido.",
+   "defEn": "No, not any, with a negation: «sans… aucun bruit», without any noise."
   },
   "bruit": {
    "lema": "bruit",
@@ -1376,7 +1420,7 @@
    "def": [
     "Manifestação sonora desagradável, devida à mistura de sons de frequência e intensidade diversas."
    ],
-   "card": "+bruit",
+   "card": "fr-p537",
    "wiki": "https://fr.wiktionary.org/wiki/bruit"
   },
   "seul": {
@@ -1394,7 +1438,7 @@
    "def": [
     "Que não se conhece; que é ignorado."
    ],
-   "card": "+inconnu",
+   "card": "fr-p559",
    "wiki": "https://fr.wiktionary.org/wiki/inconnu"
   },
   "le": {
@@ -1404,7 +1448,9 @@
     "Determinante que marca um substantivo masculino singular, referindo-se a uma única entidade possível em um contexto."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/le"
+   "wiki": "https://fr.wiktionary.org/wiki/le",
+   "defEs": "Artículo: el.",
+   "defEn": "Article: the (masculine)."
   },
   "dos": {
    "lema": "dos",
@@ -1422,9 +1468,9 @@
    "def": [
     "Tornar curvo."
    ],
-   "card": "+courber",
-   "leitura": true,
-   "wiki": "https://fr.wiktionary.org/wiki/courber"
+   "card": "fr-p569",
+   "wiki": "https://fr.wiktionary.org/wiki/courber",
+   "manual": true
   },
   "mains": {
    "lema": "main",
@@ -1444,7 +1490,7 @@
     "Dispor em forma de cruz.",
     "Em particular: dispor uma sobre a outra."
    ],
-   "card": "+croiser",
+   "card": "fr-p560",
    "wiki": "https://fr.wiktionary.org/wiki/croiser"
   },
   "triste": {
@@ -1463,7 +1509,9 @@
     "Concatena vários conceitos numa mesma relação."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/et"
+   "wiki": "https://fr.wiktionary.org/wiki/et",
+   "defEs": "Conjunción: y.",
+   "defEn": "Conjunction: and."
   },
   "jour": {
    "lema": "jour",
@@ -1481,7 +1529,9 @@
     "Tendo em conta; em relação a."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/pour"
+   "wiki": "https://fr.wiktionary.org/wiki/pour",
+   "defEs": "Preposición: para.",
+   "defEn": "Preposition: for."
   },
   "moi": {
    "lema": "moi",
@@ -1490,7 +1540,9 @@
     "Pronome tônico da primeira pessoa do singular."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/moi"
+   "wiki": "https://fr.wiktionary.org/wiki/moi",
+   "defEs": "Pronombre tónico: mí, yo.",
+   "defEn": "Stressed pronoun: me."
   },
   "sera": {
    "lema": "être",
@@ -1510,7 +1562,9 @@
     "Da maneira que; tanto quanto."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/comme"
+   "wiki": "https://fr.wiktionary.org/wiki/comme",
+   "defEs": "Conjunción: como.",
+   "defEn": "Conjunction: like, as."
   },
   "nuit": {
    "lema": "nuit",
@@ -1538,7 +1592,9 @@
     "Conjunção coordenativa negativa que corresponde a «et» afirmativo."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/ni"
+   "wiki": "https://fr.wiktionary.org/wiki/ni",
+   "defEs": "Conjunción negativa: ni.",
+   "defEn": "Negative conjunction: neither, nor."
   },
   "or": {
    "lema": "or",
@@ -1547,7 +1603,7 @@
     "Corpo simples metálico de cor amarela, brilhante, inalterável, muito dúctil e maleável, considerado metal precioso.",
     "Por extensão: a cor desse metal."
    ],
-   "card": "+or",
+   "card": "fr-p561",
    "wiki": "https://fr.wiktionary.org/wiki/or"
   },
   "du": {
@@ -1558,7 +1614,9 @@
     "Artigo contraído, formado pela preposição «de» e pelo artigo «le»."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/du"
+   "wiki": "https://fr.wiktionary.org/wiki/du",
+   "defEs": "Contracción de «de» + «le»: del.",
+   "defEn": "Contraction of «de» + «le»: of the."
   },
   "soir": {
    "lema": "soir",
@@ -1577,7 +1635,9 @@
     "Serve para designar o sujeito na oração relativa."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/qui"
+   "wiki": "https://fr.wiktionary.org/wiki/qui",
+   "defEs": "Relativo: que, el cual (sujeto de la oración).",
+   "defEn": "Relative pronoun: which, that (as subject)."
   },
   "tombe": {
    "lema": "tomber",
@@ -1596,7 +1656,7 @@
    "def": [
     "Grande peça de tecido que, pela força do vento, impulsiona os navios ou os moinhos."
    ],
-   "card": "+voile",
+   "card": "fr-p562",
    "wiki": "https://fr.wiktionary.org/wiki/voile"
   },
   "descendant": {
@@ -1616,7 +1676,9 @@
     "Em direção a."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/vers"
+   "wiki": "https://fr.wiktionary.org/wiki/vers",
+   "defEs": "Preposición: hacia.",
+   "defEn": "Preposition: toward."
   },
   "harfleur": {
    "lema": "Harfleur",
@@ -1625,7 +1687,9 @@
     "Comuna francesa situada no departamento do Sena Marítimo."
    ],
    "g": "nome",
-   "wiki": "https://fr.wiktionary.org/wiki/Harfleur"
+   "wiki": "https://fr.wiktionary.org/wiki/Harfleur",
+   "defEs": "Harfleur, pueblo de Normandía en el estuario del Sena.",
+   "defEn": "Harfleur, a town in Normandy on the Seine estuary."
   },
   "quand": {
    "lema": "quand",
@@ -1634,7 +1698,9 @@
     "Quando; no tempo em que."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/quand"
+   "wiki": "https://fr.wiktionary.org/wiki/quand",
+   "defEs": "Conjunción: cuando.",
+   "defEn": "Conjunction: when."
   },
   "arriverai": {
    "lema": "arriver",
@@ -1664,7 +1730,9 @@
     "Exprime uma ideia de contato."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/sur"
+   "wiki": "https://fr.wiktionary.org/wiki/sur",
+   "defEs": "Preposición: sobre.",
+   "defEn": "Preposition: on."
   },
   "ta": {
    "lema": "ta",
@@ -1673,7 +1741,9 @@
     "Determinante que marca a posse de um objeto (de gênero feminino) pertencente àquele (no singular) a quem se fala."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/ta"
+   "wiki": "https://fr.wiktionary.org/wiki/ta",
+   "defEs": "Posesivo: tu (con sustantivo femenino).",
+   "defEn": "Possessive: your (familiar, with a feminine noun)."
   },
   "tombe#2": {
    "lema": "tombe",
@@ -1682,7 +1752,7 @@
     "Fossa mortuária; sepultura que contém um ou vários mortos.",
     "Pedra tumular; monumento que cobre um túmulo."
    ],
-   "card": "+tombe",
+   "card": "fr-p563",
    "wiki": "https://fr.wiktionary.org/wiki/tombe"
   },
   "un": {
@@ -1692,7 +1762,9 @@
     "Determinante colocado diante de um substantivo que representa um objeto, animado ou inanimado, que não se conhece com precisão. Frequentemente: «um entre outros»."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/un"
+   "wiki": "https://fr.wiktionary.org/wiki/un",
+   "defEs": "Artículo: un.",
+   "defEn": "Article: a, an."
   },
   "bouquet": {
    "lema": "bouquet",
@@ -1700,7 +1772,7 @@
    "def": [
     "Reunião de flores cortadas e apertadas umas contra as outras."
    ],
-   "card": "+bouquet",
+   "card": "fr-p564",
    "wiki": "https://fr.wiktionary.org/wiki/bouquet"
   },
   "de#2": {
@@ -1710,7 +1782,9 @@
     "Relação de uma coisa com aquilo de que ela é formada, sempre com complemento indeterminado."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/de"
+   "wiki": "https://fr.wiktionary.org/wiki/de",
+   "defEs": "Preposición: de (aquello de lo que algo está hecho).",
+   "defEn": "Preposition: of (what something is made of)."
   },
   "houx": {
    "lema": "houx",
@@ -1718,9 +1792,9 @@
    "def": [
     "Árvore sempre verde, da família das aquifoliáceas, cujas folhas são luzidias e armadas de espinhos e cujo fruto é uma baga de um vermelho muito bonito."
    ],
-   "card": "+houx",
-   "leitura": true,
-   "wiki": "https://fr.wiktionary.org/wiki/houx"
+   "card": "fr-p570",
+   "wiki": "https://fr.wiktionary.org/wiki/houx",
+   "manual": true
   },
   "vert": {
    "lema": "vert",
@@ -1737,9 +1811,9 @@
    "def": [
     "Planta lenhosa do gênero «Erica», de folhagem sempre verde, que cresce em terrenos incultos e arenosos."
    ],
-   "card": "+bruyère",
-   "leitura": true,
-   "wiki": "https://fr.wiktionary.org/wiki/bruy%C3%A8re"
+   "card": "fr-p571",
+   "wiki": "https://fr.wiktionary.org/wiki/bruy%C3%A8re",
+   "manual": true
   },
   "en": {
    "lema": "en",
@@ -1748,7 +1822,9 @@
     "Preposição que tem diversos usos especiais e precede muito frequentemente uma palavra que indica ou determina o estado absoluto ou relativo, a maneira de ser, a disposição, a modificação de uma pessoa ou coisa."
    ],
    "g": "gramatical",
-   "wiki": "https://fr.wiktionary.org/wiki/en"
+   "wiki": "https://fr.wiktionary.org/wiki/en",
+   "defEs": "Preposición: en; «en fleur», en flor.",
+   "defEn": "Preposition: in; «en fleur», in bloom."
   },
   "fleur": {
    "lema": "fleur",
@@ -1756,7 +1832,7 @@
    "def": [
     "Órgão reprodutor das angiospermas (ou «plantas com flores»), constituído dos órgãos de reprodução sexuada (estames, carpelos) e de seus envoltórios protetores (sépalas, pétalas)."
    ],
-   "card": "+fleur",
+   "card": "fr-p565",
    "wiki": "https://fr.wiktionary.org/wiki/fleur"
   }
  }
