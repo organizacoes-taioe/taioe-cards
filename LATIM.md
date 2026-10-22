@@ -157,6 +157,53 @@ também são na ida.
   da anotação). A frase não espera o conceito ficar dominado; basta ele ter estreado.
 - Terminologia das gramáticas brasileiras: subjuntivo (não conjuntivo), futuro perfeito.
 
+### 3.6 Forma (`la-x…`): o caso de cada palavra do texto (aprovado e feito em 22/10)
+Pedido do Gere (22/10): perguntar o caso das palavras dos textos, «pelo menos as que vão causar mais
+dificuldade»; **só por escrito** (os casos já vieram nos cards de conceito) e **uma vez só**: acertou
+de primeira, nunca mais; errou, volta até acertar **3 vezes seguidas**, e então sai de vez.
+- O card: o verso (ou a primeira frase) inteiro, a palavra destacada, «Em que caso está a palavra
+  destacada?», campo de escrever. Sai do build, da anotação que trechos e frases já têm (`palavras[].f`);
+  nenhuma ficha escrita à mão. Um card por ocorrência; a mesma forma no mesmo caso, de novo no mesmo
+  texto (*nobis* dativo, duas vezes no Pai-Nosso), vira um card só. Nomes próprios ficam de fora.
+- Aceita o caso com ou sem o número e as abreviações (`acus.`, `abl.`); erro de letra é «quase», e
+  quem julga é a pessoa (regra do motor).
+- **A nota de dificuldade**, calculada no build, por três sinais:
+  1. a terminação ambígua: quantos casos a forma pode ter no índice (`formas.py`), sem contar o
+     vocativo igual ao nominativo, que o contexto resolve (*rosa*, *nostrae*, *nobis*, *debita*);
+  2. o caso pouco natural para quem fala português: dativo e ablativo sem preposição pesam mais,
+     genitivo médio; sujeito no nominativo e objeto no acusativo, quase nada;
+  3. a forma irregular: pronomes (*te*, *nobis*, *hoc*) e as declinações 3ª a 5ª.
+
+  Protótipo no piloto (22/10): das 58 palavras declináveis dos quatro textos, no topo *Sancta*,
+  *plena*, *nostrae*, *nobis*, *debitoribus*, *tua*, *fructus*; no fim *Dominus*, *Panem*,
+  *tentationem*, *voluntas*. Mais tarde (★ D9) a nota passa a somar o erro real de cada tipo
+  (caso × declinação × número), tirado das respostas.
+- ✔ Decisões do Gere (22/10, «Sim, pode seguir»), todas como recomendadas:
+  - **D7. Quais perguntar.** Do corte (`CORTE` = 2,0) para cima, sempre (`sempre`); abaixo, sorteio
+    de 1 em 4 (`SORTEIO_DA_FORMA`), fixo por pessoa e card (hash do uid). O erro puxa os parecidos:
+    errou um dativo, os dativos fáceis entram, até 3 acertos seguidos daquele caso
+    (`ACERTOS_QUE_SOLTAM`, `Motor.formaPuxada`, pelo histórico dos cards de mesma resposta).
+  - **D8. Quando.** Logo depois da primeira vez do verso (ou da primeira frase), o verso mais recente
+    primeiro; no máximo duas estreias de forma seguidas (`FORMAS_SEGUIDAS` em `ordenarTrilhas`). A
+    estreia de forma não conta na alternância dos outros cards nem no teto de quatro frases.
+  - **D9. Verbos.** Mesma mecânica para o tempo e o modo. Vale o que o conceito aceitava: sem o
+    modo, é o indicativo («perfeito»); sem o tempo, o presente («subjuntivo»); no particípio, o
+    tempo é opcional. Número, pessoa, gênero e voz não pesam.
+  - **D10. Conferência às cegas.** Feita em 22/10: um agente anotou às cegas os 161 cards e bateu
+    com a anotação em todos.
+- **Pedido do Gere (22/10): pergunta trocada.** Quando a resposta não fala de gramática nenhuma
+  (`Motor.foraDaPergunta`), o app não marca erro: avisa e devolve a vez, uma vez por aparição. Se é
+  o significado certo da palavra (o card do lema aceita), o aviso diz que está certo, mas a pergunta
+  é o caso. Vale também no card de conceito.
+- Feito (cards PR do card de forma; infra PR #16, tipo `forma` no catálogo):
+  `fonte/latim/cards_de_forma.py` → `fonte/cards/la/07-formas.json` (161 cards: 78 sempre, 83 por
+  sorteio; `--lista` mostra as notas). Mudou a anotação de um trecho ou de uma primeira frase:
+  rodar de novo, e o build recusa o card de forma que não bate com o verso. O card estreia na
+  escrita; acertado de primeira, ou 3 seguidos depois de um erro, fica `dominado` sem `voltaEm` e
+  sai de todas as filas (`Motor.encerrado`, `filaDe` = `'fora'`). O «Já conheço» não aparece nele.
+- Mais tarde: a nota passa a somar o erro real de cada tipo (caso × declinação × número), tirado das
+  respostas.
+
 ## 4. A resposta escrita: aceitar tudo o que está certo
 1. **Um funil estrito** (feito no piloto): acento, maiúscula, pontuação, artigo e «já» não contam;
    o plural e o pronome contam. O funil largo das outras línguas juntava «nação» e «nações» e tirava
@@ -255,6 +302,10 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
 
 - **Reserva**: Te Deum (começo), Veni Creator (duas estrofes), Regra de São Bento (prólogo, 1),
   Sêneca (*Cartas* I,1), Gaudeamus igitur, Sl 42 (41),2–4, Sl 8.
+- **A lista pende para o religioso** (o Gere, 22/10): no nível 1 só Marcial é clássico. Antes da
+  próxima leva, propor a ele textos curtos fora da liturgia para os níveis 1 e 2 (provérbios e
+  máximas, Fedro, Marcial, epitáfios e inscrições, Gaudeamus igitur, Sêneca) — texto novo só nasce
+  depois do sim dele.
 - **Interesse**: Ave verum e Dies irae (Mozart, Verdi), O Fortuna (Orff), Tantum ergo; *Veni, vidi,
   vici* e *Quo usque tandem*, que todo mundo já ouviu.
 - **Cobertura**: a lista traz os seis casos, as cinco declinações, as quatro conjugações e os
@@ -272,7 +323,13 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
   O cache da Biblioteca já tem o latim de parte delas: *Imitação* (Hirsche, 1874), Regra de São Bento
   (Wölfflin, 1895; Butler, 1912), *Vida de São Martinho* (Halm, 1866), *Confissões* (a de O'Donnell,
   que se troca pela de Knöll).
-- **Fontes**, o eclesiástico pesando mais:
+- **Menos religioso (pedido do Gere, 22/10: «achei que essa primeira leva ficou excessivamente
+  religiosa»)**: das próximas levas em diante, as primeiras frases novas, as frases de uso e os
+  textos de cada nível vêm pelo menos metade de fora da Bíblia e da liturgia: clássicos, provérbios
+  e máximas, fábulas (Fedro), cartas (Sêneca, Plínio), inscrições, ciência e vida cotidiana. O
+  sentido eclesiástico continua o primeiro no card (§3.1), mas a busca da frase de uso deixa de
+  preferir a fonte eclesiástica (ver abaixo), e o corpus ganha os clássicos ao lado da Clementina.
+- **Fontes** (o eclesiástico pesava mais até 22/10; agora meio a meio):
   - a Vulgata Clementina inteira (uns 600 mil palavras); a NV só em citação curta, até a LEV;
   - a liturgia: Ordinário da Missa, hinos, sequências, antífonas (textos antigos, sem as edições da
     LEV);
@@ -286,7 +343,8 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
 - **Lista de frequência do latim**, contada no corpus, com o eclesiástico pesando mais: decide card
   comum × card de leitura e o vocabulário de base.
 - **A busca da frase de uso**: para cada lema comum, as frases curtas que só pedem palavras do texto
-  zero ou do mesmo texto; preferir a forma que o texto não tem e a fonte eclesiástica; dois ou três
+  zero ou do mesmo texto; preferir a forma que o texto não tem e alternar a fonte (clássica e
+  eclesiástica, meio a meio, pedido de 22/10); dois ou três
   candidatos por lema, e o agente escolhe, traduz e anota.
 
 ## 8. Anotação e qualidade
@@ -361,7 +419,8 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
 | 1 | ferramentas: corpus, índice de formas, tokenizador, formato da anotação, molde das notas | ✔ 21/10 |
 | 2 | motor, app e build no modo trilhas, com testes e a simulação | ✔ 21/10, menos a simulação |
 | 3 | piloto: texto zero, conceitos dos casos e do presente, 4 textos de nível 1 com palavras e frases de uso; os 4 na Biblioteca | no ar em 21/10 (biblioteca PR #21, infra PR #15, hub PR #13); o Gere estuda e aponta |
-| 4 | os textos em domínio público, nível a nível, em levas de ~100 cards, com a matriz a cada leva | — |
+| 3b | card de forma (§3.6) e o aviso de pergunta trocada | 22/10 (infra PR #16) |
+| 4 | os textos em domínio público, nível a nível, em levas de ~100 cards, com a matriz a cada leva; metade fora da Bíblia e da liturgia (§7) | — |
 | 5 | os textos da NV, com a resposta da LEV (ou na Clementina) | — |
 | depois | pronúncia eclesiástica; `la-es` e `la-en`; prosa com «Quero aprender o resto» | — |
 

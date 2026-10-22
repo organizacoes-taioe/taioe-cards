@@ -1022,6 +1022,7 @@ window.Motor = (function () {
     const lingua = linguaDaResposta(direcao);
     const dado = normalizar(texto, lingua);
     if (!dado) return 'errado';
+    if (card.tipo === 'forma') return conferirForma(card, texto);
 
     /* O gênero errado é erro seco, sem passar pelo "deu quase": não foi a
        mão que escorregou, foi o gênero — que é o que o card ensina. */
@@ -1490,6 +1491,8 @@ window.Motor = (function () {
   /* Em que fila mora cada etapa. */
   function filaDe(est) {
     const e = (est && est.etapa) || 'multipla';
+    /* o card de forma acertado não volta: não mora em fila nenhuma */
+    if (e === 'dominado' && est && ehForma(est.id)) return 'fora';
     if (e === 'dominado') return 'dominados';
     return (e === 'multipla' || e === 'escrita') ? 'esPt' : 'ptEs';
   }
@@ -2228,7 +2231,18 @@ window.Motor = (function () {
        — quem já provou o espanhol→português não volta à estaca zero. */
     const inversa = ehVolta(r.direcao);
     const jaDominado = est.etapa === 'dominado';
-    if (r.acertou) {
+    if (ehForma(est.id)) {
+      /* o card de forma (§3.6): só escrita; o acerto de primeira, ou três seguidos depois de
+         um erro, fecham de vez */
+      if (r.acertou && (est.vistas === 1 || est.seguidas >= ACERTOS_PARA_VIRAR)) {
+        est.etapa = 'dominado';
+        if (!est.dominadoEm) est.dominadoEm = new Date().toISOString();
+        if (est.ateDominar === undefined) est.ateDominar = est.vistas;
+        est.seguidas = 0;
+      } else if (!jaDominado) {
+        est.etapa = 'escrita';
+      }
+    } else if (r.acertou) {
       if (jaDominado) {
         /* Card maduro que voltou depois da espera e foi acertado: continua
            dominado, e a próxima espera fica mais longa. Antes ele caía para
@@ -2284,7 +2298,7 @@ window.Motor = (function () {
     }
 
     /* Só o maduro espera por data; qualquer outro volta pela fila e mais nada. */
-    est.voltaEm = est.etapa === 'dominado' ? proximaVolta(est.revisoes, est.ultima) : null;
+    est.voltaEm = est.etapa === 'dominado' && !ehForma(est.id) ? proximaVolta(est.revisoes, est.ultima) : null;
 
     // a estreia é a única medida limpa do que já se sabia antes do app
     if (est.vistas === 1) est.primeiraCerta = !!r.acertou;
@@ -2351,6 +2365,133 @@ window.Motor = (function () {
     if (!ex.length) return null;
     const n = (est && est.vistas) || 0;
     return ex[n % ex.length];
+  }
+
+  /* ── o card de forma (cards/LATIM.md §3.6, pedido do Gere, 22/10/2026) ──
+     «Em que caso está a palavra destacada?», com o verso do texto. Só por escrito (os casos já
+     vieram nos cards de conceito) e uma vez só: acertou de primeira, sai de vez; errou, volta
+     até acertar três vezes seguidas, e então sai de vez. Nunca volta por data.
+     Nem todo card de forma é perguntado: o difícil («sempre», pela nota do build) sim; o fácil,
+     só para uma pessoa em cada SORTEIO_DA_FORMA — sorteio fixo por pessoa e card, o mesmo em
+     qualquer aparelho. E o erro puxa os parecidos: quem errou um dativo passa a ver também os
+     dativos fáceis, até acertar três seguidos daquele caso. */
+  const SORTEIO_DA_FORMA = 0.25;
+  const ACERTOS_QUE_SOLTAM = 3;
+  let RESPOSTA_DA_FORMA = Object.create(null);   // id do card de forma → resposta («dativo»)
+
+  function ehForma(id) { return TIPO[id] === 'forma'; }
+
+  /* O card de forma acertado já disse o que tinha a dizer: fora de todas as filas. */
+  function encerrado(id, est) {
+    return ehForma(id) && !!est && est.etapa === 'dominado';
+  }
+
+  function sorteadaParaVoce(card) {
+    return hashDeTexto(UID + ':' + card.id) / 4294967296 < SORTEIO_DA_FORMA;
+  }
+
+  /* A resposta tem sido errada nos cards de forma de mesmo gabarito: o último erro ainda não
+     teve ACERTOS_QUE_SOLTAM acertos seguidos depois dele. */
+  function formaPuxada(resposta, estados) {
+    const vezes = [];
+    for (const id in RESPOSTA_DA_FORMA) {
+      if (RESPOSTA_DA_FORMA[id] !== resposta) continue;
+      const e = estados && estados[id];
+      ((e && e.historico) || []).forEach(h => vezes.push(h));
+    }
+    vezes.sort((a, b) => String(a.em).localeCompare(String(b.em)));
+    let ultimoErro = -1;
+    vezes.forEach((h, i) => { if (!h.acertou) ultimoErro = i; });
+    return ultimoErro >= 0 && vezes.length - 1 - ultimoErro < ACERTOS_QUE_SOLTAM;
+  }
+
+  function formaEscolhida(card, estados) {
+    return !!card.sempre || sorteadaParaVoce(card) || formaPuxada(card.pt, estados);
+  }
+
+  /* Pode estrear: o verso (ou a primeira frase) de onde a palavra vem já apareceu, ou foi
+     dado como sabido, e a pessoa está entre as que recebem este card. */
+  function formaPronta(card, estados, arquivados) {
+    const e = estados && estados[card.de];
+    if (!(e && e.vistas) && !arquivado(card.de, arquivados)) return false;
+    return formaEscolhida(card, estados);
+  }
+
+  /* ── a resposta do card de forma ──
+     O que conta é o caso, ou o tempo e o modo; número, pessoa, gênero e voz não pesam
+     («ablativo singular», «abl.»). Para o verbo vale o que o card de conceito já aceitava:
+     sem o modo, é o indicativo («perfeito»); sem o tempo, o presente («subjuntivo»); no
+     particípio, o tempo é opcional. */
+  const TERMOS_DE_CASO = {
+    nominativo: 'nominativo', nom: 'nominativo', vocativo: 'vocativo', voc: 'vocativo',
+    acusativo: 'acusativo', acus: 'acusativo', ac: 'acusativo', acc: 'acusativo',
+    genitivo: 'genitivo', gen: 'genitivo', dativo: 'dativo', dat: 'dativo',
+    ablativo: 'ablativo', abl: 'ablativo'
+  };
+  const TERMOS_DE_MODO = {
+    indicativo: 'indicativo', ind: 'indicativo', subjuntivo: 'subjuntivo', subj: 'subjuntivo',
+    conjuntivo: 'subjuntivo', imperativo: 'imperativo', imp: 'imperativo', infinitivo: 'infinitivo',
+    inf: 'infinitivo', participio: 'participio', part: 'participio'
+  };
+  const TERMOS_DE_TEMPO = {
+    presente: 'presente', pres: 'presente', imperfeito: 'imperfeito', perfeito: 'perfeito',
+    maisqueperfeito: 'maisqueperfeito', futuro: 'futuro', futuroperfeito: 'futuroperfeito',
+    passado: 'perfeito'
+  };
+
+  function termosDaGramatica(texto) {
+    const t = String(texto || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/mais[\s-]+que[\s-]+perfeito/g, 'maisqueperfeito')
+      .replace(/futuro\s+(perfeito|anterior)/g, 'futuroperfeito')
+      .replace(/futuro\s+do\s+presente/g, 'futuro')
+      .replace(/[^a-z]+/g, ' ').trim();
+    const palavras = t ? t.split(' ') : [];
+    const achados = { casos: new Set(), modos: new Set(), tempos: new Set(), palavras: palavras };
+    palavras.forEach(p => {
+      if (TERMOS_DE_CASO[p]) achados.casos.add(TERMOS_DE_CASO[p]);
+      if (TERMOS_DE_MODO[p]) achados.modos.add(TERMOS_DE_MODO[p]);
+      if (TERMOS_DE_TEMPO[p]) achados.tempos.add(TERMOS_DE_TEMPO[p]);
+    });
+    return achados;
+  }
+
+  function verboEsperado(card) {
+    const a = termosDaGramatica(card.pt);
+    return { modo: [...a.modos][0] || 'indicativo', tempo: [...a.tempos][0] || null };
+  }
+
+  /* 'certo', 'quase' (nenhum termo reconhecido, mas um escrito quase igual ao certo) ou 'errado' */
+  function conferirForma(card, texto) {
+    const a = termosDaGramatica(texto);
+    const nomes = card.familia === 'caso' ? [card.pt] : String(card.pt).split(' ').filter(p => p !== 'do');
+    if (card.familia === 'caso') {
+      if (a.casos.size === 1 && a.casos.has(card.pt)) return 'certo';
+      if (a.casos.size) return 'errado';
+    } else {
+      const quer = verboEsperado(card);
+      if (a.modos.size > 1 || a.tempos.size > 1) return 'errado';
+      if (a.modos.size || a.tempos.size) {
+        const modo = [...a.modos][0] || 'indicativo';
+        const tempo = [...a.tempos][0] || null;
+        const tempoOk = quer.modo === 'participio' || quer.modo === 'imperativo' || quer.modo === 'infinitivo'
+          ? !tempo || !quer.tempo || tempo === quer.tempo || (!quer.tempo && tempo === 'presente')
+          : (tempo || 'presente') === (quer.tempo || 'presente');
+        return modo === quer.modo && tempoOk ? 'certo' : 'errado';
+      }
+    }
+    const alvos = nomes.map(n => n.normalize('NFD').replace(/[̀-ͯ]/g, ''));
+    return a.palavras.some(p => alvos.some(x => parecido(p, x, 'pt'))) ? 'quase' : 'errado';
+  }
+
+  /* A resposta não fala de gramática nenhuma: é quase certo que a pessoa respondeu outra
+     pergunta (o significado, no automático). O app avisa e devolve a vez, sem contar erro. */
+  function foraDaPergunta(card, texto) {
+    if (!card || (card.tipo !== 'forma' && card.tipo !== 'conceito')) return false;
+    const a = termosDaGramatica(texto);
+    if (!a.palavras.length || a.casos.size || a.modos.size || a.tempos.size) return false;
+    const todos = Object.keys(TERMOS_DE_CASO).concat(Object.keys(TERMOS_DE_MODO), Object.keys(TERMOS_DE_TEMPO),
+      ['voz', 'ativa', 'passiva', 'depoente']).filter(x => x.length >= 4);
+    return !a.palavras.some(p => todos.some(x => p === x || parecido(p, x, 'pt')));
   }
   /* ── montagem da fila inicial ──
      Intercala os níveis e alterna palavra/frase, para medir logo de cara
@@ -2983,9 +3124,11 @@ window.Motor = (function () {
     TIPO = Object.create(null);
     FALSO_AMIGO = Object.create(null);
     LEITURA = Object.create(null);
+    RESPOSTA_DA_FORMA = Object.create(null);
     (cards || []).forEach(c => {
       if (!c) return;
       if (c.leitura) LEITURA[c.id] = true;
+      if (c.tipo === 'forma') RESPOSTA_DA_FORMA[c.id] = c.pt;
       /* no card de leitura, a «parecida» conta como total: ler é de graça, e
          ele não tem a volta, que é onde a parecida estrearia */
       if (c.transp === 'total' || c.transp === 'parecida') TRANSP[c.id] = (c.leitura || soIda()) ? 'total' : c.transp;
@@ -3055,6 +3198,8 @@ window.Motor = (function () {
      (inversa-multipla). */
   function estadoInicialDo(card) {
     const est = estadoInicial(card && card.id);
+    /* o card de forma é só por escrito (LATIM.md §3.6) */
+    if (card && card.tipo === 'forma') est.etapa = 'escrita';
     if (transparencia(card) === 'parecida') est.etapa = 'inversa-multipla';
     /* 7.9: a frase cujas palavras o nivelamento pela lista já deu como
        conhecidas estreia na volta; a de primeiros passos, quando a divisa
@@ -3830,6 +3975,8 @@ window.Motor = (function () {
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
+    ehForma, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
+    SORTEIO_DA_FORMA, ACERTOS_QUE_SOLTAM,
     erroDeGenero, formasAceitas, LIMITES, cortar,
     linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
     indiceEspanhol, leituraEspanhola, erroDeFlexao,
