@@ -50,6 +50,7 @@ window.TAIOE_TEXTOS = {
 
     'tipo.palavra': 'palavra', 'tipo.frase': 'frase',
     'tipo.conceito': 'conceito', 'cards.conceitos': 'conceitos',
+    'tipo.forma': 'forma', 'cards.formas': 'formas',
     'modo.multipla': 'múltipla escolha', 'modo.escrita': 'escreva a resposta',
     'card.origem': 'de {x}',
     'card.bandeiraPergunta': 'idioma da pergunta',
@@ -90,6 +91,11 @@ window.TAIOE_TEXTOS = {
     'aviso.sinonimoSemDica': 'Tente de novo.',
     'aviso.propria': '<b>{x}</b> é a própria palavra da pergunta, em {L} {bL}. O que se pede é a tradução, em {A} {bA} — tente de novo.',
     'aviso.trocada': '<b>{x}</b> está em {L} {bL}: é a resposta da pergunta ao contrário. Aqui a tradução vai em {A} {bA} — tente de novo.',
+    'aviso.significado.caso': '<b>{x}</b> quer dizer «{y}», certo. Mas aqui a pergunta é o <b>caso</b> da palavra destacada — tente de novo.',
+    'aviso.significado.verbo': '<b>{x}</b> quer dizer «{y}», certo. Mas aqui a pergunta é a <b>forma verbal</b> da palavra destacada — tente de novo.',
+    'aviso.foraDaPergunta.caso': 'Aqui a pergunta é o <b>caso</b> da palavra destacada (nominativo, acusativo, dativo…), não o significado — tente de novo.',
+    'aviso.foraDaPergunta.verbo': 'Aqui a pergunta é a <b>forma verbal</b> da palavra destacada (presente do indicativo, perfeito…), não o significado — tente de novo.',
+    'aviso.foraDaPergunta.voz': 'Aqui a pergunta é a <b>voz</b> da palavra destacada (ativa, passiva…), não o significado — tente de novo.',
     'aviso.acento': 'atenção ao acento: <b>{x}</b>',
     'aviso.regiao': '🌎 {forma} é como se diz {onde}. A forma deste card é {certa}.',
 
@@ -408,6 +414,7 @@ window.TAIOE_TEXTOS = {
 
     'tipo.palavra': 'palabra', 'tipo.frase': 'frase',
     'tipo.conceito': 'concepto', 'cards.conceitos': 'conceptos',
+    'tipo.forma': 'forma', 'cards.formas': 'formas',
     'modo.multipla': 'opción múltiple', 'modo.escrita': 'escribe la respuesta',
     'card.origem': 'de {x}',
     'card.bandeiraPergunta': 'idioma de la pregunta',
@@ -448,6 +455,11 @@ window.TAIOE_TEXTOS = {
     'aviso.sinonimoSemDica': 'Inténtalo de nuevo.',
     'aviso.propria': '<b>{x}</b> es la misma palabra de la pregunta, en {L} {bL}. Lo que se pide es la traducción, en {A} {bA}. Inténtalo de nuevo.',
     'aviso.trocada': '<b>{x}</b> está en {L} {bL}: es la respuesta de la pregunta al revés. Aquí la traducción va en {A} {bA}. Inténtalo de nuevo.',
+    'aviso.significado.caso': '<b>{x}</b> quiere decir «{y}», correcto. Pero aquí la pregunta es el <b>caso</b> de la palabra destacada. Inténtalo de nuevo.',
+    'aviso.significado.verbo': '<b>{x}</b> quiere decir «{y}», correcto. Pero aquí la pregunta es la <b>forma verbal</b> de la palabra destacada. Inténtalo de nuevo.',
+    'aviso.foraDaPergunta.caso': 'Aquí la pregunta es el <b>caso</b> de la palabra destacada (nominativo, acusativo, dativo…), no el significado. Inténtalo de nuevo.',
+    'aviso.foraDaPergunta.verbo': 'Aquí la pregunta es la <b>forma verbal</b> de la palabra destacada (presente de indicativo, perfecto…), no el significado. Inténtalo de nuevo.',
+    'aviso.foraDaPergunta.voz': 'Aquí la pregunta es la <b>voz</b> de la palabra destacada (activa, pasiva…), no el significado. Inténtalo de nuevo.',
     'aviso.acento': 'atención a la tilde: <b>{x}</b>',
     'aviso.regiao': '🌎 {forma} es como se dice {onde}. La forma de esta tarjeta es {certa}.',
 
@@ -763,6 +775,7 @@ window.TAIOE_TEXTOS = {
 
     'tipo.palavra': 'word', 'tipo.frase': 'sentence',
     'tipo.conceito': 'concept', 'cards.conceitos': 'concepts',
+    'tipo.forma': 'form', 'cards.formas': 'forms',
     'modo.multipla': 'multiple choice', 'modo.escrita': 'type the answer',
     'card.origem': 'from {x}',
     'card.bandeiraPergunta': 'question language',
@@ -803,6 +816,11 @@ window.TAIOE_TEXTOS = {
     'aviso.sinonimoSemDica': 'Try again.',
     'aviso.propria': '<b>{x}</b> is the very word from the question, in {L} {bL}. What’s asked is the translation, in {A} {bA}. Try again.',
     'aviso.trocada': '<b>{x}</b> is in {L} {bL}: that’s the answer to the reverse question. Here the translation goes in {A} {bA}. Try again.',
+    'aviso.significado.caso': '<b>{x}</b> means “{y}”, right. But here the question is the <b>case</b> of the highlighted word. Try again.',
+    'aviso.significado.verbo': '<b>{x}</b> means “{y}”, right. But here the question is the <b>verb form</b> of the highlighted word. Try again.',
+    'aviso.foraDaPergunta.caso': 'Here the question is the <b>case</b> of the highlighted word (nominative, accusative, dative…), not its meaning. Try again.',
+    'aviso.foraDaPergunta.verbo': 'Here the question is the <b>verb form</b> of the highlighted word (present indicative, perfect…), not its meaning. Try again.',
+    'aviso.foraDaPergunta.voz': 'Here the question is the <b>voice</b> of the highlighted word (active, passive…), not its meaning. Try again.',
     'aviso.acento': 'watch the accent: <b>{x}</b>',
     'aviso.regiao': '🌎 {forma} is how people say it {onde}. This card uses {certa}.',
 

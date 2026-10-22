@@ -282,7 +282,8 @@ window.TaioeCardsApp = function (ctx) {
     /* card arquivado sai de todas as filas — e volta a elas se for desarquivado.
        A transparente total também: conta como dominada e nunca é servida
        (volta se for reativada). */
-    const fora = id => Motor.arquivado(id, p.arquivados) || Motor.transparenteTotal(id);
+    const fora = id => Motor.arquivado(id, p.arquivados) || Motor.transparenteTotal(id) ||
+      Motor.encerrado(id, p.cards[id]);
 
     /* A ordem que já existia é a dica de quem vem primeiro. «p.fila» é o
        formato antigo, de fila única: quem vinha de lá se distribui pelas
@@ -314,7 +315,7 @@ window.TaioeCardsApp = function (ctx) {
     const deTexto = palavrasDosAtivos(p);
     const ativosIds = new Set(TRILHAS ? textosAtivosDe(p).map(x => x.id) : []);
     const novo = id => !visto(id) && !fora(id) && !Motor.conhecidaSemEstado(id, p.cards) && solto(id) &&
-      (TRILHAS ? daTrilha(id, deTexto, ativosIds) : (!Motor.ehLeitura(id) || deTexto.has(id)));
+      (TRILHAS ? daTrilha(id, deTexto, ativosIds, p) : (!Motor.ehLeitura(id) || deTexto.has(id)));
     p.ineditos = antes.filter(id => PORID[id] && novo(id))
       .concat(CARDS.filter(c => !conhecidos.has(c.id) && novo(c.id)).map(c => c.id));
 
@@ -471,13 +472,22 @@ window.TaioeCardsApp = function (ctx) {
   /* No modo trilhas, o que pode estrear: a palavra do texto zero ou de um texto escolhido; o
      conceito (a ordem decide quando, ver ordenarTrilhas); a primeira frase; o trecho de um
      texto escolhido; e a frase de uso, que só chega aqui com as palavras dela dominadas. */
-  function daTrilha(id, deTexto, ativosIds) {
+  function daTrilha(id, deTexto, ativosIds, p) {
     const c = PORID[id];
     if (!c) return false;
     if (c.tipo === 'palavra') return TZ_PALAVRAS.has(id) || deTexto.has(id);
     if (c.tipo === 'conceito') return true;
+    if (c.tipo === 'forma') return formaDaTrilha(c, ativosIds, p);
     if (c.texto) return ativosIds.has(c.texto);
     return true;
+  }
+
+  /* O card de forma (LATIM.md §3.6) estreia depois do verso de onde vem, se o texto do verso
+     ainda está escolhido e se a pessoa está entre as que o recebem (Motor.formaPronta). */
+  function formaDaTrilha(c, ativosIds, p) {
+    const de = PORID[c.de] || {};
+    if (de.texto && !ativosIds.has(de.texto)) return false;
+    return Motor.formaPronta(c, p.cards, p.arquivados || {});
   }
 
   /* O baralho de inéditos é ordenado pelo desempenho: sai primeiro o nível
@@ -589,8 +599,12 @@ window.TaioeCardsApp = function (ctx) {
      (a frase, pelos «conceitos» dela; a palavra do texto, pelos do primeiro trecho em que ela
      aparece). A estreia de um conceito não conta na alternância. */
   function ordenarTrilhas(p) {
-    const CADA = 2;
+    const CADA = 2, FORMAS_SEGUIDAS = 2;
     const ehConceito = id => (PORID[id] || {}).tipo === 'conceito';
+    const ehForma = id => (PORID[id] || {}).tipo === 'forma';
+    /* o card de forma que só o erro puxou sai quando o erro foi vencido (Motor.formaPronta) */
+    const ativosAgora = new Set(textosAtivosDe(p).map(x => x.id));
+    p.ineditos = p.ineditos.filter(id => !ehForma(id) || formaDaTrilha(PORID[id], ativosAgora, p));
     const pendentes = new Set(p.ineditos), postos = new Set();
     const pega = id => (pendentes.has(id) && !postos.has(id) ? (postos.add(id), [id]) : []);
     const ehPresa = id => { const c = PORID[id] || {}; return c.tipo === 'frase' && Motor.requeridas(c).length > 0; };
@@ -617,15 +631,36 @@ window.TaioeCardsApp = function (ctx) {
       zero.push(...pega(f.id));
       (f.palavras || []).forEach(x => { if (x.c) zero.push(...pega(x.c)); });
     }
-    const resto = p.ineditos.filter(id => !postos.has(id) && !ehConceito(id));
-    const estreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined && !ehConceito(id))
+    const resto = p.ineditos.filter(id => !postos.has(id) && !ehConceito(id) && !ehForma(id));
+    const todasAsEstreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined && !ehConceito(id))
       .sort((x, y) => p.cards[y].estreouNa - p.cards[x].estreouNa);
+    const estreias = todasAsEstreias.filter(id => !ehForma(id));
     const desde = teste => { let n = 0; while (n < estreias.length && !teste(estreias[n])) n++; return n; };
     const palavrasDosTextos = new Set(ativos.flatMap(x => Motor.requeridas(x)));
     let fila = zero.concat(resto);
     if (dosTextos.length) fila = naVez(fila, dosTextos, desde(id => palavrasDosTextos.has(id)), CADA);
     if (antigas.length) fila = naVez(fila, antigas, desde(ehPresa), CADA);
     fila = frescas.concat(fila);
+    /* Os cards de forma (LATIM.md §3.6) vêm logo depois do verso que os destravou, o verso mais
+       recente primeiro e, nele, na ordem de leitura; no máximo FORMAS_SEGUIDAS de uma vez, e o
+       resto nas vagas seguintes. A estreia de forma não conta na alternância de cima. */
+    const formas = p.ineditos.filter(ehForma).sort((a, b) => {
+      const ea = (p.cards[PORID[a].de] || {}).estreouNa || 0, eb = (p.cards[PORID[b].de] || {}).estreouNa || 0;
+      return eb - ea || CARDS.indexOf(PORID[a]) - CARDS.indexOf(PORID[b]);
+    });
+    if (formas.length) {
+      let seguidas = 0;
+      while (seguidas < todasAsEstreias.length && ehForma(todasAsEstreias[seguidas])) seguidas++;
+      const saidaComFormas = [];
+      let f = 0, i = 0, vez = Math.max(0, FORMAS_SEGUIDAS - seguidas);
+      while (f < formas.length) {
+        for (let k = 0; k < vez && f < formas.length; k++) saidaComFormas.push(formas[f++]);
+        if (f < formas.length && i < fila.length) saidaComFormas.push(fila[i++]);
+        vez = FORMAS_SEGUIDAS;
+      }
+      fila = saidaComFormas.concat(fila.slice(i));
+      formas.forEach(id => postos.add(id));
+    }
     /* os conceitos, cada um antes do primeiro card que o pede; o que nenhum pede vai no fim */
     const pede = id => {
       const c = PORID[id] || {};
@@ -905,8 +940,9 @@ window.TaioeCardsApp = function (ctx) {
   /* As quatro estreias mais recentes, pela resposta em que cada card estreou
      («estreouNa»). Card que estreou antes do campo existir não entra. */
   function quatroFrasesSeguidas() {
+    /* o card de forma do latim não conta: ele vem colado ao verso, e é rápido */
     const recentes = Object.keys(progresso.cards)
-      .filter(id => progresso.cards[id].estreouNa !== undefined)
+      .filter(id => progresso.cards[id].estreouNa !== undefined && (PORID[id] || {}).tipo !== 'forma')
       .sort((a, b) => progresso.cards[b].estreouNa - progresso.cards[a].estreouNa)
       .slice(0, 4);
     return recentes.length === 4 && recentes.every(id => (PORID[id] || {}).tipo !== 'palavra');
@@ -941,6 +977,11 @@ window.TaioeCardsApp = function (ctx) {
     if (novo >= 0) progresso.ineditos.splice(novo, 1);
 
     const alvo = Motor.filaDe(est);
+    /* o card de forma acertado sai de vez (LATIM.md §3.6) */
+    if (alvo === 'fora') {
+      delete est.naFila;
+      return { fila: alvo, distancia: null };
+    }
     if (alvo === 'dominados') {
       delete est.naFila;
       if (progresso.dominados.indexOf(id) < 0) progresso.dominados.push(id);
@@ -1058,7 +1099,8 @@ window.TaioeCardsApp = function (ctx) {
        só, e arquivar uma frase que nem entrou no jogo não faz sentido */
     const previa = !!(desafioAtual && desafioAtual.previa);
     el['meta-desafio'].classList.toggle('oculto', !desafioAtual);
-    jaConhecoNoCard = estreando && !previa;
+    /* o card de forma acertado de primeira já sai sozinho: o «já conheço» não teria o que fazer */
+    jaConhecoNoCard = estreando && !previa && cardAtual.tipo !== 'forma';
     posicionarJaConheco(false);
     el['aviso-previa'].classList.add('oculto');
     /* O nível vive na aba do fichário e fica à mostra o tempo todo: saber que
@@ -1069,7 +1111,8 @@ window.TaioeCardsApp = function (ctx) {
     const inversa = Motor.ehVolta(direcaoAtual);
     /* no card de conceito a pergunta vai em destaque, logo acima das alternativas (pedido do
        Gere, 21/10), e não na linha pequena do topo */
-    const conceito = cardAtual.tipo === 'conceito';
+    /* o card de forma (LATIM.md §3.6) pergunta como o de conceito */
+    const conceito = cardAtual.tipo === 'conceito' || cardAtual.tipo === 'forma';
     el.enunciado.textContent = conceito ? ''
       : inversa
       ? t(cardAtual.tipo === 'palavra' ? 'card.enunciado.voltaPalavra' : 'card.enunciado.voltaFrase', { L: NOME_L })
@@ -1087,14 +1130,15 @@ window.TaioeCardsApp = function (ctx) {
     el['rotulo-resposta-txt'].parentNode.classList.toggle('pergunta', conceito);
     el.enunciado.classList.toggle('oculto', conceito);
     el.entrada.placeholder = inversa ? t('card.escrevaEm', { x: NOME_L })
-      : t(cardAtual.tipo === 'conceito' ? 'card.escrevaConceito' : 'card.escrevaSignificado');
+      : t(conceito ? 'card.escrevaConceito' : 'card.escrevaSignificado');
 
     /* O card de conceito pergunta com um exemplo real e a palavra em destaque; a palavra do
        latim aparece pelo enunciado do dicionário («dominus, domini, m.»). */
     exemploAtual = cardAtual.tipo === 'conceito' ? Motor.exemploDoConceito(cardAtual, est) : null;
     if (exemploAtual) el.termo.innerHTML = comDestaque(exemploAtual.la, exemploAtual.w);
+    else if (cardAtual.tipo === 'forma') el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.la, cardAtual.ocorrencia);
     else el.termo.textContent = !inversa && cardAtual.enunciado ? cardAtual.enunciado : Motor.pergunta(cardAtual, direcaoAtual);
-    el.termo.classList.toggle('frase', cardAtual.tipo === 'frase' || !!exemploAtual);
+    el.termo.classList.toggle('frase', cardAtual.tipo === 'frase' || cardAtual.tipo === 'forma' || !!exemploAtual);
 
     el['aviso-lingua'].classList.add('oculto');
     el['aviso-acento'].classList.add('oculto');
@@ -1162,20 +1206,21 @@ window.TaioeCardsApp = function (ctx) {
     });
   }
 
-  /* «palavra», «frase» e (no latim) «conceito», na língua da interface */
+  /* «palavra», «frase» e (no latim) «conceito» e «forma», na língua da interface */
   function nomeTipo(tipo) {
-    return tipo === 'palavra' || tipo === 'frase' || tipo === 'conceito' ? t('tipo.' + tipo) : tipo;
+    return ['palavra', 'frase', 'conceito', 'forma'].includes(tipo) ? t('tipo.' + tipo) : tipo;
   }
 
-  /* A frase do exemplo com a palavra em destaque (só ela: em «virumque», o «virum»). */
-  function comDestaque(frase, palavra) {
+  /* A frase do exemplo com a palavra em destaque (só ela: em «virumque», o «virum»); «vez» diz
+     qual ocorrência, quando ela se repete na frase. */
+  function comDestaque(frase, palavra, vez) {
     const chave = s => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     const alvo = chave(palavra);
     const re = /[A-Za-zÀ-ÿĀ-ſ]+/g;
-    let m;
+    let m, achadas = 0;
     while ((m = re.exec(frase))) {
       const k = chave(m[0]);
-      if (k === alvo || ['que', 'ne', 've', 'cum'].some(s => k === alvo + s)) {
+      if ((k === alvo || ['que', 'ne', 've', 'cum'].some(s => k === alvo + s)) && ++achadas >= (vez || 1)) {
         const fim = m.index + palavra.length;
         return escapar(frase.slice(0, m.index)) + '<mark class="destaque">' + escapar(frase.slice(m.index, fim)) +
           '</mark>' + escapar(frase.slice(fim));
@@ -1228,6 +1273,9 @@ window.TaioeCardsApp = function (ctx) {
        tentativa livre. */
     const conferencia = desistiu ? 'errado' : Motor.conferir(cardAtual, texto, direcaoAtual);
     if (conferencia === 'errado' && !desistiu && !chanceUsada) {
+      /* no card de gramática, respondeu o significado (pedido do Gere, 22/10/2026: «é fácil
+         responder no automático»): avisa e devolve a vez */
+      if (Motor.foraDaPergunta(cardAtual, texto)) { avisarForaDaPergunta(texto); return; }
       const troca = Motor.linguaTrocada(cardAtual, texto, direcaoAtual);
       if (troca) { avisarLinguaTrocada(troca); return; }
       /* o espanhol certo, mas não o do card: «trabajar» para «currar» */
@@ -1280,6 +1328,22 @@ window.TaioeCardsApp = function (ctx) {
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
       ajustarEntrada();
+    el.entrada.focus({ preventScroll: true });
+  }
+
+  /* O card de forma ou de conceito pede o caso (ou a forma verbal), e veio outra coisa: se é o
+     significado certo da palavra, o aviso diz que está certo, mas a pergunta é outra. */
+  function avisarForaDaPergunta(texto) {
+    chanceUsada = true;
+    const familia = cardAtual.familia === 'verbo' || cardAtual.familia === 'voz' ? cardAtual.familia : 'caso';
+    const lema = cardAtual.tipo === 'forma' && PORID[cardAtual.lema];
+    const sentido = lema && Motor.conferir(lema, texto, direcaoAtual) !== 'errado';
+    el['aviso-lingua'].innerHTML = sentido
+      ? t('aviso.significado.' + familia, { x: escapar(cardAtual.la), y: escapar(String(lema[A]).split('/')[0].trim()) })
+      : t('aviso.foraDaPergunta.' + familia);
+    el['aviso-lingua'].classList.remove('oculto');
+    el.entrada.value = '';
+    ajustarEntrada();
     el.entrada.focus({ preventScroll: true });
   }
 
@@ -1712,6 +1776,14 @@ window.TaioeCardsApp = function (ctx) {
       !progresso.cards[c.id] && !jaEsta.has(c.id) && !Motor.arquivado(c.id, progresso.arquivados) &&
       (!ativosIds || !c.texto || ativosIds.has(c.texto)) &&
       Motor.liberado(c, progresso.cards, agora, progresso.arquivados));
+    /* e o card de forma do verso que acabou de aparecer, ou o que o erro num caso puxou
+       (LATIM.md §3.6) */
+    if (TRILHAS) {
+      CARDS.forEach(c => {
+        if (c.tipo === 'forma' && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
+            !Motor.arquivado(c.id, progresso.arquivados) && formaDaTrilha(c, ativosIds, progresso)) novas.push(c);
+      });
+    }
     if (!novas.length) return;
     novas.forEach(c => progresso.ineditos.push(c.id));
     ordenarIneditos(progresso);
@@ -2881,7 +2953,7 @@ window.TaioeCardsApp = function (ctx) {
       cardAtual = null;
     }
     desafioAtual = null;
-    if (cardAtual && !respostaPendente) {
+    if (cardAtual && !respostaPendente && !Motor.encerrado(cardAtual.id, estadoParaFila(cardAtual.id))) {
       const id = cardAtual.id;
       const est = estadoParaFila(id);
       const baralho = !est ? progresso.ineditos
@@ -3895,8 +3967,10 @@ window.TaioeCardsApp = function (ctx) {
     const op = el['filtro-estado'].querySelector('option[value="invertido"]');
     if (op) op.textContent = t('cards.fInvertido', { x: ROTULO_VOLTA });
     el['btn-texto'].hidden = !TEXTOS.length;
-    const opConceito = el['filtro-tipo'].querySelector('option[value="conceito"]');
-    if (opConceito) opConceito.hidden = !TRILHAS;
+    ['conceito', 'forma'].forEach(v => {
+      const opcao = el['filtro-tipo'].querySelector('option[value="' + v + '"]');
+      if (opcao) opcao.hidden = !TRILHAS;
+    });
     /* no modo trilhas não há volta nem teste de nível: sai o filtro da volta, sai o grupo da
        avaliação, e o recomeço volta à escolha dos textos */
     if (TRILHAS) {

@@ -1327,5 +1327,15 @@ window.TAGS_RAW = {
   "en": "usage sentence",
   "es": "frase de uso",
   "cards": 0
+ },
+ "caso": {
+  "en": "case",
+  "es": "caso",
+  "cards": 0
+ },
+ "forma verbal": {
+  "en": "verb form",
+  "es": "forma verbal",
+  "cards": 0
  }
 };

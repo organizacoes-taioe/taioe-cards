@@ -104,6 +104,69 @@ ok(M.exemploDoConceito(g001, { vistas: 1 }) === g001.exemplos[1], 'o seguinte na
 ok(M.exemploDoConceito(g001, { vistas: g001.exemplos.length }) === g001.exemplos[0], 'e dá a volta');
 ok(M.exemploDoConceito(PORID.get('la-p001'), { vistas: 0 }) === null, 'card que não é de conceito não tem exemplo');
 
+/* ═══════════ 6b. o card de forma (LATIM.md §3.6) ═══════════ */
+secao('o card de forma');
+const FORMAS = CARDS.filter(c => c.tipo === 'forma');
+ok(FORMAS.length > 0, 'há cards de forma');
+const abl = FORMAS.find(c => c.pt === 'ablativo' && c.la === 'principio');
+const perf = FORMAS.find(c => c.pt === 'perfeito do indicativo');
+const subj = FORMAS.find(c => c.pt === 'presente do subjuntivo');
+const impv = FORMAS.find(c => c.pt === 'imperativo');
+const part = FORMAS.find(c => c.pt === 'particípio perfeito');
+const cf = (c, t) => M.conferir(c, t, IDA);
+ok(cf(abl, 'ablativo') === 'certo' && cf(abl, 'Ablativo singular') === 'certo' && cf(abl, 'abl.') === 'certo',
+  'o caso vale com o número, maiúscula e abreviado');
+ok(cf(abl, 'dativo') === 'errado', 'outro caso é erro seco');
+ok(cf(abl, 'ablativo ou dativo') === 'errado', 'dois casos de uma vez é erro');
+ok(cf(abl, 'ablatvo') === 'quase', 'uma letra trocada: «deu quase»');
+ok(cf(perf, 'perfeito') === 'certo' && cf(perf, 'pretérito perfeito do indicativo') === 'certo', 'o perfeito sem o modo é o do indicativo');
+ok(cf(perf, 'presente') === 'errado' && cf(perf, 'perfeito do subjuntivo') === 'errado', 'outro tempo, ou outro modo, é erro');
+ok(cf(subj, 'subjuntivo') === 'certo' && cf(subj, 'presente do conjuntivo') === 'certo', 'o subjuntivo sem o tempo é o presente');
+ok(cf(subj, 'presente') === 'errado', 'o presente sem o modo é o do indicativo');
+ok(cf(impv, 'imperativo presente') === 'certo', 'o imperativo com o tempo');
+ok(cf(part, 'particípio') === 'certo' && cf(part, 'particípio passado') === 'certo', 'o particípio com ou sem o tempo');
+ok(M.foraDaPergunta(abl, 'o princípio') && M.foraDaPergunta(abl, 'princípio'), 'o significado no lugar do caso: pergunta trocada');
+ok(!M.foraDaPergunta(abl, 'ablativo') && !M.foraDaPergunta(abl, 'ablatvo') && !M.foraDaPergunta(abl, 'dativo'),
+  'o caso, mesmo errado ou com erro de letra, não é pergunta trocada');
+ok(M.foraDaPergunta(PORID.get('la-g001'), 'Deus') && !M.foraDaPergunta(PORID.get('la-p001'), 'deus'),
+  'vale também no card de conceito, e só nos de gramática');
+
+M.usarTransparencias(CARDS);
+M.usarExtras({ uid: 'teste' });
+const resp = (e, acertou) => M.registrar(e, { acertou, modo: 'escrita', direcao: IDA, resposta: 'x' });
+const novo = M.estadoInicialDo(abl);
+ok(M.modoDe(novo) === 'escrita', 'estreia já por escrito');
+resp(novo, true);
+ok(novo.etapa === 'dominado' && novo.voltaEm === null, 'acertou de primeira: dominado, sem data de volta');
+ok(M.filaDe(novo) === 'fora' && M.encerrado(abl.id, novo), 'e fora de todas as filas');
+const teimoso = M.estadoInicialDo(abl);
+resp(teimoso, false);
+ok(teimoso.etapa === 'escrita', 'errou: continua por escrito, sem múltipla escolha');
+resp(teimoso, true); resp(teimoso, true);
+ok(teimoso.etapa !== 'dominado', 'dois acertos depois do erro ainda não bastam');
+resp(teimoso, true);
+ok(teimoso.etapa === 'dominado' && teimoso.voltaEm === null, 'o terceiro seguido fecha de vez');
+
+const fonteDe = { [abl.de]: { vistas: 1 } };
+ok(!M.formaPronta(Object.assign({}, abl, { sempre: true }), {}, {}), 'antes do verso aparecer, não estreia');
+ok(M.formaPronta(Object.assign({}, abl, { sempre: true }), fonteDe, {}), 'depois do verso, o difícil estreia');
+let sorteadas = 0;
+for (let i = 0; i < 2000; i++) {
+  M.usarExtras({ uid: 'u' + i });
+  if (M.formaEscolhida(Object.assign({}, abl, { sempre: false }), {})) sorteadas++;
+}
+ok(Math.abs(sorteadas / 2000 - M.SORTEIO_DA_FORMA) < 0.04, 'o fácil sai para uma pessoa em quatro (' + sorteadas + ' de 2000)');
+M.usarExtras({ uid: 'teste' });
+const dativos = FORMAS.filter(c => c.pt === 'dativo');
+const h = (em, acertou) => ({ em: '2026-10-22T10:0' + em + ':00Z', acertou });
+ok(!M.formaPuxada('dativo', {}), 'sem erro, nada puxado');
+ok(M.formaPuxada('dativo', { [dativos[0].id]: { historico: [h(1, false)] } }), 'errou um dativo: os dativos fáceis vêm');
+ok(M.formaPuxada('dativo', { [dativos[0].id]: { historico: [h(1, false), h(2, true)] }, [dativos[1].id]: { historico: [h(3, true)] } }),
+  'dois acertos depois ainda puxam');
+ok(!M.formaPuxada('dativo', { [dativos[0].id]: { historico: [h(1, false), h(2, true)] }, [dativos[1].id]: { historico: [h(3, true), h(4, true)] } }),
+  'três acertos seguidos do caso soltam');
+ok(!M.formaPuxada('ablativo', { [dativos[0].id]: { historico: [h(1, false)] } }), 'o erro do dativo não puxa o ablativo');
+
 /* ═══════════ 7. transparência e desafio ═══════════ */
 secao('transparência e desafio');
 M.usarTransparencias([{ id: 'x1', tipo: 'palavra', transp: 'parecida' }, { id: 'x2', tipo: 'palavra', transp: 'total' }]);

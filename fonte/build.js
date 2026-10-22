@@ -357,15 +357,18 @@ for (const bruto of cards) {
 
   /* «May» (o mês) e «may» (o modal) só diferem na maiúscula: com «homografos»
      declarado, não é repetição */
-  const igual = textos.get(normalizar(c[L.texto]));
+  /* o card de forma do latim (LATIM.md §3.6) pergunta a mesma palavra em versos diferentes
+     («nobis» no Pai-Nosso e na Ave-Maria): a frente dele é o verso, não a palavra */
+  const deForma = c.tipo === 'forma';
+  const igual = !deForma && textos.get(normalizar(c[L.texto]));
   const homografo = igual && ((bruto.homografos || []).includes(igual) ||
     ((cards.find(x => x.id === igual) || {}).homografos || []).includes(c.id));
   if (igual && !homografo) {
     erros.push('card repetido: ' + onde + ' já existe em ' + igual);
   }
-  textos.set(normalizar(c[L.texto]), c.id);
+  if (!deForma) textos.set(normalizar(c[L.texto]), c.id);
 
-  const pelaMesmaRegua = Motor.normalizar(c[L.texto], idioma);
+  const pelaMesmaRegua = !deForma && Motor.normalizar(c[L.texto], idioma);
   /* homógrafo declarado: «the back» (as costas) e «back» (de volta) são palavras diferentes que o
      funil lê igual; o card diz em «homografos» que sabe disso, e a guarda deixa passar */
   const outro = pelaRegua.get(pelaMesmaRegua);
@@ -381,7 +384,7 @@ for (const bruto of cards) {
     if (typeof c[campo] !== 'string' || !c[campo].trim()) erros.push('falta "' + campo + '": ' + onde);
   }
   /* o card de conceito (cards/LATIM.md §3.5) só existe no latim */
-  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito'] : ['palavra', 'frase']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
+  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma'] : ['palavra', 'frase']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
   if (!NIVEIS.includes(c.nivel)) erros.push('nível inválido: ' + onde);
   if (!Array.isArray(c.tags) || !c.tags.length) erros.push('sem tags: ' + onde);
 
@@ -478,11 +481,12 @@ for (const bruto of cards) {
     if (typeof c[A.nota] !== 'string' || !c[A.nota].trim()) erros.push('falta "' + A.nota + '": ' + ondeA);
     /* a frase latina pode ter só o gabarito (cards/LATIM.md §4) */
     if (!Array.isArray(c[A.aceitas]) || (!c[A.aceitas].length && !(idioma === 'la' && c.gabarito))) erros.push('sem ' + A.aceitas + ': ' + ondeA);
-    if (!Array.isArray(c[A.distratores]) || c[A.distratores].length !== 4) {
+    /* o card de forma é só por escrito: sem distratores */
+    if (c.tipo !== 'forma' && (!Array.isArray(c[A.distratores]) || c[A.distratores].length !== 4)) {
       erros.push('precisa de exatamente 4 ' + A.distratores + ': ' + ondeA);
     }
 
-    checarDistratores(c, idioma + '-' + a, A.distratores, ondeA, err);
+    if (c.tipo !== 'forma') checarDistratores(c, idioma + '-' + a, A.distratores, ondeA, err);
 
     /* O parêntese explica a resposta, e ninguém o escreve: «o peixe (para
        comer)» tem de aceitar «o peixe». O funil não tira o parêntese, então a
@@ -699,6 +703,27 @@ for (const { idioma, cards } of baralhos) {
         /* a palavra pode vir com a enclítica ou o «cum» colados: virum em «virumque» */
         if (!palavrasDoEx.some(x => x === w || ['que', 'ne', 've', 'cum'].some(s => x === w + s))) erros.push('exemplo ' + (i + 1) + ' sem a palavra destacada «' + e.w + '»: ' + onde);
       });
+      continue;
+    }
+    if (c.tipo === 'forma') {
+      /* o card de forma (LATIM.md §3.6): sai de cards_de_forma.py; aqui se confere que ele
+         ainda bate com o verso e com a anotação dele */
+      const de = PORID.get(c.de);
+      if (!de || de.tipo !== 'frase') { erros.push('card de forma sem o verso de onde vem («de»): ' + onde); continue; }
+      if (c.frase !== de.la) erros.push('card de forma com o verso diferente do de ' + c.de + ' (rode cards_de_forma.py): ' + onde);
+      const lema = PORID.get(c.lema);
+      if (!lema || lema.tipo !== 'palavra') erros.push('card de forma sem o card do lema: ' + onde);
+      const marcada = (de.palavras || []).filter(p => chaveLatina(p.w) === chaveLatina(c.la) && p.c === c.lema);
+      if (!marcada.some(p => String(p.f || '').startsWith(c.pt) || String(p.f || '').startsWith(c.pt.replace(/ do (indicativo|subjuntivo)$/, '')))) {
+        erros.push('card de forma com resposta que a anotação do verso não dá («' + c.pt + '»): ' + onde);
+      }
+      if (!['caso', 'verbo'].includes(c.familia)) erros.push('card de forma sem família (caso, verbo): ' + onde);
+      if (Motor.conferirForma(c, c.pt) !== 'certo') erros.push('card de forma que não aceita a própria resposta: ' + onde);
+      if (typeof c.sempre !== 'boolean' || typeof c.dificuldade !== 'number') erros.push('card de forma sem «sempre» e «dificuldade»: ' + onde);
+      for (const g of c.conceitos || []) {
+        const alvo = PORID.get(g);
+        if (!alvo || alvo.tipo !== 'conceito') erros.push('conceito que não existe: ' + onde + ' → ' + g);
+      }
       continue;
     }
     if (c.tipo !== 'frase') continue;
