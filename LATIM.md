@@ -221,6 +221,56 @@ de primeira, nunca mais; errou, volta até acertar **3 vezes seguidas**, e entã
 - Mais tarde: a nota passa a somar o erro real de cada tipo (caso × declinação × número), tirado das
   respostas.
 
+### 3.7 Contraste (`la-k…`): a mesma frase, outro caso (planejado em 22/10, esperando o Gere)
+Pedido do Gere (22/10): depois que os casos estiverem aprendidos, uma frase simples em português e,
+como alternativas, as mesmas palavras latinas, na mesma ordem, mudando só os casos; e outros cards
+com as mesmas alternativas e outra frase em português. **Só múltipla escolha.** E outros cards do
+mesmo jeito, que mostrem as sutilezas da gramática.
+
+- **O conjunto.** Um molde de 4 alternativas latinas, todas gramaticais e cada uma com um sentido
+  diferente, e de 2 a 4 cards que o usam, cada um com a sua frase portuguesa:
+
+  | português (a pergunta) | a certa, entre as quatro |
+  |---|---|
+  | O servo vê o senhor. | *Servus dominum videt.* |
+  | O senhor vê o servo. | *Servum dominus videt.* |
+  | O servo do senhor vê. | *Servus domini videt.* |
+  | Servo, o senhor vê. | *Serve, dominus videt.* |
+
+  As quatro alternativas são *Servus dominum videt* · *Servum dominus videt* · *Servus domini videt*
+  · *Serve, dominus videt*. A ordem das palavras é a mesma em todas, e é isso que obriga a ler a
+  terminação. Os cards do mesmo conjunto se espaçam na fila (nunca dois seguidos), e a ordem das
+  alternativas se sorteia a cada vez.
+- **As palavras** são só as que a pessoa já tem (primeiras frases e textos escolhidos), e as frases
+  latinas são feitas por nós, simples, conferidas às cegas como a anotação (§8, D10).
+- **Quando entra.** Quando os conceitos dos casos do conjunto estão dominados: o `requerTodas` do card
+  leva os cards de conceito e os das palavras, e o motor já trata os dois como «sabidos»
+  (`Motor.liberadaEm`).
+- **Outros contrastes** (o mesmo card, outro assunto), do mais simples ao mais fino:
+  1. nominativo × acusativo, com a ordem trocada (o exemplo acima);
+  2. dativo × acusativo e genitivo × dativo nas terminações iguais (*rosae*, *domino*, *nobis*);
+  3. preposição e caso: *in urbem* (para a cidade) × *in urbe* (na cidade); *cum* + ablativo;
+  4. o neutro plural em -a × o feminino singular em -a (*arma* × *terra*);
+  5. imperfeito × perfeito (*amabat* «amava» × *amavit* «amou»); presente × futuro na 3ª
+     (*legit* × *leget*); *venit* (vem) × *vēnit* (veio), que só o contexto separa;
+  6. voz ativa × passiva (*amat* «ama» × *amatur* «é amado»);
+  7. reflexivo × não reflexivo (*se amat* «ama a si mesmo» × *eum amat* «ama-o»), e *suus* ×
+     *eius* («a própria mãe» × «a mãe dele»);
+  8. *ut* + subjuntivo (para que) × *ut* + indicativo (como); *cum* (com) × *cum* + subjuntivo
+     (quando, como);
+  9. o locativo (*Romae*, em Roma) × o genitivo; o ablativo de comparação × *quam*.
+- **Decisões, com a recomendação marcada:**
+  - **D14. Quando entra.** ★ Quando os conceitos dos casos do conjunto estão dominados. Ou: quando os
+    cards de forma daqueles casos estão fechados.
+  - **D15. Como se domina.** ★ Três acertos seguidos na múltipla escolha, e depois volta por data,
+    como os outros cards (a revisão espaçada é o que mantém a lição). Ou: uma vez só, como o card de
+    forma.
+  - **D16. Quantas frases por conjunto.** ★ De 2 a 4: só as que a mesma escolha distingue sem
+    ambiguidade.
+  - **D17. Por onde começar.** ★ Os itens 1 a 3 (os casos e as preposições), uns 10 conjuntos e 30
+    cards na primeira leva; os de verbo (5 e 6) quando o perfeito e a passiva tiverem estreado; os 7 a
+    9 depois.
+
 ## 4. A resposta escrita: aceitar tudo o que está certo
 1. **Um funil estrito** (feito no piloto): acento, maiúscula, pontuação, artigo e «já» não contam;
    o plural e o pronome contam. O funil largo das outras línguas juntava «nação» e «nações» e tirava

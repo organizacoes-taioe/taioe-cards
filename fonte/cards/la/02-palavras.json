@@ -324,32 +324,6 @@
   ]
  },
  {
-  "id": "la-p014",
-  "tipo": "palavra",
-  "la": "ecce",
-  "enunciado": "ecce (interjeição)",
-  "pt": "eis",
-  "aceitas": [
-   "eis",
-   "eis que",
-   "vede",
-   "veja",
-   "olha",
-   "olhai"
-  ],
-  "distratores": [
-   "então",
-   "agora",
-   "logo",
-   "assim"
-  ],
-  "nota": "Aponta para o que se mostra, que fica no nominativo: «Ecce homo», «Ecce ancilla Domini».",
-  "nivel": "A1",
-  "tags": [
-   "interjeição"
-  ]
- },
- {
   "id": "la-p015",
   "tipo": "palavra",
   "la": "homo",
@@ -401,32 +375,6 @@
    "adjetivo",
    "1ª declinação",
    "2ª declinação"
-  ]
- },
- {
-  "id": "la-p017",
-  "tipo": "palavra",
-  "la": "sitio",
-  "enunciado": "sitio, sitire, sitivi",
-  "pt": "ter sede",
-  "aceitas": [
-   "ter sede",
-   "estar com sede",
-   "tenho sede",
-   "estou com sede",
-   "sentir sede"
-  ],
-  "distratores": [
-   "ter fome",
-   "ter frio",
-   "ter sono",
-   "ter medo"
-  ],
-  "nota": "4ª conjugação: sitio, sitis, sitit. De sitis, a sede. «Sitio» (Jo 19,28) é uma frase inteira: «Tenho sede».",
-  "nivel": "A1",
-  "tags": [
-   "verbo",
-   "4ª conjugação"
   ]
  },
  {
@@ -1013,32 +961,6 @@
   ]
  },
  {
-  "id": "la-p040",
-  "tipo": "palavra",
-  "la": "ancilla",
-  "enunciado": "ancilla, ancillae, f.",
-  "pt": "a serva",
-  "aceitas": [
-   "serva",
-   "a serva",
-   "escrava",
-   "criada",
-   "empregada"
-  ],
-  "distratores": [
-   "a âncora",
-   "a anciã",
-   "a enguia",
-   "a ânsia"
-  ],
-  "nota": "1ª declinação. «Ecce ancilla Domini» (Lc 1,38): eis a serva do Senhor. O masculino é servus.",
-  "nivel": "A1",
-  "tags": [
-   "substantivo",
-   "1ª declinação"
-  ]
- },
- {
   "id": "la-p041",
   "tipo": "palavra",
   "la": "lux",
@@ -1114,32 +1036,6 @@
   ]
  },
  {
-  "id": "la-p044",
-  "tipo": "palavra",
-  "la": "vivus",
-  "enunciado": "vivus, viva, vivum",
-  "pt": "vivo",
-  "aceitas": [
-   "vivo",
-   "viva",
-   "vivente",
-   "que vive"
-  ],
-  "distratores": [
-   "visto",
-   "novo",
-   "puro",
-   "verdadeiro"
-  ],
-  "nota": "Adjetivo de 1ª e 2ª declinações, de vivo, vivere (viver). «Filius Dei vivi»: o Filho do Deus vivo (genitivo).",
-  "nivel": "A1",
-  "tags": [
-   "adjetivo",
-   "1ª declinação",
-   "2ª declinação"
-  ]
- },
- {
   "id": "la-p045",
   "tipo": "palavra",
   "la": "vanitas",
@@ -1164,60 +1060,6 @@
   "tags": [
    "substantivo",
    "3ª declinação"
-  ]
- },
- {
-  "id": "la-p046",
-  "tipo": "palavra",
-  "la": "magnifico",
-  "enunciado": "magnifico, magnificare, magnificavi, magnificatum",
-  "pt": "engrandecer",
-  "aceitas": [
-   "engrandecer",
-   "glorificar",
-   "exaltar",
-   "enaltecer",
-   "magnificar",
-   "louvar",
-   "proclamar a grandeza"
-  ],
-  "distratores": [
-   "magoar",
-   "mandar",
-   "maltratar",
-   "manifestar"
-  ],
-  "nota": "1ª conjugação, de magnus + facio: «fazer grande». «Magnificat anima mea Dominum» (Lc 1,46): a minha alma engrandece o Senhor.",
-  "nivel": "A1",
-  "tags": [
-   "verbo",
-   "1ª conjugação"
-  ]
- },
- {
-  "id": "la-p047",
-  "tipo": "palavra",
-  "la": "anima",
-  "enunciado": "anima, animae, f.",
-  "pt": "a alma",
-  "aceitas": [
-   "alma",
-   "a alma",
-   "vida",
-   "sopro",
-   "animo"
-  ],
-  "distratores": [
-   "o animal",
-   "a amiga",
-   "a imagem",
-   "a âncora"
-  ],
-  "nota": "A alma e, antes, o sopro da vida. 1ª declinação. «Anima mea»: a minha alma. Não é animus (o ânimo, o espírito).",
-  "nivel": "A1",
-  "tags": [
-   "substantivo",
-   "1ª declinação"
   ]
  },
  {
@@ -1486,84 +1328,6 @@
   ]
  },
  {
-  "id": "la-p058",
-  "tipo": "palavra",
-  "la": "requiesco",
-  "enunciado": "requiesco, requiescere, requievi, requietum",
-  "pt": "descansar",
-  "aceitas": [
-   "descansar",
-   "repousar",
-   "sossegar",
-   "aquietar-se"
-  ],
-  "distratores": [
-   "requerer",
-   "regressar",
-   "recusar",
-   "resistir"
-  ],
-  "nota": "3ª conjugação, de re + quiesco (de quies, o repouso). «Requiescat in pace»: descanse em paz (subjuntivo de desejo).",
-  "nivel": "A1",
-  "tags": [
-   "verbo",
-   "3ª conjugação"
-  ]
- },
- {
-  "id": "la-p059",
-  "tipo": "palavra",
-  "la": "beatus",
-  "enunciado": "beatus, beata, beatum",
-  "pt": "bem-aventurado",
-  "aceitas": [
-   "bem aventurado",
-   "feliz",
-   "ditoso",
-   "afortunado",
-   "beato",
-   "venturoso"
-  ],
-  "distratores": [
-   "bendito",
-   "belo",
-   "sagrado",
-   "perfeito"
-  ],
-  "nota": "Feliz, o que alcançou o bem. «Beati pauperes spiritu» (Mt 5,3): bem-aventurados os pobres em espírito. Não é benedictus (bendito, de quem se diz bem).",
-  "nivel": "A1",
-  "tags": [
-   "adjetivo",
-   "1ª declinação",
-   "2ª declinação"
-  ]
- },
- {
-  "id": "la-p060",
-  "tipo": "palavra",
-  "la": "pauper",
-  "enunciado": "pauper, pauperis (adjetivo)",
-  "pt": "pobre",
-  "aceitas": [
-   "pobre",
-   "carente",
-   "humilde",
-   "necessitado"
-  ],
-  "distratores": [
-   "pálido",
-   "parado",
-   "pacífico",
-   "paterno"
-  ],
-  "nota": "Adjetivo de 3ª declinação, de uma terminação só: pauper serve aos três gêneros. Usado como nome, «o pobre»: «Beati pauperes spiritu».",
-  "nivel": "A1",
-  "tags": [
-   "adjetivo",
-   "3ª declinação"
-  ]
- },
- {
   "id": "la-p061",
   "tipo": "palavra",
   "la": "mens",
@@ -1828,35 +1592,6 @@
   ]
  },
  {
-  "id": "la-p071",
-  "tipo": "palavra",
-  "la": "consummo",
-  "enunciado": "consummo, consummare, consummavi, consummatum",
-  "pt": "consumar",
-  "aceitas": [
-   "consumar",
-   "completar",
-   "acabar",
-   "terminar",
-   "concluir",
-   "realizar",
-   "cumprir",
-   "levar a cabo"
-  ],
-  "distratores": [
-   "consumir",
-   "consolar",
-   "consultar",
-   "conservar"
-  ],
-  "nota": "1ª conjugação, de summa, o total: levar até o fim. «Consummatum est» (Jo 19,30): está consumado (perfeito passivo). Não é consumo, consumere (gastar).",
-  "nivel": "A1",
-  "tags": [
-   "verbo",
-   "1ª conjugação"
-  ]
- },
- {
   "id": "la-p072",
   "tipo": "palavra",
   "la": "pater",
@@ -2061,58 +1796,6 @@
   "transparencia": {
    "pt": "nenhuma"
   }
- },
- {
-  "id": "la-p080",
-  "tipo": "palavra",
-  "la": "regno",
-  "enunciado": "regno, regnare, regnavi, regnatum",
-  "pt": "reinar",
-  "aceitas": [
-   "reinar",
-   "governar",
-   "dominar",
-   "reina"
-  ],
-  "distratores": [
-   "regar",
-   "regressar",
-   "rezar",
-   "resgatar"
-  ],
-  "nota": "1ª conjugação, de regnum (o reino) e rex (o rei). «Christus regnat»: Cristo reina.",
-  "nivel": "A1",
-  "tags": [
-   "verbo",
-   "1ª conjugação"
-  ]
- },
- {
-  "id": "la-p081",
-  "tipo": "palavra",
-  "la": "impero",
-  "enunciado": "impero, imperare, imperavi, imperatum",
-  "pt": "mandar (imperar)",
-  "aceitas": [
-   "mandar",
-   "imperar",
-   "comandar",
-   "governar",
-   "ordenar",
-   "reger"
-  ],
-  "distratores": [
-   "impedir (barrar)",
-   "importar (trazer)",
-   "implorar (pedir)",
-   "imitar (copiar)"
-  ],
-  "nota": "1ª conjugação. Dá ordens a quem? Ao dativo: «impero tibi», mando em ti. Daí imperator, imperium.",
-  "nivel": "A1",
-  "tags": [
-   "verbo",
-   "1ª conjugação"
-  ]
  },
  {
   "id": "la-p082",
@@ -3255,5 +2938,1022 @@
   "tags": [
    "advérbio"
   ]
+ },
+ {
+  "id": "la-p126",
+  "tipo": "palavra",
+  "la": "tempus",
+  "enunciado": "tempus, temporis, n.",
+  "pt": "o tempo",
+  "aceitas": [
+   "tempo",
+   "o tempo",
+   "a época",
+   "época",
+   "ocasião",
+   "momento"
+  ],
+  "distratores": [
+   "o templo",
+   "o tempero",
+   "a tempestade",
+   "a têmpora"
+  ],
+  "nota": "3ª declinação, neutro: tempus, temporis; plural tempora. Nominativo e acusativo são iguais. Daí temporal e contemporâneo.",
+  "tags": [
+   "substantivo",
+   "3ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p127",
+  "tipo": "palavra",
+  "la": "fugio",
+  "enunciado": "fugio, fugere, fugi, fugitum",
+  "pt": "fugir",
+  "aceitas": [
+   "fugir",
+   "escapar",
+   "foge",
+   "passar",
+   "evitar"
+  ],
+  "distratores": [
+   "fingir",
+   "fundir",
+   "furar",
+   "fumar"
+  ],
+  "nota": "3ª conjugação, do tipo de capio: fugio, fugis, fugit. O perfeito fūgit se escreve igual ao presente fugit: só a vogal longa os separa.",
+  "tags": [
+   "verbo",
+   "3ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p128",
+  "tipo": "palavra",
+  "la": "ars",
+  "enunciado": "ars, artis, f.",
+  "pt": "a arte",
+  "aceitas": [
+   "arte",
+   "a arte",
+   "técnica",
+   "a técnica",
+   "habilidade",
+   "ofício"
+  ],
+  "distratores": [
+   "o ar",
+   "a área",
+   "a arma",
+   "a asa"
+  ],
+  "nota": "3ª declinação: ars, artis; genitivo plural artium. Era também a técnica, o ofício: a medicina era uma ars.",
+  "tags": [
+   "substantivo",
+   "3ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p129",
+  "tipo": "palavra",
+  "la": "longus",
+  "enunciado": "longus, longa, longum",
+  "pt": "longo",
+  "aceitas": [
+   "longo",
+   "longa",
+   "comprido",
+   "comprida",
+   "demorado",
+   "extenso"
+  ],
+  "distratores": [
+   "logo",
+   "lento",
+   "largo",
+   "lindo"
+  ],
+  "nota": "Adjetivo de 1ª e 2ª declinações, como bonus: longus, longa, longum.",
+  "tags": [
+   "adjetivo",
+   "1ª declinação",
+   "2ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p130",
+  "tipo": "palavra",
+  "la": "brevis",
+  "enunciado": "brevis, breve",
+  "pt": "breve",
+  "aceitas": [
+   "breve",
+   "curto",
+   "curta",
+   "pequeno",
+   "rápido"
+  ],
+  "distratores": [
+   "bravo",
+   "leve",
+   "brando",
+   "grave"
+  ],
+  "nota": "Adjetivo da 3ª declinação, de duas terminações: brevis no masculino e no feminino, breve no neutro.",
+  "tags": [
+   "adjetivo",
+   "3ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p131",
+  "tipo": "palavra",
+  "la": "dum",
+  "enunciado": "dum (conjunção)",
+  "pt": "enquanto",
+  "aceitas": [
+   "enquanto",
+   "ao passo que",
+   "até que"
+  ],
+  "distratores": [
+   "depois que",
+   "porque",
+   "embora",
+   "assim que"
+  ],
+  "nota": "Com o presente, «enquanto»: dum spiro, enquanto respiro. Com o subjuntivo, «até que».",
+  "tags": [
+   "conjunção"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p132",
+  "tipo": "palavra",
+  "la": "spiro",
+  "enunciado": "spiro, spirare, spiravi, spiratum",
+  "pt": "respirar",
+  "aceitas": [
+   "respirar",
+   "soprar",
+   "viver",
+   "respira",
+   "estar vivo"
+  ],
+  "distratores": [
+   "espirrar",
+   "espiar",
+   "esperar",
+   "espalhar"
+  ],
+  "nota": "1ª conjugação. Daí espírito (o sopro), respirar e inspirar.",
+  "tags": [
+   "verbo",
+   "1ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p133",
+  "tipo": "palavra",
+  "la": "spero",
+  "enunciado": "spero, sperare, speravi, speratum",
+  "pt": "esperar (ter esperança)",
+  "aceitas": [
+   "esperar",
+   "ter esperança",
+   "confiar",
+   "espero",
+   "ter fé"
+  ],
+  "distratores": [
+   "separar (apartar)",
+   "superar (vencer)",
+   "operar (agir)",
+   "espalhar (difundir)"
+  ],
+  "nota": "1ª conjugação. É esperar no sentido de ter esperança (spes, a esperança), não no de aguardar.",
+  "tags": [
+   "verbo",
+   "1ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p134",
+  "tipo": "palavra",
+  "la": "cogito",
+  "enunciado": "cogito, cogitare, cogitavi, cogitatum",
+  "pt": "pensar",
+  "aceitas": [
+   "pensar",
+   "refletir",
+   "cogitar",
+   "meditar",
+   "penso",
+   "considerar"
+  ],
+  "distratores": [
+   "cozinhar",
+   "colher",
+   "coçar",
+   "cobrar"
+  ],
+  "nota": "1ª conjugação, de co-agito: agitar junto, revolver na mente. Daí cogitar.",
+  "tags": [
+   "verbo",
+   "1ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p135",
+  "tipo": "palavra",
+  "la": "ergo",
+  "enunciado": "ergo (advérbio)",
+  "pt": "logo (portanto)",
+  "aceitas": [
+   "logo",
+   "portanto",
+   "então",
+   "por isso",
+   "pois",
+   "por conseguinte"
+  ],
+  "distratores": [
+   "ainda (até agora)",
+   "antes (primeiro)",
+   "depois (em seguida)",
+   "também (igualmente)"
+  ],
+  "nota": "Tira a conclusão: «logo, portanto». Cogito, ergo sum.",
+  "tags": [
+   "advérbio"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p136",
+  "tipo": "palavra",
+  "la": "caveo",
+  "enunciado": "caveo, cavere, cavi, cautum",
+  "pt": "ter cuidado (guardar-se)",
+  "aceitas": [
+   "ter cuidado",
+   "tomar cuidado",
+   "guardar-se",
+   "acautelar-se",
+   "precaver-se",
+   "cuidado",
+   "evitar",
+   "prevenir-se",
+   "cuidar-se"
+  ],
+  "distratores": [
+   "cavar (escavar)",
+   "calar (silenciar)",
+   "cair (tombar)",
+   "caçar (perseguir)"
+  ],
+  "nota": "2ª conjugação: caveo, caves; imperativo cave. Pede o acusativo do que se evita: cave canem. Daí cautela e cauto.",
+  "tags": [
+   "verbo",
+   "2ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p137",
+  "tipo": "palavra",
+  "la": "canis",
+  "enunciado": "canis, canis, m. e f.",
+  "pt": "o cão",
+  "aceitas": [
+   "cão",
+   "o cão",
+   "cachorro",
+   "o cachorro",
+   "cadela",
+   "a cadela"
+  ],
+  "distratores": [
+   "o cano",
+   "a cana",
+   "o canal",
+   "o canto"
+  ],
+  "nota": "3ª declinação: canis, canis; acusativo canem. Daí canino.",
+  "tags": [
+   "substantivo",
+   "3ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p138",
+  "tipo": "palavra",
+  "la": "sapio",
+  "enunciado": "sapio, sapere, sapivi",
+  "pt": "saber (ser sábio)",
+  "aceitas": [
+   "saber",
+   "ser sábio",
+   "ser sensato",
+   "ter juízo",
+   "entender",
+   "saborear",
+   "ter sabor",
+   "pensar"
+  ],
+  "distratores": [
+   "sapatear (dançar)",
+   "sacar (tirar)",
+   "salvar (livrar)",
+   "sair (partir)"
+  ],
+  "nota": "3ª conjugação: sapio, sapis. Primeiro «ter sabor», depois «ter juízo»: daí sábio e sabor.",
+  "tags": [
+   "verbo",
+   "3ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p139",
+  "tipo": "palavra",
+  "la": "audeo",
+  "enunciado": "audeo, audere, ausus sum",
+  "pt": "ousar",
+  "aceitas": [
+   "ousar",
+   "atrever-se",
+   "ter coragem",
+   "ousa",
+   "ter ousadia",
+   "arriscar-se"
+  ],
+  "distratores": [
+   "ouvir",
+   "aumentar",
+   "adorar",
+   "acudir"
+  ],
+  "nota": "2ª conjugação, semidepoente: o perfeito tem a forma da passiva (ausus sum, ousei). Imperativo aude; particípio presente audens, «o que ousa». Daí audaz e audácia.",
+  "tags": [
+   "verbo",
+   "2ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p140",
+  "tipo": "palavra",
+  "la": "iacio",
+  "enunciado": "iacio, iacere, ieci, iactum",
+  "pt": "lançar",
+  "aceitas": [
+   "lançar",
+   "atirar",
+   "jogar",
+   "arremessar",
+   "lança"
+  ],
+  "distratores": [
+   "jazer",
+   "juntar",
+   "jurar",
+   "iniciar"
+  ],
+  "nota": "3ª conjugação, do tipo de capio. Particípio iactus, lançado: iacta alea est. Daí jato, projetar e rejeitar.",
+  "tags": [
+   "verbo",
+   "3ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p141",
+  "tipo": "palavra",
+  "la": "alea",
+  "enunciado": "alea, aleae, f.",
+  "pt": "o dado (a sorte)",
+  "aceitas": [
+   "dado",
+   "o dado",
+   "os dados",
+   "sorte",
+   "a sorte",
+   "jogo de dados",
+   "o jogo",
+   "risco",
+   "acaso",
+   "o acaso"
+  ],
+  "distratores": [
+   "a aleia (o caminho)",
+   "a ala (a fileira)",
+   "a alga (a planta)",
+   "o alho (o tempero)"
+  ],
+  "nota": "1ª declinação. O jogo de dados e, daí, o acaso, o risco: aleatório.",
+  "tags": [
+   "substantivo",
+   "1ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p142",
+  "tipo": "palavra",
+  "la": "festino",
+  "enunciado": "festino, festinare, festinavi, festinatum",
+  "pt": "apressar-se",
+  "aceitas": [
+   "apressar-se",
+   "apressar",
+   "ter pressa",
+   "correr",
+   "se apressar",
+   "apressa-te",
+   "andar depressa"
+  ],
+  "distratores": [
+   "festejar",
+   "fechar",
+   "fiscalizar",
+   "fixar"
+  ],
+  "nota": "1ª conjugação. Imperativo festina: «apressa-te».",
+  "tags": [
+   "verbo",
+   "1ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p143",
+  "tipo": "palavra",
+  "la": "lente",
+  "enunciado": "lente (advérbio)",
+  "pt": "devagar",
+  "aceitas": [
+   "devagar",
+   "lentamente",
+   "sem pressa",
+   "com calma",
+   "devagarinho"
+  ],
+  "distratores": [
+   "depressa",
+   "de leve",
+   "de longe",
+   "de novo"
+  ],
+  "nota": "Advérbio de lentus, lento: lente, «devagar».",
+  "tags": [
+   "advérbio"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p144",
+  "tipo": "palavra",
+  "la": "vinum",
+  "enunciado": "vinum, vini, n.",
+  "pt": "o vinho",
+  "aceitas": [
+   "vinho",
+   "o vinho"
+  ],
+  "distratores": [
+   "o vime",
+   "a vinha",
+   "o vinagre",
+   "o veneno"
+  ],
+  "nota": "2ª declinação, neutro: vinum, vini; ablativo vino.",
+  "tags": [
+   "substantivo",
+   "2ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p145",
+  "tipo": "palavra",
+  "la": "circenses",
+  "enunciado": "circenses, circensium, m. pl.",
+  "pt": "os jogos do circo",
+  "aceitas": [
+   "jogos do circo",
+   "os jogos do circo",
+   "circo",
+   "o circo",
+   "circos",
+   "os circos",
+   "jogos",
+   "os jogos",
+   "espetáculos",
+   "os espetáculos"
+  ],
+  "distratores": [
+   "os cercos da cidade",
+   "os círculos do céu",
+   "as cercas do campo",
+   "os cirurgiões do exército"
+  ],
+  "nota": "Plural de circensis, «do circo»: os jogos e as corridas do Circo Máximo. 3ª declinação.",
+  "tags": [
+   "substantivo",
+   "3ª declinação"
+  ],
+  "nivel": "A1",
+  "variantes": [
+   "circensis"
+  ]
+ },
+ {
+  "id": "la-p146",
+  "tipo": "palavra",
+  "la": "vae",
+  "enunciado": "vae (interjeição)",
+  "pt": "ai (de)",
+  "aceitas": [
+   "ai",
+   "ai de",
+   "infeliz de",
+   "coitado de",
+   "pobre de"
+  ],
+  "distratores": [
+   "vai (anda)",
+   "olá (oi)",
+   "eia (vamos)",
+   "ó (oh)"
+  ],
+  "nota": "Interjeição de dor ou de ameaça, com o dativo: vae victis, ai dos vencidos.",
+  "tags": [
+   "interjeição"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p147",
+  "tipo": "palavra",
+  "la": "necessitas",
+  "enunciado": "necessitas, necessitatis, f.",
+  "pt": "a necessidade",
+  "aceitas": [
+   "necessidade",
+   "a necessidade",
+   "carência",
+   "a carência",
+   "falta",
+   "precisão",
+   "obrigação"
+  ],
+  "distratores": [
+   "a nacionalidade",
+   "a nitidez",
+   "a novidade",
+   "a neblina"
+  ],
+  "nota": "3ª declinação, como veritas: necessitas, necessitatis. A terminação -tas deu -dade em português.",
+  "tags": [
+   "substantivo",
+   "3ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p148",
+  "tipo": "palavra",
+  "la": "fortuna",
+  "enunciado": "fortuna, fortunae, f.",
+  "pt": "a sorte (a fortuna)",
+  "aceitas": [
+   "sorte",
+   "a sorte",
+   "fortuna",
+   "a fortuna",
+   "destino",
+   "o destino",
+   "acaso",
+   "boa sorte"
+  ],
+  "distratores": [
+   "a fortaleza (o forte)",
+   "a força (o vigor)",
+   "a fórmula (a regra)",
+   "a forma (o molde)"
+  ],
+  "nota": "1ª declinação. Era também uma deusa, a Fortuna, que distribui a sorte; o sentido de riqueza veio depois.",
+  "tags": [
+   "substantivo",
+   "1ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p149",
+  "tipo": "palavra",
+  "la": "iuvo",
+  "enunciado": "iuvo, iuvare, iuvi, iutum",
+  "pt": "ajudar",
+  "aceitas": [
+   "ajudar",
+   "auxiliar",
+   "favorecer",
+   "agradar",
+   "ajuda",
+   "socorrer"
+  ],
+  "distratores": [
+   "juntar",
+   "jurar",
+   "julgar",
+   "jejuar"
+  ],
+  "nota": "1ª conjugação, com o perfeito irregular iuvi. Daí ajudar (adiutare) e adjutório.",
+  "tags": [
+   "verbo",
+   "1ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p150",
+  "tipo": "palavra",
+  "la": "gutta",
+  "enunciado": "gutta, guttae, f.",
+  "pt": "a gota",
+  "aceitas": [
+   "gota",
+   "a gota",
+   "pingo",
+   "o pingo"
+  ],
+  "distratores": [
+   "a goela",
+   "a gruta",
+   "a gula",
+   "a luta"
+  ],
+  "nota": "1ª declinação, como rosa.",
+  "tags": [
+   "substantivo",
+   "1ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p151",
+  "tipo": "palavra",
+  "la": "cavo",
+  "enunciado": "cavo, cavare, cavavi, cavatum",
+  "pt": "cavar",
+  "aceitas": [
+   "cavar",
+   "escavar",
+   "furar",
+   "perfurar",
+   "desgastar",
+   "cava",
+   "abrir"
+  ],
+  "distratores": [
+   "calar",
+   "casar",
+   "cavalgar",
+   "caçar"
+  ],
+  "nota": "1ª conjugação, de cavus, oco. Daí cavar, caverna e cavidade.",
+  "tags": [
+   "verbo",
+   "1ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p152",
+  "tipo": "palavra",
+  "la": "lapis",
+  "enunciado": "lapis, lapidis, m.",
+  "pt": "a pedra",
+  "aceitas": [
+   "pedra",
+   "a pedra",
+   "rocha",
+   "a rocha",
+   "seixo",
+   "o seixo"
+  ],
+  "distratores": [
+   "o lápis",
+   "o lapso",
+   "a lapela",
+   "o lábio"
+  ],
+  "nota": "3ª declinação: lapis, lapidis (o genitivo mostra o tema). Não é o lápis: é a pedra, daí lápide e lapidar. O lápis ganhou o nome da pedra de grafite.",
+  "tags": [
+   "substantivo",
+   "3ª declinação",
+   "falso-amigo"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p153",
+  "tipo": "palavra",
+  "la": "lupus",
+  "enunciado": "lupus, lupi, m.",
+  "pt": "o lobo",
+  "aceitas": [
+   "lobo",
+   "o lobo",
+   "loba",
+   "a loba"
+  ],
+  "distratores": [
+   "o lúpulo",
+   "o lucro",
+   "a lupa",
+   "o luto"
+  ],
+  "nota": "2ª declinação, como dominus. Uma loba (lupa) amamentou Rômulo e Remo.",
+  "tags": [
+   "substantivo",
+   "2ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p154",
+  "tipo": "palavra",
+  "la": "si",
+  "enunciado": "si (conjunção)",
+  "pt": "se (condição)",
+  "aceitas": [
+   "se",
+   "caso",
+   "no caso de"
+  ],
+  "distratores": [
+   "sim (afirmação)",
+   "sem (falta)",
+   "seu (posse)",
+   "assim (deste modo)"
+  ],
+  "nota": "A condição: si vis, se queres. O se pronome, em latim, é outro: se, sui, sibi.",
+  "tags": [
+   "conjunção"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p155",
+  "tipo": "palavra",
+  "la": "volo",
+  "enunciado": "volo, velle, volui",
+  "pt": "querer",
+  "aceitas": [
+   "querer",
+   "desejar",
+   "quer",
+   "quero"
+  ],
+  "distratores": [
+   "voar",
+   "voltar",
+   "votar",
+   "valer"
+  ],
+  "nota": "Irregular: volo, vis, vult, volumus, vultis, volunt; infinitivo velle. Há outro volo, volare, que é voar. Nolo (não querer) é o contrário: noli, não queiras.",
+  "tags": [
+   "verbo",
+   "irregular"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p156",
+  "tipo": "palavra",
+  "la": "paro",
+  "enunciado": "paro, parare, paravi, paratum",
+  "pt": "preparar",
+  "aceitas": [
+   "preparar",
+   "aprontar",
+   "arrumar",
+   "dispor",
+   "prepara",
+   "providenciar",
+   "arranjar"
+  ],
+  "distratores": [
+   "parar",
+   "parir",
+   "partir",
+   "parecer"
+  ],
+  "nota": "1ª conjugação: paro, paras, parat; imperativo para. Não é parar: é preparar, daí preparar e aparato.",
+  "tags": [
+   "verbo",
+   "1ª conjugação",
+   "falso-amigo"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p157",
+  "tipo": "palavra",
+  "la": "bellum",
+  "enunciado": "bellum, belli, n.",
+  "pt": "a guerra",
+  "aceitas": [
+   "guerra",
+   "a guerra",
+   "combate",
+   "o combate",
+   "batalha",
+   "a batalha"
+  ],
+  "distratores": [
+   "o belo",
+   "a beleza",
+   "o bolo",
+   "o berro"
+  ],
+  "nota": "2ª declinação, neutro: bellum, belli. Não vem de bellus (bonito): daí bélico e beligerante.",
+  "tags": [
+   "substantivo",
+   "2ª declinação",
+   "falso-amigo"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p158",
+  "tipo": "palavra",
+  "la": "doceo",
+  "enunciado": "doceo, docere, docui, doctum",
+  "pt": "ensinar",
+  "aceitas": [
+   "ensinar",
+   "instruir",
+   "educar",
+   "ensina",
+   "mostrar"
+  ],
+  "distratores": [
+   "adoçar",
+   "doar",
+   "doer",
+   "dormir"
+  ],
+  "nota": "2ª conjugação: doceo, doces, docet; 3ª pessoa do plural docent. Daí docente e doutor (doctor).",
+  "tags": [
+   "verbo",
+   "2ª conjugação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p159",
+  "tipo": "palavra",
+  "la": "disco",
+  "enunciado": "disco, discere, didici",
+  "pt": "aprender",
+  "aceitas": [
+   "aprender",
+   "estudar",
+   "aprende",
+   "conhecer"
+  ],
+  "distratores": [
+   "discar",
+   "discutir",
+   "discordar",
+   "dispersar"
+  ],
+  "nota": "3ª conjugação: disco, discis, discit; 3ª pessoa do plural discunt. Daí discípulo e disciplina. Não tem nada com o disco.",
+  "tags": [
+   "verbo",
+   "3ª conjugação",
+   "falso-amigo"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p160",
+  "tipo": "palavra",
+  "la": "bene",
+  "enunciado": "bene (advérbio)",
+  "pt": "bem",
+  "aceitas": [
+   "bem",
+   "muito bem",
+   "de modo bom"
+  ],
+  "distratores": [
+   "mal",
+   "menos",
+   "breve",
+   "sempre"
+  ],
+  "nota": "Advérbio de bonus: bene, bem; o contrário é male, mal. Daí benefício e bendizer.",
+  "tags": [
+   "advérbio"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p161",
+  "tipo": "palavra",
+  "la": "patria",
+  "enunciado": "patria, patriae, f.",
+  "pt": "a pátria",
+  "aceitas": [
+   "pátria",
+   "a pátria",
+   "terra natal",
+   "a terra natal",
+   "país",
+   "o país"
+  ],
+  "distratores": [
+   "o pátio",
+   "a pauta",
+   "a patroa",
+   "a parte"
+  ],
+  "nota": "1ª declinação, de pater: a terra dos pais.",
+  "tags": [
+   "substantivo",
+   "1ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p162",
+  "tipo": "palavra",
+  "la": "humanus",
+  "enunciado": "humanus, humana, humanum",
+  "pt": "humano",
+  "aceitas": [
+   "humano",
+   "humana",
+   "do homem",
+   "próprio do homem"
+  ],
+  "distratores": [
+   "úmido",
+   "humilde",
+   "honrado",
+   "humoroso"
+  ],
+  "nota": "Adjetivo de 1ª e 2ª declinações, de homo.",
+  "tags": [
+   "adjetivo",
+   "1ª declinação",
+   "2ª declinação"
+  ],
+  "nivel": "A1"
+ },
+ {
+  "id": "la-p163",
+  "tipo": "palavra",
+  "la": "erro",
+  "enunciado": "erro, errare, erravi, erratum",
+  "pt": "errar",
+  "aceitas": [
+   "errar",
+   "enganar-se",
+   "vagar",
+   "andar sem rumo",
+   "erra",
+   "equivocar-se"
+  ],
+  "distratores": [
+   "ferrar",
+   "enterrar",
+   "arar",
+   "berrar"
+  ],
+  "nota": "1ª conjugação. Primeiro «vagar, andar sem rumo», depois «enganar-se».",
+  "tags": [
+   "verbo",
+   "1ª conjugação"
+  ],
+  "nivel": "A1"
  }
 ]

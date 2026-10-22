@@ -12,6 +12,19 @@
    "sha256": "7dbb990cbd3f98406a0482903bdae0b16794231243b0eed82a0b680fcaf6f3ee",
    "comando": "vulgata",
    "notas": "Grafia do arquivo: ligaduras æ/œ, j, colchetes marcando fala e o começo do salmo depois do título; o corpus.py normaliza (latim.grafia). Salmos na numeração da Vulgata; a referência sai na hebraica com a latina entre parênteses."
+  },
+  {
+   "pasta": "perseus-latinlit",
+   "url": "https://github.com/PerseusDL/canonical-latinLit",
+   "commit": "0700a6b7e010707367502a83e08e99ebbbb3666c",
+   "obra": "Os clássicos latinos do Perseus Digital Library: César, Cícero, Catulo, Vergílio, Ovídio, Horácio, Sêneca, Fedro, Marcial, Lívio (Ab urbe condita), Cornélio Nepos, Suetônio e Terêncio",
+   "edicao": "TEI XML do Perseus (perseus-lat2), sobre edições críticas antigas (séc. XIX e começo do XX), em domínio público",
+   "licenca": "CC BY-SA 4.0 (a codificação do Perseus); os textos, domínio público",
+   "baixado": "2026-10-22",
+   "arquivos": 282,
+   "sha256": "b0e9a6ccdbc07d9bff7136474c0cde0e171ca0251cae0486edb1094075002d7a",
+   "comando": "classicos (depois de baixar-classicos)",
+   "notas": "O sha256 é o do conjunto (corpus.soma: o de cada arquivo, na ordem dos caminhos). Grafia já com v e i; o corpus.py tira notas e títulos, junta os versos de cada poema antes do corte e descarta o aparato sem referência. Abreviações (Q., M., Id.) cortam frase: as candidatas se leem antes de virar card. Pedido do Gere (22/10): as frases de uso meio a meio entre a Vulgata e os clássicos."
   }
  ]
 }

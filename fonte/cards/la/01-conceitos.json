@@ -29,10 +29,22 @@
     "fonte": "1Jo 4,16"
    },
    {
+    "la": "Tempus fugit.",
+    "w": "Tempus",
+    "exp": "Tempus: nominativo singular, o sujeito de fugit.",
+    "fonte": "Provérbio"
+   },
+   {
     "la": "Ego sum lux mundi.",
     "w": "lux",
     "exp": "lux: nominativo, o predicativo (o que Jesus diz que é).",
     "fonte": "Jo 8,12"
+   },
+   {
+    "la": "Gutta cavat lapidem.",
+    "w": "Gutta",
+    "exp": "Gutta: nominativo singular, o sujeito: é a gota que cava.",
+    "fonte": "Ovídio, Pônticas IV,10,5"
    },
    {
     "la": "Omnia vincit Amor.",
@@ -164,16 +176,34 @@
     "fonte": "Sl 117 (116),1"
    },
    {
+    "la": "Cave canem.",
+    "w": "canem",
+    "exp": "canem: acusativo singular, o objeto direto de cave.",
+    "fonte": "Petrônio, Satíricon 29"
+   },
+   {
     "la": "Carpe diem.",
     "w": "diem",
     "exp": "diem: acusativo de dies (5ª declinação), o objeto de carpe.",
     "fonte": "Horácio, Odes I,11"
    },
    {
+    "la": "Gutta cavat lapidem.",
+    "w": "lapidem",
+    "exp": "lapidem: acusativo singular, o objeto direto: a pedra é cavada.",
+    "fonte": "Ovídio, Pônticas IV,10,5"
+   },
+   {
     "la": "Arma virumque cano.",
     "w": "virum",
     "exp": "virum: acusativo singular, um dos objetos de cano.",
     "fonte": "Vergílio, Eneida I,1"
+   },
+   {
+    "la": "Si vis pacem, para bellum.",
+    "w": "bellum",
+    "exp": "bellum: acusativo singular, o objeto direto de para.",
+    "fonte": "Provérbio"
    },
    {
     "la": "Sero te amavi.",
@@ -229,6 +259,12 @@
     "w": "Domini",
     "exp": "Domini: genitivo singular, «do Senhor».",
     "fonte": "Lc 1,38"
+   },
+   {
+    "la": "Mater artium necessitas.",
+    "w": "artium",
+    "exp": "artium: genitivo plural de ars: mãe «das artes».",
+    "fonte": "Provérbio"
    },
    {
     "la": "Ego sum lux mundi.",
@@ -298,10 +334,22 @@
     "fonte": "Missal Romano"
    },
    {
+    "la": "Lupus est homo homini.",
+    "w": "homini",
+    "exp": "homini: dativo singular, «para o homem».",
+    "fonte": "Plauto, Asinária 495"
+   },
+   {
     "la": "Pax vobis.",
     "w": "vobis",
     "exp": "vobis: dativo de vos, a quem se deseja a paz.",
     "fonte": "Jo 20,19"
+   },
+   {
+    "la": "Vae victis!",
+    "w": "victis",
+    "exp": "victis: dativo plural, com vae: «ai dos vencidos».",
+    "fonte": "Lívio, História de Roma V,48,9"
    },
    {
     "la": "Gloria in excelsis Deo.",
@@ -363,6 +411,12 @@
     "w": "pace",
     "exp": "pace: ablativo de pax, depois de in (onde).",
     "fonte": "Ritual de exéquias"
+   },
+   {
+    "la": "In vino veritas.",
+    "w": "vino",
+    "exp": "vino: ablativo singular, com in: «no vinho».",
+    "fonte": "Provérbio"
    },
    {
     "la": "In principio erat Verbum.",
@@ -439,10 +493,22 @@
     "fonte": "1Jo 4,16"
    },
    {
+    "la": "Cogito, ergo sum.",
+    "w": "Cogito",
+    "exp": "Cogito: presente do indicativo, 1ª pessoa do singular: «penso».",
+    "fonte": "Descartes, Princípios da filosofia I,7"
+   },
+   {
     "la": "Sitio.",
     "w": "Sitio",
     "exp": "Sitio: presente, 1ª pessoa do singular: «tenho sede».",
     "fonte": "Jo 19,28"
+   },
+   {
+    "la": "Homines, dum docent, discunt.",
+    "w": "discunt",
+    "exp": "discunt: presente do indicativo, 3ª pessoa do plural: «aprendem».",
+    "fonte": "Sêneca, Cartas a Lucílio 7,8"
    },
    {
     "la": "Omnia vincit Amor.",
@@ -692,10 +758,22 @@
     "fonte": "Sl 117 (116),1"
    },
    {
+    "la": "Cave canem.",
+    "w": "Cave",
+    "exp": "Cave: imperativo de caveo: «guarda-te».",
+    "fonte": "Petrônio, Satíricon 29"
+   },
+   {
     "la": "Carpe diem.",
     "w": "Carpe",
     "exp": "Carpe: imperativo singular de carpo: «colhe», «aproveita».",
     "fonte": "Horácio, Odes I,11"
+   },
+   {
+    "la": "Festina lente.",
+    "w": "Festina",
+    "exp": "Festina: imperativo de festino: «apressa-te».",
+    "fonte": "Provérbio"
    },
    {
     "la": "Tolle, lege.",
@@ -821,10 +899,22 @@
     "fonte": "Jo 20,17"
    },
    {
+    "la": "Errare humanum est.",
+    "w": "Errare",
+    "exp": "Errare: infinitivo presente, o sujeito de est.",
+    "fonte": "Provérbio"
+   },
+   {
     "la": "Non amo te, Sabidi, nec possum dicere quare:",
     "w": "dicere",
     "exp": "dicere: infinitivo de dico, depois de possum.",
     "fonte": "Marcial I,32"
+   },
+   {
+    "la": "Sapere aude.",
+    "w": "Sapere",
+    "exp": "Sapere: infinitivo presente, o complemento de aude.",
+    "fonte": "Horácio, Epístolas I,2,40"
    },
    {
     "la": "hoc tantum possum dicere, non amo te.",
@@ -875,6 +965,12 @@
     "w": "Benedicta",
     "exp": "Benedicta: particípio de benedico, feminino: «bendita».",
     "fonte": "Ave-Maria"
+   },
+   {
+    "la": "Iacta alea est.",
+    "w": "Iacta",
+    "exp": "Iacta: particípio perfeito de iacio, concordando com alea; com est, o perfeito passivo.",
+    "fonte": "Suetônio, Vida de César 32"
    },
    {
     "la": "et benedictus fructus ventris tui, Iesus.",
@@ -930,6 +1026,12 @@
     "w": "sanctificetur",
     "exp": "sanctificetur: passiva (-tur): o nome é santificado, não santifica.",
     "fonte": "Pai-Nosso"
+   },
+   {
+    "la": "Iacta alea est.",
+    "w": "Iacta",
+    "exp": "Iacta est: a passiva do perfeito, «foi lançada».",
+    "fonte": "Suetônio, Vida de César 32"
    },
    {
     "la": "Consummatum est.",
