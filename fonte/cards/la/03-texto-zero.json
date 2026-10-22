@@ -1062,7 +1062,7 @@
   "tipo": "frase",
   "la": "Iacta alea est.",
   "pt": "A sorte está lançada.",
-  "gabarito": "[[[A sorte ~ A sorte já ~ O dado ~ O dado já] [está ~ foi] [lançada ~ lançado] ~ Os dados [estão ~ foram] lançados] ~ Lançado o dado está ~ A sorte foi jogada]",
+  "gabarito": "[[[[A sorte ~ A sorte já ~ O dado ~ O dado já] [está ~ foi] [lançada ~ lançado] ~ Os dados [estão ~ foram] lançados] ~ Lançado o dado está ~ A sorte foi jogada] ~ Está lançado o dado]",
   "aceitas": [],
   "distratores": [
    "Lancem a sorte.",
@@ -1781,7 +1781,7 @@
   "tipo": "frase",
   "la": "Si vis pacem, para bellum.",
   "pt": "Se queres a paz, prepara a guerra.",
-  "gabarito": "[[Se [tu ~] queres ~ Se [você ~] quer] [a ~] paz [prepara a ~ prepare a ~ prepara-te para a ~ prepare-se para a ~ te prepara para a ~ se prepare para a] guerra ~ Prepara a guerra se queres a paz ~ Se desejas a paz apronta a guerra]",
+  "gabarito": "[[[Se [tu ~] queres ~ Se [você ~] quer] [a ~] paz [prepara a ~ prepare a ~ prepara-te para a ~ prepare-se para a ~ te prepara para a ~ se prepare para a] guerra ~ Prepara a guerra se queres a paz ~ Se desejas a paz apronta a guerra] ~ Se desejas paz prepara a guerra]",
   "aceitas": [],
   "distratores": [
    "Se queres a guerra, prepara a paz.",
