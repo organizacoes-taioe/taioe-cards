@@ -49,7 +49,7 @@
   "tipo": "frase",
   "la": "Tempus fugit.",
   "pt": "O tempo foge.",
-  "gabarito": "O tempo [foge ~ passa ~ voa ~ escapa]",
+  "gabarito": "[O tempo [foge ~ passa ~ voa ~ escapa] ~ Foge o tempo]",
   "aceitas": [],
   "distratores": [
    "O tempo fugiu.",
@@ -87,7 +87,7 @@
   "tipo": "frase",
   "la": "Ars longa, vita brevis.",
   "pt": "A arte é longa, a vida é breve.",
-  "gabarito": "[A arte é [longa ~ demorada] [e ~] a vida [é ~] [breve ~ curta] ~ A vida é [breve ~ curta] [e ~] a arte [é ~] longa]",
+  "gabarito": "[[A arte é [longa ~ demorada] [e ~] a vida [é ~] [breve ~ curta] ~ A vida é [breve ~ curta] [e ~] a arte [é ~] longa] ~ Longa é a arte breve é a vida ~ A técnica é demorada a vida é curta]",
   "aceitas": [],
   "distratores": [
    "A arte é breve, a vida é longa.",
@@ -187,7 +187,7 @@
   "tipo": "frase",
   "la": "Cogito, ergo sum.",
   "pt": "Penso, logo existo.",
-  "gabarito": "[Eu ~] [penso ~ estou pensando] [logo ~ portanto ~ então ~ por isso] [eu ~] [existo ~ sou]",
+  "gabarito": "[[Eu ~] [penso ~ estou pensando] [logo ~ portanto ~ então ~ por isso] [eu ~] [existo ~ sou] ~ Penso por conseguinte existo]",
   "aceitas": [],
   "distratores": [
    "Pensei, logo existi.",
@@ -228,7 +228,7 @@
   "tipo": "frase",
   "la": "Dum spiro, spero.",
   "pt": "Enquanto respiro, espero.",
-  "gabarito": "Enquanto [eu ~] [respiro ~ estou respirando ~ vivo ~ estou vivo] [eu ~] [espero ~ tenho esperança]",
+  "gabarito": "[Enquanto [eu ~] [respiro ~ estou respirando ~ vivo ~ estou vivo] [eu ~] [espero ~ tenho esperança] ~ Enquanto eu respirar tenho esperança ~ Espero enquanto respiro]",
   "aceitas": [],
   "distratores": [
    "Enquanto respirava, esperava.",
@@ -332,7 +332,7 @@
   "tipo": "frase",
   "la": "Errare humanum est.",
   "pt": "Errar é humano.",
-  "gabarito": "[Errar é [humano ~ próprio do homem ~ coisa humana] ~ É humano errar ~ O erro é humano]",
+  "gabarito": "[[Errar é [humano ~ próprio do homem ~ coisa humana] ~ É humano errar ~ O erro é humano] ~ Enganar-se é próprio do homem ~ Errar é próprio do ser humano]",
   "aceitas": [],
   "distratores": [
    "Os humanos erram.",
@@ -511,7 +511,7 @@
   "tipo": "frase",
   "la": "Cave canem.",
   "pt": "Cuidado com o cão.",
-  "gabarito": "[Cuidado com o ~ Toma cuidado com o ~ Tome cuidado com o ~ Guarda-te do ~ Cuidado ao ~ Evita o] [cão ~ cachorro]",
+  "gabarito": "[[Cuidado com o ~ Toma cuidado com o ~ Tome cuidado com o ~ Guarda-te do ~ Cuidado ao ~ Evita o] [cão ~ cachorro] ~ Cuida-te do cão ~ Do cão toma cuidado]",
   "aceitas": [],
   "distratores": [
    "O cão tem cuidado.",
@@ -549,7 +549,7 @@
   "tipo": "frase",
   "la": "Festina lente.",
   "pt": "Apressa-te devagar.",
-  "gabarito": "[Apressa-te ~ Apresse-se ~ Te apressa ~ Se apresse ~ Corre ~ Corra ~ Vai depressa ~ Vá depressa] devagar",
+  "gabarito": "[[Apressa-te ~ Apresse-se ~ Te apressa ~ Se apresse ~ Corre ~ Corra ~ Vai depressa ~ Vá depressa] devagar ~ Vai com pressa mas devagar ~ Devagar apressa-te ~ Anda depressa lentamente]",
   "aceitas": [],
   "distratores": [
    "Apressou-se devagar.",
@@ -585,7 +585,7 @@
   "tipo": "frase",
   "la": "Sapere aude.",
   "pt": "Ousa saber.",
-  "gabarito": "[Ousa ~ Ouse ~ Atreve-te a ~ Atreva-se a ~ Tem a coragem de ~ Tenha a coragem de ~ Tem coragem de ~ Tenha coragem de] [saber ~ ser sábio ~ pensar ~ ter juízo]",
+  "gabarito": "[[Ousa ~ Ouse ~ Atreve-te a ~ Atreva-se a ~ Tem a coragem de ~ Tenha a coragem de ~ Tem coragem de ~ Tenha coragem de] [saber ~ ser sábio ~ pensar ~ ter juízo] ~ Saber ousa]",
   "aceitas": [],
   "distratores": [
    "Ousou saber.",
@@ -767,7 +767,7 @@
   "tipo": "frase",
   "la": "Gutta cavat lapidem.",
   "pt": "A gota cava a pedra.",
-  "gabarito": "A [gota ~ gota d'água] [cava ~ fura ~ escava ~ perfura ~ desgasta] a pedra",
+  "gabarito": "[A [gota ~ gota d'água] [cava ~ fura ~ escava ~ perfura ~ desgasta] a pedra ~ A pedra a gota a escava ~ A gota cava a rocha ~ A gota vai escavando a pedra]",
   "aceitas": [],
   "distratores": [
    "A pedra cava a gota.",
@@ -811,7 +811,7 @@
   "tipo": "frase",
   "la": "Audentes fortuna iuvat.",
   "pt": "A sorte ajuda os ousados.",
-  "gabarito": "[A [sorte ~ fortuna] [ajuda ~ favorece] os [ousados ~ audazes ~ corajosos ~ que ousam] ~ Os [ousados ~ audazes ~ corajosos ~ que ousam] [são ajudados ~ são favorecidos] pela [sorte ~ fortuna]]",
+  "gabarito": "[[A [sorte ~ fortuna] [ajuda ~ favorece] os [ousados ~ audazes ~ corajosos ~ que ousam] ~ Os [ousados ~ audazes ~ corajosos ~ que ousam] [são ajudados ~ são favorecidos] pela [sorte ~ fortuna]] ~ Aos ousados a sorte ajuda ~ Os audazes a fortuna os ajuda ~ A fortuna favorece os audaciosos ~ A sorte ajuda quem ousa]",
   "aceitas": [],
   "distratores": [
    "Os ousados ajudam a sorte.",
@@ -937,7 +937,7 @@
   "tipo": "frase",
   "la": "Panem et circenses.",
   "pt": "Pão e jogos do circo.",
-  "gabarito": "[O ~] pão e [os ~] [jogos do circo ~ jogos ~ circo ~ circos ~ espetáculos ~ espetáculos do circo]",
+  "gabarito": "[[O ~] pão e [os ~] [jogos do circo ~ jogos ~ circo ~ circos ~ espetáculos ~ espetáculos do circo] ~ Pão e jogos de circo ~ Jogos de circo e pão ~ Pão e espetáculos de circo ~ Pão e diversões do circo]",
   "aceitas": [],
   "distratores": [
    "O pão do circo.",
@@ -1062,7 +1062,7 @@
   "tipo": "frase",
   "la": "Iacta alea est.",
   "pt": "A sorte está lançada.",
-  "gabarito": "[[A sorte ~ A sorte já ~ O dado ~ O dado já] [está ~ foi] [lançada ~ lançado] ~ Os dados [estão ~ foram] lançados]",
+  "gabarito": "[[[A sorte ~ A sorte já ~ O dado ~ O dado já] [está ~ foi] [lançada ~ lançado] ~ Os dados [estão ~ foram] lançados] ~ Lançado o dado está ~ A sorte foi jogada]",
   "aceitas": [],
   "distratores": [
    "Lancem a sorte.",
@@ -1212,7 +1212,7 @@
   "tipo": "frase",
   "la": "Mater artium necessitas.",
   "pt": "A necessidade é a mãe das artes.",
-  "gabarito": "[A necessidade é a mãe das [artes ~ invenções ~ técnicas] ~ A mãe das [artes ~ invenções ~ técnicas] é a necessidade]",
+  "gabarito": "[[A necessidade é a mãe das [artes ~ invenções ~ técnicas] ~ A mãe das [artes ~ invenções ~ técnicas] é a necessidade] ~ Mãe das artes a necessidade]",
   "aceitas": [],
   "distratores": [
    "A necessidade é a mãe da arte.",
@@ -1296,7 +1296,7 @@
   "tipo": "frase",
   "la": "Vae victis!",
   "pt": "Ai dos vencidos!",
-  "gabarito": "[Ai dos ~ Ai aos ~ Pobres dos ~ Coitados dos ~ Ai dos que foram] [vencidos ~ derrotados]",
+  "gabarito": "[[Ai dos ~ Ai aos ~ Pobres dos ~ Coitados dos ~ Ai dos que foram] [vencidos ~ derrotados] ~ Dos vencidos ai ~ Desgraça aos vencidos ~ Ai de quem é vencido]",
   "aceitas": [],
   "distratores": [
    "Ai do vencido!",
@@ -1333,7 +1333,7 @@
   "tipo": "frase",
   "la": "Lupus est homo homini.",
   "pt": "O homem é o lobo do homem.",
-  "gabarito": "O homem é [um ~ o ~] lobo [do ~ para o ~ do próprio ~ para o próprio] homem",
+  "gabarito": "[O homem é [um ~ o ~] lobo [do ~ para o ~ do próprio ~ para o próprio] homem ~ Para o homem o homem é lobo ~ O ser humano é lobo para o ser humano ~ O homem é um lobo para outro homem]",
   "aceitas": [],
   "distratores": [
    "O lobo é o homem do homem.",
@@ -1434,7 +1434,7 @@
   "tipo": "frase",
   "la": "In vino veritas.",
   "pt": "No vinho está a verdade.",
-  "gabarito": "[No vinho [está ~ há ~ mora ~ se diz ~ se encontra ~] a verdade ~ A verdade está no vinho]",
+  "gabarito": "[[No vinho [está ~ há ~ mora ~ se diz ~ se encontra ~] a verdade ~ A verdade está no vinho] ~ No vinho se acha a verdade]",
   "aceitas": [],
   "distratores": [
    "A verdade do vinho.",
@@ -1584,7 +1584,7 @@
   "tipo": "frase",
   "la": "Ubi bene, ibi patria.",
   "pt": "Onde se está bem, aí está a pátria.",
-  "gabarito": "[Onde [se está ~ estou ~ eu estou ~ estamos ~ alguém está ~ se vive ~ há ~] bem [aí ~ ali ~ lá] [é ~ está ~ fica] [a ~ minha ~ a minha] pátria ~ A pátria é onde se está bem]",
+  "gabarito": "[[Onde [se está ~ estou ~ eu estou ~ estamos ~ alguém está ~ se vive ~ há ~] bem [aí ~ ali ~ lá] [é ~ está ~ fica] [a ~ minha ~ a minha] pátria ~ A pátria é onde se está bem] ~ Onde bem aí a pátria]",
   "aceitas": [],
   "distratores": [
    "Onde está a pátria, aí está o bem.",
@@ -1629,7 +1629,7 @@
   "tipo": "frase",
   "la": "Homines, dum docent, discunt.",
   "pt": "Os homens, enquanto ensinam, aprendem.",
-  "gabarito": "[[Os homens ~ As pessoas] enquanto ensinam aprendem ~ Enquanto ensinam [os homens ~ as pessoas] aprendem ~ [Os homens ~ As pessoas] aprendem enquanto ensinam ~ [Os homens ~ As pessoas] aprendem ensinando ~ Ensinando [os homens ~ as pessoas] aprendem]",
+  "gabarito": "[[[Os homens ~ As pessoas] enquanto ensinam aprendem ~ Enquanto ensinam [os homens ~ as pessoas] aprendem ~ [Os homens ~ As pessoas] aprendem enquanto ensinam ~ [Os homens ~ As pessoas] aprendem ensinando ~ Ensinando [os homens ~ as pessoas] aprendem] ~ Os homens ao ensinar aprendem ~ Os homens aprendem quando ensinam]",
   "aceitas": [],
   "distratores": [
    "O homem, enquanto ensina, aprende.",
@@ -1781,7 +1781,7 @@
   "tipo": "frase",
   "la": "Si vis pacem, para bellum.",
   "pt": "Se queres a paz, prepara a guerra.",
-  "gabarito": "[Se [tu ~] queres ~ Se [você ~] quer] [a ~] paz [prepara a ~ prepare a ~ prepara-te para a ~ prepare-se para a ~ te prepara para a ~ se prepare para a] guerra",
+  "gabarito": "[[Se [tu ~] queres ~ Se [você ~] quer] [a ~] paz [prepara a ~ prepare a ~ prepara-te para a ~ prepare-se para a ~ te prepara para a ~ se prepare para a] guerra ~ Prepara a guerra se queres a paz ~ Se desejas a paz apronta a guerra]",
   "aceitas": [],
   "distratores": [
    "Se queres a guerra, prepara a paz.",

@@ -5288,7 +5288,7 @@
    "tipo": "frase",
    "la": "Tempus fugit.",
    "pt": "O tempo foge.",
-   "gabarito": "O tempo [foge ~ passa ~ voa ~ escapa]",
+   "gabarito": "[O tempo [foge ~ passa ~ voa ~ escapa] ~ Foge o tempo]",
    "aceitas": [],
    "distratores": [
     "O tempo fugiu.",
@@ -5327,7 +5327,7 @@
    "tipo": "frase",
    "la": "Ars longa, vita brevis.",
    "pt": "A arte é longa, a vida é breve.",
-   "gabarito": "[A arte é [longa ~ demorada] [e ~] a vida [é ~] [breve ~ curta] ~ A vida é [breve ~ curta] [e ~] a arte [é ~] longa]",
+   "gabarito": "[[A arte é [longa ~ demorada] [e ~] a vida [é ~] [breve ~ curta] ~ A vida é [breve ~ curta] [e ~] a arte [é ~] longa] ~ Longa é a arte breve é a vida ~ A técnica é demorada a vida é curta]",
    "aceitas": [],
    "distratores": [
     "A arte é breve, a vida é longa.",
@@ -5429,7 +5429,7 @@
    "tipo": "frase",
    "la": "Cogito, ergo sum.",
    "pt": "Penso, logo existo.",
-   "gabarito": "[Eu ~] [penso ~ estou pensando] [logo ~ portanto ~ então ~ por isso] [eu ~] [existo ~ sou]",
+   "gabarito": "[[Eu ~] [penso ~ estou pensando] [logo ~ portanto ~ então ~ por isso] [eu ~] [existo ~ sou] ~ Penso por conseguinte existo]",
    "aceitas": [],
    "distratores": [
     "Pensei, logo existi.",
@@ -5471,7 +5471,7 @@
    "tipo": "frase",
    "la": "Dum spiro, spero.",
    "pt": "Enquanto respiro, espero.",
-   "gabarito": "Enquanto [eu ~] [respiro ~ estou respirando ~ vivo ~ estou vivo] [eu ~] [espero ~ tenho esperança]",
+   "gabarito": "[Enquanto [eu ~] [respiro ~ estou respirando ~ vivo ~ estou vivo] [eu ~] [espero ~ tenho esperança] ~ Enquanto eu respirar tenho esperança ~ Espero enquanto respiro]",
    "aceitas": [],
    "distratores": [
     "Enquanto respirava, esperava.",
@@ -5577,7 +5577,7 @@
    "tipo": "frase",
    "la": "Errare humanum est.",
    "pt": "Errar é humano.",
-   "gabarito": "[Errar é [humano ~ próprio do homem ~ coisa humana] ~ É humano errar ~ O erro é humano]",
+   "gabarito": "[[Errar é [humano ~ próprio do homem ~ coisa humana] ~ É humano errar ~ O erro é humano] ~ Enganar-se é próprio do homem ~ Errar é próprio do ser humano]",
    "aceitas": [],
    "distratores": [
     "Os humanos erram.",
@@ -5760,7 +5760,7 @@
    "tipo": "frase",
    "la": "Cave canem.",
    "pt": "Cuidado com o cão.",
-   "gabarito": "[Cuidado com o ~ Toma cuidado com o ~ Tome cuidado com o ~ Guarda-te do ~ Cuidado ao ~ Evita o] [cão ~ cachorro]",
+   "gabarito": "[[Cuidado com o ~ Toma cuidado com o ~ Tome cuidado com o ~ Guarda-te do ~ Cuidado ao ~ Evita o] [cão ~ cachorro] ~ Cuida-te do cão ~ Do cão toma cuidado]",
    "aceitas": [],
    "distratores": [
     "O cão tem cuidado.",
@@ -5799,7 +5799,7 @@
    "tipo": "frase",
    "la": "Festina lente.",
    "pt": "Apressa-te devagar.",
-   "gabarito": "[Apressa-te ~ Apresse-se ~ Te apressa ~ Se apresse ~ Corre ~ Corra ~ Vai depressa ~ Vá depressa] devagar",
+   "gabarito": "[[Apressa-te ~ Apresse-se ~ Te apressa ~ Se apresse ~ Corre ~ Corra ~ Vai depressa ~ Vá depressa] devagar ~ Vai com pressa mas devagar ~ Devagar apressa-te ~ Anda depressa lentamente]",
    "aceitas": [],
    "distratores": [
     "Apressou-se devagar.",
@@ -5836,7 +5836,7 @@
    "tipo": "frase",
    "la": "Sapere aude.",
    "pt": "Ousa saber.",
-   "gabarito": "[Ousa ~ Ouse ~ Atreve-te a ~ Atreva-se a ~ Tem a coragem de ~ Tenha a coragem de ~ Tem coragem de ~ Tenha coragem de] [saber ~ ser sábio ~ pensar ~ ter juízo]",
+   "gabarito": "[[Ousa ~ Ouse ~ Atreve-te a ~ Atreva-se a ~ Tem a coragem de ~ Tenha a coragem de ~ Tem coragem de ~ Tenha coragem de] [saber ~ ser sábio ~ pensar ~ ter juízo] ~ Saber ousa]",
    "aceitas": [],
    "distratores": [
     "Ousou saber.",
@@ -6022,7 +6022,7 @@
    "tipo": "frase",
    "la": "Gutta cavat lapidem.",
    "pt": "A gota cava a pedra.",
-   "gabarito": "A [gota ~ gota d'água] [cava ~ fura ~ escava ~ perfura ~ desgasta] a pedra",
+   "gabarito": "[A [gota ~ gota d'água] [cava ~ fura ~ escava ~ perfura ~ desgasta] a pedra ~ A pedra a gota a escava ~ A gota cava a rocha ~ A gota vai escavando a pedra]",
    "aceitas": [],
    "distratores": [
     "A pedra cava a gota.",
@@ -6067,7 +6067,7 @@
    "tipo": "frase",
    "la": "Audentes fortuna iuvat.",
    "pt": "A sorte ajuda os ousados.",
-   "gabarito": "[A [sorte ~ fortuna] [ajuda ~ favorece] os [ousados ~ audazes ~ corajosos ~ que ousam] ~ Os [ousados ~ audazes ~ corajosos ~ que ousam] [são ajudados ~ são favorecidos] pela [sorte ~ fortuna]]",
+   "gabarito": "[[A [sorte ~ fortuna] [ajuda ~ favorece] os [ousados ~ audazes ~ corajosos ~ que ousam] ~ Os [ousados ~ audazes ~ corajosos ~ que ousam] [são ajudados ~ são favorecidos] pela [sorte ~ fortuna]] ~ Aos ousados a sorte ajuda ~ Os audazes a fortuna os ajuda ~ A fortuna favorece os audaciosos ~ A sorte ajuda quem ousa]",
    "aceitas": [],
    "distratores": [
     "Os ousados ajudam a sorte.",
@@ -6196,7 +6196,7 @@
    "tipo": "frase",
    "la": "Panem et circenses.",
    "pt": "Pão e jogos do circo.",
-   "gabarito": "[O ~] pão e [os ~] [jogos do circo ~ jogos ~ circo ~ circos ~ espetáculos ~ espetáculos do circo]",
+   "gabarito": "[[O ~] pão e [os ~] [jogos do circo ~ jogos ~ circo ~ circos ~ espetáculos ~ espetáculos do circo] ~ Pão e jogos de circo ~ Jogos de circo e pão ~ Pão e espetáculos de circo ~ Pão e diversões do circo]",
    "aceitas": [],
    "distratores": [
     "O pão do circo.",
@@ -6324,7 +6324,7 @@
    "tipo": "frase",
    "la": "Iacta alea est.",
    "pt": "A sorte está lançada.",
-   "gabarito": "[[A sorte ~ A sorte já ~ O dado ~ O dado já] [está ~ foi] [lançada ~ lançado] ~ Os dados [estão ~ foram] lançados]",
+   "gabarito": "[[[A sorte ~ A sorte já ~ O dado ~ O dado já] [está ~ foi] [lançada ~ lançado] ~ Os dados [estão ~ foram] lançados] ~ Lançado o dado está ~ A sorte foi jogada]",
    "aceitas": [],
    "distratores": [
     "Lancem a sorte.",
@@ -6477,7 +6477,7 @@
    "tipo": "frase",
    "la": "Mater artium necessitas.",
    "pt": "A necessidade é a mãe das artes.",
-   "gabarito": "[A necessidade é a mãe das [artes ~ invenções ~ técnicas] ~ A mãe das [artes ~ invenções ~ técnicas] é a necessidade]",
+   "gabarito": "[[A necessidade é a mãe das [artes ~ invenções ~ técnicas] ~ A mãe das [artes ~ invenções ~ técnicas] é a necessidade] ~ Mãe das artes a necessidade]",
    "aceitas": [],
    "distratores": [
     "A necessidade é a mãe da arte.",
@@ -6563,7 +6563,7 @@
    "tipo": "frase",
    "la": "Vae victis!",
    "pt": "Ai dos vencidos!",
-   "gabarito": "[Ai dos ~ Ai aos ~ Pobres dos ~ Coitados dos ~ Ai dos que foram] [vencidos ~ derrotados]",
+   "gabarito": "[[Ai dos ~ Ai aos ~ Pobres dos ~ Coitados dos ~ Ai dos que foram] [vencidos ~ derrotados] ~ Dos vencidos ai ~ Desgraça aos vencidos ~ Ai de quem é vencido]",
    "aceitas": [],
    "distratores": [
     "Ai do vencido!",
@@ -6601,7 +6601,7 @@
    "tipo": "frase",
    "la": "Lupus est homo homini.",
    "pt": "O homem é o lobo do homem.",
-   "gabarito": "O homem é [um ~ o ~] lobo [do ~ para o ~ do próprio ~ para o próprio] homem",
+   "gabarito": "[O homem é [um ~ o ~] lobo [do ~ para o ~ do próprio ~ para o próprio] homem ~ Para o homem o homem é lobo ~ O ser humano é lobo para o ser humano ~ O homem é um lobo para outro homem]",
    "aceitas": [],
    "distratores": [
     "O lobo é o homem do homem.",
@@ -6704,7 +6704,7 @@
    "tipo": "frase",
    "la": "In vino veritas.",
    "pt": "No vinho está a verdade.",
-   "gabarito": "[No vinho [está ~ há ~ mora ~ se diz ~ se encontra ~] a verdade ~ A verdade está no vinho]",
+   "gabarito": "[[No vinho [está ~ há ~ mora ~ se diz ~ se encontra ~] a verdade ~ A verdade está no vinho] ~ No vinho se acha a verdade]",
    "aceitas": [],
    "distratores": [
     "A verdade do vinho.",
@@ -6857,7 +6857,7 @@
    "tipo": "frase",
    "la": "Ubi bene, ibi patria.",
    "pt": "Onde se está bem, aí está a pátria.",
-   "gabarito": "[Onde [se está ~ estou ~ eu estou ~ estamos ~ alguém está ~ se vive ~ há ~] bem [aí ~ ali ~ lá] [é ~ está ~ fica] [a ~ minha ~ a minha] pátria ~ A pátria é onde se está bem]",
+   "gabarito": "[[Onde [se está ~ estou ~ eu estou ~ estamos ~ alguém está ~ se vive ~ há ~] bem [aí ~ ali ~ lá] [é ~ está ~ fica] [a ~ minha ~ a minha] pátria ~ A pátria é onde se está bem] ~ Onde bem aí a pátria]",
    "aceitas": [],
    "distratores": [
     "Onde está a pátria, aí está o bem.",
@@ -6903,7 +6903,7 @@
    "tipo": "frase",
    "la": "Homines, dum docent, discunt.",
    "pt": "Os homens, enquanto ensinam, aprendem.",
-   "gabarito": "[[Os homens ~ As pessoas] enquanto ensinam aprendem ~ Enquanto ensinam [os homens ~ as pessoas] aprendem ~ [Os homens ~ As pessoas] aprendem enquanto ensinam ~ [Os homens ~ As pessoas] aprendem ensinando ~ Ensinando [os homens ~ as pessoas] aprendem]",
+   "gabarito": "[[[Os homens ~ As pessoas] enquanto ensinam aprendem ~ Enquanto ensinam [os homens ~ as pessoas] aprendem ~ [Os homens ~ As pessoas] aprendem enquanto ensinam ~ [Os homens ~ As pessoas] aprendem ensinando ~ Ensinando [os homens ~ as pessoas] aprendem] ~ Os homens ao ensinar aprendem ~ Os homens aprendem quando ensinam]",
    "aceitas": [],
    "distratores": [
     "O homem, enquanto ensina, aprende.",
@@ -7058,7 +7058,7 @@
    "tipo": "frase",
    "la": "Si vis pacem, para bellum.",
    "pt": "Se queres a paz, prepara a guerra.",
-   "gabarito": "[Se [tu ~] queres ~ Se [você ~] quer] [a ~] paz [prepara a ~ prepare a ~ prepara-te para a ~ prepare-se para a ~ te prepara para a ~ se prepare para a] guerra",
+   "gabarito": "[[Se [tu ~] queres ~ Se [você ~] quer] [a ~] paz [prepara a ~ prepare a ~ prepara-te para a ~ prepare-se para a ~ te prepara para a ~ se prepare para a] guerra ~ Prepara a guerra se queres a paz ~ Se desejas a paz apronta a guerra]",
    "aceitas": [],
    "distratores": [
     "Se queres a guerra, prepara a paz.",
@@ -20487,7 +20487,7 @@
    "tipo": "frase",
    "la": "Odi et amo. Quare id faciam, fortasse requiris.",
    "pt": "Odeio e amo. Por que faço isso, talvez perguntes.",
-   "gabarito": "[[Eu ~] odeio e amo [Por que ~ Por qual razão] [eu ~] faço isso [talvez ~ quem sabe] [tu ~ você ~] [perguntes ~ pergunte ~ perguntas ~ pergunta] ~ [Eu ~] odeio e amo [Talvez ~ Quem sabe] [tu ~ você ~] [perguntes ~ pergunte ~ perguntas ~ pergunta] por que [eu ~] faço isso]",
+   "gabarito": "[[[Eu ~] odeio e amo [Por que ~ Por qual razão] [eu ~] faço isso [talvez ~ quem sabe] [tu ~ você ~] [perguntes ~ pergunte ~ perguntas ~ pergunta] ~ [Eu ~] odeio e amo [Talvez ~ Quem sabe] [tu ~ você ~] [perguntes ~ pergunte ~ perguntas ~ pergunta] por que [eu ~] faço isso] ~ Odeio e amo Por que isso faço talvez perguntes ~ Odeio e amo Por que faço isso talvez você me pergunte ~ Amo e odeio Talvez perguntes por que o faço ~ Detesto e amo Por que motivo ajo assim quem sabe indagues]",
    "aceitas": [],
    "distratores": [
     "Odiei e amei. Por que fiz isso, talvez perguntes.",
@@ -20567,7 +20567,7 @@
    "tipo": "frase",
    "la": "Nescio, sed fieri sentio et excrucior.",
    "pt": "Não sei, mas sinto que acontece e me torturo.",
-   "gabarito": "[Eu ~] não sei mas [eu ~] sinto que [acontece ~ assim acontece ~ isso acontece ~ é assim ~ assim é ~ é o que acontece] e [me torturo ~ sou torturado ~ estou sendo torturado ~ me atormento ~ sou atormentado ~ sofro ~ me consumo]",
+   "gabarito": "[[Eu ~] não sei mas [eu ~] sinto que [acontece ~ assim acontece ~ isso acontece ~ é assim ~ assim é ~ é o que acontece] e [me torturo ~ sou torturado ~ estou sendo torturado ~ me atormento ~ sou atormentado ~ sofro ~ me consumo] ~ Não sei mas sinto acontecer e sou torturado ~ Não sei sinto porém que acontece e sofro tormento ~ Ignoro mas sinto que se dá e sou atormentado ~ Eu não sei mas sinto que isso acontece e sou crucificado]",
    "aceitas": [],
    "distratores": [
     "Não sabia, mas sentia que acontecia e me torturava.",
@@ -20635,7 +20635,7 @@
    "tipo": "frase",
    "la": "Regina caeli, laetare, alleluia.",
    "pt": "Rainha do céu, alegra-te, aleluia.",
-   "gabarito": "Rainha do céu [alegra-te ~ alegre-se ~ te alegra ~ se alegre ~ rejubila ~ exulta] [aleluia ~]",
+   "gabarito": "[Rainha do céu [alegra-te ~ alegre-se ~ te alegra ~ se alegre ~ rejubila ~ exulta] [aleluia ~] ~ Alegra-te Rainha do céu aleluia ~ Rainha dos céus rejubila aleluia]",
    "aceitas": [],
    "distratores": [
     "Rainha, o céu se alegra, aleluia.",
@@ -20692,7 +20692,7 @@
    "tipo": "frase",
    "la": "Quia quem meruisti portare, alleluia.",
    "pt": "Porque aquele que mereceste trazer, aleluia.",
-   "gabarito": "[Porque ~ Pois] [aquele que ~ o que ~ quem] [tu ~ você ~] [mereceste ~ mereceu] [trazer ~ carregar ~ levar ~ trazer no ventre ~ gerar] [aleluia ~]",
+   "gabarito": "[[Porque ~ Pois] [aquele que ~ o que ~ quem] [tu ~ você ~] [mereceste ~ mereceu] [trazer ~ carregar ~ levar ~ trazer no ventre ~ gerar] [aleluia ~] ~ Porque quem mereceste carregar em teu seio aleluia ~ Pois aquele que trazer mereceste aleluia ~ Visto que aquele que foste digna de levar aleluia]",
    "aceitas": [],
    "distratores": [
     "Porque aquele que mereces trazer, aleluia.",
@@ -20752,7 +20752,7 @@
    "tipo": "frase",
    "la": "Resurrexit, sicut dixit, alleluia.",
    "pt": "Ressuscitou, como disse, aleluia.",
-   "gabarito": "[Ele ~] [ressuscitou ~ ressurgiu] [como ~ conforme ~ assim como] [ele ~] [disse ~ tinha dito ~ havia dito] [aleluia ~]",
+   "gabarito": "[[Ele ~] [ressuscitou ~ ressurgiu] [como ~ conforme ~ assim como] [ele ~] [disse ~ tinha dito ~ havia dito] [aleluia ~] ~ Como disse ressuscitou aleluia ~ Ressurgiu conforme falou aleluia]",
    "aceitas": [],
    "distratores": [
     "Ressuscita, como diz, aleluia.",
@@ -20803,7 +20803,7 @@
    "tipo": "frase",
    "la": "Ora pro nobis Deum, alleluia.",
    "pt": "Roga a Deus por nós, aleluia.",
-   "gabarito": "[Roga ~ Rogue ~ Ora ~ Reza ~ Pede ~ Intercede] [a Deus por nós ~ por nós a Deus] [aleluia ~]",
+   "gabarito": "[[Roga ~ Rogue ~ Ora ~ Reza ~ Pede ~ Intercede] [a Deus por nós ~ por nós a Deus] [aleluia ~] ~ A Deus por nós roga aleluia ~ Suplica a Deus por nós aleluia]",
    "aceitas": [],
    "distratores": [
     "Rogai a Deus por nós, aleluia.",
@@ -20864,7 +20864,7 @@
    "tipo": "frase",
    "la": "Ad rivum eundem lupus et agnus venerant",
    "pt": "Ao mesmo riacho o lobo e o cordeiro tinham vindo,",
-   "gabarito": "[Ao mesmo [riacho ~ rio ~ regato ~ córrego] [o lobo e o cordeiro ~ um lobo e um cordeiro] [tinham ~ haviam] [vindo ~ chegado] ~ [O lobo e o cordeiro ~ Um lobo e um cordeiro] [tinham ~ haviam] [vindo ~ chegado] ao mesmo [riacho ~ rio ~ regato ~ córrego]]",
+   "gabarito": "[[Ao mesmo [riacho ~ rio ~ regato ~ córrego] [o lobo e o cordeiro ~ um lobo e um cordeiro] [tinham ~ haviam] [vindo ~ chegado] ~ [O lobo e o cordeiro ~ Um lobo e um cordeiro] [tinham ~ haviam] [vindo ~ chegado] ao mesmo [riacho ~ rio ~ regato ~ córrego]] ~ O lobo e o cordeiro ao mesmo riacho tinham vindo ~ Ao mesmo regato haviam chegado o lobo e o cordeiro]",
    "aceitas": [],
    "distratores": [
     "Ao mesmo riacho o lobo e o cordeiro vêm,",
@@ -20940,7 +20940,7 @@
    "tipo": "frase",
    "la": "Siti compulsi; superior stabat lupus",
    "pt": "impelidos pela sede; mais acima estava o lobo,",
-   "gabarito": "[impelidos ~ levados ~ movidos ~ empurrados ~ obrigados ~ forçados] pela sede [[mais acima ~ acima ~ mais alto ~ no alto ~ rio acima] [estava ~ ficava] o lobo ~ o lobo [estava ~ ficava] [mais acima ~ acima ~ mais alto ~ no alto ~ rio acima]]",
+   "gabarito": "[[impelidos ~ levados ~ movidos ~ empurrados ~ obrigados ~ forçados] pela sede [[mais acima ~ acima ~ mais alto ~ no alto ~ rio acima] [estava ~ ficava] o lobo ~ o lobo [estava ~ ficava] [mais acima ~ acima ~ mais alto ~ no alto ~ rio acima]] ~ pela sede impelidos mais acima estava o lobo ~ impelidos pela sede estava o lobo mais acima ~ forçados pela sede mais no alto ficava o lobo ~ movidos pela sede o lobo estava na parte de cima]",
    "aceitas": [],
    "distratores": [
     "impelidos pela sede; mais acima está o lobo,",
@@ -21007,7 +21007,7 @@
    "tipo": "frase",
    "la": "Longeque inferior agnus. Tunc fauce improba",
    "pt": "e muito mais abaixo o cordeiro. Então, com a goela insaciável,",
-   "gabarito": "e [muito mais ~ muito ~ bem mais] [abaixo ~ embaixo] [estava ~] o cordeiro [Então ~ Aí ~ Nisso] [com a ~ de] [goela ~ garganta ~ boca] [insaciável ~ voraz ~ perversa ~ faminta]",
+   "gabarito": "[e [muito mais ~ muito ~ bem mais] [abaixo ~ embaixo] [estava ~] o cordeiro [Então ~ Aí ~ Nisso] [com a ~ de] [goela ~ garganta ~ boca] [insaciável ~ voraz ~ perversa ~ faminta] ~ e muito mais abaixo o cordeiro Então pela goela ímproba ~ e o cordeiro bem mais abaixo Então pela goela insaciável ~ e muito mais embaixo o cordeiro Então pela fauce perversa ~ e bem mais para baixo o cordeiro Nessa hora pela garganta voraz ~ e o cordeiro estava muito mais abaixo Então pela goela gananciosa]",
    "aceitas": [],
    "distratores": [
     "e muito mais abaixo os cordeiros. Então, com a goela insaciável,",
@@ -21082,7 +21082,7 @@
    "tipo": "frase",
    "la": "Latro incitatus iurgii causam intulit.",
    "pt": "o ladrão, incitado, trouxe um motivo de briga.",
-   "gabarito": "[o ~] [ladrão ~ bandido ~ salteador] [incitado ~ instigado ~ estimulado] [trouxe ~ arranjou ~ inventou ~ provocou ~ levantou] [um motivo ~ um pretexto ~ uma causa ~ o motivo ~ o pretexto ~ a causa] de [briga ~ discussão ~ disputa]",
+   "gabarito": "[[o ~] [ladrão ~ bandido ~ salteador] [incitado ~ instigado ~ estimulado] [trouxe ~ arranjou ~ inventou ~ provocou ~ levantou] [um motivo ~ um pretexto ~ uma causa ~ o motivo ~ o pretexto ~ a causa] de [briga ~ discussão ~ disputa] ~ o ladrão incitado um motivo de briga apresentou ~ um pretexto de briga o ladrão incitado apresentou ~ o salteador atiçado trouxe um motivo de contenda ~ o ladrão incitado inventou um motivo para a briga]",
    "aceitas": [],
    "distratores": [
     "os ladrões, incitados, trouxeram um motivo de briga.",
@@ -21150,7 +21150,7 @@
    "tipo": "frase",
    "la": "Cur, inquit, turbulentam fecisti mihi",
    "pt": "«Por que», diz ele, «tornaste turva para mim",
-   "gabarito": "[Por que ~ Por quê] [diz ~ disse ~ ele diz ~ ele disse ~ diz o lobo ~ disse o lobo ~ pergunta ~ perguntou] [tornaste ~ deixaste ~ fizeste ~ você tornou ~ você deixou ~ você fez ~ tu tornaste ~ tu deixaste] turva [para mim ~ a mim]",
+   "gabarito": "[[Por que ~ Por quê] [diz ~ disse ~ ele diz ~ ele disse ~ diz o lobo ~ disse o lobo ~ pergunta ~ perguntou] [tornaste ~ deixaste ~ fizeste ~ você tornou ~ você deixou ~ você fez ~ tu tornaste ~ tu deixaste] turva [para mim ~ a mim] ~ Por que disse turva fizeste para mim ~ Por que disse ele tornaste turva para mim ~ Por que tornaste para mim disse turva ~ Por que razão falou deixaste turva para mim]",
    "aceitas": [],
    "distratores": [
     "«Por que», diz ele, «tornas turva para mim",
@@ -21214,7 +21214,7 @@
    "tipo": "frase",
    "la": "Aquam bibenti? Laniger contra timens:",
    "pt": "a água, enquanto bebo?» O lanígero, em resposta, temendo:",
-   "gabarito": "a água [enquanto [eu ~] bebo ~ quando [eu ~] bebo ~ que [eu ~] bebo ~ ao beber ~ a mim que bebo] [o ~] [lanígero ~ lanoso ~ cordeiro] [em resposta ~ por sua vez ~ respondendo ~ do outro lado ~ em troca] [temendo ~ com medo ~ temeroso ~ medroso ~ amedrontado]",
+   "gabarito": "[a água [enquanto [eu ~] bebo ~ quando [eu ~] bebo ~ que [eu ~] bebo ~ ao beber ~ a mim que bebo] [o ~] [lanígero ~ lanoso ~ cordeiro] [em resposta ~ por sua vez ~ respondendo ~ do outro lado ~ em troca] [temendo ~ com medo ~ temeroso ~ medroso ~ amedrontado] ~ a água que eu bebo Em resposta temendo o lanígero ~ a água a mim que estou bebendo O lanudo receoso do outro lado ~ a água quando bebo O lanígero com medo retrucou]",
    "aceitas": [],
    "distratores": [
     "as águas, enquanto bebo? O lanígero, em resposta, temendo:",
@@ -21280,7 +21280,7 @@
    "tipo": "frase",
    "la": "Qui possum, quaeso, facere, quod quereris, lupe?",
    "pt": "«Como posso, por favor, fazer aquilo de que te queixas, lobo?",
-   "gabarito": "[Como ~ De que modo ~ De que jeito] [eu ~] posso [por favor ~ eu te peço ~ te peço ~ pergunto] fazer [o que ~ aquilo de que ~ isso de que ~ aquilo que] [te queixas ~ você se queixa ~ tu te queixas ~ reclamas ~ você reclama ~ alegas ~ você alega] lobo",
+   "gabarito": "[[Como ~ De que modo ~ De que jeito] [eu ~] posso [por favor ~ eu te peço ~ te peço ~ pergunto] fazer [o que ~ aquilo de que ~ isso de que ~ aquilo que] [te queixas ~ você se queixa ~ tu te queixas ~ reclamas ~ você reclama ~ alegas ~ você alega] lobo ~ Como posso peço fazer o de que te queixas lobo ~ Como é que eu posso por favor fazer o que reclamas lobo ~ Como posso eu fazer pergunto aquilo de que te queixas lobo ~ De que modo posso rogo causar aquilo de que te lamentas lobo]",
    "aceitas": [],
    "distratores": [
     "«Como pude, por favor, fazer aquilo de que te queixas, lobo?",
@@ -21359,7 +21359,7 @@
    "tipo": "frase",
    "la": "A te decurrit ad meos haustus liquor.",
    "pt": "De ti desce a água até os meus goles.»",
-   "gabarito": "[[De ti ~ De você ~ Desde ti] [desce ~ corre ~ escorre ~ vem] [a água ~ o líquido] [até ~ para ~ até a ~ em direção a] [os meus goles ~ meus goles ~ onde eu bebo] ~ [A água ~ O líquido] [desce ~ corre ~ escorre ~ vem] de [ti ~ você] [até ~ para] [os meus goles ~ meus goles ~ onde eu bebo]]",
+   "gabarito": "[[[De ti ~ De você ~ Desde ti] [desce ~ corre ~ escorre ~ vem] [a água ~ o líquido] [até ~ para ~ até a ~ em direção a] [os meus goles ~ meus goles ~ onde eu bebo] ~ [A água ~ O líquido] [desce ~ corre ~ escorre ~ vem] de [ti ~ você] [até ~ para] [os meus goles ~ meus goles ~ onde eu bebo]] ~ De ti desce aos meus goles a água ~ De ti escorre o líquido para os meus tragos]",
    "aceitas": [],
    "distratores": [
     "Para ti desce a água dos meus goles.",
