@@ -7,11 +7,14 @@ de 3 a 10 palavras que trazem uma forma dele e cujas outras palavras a pessoa va
 zero (as primeiras frases, que todos estudam) e as do mesmo texto. Uma palavra a mais, sem card, é
 tolerada (ela viria com a tradução ao lado). Grava fonte/latim/cache/candidatos-uso.json, com as
 melhores primeiro: sem palavra a mais, com a palavra noutra forma que a dos textos, as mais curtas.
+Desde 22/10 (pedido do Gere: menos religioso) a lista de cada lema alterna clássico e Vulgata,
+começando pelo clássico, para que a escolha saia meio a meio.
 """
 
 import json
 import re
 import sys
+from itertools import zip_longest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -122,7 +125,7 @@ def main():
                     continue
                 forma = next(tok for tok, g in grupos if cid in g)
                 nova = latim.chave(forma) not in formas_vistas.get(cid, set())
-                cand[cid].append({'ref': r['ref'], 'texto': r['texto'], 'n': r['n'], 'forma': forma,
+                cand[cid].append({'fonte': r['fonte'], 'ref': r['ref'], 'texto': r['texto'], 'n': r['n'], 'forma': forma,
                                   'nova': nova, 'a_mais': fora + vazias})
     for cid, lista in cand.items():
         lista.sort(key=lambda x: (len(x['a_mais']), not x['nova'], abs(x['n'] - 5), x['ref']))
@@ -133,7 +136,12 @@ def main():
                 continue
             vistas.add(latim.chave(x['texto']))
             unicas.append(x)
-        cand[cid] = unicas[:maximo]
+        # alterna as duas bibliotecas, o clássico primeiro (meio a meio, pedido de 22/10)
+        de = {f: [x for x in unicas if x['fonte'] == f] for f in ('classicos', 'vulgata')}
+        alternadas = []
+        for par in zip_longest(de['classicos'], de['vulgata']):
+            alternadas.extend(x for x in par if x)
+        cand[cid] = alternadas[:maximo]
     SAIDA.write_text(json.dumps(cand, ensure_ascii=False, indent=1), encoding='utf-8', newline='\n')
     sem = [c['la'] for c in palavras if not cand[c['id']]]
     so_com_mais = [c['la'] for c in palavras if cand[c['id']] and cand[c['id']][0]['a_mais']]

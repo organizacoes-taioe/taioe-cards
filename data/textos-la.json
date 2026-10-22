@@ -1,7 +1,7 @@
 {
  "versao": 3,
  "idioma": "la",
- "total": 4,
+ "total": 7,
  "textos": [
   {
    "id": "oracoes/gloria-patri",
@@ -347,6 +347,528 @@
      ],
      "wiki": "https://en.wiktionary.org/wiki/amen#Latin",
      "g": "gramatical"
+    }
+   }
+  },
+  {
+   "id": "marcial/non-amo-te",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Non amo te",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/non-amo-te/",
+   "blocos": [
+    [
+     {
+      "t": "Non amo te, Sabidi, nec possum dicere quare:",
+      "p": [
+       [
+        "Non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amo",
+        "amo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "te",
+        "te"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Sabidi",
+        "sabidi"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "nec",
+        "nec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "possum",
+        "possum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dicere",
+        "dicere"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quare",
+        "quare"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p066",
+       "la-p037",
+       "la-p007",
+       "la-p120",
+       "la-p121",
+       "la-p122",
+       "la-p123"
+      ],
+      "card": "la-t020"
+     },
+     {
+      "t": "hoc tantum possum dicere, non amo te.",
+      "p": [
+       [
+        "hoc",
+        "hoc"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tantum",
+        "tantum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "possum",
+        "possum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dicere",
+        "dicere#2"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amo",
+        "amo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "te",
+        "te"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p124",
+       "la-p125",
+       "la-p121",
+       "la-p122",
+       "la-p066",
+       "la-p037",
+       "la-p007"
+      ],
+      "card": "la-t021"
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p066",
+    "la-p037",
+    "la-p007",
+    "la-p120",
+    "la-p121",
+    "la-p122",
+    "la-p123",
+    "la-p124",
+    "la-p125"
+   ],
+   "destinos": {
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "amo": {
+     "lema": "amo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
+     "card": "la-p037"
+    },
+    "te": {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "acusativo singular",
+     "funcao": "o objeto",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+     "card": "la-p007"
+    },
+    "sabidi": {
+     "lema": "Sabidius",
+     "classe": "nome próprio",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "def": [
+      "Sabídio, o homem a quem o epigrama se dirige."
+     ],
+     "g": "nome"
+    },
+    "nec": {
+     "lema": "nec",
+     "classe": "conjunção",
+     "funcao": "e não",
+     "wiki": "https://en.wiktionary.org/wiki/nec#Latin",
+     "card": "la-p120"
+    },
+    "possum": {
+     "lema": "possum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/possum#Latin",
+     "card": "la-p121"
+    },
+    "dicere": {
+     "lema": "dico",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "completa possum",
+     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
+     "card": "la-p122"
+    },
+    "quare": {
+     "lema": "quare",
+     "classe": "advérbio",
+     "funcao": "por quê",
+     "wiki": "https://en.wiktionary.org/wiki/quare#Latin",
+     "card": "la-p123"
+    },
+    "hoc": {
+     "lema": "hic",
+     "classe": "pronome",
+     "forma": "acusativo neutro singular",
+     "funcao": "o objeto de dicere: isto",
+     "wiki": "https://en.wiktionary.org/wiki/hic#Latin",
+     "card": "la-p124"
+    },
+    "tantum": {
+     "lema": "tantum",
+     "classe": "advérbio",
+     "funcao": "só",
+     "wiki": "https://en.wiktionary.org/wiki/tantum#Latin",
+     "card": "la-p125"
+    },
+    "dicere#2": {
+     "lema": "dico",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
+     "card": "la-p122"
+    }
+   }
+  },
+  {
+   "id": "catulo/odi-et-amo",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Odi et amo",
+   "autor": "Catulo",
+   "ano": null,
+   "biblioteca": "/biblioteca/catulo/odi-et-amo/",
+   "blocos": [
+    [
+     {
+      "t": "Odi et amo. Quare id faciam, fortasse requiris.",
+      "p": [
+       [
+        "Odi",
+        "odi"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amo",
+        "amo"
+       ],
+       [
+        ". ",
+        null
+       ],
+       [
+        "Quare",
+        "quare"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "id",
+        "id"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "faciam",
+        "faciam"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "fortasse",
+        "fortasse"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "requiris",
+        "requiris"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p164",
+       "la-p009",
+       "la-p037",
+       "la-p123",
+       "la-p171",
+       "la-p165",
+       "la-p166",
+       "la-p167"
+      ],
+      "card": "la-t022"
+     },
+     {
+      "t": "Nescio, sed fieri sentio et excrucior.",
+      "p": [
+       [
+        "Nescio",
+        "nescio"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "sed",
+        "sed"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fieri",
+        "fieri"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sentio",
+        "sentio"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "excrucior",
+        "excrucior"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p168",
+       "la-p107",
+       "la-p069",
+       "la-p169",
+       "la-p009",
+       "la-p170"
+      ],
+      "card": "la-t023"
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p164",
+    "la-p009",
+    "la-p037",
+    "la-p123",
+    "la-p171",
+    "la-p165",
+    "la-p166",
+    "la-p167",
+    "la-p168",
+    "la-p107",
+    "la-p069",
+    "la-p169",
+    "la-p170"
+   ],
+   "destinos": {
+    "odi": {
+     "lema": "odi",
+     "classe": "verbo",
+     "forma": "1ª pessoa do singular; forma de perfeito, sentido de presente",
+     "funcao": "odeio",
+     "wiki": "https://en.wiktionary.org/wiki/odi#Latin",
+     "card": "la-p164"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "amo": {
+     "lema": "amo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
+     "card": "la-p037"
+    },
+    "quare": {
+     "lema": "quare",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/quare#Latin",
+     "card": "la-p123"
+    },
+    "id": {
+     "lema": "is",
+     "classe": "pronome",
+     "forma": "acusativo neutro singular",
+     "funcao": "o objeto de faciam: isso",
+     "wiki": "https://en.wiktionary.org/wiki/is#Latin",
+     "card": "la-p171"
+    },
+    "faciam": {
+     "lema": "facio",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 1ª pessoa do singular",
+     "funcao": "na pergunta indireta, depois de quare",
+     "wiki": "https://en.wiktionary.org/wiki/facio#Latin",
+     "card": "la-p165"
+    },
+    "fortasse": {
+     "lema": "fortasse",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/fortasse#Latin",
+     "card": "la-p166"
+    },
+    "requiris": {
+     "lema": "requiro",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/requiro#Latin",
+     "card": "la-p167"
+    },
+    "nescio": {
+     "lema": "nescio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/nescio#Latin",
+     "card": "la-p168"
+    },
+    "sed": {
+     "lema": "sed",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/sed#Latin",
+     "card": "la-p107"
+    },
+    "fieri": {
+     "lema": "fio",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "acontecer: o que ele sente",
+     "wiki": "https://en.wiktionary.org/wiki/fio#Latin",
+     "card": "la-p069"
+    },
+    "sentio": {
+     "lema": "sentio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sentio#Latin",
+     "card": "la-p169"
+    },
+    "excrucior": {
+     "lema": "excrucio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular, voz passiva",
+     "funcao": "sou torturado",
+     "wiki": "https://en.wiktionary.org/wiki/excrucio#Latin",
+     "card": "la-p170"
     }
    }
   },
@@ -1877,148 +2399,45 @@
    }
   },
   {
-   "id": "marcial/non-amo-te",
+   "id": "oracoes/regina-caeli",
    "idioma": "la",
-   "tipo": "poema",
-   "titulo": "Non amo te",
-   "autor": "Marcial",
+   "tipo": "prosa",
+   "titulo": "Regina caeli",
+   "autor": "Orações",
    "ano": null,
-   "biblioteca": "/biblioteca/marcial/non-amo-te/",
+   "biblioteca": "/biblioteca/oracoes/regina-caeli/",
    "blocos": [
     [
      {
-      "t": "Non amo te, Sabidi, nec possum dicere quare:",
+      "t": "Regina caeli, laetare, alleluia.",
       "p": [
        [
-        "Non",
-        "non"
+        "Regina",
+        "regina"
        ],
        [
         " ",
         null
        ],
        [
-        "amo",
-        "amo"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "te",
-        "te"
+        "caeli",
+        "caeli"
        ],
        [
         ", ",
         null
        ],
        [
-        "Sabidi",
-        "sabidi"
+        "laetare",
+        "laetare"
        ],
        [
         ", ",
         null
        ],
        [
-        "nec",
-        "nec"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "possum",
-        "possum"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "dicere",
-        "dicere"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "quare",
-        "quare"
-       ],
-       [
-        ":",
-        null
-       ]
-      ],
-      "requer": [
-       "la-p066",
-       "la-p037",
-       "la-p007",
-       "la-p120",
-       "la-p121",
-       "la-p122",
-       "la-p123"
-      ],
-      "card": "la-t020"
-     },
-     {
-      "t": "hoc tantum possum dicere, non amo te.",
-      "p": [
-       [
-        "hoc",
-        "hoc"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "tantum",
-        "tantum"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "possum",
-        "possum"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "dicere",
-        "dicere#2"
-       ],
-       [
-        ", ",
-        null
-       ],
-       [
-        "non",
-        "non"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "amo",
-        "amo"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "te",
-        "te"
+        "alleluia",
+        "alleluia"
        ],
        [
         ".",
@@ -2026,67 +2445,1080 @@
        ]
       ],
       "requer": [
-       "la-p124",
-       "la-p125",
-       "la-p121",
-       "la-p122",
-       "la-p066",
-       "la-p037",
-       "la-p007"
+       "la-p172",
+       "la-p090",
+       "la-p173"
       ],
-      "card": "la-t021"
+      "card": "la-t024"
+     },
+     {
+      "t": "Quia quem meruisti portare, alleluia.",
+      "p": [
+       [
+        "Quia",
+        "quia"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quem",
+        "quem"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "meruisti",
+        "meruisti"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "portare",
+        "portare"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "alleluia",
+        "alleluia"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p174",
+       "la-p064",
+       "la-p175",
+       "la-p176"
+      ],
+      "card": "la-t025"
+     },
+     {
+      "t": "Resurrexit, sicut dixit, alleluia.",
+      "p": [
+       [
+        "Resurrexit",
+        "resurrexit"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "sicut",
+        "sicut"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dixit",
+        "dixit"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "alleluia",
+        "alleluia"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p177",
+       "la-p085",
+       "la-p122"
+      ],
+      "card": "la-t026"
+     },
+     {
+      "t": "Ora pro nobis Deum, alleluia.",
+      "p": [
+       [
+        "Ora",
+        "ora"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pro",
+        "pro"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nobis",
+        "nobis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Deum",
+        "deum"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "alleluia",
+        "alleluia"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p077",
+       "la-p078",
+       "la-p079",
+       "la-p001"
+      ],
+      "card": "la-t027"
      }
     ]
    ],
    "requerTodas": [
-    "la-p066",
-    "la-p037",
-    "la-p007",
-    "la-p120",
-    "la-p121",
+    "la-p172",
+    "la-p090",
+    "la-p173",
+    "la-p174",
+    "la-p064",
+    "la-p175",
+    "la-p176",
+    "la-p177",
+    "la-p085",
     "la-p122",
-    "la-p123",
-    "la-p124",
-    "la-p125"
+    "la-p077",
+    "la-p078",
+    "la-p079",
+    "la-p001"
    ],
    "destinos": {
-    "non": {
-     "lema": "non",
-     "classe": "advérbio",
-     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
-     "card": "la-p066"
-    },
-    "amo": {
-     "lema": "amo",
-     "classe": "verbo",
-     "forma": "presente do indicativo, 1ª pessoa do singular",
-     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
-     "card": "la-p037"
-    },
-    "te": {
-     "lema": "tu",
-     "classe": "pronome",
-     "forma": "acusativo singular",
-     "funcao": "o objeto",
-     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
-     "card": "la-p007"
-    },
-    "sabidi": {
-     "lema": "Sabidius",
-     "classe": "nome próprio",
+    "regina": {
+     "lema": "regina",
+     "classe": "substantivo feminino",
      "forma": "vocativo singular",
      "funcao": "a quem se fala",
-     "def": [
-      "Sabídio, o homem a quem o epigrama se dirige."
-     ],
-     "g": "nome"
+     "wiki": "https://en.wiktionary.org/wiki/regina#Latin",
+     "card": "la-p172"
     },
-    "nec": {
-     "lema": "nec",
+    "caeli": {
+     "lema": "caelum",
+     "classe": "substantivo neutro",
+     "forma": "genitivo singular",
+     "funcao": "de onde é rainha",
+     "wiki": "https://en.wiktionary.org/wiki/caelum#Latin",
+     "card": "la-p090"
+    },
+    "laetare": {
+     "lema": "laetor",
+     "classe": "verbo",
+     "forma": "imperativo presente, 2ª pessoa do singular",
+     "funcao": "depoente: alegra-te",
+     "wiki": "https://en.wiktionary.org/wiki/laetor#Latin",
+     "card": "la-p173"
+    },
+    "alleluia": {
+     "lema": "alleluia",
+     "classe": "interjeição",
+     "def": [
+      "Aleluia: louvai a Deus. Palavra hebraica de louvor, própria do tempo da Páscoa."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/alleluia#Latin",
+     "g": "gramatical"
+    },
+    "quia": {
+     "lema": "quia",
      "classe": "conjunção",
-     "funcao": "e não",
-     "wiki": "https://en.wiktionary.org/wiki/nec#Latin",
-     "card": "la-p120"
+     "wiki": "https://en.wiktionary.org/wiki/quia#Latin",
+     "card": "la-p174"
+    },
+    "quem": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "acusativo masculino singular",
+     "funcao": "aquele que: o objeto de portare",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "meruisti": {
+     "lema": "mereo",
+     "classe": "verbo",
+     "forma": "perfeito do indicativo, 2ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/mereo#Latin",
+     "card": "la-p175"
+    },
+    "portare": {
+     "lema": "porto",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "completa meruisti",
+     "wiki": "https://en.wiktionary.org/wiki/porto#Latin",
+     "card": "la-p176"
+    },
+    "resurrexit": {
+     "lema": "resurgo",
+     "classe": "verbo",
+     "forma": "perfeito do indicativo, 3ª pessoa do singular",
+     "funcao": "o sujeito é quem, da linha anterior",
+     "wiki": "https://en.wiktionary.org/wiki/resurgo#Latin",
+     "card": "la-p177"
+    },
+    "sicut": {
+     "lema": "sicut",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/sicut#Latin",
+     "card": "la-p085"
+    },
+    "dixit": {
+     "lema": "dico",
+     "classe": "verbo",
+     "forma": "perfeito do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
+     "card": "la-p122"
+    },
+    "ora": {
+     "lema": "oro",
+     "classe": "verbo",
+     "forma": "imperativo presente, 2ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/oro#Latin",
+     "card": "la-p077"
+    },
+    "pro": {
+     "lema": "pro",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/pro#Latin",
+     "card": "la-p078"
+    },
+    "nobis": {
+     "lema": "nos",
+     "classe": "pronome",
+     "forma": "ablativo plural",
+     "funcao": "por quem",
+     "wiki": "https://en.wiktionary.org/wiki/nos#Latin",
+     "card": "la-p079"
+    },
+    "deum": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo singular",
+     "funcao": "o objeto de ora: a quem se pede",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    }
+   }
+  },
+  {
+   "id": "fedro/lupus-et-agnus",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Lupus et agnus",
+   "autor": "Fedro",
+   "ano": null,
+   "biblioteca": "/biblioteca/fedro/lupus-et-agnus/",
+   "blocos": [
+    [
+     {
+      "t": "Ad rivum eundem lupus et agnus venerant",
+      "p": [
+       [
+        "Ad",
+        "ad"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "rivum",
+        "rivum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "eundem",
+        "eundem"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "lupus",
+        "lupus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "agnus",
+        "agnus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "venerant",
+        "venerant"
+       ]
+      ],
+      "requer": [
+       "la-p178",
+       "la-p179",
+       "la-p180",
+       "la-p153",
+       "la-p009",
+       "la-p181",
+       "la-p038"
+      ],
+      "card": "la-t028"
+     },
+     {
+      "t": "Siti compulsi; superior stabat lupus",
+      "p": [
+       [
+        "Siti",
+        "siti"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "compulsi",
+        "compulsi"
+       ],
+       [
+        "; ",
+        null
+       ],
+       [
+        "superior",
+        "superior"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "stabat",
+        "stabat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "lupus",
+        "lupus"
+       ]
+      ],
+      "requer": [
+       "la-p182",
+       "la-p183",
+       "la-p184",
+       "la-p185",
+       "la-p153"
+      ],
+      "card": "la-t029"
+     },
+     {
+      "t": "Longeque inferior agnus. Tunc fauce improba",
+      "p": [
+       [
+        "Longeque",
+        "longeque"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "inferior",
+        "inferior"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "agnus",
+        "agnus#2"
+       ],
+       [
+        ". ",
+        null
+       ],
+       [
+        "Tunc",
+        "tunc"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fauce",
+        "fauce"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "improba",
+        "improba"
+       ]
+      ],
+      "requer": [
+       "la-p186",
+       "la-p028",
+       "la-p187",
+       "la-p181",
+       "la-p188",
+       "la-p189",
+       "la-p190"
+      ],
+      "card": "la-t030"
+     },
+     {
+      "t": "Latro incitatus iurgii causam intulit.",
+      "p": [
+       [
+        "Latro",
+        "latro"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "incitatus",
+        "incitatus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "iurgii",
+        "iurgii"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "causam",
+        "causam"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "intulit",
+        "intulit"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p191",
+       "la-p192",
+       "la-p193",
+       "la-p194",
+       "la-p195"
+      ],
+      "card": "la-t031"
+     },
+     {
+      "t": "Cur, inquit, turbulentam fecisti mihi",
+      "p": [
+       [
+        "Cur",
+        "cur"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "inquit",
+        "inquit"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "turbulentam",
+        "turbulentam"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fecisti",
+        "fecisti"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mihi",
+        "mihi"
+       ]
+      ],
+      "requer": [
+       "la-p196",
+       "la-p197",
+       "la-p198",
+       "la-p165",
+       "la-p004"
+      ],
+      "card": "la-t032"
+     },
+     {
+      "t": "Aquam bibenti? Laniger contra timens:",
+      "p": [
+       [
+        "Aquam",
+        "aquam"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bibenti",
+        "bibenti"
+       ],
+       [
+        "? ",
+        null
+       ],
+       [
+        "Laniger",
+        "laniger"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "contra",
+        "contra"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "timens",
+        "timens"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p199",
+       "la-p200",
+       "la-p201",
+       "la-p202",
+       "la-p203"
+      ],
+      "card": "la-t033"
+     },
+     {
+      "t": "Qui possum, quaeso, facere, quod quereris, lupe?",
+      "p": [
+       [
+        "Qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "possum",
+        "possum"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "quaeso",
+        "quaeso"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "facere",
+        "facere"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "quod",
+        "quod"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quereris",
+        "quereris"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "lupe",
+        "lupe"
+       ],
+       [
+        "?",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p064",
+       "la-p121",
+       "la-p204",
+       "la-p165",
+       "la-p205",
+       "la-p153"
+      ],
+      "card": "la-t034"
+     },
+     {
+      "t": "A te decurrit ad meos haustus liquor.",
+      "p": [
+       [
+        "A",
+        "a"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "te",
+        "te"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "decurrit",
+        "decurrit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ad",
+        "ad"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "meos",
+        "meos"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "haustus",
+        "haustus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "liquor",
+        "liquor"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p108",
+       "la-p007",
+       "la-p206",
+       "la-p178",
+       "la-p013",
+       "la-p207",
+       "la-p208"
+      ],
+      "card": "la-t035"
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p178",
+    "la-p179",
+    "la-p180",
+    "la-p153",
+    "la-p009",
+    "la-p181",
+    "la-p038",
+    "la-p182",
+    "la-p183",
+    "la-p184",
+    "la-p185",
+    "la-p186",
+    "la-p028",
+    "la-p187",
+    "la-p188",
+    "la-p189",
+    "la-p190",
+    "la-p191",
+    "la-p192",
+    "la-p193",
+    "la-p194",
+    "la-p195",
+    "la-p196",
+    "la-p197",
+    "la-p198",
+    "la-p165",
+    "la-p004",
+    "la-p199",
+    "la-p200",
+    "la-p201",
+    "la-p202",
+    "la-p203",
+    "la-p064",
+    "la-p121",
+    "la-p204",
+    "la-p205",
+    "la-p108",
+    "la-p007",
+    "la-p206",
+    "la-p013",
+    "la-p207",
+    "la-p208"
+   ],
+   "destinos": {
+    "ad": {
+     "lema": "ad",
+     "classe": "preposição",
+     "forma": "preposição com acusativo",
+     "wiki": "https://en.wiktionary.org/wiki/ad#Latin",
+     "card": "la-p178"
+    },
+    "rivum": {
+     "lema": "rivus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo singular",
+     "funcao": "para onde",
+     "wiki": "https://en.wiktionary.org/wiki/rivus#Latin",
+     "card": "la-p179"
+    },
+    "eundem": {
+     "lema": "idem",
+     "classe": "pronome",
+     "forma": "acusativo masculino singular",
+     "funcao": "concorda com rivum: o mesmo",
+     "wiki": "https://en.wiktionary.org/wiki/idem#Latin",
+     "card": "la-p180"
+    },
+    "lupus": {
+     "lema": "lupus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "o sujeito",
+     "wiki": "https://en.wiktionary.org/wiki/lupus#Latin",
+     "card": "la-p153"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "agnus": {
+     "lema": "agnus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "o sujeito",
+     "wiki": "https://en.wiktionary.org/wiki/agnus#Latin",
+     "card": "la-p181"
+    },
+    "venerant": {
+     "lema": "venio",
+     "classe": "verbo",
+     "forma": "mais-que-perfeito do indicativo, 3ª pessoa do plural",
+     "wiki": "https://en.wiktionary.org/wiki/venio#Latin",
+     "card": "la-p038"
+    },
+    "siti": {
+     "lema": "sitis",
+     "classe": "substantivo feminino",
+     "forma": "ablativo singular",
+     "funcao": "a causa: pela sede",
+     "wiki": "https://en.wiktionary.org/wiki/sitis#Latin",
+     "card": "la-p182"
+    },
+    "compulsi": {
+     "lema": "compello",
+     "classe": "verbo",
+     "forma": "particípio perfeito, nominativo masculino plural",
+     "funcao": "os dois, impelidos",
+     "wiki": "https://en.wiktionary.org/wiki/compello#Latin",
+     "card": "la-p183"
+    },
+    "superior": {
+     "lema": "superior",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo: mais acima",
+     "wiki": "https://en.wiktionary.org/wiki/superior#Latin",
+     "card": "la-p184"
+    },
+    "stabat": {
+     "lema": "sto",
+     "classe": "verbo",
+     "forma": "imperfeito do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sto#Latin",
+     "card": "la-p185"
+    },
+    "longeque": {
+     "partes": [
+      {
+       "lema": "longe",
+       "classe": "advérbio",
+       "funcao": "com o comparativo: muito",
+       "wiki": "https://en.wiktionary.org/wiki/longe#Latin",
+       "card": "la-p186"
+      },
+      {
+       "lema": "-que",
+       "classe": "conjunção",
+       "wiki": "https://en.wiktionary.org/wiki/-que#Latin",
+       "card": "la-p028"
+      }
+     ]
+    },
+    "inferior": {
+     "lema": "inferior",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo: mais abaixo",
+     "wiki": "https://en.wiktionary.org/wiki/inferior#Latin",
+     "card": "la-p187"
+    },
+    "agnus#2": {
+     "lema": "agnus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "o sujeito, com stabat subentendido",
+     "wiki": "https://en.wiktionary.org/wiki/agnus#Latin",
+     "card": "la-p181"
+    },
+    "tunc": {
+     "lema": "tunc",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/tunc#Latin",
+     "card": "la-p188"
+    },
+    "fauce": {
+     "lema": "faux",
+     "classe": "substantivo feminino",
+     "forma": "ablativo singular",
+     "funcao": "o meio: com a goela",
+     "wiki": "https://en.wiktionary.org/wiki/faux#Latin",
+     "card": "la-p189"
+    },
+    "improba": {
+     "lema": "improbus",
+     "classe": "adjetivo",
+     "forma": "ablativo feminino singular",
+     "funcao": "concorda com fauce",
+     "wiki": "https://en.wiktionary.org/wiki/improbus#Latin",
+     "card": "la-p190"
+    },
+    "latro": {
+     "lema": "latro",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "o sujeito: o ladrão, isto é, o lobo",
+     "wiki": "https://en.wiktionary.org/wiki/latro#Latin",
+     "card": "la-p191"
+    },
+    "incitatus": {
+     "lema": "incito",
+     "classe": "verbo",
+     "forma": "particípio perfeito, nominativo masculino singular",
+     "funcao": "concorda com latro",
+     "wiki": "https://en.wiktionary.org/wiki/incito#Latin",
+     "card": "la-p192"
+    },
+    "iurgii": {
+     "lema": "iurgium",
+     "classe": "substantivo neutro",
+     "forma": "genitivo singular",
+     "funcao": "de briga",
+     "wiki": "https://en.wiktionary.org/wiki/iurgium#Latin",
+     "card": "la-p193"
+    },
+    "causam": {
+     "lema": "causa",
+     "classe": "substantivo feminino",
+     "forma": "acusativo singular",
+     "funcao": "o objeto direto",
+     "wiki": "https://en.wiktionary.org/wiki/causa#Latin",
+     "card": "la-p194"
+    },
+    "intulit": {
+     "lema": "infero",
+     "classe": "verbo",
+     "forma": "perfeito do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/infero#Latin",
+     "card": "la-p195"
+    },
+    "cur": {
+     "lema": "cur",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/cur#Latin",
+     "card": "la-p196"
+    },
+    "inquit": {
+     "lema": "inquam",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "diz o lobo",
+     "wiki": "https://en.wiktionary.org/wiki/inquam#Latin",
+     "card": "la-p197"
+    },
+    "turbulentam": {
+     "lema": "turbulentus",
+     "classe": "adjetivo",
+     "forma": "acusativo feminino singular",
+     "funcao": "predicativo de aquam, na linha seguinte: turva",
+     "wiki": "https://en.wiktionary.org/wiki/turbulentus#Latin",
+     "card": "la-p198"
+    },
+    "fecisti": {
+     "lema": "facio",
+     "classe": "verbo",
+     "forma": "perfeito do indicativo, 2ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/facio#Latin",
+     "card": "la-p165"
+    },
+    "mihi": {
+     "lema": "ego",
+     "classe": "pronome",
+     "forma": "dativo",
+     "funcao": "para mim",
+     "wiki": "https://en.wiktionary.org/wiki/ego#Latin",
+     "card": "la-p004"
+    },
+    "aquam": {
+     "lema": "aqua",
+     "classe": "substantivo feminino",
+     "forma": "acusativo singular",
+     "funcao": "o objeto de fecisti",
+     "wiki": "https://en.wiktionary.org/wiki/aqua#Latin",
+     "card": "la-p199"
+    },
+    "bibenti": {
+     "lema": "bibo",
+     "classe": "verbo",
+     "forma": "particípio presente, dativo masculino singular",
+     "funcao": "concorda com mihi: a mim, que bebo",
+     "wiki": "https://en.wiktionary.org/wiki/bibo#Latin",
+     "card": "la-p200"
+    },
+    "laniger": {
+     "lema": "laniger",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "o sujeito: o que tem lã, o cordeiro",
+     "wiki": "https://en.wiktionary.org/wiki/laniger#Latin",
+     "card": "la-p201"
+    },
+    "contra": {
+     "lema": "contra",
+     "classe": "preposição",
+     "funcao": "advérbio: em resposta",
+     "wiki": "https://en.wiktionary.org/wiki/contra#Latin",
+     "card": "la-p202"
+    },
+    "timens": {
+     "lema": "timeo",
+     "classe": "verbo",
+     "forma": "particípio presente, nominativo masculino singular",
+     "funcao": "temendo",
+     "wiki": "https://en.wiktionary.org/wiki/timeo#Latin",
+     "card": "la-p203"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "funcao": "advérbio, a forma antiga do ablativo: como?",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
     },
     "possum": {
      "lema": "possum",
@@ -2095,42 +3527,91 @@
      "wiki": "https://en.wiktionary.org/wiki/possum#Latin",
      "card": "la-p121"
     },
-    "dicere": {
-     "lema": "dico",
+    "quaeso": {
+     "lema": "quaeso",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "funcao": "por favor",
+     "wiki": "https://en.wiktionary.org/wiki/quaeso#Latin",
+     "card": "la-p204"
+    },
+    "facere": {
+     "lema": "facio",
      "classe": "verbo",
      "forma": "infinitivo presente",
      "funcao": "completa possum",
-     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
-     "card": "la-p122"
+     "wiki": "https://en.wiktionary.org/wiki/facio#Latin",
+     "card": "la-p165"
     },
-    "quare": {
-     "lema": "quare",
-     "classe": "advérbio",
-     "funcao": "por quê",
-     "wiki": "https://en.wiktionary.org/wiki/quare#Latin",
-     "card": "la-p123"
-    },
-    "hoc": {
-     "lema": "hic",
+    "quod": {
+     "lema": "qui",
      "classe": "pronome",
      "forma": "acusativo neutro singular",
-     "funcao": "o objeto de dicere: isto",
-     "wiki": "https://en.wiktionary.org/wiki/hic#Latin",
-     "card": "la-p124"
+     "funcao": "aquilo que: o objeto de facere",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
     },
-    "tantum": {
-     "lema": "tantum",
-     "classe": "advérbio",
-     "funcao": "só",
-     "wiki": "https://en.wiktionary.org/wiki/tantum#Latin",
-     "card": "la-p125"
-    },
-    "dicere#2": {
-     "lema": "dico",
+    "quereris": {
+     "lema": "queror",
      "classe": "verbo",
-     "forma": "infinitivo presente",
-     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
-     "card": "la-p122"
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "depoente: te queixas",
+     "wiki": "https://en.wiktionary.org/wiki/queror#Latin",
+     "card": "la-p205"
+    },
+    "lupe": {
+     "lema": "lupus",
+     "classe": "substantivo masculino",
+     "forma": "vocativo singular",
+     "funcao": "a quem o cordeiro fala",
+     "wiki": "https://en.wiktionary.org/wiki/lupus#Latin",
+     "card": "la-p153"
+    },
+    "a": {
+     "lema": "ab",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/ab#Latin",
+     "card": "la-p108"
+    },
+    "te": {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "ablativo singular",
+     "funcao": "de onde",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+     "card": "la-p007"
+    },
+    "decurrit": {
+     "lema": "decurro",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/decurro#Latin",
+     "card": "la-p206"
+    },
+    "meos": {
+     "lema": "meus",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino plural",
+     "funcao": "concorda com haustus",
+     "wiki": "https://en.wiktionary.org/wiki/meus#Latin",
+     "card": "la-p013"
+    },
+    "haustus": {
+     "lema": "haustus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo plural",
+     "funcao": "para onde",
+     "wiki": "https://en.wiktionary.org/wiki/haustus#Latin",
+     "card": "la-p207"
+    },
+    "liquor": {
+     "lema": "liquor",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "o sujeito",
+     "wiki": "https://en.wiktionary.org/wiki/liquor#Latin",
+     "card": "la-p208"
     }
    }
   }

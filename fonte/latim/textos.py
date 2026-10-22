@@ -20,16 +20,26 @@ AQUI = Path(__file__).resolve().parent
 BARALHO = AQUI.parent / 'cards' / 'la'
 DESTINO = AQUI.parent / 'textos' / 'la'
 
+# «ordem» é a da tela Textos: as orações e os clássicos intercalados (pedido de 22/10: menos
+# religioso), do mais curto ao mais difícil
 TEXTOS = {
     'oracoes/gloria-patri': {'titulo': 'Gloria Patri', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 1},
-    'oracoes/pater-noster': {'titulo': 'Pater Noster', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 2},
-    'oracoes/ave-maria': {'titulo': 'Ave Maria', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 3},
-    'marcial/non-amo-te': {'titulo': 'Non amo te', 'autor': 'Marcial', 'tipo': 'poema', 'ordem': 4,
+    'oracoes/pater-noster': {'titulo': 'Pater Noster', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 4},
+    'oracoes/ave-maria': {'titulo': 'Ave Maria', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 5},
+    'marcial/non-amo-te': {'titulo': 'Non amo te', 'autor': 'Marcial', 'tipo': 'poema', 'ordem': 2,
                            'fonte': 'Epigramas, livro I, 32'},
+    'oracoes/regina-caeli': {'titulo': 'Regina caeli', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 6},
+    'catulo/odi-et-amo': {'titulo': 'Odi et amo', 'autor': 'Catulo', 'tipo': 'poema', 'ordem': 3,
+                          'fonte': 'Poemas, 85'},
+    'fedro/lupus-et-agnus': {'titulo': 'Lupus et agnus', 'autor': 'Fedro', 'tipo': 'poema', 'ordem': 7,
+                             'fonte': 'Fábulas, livro I, 1 (os oito primeiros versos)'},
 }
 
-# o que não tem card: nomes próprios e «amen»
+# o que não tem card: nomes próprios, «amen» e «alleluia»
 SEM_CARD = {
+    'alleluia': {'lema': 'alleluia', 'classe': 'interjeição', 'g': 'gramatical',
+                 'def': ['Aleluia: louvai a Deus. Palavra hebraica de louvor, própria do tempo da Páscoa.'],
+                 'wiki': 'https://en.wiktionary.org/wiki/alleluia#Latin'},
     'amen': {'lema': 'amen', 'classe': 'interjeição', 'g': 'gramatical',
              'def': ['Amém: assim seja. Palavra hebraica que fecha a oração.'],
              'wiki': 'https://en.wiktionary.org/wiki/amen#Latin'},
@@ -94,7 +104,8 @@ def linha_de(trecho, cards, destinos):
         if not fila:
             raise SystemExit(f"{trecho['id']}: sobrou «{w}» sem anotação")
         partes = [fila.pop(0)]
-        while partes[0]['w'].lower() != w.lower() and ''.join(x['w'] for x in partes).lower() != w.lower():
+        # a enclítica vem anotada à parte, com hífen: Longeque = Longe + -que
+        while partes[0]['w'].lower() != w.lower() and ''.join(x['w'].lstrip('-') for x in partes).lower() != w.lower():
             if not fila or len(partes) > 2:
                 raise SystemExit(f"{trecho['id']}: «{w}» não bate com a anotação")
             partes.append(fila.pop(0))

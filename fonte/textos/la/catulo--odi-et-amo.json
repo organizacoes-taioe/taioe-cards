@@ -1,0 +1,233 @@
+{
+ "id": "catulo/odi-et-amo",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Odi et amo",
+ "autor": "Catulo",
+ "ano": null,
+ "biblioteca": "/biblioteca/catulo/odi-et-amo/",
+ "ordem": 3,
+ "fonte": "Poemas, 85",
+ "blocos": [
+  [
+   {
+    "t": "Odi et amo. Quare id faciam, fortasse requiris.",
+    "p": [
+     [
+      "Odi",
+      "odi"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "amo",
+      "amo"
+     ],
+     [
+      ". ",
+      null
+     ],
+     [
+      "Quare",
+      "quare"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "id",
+      "id"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "faciam",
+      "faciam"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "fortasse",
+      "fortasse"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "requiris",
+      "requiris"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t022"
+   },
+   {
+    "t": "Nescio, sed fieri sentio et excrucior.",
+    "p": [
+     [
+      "Nescio",
+      "nescio"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "sed",
+      "sed"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "fieri",
+      "fieri"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sentio",
+      "sentio"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "excrucior",
+      "excrucior"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t023"
+   }
+  ]
+ ],
+ "destinos": {
+  "odi": {
+   "lema": "odi",
+   "classe": "verbo",
+   "forma": "1ª pessoa do singular; forma de perfeito, sentido de presente",
+   "funcao": "odeio",
+   "card": "la-p164",
+   "wiki": "https://en.wiktionary.org/wiki/odi#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "amo": {
+   "lema": "amo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "card": "la-p037",
+   "wiki": "https://en.wiktionary.org/wiki/amo#Latin"
+  },
+  "quare": {
+   "lema": "quare",
+   "classe": "advérbio",
+   "card": "la-p123",
+   "wiki": "https://en.wiktionary.org/wiki/quare#Latin"
+  },
+  "id": {
+   "lema": "is",
+   "classe": "pronome",
+   "forma": "acusativo neutro singular",
+   "funcao": "o objeto de faciam: isso",
+   "card": "la-p171",
+   "wiki": "https://en.wiktionary.org/wiki/is#Latin"
+  },
+  "faciam": {
+   "lema": "facio",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 1ª pessoa do singular",
+   "funcao": "na pergunta indireta, depois de quare",
+   "card": "la-p165",
+   "wiki": "https://en.wiktionary.org/wiki/facio#Latin"
+  },
+  "fortasse": {
+   "lema": "fortasse",
+   "classe": "advérbio",
+   "card": "la-p166",
+   "wiki": "https://en.wiktionary.org/wiki/fortasse#Latin"
+  },
+  "requiris": {
+   "lema": "requiro",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "card": "la-p167",
+   "wiki": "https://en.wiktionary.org/wiki/requiro#Latin"
+  },
+  "nescio": {
+   "lema": "nescio",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "card": "la-p168",
+   "wiki": "https://en.wiktionary.org/wiki/nescio#Latin"
+  },
+  "sed": {
+   "lema": "sed",
+   "classe": "conjunção",
+   "card": "la-p107",
+   "wiki": "https://en.wiktionary.org/wiki/sed#Latin"
+  },
+  "fieri": {
+   "lema": "fio",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "acontecer: o que ele sente",
+   "card": "la-p069",
+   "wiki": "https://en.wiktionary.org/wiki/fio#Latin"
+  },
+  "sentio": {
+   "lema": "sentio",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "card": "la-p169",
+   "wiki": "https://en.wiktionary.org/wiki/sentio#Latin"
+  },
+  "excrucior": {
+   "lema": "excrucio",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular, voz passiva",
+   "funcao": "sou torturado",
+   "card": "la-p170",
+   "wiki": "https://en.wiktionary.org/wiki/excrucio#Latin"
+  }
+ }
+}
