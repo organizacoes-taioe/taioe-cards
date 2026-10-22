@@ -11,3 +11,7 @@ fonte/frequencia/brutos/
 fonte/latim/corpus/
 fonte/latim/cache/
 __pycache__/
+
+# Syncthing: o arquivo temporário da cópia e a cópia de conflito nunca vão para o git
+.syncthing.*.tmp
+*.sync-conflict-*
