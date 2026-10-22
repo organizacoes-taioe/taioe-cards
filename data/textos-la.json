@@ -351,6 +351,528 @@
    }
   },
   {
+   "id": "marcial/non-amo-te",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Non amo te",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/non-amo-te/",
+   "blocos": [
+    [
+     {
+      "t": "Non amo te, Sabidi, nec possum dicere quare:",
+      "p": [
+       [
+        "Non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amo",
+        "amo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "te",
+        "te"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Sabidi",
+        "sabidi"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "nec",
+        "nec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "possum",
+        "possum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dicere",
+        "dicere"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quare",
+        "quare"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p066",
+       "la-p037",
+       "la-p007",
+       "la-p120",
+       "la-p121",
+       "la-p122",
+       "la-p123"
+      ],
+      "card": "la-t020"
+     },
+     {
+      "t": "hoc tantum possum dicere, non amo te.",
+      "p": [
+       [
+        "hoc",
+        "hoc"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tantum",
+        "tantum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "possum",
+        "possum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dicere",
+        "dicere#2"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amo",
+        "amo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "te",
+        "te"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p124",
+       "la-p125",
+       "la-p121",
+       "la-p122",
+       "la-p066",
+       "la-p037",
+       "la-p007"
+      ],
+      "card": "la-t021"
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p066",
+    "la-p037",
+    "la-p007",
+    "la-p120",
+    "la-p121",
+    "la-p122",
+    "la-p123",
+    "la-p124",
+    "la-p125"
+   ],
+   "destinos": {
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "amo": {
+     "lema": "amo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
+     "card": "la-p037"
+    },
+    "te": {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "acusativo singular",
+     "funcao": "o objeto",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+     "card": "la-p007"
+    },
+    "sabidi": {
+     "lema": "Sabidius",
+     "classe": "nome próprio",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "def": [
+      "Sabídio, o homem a quem o epigrama se dirige."
+     ],
+     "g": "nome"
+    },
+    "nec": {
+     "lema": "nec",
+     "classe": "conjunção",
+     "funcao": "e não",
+     "wiki": "https://en.wiktionary.org/wiki/nec#Latin",
+     "card": "la-p120"
+    },
+    "possum": {
+     "lema": "possum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/possum#Latin",
+     "card": "la-p121"
+    },
+    "dicere": {
+     "lema": "dico",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "completa possum",
+     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
+     "card": "la-p122"
+    },
+    "quare": {
+     "lema": "quare",
+     "classe": "advérbio",
+     "funcao": "por quê",
+     "wiki": "https://en.wiktionary.org/wiki/quare#Latin",
+     "card": "la-p123"
+    },
+    "hoc": {
+     "lema": "hic",
+     "classe": "pronome",
+     "forma": "acusativo neutro singular",
+     "funcao": "o objeto de dicere: isto",
+     "wiki": "https://en.wiktionary.org/wiki/hic#Latin",
+     "card": "la-p124"
+    },
+    "tantum": {
+     "lema": "tantum",
+     "classe": "advérbio",
+     "funcao": "só",
+     "wiki": "https://en.wiktionary.org/wiki/tantum#Latin",
+     "card": "la-p125"
+    },
+    "dicere#2": {
+     "lema": "dico",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
+     "card": "la-p122"
+    }
+   }
+  },
+  {
+   "id": "catulo/odi-et-amo",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Odi et amo",
+   "autor": "Catulo",
+   "ano": null,
+   "biblioteca": "/biblioteca/catulo/odi-et-amo/",
+   "blocos": [
+    [
+     {
+      "t": "Odi et amo. Quare id faciam, fortasse requiris.",
+      "p": [
+       [
+        "Odi",
+        "odi"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amo",
+        "amo"
+       ],
+       [
+        ". ",
+        null
+       ],
+       [
+        "Quare",
+        "quare"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "id",
+        "id"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "faciam",
+        "faciam"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "fortasse",
+        "fortasse"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "requiris",
+        "requiris"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p164",
+       "la-p009",
+       "la-p037",
+       "la-p123",
+       "la-p171",
+       "la-p165",
+       "la-p166",
+       "la-p167"
+      ],
+      "card": "la-t022"
+     },
+     {
+      "t": "Nescio, sed fieri sentio et excrucior.",
+      "p": [
+       [
+        "Nescio",
+        "nescio"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "sed",
+        "sed"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fieri",
+        "fieri"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sentio",
+        "sentio"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "excrucior",
+        "excrucior"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p168",
+       "la-p107",
+       "la-p069",
+       "la-p169",
+       "la-p009",
+       "la-p170"
+      ],
+      "card": "la-t023"
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p164",
+    "la-p009",
+    "la-p037",
+    "la-p123",
+    "la-p171",
+    "la-p165",
+    "la-p166",
+    "la-p167",
+    "la-p168",
+    "la-p107",
+    "la-p069",
+    "la-p169",
+    "la-p170"
+   ],
+   "destinos": {
+    "odi": {
+     "lema": "odi",
+     "classe": "verbo",
+     "forma": "1ª pessoa do singular; forma de perfeito, sentido de presente",
+     "funcao": "odeio",
+     "wiki": "https://en.wiktionary.org/wiki/odi#Latin",
+     "card": "la-p164"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "amo": {
+     "lema": "amo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
+     "card": "la-p037"
+    },
+    "quare": {
+     "lema": "quare",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/quare#Latin",
+     "card": "la-p123"
+    },
+    "id": {
+     "lema": "is",
+     "classe": "pronome",
+     "forma": "acusativo neutro singular",
+     "funcao": "o objeto de faciam: isso",
+     "wiki": "https://en.wiktionary.org/wiki/is#Latin",
+     "card": "la-p171"
+    },
+    "faciam": {
+     "lema": "facio",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 1ª pessoa do singular",
+     "funcao": "na pergunta indireta, depois de quare",
+     "wiki": "https://en.wiktionary.org/wiki/facio#Latin",
+     "card": "la-p165"
+    },
+    "fortasse": {
+     "lema": "fortasse",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/fortasse#Latin",
+     "card": "la-p166"
+    },
+    "requiris": {
+     "lema": "requiro",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/requiro#Latin",
+     "card": "la-p167"
+    },
+    "nescio": {
+     "lema": "nescio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/nescio#Latin",
+     "card": "la-p168"
+    },
+    "sed": {
+     "lema": "sed",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/sed#Latin",
+     "card": "la-p107"
+    },
+    "fieri": {
+     "lema": "fio",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "acontecer: o que ele sente",
+     "wiki": "https://en.wiktionary.org/wiki/fio#Latin",
+     "card": "la-p069"
+    },
+    "sentio": {
+     "lema": "sentio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sentio#Latin",
+     "card": "la-p169"
+    },
+    "excrucior": {
+     "lema": "excrucio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular, voz passiva",
+     "funcao": "sou torturado",
+     "wiki": "https://en.wiktionary.org/wiki/excrucio#Latin",
+     "card": "la-p170"
+    }
+   }
+  },
+  {
    "id": "oracoes/pater-noster",
    "idioma": "la",
    "tipo": "prosa",
@@ -1877,264 +2399,6 @@
    }
   },
   {
-   "id": "marcial/non-amo-te",
-   "idioma": "la",
-   "tipo": "poema",
-   "titulo": "Non amo te",
-   "autor": "Marcial",
-   "ano": null,
-   "biblioteca": "/biblioteca/marcial/non-amo-te/",
-   "blocos": [
-    [
-     {
-      "t": "Non amo te, Sabidi, nec possum dicere quare:",
-      "p": [
-       [
-        "Non",
-        "non"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "amo",
-        "amo"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "te",
-        "te"
-       ],
-       [
-        ", ",
-        null
-       ],
-       [
-        "Sabidi",
-        "sabidi"
-       ],
-       [
-        ", ",
-        null
-       ],
-       [
-        "nec",
-        "nec"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "possum",
-        "possum"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "dicere",
-        "dicere"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "quare",
-        "quare"
-       ],
-       [
-        ":",
-        null
-       ]
-      ],
-      "requer": [
-       "la-p066",
-       "la-p037",
-       "la-p007",
-       "la-p120",
-       "la-p121",
-       "la-p122",
-       "la-p123"
-      ],
-      "card": "la-t020"
-     },
-     {
-      "t": "hoc tantum possum dicere, non amo te.",
-      "p": [
-       [
-        "hoc",
-        "hoc"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "tantum",
-        "tantum"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "possum",
-        "possum"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "dicere",
-        "dicere#2"
-       ],
-       [
-        ", ",
-        null
-       ],
-       [
-        "non",
-        "non"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "amo",
-        "amo"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "te",
-        "te"
-       ],
-       [
-        ".",
-        null
-       ]
-      ],
-      "requer": [
-       "la-p124",
-       "la-p125",
-       "la-p121",
-       "la-p122",
-       "la-p066",
-       "la-p037",
-       "la-p007"
-      ],
-      "card": "la-t021"
-     }
-    ]
-   ],
-   "requerTodas": [
-    "la-p066",
-    "la-p037",
-    "la-p007",
-    "la-p120",
-    "la-p121",
-    "la-p122",
-    "la-p123",
-    "la-p124",
-    "la-p125"
-   ],
-   "destinos": {
-    "non": {
-     "lema": "non",
-     "classe": "advérbio",
-     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
-     "card": "la-p066"
-    },
-    "amo": {
-     "lema": "amo",
-     "classe": "verbo",
-     "forma": "presente do indicativo, 1ª pessoa do singular",
-     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
-     "card": "la-p037"
-    },
-    "te": {
-     "lema": "tu",
-     "classe": "pronome",
-     "forma": "acusativo singular",
-     "funcao": "o objeto",
-     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
-     "card": "la-p007"
-    },
-    "sabidi": {
-     "lema": "Sabidius",
-     "classe": "nome próprio",
-     "forma": "vocativo singular",
-     "funcao": "a quem se fala",
-     "def": [
-      "Sabídio, o homem a quem o epigrama se dirige."
-     ],
-     "g": "nome"
-    },
-    "nec": {
-     "lema": "nec",
-     "classe": "conjunção",
-     "funcao": "e não",
-     "wiki": "https://en.wiktionary.org/wiki/nec#Latin",
-     "card": "la-p120"
-    },
-    "possum": {
-     "lema": "possum",
-     "classe": "verbo",
-     "forma": "presente do indicativo, 1ª pessoa do singular",
-     "wiki": "https://en.wiktionary.org/wiki/possum#Latin",
-     "card": "la-p121"
-    },
-    "dicere": {
-     "lema": "dico",
-     "classe": "verbo",
-     "forma": "infinitivo presente",
-     "funcao": "completa possum",
-     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
-     "card": "la-p122"
-    },
-    "quare": {
-     "lema": "quare",
-     "classe": "advérbio",
-     "funcao": "por quê",
-     "wiki": "https://en.wiktionary.org/wiki/quare#Latin",
-     "card": "la-p123"
-    },
-    "hoc": {
-     "lema": "hic",
-     "classe": "pronome",
-     "forma": "acusativo neutro singular",
-     "funcao": "o objeto de dicere: isto",
-     "wiki": "https://en.wiktionary.org/wiki/hic#Latin",
-     "card": "la-p124"
-    },
-    "tantum": {
-     "lema": "tantum",
-     "classe": "advérbio",
-     "funcao": "só",
-     "wiki": "https://en.wiktionary.org/wiki/tantum#Latin",
-     "card": "la-p125"
-    },
-    "dicere#2": {
-     "lema": "dico",
-     "classe": "verbo",
-     "forma": "infinitivo presente",
-     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
-     "card": "la-p122"
-    }
-   }
-  },
-  {
    "id": "oracoes/regina-caeli",
    "idioma": "la",
    "tipo": "prosa",
@@ -2465,270 +2729,6 @@
      "funcao": "o objeto de ora: a quem se pede",
      "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
      "card": "la-p001"
-    }
-   }
-  },
-  {
-   "id": "catulo/odi-et-amo",
-   "idioma": "la",
-   "tipo": "poema",
-   "titulo": "Odi et amo",
-   "autor": "Catulo",
-   "ano": null,
-   "biblioteca": "/biblioteca/catulo/odi-et-amo/",
-   "blocos": [
-    [
-     {
-      "t": "Odi et amo. Quare id faciam, fortasse requiris.",
-      "p": [
-       [
-        "Odi",
-        "odi"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "et",
-        "et"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "amo",
-        "amo"
-       ],
-       [
-        ". ",
-        null
-       ],
-       [
-        "Quare",
-        "quare"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "id",
-        "id"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "faciam",
-        "faciam"
-       ],
-       [
-        ", ",
-        null
-       ],
-       [
-        "fortasse",
-        "fortasse"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "requiris",
-        "requiris"
-       ],
-       [
-        ".",
-        null
-       ]
-      ],
-      "requer": [
-       "la-p164",
-       "la-p009",
-       "la-p037",
-       "la-p123",
-       "la-p171",
-       "la-p165",
-       "la-p166",
-       "la-p167"
-      ],
-      "card": "la-t022"
-     },
-     {
-      "t": "Nescio, sed fieri sentio et excrucior.",
-      "p": [
-       [
-        "Nescio",
-        "nescio"
-       ],
-       [
-        ", ",
-        null
-       ],
-       [
-        "sed",
-        "sed"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "fieri",
-        "fieri"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "sentio",
-        "sentio"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "et",
-        "et"
-       ],
-       [
-        " ",
-        null
-       ],
-       [
-        "excrucior",
-        "excrucior"
-       ],
-       [
-        ".",
-        null
-       ]
-      ],
-      "requer": [
-       "la-p168",
-       "la-p107",
-       "la-p069",
-       "la-p169",
-       "la-p009",
-       "la-p170"
-      ],
-      "card": "la-t023"
-     }
-    ]
-   ],
-   "requerTodas": [
-    "la-p164",
-    "la-p009",
-    "la-p037",
-    "la-p123",
-    "la-p171",
-    "la-p165",
-    "la-p166",
-    "la-p167",
-    "la-p168",
-    "la-p107",
-    "la-p069",
-    "la-p169",
-    "la-p170"
-   ],
-   "destinos": {
-    "odi": {
-     "lema": "odi",
-     "classe": "verbo",
-     "forma": "1ª pessoa do singular; forma de perfeito, sentido de presente",
-     "funcao": "odeio",
-     "wiki": "https://en.wiktionary.org/wiki/odi#Latin",
-     "card": "la-p164"
-    },
-    "et": {
-     "lema": "et",
-     "classe": "conjunção",
-     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
-     "card": "la-p009"
-    },
-    "amo": {
-     "lema": "amo",
-     "classe": "verbo",
-     "forma": "presente do indicativo, 1ª pessoa do singular",
-     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
-     "card": "la-p037"
-    },
-    "quare": {
-     "lema": "quare",
-     "classe": "advérbio",
-     "wiki": "https://en.wiktionary.org/wiki/quare#Latin",
-     "card": "la-p123"
-    },
-    "id": {
-     "lema": "is",
-     "classe": "pronome",
-     "forma": "acusativo neutro singular",
-     "funcao": "o objeto de faciam: isso",
-     "wiki": "https://en.wiktionary.org/wiki/is#Latin",
-     "card": "la-p171"
-    },
-    "faciam": {
-     "lema": "facio",
-     "classe": "verbo",
-     "forma": "presente do subjuntivo, 1ª pessoa do singular",
-     "funcao": "na pergunta indireta, depois de quare",
-     "wiki": "https://en.wiktionary.org/wiki/facio#Latin",
-     "card": "la-p165"
-    },
-    "fortasse": {
-     "lema": "fortasse",
-     "classe": "advérbio",
-     "wiki": "https://en.wiktionary.org/wiki/fortasse#Latin",
-     "card": "la-p166"
-    },
-    "requiris": {
-     "lema": "requiro",
-     "classe": "verbo",
-     "forma": "presente do indicativo, 2ª pessoa do singular",
-     "wiki": "https://en.wiktionary.org/wiki/requiro#Latin",
-     "card": "la-p167"
-    },
-    "nescio": {
-     "lema": "nescio",
-     "classe": "verbo",
-     "forma": "presente do indicativo, 1ª pessoa do singular",
-     "wiki": "https://en.wiktionary.org/wiki/nescio#Latin",
-     "card": "la-p168"
-    },
-    "sed": {
-     "lema": "sed",
-     "classe": "conjunção",
-     "wiki": "https://en.wiktionary.org/wiki/sed#Latin",
-     "card": "la-p107"
-    },
-    "fieri": {
-     "lema": "fio",
-     "classe": "verbo",
-     "forma": "infinitivo presente",
-     "funcao": "acontecer: o que ele sente",
-     "wiki": "https://en.wiktionary.org/wiki/fio#Latin",
-     "card": "la-p069"
-    },
-    "sentio": {
-     "lema": "sentio",
-     "classe": "verbo",
-     "forma": "presente do indicativo, 1ª pessoa do singular",
-     "wiki": "https://en.wiktionary.org/wiki/sentio#Latin",
-     "card": "la-p169"
-    },
-    "excrucior": {
-     "lema": "excrucio",
-     "classe": "verbo",
-     "forma": "presente do indicativo, 1ª pessoa do singular, voz passiva",
-     "funcao": "sou torturado",
-     "wiki": "https://en.wiktionary.org/wiki/excrucio#Latin",
-     "card": "la-p170"
     }
    }
   },

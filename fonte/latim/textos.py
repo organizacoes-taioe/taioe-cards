@@ -20,14 +20,16 @@ AQUI = Path(__file__).resolve().parent
 BARALHO = AQUI.parent / 'cards' / 'la'
 DESTINO = AQUI.parent / 'textos' / 'la'
 
+# «ordem» é a da tela Textos: as orações e os clássicos intercalados (pedido de 22/10: menos
+# religioso), do mais curto ao mais difícil
 TEXTOS = {
     'oracoes/gloria-patri': {'titulo': 'Gloria Patri', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 1},
-    'oracoes/pater-noster': {'titulo': 'Pater Noster', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 2},
-    'oracoes/ave-maria': {'titulo': 'Ave Maria', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 3},
-    'marcial/non-amo-te': {'titulo': 'Non amo te', 'autor': 'Marcial', 'tipo': 'poema', 'ordem': 4,
+    'oracoes/pater-noster': {'titulo': 'Pater Noster', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 4},
+    'oracoes/ave-maria': {'titulo': 'Ave Maria', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 5},
+    'marcial/non-amo-te': {'titulo': 'Non amo te', 'autor': 'Marcial', 'tipo': 'poema', 'ordem': 2,
                            'fonte': 'Epigramas, livro I, 32'},
-    'oracoes/regina-caeli': {'titulo': 'Regina caeli', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 5},
-    'catulo/odi-et-amo': {'titulo': 'Odi et amo', 'autor': 'Catulo', 'tipo': 'poema', 'ordem': 6,
+    'oracoes/regina-caeli': {'titulo': 'Regina caeli', 'autor': 'Orações', 'tipo': 'prosa', 'ordem': 6},
+    'catulo/odi-et-amo': {'titulo': 'Odi et amo', 'autor': 'Catulo', 'tipo': 'poema', 'ordem': 3,
                           'fonte': 'Poemas, 85'},
     'fedro/lupus-et-agnus': {'titulo': 'Lupus et agnus', 'autor': 'Fedro', 'tipo': 'poema', 'ordem': 7,
                              'fonte': 'Fábulas, livro I, 1 (os oito primeiros versos)'},

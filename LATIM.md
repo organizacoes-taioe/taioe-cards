@@ -17,7 +17,7 @@ contrato do latim; o que for regra de card entra no manual quando o piloto fecha
 - ✔ D6: «Pode rodar o piloto». E mais: **as orações vão para a Biblioteca, na página de
   Catolicismo, com o nome «Orações» entre os autores**.
 
-**As respostas do Gere (22/10, à noite), para a leva 2 — ainda por fazer**:
+**As respostas do Gere (22/10, à noite), para a leva 2 — feitas em 22 e 23/10** (o que saiu está no fim desta lista):
 - ✔ D11. Primeiras frases: trocar metade. Saem 16 religiosas: f003 Tu es Petrus, f005 Dominus meus,
   f006 Ecce homo, f008 Sitio, f018 Ecce ancilla, f020 Tu es Christus, f022 Magnificat, f024 Deo
   gratias, f026 Dominus vobiscum, f027 Et cum spiritu tuo, f029 Requiescat, f030 Beati pauperes,
@@ -33,6 +33,24 @@ contrato do latim; o que for regra de card entra no manual quando o piloto fecha
 - ✔ D13. Frases de uso das palavras novas: metade clássica. Montar um segundo corpus com os
   clássicos em domínio público (Cícero, César, Vergílio, Ovídio, Sêneca, Fedro…) ao lado da
   Clementina (`fontes.json`), e escolher meio a meio.
+- **O que saiu da leva 2** (cards PR da leva 2; biblioteca PR #22, no ar):
+  - primeiras frases: 43 (24 fora da Bíblia e da liturgia), com *Ubi bene, ibi patria* no lugar de
+    *Quis custodiet* (três palavras difíceis) e *Mater artium necessitas* no lugar de *O tempora, o
+    mores!* (as gramáticas divergem sobre o caso da exclamação); 38 palavras novas; saíram 12
+    palavras que ficaram sem frase e as 24 frases de uso delas. `fonte/latim/primeiras.py` aplica;
+  - os conceitos ganharam exemplos dessas frases, intercalados;
+  - textos: Catulo 85 (2 versos), Fedro I,1 (os 8 primeiros; a fábula inteira na Biblioteca) e a
+    Regina caeli (4 linhas): 14 trechos (`09-trechos-2`), 45 palavras (`08-palavras-2`); na tela
+    Textos, orações e clássicos intercalados (`ordem` no `textos.py`);
+  - frases de uso: 89 (`10-usos-c`), meio a meio entre clássicos e Vulgata, feitas por cinco agentes
+    em lotes e conferidas com o Wiktionary; 16 notas de contexto corrigidas por uma revisão contra o
+    texto vizinho no corpus. 11 palavras ficaram sem frase de uso (sem candidata boa);
+  - corpus clássico: o Perseus (`corpus.py baixar-classicos` e `classicos`), 197 mil frases;
+  - tradução às cegas (§4.3): na 1ª rodada as frases novas passaram em 45%; na 2ª, com outro
+    tradutor, as primeiras frases e os trechos em 83% e as frases de uso em 80%. As certas que não
+    passavam entraram no gabarito. A meta de 9 em 10 ainda não foi alcançada na primeira rodada: o
+    gabarito precisa prever mais ordens de palavras.
+  - cards de forma: 192.
 
 ## 1. As decisões (como foram propostas)
 
@@ -475,6 +493,10 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
   fora do git; `fontes.json` diz de onde baixar.
 - Os pronomes *tu*, *nos* e *vos* não contam como transparentes (`transparencia: { pt: 'nenhuma' }`):
   o lema parece português, as formas (*te*, *tibi*, *nobis*) não.
+- O `buscar.py` erra o lema em algumas candidatas (23/10): *cur* pega formas de *cor*, *quaeso*
+  pega *quaero*, *laniger* pega *in*, *quo* pega *quoque*, *manus* pega *mane*, *ego* pega *eo* (de
+  is); e o índice não acha *belli* (de *bellum*) nem *tibi* (de *tu*), nem *factus* (de *fio*). Quem
+  escolhe a frase confere; consertar o índice antes da próxima leva.
 - Falta: a matriz de cobertura no build, a simulação do motor com progresso inventado, o teste das
   traduções às cegas por cinco agentes.
 
@@ -487,6 +509,8 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
 | 2 | motor, app e build no modo trilhas, com testes e a simulação | ✔ 21/10, menos a simulação |
 | 3 | piloto: texto zero, conceitos dos casos e do presente, 4 textos de nível 1 com palavras e frases de uso; os 4 na Biblioteca | no ar em 21/10 (biblioteca PR #21, infra PR #15, hub PR #13); o Gere estuda e aponta |
 | 3b | card de forma (§3.6) e o aviso de pergunta trocada | 22/10 (infra PR #16) |
+| 3c | leva 2: primeiras frases menos religiosas, Catulo 85, Fedro I,1, Regina caeli, corpus clássico, 89 frases de uso (D11–D13) | 23/10 (biblioteca PR #22) |
+| 3d | card de contraste (§3.7) | planejado; espera o Gere (D14–D17) |
 | 4 | os textos em domínio público, nível a nível, em levas de ~100 cards, com a matriz a cada leva; metade fora da Bíblia e da liturgia (§7) | — |
 | 5 | os textos da NV, com a resposta da LEV (ou na Clementina) | — |
 | depois | pronúncia eclesiástica; `la-es` e `la-en`; prosa com «Quero aprender o resto» | — |
