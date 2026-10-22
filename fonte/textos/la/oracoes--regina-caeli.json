@@ -1,0 +1,297 @@
+{
+ "id": "oracoes/regina-caeli",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Regina caeli",
+ "autor": "Orações",
+ "ano": null,
+ "biblioteca": "/biblioteca/oracoes/regina-caeli/",
+ "ordem": 5,
+ "blocos": [
+  [
+   {
+    "t": "Regina caeli, laetare, alleluia.",
+    "p": [
+     [
+      "Regina",
+      "regina"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "caeli",
+      "caeli"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "laetare",
+      "laetare"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "alleluia",
+      "alleluia"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t024"
+   },
+   {
+    "t": "Quia quem meruisti portare, alleluia.",
+    "p": [
+     [
+      "Quia",
+      "quia"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "quem",
+      "quem"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "meruisti",
+      "meruisti"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "portare",
+      "portare"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "alleluia",
+      "alleluia"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t025"
+   },
+   {
+    "t": "Resurrexit, sicut dixit, alleluia.",
+    "p": [
+     [
+      "Resurrexit",
+      "resurrexit"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "sicut",
+      "sicut"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dixit",
+      "dixit"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "alleluia",
+      "alleluia"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t026"
+   },
+   {
+    "t": "Ora pro nobis Deum, alleluia.",
+    "p": [
+     [
+      "Ora",
+      "ora"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "pro",
+      "pro"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nobis",
+      "nobis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Deum",
+      "deum"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "alleluia",
+      "alleluia"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t027"
+   }
+  ]
+ ],
+ "destinos": {
+  "regina": {
+   "lema": "regina",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala",
+   "card": "la-p172",
+   "wiki": "https://en.wiktionary.org/wiki/regina#Latin"
+  },
+  "caeli": {
+   "lema": "caelum",
+   "classe": "substantivo neutro",
+   "forma": "genitivo singular",
+   "funcao": "de onde é rainha",
+   "card": "la-p090",
+   "wiki": "https://en.wiktionary.org/wiki/caelum#Latin"
+  },
+  "laetare": {
+   "lema": "laetor",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "depoente: alegra-te",
+   "card": "la-p173",
+   "wiki": "https://en.wiktionary.org/wiki/laetor#Latin"
+  },
+  "alleluia": {
+   "lema": "alleluia",
+   "classe": "interjeição",
+   "g": "gramatical",
+   "def": [
+    "Aleluia: louvai a Deus. Palavra hebraica de louvor, própria do tempo da Páscoa."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/alleluia#Latin"
+  },
+  "quia": {
+   "lema": "quia",
+   "classe": "conjunção",
+   "card": "la-p174",
+   "wiki": "https://en.wiktionary.org/wiki/quia#Latin"
+  },
+  "quem": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "acusativo masculino singular",
+   "funcao": "aquele que: o objeto de portare",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "meruisti": {
+   "lema": "mereo",
+   "classe": "verbo",
+   "forma": "perfeito do indicativo, 2ª pessoa do singular",
+   "card": "la-p175",
+   "wiki": "https://en.wiktionary.org/wiki/mereo#Latin"
+  },
+  "portare": {
+   "lema": "porto",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "completa meruisti",
+   "card": "la-p176",
+   "wiki": "https://en.wiktionary.org/wiki/porto#Latin"
+  },
+  "resurrexit": {
+   "lema": "resurgo",
+   "classe": "verbo",
+   "forma": "perfeito do indicativo, 3ª pessoa do singular",
+   "funcao": "o sujeito é quem, da linha anterior",
+   "card": "la-p177",
+   "wiki": "https://en.wiktionary.org/wiki/resurgo#Latin"
+  },
+  "sicut": {
+   "lema": "sicut",
+   "classe": "advérbio",
+   "card": "la-p085",
+   "wiki": "https://en.wiktionary.org/wiki/sicut#Latin"
+  },
+  "dixit": {
+   "lema": "dico",
+   "classe": "verbo",
+   "forma": "perfeito do indicativo, 3ª pessoa do singular",
+   "card": "la-p122",
+   "wiki": "https://en.wiktionary.org/wiki/dico#Latin"
+  },
+  "ora": {
+   "lema": "oro",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "card": "la-p077",
+   "wiki": "https://en.wiktionary.org/wiki/oro#Latin"
+  },
+  "pro": {
+   "lema": "pro",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p078",
+   "wiki": "https://en.wiktionary.org/wiki/pro#Latin"
+  },
+  "nobis": {
+   "lema": "nos",
+   "classe": "pronome",
+   "forma": "ablativo plural",
+   "funcao": "por quem",
+   "card": "la-p079",
+   "wiki": "https://en.wiktionary.org/wiki/nos#Latin"
+  },
+  "deum": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo singular",
+   "funcao": "o objeto de ora: a quem se pede",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  }
+ }
+}

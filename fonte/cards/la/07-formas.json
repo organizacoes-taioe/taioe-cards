@@ -4721,5 +4721,433 @@
   ],
   "dificuldade": 4.0,
   "sempre": true
+ },
+ {
+  "id": "la-xt022-2",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "amo",
+  "frase": "Odi et amo. Quare id faciam, fortasse requiris.",
+  "ocorrencia": 1,
+  "de": "la-t022",
+  "fonte": "Catulo 85",
+  "lema": "la-p037",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "nota": "amo: presente do indicativo, 1ª pessoa do singular.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt023-2",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "fieri",
+  "frase": "Nescio, sed fieri sentio et excrucior.",
+  "ocorrencia": 1,
+  "de": "la-t023",
+  "fonte": "Catulo 85",
+  "lema": "la-p069",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "nota": "fieri: infinitivo presente, acontecer: o que ele sente.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt024-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "caeli",
+  "frase": "Regina caeli, laetare, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t024",
+  "fonte": "Regina caeli",
+  "lema": "la-p090",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "nota": "caeli: genitivo singular, de onde é rainha.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt025-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "quem",
+  "frase": "Quia quem meruisti portare, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t025",
+  "fonte": "Regina caeli",
+  "lema": "la-p064",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "nota": "quem: acusativo masculino singular, aquele que: o objeto de portare.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt026-2",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "dixit",
+  "frase": "Resurrexit, sicut dixit, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t026",
+  "fonte": "Regina caeli",
+  "lema": "la-p122",
+  "pt": "perfeito do indicativo",
+  "aceitas": [
+   "indicativo perfeito"
+  ],
+  "nota": "dixit: perfeito do indicativo, 3ª pessoa do singular.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g009"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt027-0",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "Ora",
+  "frase": "Ora pro nobis Deum, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t027",
+  "fonte": "Regina caeli",
+  "lema": "la-p077",
+  "pt": "imperativo",
+  "aceitas": [
+   "imperativo"
+  ],
+  "nota": "Ora: imperativo presente, 2ª pessoa do singular.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g011"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt027-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "nobis",
+  "frase": "Ora pro nobis Deum, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t027",
+  "fonte": "Regina caeli",
+  "lema": "la-p079",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "nota": "nobis: ablativo plural, por quem. Vem depois de «pro», preposição com ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt027-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Deum",
+  "frase": "Ora pro nobis Deum, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t027",
+  "fonte": "Regina caeli",
+  "lema": "la-p001",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "nota": "Deum: acusativo singular, o objeto de ora: a quem se pede.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt028-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "lupus",
+  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "ocorrencia": 1,
+  "de": "la-t028",
+  "fonte": "Fedro, Fábulas I,1,1",
+  "lema": "la-p153",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "nota": "lupus: nominativo singular, o sujeito.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt028-6",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "venerant",
+  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "ocorrencia": 1,
+  "de": "la-t028",
+  "fonte": "Fedro, Fábulas I,1,1",
+  "lema": "la-p038",
+  "pt": "mais-que-perfeito do indicativo",
+  "aceitas": [
+   "indicativo mais-que-perfeito"
+  ],
+  "nota": "venerant: mais-que-perfeito do indicativo, 3ª pessoa do plural.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt032-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "mihi",
+  "frase": "Cur, inquit, turbulentam fecisti mihi",
+  "ocorrencia": 1,
+  "de": "la-t032",
+  "fonte": "Fedro, Fábulas I,1,5",
+  "lema": "la-p004",
+  "pt": "dativo",
+  "aceitas": [
+   "caso dativo",
+   "dat"
+  ],
+  "nota": "mihi: dativo, para mim.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g005"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt034-1",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "possum",
+  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "ocorrencia": 1,
+  "de": "la-t034",
+  "fonte": "Fedro, Fábulas I,1,7",
+  "lema": "la-p121",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "nota": "possum: presente do indicativo, 1ª pessoa do singular.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt034-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "quod",
+  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "ocorrencia": 1,
+  "de": "la-t034",
+  "fonte": "Fedro, Fábulas I,1,7",
+  "lema": "la-p064",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "nota": "quod: acusativo neutro singular, aquilo que: o objeto de facere.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt034-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "lupe",
+  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "ocorrencia": 1,
+  "de": "la-t034",
+  "fonte": "Fedro, Fábulas I,1,7",
+  "lema": "la-p153",
+  "pt": "vocativo",
+  "aceitas": [
+   "caso vocativo",
+   "voc"
+  ],
+  "nota": "lupe: vocativo singular, a quem o cordeiro fala.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g002"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt035-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "te",
+  "frase": "A te decurrit ad meos haustus liquor.",
+  "ocorrencia": 1,
+  "de": "la-t035",
+  "fonte": "Fedro, Fábulas I,1,8",
+  "lema": "la-p007",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "nota": "te: ablativo singular, de onde. Vem depois de «A», preposição com ablativo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt035-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "meos",
+  "frase": "A te decurrit ad meos haustus liquor.",
+  "ocorrencia": 1,
+  "de": "la-t035",
+  "fonte": "Fedro, Fábulas I,1,8",
+  "lema": "la-p013",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "nota": "meos: acusativo masculino plural, concorda com haustus. Vem depois de «ad», preposição com acusativo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
  }
 ]
