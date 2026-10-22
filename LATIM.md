@@ -17,6 +17,23 @@ contrato do latim; o que for regra de card entra no manual quando o piloto fecha
 - ✔ D6: «Pode rodar o piloto». E mais: **as orações vão para a Biblioteca, na página de
   Catolicismo, com o nome «Orações» entre os autores**.
 
+**As respostas do Gere (22/10, à noite), para a leva 2 — ainda por fazer**:
+- ✔ D11. Primeiras frases: trocar metade. Saem 16 religiosas: f003 Tu es Petrus, f005 Dominus meus,
+  f006 Ecce homo, f008 Sitio, f018 Ecce ancilla, f020 Tu es Christus, f022 Magnificat, f024 Deo
+  gratias, f026 Dominus vobiscum, f027 Et cum spiritu tuo, f029 Requiescat, f030 Beati pauperes,
+  f035 Consummatum est, f038 Ora pro nobis, f039 Christus vincit, f040 Ubi caritas. Entram, em ordem
+  de gramática: Errare humanum est; Tempus fugit; Ars longa, vita brevis; Dum spiro, spero; Cogito,
+  ergo sum; Cave canem; Sapere aude; Iacta alea est; Festina lente; In vino veritas; Panem et
+  circenses; Vae victis!; O tempora, o mores!; Audentes fortuna iuvat; Gutta cavat lapidem; Lupus
+  est homo homini; Si vis pacem, para bellum; Homines, dum docent, discunt; Quis custodiet ipsos
+  custodes? Cuidado: palavra que só aparece numa frase que sai perde o caminho na trilha (e as frases
+  de uso que a pedem); tirar junto ou dar-lhe outro lugar. Depois, `cards_de_forma.py` e build.
+- ✔ D12. Nova leva (~100 cards): Catulo 85 (Odi et amo), o começo de Fedro I,1 (o lobo e o cordeiro)
+  e a Regina caeli, com palavras, trechos e frases de uso.
+- ✔ D13. Frases de uso das palavras novas: metade clássica. Montar um segundo corpus com os
+  clássicos em domínio público (Cícero, César, Vergílio, Ovídio, Sêneca, Fedro…) ao lado da
+  Clementina (`fontes.json`), e escolher meio a meio.
+
 ## 1. As decisões (como foram propostas)
 
 ★ = a recomendação.
