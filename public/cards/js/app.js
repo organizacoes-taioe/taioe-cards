@@ -1275,7 +1275,7 @@ window.TaioeCardsApp = function (ctx) {
     if (conferencia === 'errado' && !desistiu && !chanceUsada) {
       /* no card de gramática, respondeu o significado (pedido do Gere, 22/10/2026: «é fácil
          responder no automático»): avisa e devolve a vez */
-      if (Motor.foraDaPergunta(cardAtual, texto)) { avisarForaDaPergunta(texto); return; }
+      if (Motor.foraDaPergunta(cardAtual, texto)) { avisarForaDaPergunta(); return; }
       const troca = Motor.linguaTrocada(cardAtual, texto, direcaoAtual);
       if (troca) { avisarLinguaTrocada(troca); return; }
       /* o espanhol certo, mas não o do card: «trabajar» para «currar» */
@@ -1331,16 +1331,12 @@ window.TaioeCardsApp = function (ctx) {
     el.entrada.focus({ preventScroll: true });
   }
 
-  /* O card de forma ou de conceito pede o caso (ou a forma verbal), e veio outra coisa: se é o
-     significado certo da palavra, o aviso diz que está certo, mas a pergunta é outra. */
-  function avisarForaDaPergunta(texto) {
+  /* O card de forma ou de conceito pede o caso (ou a forma verbal), e veio outra coisa — quase
+     sempre o significado. O aviso é curto (pedido do Gere, 22/10/2026): «A pergunta é o caso.» */
+  function avisarForaDaPergunta() {
     chanceUsada = true;
     const familia = cardAtual.familia === 'verbo' || cardAtual.familia === 'voz' ? cardAtual.familia : 'caso';
-    const lema = cardAtual.tipo === 'forma' && PORID[cardAtual.lema];
-    const sentido = lema && Motor.conferir(lema, texto, direcaoAtual) !== 'errado';
-    el['aviso-lingua'].innerHTML = sentido
-      ? t('aviso.significado.' + familia, { x: escapar(cardAtual.la), y: escapar(String(lema[A]).split('/')[0].trim()) })
-      : t('aviso.foraDaPergunta.' + familia);
+    el['aviso-lingua'].innerHTML = t('aviso.foraDaPergunta.' + familia);
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
     ajustarEntrada();
