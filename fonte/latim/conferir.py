@@ -70,6 +70,14 @@ def no_quadro(w, lemas, pedidas):
     return False
 
 
+def marcas_de(a):
+    """As marcas da análise; o Wiktionary às vezes dá o futuro perfeito em duas (future + perfect)."""
+    m = set(a['marcas'])
+    if {'future', 'perfect'} <= m:
+        m.add('future-perfect')
+    return m
+
+
 def tokens(la):
     saida = []
     for p in latim.palavras(la):
@@ -117,9 +125,9 @@ def conferir(cards, filtro=''):
             if p.get('f', '').startswith('preposição') or 'particípio' in p.get('f', ''):
                 continue   # a preposição não tem caso; o particípio, no Wiktionary, vem sem ele
             pedidas = marcas_pedidas(p.get('f', ''))
-            if pedidas and not any(pedidas <= set(a['marcas']) for a in do_lema) and no_quadro(p['w'], lemas_do_card, pedidas):
+            if pedidas and not any(pedidas <= marcas_de(a) for a in do_lema) and no_quadro(p['w'], lemas_do_card, pedidas):
                 continue   # a página da forma não diz, mas o quadro do lema diz (laetare, imperativo de laetor)
-            if pedidas and not any(pedidas <= set(a['marcas']) for a in do_lema):
+            if pedidas and not any(pedidas <= marcas_de(a) for a in do_lema):
                 vistas = ['/'.join(a['marcas']) for a in do_lema]
                 print(f"{c['id']}: «{p['w']}» como «{p.get('f')}» não aparece; o Wiktionary dá {vistas}")
                 problemas += 1
