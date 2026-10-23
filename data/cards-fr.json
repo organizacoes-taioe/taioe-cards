@@ -1,8 +1,8 @@
 {
  "versao": 1,
  "idioma": "fr",
- "gerado_em": "2026-10-21",
- "total": 1439,
+ "gerado_em": "2026-10-23",
+ "total": 1477,
  "cards": [
   {
    "idioma": "fr",
@@ -85777,6 +85777,1098 @@
     "fr-p520",
     "fr-p001",
     "fr-p565"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k001",
+   "tipo": "contraste",
+   "conjunto": "f01",
+   "fr": "J'ai vingt ans.",
+   "pt": "Eu tenho vinte anos.",
+   "distratoresFr": [
+    "Je suis vingt ans.",
+    "J'ai faim.",
+    "Je suis faim.",
+    "J'ai vingt années."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A idade e a fome se «têm» em francês, como em português: j'ai vingt ans, j'ai faim. O erro vem do inglês e do «estou com fome»: com être, não.\nAs alternativas:\nJ'ai vingt ans — eu tenho vinte anos.\nJe suis vingt ans — ✗ a idade se diz com avoir: j'ai vingt ans.\nJ'ai faim — eu estou com fome.\nJe suis faim — ✗ faim é nome, e a fome se tem: j'ai faim.\nJ'ai vingt années — ✗ para a idade, ans; année é o ano que se vive (une belle année).",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p002",
+    "fr-p001",
+    "fr-p052",
+    "fr-p086"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k002",
+   "tipo": "contraste",
+   "conjunto": "f01",
+   "fr": "J'ai faim.",
+   "pt": "Eu estou com fome.",
+   "distratoresFr": [
+    "J'ai vingt ans.",
+    "Je suis vingt ans.",
+    "Je suis faim.",
+    "J'ai vingt années."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A idade e a fome se «têm» em francês, como em português: j'ai vingt ans, j'ai faim. O erro vem do inglês e do «estou com fome»: com être, não.\nAs alternativas:\nJ'ai vingt ans — eu tenho vinte anos.\nJe suis vingt ans — ✗ a idade se diz com avoir: j'ai vingt ans.\nJ'ai faim — eu estou com fome.\nJe suis faim — ✗ faim é nome, e a fome se tem: j'ai faim.\nJ'ai vingt années — ✗ para a idade, ans; année é o ano que se vive (une belle année).",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p002",
+    "fr-p001",
+    "fr-p052",
+    "fr-p086"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k003",
+   "tipo": "contraste",
+   "conjunto": "f02",
+   "fr": "J'ai froid.",
+   "pt": "Eu estou com frio.",
+   "distratoresFr": [
+    "Je suis froid.",
+    "Il fait froid.",
+    "Il a froid.",
+    "Je fais froid."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Estar com frio é avoir froid (j'ai froid). Fazer frio, o tempo, é il fait froid. Être froid é ser frio: a pessoa sem afeto, ou a coisa fria ao toque.\nAs alternativas:\nJ'ai froid — eu estou com frio.\nJe suis froid — eu sou frio (não demonstro afeto).\nIl fait froid — faz frio (o tempo).\nIl a froid — ele está com frio.\nJe fais froid — ✗ fazer frio é do tempo, e só com il: il fait froid.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p002",
+    "fr-p004",
+    "fr-p080"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k004",
+   "tipo": "contraste",
+   "conjunto": "f02",
+   "fr": "Il fait froid.",
+   "pt": "Faz frio.",
+   "distratoresFr": [
+    "J'ai froid.",
+    "Je suis froid.",
+    "Il a froid.",
+    "Je fais froid."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Estar com frio é avoir froid (j'ai froid). Fazer frio, o tempo, é il fait froid. Être froid é ser frio: a pessoa sem afeto, ou a coisa fria ao toque.\nAs alternativas:\nJ'ai froid — eu estou com frio.\nJe suis froid — eu sou frio (não demonstro afeto).\nIl fait froid — faz frio (o tempo).\nIl a froid — ele está com frio.\nJe fais froid — ✗ fazer frio é do tempo, e só com il: il fait froid.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p002",
+    "fr-p004",
+    "fr-p080"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k005",
+   "tipo": "contraste",
+   "conjunto": "f03",
+   "fr": "Je ne parle pas français.",
+   "pt": "Eu não falo francês.",
+   "distratoresFr": [
+    "Je ne parle jamais français.",
+    "Je pas parle français.",
+    "Je ne jamais parle français.",
+    "Je non parle français."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A negação tem duas peças em volta do verbo: ne antes, pas depois (je ne parle pas). Nunca é ne… jamais, e o jamais toma o lugar do pas.\nAs alternativas:\nJe ne parle pas français — eu não falo francês.\nJe ne parle jamais français — eu nunca falo francês.\nJe pas parle français — ✗ o pas vem depois do verbo, e o ne antes: je ne parle pas.\nJe ne jamais parle français — ✗ jamais vem depois do verbo, no lugar do pas: je ne parle jamais.\nJe non parle français — ✗ non é a resposta «não»; o verbo se nega com ne… pas.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p012",
+    "fr-p054"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k006",
+   "tipo": "contraste",
+   "conjunto": "f03",
+   "fr": "Je ne parle jamais français.",
+   "pt": "Eu nunca falo francês.",
+   "distratoresFr": [
+    "Je ne parle pas français.",
+    "Je pas parle français.",
+    "Je ne jamais parle français.",
+    "Je non parle français."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A negação tem duas peças em volta do verbo: ne antes, pas depois (je ne parle pas). Nunca é ne… jamais, e o jamais toma o lugar do pas.\nAs alternativas:\nJe ne parle pas français — eu não falo francês.\nJe ne parle jamais français — eu nunca falo francês.\nJe pas parle français — ✗ o pas vem depois do verbo, e o ne antes: je ne parle pas.\nJe ne jamais parle français — ✗ jamais vem depois do verbo, no lugar do pas: je ne parle jamais.\nJe non parle français — ✗ non é a resposta «não»; o verbo se nega com ne… pas.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p012",
+    "fr-p054"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k007",
+   "tipo": "contraste",
+   "conjunto": "f04",
+   "fr": "Il y a un homme à la porte.",
+   "pt": "Tem um homem na porta.",
+   "distratoresFr": [
+    "Il y a deux hommes à la porte.",
+    "Il a un homme à la porte.",
+    "Ils y ont deux hommes à la porte.",
+    "A un homme à la porte."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «tem» de existir (há) é il y a, que não muda no plural: il y a un homme, il y a deux hommes. Avoir sozinho é possuir.\nAs alternativas:\nIl y a un homme à la porte — tem (há) um homem na porta.\nIl y a deux hommes à la porte — tem (há) dois homens na porta.\nIl a un homme à la porte — ✗ falta o y: o «tem» de existir é il y a.\nIls y ont deux hommes à la porte — ✗ il y a não muda no plural.\nA un homme à la porte — ✗ falta o il y: il y a un homme.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p186",
+    "fr-p021",
+    "fr-p120"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k008",
+   "tipo": "contraste",
+   "conjunto": "f04",
+   "fr": "Il y a deux hommes à la porte.",
+   "pt": "Tem dois homens na porta.",
+   "distratoresFr": [
+    "Il y a un homme à la porte.",
+    "Il a un homme à la porte.",
+    "Ils y ont deux hommes à la porte.",
+    "A un homme à la porte."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «tem» de existir (há) é il y a, que não muda no plural: il y a un homme, il y a deux hommes. Avoir sozinho é possuir.\nAs alternativas:\nIl y a un homme à la porte — tem (há) um homem na porta.\nIl y a deux hommes à la porte — tem (há) dois homens na porta.\nIl a un homme à la porte — ✗ falta o y: o «tem» de existir é il y a.\nIls y ont deux hommes à la porte — ✗ il y a não muda no plural.\nA un homme à la porte — ✗ falta o il y: il y a un homme.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p186",
+    "fr-p021",
+    "fr-p120"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k009",
+   "tipo": "contraste",
+   "conjunto": "f05",
+   "fr": "J'ai une voiture rouge.",
+   "pt": "Eu tenho um carro vermelho.",
+   "distratoresFr": [
+    "J'ai une rouge voiture.",
+    "J'ai une belle maison.",
+    "J'ai une maison belle.",
+    "J'ai une beau maison."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Como no português, o adjetivo francês costuma vir depois do nome (une voiture rouge). Uns poucos, curtos e muito usados, vêm antes: beau, grand, petit, bon, nouveau, vieux, jeune (une belle maison). E concordam: beau, belle.\nAs alternativas:\nJ'ai une voiture rouge — eu tenho um carro vermelho.\nJ'ai une rouge voiture — ✗ a cor vem depois do nome: une voiture rouge.\nJ'ai une belle maison — eu tenho uma bela casa.\nJ'ai une maison belle — ✗ beau vem antes do nome: une belle maison.\nJ'ai une beau maison — ✗ maison é feminino: belle.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p002",
+    "fr-p034",
+    "fr-p173",
+    "fr-p020",
+    "fr-p040"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k010",
+   "tipo": "contraste",
+   "conjunto": "f05",
+   "fr": "J'ai une belle maison.",
+   "pt": "Eu tenho uma bela casa.",
+   "distratoresFr": [
+    "J'ai une voiture rouge.",
+    "J'ai une rouge voiture.",
+    "J'ai une maison belle.",
+    "J'ai une beau maison."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Como no português, o adjetivo francês costuma vir depois do nome (une voiture rouge). Uns poucos, curtos e muito usados, vêm antes: beau, grand, petit, bon, nouveau, vieux, jeune (une belle maison). E concordam: beau, belle.\nAs alternativas:\nJ'ai une voiture rouge — eu tenho um carro vermelho.\nJ'ai une rouge voiture — ✗ a cor vem depois do nome: une voiture rouge.\nJ'ai une belle maison — eu tenho uma bela casa.\nJ'ai une maison belle — ✗ beau vem antes do nome: une belle maison.\nJ'ai une beau maison — ✗ maison é feminino: belle.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p002",
+    "fr-p034",
+    "fr-p173",
+    "fr-p020",
+    "fr-p040"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k011",
+   "tipo": "contraste",
+   "conjunto": "f06",
+   "fr": "Je mange du pain.",
+   "pt": "Eu como pão.",
+   "distratoresFr": [
+    "Je mange pain.",
+    "Je ne mange pas de pain.",
+    "Je ne mange pas pain.",
+    "Je mange de pain."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O francês não deixa o nome sem artigo: «eu como pão» é je mange du pain (du, de la, de l', um pouco de). Na negação, o du vira de: je ne mange pas de pain.\nAs alternativas:\nJe mange du pain — eu como pão.\nJe mange pain — ✗ o nome não fica sem artigo: du pain.\nJe ne mange pas de pain — eu não como pão.\nJe ne mange pas pain — ✗ na negação, o du vira de: pas de pain.\nJe mange de pain — ✗ na frase afirmativa, du: je mange du pain.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p013",
+    "fr-p027"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k012",
+   "tipo": "contraste",
+   "conjunto": "f06",
+   "fr": "Je ne mange pas de pain.",
+   "pt": "Eu não como pão.",
+   "distratoresFr": [
+    "Je mange du pain.",
+    "Je mange pain.",
+    "Je ne mange pas pain.",
+    "Je mange de pain."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O francês não deixa o nome sem artigo: «eu como pão» é je mange du pain (du, de la, de l', um pouco de). Na negação, o du vira de: je ne mange pas de pain.\nAs alternativas:\nJe mange du pain — eu como pão.\nJe mange pain — ✗ o nome não fica sem artigo: du pain.\nJe ne mange pas de pain — eu não como pão.\nJe ne mange pas pain — ✗ na negação, o du vira de: pas de pain.\nJe mange de pain — ✗ na frase afirmativa, du: je mange du pain.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p013",
+    "fr-p027"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k013",
+   "tipo": "contraste",
+   "conjunto": "f07",
+   "fr": "J'aime le café.",
+   "pt": "Eu gosto de café.",
+   "distratoresFr": [
+    "J'aime du café.",
+    "J'aime de café.",
+    "Je bois du café.",
+    "Je bois le café."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O gosto fala da coisa em geral, e leva le, la, les: j'aime le café (sem «de», que aimer não pede). Tomar, comer e comprar falam de uma parte, e levam du, de la: je bois du café.\nAs alternativas:\nJ'aime le café — eu gosto de café.\nJ'aime du café — ✗ o gosto fala da coisa em geral: j'aime le café.\nJ'aime de café — ✗ aimer não leva de: j'aime le café.\nJe bois du café — eu tomo café.\nJe bois le café — eu tomo o café (aquele, de que se falou).",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p015",
+    "fr-p014",
+    "fr-p057"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k014",
+   "tipo": "contraste",
+   "conjunto": "f07",
+   "fr": "Je bois du café.",
+   "pt": "Eu tomo café.",
+   "distratoresFr": [
+    "J'aime le café.",
+    "J'aime du café.",
+    "J'aime de café.",
+    "Je bois le café."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O gosto fala da coisa em geral, e leva le, la, les: j'aime le café (sem «de», que aimer não pede). Tomar, comer e comprar falam de uma parte, e levam du, de la: je bois du café.\nAs alternativas:\nJ'aime le café — eu gosto de café.\nJ'aime du café — ✗ o gosto fala da coisa em geral: j'aime le café.\nJ'aime de café — ✗ aimer não leva de: j'aime le café.\nJe bois du café — eu tomo café.\nJe bois le café — eu tomo o café (aquele, de que se falou).",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p015",
+    "fr-p014",
+    "fr-p057"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k015",
+   "tipo": "contraste",
+   "conjunto": "f08",
+   "fr": "Je vais à Paris.",
+   "pt": "Eu vou a Paris.",
+   "distratoresFr": [
+    "Je vais en Paris.",
+    "Je vais en France.",
+    "Je vais à France.",
+    "Je vais au Brésil."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Para ir a uma cidade (e estar nela), à: je vais à Paris. Para país feminino (quase todos os que terminam em -e), en: en France. Para país masculino, au: au Brésil, au Canada.\nAs alternativas:\nJe vais à Paris — eu vou a Paris.\nJe vais en Paris — ✗ com cidade, à: à Paris.\nJe vais en France — eu vou à França.\nJe vais à France — ✗ com país feminino, en: en France.\nJe vais au Brésil — eu vou ao Brasil.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p003"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k016",
+   "tipo": "contraste",
+   "conjunto": "f08",
+   "fr": "Je vais en France.",
+   "pt": "Eu vou para a França.",
+   "distratoresFr": [
+    "Je vais à Paris.",
+    "Je vais en Paris.",
+    "Je vais à France.",
+    "Je vais au Brésil."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Para ir a uma cidade (e estar nela), à: je vais à Paris. Para país feminino (quase todos os que terminam em -e), en: en France. Para país masculino, au: au Brésil, au Canada.\nAs alternativas:\nJe vais à Paris — eu vou a Paris.\nJe vais en Paris — ✗ com cidade, à: à Paris.\nJe vais en France — eu vou à França.\nJe vais à France — ✗ com país feminino, en: en France.\nJe vais au Brésil — eu vou ao Brasil.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p003"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k017",
+   "tipo": "contraste",
+   "conjunto": "f08",
+   "fr": "Je vais au Brésil.",
+   "pt": "Eu vou para o Brasil.",
+   "distratoresFr": [
+    "Je vais à Paris.",
+    "Je vais en Paris.",
+    "Je vais en France.",
+    "Je vais à France."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Para ir a uma cidade (e estar nela), à: je vais à Paris. Para país feminino (quase todos os que terminam em -e), en: en France. Para país masculino, au: au Brésil, au Canada.\nAs alternativas:\nJe vais à Paris — eu vou a Paris.\nJe vais en Paris — ✗ com cidade, à: à Paris.\nJe vais en France — eu vou à França.\nJe vais à France — ✗ com país feminino, en: en France.\nJe vais au Brésil — eu vou ao Brasil.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p003"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k018",
+   "tipo": "contraste",
+   "conjunto": "f09",
+   "fr": "Elle est née à Paris.",
+   "pt": "Ela nasceu em Paris.",
+   "distratoresFr": [
+    "Elle a né à Paris.",
+    "Elle est né à Paris.",
+    "Elle a mangé à Paris.",
+    "Elle a mangée à Paris."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O passé composé se faz quase sempre com avoir (elle a mangé). Os verbos de ir e vir e de mudança de estado (naître, mourir, aller, venir, arriver, partir, rester…) se fazem com être, e então o particípio concorda com o sujeito: elle est née. Com avoir, não concorda: elle a mangé.\nAs alternativas:\nElle est née à Paris — ela nasceu em Paris.\nElle a né à Paris — ✗ naître faz o passé composé com être: elle est née.\nElle est né à Paris — ✗ com être, o particípio concorda com o sujeito: née.\nElle a mangé à Paris — ela comeu em Paris.\nElle a mangée à Paris — ✗ com avoir, o particípio não concorda com o sujeito: elle a mangé.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p268",
+    "fr-p013"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k019",
+   "tipo": "contraste",
+   "conjunto": "f09",
+   "fr": "Elle a mangé à Paris.",
+   "pt": "Ela comeu em Paris.",
+   "distratoresFr": [
+    "Elle est née à Paris.",
+    "Elle a né à Paris.",
+    "Elle est né à Paris.",
+    "Elle a mangée à Paris."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O passé composé se faz quase sempre com avoir (elle a mangé). Os verbos de ir e vir e de mudança de estado (naître, mourir, aller, venir, arriver, partir, rester…) se fazem com être, e então o particípio concorda com o sujeito: elle est née. Com avoir, não concorda: elle a mangé.\nAs alternativas:\nElle est née à Paris — ela nasceu em Paris.\nElle a né à Paris — ✗ naître faz o passé composé com être: elle est née.\nElle est né à Paris — ✗ com être, o particípio concorda com o sujeito: née.\nElle a mangé à Paris — ela comeu em Paris.\nElle a mangée à Paris — ✗ com avoir, o particípio não concorda com o sujeito: elle a mangé.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p268",
+    "fr-p013"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k020",
+   "tipo": "contraste",
+   "conjunto": "f10",
+   "fr": "J'habite ici depuis deux ans.",
+   "pt": "Moro aqui há dois anos.",
+   "distratoresFr": [
+    "J'habitais ici il y a deux ans.",
+    "J'habite ici depuis 2020.",
+    "J'habite ici il y a deux ans.",
+    "J'ai habité ici depuis deux ans."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «há» do que ainda dura é depuis, com o presente: j'habite ici depuis deux ans (e depuis 2020, «desde»). O «há» do que já passou é il y a: j'habitais ici il y a deux ans.\nAs alternativas:\nJ'habite ici depuis deux ans — moro aqui há dois anos (e ainda moro).\nJ'habitais ici il y a deux ans — dois anos atrás, eu morava aqui.\nJ'habite ici depuis 2020 — moro aqui desde 2020.\nJ'habite ici il y a deux ans — ✗ o que ainda dura vai com depuis: depuis deux ans.\nJ'ai habité ici depuis deux ans — ✗ com depuis, o que ainda dura fica no presente: j'habite.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p016",
+    "fr-p048",
+    "fr-p052",
+    "fr-p120"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k021",
+   "tipo": "contraste",
+   "conjunto": "f10",
+   "fr": "J'habitais ici il y a deux ans.",
+   "pt": "Dois anos atrás, eu morava aqui.",
+   "distratoresFr": [
+    "J'habite ici depuis deux ans.",
+    "J'habite ici depuis 2020.",
+    "J'habite ici il y a deux ans.",
+    "J'ai habité ici depuis deux ans."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «há» do que ainda dura é depuis, com o presente: j'habite ici depuis deux ans (e depuis 2020, «desde»). O «há» do que já passou é il y a: j'habitais ici il y a deux ans.\nAs alternativas:\nJ'habite ici depuis deux ans — moro aqui há dois anos (e ainda moro).\nJ'habitais ici il y a deux ans — dois anos atrás, eu morava aqui.\nJ'habite ici depuis 2020 — moro aqui desde 2020.\nJ'habite ici il y a deux ans — ✗ o que ainda dura vai com depuis: depuis deux ans.\nJ'ai habité ici depuis deux ans — ✗ com depuis, o que ainda dura fica no presente: j'habite.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p016",
+    "fr-p048",
+    "fr-p052",
+    "fr-p120"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k022",
+   "tipo": "contraste",
+   "conjunto": "f10",
+   "fr": "J'habite ici depuis 2020.",
+   "pt": "Moro aqui desde 2020.",
+   "distratoresFr": [
+    "J'habite ici depuis deux ans.",
+    "J'habitais ici il y a deux ans.",
+    "J'habite ici il y a deux ans.",
+    "J'ai habité ici depuis deux ans."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «há» do que ainda dura é depuis, com o presente: j'habite ici depuis deux ans (e depuis 2020, «desde»). O «há» do que já passou é il y a: j'habitais ici il y a deux ans.\nAs alternativas:\nJ'habite ici depuis deux ans — moro aqui há dois anos (e ainda moro).\nJ'habitais ici il y a deux ans — dois anos atrás, eu morava aqui.\nJ'habite ici depuis 2020 — moro aqui desde 2020.\nJ'habite ici il y a deux ans — ✗ o que ainda dura vai com depuis: depuis deux ans.\nJ'ai habité ici depuis deux ans — ✗ com depuis, o que ainda dura fica no presente: j'habite.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p016",
+    "fr-p048",
+    "fr-p052",
+    "fr-p120"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k023",
+   "tipo": "contraste",
+   "conjunto": "f11",
+   "fr": "Quand j'arriverai, je t'appellerai.",
+   "pt": "Quando eu chegar, eu te ligo.",
+   "distratoresFr": [
+    "Quand j'arriver, je t'appellerai.",
+    "Quand je suis arrivé, je t'ai appelé.",
+    "Si j'arrive, je t'appellerai.",
+    "Si j'arriverai, je t'appellerai."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O futuro do subjuntivo do português (quando eu chegar) não existe em francês. Depois de quand, o futuro: quand j'arriverai. Depois de si, o presente: si j'arrive. Nunca o infinitivo, e nunca o futuro depois de si.\nAs alternativas:\nQuand j'arriverai, je t'appellerai — quando eu chegar, eu te ligo.\nQuand j'arriver, je t'appellerai — ✗ não há futuro do subjuntivo; depois de quand, o futuro: quand j'arriverai.\nQuand je suis arrivé, je t'ai appelé — quando eu cheguei, eu te liguei.\nSi j'arrive, je t'appellerai — se eu chegar, eu te ligo.\nSi j'arriverai, je t'appellerai — ✗ depois de si, nunca o futuro: si j'arrive.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p115",
+    "fr-p229"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k024",
+   "tipo": "contraste",
+   "conjunto": "f11",
+   "fr": "Quand je suis arrivé, je t'ai appelé.",
+   "pt": "Quando eu cheguei, eu te liguei.",
+   "distratoresFr": [
+    "Quand j'arriverai, je t'appellerai.",
+    "Quand j'arriver, je t'appellerai.",
+    "Si j'arrive, je t'appellerai.",
+    "Si j'arriverai, je t'appellerai."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O futuro do subjuntivo do português (quando eu chegar) não existe em francês. Depois de quand, o futuro: quand j'arriverai. Depois de si, o presente: si j'arrive. Nunca o infinitivo, e nunca o futuro depois de si.\nAs alternativas:\nQuand j'arriverai, je t'appellerai — quando eu chegar, eu te ligo.\nQuand j'arriver, je t'appellerai — ✗ não há futuro do subjuntivo; depois de quand, o futuro: quand j'arriverai.\nQuand je suis arrivé, je t'ai appelé — quando eu cheguei, eu te liguei.\nSi j'arrive, je t'appellerai — se eu chegar, eu te ligo.\nSi j'arriverai, je t'appellerai — ✗ depois de si, nunca o futuro: si j'arrive.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p115",
+    "fr-p229"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k025",
+   "tipo": "contraste",
+   "conjunto": "f11",
+   "fr": "Si j'arrive, je t'appellerai.",
+   "pt": "Se eu chegar, eu te ligo.",
+   "distratoresFr": [
+    "Quand j'arriverai, je t'appellerai.",
+    "Quand j'arriver, je t'appellerai.",
+    "Quand je suis arrivé, je t'ai appelé.",
+    "Si j'arriverai, je t'appellerai."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O futuro do subjuntivo do português (quando eu chegar) não existe em francês. Depois de quand, o futuro: quand j'arriverai. Depois de si, o presente: si j'arrive. Nunca o infinitivo, e nunca o futuro depois de si.\nAs alternativas:\nQuand j'arriverai, je t'appellerai — quando eu chegar, eu te ligo.\nQuand j'arriver, je t'appellerai — ✗ não há futuro do subjuntivo; depois de quand, o futuro: quand j'arriverai.\nQuand je suis arrivé, je t'ai appelé — quando eu cheguei, eu te liguei.\nSi j'arrive, je t'appellerai — se eu chegar, eu te ligo.\nSi j'arriverai, je t'appellerai — ✗ depois de si, nunca o futuro: si j'arrive.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p115",
+    "fr-p229"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k026",
+   "tipo": "contraste",
+   "conjunto": "f12",
+   "fr": "Si j'avais de l'argent, je voyagerais.",
+   "pt": "Se eu tivesse dinheiro, viajaria.",
+   "distratoresFr": [
+    "Si j'ai de l'argent, je voyagerai.",
+    "Si j'aurai de l'argent, je voyagerai.",
+    "Si j'avais de l'argent, je voyagerai.",
+    "Si j'ai de l'argent, je voyagerais."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Se eu tiver (pode ser): si + presente, e o futuro na outra parte. Se eu tivesse (é só hipótese): si + imparfait (si j'avais), e o conditionnel na outra parte (je voyagerais). O futuro e o conditionnel nunca vão depois do si.\nAs alternativas:\nSi j'avais de l'argent, je voyagerais — se eu tivesse dinheiro, viajaria.\nSi j'ai de l'argent, je voyagerai — se eu tiver dinheiro, vou viajar.\nSi j'aurai de l'argent, je voyagerai — ✗ depois de si, nunca o futuro: si j'ai.\nSi j'avais de l'argent, je voyagerai — ✗ com o imparfait depois do si, a outra parte leva o conditionnel: je voyagerais.\nSi j'ai de l'argent, je voyagerais — ✗ com o presente depois do si, a outra parte leva o futuro: je voyagerai.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p002",
+    "fr-p035",
+    "fr-p183"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k027",
+   "tipo": "contraste",
+   "conjunto": "f12",
+   "fr": "Si j'ai de l'argent, je voyagerai.",
+   "pt": "Se eu tiver dinheiro, vou viajar.",
+   "distratoresFr": [
+    "Si j'avais de l'argent, je voyagerais.",
+    "Si j'aurai de l'argent, je voyagerai.",
+    "Si j'avais de l'argent, je voyagerai.",
+    "Si j'ai de l'argent, je voyagerais."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Se eu tiver (pode ser): si + presente, e o futuro na outra parte. Se eu tivesse (é só hipótese): si + imparfait (si j'avais), e o conditionnel na outra parte (je voyagerais). O futuro e o conditionnel nunca vão depois do si.\nAs alternativas:\nSi j'avais de l'argent, je voyagerais — se eu tivesse dinheiro, viajaria.\nSi j'ai de l'argent, je voyagerai — se eu tiver dinheiro, vou viajar.\nSi j'aurai de l'argent, je voyagerai — ✗ depois de si, nunca o futuro: si j'ai.\nSi j'avais de l'argent, je voyagerai — ✗ com o imparfait depois do si, a outra parte leva o conditionnel: je voyagerais.\nSi j'ai de l'argent, je voyagerais — ✗ com o presente depois do si, a outra parte leva o futuro: je voyagerai.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p002",
+    "fr-p035",
+    "fr-p183"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k028",
+   "tipo": "contraste",
+   "conjunto": "f13",
+   "fr": "Je le vois.",
+   "pt": "Eu vejo ele.",
+   "distratoresFr": [
+    "Je vois le.",
+    "Je vois lui.",
+    "Je lui parle.",
+    "Je le parle."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O pronome objeto vem antes do verbo: je le vois (eu o vejo, «eu vejo ele»). Quem recebe com à (parler à quelqu'un) vira lui: je lui parle (eu falo com ele). Depois do verbo, nunca.\nAs alternativas:\nJe le vois — eu o vejo (eu vejo ele).\nJe vois le — ✗ o pronome vem antes do verbo: je le vois.\nJe vois lui — ✗ o pronome vem antes do verbo, e o de ver é le: je le vois.\nJe lui parle — eu falo com ele (ou com ela).\nJe le parle — ✗ parler pede à (parler à quelqu'un): je lui parle.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p010",
+    "fr-p012"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k029",
+   "tipo": "contraste",
+   "conjunto": "f13",
+   "fr": "Je lui parle.",
+   "pt": "Eu falo com ele.",
+   "distratoresFr": [
+    "Je le vois.",
+    "Je vois le.",
+    "Je vois lui.",
+    "Je le parle."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O pronome objeto vem antes do verbo: je le vois (eu o vejo, «eu vejo ele»). Quem recebe com à (parler à quelqu'un) vira lui: je lui parle (eu falo com ele). Depois do verbo, nunca.\nAs alternativas:\nJe le vois — eu o vejo (eu vejo ele).\nJe vois le — ✗ o pronome vem antes do verbo: je le vois.\nJe vois lui — ✗ o pronome vem antes do verbo, e o de ver é le: je le vois.\nJe lui parle — eu falo com ele (ou com ela).\nJe le parle — ✗ parler pede à (parler à quelqu'un): je lui parle.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p010",
+    "fr-p012"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k030",
+   "tipo": "contraste",
+   "conjunto": "f14",
+   "fr": "Le voyage est long.",
+   "pt": "A viagem é longa.",
+   "distratoresFr": [
+    "La voyage est longue.",
+    "Le message est long.",
+    "La message est longue.",
+    "La plage est belle."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Os nomes em -age são masculinos em francês, ao contrário dos em -agem do português: le voyage (a viagem), le message (a mensagem), le fromage, le garage. As exceções são poucas: la plage, la page, l'image, la cage.\nAs alternativas:\nLe voyage est long — a viagem é longa.\nLa voyage est longue — ✗ voyage é masculino: le voyage est long.\nLe message est long — a mensagem é longa.\nLa message est longue — ✗ message é masculino: le message est long.\nLa plage est belle — a praia é linda.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p087"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k031",
+   "tipo": "contraste",
+   "conjunto": "f14",
+   "fr": "Le message est long.",
+   "pt": "A mensagem é longa.",
+   "distratoresFr": [
+    "Le voyage est long.",
+    "La voyage est longue.",
+    "La message est longue.",
+    "La plage est belle."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Os nomes em -age são masculinos em francês, ao contrário dos em -agem do português: le voyage (a viagem), le message (a mensagem), le fromage, le garage. As exceções são poucas: la plage, la page, l'image, la cage.\nAs alternativas:\nLe voyage est long — a viagem é longa.\nLa voyage est longue — ✗ voyage é masculino: le voyage est long.\nLe message est long — a mensagem é longa.\nLa message est longue — ✗ message é masculino: le message est long.\nLa plage est belle — a praia é linda.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p087"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k032",
+   "tipo": "contraste",
+   "conjunto": "f14",
+   "fr": "La plage est belle.",
+   "pt": "A praia é linda.",
+   "distratoresFr": [
+    "Le voyage est long.",
+    "La voyage est longue.",
+    "Le message est long.",
+    "La message est longue."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Os nomes em -age são masculinos em francês, ao contrário dos em -agem do português: le voyage (a viagem), le message (a mensagem), le fromage, le garage. As exceções são poucas: la plage, la page, l'image, la cage.\nAs alternativas:\nLe voyage est long — a viagem é longa.\nLa voyage est longue — ✗ voyage é masculino: le voyage est long.\nLe message est long — a mensagem é longa.\nLa message est longue — ✗ message é masculino: le message est long.\nLa plage est belle — a praia é linda.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p087"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k033",
+   "tipo": "contraste",
+   "conjunto": "f15",
+   "fr": "Il faut que tu viennes.",
+   "pt": "É preciso que você venha.",
+   "distratoresFr": [
+    "Il faut que tu viens.",
+    "Je veux que tu viennes.",
+    "Je veux que tu viens.",
+    "Je veux tu venir."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Depois de il faut que e de vouloir que, o verbo vai no subjonctif, como no português (que você venha): que tu viennes. Com o mesmo sujeito não há que, e sim o infinitivo (je veux venir).\nAs alternativas:\nIl faut que tu viennes — é preciso que você venha.\nIl faut que tu viens — ✗ depois de il faut que, o subjonctif: que tu viennes.\nJe veux que tu viennes — eu quero que você venha.\nJe veux que tu viens — ✗ depois de vouloir que, o subjonctif: que tu viennes.\nJe veux tu venir — ✗ com outro sujeito, vouloir que e o subjonctif: je veux que tu viennes.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p122",
+    "fr-p007",
+    "fr-p009"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k034",
+   "tipo": "contraste",
+   "conjunto": "f15",
+   "fr": "Je veux que tu viennes.",
+   "pt": "Eu quero que você venha.",
+   "distratoresFr": [
+    "Il faut que tu viennes.",
+    "Il faut que tu viens.",
+    "Je veux que tu viens.",
+    "Je veux tu venir."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Depois de il faut que e de vouloir que, o verbo vai no subjonctif, como no português (que você venha): que tu viennes. Com o mesmo sujeito não há que, e sim o infinitivo (je veux venir).\nAs alternativas:\nIl faut que tu viennes — é preciso que você venha.\nIl faut que tu viens — ✗ depois de il faut que, o subjonctif: que tu viennes.\nJe veux que tu viennes — eu quero que você venha.\nJe veux que tu viens — ✗ depois de vouloir que, o subjonctif: que tu viennes.\nJe veux tu venir — ✗ com outro sujeito, vouloir que e o subjonctif: je veux que tu viennes.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p122",
+    "fr-p007",
+    "fr-p009"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k035",
+   "tipo": "contraste",
+   "conjunto": "f16",
+   "fr": "Ce pain est meilleur.",
+   "pt": "Este pão é melhor.",
+   "distratoresFr": [
+    "Ce pain est plus bon.",
+    "Elle chante mieux.",
+    "Elle chante meilleur.",
+    "Elle chante plus bien."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Os dois são «melhor». Meilleur é de bon, e vai com o nome (ce pain est meilleur); mieux é de bien, e vai com o verbo (elle chante mieux). Plus bon e plus bien não se dizem.\nAs alternativas:\nCe pain est meilleur — este pão é melhor.\nCe pain est plus bon — ✗ o comparativo de bon é meilleur.\nElle chante mieux — ela canta melhor.\nElle chante meilleur — ✗ com o verbo, mieux: elle chante mieux.\nElle chante plus bien — ✗ o comparativo de bien é mieux.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p036",
+    "fr-p044",
+    "fr-p074",
+    "fr-p318",
+    "fr-p027",
+    "fr-p289"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k036",
+   "tipo": "contraste",
+   "conjunto": "f16",
+   "fr": "Elle chante mieux.",
+   "pt": "Ela canta melhor.",
+   "distratoresFr": [
+    "Ce pain est meilleur.",
+    "Ce pain est plus bon.",
+    "Elle chante meilleur.",
+    "Elle chante plus bien."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Os dois são «melhor». Meilleur é de bon, e vai com o nome (ce pain est meilleur); mieux é de bien, e vai com o verbo (elle chante mieux). Plus bon e plus bien não se dizem.\nAs alternativas:\nCe pain est meilleur — este pão é melhor.\nCe pain est plus bon — ✗ o comparativo de bon é meilleur.\nElle chante mieux — ela canta melhor.\nElle chante meilleur — ✗ com o verbo, mieux: elle chante mieux.\nElle chante plus bien — ✗ o comparativo de bien é mieux.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p036",
+    "fr-p044",
+    "fr-p074",
+    "fr-p318",
+    "fr-p027",
+    "fr-p289"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k037",
+   "tipo": "contraste",
+   "conjunto": "f17",
+   "fr": "Je viens de manger.",
+   "pt": "Eu acabei de comer.",
+   "distratoresFr": [
+    "Je suis venu de manger.",
+    "Je vais manger.",
+    "Je vais de manger."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Acabar de fazer é venir de + infinitivo: je viens de manger. Ir fazer é aller + infinitivo: je vais manger. O «acabei» não vira passé composé.\nAs alternativas:\nJe viens de manger — eu acabei de comer.\nJe suis venu de manger — ✗ acabar de fazer é venir de no presente: je viens de manger.\nJe vais manger — eu vou comer.\nJe vais de manger — ✗ aller vai direto ao infinitivo: je vais manger.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p009",
+    "fr-p003",
+    "fr-p013"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "fr",
+   "id": "fr-k038",
+   "tipo": "contraste",
+   "conjunto": "f17",
+   "fr": "Je vais manger.",
+   "pt": "Eu vou comer.",
+   "distratoresFr": [
+    "Je viens de manger.",
+    "Je suis venu de manger.",
+    "Je vais de manger."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Acabar de fazer é venir de + infinitivo: je viens de manger. Ir fazer é aller + infinitivo: je vais manger. O «acabei» não vira passé composé.\nAs alternativas:\nJe viens de manger — eu acabei de comer.\nJe suis venu de manger — ✗ acabar de fazer é venir de no presente: je viens de manger.\nJe vais manger — eu vou comer.\nJe vais de manger — ✗ aller vai direto ao infinitivo: je vais manger.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "fr-p009",
+    "fr-p003",
+    "fr-p013"
+   ],
+   "publicos": [
+    "pt"
    ]
   }
  ]
