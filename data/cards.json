@@ -1,8 +1,8 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-10-21",
- "total": 1940,
+ "gerado_em": "2026-10-23",
+ "total": 1972,
  "cards": [
   {
    "idioma": "es",
@@ -82369,6 +82369,906 @@
     "p022",
     "p358",
     "p906"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k001",
+   "tipo": "contraste",
+   "conjunto": "e01",
+   "es": "Mi hijo es listo.",
+   "pt": "Meu filho é esperto.",
+   "distratoresEs": [
+    "Mi hijo está listo.",
+    "Mi hijo es esperto.",
+    "Mi hijo es pronto."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "«Listo» muda de sentido com o verbo: ser listo é ser esperto; estar listo é estar pronto. E «pronto», em espanhol, é «logo, cedo» (llega pronto, chega cedo).\nAs alternativas:\nMi hijo es listo — meu filho é esperto.\nMi hijo está listo — meu filho está pronto.\nMi hijo es esperto — ✗ «esperto» não existe em espanhol; quem é esperto es listo.\nMi hijo es pronto — ✗ «pronto» é «logo, cedo», e não diz como alguém é.\n🇪🇸 listo → 🇧🇷 esperto (ser), pronto (estar)\n🇪🇸 pronto → 🇧🇷 logo, cedo",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p450",
+    "p351",
+    "p358",
+    "p339",
+    "p261"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k002",
+   "tipo": "contraste",
+   "conjunto": "e01",
+   "es": "Mi hijo está listo.",
+   "pt": "Meu filho está pronto.",
+   "distratoresEs": [
+    "Mi hijo es listo.",
+    "Mi hijo es esperto.",
+    "Mi hijo es pronto."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "«Listo» muda de sentido com o verbo: ser listo é ser esperto; estar listo é estar pronto. E «pronto», em espanhol, é «logo, cedo» (llega pronto, chega cedo).\nAs alternativas:\nMi hijo es listo — meu filho é esperto.\nMi hijo está listo — meu filho está pronto.\nMi hijo es esperto — ✗ «esperto» não existe em espanhol; quem é esperto es listo.\nMi hijo es pronto — ✗ «pronto» é «logo, cedo», e não diz como alguém é.\n🇪🇸 listo → 🇧🇷 esperto (ser), pronto (estar)\n🇪🇸 pronto → 🇧🇷 logo, cedo",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p450",
+    "p351",
+    "p358",
+    "p339",
+    "p261"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k003",
+   "tipo": "contraste",
+   "conjunto": "e02",
+   "es": "Mi amigo es aburrido.",
+   "pt": "Meu amigo é chato.",
+   "distratoresEs": [
+    "Mi amigo está aburrido.",
+    "Mi amigo es chato.",
+    "Mi amigo está chato."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Ser aburrido é ser chato; estar aburrido é estar entediado. E «chato», em espanhol, é «achatado» (nariz chata): para gente chata, aburrido ou pesado.\nAs alternativas:\nMi amigo es aburrido — meu amigo é chato.\nMi amigo está aburrido — meu amigo está entediado.\nMi amigo es chato — ✗ «chato» é «de nariz achatado», e não «chato».\nMi amigo está chato — ✗ não traduz: no Chile é «está farto»; quem está entediado está aburrido.\n🇪🇸 chato → 🇧🇷 achatado\n🇪🇸 aburrido, pesado → 🇧🇷 chato",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p609",
+    "p351",
+    "p358",
+    "p562"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k004",
+   "tipo": "contraste",
+   "conjunto": "e02",
+   "es": "Mi amigo está aburrido.",
+   "pt": "Meu amigo está entediado.",
+   "distratoresEs": [
+    "Mi amigo es aburrido.",
+    "Mi amigo es chato.",
+    "Mi amigo está chato."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Ser aburrido é ser chato; estar aburrido é estar entediado. E «chato», em espanhol, é «achatado» (nariz chata): para gente chata, aburrido ou pesado.\nAs alternativas:\nMi amigo es aburrido — meu amigo é chato.\nMi amigo está aburrido — meu amigo está entediado.\nMi amigo es chato — ✗ «chato» é «de nariz achatado», e não «chato».\nMi amigo está chato — ✗ não traduz: no Chile é «está farto»; quem está entediado está aburrido.\n🇪🇸 chato → 🇧🇷 achatado\n🇪🇸 aburrido, pesado → 🇧🇷 chato",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p609",
+    "p351",
+    "p358",
+    "p562"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k005",
+   "tipo": "contraste",
+   "conjunto": "e03",
+   "es": "Me gusta el libro.",
+   "pt": "Gosto do livro.",
+   "distratoresEs": [
+    "Me gustan los libros.",
+    "Le gusta el libro.",
+    "Yo gusto del libro.",
+    "Me gusta los libros."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Em espanhol quem agrada é a coisa: «el libro me gusta», o livro me agrada. Por isso o verbo concorda com ela (me gusta el libro, me gustan los libros), e quem gosta vai no pronome (me, te, le).\nAs alternativas:\nMe gusta el libro — gosto do livro.\nMe gustan los libros — gosto dos livros.\nLe gusta el libro — ele (ela, você) gosta do livro.\nYo gusto del libro — ✗ é a construção do português; em espanhol, quem agrada é el libro.\nMe gusta los libros — ✗ o verbo concorda com los libros: me gustan.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p398",
+    "p501"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k006",
+   "tipo": "contraste",
+   "conjunto": "e03",
+   "es": "Me gustan los libros.",
+   "pt": "Gosto dos livros.",
+   "distratoresEs": [
+    "Me gusta el libro.",
+    "Le gusta el libro.",
+    "Yo gusto del libro.",
+    "Me gusta los libros."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Em espanhol quem agrada é a coisa: «el libro me gusta», o livro me agrada. Por isso o verbo concorda com ela (me gusta el libro, me gustan los libros), e quem gosta vai no pronome (me, te, le).\nAs alternativas:\nMe gusta el libro — gosto do livro.\nMe gustan los libros — gosto dos livros.\nLe gusta el libro — ele (ela, você) gosta do livro.\nYo gusto del libro — ✗ é a construção do português; em espanhol, quem agrada é el libro.\nMe gusta los libros — ✗ o verbo concorda com los libros: me gustan.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p398",
+    "p501"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k007",
+   "tipo": "contraste",
+   "conjunto": "e03",
+   "es": "Le gusta el libro.",
+   "pt": "Ele gosta do livro.",
+   "distratoresEs": [
+    "Me gusta el libro.",
+    "Me gustan los libros.",
+    "Yo gusto del libro.",
+    "Me gusta los libros."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Em espanhol quem agrada é a coisa: «el libro me gusta», o livro me agrada. Por isso o verbo concorda com ela (me gusta el libro, me gustan los libros), e quem gosta vai no pronome (me, te, le).\nAs alternativas:\nMe gusta el libro — gosto do livro.\nMe gustan los libros — gosto dos livros.\nLe gusta el libro — ele (ela, você) gosta do livro.\nYo gusto del libro — ✗ é a construção do português; em espanhol, quem agrada é el libro.\nMe gusta los libros — ✗ o verbo concorda com los libros: me gustan.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p398",
+    "p501"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k008",
+   "tipo": "contraste",
+   "conjunto": "e04",
+   "es": "Me duele la cabeza.",
+   "pt": "Minha cabeça dói.",
+   "distratoresEs": [
+    "Me duelen los pies.",
+    "Me duele los pies.",
+    "Mi cabeza duele.",
+    "Me duelen la cabeza."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Doler é como gustar: o que dói é o sujeito, e o verbo concorda com ele (me duele la cabeza, me duelen los pies). A parte do corpo vai com o artigo, e de quem é diz o pronome: me duele la cabeza, e não «mi cabeza».\nAs alternativas:\nMe duele la cabeza — minha cabeça dói.\nMe duelen los pies — meus pés doem.\nMe duele los pies — ✗ o verbo concorda com los pies: me duelen.\nMi cabeza duele — ✗ é decalque do português: o natural é me duele la cabeza, com o pronome e o artigo.\nMe duelen la cabeza — ✗ la cabeza é uma só: me duele.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p416",
+    "p740",
+    "p506"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k009",
+   "tipo": "contraste",
+   "conjunto": "e04",
+   "es": "Me duelen los pies.",
+   "pt": "Meus pés doem.",
+   "distratoresEs": [
+    "Me duele la cabeza.",
+    "Me duele los pies.",
+    "Mi cabeza duele.",
+    "Me duelen la cabeza."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Doler é como gustar: o que dói é o sujeito, e o verbo concorda com ele (me duele la cabeza, me duelen los pies). A parte do corpo vai com o artigo, e de quem é diz o pronome: me duele la cabeza, e não «mi cabeza».\nAs alternativas:\nMe duele la cabeza — minha cabeça dói.\nMe duelen los pies — meus pés doem.\nMe duele los pies — ✗ o verbo concorda com los pies: me duelen.\nMi cabeza duele — ✗ é decalque do português: o natural é me duele la cabeza, com o pronome e o artigo.\nMe duelen la cabeza — ✗ la cabeza é uma só: me duele.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p416",
+    "p740",
+    "p506"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k010",
+   "tipo": "contraste",
+   "conjunto": "e05",
+   "es": "Es muy caro.",
+   "pt": "É muito caro.",
+   "distratoresEs": [
+    "Es mucho más caro.",
+    "Es muy más caro.",
+    "Es mucho caro."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Antes de adjetivo e de advérbio, «muito» é muy (muy caro); antes de más, menos, mejor, peor, mayor e menor, é mucho (mucho más caro).\nAs alternativas:\nEs muy caro — é muito caro.\nEs mucho más caro — é muito mais caro.\nEs muy más caro — ✗ antes de más, «muito» é mucho.\nEs mucho caro — ✗ antes de adjetivo, «muito» é muy.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p351",
+    "p360",
+    "p361",
+    "p403",
+    "p586"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k011",
+   "tipo": "contraste",
+   "conjunto": "e05",
+   "es": "Es mucho más caro.",
+   "pt": "É muito mais caro.",
+   "distratoresEs": [
+    "Es muy caro.",
+    "Es muy más caro.",
+    "Es mucho caro."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Antes de adjetivo e de advérbio, «muito» é muy (muy caro); antes de más, menos, mejor, peor, mayor e menor, é mucho (mucho más caro).\nAs alternativas:\nEs muy caro — é muito caro.\nEs mucho más caro — é muito mais caro.\nEs muy más caro — ✗ antes de más, «muito» é mucho.\nEs mucho caro — ✗ antes de adjetivo, «muito» é muy.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p351",
+    "p360",
+    "p361",
+    "p403",
+    "p586"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k012",
+   "tipo": "contraste",
+   "conjunto": "e06",
+   "es": "Trabajo mucho.",
+   "pt": "Trabalho muito.",
+   "distratoresEs": [
+    "Trabajo muy bien.",
+    "Trabajo muy.",
+    "Trabajo mucho bien."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Depois do verbo, sozinho, «muito» é mucho (trabajo mucho); muy só vem antes de um adjetivo ou de um advérbio (muy bien).\nAs alternativas:\nTrabajo mucho — trabalho muito.\nTrabajo muy bien — trabalho muito bem.\nTrabajo muy — ✗ muy não fica sozinho; depois do verbo é mucho.\nTrabajo mucho bien — ✗ antes de bien, «muito» é muy.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p898",
+    "p360",
+    "p361",
+    "p369"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k013",
+   "tipo": "contraste",
+   "conjunto": "e06",
+   "es": "Trabajo muy bien.",
+   "pt": "Trabalho muito bem.",
+   "distratoresEs": [
+    "Trabajo mucho.",
+    "Trabajo muy.",
+    "Trabajo mucho bien."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Depois do verbo, sozinho, «muito» é mucho (trabajo mucho); muy só vem antes de um adjetivo ou de um advérbio (muy bien).\nAs alternativas:\nTrabajo mucho — trabalho muito.\nTrabajo muy bien — trabalho muito bem.\nTrabajo muy — ✗ muy não fica sozinho; depois do verbo é mucho.\nTrabajo mucho bien — ✗ antes de bien, «muito» é muy.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p898",
+    "p360",
+    "p361",
+    "p369"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k014",
+   "tipo": "contraste",
+   "conjunto": "e07",
+   "es": "Cuando llegue a casa, te llamo.",
+   "pt": "Quando eu chegar em casa, te ligo.",
+   "distratoresEs": [
+    "Cuando llegué a casa, te llamé.",
+    "Cuando llego a casa, te llamo.",
+    "Cuando llegar a casa, te llamo.",
+    "Cuando llegaré a casa, te llamo."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O espanhol não usa o futuro do subjuntivo do português («quando eu chegar»): depois de cuando, para o futuro, vem o presente do subjuntivo, cuando llegue. E o acento muda tudo: llegue é «chegar» (futuro), llegué é «cheguei».\nAs alternativas:\nCuando llegue a casa, te llamo — quando eu chegar em casa, te ligo.\nCuando llegué a casa, te llamé — quando cheguei em casa, te liguei.\nCuando llego a casa, te llamo — quando chego em casa, te ligo (sempre).\nCuando llegar a casa, te llamo — ✗ não existe em espanhol o futuro do subjuntivo: cuando llegue.\nCuando llegaré a casa, te llamo — ✗ depois de cuando não vem futuro: cuando llegue.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p363",
+    "p400",
+    "p381"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k015",
+   "tipo": "contraste",
+   "conjunto": "e07",
+   "es": "Cuando llegué a casa, te llamé.",
+   "pt": "Quando cheguei em casa, te liguei.",
+   "distratoresEs": [
+    "Cuando llegue a casa, te llamo.",
+    "Cuando llego a casa, te llamo.",
+    "Cuando llegar a casa, te llamo.",
+    "Cuando llegaré a casa, te llamo."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O espanhol não usa o futuro do subjuntivo do português («quando eu chegar»): depois de cuando, para o futuro, vem o presente do subjuntivo, cuando llegue. E o acento muda tudo: llegue é «chegar» (futuro), llegué é «cheguei».\nAs alternativas:\nCuando llegue a casa, te llamo — quando eu chegar em casa, te ligo.\nCuando llegué a casa, te llamé — quando cheguei em casa, te liguei.\nCuando llego a casa, te llamo — quando chego em casa, te ligo (sempre).\nCuando llegar a casa, te llamo — ✗ não existe em espanhol o futuro do subjuntivo: cuando llegue.\nCuando llegaré a casa, te llamo — ✗ depois de cuando não vem futuro: cuando llegue.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p363",
+    "p400",
+    "p381"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k016",
+   "tipo": "contraste",
+   "conjunto": "e08",
+   "es": "Haz lo que quieras.",
+   "pt": "Faça o que você quiser.",
+   "distratoresEs": [
+    "Haz lo que quieres.",
+    "Haz lo que querías.",
+    "Haz lo que querrás."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "«O que você quiser» é lo que quieras, no presente do subjuntivo: qualquer coisa, ainda não se sabe qual. Lo que quieres, no indicativo, é a coisa que você já quer. Haz é o imperativo de tú.\nAs alternativas:\nHaz lo que quieras — faça o que você quiser.\nHaz lo que quieres — faça o que você quer (aquilo que você já quer).\nHaz lo que querías — faça o que você queria.\nHaz lo que querrás — ✗ o futuro não serve aqui: lo que quieras.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p353",
+    "p377"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k017",
+   "tipo": "contraste",
+   "conjunto": "e08",
+   "es": "Haz lo que quieres.",
+   "pt": "Faça aquilo que você quer.",
+   "distratoresEs": [
+    "Haz lo que quieras.",
+    "Haz lo que querías.",
+    "Haz lo que querrás."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "«O que você quiser» é lo que quieras, no presente do subjuntivo: qualquer coisa, ainda não se sabe qual. Lo que quieres, no indicativo, é a coisa que você já quer. Haz é o imperativo de tú.\nAs alternativas:\nHaz lo que quieras — faça o que você quiser.\nHaz lo que quieres — faça o que você quer (aquilo que você já quer).\nHaz lo que querías — faça o que você queria.\nHaz lo que querrás — ✗ o futuro não serve aqui: lo que quieras.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p353",
+    "p377"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k018",
+   "tipo": "contraste",
+   "conjunto": "e09",
+   "es": "Si tengo tiempo, voy.",
+   "pt": "Se eu tiver tempo, vou.",
+   "distratoresEs": [
+    "Si tuviera tiempo, iría.",
+    "Si tendría tiempo, iría.",
+    "Si tenga tiempo, voy."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Depois de si não vêm o condicional nem o presente do subjuntivo. Se a condição é possível, presente do indicativo (si tengo tiempo, voy); se é hipótese, imperfeito do subjuntivo, com o condicional depois (si tuviera tiempo, iría).\nAs alternativas:\nSi tengo tiempo, voy — se eu tiver tempo, vou.\nSi tuviera tiempo, iría — se eu tivesse tempo, iria.\nSi tendría tiempo, iría — ✗ depois de si não vem condicional: si tuviera (em algumas regiões se ouve, mas a norma o recusa).\nSi tenga tiempo, voy — ✗ depois de si não vem presente do subjuntivo: si tengo.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p354",
+    "p424",
+    "p355"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k019",
+   "tipo": "contraste",
+   "conjunto": "e09",
+   "es": "Si tuviera tiempo, iría.",
+   "pt": "Se eu tivesse tempo, iria.",
+   "distratoresEs": [
+    "Si tengo tiempo, voy.",
+    "Si tendría tiempo, iría.",
+    "Si tenga tiempo, voy."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Depois de si não vêm o condicional nem o presente do subjuntivo. Se a condição é possível, presente do indicativo (si tengo tiempo, voy); se é hipótese, imperfeito do subjuntivo, com o condicional depois (si tuviera tiempo, iría).\nAs alternativas:\nSi tengo tiempo, voy — se eu tiver tempo, vou.\nSi tuviera tiempo, iría — se eu tivesse tempo, iria.\nSi tendría tiempo, iría — ✗ depois de si não vem condicional: si tuviera (em algumas regiões se ouve, mas a norma o recusa).\nSi tenga tiempo, voy — ✗ depois de si não vem presente do subjuntivo: si tengo.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p354",
+    "p424",
+    "p355"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k020",
+   "tipo": "contraste",
+   "conjunto": "e10",
+   "es": "Hay muchos amigos aquí.",
+   "pt": "Há muitos amigos aqui.",
+   "distratoresEs": [
+    "Tiene muchos amigos aquí.",
+    "Hay mucho amigos aquí.",
+    "Hay los amigos aquí."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «tem» de existir («tem muita gente aqui») é hay, e nunca tener. Tener é ter, possuir: tiene muchos amigos, ele tem muitos amigos. E hay não leva o artigo definido: hay amigos, mas los amigos están aquí.\nAs alternativas:\nHay muchos amigos aquí — há (tem) muitos amigos aqui.\nTiene muchos amigos aquí — ele tem muitos amigos aqui.\nHay mucho amigos aquí — ✗ mucho concorda com amigos: muchos.\nHay los amigos aquí — ✗ hay não leva o artigo definido: los amigos están aquí.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p352",
+    "p354",
+    "p609",
+    "p378",
+    "p361"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k021",
+   "tipo": "contraste",
+   "conjunto": "e10",
+   "es": "Tiene muchos amigos aquí.",
+   "pt": "Ele tem muitos amigos aqui.",
+   "distratoresEs": [
+    "Hay muchos amigos aquí.",
+    "Hay mucho amigos aquí.",
+    "Hay los amigos aquí."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «tem» de existir («tem muita gente aqui») é hay, e nunca tener. Tener é ter, possuir: tiene muchos amigos, ele tem muitos amigos. E hay não leva o artigo definido: hay amigos, mas los amigos están aquí.\nAs alternativas:\nHay muchos amigos aquí — há (tem) muitos amigos aqui.\nTiene muchos amigos aquí — ele tem muitos amigos aqui.\nHay mucho amigos aquí — ✗ mucho concorda com amigos: muchos.\nHay los amigos aquí — ✗ hay não leva o artigo definido: los amigos están aquí.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p352",
+    "p354",
+    "p609",
+    "p378",
+    "p361"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k022",
+   "tipo": "contraste",
+   "conjunto": "e11",
+   "es": "Veo a mi madre.",
+   "pt": "Vejo minha mãe.",
+   "distratoresEs": [
+    "Veo mi casa.",
+    "Veo mi madre.",
+    "Veo a mi casa."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Quando o objeto direto é uma pessoa determinada, ele leva a: veo a mi madre. Coisa não leva: veo mi casa.\nAs alternativas:\nVeo a mi madre — vejo minha mãe.\nVeo mi casa — vejo minha casa.\nVeo mi madre — ✗ pessoa como objeto direto leva a: veo a mi madre.\nVeo a mi casa — ✗ coisa não leva a: veo mi casa.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p368",
+    "p1056",
+    "p400"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k023",
+   "tipo": "contraste",
+   "conjunto": "e11",
+   "es": "Veo mi casa.",
+   "pt": "Vejo minha casa.",
+   "distratoresEs": [
+    "Veo a mi madre.",
+    "Veo mi madre.",
+    "Veo a mi casa."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Quando o objeto direto é uma pessoa determinada, ele leva a: veo a mi madre. Coisa não leva: veo mi casa.\nAs alternativas:\nVeo a mi madre — vejo minha mãe.\nVeo mi casa — vejo minha casa.\nVeo mi madre — ✗ pessoa como objeto direto leva a: veo a mi madre.\nVeo a mi casa — ✗ coisa não leva a: veo mi casa.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p368",
+    "p1056",
+    "p400"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k024",
+   "tipo": "contraste",
+   "conjunto": "e12",
+   "es": "¡No hables!",
+   "pt": "Não fale!",
+   "distratoresEs": [
+    "¡Habla!",
+    "No habla.",
+    "¡No hablas!"
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A ordem negativa usa o subjuntivo: habla, «fale», mas no hables, «não fale». No Brasil se diz «não fala!», e é daí que vem o erro «¡no habla!» (que é «ele não fala»).\nAs alternativas:\n¡No hables! — não fale!.\n¡Habla! — fale!.\nNo habla — ele não fala.\n¡No hablas! — ✗ não é ordem: é «você não fala!»; a ordem é no hables.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p425"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k025",
+   "tipo": "contraste",
+   "conjunto": "e12",
+   "es": "¡Habla!",
+   "pt": "Fale!",
+   "distratoresEs": [
+    "¡No hables!",
+    "No habla.",
+    "¡No hablas!"
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A ordem negativa usa o subjuntivo: habla, «fale», mas no hables, «não fale». No Brasil se diz «não fala!», e é daí que vem o erro «¡no habla!» (que é «ele não fala»).\nAs alternativas:\n¡No hables! — não fale!.\n¡Habla! — fale!.\nNo habla — ele não fala.\n¡No hablas! — ✗ não é ordem: é «você não fala!»; a ordem é no hables.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p425"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k026",
+   "tipo": "contraste",
+   "conjunto": "e12",
+   "es": "No habla.",
+   "pt": "Ele não fala.",
+   "distratoresEs": [
+    "¡No hables!",
+    "¡Habla!",
+    "¡No hablas!"
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A ordem negativa usa o subjuntivo: habla, «fale», mas no hables, «não fale». No Brasil se diz «não fala!», e é daí que vem o erro «¡no habla!» (que é «ele não fala»).\nAs alternativas:\n¡No hables! — não fale!.\n¡Habla! — fale!.\nNo habla — ele não fala.\n¡No hablas! — ✗ não é ordem: é «você não fala!»; a ordem é no hables.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p425"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k027",
+   "tipo": "contraste",
+   "conjunto": "e13",
+   "es": "¡Dímelo!",
+   "pt": "Me diz isso!",
+   "distratoresEs": [
+    "¡No me lo digas!",
+    "¡No dímelo!",
+    "¡Dime lo!"
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Na ordem afirmativa os pronomes vão colados no fim do verbo (dímelo = di + me + lo); na negativa vêm antes, e o verbo vai ao subjuntivo (no me lo digas).\nAs alternativas:\n¡Dímelo! — me diga isso!.\n¡No me lo digas! — não me diga isso!.\n¡No dímelo! — ✗ na negativa os pronomes vêm antes, e o verbo vai ao subjuntivo: no me lo digas.\n¡Dime lo! — ✗ os pronomes vão colados ao verbo: dímelo.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p371"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k028",
+   "tipo": "contraste",
+   "conjunto": "e13",
+   "es": "¡No me lo digas!",
+   "pt": "Não me diga isso!",
+   "distratoresEs": [
+    "¡Dímelo!",
+    "¡No dímelo!",
+    "¡Dime lo!"
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Na ordem afirmativa os pronomes vão colados no fim do verbo (dímelo = di + me + lo); na negativa vêm antes, e o verbo vai ao subjuntivo (no me lo digas).\nAs alternativas:\n¡Dímelo! — me diga isso!.\n¡No me lo digas! — não me diga isso!.\n¡No dímelo! — ✗ na negativa os pronomes vêm antes, e o verbo vai ao subjuntivo: no me lo digas.\n¡Dime lo! — ✗ os pronomes vão colados ao verbo: dímelo.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p371"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k029",
+   "tipo": "contraste",
+   "conjunto": "e14",
+   "es": "Se lo di.",
+   "pt": "Eu dei isso a ele.",
+   "distratoresEs": [
+    "Lo di.",
+    "Le lo di.",
+    "Lo le di."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Quando le (ou les) vem antes de lo, la, los ou las, ele vira se: «dei isso a ele» é se lo di, e nunca le lo di. A ordem é sempre a pessoa antes da coisa.\nAs alternativas:\nSe lo di — eu dei isso a ele (a ela, a você).\nLo di — eu dei isso.\nLe lo di — ✗ le antes de lo vira se: se lo di.\nLo le di — ✗ a pessoa vem antes da coisa, e le vira se: se lo di.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p356"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k030",
+   "tipo": "contraste",
+   "conjunto": "e14",
+   "es": "Lo di.",
+   "pt": "Eu dei isso.",
+   "distratoresEs": [
+    "Se lo di.",
+    "Le lo di.",
+    "Lo le di."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Quando le (ou les) vem antes de lo, la, los ou las, ele vira se: «dei isso a ele» é se lo di, e nunca le lo di. A ordem é sempre a pessoa antes da coisa.\nAs alternativas:\nSe lo di — eu dei isso a ele (a ela, a você).\nLo di — eu dei isso.\nLe lo di — ✗ le antes de lo vira se: se lo di.\nLo le di — ✗ a pessoa vem antes da coisa, e le vira se: se lo di.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p356"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k031",
+   "tipo": "contraste",
+   "conjunto": "e15",
+   "es": "Voy al cine.",
+   "pt": "Vou ao cinema.",
+   "distratoresEs": [
+    "Voy en autobús.",
+    "Voy en el cine.",
+    "Voy de autobús.",
+    "Voy a el cine."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Para onde se vai leva a, e a + el vira al: voy al cine. O meio de transporte leva en: voy en autobús. «Vou no cinema» e «vou de ônibus» são do português.\nAs alternativas:\nVoy al cine — vou ao cinema.\nVoy en autobús — vou de ônibus.\nVoy en el cine — ✗ para onde se vai leva a: voy al cine.\nVoy de autobús — ✗ o transporte leva en: voy en autobús.\nVoy a el cine — ✗ a + el vira al: voy al cine.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p355",
+    "p625"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "k032",
+   "tipo": "contraste",
+   "conjunto": "e15",
+   "es": "Voy en autobús.",
+   "pt": "Vou de ônibus.",
+   "distratoresEs": [
+    "Voy al cine.",
+    "Voy en el cine.",
+    "Voy de autobús.",
+    "Voy a el cine."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Para onde se vai leva a, e a + el vira al: voy al cine. O meio de transporte leva en: voy en autobús. «Vou no cinema» e «vou de ônibus» são do português.\nAs alternativas:\nVoy al cine — vou ao cinema.\nVoy en autobús — vou de ônibus.\nVoy en el cine — ✗ para onde se vai leva a: voy al cine.\nVoy de autobús — ✗ o transporte leva en: voy en autobús.\nVoy a el cine — ✗ a + el vira al: voy al cine.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "p355",
+    "p625"
+   ],
+   "publicos": [
+    "pt"
    ]
   }
  ]

@@ -304,7 +304,8 @@ mesmo jeito, que mostrem as sutilezas da gramática.
     estranho («o pastor do lobo», «o cão do lobo vê»), que ficam só como alternativa errada; a frase
     que começa pelo verbo ganhou o sujeito («Ele ama…», lida antes como imperativo); e «foge nas
     trevas» virou «no meio das trevas» (no Brasil, «em» com verbo de movimento soa como direção).
-    Regras para as próximas: os dois sentidos do par plausíveis; nada de pergunta começando pelo
+    Desde 23/10 (pedido do Gere) a alternativa errada pode ser frase impossível, se confunde com a
+    certa (`PLANO.md` §10). Regras para as próximas: os dois sentidos do par plausíveis; nada de pergunta começando pelo
     verbo; cuidado com as formas iguais (*canis* nominativo e genitivo, vocativo igual ao
     nominativo, em que a pista é só a vírgula).
   - O card: `la` (a certa), `pt` (a pergunta), `distratoresLa` (as outras três), `conjunto`,

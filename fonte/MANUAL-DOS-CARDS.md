@@ -1099,3 +1099,29 @@ escreve o card:
 transparência do build; o banco do nivelamento precisa de pelo menos 6 temas
 com 3 palavras cada em todo nível de A1 a B2 (o build avisa quando falta); e
 os textos dela alimentam a vitrine do painel desde o primeiro dia.
+
+## 20. O card de contraste
+
+Desde 23/10/2026 (`PLANO.md` §10; no latim, `LATIM.md` §3.7). A pergunta é a frase na língua de
+quem estuda («Gosto dos livros.»), e as alternativas são de 4 a 5 frases da língua ensinada que
+confundem com a certa («Me gustan los libros.», «Me gusta los libros.», «Yo gusto del libro.»…).
+Os cards do mesmo `conjunto` (de 2 a 4) dividem as alternativas, cada um com a sua certa.
+
+- **Ele se responde só clicando**, e por isso a régua é outra: as alternativas se comparam pelo
+  texto exato (o funil do espanhol iguala «habla» e «hablas», e aqui elas são alternativas
+  diferentes), o card pode repetir o texto de outro card, e não há `aceitas`.
+- **A alternativa errada pode ser frase impossível** (pedido do Gere, 23/10): é ali que entra o
+  erro típico do público («cuando llegar», «voy de autobús»). O que não pode é alternativa
+  certa para outra pergunta do conjunto, nem em outra região: «Mi hijo está pronto» se diz no
+  Uruguai, e saiu do conjunto de *listo*.
+- **A pergunta diz o que distingue**: «Ele gosta do livro», e não «Gosta do livro», quando *le*
+  e *me* são alternativas; o tratamento do português casa com o do espanhol («Me diz isso!» para
+  *dímelo*, de tú).
+- **A nota** traz a regra, a linha de cada alternativa (o sentido da certa; o porquê da errada,
+  com ✗) e, no fim, os pares `🇪🇸 x → 🇧🇷 y` quando há falso amigo.
+- **Conferir**: `python -I fonte/contrastes/contrastes.py <leva>` (Wiktionary: cada forma
+  anotada, cada palavra das alternativas certas, o card de cada lema), o build, a varredura e a
+  leitura às cegas por outro agente, que recebe a pergunta e as alternativas embaralhadas.
+- `"publicos": ["pt"]` põe o card só nos cursos daqueles públicos, e o build só cobra a língua
+  deles.
+

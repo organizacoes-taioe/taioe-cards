@@ -10,6 +10,7 @@ fonte/frequencia/brutos/
 # Latim: a biblioteca de apoio e o cache (LATIM.md §7) ficam fora do git; fonte/latim/fontes.json diz como baixar de novo.
 fonte/latim/corpus/
 fonte/latim/cache/
+fonte/contrastes/cache/
 __pycache__/
 
 # Syncthing: o arquivo temporário da cópia e a cópia de conflito nunca vão para o git
