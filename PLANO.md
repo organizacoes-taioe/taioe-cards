@@ -1107,4 +1107,5 @@ vivas, «fazendo os ajustes necessários para ensinar as coisas mais relevantes�
 | 2 | piloto `es-pt`: 15 conjuntos, 32 cards (12 pontos, A1–B1), Wiktionary e às cegas | feito; aprovado pelo Gere em 23/10 |
 | 3 | Catálogo `es-pt` no teste e na produção, merge | 23/10 (cards PR #42) |
 | 4 | inglês para brasileiros: 18 conjuntos, 40 cards (17 pontos, A1–B1), Wiktionary e às cegas | aprovado e no ar em 23/10 (cards PR #43, Catálogo `en-pt`) |
-| 5 | francês para brasileiros | próximo |
+| 5 | francês para brasileiros: 17 conjuntos, 38 cards (A1–B1), Wiktionary e às cegas | aprovado e no ar em 23/10 (cards PR #44, Catálogo `fr-pt`) |
+| 6 | os outros públicos (es e en) | depois |

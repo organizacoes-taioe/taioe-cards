@@ -1114,7 +1114,9 @@ Os cards do mesmo `conjunto` (de 2 a 4) dividem as alternativas, cada um com a s
   erro típico do público («cuando llegar», «voy de autobús»). O que não pode é alternativa
   certa para outra pergunta do conjunto, nem em outra região: «Mi hijo está pronto» se diz no
   Uruguai, e saiu do conjunto de *listo*. No inglês, saíram as erradas que algum dialeto aceita
-  (*she left me go*, *if I would have money*, *how many books you have?*).
+  (*she left me go*, *if I would have money*, *how many books you have?*); no francês, as que o Québec
+  aceita (*elle a parti*, *ne… pas jamais*), e «vou comer» saiu de perto de *je viens manger*
+  (o francês usa *venir* para ir até quem ouve).
 - **A pergunta diz o que distingue**: «Ele gosta do livro», e não «Gosta do livro», quando *le*
   e *me* são alternativas; o tratamento do português casa com o do espanhol («Me diz isso!» para
   *dímelo*, de tú).
