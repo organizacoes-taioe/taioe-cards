@@ -1,8 +1,8 @@
 {
  "versao": 1,
  "idioma": "en",
- "gerado_em": "2026-10-21",
- "total": 2035,
+ "gerado_em": "2026-10-23",
+ "total": 2075,
  "cards": [
   {
    "idioma": "en",
@@ -99002,6 +99002,1138 @@
     "en-p237",
     "en-p956",
     "en-p1077"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k001",
+   "tipo": "contraste",
+   "conjunto": "n01",
+   "en": "She works here.",
+   "pt": "Ela trabalha aqui.",
+   "distratoresEn": [
+    "They work here.",
+    "She work here.",
+    "They works here.",
+    "She is work here."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "No presente, o verbo inglês só muda com he, she e it: ganha -s (she works). Nas outras pessoas fica como no dicionário (I work, they work).\nAs alternativas:\nShe works here — ela trabalha aqui.\nThey work here — eles trabalham aqui.\nShe work here — ✗ com he, she e it, o verbo do presente leva -s: she works.\nThey works here — ✗ o -s é só de he, she e it; com they, work.\nShe is work here — ✗ o presente simples não leva is: she works (she is working é «ela está trabalhando»).",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p302"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k002",
+   "tipo": "contraste",
+   "conjunto": "n01",
+   "en": "They work here.",
+   "pt": "Eles trabalham aqui.",
+   "distratoresEn": [
+    "She works here.",
+    "She work here.",
+    "They works here.",
+    "She is work here."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "No presente, o verbo inglês só muda com he, she e it: ganha -s (she works). Nas outras pessoas fica como no dicionário (I work, they work).\nAs alternativas:\nShe works here — ela trabalha aqui.\nThey work here — eles trabalham aqui.\nShe work here — ✗ com he, she e it, o verbo do presente leva -s: she works.\nThey works here — ✗ o -s é só de he, she e it; com they, work.\nShe is work here — ✗ o presente simples não leva is: she works (she is working é «ela está trabalhando»).",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p302"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k003",
+   "tipo": "contraste",
+   "conjunto": "n02",
+   "en": "Do you like coffee?",
+   "pt": "Você gosta de café?",
+   "distratoresEn": [
+    "Does she like coffee?",
+    "Does she likes coffee?",
+    "Do she like coffee?",
+    "Like you coffee?"
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A pergunta no presente se faz com do antes do sujeito (does com he, she e it), e o verbo fica como no dicionário: o -s passa para does.\nAs alternativas:\nDo you like coffee? — você gosta de café?.\nDoes she like coffee? — ela gosta de café?.\nDoes she likes coffee? — ✗ o -s já está em does; o verbo fica sem ele: does she like.\nDo she like coffee? — ✗ com he, she e it, a pergunta leva does.\nLike you coffee? — ✗ o inglês não inverte o verbo principal; a pergunta se faz com do.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p249",
+    "en-p263"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k004",
+   "tipo": "contraste",
+   "conjunto": "n02",
+   "en": "Does she like coffee?",
+   "pt": "Ela gosta de café?",
+   "distratoresEn": [
+    "Do you like coffee?",
+    "Does she likes coffee?",
+    "Do she like coffee?",
+    "Like you coffee?"
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A pergunta no presente se faz com do antes do sujeito (does com he, she e it), e o verbo fica como no dicionário: o -s passa para does.\nAs alternativas:\nDo you like coffee? — você gosta de café?.\nDoes she like coffee? — ela gosta de café?.\nDoes she likes coffee? — ✗ o -s já está em does; o verbo fica sem ele: does she like.\nDo she like coffee? — ✗ com he, she e it, a pergunta leva does.\nLike you coffee? — ✗ o inglês não inverte o verbo principal; a pergunta se faz com do.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p249",
+    "en-p263"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k005",
+   "tipo": "contraste",
+   "conjunto": "n03",
+   "en": "I don't like coffee.",
+   "pt": "Eu não gosto de café.",
+   "distratoresEn": [
+    "She doesn't like coffee.",
+    "I no like coffee.",
+    "She doesn't likes coffee.",
+    "She not likes coffee."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A negação do presente se faz com don't (do not) antes do verbo, e doesn't (does not) com he, she e it; o verbo fica como no dicionário. O «não» do português não vira no nem not sozinho.\nAs alternativas:\nI don't like coffee — eu não gosto de café.\nShe doesn't like coffee — ela não gosta de café.\nI no like coffee — ✗ no não nega verbo; a negação é don't: I don't like.\nShe doesn't likes coffee — ✗ o -s já está em doesn't; o verbo fica sem ele.\nShe not likes coffee — ✗ not sozinho não nega o verbo do presente: she doesn't like.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p249",
+    "en-p263"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k006",
+   "tipo": "contraste",
+   "conjunto": "n03",
+   "en": "She doesn't like coffee.",
+   "pt": "Ela não gosta de café.",
+   "distratoresEn": [
+    "I don't like coffee.",
+    "I no like coffee.",
+    "She doesn't likes coffee.",
+    "She not likes coffee."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A negação do presente se faz com don't (do not) antes do verbo, e doesn't (does not) com he, she e it; o verbo fica como no dicionário. O «não» do português não vira no nem not sozinho.\nAs alternativas:\nI don't like coffee — eu não gosto de café.\nShe doesn't like coffee — ela não gosta de café.\nI no like coffee — ✗ no não nega verbo; a negação é don't: I don't like.\nShe doesn't likes coffee — ✗ o -s já está em doesn't; o verbo fica sem ele.\nShe not likes coffee — ✗ not sozinho não nega o verbo do presente: she doesn't like.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p249",
+    "en-p263"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k007",
+   "tipo": "contraste",
+   "conjunto": "n04",
+   "en": "It is raining.",
+   "pt": "Está chovendo.",
+   "distratoresEn": [
+    "Is raining.",
+    "It is important.",
+    "Is important.",
+    "There is raining."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A frase inglesa sempre tem sujeito. Onde o português não tem nenhum («está chovendo», «é importante»), o inglês põe it.\nAs alternativas:\nIt is raining — está chovendo.\nIs raining — ✗ falta o sujeito: para o tempo e o clima, it is raining.\nIt is important — é importante.\nIs important — ✗ falta o sujeito: it is important.\nThere is raining — ✗ there is diz que algo existe; para o tempo, it.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p939"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k008",
+   "tipo": "contraste",
+   "conjunto": "n04",
+   "en": "It is important.",
+   "pt": "É importante.",
+   "distratoresEn": [
+    "It is raining.",
+    "Is raining.",
+    "Is important.",
+    "There is raining."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A frase inglesa sempre tem sujeito. Onde o português não tem nenhum («está chovendo», «é importante»), o inglês põe it.\nAs alternativas:\nIt is raining — está chovendo.\nIs raining — ✗ falta o sujeito: para o tempo e o clima, it is raining.\nIt is important — é importante.\nIs important — ✗ falta o sujeito: it is important.\nThere is raining — ✗ there is diz que algo existe; para o tempo, it.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p939"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k009",
+   "tipo": "contraste",
+   "conjunto": "n05",
+   "en": "There is a man at the door.",
+   "pt": "Tem um homem na porta.",
+   "distratoresEn": [
+    "There are two men at the door.",
+    "Have a man at the door.",
+    "It has two men at the door.",
+    "There are a man at the door."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «tem» de existir (há) é there is, e there are no plural. Have é ter, possuir: alguém tem alguma coisa.\nAs alternativas:\nThere is a man at the door — tem (há) um homem na porta.\nThere are two men at the door — tem (há) dois homens na porta.\nHave a man at the door — ✗ o «tem» de existir é there is; have é possuir.\nIt has two men at the door — ✗ o «tem» de existir é there are (no plural), e não it has.\nThere are a man at the door — ✗ com um só, there is; there are é para o plural.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p1035",
+    "en-p141"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k010",
+   "tipo": "contraste",
+   "conjunto": "n05",
+   "en": "There are two men at the door.",
+   "pt": "Tem dois homens na porta.",
+   "distratoresEn": [
+    "There is a man at the door.",
+    "Have a man at the door.",
+    "It has two men at the door.",
+    "There are a man at the door."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «tem» de existir (há) é there is, e there are no plural. Have é ter, possuir: alguém tem alguma coisa.\nAs alternativas:\nThere is a man at the door — tem (há) um homem na porta.\nThere are two men at the door — tem (há) dois homens na porta.\nHave a man at the door — ✗ o «tem» de existir é there is; have é possuir.\nIt has two men at the door — ✗ o «tem» de existir é there are (no plural), e não it has.\nThere are a man at the door — ✗ com um só, there is; there are é para o plural.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p1035",
+    "en-p141"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k011",
+   "tipo": "contraste",
+   "conjunto": "n06",
+   "en": "I am twenty years old.",
+   "pt": "Eu tenho vinte anos.",
+   "distratoresEn": [
+    "I have twenty years.",
+    "I am hungry.",
+    "I have hunger.",
+    "I have twenty years old."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A idade e a fome não se «têm» em inglês: são estados, e se dizem com be. Eu tenho vinte anos: I am twenty (years old); estou com fome: I am hungry.\nAs alternativas:\nI am twenty years old — eu tenho vinte anos.\nI have twenty years — ✗ a idade se diz com be: I am twenty years old.\nI am hungry — eu estou com fome.\nI have hunger — ✗ a fome se diz com be e o adjetivo: I am hungry.\nI have twenty years old — ✗ com old, o verbo é be: I am twenty years old.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p254",
+    "en-p287",
+    "en-p229"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k012",
+   "tipo": "contraste",
+   "conjunto": "n06",
+   "en": "I am hungry.",
+   "pt": "Eu estou com fome.",
+   "distratoresEn": [
+    "I am twenty years old.",
+    "I have twenty years.",
+    "I have hunger.",
+    "I have twenty years old."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "A idade e a fome não se «têm» em inglês: são estados, e se dizem com be. Eu tenho vinte anos: I am twenty (years old); estou com fome: I am hungry.\nAs alternativas:\nI am twenty years old — eu tenho vinte anos.\nI have twenty years — ✗ a idade se diz com be: I am twenty years old.\nI am hungry — eu estou com fome.\nI have hunger — ✗ a fome se diz com be e o adjetivo: I am hungry.\nI have twenty years old — ✗ com old, o verbo é be: I am twenty years old.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p254",
+    "en-p287",
+    "en-p229"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k013",
+   "tipo": "contraste",
+   "conjunto": "n07",
+   "en": "I have a red car.",
+   "pt": "Eu tenho um carro vermelho.",
+   "distratoresEn": [
+    "I have two red cars.",
+    "I have a car red.",
+    "I have two reds cars.",
+    "I have two cars reds."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O adjetivo inglês vem antes do nome (a red car) e não muda no plural: só o nome ganha -s (two red cars).\nAs alternativas:\nI have a red car — eu tenho um carro vermelho.\nI have two red cars — eu tenho dois carros vermelhos.\nI have a car red — ✗ o adjetivo vem antes do nome: a red car.\nI have two reds cars — ✗ o adjetivo não tem plural: two red cars.\nI have two cars reds — ✗ o adjetivo vem antes e não tem plural: two red cars.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p368",
+    "en-p168",
+    "en-p230"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k014",
+   "tipo": "contraste",
+   "conjunto": "n07",
+   "en": "I have two red cars.",
+   "pt": "Eu tenho dois carros vermelhos.",
+   "distratoresEn": [
+    "I have a red car.",
+    "I have a car red.",
+    "I have two reds cars.",
+    "I have two cars reds."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O adjetivo inglês vem antes do nome (a red car) e não muda no plural: só o nome ganha -s (two red cars).\nAs alternativas:\nI have a red car — eu tenho um carro vermelho.\nI have two red cars — eu tenho dois carros vermelhos.\nI have a car red — ✗ o adjetivo vem antes do nome: a red car.\nI have two reds cars — ✗ o adjetivo não tem plural: two red cars.\nI have two cars reds — ✗ o adjetivo vem antes e não tem plural: two red cars.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p368",
+    "en-p168",
+    "en-p230"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k015",
+   "tipo": "contraste",
+   "conjunto": "n08",
+   "en": "How many books do you have?",
+   "pt": "Quantos livros você tem?",
+   "distratoresEn": [
+    "How much money do you have?",
+    "How much books do you have?",
+    "How many money do you have?",
+    "How many books does you have?"
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Quantos, com o que se conta (books), é how many; quanto, com o que não se conta e não tem plural (money, water, time), é how much. E a pergunta leva do.\nAs alternativas:\nHow many books do you have? — quantos livros você tem?.\nHow much money do you have? — quanto dinheiro você tem?.\nHow much books do you have? — ✗ livro se conta: how many books.\nHow many money do you have? — ✗ money não se conta: how much money.\nHow many books does you have? — ✗ com you, a pergunta leva do; does é só com he, she e it.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p120",
+    "en-p165",
+    "en-p230"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k016",
+   "tipo": "contraste",
+   "conjunto": "n08",
+   "en": "How much money do you have?",
+   "pt": "Quanto dinheiro você tem?",
+   "distratoresEn": [
+    "How many books do you have?",
+    "How much books do you have?",
+    "How many money do you have?",
+    "How many books does you have?"
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Quantos, com o que se conta (books), é how many; quanto, com o que não se conta e não tem plural (money, water, time), é how much. E a pergunta leva do.\nAs alternativas:\nHow many books do you have? — quantos livros você tem?.\nHow much money do you have? — quanto dinheiro você tem?.\nHow much books do you have? — ✗ livro se conta: how many books.\nHow many money do you have? — ✗ money não se conta: how much money.\nHow many books does you have? — ✗ com you, a pergunta leva do; does é só com he, she e it.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p120",
+    "en-p165",
+    "en-p230"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k017",
+   "tipo": "contraste",
+   "conjunto": "n09",
+   "en": "She arrives on Monday.",
+   "pt": "Ela chega na segunda-feira.",
+   "distratoresEn": [
+    "She arrives in Monday.",
+    "She arrives in July.",
+    "She arrives on July.",
+    "She always arrives at night."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «em» do tempo tem três formas: on com o dia (on Monday, on May 5), in com o mês, o ano e a estação (in July, in 2020), at com a hora e com night (at six, at night).\nAs alternativas:\nShe arrives on Monday — ela chega na segunda-feira.\nShe arrives in Monday — ✗ com dia da semana, on.\nShe arrives in July — ela chega em julho.\nShe arrives on July — ✗ com o mês, in.\nShe always arrives at night — ela sempre chega à noite.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p333",
+    "en-p508",
+    "en-p275"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k018",
+   "tipo": "contraste",
+   "conjunto": "n09",
+   "en": "She arrives in July.",
+   "pt": "Ela chega em julho.",
+   "distratoresEn": [
+    "She arrives on Monday.",
+    "She arrives in Monday.",
+    "She arrives on July.",
+    "She always arrives at night."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «em» do tempo tem três formas: on com o dia (on Monday, on May 5), in com o mês, o ano e a estação (in July, in 2020), at com a hora e com night (at six, at night).\nAs alternativas:\nShe arrives on Monday — ela chega na segunda-feira.\nShe arrives in Monday — ✗ com dia da semana, on.\nShe arrives in July — ela chega em julho.\nShe arrives on July — ✗ com o mês, in.\nShe always arrives at night — ela sempre chega à noite.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p333",
+    "en-p508",
+    "en-p275"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k019",
+   "tipo": "contraste",
+   "conjunto": "n09",
+   "en": "She always arrives at night.",
+   "pt": "Ela sempre chega à noite.",
+   "distratoresEn": [
+    "She arrives on Monday.",
+    "She arrives in Monday.",
+    "She arrives in July.",
+    "She arrives on July."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «em» do tempo tem três formas: on com o dia (on Monday, on May 5), in com o mês, o ano e a estação (in July, in 2020), at com a hora e com night (at six, at night).\nAs alternativas:\nShe arrives on Monday — ela chega na segunda-feira.\nShe arrives in Monday — ✗ com dia da semana, on.\nShe arrives in July — ela chega em julho.\nShe arrives on July — ✗ com o mês, in.\nShe always arrives at night — ela sempre chega à noite.",
+   "nivel": "A1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p333",
+    "en-p508",
+    "en-p275"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k020",
+   "tipo": "contraste",
+   "conjunto": "n10",
+   "en": "She visited her father.",
+   "pt": "Ela visitou o pai dela.",
+   "distratoresEn": [
+    "She visited his father.",
+    "He visited her father.",
+    "He visited his father.",
+    "She visited hers father."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "His e her concordam com o dono, e não com a coisa: o pai dela é her father, mesmo sendo pai; o pai dele é his father. O «seu» do português não diz de quem é; o inglês sempre diz.\nAs alternativas:\nShe visited her father — ela visitou o pai dela.\nShe visited his father — ela visitou o pai dele.\nHe visited her father — ele visitou o pai dela.\nHe visited his father — ele visitou o pai dele.\nShe visited hers father — ✗ hers fica sozinho (the book is hers); antes do nome, her.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p1043"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k021",
+   "tipo": "contraste",
+   "conjunto": "n10",
+   "en": "She visited his father.",
+   "pt": "Ela visitou o pai dele.",
+   "distratoresEn": [
+    "She visited her father.",
+    "He visited her father.",
+    "He visited his father.",
+    "She visited hers father."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "His e her concordam com o dono, e não com a coisa: o pai dela é her father, mesmo sendo pai; o pai dele é his father. O «seu» do português não diz de quem é; o inglês sempre diz.\nAs alternativas:\nShe visited her father — ela visitou o pai dela.\nShe visited his father — ela visitou o pai dele.\nHe visited her father — ele visitou o pai dela.\nHe visited his father — ele visitou o pai dele.\nShe visited hers father — ✗ hers fica sozinho (the book is hers); antes do nome, her.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p1043"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k022",
+   "tipo": "contraste",
+   "conjunto": "n10",
+   "en": "He visited her father.",
+   "pt": "Ele visitou o pai dela.",
+   "distratoresEn": [
+    "She visited her father.",
+    "She visited his father.",
+    "He visited his father.",
+    "She visited hers father."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "His e her concordam com o dono, e não com a coisa: o pai dela é her father, mesmo sendo pai; o pai dele é his father. O «seu» do português não diz de quem é; o inglês sempre diz.\nAs alternativas:\nShe visited her father — ela visitou o pai dela.\nShe visited his father — ela visitou o pai dele.\nHe visited her father — ele visitou o pai dela.\nHe visited his father — ele visitou o pai dele.\nShe visited hers father — ✗ hers fica sozinho (the book is hers); antes do nome, her.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p1043"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k023",
+   "tipo": "contraste",
+   "conjunto": "n11",
+   "en": "My house is bigger than yours.",
+   "pt": "Minha casa é maior que a sua.",
+   "distratoresEn": [
+    "My house is more big than yours.",
+    "My house is more beautiful than yours.",
+    "My house is beautifuller than yours.",
+    "My house is bigger than your."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O adjetivo curto (uma sílaba) faz o comparativo com -er (big, bigger); o longo, com more (more beautiful). Sem o nome depois, «a sua» é yours.\nAs alternativas:\nMy house is bigger than yours — minha casa é maior que a sua.\nMy house is more big than yours — ✗ adjetivo de uma sílaba faz o comparativo com -er: bigger.\nMy house is more beautiful than yours — minha casa é mais bonita que a sua.\nMy house is beautifuller than yours — ✗ adjetivo longo faz o comparativo com more.\nMy house is bigger than your — ✗ sem o nome depois, é yours (ou than your house).",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p322",
+    "en-p475"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k024",
+   "tipo": "contraste",
+   "conjunto": "n11",
+   "en": "My house is more beautiful than yours.",
+   "pt": "Minha casa é mais bonita que a sua.",
+   "distratoresEn": [
+    "My house is bigger than yours.",
+    "My house is more big than yours.",
+    "My house is beautifuller than yours.",
+    "My house is bigger than your."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O adjetivo curto (uma sílaba) faz o comparativo com -er (big, bigger); o longo, com more (more beautiful). Sem o nome depois, «a sua» é yours.\nAs alternativas:\nMy house is bigger than yours — minha casa é maior que a sua.\nMy house is more big than yours — ✗ adjetivo de uma sílaba faz o comparativo com -er: bigger.\nMy house is more beautiful than yours — minha casa é mais bonita que a sua.\nMy house is beautifuller than yours — ✗ adjetivo longo faz o comparativo com more.\nMy house is bigger than your — ✗ sem o nome depois, é yours (ou than your house).",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p322",
+    "en-p475"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k025",
+   "tipo": "contraste",
+   "conjunto": "n12",
+   "en": "I made a mistake.",
+   "pt": "Eu cometi um erro.",
+   "distratoresEn": [
+    "I did a mistake.",
+    "I did my homework.",
+    "I made my homework."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Os dois são «fazer». Make é criar, produzir (make a cake, make a mistake, make a decision); do é realizar uma atividade ou tarefa (do homework, do the dishes, do your best).\nAs alternativas:\nI made a mistake — eu cometi um erro.\nI did a mistake — ✗ erro se faz com make: make a mistake.\nI did my homework — eu fiz a minha lição de casa.\nI made my homework — ✗ lição de casa (e tarefa) se faz com do.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p274",
+    "en-p029",
+    "en-p250",
+    "en-p231"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k026",
+   "tipo": "contraste",
+   "conjunto": "n12",
+   "en": "I did my homework.",
+   "pt": "Eu fiz a minha lição de casa.",
+   "distratoresEn": [
+    "I made a mistake.",
+    "I did a mistake.",
+    "I made my homework."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Os dois são «fazer». Make é criar, produzir (make a cake, make a mistake, make a decision); do é realizar uma atividade ou tarefa (do homework, do the dishes, do your best).\nAs alternativas:\nI made a mistake — eu cometi um erro.\nI did a mistake — ✗ erro se faz com make: make a mistake.\nI did my homework — eu fiz a minha lição de casa.\nI made my homework — ✗ lição de casa (e tarefa) se faz com do.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p274",
+    "en-p029",
+    "en-p250",
+    "en-p231"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k027",
+   "tipo": "contraste",
+   "conjunto": "n13",
+   "en": "He told me he was tired.",
+   "pt": "Ele me disse que estava cansado.",
+   "distratoresEn": [
+    "He said he was tired.",
+    "He said me he was tired.",
+    "He told he was tired.",
+    "He told to me he was tired."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Os dois são «dizer». Tell leva a pessoa direto, sem to (he told me); say não leva a pessoa, ou leva com to (he said, he said to me).\nAs alternativas:\nHe told me he was tired — ele me disse que estava cansado.\nHe said he was tired — ele disse que estava cansado.\nHe said me he was tired — ✗ say não leva a pessoa direto: he told me (ou he said to me).\nHe told he was tired — ✗ tell pede a pessoa: he told me, he told her.\nHe told to me he was tired — ✗ tell leva a pessoa sem to: he told me.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p240",
+    "en-p282",
+    "en-p411"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k028",
+   "tipo": "contraste",
+   "conjunto": "n13",
+   "en": "He said he was tired.",
+   "pt": "Ele disse que estava cansado.",
+   "distratoresEn": [
+    "He told me he was tired.",
+    "He said me he was tired.",
+    "He told he was tired.",
+    "He told to me he was tired."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Os dois são «dizer». Tell leva a pessoa direto, sem to (he told me); say não leva a pessoa, ou leva com to (he said, he said to me).\nAs alternativas:\nHe told me he was tired — ele me disse que estava cansado.\nHe said he was tired — ele disse que estava cansado.\nHe said me he was tired — ✗ say não leva a pessoa direto: he told me (ou he said to me).\nHe told he was tired — ✗ tell pede a pessoa: he told me, he told her.\nHe told to me he was tired — ✗ tell leva a pessoa sem to: he told me.",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p240",
+    "en-p282",
+    "en-p411"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k029",
+   "tipo": "contraste",
+   "conjunto": "n14",
+   "en": "I agree with her.",
+   "pt": "Eu concordo com ela.",
+   "distratoresEn": [
+    "I am agree with her.",
+    "You are right.",
+    "You have reason.",
+    "You have the right."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Agree é verbo, como «concordar», e não leva am: I agree. Ter razão é be right; reason é «motivo», e have the right é «ter o direito».\nAs alternativas:\nI agree with her — eu concordo com ela.\nI am agree with her — ✗ agree é verbo: I agree, sem am.\nYou are right — você tem razão.\nYou have reason — ✗ ter razão é be right; reason é «motivo».\nYou have the right — você tem o direito (de algo).",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p276",
+    "en-p288"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k030",
+   "tipo": "contraste",
+   "conjunto": "n14",
+   "en": "You are right.",
+   "pt": "Você tem razão.",
+   "distratoresEn": [
+    "I agree with her.",
+    "I am agree with her.",
+    "You have reason.",
+    "You have the right."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Agree é verbo, como «concordar», e não leva am: I agree. Ter razão é be right; reason é «motivo», e have the right é «ter o direito».\nAs alternativas:\nI agree with her — eu concordo com ela.\nI am agree with her — ✗ agree é verbo: I agree, sem am.\nYou are right — você tem razão.\nYou have reason — ✗ ter razão é be right; reason é «motivo».\nYou have the right — você tem o direito (de algo).",
+   "nivel": "A2",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p276",
+    "en-p288"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k031",
+   "tipo": "contraste",
+   "conjunto": "n15",
+   "en": "I have lived here for two years.",
+   "pt": "Moro aqui há dois anos.",
+   "distratoresEn": [
+    "I have lived here since 2020.",
+    "I lived here two years ago.",
+    "I live here for two years.",
+    "I have lived here since two years."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since 2020. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since 2020 — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since 2020); a duração vai com for.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p267",
+    "en-p254"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k032",
+   "tipo": "contraste",
+   "conjunto": "n15",
+   "en": "I have lived here since 2020.",
+   "pt": "Moro aqui desde 2020.",
+   "distratoresEn": [
+    "I have lived here for two years.",
+    "I lived here two years ago.",
+    "I live here for two years.",
+    "I have lived here since two years."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since 2020. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since 2020 — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since 2020); a duração vai com for.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p267",
+    "en-p254"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k033",
+   "tipo": "contraste",
+   "conjunto": "n15",
+   "en": "I lived here two years ago.",
+   "pt": "Eu morava aqui há dois anos.",
+   "distratoresEn": [
+    "I have lived here for two years.",
+    "I have lived here since 2020.",
+    "I live here for two years.",
+    "I have lived here since two years."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since 2020. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since 2020 — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since 2020); a duração vai com for.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p267",
+    "en-p254"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k034",
+   "tipo": "contraste",
+   "conjunto": "n16",
+   "en": "When I arrive, I will call you.",
+   "pt": "Quando eu chegar, eu te ligo.",
+   "distratoresEn": [
+    "When I will arrive, I will call you.",
+    "When I arrived, I called you.",
+    "If I arrive, I will call you.",
+    "If I will arrive, I will call you."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Onde o português usa o futuro do subjuntivo (quando eu chegar, se eu chegar), o inglês usa o presente: when I arrive, if I arrive. O will fica só na outra parte da frase.\nAs alternativas:\nWhen I arrive, I will call you — quando eu chegar, eu te ligo.\nWhen I will arrive, I will call you — ✗ depois de when, o futuro vai no presente: when I arrive.\nWhen I arrived, I called you — quando eu cheguei, eu te liguei.\nIf I arrive, I will call you — se eu chegar, eu te ligo.\nIf I will arrive, I will call you — ✗ depois de if, o futuro vai no presente: if I arrive.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p333",
+    "en-p251"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k035",
+   "tipo": "contraste",
+   "conjunto": "n16",
+   "en": "When I arrived, I called you.",
+   "pt": "Quando eu cheguei, eu te liguei.",
+   "distratoresEn": [
+    "When I arrive, I will call you.",
+    "When I will arrive, I will call you.",
+    "If I arrive, I will call you.",
+    "If I will arrive, I will call you."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Onde o português usa o futuro do subjuntivo (quando eu chegar, se eu chegar), o inglês usa o presente: when I arrive, if I arrive. O will fica só na outra parte da frase.\nAs alternativas:\nWhen I arrive, I will call you — quando eu chegar, eu te ligo.\nWhen I will arrive, I will call you — ✗ depois de when, o futuro vai no presente: when I arrive.\nWhen I arrived, I called you — quando eu cheguei, eu te liguei.\nIf I arrive, I will call you — se eu chegar, eu te ligo.\nIf I will arrive, I will call you — ✗ depois de if, o futuro vai no presente: if I arrive.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p333",
+    "en-p251"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k036",
+   "tipo": "contraste",
+   "conjunto": "n16",
+   "en": "If I arrive, I will call you.",
+   "pt": "Se eu chegar, eu te ligo.",
+   "distratoresEn": [
+    "When I arrive, I will call you.",
+    "When I will arrive, I will call you.",
+    "When I arrived, I called you.",
+    "If I will arrive, I will call you."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Onde o português usa o futuro do subjuntivo (quando eu chegar, se eu chegar), o inglês usa o presente: when I arrive, if I arrive. O will fica só na outra parte da frase.\nAs alternativas:\nWhen I arrive, I will call you — quando eu chegar, eu te ligo.\nWhen I will arrive, I will call you — ✗ depois de when, o futuro vai no presente: when I arrive.\nWhen I arrived, I called you — quando eu cheguei, eu te liguei.\nIf I arrive, I will call you — se eu chegar, eu te ligo.\nIf I will arrive, I will call you — ✗ depois de if, o futuro vai no presente: if I arrive.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p333",
+    "en-p251"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k037",
+   "tipo": "contraste",
+   "conjunto": "n17",
+   "en": "If I had money, I would travel.",
+   "pt": "Se eu tivesse dinheiro, viajaria.",
+   "distratoresEn": [
+    "If I have money, I will travel.",
+    "If I will have money, I will travel.",
+    "If I had money, I will travel.",
+    "If I have money, I would travel."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Se eu tiver (pode ser): if + presente, e will. Se eu tivesse (é só hipótese): if + passado, e would na outra parte. O will e o would nunca vão depois do if.\nAs alternativas:\nIf I had money, I would travel — se eu tivesse dinheiro, viajaria.\nIf I have money, I will travel — se eu tiver dinheiro, vou viajar.\nIf I will have money, I will travel — ✗ depois de if, o futuro vai no presente: if I have money.\nIf I had money, I will travel — ✗ com o passado depois do if, a outra parte leva would.\nIf I have money, I would travel — ✗ com o presente depois do if, a outra parte leva will.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p165",
+    "en-p454",
+    "en-p230"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k038",
+   "tipo": "contraste",
+   "conjunto": "n17",
+   "en": "If I have money, I will travel.",
+   "pt": "Se eu tiver dinheiro, vou viajar.",
+   "distratoresEn": [
+    "If I had money, I would travel.",
+    "If I will have money, I will travel.",
+    "If I had money, I will travel.",
+    "If I have money, I would travel."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Se eu tiver (pode ser): if + presente, e will. Se eu tivesse (é só hipótese): if + passado, e would na outra parte. O will e o would nunca vão depois do if.\nAs alternativas:\nIf I had money, I would travel — se eu tivesse dinheiro, viajaria.\nIf I have money, I will travel — se eu tiver dinheiro, vou viajar.\nIf I will have money, I will travel — ✗ depois de if, o futuro vai no presente: if I have money.\nIf I had money, I will travel — ✗ com o passado depois do if, a outra parte leva would.\nIf I have money, I would travel — ✗ com o presente depois do if, a outra parte leva will.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p165",
+    "en-p454",
+    "en-p230"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k039",
+   "tipo": "contraste",
+   "conjunto": "n18",
+   "en": "She made me laugh.",
+   "pt": "Ela me fez rir.",
+   "distratoresEn": [
+    "She made me to laugh.",
+    "She let me go out.",
+    "She let me to go out.",
+    "She allowed me go out."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Fazer alguém fazer algo é make + pessoa + verbo sem to (she made me laugh); deixar alguém fazer, no sentido de permitir, é let + pessoa + verbo sem to (she let me go out). Allow, que também é permitir, pede to (she allowed me to go out).\nAs alternativas:\nShe made me laugh — ela me fez rir.\nShe made me to laugh — ✗ depois de make + pessoa, o verbo vem sem to.\nShe let me go out — ela me deixou sair.\nShe let me to go out — ✗ depois de let + pessoa, o verbo vem sem to.\nShe allowed me go out — ✗ allow pede to (she allowed me to go out); sem to, só let.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p250",
+    "en-p234",
+    "en-p825",
+    "en-p429"
+   ],
+   "publicos": [
+    "pt"
+   ]
+  },
+  {
+   "idioma": "en",
+   "id": "en-k040",
+   "tipo": "contraste",
+   "conjunto": "n18",
+   "en": "She let me go out.",
+   "pt": "Ela me deixou sair.",
+   "distratoresEn": [
+    "She made me laugh.",
+    "She made me to laugh.",
+    "She let me to go out.",
+    "She allowed me go out."
+   ],
+   "aceitas": [],
+   "distratores": [],
+   "nota": "Fazer alguém fazer algo é make + pessoa + verbo sem to (she made me laugh); deixar alguém fazer, no sentido de permitir, é let + pessoa + verbo sem to (she let me go out). Allow, que também é permitir, pede to (she allowed me to go out).\nAs alternativas:\nShe made me laugh — ela me fez rir.\nShe made me to laugh — ✗ depois de make + pessoa, o verbo vem sem to.\nShe let me go out — ela me deixou sair.\nShe let me to go out — ✗ depois de let + pessoa, o verbo vem sem to.\nShe allowed me go out — ✗ allow pede to (she allowed me to go out); sem to, só let.",
+   "nivel": "B1",
+   "tags": [
+    "contraste"
+   ],
+   "requerTodas": [
+    "en-p250",
+    "en-p234",
+    "en-p825",
+    "en-p429"
+   ],
+   "publicos": [
+    "pt"
    ]
   }
  ]

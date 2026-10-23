@@ -28,7 +28,7 @@ import formas  # noqa: E402
 AQUI = Path(__file__).resolve().parent
 BARALHOS = AQUI.parent / 'cards'
 PREFIXO = {'es': '', 'en': 'en-', 'fr': 'fr-', 'pt': 'pt-'}
-ARQUIVO = {'es': '33-contrastes.json'}
+ARQUIVO = {'es': '33-contrastes.json', 'en': '27-contrastes.json'}
 PALAVRA = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿ']+")
 
 TEMPO_MODO = [
@@ -43,6 +43,9 @@ TEMPO_MODO = [
     ('infinitivo', {'infinitive'}),
     ('gerúndio', {'gerund'}),
     ('particípio', {'participle'}),
+    ('passado', {'past'}),  # o inglês: simple past e particípio são a mesma análise
+    ('comparativo', {'comparative'}),
+    ('plural', {'plural'}),
 ]
 PESSOA = {'1ª pessoa': 'first-person', '2ª pessoa': 'second-person', '3ª pessoa': 'third-person'}
 
@@ -107,6 +110,8 @@ def main():
             if 'errada' in o:
                 continue
             for w in PALAVRA.findall(o[L]):
+                if L == 'en':
+                    w = re.sub(r"'s?$", '', w)  # o genitivo (father's, parents') não tem página
                 if not formas.analisar(L, w):
                     problemas.append(f"{k['id']}: «{w}» (em «{o[L]}») não está no Wiktionary")
             for forma, lema, rotulo in o.get('formas', []):
