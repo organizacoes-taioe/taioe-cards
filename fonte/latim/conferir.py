@@ -89,7 +89,7 @@ def conferir(cards, filtro=''):
     por_id = {c['id']: c for c in cards}
     problemas = 0
     for c in cards:
-        if c['tipo'] != 'frase' or not c['id'].startswith(filtro):
+        if c['tipo'] not in ('frase', 'contraste') or not c['id'].startswith(filtro):
             continue
         pal = c.get('palavras') or []
         toks = tokens(c['la'])

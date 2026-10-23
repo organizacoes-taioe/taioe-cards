@@ -384,7 +384,7 @@ for (const bruto of cards) {
     if (typeof c[campo] !== 'string' || !c[campo].trim()) erros.push('falta "' + campo + '": ' + onde);
   }
   /* o card de conceito (cards/LATIM.md §3.5) só existe no latim */
-  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma'] : ['palavra', 'frase']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
+  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma', 'contraste'] : ['palavra', 'frase']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
   if (!NIVEIS.includes(c.nivel)) erros.push('nível inválido: ' + onde);
   if (!Array.isArray(c.tags) || !c.tags.length) erros.push('sem tags: ' + onde);
 
@@ -479,6 +479,9 @@ for (const bruto of cards) {
       continue;
     }
     if (typeof c[A.nota] !== 'string' || !c[A.nota].trim()) erros.push('falta "' + A.nota + '": ' + ondeA);
+    /* o card de contraste (LATIM.md §3.7) pergunta em português e responde em latim, só na
+       múltipla escolha: as alternativas são as do conjunto, conferidas mais abaixo */
+    if (c.tipo === 'contraste') continue;
     /* a frase latina pode ter só o gabarito (cards/LATIM.md §4) */
     if (!Array.isArray(c[A.aceitas]) || (!c[A.aceitas].length && !(idioma === 'la' && c.gabarito))) erros.push('sem ' + A.aceitas + ': ' + ondeA);
     /* o card de forma é só por escrito: sem distratores */
@@ -621,6 +624,8 @@ for (const { idioma, cards } of baralhos) {
   for (const c of cards) {
     if (c.requerTodas === undefined) continue;
     const onde = c.id + ' (' + c[L.texto] + ')';
+    /* o contraste do latim também espera conceitos; ele se confere no bloco do latim */
+    if (c.tipo === 'contraste') continue;
     if (c.tipo !== 'frase') { erros.push('só frase pode ter "requerTodas": ' + onde); continue; }
     if (!Array.isArray(c.requerTodas)) { erros.push('"requerTodas" tem de ser uma lista: ' + onde); continue; }
     if (!c.texto) anotadas++;
@@ -726,8 +731,34 @@ for (const { idioma, cards } of baralhos) {
       }
       continue;
     }
-    if (c.tipo !== 'frase') continue;
-    if (!c.fonte) erros.push('frase latina sem «fonte» (a passagem de onde vem): ' + onde);
+    if (c.tipo === 'contraste') {
+      const opcoes = [c.la].concat(Array.isArray(c.distratoresLa) ? c.distratoresLa : []);
+      if (typeof c.conjunto !== 'string' || !c.conjunto) erros.push('contraste sem «conjunto»: ' + onde);
+      if (opcoes.length !== 4 || new Set(opcoes.map(chaveLatina)).size !== 4) erros.push('contraste sem 4 alternativas diferentes: ' + onde);
+      /* as mesmas palavras na mesma ordem: o mesmo número delas em todas */
+      const quantas = o => (o.match(/[A-Za-zÀ-ÿĀ-ſ]+/g) || []).length;
+      if (opcoes.some(o => quantas(o) !== quantas(c.la))) erros.push('contraste com alternativa de outro tamanho: ' + onde);
+      const irmaos = cards.filter(x => x.tipo === 'contraste' && x.conjunto === c.conjunto);
+      const chaveDas = x => [x.la].concat(x.distratoresLa || []).map(chaveLatina).sort().join('|');
+      if (irmaos.some(x => chaveDas(x) !== chaveDas(c))) erros.push('contraste com alternativas diferentes das do conjunto ' + c.conjunto + ': ' + onde);
+      if (irmaos.length < 2 || irmaos.length > 4) erros.push('conjunto de contraste com ' + irmaos.length + ' cards (2 a 4): ' + c.conjunto);
+      if (new Set(irmaos.map(x => chaveLatina(x.la))).size !== irmaos.length) erros.push('dois cards do conjunto ' + c.conjunto + ' com a mesma resposta: ' + onde);
+      const req = Array.isArray(c.requerTodas) ? c.requerTodas : [];
+      if (!req.length) erros.push('contraste sem «requerTodas»: ' + onde);
+      for (const r of req) {
+        const alvo = PORID.get(r);
+        if (!alvo || !['palavra', 'conceito'].includes(alvo.tipo)) erros.push('contraste preso a card que não é palavra nem conceito: ' + onde + ' → ' + r);
+      }
+      for (const p of c.palavras || []) {
+        if (p.c && !req.includes(p.c)) erros.push('contraste com palavra fora do «requerTodas»: ' + onde + ' → ' + p.w);
+      }
+      for (const g of c.conceitos || []) {
+        if (!req.includes(g)) erros.push('contraste com conceito fora do «requerTodas»: ' + onde + ' → ' + g);
+      }
+      if (String(c.pt || '').length > Motor.LIMITES.resposta) erros.push('pergunta com mais de ' + Motor.LIMITES.resposta + ' letras: ' + onde);
+    }
+    if (c.tipo !== 'frase' && c.tipo !== 'contraste') continue;
+    if (!c.fonte && c.tipo === 'frase') erros.push('frase latina sem «fonte» (a passagem de onde vem): ' + onde);
     if (String(c.pt || '').length > Motor.LIMITES.resposta) erros.push('resposta com mais de ' + Motor.LIMITES.resposta + ' letras: ' + onde);
     const pal = Array.isArray(c.palavras) ? c.palavras : null;
     if (!pal) { erros.push('frase latina sem «palavras» (a anotação): ' + onde); continue; }
@@ -751,7 +782,8 @@ for (const { idioma, cards } of baralhos) {
     const dasPalavras = [...new Set(pal.filter(p => p.c).map(p => p.c))];
     const livre = (c.tags || []).includes('primeiros passos');
     const req = Array.isArray(c.requerTodas) ? c.requerTodas : [];
-    if (livre ? req.length : req.join(' ') !== dasPalavras.join(' ')) {
+    if (c.tipo === 'contraste') { /* o «requerTodas» dele leva também os conceitos (acima) */ }
+    else if (livre ? req.length : req.join(' ') !== dasPalavras.join(' ')) {
       erros.push((livre ? 'primeira frase com «requerTodas» (tem de ser vazia): '
         : '«requerTodas» diferente das palavras anotadas: ') + onde);
     }
@@ -1127,7 +1159,9 @@ function escreverCatalogo(curso, leva, doApp, audiencia) {
   const lista = xs => xs.length ? 'array[' + xs.map(q).join(', ') + ']::text[]' : "'{}'::text[]";
   const linhas = doApp.map(c => {
     const alternativas = new Set();
-    [0, 1].forEach(g => {
+    /* o contraste do latim mostra as quatro frases latinas do conjunto (LATIM.md §3.7) */
+    if (c.tipo === 'contraste') [c.la].concat(c.distratoresLa || []).forEach(t => alternativas.add(String(t)));
+    else [0, 1].forEach(g => {
       const f = Motor.formaDoCard(c, g);
       [f[casa.texto]].concat(f[casa.distratores] || []).forEach(t => { if (t) alternativas.add(String(t)); });
     });

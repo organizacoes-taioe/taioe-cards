@@ -167,6 +167,38 @@ ok(!M.formaPuxada('dativo', { [dativos[0].id]: { historico: [h(1, false), h(2, t
   'três acertos seguidos do caso soltam');
 ok(!M.formaPuxada('ablativo', { [dativos[0].id]: { historico: [h(1, false)] } }), 'o erro do dativo não puxa o ablativo');
 
+/* ═══════════ 6c. o card de contraste (LATIM.md §3.7) ═══════════ */
+secao('o card de contraste');
+const CONTRASTES = CARDS.filter(c => c.tipo === 'contraste');
+ok(CONTRASTES.length >= 20, 'há cards de contraste (' + CONTRASTES.length + ')');
+const k = CONTRASTES[0];
+const irmao = CONTRASTES.find(c => c.conjunto === k.conjunto && c.id !== k.id);
+const est0 = M.estadoInicialDo(k);
+const fase0 = M.faseDe(est0);
+ok(fase0.modo === 'multipla' && M.pergunta(k, fase0.direcao) === k.pt && M.resposta(k, fase0.direcao) === k.la,
+  'pergunta em português, resposta em latim, na múltipla escolha');
+const alt = M.alternativas(k, fase0.direcao, CARDS, {});
+ok(alt.length === 4 && alt.includes(k.la) && [...alt].sort().join('|') === [irmao.la, ...irmao.distratoresLa].sort().join('|'),
+  'as quatro alternativas são as do conjunto, as mesmas do irmão');
+const rc = (e, acertou) => M.registrar(e, { acertou, modo: 'multipla', direcao: fase0.direcao, resposta: 'x' });
+rc(est0, true); rc(est0, true);
+ok(est0.etapa === 'multipla' && M.modoDe(est0) === 'multipla', 'dois acertos: continua na múltipla escolha');
+rc(est0, true);
+ok(est0.etapa === 'dominado' && est0.voltaEm && M.filaDe(est0) === 'dominados', 'três seguidos dominam, e ele volta por data');
+ok(M.modoDe(est0) === 'multipla', 'e a revisão também é múltipla escolha');
+rc(est0, false);
+ok(est0.etapa === 'dominado' && M.modoDe(est0) === 'multipla', 'errar na revisão encurta a espera e não muda o modo');
+const est1 = M.estadoInicialDo(k);
+rc(est1, true); rc(est1, false);
+ok(est1.etapa === 'multipla' && est1.seguidas === 0, 'o erro zera a sequência');
+const conceitosDeK = k.requerTodas.filter(id => PORID.get(id).tipo === 'conceito');
+ok(conceitosDeK.length >= 2 && conceitosDeK.every(id => k.conceitos.includes(id)), 'espera os conceitos dos casos');
+const ontem = new Date(Date.now() - 2 * 864e5).toISOString();
+const sabidos = Object.fromEntries(k.requerTodas.map(id => [id, { etapa: 'dominado', dominadoEm: ontem, vistas: 3 }]));
+ok(M.liberado(k, sabidos, Date.now(), {}), 'com as palavras e os conceitos dominados, libera');
+delete sabidos[conceitosDeK[0]];
+ok(!M.liberado(k, sabidos, Date.now(), {}), 'sem um dos conceitos, não');
+
 /* ═══════════ 7. transparência e desafio ═══════════ */
 secao('transparência e desafio');
 M.usarTransparencias([{ id: 'x1', tipo: 'palavra', transp: 'parecida' }, { id: 'x2', tipo: 'palavra', transp: 'total' }]);

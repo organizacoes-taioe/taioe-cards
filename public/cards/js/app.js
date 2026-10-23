@@ -607,12 +607,14 @@ window.TaioeCardsApp = function (ctx) {
     p.ineditos = p.ineditos.filter(id => !ehForma(id) || formaDaTrilha(PORID[id], ativosAgora, p));
     const pendentes = new Set(p.ineditos), postos = new Set();
     const pega = id => (pendentes.has(id) && !postos.has(id) ? (postos.add(id), [id]) : []);
-    const ehPresa = id => { const c = PORID[id] || {}; return c.tipo === 'frase' && Motor.requeridas(c).length > 0; };
+    const ehPresa = id => { const c = PORID[id] || {}; return (c.tipo === 'frase' || c.tipo === 'contraste') && Motor.requeridas(c).length > 0; };
     const presas = p.ineditos.filter(ehPresa);
     const quando = id => Motor.venceuEm(PORID[id], p.cards, p.arquivados);
     presas.sort((a, b) => quando(b) - quando(a));
     const agora = Date.now();
-    const frescas = presas.filter(id => agora - quando(id) < 864e5).slice(0, 2);
+    /* o contraste não fura a fila: os conceitos dos casos destravam muitos de uma vez, e eles
+       entram intercalados, um a cada CADA estreias */
+    const frescas = presas.filter(id => (PORID[id] || {}).tipo !== 'contraste' && agora - quando(id) < 864e5).slice(0, 2);
     const antigas = presas.filter(id => frescas.indexOf(id) < 0).map(id => [id]);
     presas.forEach(id => postos.add(id));
     const ativos = textosAtivosDe(p);
@@ -671,7 +673,22 @@ window.TaioeCardsApp = function (ctx) {
       pede(id).forEach(g => saida.push(...pega(g)));
       saida.push(id);
     }
-    p.ineditos = saida.concat(p.ineditos.filter(id => ehConceito(id) && !postos.has(id)));
+    p.ineditos = semConjuntoSeguido(saida.concat(p.ineditos.filter(id => ehConceito(id) && !postos.has(id))));
+  }
+
+  /* Dois cards de contraste do mesmo conjunto (LATIM.md §3.7) nunca seguidos: têm as mesmas
+     alternativas, e o segundo logo depois do primeiro se resolve por eliminação. O que
+     encostaria no irmão dá a vez ao próximo card de outro conjunto. */
+  function conjuntoDe(id) { return (PORID[id] || {}).conjunto || null; }
+  function semConjuntoSeguido(lista) {
+    const saida = [], resto = lista.slice();
+    while (resto.length) {
+      const antes = saida.length ? conjuntoDe(saida[saida.length - 1]) : null;
+      let i = antes ? resto.findIndex(id => conjuntoDe(id) !== antes) : 0;
+      if (i < 0) i = 0;
+      saida.push(resto.splice(i, 1)[0]);
+    }
+    return saida;
   }
 
   /* Os blocos de «poucos» entram um a cada «cada» cards de «muitos», e o primeiro já depois
@@ -829,11 +846,14 @@ window.TaioeCardsApp = function (ctx) {
   /* Quantos cards vieram desde o último dominado. Começa alto: abrir o app
      não precisa esperar espaço nenhum. */
   let desdeDominado = 99;
+  /* o conjunto do card de contraste que acabou de sair: o irmão dele espera um card */
+  let conjuntoAnterior = null;
 
   function tirarProximoId() {
     const id = escolherProximoId();
     const e = id && estadoParaFila(id);
     desdeDominado = e && e.etapa === 'dominado' ? 0 : desdeDominado + 1;
+    conjuntoAnterior = id ? conjuntoDe(id) : null;
     return id;
   }
 
@@ -866,7 +886,8 @@ window.TaioeCardsApp = function (ctx) {
     /* Só concorrem os cards que já esperaram o intervalo mínimo (ver
        Motor.podeVoltar). Fila sem nenhum deles conta como vazia: aí o card
        novo vem mesmo que o teto o vetasse. */
-    const livre = id => Motor.podeVoltar(progresso.cards[id], respostas);
+    const livre = id => Motor.podeVoltar(progresso.cards[id], respostas) &&
+      !(conjuntoAnterior && conjuntoDe(id) === conjuntoAnterior);
     const livres = { esPt: progresso.filaEsPt.filter(livre), ptEs: progresso.filaPtEs.filter(livre) };
     const filaDe = k => (k === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs);
     const tirar = (k, id) => filaDe(k).splice(filaDe(k).indexOf(id), 1)[0];
@@ -934,7 +955,9 @@ window.TaioeCardsApp = function (ctx) {
       if (i >= 0) return progresso.ineditos.splice(i, 1)[0];
     }
     ordenarIneditos(progresso);
-    return progresso.ineditos.shift();
+    /* o contraste do mesmo conjunto do card anterior espera um card (LATIM.md §3.7) */
+    const i = conjuntoAnterior ? progresso.ineditos.findIndex(id => conjuntoDe(id) !== conjuntoAnterior) : 0;
+    return progresso.ineditos.splice(Math.max(0, i), 1)[0];
   }
 
   /* As quatro estreias mais recentes, pela resposta em que cada card estreou
@@ -1100,7 +1123,8 @@ window.TaioeCardsApp = function (ctx) {
     const previa = !!(desafioAtual && desafioAtual.previa);
     el['meta-desafio'].classList.toggle('oculto', !desafioAtual);
     /* o card de forma acertado de primeira já sai sozinho: o «já conheço» não teria o que fazer */
-    jaConhecoNoCard = estreando && !previa && cardAtual.tipo !== 'forma';
+    /* nem no de contraste, que é só treino de leitura das terminações */
+    jaConhecoNoCard = estreando && !previa && cardAtual.tipo !== 'forma' && cardAtual.tipo !== 'contraste';
     posicionarJaConheco(false);
     el['aviso-previa'].classList.add('oculto');
     /* O nível vive na aba do fichário e fica à mostra o tempo todo: saber que
@@ -1138,7 +1162,7 @@ window.TaioeCardsApp = function (ctx) {
     if (exemploAtual) el.termo.innerHTML = comDestaque(exemploAtual.la, exemploAtual.w);
     else if (cardAtual.tipo === 'forma') el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.la, cardAtual.ocorrencia);
     else el.termo.textContent = !inversa && cardAtual.enunciado ? cardAtual.enunciado : Motor.pergunta(cardAtual, direcaoAtual);
-    el.termo.classList.toggle('frase', cardAtual.tipo === 'frase' || cardAtual.tipo === 'forma' || !!exemploAtual);
+    el.termo.classList.toggle('frase', ['frase', 'forma', 'contraste'].includes(cardAtual.tipo) || !!exemploAtual);
 
     el['aviso-lingua'].classList.add('oculto');
     el['aviso-acento'].classList.add('oculto');
@@ -1193,7 +1217,8 @@ window.TaioeCardsApp = function (ctx) {
        calibragem saber quando o erro foi num distrator que não está no card.
        Na volta, as quatro erradas saem de outros cards. */
     const certa = Motor.resposta(cardAtual, direcaoAtual);
-    dinamicosAtuais = Motor.ehVolta(direcaoAtual)
+    dinamicosAtuais = cardAtual.tipo === 'contraste' ? []
+      : Motor.ehVolta(direcaoAtual)
       ? opcoes.filter(o => o !== certa)
       : opcoes.filter(o => o !== cardAtual[A] && (cardAtual[CA.distratores] || []).indexOf(o) < 0);
     el['area-multipla'].innerHTML = '';
@@ -1206,9 +1231,9 @@ window.TaioeCardsApp = function (ctx) {
     });
   }
 
-  /* «palavra», «frase» e (no latim) «conceito» e «forma», na língua da interface */
+  /* «palavra», «frase» e (no latim) «conceito», «forma» e «contraste», na língua da interface */
   function nomeTipo(tipo) {
-    return ['palavra', 'frase', 'conceito', 'forma'].includes(tipo) ? t('tipo.' + tipo) : tipo;
+    return ['palavra', 'frase', 'conceito', 'forma', 'contraste'].includes(tipo) ? t('tipo.' + tipo) : tipo;
   }
 
   /* A frase do exemplo com a palavra em destaque (só ela: em «virumque», o «virum»); «vez» diz
@@ -1768,7 +1793,8 @@ window.TaioeCardsApp = function (ctx) {
     const jaEsta = new Set(progresso.ineditos);
     /* no modo trilhas, o trecho só entra se o texto dele estiver escolhido */
     const ativosIds = TRILHAS ? new Set(textosAtivosAgora().map(x => x.id)) : null;
-    const novas = CARDS.filter(c => c.tipo === 'frase' && Motor.requeridas(c).length &&
+    /* e o card de contraste (LATIM.md §3.7), que espera as palavras e os conceitos dele */
+    const novas = CARDS.filter(c => (c.tipo === 'frase' || c.tipo === 'contraste') && Motor.requeridas(c).length &&
       !progresso.cards[c.id] && !jaEsta.has(c.id) && !Motor.arquivado(c.id, progresso.arquivados) &&
       (!ativosIds || !c.texto || ativosIds.has(c.texto)) &&
       Motor.liberado(c, progresso.cards, agora, progresso.arquivados));
@@ -3963,7 +3989,7 @@ window.TaioeCardsApp = function (ctx) {
     const op = el['filtro-estado'].querySelector('option[value="invertido"]');
     if (op) op.textContent = t('cards.fInvertido', { x: ROTULO_VOLTA });
     el['btn-texto'].hidden = !TEXTOS.length;
-    ['conceito', 'forma'].forEach(v => {
+    ['conceito', 'forma', 'contraste'].forEach(v => {
       const opcao = el['filtro-tipo'].querySelector('option[value="' + v + '"]');
       if (opcao) opcao.hidden = !TRILHAS;
     });
