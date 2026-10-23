@@ -1106,4 +1106,5 @@ vivas, «fazendo os ajustes necessários para ensinar as coisas mais relevantes�
 | 1 | motor, app, build e varredura para o contraste em qualquer baralho; `publicos` | feito (23/10, branch `contraste-linguas-vivas`) |
 | 2 | piloto `es-pt`: 15 conjuntos, 32 cards (12 pontos, A1–B1), Wiktionary e às cegas | feito; aprovado pelo Gere em 23/10 |
 | 3 | Catálogo `es-pt` no teste e na produção, merge | 23/10 (cards PR #42) |
-| 4 | inglês e francês para brasileiros | depois de o Gere estudar o piloto |
+| 4 | inglês para brasileiros: 18 conjuntos, 40 cards (17 pontos, A1–B1), Wiktionary e às cegas | aprovado e no ar em 23/10 (cards PR #43, Catálogo `en-pt`) |
+| 5 | francês para brasileiros | próximo |

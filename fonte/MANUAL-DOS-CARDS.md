@@ -1113,7 +1113,8 @@ Os cards do mesmo `conjunto` (de 2 a 4) dividem as alternativas, cada um com a s
 - **A alternativa errada pode ser frase impossível** (pedido do Gere, 23/10): é ali que entra o
   erro típico do público («cuando llegar», «voy de autobús»). O que não pode é alternativa
   certa para outra pergunta do conjunto, nem em outra região: «Mi hijo está pronto» se diz no
-  Uruguai, e saiu do conjunto de *listo*.
+  Uruguai, e saiu do conjunto de *listo*. No inglês, saíram as erradas que algum dialeto aceita
+  (*she left me go*, *if I would have money*, *how many books you have?*).
 - **A pergunta diz o que distingue**: «Ele gosta do livro», e não «Gosta do livro», quando *le*
   e *me* são alternativas; o tratamento do português casa com o do espanhol («Me diz isso!» para
   *dímelo*, de tú).
