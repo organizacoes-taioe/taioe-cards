@@ -1104,6 +1104,6 @@ vivas, «fazendo os ajustes necessários para ensinar as coisas mais relevantes�
 | # | etapa | situação |
 |---|---|---|
 | 1 | motor, app, build e varredura para o contraste em qualquer baralho; `publicos` | feito (23/10, branch `contraste-linguas-vivas`) |
-| 2 | piloto `es-pt`: 15 conjuntos, 32 cards (12 pontos, A1–B1), Wiktionary e às cegas | feito (23/10); esperando a aprovação do Gere |
-| 3 | Catálogo `es-pt` no teste e na produção, merge | depois da aprovação |
+| 2 | piloto `es-pt`: 15 conjuntos, 32 cards (12 pontos, A1–B1), Wiktionary e às cegas | feito; aprovado pelo Gere em 23/10 |
+| 3 | Catálogo `es-pt` no teste e na produção, merge | 23/10 (cards PR #42) |
 | 4 | inglês e francês para brasileiros | depois de o Gere estudar o piloto |
