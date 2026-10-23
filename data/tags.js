@@ -1328,6 +1328,11 @@ window.TAGS_RAW = {
   "es": "frase de uso",
   "cards": 0
  },
+ "contraste": {
+  "en": "contrast",
+  "es": "contraste",
+  "cards": 0
+ },
  "caso": {
   "en": "case",
   "es": "caso",

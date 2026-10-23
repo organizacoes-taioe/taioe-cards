@@ -239,7 +239,7 @@ de primeira, nunca mais; errou, volta até acertar **3 vezes seguidas**, e entã
 - Mais tarde: a nota passa a somar o erro real de cada tipo (caso × declinação × número), tirado das
   respostas.
 
-### 3.7 Contraste (`la-k…`): a mesma frase, outro caso (planejado em 22/10, esperando o Gere)
+### 3.7 Contraste (`la-k…`): a mesma frase, outro caso (aprovado e feito em 22/10)
 Pedido do Gere (22/10): depois que os casos estiverem aprendidos, uma frase simples em português e,
 como alternativas, as mesmas palavras latinas, na mesma ordem, mudando só os casos; e outros cards
 com as mesmas alternativas e outra frase em português. **Só múltipla escolha.** E outros cards do
@@ -277,7 +277,7 @@ mesmo jeito, que mostrem as sutilezas da gramática.
   8. *ut* + subjuntivo (para que) × *ut* + indicativo (como); *cum* (com) × *cum* + subjuntivo
      (quando, como);
   9. o locativo (*Romae*, em Roma) × o genitivo; o ablativo de comparação × *quam*.
-- **Decisões, com a recomendação marcada:**
+- **Decisões** ✔ (o Gere, 22/10: «Pode fazer o card de contraste com as recomendações de D14 a D17»):
   - **D14. Quando entra.** ★ Quando os conceitos dos casos do conjunto estão dominados. Ou: quando os
     cards de forma daqueles casos estão fechados.
   - **D15. Como se domina.** ★ Três acertos seguidos na múltipla escolha, e depois volta por data,
@@ -288,6 +288,36 @@ mesmo jeito, que mostrem as sutilezas da gramática.
   - **D17. Por onde começar.** ★ Os itens 1 a 3 (os casos e as preposições), uns 10 conjuntos e 30
     cards na primeira leva; os de verbo (5 e 6) quando o perfeito e a passiva tiverem estreado; os 7 a
     9 depois.
+- **Feito** (cards PR do contraste; infra PR #17, tipo `contraste` no catálogo):
+  - A leva fica em `fonte/latim/cache/levas/contrastes-1.json` (fora do git, como as outras):
+    por conjunto, as 4 alternativas com o sentido e a anotação palavra por palavra, e os cards
+    (a frase portuguesa e o índice da certa). `python -I fonte/latim/contrastes.py <leva>` passa a
+    anotação das **quatro** pelo `conferir.py` e grava `fonte/cards/la/11-contrastes.json`.
+  - Primeira leva: 10 conjuntos, 27 cards (k01–k10): nominativo × acusativo com a ordem trocada
+    (lobo e cão, pai e mãe, a gota e a pedra, o cordeiro e o lobo de Fedro), *fugio* e *credo*
+    (a regência que o português engana: «foge do lobo» = *lupum*, «acredita no homem» = *viro*),
+    dativo × genitivo (*viro*/*viri*, *patri*/*patris*, *filio*/*filii*), o vocativo (*Lupe,
+    pastor te videt*) e *in* + acusativo × ablativo (*in tenebras* / *in tenebris*). Quase tudo
+    com palavras das primeiras frases; k09 e k10 pedem o Fedro e o Pai-Nosso (e o Glória).
+  - Conferência às cegas (22/10, D10): um agente, só com a frase portuguesa e as quatro, acertou as 30
+    da primeira versão e não achou latim errado. Pelo que ele apontou, saíram 3 cards de sentido
+    estranho («o pastor do lobo», «o cão do lobo vê»), que ficam só como alternativa errada; a frase
+    que começa pelo verbo ganhou o sujeito («Ele ama…», lida antes como imperativo); e «foge nas
+    trevas» virou «no meio das trevas» (no Brasil, «em» com verbo de movimento soa como direção).
+    Regras para as próximas: os dois sentidos do par plausíveis; nada de pergunta começando pelo
+    verbo; cuidado com as formas iguais (*canis* nominativo e genitivo, vocativo igual ao
+    nominativo, em que a pista é só a vírgula).
+  - O card: `la` (a certa), `pt` (a pergunta), `distratoresLa` (as outras três), `conjunto`,
+    `requerTodas` (as palavras do conjunto e os conceitos de todos os casos que aparecem nas
+    quatro), `palavras` e `conceitos`. A nota traz a anotação da certa, a explicação e o sentido de
+    cada alternativa, uma por linha. O build confere 4 alternativas diferentes, do mesmo tamanho,
+    as mesmas em todo o conjunto, e de 2 a 4 cards por conjunto.
+  - No motor (`ehContraste`): sempre `VOLTA` (pergunta em português, resposta em latim) e
+    `multipla`, também na revisão; três acertos seguidos → `dominado`, com `voltaEm` por data.
+  - No app: entra como frase presa (`recolherFrasesLiberadas`), mas não fura a fila (não é
+    «fresca»: os conceitos destravam muitos de uma vez), e entra um a cada duas estreias;
+    `semConjuntoSeguido` e `conjuntoAnterior` impedem dois do mesmo conjunto seguidos, na estreia
+    e nas filas. Sem «Já conheço». O catálogo leva as quatro frases latinas como `alternativas`.
 
 ## 4. A resposta escrita: aceitar tudo o que está certo
 1. **Um funil estrito** (feito no piloto): acento, maiúscula, pontuação, artigo e «já» não contam;
@@ -510,7 +540,7 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
 | 3 | piloto: texto zero, conceitos dos casos e do presente, 4 textos de nível 1 com palavras e frases de uso; os 4 na Biblioteca | no ar em 21/10 (biblioteca PR #21, infra PR #15, hub PR #13); o Gere estuda e aponta |
 | 3b | card de forma (§3.6) e o aviso de pergunta trocada | 22/10 (infra PR #16) |
 | 3c | leva 2: primeiras frases menos religiosas, Catulo 85, Fedro I,1, Regina caeli, corpus clássico, 89 frases de uso (D11–D13) | 23/10 (biblioteca PR #22) |
-| 3d | card de contraste (§3.7) | planejado; espera o Gere (D14–D17) |
+| 3d | card de contraste (§3.7), 10 conjuntos e 27 cards dos itens 1 a 3 | 22/10 (infra PR #17) |
 | 4 | os textos em domínio público, nível a nível, em levas de ~100 cards, com a matriz a cada leva; metade fora da Bíblia e da liturgia (§7) | — |
 | 5 | os textos da NV, com a resposta da LEV (ou na Clementina) | — |
 | depois | pronúncia eclesiástica; `la-es` e `la-en`; prosa com «Quero aprender o resto» | — |

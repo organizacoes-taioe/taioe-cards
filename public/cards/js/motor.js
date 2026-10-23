@@ -2229,9 +2229,20 @@ window.Motor = (function () {
        cinco, depois escrever, e três acertos seguidos escrevendo fecham a
        direção. Errar devolve para a múltipla escolha da direção em que está
        — quem já provou o espanhol→português não volta à estaca zero. */
-    const inversa = ehVolta(r.direcao);
+    const inversa = ehVolta(r.direcao) && !ehContraste(est.id);
     const jaDominado = est.etapa === 'dominado';
-    if (ehForma(est.id)) {
+    if (ehContraste(est.id) && r.acertou && !jaDominado) {
+      /* o card de contraste (§3.7): só múltipla escolha; três acertos seguidos o dominam, e
+         daí em diante ele volta por data, como os outros */
+      if (est.seguidas >= ACERTOS_PARA_VIRAR) {
+        est.etapa = 'dominado';
+        if (!est.dominadoEm) est.dominadoEm = new Date().toISOString();
+        if (est.ateDominar === undefined) est.ateDominar = est.vistas;
+        est.seguidas = 0;
+      } else {
+        est.etapa = 'multipla';
+      }
+    } else if (ehForma(est.id)) {
       /* o card de forma (§3.6): só escrita; o acerto de primeira, ou três seguidos depois de
          um erro, fecham de vez */
       if (r.acertou && (est.vistas === 1 || est.seguidas >= ACERTOS_PARA_VIRAR)) {
@@ -2336,6 +2347,9 @@ window.Motor = (function () {
   };
 
   function faseDe(est) {
+    /* o card de contraste (§3.7) é sempre a múltipla escolha: a frase em português, a resposta
+       em latim, entre quatro que só mudam nos casos */
+    if (est && ehContraste(est.id)) return { direcao: VOLTA, modo: 'multipla' };
     /* o card de leitura só conhece a ida, também quando dominado; no modo trilhas, todos */
     if (est && (soIda() || ehLeitura(est.id))) {
       if (est.etapa === 'dominado' || est.etapa === 'escrita') return { direcao: IDA, modo: 'escrita' };
@@ -2380,6 +2394,14 @@ window.Motor = (function () {
   let RESPOSTA_DA_FORMA = Object.create(null);   // id do card de forma → resposta («dativo»)
 
   function ehForma(id) { return TIPO[id] === 'forma'; }
+
+  /* ── o card de contraste (cards/LATIM.md §3.7, pedido do Gere, 22/10/2026) ──
+     Uma frase simples em português e, como alternativas, as mesmas palavras latinas na mesma
+     ordem, mudando só os casos: Lupus canem videt · Lupum canis videt · Lupi canis videt ·
+     Lupe, canis videt. Os cards do mesmo «conjunto» têm as mesmas quatro alternativas, cada
+     um com a sua frase portuguesa. Só múltipla escolha; entra quando as palavras e os
+     conceitos dos casos estão dominados («requerTodas»). */
+  function ehContraste(id) { return TIPO[id] === 'contraste'; }
 
   /* O card de forma acertado já disse o que tinha a dizer: fora de todas as filas. */
   function encerrado(id, est) {
@@ -2647,6 +2669,8 @@ window.Motor = (function () {
      «estados» é o progresso de quem responde: com ele, a frase de uso pode
      trocar distrator pronto por palavra que a pessoa já viu (ver abaixo). */
   function alternativas(card, direcao, todos, estados) {
+    /* no contraste, as quatro do conjunto, sempre as mesmas, em ordem sorteada */
+    if (card.tipo === 'contraste') return embaralhar([card.la, ...(card.distratoresLa || [])]);
     const lingua = linguaDaResposta(direcao);
     const certa = card[CAMPOS[lingua].certa];
     /* Responder na língua que o baralho ensina é produzir, e aí não há quatro
@@ -3975,7 +3999,7 @@ window.Motor = (function () {
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
-    ehForma, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
+    ehForma, ehContraste, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     SORTEIO_DA_FORMA, ACERTOS_QUE_SOLTAM,
     erroDeGenero, formasAceitas, LIMITES, cortar,
     linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
