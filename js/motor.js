@@ -2395,7 +2395,8 @@ window.Motor = (function () {
 
   function ehForma(id) { return TIPO[id] === 'forma'; }
 
-  /* ── o card de contraste (cards/LATIM.md §3.7, pedido do Gere, 22/10/2026) ──
+  /* ── o card de contraste (cards/LATIM.md §3.7, pedido do Gere, 22/10/2026; nas línguas vivas,
+     cards/PLANO.md §10, 23/10) ──
      Uma frase simples em português e, como alternativas, as mesmas palavras latinas na mesma
      ordem, mudando só os casos: Lupus canem videt · Lupum canis videt · Lupi canis videt ·
      Lupe, canis videt. Os cards do mesmo «conjunto» têm as mesmas quatro alternativas, cada
@@ -2669,8 +2670,12 @@ window.Motor = (function () {
      «estados» é o progresso de quem responde: com ele, a frase de uso pode
      trocar distrator pronto por palavra que a pessoa já viu (ver abaixo). */
   function alternativas(card, direcao, todos, estados) {
-    /* no contraste, as quatro do conjunto, sempre as mesmas, em ordem sorteada */
-    if (card.tipo === 'contraste') return embaralhar([card.la, ...(card.distratoresLa || [])]);
+    /* no contraste, as do conjunto, sempre as mesmas, em ordem sorteada; estão no campo da
+       língua do baralho («la» e «distratoresLa», «es» e «distratoresEs»…) */
+    if (card.tipo === 'contraste') {
+      const c = CAMPOS[linguaDaResposta(direcao)];
+      return embaralhar([card[c.certa], ...(card[c.distratores] || [])]);
+    }
     const lingua = linguaDaResposta(direcao);
     const certa = card[CAMPOS[lingua].certa];
     /* Responder na língua que o baralho ensina é produzir, e aí não há quatro

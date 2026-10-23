@@ -1069,3 +1069,41 @@ Rossetti não está no Wikisource.
 | 7 | cards das palavras dos poemas automáticos (levas) | es, en, pt feitos (21/10); fr em andamento |
 | 8 | Biblioteca: o botão e a entrada pelo texto (`/cards/?texto=<id>`) | feito (21/10), testado no local |
 | 9 | teste, produção, manual 17.4 reescrito | manual feito; falta publicar |
+
+## 10. O card de contraste nas línguas vivas (decidido em 23/10/2026)
+
+O card de contraste nasceu no latim (`LATIM.md` §3.7). Em 23/10 o Gere pediu o mesmo nas línguas
+vivas, «fazendo os ajustes necessários para ensinar as coisas mais relevantes».
+
+- **O card.** A frase na língua de quem estuda e, como alternativas, de 4 a 5 frases da língua
+  ensinada que confundem com a certa. É só múltipla escolha, também na revisão. Entra quando as
+  palavras do conjunto estão dominadas (`requerTodas`, só os cards de palavra que existem), não
+  fura a fila e entra intercalado, como as frases antigas. Três acertos seguidos o dominam, e depois
+  ele volta por data. Dois do mesmo conjunto nunca vêm seguidos. Os cards de um conjunto (de 2 a 4)
+  têm as mesmas alternativas. A nota traz a regra, o sentido de cada alternativa certa e o porquê
+  de cada errada (✗).
+- **As alternativas erradas podem ser frases impossíveis** (Gere, 23/10: «nada indica para o
+  usuário que todas as frases dos distratores são possíveis. Quero que entre ali todas as frases
+  que podem confundir com a certa, sejam possíveis ou não»): o erro típico de quem fala a língua
+  de casa (*cuando llegar*, *yo gusto del libro*, *voy de autobús*). Nenhuma alternativa pode estar
+  certa para nenhuma pergunta do conjunto, nem em outra região nem no sentido raro (manual §6.1).
+- **Só contraste.** Sem o card de forma (nomear o tempo não ajuda a falar) e sem o de conceito: a
+  regra vai na nota. O card de lacuna fica para depois do piloto.
+- **A ordem.** Piloto no espanhol para brasileiros (`es-pt`, `"publicos": ["pt"]`); depois inglês
+  e francês para brasileiros; os outros públicos por último. Só contrastes que valem em todo o
+  mundo da língua (fora o *vosotros*, o *leísmo* e o perfeito × indefinido).
+- **A conferência.** O Wiktionary, pelo kaikki, como no latim: `fonte/contrastes/formas.py`
+  baixa a página de cada palavra (o acento conta), e `fonte/contrastes/contrastes.py <leva>` confere
+  cada forma anotada (tempo, modo, pessoa), a existência de toda palavra das alternativas certas
+  e o card de cada lema, e grava `fonte/cards/<língua>/NN-contrastes.json`. A leva fica em
+  `fonte/contrastes/cache/levas/` (fora do git). Depois, a conferência às cegas por um agente.
+  O Wiktionary não julga sintaxe: a frase errada de propósito não se confere.
+- **Mais tarde:** a mesma conferência pode passar pelos 500 cards de conjugação (o rótulo de cada
+  `formasEs`, `formasEn`, `formasFr`), se o Gere quiser.
+
+| # | etapa | situação |
+|---|---|---|
+| 1 | motor, app, build e varredura para o contraste em qualquer baralho; `publicos` | feito (23/10, branch `contraste-linguas-vivas`) |
+| 2 | piloto `es-pt`: 15 conjuntos, 32 cards (12 pontos, A1–B1), Wiktionary e às cegas | feito (23/10); esperando a aprovação do Gere |
+| 3 | Catálogo `es-pt` no teste e na produção, merge | depois da aprovação |
+| 4 | inglês e francês para brasileiros | depois de o Gere estudar o piloto |

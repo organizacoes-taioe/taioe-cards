@@ -520,14 +520,17 @@ window.TaioeCardsApp = function (ctx) {
     const presas = [], resto = [];
     p.ineditos.forEach(id => {
       const c = PORID[id] || {};
-      (c.tipo === 'frase' && Motor.requeridas(c).length ? presas : resto).push(id);
+      ((c.tipo === 'frase' || c.tipo === 'contraste') && Motor.requeridas(c).length ? presas : resto).push(id);
     });
     const quando = id => Motor.venceuEm(PORID[id], p.cards, p.arquivados);
     presas.sort((a, b) => quando(b) - quando(a));
 
     const FRESCAS_NA_FRENTE = 2;
     const agora = Date.now();
-    const frescas = presas.filter(id => agora - quando(id) < 864e5).slice(0, FRESCAS_NA_FRENTE);
+    /* o contraste (PLANO.md §10) não fura a fila: as palavras dele destravam vários de uma vez, e
+       eles entram intercalados, como as frases antigas */
+    const frescas = presas.filter(id => (PORID[id] || {}).tipo !== 'contraste' && agora - quando(id) < 864e5)
+      .slice(0, FRESCAS_NA_FRENTE);
     const antigas = presas.filter(id => frescas.indexOf(id) < 0);
 
     /* as taxas do nivelamento, quando houver, são o ponto de partida de cada
@@ -582,7 +585,7 @@ window.TaioeCardsApp = function (ctx) {
       const vez = Math.max(0, cada - desde);
       fila = fila.slice(0, vez).concat([doTexto[0]], intercalar(fila.slice(vez), doTexto.slice(1), cada));
     }
-    p.ineditos = fila;
+    p.ineditos = semConjuntoSeguido(fila);
   }
 
   /* ── a ordem do modo trilhas (cards/LATIM.md §5) ──
@@ -3991,7 +3994,7 @@ window.TaioeCardsApp = function (ctx) {
     el['btn-texto'].hidden = !TEXTOS.length;
     ['conceito', 'forma', 'contraste'].forEach(v => {
       const opcao = el['filtro-tipo'].querySelector('option[value="' + v + '"]');
-      if (opcao) opcao.hidden = !TRILHAS;
+      if (opcao) opcao.hidden = v === 'contraste' ? !CARDS.some(c => c.tipo === 'contraste') : !TRILHAS;
     });
     /* no modo trilhas não há volta nem teste de nível: sai o filtro da volta, sai o grupo da
        avaliação, e o recomeço volta à escolha dos textos */

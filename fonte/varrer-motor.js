@@ -82,6 +82,22 @@ const erro = (id, msg) => problemas.push('  - ' + id + '  ' + msg);
 const CARDS = FONTE.map(c => M.formaDoCard(c, 0));
 
 for (const bruto of FONTE.concat(DE_TEXTO)) {
+  /* o contraste (PLANO.md §10) só existe na volta, para os públicos dele, e se responde
+     clicando: as alternativas são as do conjunto, todas, com a certa entre elas, uma vez só */
+  if (bruto.tipo === 'contraste') {
+    for (const a of bruto.publicos || audiencias) {
+      const direcao = a + '-' + idioma;
+      const opcoes = [bruto[idioma]].concat(bruto['distratores' + idioma[0].toUpperCase() + idioma.slice(1)] || []);
+      for (let i = 0; i < SORTEIOS; i++) {
+        const alts = M.alternativas(bruto, direcao, CARDS, estados);
+        if (alts.length !== opcoes.length || opcoes.some(o => !alts.includes(o)) || new Set(alts).size !== alts.length) {
+          erro(bruto.id, '[' + direcao + '] as alternativas não são as do conjunto: ' + alts.join(' | '));
+          break;
+        }
+      }
+    }
+    continue;
+  }
   /* card de gênero rende duas formas, e as duas têm de passar */
   for (const c of M.formasDoCard(bruto)) {
 

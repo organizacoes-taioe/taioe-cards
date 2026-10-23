@@ -359,7 +359,8 @@ for (const bruto of cards) {
      declarado, não é repetição */
   /* o card de forma do latim (LATIM.md §3.6) pergunta a mesma palavra em versos diferentes
      («nobis» no Pai-Nosso e na Ave-Maria): a frente dele é o verso, não a palavra */
-  const deForma = c.tipo === 'forma';
+  /* o contraste (PLANO.md §10) também: ele só se escolhe, e pode repetir a frase de outro card */
+  const deForma = c.tipo === 'forma' || c.tipo === 'contraste';
   const igual = !deForma && textos.get(normalizar(c[L.texto]));
   const homografo = igual && ((bruto.homografos || []).includes(igual) ||
     ((cards.find(x => x.id === igual) || {}).homografos || []).includes(c.id));
@@ -384,14 +385,14 @@ for (const bruto of cards) {
     if (typeof c[campo] !== 'string' || !c[campo].trim()) erros.push('falta "' + campo + '": ' + onde);
   }
   /* o card de conceito (cards/LATIM.md §3.5) só existe no latim */
-  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma', 'contraste'] : ['palavra', 'frase']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
+  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma', 'contraste'] : ['palavra', 'frase', 'contraste']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
   if (!NIVEIS.includes(c.nivel)) erros.push('nível inválido: ' + onde);
   if (!Array.isArray(c.tags) || !c.tags.length) erros.push('sem tags: ' + onde);
 
   /* Distrator escrito à mão na própria língua ensinada é raro — na volta as
      alternativas saem das formas verbais e de outros cards —, mas quando
      existe passa pela mesma régua. */
-  checarDistratores(c, audiencias[0] + '-' + idioma, L.distratores, onde, e => erros.push(e));
+  if (c.tipo !== 'contraste') checarDistratores(c, audiencias[0] + '-' + idioma, L.distratores, onde, e => erros.push(e));
 
   /* Card de conjugação traz a mesma frase em quatro outros tempos. Elas têm
      dois serviços: reconhecer o tempo errado na resposta escrita, e ser as
@@ -469,6 +470,8 @@ for (const bruto of cards) {
      outras: o português é a língua em que o baralho é escrito e relido, e nas
      demais quem decide é a revisão, que barrar aqui travaria. */
   for (const a of audiencias) {
+    /* o card só de alguns públicos («publicos») não precisa da língua dos outros */
+    if (c.publicos && !c.publicos.includes(a)) continue;
     const A = CAMPOS_DA_LINGUA[a];
     const ondeA = onde + ' [' + a + ']';
     const err = e => erros.push(e);
@@ -677,6 +680,53 @@ for (const { idioma, cards } of baralhos) {
   }
 }
 
+/* ── o card de contraste (LATIM.md §3.7; nas línguas vivas, PLANO.md §10) ──
+   A frase de quem estuda e, como alternativas, as do conjunto: a certa no campo da língua do
+   baralho («la», «es»…), as outras em «distratoresLa», «distratoresEs»… Todo card do conjunto
+   tem as mesmas alternativas, de 2 a 4 cards por conjunto, cada um com uma certa diferente.
+   No latim são quatro, do mesmo tamanho (mudam só os casos); nas línguas vivas, 4 ou 5, e as
+   erradas podem ser frases impossíveis (pedido do Gere, 23/10). «publicos» limita os cursos. */
+for (const { idioma, cards } of baralhos) {
+  const L = CAMPOS_DA_LINGUA[idioma];
+  const PORID = new Map(cards.map(c => [c.id, c]));
+  /* o contraste só se responde clicando, e o app compara o texto exato: o funil (que no espanhol
+     iguala «habla» e «hablas») não conta aqui */
+  const chave = t => String(t).trim();
+  const opcoesDe = x => [x[L.texto]].concat(Array.isArray(x[L.distratores]) ? x[L.distratores] : []);
+  for (const c of cards) {
+    if (c.publicos !== undefined && (!Array.isArray(c.publicos) || !c.publicos.length ||
+        c.publicos.some(a => !audienciasDe(idioma).includes(a)))) {
+      erros.push('«publicos» tem de ser uma lista de públicos do baralho (' + audienciasDe(idioma).join(', ') + '): ' + c.id);
+    }
+    if (c.tipo !== 'contraste') continue;
+    const onde = c.id + ' (' + c[L.texto] + ')';
+    const opcoes = opcoesDe(c);
+    const quantas = idioma === 'la' ? [4] : [4, 5];
+    if (!quantas.includes(opcoes.length) || new Set(opcoes.map(chave)).size !== opcoes.length) {
+      erros.push('contraste sem ' + quantas.join(' ou ') + ' alternativas diferentes: ' + onde);
+    }
+    if (idioma === 'la') {
+      /* as mesmas palavras na mesma ordem: o mesmo número delas em todas */
+      const n = o => (o.match(/[A-Za-zÀ-ÿĀ-ſ]+/g) || []).length;
+      if (opcoes.some(o => n(o) !== n(c.la))) erros.push('contraste com alternativa de outro tamanho: ' + onde);
+    }
+    if (typeof c.conjunto !== 'string' || !c.conjunto) erros.push('contraste sem «conjunto»: ' + onde);
+    const irmaos = cards.filter(x => x.tipo === 'contraste' && x.conjunto === c.conjunto);
+    const chaveDas = x => opcoesDe(x).map(chave).sort().join('|');
+    if (irmaos.some(x => chaveDas(x) !== chaveDas(c))) erros.push('contraste com alternativas diferentes das do conjunto ' + c.conjunto + ': ' + onde);
+    if (irmaos.length < 2 || irmaos.length > 4) erros.push('conjunto de contraste com ' + irmaos.length + ' cards (2 a 4): ' + c.conjunto);
+    if (new Set(irmaos.map(x => chave(x[L.texto]))).size !== irmaos.length) erros.push('dois cards do conjunto ' + c.conjunto + ' com a mesma resposta: ' + onde);
+    if (new Set(irmaos.map(x => x.pt)).size !== irmaos.length) erros.push('duas perguntas iguais no conjunto ' + c.conjunto + ': ' + onde);
+    const req = Array.isArray(c.requerTodas) ? c.requerTodas : [];
+    if (!req.length) erros.push('contraste sem «requerTodas»: ' + onde);
+    for (const r of req) {
+      const alvo = PORID.get(r);
+      if (!alvo || !['palavra', 'conceito'].includes(alvo.tipo)) erros.push('contraste preso a card que não é palavra nem conceito: ' + onde + ' → ' + r);
+    }
+    if (String(c.pt || '').length > Motor.LIMITES.resposta) erros.push('pergunta com mais de ' + Motor.LIMITES.resposta + ' letras: ' + onde);
+  }
+}
+
 /* ── o latim (cards/LATIM.md) ──
    Toda frase latina traz a anotação palavra por palavra («palavras»: forma, card do lema,
    rótulo da forma, função), que faz a nota, prende a frase às palavras e ensina os casos. Aqui
@@ -732,30 +782,13 @@ for (const { idioma, cards } of baralhos) {
       continue;
     }
     if (c.tipo === 'contraste') {
-      const opcoes = [c.la].concat(Array.isArray(c.distratoresLa) ? c.distratoresLa : []);
-      if (typeof c.conjunto !== 'string' || !c.conjunto) erros.push('contraste sem «conjunto»: ' + onde);
-      if (opcoes.length !== 4 || new Set(opcoes.map(chaveLatina)).size !== 4) erros.push('contraste sem 4 alternativas diferentes: ' + onde);
-      /* as mesmas palavras na mesma ordem: o mesmo número delas em todas */
-      const quantas = o => (o.match(/[A-Za-zÀ-ÿĀ-ſ]+/g) || []).length;
-      if (opcoes.some(o => quantas(o) !== quantas(c.la))) erros.push('contraste com alternativa de outro tamanho: ' + onde);
-      const irmaos = cards.filter(x => x.tipo === 'contraste' && x.conjunto === c.conjunto);
-      const chaveDas = x => [x.la].concat(x.distratoresLa || []).map(chaveLatina).sort().join('|');
-      if (irmaos.some(x => chaveDas(x) !== chaveDas(c))) erros.push('contraste com alternativas diferentes das do conjunto ' + c.conjunto + ': ' + onde);
-      if (irmaos.length < 2 || irmaos.length > 4) erros.push('conjunto de contraste com ' + irmaos.length + ' cards (2 a 4): ' + c.conjunto);
-      if (new Set(irmaos.map(x => chaveLatina(x.la))).size !== irmaos.length) erros.push('dois cards do conjunto ' + c.conjunto + ' com a mesma resposta: ' + onde);
-      const req = Array.isArray(c.requerTodas) ? c.requerTodas : [];
-      if (!req.length) erros.push('contraste sem «requerTodas»: ' + onde);
-      for (const r of req) {
-        const alvo = PORID.get(r);
-        if (!alvo || !['palavra', 'conceito'].includes(alvo.tipo)) erros.push('contraste preso a card que não é palavra nem conceito: ' + onde + ' → ' + r);
-      }
+      /* o latim confere aqui só a anotação; o resto é de todo baralho (mais abaixo) */
       for (const p of c.palavras || []) {
-        if (p.c && !req.includes(p.c)) erros.push('contraste com palavra fora do «requerTodas»: ' + onde + ' → ' + p.w);
+        if (p.c && !(c.requerTodas || []).includes(p.c)) erros.push('contraste com palavra fora do «requerTodas»: ' + onde + ' → ' + p.w);
       }
       for (const g of c.conceitos || []) {
-        if (!req.includes(g)) erros.push('contraste com conceito fora do «requerTodas»: ' + onde + ' → ' + g);
+        if (!(c.requerTodas || []).includes(g)) erros.push('contraste com conceito fora do «requerTodas»: ' + onde + ' → ' + g);
       }
-      if (String(c.pt || '').length > Motor.LIMITES.resposta) erros.push('pergunta com mais de ' + Motor.LIMITES.resposta + ' letras: ' + onde);
     }
     if (c.tipo !== 'frase' && c.tipo !== 'contraste') continue;
     if (!c.fonte && c.tipo === 'frase') erros.push('frase latina sem «fonte» (a passagem de onde vem): ' + onde);
@@ -1079,7 +1112,7 @@ for (const { idioma, cards } of baralhos) {
     /* as línguas que não são nem a ensinada nem a do público: uma nos
        baralhos de três línguas, duas no de francês */
     const terceiras = IDIOMAS.filter(l => l !== idioma && l !== audiencia);
-    const doApp = cards.map(c => {
+    const doApp = cards.filter(c => !c.publicos || c.publicos.includes(audiencia)).map(c => {
       if (!ID_DO_CATALOGO.test(c.id) || c.id.length > 24) {
         console.error('\n  id fora do formato do catálogo (minúsculas, números e hífens, até 24): ' + c.id + '\n');
         process.exit(1);
@@ -1160,7 +1193,8 @@ function escreverCatalogo(curso, leva, doApp, audiencia) {
   const linhas = doApp.map(c => {
     const alternativas = new Set();
     /* o contraste do latim mostra as quatro frases latinas do conjunto (LATIM.md §3.7) */
-    if (c.tipo === 'contraste') [c.la].concat(c.distratoresLa || []).forEach(t => alternativas.add(String(t)));
+    const ensinada = CAMPOS_DA_LINGUA[curso.split('-')[0]];
+    if (c.tipo === 'contraste') [c[ensinada.texto]].concat(c[ensinada.distratores] || []).forEach(t => alternativas.add(String(t)));
     else [0, 1].forEach(g => {
       const f = Motor.formaDoCard(c, g);
       [f[casa.texto]].concat(f[casa.distratores] || []).forEach(t => { if (t) alternativas.add(String(t)); });
