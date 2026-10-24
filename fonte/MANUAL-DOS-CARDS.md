@@ -17,14 +17,16 @@ O funcionamento do app (filas, níveis, conferência da resposta escrita) está 
 
 Leva nova não se escreve no escuro. Nesta ordem:
 
-1. **`git pull` na pasta `dados/`.** Ela é outro repositório, escrito pelo app,
-   e fica para trás com frequência. Julgar arquivo velho já aconteceu duas vezes.
+1. **O retorno vem do banco** (desde 06/10), pela revisão das pendências
+   (`../rotinas/pendencias.md`, passo 4, e `../rotinas/retorno.md`). A pasta
+   `dados/` era do app antigo.
 2. **Os três canais de retorno**, reproduzindo cada caso com `Motor.conferir`
    contra o baralho atual (boa parte já passa por conta de correções anteriores):
-   - `dados/comentarios.json` — o que foi comentado num card;
-   - `dados/contestacoes.json` — respostas escritas contadas como erro e
-     contestadas. **Cada caso é levado ao Gere para decidir junto**; não se
-     aceita nem se recusa por conta própria;
+   - os comentários — o que foi comentado num card;
+   - as contestações — respostas escritas contadas como erro e contestadas.
+     **Os casos seguros se resolvem direto e só os duvidosos vão ao Gere**, com
+     uma decisão só e a sugestão, em `/admin/pendencias/` (pedido dele, 24/10/2026;
+     antes, cada caso ia a ele);
    - os **«deu quase» aceitos** — nos logs de `dados/sessoes/`, eventos com
      `julgado_por_voce: true` e `acertou: true`. É o canal mais silencioso, e é
      onde a variante legítima aparece antes de virar contestação. Separar erro
@@ -750,7 +752,7 @@ sem ele o navegador serve o baralho velho.
 | Forma que é tradução válida não serve | `v043` «hemos vivido»; `v062` «pondrías» |
 | Dois sentidos certos: cobra-se o que o português não tem | `p239` la matrícula (a placa), com o outro só na nota |
 | Uma ficha, duas formas, para o que muda de gênero | `u023` «Tu hermano es muy majo», pedido do Gere, e mais 37 cards |
-| Cada contestação é decidida junto | combinado desde a primeira leva |
+| Contestação segura se resolve direto; a duvidosa vai ao Gere, uma decisão por pendência | 24/10/2026 (antes, cada uma era decidida junto) |
 | Contestação recusada entra na nota do card | `p201` «participar» para `asistir`: quem assiste está presente e pode ficar calado |
 | `sinonimosEs`: certo, mas não é a palavra do card | `p042` currar: «se eu respondesse trabajar, o que aconteceria?» |
 | A variante de outro lugar vale, com aviso | «não vejo motivo para dar tanta exclusividade para a Espanha»: 180 variantes em 138 cards |
