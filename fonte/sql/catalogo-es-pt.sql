@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva 5130c79e, 1972 cards.
+-- Catálogo do curso es-pt, leva 58a9762d, 1972 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', '5130c79e', '1972 cards')
+values ('es-pt', '58a9762d', '1972 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -17,7 +17,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p008', 'palavra', 'A2', array['falso-amigo']::text[], null, 'd8cb72ae', array['o polo / o eixo', 'o polvo / o molusco', 'o povo / a gente', 'o pulmão / o fôlego', 'o pó / a poeira']::text[]),
   ('es-pt', 'p009', 'palavra', 'A1', array['falso-amigo']::text[], null, 'd213fa5c', array['a cena (de filme)', 'a cena do crime', 'a cerimônia', 'o cenário', 'o jantar']::text[]),
   ('es-pt', 'p010', 'palavra', 'A2', array['falso-amigo']::text[], null, 'a76d7aaf', array['a escova', 'a escova de dentes', 'a escória', 'a vassoura', 'o esfregão']::text[]),
-  ('es-pt', 'p011', 'palavra', 'A2', array['falso-amigo']::text[], null, '77057eea', array['a cola / o grude', 'a coleira / a guia', 'a coluna / a espinha', 'o colar / o pingente', 'o rabo / a fila']::text[]),
+  ('es-pt', 'p011', 'palavra', 'A2', array['falso-amigo']::text[], null, '3a4c6461', array['a coleira / a guia', 'a coluna / a espinha', 'o colar / o pingente', 'o colo / o regaço', 'o rabo / a fila']::text[]),
   ('es-pt', 'p012', 'palavra', 'A1', array['falso-amigo']::text[], null, 'f33170bd', array['a vasilha', 'o copo', 'o vasilhame', 'o vaso de flores', 'o vaso sanitário']::text[]),
   ('es-pt', 'p013', 'palavra', 'A2', array['falso-amigo', 'adjetivo']::text[], null, '6dc0650e', array['comprido / longo', 'estreito / apertado', 'farto / abundante', 'folgado / frouxo', 'largo / amplo']::text[]),
   ('es-pt', 'p014', 'palavra', 'A2', array['falso-amigo', 'adjetivo']::text[], null, '86ff46ba', array['alto (em altura)', 'apertado (sem folga)', 'comprido (em extensão)', 'estreito (sem espaço)', 'largo (em largura)']::text[]),
@@ -184,7 +184,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'f090', 'frase', 'B2', array['expressão']::text[], null, '9dbaec4d', array['Aliás, ele tinha razão.', 'Ao dizer isso, ele passou.', 'De passagem, ele disse a razão.', 'Dito isso, ele saiu.', 'Falando baixo, ele tinha razão.']::text[]),
   ('es-pt', 'f092', 'frase', 'C1', array['expressão']::text[], null, '124e3af6', array['Ele está me alongando.', 'Ele está me dando espaço.', 'Ele está me dando folga.', 'Ele está me enrolando.', 'Ele está me esticando.']::text[]),
   ('es-pt', 'f094', 'frase', 'C1', array['expressão']::text[], null, 'c93893dd', array['Aqui está tudo certo.', 'Aqui falta alguém.', 'Aqui mora um gato.', 'Aqui tem coisa errada.', 'Aqui tem gato preso.']::text[]),
-  ('es-pt', 'f095', 'frase', 'C2', array['expressão', 'formal']::text[], null, 'adc3e20e', array['Feita a contagem, ele renunciou.', 'Havendo contado tudo, ele renunciou.', 'Tendo contas a pagar, ele renunciou.', 'Tendo isso em vista, ele renunciou.', 'Tendo pago a conta, ele renunciou.']::text[]),
+  ('es-pt', 'f095', 'frase', 'C2', array['expressão', 'formal']::text[], null, 'e17b9d9e', array['Feita a contagem, ele renunciou.', 'Havendo contado tudo, ele renunciou.', 'Tendo contas a pagar, ele renunciou.', 'Tendo isso em vista, ele renunciou.', 'Tendo pago a conta, ele renunciou.']::text[]),
   ('es-pt', 'f096', 'frase', 'C2', array['jurídico', 'formal']::text[], null, '55e01c29', array['Sem pena de multa.', 'Sob dó da multa.', 'Sob pena de multa.', 'Sobre a pena de multa.', 'Só a pena da multa.']::text[]),
   ('es-pt', 'f097', 'frase', 'C2', array['formal']::text[], null, 'ce6908ee', array['Com tempero ele cozinhava em Madri.', 'Na estação ele morava em Madri.', 'Naquela época ele morava em Madri.', 'Por acaso ele morava em Madri.', 'Por sorte ele morava em Madri.']::text[]),
   ('es-pt', 'f098', 'frase', 'C2', array['formal']::text[], null, '0a8ec604', array['Além de caro, é lento.', 'Amanhã, se caro, será lento.', 'Apesar de caro, é lento.', 'Assim como o caro, é lento.', 'Por ser caro, é lento.']::text[]),
@@ -241,7 +241,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'v049', 'frase', 'A1', array['conjugação', 'presente', 'gustar', 'regular']::text[], null, '154a99e8', array['Eu não gostarei de esperar.', 'Eu não gostaria de esperar.', 'Eu não gostava de esperar.', 'Eu não gostei de esperar.', 'Eu não gosto de esperar.']::text[]),
   ('es-pt', 'v050', 'frase', 'B2', array['conjugação', 'pretérito', 'caer', 'irregular']::text[], null, '633499bc', array['Eu enchi o copo de novo.', 'Eu joguei o copo fora.', 'Eu peguei o copo rápido.', 'Eu quebrei o copo assim.', 'O copo caiu da minha mão.']::text[]),
   ('es-pt', 'p101', 'palavra', 'A2', array['falso-amigo', 'escola']::text[], null, 'a687020d', array['a borracha de apagar', 'a cola de papel', 'a fita de medir', 'a goma de mascar', 'a tinta de escrever']::text[]),
-  ('es-pt', 'p102', 'palavra', 'A2', array['falso-amigo', 'escola']::text[], null, '2e14f32d', array['a cola', 'o pagamento', 'o pedaço', 'o pente', 'o pigmento']::text[]),
+  ('es-pt', 'p102', 'palavra', 'A2', array['falso-amigo', 'escola']::text[], null, 'f6e11982', array['a cola (de grudar)', 'o pagamento (da conta)', 'o pedaço (de bolo)', 'o pente (de cabelo)', 'o pigmento (da tinta)']::text[]),
   ('es-pt', 'p103', 'palavra', 'A2', array['falso-amigo', 'casa']::text[], null, '8f8a46bc', array['o balde de areia', 'o copo de água', 'o jarro de suco', 'o prato de sopa', 'o vaso de flores']::text[]),
   ('es-pt', 'p104', 'palavra', 'A2', array['falso-amigo', 'animais']::text[], null, 'b2f6265f', array['o rastro', 'o rato', 'o retorno', 'o rincão', 'o rodo']::text[]),
   ('es-pt', 'p105', 'palavra', 'A1', array['falso-amigo', 'escola']::text[], null, 'f5cdb91f', array['a aula', 'a chave', 'a clareira', 'a classe social', 'a cláusula']::text[]),
@@ -326,7 +326,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p184', 'palavra', 'C2', array['substantivo']::text[], null, 'b9171802', array['a antipatia', 'a indagação', 'a inquietude', 'a inquilina', 'a insígnia']::text[]),
   ('es-pt', 'p185', 'palavra', 'C2', array['substantivo']::text[], null, '4bffaa9d', array['o escalão', 'o escaninho', 'o escarcéu', 'o escrutínio', 'o escárnio']::text[]),
   ('es-pt', 'p186', 'palavra', 'C1', array['substantivo']::text[], null, 'eb2d9fa6', array['o sobressalto', 'o socorro', 'o soluço', 'o sortilégio', 'o sossego']::text[]),
-  ('es-pt', 'p187', 'palavra', 'C1', array['substantivo']::text[], null, 'c8558520', array['a ousadia', 'o arranjo', 'o arrepio', 'o arrocho', 'o arroio']::text[]),
+  ('es-pt', 'p187', 'palavra', 'C1', array['substantivo']::text[], null, '17dd1fe0', array['a ousadia', 'o arranjo', 'o arrepio', 'o arrocho', 'o arroio']::text[]),
   ('es-pt', 'p188', 'palavra', 'C2', array['substantivo']::text[], null, '7e4a02bf', array['a pesagem', 'a pescaria', 'a pesquisa', 'a peçonha', 'o pesar']::text[]),
   ('es-pt', 'p189', 'palavra', 'C2', array['substantivo']::text[], null, '0d0df9f0', array['o magnetismo', 'o marasmo', 'o materialismo', 'o mecanismo', 'o militarismo']::text[]),
   ('es-pt', 'p190', 'palavra', 'C2', array['substantivo']::text[], null, '444a2d07', array['a acurácia', 'a ambiguidade', 'a angústia', 'a arrogância', 'o sofisma']::text[]),
@@ -355,7 +355,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p203', 'palavra', 'B1', array['falso-amigo', 'verbo', 'trabalho']::text[], null, '06ba5520', array['cobrar (a dívida)', 'emprestar (o dinheiro)', 'gastar (a mesada)', 'poupar (o troco)', 'receber (o salário)']::text[]),
   ('es-pt', 'p204', 'palavra', 'B2', array['falso-amigo', 'verbo', 'corpo']::text[], null, '7eb6ef2e', array['bater (o coração)', 'cansar (do esforço)', 'doer (a cabeça)', 'latir (o cachorro)', 'lutar (na briga)']::text[]),
   ('es-pt', 'p205', 'palavra', 'B2', array['falso-amigo', 'verbo']::text[], null, 'cfa7c0e0', array['fingir', 'preferir', 'prever', 'prometer', 'tentar']::text[]),
-  ('es-pt', 'p206', 'palavra', 'A2', array['falso-amigo', 'verbo', 'escola']::text[], null, 'fd1c2a74', array['apagar', 'borrar', 'manchar', 'rabiscar', 'sujar']::text[]),
+  ('es-pt', 'p206', 'palavra', 'A2', array['falso-amigo', 'verbo', 'escola']::text[], null, '4dab2993', array['apagar (com a borracha)', 'borrar (o papel)', 'manchar (a roupa)', 'rabiscar (o caderno)', 'sujar (a mesa)']::text[]),
   ('es-pt', 'p207', 'palavra', 'B1', array['verbo']::text[], null, 'c8242220', array['fingir surpresa', 'firmar o acordo', 'fixar na parede', 'fugir do assunto', 'reparar']::text[]),
   ('es-pt', 'p208', 'palavra', 'A2', array['falso-amigo']::text[], null, 'd3ae2314', array['a data', 'a fatia', 'a fechadura', 'a fenda', 'a flecha']::text[]),
   ('es-pt', 'p209', 'palavra', 'B1', array['falso-amigo', 'cotidiano']::text[], null, 'a89f5dc0', array['a cadeira baixa', 'a certidão velha', 'a cidadezinha', 'a hora marcada', 'a menção rápida']::text[]),
@@ -649,10 +649,10 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u239', 'frase', 'B1', array['economia', 'trabalho']::text[], 'p243', '01db5ab2', array['Pode me dar um desconto?', 'Pode me dar um recibo de táxi?', 'Pode me dar uma sacola?', 'Pode me emitir uma nota fiscal?', 'Pode me mostrar a fatura do cartão?']::text[]),
   ('es-pt', 'u240', 'frase', 'B1', array['economia', 'cidade']::text[], 'p244', '845bb690', array['Comprei um casaco de presente.', 'Comprei um casaco muito caro.', 'Comprei um casaco na liquidação.', 'Comprei um casaco num brechó.', 'Comprei um casaco pela internet.']::text[]),
   ('es-pt', 'u241', 'frase', 'B1', array['economia']::text[], 'p245', '7234b84f', array['Só aceitam pagamento adiantado.', 'Só aceitam pagamento com cartão.', 'Só aceitam pagamento em cheque.', 'Só aceitam pagamento em dinheiro.', 'Só aceitam pagamento por Pix.']::text[]),
-  ('es-pt', 'u242', 'frase', 'B2', array['economia', 'trabalho']::text[], 'p246', '73102e0a', array['O barulho da obra acabou.', 'O orçamento da obra disparou.', 'O pedreiro da obra sumiu.', 'O prazo da obra se esgotou.', 'O projeto da obra mudou.']::text[]),
+  ('es-pt', 'u242', 'frase', 'B2', array['economia', 'trabalho']::text[], 'p246', '89bcd405', array['O barulho da obra acabou.', 'O orçamento da obra disparou.', 'O pedreiro da obra sumiu.', 'O prazo da obra se esgotou.', 'O projeto da obra mudou.']::text[]),
   ('es-pt', 'u243', 'frase', 'A2', array['viagem']::text[], 'p247', '2f1ff477', array['Um vento enorme virou o barco.', 'Uma baleia enorme seguiu o barco.', 'Uma onda enorme virou o barco.', 'Uma pedra enorme furou o barco.', 'Uma tempestade enorme atrasou o barco.']::text[]),
   ('es-pt', 'u244', 'frase', 'A2', array['escola']::text[], 'p248', 'ae20a1b5', array['As flores nascem na primavera.', 'As folhas brotam na primavera.', 'As folhas caem no outono.', 'As frutas amadurecem no verão.', 'As árvores secam no inverno.']::text[]),
-  ('es-pt', 'f125', 'frase', 'B2', array['expressão']::text[], null, 'af4972f8', array['Está com a cabeça quente.', 'Está com a mão na massa.', 'Está com água na boca.', 'Está metido em confusão.', 'Está no seu elemento.']::text[]),
+  ('es-pt', 'f125', 'frase', 'B2', array['expressão']::text[], null, '78e062b9', array['Está com a cabeça quente.', 'Está com a mão na massa.', 'Está com água na boca.', 'Está metido em confusão.', 'Está no seu elemento.']::text[]),
   ('es-pt', 'f126', 'frase', 'B2', array['expressão']::text[], null, 'c4c69f4f', array['É bom em fazer contas.', 'É canhoto desde criança.', 'É o braço direito do chefe.', 'É um craque com os números.', 'É um zero à esquerda.']::text[]),
   ('es-pt', 'f127', 'frase', 'B1', array['expressão']::text[], null, '938ab684', array['Você está cortando o meu cabelo.', 'Você está me dando uma bronca.', 'Você está me deixando nervoso.', 'Você está puxando o meu cabelo.', 'Você está tirando sarro de mim.']::text[]),
   ('es-pt', 'f130', 'frase', 'B1', array['expressão']::text[], null, '414b78be', array['Fala baixo demais.', 'Fala com as mãos.', 'Fala muito bem.', 'Fala muito devagar.', 'Fala pelos cotovelos.']::text[]),
@@ -867,14 +867,14 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'f204', 'frase', 'C1', array['Espanha', 'cotidiano']::text[], null, '5876f9ba', array['Afinal de contas, fomos todos.', 'No total, não fomos nenhuma vez.', 'O resultado final foi que fomos.', 'Resumindo, no fim a gente não foi.', 'Somando tudo, a gente foi ao final.']::text[]),
   ('es-pt', 'f205', 'frase', 'B2', array['cotidiano', 'gramática']::text[], null, '6b5b079e', array['Ou seja, você não vem.', 'Ou você vem, ou fica.', 'Quer dizer que ele não veio.', 'Seja como for, você não vem.', 'Vem, ou então não venha.']::text[]),
   ('es-pt', 'f207', 'frase', 'B2', array['expressão', 'cotidiano']::text[], null, '23c99ce5', array['Foi ideia sua, não minha.', 'Nem me ocorreu isso.', 'Nem pense nisso.', 'Não me vem nada à cabeça.', 'Ocorreu tudo bem no final.']::text[]),
-  ('es-pt', 'f208', 'frase', 'B2', array['Espanha', 'falso-amigo', 'cotidiano']::text[], null, '083da82f', array['A viagem foi uma ilusão.', 'Criei expectativas com a viagem.', 'Estou animado com a viagem.', 'Sonho com essa viagem.', 'Tenho a ilusão de viajar.']::text[]),
+  ('es-pt', 'f208', 'frase', 'B2', array['Espanha', 'falso-amigo', 'cotidiano']::text[], null, 'dcf62bab', array['A viagem foi uma ilusão.', 'Criei expectativas com a viagem.', 'Estou animado com a viagem.', 'Sonho com essa viagem.', 'Tenho a ilusão de viajar.']::text[]),
   ('es-pt', 'f209', 'frase', 'B2', array['gramática', 'cotidiano']::text[], null, 'aa636b40', array['Levei dez minutos com muito custo.', 'Levo muito mais que dez minutos.', 'No máximo, eu levo dez minutos.', 'No mínimo, eu levo dez minutos.', 'Quase sempre levo dez minutos.']::text[]),
   ('es-pt', 'f210', 'frase', 'B1', array['gíria', 'Espanha', 'cotidiano']::text[], null, '7a85ed35', array['Como assim?', 'E daí?', 'Que nada!', 'Que vá!', 'Vai que é sua!']::text[]),
   ('es-pt', 'f212', 'frase', 'B2', array['gramática', 'cotidiano']::text[], null, 'a0d0522d', array['Chegou atrasado lá em cima.', 'Chegou por cima dos outros.', 'Chegou tarde, mas por pouco.', 'E ainda por cima chegou atrasado.', 'Passou por cima de todos.']::text[]),
   ('es-pt', 'f213', 'frase', 'A2', array['Espanha', 'comida', 'cotidiano']::text[], null, '5d5a479b', array['Aproveite enquanto dá.', 'Aproveite o dia.', 'Boa viagem.', 'Bom apetite.', 'Bom descanso.']::text[]),
   ('es-pt', 'f214', 'frase', 'B1', array['cotidiano', 'gramática']::text[], null, 'f10477ce', array['De propósito, quebrei o copo.', 'Quebrei o copo de raiva.', 'Quebrei o copo sem perceber.', 'Sem pensar, quebrei o copo.', 'Sem querer, quebrei o copo.']::text[]),
   ('es-pt', 'f215', 'frase', 'B2', array['gramática', 'cotidiano']::text[], null, '80eb146f', array['Aquele de ontem é bem esquisito.', 'Aquilo de ontem foi bem estranho.', 'Foi raro ele aparecer ontem.', 'Ontem apareceu uma coisa rara.', 'Ontem foi um dia muito raro.']::text[]),
-  ('es-pt', 'f216', 'frase', 'B2', array['cotidiano', 'gramática']::text[], null, '883efe53', array['Como assim você não sabia?', 'Como você ficou sabendo?', 'Como é que você sabia disso?', 'Não sabia como fazer aquilo?', 'Você não sabia de que jeito?']::text[]),
+  ('es-pt', 'f216', 'frase', 'B2', array['cotidiano', 'gramática']::text[], null, 'fe676f36', array['Como assim você não sabia?', 'Como você ficou sabendo?', 'Como é que você sabia disso?', 'Não sabia como fazer aquilo?', 'Você não sabia de que jeito?']::text[]),
   ('es-pt', 'f217', 'frase', 'B2', array['gramática', 'cotidiano']::text[], null, '88b86054', array['Continuo sem entender nada.', 'Desisti de entender o assunto.', 'Nunca cheguei a entender nada.', 'Parei de entender o assunto.', 'Segui em frente sem entender.']::text[]),
   ('es-pt', 'f218', 'frase', 'B1', array['expressão', 'cotidiano']::text[], null, 'e8576cf6', array['Ele não tem nada a ver aqui.', 'Isso não dá para ver.', 'Isso não se vê em lugar nenhum.', 'Isso não tem nada a ver.', 'Não tenho nada para ver.']::text[]),
   ('es-pt', 'f219', 'frase', 'B2', array['gramática', 'dormir']::text[], null, '83f6ea37', array['Ela deve dormir todo dia.', 'Ela deve estar dormindo.', 'Ela devia ter dormido antes.', 'Ela precisa dormir mais cedo.', 'Ela tem que dormir agora.', 'Ele deve dormir todo dia.', 'Ele deve estar dormindo.', 'Ele devia ter dormido antes.', 'Ele precisa dormir mais cedo.', 'Ele tem que dormir agora.']::text[]),

@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-10-23",
+ "gerado_em": "2026-10-24",
  "total": 1972,
  "cards": [
   {
@@ -436,13 +436,13 @@
     "tail or line"
    ],
    "distratores": [
-    "a cola / o grude",
+    "o colo / o regaço",
     "a coleira / a guia",
     "o colar / o pingente",
     "a coluna / a espinha"
    ],
    "distratoresEn": [
-    "the glue / the paste",
+    "the lap / the embrace",
     "the collar / the leash",
     "the neck / the throat",
     "the corner / the edge"
@@ -8088,7 +8088,7 @@
     "expressão",
     "formal"
    ],
-   "nota": "Registro formal e jurídico. Equivale a 'tendo em vista'.",
+   "nota": "Registro formal e jurídico, como o nosso «tendo em vista». «Habida» é o particípio de «haber» no sentido antigo de ter, e concorda com «cuenta», que é feminina: «tida a conta».",
    "notaEn": "'Habida cuenta de' = in view of, taking into account. Formal and legal register; you will meet it in rulings and reports, not in the bar.",
    "requerTodas": [
     "p426",
@@ -11271,7 +11271,7 @@
    "id": "p102",
    "tipo": "palavra",
    "es": "el pegamento",
-   "pt": "a cola",
+   "pt": "a cola (de grudar)",
    "en": "the glue",
    "aceitas": [
     "cola",
@@ -11287,10 +11287,10 @@
     "the adhesive"
    ],
    "distratores": [
-    "o pagamento",
-    "o pigmento",
-    "o pedaço",
-    "o pente"
+    "o pagamento (da conta)",
+    "o pigmento (da tinta)",
+    "o pedaço (de bolo)",
+    "o pente (de cabelo)"
    ],
    "distratoresEn": [
     "the payment",
@@ -11303,8 +11303,8 @@
     "falso-amigo",
     "escola"
    ],
-   "nota": "'Cola' em espanhol é rabo ou fila. A cola de colar é 'pegamento'.",
-   "notaEn": "From 'pegar', to stick. Watch out for 'la cola', which in Spanish is a tail or a queue, never the stuff in the tube.",
+   "nota": "Em espanhol, «la cola» é sobretudo o rabo e a fila («hacer cola»); também pode ser cola, mas a do dia a dia é «el pegamento». A cola da prova é «la chuleta».\n🇪🇸 el pegamento → 🇧🇷 a cola\n🇪🇸 la cola → 🇧🇷 o rabo, a fila",
+   "notaEn": "From 'pegar', to stick. Watch out for 'la cola': in Spanish it is mostly a tail or a queue; it can mean glue, but the everyday word is 'el pegamento'.",
    "sinonimosEs": [
     "la cola"
    ]
@@ -14610,7 +14610,7 @@
    "tags": [
     "substantivo"
    ],
-   "nota": "De 'arrojarse' (lançar-se). 'Arroyo' com y é riacho.",
+   "nota": "De «arrojarse», lançar-se. Sem o «se», «arrojar» é atirar, e também vomitar, sentido comum na Venezuela e em outros países. «Arroyo», com y, é riacho.",
    "notaEn": "From 'arrojarse', to throw oneself in. It is courage of the headlong kind. Spelled with a y, 'el arroyo' is a stream — quite another thing.",
    "sinonimosEs": [
     "la osadía",
@@ -15896,7 +15896,7 @@
    "id": "p206",
    "tipo": "palavra",
    "es": "borrar",
-   "pt": "apagar",
+   "pt": "apagar (com a borracha)",
    "en": "to erase",
    "aceitas": [
     "apagar",
@@ -15913,10 +15913,10 @@
     "to wipe"
    ],
    "distratores": [
-    "borrar",
-    "manchar",
-    "rabiscar",
-    "sujar"
+    "borrar (o papel)",
+    "manchar (a roupa)",
+    "rabiscar (o caderno)",
+    "sujar (a mesa)"
    ],
    "distratoresEn": [
     "to smudge",
@@ -29323,6 +29323,9 @@
    ],
    "nota": "«Dispararse» é subir de repente e sem controle: preços, gastos, números. «Presupuesto» é o orçamento.",
    "notaEn": "'Dispararse' is to shoot up suddenly — prices, costs, figures. 'Presupuesto' is the budget or quote.",
+   "aceitasEs": [
+    "Se disparó el presupuesto de la obra."
+   ],
    "requerTodas": [
     "p246",
     "p465",
@@ -29431,7 +29434,11 @@
     "esta como peixe na agua",
     "esta no seu habitat",
     "esta em casa",
-    "se sente em casa"
+    "se sente em casa",
+    "esta na sua praia",
+    "esta na praia dele",
+    "esta na sua area",
+    "esta na area dele"
    ],
    "aceitasEn": [
     "he s in his element",
@@ -39432,6 +39439,9 @@
    ],
    "nota": "«Hacer ilusión» é a alegria antecipada de algo que vem, e não engano nenhum: é o que o espanhol tem e o português resolve com «estar animado». A ilusão de quem se engana é «la falsa ilusión» ou «el espejismo».\n🇪🇸 la ilusión → 🇧🇷 a expectativa alegre\n🇪🇸 el espejismo → 🇧🇷 a ilusão",
    "notaEn": "«Hacer ilusión» is the happy anticipation of something ahead, not a false belief. A mistaken impression is «un espejismo».",
+   "aceitasEs": [
+    "El viaje me hace ilusión."
+   ],
    "requerTodas": [
     "p353",
     "p771",
@@ -39723,7 +39733,10 @@
     "como assim nao sabia",
     "como assim voce nao ficou sabendo",
     "o que voce quer dizer com nao sabia",
-    "como e que voce nao sabia"
+    "como e que voce nao sabia",
+    "como voce nao sabia disso",
+    "como voce nao sabia",
+    "como e que voce nao sabia disso"
    ],
    "aceitasEn": [
     "what do you mean you didnt know",

@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-en, leva e808b8e2, 1940 cards.
+-- Catálogo do curso es-en, leva 093d8439, 1940 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-en', 'e808b8e2', '1940 cards')
+values ('es-en', '093d8439', '1940 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -17,7 +17,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'p008', 'palavra', 'A2', array['falso-amigo']::text[], null, 'd8cb72ae', array['the crowd', 'the dust', 'the octopus', 'the pole', 'the pulse']::text[]),
   ('es-en', 'p009', 'palavra', 'A1', array['falso-amigo']::text[], null, 'd213fa5c', array['the ash', 'the ceremony', 'the dinner', 'the lunch', 'the scene']::text[]),
   ('es-en', 'p010', 'palavra', 'A2', array['falso-amigo']::text[], null, 'a76d7aaf', array['the broom', 'the brush', 'the bucket', 'the dustpan', 'the mop']::text[]),
-  ('es-en', 'p011', 'palavra', 'A2', array['falso-amigo']::text[], null, '77057eea', array['the collar / the leash', 'the corner / the edge', 'the glue / the paste', 'the neck / the throat', 'the tail / the queue']::text[]),
+  ('es-en', 'p011', 'palavra', 'A2', array['falso-amigo']::text[], null, '3a4c6461', array['the collar / the leash', 'the corner / the edge', 'the lap / the embrace', 'the neck / the throat', 'the tail / the queue']::text[]),
   ('es-en', 'p012', 'palavra', 'A1', array['falso-amigo']::text[], null, 'f33170bd', array['the bowl', 'the glass', 'the jug', 'the toilet', 'the vase']::text[]),
   ('es-en', 'p013', 'palavra', 'A2', array['falso-amigo', 'adjetivo']::text[], null, '6dc0650e', array['large', 'long', 'loose', 'narrow', 'wide']::text[]),
   ('es-en', 'p014', 'palavra', 'A2', array['falso-amigo', 'adjetivo']::text[], null, '86ff46ba', array['long', 'narrow', 'tall', 'tight', 'wide']::text[]),
@@ -184,7 +184,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'f090', 'frase', 'B2', array['expressão']::text[], null, '9dbaec4d', array['Having said that, he left.', 'In passing, he gave the reason.', 'Incidentally, he was right.', 'On saying that, he passed.', 'Speaking quietly, he was right.']::text[]),
   ('es-en', 'f092', 'frase', 'C1', array['expressão']::text[], null, '124e3af6', array['He is giving me space.', 'He is giving me time off.', 'He is lengthening my hours.', 'He is stretching me out.', 'He keeps stalling me.']::text[]),
   ('es-en', 'f094', 'frase', 'C1', array['expressão']::text[], null, 'c93893dd', array['A cat lives here with us.', 'Everything here is in order.', 'Someone is missing from here.', 'There is a cat shut in here.', 'There is something fishy going on here.']::text[]),
-  ('es-en', 'f095', 'frase', 'C2', array['expressão', 'formal']::text[], null, 'adc3e20e', array['Having paid the bill, he resigned.', 'Having told the whole story, he resigned.', 'In view of that, he resigned.', 'Once the count was made, he resigned.', 'With bills to pay, he resigned.']::text[]),
+  ('es-en', 'f095', 'frase', 'C2', array['expressão', 'formal']::text[], null, 'e17b9d9e', array['Having paid the bill, he resigned.', 'Having told the whole story, he resigned.', 'In view of that, he resigned.', 'Once the count was made, he resigned.', 'With bills to pay, he resigned.']::text[]),
   ('es-en', 'f096', 'frase', 'C2', array['jurídico', 'formal']::text[], null, '55e01c29', array['About the fine imposed.', 'For pity of the fine.', 'Only the fine itself.', 'Under penalty of a fine.', 'Without penalty of a fine.']::text[]),
   ('es-en', 'f097', 'frase', 'C2', array['formal']::text[], null, 'ce6908ee', array['At that time he lived in Madrid.', 'By chance he lived in Madrid.', 'He cooked with spices in Madrid.', 'In that season he lived in Madrid.', 'Luckily he lived in Madrid.']::text[]),
   ('es-en', 'f098', 'frase', 'C2', array['formal']::text[], null, '0a8ec604', array['Because it is expensive, it is slow.', 'Besides being expensive, it is slow.', 'Despite being expensive, it is slow.', 'Just like the expensive one, it is slow.', 'Tomorrow, if expensive, it will be slow.']::text[]),
@@ -241,7 +241,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'v049', 'frase', 'A1', array['conjugação', 'presente', 'gustar', 'regular']::text[], null, '154a99e8', array['I didn''t like waiting.', 'I don''t like waiting.', 'I used to dislike waiting.', 'I will not like waiting.', 'I would not like waiting.']::text[]),
   ('es-en', 'v050', 'frase', 'B2', array['conjugação', 'pretérito', 'caer', 'irregular']::text[], null, '633499bc', array['I broke the glass deliberately.', 'I caught the glass quickly.', 'I dropped the glass.', 'I filled the glass again.', 'I threw the glass away.']::text[]),
   ('es-en', 'p101', 'palavra', 'A2', array['falso-amigo', 'escola']::text[], null, 'a687020d', array['the chewing gum', 'the eraser', 'the measuring tape', 'the paper glue', 'the writing ink']::text[]),
-  ('es-en', 'p102', 'palavra', 'A2', array['falso-amigo', 'escola']::text[], null, '2e14f32d', array['the comb', 'the fragment', 'the glue', 'the payment', 'the pigment']::text[]),
+  ('es-en', 'p102', 'palavra', 'A2', array['falso-amigo', 'escola']::text[], null, 'f6e11982', array['the comb', 'the fragment', 'the glue', 'the payment', 'the pigment']::text[]),
   ('es-en', 'p103', 'palavra', 'A2', array['falso-amigo', 'casa']::text[], null, '8f8a46bc', array['the glass', 'the jug', 'the sand bucket', 'the soup bowl', 'the vase']::text[]),
   ('es-en', 'p104', 'palavra', 'A2', array['falso-amigo', 'animais']::text[], null, 'b2f6265f', array['the corner', 'the mop', 'the mouse', 'the return', 'the trail']::text[]),
   ('es-en', 'p105', 'palavra', 'A1', array['falso-amigo', 'escola']::text[], null, 'f5cdb91f', array['the clause', 'the clearing', 'the key', 'the lesson', 'the social class']::text[]),
@@ -326,7 +326,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'p184', 'palavra', 'C2', array['substantivo']::text[], null, 'b9171802', array['the enquiry', 'the ill will', 'the insignia', 'the restlessness', 'the tenant']::text[]),
   ('es-en', 'p185', 'palavra', 'C2', array['substantivo']::text[], null, '4bffaa9d', array['the mockery', 'the outcry', 'the pigeonhole', 'the rank', 'the scrutiny']::text[]),
   ('es-en', 'p186', 'palavra', 'C1', array['substantivo']::text[], null, 'eb2d9fa6', array['the calm', 'the hiccup', 'the rescue', 'the shock', 'the spell']::text[]),
-  ('es-en', 'p187', 'palavra', 'C1', array['substantivo']::text[], null, 'c8558520', array['the arrangement', 'the daring', 'the shiver', 'the squeeze', 'the stream']::text[]),
+  ('es-en', 'p187', 'palavra', 'C1', array['substantivo']::text[], null, '17dd1fe0', array['the arrangement', 'the daring', 'the shiver', 'the squeeze', 'the stream']::text[]),
   ('es-en', 'p188', 'palavra', 'C2', array['substantivo']::text[], null, '7e4a02bf', array['the fishing', 'the research', 'the sorrow', 'the venom', 'the weighing']::text[]),
   ('es-en', 'p189', 'palavra', 'C2', array['substantivo']::text[], null, '0d0df9f0', array['the magnetism', 'the materialism', 'the mechanism', 'the militarism', 'the stagnation']::text[]),
   ('es-en', 'p190', 'palavra', 'C2', array['substantivo']::text[], null, '444a2d07', array['the accuracy', 'the ambiguity', 'the anguish', 'the arrogance', 'the sophistry']::text[]),
@@ -355,7 +355,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'p203', 'palavra', 'B1', array['falso-amigo', 'verbo', 'trabalho']::text[], null, '06ba5520', array['to charge', 'to get paid', 'to lend', 'to save up', 'to spend']::text[]),
   ('es-en', 'p204', 'palavra', 'B2', array['falso-amigo', 'verbo', 'corpo']::text[], null, '7eb6ef2e', array['to ache', 'to bark', 'to beat', 'to fight', 'to tire']::text[]),
   ('es-en', 'p205', 'palavra', 'B2', array['falso-amigo', 'verbo']::text[], null, 'cfa7c0e0', array['to foresee', 'to intend', 'to prefer', 'to pretend', 'to promise']::text[]),
-  ('es-en', 'p206', 'palavra', 'A2', array['falso-amigo', 'verbo', 'escola']::text[], null, 'fd1c2a74', array['to erase', 'to scribble', 'to smudge', 'to soil', 'to stain']::text[]),
+  ('es-en', 'p206', 'palavra', 'A2', array['falso-amigo', 'verbo', 'escola']::text[], null, '4dab2993', array['to erase', 'to scribble', 'to smudge', 'to soil', 'to stain']::text[]),
   ('es-en', 'p207', 'palavra', 'B1', array['verbo']::text[], null, 'c8242220', array['to avoid', 'to fix', 'to notice', 'to pretend', 'to settle']::text[]),
   ('es-en', 'p208', 'palavra', 'A2', array['falso-amigo']::text[], null, 'd3ae2314', array['the arrow', 'the crack', 'the date', 'the lock', 'the slice']::text[]),
   ('es-en', 'p209', 'palavra', 'B1', array['falso-amigo', 'cotidiano']::text[], null, 'a89f5dc0', array['the appointment', 'the certificate', 'the low chair', 'the quotation', 'the small town']::text[]),
@@ -649,10 +649,10 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'u239', 'frase', 'B1', array['economia', 'trabalho']::text[], 'p243', '01db5ab2', array['Could you give me a bag?', 'Could you give me a discount?', 'Could you give me a taxi receipt?', 'Could you give me an invoice?', 'Could you show me the card statement?']::text[]),
   ('es-en', 'u240', 'frase', 'B1', array['economia', 'cidade']::text[], 'p244', '845bb690', array['I bought a coat as a present.', 'I bought a coat in a charity shop.', 'I bought a coat in the sales.', 'I bought a coat online.', 'I bought a very expensive coat.']::text[]),
   ('es-en', 'u241', 'frase', 'B1', array['economia']::text[], 'p245', '7234b84f', array['They only take bank transfers.', 'They only take cards.', 'They only take cash.', 'They only take cheques.', 'They only take payment in advance.']::text[]),
-  ('es-en', 'u242', 'frase', 'B2', array['economia', 'trabalho']::text[], 'p246', '73102e0a', array['The builder on the job vanished.', 'The building budget shot up.', 'The building deadline ran out.', 'The building noise stopped.', 'The building plan changed.']::text[]),
+  ('es-en', 'u242', 'frase', 'B2', array['economia', 'trabalho']::text[], 'p246', '89bcd405', array['The builder on the job vanished.', 'The building budget shot up.', 'The building deadline ran out.', 'The building noise stopped.', 'The building plan changed.']::text[]),
   ('es-en', 'u243', 'frase', 'A2', array['viagem']::text[], 'p247', '2f1ff477', array['A huge gust overturned the boat.', 'A huge rock holed the boat.', 'A huge storm delayed the boat.', 'A huge wave capsized the boat.', 'A huge whale followed the boat.']::text[]),
   ('es-en', 'u244', 'frase', 'A2', array['escola']::text[], 'p248', 'ae20a1b5', array['The flowers come out in spring.', 'The fruit ripens in summer.', 'The leaves bud in spring.', 'The leaves fall in autumn.', 'The trees dry out in winter.']::text[]),
-  ('es-en', 'f125', 'frase', 'B2', array['expressão']::text[], null, 'af4972f8', array['He''s getting his hands dirty.', 'He''s in a spot of trouble.', 'He''s in his element.', 'He''s lost his temper.', 'His mouth is watering.']::text[]),
+  ('es-en', 'f125', 'frase', 'B2', array['expressão']::text[], null, '78e062b9', array['He''s getting his hands dirty.', 'He''s in a spot of trouble.', 'He''s in his element.', 'He''s lost his temper.', 'His mouth is watering.']::text[]),
   ('es-en', 'f126', 'frase', 'B2', array['expressão']::text[], null, 'c4c69f4f', array['He''s a complete nobody.', 'He''s a whizz with numbers.', 'He''s been left-handed since childhood.', 'He''s good at maths.', 'He''s the boss''s right-hand man.']::text[]),
   ('es-en', 'f127', 'frase', 'B1', array['expressão']::text[], null, '938ab684', array['You''re cutting my hair.', 'You''re making me go bald.', 'You''re pulling my hair.', 'You''re pulling my leg.', 'You''re telling me off.']::text[]),
   ('es-en', 'f130', 'frase', 'B1', array['expressão']::text[], null, '414b78be', array['He speaks too quietly.', 'He speaks very slowly.', 'He speaks very well.', 'He talks nineteen to the dozen.', 'He talks with his hands.']::text[]),
@@ -867,14 +867,14 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'f204', 'frase', 'C1', array['Espanha', 'cotidiano']::text[], null, '5876f9ba', array['After all, we all went.', 'All things considered, we went in the end.', 'Anyway, in the end we didnt go.', 'In total, we never made it.', 'The final result was that we went.']::text[]),
   ('es-en', 'f205', 'frase', 'B2', array['cotidiano', 'gramática']::text[], null, '6b5b079e', array['Come, or else dont.', 'Either way, you are not coming.', 'Either you come or you stay.', 'So you are not coming.', 'You mean he didnt come.']::text[]),
   ('es-en', 'f207', 'frase', 'B2', array['expressão', 'cotidiano']::text[], null, '23c99ce5', array['Dont you even think about it.', 'It all went fine in the end.', 'It never even crossed my mind.', 'It was your idea, not mine.', 'Nothing comes to mind.']::text[]),
-  ('es-en', 'f208', 'frase', 'B2', array['Espanha', 'falso-amigo', 'cotidiano']::text[], null, '083da82f', array['I am excited about the trip.', 'I dream about that trip.', 'I got my hopes up about the trip.', 'I have the illusion of travelling.', 'The trip was an illusion.']::text[]),
+  ('es-en', 'f208', 'frase', 'B2', array['Espanha', 'falso-amigo', 'cotidiano']::text[], null, 'dcf62bab', array['I am excited about the trip.', 'I dream about that trip.', 'I got my hopes up about the trip.', 'I have the illusion of travelling.', 'The trip was an illusion.']::text[]),
   ('es-en', 'f209', 'frase', 'B2', array['gramática', 'cotidiano']::text[], null, 'aa636b40', array['At least, it takes me ten minutes.', 'At most, it takes me ten minutes.', 'It almost always takes me ten minutes.', 'It barely took me ten minutes.', 'It takes me far more than ten minutes.']::text[]),
   ('es-en', 'f210', 'frase', 'B1', array['gíria', 'Espanha', 'cotidiano']::text[], null, '7a85ed35', array['Go for it!', 'Let him go!', 'No way!', 'So what?', 'What do you mean?']::text[]),
   ('es-en', 'f212', 'frase', 'B2', array['gramática', 'cotidiano']::text[], null, 'a0d0522d', array['He arrived late upstairs.', 'He came out on top of the others.', 'He walked all over everyone.', 'He was late, but only just.', 'On top of that, he showed up late.']::text[]),
   ('es-en', 'f213', 'frase', 'A2', array['Espanha', 'comida', 'cotidiano']::text[], null, '5d5a479b', array['Enjoy your day.', 'Enjoy your meal.', 'Have a good trip.', 'Make the most of it.', 'Sleep well.']::text[]),
   ('es-en', 'f214', 'frase', 'B1', array['cotidiano', 'gramática']::text[], null, 'f10477ce', array['I broke the glass by accident.', 'I broke the glass on purpose.', 'I broke the glass out of anger.', 'I broke the glass without noticing.', 'Without thinking, I broke the glass.']::text[]),
   ('es-en', 'f215', 'frase', 'B2', array['gramática', 'cotidiano']::text[], null, '80eb146f', array['It was rare for him to show up yesterday.', 'Something rare turned up yesterday.', 'That business yesterday was very odd.', 'That guy from yesterday is very odd.', 'Yesterday was a very rare day.']::text[]),
-  ('es-en', 'f216', 'frase', 'B2', array['cotidiano', 'gramática']::text[], null, '883efe53', array['Didnt you know how to do it?', 'How did you find out?', 'How did you know that?', 'What do you mean you didnt know?', 'You didnt know in what way?']::text[]),
+  ('es-en', 'f216', 'frase', 'B2', array['cotidiano', 'gramática']::text[], null, 'fe676f36', array['Didnt you know how to do it?', 'How did you find out?', 'How did you know that?', 'What do you mean you didnt know?', 'You didnt know in what way?']::text[]),
   ('es-en', 'f217', 'frase', 'B2', array['gramática', 'cotidiano']::text[], null, '88b86054', array['I gave up trying to understand it.', 'I moved on without understanding.', 'I never came to understand anything.', 'I still dont understand a thing.', 'I stopped understanding the subject.']::text[]),
   ('es-en', 'f218', 'frase', 'B1', array['expressão', 'cotidiano']::text[], null, 'e8576cf6', array['He has no business being here.', 'I have nothing to watch.', 'That cannot be seen.', 'That has nothing to do with it.', 'That is not seen anywhere.']::text[]),
   ('es-en', 'f219', 'frase', 'B2', array['gramática', 'dormir']::text[], null, '83f6ea37', array['He has to sleep now.', 'He is supposed to sleep every day.', 'He must be asleep.', 'He needs to sleep earlier.', 'He should have slept earlier.', 'She has to sleep now.', 'She is supposed to sleep every day.', 'She must be asleep.', 'She needs to sleep earlier.', 'She should have slept earlier.']::text[]),

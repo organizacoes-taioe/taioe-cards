@@ -748,7 +748,7 @@ sem ele o navegador serve o baralho velho.
 | Etimologia conferida | `f098` «amén de», que não vem de «amém» |
 | Quatro `formasEs`, e distratores de conjugação no assunto | `v002` «Ayer lo supe» entre «Yo puse la mesa» e «No lo hagas» |
 | Forma que é tradução válida não serve | `v043` «hemos vivido»; `v062` «pondrías» |
-| Dois sentidos certos: cobra-se o que o português não tem | `p239` la matrícula (a placa), com o outro em `aceitas` |
+| Dois sentidos certos: cobra-se o que o português não tem | `p239` la matrícula (a placa), com o outro só na nota |
 | Uma ficha, duas formas, para o que muda de gênero | `u023` «Tu hermano es muy majo», pedido do Gere, e mais 37 cards |
 | Cada contestação é decidida junto | combinado desde a primeira leva |
 | Contestação recusada entra na nota do card | `p201` «participar» para `asistir`: quem assiste está presente e pode ficar calado |
