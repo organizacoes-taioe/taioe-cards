@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso la-pt, leva 1251e12f, 683 cards.
+-- Catálogo do curso la-pt, leva b9437ea0, 683 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('la-pt', '1251e12f', '683 cards')
+values ('la-pt', 'b9437ea0', '683 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -186,7 +186,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('la-pt', 'la-f009', 'frase', 'A1', array['primeiros passos']::text[], null, '77d96184', array['Louvai o Senhor de todas as nações.', 'Louvai o Senhor, todas as nações.', 'Louvaram o Senhor todas as nações.', 'O Senhor louva todas as nações.', 'Todas as nações louvam o Senhor.']::text[]),
   ('la-pt', 'la-f011', 'frase', 'A1', array['primeiros passos']::text[], null, '50fea4c4', array['Aproveita o dia.', 'Aproveita os dias.', 'Aproveitará o dia.', 'Aproveitei o dia.', 'O dia aproveita.']::text[]),
   ('la-pt', 'la-f046', 'frase', 'A1', array['primeiros passos']::text[], null, 'bed7972f', array['Cuidado com o cão.', 'Cuidado com os cães.', 'O cão cuidou.', 'O cão tem cuidado.', 'Os cães têm cuidado.']::text[]),
-  ('la-pt', 'la-f047', 'frase', 'A1', array['primeiros passos']::text[], null, '52a16236', array['A pressa é lenta.', 'Apressa-te devagar.', 'Apressam-se devagar.', 'Apressou-se devagar.', 'Vai se apressar devagar.']::text[]),
+  ('la-pt', 'la-f047', 'frase', 'A1', array['primeiros passos']::text[], null, '38815360', array['A pressa é lenta.', 'Apressa-te devagar.', 'Apressam-se devagar.', 'Apressou-se devagar.', 'Vai se apressar devagar.']::text[]),
   ('la-pt', 'la-f048', 'frase', 'A1', array['primeiros passos']::text[], null, 'a4e63094', array['Ousa saber.', 'Ousam saber.', 'Ousar saber.', 'Ousou saber.', 'Sabe ousar.']::text[]),
   ('la-pt', 'la-f010', 'frase', 'A1', array['primeiros passos']::text[], null, '751ebfaa', array['Creio em um só Deus.', 'Creio que Deus é um.', 'Cremos em um só Deus.', 'Crerei em um só Deus.', 'Um só Deus crê em mim.']::text[]),
   ('la-pt', 'la-f012', 'frase', 'A1', array['primeiros passos']::text[], null, '34c203d2', array['As armas e o herói cantam.', 'Cantei as armas e o herói.', 'Canto ao herói das armas.', 'Canto as armas do herói.', 'Canto as armas e o herói.']::text[]),
