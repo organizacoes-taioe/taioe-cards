@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "la",
- "gerado_em": "2026-10-23",
+ "gerado_em": "2026-10-24",
  "total": 683,
  "cards": [
   {
@@ -32,55 +32,109 @@
      "la": "Deus caritas est.",
      "w": "Deus",
      "exp": "Deus: nominativo singular, o sujeito.",
-     "fonte": "1Jo 4,16"
+     "fonte": "1Jo 4,16",
+     "distratores": [
+      "vocativo",
+      "acusativo",
+      "genitivo",
+      "ablativo"
+     ]
     },
     {
      "la": "Tempus fugit.",
      "w": "Tempus",
      "exp": "Tempus: nominativo singular, o sujeito de fugit.",
-     "fonte": "Provérbio"
+     "fonte": "Provérbio",
+     "distratores": [
+      "vocativo",
+      "acusativo",
+      "genitivo",
+      "ablativo"
+     ]
     },
     {
      "la": "Ego sum lux mundi.",
      "w": "lux",
      "exp": "lux: nominativo, o predicativo (o que Jesus diz que é).",
-     "fonte": "Jo 8,12"
+     "fonte": "Jo 8,12",
+     "distratores": [
+      "vocativo",
+      "acusativo",
+      "genitivo",
+      "ablativo"
+     ]
     },
     {
      "la": "Gutta cavat lapidem.",
      "w": "Gutta",
      "exp": "Gutta: nominativo singular, o sujeito: é a gota que cava.",
-     "fonte": "Ovídio, Pônticas IV,10,5"
+     "fonte": "Ovídio, Pônticas IV,10,5",
+     "distratores": [
+      "vocativo",
+      "ablativo",
+      "acusativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Omnia vincit Amor.",
      "w": "Amor",
      "exp": "Amor: nominativo, o sujeito: é o Amor que vence.",
-     "fonte": "Vergílio, Bucólicas X,69"
+     "fonte": "Vergílio, Bucólicas X,69",
+     "distratores": [
+      "vocativo",
+      "acusativo",
+      "genitivo",
+      "ablativo"
+     ]
     },
     {
      "la": "Ecce ancilla Domini.",
      "w": "ancilla",
      "exp": "ancilla: nominativo, o que se aponta depois de ecce.",
-     "fonte": "Lc 1,38"
+     "fonte": "Lc 1,38",
+     "distratores": [
+      "vocativo",
+      "ablativo",
+      "acusativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Magnificat anima mea Dominum.",
      "w": "anima",
      "exp": "anima: nominativo, o sujeito de magnificat.",
-     "fonte": "Lc 1,46"
+     "fonte": "Lc 1,46",
+     "distratores": [
+      "vocativo",
+      "ablativo",
+      "acusativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Veritas liberabit vos.",
      "w": "Veritas",
      "exp": "Veritas: nominativo, o sujeito de liberabit.",
-     "fonte": "Jo 8,32"
+     "fonte": "Jo 8,32",
+     "distratores": [
+      "vocativo",
+      "acusativo",
+      "genitivo",
+      "ablativo"
+     ]
     },
     {
      "la": "Fiat lux.",
      "w": "lux",
      "exp": "lux: nominativo, o sujeito de fiat.",
-     "fonte": "Gn 1,3"
+     "fonte": "Gn 1,3",
+     "distratores": [
+      "vocativo",
+      "acusativo",
+      "genitivo",
+      "ablativo"
+     ]
     }
    ]
   },
@@ -112,43 +166,85 @@
      "la": "Magnus es, Domine.",
      "w": "Domine",
      "exp": "Domine: vocativo de Dominus: é com Deus que Agostinho fala.",
-     "fonte": "Agostinho, Confissões I,1"
+     "fonte": "Agostinho, Confissões I,1",
+     "distratores": [
+      "nominativo",
+      "acusativo",
+      "ablativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Domine, quo vadis?",
      "w": "Domine",
      "exp": "Domine: vocativo, Pedro chamando Jesus.",
-     "fonte": "Jo 13,36"
+     "fonte": "Jo 13,36",
+     "distratores": [
+      "nominativo",
+      "acusativo",
+      "ablativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Pater, in manus tuas commendo spiritum meum.",
      "w": "Pater",
      "exp": "Pater: vocativo, a quem Jesus fala (igual ao nominativo).",
-     "fonte": "Lc 23,46"
+     "fonte": "Lc 23,46",
+     "distratores": [
+      "nominativo",
+      "acusativo",
+      "ablativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Laudate Dominum, omnes gentes.",
      "w": "gentes",
      "exp": "gentes: vocativo plural, os povos chamados a louvar.",
-     "fonte": "Sl 117 (116),1"
+     "fonte": "Sl 117 (116),1",
+     "distratores": [
+      "nominativo",
+      "acusativo",
+      "ablativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Pater noster, qui es in caelis,",
      "w": "Pater",
      "exp": "Pater: vocativo, a quem se reza.",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "nominativo",
+      "acusativo",
+      "ablativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Sancta Maria, Mater Dei,",
      "w": "Mater",
      "exp": "Mater: vocativo, a quem se reza.",
-     "fonte": "Ave-Maria"
+     "fonte": "Ave-Maria",
+     "distratores": [
+      "nominativo",
+      "acusativo",
+      "ablativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Non amo te, Sabidi, nec possum dicere quare:",
      "w": "Sabidi",
      "exp": "Sabidi: vocativo de Sabidius (os nomes em -ius fazem -i).",
-     "fonte": "Marcial I,32"
+     "fonte": "Marcial I,32",
+     "distratores": [
+      "nominativo",
+      "acusativo",
+      "ablativo",
+      "genitivo"
+     ]
     }
    ]
   },
@@ -181,61 +277,121 @@
      "la": "Laudate Dominum, omnes gentes.",
      "w": "Dominum",
      "exp": "Dominum: acusativo singular, o objeto direto de laudate.",
-     "fonte": "Sl 117 (116),1"
+     "fonte": "Sl 117 (116),1",
+     "distratores": [
+      "nominativo",
+      "ablativo",
+      "genitivo",
+      "dativo"
+     ]
     },
     {
      "la": "Cave canem.",
      "w": "canem",
      "exp": "canem: acusativo singular, o objeto direto de cave.",
-     "fonte": "Petrônio, Satíricon 29"
+     "fonte": "Petrônio, Satíricon 29",
+     "distratores": [
+      "nominativo",
+      "ablativo",
+      "genitivo",
+      "dativo"
+     ]
     },
     {
      "la": "Carpe diem.",
      "w": "diem",
      "exp": "diem: acusativo de dies (5ª declinação), o objeto de carpe.",
-     "fonte": "Horácio, Odes I,11"
+     "fonte": "Horácio, Odes I,11",
+     "distratores": [
+      "nominativo",
+      "ablativo",
+      "genitivo",
+      "dativo"
+     ]
     },
     {
      "la": "Gutta cavat lapidem.",
      "w": "lapidem",
      "exp": "lapidem: acusativo singular, o objeto direto: a pedra é cavada.",
-     "fonte": "Ovídio, Pônticas IV,10,5"
+     "fonte": "Ovídio, Pônticas IV,10,5",
+     "distratores": [
+      "nominativo",
+      "ablativo",
+      "genitivo",
+      "dativo"
+     ]
     },
     {
      "la": "Arma virumque cano.",
      "w": "virum",
      "exp": "virum: acusativo singular, um dos objetos de cano.",
-     "fonte": "Vergílio, Eneida I,1"
+     "fonte": "Vergílio, Eneida I,1",
+     "distratores": [
+      "genitivo",
+      "nominativo",
+      "ablativo",
+      "dativo"
+     ]
     },
     {
      "la": "Si vis pacem, para bellum.",
      "w": "bellum",
      "exp": "bellum: acusativo singular, o objeto direto de para.",
-     "fonte": "Provérbio"
+     "fonte": "Provérbio",
+     "distratores": [
+      "nominativo",
+      "vocativo",
+      "ablativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Sero te amavi.",
      "w": "te",
      "exp": "te: acusativo de tu, o objeto de amavi.",
-     "fonte": "Agostinho, Confissões X,27"
+     "fonte": "Agostinho, Confissões X,27",
+     "distratores": [
+      "ablativo",
+      "nominativo",
+      "genitivo",
+      "dativo"
+     ]
     },
     {
      "la": "Credo in unum Deum.",
      "w": "Deum",
      "exp": "Deum: acusativo depois de in: em quem se crê.",
-     "fonte": "Credo"
+     "fonte": "Credo",
+     "distratores": [
+      "genitivo",
+      "nominativo",
+      "ablativo",
+      "dativo"
+     ]
     },
     {
      "la": "Pater, in manus tuas commendo spiritum meum.",
      "w": "spiritum",
      "exp": "spiritum: acusativo (4ª declinação), o que se entrega.",
-     "fonte": "Lc 23,46"
+     "fonte": "Lc 23,46",
+     "distratores": [
+      "nominativo",
+      "ablativo",
+      "genitivo",
+      "dativo"
+     ]
     },
     {
      "la": "Panem nostrum quotidianum da nobis hodie,",
      "w": "Panem",
      "exp": "Panem: acusativo de panis, o objeto de da.",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "nominativo",
+      "ablativo",
+      "genitivo",
+      "dativo"
+     ]
     }
    ]
   },
@@ -267,49 +423,97 @@
      "la": "Ecce ancilla Domini.",
      "w": "Domini",
      "exp": "Domini: genitivo singular, «do Senhor».",
-     "fonte": "Lc 1,38"
+     "fonte": "Lc 1,38",
+     "distratores": [
+      "nominativo",
+      "vocativo",
+      "dativo",
+      "ablativo"
+     ]
     },
     {
      "la": "Mater artium necessitas.",
      "w": "artium",
      "exp": "artium: genitivo plural de ars: mãe «das artes».",
-     "fonte": "Provérbio"
+     "fonte": "Provérbio",
+     "distratores": [
+      "dativo",
+      "nominativo",
+      "ablativo",
+      "acusativo"
+     ]
     },
     {
      "la": "Ego sum lux mundi.",
      "w": "mundi",
      "exp": "mundi: genitivo, «do mundo».",
-     "fonte": "Jo 8,12"
+     "fonte": "Jo 8,12",
+     "distratores": [
+      "nominativo",
+      "vocativo",
+      "dativo",
+      "ablativo"
+     ]
     },
     {
      "la": "Tu es Christus, Filius Dei vivi.",
      "w": "Dei",
      "exp": "Dei: genitivo de Deus, «de Deus».",
-     "fonte": "Mt 16,16"
+     "fonte": "Mt 16,16",
+     "distratores": [
+      "nominativo",
+      "vocativo",
+      "dativo",
+      "ablativo"
+     ]
     },
     {
      "la": "Vanitas vanitatum, et omnia vanitas.",
      "w": "vanitatum",
      "exp": "vanitatum: genitivo plural, «das vaidades».",
-     "fonte": "Ecl 1,2"
+     "fonte": "Ecl 1,2",
+     "distratores": [
+      "dativo",
+      "nominativo",
+      "ablativo",
+      "acusativo"
+     ]
     },
     {
      "la": "et in saecula saeculorum. Amen.",
      "w": "saeculorum",
      "exp": "saeculorum: genitivo plural (-orum), «dos séculos».",
-     "fonte": "Glória ao Pai"
+     "fonte": "Glória ao Pai",
+     "distratores": [
+      "dativo",
+      "nominativo",
+      "ablativo",
+      "acusativo"
+     ]
     },
     {
      "la": "et benedictus fructus ventris tui, Iesus.",
      "w": "ventris",
      "exp": "ventris: genitivo de venter, «do ventre».",
-     "fonte": "Ave-Maria"
+     "fonte": "Ave-Maria",
+     "distratores": [
+      "dativo",
+      "nominativo",
+      "ablativo",
+      "acusativo"
+     ]
     },
     {
      "la": "nunc et in hora mortis nostrae. Amen.",
      "w": "mortis",
      "exp": "mortis: genitivo de mors, «da morte».",
-     "fonte": "Ave-Maria"
+     "fonte": "Ave-Maria",
+     "distratores": [
+      "dativo",
+      "nominativo",
+      "ablativo",
+      "acusativo"
+     ]
     }
    ]
   },
@@ -341,55 +545,109 @@
      "la": "Deo gratias.",
      "w": "Deo",
      "exp": "Deo: dativo, a quem se dão graças.",
-     "fonte": "Missal Romano"
+     "fonte": "Missal Romano",
+     "distratores": [
+      "ablativo",
+      "nominativo",
+      "vocativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Lupus est homo homini.",
      "w": "homini",
      "exp": "homini: dativo singular, «para o homem».",
-     "fonte": "Plauto, Asinária 495"
+     "fonte": "Plauto, Asinária 495",
+     "distratores": [
+      "ablativo",
+      "genitivo",
+      "nominativo",
+      "acusativo"
+     ]
     },
     {
      "la": "Pax vobis.",
      "w": "vobis",
      "exp": "vobis: dativo de vos, a quem se deseja a paz.",
-     "fonte": "Jo 20,19"
+     "fonte": "Jo 20,19",
+     "distratores": [
+      "ablativo",
+      "genitivo",
+      "nominativo",
+      "acusativo"
+     ]
     },
     {
      "la": "Vae victis!",
      "w": "victis",
      "exp": "victis: dativo plural, com vae: «ai dos vencidos».",
-     "fonte": "Lívio, História de Roma V,48,9"
+     "fonte": "Lívio, História de Roma V,48,9",
+     "distratores": [
+      "ablativo",
+      "genitivo",
+      "nominativo",
+      "acusativo"
+     ]
     },
     {
      "la": "Gloria in excelsis Deo.",
      "w": "Deo",
      "exp": "Deo: dativo, a quem se dá glória.",
-     "fonte": "Missal Romano"
+     "fonte": "Missal Romano",
+     "distratores": [
+      "ablativo",
+      "nominativo",
+      "vocativo",
+      "genitivo"
+     ]
     },
     {
      "la": "Gloria Patri, et Filio, et Spiritui Sancto.",
      "w": "Patri",
      "exp": "Patri: dativo de pater (3ª declinação, -i).",
-     "fonte": "Glória ao Pai"
+     "fonte": "Glória ao Pai",
+     "distratores": [
+      "ablativo",
+      "genitivo",
+      "nominativo",
+      "acusativo"
+     ]
     },
     {
      "la": "Gloria Patri, et Filio, et Spiritui Sancto.",
      "w": "Spiritui",
      "exp": "Spiritui: dativo de spiritus (4ª declinação, -ui).",
-     "fonte": "Glória ao Pai"
+     "fonte": "Glória ao Pai",
+     "distratores": [
+      "ablativo",
+      "genitivo",
+      "nominativo",
+      "acusativo"
+     ]
     },
     {
      "la": "Panem nostrum quotidianum da nobis hodie,",
      "w": "nobis",
      "exp": "nobis: dativo de nos, a quem se dá.",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "ablativo",
+      "genitivo",
+      "nominativo",
+      "acusativo"
+     ]
     },
     {
      "la": "sicut et nos dimittimus debitoribus nostris.",
      "w": "debitoribus",
      "exp": "debitoribus: dativo plural (-ibus), a quem se perdoa.",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "ablativo",
+      "genitivo",
+      "nominativo",
+      "acusativo"
+     ]
     }
    ]
   },
@@ -421,55 +679,109 @@
      "la": "Requiescat in pace.",
      "w": "pace",
      "exp": "pace: ablativo de pax, depois de in (onde).",
-     "fonte": "Ritual de exéquias"
+     "fonte": "Ritual de exéquias",
+     "distratores": [
+      "dativo",
+      "acusativo",
+      "genitivo",
+      "nominativo"
+     ]
     },
     {
      "la": "In vino veritas.",
      "w": "vino",
      "exp": "vino: ablativo singular, com in: «no vinho».",
-     "fonte": "Provérbio"
+     "fonte": "Provérbio",
+     "distratores": [
+      "dativo",
+      "acusativo",
+      "genitivo",
+      "nominativo"
+     ]
     },
     {
      "la": "In principio erat Verbum.",
      "w": "principio",
      "exp": "principio: ablativo depois de in (quando).",
-     "fonte": "Jo 1,1"
+     "fonte": "Jo 1,1",
+     "distratores": [
+      "dativo",
+      "acusativo",
+      "genitivo",
+      "nominativo"
+     ]
     },
     {
      "la": "Et cum spiritu tuo.",
      "w": "spiritu",
      "exp": "spiritu: ablativo (4ª declinação, -u) depois de cum.",
-     "fonte": "Missal Romano"
+     "fonte": "Missal Romano",
+     "distratores": [
+      "dativo",
+      "acusativo",
+      "genitivo",
+      "nominativo"
+     ]
     },
     {
      "la": "Mens sana in corpore sano.",
      "w": "corpore",
      "exp": "corpore: ablativo de corpus, depois de in.",
-     "fonte": "Juvenal, Sátiras X,356"
+     "fonte": "Juvenal, Sátiras X,356",
+     "distratores": [
+      "dativo",
+      "acusativo",
+      "genitivo",
+      "nominativo"
+     ]
     },
     {
      "la": "Qui sequitur me, non ambulat in tenebris.",
      "w": "tenebris",
      "exp": "tenebris: ablativo plural, depois de in (onde).",
-     "fonte": "Jo 8,12"
+     "fonte": "Jo 8,12",
+     "distratores": [
+      "dativo",
+      "acusativo",
+      "genitivo",
+      "nominativo"
+     ]
     },
     {
      "la": "Beati pauperes spiritu.",
      "w": "spiritu",
      "exp": "spiritu: ablativo, em quê são pobres.",
-     "fonte": "Mt 5,3"
+     "fonte": "Mt 5,3",
+     "distratores": [
+      "dativo",
+      "acusativo",
+      "genitivo",
+      "nominativo"
+     ]
     },
     {
      "la": "sed libera nos a malo. Amen.",
      "w": "malo",
      "exp": "malo: ablativo depois de a (de onde: afastamento).",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "dativo",
+      "acusativo",
+      "genitivo",
+      "nominativo"
+     ]
     },
     {
      "la": "Ave, Maria, gratia plena,",
      "w": "gratia",
      "exp": "gratia: ablativo com plena, de que está cheia.",
-     "fonte": "Ave-Maria"
+     "fonte": "Ave-Maria",
+     "distratores": [
+      "nominativo",
+      "vocativo",
+      "dativo",
+      "acusativo"
+     ]
     }
    ]
   },
@@ -502,55 +814,109 @@
      "la": "Deus caritas est.",
      "w": "est",
      "exp": "est: presente de sum, 3ª pessoa do singular: «é».",
-     "fonte": "1Jo 4,16"
+     "fonte": "1Jo 4,16",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Cogito, ergo sum.",
      "w": "Cogito",
      "exp": "Cogito: presente do indicativo, 1ª pessoa do singular: «penso».",
-     "fonte": "Descartes, Princípios da filosofia I,7"
+     "fonte": "Descartes, Princípios da filosofia I,7",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Sitio.",
      "w": "Sitio",
      "exp": "Sitio: presente, 1ª pessoa do singular: «tenho sede».",
-     "fonte": "Jo 19,28"
+     "fonte": "Jo 19,28",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Homines, dum docent, discunt.",
      "w": "discunt",
      "exp": "discunt: presente do indicativo, 3ª pessoa do plural: «aprendem».",
-     "fonte": "Sêneca, Cartas a Lucílio 7,8"
+     "fonte": "Sêneca, Cartas a Lucílio 7,8",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Omnia vincit Amor.",
      "w": "vincit",
      "exp": "vincit: presente, 3ª pessoa do singular: «vence».",
-     "fonte": "Vergílio, Bucólicas X,69"
+     "fonte": "Vergílio, Bucólicas X,69",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Credo in unum Deum.",
      "w": "Credo",
      "exp": "Credo: presente, 1ª pessoa do singular: «creio».",
-     "fonte": "Credo"
+     "fonte": "Credo",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Magnificat anima mea Dominum.",
      "w": "Magnificat",
      "exp": "Magnificat: presente, 3ª pessoa do singular: «engrandece».",
-     "fonte": "Lc 1,46"
+     "fonte": "Lc 1,46",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Domine, quo vadis?",
      "w": "vadis",
      "exp": "vadis: presente, 2ª pessoa do singular: «vais».",
-     "fonte": "Jo 13,36"
+     "fonte": "Jo 13,36",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "sicut et nos dimittimus debitoribus nostris.",
      "w": "dimittimus",
      "exp": "dimittimus: presente, 1ª pessoa do plural: «perdoamos».",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperfeito do indicativo"
+     ]
     }
    ]
   },
@@ -583,37 +949,73 @@
      "la": "In principio erat Verbum.",
      "w": "erat",
      "exp": "erat: imperfeito de sum: «era», o que já estava e durava.",
-     "fonte": "Jo 1,1"
+     "fonte": "Jo 1,1",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do indicativo",
+      "mais-que-perfeito do indicativo"
+     ]
     },
     {
      "la": "Sicut erat in principio, et nunc, et semper,",
      "w": "erat",
      "exp": "erat: imperfeito de sum: «era».",
-     "fonte": "Glória ao Pai"
+     "fonte": "Glória ao Pai",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do indicativo",
+      "mais-que-perfeito do indicativo"
+     ]
     },
     {
      "la": "In ipso vita erat, et vita erat lux hominum:",
      "w": "erat",
      "exp": "erat: imperfeito de sum: «a vida era a luz».",
-     "fonte": "Jo 1,4"
+     "fonte": "Jo 1,4",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do indicativo",
+      "mais-que-perfeito do indicativo"
+     ]
     },
     {
      "la": "In mundo erat, et mundus per ipsum factus est,",
      "w": "erat",
      "exp": "erat: imperfeito de sum: «estava no mundo».",
-     "fonte": "Jo 1,10"
+     "fonte": "Jo 1,10",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do indicativo",
+      "mais-que-perfeito do indicativo"
+     ]
     },
     {
      "la": "Videbam Satanam sicut fulgur de caelo cadentem.",
      "w": "Videbam",
      "exp": "Videbam: imperfeito de video (-ba-), 1ª pessoa: «eu via».",
-     "fonte": "Lc 10,18"
+     "fonte": "Lc 10,18",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do indicativo",
+      "mais-que-perfeito do indicativo"
+     ]
     },
     {
      "la": "Erat ergo recumbens unus ex discipulis eius in sinu Iesu, quem diligebat Iesus.",
      "w": "diligebat",
      "exp": "diligebat: imperfeito de diligo (-ba-): «amava».",
-     "fonte": "Jo 13,23"
+     "fonte": "Jo 13,23",
+     "distratores": [
+      "perfeito do indicativo",
+      "futuro do indicativo",
+      "presente do indicativo",
+      "mais-que-perfeito do indicativo"
+     ]
     }
    ]
   },
@@ -646,37 +1048,73 @@
      "la": "Veni, vidi, vici.",
      "w": "vici",
      "exp": "vici: perfeito de vinco, 1ª pessoa: «venci».",
-     "fonte": "Suetônio, César 37"
+     "fonte": "Suetônio, César 37",
+     "distratores": [
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "mais-que-perfeito do indicativo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Veni, vidi, vici.",
      "w": "Veni",
      "exp": "Veni: perfeito de venio, 1ª pessoa: «vim».",
-     "fonte": "Suetônio, César 37"
+     "fonte": "Suetônio, César 37",
+     "distratores": [
+      "imperativo",
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "mais-que-perfeito do indicativo"
+     ]
     },
     {
      "la": "Sero te amavi.",
      "w": "amavi",
      "exp": "amavi: perfeito de amo (-v-i), 1ª pessoa: «amei».",
-     "fonte": "Agostinho, Confissões X,27"
+     "fonte": "Agostinho, Confissões X,27",
+     "distratores": [
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "mais-que-perfeito do indicativo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "In principio creavit Deus caelum et terram.",
      "w": "creavit",
      "exp": "creavit: perfeito de creo, 3ª pessoa: «criou».",
-     "fonte": "Gn 1,1"
+     "fonte": "Gn 1,1",
+     "distratores": [
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "mais-que-perfeito do indicativo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Et vidit Deus lucem quod esset bona:",
      "w": "vidit",
      "exp": "vidit: perfeito de video, 3ª pessoa: «viu».",
-     "fonte": "Gn 1,4"
+     "fonte": "Gn 1,4",
+     "distratores": [
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "mais-que-perfeito do indicativo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Et Verbum caro factum est, et habitavit in nobis:",
      "w": "habitavit",
      "exp": "habitavit: perfeito de habito, 3ª pessoa: «habitou».",
-     "fonte": "Jo 1,14"
+     "fonte": "Jo 1,14",
+     "distratores": [
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "mais-que-perfeito do indicativo",
+      "futuro do indicativo"
+     ]
     }
    ]
   },
@@ -709,37 +1147,73 @@
      "la": "Veritas liberabit vos.",
      "w": "liberabit",
      "exp": "liberabit: futuro de libero (-bi-): «libertará».",
-     "fonte": "Jo 8,32"
+     "fonte": "Jo 8,32",
+     "distratores": [
+      "presente do subjuntivo",
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "perfeito do indicativo"
+     ]
     },
     {
      "la": "qui sequitur me, non ambulat in tenebris, sed habebit lumen vitae.",
      "w": "habebit",
      "exp": "habebit: futuro de habeo (-bi-): «terá».",
-     "fonte": "Jo 8,12"
+     "fonte": "Jo 8,12",
+     "distratores": [
+      "presente do subjuntivo",
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "perfeito do indicativo"
+     ]
     },
     {
      "la": "quoniam ipsi Deum videbunt.",
      "w": "videbunt",
      "exp": "videbunt: futuro de video (-bu-), 3ª pessoa do plural: «verão».",
-     "fonte": "Mt 5,8"
+     "fonte": "Mt 5,8",
+     "distratores": [
+      "presente do subjuntivo",
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "perfeito do indicativo"
+     ]
     },
     {
      "la": "quoniam ipsi possidebunt terram.",
      "w": "possidebunt",
      "exp": "possidebunt: futuro de possideo: «possuirão».",
-     "fonte": "Mt 5,4"
+     "fonte": "Mt 5,4",
+     "distratores": [
+      "presente do subjuntivo",
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "perfeito do indicativo"
+     ]
     },
     {
      "la": "ecce enim ex hoc beatam me dicent omnes generationes,",
      "w": "dicent",
      "exp": "dicent: futuro de dico (3ª conjugação, -e-): «dirão».",
-     "fonte": "Lc 1,48"
+     "fonte": "Lc 1,48",
+     "distratores": [
+      "presente do subjuntivo",
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "perfeito do indicativo"
+     ]
     },
     {
      "la": "Nam etsi ambulavero in medio umbrae mortis, non timebo mala,",
      "w": "timebo",
      "exp": "timebo: futuro de timeo (-bo), 1ª pessoa: «temerei».",
-     "fonte": "Sl 23 (22),4"
+     "fonte": "Sl 23 (22),4",
+     "distratores": [
+      "presente do subjuntivo",
+      "presente do indicativo",
+      "imperfeito do indicativo",
+      "perfeito do indicativo"
+     ]
     }
    ]
   },
@@ -771,55 +1245,109 @@
      "la": "Laudate Dominum, omnes gentes.",
      "w": "Laudate",
      "exp": "Laudate: imperativo plural (-te): «louvai».",
-     "fonte": "Sl 117 (116),1"
+     "fonte": "Sl 117 (116),1",
+     "distratores": [
+      "presente do indicativo",
+      "infinitivo",
+      "presente do subjuntivo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Cave canem.",
      "w": "Cave",
      "exp": "Cave: imperativo de caveo: «guarda-te».",
-     "fonte": "Petrônio, Satíricon 29"
+     "fonte": "Petrônio, Satíricon 29",
+     "distratores": [
+      "presente do indicativo",
+      "infinitivo",
+      "presente do subjuntivo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Carpe diem.",
      "w": "Carpe",
      "exp": "Carpe: imperativo singular de carpo: «colhe», «aproveita».",
-     "fonte": "Horácio, Odes I,11"
+     "fonte": "Horácio, Odes I,11",
+     "distratores": [
+      "presente do indicativo",
+      "infinitivo",
+      "presente do subjuntivo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Festina lente.",
      "w": "Festina",
      "exp": "Festina: imperativo de festino: «apressa-te».",
-     "fonte": "Provérbio"
+     "fonte": "Provérbio",
+     "distratores": [
+      "presente do indicativo",
+      "infinitivo",
+      "presente do subjuntivo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Tolle, lege.",
      "w": "lege",
      "exp": "lege: imperativo singular de lego: «lê».",
-     "fonte": "Agostinho, Confissões VIII,12"
+     "fonte": "Agostinho, Confissões VIII,12",
+     "distratores": [
+      "presente do indicativo",
+      "infinitivo",
+      "presente do subjuntivo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Ora pro nobis.",
      "w": "Ora",
      "exp": "Ora: imperativo singular de oro: «roga».",
-     "fonte": "Ladainha de Nossa Senhora"
+     "fonte": "Ladainha de Nossa Senhora",
+     "distratores": [
+      "presente do indicativo",
+      "infinitivo",
+      "presente do subjuntivo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "sed libera nos a malo. Amen.",
      "w": "libera",
      "exp": "libera: imperativo singular de libero: «livra».",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "presente do indicativo",
+      "infinitivo",
+      "presente do subjuntivo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Panem nostrum quotidianum da nobis hodie,",
      "w": "da",
      "exp": "da: imperativo singular de do: «dá».",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "presente do indicativo",
+      "infinitivo",
+      "presente do subjuntivo",
+      "futuro do indicativo"
+     ]
     },
     {
      "la": "Noli me tangere.",
      "w": "Noli",
      "exp": "Noli: imperativo de nolo: com o infinitivo, a proibição.",
-     "fonte": "Jo 20,17"
+     "fonte": "Jo 20,17",
+     "distratores": [
+      "presente do indicativo",
+      "infinitivo",
+      "presente do subjuntivo",
+      "futuro do indicativo"
+     ]
     }
    ]
   },
@@ -852,37 +1380,73 @@
      "la": "Fiat lux.",
      "w": "Fiat",
      "exp": "Fiat: subjuntivo de fio: «faça-se», «que seja feita».",
-     "fonte": "Gn 1,3"
+     "fonte": "Gn 1,3",
+     "distratores": [
+      "futuro do indicativo",
+      "presente do indicativo",
+      "imperativo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Requiescat in pace.",
      "w": "Requiescat",
      "exp": "Requiescat: subjuntivo (-a-): «que descanse».",
-     "fonte": "Ritual de exéquias"
+     "fonte": "Ritual de exéquias",
+     "distratores": [
+      "futuro do indicativo",
+      "presente do indicativo",
+      "imperativo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "sanctificetur nomen tuum.",
      "w": "sanctificetur",
      "exp": "sanctificetur: subjuntivo (-e-, 1ª conjugação), passivo: «seja santificado».",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "futuro do indicativo",
+      "presente do indicativo",
+      "imperativo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Adveniat regnum tuum.",
      "w": "Adveniat",
      "exp": "Adveniat: subjuntivo (-a-): «venha».",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "futuro do indicativo",
+      "presente do indicativo",
+      "imperativo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Fiat voluntas tua, sicut in caelo et in terra.",
      "w": "Fiat",
      "exp": "Fiat: subjuntivo: «seja feita».",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "futuro do indicativo",
+      "presente do indicativo",
+      "imperativo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Et ne nos inducas in tentationem,",
      "w": "inducas",
      "exp": "inducas: subjuntivo (-a-) com ne: o pedido negativo.",
-     "fonte": "Pai-Nosso"
+     "fonte": "Pai-Nosso",
+     "distratores": [
+      "futuro do indicativo",
+      "presente do indicativo",
+      "imperativo",
+      "imperfeito do indicativo"
+     ]
     }
    ]
   },
@@ -914,43 +1478,85 @@
      "la": "Noli me tangere.",
      "w": "tangere",
      "exp": "tangere: infinitivo de tango, depois de noli.",
-     "fonte": "Jo 20,17"
+     "fonte": "Jo 20,17",
+     "distratores": [
+      "futuro do indicativo",
+      "imperativo",
+      "presente do indicativo",
+      "particípio presente"
+     ]
     },
     {
      "la": "Errare humanum est.",
      "w": "Errare",
      "exp": "Errare: infinitivo presente, o sujeito de est.",
-     "fonte": "Provérbio"
+     "fonte": "Provérbio",
+     "distratores": [
+      "imperativo",
+      "presente do indicativo",
+      "particípio presente",
+      "particípio perfeito"
+     ]
     },
     {
      "la": "Non amo te, Sabidi, nec possum dicere quare:",
      "w": "dicere",
      "exp": "dicere: infinitivo de dico, depois de possum.",
-     "fonte": "Marcial I,32"
+     "fonte": "Marcial I,32",
+     "distratores": [
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperativo",
+      "presente do indicativo"
+     ]
     },
     {
      "la": "Sapere aude.",
      "w": "Sapere",
      "exp": "Sapere: infinitivo presente, o complemento de aude.",
-     "fonte": "Horácio, Epístolas I,2,40"
+     "fonte": "Horácio, Epístolas I,2,40",
+     "distratores": [
+      "imperativo",
+      "presente do indicativo",
+      "particípio presente",
+      "particípio perfeito"
+     ]
     },
     {
      "la": "hoc tantum possum dicere, non amo te.",
      "w": "dicere",
      "exp": "dicere: infinitivo, o que se pode fazer: «dizer».",
-     "fonte": "Marcial I,32"
+     "fonte": "Marcial I,32",
+     "distratores": [
+      "futuro do indicativo",
+      "presente do subjuntivo",
+      "imperativo",
+      "presente do indicativo"
+     ]
     },
     {
      "la": "Ecce quam bonum et quam iucundum, habitare fratres in unum!",
      "w": "habitare",
      "exp": "habitare: infinitivo de habito, o sujeito da frase: «morar».",
-     "fonte": "Sl 133 (132),1"
+     "fonte": "Sl 133 (132),1",
+     "distratores": [
+      "imperativo",
+      "presente do indicativo",
+      "particípio presente",
+      "particípio perfeito"
+     ]
     },
     {
      "la": "Quo ego vado non potes me modo sequi:",
      "w": "sequi",
      "exp": "sequi: infinitivo do depoente sequor (-i), depois de potes.",
-     "fonte": "Jo 13,36"
+     "fonte": "Jo 13,36",
+     "distratores": [
+      "imperativo",
+      "presente do indicativo",
+      "particípio presente",
+      "particípio perfeito"
+     ]
     }
    ]
   },
@@ -983,37 +1589,73 @@
      "la": "Benedicta tu in mulieribus,",
      "w": "Benedicta",
      "exp": "Benedicta: particípio de benedico, feminino: «bendita».",
-     "fonte": "Ave-Maria"
+     "fonte": "Ave-Maria",
+     "distratores": [
+      "perfeito do indicativo",
+      "particípio presente",
+      "infinitivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Iacta alea est.",
      "w": "Iacta",
      "exp": "Iacta: particípio perfeito de iacio, concordando com alea; com est, o perfeito passivo.",
-     "fonte": "Suetônio, Vida de César 32"
+     "fonte": "Suetônio, Vida de César 32",
+     "distratores": [
+      "imperativo",
+      "perfeito do indicativo",
+      "particípio presente",
+      "infinitivo"
+     ]
     },
     {
      "la": "et benedictus fructus ventris tui, Iesus.",
      "w": "benedictus",
      "exp": "benedictus: particípio, masculino, concorda com fructus: «bendito».",
-     "fonte": "Ave-Maria"
+     "fonte": "Ave-Maria",
+     "distratores": [
+      "perfeito do indicativo",
+      "particípio presente",
+      "infinitivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Consummatum est.",
      "w": "Consummatum",
      "exp": "Consummatum: particípio de consummo (neutro), com est: «está consumado».",
-     "fonte": "Jo 19,30"
+     "fonte": "Jo 19,30",
+     "distratores": [
+      "perfeito do indicativo",
+      "particípio presente",
+      "infinitivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Et Verbum caro factum est, et habitavit in nobis:",
      "w": "factum",
      "exp": "factum: particípio de facio (neutro), com est: «se fez».",
-     "fonte": "Jo 1,14"
+     "fonte": "Jo 1,14",
+     "distratores": [
+      "perfeito do indicativo",
+      "particípio presente",
+      "infinitivo",
+      "imperfeito do indicativo"
+     ]
     },
     {
      "la": "Et facta est lux.",
      "w": "facta",
      "exp": "facta: particípio de facio (feminino, com lux), com est: «foi feita».",
-     "fonte": "Gn 1,3"
+     "fonte": "Gn 1,3",
+     "distratores": [
+      "perfeito do indicativo",
+      "particípio presente",
+      "infinitivo",
+      "imperfeito do indicativo"
+     ]
     }
    ]
   },
@@ -13864,6 +14506,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Deus: nominativo singular, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -13892,6 +14540,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "caritas: nominativo singular, o predicativo: o que se diz de Deus.",
    "nivel": "A1",
    "tags": [
@@ -13918,6 +14572,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "est: presente do indicativo, 3ª pessoa do singular, o verbo de ligação.",
    "nivel": "A1",
@@ -13947,6 +14607,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Tempus: nominativo singular, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -13973,6 +14639,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "fugit: presente do indicativo, 3ª pessoa do singular.",
    "nivel": "A1",
@@ -14002,6 +14674,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Ars: nominativo singular, o sujeito, com o verbo subentendido.",
    "nivel": "A1",
    "tags": [
@@ -14029,6 +14707,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
    ],
    "nota": "longa: nominativo feminino singular, predicativo: concorda com ars.",
    "nivel": "A1",
@@ -14058,6 +14742,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
+   ],
    "nota": "vita: nominativo singular, o sujeito da segunda parte.",
    "nivel": "A1",
    "tags": [
@@ -14085,6 +14775,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
    ],
    "nota": "brevis: nominativo feminino singular, predicativo: concorda com vita.",
    "nivel": "A1",
@@ -14114,6 +14810,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Ego: nominativo singular, o sujeito, com ênfase.",
    "nivel": "A1",
    "tags": [
@@ -14140,6 +14842,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "sum: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -14169,6 +14877,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "pastor: nominativo singular, o predicativo.",
    "nivel": "A1",
    "tags": [
@@ -14197,6 +14911,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "bonus: nominativo masculino singular, concorda com pastor.",
    "nivel": "A1",
    "tags": [
@@ -14223,6 +14943,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "Cogito: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -14251,6 +14977,12 @@
    "aceitas": [
     "indicativo presente"
    ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
+   ],
    "nota": "spiro: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
    "tags": [
@@ -14277,6 +15009,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "spero: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -14306,6 +15044,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
+   ],
    "nota": "via: nominativo singular, predicativo.",
    "nivel": "A1",
    "tags": [
@@ -14334,6 +15078,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "veritas: nominativo singular, predicativo.",
    "nivel": "A1",
    "tags": [
@@ -14360,6 +15110,12 @@
    "pt": "infinitivo",
    "aceitas": [
     "infinitivo"
+   ],
+   "distratores": [
+    "imperativo",
+    "presente do indicativo",
+    "particípio presente",
+    "particípio perfeito"
    ],
    "nota": "Errare: infinitivo presente, o sujeito de est.",
    "nivel": "A1",
@@ -14389,6 +15145,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "humanum: nominativo neutro singular, predicativo: o infinitivo conta como neutro.",
    "nivel": "A1",
    "tags": [
@@ -14417,6 +15179,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Magnus: nominativo masculino singular, o predicativo do sujeito tu, que está no verbo.",
    "nivel": "A1",
    "tags": [
@@ -14443,6 +15211,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "imperativo",
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo"
    ],
    "nota": "es: presente do indicativo, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -14472,6 +15246,12 @@
     "caso vocativo",
     "voc"
    ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "Domine: vocativo singular, a quem se fala.",
    "nivel": "A1",
    "tags": [
@@ -14498,6 +15278,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "Laudate: imperativo presente, 2ª pessoa do plural, a ordem a vários.",
    "nivel": "A1",
@@ -14528,6 +15314,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "Dominum: acusativo singular, o objeto direto de laudate.",
    "nivel": "A1",
    "tags": [
@@ -14555,6 +15347,12 @@
    "aceitas": [
     "caso vocativo",
     "voc"
+   ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
    ],
    "nota": "omnes: vocativo feminino plural, concorda com gentes.",
    "nivel": "A1",
@@ -14584,6 +15382,12 @@
     "caso vocativo",
     "voc"
    ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "gentes: vocativo plural, os chamados a louvar.",
    "nivel": "A1",
    "tags": [
@@ -14610,6 +15414,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "Carpe: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -14640,6 +15450,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "diem: acusativo singular, o objeto direto.",
    "nivel": "A1",
    "tags": [
@@ -14666,6 +15482,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "Cave: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -14696,6 +15518,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "canem: acusativo singular, o objeto direto: aquilo de que se guarda.",
    "nivel": "A1",
    "tags": [
@@ -14722,6 +15550,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "Festina: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -14750,6 +15584,12 @@
    "aceitas": [
     "infinitivo"
    ],
+   "distratores": [
+    "imperativo",
+    "presente do indicativo",
+    "particípio presente",
+    "particípio perfeito"
+   ],
    "nota": "Sapere: infinitivo presente, o complemento de aude.",
    "nivel": "A1",
    "tags": [
@@ -14777,6 +15617,12 @@
    "aceitas": [
     "imperativo"
    ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
+   ],
    "nota": "aude: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
    "tags": [
@@ -14803,6 +15649,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "Credo: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -14833,6 +15685,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "unum: acusativo masculino singular, concorda com Deum. Vem depois de «in», preposição com acusativo.",
    "nivel": "A1",
    "tags": [
@@ -14861,6 +15719,12 @@
     "caso acusativo",
     "acus",
     "ac"
+   ],
+   "distratores": [
+    "genitivo",
+    "nominativo",
+    "ablativo",
+    "dativo"
    ],
    "nota": "Deum: acusativo singular, depois de in.",
    "nivel": "A1",
@@ -14891,6 +15755,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "vocativo",
+    "genitivo"
+   ],
    "nota": "Arma: acusativo plural neutro, objeto direto de cano.",
    "nivel": "A1",
    "tags": [
@@ -14920,6 +15790,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "genitivo",
+    "nominativo",
+    "ablativo",
+    "dativo"
+   ],
    "nota": "virum: acusativo singular, objeto direto de cano.",
    "nivel": "A1",
    "tags": [
@@ -14946,6 +15822,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "cano: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -14976,6 +15858,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "Omnia: acusativo plural neutro, o objeto: todas as coisas.",
    "nivel": "A1",
    "tags": [
@@ -15002,6 +15890,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "vincit: presente do indicativo, 3ª pessoa do singular.",
    "nivel": "A1",
@@ -15031,6 +15925,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Amor: nominativo singular, o sujeito, o deus Amor.",
    "nivel": "A1",
    "tags": [
@@ -15059,6 +15959,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
+   ],
    "nota": "Gutta: nominativo singular, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -15085,6 +15991,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "cavat: presente do indicativo, 3ª pessoa do singular.",
    "nivel": "A1",
@@ -15115,6 +16027,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "lapidem: acusativo singular, o objeto direto.",
    "nivel": "A1",
    "tags": [
@@ -15142,6 +16060,12 @@
    "aceitas": [
     "participio presente"
    ],
+   "distratores": [
+    "particípio perfeito",
+    "presente do indicativo",
+    "infinitivo",
+    "imperativo"
+   ],
    "nota": "Audentes: particípio presente, acusativo masculino plural, o objeto direto: os que ousam.",
    "nivel": "A1",
    "tags": [
@@ -15167,6 +16091,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
    ],
    "nota": "fortuna: nominativo singular, o sujeito.",
    "nivel": "A1",
@@ -15195,6 +16125,12 @@
    "aceitas": [
     "indicativo presente"
    ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
+   ],
    "nota": "iuvat: presente do indicativo, 3ª pessoa do singular.",
    "nivel": "A1",
    "tags": [
@@ -15221,6 +16157,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "Tolle: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -15249,6 +16191,12 @@
    "aceitas": [
     "imperativo"
    ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
+   ],
    "nota": "lege: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
    "tags": [
@@ -15275,6 +16223,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "Noli: imperativo presente, 2ª pessoa do singular, a proibição.",
    "nivel": "A1",
@@ -15305,6 +16259,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "ablativo",
+    "nominativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "me: acusativo singular, o objeto de tangere.",
    "nivel": "A1",
    "tags": [
@@ -15331,6 +16291,12 @@
    "pt": "infinitivo",
    "aceitas": [
     "infinitivo"
+   ],
+   "distratores": [
+    "futuro do indicativo",
+    "imperativo",
+    "presente do indicativo",
+    "particípio presente"
    ],
    "nota": "tangere: infinitivo presente, depois de noli.",
    "nivel": "A1",
@@ -15361,6 +16327,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "Panem: acusativo singular, o objeto de um verbo do verso anterior (optat, deseja).",
    "nivel": "A1",
    "tags": [
@@ -15389,6 +16361,12 @@
     "caso acusativo",
     "acus",
     "ac"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
    ],
    "nota": "circenses: acusativo plural, o segundo objeto.",
    "nivel": "A1",
@@ -15419,6 +16397,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "ablativo",
+    "nominativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "te: acusativo singular, o objeto.",
    "nivel": "A1",
    "tags": [
@@ -15445,6 +16429,12 @@
    "pt": "perfeito do indicativo",
    "aceitas": [
     "indicativo perfeito"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "imperfeito do indicativo",
+    "mais-que-perfeito do indicativo",
+    "futuro do indicativo"
    ],
    "nota": "amavi: perfeito do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -15473,6 +16463,12 @@
    "aceitas": [
     "indicativo perfeito"
    ],
+   "distratores": [
+    "imperativo",
+    "presente do indicativo",
+    "imperfeito do indicativo",
+    "mais-que-perfeito do indicativo"
+   ],
    "nota": "Veni: perfeito do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
    "tags": [
@@ -15499,6 +16495,12 @@
    "pt": "perfeito do indicativo",
    "aceitas": [
     "indicativo perfeito"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "imperfeito do indicativo",
+    "mais-que-perfeito do indicativo",
+    "futuro do indicativo"
    ],
    "nota": "vidi: perfeito do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -15527,6 +16529,12 @@
    "aceitas": [
     "indicativo perfeito"
    ],
+   "distratores": [
+    "presente do indicativo",
+    "imperfeito do indicativo",
+    "mais-que-perfeito do indicativo",
+    "futuro do indicativo"
+   ],
    "nota": "vici: perfeito do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
    "tags": [
@@ -15553,6 +16561,12 @@
    "pt": "particípio perfeito",
    "aceitas": [
     "participio perfeito"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "particípio presente",
+    "infinitivo",
+    "imperfeito do indicativo"
    ],
    "nota": "Iacta: particípio perfeito, nominativo feminino singular, com est, o perfeito passivo: concorda com alea.",
    "nivel": "A1",
@@ -15582,6 +16596,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
+   ],
    "nota": "alea: nominativo singular, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -15609,6 +16629,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
    ],
    "nota": "lux: nominativo singular, o predicativo.",
    "nivel": "A1",
@@ -15638,6 +16664,12 @@
     "caso genitivo",
     "gen"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "dativo",
+    "ablativo"
+   ],
    "nota": "mundi: genitivo singular, de quê é a luz.",
    "nivel": "A1",
    "tags": [
@@ -15665,6 +16697,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
    ],
    "nota": "Vanitas: nominativo singular.",
    "nivel": "A1",
@@ -15694,6 +16732,12 @@
     "caso genitivo",
     "gen"
    ],
+   "distratores": [
+    "dativo",
+    "nominativo",
+    "ablativo",
+    "acusativo"
+   ],
    "nota": "vanitatum: genitivo plural, das vaidades.",
    "nivel": "A1",
    "tags": [
@@ -15721,6 +16765,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
    ],
    "nota": "omnia: nominativo plural neutro, o sujeito: tudo.",
    "nivel": "A1",
@@ -15750,6 +16800,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Mater: nominativo singular, predicativo: o que a necessidade é.",
    "nivel": "A1",
    "tags": [
@@ -15777,6 +16833,12 @@
    "aceitas": [
     "caso genitivo",
     "gen"
+   ],
+   "distratores": [
+    "dativo",
+    "nominativo",
+    "ablativo",
+    "acusativo"
    ],
    "nota": "artium: genitivo plural, de quem é mãe.",
    "nivel": "A1",
@@ -15806,6 +16868,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "necessitas: nominativo singular, o sujeito, com o verbo subentendido.",
    "nivel": "A1",
    "tags": [
@@ -15833,6 +16901,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
    ],
    "nota": "Pax: nominativo singular, o sujeito, com o verbo subentendido.",
    "nivel": "A1",
@@ -15862,6 +16936,12 @@
     "caso dativo",
     "dat"
    ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
+   ],
    "nota": "vobis: dativo plural, a quem se deseja a paz.",
    "nivel": "A1",
    "tags": [
@@ -15888,6 +16968,12 @@
    "pt": "particípio perfeito",
    "aceitas": [
     "participio perfeito"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "particípio presente",
+    "infinitivo",
+    "imperfeito do indicativo"
    ],
    "nota": "victis: particípio perfeito, dativo masculino plural, com vae: para quem é o ai.",
    "nivel": "A1",
@@ -15917,6 +17003,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Lupus: nominativo singular, predicativo: o que o homem é.",
    "nivel": "A1",
    "tags": [
@@ -15944,6 +17036,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
    ],
    "nota": "homo: nominativo singular, o sujeito.",
    "nivel": "A1",
@@ -15973,6 +17071,12 @@
     "caso dativo",
     "dat"
    ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
+   ],
    "nota": "homini: dativo singular, para quem.",
    "nivel": "A1",
    "tags": [
@@ -16000,6 +17104,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
    ],
    "nota": "Gloria: nominativo singular, o sujeito, com o verbo subentendido.",
    "nivel": "A1",
@@ -16029,6 +17139,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "excelsis: ablativo plural neutro, as alturas. Vem depois de «in», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -16056,6 +17172,12 @@
    "aceitas": [
     "caso dativo",
     "dat"
+   ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
    ],
    "nota": "Deo: dativo singular, a quem se dá glória.",
    "nivel": "A1",
@@ -16085,6 +17207,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "vino: ablativo singular, onde. Vem depois de «In», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -16113,6 +17241,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "principio: ablativo singular, quando. Vem depois de «In», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -16139,6 +17273,12 @@
    "pt": "imperfeito do indicativo",
    "aceitas": [
     "indicativo imperfeito"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do indicativo",
+    "mais-que-perfeito do indicativo"
    ],
    "nota": "erat: imperfeito do indicativo, 3ª pessoa do singular.",
    "nivel": "A1",
@@ -16168,6 +17308,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Verbum: nominativo singular neutro, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -16195,6 +17341,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
    ],
    "nota": "Mens: nominativo singular, o sujeito.",
    "nivel": "A1",
@@ -16224,6 +17376,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "sana: nominativo feminino singular, concorda com mens.",
    "nivel": "A1",
    "tags": [
@@ -16251,6 +17409,12 @@
    "aceitas": [
     "caso ablativo",
     "abl"
+   ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
    ],
    "nota": "corpore: ablativo singular, depois de in. Vem depois de «in», preposição com ablativo.",
    "nivel": "A1",
@@ -16280,6 +17444,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "sano: ablativo neutro singular, concorda com corpore.",
    "nivel": "A1",
    "tags": [
@@ -16307,6 +17477,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
    ],
    "nota": "patria: nominativo singular, o sujeito, com o verbo subentendido.",
    "nivel": "A1",
@@ -16336,6 +17512,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "Homines: nominativo plural, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -16363,6 +17545,12 @@
    "aceitas": [
     "indicativo presente"
    ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
+   ],
    "nota": "docent: presente do indicativo, 3ª pessoa do plural.",
    "nivel": "A1",
    "tags": [
@@ -16389,6 +17577,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "discunt: presente do indicativo, 3ª pessoa do plural.",
    "nivel": "A1",
@@ -16418,6 +17612,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "ablativo",
+    "vocativo",
+    "acusativo",
+    "genitivo"
+   ],
    "nota": "Qui: nominativo masculino singular, o sujeito de sequitur e de ambulat.",
    "nivel": "A1",
    "tags": [
@@ -16445,6 +17645,12 @@
    "aceitas": [
     "indicativo presente"
    ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
+   ],
    "nota": "sequitur: presente do indicativo, 3ª pessoa do singular, verbo depoente.",
    "nivel": "A1",
    "tags": [
@@ -16471,6 +17677,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "ambulat: presente do indicativo, 3ª pessoa do singular.",
    "nivel": "A1",
@@ -16500,6 +17712,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "tenebris: ablativo plural, depois de in. Vem depois de «in», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -16527,6 +17745,12 @@
    "aceitas": [
     "subjuntivo presente"
    ],
+   "distratores": [
+    "futuro do indicativo",
+    "presente do indicativo",
+    "imperativo",
+    "imperfeito do indicativo"
+   ],
    "nota": "Fiat: presente do subjuntivo, 3ª pessoa do singular, a ordem em forma de desejo.",
    "nivel": "A1",
    "tags": [
@@ -16553,6 +17777,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "vis: presente do indicativo, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -16583,6 +17813,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "pacem: acusativo singular, o objeto direto de vis.",
    "nivel": "A1",
    "tags": [
@@ -16609,6 +17845,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "para: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -16639,6 +17881,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "bellum: acusativo singular, o objeto direto de para.",
    "nivel": "A1",
    "tags": [
@@ -16665,6 +17913,12 @@
    "pt": "futuro do indicativo",
    "aceitas": [
     "indicativo futuro"
+   ],
+   "distratores": [
+    "presente do subjuntivo",
+    "presente do indicativo",
+    "imperfeito do indicativo",
+    "perfeito do indicativo"
    ],
    "nota": "liberabit: futuro do indicativo, 3ª pessoa do singular.",
    "nivel": "A1",
@@ -16695,6 +17949,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "vos: acusativo plural, o objeto direto.",
    "nivel": "A1",
    "tags": [
@@ -16722,6 +17982,12 @@
    "aceitas": [
     "caso vocativo",
     "voc"
+   ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
    ],
    "nota": "Pater: vocativo singular, a quem se fala.",
    "nivel": "A1",
@@ -16752,6 +18018,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "genitivo",
+    "vocativo",
+    "ablativo"
+   ],
    "nota": "manus: acusativo plural, 4ª declinação. Vem depois de «in», preposição com acusativo.",
    "nivel": "A1",
    "tags": [
@@ -16781,6 +18053,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "tuas: acusativo feminino plural, concorda com manus.",
    "nivel": "A1",
    "tags": [
@@ -16807,6 +18085,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "commendo: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -16837,6 +18121,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "spiritum: acusativo singular, o objeto direto.",
    "nivel": "A1",
    "tags": [
@@ -16866,6 +18156,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "meum: acusativo masculino singular, concorda com spiritum.",
    "nivel": "A1",
    "tags": [
@@ -16892,6 +18188,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "vadis: presente do indicativo, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -16921,6 +18223,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
+   ],
    "nota": "Gloria: nominativo singular, o sujeito, com o verbo subentendido.",
    "nivel": "A1",
    "tags": [
@@ -16948,6 +18256,12 @@
    "aceitas": [
     "caso dativo",
     "dat"
+   ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
    ],
    "nota": "Patri: dativo singular, a quem se dá glória.",
    "nivel": "A1",
@@ -16977,6 +18291,12 @@
     "caso dativo",
     "dat"
    ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
+   ],
    "nota": "Filio: dativo singular.",
    "nivel": "A1",
    "tags": [
@@ -17004,6 +18324,12 @@
    "aceitas": [
     "caso dativo",
     "dat"
+   ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
    ],
    "nota": "Spiritui: dativo singular, 4ª declinação.",
    "nivel": "A1",
@@ -17033,6 +18359,12 @@
     "caso dativo",
     "dat"
    ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
+   ],
    "nota": "Sancto: dativo masculino singular, concorda com Spiritui.",
    "nivel": "A1",
    "tags": [
@@ -17059,6 +18391,12 @@
    "pt": "imperfeito do indicativo",
    "aceitas": [
     "indicativo imperfeito"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do indicativo",
+    "mais-que-perfeito do indicativo"
    ],
    "nota": "erat: imperfeito do indicativo, 3ª pessoa do singular, o sujeito é a glória.",
    "nivel": "A1",
@@ -17087,6 +18425,12 @@
    "aceitas": [
     "caso ablativo",
     "abl"
+   ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
    ],
    "nota": "principio: ablativo singular, quando. Vem depois de «in», preposição com ablativo.",
    "nivel": "A1",
@@ -17117,6 +18461,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "saecula: acusativo plural neutro. Vem depois de «in», preposição com acusativo.",
    "nivel": "A1",
    "tags": [
@@ -17144,6 +18494,12 @@
    "aceitas": [
     "caso genitivo",
     "gen"
+   ],
+   "distratores": [
+    "dativo",
+    "nominativo",
+    "ablativo",
+    "acusativo"
    ],
    "nota": "saeculorum: genitivo plural.",
    "nivel": "A1",
@@ -17173,6 +18529,12 @@
     "caso vocativo",
     "voc"
    ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "Pater: vocativo singular, a quem se reza.",
    "nivel": "A1",
    "tags": [
@@ -17200,6 +18562,12 @@
    "aceitas": [
     "caso vocativo",
     "voc"
+   ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
    ],
    "nota": "noster: vocativo masculino singular, concorda com Pater.",
    "nivel": "A1",
@@ -17229,6 +18597,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "ablativo",
+    "vocativo",
+    "acusativo",
+    "genitivo"
+   ],
    "nota": "qui: nominativo masculino singular, o sujeito de es.",
    "nivel": "A1",
    "tags": [
@@ -17255,6 +18629,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "imperativo",
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo"
    ],
    "nota": "es: presente do indicativo, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -17284,6 +18664,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "caelis: ablativo plural, onde. Vem depois de «in», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -17310,6 +18696,12 @@
    "pt": "presente do subjuntivo",
    "aceitas": [
     "subjuntivo presente"
+   ],
+   "distratores": [
+    "futuro do indicativo",
+    "presente do indicativo",
+    "imperativo",
+    "imperfeito do indicativo"
    ],
    "nota": "sanctificetur: presente do subjuntivo, 3ª pessoa do singular, voz passiva, o desejo.",
    "nivel": "A1",
@@ -17339,6 +18731,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "nomen: nominativo singular neutro, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -17367,6 +18765,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "tuum: nominativo neutro singular, concorda com nomen.",
    "nivel": "A1",
    "tags": [
@@ -17393,6 +18797,12 @@
    "pt": "presente do subjuntivo",
    "aceitas": [
     "subjuntivo presente"
+   ],
+   "distratores": [
+    "futuro do indicativo",
+    "presente do indicativo",
+    "imperativo",
+    "imperfeito do indicativo"
    ],
    "nota": "Adveniat: presente do subjuntivo, 3ª pessoa do singular, o pedido.",
    "nivel": "A1",
@@ -17422,6 +18832,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "regnum: nominativo singular neutro, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -17448,6 +18864,12 @@
    "pt": "presente do subjuntivo",
    "aceitas": [
     "subjuntivo presente"
+   ],
+   "distratores": [
+    "futuro do indicativo",
+    "presente do indicativo",
+    "imperativo",
+    "imperfeito do indicativo"
    ],
    "nota": "Fiat: presente do subjuntivo, 3ª pessoa do singular.",
    "nivel": "A1",
@@ -17477,6 +18899,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "voluntas: nominativo singular, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -17504,6 +18932,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
    ],
    "nota": "tua: nominativo feminino singular, concorda com voluntas.",
    "nivel": "A1",
@@ -17533,6 +18967,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "caelo: ablativo singular, onde. Vem depois de «in», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -17560,6 +19000,12 @@
    "aceitas": [
     "caso ablativo",
     "abl"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "dativo",
+    "acusativo"
    ],
    "nota": "terra: ablativo singular, onde. Vem depois de «in», preposição com ablativo.",
    "nivel": "A1",
@@ -17590,6 +19036,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "Panem: acusativo singular, o objeto direto de da.",
    "nivel": "A1",
    "tags": [
@@ -17618,6 +19070,12 @@
     "caso acusativo",
     "acus",
     "ac"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
    ],
    "nota": "nostrum: acusativo masculino singular, concorda com panem.",
    "nivel": "A1",
@@ -17648,6 +19106,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "quotidianum: acusativo masculino singular, concorda com panem.",
    "nivel": "A1",
    "tags": [
@@ -17674,6 +19138,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "da: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -17703,6 +19173,12 @@
     "caso dativo",
     "dat"
    ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
+   ],
    "nota": "nobis: dativo plural, a quem se dá.",
    "nivel": "A1",
    "tags": [
@@ -17729,6 +19205,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "dimitte: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -17759,6 +19241,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "debita: acusativo plural neutro, o objeto direto.",
    "nivel": "A1",
    "tags": [
@@ -17788,6 +19276,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "vocativo",
+    "genitivo"
+   ],
    "nota": "nostra: acusativo neutro plural, concorda com debita.",
    "nivel": "A1",
    "tags": [
@@ -17816,6 +19310,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "nos: nominativo plural, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -17842,6 +19342,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "dimittimus: presente do indicativo, 1ª pessoa do plural.",
    "nivel": "A1",
@@ -17871,6 +19377,12 @@
     "caso dativo",
     "dat"
    ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
+   ],
    "nota": "debitoribus: dativo plural, a quem se perdoa.",
    "nivel": "A1",
    "tags": [
@@ -17898,6 +19410,12 @@
    "aceitas": [
     "caso dativo",
     "dat"
+   ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
    ],
    "nota": "nostris: dativo masculino plural, concorda com debitoribus.",
    "nivel": "A1",
@@ -17928,6 +19446,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "nos: acusativo plural, o objeto.",
    "nivel": "A1",
    "tags": [
@@ -17954,6 +19478,12 @@
    "pt": "presente do subjuntivo",
    "aceitas": [
     "subjuntivo presente"
+   ],
+   "distratores": [
+    "futuro do indicativo",
+    "presente do indicativo",
+    "imperativo",
+    "imperfeito do indicativo"
    ],
    "nota": "inducas: presente do subjuntivo, 2ª pessoa do singular, o pedido negativo.",
    "nivel": "A1",
@@ -17984,6 +19514,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "tentationem: acusativo singular. Vem depois de «in», preposição com acusativo.",
    "nivel": "A1",
    "tags": [
@@ -18010,6 +19546,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "libera: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -18039,6 +19581,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "malo: ablativo singular, depois de a. Vem depois de «a», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -18066,6 +19614,12 @@
    "aceitas": [
     "caso ablativo",
     "abl"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "dativo",
+    "acusativo"
    ],
    "nota": "gratia: ablativo singular, de que está cheia.",
    "nivel": "A1",
@@ -18095,6 +19649,12 @@
     "caso vocativo",
     "voc"
    ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "plena: vocativo feminino singular, concorda com Maria.",
    "nivel": "A1",
    "tags": [
@@ -18122,6 +19682,12 @@
    "aceitas": [
     "caso nominativo",
     "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
    ],
    "nota": "Dominus: nominativo singular, o sujeito.",
    "nivel": "A1",
@@ -18151,6 +19717,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "acusativo",
+    "dativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "te: ablativo singular, depois de cum.",
    "nivel": "A1",
    "tags": [
@@ -18177,6 +19749,12 @@
    "pt": "particípio perfeito",
    "aceitas": [
     "participio perfeito"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "particípio presente",
+    "infinitivo",
+    "imperfeito do indicativo"
    ],
    "nota": "Benedicta: particípio perfeito, nominativo feminino singular, o predicativo, com es subentendido.",
    "nivel": "A1",
@@ -18206,6 +19784,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "tu: nominativo singular, o sujeito.",
    "nivel": "A1",
    "tags": [
@@ -18234,6 +19818,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "mulieribus: ablativo plural. Vem depois de «in», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -18260,6 +19850,12 @@
    "pt": "particípio perfeito",
    "aceitas": [
     "participio perfeito"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "particípio presente",
+    "infinitivo",
+    "imperfeito do indicativo"
    ],
    "nota": "benedictus: particípio perfeito, nominativo masculino singular, concorda com fructus.",
    "nivel": "A1",
@@ -18289,6 +19885,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "fructus: nominativo singular, o sujeito (4ª declinação).",
    "nivel": "A1",
    "tags": [
@@ -18316,6 +19918,12 @@
    "aceitas": [
     "caso genitivo",
     "gen"
+   ],
+   "distratores": [
+    "dativo",
+    "nominativo",
+    "ablativo",
+    "acusativo"
    ],
    "nota": "ventris: genitivo singular, de quem é o fruto.",
    "nivel": "A1",
@@ -18345,6 +19953,12 @@
     "caso genitivo",
     "gen"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "dativo",
+    "ablativo"
+   ],
    "nota": "tui: genitivo masculino singular, concorda com ventris.",
    "nivel": "A1",
    "tags": [
@@ -18372,6 +19986,12 @@
    "aceitas": [
     "caso vocativo",
     "voc"
+   ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
    ],
    "nota": "Sancta: vocativo feminino singular, concorda com Maria.",
    "nivel": "A1",
@@ -18401,6 +20021,12 @@
     "caso vocativo",
     "voc"
    ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
+   ],
    "nota": "Mater: vocativo singular, aposto de Maria.",
    "nivel": "A1",
    "tags": [
@@ -18429,6 +20055,12 @@
     "caso genitivo",
     "gen"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "dativo",
+    "ablativo"
+   ],
    "nota": "Dei: genitivo singular, de quem é Mãe.",
    "nivel": "A1",
    "tags": [
@@ -18455,6 +20087,12 @@
    "pt": "imperativo",
    "aceitas": [
     "imperativo"
+   ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "ora: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
@@ -18484,6 +20122,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "nobis: ablativo plural, depois de pro. Vem depois de «pro», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -18511,6 +20155,12 @@
    "aceitas": [
     "caso ablativo",
     "abl"
+   ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
    ],
    "nota": "peccatoribus: ablativo plural, concorda com nobis: quem somos nós.",
    "nivel": "A1",
@@ -18540,6 +20190,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "dativo",
+    "acusativo"
+   ],
    "nota": "hora: ablativo singular, quando. Vem depois de «in», preposição com ablativo.",
    "nivel": "A1",
    "tags": [
@@ -18567,6 +20223,12 @@
    "aceitas": [
     "caso genitivo",
     "gen"
+   ],
+   "distratores": [
+    "dativo",
+    "nominativo",
+    "ablativo",
+    "acusativo"
    ],
    "nota": "mortis: genitivo singular.",
    "nivel": "A1",
@@ -18596,6 +20258,12 @@
     "caso genitivo",
     "gen"
    ],
+   "distratores": [
+    "dativo",
+    "nominativo",
+    "vocativo",
+    "ablativo"
+   ],
    "nota": "nostrae: genitivo feminino singular, concorda com mortis.",
    "nivel": "A1",
    "tags": [
@@ -18622,6 +20290,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "amo: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -18652,6 +20326,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "ablativo",
+    "nominativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "te: acusativo singular, o objeto.",
    "nivel": "A1",
    "tags": [
@@ -18679,6 +20359,12 @@
    "aceitas": [
     "indicativo presente"
    ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
+   ],
    "nota": "possum: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
    "tags": [
@@ -18705,6 +20391,12 @@
    "pt": "infinitivo",
    "aceitas": [
     "infinitivo"
+   ],
+   "distratores": [
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperativo",
+    "presente do indicativo"
    ],
    "nota": "dicere: infinitivo presente, completa possum.",
    "nivel": "A1",
@@ -18735,6 +20427,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "hoc: acusativo neutro singular, o objeto de dicere: isto.",
    "nivel": "A1",
    "tags": [
@@ -18761,6 +20459,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "amo: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A1",
@@ -18789,6 +20493,12 @@
    "aceitas": [
     "infinitivo"
    ],
+   "distratores": [
+    "imperativo",
+    "presente do indicativo",
+    "particípio presente",
+    "particípio perfeito"
+   ],
    "nota": "fieri: infinitivo presente, acontecer: o que ele sente.",
    "nivel": "A1",
    "tags": [
@@ -18816,6 +20526,12 @@
    "aceitas": [
     "caso genitivo",
     "gen"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "dativo",
+    "ablativo"
    ],
    "nota": "caeli: genitivo singular, de onde é rainha.",
    "nivel": "A1",
@@ -18846,6 +20562,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "quem: acusativo masculino singular, aquele que: o objeto de portare.",
    "nivel": "A1",
    "tags": [
@@ -18872,6 +20594,12 @@
    "pt": "perfeito do indicativo",
    "aceitas": [
     "indicativo perfeito"
+   ],
+   "distratores": [
+    "futuro do indicativo",
+    "presente do indicativo",
+    "imperfeito do indicativo",
+    "mais-que-perfeito do indicativo"
    ],
    "nota": "dixit: perfeito do indicativo, 3ª pessoa do singular.",
    "nivel": "A1",
@@ -18900,6 +20628,12 @@
    "aceitas": [
     "imperativo"
    ],
+   "distratores": [
+    "presente do indicativo",
+    "infinitivo",
+    "presente do subjuntivo",
+    "futuro do indicativo"
+   ],
    "nota": "Ora: imperativo presente, 2ª pessoa do singular.",
    "nivel": "A1",
    "tags": [
@@ -18927,6 +20661,12 @@
    "aceitas": [
     "caso ablativo",
     "abl"
+   ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
    ],
    "nota": "nobis: ablativo plural, por quem. Vem depois de «pro», preposição com ablativo.",
    "nivel": "A1",
@@ -18957,6 +20697,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "genitivo",
+    "nominativo",
+    "ablativo",
+    "dativo"
+   ],
    "nota": "Deum: acusativo singular, o objeto de ora: a quem se pede.",
    "nivel": "A1",
    "tags": [
@@ -18985,6 +20731,12 @@
     "caso nominativo",
     "nom"
    ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
    "nota": "lupus: nominativo singular, o sujeito.",
    "nivel": "A2",
    "tags": [
@@ -19012,6 +20764,12 @@
    "aceitas": [
     "indicativo mais-que-perfeito"
    ],
+   "distratores": [
+    "perfeito do indicativo",
+    "imperfeito do indicativo",
+    "futuro do indicativo",
+    "imperativo"
+   ],
    "nota": "venerant: mais-que-perfeito do indicativo, 3ª pessoa do plural.",
    "nivel": "A2",
    "tags": [
@@ -19037,6 +20795,12 @@
    "aceitas": [
     "caso dativo",
     "dat"
+   ],
+   "distratores": [
+    "ablativo",
+    "genitivo",
+    "nominativo",
+    "acusativo"
    ],
    "nota": "mihi: dativo, para mim.",
    "nivel": "A2",
@@ -19064,6 +20828,12 @@
    "pt": "presente do indicativo",
    "aceitas": [
     "indicativo presente"
+   ],
+   "distratores": [
+    "perfeito do indicativo",
+    "futuro do indicativo",
+    "presente do subjuntivo",
+    "imperfeito do indicativo"
    ],
    "nota": "possum: presente do indicativo, 1ª pessoa do singular.",
    "nivel": "A2",
@@ -19094,6 +20864,12 @@
     "acus",
     "ac"
    ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
+   ],
    "nota": "quod: acusativo neutro singular, aquilo que: o objeto de facere.",
    "nivel": "A2",
    "tags": [
@@ -19121,6 +20897,12 @@
    "aceitas": [
     "caso vocativo",
     "voc"
+   ],
+   "distratores": [
+    "nominativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
    ],
    "nota": "lupe: vocativo singular, a quem o cordeiro fala.",
    "nivel": "A2",
@@ -19150,6 +20932,12 @@
     "caso ablativo",
     "abl"
    ],
+   "distratores": [
+    "acusativo",
+    "dativo",
+    "genitivo",
+    "nominativo"
+   ],
    "nota": "te: ablativo singular, de onde. Vem depois de «A», preposição com ablativo.",
    "nivel": "A2",
    "tags": [
@@ -19178,6 +20966,12 @@
     "caso acusativo",
     "acus",
     "ac"
+   ],
+   "distratores": [
+    "nominativo",
+    "ablativo",
+    "genitivo",
+    "dativo"
    ],
    "nota": "meos: acusativo masculino plural, concorda com haustus. Vem depois de «ad», preposição com acusativo.",
    "nivel": "A2",

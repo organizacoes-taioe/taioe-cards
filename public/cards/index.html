@@ -7,13 +7,18 @@
 <meta name="theme-color" content="#12141c">
 <title>Taioé Cards</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇪🇸</text></svg>">
-<link rel="stylesheet" href="style.css?v=0806f376">
+<link rel="stylesheet" href="style.css?v=5e8cced4">
 </head>
 <body>
 
 <header class="topo">
   <a class="marca" href="/" title="Taioé" data-i18n-attr="title:topo.marca">Taioé</a>
   <div class="placar" id="placar"></div>
+  <!-- as línguas em estudo, com dois ou mais cursos começados (24/10/2026) -->
+  <nav class="cursos-topo" id="cursos-topo" hidden data-i18n-attr="aria-label:topo.cursos"></nav>
+  <!-- guarda o que se digita enquanto a tela sobe para o card novo (24/10/2026; ver segurarTeclas) -->
+  <input id="captura" class="captura" type="text" tabindex="-1" aria-hidden="true"
+         autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
   <!-- Ícones de traço, herdando a cor da paleta: emoji trazem cor própria e
        brigavam com o verde-noite. O de «todos os cards» é a própria pilha.
        Desde 21/10/2026 os destinos ficam num menu (ideia do Gere): o ícone
@@ -380,16 +385,16 @@
   <span id="rodape-sync">•</span>
 </footer>
 
-<script src="js/textos-i18n.js?v=3049ae84"></script>
+<script src="js/textos-i18n.js?v=3673df81"></script>
 <script src="js/i18n.js?v=a99747e0"></script>
 <script src="vendor/supabase-js-2.117.2.js?v=16aeff36"></script>
 <script src="js/taioe-sessao.js?v=4c9cdaf3"></script>
-<script src="js/versoes.js?v=c0d06d8d"></script>
+<script src="js/versoes.js?v=06e05eb9"></script>
 <script src="data/tags.js?v=1aecc510"></script>
-<script src="js/motor.js?v=3f36298d"></script>
+<script src="js/motor.js?v=12c7dad5"></script>
 <script src="js/armazem.js?v=131120d0"></script>
 <script src="js/sincronia.js?v=490291ca"></script>
-<script src="js/app.js?v=6ebb6d61"></script>
-<script src="js/inicio.js?v=ec03b43a"></script>
+<script src="js/app.js?v=060b0a56"></script>
+<script src="js/inicio.js?v=8af0f802"></script>
 </body>
 </html>

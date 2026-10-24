@@ -110,7 +110,7 @@ window.TaioeCardsApp = function (ctx) {
     'contagem-cards', 'lista-cards',
     'meta-tipo', 'meta-modo', 'aba-nivel', 'enunciado', 'termo',
     'bandeira-pergunta', 'bandeira-resposta', 'rotulo-resposta-txt', 'bandeira-feedback',
-    'area-multipla', 'area-escrita', 'entrada', 'btn-responder', 'btn-nao-sei',
+    'area-multipla', 'area-escrita', 'entrada', 'captura', 'btn-responder', 'btn-nao-sei',
     'area-nao-sei-multipla', 'btn-nao-sei-multipla',
     'aviso-lingua', 'aviso-acento', 'aviso-regiao',
     'meta-origem',
@@ -165,9 +165,9 @@ window.TaioeCardsApp = function (ctx) {
     return {
       versao: 1,
       atualizado_em: new Date().toISOString(),
-      /* Quatro filas. As três primeiras disputam o próximo card por sorteio
-         (ver Motor.pesosDasFilas); a dos dominados tem gatilho de calendário
-         e fura a fila quando a data chega. */
+      /* Quatro filas. Primeiro se sorteia card novo ou revisão, e depois a
+         revisão sai dos dominados vencidos, da ida ou da volta (ver
+         Motor.escolherProximo). */
       ineditos: Motor.montarFila(CARDS),       // nunca apareceu
       filaEsPt: [],                            // você reconhece a língua (ida)
       filaPtEs: [],                            // você produz a língua (volta)
@@ -438,10 +438,7 @@ window.TaioeCardsApp = function (ctx) {
       while (lo < hi) { const m = (lo + hi) >> 1; if (quando[m] <= t) lo = m + 1; else hi = m; }
       return quando.length - lo;
     };
-    const chances = Motor.chancesDasFilas(p.cards, {
-      ineditos: (p.ineditos || []).length > 0,
-      esPt: p.filaEsPt.length > 0, ptEs: p.filaPtEs.length > 0
-    }, Motor.alvoDaFila(p.diario), p.arquivados);
+    const chances = Motor.chancesDasFilas(p.cards, Motor.alvoDaFila(p.diario), p.arquivados);
     [['esPt', p.filaEsPt], ['ptEs', p.filaPtEs]].forEach(([k, fila]) => {
       fila.forEach((id, i) => {
         const e = p.cards[id];
@@ -540,8 +537,9 @@ window.TaioeCardsApp = function (ctx) {
     p.emVista = Motor.atualizarEmVista(p.emVista, CARDS, PORID, p.cards, p.arquivados || {}, pesos);
     const naFila = new Set(resto);
     /* As palavras dos textos ativos (PLANO.md, 9.1) ficam com 1 de cada
-       TEXTO_A_CADA vagas de card novo, na ordem de leitura e em rodízio entre
-       os textos; saem das outras listas para não estrear por dois caminhos. */
+       TEXTO_A_CADA vagas de card novo (2,5 desde 24/10/2026: duas em cada
+       cinco), na ordem de leitura e em rodízio entre os textos; saem das
+       outras listas para não estrear por dois caminhos. */
     const ativos = textosAtivosDe(p);
     const doTexto = Motor.palavrasDosTextos(ativos, p.cards, p.arquivados || {}).filter(id => naFila.has(id));
     const doTextoSet = new Set(doTexto);
@@ -579,10 +577,7 @@ window.TaioeCardsApp = function (ctx) {
       const dosTextos = new Set(ativos.flatMap(x => Motor.requeridas(x)));
       const estreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined)
         .sort((x, y) => p.cards[y].estreouNa - p.cards[x].estreouNa);
-      let desde = 0;
-      while (desde < estreias.length && !dosTextos.has(estreias[desde])) desde++;
-      const cada = Motor.TEXTO_A_CADA - 1;
-      const vez = Math.max(0, cada - desde);
+      const { vez, cada } = Motor.vezDoTexto(estreias, id => dosTextos.has(id));
       fila = fila.slice(0, vez).concat([doTexto[0]], intercalar(fila.slice(vez), doTexto.slice(1), cada));
     }
     p.ineditos = semConjuntoSeguido(fila);
@@ -771,6 +766,62 @@ window.TaioeCardsApp = function (ctx) {
     e.stopPropagation();
   }, true);
 
+  /* ── as línguas em estudo, no topo (pedido do Gere, 24/10/2026) ──
+     Com dois ou mais cursos começados (com resposta na conta), um botão para
+     cada um, à esquerda do menu, na ordem de sempre; o atual fica cheio.
+     Valem os cursos da mesma língua de interface (ctx.cursosDaLingua), os que
+     se trocam sem mudar a língua do app. A lista fica guardada neste aparelho,
+     para aparecer já na abertura, e a conta a confirma logo depois. */
+  const caixaDosCursos = document.getElementById('cursos-topo');
+  const CHAVE_CURSOS = 'cards:cursos:' + ctx.uid;
+  function montarCursosDoTopo(comecados) {
+    const ja = new Set((comecados || []).concat([ctx.curso]));
+    const cursos = (ctx.cursosDaLingua || [ctx.curso]).filter(k => ja.has(k));
+    caixaDosCursos.textContent = '';
+    caixaDosCursos.hidden = cursos.length < 2 || document.querySelector('.acoes-topo').hidden;
+    cursos.forEach(k => {
+      const b = document.createElement('button');
+      b.className = 'curso-topo';
+      b.dataset.curso = k;
+      b.setAttribute('aria-label', ctx.nomeDoCurso(k));
+      if (k === ctx.curso) b.setAttribute('aria-current', 'true');
+      const nome = document.createElement('span');
+      nome.className = 'nome';
+      nome.textContent = ctx.nomeDoCurso(k);
+      const sigla = document.createElement('span');
+      sigla.className = 'sigla';
+      sigla.textContent = String(ctx.linguaDoCurso(k) || k).toUpperCase();
+      b.append(nome, sigla);
+      caixaDosCursos.appendChild(b);
+    });
+    ajustarCursosDoTopo();
+  }
+  /* os nomes, se couberem na linha do topo; senão, as siglas */
+  function ajustarCursosDoTopo() {
+    if (caixaDosCursos.hidden) return;
+    const topo = caixaDosCursos.parentNode;
+    caixaDosCursos.classList.remove('curtos');
+    if (topo.scrollWidth > topo.clientWidth + 1) caixaDosCursos.classList.add('curtos');
+  }
+  async function carregarCursosDoTopo() {
+    const guardados = lerLocal(CHAVE_CURSOS);
+    montarCursosDoTopo(Array.isArray(guardados) ? guardados : []);
+    /* o revisor geral lê os contadores de todo mundo: o filtro pela conta é obrigatório */
+    const r = await ctx.sb.schema('cards').from('contadores').select('curso')
+      .eq('usuario_id', ctx.uid).gt('respostas', 0).then(x => x, () => ({ error: true }));
+    if (!r || r.error || !Array.isArray(r.data)) return;
+    const lista = r.data.map(x => x.curso);
+    guardarLocal(CHAVE_CURSOS, lista);
+    montarCursosDoTopo(lista);
+  }
+  caixaDosCursos.addEventListener('click', e => {
+    const b = e.target.closest('.curso-topo');
+    if (!b || b.getAttribute('aria-current') === 'true' || b.disabled) return;
+    caixaDosCursos.querySelectorAll('.curso-topo').forEach(x => { x.disabled = true; });
+    irParaCurso(b.dataset.curso);
+  });
+  window.addEventListener('resize', ajustarCursosDoTopo);
+
   /* Qual botão do topo corresponde a cada tela. A de card não tem botão:
      ela é para onde o «começar» leva, não um destino do menu. */
   const BOTAO_DA_TELA = {
@@ -791,6 +842,8 @@ window.TaioeCardsApp = function (ctx) {
     const nav = document.querySelector('.acoes-topo');
     if (nav) nav.hidden = tela === 'tela-comeco';
     acertarMarca(tela === 'tela-inicio' || tela === 'tela-comeco');
+    if (caixaDosCursos.children.length > 1) caixaDosCursos.hidden = tela === 'tela-comeco';
+    ajustarCursosDoTopo();
     /* Tela nova abre no topo. Sem isto o painel herdava a rolagem de onde
        se estava — no meio do feedback de um card, em geral — e abria já nos
        gráficos. O card fica de fora: ele tem a sua subida (voltarAoTopo). */
@@ -838,13 +891,13 @@ window.TaioeCardsApp = function (ctx) {
   /* ═══════════════ fluxo do card ═══════════════ */
 
   /* ── de qual fila vem o próximo card ──
-     Primeiro os dominados: quem venceu a data fura a fila, e é só isso que
-     eles obedecem. Depois o sorteio entre inéditos, es→pt e pt→es, com os
-     pesos que perseguem o alvo de cards em cada direção (ver motor.js).
-     Por cima do sorteio passam, nesta ordem: o card que esperou demais na
-     fila, e o card novo quando faz vinte respostas que nenhum estreia.
+     Dois passos (pedido do Gere, 24/10/2026; ver Motor.escolherProximo):
+     primeiro o sorteio entre card novo e revisão, com a chance que persegue a
+     meta da ida; depois a escolha dentro do grupo sorteado — o novo pela ordem
+     dos inéditos, a revisão pelo dominado vencido, pelo atrasado e pelo
+     sorteio entre ida e volta.
 
-     Se não sobrou nada em lugar nenhum, entra o dominado de data mais
+     Se não sobrou nada pronto em lugar nenhum, entra o dominado de data mais
      próxima: ficar sem card seria pior do que adiantar um. */
   /* Quantos cards vieram desde o último dominado. Começa alto: abrir o app
      não precisa esperar espaço nenhum. */
@@ -860,72 +913,41 @@ window.TaioeCardsApp = function (ctx) {
     return id;
   }
 
-  /* Quantas respostas desde a última estreia. Cada card guarda em que
-     resposta estreou («estreouNa»); o que estreou antes de o campo existir
-     não conta, e aí a primeira escolha já deve um card novo. */
-  function respostasDesdeNovo() {
-    let ultima = -Infinity;
-    for (const id in progresso.cards) {
-      const n = progresso.cards[id].estreouNa;
-      if (n !== undefined && n > ultima) ultima = n;
-    }
-    return progresso.totais.respostas - ultima;
-  }
-
-  /* Os cards em jogo: os que já estrearam e não foram arquivados. */
-  function cardsEmJogo() {
-    let n = 0;
-    for (const id in progresso.cards) {
-      if (progresso.cards[id].vistas && !Motor.arquivado(id, progresso.arquivados || {})) n++;
-    }
-    return n;
+  /* O que a escolha precisa saber agora; o painel usa o mesmo, para mostrar a
+     chance de verdade. Só concorrem os cards que já esperaram o intervalo
+     mínimo (ver Motor.podeVoltar). */
+  function contextoDaEscolha() {
+    const agora = new Date().toISOString();
+    const respostas = progresso.totais.respostas;
+    const livre = id => Motor.podeVoltar(progresso.cards[id], respostas) &&
+      !(conjuntoAnterior && conjuntoDe(id) === conjuntoAnterior);
+    return {
+      agora: agora,
+      estados: progresso.cards,
+      arquivados: progresso.arquivados,
+      alvo: Motor.alvoDaFila(progresso.diario),
+      respostas: respostas,
+      temIneditos: progresso.ineditos.length > 0,
+      livres: { esPt: progresso.filaEsPt.filter(livre), ptEs: progresso.filaPtEs.filter(livre) },
+      vencidos: progresso.dominados.filter(id =>
+        estadoParaFila(id) && !Motor.esperando(estadoParaFila(id), agora)).length,
+      desdeDominado: desdeDominado
+    };
   }
 
   function escolherProximoId() {
-    const agora = new Date().toISOString();
-    const respostas = progresso.totais.respostas;
-    const vencidos = progresso.dominados.filter(id =>
-      estadoParaFila(id) && !Motor.esperando(estadoParaFila(id), agora)).length;
-    /* Só concorrem os cards que já esperaram o intervalo mínimo (ver
-       Motor.podeVoltar). Fila sem nenhum deles conta como vazia: aí o card
-       novo vem mesmo que o teto o vetasse. */
-    const livre = id => Motor.podeVoltar(progresso.cards[id], respostas) &&
-      !(conjuntoAnterior && conjuntoDe(id) === conjuntoAnterior);
-    const livres = { esPt: progresso.filaEsPt.filter(livre), ptEs: progresso.filaPtEs.filter(livre) };
+    const c = contextoDaEscolha();
     const filaDe = k => (k === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs);
     const tirar = (k, id) => filaDe(k).splice(filaDe(k).indexOf(id), 1)[0];
-    const tem = {
-      ineditos: progresso.ineditos.length > 0,
-      esPt: livres.esPt.length > 0,
-      ptEs: livres.ptEs.length > 0
-    };
-    const temOutro = tem.ineditos || tem.esPt || tem.ptEs;
-    /* Sem nada nas outras filas, o vencido vem sem esperar espaço. */
-    if (vencidos && (!temOutro || Motor.vezDoDominado(vencidos, desdeDominado))) {
-      return progresso.dominados.splice(dominadoMaisProximo(agora), 1)[0];
-    }
+    const e = Motor.escolherProximo(c);
+    if (e && e.grupo === 'novo') return proximoNovo();
+    if (e && e.fila === 'dominados') return progresso.dominados.splice(dominadoMaisProximo(c.agora), 1)[0];
+    if (e) return tirar(e.fila, e.id);
 
-    /* o piso e o teto do card novo (no começo, um a cada três, e aí nem o
-       atrasado passa na frente) */
-    const emJogo = cardsEmJogo();
-    const novo = tem.ineditos ? Motor.vezDoNovo(respostasDesdeNovo(), emJogo) : 'vetado';
-    if (novo === 'obrigado' && emJogo < Motor.CARDS_DO_COMECO) return proximoNovo();
-
-    /* quem esperou demais fura a fila, qualquer que seja o peso dela */
-    const fura = Motor.atrasadoQueFura(livres, progresso.cards, respostas);
-    if (fura) return tirar(fura.fila, livres[fura.fila][fura.indice]);
-
-    if (novo === 'obrigado') return proximoNovo();
-    if (novo === 'vetado' && (tem.esPt || tem.ptEs)) tem.ineditos = false;
-
-    const escolhida = Motor.sortearFila(
-      Motor.pesosDasFilas(progresso.cards, tem, Motor.alvoDaFila(progresso.diario), progresso.arquivados));
-    if (escolhida === 'ineditos') return proximoNovo();
-    if (escolhida === 'esPt' || escolhida === 'ptEs') {
-      const i = Motor.escolherNaFila(livres[escolhida], progresso.cards, respostas);
-      return tirar(escolhida, livres[escolhida][i]);
-    }
-
+    /* Nada pronto: o vencido que ainda esperava espaço, ou o dominado de data
+       mais próxima. */
+    const vencido = dominadoMaisProximo(c.agora);
+    if (vencido !== null) return progresso.dominados.splice(vencido, 1)[0];
     const proximo = dominadoMaisProximo(null);
     if (proximo !== null) return progresso.dominados.splice(proximo, 1)[0];
     /* Nada novo, nada vencido e ninguém fora do intervalo: antes repetir um
@@ -1204,10 +1226,10 @@ window.TaioeCardsApp = function (ctx) {
        rolar até o campo por conta própria, e as duas rolagens brigam. A
        subida interrompida (um toque, a roda do mouse) também foca: antes o
        foco só vinha no fim dela, e o card abria sem foco nenhum — o Gere
-       digitava à toa (21/10/2026). */
-    voltarAoTopo(() => {
-      if (esperandoEscrita() && !ehCampo(document.activeElement)) el.entrada.focus({ preventScroll: true });
-    });
+       digitava à toa (21/10/2026). Durante a subida, o que se digita fica
+       guardado e vai para a caixa no fim (ver segurarTeclas). */
+    if (window.scrollY >= 2 && esperandoEscrita()) segurarTeclas();
+    voltarAoTopo(soltarTeclas);
 
     inicioResposta = performance.now();
   }
@@ -1862,9 +1884,9 @@ window.TaioeCardsApp = function (ctx) {
       : (progresso.cards[id] = Motor.estadoInicialDo(PORID[id] || { id: id })));
     const etapaAntes = est.etapa;
     const degrauAntes = Math.min(est.revisoes || 0, 5);
-    /* a resposta em que o card estreou: é dela que sai a conta do piso e do
-       teto de card novo (ver respostasDesdeNovo). O presumido não é card
-       novo, e não conta. */
+    /* a resposta em que o card estreou: é dela que sai a ordem das estreias
+       (a vez do texto, das frases livres; ver ordenarIneditos). O presumido
+       não é card novo, e não conta. */
     if (!est.vistas && !presumido) {
       est.estreouNa = relogioAntes;
       /* A estreia do desafio não conta no domínio por nível
@@ -2067,36 +2089,30 @@ window.TaioeCardsApp = function (ctx) {
     const dir = Motor.contarDirecoes(progresso.cards, progresso.arquivados);
     const presos = CARDS.filter(c => !progresso.cards[c.id] &&
                                      !Motor.liberado(c, progresso.cards, null, progresso.arquivados)).length;
-    /* A chance de o próximo card ser inédito. Não é mais uma contagem
-       regressiva: o sorteio pesa as três filas a cada card, e o que dá para
-       prometer é a probabilidade, não a data. */
+    /* A chance de o próximo card ser novo: a mesma conta do sorteio (ver
+       Motor.escolherProximo), com o que está pronto agora. */
     const temIneditos = (progresso.ineditos || []).length > 0;
     const alvo = Motor.alvoDaFila(progresso.diario);
     const recente = Motor.acertoRecente(progresso.diario);
-    const chances = Motor.chancesDasFilas(progresso.cards, {
-      ineditos: temIneditos,
-      esPt: progresso.filaEsPt.length > 0,
-      ptEs: progresso.filaPtEs.length > 0
-    }, alvo, progresso.arquivados);
+    const chanceNovo = Motor.chanceDoProximoNovo(contextoDaEscolha());
     const aConfirmar = presumidosAConfirmar();
 
     let html = '<div class="grade">' +
       /* a ordem faz pares na tela de duas colunas: o que já saiu e a chance
          de sair mais; as duas taxas de acerto; as filas e onde elas acabam */
       metrica(ids.length + '/' + CARDS.length, t('painel.vistos')) +
-      metrica(!temIneditos ? '—' : Math.round(100 * chances.ineditos) + '%',
+      metrica(!temIneditos ? '—' : Math.round(100 * chanceNovo) + '%',
               t(!temIneditos
                 ? (presos ? 'painel.presos' : 'painel.todosApareceram')
                 : 'painel.chanceNovo')) +
       metrica(pctDe(dePrimeira.length, estreados.length), t('painel.dePrimeira')) +
       metrica(taxa + '%', t('painel.geral', { n: milhar(tt.respostas) })) +
-      /* é o equilíbrio que a admissão de inéditos persegue — vê-lo explica
-         por que o card novo às vezes vem depressa e às vezes espera */
-      /* É o alvo que a escolha de fila persegue — vê-lo explica por que o
-         card novo às vezes vem depressa e às vezes rareia. */
-      /* no modo trilhas só há a ida: nem as duas filas, nem «nas duas direções» */
-      (TRILHAS ? '' : metrica(dir.esPt + ' · ' + dir.ptEs,
-              t('painel.direcoes', { ida: ROTULO_IDA, volta: ROTULO_VOLTA, alvoIda: alvo.esPt, alvoVolta: alvo.ptEs, taxa: Math.round(100 * recente.taxa) }))) +
+      /* É a meta que a chance de card novo persegue — vê-la explica por que
+         o card novo às vezes vem depressa e às vezes rareia. No modo trilhas
+         só há a ida. */
+      (TRILHAS ? metrica(dir.esPt, t('painel.ida', { alvoIda: alvo.esPt, taxa: Math.round(100 * recente.taxa) }))
+        : metrica(dir.esPt + ' · ' + dir.ptEs,
+              t('painel.direcoes', { ida: ROTULO_IDA, volta: ROTULO_VOLTA, alvoIda: alvo.esPt, taxa: Math.round(100 * recente.taxa) }))) +
       metrica(dominados, t(TRILHAS ? 'painel.dominadosIda' : 'painel.dominados')) +
       /* os presumidos do nivelamento ainda sem resposta (PLANO.md, 7.2) */
       (aConfirmar.n ? metrica(milhar(aConfirmar.n), t('painel.aConfirmar')) : '') +
@@ -2946,6 +2962,49 @@ window.TaioeCardsApp = function (ctx) {
     const a = document.activeElement;
     if (!a || a === document.body || a === document.documentElement) el.entrada.focus({ preventScroll: true });
   }
+  /* ── as teclas da subida (pedido do Gere, 24/10/2026) ──
+     A tela sobe animada para o card novo, e o foco só vai para a caixa no fim
+     da subida. No celular, o que se digitava nesse meio-tempo se perdia: o
+     teclado ficava aberto sem caixa nenhuma, ou nem abria, porque ele só abre
+     com certeza quando o foco vem no próprio toque. Então, no toque do
+     «Próximo», o foco vai para a captura — um campo invisível preso no alto
+     da tela, que não puxa rolagem —, o teclado abre ali, e no fim da subida
+     (ou quando ela é interrompida) o que se digitou passa para a caixa. */
+  function segurarTeclas() {
+    el.captura.value = '';
+    el.captura.focus({ preventScroll: true });
+  }
+  function soltarTeclas() {
+    const cap = el.captura;
+    const segurando = document.activeElement === cap;
+    if (!esperandoEscrita()) {
+      if (segurando) cap.blur();
+      cap.value = '';
+      return;
+    }
+    if (!segurando && ehCampo(document.activeElement)) return;
+    el.entrada.focus({ preventScroll: true });
+    const passar = () => {
+      if (!cap.value) return;
+      const limite = Number(el.entrada.getAttribute('maxlength')) || 120;
+      el.entrada.value = (el.entrada.value + cap.value).replace(/\s*\n\s*/g, ' ').slice(0, limite);
+      cap.value = '';
+      ajustarEntrada();
+      const fim = el.entrada.value.length;
+      el.entrada.setSelectionRange(fim, fim);
+    };
+    passar();
+    /* o teclado do celular pode entregar depois a palavra que estava compondo */
+    setTimeout(passar, 60);
+  }
+  /* o Enter durante a subida responde, como responderia na caixa */
+  el.captura.addEventListener('keydown', e => {
+    if (e.key !== 'Enter' && e.keyCode !== 13) return;
+    e.preventDefault();
+    soltarTeclas();
+    if (el.entrada.value.trim()) responderEscrita(false);
+  });
+
   /* o blur não dispara quando a janela está sem foco; o toque cobre esse caso */
   el.entrada.addEventListener('blur', () => setTimeout(devolverFoco, 0));
   document.addEventListener('pointerup', () => setTimeout(devolverFoco, 0));
@@ -4036,6 +4095,7 @@ window.TaioeCardsApp = function (ctx) {
   progresso.totais.sessoes = (progresso.totais.sessoes || 0) + 1;
   salvarProgresso();
   atualizarPlacar();
+  carregarCursosDoTopo();
   /* a primeira entrada no curso (ou a avaliação que ficou pela metade) abre
      no começo; o resto, na página inicial */
   if (TRILHAS) esquecerLocal(CHAVE_COMECO);

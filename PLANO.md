@@ -998,8 +998,12 @@ marcadas com ✔.
 - ✔ **Até 3 textos** escolhidos, ou nenhum.
 - ✔ **Ritmo**: com texto, as palavras dos textos ocupam **1 de cada 3** vagas de card novo,
   na ordem de leitura, em rodízio entre os textos escolhidos. Sem texto, tudo como antes.
+  Desde 24/10, **1 de cada 2,5** (duas em cada cinco; pedido do Gere, que achou que o texto não
+  andava): os vãos entre duas palavras de texto se alternam entre 1 e 2 (`Motor.vezDoTexto`).
 - ✔ **O verso aparece na hora**: logo depois da resposta que domina a última palavra que
-  faltava (não é card, não espera a meia-noite). Domínio por outro caminho (nivelamento,
+  faltava. Desde 24/10 basta a palavra **fechar a ida** (já reconhecida lendo; `Motor.idaFechada`),
+  uns 3,5 dias depois da estreia em vez de uns 7: ler é reconhecer, e a volta segue depois, como a
+  de qualquer card. O andamento («faltam N palavras») conta pela mesma régua (não é card, não espera a meia-noite). Domínio por outro caminho (nivelamento,
   «Já conheço», outro aparelho): na próxima troca de card. Vários versos juntos vêm juntos
   («versos 3 a 5 de 12»); verso só de palavras sem card vem com o seguinte.
 - ✔ **Sem tradução**, com as palavras clicáveis: o clique mostra o lema, a classe/forma e a

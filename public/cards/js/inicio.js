@@ -231,6 +231,8 @@
       modo: c.modo || 'livre',
       /* os outros cursos ativos para quem fala a mesma língua */
       outrosCursos: cursosDa(c.audiencia).filter(function (k) { return k !== curso; }),
+      /* todos, na ordem de sempre, para os botões das línguas no topo */
+      cursosDaLingua: cursosDa(c.audiencia),
       linguaDoCurso: function (k) { return CURSOS[k] ? CURSOS[k].lingua : null; },
       nomeDoCurso: function (k) { return nomeDoCurso(k, c.audiencia); },
       progressoSalvo: salvo || null,

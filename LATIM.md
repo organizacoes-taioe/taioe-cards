@@ -186,16 +186,22 @@ também são na ida.
 - Cada um: o nome, a definição em uma ou duas linhas, a tabela das terminações quando houver, e de 6
   a 10 exemplos reais, de preferência das primeiras frases, com a palavra destacada.
 - A pergunta (D4): um exemplo com a palavra destacada; múltipla escolha entre os conceitos da mesma
-  família (os casos entre si, os tempos entre si); depois, escrever o nome («acusativo»; «perfeito do
-  indicativo», aceitando «perfeito» e «pretérito perfeito»).
+  família (os casos entre si, os tempos entre si). Até 24/10 vinha depois escrever o nome; desde
+  então é **sempre de escolher** (pedido do Gere: escrever «nominativo» toda vez cansava), também
+  na revisão; 3 acertos seguidos dominam, como no contraste. As quatro erradas são as do exemplo
+  da vez (`exemplos[].distratores`, gravadas por `fonte/latim/cards_de_forma.py`): as outras
+  leituras da mesma forma primeiro (*Deo*: ablativo), depois os pares que mais se trocam.
 - Entra logo antes da primeira frase que precisa dele (campo `conceitos` da frase, que o build tira
   da anotação). A frase não espera o conceito ficar dominado; basta ele ter estreado.
 - Terminologia das gramáticas brasileiras: subjuntivo (não conjuntivo), futuro perfeito.
 
 ### 3.6 Forma (`la-x…`): o caso de cada palavra do texto (aprovado e feito em 22/10)
 Pedido do Gere (22/10): perguntar o caso das palavras dos textos, «pelo menos as que vão causar mais
-dificuldade»; **só por escrito** (os casos já vieram nos cards de conceito) e **uma vez só**: acertou
-de primeira, nunca mais; errou, volta até acertar **3 vezes seguidas**, e então sai de vez.
+dificuldade»; **uma vez só**: acertou de primeira, nunca mais; errou, volta até acertar **3 vezes
+seguidas**, e então sai de vez. Era **só por escrito**; desde 24/10 é **só de escolher**, como o
+conceito (escrever «nominativo» toda vez cansava), com as quatro erradas que mais se confundem com a
+certa: as outras leituras que a mesma forma teria fora da frase primeiro, depois os pares que mais se
+trocam (`CONFUSAO` em `fonte/latim/cards_de_forma.py`, que grava o campo `distratores`).
 - O card: o verso (ou a primeira frase) inteiro, a palavra destacada, «Em que caso está a palavra
   destacada?», campo de escrever. Sai do build, da anotação que trechos e frases já têm (`palavras[].f`);
   nenhuma ficha escrita à mão. Um card por ocorrência; a mesma forma no mesmo caso, de novo no mesmo
@@ -370,6 +376,10 @@ mesmo jeito, que mostrem as sutilezas da gramática.
   Gere viu quase só card novo. Agora a revisão ganha o peso da ida longe do alvo (`pesosDasFilas`),
   como a volta vazia dá nos outros cursos: no começo, meio a meio (simulado: 39 novos em 70
   respostas, contra uns 9 em 10 antes), caindo até o piso quando a ida chega ao alvo.
+  Refeito em 24/10, para todos os cursos: primeiro se sorteia card novo ou revisão, com a chance
+  que persegue a meta da ida (entre 5% e 50%), e só depois o card dentro do grupo (README, «De
+  qual fila vem o próximo card»). Com o teto antigo de um novo a cada cinco respostas, a ida do
+  latim ficava em 5 cards contra 50 e o card dominava na mesma sessão.
 - **Texto terminado**: o app oferece outro do mesmo nível ou do nível de cima.
 
 ## 6. Os textos propostos

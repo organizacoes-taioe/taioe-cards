@@ -102,98 +102,61 @@ fila quando a data chega — com espaço entre eles (ver adiante).
 
 #### De qual fila vem o próximo card
 
-Entre as outras três, a escolha persegue um alvo em cada direção: **de 30 a
-50 cards em `es → pt` e de 40 a 60 em `pt → es`** (desde 20/10/2026; antes,
-40 a 60 nas duas), conforme o acerto recente (ver adiante; a tabela abaixo é
-a de um alvo só, 40). Quem está abaixo do alvo precisa de entrada, quem está acima precisa
-de saída — e cada fila mexe no que mexe:
+Desde 24/10/2026 (pedido do Gere) a escolha tem **dois passos**:
 
-| Tirar um card de | O que isso faz com as contagens |
-|---|---|
-| inéditos | **+1** em `es → pt` — é a única torneira desse lado |
-| `es → pt` | às vezes **−1** em `es → pt` e **+1** em `pt → es` |
-| `pt → es` | às vezes **−1** em `pt → es`, que vira dominado |
+1. **Card novo ou revisão.** Um sorteio com a chance de card novo, que persegue
+   a **meta da ida** (`es → pt`): com a ida na meta, **15%**; cada card que falta
+   soma **2 pontos**, e cada card que sobra tira o mesmo, sempre **entre 5% e
+   50%**, para não vir só card novo nem só revisão. O card novo é a única torneira
+   da ida, e a ida esvazia sozinha conforme os cards fecham a primeira fase:
+   a chance sobe quando ela esvazia e desce quando ela enche, e a ida fica
+   rondando a meta. Sem revisão pronta, vem card novo; sem inédito, revisão.
+2. **Qual card, dentro do grupo sorteado.** O novo, pela ordem dos inéditos
+   (textos, frases destravadas, palavras pedidas, avulsas). A revisão: primeiro o
+   dominado que chegou na data (com espaço entre eles), depois o card que esperou
+   demais, e por fim o sorteio entre a ida e a volta, que persegue **as duas do
+   mesmo tamanho** (50%, mais ou menos 2 pontos por card de diferença, entre 20%
+   e 80%); dentro da fila, o mais urgente.
 
-Daí saem os pesos do sorteio: o déficit de `es → pt` puxa inédito; o déficit de
-`pt → es` puxa trabalho em `es → pt`, que é de onde saem os que atravessam; e o
-excesso de cada lado puxa trabalho no próprio lado, que é por onde ele escoa.
+A meta da ida vai de **30**, com 65% de acerto recente ou menos, a **50**, com
+85% ou mais (desde 20/10/2026; antes, 40 a 60). A chance que o painel mostra é
+a mesma conta do sorteio, e por isso é a de verdade.
 
-| `es → pt` | `pt → es` | inédito | `es → pt` | `pt → es` |
-|---:|---:|---:|---:|---:|
-| 0 | 0 | 100% | — | — |
-| 20 | 0 | 41% | 54% | 5% |
-| 40 | 0 | 2% | 90% | 8% |
-| 40 | 40 | 9% | 45% | 45% |
-| 55 | 55 | 1% | 49% | 49% |
-| 20 | 60 | 45% | 5% | 49% |
+Na simulação (`node fonte/simular-fila.js`, aluno de mentira, 120 respostas por
+dia, três sementes, da terceira semana em diante):
 
-**Não é uma porta que abre e fecha — é peso**, e ele cede aos poucos conforme a
-fila chega perto do alvo. Cada card de desvio pesa **quatro** pontos: com um
-ponto só, os pisos de peso puxavam o equilíbrio para o lado e as filas
-assentavam em 96 e 106, porque só um desvio de vários cards gerava peso para
-compensar. A régua anterior contava respostas desde o último
-inédito e tinha uma porta liga-desliga que fechava de vez em 122 contra 112;
-media a coisa errada, que era o intervalo, e não o tamanho das filas.
-
-Card novo nunca deixa de vir: há um piso de peso para os inéditos, porque um
-limite que pudesse virar "nunca" recriaria a seca que a regra veio resolver.
-
-**Por que quarenta, e não cem.** O alvo era cem, e o tamanho da fila não muda
-quantos cards novos entram por dia: isso quem decide é o ritmo de quem estuda.
-Na simulação com o progresso de 26 de setembro, 110 respostas por dia davam uns
-dez cards novos por dia com qualquer alvo, de vinte a cem. O que o tamanho muda
-é a espera. Com cem de cada lado, o card que tinha acabado de ser escrito
-certo pela primeira vez pedia voltar em umas 60 respostas e voltava em 700 —
-oito dias depois, ainda sem estar aprendido («demorou demais», em três
-comentários de 22/09). Com quarenta:
-
-| | alvo 100 | alvo 40 |
+| | regra até 24/10 | regra nova |
 |---|---:|---:|
-| as três primeiras voltas de um card novo (mediana · 90%) | 3,0 · 5,0 dias | 1,0 · 2,0 dias |
-| do card novo ao dominado (mediana) | 15 dias | 10 dias |
-| cards novos por dia, da terceira semana em diante | ~11 | ~10 |
+| espanhol, aluno de ~90%: ida contra a meta | 48 / 50 | 52 / 50 |
+| espanhol: chance no painel · fração real de novos | 27% · 11% | 12% · 11% |
+| espanhol: cards novos por dia · dias até dominar | 13,5 · 7,0 | 13,5 · 7,0 |
+| latim: ida contra a meta | 5 / 50 | 47 / 50 |
+| latim: chance no painel · fração real de novos | 48% · 20% | 21% · 21% |
+| latim: dias da estreia ao domínio | 0,2 | 1 a 2 |
 
-O preço é a passagem: com as filas acima do alvo, quase não entra card novo
-até elas descerem — cerca de uma semana trabalhando o que já estava em
-circulação, e mais uma com uns oito novos por dia.
+A regra anterior (de 26/09 a 24/10/2026) era um sorteio só, entre inéditos,
+ida e volta, com pesos que perseguiam um alvo em cada direção (a volta tinha o
+seu, de 40 a 60), e por cima dele um teto de card novo (no máximo um a cada
+cinco respostas), um piso (um a cada vinte) e um começo de um a cada três. O
+painel mostrava o peso dos inéditos no sorteio, e não a chance: o teto, os
+dominados e os atrasados passavam na frente sem entrar na conta. No latim, que
+só tem a ida, o teto segurava a entrada enquanto a ida esvaziava, e ela ficava
+em 5 cards contra uma meta de 50: cada card voltava logo depois do intervalo
+mínimo e ficava dominado na mesma sessão, sem espaço para fixar.
 
-**A semana seca, e o que saiu dela.** A passagem veio de 27/09 a 01/10, com
-zero a três cards novos por dia, e foi seca demais. Três acertos, de outubro
-de 2026:
+O tamanho da ida quase não muda quantos cards novos entram por dia: isso quem
+decide é quantas respostas cada card custa até dominar e quantas respostas a
+pessoa dá. Em setembro o alvo era cem, e cem era demais: o card que acabava de
+ser escrito certo pela primeira vez pedia voltar em umas 60 respostas e voltava
+em 700, oito dias depois («demorou demais», em três comentários de 22/09). Com
+quarenta, as três primeiras voltas caíram de 3 para 1 dia (mediana), e do card
+novo ao dominado, de 15 para 10 dias.
 
-- **O alvo acompanha o acerto.** Quem acerta muito aguenta mais cards em
-  circulação; quem está errando precisa de menos, voltando mais cedo. Com 65%
-  de acerto ou menos o alvo é **40** por direção; com 85% ou mais, **60**; no
-  meio, cresce em linha reta. Vale o acerto das **últimas ~300 respostas**
-  (os dias mais recentes do diário), e não o geral, que depois de milhares de
-  respostas já não se mexe. Com menos de cinquenta respostas, vale 40.
-- **Card novo tem piso e teto.** Pelo menos **um a cada vinte respostas**, por
-  mais cheias que as filas estejam — a seca não se repete. E no máximo **um a
-  cada cinco** — quando o alvo sobe, a fila enche em dias, e não com quarenta
-  estreias numa tarde. Cada card guarda a resposta em que estreou
-  (`estreouNa`), e é dela que sai a conta.
-- **Quem esperou demais fura a fila.** Os pesos decidem quantas vezes cada
-  fila é chamada, e fila no alvo recebe pouco: era assim que um card esperava
-  oito dias. Agora, passadas **300 respostas** na fila, o card mais antigo das
-  duas direções ganha chance de sair antes de qualquer sorteio, e aos **450**
-  sai com certeza. A conta é em respostas de espera, e não em vezes a
-  distância pedida: medida em proporção, a regra dispararia setenta vezes por
-  dia e tomaria o lugar do sorteio.
-
-Na simulação com o progresso de 1º de outubro e 115 respostas por dia: 13, 16
-e 13 cards novos nos três primeiros dias (o maior dia teve 19), depois uns 9
-por dia; espera mediana de 1,7 dia entre as voltas, e a maior de 3,5 dias.
-
-Simulando 1500 respostas com a taxa de acerto real, partindo do zero, as duas
-direções chegam ao alvo por volta da resposta 1000 e ficam lá:
-
-| Respostas | `es → pt` | `pt → es` | Dominados | Cards vistos |
-|---:|---:|---:|---:|---:|
-| 250 | 69 | 17 | 1 | 88 |
-| 500 | 84 | 59 | 3 | 148 |
-| 750 | 97 | 90 | 9 | 195 |
-| 1000 | 100 | 102 | 27 | 228 |
-| 1500 | 99 | 104 | 75 | 278 |
+**Quem esperou demais fura a fila** das revisões: passadas **300 respostas** na
+fila, o card mais antigo das duas direções ganha chance de sair antes do sorteio
+entre ida e volta, e aos **450** sai com certeza. A conta é em respostas de
+espera, e não em vezes a distância pedida: medida em proporção, a regra
+dispararia setenta vezes por dia e tomaria o lugar do sorteio.
 
 ### Onde o card cai dentro da fila
 
@@ -296,9 +259,9 @@ faz o acerto na múltipla dessa direção esperar 90: a grafia espanhola certa
 acabou de aparecer na tela, e o card cai na múltipla escolha da mesma direção.
 Voltar em dez posições seria pedir que você reconhecesse o que acabou de ler.
 
-O painel mostra os dois lados com o alvo ao lado («es → pt e pt → es (alvo
-60 em cada, pelos 87% de acerto recente)») e a **chance de o próximo card ser inédito**, que é o que o
-sorteio de fato promete — não uma data.
+O painel mostra os dois lados com a meta da ida ao lado («es → pt e pt → es
+(meta de 50 em es → pt, pelos 87% de acerto recente)») e a **chance de o próximo
+card ser novo**, que é o que o sorteio de fato promete — não uma data.
 
 ### O atalho de quem não erra
 

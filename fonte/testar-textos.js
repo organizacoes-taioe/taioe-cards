@@ -74,6 +74,12 @@ ok(M.versosProntos(P1, { a: dominado('a'), b: dominado('b'), c: dominado('c') })
 ok(M.versosProntos(P1, { a: dominado('a'), b: dominado('b'), c: dominado('c'), d: dominado('d') }) === 4, 'o poema inteiro');
 ok(M.versosProntos(P1, { a: dominado('a'), b: dominado('b') }, { c: { ativo: true, em: '2026-10-01T00:00:00Z' } }) === 3,
   'a palavra arquivada («Já conheço») conta como sabida');
+const naVolta = id => ({ id, etapa: 'inversa-multipla', vistas: 4, acertos: 4, erros: 0 });
+const naIda = id => ({ id, etapa: 'escrita', vistas: 2, acertos: 2, erros: 0 });
+ok(M.versosProntos(P1, { a: naVolta('a'), b: dominado('b') }) === 1,
+  'a palavra com a ida fechada (já na volta) conta: o verso espera só o reconhecimento');
+ok(M.versosProntos(P1, { a: naIda('a'), b: dominado('b') }) === 0, 'a palavra ainda na ida não conta');
+ok(M.andamentoDoTexto(P1, { a: naVolta('a'), b: naIda('b') }).faltam === 3, 'o andamento conta as que faltam reconhecer');
 const P0 = poema('p0', 0, [[], ['a']]);
 ok(M.versosProntos(P0, {}) === 0 && M.versosProntos(P0, { a: dominado('a') }) === 2, 'o primeiro verso vazio vem com o segundo');
 ok(M.versosVistos(P1, { 'p1#1': 'x', 'p1#3': 'y' }) === 3 && M.versosVistos(P1, { p1: 'x' }) === 4, 'versosVistos lê os lidos');

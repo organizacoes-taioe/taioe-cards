@@ -103,6 +103,20 @@ ok(M.exemploDoConceito(g001, { vistas: 0 }) === g001.exemplos[0], 'o primeiro ex
 ok(M.exemploDoConceito(g001, { vistas: 1 }) === g001.exemplos[1], 'o seguinte na próxima vez');
 ok(M.exemploDoConceito(g001, { vistas: g001.exemplos.length }) === g001.exemplos[0], 'e dá a volta');
 ok(M.exemploDoConceito(PORID.get('la-p001'), { vistas: 0 }) === null, 'card que não é de conceito não tem exemplo');
+M.usarTransparencias(CARDS);   // o motor aprende o tipo de cada card
+const conceito = M.estadoInicialDo(g001);
+ok(M.modoDe(conceito) === 'multipla', 'o conceito é de escolher');
+const altG = M.alternativas(g001, IDA, CARDS, { 'la-g001': { vistas: 1 } });
+ok(altG.length === 5 && altG.includes('nominativo') && g001.exemplos[1].distratores.every(d => altG.includes(d)),
+  'as erradas são as do exemplo da vez (' + altG.join(', ') + ')');
+for (let i = 0; i < 2; i++) responder(conceito, true);
+ok(conceito.etapa !== 'dominado' && M.modoDe(conceito) === 'multipla', 'dois acertos: ainda não, e continua de escolher');
+responder(conceito, true);
+ok(conceito.etapa === 'dominado' && M.modoDe(conceito) === 'multipla', 'três seguidos dominam, e a revisão também é de escolher');
+for (const c of CARDS.filter(x => x.tipo === 'conceito' && x.familia !== 'voz')) {
+  c.exemplos.forEach((ex, i) => ok(Array.isArray(ex.distratores) && ex.distratores.length === 4 && !ex.distratores.includes(c.pt),
+    c.id + ' exemplo ' + (i + 1) + ': quatro erradas, sem a certa'));
+}
 
 /* ═══════════ 6b. o card de forma (LATIM.md §3.6) ═══════════ */
 secao('o card de forma');
@@ -135,13 +149,16 @@ M.usarTransparencias(CARDS);
 M.usarExtras({ uid: 'teste' });
 const resp = (e, acertou) => M.registrar(e, { acertou, modo: 'escrita', direcao: IDA, resposta: 'x' });
 const novo = M.estadoInicialDo(abl);
-ok(M.modoDe(novo) === 'escrita', 'estreia já por escrito');
+ok(M.modoDe(novo) === 'multipla', 'é de escolher (desde 24/10/2026), também na estreia');
+const altF = M.alternativas(abl, IDA, CARDS, {});
+ok(altF.length === 5 && altF.includes('ablativo') && altF.includes('dativo'),
+  'cinco alternativas, com a certa e a que mais se confunde com ela (' + altF.join(', ') + ')');
 resp(novo, true);
 ok(novo.etapa === 'dominado' && novo.voltaEm === null, 'acertou de primeira: dominado, sem data de volta');
 ok(M.filaDe(novo) === 'fora' && M.encerrado(abl.id, novo), 'e fora de todas as filas');
 const teimoso = M.estadoInicialDo(abl);
 resp(teimoso, false);
-ok(teimoso.etapa === 'escrita', 'errou: continua por escrito, sem múltipla escolha');
+ok(M.modoDe(teimoso) === 'multipla', 'errou: continua de escolher');
 resp(teimoso, true); resp(teimoso, true);
 ok(teimoso.etapa !== 'dominado', 'dois acertos depois do erro ainda não bastam');
 resp(teimoso, true);
@@ -207,14 +224,20 @@ ok(M.transparenteTotal('x1') && M.transparenteTotal('x2'), 'no modo trilhas a «
 ok(M.escolherDesafio(CARDS, {}, {}) === null, 'não há card desafio');
 
 /* ═══════════ 7b. novo × revisão ═══════════ */
-secao('novo × revisão no começo');
+secao('novo × revisão: a chance persegue a meta da ida');
 const estadosIda = k => { const e = {}; for (let i = 0; i < k; i++) e['x' + i] = { etapa: 'escrita', vistas: 1 }; return e; };
-const alvo = { esPt: 30, ptEs: 40 };
-const p0 = M.pesosDasFilas(estadosIda(0), null, alvo), p15 = M.pesosDasFilas(estadosIda(15), null, alvo), p30 = M.pesosDasFilas(estadosIda(30), null, alvo);
-ok(p0.esPt >= p0.ineditos, 'no começo a revisão pesa tanto quanto o card novo (' + p0.esPt + ' × ' + p0.ineditos + ')');
-ok(p15.esPt > 0.8 * p15.ineditos && p15.esPt < 1.5 * p15.ineditos, 'a meio caminho do alvo, perto de meio a meio (' + p15.esPt + ' × ' + p15.ineditos + ')');
-ok(p30.ineditos === 2 && p30.esPt === 10, 'no alvo, o card novo vem pelo piso (' + p30.esPt + ' × ' + p30.ineditos + ')');
-ok(p0.ptEs === 10, 'a volta não existe, e o peso dela não importa');
+const alvo = { esPt: 30 };
+const c0 = M.chanceDoNovo(estadosIda(0), alvo), c25 = M.chanceDoNovo(estadosIda(25), alvo),
+  c30 = M.chanceDoNovo(estadosIda(30), alvo), c40 = M.chanceDoNovo(estadosIda(40), alvo), c80 = M.chanceDoNovo(estadosIda(80), alvo);
+ok(c0 === M.CHANCE_MAXIMA, 'longe da meta, a chance para no teto (' + c0 + ')');
+ok(c25 > c30 && c30 > c40, 'cai à medida que a ida enche (' + [c25, c30, c40].join(' > ') + ')');
+ok(c30 === M.CHANCE_NA_META, 'na meta, ' + M.CHANCE_NA_META);
+ok(c80 === M.CHANCE_MINIMA, 'muito acima da meta, para no piso (' + c80 + ')');
+ok(M.chanceDaIda(estadosIda(5)) === 1, 'sem volta, toda revisão de card em estudo é da ida');
+const ctx = (temIneditos, livres, vencidos) => ({ estados: estadosIda(30), alvo, temIneditos, livres, vencidos: vencidos || 0, desdeDominado: 99, respostas: 100 });
+ok(M.chanceDoProximoNovo(ctx(true, { esPt: [], ptEs: [] })) === 1, 'sem revisão pronta, vem card novo');
+ok(M.chanceDoProximoNovo(ctx(false, { esPt: ['x1'], ptEs: [] })) === 0, 'sem inédito, vem revisão');
+ok(M.chanceDoProximoNovo(ctx(true, { esPt: [], ptEs: [] }, 3)) === M.CHANCE_NA_META, 'o dominado vencido é revisão pronta');
 
 /* ═══════════ 8. os textos ═══════════ */
 secao('os textos e os trechos');

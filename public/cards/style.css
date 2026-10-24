@@ -87,6 +87,33 @@ body{
 .icone.aqui{color:var(--acento);border-color:var(--acento-borda);background:var(--acento-fraco)}
 .icone.aqui svg circle{fill:#1c1a10}
 
+/* ── as línguas em estudo (24/10/2026) ──
+   Um botão por curso começado, à esquerda do menu; o atual fica cheio, na cor
+   de destaque, e os outros só com o contorno. Quando os nomes não cabem na
+   linha do topo, viram a sigla da língua («curtos»). */
+.cursos-topo{display:flex;gap:6px}
+.cursos-topo[hidden]{display:none}
+.curso-topo{
+  height:36px;padding:0 11px;border-radius:10px;
+  border:1px solid var(--borda);background:transparent;color:var(--texto-2);
+  font:inherit;font-size:13.5px;font-weight:700;white-space:nowrap;cursor:pointer;
+  transition:color .12s,border-color .12s,background .12s;
+}
+.curso-topo:hover{color:var(--texto);border-color:var(--texto-2)}
+.curso-topo:focus-visible{outline:2px solid var(--acento);outline-offset:2px}
+.curso-topo[aria-current="true"]{color:#1c1a10;background:var(--acento);border-color:var(--acento);cursor:default}
+.curso-topo:disabled:not([aria-current="true"]){opacity:.5;cursor:wait}
+.curso-topo .sigla,.cursos-topo.curtos .curso-topo .nome{display:none}
+.cursos-topo.curtos .curso-topo .sigla{display:inline}
+
+/* o campo invisível que guarda as teclas durante a subida para o card novo:
+   preso no alto da tela, para o foco nele não puxar rolagem; 16px para o
+   iPhone não aproximar a tela */
+.captura{
+  position:fixed;top:0;left:0;width:1px;height:1px;
+  margin:0;padding:0;border:0;opacity:0;font-size:16px;pointer-events:none;
+}
+
 /* ── o menu do topo (21/10/2026) ──
    Os cinco destinos, com ícone e nome, num painel que desce do botão. Abre
    e fecha no mesmo botão; um toque fora, o Esc ou a troca de tela fecham. */
@@ -496,8 +523,11 @@ label input:focus{outline:0;border-color:var(--acento)}
   .termo{font-size:26px}
   .termo.frase{font-size:20px}
   .placar{display:none}
-  /* sem o placar, nada empurrava o botão do menu para o canto */
+  /* sem o placar, nada empurrava o botão do menu para o canto; com as
+     línguas em estudo, são elas que vão para a direita, junto do menu */
   .acoes-topo{margin-left:auto}
+  .cursos-topo{margin-left:auto}
+  .cursos-topo:not([hidden]) + .acoes-topo{margin-left:0}
   main{padding:16px 13px 30px}
 }
 
