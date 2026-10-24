@@ -975,9 +975,11 @@ dominados.
 - **Todo mundo começa com um poema** automático (o campo `fila` do texto, do mais
   fácil ao mais difícil), e pode escolher até três, ou nenhum, na tela Textos ou
   pelo botão «Aprender as palavras deste poema», na Biblioteca.
-- **As palavras dos textos ficam com 1 de cada 3 vagas de card novo**, na ordem
-  de leitura e em rodízio entre os textos escolhidos.
-- **O verso aparece na hora** em que a última palavra dele fica sabida, sem
+- **As palavras dos textos ficam com 1 de cada 2,5 vagas de card novo** (duas em
+  cada cinco, desde 24/10/2026; antes, 1 de cada 3), na ordem de leitura e em
+  rodízio entre os textos escolhidos.
+- **O verso aparece na hora** em que a última palavra dele fica reconhecida (a ida
+  fechada, desde 24/10/2026; antes, dominada nas duas direções), sem
   tradução, com as palavras clicáveis (o lema, a classe e a tradução do card).
 - **Cada palavra se liga ao lema**: «partirai» é o card de «partir». Flexão não
   ganha card.

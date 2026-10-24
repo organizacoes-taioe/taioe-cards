@@ -1,7 +1,7 @@
 /* ────────────────────────────────────────────────────────────────
    motor.js — estado dos cards e gestão da fila.
 
-   São quatro filas: inéditos, es→pt, pt→es e dominados (ver pesosDasFilas).
+   São quatro filas: inéditos, es→pt, pt→es e dominados (ver escolherProximo).
    Ao responder, o card volta para a fila da etapa dele e anota a distância
    que pediu: curta depois de um erro, longa depois de um acerto escrito.
 
@@ -1398,95 +1398,61 @@ window.Motor = (function () {
     return { multipla: { n: 0, certas: 0 }, escrita: { n: 0, certas: 0 } };
   }
 
-  /* ── quatro filas, e de qual delas vem o próximo card ──
-
-     Card novo e card em revisão nunca disputaram a mesma fila — se
-     disputassem, o novo perderia sempre. Agora são quatro filas separadas:
+  /* ── de qual grupo vem o próximo card: novo ou revisão ──
+     Card novo e card em revisão nunca disputam a mesma fila — se disputassem,
+     o novo perderia sempre. São quatro filas:
 
        inéditos   o que nunca apareceu
-       es→pt      você reconhece o espanhol (multipla, escrita)
-       pt→es      você produz o espanhol (inversa-multipla, inversa-escrita)
+       es→pt      você reconhece o espanhol (multipla, escrita): a ida
+       pt→es      você produz o espanhol (inversa-multipla, inversa-escrita): a volta
        dominados  vencido nas duas direções, esperando a data
 
-     Os dominados ficam fora desta conta: eles têm gatilho de calendário e
-     furam a fila quando a data chega, com espaço entre eles (ver
-     vezDoDominado).
+     A escolha tem dois passos (pedido do Gere, 24/10/2026):
 
-     Entre as outras três, a escolha persegue um alvo em cada direção: **de
-     ALVO_IDA_MIN a ALVO_IDA_MAX cards em es→pt e de ALVO_VOLTA_MIN a
-     ALVO_VOLTA_MAX em pt→es**. Quem está abaixo do alvo precisa de entrada, quem está acima
-     precisa de saída — e cada fila mexe no que mexe:
+     1. NOVO OU REVISÃO. Sorteio com a chance de card novo, que persegue a meta
+        de cards na ida: com a ida na meta, CHANCE_NA_META; cada card que falta
+        soma CHANCE_POR_CARD, e cada card que sobra tira o mesmo, sempre entre
+        CHANCE_MINIMA e CHANCE_MAXIMA, para não vir só card novo nem só revisão.
+        Card novo é a única torneira da ida, e a ida esvazia sozinha, à medida
+        que os cards fecham a primeira fase — então a chance sobe quando ela
+        esvazia e desce quando ela enche, e a ida fica rondando a meta.
+     2. QUAL CARD, DENTRO DO GRUPO SORTEADO. O novo, pela ordem dos inéditos
+        (ver ordenarIneditos no app). A revisão: primeiro o dominado que chegou
+        na data (com espaço entre eles, ver vezDoDominado), depois o card que
+        esperou demais (atrasadoQueFura), e por fim o sorteio entre a ida e a
+        volta, que persegue as duas do mesmo tamanho (ver chanceDaIda); dentro
+        da fila, o mais urgente (escolherNaFila).
 
-       tirar um inédito       +1 em es→pt        (a única torneira desse lado)
-       trabalhar es→pt        as vezes −1 em es→pt e +1 em pt→es
-       trabalhar pt→es        as vezes −1 em pt→es (vai para dominado)
+     Grupo sem card para dar não entra no sorteio: sem revisão pronta vem card
+     novo, e sem inédito vem revisão. A chance que o painel mostra é esta mesma
+     conta, e por isso é a de verdade.
 
-     Daí os pesos: o déficit de es→pt puxa inédito; o déficit de pt→es puxa
-     trabalho em es→pt, porque é de lá que sai gente para a volta; o excesso
-     de cada lado puxa trabalho no próprio lado, que é por onde ele escoa.
+     A regra anterior (de 26/09 a 24/10/2026) era um sorteio só, entre as três
+     filas, com pesos que perseguiam um alvo na ida e outro na volta, e por cima
+     dele um teto (no máximo um novo a cada cinco respostas), um piso (um a cada
+     vinte) e um começo de um a cada três. O painel mostrava o peso dos
+     inéditos no sorteio, e não a chance: o teto, os dominados e os atrasados
+     passavam na frente e não entravam na conta. Na simulação, o latim ficava
+     com a ida em 5 cards contra uma meta de 50, e o painel dizia 48% quando o
+     real era 20%.
 
-     A regra antiga era uma espera em três tempos mais uma porta de
-     equilíbrio. Funcionava, mas media a coisa errada: contava respostas
-     desde o último inédito em vez de olhar o tamanho das filas, e a porta
-     era liga-desliga — fechava de vez em 122 contra 112. Aqui não há porta:
-     há peso, e ele cede aos poucos conforme a fila se aproxima do alvo.
-
-     O peso é o desvio vezes GANHO. Com o desvio puro, cada card a mais ou a
-     menos valia um ponto de peso, e o equilíbrio parava antes do alvo: os
-     pisos de 10 puxam as filas para um lado, e só um desvio de alguns cards
-     gerava peso para compensar — as filas assentaram em 96 e 106. Com o
-     desvio multiplicado por quatro, o mesmo empurrão sai de um desvio quatro
-     vezes menor.
-
-     O alvo era cem, e cem é demais para quem responde uns 110 cards por dia.
-     O tamanho da fila não muda quantos cards novos entram por dia — isso quem
-     decide é o ritmo de quem estuda, e na simulação ficou em ~10 por dia com
-     qualquer alvo —; muda só quanto cada card espera na fila. Com cem de cada
-     lado, o card que acabou de ser escrito certo pela primeira vez pedia
-     voltar em umas 60 respostas e voltava em 700, oito dias depois, sem estar
-     aprendido ainda («demorou demais», em p094, p243 e v045). Com quarenta, as
-     primeiras voltas caem para cerca de um dia, e o card novo chega a
-     dominado em dez dias em vez de quinze. O preço é a passagem: com as filas
-     acima do alvo, quase não entra card novo até elas descerem — uma semana,
-     mais ou menos, trabalhando o que já estava em circulação.
-
-     Essa semana veio, de 27/09 a 01/10, com zero a três cards novos por dia,
-     e foi seca demais. Daí três acertos, de outubro de 2026:
-
-     — O ALVO ACOMPANHA O ACERTO. Quem acerta muito aguenta mais cards em
-       circulação; quem está errando precisa de menos, voltando mais cedo. O
-       alvo vai do mínimo, com 65% de acerto ou menos, ao máximo, com 85%
-       ou mais, em linha reta entre os dois. O acerto é o das últimas
-       trezentas respostas, e não o geral, que depois de milhares de
-       respostas já não se mexe (ver alvoDaFila).
-     — CARD NOVO TEM PISO E TETO. Pelo menos um a cada vinte respostas, por
-       mais cheias que as filas estejam: a seca da passagem não se repete.
-       E no máximo um a cada cinco: quando o alvo sobe, a fila enche em
-       dias, e não com quarenta estreias numa tarde (ver vezDoNovo).
-     — NO COMEÇO, UM NOVO A CADA TRÊS. Enquanto o aluno tem menos de
-       CARDS_DO_COMECO cards em jogo, pelo menos um de cada três cards é
-       novo, e o teto não vale (pedido do Gere, 06/10/2026: o intervalo
-       mínimo de dez respostas, sozinho, ainda deixava o começo repetitivo).
-     — QUEM ESPEROU DEMAIS FURA A FILA, qualquer que seja o peso da fila dele
-       (ver atrasadoQueFura).
-
-     Até 20/10/2026 as duas direções tinham o mesmo alvo, de 40 a 60. Nesse
-     dia o Gere pediu 30 a 50 na primeira fase (es→pt, a resposta na língua
-     de quem estuda); a volta ficou em 40 a 60. */
+     A META DA IDA ACOMPANHA O ACERTO. Quem acerta muito aguenta mais cards em
+     circulação; quem está errando precisa de menos, voltando mais cedo. Vai de
+     ALVO_IDA_MIN, com 65% de acerto ou menos, a ALVO_IDA_MAX, com 85% ou mais,
+     em linha reta entre os dois. O acerto é o das últimas trezentas respostas,
+     e não o geral, que depois de milhares de respostas já não se mexe (ver
+     alvoDaFila). Até 20/10/2026 a meta era de 40 a 60; nesse dia o Gere pediu
+     30 a 50. A volta tinha meta própria, de 40 a 60, até 24/10. */
   const ALVO_IDA_MIN = 30;     // cards em es→pt, para quem acerta pouco
   const ALVO_IDA_MAX = 50;     // e para quem acerta muito
-  const ALVO_VOLTA_MIN = 40;   // o mesmo em pt→es
-  const ALVO_VOLTA_MAX = 60;
   const ACERTO_DO_MIN = 0.65, ACERTO_DO_MAX = 0.85;
   const JANELA_DO_ACERTO = 300;   // respostas recentes que contam
-  const NOVO_A_CADA_NO_MAXIMO = 20;   // piso: um card novo a cada vinte respostas, pelo menos
-  const NOVO_A_CADA_NO_MINIMO = 5;    // teto: nunca mais de um a cada cinco
-  const CARDS_DO_COMECO = 50;         // até aqui, é o começo:
-  const NOVO_A_CADA_NO_COMECO = 3;    // um card novo a cada três, pelo menos, e sem teto
-  const GANHO = 4;           // quanto pesa cada card de desvio do alvo
-  const PISO_REVISAO = 10;   // nenhuma fila de revisão morre de fome
-  const PISO_INEDITO = 2;    // card novo nunca deixa de vir, mas em conta-gotas
-  const TETO_PESO = 100;     // desequilíbrio grande não mata as outras filas
+  const CHANCE_NA_META = 0.15;    // a chance de card novo com a ida exatamente na meta
+  const CHANCE_POR_CARD = 0.02;   // o que cada card de falta (ou de sobra) na ida soma (ou tira)
+  const CHANCE_MINIMA = 0.05;     // nunca menos de um novo a cada vinte, na média
+  const CHANCE_MAXIMA = 0.5;      // nem mais de um a cada dois
+  const IDA_NA_REVISAO_MIN = 0.2; // entre as revisões, a ida nunca tem menos de 20%
+  const IDA_NA_REVISAO_MAX = 0.8; // nem mais de 80%
 
   /* Em que fila mora cada etapa. */
   function filaDe(est) {
@@ -1530,32 +1496,59 @@ window.Motor = (function () {
     return { n: n, taxa: n ? ok / n : 0 };
   }
 
-  /* Quantos cards se quer em cada direção, para este acerto. Com menos de
-     cinquenta respostas a taxa ainda não diz nada, e vale o alvo menor: quem
-     está começando não precisa de sessenta cards abertos. Devolve
-     { esPt, ptEs }. */
+  /* A meta da ida, para este acerto. Com menos de cinquenta respostas a taxa
+     ainda não diz nada, e vale a meta menor: quem está começando não precisa
+     de cinquenta cards abertos. Devolve { esPt }. */
   function alvoDaFila(diario) {
     const a = acertoRecente(diario);
     const t = a.n < 50 ? 0
       : Math.min(1, Math.max(0, (a.taxa - ACERTO_DO_MIN) / (ACERTO_DO_MAX - ACERTO_DO_MIN)));
-    return {
-      esPt: Math.round(ALVO_IDA_MIN + t * (ALVO_IDA_MAX - ALVO_IDA_MIN)),
-      ptEs: Math.round(ALVO_VOLTA_MIN + t * (ALVO_VOLTA_MAX - ALVO_VOLTA_MIN))
-    };
+    return { esPt: Math.round(ALVO_IDA_MIN + t * (ALVO_IDA_MAX - ALVO_IDA_MIN)) };
   }
 
-  /* O piso e o teto do card novo, pela conta de respostas desde a última
-     estreia: 'obrigado' quando passou do piso, 'vetado' quando ainda não
-     chegou ao teto, e 'livre' no meio, que é onde o sorteio decide. No
-     começo (menos de CARDS_DO_COMECO cards em jogo), o piso é de três e não
-     há teto. Sem «emJogo», vale a régua de sempre. */
-  function vezDoNovo(desdeNovo, emJogo) {
-    if (emJogo !== undefined && emJogo < CARDS_DO_COMECO) {
-      return desdeNovo >= NOVO_A_CADA_NO_COMECO ? 'obrigado' : 'livre';
-    }
-    if (desdeNovo >= NOVO_A_CADA_NO_MAXIMO) return 'obrigado';
-    if (desdeNovo < NOVO_A_CADA_NO_MINIMO) return 'vetado';
-    return 'livre';
+  const entre = (v, min, max) => Math.min(max, Math.max(min, v));
+
+  /* A chance de card novo pela meta da ida, com os dois grupos disponíveis. */
+  function chanceDoNovo(estados, alvo, arquivados) {
+    const ida = contarDirecoes(estados, arquivados).esPt;
+    const meta = (alvo && alvo.esPt) || ALVO_IDA_MIN;
+    return entre(CHANCE_NA_META + CHANCE_POR_CARD * (meta - ida), CHANCE_MINIMA, CHANCE_MAXIMA);
+  }
+
+  /* Já decidido que vem revisão de card não dominado, a chance de ser da ida.
+     A meta é ida e volta do mesmo tamanho: a ida maior puxa revisão da ida,
+     que é por onde ela escoa para a volta; a volta maior puxa revisão da
+     volta, que é por onde ela escoa para os dominados. No modo trilhas não há
+     volta. */
+  function chanceDaIda(estados, arquivados) {
+    if (soIda()) return 1;
+    const c = contarDirecoes(estados, arquivados);
+    return entre(0.5 + CHANCE_POR_CARD * (c.esPt - c.ptEs), IDA_NA_REVISAO_MIN, IDA_NA_REVISAO_MAX);
+  }
+
+  /* O que há para dar em cada grupo, tirado do contexto da escolha (ver
+     escolherProximo): a revisão pronta é o card de ida ou de volta que já
+     esperou o intervalo mínimo, ou o dominado vencido que já tem o espaço. */
+  function gruposProntos(c) {
+    const outros = ((c.livres && c.livres.esPt) || []).length + ((c.livres && c.livres.ptEs) || []).length;
+    const dominado = (c.vencidos || 0) > 0 && (c.desdeDominado === undefined || c.desdeDominado >= ESPACO_DOMINADO);
+    return { novo: !!c.temIneditos, outros: outros, dominado: dominado, revisao: outros > 0 || dominado };
+  }
+
+  /* A chance de o próximo card ser novo: a do painel e a do sorteio. */
+  function chanceDoProximoNovo(c) {
+    const g = gruposProntos(c);
+    if (!g.novo) return 0;
+    if (!g.revisao) return 1;
+    return chanceDoNovo(c.estados, c.alvo, c.arquivados);
+  }
+
+  /* As chances de cada fila, sem olhar o que está pronto: o app as usa para
+     converter posição antiga em distância (anotarEntradaNaFila). */
+  function chancesDasFilas(estados, alvo, arquivados) {
+    const novo = chanceDoNovo(estados, alvo, arquivados);
+    const ida = chanceDaIda(estados, arquivados);
+    return { ineditos: novo, esPt: (1 - novo) * ida, ptEs: (1 - novo) * (1 - ida) };
   }
 
   /* ── os textos ──
@@ -1564,11 +1557,39 @@ window.Motor = (function () {
      automático, a pessoa pode escolher até MAX_TEXTOS (ou nenhum), e as
      palavras dos textos escolhidos ocupam 1 de cada TEXTO_A_CADA vagas de card
      novo, na ordem de leitura, em rodízio entre os textos. O verso aparece na
-     hora em que a última palavra dele fica sabida (não é card: não espera a
-     meia-noite). A escolha mora em textos.emVista.escolha = { textos: [ids],
-     em: ISO, propria: bool }. */
+     hora em que a última palavra dele fica reconhecida (não é card: não espera
+     a meia-noite). A escolha mora em textos.emVista.escolha = { textos: [ids],
+     em: ISO, propria: bool }.
+
+     Até 24/10/2026 eram 1 de cada 3 vagas, e o verso esperava as palavras
+     dominadas nas duas direções, uns sete dias depois da estreia da última
+     (na simulação; às vezes onze). O Gere achou que o texto não andava e
+     pediu 1 de cada 2,5 (duas em cada cinco); e o verso passou a esperar só a
+     ida fechada, uns três dias e meio: ler é reconhecer, e a volta segue
+     depois, como a de qualquer card (ver idaFechada). */
   const MAX_TEXTOS = 3;
-  const TEXTO_A_CADA = 3;
+  const TEXTO_A_CADA = 2.5;
+
+  /* Quantas estreias de outros cards vêm antes da próxima palavra de texto.
+     «estreias» são as estreias, da mais recente para a mais antiga, e
+     «doTexto» diz quais eram palavra de texto. Com TEXTO_A_CADA fracionário
+     (2,5: um vão de 1,5), os vãos se alternam entre 1 e 2, para a média dar
+     certo: o vão de agora compensa o anterior. Devolve { vez, cada }: quantas
+     outras estreias ainda faltam, e o vão comum, para intercalar o resto. */
+  function vezDoTexto(estreias, doTexto) {
+    const vao = TEXTO_A_CADA - 1;
+    let desde = 0;
+    while (desde < estreias.length && !doTexto(estreias[desde])) desde++;
+    let anterior = null;
+    if (desde < estreias.length) {
+      let k = desde + 1;
+      while (k < estreias.length && !doTexto(estreias[k])) k++;
+      if (k < estreias.length) anterior = k - desde - 1;
+    }
+    const alvo = anterior === null ? Math.floor(vao)
+      : Math.min(Math.ceil(vao), Math.max(Math.floor(vao), Math.round(2 * vao - anterior)));
+    return { vez: Math.max(0, alvo - desde), cada: Math.round(vao) };
+  }
   /* o poema automático que a pessoa já lê pela metade (o nivelamento deu as
      palavras dele) é pulado: começar por ele não ensinaria nada */
   const QUASE_LIDO = 0.5;
@@ -1590,16 +1611,24 @@ window.Motor = (function () {
     return ((texto && texto.blocos) || []).reduce((a, b) => a.concat(b || []), []);
   }
 
+  /* A palavra que a pessoa já reconhece lendo: sabida (dominada, arquivada,
+     transparente ou presumida) ou com a ida fechada — o card já passou para a
+     volta, e o erro na volta não o devolve à ida. É o que o verso espera. */
+  function idaFechada(id, estados, arquivados) {
+    if (sabidaEm(id, estados, arquivados) !== Infinity) return true;
+    const e = estados && estados[id];
+    return !!(e && e.vistas && ['inversa-multipla', 'inversa-escrita', 'consolidado'].indexOf(e.etapa) >= 0);
+  }
+
   /* Quantos versos, a contar do primeiro, já podem ser lidos: todas as
-     palavras deles sabidas (dominadas, arquivadas, transparentes ou
-     presumidas). O verso sem palavra de card (só artigo, preposição, nome)
-     vem junto com o seguinte, e não sozinho. */
+     palavras deles reconhecidas (ver idaFechada). O verso sem palavra de card
+     (só artigo, preposição, nome) vem junto com o seguinte, e não sozinho. */
   function versosProntos(texto, estados, arquivados) {
     const vs = versosDoTexto(texto);
     let k = 0;
     for (const l of vs) {
       const req = (l && l.requer) || [];
-      if (req.some(id => String(id)[0] === '+' || sabidaEm(id, estados || {}, arquivados) === Infinity)) break;
+      if (req.some(id => String(id)[0] === '+' || !idaFechada(id, estados || {}, arquivados))) break;
       k++;
     }
     while (k > 0 && k < vs.length && !((vs[k - 1] && vs[k - 1].requer) || []).length) k--;
@@ -1624,10 +1653,10 @@ window.Motor = (function () {
     return !!(texto && lidos && lidos[texto.id]);
   }
 
-  /* Palavras sabidas sobre o total, e os versos prontos sobre o total. */
+  /* Palavras reconhecidas sobre o total, e os versos prontos sobre o total. */
   function andamentoDoTexto(texto, estados, arquivados) {
     const req = requeridas(texto);
-    const faltam = situacaoDaFrase(texto, estados || {}, arquivados).faltamDominar;
+    const faltam = req.filter(id => String(id)[0] === '+' || !idaFechada(id, estados || {}, arquivados)).length;
     const versos = versosDoTexto(texto).length;
     const prontos = versosProntos(texto, estados, arquivados);
     return { palavras: req.length, sabidas: req.length - faltam, faltam: faltam, versos: versos, prontos: prontos };
@@ -1683,48 +1712,6 @@ window.Motor = (function () {
       for (const l of listas) if (k < l.length && !ja.has(l[k])) { ja.add(l[k]); saida.push(l[k]); }
     }
     return saida;
-  }
-
-  /* O peso de cada fila no sorteio. «tem» diz quais filas têm card para dar;
-     fila vazia sai da conta em vez de roubar chance das outras. «alvo» é o
-     de alvoDaFila; sem ele, vale o menor de cada direção. «arquivados» tira
-     da conta os cards do «Já conheço» (ver contarDirecoes). */
-  function pesosDasFilas(estados, tem, alvo, arquivados) {
-    const c = contarDirecoes(estados, arquivados);
-    const ida = (alvo && alvo.esPt) || ALVO_IDA_MIN;
-    const volta = (alvo && alvo.ptEs) || ALVO_VOLTA_MIN;
-    const corta = v => Math.min(TETO_PESO, Math.max(0, GANHO * v));
-    /* No modo trilhas não há volta para encher. O peso que nos outros cursos vem da volta vazia
-       (e equilibra novo e revisão no começo, meio a meio) vem da própria ida longe do alvo: cai
-       à medida que ela enche. Com a volta, ficava +100 para sempre e o card novo minguava; sem
-       nada, a revisão ficava com 10 contra 100 e quase só vinha card novo (o Gere viu, 21/10). */
-    const p = {
-      ineditos: PISO_INEDITO + corta(ida - c.esPt),
-      esPt:     PISO_REVISAO + (soIda() ? corta(ida - c.esPt) : corta(volta - c.ptEs)) + corta(c.esPt - ida),
-      ptEs:     PISO_REVISAO + corta(c.ptEs - volta)
-    };
-    if (tem) for (const k in p) if (!tem[k]) p[k] = 0;
-    return p;
-  }
-
-  /* A chance de cada fila, em fração de 1. É o que o painel mostra e o que
-     converte distância em posição, logo abaixo. */
-  function chancesDasFilas(estados, tem, alvo, arquivados) {
-    const p = pesosDasFilas(estados, tem, alvo, arquivados);
-    const soma = p.ineditos + p.esPt + p.ptEs;
-    if (!soma) return { ineditos: 0, esPt: 0, ptEs: 0 };
-    return { ineditos: p.ineditos / soma, esPt: p.esPt / soma, ptEs: p.ptEs / soma };
-  }
-
-  function sortearFila(pesos) {
-    const soma = pesos.ineditos + pesos.esPt + pesos.ptEs;
-    if (!soma) return null;
-    let u = Math.random() * soma;
-    for (const k of ['ineditos', 'esPt', 'ptEs']) {
-      if (u < pesos[k]) return k;
-      u -= pesos[k];
-    }
-    return 'ptEs';
   }
 
   /* ── quem sai da fila: a urgência ──
@@ -1799,8 +1786,10 @@ window.Motor = (function () {
 
      Então há uma saída por cima do sorteio (ideia do Gere): passadas
      ESPERA_QUE_FURA respostas na fila — uns dois dias e meio —, o card mais
-     antigo das duas direções ganha chance de sair antes de qualquer sorteio,
-     e a chance cresce até virar certeza em ESPERA_QUE_FURA_SEMPRE.
+     antigo das duas direções ganha chance de sair antes do sorteio entre ida
+     e volta, e a chance cresce até virar certeza em ESPERA_QUE_FURA_SEMPRE.
+     Desde 24/10/2026 isso vale dentro do grupo das revisões: o card novo é
+     sorteado antes, e o atrasado não passa na frente dele (ver escolherProximo).
 
      A conta é em respostas de espera, e não em vezes a distância pedida: com
      quarenta a sessenta cards por fila quase todo card passa várias vezes do
@@ -1881,6 +1870,31 @@ window.Motor = (function () {
     if (!vencidos) return false;
     if (desdeUltimo < ESPACO_DOMINADO) return false;
     return Math.random() < Math.min(1, vencidos / VENCIDOS_CHEIO);
+  }
+
+  /* ── a escolha, nos dois passos ──
+     «c» é o contexto que o app monta a cada card:
+       estados, arquivados, alvo (alvoDaFila), respostas (o relógio de respostas);
+       temIneditos;
+       livres = { esPt: [ids], ptEs: [ids] }, os que já podem voltar (podeVoltar);
+       vencidos, quantos dominados passaram da data, e desdeDominado, quantos
+       cards vieram desde o último dominado.
+     Devolve { grupo: 'novo' }, { grupo: 'revisao', fila: 'dominados' } (o app
+     tira o vencido mais antigo), { grupo: 'revisao', fila: 'esPt' | 'ptEs', id },
+     ou null quando nenhum grupo tem card pronto. */
+  function escolherProximo(c) {
+    const g = gruposProntos(c);
+    if (Math.random() < chanceDoProximoNovo(c)) return { grupo: 'novo' };
+    if (!g.revisao) return null;
+    if (g.dominado && (!g.outros || vezDoDominado(c.vencidos, c.desdeDominado))) {
+      return { grupo: 'revisao', fila: 'dominados' };
+    }
+    const fura = atrasadoQueFura(c.livres, c.estados, c.respostas);
+    if (fura) return { grupo: 'revisao', fila: fura.fila, id: c.livres[fura.fila][fura.indice] };
+    let fila = Math.random() < chanceDaIda(c.estados, c.arquivados) ? 'esPt' : 'ptEs';
+    if (!c.livres[fila].length) fila = fila === 'esPt' ? 'ptEs' : 'esPt';
+    const i = escolherNaFila(c.livres[fila], c.estados, c.respostas);
+    return { grupo: 'revisao', fila: fila, id: c.livres[fila][i] };
   }
 
   /* ── a frase presa à palavra ──
@@ -2231,9 +2245,10 @@ window.Motor = (function () {
        — quem já provou o espanhol→português não volta à estaca zero. */
     const inversa = ehVolta(r.direcao) && !ehContraste(est.id);
     const jaDominado = est.etapa === 'dominado';
-    if (ehContraste(est.id) && r.acertou && !jaDominado) {
-      /* o card de contraste (§3.7): só múltipla escolha; três acertos seguidos o dominam, e
-         daí em diante ele volta por data, como os outros */
+    if ((ehContraste(est.id) || ehConceito(est.id)) && r.acertou && !jaDominado) {
+      /* o card de contraste (§3.7) e, desde 24/10/2026, o de conceito (§3.5): só múltipla
+         escolha; três acertos seguidos o dominam, e daí em diante ele volta por data, como os
+         outros */
       if (est.seguidas >= ACERTOS_PARA_VIRAR) {
         est.etapa = 'dominado';
         if (!est.dominadoEm) est.dominadoEm = new Date().toISOString();
@@ -2243,15 +2258,15 @@ window.Motor = (function () {
         est.etapa = 'multipla';
       }
     } else if (ehForma(est.id)) {
-      /* o card de forma (§3.6): só escrita; o acerto de primeira, ou três seguidos depois de
-         um erro, fecham de vez */
+      /* o card de forma (§3.6): só múltipla escolha (até 24/10/2026, só escrita); o acerto de
+         primeira, ou três seguidos depois de um erro, fecham de vez */
       if (r.acertou && (est.vistas === 1 || est.seguidas >= ACERTOS_PARA_VIRAR)) {
         est.etapa = 'dominado';
         if (!est.dominadoEm) est.dominadoEm = new Date().toISOString();
         if (est.ateDominar === undefined) est.ateDominar = est.vistas;
         est.seguidas = 0;
       } else if (!jaDominado) {
-        est.etapa = 'escrita';
+        est.etapa = 'multipla';
       }
     } else if (r.acertou) {
       if (jaDominado) {
@@ -2350,6 +2365,9 @@ window.Motor = (function () {
     /* o card de contraste (§3.7) é sempre a múltipla escolha: a frase em português, a resposta
        em latim, entre quatro que só mudam nos casos */
     if (est && ehContraste(est.id)) return { direcao: VOLTA, modo: 'multipla' };
+    /* os cards de conceito e de forma, sempre de escolher (pedido do Gere, 24/10/2026:
+       escrever «nominativo» toda vez cansava), também na revisão por data */
+    if (est && (ehConceito(est.id) || ehForma(est.id))) return { direcao: IDA, modo: 'multipla' };
     /* o card de leitura só conhece a ida, também quando dominado; no modo trilhas, todos */
     if (est && (soIda() || ehLeitura(est.id))) {
       if (est.etapa === 'dominado' || est.etapa === 'escrita') return { direcao: IDA, modo: 'escrita' };
@@ -2373,7 +2391,9 @@ window.Motor = (function () {
   /* ── o card de conceito (cards/LATIM.md §3.5) ──
      Pergunta-se com um exemplo real e uma palavra em destaque («Em que caso está Dominum?»),
      e cada vez é outro exemplo, para ninguém decorar a frase em vez de ler a forma. A vez
-     é a das respostas já dadas ao card: o mesmo exemplo em qualquer aparelho. */
+     é a das respostas já dadas ao card: o mesmo exemplo em qualquer aparelho. Desde
+     24/10/2026 é sempre de escolher, com as alternativas do exemplo da vez (as leituras que a
+     mesma forma teria fora da frase vêm primeiro; ver fonte/latim/cards_de_forma.py). */
   function exemploDoConceito(card, est) {
     const ex = (card && card.exemplos) || [];
     if (!ex.length) return null;
@@ -2382,9 +2402,10 @@ window.Motor = (function () {
   }
 
   /* ── o card de forma (cards/LATIM.md §3.6, pedido do Gere, 22/10/2026) ──
-     «Em que caso está a palavra destacada?», com o verso do texto. Só por escrito (os casos já
-     vieram nos cards de conceito) e uma vez só: acertou de primeira, sai de vez; errou, volta
-     até acertar três vezes seguidas, e então sai de vez. Nunca volta por data.
+     «Em que caso está a palavra destacada?», com o verso do texto. Só de escolher, entre as
+     leituras que mais se confundem com a certa (até 24/10/2026 era só por escrito, e escrever
+     «nominativo» toda vez cansava o Gere), e uma vez só: acertou de primeira, sai de vez;
+     errou, volta até acertar três vezes seguidas, e então sai de vez. Nunca volta por data.
      Nem todo card de forma é perguntado: o difícil («sempre», pela nota do build) sim; o fácil,
      só para uma pessoa em cada SORTEIO_DA_FORMA — sorteio fixo por pessoa e card, o mesmo em
      qualquer aparelho. E o erro puxa os parecidos: quem errou um dativo passa a ver também os
@@ -2403,6 +2424,7 @@ window.Motor = (function () {
      um com a sua frase portuguesa. Só múltipla escolha; entra quando as palavras e os
      conceitos dos casos estão dominados («requerTodas»). */
   function ehContraste(id) { return TIPO[id] === 'contraste'; }
+  function ehConceito(id) { return TIPO[id] === 'conceito'; }
 
   /* O card de forma acertado já disse o que tinha a dizer: fora de todas as filas. */
   function encerrado(id, est) {
@@ -2675,6 +2697,12 @@ window.Motor = (function () {
     if (card.tipo === 'contraste') {
       const c = CAMPOS[linguaDaResposta(direcao)];
       return embaralhar([card[c.certa], ...(card[c.distratores] || [])]);
+    }
+    /* no conceito e na forma (LATIM.md §3.5 e §3.6), as que mais se confundem com a certa: as do
+       exemplo da vez, no conceito, e as do card, na forma (ver fonte/latim/cards_de_forma.py) */
+    if (card.tipo === 'conceito' || card.tipo === 'forma') {
+      const ex = card.tipo === 'conceito' ? exemploDoConceito(card, estados && estados[card.id]) : null;
+      return embaralhar([card.pt, ...((ex && ex.distratores) || card.distratores || []).slice(0, 4)]);
     }
     const lingua = linguaDaResposta(direcao);
     const certa = card[CAMPOS[lingua].certa];
@@ -4004,7 +4032,7 @@ window.Motor = (function () {
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
-    ehForma, ehContraste, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
+    ehForma, ehContraste, ehConceito, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     SORTEIO_DA_FORMA, ACERTOS_QUE_SOLTAM,
     erroDeGenero, formasAceitas, LIMITES, cortar,
     linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
@@ -4015,10 +4043,11 @@ window.Motor = (function () {
     distanciaNaFila, esperando, proximaVolta, DIAS_DOMINADO, VARIACAO_DA_VOLTA,
     tempoConfiavel, MS_ABANDONO,
     contarDirecoes,
-    filaDe, pesosDasFilas, chancesDasFilas, sortearFila,
+    filaDe, chancesDasFilas, chanceDoNovo, chanceDaIda, chanceDoProximoNovo, escolherProximo,
+    CHANCE_NA_META, CHANCE_POR_CARD, CHANCE_MINIMA, CHANCE_MAXIMA,
     urgencia, cumpriu, escolherNaFila, podeVoltar, INTERVALO_MINIMO, vezDoDominado, ESPACO_DOMINADO,
-    ALVO_IDA_MIN, ALVO_IDA_MAX, ALVO_VOLTA_MIN, ALVO_VOLTA_MAX, alvoDaFila, acertoRecente, vezDoNovo, CARDS_DO_COMECO, NOVO_A_CADA_NO_COMECO, atrasadoQueFura,
-    MAX_TEXTOS, TEXTO_A_CADA, dominadosNoTotal, versosDoTexto, versosProntos, versosVistos, textoTerminado,
+    ALVO_IDA_MIN, ALVO_IDA_MAX, alvoDaFila, acertoRecente, atrasadoQueFura,
+    MAX_TEXTOS, TEXTO_A_CADA, vezDoTexto, idaFechada, dominadosNoTotal, versosDoTexto, versosProntos, versosVistos, textoTerminado,
     andamentoDoTexto, textosAutomaticos, escolhaDosTextos, textosAtivos, palavrasDosTextos, ehLeitura,
     liberado, liberadaEm, venceuEm, requeridas, arquivado, sabidaEm,
     situacaoDaFrase, atualizarEmVista, palavrasEmVista, FRASES_EM_VISTA,
