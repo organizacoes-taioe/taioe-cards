@@ -119,7 +119,8 @@ def separar(palavra):
         corte = len(com_cum[k])
         return [palavra[:corte], palavra[corte:]]
     for enc in ENCLITICAS:
-        if k.endswith(enc) and len(k) > len(enc) + 1 and not analisar(palavra):
+        # a chave troca v por u: «quidve» → «quidue»
+        if k.endswith(latim.chave(enc)) and len(k) > len(enc) + 1 and not analisar(palavra):
             raiz = palavra[:-len(enc)]
             if analisar(raiz):
                 return [raiz, '-' + enc]

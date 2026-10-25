@@ -603,9 +603,9 @@
   ],
   "distratores": [
    "imperativo",
+   "imperfeito do subjuntivo",
    "presente do indicativo",
-   "particípio presente",
-   "particípio perfeito"
+   "particípio presente"
   ],
   "nota": "Errare: infinitivo presente, o sujeito de est.",
   "nivel": "A1",
@@ -1062,9 +1062,9 @@
   ],
   "distratores": [
    "imperativo",
+   "imperfeito do subjuntivo",
    "presente do indicativo",
-   "particípio presente",
-   "particípio perfeito"
+   "particípio presente"
   ],
   "nota": "Sapere: infinitivo presente, o complemento de aude.",
   "nivel": "A1",
@@ -1534,7 +1534,9 @@
    "gramática",
    "forma verbal"
   ],
-  "conceitos": [],
+  "conceitos": [
+   "la-g019"
+  ],
   "dificuldade": 1.5,
   "sempre": false
  },
@@ -1750,8 +1752,8 @@
   "distratores": [
    "futuro do indicativo",
    "imperativo",
-   "presente do indicativo",
-   "particípio presente"
+   "imperfeito do subjuntivo",
+   "presente do indicativo"
   ],
   "nota": "tangere: infinitivo presente, depois de noli.",
   "nivel": "A1",
@@ -3161,7 +3163,7 @@
    "futuro do indicativo",
    "presente do indicativo",
    "imperativo",
-   "imperfeito do indicativo"
+   "imperfeito do subjuntivo"
   ],
   "nota": "Fiat: presente do subjuntivo, 3ª pessoa do singular, a ordem em forma de desejo.",
   "nivel": "A1",
@@ -4085,7 +4087,7 @@
    "futuro do indicativo",
    "presente do indicativo",
    "imperativo",
-   "imperfeito do indicativo"
+   "imperfeito do subjuntivo"
   ],
   "nota": "sanctificetur: presente do subjuntivo, 3ª pessoa do singular, voz passiva, o desejo.",
   "nivel": "A1",
@@ -4183,7 +4185,7 @@
    "futuro do indicativo",
    "presente do indicativo",
    "imperativo",
-   "imperfeito do indicativo"
+   "imperfeito do subjuntivo"
   ],
   "nota": "Adveniat: presente do subjuntivo, 3ª pessoa do singular, o pedido.",
   "nivel": "A1",
@@ -4248,7 +4250,7 @@
    "futuro do indicativo",
    "presente do indicativo",
    "imperativo",
-   "imperfeito do indicativo"
+   "imperfeito do subjuntivo"
   ],
   "nota": "Fiat: presente do subjuntivo, 3ª pessoa do singular.",
   "nivel": "A1",
@@ -4844,7 +4846,7 @@
    "futuro do indicativo",
    "presente do indicativo",
    "imperativo",
-   "imperfeito do indicativo"
+   "imperfeito do subjuntivo"
   ],
   "nota": "inducas: presente do subjuntivo, 2ª pessoa do singular, o pedido negativo.",
   "nivel": "A1",
@@ -5730,7 +5732,7 @@
    "futuro do indicativo",
    "presente do subjuntivo",
    "imperativo",
-   "presente do indicativo"
+   "imperfeito do subjuntivo"
   ],
   "nota": "dicere: infinitivo presente, completa possum.",
   "nivel": "A1",
@@ -5811,6 +5813,136 @@
   "sempre": false
  },
  {
+  "id": "la-xt022-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "id",
+  "frase": "Odi et amo. Quare id faciam, fortasse requiris.",
+  "ocorrencia": 1,
+  "de": "la-t022",
+  "fonte": "Catulo 85",
+  "lema": "la-p171",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "id: acusativo neutro singular, o objeto de faciam: isso.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt022-5",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "faciam",
+  "frase": "Odi et amo. Quare id faciam, fortasse requiris.",
+  "ocorrencia": 1,
+  "de": "la-t022",
+  "fonte": "Catulo 85",
+  "lema": "la-p165",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "subjuntivo presente"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "presente do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "faciam: presente do subjuntivo, 1ª pessoa do singular, na pergunta indireta, depois de quare.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g012"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt022-7",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "requiris",
+  "frase": "Odi et amo. Quare id faciam, fortasse requiris.",
+  "ocorrencia": 1,
+  "de": "la-t022",
+  "fonte": "Catulo 85",
+  "lema": "la-p167",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "requiris: presente do indicativo, 2ª pessoa do singular.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt023-0",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "Nescio",
+  "frase": "Nescio, sed fieri sentio et excrucior.",
+  "ocorrencia": 1,
+  "de": "la-t023",
+  "fonte": "Catulo 85",
+  "lema": "la-p168",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "Nescio: presente do indicativo, 1ª pessoa do singular.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
   "id": "la-xt023-2",
   "tipo": "forma",
   "familia": "verbo",
@@ -5826,9 +5958,9 @@
   ],
   "distratores": [
    "imperativo",
+   "imperfeito do subjuntivo",
    "presente do indicativo",
-   "particípio presente",
-   "particípio perfeito"
+   "particípio presente"
   ],
   "nota": "fieri: infinitivo presente, acontecer: o que ele sente.",
   "nivel": "A1",
@@ -5841,6 +5973,103 @@
   ],
   "dificuldade": 1.5,
   "sempre": false
+ },
+ {
+  "id": "la-xt023-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "sentio",
+  "frase": "Nescio, sed fieri sentio et excrucior.",
+  "ocorrencia": 1,
+  "de": "la-t023",
+  "fonte": "Catulo 85",
+  "lema": "la-p169",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "sentio: presente do indicativo, 1ª pessoa do singular.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt023-5",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "excrucior",
+  "frase": "Nescio, sed fieri sentio et excrucior.",
+  "ocorrencia": 1,
+  "de": "la-t023",
+  "fonte": "Catulo 85",
+  "lema": "la-p170",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "excrucior: presente do indicativo, 1ª pessoa do singular, voz passiva, sou torturado.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt024-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Regina",
+  "frase": "Regina caeli, laetare, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t024",
+  "fonte": "Regina caeli",
+  "lema": "la-p172",
+  "pt": "vocativo",
+  "aceitas": [
+   "caso vocativo",
+   "voc"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "acusativo",
+   "genitivo"
+  ],
+  "nota": "Regina: vocativo singular, a quem se fala.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g002"
+  ],
+  "dificuldade": 3.5,
+  "sempre": true
  },
  {
   "id": "la-xt024-1",
@@ -5876,6 +6105,38 @@
   "sempre": true
  },
  {
+  "id": "la-xt024-2",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "laetare",
+  "frase": "Regina caeli, laetare, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t024",
+  "fonte": "Regina caeli",
+  "lema": "la-p173",
+  "pt": "imperativo",
+  "aceitas": [
+   "imperativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "infinitivo",
+   "presente do subjuntivo",
+   "futuro do indicativo"
+  ],
+  "nota": "laetare: imperativo presente, 2ª pessoa do singular, depoente: alegra-te.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g011"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false
+ },
+ {
   "id": "la-xt025-1",
   "tipo": "forma",
   "familia": "caso",
@@ -5905,6 +6166,102 @@
   ],
   "conceitos": [
    "la-g003"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt025-2",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "meruisti",
+  "frase": "Quia quem meruisti portare, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t025",
+  "fonte": "Regina caeli",
+  "lema": "la-p175",
+  "pt": "perfeito do indicativo",
+  "aceitas": [
+   "indicativo perfeito"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo",
+   "futuro do indicativo"
+  ],
+  "nota": "meruisti: perfeito do indicativo, 2ª pessoa do singular.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g009"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt025-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "portare",
+  "frase": "Quia quem meruisti portare, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t025",
+  "fonte": "Regina caeli",
+  "lema": "la-p176",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "distratores": [
+   "imperativo",
+   "imperfeito do subjuntivo",
+   "presente do indicativo",
+   "particípio presente"
+  ],
+  "nota": "portare: infinitivo presente, completa meruisti.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt026-0",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "Resurrexit",
+  "frase": "Resurrexit, sicut dixit, alleluia.",
+  "ocorrencia": 1,
+  "de": "la-t026",
+  "fonte": "Regina caeli",
+  "lema": "la-p177",
+  "pt": "perfeito do indicativo",
+  "aceitas": [
+   "indicativo perfeito"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo",
+   "futuro do indicativo"
+  ],
+  "nota": "Resurrexit: perfeito do indicativo, 3ª pessoa do singular, o sujeito é quem, da linha anterior.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g009"
   ],
   "dificuldade": 1.0,
   "sempre": false
@@ -6041,6 +6398,74 @@
   "sempre": false
  },
  {
+  "id": "la-xt028-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "rivum",
+  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "ocorrencia": 1,
+  "de": "la-t028",
+  "fonte": "Fedro, Fábulas I,1,1",
+  "lema": "la-p179",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "rivum: acusativo singular, para onde. Vem depois de «Ad», preposição com acusativo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt028-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "eundem",
+  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "ocorrencia": 1,
+  "de": "la-t028",
+  "fonte": "Fedro, Fábulas I,1,1",
+  "lema": "la-p180",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "eundem: acusativo masculino singular, concorda com rivum: o mesmo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
   "id": "la-xt028-3",
   "tipo": "forma",
   "familia": "caso",
@@ -6074,6 +6499,39 @@
   "sempre": false
  },
  {
+  "id": "la-xt028-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "agnus",
+  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "ocorrencia": 1,
+  "de": "la-t028",
+  "fonte": "Fedro, Fábulas I,1,1",
+  "lema": "la-p181",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "agnus: nominativo singular, o sujeito.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
   "id": "la-xt028-6",
   "tipo": "forma",
   "familia": "verbo",
@@ -6090,8 +6548,8 @@
   "distratores": [
    "perfeito do indicativo",
    "imperfeito do indicativo",
-   "futuro do indicativo",
-   "imperativo"
+   "imperfeito do subjuntivo",
+   "futuro do indicativo"
   ],
   "nota": "venerant: mais-que-perfeito do indicativo, 3ª pessoa do plural.",
   "nivel": "A2",
@@ -6101,6 +6559,497 @@
   ],
   "conceitos": [],
   "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt029-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Siti",
+  "frase": "Siti compulsi; superior stabat lupus",
+  "ocorrencia": 1,
+  "de": "la-t029",
+  "fonte": "Fedro, Fábulas I,1,2",
+  "lema": "la-p182",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "Siti: ablativo singular, a causa: pela sede.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt029-1",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "compulsi",
+  "frase": "Siti compulsi; superior stabat lupus",
+  "ocorrencia": 1,
+  "de": "la-t029",
+  "fonte": "Fedro, Fábulas I,1,2",
+  "lema": "la-p183",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "particípio presente",
+   "infinitivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "compulsi: particípio perfeito, nominativo masculino plural, os dois, impelidos.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g014"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt029-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "superior",
+  "frase": "Siti compulsi; superior stabat lupus",
+  "ocorrencia": 1,
+  "de": "la-t029",
+  "fonte": "Fedro, Fábulas I,1,2",
+  "lema": "la-p184",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "superior: nominativo masculino singular, predicativo: mais acima.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt029-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "stabat",
+  "frase": "Siti compulsi; superior stabat lupus",
+  "ocorrencia": 1,
+  "de": "la-t029",
+  "fonte": "Fedro, Fábulas I,1,2",
+  "lema": "la-p185",
+  "pt": "imperfeito do indicativo",
+  "aceitas": [
+   "indicativo imperfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do indicativo",
+   "mais-que-perfeito do indicativo"
+  ],
+  "nota": "stabat: imperfeito do indicativo, 3ª pessoa do singular.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g008"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt030-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "inferior",
+  "frase": "Longeque inferior agnus. Tunc fauce improba",
+  "ocorrencia": 1,
+  "de": "la-t030",
+  "fonte": "Fedro, Fábulas I,1,3",
+  "lema": "la-p187",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "inferior: nominativo masculino singular, predicativo: mais abaixo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt030-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "fauce",
+  "frase": "Longeque inferior agnus. Tunc fauce improba",
+  "ocorrencia": 1,
+  "de": "la-t030",
+  "fonte": "Fedro, Fábulas I,1,3",
+  "lema": "la-p189",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "fauce: ablativo singular, o meio: com a goela.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt030-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "improba",
+  "frase": "Longeque inferior agnus. Tunc fauce improba",
+  "ocorrencia": 1,
+  "de": "la-t030",
+  "fonte": "Fedro, Fábulas I,1,3",
+  "lema": "la-p190",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "acusativo",
+   "nominativo",
+   "vocativo",
+   "dativo"
+  ],
+  "nota": "improba: ablativo feminino singular, concorda com fauce.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 4.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt031-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Latro",
+  "frase": "Latro incitatus iurgii causam intulit.",
+  "ocorrencia": 1,
+  "de": "la-t031",
+  "fonte": "Fedro, Fábulas I,1,4",
+  "lema": "la-p191",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "Latro: nominativo singular, o sujeito: o ladrão, isto é, o lobo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt031-1",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "incitatus",
+  "frase": "Latro incitatus iurgii causam intulit.",
+  "ocorrencia": 1,
+  "de": "la-t031",
+  "fonte": "Fedro, Fábulas I,1,4",
+  "lema": "la-p192",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "particípio presente",
+   "infinitivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "incitatus: particípio perfeito, nominativo masculino singular, concorda com latro.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g014"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt031-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "iurgii",
+  "frase": "Latro incitatus iurgii causam intulit.",
+  "ocorrencia": 1,
+  "de": "la-t031",
+  "fonte": "Fedro, Fábulas I,1,4",
+  "lema": "la-p193",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "ablativo",
+   "acusativo"
+  ],
+  "nota": "iurgii: genitivo singular, de briga.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt031-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "causam",
+  "frase": "Latro incitatus iurgii causam intulit.",
+  "ocorrencia": 1,
+  "de": "la-t031",
+  "fonte": "Fedro, Fábulas I,1,4",
+  "lema": "la-p194",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "causam: acusativo singular, o objeto direto.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt031-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "intulit",
+  "frase": "Latro incitatus iurgii causam intulit.",
+  "ocorrencia": 1,
+  "de": "la-t031",
+  "fonte": "Fedro, Fábulas I,1,4",
+  "lema": "la-p195",
+  "pt": "perfeito do indicativo",
+  "aceitas": [
+   "indicativo perfeito"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo",
+   "futuro do indicativo"
+  ],
+  "nota": "intulit: perfeito do indicativo, 3ª pessoa do singular.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g009"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt032-1",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "inquit",
+  "frase": "Cur, inquit, turbulentam fecisti mihi",
+  "ocorrencia": 1,
+  "de": "la-t032",
+  "fonte": "Fedro, Fábulas I,1,5",
+  "lema": "la-p197",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "inquit: presente do indicativo, 3ª pessoa do singular, diz o lobo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt032-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "turbulentam",
+  "frase": "Cur, inquit, turbulentam fecisti mihi",
+  "ocorrencia": 1,
+  "de": "la-t032",
+  "fonte": "Fedro, Fábulas I,1,5",
+  "lema": "la-p198",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "turbulentam: acusativo feminino singular, predicativo de aquam, na linha seguinte: turva.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt032-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "fecisti",
+  "frase": "Cur, inquit, turbulentam fecisti mihi",
+  "ocorrencia": 1,
+  "de": "la-t032",
+  "fonte": "Fedro, Fábulas I,1,5",
+  "lema": "la-p165",
+  "pt": "perfeito do indicativo",
+  "aceitas": [
+   "indicativo perfeito"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo",
+   "futuro do indicativo"
+  ],
+  "nota": "fecisti: perfeito do indicativo, 2ª pessoa do singular.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g009"
+  ],
+  "dificuldade": 1.0,
   "sempre": false
  },
  {
@@ -6137,6 +7086,137 @@
   "sempre": true
  },
  {
+  "id": "la-xt033-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Aquam",
+  "frase": "Aquam bibenti? Laniger contra timens:",
+  "ocorrencia": 1,
+  "de": "la-t033",
+  "fonte": "Fedro, Fábulas I,1,6",
+  "lema": "la-p199",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "Aquam: acusativo singular, o objeto de fecisti.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt033-1",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "bibenti",
+  "frase": "Aquam bibenti? Laniger contra timens:",
+  "ocorrencia": 1,
+  "de": "la-t033",
+  "fonte": "Fedro, Fábulas I,1,6",
+  "lema": "la-p200",
+  "pt": "particípio presente",
+  "aceitas": [
+   "participio presente"
+  ],
+  "distratores": [
+   "particípio perfeito",
+   "presente do indicativo",
+   "infinitivo",
+   "imperativo"
+  ],
+  "nota": "bibenti: particípio presente, dativo masculino singular, concorda com mihi: a mim, que bebo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g019"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt033-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Laniger",
+  "frase": "Aquam bibenti? Laniger contra timens:",
+  "ocorrencia": 1,
+  "de": "la-t033",
+  "fonte": "Fedro, Fábulas I,1,6",
+  "lema": "la-p201",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "Laniger: nominativo masculino singular, o sujeito: o que tem lã, o cordeiro.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt033-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "timens",
+  "frase": "Aquam bibenti? Laniger contra timens:",
+  "ocorrencia": 1,
+  "de": "la-t033",
+  "fonte": "Fedro, Fábulas I,1,6",
+  "lema": "la-p203",
+  "pt": "particípio presente",
+  "aceitas": [
+   "participio presente"
+  ],
+  "distratores": [
+   "particípio perfeito",
+   "presente do indicativo",
+   "infinitivo",
+   "imperativo"
+  ],
+  "nota": "timens: particípio presente, nominativo masculino singular, temendo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g019"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
   "id": "la-xt034-1",
   "tipo": "forma",
   "familia": "verbo",
@@ -6166,6 +7246,70 @@
    "la-g007"
   ],
   "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt034-2",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "quaeso",
+  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "ocorrencia": 1,
+  "de": "la-t034",
+  "fonte": "Fedro, Fábulas I,1,7",
+  "lema": "la-p204",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "quaeso: presente do indicativo, 1ª pessoa do singular, por favor.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt034-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "facere",
+  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "ocorrencia": 1,
+  "de": "la-t034",
+  "fonte": "Fedro, Fábulas I,1,7",
+  "lema": "la-p165",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "distratores": [
+   "imperativo",
+   "imperfeito do subjuntivo",
+   "presente do indicativo",
+   "particípio presente"
+  ],
+  "nota": "facere: infinitivo presente, completa possum.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 0.5,
   "sempre": false
  },
  {
@@ -6201,6 +7345,38 @@
   ],
   "dificuldade": 2.5,
   "sempre": true
+ },
+ {
+  "id": "la-xt034-5",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "quereris",
+  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "ocorrencia": 1,
+  "de": "la-t034",
+  "fonte": "Fedro, Fábulas I,1,7",
+  "lema": "la-p205",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "quereris: presente do indicativo, 2ª pessoa do singular, depoente: te queixas.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
  },
  {
   "id": "la-xt034-6",
@@ -6269,6 +7445,38 @@
   "sempre": true
  },
  {
+  "id": "la-xt035-2",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "decurrit",
+  "frase": "A te decurrit ad meos haustus liquor.",
+  "ocorrencia": 1,
+  "de": "la-t035",
+  "fonte": "Fedro, Fábulas I,1,8",
+  "lema": "la-p206",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "decurrit: presente do indicativo, 3ª pessoa do singular.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
   "id": "la-xt035-4",
   "tipo": "forma",
   "familia": "caso",
@@ -6301,5 +7509,1857 @@
   ],
   "dificuldade": 1.5,
   "sempre": false
+ },
+ {
+  "id": "la-xt035-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "haustus",
+  "frase": "A te decurrit ad meos haustus liquor.",
+  "ocorrencia": 1,
+  "de": "la-t035",
+  "fonte": "Fedro, Fábulas I,1,8",
+  "lema": "la-p207",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "genitivo",
+   "vocativo",
+   "ablativo"
+  ],
+  "nota": "haustus: acusativo plural, para onde.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt035-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "liquor",
+  "frase": "A te decurrit ad meos haustus liquor.",
+  "ocorrencia": 1,
+  "de": "la-t035",
+  "fonte": "Fedro, Fábulas I,1,8",
+  "lema": "la-p208",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "liquor: nominativo singular, o sujeito.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt036-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Arma",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "ocorrencia": 1,
+  "de": "la-t036",
+  "fonte": "Vergílio, Eneida I,1",
+  "lema": "la-p026",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "vocativo",
+   "genitivo"
+  ],
+  "nota": "Arma: acusativo neutro plural, objeto de cano.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt036-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "virum",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "ocorrencia": 1,
+  "de": "la-t036",
+  "fonte": "Vergílio, Eneida I,1",
+  "lema": "la-p027",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "genitivo",
+   "nominativo",
+   "ablativo",
+   "dativo"
+  ],
+  "nota": "virum: acusativo singular, objeto de cano.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt036-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "cano",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "ocorrencia": 1,
+  "de": "la-t036",
+  "fonte": "Vergílio, Eneida I,1",
+  "lema": "la-p029",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "cano: presente do indicativo, 1ª pessoa do singular, quem fala é o poeta.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt036-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "qui",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "ocorrencia": 1,
+  "de": "la-t036",
+  "fonte": "Vergílio, Eneida I,1",
+  "lema": "la-p064",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "ablativo",
+   "vocativo",
+   "acusativo",
+   "genitivo"
+  ],
+  "nota": "qui: nominativo masculino singular, sujeito de venit, no verso 2; retoma virum.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt036-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "primus",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "ocorrencia": 1,
+  "de": "la-t036",
+  "fonte": "Vergílio, Eneida I,1",
+  "lema": "la-p209",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "primus: nominativo masculino singular, concorda com qui: o primeiro.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt036-8",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "oris",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "ocorrencia": 1,
+  "de": "la-t036",
+  "fonte": "Vergílio, Eneida I,1",
+  "lema": "la-p210",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "oris: ablativo plural, de onde: das costas. Vem depois de «ab», preposição com ablativo.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt037-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "fato",
+  "frase": "Italiam, fato profugus, Laviniaque venit",
+  "ocorrencia": 1,
+  "de": "la-t037",
+  "fonte": "Vergílio, Eneida I,2",
+  "lema": "la-p211",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "fato: ablativo singular, a causa: pelo destino.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt037-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "profugus",
+  "frase": "Italiam, fato profugus, Laviniaque venit",
+  "ocorrencia": 1,
+  "de": "la-t037",
+  "fonte": "Vergílio, Eneida I,2",
+  "lema": "la-p212",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "profugus: nominativo masculino singular, concorda com qui: exilado.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt037-5",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "venit",
+  "frase": "Italiam, fato profugus, Laviniaque venit",
+  "ocorrencia": 1,
+  "de": "la-t037",
+  "fonte": "Vergílio, Eneida I,2",
+  "lema": "la-p038",
+  "pt": "perfeito do indicativo",
+  "aceitas": [
+   "indicativo perfeito"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo",
+   "futuro do indicativo"
+  ],
+  "nota": "venit: perfeito do indicativo, 3ª pessoa do singular, o verbo de qui: veio.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g009"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt038-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "litora",
+  "frase": "litora, multum ille et terris iactatus et alto",
+  "ocorrencia": 1,
+  "de": "la-t038",
+  "fonte": "Vergílio, Eneida I,3",
+  "lema": "la-p213",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "litora: acusativo neutro plural, para onde, com Lavinia: às praias lavínias.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt038-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "multum",
+  "frase": "litora, multum ille et terris iactatus et alto",
+  "ocorrencia": 1,
+  "de": "la-t038",
+  "fonte": "Vergílio, Eneida I,3",
+  "lema": "la-p214",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "multum: acusativo neutro singular, como advérbio: muito.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt038-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "ille",
+  "frase": "litora, multum ille et terris iactatus et alto",
+  "ocorrencia": 1,
+  "de": "la-t038",
+  "fonte": "Vergílio, Eneida I,3",
+  "lema": "la-p215",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "ille: nominativo masculino singular, ele, o homem do verso 1.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt038-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "terris",
+  "frase": "litora, multum ille et terris iactatus et alto",
+  "ocorrencia": 1,
+  "de": "la-t038",
+  "fonte": "Vergílio, Eneida I,3",
+  "lema": "la-p096",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "terris: ablativo plural, onde: por terras.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt038-5",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "iactatus",
+  "frase": "litora, multum ille et terris iactatus et alto",
+  "ocorrencia": 1,
+  "de": "la-t038",
+  "fonte": "Vergílio, Eneida I,3",
+  "lema": "la-p216",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "particípio presente",
+   "infinitivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "iactatus: particípio perfeito, nominativo masculino singular, concorda com ille: sacudido.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g014"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt038-7",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "alto",
+  "frase": "litora, multum ille et terris iactatus et alto",
+  "ocorrencia": 1,
+  "de": "la-t038",
+  "fonte": "Vergílio, Eneida I,3",
+  "lema": "la-p217",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "alto: ablativo neutro singular, como nome, o alto-mar: onde.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt039-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "vi",
+  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "ocorrencia": 1,
+  "de": "la-t039",
+  "fonte": "Vergílio, Eneida I,4",
+  "lema": "la-p218",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "vi: ablativo singular, a causa: pela força.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt039-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "superum",
+  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "ocorrencia": 1,
+  "de": "la-t039",
+  "fonte": "Vergílio, Eneida I,4",
+  "lema": "la-p219",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "nominativo",
+   "acusativo",
+   "vocativo",
+   "dativo"
+  ],
+  "nota": "superum: genitivo masculino plural, forma antiga de superorum: dos deuses.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt039-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "saevae",
+  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "ocorrencia": 1,
+  "de": "la-t039",
+  "fonte": "Vergílio, Eneida I,4",
+  "lema": "la-p220",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "vocativo",
+   "ablativo"
+  ],
+  "nota": "saevae: genitivo feminino singular, concorda com Iunonis.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt039-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "memorem",
+  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "ocorrencia": 1,
+  "de": "la-t039",
+  "fonte": "Vergílio, Eneida I,4",
+  "lema": "la-p221",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "memorem: acusativo feminino singular, concorda com iram: que não esquece.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt039-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "iram",
+  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "ocorrencia": 1,
+  "de": "la-t039",
+  "fonte": "Vergílio, Eneida I,4",
+  "lema": "la-p223",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "iram: acusativo singular, com ob: por causa da ira. Vem depois de «ob», preposição com acusativo.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt040-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "multa",
+  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "ocorrencia": 1,
+  "de": "la-t040",
+  "fonte": "Vergílio, Eneida I,5",
+  "lema": "la-p214",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "vocativo",
+   "genitivo"
+  ],
+  "nota": "multa: acusativo neutro plural, objeto de passus: muitas coisas.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt040-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "bello",
+  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "ocorrencia": 1,
+  "de": "la-t040",
+  "fonte": "Vergílio, Eneida I,5",
+  "lema": "la-p157",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "bello: ablativo singular, onde: na guerra.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt040-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "passus",
+  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "ocorrencia": 1,
+  "de": "la-t040",
+  "fonte": "Vergílio, Eneida I,5",
+  "lema": "la-p225",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "particípio presente",
+   "infinitivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "passus: particípio perfeito, nominativo masculino singular, de depoente, sentido ativo: tendo sofrido.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g014"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt040-6",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "conderet",
+  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "ocorrencia": 1,
+  "de": "la-t040",
+  "fonte": "Vergílio, Eneida I,5",
+  "lema": "la-p226",
+  "pt": "imperfeito do subjuntivo",
+  "aceitas": [
+   "subjuntivo imperfeito"
+  ],
+  "distratores": [
+   "infinitivo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo"
+  ],
+  "nota": "conderet: imperfeito do subjuntivo, 3ª pessoa do singular, até que fundasse.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g017"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt040-7",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "urbem",
+  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "ocorrencia": 1,
+  "de": "la-t040",
+  "fonte": "Vergílio, Eneida I,5",
+  "lema": "la-p227",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "urbem: acusativo singular, objeto de conderet.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt041-0",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "inferret",
+  "frase": "inferretque deos Latio, genus unde Latinum,",
+  "ocorrencia": 1,
+  "de": "la-t041",
+  "fonte": "Vergílio, Eneida I,6",
+  "lema": "la-p195",
+  "pt": "imperfeito do subjuntivo",
+  "aceitas": [
+   "subjuntivo imperfeito"
+  ],
+  "distratores": [
+   "infinitivo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo"
+  ],
+  "nota": "inferret: imperfeito do subjuntivo, 3ª pessoa do singular, ainda com dum: e levasse.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g017"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt041-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "deos",
+  "frase": "inferretque deos Latio, genus unde Latinum,",
+  "ocorrencia": 1,
+  "de": "la-t041",
+  "fonte": "Vergílio, Eneida I,6",
+  "lema": "la-p001",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "deos: acusativo plural, objeto de inferret: os deuses de Troia.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt041-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "genus",
+  "frase": "inferretque deos Latio, genus unde Latinum,",
+  "ocorrencia": 1,
+  "de": "la-t041",
+  "fonte": "Vergílio, Eneida I,6",
+  "lema": "la-p228",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "genus: nominativo singular, o sujeito; o verbo fica subentendido.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt042-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "patres",
+  "frase": "Albanique patres, atque altae moenia Romae.",
+  "ocorrencia": 1,
+  "de": "la-t042",
+  "fonte": "Vergílio, Eneida I,7",
+  "lema": "la-p072",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "patres: nominativo plural, sujeito, como genus: os antepassados.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt042-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "altae",
+  "frase": "Albanique patres, atque altae moenia Romae.",
+  "ocorrencia": 1,
+  "de": "la-t042",
+  "fonte": "Vergílio, Eneida I,7",
+  "lema": "la-p217",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "vocativo",
+   "ablativo"
+  ],
+  "nota": "altae: genitivo feminino singular, concorda com Romae.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt042-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "moenia",
+  "frase": "Albanique patres, atque altae moenia Romae.",
+  "ocorrencia": 1,
+  "de": "la-t042",
+  "fonte": "Vergílio, Eneida I,7",
+  "lema": "la-p231",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "moenia: nominativo plural, sujeito, como genus.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt043-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Musa",
+  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "ocorrencia": 1,
+  "de": "la-t043",
+  "fonte": "Vergílio, Eneida I,8",
+  "lema": "la-p232",
+  "pt": "vocativo",
+  "aceitas": [
+   "caso vocativo",
+   "voc"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "acusativo",
+   "genitivo"
+  ],
+  "nota": "Musa: vocativo singular, a quem se fala.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g002"
+  ],
+  "dificuldade": 3.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt043-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "mihi",
+  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "ocorrencia": 1,
+  "de": "la-t043",
+  "fonte": "Vergílio, Eneida I,8",
+  "lema": "la-p004",
+  "pt": "dativo",
+  "aceitas": [
+   "caso dativo",
+   "dat"
+  ],
+  "distratores": [
+   "ablativo",
+   "genitivo",
+   "nominativo",
+   "acusativo"
+  ],
+  "nota": "mihi: dativo singular, a quem: a mim.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g005"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt043-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "causas",
+  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "ocorrencia": 1,
+  "de": "la-t043",
+  "fonte": "Vergílio, Eneida I,8",
+  "lema": "la-p194",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "causas: acusativo plural, objeto de memora.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt043-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "memora",
+  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "ocorrencia": 1,
+  "de": "la-t043",
+  "fonte": "Vergílio, Eneida I,8",
+  "lema": "la-p233",
+  "pt": "imperativo",
+  "aceitas": [
+   "imperativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "infinitivo",
+   "presente do subjuntivo",
+   "futuro do indicativo"
+  ],
+  "nota": "memora: imperativo presente, 2ª pessoa do singular, lembra, conta.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g011"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt043-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "quo",
+  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "ocorrencia": 1,
+  "de": "la-t043",
+  "fonte": "Vergílio, Eneida I,8",
+  "lema": "la-p236",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "quo: ablativo neutro singular, interrogativo, concorda com numine: qual.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt043-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "numine",
+  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "ocorrencia": 1,
+  "de": "la-t043",
+  "fonte": "Vergílio, Eneida I,8",
+  "lema": "la-p234",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "numine: ablativo singular, com laeso, ablativo absoluto.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt043-6",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "laeso",
+  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "ocorrencia": 1,
+  "de": "la-t043",
+  "fonte": "Vergílio, Eneida I,8",
+  "lema": "la-p235",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "particípio presente",
+   "infinitivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "laeso: particípio perfeito, ablativo neutro singular, com numine: tendo sido ofendido.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g014"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt044-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "quid",
+  "frase": "quidve dolens, regina deum tot volvere casus",
+  "ocorrencia": 1,
+  "de": "la-t044",
+  "fonte": "Vergílio, Eneida I,9",
+  "lema": "la-p236",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "quid: acusativo neutro singular, de quê.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt044-2",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "dolens",
+  "frase": "quidve dolens, regina deum tot volvere casus",
+  "ocorrencia": 1,
+  "de": "la-t044",
+  "fonte": "Vergílio, Eneida I,9",
+  "lema": "la-p238",
+  "pt": "particípio presente",
+  "aceitas": [
+   "participio presente"
+  ],
+  "distratores": [
+   "particípio perfeito",
+   "presente do indicativo",
+   "infinitivo",
+   "imperativo"
+  ],
+  "nota": "dolens: particípio presente, nominativo feminino singular, concorda com regina: ressentida.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g019"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt044-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "regina",
+  "frase": "quidve dolens, regina deum tot volvere casus",
+  "ocorrencia": 1,
+  "de": "la-t044",
+  "fonte": "Vergílio, Eneida I,9",
+  "lema": "la-p172",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "ablativo",
+   "acusativo",
+   "genitivo"
+  ],
+  "nota": "regina: nominativo singular, sujeito de impulerit, no verso 11.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt044-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "deum",
+  "frase": "quidve dolens, regina deum tot volvere casus",
+  "ocorrencia": 1,
+  "de": "la-t044",
+  "fonte": "Vergílio, Eneida I,9",
+  "lema": "la-p001",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "acusativo",
+   "dativo",
+   "nominativo",
+   "ablativo"
+  ],
+  "nota": "deum: genitivo plural, forma antiga de deorum: dos deuses.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt044-6",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "volvere",
+  "frase": "quidve dolens, regina deum tot volvere casus",
+  "ocorrencia": 1,
+  "de": "la-t044",
+  "fonte": "Vergílio, Eneida I,9",
+  "lema": "la-p240",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "perfeito do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "volvere: infinitivo presente, depende de impulerit: a passar por.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 3.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt044-7",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "casus",
+  "frase": "quidve dolens, regina deum tot volvere casus",
+  "ocorrencia": 1,
+  "de": "la-t044",
+  "fonte": "Vergílio, Eneida I,9",
+  "lema": "la-p241",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "genitivo",
+   "vocativo",
+   "ablativo"
+  ],
+  "nota": "casus: acusativo plural, objeto de volvere: as desgraças.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt045-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "insignem",
+  "frase": "insignem pietate virum, tot adire labores",
+  "ocorrencia": 1,
+  "de": "la-t045",
+  "fonte": "Vergílio, Eneida I,10",
+  "lema": "la-p242",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "insignem: acusativo masculino singular, concorda com virum.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false
+ },
+ {
+  "id": "la-xt045-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "pietate",
+  "frase": "insignem pietate virum, tot adire labores",
+  "ocorrencia": 1,
+  "de": "la-t045",
+  "fonte": "Vergílio, Eneida I,10",
+  "lema": "la-p243",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "pietate: ablativo singular, em quê: notável pela piedade.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt045-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "virum",
+  "frase": "insignem pietate virum, tot adire labores",
+  "ocorrencia": 1,
+  "de": "la-t045",
+  "fonte": "Vergílio, Eneida I,10",
+  "lema": "la-p027",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "genitivo",
+   "nominativo",
+   "ablativo",
+   "dativo"
+  ],
+  "nota": "virum: acusativo singular, objeto de impulerit, no verso 11.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt045-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "adire",
+  "frase": "insignem pietate virum, tot adire labores",
+  "ocorrencia": 1,
+  "de": "la-t045",
+  "fonte": "Vergílio, Eneida I,10",
+  "lema": "la-p244",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "distratores": [
+   "imperativo",
+   "imperfeito do subjuntivo",
+   "presente do indicativo",
+   "particípio presente"
+  ],
+  "nota": "adire: infinitivo presente, depende de impulerit: a enfrentar.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false
+ },
+ {
+  "id": "la-xt045-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "labores",
+  "frase": "insignem pietate virum, tot adire labores",
+  "ocorrencia": 1,
+  "de": "la-t045",
+  "fonte": "Vergílio, Eneida I,10",
+  "lema": "la-p245",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "labores: acusativo plural, objeto de adire.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt046-0",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "impulerit",
+  "frase": "impulerit. Tantaene animis caelestibus irae?",
+  "ocorrencia": 1,
+  "de": "la-t046",
+  "fonte": "Vergílio, Eneida I,11",
+  "lema": "la-p246",
+  "pt": "perfeito do subjuntivo",
+  "aceitas": [
+   "subjuntivo perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do subjuntivo",
+   "futuro do indicativo"
+  ],
+  "nota": "impulerit: perfeito do subjuntivo, 3ª pessoa do singular, na pergunta indireta: levou.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g018"
+  ],
+  "dificuldade": 3.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt046-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Tantae",
+  "frase": "impulerit. Tantaene animis caelestibus irae?",
+  "ocorrencia": 1,
+  "de": "la-t046",
+  "fonte": "Vergílio, Eneida I,11",
+  "lema": "la-p247",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "genitivo",
+   "dativo",
+   "acusativo"
+  ],
+  "nota": "Tantae: nominativo feminino plural, concorda com irae.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
+ },
+ {
+  "id": "la-xt046-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "animis",
+  "frase": "impulerit. Tantaene animis caelestibus irae?",
+  "ocorrencia": 1,
+  "de": "la-t046",
+  "fonte": "Vergílio, Eneida I,11",
+  "lema": "la-p249",
+  "pt": "dativo",
+  "aceitas": [
+   "caso dativo",
+   "dat"
+  ],
+  "distratores": [
+   "ablativo",
+   "genitivo",
+   "nominativo",
+   "acusativo"
+  ],
+  "nota": "animis: dativo plural, de posse: os ânimos celestes têm.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g005"
+  ],
+  "dificuldade": 3.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt046-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "caelestibus",
+  "frase": "impulerit. Tantaene animis caelestibus irae?",
+  "ocorrencia": 1,
+  "de": "la-t046",
+  "fonte": "Vergílio, Eneida I,11",
+  "lema": "la-p250",
+  "pt": "dativo",
+  "aceitas": [
+   "caso dativo",
+   "dat"
+  ],
+  "distratores": [
+   "ablativo",
+   "genitivo",
+   "nominativo",
+   "acusativo"
+  ],
+  "nota": "caelestibus: dativo plural, concorda com animis.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g005"
+  ],
+  "dificuldade": 4.5,
+  "sempre": true
+ },
+ {
+  "id": "la-xt046-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "irae",
+  "frase": "impulerit. Tantaene animis caelestibus irae?",
+  "ocorrencia": 1,
+  "de": "la-t046",
+  "fonte": "Vergílio, Eneida I,11",
+  "lema": "la-p223",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "genitivo",
+   "dativo",
+   "acusativo"
+  ],
+  "nota": "irae: nominativo plural, sujeito; o verbo (sunt) fica subentendido.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true
  }
 ]

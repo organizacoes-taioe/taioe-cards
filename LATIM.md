@@ -52,6 +52,17 @@ contrato do latim; o que for regra de card entra no manual quando o piloto fecha
     gabarito precisa prever mais ordens de palavras.
   - cards de forma: 192.
 
+**Pedido do Gere (24/10): o começo da *Eneida*, e texto longo em partes pequenas**, que a pessoa
+aprende uma por vez. Contraproposta aceita no mesmo dia («Pode seguir com todas as recomendações»):
+- ✔ D18. O proêmio inteiro, I,1–11, em duas partes: 1–7 (a primeira frase) e 8–11 (a invocação à Musa).
+- ✔ D19. As partes em sequência: só a parte da vez (a primeira ainda não lida) pode ser escolhida;
+  ao fim de uma, o aviso oferece «Aprender a parte 2».
+- ✔ D20. Tamanho da parte, para todo texto longo, em qualquer língua: de 4 a 10 versos (na prosa,
+  de 50 a 120 palavras), sempre fechando a frase.
+- ✔ D21. Na Biblioteca, só os versos que já têm cards, crescendo parte a parte.
+- **O que saiu** (§12): 149 cards (42 palavras, 4 conceitos, 11 trechos, 38 frases de uso, 54 de
+  forma), mais 39 cards de forma que faltavam à leva 2, o mecanismo das partes no motor e no app, e a página na Biblioteca.
+
 ## 1. As decisões (como foram propostas)
 
 ★ = a recomendação.
@@ -540,6 +551,8 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
   escolhe a frase confere; consertar o índice antes da próxima leva.
 - Falta: a matriz de cobertura no build, a simulação do motor com progresso inventado, o teste das
   traduções às cegas por cinco agentes.
+- O `fonte/varrer-motor.js` não roda no latim (quebra em `campo.certa`, já antes de 24/10): no
+  latim, a conferência das frases é o `cache/levas/usos-c/conferir-lote.js` e a tradução às cegas.
 
 ## 11. Etapas
 
@@ -552,6 +565,7 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
 | 3b | card de forma (§3.6) e o aviso de pergunta trocada | 22/10 (infra PR #16) |
 | 3c | leva 2: primeiras frases menos religiosas, Catulo 85, Fedro I,1, Regina caeli, corpus clássico, 89 frases de uso (D11–D13) | 23/10 (biblioteca PR #22) |
 | 3d | card de contraste (§3.7), 10 conjuntos e 27 cards dos itens 1 a 3 | 22/10 (infra PR #17) |
+| 3e | *Eneida* I,1–11 em duas partes, e as partes de texto longo (D18–D21, §12) | 24/10 |
 | 4 | os textos em domínio público, nível a nível, em levas de ~100 cards, com a matriz a cada leva; metade fora da Bíblia e da liturgia (§7) | — |
 | 5 | os textos da NV, com a resposta da LEV (ou na Clementina) | — |
 | depois | pronúncia eclesiástica; `la-es` e `la-en`; prosa com «Quero aprender o resto» | — |
@@ -560,3 +574,37 @@ Ordem de grandeza (estimativa, o piloto mede): os 36 textos dão umas 1.200 pala
 trechos e umas 900 frases de uso, mais 40 primeiras frases e 50 conceitos — perto de 2.700 fichas, o
 maior trabalho de conteúdo da Taioé até aqui. Pelo custo dos glossários da Biblioteca (~150 mil
 tokens por poema curto), passa de dezenas de milhões de tokens, quase todos em subagentes baratos.
+
+## 12. A *Eneida* em partes (feito em 24/10)
+
+- **Texto longo em partes** (D19, D20; `PLANO.md` §9.6): cada parte é um texto do app com `obra`
+  (`vergilio/eneida`), `parte` (1, 2…) e `trecho` («I, 1–7»), em `TEXTOS` do `fonte/latim/textos.py`;
+  ids `vergilio/eneida-parte-N`, título «Aeneis» (latino, como os outros), e as duas apontam para a
+  mesma página da Biblioteca, `/biblioteca/vergilio/eneida/`. O `linha` de cada trecho conta dentro da
+  parte (1 a 7; 1 a 4); a `fonte` diz o verso da obra (Eneida I,8).
+- **A leva** (ids `la-g017`–`g020`, `la-p209`–`p250`, `la-t036`–`t046`, `la-u226`–`u263`):
+  `12-conceitos-2` (imperfeito e perfeito do subjuntivo, particípio presente e o ablativo absoluto,
+  este numa família nova, `construcao`: «De que construção faz parte a palavra destacada?», porque a
+  pergunta pelo caso faria «ablativo» parecer erro); `13-palavras-3` (42; sem card os nomes próprios
+  e *Lavinius*, *Latinus*, *Albanus*, com a definição em `SEM_CARD`; *-ne* declara `homografos` com
+  *ne*); `14-trechos-3` (11, um por verso; a leva em `cache/levas/trechos-3.json`); `15-usos-d` (38,
+  16 da Vulgata e 22 clássicas; sem frase boa no corpus: *memoro*, *volvo*, *insignis*, *pietas*);
+  `07-formas` (54 da Eneida).
+- **Conferência**: anotação pelo `conferir.py`; tradução às cegas por um agente (4 traduções por frase,
+  e a escolha entre as 5 alternativas): 80 de 196 passaram de primeira; todas as certas entraram no
+  gabarito (196/196). Pelo que ele apontou: «costas» (dorso) virou «praias», «às lavínias» virou «às de
+  Lavínio», «raça romana» virou «povo romano», e saíram quatro alternativas erradas que se defendiam
+  («estás de bom ânimo», «vence» gnômico, «tantos homens, quantas causas», «Lia sepulta»).
+- **Ferramentas, de passagem**: o `cards_de_forma.py` lia só `02-palavras` e `01-conceitos` (as palavras
+  da leva 2 ficavam sem card de forma: entraram 39 agora) e passa a ler todas as levas; o `montar.py`
+  lê os conceitos de todas as levas; o `formas.separar` não separava o *-ve* (a chave troca v por u);
+  o `conferir.py` aceita a enclítica colada em nome próprio sem análise (*Laviniaque*); o `buscar.py`
+  deixa a frase de uso de uma parte usar as palavras das partes anteriores.
+- **Biblioteca** (D21): `edicoes/lingua-original/eneida/` («Aeneis», «Liber I», 11 versos, a parte 2
+  depois de uma linha em branco), autor Vergílio. O glossário sai da anotação dos trechos:
+  `python -I fonte/latim/glossario_eneida.py fonte/cards/la ../biblioteca/edicoes/lingua-original/eneida/glossario.json`
+  (as definições traduzidas do en.wiktionary ficam em `DEF`, no script).
+- **Próxima parte**: o livro I segue pelas pausas de sentido (12–18, 19–22, 23–28, 29–33…); cada parte
+  nova é um texto a mais em `TEXTOS` (parte 3…), trechos com `texto` dela, as palavras novas, as frases
+  de uso, o glossário refeito e a linha nova na Biblioteca.
+

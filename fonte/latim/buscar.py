@@ -93,10 +93,20 @@ def main():
         for p in f.get('palavras', []):
             if 'c' in p:
                 formas_vistas.setdefault(p['c'], set()).add(latim.chave(p['w']))
+    # o texto longo em partes (PLANO.md §9.6): quem chega à parte 2 já passou pela 1, então a frase
+    # de uso de uma palavra da parte n pode usar as palavras das partes 1 a n
     textos_do_lema = {}
     for t, ids in por_texto.items():
         for i in ids:
             textos_do_lema.setdefault(i, set()).add(t)
+    meta = {}
+    for arq in (AQUI.parent / 'textos' / 'la').glob('*.json'):
+        t = json.loads(arq.read_text(encoding='utf-8'))
+        if t.get('obra'):
+            meta[t['id']] = (t['obra'], t['parte'])
+    por_texto = {t: ids | set().union(*[por_texto[u] for u, (o, m) in meta.items()
+                                        if t in meta and o == meta[t][0] and m < meta[t][1] and u in por_texto])
+                 for t, ids in por_texto.items()}
     ja_cards = {latim.chave(f['la']) for f in frases}
 
     cand = {c['id']: [] for c in palavras}

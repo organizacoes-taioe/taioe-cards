@@ -1,0 +1,355 @@
+[
+ {
+  "id": "la-g017",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "imperfeito do subjuntivo",
+  "pt": "imperfeito do subjuntivo",
+  "aceitas": [
+   "imperfeito do subjuntivo",
+   "imperfeito subjuntivo",
+   "preterito imperfeito do subjuntivo",
+   "imperfeito do conjuntivo"
+  ],
+  "distratores": [
+   "presente do subjuntivo",
+   "imperfeito do indicativo",
+   "perfeito do subjuntivo",
+   "infinitivo"
+  ],
+  "nota": "O subjuntivo de uma ação no passado, que o português diz com «fosse», «fizesse»: é o infinitivo presente com as terminações -m, -s, -t, -mus, -tis, -nt (condere → conderet, «fundasse»; esse → esset, «fosse»). Vem depois de ut (para que), de cum (como, quando), de dum (até que) e na condição irreal.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "multa quoque et bello passus, dum conderet urbem,",
+    "w": "conderet",
+    "exp": "conderet: imperfeito do subjuntivo de condo (condere + -t), com dum: «até que fundasse».",
+    "fonte": "Vergílio, Eneida I,5",
+    "distratores": [
+     "infinitivo",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "mais-que-perfeito do indicativo"
+    ]
+   },
+   {
+    "la": "Non erat ille lux, sed ut testimonium perhiberet de lumine.",
+    "w": "perhiberet",
+    "exp": "perhiberet: imperfeito do subjuntivo de perhibeo, com ut: «para que desse testemunho».",
+    "fonte": "Jo 1,8",
+    "distratores": [
+     "infinitivo",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "mais-que-perfeito do indicativo"
+    ]
+   },
+   {
+    "la": "inferretque deos Latio, genus unde Latinum,",
+    "w": "inferret",
+    "exp": "inferret: imperfeito do subjuntivo de infero (inferre + -t), ainda com dum: «e levasse».",
+    "fonte": "Vergílio, Eneida I,6",
+    "distratores": [
+     "infinitivo",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "mais-que-perfeito do indicativo"
+    ]
+   },
+   {
+    "la": "Surrexerunt ergo vesperi, ut venirent ad castra Syriae.",
+    "w": "venirent",
+    "exp": "venirent: imperfeito do subjuntivo de venio (venire + -nt), com ut: «para que viessem».",
+    "fonte": "2Rs 7,5",
+    "distratores": [
+     "infinitivo",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "mais-que-perfeito do indicativo"
+    ]
+   },
+   {
+    "la": "Rursumque misit Saul nuntios ut viderent David, dicens:",
+    "w": "viderent",
+    "exp": "viderent: imperfeito do subjuntivo de video (videre + -nt), com ut: «para que vissem».",
+    "fonte": "1Sm 19,15",
+    "distratores": [
+     "infinitivo",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "mais-que-perfeito do indicativo"
+    ]
+   },
+   {
+    "la": "cum esset annorum centum viginti trium.",
+    "w": "esset",
+    "exp": "esset: imperfeito do subjuntivo de sum (esse + -t), com cum: «quando tinha (era de) cento e vinte e três anos».",
+    "fonte": "Nm 33,39",
+    "distratores": [
+     "infinitivo",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "mais-que-perfeito do indicativo"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "la-g018",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "perfeito do subjuntivo",
+  "pt": "perfeito do subjuntivo",
+  "aceitas": [
+   "perfeito do subjuntivo",
+   "perfeito subjuntivo",
+   "preterito perfeito do subjuntivo",
+   "perfeito do conjuntivo"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do subjuntivo",
+   "futuro do indicativo"
+  ],
+  "nota": "O tema do perfeito com -erim, -eris, -erit, -erimus, -eritis, -erint (impuli → impulerit). Aparece na pergunta indireta sobre o passado («conta-me por que ela levou…») e, com ne, na proibição: ne timueritis, «não temais». Fora a 1ª pessoa do singular, as formas são iguais às do futuro perfeito; quem decide é a frase.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "impulerit. Tantaene animis caelestibus irae?",
+    "w": "impulerit",
+    "exp": "impulerit: perfeito do subjuntivo de impello (impul- + -erit), na pergunta indireta que vem do verso 8: «(por que) levou».",
+    "fonte": "Vergílio, Eneida I,11",
+    "distratores": [
+     "perfeito do indicativo",
+     "presente do subjuntivo",
+     "imperfeito do subjuntivo",
+     "futuro do indicativo"
+    ]
+   },
+   {
+    "la": "vos autem ne timueritis eos.",
+    "w": "timueritis",
+    "exp": "timueritis: perfeito do subjuntivo de timeo (timu- + -eritis), com ne, a proibição: «não os temais».",
+    "fonte": "1Mc 3,22",
+    "distratores": [
+     "perfeito do indicativo",
+     "presente do subjuntivo",
+     "imperfeito do subjuntivo",
+     "futuro do indicativo"
+    ]
+   },
+   {
+    "la": "Vide ne feceris:",
+    "w": "feceris",
+    "exp": "feceris: perfeito do subjuntivo de facio (fec- + -eris), com ne: «olha, não o faças».",
+    "fonte": "Ap 22,9",
+    "distratores": [
+     "perfeito do indicativo",
+     "presente do subjuntivo",
+     "imperfeito do subjuntivo",
+     "futuro do indicativo"
+    ]
+   },
+   {
+    "la": "Quod Deus purificavit, tu commune ne dixeris.",
+    "w": "dixeris",
+    "exp": "dixeris: perfeito do subjuntivo de dico (dix- + -eris), com ne: «não chames (de) impuro».",
+    "fonte": "At 10,15",
+    "distratores": [
+     "perfeito do indicativo",
+     "presente do subjuntivo",
+     "imperfeito do subjuntivo",
+     "futuro do indicativo"
+    ]
+   },
+   {
+    "la": "Altiora te ne quaesieris,",
+    "w": "quaesieris",
+    "exp": "quaesieris: perfeito do subjuntivo de quaero (quaesi- + -eris), com ne: «não procures».",
+    "fonte": "Eclo 3,22",
+    "distratores": [
+     "perfeito do indicativo",
+     "presente do subjuntivo",
+     "imperfeito do subjuntivo",
+     "futuro do indicativo"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "la-g019",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "particípio presente",
+  "pt": "particípio presente",
+  "aceitas": [
+   "participio presente",
+   "participio do presente",
+   "participio ativo",
+   "participio presente ativo"
+  ],
+  "distratores": [
+   "particípio perfeito",
+   "infinitivo",
+   "presente do indicativo",
+   "imperativo"
+  ],
+  "nota": "Adjetivo formado do verbo, de sentido ativo, que o português diz com o gerúndio: dolens, «sentindo dor»; timens, «temendo». Termina em -ns no nominativo (dolens, clamans, audiens) e se declina como a 3ª declinação: dolentem, clamantis, timenti. Como nome, é quem faz a ação: audentes, «os que ousam».",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "quidve dolens, regina deum tot volvere casus",
+    "w": "dolens",
+    "exp": "dolens: particípio presente de doleo, concorda com regina: «ressentida», «sentindo dor».",
+    "fonte": "Vergílio, Eneida I,9",
+    "distratores": [
+     "particípio perfeito",
+     "presente do indicativo",
+     "infinitivo",
+     "imperativo"
+    ]
+   },
+   {
+    "la": "Aquam bibenti? Laniger contra timens:",
+    "w": "timens",
+    "exp": "timens: particípio presente de timeo, concorda com laniger: «temendo».",
+    "fonte": "Fedro, Fábulas I,1,6",
+    "distratores": [
+     "particípio perfeito",
+     "presente do indicativo",
+     "infinitivo",
+     "imperativo"
+    ]
+   },
+   {
+    "la": "Vox clamantis in deserto:",
+    "w": "clamantis",
+    "exp": "clamantis: particípio presente de clamo, no genitivo: «a voz do que clama».",
+    "fonte": "Mt 3,3",
+    "distratores": [
+     "particípio perfeito",
+     "presente do indicativo",
+     "infinitivo",
+     "imperativo"
+    ]
+   },
+   {
+    "la": "Audentes fortuna iuvat.",
+    "w": "Audentes",
+    "exp": "Audentes: particípio presente de audeo, no acusativo plural, como nome: «os que ousam».",
+    "fonte": "Provérbio (Vergílio, Eneida X,284)",
+    "distratores": [
+     "particípio perfeito",
+     "presente do indicativo",
+     "infinitivo",
+     "imperativo"
+    ]
+   },
+   {
+    "la": "omnes portae eius destructae, sacerdotes eius gementes;",
+    "w": "gementes",
+    "exp": "gementes: particípio presente de gemo, concorda com sacerdotes: «gemendo».",
+    "fonte": "Lm 1,4",
+    "distratores": [
+     "particípio perfeito",
+     "presente do indicativo",
+     "infinitivo",
+     "imperativo"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "la-g020",
+  "tipo": "conceito",
+  "familia": "construcao",
+  "la": "ablativo absoluto",
+  "pt": "ablativo absoluto",
+  "aceitas": [
+   "ablativo absoluto"
+  ],
+  "distratores": [
+   "ablativo de causa",
+   "acusativo com infinitivo",
+   "dativo de posse",
+   "ablativo de instrumento"
+  ],
+  "nota": "Um nome e um particípio no ablativo, soltos do resto da frase, que dizem a circunstância: quando, porque ou apesar de quê. Deo volente, «se Deus quiser»; sole orto, «nascido o sol», «ao nascer do sol»; hac re cognita, «sabido isto». O português diz com o particípio solto («feito isso») ou com uma oração («quando o sol nasceu»).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Musa, mihi causas memora, quo numine laeso,",
+    "w": "laeso",
+    "exp": "quo numine laeso: o nome (numine) e o particípio (laeso) no ablativo, soltos da frase: «tendo sido ofendida qual divindade (de Juno)».",
+    "fonte": "Vergílio, Eneida I,8",
+    "distratores": [
+     "ablativo de causa",
+     "acusativo com infinitivo",
+     "dativo de posse",
+     "ablativo de instrumento"
+    ]
+   },
+   {
+    "la": "Iterum revertar ad vos, Deo volente:",
+    "w": "volente",
+    "exp": "Deo volente: o nome e o particípio presente no ablativo: «querendo Deus», «se Deus quiser».",
+    "fonte": "At 18,21",
+    "distratores": [
+     "ablativo de causa",
+     "dativo de posse",
+     "acusativo com infinitivo",
+     "ablativo de lugar"
+    ]
+   },
+   {
+    "la": "Hac re cognita Caesar mittit complures equitum turmas;",
+    "w": "cognita",
+    "exp": "hac re cognita: «sabida esta coisa», «ao saber disso»; o sujeito da frase é outro (Caesar).",
+    "fonte": "César, Guerra das Gálias VII,45,1",
+    "distratores": [
+     "ablativo de instrumento",
+     "acusativo com infinitivo",
+     "dativo de posse",
+     "ablativo de causa"
+    ]
+   },
+   {
+    "la": "sole orto Gracchus in aciem copias educit;",
+    "w": "orto",
+    "exp": "sole orto: «nascido o sol», «ao nascer do sol».",
+    "fonte": "Lívio, História de Roma XXIV,15,1",
+    "distratores": [
+     "ablativo de lugar",
+     "acusativo com infinitivo",
+     "dativo de posse",
+     "ablativo de causa"
+    ]
+   },
+   {
+    "la": "pontifices, augures Romulo regnante nulli erant;",
+    "w": "regnante",
+    "exp": "Romulo regnante: «reinando Rômulo», «no reinado de Rômulo».",
+    "fonte": "Lívio, História de Roma IV,4,2",
+    "distratores": [
+     "ablativo de causa",
+     "dativo de posse",
+     "acusativo com infinitivo",
+     "ablativo de instrumento"
+    ]
+   }
+  ]
+ }
+]

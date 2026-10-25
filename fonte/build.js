@@ -736,7 +736,9 @@ for (const { idioma, cards } of baralhos) {
    até 10 palavras latinas e 120 letras de resposta. O card de conceito pede família e exemplos. */
 const chaveLatina = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
   .replace(/^-/, '').replace(/j/g, 'i').replace(/v/g, 'u');
-const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz'];
+/* «construcao» (desde 24/10, o ablativo absoluto da Eneida): a pergunta é de que construção a
+   palavra destacada faz parte, e não o caso dela, que seria só «ablativo» */
+const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz', 'construcao'];
 for (const { idioma, cards } of baralhos) {
   if (idioma !== 'la') continue;
   const PORID = new Map(cards.map(c => [c.id, c]));
@@ -881,12 +883,33 @@ for (const b of baralhos) {
         else if (c.texto !== txt.id || c.la !== l.t) erros.push(onde + ': a linha ' + (i + 1) + ' não bate com o trecho ' + c.id);
       });
     }
+    if (txt.obra !== undefined && (typeof txt.obra !== 'string' || !Number.isInteger(txt.parte) || txt.parte < 1 || !txt.trecho)) {
+      erros.push(onde + ': a parte de uma obra precisa de «obra», «parte» (1, 2…) e «trecho» (I, 1–7)');
+    }
     txt.pronto = !falta.length;
     if (falta.length) {
       b.pendentesDeTexto++;
       const unicos = [...new Set(falta)];
       avisos.push(onde + ': ainda não vai ao app — ' + unicos.length + ' pendência(s): ' +
         unicos.slice(0, 10).join(', ') + (unicos.length > 10 ? ', …' : ''));
+    }
+  }
+}
+
+/* ── as partes de um texto longo (PLANO.md §9.6) ──
+   Cada parte é um texto com a mesma «obra»; as partes vão de 1 a n, sem buraco, com o mesmo
+   título, autor e endereço na Biblioteca, e a pessoa as aprende uma por vez, em sequência. */
+for (const b of baralhos) {
+  const obras = new Map();
+  for (const txt of b.textos || []) if (typeof txt.obra === 'string') (obras.get(txt.obra) || obras.set(txt.obra, []).get(txt.obra)).push(txt);
+  for (const [obra, partes] of obras) {
+    const ns = partes.map(x => x.parte).sort((x, y) => x - y);
+    if (ns.some((n, i) => n !== i + 1)) erros.push('obra ' + obra + ': as partes não vão de 1 a ' + ns.length + ' (' + ns.join(', ') + ')');
+    for (const campo of ['titulo', 'autor', 'biblioteca']) {
+      if (new Set(partes.map(x => x[campo])).size > 1) erros.push('obra ' + obra + ': as partes têm «' + campo + '» diferente');
+    }
+    if (partes.some(x => !x.pronto) && partes.some(x => x.pronto)) {
+      avisos.push('obra ' + obra + ': nem todas as partes estão prontas; a que vem depois de uma pendente não aparece');
     }
   }
 }
@@ -1246,7 +1269,9 @@ for (const b of baralhos) {
       biblioteca: t.biblioteca, blocos: t.blocos.map(bl => bl.map(l => Object.assign({ t: l.t, p: l.p, requer: l.requer }, l.card ? { card: l.card } : {}))),
       requerTodas: t.requerTodas, destinos };
     if (typeof t.fila === 'number') saida.fila = t.fila;
-    prontos.push({ id: t.id, idioma: t.idioma, tipo: t.tipo, titulo: t.titulo, autor: t.autor, biblioteca: t.biblioteca });
+    if (t.obra) Object.assign(saida, { obra: t.obra, parte: t.parte, trecho: t.trecho });
+    prontos.push(Object.assign({ id: t.id, idioma: t.idioma, tipo: t.tipo, titulo: t.titulo, autor: t.autor, biblioteca: t.biblioteca },
+      t.obra ? { obra: t.obra, parte: t.parte, trecho: t.trecho } : {}));
     return saida;
   });
   const pacote = { versao: 3, idioma: b.idioma, total: textos.length, textos };

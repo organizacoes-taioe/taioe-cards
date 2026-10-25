@@ -1,0 +1,455 @@
+{
+ "id": "vergilio/eneida-parte-2",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Aeneis",
+ "autor": "Vergílio",
+ "ano": null,
+ "biblioteca": "/biblioteca/vergilio/eneida/",
+ "ordem": 9,
+ "fonte": "Eneida, livro I, 8–11",
+ "obra": "vergilio/eneida",
+ "parte": 2,
+ "trecho": "I, 8–11",
+ "blocos": [
+  [
+   {
+    "t": "Musa, mihi causas memora, quo numine laeso,",
+    "p": [
+     [
+      "Musa",
+      "musa"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "mihi",
+      "mihi"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "causas",
+      "causas"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "memora",
+      "memora"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "quo",
+      "quo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "numine",
+      "numine"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "laeso",
+      "laeso"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "card": "la-t043"
+   },
+   {
+    "t": "quidve dolens, regina deum tot volvere casus",
+    "p": [
+     [
+      "quidve",
+      "quidve"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dolens",
+      "dolens"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "regina",
+      "regina"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "deum",
+      "deum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tot",
+      "tot"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "volvere",
+      "volvere"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "casus",
+      "casus"
+     ]
+    ],
+    "card": "la-t044"
+   },
+   {
+    "t": "insignem pietate virum, tot adire labores",
+    "p": [
+     [
+      "insignem",
+      "insignem"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "pietate",
+      "pietate"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "virum",
+      "virum"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "tot",
+      "tot#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "adire",
+      "adire"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "labores",
+      "labores"
+     ]
+    ],
+    "card": "la-t045"
+   },
+   {
+    "t": "impulerit. Tantaene animis caelestibus irae?",
+    "p": [
+     [
+      "impulerit",
+      "impulerit"
+     ],
+     [
+      ". ",
+      null
+     ],
+     [
+      "Tantaene",
+      "tantaene"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "animis",
+      "animis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "caelestibus",
+      "caelestibus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "irae",
+      "irae"
+     ],
+     [
+      "?",
+      null
+     ]
+    ],
+    "card": "la-t046"
+   }
+  ]
+ ],
+ "destinos": {
+  "musa": {
+   "lema": "musa",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala",
+   "card": "la-p232",
+   "wiki": "https://en.wiktionary.org/wiki/musa#Latin"
+  },
+  "mihi": {
+   "lema": "ego",
+   "classe": "pronome",
+   "forma": "dativo singular",
+   "funcao": "a quem: a mim",
+   "card": "la-p004",
+   "wiki": "https://en.wiktionary.org/wiki/ego#Latin"
+  },
+  "causas": {
+   "lema": "causa",
+   "classe": "substantivo feminino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de memora",
+   "card": "la-p194",
+   "wiki": "https://en.wiktionary.org/wiki/causa#Latin"
+  },
+  "memora": {
+   "lema": "memoro",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "lembra, conta",
+   "card": "la-p233",
+   "wiki": "https://en.wiktionary.org/wiki/memoro#Latin"
+  },
+  "quo": {
+   "lema": "quis",
+   "classe": "pronome",
+   "forma": "ablativo neutro singular",
+   "funcao": "interrogativo, concorda com numine: qual",
+   "card": "la-p236",
+   "wiki": "https://en.wiktionary.org/wiki/quis#Latin"
+  },
+  "numine": {
+   "lema": "numen",
+   "classe": "substantivo neutro",
+   "forma": "ablativo singular",
+   "funcao": "com laeso, ablativo absoluto",
+   "card": "la-p234",
+   "wiki": "https://en.wiktionary.org/wiki/numen#Latin"
+  },
+  "laeso": {
+   "lema": "laedo",
+   "classe": "verbo",
+   "forma": "particípio perfeito, ablativo neutro singular",
+   "funcao": "com numine: tendo sido ofendido",
+   "card": "la-p235",
+   "wiki": "https://en.wiktionary.org/wiki/laedo#Latin"
+  },
+  "quidve": {
+   "partes": [
+    {
+     "lema": "quis",
+     "classe": "pronome",
+     "forma": "acusativo neutro singular",
+     "funcao": "de quê",
+     "card": "la-p236",
+     "wiki": "https://en.wiktionary.org/wiki/quis#Latin"
+    },
+    {
+     "lema": "-ve",
+     "classe": "conjunção",
+     "card": "la-p237",
+     "wiki": "https://en.wiktionary.org/wiki/-ve#Latin"
+    }
+   ]
+  },
+  "dolens": {
+   "lema": "doleo",
+   "classe": "verbo",
+   "forma": "particípio presente, nominativo feminino singular",
+   "funcao": "concorda com regina: ressentida",
+   "card": "la-p238",
+   "wiki": "https://en.wiktionary.org/wiki/doleo#Latin"
+  },
+  "regina": {
+   "lema": "regina",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de impulerit, no verso 11",
+   "card": "la-p172",
+   "wiki": "https://en.wiktionary.org/wiki/regina#Latin"
+  },
+  "deum": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "genitivo plural",
+   "funcao": "forma antiga de deorum: dos deuses",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "tot": {
+   "lema": "tot",
+   "classe": "adjetivo",
+   "funcao": "concorda com casus",
+   "card": "la-p239",
+   "wiki": "https://en.wiktionary.org/wiki/tot#Latin"
+  },
+  "volvere": {
+   "lema": "volvo",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "depende de impulerit: a passar por",
+   "card": "la-p240",
+   "wiki": "https://en.wiktionary.org/wiki/volvo#Latin"
+  },
+  "casus": {
+   "lema": "casus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de volvere: as desgraças",
+   "card": "la-p241",
+   "wiki": "https://en.wiktionary.org/wiki/casus#Latin"
+  },
+  "insignem": {
+   "lema": "insignis",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino singular",
+   "funcao": "concorda com virum",
+   "card": "la-p242",
+   "wiki": "https://en.wiktionary.org/wiki/insignis#Latin"
+  },
+  "pietate": {
+   "lema": "pietas",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "em quê: notável pela piedade",
+   "card": "la-p243",
+   "wiki": "https://en.wiktionary.org/wiki/pietas#Latin"
+  },
+  "virum": {
+   "lema": "vir",
+   "classe": "substantivo masculino",
+   "forma": "acusativo singular",
+   "funcao": "objeto de impulerit, no verso 11",
+   "card": "la-p027",
+   "wiki": "https://en.wiktionary.org/wiki/vir#Latin"
+  },
+  "tot#2": {
+   "lema": "tot",
+   "classe": "adjetivo",
+   "funcao": "concorda com labores",
+   "card": "la-p239",
+   "wiki": "https://en.wiktionary.org/wiki/tot#Latin"
+  },
+  "adire": {
+   "lema": "adeo",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "depende de impulerit: a enfrentar",
+   "card": "la-p244",
+   "wiki": "https://en.wiktionary.org/wiki/adeo#Latin"
+  },
+  "labores": {
+   "lema": "labor",
+   "classe": "substantivo masculino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de adire",
+   "card": "la-p245",
+   "wiki": "https://en.wiktionary.org/wiki/labor#Latin"
+  },
+  "impulerit": {
+   "lema": "impello",
+   "classe": "verbo",
+   "forma": "perfeito do subjuntivo, 3ª pessoa do singular",
+   "funcao": "na pergunta indireta: levou",
+   "card": "la-p246",
+   "wiki": "https://en.wiktionary.org/wiki/impello#Latin"
+  },
+  "tantaene": {
+   "partes": [
+    {
+     "lema": "tantus",
+     "classe": "adjetivo",
+     "forma": "nominativo feminino plural",
+     "funcao": "concorda com irae",
+     "card": "la-p247",
+     "wiki": "https://en.wiktionary.org/wiki/tantus#Latin"
+    },
+    {
+     "lema": "-ne",
+     "classe": "advérbio",
+     "funcao": "faz a pergunta",
+     "card": "la-p248",
+     "wiki": "https://en.wiktionary.org/wiki/-ne#Latin"
+    }
+   ]
+  },
+  "animis": {
+   "lema": "animus",
+   "classe": "substantivo masculino",
+   "forma": "dativo plural",
+   "funcao": "de posse: os ânimos celestes têm",
+   "card": "la-p249",
+   "wiki": "https://en.wiktionary.org/wiki/animus#Latin"
+  },
+  "caelestibus": {
+   "lema": "caelestis",
+   "classe": "adjetivo",
+   "forma": "dativo plural",
+   "funcao": "concorda com animis",
+   "card": "la-p250",
+   "wiki": "https://en.wiktionary.org/wiki/caelestis#Latin"
+  },
+  "irae": {
+   "lema": "ira",
+   "classe": "substantivo feminino",
+   "forma": "nominativo plural",
+   "funcao": "sujeito; o verbo (sunt) fica subentendido",
+   "card": "la-p223",
+   "wiki": "https://en.wiktionary.org/wiki/ira#Latin"
+  }
+ }
+}

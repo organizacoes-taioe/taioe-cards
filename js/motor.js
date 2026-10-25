@@ -1653,6 +1653,31 @@ window.Motor = (function () {
     return !!(texto && lidos && lidos[texto.id]);
   }
 
+  /* ── as partes de um texto longo ──
+     Pedido do Gere (24/10/2026, PLANO.md §9.6): texto longo se divide em partes pequenas, e a
+     pessoa aprende uma por vez, em sequência. Cada parte é um texto do baralho, com «obra» (o id
+     da obra, igual em todas as partes) e «parte» (1, 2…); ela ocupa uma das MAX_TEXTOS vagas.
+     Só a parte da vez — a primeira da obra que ainda não terminou — pode ser escolhida. */
+  function partesDaObra(obra, textos) {
+    return (textos || []).filter(t => t && t.obra && t.obra === obra).sort((a, b) => a.parte - b.parte);
+  }
+
+  function parteDaVez(obra, textos, lidos) {
+    return partesDaObra(obra, textos).find(t => !textoTerminado(t, lidos)) || null;
+  }
+
+  /* A parte que vem depois desta (ou null: a última, ou texto que não é parte). */
+  function parteSeguinte(texto, textos) {
+    if (!texto || !texto.obra) return null;
+    return partesDaObra(texto.obra, textos).find(t => t.parte > texto.parte) || null;
+  }
+
+  /* O texto pode ser escolhido agora? Não terminou e, se é parte, é a da vez. */
+  function textoEscolhivel(texto, textos, lidos) {
+    if (!texto || textoTerminado(texto, lidos)) return false;
+    return !texto.obra || parteDaVez(texto.obra, textos, lidos) === texto;
+  }
+
   /* Palavras reconhecidas sobre o total, e os versos prontos sobre o total. */
   function andamentoDoTexto(texto, estados, arquivados) {
     const req = requeridas(texto);
@@ -1683,7 +1708,7 @@ window.Motor = (function () {
     }
     const atual = escolha && Array.isArray(escolha.textos) ? escolha.textos[0] : null;
     if (atual && porId[atual] && !textoTerminado(porId[atual], lidos)) return escolha;
-    const fila = textosAutomaticos(textos).filter(t => !textoTerminado(t, lidos));
+    const fila = textosAutomaticos(textos).filter(t => textoEscolhivel(t, textos, lidos));
     const novo = fila.find(t => {
       const a = andamentoDoTexto(t, estados, arquivados);
       return !a.versos || a.prontos / a.versos < QUASE_LIDO;
@@ -2535,7 +2560,7 @@ window.Motor = (function () {
     const a = termosDaGramatica(texto);
     if (!a.palavras.length || a.casos.size || a.modos.size || a.tempos.size) return false;
     const todos = Object.keys(TERMOS_DE_CASO).concat(Object.keys(TERMOS_DE_MODO), Object.keys(TERMOS_DE_TEMPO),
-      ['voz', 'ativa', 'passiva', 'depoente']).filter(x => x.length >= 4);
+      ['voz', 'ativa', 'passiva', 'depoente', 'absoluto']).filter(x => x.length >= 4);
     return !a.palavras.some(p => todos.some(x => p === x || parecido(p, x, 'pt')));
   }
   /* ── montagem da fila inicial ──
@@ -4049,6 +4074,7 @@ window.Motor = (function () {
     ALVO_IDA_MIN, ALVO_IDA_MAX, alvoDaFila, acertoRecente, atrasadoQueFura,
     MAX_TEXTOS, TEXTO_A_CADA, vezDoTexto, idaFechada, dominadosNoTotal, versosDoTexto, versosProntos, versosVistos, textoTerminado,
     andamentoDoTexto, textosAutomaticos, escolhaDosTextos, textosAtivos, palavrasDosTextos, ehLeitura,
+    partesDaObra, parteDaVez, parteSeguinte, textoEscolhivel,
     liberado, liberadaEm, venceuEm, requeridas, arquivado, sabidaEm,
     situacaoDaFrase, atualizarEmVista, palavrasEmVista, FRASES_EM_VISTA,
     montarFila, alternativas, distratoresDinamicos, distratoresDaLingua, embaralhar,

@@ -1074,6 +1074,25 @@ Rossetti não está no Wikisource.
 | 8 | Biblioteca: o botão e a entrada pelo texto (`/cards/?texto=<id>`) | feito (21/10), testado no local |
 | 9 | teste, produção, manual 17.4 reescrito | manual feito; falta publicar |
 
+### 9.6 Texto longo em partes (decidido em 24/10/2026)
+
+Pedido do Gere, com a *Eneida*: «Para textos longos, vamos dividi-los em partes pequenas, para que o
+usuário vá escolhendo aprender uma parte por vez.» Vale para todas as línguas (`LATIM.md`, D18–D21).
+
+- ✔ **A parte** é uma unidade de sentido que fecha a frase: de 4 a 10 versos, ou de 50 a 120 palavras
+  na prosa. Cada parte é um texto do app, com `obra` (o mesmo id em todas), `parte` (1, 2…) e `trecho`
+  (o rótulo: «I, 1–7»); título, autor e página da Biblioteca são os da obra (o build confere, e
+  confere que as partes vão de 1 a n).
+- ✔ **Em sequência**: só a parte da vez, a primeira ainda não lida, pode ser escolhida
+  (`Motor.textoEscolhivel`, `parteDaVez`, `parteSeguinte`); ela ocupa uma das `MAX_TEXTOS` vagas. Na
+  tela Textos a obra aparece uma vez, «Aeneis · Vergílio · parte 1 (I, 1–7)», com «depois, a parte 2
+  (I, 8–11)»; em «Os que você já leu», as partes lidas ficam juntas, sob a obra.
+- ✔ **Fim de uma parte**: o aviso mostra a parte inteira e oferece «Aprender a parte 2» (que entra na
+  vaga dela) ou «Escolher outro texto». No automático, a fila (`fila`) já leva à parte seguinte.
+- O pedido da Biblioteca (`/cards/?texto=<id de uma parte>`) vale pela parte da vez da obra.
+- Nada muda no banco: a escolha guarda ids de texto, e cada parte tem o seu.
+- Na prosa (9.1, «Quero aprender o resto»), o resto vira as partes seguintes.
+
 ## 10. O card de contraste nas línguas vivas (decidido em 23/10/2026)
 
 O card de contraste nasceu no latim (`LATIM.md` §3.7). Em 23/10 o Gere pediu o mesmo nas línguas

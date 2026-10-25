@@ -33,6 +33,14 @@ TEXTOS = {
                           'fonte': 'Poemas, 85'},
     'fedro/lupus-et-agnus': {'titulo': 'Lupus et agnus', 'autor': 'Fedro', 'tipo': 'poema', 'ordem': 7,
                              'fonte': 'Fábulas, livro I, 1 (os oito primeiros versos)'},
+    # texto longo em partes (PLANO.md §9.6): cada parte é um texto, com «obra», «parte» e «trecho»,
+    # e todas apontam para a mesma página da Biblioteca
+    'vergilio/eneida-parte-1': {'titulo': 'Aeneis', 'autor': 'Vergílio', 'tipo': 'poema', 'ordem': 8,
+                                'fonte': 'Eneida, livro I, 1–7', 'obra': 'vergilio/eneida', 'parte': 1,
+                                'trecho': 'I, 1–7', 'biblioteca': '/biblioteca/vergilio/eneida/'},
+    'vergilio/eneida-parte-2': {'titulo': 'Aeneis', 'autor': 'Vergílio', 'tipo': 'poema', 'ordem': 9,
+                                'fonte': 'Eneida, livro I, 8–11', 'obra': 'vergilio/eneida', 'parte': 2,
+                                'trecho': 'I, 8–11', 'biblioteca': '/biblioteca/vergilio/eneida/'},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -49,6 +57,25 @@ SEM_CARD = {
               'wiki': 'https://en.wiktionary.org/wiki/Iesus#Latin'},
     'sabidi': {'lema': 'Sabidius', 'classe': 'nome próprio', 'g': 'nome',
                'def': ['Sabídio, o homem a quem o epigrama se dirige.']},
+    # Eneida I,1–11
+    'troiae': {'lema': 'Troia', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Troia, a cidade de Príamo, na Ásia Menor, destruída pelos gregos.'],
+               'wiki': 'https://en.wiktionary.org/wiki/Troia#Latin'},
+    'italiam': {'lema': 'Italia', 'classe': 'nome próprio', 'g': 'nome', 'def': ['A Itália.'],
+                'wiki': 'https://en.wiktionary.org/wiki/Italia#Latin'},
+    'lavinia': {'lema': 'Lavinius', 'classe': 'adjetivo (nome próprio)', 'g': 'nome',
+                'def': ['De Lavínio, a cidade que Eneias fundou no Lácio.'],
+                'wiki': 'https://en.wiktionary.org/wiki/Lavinius#Latin'},
+    'iunonis': {'lema': 'Iuno', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Juno, a rainha dos deuses, mulher de Júpiter.'],
+                'wiki': 'https://en.wiktionary.org/wiki/Iuno#Latin'},
+    'latio': {'lema': 'Latium', 'classe': 'nome próprio', 'g': 'nome', 'def': ['O Lácio, a região da Itália onde fica Roma.'],
+              'wiki': 'https://en.wiktionary.org/wiki/Latium#Latin'},
+    'latinum': {'lema': 'Latinus', 'classe': 'adjetivo (nome próprio)', 'g': 'nome', 'def': ['Latino, do Lácio.'],
+                'wiki': 'https://en.wiktionary.org/wiki/Latinus#Latin'},
+    'albani': {'lema': 'Albanus', 'classe': 'adjetivo (nome próprio)', 'g': 'nome',
+               'def': ['Albano, de Alba Longa, a cidade que o filho de Eneias fundou e de onde veio Rômulo.'],
+               'wiki': 'https://en.wiktionary.org/wiki/Albanus#Latin'},
+    'romae': {'lema': 'Roma', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Roma.'],
+              'wiki': 'https://en.wiktionary.org/wiki/Roma#Latin'},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')
@@ -153,9 +180,10 @@ def montar():
         linhas = [linha_de(c, cards, destinos) for c in trechos]
         autor, pasta = tid.split('/')
         texto = {'id': tid, 'idioma': 'la', 'tipo': meta['tipo'], 'titulo': meta['titulo'], 'autor': meta['autor'],
-                 'ano': None, 'biblioteca': f'/biblioteca/{autor}/{pasta}/', 'ordem': meta['ordem']}
-        if meta.get('fonte'):
-            texto['fonte'] = meta['fonte']
+                 'ano': None, 'biblioteca': meta.get('biblioteca', f'/biblioteca/{autor}/{pasta}/'), 'ordem': meta['ordem']}
+        for k in ('fonte', 'obra', 'parte', 'trecho'):
+            if meta.get(k):
+                texto[k] = meta[k]
         texto['blocos'] = [linhas]
         texto['destinos'] = destinos
         arq = DESTINO / f'{autor}--{pasta}.json'

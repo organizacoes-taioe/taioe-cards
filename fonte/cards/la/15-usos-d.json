@@ -1,0 +1,2121 @@
+[
+ {
+  "id": "la-u226",
+  "tipo": "frase",
+  "la": "primus et novissimus ego sum.",
+  "pt": "eu sou o primeiro e o último.",
+  "gabarito": "[[[eu ~] sou o primeiro e o último ~ o primeiro e o último sou eu ~ sou eu o primeiro e o último] ~ O primeiro e o último eu sou ~ Eu sou o primeiro e também o derradeiro]",
+  "aceitas": [],
+  "distratores": [
+   "eu fui o primeiro e o último.",
+   "tu és o primeiro e o último.",
+   "eu sou o primeiro e o mais novo.",
+   "eles são os primeiros e os últimos."
+  ],
+  "nota": "primus: nominativo masculino singular, predicativo: o primeiro.\nnovissimus: nominativo masculino singular, palavra sem card: «o último».\nego: nominativo singular, o sujeito: eu.\nsum: presente do indicativo, 1ª pessoa do singular.\nDeus fala pelo profeta: «Eu, o Senhor, sou o primeiro e o último». Novissimus, superlativo de novus, é no latim da Bíblia «o último».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Is 41,4",
+  "requer": "la-p209",
+  "requerTodas": [
+   "la-p209",
+   "la-p009",
+   "la-p004",
+   "la-p003"
+  ],
+  "palavras": [
+   {
+    "w": "primus",
+    "c": "la-p209",
+    "f": "nominativo masculino singular",
+    "fn": "predicativo: o primeiro"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "novissimus",
+    "f": "nominativo masculino singular",
+    "fn": "palavra sem card: «o último»"
+   },
+   {
+    "w": "ego",
+    "c": "la-p004",
+    "f": "nominativo singular",
+    "fn": "o sujeito: eu"
+   },
+   {
+    "w": "sum",
+    "c": "la-p003",
+    "f": "presente do indicativo, 1ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-u227",
+  "tipo": "frase",
+  "la": "ades et primi lege litoris oram.",
+  "pt": "vem e percorre a beira da praia mais próxima.",
+  "gabarito": "[[vem ~ chega ~ ajuda-me ~ assiste-me] e [percorre ~ costeia ~ segue ~ acompanha] a [beira ~ orla ~ margem ~ borda ~ costa] [da primeira praia ~ do primeiro litoral ~ da praia mais próxima ~ do litoral mais próximo ~ da primeira costa] ~ Vem e margeia a orla da primeira praia ~ Aproxima-te e costeia o limite da praia mais próxima ~ Acode e percorre a beira do primeiro litoral ~ Venha e margeie a orla do primeiro litoral]",
+  "aceitas": [],
+  "distratores": [
+   "vens e percorres a beira da praia mais próxima.",
+   "vem e percorre as beiras da praia mais próxima.",
+   "vem e lê a beira da praia mais próxima.",
+   "vem e percorre a beira das praias mais próximas."
+  ],
+  "nota": "ades: imperativo presente, 2ª pessoa do singular, palavra sem card (de adsum): «vem», «assiste-me».\nprimi: genitivo neutro singular, concorda com litoris: o primeiro, o mais próximo.\nlege: imperativo presente, 2ª pessoa do singular, aqui, percorrer, costear.\nlitoris: genitivo singular, de quê: da praia.\noram: acusativo singular, objeto de lege: a beira.\nVergílio pede a Mecenas que o acompanhe no poema sem se afastar da terra: lege oram, «costeia a beira», como o barco que não se arrisca no alto-mar. Legere é «ler», e também «recolher», «percorrer».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Vergílio, Geórgicas II,44",
+  "requer": "la-p210",
+  "requerTodas": [
+   "la-p009",
+   "la-p209",
+   "la-p033",
+   "la-p213",
+   "la-p210"
+  ],
+  "palavras": [
+   {
+    "w": "ades",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "palavra sem card (de adsum): «vem», «assiste-me»"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "primi",
+    "c": "la-p209",
+    "f": "genitivo neutro singular",
+    "fn": "concorda com litoris: o primeiro, o mais próximo"
+   },
+   {
+    "w": "lege",
+    "c": "la-p033",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "aqui, percorrer, costear"
+   },
+   {
+    "w": "litoris",
+    "c": "la-p213",
+    "f": "genitivo singular",
+    "fn": "de quê: da praia"
+   },
+   {
+    "w": "oram",
+    "c": "la-p210",
+    "f": "acusativo singular",
+    "fn": "objeto de lege: a beira"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g004",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-u228",
+  "tipo": "frase",
+  "la": "me mea sequentur fata:",
+  "pt": "os meus destinos me seguirão.",
+  "gabarito": "[[[[os ~] meus [destinos ~ fados] ~ [o ~] meu [destino ~ fado]] [me seguirão ~ me seguirá ~ vão me seguir ~ vai me seguir ~ hão de me seguir ~ há de me seguir ~ seguirão a mim] ~ [me seguirão ~ seguirão a mim] [os ~] meus [destinos ~ fados]] ~ Os meus fados me acompanharão ~ Os meus destinos hão de seguir-me]",
+  "aceitas": [],
+  "distratores": [
+   "eu seguirei os meus destinos.",
+   "os meus destinos me seguiram.",
+   "os meus destinos te seguirão.",
+   "os teus destinos me seguirão."
+  ],
+  "nota": "me: acusativo singular, objeto de sequentur.\nmea: nominativo neutro plural, concorda com fata.\nsequentur: futuro do indicativo, 3ª pessoa do plural, depoente: seguirão.\nfata: nominativo plural, o sujeito.\nHécuba, rainha de Troia, cabe como escrava a Ulisses: «leva-me; os meus destinos me seguirão», isto é, levo comigo a desgraça. Sequentur é o futuro de sequor, depoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Sêneca, As troianas 994",
+  "requer": "la-p211",
+  "requerTodas": [
+   "la-p004",
+   "la-p013",
+   "la-p065",
+   "la-p211"
+  ],
+  "palavras": [
+   {
+    "w": "me",
+    "c": "la-p004",
+    "f": "acusativo singular",
+    "fn": "objeto de sequentur"
+   },
+   {
+    "w": "mea",
+    "c": "la-p013",
+    "f": "nominativo neutro plural",
+    "fn": "concorda com fata"
+   },
+   {
+    "w": "sequentur",
+    "c": "la-p065",
+    "f": "futuro do indicativo, 3ª pessoa do plural",
+    "fn": "depoente: seguirão"
+   },
+   {
+    "w": "fata",
+    "c": "la-p211",
+    "f": "nominativo plural",
+    "fn": "o sujeito"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g001",
+   "la-g010",
+   "la-g016"
+  ]
+ },
+ {
+  "id": "la-u229",
+  "tipo": "frase",
+  "la": "Ut profugus errem?",
+  "pt": "para que eu vague exilado?",
+  "gabarito": "[[para que ~ para] [eu ~] [vague ~ vagueie ~ ande errante ~ erre ~ vagar ~ andar errante ~ errar] [exilado ~ como exilado ~ fugitivo ~ como fugitivo ~ desterrado ~ foragido] ~ Que eu fugitivo vagueie ~ Para eu andar errante como um foragido ~ Que eu vague exilado ~ Devo eu então vaguear como fugitivo]",
+  "aceitas": [],
+  "distratores": [
+   "para que tu vagues exilado?",
+   "para que eu vagasse exilado?",
+   "para que eles vaguem exilados?",
+   "eu vaguei exilado?"
+  ],
+  "nota": "Ut: palavra sem card: «para que» (com subjuntivo).\nprofugus: nominativo masculino singular, concorda com o sujeito, eu.\nerrem: presente do subjuntivo, 1ª pessoa do singular, com ut: para que eu vague.\nPolinices responde à mãe, Jocasta, que lhe pede que desista da guerra contra Tebas: «Para que eu ande vagando, exilado?». Erro é primeiro «vagar», e daí «errar», enganar-se.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Sêneca, As fenícias 586",
+  "requer": "la-p212",
+  "requerTodas": [
+   "la-p212",
+   "la-p163"
+  ],
+  "palavras": [
+   {
+    "w": "Ut",
+    "fn": "palavra sem card: «para que» (com subjuntivo)"
+   },
+   {
+    "w": "profugus",
+    "c": "la-p212",
+    "f": "nominativo masculino singular",
+    "fn": "concorda com o sujeito, eu"
+   },
+   {
+    "w": "errem",
+    "c": "la-p163",
+    "f": "presente do subjuntivo, 1ª pessoa do singular",
+    "fn": "com ut: para que eu vague"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-u230",
+  "tipo": "frase",
+  "la": "inde ambulavit in litore.",
+  "pt": "depois passeou na praia.",
+  "gabarito": "[depois ~ em seguida ~ dali ~ de lá ~ então ~ daí] [ele ~] [passeou ~ andou ~ caminhou ~ deu um passeio] [na praia ~ pela praia ~ no litoral ~ à beira-mar ~ pelo litoral]",
+  "aceitas": [],
+  "distratores": [
+   "depois passeia na praia.",
+   "depois passeou para a praia.",
+   "depois passearam na praia.",
+   "depois passeei na praia."
+  ],
+  "nota": "inde: palavra sem card: «depois», «dali».\nambulavit: perfeito do indicativo, 3ª pessoa do singular, o sujeito é César.\nin: preposição com ablativo, onde.\nlitore: ablativo singular, com in: na praia.\nCícero conta a visita de César à sua casa de campo: depois de cuidar das contas, «passeou na praia», e às oito horas foi ao banho. In com ablativo diz onde se está; com acusativo, para onde se vai.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Cícero, Cartas a Ático XIII,52,1",
+  "requer": "la-p213",
+  "requerTodas": [
+   "la-p067",
+   "la-p022",
+   "la-p213"
+  ],
+  "palavras": [
+   {
+    "w": "inde",
+    "fn": "palavra sem card: «depois», «dali»"
+   },
+   {
+    "w": "ambulavit",
+    "c": "la-p067",
+    "f": "perfeito do indicativo, 3ª pessoa do singular",
+    "fn": "o sujeito é César"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo",
+    "fn": "onde"
+   },
+   {
+    "w": "litore",
+    "c": "la-p213",
+    "f": "ablativo singular",
+    "fn": "com in: na praia"
+   }
+  ],
+  "conceitos": [
+   "la-g009",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-u231",
+  "tipo": "frase",
+  "la": "et crediderunt multi in Domino.",
+  "pt": "e muitos creram no Senhor.",
+  "gabarito": "[[e muitos [creram ~ acreditaram ~ passaram a crer] no Senhor ~ e no Senhor [creram ~ acreditaram] muitos ~ e [creram ~ acreditaram] muitos no Senhor] ~ E muitos confiaram no Senhor ~ E houve muitos que creram no Senhor]",
+  "aceitas": [],
+  "distratores": [
+   "e o Senhor creu em muitos.",
+   "e muitos creem no Senhor.",
+   "e creram muito no Senhor.",
+   "e muitos crerão no Senhor."
+  ],
+  "nota": "crediderunt: perfeito do indicativo, 3ª pessoa do plural.\nmulti: nominativo masculino plural, como nome, o sujeito: muitos.\nin: preposição com ablativo.\nDomino: ablativo singular, com in: no Senhor.\nPedro ressuscita Tabita em Jope, a notícia corre a cidade, «e muitos creram no Senhor». Multi, no plural e sem nome, é «muitos», gente; o neutro multum é «muito».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "At 9,42",
+  "requer": "la-p214",
+  "requerTodas": [
+   "la-p009",
+   "la-p021",
+   "la-p214",
+   "la-p022",
+   "la-p012"
+  ],
+  "palavras": [
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "crediderunt",
+    "c": "la-p021",
+    "f": "perfeito do indicativo, 3ª pessoa do plural"
+   },
+   {
+    "w": "multi",
+    "c": "la-p214",
+    "f": "nominativo masculino plural",
+    "fn": "como nome, o sujeito: muitos"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "Domino",
+    "c": "la-p012",
+    "f": "ablativo singular",
+    "fn": "com in: no Senhor"
+   }
+  ],
+  "conceitos": [
+   "la-g009",
+   "la-g001",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-u232",
+  "tipo": "frase",
+  "la": "Et erit in die illa:",
+  "pt": "E acontecerá naquele dia:",
+  "gabarito": "[e [acontecerá ~ será ~ sucederá ~ haverá ~ vai acontecer] [naquele dia ~ no dia aquele ~ em aquele dia] ~ E há de ser naquele dia]",
+  "aceitas": [],
+  "distratores": [
+   "E aconteceu naquele dia:",
+   "E acontecerá neste dia:",
+   "E acontecerá daquele dia:",
+   "E acontecerá naqueles dias:"
+  ],
+  "nota": "erit: futuro do indicativo, 3ª pessoa do singular, acontecerá.\nin: preposição com ablativo.\ndie: ablativo singular, com in: quando.\nilla: ablativo feminino singular, concorda com die: naquele.\nA fórmula dos profetas para o que Deus vai fazer: «e acontecerá naquele dia». Illa concorda com die, que aqui é feminino; ille aponta para longe, no tempo ou no espaço.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Is 7,18",
+  "requer": "la-p215",
+  "requerTodas": [
+   "la-p009",
+   "la-p003",
+   "la-p022",
+   "la-p025",
+   "la-p215"
+  ],
+  "palavras": [
+   {
+    "w": "Et",
+    "c": "la-p009"
+   },
+   {
+    "w": "erit",
+    "c": "la-p003",
+    "f": "futuro do indicativo, 3ª pessoa do singular",
+    "fn": "acontecerá"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "die",
+    "c": "la-p025",
+    "f": "ablativo singular",
+    "fn": "com in: quando"
+   },
+   {
+    "w": "illa",
+    "c": "la-p215",
+    "f": "ablativo feminino singular",
+    "fn": "concorda com die: naquele"
+   }
+  ],
+  "conceitos": [
+   "la-g010",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-u233",
+  "tipo": "frase",
+  "la": "Tolle, et iacta te in mare, fiet.",
+  "pt": "Ergue-te e lança-te ao mar, e assim será.",
+  "gabarito": "[[ergue-te ~ levanta-te ~ sai daí ~ tira-te daí] e [lança-te ~ atira-te ~ joga-te] [ao mar ~ no mar ~ para o mar ~ para dentro do mar] [e assim será ~ e será feito ~ e acontecerá ~ assim será ~ será feito ~ acontecerá ~ e isso acontecerá] ~ Sai daí e joga-te no mar vai acontecer ~ Levante-se e jogue-se no mar assim será]",
+  "aceitas": [],
+  "distratores": [
+   "Ergue-te e lança-te ao mar, e assim foi.",
+   "Ergue-o e lança-o ao mar, e assim será.",
+   "Ergue-te e lança-me ao mar, e assim será.",
+   "Ergueu-se e lançou-se ao mar, e assim será."
+  ],
+  "nota": "Tolle: imperativo presente, 2ª pessoa do singular, dito ao monte: ergue-te.\niacta: imperativo presente, 2ª pessoa do singular, lança.\nte: acusativo singular, objeto: a ti mesmo.\nin: preposição com acusativo, para onde.\nmare: acusativo singular, palavra sem card: «o mar».\nfiet: futuro do indicativo, 3ª pessoa do singular, assim será.\nJesus fala da fé: quem disser a este monte «ergue-te e lança-te ao mar», sem duvidar, verá acontecer. Iacta é o imperativo de iacto; in com acusativo (in mare) diz para onde.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Mt 21,21",
+  "requer": "la-p216",
+  "requerTodas": [
+   "la-p032",
+   "la-p009",
+   "la-p216",
+   "la-p007",
+   "la-p022",
+   "la-p069"
+  ],
+  "palavras": [
+   {
+    "w": "Tolle",
+    "c": "la-p032",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "dito ao monte: ergue-te"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "iacta",
+    "c": "la-p216",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "lança"
+   },
+   {
+    "w": "te",
+    "c": "la-p007",
+    "f": "acusativo singular",
+    "fn": "objeto: a ti mesmo"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com acusativo",
+    "fn": "para onde"
+   },
+   {
+    "w": "mare",
+    "f": "acusativo singular",
+    "fn": "palavra sem card: «o mar»"
+   },
+   {
+    "w": "fiet",
+    "c": "la-p069",
+    "f": "futuro do indicativo, 3ª pessoa do singular",
+    "fn": "assim será"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g003",
+   "la-g010"
+  ]
+ },
+ {
+  "id": "la-u234",
+  "tipo": "frase",
+  "la": "mirabilis in altis Dominus.",
+  "pt": "admirável nas alturas é o Senhor.",
+  "gabarito": "[[[admirável ~ maravilhoso ~ magnífico] [nas alturas ~ no alto ~ nos altos ~ nos céus] [é o Senhor ~ o Senhor] ~ o Senhor é [admirável ~ maravilhoso ~ magnífico] [nas alturas ~ no alto ~ nos altos ~ nos céus]] ~ O Senhor nas alturas é maravilhoso ~ Admirável é o Senhor lá no alto]",
+  "aceitas": [],
+  "distratores": [
+   "admirável é o Senhor dos altos.",
+   "admirável nas alturas foi o Senhor.",
+   "admiráveis nas alturas são os senhores.",
+   "o Senhor admira as alturas."
+  ],
+  "nota": "mirabilis: nominativo masculino singular, palavra sem card: «admirável».\nin: preposição com ablativo.\naltis: ablativo neutro plural, como nome: nas alturas.\nDominus: nominativo singular, o sujeito; o verbo (est) fica subentendido.\nO salmo compara o Senhor ao mar bravo: mais admirável que as ondas é o Senhor nas alturas. Altis, neutro plural de altus usado como nome, são «as alturas»; o verbo est fica subentendido.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Sl 93 (92),4",
+  "requer": "la-p217",
+  "requerTodas": [
+   "la-p022",
+   "la-p217",
+   "la-p012"
+  ],
+  "palavras": [
+   {
+    "w": "mirabilis",
+    "f": "nominativo masculino singular",
+    "fn": "palavra sem card: «admirável»"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "altis",
+    "c": "la-p217",
+    "f": "ablativo neutro plural",
+    "fn": "como nome: nas alturas"
+   },
+   {
+    "w": "Dominus",
+    "c": "la-p012",
+    "f": "nominativo singular",
+    "fn": "o sujeito; o verbo (est) fica subentendido"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-u235",
+  "tipo": "frase",
+  "la": "Domine, vim patior:",
+  "pt": "Senhor, sofro violência:",
+  "gabarito": "[[ó ~] Senhor [[eu ~] [sofro ~ padeço ~ suporto] [violência ~ força] ~ violência [eu ~] [sofro ~ padeço]] ~ Senhor estou sofrendo violência ~ Senhor é violência o que sofro]",
+  "aceitas": [],
+  "distratores": [
+   "Senhor, sofres violência:",
+   "O Senhor sofre violência:",
+   "Senhor, sofri violência:",
+   "Senhor, a violência me sofre:"
+  ],
+  "nota": "Domine: vocativo singular, a quem se fala.\nvim: acusativo singular, objeto de patior.\npatior: presente do indicativo, 1ª pessoa do singular, depoente: sofro.\nNo cântico do rei Ezequias, doente à morte: «Senhor, sofro violência: responde por mim». Vim é o acusativo de vis; patior, depoente, tem forma de passiva e sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Is 38,14",
+  "requer": "la-p218",
+  "requerTodas": [
+   "la-p012",
+   "la-p218",
+   "la-p225"
+  ],
+  "palavras": [
+   {
+    "w": "Domine",
+    "c": "la-p012",
+    "f": "vocativo singular",
+    "fn": "a quem se fala"
+   },
+   {
+    "w": "vim",
+    "c": "la-p218",
+    "f": "acusativo singular",
+    "fn": "objeto de patior"
+   },
+   {
+    "w": "patior",
+    "c": "la-p225",
+    "f": "presente do indicativo, 1ª pessoa do singular",
+    "fn": "depoente: sofro"
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g003",
+   "la-g007",
+   "la-g016"
+  ]
+ },
+ {
+  "id": "la-u236",
+  "tipo": "frase",
+  "la": "Vicit et superos Amor.",
+  "pt": "O Amor venceu também os deuses.",
+  "gabarito": "[[[o ~] Amor venceu [até ~ também ~ mesmo ~ ainda] os [deuses ~ de cima ~ deuses do alto ~ celestes] ~ [até ~ também ~ mesmo] os [deuses ~ de cima ~ deuses do alto ~ celestes] [o ~] Amor venceu ~ venceu [até ~ também ~ mesmo] os [deuses ~ de cima ~ celestes] [o ~] Amor] ~ Venceu também os deuses de cima o Amor ~ O Amor também venceu os deuses do alto ~ Até os deuses celestes o Amor venceu ~ O Amor triunfou até sobre os deuses do céu]",
+  "aceitas": [],
+  "distratores": [
+   "Os deuses venceram também o Amor.",
+   "O Amor vencerá também os deuses.",
+   "O Amor venceu também o deus.",
+   "O Amor dos deuses venceu também."
+  ],
+  "nota": "Vicit: perfeito do indicativo, 3ª pessoa do singular.\net: até, também.\nsuperos: acusativo masculino plural, como nome, os de cima: os deuses.\nAmor: nominativo singular, o sujeito.\nA ama de Dejanira lembra que nenhuma magia dobraria Hércules, mas o Amor venceu até os deuses. Superos, acusativo plural de superus, é o objeto; Amor, no nominativo e no fim, é o sujeito, como em Omnia vincit Amor.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Sêneca, Hércules no Eta 472",
+  "requer": "la-p219",
+  "requerTodas": [
+   "la-p030",
+   "la-p009",
+   "la-p219",
+   "la-p031"
+  ],
+  "palavras": [
+   {
+    "w": "Vicit",
+    "c": "la-p030",
+    "f": "perfeito do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "et",
+    "c": "la-p009",
+    "fn": "até, também"
+   },
+   {
+    "w": "superos",
+    "c": "la-p219",
+    "f": "acusativo masculino plural",
+    "fn": "como nome, os de cima: os deuses"
+   },
+   {
+    "w": "Amor",
+    "c": "la-p031",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   }
+  ],
+  "conceitos": [
+   "la-g009",
+   "la-g003",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-u237",
+  "tipo": "frase",
+  "la": "tua fulmine saevior ira est.",
+  "pt": "a tua ira é mais cruel que o raio.",
+  "gabarito": "[[[a ~] tua [ira ~ cólera ~ raiva] é mais [cruel ~ feroz ~ terrível ~ violenta] [que o raio ~ do que o raio ~ que o relâmpago ~ do que o relâmpago] ~ mais [cruel ~ feroz ~ terrível] [que o raio ~ do que o raio ~ que o relâmpago ~ do que o relâmpago] é [a ~] tua [ira ~ cólera]] ~ Mais selvagem que o relâmpago é a tua ira ~ A tua fúria é mais cruel do que o raio]",
+  "aceitas": [],
+  "distratores": [
+   "a tua ira é cruel como o raio.",
+   "a ira do teu raio é mais cruel.",
+   "a tua ira é a mais cruel do raio.",
+   "a tua ira era mais cruel que o raio."
+  ],
+  "nota": "tua: nominativo feminino singular, concorda com ira.\nfulmine: ablativo singular, palavra sem card: «o raio»; comparado com quê.\nsaevior: comparativo, nominativo feminino singular, concorda com ira: mais cruel.\nira: nominativo singular, o sujeito.\nest: presente do indicativo, 3ª pessoa do singular.\nO ciclope Polifemo a Galateia: ele, que despreza o raio de Júpiter, teme a ira dela, «mais cruel que o raio». Fulmine é o ablativo de comparação: o termo comparado vai no ablativo, sem quam.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Ovídio, Metamorfoses XIII,858",
+  "requer": "la-p220",
+  "requerTodas": [
+   "la-p055",
+   "la-p220",
+   "la-p223",
+   "la-p003"
+  ],
+  "palavras": [
+   {
+    "w": "tua",
+    "c": "la-p055",
+    "f": "nominativo feminino singular",
+    "fn": "concorda com ira"
+   },
+   {
+    "w": "fulmine",
+    "f": "ablativo singular",
+    "fn": "palavra sem card: «o raio»; comparado com quê"
+   },
+   {
+    "w": "saevior",
+    "c": "la-p220",
+    "f": "comparativo",
+    "fn": "nominativo feminino singular, concorda com ira: mais cruel"
+   },
+   {
+    "w": "ira",
+    "c": "la-p223",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-u238",
+  "tipo": "frase",
+  "la": "Terrae quoque memor ero:",
+  "pt": "também me lembrarei da terra.",
+  "gabarito": "[[[eu ~] também [me lembrarei ~ lembrarei ~ me recordarei ~ recordarei ~ vou me lembrar] da terra ~ [eu ~] [me lembrarei ~ lembrarei ~ me recordarei ~ recordarei ~ vou me lembrar] também da terra ~ da terra também [eu ~] [me lembrarei ~ lembrarei ~ me recordarei]] ~ Também da terra me lembrarei ~ Igualmente terei lembrança da terra]",
+  "aceitas": [],
+  "distratores": [
+   "também a terra se lembrará de mim.",
+   "também me lembrei da terra.",
+   "também me lembrarei das terras.",
+   "também serei lembrado pela terra."
+  ],
+  "nota": "Terrae: genitivo singular, de quê: memor pede genitivo.\nmemor: nominativo masculino singular, o sujeito é Deus.\nero: futuro do indicativo, 1ª pessoa do singular, memor ero: me lembrarei.\nDeus promete lembrar-se da aliança com Abraão, Isaac e Jacó, e também da terra. Memor ero, «serei lembrado», é o jeito latino de dizer «me lembrarei», e memor pede genitivo: terrae, da terra.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Lv 26,42",
+  "requer": "la-p221",
+  "requerTodas": [
+   "la-p096",
+   "la-p224",
+   "la-p221",
+   "la-p003"
+  ],
+  "palavras": [
+   {
+    "w": "Terrae",
+    "c": "la-p096",
+    "f": "genitivo singular",
+    "fn": "de quê: memor pede genitivo"
+   },
+   {
+    "w": "quoque",
+    "c": "la-p224"
+   },
+   {
+    "w": "memor",
+    "c": "la-p221",
+    "f": "nominativo masculino singular",
+    "fn": "o sujeito é Deus"
+   },
+   {
+    "w": "ero",
+    "c": "la-p003",
+    "f": "futuro do indicativo, 1ª pessoa do singular",
+    "fn": "memor ero: me lembrarei"
+   }
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g001",
+   "la-g010"
+  ]
+ },
+ {
+  "id": "la-u239",
+  "tipo": "frase",
+  "la": "quam ob rem?",
+  "pt": "por que razão?",
+  "gabarito": "[[por que razão ~ por qual razão ~ por que motivo ~ por qual motivo ~ por quê ~ por que causa ~ por causa de quê ~ por que coisa] ~ Por qual causa ~ Com que motivo]",
+  "aceitas": [],
+  "distratores": [
+   "por que razões?",
+   "para que coisa?",
+   "em vez de que coisa?",
+   "de quem é a coisa?"
+  ],
+  "nota": "quam: acusativo feminino singular, interrogativo, concorda com rem: qual.\nob: preposição com acusativo.\nrem: acusativo singular, palavra sem card (de res): «coisa», «razão».\nCícero, no processo contra Verres, pergunta por que ninguém se ofereceu para elogiar o governador: «por que razão?». Quam ob rem, também escrito numa palavra só, quamobrem, é «por quê» e, sem a pergunta, «por isso».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Cícero, Contra Verres II,4,143",
+  "requer": "la-p222",
+  "requerTodas": [
+   "la-p064",
+   "la-p222"
+  ],
+  "palavras": [
+   {
+    "w": "quam",
+    "c": "la-p064",
+    "f": "acusativo feminino singular",
+    "fn": "interrogativo, concorda com rem: qual"
+   },
+   {
+    "w": "ob",
+    "c": "la-p222",
+    "f": "preposição com acusativo"
+   },
+   {
+    "w": "rem",
+    "f": "acusativo singular",
+    "fn": "palavra sem card (de res): «coisa», «razão»"
+   }
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-u240",
+  "tipo": "frase",
+  "la": "Tangit et ira deos.",
+  "pt": "A ira atinge também os deuses.",
+  "gabarito": "[[[a ~] [ira ~ cólera ~ raiva] [atinge ~ toca ~ alcança ~ move ~ afeta] [também ~ até ~ mesmo] os deuses ~ [também ~ até ~ mesmo] os deuses [a ~] [ira ~ cólera ~ raiva] [atinge ~ toca ~ alcança] ~ [também ~ até ~ mesmo] os deuses [sentem ~ conhecem ~ têm] [a ~] [ira ~ cólera]] ~ Toca também os deuses a ira ~ A ira também atinge os deuses ~ Até os deuses a ira afeta ~ A cólera também alcança os deuses]",
+  "aceitas": [],
+  "distratores": [
+   "Os deuses tocam também a ira.",
+   "A ira tocou também os deuses.",
+   "A ira toca também o deus.",
+   "A ira dos deuses toca também."
+  ],
+  "nota": "Tangit: presente do indicativo, 3ª pessoa do singular.\net: também, até.\nira: nominativo singular, o sujeito.\ndeos: acusativo plural, objeto de tangit.\nDiana, esquecida nos sacrifícios do rei Eneu, se vinga: «também aos deuses toca a ira», e manda o javali de Cálidon devastar os campos. Et, antes da palavra, é «também», «até».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Ovídio, Metamorfoses VIII,279",
+  "requer": "la-p223",
+  "requerTodas": [
+   "la-p035",
+   "la-p009",
+   "la-p223",
+   "la-p001"
+  ],
+  "palavras": [
+   {
+    "w": "Tangit",
+    "c": "la-p035",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "et",
+    "c": "la-p009",
+    "fn": "também, até"
+   },
+   {
+    "w": "ira",
+    "c": "la-p223",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "deos",
+    "c": "la-p001",
+    "f": "acusativo plural",
+    "fn": "objeto de tangit"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-u241",
+  "tipo": "frase",
+  "la": "Vir quoque non sapiens;",
+  "pt": "também o homem não é sensato;",
+  "gabarito": "[[[também ~ tampouco] o [marido ~ homem ~ esposo] não é [sensato ~ sábio ~ prudente ~ esperto ~ ajuizado] ~ o [marido ~ homem ~ esposo] também não é [sensato ~ sábio ~ prudente ~ esperto ~ ajuizado] ~ nem o [marido ~ homem ~ esposo] é [sensato ~ sábio ~ prudente ~ esperto ~ ajuizado]] ~ Também o homem não sábio ~ O varão também não é ajuizado ~ E o homem igualmente não é sensato]",
+  "aceitas": [],
+  "distratores": [
+   "também o homem não sabe nada;",
+   "também os homens não são sensatos;",
+   "o sábio também não é homem;",
+   "o homem não é sensato, e eu também;"
+  ],
+  "nota": "Vir: nominativo singular, o sujeito: o marido.\nsapiens: particípio presente, nominativo masculino singular, como adjetivo: sensato; o verbo (est) fica subentendido.\nO poeta tenta convencer o guarda de uma mulher a deixá-la livre: vigiar não adianta, e também o marido não é sensato. Vir, além de «homem», é «marido». Sapiens, particípio de sapio, virou adjetivo: «sábio», «sensato».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Ovídio, Amores II,2,11",
+  "requer": "la-p224",
+  "requerTodas": [
+   "la-p027",
+   "la-p224",
+   "la-p066",
+   "la-p138"
+  ],
+  "palavras": [
+   {
+    "w": "Vir",
+    "c": "la-p027",
+    "f": "nominativo singular",
+    "fn": "o sujeito: o marido"
+   },
+   {
+    "w": "quoque",
+    "c": "la-p224"
+   },
+   {
+    "w": "non",
+    "c": "la-p066"
+   },
+   {
+    "w": "sapiens",
+    "c": "la-p138",
+    "f": "particípio presente, nominativo masculino singular",
+    "fn": "como adjetivo: sensato; o verbo (est) fica subentendido"
+   }
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-u242",
+  "tipo": "frase",
+  "la": "Caritas patiens est, benigna est.",
+  "pt": "A caridade é paciente, é benigna.",
+  "gabarito": "[[[a ~] [caridade ~ amor] é paciente [é ~ e é ~ e] [benigna ~ bondosa ~ benigno ~ bondoso ~ amável ~ boa ~ prestativa]] ~ A caridade paciente é benigna é ~ A caridade é tolerante é amável ~ A caridade tem paciência tem bondade]",
+  "aceitas": [],
+  "distratores": [
+   "A caridade era paciente, era benigna.",
+   "As caridades são pacientes, são benignas.",
+   "A caridade é paciente com o benigno.",
+   "A paciência é caridade, é benigna."
+  ],
+  "nota": "Caritas: nominativo singular, o sujeito.\npatiens: particípio presente, nominativo feminino singular, como adjetivo: paciente.\nest: presente do indicativo, 3ª pessoa do singular.\nbenigna: nominativo feminino singular, palavra sem card: «benigna».\nest: presente do indicativo, 3ª pessoa do singular.\nO hino de São Paulo à caridade. Patiens, particípio presente de patior, virou adjetivo: quem sabe sofrer é «paciente». Daí paciência.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "1Cor 13,4",
+  "requer": "la-p225",
+  "requerTodas": [
+   "la-p002",
+   "la-p225",
+   "la-p003"
+  ],
+  "palavras": [
+   {
+    "w": "Caritas",
+    "c": "la-p002",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "patiens",
+    "c": "la-p225",
+    "f": "particípio presente, nominativo feminino singular",
+    "fn": "como adjetivo: paciente"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "benigna",
+    "f": "nominativo feminino singular",
+    "fn": "palavra sem card: «benigna»"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-u243",
+  "tipo": "frase",
+  "la": "ibi et Lia condita iacet.",
+  "pt": "ali também Lia jaz sepultada.",
+  "gabarito": "[[[ali ~ aí ~ lá] [também ~ ainda] Lia [jaz ~ está ~ repousa ~ descansa] [sepultada ~ enterrada] ~ [ali ~ aí ~ lá] [também ~ ainda] [jaz ~ está ~ repousa] [sepultada ~ enterrada] Lia ~ [ali ~ aí ~ lá] [também ~ ainda] Lia [foi ~ está] [sepultada ~ enterrada]] ~ Ali também Lia sepultada jaz ~ Lá também jaz Lia que foi sepultada ~ Ali igualmente repousa Lia enterrada ~ Também Lia jaz sepultada ali]",
+  "aceitas": [],
+  "distratores": [
+   "ali também Lia sepultou e jaz.",
+   "ali também Lia jazia sepultada.",
+   "ali também jazem as sepultadas de Lia.",
+   "dali também Lia jaz sepultada."
+  ],
+  "nota": "et: também.\nLia: nominativo singular, nome próprio, Lia: o sujeito.\ncondita: particípio perfeito, nominativo feminino singular, concorda com Lia: sepultada.\niacet: presente do indicativo, 3ª pessoa do singular, palavra sem card (de iaceo): «jaz».\nJacó, antes de morrer, pede para ser enterrado na gruta de Macpela, onde estão Abraão, Isaac e as mulheres deles: «ali também Lia jaz sepultada». Condo é pôr junto, guardar, e daí «sepultar»; com urbem, «fundar».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Gn 49,31",
+  "requer": "la-p226",
+  "requerTodas": [
+   "la-p083",
+   "la-p009",
+   "la-p226"
+  ],
+  "palavras": [
+   {
+    "w": "ibi",
+    "c": "la-p083"
+   },
+   {
+    "w": "et",
+    "c": "la-p009",
+    "fn": "também"
+   },
+   {
+    "w": "Lia",
+    "f": "nominativo singular",
+    "fn": "nome próprio, Lia: o sujeito"
+   },
+   {
+    "w": "condita",
+    "c": "la-p226",
+    "f": "particípio perfeito, nominativo feminino singular",
+    "fn": "concorda com Lia: sepultada"
+   },
+   {
+    "w": "iacet",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "palavra sem card (de iaceo): «jaz»"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-u244",
+  "tipo": "frase",
+  "la": "in qua urbe vivimus?",
+  "pt": "em que cidade vivemos?",
+  "gabarito": "[[em que ~ em qual] cidade [nós ~] [vivemos ~ moramos ~ estamos vivendo] ~ Em qual urbe estamos vivendo ~ Em que cidade é que vivemos]",
+  "aceitas": [],
+  "distratores": [
+   "para que cidade vivemos?",
+   "em que cidade vivíamos?",
+   "em que cidades vivemos?",
+   "que cidade vive em nós?"
+  ],
+  "nota": "in: preposição com ablativo.\nqua: ablativo feminino singular, interrogativo, concorda com urbe: qual.\nurbe: ablativo singular, com in: onde.\nvivimus: presente do indicativo, 1ª pessoa do plural, palavra sem card (de vivo): «vivemos».\nNa primeira Catilinária, Cícero se espanta de ver Catilina no senado: «Onde estamos? Que república temos? Em que cidade vivemos?». Urbe, ablativo com in, diz onde.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Cícero, Catilinárias I,9",
+  "requer": "la-p227",
+  "requerTodas": [
+   "la-p022",
+   "la-p064",
+   "la-p227"
+  ],
+  "palavras": [
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "qua",
+    "c": "la-p064",
+    "f": "ablativo feminino singular",
+    "fn": "interrogativo, concorda com urbe: qual"
+   },
+   {
+    "w": "urbe",
+    "c": "la-p227",
+    "f": "ablativo singular",
+    "fn": "com in: onde"
+   },
+   {
+    "w": "vivimus",
+    "f": "presente do indicativo, 1ª pessoa do plural",
+    "fn": "palavra sem card (de vivo): «vivemos»"
+   }
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-u245",
+  "tipo": "frase",
+  "la": "Ex magno genere es tu.",
+  "pt": "tu és de uma grande família.",
+  "gabarito": "[[[tu ~ você ~] [és ~ é] de [uma ~] [grande ~ nobre ~ ilustre] [família ~ linhagem ~ estirpe ~ raça ~ origem] ~ [és ~ é] [tu ~ você] de [uma ~] [grande ~ nobre] [família ~ linhagem ~ estirpe]] ~ De grande estirpe és tu ~ Você vem de nobre linhagem]",
+  "aceitas": [],
+  "distratores": [
+   "tu eras de uma grande família.",
+   "tu és maior que a família.",
+   "vós sois de uma grande família.",
+   "a tua família é de um grande homem."
+  ],
+  "nota": "Ex: preposição com ablativo, palavra sem card: «de», «vindo de».\nmagno: ablativo neutro singular, concorda com genere.\ngenere: ablativo singular, com ex: de onde vem.\nes: presente do indicativo, 2ª pessoa do singular.\ntu: nominativo singular, o sujeito.\nTobias, ao ouvir o anjo dizer que é Azarias, filho do grande Ananias, responde: «Tu és de uma grande família». Genere é o ablativo de genus, com ex: de onde se vem.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Tb 5,19",
+  "requer": "la-p228",
+  "requerTodas": [
+   "la-p016",
+   "la-p228",
+   "la-p003",
+   "la-p007"
+  ],
+  "palavras": [
+   {
+    "w": "Ex",
+    "f": "preposição com ablativo",
+    "fn": "palavra sem card: «de», «vindo de»"
+   },
+   {
+    "w": "magno",
+    "c": "la-p016",
+    "f": "ablativo neutro singular",
+    "fn": "concorda com genere"
+   },
+   {
+    "w": "genere",
+    "c": "la-p228",
+    "f": "ablativo singular",
+    "fn": "com ex: de onde vem"
+   },
+   {
+    "w": "es",
+    "c": "la-p003",
+    "f": "presente do indicativo, 2ª pessoa do singular"
+   },
+   {
+    "w": "tu",
+    "c": "la-p007",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-u246",
+  "tipo": "frase",
+  "la": "Unde es tu?",
+  "pt": "De onde és tu?",
+  "gabarito": "[[[de onde ~ donde] [és ~ é] [tu ~ você ~] ~ [tu ~ você] [és ~ é] de onde] ~ De onde você é ~ De que lugar és tu ~ De onde é que você é]",
+  "aceitas": [],
+  "distratores": [
+   "Onde estás tu?",
+   "De onde sou eu?",
+   "De onde eras tu?",
+   "De onde sois vós?"
+  ],
+  "nota": "es: presente do indicativo, 2ª pessoa do singular.\ntu: nominativo singular, o sujeito.\nDavi pergunta ao jovem que lhe traz a notícia da morte de Saul: «De onde és tu?», e ele responde que é amalecita. Unde é o lugar de onde se vem; ubi, onde se está.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "2Sm 1,13",
+  "requer": "la-p229",
+  "requerTodas": [
+   "la-p229",
+   "la-p003",
+   "la-p007"
+  ],
+  "palavras": [
+   {
+    "w": "Unde",
+    "c": "la-p229"
+   },
+   {
+    "w": "es",
+    "c": "la-p003",
+    "f": "presente do indicativo, 2ª pessoa do singular"
+   },
+   {
+    "w": "tu",
+    "c": "la-p007",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   }
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-u247",
+  "tipo": "frase",
+  "la": "Non sapis, atque sapis.",
+  "pt": "Não tens juízo, e no entanto tens.",
+  "gabarito": "[[tu ~ você ~] [não tens juízo ~ não és sábio ~ não és sensato ~ não tem juízo ~ não é sábio ~ não é sensato] [e no entanto ~ e contudo ~ e ainda assim ~ e ao mesmo tempo ~ mas ~ e] [tens ~ tens juízo ~ és sábio ~ és sensato ~ tem ~ tem juízo ~ é sábio ~ é sensato] ~ Não tens sabedoria e tens sabedoria]",
+  "aceitas": [],
+  "distratores": [
+   "Não sei, e no entanto sei.",
+   "Não tinhas juízo, e no entanto tens.",
+   "Não tens juízo, nem tens.",
+   "Não tem juízo quem tem juízo."
+  ],
+  "nota": "sapis: presente do indicativo, 2ª pessoa do singular, não tens juízo.\natque: e no entanto.\nsapis: presente do indicativo, 2ª pessoa do singular.\nMarcial a Varo, que escreve duzentos versos por dia e não lê nenhum em público: «não tens juízo, e tens»; escrever tanto é tolice, e não os ler é sabedoria. Atque liga com força, e aqui opõe: «e no entanto».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Marcial, Epigramas VIII,20,2",
+  "requer": "la-p230",
+  "requerTodas": [
+   "la-p066",
+   "la-p138",
+   "la-p230"
+  ],
+  "palavras": [
+   {
+    "w": "Non",
+    "c": "la-p066"
+   },
+   {
+    "w": "sapis",
+    "c": "la-p138",
+    "f": "presente do indicativo, 2ª pessoa do singular",
+    "fn": "não tens juízo"
+   },
+   {
+    "w": "atque",
+    "c": "la-p230",
+    "fn": "e no entanto"
+   },
+   {
+    "w": "sapis",
+    "c": "la-p138",
+    "f": "presente do indicativo, 2ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-u248",
+  "tipo": "frase",
+  "la": "mea moenia vidi;",
+  "pt": "vi as minhas muralhas;",
+  "gabarito": "[[[eu ~] vi as minhas [muralhas ~ fortificações] ~ [eu ~] vi os meus muros ~ as minhas [muralhas ~ fortificações] [eu ~] vi] ~ Eu contemplei as minhas muralhas]",
+  "aceitas": [],
+  "distratores": [
+   "as minhas muralhas me viram;",
+   "vejo as minhas muralhas;",
+   "viste as minhas muralhas;",
+   "vi as tuas muralhas;"
+  ],
+  "nota": "mea: acusativo neutro plural, concorda com moenia.\nmoenia: acusativo plural, objeto de vidi.\nvidi: perfeito do indicativo, 1ª pessoa do singular.\nAs últimas palavras de Dido antes de morrer: «Vivi… fundei uma cidade gloriosa, vi as minhas muralhas». Moenia, como arma, só tem plural, e o acusativo é igual ao nominativo.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Vergílio, Eneida IV,655",
+  "requer": "la-p231",
+  "requerTodas": [
+   "la-p013",
+   "la-p231",
+   "la-p039"
+  ],
+  "palavras": [
+   {
+    "w": "mea",
+    "c": "la-p013",
+    "f": "acusativo neutro plural",
+    "fn": "concorda com moenia"
+   },
+   {
+    "w": "moenia",
+    "c": "la-p231",
+    "f": "acusativo plural",
+    "fn": "objeto de vidi"
+   },
+   {
+    "w": "vidi",
+    "c": "la-p039",
+    "f": "perfeito do indicativo, 1ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-u249",
+  "tipo": "frase",
+  "la": "Mihi cane et Musis;",
+  "pt": "canta para mim e para as Musas;",
+  "gabarito": "[[[canta ~ cante] [para mim ~ a mim] e [para as Musas ~ às Musas] ~ [canta-me ~ canta para mim] e às Musas] ~ Para mim canta e para as Musas]",
+  "aceitas": [],
+  "distratores": [
+   "canto para mim e para as Musas;",
+   "canta comigo e com as Musas;",
+   "canta como eu e as Musas;",
+   "as Musas e eu cantamos;"
+  ],
+  "nota": "Mihi: dativo singular, para quem: para mim.\ncane: imperativo presente, 2ª pessoa do singular.\nMusis: dativo plural, para quem: para as Musas.\nO flautista Antigênidas dizia ao aluno que não agradava ao público: «canta para mim e para as Musas». Cícero usa o conselho para o orador: o aplauso de quem entende vale mais. Mihi e Musis são dativos: para quem.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Cícero, Brutus 187",
+  "requer": "la-p232",
+  "requerTodas": [
+   "la-p004",
+   "la-p029",
+   "la-p009",
+   "la-p232"
+  ],
+  "palavras": [
+   {
+    "w": "Mihi",
+    "c": "la-p004",
+    "f": "dativo singular",
+    "fn": "para quem: para mim"
+   },
+   {
+    "w": "cane",
+    "c": "la-p029",
+    "f": "imperativo presente, 2ª pessoa do singular"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "Musis",
+    "c": "la-p232",
+    "f": "dativo plural",
+    "fn": "para quem: para as Musas"
+   }
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g011"
+  ]
+ },
+ {
+  "id": "la-u250",
+  "tipo": "frase",
+  "la": "Numen ubi est?",
+  "pt": "Onde está a divindade?",
+  "gabarito": "[[[onde ~ aonde] [está ~ anda] [a divindade ~ o poder divino ~ o nume ~ a vontade divina] ~ [a divindade ~ o poder divino ~ o nume] onde está] ~ Onde se encontra o poder divino ~ Onde está a deidade]",
+  "aceitas": [],
+  "distratores": [
+   "Onde estão as divindades?",
+   "De onde é a divindade?",
+   "Onde estava a divindade?",
+   "A divindade está aqui?"
+  ],
+  "nota": "Numen: nominativo singular, o sujeito.\nest: presente do indicativo, 3ª pessoa do singular.\nMedeia, abandonada por Jasão, pergunta pelos deuses que ele jurou e enganou: «Onde está a divindade? Onde os deuses?». Numen é o poder de um deus, e daí o próprio deus.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Ovídio, Heroides XII,119",
+  "requer": "la-p234",
+  "requerTodas": [
+   "la-p234",
+   "la-p082",
+   "la-p003"
+  ],
+  "palavras": [
+   {
+    "w": "Numen",
+    "c": "la-p234",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "ubi",
+    "c": "la-p082"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-u251",
+  "tipo": "frase",
+  "la": "Nihil me laesistis.",
+  "pt": "Em nada me ofendestes.",
+  "gabarito": "[[[em nada ~ nada ~ de modo nenhum] [me ofendestes ~ me feristeis ~ me magoastes ~ me prejudicastes ~ me ofenderam ~ me feriram ~ me magoaram] ~ [vós ~ vocês ~] não me [ofendestes ~ ofenderam ~ magoaram ~ feriram] em nada] ~ Não me fizestes mal algum ~ Vocês em nada me prejudicaram]",
+  "aceitas": [],
+  "distratores": [
+   "Em nada vos ofendi.",
+   "Em nada me ofendeste.",
+   "Em nada me ofendereis.",
+   "Nada me ofendeu."
+  ],
+  "nota": "Nihil: acusativo neutro singular, palavra sem card: «em nada».\nme: acusativo singular, objeto de laesistis.\nlaesistis: perfeito do indicativo, 2ª pessoa do plural.\nSão Paulo aos gálatas: «sede como eu, porque eu também sou como vós; em nada me ofendestes». Laesistis é o perfeito de laedo (laes- + -istis), na 2ª pessoa do plural.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Gl 4,12",
+  "requer": "la-p235",
+  "requerTodas": [
+   "la-p004",
+   "la-p235"
+  ],
+  "palavras": [
+   {
+    "w": "Nihil",
+    "f": "acusativo neutro singular",
+    "fn": "palavra sem card: «em nada»"
+   },
+   {
+    "w": "me",
+    "c": "la-p004",
+    "f": "acusativo singular",
+    "fn": "objeto de laesistis"
+   },
+   {
+    "w": "laesistis",
+    "c": "la-p235",
+    "f": "perfeito do indicativo, 2ª pessoa do plural"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-u252",
+  "tipo": "frase",
+  "la": "Quid est veritas?",
+  "pt": "Que é a verdade?",
+  "gabarito": "[[[que ~ o que ~ o quê] é [a ~] verdade ~ a verdade é o quê] ~ Que coisa é a verdade ~ O que vem a ser a verdade]",
+  "aceitas": [],
+  "distratores": [
+   "Quem é a verdade?",
+   "Que era a verdade?",
+   "Que são as verdades?",
+   "A verdade é alguma coisa?"
+  ],
+  "nota": "Quid: nominativo neutro singular, interrogativo: o quê.\nest: presente do indicativo, 3ª pessoa do singular.\nveritas: nominativo singular, o sujeito.\nA pergunta de Pilatos a Jesus, que acabara de dizer: «todo aquele que é da verdade ouve a minha voz». Quid é o neutro de quis: «o quê?»; quis é «quem?».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Jo 18,38",
+  "requer": "la-p236",
+  "requerTodas": [
+   "la-p236",
+   "la-p003",
+   "la-p010"
+  ],
+  "palavras": [
+   {
+    "w": "Quid",
+    "c": "la-p236",
+    "f": "nominativo neutro singular",
+    "fn": "interrogativo: o quê"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "veritas",
+    "c": "la-p010",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   }
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-u253",
+  "tipo": "frase",
+  "la": "Quive estis in armis?",
+  "pt": "ou quem sois vós, armados?",
+  "gabarito": "[[ou ~] quem [sois ~ são] [vós ~ vocês ~] [armados ~ em armas ~ de armas na mão ~ com armas] ~ Ou quem são vocês com essas armas]",
+  "aceitas": [],
+  "distratores": [
+   "e quem sois vós, armados?",
+   "ou quem és tu, armado?",
+   "ou quem éreis vós, armados?",
+   "ou de quem são as armas?"
+  ],
+  "nota": "Qui: nominativo masculino plural, interrogativo: quem.\nestis: presente do indicativo, 2ª pessoa do plural.\nin: preposição com ablativo.\narmis: ablativo plural, com in: armados.\nVolcente, que volta com os cavaleiros latinos, surpreende Niso e Euríalo na noite: «Parai! Que motivo de viagem? Ou quem sois, armados?». A enclítica -ve, colada em qui, é «ou».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Vergílio, Eneida IX,376",
+  "requer": "la-p237",
+  "requerTodas": [
+   "la-p064",
+   "la-p237",
+   "la-p003",
+   "la-p022",
+   "la-p026"
+  ],
+  "palavras": [
+   {
+    "w": "Qui",
+    "c": "la-p064",
+    "f": "nominativo masculino plural",
+    "fn": "interrogativo: quem"
+   },
+   {
+    "w": "-ve",
+    "c": "la-p237"
+   },
+   {
+    "w": "estis",
+    "c": "la-p003",
+    "f": "presente do indicativo, 2ª pessoa do plural"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "armis",
+    "c": "la-p026",
+    "f": "ablativo plural",
+    "fn": "com in: armados"
+   }
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-u254",
+  "tipo": "frase",
+  "la": "Viderunt te, et doluerunt montes;",
+  "pt": "Os montes te viram e sentiram dor;",
+  "gabarito": "[[[os ~] montes te viram e [sentiram dor ~ doeram ~ sofreram ~ tremeram de dor ~ se afligiram] ~ [viram-te ~ te viram] e [sentiram dor ~ doeram ~ sofreram ~ tremeram de dor ~ se afligiram] [os ~] montes] ~ Os montes viram-te e ficaram aflitos]",
+  "aceitas": [],
+  "distratores": [
+   "Viste os montes, e eles sentiram dor;",
+   "Os montes te veem e sentem dor;",
+   "Os montes te viram e te causaram dor;",
+   "O monte te viu e sentiu dor;"
+  ],
+  "nota": "Viderunt: perfeito do indicativo, 3ª pessoa do plural, o sujeito é montes.\nte: acusativo singular, objeto: tu, o Senhor.\ndoluerunt: perfeito do indicativo, 3ª pessoa do plural.\nmontes: nominativo plural, palavra sem card: «os montes»; o sujeito.\nNo cântico de Habacuc, a natureza estremece diante de Deus que vem: «os montes te viram e sentiram dor». O sujeito dos dois verbos é montes, que vem no fim.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Hab 3,10",
+  "requer": "la-p238",
+  "requerTodas": [
+   "la-p039",
+   "la-p007",
+   "la-p009",
+   "la-p238"
+  ],
+  "palavras": [
+   {
+    "w": "Viderunt",
+    "c": "la-p039",
+    "f": "perfeito do indicativo, 3ª pessoa do plural",
+    "fn": "o sujeito é montes"
+   },
+   {
+    "w": "te",
+    "c": "la-p007",
+    "f": "acusativo singular",
+    "fn": "objeto: tu, o Senhor"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "doluerunt",
+    "c": "la-p238",
+    "f": "perfeito do indicativo, 3ª pessoa do plural"
+   },
+   {
+    "w": "montes",
+    "f": "nominativo plural",
+    "fn": "palavra sem card: «os montes»; o sujeito"
+   }
+  ],
+  "conceitos": [
+   "la-g009",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-u255",
+  "tipo": "frase",
+  "la": "quot homines, tot causae;",
+  "pt": "quantos homens, tantas causas;",
+  "gabarito": "[[quantos homens ~ quantas pessoas] [tantas causas ~ tantos casos ~ tantos processos] ~ há tantas causas quantos são os homens ~ tantos motivos quantas pessoas ~ quantos são os homens tantas são as causas]",
+  "aceitas": [],
+  "distratores": [
+   "tantos homens e tantas causas;",
+   "quantos homens, tanta causa;",
+   "quantos homens têm tantas causas;",
+   "os homens de tantas causas;"
+  ],
+  "nota": "quot: palavra sem card: «quantos».\nhomines: nominativo plural.\ntot: concorda com causae.\ncausae: nominativo plural.\nAntônio, no diálogo de Cícero, diz que os casos da oratória parecem infinitos se se olha para as pessoas: «quantos homens, tantas causas». O par quot… tot é «quantos… tantos», e nenhum dos dois se declina.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Cícero, Do orador II,140",
+  "requer": "la-p239",
+  "requerTodas": [
+   "la-p015",
+   "la-p239",
+   "la-p194"
+  ],
+  "palavras": [
+   {
+    "w": "quot",
+    "fn": "palavra sem card: «quantos»"
+   },
+   {
+    "w": "homines",
+    "c": "la-p015",
+    "f": "nominativo plural"
+   },
+   {
+    "w": "tot",
+    "c": "la-p239",
+    "fn": "concorda com causae"
+   },
+   {
+    "w": "causae",
+    "c": "la-p194",
+    "f": "nominativo plural"
+   }
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-u256",
+  "tipo": "frase",
+  "la": "Nemo est casu bonus.",
+  "pt": "Ninguém é bom por acaso.",
+  "gabarito": "[[ninguém ~ nenhum homem] [é ~ se torna ~ fica] bom [por acaso ~ ao acaso ~ por sorte ~ por obra do acaso] ~ Ninguém é por acaso bom ~ Não existe ninguém que seja bom por acaso]",
+  "aceitas": [],
+  "distratores": [
+   "Ninguém é bom para o acaso.",
+   "O acaso não é bom para ninguém.",
+   "Ninguém foi bom por acaso.",
+   "Ninguém é bom no acaso."
+  ],
+  "nota": "Nemo: nominativo singular, palavra sem card: «ninguém»; o sujeito.\nest: presente do indicativo, 3ª pessoa do singular.\ncasu: ablativo singular, como: por acaso.\nbonus: nominativo masculino singular, predicativo.\nSêneca a Lucílio: «Ninguém é bom por acaso. A virtude se aprende». Casu, ablativo de casus (4ª declinação), diz o modo: «por acaso».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Sêneca, Cartas a Lucílio CXXIII,16",
+  "requer": "la-p241",
+  "requerTodas": [
+   "la-p003",
+   "la-p241",
+   "la-p006"
+  ],
+  "palavras": [
+   {
+    "w": "Nemo",
+    "f": "nominativo singular",
+    "fn": "palavra sem card: «ninguém»; o sujeito"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "casu",
+    "c": "la-p241",
+    "f": "ablativo singular",
+    "fn": "como: por acaso"
+   },
+   {
+    "w": "bonus",
+    "c": "la-p006",
+    "f": "nominativo masculino singular",
+    "fn": "predicativo"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-u257",
+  "tipo": "frase",
+  "la": "quo non livor adit?",
+  "pt": "aonde a inveja não chega?",
+  "gabarito": "[[[aonde ~ onde ~ para onde ~ a que lugar] [a inveja ~ o ciúme ~ a maledicência] não [chega ~ vai ~ alcança] ~ [aonde ~ onde ~ a que lugar] não [chega ~ vai] [a inveja ~ o ciúme]] ~ Aonde é que a inveja não vai]",
+  "aceitas": [],
+  "distratores": [
+   "de onde a inveja não vem?",
+   "aonde a inveja não chegou?",
+   "aonde não chego com inveja?",
+   "aonde as invejas não chegam?"
+  ],
+  "nota": "quo: para onde.\nlivor: nominativo singular, palavra sem card: «a inveja»; o sujeito.\nadit: presente do indicativo, 3ª pessoa do singular, chega.\nOvídio, ao contar a origem do nome de abril, lembra os invejosos que querem tirar de Vênus a honra do mês: «aonde não chega a inveja?». Adit é o presente de adeo, ad + eo: «vai até», «chega».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Ovídio, Fastos IV,85",
+  "requer": "la-p244",
+  "requerTodas": [
+   "la-p075",
+   "la-p066",
+   "la-p244"
+  ],
+  "palavras": [
+   {
+    "w": "quo",
+    "c": "la-p075",
+    "fn": "para onde"
+   },
+   {
+    "w": "non",
+    "c": "la-p066"
+   },
+   {
+    "w": "livor",
+    "f": "nominativo singular",
+    "fn": "palavra sem card: «a inveja»; o sujeito"
+   },
+   {
+    "w": "adit",
+    "c": "la-p244",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "chega"
+   }
+  ],
+  "conceitos": [
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-u258",
+  "tipo": "frase",
+  "la": "Labor bonum non est.",
+  "pt": "O trabalho não é um bem.",
+  "gabarito": "[[[o ~] [trabalho ~ esforço ~ labor ~ cansaço ~ sofrimento] não é [um bem ~ bom ~ coisa boa] ~ não é [um bem ~ bom] [o ~] [trabalho ~ esforço ~ labor]] ~ A fadiga não é coisa boa ~ O labor não constitui um bem]",
+  "aceitas": [],
+  "distratores": [
+   "O bem não é trabalho.",
+   "O trabalho não era um bem.",
+   "Os trabalhos não são bens.",
+   "O trabalho bom não existe."
+  ],
+  "nota": "Labor: nominativo singular, o sujeito.\nbonum: nominativo neutro singular, como nome: um bem.\nest: presente do indicativo, 3ª pessoa do singular.\nSêneca a Lucílio: «O trabalho não é um bem. O que é então o bem? Desprezar o trabalho». Bonum, neutro, é «um bem», e por isso não concorda com labor, que é masculino.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Sêneca, Cartas a Lucílio XXXI,4",
+  "requer": "la-p245",
+  "requerTodas": [
+   "la-p245",
+   "la-p006",
+   "la-p066",
+   "la-p003"
+  ],
+  "palavras": [
+   {
+    "w": "Labor",
+    "c": "la-p245",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "bonum",
+    "c": "la-p006",
+    "f": "nominativo neutro singular",
+    "fn": "como nome: um bem"
+   },
+   {
+    "w": "non",
+    "c": "la-p066"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-u259",
+  "tipo": "frase",
+  "la": "mater te impulit:",
+  "pt": "a mãe te impeliu:",
+  "gabarito": "[[[a ~ tua ~ a tua] mãe [te levou a isso ~ te impeliu ~ te empurrou ~ te obrigou ~ te forçou ~ te induziu ~ te levou ~ levou-te a isso ~ impeliu-te] ~ foi [a ~ tua ~ a tua] mãe que [te levou a isso ~ te impeliu ~ te empurrou ~ te obrigou ~ te levou]] ~ A mãe te instigou]",
+  "aceitas": [],
+  "distratores": [
+   "tu impeliste a mãe:",
+   "a mãe te impele:",
+   "a mãe me impeliu:",
+   "as mães te impeliram:"
+  ],
+  "nota": "mater: nominativo singular, o sujeito.\nte: acusativo singular, objeto de impulit.\nimpulit: perfeito do indicativo, 3ª pessoa do singular.\nFala da comédia A sogra, de Terêncio: «a mãe te levou a isso». Impulit é o perfeito de impello (impul-), o mesmo tema do impulerit da Eneida.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Terêncio, A sogra IV,4,625",
+  "requer": "la-p246",
+  "requerTodas": [
+   "la-p116",
+   "la-p007",
+   "la-p246"
+  ],
+  "palavras": [
+   {
+    "w": "mater",
+    "c": "la-p116",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "te",
+    "c": "la-p007",
+    "f": "acusativo singular",
+    "fn": "objeto de impulit"
+   },
+   {
+    "w": "impulit",
+    "c": "la-p246",
+    "f": "perfeito do indicativo, 3ª pessoa do singular"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-u260",
+  "tipo": "frase",
+  "la": "Tantae molis erat Romanam condere gentem!",
+  "pt": "Tamanho esforço era fundar o povo romano!",
+  "gabarito": "[[[tamanho ~ tão grande ~ tanto] [esforço ~ trabalho ~ peso ~ custo] [era ~ custava ~ foi ~ exigia] fundar [a raça romana ~ o povo romano ~ a nação romana ~ a gente romana ~ a estirpe romana] ~ [era ~ foi] de [tamanho ~ tão grande ~ tanto] [esforço ~ trabalho ~ peso] fundar [a raça romana ~ o povo romano ~ a nação romana ~ a gente romana] ~ fundar [a raça romana ~ o povo romano ~ a nação romana] [era ~ foi ~ custava] [tamanho ~ tão grande ~ tanto] [esforço ~ trabalho]] ~ De tão grande peso era fundar a gente romana ~ Era tamanho o esforço de fundar o povo romano ~ Tamanha era a dificuldade para fundar a nação romana ~ Fundar a gente romana era obra de tamanha monta]",
+  "aceitas": [],
+  "distratores": [
+   "Tamanho esforço será fundar o povo romano!",
+   "Tamanho esforço era fundar os povos romanos!",
+   "Tão grande era o esforço dos romanos para fundar o povo!",
+   "Tamanho esforço fundava o povo romano!"
+  ],
+  "nota": "Tantae: genitivo feminino singular, concorda com molis.\nmolis: genitivo singular, palavra sem card (de moles): «o peso», «o esforço»; de quanto custo.\nerat: imperfeito do indicativo, 3ª pessoa do singular.\nRomanam: acusativo feminino singular, nome próprio, romano: concorda com gentem.\ncondere: infinitivo presente, o sujeito de erat: fundar.\ngentem: acusativo singular, objeto de condere.\nO verso que fecha a abertura da Eneida, depois da ira de Juno e dos anos de errância dos troianos: «tamanho esforço era fundar a raça romana!». Tantae molis é genitivo de qualidade: «(coisa) de tão grande peso».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Vergílio, Eneida I,33",
+  "requer": "la-p247",
+  "requerTodas": [
+   "la-p247",
+   "la-p003",
+   "la-p226",
+   "la-p020"
+  ],
+  "palavras": [
+   {
+    "w": "Tantae",
+    "c": "la-p247",
+    "f": "genitivo feminino singular",
+    "fn": "concorda com molis"
+   },
+   {
+    "w": "molis",
+    "f": "genitivo singular",
+    "fn": "palavra sem card (de moles): «o peso», «o esforço»; de quanto custo"
+   },
+   {
+    "w": "erat",
+    "c": "la-p003",
+    "f": "imperfeito do indicativo, 3ª pessoa do singular"
+   },
+   {
+    "w": "Romanam",
+    "f": "acusativo feminino singular",
+    "fn": "nome próprio, romano: concorda com gentem"
+   },
+   {
+    "w": "condere",
+    "c": "la-p226",
+    "f": "infinitivo presente",
+    "fn": "o sujeito de erat: fundar"
+   },
+   {
+    "w": "gentem",
+    "c": "la-p020",
+    "f": "acusativo singular",
+    "fn": "objeto de condere"
+   }
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g008",
+   "la-g013",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-u261",
+  "tipo": "frase",
+  "la": "Tune es ille, qui conturbas Israel?",
+  "pt": "És tu aquele que perturba Israel?",
+  "gabarito": "[[[és ~ é] [tu ~ você] [aquele ~ o homem] que [perturba ~ perturbas ~ agita ~ agitas ~ transtorna ~ transtornas] Israel ~ [tu ~ você] [és ~ é] aquele que [perturba ~ perturbas ~ transtorna ~ transtornas] Israel ~ [acaso ~ será que] [és ~ é] [tu ~ você] aquele que [perturba ~ perturbas] Israel] ~ És tu esse que põe Israel em desordem ~ Tu és aquele que inquieta Israel]",
+  "aceitas": [],
+  "distratores": [
+   "Eras tu aquele que perturbava Israel?",
+   "És tu aquele que Israel perturba?",
+   "Sou eu aquele que perturba Israel?",
+   "São eles os que perturbam Israel?"
+  ],
+  "nota": "Tu: nominativo singular, o sujeito.\n-ne: faz a pergunta.\nes: presente do indicativo, 2ª pessoa do singular.\nille: nominativo masculino singular, aquele.\nqui: nominativo masculino singular, sujeito de conturbas.\nconturbas: presente do indicativo, 2ª pessoa do singular, palavra sem card: «perturbas».\nIsrael: acusativo singular, nome próprio, Israel: o objeto.\nO rei Acab encontra o profeta Elias depois de três anos de seca: «És tu aquele que perturba Israel?». Tu + -ne: a enclítica faz a pergunta. Conturbas está na 2ª pessoa porque concorda com tu; o português diz «aquele que perturba».",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "1Rs 18,17",
+  "requer": "la-p248",
+  "requerTodas": [
+   "la-p007",
+   "la-p248",
+   "la-p003",
+   "la-p215",
+   "la-p064"
+  ],
+  "palavras": [
+   {
+    "w": "Tu",
+    "c": "la-p007",
+    "f": "nominativo singular",
+    "fn": "o sujeito"
+   },
+   {
+    "w": "-ne",
+    "c": "la-p248",
+    "fn": "faz a pergunta"
+   },
+   {
+    "w": "es",
+    "c": "la-p003",
+    "f": "presente do indicativo, 2ª pessoa do singular"
+   },
+   {
+    "w": "ille",
+    "c": "la-p215",
+    "f": "nominativo masculino singular",
+    "fn": "aquele"
+   },
+   {
+    "w": "qui",
+    "c": "la-p064",
+    "f": "nominativo masculino singular",
+    "fn": "sujeito de conturbas"
+   },
+   {
+    "w": "conturbas",
+    "f": "presente do indicativo, 2ª pessoa do singular",
+    "fn": "palavra sem card: «perturbas»"
+   },
+   {
+    "w": "Israel",
+    "f": "acusativo singular",
+    "fn": "nome próprio, Israel: o objeto"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-u262",
+  "tipo": "frase",
+  "la": "bono animo es:",
+  "pt": "tem bom ânimo:",
+  "gabarito": "[[tem ~ tenha ~ mantém ~ mantenha] bom ânimo ~ [sê ~ seja ~ fica ~ fique ~ está ~ esteja] de bom ânimo ~ [fica ~ fique ~ está ~ esteja] [tranquilo ~ calmo ~ sossegado ~ animado] ~ [ânimo ~ coragem ~ não te preocupes ~ não se preocupe]]",
+  "aceitas": [],
+  "distratores": [
+   "estavas de bom ânimo:",
+   "tive bom ânimo:",
+   "o bom ânimo é teu:",
+   "tende bom ânimo:"
+  ],
+  "nota": "bono: ablativo masculino singular, concorda com animo.\nanimo: ablativo singular, a disposição: de bom ânimo.\nes: imperativo presente, 2ª pessoa do singular, sê.\nNa comédia Os adelfos, de Terêncio, o escravo Siro tranquiliza Ctesifão: «fica tranquilo». Bono animo es, «sê de bom ânimo»: o ablativo diz a disposição, e es aqui é o imperativo de sum.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "Terêncio, Os adelfos II,4,284",
+  "requer": "la-p249",
+  "requerTodas": [
+   "la-p006",
+   "la-p249",
+   "la-p003"
+  ],
+  "palavras": [
+   {
+    "w": "bono",
+    "c": "la-p006",
+    "f": "ablativo masculino singular",
+    "fn": "concorda com animo"
+   },
+   {
+    "w": "animo",
+    "c": "la-p249",
+    "f": "ablativo singular",
+    "fn": "a disposição: de bom ânimo"
+   },
+   {
+    "w": "es",
+    "c": "la-p003",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "sê"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g011"
+  ]
+ },
+ {
+  "id": "la-u263",
+  "tipo": "frase",
+  "la": "Et corpora caelestia, et corpora terrestria:",
+  "pt": "Há corpos celestes e corpos terrestres:",
+  "gabarito": "[[há ~ existem ~ e há ~ e existem ~] [tanto ~] corpos celestes [e ~ como] corpos terrestres ~ E corpos celestes e corpos terrestres ~ Há corpos celestes e há corpos terrestres ~ E corpos celestiais e corpos terrenos ~ Tanto corpos celestes quanto corpos terrestres]",
+  "aceitas": [],
+  "distratores": [
+   "E o corpo celeste e o corpo terrestre:",
+   "Havia corpos celestes e corpos terrestres:",
+   "Há corpos celestes, e não terrestres:",
+   "Os corpos celestes são terrestres:"
+  ],
+  "nota": "Et: et… et: tanto… como.\ncorpora: nominativo plural.\ncaelestia: nominativo neutro plural, concorda com corpora.\ncorpora: nominativo plural.\nterrestria: nominativo neutro plural, palavra sem card: «terrestres».\nSão Paulo explica a ressurreição: nem toda carne é a mesma, e há corpos celestes e corpos terrestres, cada um com a sua glória. Caelestia é o neutro plural de caelestis (3ª declinação), concordando com corpora.",
+  "nivel": "A1",
+  "tags": [
+   "frase de uso"
+  ],
+  "fonte": "1Cor 15,40",
+  "requer": "la-p250",
+  "requerTodas": [
+   "la-p009",
+   "la-p063",
+   "la-p250"
+  ],
+  "palavras": [
+   {
+    "w": "Et",
+    "c": "la-p009",
+    "fn": "et… et: tanto… como"
+   },
+   {
+    "w": "corpora",
+    "c": "la-p063",
+    "f": "nominativo plural"
+   },
+   {
+    "w": "caelestia",
+    "c": "la-p250",
+    "f": "nominativo neutro plural",
+    "fn": "concorda com corpora"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "corpora",
+    "c": "la-p063",
+    "f": "nominativo plural"
+   },
+   {
+    "w": "terrestria",
+    "f": "nominativo neutro plural",
+    "fn": "palavra sem card: «terrestres»"
+   }
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ }
+]
