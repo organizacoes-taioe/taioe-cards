@@ -1,8 +1,8 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-10-24",
- "total": 1972,
+ "gerado_em": "2026-10-25",
+ "total": 1989,
  "cards": [
   {
    "idioma": "es",
@@ -83282,6 +83282,723 @@
    ],
    "publicos": [
     "pt"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "p1076",
+   "tipo": "palavra",
+   "es": "cultivar",
+   "pt": "cultivar",
+   "en": "to cultivate",
+   "aceitas": [
+    "cultivar",
+    "plantar"
+   ],
+   "aceitasEn": [
+    "to cultivate",
+    "cultivate",
+    "to grow",
+    "grow",
+    "to farm",
+    "farm"
+   ],
+   "distratores": [
+    "colher",
+    "regar",
+    "cultuar",
+    "podar"
+   ],
+   "distratoresEn": [
+    "to harvest",
+    "to water",
+    "to worship",
+    "to prune"
+   ],
+   "nivel": "B1",
+   "tags": [
+    "verbo",
+    "natureza"
+   ],
+   "sinonimosEs": [
+    "plantar"
+   ],
+   "nota": "Cultiva-se a terra, a planta e também o que se quer fazer crescer: «cultivar la amistad», «cultivar la paciencia». Na horta de casa, diz-se também «plantar»: «planto tomates».",
+   "notaEn": "One cultivates land and plants, and anything one wants to grow: «cultivar la amistad», «cultivar la paciencia». For a home garden, «plantar» is common too: «planto tomates»."
+  },
+  {
+   "idioma": "es",
+   "id": "p1077",
+   "tipo": "palavra",
+   "es": "la rosa",
+   "pt": "a rosa",
+   "en": "the rose",
+   "aceitas": [
+    "rosa"
+   ],
+   "aceitasEn": [
+    "rose",
+    "the rose"
+   ],
+   "distratores": [
+    "a margarida",
+    "a tulipa",
+    "a violeta",
+    "a orquídea"
+   ],
+   "distratoresEn": [
+    "the daisy",
+    "the tulip",
+    "the violet",
+    "the orchid"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "substantivo",
+    "natureza"
+   ],
+   "nota": "Também é a cor: «de color rosa», «un vestido rosa», cor-de-rosa. A planta é «el rosal», a roseira.",
+   "notaEn": "Also the colour pink: «de color rosa», «un vestido rosa». The plant is «el rosal», the rosebush."
+  },
+  {
+   "idioma": "es",
+   "id": "p1078",
+   "tipo": "palavra",
+   "es": "julio",
+   "pt": "julho",
+   "en": "July",
+   "aceitas": [
+    "julho"
+   ],
+   "aceitasEn": [
+    "july"
+   ],
+   "distratores": [
+    "junho",
+    "agosto",
+    "abril",
+    "março"
+   ],
+   "distratoresEn": [
+    "June",
+    "August",
+    "April",
+    "March"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "nota": "Os meses se escrevem com minúscula e sem artigo: «en julio», «el 4 de julio». Cuidado com o vizinho: «junio» é junho, e «julio», julho.",
+   "notaEn": "Months are lowercase and take no article: «en julio», «el 4 de julio». Watch the neighbour: «junio» is June, and «julio» is July."
+  },
+  {
+   "idioma": "es",
+   "id": "p1079",
+   "tipo": "palavra",
+   "es": "enero",
+   "pt": "janeiro",
+   "en": "January",
+   "aceitas": [
+    "janeiro"
+   ],
+   "aceitasEn": [
+    "january"
+   ],
+   "distratores": [
+    "fevereiro",
+    "dezembro",
+    "outubro",
+    "março"
+   ],
+   "distratoresEn": [
+    "February",
+    "December",
+    "October",
+    "March"
+   ],
+   "nivel": "A1",
+   "tags": [
+    "substantivo",
+    "cotidiano"
+   ],
+   "nota": "Minúscula e sem artigo, como todos os meses: «en enero», «el 6 de enero». O primeiro dia se diz «el uno» ou «el primero de enero».",
+   "notaEn": "Lowercase and no article, like every month: «en enero», «el 6 de enero». The first day is «el uno» or «el primero de enero»."
+  },
+  {
+   "idioma": "es",
+   "id": "p1080",
+   "tipo": "palavra",
+   "es": "franco",
+   "pt": "franco",
+   "en": "frank",
+   "aceitas": [
+    "franco",
+    "franca",
+    "sincero",
+    "sincera"
+   ],
+   "aceitasEn": [
+    "frank",
+    "candid",
+    "open",
+    "straightforward"
+   ],
+   "distratores": [
+    "fraco",
+    "falso",
+    "tímido",
+    "grosseiro"
+   ],
+   "distratoresEn": [
+    "weak",
+    "false",
+    "shy",
+    "rude"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "social"
+   ],
+   "sinonimosEs": [
+    "sincero"
+   ],
+   "nota": "É quem diz o que pensa, sem rodeio: «para ser franco», «una sonrisa franca». Também quer dizer livre de imposto, como em «zona franca» e «puerto franco». O fraco é «débil».",
+   "notaEn": "Someone who says what they think, plainly: «para ser franco», «una sonrisa franca». It also means duty-free, as in «zona franca» and «puerto franco». Weak is «débil»."
+  },
+  {
+   "idioma": "es",
+   "id": "p1081",
+   "tipo": "palavra",
+   "es": "cruel",
+   "pt": "cruel",
+   "en": "cruel",
+   "aceitas": [
+    "cruel",
+    "impiedoso",
+    "impiedosa",
+    "desumano",
+    "desumana",
+    "sem piedade"
+   ],
+   "aceitasEn": [
+    "cruel",
+    "heartless",
+    "merciless",
+    "ruthless"
+   ],
+   "distratores": [
+    "cru",
+    "covarde",
+    "frio",
+    "ciumento"
+   ],
+   "distratoresEn": [
+    "raw",
+    "cowardly",
+    "cold",
+    "jealous"
+   ],
+   "nivel": "B2",
+   "tags": [
+    "adjetivo",
+    "social"
+   ],
+   "nota": "Igual no masculino e no feminino: «un hombre cruel», «una broma cruel». O plural é «crueles». O cru é «crudo».",
+   "notaEn": "Same form for masculine and feminine: «un hombre cruel», «una broma cruel». The plural is «crueles». Raw is «crudo»."
+  },
+  {
+   "idioma": "es",
+   "id": "p1082",
+   "tipo": "palavra",
+   "es": "arrancar",
+   "pt": "arrancar / dar partida",
+   "en": "to pull out / to start",
+   "aceitas": [
+    "arrancar",
+    "dar partida",
+    "dar a partida",
+    "ligar o motor",
+    "ligar o carro",
+    "dar partida no carro"
+   ],
+   "aceitasEn": [
+    "to pull out",
+    "pull out",
+    "to tear out",
+    "tear out",
+    "to uproot",
+    "uproot",
+    "to start",
+    "start",
+    "to start the engine",
+    "start the engine"
+   ],
+   "distratores": [
+    "arranhar / riscar",
+    "amarrar / prender",
+    "parar / desligar",
+    "aguentar / suportar"
+   ],
+   "distratoresEn": [
+    "to scratch / to scrawl",
+    "to tie up / to fasten",
+    "to stop / to switch off",
+    "to endure / to bear"
+   ],
+   "nivel": "A2",
+   "tags": [
+    "verbo",
+    "cotidiano"
+   ],
+   "nota": "Dois usos: tirar com força, pela raiz («arrancar una muela», «arrancar las malas hierbas»), e fazer o motor pegar: «el coche no arranca», o carro não pega.",
+   "notaEn": "Two uses: to pull out by force, by the root («arrancar una muela», «arrancar las malas hierbas»), and to get an engine going: «el coche no arranca», the car won't start."
+  },
+  {
+   "idioma": "es",
+   "id": "p1083",
+   "tipo": "palavra",
+   "leitura": true,
+   "es": "el cardo",
+   "pt": "o cardo",
+   "en": "the thistle",
+   "aceitas": [
+    "cardo"
+   ],
+   "aceitasEn": [
+    "thistle",
+    "the thistle"
+   ],
+   "distratores": [
+    "o cacto",
+    "o trevo",
+    "o junco",
+    "o musgo"
+   ],
+   "distratoresEn": [
+    "the cactus",
+    "the clover",
+    "the reed",
+    "the moss"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "substantivo",
+    "natureza"
+   ],
+   "nota": "Planta do campo, de folhas e caule cheios de espinhos. Palavra rara fora do campo e da poesia; em Martí, com a urtiga, é a planta que fere.",
+   "notaEn": "A wild plant with spiny leaves and stems. A rare word outside the countryside and poetry; in Martí, with the nettle, it is the plant that hurts."
+  },
+  {
+   "idioma": "es",
+   "id": "p1084",
+   "tipo": "palavra",
+   "leitura": true,
+   "es": "la ortiga",
+   "pt": "a urtiga",
+   "en": "the nettle",
+   "aceitas": [
+    "urtiga"
+   ],
+   "aceitasEn": [
+    "nettle",
+    "the nettle",
+    "stinging nettle",
+    "the stinging nettle"
+   ],
+   "distratores": [
+    "a hortelã",
+    "a samambaia",
+    "a hera",
+    "a babosa"
+   ],
+   "distratoresEn": [
+    "the mint",
+    "the fern",
+    "the ivy",
+    "the aloe"
+   ],
+   "nivel": "C1",
+   "tags": [
+    "substantivo",
+    "natureza"
+   ],
+   "nota": "A urtiga, cujas folhas queimam a pele ao toque. Palavra rara fora do campo e da poesia.",
+   "notaEn": "The nettle, whose leaves sting the skin. A rare word outside the countryside and poetry."
+  },
+  {
+   "idioma": "es",
+   "id": "u517",
+   "tipo": "frase",
+   "requer": "p1076",
+   "es": "Mi abuelo cultiva tomates.",
+   "pt": "Meu avô planta tomates.",
+   "en": "My grandfather grows tomatoes.",
+   "aceitas": [
+    "meu avo planta tomates",
+    "meu avo cultiva tomates",
+    "meu vo planta tomates",
+    "meu vo cultiva tomates"
+   ],
+   "aceitasEn": [
+    "my grandfather grows tomatoes",
+    "my grandpa grows tomatoes",
+    "my granddad grows tomatoes",
+    "my grandfather cultivates tomatoes",
+    "my grandfather plants tomatoes"
+   ],
+   "distratores": [
+    "Meu avô colhe tomates.",
+    "Meu avô vende tomates.",
+    "Meu avô compra tomates.",
+    "Meu avô corta tomates."
+   ],
+   "distratoresEn": [
+    "My grandfather picks tomatoes.",
+    "My grandfather sells tomatoes.",
+    "My grandfather buys tomatoes.",
+    "My grandfather cuts tomatoes."
+   ],
+   "nivel": "B1",
+   "tags": [
+    "natureza"
+   ],
+   "nota": "Na horta de casa, «cultivar» e «plantar» dizem o mesmo; «cultivar» fala do cuidado de todo o ano, até a colheita, que é «cosechar».",
+   "notaEn": "For a home garden, «cultivar» and «plantar» both work; «cultivar» covers the whole year's care, up to the harvest, «cosechar».",
+   "requerTodas": [
+    "p1019",
+    "p1076",
+    "p690"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u518",
+   "tipo": "frase",
+   "requer": "p1077",
+   "es": "Me dio una rosa roja.",
+   "pt": "Ele me deu uma rosa vermelha.",
+   "en": "He gave me a red rose.",
+   "aceitas": [
+    "ele me deu uma rosa vermelha",
+    "ela me deu uma rosa vermelha",
+    "me deu uma rosa vermelha",
+    "ele deu-me uma rosa vermelha",
+    "ele deu uma rosa vermelha para mim",
+    "ele deu uma rosa vermelha pra mim",
+    "ela deu uma rosa vermelha para mim"
+   ],
+   "aceitasEn": [
+    "he gave me a red rose",
+    "she gave me a red rose",
+    "he gave a red rose to me",
+    "she gave a red rose to me"
+   ],
+   "distratores": [
+    "Ele me deu uma maçã vermelha.",
+    "Ele me deu uma caneta vermelha.",
+    "Ele me deu uma camisa vermelha.",
+    "Ele me deu uma bolsa vermelha."
+   ],
+   "distratoresEn": [
+    "He gave me a red apple.",
+    "He gave me a red pen.",
+    "He gave me a red shirt.",
+    "He gave me a red bag."
+   ],
+   "nivel": "A2",
+   "tags": [
+    "natureza"
+   ],
+   "nota": "«Rojo» concorda com a rosa: «una rosa roja», «unas rosas rojas». A cor-de-rosa é a própria palavra: «una blusa rosa».",
+   "notaEn": "«Rojo» agrees with the rose: «una rosa roja», «unas rosas rojas». The colour pink is the same word: «una blusa rosa».",
+   "requerTodas": [
+    "p356",
+    "p1077",
+    "p249"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u519",
+   "tipo": "frase",
+   "requer": "p1078",
+   "es": "Mi cumpleaños es en julio.",
+   "pt": "Meu aniversário é em julho.",
+   "en": "My birthday is in July.",
+   "aceitas": [
+    "meu aniversario e em julho",
+    "faco aniversario em julho",
+    "meu aniversario cai em julho"
+   ],
+   "aceitasEn": [
+    "my birthday is in july",
+    "my birthday s in july",
+    "my birthday falls in july"
+   ],
+   "distratores": [
+    "Meu aniversário é em junho.",
+    "Meu aniversário é em agosto.",
+    "Meu aniversário é em abril.",
+    "Meu aniversário é em março."
+   ],
+   "distratoresEn": [
+    "My birthday is in June.",
+    "My birthday is in August.",
+    "My birthday is in April.",
+    "My birthday is in March."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "Mês sem artigo e com minúscula: «en julio». Com o dia, entra «de»: «el 15 de julio».",
+   "notaEn": "Month without article, lowercase: «en julio». With the day, add «de»: «el 15 de julio».",
+   "requerTodas": [
+    "p631",
+    "p351",
+    "p1078"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u520",
+   "tipo": "frase",
+   "requer": "p1079",
+   "es": "Nos vemos en enero.",
+   "pt": "A gente se vê em janeiro.",
+   "en": "See you in January.",
+   "aceitas": [
+    "a gente se ve em janeiro",
+    "nos vemos em janeiro",
+    "nos veremos em janeiro",
+    "te vejo em janeiro",
+    "a gente se encontra em janeiro"
+   ],
+   "aceitasEn": [
+    "see you in january",
+    "we ll see each other in january",
+    "i ll see you in january",
+    "we ll meet in january"
+   ],
+   "distratores": [
+    "A gente se vê em fevereiro.",
+    "A gente se vê em dezembro.",
+    "A gente se vê em outubro.",
+    "A gente se vê em março."
+   ],
+   "distratoresEn": [
+    "See you in February.",
+    "See you in December.",
+    "See you in October.",
+    "See you in March."
+   ],
+   "nivel": "A1",
+   "tags": [
+    "cotidiano"
+   ],
+   "nota": "«Nos vemos» é a despedida de todo dia, com ou sem data: «nos vemos mañana», «nos vemos pronto». Os meses vão sem artigo: «en enero».",
+   "notaEn": "«Nos vemos» is the everyday goodbye, with or without a date: «nos vemos mañana», «nos vemos pronto». Months take no article: «en enero».",
+   "requerTodas": [
+    "p368",
+    "p1079"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u521",
+   "tipo": "frase",
+   "requer": "p1080",
+   "es": "Voy a ser franc{o|a} contigo.",
+   "pt": "Vou ser franc{o|a} com você.",
+   "en": "I'm going to be frank with you.",
+   "aceitas": [
+    "vou ser franc{o|a} com voce",
+    "vou ser franc{o|a} contigo",
+    "vou ser sincer{o|a} com voce",
+    "vou ser sincer{o|a} contigo",
+    "serei franc{o|a} com voce",
+    "serei sincer{o|a} com voce"
+   ],
+   "aceitasEn": [
+    "i m going to be frank with you",
+    "i am going to be frank with you",
+    "i ll be frank with you",
+    "i will be frank with you",
+    "i m going to be honest with you",
+    "i ll be honest with you"
+   ],
+   "aceitasEs": [
+    "Voy a ser franc{o|a} con usted."
+   ],
+   "distratores": [
+    "Vou ser dur{o|a} com você.",
+    "Vou ser just{o|a} com você.",
+    "Vou ser gentil com você.",
+    "Vou ser paciente com você."
+   ],
+   "distratoresEn": [
+    "I'm going to be hard on you.",
+    "I'm going to be fair with you.",
+    "I'm going to be kind to you.",
+    "I'm going to be patient with you."
+   ],
+   "nivel": "B2",
+   "tags": [
+    "social"
+   ],
+   "nota": "«Ser franco con alguien» é falar sem rodeio. Para abrir uma conversa difícil, também «para serte franco» ou «si te soy franco», para ser sincero.",
+   "notaEn": "«Ser franco con alguien» is to speak plainly. To open a hard conversation: «para serte franco» or «si te soy franco», to be honest.",
+   "requerTodas": [
+    "p355",
+    "p351",
+    "p1080"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u522",
+   "tipo": "frase",
+   "requer": "p1081",
+   "es": "No seas cruel con el perro.",
+   "pt": "Não seja cruel com o cachorro.",
+   "en": "Don't be cruel to the dog.",
+   "aceitas": [
+    "nao seja cruel com o cachorro",
+    "nao seja cruel com o cao",
+    "nao seja cruel com o cachorrinho",
+    "nao sejas cruel com o cachorro"
+   ],
+   "aceitasEn": [
+    "don t be cruel to the dog",
+    "do not be cruel to the dog",
+    "don t be cruel with the dog"
+   ],
+   "aceitasEs": [
+    "No sea cruel con el perro."
+   ],
+   "distratores": [
+    "Não seja injusto com o cachorro.",
+    "Não seja duro com o cachorro.",
+    "Não seja impaciente com o cachorro.",
+    "Não seja rígido com o cachorro."
+   ],
+   "distratoresEn": [
+    "Don't be unfair to the dog.",
+    "Don't be hard on the dog.",
+    "Don't be impatient with the dog.",
+    "Don't be strict with the dog."
+   ],
+   "nivel": "B2",
+   "tags": [
+    "animais"
+   ],
+   "nota": "O imperativo negativo de tú vem do subjuntivo: «no seas», e não «no eres». «Cruel» não muda no feminino: «una persona cruel».",
+   "notaEn": "The negative tú command comes from the subjunctive: «no seas», not «no eres». «Cruel» is the same in the feminine: «una persona cruel».",
+   "requerTodas": [
+    "p351",
+    "p1081",
+    "p671"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u523",
+   "tipo": "frase",
+   "requer": "p1082",
+   "es": "Arrancó una hoja del libro.",
+   "pt": "Arrancou uma folha do livro.",
+   "en": "He tore a page out of the book.",
+   "aceitas": [
+    "arrancou uma folha do livro",
+    "ele arrancou uma folha do livro",
+    "ela arrancou uma folha do livro",
+    "arrancou uma pagina do livro",
+    "rasgou uma folha do livro"
+   ],
+   "aceitasEn": [
+    "he tore a page out of the book",
+    "she tore a page out of the book",
+    "he ripped a page out of the book",
+    "she ripped a page out of the book",
+    "he tore a sheet out of the book",
+    "he tore out a page from the book",
+    "he pulled a page out of the book"
+   ],
+   "distratores": [
+    "Dobrou uma folha do livro.",
+    "Marcou uma folha do livro.",
+    "Copiou uma folha do livro.",
+    "Virou uma folha do livro."
+   ],
+   "distratoresEn": [
+    "He folded a page of the book.",
+    "He marked a page of the book.",
+    "He copied a page of the book.",
+    "He turned a page of the book."
+   ],
+   "nivel": "A2",
+   "tags": [
+    "objetos"
+   ],
+   "nota": "«Arrancar» é tirar com força de onde a coisa está presa: uma folha, um dente, uma planta pela raiz. «Del» é «de» + «el».",
+   "notaEn": "«Arrancar» is to pull something away from where it is attached: a page, a tooth, a plant by the root. «Del» is «de» + «el».",
+   "requerTodas": [
+    "p1082",
+    "p248",
+    "p501"
+   ]
+  },
+  {
+   "idioma": "es",
+   "id": "u524",
+   "tipo": "frase",
+   "requer": "p1082",
+   "es": "El coche no arranca.",
+   "pt": "O carro não pega.",
+   "en": "The car won't start.",
+   "aceitas": [
+    "o carro nao pega",
+    "o carro nao liga",
+    "o carro nao da partida",
+    "o carro nao quer pegar",
+    "o carro nao quer ligar",
+    "o carro nao arranca"
+   ],
+   "aceitasEn": [
+    "the car won t start",
+    "the car will not start",
+    "the car doesn t start",
+    "the car isn t starting",
+    "the car won t turn over"
+   ],
+   "regionaisEs": {
+    "El carro no arranca.": "em boa parte da América Latina",
+    "El auto no arranca.": "na Argentina, no Chile e no Uruguai"
+   },
+   "distratores": [
+    "O carro não freia.",
+    "O carro não acelera.",
+    "O carro não buzina.",
+    "O carro não para."
+   ],
+   "distratoresEn": [
+    "The car won't brake.",
+    "The car won't speed up.",
+    "The car won't honk.",
+    "The car won't stop."
+   ],
+   "nivel": "A2",
+   "tags": [
+    "cidade"
+   ],
+   "nota": "Para motor e carro, «arrancar» é pegar: «el coche no arranca». Também é sair do lugar: «el autobús arrancó», o ônibus arrancou. Em boa parte da América Latina, ligar o carro é também «prender el carro».",
+   "notaEn": "For engines and cars, «arrancar» is to start: «el coche no arranca». It also means to pull away: «el autobús arrancó». In much of Latin America, starting the car is also «prender el carro».",
+   "requerTodas": [
+    "p237",
+    "p1082"
    ]
   }
  ]
