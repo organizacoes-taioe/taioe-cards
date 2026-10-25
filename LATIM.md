@@ -352,12 +352,12 @@ para tudo. Se ficar excessivo, depois a gente vai ajustando.»
   vencer. A nota: a análise, a linha da tabela (pronomes, *sum*, *possum*) ou a terminação, e onde
   a forma aparece.
 - **Quais formas** (✔ D22): toda forma de frase do curso (trecho, primeira frase, frase de uso)
-  que não é a do dicionário, e as tabelas inteiras de *is*, *hic*, *qui*, *idem*, *ego*, *tu*,
+  que não é a do dicionário, e as tabelas inteiras de *is*, *hic*, *ille*, *qui*, *idem*, *ego*, *tu*,
   *nos*, *vos*, *sum* e *possum* (presente, imperfeito, futuro e perfeito do indicativo, presente
   do subjuntivo, infinitivo), também as formas que ainda não apareceram. Nos pronomes de três
   gêneros e em *sum* e *possum*, cujas formas do dicionário são muito diferentes entre si, cada
   uma ganha card, também a igual ao lema (*is*, *ea*, *id*; *sum*, *esse*, *fui*), pedido do Gere
-  (24/10). Em 24/10: 444 cards (132 das tabelas, 312 das frases). *iis* e *nos*, *vos* (acusativo)
+  (24/10). Em 25/10: 458 cards (146 das tabelas, 312 das frases). *iis* e *nos*, *vos* (acusativo)
   ficam na nota, sem card.
 - **Quando entra** (✔ D23): depois do card do lema (o dicionário primeiro). As do texto escolhido e
   das primeiras frases vêm na ordem de leitura, cada uma logo depois do lema dela (o «requer» de
@@ -376,13 +376,14 @@ para tudo. Se ficar excessivo, depois a gente vai ajustando.»
   seco; o resto perto da certa é «deu quase».
 - **Os dados.** `fonte/latim/flexoes.py`: `lista`; `faltam --saida X.json` (as formas sem card, com
   as frases, para a leva); `gravar [leva.json …]` junta as tabelas (no próprio script) e as levas
-  em `fonte/cards/la/15-flexoes.json` e refaz o `requerTodas` das frases presas. Nunca reescreve
+  em `fonte/cards/la/16-flexoes.json` e refaz o `requerTodas` das frases presas. Nunca reescreve
   card já gravado: a correção feita à mão fica. As levas das frases foram escritas por agentes com
   as regras de `fonte/latim/cache/levas/flexoes-REGRAS.md` (fora do git) e conferidas card a card.
   Campos: `la`, `lema`, `analise`, `pt`, `outras`, `aceitas`, `distratores`, `nota`, `conceitos`
   (o conceito do caso ou do tempo entra antes do card).
-- **Texto novo** (a *Eneida*, quando a leva dela entrar): o build avisa «forma(s) do latim sem card
-  de flexão»; `flexoes.py faltam` → a leva → `gravar` → build. Até lá o verso espera só os lemas.
+- **Texto novo**: o build avisa «forma(s) do latim sem card de flexão»; `flexoes.py faltam` → a leva
+  → `gravar` → build. Até lá o verso espera só os lemas e as flexões que já existem. A *Eneida*
+  (73 formas, 25/10) ficou para uma leva à parte, logo depois desta.
 - No banco: o tipo `flexao` no catálogo (infra, migração `20261024150000_latim_flexao`).
 
 ## 4. A resposta escrita: aceitar tudo o que está certo

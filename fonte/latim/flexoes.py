@@ -8,10 +8,10 @@ pronomes de três gêneros também as formas do dicionário (is, ea, id).
     python -I fonte/latim/flexoes.py faltam [--saida X.json] # as formas sem card, com o contexto,
                                                              # para quem escreve a leva
     python -I fonte/latim/flexoes.py gravar [leva.json ...]  # junta as tabelas e as levas em
-                                                             # 15-flexoes.json e refaz o
+                                                             # 16-flexoes.json e refaz o
                                                              # «requerTodas» das frases
 
-O «gravar» nunca reescreve um card que já está em 15-flexoes.json (a correção feita à mão fica):
+O «gravar» nunca reescreve um card que já está em 16-flexoes.json (a correção feita à mão fica):
 só acrescenta as formas novas, das tabelas ou das levas, e refaz o «requerTodas» de toda frase
 presa (os lemas e, depois deles, as flexões, na ordem da frase). Texto novo (a Eneida, por
 exemplo): «faltam» → a leva escrita → «gravar» → build.
@@ -33,7 +33,7 @@ import latim  # noqa: E402
 
 AQUI = Path(__file__).resolve().parent
 BARALHO = AQUI.parent / 'cards' / 'la'
-SAIDA = BARALHO / '15-flexoes.json'
+SAIDA = BARALHO / '16-flexoes.json'
 
 # o conceito de cada análise: entra antes do card (ver ordenarTrilhas no app)
 CONCEITOS = [
@@ -43,6 +43,8 @@ CONCEITOS = [
     ('perfeito do indicativo', 'la-g009'), ('futuro do indicativo', 'la-g010'),
     ('imperativo', 'la-g011'), ('presente do subjuntivo', 'la-g012'), ('infinitivo', 'la-g013'),
     ('particípio perfeito', 'la-g014'), ('passiv', 'la-g015'),
+    ('imperfeito do subjuntivo', 'la-g017'), ('perfeito do subjuntivo', 'la-g018'),
+    ('particípio presente', 'la-g019'),
 ]
 
 # ── as tabelas ──
@@ -105,8 +107,36 @@ TABELAS = {
             ('has', 'acusativo feminino plural', 'estas (objeto)', [], ['estas', 'essas']),
         ],
     },
+    'ille': {
+        'resumo': 'Singular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); '
+                  'illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, '
+                  'illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.',
+        'formas': [
+            ('ille', 'nominativo masculino singular', 'aquele (sujeito)', [], ['aquele', 'ele']),
+            ('illa', 'nominativo feminino singular; também ablativo feminino singular e nominativo e acusativo neutro plural',
+             'aquela (sujeito)', ['por aquela, com aquela', 'aquelas coisas'],
+             ['aquela', 'ela', 'por aquela', 'com aquela', 'naquela', 'aquelas coisas']),
+            ('illud', 'nominativo e acusativo neutro singular', 'aquilo', [], ['aquilo', 'isso']),
+            ('illius', 'genitivo singular, dos três gêneros', 'daquele, daquela', [],
+             ['daquele', 'daquela', 'daquilo', 'dele', 'dela']),
+            ('illi', 'dativo singular, dos três gêneros; também nominativo masculino plural', 'àquele, àquela',
+             ['aqueles (sujeito)'], ['àquele', 'àquela', 'a ele', 'a ela', 'lhe', 'aqueles', 'eles']),
+            ('illum', 'acusativo masculino singular', 'aquele (objeto)', [], ['aquele', 'o', 'ele']),
+            ('illam', 'acusativo feminino singular', 'aquela (objeto)', [], ['aquela', 'a', 'ela']),
+            ('illo', 'ablativo masculino e neutro singular', 'por aquele', ['com aquele', 'por aquilo, com aquilo'],
+             ['por aquele', 'com aquele', 'naquele', 'por aquilo', 'com aquilo', 'naquilo']),
+            ('illae', 'nominativo feminino plural', 'aquelas (sujeito)', [], ['aquelas', 'elas']),
+            ('illorum', 'genitivo masculino e neutro plural', 'daqueles', [], ['daqueles', 'deles']),
+            ('illarum', 'genitivo feminino plural', 'daquelas', [], ['daquelas', 'delas']),
+            ('illis', 'dativo e ablativo plural, dos três gêneros', 'àqueles, àquelas', ['por aqueles, com aqueles'],
+             ['àqueles', 'àquelas', 'a eles', 'a elas', 'lhes', 'por aqueles', 'com aqueles', 'naqueles',
+              'por aquelas', 'com aquelas', 'naquelas']),
+            ('illos', 'acusativo masculino plural', 'aqueles (objeto)', [], ['aqueles', 'os', 'eles']),
+            ('illas', 'acusativo feminino plural', 'aquelas (objeto)', [], ['aquelas', 'as', 'elas']),
+        ],
+    },
     'qui': {
-        'resumo': 'Singular: qui, quae, quod (nom.); quem, quam, quod (acus.); cuius (gen.); cui (dat.); quo, '
+        'resumo':'Singular: qui, quae, quod (nom.); quem, quam, quod (acus.); cuius (gen.); cui (dat.); quo, '
                   'qua, quo (abl.). Plural: qui, quae, quae (nom.); quos, quas, quae (acus.); quorum, quarum, '
                   'quorum (gen.); quibus (dat. e abl.).',
         'formas': [
@@ -321,7 +351,7 @@ TABELAS = {
 }
 # nos pronomes de três gêneros as formas do dicionário são muito diferentes entre si (is, ea, id):
 # cada uma ganha card, também a que coincide com o lema (pedido do Gere, 24/10/2026)
-TABELAS_COM_O_LEMA = {'is', 'hic', 'qui', 'idem', 'sum', 'possum'}
+TABELAS_COM_O_LEMA = {'is', 'hic', 'ille', 'qui', 'idem', 'sum', 'possum'}
 # os pessoais têm poucas formas: as alternativas erradas saem dos quatro juntos, e também do
 # nominativo de cada um, que não ganha card (é o card do lema)
 FAMILIA = {'ego': 'pessoais', 'tu': 'pessoais', 'nos': 'pessoais', 'vos': 'pessoais'}
@@ -380,8 +410,17 @@ def pede_card(forma, lema):
 
 
 def conceitos_de(analise):
+    """Os conceitos da primeira leitura. «imperfeito», «mais-que-perfeito» e «futuro perfeito»
+    contêm «perfeito»: o termo só conta inteiro."""
     primeira = analise.split(';')[0]
-    return [g for termo, g in CONCEITOS if termo in primeira][:2]
+    achados = []
+    for termo, g in CONCEITOS:
+        for m in re.finditer(re.escape(termo), primeira):
+            antes = primeira[:m.start()]
+            if not re.search(r'[\w-]$', antes) and not antes.endswith('futuro '):
+                achados.append(g)
+                break
+    return achados[:2]
 
 
 # ── a conferência das alternativas (a mesma régua do build: fonte/build.js, checarFormato) ──
@@ -642,6 +681,12 @@ def principal():
     if sobrando:
         print('flexões que nenhuma frase pede e nenhuma tabela tem (conferir):', ', '.join(sobrando))
     faltando = [f'{k[0]} ({porid[k[1]]["la"]})' for k in pedidas if k not in vistos]
+    for c in saida:   # os conceitos saem da análise: refeitos sempre
+        g = conceitos_de(c['analise'])
+        if g:
+            c['conceitos'] = g
+        else:
+            c.pop('conceitos', None)
     gravar_arquivo(SAIDA, saida)
     mudou = refazer_requer(cards, saida)
     arquivos = {}

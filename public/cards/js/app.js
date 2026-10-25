@@ -1862,10 +1862,13 @@ window.TaioeCardsApp = function (ctx) {
       Motor.liberado(c, progresso.cards, agora, progresso.arquivados));
     /* e o card de forma do verso que acabou de aparecer, ou o que o erro num caso puxou
        (LATIM.md §3.6) */
+    /* e as flexões do lema que acabou de estrear (LATIM.md §3.8) */
     if (TRILHAS) {
       CARDS.forEach(c => {
         if (c.tipo === 'forma' && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
             !Motor.arquivado(c.id, progresso.arquivados) && formaDaTrilha(c, ativosIds, progresso)) novas.push(c);
+        if (c.tipo === 'flexao' && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
+            !Motor.arquivado(c.id, progresso.arquivados) && daTrilha(c.id, null, ativosIds, progresso)) novas.push(c);
       });
     }
     if (!novas.length) return;

@@ -471,8 +471,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -505,8 +504,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -540,8 +538,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -572,8 +569,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -605,8 +601,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -640,8 +635,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -1858,8 +1852,8 @@
   "analise": "nominativo feminino singular; também vocativo feminino singular; também ablativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
   "pt": "minha (sujeito)",
   "outras": [
-   "ó minha",
-   "na minha"
+   "na minha",
+   "meus (sujeito)"
   ],
   "aceitas": [
    "minha",
@@ -1868,7 +1862,11 @@
    "na minha",
    "em minha",
    "pela minha",
-   "com a minha"
+   "com a minha",
+   "meus",
+   "os meus",
+   "minhas",
+   "as minhas"
   ],
   "distratores": [
    "meu (sujeito)",
@@ -2723,9 +2721,6 @@
   "tags": [
    "gramática",
    "flexão"
-  ],
-  "conceitos": [
-   "la-g009"
   ]
  },
  {
@@ -3838,9 +3833,6 @@
   "tags": [
    "gramática",
    "flexão"
-  ],
-  "conceitos": [
-   "la-g009"
   ]
  },
  {
@@ -6184,7 +6176,8 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g001"
+   "la-g001",
+   "la-g019"
   ]
  },
  {
@@ -9038,8 +9031,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -9067,8 +9059,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -9096,8 +9087,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -9124,8 +9114,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -9153,8 +9142,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -9182,8 +9170,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -10979,7 +10966,8 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g001"
+   "la-g001",
+   "la-g019"
   ]
  },
  {
@@ -11116,7 +11104,8 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g003"
+   "la-g003",
+   "la-g019"
   ]
  },
  {
@@ -13819,8 +13808,7 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g008",
-   "la-g009"
+   "la-g008"
   ]
  },
  {
@@ -14385,7 +14373,8 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g005"
+   "la-g005",
+   "la-g019"
   ]
  },
  {
@@ -14418,7 +14407,8 @@
    "flexão"
   ],
   "conceitos": [
-   "la-g001"
+   "la-g001",
+   "la-g019"
   ]
  },
  {
@@ -14598,6 +14588,429 @@
   ],
   "conceitos": [
    "la-g007"
+  ]
+ },
+ {
+  "id": "la-v445",
+  "tipo": "flexao",
+  "la": "ille",
+  "lema": "la-p215",
+  "analise": "nominativo masculino singular",
+  "pt": "aquele (sujeito)",
+  "aceitas": [
+   "aquele",
+   "ele"
+  ],
+  "distratores": [
+   "aquela (sujeito)",
+   "aquele (objeto)",
+   "aquilo",
+   "por aquele"
+  ],
+  "nota": "ille: nominativo masculino singular, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.\nNo texto: «litora, multum ille et terris iactatus et alto» (Vergílio, Eneida I,3).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-v446",
+  "tipo": "flexao",
+  "la": "illa",
+  "lema": "la-p215",
+  "analise": "nominativo feminino singular; também ablativo feminino singular e nominativo e acusativo neutro plural",
+  "pt": "aquela (sujeito)",
+  "outras": [
+   "por aquela, com aquela",
+   "aquelas coisas"
+  ],
+  "aceitas": [
+   "aquela",
+   "ela",
+   "por aquela",
+   "com aquela",
+   "naquela",
+   "aquelas coisas"
+  ],
+  "distratores": [
+   "aquele (sujeito)",
+   "aquilo",
+   "aquelas (sujeito)",
+   "aquela (objeto)"
+  ],
+  "nota": "illa: nominativo feminino singular; também ablativo feminino singular e nominativo e acusativo neutro plural, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.\nNo texto: «Et erit in die illa:» (Is 7,18).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-v447",
+  "tipo": "flexao",
+  "la": "illud",
+  "lema": "la-p215",
+  "analise": "nominativo e acusativo neutro singular",
+  "pt": "aquilo",
+  "aceitas": [
+   "aquilo",
+   "isso"
+  ],
+  "distratores": [
+   "aquele (sujeito)",
+   "aquele (objeto)",
+   "por aquele",
+   "daqueles"
+  ],
+  "nota": "illud: nominativo e acusativo neutro singular, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v448",
+  "tipo": "flexao",
+  "la": "illius",
+  "lema": "la-p215",
+  "analise": "genitivo singular, dos três gêneros",
+  "pt": "daquele, daquela",
+  "aceitas": [
+   "daquele",
+   "daquela",
+   "daquilo",
+   "dele",
+   "dela"
+  ],
+  "distratores": [
+   "aquele (sujeito)",
+   "àquele, àquela",
+   "aquela (objeto)",
+   "aquilo"
+  ],
+  "nota": "illius: genitivo singular, dos três gêneros, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v449",
+  "tipo": "flexao",
+  "la": "illi",
+  "lema": "la-p215",
+  "analise": "dativo singular, dos três gêneros; também nominativo masculino plural",
+  "pt": "àquele, àquela",
+  "outras": [
+   "aqueles (sujeito)"
+  ],
+  "aceitas": [
+   "àquele",
+   "àquela",
+   "a ele",
+   "a ela",
+   "lhe",
+   "aqueles",
+   "eles"
+  ],
+  "distratores": [
+   "àqueles, àquelas",
+   "aquilo",
+   "aquela (sujeito)",
+   "daquele, daquela"
+  ],
+  "nota": "illi: dativo singular, dos três gêneros; também nominativo masculino plural, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v450",
+  "tipo": "flexao",
+  "la": "illum",
+  "lema": "la-p215",
+  "analise": "acusativo masculino singular",
+  "pt": "aquele (objeto)",
+  "aceitas": [
+   "aquele",
+   "o",
+   "ele"
+  ],
+  "distratores": [
+   "aqueles (objeto)",
+   "por aquele",
+   "aquilo",
+   "aquele (sujeito)"
+  ],
+  "nota": "illum: acusativo masculino singular, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v451",
+  "tipo": "flexao",
+  "la": "illam",
+  "lema": "la-p215",
+  "analise": "acusativo feminino singular",
+  "pt": "aquela (objeto)",
+  "aceitas": [
+   "aquela",
+   "a",
+   "ela"
+  ],
+  "distratores": [
+   "aquela (sujeito)",
+   "aquelas (objeto)",
+   "aquilo",
+   "aquele (objeto)"
+  ],
+  "nota": "illam: acusativo feminino singular, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v452",
+  "tipo": "flexao",
+  "la": "illo",
+  "lema": "la-p215",
+  "analise": "ablativo masculino e neutro singular",
+  "pt": "por aquele",
+  "outras": [
+   "com aquele",
+   "por aquilo, com aquilo"
+  ],
+  "aceitas": [
+   "por aquele",
+   "com aquele",
+   "naquele",
+   "por aquilo",
+   "com aquilo",
+   "naquilo"
+  ],
+  "distratores": [
+   "aquele (objeto)",
+   "aquele (sujeito)",
+   "aquilo",
+   "daqueles"
+  ],
+  "nota": "illo: ablativo masculino e neutro singular, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v453",
+  "tipo": "flexao",
+  "la": "illae",
+  "lema": "la-p215",
+  "analise": "nominativo feminino plural",
+  "pt": "aquelas (sujeito)",
+  "aceitas": [
+   "aquelas",
+   "elas"
+  ],
+  "distratores": [
+   "aquelas (objeto)",
+   "aquela (sujeito)",
+   "daquelas",
+   "daqueles"
+  ],
+  "nota": "illae: nominativo feminino plural, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-v454",
+  "tipo": "flexao",
+  "la": "illorum",
+  "lema": "la-p215",
+  "analise": "genitivo masculino e neutro plural",
+  "pt": "daqueles",
+  "aceitas": [
+   "daqueles",
+   "deles"
+  ],
+  "distratores": [
+   "aqueles (objeto)",
+   "por aquele",
+   "daquelas",
+   "aquele (sujeito)"
+  ],
+  "nota": "illorum: genitivo masculino e neutro plural, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v455",
+  "tipo": "flexao",
+  "la": "illarum",
+  "lema": "la-p215",
+  "analise": "genitivo feminino plural",
+  "pt": "daquelas",
+  "aceitas": [
+   "daquelas",
+   "delas"
+  ],
+  "distratores": [
+   "aquelas (objeto)",
+   "daqueles",
+   "aquelas (sujeito)",
+   "àqueles, àquelas"
+  ],
+  "nota": "illarum: genitivo feminino plural, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v456",
+  "tipo": "flexao",
+  "la": "illis",
+  "lema": "la-p215",
+  "analise": "dativo e ablativo plural, dos três gêneros",
+  "pt": "àqueles, àquelas",
+  "outras": [
+   "por aqueles, com aqueles"
+  ],
+  "aceitas": [
+   "àqueles",
+   "àquelas",
+   "a eles",
+   "a elas",
+   "lhes",
+   "por aqueles",
+   "com aqueles",
+   "naqueles",
+   "por aquelas",
+   "com aquelas",
+   "naquelas"
+  ],
+  "distratores": [
+   "aqueles (objeto)",
+   "aquelas (sujeito)",
+   "por aquele",
+   "àquele, àquela"
+  ],
+  "nota": "illis: dativo e ablativo plural, dos três gêneros, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v457",
+  "tipo": "flexao",
+  "la": "illos",
+  "lema": "la-p215",
+  "analise": "acusativo masculino plural",
+  "pt": "aqueles (objeto)",
+  "aceitas": [
+   "aqueles",
+   "os",
+   "eles"
+  ],
+  "distratores": [
+   "daqueles",
+   "aquele (objeto)",
+   "aquelas (objeto)",
+   "aquela (objeto)"
+  ],
+  "nota": "illos: acusativo masculino plural, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v458",
+  "tipo": "flexao",
+  "la": "illas",
+  "lema": "la-p215",
+  "analise": "acusativo feminino plural",
+  "pt": "aquelas (objeto)",
+  "aceitas": [
+   "aquelas",
+   "as",
+   "elas"
+  ],
+  "distratores": [
+   "aquela (objeto)",
+   "daquelas",
+   "aquelas (sujeito)",
+   "aqueles (objeto)"
+  ],
+  "nota": "illas: acusativo feminino plural, de ille, illa, illud.\nSingular: ille, illa, illud (nom.); illum, illam, illud (acus.); illius (gen.); illi (dat.); illo, illa, illo (abl.). Plural: illi, illae, illa (nom.); illos, illas, illa (acus.); illorum, illarum, illorum (gen.); illis (dat. e abl.). Como hic, o genitivo em -ius e o dativo em -i.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
   ]
  }
 ]
