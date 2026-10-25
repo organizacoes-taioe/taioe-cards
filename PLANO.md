@@ -1052,13 +1052,14 @@ marcadas com ✔.
 
 | curso | 1º | depois |
 |---|---|---|
-| espanhol | Bécquer, Rima XXI | Machado, Proverbios y cantares XXIX |
+| espanhol | Bécquer, Rima XXI | Machado, Proverbios y cantares XXIX; Martí, «Cultivo una rosa blanca» |
 | francês | Verlaine, «Il pleure dans mon cœur» | Hugo, «Demain dès l'aube» |
 | inglês | Dickinson, «I'm nobody! Who are you?» | Stevenson, «Requiem» |
 | português | Gonçalves Dias, «Canção do exílio» | — |
 
-Martí e Teasdale ficaram de fora: os primeiros versos dos escolhidos são mais simples, e a
-Rossetti não está no Wikisource.
+Teasdale ficou de fora, e a Rossetti não está no Wikisource. Martí entrou em 24/10/2026, em 3º
+(pedido do Gere: mais um poema e o começo do *Quixote* no espanhol); o *Quixote* (I, 1, até «de la
+verdad», em três partes de prosa) é só por escolha.
 
 ### 9.5 Etapas
 
@@ -1092,6 +1093,12 @@ usuário vá escolhendo aprender uma parte por vez.» Vale para todas as língua
 - O pedido da Biblioteca (`/cards/?texto=<id de uma parte>`) vale pela parte da vez da obra.
 - Nada muda no banco: a escolha guarda ids de texto, e cada parte tem o seu.
 - Na prosa (9.1, «Quero aprender o resto»), o resto vira as partes seguintes.
+- ✔ **A prosa** (25/10/2026, com o começo do *Quixote*): na Biblioteca, um trecho por linha (de
+  vírgula a vírgula, de 5 a 15 palavras, fechando a frase no fim da parte), e a página junta os
+  trechos do parágrafo; nos Cards, `tipo: "prosa"`, e cada trecho entra no parágrafo assim que as
+  palavras dele fecham a ida (a carta mostra o parágrafo crescendo, sem itálico; os avisos dizem
+  «trecho» onde o poema diz «verso»). As partes se fazem com `fonte/importar-texto.py --parte N
+  --linhas A-B --trecho "rótulo"` (o rótulo da prosa é o começo da parte: «Tenía en su casa…»).
 
 ## 10. O card de contraste nas línguas vivas (decidido em 23/10/2026)
 

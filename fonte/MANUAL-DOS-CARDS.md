@@ -1008,7 +1008,12 @@ dominados.
 **Texto longo vai em partes** (pedido do Gere, 24/10/2026; `../PLANO.md` §9.6): cada parte, de 4
 a 10 versos (na prosa, de 50 a 120 palavras) e fechando a frase, é um texto à parte, com `obra`,
 `parte` e `trecho`, e a pessoa as aprende uma por vez, em sequência. No latim, as partes se declaram em
-`TEXTOS` do `fonte/latim/textos.py` (a *Eneida*: `vergilio/eneida-parte-1`, `-parte-2`).
+`TEXTOS` do `fonte/latim/textos.py` (a *Eneida*: `vergilio/eneida-parte-1`, `-parte-2`); nas línguas
+vivas, `python fonte/importar-texto.py <biblioteca> <pasta> --parte N --linhas A-B --trecho "rótulo"`
+grava uma parte por arquivo (o *Quixote*: `cervantes/quijote-parte-1` a `-3`). **Na prosa**, cada linha
+da Biblioteca é um trecho (de vírgula a vírgula, de 5 a 15 palavras), e o app junta os trechos de um
+parágrafo. A palavra composta («della», «acordarme») que pede `defEn` nas partes fica `manual` (com
+`destino-texto.py`), senão a reimportação apaga a definição.
 
 ### 17.4.1 As frases de primeiros passos
 

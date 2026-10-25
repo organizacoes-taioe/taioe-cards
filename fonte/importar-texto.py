@@ -2,6 +2,7 @@
 
     python fonte/importar-texto.py <pasta-da-biblioteca> <pasta-do-poema> [--fila N]
     python fonte/importar-texto.py <pasta-da-biblioteca> --pt <autor>/<poema> [--fila N]
+    python fonte/importar-texto.py <pasta-da-biblioteca> <pasta> --parte N --linhas A-B --trecho "rótulo" [--titulo "título"]
 
 Lê edicoes/lingua-original/<pasta>/poema.txt e glossario.json pela própria ferramenta da
 Biblioteca (ferramentas/lingua_original.py: a mesma divisão em palavras e as mesmas chaves) e
@@ -14,6 +15,11 @@ grava fonte/textos/<língua>/<autor>--<pasta>.json:
       g: "gramatical"     artigo, preposição, conjunção, pronome sem card: aprende-se nas frases
       g: "nome"           nome próprio
     e, nas palavras sem card, «defEs»/«defEn» para os públicos que não leem português.
+
+Texto longo em partes (PLANO.md, 9.6): cada parte é um arquivo, <autor>--<pasta>-parte-N.json, com
+as linhas A a B (contadas como `lingua_original.py palavras` mostra) e «obra», «parte» e «trecho»; o
+título é o do livro, ou o de --titulo. A prosa («prosa» em obras.json) sai com tipo «prosa»: cada
+linha da Biblioteca é um trecho, e o app junta os trechos de um parágrafo.
 
 Rodar de novo preserva o que foi decidido à mão em cada chave (card, g, leitura, defEs, defEn,
 conferir) e refaz o resto a partir da Biblioteca. «conferir» marca o que o automático não
@@ -137,13 +143,25 @@ def poema_portugues(raiz, caminho):
     return poema, bruto, por_indice, glos
 
 
+def opcao(a, nome):
+    if nome not in a:
+        return None
+    i = a.index(nome)
+    valor = a[i + 1]
+    del a[i:i + 2]
+    return valor
+
+
 def main():
     a = sys.argv[1:]
-    fila = None
-    if '--fila' in a:
-        i = a.index('--fila')
-        fila = int(a[i + 1])
-        del a[i:i + 2]
+    fila = opcao(a, '--fila')
+    fila = int(fila) if fila is not None else None
+    num_parte, linhas, trecho, titulo_dado = opcao(a, '--parte'), opcao(a, '--linhas'), opcao(a, '--trecho'), opcao(a, '--titulo')
+    if num_parte is not None:
+        if not (linhas and trecho and re.fullmatch(r'\d+-\d+', linhas)):
+            sys.exit('a parte pede --linhas A-B e --trecho')
+        num_parte = int(num_parte)
+        de, ate = (int(x) for x in linhas.split('-'))
     if len(a) == 3 and a[1] == '--pt':
         a = [a[0], 'pt:' + a[2]]
     if len(a) != 2:
@@ -176,6 +194,8 @@ def main():
         if l.startswith('::') or i not in por_indice:
             continue
         n, texto = por_indice[i]
+        if num_parte is not None and not de <= n <= ate:
+            continue
         p, ini = [], 0
         for k, (x, y) in enumerate(lo.separar(texto, lingua), 1):
             if x > ini:
@@ -201,7 +221,8 @@ def main():
             nome_autor = m.group(1).replace("\\'", "'")
     saida_dir = os.path.join(AQUI, 'textos', lingua)
     os.makedirs(saida_dir, exist_ok=True)
-    arq = os.path.join(saida_dir, '%s--%s.json' % (autor, pasta))
+    sufixo = '-parte-%d' % num_parte if num_parte is not None else ''
+    arq = os.path.join(saida_dir, '%s--%s%s.json' % (autor, pasta, sufixo))
     antes = json.load(open(arq, encoding='utf-8')) if os.path.exists(arq) else {}
     antigos = antes.get('destinos', {})
 
@@ -235,11 +256,11 @@ def main():
                     d[k] = velho[k]
         destinos[ch] = d
 
-    titulo = poema['titulo']
+    titulo = titulo_dado or ((poema.get('livro') or {}).get('titulo') if num_parte is not None else None) or poema['titulo']
     saida = {
-        'id': autor + '/' + pasta,
+        'id': autor + '/' + pasta + sufixo,
         'idioma': lingua,
-        'tipo': 'poema',
+        'tipo': 'prosa' if poema.get('prosa') else 'poema',
         'titulo': titulo,
         'autor': nome_autor,
         'ano': poema.get('ano'),
@@ -248,6 +269,8 @@ def main():
     }
     if fila is not None or 'fila' in antes:
         saida['fila'] = fila if fila is not None else antes['fila']
+    if num_parte is not None:
+        saida.update({'obra': autor + '/' + pasta, 'parte': num_parte, 'trecho': trecho})
     saida['blocos'] = blocos
     saida['destinos'] = destinos
     with open(arq, 'w', encoding='utf-8', newline='\n') as f:
