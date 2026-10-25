@@ -859,7 +859,11 @@ window.Motor = (function () {
     for (const pergunta of String(card.pt || '').split('/')) {
       const propriaPergunta = normalizar(pergunta.replace(/\([^)]*\)/g, ' '), 'pt');
       if (dado === propriaPergunta) continue;
-      for (const ent of (indice.get(chaveDeLeitura(pergunta)) || [])) {
+      /* O artigo da pergunta é português («a cola», «o rato»), e o normalizar do espanhol não
+         o conhece: com ele, a chave ficava «a cola» e nunca achava «cola» no índice (achado na
+         revisão dos comentários, 24/10/2026). Sai aqui, e não no chaveDeLeitura, que também
+         monta o índice. O ARTIGO_PT é o dos distratores, mais abaixo. */
+      for (const ent of (indice.get(chaveDeLeitura(pergunta.trim().replace(ARTIGO_PT, ''))) || [])) {
         if (chaveDeLeitura(ent.es) === chaveDeLeitura(card.es)) continue;   // o espanhol do próprio card
         if (ent.pts.some(p => normalizar(p, 'pt') === dado)) {
           return { pergunta: pergunta.trim(), espanhol: ent.es, resposta: String(texto).trim() };

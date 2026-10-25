@@ -36,3 +36,5 @@ jobs:
         run: node fonte/testar-textos.js
       - name: "O latim: funil estrito, gabaritos, fases só de ida, conceitos, trechos"
         run: node fonte/testar-latim.js
+      - name: "A pergunta lida como espanhol: o aviso dispara, também com artigo"
+        run: node fonte/testar-leitura.js
