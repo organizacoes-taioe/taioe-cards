@@ -116,8 +116,9 @@ if (fs.existsSync(arqPacote)) {
 secao('transparentes e presumidos no motor');
 M.usarBaralho('es', 'pt');
 zerar();
-const totais = ESPT.filter(c => c.tipo === 'palavra' && c.transp === 'total');
-const parecidas = ESPT.filter(c => c.tipo === 'palavra' && c.transp === 'parecida');
+/* no card de leitura a parecida conta como total (PLANO.md, 9.2): «la ortiga» → «a urtiga» */
+const totais = ESPT.filter(c => c.tipo === 'palavra' && (c.transp === 'total' || (c.leitura && c.transp === 'parecida')));
+const parecidas = ESPT.filter(c => c.tipo === 'palavra' && c.transp === 'parecida' && !c.leitura);
 /* uma frase cujas palavras são todas transparentes: a do baralho, se houver;
    senão uma de mentira com duas delas */
 let fraseLivre = ESPT.find(c => c.tipo === 'frase' && Array.isArray(c.requerTodas) && c.requerTodas.length >= 2 &&
