@@ -1342,5 +1342,10 @@ window.TAGS_RAW = {
   "en": "verb form",
   "es": "forma verbal",
   "cards": 0
+ },
+ "flexão": {
+  "en": "inflected form",
+  "es": "forma flexionada",
+  "cards": 0
  }
 };

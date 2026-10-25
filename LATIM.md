@@ -337,6 +337,55 @@ mesmo jeito, que mostrem as sutilezas da gramática.
     `semConjuntoSeguido` e `conjuntoAnterior` impedem dois do mesmo conjunto seguidos, na estreia
     e nas filas. Sem «Já conheço». O catálogo leva as quatro frases latinas como `alternativas`.
 
+### 3.8 Flexão (`la-v…`): cada forma do texto, com o sentido (aprovado e feito em 24/10)
+Pedido do Gere (24/10), depois de destravar *Odi et amo. Quare id faciam, fortasse requiris* sem
+entender: «Não bastou ver as palavras.» O card da palavra mostra só o dicionário (*is, ea, id* →
+«ele»), e ninguém perguntava *id*, *faciam* ou *requiris* antes do verso. «Vamos agora botar card
+para tudo. Se ficar excessivo, depois a gente vai ajustando.»
+
+- **O card.** A forma sozinha e, embaixo, pequeno, o enunciado do lema («de is, ea, id»); a
+  pergunta «O que quer dizer esta forma?»; a resposta é o sentido em português **com a gramática
+  dentro**: *id* → «isso», *eius* → «dele, dela», *faciam* → «que eu faça», *requiris* →
+  «perguntas», *Domini* → «do Senhor». Múltipla escolha e depois duas escritas, como o card de
+  palavra, com revisão por data (✔ D25). As quatro erradas são outras formas do mesmo lema (em
+  *id*: «ele (sujeito)», «a, ela (objeto)», «por ele, com ele», «dele, dela»), que é a confusão a
+  vencer. A nota: a análise, a linha da tabela (pronomes, *sum*, *possum*) ou a terminação, e onde
+  a forma aparece.
+- **Quais formas** (✔ D22): toda forma de frase do curso (trecho, primeira frase, frase de uso)
+  que não é a do dicionário, e as tabelas inteiras de *is*, *hic*, *ille*, *qui*, *idem*, *ego*, *tu*,
+  *nos*, *vos*, *sum* e *possum* (presente, imperfeito, futuro e perfeito do indicativo, presente
+  do subjuntivo, infinitivo), também as formas que ainda não apareceram. Nos pronomes de três
+  gêneros e em *sum* e *possum*, cujas formas do dicionário são muito diferentes entre si, cada
+  uma ganha card, também a igual ao lema (*is*, *ea*, *id*; *sum*, *esse*, *fui*), pedido do Gere
+  (24/10). Em 25/10: 458 cards (146 das tabelas, 312 das frases). *iis* e *nos*, *vos* (acusativo)
+  ficam na nota, sem card.
+- **Quando entra** (✔ D23): depois do card do lema (o dicionário primeiro). As do texto escolhido e
+  das primeiras frases vêm na ordem de leitura, cada uma logo depois do lema dela (o «requer» de
+  cada verso leva as flexões, `build.js`); as outras (tabelas, frases de uso) entram uma a cada
+  quatro vagas de card novo (`CADA_FLEXAO_DE_TABELA` em `ordenarTrilhas`), na ordem em que os
+  lemas estrearam. **O verso e a frase presa esperam as flexões**: o `requerTodas` leva os lemas e,
+  depois deles, as flexões, na ordem da frase. Frase que já destravou não volta a travar.
+- **O que o português não separa** (✔ D24): o nominativo e o acusativo dão o mesmo em português; a
+  alternativa leva o parêntese («o Senhor (sujeito)» × «o Senhor (objeto)», «ele (sujeito)» × «o,
+  ele (objeto)»), e na escrita basta «o Senhor», «ele». Forma com mais de uma leitura (*faciam*:
+  «que eu faça» e «farei»; *venit*: «veio» e «vem»): a principal (`pt`) é a do texto e é a que a
+  múltipla escolha mostra; as outras (`outras`) valem na escrita e aparecem na nota.
+- **A régua da escrita** (`conferirFlexao` no motor): o artigo e a preposição são resposta (*eum*
+  aceita «o»; «a ele» é *ei*); só caem o acento, a maiúscula, a pontuação e o parêntese. Escrever
+  uma das erradas, ou a leitura de outra flexão do mesmo lema («pergunta» em *requiris*), é erro
+  seco; o resto perto da certa é «deu quase».
+- **Os dados.** `fonte/latim/flexoes.py`: `lista`; `faltam --saida X.json` (as formas sem card, com
+  as frases, para a leva); `gravar [leva.json …]` junta as tabelas (no próprio script) e as levas
+  em `fonte/cards/la/16-flexoes.json` e refaz o `requerTodas` das frases presas. Nunca reescreve
+  card já gravado: a correção feita à mão fica. As levas das frases foram escritas por agentes com
+  as regras de `fonte/latim/cache/levas/flexoes-REGRAS.md` (fora do git) e conferidas card a card.
+  Campos: `la`, `lema`, `analise`, `pt`, `outras`, `aceitas`, `distratores`, `nota`, `conceitos`
+  (o conceito do caso ou do tempo entra antes do card).
+- **Texto novo**: o build avisa «forma(s) do latim sem card de flexão»; `flexoes.py faltam` → a leva
+  → `gravar` → build. Até lá o verso espera só os lemas e as flexões que já existem. A *Eneida*
+  (73 formas, 25/10) ficou para uma leva à parte, logo depois desta.
+- No banco: o tipo `flexao` no catálogo (infra, migração `20261024150000_latim_flexao`).
+
 ## 4. A resposta escrita: aceitar tudo o que está certo
 1. **Um funil estrito** (feito no piloto): acento, maiúscula, pontuação, artigo e «já» não contam;
    o plural e o pronome contam. O funil largo das outras línguas juntava «nação» e «nações» e tirava
@@ -566,6 +615,7 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
 | 3c | leva 2: primeiras frases menos religiosas, Catulo 85, Fedro I,1, Regina caeli, corpus clássico, 89 frases de uso (D11–D13) | 23/10 (biblioteca PR #22) |
 | 3d | card de contraste (§3.7), 10 conjuntos e 27 cards dos itens 1 a 3 | 22/10 (infra PR #17) |
 | 3e | *Eneida* I,1–11 em duas partes, e as partes de texto longo (D18–D21, §12) | 24/10 |
+| 3f | card de flexão (§3.8): cada forma das frases e as tabelas dos pronomes, de *sum* e de *possum* | 25/10 |
 | 4 | os textos em domínio público, nível a nível, em levas de ~100 cards, com a matriz a cada leva; metade fora da Bíblia e da liturgia (§7) | — |
 | 5 | os textos da NV, com a resposta da LEV (ou na Clementina) | — |
 | depois | pronúncia eclesiástica; `la-es` e `la-en`; prosa com «Quero aprender o resto» | — |

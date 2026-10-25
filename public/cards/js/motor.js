@@ -524,6 +524,7 @@ window.Motor = (function () {
   }
 
   function formasAceitas(card, direcao) {
+    if (card.tipo === 'flexao') return [card.pt].concat(card.outras || [], card.aceitas || []);
     const lingua = linguaDaResposta(direcao);
     const campo = CAMPOS[lingua];
     const certa = String(card[campo.certa] || '');
@@ -540,6 +541,7 @@ window.Motor = (function () {
   }
 
   function respostasAceitas(card, direcao) {
+    if (card.tipo === 'flexao') return leiturasDaFlexao(card);
     const lingua = linguaDaResposta(direcao);
     return formasAceitas(card, direcao).map(t => normalizar(t, lingua)).filter(Boolean);
   }
@@ -1023,6 +1025,8 @@ window.Motor = (function () {
      trocada, uma palavra fora do lugar. Se for deslize, ela diz que
      acertou; se o sentido mudou, ela diz que errou. */
   function conferir(card, texto, direcao) {
+    /* o card de flexão tem a régua dele, em que o artigo é resposta (ver conferirFlexao) */
+    if (card.tipo === 'flexao') return conferirFlexao(card, texto);
     const lingua = linguaDaResposta(direcao);
     const dado = normalizar(texto, lingua);
     if (!dado) return 'errado';
@@ -2567,6 +2571,42 @@ window.Motor = (function () {
       ['voz', 'ativa', 'passiva', 'depoente', 'absoluto']).filter(x => x.length >= 4);
     return !a.palavras.some(p => todos.some(x => p === x || parecido(p, x, 'pt')));
   }
+  /* ── o card de flexão (cards/LATIM.md §3.8, pedido do Gere, 24/10/2026) ──
+     A forma do texto (id, faciam, Domini) e o sentido dela em português, com a gramática dentro
+     («isso», «que eu faça», «do Senhor»). A régua é outra que a das palavras: o artigo e a
+     preposição são resposta («o» é eum, «a ele» é ei), então só caem o acento, a maiúscula, a
+     pontuação e o parêntese que separa o sujeito do objeto («ele (sujeito)» × «o, ele
+     (objeto)»), que ninguém escreve. A leitura principal («pt») é a que a múltipla escolha
+     mostra; as outras («outras»: faciam também é «farei») e as «aceitas» valem igual. A crase
+     e o «ó» ficam («à água», dativo, e «ó água», vocativo, não são «a água»).
+     Escrever a leitura de outra forma do mesmo lema («pergunta» em requiris, que é requirit)
+     é erro seco, e não «deu quase». */
+  let LEITURAS_DO_LEMA = Object.create(null);   // id do lema → as leituras de todas as flexões dele
+
+  function normalizarFlexao(texto) {
+    /* a crase e o «ó» ficam: «à água» é o dativo, «ó água», o vocativo, e «a água», o nominativo */
+    return String(texto || '').toLowerCase().replace(/\([^)]*\)/g, ' ').replace(/à/g, 'aa')
+      .replace(/(^|\s)ó(?=\s|$)/g, '$1oo')
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, ' ').trim();
+  }
+
+  function leiturasDaFlexao(card) {
+    return [card.pt].concat(card.outras || [], card.aceitas || []).map(normalizarFlexao).filter(Boolean);
+  }
+
+  function conferirFlexao(card, texto) {
+    const dado = normalizarFlexao(texto);
+    if (!dado) return 'errado';
+    const certas = leiturasDaFlexao(card);
+    if (certas.includes(dado)) return 'certo';
+    if ((card.distratores || []).some(d => normalizarFlexao(d) === dado)) return 'errado';
+    if (LEITURAS_DO_LEMA[card.lema] && LEITURAS_DO_LEMA[card.lema].has(dado)) return 'errado';
+    return certas.some(alvo => parecido(dado, alvo, 'pt')) ? 'quase' : 'errado';
+  }
+
+  function ehFlexao(id) { return TIPO[id] === 'flexao'; }
+
   /* ── montagem da fila inicial ──
      Intercala os níveis e alterna palavra/frase, para medir logo de cara
      onde está o seu teto. */
@@ -2733,6 +2773,8 @@ window.Motor = (function () {
       const ex = card.tipo === 'conceito' ? exemploDoConceito(card, estados && estados[card.id]) : null;
       return embaralhar([card.pt, ...((ex && ex.distratores) || card.distratores || []).slice(0, 4)]);
     }
+    /* na flexão, as outras formas do mesmo lema, escritas no card (LATIM.md §3.8) */
+    if (card.tipo === 'flexao') return embaralhar([card.pt, ...(card.distratores || []).slice(0, 4)]);
     const lingua = linguaDaResposta(direcao);
     const certa = card[CAMPOS[lingua].certa];
     /* Responder na língua que o baralho ensina é produzir, e aí não há quatro
@@ -3211,10 +3253,15 @@ window.Motor = (function () {
     FALSO_AMIGO = Object.create(null);
     LEITURA = Object.create(null);
     RESPOSTA_DA_FORMA = Object.create(null);
+    LEITURAS_DO_LEMA = Object.create(null);
     (cards || []).forEach(c => {
       if (!c) return;
       if (c.leitura) LEITURA[c.id] = true;
       if (c.tipo === 'forma') RESPOSTA_DA_FORMA[c.id] = c.pt;
+      if (c.tipo === 'flexao') {
+        const lista = LEITURAS_DO_LEMA[c.lema] || (LEITURAS_DO_LEMA[c.lema] = new Set());
+        leiturasDaFlexao(c).forEach(x => lista.add(x));
+      }
       /* no card de leitura, a «parecida» conta como total: ler é de graça, e
          ele não tem a volta, que é onde a parecida estrearia */
       if (c.transp === 'total' || c.transp === 'parecida') TRANSP[c.id] = (c.leitura || soIda()) ? 'total' : c.transp;
@@ -4061,7 +4108,7 @@ window.Motor = (function () {
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
-    ehForma, ehContraste, ehConceito, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
+    ehForma, ehContraste, ehConceito, ehFlexao, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     SORTEIO_DA_FORMA, ACERTOS_QUE_SOLTAM,
     erroDeGenero, formasAceitas, LIMITES, cortar,
     linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
