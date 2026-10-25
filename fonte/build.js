@@ -131,6 +131,19 @@ for (const b of baralhos) {
     const destinos = texto.destinos || {};
     for (const l of (texto.blocos || []).flat()) {
       l.requer = [...new Set((l.p || []).filter(x => x[1]).flatMap(x => cardsDoDestino(destinos[x[1]])))];
+      /* no latim o verso espera também as flexões (cards/LATIM.md §3.8): as do trecho, cada uma
+         logo depois do lema, para estrearem na ordem de leitura */
+      const trecho = l.card && b.cards.find(c => c.id === l.card);
+      if (trecho) {
+        const lemaDe = id => (b.cards.find(c => c.id === id && c.tipo === 'flexao') || {}).lema;
+        for (const f of (trecho.requerTodas || []).filter(lemaDe)) {
+          if (l.requer.includes(f)) continue;
+          let i = l.requer.indexOf(lemaDe(f));
+          if (i < 0) { l.requer.push(f); continue; }
+          while (i + 1 < l.requer.length && lemaDe(l.requer[i + 1]) === lemaDe(f)) i++;
+          l.requer.splice(i + 1, 0, f);
+        }
+      }
     }
     texto.requerTodas = [...new Set((texto.blocos || []).flat().flatMap(l => l.requer))];
     b.textos.push(texto);
@@ -360,7 +373,9 @@ for (const bruto of cards) {
   /* o card de forma do latim (LATIM.md §3.6) pergunta a mesma palavra em versos diferentes
      («nobis» no Pai-Nosso e na Ave-Maria): a frente dele é o verso, não a palavra */
   /* o contraste (PLANO.md §10) também: ele só se escolhe, e pode repetir a frase de outro card */
-  const deForma = c.tipo === 'forma' || c.tipo === 'contraste';
+  /* a flexão do latim (LATIM.md §3.8) é a forma de um lema: «nostrum» de nos e de noster são
+     dois cards, e «is» é o card do lema e o da flexão (a repetição se confere no bloco do latim) */
+  const deForma = c.tipo === 'forma' || c.tipo === 'contraste' || c.tipo === 'flexao';
   const igual = !deForma && textos.get(normalizar(c[L.texto]));
   const homografo = igual && ((bruto.homografos || []).includes(igual) ||
     ((cards.find(x => x.id === igual) || {}).homografos || []).includes(c.id));
@@ -385,7 +400,7 @@ for (const bruto of cards) {
     if (typeof c[campo] !== 'string' || !c[campo].trim()) erros.push('falta "' + campo + '": ' + onde);
   }
   /* o card de conceito (cards/LATIM.md §3.5) só existe no latim */
-  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma', 'contraste'] : ['palavra', 'frase', 'contraste']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
+  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma', 'contraste', 'flexao'] : ['palavra', 'frase', 'contraste']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
   if (!NIVEIS.includes(c.nivel)) erros.push('nível inválido: ' + onde);
   if (!Array.isArray(c.tags) || !c.tags.length) erros.push('sem tags: ' + onde);
 
@@ -492,7 +507,8 @@ for (const bruto of cards) {
       erros.push('precisa de exatamente 4 ' + A.distratores + ': ' + ondeA);
     }
 
-    if (c.tipo !== 'forma') checarDistratores(c, idioma + '-' + a, A.distratores, ondeA, err);
+    /* a flexão tem a régua dela, conferida no bloco do latim */
+    if (c.tipo !== 'forma' && c.tipo !== 'flexao') checarDistratores(c, idioma + '-' + a, A.distratores, ondeA, err);
 
     /* O parêntese explica a resposta, e ninguém o escreve: «o peixe (para
        comer)» tem de aceitar «o peixe». O funil não tira o parêntese, então a
@@ -511,7 +527,7 @@ for (const bruto of cards) {
     checarFormato(c[A.texto], c[A.distratores], ondeA, reclamar);
     /* Conjugação fica de fora: lá as cinco alternativas têm o mesmo verbo por
        construção, e o que muda é o tempo. */
-    if (!(c.tags || []).includes('conjugação')) {
+    if (!(c.tags || []).includes('conjugação') && c.tipo !== 'flexao') {
       checarCategoria(c[A.texto], c[A.distratores], ondeA, x => avisos.push(x));
     }
 
@@ -649,7 +665,8 @@ for (const { idioma, cards } of baralhos) {
       }
       const alvo = PORID.get(r);
       if (!alvo) erros.push('"requerTodas" aponta para card que não existe neste baralho: ' + onde + ' → ' + r);
-      else if (alvo.tipo !== 'palavra') erros.push('"requerTodas" tem de apontar para palavras: ' + onde + ' → ' + r);
+      /* no latim a frase espera também as flexões das formas dela (LATIM.md §3.8) */
+      else if (alvo.tipo !== 'palavra' && alvo.tipo !== 'flexao') erros.push('"requerTodas" tem de apontar para palavras: ' + onde + ' → ' + r);
     }
     if (c.requer && !c.requerTodas.includes(c.requer)) {
       erros.push('a palavra do «requer» tem de estar também em «requerTodas»: ' + onde + ' → ' + c.requer);
@@ -739,9 +756,15 @@ const chaveLatina = s => String(s || '').toLowerCase().normalize('NFD').replace(
 /* «construcao» (desde 24/10, o ablativo absoluto da Eneida): a pergunta é de que construção a
    palavra destacada faz parte, e não o caso dela, que seria só «ablativo» */
 const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz', 'construcao'];
+/* o card de flexão (LATIM.md §3.8): a alternativa errada nunca é leitura certa; com o parêntese
+   ela pode repetir a palavra da certa («ele (sujeito)» no card de eum, que aceita «ele») */
+const chaveDaLeitura = t => String(t || '').toLowerCase().replace(/à/g, 'aa').replace(/(^|\s)ó(?=\s|$)/g, '$1oo').normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/[^a-z0-9]+/g, ' ').trim();
 for (const { idioma, cards } of baralhos) {
   if (idioma !== 'la') continue;
   const PORID = new Map(cards.map(c => [c.id, c]));
+  const FLEXAO = new Map(cards.filter(c => c.tipo === 'flexao').map(c => [chaveLatina(c.la) + '|' + c.lema, c.id]));
+  const semFlexao = new Map();
   for (const c of cards) {
     const onde = c.id + ' (' + c.la + ')';
     if (c.gabarito !== undefined) {
@@ -783,6 +806,29 @@ for (const { idioma, cards } of baralhos) {
       }
       continue;
     }
+    if (c.tipo === 'flexao') {
+      const lema = PORID.get(c.lema);
+      if (!lema || lema.tipo !== 'palavra') erros.push('flexão sem o card do lema: ' + onde);
+      if (FLEXAO.get(chaveLatina(c.la) + '|' + c.lema) !== c.id) erros.push('flexão repetida (a mesma forma do mesmo lema): ' + onde);
+      if (typeof c.analise !== 'string' || !c.analise.trim()) erros.push('flexão sem «analise»: ' + onde);
+      if (c.outras !== undefined && (!Array.isArray(c.outras) || c.outras.some(x => typeof x !== 'string' || !x.trim()))) erros.push('flexão com «outras» malformado: ' + onde);
+      const leituras = [c.pt].concat(c.outras || []).map(chaveDaLeitura);
+      const aceitas = new Set(Motor.leiturasDaFlexao(c));
+      const vistos = new Set();
+      for (const d of c.distratores || []) {
+        if (leituras.includes(chaveDaLeitura(d)) || (!d.includes('(') && aceitas.has(Motor.normalizarFlexao(d)))) {
+          erros.push('distrator de flexão que é leitura certa: ' + onde + ' → ' + d);
+        }
+        if (vistos.has(chaveDaLeitura(d))) erros.push('dois distratores iguais: ' + onde + ' → ' + d);
+        vistos.add(chaveDaLeitura(d));
+      }
+      if (Motor.conferirFlexao(c, c.pt) !== 'certo') erros.push('flexão que não aceita a própria resposta: ' + onde);
+      for (const g of c.conceitos || []) {
+        const alvo = PORID.get(g);
+        if (!alvo || alvo.tipo !== 'conceito') erros.push('conceito que não existe: ' + onde + ' → ' + g);
+      }
+      continue;
+    }
     if (c.tipo === 'contraste') {
       /* o latim confere aqui só a anotação; o resto é de todo baralho (mais abaixo) */
       for (const p of c.palavras || []) {
@@ -814,7 +860,18 @@ for (const { idioma, cards } of baralhos) {
       const alvo = PORID.get(p.c);
       if (!alvo || alvo.tipo !== 'palavra') erros.push('«' + p.w + '» aponta para ' + p.c + ', que não é card de palavra: ' + onde);
     }
-    const dasPalavras = [...new Set(pal.filter(p => p.c).map(p => p.c))];
+    /* a frase presa espera os lemas e, depois deles, as flexões das formas (LATIM.md §3.8), na
+       ordem da frase; fonte/latim/flexoes.py «gravar» refaz a lista */
+    const lemasDaFrase = pal.filter(p => p.c);
+    const formas = lemasDaFrase.filter(p => !String(p.w).startsWith('-'));
+    const flexoes = formas.map(p => FLEXAO.get(chaveLatina(p.w) + '|' + p.c)).filter(Boolean);
+    const dasPalavras = [...new Set(lemasDaFrase.map(p => p.c))].concat([...new Set(flexoes)]);
+    for (const p of formas) {
+      const lema = PORID.get(p.c);
+      if (c.tipo === 'frase' && lema && chaveLatina(p.w) !== chaveLatina(lema.la) && !FLEXAO.has(chaveLatina(p.w) + '|' + p.c)) {
+        semFlexao.set(chaveLatina(p.w) + ' (' + lema.la + ')', true);
+      }
+    }
     const livre = (c.tags || []).includes('primeiros passos');
     const req = Array.isArray(c.requerTodas) ? c.requerTodas : [];
     if (c.tipo === 'contraste') { /* o «requerTodas» dele leva também os conceitos (acima) */ }
@@ -827,6 +884,11 @@ for (const { idioma, cards } of baralhos) {
       if (!alvo || alvo.tipo !== 'conceito') erros.push('conceito que não existe: ' + onde + ' → ' + g);
     }
     if (c.texto && !Number.isInteger(c.linha)) erros.push('trecho de texto sem «linha»: ' + onde);
+  }
+  /* texto novo antes da leva das flexões dele: aviso, e não erro (rode flexoes.py «faltam») */
+  if (semFlexao.size) {
+    avisos.push(semFlexao.size + ' forma(s) do latim sem card de flexão (python -I fonte/latim/flexoes.py faltam): ' +
+      [...semFlexao.keys()].slice(0, 12).join(', ') + (semFlexao.size > 12 ? '…' : ''));
   }
 }
 

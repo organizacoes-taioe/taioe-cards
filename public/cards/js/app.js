@@ -88,6 +88,17 @@ window.TaioeCardsApp = function (ctx) {
   const TZ_FRASES = TRILHAS ? CARDS.filter(c => c.tipo === 'frase' && Array.isArray(c.requerTodas) && !c.requerTodas.length) : [];
   const TZ_PALAVRAS = new Set(TZ_FRASES.flatMap(c => (c.palavras || []).map(x => x.c).filter(Boolean)));
   const TRECHOS = TRILHAS ? CARDS.filter(c => c.tipo === 'frase' && c.texto).sort((a, b) => (a.linha || 0) - (b.linha || 0)) : [];
+  /* O card de flexão (cards/LATIM.md §3.8) de cada forma de uma frase, pela forma e pelo lema
+     («id» de is, ea, id): a primeira frase o traz logo depois do lema, e o texto, pelo
+     «requerTodas» de cada verso, na ordem de leitura. */
+  const chaveLatina = w => String(w || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/j/g, 'i').replace(/v/g, 'u');
+  const FLEXAO = new Map(CARDS.filter(c => c.tipo === 'flexao').map(c => [chaveLatina(c.la) + '|' + c.lema, c.id]));
+  const flexaoDe = x => (x && x.c ? FLEXAO.get(chaveLatina(x.w) + '|' + x.c) : undefined);
+  /* as que vêm na ordem de leitura (do texto e das primeiras frases); as outras (as tabelas dos
+     pronomes, de sum e de possum, e as formas das frases de uso) entram uma a cada quatro vagas */
+  const FLEXAO_DE_LEITURA = new Set(CARDS.filter(c => c.tipo === 'frase' && (c.texto || (Array.isArray(c.requerTodas) && !c.requerTodas.length)))
+    .flatMap(c => (c.palavras || []).map(flexaoDe).filter(Boolean)));
   /* a pergunta do card de conceito, pela família */
   const ENUNCIADO_DO_CONCEITO = {
     caso: 'card.enunciado.conceito.caso', verbo: 'card.enunciado.conceito.verbo', voz: 'card.enunciado.conceito.voz',
@@ -476,6 +487,8 @@ window.TaioeCardsApp = function (ctx) {
     if (c.tipo === 'palavra') return TZ_PALAVRAS.has(id) || deTexto.has(id);
     if (c.tipo === 'conceito') return true;
     if (c.tipo === 'forma') return formaDaTrilha(c, ativosIds, p);
+    /* a flexão espera o card do lema: o dicionário primeiro, depois cada forma */
+    if (c.tipo === 'flexao') return !!(p.cards[c.lema] && p.cards[c.lema].vistas) || Motor.arquivado(c.lema, p.arquivados || {});
     if (c.texto) return ativosIds.has(c.texto);
     return true;
   }
@@ -598,9 +611,10 @@ window.TaioeCardsApp = function (ctx) {
      (a frase, pelos «conceitos» dela; a palavra do texto, pelos do primeiro trecho em que ela
      aparece). A estreia de um conceito não conta na alternância. */
   function ordenarTrilhas(p) {
-    const CADA = 2, FORMAS_SEGUIDAS = 2;
+    const CADA = 2, FORMAS_SEGUIDAS = 2, CADA_FLEXAO_DE_TABELA = 3;
     const ehConceito = id => (PORID[id] || {}).tipo === 'conceito';
     const ehForma = id => (PORID[id] || {}).tipo === 'forma';
+    const ehFlexao = id => (PORID[id] || {}).tipo === 'flexao';
     /* o card de forma que só o erro puxou sai quando o erro foi vencido (Motor.formaPronta) */
     const ativosAgora = new Set(textosAtivosDe(p).map(x => x.id));
     p.ineditos = p.ineditos.filter(id => !ehForma(id) || formaDaTrilha(PORID[id], ativosAgora, p));
@@ -631,7 +645,14 @@ window.TaioeCardsApp = function (ctx) {
     for (const f of TZ_FRASES) {
       zero.push(...pega(f.id));
       (f.palavras || []).forEach(x => { if (x.c) zero.push(...pega(x.c)); });
+      (f.palavras || []).forEach(x => { const fx = flexaoDe(x); if (fx) zero.push(...pega(fx)); });
     }
+    /* as flexões que nenhuma leitura pede ainda (a tabela, a frase de uso), na ordem em que os
+       lemas estrearam; ficam fora do resto e entram uma a cada quatro vagas */
+    const estreiaDoLema = id => (p.cards[PORID[id].lema] || {}).estreouNa || 0;
+    const deTabela = p.ineditos.filter(id => ehFlexao(id) && !postos.has(id))
+      .sort((a, b) => estreiaDoLema(a) - estreiaDoLema(b) || CARDS.indexOf(PORID[a]) - CARDS.indexOf(PORID[b]));
+    deTabela.forEach(id => postos.add(id));
     const resto = p.ineditos.filter(id => !postos.has(id) && !ehConceito(id) && !ehForma(id));
     const todasAsEstreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined && !ehConceito(id))
       .sort((x, y) => p.cards[y].estreouNa - p.cards[x].estreouNa);
@@ -641,6 +662,9 @@ window.TaioeCardsApp = function (ctx) {
     let fila = zero.concat(resto);
     if (dosTextos.length) fila = naVez(fila, dosTextos, desde(id => palavrasDosTextos.has(id)), CADA);
     if (antigas.length) fila = naVez(fila, antigas, desde(ehPresa), CADA);
+    if (deTabela.length) {
+      fila = naVez(fila, deTabela.map(id => [id]), desde(id => ehFlexao(id) && !FLEXAO_DE_LEITURA.has(id)), CADA_FLEXAO_DE_TABELA);
+    }
     fila = frescas.concat(fila);
     /* Os cards de forma (LATIM.md §3.6) vêm logo depois do verso que os destravou, o verso mais
        recente primeiro e, nele, na ordem de leitura; no máximo FORMAS_SEGUIDAS de uma vez, e o
@@ -1053,7 +1077,7 @@ window.TaioeCardsApp = function (ctx) {
   function arquivarCardAtual() {
     if (!cardAtual) return;
     const c = PORID[cardAtual.id] || cardAtual;
-    const pergunta = t(c.tipo === 'palavra' ? 'arquivar.perguntaPalavra'
+    const pergunta = t(c.tipo === 'palavra' || c.tipo === 'flexao' ? 'arquivar.perguntaPalavra'
       : c.tipo === 'conceito' ? 'arquivar.perguntaConceito' : 'arquivar.perguntaFrase', { x: c[L] });
     if (!window.confirm(pergunta)) return;
     marcarArquivo(c.id, true);
@@ -1142,7 +1166,7 @@ window.TaioeCardsApp = function (ctx) {
        hora em que a pessoa sabe se a palavra já é dela (pedido do Gere,
        19/10/2026). O texto diz o que ela está afirmando (07/10). */
     const estreando = !estadoDe(id) || !estadoDe(id).vistas;
-    el['btn-arquivar'].textContent = t(cardAtual.tipo === 'palavra' ? 'card.jaConhecoPalavra'
+    el['btn-arquivar'].textContent = t(cardAtual.tipo === 'palavra' || cardAtual.tipo === 'flexao' ? 'card.jaConhecoPalavra'
       : cardAtual.tipo === 'conceito' ? 'card.jaConhecoConceito' : 'card.jaConhecoFrase');
     /* o desafio leva a marca; a prévia (frase ainda presa) é uma pergunta
        só, e arquivar uma frase que nem entrou no jogo não faz sentido */
@@ -1166,7 +1190,8 @@ window.TaioeCardsApp = function (ctx) {
     el.enunciado.textContent = conceito ? ''
       : inversa
       ? t(cardAtual.tipo === 'palavra' ? 'card.enunciado.voltaPalavra' : 'card.enunciado.voltaFrase', { L: NOME_L })
-      : t(cardAtual.tipo === 'palavra' ? 'card.enunciado.idaPalavra' : 'card.enunciado.idaFrase');
+      : t(cardAtual.tipo === 'palavra' ? 'card.enunciado.idaPalavra'
+        : cardAtual.tipo === 'flexao' ? 'card.enunciado.idaFlexao' : 'card.enunciado.idaFrase');
 
     el['bandeira-pergunta'].textContent = inversa ? BANDEIRA_A : BANDEIRA_L;
     el['bandeira-resposta'].textContent = inversa ? BANDEIRA_L : BANDEIRA_A;
@@ -1187,6 +1212,17 @@ window.TaioeCardsApp = function (ctx) {
     exemploAtual = cardAtual.tipo === 'conceito' ? Motor.exemploDoConceito(cardAtual, est) : null;
     if (exemploAtual) el.termo.innerHTML = comDestaque(exemploAtual.la, exemploAtual.w);
     else if (cardAtual.tipo === 'forma') el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.la, cardAtual.ocorrencia);
+    else if (cardAtual.tipo === 'flexao') {
+      /* a forma, e embaixo, pequeno, o enunciado do dicionário: «de is, ea, id» */
+      el.termo.textContent = cardAtual.la;
+      const lema = PORID[cardAtual.lema];
+      if (lema) {
+        const de = document.createElement('span');
+        de.className = 'termo-lema';
+        de.textContent = t('card.flexaoDe', { x: String(lema.enunciado || lema[L]).replace(/\s*\([^)]*\)\s*$/, '') });
+        el.termo.appendChild(de);
+      }
+    }
     else el.termo.textContent = !inversa && cardAtual.enunciado ? cardAtual.enunciado : Motor.pergunta(cardAtual, direcaoAtual);
     el.termo.classList.toggle('frase', ['frase', 'forma', 'contraste'].includes(cardAtual.tipo) || !!exemploAtual);
 
@@ -1257,9 +1293,9 @@ window.TaioeCardsApp = function (ctx) {
     });
   }
 
-  /* «palavra», «frase» e (no latim) «conceito», «forma» e «contraste», na língua da interface */
+  /* «palavra», «frase» e (no latim) «conceito», «forma», «contraste» e «flexão», na língua da interface */
   function nomeTipo(tipo) {
-    return ['palavra', 'frase', 'conceito', 'forma', 'contraste'].includes(tipo) ? t('tipo.' + tipo) : tipo;
+    return ['palavra', 'frase', 'conceito', 'forma', 'contraste', 'flexao'].includes(tipo) ? t('tipo.' + tipo) : tipo;
   }
 
   /* A frase do exemplo com a palavra em destaque (só ela: em «virumque», o «virum»); «vez» diz

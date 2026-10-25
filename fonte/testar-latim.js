@@ -61,7 +61,11 @@ for (const c of CARDS) {
     for (const x of todas) { respostas++; ok(conf(c, x) === 'certo', c.id + ': o gabarito aceita «' + x + '»'); }
   }
   for (const d of c.distratores || []) {
+    /* na flexão, a errada com parêntese pode ser, sem ele, a mesma escrita da certa: «ele
+       (sujeito)» no card de eum, que aceita «ele» (LATIM.md §3.8, D24) */
+    if (c.tipo === 'flexao' && d.includes('(')) continue;
     ok(conf(c, d) !== 'certo', c.id + ': o distrator «' + d + '» não pode valer');
+    if (c.tipo === 'flexao') ok(conf(c, d) === 'errado', c.id + ': o distrator da flexão é erro seco («' + d + '»)');
     if (c.tipo === 'frase') ok(conf(c, d) === 'errado', c.id + ': o distrator da frase é erro seco («' + d + '»)');
   }
 }
@@ -117,6 +121,38 @@ for (const c of CARDS.filter(x => x.tipo === 'conceito' && x.familia !== 'voz'))
   c.exemplos.forEach((ex, i) => ok(Array.isArray(ex.distratores) && ex.distratores.length === 4 && !ex.distratores.includes(c.pt),
     c.id + ' exemplo ' + (i + 1) + ': quatro erradas, sem a certa'));
 }
+
+/* ═══════════ 6a. o card de flexão (LATIM.md §3.8) ═══════════ */
+secao('o card de flexão');
+const FLEX = CARDS.filter(c => c.tipo === 'flexao');
+ok(FLEX.length > 100, 'há cards de flexão (' + FLEX.length + ')');
+const flex = (la, lema) => FLEX.find(c => c.la === la && PORID.get(c.lema).la === lema);
+const fId = flex('id', 'is'), fEum = flex('eum', 'is'), fEi = flex('ei', 'is'), fIs = flex('is', 'is');
+ok(fId && fEum && fEi && fIs, 'a tabela de is, ea, id, também com «is» (a forma do dicionário)');
+ok(['is', 'ea', 'id'].every(f => flex(f, 'is')) && ['hic', 'haec', 'hoc'].every(f => flex(f, 'hic')) &&
+  ['qui', 'quae', 'quod'].every(f => flex(f, 'qui')), 'as três formas do dicionário dos pronomes de três gêneros');
+ok(['sum', 'esse', 'fui'].every(f => flex(f, 'sum')) && ['possum', 'posse', 'potui'].every(f => flex(f, 'possum')),
+  'sum e possum com as formas do enunciado');
+ok(conf(fId, 'isso') === 'certo' && conf(fId, 'Isto.') === 'certo', 'id: «isso», «isto»');
+ok(conf(fId, 'ele') === 'errado', 'id: «ele» (is) é erro seco');
+ok(conf(fEum, 'o') === 'certo' && conf(fEum, 'ele') === 'certo', 'eum: o artigo é resposta («o»), e «ele» também');
+ok(conf(fEum, 'a ele') === 'errado' && conf(fEum, 'lhe') === 'errado', 'eum: a leitura de ei é erro seco');
+ok(conf(fEi, 'a ele') === 'certo' && conf(fEi, 'lhe') === 'certo', 'ei: «a ele», «lhe»');
+ok(conf(fEum, 'o, ele (objeto)') === 'certo', 'a certa com o parêntese também vale');
+const altFlex = M.alternativas(fId, IDA, CARDS, {});
+ok(altFlex.length === 5 && altFlex.includes(fId.pt) && fId.distratores.every(d => altFlex.includes(d)), 'as alternativas: a certa e as quatro do card');
+const estF = M.estadoInicialDo(fId);
+ok(M.modoDe(estF) === 'multipla' && M.direcaoDe(estF) === IDA, 'estreia na ida, de escolher');
+let nF = 0;
+while (estF.etapa !== 'dominado' && nF < 10) { responder(estF, true); nF++; }
+ok(nF === 3, 'domina como o card de palavra: a múltipla e duas escritas (foram ' + nF + ')');
+for (const c of FLEX) {
+  for (const o of c.outras || []) ok(conf(c, o) === 'certo', c.id + ': a outra leitura «' + o + '» vale');
+  ok(PORID.get(c.lema) && PORID.get(c.lema).tipo === 'palavra', c.id + ': o lema existe');
+}
+const tr022 = PORID.get('la-t022');
+ok(tr022.requerTodas.includes(fId.id), 'o verso de Catulo espera a flexão «id»');
+ok(tr022.requerTodas.indexOf('la-p171') < tr022.requerTodas.indexOf(fId.id), 'os lemas antes das flexões');
 
 /* ═══════════ 6b. o card de forma (LATIM.md §3.6) ═══════════ */
 secao('o card de forma');
@@ -252,9 +288,12 @@ for (const txt of textos) {
     const tr = PORID.get(l.card);
     ok(tr && tr.texto === txt.id && tr.linha === i + 1 && tr.la === l.t, txt.id + ' linha ' + (i + 1) + ': o trecho bate');
     const pede = new Set((l.p || []).filter(x => x[1]).flatMap(x => cardsDe(txt.destinos[x[1]])));
-    const req = new Set((tr && tr.requerTodas) || []);
+    /* o trecho pede os lemas da linha e, depois deles, as flexões (LATIM.md §3.8) */
+    const req = new Set(((tr && tr.requerTodas) || []).filter(id => (PORID.get(id) || {}).tipo !== 'flexao'));
     ok(pede.size === req.size && [...pede].every(id => req.has(id)),
       txt.id + ' linha ' + (i + 1) + ': as palavras da linha são as que o trecho pede');
+    const flexDoTrecho = ((tr && tr.requerTodas) || []).filter(id => (PORID.get(id) || {}).tipo === 'flexao');
+    ok(flexDoTrecho.every(id => pede.has(PORID.get(id).lema)), txt.id + ' linha ' + (i + 1) + ': as flexões são de lemas da linha');
   });
 }
 
