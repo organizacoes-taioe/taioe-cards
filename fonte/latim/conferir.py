@@ -85,6 +85,20 @@ def tokens(la):
     return saida
 
 
+def alinha(toks, ws):
+    """Cada palavra do texto é uma entrada da anotação, ou duas coladas: a enclítica que o índice
+    não separa, porque a raiz é nome próprio sem análise (Laviniaque = Lavinia + -que)."""
+    j = 0
+    for t in toks:
+        if j < len(ws) and ws[j] == t:
+            j += 1
+        elif j + 1 < len(ws) and ws[j + 1].startswith('-') and ws[j] + ws[j + 1][1:] == t:
+            j += 2
+        else:
+            return False
+    return j == len(ws)
+
+
 def conferir(cards, filtro=''):
     por_id = {c['id']: c for c in cards}
     problemas = 0
@@ -94,7 +108,7 @@ def conferir(cards, filtro=''):
         pal = c.get('palavras') or []
         toks = tokens(c['la'])
         ws = [p['w'] for p in pal]
-        if [latim.chave(t) for t in toks] != [latim.chave(x) for x in ws]:
+        if not alinha([latim.chave(t) for t in toks], [latim.chave(x) for x in ws]):
             print(f"{c['id']}: as palavras não batem com o texto\n   texto:    {toks}\n   palavras: {ws}")
             problemas += 1
             continue

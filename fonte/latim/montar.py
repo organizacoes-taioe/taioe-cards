@@ -14,7 +14,7 @@ A leva é uma lista de frases neste formato (o que muda de uma frase para outra)
 
 Cada palavra é [forma no texto, id do card ou null, rótulo da forma, função]. A nota sai das
 palavras (uma linha por palavra com rótulo ou função) e da linha «ensina»; o «requerTodas», dos
-cards das palavras, na ordem; os conceitos, dos nomes dos cards de conceito (01-conceitos.json).
+cards das palavras, na ordem; os conceitos, dos nomes dos cards de conceito (de todas as levas).
 Frase de uso leva «requer» (a palavra que ela ensina); trecho de texto leva «texto» e «linha».
 """
 
@@ -71,7 +71,9 @@ def montar(itens, conceitos, tag):
 if __name__ == '__main__':
     sys.stdout.reconfigure(encoding='utf-8')
     entrada, destino = Path(sys.argv[1]), Path(sys.argv[2])
-    conceitos = {c['la']: c['id'] for c in json.loads((BARALHO / '01-conceitos.json').read_text(encoding='utf-8'))}
+    # os conceitos de todas as levas (01-conceitos, 12-conceitos-2…)
+    conceitos = {c['la']: c['id'] for arq in sorted(BARALHO.glob('*.json'))
+                 for c in json.loads(arq.read_text(encoding='utf-8')) if c.get('tipo') == 'conceito'}
     itens = json.loads(entrada.read_text(encoding='utf-8'))
     tag = 'frase de uso' if all(x.get('requer') for x in itens) else 'trecho'
     cards = montar(itens, conceitos, tag)

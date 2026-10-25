@@ -1,7 +1,7 @@
 {
  "versao": 3,
  "idioma": "la",
- "total": 7,
+ "total": 9,
  "textos": [
   {
    "id": "oracoes/gloria-patri",
@@ -3614,6 +3614,1485 @@
      "card": "la-p208"
     }
    }
+  },
+  {
+   "id": "vergilio/eneida-parte-1",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Aeneis",
+   "autor": "Vergílio",
+   "ano": null,
+   "biblioteca": "/biblioteca/vergilio/eneida/",
+   "blocos": [
+    [
+     {
+      "t": "Arma virumque cano, Troiae qui primus ab oris",
+      "p": [
+       [
+        "Arma",
+        "arma"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "virumque",
+        "virumque"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cano",
+        "cano"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Troiae",
+        "troiae"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "primus",
+        "primus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ab",
+        "ab"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "oris",
+        "oris"
+       ]
+      ],
+      "requer": [
+       "la-p026",
+       "la-p027",
+       "la-p028",
+       "la-p029",
+       "la-p064",
+       "la-p209",
+       "la-p108",
+       "la-p210"
+      ],
+      "card": "la-t036"
+     },
+     {
+      "t": "Italiam, fato profugus, Laviniaque venit",
+      "p": [
+       [
+        "Italiam",
+        "italiam"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "fato",
+        "fato"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "profugus",
+        "profugus"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Laviniaque",
+        "laviniaque"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "venit",
+        "venit"
+       ]
+      ],
+      "requer": [
+       "la-p211",
+       "la-p212",
+       "la-p028",
+       "la-p038"
+      ],
+      "card": "la-t037"
+     },
+     {
+      "t": "litora, multum ille et terris iactatus et alto",
+      "p": [
+       [
+        "litora",
+        "litora"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "multum",
+        "multum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ille",
+        "ille"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "terris",
+        "terris"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "iactatus",
+        "iactatus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "alto",
+        "alto"
+       ]
+      ],
+      "requer": [
+       "la-p213",
+       "la-p214",
+       "la-p215",
+       "la-p009",
+       "la-p096",
+       "la-p216",
+       "la-p217"
+      ],
+      "card": "la-t038"
+     },
+     {
+      "t": "vi superum saevae memorem Iunonis ob iram;",
+      "p": [
+       [
+        "vi",
+        "vi"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "superum",
+        "superum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "saevae",
+        "saevae"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "memorem",
+        "memorem"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Iunonis",
+        "iunonis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ob",
+        "ob"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "iram",
+        "iram"
+       ],
+       [
+        ";",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p218",
+       "la-p219",
+       "la-p220",
+       "la-p221",
+       "la-p222",
+       "la-p223"
+      ],
+      "card": "la-t039"
+     },
+     {
+      "t": "multa quoque et bello passus, dum conderet urbem,",
+      "p": [
+       [
+        "multa",
+        "multa"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quoque",
+        "quoque"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et#3"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bello",
+        "bello"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "passus",
+        "passus"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "dum",
+        "dum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "conderet",
+        "conderet"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "urbem",
+        "urbem"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p214",
+       "la-p224",
+       "la-p009",
+       "la-p157",
+       "la-p225",
+       "la-p131",
+       "la-p226",
+       "la-p227"
+      ],
+      "card": "la-t040"
+     },
+     {
+      "t": "inferretque deos Latio, genus unde Latinum,",
+      "p": [
+       [
+        "inferretque",
+        "inferretque"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "deos",
+        "deos"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Latio",
+        "latio"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "genus",
+        "genus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "unde",
+        "unde"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Latinum",
+        "latinum"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p195",
+       "la-p028",
+       "la-p001",
+       "la-p228",
+       "la-p229"
+      ],
+      "card": "la-t041"
+     },
+     {
+      "t": "Albanique patres, atque altae moenia Romae.",
+      "p": [
+       [
+        "Albanique",
+        "albanique"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "patres",
+        "patres"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "atque",
+        "atque"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "altae",
+        "altae"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "moenia",
+        "moenia"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Romae",
+        "romae"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p028",
+       "la-p072",
+       "la-p230",
+       "la-p217",
+       "la-p231"
+      ],
+      "card": "la-t042"
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p026",
+    "la-p027",
+    "la-p028",
+    "la-p029",
+    "la-p064",
+    "la-p209",
+    "la-p108",
+    "la-p210",
+    "la-p211",
+    "la-p212",
+    "la-p038",
+    "la-p213",
+    "la-p214",
+    "la-p215",
+    "la-p009",
+    "la-p096",
+    "la-p216",
+    "la-p217",
+    "la-p218",
+    "la-p219",
+    "la-p220",
+    "la-p221",
+    "la-p222",
+    "la-p223",
+    "la-p224",
+    "la-p157",
+    "la-p225",
+    "la-p131",
+    "la-p226",
+    "la-p227",
+    "la-p195",
+    "la-p001",
+    "la-p228",
+    "la-p229",
+    "la-p072",
+    "la-p230",
+    "la-p231"
+   ],
+   "destinos": {
+    "arma": {
+     "lema": "arma",
+     "classe": "substantivo",
+     "forma": "acusativo neutro plural",
+     "funcao": "objeto de cano",
+     "wiki": "https://en.wiktionary.org/wiki/arma#Latin",
+     "card": "la-p026"
+    },
+    "virumque": {
+     "partes": [
+      {
+       "lema": "vir",
+       "classe": "substantivo masculino",
+       "forma": "acusativo singular",
+       "funcao": "objeto de cano",
+       "wiki": "https://en.wiktionary.org/wiki/vir#Latin",
+       "card": "la-p027"
+      },
+      {
+       "lema": "-que",
+       "classe": "conjunção",
+       "wiki": "https://en.wiktionary.org/wiki/-que#Latin",
+       "card": "la-p028"
+      }
+     ]
+    },
+    "cano": {
+     "lema": "cano",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "funcao": "quem fala é o poeta",
+     "wiki": "https://en.wiktionary.org/wiki/cano#Latin",
+     "card": "la-p029"
+    },
+    "troiae": {
+     "lema": "Troia",
+     "classe": "nome próprio",
+     "forma": "genitivo singular",
+     "funcao": "de Troia",
+     "def": [
+      "Troia, a cidade de Príamo, na Ásia Menor, destruída pelos gregos."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Troia#Latin",
+     "g": "nome"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de venit, no verso 2; retoma virum",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "primus": {
+     "lema": "primus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "concorda com qui: o primeiro",
+     "wiki": "https://en.wiktionary.org/wiki/primus#Latin",
+     "card": "la-p209"
+    },
+    "ab": {
+     "lema": "ab",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/ab#Latin",
+     "card": "la-p108"
+    },
+    "oris": {
+     "lema": "ora",
+     "classe": "substantivo feminino",
+     "forma": "ablativo plural",
+     "funcao": "de onde: das costas",
+     "wiki": "https://en.wiktionary.org/wiki/ora#Latin",
+     "card": "la-p210"
+    },
+    "italiam": {
+     "lema": "Italia",
+     "classe": "nome próprio",
+     "forma": "acusativo singular",
+     "funcao": "para onde, sem preposição",
+     "def": [
+      "A Itália."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Italia#Latin",
+     "g": "nome"
+    },
+    "fato": {
+     "lema": "fatum",
+     "classe": "substantivo neutro",
+     "forma": "ablativo singular",
+     "funcao": "a causa: pelo destino",
+     "wiki": "https://en.wiktionary.org/wiki/fatum#Latin",
+     "card": "la-p211"
+    },
+    "profugus": {
+     "lema": "profugus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "concorda com qui: exilado",
+     "wiki": "https://en.wiktionary.org/wiki/profugus#Latin",
+     "card": "la-p212"
+    },
+    "laviniaque": {
+     "partes": [
+      {
+       "lema": "Lavinius",
+       "classe": "adjetivo (nome próprio)",
+       "forma": "acusativo neutro plural",
+       "funcao": "concorda com litora, no verso seguinte",
+       "def": [
+        "De Lavínio, a cidade que Eneias fundou no Lácio."
+       ],
+       "wiki": "https://en.wiktionary.org/wiki/Lavinius#Latin",
+       "g": "nome"
+      },
+      {
+       "lema": "-que",
+       "classe": "conjunção",
+       "wiki": "https://en.wiktionary.org/wiki/-que#Latin",
+       "card": "la-p028"
+      }
+     ]
+    },
+    "venit": {
+     "lema": "venio",
+     "classe": "verbo",
+     "forma": "perfeito do indicativo, 3ª pessoa do singular",
+     "funcao": "o verbo de qui: veio",
+     "wiki": "https://en.wiktionary.org/wiki/venio#Latin",
+     "card": "la-p038"
+    },
+    "litora": {
+     "lema": "litus",
+     "classe": "substantivo neutro",
+     "forma": "acusativo neutro plural",
+     "funcao": "para onde, com Lavinia: às praias lavínias",
+     "wiki": "https://en.wiktionary.org/wiki/litus#Latin",
+     "card": "la-p213"
+    },
+    "multum": {
+     "lema": "multus",
+     "classe": "adjetivo",
+     "forma": "acusativo neutro singular",
+     "funcao": "como advérbio: muito",
+     "wiki": "https://en.wiktionary.org/wiki/multus#Latin",
+     "card": "la-p214"
+    },
+    "ille": {
+     "lema": "ille",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "ele, o homem do verso 1",
+     "wiki": "https://en.wiktionary.org/wiki/ille#Latin",
+     "card": "la-p215"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "funcao": "et… et: tanto… como",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "terris": {
+     "lema": "terra",
+     "classe": "substantivo feminino",
+     "forma": "ablativo plural",
+     "funcao": "onde: por terras",
+     "wiki": "https://en.wiktionary.org/wiki/terra#Latin",
+     "card": "la-p096"
+    },
+    "iactatus": {
+     "lema": "iacto",
+     "classe": "verbo",
+     "forma": "particípio perfeito, nominativo masculino singular",
+     "funcao": "concorda com ille: sacudido",
+     "wiki": "https://en.wiktionary.org/wiki/iacto#Latin",
+     "card": "la-p216"
+    },
+    "et#2": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "alto": {
+     "lema": "altus",
+     "classe": "adjetivo",
+     "forma": "ablativo neutro singular",
+     "funcao": "como nome, o alto-mar: onde",
+     "wiki": "https://en.wiktionary.org/wiki/altus#Latin",
+     "card": "la-p217"
+    },
+    "vi": {
+     "lema": "vis",
+     "classe": "substantivo",
+     "forma": "ablativo singular",
+     "funcao": "a causa: pela força",
+     "wiki": "https://en.wiktionary.org/wiki/vis#Latin",
+     "card": "la-p218"
+    },
+    "superum": {
+     "lema": "superus",
+     "classe": "adjetivo",
+     "forma": "genitivo masculino plural",
+     "funcao": "forma antiga de superorum: dos deuses",
+     "wiki": "https://en.wiktionary.org/wiki/superus#Latin",
+     "card": "la-p219"
+    },
+    "saevae": {
+     "lema": "saevus",
+     "classe": "adjetivo",
+     "forma": "genitivo feminino singular",
+     "funcao": "concorda com Iunonis",
+     "wiki": "https://en.wiktionary.org/wiki/saevus#Latin",
+     "card": "la-p220"
+    },
+    "memorem": {
+     "lema": "memor",
+     "classe": "adjetivo",
+     "forma": "acusativo feminino singular",
+     "funcao": "concorda com iram: que não esquece",
+     "wiki": "https://en.wiktionary.org/wiki/memor#Latin",
+     "card": "la-p221"
+    },
+    "iunonis": {
+     "lema": "Iuno",
+     "classe": "nome próprio",
+     "forma": "genitivo singular",
+     "funcao": "de quem é a ira",
+     "def": [
+      "Juno, a rainha dos deuses, mulher de Júpiter."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Iuno#Latin",
+     "g": "nome"
+    },
+    "ob": {
+     "lema": "ob",
+     "classe": "preposição",
+     "forma": "preposição com acusativo",
+     "wiki": "https://en.wiktionary.org/wiki/ob#Latin",
+     "card": "la-p222"
+    },
+    "iram": {
+     "lema": "ira",
+     "classe": "substantivo feminino",
+     "forma": "acusativo singular",
+     "funcao": "com ob: por causa da ira",
+     "wiki": "https://en.wiktionary.org/wiki/ira#Latin",
+     "card": "la-p223"
+    },
+    "multa": {
+     "lema": "multus",
+     "classe": "adjetivo",
+     "forma": "acusativo neutro plural",
+     "funcao": "objeto de passus: muitas coisas",
+     "wiki": "https://en.wiktionary.org/wiki/multus#Latin",
+     "card": "la-p214"
+    },
+    "quoque": {
+     "lema": "quoque",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/quoque#Latin",
+     "card": "la-p224"
+    },
+    "et#3": {
+     "lema": "et",
+     "classe": "conjunção",
+     "funcao": "também, junto com quoque",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "bello": {
+     "lema": "bellum",
+     "classe": "substantivo neutro",
+     "forma": "ablativo singular",
+     "funcao": "onde: na guerra",
+     "wiki": "https://en.wiktionary.org/wiki/bellum#Latin",
+     "card": "la-p157"
+    },
+    "passus": {
+     "lema": "patior",
+     "classe": "verbo",
+     "forma": "particípio perfeito, nominativo masculino singular",
+     "funcao": "de depoente, sentido ativo: tendo sofrido",
+     "wiki": "https://en.wiktionary.org/wiki/patior#Latin",
+     "card": "la-p225"
+    },
+    "dum": {
+     "lema": "dum",
+     "classe": "conjunção",
+     "funcao": "com subjuntivo: até que",
+     "wiki": "https://en.wiktionary.org/wiki/dum#Latin",
+     "card": "la-p131"
+    },
+    "conderet": {
+     "lema": "condo",
+     "classe": "verbo",
+     "forma": "imperfeito do subjuntivo, 3ª pessoa do singular",
+     "funcao": "até que fundasse",
+     "wiki": "https://en.wiktionary.org/wiki/condo#Latin",
+     "card": "la-p226"
+    },
+    "urbem": {
+     "lema": "urbs",
+     "classe": "substantivo feminino",
+     "forma": "acusativo singular",
+     "funcao": "objeto de conderet",
+     "wiki": "https://en.wiktionary.org/wiki/urbs#Latin",
+     "card": "la-p227"
+    },
+    "inferretque": {
+     "partes": [
+      {
+       "lema": "infero",
+       "classe": "verbo",
+       "forma": "imperfeito do subjuntivo, 3ª pessoa do singular",
+       "funcao": "ainda com dum: e levasse",
+       "wiki": "https://en.wiktionary.org/wiki/infero#Latin",
+       "card": "la-p195"
+      },
+      {
+       "lema": "-que",
+       "classe": "conjunção",
+       "wiki": "https://en.wiktionary.org/wiki/-que#Latin",
+       "card": "la-p028"
+      }
+     ]
+    },
+    "deos": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de inferret: os deuses de Troia",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "latio": {
+     "lema": "Latium",
+     "classe": "nome próprio",
+     "forma": "dativo singular",
+     "funcao": "para onde",
+     "def": [
+      "O Lácio, a região da Itália onde fica Roma."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Latium#Latin",
+     "g": "nome"
+    },
+    "genus": {
+     "lema": "genus",
+     "classe": "substantivo neutro",
+     "forma": "nominativo singular",
+     "funcao": "o sujeito; o verbo fica subentendido",
+     "wiki": "https://en.wiktionary.org/wiki/genus#Latin",
+     "card": "la-p228"
+    },
+    "unde": {
+     "lema": "unde",
+     "classe": "advérbio",
+     "funcao": "de onde: de Eneias e dos seus",
+     "wiki": "https://en.wiktionary.org/wiki/unde#Latin",
+     "card": "la-p229"
+    },
+    "latinum": {
+     "lema": "Latinus",
+     "classe": "adjetivo (nome próprio)",
+     "forma": "nominativo neutro singular",
+     "funcao": "concorda com genus",
+     "def": [
+      "Latino, do Lácio."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Latinus#Latin",
+     "g": "nome"
+    },
+    "albanique": {
+     "partes": [
+      {
+       "lema": "Albanus",
+       "classe": "adjetivo (nome próprio)",
+       "forma": "nominativo masculino plural",
+       "funcao": "concorda com patres",
+       "def": [
+        "Albano, de Alba Longa, a cidade que o filho de Eneias fundou e de onde veio Rômulo."
+       ],
+       "wiki": "https://en.wiktionary.org/wiki/Albanus#Latin",
+       "g": "nome"
+      },
+      {
+       "lema": "-que",
+       "classe": "conjunção",
+       "wiki": "https://en.wiktionary.org/wiki/-que#Latin",
+       "card": "la-p028"
+      }
+     ]
+    },
+    "patres": {
+     "lema": "pater",
+     "classe": "substantivo masculino",
+     "forma": "nominativo plural",
+     "funcao": "sujeito, como genus: os antepassados",
+     "wiki": "https://en.wiktionary.org/wiki/pater#Latin",
+     "card": "la-p072"
+    },
+    "atque": {
+     "lema": "atque",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/atque#Latin",
+     "card": "la-p230"
+    },
+    "altae": {
+     "lema": "altus",
+     "classe": "adjetivo",
+     "forma": "genitivo feminino singular",
+     "funcao": "concorda com Romae",
+     "wiki": "https://en.wiktionary.org/wiki/altus#Latin",
+     "card": "la-p217"
+    },
+    "moenia": {
+     "lema": "moenia",
+     "classe": "substantivo",
+     "forma": "nominativo plural",
+     "funcao": "sujeito, como genus",
+     "wiki": "https://en.wiktionary.org/wiki/moenia#Latin",
+     "card": "la-p231"
+    },
+    "romae": {
+     "lema": "Roma",
+     "classe": "nome próprio",
+     "forma": "genitivo singular",
+     "funcao": "de Roma",
+     "def": [
+      "Roma."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Roma#Latin",
+     "g": "nome"
+    }
+   },
+   "obra": "vergilio/eneida",
+   "parte": 1,
+   "trecho": "I, 1–7"
+  },
+  {
+   "id": "vergilio/eneida-parte-2",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Aeneis",
+   "autor": "Vergílio",
+   "ano": null,
+   "biblioteca": "/biblioteca/vergilio/eneida/",
+   "blocos": [
+    [
+     {
+      "t": "Musa, mihi causas memora, quo numine laeso,",
+      "p": [
+       [
+        "Musa",
+        "musa"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "mihi",
+        "mihi"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "causas",
+        "causas"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "memora",
+        "memora"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "quo",
+        "quo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "numine",
+        "numine"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "laeso",
+        "laeso"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p232",
+       "la-p004",
+       "la-p194",
+       "la-p233",
+       "la-p236",
+       "la-p234",
+       "la-p235"
+      ],
+      "card": "la-t043"
+     },
+     {
+      "t": "quidve dolens, regina deum tot volvere casus",
+      "p": [
+       [
+        "quidve",
+        "quidve"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dolens",
+        "dolens"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "regina",
+        "regina"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "deum",
+        "deum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tot",
+        "tot"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "volvere",
+        "volvere"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "casus",
+        "casus"
+       ]
+      ],
+      "requer": [
+       "la-p236",
+       "la-p237",
+       "la-p238",
+       "la-p172",
+       "la-p001",
+       "la-p239",
+       "la-p240",
+       "la-p241"
+      ],
+      "card": "la-t044"
+     },
+     {
+      "t": "insignem pietate virum, tot adire labores",
+      "p": [
+       [
+        "insignem",
+        "insignem"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pietate",
+        "pietate"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "virum",
+        "virum"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "tot",
+        "tot#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "adire",
+        "adire"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "labores",
+        "labores"
+       ]
+      ],
+      "requer": [
+       "la-p242",
+       "la-p243",
+       "la-p027",
+       "la-p239",
+       "la-p244",
+       "la-p245"
+      ],
+      "card": "la-t045"
+     },
+     {
+      "t": "impulerit. Tantaene animis caelestibus irae?",
+      "p": [
+       [
+        "impulerit",
+        "impulerit"
+       ],
+       [
+        ". ",
+        null
+       ],
+       [
+        "Tantaene",
+        "tantaene"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "animis",
+        "animis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "caelestibus",
+        "caelestibus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "irae",
+        "irae"
+       ],
+       [
+        "?",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p246",
+       "la-p247",
+       "la-p248",
+       "la-p249",
+       "la-p250",
+       "la-p223"
+      ],
+      "card": "la-t046"
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p232",
+    "la-p004",
+    "la-p194",
+    "la-p233",
+    "la-p236",
+    "la-p234",
+    "la-p235",
+    "la-p237",
+    "la-p238",
+    "la-p172",
+    "la-p001",
+    "la-p239",
+    "la-p240",
+    "la-p241",
+    "la-p242",
+    "la-p243",
+    "la-p027",
+    "la-p244",
+    "la-p245",
+    "la-p246",
+    "la-p247",
+    "la-p248",
+    "la-p249",
+    "la-p250",
+    "la-p223"
+   ],
+   "destinos": {
+    "musa": {
+     "lema": "musa",
+     "classe": "substantivo feminino",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "wiki": "https://en.wiktionary.org/wiki/musa#Latin",
+     "card": "la-p232"
+    },
+    "mihi": {
+     "lema": "ego",
+     "classe": "pronome",
+     "forma": "dativo singular",
+     "funcao": "a quem: a mim",
+     "wiki": "https://en.wiktionary.org/wiki/ego#Latin",
+     "card": "la-p004"
+    },
+    "causas": {
+     "lema": "causa",
+     "classe": "substantivo feminino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de memora",
+     "wiki": "https://en.wiktionary.org/wiki/causa#Latin",
+     "card": "la-p194"
+    },
+    "memora": {
+     "lema": "memoro",
+     "classe": "verbo",
+     "forma": "imperativo presente, 2ª pessoa do singular",
+     "funcao": "lembra, conta",
+     "wiki": "https://en.wiktionary.org/wiki/memoro#Latin",
+     "card": "la-p233"
+    },
+    "quo": {
+     "lema": "quis",
+     "classe": "pronome",
+     "forma": "ablativo neutro singular",
+     "funcao": "interrogativo, concorda com numine: qual",
+     "wiki": "https://en.wiktionary.org/wiki/quis#Latin",
+     "card": "la-p236"
+    },
+    "numine": {
+     "lema": "numen",
+     "classe": "substantivo neutro",
+     "forma": "ablativo singular",
+     "funcao": "com laeso, ablativo absoluto",
+     "wiki": "https://en.wiktionary.org/wiki/numen#Latin",
+     "card": "la-p234"
+    },
+    "laeso": {
+     "lema": "laedo",
+     "classe": "verbo",
+     "forma": "particípio perfeito, ablativo neutro singular",
+     "funcao": "com numine: tendo sido ofendido",
+     "wiki": "https://en.wiktionary.org/wiki/laedo#Latin",
+     "card": "la-p235"
+    },
+    "quidve": {
+     "partes": [
+      {
+       "lema": "quis",
+       "classe": "pronome",
+       "forma": "acusativo neutro singular",
+       "funcao": "de quê",
+       "wiki": "https://en.wiktionary.org/wiki/quis#Latin",
+       "card": "la-p236"
+      },
+      {
+       "lema": "-ve",
+       "classe": "conjunção",
+       "wiki": "https://en.wiktionary.org/wiki/-ve#Latin",
+       "card": "la-p237"
+      }
+     ]
+    },
+    "dolens": {
+     "lema": "doleo",
+     "classe": "verbo",
+     "forma": "particípio presente, nominativo feminino singular",
+     "funcao": "concorda com regina: ressentida",
+     "wiki": "https://en.wiktionary.org/wiki/doleo#Latin",
+     "card": "la-p238"
+    },
+    "regina": {
+     "lema": "regina",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de impulerit, no verso 11",
+     "wiki": "https://en.wiktionary.org/wiki/regina#Latin",
+     "card": "la-p172"
+    },
+    "deum": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "genitivo plural",
+     "funcao": "forma antiga de deorum: dos deuses",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "tot": {
+     "lema": "tot",
+     "classe": "adjetivo",
+     "funcao": "concorda com casus",
+     "wiki": "https://en.wiktionary.org/wiki/tot#Latin",
+     "card": "la-p239"
+    },
+    "volvere": {
+     "lema": "volvo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de impulerit: a passar por",
+     "wiki": "https://en.wiktionary.org/wiki/volvo#Latin",
+     "card": "la-p240"
+    },
+    "casus": {
+     "lema": "casus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de volvere: as desgraças",
+     "wiki": "https://en.wiktionary.org/wiki/casus#Latin",
+     "card": "la-p241"
+    },
+    "insignem": {
+     "lema": "insignis",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino singular",
+     "funcao": "concorda com virum",
+     "wiki": "https://en.wiktionary.org/wiki/insignis#Latin",
+     "card": "la-p242"
+    },
+    "pietate": {
+     "lema": "pietas",
+     "classe": "substantivo feminino",
+     "forma": "ablativo singular",
+     "funcao": "em quê: notável pela piedade",
+     "wiki": "https://en.wiktionary.org/wiki/pietas#Latin",
+     "card": "la-p243"
+    },
+    "virum": {
+     "lema": "vir",
+     "classe": "substantivo masculino",
+     "forma": "acusativo singular",
+     "funcao": "objeto de impulerit, no verso 11",
+     "wiki": "https://en.wiktionary.org/wiki/vir#Latin",
+     "card": "la-p027"
+    },
+    "tot#2": {
+     "lema": "tot",
+     "classe": "adjetivo",
+     "funcao": "concorda com labores",
+     "wiki": "https://en.wiktionary.org/wiki/tot#Latin",
+     "card": "la-p239"
+    },
+    "adire": {
+     "lema": "adeo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de impulerit: a enfrentar",
+     "wiki": "https://en.wiktionary.org/wiki/adeo#Latin",
+     "card": "la-p244"
+    },
+    "labores": {
+     "lema": "labor",
+     "classe": "substantivo masculino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de adire",
+     "wiki": "https://en.wiktionary.org/wiki/labor#Latin",
+     "card": "la-p245"
+    },
+    "impulerit": {
+     "lema": "impello",
+     "classe": "verbo",
+     "forma": "perfeito do subjuntivo, 3ª pessoa do singular",
+     "funcao": "na pergunta indireta: levou",
+     "wiki": "https://en.wiktionary.org/wiki/impello#Latin",
+     "card": "la-p246"
+    },
+    "tantaene": {
+     "partes": [
+      {
+       "lema": "tantus",
+       "classe": "adjetivo",
+       "forma": "nominativo feminino plural",
+       "funcao": "concorda com irae",
+       "wiki": "https://en.wiktionary.org/wiki/tantus#Latin",
+       "card": "la-p247"
+      },
+      {
+       "lema": "-ne",
+       "classe": "advérbio",
+       "funcao": "faz a pergunta",
+       "wiki": "https://en.wiktionary.org/wiki/-ne#Latin",
+       "card": "la-p248"
+      }
+     ]
+    },
+    "animis": {
+     "lema": "animus",
+     "classe": "substantivo masculino",
+     "forma": "dativo plural",
+     "funcao": "de posse: os ânimos celestes têm",
+     "wiki": "https://en.wiktionary.org/wiki/animus#Latin",
+     "card": "la-p249"
+    },
+    "caelestibus": {
+     "lema": "caelestis",
+     "classe": "adjetivo",
+     "forma": "dativo plural",
+     "funcao": "concorda com animis",
+     "wiki": "https://en.wiktionary.org/wiki/caelestis#Latin",
+     "card": "la-p250"
+    },
+    "irae": {
+     "lema": "ira",
+     "classe": "substantivo feminino",
+     "forma": "nominativo plural",
+     "funcao": "sujeito; o verbo (sunt) fica subentendido",
+     "wiki": "https://en.wiktionary.org/wiki/ira#Latin",
+     "card": "la-p223"
+    }
+   },
+   "obra": "vergilio/eneida",
+   "parte": 2,
+   "trecho": "I, 8–11"
   }
  ]
 }

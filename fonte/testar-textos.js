@@ -121,5 +121,26 @@ M.usarTransparencias([{ id: 'e', tipo: 'palavra', transp: 'total' }]);
 ok(M.palavrasDosTextos([P2], {}, {}).join() === 'f', 'a transparente total não estreia');
 M.usarTransparencias([]);
 
+/* ═══════════ 5. as partes de um texto longo (PLANO.md §9.6) ═══════════ */
+secao('partes de um texto longo');
+const parte = (n, fila) => Object.assign(poema('obra-' + n, fila, [['q' + n]]), { obra: 'obra', parte: n, trecho: 'I, ' + n });
+const PT1 = parte(1), PT2 = parte(2), PT3 = parte(3);
+const COM_PARTES = [PT3, P1, PT1, PT2];
+ok(M.partesDaObra('obra', COM_PARTES).map(t => t.parte).join() === '1,2,3', 'as partes da obra, em ordem');
+ok(M.parteDaVez('obra', COM_PARTES, {}) === PT1, 'a parte da vez é a primeira que não terminou');
+ok(M.parteDaVez('obra', COM_PARTES, { 'obra-1': 'x' }) === PT2, 'terminada a 1, a da vez é a 2');
+ok(M.parteDaVez('obra', COM_PARTES, { 'obra-1': 'x', 'obra-2': 'x', 'obra-3': 'x' }) === null, 'todas lidas: nenhuma');
+ok(M.parteSeguinte(PT1, COM_PARTES) === PT2 && M.parteSeguinte(PT3, COM_PARTES) === null, 'a seguinte, e a última sem seguinte');
+ok(M.parteSeguinte(P1, COM_PARTES) === null, 'texto que não é parte não tem seguinte');
+ok(M.textoEscolhivel(PT1, COM_PARTES, {}) && !M.textoEscolhivel(PT2, COM_PARTES, {}), 'só a parte da vez pode ser escolhida');
+ok(M.textoEscolhivel(PT2, COM_PARTES, { 'obra-1': 'x' }) && !M.textoEscolhivel(PT1, COM_PARTES, { 'obra-1': 'x' }),
+  'terminada a 1, a 2 passa a ser escolhível, e a 1 não');
+ok(M.textoEscolhivel(P1, COM_PARTES, {}), 'o texto comum continua escolhível');
+const AUTO = [parte(1, 1), parte(2, 2)];
+ok(M.escolhaDosTextos(null, AUTO, {}, {}, {}, AGORA).textos.join() === 'obra-1', 'no automático, a parte 1 primeiro');
+ok(M.escolhaDosTextos(null, AUTO, { q1: dominado('q1') }, {}, {}, AGORA).textos.join() === 'obra-1',
+  'o automático não pula para a parte 2 enquanto a 1 não terminou');
+ok(M.escolhaDosTextos(null, AUTO, {}, {}, { 'obra-1': 'x' }, AGORA).textos.join() === 'obra-2', 'terminada a 1, vem a 2');
+
 console.log('\n  ' + feitas + ' conferências' + (falhas ? ', ' + falhas + ' falharam' : ', todas passaram') + '\n');
 process.exit(falhas ? 1 : 0);

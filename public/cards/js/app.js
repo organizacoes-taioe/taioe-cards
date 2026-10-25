@@ -90,7 +90,8 @@ window.TaioeCardsApp = function (ctx) {
   const TRECHOS = TRILHAS ? CARDS.filter(c => c.tipo === 'frase' && c.texto).sort((a, b) => (a.linha || 0) - (b.linha || 0)) : [];
   /* a pergunta do card de conceito, pela família */
   const ENUNCIADO_DO_CONCEITO = {
-    caso: 'card.enunciado.conceito.caso', verbo: 'card.enunciado.conceito.verbo', voz: 'card.enunciado.conceito.voz'
+    caso: 'card.enunciado.conceito.caso', verbo: 'card.enunciado.conceito.verbo', voz: 'card.enunciado.conceito.voz',
+    construcao: 'card.enunciado.conceito.construcao'
   };
 
   /* emVista.escolha: os textos que a pessoa estuda ({ textos, em, propria });
@@ -1385,7 +1386,7 @@ window.TaioeCardsApp = function (ctx) {
      sempre o significado. O aviso é curto (pedido do Gere, 22/10/2026): «A pergunta é o caso.» */
   function avisarForaDaPergunta() {
     chanceUsada = true;
-    const familia = cardAtual.familia === 'verbo' || cardAtual.familia === 'voz' ? cardAtual.familia : 'caso';
+    const familia = ['verbo', 'voz', 'construcao'].includes(cardAtual.familia) ? cardAtual.familia : 'caso';
     el['aviso-lingua'].innerHTML = t('aviso.foraDaPergunta.' + familia);
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
@@ -2167,7 +2168,8 @@ window.TaioeCardsApp = function (ctx) {
     const a = Motor.andamentoDoTexto(txt, progresso.cards, progresso.arquivados || {});
     const vistos = Motor.versosVistos(txt, progresso.textos.lidos);
     return '<div class="vitrine"><h3>' + t('painel.vitrine') + '</h3>' +
-      '<p class="vitrine-titulo"><b lang="' + L + '">' + escapar(txt.titulo) + '</b> · ' + escapar(txt.autor) + '</p>' +
+      '<p class="vitrine-titulo"><b lang="' + L + '">' + escapar(txt.titulo) + '</b> · ' + escapar(txt.autor) +
+      (txt.parte ? ' · ' + rotuloDaParte(txt) : '') + '</p>' +
       (verso.t ? '<p class="vitrine-verso" lang="' + L + '">' + escapar(verso.t) + '</p>' : '') +
       '<p class="vitrine-conta">' + t('texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
       (a.faltam ? tn('painel.vitrineFaltam', a.faltam, { n: milhar(a.faltam) }) : t('painel.vitrinePronto')) + '</p>' +
@@ -3114,7 +3116,8 @@ window.TaioeCardsApp = function (ctx) {
     const escolha = escolhaDosTextos();
     const propria = !!(escolha && escolha.propria);
     let aviso, botoes;
-    const nomeDe = x => '«' + escapar(x.titulo) + '», ' + t('texto.de', { a: escapar(x.autor) });
+    const nomeDe = (x, semParte) => '«' + escapar(x.titulo) + '», ' +
+      (x.parte && !semParte ? t('texto.parteN', { n: x.parte }) + ', ' : '') + t('texto.de', { a: escapar(x.autor) });
     if (inteiro) {
       lidos[txt.id] = agora;
       /* o texto terminado sai da escolha da pessoa; o automático dá lugar ao
@@ -3124,10 +3127,14 @@ window.TaioeCardsApp = function (ctx) {
         progresso.textos.emVista.escolha = { textos: ids, em: agora, propria: true };
       }
       conciliarFila(progresso);
-      aviso = t('texto.inteiro', { t: nomeDe(txt) });
+      /* fim de uma parte escolhida: a seguinte é o primeiro botão (o automático já a pôs na fila) */
+      const seguinte = propria && Motor.parteSeguinte(txt, TEXTOS);
+      aviso = txt.parte ? t('texto.parteInteira', { n: txt.parte, t: nomeDe(txt, true) }) : t('texto.inteiro', { t: nomeDe(txt) });
       const prox = !propria && textosAtivosAgora()[0];
       if (prox) aviso += ' ' + t('texto.proximoAutomatico', { t: nomeDe(prox) });
-      botoes = '<button class="primario" data-acao="seguir">' + t('texto.continuar') + '</button>' +
+      botoes = (seguinte
+        ? '<button class="primario" data-acao="parte" data-parte="' + escapar(seguinte.id) + '">' + t('texto.aprenderParte', { n: seguinte.parte }) + '</button>'
+        : '<button class="primario" data-acao="seguir">' + t('texto.continuar') + '</button>') +
         (propria ? '<button class="secundario" data-acao="escolher">' + t('texto.escolherOutroTexto') + '</button>' : '');
     } else if (primeiro && !propria) {
       aviso = t('texto.primeiroVerso', { t: nomeDe(txt) });
@@ -3148,11 +3155,17 @@ window.TaioeCardsApp = function (ctx) {
     alvo.querySelectorAll('[data-acao]').forEach(b => b.addEventListener('click', () => {
       const acao = b.dataset.acao;
       if (acao === 'soltos') gravarEscolha([]);
+      if (acao === 'parte') gravarEscolha(textosAtivosAgora().map(x => x.id).concat([b.dataset.parte]));
       if (acao === 'escolher') { abrirTexto(); return; }
       mostrar('tela-card');
       proximoCard();
     }));
     mostrar('tela-texto');
+  }
+
+  /* «parte 1 (I, 1–7)»: a parte de um texto longo (Motor.parteDaVez) */
+  function rotuloDaParte(x) {
+    return x && x.parte ? t('texto.parte', { n: x.parte, r: escapar(x.trecho || '') }) : '';
   }
 
   function abrirTexto() {
@@ -3167,7 +3180,8 @@ window.TaioeCardsApp = function (ctx) {
     const total = Motor.versosDoTexto(txt).length;
     const parte = ate !== undefined && ate < total;
     const cab = '<h3 class="texto-titulo" lang="' + L + '">' + escapar(txt.titulo) + '</h3>' +
-      '<p class="texto-autor">' + escapar(txt.autor) + (txt.ano ? ', ' + txt.ano : '') + '</p>';
+      '<p class="texto-autor">' + escapar(txt.autor) + (txt.ano ? ', ' + txt.ano : '') +
+      (txt.parte ? ' · ' + rotuloDaParte(txt) : '') + '</p>';
     let n = 0, resta = parte ? ate : Infinity;
     const blocos = (txt.blocos || []).map(b => {
       const linhas = b.slice(0, Math.max(0, resta));
@@ -3264,18 +3278,22 @@ window.TaioeCardsApp = function (ctx) {
     if (novo && TEXTO_POR_ID[novo]) {
       partes.push('<p class="recompensa">' + t('texto.trocar', { n: Motor.MAX_TEXTOS, t: escapar(TEXTO_POR_ID[novo].titulo) }) + '</p>');
     }
-    const abertos = TEXTOS.filter(x => !Motor.textoTerminado(x, tx.lidos))
+    /* da obra em partes, só a parte da vez (Motor.textoEscolhivel) */
+    const abertos = TEXTOS.filter(x => Motor.textoEscolhivel(x, TEXTOS, tx.lidos))
       .sort((a, b) => ((b.id === novo) - (a.id === novo)) || (ativos.has(b.id) - ativos.has(a.id)) || ((a.fila === undefined ? 1e9 : a.fila) - (b.fila === undefined ? 1e9 : b.fila)));
     partes.push('<div class="grupo lista-textos">');
     abertos.forEach(x => {
       const a = Motor.andamentoDoTexto(x, progresso.cards, arq);
       const vistos = Motor.versosVistos(x, tx.lidos);
       const marcado = ativos.has(x.id);
+      const seguinte = Motor.parteSeguinte(x, TEXTOS);
       partes.push('<div class="item-texto"><label><input type="checkbox" data-texto="' + escapar(x.id) + '"' +
-        (marcado ? ' checked' : '') + '> <b lang="' + L + '">' + escapar(x.titulo) + '</b> · ' + escapar(x.autor) + '</label>' +
+        (marcado ? ' checked' : '') + '> <b lang="' + L + '">' + escapar(x.titulo) + '</b> · ' + escapar(x.autor) +
+        (x.parte ? ' · ' + rotuloDaParte(x) : '') + '</label>' +
         '<p class="andamento-texto">' + t('texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
         (a.faltam ? tn('texto.faltamPalavras', a.faltam, { n: milhar(a.faltam) }) : t('texto.semFalta')) +
-        (marcado && escolha && !escolha.propria ? ' · ' + t('texto.automatico') : '') + '</p>' +
+        (marcado && escolha && !escolha.propria ? ' · ' + t('texto.automatico') : '') +
+        (seguinte ? ' · ' + t('texto.aSeguir', { n: seguinte.parte, r: escapar(seguinte.trecho || '') }) : '') + '</p>' +
         (vistos ? '<details class="texto-lido"><summary>' + t('texto.descobertos') + '</summary>' + cartaDoTexto(x, vistos) + '</details>' : '') +
         '</div>');
     });
@@ -3289,8 +3307,19 @@ window.TaioeCardsApp = function (ctx) {
       .sort((a, b) => String(tx.lidos[b.id]).localeCompare(String(tx.lidos[a.id])));
     if (lidos.length) {
       partes.push('<div class="grupo"><h3>' + t('texto.lidos') + '</h3>');
-      lidos.forEach(x => partes.push('<details class="texto-lido"><summary>' + escapar(x.titulo) + ' · ' +
-        escapar(x.autor) + '</summary>' + cartaDoTexto(x) + '</details>'));
+      /* as partes lidas de uma obra ficam juntas, sob a obra, na ordem das partes */
+      const grupos = [], daObra = {};
+      lidos.forEach(x => {
+        if (!x.obra) grupos.push([x]);
+        else if (daObra[x.obra]) daObra[x.obra].push(x);
+        else grupos.push(daObra[x.obra] = [x]);
+      });
+      grupos.forEach(g => {
+        const x = g[0];
+        g.sort((a, b) => a.parte - b.parte);
+        partes.push('<details class="texto-lido"><summary>' + escapar(x.titulo) + ' · ' + escapar(x.autor) +
+          (x.obra ? ' · ' + tn('texto.partesLidas', g.length) : '') + '</summary>' + g.map(y => cartaDoTexto(y)).join('') + '</details>');
+      });
       partes.push('</div>');
     }
     alvo.innerHTML = partes.join('');
@@ -4078,8 +4107,11 @@ window.TaioeCardsApp = function (ctx) {
      pergunta qual trocar. O endereço perde o «?texto=», para recarregar não
      repetir o pedido. */
   let textoParaTrocar = null;
-  if (ctx.textoPedido && TEXTO_POR_ID[ctx.textoPedido]) {
-    const id = ctx.textoPedido;
+  /* a obra em partes: vale a parte da vez (terminadas todas, nada a fazer) */
+  let pedido = ctx.textoPedido && TEXTO_POR_ID[ctx.textoPedido];
+  if (pedido && pedido.obra) pedido = Motor.parteDaVez(pedido.obra, TEXTOS, (progresso.textos || {}).lidos || {});
+  if (pedido) {
+    const id = pedido.id;
     const e = escolhaDosTextos();
     const ativos = textosAtivosAgora().map(x => x.id);
     if (ativos.indexOf(id) < 0) {

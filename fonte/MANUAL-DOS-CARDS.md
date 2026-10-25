@@ -1005,6 +1005,11 @@ dominados.
    definições — em `data/textos-<língua>.js` e na lista `data/textos.json`, que a
    Biblioteca lê para pôr o botão.
 
+**Texto longo vai em partes** (pedido do Gere, 24/10/2026; `../PLANO.md` §9.6): cada parte, de 4
+a 10 versos (na prosa, de 50 a 120 palavras) e fechando a frase, é um texto à parte, com `obra`,
+`parte` e `trecho`, e a pessoa as aprende uma por vez, em sequência. No latim, as partes se declaram em
+`TEXTOS` do `fonte/latim/textos.py` (a *Eneida*: `vergilio/eneida-parte-1`, `-parte-2`).
+
 ### 17.4.1 As frases de primeiros passos
 
 A frase espera as palavras dela (17.2), e por isso quem começa do zero passava

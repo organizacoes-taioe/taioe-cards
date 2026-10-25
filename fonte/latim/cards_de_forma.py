@@ -3,7 +3,7 @@ palavra dos textos e das primeiras frases, com a nota de dificuldade que decide 
 perguntam sempre e quais entram por sorteio.
 
     python -I fonte/latim/cards_de_forma.py            # grava fonte/cards/la/07-formas.json e os
-                                                       # distratores dos exemplos de 01-conceitos.json
+                                                       # distratores dos exemplos dos conceitos
     python -I fonte/latim/cards_de_forma.py --lista    # só mostra as notas, do maior ao menor
 
 Sai tudo da anotação que trechos e primeiras frases já têm («palavras»: forma, card do lema,
@@ -34,7 +34,7 @@ import formas  # noqa: E402
 AQUI = Path(__file__).resolve().parent
 BARALHO = AQUI.parent / 'cards' / 'la'
 SAIDA = BARALHO / '07-formas.json'
-FONTES = ['03-texto-zero.json', '04-trechos.json', '09-trechos-2.json']
+FONTES = ['03-texto-zero.json', '04-trechos.json', '09-trechos-2.json', '14-trechos-3.json']
 CORTE = 2.0
 
 CASOS = {'nominative': 'nominativo', 'vocative': 'vocativo', 'accusative': 'acusativo',
@@ -81,6 +81,8 @@ CONFUSAO = {
                                'imperfeito do subjuntivo', 'imperfeito do indicativo'],
     'imperfeito do subjuntivo': ['infinitivo', 'presente do subjuntivo', 'imperfeito do indicativo',
                                  'mais-que-perfeito do indicativo'],
+    'perfeito do subjuntivo': ['perfeito do indicativo', 'presente do subjuntivo', 'imperfeito do subjuntivo',
+                               'futuro do indicativo', 'mais-que-perfeito do indicativo'],
     'imperativo': ['presente do indicativo', 'infinitivo', 'presente do subjuntivo', 'futuro do indicativo'],
     'infinitivo': ['imperativo', 'imperfeito do subjuntivo', 'presente do indicativo', 'particípio presente',
                    'particípio perfeito'],
@@ -191,9 +193,15 @@ def nota_da_forma(fam, resposta, w, lema_card, rotulo, anterior):
     return round(n, 2)
 
 
+def do_baralho(tipo):
+    """Os cards de um tipo, de todas as levas (02-palavras, 08-palavras-2…; 01-conceitos, 12-conceitos-2…)."""
+    return [c for arq in sorted(BARALHO.glob('*.json')) if arq != SAIDA
+            for c in json.loads(arq.read_text(encoding='utf-8')) if c.get('tipo') == tipo]
+
+
 def gerar():
-    palavras_do_baralho = {c['id']: c for c in json.loads((BARALHO / '02-palavras.json').read_text(encoding='utf-8'))}
-    conceitos = {c['pt']: c['id'] for c in json.loads((BARALHO / '01-conceitos.json').read_text(encoding='utf-8'))}
+    palavras_do_baralho = {c['id']: c for c in do_baralho('palavra')}
+    conceitos = {c['pt']: c['id'] for c in do_baralho('conceito')}
     cards, vistos = [], set()
     for arquivo in FONTES:
         for fr in json.loads((BARALHO / arquivo).read_text(encoding='utf-8')):
@@ -247,8 +255,7 @@ def nomes_de(fam):
     card de conceito ou de forma pede."""
     if fam == 'caso':
         return set(CASOS.values())
-    conceitos = json.loads((BARALHO / '01-conceitos.json').read_text(encoding='utf-8'))
-    nomes = {c['pt'] for c in conceitos if c.get('familia') == 'verbo'}
+    nomes = {c['pt'] for c in do_baralho('conceito') if c.get('familia') == 'verbo'}
     if SAIDA.exists():
         nomes |= {c['pt'] for c in json.loads(SAIDA.read_text(encoding='utf-8')) if c.get('familia') == 'verbo'}
     return nomes
@@ -257,16 +264,21 @@ def nomes_de(fam):
 def distratores_dos_conceitos():
     """Grava em cada exemplo dos cards de conceito de caso e de verbo as suas quatro erradas.
     O exemplo não diz o lema: valem as leituras de qualquer lema com a mesma forma."""
-    arquivo = BARALHO / '01-conceitos.json'
-    conceitos = json.loads(arquivo.read_text(encoding='utf-8'))
-    for c in conceitos:
-        if c.get('familia') not in ('caso', 'verbo'):
+    todos = []
+    for arquivo in sorted(BARALHO.glob('*.json')):
+        cards = json.loads(arquivo.read_text(encoding='utf-8'))
+        conceitos = [c for c in cards if c.get('tipo') == 'conceito']
+        if not conceitos:
             continue
-        for ex in c.get('exemplos', []):
-            ex['distratores'] = distratores_de(c['familia'], c['pt'], formas.analisar(limpa(ex['w'])),
-                                               nomes_de(c['familia']))
-    arquivo.write_text(json.dumps(conceitos, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
-    return conceitos
+        for c in conceitos:
+            if c.get('familia') not in ('caso', 'verbo'):
+                continue
+            for ex in c.get('exemplos', []):
+                ex['distratores'] = distratores_de(c['familia'], c['pt'], formas.analisar(limpa(ex['w'])),
+                                                   nomes_de(c['familia']))
+        arquivo.write_text(json.dumps(cards, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
+        todos.extend(conceitos)
+    return todos
 
 
 def aceitas_de(fam, resposta):
@@ -289,4 +301,4 @@ if __name__ == '__main__':
         SAIDA.write_text(json.dumps(cards, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
         print(f'{len(cards)} cards → {SAIDA.relative_to(AQUI.parent.parent)}')
         n = sum(len(c.get('exemplos', [])) for c in distratores_dos_conceitos() if c.get('familia') in ('caso', 'verbo'))
-        print(f'{n} exemplos de conceito com distratores → fonte/cards/la/01-conceitos.json')
+        print(f'{n} exemplos de conceito com distratores → os cards de conceito de fonte/cards/la/')
