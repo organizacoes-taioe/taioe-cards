@@ -679,6 +679,9 @@ label input:focus{outline:0;border-color:var(--acento)}
 .estrofe{margin:0 0 14px}
 .verso{margin:0;font-size:17px;line-height:1.55;font-style:italic;color:var(--texto-2)}
 .verso-novo{color:var(--texto)}
+/* prosa: os trechos de um parágrafo seguidos, sem itálico */
+.paragrafo{margin:0 0 14px;font-size:17px;line-height:1.55;color:var(--texto-2)}
+.paragrafo .verso{font-size:inherit;font-style:normal}
 .palavra-texto{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;
   border-bottom:1px dotted var(--borda)}
 .palavra-texto:hover,.palavra-texto.ativa{color:var(--acento);border-bottom-color:var(--acento)}

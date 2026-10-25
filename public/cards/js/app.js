@@ -2210,7 +2210,7 @@ window.TaioeCardsApp = function (ctx) {
       '<p class="vitrine-titulo"><b lang="' + L + '">' + escapar(txt.titulo) + '</b> · ' + escapar(txt.autor) +
       (txt.parte ? ' · ' + rotuloDaParte(txt) : '') + '</p>' +
       (verso.t ? '<p class="vitrine-verso" lang="' + L + '">' + escapar(verso.t) + '</p>' : '') +
-      '<p class="vitrine-conta">' + t('texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
+      '<p class="vitrine-conta">' + t(txt.tipo === 'prosa' ? 'texto.andamentoProsa' : 'texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
       (a.faltam ? tn('painel.vitrineFaltam', a.faltam, { n: milhar(a.faltam) }) : t('painel.vitrinePronto')) + '</p>' +
       '<button class="link-comentar" id="btn-vitrine">' + t('painel.vitrineVer') + '</button></div>';
   }
@@ -3181,7 +3181,8 @@ window.TaioeCardsApp = function (ctx) {
         '<button class="secundario" data-acao="escolher">' + t('texto.escolherOutro') + '</button>' +
         '<button class="secundario" data-acao="soltos">' + t('texto.soCardsSoltos') + '</button>';
     } else {
-      aviso = t(r.versos - r.de > 1 ? 'texto.versosNovos' : 'texto.versoNovo',
+      const prosa = txt.tipo === 'prosa';
+      aviso = t(r.versos - r.de > 1 ? (prosa ? 'texto.trechosNovos' : 'texto.versosNovos') : (prosa ? 'texto.trechoNovo' : 'texto.versoNovo'),
         { t: nomeDe(txt), a: r.de + 1, k: r.versos, n: r.total });
       botoes = '<button class="primario" data-acao="seguir">' + t('texto.continuar') + '</button>';
     }
@@ -3214,10 +3215,12 @@ window.TaioeCardsApp = function (ctx) {
 
   /* O poema na língua original, sem tradução, com cada palavra clicável.
      Com «ate», só os primeiros versos, e os que vêm depois de «novos» ficam
-     marcados. */
+     marcados. Na prosa, cada linha é um trecho, e os trechos de um bloco
+     formam um parágrafo que cresce. */
   function cartaDoTexto(txt, ate, novos) {
     const total = Motor.versosDoTexto(txt).length;
     const parte = ate !== undefined && ate < total;
+    const prosa = txt.tipo === 'prosa';
     const cab = '<h3 class="texto-titulo" lang="' + L + '">' + escapar(txt.titulo) + '</h3>' +
       '<p class="texto-autor">' + escapar(txt.autor) + (txt.ano ? ', ' + txt.ano : '') +
       (txt.parte ? ' · ' + rotuloDaParte(txt) : '') + '</p>';
@@ -3226,15 +3229,18 @@ window.TaioeCardsApp = function (ctx) {
       const linhas = b.slice(0, Math.max(0, resta));
       resta -= linhas.length;
       if (!linhas.length) return '';
-      return '<div class="estrofe" lang="' + L + '">' + linhas.map(l => {
+      const tag = prosa ? 'span' : 'p';
+      const html = linhas.map(l => {
         n++;
         const novo = novos !== undefined && n > novos;
-        return '<p class="verso' + (novo ? ' verso-novo' : '') + '">' + (l.p || [[l.t, null]]).map(x => x[1]
+        return '<' + tag + ' class="verso' + (novo ? ' verso-novo' : '') + '">' + (l.p || [[l.t, null]]).map(x => x[1]
           ? '<button type="button" class="palavra-texto" data-ch="' + escapar(x[1]) + '">' + escapar(x[0]) + '</button>'
-          : escapar(x[0])).join('') + '</p>';
-      }).join('') + '</div>';
+          : escapar(x[0])).join('') + '</' + tag + '>';
+      });
+      return prosa ? '<p class="paragrafo" lang="' + L + '">' + html.join(' ') + '</p>'
+        : '<div class="estrofe" lang="' + L + '">' + html.join('') + '</div>';
     }).join('');
-    const conta = parte ? '<p class="contador-versos">' + t('texto.contador', { k: ate, n: total }) + '</p>' : '';
+    const conta = parte ? '<p class="contador-versos">' + t(prosa ? 'texto.contadorProsa' : 'texto.contador', { k: ate, n: total }) + '</p>' : '';
     const pe = '<p class="ajuda">' + t('texto.toque') + (txt.biblioteca
       ? ' <a href="' + escapar(txt.biblioteca) + '">' + t('texto.naBiblioteca') + '</a>' : '') + '</p>';
     return '<div class="carta-texto" data-texto="' + escapar(txt.id) + '">' + cab + blocos + conta + pe + '</div>';
@@ -3281,7 +3287,8 @@ window.TaioeCardsApp = function (ctx) {
         const b = ev.target.closest('.palavra-texto');
         if (!b) return;
         const aberta = carta.querySelector('.nota-palavra');
-        const mesma = aberta && aberta.dataset.de === b.dataset.ch && aberta.previousElementSibling === b.closest('.verso');
+        const linha = b.closest('.paragrafo') || b.closest('.verso');
+        const mesma = aberta && aberta.dataset.de === b.dataset.ch && aberta.previousElementSibling === linha;
         carta.querySelectorAll('.palavra-texto.ativa').forEach(x => x.classList.remove('ativa'));
         if (aberta) aberta.remove();
         if (mesma) return;
@@ -3292,7 +3299,7 @@ window.TaioeCardsApp = function (ctx) {
         nota.className = 'nota-palavra';
         nota.dataset.de = b.dataset.ch;
         nota.innerHTML = notaDaPalavra(d);
-        b.closest('.verso').insertAdjacentElement('afterend', nota);
+        linha.insertAdjacentElement('afterend', nota);
       });
     });
   }
@@ -3329,11 +3336,11 @@ window.TaioeCardsApp = function (ctx) {
       partes.push('<div class="item-texto"><label><input type="checkbox" data-texto="' + escapar(x.id) + '"' +
         (marcado ? ' checked' : '') + '> <b lang="' + L + '">' + escapar(x.titulo) + '</b> · ' + escapar(x.autor) +
         (x.parte ? ' · ' + rotuloDaParte(x) : '') + '</label>' +
-        '<p class="andamento-texto">' + t('texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
+        '<p class="andamento-texto">' + t(x.tipo === 'prosa' ? 'texto.andamentoProsa' : 'texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
         (a.faltam ? tn('texto.faltamPalavras', a.faltam, { n: milhar(a.faltam) }) : t('texto.semFalta')) +
         (marcado && escolha && !escolha.propria ? ' · ' + t('texto.automatico') : '') +
         (seguinte ? ' · ' + t('texto.aSeguir', { n: seguinte.parte, r: escapar(seguinte.trecho || '') }) : '') + '</p>' +
-        (vistos ? '<details class="texto-lido"><summary>' + t('texto.descobertos') + '</summary>' + cartaDoTexto(x, vistos) + '</details>' : '') +
+        (vistos ? '<details class="texto-lido"><summary>' + t(x.tipo === 'prosa' ? 'texto.descobertosProsa' : 'texto.descobertos') + '</summary>' + cartaDoTexto(x, vistos) + '</details>' : '') +
         '</div>');
     });
     partes.push('<p class="ajuda" id="aviso-maximo" hidden>' + t('texto.maximo', { n: Motor.MAX_TEXTOS }) + '</p></div>');
