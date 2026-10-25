@@ -357,7 +357,7 @@ para tudo. Se ficar excessivo, depois a gente vai ajustando.»
   do subjuntivo, infinitivo), também as formas que ainda não apareceram. Nos pronomes de três
   gêneros e em *sum* e *possum*, cujas formas do dicionário são muito diferentes entre si, cada
   uma ganha card, também a igual ao lema (*is*, *ea*, *id*; *sum*, *esse*, *fui*), pedido do Gere
-  (24/10). Em 25/10: 458 cards (146 das tabelas, 312 das frases). *iis* e *nos*, *vos* (acusativo)
+  (24/10). Em 25/10: 458 cards (146 das tabelas, 312 das frases), e mais 74 da *Eneida* (532). *iis* e *nos*, *vos* (acusativo)
   ficam na nota, sem card.
 - **Quando entra** (✔ D23): depois do card do lema (o dicionário primeiro). As do texto escolhido e
   das primeiras frases vêm na ordem de leitura, cada uma logo depois do lema dela (o «requer» de
@@ -383,7 +383,12 @@ para tudo. Se ficar excessivo, depois a gente vai ajustando.»
   (o conceito do caso ou do tempo entra antes do card).
 - **Texto novo**: o build avisa «forma(s) do latim sem card de flexão»; `flexoes.py faltam` → a leva
   → `gravar` → build. Até lá o verso espera só os lemas e as flexões que já existem. A *Eneida*
-  (73 formas, 25/10) ficou para uma leva à parte, logo depois desta.
+  (25/10): 73 formas dos trechos e das frases de uso, e *quis*, a forma do dicionário que nenhuma
+  frase usa (pela regra das formas do dicionário dos pronomes); leva `cache/levas/flexoes-eneida.json`
+  (a entrada ao lado, `flexoes-eneida-entrada.json`), escrita por três agentes e revista: saíram as
+  leituras raras de `outras` (vocativos, a passiva de *condere* e *volvere*), as aceitas que são
+  leitura de outra forma (*magno*: «do grande»), e «tem juízo» como errada de *sapis* (no Brasil vale
+  «você tem juízo»). *illa* ficou na tabela de *ille*.
 - No banco: o tipo `flexao` no catálogo (infra, migração `20261024150000_latim_flexao`).
 
 ## 4. A resposta escrita: aceitar tudo o que está certo
@@ -616,6 +621,7 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
 | 3d | card de contraste (§3.7), 10 conjuntos e 27 cards dos itens 1 a 3 | 22/10 (infra PR #17) |
 | 3e | *Eneida* I,1–11 em duas partes, e as partes de texto longo (D18–D21, §12) | 24/10 |
 | 3f | card de flexão (§3.8): cada forma das frases e as tabelas dos pronomes, de *sum* e de *possum* | 25/10 |
+| 3g | as flexões da *Eneida* (74 cards, §3.8) | 25/10 |
 | 4 | os textos em domínio público, nível a nível, em levas de ~100 cards, com a matriz a cada leva; metade fora da Bíblia e da liturgia (§7) | — |
 | 5 | os textos da NV, com a resposta da LEV (ou na Clementina) | — |
 | depois | pronúncia eclesiástica; `la-es` e `la-en`; prosa com «Quero aprender o resto» | — |
@@ -639,7 +645,7 @@ tokens por poema curto), passa de dezenas de milhões de tokens, quase todos em 
   e *Lavinius*, *Latinus*, *Albanus*, com a definição em `SEM_CARD`; *-ne* declara `homografos` com
   *ne*); `14-trechos-3` (11, um por verso; a leva em `cache/levas/trechos-3.json`); `15-usos-d` (38,
   16 da Vulgata e 22 clássicas; sem frase boa no corpus: *memoro*, *volvo*, *insignis*, *pietas*);
-  `07-formas` (54 da Eneida).
+  `07-formas` (54 da Eneida); `16-flexoes` (74 da Eneida, §3.8).
 - **Conferência**: anotação pelo `conferir.py`; tradução às cegas por um agente (4 traduções por frase,
   e a escolha entre as 5 alternativas): 80 de 196 passaram de primeira; todas as certas entraram no
   gabarito (196/196). Pelo que ele apontou: «costas» (dorso) virou «praias», «às lavínias» virou «às de
