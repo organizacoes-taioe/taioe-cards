@@ -62,6 +62,7 @@ window.TAIOE_TEXTOS = {
     'card.enunciado.voltaFrase': 'Como se diz isto em {L}?',
     'card.enunciado.idaPalavra': 'O que significa esta palavra?',
     'card.enunciado.idaFlexao': 'O que quer dizer esta forma?',
+    'card.enunciado.flexaoCaso': 'Em que caso está esta forma?',
     'card.flexaoDe': 'de {x}',
     'card.enunciado.idaFrase': 'O que quer dizer esta frase?',
     'card.enunciado.conceito.caso': 'Em que caso está a palavra destacada?',
@@ -108,6 +109,7 @@ window.TAIOE_TEXTOS = {
     'nota.outraForma': '🔁 {g}: «{x}» — {y}',
     'nota.tambemVale': '🌎 Também vale: {lista}.',
     'nota.fonte': '📖 Fonte: {x}',
+    'nota.sentido': '{x}: {y}',
 
     'feedback.genero': 'gênero errado — era {x}',
     'feedback.ene': 'preste atenção ao ñ',
@@ -444,6 +446,7 @@ window.TAIOE_TEXTOS = {
     'card.enunciado.voltaFrase': '¿Cómo se dice esto en {L}?',
     'card.enunciado.idaPalavra': '¿Qué significa esta palabra?',
     'card.enunciado.idaFlexao': '¿Qué quiere decir esta forma?',
+    'card.enunciado.flexaoCaso': '¿En qué caso está esta forma?',
     'card.flexaoDe': 'de {x}',
     'card.enunciado.idaFrase': '¿Qué quiere decir esta frase?',
     'card.enunciado.conceito.caso': '¿En qué caso está la palabra destacada?',
@@ -490,6 +493,7 @@ window.TAIOE_TEXTOS = {
     'nota.outraForma': '🔁 {g}: «{x}» — {y}',
     'nota.tambemVale': '🌎 También vale: {lista}.',
     'nota.fonte': '📖 Fuente: {x}',
+    'nota.sentido': '{x}: {y}',
 
     'feedback.genero': 'género equivocado: era {x}',
     'feedback.ene': 'presta atención a la ñ',
@@ -823,6 +827,7 @@ window.TAIOE_TEXTOS = {
     'card.enunciado.voltaFrase': 'How do you say this in {L}?',
     'card.enunciado.idaPalavra': 'What does this word mean?',
     'card.enunciado.idaFlexao': 'What does this form mean?',
+    'card.enunciado.flexaoCaso': 'What case is this form in?',
     'card.flexaoDe': 'from {x}',
     'card.enunciado.idaFrase': 'What does this sentence mean?',
     'card.enunciado.conceito.caso': 'What case is the highlighted word in?',
@@ -869,6 +874,7 @@ window.TAIOE_TEXTOS = {
     'nota.outraForma': '🔁 {g}: “{x}” — {y}',
     'nota.tambemVale': '🌎 Also accepted: {lista}.',
     'nota.fonte': '📖 Source: {x}',
+    'nota.sentido': '{x}: {y}',
 
     'feedback.genero': 'wrong gender — it was {x}',
     'feedback.ene': 'watch the ñ',

@@ -500,8 +500,10 @@ for (const bruto of cards) {
     /* o card de contraste (LATIM.md §3.7) pergunta em português e responde em latim, só na
        múltipla escolha: as alternativas são as do conjunto, conferidas mais abaixo */
     if (c.tipo === 'contraste') continue;
-    /* a frase latina pode ter só o gabarito (cards/LATIM.md §4) */
-    if (!Array.isArray(c[A.aceitas]) || (!c[A.aceitas].length && !(idioma === 'la' && c.gabarito))) erros.push('sem ' + A.aceitas + ': ' + ondeA);
+    /* a frase latina pode ter só o gabarito (cards/LATIM.md §4); a flexão de nome, que pergunta o
+       caso só na múltipla escolha (§3.8), não tem aceitas */
+    if (c.tipo === 'flexao' && c.familia === 'caso') { /* conferida no bloco do latim */ }
+    else if (!Array.isArray(c[A.aceitas]) || (!c[A.aceitas].length && !(idioma === 'la' && c.gabarito))) erros.push('sem ' + A.aceitas + ': ' + ondeA);
     /* o card de forma é só por escrito: sem distratores */
     if (c.tipo !== 'forma' && (!Array.isArray(c[A.distratores]) || c[A.distratores].length !== 4)) {
       erros.push('precisa de exatamente 4 ' + A.distratores + ': ' + ondeA);
@@ -811,6 +813,30 @@ for (const { idioma, cards } of baralhos) {
       if (!lema || lema.tipo !== 'palavra') erros.push('flexão sem o card do lema: ' + onde);
       if (FLEXAO.get(chaveLatina(c.la) + '|' + c.lema) !== c.id) erros.push('flexão repetida (a mesma forma do mesmo lema): ' + onde);
       if (typeof c.analise !== 'string' || !c.analise.trim()) erros.push('flexão sem «analise»: ' + onde);
+      /* a flexão de nome pergunta o caso (§3.8, 26/10/2026): o sentido vai em «sentido», e nenhuma
+         errada pode dividir um caso com a certa («genitivo singular» com «genitivo ou dativo
+         singular» seria meia verdade) */
+      if (c.familia !== undefined && c.familia !== 'caso') erros.push('flexão com família que não existe: ' + onde);
+      if (c.familia === 'caso') {
+        const pares = x => {
+          const res = new Set();
+          for (const parte of String(x).split(';')) {
+            const numeros = (parte.match(/singular|plural/g) || []);
+            const casos = parte.match(/nominativo|genitivo|dativo|acusativo|ablativo|vocativo|locativo/g) || [];
+            if (!numeros.length || !casos.length) erros.push('flexão de caso com resposta malformada: ' + onde + ' → ' + x);
+            casos.forEach(k => numeros.forEach(n => res.add(k + ' ' + n)));
+          }
+          return res;
+        };
+        if (typeof c.sentido !== 'string' || !c.sentido.trim()) erros.push('flexão de caso sem «sentido»: ' + onde);
+        if (c.aceitas !== undefined || c.outras !== undefined) erros.push('flexão de caso com «aceitas» ou «outras»: ' + onde);
+        const certa = pares(c.pt);
+        for (const d of c.distratores || []) {
+          if ([...pares(d)].some(x => certa.has(x))) erros.push('errada da flexão de caso que divide um caso com a certa: ' + onde + ' → ' + d);
+        }
+        if (new Set(c.distratores || []).size !== (c.distratores || []).length) erros.push('dois distratores iguais: ' + onde);
+        continue;
+      }
       if (c.outras !== undefined && (!Array.isArray(c.outras) || c.outras.some(x => typeof x !== 'string' || !x.trim()))) erros.push('flexão com «outras» malformado: ' + onde);
       const leituras = [c.pt].concat(c.outras || []).map(chaveDaLeitura);
       const aceitas = new Set(Motor.leiturasDaFlexao(c));

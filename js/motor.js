@@ -2278,10 +2278,10 @@ window.Motor = (function () {
        — quem já provou o espanhol→português não volta à estaca zero. */
     const inversa = ehVolta(r.direcao) && !ehContraste(est.id);
     const jaDominado = est.etapa === 'dominado';
-    if ((ehContraste(est.id) || ehConceito(est.id)) && r.acertou && !jaDominado) {
-      /* o card de contraste (§3.7) e, desde 24/10/2026, o de conceito (§3.5): só múltipla
-         escolha; três acertos seguidos o dominam, e daí em diante ele volta por data, como os
-         outros */
+    if ((ehContraste(est.id) || ehConceito(est.id) || ehFlexaoDeCaso(est.id)) && r.acertou && !jaDominado) {
+      /* o card de contraste (§3.7), desde 24/10/2026 o de conceito (§3.5) e desde 26/10/2026 a
+         flexão de nome (§3.8): só múltipla escolha; três acertos seguidos o dominam, e daí em
+         diante ele volta por data, como os outros */
       if (est.seguidas >= ACERTOS_PARA_VIRAR) {
         est.etapa = 'dominado';
         if (!est.dominadoEm) est.dominadoEm = new Date().toISOString();
@@ -2401,6 +2401,8 @@ window.Motor = (function () {
     /* os cards de conceito e de forma, sempre de escolher (pedido do Gere, 24/10/2026:
        escrever «nominativo» toda vez cansava), também na revisão por data */
     if (est && (ehConceito(est.id) || ehForma(est.id))) return { direcao: IDA, modo: 'multipla' };
+    /* e a flexão de nome, que pergunta o caso (pedido do Gere, 26/10/2026) */
+    if (est && ehFlexaoDeCaso(est.id)) return { direcao: IDA, modo: 'multipla' };
     /* o card de leitura só conhece a ida, também quando dominado; no modo trilhas, todos */
     if (est && (soIda() || ehLeitura(est.id))) {
       if (est.etapa === 'dominado' || est.etapa === 'escrita') return { direcao: IDA, modo: 'escrita' };
@@ -2592,6 +2594,9 @@ window.Motor = (function () {
   }
 
   function leiturasDaFlexao(card) {
+    /* a flexão de nome pergunta o caso, e a resposta é só ele («genitivo ou dativo singular;
+       nominativo plural»); o sentido fica no campo «sentido», que o app mostra depois */
+    if (card.familia === 'caso') return [normalizarFlexao(card.pt)];
     return [card.pt].concat(card.outras || [], card.aceitas || []).map(normalizarFlexao).filter(Boolean);
   }
 
@@ -2606,6 +2611,8 @@ window.Motor = (function () {
   }
 
   function ehFlexao(id) { return TIPO[id] === 'flexao'; }
+  /* a flexão de nome (substantivo, adjetivo, pronome), que pergunta o caso: LATIM.md §3.8 */
+  function ehFlexaoDeCaso(id) { return !!FLEXAO_DE_CASO[id]; }
 
   /* ── montagem da fila inicial ──
      Intercala os níveis e alterna palavra/frase, para medir logo de cara
@@ -3240,6 +3247,7 @@ window.Motor = (function () {
   /* o nivelamento pela lista (7.9) */
   let POS = Object.create(null);          // id → posição na lista de frequência (card.pos, do pacote)
   let TIPO = Object.create(null);         // id → tipo do card
+  let FLEXAO_DE_CASO = Object.create(null); // id → true: a flexão de nome, que pergunta o caso
   let FALSO_AMIGO = Object.create(null);  // id → true
   let DIVISA = 0;                         // nivelamento.divisa (0: sem nivelamento pela lista)
   let FORA_DA_DIVISA = Object.create(null); // nivelamento.fora: antes da divisa, mas não presumidos
@@ -3250,6 +3258,7 @@ window.Motor = (function () {
     TRANSP = Object.create(null);
     POS = Object.create(null);
     TIPO = Object.create(null);
+    FLEXAO_DE_CASO = Object.create(null);
     FALSO_AMIGO = Object.create(null);
     LEITURA = Object.create(null);
     RESPOSTA_DA_FORMA = Object.create(null);
@@ -3258,7 +3267,8 @@ window.Motor = (function () {
       if (!c) return;
       if (c.leitura) LEITURA[c.id] = true;
       if (c.tipo === 'forma') RESPOSTA_DA_FORMA[c.id] = c.pt;
-      if (c.tipo === 'flexao') {
+      if (c.tipo === 'flexao' && c.familia === 'caso') FLEXAO_DE_CASO[c.id] = true;
+      else if (c.tipo === 'flexao') {
         const lista = LEITURAS_DO_LEMA[c.lema] || (LEITURAS_DO_LEMA[c.lema] = new Set());
         leiturasDaFlexao(c).forEach(x => lista.add(x));
       }
@@ -4108,7 +4118,7 @@ window.Motor = (function () {
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
-    ehForma, ehContraste, ehConceito, ehFlexao, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
+    ehForma, ehContraste, ehConceito, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     SORTEIO_DA_FORMA, ACERTOS_QUE_SOLTAM,
     erroDeGenero, formasAceitas, LIMITES, cortar,
     linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
