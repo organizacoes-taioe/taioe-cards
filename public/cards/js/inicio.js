@@ -276,7 +276,9 @@
 
     // o perfil vem do servidor; offline, da última vez que veio
     var perfil = null;
-    var r = await sb.schema('conta').from('perfis').select('nome, curso_atual, lingua_interface').maybeSingle();
+    /* o revisor geral lê os perfis de todo mundo: o filtro pela conta é obrigatório */
+    var r = await sb.schema('conta').from('perfis').select('nome, curso_atual, lingua_interface')
+      .eq('usuario_id', uid).maybeSingle();
     if (!r.error && !r.data) { TaioeSessao.irParaEntrar(); return; }    // cadastro incompleto
     if (!r.error) {
       perfil = r.data;

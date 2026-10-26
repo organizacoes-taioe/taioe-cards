@@ -3923,9 +3923,10 @@ window.TaioeCardsApp = function (ctx) {
     const caixa = el['cfg-comentarios'];
     caixa.textContent = t('config.carregando');
     const sb = ctx.sb;
+    /* o revisor geral lê os de todo mundo: o filtro pela conta é obrigatório */
     const [a, b] = await Promise.all([
-      sb.schema('cards').from('comentarios').select('card_id, curso, texto, triagem, retorno, feito_em').order('feito_em', { ascending: false }).limit(100),
-      sb.schema('cards').from('contestacoes').select('card_id, curso, resposta, triagem, retorno, feito_em').order('feito_em', { ascending: false }).limit(100)
+      sb.schema('cards').from('comentarios').select('card_id, curso, texto, triagem, retorno, feito_em').eq('usuario_id', ctx.uid).order('feito_em', { ascending: false }).limit(100),
+      sb.schema('cards').from('contestacoes').select('card_id, curso, resposta, triagem, retorno, feito_em').eq('usuario_id', ctx.uid).order('feito_em', { ascending: false }).limit(100)
     ]).catch(() => [{ error: true }, { error: true }]);
     caixa.textContent = '';
     if (a.error || b.error) { caixa.textContent = t('config.semConexao'); return; }
