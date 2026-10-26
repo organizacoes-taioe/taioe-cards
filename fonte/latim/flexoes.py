@@ -11,6 +11,9 @@ pronomes de três gêneros também as formas do dicionário (is, ea, id).
                                                              # 16-flexoes.json e refaz o
                                                              # «requerTodas» das frases
 
+Desde 26/10/2026 o card de nome (substantivo, adjetivo, pronome) pergunta o caso, e não o sentido:
+a leva continua escrita como antes, e o «gravar» o converte (flexao_caso.py).
+
 O «gravar» nunca reescreve um card que já está em 16-flexoes.json (a correção feita à mão fica):
 só acrescenta as formas novas, das tabelas ou das levas, e refaz o «requerTodas» de toda frase
 presa (os lemas e, depois deles, as flexões, na ordem da frase). Texto novo (a Eneida, por
@@ -30,6 +33,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import latim  # noqa: E402
+import flexao_caso  # noqa: E402
 
 AQUI = Path(__file__).resolve().parent
 BARALHO = AQUI.parent / 'cards' / 'la'
@@ -681,12 +685,15 @@ def principal():
     if sobrando:
         print('flexões que nenhuma frase pede e nenhuma tabela tem (conferir):', ', '.join(sobrando))
     faltando = [f'{k[0]} ({porid[k[1]]["la"]})' for k in pedidas if k not in vistos]
-    for c in saida:   # os conceitos saem da análise: refeitos sempre
-        g = conceitos_de(c['analise'])
+    for c in saida:   # os conceitos saem da análise (no card do caso, da resposta): refeitos sempre
+        g = flexao_caso.conceitos(c) if c.get('familia') == 'caso' else conceitos_de(c['analise'])
         if g:
             c['conceitos'] = g
         else:
             c.pop('conceitos', None)
+    # o card de nome novo pergunta o caso (LATIM.md §3.8, desde 26/10/2026)
+    for c in flexao_caso.converter(saida, {i: x['la'] for i, x in porid.items() if x.get('tipo') == 'palavra'}):
+        c.pop('_indice')
     gravar_arquivo(SAIDA, saida)
     mudou = refazer_requer(cards, saida)
     arquivos = {}

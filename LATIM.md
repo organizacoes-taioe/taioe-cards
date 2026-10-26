@@ -351,6 +351,20 @@ para tudo. Se ficar excessivo, depois a gente vai ajustando.»
   *id*: «ele (sujeito)», «a, ela (objeto)», «por ele, com ele», «dele, dela»), que é a confusão a
   vencer. A nota: a análise, a linha da tabela (pronomes, *sum*, *possum*) ou a terminação, e onde
   a forma aparece.
+- **Nos nomes, o caso** (pedido do Gere, 26/10: «para os casos, isso fica bem confuso»; contraproposta
+  aprovada como recomendada). Substantivo, adjetivo e pronome (277 cards; `familia: "caso"`)
+  perguntam «Em que caso está esta forma?», e a resposta é o caso e o número, **todos os que a forma
+  pode ter fora da frase** (*aquae* → «genitivo ou dativo singular; nominativo plural»): é a
+  terminação que se decora, e o caso dentro da frase é o card de forma (§3.6). Sem gênero; o
+  vocativo sai quando é igual ao nominativo do mesmo número. Só de escolher, também na revisão; três
+  acertos seguidos dominam, e ele volta por data (como o conceito). As quatro erradas não dividem
+  nenhum caso com a certa nem com o que o índice do Wiktionary dá à forma (*vi* também é dativo):
+  as outras formas do lema, os padrões reais do baralho e, para igualar o tamanho, a junção de
+  dois. Depois da resposta, a nota começa pelo sentido de antes (campo `sentido`: «aquae: as águas
+  (sujeito); da água; para a água»). O progresso de quem já estudou ficou (mesmo id). Os verbos, os
+  particípios, o gerúndio e a preposição *a* seguem com o sentido. Ferramenta:
+  `fonte/latim/flexao_caso.py` (`--lista` mostra sem gravar), chamada também pelo `flexoes.py
+  gravar`: a leva de texto novo continua escrita com o sentido, e o card de nome sai convertido.
 - **Quais formas** (✔ D22): toda forma de frase do curso (trecho, primeira frase, frase de uso)
   que não é a do dicionário, e as tabelas inteiras de *is*, *hic*, *ille*, *qui*, *idem*, *ego*, *tu*,
   *nos*, *vos*, *sum* e *possum* (presente, imperfeito, futuro e perfeito do indicativo, presente
@@ -622,6 +636,7 @@ conceitos). [NV] = depende da D1. Os trechos são curtos de propósito: o começ
 | 3e | *Eneida* I,1–11 em duas partes, e as partes de texto longo (D18–D21, §12) | 24/10 |
 | 3f | card de flexão (§3.8): cada forma das frases e as tabelas dos pronomes, de *sum* e de *possum* | 25/10 |
 | 3g | as flexões da *Eneida* (74 cards, §3.8) | 25/10 |
+| 3h | a flexão de nome pergunta o caso (277 cards, §3.8) | 26/10 |
 | 4 | os textos em domínio público, nível a nível, em levas de ~100 cards, com a matriz a cada leva; metade fora da Bíblia e da liturgia (§7) | — |
 | 5 | os textos da NV, com a resposta da LEV (ou na Clementina) | — |
 | depois | pronúncia eclesiástica; `la-es` e `la-en`; prosa com «Quero aprender o resto» | — |

@@ -1185,8 +1185,10 @@ window.TaioeCardsApp = function (ctx) {
     const inversa = Motor.ehVolta(direcaoAtual);
     /* no card de conceito a pergunta vai em destaque, logo acima das alternativas (pedido do
        Gere, 21/10), e não na linha pequena do topo */
-    /* o card de forma (LATIM.md §3.6) pergunta como o de conceito */
-    const conceito = cardAtual.tipo === 'conceito' || cardAtual.tipo === 'forma';
+    /* o card de forma (LATIM.md §3.6) pergunta como o de conceito, e a flexão de nome também
+       (§3.8, desde 26/10/2026: «Em que caso está esta forma?») */
+    const flexaoDeCaso = cardAtual.tipo === 'flexao' && cardAtual.familia === 'caso';
+    const conceito = cardAtual.tipo === 'conceito' || cardAtual.tipo === 'forma' || flexaoDeCaso;
     el.enunciado.textContent = conceito ? ''
       : inversa
       ? t(cardAtual.tipo === 'palavra' ? 'card.enunciado.voltaPalavra' : 'card.enunciado.voltaFrase', { L: NOME_L })
@@ -1198,7 +1200,8 @@ window.TaioeCardsApp = function (ctx) {
     el['bandeira-feedback'].textContent = inversa ? BANDEIRA_L : BANDEIRA_A;
     /* na múltipla escolha a bandeira já diz tudo; o texto só ajuda quando
        é você quem tem que produzir a resposta */
-    el['rotulo-resposta-txt'].textContent = conceito
+    el['rotulo-resposta-txt'].textContent = flexaoDeCaso ? t('card.enunciado.flexaoCaso')
+      : conceito
       ? t(ENUNCIADO_DO_CONCEITO[cardAtual.familia] || ENUNCIADO_DO_CONCEITO.caso)
       : modoAtual === 'multipla' ? ''
       : t('card.respondaEm', { x: inversa ? NOME_L : NOME_A });
@@ -1466,6 +1469,8 @@ window.TaioeCardsApp = function (ctx) {
     /* no card de conceito, primeiro o exemplo explicado, depois a definição; na frase latina,
        no fim, a passagem de onde ela vem */
     const nota = [exemploAtual ? exemploAtual.exp + (exemploAtual.fonte ? ' (' + exemploAtual.fonte + ')' : '') : '',
+      /* a flexão de nome pergunta o caso; o sentido da forma vem antes da nota */
+      cardAtual.tipo === 'flexao' && cardAtual.sentido ? t('nota.sentido', { x: cardAtual.la, y: cardAtual.sentido }) : '',
       notaDe(cardAtual),
       outraForma && outraForma[A] === cardAtual[A]
         ? t('nota.outraForma', { g: t(generoAtual ? 'nota.masculino' : 'nota.feminino'), x: outraForma[L], y: outraForma[A] }) : '',

@@ -133,19 +133,41 @@ ok(['is', 'ea', 'id'].every(f => flex(f, 'is')) && ['hic', 'haec', 'hoc'].every(
   ['qui', 'quae', 'quod'].every(f => flex(f, 'qui')), 'as três formas do dicionário dos pronomes de três gêneros');
 ok(['sum', 'esse', 'fui'].every(f => flex(f, 'sum')) && ['possum', 'posse', 'potui'].every(f => flex(f, 'possum')),
   'sum e possum com as formas do enunciado');
-ok(conf(fId, 'isso') === 'certo' && conf(fId, 'Isto.') === 'certo', 'id: «isso», «isto»');
-ok(conf(fId, 'ele') === 'errado', 'id: «ele» (is) é erro seco');
-ok(conf(fEum, 'o') === 'certo' && conf(fEum, 'ele') === 'certo', 'eum: o artigo é resposta («o»), e «ele» também');
-ok(conf(fEum, 'a ele') === 'errado' && conf(fEum, 'lhe') === 'errado', 'eum: a leitura de ei é erro seco');
-ok(conf(fEi, 'a ele') === 'certo' && conf(fEi, 'lhe') === 'certo', 'ei: «a ele», «lhe»');
-ok(conf(fEum, 'o, ele (objeto)') === 'certo', 'a certa com o parêntese também vale');
+/* desde 26/10/2026 a flexão de nome pergunta o caso, só de escolher; a resposta escrita (o
+   sentido) ficou com os verbos */
+ok(fId.familia === 'caso' && fId.pt === 'nominativo ou acusativo singular' && /isso/.test(fId.sentido),
+  'id: a resposta é o caso, e o sentido («isso») fica à parte');
+ok(fEi.pt === 'dativo singular; nominativo plural', 'ei: todos os casos que a forma pode ter');
+ok(conf(fEum, 'acusativo singular') === 'certo' && conf(fEum, 'genitivo singular') === 'errado', 'eum: o caso certo, e outro é erro');
+const pares = x => x.split(';').flatMap(p => (p.match(/nominativo|genitivo|dativo|acusativo|ablativo|vocativo/g) || [])
+  .flatMap(k => (p.match(/singular|plural/g) || []).map(n => k + ' ' + n)));
+const DE_CASO = FLEX.filter(c => c.familia === 'caso');
+ok(DE_CASO.length > 200, 'as flexões de nome perguntam o caso (' + DE_CASO.length + ')');
+ok(!FLEX.some(c => c.familia !== 'caso' && /^(nominativo|genitivo|dativo|acusativo|ablativo|vocativo)/.test(c.analise)),
+  'nenhuma flexão de nome ficou pedindo o sentido');
+for (const c of DE_CASO) {
+  ok(c.distratores.length === 4 && c.distratores.every(d => !pares(d).some(x => pares(c.pt).includes(x))),
+    c.id + ': nenhuma errada divide um caso com a certa');
+}
+const estC = M.estadoInicialDo(fEum);
+let nC = 0;
+while (estC.etapa !== 'dominado' && nC < 10) {
+  ok(M.modoDe(estC) === 'multipla', 'a flexão de nome é sempre de escolher');
+  responder(estC, true); nC++;
+}
+ok(nC === 3, 'três acertos seguidos a dominam (foram ' + nC + ')');
+ok(M.modoDe(estC) === 'multipla' && estC.voltaEm, 'e ela volta por data, de escolher');
+const fFac = flex('faciam', 'facio'), fReq = flex('requiris', 'requiro');
+ok(!fFac.familia && conf(fFac, 'que eu faça') === 'certo' && conf(fFac, 'Farei.') === 'certo', 'faciam: «que eu faça», e a outra leitura, «farei»');
+ok(conf(fReq, 'pergunta') === 'errado', 'requiris: a leitura de outra forma do lema é erro seco');
+ok(conf(fReq, 'tu perguntas (sujeito)') === 'certo', 'a certa com o parêntese também vale');
 const altFlex = M.alternativas(fId, IDA, CARDS, {});
 ok(altFlex.length === 5 && altFlex.includes(fId.pt) && fId.distratores.every(d => altFlex.includes(d)), 'as alternativas: a certa e as quatro do card');
-const estF = M.estadoInicialDo(fId);
-ok(M.modoDe(estF) === 'multipla' && M.direcaoDe(estF) === IDA, 'estreia na ida, de escolher');
+const estF = M.estadoInicialDo(fFac);
+ok(M.modoDe(estF) === 'multipla' && M.direcaoDe(estF) === IDA, 'o verbo estreia na ida, de escolher');
 let nF = 0;
 while (estF.etapa !== 'dominado' && nF < 10) { responder(estF, true); nF++; }
-ok(nF === 3, 'domina como o card de palavra: a múltipla e duas escritas (foram ' + nF + ')');
+ok(nF === 3, 'o verbo domina como o card de palavra: a múltipla e duas escritas (foram ' + nF + ')');
 for (const c of FLEX) {
   for (const o of c.outras || []) ok(conf(c, o) === 'certo', c.id + ': a outra leitura «' + o + '» vale');
   ok(PORID.get(c.lema) && PORID.get(c.lema).tipo === 'palavra', c.id + ': o lema existe');
