@@ -735,3 +735,27 @@ ficou em `../anexos/latim-variedade.md`); a resposta dele: «Sim, todas (menos a
   texto não chega antes (resposta 360 a 740): ele espera a vaga do texto, 1 de cada 3 cards novos.
 - Transição: quem já estudou várias formas do grupo fica com a dominada há mais tempo; as outras
   dormem com o estado guardado e saem da fila. Verso já destravado não volta a travar.
+
+### 13.2 Os pilotos das D31 e D32 (29/10)
+- **Compreensão** (`compreensao`, série `la-q`, `fonte/cards/la/17-compreensao.json`): uma frase
+  latina e uma pergunta pelo sentido, em `pergunta` («Quem vê?», «De quem é o pão?»); a certa e
+  quatro erradas em português: os outros participantes da frase (a armadilha da ordem) e leituras
+  plausíveis fora dela. 40 cards: 23 sobre as frases dos conjuntos de contraste, já conferidas às
+  cegas (`conjunto` e o `requerTodas` do conjunto), e 17 sobre primeiras frases reais (`de`,
+  `fonte` e o `requerTodas` das palavras e flexões da frase; `conjunto` = `q-` + o número da frase,
+  para as duas perguntas da mesma frase não virem seguidas). Entra como frase presa.
+- **Herança** (`heranca`, série `la-h`, `18-heranca.json`): `familia` `derivado` (20: «Que palavra
+  portuguesa vem desta?», o lema com o enunciado; espera o lema dominado; as erradas parecem e não
+  vêm dele: *aquecer* de *calescere*, *belo* de *bellus*, *luxo* de *luxus*) ou `expressao` (20:
+  «O que quer dizer, ao pé da letra?», *per capita*, *data venia*, *habeas corpus*…; livre desde o
+  começo; a nota diz a gramática de dentro). Uma a cada oito vagas de card novo (`CADA_HERANCA`).
+- Os dois: só de escolher, três seguidos dominam e voltam por data (como o contraste); sem «Já
+  conheço»; não contam como gramática na D30. Catálogo: tipos `compreensao` e `heranca` (infra,
+  migração `20261029180000_latim_leitura`).
+- Conferência às cegas (um agente, sem o gabarito): acertou os 80; pelo que apontou, saiu a
+  pergunta do vocativo *pastor* (igual ao nominativo: decide a vírgula, não a terminação), e
+  trocaram-se as erradas defensáveis de *ipsis litteris* (dativo e ablativo iguais), *in memoriam* e
+  *persona non grata* (*gratus* também é grato), e a pista da maiúscula em «nas do Pai». A leva sai
+  de `fonte/latim/cache/levas/leitura-1.js` (fora do git).
+- Próximo: o Gere estuda e aponta; depois, mais compreensões nos versos dos textos (com `texto`) e
+  frases novas com as palavras que a pessoa tem.

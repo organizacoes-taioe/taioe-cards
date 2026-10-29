@@ -2,7 +2,7 @@
  "versao": 1,
  "idioma": "la",
  "gerado_em": "2026-10-29",
- "total": 1403,
+ "total": 1483,
  "cards": [
   {
    "idioma": "la",
@@ -54881,6 +54881,2326 @@
     "la-g006"
    ],
    "terminacao": "adjetivo de 3ª: -ibus → dativo ou ablativo plural"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q001",
+   "tipo": "compreensao",
+   "la": "Lupum canis videt.",
+   "pergunta": "Quem vê?",
+   "pt": "o cão",
+   "aceitas": [
+    "cão"
+   ],
+   "distratores": [
+    "o lobo",
+    "o pastor",
+    "o cordeiro",
+    "o homem"
+   ],
+   "nota": "canis: nominativo, o sujeito: quem vê.\nlupum: acusativo, o objeto: quem é visto.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p153",
+    "la-p137",
+    "la-p039",
+    "la-g001",
+    "la-g002",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k01"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q002",
+   "tipo": "compreensao",
+   "la": "Lupum canis videt.",
+   "pergunta": "Quem é visto?",
+   "pt": "o lobo",
+   "aceitas": [
+    "lobo"
+   ],
+   "distratores": [
+    "o cão",
+    "o pastor",
+    "o cordeiro",
+    "o homem"
+   ],
+   "nota": "lupum: acusativo, o objeto: quem é visto.\ncanis: nominativo, o sujeito: quem vê.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p153",
+    "la-p137",
+    "la-p039",
+    "la-g001",
+    "la-g002",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k01"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q003",
+   "tipo": "compreensao",
+   "la": "Lupe, canis videt.",
+   "pergunta": "Com quem se fala?",
+   "pt": "com o lobo",
+   "aceitas": [
+    "lobo"
+   ],
+   "distratores": [
+    "com o cão",
+    "com o pastor",
+    "com o cordeiro",
+    "com o homem"
+   ],
+   "nota": "Lupe: vocativo, a quem se fala (o -e da 2ª declinação).\ncanis: nominativo, o sujeito: o cão vê.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p153",
+    "la-p137",
+    "la-p039",
+    "la-g001",
+    "la-g002",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k01"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q004",
+   "tipo": "compreensao",
+   "la": "Patrem mater amat.",
+   "pergunta": "Quem ama?",
+   "pt": "a mãe",
+   "aceitas": [
+    "mãe"
+   ],
+   "distratores": [
+    "o pai",
+    "o filho",
+    "o homem",
+    "o pastor"
+   ],
+   "nota": "mater: nominativo, o sujeito: quem ama.\npatrem: acusativo, o objeto: quem é amado.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p072",
+    "la-p116",
+    "la-p037",
+    "la-g001",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k02"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q005",
+   "tipo": "compreensao",
+   "la": "Patrem mater amat.",
+   "pergunta": "Quem é amado?",
+   "pt": "o pai",
+   "aceitas": [
+    "pai"
+   ],
+   "distratores": [
+    "a mãe",
+    "o filho",
+    "o homem",
+    "o pastor"
+   ],
+   "nota": "patrem: acusativo, o objeto: quem é amado.\nmater: nominativo, o sujeito: quem ama.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p072",
+    "la-p116",
+    "la-p037",
+    "la-g001",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k02"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q006",
+   "tipo": "compreensao",
+   "la": "Patris mater amat.",
+   "pergunta": "De quem é a mãe?",
+   "pt": "do pai",
+   "aceitas": [
+    "pai"
+   ],
+   "distratores": [
+    "do filho",
+    "do homem",
+    "do pastor",
+    "do lobo"
+   ],
+   "nota": "patris: genitivo, de quem é: a mãe do pai.\nmater: nominativo, o sujeito: a mãe do pai ama.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p072",
+    "la-p116",
+    "la-p037",
+    "la-g001",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k02"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q007",
+   "tipo": "compreensao",
+   "la": "Pastorem lupus fugit.",
+   "pergunta": "Quem foge?",
+   "pt": "o lobo",
+   "aceitas": [
+    "lobo"
+   ],
+   "distratores": [
+    "o pastor",
+    "o cão",
+    "o cordeiro",
+    "o homem"
+   ],
+   "nota": "lupus: nominativo, o sujeito: quem foge.\npastorem: acusativo, de quem se foge (fugio pede o acusativo).\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p005",
+    "la-p153",
+    "la-p127",
+    "la-g001",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k03"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q008",
+   "tipo": "compreensao",
+   "la": "Pastorem lupus fugit.",
+   "pergunta": "De quem se foge?",
+   "pt": "do pastor",
+   "aceitas": [
+    "pastor"
+   ],
+   "distratores": [
+    "do lobo",
+    "do cão",
+    "do cordeiro",
+    "do homem"
+   ],
+   "nota": "pastorem: acusativo; com fugio, é de quem se foge.\nlupus: nominativo, o sujeito: o lobo foge.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p005",
+    "la-p153",
+    "la-p127",
+    "la-g001",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k03"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q009",
+   "tipo": "compreensao",
+   "la": "Matri vinum vir parat.",
+   "pergunta": "Quem prepara o vinho?",
+   "pt": "o homem",
+   "aceitas": [
+    "homem"
+   ],
+   "distratores": [
+    "a mãe",
+    "o pai",
+    "o filho",
+    "o pastor"
+   ],
+   "nota": "vir: nominativo, o sujeito: quem prepara.\nmatri: dativo, para quem.\nvinum: acusativo, o que se prepara.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p116",
+    "la-p144",
+    "la-p027",
+    "la-p156",
+    "la-g001",
+    "la-g003",
+    "la-g004",
+    "la-g005"
+   ],
+   "conjunto": "k04"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q010",
+   "tipo": "compreensao",
+   "la": "Matri vinum vir parat.",
+   "pergunta": "Para quem é o vinho?",
+   "pt": "para a mãe",
+   "aceitas": [
+    "mãe"
+   ],
+   "distratores": [
+    "para o homem",
+    "para o pai",
+    "para o filho",
+    "para o pastor"
+   ],
+   "nota": "matri: dativo, para quem se prepara.\nvir: nominativo, o sujeito: o homem prepara.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p116",
+    "la-p144",
+    "la-p027",
+    "la-p156",
+    "la-g001",
+    "la-g003",
+    "la-g004",
+    "la-g005"
+   ],
+   "conjunto": "k04"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q011",
+   "tipo": "compreensao",
+   "la": "Mater vinum viri parat.",
+   "pergunta": "De quem é o vinho?",
+   "pt": "do homem",
+   "aceitas": [
+    "homem"
+   ],
+   "distratores": [
+    "da mãe",
+    "do pai",
+    "do filho",
+    "do pastor"
+   ],
+   "nota": "viri: genitivo, de quem é: o vinho do homem.\nmater: nominativo, o sujeito: a mãe prepara.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p116",
+    "la-p144",
+    "la-p027",
+    "la-p156",
+    "la-g001",
+    "la-g003",
+    "la-g004",
+    "la-g005"
+   ],
+   "conjunto": "k04"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q012",
+   "tipo": "compreensao",
+   "la": "Guttam lapis cavat.",
+   "pergunta": "O que cava?",
+   "pt": "a pedra",
+   "aceitas": [
+    "pedra"
+   ],
+   "distratores": [
+    "a gota",
+    "a água",
+    "a chuva",
+    "o rio"
+   ],
+   "nota": "lapis: nominativo, o sujeito: o que cava.\nguttam: acusativo, o objeto: o que é cavado.\nNo provérbio é o contrário: Gutta cavat lapidem, a gota cava a pedra.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p150",
+    "la-p152",
+    "la-p151",
+    "la-g001",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k05"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q013",
+   "tipo": "compreensao",
+   "la": "Matri vir credit.",
+   "pergunta": "Quem acredita?",
+   "pt": "o homem",
+   "aceitas": [
+    "homem"
+   ],
+   "distratores": [
+    "a mãe",
+    "o pai",
+    "o filho",
+    "o pastor"
+   ],
+   "nota": "vir: nominativo, o sujeito: quem acredita.\nmatri: dativo; credo pede o dativo de quem se acredita.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p116",
+    "la-p027",
+    "la-p021",
+    "la-g001",
+    "la-g004",
+    "la-g005"
+   ],
+   "conjunto": "k06"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q014",
+   "tipo": "compreensao",
+   "la": "Matri vir credit.",
+   "pergunta": "Em quem se acredita?",
+   "pt": "na mãe",
+   "aceitas": [
+    "mãe"
+   ],
+   "distratores": [
+    "no homem",
+    "no pai",
+    "no filho",
+    "no pastor"
+   ],
+   "nota": "matri: dativo; com credo, é em quem se acredita.\nvir: nominativo, o sujeito: o homem acredita.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p116",
+    "la-p027",
+    "la-p021",
+    "la-g001",
+    "la-g004",
+    "la-g005"
+   ],
+   "conjunto": "k06"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q015",
+   "tipo": "compreensao",
+   "la": "Canis in tenebras fugit.",
+   "pergunta": "O que a frase diz do cão?",
+   "pt": "foge para as trevas",
+   "aceitas": [
+    "foge para as trevas"
+   ],
+   "distratores": [
+    "foge no meio das trevas",
+    "foge das trevas",
+    "foge para a luz",
+    "foge da luz"
+   ],
+   "nota": "in + acusativo (tenebras): para dentro de, a direção.\nin + ablativo (tenebris) seria no meio das trevas, o lugar.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p137",
+    "la-p022",
+    "la-p068",
+    "la-p127",
+    "la-g001",
+    "la-g003",
+    "la-g006"
+   ],
+   "conjunto": "k07"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q016",
+   "tipo": "compreensao",
+   "la": "Canis in tenebris fugit.",
+   "pergunta": "O que a frase diz do cão?",
+   "pt": "foge no meio das trevas",
+   "aceitas": [
+    "foge no meio das trevas"
+   ],
+   "distratores": [
+    "foge para as trevas",
+    "foge das trevas",
+    "foge no meio da luz",
+    "foge da luz"
+   ],
+   "nota": "in + ablativo (tenebris): em, no meio de, o lugar.\nin + acusativo (tenebras) seria para as trevas, a direção.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p137",
+    "la-p022",
+    "la-p068",
+    "la-p127",
+    "la-g001",
+    "la-g003",
+    "la-g006"
+   ],
+   "conjunto": "k07"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q017",
+   "tipo": "compreensao",
+   "la": "Lupe, pastor te videt.",
+   "pergunta": "Quem vê?",
+   "pt": "o pastor",
+   "aceitas": [
+    "pastor"
+   ],
+   "distratores": [
+    "o lobo",
+    "o cão",
+    "o cordeiro",
+    "o pai"
+   ],
+   "nota": "pastor: nominativo, o sujeito: quem vê.\nLupe: vocativo, a quem se fala: lobo, o pastor te vê.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p153",
+    "la-p005",
+    "la-p007",
+    "la-p039",
+    "la-g001",
+    "la-g002",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k08"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q018",
+   "tipo": "compreensao",
+   "la": "Lupi pastor te videt.",
+   "pergunta": "De quem é o pastor?",
+   "pt": "do lobo",
+   "aceitas": [
+    "lobo"
+   ],
+   "distratores": [
+    "do cão",
+    "do cordeiro",
+    "do pai",
+    "do homem"
+   ],
+   "nota": "lupi: genitivo, de quem é: o pastor do lobo.\npastor: nominativo, o sujeito: o pastor te vê.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p153",
+    "la-p005",
+    "la-p007",
+    "la-p039",
+    "la-g001",
+    "la-g002",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k08"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q019",
+   "tipo": "compreensao",
+   "la": "Agnum lupus timet.",
+   "pergunta": "Quem tem medo?",
+   "pt": "o lobo",
+   "aceitas": [
+    "lobo"
+   ],
+   "distratores": [
+    "o cordeiro",
+    "o cão",
+    "o pastor",
+    "o homem"
+   ],
+   "nota": "lupus: nominativo, o sujeito: quem teme.\nagnum: acusativo, o objeto: quem é temido.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p181",
+    "la-p153",
+    "la-p203",
+    "la-g001",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k09"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q020",
+   "tipo": "compreensao",
+   "la": "Agnus lupum timet.",
+   "pergunta": "Quem é temido?",
+   "pt": "o lobo",
+   "aceitas": [
+    "lobo"
+   ],
+   "distratores": [
+    "o cordeiro",
+    "o cão",
+    "o pastor",
+    "o homem"
+   ],
+   "nota": "lupum: acusativo, o objeto: quem é temido.\nagnus: nominativo, o sujeito: o cordeiro teme.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p181",
+    "la-p153",
+    "la-p203",
+    "la-g001",
+    "la-g003",
+    "la-g004"
+   ],
+   "conjunto": "k09"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q021",
+   "tipo": "compreensao",
+   "la": "Patri panem filius dat.",
+   "pergunta": "Quem dá o pão?",
+   "pt": "o filho",
+   "aceitas": [
+    "filho"
+   ],
+   "distratores": [
+    "o pai",
+    "a mãe",
+    "o homem",
+    "o pastor"
+   ],
+   "nota": "filius: nominativo, o sujeito: quem dá.\npatri: dativo, a quem se dá.\npanem: acusativo, o que se dá.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p072",
+    "la-p097",
+    "la-p043",
+    "la-p099",
+    "la-g001",
+    "la-g003",
+    "la-g004",
+    "la-g005"
+   ],
+   "conjunto": "k10"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q022",
+   "tipo": "compreensao",
+   "la": "Patri panem filius dat.",
+   "pergunta": "Quem recebe o pão?",
+   "pt": "o pai",
+   "aceitas": [
+    "pai"
+   ],
+   "distratores": [
+    "o filho",
+    "a mãe",
+    "o homem",
+    "o pastor"
+   ],
+   "nota": "patri: dativo, a quem se dá: quem recebe.\nfilius: nominativo, o sujeito: o filho dá.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p072",
+    "la-p097",
+    "la-p043",
+    "la-p099",
+    "la-g001",
+    "la-g003",
+    "la-g004",
+    "la-g005"
+   ],
+   "conjunto": "k10"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q023",
+   "tipo": "compreensao",
+   "la": "Pater panem filii dat.",
+   "pergunta": "De quem é o pão?",
+   "pt": "do filho",
+   "aceitas": [
+    "filho"
+   ],
+   "distratores": [
+    "do pai",
+    "da mãe",
+    "do homem",
+    "do pastor"
+   ],
+   "nota": "filii: genitivo, de quem é: o pão do filho.\npater: nominativo, o sujeito: o pai dá.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "requerTodas": [
+    "la-p072",
+    "la-p097",
+    "la-p043",
+    "la-p099",
+    "la-g001",
+    "la-g003",
+    "la-g004",
+    "la-g005"
+   ],
+   "conjunto": "k10"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q024",
+   "tipo": "compreensao",
+   "la": "Omnia vincit Amor.",
+   "pergunta": "Quem vence?",
+   "pt": "o Amor",
+   "aceitas": [
+    "Amor"
+   ],
+   "distratores": [
+    "tudo",
+    "a morte",
+    "o tempo",
+    "ninguém"
+   ],
+   "nota": "Amor: nominativo, o sujeito: quem vence.\nomnia: acusativo plural neutro, o objeto: tudo é vencido.\nA palavra que vem primeiro não é o sujeito.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Vergílio, Bucólicas X,69",
+   "de": "la-f013",
+   "requerTodas": [
+    "la-p019",
+    "la-p030",
+    "la-p031",
+    "la-v076",
+    "la-v102"
+   ],
+   "conjunto": "q-f013"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q025",
+   "tipo": "compreensao",
+   "la": "Gutta cavat lapidem.",
+   "pergunta": "O que é cavado?",
+   "pt": "a pedra",
+   "aceitas": [
+    "pedra"
+   ],
+   "distratores": [
+    "a gota",
+    "a água",
+    "o rio",
+    "a terra"
+   ],
+   "nota": "lapidem: acusativo, o objeto: o que é cavado.\ngutta: nominativo, o sujeito: a gota cava.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Ovídio, Pônticas IV,10,5",
+   "de": "la-f049",
+   "requerTodas": [
+    "la-p150",
+    "la-p151",
+    "la-p152",
+    "la-v348",
+    "la-v349"
+   ],
+   "conjunto": "q-f049"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q026",
+   "tipo": "compreensao",
+   "la": "Audentes fortuna iuvat.",
+   "pergunta": "Quem ajuda?",
+   "pt": "a sorte",
+   "aceitas": [
+    "sorte"
+   ],
+   "distratores": [
+    "os ousados",
+    "os deuses",
+    "os amigos",
+    "os sábios"
+   ],
+   "nota": "fortuna: nominativo, o sujeito: quem ajuda.\naudentes: acusativo plural, o objeto: os que ousam, os ajudados.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Provérbio (Vergílio, Eneida X,284: «audentis Fortuna iuvat»)",
+   "de": "la-f050",
+   "requerTodas": [
+    "la-p139",
+    "la-p148",
+    "la-p149",
+    "la-v339",
+    "la-v346"
+   ],
+   "conjunto": "q-f050"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q027",
+   "tipo": "compreensao",
+   "la": "Audentes fortuna iuvat.",
+   "pergunta": "Quem é ajudado?",
+   "pt": "os ousados",
+   "aceitas": [
+    "ousados"
+   ],
+   "distratores": [
+    "a sorte",
+    "os medrosos",
+    "os deuses",
+    "os sábios"
+   ],
+   "nota": "audentes: particípio presente no acusativo plural, o objeto: os que ousam.\nfortuna: nominativo, o sujeito: a sorte ajuda.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Provérbio (Vergílio, Eneida X,284: «audentis Fortuna iuvat»)",
+   "de": "la-f050",
+   "requerTodas": [
+    "la-p139",
+    "la-p148",
+    "la-p149",
+    "la-v339",
+    "la-v346"
+   ],
+   "conjunto": "q-f050"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q028",
+   "tipo": "compreensao",
+   "la": "Lupus est homo homini.",
+   "pergunta": "O homem é lobo para quem?",
+   "pt": "para o homem",
+   "aceitas": [
+    "homem"
+   ],
+   "distratores": [
+    "para o lobo",
+    "para o cão",
+    "para o cordeiro",
+    "para os deuses"
+   ],
+   "nota": "homini: dativo, para quem.\nhomo: nominativo, o sujeito; lupus, o predicativo: o que o homem é.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Plauto, Asinária 495",
+   "de": "la-f055",
+   "requerTodas": [
+    "la-p153",
+    "la-p003",
+    "la-p015",
+    "la-v010",
+    "la-v066"
+   ],
+   "conjunto": "q-f055"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q029",
+   "tipo": "compreensao",
+   "la": "Homines, dum docent, discunt.",
+   "pergunta": "Quem aprende?",
+   "pt": "quem ensina",
+   "aceitas": [
+    "quem ensina"
+   ],
+   "distratores": [
+    "quem escuta",
+    "os alunos",
+    "as crianças",
+    "ninguém"
+   ],
+   "nota": "homines: nominativo plural, o sujeito de docent e de discunt: os mesmos homens ensinam e aprendem.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Sêneca, Cartas a Lucílio 7,8",
+   "de": "la-f058",
+   "requerTodas": [
+    "la-p015",
+    "la-p131",
+    "la-p158",
+    "la-p159",
+    "la-v065",
+    "la-v359",
+    "la-v362"
+   ],
+   "conjunto": "q-f058"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q030",
+   "tipo": "compreensao",
+   "la": "Laudate Dominum, omnes gentes.",
+   "pergunta": "Quem é louvado?",
+   "pt": "o Senhor",
+   "aceitas": [
+    "Senhor"
+   ],
+   "distratores": [
+    "todas as nações",
+    "os anjos",
+    "os reis",
+    "os santos"
+   ],
+   "nota": "Dominum: acusativo, o objeto de laudate: quem é louvado.\nomnes gentes: vocativo, a quem se fala: todas as nações, louvai.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Sl 117 (116),1",
+   "de": "la-f009",
+   "requerTodas": [
+    "la-p018",
+    "la-p012",
+    "la-p019",
+    "la-p020",
+    "la-v071",
+    "la-v056",
+    "la-v074",
+    "la-v078"
+   ],
+   "conjunto": "q-f009"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q031",
+   "tipo": "compreensao",
+   "la": "Laudate Dominum, omnes gentes.",
+   "pergunta": "Quem deve louvar?",
+   "pt": "todas as nações",
+   "aceitas": [
+    "todas as nações"
+   ],
+   "distratores": [
+    "o Senhor",
+    "os anjos",
+    "os reis",
+    "os santos"
+   ],
+   "nota": "omnes gentes: vocativo plural, a quem se dá a ordem.\nlaudate: imperativo plural, louvai.\nDominum: acusativo, quem é louvado.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Sl 117 (116),1",
+   "de": "la-f009",
+   "requerTodas": [
+    "la-p018",
+    "la-p012",
+    "la-p019",
+    "la-p020",
+    "la-v071",
+    "la-v056",
+    "la-v074",
+    "la-v078"
+   ],
+   "conjunto": "q-f009"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q032",
+   "tipo": "compreensao",
+   "la": "Veritas liberabit vos.",
+   "pergunta": "Quem será libertado?",
+   "pt": "vós",
+   "aceitas": [
+    "vós"
+   ],
+   "distratores": [
+    "a verdade",
+    "nós",
+    "eles",
+    "eu"
+   ],
+   "nota": "vos: acusativo, o objeto: quem será libertado.\nveritas: nominativo, o sujeito: a verdade libertará.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Jo 8,32",
+   "de": "la-f034",
+   "requerTodas": [
+    "la-p010",
+    "la-p070",
+    "la-p049",
+    "la-v199"
+   ],
+   "conjunto": "q-f034"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q033",
+   "tipo": "compreensao",
+   "la": "Pax vobis.",
+   "pergunta": "A quem se deseja a paz?",
+   "pt": "a vós",
+   "aceitas": [
+    "vós"
+   ],
+   "distratores": [
+    "a nós",
+    "a ti",
+    "a eles",
+    "a mim"
+   ],
+   "nota": "vobis: dativo plural de vos, a quem.\npax: nominativo, com o verbo subentendido: a paz esteja convosco.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Jo 20,19",
+   "de": "la-f023",
+   "requerTodas": [
+    "la-p048",
+    "la-p049",
+    "la-v149"
+   ],
+   "conjunto": "q-f023"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q034",
+   "tipo": "compreensao",
+   "la": "Pater, in manus tuas commendo spiritum meum.",
+   "pergunta": "Nas mãos de quem o espírito é entregue?",
+   "pt": "nas do Pai",
+   "aceitas": [
+    "do Pai"
+   ],
+   "distratores": [
+    "nas minhas",
+    "nas do Filho",
+    "nas dos homens",
+    "nas dos anjos"
+   ],
+   "nota": "Pater: vocativo, a quem se fala.\nin manus tuas: para dentro das tuas mãos, as do Pai.\nspiritum meum: acusativo, o que se entrega: o meu espírito.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Lc 23,46",
+   "de": "la-f036",
+   "requerTodas": [
+    "la-p072",
+    "la-p022",
+    "la-p073",
+    "la-p055",
+    "la-p074",
+    "la-p054",
+    "la-p013",
+    "la-v158",
+    "la-v155",
+    "la-v062"
+   ],
+   "conjunto": "q-f036"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q035",
+   "tipo": "compreensao",
+   "la": "Mater artium necessitas.",
+   "pergunta": "Quem é a mãe das artes?",
+   "pt": "a necessidade",
+   "aceitas": [
+    "necessidade"
+   ],
+   "distratores": [
+    "as artes",
+    "a arte",
+    "a natureza",
+    "o trabalho"
+   ],
+   "nota": "necessitas: nominativo, o sujeito.\nmater: o predicativo: o que a necessidade é.\nartium: genitivo plural, de quem é mãe.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Provérbio",
+   "de": "la-f053",
+   "requerTodas": [
+    "la-p116",
+    "la-p128",
+    "la-p147",
+    "la-v322"
+   ],
+   "conjunto": "q-f053"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q036",
+   "tipo": "compreensao",
+   "la": "Vae victis!",
+   "pergunta": "Ai de quem?",
+   "pt": "dos vencidos",
+   "aceitas": [
+    "vencidos"
+   ],
+   "distratores": [
+    "dos vencedores",
+    "dos fracos",
+    "dos ricos",
+    "de todos"
+   ],
+   "nota": "victis: particípio perfeito de vinco no dativo plural, com vae: os que foram vencidos.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Lívio, História de Roma V,48,9",
+   "de": "la-f054",
+   "requerTodas": [
+    "la-p146",
+    "la-p030",
+    "la-v098"
+   ],
+   "conjunto": "q-f054"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q037",
+   "tipo": "compreensao",
+   "la": "Ego sum lux mundi.",
+   "pergunta": "De que ele é a luz?",
+   "pt": "do mundo",
+   "aceitas": [
+    "mundo"
+   ],
+   "distratores": [
+    "do céu",
+    "do dia",
+    "da noite",
+    "da vida"
+   ],
+   "nota": "mundi: genitivo, de quê é a luz.\nlux: nominativo, o predicativo; ego, o sujeito.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Jo 8,12",
+   "de": "la-f019",
+   "requerTodas": [
+    "la-p004",
+    "la-p003",
+    "la-p041",
+    "la-p042",
+    "la-v008",
+    "la-v136"
+   ],
+   "conjunto": "q-f019"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q038",
+   "tipo": "compreensao",
+   "la": "Gloria in excelsis Deo.",
+   "pergunta": "A quem se dá a glória?",
+   "pt": "a Deus",
+   "aceitas": [
+    "Deus"
+   ],
+   "distratores": [
+    "às alturas",
+    "aos homens",
+    "aos anjos",
+    "ao céu"
+   ],
+   "nota": "Deo: dativo, a quem.\nin excelsis: ablativo com in, o lugar: nas alturas.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Missal Romano",
+   "de": "la-f025",
+   "requerTodas": [
+    "la-p051",
+    "la-p022",
+    "la-p052",
+    "la-p001",
+    "la-v152",
+    "la-v002"
+   ],
+   "conjunto": "q-f025"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q039",
+   "tipo": "compreensao",
+   "la": "In vino veritas.",
+   "pergunta": "Onde está a verdade?",
+   "pt": "no vinho",
+   "aceitas": [
+    "vinho"
+   ],
+   "distratores": [
+    "no pão",
+    "na água",
+    "na mesa",
+    "nos homens"
+   ],
+   "nota": "in vino: in + ablativo, o lugar: no vinho.\nveritas: nominativo, o sujeito, com o verbo subentendido.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Provérbio (cf. Plínio, História natural XIV,141)",
+   "de": "la-f056",
+   "requerTodas": [
+    "la-p022",
+    "la-p144",
+    "la-p010",
+    "la-v343"
+   ],
+   "conjunto": "q-f056"
+  },
+  {
+   "idioma": "la",
+   "id": "la-q040",
+   "tipo": "compreensao",
+   "la": "Qui sequitur me, non ambulat in tenebris.",
+   "pergunta": "Quem não anda nas trevas?",
+   "pt": "quem me segue",
+   "aceitas": [
+    "quem me segue"
+   ],
+   "distratores": [
+    "quem eu sigo",
+    "quem anda sozinho",
+    "quem dorme",
+    "ninguém"
+   ],
+   "nota": "qui: nominativo, o sujeito de sequitur e de ambulat: quem segue.\nme: acusativo, o objeto: a mim.",
+   "nivel": "A1",
+   "tags": [
+    "compreensão"
+   ],
+   "fonte": "Jo 8,12",
+   "de": "la-f032",
+   "requerTodas": [
+    "la-p064",
+    "la-p065",
+    "la-p004",
+    "la-p066",
+    "la-p067",
+    "la-p022",
+    "la-p068",
+    "la-v171",
+    "la-v190",
+    "la-v043",
+    "la-v192",
+    "la-v194"
+   ],
+   "conjunto": "q-f032"
+  },
+  {
+   "idioma": "la",
+   "id": "la-h001",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "aqua",
+   "enunciado": "aqua, aquae, f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "aqueduto",
+   "aceitas": [
+    "aqueduto"
+   ],
+   "distratores": [
+    "aquecer",
+    "aquilino",
+    "aquém",
+    "aquilo"
+   ],
+   "nota": "aqueduto: de aquae ductus, o canal da água. Também vêm de aqua aquático e aquário.\nAs outras não: aquecer vem de calescere; aquilino, de aquila (a águia); aquém e aquilo, de eccum, eis.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p199"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h002",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "pater",
+   "enunciado": "pater, patris, m.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "paterno",
+   "aceitas": [
+    "paterno"
+   ],
+   "distratores": [
+    "patente",
+    "patético",
+    "patrulha",
+    "patada"
+   ],
+   "nota": "paterno: de paternus, do pai. Também vêm de pater padre, pátria e padrinho.\nAs outras não: patente vem de patens (que está aberto); patético, do grego; patrulha, do francês.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p072"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h003",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "mater",
+   "enunciado": "mater, matris, f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "materno",
+   "aceitas": [
+    "materno"
+   ],
+   "distratores": [
+    "matemática",
+    "matinal",
+    "matagal",
+    "mate"
+   ],
+   "nota": "materno: de maternus, da mãe. Também vem de mater madre (a religiosa).\nAs outras não: matemática vem do grego; matinal, de matutinus (da manhã); mate, do quíchua.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p116"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h004",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "lux",
+   "enunciado": "lux, lucis, f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "lúcido",
+   "aceitas": [
+    "lúcido"
+   ],
+   "distratores": [
+    "luxo",
+    "lugar",
+    "luta",
+    "luva"
+   ],
+   "nota": "lúcido: de lucidus, cheio de luz. O radical de lux é luc- (lucis, luci, lucem).\nAs outras não: luxo vem de luxus; lugar, de locus; luta, de lucta.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p041"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h005",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "terra",
+   "enunciado": "terra, terrae, f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "terreno",
+   "aceitas": [
+    "terreno"
+   ],
+   "distratores": [
+    "terror",
+    "terno",
+    "terço",
+    "termo"
+   ],
+   "nota": "terreno: de terrenus, da terra. Também vêm de terra território e enterrar.\nAs outras não: terror vem de terreo (assustar); terço, de tertius; termo, de terminus.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p096"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h006",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "vita",
+   "enunciado": "vita, vitae, f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "vital",
+   "aceitas": [
+    "vital"
+   ],
+   "distratores": [
+    "vitória",
+    "vitrine",
+    "vitela",
+    "vício"
+   ],
+   "nota": "vital: de vitalis, da vida.\nAs outras não: vitória vem de victoria (de vinco); vitela, de vitellus (o bezerro); vício, de vitium.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p011"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h007",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "mors",
+   "enunciado": "mors, mortis, f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "mortal",
+   "aceitas": [
+    "mortal"
+   ],
+   "distratores": [
+    "moral",
+    "mordomo",
+    "morcego",
+    "morango"
+   ],
+   "nota": "mortal: de mortalis, sujeito à morte. O radical de mors é mort- (mortis).\nAs outras não: moral vem de mos, moris (o costume); mordomo, de maior domus; morcego, de mus caecus (rato cego).",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p119"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h008",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "manus",
+   "enunciado": "manus, manus, f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "manual",
+   "aceitas": [
+    "manual"
+   ],
+   "distratores": [
+    "mansão",
+    "manjar",
+    "manto",
+    "mancha"
+   ],
+   "nota": "manual: de manualis, da mão. Também vêm de manus manobra e manuscrito.\nAs outras não: mansão vem de mansio (de maneo, ficar); manto, de mantum; mancha, de macula.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p073"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h009",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "corpus",
+   "enunciado": "corpus, corporis, n.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "corporal",
+   "aceitas": [
+    "corporal"
+   ],
+   "distratores": [
+    "corvo",
+    "cordão",
+    "corrente",
+    "cortejo"
+   ],
+   "nota": "corporal: de corporalis, do corpo. O radical de corpus é corpor- (corporis).\nAs outras não: corvo vem de corvus; cordão, de chorda; corrente, de currens (de curro, correr).",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p063"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h010",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "canis",
+   "enunciado": "canis, canis, m. e f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "canino",
+   "aceitas": [
+    "canino"
+   ],
+   "distratores": [
+    "canudo",
+    "canela",
+    "canoa",
+    "cantor"
+   ],
+   "nota": "canino: de caninus, do cão (o dente canino é o do cão).\nAs outras não: canudo e canela vêm de canna (a cana); canoa, de uma língua do Caribe; cantor, de cano (cantar).",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p137"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h011",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "dies",
+   "enunciado": "dies, diei, m.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "diário",
+   "aceitas": [
+    "diário"
+   ],
+   "distratores": [
+    "diabo",
+    "diamante",
+    "dieta",
+    "dizer"
+   ],
+   "nota": "diário: de diarium, a ração de cada dia.\nAs outras não: diabo vem do grego diabolos; diamante, de adamas; dieta, do grego diaita; dizer, de dicere.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p025"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h012",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "urbs",
+   "enunciado": "urbs, urbis, f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "urbano",
+   "aceitas": [
+    "urbano"
+   ],
+   "distratores": [
+    "urso",
+    "urtiga",
+    "urgente",
+    "urna"
+   ],
+   "nota": "urbano: de urbanus, da cidade. O radical de urbs é urb- (urbis).\nAs outras não: urso vem de ursus; urtiga, de urtica; urgente, de urgeo (apertar).",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p227"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h013",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "bellum",
+   "enunciado": "bellum, belli, n.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "bélico",
+   "aceitas": [
+    "bélico"
+   ],
+   "distratores": [
+    "belo",
+    "beleza",
+    "belga",
+    "beliche"
+   ],
+   "nota": "bélico: de bellicus, da guerra. Também vem de bellum rebelde (o que volta à guerra).\nAs outras não: belo e beleza vêm de bellus (bonito), outra palavra latina; belga, dos belgas.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p157"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h014",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "caelum",
+   "enunciado": "caelum, caeli, n.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "celeste",
+   "aceitas": [
+    "celeste"
+   ],
+   "distratores": [
+    "celeiro",
+    "célula",
+    "célebre",
+    "celofane"
+   ],
+   "nota": "celeste: de caelestis, do céu (o ae latino virou e).\nAs outras não: celeiro vem de cellarium; célula, de cellula (a celinha); célebre, de celeber.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p090"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h015",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "pax",
+   "enunciado": "pax, pacis, f.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "pacífico",
+   "aceitas": [
+    "pacífico"
+   ],
+   "distratores": [
+    "pacote",
+    "paciente",
+    "paço",
+    "paçoca"
+   ],
+   "nota": "pacífico: de pacificus, o que faz a paz. O radical de pax é pac- (pacis).\nAs outras não: paciente vem de patiens (de patior, sofrer); paço, de palatium; paçoca, do tupi.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p048"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h016",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "nomen",
+   "enunciado": "nomen, nominis, n.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "nominal",
+   "aceitas": [
+    "nominal"
+   ],
+   "distratores": [
+    "nômade",
+    "nora",
+    "norma",
+    "noturno"
+   ],
+   "nota": "nominal: de nominalis, do nome. O radical de nomen é nomin- (nominis).\nAs outras não: nômade vem do grego; nora, de nurus; norma, de norma (o esquadro); noturno, de nocturnus.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p092"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h017",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "fructus",
+   "enunciado": "fructus, fructus, m.",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "frutífero",
+   "aceitas": [
+    "frutífero"
+   ],
+   "distratores": [
+    "frustrar",
+    "fritar",
+    "frota",
+    "frontal"
+   ],
+   "nota": "frutífero: de fructifer, que dá fruto.\nAs outras não: frustrar vem de frustra (em vão); fritar, de frigere; frota, do francês; frontal, de frons (a testa).",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p114"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h018",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "iacio",
+   "enunciado": "iacio, iacere, ieci, iactum",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "jato",
+   "aceitas": [
+    "jato"
+   ],
+   "distratores": [
+    "jarro",
+    "jaula",
+    "jardim",
+    "jantar"
+   ],
+   "nota": "jato: de iactus, o lançamento (o particípio de iacio). Também vem dele objeto, o que se lança diante.\nAs outras não: jarro vem do árabe; jaula, do francês antigo; jardim, do franco; jantar, de ientare.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p140"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h019",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "video",
+   "enunciado": "video, videre, vidi, visum",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "visão",
+   "aceitas": [
+    "visão"
+   ],
+   "distratores": [
+    "vizinho",
+    "víbora",
+    "vírgula",
+    "vinho"
+   ],
+   "nota": "visão: de visio, de visum (o supino de video). Também vêm de video evidente e providência.\nAs outras não: vizinho vem de vicinus; víbora, de vipera; vírgula, de virgula (a varinha); vinho, de vinum.",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p039"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h020",
+   "tipo": "heranca",
+   "familia": "derivado",
+   "la": "doceo",
+   "enunciado": "doceo, docere, docui, doctum",
+   "pergunta": "Que palavra portuguesa vem desta?",
+   "pt": "docente",
+   "aceitas": [
+    "docente"
+   ],
+   "distratores": [
+    "doce",
+    "doença",
+    "doca",
+    "domingo"
+   ],
+   "nota": "docente: de docens, o que ensina (o particípio de doceo). Também vêm de doceo doutor e doutrina.\nAs outras não: doce vem de dulcis; doença, de dolentia (de doleo, doer); domingo, de dominicus (do Senhor).",
+   "nivel": "A1",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": [
+    "la-p158"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-h021",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "per capita",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "por cabeças",
+   "aceitas": [
+    "por cabeça"
+   ],
+   "distratores": [
+    "pela cabeça",
+    "por capítulos",
+    "para a capital",
+    "por capitães"
+   ],
+   "nota": "per + acusativo: por. capita é o plural de caput (a cabeça), neutro da 3ª declinação: por cabeças, isto é, por pessoa.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h022",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "in loco",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "no lugar",
+   "aceitas": [
+    "no próprio lugar"
+   ],
+   "distratores": [
+    "para o lugar",
+    "do lugar",
+    "no meio do caminho",
+    "na hora"
+   ],
+   "nota": "in + ablativo: em, o lugar. loco é o ablativo de locus (o lugar). Com o acusativo, in locum, seria para o lugar.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h023",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "data venia",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "dada a licença",
+   "aceitas": [
+    "dada a vênia",
+    "dada a permissão"
+   ],
+   "distratores": [
+    "a data da licença",
+    "dando a licença",
+    "licença para dar",
+    "sem a licença"
+   ],
+   "nota": "Ablativo absoluto: data (dada) concorda com venia (a licença, a vênia), e os dois estão no ablativo: dada a licença. data não é a data do calendário.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h024",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "honoris causa",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "por causa da honra",
+   "aceitas": [
+    "por causa da honraria"
+   ],
+   "distratores": [
+    "a causa da honra",
+    "pela honra da causa",
+    "com honra e causa",
+    "sem honra nem causa"
+   ],
+   "nota": "honoris é o genitivo de honor (a honra); causa, no ablativo, depois do genitivo, quer dizer por causa de.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h025",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "sui generis",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "do seu próprio gênero",
+   "aceitas": [
+    "do próprio gênero"
+   ],
+   "distratores": [
+    "de qualquer gênero",
+    "de nenhum gênero",
+    "para o seu gênero",
+    "com o seu gênero"
+   ],
+   "nota": "Dois genitivos: sui (de si, o reflexivo) e generis (de genus, o gênero): do seu próprio gênero, único.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h026",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "ad hoc",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "para isto",
+   "aceitas": [
+    "para isso"
+   ],
+   "distratores": [
+    "depois disto",
+    "a partir disto",
+    "sem isto",
+    "contra isto"
+   ],
+   "nota": "ad + acusativo: para. hoc é o acusativo neutro de hic (isto): feito para isto, para este caso.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h027",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "grosso modo",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "de modo grosso",
+   "aceitas": [
+    "de modo grosseiro",
+    "de maneira grosseira"
+   ],
+   "distratores": [
+    "o modo grosso",
+    "para o modo grosso",
+    "sem modo grosso",
+    "de modo fino"
+   ],
+   "nota": "Ablativo de modo: grosso concorda com modo, os dois no ablativo: de modo grosso, por alto. Em latim não se diz a grosso modo.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h028",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "ipsis litteris",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "pelas próprias letras",
+   "aceitas": [
+    "com as próprias letras",
+    "com as mesmas letras",
+    "pelas mesmas letras"
+   ],
+   "distratores": [
+    "as próprias letras",
+    "das letras dele",
+    "sem as letras",
+    "contra as letras"
+   ],
+   "nota": "Ablativo plural: ipsis (de ipse, o próprio) concorda com litteris (as letras): pelas próprias letras, palavra por palavra.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h029",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "post mortem",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "depois da morte",
+   "aceitas": [
+    "após a morte"
+   ],
+   "distratores": [
+    "antes da morte",
+    "pela morte",
+    "na morte",
+    "para a morte"
+   ],
+   "nota": "post + acusativo: depois de. mortem é o acusativo de mors (a morte). Antes da morte seria ante mortem.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h030",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "habeas corpus",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "que tenhas o corpo",
+   "aceitas": [
+    "tenhas o corpo"
+   ],
+   "distratores": [
+    "tens o corpo",
+    "o corpo tem",
+    "ter o corpo",
+    "terás o corpo"
+   ],
+   "nota": "habeas é o presente do subjuntivo de habeo (ter), 2ª pessoa: que tenhas. corpus, neutro, é o objeto. É o começo da ordem antiga: que tenhas o corpo (do preso) diante do juiz.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h031",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "a priori",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "a partir do que vem antes",
+   "aceitas": [
+    "do que vem antes"
+   ],
+   "distratores": [
+    "a partir do que vem depois",
+    "para o que vem antes",
+    "sem o que vem antes",
+    "no que vem antes"
+   ],
+   "nota": "a (ab) + ablativo: a partir de. priori é o ablativo de prior (o anterior). O contrário é a posteriori, a partir do que vem depois.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h032",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "alter ego",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "outro eu",
+   "aceitas": [
+    "um outro eu"
+   ],
+   "distratores": [
+    "eu mesmo",
+    "o eu de outro",
+    "eu e o outro",
+    "nenhum eu"
+   ],
+   "nota": "alter (o outro) e ego (eu), os dois no nominativo: outro eu, alguém que é como a própria pessoa.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h033",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "mea culpa",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "por minha culpa",
+   "aceitas": [
+    "minha culpa"
+   ],
+   "distratores": [
+    "por tua culpa",
+    "a culpa é tua",
+    "sem culpa",
+    "a culpa dela"
+   ],
+   "nota": "Ablativo: mea (minha) concorda com culpa: por minha culpa, como no Confiteor, mea culpa, mea culpa.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h034",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "curriculum vitae",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "o percurso da vida",
+   "aceitas": [
+    "a carreira da vida",
+    "a corrida da vida"
+   ],
+   "distratores": [
+    "a vida do percurso",
+    "o percurso para a vida",
+    "a vida curta",
+    "a cura da vida"
+   ],
+   "nota": "curriculum é a corrida, o percurso (de curro, correr); vitae, o genitivo de vita: o percurso da vida.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h035",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "in memoriam",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "para a memória",
+   "aceitas": [
+    "em memória"
+   ],
+   "distratores": [
+    "a memória",
+    "da memória",
+    "sem memória",
+    "contra a memória"
+   ],
+   "nota": "in + acusativo: para, em direção a (em português se diz em memória de). memoriam é o acusativo de memoria. Com o ablativo, in memoria, seria na memória.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h036",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "persona non grata",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "pessoa não agradável",
+   "aceitas": [
+    "pessoa não bem-vinda",
+    "pessoa indesejada"
+   ],
+   "distratores": [
+    "pessoa não gratuita",
+    "pessoa sem graça",
+    "pessoa não graduada",
+    "pessoa agradável"
+   ],
+   "nota": "grata, feminino de gratus (agradável, bem recebido), concorda com persona; non nega: pessoa não agradável.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h037",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "lato sensu",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "em sentido largo",
+   "aceitas": [
+    "em sentido amplo"
+   ],
+   "distratores": [
+    "em sentido estrito",
+    "no sentido do lado",
+    "sem sentido",
+    "em sentido lento"
+   ],
+   "nota": "Ablativo: lato (largo) concorda com sensu (de sensus, 4ª declinação): em sentido largo. O contrário é stricto sensu.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h038",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "quorum",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "dos quais",
+   "aceitas": [
+    "de quem"
+   ],
+   "distratores": [
+    "para os quais",
+    "os quais",
+    "com os quais",
+    "sem os quais"
+   ],
+   "nota": "quorum é o genitivo plural de qui (o relativo): dos quais, o número dos quais é preciso para votar.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h039",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "sine qua non",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "sem a qual não",
+   "aceitas": [
+    "sem a qual não há"
+   ],
+   "distratores": [
+    "com a qual não",
+    "a qual sem",
+    "sem nada",
+    "nunca sem"
+   ],
+   "nota": "sine + ablativo: sem. qua é o ablativo feminino de qui, porque concorda com condicio (a condição): sem a qual não (se faz).",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-h040",
+   "tipo": "heranca",
+   "familia": "expressao",
+   "la": "ad infinitum",
+   "pergunta": "O que quer dizer, ao pé da letra?",
+   "pt": "até o infinito",
+   "aceitas": [
+    "ao infinito",
+    "para o infinito"
+   ],
+   "distratores": [
+    "no infinito",
+    "do infinito",
+    "contra o infinito",
+    "sem o infinito"
+   ],
+   "nota": "ad + acusativo: até, para. infinitum é o acusativo neutro de infinitus: até o infinito, sem fim.",
+   "nivel": "A2",
+   "tags": [
+    "herança"
+   ],
+   "requerTodas": []
   }
  ]
 }
