@@ -345,7 +345,8 @@ window.Motor = (function () {
        Só o «deu quase» usa (ver conferir). */
     const cru = !!(opcoes && opcoes.cru);
 
-    let texto = String(txt || '').toLowerCase();
+    /* o latim vai à tela com æ e œ (desde 29/10/2026); quem digita escreve «ae» */
+    let texto = String(txt || '').toLowerCase().replace(/æ/g, 'ae').replace(/œ/g, 'oe');
     if (L.guardaAcento) {
       /* NFC junta o «n» e o til numa letra só, para o ñ digitado dos dois
          jeitos chegar ao mesmo lugar. */
