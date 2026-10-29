@@ -1014,17 +1014,25 @@ window.TaioeCardsApp = function (ctx) {
     const filaDe = k => (k === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs);
     const tirar = (k, id) => filaDe(k).splice(filaDe(k).indexOf(id), 1)[0];
     const e = Motor.escolherProximo(c);
-    if (e && e.grupo === 'novo') return proximoNovo();
+    /* depois de dois de gramática, outro tipo que esteja pronto (LATIM.md §13, D30): o card novo de
+       gramática espera a vez seguinte se houver revisão de outro tipo; a revisão de gramática, se
+       houver revisão ou card novo de outro tipo */
     const outroTipo = doisDeGramatica() ? id => !ehDeGramatica(id) : null;
-    if (e && e.fila === 'dominados') {
-      const k = outroTipo ? dominadoMaisProximo(c.agora, outroTipo) : null;
-      return progresso.dominados.splice(k !== null ? k : dominadoMaisProximo(c.agora), 1)[0];
+    if (e && e.grupo === 'novo') {
+      const id = proximoNovo();
+      const rev = outroTipo && id && ehDeGramatica(id) ? revisaoDeOutroTipo(c, outroTipo) : null;
+      if (!rev) return id;
+      progresso.ineditos.unshift(id);
+      return rev;
     }
-    if (e && outroTipo && ehDeGramatica(e.id)) {
-      const outros = c.livres[e.fila].filter(outroTipo);
-      const j = Motor.escolherNaFila(outros, progresso.cards, c.respostas);
-      if (j >= 0) return tirar(e.fila, outros[j]);
+    if (outroTipo && e) {
+      const escolhido = e.fila === 'dominados' ? progresso.dominados[dominadoMaisProximo(c.agora)] : e.id;
+      if (escolhido && ehDeGramatica(escolhido)) {
+        const outro = revisaoDeOutroTipo(c, outroTipo) || novoDeOutroTipo();
+        if (outro) return outro;
+      }
     }
+    if (e && e.fila === 'dominados') return progresso.dominados.splice(dominadoMaisProximo(c.agora), 1)[0];
     if (e) return tirar(e.fila, e.id);
 
     /* Nada pronto: o vencido que ainda esperava espaço, ou o dominado de data
@@ -1041,6 +1049,28 @@ window.TaioeCardsApp = function (ctx) {
       if (melhor === null || d < melhor.desde) melhor = { k, id, desde: d };
     }));
     return melhor ? tirar(melhor.k, melhor.id) : null;
+  }
+
+  /* A revisão de outro tipo que está pronta (D30): a mais urgente das filas, depois o dominado
+     vencido. Tira da fila e devolve o id, ou null. */
+  function revisaoDeOutroTipo(c, serve) {
+    for (const k of ['esPt', 'ptEs']) {
+      const outros = c.livres[k].filter(serve);
+      const j = Motor.escolherNaFila(outros, progresso.cards, c.respostas);
+      if (j < 0) continue;
+      const fila = k === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs;
+      return fila.splice(fila.indexOf(outros[j]), 1)[0];
+    }
+    const v = dominadoMaisProximo(c.agora, serve);
+    return v !== null ? progresso.dominados.splice(v, 1)[0] : null;
+  }
+
+  /* O primeiro card novo de outro tipo (D30), ou null. */
+  function novoDeOutroTipo() {
+    if (!progresso.ineditos.length) return null;
+    ordenarIneditos(progresso);
+    const i = progresso.ineditos.findIndex(id => !ehDeGramatica(id));
+    return i >= 0 ? progresso.ineditos.splice(i, 1)[0] : null;
   }
 
   function proximoNovo() {

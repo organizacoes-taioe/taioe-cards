@@ -216,21 +216,30 @@ function escolher() {
     vencidos: p.dominados.filter(id => !M.esperando(p.cards[id], agora)).length, desdeDominado
   };
   const e = M.escolherProximo(c);
-  if (e && e.grupo === 'novo' && lista.length) return proximoNovo(lista);
   const outroTipo = doisDeGramatica() ? id => !ehDeGramatica(id) : null;
-  if (e && e.fila === 'dominados') {
-    const k = outroTipo ? dominadoMaisProximo(agora, outroTipo) : null;
-    return p.dominados.splice(k !== null ? k : dominadoMaisProximo(agora), 1)[0];
-  }
-  if (e && e.fila) {
-    let id = e.id;
-    if (outroTipo && ehDeGramatica(id)) {
-      const outros = c.livres[e.fila].filter(outroTipo);
+  /* a revisão de outro tipo que está pronta (D30), tirada da fila */
+  const revisaoDeOutroTipo = () => {
+    for (const k of ['esPt', 'ptEs']) {
+      const outros = c.livres[k].filter(outroTipo);
       const j = M.escolherNaFila(outros, p.cards, p.respostas);
-      if (j >= 0) id = outros[j];
+      if (j >= 0) return filaDe(k).splice(filaDe(k).indexOf(outros[j]), 1)[0];
     }
-    return filaDe(e.fila).splice(filaDe(e.fila).indexOf(id), 1)[0];
+    const v = dominadoMaisProximo(agora, outroTipo);
+    return v !== null ? p.dominados.splice(v, 1)[0] : null;
+  };
+  if (e && e.grupo === 'novo' && lista.length) {
+    const id = proximoNovo(lista);
+    return (outroTipo && ehDeGramatica(id) && revisaoDeOutroTipo()) || id;
   }
+  if (outroTipo && e) {
+    const escolhido = e.fila === 'dominados' ? p.dominados[dominadoMaisProximo(agora)] : e.id;
+    if (escolhido && ehDeGramatica(escolhido)) {
+      const outro = revisaoDeOutroTipo() || lista.find(x => !ehDeGramatica(x));
+      if (outro) return outro;
+    }
+  }
+  if (e && e.fila === 'dominados') return p.dominados.splice(dominadoMaisProximo(agora), 1)[0];
+  if (e && e.fila) return filaDe(e.fila).splice(filaDe(e.fila).indexOf(e.id), 1)[0];
   const v = dominadoMaisProximo(agora);
   if (v !== null) return p.dominados.splice(v, 1)[0];
   const q = dominadoMaisProximo(null);
