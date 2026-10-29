@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso fr-pt, leva 76fc3e0f, 1714 cards.
+-- Catálogo do curso fr-pt, leva baa1744b, 1714 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('fr-pt', '76fc3e0f', '1714 cards')
+values ('fr-pt', 'baa1744b', '1714 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -1546,7 +1546,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-pt', 'fr-p631', 'palavra', 'A2', array['adjetivo', 'cotidiano']::text[], null, 'ca4921cc', array['diferente', 'igual', 'inteiro', 'melhor', 'pior']::text[]),
   ('fr-pt', 'fr-p632', 'palavra', 'A2', array['natureza']::text[], null, '8786fc7a', array['a casca', 'a folha', 'a raiz', 'o galho', 'o tronco']::text[]),
   ('fr-pt', 'fr-p633', 'palavra', 'A1', array['adjetivo', 'saúde']::text[], null, '5a9d1878', array['adormecido', 'doente', 'ferido', 'morto', 'vivo']::text[]),
-  ('fr-pt', 'fr-p634', 'palavra', 'C2', array['objetos']::text[], null, 'ac5c44ca', array['a lanterna (de mão)', 'a tocha (de fogo)', 'a vela (de cera)', 'o fósforo (de acender)', 'o lampião (de gás)']::text[]),
+  ('fr-pt', 'fr-p634', 'palavra', 'C2', array['objetos']::text[], null, 'c4b38f7a', array['a lanterna (de mão)', 'a tocha (de fogo)', 'a vela (de acender)', 'o fósforo (de riscar)', 'o lampião (de gás)']::text[]),
   ('fr-pt', 'fr-p635', 'palavra', 'A1', array['natureza']::text[], null, 'bd9a2e71', array['a cinza', 'a fumaça', 'o fogo', 'o gelo', 'o vapor']::text[]),
   ('fr-pt', 'fr-p636', 'palavra', 'B2', array['verbo', 'cotidiano']::text[], null, 'b003ecde', array['bordar / chegar cedo', 'cortar / esperar sentado', 'costurar / ficar parado', 'dobrar / voltar atrás', 'fiar / sair correndo']::text[]),
   ('fr-pt', 'fr-p637', 'palavra', 'C2', array['verbo', 'social']::text[], null, '4b26a204', array['assustar', 'decepcionar', 'entediar', 'envergonhar', 'maravilhar']::text[]),
@@ -1587,7 +1587,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-pt', 'fr-p672', 'palavra', 'C1', array['substantivo', 'viagem']::text[], null, '09cf1406', array['o arpão', 'o casco', 'o leme', 'o mastro', 'o remo']::text[]),
   ('fr-pt', 'fr-p673', 'palavra', 'C1', array['adjetivo', 'animais']::text[], null, 'd887dc63', array['alado', 'cansado', 'faminto', 'ferido', 'perdido']::text[]),
   ('fr-pt', 'fr-p674', 'palavra', 'C2', array['adjetivo', 'social']::text[], null, '09d16635', array['esperto', 'frouxo', 'orgulhoso', 'solene', 'teimoso']::text[]),
-  ('fr-pt', 'fr-p675', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '6d8b1ac7', array['daqui a pouco', 'de vez em quando', 'há pouco tempo', 'nunca mais', 'por enquanto']::text[]),
+  ('fr-pt', 'fr-p675', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '629b3e90', array['daqui a pouco', 'de vez em quando', 'há pouco tempo', 'nunca mais', 'por enquanto']::text[]),
   ('fr-pt', 'fr-p676', 'palavra', 'C1', array['substantivo', 'animais']::text[], null, '250f7f27', array['o bico', 'o casco', 'o chifre', 'o focinho', 'o rabo']::text[]),
   ('fr-pt', 'fr-p677', 'palavra', 'C2', array['substantivo', 'objetos']::text[], null, 'a71d8096', array['o cachimbo curto', 'o charuto barato', 'o cigarro de palha', 'o copo de rum', 'o fósforo aceso']::text[]),
   ('fr-pt', 'fr-p678', 'palavra', 'C1', array['verbo', 'cultura']::text[], null, '10fe0202', array['apontar com o dedo', 'bater com a vara', 'chamar com a mão', 'empurrar com o pé', 'imitar com gestos']::text[]),
@@ -1602,7 +1602,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-pt', 'fr-p688', 'palavra', 'C1', array['adjetivo', 'corpo']::text[], null, '311343dd', array['bronzeado', 'corado', 'enrugado', 'lívido', 'suado']::text[]),
   ('fr-pt', 'fr-p689', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '0710dc50', array['para cima', 'para cá', 'para dentro', 'para lá', 'para trás']::text[]),
   ('fr-pt', 'fr-p690', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '114722a7', array['para baixo', 'para cá', 'para dentro', 'para lá', 'para perto']::text[]),
-  ('fr-pt', 'fr-p691', 'palavra', 'A1', array['verbo', 'cotidiano']::text[], null, '7e7482c6', array['ajoelhar-se', 'deitar-se', 'encostar-se', 'levantar-se', 'sentar-se']::text[]),
+  ('fr-pt', 'fr-p691', 'palavra', 'A1', array['verbo', 'cotidiano']::text[], null, '1045ef19', array['ajoelhar-se', 'deitar-se', 'encostar-se', 'levantar-se', 'sentar-se']::text[]),
   ('fr-pt', 'fr-p692', 'palavra', 'C2', array['verbo', 'casa']::text[], null, '79373d82', array['bordar', 'cerzir', 'costurar', 'dobar', 'tecer']::text[]),
   ('fr-pt', 'fr-p693', 'palavra', 'C1', array['substantivo', 'cultura']::text[], null, '699cd0f7', array['o conto', 'o recado', 'o refrão', 'o salmo', 'o verso']::text[]),
   ('fr-pt', 'fr-p694', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '5683d310', array['agora', 'ainda', 'antes', 'depois', 'então']::text[]),
@@ -1716,7 +1716,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-pt', 'fr-u833', 'frase', 'A2', array['família']::text[], 'fr-p646', 'ef2be681', array['Ela é chefe de cozinha.', 'Ela é dona de casa.', 'Ela é dona de restaurante.', 'Ela é motorista de ônibus.', 'Ela é mulher de negócios.']::text[]),
   ('fr-pt', 'fr-u834', 'frase', 'A2', array['social']::text[], 'fr-p647', '31a248e3', array['Você vai se arrepender disso!', 'Você vai se cansar disso!', 'Você vai se esquecer disso!', 'Você vai se lembrar disso!', 'Você vai se orgulhar disso!']::text[]),
   ('fr-pt', 'fr-u835', 'frase', 'A2', array['cidade']::text[], 'fr-p647', 'b894f84e', array['Tenho medo da minha antiga cidade.', 'Tenho orgulho da minha antiga cidade.', 'Tenho raiva da minha antiga cidade.', 'Tenho saudade da minha antiga cidade.', 'Tenho vergonha da minha antiga cidade.']::text[]),
-  ('fr-pt', 'fr-u836', 'frase', 'A1', array['social']::text[], 'fr-p648', '0631d65a', array['Acho que você tem razão.', 'Admito que você tem razão.', 'Duvido que você tenha razão.', 'Juro que você tem razão.', 'Sei que você tem razão.']::text[]),
+  ('fr-pt', 'fr-u836', 'frase', 'A1', array['social']::text[], 'fr-p648', '6d1d10ac', array['Acho que você tem razão.', 'Admito que você tem razão.', 'Disse que você tem razão.', 'Juro que você tem razão.', 'Sei que você tem razão.']::text[]),
   ('fr-pt', 'fr-u837', 'frase', 'B2', array['natureza']::text[], 'fr-p649', 'c8fc68e5', array['Colhemos maçãs no campo.', 'Compramos maçãs no campo.', 'Lavamos maçãs no campo.', 'Plantamos maçãs no campo.', 'Vendemos maçãs no campo.']::text[]),
   ('fr-pt', 'fr-u838', 'frase', 'A2', array['natureza']::text[], 'fr-p650', '2b10afa7', array['Ele me deu margaridas vermelhas.', 'Ele me deu orquídeas vermelhas.', 'Ele me deu papoulas vermelhas.', 'Ele me deu rosas vermelhas.', 'Ele me deu tulipas vermelhas.']::text[]),
   ('fr-pt', 'fr-u869', 'frase', 'A1', array['cotidiano']::text[], 'fr-p664', '0cdf4d5b', array['A gente se assustou muito ontem à noite.', 'A gente se cansou muito ontem à noite.', 'A gente se divertiu muito ontem à noite.', 'A gente se entediou muito ontem à noite.', 'A gente se preocupou muito ontem à noite.']::text[]),

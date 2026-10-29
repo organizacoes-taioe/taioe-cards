@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva ea325a08, 2233 cards.
+-- Catálogo do curso es-pt, leva aa9f6428, 2233 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', 'ea325a08', '2233 cards')
+values ('es-pt', 'aa9f6428', '2233 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -2124,7 +2124,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p1191', 'palavra', 'C2', array['adjetivo', 'cotidiano']::text[], null, '3a2eff88', array['certo', 'lento', 'pesado', 'preso', 'presto']::text[]),
   ('es-pt', 'p1192', 'palavra', 'C2', array['adjetivo', 'corpo']::text[], null, 'e1282503', array['curvado', 'enfeitado', 'erguido', 'esguio', 'inclinado']::text[]),
   ('es-pt', 'p1193', 'palavra', 'C1', array['verbo', 'cotidiano']::text[], null, '5e0917d4', array['amontoar', 'apertar', 'esconder', 'espalhar', 'espremer']::text[]),
-  ('es-pt', 'p1194', 'palavra', 'C1', array['verbo', 'cotidiano']::text[], null, '450ad48d', array['apanhar', 'plantar', 'podar', 'regar', 'semear']::text[]),
+  ('es-pt', 'p1194', 'palavra', 'C1', array['verbo', 'cotidiano']::text[], null, 'aaccc886', array['apanhar', 'esconder', 'largar', 'plantar', 'regar']::text[]),
   ('es-pt', 'p1195', 'palavra', 'C2', array['adjetivo', 'social']::text[], null, 'e57ac0b9', array['airoso', 'alado', 'arejado', 'calmo', 'irado']::text[]),
   ('es-pt', 'p1196', 'palavra', 'C1', array['verbo', 'natureza']::text[], null, '3464b503', array['brotar', 'florescer', 'manchar', 'marchar', 'murchar']::text[]),
   ('es-pt', 'p1197', 'palavra', 'C1', array['verbo', 'cotidiano']::text[], null, '8ba69ee7', array['alterar', 'emudecer', 'guardar', 'mandar', 'manter']::text[]),
@@ -2168,7 +2168,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u551', 'frase', 'A2', array['social']::text[], 'p1127', '41080985', array['Tenho muito carinho por ele.', 'Tenho muito ciúme dele.', 'Tenho muito interesse por ele.', 'Tenho muito rancor dele.', 'Tenho muito respeito por ele.']::text[]),
   ('es-pt', 'u552', 'frase', 'C1', array['escola']::text[], 'p1128', '34a4e54d', array['O professor é muito distraído.', 'O professor é muito engraçado.', 'O professor é muito rigoroso.', 'O professor é muito simpático.', 'O professor é muito tímido.']::text[]),
   ('es-pt', 'u553', 'frase', 'A1', array['social']::text[], 'p1129', 'a92a184b', array['Meu Deus!', 'Meu amigo!', 'Meu bem!', 'Meu caro!', 'Meu filho!']::text[]),
-  ('es-pt', 'u554', 'frase', 'B2', array['jurídico']::text[], 'p1130', '723fa6ff', array['Ele passou cinco anos na fazenda.', 'Ele passou cinco anos na fábrica.', 'Ele passou cinco anos na marinha.', 'Ele passou cinco anos na prisão.', 'Ele passou cinco anos na universidade.']::text[]),
+  ('es-pt', 'u554', 'frase', 'B2', array['jurídico']::text[], 'p1130', '42c34c42', array['Ele passou cinco anos na fazenda.', 'Ele passou cinco anos na fábrica.', 'Ele passou cinco anos na marinha.', 'Ele passou cinco anos na prisão.', 'Ele passou cinco anos na universidade.']::text[]),
   ('es-pt', 'u555', 'frase', 'B2', array['saúde']::text[], 'p1131', '4c71eddf', array['Ele tem as mãos muito finas.', 'Ele tem as pernas muito finas.', 'Ele tem as sobrancelhas muito finas.', 'Ele tem as unhas muito finas.', 'Ele tem as veias muito finas.']::text[]),
   ('es-pt', 'u556', 'frase', 'A2', array['social']::text[], 'p1132', '4b7b92a3', array['Ele tem muito senso de dever.', 'Ele tem muito senso de estilo.', 'Ele tem muito senso de humor.', 'Ele tem muito senso de perigo.', 'Ele tem muito senso de ritmo.']::text[]),
   ('es-pt', 'u557', 'frase', 'A1', array['saúde']::text[], 'p1133', 'bda4d51f', array['Estou com o braço todo doendo.', 'Estou com o corpo todo doendo.', 'Estou com o pescoço todo doendo.', 'Estou com o pé todo doendo.', 'Estou com o rosto todo doendo.']::text[]),
@@ -2222,7 +2222,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u605', 'frase', 'B2', array['casa']::text[], 'p1174', 'adaf0ffe', array['Vamos arrumar as mesas.', 'Vamos juntar as mesas.', 'Vamos limpar as mesas.', 'Vamos separar as mesas.', 'Vamos virar as mesas.']::text[]),
   ('es-pt', 'u606', 'frase', 'B2', array['economia']::text[], 'p1174', 'fcf2ebb3', array['Estou emprestando dinheiro para um carro.', 'Estou gastando dinheiro para um carro.', 'Estou juntando dinheiro para um carro.', 'Estou pedindo dinheiro para um carro.', 'Estou perdendo dinheiro para um carro.']::text[]),
   ('es-pt', 'u607', 'frase', 'B2', array['política']::text[], 'p1175', '1ac6374c', array['Ele era muito amado pelo seu povo.', 'Ele era muito criticado pelo seu povo.', 'Ele era muito esquecido pelo seu povo.', 'Ele era muito odiado pelo seu povo.', 'Ele era muito temido pelo seu povo.']::text[]),
-  ('es-pt', 'u608', 'frase', 'B1', array['viagem']::text[], 'p1176', 'a6a301e9', array['A viagem me animou.', 'A viagem me assustou.', 'A viagem me atrasou.', 'A viagem me cansou.', 'A viagem me transformou.']::text[]),
+  ('es-pt', 'u608', 'frase', 'B1', array['viagem']::text[], 'p1176', '40a0b1c1', array['A viagem me animou.', 'A viagem me assustou.', 'A viagem me atrasou.', 'A viagem me cansou.', 'A viagem me transformou.']::text[]),
   ('es-pt', 'u609', 'frase', 'A2', array['saúde']::text[], 'p1177', 'aa93fdb5', array['Estou com dor no braço.', 'Estou com dor no estômago.', 'Estou com dor no joelho.', 'Estou com dor no ombro.', 'Estou com dor no peito.']::text[]),
   ('es-pt', 'u610', 'frase', 'C1', array['natureza']::text[], 'p1178', '8d7bfa9b', array['O campo está florido.', 'O campo está molhado.', 'O campo está seco.', 'O campo está vazio.', 'O campo está verde.']::text[]),
   ('es-pt', 'u611', 'frase', 'A2', array['social']::text[], 'p1179', '97f79442', array['Ele me deu um livro de bolso.', 'Ele me deu um livro de piadas.', 'Ele me deu um livro de poemas.', 'Ele me deu um livro de presente.', 'Ele me deu um livro de receitas.']::text[]),
@@ -2234,7 +2234,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u668', 'frase', 'A1', array['cotidiano']::text[], 'p1212', '75fbb326', array['Ela tem muito bom coração.', 'Ela tem muito bom gosto.', 'Ela tem muito bom humor.', 'Ela tem muito bom ouvido.', 'Ela tem muito bom senso.']::text[]),
   ('es-pt', 'u669', 'frase', 'A1', array['cotidiano']::text[], 'p1212', 'eb642e68', array['Faço isso com muito cuidado.', 'Faço isso com muito custo.', 'Faço isso com muito esforço.', 'Faço isso com muito medo.', 'Faço isso com muito prazer.']::text[]),
   ('es-pt', 'u670', 'frase', 'A1', array['viagem']::text[], 'p1213', 'a4b30ff8', array['Até perdi o trem.', 'Já perdi o trem.', 'Nunca perdi o trem.', 'Quase perdi o trem.', 'Também perdi o trem.']::text[]),
-  ('es-pt', 'u671', 'frase', 'A2', array['saúde']::text[], 'p1214', '3ebcb0e1', array['Faço barulho todos os dias.', 'Faço bolo todos os dias.', 'Faço café todos os dias.', 'Faço exercício todos os dias.', 'Faço pão todos os dias.']::text[]),
+  ('es-pt', 'u671', 'frase', 'A2', array['saúde']::text[], 'p1214', 'f61c6baa', array['Faço barulho todos os dias.', 'Faço bolo todos os dias.', 'Faço exercício todos os dias.', 'Faço plantão todos os dias.', 'Faço teatro todos os dias.']::text[]),
   ('es-pt', 'u672', 'frase', 'A2', array['cotidiano']::text[], 'p1215', 'f4a651d5', array['Além disso, não quero ir.', 'Desta vez, não quero ir.', 'Mesmo assim, não quero ir.', 'Por enquanto, não quero ir.', 'Por isso, não quero ir.']::text[]),
   ('es-pt', 'u673', 'frase', 'B2', array['trabalho']::text[], 'p1216', '69e17943', array['Ela trabalha na administração pública.', 'Ela trabalha na educação pública.', 'Ela trabalha na escola pública.', 'Ela trabalha na saúde pública.', 'Ela trabalha na segurança pública.']::text[]),
   ('es-pt', 'u674', 'frase', 'B1', array['social']::text[], 'p1217', '184db883', array['Estou perguntando por brincadeira.', 'Estou perguntando por curiosidade.', 'Estou perguntando por educação.', 'Estou perguntando por obrigação.', 'Estou perguntando por precaução.']::text[]),

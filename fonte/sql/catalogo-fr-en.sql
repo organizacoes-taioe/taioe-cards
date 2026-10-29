@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso fr-en, leva 91d4229a, 1676 cards.
+-- Catálogo do curso fr-en, leva 15285a84, 1676 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('fr-en', '91d4229a', '1676 cards')
+values ('fr-en', '15285a84', '1676 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -1508,7 +1508,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-en', 'fr-p631', 'palavra', 'A2', array['adjetivo', 'cotidiano']::text[], null, 'ca4921cc', array['better', 'different', 'same', 'whole', 'worse']::text[]),
   ('fr-en', 'fr-p632', 'palavra', 'A2', array['natureza']::text[], null, '8786fc7a', array['the bark / the envelope', 'the branch / the ticket', 'the leaf / the sheet', 'the root / the card', 'the trunk / the folder']::text[]),
   ('fr-en', 'fr-p633', 'palavra', 'A1', array['adjetivo', 'saúde']::text[], null, '5a9d1878', array['alive', 'asleep', 'dead', 'sick', 'wounded']::text[]),
-  ('fr-en', 'fr-p634', 'palavra', 'C2', array['objetos']::text[], null, 'ac5c44ca', array['the candle', 'the flashlight', 'the lamp', 'the lantern', 'the match']::text[]),
+  ('fr-en', 'fr-p634', 'palavra', 'C2', array['objetos']::text[], null, 'c4b38f7a', array['the candle', 'the flashlight', 'the lamp', 'the lantern', 'the match']::text[]),
   ('fr-en', 'fr-p635', 'palavra', 'A1', array['natureza']::text[], null, 'bd9a2e71', array['the ash', 'the fire', 'the ice', 'the smoke', 'the steam']::text[]),
   ('fr-en', 'fr-p636', 'palavra', 'B2', array['verbo', 'cotidiano']::text[], null, 'b003ecde', array['to cut / to sit and wait', 'to embroider / to arrive early', 'to fold / to go back', 'to sew / to stand still', 'to spin / to dash off']::text[]),
   ('fr-en', 'fr-p637', 'palavra', 'C2', array['verbo', 'social']::text[], null, '4b26a204', array['to amaze', 'to bore', 'to disappoint', 'to embarrass', 'to scare']::text[]),
@@ -1549,7 +1549,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-en', 'fr-p672', 'palavra', 'C1', array['substantivo', 'viagem']::text[], null, '09cf1406', array['harpoon', 'hull', 'mast', 'oar', 'rudder']::text[]),
   ('fr-en', 'fr-p673', 'palavra', 'C1', array['adjetivo', 'animais']::text[], null, 'd887dc63', array['hungry', 'lost', 'tired', 'winged', 'wounded']::text[]),
   ('fr-en', 'fr-p674', 'palavra', 'C2', array['adjetivo', 'social']::text[], null, '09d16635', array['clever', 'proud', 'solemn', 'spineless', 'stubborn']::text[]),
-  ('fr-en', 'fr-p675', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '6d8b1ac7', array['for now', 'never again', 'not long ago', 'now and then', 'soon']::text[]),
+  ('fr-en', 'fr-p675', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '629b3e90', array['for now', 'never again', 'not long ago', 'now and then', 'soon']::text[]),
   ('fr-en', 'fr-p676', 'palavra', 'C1', array['substantivo', 'animais']::text[], null, '250f7f27', array['beak', 'hoof', 'horn', 'snout', 'tail']::text[]),
   ('fr-en', 'fr-p677', 'palavra', 'C2', array['substantivo', 'objetos']::text[], null, 'a71d8096', array['cheap cigar', 'glass of rum', 'lit match', 'rolled cigarette', 'short pipe']::text[]),
   ('fr-en', 'fr-p678', 'palavra', 'C1', array['verbo', 'cultura']::text[], null, '10fe0202', array['to beckon', 'to kick', 'to mime', 'to point', 'to whip']::text[]),
@@ -1564,7 +1564,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-en', 'fr-p688', 'palavra', 'C1', array['adjetivo', 'corpo']::text[], null, '311343dd', array['ashen', 'flushed', 'sweaty', 'tanned', 'wrinkled']::text[]),
   ('fr-en', 'fr-p689', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '0710dc50', array['backward', 'inward', 'that way', 'this way', 'upward']::text[]),
   ('fr-en', 'fr-p690', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '114722a7', array['downward', 'inward', 'nearby', 'that way', 'this way']::text[]),
-  ('fr-en', 'fr-p691', 'palavra', 'A1', array['verbo', 'cotidiano']::text[], null, '7e7482c6', array['to get up', 'to kneel down', 'to lean back', 'to lie down', 'to sit down']::text[]),
+  ('fr-en', 'fr-p691', 'palavra', 'A1', array['verbo', 'cotidiano']::text[], null, '1045ef19', array['to get up', 'to kneel down', 'to lean back', 'to lie down', 'to sit down']::text[]),
   ('fr-en', 'fr-p692', 'palavra', 'C2', array['verbo', 'casa']::text[], null, '79373d82', array['to darn', 'to embroider', 'to sew', 'to weave', 'to wind']::text[]),
   ('fr-en', 'fr-p693', 'palavra', 'C1', array['substantivo', 'cultura']::text[], null, '699cd0f7', array['message', 'psalm', 'refrain', 'tale', 'verse']::text[]),
   ('fr-en', 'fr-p694', 'palavra', 'C2', array['advérbio', 'cotidiano']::text[], null, '5683d310', array['after that', 'at that time', 'before that', 'even now', 'for a while']::text[]),
@@ -1678,7 +1678,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-en', 'fr-u833', 'frase', 'A2', array['família']::text[], 'fr-p646', 'ef2be681', array['She''s a bus driver.', 'She''s a businesswoman.', 'She''s a head chef.', 'She''s a housewife.', 'She''s a restaurant owner.']::text[]),
   ('fr-en', 'fr-u834', 'frase', 'A2', array['social']::text[], 'fr-p647', '31a248e3', array['You''ll be proud of it!', 'You''ll forget it!', 'You''ll get tired of it!', 'You''ll regret it!', 'You''ll remember it!']::text[]),
   ('fr-en', 'fr-u835', 'frase', 'A2', array['cidade']::text[], 'fr-p647', 'b894f84e', array['I hate my old town.', 'I miss my old town.', 'I''m afraid of my old town.', 'I''m ashamed of my old town.', 'I''m proud of my old town.']::text[]),
-  ('fr-en', 'fr-u836', 'frase', 'A1', array['social']::text[], 'fr-p648', '0631d65a', array['I admit you''re right.', 'I doubt you''re right.', 'I know you''re right.', 'I swear you''re right.', 'I think you''re right.']::text[]),
+  ('fr-en', 'fr-u836', 'frase', 'A1', array['social']::text[], 'fr-p648', '6d1d10ac', array['I admit you''re right.', 'I know you''re right.', 'I said you''re right.', 'I swear you''re right.', 'I think you''re right.']::text[]),
   ('fr-en', 'fr-u837', 'frase', 'B2', array['natureza']::text[], 'fr-p649', 'c8fc68e5', array['We bought apples in the countryside.', 'We picked apples in the countryside.', 'We planted apples in the countryside.', 'We sold apples in the countryside.', 'We washed apples in the countryside.']::text[]),
   ('fr-en', 'fr-u838', 'frase', 'A2', array['natureza']::text[], 'fr-p650', '2b10afa7', array['He gave me red daisies.', 'He gave me red orchids.', 'He gave me red poppies.', 'He gave me red roses.', 'He gave me red tulips.']::text[]),
   ('fr-en', 'fr-u869', 'frase', 'A1', array['cotidiano']::text[], 'fr-p664', '0cdf4d5b', array['We had a busy time last night.', 'We had a great time last night.', 'We had a hard time last night.', 'We had a quiet time last night.', 'We had a terrible time last night.']::text[]),

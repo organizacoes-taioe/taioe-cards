@@ -90192,26 +90192,26 @@
    "id": "fr-p634",
    "tipo": "palavra",
    "fr": "la chandelle",
-   "pt": "a vela (de cera)",
+   "pt": "a vela (de acender)",
    "aceitas": [
     "vela",
     "a vela de cera",
     "a vela de sebo"
    ],
    "distratores": [
-    "o fósforo (de acender)",
+    "o fósforo (de riscar)",
     "o lampião (de gás)",
     "a lanterna (de mão)",
     "a tocha (de fogo)"
    ],
-   "es": "la vela (de cera)",
+   "es": "la vela (de encender)",
    "aceitasEs": [
     "la vela",
     "vela",
     "la candela"
    ],
    "distratoresEs": [
-    "la cerilla (de encender)",
+    "la cerilla (de rascar)",
     "el farol (de gas)",
     "la linterna (de mano)",
     "la antorcha (de fuego)"
@@ -90234,7 +90234,10 @@
    ],
    "nota": "A vela de hoje é «la bougie»; «la chandelle», a antiga, de sebo, ficou nas expressões: «un dîner aux chandelles», um jantar à luz de velas; «tenir la chandelle», segurar vela. A vela do barco é «la voile».",
    "notaEs": "La vela de hoy es «la bougie»; «la chandelle», la antigua, de sebo, quedó en expresiones: «un dîner aux chandelles», una cena a la luz de las velas; «tenir la chandelle», hacer de carabina. La vela del barco es «la voile».",
-   "notaEn": "Today's candle is «la bougie»; «la chandelle», the old tallow one, survives in idioms: «un dîner aux chandelles», a candlelit dinner; «tenir la chandelle», to be the third wheel."
+   "notaEn": "Today's candle is «la bougie»; «la chandelle», the old tallow one, survives in idioms: «un dîner aux chandelles», a candlelit dinner; «tenir la chandelle», to be the third wheel.",
+   "sinonimosFr": [
+    "la bougie"
+   ]
   },
   {
    "idioma": "fr",
@@ -92401,9 +92404,7 @@
     "ha pouco",
     "ainda ha pouco",
     "pouco antes",
-    "recentemente",
-    "outrora",
-    "antigamente"
+    "recentemente"
    ],
    "distratores": [
     "daqui a pouco",
@@ -92417,7 +92418,6 @@
     "hace poco tiempo",
     "poco antes",
     "recientemente",
-    "antaño",
     "antes"
    ],
    "distratoresEs": [
@@ -92431,9 +92431,7 @@
     "not long ago",
     "a short time ago",
     "recently",
-    "lately",
-    "formerly",
-    "once"
+    "lately"
    ],
    "distratoresEn": [
     "soon",
@@ -93223,10 +93221,7 @@
    "pt": "sentar-se",
    "aceitas": [
     "sentar",
-    "se sentar",
-    "estar sentado",
-    "sentado",
-    "sentada"
+    "se sentar"
    ],
    "distratores": [
     "deitar-se",
@@ -93237,10 +93232,7 @@
    "es": "sentarse",
    "aceitasEs": [
     "sentarse",
-    "sentar",
-    "estar sentado",
-    "sentado",
-    "sentada"
+    "sentar"
    ],
    "distratoresEs": [
     "acostarse",
@@ -93253,9 +93245,7 @@
     "to sit down",
     "sit down",
     "to sit",
-    "sit",
-    "seated",
-    "sitting"
+    "sit"
    ],
    "distratoresEn": [
     "to lie down",
@@ -100173,7 +100163,7 @@
     "Sei que você tem razão.",
     "Juro que você tem razão.",
     "Admito que você tem razão.",
-    "Duvido que você tenha razão."
+    "Disse que você tem razão."
    ],
    "es": "Creo que tienes razón.",
    "aceitasEs": [
@@ -100186,7 +100176,7 @@
     "Sé que tienes razón.",
     "Juro que tienes razón.",
     "Admito que tienes razón.",
-    "Dudo que tengas razón."
+    "Dije que tienes razón."
    ],
    "en": "I think you're right.",
    "aceitasEn": [
@@ -100200,7 +100190,7 @@
     "I know you're right.",
     "I swear you're right.",
     "I admit you're right.",
-    "I doubt you're right."
+    "I said you're right."
    ],
    "nivel": "A1",
    "tags": [
