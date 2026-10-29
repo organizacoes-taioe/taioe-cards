@@ -1543,8 +1543,9 @@ window.TaioeCardsApp = function (ctx) {
      puxar a palavra da memória, pouco para entregá-la. */
   function avisarSinonimo(s) {
     chanceUsada = true;
-    el['aviso-lingua'].innerHTML = t('aviso.sinonimo', { x: escapar(s.palavra) }) +
-      (s.dica ? t('aviso.sinonimoDica', { d: escapar(s.dica) }) : t('aviso.sinonimoSemDica'));
+    const chave = s.frase ? 'aviso.sinonimoFrase' : 'aviso.sinonimo';
+    el['aviso-lingua'].innerHTML = t(chave, { x: escapar(s.palavra) }) +
+      (s.dica ? t(chave + 'Dica', { d: escapar(s.dica) }) : t('aviso.sinonimoSemDica'));
     el['aviso-lingua'].classList.remove('oculto');
     el.entrada.value = '';
       ajustarEntrada();
