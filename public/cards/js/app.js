@@ -3411,12 +3411,18 @@ window.TaioeCardsApp = function (ctx) {
     if (novo && TEXTO_POR_ID[novo]) {
       partes.push('<p class="recompensa">' + t('texto.trocar', { n: Motor.MAX_TEXTOS, t: escapar(TEXTO_POR_ID[novo].titulo) }) + '</p>');
     }
-    /* da obra em partes, só a parte da vez (Motor.textoEscolhivel) */
-    const abertos = TEXTOS.filter(x => Motor.textoEscolhivel(x, TEXTOS, tx.lidos))
-      .sort((a, b) => ((b.id === novo) - (a.id === novo)) || (ativos.has(b.id) - ativos.has(a.id)) || ((a.fila === undefined ? 1e9 : a.fila) - (b.fila === undefined ? 1e9 : b.fila)));
+    /* da obra em partes, só a parte da vez (Motor.textoEscolhivel). A ordem (pedido do Gere,
+       29/10): o pedido da Biblioteca, os escolhidos, e depois os outros pelo que falta, do que
+       está mais perto de completar ao mais longe; os lidos inteiros vão para o grupo de baixo. */
+    const andamento = new Map();
+    const abertos = TEXTOS.filter(x => Motor.textoEscolhivel(x, TEXTOS, tx.lidos));
+    abertos.forEach(x => andamento.set(x.id, Motor.andamentoDoTexto(x, progresso.cards, arq)));
+    const fila = x => x.fila === undefined ? 1e9 : x.fila;
+    abertos.sort((a, b) => ((b.id === novo) - (a.id === novo)) || (ativos.has(b.id) - ativos.has(a.id)) ||
+      (andamento.get(a.id).faltam - andamento.get(b.id).faltam) || (fila(a) - fila(b)));
     partes.push('<div class="grupo lista-textos">');
     abertos.forEach(x => {
-      const a = Motor.andamentoDoTexto(x, progresso.cards, arq);
+      const a = andamento.get(x.id);
       const vistos = Motor.versosVistos(x, tx.lidos);
       const marcado = ativos.has(x.id);
       const seguinte = Motor.parteSeguinte(x, TEXTOS);
