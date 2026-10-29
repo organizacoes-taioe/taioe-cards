@@ -108,6 +108,18 @@ for (const idioma of IDIOMAS) {
   if (cards.length) baralhos.push({ idioma, cards });
 }
 
+/* ── uma terminação, um card (cards/LATIM.md §13, D26 e D27, 29/10/2026) ──
+   A chave do grupo de cada flexão do latim que repete a terminação de outra
+   (fonte/latim/terminacoes.js); o motor faz o resto. Ela não muda a versão do
+   card: o que ele pergunta e aceita é o mesmo. */
+const { terminacoes } = require('./latim/terminacoes');
+for (const b of baralhos) {
+  if (b.idioma !== 'la') continue;
+  const t = terminacoes(b.cards);
+  b.cards.forEach(c => { if (t.has(c.id)) c.terminacao = t.get(c.id); });
+  console.log('  la: ' + t.size + ' flexões em ' + new Set(t.values()).size + ' terminações (uma terminação, um card)');
+}
+
 /* ── os textos ──
    Desde 20/10/2026 (PLANO.md, seção 9) o texto vem da Biblioteca: fonte/textos/<idioma>/
    <autor>--<poema>.json, gravado por fonte/importar-texto.py, com os versos em «blocos» (cada
@@ -813,6 +825,9 @@ for (const { idioma, cards } of baralhos) {
       if (!lema || lema.tipo !== 'palavra') erros.push('flexão sem o card do lema: ' + onde);
       if (FLEXAO.get(chaveLatina(c.la) + '|' + c.lema) !== c.id) erros.push('flexão repetida (a mesma forma do mesmo lema): ' + onde);
       if (typeof c.analise !== 'string' || !c.analise.trim()) erros.push('flexão sem «analise»: ' + onde);
+      /* a variante de uma forma que já tem card (LATIM.md §13, D29) não estreia: «rara» é true,
+         e a nota da forma principal a cita */
+      if (c.rara !== undefined && c.rara !== true) erros.push('flexão com «rara» que não é true: ' + onde);
       /* a flexão de nome pergunta o caso (§3.8, 26/10/2026): o sentido vai em «sentido», e nenhuma
          errada pode dividir um caso com a certa («genitivo singular» com «genitivo ou dativo
          singular» seria meia verdade) */
@@ -1309,6 +1324,7 @@ for (const { idioma, cards } of baralhos) {
          e não deve mudar a versão que vai em cada resposta. */
       const semCampo = Object.assign({}, c);
       delete semCampo.transparencia;
+      delete semCampo.terminacao;
       limpo.v = hash8(JSON.stringify(semCampo));
       /* O grau da transparência neste curso (PLANO.md, 7.1), depois do «v»:
          ele é do curso, não do card, e não muda a versão. Só quando há grau. */

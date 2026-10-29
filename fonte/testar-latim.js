@@ -223,15 +223,15 @@ resp(teimoso, true);
 ok(teimoso.etapa === 'dominado' && teimoso.voltaEm === null, 'o terceiro seguido fecha de vez');
 
 const fonteDe = { [abl.de]: { vistas: 1 } };
-ok(!M.formaPronta(Object.assign({}, abl, { sempre: true }), {}, {}), 'antes do verso aparecer, não estreia');
-ok(M.formaPronta(Object.assign({}, abl, { sempre: true }), fonteDe, {}), 'depois do verso, o difícil estreia');
-let sorteadas = 0;
-for (let i = 0; i < 2000; i++) {
-  M.usarExtras({ uid: 'u' + i });
-  if (M.formaEscolhida(Object.assign({}, abl, { sempre: false }), {})) sorteadas++;
-}
-ok(Math.abs(sorteadas / 2000 - M.SORTEIO_DA_FORMA) < 0.04, 'o fácil sai para uma pessoa em quatro (' + sorteadas + ' de 2000)');
-M.usarExtras({ uid: 'teste' });
+ok(!M.formaPronta(Object.assign({}, abl, { ambigua: true }), {}, {}), 'antes do verso aparecer, não estreia');
+ok(M.formaPronta(Object.assign({}, abl, { ambigua: true }), fonteDe, {}), 'depois do verso, a forma ambígua estreia');
+/* desde 29/10/2026 (LATIM.md §13, D28), só a forma que, sozinha, teria mais de uma leitura */
+ok(!M.formaEscolhida(Object.assign({}, abl, { ambigua: false, sempre: true }), {}), 'a de leitura única não estreia, nem a difícil');
+ok(FORMAS.every(c => typeof c.ambigua === 'boolean') && FORMAS.some(c => c.ambigua) && FORMAS.some(c => !c.ambigua),
+  'cards_de_forma.py marca as ambíguas (' + FORMAS.filter(c => c.ambigua).length + ' de ' + FORMAS.length + ')');
+const porLa = la => FORMAS.find(c => c.la === la);
+ok(porLa('Tempus') && porLa('Tempus').ambigua && porLa('caritas') && !porLa('caritas').ambigua,
+  'Tempus (nominativo ou acusativo) é ambígua; caritas, não');
 const dativos = FORMAS.filter(c => c.pt === 'dativo');
 const h = (em, acertou) => ({ em: '2026-10-22T10:0' + em + ':00Z', acertou });
 ok(!M.formaPuxada('dativo', {}), 'sem erro, nada puxado');
@@ -273,6 +273,75 @@ const sabidos = Object.fromEntries(k.requerTodas.map(id => [id, { etapa: 'domina
 ok(M.liberado(k, sabidos, Date.now(), {}), 'com as palavras e os conceitos dominados, libera');
 delete sabidos[conceitosDeK[0]];
 ok(!M.liberado(k, sabidos, Date.now(), {}), 'sem um dos conceitos, não');
+
+/* ═══════════ 6d. uma terminação, um card (LATIM.md §13, D26, D27 e D29) ═══════════ */
+secao('uma terminação, um card');
+const { terminacoes } = require('./latim/terminacoes');
+const TERM = terminacoes(CARDS);
+CARDS.forEach(c => { if (TERM.has(c.id)) c.terminacao = TERM.get(c.id); });
+M.usarTransparencias(CARDS);
+const grupos = new Map();
+for (const [id, chave] of TERM) { if (!grupos.has(chave)) grupos.set(chave, []); grupos.get(chave).push(PORID.get(id)); }
+const flexaoLa = la => CARDS.find(c => c.tipo === 'flexao' && c.la === la);
+ok(grupos.size >= 20, 'há grupos de terminação (' + grupos.size + ', com ' + TERM.size + ' flexões)');
+ok([...grupos.values()].every(g => g.length >= 2 && g.every(c => (c.familia === 'caso') === (g[0].familia === 'caso'))),
+  'todo grupo tem dois cards ou mais, e é todo de nomes ou todo de verbos');
+ok([...grupos.values()].filter(g => g[0].familia === 'caso').every(g => g.every(c => c.pt === g[0].pt)), 'nos nomes, a mesma resposta');
+ok([...grupos.values()].filter(g => g[0].familia !== 'caso').every(g => g.every(c => c.analise === g[0].analise)), 'nos verbos, a mesma análise');
+ok(![...TERM.keys()].some(id => /pronome/.test((PORID.get(PORID.get(id).lema).tags || []).join(' '))), 'nenhum pronome nos grupos');
+ok(['dixit', 'stetit', 'vicit'].every(la => flexaoLa(la) && !TERM.has(flexaoLa(la).id)), 'o perfeito de radical próprio (dixit, stetit, vicit) tem card próprio');
+ok(flexaoLa('di').rara && flexaoLa('dii').rara && !TERM.has(flexaoLa('di').id), 'a variante (di, dii) é «rara», fora dos grupos');
+ok(M.adormecido(flexaoLa('di').id, {}) && M.quemConta(flexaoLa('di').id, {}) === flexaoLa('di').lema, 'e não estreia: conta como o lema');
+
+const aquae = flexaoLa('aquae');
+const chaveAe = TERM.get(aquae.id);
+const outraAe = grupos.get(chaveAe).find(c => c.id !== aquae.id);
+const depois = '2026-11-02';
+ok(chaveAe && M.ativoDaTerminacao(chaveAe, {}) === null && !M.adormecido(aquae.id, {}) && !M.adormecido(outraAe.id, {}),
+  'ninguém do grupo visto: ninguém dorme');
+const viu = { [aquae.id]: { vistas: 1, etapa: 'multipla', estreia: depois } };
+ok(M.ativoDaTerminacao(chaveAe, viu) === aquae.id && !M.adormecido(aquae.id, viu), 'o primeiro visto é o ativo');
+ok(M.adormecido(outraAe.id, viu) && M.quemConta(outraAe.id, viu) === aquae.id, 'as outras formas dormem e contam como ele');
+ok(M.sabidaEm(outraAe.id, viu, {}) === Infinity, 'com o ativo em estudo, a que dorme não está sabida');
+const quando = '2026-11-02T10:00:00Z';
+const dominou = { [aquae.id]: { vistas: 3, etapa: 'dominado', estreia: depois, dominadoEm: quando } };
+ok(M.sabidaEm(outraAe.id, dominou, {}) === Date.parse(quando), 'com o ativo dominado, a que dorme conta como sabida desde então');
+const fraseDaOutra = CARDS.find(c => c.tipo === 'frase' && (c.requerTodas || []).includes(outraAe.id) && !(c.requerTodas || []).includes(aquae.id));
+ok(!!fraseDaOutra, 'há uma frase que pede a outra forma (' + (fraseDaOutra && fraseDaOutra.id) + ')');
+if (fraseDaOutra) {
+  const tudo = Object.fromEntries(fraseDaOutra.requerTodas.filter(id => id !== outraAe.id)
+    .map(id => [id, { vistas: 3, etapa: 'dominado', estreia: '2026-10-20', dominadoEm: '2026-10-21T10:00:00Z' }]));
+  ok(!M.liberado(fraseDaOutra, tudo, Date.parse('2026-12-01'), {}), 'a frase espera a terminação');
+  ok(M.liberado(fraseDaOutra, Object.assign({}, tudo, dominou), Date.parse('2026-12-01'), {}), 'e destrava com o ativo dominado');
+  ok(!M.situacaoDaFrase(fraseDaOutra, Object.assign({}, tudo, viu), {}).naoVistas.includes(outraAe.id), 'a que dorme não conta como palavra por ver');
+  const errou = Object.assign({}, dominou, { [fraseDaOutra.id]: { vistas: 2, etapa: 'multipla', historico: [{ em: '2026-11-03T10:00:00Z', acertou: false }] } });
+  ok(M.flexaoPuxada(outraAe.id, errou) && !M.adormecido(outraAe.id, errou), 'errou a frase depois da mudança: a forma acorda');
+  const antes = Object.assign({}, dominou, { [fraseDaOutra.id]: { vistas: 2, etapa: 'multipla', historico: [{ em: '2026-10-20T10:00:00Z', acertou: false }] } });
+  ok(!M.flexaoPuxada(outraAe.id, antes), 'o erro de antes da mudança não acorda ninguém');
+}
+const acordada = Object.assign({}, dominou, { [outraAe.id]: { vistas: 1, etapa: 'multipla', estreia: '2026-11-04' } });
+ok(!M.adormecido(outraAe.id, acordada) && M.ativoDaTerminacao(chaveAe, acordada) === aquae.id, 'quem estreou depois da mudança é card próprio, e o ativo não muda');
+const legado = {
+  [aquae.id]: { vistas: 5, etapa: 'dominado', estreia: '2026-10-25', dominadoEm: '2026-10-26T10:00:00Z' },
+  [outraAe.id]: { vistas: 4, etapa: 'dominado', estreia: '2026-10-24', dominadoEm: '2026-10-25T10:00:00Z' }
+};
+ok(M.ativoDaTerminacao(chaveAe, legado) === outraAe.id && M.adormecido(aquae.id, legado),
+  'de quem viu várias antes da mudança, fica a dominada há mais tempo; a outra dorme');
+const emEstudo = {
+  [aquae.id]: { vistas: 2, etapa: 'escrita', estreia: '2026-10-25' },
+  [outraAe.id]: { vistas: 2, etapa: 'escrita', estreia: '2026-10-24' }
+};
+ok(M.contarDirecoes(emEstudo, {}).esPt === 1, 'a que dorme não conta na ida');
+const lemasVistos = Object.fromEntries(grupos.get(chaveAe).map(c => [c.lema, { vistas: 1, etapa: 'escrita' }]));
+const comLemas = Object.assign({}, lemasVistos, viu);
+ok(M.exemploDaTerminacao(aquae, { vistas: 0 }, comLemas, {}).id === aquae.id, 'na estreia, o card mostra a própria forma');
+const mostradas = new Set(grupos.get(chaveAe).map((_, v) => M.exemploDaTerminacao(aquae, { vistas: v }, comLemas, {}).id));
+ok(mostradas.size === grupos.get(chaveAe).length, 'depois, em rodízio, as outras palavras da terminação (' + mostradas.size + ')');
+ok(M.exemploDaTerminacao(aquae, { vistas: 1 }, Object.assign({ [aquae.lema]: { vistas: 1 } }, viu), {}).id === aquae.id,
+  'só entram as palavras cujo lema a pessoa já viu');
+const verbo = [...grupos.values()].find(g => g[0].familia !== 'caso')[0];
+ok(M.exemploDaTerminacao(verbo, { vistas: 3 }, { [verbo.id]: { vistas: 3, estreia: depois } }, {}).id === verbo.id, 'o card de verbo não gira');
+M.usarTransparencias(CARDS.map(c => Object.assign({}, c, { terminacao: undefined })));
 
 /* ═══════════ 7. transparência e desafio ═══════════ */
 secao('transparência e desafio');
