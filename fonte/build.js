@@ -1162,6 +1162,76 @@ fs.mkdirSync(path.join(pastaPublica, 'js'), { recursive: true });
 
 const crypto = require('crypto');
 const hash8 = texto => crypto.createHash('sha1').update(texto).digest('hex').slice(0, 8);
+
+/* ── o latim com æ e œ ──
+   Pedido do Gere (29/10/2026): o latim na tela com as ligaduras, como nas edições da Igreja
+   (fonte/latim/ligaduras.js, com os hiatos: Israël, poëta). Só no que vai ao ar: o fonte, o
+   data/ e o catálogo continuam com «ae», e a versão («v») de cada card não muda.
+   Os campos que são todo latim (o «la», a frase, as palavras, o verso) mudam inteiros. Nas notas
+   e nos outros campos o latim vem no meio do português («Lupus: nominativo singular…»): ali muda
+   a palavra que aparece nos campos de latim e a que tem «ae» sem ser do português (o português
+   quase não tem «ae», e tem muito «oe»: poema, joelho, goela). Os campos de id, de chave e de
+   resposta digitada ficam como estão. */
+const Ligaduras = require('./latim/ligaduras');
+const NAO_LIGAR = new Set(['id', 'v', 'texto', 'tags', 'conjunto', 'de', 'requer', 'requerTodas', 'conceitos', 'c', 'card',
+  'homografos', 'idioma', 'tipo', 'nivel', 'familia', 'transp', 'aceitas', 'variantes', 'publicos', 'gabarito', 'biblioteca',
+  'wiki', 'g', 'obra', 'curso', 'audiencia', 'leva']);
+/* o «lema» é o enunciado latino no texto e o id do card de palavra na flexão (la-p001): os dois
+   podem passar pela troca */
+const SO_LATIM = new Set(['la', 'frase', 'distratoresLa', 'w', 't', 'titulo', 'lema']);
+const PT_COM_AE = ['israel', 'rafael', 'ismael', 'michael', 'maestro', 'maestros', 'aeroporto', 'aeroportos'];
+function palavrasDoLatim(cards, textos) {
+  const latim = new Set(), pt = new Set(PT_COM_AE);
+  const junta = (t, onde) => { if (typeof t === 'string') (t.toLowerCase().match(/[a-z]+/g) || []).forEach(w => onde.add(w)); };
+  cards.forEach(c => {
+    if (c.tipo !== 'conceito') junta(c.la, latim);
+    junta(c.frase, latim);
+    (c.distratoresLa || []).forEach(t => junta(t, latim));
+    (c.palavras || []).forEach(x => junta(x.w, latim));
+    (c.exemplos || []).forEach(x => { junta(x.la, latim); junta(x.w, latim); });
+    /* só os campos que são todo português (as explicações, como «fn» e «funcao», citam latim) */
+    [c.pt, ...(c.aceitas || []), ...(c.tags || []), ...(c.outras || []),
+      ...(c.tipo === 'palavra' || c.tipo === 'frase' || c.tipo === 'conceito' ? c.distratores || [] : [])].forEach(t => junta(t, pt));
+    if (c.tipo === 'conceito') junta(c.la, pt);
+  });
+  (textos || []).forEach(t => {
+    junta(t.titulo, latim);
+    t.blocos.forEach(bl => bl.forEach(l => junta(l.t, latim)));
+    Object.values(t.destinos || {}).forEach(d => [d, ...(d.partes || [])].forEach(x => {
+      junta(x.lema, latim); junta(x.classe, pt);
+    }));
+  });
+  /* a palavra dos campos de latim que também é do português não muda no meio do português */
+  return { latim: new Set([...latim].filter(w => !pt.has(w))), pt };
+}
+/* «tipo» só chega ao campo do próprio card: o «la» do conceito é português («nominativo»), e o
+   dos exemplos dele é latim */
+function comLigaduras(v, lx, chave, tipo) {
+  if (typeof v === 'string') {
+    if (chave && NAO_LIGAR.has(chave)) return v;
+    if (SO_LATIM.has(chave) && !(chave === 'la' && tipo === 'conceito')) return Ligaduras.ligar(v);
+    /* o enunciado é latim com uma ou outra palavra portuguesa: «sequor, sequi, secutus sum (depoente)» */
+    if (chave === 'enunciado') return v.replace(/[A-Za-z]+/g, w => (lx.pt.has(w.toLowerCase()) ? w : Ligaduras.ligarPalavra(w)));
+    return v.replace(/[A-Za-z]+/g, w => {
+      const k = w.toLowerCase();
+      return lx.latim.has(k) || (/ae/.test(k) && !lx.pt.has(k)) ? Ligaduras.ligarPalavra(w) : w;
+    });
+  }
+  if (Array.isArray(v)) {
+    /* o verso: [[texto, chave do destino], …], e só o texto muda */
+    if (chave === 'p') return v.map(x => (Array.isArray(x) ? [Ligaduras.ligar(x[0])].concat(x.slice(1)) : x));
+    return v.map(x => comLigaduras(x, lx, chave, tipo));
+  }
+  if (v && typeof v === 'object') {
+    const saida = {};
+    for (const k in v) saida[k] = chave === 'destinos' ? comLigaduras(v[k], lx)
+      : NAO_LIGAR.has(k) ? v[k] : comLigaduras(v[k], lx, k, typeof v.tipo === 'string' ? v.tipo : undefined);
+    return saida;
+  }
+  return v;
+}
+const LIGADAS = {};
+for (const b of baralhos) if (b.idioma === 'la') LIGADAS.la = palavrasDoLatim(b.cards, b.textos);
 /* ── um pacote por curso ──
    Desde 07/10/2026 cada baralho serve aos dois públicos dele como cursos
    próprios: o de espanhol vira es-pt e es-en, o de inglês en-pt e en-es, o de
@@ -1251,7 +1321,8 @@ for (const { idioma, cards } of baralhos) {
     });
     const leva = hash8(doApp.map(c => c.id + ':' + c.v).join('\n'));
     const pacote = { versao: 1, idioma: idioma, curso: curso, audiencia: audiencia, leva: leva, total: doApp.length, cards: doApp };
-    const js = comoJs(pacote, ["window.BARALHOS['" + idioma + "']"]);
+    const naTela = LIGADAS[idioma] ? Object.assign({}, pacote, { cards: comLigaduras(doApp, LIGADAS[idioma]) }) : pacote;
+    const js = comoJs(naTela, ["window.BARALHOS['" + idioma + "']"]);
     fs.writeFileSync(path.join(dataPublica, 'cards-' + curso + '.js'), js, 'utf8');
     if (audiencia === 'pt') fs.writeFileSync(path.join(dataPublica, 'cards-' + idioma + '.js'), js, 'utf8');
     escreverCatalogo(curso, leva, doApp, audiencia);
@@ -1369,7 +1440,10 @@ for (const b of baralhos) {
     'window.TEXTOS = window.TEXTOS || {};\n' +
     "window.TEXTOS['" + b.idioma + "'] = " + JSON.stringify(pacote) + ';\n';
   fs.writeFileSync(path.join(raiz, 'data', 'textos-' + b.idioma + '.js'), js, 'utf8');
-  fs.writeFileSync(path.join(dataPublica, 'textos-' + b.idioma + '.js'), js, 'utf8');
+  const naTela = LIGADAS[b.idioma] ? Object.assign({}, pacote, { textos: comLigaduras(textos, LIGADAS[b.idioma]) }) : pacote;
+  fs.writeFileSync(path.join(dataPublica, 'textos-' + b.idioma + '.js'), '/* GERADO POR fonte/build.js — não edite à mão. */\n' +
+    'window.TEXTOS = window.TEXTOS || {};\n' +
+    "window.TEXTOS['" + b.idioma + "'] = " + JSON.stringify(naTela) + ';\n', 'utf8');
 }
 fs.writeFileSync(path.join(dataPublica, 'textos.json'), JSON.stringify({ versao: 1, textos: prontos }) + '\n', 'utf8');
 

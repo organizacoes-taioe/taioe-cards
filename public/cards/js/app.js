@@ -92,7 +92,7 @@ window.TaioeCardsApp = function (ctx) {
      («id» de is, ea, id): a primeira frase o traz logo depois do lema, e o texto, pelo
      «requerTodas» de cada verso, na ordem de leitura. */
   const chaveLatina = w => String(w || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/j/g, 'i').replace(/v/g, 'u');
+    .replace(/j/g, 'i').replace(/v/g, 'u').replace(/æ/g, 'ae').replace(/œ/g, 'oe');
   const FLEXAO = new Map(CARDS.filter(c => c.tipo === 'flexao').map(c => [chaveLatina(c.la) + '|' + c.lema, c.id]));
   const flexaoDe = x => (x && x.c ? FLEXAO.get(chaveLatina(x.w) + '|' + x.c) : undefined);
   /* as que vêm na ordem de leitura (do texto e das primeiras frases); as outras (as tabelas dos
