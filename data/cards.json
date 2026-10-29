@@ -1,8 +1,8 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-10-25",
- "total": 2044,
+ "gerado_em": "2026-10-29",
+ "total": 2043,
  "cards": [
   {
    "idioma": "es",
@@ -7403,7 +7403,7 @@
    "id": "f079",
    "tipo": "frase",
    "es": "¿Me puedes echar una mano?",
-   "pt": "Você pode me ajudar?",
+   "pt": "Você pode me dar uma mão?",
    "en": "Can you give me a hand?",
    "aceitas": [
     "voce pode me ajudar",
@@ -7413,7 +7413,8 @@
     "pode me dar uma ajuda",
     "voce pode me dar uma ajuda",
     "me da uma ajuda",
-    "me da uma mao"
+    "me da uma mao",
+    "voce pode me dar uma mao"
    ],
    "aceitasEn": [
     "can you give me a hand",
@@ -7447,7 +7448,10 @@
    ],
    "regionaisEs": {
     "¿Me podés echar una mano?": "na Argentina, no Uruguai e na América Central"
-   }
+   },
+   "sinonimosEs": [
+    "¿Me puedes ayudar?"
+   ]
   },
   {
    "idioma": "es",
@@ -17804,60 +17808,6 @@
   },
   {
    "idioma": "es",
-   "id": "f119",
-   "tipo": "frase",
-   "es": "Me suena a chino.",
-   "pt": "Não entendo nada disso.",
-   "en": "It's all Greek to me.",
-   "aceitas": [
-    "nao entendo nada disso",
-    "nao entendo nada",
-    "nao estou entendendo nada",
-    "isso para mim e grego",
-    "para mim isso e grego",
-    "isso e grego para mim",
-    "para mim e grego",
-    "isso e grego",
-    "parece grego",
-    "parece que esta falando grego",
-    "esta falando grego",
-    "nao entendo patavina",
-    "isso e chines para mim",
-    "nao entendi nada",
-    "nao entendi nada disso"
-   ],
-   "aceitasEn": [
-    "its all greek to me",
-    "it s all greek to me",
-    "it is all greek to me",
-    "i dont understand a word",
-    "its double dutch to me"
-   ],
-   "distratores": [
-    "Isso me parece familiar.",
-    "Acho que isso é chinês.",
-    "Não acredito em nada disso.",
-    "Não gosto nada disso."
-   ],
-   "distratoresEn": [
-    "That sounds easy to me.",
-    "That seems familiar to me.",
-    "I have heard that somewhere before.",
-    "I think that really is Chinese."
-   ],
-   "nivel": "B2",
-   "tags": [
-    "expressão"
-   ],
-   "nota": "É o que se diz do que não dá para entender — em português, de quem «está falando grego». Cada língua escolhe a sua: para o espanhol o incompreensível é o chinês. Não confunda com «me suena» sozinho, que é o contrário: soa familiar.",
-   "notaEn": "Every language picks a different one: Spanish finds Chinese impenetrable, English picks Greek. Careful — plain 'me suena' means the opposite, that it does ring a bell.",
-   "requerTodas": [
-    "p471",
-    "p623"
-   ]
-  },
-  {
-   "idioma": "es",
    "id": "f120",
    "tipo": "frase",
    "es": "Ni corto ni perezoso.",
@@ -20991,6 +20941,9 @@
     "p351",
     "p415",
     "p039"
+   ],
+   "aceitasEs": [
+    "Este postre es muy empalagoso."
    ]
   },
   {
@@ -24911,7 +24864,10 @@
     "temos que trocar os lencois",
     "e preciso trocar a roupa de cama",
     "tem que trocar o lencol",
-    "e preciso mudar os lencois"
+    "e preciso mudar os lencois",
+    "e necessario trocar os lencois",
+    "e necessario trocar a roupa de cama",
+    "e necessario mudar os lencois"
    ],
    "aceitasEn": [
     "the sheets need changing",
@@ -25650,7 +25606,8 @@
     "e preciso chamar o encanador a torneira esta pingando",
     "temos que chamar o encanador a torneira esta pingando",
     "precisa chamar o encanador a torneira pinga",
-    "tem que chamar o bombeiro a torneira esta pingando"
+    "tem que chamar o bombeiro a torneira esta pingando",
+    "e necessario chamar o encanador a torneira esta pingando"
    ],
    "aceitasEn": [
     "we need to call the plumber the tap is dripping",
@@ -27054,7 +27011,10 @@
     "e preciso cumprir a decisao do juiz",
     "tem que respeitar a decisao do juiz",
     "temos que acatar a decisao do juiz",
-    "e preciso obedecer a decisao do juiz"
+    "e preciso obedecer a decisao do juiz",
+    "e necessario acatar a decisao do juiz",
+    "e necessario cumprir a decisao do juiz",
+    "e necessario obedecer a decisao do juiz"
    ],
    "aceitasEn": [
     "the judge s decision must be complied with",
@@ -29835,6 +29795,10 @@
     "p402",
     "p847",
     "p361"
+   ],
+   "sinonimosEs": [
+    "Esa película es muy guay.",
+    "Esa película es muy buena."
    ]
   },
   {
@@ -30258,6 +30222,11 @@
     "p433",
     "p426",
     "p421"
+   ],
+   "aceitasEs": [
+    "¿Me trae la cuenta, por favor?",
+    "¿Me puede traer la cuenta, por favor?",
+    "¿Nos puede traer la cuenta, por favor?"
    ]
   },
   {
@@ -30350,7 +30319,10 @@
     "p352",
     "p355",
     "p780"
-   ]
+   ],
+   "regionaisEs": {
+    "Se fue la luz.": "na América Latina"
+   }
   },
   {
    "idioma": "es",
@@ -40004,7 +39976,8 @@
     "tem que trocar de linha na proxima",
     "precisa trocar de linha na proxima",
     "tem que fazer baldeacao na proxima",
-    "tem que mudar de linha na proxima"
+    "tem que mudar de linha na proxima",
+    "e necessario baldear na proxima"
    ],
    "aceitasEn": [
     "you have to change lines at the next stop",
@@ -43865,7 +43838,11 @@
    "notaEn": "About people, «pesado» is someone who will not let up. About objects it simply means heavy.",
    "sinonimosEs": [
     "aburrido",
-    "molesto"
+    "molesto",
+    "fastidioso",
+    "latoso",
+    "pelma",
+    "plasta"
    ]
   },
   {
@@ -57835,13 +57812,13 @@
    "distratores": [
     "gorjear",
     "golpear",
-    "gozar",
+    "gostar",
     "girar"
    ],
    "distratoresEn": [
     "to chirp",
     "to hit",
-    "to enjoy",
+    "to like",
     "to spin"
    ],
    "nivel": "B1",
@@ -75174,7 +75151,7 @@
    "tipo": "frase",
    "requer": "p371",
    "es": "Es decir, no vienes.",
-   "pt": "Ou seja, você não vem.",
+   "pt": "Quer dizer, você não vem.",
    "en": "In other words, you're not coming.",
    "aceitas": [
     "ou seja voce nao vem",
@@ -75214,7 +75191,10 @@
    ],
    "regionaisEs": {
     "Es decir, no venís.": "na Argentina, no Uruguai e na América Central"
-   }
+   },
+   "sinonimosEs": [
+    "O sea, no vienes."
+   ]
   },
   {
    "idioma": "es",
@@ -79150,7 +79130,10 @@
     "vou te ligar hoje a noite",
     "te ligarei esta noite",
     "eu te ligo hoje a noite",
-    "ligo pra voce hoje a noite"
+    "ligo pra voce hoje a noite",
+    "vou te ligar esta noite",
+    "te ligo esta noite",
+    "eu te ligo esta noite"
    ],
    "aceitasEn": [
     "i ll call you tonight",
@@ -81672,7 +81655,10 @@
     "temos que consertar a bomba d agua",
     "a gente tem que consertar a bomba d agua",
     "tem que arrumar a bomba d agua",
-    "e preciso arrumar a bomba d agua"
+    "e preciso arrumar a bomba d agua",
+    "e necessario consertar a bomba d agua",
+    "e necessario consertar a bomba de agua",
+    "e necessario arrumar a bomba d agua"
    ],
    "aceitasEn": [
     "we have to fix the water pump",

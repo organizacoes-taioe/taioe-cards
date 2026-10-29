@@ -316,6 +316,11 @@ Não há como adivinhá-los pelo baralho: o índice das traduções confunde
 homônimo com sinônimo («a colher» é `la cuchara` e é `coger`). Então a lista é
 escrita à mão, e card novo de palavra deve trazê-la quando houver o que pôr.
 
+Vale também para a **frase**: «Esa película es muy buena» em `f135` («mola»). Ali o aviso diz
+que o card pede outro jeito de dizer e dá a primeira letra da palavra que faltou. E antes do
+sinônimo vem o `pt`: se o português tem a mesma imagem («dar uma mão» para «echar una mano»,
+«quer dizer» para «es decir»), ela é a canônica, e a outra fica nas `aceitas`.
+
 ### 5.2 `regionaisEs`: vale, e o app diz de onde é
 
 O baralho é da Espanha, mas não dá exclusividade a ela (decisão do Gere,
@@ -776,6 +781,12 @@ sem ele o navegador serve o baralho velho.
 | Recusa que também vai para a nota | `f077` «de acuerdo» sozinho é «combinado»; `f046` o «lo» de «de haberlo sabido» |
 | Expressão só do país de referência sai, mesmo em jogo | 20/10/2026: 48 cards, de `f014` «el quinto pino» a `fr-u567` «prendre un pot»; alguns ids acima são desses cards e ficam só como história |
 | A gíria do país de referência fica, com as frases dela | 21/10/2026: «todas ficam», sobre as 14 gírias da Espanha e «legal» e «o cara»; voltaram 19 frases, de `u023` majo a `pt-u630` «Cara, que legal!» |
+| Frase também tem `sinonimosEs`, e o `pt` aponta para a expressão do card quando o português tem uma | `f135` «Esa película es muy guay» contra «mola»; `f079` «Você pode me dar uma mão?» (antes «me ajudar»); `u461` «Quer dizer» (antes «Ou seja», que leva a «o sea») — 29/10/2026 |
+| Card que o `pt` não consegue apontar na volta sai | `f119` «Me suena a chino»: «No entiendo nada de eso» contava como erro (29/10/2026) |
+| Distrator sem duplo sentido chulo no Brasil | `p715` «gozar», trocado por «gostar» |
+| Duas letras vizinhas trocadas são um deslize só (vão ao «deu quase») | `p257` «la crata» por «la carta» |
+| «É necessário» ao lado de «é preciso», em todo «hay que» | `u194` «é necessário acatar…», e mais quatro cards |
+| Frase de uso do latim sem pontuação pendurada no fim (`:`, `;`, `,`); os trechos dos textos ficam como no texto | `la-u135` «non est inimicus Amori:», e mais 52 |
 
 ---
 

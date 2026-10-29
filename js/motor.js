@@ -418,11 +418,15 @@ window.Motor = (function () {
   function modo() { return MODO; }
   function soIda() { return MODO === 'trilhas'; }
 
-  /* distância de Levenshtein, só para deslize de digitação em palavra única */
+  /* distância de Levenshtein, só para deslize de digitação em palavra única.
+     Duas letras vizinhas trocadas de lugar contam como UM deslize, e não dois:
+     «la crata» por «la carta» caía como erro seco, e foi a mão que correu na
+     frente (contestação do p257, 25/10/2026). */
   function distancia(a, b) {
     if (a === b) return 0;
     const m = a.length, n = b.length;
     if (!m || !n) return m || n;
+    let antes = null;
     let ant = Array.from({ length: n + 1 }, (_, i) => i);
     for (let i = 1; i <= m; i++) {
       const atual = [i];
@@ -432,7 +436,10 @@ window.Motor = (function () {
           atual[j - 1] + 1,
           ant[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
         );
+        if (antes && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1] && a[i - 1] !== b[j - 1])
+          atual[j] = Math.min(atual[j], antes[j - 2] + 1);
       }
+      antes = ant;
       ant = atual;
     }
     return ant[n];
@@ -948,7 +955,17 @@ window.Motor = (function () {
     const dado = semAcento(normalizar(texto, lingua));
     if (!dado || !lista.length) return null;
     const palavra = lista.find(s => semAcento(normalizar(s, lingua)) === dado);
-    return palavra ? { palavra: String(palavra).trim(), dica: primeiraLetra(card[CAMPOS[lingua].certa]) } : null;
+    if (!palavra) return null;
+    const certa = card[CAMPOS[lingua].certa];
+    /* Na frase («Esa película mola mucho» contra «… es muy buena»), a primeira letra da frase
+       não ajuda: a dica é a da primeira palavra do card que a pessoa não escreveu (desde 29/10). */
+    if (card.tipo === 'frase') {
+      const escritas = new Set(dado.split(' '));
+      const falta = (String(certa || '').normalize('NFC').match(PALAVRA) || [])
+        .find(p => !escritas.has(semAcento(normalizar(p, lingua))));
+      return { palavra: String(palavra).trim(), dica: falta ? primeiraLetra(falta) : '', frase: true };
+    }
+    return { palavra: String(palavra).trim(), dica: primeiraLetra(certa) };
   }
 
   /* A primeira letra do que se pede, sem o artigo e sem o «¿» da frente:
