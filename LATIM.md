@@ -679,3 +679,59 @@ tokens por poema curto), passa de dezenas de milhões de tokens, quase todos em 
   nova é um texto a mais em `TEXTOS` (parte 3…), trechos com `texto` dela, as palavras novas, as frases
   de uso, o glossário refeito e a linha nova na Biblioteca.
 
+
+## 13. Mais variedade (pedido de 29/10, aprovado no mesmo dia)
+
+Pedido do Gere (29/10): «sinto que quase todos os cards são para responder casos e formas verbais.
+[…] o que a gente poderia fazer para que houvesse mais diversidade nos cards, sem prejudicar a
+qualidade do aprendizado?». Contraproposta D26–D33, com o diagnóstico medido (a proposta inteira
+ficou em `../anexos/latim-variedade.md`); a resposta dele: «Sim, todas (menos a D33)».
+
+- **Antes** (simulação, nove cenários de texto e sorteio): 50% a 68% das respostas eram de gramática
+  (média 57%), 31% a 39% caíam em sequências de 3 ou mais cards de gramática (até 18 seguidos), e a
+  frase era só 10% em média. Três cards faziam a mesma pergunta («em que caso está…?»): o conceito,
+  a forma na frase e a flexão sozinha; e havia um card por forma, quando o que se aprende é a
+  terminação (*deus* trazia *dei*, *deo*, *deos*, *deum*, *di* e *dii*).
+- ✔ **D26. Uma terminação, um card** (nomes e adjetivos): as flexões de caso com a mesma
+  declinação, o mesmo final e a mesma resposta são um grupo, e quem o estuda é o primeiro card dele
+  que a pessoa vê; a cada aparição ele mostra outra palavra do grupo cujo lema ela já viu (*rosae*,
+  *aquae*, *gloriae*), com as erradas e a nota daquela palavra. Pronomes e irregulares, um por forma.
+- ✔ **D27. Nos verbos regulares, só a terminação nova**: a mesma conjugação e a mesma análise; no
+  perfeito e no particípio perfeito, só o radical que a conjugação prevê (*laudavi*, *timui*,
+  *audivi*): *dixit*, *vicit*, *stetit* e *passus* ficam com card próprio. A forma que dorme fica no
+  verso, com a nota dele. Rede de segurança (D26 e D27): errou, depois da mudança, uma frase que pede a
+  forma que dorme, ela acorda e estreia, só para a pessoa.
+- ✔ **D28. A forma na frase só quando a frase decide**: o card de forma só da forma que, sozinha,
+  teria mais de uma leitura (`ambigua`, de `cards_de_forma.py`); acabou o sorteio de 1 em 4 das
+  fáceis. O erro continua puxando as parecidas.
+- ✔ **D29. A flexão espera a frase que a pede**: a de frase de uso só quando a frase está perto (os
+  lemas dela sabidos), uma a cada quatro vagas; a que nenhuma frase pede (as tabelas), uma a cada
+  dez (antes, quatro); a de texto não escolhido espera. A variante (*di*, *dii*, campo `rara`) não
+  estreia e conta como o lema.
+- ✔ **D30. Nunca mais de dois de gramática seguidos** (conceito, forma, flexão, contraste): o
+  próximo é de outro tipo, se houver um pronto, nos novos e nas revisões.
+- ✔ **D31. Card de leitura «quem fez o quê?»** e ✔ **D32. O latim que já está no português**:
+  pilotos (§13.2). ✗ **D33. Perguntas sobre a história**: fica de fora, por ora.
+
+### 13.1 Como ficou (D26–D30)
+- `fonte/latim/terminacoes.js`: os grupos (o build grava `terminacao` no pacote do app, fora da versão
+  do card). Hoje, 207 flexões em 53 terminações: 143 de nomes e adjetivos em 32 grupos, 64 de verbos em
+  21; quem estuda tudo vê 53 cards no lugar de 207.
+- Motor: `ativoDaTerminacao` (o primeiro visto; de quem viu vários antes de `DIA_DAS_TERMINACOES`,
+  30/10/2026, o dominado há mais tempo, ou o que estreou primeiro), `adormecido` (o resto do grupo, a
+  variante), `quemConta` (a que dorme conta como o ativo em `sabidaEm`, `venceuEm` e
+  `situacaoDaFrase`; fora de `contarDirecoes`), `flexaoPuxada` (o histórico local da frase, com erro
+  depois daquele dia), `exemploDaTerminacao` (o rodízio). O que estreou depois daquele dia é card
+  próprio para sempre: é a rede de segurança, sem coluna nova no banco.
+- App: a que dorme sai das filas (`fora`), não estreia (`daTrilha`) e sai dos inéditos
+  (`ordenarTrilhas`); o card mostra o exemplo da vez; `doisDeGramatica` na escolha (D30); as duas
+  vagas da D29 (`CADA_FLEXAO_DE_USO` = 3, `CADA_FLEXAO_DE_TABELA` = 9).
+- Formas: 127 das 285 são ambíguas (116 de caso, 11 de verbo), mais que as 78 estimadas na
+  proposta, porque contam também as formas iguais ao dicionário que têm duas leituras (*Tempus*,
+  nominativo ou acusativo; *vita*, nominativo ou ablativo).
+- Depois (simulação, `node fonte/simular-latim.js`, os mesmos nove cenários): gramática em 35% a 60%
+  das respostas (média 48%; a proposta estimava 41%, com os verbos menos conservadores), frase em 7% a
+  27% (média 15%), sequências de 3 ou mais em 0% a 1% (nunca mais de 3 seguidos). O primeiro verso do
+  texto não chega antes (resposta 360 a 740): ele espera a vaga do texto, 1 de cada 3 cards novos.
+- Transição: quem já estudou várias formas do grupo fica com a dominada há mais tempo; as outras
+  dormem com o estado guardado e saem da fila. Verso já destravado não volta a travar.

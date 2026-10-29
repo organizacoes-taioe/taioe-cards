@@ -1485,6 +1485,8 @@ window.Motor = (function () {
       const e = estados[id];
       if (!e || !e.vistas || e.etapa === 'dominado') continue;
       if (arquivados && arquivado(id, arquivados)) continue;
+      /* nem a flexão que adormeceu (LATIM.md §13): o estado fica, fora das filas */
+      if (TERMINACAO[id] && adormecido(id, estados)) continue;
       if (e.etapa === 'multipla' || e.etapa === 'escrita') esPt++;
       else ptEs++;
     }
@@ -2021,6 +2023,11 @@ window.Motor = (function () {
   function sabidaEm(id, estados, arquivados) {
     if (arquivado(id, arquivados)) return Date.parse(arquivados[id].em) || 0;
     if (transparenteTotal(id)) return 0;
+    /* a flexão que dorme conta como o card da terminação dela; a variante, como o lema (LATIM.md §13) */
+    if (TERMINACAO[id] || RARA[id]) {
+      const quem = quemConta(id, estados);
+      if (quem !== id) return sabidaEm(quem, estados, arquivados);
+    }
     const e = estados && estados[id];
     if (!e || e.etapa !== 'dominado') return presumidoEm(id, estados) ? PRESUMIDOS_EM : Infinity;
     return e.dominadoEm ? Date.parse(e.dominadoEm) || 0 : 0;
@@ -2058,8 +2065,9 @@ window.Motor = (function () {
   function venceuEm(card, estados, arquivados) {
     const req = requeridas(card);
     if (!req.length) return 0;
-    /* palavra sem data de domínio: a frase conta como liberada há muito tempo */
-    if (req.some(id => !arquivado(id, arquivados) && !(estados[id] && estados[id].dominadoEm))) return 0;
+    /* palavra sem data de domínio: a frase conta como liberada há muito tempo; a flexão que dorme
+       vale pelo card da terminação dela (LATIM.md §13) */
+    if (req.map(id => quemConta(id, estados)).some(id => !arquivado(id, arquivados) && !(estados[id] && estados[id].dominadoEm))) return 0;
     const t = liberadaEm(card, estados, arquivados);
     return t === Infinity ? 0 : t;
   }
@@ -2085,8 +2093,10 @@ window.Motor = (function () {
     const buraco = req.some(id => String(id)[0] === '+');
     /* a transparente e a presumida não estreiam como card novo: não há o que
        trazer para elas, e contá-las aqui prenderia a frase na lista de vista */
+    /* nem a flexão que dorme (LATIM.md §13): ela não estreia */
     const naoVistas = req.filter(id => String(id)[0] !== '+' &&
-      !(estados[id] && estados[id].vistas) && !arquivado(id, arquivados) && !conhecidaSemEstado(id, estados));
+      !(estados[id] && estados[id].vistas) && !arquivado(id, arquivados) && !conhecidaSemEstado(id, estados) &&
+      !adormecido(id, estados));
     const faltamDominar = req.filter(id => sabidaEm(id, estados, arquivados) === Infinity).length;
     return { buraco: buraco, naoVistas: naoVistas, faltamDominar: faltamDominar };
   }
@@ -2481,11 +2491,12 @@ window.Motor = (function () {
      leituras que mais se confundem com a certa (até 24/10/2026 era só por escrito, e escrever
      «nominativo» toda vez cansava o Gere), e uma vez só: acertou de primeira, sai de vez;
      errou, volta até acertar três vezes seguidas, e então sai de vez. Nunca volta por data.
-     Nem todo card de forma é perguntado: o difícil («sempre», pela nota do build) sim; o fácil,
-     só para uma pessoa em cada SORTEIO_DA_FORMA — sorteio fixo por pessoa e card, o mesmo em
-     qualquer aparelho. E o erro puxa os parecidos: quem errou um dativo passa a ver também os
-     dativos fáceis, até acertar três seguidos daquele caso. */
-  const SORTEIO_DA_FORMA = 0.25;
+     Nem todo card de forma é perguntado: desde 29/10/2026 (LATIM.md §13, D28), só o da forma
+     que, sozinha, teria mais de uma leitura («ambigua», de cards_de_forma.py: *dei*, *rosae*,
+     *nobis*; *venit*, vem ou veio), em que a frase é que decide; a de leitura única, a flexão e
+     as erradas do card da frase já cobrem. Até então o difícil vinha sempre e o fácil para uma
+     pessoa em quatro. E o erro puxa os parecidos: quem errou um dativo passa a ver também os
+     dativos de leitura única, até acertar três seguidos daquele caso. */
   const ACERTOS_QUE_SOLTAM = 3;
   let RESPOSTA_DA_FORMA = Object.create(null);   // id do card de forma → resposta («dativo»)
 
@@ -2506,10 +2517,6 @@ window.Motor = (function () {
     return ehForma(id) && !!est && est.etapa === 'dominado';
   }
 
-  function sorteadaParaVoce(card) {
-    return hashDeTexto(UID + ':' + card.id) / 4294967296 < SORTEIO_DA_FORMA;
-  }
-
   /* A resposta tem sido errada nos cards de forma de mesmo gabarito: o último erro ainda não
      teve ACERTOS_QUE_SOLTAM acertos seguidos depois dele. */
   function formaPuxada(resposta, estados) {
@@ -2526,7 +2533,7 @@ window.Motor = (function () {
   }
 
   function formaEscolhida(card, estados) {
-    return !!card.sempre || sorteadaParaVoce(card) || formaPuxada(card.pt, estados);
+    return !!card.ambigua || formaPuxada(card.pt, estados);
   }
 
   /* Pode estrear: o verso (ou a primeira frase) de onde a palavra vem já apareceu, ou foi
@@ -2653,6 +2660,89 @@ window.Motor = (function () {
   function ehFlexao(id) { return TIPO[id] === 'flexao'; }
   /* a flexão de nome (substantivo, adjetivo, pronome), que pergunta o caso: LATIM.md §3.8 */
   function ehFlexaoDeCaso(id) { return !!FLEXAO_DE_CASO[id]; }
+
+  /* ── uma terminação, um card (LATIM.md §13, D26 e D27, pedido do Gere, 29/10/2026) ──
+     A flexão regular que repete uma terminação já estudada não estreia. As flexões da mesma
+     «terminacao» (o build a calcula: nos nomes e adjetivos, a declinação, o final e a resposta,
+     como «-ae, 1ª» → «genitivo ou dativo singular; nominativo plural»; nos verbos regulares, a
+     conjugação e a análise) formam um grupo, e quem o estuda é o primeiro card dele que a
+     pessoa viu: o ativo. Os outros adormecem: não estreiam, e nas frases que os pedem contam
+     como o ativo. Nos nomes, o ativo mostra a cada vez uma palavra do grupo (D26,
+     exemploDaTerminacao); nos verbos, a forma que dorme fica no verso, e a nota dele a explica
+     (D27). De quem já tinha visto várias do grupo antes de DIA_DAS_TERMINACOES, o ativo é a
+     dominada há mais tempo (sem dominada, a que estreou primeiro), e as outras adormecem com o
+     estado guardado. Rede de segurança: errou depois disso uma frase que pede a forma que
+     dorme, ela acorda e estreia (flexaoPuxada); e o que estreou depois disso é card próprio, de
+     vez. A variante de uma forma que já tem card (*di* e *dii*, de *dei*; campo «rara», D29) não
+     estreia nunca e conta como o lema. */
+  const DIA_DAS_TERMINACOES = '2026-10-30';
+  let TERMINACAO = Object.create(null);       // id → a chave do grupo
+  let MEMBROS = Object.create(null);          // chave → ids, na ordem do baralho
+  let RARA = Object.create(null);             // id → id do lema
+  let FRASES_DA_FLEXAO = Object.create(null); // id → ids das frases que pedem a flexão
+  let CARD_DA_FLEXAO = Object.create(null);   // id → card (o exemplo do card da terminação)
+
+  function depoisDasTerminacoes(e) {
+    return !!(e && e.estreia && String(e.estreia) >= DIA_DAS_TERMINACOES);
+  }
+
+  /* O card que estuda a terminação, ou null se nenhum do grupo apareceu ainda. */
+  function ativoDaTerminacao(chave, estados) {
+    const vistos = (MEMBROS[chave] || []).filter(id => estados && estados[id] && estados[id].vistas);
+    if (!vistos.length) return null;
+    const antigos = vistos.filter(id => !depoisDasTerminacoes(estados[id]));
+    const grupo = antigos.length ? antigos : vistos;
+    let melhor = null, menor = null;
+    for (const id of grupo) {
+      const e = estados[id];
+      const k = antigos.length && e.dominadoEm ? '0' + e.dominadoEm : '1' + (e.estreia || '');
+      if (menor === null || k < menor) { melhor = id; menor = k; }
+    }
+    return melhor;
+  }
+
+  /* Uma frase que pede a flexão foi errada depois da mudança: a forma acorda. */
+  function flexaoPuxada(id, estados) {
+    for (const f of FRASES_DA_FLEXAO[id] || []) {
+      const e = estados && estados[f];
+      if (((e && e.historico) || []).some(h => !h.acertou && String(h.em || '') >= DIA_DAS_TERMINACOES)) return true;
+    }
+    return false;
+  }
+
+  function adormecido(id, estados) {
+    if (RARA[id]) return true;
+    const chave = TERMINACAO[id];
+    if (!chave) return false;
+    const e = estados && estados[id];
+    if (e && e.vistas) return !depoisDasTerminacoes(e) && ativoDaTerminacao(chave, estados) !== id;
+    return !!ativoDaTerminacao(chave, estados) && !flexaoPuxada(id, estados);
+  }
+
+  /* Quem conta pela flexão nas frases que a pedem: ela mesma, o ativo do grupo (se ela dorme) ou,
+     na variante, o lema. */
+  function quemConta(id, estados) {
+    if (RARA[id]) return RARA[id];
+    if (!TERMINACAO[id] || !adormecido(id, estados)) return id;
+    return ativoDaTerminacao(TERMINACAO[id], estados) || id;
+  }
+
+  /* O exemplo da vez no card ativo de uma terminação de nome (D26): na estreia, ele mesmo; depois,
+     em rodízio, as outras formas do grupo cujo lema a pessoa já viu. O card de verbo, o que
+     acordou e o que estreou como card próprio mostram só a si mesmos. */
+  function exemploDaTerminacao(card, est, estados, arquivados) {
+    const chave = card && TERMINACAO[card.id];
+    if (!chave || !FLEXAO_DE_CASO[card.id] || ativoDaTerminacao(chave, estados) !== card.id) return card;
+    const outros = (MEMBROS[chave] || []).filter(id => {
+      if (id === card.id || RARA[id] || !CARD_DA_FLEXAO[id]) return false;
+      const e = estados && estados[id];
+      if (e && e.vistas && !adormecido(id, estados)) return false;
+      const lema = CARD_DA_FLEXAO[id].lema;
+      return !!(estados && estados[lema] && estados[lema].vistas) || arquivado(lema, arquivados) || transparenteTotal(lema);
+    });
+    const todos = [card.id].concat(outros);
+    return CARD_DA_FLEXAO[todos[((est && est.vistas) || 0) % todos.length]] || card;
+  }
 
   /* ── montagem da fila inicial ──
      Intercala os níveis e alterna palavra/frase, para medir logo de cara
@@ -3303,10 +3393,25 @@ window.Motor = (function () {
     LEITURA = Object.create(null);
     RESPOSTA_DA_FORMA = Object.create(null);
     LEITURAS_DO_LEMA = Object.create(null);
+    TERMINACAO = Object.create(null);
+    MEMBROS = Object.create(null);
+    RARA = Object.create(null);
+    FRASES_DA_FLEXAO = Object.create(null);
+    CARD_DA_FLEXAO = Object.create(null);
     (cards || []).forEach(c => {
       if (!c) return;
       if (c.leitura) LEITURA[c.id] = true;
       if (c.tipo === 'forma') RESPOSTA_DA_FORMA[c.id] = c.pt;
+      /* uma terminação, um card (LATIM.md §13): os grupos, a variante e as frases de cada flexão */
+      if (c.tipo === 'flexao') {
+        CARD_DA_FLEXAO[c.id] = c;
+        if (c.rara) RARA[c.id] = c.lema;
+        else if (c.terminacao) {
+          TERMINACAO[c.id] = c.terminacao;
+          (MEMBROS[c.terminacao] || (MEMBROS[c.terminacao] = [])).push(c.id);
+        }
+      }
+      if (c.tipo === 'frase') requeridas(c).forEach(r => (FRASES_DA_FLEXAO[r] || (FRASES_DA_FLEXAO[r] = [])).push(c.id));
       if (c.tipo === 'flexao' && c.familia === 'caso') FLEXAO_DE_CASO[c.id] = true;
       else if (c.tipo === 'flexao') {
         const lista = LEITURAS_DO_LEMA[c.lema] || (LEITURAS_DO_LEMA[c.lema] = new Set());
@@ -4159,7 +4264,8 @@ window.Motor = (function () {
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
     ehForma, ehContraste, ehConceito, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
-    SORTEIO_DA_FORMA, ACERTOS_QUE_SOLTAM,
+    ACERTOS_QUE_SOLTAM,
+    DIA_DAS_TERMINACOES, ativoDaTerminacao, flexaoPuxada, adormecido, quemConta, exemploDaTerminacao,
     erroDeGenero, formasAceitas, LIMITES, cortar,
     linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
     indiceEspanhol, leituraEspanhola, erroDeFlexao,
