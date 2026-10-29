@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso en-es, leva 94b268a2, 2554 cards.
+-- Catálogo do curso en-es, leva d25af906, 2554 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('en-es', '94b268a2', '2554 cards')
+values ('en-es', 'd25af906', '2554 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -2297,7 +2297,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-p1340', 'palavra', 'C2', array['substantivo', 'cultura']::text[], null, '2af5a298', array['el candelero', 'el cáliz', 'el incensario', 'el relicario', 'la campana']::text[]),
   ('en-es', 'en-p1341', 'palavra', 'C2', array['verbo', 'cotidiano']::text[], null, 'cf003429', array['chasquear', 'crujir', 'tintinear', 'tronar', 'zumbar']::text[]),
   ('en-es', 'en-p1342', 'palavra', 'C2', array['adjetivo', 'casa']::text[], null, '92ea53c4', array['afelpado', 'agrietado', 'encerado', 'polvoriento', 'resbaladizo']::text[]),
-  ('en-es', 'en-p1343', 'palavra', 'C2', array['substantivo', 'social']::text[], null, 'e11e1687', array['el afortunado', 'el desdichado', 'el pillo', 'el sabelotodo', 'el valentón']::text[]),
+  ('en-es', 'en-p1343', 'palavra', 'C2', array['substantivo', 'social']::text[], null, '58027561', array['el afortunado', 'el desgraciado', 'el pillo', 'el sabelotodo', 'el valentón']::text[]),
   ('en-es', 'en-p1344', 'palavra', 'C2', array['substantivo', 'cotidiano']::text[], null, '5cece95d', array['el castigo', 'el cobro', 'el respiro', 'la amenaza', 'la sentencia']::text[]),
   ('en-es', 'en-p1345', 'palavra', 'C2', array['substantivo', 'cultura']::text[], null, '6317447d', array['el nepente', 'el néctar', 'el veneno', 'el vino', 'la absenta']::text[]),
   ('en-es', 'en-p1346', 'palavra', 'C2', array['verbo', 'comida']::text[], null, '496e9769', array['beber a grandes tragos', 'escupir en el suelo', 'probar con cuidado', 'rechazar con asco', 'sorber poco a poco']::text[]),

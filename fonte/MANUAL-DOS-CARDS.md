@@ -114,6 +114,12 @@ ela não é do card: é do motor ou da leva inteira.
   o duplo sentido («te he pisado» virou «te he pisado el pie»). Quando não há
   forma universal, o card ensina a do país com mais falantes e aceita as
   outras: «el popote» (México), com «la pajita», «el sorbete», «el pitillo».
+  **Xingamento leve não é chulo** (decisão do Gere, 29/10/2026): a palavra que
+  pode ofender mas se diz em qualquer conversa («o desgraçado», «el
+  desgraciado», «o miserável») fica, como resposta e na nota. A regra é do
+  palavrão e do duplo sentido sexual ou escatológico, não da palavra que só
+  ofende pelo uso. Palavras dele: «não é considerado um termo chulo, é
+  tranquilo usar essa palavra em uma conversa qualquer».
 - **Nada repetido.** O build barra `es` igual ao de outro card; sinônimo muito
   próximo de card existente também não vale a vaga.
 
@@ -781,6 +787,7 @@ sem ele o navegador serve o baralho velho.
 | Recusa que também vai para a nota | `f077` «de acuerdo» sozinho é «combinado»; `f046` o «lo» de «de haberlo sabido» |
 | Expressão só do país de referência sai, mesmo em jogo | 20/10/2026: 48 cards, de `f014` «el quinto pino» a `fr-u567` «prendre un pot»; alguns ids acima são desses cards e ficam só como história |
 | A gíria do país de referência fica, com as frases dela | 21/10/2026: «todas ficam», sobre as 14 gírias da Espanha e «legal» e «o cara»; voltaram 19 frases, de `u023` majo a `pt-u630` «Cara, que legal!» |
+| Xingamento leve não é chulo | `en-p1343` «the wretch»: «o desgraçado» tinha sido trocado por «o miserável»; «achei excessivo», 29/10/2026 |
 | Frase também tem `sinonimosEs`, e o `pt` aponta para a expressão do card quando o português tem uma | `f135` «Esa película es muy guay» contra «mola»; `f079` «Você pode me dar uma mão?» (antes «me ajudar»); `u461` «Quer dizer» (antes «Ou seja», que leva a «o sea») — 29/10/2026 |
 | Card que o `pt` não consegue apontar na volta sai | `f119` «Me suena a chino»: «No entiendo nada de eso» contava como erro (29/10/2026) |
 | Distrator sem duplo sentido chulo no Brasil | `p715` «gozar», trocado por «gostar» |
