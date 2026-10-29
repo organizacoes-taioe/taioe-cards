@@ -1013,7 +1013,25 @@ vivas, `python fonte/importar-texto.py <biblioteca> <pasta> --parte N --linhas A
 grava uma parte por arquivo (o *Quixote*: `cervantes/quijote-parte-1` a `-3`). **Na prosa**, cada linha
 da Biblioteca é um trecho (de vírgula a vírgula, de 5 a 15 palavras), e o app junta os trechos de um
 parágrafo. A palavra composta («della», «acordarme») que pede `defEn` nas partes fica `manual` (com
-`destino-texto.py`), senão a reimportação apaga a definição.
+`destino-texto.py`), senão a reimportação apaga a definição. As linhas de `--linhas` são as do
+`lingua_original.py palavras`, que conta o `::subtitulo` como linha 1 (a «Noche oscura» tem um). O
+`trecho` é o começo do primeiro verso, até umas seis palavras, sem repetir outro da mesma obra.
+
+**O que o importador não vê** (leva dos textos da Literatura, 29/10/2026):
+
+- **o card de leitura de outro texto**: fica fora da lista, e o importador dá a palavra por nova
+  (`dreary`, `langueur`). Procure cada palavra de leitura no baralho antes de criar o card e ligue o
+  verso ao card antigo com `destino-texto.py`;
+- **o card com outra forma de dicionário** («un rato», «to wake up», «to swell up»): o mesmo;
+- **o homógrafo da lista**: a linha de «the kind» (o tipo) não serve ao card de «kind» (gentil), nem a
+  de «la mort» ao adjetivo «mort». O card que não é a palavra da linha ganha **linha própria**, logo
+  depois da vizinha, com a classe e o nível dele (e a lista se renumera); senão o nivelamento pergunta
+  uma palavra e dá por sabida outra;
+- **a linha que já tem card de outra classe** («to light» e «the light»): o card novo («light», leve)
+  entra na mesma linha, com `homografos`.
+
+A palavra de função e o nome próprio levam a definição de cada público: `def` (do glossário da
+Biblioteca, que precisa tê-la também no nome próprio: Ronsard), `defEs`, `defEn`.
 
 ### 17.4.1 As frases de primeiros passos
 
