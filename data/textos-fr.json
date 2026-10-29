@@ -1,8 +1,5388 @@
 {
  "versao": 3,
  "idioma": "fr",
- "total": 2,
+ "total": 6,
  "textos": [
+  {
+   "id": "arthur-rimbaud/le-dormeur-du-val",
+   "idioma": "fr",
+   "tipo": "poema",
+   "titulo": "Le Dormeur du val",
+   "autor": "Arthur Rimbaud",
+   "ano": 1870,
+   "biblioteca": "/biblioteca/arthur-rimbaud/le-dormeur-du-val/",
+   "blocos": [
+    [
+     {
+      "t": "C’est un trou de verdure où chante une rivière",
+      "p": [
+       [
+        "C’",
+        "c’"
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "un",
+        "un"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "trou",
+        "trou"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "verdure",
+        "verdure"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "où",
+        "où"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "chante",
+        "chante"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "une",
+        "une"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "rivière",
+        "rivière"
+       ]
+      ],
+      "requer": [
+       "fr-p001",
+       "fr-p572",
+       "fr-p651",
+       "fr-p289",
+       "fr-p573"
+      ]
+     },
+     {
+      "t": "Accrochant follement aux herbes des haillons",
+      "p": [
+       [
+        "Accrochant",
+        "accrochant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "follement",
+        "follement"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "aux",
+        "aux"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "herbes",
+        "herbes"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "des",
+        "des"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "haillons",
+        "haillons"
+       ]
+      ],
+      "requer": [
+       "fr-p574",
+       "fr-p652",
+       "fr-p575",
+       "fr-p653"
+      ]
+     },
+     {
+      "t": "D’argent ; où le soleil, de la montagne fière,",
+      "p": [
+       [
+        "D’",
+        "d’"
+       ],
+       [
+        "argent",
+        "argent"
+       ],
+       [
+        " ; ",
+        null
+       ],
+       [
+        "où",
+        "où"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "le",
+        "le"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "soleil",
+        "soleil"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "de",
+        "de#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "montagne",
+        "montagne"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fière",
+        "fière"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p035",
+       "fr-p383",
+       "fr-p553",
+       "fr-p576"
+      ]
+     },
+     {
+      "t": "Luit : c’est un petit val qui mousse de rayons.",
+      "p": [
+       [
+        "Luit",
+        "luit"
+       ],
+       [
+        " : ",
+        null
+       ],
+       [
+        "c’",
+        "c’"
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "un",
+        "un"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "petit",
+        "petit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "val",
+        "val"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mousse",
+        "mousse"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "rayons",
+        "rayons"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p577",
+       "fr-p001",
+       "fr-p038",
+       "fr-p654",
+       "fr-p655",
+       "fr-p578"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Un soldat jeune, bouche ouverte, tête nue,",
+      "p": [
+       [
+        "Un",
+        "un"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "soldat",
+        "soldat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "jeune",
+        "jeune"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "bouche",
+        "bouche"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ouverte",
+        "ouverte"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "tête",
+        "tête"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nue",
+        "nue"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p579",
+       "fr-p295",
+       "fr-p274",
+       "fr-p580",
+       "fr-p144",
+       "fr-p581"
+      ]
+     },
+     {
+      "t": "Et la nuque baignant dans le frais cresson bleu,",
+      "p": [
+       [
+        "Et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nuque",
+        "nuque"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "baignant",
+        "baignant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dans",
+        "dans"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "le",
+        "le"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "frais",
+        "frais"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cresson",
+        "cresson"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bleu",
+        "bleu"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p582",
+       "fr-p656",
+       "fr-p303",
+       "fr-p657",
+       "fr-p346"
+      ]
+     },
+     {
+      "t": "Dort ; il est étendu dans l’herbe, sous la nue,",
+      "p": [
+       [
+        "Dort",
+        "dort"
+       ],
+       [
+        " ; ",
+        null
+       ],
+       [
+        "il",
+        "il"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "étendu",
+        "étendu"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dans",
+        "dans"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "l’",
+        "l’"
+       ],
+       [
+        "herbe",
+        "herbe"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "sous",
+        "sous"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nue",
+        "nue#2"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p109",
+       "fr-p001",
+       "fr-p583",
+       "fr-p575",
+       "fr-p658"
+      ]
+     },
+     {
+      "t": "Pâle dans son lit vert où la lumière pleut.",
+      "p": [
+       [
+        "Pâle",
+        "pâle"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dans",
+        "dans"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "son",
+        "son"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "lit",
+        "lit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vert",
+        "vert"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "où",
+        "où"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "lumière",
+        "lumière"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pleut",
+        "pleut"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p584",
+       "fr-p185",
+       "fr-p347",
+       "fr-p585",
+       "fr-p171"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Les pieds dans les glaïeuls, il dort. Souriant comme",
+      "p": [
+       [
+        "Les",
+        "les"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pieds",
+        "pieds"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dans",
+        "dans"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "les",
+        "les"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "glaïeuls",
+        "glaïeuls"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "il",
+        "il"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dort",
+        "dort"
+       ],
+       [
+        ". ",
+        null
+       ],
+       [
+        "Souriant",
+        "souriant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "comme",
+        "comme"
+       ]
+      ],
+      "requer": [
+       "fr-p158",
+       "fr-p659",
+       "fr-p109",
+       "fr-p586"
+      ]
+     },
+     {
+      "t": "Sourirait un enfant malade, il fait un somme :",
+      "p": [
+       [
+        "Sourirait",
+        "sourirait"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "un",
+        "un"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "enfant",
+        "enfant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "malade",
+        "malade"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "il",
+        "il"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fait",
+        "fait"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "un",
+        "un"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "somme",
+        "somme"
+       ],
+       [
+        " :",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p587",
+       "fr-p023",
+       "fr-p166",
+       "fr-p004",
+       "fr-p588"
+      ]
+     },
+     {
+      "t": "Nature, berce-le chaudement : il a froid.",
+      "p": [
+       [
+        "Nature",
+        "nature"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "berce",
+        "berce"
+       ],
+       [
+        "-",
+        null
+       ],
+       [
+        "le",
+        "le#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "chaudement",
+        "chaudement"
+       ],
+       [
+        " : ",
+        null
+       ],
+       [
+        "il",
+        "il"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "a",
+        "a"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "froid",
+        "froid"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p589",
+       "fr-p660",
+       "fr-p661",
+       "fr-p002",
+       "fr-p080"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Les parfums ne font pas frissonner sa narine ;",
+      "p": [
+       [
+        "Les",
+        "les"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "parfums",
+        "parfums"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ne",
+        "ne"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "font",
+        "font"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pas",
+        "pas"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "frissonner",
+        "frissonner"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sa",
+        "sa"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "narine",
+        "narine"
+       ],
+       [
+        " ;",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p590",
+       "fr-p004",
+       "fr-p662",
+       "fr-p663"
+      ]
+     },
+     {
+      "t": "Il dort dans le soleil, la main sur sa poitrine",
+      "p": [
+       [
+        "Il",
+        "il"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dort",
+        "dort"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dans",
+        "dans"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "le",
+        "le"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "soleil",
+        "soleil#2"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "main",
+        "main"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sur",
+        "sur"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sa",
+        "sa"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "poitrine",
+        "poitrine"
+       ]
+      ],
+      "requer": [
+       "fr-p109",
+       "fr-p383",
+       "fr-p191",
+       "fr-p591"
+      ]
+     },
+     {
+      "t": "Tranquille. Il a deux trous rouges au côté droit.",
+      "p": [
+       [
+        "Tranquille",
+        "tranquille"
+       ],
+       [
+        ". ",
+        null
+       ],
+       [
+        "Il",
+        "il"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "a",
+        "a"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "deux",
+        "deux"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "trous",
+        "trous"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "rouges",
+        "rouges"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "au",
+        "au"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "côté",
+        "côté"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "droit",
+        "droit"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p592",
+       "fr-p002",
+       "fr-p120",
+       "fr-p572",
+       "fr-p173",
+       "fr-p593",
+       "fr-p594"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "fr-p001",
+    "fr-p572",
+    "fr-p651",
+    "fr-p289",
+    "fr-p573",
+    "fr-p574",
+    "fr-p652",
+    "fr-p575",
+    "fr-p653",
+    "fr-p035",
+    "fr-p383",
+    "fr-p553",
+    "fr-p576",
+    "fr-p577",
+    "fr-p038",
+    "fr-p654",
+    "fr-p655",
+    "fr-p578",
+    "fr-p579",
+    "fr-p295",
+    "fr-p274",
+    "fr-p580",
+    "fr-p144",
+    "fr-p581",
+    "fr-p582",
+    "fr-p656",
+    "fr-p303",
+    "fr-p657",
+    "fr-p346",
+    "fr-p109",
+    "fr-p583",
+    "fr-p658",
+    "fr-p584",
+    "fr-p185",
+    "fr-p347",
+    "fr-p585",
+    "fr-p171",
+    "fr-p158",
+    "fr-p659",
+    "fr-p586",
+    "fr-p587",
+    "fr-p023",
+    "fr-p166",
+    "fr-p004",
+    "fr-p588",
+    "fr-p589",
+    "fr-p660",
+    "fr-p661",
+    "fr-p002",
+    "fr-p080",
+    "fr-p590",
+    "fr-p662",
+    "fr-p663",
+    "fr-p191",
+    "fr-p591",
+    "fr-p592",
+    "fr-p120",
+    "fr-p173",
+    "fr-p593",
+    "fr-p594"
+   ],
+   "destinos": {
+    "c’": {
+     "lema": "c’",
+     "classe": "pronome demonstrativo",
+     "forma": "elisão de «ce»",
+     "def": [
+      "Elisão do pronome demonstrativo «ce» diante de «en» e das formas dos verbos «être» ou «avoir» que começam por «e» ou «é»."
+     ],
+     "defEs": "Pronombre «ce» delante de vocal: esto, ello: «C’est», es.",
+     "defEn": "Pronoun «ce» before a vowel: it, this: «C’est», it is.",
+     "wiki": "https://fr.wiktionary.org/wiki/c%E2%80%99",
+     "g": "gramatical"
+    },
+    "est": {
+     "lema": "être",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Definir um estado, uma característica do sujeito."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%AAtre",
+     "card": "fr-p001"
+    },
+    "un": {
+     "lema": "un",
+     "classe": "artigo indefinido",
+     "forma": "masculino singular",
+     "def": [
+      "Determinante colocado diante de um substantivo que representa um objeto, animado ou inanimado, que não se conhece com precisão."
+     ],
+     "defEs": "Artículo indefinido: un (masculino).",
+     "defEn": "Indefinite article: a, an.",
+     "wiki": "https://fr.wiktionary.org/wiki/un",
+     "g": "gramatical"
+    },
+    "trou": {
+     "lema": "trou",
+     "classe": "substantivo masculino",
+     "def": [
+      "Abertura através de um corpo ou que nele penetra até certa profundidade."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/trou",
+     "card": "fr-p572"
+    },
+    "de": {
+     "lema": "de",
+     "classe": "preposição",
+     "def": [
+      "Indica uma associação à matéria."
+     ],
+     "defEs": "Preposición: de (materia): «un trou de verdure», un hueco de verdor.",
+     "defEn": "Preposition: of (what something is made of): «un trou de verdure», a hollow of greenery.",
+     "wiki": "https://fr.wiktionary.org/wiki/de",
+     "g": "gramatical"
+    },
+    "verdure": {
+     "lema": "verdure",
+     "classe": "substantivo feminino",
+     "def": [
+      "Conjunto das ervas, das plantas e das próprias folhas."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/verdure",
+     "card": "fr-p651"
+    },
+    "où": {
+     "lema": "où",
+     "classe": "advérbio relativo",
+     "def": [
+      "Ao qual; no qual. Usado nos complementos circunstanciais de lugar."
+     ],
+     "defEs": "Adverbio relativo: donde, en el que: «où chante une rivière», donde canta un río.",
+     "defEn": "Relative adverb: where, in which: «où chante une rivière», where a river sings.",
+     "wiki": "https://fr.wiktionary.org/wiki/o%C3%B9",
+     "g": "gramatical"
+    },
+    "chante": {
+     "lema": "chanter",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "(Literário) Murmurar harmoniosamente."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/chanter",
+     "card": "fr-p289"
+    },
+    "une": {
+     "lema": "un",
+     "classe": "artigo indefinido",
+     "forma": "feminino singular",
+     "def": [
+      "Determinante colocado diante de um substantivo que representa um objeto, animado ou inanimado, que não se conhece com precisão."
+     ],
+     "defEs": "Artículo indefinido: una (femenino).",
+     "defEn": "Indefinite article: a, an (feminine).",
+     "wiki": "https://fr.wiktionary.org/wiki/un",
+     "g": "gramatical"
+    },
+    "rivière": {
+     "lema": "rivière",
+     "classe": "substantivo feminino",
+     "def": [
+      "Curso de água natural que deságua em outro rio, num rio maior, num lago, no mar, ou se perde nas areias."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/rivi%C3%A8re",
+     "card": "fr-p573"
+    },
+    "accrochant": {
+     "lema": "accrocher",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Deter, reter por algo ganchudo ou pontiagudo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/accrocher",
+     "card": "fr-p574"
+    },
+    "follement": {
+     "lema": "follement",
+     "classe": "advérbio",
+     "def": [
+      "De maneira louca, imprudente, excessiva."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/follement",
+     "card": "fr-p652"
+    },
+    "aux": {
+     "lema": "aux",
+     "classe": "artigo definido",
+     "forma": "contraído",
+     "def": [
+      "Contração obrigatória da preposição «à» e do artigo definido «les»."
+     ],
+     "defEs": "Contracción de «à» + «les»: a los, a las: «aux herbes», a las hierbas.",
+     "defEn": "Contraction of «à» + «les»: to the, on the: «aux herbes», on the grass.",
+     "wiki": "https://fr.wiktionary.org/wiki/aux",
+     "g": "gramatical"
+    },
+    "herbes": {
+     "lema": "herbe",
+     "classe": "substantivo feminino",
+     "forma": "plural",
+     "def": [
+      "(Sentido estrito) Vegetal verde, monocotiledônea ou dicotiledônea, de caule fino e mole por não ser lenhoso, vivaz ou anual, que perde caule e folhas no inverno."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/herbe",
+     "card": "fr-p575"
+    },
+    "des": {
+     "lema": "des",
+     "classe": "artigo indefinido",
+     "forma": "plural",
+     "def": [
+      "Artigo indefinido do plural. É assim o plural de «un» ou «une»."
+     ],
+     "defEs": "Artículo indefinido plural: unos, unas (a menudo no se traduce): «des haillons», jirones.",
+     "defEn": "Plural indefinite article: some (often untranslated): «des haillons», rags.",
+     "wiki": "https://fr.wiktionary.org/wiki/des",
+     "g": "gramatical"
+    },
+    "haillons": {
+     "lema": "haillon",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Pedaço velho de pano ou de tecido, farrapo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/haillon",
+     "card": "fr-p653"
+    },
+    "d’": {
+     "lema": "d’",
+     "classe": "preposição",
+     "forma": "elisão de «de»",
+     "def": [
+      "Elisão da preposição «de» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Preposición «de» delante de vocal: de: «D’argent», de plata.",
+     "defEn": "Preposition «de» before a vowel: of: «D’argent», of silver.",
+     "wiki": "https://fr.wiktionary.org/wiki/d%E2%80%99",
+     "g": "gramatical"
+    },
+    "argent": {
+     "lema": "argent",
+     "classe": "substantivo masculino",
+     "def": [
+      "Corpo simples metálico e sólido, o elemento de número atômico 47, em condições atmosféricas. Metal branco e dúctil, conhecido desde a Antiguidade, é considerado precioso tanto por sua raridade quanto por suas qualidades físico-químicas."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/argent",
+     "card": "fr-p035"
+    },
+    "le": {
+     "lema": "le",
+     "classe": "artigo definido",
+     "forma": "masculino singular",
+     "def": [
+      "Determinante que marca um substantivo masculino singular, referindo-se a uma única entidade possível num contexto."
+     ],
+     "defEs": "Artículo definido: el (masculino): «le soleil», el sol.",
+     "defEn": "Definite article: the (masculine): «le soleil», the sun.",
+     "wiki": "https://fr.wiktionary.org/wiki/le",
+     "g": "gramatical"
+    },
+    "soleil": {
+     "lema": "soleil",
+     "classe": "substantivo masculino",
+     "def": [
+      "Estrela que dá luz e calor à Terra e aos outros planetas do sistema solar."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/soleil",
+     "card": "fr-p383"
+    },
+    "de#2": {
+     "lema": "de",
+     "classe": "preposição",
+     "def": [
+      "Indica a procedência, a origem."
+     ],
+     "defEs": "Preposición: de, desde (procedencia): «de la montagne fière», desde la montaña altiva.",
+     "defEn": "Preposition: from: «de la montagne fière», from the proud mountain.",
+     "wiki": "https://fr.wiktionary.org/wiki/de",
+     "g": "gramatical"
+    },
+    "la": {
+     "lema": "la",
+     "classe": "artigo definido",
+     "forma": "feminino singular",
+     "def": [
+      "Feminino singular de «le». Determina um grupo nominal feminino singular."
+     ],
+     "defEs": "Artículo definido: la (femenino).",
+     "defEn": "Definite article: the (feminine).",
+     "wiki": "https://fr.wiktionary.org/wiki/la",
+     "g": "gramatical"
+    },
+    "montagne": {
+     "lema": "montagne",
+     "classe": "substantivo feminino",
+     "def": [
+      "Relevo topográfico de vertentes pronunciadas (por oposição a «alto planalto», situado em altitude mas sem o caráter montanhoso)."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/montagne",
+     "card": "fr-p553"
+    },
+    "fière": {
+     "lema": "fier",
+     "classe": "adjetivo",
+     "forma": "feminino singular",
+     "def": [
+      "Que sente um impulso de amor-próprio, muitas vezes fundado."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/fier",
+     "card": "fr-p576"
+    },
+    "luit": {
+     "lema": "luire",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Emitir luz."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/luire",
+     "card": "fr-p577"
+    },
+    "petit": {
+     "lema": "petit",
+     "classe": "adjetivo",
+     "def": [
+      "De tamanho reduzido."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/petit",
+     "card": "fr-p038"
+    },
+    "val": {
+     "lema": "val",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Literário) Vale estreito, espaço de terra apertado entre duas encostas."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/val",
+     "card": "fr-p654"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome relativo",
+     "def": [
+      "O qual, a qual, os quais, as quais. Serve para designar o sujeito na oração relativa."
+     ],
+     "defEs": "Pronombre relativo (sujeto): que: «un petit val qui mousse», un pequeño valle que espumea.",
+     "defEn": "Relative pronoun (subject): which, that, who: «un petit val qui mousse», a little valley that foams.",
+     "wiki": "https://fr.wiktionary.org/wiki/qui",
+     "g": "gramatical"
+    },
+    "mousse": {
+     "lema": "mousser",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Produzir espuma."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/mousser",
+     "card": "fr-p655"
+    },
+    "rayons": {
+     "lema": "rayon",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Emanação que vem de uma fonte luminosa irradiante."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/rayon",
+     "card": "fr-p578"
+    },
+    "soldat": {
+     "lema": "soldat",
+     "classe": "substantivo masculino",
+     "def": [
+      "Aquele que serve num exército e recebe soldo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/soldat",
+     "card": "fr-p579"
+    },
+    "jeune": {
+     "lema": "jeune",
+     "classe": "adjetivo",
+     "def": [
+      "Que está numa fase de começo da vida ou do desenvolvimento; pouco avançado em idade, falando-se de humanos, animais ou vegetais."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/jeune",
+     "card": "fr-p295"
+    },
+    "bouche": {
+     "lema": "bouche",
+     "classe": "substantivo feminino",
+     "def": [
+      "Órgão do ser humano, composto de dois lábios horizontais situados na parte de baixo do rosto, que serve notadamente para ingerir comida e bebida, para falar, para beijar e para fazer expressões faciais."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/bouche",
+     "card": "fr-p274"
+    },
+    "ouverte": {
+     "lema": "ouvert",
+     "classe": "adjetivo",
+     "forma": "feminino singular",
+     "def": [
+      "Que não está fechado."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/ouvert",
+     "card": "fr-p580"
+    },
+    "tête": {
+     "lema": "tête",
+     "classe": "substantivo feminino",
+     "def": [
+      "Parte superior do corpo, que é a sede do cérebro e dos principais órgãos dos sentidos e que, no ser humano e na maioria dos vertebrados, se liga ao resto do corpo pelo pescoço."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/t%C3%AAte",
+     "card": "fr-p144"
+    },
+    "nue": {
+     "lema": "nu",
+     "classe": "adjetivo",
+     "forma": "feminino singular",
+     "def": [
+      "Sem o invólucro, a cobertura ou o ornamento habituais."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/nu",
+     "card": "fr-p581"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "def": [
+      "Liga vários conceitos numa mesma relação."
+     ],
+     "defEs": "Conjunción: y.",
+     "defEn": "Conjunction: and.",
+     "wiki": "https://fr.wiktionary.org/wiki/et",
+     "g": "gramatical"
+    },
+    "nuque": {
+     "lema": "nuque",
+     "classe": "substantivo feminino",
+     "def": [
+      "Parte dorsal do pescoço."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/nuque",
+     "card": "fr-p582"
+    },
+    "baignant": {
+     "lema": "baigner",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Estar inteiramente mergulhado e ficar de molho, por mais ou menos tempo, num líquido."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/baigner",
+     "card": "fr-p656"
+    },
+    "dans": {
+     "lema": "dans",
+     "classe": "preposição",
+     "def": [
+      "Preposição de lugar que marca a relação de uma pessoa ou coisa com aquilo que a contém. Introduz um complemento circunstancial de lugar."
+     ],
+     "defEs": "Preposición: en, dentro de: «dans le frais cresson», en el fresco berro.",
+     "defEn": "Preposition: in, inside: «dans le frais cresson», in the cool cress.",
+     "wiki": "https://fr.wiktionary.org/wiki/dans",
+     "g": "gramatical"
+    },
+    "frais": {
+     "lema": "frais",
+     "classe": "adjetivo",
+     "def": [
+      "De temperatura bastante baixa."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/frais",
+     "card": "fr-p303"
+    },
+    "cresson": {
+     "lema": "cresson",
+     "classe": "substantivo masculino",
+     "def": [
+      "Planta da família das Brassicáceas, cuja espécie mais conhecida cresce em águas vivas e se come comumente em salada ou com assado."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/cresson",
+     "card": "fr-p657"
+    },
+    "bleu": {
+     "lema": "bleu",
+     "classe": "adjetivo",
+     "def": [
+      "Da cor do céu em pleno dia, quando está limpo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/bleu",
+     "card": "fr-p346"
+    },
+    "dort": {
+     "lema": "dormir",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Repousar num estado inconsciente, de sono.",
+      "(Figurado, por eufemismo) Jazer na morte."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/dormir",
+     "card": "fr-p109"
+    },
+    "il": {
+     "lema": "il",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome da terceira pessoa do singular masculino (usado exclusivamente como sujeito). Designa uma pessoa, um animal ou uma coisa cujo gênero é masculino."
+     ],
+     "defEs": "Pronombre personal sujeto: él.",
+     "defEn": "Personal pronoun (subject): he, it.",
+     "wiki": "https://fr.wiktionary.org/wiki/il",
+     "g": "gramatical"
+    },
+    "étendu": {
+     "lema": "étendre",
+     "classe": "verbo",
+     "forma": "particípio passado, masculino singular",
+     "def": [
+      "(Figurado) Derrubar de modo a deitar, falando-se de uma pessoa.",
+      "(Figurado) Matar, geralmente a tiro."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A9tendre",
+     "card": "fr-p583"
+    },
+    "l’": {
+     "lema": "l’",
+     "classe": "artigo definido",
+     "forma": "elisão de «le» e «la»",
+     "def": [
+      "Elisão dos artigos definidos «le» e «la» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Artículo «le» o «la» delante de vocal: el, la: «l’herbe», la hierba.",
+     "defEn": "Article «le» or «la» before a vowel: the: «l’herbe», the grass.",
+     "wiki": "https://fr.wiktionary.org/wiki/l%E2%80%99",
+     "g": "gramatical"
+    },
+    "herbe": {
+     "lema": "herbe",
+     "classe": "substantivo feminino",
+     "def": [
+      "(No singular, coletivamente) Conjunto das plantas que cobrem pastagens, prados, lugares pouco frequentados etc., e que se costuma cortar para alimento de cavalos e gado."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/herbe",
+     "card": "fr-p575"
+    },
+    "sous": {
+     "lema": "sous",
+     "classe": "preposição",
+     "def": [
+      "Serve para marcar a situação de uma coisa em relação a outra que está acima, por cima, que a cobre total ou parcialmente."
+     ],
+     "defEs": "Preposición: bajo, debajo de: «sous la nue», bajo las nubes.",
+     "defEn": "Preposition: under, beneath: «sous la nue», under the clouds.",
+     "wiki": "https://fr.wiktionary.org/wiki/sous",
+     "g": "gramatical"
+    },
+    "nue#2": {
+     "lema": "nue",
+     "classe": "substantivo feminino",
+     "def": [
+      "(Antiquado, arcaico, poético) Sinônimo de «nuage» (nuvem)."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/nue",
+     "card": "fr-p658"
+    },
+    "pâle": {
+     "lema": "pâle",
+     "classe": "adjetivo",
+     "def": [
+      "De um branco sem brilho, descorado, falando-se do rosto."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/p%C3%A2le",
+     "card": "fr-p584"
+    },
+    "son": {
+     "lema": "son",
+     "classe": "determinante possessivo",
+     "forma": "masculino singular",
+     "def": [
+      "Determinante possessivo de 3ª pessoa: o que pertence ao sujeito de quem se fala, com o possuído no masculino singular."
+     ],
+     "defEs": "Determinante posesivo: su (masculino): «son lit vert», su lecho verde.",
+     "defEn": "Possessive determiner: his, her, its: «son lit vert», his green bed.",
+     "wiki": "https://fr.wiktionary.org/wiki/son",
+     "g": "gramatical"
+    },
+    "lit": {
+     "lema": "lit",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Por analogia) Qualquer lugar onde se pode deitar."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/lit",
+     "card": "fr-p185"
+    },
+    "vert": {
+     "lema": "vert",
+     "classe": "adjetivo",
+     "def": [
+      "De cor semelhante à das folhas ou das ervas, cujo comprimento de onda dominante fica entre cerca de 490 e 570 nm."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/vert",
+     "card": "fr-p347"
+    },
+    "lumière": {
+     "lema": "lumière",
+     "classe": "substantivo feminino",
+     "def": [
+      "O que ilumina e torna visíveis os objetos."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/lumi%C3%A8re",
+     "card": "fr-p585"
+    },
+    "pleut": {
+     "lema": "pleuvoir",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "(Transitivo, por analogia) Cair, ou parecer cair, do céu como a chuva, falando-se de outras coisas que não a chuva."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/pleuvoir",
+     "card": "fr-p171"
+    },
+    "les": {
+     "lema": "les",
+     "classe": "artigo definido",
+     "forma": "plural",
+     "def": [
+      "Plural de «le» ou «la»."
+     ],
+     "defEs": "Artículo definido plural: los, las.",
+     "defEn": "Plural definite article: the.",
+     "wiki": "https://fr.wiktionary.org/wiki/les",
+     "g": "gramatical"
+    },
+    "pieds": {
+     "lema": "pied",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Parte do corpo humano situada na extremidade das pernas."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/pied",
+     "card": "fr-p158"
+    },
+    "glaïeuls": {
+     "lema": "glaïeul",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Planta herbácea da família das iridáceas, de folhas longas, estreitas e pontiagudas."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/gla%C3%AFeul",
+     "card": "fr-p659"
+    },
+    "souriant": {
+     "lema": "souriant",
+     "classe": "adjetivo",
+     "def": [
+      "Que sorri."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/souriant",
+     "card": "fr-p586"
+    },
+    "comme": {
+     "lema": "comme",
+     "classe": "advérbio",
+     "def": [
+      "Do mesmo modo que; assim como."
+     ],
+     "defEs": "Adverbio: como: «Souriant comme sourirait un enfant malade», sonriendo como sonreiría un niño enfermo.",
+     "defEn": "Adverb: as, like: «Souriant comme sourirait un enfant malade», smiling as a sick child would smile.",
+     "wiki": "https://fr.wiktionary.org/wiki/comme",
+     "g": "gramatical"
+    },
+    "sourirait": {
+     "lema": "sourire",
+     "classe": "verbo",
+     "forma": "condicional, 3ª pessoa do singular",
+     "def": [
+      "Rir sem estrondo, por um leve movimento da boca e do rosto."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/sourire",
+     "card": "fr-p587"
+    },
+    "enfant": {
+     "lema": "enfant",
+     "classe": "substantivo",
+     "def": [
+      "Pessoa que ainda não atingiu a adolescência."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/enfant",
+     "card": "fr-p023"
+    },
+    "malade": {
+     "lema": "malade",
+     "classe": "adjetivo",
+     "def": [
+      "Cuja saúde está alterada."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/malade",
+     "card": "fr-p166"
+    },
+    "fait": {
+     "lema": "faire",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Operar, efetuar, executar, realizar, seja em ordem física, seja em ordem moral."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/faire",
+     "card": "fr-p004"
+    },
+    "somme": {
+     "lema": "somme",
+     "classe": "substantivo masculino",
+     "def": [
+      "Tempo de sono."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/somme",
+     "card": "fr-p588"
+    },
+    "nature": {
+     "lema": "nature",
+     "classe": "substantivo feminino",
+     "def": [
+      "(Por personificação) Poder, força ativa e criadora."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/nature",
+     "card": "fr-p589"
+    },
+    "berce": {
+     "lema": "bercer",
+     "classe": "verbo",
+     "forma": "imperativo presente, 2ª pessoa do singular",
+     "def": [
+      "Balançar com suavidade, para acalmar ou adormecer."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/bercer",
+     "card": "fr-p660"
+    },
+    "le#2": {
+     "lema": "le",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome que representa aquele (pessoa ou objeto) de quem se fala. Usado como complemento direto."
+     ],
+     "defEs": "Pronombre personal (complemento directo): lo, le: «berce-le», mécelo.",
+     "defEn": "Personal pronoun (direct object): him, it: «berce-le», rock him.",
+     "wiki": "https://fr.wiktionary.org/wiki/le",
+     "g": "gramatical"
+    },
+    "chaudement": {
+     "lema": "chaudement",
+     "classe": "advérbio",
+     "def": [
+      "Com calor; de modo a conservar o calor."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/chaudement",
+     "card": "fr-p661"
+    },
+    "a": {
+     "lema": "avoir",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Estar numa relação de posse, concreta ou abstrata, permanente ou ocasional, em que o possuidor é o sujeito e o possuído é o complemento direto."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/avoir",
+     "card": "fr-p002"
+    },
+    "froid": {
+     "lema": "froid",
+     "classe": "substantivo masculino",
+     "def": [
+      "Estado do que é frio."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/froid",
+     "card": "fr-p080"
+    },
+    "parfums": {
+     "lema": "parfum",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Odor aromático, agradável, mais ou menos forte, mais ou menos sutil e suave, que se exala de uma substância qualquer e particularmente das flores."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/parfum",
+     "card": "fr-p590"
+    },
+    "ne": {
+     "lema": "ne",
+     "classe": "partícula",
+     "def": [
+      "Negação. Primeira parte de uma marca em geral dupla que enquadra o verbo e certos pronomes, completada por um forclusivo: «pas», «plus», «jamais», «point», «personne», «rien», «aucun», «nul» etc."
+     ],
+     "defEs": "Partícula negativa, casi siempre con «pas»: no: «ne font pas», no hacen.",
+     "defEn": "Negative particle, usually paired with «pas»: not: «ne font pas», do not make.",
+     "wiki": "https://fr.wiktionary.org/wiki/ne",
+     "g": "gramatical"
+    },
+    "font": {
+     "lema": "faire",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "def": [
+      "Ser a causa de determinado resultado ou ser a ocasião dele."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/faire",
+     "card": "fr-p004"
+    },
+    "pas": {
+     "lema": "pas",
+     "classe": "advérbio",
+     "def": [
+      "Negação de um verbo. Usada com a partícula «ne» na língua literária, mas muitas vezes sem ela na língua corrente."
+     ],
+     "defEs": "Adverbio de negación, con «ne»: no: «ne font pas frissonner», no hacen estremecer.",
+     "defEn": "Negative adverb, with «ne»: not: «ne font pas frissonner», do not make quiver.",
+     "wiki": "https://fr.wiktionary.org/wiki/pas",
+     "g": "gramatical"
+    },
+    "frissonner": {
+     "lema": "frissonner",
+     "classe": "verbo",
+     "def": [
+      "Ter calafrio, um tremor causado pelo frio ou pela febre."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/frissonner",
+     "card": "fr-p662"
+    },
+    "sa": {
+     "lema": "sa",
+     "classe": "determinante possessivo",
+     "forma": "feminino singular",
+     "def": [
+      "Determinante usado para exprimir a ideia de posse de um objeto que tem relação com a pessoa de quem se fala."
+     ],
+     "defEs": "Determinante posesivo: su (femenino): «sa narine», su nariz.",
+     "defEn": "Possessive determiner: his, her, its (feminine): «sa narine», his nostril.",
+     "wiki": "https://fr.wiktionary.org/wiki/sa",
+     "g": "gramatical"
+    },
+    "narine": {
+     "lema": "narine",
+     "classe": "substantivo feminino",
+     "def": [
+      "Cada uma das duas aberturas do nariz pelas quais o ser humano respira e percebe os odores."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/narine",
+     "card": "fr-p663"
+    },
+    "soleil#2": {
+     "lema": "soleil",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Por metonímia) Zona iluminada ou aquecida pelo sol."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/soleil",
+     "card": "fr-p383"
+    },
+    "main": {
+     "lema": "main",
+     "classe": "substantivo feminino",
+     "def": [
+      "Parte do corpo humano situada na ponta do braço, que vai do pulso até a ponta dos dedos e serve para a preensão e o tato."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/main",
+     "card": "fr-p191"
+    },
+    "sur": {
+     "lema": "sur",
+     "classe": "preposição",
+     "def": [
+      "Indica uma posição mais elevada."
+     ],
+     "defEs": "Preposición: sobre, encima de: «la main sur sa poitrine», la mano sobre el pecho.",
+     "defEn": "Preposition: on, upon: «la main sur sa poitrine», his hand on his chest.",
+     "wiki": "https://fr.wiktionary.org/wiki/sur",
+     "g": "gramatical"
+    },
+    "poitrine": {
+     "lema": "poitrine",
+     "classe": "substantivo feminino",
+     "def": [
+      "Parte do corpo desde a base do pescoço até o diafragma, que contém os pulmões e o coração."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/poitrine",
+     "card": "fr-p591"
+    },
+    "tranquille": {
+     "lema": "tranquille",
+     "classe": "adjetivo",
+     "def": [
+      "Que é pacífico, calmo, sem agitação."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/tranquille",
+     "card": "fr-p592"
+    },
+    "deux": {
+     "lema": "deux",
+     "classe": "adjetivo numeral",
+     "def": [
+      "Um mais um."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/deux",
+     "card": "fr-p120"
+    },
+    "trous": {
+     "lema": "trou",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Abertura através de um corpo ou que nele penetra até certa profundidade."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/trou",
+     "card": "fr-p572"
+    },
+    "rouges": {
+     "lema": "rouge",
+     "classe": "adjetivo",
+     "forma": "plural",
+     "def": [
+      "De cor semelhante à do sangue, da papoula, do morango etc., cujo comprimento de onda dominante fica entre cerca de 625 e 740 nm."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/rouge",
+     "card": "fr-p173"
+    },
+    "au": {
+     "lema": "au",
+     "classe": "artigo definido",
+     "forma": "contraído",
+     "def": [
+      "Contração da preposição «à» e do artigo definido «le»."
+     ],
+     "defEs": "Contracción de «à» + «le»: al, en el: «au côté droit», en el costado derecho.",
+     "defEn": "Contraction of «à» + «le»: at the, in the: «au côté droit», in his right side.",
+     "wiki": "https://fr.wiktionary.org/wiki/au",
+     "g": "gramatical"
+    },
+    "côté": {
+     "lema": "côté",
+     "classe": "substantivo masculino",
+     "def": [
+      "Região das costelas, da axila até o quadril."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/c%C3%B4t%C3%A9",
+     "card": "fr-p593"
+    },
+    "droit": {
+     "lema": "droit",
+     "classe": "adjetivo",
+     "def": [
+      "Que fica do lado oposto ao do coração para a maioria dos seres humanos, ou ainda do lado da mão que escreve para a maioria."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/droit",
+     "card": "fr-p594"
+    }
+   },
+   "fila": 5
+  },
+  {
+   "id": "charles-baudelaire/l-albatros",
+   "idioma": "fr",
+   "tipo": "poema",
+   "titulo": "L’Albatros",
+   "autor": "Charles Baudelaire",
+   "ano": 1861,
+   "biblioteca": "/biblioteca/charles-baudelaire/l-albatros/",
+   "blocos": [
+    [
+     {
+      "t": "Souvent, pour s’amuser, les hommes d’équipage",
+      "p": [
+       [
+        "Souvent",
+        "souvent"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "pour",
+        "pour"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "s’",
+        "s’"
+       ],
+       [
+        "amuser",
+        "amuser"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "les",
+        "les"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "hommes",
+        "hommes"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "d’",
+        "d’"
+       ],
+       [
+        "équipage",
+        "équipage"
+       ]
+      ],
+      "requer": [
+       "fr-p114",
+       "fr-p664",
+       "fr-p021",
+       "fr-p595"
+      ]
+     },
+     {
+      "t": "Prennent des albatros, vastes oiseaux des mers,",
+      "p": [
+       [
+        "Prennent",
+        "prennent"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "des",
+        "des"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "albatros",
+        "albatros"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "vastes",
+        "vastes"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "oiseaux",
+        "oiseaux"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "des",
+        "des#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mers",
+        "mers"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p011",
+       "fr-p665",
+       "fr-p596",
+       "fr-p597",
+       "fr-p092"
+      ]
+     },
+     {
+      "t": "Qui suivent, indolents compagnons de voyage,",
+      "p": [
+       [
+        "Qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "suivent",
+        "suivent"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "indolents",
+        "indolents"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "compagnons",
+        "compagnons"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "voyage",
+        "voyage"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p598",
+       "fr-p666",
+       "fr-p599",
+       "fr-p600"
+      ]
+     },
+     {
+      "t": "Le navire glissant sur les gouffres amers.",
+      "p": [
+       [
+        "Le",
+        "le"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "navire",
+        "navire"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "glissant",
+        "glissant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sur",
+        "sur"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "les",
+        "les"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "gouffres",
+        "gouffres"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amers",
+        "amers"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p601",
+       "fr-p602",
+       "fr-p667",
+       "fr-p668"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "À peine les ont-ils déposés sur les planches,",
+      "p": [
+       [
+        "À",
+        "à#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "peine",
+        "peine"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "les",
+        "les#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ont",
+        "ont"
+       ],
+       [
+        "-",
+        null
+       ],
+       [
+        "ils",
+        "ils"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "déposés",
+        "déposés"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sur",
+        "sur"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "les",
+        "les"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "planches",
+        "planches"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p669",
+       "fr-p002",
+       "fr-p603",
+       "fr-p604"
+      ]
+     },
+     {
+      "t": "Que ces rois de l’azur, maladroits et honteux,",
+      "p": [
+       [
+        "Que",
+        "que"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ces",
+        "ces"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "rois",
+        "rois"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "l’",
+        "l’"
+       ],
+       [
+        "azur",
+        "azur"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "maladroits",
+        "maladroits"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "honteux",
+        "honteux"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p514",
+       "fr-p670",
+       "fr-p605",
+       "fr-p606"
+      ]
+     },
+     {
+      "t": "Laissent piteusement leurs grandes ailes blanches",
+      "p": [
+       [
+        "Laissent",
+        "laissent"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "piteusement",
+        "piteusement"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "leurs",
+        "leurs"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "grandes",
+        "grandes"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ailes",
+        "ailes"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "blanches",
+        "blanches"
+       ]
+      ],
+      "requer": [
+       "fr-p607",
+       "fr-p671",
+       "fr-p037",
+       "fr-p608",
+       "fr-p344"
+      ]
+     },
+     {
+      "t": "Comme des avirons traîner à côté d’eux.",
+      "p": [
+       [
+        "Comme",
+        "comme"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "des",
+        "des"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "avirons",
+        "avirons"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "traîner",
+        "traîner"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "à",
+        "à"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "côté",
+        "côté"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "d’",
+        "d’"
+       ],
+       [
+        "eux",
+        "eux"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p672",
+       "fr-p609"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Ce voyageur ailé, comme il est gauche et veule !",
+      "p": [
+       [
+        "Ce",
+        "ce"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "voyageur",
+        "voyageur"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ailé",
+        "ailé"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "comme",
+        "comme#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "il",
+        "il"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "gauche",
+        "gauche"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "veule",
+        "veule"
+       ],
+       [
+        " !",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p610",
+       "fr-p673",
+       "fr-p001",
+       "fr-p241",
+       "fr-p674"
+      ]
+     },
+     {
+      "t": "Lui, naguère si beau, qu’il est comique et laid !",
+      "p": [
+       [
+        "Lui",
+        "lui"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "naguère",
+        "naguère"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "si",
+        "si"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "beau",
+        "beau"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "qu’",
+        "qu’"
+       ],
+       [
+        "il",
+        "il"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "comique",
+        "comique"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "laid",
+        "laid"
+       ],
+       [
+        " !",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p675",
+       "fr-p040",
+       "fr-p001",
+       "fr-p611",
+       "fr-p612"
+      ]
+     },
+     {
+      "t": "L’un agace son bec avec un brûle-gueule,",
+      "p": [
+       [
+        "L’",
+        "l’"
+       ],
+       [
+        "un",
+        "un#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "agace",
+        "agace"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "son",
+        "son"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bec",
+        "bec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "avec",
+        "avec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "un",
+        "un"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "brûle-gueule",
+        "brûle-gueule"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p613",
+       "fr-p676",
+       "fr-p677"
+      ]
+     },
+     {
+      "t": "L’autre mime, en boitant, l’infirme qui volait !",
+      "p": [
+       [
+        "L’",
+        "l’"
+       ],
+       [
+        "autre",
+        "autre"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mime",
+        "mime"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "en",
+        "en"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "boitant",
+        "boitant"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "l’",
+        "l’"
+       ],
+       [
+        "infirme",
+        "infirme"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "volait",
+        "volait"
+       ],
+       [
+        " !",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p614",
+       "fr-p678",
+       "fr-p679",
+       "fr-p680",
+       "fr-p615"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Le Poète est semblable au prince des nuées",
+      "p": [
+       [
+        "Le",
+        "le"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Poète",
+        "poète"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "semblable",
+        "semblable"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "au",
+        "au"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "prince",
+        "prince"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "des",
+        "des#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nuées",
+        "nuées"
+       ]
+      ],
+      "requer": [
+       "fr-p616",
+       "fr-p001",
+       "fr-p617",
+       "fr-p618",
+       "fr-p681"
+      ]
+     },
+     {
+      "t": "Qui hante la tempête et se rit de l’archer ;",
+      "p": [
+       [
+        "Qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "hante",
+        "hante"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tempête",
+        "tempête"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "se",
+        "se"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "rit",
+        "rit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "l’",
+        "l’"
+       ],
+       [
+        "archer",
+        "archer"
+       ],
+       [
+        " ;",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p619",
+       "fr-p620",
+       "fr-p621",
+       "fr-p622"
+      ]
+     },
+     {
+      "t": "Exilé sur le sol au milieu des huées,",
+      "p": [
+       [
+        "Exilé",
+        "exilé"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sur",
+        "sur"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "le",
+        "le"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sol",
+        "sol"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "au",
+        "au"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "milieu",
+        "milieu"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "des",
+        "des#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "huées",
+        "huées"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p682",
+       "fr-p623",
+       "fr-p683"
+      ]
+     },
+     {
+      "t": "Ses ailes de géant l’empêchent de marcher.",
+      "p": [
+       [
+        "Ses",
+        "ses"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ailes",
+        "ailes"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "géant",
+        "géant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "l’",
+        "l’#2"
+       ],
+       [
+        "empêchent",
+        "empêchent"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "marcher",
+        "marcher"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p608",
+       "fr-p624",
+       "fr-p625",
+       "fr-p270"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "fr-p114",
+    "fr-p664",
+    "fr-p021",
+    "fr-p595",
+    "fr-p011",
+    "fr-p665",
+    "fr-p596",
+    "fr-p597",
+    "fr-p092",
+    "fr-p598",
+    "fr-p666",
+    "fr-p599",
+    "fr-p600",
+    "fr-p601",
+    "fr-p602",
+    "fr-p667",
+    "fr-p668",
+    "fr-p669",
+    "fr-p002",
+    "fr-p603",
+    "fr-p604",
+    "fr-p514",
+    "fr-p670",
+    "fr-p605",
+    "fr-p606",
+    "fr-p607",
+    "fr-p671",
+    "fr-p037",
+    "fr-p608",
+    "fr-p344",
+    "fr-p672",
+    "fr-p609",
+    "fr-p610",
+    "fr-p673",
+    "fr-p001",
+    "fr-p241",
+    "fr-p674",
+    "fr-p675",
+    "fr-p040",
+    "fr-p611",
+    "fr-p612",
+    "fr-p613",
+    "fr-p676",
+    "fr-p677",
+    "fr-p614",
+    "fr-p678",
+    "fr-p679",
+    "fr-p680",
+    "fr-p615",
+    "fr-p616",
+    "fr-p617",
+    "fr-p618",
+    "fr-p681",
+    "fr-p619",
+    "fr-p620",
+    "fr-p621",
+    "fr-p622",
+    "fr-p682",
+    "fr-p623",
+    "fr-p683",
+    "fr-p624",
+    "fr-p625",
+    "fr-p270"
+   ],
+   "destinos": {
+    "souvent": {
+     "lema": "souvent",
+     "classe": "advérbio",
+     "def": [
+      "Um grande número de vezes; com frequência."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/souvent",
+     "card": "fr-p114"
+    },
+    "pour": {
+     "lema": "pour",
+     "classe": "preposição",
+     "def": [
+      "Com o objetivo de; a fim de."
+     ],
+     "defEs": "Preposición: para: «pour s’amuser», para divertirse.",
+     "defEn": "Preposition: for, in order to: «pour s’amuser», to amuse themselves.",
+     "wiki": "https://fr.wiktionary.org/wiki/pour",
+     "g": "gramatical"
+    },
+    "s’": {
+     "lema": "s’",
+     "classe": "pronome pessoal",
+     "forma": "elisão de «se»",
+     "def": [
+      "Elisão do pronome pessoal «se» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Pronombre «se» delante de vocal: se: «s’amuser», divertirse.",
+     "defEn": "Pronoun «se» before a vowel: oneself, themselves: «s’amuser», to amuse themselves.",
+     "wiki": "https://fr.wiktionary.org/wiki/s%E2%80%99",
+     "g": "gramatical"
+    },
+    "amuser": {
+     "lema": "amuser",
+     "classe": "verbo",
+     "forma": "infinitivo, com «se»",
+     "def": [
+      "(Pronominal) Ocupar-se por simples divertimento."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/amuser",
+     "card": "fr-p664"
+    },
+    "les": {
+     "lema": "les",
+     "classe": "artigo definido",
+     "forma": "plural",
+     "def": [
+      "Plural de «le» ou «la»."
+     ],
+     "defEs": "Artículo definido plural: los, las: «les hommes», los hombres.",
+     "defEn": "Plural definite article: the: «les hommes», the men.",
+     "wiki": "https://fr.wiktionary.org/wiki/les",
+     "g": "gramatical"
+    },
+    "hommes": {
+     "lema": "homme",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "(Antropologia) Ser humano adulto de gênero ou sexo masculino, em oposição à mulher e à criança."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/homme",
+     "card": "fr-p021"
+    },
+    "d’": {
+     "lema": "d’",
+     "classe": "preposição",
+     "forma": "elisão de «de»",
+     "def": [
+      "Elisão da preposição «de» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Preposición «de» delante de vocal: de: «les hommes d’équipage», los hombres de la tripulación.",
+     "defEn": "Preposition «de» before a vowel: of: «les hommes d’équipage», the men of the crew.",
+     "wiki": "https://fr.wiktionary.org/wiki/d%E2%80%99",
+     "g": "gramatical"
+    },
+    "équipage": {
+     "lema": "équipage",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Marinha) Conjunto daqueles que tripulam um navio para fazer o serviço e a manobra."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A9quipage",
+     "card": "fr-p595"
+    },
+    "prennent": {
+     "lema": "prendre",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "def": [
+      "Apoderar-se, apanhar à força uma coisa ou uma pessoa."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/prendre",
+     "card": "fr-p011"
+    },
+    "des": {
+     "lema": "des",
+     "classe": "artigo indefinido",
+     "forma": "plural",
+     "def": [
+      "Artigo indefinido do plural. É, assim, o plural de «un» ou «une»."
+     ],
+     "defEs": "Artículo indefinido plural: unos, unas (a menudo no se traduce): «des albatros», albatros.",
+     "defEn": "Plural indefinite article: some (often untranslated): «des albatros», albatrosses.",
+     "wiki": "https://fr.wiktionary.org/wiki/des",
+     "g": "gramatical"
+    },
+    "albatros": {
+     "lema": "albatros",
+     "classe": "substantivo masculino",
+     "def": [
+      "Ave palmípede dos mares austrais, com cerca de vinte espécies; a grande envergadura de suas asas faz delas veleiros excepcionais."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/albatros",
+     "card": "fr-p665"
+    },
+    "vastes": {
+     "lema": "vaste",
+     "classe": "adjetivo",
+     "forma": "plural",
+     "def": [
+      "Que é de grande extensão."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/vaste",
+     "card": "fr-p596"
+    },
+    "oiseaux": {
+     "lema": "oiseau",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Animal vertebrado terópode, de duas patas e duas asas, ovíparo, homeotérmico, de corpo coberto de penas e com um bico córneo desprovido de dentes."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/oiseau",
+     "card": "fr-p597"
+    },
+    "des#2": {
+     "lema": "des",
+     "classe": "artigo definido",
+     "forma": "contraído",
+     "def": [
+      "Contração do artigo definido do plural «les» com a preposição «de»."
+     ],
+     "defEs": "Contracción de «de» + «les»: de los, de las: «oiseaux des mers», aves de los mares.",
+     "defEn": "Contraction of «de» + «les»: of the: «oiseaux des mers», birds of the seas.",
+     "wiki": "https://fr.wiktionary.org/wiki/des",
+     "g": "gramatical"
+    },
+    "mers": {
+     "lema": "mer",
+     "classe": "substantivo feminino",
+     "forma": "plural",
+     "def": [
+      "Vasta extensão de água salgada que banha as diversas partes da Terra."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/mer",
+     "card": "fr-p092"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome relativo",
+     "def": [
+      "O qual, a qual, os quais, as quais. Serve para designar o sujeito na oração relativa."
+     ],
+     "defEs": "Pronombre relativo (sujeto): que: «Qui suivent», que siguen.",
+     "defEn": "Relative pronoun (subject): which, who: «Qui suivent», which follow.",
+     "wiki": "https://fr.wiktionary.org/wiki/qui",
+     "g": "gramatical"
+    },
+    "suivent": {
+     "lema": "suivre",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "def": [
+      "Ir ou vir atrás."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/suivre",
+     "card": "fr-p598"
+    },
+    "indolents": {
+     "lema": "indolent",
+     "classe": "adjetivo",
+     "forma": "masculino plural",
+     "def": [
+      "Displicente, nonchalante.",
+      "Que carece de vivacidade."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/indolent",
+     "card": "fr-p666"
+    },
+    "compagnons": {
+     "lema": "compagnon",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Aquele que está habitualmente com outro ou que faz com ele a mesma coisa."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/compagnon",
+     "card": "fr-p599"
+    },
+    "de": {
+     "lema": "de",
+     "classe": "preposição",
+     "def": [
+      "Indica a posse (o genitivo)."
+     ],
+     "defEs": "Preposición: de: «compagnons de voyage», compañeros de viaje.",
+     "defEn": "Preposition: of: «compagnons de voyage», companions of the voyage.",
+     "wiki": "https://fr.wiktionary.org/wiki/de",
+     "g": "gramatical"
+    },
+    "voyage": {
+     "lema": "voyage",
+     "classe": "substantivo masculino",
+     "def": [
+      "Ação de deslocar-se por um caminho mais ou menos longo para ir de uma cidade a outra, de um país a outro, de um lugar a outro."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/voyage",
+     "card": "fr-p600"
+    },
+    "le": {
+     "lema": "le",
+     "classe": "artigo definido",
+     "forma": "masculino singular",
+     "def": [
+      "Determinante que marca um substantivo masculino singular, referindo-se a uma única entidade possível num contexto."
+     ],
+     "defEs": "Artículo definido: el (masculino): «Le navire», el navío.",
+     "defEn": "Definite article: the (masculine): «Le navire», the ship.",
+     "wiki": "https://fr.wiktionary.org/wiki/le",
+     "g": "gramatical"
+    },
+    "navire": {
+     "lema": "navire",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Navegação) Barco que serve para navegar no mar."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/navire",
+     "card": "fr-p601"
+    },
+    "glissant": {
+     "lema": "glisser",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Pôr-se em movimento como que escorrendo sobre uma superfície lisa ou ao longo de outro corpo.",
+      "(Figurado) Deslocar-se com leveza e desenvoltura."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/glisser",
+     "card": "fr-p602"
+    },
+    "sur": {
+     "lema": "sur",
+     "classe": "preposição",
+     "def": [
+      "Indica uma posição mais elevada.",
+      "Exprime a ideia de contato."
+     ],
+     "defEs": "Preposición: sobre, por encima de: «glissant sur les gouffres», deslizándose sobre los abismos.",
+     "defEn": "Preposition: on, over: «glissant sur les gouffres», gliding over the depths.",
+     "wiki": "https://fr.wiktionary.org/wiki/sur",
+     "g": "gramatical"
+    },
+    "gouffres": {
+     "lema": "gouffre",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "(Espeleologia) Cavidade subterrânea natural, larga e profunda."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/gouffre",
+     "card": "fr-p667"
+    },
+    "amers": {
+     "lema": "amer",
+     "classe": "adjetivo",
+     "forma": "masculino plural",
+     "def": [
+      "Que tem sabor áspero e em geral desagradável.",
+      "(Figurado) Que é penoso, triste, doloroso."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/amer",
+     "card": "fr-p668"
+    },
+    "à#2": {
+     "lema": "à",
+     "classe": "preposição",
+     "def": [
+      "Introduz um complemento circunstancial de maneira."
+     ],
+     "defEs": "Preposición: a; en «à peine», apenas.",
+     "defEn": "Preposition: to, at; here in «à peine», hardly, no sooner.",
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A0",
+     "g": "gramatical"
+    },
+    "peine": {
+     "lema": "à peine",
+     "classe": "locução adverbial",
+     "def": [
+      "Por uma pequena margem; apenas, somente.",
+      "Logo, com pouco tempo decorrido desde que aconteceu a coisa de que se fala."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A0_peine",
+     "card": "fr-p669"
+    },
+    "les#2": {
+     "lema": "les",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome pessoal da 3ª pessoa do plural, no acusativo."
+     ],
+     "defEs": "Pronombre personal (complemento directo): los, las: «les ont-ils déposés», los han dejado.",
+     "defEn": "Personal pronoun (direct object): them: «les ont-ils déposés», have they set them down.",
+     "wiki": "https://fr.wiktionary.org/wiki/les",
+     "g": "gramatical"
+    },
+    "ont": {
+     "lema": "avoir",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "def": [
+      "(Auxiliar) Serve para formar os tempos compostos, significando o passado, a conclusão ou a experiência."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/avoir",
+     "card": "fr-p002"
+    },
+    "ils": {
+     "lema": "ils",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome clítico da 3ª pessoa do plural, sujeito, quando se fala de um grupo de homens ou de coisas gramaticalmente masculinas."
+     ],
+     "defEs": "Pronombre personal sujeto: ellos.",
+     "defEn": "Personal pronoun (subject): they.",
+     "wiki": "https://fr.wiktionary.org/wiki/ils",
+     "g": "gramatical"
+    },
+    "déposés": {
+     "lema": "déposer",
+     "classe": "verbo",
+     "forma": "particípio passado, masculino plural",
+     "def": [
+      "Tirar uma coisa que se carregava e pô-la no chão."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/d%C3%A9poser",
+     "card": "fr-p603"
+    },
+    "planches": {
+     "lema": "planche",
+     "classe": "substantivo feminino",
+     "forma": "plural",
+     "def": [
+      "Tábua, peça de madeira serrada, de pouca espessura."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/planche",
+     "card": "fr-p604"
+    },
+    "que": {
+     "lema": "que",
+     "classe": "conjunção",
+     "def": [
+      "Complementador que introduz uma oração subordinada completiva."
+     ],
+     "defEs": "Conjunción: que; tras «à peine», cuando: «À peine les ont-ils déposés… que ces rois», apenas los han dejado… cuando estos reyes.",
+     "defEn": "Conjunction: that; after «à peine», than, when: «À peine les ont-ils déposés… que ces rois», no sooner have they set them down than these kings.",
+     "wiki": "https://fr.wiktionary.org/wiki/que",
+     "g": "gramatical"
+    },
+    "ces": {
+     "lema": "ce",
+     "classe": "determinante demonstrativo",
+     "forma": "plural",
+     "def": [
+      "Plural de «ce» e «cette»."
+     ],
+     "defEs": "Determinante demostrativo plural: estos, estas: «ces rois», estos reyes.",
+     "defEn": "Plural demonstrative determiner: these, those: «ces rois», these kings.",
+     "wiki": "https://fr.wiktionary.org/wiki/ce",
+     "g": "gramatical"
+    },
+    "rois": {
+     "lema": "roi",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "(Figurado) Homem que ocupa uma posição eminente num domínio, que se destaca, que supera seus iguais."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/roi",
+     "card": "fr-p514"
+    },
+    "l’": {
+     "lema": "l’",
+     "classe": "artigo definido",
+     "forma": "elisão de «le» e «la»",
+     "def": [
+      "Elisão dos artigos definidos «le» e «la» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Artículo «le» o «la» delante de vocal: el, la: «l’azur», el azul.",
+     "defEn": "Article «le» or «la» before a vowel: the: «l’azur», the azure.",
+     "wiki": "https://fr.wiktionary.org/wiki/l%E2%80%99",
+     "g": "gramatical"
+    },
+    "azur": {
+     "lema": "azur",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Literário, no singular) O próprio céu, azul e puro."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/azur",
+     "card": "fr-p670"
+    },
+    "maladroits": {
+     "lema": "maladroit",
+     "classe": "adjetivo",
+     "forma": "masculino plural",
+     "def": [
+      "Que carece de destreza."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/maladroit",
+     "card": "fr-p605"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção coordenativa",
+     "def": [
+      "Reúne vários conceitos numa mesma relação."
+     ],
+     "defEs": "Conjunción: y.",
+     "defEn": "Conjunction: and.",
+     "wiki": "https://fr.wiktionary.org/wiki/et",
+     "g": "gramatical"
+    },
+    "honteux": {
+     "lema": "honteux",
+     "classe": "adjetivo",
+     "forma": "masculino plural",
+     "def": [
+      "Que sente vergonha."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/honteux",
+     "card": "fr-p606"
+    },
+    "laissent": {
+     "lema": "laisser",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "def": [
+      "Permitir; tolerar; não impedir."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/laisser",
+     "card": "fr-p607"
+    },
+    "piteusement": {
+     "lema": "piteusement",
+     "classe": "advérbio",
+     "def": [
+      "(Desusado) De maneira a suscitar piedade."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/piteusement",
+     "card": "fr-p671"
+    },
+    "leurs": {
+     "lema": "leur",
+     "classe": "determinante possessivo",
+     "forma": "plural",
+     "def": [
+      "3ª pessoa do plural. Que são deles. Vários possuidores e vários objetos."
+     ],
+     "defEs": "Determinante posesivo plural: sus (de ellos): «leurs grandes ailes», sus grandes alas.",
+     "defEn": "Possessive determiner (plural): their: «leurs grandes ailes», their great wings.",
+     "wiki": "https://fr.wiktionary.org/wiki/leur",
+     "g": "gramatical"
+    },
+    "grandes": {
+     "lema": "grand",
+     "classe": "adjetivo",
+     "forma": "feminino plural",
+     "def": [
+      "De dimensões importantes (altura, comprimento etc.), que superam as de seus semelhantes."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/grand",
+     "card": "fr-p037"
+    },
+    "ailes": {
+     "lema": "aile",
+     "classe": "substantivo feminino",
+     "forma": "plural",
+     "def": [
+      "(Zoologia) Parte do corpo de um animal, como uma ave, um inseto ou um morcego, que lhe permite voar."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/aile",
+     "card": "fr-p608"
+    },
+    "blanches": {
+     "lema": "blanc",
+     "classe": "adjetivo",
+     "forma": "feminino plural",
+     "def": [
+      "De uma cor como a dos ossos, do giz ou da espuma, entre outros."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/blanc",
+     "card": "fr-p344"
+    },
+    "comme": {
+     "lema": "comme",
+     "classe": "advérbio",
+     "def": [
+      "Do mesmo modo que; como."
+     ],
+     "defEs": "Adverbio: como: «Comme des avirons», como remos.",
+     "defEn": "Adverb: like, as: «Comme des avirons», like oars.",
+     "wiki": "https://fr.wiktionary.org/wiki/comme",
+     "g": "gramatical"
+    },
+    "avirons": {
+     "lema": "aviron",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Remo, de que se serve para manobrar uma embarcação."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/aviron",
+     "card": "fr-p672"
+    },
+    "traîner": {
+     "lema": "traîner",
+     "classe": "verbo",
+     "forma": "infinitivo",
+     "def": [
+      "(Intransitivo) Pender até o chão."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/tra%C3%AEner",
+     "card": "fr-p609"
+    },
+    "à": {
+     "lema": "à",
+     "classe": "preposição",
+     "def": [
+      "Introduz um complemento circunstancial de lugar."
+     ],
+     "defEs": "Preposición: a; en «à côté de», al lado de.",
+     "defEn": "Preposition: to, at; here in «à côté de», beside.",
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A0",
+     "g": "gramatical"
+    },
+    "côté": {
+     "lema": "à côté de",
+     "classe": "preposição",
+     "def": [
+      "Ao lado de, junto de."
+     ],
+     "defEs": "Locución preposicional «à côté de»: al lado de, junto a: «à côté d’eux», a su lado.",
+     "defEn": "Prepositional phrase «à côté de»: beside, next to: «à côté d’eux», beside them.",
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A0_c%C3%B4t%C3%A9_de",
+     "g": "gramatical"
+    },
+    "eux": {
+     "lema": "eux",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome tônico da 3ª pessoa do plural masculino."
+     ],
+     "defEs": "Pronombre personal tónico: ellos: «à côté d’eux», junto a ellos.",
+     "defEn": "Stressed personal pronoun: them: «à côté d’eux», beside them.",
+     "wiki": "https://fr.wiktionary.org/wiki/eux",
+     "g": "gramatical"
+    },
+    "ce": {
+     "lema": "ce",
+     "classe": "determinante demonstrativo",
+     "forma": "masculino singular",
+     "def": [
+      "Determinante usado para pôr em evidência uma coisa ou uma pessoa que se tem diante de si."
+     ],
+     "defEs": "Determinante demostrativo: este, ese: «Ce voyageur ailé», este viajero alado.",
+     "defEn": "Demonstrative determiner: this, that: «Ce voyageur ailé», this winged traveler.",
+     "wiki": "https://fr.wiktionary.org/wiki/ce",
+     "g": "gramatical"
+    },
+    "voyageur": {
+     "lema": "voyageur",
+     "classe": "substantivo masculino",
+     "def": [
+      "Aquele que viaja."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/voyageur",
+     "card": "fr-p610"
+    },
+    "ailé": {
+     "lema": "ailé",
+     "classe": "adjetivo",
+     "def": [
+      "Que possui asas."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/ail%C3%A9",
+     "card": "fr-p673"
+    },
+    "comme#2": {
+     "lema": "comme",
+     "classe": "advérbio",
+     "def": [
+      "A que ponto, quanto."
+     ],
+     "defEs": "Adverbio exclamativo: qué, cuán: «comme il est gauche», qué torpe es.",
+     "defEn": "Exclamative adverb: how: «comme il est gauche», how clumsy he is.",
+     "wiki": "https://fr.wiktionary.org/wiki/comme",
+     "g": "gramatical"
+    },
+    "il": {
+     "lema": "il",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome da 3ª pessoa do singular masculino (usado exclusivamente como sujeito). Designa uma pessoa, um animal ou uma coisa cujo gênero é masculino."
+     ],
+     "defEs": "Pronombre personal sujeto: él.",
+     "defEn": "Personal pronoun (subject): he, it.",
+     "wiki": "https://fr.wiktionary.org/wiki/il",
+     "g": "gramatical"
+    },
+    "est": {
+     "lema": "être",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Definir um estado, uma característica do sujeito."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%AAtre",
+     "card": "fr-p001"
+    },
+    "gauche": {
+     "lema": "gauche",
+     "classe": "adjetivo",
+     "def": [
+      "(Figurado) Que é constrangido, sem graça.",
+      "Que é desajeitado."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/gauche",
+     "card": "fr-p241"
+    },
+    "veule": {
+     "lema": "veule",
+     "classe": "adjetivo",
+     "def": [
+      "Que carece de energia, de coragem, de ânimo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/veule",
+     "card": "fr-p674"
+    },
+    "lui": {
+     "lema": "lui",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome tônico da 3ª pessoa do singular masculino."
+     ],
+     "defEs": "Pronombre personal tónico: él: «Lui, naguère si beau», él, hace poco tan hermoso.",
+     "defEn": "Stressed personal pronoun: he, him: «Lui, naguère si beau», he, so lately beautiful.",
+     "wiki": "https://fr.wiktionary.org/wiki/lui",
+     "g": "gramatical"
+    },
+    "naguère": {
+     "lema": "naguère",
+     "classe": "advérbio",
+     "def": [
+      "(Desusado) Pouco tempo antes; antigamente."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/nagu%C3%A8re",
+     "card": "fr-p675"
+    },
+    "si": {
+     "lema": "si",
+     "classe": "advérbio",
+     "def": [
+      "Tão, a tal ponto."
+     ],
+     "defEs": "Adverbio: tan: «si beau», tan hermoso.",
+     "defEn": "Adverb: so: «si beau», so beautiful.",
+     "wiki": "https://fr.wiktionary.org/wiki/si",
+     "g": "gramatical"
+    },
+    "beau": {
+     "lema": "beau",
+     "classe": "adjetivo",
+     "def": [
+      "De aspecto agradável à vista ou ao ouvido."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/beau",
+     "card": "fr-p040"
+    },
+    "qu’": {
+     "lema": "qu’",
+     "classe": "conjunção",
+     "forma": "elisão de «que»",
+     "def": [
+      "Elisão da conjunção «que» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Conjunción «que» delante de vocal; aquí exclamativa: «qu’il est comique et laid !», ¡qué cómico y feo es!",
+     "defEn": "Conjunction «que» before a vowel; here exclamative: «qu’il est comique et laid !», how comical and ugly he is!",
+     "wiki": "https://fr.wiktionary.org/wiki/qu%E2%80%99",
+     "g": "gramatical"
+    },
+    "comique": {
+     "lema": "comique",
+     "classe": "adjetivo",
+     "def": [
+      "Que é próprio para fazer rir."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/comique",
+     "card": "fr-p611"
+    },
+    "laid": {
+     "lema": "laid",
+     "classe": "adjetivo",
+     "def": [
+      "(Pejorativo) Que tem algum defeito visível nas proporções, nas formas ou nas cores que constituem a beleza nos seres humanos e nos animais.",
+      "(Pejorativo) Que é desagradável de ver."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/laid",
+     "card": "fr-p612"
+    },
+    "un#2": {
+     "lema": "un",
+     "classe": "pronome indefinido",
+     "def": [
+      "Uma pessoa ou coisa entre várias outras."
+     ],
+     "defEs": "Pronombre indefinido: uno: «L’un», uno (de ellos).",
+     "defEn": "Indefinite pronoun: one: «L’un», one (of them).",
+     "wiki": "https://fr.wiktionary.org/wiki/un",
+     "g": "gramatical"
+    },
+    "agace": {
+     "lema": "agacer",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "(Figurado) Provocar irritação, contrariar, até causar impaciência."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/agacer",
+     "card": "fr-p613"
+    },
+    "son": {
+     "lema": "son",
+     "classe": "determinante possessivo",
+     "forma": "masculino singular",
+     "def": [
+      "Determinante possessivo da 3ª pessoa, de um só possuidor, diante de um substantivo masculino singular."
+     ],
+     "defEs": "Determinante posesivo: su (masculino): «son bec», su pico.",
+     "defEn": "Possessive determiner: his, her, its: «son bec», its beak.",
+     "wiki": "https://fr.wiktionary.org/wiki/son",
+     "g": "gramatical"
+    },
+    "bec": {
+     "lema": "bec",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Zoologia) Parte saliente, dura e córnea, formada de duas partes chamadas mandíbulas, usada pelas aves para pegar e consumir o alimento."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/bec",
+     "card": "fr-p676"
+    },
+    "avec": {
+     "lema": "avec",
+     "classe": "preposição",
+     "def": [
+      "Introduz complementos circunstanciais que indicam a maneira, o instrumento etc."
+     ],
+     "defEs": "Preposición: con: «avec un brûle-gueule», con una pipa.",
+     "defEn": "Preposition: with: «avec un brûle-gueule», with a pipe.",
+     "wiki": "https://fr.wiktionary.org/wiki/avec",
+     "g": "gramatical"
+    },
+    "un": {
+     "lema": "un",
+     "classe": "artigo indefinido",
+     "forma": "masculino singular",
+     "def": [
+      "Determinante colocado diante de um substantivo que representa um objeto, animado ou inanimado, que não se conhece com precisão."
+     ],
+     "defEs": "Artículo indefinido: un, una: «un brûle-gueule», una pipa corta.",
+     "defEn": "Indefinite article: a, an: «un brûle-gueule», a short pipe.",
+     "wiki": "https://fr.wiktionary.org/wiki/un",
+     "g": "gramatical"
+    },
+    "brûle-gueule": {
+     "lema": "brûle-gueule",
+     "classe": "substantivo masculino",
+     "def": [
+      "Cachimbo de haste muito curta."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/br%C3%BBle-gueule",
+     "card": "fr-p677"
+    },
+    "autre": {
+     "lema": "autre",
+     "classe": "substantivo",
+     "def": [
+      "Emprega-se em oposição a «un» ou «une» para distinguir dois seres ou duas coisas."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/autre",
+     "card": "fr-p614"
+    },
+    "mime": {
+     "lema": "mimer",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Imitar por meio de gestos e à maneira dos atores chamados mimos."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/mimer",
+     "card": "fr-p678"
+    },
+    "en": {
+     "lema": "en",
+     "classe": "preposição",
+     "def": [
+      "(Seguida do particípio presente) Preposição que serve para formar um gerúndio que marca o tempo, a duração."
+     ],
+     "defEs": "Preposición que, con el participio presente, forma el gerundio: «en boitant», cojeando.",
+     "defEn": "Preposition that, with the present participle, forms the gerund: «en boitant», limping.",
+     "wiki": "https://fr.wiktionary.org/wiki/en",
+     "g": "gramatical"
+    },
+    "boitant": {
+     "lema": "boiter",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Mancar, inclinar a cada passo o corpo mais para um lado que para o outro, ou alternadamente para um lado e para o outro."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/boiter",
+     "card": "fr-p679"
+    },
+    "infirme": {
+     "lema": "infirme",
+     "classe": "substantivo",
+     "def": [
+      "Pessoa afetada por uma ou mais enfermidades."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/infirme",
+     "card": "fr-p680"
+    },
+    "volait": {
+     "lema": "voler",
+     "classe": "verbo",
+     "forma": "imperfeito do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Manter-se no ar batendo as asas."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/voler",
+     "card": "fr-p615"
+    },
+    "poète": {
+     "lema": "poète",
+     "classe": "substantivo masculino",
+     "def": [
+      "Aquele que faz versos, que se dedica à poesia."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/po%C3%A8te",
+     "card": "fr-p616"
+    },
+    "semblable": {
+     "lema": "semblable",
+     "classe": "adjetivo",
+     "def": [
+      "Que é parecido, semelhante, de mesma natureza, de mesma qualidade, que tem características comuns."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/semblable",
+     "card": "fr-p617"
+    },
+    "au": {
+     "lema": "au",
+     "classe": "artigo definido",
+     "forma": "contraído",
+     "def": [
+      "Contração da preposição «à» e do artigo definido «le»."
+     ],
+     "defEs": "Contracción de «à» + «le»: al: «semblable au prince», semejante al príncipe.",
+     "defEn": "Contraction of «à» + «le»: to the: «semblable au prince», like the prince.",
+     "wiki": "https://fr.wiktionary.org/wiki/au",
+     "g": "gramatical"
+    },
+    "prince": {
+     "lema": "prince",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Formal) Aquele que é o primeiro em ordem de dignidade, de mérito, de talento."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/prince",
+     "card": "fr-p618"
+    },
+    "nuées": {
+     "lema": "nuée",
+     "classe": "substantivo feminino",
+     "forma": "plural",
+     "def": [
+      "(Antiquado) Nuvem extensa, espessa, escura. Usa-se sobretudo no plural, para designar as nuvens que se acumulam no céu antes de uma tempestade."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/nu%C3%A9e",
+     "card": "fr-p681"
+    },
+    "hante": {
+     "lema": "hanter",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Frequentar algum lugar mal-afamado ou sobre o qual se exerce má influência."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/hanter",
+     "card": "fr-p619"
+    },
+    "la": {
+     "lema": "la",
+     "classe": "artigo definido",
+     "forma": "feminino singular",
+     "def": [
+      "Feminino singular de «le». Determina um grupo nominal feminino singular."
+     ],
+     "defEs": "Artículo definido: la (femenino): «la tempête», la tempestad.",
+     "defEn": "Definite article: the (feminine): «la tempête», the storm.",
+     "wiki": "https://fr.wiktionary.org/wiki/la",
+     "g": "gramatical"
+    },
+    "tempête": {
+     "lema": "tempête",
+     "classe": "substantivo feminino",
+     "def": [
+      "Tormenta atmosférica, violenta agitação do ar, muitas vezes acompanhada de chuva, neve, granizo, relâmpagos, trovões etc."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/temp%C3%AAte",
+     "card": "fr-p620"
+    },
+    "se": {
+     "lema": "se",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome pessoal da 3ª pessoa, dos dois gêneros e dos dois números; serve de complemento de um verbo pronominal reflexivo."
+     ],
+     "defEs": "Pronombre «se» de los verbos pronominales: se: «se rit de l’archer», se ríe del arquero.",
+     "defEn": "Pronoun «se» of pronominal verbs: «se rit de l’archer», laughs at the archer.",
+     "wiki": "https://fr.wiktionary.org/wiki/se",
+     "g": "gramatical"
+    },
+    "rit": {
+     "lema": "rire",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Zombar de alguém.",
+      "Não levar em conta uma coisa, desprezá-la."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/rire",
+     "card": "fr-p621"
+    },
+    "de#2": {
+     "lema": "de",
+     "classe": "preposição",
+     "def": [
+      "Serve também para formar o complemento de grande número de adjetivos e o complemento de objeto indireto de muitos verbos."
+     ],
+     "defEs": "Preposición: de (complemento del verbo): «se rit de l’archer», se ríe del arquero.",
+     "defEn": "Preposition: of, at (complement of a verb): «se rit de l’archer», laughs at the archer.",
+     "wiki": "https://fr.wiktionary.org/wiki/de",
+     "g": "gramatical"
+    },
+    "archer": {
+     "lema": "archer",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Tiro com arco) Atirador ou atiradora com arco."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/archer",
+     "card": "fr-p622"
+    },
+    "exilé": {
+     "lema": "exilé",
+     "classe": "adjetivo",
+     "def": [
+      "Que vive no exílio, longe."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/exil%C3%A9",
+     "card": "fr-p682"
+    },
+    "sol": {
+     "lema": "sol",
+     "classe": "substantivo masculino",
+     "def": [
+      "Superfície da terra onde se está, onde se anda, sobre a qual se constrói etc."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/sol",
+     "card": "fr-p623"
+    },
+    "milieu": {
+     "lema": "au milieu de",
+     "classe": "preposição",
+     "def": [
+      "No seio de; entre; em meio a."
+     ],
+     "defEs": "Locución preposicional «au milieu de»: en medio de, entre: «au milieu des huées», entre los abucheos.",
+     "defEn": "Prepositional phrase «au milieu de»: in the midst of, amid: «au milieu des huées», amid the jeers.",
+     "wiki": "https://fr.wiktionary.org/wiki/au_milieu_de",
+     "g": "gramatical"
+    },
+    "huées": {
+     "lema": "huée",
+     "classe": "substantivo feminino",
+     "forma": "plural",
+     "def": [
+      "(Figurado, sobretudo no plural) Gritos de zombaria pelos quais uma reunião de pessoas manifesta seu descontentamento ou seu desprezo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/hu%C3%A9e",
+     "card": "fr-p683"
+    },
+    "ses": {
+     "lema": "son",
+     "classe": "determinante possessivo",
+     "forma": "plural",
+     "def": [
+      "Plural dos determinantes possessivos «son» e «sa». Que são dele ou dela. Um só possuidor e vários objetos."
+     ],
+     "defEs": "Determinante posesivo plural: sus (de uno solo): «Ses ailes», sus alas.",
+     "defEn": "Possessive determiner (plural): his, her, its: «Ses ailes», his wings.",
+     "wiki": "https://fr.wiktionary.org/wiki/son",
+     "g": "gramatical"
+    },
+    "géant": {
+     "lema": "géant",
+     "classe": "substantivo masculino",
+     "def": [
+      "Pessoa que excede muito a estatura ordinária."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/g%C3%A9ant",
+     "card": "fr-p624"
+    },
+    "l’#2": {
+     "lema": "l’",
+     "classe": "pronome pessoal",
+     "forma": "elisão de «le» e «la»",
+     "def": [
+      "Elisão dos pronomes pessoais «la» e «le» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Pronombre «le» o «la» delante de vocal: lo, le: «l’empêchent», le impiden.",
+     "defEn": "Pronoun «le» or «la» before a vowel: him, it: «l’empêchent», prevent him.",
+     "wiki": "https://fr.wiktionary.org/wiki/l%E2%80%99",
+     "g": "gramatical"
+    },
+    "empêchent": {
+     "lema": "empêcher",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "def": [
+      "Tornar impossível, irrealizável; opor-se a; fazer obstáculo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/emp%C3%AAcher",
+     "card": "fr-p625"
+    },
+    "marcher": {
+     "lema": "marcher",
+     "classe": "verbo",
+     "forma": "infinitivo",
+     "def": [
+      "(Intransitivo) Deslocar-se por um movimento alternado das pernas ou das patas, tendo sempre um apoio no chão."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/marcher",
+     "card": "fr-p270"
+    }
+   },
+   "fila": 6
+  },
+  {
+   "id": "paul-verlaine/chanson-d-automne",
+   "idioma": "fr",
+   "tipo": "poema",
+   "titulo": "Chanson d’automne",
+   "autor": "Paul Verlaine",
+   "ano": 1866,
+   "biblioteca": "/biblioteca/paul-verlaine/chanson-d-automne/",
+   "blocos": [
+    [
+     {
+      "t": "Les sanglots longs",
+      "p": [
+       [
+        "Les",
+        "les"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sanglots",
+        "sanglots"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "longs",
+        "longs"
+       ]
+      ],
+      "requer": [
+       "fr-p684",
+       "fr-p626"
+      ]
+     },
+     {
+      "t": "Des violons",
+      "p": [
+       [
+        "Des",
+        "des"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "violons",
+        "violons"
+       ]
+      ],
+      "requer": [
+       "fr-p627"
+      ]
+     },
+     {
+      "t": "De l’automne",
+      "p": [
+       [
+        "De",
+        "de"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "l’",
+        "l’"
+       ],
+       [
+        "automne",
+        "automne"
+       ]
+      ],
+      "requer": [
+       "fr-p343"
+      ]
+     },
+     {
+      "t": "Blessent mon cœur",
+      "p": [
+       [
+        "Blessent",
+        "blessent"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mon",
+        "mon"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cœur",
+        "cœur"
+       ]
+      ],
+      "requer": [
+       "fr-p628",
+       "fr-p535"
+      ]
+     },
+     {
+      "t": "D’une langueur",
+      "p": [
+       [
+        "D’",
+        "d’#2"
+       ],
+       [
+        "une",
+        "une"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "langueur",
+        "langueur"
+       ]
+      ],
+      "requer": [
+       "fr-p566"
+      ]
+     },
+     {
+      "t": "Monotone.",
+      "p": [
+       [
+        "Monotone",
+        "monotone"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p686"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Tout suffocant",
+      "p": [
+       [
+        "Tout",
+        "tout"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "suffocant",
+        "suffocant"
+       ]
+      ],
+      "requer": [
+       "fr-p070",
+       "fr-p687"
+      ]
+     },
+     {
+      "t": "Et blême, quand",
+      "p": [
+       [
+        "Et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "blême",
+        "blême"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "quand",
+        "quand"
+       ]
+      ],
+      "requer": [
+       "fr-p688"
+      ]
+     },
+     {
+      "t": "Sonne l’heure,",
+      "p": [
+       [
+        "Sonne",
+        "sonne"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "l’",
+        "l’"
+       ],
+       [
+        "heure",
+        "heure"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p523",
+       "fr-p129"
+      ]
+     },
+     {
+      "t": "Je me souviens",
+      "p": [
+       [
+        "Je",
+        "je"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "me",
+        "me"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "souviens",
+        "souviens"
+       ]
+      ],
+      "requer": [
+       "fr-p390"
+      ]
+     },
+     {
+      "t": "Des jours anciens",
+      "p": [
+       [
+        "Des",
+        "des"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "jours",
+        "jours"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "anciens",
+        "anciens"
+       ]
+      ],
+      "requer": [
+       "fr-p019",
+       "fr-p629"
+      ]
+     },
+     {
+      "t": "Et je pleure ;",
+      "p": [
+       [
+        "Et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "je",
+        "je"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pleure",
+        "pleure"
+       ],
+       [
+        " ;",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p534"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Et je m’en vais",
+      "p": [
+       [
+        "Et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "je",
+        "je"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "m’",
+        "m’"
+       ],
+       [
+        "en",
+        "en"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vais",
+        "vais"
+       ]
+      ],
+      "requer": [
+       "fr-p003"
+      ]
+     },
+     {
+      "t": "Au vent mauvais",
+      "p": [
+       [
+        "Au",
+        "au"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vent",
+        "vent"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mauvais",
+        "mauvais"
+       ]
+      ],
+      "requer": [
+       "fr-p255",
+       "fr-p369"
+      ]
+     },
+     {
+      "t": "Qui m’emporte",
+      "p": [
+       [
+        "Qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "m’",
+        "m’"
+       ],
+       [
+        "emporte",
+        "emporte"
+       ]
+      ],
+      "requer": [
+       "fr-p630"
+      ]
+     },
+     {
+      "t": "Deçà, delà,",
+      "p": [
+       [
+        "Deçà",
+        "deçà"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "delà",
+        "delà"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p689",
+       "fr-p690"
+      ]
+     },
+     {
+      "t": "Pareil à la",
+      "p": [
+       [
+        "Pareil",
+        "pareil"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "à",
+        "à"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ]
+      ],
+      "requer": [
+       "fr-p631"
+      ]
+     },
+     {
+      "t": "Feuille morte.",
+      "p": [
+       [
+        "Feuille",
+        "feuille"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "morte",
+        "morte"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p632",
+       "fr-p633"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "fr-p684",
+    "fr-p626",
+    "fr-p627",
+    "fr-p343",
+    "fr-p628",
+    "fr-p535",
+    "fr-p566",
+    "fr-p686",
+    "fr-p070",
+    "fr-p687",
+    "fr-p688",
+    "fr-p523",
+    "fr-p129",
+    "fr-p390",
+    "fr-p019",
+    "fr-p629",
+    "fr-p534",
+    "fr-p003",
+    "fr-p255",
+    "fr-p369",
+    "fr-p630",
+    "fr-p689",
+    "fr-p690",
+    "fr-p631",
+    "fr-p632",
+    "fr-p633"
+   ],
+   "destinos": {
+    "les": {
+     "lema": "les",
+     "classe": "artigo definido",
+     "forma": "plural",
+     "def": [
+      "Plural de «le» ou «la»."
+     ],
+     "defEs": "Artículo definido plural: los, las: «Les sanglots longs», los largos sollozos.",
+     "defEn": "Plural definite article: the: «Les sanglots longs», the long sobs.",
+     "wiki": "https://fr.wiktionary.org/wiki/les",
+     "g": "gramatical"
+    },
+    "sanglots": {
+     "lema": "sanglot",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Suspiro redobrado, espasmo do peito que, contraído pela dor, deixa escapar sons entrecortados."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/sanglot",
+     "card": "fr-p684"
+    },
+    "longs": {
+     "lema": "long",
+     "classe": "adjetivo",
+     "forma": "masculino plural",
+     "def": [
+      "Que dura muito tempo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/long",
+     "card": "fr-p626"
+    },
+    "des": {
+     "lema": "des",
+     "classe": "artigo definido",
+     "forma": "contração de «de» + «les»",
+     "def": [
+      "Contração do artigo definido plural «les» com a preposição «de»."
+     ],
+     "defEs": "Contracción de «de» + «les»: de los, de las: «Des violons», de los violines.",
+     "defEn": "Contraction of «de» + «les»: of the: «Des violons», of the violins.",
+     "wiki": "https://fr.wiktionary.org/wiki/des",
+     "g": "gramatical"
+    },
+    "violons": {
+     "lema": "violon",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Instrumento de cordas: alaúde de braço curto, com escala lisa e sem trastes, munido de quatro cordas que se friccionam com um arco."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/violon",
+     "card": "fr-p627"
+    },
+    "de": {
+     "lema": "de",
+     "classe": "preposição",
+     "def": [
+      "Indica a posse (o genitivo)."
+     ],
+     "defEs": "Preposición: de: «De l’automne», del otoño.",
+     "defEn": "Preposition: of: «De l’automne», of autumn.",
+     "wiki": "https://fr.wiktionary.org/wiki/de",
+     "g": "gramatical"
+    },
+    "l’": {
+     "lema": "l’",
+     "classe": "artigo definido",
+     "forma": "elisão de «le» ou «la»",
+     "def": [
+      "Elisão dos artigos definidos «le» e «la» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Artículo «le» o «la» delante de vocal: el, la: «l’automne», el otoño.",
+     "defEn": "Article «le» or «la» before a vowel: the: «l’automne», autumn.",
+     "wiki": "https://fr.wiktionary.org/wiki/l%E2%80%99",
+     "g": "gramatical"
+    },
+    "automne": {
+     "lema": "automne",
+     "classe": "substantivo masculino ou feminino",
+     "def": [
+      "Uma das quatro estações do ano."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/automne",
+     "card": "fr-p343"
+    },
+    "blessent": {
+     "lema": "blesser",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "def": [
+      "No sentido moral: ofender, chocar, desagradar, afligir."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/blesser",
+     "card": "fr-p628"
+    },
+    "mon": {
+     "lema": "mon",
+     "classe": "determinante possessivo",
+     "def": [
+      "Marca a posse ou a pertença. O possuidor é quem fala; o que ele possui está no masculino singular."
+     ],
+     "defEs": "Determinante posesivo: mi (masculino): «mon cœur», mi corazón.",
+     "defEn": "Possessive determiner: my: «mon cœur», my heart.",
+     "wiki": "https://fr.wiktionary.org/wiki/mon",
+     "g": "gramatical"
+    },
+    "cœur": {
+     "lema": "cœur",
+     "classe": "substantivo masculino",
+     "def": [
+      "(Figurado) Órgão considerado como a sede da sensibilidade moral, dos sentimentos e das paixões."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/c%C5%93ur",
+     "card": "fr-p535"
+    },
+    "d’#2": {
+     "lema": "d’",
+     "classe": "preposição",
+     "forma": "elisão de «de»",
+     "def": [
+      "Elisão da preposição «de» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Preposición «de» delante de vocal: de, con: «Blessent mon cœur d’une langueur», hieren mi corazón con una languidez.",
+     "defEn": "Preposition «de» before a vowel: of, with: «Blessent mon cœur d’une langueur», wound my heart with a languor.",
+     "wiki": "https://fr.wiktionary.org/wiki/d%E2%80%99",
+     "g": "gramatical"
+    },
+    "une": {
+     "lema": "une",
+     "classe": "artigo indefinido",
+     "forma": "feminino singular",
+     "def": [
+      "Feminino singular de «un»."
+     ],
+     "defEs": "Artículo indefinido: una (femenino).",
+     "defEn": "Indefinite article: a, an (feminine).",
+     "wiki": "https://fr.wiktionary.org/wiki/une",
+     "g": "gramatical"
+    },
+    "langueur": {
+     "lema": "langueur",
+     "classe": "substantivo feminino",
+     "def": [
+      "Enfraquecimento físico e moral que reduz consideravelmente as forças e a atividade de uma pessoa; ato de languescer."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/langueur",
+     "card": "fr-p566"
+    },
+    "monotone": {
+     "lema": "monotone",
+     "classe": "adjetivo",
+     "def": [
+      "Que está sempre no mesmo tom, que não varia nas entonações ou inflexões.",
+      "(Figurado) Qualifica coisas que são uniformes, que carecem de variedade."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/monotone",
+     "card": "fr-p686"
+    },
+    "tout": {
+     "lema": "tout",
+     "classe": "advérbio",
+     "def": [
+      "Inteiramente, completamente, sem exceção, sem reserva, de todo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/tout",
+     "card": "fr-p070"
+    },
+    "suffocant": {
+     "lema": "suffocant",
+     "classe": "adjetivo",
+     "def": [
+      "Que sufoca; que provoca a sufocação; que atrapalha ou faz perder a respiração."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/suffocant",
+     "card": "fr-p687"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção coordenativa",
+     "def": [
+      "Liga vários conceitos numa mesma relação."
+     ],
+     "defEs": "Conjunción: y.",
+     "defEn": "Conjunction: and.",
+     "wiki": "https://fr.wiktionary.org/wiki/et",
+     "g": "gramatical"
+    },
+    "blême": {
+     "lema": "blême",
+     "classe": "adjetivo",
+     "def": [
+      "Muito pálido, mais que pálido."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/bl%C3%AAme",
+     "card": "fr-p688"
+    },
+    "quand": {
+     "lema": "quand",
+     "classe": "conjunção",
+     "def": [
+      "Quando; no tempo em que."
+     ],
+     "defEs": "Conjunción: cuando.",
+     "defEn": "Conjunction: when.",
+     "wiki": "https://fr.wiktionary.org/wiki/quand",
+     "g": "gramatical"
+    },
+    "sonne": {
+     "lema": "sonner",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Ser indicado, marcado, anunciado por um som."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/sonner",
+     "card": "fr-p523"
+    },
+    "heure": {
+     "lema": "heure",
+     "classe": "substantivo feminino",
+     "def": [
+      "Uma das vinte e quatro divisões do dia, com a duração de sessenta minutos."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/heure",
+     "card": "fr-p129"
+    },
+    "je": {
+     "lema": "je",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome da primeira pessoa do singular. Usado exclusivamente como sujeito."
+     ],
+     "defEs": "Pronombre personal sujeto: yo.",
+     "defEn": "Personal pronoun (subject): I.",
+     "wiki": "https://fr.wiktionary.org/wiki/je",
+     "g": "gramatical"
+    },
+    "me": {
+     "lema": "me",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome da primeira pessoa do singular, como complemento de objeto direto. Acusativo de «je»."
+     ],
+     "defEs": "Pronombre personal: me; aquí reflexivo, con «se souvenir»: «Je me souviens», me acuerdo.",
+     "defEn": "Personal pronoun: me, myself; here reflexive, with «se souvenir»: «Je me souviens», I remember.",
+     "wiki": "https://fr.wiktionary.org/wiki/me",
+     "g": "gramatical"
+    },
+    "souviens": {
+     "lema": "souvenir",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "def": [
+      "Ter memória de alguma coisa; lembrar."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/souvenir",
+     "card": "fr-p390"
+    },
+    "jours": {
+     "lema": "jour",
+     "classe": "substantivo masculino",
+     "forma": "plural",
+     "def": [
+      "Período de vinte e quatro horas, que geralmente começa à meia-noite."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/jour",
+     "card": "fr-p019"
+    },
+    "anciens": {
+     "lema": "ancien",
+     "classe": "adjetivo",
+     "forma": "masculino plural",
+     "def": [
+      "Que existe há muito tempo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/ancien",
+     "card": "fr-p629"
+    },
+    "pleure": {
+     "lema": "pleurer",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "def": [
+      "Derramar lágrimas."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/pleurer",
+     "card": "fr-p534"
+    },
+    "m’": {
+     "lema": "m’",
+     "classe": "pronome pessoal",
+     "forma": "elisão de «me»",
+     "def": [
+      "Elisão do pronome pessoal «me» diante de vogal ou de h mudo."
+     ],
+     "defEs": "Pronombre «me» delante de vocal: me: «je m’en vais», me voy.",
+     "defEn": "Pronoun «me» before a vowel: me, myself: «je m’en vais», I go away.",
+     "wiki": "https://fr.wiktionary.org/wiki/m%E2%80%99",
+     "g": "gramatical"
+    },
+    "en": {
+     "lema": "en",
+     "classe": "advérbio",
+     "def": [
+      "Deste lugar; de lá."
+     ],
+     "defEs": "Adverbio: de aquí, de allí; con «s’en aller», irse: «je m’en vais», me voy.",
+     "defEn": "Adverb: from here, away; with «s’en aller», to go away: «je m’en vais», I go away.",
+     "wiki": "https://fr.wiktionary.org/wiki/en",
+     "g": "gramatical"
+    },
+    "vais": {
+     "lema": "s’en aller",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular (de «aller»)",
+     "def": [
+      "Partir, sair de um lugar."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/s%E2%80%99en_aller",
+     "card": "fr-p003"
+    },
+    "au": {
+     "lema": "au",
+     "classe": "artigo definido",
+     "forma": "contração de «à» + «le»",
+     "def": [
+      "Contração da preposição «à» e do artigo definido «le»."
+     ],
+     "defEs": "Contracción de «à» + «le»: al: «Au vent mauvais», al viento malo.",
+     "defEn": "Contraction of «à» + «le»: to the, on the: «Au vent mauvais», on the ill wind.",
+     "wiki": "https://fr.wiktionary.org/wiki/au",
+     "g": "gramatical"
+    },
+    "vent": {
+     "lema": "vent",
+     "classe": "substantivo masculino",
+     "def": [
+      "Movimento de ar exterior e nitidamente perceptível, segundo uma direção determinada."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/vent",
+     "card": "fr-p255"
+    },
+    "mauvais": {
+     "lema": "mauvais",
+     "classe": "adjetivo",
+     "def": [
+      "Sinistro, funesto, que faz temer algum mal."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/mauvais",
+     "card": "fr-p369"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome relativo",
+     "def": [
+      "O qual, a qual, os quais, as quais.",
+      "Serve para designar o sujeito na oração relativa."
+     ],
+     "defEs": "Pronombre relativo (sujeto): que: «Qui m’emporte», que me lleva.",
+     "defEn": "Relative pronoun (subject): which, that: «Qui m’emporte», which carries me off.",
+     "wiki": "https://fr.wiktionary.org/wiki/qui",
+     "g": "gramatical"
+    },
+    "emporte": {
+     "lema": "emporter",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Arrastar, arrancar, levar consigo com esforço, com rapidez ou com violência."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/emporter",
+     "card": "fr-p630"
+    },
+    "deçà": {
+     "lema": "deçà",
+     "classe": "advérbio",
+     "def": [
+      "Deste lado (por oposição a «delà»)."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/de%C3%A7%C3%A0",
+     "card": "fr-p689"
+    },
+    "delà": {
+     "lema": "delà",
+     "classe": "advérbio",
+     "def": [
+      "Mais longe que, do outro lado de. No francês atual, usam-se as suas variantes «au-delà» e «par-delà»."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/del%C3%A0",
+     "card": "fr-p690"
+    },
+    "pareil": {
+     "lema": "pareil",
+     "classe": "adjetivo",
+     "def": [
+      "Que apresenta forte semelhança ou similitude; igual ou semelhante."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/pareil",
+     "card": "fr-p631"
+    },
+    "à": {
+     "lema": "à",
+     "classe": "preposição",
+     "def": [
+      "Introduz um complemento de objeto indireto."
+     ],
+     "defEs": "Preposición: a: «Pareil à la feuille morte», semejante a la hoja muerta.",
+     "defEn": "Preposition: to: «Pareil à la feuille morte», like the dead leaf.",
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A0",
+     "g": "gramatical"
+    },
+    "la": {
+     "lema": "la",
+     "classe": "artigo definido",
+     "forma": "feminino singular",
+     "def": [
+      "Feminino singular de «le». Determina um grupo nominal feminino singular."
+     ],
+     "defEs": "Artículo definido: la (femenino).",
+     "defEn": "Definite article: the (feminine).",
+     "wiki": "https://fr.wiktionary.org/wiki/la",
+     "g": "gramatical"
+    },
+    "feuille": {
+     "lema": "feuille",
+     "classe": "substantivo feminino",
+     "def": [
+      "(Anatomia vegetal) Órgão aéreo e em geral plano das plantas vasculares, inserido no caule, especializado na fotossíntese, nas trocas gasosas e na transpiração."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/feuille",
+     "card": "fr-p632"
+    },
+    "morte": {
+     "lema": "mort",
+     "classe": "adjetivo",
+     "forma": "feminino singular",
+     "def": [
+      "Que já não está vivo; cujas funções vitais pararam de modo definitivo."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/mort",
+     "card": "fr-p633"
+    }
+   },
+   "fila": 3
+  },
   {
    "id": "paul-verlaine/il-pleure-dans-mon-coeur",
    "idioma": "fr",
@@ -1372,6 +6752,2091 @@
     }
    },
    "fila": 1
+  },
+  {
+   "id": "pierre-de-ronsard/quand-vous-serez-bien-vieille",
+   "idioma": "fr",
+   "tipo": "poema",
+   "titulo": "Quand vous serez bien vieille",
+   "autor": "Pierre de Ronsard",
+   "ano": 1578,
+   "biblioteca": "/biblioteca/pierre-de-ronsard/quand-vous-serez-bien-vieille/",
+   "blocos": [
+    [
+     {
+      "t": "Quand vous serez bien vieille, au soir, à la chandelle,",
+      "p": [
+       [
+        "Quand",
+        "quand"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vous",
+        "vous"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "serez",
+        "serez"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bien",
+        "bien"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vieille",
+        "vieille"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "au",
+        "au"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "soir",
+        "soir"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "à",
+        "à"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "chandelle",
+        "chandelle"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p001",
+       "fr-p044",
+       "fr-p041",
+       "fr-p160",
+       "fr-p634"
+      ]
+     },
+     {
+      "t": "Assise auprès du feu, dévidant et filant,",
+      "p": [
+       [
+        "Assise",
+        "assise"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "auprès",
+        "auprès"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "du",
+        "du"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "feu",
+        "feu"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "dévidant",
+        "dévidant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "filant",
+        "filant"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p691",
+       "fr-p635",
+       "fr-p692",
+       "fr-p636"
+      ]
+     },
+     {
+      "t": "Direz, chantant mes vers, en vous émerveillant :",
+      "p": [
+       [
+        "Direz",
+        "direz"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "chantant",
+        "chantant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mes",
+        "mes"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vers",
+        "vers"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "en",
+        "en"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vous",
+        "vous#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "émerveillant",
+        "émerveillant"
+       ],
+       [
+        " :",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p005",
+       "fr-p289",
+       "fr-p693",
+       "fr-p637"
+      ]
+     },
+     {
+      "t": "Ronsard me célébrait du temps que j’étais belle.",
+      "p": [
+       [
+        "Ronsard",
+        "ronsard"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "me",
+        "me"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "célébrait",
+        "célébrait"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "du",
+        "du"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "temps",
+        "temps"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "que",
+        "que"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "j’",
+        "j’"
+       ],
+       [
+        "étais",
+        "étais"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "belle",
+        "belle"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p638",
+       "fr-p025",
+       "fr-p001",
+       "fr-p040"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Lors, vous n’aurez servante oyant telle nouvelle,",
+      "p": [
+       [
+        "Lors",
+        "lors"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "vous",
+        "vous"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "n’",
+        "n’"
+       ],
+       [
+        "aurez",
+        "aurez"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "servante",
+        "servante"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "oyant",
+        "oyant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "telle",
+        "telle"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nouvelle",
+        "nouvelle"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p694",
+       "fr-p002",
+       "fr-p639",
+       "fr-p695",
+       "fr-p640"
+      ]
+     },
+     {
+      "t": "Déjà sous le labeur à demi sommeillant,",
+      "p": [
+       [
+        "Déjà",
+        "déjà"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sous",
+        "sous"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "le",
+        "le"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "labeur",
+        "labeur"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "à",
+        "à#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "demi",
+        "demi"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sommeillant",
+        "sommeillant"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p050",
+       "fr-p696",
+       "fr-p697",
+       "fr-p330",
+       "fr-p698"
+      ]
+     },
+     {
+      "t": "Qui au bruit de mon nom ne s’aille réveillant,",
+      "p": [
+       [
+        "Qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "au",
+        "au"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bruit",
+        "bruit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mon",
+        "mon"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nom",
+        "nom"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ne",
+        "ne"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "s’",
+        "s’"
+       ],
+       [
+        "aille",
+        "aille"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "réveillant",
+        "réveillant"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p537",
+       "fr-p217",
+       "fr-p003",
+       "fr-p641"
+      ]
+     },
+     {
+      "t": "Bénissant votre nom de louange immortelle.",
+      "p": [
+       [
+        "Bénissant",
+        "bénissant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "votre",
+        "votre"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nom",
+        "nom"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "louange",
+        "louange"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "immortelle",
+        "immortelle"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p699",
+       "fr-p217",
+       "fr-p700",
+       "fr-p701"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Je serai sous la terre et fantôme sans os :",
+      "p": [
+       [
+        "Je",
+        "je"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "serai",
+        "serai"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sous",
+        "sous#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "terre",
+        "terre"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fantôme",
+        "fantôme"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sans",
+        "sans"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "os",
+        "os"
+       ],
+       [
+        " :",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p001",
+       "fr-p540",
+       "fr-p642",
+       "fr-p643"
+      ]
+     },
+     {
+      "t": "Par les ombres myrteux je prendrai mon repos ;",
+      "p": [
+       [
+        "Par",
+        "par"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "les",
+        "les"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ombres",
+        "ombres"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "myrteux",
+        "myrteux"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "je",
+        "je"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "prendrai",
+        "prendrai"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mon",
+        "mon"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "repos",
+        "repos"
+       ],
+       [
+        " ;",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p644",
+       "fr-p702",
+       "fr-p011",
+       "fr-p645"
+      ]
+     },
+     {
+      "t": "Vous serez au foyer une vieille accroupie,",
+      "p": [
+       [
+        "Vous",
+        "vous"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "serez",
+        "serez#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "au",
+        "au"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "foyer",
+        "foyer"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "une",
+        "une"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vieille",
+        "vieille#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "accroupie",
+        "accroupie"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p001",
+       "fr-p646",
+       "fr-p041",
+       "fr-p703"
+      ]
+     }
+    ],
+    [
+     {
+      "t": "Regrettant mon amour et votre fier dédain.",
+      "p": [
+       [
+        "Regrettant",
+        "regrettant"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mon",
+        "mon"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amour",
+        "amour"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "votre",
+        "votre"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fier",
+        "fier"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dédain",
+        "dédain"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p647",
+       "fr-p547",
+       "fr-p576",
+       "fr-p704"
+      ]
+     },
+     {
+      "t": "Vivez, si m’en croyez, n’attendez à demain :",
+      "p": [
+       [
+        "Vivez",
+        "vivez"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "si",
+        "si"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "m’",
+        "m’"
+       ],
+       [
+        "en",
+        "en#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "croyez",
+        "croyez"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "n’",
+        "n’"
+       ],
+       [
+        "attendez",
+        "attendez"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "à",
+        "à#3"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "demain",
+        "demain"
+       ],
+       [
+        " :",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p293",
+       "fr-p648",
+       "fr-p018",
+       "fr-p059"
+      ]
+     },
+     {
+      "t": "Cueillez dès aujourd’hui les roses de la vie.",
+      "p": [
+       [
+        "Cueillez",
+        "cueillez"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dès",
+        "dès"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "aujourd’hui",
+        "aujourd’hui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "les",
+        "les"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "roses",
+        "roses"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "de",
+        "de"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "la",
+        "la"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vie",
+        "vie"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "fr-p649",
+       "fr-p049",
+       "fr-p650",
+       "fr-p250"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "fr-p001",
+    "fr-p044",
+    "fr-p041",
+    "fr-p160",
+    "fr-p634",
+    "fr-p691",
+    "fr-p635",
+    "fr-p692",
+    "fr-p636",
+    "fr-p005",
+    "fr-p289",
+    "fr-p693",
+    "fr-p637",
+    "fr-p638",
+    "fr-p025",
+    "fr-p040",
+    "fr-p694",
+    "fr-p002",
+    "fr-p639",
+    "fr-p695",
+    "fr-p640",
+    "fr-p050",
+    "fr-p696",
+    "fr-p697",
+    "fr-p330",
+    "fr-p698",
+    "fr-p537",
+    "fr-p217",
+    "fr-p003",
+    "fr-p641",
+    "fr-p699",
+    "fr-p700",
+    "fr-p701",
+    "fr-p540",
+    "fr-p642",
+    "fr-p643",
+    "fr-p644",
+    "fr-p702",
+    "fr-p011",
+    "fr-p645",
+    "fr-p646",
+    "fr-p703",
+    "fr-p647",
+    "fr-p547",
+    "fr-p576",
+    "fr-p704",
+    "fr-p293",
+    "fr-p648",
+    "fr-p018",
+    "fr-p059",
+    "fr-p649",
+    "fr-p049",
+    "fr-p650",
+    "fr-p250"
+   ],
+   "destinos": {
+    "quand": {
+     "lema": "quand",
+     "classe": "conjunção",
+     "def": [
+      "Quando, no tempo em que."
+     ],
+     "defEs": "Conjunción: cuando: «Quand vous serez bien vieille», cuando seáis muy vieja.",
+     "defEn": "Conjunction: when: «Quand vous serez bien vieille», when you are very old.",
+     "wiki": "https://fr.wiktionary.org/wiki/quand",
+     "g": "gramatical"
+    },
+    "vous": {
+     "lema": "vous",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome de polidez da segunda pessoa do singular ou do plural, clítico ou tônico."
+     ],
+     "defEs": "Pronombre personal: usted, vosotros (aquí, trato de cortesía a una sola mujer).",
+     "defEn": "Personal pronoun: you (here, polite address to one woman).",
+     "wiki": "https://fr.wiktionary.org/wiki/vous",
+     "g": "gramatical"
+    },
+    "serez": {
+     "lema": "être",
+     "classe": "verbo",
+     "forma": "futuro do indicativo, 2ª pessoa do plural",
+     "def": [
+      "Definir um estado, uma característica do sujeito."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%AAtre",
+     "card": "fr-p001"
+    },
+    "bien": {
+     "lema": "bien",
+     "classe": "advérbio",
+     "def": [
+      "Muito; fortemente; bastante."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/bien",
+     "card": "fr-p044"
+    },
+    "vieille": {
+     "lema": "vieux",
+     "classe": "adjetivo",
+     "forma": "feminino singular",
+     "def": [
+      "De certa idade (em relação a outra pessoa)."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/vieux",
+     "card": "fr-p041"
+    },
+    "au": {
+     "lema": "au",
+     "classe": "artigo definido",
+     "forma": "contraído",
+     "def": [
+      "Contração da preposição «à» e do artigo definido «le»."
+     ],
+     "defEs": "Contracción de «à» + «le»: al, en el: «au soir», al anochecer.",
+     "defEn": "Contraction of «à» + «le»: at the, in the: «au soir», in the evening.",
+     "wiki": "https://fr.wiktionary.org/wiki/au",
+     "g": "gramatical"
+    },
+    "soir": {
+     "lema": "soir",
+     "classe": "substantivo masculino",
+     "def": [
+      "Período que se estende entre o pôr do sol e a meia-noite."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/soir",
+     "card": "fr-p160"
+    },
+    "à": {
+     "lema": "à",
+     "classe": "preposição",
+     "def": [
+      "Introduz um complemento circunstancial de meio, e pode ser substituída por «au moyen de»."
+     ],
+     "defEs": "Preposición: a (medio): «à la chandelle», a la luz de la vela.",
+     "defEn": "Preposition: by (means): «à la chandelle», by candlelight.",
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A0",
+     "g": "gramatical"
+    },
+    "la": {
+     "lema": "la",
+     "classe": "artigo definido",
+     "forma": "feminino singular",
+     "def": [
+      "Feminino singular de «le». Determina um grupo nominal feminino singular."
+     ],
+     "defEs": "Artículo definido: la (femenino): «la chandelle», la vela.",
+     "defEn": "Definite article: the (feminine): «la chandelle», the candle.",
+     "wiki": "https://fr.wiktionary.org/wiki/la",
+     "g": "gramatical"
+    },
+    "chandelle": {
+     "lema": "chandelle",
+     "classe": "substantivo feminino",
+     "def": [
+      "Cilindro combustível com um pavio envolto em sebo ou cera, que ilumina ao queimar."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/chandelle",
+     "card": "fr-p634"
+    },
+    "assise": {
+     "lema": "asseoir",
+     "classe": "verbo",
+     "forma": "particípio passado, feminino singular",
+     "def": [
+      "Pôr alguém num assento ou em algo que faça as vezes de assento."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/asseoir",
+     "card": "fr-p691"
+    },
+    "auprès": {
+     "lema": "auprès de",
+     "classe": "preposição",
+     "forma": "em «auprès de» (aqui com «du» = «de le»)",
+     "def": [
+      "Na vizinhança de; na proximidade de."
+     ],
+     "defEs": "Locución preposicional «auprès de»: junto a, cerca de: «auprès du feu», junto al fuego.",
+     "defEn": "Prepositional phrase «auprès de»: near, beside: «auprès du feu», by the fire.",
+     "wiki": "https://fr.wiktionary.org/wiki/aupr%C3%A8s_de",
+     "g": "gramatical"
+    },
+    "du": {
+     "lema": "du",
+     "classe": "artigo definido",
+     "forma": "contraído",
+     "def": [
+      "Artigo contraído, formado pela preposição «de» e pelo artigo «le». Emprega-se diante de som consonantal ou de «h» aspirado."
+     ],
+     "defEs": "Contracción de «de» + «le»: del: «auprès du feu», junto al fuego.",
+     "defEn": "Contraction of «de» + «le»: of the: «auprès du feu», by the fire.",
+     "wiki": "https://fr.wiktionary.org/wiki/du",
+     "g": "gramatical"
+    },
+    "feu": {
+     "lema": "feu",
+     "classe": "substantivo masculino",
+     "def": [
+      "Brasa ou fogueira de pequeno porte, acesa de propósito para iluminar, aquecer ou cozinhar."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/feu",
+     "card": "fr-p635"
+    },
+    "dévidant": {
+     "lema": "dévider",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Pôr em novelo o fio que está em meada ou em carretel."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/d%C3%A9vider",
+     "card": "fr-p692"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção coordenativa",
+     "def": [
+      "Liga vários conceitos numa mesma relação. Vários adjetivos podem compartilhar o mesmo substantivo, e vários prefixos, o mesmo radical."
+     ],
+     "defEs": "Conjunción: y.",
+     "defEn": "Conjunction: and.",
+     "wiki": "https://fr.wiktionary.org/wiki/et",
+     "g": "gramatical"
+    },
+    "filant": {
+     "lema": "filer",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Torcer juntos vários fios de cânhamo, linho, seda, lã etc., para que formem um só fio."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/filer",
+     "card": "fr-p636"
+    },
+    "direz": {
+     "lema": "dire",
+     "classe": "verbo",
+     "forma": "futuro do indicativo, 2ª pessoa do plural",
+     "def": [
+      "Exprimir pela fala."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/dire",
+     "card": "fr-p005"
+    },
+    "chantant": {
+     "lema": "chanter",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Modular a voz em vários tons, seguir um trecho de música vocal."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/chanter",
+     "card": "fr-p289"
+    },
+    "mes": {
+     "lema": "mes",
+     "classe": "determinante possessivo",
+     "forma": "plural",
+     "def": [
+      "Plural de «mon», «ma». Que são meus, no caso de um só possuidor e de vários objetos."
+     ],
+     "defEs": "Determinante posesivo plural: mis: «mes vers», mis versos.",
+     "defEn": "Possessive determiner (plural): my: «mes vers», my verses.",
+     "wiki": "https://fr.wiktionary.org/wiki/mes",
+     "g": "gramatical"
+    },
+    "vers": {
+     "lema": "vers",
+     "classe": "substantivo masculino",
+     "def": [
+      "Sequência de palavras ritmadas segundo a quantidade, a acentuação, o número de sílabas ou o retorno da rima."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/vers",
+     "card": "fr-p693"
+    },
+    "en": {
+     "lema": "en",
+     "classe": "preposição",
+     "def": [
+      "(Seguida do particípio presente) Preposição que serve para formar um gerúndio que marca o tempo, a duração."
+     ],
+     "defEs": "Preposición que, con el participio presente, forma el gerundio: «en vous émerveillant», maravillándoos.",
+     "defEn": "Preposition that, with the present participle, forms the gerund: «en vous émerveillant», marveling.",
+     "wiki": "https://fr.wiktionary.org/wiki/en",
+     "g": "gramatical"
+    },
+    "vous#2": {
+     "lema": "vous",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome clítico da segunda pessoa do plural, objeto direto ou indireto, ou como pronome reflexivo."
+     ],
+     "defEs": "Pronombre personal: os, se (aquí reflexivo, de cortesía): «en vous émerveillant», maravillándoos.",
+     "defEn": "Personal pronoun: you, yourself (here reflexive, polite): «en vous émerveillant», marveling.",
+     "wiki": "https://fr.wiktionary.org/wiki/vous",
+     "g": "gramatical"
+    },
+    "émerveillant": {
+     "lema": "émerveiller",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Encher, tomar de uma viva admiração, misturada com espanto.",
+      "(Uso pronominal, por extensão) Espantar-se muito."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A9merveiller",
+     "card": "fr-p637"
+    },
+    "ronsard": {
+     "lema": "Ronsard",
+     "classe": "nome próprio",
+     "def": [
+      "Pierre de Ronsard (1524-1585), poeta francês do Renascimento."
+     ],
+     "defEs": "Nombre propio: Pierre de Ronsard (1524–1585), poeta francés del Renacimiento y autor de este soneto, de los «Sonnets pour Hélène» (1578).",
+     "defEn": "Proper noun: Pierre de Ronsard (1524–1585), French Renaissance poet and author of this sonnet, from the «Sonnets pour Hélène» (1578).",
+     "g": "nome"
+    },
+    "me": {
+     "lema": "me",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome da primeira pessoa do singular como complemento direto. Acusativo de «je»."
+     ],
+     "defEs": "Pronombre personal (complemento directo): me: «Ronsard me célébrait», Ronsard me celebraba.",
+     "defEn": "Personal pronoun (direct object): me: «Ronsard me célébrait», Ronsard sang my praises.",
+     "wiki": "https://fr.wiktionary.org/wiki/me",
+     "g": "gramatical"
+    },
+    "célébrait": {
+     "lema": "célébrer",
+     "classe": "verbo",
+     "forma": "imperfeito do indicativo, 3ª pessoa do singular",
+     "def": [
+      "Louvar com brilho; publicar com elogio."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/c%C3%A9l%C3%A9brer",
+     "card": "fr-p638"
+    },
+    "temps": {
+     "lema": "temps",
+     "classe": "substantivo masculino",
+     "def": [
+      "Duração longa; época; período; era."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/temps",
+     "card": "fr-p025"
+    },
+    "que": {
+     "lema": "que",
+     "classe": "conjunção",
+     "def": [
+      "Utilizada junto com outro termo (geralmente uma preposição) para formar uma conjunção subordinativa."
+     ],
+     "defEs": "Conjunción: que; con «du temps», cuando: «du temps que j’étais belle», en el tiempo en que era bella.",
+     "defEn": "Conjunction: that; with «du temps», when: «du temps que j’étais belle», in the days when I was beautiful.",
+     "wiki": "https://fr.wiktionary.org/wiki/que",
+     "g": "gramatical"
+    },
+    "j’": {
+     "lema": "j’",
+     "classe": "pronome pessoal",
+     "forma": "elisão de «je»",
+     "def": [
+      "Elisão do pronome pessoal da primeira pessoa do singular «je» diante de vogal ou «h» mudo."
+     ],
+     "defEs": "Pronombre «je» delante de vocal: yo: «j’étais», yo era.",
+     "defEn": "Pronoun «je» before a vowel: I: «j’étais», I was.",
+     "wiki": "https://fr.wiktionary.org/wiki/j%E2%80%99",
+     "g": "gramatical"
+    },
+    "étais": {
+     "lema": "être",
+     "classe": "verbo",
+     "forma": "imperfeito do indicativo, 1ª pessoa do singular",
+     "def": [
+      "Definir um estado, uma característica do sujeito."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%AAtre",
+     "card": "fr-p001"
+    },
+    "belle": {
+     "lema": "beau",
+     "classe": "adjetivo",
+     "forma": "feminino singular",
+     "def": [
+      "De aspecto agradável à vista ou ao ouvido."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/beau",
+     "card": "fr-p040"
+    },
+    "lors": {
+     "lema": "lors",
+     "classe": "advérbio",
+     "def": [
+      "Então, naquele momento."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/lors#French",
+     "card": "fr-p694"
+    },
+    "n’": {
+     "lema": "n’",
+     "classe": "partícula",
+     "forma": "elisão de «ne»",
+     "def": [
+      "Elisão da partícula de negação «ne» diante de vogal ou «h» mudo."
+     ],
+     "defEs": "Partícula negativa «ne» delante de vocal; aquí sola, sin «pas»: no: «vous n’aurez servante», no tendréis sirvienta.",
+     "defEn": "Negative particle «ne» before a vowel; here alone, without «pas»: not, no: «vous n’aurez servante», you will have no servant.",
+     "wiki": "https://fr.wiktionary.org/wiki/n%E2%80%99",
+     "g": "gramatical"
+    },
+    "aurez": {
+     "lema": "avoir",
+     "classe": "verbo",
+     "forma": "futuro do indicativo, 2ª pessoa do plural",
+     "def": [
+      "Estar em relação possessiva, concreta ou abstrata, permanente ou ocasional, em que o possuidor é o sujeito e o possuído é o complemento direto."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/avoir",
+     "card": "fr-p002"
+    },
+    "servante": {
+     "lema": "servante",
+     "classe": "substantivo feminino",
+     "def": [
+      "Aquela que é empregada nos trabalhos domésticos e serve por salário."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/servante",
+     "card": "fr-p639"
+    },
+    "oyant": {
+     "lema": "ouïr",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "(Antiquado) Ouvir, perceber pelo ouvido."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/ou%C3%AFr",
+     "card": "fr-p695"
+    },
+    "telle": {
+     "lema": "tel",
+     "classe": "adjetivo",
+     "forma": "feminino singular",
+     "def": [
+      "Que é igual, semelhante, do mesmo gênero, da mesma qualidade."
+     ],
+     "defEs": "Adjetivo: tal: «telle nouvelle», tal noticia.",
+     "defEn": "Adjective: such: «telle nouvelle», such news.",
+     "wiki": "https://fr.wiktionary.org/wiki/tel",
+     "g": "gramatical"
+    },
+    "nouvelle": {
+     "lema": "nouvelle",
+     "classe": "substantivo feminino",
+     "def": [
+      "Fato novo de que se é informado; anúncio de uma coisa acontecida recentemente."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/nouvelle",
+     "card": "fr-p640"
+    },
+    "déjà": {
+     "lema": "déjà",
+     "classe": "advérbio",
+     "def": [
+      "Indica uma mudança de estado ou o alcance do critério até agora ou até então."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/d%C3%A9j%C3%A0",
+     "card": "fr-p050"
+    },
+    "sous": {
+     "lema": "sous",
+     "classe": "preposição",
+     "def": [
+      "Marca a subordinação ou a dependência."
+     ],
+     "defEs": "Preposición: bajo (dependencia): «sous le labeur», bajo la faena.",
+     "defEn": "Preposition: under (subjection): «sous le labeur», under her toil.",
+     "wiki": "https://fr.wiktionary.org/wiki/sous",
+     "g": "gramatical"
+    },
+    "le": {
+     "lema": "le",
+     "classe": "artigo definido",
+     "def": [
+      "Determinante que marca um substantivo masculino singular, referindo-se a uma única entidade possível num contexto."
+     ],
+     "defEs": "Artículo definido: el (masculino): «le labeur», la faena.",
+     "defEn": "Definite article: the (masculine): «le labeur», the toil.",
+     "wiki": "https://fr.wiktionary.org/wiki/le",
+     "g": "gramatical"
+    },
+    "labeur": {
+     "lema": "labeur",
+     "classe": "substantivo masculino",
+     "def": [
+      "Trabalho penoso que exige esforço de certa duração."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/labeur",
+     "card": "fr-p696"
+    },
+    "à#2": {
+     "lema": "à demi",
+     "classe": "locução adverbial",
+     "def": [
+      "Pela metade.",
+      "Em parte; de modo imperfeito, incompleto."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A0_demi",
+     "card": "fr-p697"
+    },
+    "demi": {
+     "lema": "demi",
+     "classe": "advérbio",
+     "def": [
+      "Emprega-se também como advérbio diante de vários adjetivos e significa «pela metade», «quase»."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/demi",
+     "card": "fr-p330"
+    },
+    "sommeillant": {
+     "lema": "sommeiller",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Dormir de um sono leve, de um sono imperfeito."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/sommeiller",
+     "card": "fr-p698"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome relativo",
+     "def": [
+      "O qual, a qual, os quais, as quais. Serve para designar o sujeito na oração relativa."
+     ],
+     "defEs": "Pronombre relativo (sujeto): que: «Qui au bruit de mon nom ne s’aille réveillant», que al oír mi nombre no despierte.",
+     "defEn": "Relative pronoun (subject): who: «Qui au bruit de mon nom ne s’aille réveillant», who will not awaken at the sound of my name.",
+     "wiki": "https://fr.wiktionary.org/wiki/qui",
+     "g": "gramatical"
+    },
+    "bruit": {
+     "lema": "bruit",
+     "classe": "substantivo masculino",
+     "def": [
+      "Som sem harmonia regular."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/bruit",
+     "card": "fr-p537"
+    },
+    "de": {
+     "lema": "de",
+     "classe": "preposição",
+     "def": [
+      "Indica a posse (o genitivo)."
+     ],
+     "defEs": "Preposición: de: «au bruit de mon nom», al sonido de mi nombre.",
+     "defEn": "Preposition: of: «au bruit de mon nom», at the sound of my name.",
+     "wiki": "https://fr.wiktionary.org/wiki/de",
+     "g": "gramatical"
+    },
+    "mon": {
+     "lema": "mon",
+     "classe": "determinante possessivo",
+     "def": [
+      "Marca a posse ou a pertença. O possuidor é o locutor, e o que ele possui é masculino singular."
+     ],
+     "defEs": "Determinante posesivo: mi (masculino): «mon nom», mi nombre.",
+     "defEn": "Possessive determiner: my: «mon nom», my name.",
+     "wiki": "https://fr.wiktionary.org/wiki/mon",
+     "g": "gramatical"
+    },
+    "nom": {
+     "lema": "nom",
+     "classe": "substantivo masculino",
+     "def": [
+      "Palavra ou grupo de palavras que permite nomear um ser ou uma coisa."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/nom",
+     "card": "fr-p217"
+    },
+    "ne": {
+     "lema": "ne",
+     "classe": "partícula",
+     "def": [
+      "Negação. Primeira parte de um morfema em geral de forma dupla, que envolve o verbo e certos pronomes e costuma ser completado por um forclusivo («pas», «plus», «jamais», «point», «personne», «rien» etc.)."
+     ],
+     "defEs": "Partícula negativa; aquí sola, sin «pas»: no: «ne s’aille réveillant», no despierte.",
+     "defEn": "Negative particle; here alone, without «pas»: not: «ne s’aille réveillant», does not awaken.",
+     "wiki": "https://fr.wiktionary.org/wiki/ne",
+     "g": "gramatical"
+    },
+    "s’": {
+     "lema": "s’",
+     "classe": "pronome pessoal",
+     "forma": "elisão de «se»",
+     "def": [
+      "Elisão do pronome pessoal «se» diante de vogal ou «h» mudo."
+     ],
+     "defEs": "Pronombre «se» delante de vocal: se: «s’aille réveillant», se despierte.",
+     "defEn": "Pronoun «se» before a vowel: herself: «s’aille réveillant», awakens.",
+     "wiki": "https://fr.wiktionary.org/wiki/s%E2%80%99",
+     "g": "gramatical"
+    },
+    "aille": {
+     "lema": "aller",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 3ª pessoa do singular",
+     "def": [
+      "Junta-se ao particípio presente de um verbo para exprimir-lhe, com a ideia de progressão, a de certa duração da ação."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/aller",
+     "card": "fr-p003"
+    },
+    "réveillant": {
+     "lema": "réveiller",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "(Uso pronominal) Sair do sono."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/r%C3%A9veiller",
+     "card": "fr-p641"
+    },
+    "bénissant": {
+     "lema": "bénir",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Louvar, glorificar, agradecer com sentimentos de veneração e de reconhecimento."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/b%C3%A9nir",
+     "card": "fr-p699"
+    },
+    "votre": {
+     "lema": "votre",
+     "classe": "determinante possessivo",
+     "def": [
+      "Segunda pessoa do plural no singular. Que é de vós. Vários possuidores e um único objeto, ou um possuidor a quem se dirige com polidez e um único objeto."
+     ],
+     "defEs": "Determinante posesivo: vuestro, su (de cortesía): «votre nom», vuestro nombre.",
+     "defEn": "Possessive determiner: your: «votre nom», your name.",
+     "wiki": "https://fr.wiktionary.org/wiki/votre",
+     "g": "gramatical"
+    },
+    "de#2": {
+     "lema": "de",
+     "classe": "preposição",
+     "def": [
+      "Tem ainda o lugar de várias outras preposições."
+     ],
+     "defEs": "Preposición: de, con: «Bénissant votre nom de louange immortelle», bendiciendo vuestro nombre con alabanza inmortal.",
+     "defEn": "Preposition: of, with: «Bénissant votre nom de louange immortelle», blessing your name with undying praise.",
+     "wiki": "https://fr.wiktionary.org/wiki/de",
+     "g": "gramatical"
+    },
+    "louange": {
+     "lema": "louange",
+     "classe": "substantivo feminino",
+     "def": [
+      "Discurso ou palavras pelas quais se realça o mérito de alguém, de alguma ação, de alguma coisa."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/louange",
+     "card": "fr-p700"
+    },
+    "immortelle": {
+     "lema": "immortel",
+     "classe": "adjetivo",
+     "forma": "feminino singular",
+     "def": [
+      "(Sentido figurado) Eterno, que dura indefinidamente.",
+      "Diz-se de homens ou coisas cuja memória se supõe que deva durar sempre."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/immortel",
+     "card": "fr-p701"
+    },
+    "je": {
+     "lema": "je",
+     "classe": "pronome pessoal",
+     "def": [
+      "Pronome da primeira pessoa do singular. Tanto pode ser masculino como feminino. Usado exclusivamente como sujeito."
+     ],
+     "defEs": "Pronombre personal sujeto: yo.",
+     "defEn": "Personal pronoun (subject): I.",
+     "wiki": "https://fr.wiktionary.org/wiki/je",
+     "g": "gramatical"
+    },
+    "serai": {
+     "lema": "être",
+     "classe": "verbo",
+     "forma": "futuro do indicativo, 1ª pessoa do singular",
+     "def": [
+      "Situar-se, encontrar-se, ficar, especificando um lugar, uma situação."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%AAtre",
+     "card": "fr-p001"
+    },
+    "sous#2": {
+     "lema": "sous",
+     "classe": "preposição",
+     "def": [
+      "Serve para marcar a situação de uma coisa em relação a outra que está por cima, que a cobre no todo ou em parte."
+     ],
+     "defEs": "Preposición: bajo, debajo de: «sous la terre», bajo tierra.",
+     "defEn": "Preposition: under, beneath: «sous la terre», under the earth.",
+     "wiki": "https://fr.wiktionary.org/wiki/sous",
+     "g": "gramatical"
+    },
+    "terre": {
+     "lema": "terre",
+     "classe": "substantivo feminino",
+     "def": [
+      "Solo onde se sepultam os mortos."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/terre",
+     "card": "fr-p540"
+    },
+    "fantôme": {
+     "lema": "fantôme",
+     "classe": "substantivo masculino",
+     "def": [
+      "Aparição de um defunto sob o aspecto que tinha em vida ou sob outra forma."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/fant%C3%B4me",
+     "card": "fr-p642"
+    },
+    "sans": {
+     "lema": "sans",
+     "classe": "preposição",
+     "def": [
+      "Preposição que marca a ausência, a falta, a exclusão de uma pessoa, de uma coisa."
+     ],
+     "defEs": "Preposición: sin: «fantôme sans os», fantasma sin huesos.",
+     "defEn": "Preposition: without: «fantôme sans os», a boneless ghost.",
+     "wiki": "https://fr.wiktionary.org/wiki/sans",
+     "g": "gramatical"
+    },
+    "os": {
+     "lema": "os",
+     "classe": "substantivo masculino",
+     "def": [
+      "Elemento do esqueleto dos animais vertebrados, feito de um tecido duro e calcificado."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/os",
+     "card": "fr-p643"
+    },
+    "par": {
+     "lema": "par",
+     "classe": "preposição",
+     "def": [
+      "Emprega-se também no sentido de «en», «dans», com a ideia de movimento no espaço indicado."
+     ],
+     "defEs": "Preposición: por, entre (lugar): «Par les ombres myrteux», por las sombras de los mirtos.",
+     "defEn": "Preposition: through, among: «Par les ombres myrteux», among the myrtle shades.",
+     "wiki": "https://fr.wiktionary.org/wiki/par",
+     "g": "gramatical"
+    },
+    "les": {
+     "lema": "les",
+     "classe": "artigo definido",
+     "forma": "plural",
+     "def": [
+      "Plural de «le» ou de «la»."
+     ],
+     "defEs": "Artículo definido plural: los, las: «les ombres», las sombras.",
+     "defEn": "Plural definite article: the: «les ombres», the shades.",
+     "wiki": "https://fr.wiktionary.org/wiki/les",
+     "g": "gramatical"
+    },
+    "ombres": {
+     "lema": "ombre",
+     "classe": "substantivo feminino",
+     "forma": "plural",
+     "def": [
+      "(Poético) Alma depois de deixar o corpo; fantasma; espírito."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/ombre",
+     "card": "fr-p644"
+    },
+    "myrteux": {
+     "lema": "myrteux",
+     "classe": "adjetivo",
+     "def": [
+      "(Literário) Relativo à murta, símbolo do reino dos mortos, da imortalidade, mas também do amor entre os antigos gregos."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/myrteux",
+     "card": "fr-p702"
+    },
+    "prendrai": {
+     "lema": "prendre",
+     "classe": "verbo",
+     "forma": "futuro do indicativo, 1ª pessoa do singular",
+     "def": [
+      "Fazer uso de algo para a saúde, para o próprio agrado etc."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/prendre",
+     "card": "fr-p011"
+    },
+    "repos": {
+     "lema": "repos",
+     "classe": "substantivo masculino",
+     "def": [
+      "Cessação de trabalho, de exercício, para fazer desaparecer o cansaço.",
+      "(Por elipse) O repouso eterno, a morte."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/repos",
+     "card": "fr-p645"
+    },
+    "serez#2": {
+     "lema": "être",
+     "classe": "verbo",
+     "forma": "futuro do indicativo, 2ª pessoa do plural",
+     "def": [
+      "Situar-se, encontrar-se, ficar, especificando um lugar, uma situação."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%AAtre",
+     "card": "fr-p001"
+    },
+    "foyer": {
+     "lema": "foyer",
+     "classe": "substantivo masculino",
+     "def": [
+      "Parte de um fogão de sala ou de um fogareiro onde se faz o fogo.",
+      "(Figurado) Casa, morada da família, país natal."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/foyer",
+     "card": "fr-p646"
+    },
+    "une": {
+     "lema": "un",
+     "classe": "artigo indefinido",
+     "forma": "feminino singular",
+     "def": [
+      "Determinante colocado diante de um substantivo que representa um objeto animado ou inanimado que não se conhece com precisão. O artigo indefinido tem muitas vezes o sentido de «um (1) entre outros»."
+     ],
+     "defEs": "Artículo indefinido: una (femenino): «une vieille accroupie», una vieja acurrucada.",
+     "defEn": "Indefinite article: a, an: «une vieille accroupie», an old woman crouching.",
+     "wiki": "https://fr.wiktionary.org/wiki/un",
+     "g": "gramatical"
+    },
+    "vieille#2": {
+     "lema": "vieille",
+     "classe": "substantivo feminino",
+     "def": [
+      "Mulher idosa."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/vieille",
+     "card": "fr-p041"
+    },
+    "accroupie": {
+     "lema": "accroupi",
+     "classe": "adjetivo",
+     "forma": "feminino singular",
+     "def": [
+      "Cuja postura resulta do agachamento, que tem os joelhos dobrados, apoiada na ponta dos pés."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/accroupi",
+     "card": "fr-p703"
+    },
+    "regrettant": {
+     "lema": "regretter",
+     "classe": "verbo",
+     "forma": "particípio presente",
+     "def": [
+      "Ter desprazer pela perda, pela privação de alguma coisa."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/regretter",
+     "card": "fr-p647"
+    },
+    "amour": {
+     "lema": "amour",
+     "classe": "substantivo masculino",
+     "def": [
+      "Sentimento intenso e agradável que incita os seres a se unirem."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/amour",
+     "card": "fr-p547"
+    },
+    "fier": {
+     "lema": "fier",
+     "classe": "adjetivo",
+     "def": [
+      "Orgulhoso, cheio de si, arrogante."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/fier#French",
+     "card": "fr-p576"
+    },
+    "dédain": {
+     "lema": "dédain",
+     "classe": "substantivo masculino",
+     "def": [
+      "Desprezo expresso pelo ar, pelo tom ou pelo porte."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/d%C3%A9dain",
+     "card": "fr-p704"
+    },
+    "vivez": {
+     "lema": "vivre",
+     "classe": "verbo",
+     "forma": "imperativo, 2ª pessoa do plural",
+     "def": [
+      "Empregar utilmente a vida, gozar a vida."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/vivre",
+     "card": "fr-p293"
+    },
+    "si": {
+     "lema": "si",
+     "classe": "conjunção",
+     "def": [
+      "No caso de, com a condição de que, supondo que."
+     ],
+     "defEs": "Conjunción: si: «si m’en croyez», si me creéis.",
+     "defEn": "Conjunction: if: «si m’en croyez», if you believe me.",
+     "wiki": "https://fr.wiktionary.org/wiki/si",
+     "g": "gramatical"
+    },
+    "m’": {
+     "lema": "m’",
+     "classe": "pronome pessoal",
+     "forma": "elisão de «me»",
+     "def": [
+      "Elisão do pronome pessoal «me» diante de vogal ou «h» mudo."
+     ],
+     "defEs": "Pronombre «me» delante de vocal: me: «si m’en croyez», si me creéis.",
+     "defEn": "Pronoun «me» before a vowel: me: «si m’en croyez», if you believe me.",
+     "wiki": "https://fr.wiktionary.org/wiki/m%E2%80%99",
+     "g": "gramatical"
+    },
+    "en#2": {
+     "lema": "en",
+     "classe": "pronome pessoal",
+     "def": [
+      "(Substituindo um complemento indireto com «de») Disso, disto, daquilo."
+     ],
+     "defEs": "Pronombre «en»: de ello, en esto: «si m’en croyez», si me creéis en esto.",
+     "defEn": "Pronoun «en»: of it, about it: «si m’en croyez», if you believe me in this.",
+     "wiki": "https://fr.wiktionary.org/wiki/en",
+     "g": "gramatical"
+    },
+    "croyez": {
+     "lema": "croire",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do plural",
+     "def": [
+      "Remeter-se a alguém ou a alguma coisa (fiar-se no seu juízo)."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/croire",
+     "card": "fr-p648"
+    },
+    "attendez": {
+     "lema": "attendre",
+     "classe": "verbo",
+     "forma": "imperativo, 2ª pessoa do plural",
+     "def": [
+      "Adiar uma ação até um limite temporal."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/attendre",
+     "card": "fr-p018"
+    },
+    "à#3": {
+     "lema": "à",
+     "classe": "preposição",
+     "def": [
+      "Introduz um complemento circunstancial de tempo."
+     ],
+     "defEs": "Preposición: a, hasta (tiempo): «n’attendez à demain», no esperéis a mañana.",
+     "defEn": "Preposition: till, until (time): «n’attendez à demain», do not wait till tomorrow.",
+     "wiki": "https://fr.wiktionary.org/wiki/%C3%A0",
+     "g": "gramatical"
+    },
+    "demain": {
+     "lema": "demain",
+     "classe": "advérbio",
+     "def": [
+      "O dia que se seguirá imediatamente àquele em que se está."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/demain",
+     "card": "fr-p059"
+    },
+    "cueillez": {
+     "lema": "cueillir",
+     "classe": "verbo",
+     "forma": "imperativo, 2ª pessoa do plural",
+     "def": [
+      "Destacar frutos, flores, legumes dos seus galhos ou dos seus talos."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/cueillir",
+     "card": "fr-p649"
+    },
+    "dès": {
+     "lema": "dès",
+     "classe": "preposição",
+     "def": [
+      "A partir de (um tempo)."
+     ],
+     "defEs": "Preposición: desde, ya: «dès aujourd’hui», desde hoy.",
+     "defEn": "Preposition: from, as early as: «dès aujourd’hui», starting today.",
+     "wiki": "https://fr.wiktionary.org/wiki/d%C3%A8s",
+     "g": "gramatical"
+    },
+    "aujourd’hui": {
+     "lema": "aujourd’hui",
+     "classe": "advérbio",
+     "def": [
+      "Na data presente, neste mesmo dia."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/aujourd%E2%80%99hui",
+     "card": "fr-p049"
+    },
+    "roses": {
+     "lema": "rose",
+     "classe": "substantivo feminino",
+     "forma": "plural",
+     "def": [
+      "Flor da roseira."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/rose",
+     "card": "fr-p650"
+    },
+    "vie": {
+     "lema": "vie",
+     "classe": "substantivo feminino",
+     "def": [
+      "Todo o espaço de tempo que vai do nascimento até a morte."
+     ],
+     "wiki": "https://fr.wiktionary.org/wiki/vie",
+     "card": "fr-p250"
+    }
+   },
+   "fila": 4
   },
   {
    "id": "victor-hugo/demain-des-l-aube",
