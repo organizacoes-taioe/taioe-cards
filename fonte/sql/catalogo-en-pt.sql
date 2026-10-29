@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso en-pt, leva 8e8af979, 2594 cards.
+-- Catálogo do curso en-pt, leva 8336bfaf, 2594 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('en-pt', '8e8af979', '2594 cards')
+values ('en-pt', '8336bfaf', '2594 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -2337,7 +2337,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-pt', 'en-p1340', 'palavra', 'C2', array['substantivo', 'cultura']::text[], null, '2af5a298', array['o castiçal', 'o cálice', 'o relicário', 'o sino', 'o turíbulo']::text[]),
   ('en-pt', 'en-p1341', 'palavra', 'C2', array['verbo', 'cotidiano']::text[], null, 'cf003429', array['estalar', 'ranger', 'tilintar', 'trovejar', 'zumbir']::text[]),
   ('en-pt', 'en-p1342', 'palavra', 'C2', array['adjetivo', 'casa']::text[], null, '92ea53c4', array['empoeirado', 'encerado', 'escorregadio', 'felpudo', 'rachado']::text[]),
-  ('en-pt', 'en-p1343', 'palavra', 'C2', array['substantivo', 'social']::text[], null, 'e11e1687', array['o malandro', 'o miserável', 'o sabichão', 'o sortudo', 'o valentão']::text[]),
+  ('en-pt', 'en-p1343', 'palavra', 'C2', array['substantivo', 'social']::text[], null, '58027561', array['o desgraçado', 'o malandro', 'o sabichão', 'o sortudo', 'o valentão']::text[]),
   ('en-pt', 'en-p1344', 'palavra', 'C2', array['substantivo', 'cotidiano']::text[], null, '5cece95d', array['a ameaça', 'a cobrança', 'a sentença', 'o alívio', 'o castigo']::text[]),
   ('en-pt', 'en-p1345', 'palavra', 'C2', array['substantivo', 'cultura']::text[], null, '6317447d', array['o absinto', 'o nepente', 'o néctar', 'o veneno', 'o vinho']::text[]),
   ('en-pt', 'en-p1346', 'palavra', 'C2', array['verbo', 'comida']::text[], null, '496e9769', array['beber a grandes goles', 'bebericar aos poucos', 'cuspir no chão', 'provar com cuidado', 'recusar com nojo']::text[]),
