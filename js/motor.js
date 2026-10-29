@@ -1735,6 +1735,45 @@ window.Motor = (function () {
     return ((escolha && escolha.textos) || []).map(id => porId[id]).filter(t => t && !textoTerminado(t, lidos));
   }
 
+  /* Os textos que soltam palavras: os ativos e, quando todas as palavras de um
+     deles já estrearam, o que vem depois dele — a parte seguinte da obra ou,
+     no automático, o próximo da fila —, até SEGUINTES_NO_MAXIMO adiante.
+     Pedido do Gere (29/10/2026): sem isso, as palavras novas paravam entre um
+     texto e o outro, à espera de a pessoa dominar o último verso. O verso e
+     o trecho continuam a esperar o texto ficar ativo (textosAtivos). */
+  const SEGUINTES_NO_MAXIMO = 2;
+
+  function textoSeguinte(texto, escolha, textos, estados, arquivados, lidos) {
+    if (texto.obra) {
+      const s = parteSeguinte(texto, textos);
+      return s && !textoTerminado(s, lidos) ? s : null;
+    }
+    if (escolha && escolha.propria) return null;
+    const e = escolhaDosTextos({ textos: [texto.id], propria: false }, textos, estados, arquivados, lidos);
+    const id = e && e.textos && e.textos[0];
+    return (id && id !== texto.id && (textos || []).find(t => t.id === id)) || null;
+  }
+
+  function textosQueSoltamPalavras(escolha, textos, estados, arquivados, lidos) {
+    const ativos = textosAtivos(escolha, textos, lidos);
+    const saida = ativos.slice(), ja = new Set(ativos.map(t => t.id));
+    for (const t of ativos) {
+      /* o texto adiante se procura como se o de agora já tivesse terminado */
+      const ate = Object.assign({}, lidos);
+      let atual = t;
+      for (let n = 0; n < SEGUINTES_NO_MAXIMO; n++) {
+        if (situacaoDaFrase(atual, estados || {}, arquivados).naoVistas.length) break;
+        ate[atual.id] = ate[atual.id] || 'adiante';
+        const seg = textoSeguinte(atual, escolha, textos, estados, arquivados, ate);
+        if (!seg || ja.has(seg.id)) break;
+        ja.add(seg.id);
+        saida.push(seg);
+        atual = seg;
+      }
+    }
+    return saida;
+  }
+
   /* As palavras que os textos ativos ainda não mostraram, cada texto na ordem
      de leitura, em rodízio entre eles. */
   function palavrasDosTextos(ativos, estados, arquivados) {
@@ -4134,7 +4173,7 @@ window.Motor = (function () {
     urgencia, cumpriu, escolherNaFila, podeVoltar, INTERVALO_MINIMO, vezDoDominado, ESPACO_DOMINADO,
     ALVO_IDA_MIN, ALVO_IDA_MAX, alvoDaFila, acertoRecente, atrasadoQueFura,
     MAX_TEXTOS, TEXTO_A_CADA, vezDoTexto, idaFechada, dominadosNoTotal, versosDoTexto, versosProntos, versosVistos, textoTerminado,
-    andamentoDoTexto, textosAutomaticos, escolhaDosTextos, textosAtivos, palavrasDosTextos, ehLeitura,
+    andamentoDoTexto, textosAutomaticos, escolhaDosTextos, textosAtivos, textosQueSoltamPalavras, palavrasDosTextos, ehLeitura,
     partesDaObra, parteDaVez, parteSeguinte, textoEscolhivel,
     liberado, liberadaEm, venceuEm, requeridas, arquivado, sabidaEm,
     situacaoDaFrase, atualizarEmVista, palavrasEmVista, FRASES_EM_VISTA,
