@@ -1347,5 +1347,15 @@ window.TAGS_RAW = {
   "en": "inflected form",
   "es": "forma flexionada",
   "cards": 0
+ },
+ "compreensão": {
+  "en": "comprehension",
+  "es": "comprensión",
+  "cards": 0
+ },
+ "herança": {
+  "en": "heritage",
+  "es": "herencia",
+  "cards": 0
  }
 };

@@ -343,6 +343,35 @@ const verbo = [...grupos.values()].find(g => g[0].familia !== 'caso')[0];
 ok(M.exemploDaTerminacao(verbo, { vistas: 3 }, { [verbo.id]: { vistas: 3, estreia: depois } }, {}).id === verbo.id, 'o card de verbo não gira');
 M.usarTransparencias(CARDS.map(c => Object.assign({}, c, { terminacao: undefined })));
 
+/* ═══════════ 6e. compreensão e herança (LATIM.md §13, D31 e D32) ═══════════ */
+secao('os cards de compreensão e de herança');
+M.usarTransparencias(CARDS);
+for (const tipo of ['compreensao', 'heranca']) {
+  const doTipo = CARDS.filter(c => c.tipo === tipo);
+  ok(doTipo.length >= 20, 'há cards de ' + tipo + ' (' + doTipo.length + ')');
+  const c = doTipo[0];
+  const e = M.estadoInicialDo(c);
+  const f = M.faseDe(e);
+  ok(f.modo === 'multipla' && f.direcao === IDA && M.resposta(c, f.direcao) === c.pt, tipo + ': de escolher, na ida, com a resposta em português');
+  const alt = M.alternativas(c, f.direcao, CARDS, {});
+  ok(alt.length === 5 && alt.includes(c.pt) && c.distratores.every(d => alt.includes(d)), tipo + ': as cinco alternativas são a certa e as quatro do card');
+  ok(doTipo.every(x => !x.distratores.some(d => M.conferir(x, d, IDA) === 'certo')), tipo + ': nenhuma errada é aceita');
+  const reg = acertou => M.registrar(e, { acertou, modo: 'multipla', direcao: IDA, resposta: 'x' });
+  reg(true); reg(true);
+  ok(e.etapa !== 'dominado' && M.modoDe(e) === 'multipla', tipo + ': dois acertos ainda não dominam');
+  reg(true);
+  ok(e.etapa === 'dominado' && e.voltaEm && M.modoDe(e) === 'multipla', tipo + ': três seguidos dominam, e ele volta por data, de escolher');
+}
+const q = CARDS.find(c => c.tipo === 'compreensao' && c.de);
+const longe = new Date(Date.now() - 3 * 864e5).toISOString();
+const todos = Object.fromEntries(q.requerTodas.map(id => [id, { etapa: 'dominado', dominadoEm: longe, vistas: 3 }]));
+ok(M.liberado(q, todos, Date.now(), {}), 'a compreensão destrava com as palavras da frase dominadas');
+delete todos[q.requerTodas[0]];
+ok(!M.liberado(q, todos, Date.now(), {}), 'sem uma delas, não');
+const expressao = CARDS.find(c => c.tipo === 'heranca' && c.familia === 'expressao');
+const derivado = CARDS.find(c => c.tipo === 'heranca' && c.familia === 'derivado');
+ok(M.liberado(expressao, {}, Date.now(), {}) && !M.liberado(derivado, {}, Date.now(), {}), 'a expressão vem desde o começo; a palavra derivada espera o lema');
+
 /* ═══════════ 7. transparência e desafio ═══════════ */
 secao('transparência e desafio');
 M.usarTransparencias([{ id: 'x1', tipo: 'palavra', transp: 'parecida' }, { id: 'x2', tipo: 'palavra', transp: 'total' }]);

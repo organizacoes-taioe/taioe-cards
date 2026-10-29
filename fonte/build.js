@@ -387,7 +387,9 @@ for (const bruto of cards) {
   /* o contraste (PLANO.md §10) também: ele só se escolhe, e pode repetir a frase de outro card */
   /* a flexão do latim (LATIM.md §3.8) é a forma de um lema: «nostrum» de nos e de noster são
      dois cards, e «is» é o card do lema e o da flexão (a repetição se confere no bloco do latim) */
-  const deForma = c.tipo === 'forma' || c.tipo === 'contraste' || c.tipo === 'flexao';
+  /* a compreensão e a herança (LATIM.md §13) repetem a frase de outro card, ou o lema: a frente
+     delas é a pergunta */
+  const deForma = ['forma', 'contraste', 'flexao', 'compreensao', 'heranca'].includes(c.tipo);
   const igual = !deForma && textos.get(normalizar(c[L.texto]));
   const homografo = igual && ((bruto.homografos || []).includes(igual) ||
     ((cards.find(x => x.id === igual) || {}).homografos || []).includes(c.id));
@@ -412,7 +414,7 @@ for (const bruto of cards) {
     if (typeof c[campo] !== 'string' || !c[campo].trim()) erros.push('falta "' + campo + '": ' + onde);
   }
   /* o card de conceito (cards/LATIM.md §3.5) só existe no latim */
-  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma', 'contraste', 'flexao'] : ['palavra', 'frase', 'contraste']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
+  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma', 'contraste', 'flexao', 'compreensao', 'heranca'] : ['palavra', 'frase', 'contraste']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
   if (!NIVEIS.includes(c.nivel)) erros.push('nível inválido: ' + onde);
   if (!Array.isArray(c.tags) || !c.tags.length) erros.push('sem tags: ' + onde);
 
@@ -657,8 +659,9 @@ for (const { idioma, cards } of baralhos) {
   for (const c of cards) {
     if (c.requerTodas === undefined) continue;
     const onde = c.id + ' (' + c[L.texto] + ')';
-    /* o contraste do latim também espera conceitos; ele se confere no bloco do latim */
-    if (c.tipo === 'contraste') continue;
+    /* o contraste do latim também espera conceitos, e a compreensão e a herança (LATIM.md §13)
+       esperam o que a pergunta pede; os três se conferem no bloco do latim */
+    if (['contraste', 'compreensao', 'heranca'].includes(c.tipo)) continue;
     if (c.tipo !== 'frase') { erros.push('só frase pode ter "requerTodas": ' + onde); continue; }
     if (!Array.isArray(c.requerTodas)) { erros.push('"requerTodas" tem de ser uma lista: ' + onde); continue; }
     if (!c.texto) anotadas++;
@@ -867,6 +870,35 @@ for (const { idioma, cards } of baralhos) {
       for (const g of c.conceitos || []) {
         const alvo = PORID.get(g);
         if (!alvo || alvo.tipo !== 'conceito') erros.push('conceito que não existe: ' + onde + ' → ' + g);
+      }
+      continue;
+    }
+    /* a compreensão e a herança (LATIM.md §13, D31 e D32): a pergunta escrita no card, e o que
+       elas esperam. A compreensão espera as palavras da frase (ou do conjunto de contraste); a
+       palavra derivada, o lema; a expressão, nada */
+    if (c.tipo === 'compreensao' || c.tipo === 'heranca') {
+      if (typeof c.pergunta !== 'string' || !/\?$/.test(c.pergunta.trim())) erros.push('card sem «pergunta» terminada em «?»: ' + onde);
+      const req = Array.isArray(c.requerTodas) ? c.requerTodas : null;
+      if (!req) erros.push('card sem «requerTodas»: ' + onde);
+      for (const r of req || []) {
+        const alvo = PORID.get(r);
+        if (!alvo || !['palavra', 'flexao', 'conceito'].includes(alvo.tipo)) erros.push('«requerTodas» aponta para card que não é palavra, flexão nem conceito: ' + onde + ' → ' + r);
+      }
+      if (c.tipo === 'compreensao') {
+        if (!(req || []).length) erros.push('compreensão que não espera palavra nenhuma: ' + onde);
+        if (c.de && !(PORID.get(c.de) && PORID.get(c.de).la === c.la)) erros.push('compreensão com a frase diferente da de «de»: ' + onde);
+        /* o «conjunto» espaça as perguntas da mesma frase (nunca duas seguidas): o do contraste de
+           onde a frase vem, ou, na frase com «de», um nome próprio */
+        if (c.conjunto && !c.de && !cards.some(k => k.tipo === 'contraste' && k.conjunto === c.conjunto && [k.la].concat(k.distratoresLa || []).includes(c.la))) {
+          erros.push('compreensão com frase que não é do conjunto de contraste: ' + onde);
+        }
+        if (!c.de && !c.conjunto) erros.push('compreensão sem «de» nem «conjunto» (de onde vem a frase conferida): ' + onde);
+      } else {
+        if (!['derivado', 'expressao'].includes(c.familia)) erros.push('herança sem família (derivado, expressao): ' + onde);
+        if (c.familia === 'derivado' && !((req || []).length === 1 && (PORID.get(req[0]) || {}).tipo === 'palavra' && PORID.get(req[0]).la === c.la)) {
+          erros.push('palavra derivada que não espera o card do lema: ' + onde);
+        }
+        if (c.familia === 'expressao' && (req || []).length) erros.push('expressão com «requerTodas» (tem de ser vazia): ' + onde);
       }
       continue;
     }

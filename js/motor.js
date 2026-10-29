@@ -2328,10 +2328,11 @@ window.Motor = (function () {
        — quem já provou o espanhol→português não volta à estaca zero. */
     const inversa = ehVolta(r.direcao) && !ehContraste(est.id);
     const jaDominado = est.etapa === 'dominado';
-    if ((ehContraste(est.id) || ehConceito(est.id) || ehFlexaoDeCaso(est.id)) && r.acertou && !jaDominado) {
-      /* o card de contraste (§3.7), desde 24/10/2026 o de conceito (§3.5) e desde 26/10/2026 a
-         flexão de nome (§3.8): só múltipla escolha; três acertos seguidos o dominam, e daí em
-         diante ele volta por data, como os outros */
+    if ((ehContraste(est.id) || ehConceito(est.id) || ehFlexaoDeCaso(est.id) || deEscolherSempre(est.id)) && r.acertou && !jaDominado) {
+      /* o card de contraste (§3.7), desde 24/10/2026 o de conceito (§3.5), desde 26/10/2026 a
+         flexão de nome (§3.8) e desde 29/10/2026 os de compreensão e de herança (§13): só
+         múltipla escolha; três acertos seguidos o dominam, e daí em diante ele volta por data,
+         como os outros */
       if (est.seguidas >= ACERTOS_PARA_VIRAR) {
         est.etapa = 'dominado';
         if (!est.dominadoEm) est.dominadoEm = new Date().toISOString();
@@ -2453,6 +2454,8 @@ window.Motor = (function () {
     if (est && (ehConceito(est.id) || ehForma(est.id))) return { direcao: IDA, modo: 'multipla' };
     /* e a flexão de nome, que pergunta o caso (pedido do Gere, 26/10/2026) */
     if (est && ehFlexaoDeCaso(est.id)) return { direcao: IDA, modo: 'multipla' };
+    /* e os de compreensão e de herança (LATIM.md §13, D31 e D32) */
+    if (est && deEscolherSempre(est.id)) return { direcao: IDA, modo: 'multipla' };
     /* o card de leitura só conhece a ida, também quando dominado; no modo trilhas, todos */
     if (est && (soIda() || ehLeitura(est.id))) {
       if (est.etapa === 'dominado' || est.etapa === 'escrita') return { direcao: IDA, modo: 'escrita' };
@@ -2511,6 +2514,16 @@ window.Motor = (function () {
      conceitos dos casos estão dominados («requerTodas»). */
   function ehContraste(id) { return TIPO[id] === 'contraste'; }
   function ehConceito(id) { return TIPO[id] === 'conceito'; }
+
+  /* ── os cards de compreensão e de herança (LATIM.md §13, D31 e D32, pedido do Gere, 29/10/2026) ──
+     A compreensão mostra uma frase latina e pergunta, em português, pelo sentido: «Quem vence?»
+     em *Omnia vincit Amor*. Só acerta quem lê a terminação, sem nome de caso nenhum. A herança
+     mostra o que o latim deixou no português: a palavra que vem do lema, ou a expressão latina
+     ao pé da letra (*per capita*, «por cabeças»). Os dois trazem a pergunta no card
+     («pergunta»), só se escolhem, e três acertos seguidos os dominam, como o contraste. */
+  function ehCompreensao(id) { return TIPO[id] === 'compreensao'; }
+  function ehHeranca(id) { return TIPO[id] === 'heranca'; }
+  function deEscolherSempre(id) { return ehCompreensao(id) || ehHeranca(id); }
 
   /* O card de forma acertado já disse o que tinha a dizer: fora de todas as filas. */
   function encerrado(id, est) {
@@ -2912,6 +2925,8 @@ window.Motor = (function () {
     }
     /* na flexão, as outras formas do mesmo lema, escritas no card (LATIM.md §3.8) */
     if (card.tipo === 'flexao') return embaralhar([card.pt, ...(card.distratores || []).slice(0, 4)]);
+    /* na compreensão e na herança (§13), as quatro escritas no card */
+    if (card.tipo === 'compreensao' || card.tipo === 'heranca') return embaralhar([card.pt, ...(card.distratores || []).slice(0, 4)]);
     const lingua = linguaDaResposta(direcao);
     const certa = card[CAMPOS[lingua].certa];
     /* Responder na língua que o baralho ensina é produzir, e aí não há quatro
@@ -4263,7 +4278,7 @@ window.Motor = (function () {
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
-    ehForma, ehContraste, ehConceito, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
+    ehForma, ehContraste, ehConceito, ehCompreensao, ehHeranca, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     ACERTOS_QUE_SOLTAM,
     DIA_DAS_TERMINACOES, ativoDaTerminacao, flexaoPuxada, adormecido, quemConta, exemploDaTerminacao,
     erroDeGenero, formasAceitas, LIMITES, cortar,
