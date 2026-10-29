@@ -13,7 +13,10 @@ frases) vira um card só, o da primeira vez em que aparece.
 
 A nota soma três sinais (LATIM.md §3.6): a terminação ambígua (quantos casos, ou tempos e modos,
 a forma pode ter no índice, formas.py), o caso ou o tempo pouco natural para quem fala português,
-e a forma irregular. Do CORTE para cima, o card é perguntado sempre («sempre»: true).
+e a forma irregular. Do CORTE para cima, «sempre» é true (o painel da lista ainda o mostra).
+
+Desde 29/10/2026 (LATIM.md §13, D28) só se pergunta a forma que, sozinha, teria mais de uma
+leitura («ambigua»: true): ali é a frase que decide. O vocativo igual ao nominativo não conta.
 
 Desde 24/10/2026 os cards de forma e de conceito são só de escolher (pedido do Gere), e as quatro
 alternativas erradas são as que mais se confundem com a certa: primeiro as outras leituras que a
@@ -246,6 +249,7 @@ def gerar():
                     'conceitos': [conceitos[resposta]] if resposta in conceitos else [],
                     'dificuldade': nota,
                     'sempre': nota >= CORTE,
+                    'ambigua': ambiguidade(fam, resposta, w, lema_card.get('la', '')) >= 1,
                 })
     return cards
 
@@ -296,7 +300,8 @@ if __name__ == '__main__':
         for c in sorted(cards, key=lambda c: -c['dificuldade']):
             print(f"{c['dificuldade']:4.1f} {'★' if c['sempre'] else ' '} {c['id']:14} {c['la']:13} {c['pt']:24} ← {c['frase'][:50]}")
         sempre = sum(c['sempre'] for c in cards)
-        print(f'{len(cards)} cards, {sempre} sempre, {len(cards) - sempre} por sorteio')
+        ambiguas = sum(c['ambigua'] for c in cards)
+        print(f'{len(cards)} cards, {sempre} sempre, {ambiguas} ambíguos (os que se perguntam)')
     else:
         SAIDA.write_text(json.dumps(cards, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
         print(f'{len(cards)} cards → {SAIDA.relative_to(AQUI.parent.parent)}')

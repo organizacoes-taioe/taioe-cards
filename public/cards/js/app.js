@@ -99,6 +99,19 @@ window.TaioeCardsApp = function (ctx) {
      pronomes, de sum e de possum, e as formas das frases de uso) entram uma a cada quatro vagas */
   const FLEXAO_DE_LEITURA = new Set(CARDS.filter(c => c.tipo === 'frase' && (c.texto || (Array.isArray(c.requerTodas) && !c.requerTodas.length)))
     .flatMap(c => (c.palavras || []).map(flexaoDe).filter(Boolean)));
+  /* desde 29/10/2026 (LATIM.md §13, D29), a flexão de uma frase de uso só entra quando a frase está
+     perto (os lemas dela sabidos), e a que nenhuma frase pede (a das tabelas), uma a cada dez vagas */
+  const FRASES_DE_USO_DA_FLEXAO = new Map();
+  CARDS.forEach(c => {
+    if (c.tipo !== 'frase' || c.texto || !Motor.requeridas(c).length) return;
+    Motor.requeridas(c).forEach(r => {
+      if ((PORID_FONTE[r] || {}).tipo !== 'flexao') return;
+      if (!FRASES_DE_USO_DA_FLEXAO.has(r)) FRASES_DE_USO_DA_FLEXAO.set(r, []);
+      FRASES_DE_USO_DA_FLEXAO.get(r).push(c);
+    });
+  });
+  const FLEXAO_EM_FRASE = new Set(CARDS.filter(c => c.tipo === 'frase').flatMap(c => Motor.requeridas(c))
+    .filter(r => (PORID_FONTE[r] || {}).tipo === 'flexao'));
   /* a pergunta do card de conceito, pela família */
   const ENUNCIADO_DO_CONCEITO = {
     caso: 'card.enunciado.conceito.caso', verbo: 'card.enunciado.conceito.verbo', voz: 'card.enunciado.conceito.voz',
@@ -295,7 +308,7 @@ window.TaioeCardsApp = function (ctx) {
        A transparente total também: conta como dominada e nunca é servida
        (volta se for reativada). */
     const fora = id => Motor.arquivado(id, p.arquivados) || Motor.transparenteTotal(id) ||
-      Motor.encerrado(id, p.cards[id]);
+      Motor.encerrado(id, p.cards[id]) || Motor.adormecido(id, p.cards);
 
     /* A ordem que já existia é a dica de quem vem primeiro. «p.fila» é o
        formato antigo, de fila única: quem vinha de lá se distribui pelas
@@ -495,8 +508,12 @@ window.TaioeCardsApp = function (ctx) {
     if (c.tipo === 'palavra') return TZ_PALAVRAS.has(id) || deTexto.has(id);
     if (c.tipo === 'conceito') return true;
     if (c.tipo === 'forma') return formaDaTrilha(c, ativosIds, p);
-    /* a flexão espera o card do lema: o dicionário primeiro, depois cada forma */
-    if (c.tipo === 'flexao') return !!(p.cards[c.lema] && p.cards[c.lema].vistas) || Motor.arquivado(c.lema, p.arquivados || {});
+    /* a flexão espera o card do lema: o dicionário primeiro, depois cada forma; e não estreia a
+       que repete uma terminação já estudada, nem a variante (LATIM.md §13, Motor.adormecido) */
+    if (c.tipo === 'flexao') {
+      return (!!(p.cards[c.lema] && p.cards[c.lema].vistas) || Motor.arquivado(c.lema, p.arquivados || {})) &&
+        !Motor.adormecido(id, p.cards);
+    }
     if (c.texto) return ativosIds.has(c.texto);
     return true;
   }
@@ -619,13 +636,15 @@ window.TaioeCardsApp = function (ctx) {
      (a frase, pelos «conceitos» dela; a palavra do texto, pelos do primeiro trecho em que ela
      aparece). A estreia de um conceito não conta na alternância. */
   function ordenarTrilhas(p) {
-    const CADA = 2, FORMAS_SEGUIDAS = 2, CADA_FLEXAO_DE_TABELA = 3;
+    const CADA = 2, FORMAS_SEGUIDAS = 2, CADA_FLEXAO_DE_USO = 3, CADA_FLEXAO_DE_TABELA = 9;
     const ehConceito = id => (PORID[id] || {}).tipo === 'conceito';
     const ehForma = id => (PORID[id] || {}).tipo === 'forma';
     const ehFlexao = id => (PORID[id] || {}).tipo === 'flexao';
-    /* o card de forma que só o erro puxou sai quando o erro foi vencido (Motor.formaPronta) */
+    /* o card de forma que só o erro puxou sai quando o erro foi vencido (Motor.formaPronta), e a
+       flexão que adormeceu depois de entrar na lista, quando o grupo dela ganhou card (LATIM.md §13) */
     const ativosAgora = new Set(textosAtivosDe(p).map(x => x.id));
-    p.ineditos = p.ineditos.filter(id => !ehForma(id) || formaDaTrilha(PORID[id], ativosAgora, p));
+    p.ineditos = p.ineditos.filter(id => (!ehForma(id) || formaDaTrilha(PORID[id], ativosAgora, p)) &&
+      !(ehFlexao(id) && Motor.adormecido(id, p.cards)));
     const pendentes = new Set(p.ineditos), postos = new Set();
     const pega = id => (pendentes.has(id) && !postos.has(id) ? (postos.add(id), [id]) : []);
     const ehPresa = id => { const c = PORID[id] || {}; return (c.tipo === 'frase' || c.tipo === 'contraste') && Motor.requeridas(c).length > 0; };
@@ -655,12 +674,18 @@ window.TaioeCardsApp = function (ctx) {
       (f.palavras || []).forEach(x => { if (x.c) zero.push(...pega(x.c)); });
       (f.palavras || []).forEach(x => { const fx = flexaoDe(x); if (fx) zero.push(...pega(fx)); });
     }
-    /* as flexões que nenhuma leitura pede ainda (a tabela, a frase de uso), na ordem em que os
-       lemas estrearam; ficam fora do resto e entram uma a cada quatro vagas */
+    /* as flexões que nenhuma leitura pede ainda, na ordem em que os lemas estrearam; ficam fora
+       do resto (LATIM.md §13, D29): a de frase de uso só quando a frase está perto (os lemas
+       dela sabidos), uma a cada quatro vagas; a que nenhuma frase pede (as tabelas dos pronomes,
+       de sum e de possum), uma a cada dez; a de um texto que não está escolhido espera */
     const estreiaDoLema = id => (p.cards[PORID[id].lema] || {}).estreouNa || 0;
     const deTabela = p.ineditos.filter(id => ehFlexao(id) && !postos.has(id))
       .sort((a, b) => estreiaDoLema(a) - estreiaDoLema(b) || CARDS.indexOf(PORID[a]) - CARDS.indexOf(PORID[b]));
     deTabela.forEach(id => postos.add(id));
+    const perto = id => (FRASES_DE_USO_DA_FLEXAO.get(id) || []).some(f => Motor.requeridas(f)
+      .every(r => (PORID[r] || {}).tipo !== 'palavra' || Motor.sabidaEm(r, p.cards, p.arquivados) !== Infinity));
+    const doUso = deTabela.filter(perto);
+    const soDeTabela = deTabela.filter(id => !FLEXAO_EM_FRASE.has(id));
     const resto = p.ineditos.filter(id => !postos.has(id) && !ehConceito(id) && !ehForma(id));
     const todasAsEstreias = Object.keys(p.cards).filter(id => p.cards[id].estreouNa !== undefined && !ehConceito(id))
       .sort((x, y) => p.cards[y].estreouNa - p.cards[x].estreouNa);
@@ -670,8 +695,11 @@ window.TaioeCardsApp = function (ctx) {
     let fila = zero.concat(resto);
     if (dosTextos.length) fila = naVez(fila, dosTextos, desde(id => palavrasDosTextos.has(id)), CADA);
     if (antigas.length) fila = naVez(fila, antigas, desde(ehPresa), CADA);
-    if (deTabela.length) {
-      fila = naVez(fila, deTabela.map(id => [id]), desde(id => ehFlexao(id) && !FLEXAO_DE_LEITURA.has(id)), CADA_FLEXAO_DE_TABELA);
+    if (doUso.length) {
+      fila = naVez(fila, doUso.map(id => [id]), desde(id => ehFlexao(id) && FRASES_DE_USO_DA_FLEXAO.has(id) && !FLEXAO_DE_LEITURA.has(id)), CADA_FLEXAO_DE_USO);
+    }
+    if (soDeTabela.length) {
+      fila = naVez(fila, soDeTabela.map(id => [id]), desde(id => ehFlexao(id) && !FLEXAO_EM_FRASE.has(id)), CADA_FLEXAO_DE_TABELA);
     }
     fila = frescas.concat(fila);
     /* Os cards de forma (LATIM.md §3.6) vêm logo depois do verso que os destravou, o verso mais
@@ -938,11 +966,24 @@ window.TaioeCardsApp = function (ctx) {
   /* o conjunto do card de contraste que acabou de sair: o irmão dele espera um card */
   let conjuntoAnterior = null;
 
+  /* ── nunca mais de dois de gramática seguidos (LATIM.md §13, D30, pedido do Gere, 29/10/2026) ──
+     No latim, depois de dois cards de gramática (conceito, forma, flexão, contraste), o próximo é
+     de outro tipo, se houver um pronto: no card novo, o primeiro de outro tipo da lista de
+     inéditos; na revisão, o mais urgente de outro tipo da mesma fila; no dominado vencido, outro
+     vencido. Sem nenhum pronto, segue a fila. Não muda o que se estuda, só a ordem. */
+  const DE_GRAMATICA = new Set(['conceito', 'forma', 'flexao', 'contraste']);
+  const ehDeGramatica = id => DE_GRAMATICA.has((PORID[id] || {}).tipo);
+  let ultimosTirados = [];
+  function doisDeGramatica() {
+    return TRILHAS && ultimosTirados.length === 2 && ultimosTirados.every(ehDeGramatica);
+  }
+
   function tirarProximoId() {
     const id = escolherProximoId();
     const e = id && estadoParaFila(id);
     desdeDominado = e && e.etapa === 'dominado' ? 0 : desdeDominado + 1;
     conjuntoAnterior = id ? conjuntoDe(id) : null;
+    if (id) ultimosTirados = ultimosTirados.concat([id]).slice(-2);
     return id;
   }
 
@@ -973,7 +1014,24 @@ window.TaioeCardsApp = function (ctx) {
     const filaDe = k => (k === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs);
     const tirar = (k, id) => filaDe(k).splice(filaDe(k).indexOf(id), 1)[0];
     const e = Motor.escolherProximo(c);
-    if (e && e.grupo === 'novo') return proximoNovo();
+    /* depois de dois de gramática, outro tipo que esteja pronto (LATIM.md §13, D30): o card novo de
+       gramática espera a vez seguinte se houver revisão de outro tipo; a revisão de gramática, se
+       houver revisão ou card novo de outro tipo */
+    const outroTipo = doisDeGramatica() ? id => !ehDeGramatica(id) : null;
+    if (e && e.grupo === 'novo') {
+      const id = proximoNovo();
+      const rev = outroTipo && id && ehDeGramatica(id) ? revisaoDeOutroTipo(c, outroTipo) : null;
+      if (!rev) return id;
+      progresso.ineditos.unshift(id);
+      return rev;
+    }
+    if (outroTipo && e) {
+      const escolhido = e.fila === 'dominados' ? progresso.dominados[dominadoMaisProximo(c.agora)] : e.id;
+      if (escolhido && ehDeGramatica(escolhido)) {
+        const outro = revisaoDeOutroTipo(c, outroTipo) || novoDeOutroTipo();
+        if (outro) return outro;
+      }
+    }
     if (e && e.fila === 'dominados') return progresso.dominados.splice(dominadoMaisProximo(c.agora), 1)[0];
     if (e) return tirar(e.fila, e.id);
 
@@ -991,6 +1049,28 @@ window.TaioeCardsApp = function (ctx) {
       if (melhor === null || d < melhor.desde) melhor = { k, id, desde: d };
     }));
     return melhor ? tirar(melhor.k, melhor.id) : null;
+  }
+
+  /* A revisão de outro tipo que está pronta (D30): a mais urgente das filas, depois o dominado
+     vencido. Tira da fila e devolve o id, ou null. */
+  function revisaoDeOutroTipo(c, serve) {
+    for (const k of ['esPt', 'ptEs']) {
+      const outros = c.livres[k].filter(serve);
+      const j = Motor.escolherNaFila(outros, progresso.cards, c.respostas);
+      if (j < 0) continue;
+      const fila = k === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs;
+      return fila.splice(fila.indexOf(outros[j]), 1)[0];
+    }
+    const v = dominadoMaisProximo(c.agora, serve);
+    return v !== null ? progresso.dominados.splice(v, 1)[0] : null;
+  }
+
+  /* O primeiro card novo de outro tipo (D30), ou null. */
+  function novoDeOutroTipo() {
+    if (!progresso.ineditos.length) return null;
+    ordenarIneditos(progresso);
+    const i = progresso.ineditos.findIndex(id => !ehDeGramatica(id));
+    return i >= 0 ? progresso.ineditos.splice(i, 1)[0] : null;
   }
 
   function proximoNovo() {
@@ -1014,10 +1094,15 @@ window.TaioeCardsApp = function (ctx) {
     }
     ordenarIneditos(progresso);
     const garantido = semNenhumEmJogo();
-    if (garantido) return progresso.ineditos.splice(progresso.ineditos.indexOf(garantido), 1)[0];
     /* o contraste do mesmo conjunto do card anterior espera um card (LATIM.md §3.7) */
-    const i = conjuntoAnterior ? progresso.ineditos.findIndex(id => conjuntoDe(id) !== conjuntoAnterior) : 0;
-    return progresso.ineditos.splice(Math.max(0, i), 1)[0];
+    let i = garantido ? progresso.ineditos.indexOf(garantido)
+      : Math.max(0, conjuntoAnterior ? progresso.ineditos.findIndex(id => conjuntoDe(id) !== conjuntoAnterior) : 0);
+    /* depois de dois de gramática, o primeiro de outro tipo, se houver (LATIM.md §13, D30) */
+    if (doisDeGramatica() && ehDeGramatica(progresso.ineditos[i])) {
+      const outro = progresso.ineditos.findIndex(id => !ehDeGramatica(id));
+      if (outro >= 0) i = outro;
+    }
+    return progresso.ineditos.splice(i, 1)[0];
   }
 
   /* ── sempre um contraste em jogo ──
@@ -1056,12 +1141,13 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   /* O índice do dominado que já venceu a data — ou, com «agora» nulo, o de
-     data mais próxima, vencido ou não. */
-  function dominadoMaisProximo(agora) {
+     data mais próxima, vencido ou não. Com «serve», só entre os que ela aceita. */
+  function dominadoMaisProximo(agora, serve) {
     let melhor = -1;
     progresso.dominados.forEach((id, i) => {
       const e = estadoParaFila(id);
       if (!e) return;
+      if (serve && !serve(id)) return;
       if (agora && Motor.esperando(e, agora)) return;
       const atual = melhor >= 0 ? estadoParaFila(progresso.dominados[melhor]) : null;
       if (!atual || String(e.voltaEm) < String(atual.voltaEm)) melhor = i;
@@ -1176,6 +1262,16 @@ window.TaioeCardsApp = function (ctx) {
     /* Sem estado, a fase é a da estreia: a «parecida» estreia na volta
        (Motor.estadoInicialDo); o presumido aparece como dominado. */
     const est = estadoParaFila(id) || Motor.estadoInicialDo(PORID[id] || { id: id });
+    /* uma terminação, um card (LATIM.md §13, D26): o card de uma terminação de nome mostra a cada
+       vez uma das palavras dela, com as erradas e a nota daquela palavra; a resposta é a mesma, e o
+       estado, o dele */
+    if (cardAtual.tipo === 'flexao' && cardAtual.terminacao) {
+      const ex = Motor.exemploDaTerminacao(PORID[id], est, progresso.cards, progresso.arquivados);
+      if (ex && ex.id !== id) {
+        cardAtual = Object.assign({}, cardAtual, { la: ex.la, lema: ex.lema, distratores: ex.distratores,
+          nota: ex.nota, sentido: ex.sentido, conceitos: ex.conceitos, exemploDe: ex.id });
+      }
+    }
     const fase = Motor.faseDe(est);
     modoAtual = fase.modo;
     direcaoAtual = fase.direcao;
