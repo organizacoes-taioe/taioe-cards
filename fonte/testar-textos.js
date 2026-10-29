@@ -142,5 +142,27 @@ ok(M.escolhaDosTextos(null, AUTO, { q1: dominado('q1') }, {}, {}, AGORA).textos.
   'o automático não pula para a parte 2 enquanto a 1 não terminou');
 ok(M.escolhaDosTextos(null, AUTO, {}, {}, { 'obra-1': 'x' }, AGORA).textos.join() === 'obra-2', 'terminada a 1, vem a 2');
 
+/* ═══════════ 6. sem gargalo entre um texto e o outro (pedido de 29/10/2026) ═══════════ */
+secao('as palavras do texto que vem adiante');
+const ids = l => l.map(t => t.id).join();
+const soltam = (escolha, textos, estados, lidos) => M.textosQueSoltamPalavras(escolha, textos, estados, {}, lidos || {});
+const minhaObra = { textos: ['obra-1'], em: 'z', propria: true };
+ok(ids(soltam(minhaObra, COM_PARTES, {})) === 'obra-1', 'com palavra por estrear, só a parte ativa');
+ok(ids(soltam(minhaObra, COM_PARTES, { q1: visto('q1') })) === 'obra-1,obra-2', 'todas as da parte 1 em jogo: solta a 2');
+ok(ids(soltam(minhaObra, COM_PARTES, { q1: visto('q1'), q2: visto('q2') })) === 'obra-1,obra-2,obra-3',
+  'a 3 vem quando a 2 também já soltou todas');
+const PA = Object.assign(poema('oa-1', undefined, [['u1']]), { obra: 'oa', parte: 1 });
+const PB = Object.assign(poema('oa-2', undefined, [['u2']]), { obra: 'oa', parte: 2 });
+const PC = Object.assign(poema('oa-3', undefined, [['u3']]), { obra: 'oa', parte: 3 });
+const obraA = { textos: ['oa-1'], em: 'z', propria: true };
+ok(ids(soltam(obraA, [PA, PB, PC], { u1: visto('u1') })) === 'oa-1,oa-2', 'adiante, só até a primeira parte com palavra por estrear');
+const autoP1 = { textos: ['p1'], em: 'z', propria: false };
+const p1Visto = { a: visto('a'), b: visto('b'), c: visto('c'), d: visto('d') };
+ok(ids(soltam(autoP1, TEXTOS, p1Visto)) === 'p1,p2', 'no automático, o próximo da fila');
+ok(ids(soltam({ textos: ['p1'], em: 'z', propria: true }, TEXTOS, p1Visto)) === 'p1',
+  'texto escolhido pela pessoa, sem ser parte: nada adiante');
+ok(M.palavrasDosTextos(soltam(autoP1, TEXTOS, p1Visto), p1Visto, {}).join() === 'e,f', 'as palavras de adiante entram na fila');
+ok(ids(M.textosAtivos(autoP1, TEXTOS, {})) === 'p1', 'mas o texto ativo, que mostra os versos, continua o mesmo');
+
 console.log('\n  ' + feitas + ' conferências' + (falhas ? ', ' + falhas + ' falharam' : ', todas passaram') + '\n');
 process.exit(falhas ? 1 : 0);

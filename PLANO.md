@@ -1090,6 +1090,11 @@ usuário vá escolhendo aprender uma parte por vez.» Vale para todas as língua
   (I, 8–11)»; em «Os que você já leu», as partes lidas ficam juntas, sob a obra.
 - ✔ **Fim de uma parte**: o aviso mostra a parte inteira e oferece «Aprender a parte 2» (que entra na
   vaga dela) ou «Escolher outro texto». No automático, a fila (`fila`) já leva à parte seguinte.
+- ✔ **Sem gargalo entre as partes** (Gere, 29/10): quando todas as palavras da parte ativa já
+  estrearam, as palavras da parte seguinte começam a entrar (até duas partes adiante), na mesma vaga
+  dos textos; no automático, as do próximo texto da fila (`Motor.textosQueSoltamPalavras`). O verso
+  da parte seguinte só aparece quando ela fica ativa. Dentro de um texto isso já era assim: as
+  palavras vêm na ordem de leitura, sem esperar o verso de antes.
 - O pedido da Biblioteca (`/cards/?texto=<id de uma parte>`) vale pela parte da vez da obra.
 - Nada muda no banco: a escolha guarda ids de texto, e cada parte tem o seu.
 - Na prosa (9.1, «Quero aprender o resto»), o resto vira as partes seguintes.
@@ -1107,8 +1112,12 @@ vivas, «fazendo os ajustes necessários para ensinar as coisas mais relevantes�
 
 - **O card.** A frase na língua de quem estuda e, como alternativas, de 4 a 5 frases da língua
   ensinada que confundem com a certa. É só múltipla escolha, também na revisão. Entra quando as
-  palavras do conjunto estão dominadas (`requerTodas`, só os cards de palavra que existem), não
-  fura a fila e entra intercalado, como as frases antigas. Três acertos seguidos o dominam, e depois
+  palavras do conjunto estão dominadas (`requerTodas`, só os cards de palavra que existem) e entra
+  intercalado, como as frases antigas. **Sempre um em jogo** (Gere, 29/10: até então nenhum tinha
+  aparecido para ele, porque disputavam a vez com centenas de frases liberadas): se nenhum contraste
+  está visto e por dominar, a vaga seguinte de card novo é do primeiro contraste liberado
+  (`semNenhumEmJogo` no `app.js`); no latim, o mesmo vale para os conceitos de gramática, sem o
+  limite de um. Três acertos seguidos o dominam, e depois
   ele volta por data. Dois do mesmo conjunto nunca vêm seguidos. Os cards de um conjunto (de 2 a 4)
   têm as mesmas alternativas. A nota traz a regra, o sentido de cada alternativa certa e o porquê
   de cada errada (✗).

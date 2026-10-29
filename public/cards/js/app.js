@@ -474,8 +474,16 @@ window.TaioeCardsApp = function (ctx) {
     }
     return Motor.textosAtivos(tx.emVista.escolha, TEXTOS, tx.lidos);
   }
+  /* Os ativos e, quando todas as palavras de um já estrearam, o texto que vem depois dele: as
+     palavras não param entre um texto e o outro (Motor.textosQueSoltamPalavras). Só para as
+     palavras; o verso e o trecho esperam o texto ficar ativo. */
+  function textosQueSoltamDe(p) {
+    textosAtivosDe(p);
+    const tx = p.textos;
+    return TEXTOS.length ? Motor.textosQueSoltamPalavras(tx.emVista.escolha, TEXTOS, p.cards, p.arquivados || {}, tx.lidos) : [];
+  }
   function palavrasDosAtivos(p) {
-    return new Set(textosAtivosDe(p).flatMap(x => Motor.requeridas(x)));
+    return new Set(textosQueSoltamDe(p).flatMap(x => Motor.requeridas(x)));
   }
 
   /* No modo trilhas, o que pode estrear: a palavra do texto zero ou de um texto escolhido; o
@@ -554,7 +562,7 @@ window.TaioeCardsApp = function (ctx) {
        TEXTO_A_CADA vagas de card novo (2,5 desde 24/10/2026: duas em cada
        cinco), na ordem de leitura e em rodízio entre os textos; saem das
        outras listas para não estrear por dois caminhos. */
-    const ativos = textosAtivosDe(p);
+    const ativos = textosQueSoltamDe(p);
     const doTexto = Motor.palavrasDosTextos(ativos, p.cards, p.arquivados || {}).filter(id => naFila.has(id));
     const doTextoSet = new Set(doTexto);
     const pedidas = Motor.palavrasEmVista(p.emVista, PORID, p.cards, p.arquivados || {})
@@ -630,7 +638,7 @@ window.TaioeCardsApp = function (ctx) {
     const frescas = presas.filter(id => (PORID[id] || {}).tipo !== 'contraste' && agora - quando(id) < 864e5).slice(0, 2);
     const antigas = presas.filter(id => frescas.indexOf(id) < 0).map(id => [id]);
     presas.forEach(id => postos.add(id));
-    const ativos = textosAtivosDe(p);
+    const ativos = textosQueSoltamDe(p);
     const ativosIds = new Set(ativos.map(x => x.id));
     const conceitosDaPalavra = id => {
       const tr = TRECHOS.find(c => ativosIds.has(c.texto) && (c.requerTodas || []).indexOf(id) >= 0);
@@ -1005,9 +1013,35 @@ window.TaioeCardsApp = function (ctx) {
       if (i >= 0) return progresso.ineditos.splice(i, 1)[0];
     }
     ordenarIneditos(progresso);
+    const garantido = semNenhumEmJogo();
+    if (garantido) return progresso.ineditos.splice(progresso.ineditos.indexOf(garantido), 1)[0];
     /* o contraste do mesmo conjunto do card anterior espera um card (LATIM.md §3.7) */
     const i = conjuntoAnterior ? progresso.ineditos.findIndex(id => conjuntoDe(id) !== conjuntoAnterior) : 0;
     return progresso.ineditos.splice(Math.max(0, i), 1)[0];
+  }
+
+  /* ── sempre um contraste em jogo ──
+     Pedido do Gere (29/10/2026): o contraste não aparecia. Ele espera as palavras dele, e
+     depois disputa a vez com as frases liberadas, que são centenas e vêm antes. Agora, se
+     nenhum contraste está em jogo (visto e ainda não dominado), a vaga de card novo é do
+     primeiro contraste já liberado; dominado esse, o próximo pula a fila na vaga seguinte.
+     No latim vale o mesmo para os conceitos de gramática, sem o limite de um: só não pode
+     ficar sem nenhum. Devolve o id que pula a fila, ou null. */
+  const SEMPRE_EM_JOGO = TRILHAS ? ['contraste', 'conceito'] : ['contraste'];
+  function semNenhumEmJogo() {
+    const arq = progresso.arquivados || {};
+    const emJogo = new Set();
+    for (const id in progresso.cards) {
+      const e = progresso.cards[id], c = PORID[id];
+      if (c && e && e.vistas && e.etapa !== 'dominado' && !Motor.arquivado(id, arq)) emJogo.add(c.tipo);
+    }
+    for (const tipo of SEMPRE_EM_JOGO) {
+      if (emJogo.has(tipo)) continue;
+      const candidatos = progresso.ineditos.filter(id => (PORID[id] || {}).tipo === tipo);
+      const id = candidatos.find(x => !conjuntoAnterior || conjuntoDe(x) !== conjuntoAnterior) || candidatos[0];
+      if (id) return id;
+    }
+    return null;
   }
 
   /* As quatro estreias mais recentes, pela resposta em que cada card estreou
@@ -1876,6 +1910,15 @@ window.TaioeCardsApp = function (ctx) {
             !Motor.arquivado(c.id, progresso.arquivados) && daTrilha(c.id, null, ativosIds, progresso)) novas.push(c);
       });
     }
+    /* e as palavras do texto que vem adiante, quando o de agora já soltou todas as dele
+       (textosQueSoltamDe): no modo trilhas e no card de leitura, elas só entram na lista agora */
+    const jaNovas = new Set(novas.map(c => c.id));
+    palavrasDosAtivos(progresso).forEach(id => {
+      const c = PORID[id];
+      if (c && c.tipo === 'palavra' && !progresso.cards[id] && !jaEsta.has(id) && !jaNovas.has(id) &&
+          !Motor.arquivado(id, progresso.arquivados) && !Motor.transparenteTotal(id) &&
+          !Motor.conhecidaSemEstado(id, progresso.cards)) novas.push(c);
+    });
     if (!novas.length) return;
     novas.forEach(c => progresso.ineditos.push(c.id));
     ordenarIneditos(progresso);
@@ -3197,6 +3240,7 @@ window.TaioeCardsApp = function (ctx) {
     alvo.innerHTML = '<p class="recompensa">' + aviso + '</p>' + cartaDoTexto(txt, r.versos, r.de) +
       '<div class="botoes-texto">' + botoes + '</div>';
     ligarCarta(alvo);
+    demonstrarToque(alvo);
     alvo.querySelectorAll('[data-acao]').forEach(b => b.addEventListener('click', () => {
       const acao = b.dataset.acao;
       if (acao === 'soltos') gravarEscolha([]);
@@ -3284,6 +3328,43 @@ window.TaioeCardsApp = function (ctx) {
     return html + fonte;
   }
 
+  /* ── o toque de mentira ──
+     Pedido do Gere (29/10/2026): quando o verso novo aparece, um dedo de mentira toca uma palavra
+     dele, a nota abre e, um pouco depois, fecha. Mostra sem explicar que a palavra se toca. Para
+     de aparecer neste aparelho quando a pessoa toca uma palavra por conta própria. */
+  const CHAVE_TOCOU = 'cards:tocou-palavra';
+  let toqueDemo = null;
+  function jaTocouPalavra() {
+    try { return !!localStorage.getItem(CHAVE_TOCOU); } catch (e) { return false; }
+  }
+  function tocouPalavra() {
+    if (toqueDemo) { toqueDemo.forEach(clearTimeout); toqueDemo = null; }
+    try { localStorage.setItem(CHAVE_TOCOU, new Date().toISOString()); } catch (e) { /* sem armazenamento: segue */ }
+  }
+  function demonstrarToque(raiz) {
+    if (toqueDemo) { toqueDemo.forEach(clearTimeout); toqueDemo = null; }
+    if (jaTocouPalavra()) return;
+    const tem = b => { const c = b.closest('.carta-texto'), txt = c && TEXTO_POR_ID[c.dataset.texto];
+      return !!(txt && (txt.destinos || {})[b.dataset.ch]); };
+    const b = [...raiz.querySelectorAll('.verso-novo .palavra-texto')].find(tem) ||
+      [...raiz.querySelectorAll('.palavra-texto')].find(tem);
+    if (!b) return;
+    const aberta = () => { const n = b.closest('.carta-texto').querySelector('.nota-palavra');
+      return !!(n && n.dataset.de === b.dataset.ch); };
+    toqueDemo = [
+      setTimeout(() => {
+        const dedo = document.createElement('span');
+        dedo.className = 'toque-demo';
+        dedo.setAttribute('aria-hidden', 'true');
+        b.classList.add('com-toque');
+        b.appendChild(dedo);
+        setTimeout(() => { dedo.remove(); b.classList.remove('com-toque'); }, 2000);
+      }, 700),
+      setTimeout(() => { if (b.isConnected && !aberta()) b.click(); }, 1500),
+      setTimeout(() => { if (b.isConnected && aberta()) b.click(); toqueDemo = null; }, 4300)
+    ];
+  }
+
   function ligarCarta(raiz) {
     raiz.querySelectorAll('.carta-texto').forEach(carta => {
       const txt = TEXTO_POR_ID[carta.dataset.texto];
@@ -3291,6 +3372,7 @@ window.TaioeCardsApp = function (ctx) {
       carta.addEventListener('click', ev => {
         const b = ev.target.closest('.palavra-texto');
         if (!b) return;
+        if (ev.isTrusted) tocouPalavra();
         const aberta = carta.querySelector('.nota-palavra');
         const linha = b.closest('.paragrafo') || b.closest('.verso');
         const mesma = aberta && aberta.dataset.de === b.dataset.ch && aberta.previousElementSibling === linha;
