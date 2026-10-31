@@ -1111,13 +1111,15 @@ O card de contraste nasceu no latim (`LATIM.md` §3.7). Em 23/10 o Gere pediu o 
 vivas, «fazendo os ajustes necessários para ensinar as coisas mais relevantes».
 
 - **O card.** A frase na língua de quem estuda e, como alternativas, de 4 a 5 frases da língua
-  ensinada que confundem com a certa. É só múltipla escolha, também na revisão. Entra quando as
-  palavras do conjunto estão dominadas (`requerTodas`, só os cards de palavra que existem) e entra
-  intercalado, como as frases antigas. **Sempre um em jogo** (Gere, 29/10: até então nenhum tinha
-  aparecido para ele, porque disputavam a vez com centenas de frases liberadas): se nenhum contraste
-  está visto e por dominar, a vaga seguinte de card novo é do primeiro contraste liberado
-  (`semNenhumEmJogo` no `app.js`); no latim, o mesmo vale para os conceitos de gramática, sem o
-  limite de um. Três acertos seguidos o dominam, e depois
+  ensinada que confundem com a certa. É só múltipla escolha, também na revisão. **Sempre
+  exatamente um em jogo** (Gere, 29/10, refeito em 31/10: até então nenhum tinha aparecido para
+  ele, porque esperavam as palavras dominadas): visto e por dominar há um só; sem nenhum, a
+  próxima vaga de card novo é de um contraste, mas só quando o sorteio dá card novo (nada fura o
+  sorteio entre novo e revisão). Não espera as palavras: vem o que tem menos requisitos
+  (`requerTodas`) por saber; no empate, o mais fácil (A1, A2, B1) e a ordem do arquivo
+  (`contrasteDaVez` no `app.js`). Não entra pelos inéditos. No latim vale o mesmo, e os conceitos
+  de gramática seguem com «pelo menos um em jogo» (`semNenhumEmJogo`). Três acertos seguidos o
+  dominam, e depois
   ele volta por data. Dois do mesmo conjunto nunca vêm seguidos. Os cards de um conjunto (de 2 a 4)
   têm as mesmas alternativas. A nota traz a regra, o sentido de cada alternativa certa e o porquê
   de cada errada (✗).

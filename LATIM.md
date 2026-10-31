@@ -332,9 +332,9 @@ mesmo jeito, que mostrem as sutilezas da gramática.
     as mesmas em todo o conjunto, e de 2 a 4 cards por conjunto.
   - No motor (`ehContraste`): sempre `VOLTA` (pergunta em português, resposta em latim) e
     `multipla`, também na revisão; três acertos seguidos → `dominado`, com `voltaEm` por data.
-  - No app: entra como frase presa (`recolherFrasesLiberadas`), mas não fura a fila (não é
-    «fresca»: os conceitos destravam muitos de uma vez), e entra um a cada duas estreias;
-    `semConjuntoSeguido` e `conjuntoAnterior` impedem dois do mesmo conjunto seguidos, na estreia
+  - No app (desde 31/10): um só em jogo, sem esperar as palavras nem os conceitos; dominado ele,
+    a próxima vaga de card novo é do contraste com menos requisitos por saber (`contrasteDaVez`,
+    `cards/PLANO.md` §10); não passa pelos inéditos; `semConjuntoSeguido` e `conjuntoAnterior` impedem dois do mesmo conjunto seguidos, na estreia
     e nas filas. Sem «Já conheço». O catálogo leva as quatro frases latinas como `alternativas`.
 
 ### 3.8 Flexão (`la-v…`): cada forma do texto, com o sentido (aprovado e feito em 24/10)

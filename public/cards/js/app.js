@@ -536,6 +536,8 @@ window.TaioeCardsApp = function (ctx) {
   function ordenarIneditos(p) {
     /* uma palavra avulsa a cada seis estreias de palavra (pedido do Gere) */
     const PALAVRAS_PEDIDAS_POR_AVULSA = 5;
+    /* o contraste não mora nos inéditos: entra um de cada vez, por contrasteDaVez */
+    if (p.ineditos) p.ineditos = p.ineditos.filter(id => (PORID[id] || {}).tipo !== 'contraste');
     if (!p.ineditos || p.ineditos.length < 2) return;
     if (TRILHAS) { ordenarTrilhas(p); return; }
     /* A frase que a palavra acabou de destravar fura a fila. Estar aqui já
@@ -1013,7 +1015,7 @@ window.TaioeCardsApp = function (ctx) {
       arquivados: progresso.arquivados,
       alvo: Motor.alvoDaFila(progresso.diario),
       respostas: respostas,
-      temIneditos: progresso.ineditos.length > 0,
+      temIneditos: progresso.ineditos.length > 0 || !!contrasteDaVez(),
       livres: { esPt: progresso.filaEsPt.filter(livre), ptEs: progresso.filaPtEs.filter(livre) },
       vencidos: progresso.dominados.filter(id =>
         estadoParaFila(id) && !Motor.esperando(estadoParaFila(id), agora)).length,
@@ -1086,6 +1088,13 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   function proximoNovo() {
+    /* sem contraste em jogo, a vaga de card novo é dele (ver contrasteDaVez) */
+    const contraste = contrasteDaVez();
+    if (contraste) {
+      const i = progresso.ineditos.indexOf(contraste);
+      if (i >= 0) progresso.ineditos.splice(i, 1);
+      return contraste;
+    }
     /* A vaga de card novo pode ser de um desafio (PLANO.md, 7.4): o motor
        diz se é a hora e qual; a frase ainda presa vem como prévia. */
     const desafio = Motor.escolherDesafio(CARDS, progresso.cards, contextoDoDesafio());
@@ -1117,28 +1126,45 @@ window.TaioeCardsApp = function (ctx) {
     return progresso.ineditos.splice(i, 1)[0];
   }
 
-  /* ── sempre um contraste em jogo ──
-     Pedido do Gere (29/10/2026): o contraste não aparecia. Ele espera as palavras dele, e
-     depois disputa a vez com as frases liberadas, que são centenas e vêm antes. Agora, se
-     nenhum contraste está em jogo (visto e ainda não dominado), a vaga de card novo é do
-     primeiro contraste já liberado; dominado esse, o próximo pula a fila na vaga seguinte.
-     No latim vale o mesmo para os conceitos de gramática, sem o limite de um: só não pode
-     ficar sem nenhum. Devolve o id que pula a fila, ou null. */
-  const SEMPRE_EM_JOGO = TRILHAS ? ['contraste', 'conceito'] : ['contraste'];
-  function semNenhumEmJogo() {
+  /* ── sempre um contraste em jogo, e só um ──
+     Pedido do Gere (29/10/2026, refeito em 31/10): há sempre exatamente um card de contraste em
+     jogo (visto e ainda não dominado). Sem nenhum, a próxima vaga de card novo é de um contraste,
+     mas só quando o sorteio dá card novo: nada fura o sorteio entre novo e revisão. Ele não
+     espera mais as palavras: vem o que tem menos palavras (e, no latim, conceitos) por saber; no
+     empate, o mais fácil (A1, A2, B1), depois a ordem do arquivo, e o irmão do conjunto que
+     acabou de sair por último. O contraste não entra pelos inéditos (ordenarIneditos o tira de
+     lá), e os dominados voltam na revisão, como qualquer card. Devolve o id, ou null. */
+  const NIVEL_DO_CONTRASTE = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4, C2: 5 };
+  const CONTRASTES = CARDS.filter(c => c.tipo === 'contraste');
+  const antes = (a, b) => { for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return a[i] < b[i]; return false; };
+  function contrasteDaVez() {
+    if (!CONTRASTES.length) return null;
     const arq = progresso.arquivados || {};
-    const emJogo = new Set();
+    let melhor = null, chave = null;
+    for (let i = 0; i < CONTRASTES.length; i++) {
+      const c = CONTRASTES[i], e = progresso.cards[c.id];
+      if (Motor.arquivado(c.id, arq)) continue;
+      if (e && e.vistas) {
+        if (e.etapa !== 'dominado') return null;   // já há um em jogo
+        continue;
+      }
+      const faltam = Motor.requeridas(c).filter(r => String(r)[0] === '+' || Motor.sabidaEm(r, progresso.cards, arq) === Infinity).length;
+      const k = [faltam, NIVEL_DO_CONTRASTE[c.nivel] || 0, conjuntoAnterior && c.conjunto === conjuntoAnterior ? 1 : 0, i];
+      if (!chave || antes(k, chave)) { melhor = c.id; chave = k; }
+    }
+    return melhor;
+  }
+
+  /* No latim, também sempre um conceito de gramática em jogo, sem o limite de um (29/10/2026):
+     sem nenhum, a vaga de card novo é do primeiro conceito da lista. Devolve o id, ou null. */
+  function semNenhumEmJogo() {
+    if (!TRILHAS) return null;
+    const arq = progresso.arquivados || {};
     for (const id in progresso.cards) {
       const e = progresso.cards[id], c = PORID[id];
-      if (c && e && e.vistas && e.etapa !== 'dominado' && !Motor.arquivado(id, arq)) emJogo.add(c.tipo);
+      if (c && c.tipo === 'conceito' && e && e.vistas && e.etapa !== 'dominado' && !Motor.arquivado(id, arq)) return null;
     }
-    for (const tipo of SEMPRE_EM_JOGO) {
-      if (emJogo.has(tipo)) continue;
-      const candidatos = progresso.ineditos.filter(id => (PORID[id] || {}).tipo === tipo);
-      const id = candidatos.find(x => !conjuntoAnterior || conjuntoDe(x) !== conjuntoAnterior) || candidatos[0];
-      if (id) return id;
-    }
-    return null;
+    return progresso.ineditos.find(id => (PORID[id] || {}).tipo === 'conceito') || null;
   }
 
   /* As quatro estreias mais recentes, pela resposta em que cada card estreou
@@ -2000,8 +2026,8 @@ window.TaioeCardsApp = function (ctx) {
     const jaEsta = new Set(progresso.ineditos);
     /* no modo trilhas, o trecho só entra se o texto dele estiver escolhido */
     const ativosIds = TRILHAS ? new Set(textosAtivosAgora().map(x => x.id)) : null;
-    /* e o card de contraste (LATIM.md §3.7), que espera as palavras e os conceitos dele */
-    const novas = CARDS.filter(c => ['frase', 'contraste', 'compreensao', 'heranca'].includes(c.tipo) && Motor.requeridas(c).length &&
+    /* o card de contraste não entra por aqui: um de cada vez, por contrasteDaVez (31/10/2026) */
+    const novas = CARDS.filter(c => ['frase', 'compreensao', 'heranca'].includes(c.tipo) && Motor.requeridas(c).length &&
       !progresso.cards[c.id] && !jaEsta.has(c.id) && !Motor.arquivado(c.id, progresso.arquivados) &&
       (!ativosIds || !c.texto || ativosIds.has(c.texto)) &&
       Motor.liberado(c, progresso.cards, agora, progresso.arquivados));
