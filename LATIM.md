@@ -213,8 +213,8 @@ seguidas**, e então sai de vez. Era **só por escrito**; desde 24/10 é **só d
 conceito (escrever «nominativo» toda vez cansava), com as quatro erradas que mais se confundem com a
 certa: as outras leituras que a mesma forma teria fora da frase primeiro, depois os pares que mais se
 trocam (`CONFUSAO` em `fonte/latim/cards_de_forma.py`, que grava o campo `distratores`).
-- O card: o verso (ou a primeira frase) inteiro, a palavra destacada, «Em que caso está a palavra
-  destacada?», campo de escrever. Sai do build, da anotação que trechos e frases já têm (`palavras[].f`);
+- O card: o verso (ou a primeira frase) inteiro, a palavra destacada, «Qual o caso da palavra
+  destacada?» (até 31/10, «Em que caso está…»), campo de escrever. Sai do build, da anotação que trechos e frases já têm (`palavras[].f`);
   nenhuma ficha escrita à mão. Um card por ocorrência; a mesma forma no mesmo caso, de novo no mesmo
   texto (*nobis* dativo, duas vezes no Pai-Nosso), vira um card só. Nomes próprios ficam de fora.
 - Aceita o caso com ou sem o número e as abreviações (`acus.`, `abl.`); erro de letra é «quase», e
@@ -343,7 +343,8 @@ entender: «Não bastou ver as palavras.» O card da palavra mostra só o dicion
 «ele»), e ninguém perguntava *id*, *faciam* ou *requiris* antes do verso. «Vamos agora botar card
 para tudo. Se ficar excessivo, depois a gente vai ajustando.»
 
-- **O card.** A forma sozinha e, embaixo, pequeno, o enunciado do lema («de is, ea, id»); a
+- **O card.** A forma sozinha (até 31/10 vinha embaixo, pequeno, o enunciado do lema, «de is, ea,
+  id»; saiu a pedido do Gere, porque era dica: o lema aparece só na nota, depois da resposta); a
   pergunta «O que quer dizer esta forma?»; a resposta é o sentido em português **com a gramática
   dentro**: *id* → «isso», *eius* → «dele, dela», *faciam* → «que eu faça», *requiris* →
   «perguntas», *Domini* → «do Senhor». Múltipla escolha e depois duas escritas, como o card de
@@ -353,8 +354,9 @@ para tudo. Se ficar excessivo, depois a gente vai ajustando.»
   a forma aparece.
 - **Nos nomes, o caso** (pedido do Gere, 26/10: «para os casos, isso fica bem confuso»; contraproposta
   aprovada como recomendada). Substantivo, adjetivo e pronome (277 cards; `familia: "caso"`)
-  perguntam «Em que caso está esta forma?», e a resposta é o caso e o número, **todos os que a forma
-  pode ter fora da frase** (*aquae* → «genitivo ou dativo singular; nominativo plural»): é a
+  perguntam «Qual o caso dessa forma?» (texto dele, 31/10), e a resposta é o caso e o número, **todos os
+  que a forma pode ter fora da frase**, com o número primeiro (*aquae* → «singular: genitivo ou dativo;
+  plural: nominativo»; desde 31/10, para a errada do plural se ver logo; `flexao_caso.py`, `texto()`): é a
   terminação que se decora, e o caso dentro da frase é o card de forma (§3.6). Sem gênero; o
   vocativo sai quando é igual ao nominativo do mesmo número. Só de escolher, também na revisão; três
   acertos seguidos dominam, e ele volta por data (como o conceito). As quatro erradas não dividem
