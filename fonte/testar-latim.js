@@ -134,11 +134,11 @@ ok(['is', 'ea', 'id'].every(f => flex(f, 'is')) && ['hic', 'haec', 'hoc'].every(
 ok(['sum', 'esse', 'fui'].every(f => flex(f, 'sum')) && ['possum', 'posse', 'potui'].every(f => flex(f, 'possum')),
   'sum e possum com as formas do enunciado');
 /* desde 26/10/2026 a flexão de nome pergunta o caso, só de escolher; a resposta escrita (o
-   sentido) ficou com os verbos */
-ok(fId.familia === 'caso' && fId.pt === 'nominativo ou acusativo singular' && /isso/.test(fId.sentido),
+   sentido) ficou com os verbos. Desde 31/10, o número vem primeiro («singular: acusativo») */
+ok(fId.familia === 'caso' && fId.pt === 'singular: nominativo ou acusativo' && /isso/.test(fId.sentido),
   'id: a resposta é o caso, e o sentido («isso») fica à parte');
-ok(fEi.pt === 'dativo singular; nominativo plural', 'ei: todos os casos que a forma pode ter');
-ok(conf(fEum, 'acusativo singular') === 'certo' && conf(fEum, 'genitivo singular') === 'errado', 'eum: o caso certo, e outro é erro');
+ok(fEi.pt === 'singular: dativo; plural: nominativo', 'ei: todos os casos que a forma pode ter');
+ok(conf(fEum, 'singular: acusativo') === 'certo' && conf(fEum, 'singular: genitivo') === 'errado', 'eum: o caso certo, e outro é erro');
 const pares = x => x.split(';').flatMap(p => (p.match(/nominativo|genitivo|dativo|acusativo|ablativo|vocativo/g) || [])
   .flatMap(k => (p.match(/singular|plural/g) || []).map(n => k + ' ' + n)));
 const DE_CASO = FLEX.filter(c => c.familia === 'caso');

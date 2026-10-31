@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-10-29",
+ "gerado_em": "2026-10-31",
  "total": 2232,
  "cards": [
   {
@@ -7904,7 +7904,7 @@
    "id": "f090",
    "tipo": "frase",
    "es": "Dicho sea de paso, tenía razón.",
-   "pt": "Aliás, ele tinha razão.",
+   "pt": "Diga-se de passagem, ele tinha razão.",
    "en": "Incidentally, he was right.",
    "aceitas": [
     "alias ele tinha razao",
@@ -7939,7 +7939,7 @@
    "tags": [
     "expressão"
    ],
-   "nota": "Equivale ao nosso 'diga-se de passagem'.",
+   "nota": "Fórmula fixa, com o subjuntivo congelado dentro: «dicho sea» é «seja dito». «Aliás» e «por sinal» também servem.",
    "notaEn": "'Dicho sea de paso' = let it be said in passing. A fixed formula with the subjunctive frozen inside it, used to slip a remark in sideways.",
    "requerTodas": [
     "p371",
@@ -43707,7 +43707,7 @@
    "id": "p340",
    "tipo": "palavra",
    "es": "rico",
-   "pt": "gostoso",
+   "pt": "gostoso (comida); rico (pessoa)",
    "en": "tasty",
    "aceitas": [
     "gostoso",
@@ -43717,7 +43717,8 @@
     "muito bom",
     "rico",
     "gostosa",
-    "saborosa"
+    "saborosa",
+    "gostoso rico"
    ],
    "aceitasEn": [
     "tasty",
@@ -43726,10 +43727,10 @@
     "lovely"
    ],
    "distratores": [
-    "salgado",
-    "apimentado",
-    "gelado",
-    "caseiro"
+    "salgado (comida); pobre (pessoa)",
+    "apimentado (comida); bravo (pessoa)",
+    "gelado (comida); frio (pessoa)",
+    "caseiro (comida); simples (pessoa)"
    ],
    "distratoresEn": [
     "salty",
@@ -59114,7 +59115,7 @@
    "id": "p751",
    "tipo": "palavra",
    "es": "la cobertura",
-   "pt": "o sinal",
+   "pt": "o sinal (do celular)",
    "en": "the signal",
    "aceitas": [
     "sinal",
@@ -59130,7 +59131,7 @@
    "distratores": [
     "a coberta",
     "a cobrança",
-    "a bateria",
+    "a bateria (do celular)",
     "a conta"
    ],
    "distratoresEn": [
@@ -80031,7 +80032,9 @@
     "Perdón, ¿me puede ayudar?",
     "Disculpe, ¿puede ayudarme?",
     "Disculpa, ¿me puedes ayudar?",
-    "Disculpa, ¿puedes ayudarme?"
+    "Disculpa, ¿puedes ayudarme?",
+    "Perdón, ¿me puedes ayudar?",
+    "Perdona, ¿me puedes ayudar?"
    ],
    "distratores": [
     "Desculpe, posso te ajudar?",
