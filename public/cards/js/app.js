@@ -124,6 +124,10 @@ window.TaioeCardsApp = function (ctx) {
   function textosVazio() {
     return { emVista: { poema: null, prosa: null, escolha: null }, lidos: {} };
   }
+  /* No modo trilhas, a tela Textos que o arranque abriu porque este aparelho ainda não tinha
+     escolha (o primeiro uso do curso neste navegador, 31/10/2026): se a escolha chegar da conta
+     antes de a pessoa mexer, vai-se para a página inicial, como depois de recarregar. */
+  let textosDaAbertura = false;
 
 
   const $ = s => document.querySelector(s);
@@ -900,6 +904,7 @@ window.TaioeCardsApp = function (ctx) {
 
   function mostrar(tela) {
     fecharMenu();
+    if (tela !== 'tela-texto') textosDaAbertura = false;
     ['tela-inicio', 'tela-comeco', 'tela-card', 'tela-painel', 'tela-config', 'tela-cards', 'tela-texto']
       .forEach(t => el[t].classList.toggle('oculto', t !== tela));
     el.dica.hidden = true;
@@ -3261,6 +3266,7 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   function gravarEscolha(ids) {
+    textosDaAbertura = false;
     const tx = progresso.textos;
     tx.emVista.escolha = { textos: ids.slice(0, Motor.MAX_TEXTOS), em: new Date().toISOString(), propria: true };
     conciliarFila(progresso);
@@ -3742,6 +3748,14 @@ window.TaioeCardsApp = function (ctx) {
       guardarComeco();
       mostrar('tela-inicio');
     }
+  }
+
+  /* Chegou progresso do servidor: a tela Textos aberta sem escolha (textosDaAbertura) dá lugar à
+     página inicial quando a conta traz textos escolhidos. */
+  function conferirTextosDaAbertura() {
+    if (!textosDaAbertura || !textosAtivosAgora().length) return;
+    textosDaAbertura = false;
+    irParaInicio();
   }
 
   function fimDoComeco(jogar) {
@@ -4375,14 +4389,14 @@ window.TaioeCardsApp = function (ctx) {
   if (!retomarComeco()) {
     if (textoParaTrocar) { renderizarTexto(textoParaTrocar); mostrar('tela-texto'); }
     /* no modo trilhas, quem ainda não escolheu texto começa pela escolha */
-    else if (TRILHAS && !textosAtivosAgora().length) abrirTexto();
+    else if (TRILHAS && !textosAtivosAgora().length) { abrirTexto(); textosDaAbertura = true; }
     else mostrar('tela-inicio');
   }
 
   Sinc = TaioeSincronia.criar({
     sb: ctx.sb, uid: ctx.uid, curso: ctx.curso,
     progresso: () => progresso,
-    aoMudar: () => { conciliarFila(progresso); salvarProgresso(); atualizarPlacar(); conferirComeco(); },
+    aoMudar: () => { conciliarFila(progresso); salvarProgresso(); atualizarPlacar(); conferirComeco(); conferirTextosDaAbertura(); },
     retrato: () => (progresso.serie && progresso.serie.length ? progresso.serie[progresso.serie.length - 1] : null),
     extras: () => {
       const x = {
