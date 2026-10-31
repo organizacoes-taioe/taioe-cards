@@ -1,11 +1,11 @@
 """O card de flexão dos nomes pergunta o caso (cards/LATIM.md §3.8, pedido do Gere de 26/10/2026):
 nos substantivos, adjetivos e pronomes, a tradução de cada forma («a rosa (objeto)») confundia
-mais do que ensinava; a pergunta passa a ser «Em que caso está esta forma?», e a resposta, o nome
-do caso: *rosam* → «acusativo singular». Os verbos, os particípios e o gerúndio continuam com o
+mais do que ensinava; a pergunta passa a ser «Qual o caso dessa forma?», e a resposta, o nome
+do caso: *rosam* → «singular: acusativo». Os verbos, os particípios e o gerúndio continuam com o
 sentido («que eu faça»).
 
 Fora da frase, metade das formas pode estar em mais de um caso (*aquae*: genitivo ou dativo
-singular, nominativo plural), e a resposta traz todos, porque é a terminação que se decora; o caso
+singular, nominativo plural), e a resposta traz todos («singular: genitivo ou dativo; plural: nominativo»), porque é a terminação que se decora; o caso
 dentro da frase é o card de forma (§3.6). Só caso e número: o gênero fica na nota, e o vocativo
 sai quando é igual ao nominativo do mesmo número. A múltipla escolha é a única etapa, e as quatro
 erradas não dividem nenhum caso com a certa: primeiro as outras formas do mesmo lema, depois os
@@ -62,11 +62,12 @@ def _lista(casos):
 
 
 def texto(ps):
-    """«genitivo ou dativo singular; nominativo plural»"""
+    """«singular: genitivo ou dativo; plural: nominativo». O número vem primeiro (pedido do Gere,
+    29/10/2026): quem lê rápido vê logo a diferença entre o singular e a errada do plural."""
     por = {n: [c for c, m in ps if m == n] for n in NUMEROS}
     if por['singular'] and sorted(por['singular']) == sorted(por['plural']):
-        return _lista(por['singular']) + ' singular ou plural'
-    return '; '.join(_lista(por[n]) + ' ' + n for n in NUMEROS if por[n])
+        return 'singular ou plural: ' + _lista(por['singular'])
+    return '; '.join(n + ': ' + _lista(por[n]) for n in NUMEROS if por[n])
 
 
 # o conceito de cada caso da resposta entra antes do card (ordenarTrilhas no app): quem responde

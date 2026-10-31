@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-en, leva e86ec671, 2200 cards.
+-- Catálogo do curso es-en, leva 406653f1, 2200 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-en', 'e86ec671', '2200 cards')
+values ('es-en', '406653f1', '2200 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -181,7 +181,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'f087', 'frase', 'B2', array['expressão']::text[], null, '64071005', array['At the end of the day, it doesn''t matter.', 'At the end of the month, I pay.', 'In short, you can count on me.', 'Once the bill is settled, we pay.', 'To close the account, it doesn''t matter.']::text[]),
   ('es-en', 'f088', 'frase', 'B2', array['expressão']::text[], null, '40a2bb81', array['Apparently, he sold it.', 'Apparently, he won''t come.', 'From what I saw, he came.', 'In his view, he won''t sell.', 'Since he was seen, he won''t come.']::text[]),
   ('es-en', 'f089', 'frase', 'B2', array['gramática', 'subjuntivo']::text[], null, 'afdfee5c', array['As long as you come, I don''t mind.', 'Counting on you coming, I will go.', 'Tell me you will come, I don''t mind.', 'With all you brought, I don''t mind.', 'With that man who came, I don''t mind.']::text[]),
-  ('es-en', 'f090', 'frase', 'B2', array['expressão']::text[], null, '9dbaec4d', array['Having said that, he left.', 'In passing, he gave the reason.', 'Incidentally, he was right.', 'On saying that, he passed.', 'Speaking quietly, he was right.']::text[]),
+  ('es-en', 'f090', 'frase', 'B2', array['expressão']::text[], null, 'a9dbc6d0', array['Having said that, he left.', 'In passing, he gave the reason.', 'Incidentally, he was right.', 'On saying that, he passed.', 'Speaking quietly, he was right.']::text[]),
   ('es-en', 'f092', 'frase', 'C1', array['expressão']::text[], null, '124e3af6', array['He is giving me space.', 'He is giving me time off.', 'He is lengthening my hours.', 'He is stretching me out.', 'He keeps stalling me.']::text[]),
   ('es-en', 'f094', 'frase', 'C1', array['expressão']::text[], null, 'c93893dd', array['A cat lives here with us.', 'Everything here is in order.', 'Someone is missing from here.', 'There is a cat shut in here.', 'There is something fishy going on here.']::text[]),
   ('es-en', 'f095', 'frase', 'C2', array['expressão', 'formal']::text[], null, 'e17b9d9e', array['Having paid the bill, he resigned.', 'Having told the whole story, he resigned.', 'In view of that, he resigned.', 'Once the count was made, he resigned.', 'With bills to pay, he resigned.']::text[]),
@@ -960,7 +960,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'u334', 'frase', 'A2', array['cidade', 'cotidiano']::text[], 'p409', '204549ba', array['We avoid the metro every day.', 'We clean the metro every day.', 'We miss the metro every day.', 'We take the metro every day.', 'We wait for the metro every day.']::text[]),
   ('es-en', 'p339', 'palavra', 'A2', array['adjetivo', 'ser', 'estar']::text[], null, 'd482510e', array['clever / ready', 'distracted / lost', 'quiet / busy', 'slow / tired', 'stubborn / late']::text[]),
   ('es-en', 'u335', 'frase', 'A2', array['adjetivo', 'família']::text[], 'p339', 'f5fc630a', array['He is a very absent minded boy.', 'He is a very bright boy.', 'He is a very quiet boy.', 'He is a very restless boy.', 'He is a very stubborn boy.', 'She is a very absent minded girl.', 'She is a very bright girl.', 'She is a very quiet girl.', 'She is a very restless girl.', 'She is a very stubborn girl.']::text[]),
-  ('es-en', 'p340', 'palavra', 'A2', array['adjetivo', 'comida']::text[], null, '5dd4fb88', array['chilled', 'homemade', 'salty', 'spicy', 'tasty']::text[]),
+  ('es-en', 'p340', 'palavra', 'A2', array['adjetivo', 'comida']::text[], null, '3195cf22', array['chilled', 'homemade', 'salty', 'spicy', 'tasty']::text[]),
   ('es-en', 'u336', 'frase', 'A2', array['comida', 'adjetivo']::text[], 'p340', '92ab27ee', array['This soup is really tasty.', 'This soup is too salty.', 'This soup is very cold.', 'This soup is very spicy.', 'This soup is very watery.']::text[]),
   ('es-en', 'p341', 'palavra', 'B1', array['adjetivo', 'gíria']::text[], null, '9313d448', array['angry', 'annoying', 'lazy', 'rude', 'stubborn']::text[]),
   ('es-en', 'u337', 'frase', 'B1', array['gíria', 'cotidiano']::text[], 'p341', 'b478a934', array['Dont be angry.', 'Dont be annoying.', 'Dont be lazy.', 'Dont be rude.', 'Dont be stubborn.']::text[]),
@@ -1382,7 +1382,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'p748', 'palavra', 'B1', array['substantivo', 'jurídico']::text[], null, '9b989c35', array['the court', 'the dungeon', 'the handcuff', 'the police station', 'the prison']::text[]),
   ('es-en', 'p749', 'palavra', 'A2', array['substantivo', 'roupa']::text[], null, '4b8b37b8', array['the T-shirt', 'the jacket', 'the plate', 'the trousers', 'the vest']::text[]),
   ('es-en', 'p750', 'palavra', 'B1', array['substantivo', 'casa']::text[], null, '121ac052', array['the barbecue', 'the fireplace', 'the heater', 'the oven', 'the stove']::text[]),
-  ('es-en', 'p751', 'palavra', 'B1', array['substantivo', 'tecnologia']::text[], null, '9180d4e1', array['the battery', 'the bill', 'the blanket', 'the charge', 'the signal']::text[]),
+  ('es-en', 'p751', 'palavra', 'B1', array['substantivo', 'tecnologia']::text[], null, 'b4b16798', array['the battery', 'the bill', 'the blanket', 'the charge', 'the signal']::text[]),
   ('es-en', 'p753', 'palavra', 'A2', array['substantivo', 'social']::text[], null, '96f2139e', array['the argument', 'the confession', 'the convention', 'the conversation', 'the conversion']::text[]),
   ('es-en', 'p754', 'palavra', 'B2', array['substantivo', 'economia']::text[], null, '956fb42d', array['the harvest', 'the seed', 'the sewing', 'the stew', 'the thing']::text[]),
   ('es-en', 'p755', 'palavra', 'C1', array['substantivo', 'expressão']::text[], null, '24822fa7', array['the barrel', 'the blame', 'the bullet', 'the butt', 'the column']::text[]),
@@ -1897,7 +1897,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'b014', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, '8cfeb7cf', array['Again.', 'No way.', 'Not bad.', 'Nothing else.', 'You''re welcome.']::text[]),
   ('es-en', 'b015', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, 'acb90721', array['Carefully.', 'Excuse me.', 'No problem.', 'No rush.', 'With pleasure.']::text[]),
   ('es-en', 'b016', 'frase', 'A2', array['primeiros passos', 'social', 'expressão']::text[], null, 'ce4e471e', array['Sorry, I don''t want to.', 'Sorry, it was an accident.', 'Sorry, it was his fault.', 'Sorry, it was on purpose.', 'Sorry, it was yesterday.']::text[]),
-  ('es-en', 'b017', 'frase', 'A1', array['primeiros passos', 'cotidiano', 'formal']::text[], null, 'a47a6f4d', array['Excuse me, can I help you?', 'Excuse me, can you call me?', 'Excuse me, can you hear me?', 'Excuse me, can you help me?', 'Excuse me, can you wait for me?']::text[]),
+  ('es-en', 'b017', 'frase', 'A1', array['primeiros passos', 'cotidiano', 'formal']::text[], null, '1d731e74', array['Excuse me, can I help you?', 'Excuse me, can you call me?', 'Excuse me, can you hear me?', 'Excuse me, can you help me?', 'Excuse me, can you wait for me?']::text[]),
   ('es-en', 'b018', 'frase', 'A1', array['primeiros passos', 'cotidiano']::text[], null, '4ccd2984', array['Maybe later.', 'No, thanks.', 'Yes, more or less.', 'Yes, of course.', 'Yes, sometimes.']::text[]),
   ('es-en', 'b019', 'frase', 'A1', array['primeiros passos', 'cotidiano']::text[], null, '2e2c4671', array['No, sorry.', 'No, thanks.', 'Not yet, thanks.', 'Yes, please.', 'Yes, thanks.']::text[]),
   ('es-en', 'b020', 'frase', 'A1', array['primeiros passos', 'cotidiano']::text[], null, '587a31cd', array['Sorry, I can''t.', 'Sorry, I didn''t hear.', 'Sorry, I don''t know.', 'Sorry, I don''t understand.', 'Sorry, I don''t want to.']::text[]),

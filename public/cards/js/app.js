@@ -1324,7 +1324,7 @@ window.TaioeCardsApp = function (ctx) {
     /* no card de conceito a pergunta vai em destaque, logo acima das alternativas (pedido do
        Gere, 21/10), e não na linha pequena do topo */
     /* o card de forma (LATIM.md §3.6) pergunta como o de conceito, e a flexão de nome também
-       (§3.8, desde 26/10/2026: «Em que caso está esta forma?») */
+       (§3.8, desde 26/10/2026; desde 31/10, «Qual o caso dessa forma?») */
     const flexaoDeCaso = cardAtual.tipo === 'flexao' && cardAtual.familia === 'caso';
     /* a compreensão e a herança (LATIM.md §13, D31 e D32) trazem a pergunta escrita no card */
     const perguntaDoCard = ['compreensao', 'heranca'].includes(cardAtual.tipo) ? cardAtual.pergunta : '';
@@ -1356,17 +1356,9 @@ window.TaioeCardsApp = function (ctx) {
     exemploAtual = cardAtual.tipo === 'conceito' ? Motor.exemploDoConceito(cardAtual, est) : null;
     if (exemploAtual) el.termo.innerHTML = comDestaque(exemploAtual.la, exemploAtual.w);
     else if (cardAtual.tipo === 'forma') el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.la, cardAtual.ocorrencia);
-    else if (cardAtual.tipo === 'flexao') {
-      /* a forma, e embaixo, pequeno, o enunciado do dicionário: «de is, ea, id» */
-      el.termo.textContent = cardAtual.la;
-      const lema = PORID[cardAtual.lema];
-      if (lema) {
-        const de = document.createElement('span');
-        de.className = 'termo-lema';
-        de.textContent = t('card.flexaoDe', { x: String(lema.enunciado || lema[L]).replace(/\s*\([^)]*\)\s*$/, '') });
-        el.termo.appendChild(de);
-      }
-    }
+    /* a flexão mostra só a forma: o enunciado do dicionário embaixo era dica (pedido do Gere,
+       31/10/2026); ele aparece depois, na nota */
+    else if (cardAtual.tipo === 'flexao') el.termo.textContent = cardAtual.la;
     else el.termo.textContent = !inversa && cardAtual.enunciado ? cardAtual.enunciado : Motor.pergunta(cardAtual, direcaoAtual);
     el.termo.classList.toggle('frase', ['frase', 'forma', 'contraste', 'compreensao'].includes(cardAtual.tipo) || !!exemploAtual);
 

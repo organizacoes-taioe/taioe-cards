@@ -244,9 +244,6 @@ button{font:inherit}
 /* o card de conceito do latim: a palavra perguntada, no exemplo */
 .termo mark.destaque{background:var(--acento-fraco);color:inherit;border-bottom:2px solid var(--acento);
   border-radius:3px;padding:0 2px;font-style:normal}
-/* o card de flexão do latim: embaixo da forma, pequeno, o lema de onde ela vem */
-.termo .termo-lema{display:block;margin-top:6px;font-size:.5em;font-weight:500;letter-spacing:0;
-  color:var(--texto-2)}
 
 /* a bandeira diz de que lado vai a tradução, para não errar a direção */
 .bandeira{font-size:22px;line-height:1.3;flex:none}

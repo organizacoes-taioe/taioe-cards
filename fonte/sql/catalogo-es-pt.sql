@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva 801c71c4, 2232 cards.
+-- Catálogo do curso es-pt, leva e1526c82, 2232 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', '801c71c4', '2232 cards')
+values ('es-pt', 'e1526c82', '2232 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -181,7 +181,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'f087', 'frase', 'B2', array['expressão']::text[], null, '64071005', array['Ao fim da conta, pagamos.', 'Em resumo, conte comigo.', 'No fim das contas, tanto faz.', 'No fim do mês, pago tudo.', 'Para fechar a conta, tanto faz.']::text[]),
   ('es-pt', 'f088', 'frase', 'B2', array['expressão']::text[], null, '40a2bb81', array['Já que foi visto, não virá.', 'Pela visão dele, não venderá.', 'Pelo que vi, ele veio.', 'Pelo visto, ele não virá.', 'Pelo visto, ele vendeu.']::text[]),
   ('es-pt', 'f089', 'frase', 'B2', array['gramática', 'subjuntivo']::text[], null, 'afdfee5c', array['Com o tal que veio, tanto faz.', 'Com tudo que você trouxe, tanto faz.', 'Contando que você venha, eu vou.', 'Contanto que você venha, tanto faz.', 'Conte que você virá, tanto faz.']::text[]),
-  ('es-pt', 'f090', 'frase', 'B2', array['expressão']::text[], null, '9dbaec4d', array['Aliás, ele tinha razão.', 'Ao dizer isso, ele passou.', 'De passagem, ele disse a razão.', 'Dito isso, ele saiu.', 'Falando baixo, ele tinha razão.']::text[]),
+  ('es-pt', 'f090', 'frase', 'B2', array['expressão']::text[], null, 'a9dbc6d0', array['Ao dizer isso, ele passou.', 'De passagem, ele disse a razão.', 'Diga-se de passagem, ele tinha razão.', 'Dito isso, ele saiu.', 'Falando baixo, ele tinha razão.']::text[]),
   ('es-pt', 'f092', 'frase', 'C1', array['expressão']::text[], null, '124e3af6', array['Ele está me alongando.', 'Ele está me dando espaço.', 'Ele está me dando folga.', 'Ele está me enrolando.', 'Ele está me esticando.']::text[]),
   ('es-pt', 'f094', 'frase', 'C1', array['expressão']::text[], null, 'c93893dd', array['Aqui está tudo certo.', 'Aqui falta alguém.', 'Aqui mora um gato.', 'Aqui tem coisa errada.', 'Aqui tem gato preso.']::text[]),
   ('es-pt', 'f095', 'frase', 'C2', array['expressão', 'formal']::text[], null, 'e17b9d9e', array['Feita a contagem, ele renunciou.', 'Havendo contado tudo, ele renunciou.', 'Tendo contas a pagar, ele renunciou.', 'Tendo isso em vista, ele renunciou.', 'Tendo pago a conta, ele renunciou.']::text[]),
@@ -960,7 +960,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u334', 'frase', 'A2', array['cidade', 'cotidiano']::text[], 'p409', '204549ba', array['A gente espera o metrô todo dia.', 'A gente evita o metrô todo dia.', 'A gente limpa o metrô todo dia.', 'A gente pega o metrô todo dia.', 'A gente perde o metrô todo dia.']::text[]),
   ('es-pt', 'p339', 'palavra', 'A2', array['adjetivo', 'ser', 'estar']::text[], null, 'd482510e', array['calado / ocupado', 'distraído / perdido', 'esperto / pronto', 'lento / cansado', 'teimoso / atrasado']::text[]),
   ('es-pt', 'u335', 'frase', 'A2', array['adjetivo', 'família']::text[], 'p339', 'f5fc630a', array['É um menino muito agitado.', 'É um menino muito calado.', 'É um menino muito distraído.', 'É um menino muito esperto.', 'É um menino muito teimoso.', 'É uma menina muito agitada.', 'É uma menina muito calada.', 'É uma menina muito distraída.', 'É uma menina muito esperta.', 'É uma menina muito teimosa.']::text[]),
-  ('es-pt', 'p340', 'palavra', 'A2', array['adjetivo', 'comida']::text[], null, '5dd4fb88', array['apimentado', 'caseiro', 'gelado', 'gostoso', 'salgado']::text[]),
+  ('es-pt', 'p340', 'palavra', 'A2', array['adjetivo', 'comida']::text[], null, '3195cf22', array['apimentado (comida); bravo (pessoa)', 'caseiro (comida); simples (pessoa)', 'gelado (comida); frio (pessoa)', 'gostoso (comida); rico (pessoa)', 'salgado (comida); pobre (pessoa)']::text[]),
   ('es-pt', 'u336', 'frase', 'A2', array['comida', 'adjetivo']::text[], 'p340', '92ab27ee', array['Essa sopa está muito apimentada.', 'Essa sopa está muito gelada.', 'Essa sopa está muito gostosa.', 'Essa sopa está muito rala.', 'Essa sopa está muito salgada.']::text[]),
   ('es-pt', 'p341', 'palavra', 'B1', array['adjetivo', 'gíria']::text[], null, '9313d448', array['bravo', 'chato', 'grosso', 'preguiçoso', 'teimoso']::text[]),
   ('es-pt', 'u337', 'frase', 'B1', array['gíria', 'cotidiano']::text[], 'p341', 'b478a934', array['Não seja brava.', 'Não seja bravo.', 'Não seja chata.', 'Não seja chato.', 'Não seja grossa.', 'Não seja grosso.', 'Não seja preguiçosa.', 'Não seja preguiçoso.', 'Não seja teimosa.', 'Não seja teimoso.']::text[]),
@@ -1382,7 +1382,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p748', 'palavra', 'B1', array['substantivo', 'jurídico']::text[], null, '9b989c35', array['a algema', 'a cadeia', 'a delegacia', 'o cárcere', 'o tribunal']::text[]),
   ('es-pt', 'p749', 'palavra', 'A2', array['substantivo', 'roupa']::text[], null, '4b8b37b8', array['a calça', 'a camiseta', 'a chapa', 'o casaco', 'o colete']::text[]),
   ('es-pt', 'p750', 'palavra', 'B1', array['substantivo', 'casa']::text[], null, '121ac052', array['a churrasqueira', 'a lareira', 'o aquecedor', 'o fogão', 'o forno']::text[]),
-  ('es-pt', 'p751', 'palavra', 'B1', array['substantivo', 'tecnologia']::text[], null, '9180d4e1', array['a bateria', 'a coberta', 'a cobrança', 'a conta', 'o sinal']::text[]),
+  ('es-pt', 'p751', 'palavra', 'B1', array['substantivo', 'tecnologia']::text[], null, 'b4b16798', array['a bateria (do celular)', 'a coberta', 'a cobrança', 'a conta', 'o sinal (do celular)']::text[]),
   ('es-pt', 'p753', 'palavra', 'A2', array['substantivo', 'social']::text[], null, '96f2139e', array['a confissão', 'a convenção', 'a conversa', 'a conversão', 'a discussão']::text[]),
   ('es-pt', 'p754', 'palavra', 'B2', array['substantivo', 'economia']::text[], null, '956fb42d', array['a coisa', 'a colheita', 'a costura', 'a semente', 'o cozido']::text[]),
   ('es-pt', 'p755', 'palavra', 'C1', array['substantivo', 'expressão']::text[], null, '24822fa7', array['a bala', 'a coluna', 'a coronha', 'a culpa', 'o cano']::text[]),
@@ -1897,7 +1897,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'b014', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, '8cfeb7cf', array['De nada.', 'De novo.', 'Nada mais.', 'Nada mal.', 'Nem pensar.']::text[]),
   ('es-pt', 'b015', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, 'acb90721', array['Com cuidado.', 'Com licença.', 'Com prazer.', 'Sem pressa.', 'Sem problema.']::text[]),
   ('es-pt', 'b016', 'frase', 'A2', array['primeiros passos', 'social', 'expressão']::text[], null, 'ce4e471e', array['Desculpa, eu não quero.', 'Desculpa, foi culpa dele.', 'Desculpa, foi de propósito.', 'Desculpa, foi ontem.', 'Desculpa, foi sem querer.']::text[]),
-  ('es-pt', 'b017', 'frase', 'A1', array['primeiros passos', 'cotidiano', 'formal']::text[], null, 'a47a6f4d', array['Desculpe, pode me ajudar?', 'Desculpe, pode me esperar?', 'Desculpe, pode me ligar?', 'Desculpe, pode me ouvir?', 'Desculpe, posso te ajudar?']::text[]),
+  ('es-pt', 'b017', 'frase', 'A1', array['primeiros passos', 'cotidiano', 'formal']::text[], null, '1d731e74', array['Desculpe, pode me ajudar?', 'Desculpe, pode me esperar?', 'Desculpe, pode me ligar?', 'Desculpe, pode me ouvir?', 'Desculpe, posso te ajudar?']::text[]),
   ('es-pt', 'b018', 'frase', 'A1', array['primeiros passos', 'cotidiano']::text[], null, '4ccd2984', array['Não, obrigado.', 'Sim, claro.', 'Sim, mais ou menos.', 'Sim, às vezes.', 'Talvez depois.']::text[]),
   ('es-pt', 'b019', 'frase', 'A1', array['primeiros passos', 'cotidiano']::text[], null, '2e2c4671', array['Ainda não, obrigado.', 'Não, desculpe.', 'Não, obrigado.', 'Sim, obrigado.', 'Sim, por favor.']::text[]),
   ('es-pt', 'b020', 'frase', 'A1', array['primeiros passos', 'cotidiano']::text[], null, '587a31cd', array['Desculpe, não entendo.', 'Desculpe, não ouvi.', 'Desculpe, não posso.', 'Desculpe, não quero.', 'Desculpe, não sei.']::text[]),
