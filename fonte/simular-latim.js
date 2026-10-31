@@ -8,7 +8,7 @@
    modo trilhas, copiada de public/cards/js/app.js: ordenarTrilhas (texto zero,
    textos escolhidos, frases presas, flexões da frase de uso perto e das tabelas,
    cards de forma depois do verso, conceitos antes de quem os pede),
-   proximoNovo (quatro frases seguidas, sempre um contraste e um conceito em
+   proximoNovo (quatro frases seguidas, sempre um só contraste e um conceito em
    jogo) e escolherProximoId (nunca três de gramática seguidos). A cópia é
    aproximada (sem os textos que vêm adiante nem o conjunto do contraste): serve
    para comparar, não para prever o dia exato. Mudou a escolha no app, mudar aqui.
@@ -123,7 +123,7 @@ const pede = id => {
 function ordenar() {
   const postos = new Set();
   const pega = (arr, id) => { if (!postos.has(id)) { postos.add(id); arr.push(id); } };
-  const presas = CARDS.filter(c => ehPresa(c.id) && !visto(c.id) && (!c.texto || ativosIds.has(c.texto)) &&
+  const presas = CARDS.filter(c => ehPresa(c.id) && c.tipo !== 'contraste' && !visto(c.id) && (!c.texto || ativosIds.has(c.texto)) &&
     M.liberado(c, p.cards, AGORA, p.arquivados)).map(c => c.id);
   const quando = id => M.venceuEm(PORID.get(id), p.cards, p.arquivados);
   presas.sort((a, b) => quando(b) - quando(a));
@@ -184,15 +184,31 @@ function proximoNovo(lista) {
     const i = lista.findIndex(id => tipo(id) === 'palavra');
     if (i >= 0) return lista[i];
   }
+  const k = contrasteDaVez();
+  if (k) return k;
   let id = null;
-  for (const t of ['contraste', 'conceito']) {
-    if (Object.keys(p.cards).some(x => tipo(x) === t && p.cards[x].vistas && p.cards[x].etapa !== 'dominado')) continue;
-    id = lista.find(x => tipo(x) === t);
-    if (id) break;
+  if (!Object.keys(p.cards).some(x => tipo(x) === 'conceito' && p.cards[x].vistas && p.cards[x].etapa !== 'dominado')) {
+    id = lista.find(x => tipo(x) === 'conceito');
   }
   id = id || lista[0];
   if (doisDeGramatica() && ehDeGramatica(id)) id = lista.find(x => !ehDeGramatica(x)) || id;
   return id;
+}
+
+/* sempre exatamente um contraste em jogo: o que tem menos requisitos por saber, o mais fácil no
+   empate, sem esperar as palavras (o contrasteDaVez do app, sem o conjunto anterior) */
+const NIVEL_K = { A1: 0, A2: 1, B1: 2 };
+function contrasteDaVez() {
+  let melhor = null, chave = null;
+  CARDS.forEach((c, i) => {
+    if (melhor === false || c.tipo !== 'contraste') return;
+    const e = p.cards[c.id];
+    if (e && e.vistas) { if (e.etapa !== 'dominado') melhor = false; return; }
+    const faltam = M.requeridas(c).filter(r => String(r)[0] === '+' || M.sabidaEm(r, p.cards, p.arquivados) === Infinity).length;
+    const k = [faltam, NIVEL_K[c.nivel] || 0, i];
+    if (!chave || k[0] < chave[0] || (k[0] === chave[0] && (k[1] < chave[1] || (k[1] === chave[1] && k[2] < chave[2])))) { melhor = c.id; chave = k; }
+  });
+  return melhor || null;
 }
 
 function dominadoMaisProximo(agora, serve) {
@@ -212,7 +228,7 @@ function escolher() {
   const livre = id => M.podeVoltar(p.cards[id], p.respostas);
   const c = {
     agora, estados: p.cards, arquivados: p.arquivados, alvo: M.alvoDaFila(p.diario), respostas: p.respostas,
-    temIneditos: lista.length > 0, livres: { esPt: p.filaEsPt.filter(livre), ptEs: p.filaPtEs.filter(livre) },
+    temIneditos: lista.length > 0 || !!contrasteDaVez(), livres: { esPt: p.filaEsPt.filter(livre), ptEs: p.filaPtEs.filter(livre) },
     vencidos: p.dominados.filter(id => !M.esperando(p.cards[id], agora)).length, desdeDominado
   };
   const e = M.escolherProximo(c);
@@ -227,7 +243,7 @@ function escolher() {
     const v = dominadoMaisProximo(agora, outroTipo);
     return v !== null ? p.dominados.splice(v, 1)[0] : null;
   };
-  if (e && e.grupo === 'novo' && lista.length) {
+  if (e && e.grupo === 'novo' && (lista.length || contrasteDaVez())) {
     const id = proximoNovo(lista);
     return (outroTipo && ehDeGramatica(id) && revisaoDeOutroTipo()) || id;
   }
