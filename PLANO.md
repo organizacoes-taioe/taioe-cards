@@ -982,6 +982,18 @@ vai ao Gere com os números e o custo, como manda a regra de agendamento. Os deg
   2,2 dias e de 4,1 para 9,1, e o de 30 dias também espera mais. Os cards já marcados mantêm a
   data: não há transição.
 
+**Quando os vencidos se acumulam (decidido em 01/11/2026).** A simulação mostrou que o espaço
+entre dominados (no máximo 1 a cada 4 cards, uns 25 a 30 por dia) fica abaixo do que vence por
+dia depois de uns 40 dias de estudo, e a fila de vencidos cresce sem parar. Pedido do Gere:
+- até 30 vencidos, nada muda; acima disso o espaço cai, e a parte dos dominados dentro das
+  revisões sobe em linha reta de 25% a 80%, que valem de 150 vencidos para cima
+  (`ACUMULO` e `parteDosDominados` no motor; conta simples, sem os pesos da vez);
+- na descida, a mesma curva; o card novo continua sorteado antes.
+- Simulado (90 dias, `--antigo` contra o novo): a fila no fim vai de 162 a 36 (aluno forte, de
+  357 a 42); depois de 7 dias sem estudar, desafoga em uns 4 dias. Custo: ~3 a 6 revisões de
+  dominado a mais por dia e, no aluno forte, de 13,2 para 12,3 cards novos por dia nos dias
+  61 a 90.
+
 ---
 
 ## 9. Os textos da Biblioteca (decidido em 20/10/2026)
