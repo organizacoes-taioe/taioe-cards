@@ -212,14 +212,7 @@ function contrasteDaVez() {
 }
 
 function dominadoMaisProximo(agora, serve) {
-  let melhor = -1;
-  p.dominados.forEach((id, i) => {
-    const e = p.cards[id];
-    if (serve && !serve(id)) return;
-    if (agora && M.esperando(e, agora)) return;
-    if (melhor < 0 || String(e.voltaEm) < String(p.cards[p.dominados[melhor]].voltaEm)) melhor = i;
-  });
-  return melhor >= 0 ? melhor : null;
+  return M.dominadoDaVez(p.dominados, id => p.cards[id], agora, serve);
 }
 
 function escolher() {
@@ -229,7 +222,8 @@ function escolher() {
   const c = {
     agora, estados: p.cards, arquivados: p.arquivados, alvo: M.alvoDaFila(p.diario), respostas: p.respostas,
     temIneditos: lista.length > 0 || !!contrasteDaVez(), livres: { esPt: p.filaEsPt.filter(livre), ptEs: p.filaPtEs.filter(livre) },
-    vencidos: p.dominados.filter(id => !M.esperando(p.cards[id], agora)).length, desdeDominado
+    vencidos: p.dominados.filter(id => !M.esperando(p.cards[id], agora)).length,
+    pesoDosVencidos: M.pesoDosVencidos(p.dominados, id => p.cards[id], agora), desdeDominado
   };
   const e = M.escolherProximo(c);
   const outroTipo = doisDeGramatica() ? id => !ehDeGramatica(id) : null;

@@ -1948,7 +1948,9 @@ window.Motor = (function () {
      Então há espaço entre eles: depois de um dominado, vêm pelo menos
      ESPACO_DOMINADO cards de outra fila. Passado o espaço, a vez do dominado
      é sorteada, com chance que cresce com o acúmulo: um vencido sozinho tem
-     10% por card, e dez ou mais vão sempre que o espaço deixa.
+     10% por card, e dez ou mais vão sempre que o espaço deixa. Desde
+     01/11/2026 o vencido dos degraus curtos (3 dias e «1 semana») conta por
+     dois (PESO_NA_VEZ): 20% sozinho, e cinco já enchem a vez.
 
      O espaço começou em dois, passou por sete e ficou em três: no máximo um
      dominado em cada quatro cards, uns 30 num dia de 125 respostas — acima
@@ -1964,21 +1966,74 @@ window.Motor = (function () {
     return Math.random() < Math.min(1, vencidos / VENCIDOS_CHEIO);
   }
 
+  /* ── qual dominado vencido vem primeiro (pedido do Gere, 01/11/2026) ──
+     Até aqui vinha o de data mais antiga, em dias: um card de meio ano
+     vencido há cinco dias passava na frente de um de uma semana vencido há
+     um, que está muito mais perto de ser esquecido. Agora a urgência é o
+     atraso em relação à espera do degrau (atraso ÷ espera), e o degrau de
+     «1 semana», o mais crítico, vale o dobro (PESO_DO_DEGRAU): no mesmo
+     atraso em dias, ele passa até na frente do de 3 dias.
+       3 dias, 1 dia de atraso: 0,33 · «1 semana» (5 dias), 1 dia: 0,40 ·
+       meio ano, 20 dias: 0,11.
+     O presumido do nivelamento conta no degrau de três meses, onde nasce.
+     Sem «agora» (nada vencido), vem o de data mais próxima, como antes. */
+  const PESO_DO_DEGRAU = [1, 2, 1, 1, 1, 1];
+  const PESO_NA_VEZ = [2, 2, 1, 1, 1, 1];
+
+  function degrauDoDominado(est) {
+    if (est.presumido) return DEGRAU_DO_PRESUMIDO;
+    return Math.min(est.revisoes || 0, DIAS_DOMINADO.length - 1);
+  }
+
+  function urgenciaDoDominado(est, agora) {
+    const i = degrauDoDominado(est);
+    const atraso = est.voltaEm ? (Date.parse(agora) - Date.parse(est.voltaEm)) / 864e5 : 0;
+    return atraso / DIAS_DOMINADO[i] * PESO_DO_DEGRAU[i];
+  }
+
+  /* O índice, em ids, do dominado que sai agora, ou null. estadoDe(id) dá o
+     estado (o app passa o do presumido também); serve(id), quando vem, filtra. */
+  function dominadoDaVez(ids, estadoDe, agora, serve) {
+    let melhor = -1, chave = null;
+    ids.forEach((id, i) => {
+      const e = estadoDe(id);
+      if (!e) return;
+      if (serve && !serve(id)) return;
+      if (agora && esperando(e, agora)) return;
+      const k = agora ? -urgenciaDoDominado(e, agora) : 0;
+      const data = String(e.voltaEm);
+      if (melhor < 0 || k < chave[0] || (k === chave[0] && data < chave[1])) { melhor = i; chave = [k, data]; }
+    });
+    return melhor >= 0 ? melhor : null;
+  }
+
+  /* O acúmulo que chama a vez do dominado, com os curtos contando por dois. */
+  function pesoDosVencidos(ids, estadoDe, agora) {
+    let soma = 0;
+    ids.forEach(id => {
+      const e = estadoDe(id);
+      if (e && !esperando(e, agora)) soma += PESO_NA_VEZ[degrauDoDominado(e)];
+    });
+    return soma;
+  }
+
   /* ── a escolha, nos dois passos ──
      «c» é o contexto que o app monta a cada card:
        estados, arquivados, alvo (alvoDaFila), respostas (o relógio de respostas);
        temIneditos;
        livres = { esPt: [ids], ptEs: [ids] }, os que já podem voltar (podeVoltar);
-       vencidos, quantos dominados passaram da data, e desdeDominado, quantos
+       vencidos, quantos dominados passaram da data; pesoDosVencidos, o mesmo
+       acúmulo com os curtos contando por dois; e desdeDominado, quantos
        cards vieram desde o último dominado.
      Devolve { grupo: 'novo' }, { grupo: 'revisao', fila: 'dominados' } (o app
-     tira o vencido mais antigo), { grupo: 'revisao', fila: 'esPt' | 'ptEs', id },
+     tira o vencido mais urgente, dominadoDaVez), { grupo: 'revisao', fila: 'esPt' | 'ptEs', id },
      ou null quando nenhum grupo tem card pronto. */
   function escolherProximo(c) {
     const g = gruposProntos(c);
     if (Math.random() < chanceDoProximoNovo(c)) return { grupo: 'novo' };
     if (!g.revisao) return null;
-    if (g.dominado && (!g.outros || vezDoDominado(c.vencidos, c.desdeDominado))) {
+    const acumulo = c.pesoDosVencidos === undefined ? c.vencidos : c.pesoDosVencidos;
+    if (g.dominado && (!g.outros || vezDoDominado(acumulo, c.desdeDominado))) {
       return { grupo: 'revisao', fila: 'dominados' };
     }
     const fura = atrasadoQueFura(c.livres, c.estados, c.respostas);
@@ -2181,10 +2236,18 @@ window.Motor = (function () {
      sempre, e o que cresce é a espera: 3 dias, 1 semana, 2, 1 mês, 3 meses,
      meio ano. Errar desce um degrau (ver registrar).
 
+     O degrau de «1 semana» espera de fato 5 dias (pedido do Gere, 01/11/2026,
+     olhando o acerto pela espera em /admin/estatisticas/): é o degrau dos
+     cards que já foram errados alguma vez — quem nunca errou pula de 3 para
+     14 —, e o acerto caía cedo nele. O nome continua «1 semana», na tela e no
+     banco (cards.retornos.nominal_dias = 7): DIAS_NOMINAIS é o que se mostra,
+     DIAS_DOMINADO é o que se espera.
+
      É a única parte do app que olha o calendário, e só para os maduros. A
      fila tem 361 cards e todo card respondido volta para ela, então sem data
      o intervalo máximo seria uma passada pelo baralho — perto demais. */
-  const DIAS_DOMINADO = [3, 7, 14, 30, 90, 180];
+  const DIAS_DOMINADO = [3, 5, 14, 30, 90, 180];
+  const DIAS_NOMINAIS = [3, 7, 14, 30, 90, 180];
 
   /* ── a espera sorteada (pedido do Gere, 17/10/2026) ──
      Para escolher os intervalos com dado, e não com palpite, cada volta é
@@ -4304,7 +4367,8 @@ window.Motor = (function () {
     descontoDePassos, acertosParaVirar, ACERTOS_PARA_VIRAR,
     linguaDaPergunta, linguaDaResposta,
     temVariante, formaDoCard, formasDoCard, sortearForma, idiomaDoCard,
-    distanciaNaFila, esperando, proximaVolta, DIAS_DOMINADO, VARIACAO_DA_VOLTA,
+    distanciaNaFila, esperando, proximaVolta, DIAS_DOMINADO, DIAS_NOMINAIS, VARIACAO_DA_VOLTA,
+    urgenciaDoDominado, dominadoDaVez, pesoDosVencidos, PESO_DO_DEGRAU, PESO_NA_VEZ,
     tempoConfiavel, MS_ABANDONO,
     contarDirecoes,
     filaDe, chancesDasFilas, chanceDoNovo, chanceDaIda, chanceDoProximoNovo, escolherProximo,
