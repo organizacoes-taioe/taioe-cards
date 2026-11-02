@@ -10,9 +10,13 @@
    inéditos não acabam; textos, frases e desafios ficam de fora.
 
    Uso:  node fonte/simular-fila.js [--dias=60] [--semente=11] [--forte] [--latim] [--todos]
+                                    [--pausa=7] [--antigo]
          --forte   o aluno acerta ~95% (sem ele, ~85%)
          --latim   o modo trilhas (só a ida)
          --todos   uma linha por dia (sem ele, os três primeiros e de dez em dez)
+         --pausa   dias sem estudar a partir do dia 31 (forma fila de vencidos)
+         --antigo  a regra dos dominados até 31/10/2026: degrau de 7 dias de
+                   fato e o vencido de data mais antiga primeiro, sem pesos
 
    Cada linha: cards novos no dia; a chance média de card novo (a do painel)
    e a fração real; a ida, contra a meta; a volta; as revisões de dominados.
@@ -29,6 +33,7 @@ const arg = (nome, padrao) => {
 const tem = nome => process.argv.includes('--' + nome);
 const DIAS = arg('dias', 60);
 const FORTE = tem('forte'), LATIM = tem('latim'), TODOS = tem('todos');
+const PAUSA = arg('pausa', 0), ANTIGO = tem('antigo');
 
 /* sorteio com semente (mulberry32): o mesmo resultado a cada rodada */
 let semente = arg('semente', 11);
@@ -51,6 +56,7 @@ new Function('window', 'Date', fs.readFileSync(path.join(__dirname, '..', 'js', 
 const M = janela.Motor;
 M.usarBaralho('es', 'pt');
 if (LATIM) M.usarModo('trilhas');
+if (ANTIGO) M.DIAS_DOMINADO[1] = 7;   // o mesmo array de dentro do motor
 
 /* a chance de acerto em cada etapa; a estreia é um chute meio informado */
 const ACERTO = FORTE
@@ -64,13 +70,9 @@ const filaDe = k => (k === 'esPt' ? p.filaEsPt : p.filaPtEs);
 const tirar = (k, id) => filaDe(k).splice(filaDe(k).indexOf(id), 1)[0];
 
 function dominadoMaisProximo(agora) {
-  let melhor = -1;
-  p.dominados.forEach((id, i) => {
-    const e = p.cards[id];
-    if (agora && M.esperando(e, agora)) return;
-    if (melhor < 0 || String(e.voltaEm) < String(p.cards[p.dominados[melhor]].voltaEm)) melhor = i;
-  });
-  return melhor >= 0 ? melhor : null;
+  if (!ANTIGO) return M.dominadoDaVez(p.dominados, id => p.cards[id], agora);
+  return M.dominadoDaVez(p.dominados, id => p.cards[id], null,
+    agora ? (id => !M.esperando(p.cards[id], agora)) : null);
 }
 
 function escolher() {
@@ -79,7 +81,8 @@ function escolher() {
   const c = {
     estados: p.cards, arquivados: p.arquivados, alvo: M.alvoDaFila(p.diario), respostas: p.respostas,
     temIneditos: true, livres: { esPt: p.filaEsPt.filter(livre), ptEs: p.filaPtEs.filter(livre) },
-    vencidos: p.dominados.filter(id => !M.esperando(p.cards[id], agora)).length, desdeDominado
+    vencidos: p.dominados.filter(id => !M.esperando(p.cards[id], agora)).length,
+    pesoDosVencidos: ANTIGO ? undefined : M.pesoDosVencidos(p.dominados, id => p.cards[id], agora), desdeDominado
   };
   ultimaChance = M.chanceDoProximoNovo(c);
   const e = M.escolherProximo(c);
@@ -89,11 +92,23 @@ function escolher() {
   return tirar(e.fila, e.id);
 }
 
+/* o atraso de cada revisão de dominado, por degrau: no período todo e nos dez
+   dias depois da pausa */
+const ATRASOS = { todo: M.DIAS_DOMINADO.map(() => []), depois: M.DIAS_DOMINADO.map(() => []) };
+let depoisDaPausa = false;
+function anotarAtraso(est) {
+  const i = Math.min(est.revisoes || 0, M.DIAS_DOMINADO.length - 1);
+  const atraso = (AGORA - Date.parse(est.voltaEm)) / 864e5;
+  ATRASOS.todo[i].push(atraso);
+  if (depoisDaPausa) ATRASOS.depois[i].push(atraso);
+}
+
 /* responde o card e devolve se era estreia */
 function responder(id) {
   let est = p.cards[id];
   const estreia = !est;
   if (estreia) { est = M.estadoInicialDo({ id }); est.estreouNa = p.respostas; est.nasceu = AGORA; p.cards[id] = est; }
+  if (!estreia && est.etapa === 'dominado' && est.voltaEm) anotarAtraso(est);
   const f = M.faseDe(est);
   const r = { acertou: Math.random() < (estreia ? ACERTO_NA_ESTREIA : ACERTO[est.etapa]), modo: f.modo, direcao: f.direcao };
   M.registrar(est, r);
@@ -114,6 +129,8 @@ const SESSOES = [[8, 30], [12, 30], [18, 30], [21, 30]];
 const inicio = AGORA;
 const pad = (x, n) => String(x).padStart(n);
 for (let d = 0; d < DIAS; d++) {
+  if (PAUSA && d >= 30 && d < 30 + PAUSA) continue;
+  depoisDaPausa = PAUSA > 0 && d >= 30 + PAUSA && d < 40 + PAUSA;
   let novos = 0, n = 0, chance = 0, ida = 0, volta = 0, meta = 0, doms = 0;
   for (const [hora, quantas] of SESSOES) {
     AGORA = inicio + d * 864e5 + (hora - 11) * 36e5;
@@ -147,3 +164,17 @@ for (const id in p.cards) {
   if (e.dominou) ateDominar.push(e.dominou - e.nasceu);
 }
 console.log('da estreia ao fim da ida: ' + mediana(ateIda) + ' dias (mediana); da estreia ao domínio: ' + mediana(ateDominar) + ' dias');
+
+/* o atraso das revisões de dominado, em dias depois da data marcada */
+const NOMES = M.DIAS_NOMINAIS.map(n => n + ' d' + (M.DIAS_DOMINADO[M.DIAS_NOMINAIS.indexOf(n)] !== n ? ' (' + M.DIAS_DOMINADO[M.DIAS_NOMINAIS.indexOf(n)] + ')' : ''));
+const resumo = a => {
+  if (!a.length) return '      -';
+  const o = a.slice().sort((x, y) => x - y);
+  const media = o.reduce((x, y) => x + y, 0) / o.length;
+  return pad(o.length, 6) + '  média ' + media.toFixed(2) + '  p90 ' + o[Math.floor(o.length * 0.9)].toFixed(2) + '  máx ' + o[o.length - 1].toFixed(2);
+};
+for (const [chave, titulo] of [['todo', 'atraso dos dominados (dias), período todo'], ['depois', 'nos 10 dias depois da pausa']]) {
+  if (chave === 'depois' && !PAUSA) continue;
+  console.log(titulo + ':');
+  ATRASOS[chave].forEach((a, i) => console.log('  ' + NOMES[i].padEnd(12) + resumo(a)));
+}

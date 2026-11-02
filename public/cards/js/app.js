@@ -1019,6 +1019,7 @@ window.TaioeCardsApp = function (ctx) {
       livres: { esPt: progresso.filaEsPt.filter(livre), ptEs: progresso.filaPtEs.filter(livre) },
       vencidos: progresso.dominados.filter(id =>
         estadoParaFila(id) && !Motor.esperando(estadoParaFila(id), agora)).length,
+      pesoDosVencidos: Motor.pesoDosVencidos(progresso.dominados, estadoParaFila, agora),
       desdeDominado: desdeDominado
     };
   }
@@ -1180,17 +1181,10 @@ window.TaioeCardsApp = function (ctx) {
 
   /* O índice do dominado que já venceu a data — ou, com «agora» nulo, o de
      data mais próxima, vencido ou não. Com «serve», só entre os que ela aceita. */
+  /* Com «agora»: o vencido mais urgente, pelo atraso em relação ao degrau
+     (Motor.dominadoDaVez, 01/11/2026). Sem: o de data mais próxima. */
   function dominadoMaisProximo(agora, serve) {
-    let melhor = -1;
-    progresso.dominados.forEach((id, i) => {
-      const e = estadoParaFila(id);
-      if (!e) return;
-      if (serve && !serve(id)) return;
-      if (agora && Motor.esperando(e, agora)) return;
-      const atual = melhor >= 0 ? estadoParaFila(progresso.dominados[melhor]) : null;
-      if (!atual || String(e.voltaEm) < String(atual.voltaEm)) melhor = i;
-    });
-    return melhor >= 0 ? melhor : null;
+    return Motor.dominadoDaVez(progresso.dominados, estadoParaFila, agora, serve);
   }
 
   /* Devolve o card para a fila da etapa em que ele ficou. Ele não ganha
@@ -2130,7 +2124,7 @@ window.TaioeCardsApp = function (ctx) {
     }
     const virouDominado = est.etapa === 'dominado' && etapaAntes !== 'dominado';
     mostrarConquista(virouDominado,
-      etapaAntes === 'dominado' && r.acertou ? Motor.DIAS_DOMINADO[est.revisoes] : null);
+      etapaAntes === 'dominado' && r.acertou ? Motor.DIAS_NOMINAIS[est.revisoes] : null);
 
     const guardado = guardarNaFila(id, est, r);
 
@@ -2579,7 +2573,7 @@ window.TaioeCardsApp = function (ctx) {
 
   /* ── a escada dos dominados ──
      O dominado não volta pela fila: volta por data, e a espera cresce a cada
-     revisão certa — 3 dias, 1 semana, 2, 1 mês, 3 meses, meio ano. Esta
+     revisão certa — 3 dias, 1 semana (de fato 5 dias), 2, 1 mês, 3 meses, meio ano. Esta
      tabela diz onde cada um está parado: quantos em cada degrau, quantos já
      venceram a data e estão esperando a vez de furar a fila, e quando o
      próximo dos que ainda esperam vai aparecer.
@@ -2611,7 +2605,7 @@ window.TaioeCardsApp = function (ctx) {
 
   function tabelaDominados() {
     const agora = new Date().toISOString();
-    const degraus = Motor.DIAS_DOMINADO.map(dias => (
+    const degraus = Motor.DIAS_NOMINAIS.map(dias => (
       { dias: dias, n: 0, vencidos: 0, proxima: null }));
     (progresso.dominados || []).forEach(id => {
       const e = progresso.cards[id];
@@ -2854,7 +2848,7 @@ window.TaioeCardsApp = function (ctx) {
   function tabelaMemoria() {
     const ret = progresso.retencao || [];
     if (!ret.some(g => g && g[0])) return '';
-    const linhas = Motor.DIAS_DOMINADO.map((dias, i) => {
+    const linhas = Motor.DIAS_NOMINAIS.map((dias, i) => {
       const g = ret[i] || [0, 0];
       const acerto = g[0] >= 5 ? pctDe(g[1], g[0]) : g[0] ? t('painel.poucosDados') : '—';
       return '<tr' + (g[0] < 5 ? ' class="vago"' : '') + '><td>' + rotuloEspera(dias) + '</td>' +

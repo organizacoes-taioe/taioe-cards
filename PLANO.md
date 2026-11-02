@@ -969,6 +969,19 @@ acerto pela espera e pôr o degrau onde ela cruza ~90% (o Gere escolhe o alvo). 
 vai ao Gere com os números e o custo, como manda a regra de agendamento. Os degraus de 1, 3 e
 6 meses só terão dado bastante daqui a meses.
 
+**O primeiro ajuste (decidido em 01/11/2026).** Olhando o gráfico, o Gere decidiu:
+- o degrau de «1 semana» passa a esperar **5 dias** de fato (o sorteio vai de 2,5 a 10), com o
+  nome de 7 dias mantido na tela e no banco (`DIAS_NOMINAIS`; `nominal_dias` = 7). É o degrau
+  dos cards que já foram errados: quem nunca errou sobe 3 → 14;
+- os vencidos de 3 e de «7» dias passam na frente dos longos, «especialmente os de 7 dias»:
+  a urgência do vencido é o atraso ÷ a espera do degrau, com peso 2 no «7» (no mesmo atraso em
+  dias ele vence até o de 3), e na vez do dominado cada vencido curto conta por dois.
+- Simulado (`simular-fila.js --antigo` contra o novo, 90 dias): ~1 revisão de dominado a mais
+  por dia e o mesmo número de cards novos. O atraso médio dos degraus curtos cai de 1,3–1,4 dia
+  para 0,5 (aluno comum) e de 3,3–3,7 para 1,6–1,8 (aluno forte); o de 14 dias sobe de 1,6 para
+  2,2 dias e de 4,1 para 9,1, e o de 30 dias também espera mais. Os cards já marcados mantêm a
+  data: não há transição.
+
 ---
 
 ## 9. Os textos da Biblioteca (decidido em 20/10/2026)
