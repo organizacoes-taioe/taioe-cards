@@ -16,10 +16,12 @@
          --todos   uma linha por dia (sem ele, os três primeiros e de dez em dez)
          --pausa   dias sem estudar a partir do dia 31 (forma fila de vencidos)
          --antigo  a regra dos dominados até 31/10/2026: degrau de 7 dias de
-                   fato e o vencido de data mais antiga primeiro, sem pesos
+                   fato, o vencido de data mais antiga primeiro, sem pesos e
+                   sem a subida da parte dos dominados quando eles se acumulam
 
    Cada linha: cards novos no dia; a chance média de card novo (a do painel)
-   e a fração real; a ida, contra a meta; a volta; as revisões de dominados.
+   e a fração real; a ida, contra a meta; a volta; as revisões de dominados;
+   os vencidos que sobram no fim do dia.
    No fim, quantos dias da estreia até fechar a ida e até dominar.
    ──────────────────────────────────────────────────────────────── */
 'use strict';
@@ -56,7 +58,7 @@ new Function('window', 'Date', fs.readFileSync(path.join(__dirname, '..', 'js', 
 const M = janela.Motor;
 M.usarBaralho('es', 'pt');
 if (LATIM) M.usarModo('trilhas');
-if (ANTIGO) M.DIAS_DOMINADO[1] = 7;   // o mesmo array de dentro do motor
+if (ANTIGO) { M.DIAS_DOMINADO[1] = 7; M.ACUMULO.folga = Infinity; }   // os mesmos objetos de dentro do motor
 
 /* a chance de acerto em cada etapa; a estreia é um chute meio informado */
 const ACERTO = FORTE
@@ -147,10 +149,12 @@ for (let d = 0; d < DIAS; d++) {
       n++;
     }
   }
+  const fimDoDia = new DataFalsa().toISOString();
+  const vencidos = p.dominados.filter(id => !M.esperando(p.cards[id], fimDoDia)).length;
   if (TODOS || d < 3 || (d + 1) % 10 === 0) {
     console.log('dia ' + pad(d + 1, 3) + '  novos ' + pad(novos, 3) + '  chance ' + pad(Math.round(100 * chance / n), 3) +
       '%  real ' + pad(Math.round(100 * novos / n), 3) + '%  ida ' + pad(Math.round(ida / n), 3) + '/' + Math.round(meta / n) +
-      '  volta ' + pad(Math.round(volta / n), 3) + '  revisões de dominados ' + pad(doms, 3));
+      '  volta ' + pad(Math.round(volta / n), 3) + '  revisões de dominados ' + pad(doms, 3) + '  vencidos ' + pad(vencidos, 4));
   }
 }
 

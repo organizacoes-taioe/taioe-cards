@@ -1559,7 +1559,8 @@ window.Motor = (function () {
      esperou o intervalo mínimo, ou o dominado vencido que já tem o espaço. */
   function gruposProntos(c) {
     const outros = ((c.livres && c.livres.esPt) || []).length + ((c.livres && c.livres.ptEs) || []).length;
-    const dominado = (c.vencidos || 0) > 0 && (c.desdeDominado === undefined || c.desdeDominado >= ESPACO_DOMINADO);
+    const dominado = (c.vencidos || 0) > 0 && (c.desdeDominado === undefined || c.desdeDominado >= ESPACO_DOMINADO ||
+      parteDosDominados(c.vencidos) !== null);
     return { novo: !!c.temIneditos, outros: outros, dominado: dominado, revisao: outros > 0 || dominado };
   }
 
@@ -1966,6 +1967,28 @@ window.Motor = (function () {
     return Math.random() < Math.min(1, vencidos / VENCIDOS_CHEIO);
   }
 
+  /* ── quando os vencidos se acumulam (pedido do Gere, 01/11/2026) ──
+     O espaço acima segura no máximo um dominado em cada quatro cards, uns 25
+     a 30 por dia; na simulação, a partir de uns 40 dias de estudo vence mais
+     do que isso, e a fila de vencidos cresce sem parar (159 em 90 dias; 501
+     no aluno forte). Então, passados ACUMULO.folga vencidos, o espaço cai, e
+     a parte dos dominados dentro das revisões sobe aos poucos, de
+     ACUMULO.base até ACUMULO.teto em ACUMULO.aperto vencidos, e fica lá.
+     Na descida vale a mesma curva: a parte baixa junto com a fila. O card
+     novo continua sorteado antes (nada fura esse sorteio): 80% das revisões
+     são uns 72% dos cards. Conta simples, sem os pesos da vez.
+     Simulado (90 dias): a fila fica em 40 (aluno forte, 50); depois de 7
+     dias sem estudar, desafoga em uns 4 dias. Custo: no aluno forte, de 13,8
+     para 12,0 cards novos por dia nos dias 61 a 90. */
+  const ACUMULO = { folga: 30, aperto: 150, base: 0.25, teto: 0.8 };
+
+  /* A parte dos dominados nas revisões, ou null abaixo da folga (vale o espaço). */
+  function parteDosDominados(vencidos) {
+    const a = ACUMULO;
+    if (!(vencidos > a.folga)) return null;
+    return a.base + (a.teto - a.base) * Math.min(1, (vencidos - a.folga) / (a.aperto - a.folga));
+  }
+
   /* ── qual dominado vencido vem primeiro (pedido do Gere, 01/11/2026) ──
      Até aqui vinha o de data mais antiga, em dias: um card de meio ano
      vencido há cinco dias passava na frente de um de uma semana vencido há
@@ -2033,7 +2056,9 @@ window.Motor = (function () {
     if (Math.random() < chanceDoProximoNovo(c)) return { grupo: 'novo' };
     if (!g.revisao) return null;
     const acumulo = c.pesoDosVencidos === undefined ? c.vencidos : c.pesoDosVencidos;
-    if (g.dominado && (!g.outros || vezDoDominado(acumulo, c.desdeDominado))) {
+    const parte = parteDosDominados(c.vencidos);
+    const vez = parte === null ? vezDoDominado(acumulo, c.desdeDominado) : Math.random() < parte;
+    if (g.dominado && (!g.outros || vez)) {
       return { grupo: 'revisao', fila: 'dominados' };
     }
     const fura = atrasadoQueFura(c.livres, c.estados, c.respostas);
@@ -4368,7 +4393,7 @@ window.Motor = (function () {
     linguaDaPergunta, linguaDaResposta,
     temVariante, formaDoCard, formasDoCard, sortearForma, idiomaDoCard,
     distanciaNaFila, esperando, proximaVolta, DIAS_DOMINADO, DIAS_NOMINAIS, VARIACAO_DA_VOLTA,
-    urgenciaDoDominado, dominadoDaVez, pesoDosVencidos, PESO_DO_DEGRAU, PESO_NA_VEZ,
+    urgenciaDoDominado, dominadoDaVez, pesoDosVencidos, PESO_DO_DEGRAU, PESO_NA_VEZ, ACUMULO, parteDosDominados,
     tempoConfiavel, MS_ABANDONO,
     contarDirecoes,
     filaDe, chancesDasFilas, chanceDoNovo, chanceDaIda, chanceDoProximoNovo, escolherProximo,
