@@ -2,7 +2,7 @@
  "versao": 1,
  "idioma": "la",
  "gerado_em": "2026-11-03",
- "total": 1492,
+ "total": 1518,
  "cards": [
   {
    "idioma": "la",
@@ -14791,7 +14791,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -14826,7 +14833,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "aposto",
+    "vocativo"
+   ]
   },
   {
    "idioma": "la",
@@ -14860,7 +14874,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "sum",
+   "distratoresDicionario": [
+    "erro",
+    "sto",
+    "excrucio",
+    "sapio"
+   ]
   },
   {
    "idioma": "la",
@@ -14895,7 +14923,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -14929,7 +14964,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "fugio",
+   "distratoresDicionario": [
+    "facio",
+    "festino",
+    "fio",
+    "audeo"
+   ]
   },
   {
    "idioma": "la",
@@ -14964,7 +15013,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -14999,7 +15055,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "adjunto adnominal",
+    "objeto direto",
+    "aposto"
+   ],
+   "dicionario": "longus",
+   "distratoresDicionario": [
+    "longe",
+    "liquor",
+    "labor",
+    "laniger"
+   ]
   },
   {
    "idioma": "la",
@@ -15034,7 +15104,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -15069,7 +15146,14 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "adjunto adnominal",
+    "objeto direto",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -15104,7 +15188,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -15138,7 +15229,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -15173,7 +15271,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "aposto",
+    "vocativo"
+   ]
   },
   {
    "idioma": "la",
@@ -15208,7 +15313,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "sujeito",
+    "aposto",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -15242,7 +15354,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -15276,7 +15395,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -15310,7 +15436,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -15345,7 +15478,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "aposto",
+    "vocativo"
+   ]
   },
   {
    "idioma": "la",
@@ -15380,7 +15520,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "aposto",
+    "vocativo"
+   ]
   },
   {
    "idioma": "la",
@@ -15414,7 +15561,14 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "erro",
+   "distratoresDicionario": [
+    "excrucio",
+    "adeo",
+    "bibo",
+    "cano"
+   ]
   },
   {
    "idioma": "la",
@@ -15449,7 +15603,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "adjunto adnominal",
+    "objeto direto",
+    "aposto"
+   ],
+   "dicionario": "humanus",
+   "distratoresDicionario": [
+    "haustus",
+    "hodie",
+    "homo",
+    "hora"
+   ]
   },
   {
    "idioma": "la",
@@ -15484,7 +15652,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "vocativo",
+    "adjunto adnominal",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -15518,7 +15693,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "sum",
+   "distratoresDicionario": [
+    "erro",
+    "sto",
+    "excrucio",
+    "sapio"
+   ]
   },
   {
    "idioma": "la",
@@ -15553,7 +15742,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "vocativo",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "objeto direto",
+    "predicativo do sujeito"
+   ],
+   "dicionario": "dominus",
+   "distratoresDicionario": [
+    "debitor",
+    "debitum",
+    "deus",
+    "dies"
+   ]
   },
   {
    "idioma": "la",
@@ -15587,7 +15790,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do plural",
+   "distratoresPessoa": [
+    "2ª pessoa do singular",
+    "1ª pessoa do plural",
+    "3ª pessoa do plural",
+    "1ª pessoa do singular"
+   ],
+   "dicionario": "laudo",
+   "distratoresDicionario": [
+    "laedo",
+    "laetor",
+    "lego",
+    "libero"
+   ]
   },
   {
    "idioma": "la",
@@ -15623,7 +15840,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "dominus",
+   "distratoresDicionario": [
+    "debitor",
+    "debitum",
+    "deus",
+    "dies"
+   ]
   },
   {
    "idioma": "la",
@@ -15658,7 +15889,21 @@
    ],
    "dificuldade": 4.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "predicativo do sujeito",
+    "objeto direto"
+   ],
+   "dicionario": "omnis",
+   "distratoresDicionario": [
+    "ora",
+    "ob",
+    "agnus",
+    "altus"
+   ]
   },
   {
    "idioma": "la",
@@ -15693,7 +15938,21 @@
    ],
    "dificuldade": 4.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "vocativo",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "aposto",
+    "adjunto adnominal"
+   ],
+   "dicionario": "gens",
+   "distratoresDicionario": [
+    "genus",
+    "gutta",
+    "gloria",
+    "gratia"
+   ]
   },
   {
    "idioma": "la",
@@ -15727,7 +15986,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "carpo",
+   "distratoresDicionario": [
+    "caveo",
+    "cano",
+    "cavo",
+    "condo"
+   ]
   },
   {
    "idioma": "la",
@@ -15763,7 +16036,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "dies",
+   "distratoresDicionario": [
+    "deus",
+    "dum",
+    "debitor",
+    "debitum"
+   ]
   },
   {
    "idioma": "la",
@@ -15797,7 +16084,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "caveo",
+   "distratoresDicionario": [
+    "cavo",
+    "carpo",
+    "cano",
+    "condo"
+   ]
   },
   {
    "idioma": "la",
@@ -15833,7 +16134,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "canis",
+   "distratoresDicionario": [
+    "casus",
+    "causa",
+    "caelum",
+    "caritas"
+   ]
   },
   {
    "idioma": "la",
@@ -15867,7 +16182,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "festino",
+   "distratoresDicionario": [
+    "facio",
+    "fugio",
+    "fio",
+    "advenio"
+   ]
   },
   {
    "idioma": "la",
@@ -15901,7 +16230,14 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "sapio",
+   "distratoresDicionario": [
+    "sanctifico",
+    "spero",
+    "spiro",
+    "sentio"
+   ]
   },
   {
    "idioma": "la",
@@ -15935,7 +16271,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "audeo",
+   "distratoresDicionario": [
+    "adeo",
+    "ambulo",
+    "advenio",
+    "amo"
+   ]
   },
   {
    "idioma": "la",
@@ -15969,7 +16319,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -16005,7 +16362,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto direto",
+    "predicativo do objeto",
+    "complemento nominal",
+    "sujeito"
+   ],
+   "dicionario": "unus",
+   "distratoresDicionario": [
+    "unde",
+    "urbs",
+    "ubi",
+    "-que"
+   ]
   },
   {
    "idioma": "la",
@@ -16041,7 +16412,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "complemento nominal",
+    "predicativo do objeto"
+   ],
+   "dicionario": "deus",
+   "distratoresDicionario": [
+    "debitor",
+    "debitum",
+    "dies",
+    "dum"
+   ]
   },
   {
    "idioma": "la",
@@ -16077,7 +16462,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ]
   },
   {
    "idioma": "la",
@@ -16113,7 +16505,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "vir",
+   "distratoresDicionario": [
+    "via",
+    "vis",
+    "vita",
+    "vinum"
+   ]
   },
   {
    "idioma": "la",
@@ -16147,7 +16553,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -16183,7 +16596,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "omnis",
+   "distratoresDicionario": [
+    "ora",
+    "ob",
+    "agnus",
+    "altus"
+   ]
   },
   {
    "idioma": "la",
@@ -16217,7 +16644,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "vinco",
+   "distratoresDicionario": [
+    "video",
+    "venio",
+    "volvo",
+    "vado"
+   ]
   },
   {
    "idioma": "la",
@@ -16252,7 +16693,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -16287,7 +16735,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -16321,7 +16776,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "cavo",
+   "distratoresDicionario": [
+    "caveo",
+    "cano",
+    "carpo",
+    "condo"
+   ]
   },
   {
    "idioma": "la",
@@ -16357,7 +16826,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "lapis",
+   "distratoresDicionario": [
+    "labor",
+    "latro",
+    "laniger",
+    "lente"
+   ]
   },
   {
    "idioma": "la",
@@ -16391,7 +16874,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "audeo",
+   "distratoresDicionario": [
+    "adeo",
+    "ambulo",
+    "advenio",
+    "amo"
+   ]
   },
   {
    "idioma": "la",
@@ -16426,7 +16916,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -16460,7 +16957,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "iuvo",
+   "distratoresDicionario": [
+    "iacio",
+    "iacto",
+    "incito",
+    "induco"
+   ]
   },
   {
    "idioma": "la",
@@ -16494,7 +17005,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "tollo",
+   "distratoresDicionario": [
+    "tango",
+    "timeo",
+    "audeo",
+    "carpo"
+   ]
   },
   {
    "idioma": "la",
@@ -16528,7 +17053,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "lego",
+   "distratoresDicionario": [
+    "laedo",
+    "laudo",
+    "laetor",
+    "libero"
+   ]
   },
   {
    "idioma": "la",
@@ -16562,7 +17101,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "nolo",
+   "distratoresDicionario": [
+    "nescio",
+    "adeo",
+    "bibo",
+    "cano"
+   ]
   },
   {
    "idioma": "la",
@@ -16598,7 +17151,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "ego",
+   "distratoresDicionario": [
+    "mens",
+    "meus",
+    "memor",
+    "mors"
+   ]
   },
   {
    "idioma": "la",
@@ -16632,7 +17199,14 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "dicionario": "tango",
+   "distratoresDicionario": [
+    "timeo",
+    "tollo",
+    "audeo",
+    "carpo"
+   ]
   },
   {
    "idioma": "la",
@@ -16668,7 +17242,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "panis",
+   "distratoresDicionario": [
+    "pater",
+    "pastor",
+    "patria",
+    "pax"
+   ]
   },
   {
    "idioma": "la",
@@ -16704,7 +17292,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ]
   },
   {
    "idioma": "la",
@@ -16740,7 +17335,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "tu",
+   "distratoresDicionario": [
+    "terra",
+    "tempus",
+    "tunc",
+    "tuus"
+   ]
   },
   {
    "idioma": "la",
@@ -16774,7 +17383,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ],
+   "dicionario": "amo",
+   "distratoresDicionario": [
+    "ambulo",
+    "adeo",
+    "audeo",
+    "advenio"
+   ]
   },
   {
    "idioma": "la",
@@ -16808,7 +17431,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ],
+   "dicionario": "venio",
+   "distratoresDicionario": [
+    "video",
+    "vinco",
+    "volvo",
+    "vado"
+   ]
   },
   {
    "idioma": "la",
@@ -16842,7 +17479,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ],
+   "dicionario": "video",
+   "distratoresDicionario": [
+    "vinco",
+    "venio",
+    "volvo",
+    "vado"
+   ]
   },
   {
    "idioma": "la",
@@ -16876,7 +17527,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ],
+   "dicionario": "vinco",
+   "distratoresDicionario": [
+    "video",
+    "venio",
+    "volvo",
+    "vado"
+   ]
   },
   {
    "idioma": "la",
@@ -16910,7 +17575,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "iacio",
+   "distratoresDicionario": [
+    "iacto",
+    "incito",
+    "induco",
+    "infero"
+   ]
   },
   {
    "idioma": "la",
@@ -16945,7 +17617,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "agente da passiva",
+    "vocativo"
+   ]
   },
   {
    "idioma": "la",
@@ -16980,7 +17659,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "aposto",
+    "vocativo"
+   ]
   },
   {
    "idioma": "la",
@@ -17015,7 +17701,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "adjunto adverbial",
+    "sujeito",
+    "aposto"
+   ],
+   "dicionario": "mundus",
+   "distratoresDicionario": [
+    "mulier",
+    "multus",
+    "musa",
+    "magnus"
+   ]
   },
   {
    "idioma": "la",
@@ -17085,7 +17785,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "adjunto adverbial",
+    "sujeito",
+    "predicativo do sujeito"
+   ],
+   "dicionario": "vanitas",
+   "distratoresDicionario": [
+    "vae",
+    "veritas",
+    "venter",
+    "verbum"
+   ]
   },
   {
    "idioma": "la",
@@ -17120,7 +17834,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ],
+   "dicionario": "omnis",
+   "distratoresDicionario": [
+    "ora",
+    "ob",
+    "agnus",
+    "altus"
+   ]
   },
   {
    "idioma": "la",
@@ -17155,7 +17883,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "objeto direto",
+    "vocativo",
+    "adjunto adnominal",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -17190,7 +17925,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "adjunto adverbial",
+    "sujeito",
+    "objeto direto"
+   ],
+   "dicionario": "ars",
+   "distratoresDicionario": [
+    "arma",
+    "ave",
+    "ab",
+    "ad"
+   ]
   },
   {
    "idioma": "la",
@@ -17225,7 +17974,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "objeto direto",
+    "vocativo",
+    "adjunto adnominal",
+    "objeto indireto"
+   ]
   },
   {
    "idioma": "la",
@@ -17260,7 +18016,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -17295,7 +18058,21 @@
    ],
    "dificuldade": 4.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "vocativo",
+    "agente da passiva"
+   ],
+   "dicionario": "vos",
+   "distratoresDicionario": [
+    "voluntas",
+    "vae",
+    "via",
+    "vir"
+   ]
   },
   {
    "idioma": "la",
@@ -17329,7 +18106,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "vinco",
+   "distratoresDicionario": [
+    "video",
+    "venio",
+    "volvo",
+    "vado"
+   ]
   },
   {
    "idioma": "la",
@@ -17364,7 +18148,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "objeto direto",
+    "vocativo",
+    "adjunto adnominal",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -17399,7 +18190,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "objeto direto",
+    "vocativo",
+    "adjunto adnominal",
+    "objeto indireto"
+   ]
   },
   {
    "idioma": "la",
@@ -17434,7 +18232,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "homo",
+   "distratoresDicionario": [
+    "hora",
+    "hodie",
+    "hic",
+    "haustus"
+   ]
   },
   {
    "idioma": "la",
@@ -17469,7 +18274,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -17504,7 +18316,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "sujeito",
+    "agente da passiva"
+   ],
+   "dicionario": "excelsus",
+   "distratoresDicionario": [
+    "ergo",
+    "ego",
+    "et",
+    "fortasse"
+   ]
   },
   {
    "idioma": "la",
@@ -17539,7 +18365,21 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "vocativo"
+   ],
+   "dicionario": "deus",
+   "distratoresDicionario": [
+    "debitor",
+    "debitum",
+    "dies",
+    "dum"
+   ]
   },
   {
    "idioma": "la",
@@ -17574,7 +18414,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "sujeito",
+    "agente da passiva"
+   ],
+   "dicionario": "vinum",
+   "distratoresDicionario": [
+    "vita",
+    "via",
+    "vir",
+    "vis"
+   ]
   },
   {
    "idioma": "la",
@@ -17609,7 +18463,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "principium",
+   "distratoresDicionario": [
+    "primus",
+    "profugus",
+    "pro",
+    "peccator"
+   ]
   },
   {
    "idioma": "la",
@@ -17643,7 +18511,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "sum",
+   "distratoresDicionario": [
+    "erro",
+    "sto",
+    "excrucio",
+    "sapio"
+   ]
   },
   {
    "idioma": "la",
@@ -17678,7 +18560,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -17713,7 +18602,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -17748,7 +18644,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "complemento nominal",
+    "objeto direto"
+   ],
+   "dicionario": "sanus",
+   "distratoresDicionario": [
+    "sanctus",
+    "saevus",
+    "saeculum",
+    "sicut"
+   ]
   },
   {
    "idioma": "la",
@@ -17783,7 +18693,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "sujeito",
+    "agente da passiva"
+   ],
+   "dicionario": "corpus",
+   "distratoresDicionario": [
+    "contra",
+    "caelum",
+    "canis",
+    "caritas"
+   ]
   },
   {
    "idioma": "la",
@@ -17818,7 +18742,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "complemento nominal",
+    "objeto indireto",
+    "sujeito"
+   ],
+   "dicionario": "sanus",
+   "distratoresDicionario": [
+    "sanctus",
+    "saevus",
+    "saeculum",
+    "sicut"
+   ]
   },
   {
    "idioma": "la",
@@ -17853,7 +18791,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "objeto direto",
+    "vocativo",
+    "aposto",
+    "adjunto adverbial"
+   ]
   },
   {
    "idioma": "la",
@@ -17888,7 +18833,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ],
+   "dicionario": "homo",
+   "distratoresDicionario": [
+    "hora",
+    "hodie",
+    "hic",
+    "haustus"
+   ]
   },
   {
    "idioma": "la",
@@ -17922,7 +18881,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do plural",
+   "distratoresPessoa": [
+    "3ª pessoa do singular",
+    "1ª pessoa do plural",
+    "2ª pessoa do plural",
+    "1ª pessoa do singular"
+   ],
+   "dicionario": "doceo",
+   "distratoresDicionario": [
+    "doleo",
+    "do",
+    "disco",
+    "dico"
+   ]
   },
   {
    "idioma": "la",
@@ -17956,7 +18929,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do plural",
+   "distratoresPessoa": [
+    "3ª pessoa do singular",
+    "1ª pessoa do plural",
+    "2ª pessoa do plural",
+    "1ª pessoa do singular"
+   ],
+   "dicionario": "disco",
+   "distratoresDicionario": [
+    "dico",
+    "dimitto",
+    "doceo",
+    "doleo"
+   ]
   },
   {
    "idioma": "la",
@@ -17991,7 +18978,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -18025,7 +19019,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "sequor",
+   "distratoresDicionario": [
+    "sentio",
+    "sapio",
+    "spero",
+    "spiro"
+   ]
   },
   {
    "idioma": "la",
@@ -18059,7 +19067,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "ambulo",
+   "distratoresDicionario": [
+    "amo",
+    "advenio",
+    "audeo",
+    "adeo"
+   ]
   },
   {
    "idioma": "la",
@@ -18094,7 +19116,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "tenebrae",
+   "distratoresDicionario": [
+    "tentatio",
+    "tempus",
+    "terra",
+    "tantum"
+   ]
   },
   {
    "idioma": "la",
@@ -18128,7 +19164,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "fio",
+   "distratoresDicionario": [
+    "facio",
+    "fugio",
+    "festino",
+    "amo"
+   ]
   },
   {
    "idioma": "la",
@@ -18162,7 +19212,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "volo",
+   "distratoresDicionario": [
+    "video",
+    "vinco",
+    "volvo",
+    "vado"
+   ]
   },
   {
    "idioma": "la",
@@ -18198,7 +19262,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "pax",
+   "distratoresDicionario": [
+    "panis",
+    "pater",
+    "pastor",
+    "patria"
+   ]
   },
   {
    "idioma": "la",
@@ -18232,7 +19310,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "paro",
+   "distratoresDicionario": [
+    "patior",
+    "porto",
+    "possum",
+    "adeo"
+   ]
   },
   {
    "idioma": "la",
@@ -18268,7 +19360,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ]
   },
   {
    "idioma": "la",
@@ -18302,7 +19401,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "libero",
+   "distratoresDicionario": [
+    "laetor",
+    "laedo",
+    "laudo",
+    "lego"
+   ]
   },
   {
    "idioma": "la",
@@ -18338,7 +19451,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ]
   },
   {
    "idioma": "la",
@@ -18373,7 +19493,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "vocativo",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "objeto direto",
+    "predicativo do sujeito"
+   ]
   },
   {
    "idioma": "la",
@@ -18409,7 +19536,14 @@
    ],
    "dificuldade": 4.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -18445,7 +19579,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto direto",
+    "predicativo do objeto",
+    "complemento nominal",
+    "sujeito"
+   ],
+   "dicionario": "tuus",
+   "distratoresDicionario": [
+    "tunc",
+    "tu",
+    "turbulentus",
+    "terra"
+   ]
   },
   {
    "idioma": "la",
@@ -18479,7 +19627,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -18515,7 +19670,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "spiritus",
+   "distratoresDicionario": [
+    "saeculum",
+    "superior",
+    "sanctus",
+    "superus"
+   ]
   },
   {
    "idioma": "la",
@@ -18551,7 +19720,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "predicativo do objeto",
+    "complemento nominal",
+    "objeto indireto"
+   ],
+   "dicionario": "meus",
+   "distratoresDicionario": [
+    "mens",
+    "memor",
+    "mors",
+    "musa"
+   ]
   },
   {
    "idioma": "la",
@@ -18585,7 +19768,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "vado",
+   "distratoresDicionario": [
+    "volo",
+    "venio",
+    "video",
+    "vinco"
+   ]
   },
   {
    "idioma": "la",
@@ -18620,7 +19817,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -18655,7 +19859,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "vocativo"
+   ],
+   "dicionario": "pater",
+   "distratoresDicionario": [
+    "patria",
+    "panis",
+    "pastor",
+    "pax"
+   ]
   },
   {
    "idioma": "la",
@@ -18690,7 +19908,21 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "vocativo"
+   ],
+   "dicionario": "filius",
+   "distratoresDicionario": [
+    "fatum",
+    "fortuna",
+    "fructus",
+    "faux"
+   ]
   },
   {
    "idioma": "la",
@@ -18725,7 +19957,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "vocativo"
+   ],
+   "dicionario": "spiritus",
+   "distratoresDicionario": [
+    "saeculum",
+    "superior",
+    "sanctus",
+    "superus"
+   ]
   },
   {
    "idioma": "la",
@@ -18760,7 +20006,21 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "complemento nominal",
+    "aposto",
+    "sujeito"
+   ],
+   "dicionario": "sanctus",
+   "distratoresDicionario": [
+    "sanus",
+    "saeculum",
+    "saevus",
+    "superus"
+   ]
   },
   {
    "idioma": "la",
@@ -18794,7 +20054,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "sum",
+   "distratoresDicionario": [
+    "erro",
+    "sto",
+    "excrucio",
+    "sapio"
+   ]
   },
   {
    "idioma": "la",
@@ -18829,7 +20103,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "principium",
+   "distratoresDicionario": [
+    "primus",
+    "profugus",
+    "pro",
+    "peccator"
+   ]
   },
   {
    "idioma": "la",
@@ -18865,7 +20153,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "saeculum",
+   "distratoresDicionario": [
+    "saevus",
+    "sanctus",
+    "sanus",
+    "spiritus"
+   ]
   },
   {
    "idioma": "la",
@@ -18900,7 +20202,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "sujeito",
+    "objeto direto",
+    "predicativo do sujeito"
+   ],
+   "dicionario": "saeculum",
+   "distratoresDicionario": [
+    "saevus",
+    "sanctus",
+    "sanus",
+    "spiritus"
+   ]
   },
   {
    "idioma": "la",
@@ -18935,7 +20251,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "vocativo",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "objeto direto",
+    "predicativo do sujeito"
+   ]
   },
   {
    "idioma": "la",
@@ -18970,7 +20293,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "predicativo do sujeito",
+    "objeto direto"
+   ]
   },
   {
    "idioma": "la",
@@ -19005,7 +20335,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -19039,7 +20376,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "sum",
+   "distratoresDicionario": [
+    "erro",
+    "sto",
+    "excrucio",
+    "sapio"
+   ]
   },
   {
    "idioma": "la",
@@ -19074,7 +20425,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "caelum",
+   "distratoresDicionario": [
+    "caelestis",
+    "canis",
+    "caritas",
+    "casus"
+   ]
   },
   {
    "idioma": "la",
@@ -19108,7 +20473,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "sanctifico",
+   "distratoresDicionario": [
+    "sapio",
+    "sentio",
+    "sequor",
+    "spero"
+   ]
   },
   {
    "idioma": "la",
@@ -19143,7 +20522,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "agente da passiva",
+    "vocativo"
+   ]
   },
   {
    "idioma": "la",
@@ -19178,7 +20564,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "sujeito",
+    "complemento nominal",
+    "objeto direto"
+   ],
+   "dicionario": "tuus",
+   "distratoresDicionario": [
+    "tunc",
+    "tu",
+    "turbulentus",
+    "terra"
+   ]
   },
   {
    "idioma": "la",
@@ -19212,7 +20612,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "advenio",
+   "distratoresDicionario": [
+    "adeo",
+    "ambulo",
+    "audeo",
+    "amo"
+   ]
   },
   {
    "idioma": "la",
@@ -19247,7 +20661,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -19281,7 +20702,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "fio",
+   "distratoresDicionario": [
+    "facio",
+    "fugio",
+    "festino",
+    "amo"
+   ]
   },
   {
    "idioma": "la",
@@ -19316,7 +20751,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -19351,7 +20793,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "sujeito",
+    "complemento nominal",
+    "objeto direto"
+   ],
+   "dicionario": "tuus",
+   "distratoresDicionario": [
+    "tunc",
+    "tu",
+    "turbulentus",
+    "terra"
+   ]
   },
   {
    "idioma": "la",
@@ -19386,7 +20842,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "caelum",
+   "distratoresDicionario": [
+    "caelestis",
+    "canis",
+    "caritas",
+    "casus"
+   ]
   },
   {
    "idioma": "la",
@@ -19421,7 +20891,14 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -19457,7 +20934,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "aposto"
+   ],
+   "dicionario": "panis",
+   "distratoresDicionario": [
+    "pater",
+    "pastor",
+    "patria",
+    "pax"
+   ]
   },
   {
    "idioma": "la",
@@ -19493,7 +20984,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "predicativo do objeto",
+    "complemento nominal",
+    "objeto indireto"
+   ],
+   "dicionario": "noster",
+   "distratoresDicionario": [
+    "nos",
+    "nomen",
+    "non",
+    "numen"
+   ]
   },
   {
    "idioma": "la",
@@ -19529,7 +21034,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "predicativo do objeto",
+    "complemento nominal",
+    "objeto indireto"
+   ],
+   "dicionario": "quotidianus",
+   "distratoresDicionario": [
+    "quoque",
+    "quo",
+    "quare",
+    "quia"
+   ]
   },
   {
    "idioma": "la",
@@ -19563,7 +21082,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "do",
+   "distratoresDicionario": [
+    "doceo",
+    "doleo",
+    "dico",
+    "disco"
+   ]
   },
   {
    "idioma": "la",
@@ -19598,7 +21131,21 @@
    ],
    "dificuldade": 4.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adverbial",
+    "complemento nominal"
+   ],
+   "dicionario": "nos",
+   "distratoresDicionario": [
+    "noster",
+    "non",
+    "nomen",
+    "nec"
+   ]
   },
   {
    "idioma": "la",
@@ -19632,7 +21179,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "dimitto",
+   "distratoresDicionario": [
+    "disco",
+    "dico",
+    "decurro",
+    "doceo"
+   ]
   },
   {
    "idioma": "la",
@@ -19668,7 +21229,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "debitum",
+   "distratoresDicionario": [
+    "debitor",
+    "deus",
+    "dominus",
+    "dies"
+   ]
   },
   {
    "idioma": "la",
@@ -19704,7 +21279,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "predicativo do objeto",
+    "complemento nominal",
+    "objeto indireto"
+   ],
+   "dicionario": "noster",
+   "distratoresDicionario": [
+    "nos",
+    "nomen",
+    "non",
+    "numen"
+   ]
   },
   {
    "idioma": "la",
@@ -19739,7 +21328,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -19773,7 +21369,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do plural",
+   "distratoresPessoa": [
+    "1ª pessoa do singular",
+    "2ª pessoa do plural",
+    "3ª pessoa do plural",
+    "2ª pessoa do singular"
+   ],
+   "dicionario": "dimitto",
+   "distratoresDicionario": [
+    "disco",
+    "dico",
+    "decurro",
+    "doceo"
+   ]
   },
   {
    "idioma": "la",
@@ -19808,7 +21418,21 @@
    ],
    "dificuldade": 4.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "adjunto adverbial"
+   ],
+   "dicionario": "debitor",
+   "distratoresDicionario": [
+    "debitum",
+    "deus",
+    "dominus",
+    "dies"
+   ]
   },
   {
    "idioma": "la",
@@ -19843,7 +21467,21 @@
    ],
    "dificuldade": 4.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto direto",
+    "predicativo do sujeito",
+    "complemento nominal",
+    "sujeito"
+   ],
+   "dicionario": "noster",
+   "distratoresDicionario": [
+    "nos",
+    "nomen",
+    "non",
+    "numen"
+   ]
   },
   {
    "idioma": "la",
@@ -19879,7 +21517,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ]
   },
   {
    "idioma": "la",
@@ -19913,7 +21558,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "induco",
+   "distratoresDicionario": [
+    "incito",
+    "infero",
+    "inquam",
+    "iacio"
+   ]
   },
   {
    "idioma": "la",
@@ -19949,7 +21608,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "tentatio",
+   "distratoresDicionario": [
+    "tenebrae",
+    "tempus",
+    "terra",
+    "tantum"
+   ]
   },
   {
    "idioma": "la",
@@ -19983,7 +21649,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "libero",
+   "distratoresDicionario": [
+    "laetor",
+    "laedo",
+    "laudo",
+    "lego"
+   ]
   },
   {
    "idioma": "la",
@@ -20018,7 +21698,14 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "malum",
+   "distratoresDicionario": [
+    "manus",
+    "mater",
+    "magnus",
+    "memor"
+   ]
   },
   {
    "idioma": "la",
@@ -20053,7 +21740,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "complemento nominal",
+   "distratoresFuncao": [
+    "adjunto adnominal",
+    "objeto indireto",
+    "objeto direto",
+    "vocativo"
+   ]
   },
   {
    "idioma": "la",
@@ -20088,7 +21782,14 @@
    ],
    "dificuldade": 5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "dicionario": "plenus",
+   "distratoresDicionario": [
+    "pastor",
+    "patria",
+    "pietas",
+    "primus"
+   ]
   },
   {
    "idioma": "la",
@@ -20123,7 +21824,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -20158,7 +21866,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "sujeito",
+    "agente da passiva"
+   ],
+   "dicionario": "tu",
+   "distratoresDicionario": [
+    "terra",
+    "tempus",
+    "tunc",
+    "tuus"
+   ]
   },
   {
    "idioma": "la",
@@ -20192,7 +21914,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "benedico",
+   "distratoresDicionario": [
+    "bibo",
+    "commendo",
+    "compello",
+    "excrucio"
+   ]
   },
   {
    "idioma": "la",
@@ -20227,7 +21956,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -20262,7 +21998,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "sujeito",
+    "agente da passiva"
+   ],
+   "dicionario": "mulier",
+   "distratoresDicionario": [
+    "multus",
+    "mundus",
+    "musa",
+    "magnus"
+   ]
   },
   {
    "idioma": "la",
@@ -20296,7 +22046,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "benedico",
+   "distratoresDicionario": [
+    "bibo",
+    "commendo",
+    "compello",
+    "excrucio"
+   ]
   },
   {
    "idioma": "la",
@@ -20331,7 +22088,14 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -20366,7 +22130,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "complemento nominal",
+    "objeto indireto",
+    "adjunto adverbial",
+    "sujeito"
+   ],
+   "dicionario": "venter",
+   "distratoresDicionario": [
+    "verbum",
+    "veritas",
+    "vanitas",
+    "vinum"
+   ]
   },
   {
    "idioma": "la",
@@ -20401,7 +22179,21 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "complemento nominal",
+    "objeto indireto",
+    "sujeito",
+    "predicativo do sujeito"
+   ],
+   "dicionario": "tuus",
+   "distratoresDicionario": [
+    "tunc",
+    "tu",
+    "turbulentus",
+    "terra"
+   ]
   },
   {
    "idioma": "la",
@@ -20436,7 +22228,21 @@
    ],
    "dificuldade": 5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "predicativo do sujeito",
+    "objeto direto"
+   ],
+   "dicionario": "sanctus",
+   "distratoresDicionario": [
+    "sanus",
+    "saeculum",
+    "saevus",
+    "superus"
+   ]
   },
   {
    "idioma": "la",
@@ -20471,7 +22277,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "aposto",
+   "distratoresFuncao": [
+    "sujeito",
+    "predicativo do sujeito",
+    "adjunto adnominal",
+    "objeto direto"
+   ]
   },
   {
    "idioma": "la",
@@ -20506,7 +22319,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "adjunto adverbial",
+    "sujeito",
+    "objeto direto"
+   ],
+   "dicionario": "deus",
+   "distratoresDicionario": [
+    "debitor",
+    "debitum",
+    "dies",
+    "dum"
+   ]
   },
   {
    "idioma": "la",
@@ -20540,7 +22367,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "oro",
+   "distratoresDicionario": [
+    "odi",
+    "amo",
+    "fio",
+    "sto"
+   ]
   },
   {
    "idioma": "la",
@@ -20575,7 +22416,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "dicionario": "nos",
+   "distratoresDicionario": [
+    "noster",
+    "non",
+    "nomen",
+    "nec"
+   ]
   },
   {
    "idioma": "la",
@@ -20610,7 +22458,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "aposto",
+   "distratoresFuncao": [
+    "sujeito",
+    "vocativo",
+    "objeto direto",
+    "predicativo do sujeito"
+   ],
+   "dicionario": "peccator",
+   "distratoresDicionario": [
+    "profugus",
+    "pastor",
+    "patria",
+    "pietas"
+   ]
   },
   {
    "idioma": "la",
@@ -20645,7 +22507,14 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -20680,7 +22549,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "sujeito",
+    "predicativo do sujeito",
+    "objeto direto"
+   ],
+   "dicionario": "mors",
+   "distratoresDicionario": [
+    "moenia",
+    "mens",
+    "meus",
+    "musa"
+   ]
   },
   {
    "idioma": "la",
@@ -20715,7 +22598,21 @@
    ],
    "dificuldade": 5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "sujeito",
+    "predicativo do sujeito",
+    "objeto direto"
+   ],
+   "dicionario": "noster",
+   "distratoresDicionario": [
+    "nos",
+    "nomen",
+    "non",
+    "numen"
+   ]
   },
   {
    "idioma": "la",
@@ -20749,7 +22646,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -20785,7 +22689,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "tu",
+   "distratoresDicionario": [
+    "terra",
+    "tempus",
+    "tunc",
+    "tuus"
+   ]
   },
   {
    "idioma": "la",
@@ -20819,7 +22737,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -20837,8 +22762,8 @@
     "infinitivo"
    ],
    "distratores": [
-    "futuro do indicativo",
     "presente do subjuntivo",
+    "futuro do indicativo",
     "imperativo",
     "imperfeito do subjuntivo"
    ],
@@ -20853,7 +22778,14 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "dicionario": "dico",
+   "distratoresDicionario": [
+    "disco",
+    "dimitto",
+    "doceo",
+    "doleo"
+   ]
   },
   {
    "idioma": "la",
@@ -20889,7 +22821,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "hic",
+   "distratoresDicionario": [
+    "homo",
+    "hora",
+    "hodie",
+    "haustus"
+   ]
   },
   {
    "idioma": "la",
@@ -20923,7 +22869,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -20959,7 +22912,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "is",
+   "distratoresDicionario": [
+    "idem",
+    "in",
+    "ibi",
+    "ira"
+   ]
   },
   {
    "idioma": "la",
@@ -20993,7 +22960,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ],
+   "dicionario": "facio",
+   "distratoresDicionario": [
+    "fugio",
+    "festino",
+    "fio",
+    "audeo"
+   ]
   },
   {
    "idioma": "la",
@@ -21027,7 +23008,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "requiro",
+   "distratoresDicionario": [
+    "resurgo",
+    "advenio",
+    "decurro",
+    "dimitto"
+   ]
   },
   {
    "idioma": "la",
@@ -21061,7 +23056,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -21095,7 +23097,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "fio",
+   "distratoresDicionario": [
+    "facio",
+    "fugio",
+    "festino",
+    "amo"
+   ]
   },
   {
    "idioma": "la",
@@ -21129,7 +23138,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -21163,7 +23179,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ],
+   "dicionario": "excrucio",
+   "distratoresDicionario": [
+    "erro",
+    "benedico",
+    "commendo",
+    "compello"
+   ]
   },
   {
    "idioma": "la",
@@ -21198,7 +23228,14 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "vocativo",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "objeto direto",
+    "predicativo do sujeito"
+   ]
   },
   {
    "idioma": "la",
@@ -21233,7 +23270,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "adjunto adverbial",
+    "sujeito",
+    "vocativo"
+   ],
+   "dicionario": "caelum",
+   "distratoresDicionario": [
+    "caelestis",
+    "canis",
+    "caritas",
+    "casus"
+   ]
   },
   {
    "idioma": "la",
@@ -21267,7 +23318,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "laetor",
+   "distratoresDicionario": [
+    "laedo",
+    "laudo",
+    "libero",
+    "lego"
+   ]
   },
   {
    "idioma": "la",
@@ -21303,7 +23368,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "qui",
+   "distratoresDicionario": [
+    "quia",
+    "quis",
+    "quo",
+    "quare"
+   ]
   },
   {
    "idioma": "la",
@@ -21337,7 +23416,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "mereo",
+   "distratoresDicionario": [
+    "memoro",
+    "audeo",
+    "carpo",
+    "caveo"
+   ]
   },
   {
    "idioma": "la",
@@ -21371,7 +23464,14 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "porto",
+   "distratoresDicionario": [
+    "possum",
+    "paro",
+    "patior",
+    "audeo"
+   ]
   },
   {
    "idioma": "la",
@@ -21405,7 +23505,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "resurgo",
+   "distratoresDicionario": [
+    "requiro",
+    "advenio",
+    "decurro",
+    "dimitto"
+   ]
   },
   {
    "idioma": "la",
@@ -21439,7 +23553,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "dico",
+   "distratoresDicionario": [
+    "disco",
+    "dimitto",
+    "doceo",
+    "doleo"
+   ]
   },
   {
    "idioma": "la",
@@ -21473,7 +23601,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "oro",
+   "distratoresDicionario": [
+    "odi",
+    "amo",
+    "fio",
+    "sto"
+   ]
   },
   {
    "idioma": "la",
@@ -21508,7 +23650,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "dicionario": "nos",
+   "distratoresDicionario": [
+    "noster",
+    "non",
+    "nomen",
+    "nec"
+   ]
   },
   {
    "idioma": "la",
@@ -21544,7 +23693,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "vocativo",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "deus",
+   "distratoresDicionario": [
+    "debitor",
+    "debitum",
+    "dies",
+    "dum"
+   ]
   },
   {
    "idioma": "la",
@@ -21580,7 +23743,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "rivus",
+   "distratoresDicionario": [
+    "regina",
+    "regnum",
+    "agnus",
+    "altus"
+   ]
   },
   {
    "idioma": "la",
@@ -21616,7 +23793,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "complemento nominal",
+    "predicativo do objeto"
+   ],
+   "dicionario": "idem",
+   "distratoresDicionario": [
+    "ergo",
+    "ego",
+    "et",
+    "ille"
+   ]
   },
   {
    "idioma": "la",
@@ -21651,7 +23842,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -21686,7 +23884,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -21718,7 +23923,21 @@
    "conceitos": [],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do plural",
+   "distratoresPessoa": [
+    "3ª pessoa do singular",
+    "1ª pessoa do plural",
+    "2ª pessoa do plural",
+    "1ª pessoa do singular"
+   ],
+   "dicionario": "venio",
+   "distratoresDicionario": [
+    "video",
+    "vinco",
+    "volvo",
+    "vado"
+   ]
   },
   {
    "idioma": "la",
@@ -21753,7 +23972,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "sujeito",
+    "complemento nominal"
+   ],
+   "dicionario": "sitis",
+   "distratoresDicionario": [
+    "sicut",
+    "si",
+    "sanus",
+    "saevus"
+   ]
   },
   {
    "idioma": "la",
@@ -21787,7 +24020,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "compello",
+   "distratoresDicionario": [
+    "commendo",
+    "cogito",
+    "condo",
+    "carpo"
+   ]
   },
   {
    "idioma": "la",
@@ -21822,7 +24062,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "aposto",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -21856,7 +24103,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "sto",
+   "distratoresDicionario": [
+    "sum",
+    "sapio",
+    "spero",
+    "spiro"
+   ]
   },
   {
    "idioma": "la",
@@ -21891,7 +24152,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "aposto",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -21926,7 +24194,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "faux",
+   "distratoresDicionario": [
+    "fatum",
+    "filius",
+    "fortuna",
+    "fructus"
+   ]
   },
   {
    "idioma": "la",
@@ -21961,7 +24243,21 @@
    ],
    "dificuldade": 4.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "complemento nominal",
+    "sujeito"
+   ],
+   "dicionario": "improbus",
+   "distratoresDicionario": [
+    "inferior",
+    "insignis",
+    "iurgium",
+    "idem"
+   ]
   },
   {
    "idioma": "la",
@@ -21996,7 +24292,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -22030,7 +24333,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "incito",
+   "distratoresDicionario": [
+    "induco",
+    "infero",
+    "inquam",
+    "iacio"
+   ]
   },
   {
    "idioma": "la",
@@ -22065,7 +24375,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "iurgium",
+   "distratoresDicionario": [
+    "improbus",
+    "inferior",
+    "insignis",
+    "idem"
+   ]
   },
   {
    "idioma": "la",
@@ -22101,7 +24418,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "causa",
+   "distratoresDicionario": [
+    "canis",
+    "casus",
+    "caelum",
+    "caritas"
+   ]
   },
   {
    "idioma": "la",
@@ -22135,7 +24466,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "infero",
+   "distratoresDicionario": [
+    "incito",
+    "induco",
+    "inquam",
+    "iacio"
+   ]
   },
   {
    "idioma": "la",
@@ -22169,7 +24514,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "inquam",
+   "distratoresDicionario": [
+    "incito",
+    "induco",
+    "infero",
+    "iacio"
+   ]
   },
   {
    "idioma": "la",
@@ -22205,7 +24564,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do objeto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "adjunto adnominal",
+    "predicativo do sujeito",
+    "adjunto adverbial"
+   ],
+   "dicionario": "turbulentus",
+   "distratoresDicionario": [
+    "tunc",
+    "tuus",
+    "tu",
+    "tenebrae"
+   ]
   },
   {
    "idioma": "la",
@@ -22239,7 +24612,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "facio",
+   "distratoresDicionario": [
+    "festino",
+    "fugio",
+    "fio",
+    "audeo"
+   ]
   },
   {
    "idioma": "la",
@@ -22274,7 +24661,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "agente da passiva"
+   ],
+   "dicionario": "ego",
+   "distratoresDicionario": [
+    "mens",
+    "meus",
+    "mors",
+    "musa"
+   ]
   },
   {
    "idioma": "la",
@@ -22310,7 +24711,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "aqua",
+   "distratoresDicionario": [
+    "alea",
+    "amor",
+    "arma",
+    "agnus"
+   ]
   },
   {
    "idioma": "la",
@@ -22344,7 +24759,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "bibo",
+   "distratoresDicionario": [
+    "benedico",
+    "adeo",
+    "cano",
+    "cavo"
+   ]
   },
   {
    "idioma": "la",
@@ -22379,7 +24801,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -22413,7 +24842,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "timeo",
+   "distratoresDicionario": [
+    "tango",
+    "tollo",
+    "audeo",
+    "carpo"
+   ]
   },
   {
    "idioma": "la",
@@ -22447,7 +24883,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -22481,7 +24924,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -22515,7 +24965,14 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "facio",
+   "distratoresDicionario": [
+    "fugio",
+    "festino",
+    "fio",
+    "audeo"
+   ]
   },
   {
    "idioma": "la",
@@ -22551,7 +25008,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "qui",
+   "distratoresDicionario": [
+    "quo",
+    "quoque",
+    "quia",
+    "quis"
+   ]
   },
   {
    "idioma": "la",
@@ -22585,7 +25056,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "queror",
+   "distratoresDicionario": [
+    "quaeso",
+    "ambulo",
+    "cogito",
+    "incito"
+   ]
   },
   {
    "idioma": "la",
@@ -22620,7 +25105,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "vocativo",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "objeto direto",
+    "predicativo do sujeito"
+   ],
+   "dicionario": "lupus",
+   "distratoresDicionario": [
+    "lux",
+    "labor",
+    "lapis",
+    "latro"
+   ]
   },
   {
    "idioma": "la",
@@ -22655,7 +25154,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "agente da passiva",
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal"
+   ],
+   "dicionario": "tu",
+   "distratoresDicionario": [
+    "terra",
+    "tempus",
+    "tunc",
+    "tuus"
+   ]
   },
   {
    "idioma": "la",
@@ -22689,7 +25202,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "decurro",
+   "distratoresDicionario": [
+    "dimitto",
+    "disco",
+    "doceo",
+    "doleo"
+   ]
   },
   {
    "idioma": "la",
@@ -22725,7 +25252,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "complemento nominal",
+    "predicativo do objeto"
+   ],
+   "dicionario": "meus",
+   "distratoresDicionario": [
+    "mens",
+    "memor",
+    "mors",
+    "musa"
+   ]
   },
   {
    "idioma": "la",
@@ -22761,7 +25302,14 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -22796,7 +25344,14 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -22832,7 +25387,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ]
   },
   {
    "idioma": "la",
@@ -22868,7 +25430,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "vir",
+   "distratoresDicionario": [
+    "via",
+    "vis",
+    "vita",
+    "vinum"
+   ]
   },
   {
    "idioma": "la",
@@ -22902,7 +25478,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "1ª pessoa do singular",
+   "distratoresPessoa": [
+    "1ª pessoa do plural",
+    "2ª pessoa do singular",
+    "3ª pessoa do singular",
+    "2ª pessoa do plural"
+   ]
   },
   {
    "idioma": "la",
@@ -22937,7 +25520,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -23007,7 +25597,21 @@
    ],
    "dificuldade": 2,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "ora",
+   "distratoresDicionario": [
+    "ob",
+    "omnis",
+    "-ne",
+    "-ve"
+   ]
   },
   {
    "idioma": "la",
@@ -23042,7 +25646,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal"
+   ],
+   "dicionario": "fatum",
+   "distratoresDicionario": [
+    "faux",
+    "filius",
+    "fortuna",
+    "fructus"
+   ]
   },
   {
    "idioma": "la",
@@ -23077,7 +25695,14 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "adjunto adverbial",
+    "complemento nominal"
+   ]
   },
   {
    "idioma": "la",
@@ -23111,7 +25736,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "venio",
+   "distratoresDicionario": [
+    "video",
+    "vinco",
+    "volvo",
+    "vado"
+   ]
   },
   {
    "idioma": "la",
@@ -23147,7 +25786,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "predicativo do objeto",
+    "complemento nominal"
+   ],
+   "dicionario": "litus",
+   "distratoresDicionario": [
+    "liquor",
+    "labor",
+    "lapis",
+    "latro"
+   ]
   },
   {
    "idioma": "la",
@@ -23183,7 +25836,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto direto",
+    "adjunto adnominal",
+    "sujeito",
+    "predicativo do sujeito"
+   ],
+   "dicionario": "multus",
+   "distratoresDicionario": [
+    "mulier",
+    "mundus",
+    "musa",
+    "magnus"
+   ]
   },
   {
    "idioma": "la",
@@ -23253,7 +25920,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "terra",
+   "distratoresDicionario": [
+    "tempus",
+    "tenebrae",
+    "tentatio",
+    "tantum"
+   ]
   },
   {
    "idioma": "la",
@@ -23287,7 +25968,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "iacto",
+   "distratoresDicionario": [
+    "iacio",
+    "incito",
+    "induco",
+    "infero"
+   ]
   },
   {
    "idioma": "la",
@@ -23322,7 +26010,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "altus",
+   "distratoresDicionario": [
+    "alea",
+    "agnus",
+    "atque",
+    "amor"
+   ]
   },
   {
    "idioma": "la",
@@ -23357,7 +26059,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "sujeito",
+    "complemento nominal"
+   ],
+   "dicionario": "vis",
+   "distratoresDicionario": [
+    "via",
+    "vir",
+    "vita",
+    "vinum"
+   ]
   },
   {
    "idioma": "la",
@@ -23392,7 +26108,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "sujeito",
+    "objeto direto",
+    "aposto"
+   ],
+   "dicionario": "superus",
+   "distratoresDicionario": [
+    "superior",
+    "sanctus",
+    "saeculum",
+    "saevus"
+   ]
   },
   {
    "idioma": "la",
@@ -23427,7 +26157,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto indireto",
+    "sujeito",
+    "objeto direto"
+   ],
+   "dicionario": "saevus",
+   "distratoresDicionario": [
+    "saeculum",
+    "sanctus",
+    "sanus",
+    "semper"
+   ]
   },
   {
    "idioma": "la",
@@ -23463,7 +26207,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "predicativo do sujeito",
+    "objeto indireto"
+   ],
+   "dicionario": "memor",
+   "distratoresDicionario": [
+    "mens",
+    "meus",
+    "malum",
+    "manus"
+   ]
   },
   {
    "idioma": "la",
@@ -23499,7 +26257,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "ira",
+   "distratoresDicionario": [
+    "ibi",
+    "idem",
+    "ille",
+    "in"
+   ]
   },
   {
    "idioma": "la",
@@ -23535,7 +26307,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "multus",
+   "distratoresDicionario": [
+    "mulier",
+    "mundus",
+    "musa",
+    "magnus"
+   ]
   },
   {
    "idioma": "la",
@@ -23570,7 +26356,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "bellum",
+   "distratoresDicionario": [
+    "bene",
+    "brevis",
+    "bonus",
+    "animus"
+   ]
   },
   {
    "idioma": "la",
@@ -23604,7 +26404,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "patior",
+   "distratoresDicionario": [
+    "paro",
+    "possum",
+    "porto",
+    "ambulo"
+   ]
   },
   {
    "idioma": "la",
@@ -23638,7 +26445,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "condo",
+   "distratoresDicionario": [
+    "cogito",
+    "commendo",
+    "compello",
+    "carpo"
+   ]
   },
   {
    "idioma": "la",
@@ -23674,7 +26495,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "urbs",
+   "distratoresDicionario": [
+    "unde",
+    "unus",
+    "ubi",
+    "-que"
+   ]
   },
   {
    "idioma": "la",
@@ -23708,7 +26543,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "infero",
+   "distratoresDicionario": [
+    "incito",
+    "induco",
+    "inquam",
+    "iacio"
+   ]
   },
   {
    "idioma": "la",
@@ -23744,7 +26593,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "deus",
+   "distratoresDicionario": [
+    "debitor",
+    "debitum",
+    "dies",
+    "dum"
+   ]
   },
   {
    "idioma": "la",
@@ -23779,7 +26642,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -23814,7 +26684,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ],
+   "dicionario": "pater",
+   "distratoresDicionario": [
+    "patria",
+    "panis",
+    "pastor",
+    "pax"
+   ]
   },
   {
    "idioma": "la",
@@ -23849,7 +26733,21 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto indireto",
+    "sujeito",
+    "objeto direto"
+   ],
+   "dicionario": "altus",
+   "distratoresDicionario": [
+    "alea",
+    "agnus",
+    "atque",
+    "amor"
+   ]
   },
   {
    "idioma": "la",
@@ -23884,7 +26782,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -23919,7 +26824,14 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "vocativo",
+   "distratoresFuncao": [
+    "sujeito",
+    "aposto",
+    "objeto direto",
+    "predicativo do sujeito"
+   ]
   },
   {
    "idioma": "la",
@@ -23954,7 +26866,21 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "adjunto adnominal",
+    "vocativo"
+   ],
+   "dicionario": "ego",
+   "distratoresDicionario": [
+    "mens",
+    "meus",
+    "mors",
+    "musa"
+   ]
   },
   {
    "idioma": "la",
@@ -23990,7 +26916,21 @@
    ],
    "dificuldade": 0,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "causa",
+   "distratoresDicionario": [
+    "canis",
+    "casus",
+    "caelum",
+    "caritas"
+   ]
   },
   {
    "idioma": "la",
@@ -24024,7 +26964,21 @@
    ],
    "dificuldade": 0.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "pessoa": "2ª pessoa do singular",
+   "distratoresPessoa": [
+    "2ª pessoa do plural",
+    "1ª pessoa do singular",
+    "3ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "memoro",
+   "distratoresDicionario": [
+    "mereo",
+    "ambulo",
+    "cogito",
+    "incito"
+   ]
   },
   {
    "idioma": "la",
@@ -24059,7 +27013,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "objeto indireto",
+    "predicativo do sujeito"
+   ],
+   "dicionario": "quis",
+   "distratoresDicionario": [
+    "quoque",
+    "quia",
+    "qui",
+    "quotidianus"
+   ]
   },
   {
    "idioma": "la",
@@ -24094,7 +27062,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "numen",
+   "distratoresDicionario": [
+    "nunc",
+    "nomen",
+    "noster",
+    "nec"
+   ]
   },
   {
    "idioma": "la",
@@ -24128,7 +27110,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "laedo",
+   "distratoresDicionario": [
+    "laetor",
+    "laudo",
+    "lego",
+    "libero"
+   ]
   },
   {
    "idioma": "la",
@@ -24164,7 +27153,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "dicionario": "quis",
+   "distratoresDicionario": [
+    "quia",
+    "qui",
+    "quare",
+    "quo"
+   ]
   },
   {
    "idioma": "la",
@@ -24198,7 +27194,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "doleo",
+   "distratoresDicionario": [
+    "doceo",
+    "do",
+    "disco",
+    "dico"
+   ]
   },
   {
    "idioma": "la",
@@ -24233,7 +27236,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
   },
   {
    "idioma": "la",
@@ -24268,7 +27278,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "adjunto adverbial",
+    "sujeito",
+    "objeto direto"
+   ],
+   "dicionario": "deus",
+   "distratoresDicionario": [
+    "debitor",
+    "debitum",
+    "dies",
+    "dum"
+   ]
   },
   {
    "idioma": "la",
@@ -24302,7 +27326,14 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "dicionario": "volvo",
+   "distratoresDicionario": [
+    "volo",
+    "venio",
+    "video",
+    "vinco"
+   ]
   },
   {
    "idioma": "la",
@@ -24338,7 +27369,14 @@
    ],
    "dificuldade": 4,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ]
   },
   {
    "idioma": "la",
@@ -24374,7 +27412,21 @@
    ],
    "dificuldade": 1,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "complemento nominal",
+    "aposto",
+    "objeto indireto"
+   ],
+   "dicionario": "insignis",
+   "distratoresDicionario": [
+    "inferior",
+    "in",
+    "improbus",
+    "iurgium"
+   ]
   },
   {
    "idioma": "la",
@@ -24409,7 +27461,14 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "pietas",
+   "distratoresDicionario": [
+    "pastor",
+    "patria",
+    "plenus",
+    "primus"
+   ]
   },
   {
    "idioma": "la",
@@ -24445,7 +27504,21 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "vir",
+   "distratoresDicionario": [
+    "via",
+    "vis",
+    "vita",
+    "vinum"
+   ]
   },
   {
    "idioma": "la",
@@ -24479,7 +27552,14 @@
    ],
    "dificuldade": 1.5,
    "sempre": false,
-   "ambigua": false
+   "ambigua": false,
+   "dicionario": "adeo",
+   "distratoresDicionario": [
+    "advenio",
+    "amo",
+    "audeo",
+    "ambulo"
+   ]
   },
   {
    "idioma": "la",
@@ -24515,7 +27595,21 @@
    ],
    "dificuldade": 2.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "labor",
+   "distratoresDicionario": [
+    "lapis",
+    "latro",
+    "laniger",
+    "lente"
+   ]
   },
   {
    "idioma": "la",
@@ -24533,10 +27627,10 @@
     "subjuntivo perfeito"
    ],
    "distratores": [
-    "futuro do indicativo",
     "perfeito do indicativo",
     "presente do subjuntivo",
-    "imperfeito do subjuntivo"
+    "imperfeito do subjuntivo",
+    "futuro do indicativo"
    ],
    "nota": "impulerit: perfeito do subjuntivo, 3ª pessoa do singular, na pergunta indireta: levou.",
    "nivel": "B1",
@@ -24549,7 +27643,21 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "pessoa": "3ª pessoa do singular",
+   "distratoresPessoa": [
+    "3ª pessoa do plural",
+    "1ª pessoa do singular",
+    "2ª pessoa do singular",
+    "1ª pessoa do plural"
+   ],
+   "dicionario": "impello",
+   "distratoresDicionario": [
+    "incito",
+    "induco",
+    "infero",
+    "inquam"
+   ]
   },
   {
    "idioma": "la",
@@ -24584,7 +27692,14 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "dicionario": "tantus",
+   "distratoresDicionario": [
+    "tantum",
+    "tempus",
+    "terra",
+    "tenebrae"
+   ]
   },
   {
    "idioma": "la",
@@ -24619,7 +27734,21 @@
    ],
    "dificuldade": 3.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "objeto indireto",
+   "distratoresFuncao": [
+    "objeto direto",
+    "sujeito",
+    "vocativo",
+    "agente da passiva"
+   ],
+   "dicionario": "animus",
+   "distratoresDicionario": [
+    "agnus",
+    "altus",
+    "atque",
+    "alea"
+   ]
   },
   {
    "idioma": "la",
@@ -24654,7 +27783,21 @@
    ],
    "dificuldade": 4.5,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto direto",
+    "predicativo do sujeito",
+    "aposto"
+   ],
+   "dicionario": "caelestis",
+   "distratoresDicionario": [
+    "caelum",
+    "caritas",
+    "canis",
+    "casus"
+   ]
   },
   {
    "idioma": "la",
@@ -24689,7 +27832,1242 @@
    ],
    "dificuldade": 3,
    "sempre": true,
-   "ambigua": true
+   "ambigua": true,
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ],
+   "dicionario": "ira",
+   "distratoresDicionario": [
+    "ibi",
+    "idem",
+    "ille",
+    "in"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu001-0",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "Vos",
+   "frase": "Vos dii nostri.",
+   "ocorrencia": 1,
+   "de": "la-u001",
+   "fonte": "Is 42,17",
+   "lema": "la-p049",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "Vos: nominativo plural, o sujeito, com o verbo subentendido.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf034-2",
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "aposto",
+    "objeto indireto"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu003-2",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "Pater",
+   "frase": "Ego et Pater unum sumus.",
+   "ocorrencia": 1,
+   "de": "la-u003",
+   "fonte": "Jo 10,30",
+   "lema": "la-p072",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "Pater: nominativo singular, sujeito, com ego.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 1,
+   "sempre": false,
+   "ambigua": false,
+   "segundo": "la-xf036-0",
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu003-3",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "unum",
+   "frase": "Ego et Pater unum sumus.",
+   "ocorrencia": 1,
+   "de": "la-u003",
+   "fonte": "Jo 10,30",
+   "lema": "la-p023",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "unum: nominativo neutro singular, o predicativo: uma só coisa.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 1.5,
+   "sempre": false,
+   "ambigua": true,
+   "segundo": "la-xf010-2",
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "adjunto adnominal",
+    "objeto direto",
+    "aposto"
+   ],
+   "dicionario": "unus",
+   "distratoresDicionario": [
+    "unde",
+    "urbs",
+    "ubi",
+    "-que"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu011-3",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "vita",
+   "frase": "Laudabo Dominum in vita mea.",
+   "ocorrencia": 1,
+   "de": "la-u011",
+   "fonte": "Sl 146 (145),2",
+   "lema": "la-p011",
+   "pt": "ablativo",
+   "aceitas": [
+    "caso ablativo",
+    "abl"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "dativo",
+    "acusativo"
+   ],
+   "nota": "vita: ablativo singular, depois de in: o tempo em que se louva. Vem depois de «in», preposição com ablativo.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g006"
+   ],
+   "dificuldade": 2,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf042-2",
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu015-1",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "omnes",
+   "frase": "vidit omnes filios hominum.",
+   "ocorrencia": 1,
+   "de": "la-u015",
+   "fonte": "Sl 33 (32),13",
+   "lema": "la-p019",
+   "pt": "acusativo",
+   "aceitas": [
+    "caso acusativo",
+    "acus",
+    "ac"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
+   "nota": "omnes: acusativo masculino plural, concorda com filios.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g003"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf009-2",
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "predicativo do objeto",
+    "complemento nominal",
+    "aposto"
+   ],
+   "dicionario": "omnis",
+   "distratoresDicionario": [
+    "ora",
+    "ob",
+    "agnus",
+    "altus"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu019-0",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "Gratia",
+   "frase": "Gratia cum omnibus vobis.",
+   "ocorrencia": 1,
+   "de": "la-u019",
+   "fonte": "Hb 13,25",
+   "lema": "la-p050",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
+   ],
+   "nota": "Gratia: nominativo singular, o sujeito, com o verbo subentendido.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 1.5,
+   "sempre": false,
+   "ambigua": true,
+   "segundo": "la-xt013-2",
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu019-3",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "vobis",
+   "frase": "Gratia cum omnibus vobis.",
+   "ocorrencia": 1,
+   "de": "la-u019",
+   "fonte": "Hb 13,25",
+   "lema": "la-p049",
+   "pt": "ablativo",
+   "aceitas": [
+    "caso ablativo",
+    "abl"
+   ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
+   "nota": "vobis: ablativo plural, depois de cum.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g006"
+   ],
+   "dificuldade": 4,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf023-1",
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "sujeito",
+    "agente da passiva"
+   ],
+   "dicionario": "vos",
+   "distratoresDicionario": [
+    "voluntas",
+    "vae",
+    "via",
+    "vir"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu027-0",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "Omnes",
+   "frase": "Omnes filii unius viri sumus.",
+   "ocorrencia": 1,
+   "de": "la-u027",
+   "fonte": "Gn 42,11",
+   "lema": "la-p019",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "Omnes: nominativo masculino plural, concorda com filii.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf009-2",
+   "dicionario": "omnis",
+   "distratoresDicionario": [
+    "ora",
+    "ob",
+    "agnus",
+    "altus"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu028-3",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "Deo",
+   "frase": "Ambulavitque cum Deo, et non apparuit.",
+   "ocorrencia": 1,
+   "de": "la-u028",
+   "fonte": "Gn 5,24",
+   "lema": "la-p001",
+   "pt": "ablativo",
+   "aceitas": [
+    "caso ablativo",
+    "abl"
+   ],
+   "distratores": [
+    "dativo",
+    "acusativo",
+    "genitivo",
+    "nominativo"
+   ],
+   "nota": "Deo: ablativo singular, depois de cum. Vem depois de «cum», preposição com ablativo.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g006"
+   ],
+   "dificuldade": 2,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf025-3",
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "deus",
+   "distratoresDicionario": [
+    "debitor",
+    "debitum",
+    "dies",
+    "dum"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu032-1",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "quod",
+   "frase": "Tolle quod tuum est, et vade.",
+   "ocorrencia": 1,
+   "de": "la-u032",
+   "fonte": "Mt 20,14",
+   "lema": "la-p064",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "acusativo",
+    "vocativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "quod: nominativo neutro singular, «o que», o sujeito de est.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xt034-4",
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto indireto",
+    "adjunto adnominal",
+    "vocativo"
+   ],
+   "dicionario": "qui",
+   "distratoresDicionario": [
+    "quo",
+    "quoque",
+    "quia",
+    "quis"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu085-5",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "noster",
+   "frase": "quis deus magnus sicut Deus noster?",
+   "ocorrencia": 1,
+   "de": "la-u085",
+   "fonte": "Sl 77 (76),14",
+   "lema": "la-p089",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "noster: nominativo masculino singular, concorda com Deus.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 1,
+   "sempre": false,
+   "ambigua": false,
+   "segundo": "la-xt004-1",
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "sujeito",
+    "aposto",
+    "complemento nominal"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu092-1",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "nomen",
+   "frase": "Laudate nomen Domini.",
+   "ocorrencia": 1,
+   "de": "la-u092",
+   "fonte": "Sl 135 (134),1",
+   "lema": "la-p092",
+   "pt": "acusativo",
+   "aceitas": [
+    "caso acusativo",
+    "acus",
+    "ac"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
+   "nota": "nomen: acusativo singular neutro, o objeto direto de laudate.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g003"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xt005-1",
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu096-0",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "Tui",
+   "frase": "Tui sunt caeli, et tua est terra.",
+   "ocorrencia": 1,
+   "de": "la-u096",
+   "fonte": "Sl 89 (88),12",
+   "lema": "la-p055",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "genitivo",
+    "acusativo",
+    "ablativo"
+   ],
+   "nota": "Tui: nominativo masculino plural, o predicativo: de quem são.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xt016-4",
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "adjunto adnominal",
+    "objeto direto",
+    "aposto"
+   ],
+   "dicionario": "tuus",
+   "distratoresDicionario": [
+    "tunc",
+    "tu",
+    "turbulentus",
+    "terra"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu096-2",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "caeli",
+   "frase": "Tui sunt caeli, et tua est terra.",
+   "ocorrencia": 1,
+   "de": "la-u096",
+   "fonte": "Sl 89 (88),12",
+   "lema": "la-p090",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "genitivo",
+    "acusativo",
+    "ablativo"
+   ],
+   "nota": "caeli: nominativo plural, o sujeito de sunt.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 1.5,
+   "sempre": false,
+   "ambigua": true,
+   "segundo": "la-xt024-1",
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "adjunto adnominal",
+    "objeto direto",
+    "vocativo"
+   ],
+   "dicionario": "caelum",
+   "distratoresDicionario": [
+    "caelestis",
+    "canis",
+    "caritas",
+    "casus"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu096-6",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "terra",
+   "frase": "Tui sunt caeli, et tua est terra.",
+   "ocorrencia": 1,
+   "de": "la-u096",
+   "fonte": "Sl 89 (88),12",
+   "lema": "la-p096",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
+   ],
+   "nota": "terra: nominativo singular, o sujeito de est.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 1.5,
+   "sempre": false,
+   "ambigua": true,
+   "segundo": "la-xt007-8",
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu100-1",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "me",
+   "frase": "hodie mecum eris in paradiso.",
+   "ocorrencia": 1,
+   "de": "la-u100",
+   "fonte": "Lc 23,43",
+   "lema": "la-p004",
+   "pt": "ablativo",
+   "aceitas": [
+    "caso ablativo",
+    "abl"
+   ],
+   "distratores": [
+    "acusativo",
+    "dativo",
+    "genitivo",
+    "nominativo"
+   ],
+   "nota": "me: ablativo singular, depois de cum.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g006"
+   ],
+   "dificuldade": 4,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf015-1",
+   "funcao": "adjunto adverbial",
+   "distratoresFuncao": [
+    "objeto indireto",
+    "objeto direto",
+    "adjunto adnominal",
+    "complemento nominal"
+   ],
+   "dicionario": "ego",
+   "distratoresDicionario": [
+    "mens",
+    "meus",
+    "memor",
+    "mors"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu107-1",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "manus",
+   "frase": "sed manus, manus sunt Esau.",
+   "ocorrencia": 1,
+   "de": "la-u107",
+   "fonte": "Gn 27,22",
+   "lema": "la-p073",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "manus: nominativo plural, o sujeito.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 4,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf036-2",
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu118-2",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "hora",
+   "frase": "Pater, venit hora.",
+   "ocorrencia": 1,
+   "de": "la-u118",
+   "fonte": "Jo 17,1",
+   "lema": "la-p118",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "ablativo",
+    "acusativo",
+    "genitivo"
+   ],
+   "nota": "hora: nominativo singular, o sujeito.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 1.5,
+   "sempre": false,
+   "ambigua": true,
+   "segundo": "la-xt019-3",
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu144-1",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "meum",
+   "frase": "Tempus meum nondum advenit",
+   "ocorrencia": 1,
+   "de": "la-u144",
+   "fonte": "Jo 7,6",
+   "lema": "la-p013",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "meum: nominativo neutro singular, concorda com tempus.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf036-6",
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "sujeito",
+    "complemento nominal",
+    "objeto direto"
+   ],
+   "dicionario": "meus",
+   "distratoresDicionario": [
+    "mens",
+    "memor",
+    "mors",
+    "musa"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu149-4",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "plena",
+   "frase": "Longa est vita, si plena est",
+   "ocorrencia": 1,
+   "de": "la-u149",
+   "fonte": "Sêneca, Cartas a Lucílio XV,93,2",
+   "lema": "la-p111",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "ablativo",
+    "genitivo"
+   ],
+   "nota": "plena: nominativo feminino singular, o predicativo de vita, que não se repete.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 3,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xt013-3",
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "sujeito",
+    "adjunto adnominal",
+    "objeto direto",
+    "aposto"
+   ],
+   "dicionario": "plenus",
+   "distratoresDicionario": [
+    "pastor",
+    "patria",
+    "pietas",
+    "primus"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu152-2",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "tuum",
+   "frase": "honora patrem tuum et matrem.",
+   "ocorrencia": 1,
+   "de": "la-u152",
+   "fonte": "Lc 18,20",
+   "lema": "la-p055",
+   "pt": "acusativo",
+   "aceitas": [
+    "caso acusativo",
+    "acus",
+    "ac"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
+   "nota": "tuum: acusativo masculino singular, concorda com patrem.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g003"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xt005-2",
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "sujeito",
+    "predicativo do objeto",
+    "complemento nominal",
+    "objeto indireto"
+   ],
+   "dicionario": "tuus",
+   "distratoresDicionario": [
+    "tunc",
+    "tu",
+    "turbulentus",
+    "terra"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu177-2",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "bellum",
+   "frase": "fuit enim bellum Domini.",
+   "ocorrencia": 1,
+   "de": "la-u177",
+   "fonte": "1Cr 5,22",
+   "lema": "la-p157",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "vocativo",
+    "acusativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "bellum: nominativo singular, o sujeito.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 1.5,
+   "sempre": false,
+   "ambigua": true,
+   "segundo": "la-xf059-4",
+   "funcao": "sujeito",
+   "distratoresFuncao": [
+    "predicativo do sujeito",
+    "objeto direto",
+    "vocativo",
+    "aposto"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu222-1",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "homines",
+   "frase": "Non homines timere, non deos",
+   "ocorrencia": 1,
+   "de": "la-u222",
+   "fonte": "Sêneca, Cartas a Lucílio IX,75,18",
+   "lema": "la-p015",
+   "pt": "acusativo",
+   "aceitas": [
+    "caso acusativo",
+    "acus",
+    "ac"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
+   "nota": "homines: acusativo plural, o objeto de timere.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g003"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xf058-0",
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ],
+   "dicionario": "homo",
+   "distratoresDicionario": [
+    "hora",
+    "hodie",
+    "hic",
+    "haustus"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu248-1",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "moenia",
+   "frase": "mea moenia vidi",
+   "ocorrencia": 1,
+   "de": "la-u248",
+   "fonte": "Vergílio, Eneida IV,655",
+   "lema": "la-p231",
+   "pt": "acusativo",
+   "aceitas": [
+    "caso acusativo",
+    "acus",
+    "ac"
+   ],
+   "distratores": [
+    "nominativo",
+    "vocativo",
+    "ablativo",
+    "genitivo"
+   ],
+   "nota": "moenia: acusativo plural, objeto de vidi.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g003"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xt042-5",
+   "funcao": "objeto direto",
+   "distratoresFuncao": [
+    "sujeito",
+    "objeto indireto",
+    "adjunto adverbial",
+    "predicativo do objeto"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu252-0",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "Quid",
+   "frase": "Quid est veritas?",
+   "ocorrencia": 1,
+   "de": "la-u252",
+   "fonte": "Jo 18,38",
+   "lema": "la-p236",
+   "pt": "nominativo",
+   "aceitas": [
+    "caso nominativo",
+    "nom"
+   ],
+   "distratores": [
+    "acusativo",
+    "vocativo",
+    "genitivo",
+    "ablativo"
+   ],
+   "nota": "Quid: nominativo neutro singular, interrogativo: o quê.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g001"
+   ],
+   "dificuldade": 2.5,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xt044-0",
+   "funcao": "predicativo do sujeito",
+   "distratoresFuncao": [
+    "objeto direto",
+    "adjunto adnominal",
+    "adjunto adverbial",
+    "vocativo"
+   ],
+   "dicionario": "quis",
+   "distratoresDicionario": [
+    "quia",
+    "qui",
+    "quare",
+    "quo"
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-xu260-0",
+   "tipo": "forma",
+   "familia": "caso",
+   "la": "Tantae",
+   "frase": "Tantae molis erat Romanam condere gentem!",
+   "ocorrencia": 1,
+   "de": "la-u260",
+   "fonte": "Vergílio, Eneida I,33",
+   "lema": "la-p247",
+   "pt": "genitivo",
+   "aceitas": [
+    "caso genitivo",
+    "gen"
+   ],
+   "distratores": [
+    "dativo",
+    "nominativo",
+    "vocativo",
+    "ablativo"
+   ],
+   "nota": "Tantae: genitivo feminino singular, concorda com molis.",
+   "nivel": "A1",
+   "tags": [
+    "gramática",
+    "caso"
+   ],
+   "conceitos": [
+    "la-g004"
+   ],
+   "dificuldade": 4,
+   "sempre": true,
+   "ambigua": true,
+   "segundo": "la-xt046-1",
+   "funcao": "adjunto adnominal",
+   "distratoresFuncao": [
+    "complemento nominal",
+    "sujeito",
+    "objeto indireto",
+    "objeto direto"
+   ],
+   "dicionario": "tantus",
+   "distratoresDicionario": [
+    "tantum",
+    "tempus",
+    "terra",
+    "tenebrae"
+   ]
   },
   {
    "idioma": "la",

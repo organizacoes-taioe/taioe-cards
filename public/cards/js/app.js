@@ -116,7 +116,11 @@ window.TaioeCardsApp = function (ctx) {
   const ENUNCIADO_DO_CONCEITO = {
     caso: 'card.enunciado.conceito.caso', verbo: 'card.enunciado.conceito.verbo', voz: 'card.enunciado.conceito.voz',
     construcao: 'card.enunciado.conceito.construcao', declinacao: 'card.enunciado.conceito.declinacao',
-    conjugacao: 'card.enunciado.conceito.conjugacao'
+    conjugacao: 'card.enunciado.conceito.conjugacao',
+    /* os de gramática do espanhol (03/11/2026) */
+    tempo: 'card.enunciado.conceito.tempo', 'ser-estar': 'card.enunciado.conceito.serEstar',
+    'por-para': 'card.enunciado.conceito.porPara', pronome: 'card.enunciado.conceito.pronome',
+    apocope: 'card.enunciado.conceito.apocope'
   };
 
   /* emVista.escolha: os textos que a pessoa estuda ({ textos, em, propria });
@@ -539,6 +543,8 @@ window.TaioeCardsApp = function (ctx) {
     const PALAVRAS_PEDIDAS_POR_AVULSA = 5;
     /* o contraste não mora nos inéditos: entra um de cada vez, por contrasteDaVez */
     if (p.ineditos) p.ineditos = p.ineditos.filter(id => (PORID[id] || {}).tipo !== 'contraste');
+    /* fora do latim, o conceito (a gramática do espanhol) também entra um de cada vez, por conceitoDaVez */
+    if (p.ineditos && !TRILHAS) p.ineditos = p.ineditos.filter(id => (PORID[id] || {}).tipo !== 'conceito');
     if (!p.ineditos || p.ineditos.length < 2) return;
     if (TRILHAS) { ordenarTrilhas(p); return; }
     /* A frase que a palavra acabou de destravar fura a fila. Estar aqui já
@@ -1017,7 +1023,7 @@ window.TaioeCardsApp = function (ctx) {
       arquivados: progresso.arquivados,
       alvo: Motor.alvoDaFila(progresso.diario),
       respostas: respostas,
-      temIneditos: progresso.ineditos.length > 0 || !!contrasteDaVez(),
+      temIneditos: progresso.ineditos.length > 0 || !!contrasteDaVez() || !!conceitoDaVez(),
       livres: { esPt: progresso.filaEsPt.filter(livre), ptEs: progresso.filaPtEs.filter(livre) },
       vencidos: progresso.dominados.filter(id =>
         estadoParaFila(id) && !Motor.esperando(estadoParaFila(id), agora)).length,
@@ -1092,7 +1098,7 @@ window.TaioeCardsApp = function (ctx) {
 
   function proximoNovo() {
     /* sem contraste em jogo, a vaga de card novo é dele (ver contrasteDaVez) */
-    const contraste = contrasteDaVez();
+    const contraste = contrasteDaVez() || conceitoDaVez();
     if (contraste) {
       const i = progresso.ineditos.indexOf(contraste);
       if (i >= 0) progresso.ineditos.splice(i, 1);
@@ -1154,6 +1160,26 @@ window.TaioeCardsApp = function (ctx) {
       const faltam = Motor.requeridas(c).filter(r => String(r)[0] === '+' || Motor.sabidaEm(r, progresso.cards, arq) === Infinity).length;
       const k = [faltam, NIVEL_DO_CONTRASTE[c.nivel] || 0, conjuntoAnterior && c.conjunto === conjuntoAnterior ? 1 : 0, i];
       if (!chave || antes(k, chave)) { melhor = c.id; chave = k; }
+    }
+    return melhor;
+  }
+
+  /* Fora do latim (a gramática do espanhol, 03/11/2026), sempre um conceito em jogo, como o
+     contraste: sem nenhum visto e ainda não dominado, a vaga de card novo é do primeiro da lista
+     que já tem dois exemplos em frases que a pessoa viu (o exemplo sai dessas frases). */
+  const CONCEITOS_FORA = TRILHAS ? [] : CARDS.filter(c => c.tipo === 'conceito');
+  function conceitoDaVez() {
+    if (!CONCEITOS_FORA.length) return null;
+    const arq = progresso.arquivados || {};
+    let melhor = null;
+    for (const c of CONCEITOS_FORA) {
+      const e = progresso.cards[c.id];
+      if (Motor.arquivado(c.id, arq)) continue;
+      if (e && e.vistas) {
+        if (e.etapa !== 'dominado') return null;   // já há um em jogo
+        continue;
+      }
+      if (!melhor && (c.exemplos || []).filter(x => x.de && progresso.cards[x.de] && progresso.cards[x.de].vistas).length >= 2) melhor = c.id;
     }
     return melhor;
   }
@@ -1403,7 +1429,8 @@ window.TaioeCardsApp = function (ctx) {
     /* O card de conceito pergunta com um exemplo real e a palavra em destaque; a palavra do
        latim aparece pelo enunciado do dicionário («dominus, domini, m.»). */
     exemploAtual = cardAtual.tipo === 'conceito' ? Motor.exemploDoConceito(cardAtual, est, progresso.cards) : null;
-    if (exemploAtual) el.termo.innerHTML = comDestaque(exemploAtual.la, exemploAtual.w);
+    /* a frase de gênero variável do exemplo aparece no masculino */
+    if (exemploAtual) el.termo.innerHTML = comDestaque(String(exemploAtual[L] || exemploAtual.la).replace(/\{([^{}|]*)\|[^{}|]*\}/g, '$1'), exemploAtual.w);
     else if (cardAtual.tipo === 'forma') el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.la, cardAtual.ocorrencia);
     /* a flexão mostra só a forma: o enunciado do dicionário embaixo era dica (pedido do Gere,
        31/10/2026); ele aparece depois, na nota */
@@ -1511,6 +1538,22 @@ window.TaioeCardsApp = function (ctx) {
     const alvo = chave(palavra);
     const re = /[A-Za-zÀ-ÿĀ-ſ]+/g;
     let m, achadas = 0;
+    /* o destaque de várias palavras seguidas («he comido», «voy a llamar»: os cards de
+       gramática do espanhol, 03/11/2026) */
+    const partes = String(palavra).trim().split(/\s+/);
+    if (partes.length > 1) {
+      const toks = [];
+      while ((m = re.exec(frase))) toks.push(m);
+      const alvos = partes.map(chave);
+      for (let i = 0; i + alvos.length <= toks.length; i++) {
+        if (alvos.every((a, j) => chave(toks[i + j][0]) === a) && ++achadas >= (vez || 1)) {
+          const ini = toks[i].index, ult = toks[i + alvos.length - 1], fim = ult.index + ult[0].length;
+          return escapar(frase.slice(0, ini)) + '<mark class="destaque">' + escapar(frase.slice(ini, fim)) +
+            '</mark>' + escapar(frase.slice(fim));
+        }
+      }
+      return escapar(frase);
+    }
     while ((m = re.exec(frase))) {
       const k = chave(m[0]);
       if ((k === alvo || ['que', 'ne', 've', 'cum'].some(s => k === alvo + s)) && ++achadas >= (vez || 1)) {
