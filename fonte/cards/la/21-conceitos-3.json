@@ -1,0 +1,197 @@
+[
+ {
+  "id": "la-g030",
+  "tipo": "conceito",
+  "familia": "verbo",
+  "la": "futuro perfeito do indicativo",
+  "pt": "futuro perfeito do indicativo",
+  "aceitas": [
+   "futuro perfeito do indicativo",
+   "futuro perfeito",
+   "futuro anterior",
+   "futuro composto"
+  ],
+  "distratores": [
+   "perfeito do subjuntivo",
+   "futuro do indicativo",
+   "perfeito do indicativo",
+   "mais-que-perfeito do indicativo"
+  ],
+  "nota": "A ação que estará acabada antes de outra, no futuro: «terei feito». O tema do perfeito com -ero, -eris, -erit, -erimus, -eritis, -erint (feci → fecero, feceris). Depois de si, qui e ut, o português diz com o futuro do subjuntivo: si credideris, «se creres». Fora a 1ª pessoa do singular (fecero × fecerim), as formas são iguais às do perfeito do subjuntivo; quem decide é a frase.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Dum loquimur, fugerit invida aetas:",
+    "w": "fugerit",
+    "exp": "fugerit: futuro perfeito de fugio (fug- + -erit): enquanto falamos, o tempo invejoso «terá fugido».",
+    "fonte": "Horácio, Odes I,11,7–8",
+    "distratores": [
+     "perfeito do subjuntivo",
+     "futuro do indicativo",
+     "imperativo",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "la": "Ut sementem feceris, ita metes",
+    "w": "feceris",
+    "exp": "feceris: futuro perfeito de facio (fec- + -eris), antes do futuro metes: «como tiveres semeado, assim colherás».",
+    "fonte": "Cícero, Do orador II,261",
+    "distratores": [
+     "perfeito do subjuntivo",
+     "futuro do indicativo",
+     "imperativo",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "la": "qui autem perseveraverit usque in finem, hic salvus erit.",
+    "w": "perseveraverit",
+    "exp": "perseveraverit: futuro perfeito de persevero (perseverav- + -erit), antes de erit: «quem perseverar até o fim, esse será salvo».",
+    "fonte": "Mt 10,22",
+    "distratores": [
+     "perfeito do subjuntivo",
+     "futuro do indicativo",
+     "imperativo",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "la": "Qui crediderit, et baptizatus fuerit, salvus erit:",
+    "w": "crediderit",
+    "exp": "crediderit: futuro perfeito de credo (credid- + -erit): «quem crer e for batizado será salvo».",
+    "fonte": "Mc 16,16",
+    "distratores": [
+     "perfeito do subjuntivo",
+     "futuro do indicativo",
+     "imperativo",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "la": "si quis sermonem meum servaverit, mortem non videbit in aeternum.",
+    "w": "servaverit",
+    "exp": "servaverit: futuro perfeito de servo (servav- + -erit), depois de si: «se alguém guardar a minha palavra, não verá a morte».",
+    "fonte": "Jo 8,51",
+    "distratores": [
+     "perfeito do subjuntivo",
+     "futuro do indicativo",
+     "imperativo",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "la": "Nonne dixi tibi quoniam si credideris, videbis gloriam Dei?",
+    "w": "credideris",
+    "exp": "credideris: futuro perfeito de credo (credid- + -eris), antes de videbis: «se creres, verás a glória de Deus».",
+    "fonte": "Jo 11,40",
+    "distratores": [
+     "perfeito do subjuntivo",
+     "futuro do indicativo",
+     "imperativo",
+     "imperfeito do indicativo"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "la-g031",
+  "tipo": "conceito",
+  "familia": "construcao",
+  "la": "ablativo de comparação",
+  "pt": "ablativo de comparação",
+  "aceitas": [
+   "ablativo de comparacao",
+   "ablativo comparativo",
+   "segundo termo da comparacao"
+  ],
+  "distratores": [
+   "ablativo absoluto",
+   "ablativo de instrumento",
+   "ablativo de causa",
+   "ablativo de lugar"
+  ],
+  "nota": "Depois de um comparativo, o segundo termo pode vir no ablativo, sem quam: ære perennius, «mais duradouro que o bronze»; melle dulcius, «mais doce que o mel». Com quam, ele fica no caso do primeiro: dulcius quam mel. O português diz sempre com «(do) que».",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Exegi monumentum ære perennius",
+    "w": "ære",
+    "exp": "ære: ablativo de aes depois do comparativo perennius: «mais duradouro que o bronze».",
+    "fonte": "Horácio, Odes III,30,1",
+    "distratores": [
+     "ablativo absoluto",
+     "ablativo de instrumento",
+     "ablativo de causa",
+     "ablativo de lugar"
+    ]
+   },
+   {
+    "la": "regalique situ pyramidum altius,",
+    "w": "situ",
+    "exp": "situ: ablativo de situs depois do comparativo altius: «mais alto que a construção régia das pirâmides».",
+    "fonte": "Horácio, Odes III,30,2",
+    "distratores": [
+     "ablativo absoluto",
+     "ablativo de instrumento",
+     "ablativo de causa",
+     "ablativo de lugar"
+    ]
+   },
+   {
+    "la": "Quid dulcius melle, et quid fortius leone?",
+    "w": "melle",
+    "exp": "melle: ablativo de mel depois de dulcius: «que há mais doce que o mel?».",
+    "fonte": "Jz 14,18",
+    "distratores": [
+     "ablativo de instrumento",
+     "ablativo absoluto",
+     "ablativo de causa",
+     "ablativo de lugar"
+    ]
+   },
+   {
+    "la": "nihil est enim virtute amabilius,",
+    "w": "virtute",
+    "exp": "virtute: ablativo de virtus depois de amabilius: «nada é mais amável que a virtude».",
+    "fonte": "Cícero, Da amizade 28",
+    "distratores": [
+     "ablativo absoluto",
+     "ablativo de instrumento",
+     "ablativo de causa",
+     "ablativo de lugar"
+    ]
+   },
+   {
+    "la": "Melior est patiens viro forti,",
+    "w": "viro",
+    "exp": "viro: ablativo de vir depois de melior: «mais vale o paciente que o homem forte».",
+    "fonte": "Pr 16,32",
+    "distratores": [
+     "ablativo de causa",
+     "ablativo absoluto",
+     "ablativo de instrumento",
+     "ablativo de lugar"
+    ]
+   },
+   {
+    "la": "Posside sapientiam, quia auro melior est,",
+    "w": "auro",
+    "exp": "auro: ablativo de aurum depois de melior: «adquire a sabedoria, porque é melhor que o ouro».",
+    "fonte": "Pr 16,16",
+    "distratores": [
+     "ablativo absoluto",
+     "ablativo de instrumento",
+     "ablativo de causa",
+     "ablativo de lugar"
+    ]
+   }
+  ]
+ }
+]
