@@ -1484,7 +1484,7 @@ window.Motor = (function () {
   function filaDe(est) {
     const e = (est && est.etapa) || 'multipla';
     /* o card de forma acertado não volta: não mora em fila nenhuma */
-    if (e === 'dominado' && est && ehForma(est.id)) return 'fora';
+    if (e === 'dominado' && est && (ehForma(est.id) || ehHeranca(est.id))) return 'fora';
     if (e === 'dominado') return 'dominados';
     return (e === 'multipla' || e === 'escrita') ? 'esPt' : 'ptEs';
   }
@@ -2433,7 +2433,18 @@ window.Motor = (function () {
        — quem já provou o espanhol→português não volta à estaca zero. */
     const inversa = ehVolta(r.direcao) && !ehContraste(est.id);
     const jaDominado = est.etapa === 'dominado';
-    if ((ehContraste(est.id) || ehConceito(est.id) || ehFlexaoDeCaso(est.id) || deEscolherSempre(est.id)) && r.acertou && !jaDominado) {
+    if (ehHeranca(est.id)) {
+      /* o card de herança (§13) é curiosidade, não fica no jogo (pedido do Gere, 03/11/2026):
+         o acerto de primeira, ou dois seguidos depois de um erro, fecham de vez, como na forma */
+      if (r.acertou && (est.vistas === 1 || est.seguidas >= ACERTOS_PARA_FECHAR_HERANCA)) {
+        est.etapa = 'dominado';
+        if (!est.dominadoEm) est.dominadoEm = new Date().toISOString();
+        if (est.ateDominar === undefined) est.ateDominar = est.vistas;
+        est.seguidas = 0;
+      } else if (!jaDominado) {
+        est.etapa = 'multipla';
+      }
+    } else if ((ehContraste(est.id) || ehConceito(est.id) || ehFlexaoDeCaso(est.id) || deEscolherSempre(est.id)) && r.acertou && !jaDominado) {
       /* o card de contraste (§3.7), desde 24/10/2026 o de conceito (§3.5), desde 26/10/2026 a
          flexão de nome (§3.8) e desde 29/10/2026 os de compreensão e de herança (§13): só
          múltipla escolha; três acertos seguidos o dominam, e daí em diante ele volta por data,
@@ -2513,7 +2524,7 @@ window.Motor = (function () {
     }
 
     /* Só o maduro espera por data; qualquer outro volta pela fila e mais nada. */
-    est.voltaEm = est.etapa === 'dominado' && !ehForma(est.id) ? proximaVolta(est.revisoes, est.ultima) : null;
+    est.voltaEm = est.etapa === 'dominado' && !ehForma(est.id) && !ehHeranca(est.id) ? proximaVolta(est.revisoes, est.ultima) : null;
 
     // a estreia é a única medida limpa do que já se sabia antes do app
     if (est.vistas === 1) est.primeiraCerta = !!r.acertou;
@@ -2587,9 +2598,15 @@ window.Motor = (function () {
      é a das respostas já dadas ao card: o mesmo exemplo em qualquer aparelho. Desde
      24/10/2026 é sempre de escolher, com as alternativas do exemplo da vez (as leituras que a
      mesma forma teria fora da frase vêm primeiro; ver fonte/latim/cards_de_forma.py). */
-  function exemploDoConceito(card, est) {
-    const ex = (card && card.exemplos) || [];
+  function exemploDoConceito(card, est, estados) {
+    let ex = (card && card.exemplos) || [];
     if (!ex.length) return null;
+    /* nas declinações e conjugações (03/11/2026), os exemplos são palavras do curso: vêm as que
+       a pessoa já viu, quando há ao menos duas */
+    if (estados && ex.some(e => e.lema)) {
+      const vistas = ex.filter(e => e.lema && estados[e.lema] && estados[e.lema].vistas);
+      if (vistas.length >= 2) ex = vistas;
+    }
     const n = (est && est.vistas) || 0;
     return ex[n % ex.length];
   }
@@ -2606,6 +2623,7 @@ window.Motor = (function () {
      pessoa em quatro. E o erro puxa os parecidos: quem errou um dativo passa a ver também os
      dativos de leitura única, até acertar três seguidos daquele caso. */
   const ACERTOS_QUE_SOLTAM = 3;
+  const ACERTOS_PARA_FECHAR_HERANCA = 2;
   let RESPOSTA_DA_FORMA = Object.create(null);   // id do card de forma → resposta («dativo»)
 
   function ehForma(id) { return TIPO[id] === 'forma'; }
@@ -2632,7 +2650,7 @@ window.Motor = (function () {
 
   /* O card de forma acertado já disse o que tinha a dizer: fora de todas as filas. */
   function encerrado(id, est) {
-    return ehForma(id) && !!est && est.etapa === 'dominado';
+    return (ehForma(id) || ehHeranca(id)) && !!est && est.etapa === 'dominado';
   }
 
   /* A resposta tem sido errada nos cards de forma de mesmo gabarito: o último erro ainda não
@@ -2648,6 +2666,21 @@ window.Motor = (function () {
     let ultimoErro = -1;
     vezes.forEach((h, i) => { if (!h.acertou) ultimoErro = i; });
     return ultimoErro >= 0 && vezes.length - 1 - ultimoErro < ACERTOS_QUE_SOLTAM;
+  }
+
+  /* A pergunta da vez no card de forma (pedido do Gere, 03/11/2026): o caso (ou o tempo e o
+     modo), a função na frase, a pessoa do verbo ou a forma de dicionário, conforme o que o card
+     tem. A primeira pergunta varia de card para card (pelo id), e a volta depois de um erro faz
+     a seguinte. Devolve { tipo, pt, distratores, aceitas }. */
+  function perguntaDaForma(card, est) {
+    if (!card || card.tipo !== 'forma') return null;
+    const tipos = [{ tipo: card.familia === 'verbo' ? 'tempo' : 'caso', pt: card.pt, distratores: card.distratores || [], aceitas: card.aceitas || [] }];
+    if (card.funcao && (card.distratoresFuncao || []).length >= 4) tipos.push({ tipo: 'funcao', pt: card.funcao, distratores: card.distratoresFuncao, aceitas: [] });
+    if (card.pessoa && (card.distratoresPessoa || []).length >= 4) tipos.push({ tipo: 'pessoa', pt: card.pessoa, distratores: card.distratoresPessoa, aceitas: [] });
+    if (card.dicionario && (card.distratoresDicionario || []).length >= 4) tipos.push({ tipo: 'dicionario', pt: card.dicionario, distratores: card.distratoresDicionario, aceitas: [] });
+    let h = 0;
+    for (const ch of String(card.id)) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+    return tipos[(h + ((est && est.vistas) || 0)) % tipos.length];
   }
 
   function formaEscolhida(card, estados) {
@@ -3025,7 +3058,7 @@ window.Motor = (function () {
     /* no conceito e na forma (LATIM.md §3.5 e §3.6), as que mais se confundem com a certa: as do
        exemplo da vez, no conceito, e as do card, na forma (ver fonte/latim/cards_de_forma.py) */
     if (card.tipo === 'conceito' || card.tipo === 'forma') {
-      const ex = card.tipo === 'conceito' ? exemploDoConceito(card, estados && estados[card.id]) : null;
+      const ex = card.tipo === 'conceito' ? exemploDoConceito(card, estados && estados[card.id], estados) : null;
       return embaralhar([card.pt, ...((ex && ex.distratores) || card.distratores || []).slice(0, 4)]);
     }
     /* na flexão, as outras formas do mesmo lema, escritas no card (LATIM.md §3.8) */
@@ -3040,11 +3073,10 @@ window.Motor = (function () {
     if (lingua === idiomaDoCard(card)) {
       return embaralhar([certa, ...distratoresDaLingua(card, todos || [], lingua)]);
     }
-    /* Na língua de casa os quatro vêm escritos no card — e, no português, dois
-       deles podem ser trocados por palavras que a pessoa já viu. */
-    if (lingua === 'pt') {
-      return embaralhar([certa, ...distratoresDinamicos(card, todos || [], estados)]);
-    }
+    /* Na língua de casa os quatro vêm escritos no card. Até 03/11/2026, no português, dois
+       deles podiam ser trocados por palavras que a pessoa já viu (distratoresDinamicos, do
+       comentário do u095); a troca não sabia se a frase continuava fazendo sentido («Preciso
+       te dizer uma casa», u599), e o Gere pediu que toda alternativa tenha sentido. */
     return embaralhar([certa, ...(card[CAMPOS[lingua].distratores] || []).slice(0, 4)]);
   }
 
@@ -3383,8 +3415,10 @@ window.Motor = (function () {
       .sort((a, b) => b.nota - a.nota)
       .slice(0, card.tipo === 'frase' ? 7 : 10);
 
-    /* Na frase de uso, antes das frases vizinhas vêm as trocas de palavra. */
-    const trocas = formas.length ? [] : trocasDePalavra(card, todos, lingua, certas);
+    /* Na frase de uso, antes das frases vizinhas vinham as trocas de palavra
+       (trocasDePalavra). Desligadas em 03/11/2026, como os distratores dinâmicos: a troca
+       fazia frase sem sentido, e toda alternativa tem de ter um (pedido do Gere). */
+    const trocas = [];
     const faltam = 4 - formas.length - trocas.length;
     return formas.concat(trocas,
       embaralhar(candidatos).slice(0, Math.max(0, faltam)).map(x => texto(x.c)));
@@ -4383,7 +4417,7 @@ window.Motor = (function () {
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
-    ehForma, ehContraste, ehConceito, ehCompreensao, ehHeranca, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
+    perguntaDaForma, ehForma, ehContraste, ehConceito, ehCompreensao, ehHeranca, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     ACERTOS_QUE_SOLTAM,
     DIA_DAS_TERMINACOES, ativoDaTerminacao, flexaoPuxada, adormecido, quemConta, exemploDaTerminacao,
     erroDeGenero, formasAceitas, LIMITES, cortar,

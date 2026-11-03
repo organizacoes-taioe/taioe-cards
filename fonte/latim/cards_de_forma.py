@@ -206,52 +206,137 @@ def gerar():
     palavras_do_baralho = {c['id']: c for c in do_baralho('palavra')}
     conceitos = {c['pt']: c['id'] for c in do_baralho('conceito')}
     cards, vistos = [], set()
+
+    def fazer(fr, i, pal, p, ocorrencia):
+        w = limpa(p['w'])
+        rotulo = p.get('f', '')
+        lema_card = palavras_do_baralho.get(p.get('c'))
+        fam, resposta = resposta_de(rotulo)
+        nota = nota_da_forma(fam, resposta, w, lema_card, rotulo, pal[i - 1] if i else None)
+        explicacao = w + ': ' + ', '.join(x for x in (rotulo, p.get('fn')) if x) + '.'
+        if fam == 'caso' and i and pal[i - 1].get('f', '').startswith('preposição'):
+            explicacao += ' Vem depois de «' + limpa(pal[i - 1]['w']) + '», ' + pal[i - 1]['f'] + '.'
+        return {
+            'id': 'la-x' + fr['id'][3:] + '-' + str(i),
+            'tipo': 'forma',
+            'familia': fam,
+            'la': w,
+            'frase': fr['la'],
+            'ocorrencia': ocorrencia,
+            'de': fr['id'],
+            'fonte': fr.get('fonte', ''),
+            'lema': p['c'],
+            'pt': resposta,
+            'aceitas': aceitas_de(fam, resposta),
+            'distratores': distratores_de(fam, resposta, analises_do_lema(w, lema_card.get('la', '')),
+                                          nomes_de(fam)),
+            'nota': explicacao,
+            'nivel': fr.get('nivel', 'A1'),
+            'tags': ['gramática', 'caso' if fam == 'caso' else 'forma verbal'],
+            'conceitos': [conceitos[resposta]] if resposta in conceitos else [],
+            'dificuldade': nota,
+            'sempre': nota >= CORTE,
+            'ambigua': ambiguidade(fam, resposta, w, lema_card.get('la', '')) >= 1,
+            '_rotulo': rotulo,
+        }
+
+    def ocorrencia_em(pal, i):
+        k = sem_acento(limpa(pal[i]['w']))
+        return sum(1 for x in pal[:i + 1] if sem_acento(limpa(x['w'])) == k)
+
     for arquivo in FONTES:
         for fr in json.loads((BARALHO / arquivo).read_text(encoding='utf-8')):
             grupo = fr.get('texto') or 'primeiras'
             pal = fr.get('palavras', [])
-            ocorrencias = {}
             for i, p in enumerate(pal):
                 w = limpa(p['w'])
                 k = sem_acento(w)
-                ocorrencias[k] = ocorrencias.get(k, 0) + 1
-                rotulo = p.get('f', '')
-                lema_card = palavras_do_baralho.get(p.get('c'))
-                r = resposta_de(rotulo)
-                if not r or not lema_card or not w:
+                r = resposta_de(p.get('f', ''))
+                if not r or not palavras_do_baralho.get(p.get('c')) or not w:
                     continue
-                fam, resposta = r
-                chave = (grupo, k, resposta)
+                chave = (grupo, k, r[1])
                 if chave in vistos:
                     continue
                 vistos.add(chave)
-                nota = nota_da_forma(fam, resposta, w, lema_card, rotulo, pal[i - 1] if i else None)
-                explicacao = w + ': ' + ', '.join(x for x in (rotulo, p.get('fn')) if x) + '.'
-                if fam == 'caso' and i and pal[i - 1].get('f', '').startswith('preposição'):
-                    explicacao += ' Vem depois de «' + limpa(pal[i - 1]['w']) + '», ' + pal[i - 1]['f'] + '.'
-                cards.append({
-                    'id': 'la-x' + fr['id'][3:] + '-' + str(i),
-                    'tipo': 'forma',
-                    'familia': fam,
-                    'la': w,
-                    'frase': fr['la'],
-                    'ocorrencia': ocorrencias[k],
-                    'de': fr['id'],
-                    'fonte': fr.get('fonte', ''),
-                    'lema': p['c'],
-                    'pt': resposta,
-                    'aceitas': aceitas_de(fam, resposta),
-                    'distratores': distratores_de(fam, resposta, analises_do_lema(w, lema_card.get('la', '')),
-                                                  nomes_de(fam)),
-                    'nota': explicacao,
-                    'nivel': fr.get('nivel', 'A1'),
-                    'tags': ['gramática', 'caso' if fam == 'caso' else 'forma verbal'],
-                    'conceitos': [conceitos[resposta]] if resposta in conceitos else [],
-                    'dificuldade': nota,
-                    'sempre': nota >= CORTE,
-                    'ambigua': ambiguidade(fam, resposta, w, lema_card.get('la', '')) >= 1,
-                })
+                cards.append(fazer(fr, i, pal, p, ocorrencia_em(pal, i)))
+
+    # o segundo contexto (03/11/2026): a forma ambígua noutra frase do curso, noutro caso
+    import segundo_contexto
+    ck = segundo_contexto.chave
+    amb = {(ck(c['la']), c['lema']): c['pt'] for c in cards if c['ambigua'] and c['familia'] == 'caso'}
+    tem = {(ck(c['la']), c['lema'], c['pt']) for c in cards}
+    primeiro = {(ck(c['la']), c['lema']): c['id'] for c in reversed(cards) if c['familia'] == 'caso'}
+    for fr, i, p, caso in segundo_contexto.ocorrencias(amb, tem):
+        if not palavras_do_baralho.get(p.get('c')):
+            continue
+        pal = fr['palavras']
+        c = fazer(fr, i, pal, p, ocorrencia_em(pal, i))
+        c['segundo'] = primeiro[(ck(p['w']), p['c'])]
+        cards.append(c)
+
+    enriquecer(cards, palavras_do_baralho)
     return cards
+
+
+PESSOAS = [(n, num) for num in ('singular', 'plural') for n in ('1ª', '2ª', '3ª')]
+
+
+def enriquecer(cards, palavras):
+    """As outras perguntas do card de forma (03/11/2026): a função na frase (anotada em
+    funcoes.json), a pessoa e o número do verbo e a forma de dicionário."""
+    arq = AQUI / 'funcoes.json'
+    funcoes = json.loads(arq.read_text(encoding='utf-8')) if arq.exists() else {}
+    for c in cards:
+        rotulo = c.pop('_rotulo', '')
+        f = funcoes.get(c['id'])
+        if c['familia'] == 'caso' and f and f.get('funcao') and len(f.get('distratores', [])) >= 4:
+            c['funcao'] = f['funcao']
+            c['distratoresFuncao'] = f['distratores'][:4]
+        m = re.search(r'([123]ª) pessoa do (singular|plural)', rotulo)
+        if c['familia'] == 'verbo' and m:
+            certa = (m.group(1), m.group(2))
+            outras = sorted((x for x in PESSOAS if x != certa),
+                            key=lambda x: (x[0] != certa[0], x[1] != certa[1], PESSOAS.index(x)))
+            c['pessoa'] = f'{certa[0]} pessoa do {certa[1]}'
+            c['distratoresPessoa'] = [f'{a} pessoa do {b}' for a, b in outras[:4]]
+        lema = palavras.get(c['lema'], {})
+        dic = lema.get('la', '')
+        if dic and sem_acento(dic) != sem_acento(c['la']):
+            erradas = parecidas(c['la'], lema, palavras)
+            if len(erradas) >= 4:
+                c['dicionario'] = dic
+                c['distratoresDicionario'] = erradas
+
+
+def parecidas(w, lema, palavras):
+    """Quatro formas de dicionário do curso que se confundem com a certa: da mesma classe
+    (verbo ou nome), com o começo mais parecido com a forma da frase e com a do dicionário."""
+    verbo = 'verbo' in lema.get('tags', [])
+    alvo, dic = sem_acento(w), sem_acento(lema.get('la', ''))
+
+    def prefixo(a, b):
+        n = 0
+        while n < min(len(a), len(b)) and a[n] == b[n]:
+            n += 1
+        return n
+    vistos, saida = {dic, alvo}, []
+    candidatos = []
+    for c in palavras.values():
+        la = c.get('la', '')
+        k = sem_acento(la)
+        if not la or ' ' in la or k in vistos or ('verbo' in c.get('tags', [])) != verbo:
+            continue
+        nota = 2 * prefixo(alvo, k) + prefixo(dic, k) - abs(len(k) - len(dic)) * 0.3
+        candidatos.append((-nota, la))
+    for _, la in sorted(candidatos):
+        k = sem_acento(la)
+        if k in vistos:
+            continue
+        vistos.add(k)
+        saida.append(la)
+        if len(saida) == 4:
+            break
+    return saida
 
 
 def nomes_de(fam):

@@ -18,9 +18,13 @@
   'use strict';
 
   var POR_LOTE = 100, ESTADOS_POR_LOTE = 200;
-  var ENVIAR_COM = 10;                     // eventos na fila
-  var ENVIAR_DEPOIS = 30000;               // ms depois do primeiro pendente
-  var PUXAR_SE_PARADO = 5 * 60000;         // no foco, se a última carga for mais velha
+  var ENVIAR_COM = 5;                      // eventos na fila
+  var ENVIAR_DEPOIS = 4000;                // ms depois do primeiro pendente
+  /* Dois aparelhos no mesmo curso: o que ficou para trás estreava de novo os cards que o
+     outro acabara de estrear, e o «Já conheço» voltava (o Gere, 03/11/2026). Por isso a carga
+     vem a cada volta ao app, sem esperar, e a cada minuto enquanto ele está aberto. */
+  var PUXAR_NO_FOCO = 15000;               // na volta ao app, se a última carga for mais velha
+  var PUXAR_A_CADA = 60000;                // com o app à vista
   var JANELA_DIAS = 30;                    // o servidor descarta resposta mais velha (correção 5)
 
   function bytes(o) { return new TextEncoder().encode(JSON.stringify(o)).length; }
@@ -86,6 +90,12 @@
   // o valor de reativados e dicasVistas: «ISO» é sim, «-ISO» é o gesto de desfazer
   function dataDoGesto(v) { return String(v || '').replace(/^-/, ''); }
   function gestoAtivo(v) { return typeof v === 'string' && v !== '' && v[0] !== '-'; }
+
+  // o estado que vem do servidor substitui o local (o histórico é só daqui)
+  function adotar(p, e) {
+    var local = p.cards[e.id];
+    p.cards[e.id] = Object.assign({}, e, { historico: (local && local.historico) || [], vistasServidor: e.vistas });
+  }
 
   function filaVazia() {
     return { base: 0, eventos: [], sujos: [], puxadoEm: null, loteSemRecibo: null,
@@ -161,7 +171,10 @@
         .filter(function (e) { return e && e.vistas; })
         .map(function (e) {
           var copia = {};
-          Object.keys(e).forEach(function (k) { if (k !== 'historico') copia[k] = e[k]; });
+          Object.keys(e).forEach(function (k) { if (k !== 'historico' && k !== 'vistasServidor') copia[k] = e[k]; });
+          // as vistas que este aparelho sabe que o servidor tem: com base velha, o servidor
+          // recusa o estado e devolve o dele (migração 20261103120000 do taioe-infra)
+          if (typeof e.vistasServidor === 'number') copia.base = e.vistasServidor;
           return copia;
         });
       var lote = { curso: curso, base: fila.base, respostas: fila.eventos.slice(0, POR_LOTE), estados: estados };
@@ -226,14 +239,20 @@
       var mandados = {};
       lote.estados.forEach(function (e) { mandados[e.id] = e.vistas; });
       var pendentesNoServidor = r.estados_pendentes || [];
+      var doServidor = {};
+      (r.estados_servidor || []).forEach(function (e) { doServidor[e.id] = true; });
+      // o estado que subiu: o servidor agora tem estas vistas
+      Object.keys(mandados).forEach(function (id) {
+        if (!doServidor[id] && pendentesNoServidor.indexOf(id) < 0 && p.cards[id]) p.cards[id].vistasServidor = mandados[id];
+      });
       fila.sujos = fila.sujos.filter(function (id) {
+        if (doServidor[id] && id in mandados) return false;     // recusado: fica o do servidor
         return !(id in mandados) || (p.cards[id] && p.cards[id].vistas !== mandados[id]) ||
                pendentesNoServidor.indexOf(id) >= 0;
       });
       (r.estados_servidor || []).forEach(function (e) {
         if (fila.sujos.indexOf(e.id) >= 0) return;
-        var local = p.cards[e.id];
-        p.cards[e.id] = Object.assign({}, e, { historico: (local && local.historico) || [] });
+        adotar(p, e);
       });
       salvarFila();
       o.aoMudar('recibo');
@@ -399,7 +418,18 @@
       if (emVoo || parado || !s || s.expires_at * 1000 - Date.now() < 30000) return;
       if (fila.loteSemRecibo) return;                      // há lote pendente: ele vai na abertura
       if (!sb.supabaseUrl || !sb.supabaseKey) return;
-      var lote = montarLote({ bytes: 60000, maxEstados: 60 });
+      // os extras primeiro, se couberem: o arquivo feito agora vale no outro aparelho
+      var x = extrasSujos() ? o.extras() : null;
+      var tamExtras = x ? bytes({ curso: curso, extras: x }) : 0;
+      if (x && tamExtras < 24000) {
+        fetch(sb.supabaseUrl + '/rest/v1/rpc/gravar_extras', {
+          method: 'POST', keepalive: true,
+          headers: { apikey: sb.supabaseKey, Authorization: 'Bearer ' + s.access_token,
+                     'Content-Type': 'application/json', 'Content-Profile': 'cards' },
+          body: JSON.stringify({ curso: curso, extras: x })
+        }).catch(function () {});
+      } else tamExtras = 0;
+      var lote = montarLote({ bytes: 60000 - tamExtras, maxEstados: 60 });
       if (!lote.respostas.length && !lote.estados.length) return;
       fila.loteSemRecibo = lote;
       salvarFila();
@@ -438,10 +468,11 @@
       var sujos = {};
       fila.sujos.forEach(function (id) { sujos[id] = true; });
       (c.estados || []).forEach(function (e) {
-        if (sujos[e.id]) return;                         // fica o local; o servidor decide no envio
-        var local = p.cards[e.id];
-        p.cards[e.id] = Object.assign({}, e, { historico: (local && local.historico) || [] });
+        // sujo: fica o local, mas ele fica sabendo das vistas do servidor, que decide no envio
+        if (sujos[e.id]) { if (p.cards[e.id]) p.cards[e.id].vistasServidor = e.vistas; return; }
+        adotar(p, e);
       });
+      if (completo) fila.bases = 1;
 
       var semFila = !fila.eventos.length && !fila.loteSemRecibo;
       p.diario = p.diario || {};
@@ -480,6 +511,10 @@
         } else if (!extrasSujos()) {
           o.aplicarExtras(c.extras);
           fila.extrasEnviados = canonico(o.extras());
+        } else {
+          // há gesto daqui ainda sem subir: mescla pelo critério do servidor (o arquivo feito no
+          // outro aparelho não espera o envio daqui para valer); a mescla sobe no próximo envio
+          o.aplicarExtras(mesclarExtras(o.extras(), c.extras));
         }
       }
       fila.puxadoEm = c.servidor_em;
@@ -497,7 +532,8 @@
         // na abertura, ENVIAR antes de puxar, com a base antiga
         if (fila.eventos.length || fila.loteSemRecibo) await enviar();
         var aparelhoNovo = !fila.puxadoEm || !Object.keys(o.progresso().cards).length;
-        await puxar(aparelhoNovo);
+        // uma carga completa ensina a cada card as vistas do servidor (a «base» do envio)
+        await puxar(aparelhoNovo || fila.bases !== 1);
         sb.schema('conta').rpc('registrar_acesso', { app: 'cards' }).then(function () {}, function () {});
         contarEstado();
       } catch (e) {
@@ -505,10 +541,28 @@
         contarEstado();
       }
 
+      // a volta ao app: aba, janela (o Chrome do Linux nem sempre avisa a aba coberta) ou a
+      // página que volta do cache do navegador
+      var puxando = false;
+      function puxarSeVelho(ms) {
+        if (puxando || parado || emVoo || navigator.onLine === false) return;
+        if (fila.puxadoEm && Date.now() - Date.parse(fila.puxadoEm) < ms) return;
+        puxando = true;
+        // o que está na fila sobe antes, para a carga já vir com ele
+        (pendentes() ? enviar() : Promise.resolve())
+          .then(function () { return puxar(); })
+          .catch(function () {})
+          .then(function () { puxando = false; });
+      }
       document.addEventListener('visibilitychange', function () {
         if (document.visibilityState === 'hidden') enviarNoFechamento();
-        else if (!fila.puxadoEm || Date.now() - Date.parse(fila.puxadoEm) > PUXAR_SE_PARADO) puxar().catch(function () {});
+        else puxarSeVelho(PUXAR_NO_FOCO);
       });
+      window.addEventListener('focus', function () { puxarSeVelho(PUXAR_NO_FOCO); });
+      window.addEventListener('pageshow', function (ev) { if (ev.persisted) puxarSeVelho(0); });
+      setInterval(function () {
+        if (document.visibilityState === 'visible') puxarSeVelho(PUXAR_A_CADA - 5000);
+      }, PUXAR_A_CADA);
       window.addEventListener('pagehide', enviarNoFechamento);
       window.addEventListener('online', function () { recuo = 0; enviar(); });
       window.addEventListener('offline', contarEstado);
