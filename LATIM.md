@@ -761,3 +761,49 @@ ficou em `../anexos/latim-variedade.md`); a resposta dele: «Sim, todas (menos a
   de `fonte/latim/cache/levas/leitura-1.js` (fora do git).
 - Próximo: o Gere estuda e aponta; depois, mais compreensões nos versos dos textos (com `texto`) e
   frases novas com as palavras que a pessoa tem.
+
+## 14. Horácio e a *Bucólica* IV (feito em 03/11)
+
+Pedido do Gere (03/11): os textos novos da Literatura também nos Cards. Do latim, três:
+- **Horácio, *Odes* I,11** (*Tu ne quaesieris*, o «carpe diem»), 8 versos, um texto só
+  (`horacio/tu-ne-quaesieris`, `ordem` 10);
+- **Horácio, *Odes* III,30** (*Exegi monumentum*), em duas partes pelas pausas de sentido: 1–9 (as
+  duas primeiras frases) e 10–16 (*Dicar…* e o pedido à Musa) (`horacio/exegi-monumentum-parte-1` e
+  `-2`, `ordem` 11 e 12, obra `horacio/exegi-monumentum`);
+- **Vergílio, *Bucólica* IV, 1–14** (decisão do Gere: só o começo), em duas partes, 1–7 e 8–14, as
+  duas fechando a frase (1–3 e 8–10 teriam só 3 versos) (`vergilio/bucolica-iv-parte-1` e `-2`,
+  `ordem` 13 e 14). O resto da écloga fica para depois, parte a parte, pela mesma receita.
+
+A leva: 114 palavras (`20-palavras-4`, `la-p251`–`p364`; nomes próprios e adjetivos de nome
+próprio em `SEM_CARD`; *adeo* advérbio com `homografos` do verbo), 2 conceitos (`21-conceitos-3`:
+`la-g030` futuro perfeito do indicativo e `la-g031` ablativo de comparação, família `construcao`),
+38 trechos (`22-trechos-4`, `la-t047`–`t084`, um por verso; leva em `cache/levas/trechos-4.json`),
+80 frases de uso (`23-usos-e`, `la-u264`–`u343`, 38 clássicas e 42 da Vulgata; leva
+`cache/levas/usos-e.json`), 192 flexões (`la-v533`–`v724`; leva `cache/levas/flexoes-0311.json`)
+e os cards de forma dos versos novos (`07-formas`; `22-trechos-4.json` entrou nas `FONTES` do
+`cards_de_forma.py`).
+
+- **Frases de uso só com o vocabulário que a pessoa vai ter** (§3.2): as primeiras frases e o mesmo
+  texto (e as partes anteriores). Os agentes escolheram 9 que pediam palavras de outros textos:
+  saíram; onde era uma palavra só, ela ficou sem card na frase (`palavra de outro texto: «…»`).
+  Pronomes das tabelas (*is*, *hic*, *ille*, *idem*, *nos*, *possum*) ficam, como nas levas antigas.
+  Sem frase: *liquo*, *reseco*, *integer*, *castus*, *adeo* (advérbio) e as 21 palavras sem candidata
+  no corpus (*debilito*, *pumex*, *pyramis*, *imber*, *coma*…).
+- **«ære»**: o ablativo de *aes* (o bronze) se escreve com a ligadura **na fonte** (também *æris*,
+  *æri* nas notas), como na Biblioteca: a regra do hiato de `ligaduras.js` lê *aere*, *aeris* como
+  *aër* (o ar), e a forma é a mesma. `formas.analisar` desfaz a ligadura antes de procurar.
+  *Leuconoë* também vai com o trema na fonte (nome próprio, sem card).
+- **Variantes novas** nos cards antigos, para o `conferir.py` (o Wiktionary lematiza à parte):
+  *tu* `tibi`, *altus* `altior`, *magnus* `maior`, *saeculum* `saeclum`, *atque* `ac`, *nec* `neque`;
+  no novo *ex*, `e`. *ac* e *neque* ganharam card de flexão, como *a* (de *ab*).
+- **O `conferir.py`** fica com 3 avisos que são falta do Wiktionary: *temptaris* (forma breve de
+  *temptaveris*), *perennius* (sem página) e *integro* (a página só tem o verbo *integro*); nas frases
+  de uso, *violentior* sem caso, *e* como lema próprio e *incipiendum* (gerundivo).
+- **Tradução às cegas** (um agente, 4 traduções por frase e a escolha entre as 5 alternativas):
+  245 de 472 (52%) passaram de primeira; a escolha acertou as 118. As certas entraram no gabarito
+  (454/472 depois; ficaram de fora 18 que mudavam o sentido ou não eram português natural). Pelo que
+  ele apontou: as fontes «Civil War» e «Troades Furens» do corpus viraram «Guerra civil» e
+  «As troianas» (os nomes vêm errados de `corpus.py`, que não foi consertado), e *Iliun* (Sêneca)
+  ficou como na edição, com a nota da grafia grega.
+- O primeiro *Tu* da *Bucólica* (v. 8, *Tu modo… fave*) ficou sem rótulo de caso (nominativo ou
+  vocativo, as gramáticas divergem): sem card de forma.
