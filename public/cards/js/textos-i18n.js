@@ -361,6 +361,7 @@ window.TAIOE_TEXTOS = {
     'comentario.anotado': 'Comentário anotado. Obrigado!',
 
     'sinc.tudoSalvo': 'Tudo salvo na sua conta às {hora}.',
+    'sinc.vistoNoOutro': 'Este card já tinha sido visto em outro aparelho; veio o próximo.',
     'sinc.esperando.1': '{n} resposta esperando para subir',
     'sinc.esperando.n': '{n} respostas esperando para subir',
     'sinc.semConexao': ' (sem conexão)',
@@ -747,6 +748,7 @@ window.TAIOE_TEXTOS = {
     'comentario.anotado': 'Comentario anotado. ¡Gracias!',
 
     'sinc.tudoSalvo': 'Todo guardado en tu cuenta a las {hora}.',
+    'sinc.vistoNoOutro': 'Esta tarjeta ya se había visto en otro dispositivo; aquí está la siguiente.',
     'sinc.esperando.1': '{n} respuesta esperando para subirse',
     'sinc.esperando.n': '{n} respuestas esperando para subirse',
     'sinc.semConexao': ' (sin conexión)',
@@ -1131,6 +1133,7 @@ window.TAIOE_TEXTOS = {
     'comentario.anotado': 'Comment saved. Thank you!',
 
     'sinc.tudoSalvo': 'All saved to your account at {hora}.',
+    'sinc.vistoNoOutro': 'This card was already seen on another device; here is the next one.',
     'sinc.esperando.1': '{n} answer waiting to upload',
     'sinc.esperando.n': '{n} answers waiting to upload',
     'sinc.semConexao': ' (offline)',

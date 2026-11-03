@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-10-31",
+ "gerado_em": "2026-11-03",
  "total": 2232,
  "cards": [
   {
@@ -20291,7 +20291,7 @@
    "tipo": "frase",
    "requer": "p019",
    "es": "La crianza de los hijos cansa mucho.",
-   "pt": "Criar os filhos cansa muito.",
+   "pt": "A criação dos filhos cansa muito.",
    "en": "Raising children is exhausting.",
    "aceitas": [
     "criar os filhos cansa muito",
@@ -20309,7 +20309,7 @@
    ],
    "distratores": [
     "A criança dos vizinhos cansa muito.",
-    "Brincar com os filhos cansa muito.",
+    "A brincadeira com os filhos cansa muito.",
     "O trabalho dos filhos cansa muito.",
     "A escola dos filhos cansa muito."
    ],
@@ -20323,13 +20323,16 @@
    "tags": [
     "falso-amigo"
    ],
-   "nota": "«Crianza» é o ato de criar, não a criatura; a criança é «el niño». No vinho, é o tempo de envelhecimento.\n🇪🇸 la crianza → 🇧🇷 a criação\n🇪🇸 el niño → 🇧🇷 a criança",
+   "nota": "«Crianza» é o ato de criar, não a criatura (o verbo é «criar», como o nosso: «criar a los hijos»; «crear» é criar do nada); a criança é «el niño». No vinho, é o tempo de envelhecimento.\n🇪🇸 la crianza → 🇧🇷 a criação\n🇪🇸 el niño → 🇧🇷 a criança",
    "notaEn": "'La crianza' is the bringing-up, never the child ('el niño'). On a wine label it means aged in the barrel.",
    "requerTodas": [
     "p019",
     "p450",
     "p585",
     "p361"
+   ],
+   "sinonimosEs": [
+    "Criar a los hijos cansa mucho."
    ]
   },
   {
@@ -29863,7 +29866,9 @@
     "estava todo produzido",
     "estava elegantissimo",
     "estava todo alinhado",
-    "estava de terno e gravata"
+    "estava de terno e gravata",
+    "estava bem arrumado",
+    "estava muito bem arrumado"
    ],
    "aceitasEn": [
     "he was dressed to the nines",
@@ -39189,7 +39194,10 @@
     "acontece que eu nao tenho tempo",
     "o problema e que nao tenho tempo",
     "e que nao tenho tempo",
-    "a questao e que nao tenho tempo"
+    "a questao e que nao tenho tempo",
+    "e que estou sem tempo",
+    "e que eu estou sem tempo",
+    "o que acontece e que estou sem tempo"
    ],
    "aceitasEn": [
     "the thing is that i dont have time",
@@ -49535,7 +49543,10 @@
     "adjetivo"
    ],
    "nota": "Não muda no feminino: «una pregunta difícil».",
-   "notaEn": "Same form for both genders: «una pregunta difícil»."
+   "notaEn": "Same form for both genders: «una pregunta difícil».",
+   "sinonimosEs": [
+    "complicado"
+   ]
   },
   {
    "idioma": "es",
@@ -49918,7 +49929,10 @@
     "substantivo"
    ],
    "nota": "«Echar leña al fuego» é pôr lenha na fogueira.",
-   "notaEn": "«Echar leña al fuego» is to add fuel to the fire."
+   "notaEn": "«Echar leña al fuego» is to add fuel to the fire.",
+   "sinonimosEs": [
+    "la lumbre"
+   ]
   },
   {
    "idioma": "es",
@@ -50746,7 +50760,11 @@
     "verbo"
    ],
    "nota": "Tentar + infinitivo, sem preposição: «intentaré llegar».",
-   "notaEn": "To try + infinitive, no preposition: «intentaré llegar»."
+   "notaEn": "To try + infinitive, no preposition: «intentaré llegar».",
+   "sinonimosEs": [
+    "tratar de",
+    "procurar"
+   ]
   },
   {
    "idioma": "es",
@@ -50970,7 +50988,10 @@
     "substantivo"
    ],
    "nota": "Quase sempre no plural: «tengo ganas de dormir», estou com vontade de dormir. «No me da la gana» é não quero e pronto.",
-   "notaEn": "Usually plural: «tengo ganas de dormir», I feel like sleeping."
+   "notaEn": "Usually plural: «tengo ganas de dormir», I feel like sleeping.",
+   "sinonimosEs": [
+    "la voluntad"
+   ]
   },
   {
    "idioma": "es",
@@ -65359,7 +65380,12 @@
     "substantivo"
    ],
    "nota": "Felicidade, ventura: «¡qué dicha!». Também é particípio de «decir»: «la palabra dicha», a palavra dita.",
-   "notaEn": "Happiness. Also the past participle of «decir»: «la palabra dicha»."
+   "notaEn": "Happiness. Also the past participle of «decir»: «la palabra dicha».",
+   "sinonimosEs": [
+    "la felicidad",
+    "la alegría",
+    "la ventura"
+   ]
   },
   {
    "idioma": "es",
@@ -65964,14 +65990,17 @@
    "id": "p940",
    "tipo": "palavra",
    "es": "la lumbre",
-   "pt": "o fogo",
+   "pt": "o fogo (da lareira)",
    "en": "the fire",
    "aceitas": [
     "fogo",
     "a lume",
     "o lume",
     "a luz",
-    "a brasa"
+    "a brasa",
+    "fogo da lareira",
+    "o fogo da lareira",
+    "o fogo"
    ],
    "aceitasEn": [
     "fire",
@@ -65981,10 +66010,10 @@
     "hearth"
    ],
    "distratores": [
-    "a lembrança",
-    "o lustre",
-    "a lâmpada",
-    "a sombra"
+    "a lembrança (da infância)",
+    "o lustre (da sala)",
+    "a lâmpada (da mesa)",
+    "a sombra (da árvore)"
    ],
    "distratoresEn": [
     "the memory",
@@ -67981,13 +68010,14 @@
    "id": "p993",
    "tipo": "palavra",
    "es": "el ahorro",
-   "pt": "a economia",
+   "pt": "a poupança",
    "en": "the saving",
    "aceitas": [
     "economia",
     "a poupanca",
     "as economias",
-    "poupanca"
+    "poupanca",
+    "a economia"
    ],
    "aceitasEn": [
     "saving",
@@ -77322,16 +77352,18 @@
    "id": "v092",
    "tipo": "frase",
    "es": "Lo haré yo.",
-   "pt": "Eu vou fazer.",
+   "pt": "Eu é que vou fazer.",
    "en": "I'll do it.",
    "aceitas": [
-    "eu vou fazer",
-    "eu farei",
-    "eu faco isso",
-    "vou fazer eu",
-    "eu mesmo faco",
+    "eu e que vou fazer",
+    "sou eu que vou fazer",
+    "quem vai fazer sou eu",
+    "eu e que faco",
+    "eu e que farei",
     "deixa que eu faco",
-    "eu faco"
+    "eu mesmo faco",
+    "eu mesmo vou fazer",
+    "eu vou fazer"
    ],
    "aceitasEn": [
     "i ll do it",
@@ -77339,10 +77371,10 @@
     "ill do it myself"
    ],
    "distratores": [
-    "Eu fiz.",
-    "Eu fazia.",
-    "Eu faria.",
-    "Eu tenho feito."
+    "Eu é que fiz.",
+    "Eu é que fazia.",
+    "Eu é que faria.",
+    "Eu é que tenho feito."
    ],
    "distratoresEn": [
     "I did it.",
@@ -85211,7 +85243,9 @@
     "chupado",
     "chupada",
     "esguio",
-    "esguia"
+    "esguia",
+    "enxuto",
+    "enxuta"
    ],
    "aceitasEn": [
     "gaunt",
@@ -87974,7 +88008,9 @@
     "a ansiedade",
     "a angustia",
     "a aflicao",
-    "a avidez"
+    "a avidez",
+    "o desejo",
+    "o anseio ardente"
    ],
    "aceitasEn": [
     "longing",
@@ -93498,9 +93534,6 @@
     "that's true",
     "that's right"
    ],
-   "aceitasEs": [
-    "Es verdad."
-   ],
    "distratores": [
     "É mentira.",
     "É bobagem.",
@@ -93517,11 +93550,14 @@
    "tags": [
     "cotidiano"
    ],
-   "nota": "«Es cierto» e «es verdad» são a mesma coisa. «Lo cierto es que…», a verdade é que…",
+   "nota": "«Es cierto» e «es verdad» são a mesma coisa; aqui o card pede «cierto». «Lo cierto es que…», a verdade é que…",
    "notaEn": "«Es cierto» and «es verdad» mean the same. «Lo cierto es que…», the truth is that…",
    "requerTodas": [
     "p351",
     "p1171"
+   ],
+   "sinonimosEs": [
+    "Es verdad."
    ]
   },
   {

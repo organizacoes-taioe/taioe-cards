@@ -1271,6 +1271,20 @@ window.TaioeCardsApp = function (ctx) {
     });
   }
 
+  /* O card novo que está na tela, ainda sem resposta, pode ter estreado no outro aparelho
+     enquanto este estava parado: a carga traz o estado (ou o arquivo) dele, e o card sai da
+     tela, para não ser visto nem arquivado duas vezes (pedido do Gere, 03/11/2026). */
+  let estreiaNaTela = false;
+  function conferirCardDaTela() {
+    if (!cardAtual || !estreiaNaTela || ultimoRegistro || el['tela-card'].classList.contains('oculto')) return;
+    const e = estadoDe(cardAtual.id), a = (progresso.arquivados || {})[cardAtual.id];
+    if (!(e && e.vistas) && !(a && a.ativo)) return;
+    estreiaNaTela = false;
+    respostaPendente = null;
+    proximoCard();
+    statusSync(t('sinc.vistoNoOutro'), 'ok');
+  }
+
   function proximoCard() {
     /* no modo trilhas, sem texto escolhido não há o que estudar: a escolha vem antes */
     if (TRILHAS && !textosAtivosAgora().length) { abrirTexto(); return; }
@@ -1328,6 +1342,7 @@ window.TaioeCardsApp = function (ctx) {
        hora em que a pessoa sabe se a palavra já é dela (pedido do Gere,
        19/10/2026). O texto diz o que ela está afirmando (07/10). */
     const estreando = !estadoDe(id) || !estadoDe(id).vistas;
+    estreiaNaTela = estreando;
     el['btn-arquivar'].textContent = t(cardAtual.tipo === 'palavra' || cardAtual.tipo === 'flexao' ? 'card.jaConhecoPalavra'
       : cardAtual.tipo === 'conceito' ? 'card.jaConhecoConceito' : 'card.jaConhecoFrase');
     /* o desafio leva a marca; a prévia (frase ainda presa) é uma pergunta
@@ -1520,7 +1535,13 @@ window.TaioeCardsApp = function (ctx) {
        palavra enganando — então o app avisa e devolve a vez, sem contar
        erro nem gravar nada. Uma vez por aparição do card: com duas viraria
        tentativa livre. */
-    const conferencia = desistiu ? 'errado' : Motor.conferir(cardAtual, texto, direcaoAtual);
+    let conferencia = desistiu ? 'errado' : Motor.conferir(cardAtual, texto, direcaoAtual);
+    /* no card de gênero variável, o outro gênero também vale: o ponto do card não é o gênero
+       (pedido do Gere no f225, 03/11/2026) */
+    if (conferencia !== 'certo' && !desistiu && outraForma) {
+      const outra = Motor.conferir(outraForma, texto, direcaoAtual);
+      if (outra === 'certo' || (outra === 'quase' && conferencia === 'errado')) conferencia = outra;
+    }
     if (conferencia === 'errado' && !desistiu && !chanceUsada) {
       /* no card de gramática, respondeu o significado (pedido do Gere, 22/10/2026: «é fácil
          responder no automático»): avisa e devolve a vez */
@@ -2103,6 +2124,9 @@ window.TaioeCardsApp = function (ctx) {
        não é card novo, e não conta. */
     if (!est.vistas && !presumido) {
       est.estreouNa = relogioAntes;
+      /* o servidor não tem este card (até onde este aparelho sabe): se outro aparelho já o
+         estreou, o estado daqui não sobe por cima do de lá (sincronia.js, «base») */
+      if (est.vistasServidor === undefined) est.vistasServidor = 0;
       /* A estreia do desafio não conta no domínio por nível
          (Motor.marcarDesafio); «desafioEm» é a data dela, para o ritmo de um
          por dia (ver contextoDoDesafio). Os dois viajam com o estado. */
@@ -2111,7 +2135,10 @@ window.TaioeCardsApp = function (ctx) {
         est.desafioEm = new Date().toISOString();
       }
     }
-    if (presumido) est = progresso.cards[id] = Motor.responderPresumido(id, r);
+    if (presumido) {
+      est = progresso.cards[id] = Motor.responderPresumido(id, r);
+      if (est.vistasServidor === undefined) est.vistasServidor = 0;
+    }
     else Motor.registrar(est, r);
     /* Para o painel: o dia, a hora e o tempo desta resposta, e — se era a
        revisão de um dominado — se a memória aguentou a espera daquele degrau.
@@ -4416,7 +4443,7 @@ window.TaioeCardsApp = function (ctx) {
   Sinc = TaioeSincronia.criar({
     sb: ctx.sb, uid: ctx.uid, curso: ctx.curso,
     progresso: () => progresso,
-    aoMudar: () => { conciliarFila(progresso); salvarProgresso(); atualizarPlacar(); conferirComeco(); conferirTextosDaAbertura(); },
+    aoMudar: () => { conciliarFila(progresso); salvarProgresso(); atualizarPlacar(); conferirComeco(); conferirTextosDaAbertura(); conferirCardDaTela(); },
     retrato: () => (progresso.serie && progresso.serie.length ? progresso.serie[progresso.serie.length - 1] : null),
     extras: () => {
       const x = {

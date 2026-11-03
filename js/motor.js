@@ -3040,11 +3040,10 @@ window.Motor = (function () {
     if (lingua === idiomaDoCard(card)) {
       return embaralhar([certa, ...distratoresDaLingua(card, todos || [], lingua)]);
     }
-    /* Na língua de casa os quatro vêm escritos no card — e, no português, dois
-       deles podem ser trocados por palavras que a pessoa já viu. */
-    if (lingua === 'pt') {
-      return embaralhar([certa, ...distratoresDinamicos(card, todos || [], estados)]);
-    }
+    /* Na língua de casa os quatro vêm escritos no card. Até 03/11/2026, no português, dois
+       deles podiam ser trocados por palavras que a pessoa já viu (distratoresDinamicos, do
+       comentário do u095); a troca não sabia se a frase continuava fazendo sentido («Preciso
+       te dizer uma casa», u599), e o Gere pediu que toda alternativa tenha sentido. */
     return embaralhar([certa, ...(card[CAMPOS[lingua].distratores] || []).slice(0, 4)]);
   }
 
@@ -3383,8 +3382,10 @@ window.Motor = (function () {
       .sort((a, b) => b.nota - a.nota)
       .slice(0, card.tipo === 'frase' ? 7 : 10);
 
-    /* Na frase de uso, antes das frases vizinhas vêm as trocas de palavra. */
-    const trocas = formas.length ? [] : trocasDePalavra(card, todos, lingua, certas);
+    /* Na frase de uso, antes das frases vizinhas vinham as trocas de palavra
+       (trocasDePalavra). Desligadas em 03/11/2026, como os distratores dinâmicos: a troca
+       fazia frase sem sentido, e toda alternativa tem de ter um (pedido do Gere). */
+    const trocas = [];
     const faltam = 4 - formas.length - trocas.length;
     return formas.concat(trocas,
       embaralhar(candidatos).slice(0, Math.max(0, faltam)).map(x => texto(x.c)));
