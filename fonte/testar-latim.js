@@ -107,6 +107,17 @@ ok(M.exemploDoConceito(g001, { vistas: 0 }) === g001.exemplos[0], 'o primeiro ex
 ok(M.exemploDoConceito(g001, { vistas: 1 }) === g001.exemplos[1], 'o seguinte na próxima vez');
 ok(M.exemploDoConceito(g001, { vistas: g001.exemplos.length }) === g001.exemplos[0], 'e dá a volta');
 ok(M.exemploDoConceito(PORID.get('la-p001'), { vistas: 0 }) === null, 'card que não é de conceito não tem exemplo');
+/* as declinações e conjugações (03/11/2026): exemplos das palavras do curso, as vistas primeiro */
+const gruposDecl = CARDS.filter(c => c.tipo === 'conceito' && c.grupo);
+ok(gruposDecl.length === 9 && gruposDecl.every(g => g.exemplos.length >= 3 && g.exemplos.every(e => g.distratores.length === 4 && !e.distratores.includes(g.pt))),
+  'nove conceitos de declinação e conjugação, com 3 exemplos ou mais e 4 erradas');
+const g2 = gruposDecl.find(g => g.grupo === '2ª declinação');
+const comLema = g2.exemplos.filter(e => e.lema).slice(0, 2);
+const vistosG = Object.fromEntries(comLema.map(e => [e.lema, { vistas: 2 }]));
+ok([0, 1, 2, 3].every(n => comLema.includes(M.exemploDoConceito(g2, { vistas: n }, vistosG))), 'o exemplo sai das palavras já vistas');
+ok(M.exemploDoConceito(g2, { vistas: 0 }, {}) === g2.exemplos[0], 'sem palavra vista, vale a lista toda');
+const { doGrupo } = require('./latim/declinacoes');
+ok(CARDS.some(c => c.tipo === 'flexao' && CARDS.some(l => l.id === c.lema && doGrupo(l, '2ª declinação'))), 'há flexões de palavras da 2ª declinação (o build as liga ao conceito)');
 M.usarTransparencias(CARDS);   // o motor aprende o tipo de cada card
 const conceito = M.estadoInicialDo(g001);
 ok(M.modoDe(conceito) === 'multipla', 'o conceito é de escolher');
@@ -357,6 +368,19 @@ for (const tipo of ['compreensao', 'heranca']) {
   ok(alt.length === 5 && alt.includes(c.pt) && c.distratores.every(d => alt.includes(d)), tipo + ': as cinco alternativas são a certa e as quatro do card');
   ok(doTipo.every(x => !x.distratores.some(d => M.conferir(x, d, IDA) === 'certo')), tipo + ': nenhuma errada é aceita');
   const reg = acertou => M.registrar(e, { acertou, modo: 'multipla', direcao: IDA, resposta: 'x' });
+  if (tipo === 'heranca') {
+    /* a herança é curiosidade (o Gere, 03/11/2026): o acerto de primeira fecha de vez; depois
+       de um erro, dois acertos seguidos */
+    reg(true);
+    ok(e.etapa === 'dominado' && !e.voltaEm && M.filaDe(e) === 'fora' && M.encerrado(c.id, e), 'heranca: o acerto de primeira fecha de vez');
+    const e2 = M.estadoInicialDo(c);
+    const reg2 = acertou => M.registrar(e2, { acertou, modo: 'multipla', direcao: IDA, resposta: 'x' });
+    reg2(false); reg2(true);
+    ok(e2.etapa !== 'dominado', 'heranca: depois do erro, um acerto ainda não fecha');
+    reg2(true);
+    ok(e2.etapa === 'dominado' && M.filaDe(e2) === 'fora', 'heranca: dois seguidos depois do erro fecham de vez');
+    continue;
+  }
   reg(true); reg(true);
   ok(e.etapa !== 'dominado' && M.modoDe(e) === 'multipla', tipo + ': dois acertos ainda não dominam');
   reg(true);

@@ -115,7 +115,8 @@ window.TaioeCardsApp = function (ctx) {
   /* a pergunta do card de conceito, pela família */
   const ENUNCIADO_DO_CONCEITO = {
     caso: 'card.enunciado.conceito.caso', verbo: 'card.enunciado.conceito.verbo', voz: 'card.enunciado.conceito.voz',
-    construcao: 'card.enunciado.conceito.construcao'
+    construcao: 'card.enunciado.conceito.construcao', declinacao: 'card.enunciado.conceito.declinacao',
+    conjugacao: 'card.enunciado.conceito.conjugacao'
   };
 
   /* emVista.escolha: os textos que a pessoa estuda ({ textos, em, propria });
@@ -738,7 +739,8 @@ window.TaioeCardsApp = function (ctx) {
     /* os conceitos, cada um antes do primeiro card que o pede; o que nenhum pede vai no fim */
     const pede = id => {
       const c = PORID[id] || {};
-      return c.tipo === 'palavra' ? (palavrasDosTextos.has(id) ? conceitosDaPalavra(id) : []) : (c.conceitos || []);
+      return c.tipo === 'palavra' ? (palavrasDosTextos.has(id) ? conceitosDaPalavra(id) : [])
+        : (c.conceitos || []).concat(c.grupoConceito ? [c.grupoConceito] : []);
     };
     const saida = [];
     for (const id of fila) {
@@ -1318,6 +1320,12 @@ window.TaioeCardsApp = function (ctx) {
           nota: ex.nota, sentido: ex.sentido, conceitos: ex.conceitos, exemploDe: ex.id });
       }
     }
+    /* o card de forma pergunta a cada vez uma coisa: o caso, a função, a pessoa, a forma de
+       dicionário (Motor.perguntaDaForma) */
+    if (cardAtual.tipo === 'forma') {
+      const pf = Motor.perguntaDaForma(PORID[id] || cardAtual, est);
+      if (pf) cardAtual = Object.assign({}, cardAtual, { pt: pf.pt, distratores: pf.distratores, aceitas: pf.aceitas, perguntaForma: pf.tipo });
+    }
     const fase = Motor.faseDe(est);
     modoAtual = fase.modo;
     direcaoAtual = fase.direcao;
@@ -1382,6 +1390,7 @@ window.TaioeCardsApp = function (ctx) {
        é você quem tem que produzir a resposta */
     el['rotulo-resposta-txt'].textContent = flexaoDeCaso ? t('card.enunciado.flexaoCaso')
       : perguntaDoCard ? perguntaDoCard
+      : ['funcao', 'pessoa', 'dicionario'].includes(cardAtual.perguntaForma) ? t('card.enunciado.forma.' + cardAtual.perguntaForma)
       : conceito
       ? t(ENUNCIADO_DO_CONCEITO[cardAtual.familia] || ENUNCIADO_DO_CONCEITO.caso)
       : modoAtual === 'multipla' ? ''
@@ -1393,7 +1402,7 @@ window.TaioeCardsApp = function (ctx) {
 
     /* O card de conceito pergunta com um exemplo real e a palavra em destaque; a palavra do
        latim aparece pelo enunciado do dicionário («dominus, domini, m.»). */
-    exemploAtual = cardAtual.tipo === 'conceito' ? Motor.exemploDoConceito(cardAtual, est) : null;
+    exemploAtual = cardAtual.tipo === 'conceito' ? Motor.exemploDoConceito(cardAtual, est, progresso.cards) : null;
     if (exemploAtual) el.termo.innerHTML = comDestaque(exemploAtual.la, exemploAtual.w);
     else if (cardAtual.tipo === 'forma') el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.la, cardAtual.ocorrencia);
     /* a flexão mostra só a forma: o enunciado do dicionário embaixo era dica (pedido do Gere,
@@ -1447,6 +1456,25 @@ window.TaioeCardsApp = function (ctx) {
     inicioResposta = performance.now();
   }
 
+  /* As alternativas de caso do latim (pedido do Gere, 03/11/2026): o nome do caso com
+     maiúscula, e na flexão uma linha por número, com «Singular:» e «Plural:» à esquerda,
+     alinhados nos dois pontos, e os casos à direita. */
+  const CASOS_RE = /(^|[^\p{L}])(nominativo|vocativo|acusativo|genitivo|dativo|ablativo|locativo)(?![\p{L}])/gu;
+  function ehDeCaso(c) { return !!c && c.familia === 'caso' && ['flexao', 'forma', 'conceito'].includes(c.tipo); }
+  function maiusculaCasos(t) { return String(t).replace(CASOS_RE, (m, a, w) => a + w[0].toUpperCase() + w.slice(1)); }
+  function rotuloDeCaso(texto) {
+    const partes = String(texto).split(/;\s*/);
+    if (partes.length && partes.every(p => /^(singular|plural):\s*\S/.test(p))) {
+      return '<span class="casos">' + partes.map(p => {
+        const m = p.match(/^(singular|plural):\s*(.*)$/);
+        return '<span class="casos-num">' + (m[1] === 'singular' ? 'Singular' : 'Plural') + ':</span>' +
+          '<span class="casos-nome">' + escapar(maiusculaCasos(m[2])) + '</span>';
+      }).join('') + '</span>';
+    }
+    return escapar(maiusculaCasos(texto));
+  }
+  function rotuloDaAlternativa(texto) { return ehDeCaso(cardAtual) ? rotuloDeCaso(texto) : escapar(texto); }
+
   function montarAlternativas() {
     /* com o progresso, a frase de uso pode trocar distrator pronto por
        palavra já vista (ver Motor.distratoresDinamicos) */
@@ -1463,7 +1491,8 @@ window.TaioeCardsApp = function (ctx) {
     opcoes.forEach((texto, i) => {
       const b = document.createElement('button');
       b.className = 'alternativa';
-      b.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + escapar(texto) + '</span>';
+      b.dataset.valor = texto;
+      b.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + rotuloDaAlternativa(texto) + '</span>';
       b.addEventListener('click', () => responderMultipla(texto, b));
       el['area-multipla'].appendChild(b);
     });
@@ -1512,7 +1541,7 @@ window.TaioeCardsApp = function (ctx) {
 
     [...el['area-multipla'].children].forEach(b => {
       b.disabled = true;
-      const rotulo = b.lastChild.textContent;
+      const rotulo = b.dataset.valor;
       if (rotulo === alvoAtual) b.classList.add('certa');
       else if (b === botao && !acertou) b.classList.add('errada');
     });
@@ -1635,7 +1664,8 @@ window.TaioeCardsApp = function (ctx) {
     r.pausado = pausou || r.ms >= Motor.MS_ABANDONO;
     respostaPendente = r;
 
-    el['resposta-certa'].textContent = alvoAtual;
+    if (ehDeCaso(cardAtual)) el['resposta-certa'].innerHTML = rotuloDeCaso(alvoAtual);
+    else el['resposta-certa'].textContent = alvoAtual;
     /* Neutra por padrão: quem pinta de verde é o veredito, e no caso do
        "deu quase" ele só chega depois que você julgar. */
     el['caixa-resposta'].classList.remove('certa');

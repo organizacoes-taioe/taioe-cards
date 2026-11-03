@@ -3,22 +3,22 @@
   "id": "la-k001",
   "tipo": "contraste",
   "conjunto": "k01",
-  "la": "Lupus canem videt.",
-  "pt": "O lobo vê o cão.",
+  "la": "Dominus canem videt.",
+  "pt": "O dono vê o cão.",
   "distratoresLa": [
-   "Lupum canis videt.",
-   "Lupi canis videt.",
-   "Lupe, canis videt."
+   "Dominum canis videt.",
+   "Domini canis videt.",
+   "Domine, canis videt."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Lupus: nominativo singular, o sujeito: quem vê.\ncanem: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação: lupus e canis, o sujeito (nominativo); lupum e canem, o objeto (acusativo); lupi, «do lobo» (genitivo); lupe, a quem se fala (vocativo).\nAs quatro alternativas:\nLupus canem videt — o lobo vê o cão.\nLupum canis videt — o cão vê o lobo.\nLupi canis videt — o cão do lobo vê.\nLupe, canis videt — lobo, o cão vê.",
+  "nota": "Dominus: nominativo singular, o sujeito: quem vê.\ncanem: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação: dominus e canis, o sujeito (nominativo); dominum e canem, o objeto (acusativo); domini, «do dono» (genitivo); domine, a quem se fala (vocativo).\nAs quatro alternativas:\nDominus canem videt — o dono vê o cão.\nDominum canis videt — o cão vê o dono.\nDomini canis videt — o cão do dono vê.\nDomine, canis videt — dono, o cão vê.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p137",
    "la-p039",
    "la-g001",
@@ -28,8 +28,8 @@
   ],
   "palavras": [
    {
-    "w": "Lupus",
-    "c": "la-p153",
+    "w": "Dominus",
+    "c": "la-p012",
     "f": "nominativo singular",
     "fn": "o sujeito: quem vê"
    },
@@ -56,22 +56,22 @@
   "id": "la-k002",
   "tipo": "contraste",
   "conjunto": "k01",
-  "la": "Lupum canis videt.",
-  "pt": "O cão vê o lobo.",
+  "la": "Dominum canis videt.",
+  "pt": "O cão vê o dono.",
   "distratoresLa": [
-   "Lupus canem videt.",
-   "Lupi canis videt.",
-   "Lupe, canis videt."
+   "Dominus canem videt.",
+   "Domini canis videt.",
+   "Domine, canis videt."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Lupum: acusativo singular, o objeto: quem é visto.\ncanis: nominativo singular, o sujeito: quem vê.\nvidet: presente do indicativo, 3ª pessoa do singular.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação: lupus e canis, o sujeito (nominativo); lupum e canem, o objeto (acusativo); lupi, «do lobo» (genitivo); lupe, a quem se fala (vocativo).\nAs quatro alternativas:\nLupus canem videt — o lobo vê o cão.\nLupum canis videt — o cão vê o lobo.\nLupi canis videt — o cão do lobo vê.\nLupe, canis videt — lobo, o cão vê.",
+  "nota": "Dominum: acusativo singular, o objeto: quem é visto.\ncanis: nominativo singular, o sujeito: quem vê.\nvidet: presente do indicativo, 3ª pessoa do singular.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação: dominus e canis, o sujeito (nominativo); dominum e canem, o objeto (acusativo); domini, «do dono» (genitivo); domine, a quem se fala (vocativo).\nAs quatro alternativas:\nDominus canem videt — o dono vê o cão.\nDominum canis videt — o cão vê o dono.\nDomini canis videt — o cão do dono vê.\nDomine, canis videt — dono, o cão vê.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p137",
    "la-p039",
    "la-g001",
@@ -81,8 +81,8 @@
   ],
   "palavras": [
    {
-    "w": "Lupum",
-    "c": "la-p153",
+    "w": "Dominum",
+    "c": "la-p012",
     "f": "acusativo singular",
     "fn": "o objeto: quem é visto"
    },
@@ -113,12 +113,12 @@
   "pt": "O pai ama a mãe.",
   "distratoresLa": [
    "Patrem mater amat.",
-   "Patris mater amat.",
+   "Patris matrem amat.",
    "Patrem matris amat."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Pater: nominativo singular, o sujeito: quem ama.\nmatrem: acusativo singular, o objeto: quem é amada.\namat: presente do indicativo, 3ª pessoa do singular.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris mater amat — a mãe do pai ama.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
+  "nota": "Pater: nominativo singular, o sujeito: quem ama.\nmatrem: acusativo singular, o objeto: quem é amada.\namat: presente do indicativo, 3ª pessoa do singular.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris matrem amat — (ele ou ela) ama a mãe do pai.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
   "nivel": "A1",
   "tags": [
    "contraste"
@@ -164,12 +164,12 @@
   "pt": "A mãe ama o pai.",
   "distratoresLa": [
    "Pater matrem amat.",
-   "Patris mater amat.",
+   "Patris matrem amat.",
    "Patrem matris amat."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Patrem: acusativo singular, o objeto: quem é amado.\nmater: nominativo singular, o sujeito: quem ama.\namat: presente do indicativo, 3ª pessoa do singular.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris mater amat — a mãe do pai ama.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
+  "nota": "Patrem: acusativo singular, o objeto: quem é amado.\nmater: nominativo singular, o sujeito: quem ama.\namat: presente do indicativo, 3ª pessoa do singular.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris matrem amat — (ele ou ela) ama a mãe do pai.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
   "nivel": "A1",
   "tags": [
    "contraste"
@@ -216,11 +216,11 @@
   "distratoresLa": [
    "Pater matrem amat.",
    "Patrem mater amat.",
-   "Patris mater amat."
+   "Patris matrem amat."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Patrem: acusativo singular, o objeto: quem é amado.\nmatris: genitivo singular, de quem: da mãe.\namat: presente do indicativo, 3ª pessoa do singular, o sujeito está no verbo.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris mater amat — a mãe do pai ama.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
+  "nota": "Patrem: acusativo singular, o objeto: quem é amado.\nmatris: genitivo singular, de quem: da mãe.\namat: presente do indicativo, 3ª pessoa do singular, o sujeito está no verbo.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris matrem amat — (ele ou ela) ama a mãe do pai.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
   "nivel": "A1",
   "tags": [
    "contraste"
@@ -263,23 +263,23 @@
   "id": "la-k006",
   "tipo": "contraste",
   "conjunto": "k03",
-  "la": "Pastor lupum fugit.",
-  "pt": "O pastor foge do lobo.",
+  "la": "Homo canem fugit.",
+  "pt": "O homem foge do cão.",
   "distratoresLa": [
-   "Pastorem lupus fugit.",
-   "Pastor lupi fugit.",
-   "Pastoris lupus fugit."
+   "Hominem canis fugit.",
+   "Hominis canis fugit.",
+   "Hominis canem fugit."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Pastor: nominativo singular, o sujeito: quem foge.\nlupum: acusativo singular, o objeto: de quem se foge.\nfugit: presente do indicativo, 3ª pessoa do singular.\nFugio pede acusativo: de quem se foge é o objeto direto. Onde o português diz «foge do lobo», o latim diz lupum; lupi seria «do lobo» de posse, como em «o pastor do lobo».\nAs quatro alternativas:\nPastor lupum fugit — o pastor foge do lobo.\nPastorem lupus fugit — o lobo foge do pastor.\nPastor lupi fugit — o pastor do lobo foge.\nPastoris lupus fugit — o lobo do pastor foge.",
+  "nota": "Homo: nominativo singular, o sujeito: quem foge.\ncanem: acusativo singular, o objeto: de quem se foge.\nfugit: presente do indicativo, 3ª pessoa do singular.\nFugio pede acusativo: de quem se foge é o objeto direto. Onde o português diz «foge do cão», o latim diz canem; hominis é «do homem» de posse, como em «o cão do homem». Homo, hominem, hominis: nominativo, acusativo e genitivo; canis é igual no nominativo e no genitivo, e canem é o acusativo.\nAs quatro alternativas:\nHomo canem fugit — o homem foge do cão.\nHominem canis fugit — o cão foge do homem.\nHominis canis fugit — o cão do homem foge.\nHominis canem fugit — (ele ou ela) foge do cão do homem.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p005",
-   "la-p153",
+   "la-p015",
+   "la-p137",
    "la-p127",
    "la-g001",
    "la-g003",
@@ -287,14 +287,14 @@
   ],
   "palavras": [
    {
-    "w": "Pastor",
-    "c": "la-p005",
+    "w": "Homo",
+    "c": "la-p015",
     "f": "nominativo singular",
     "fn": "o sujeito: quem foge"
    },
    {
-    "w": "lupum",
-    "c": "la-p153",
+    "w": "canem",
+    "c": "la-p137",
     "f": "acusativo singular",
     "fn": "o objeto: de quem se foge"
    },
@@ -314,23 +314,23 @@
   "id": "la-k007",
   "tipo": "contraste",
   "conjunto": "k03",
-  "la": "Pastorem lupus fugit.",
-  "pt": "O lobo foge do pastor.",
+  "la": "Hominem canis fugit.",
+  "pt": "O cão foge do homem.",
   "distratoresLa": [
-   "Pastor lupum fugit.",
-   "Pastor lupi fugit.",
-   "Pastoris lupus fugit."
+   "Homo canem fugit.",
+   "Hominis canis fugit.",
+   "Hominis canem fugit."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Pastorem: acusativo singular, o objeto: de quem se foge.\nlupus: nominativo singular, o sujeito: quem foge.\nfugit: presente do indicativo, 3ª pessoa do singular.\nFugio pede acusativo: de quem se foge é o objeto direto. Onde o português diz «foge do lobo», o latim diz lupum; lupi seria «do lobo» de posse, como em «o pastor do lobo».\nAs quatro alternativas:\nPastor lupum fugit — o pastor foge do lobo.\nPastorem lupus fugit — o lobo foge do pastor.\nPastor lupi fugit — o pastor do lobo foge.\nPastoris lupus fugit — o lobo do pastor foge.",
+  "nota": "Hominem: acusativo singular, o objeto: de quem se foge.\ncanis: nominativo singular, o sujeito: quem foge.\nfugit: presente do indicativo, 3ª pessoa do singular.\nFugio pede acusativo: de quem se foge é o objeto direto. Onde o português diz «foge do cão», o latim diz canem; hominis é «do homem» de posse, como em «o cão do homem». Homo, hominem, hominis: nominativo, acusativo e genitivo; canis é igual no nominativo e no genitivo, e canem é o acusativo.\nAs quatro alternativas:\nHomo canem fugit — o homem foge do cão.\nHominem canis fugit — o cão foge do homem.\nHominis canis fugit — o cão do homem foge.\nHominis canem fugit — (ele ou ela) foge do cão do homem.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p005",
-   "la-p153",
+   "la-p015",
+   "la-p137",
    "la-p127",
    "la-g001",
    "la-g003",
@@ -338,14 +338,14 @@
   ],
   "palavras": [
    {
-    "w": "Pastorem",
-    "c": "la-p005",
+    "w": "Hominem",
+    "c": "la-p015",
     "f": "acusativo singular",
     "fn": "o objeto: de quem se foge"
    },
    {
-    "w": "lupus",
-    "c": "la-p153",
+    "w": "canis",
+    "c": "la-p137",
     "f": "nominativo singular",
     "fn": "o sujeito: quem foge"
    },
@@ -605,45 +605,46 @@
   "id": "la-k012",
   "tipo": "contraste",
   "conjunto": "k05",
-  "la": "Gutta lapidem cavat.",
-  "pt": "A gota cava a pedra.",
+  "la": "Agnus pastorem sequitur.",
+  "pt": "O cordeiro segue o pastor.",
   "distratoresLa": [
-   "Guttam lapis cavat.",
-   "Gutta lapidis cavat.",
-   "Guttam lapidis cavat."
+   "Agnum pastor sequitur.",
+   "Agnum pastoris sequitur.",
+   "Agni pastorem sequitur."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Gutta: nominativo singular, o sujeito: quem cava.\nlapidem: acusativo singular, o objeto: o que é cavado.\ncavat: presente do indicativo, 3ª pessoa do singular.\nGutta, nominativo da 1ª declinação; guttam, o acusativo. Lapis, nominativo da 3ª; lapidem, acusativo; lapidis, genitivo. É o provérbio Gutta cavat lapidem, com outra ordem: quem cava é sempre o nominativo.\nAs quatro alternativas:\nGutta lapidem cavat — a gota cava a pedra.\nGuttam lapis cavat — a pedra cava a gota.\nGutta lapidis cavat — a gota da pedra cava.\nGuttam lapidis cavat — (ele ou ela) cava a gota da pedra.",
+  "nota": "Agnus: nominativo singular, o sujeito: quem segue.\npastorem: acusativo singular, o objeto: quem é seguido.\nsequitur: presente do indicativo, 3ª pessoa do singular, verbo depoente.\nAgnus, nominativo da 2ª declinação; agnum, o acusativo; agni, o genitivo. Pastor, nominativo da 3ª; pastorem, acusativo; pastoris, genitivo. Sequor é depoente (forma passiva, sentido ativo) e pede acusativo: quem é seguido. Sem nominativo na frase, o sujeito fica no verbo: sequitur, «(ele ou ela) segue».\nAs quatro alternativas:\nAgnus pastorem sequitur — o cordeiro segue o pastor.\nAgnum pastor sequitur — o pastor segue o cordeiro.\nAgnum pastoris sequitur — (ele ou ela) segue o cordeiro do pastor.\nAgni pastorem sequitur — (ele ou ela) segue o pastor do cordeiro.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p150",
-   "la-p152",
-   "la-p151",
+   "la-p181",
+   "la-p005",
+   "la-p065",
    "la-g001",
    "la-g003",
    "la-g004"
   ],
   "palavras": [
    {
-    "w": "Gutta",
-    "c": "la-p150",
+    "w": "Agnus",
+    "c": "la-p181",
     "f": "nominativo singular",
-    "fn": "o sujeito: quem cava"
+    "fn": "o sujeito: quem segue"
    },
    {
-    "w": "lapidem",
-    "c": "la-p152",
+    "w": "pastorem",
+    "c": "la-p005",
     "f": "acusativo singular",
-    "fn": "o objeto: o que é cavado"
+    "fn": "o objeto: quem é seguido"
    },
    {
-    "w": "cavat",
-    "c": "la-p151",
-    "f": "presente do indicativo, 3ª pessoa do singular"
+    "w": "sequitur",
+    "c": "la-p065",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "verbo depoente"
    }
   ],
   "conceitos": [
@@ -656,45 +657,46 @@
   "id": "la-k013",
   "tipo": "contraste",
   "conjunto": "k05",
-  "la": "Guttam lapis cavat.",
-  "pt": "A pedra cava a gota.",
+  "la": "Agnum pastor sequitur.",
+  "pt": "O pastor segue o cordeiro.",
   "distratoresLa": [
-   "Gutta lapidem cavat.",
-   "Gutta lapidis cavat.",
-   "Guttam lapidis cavat."
+   "Agnus pastorem sequitur.",
+   "Agnum pastoris sequitur.",
+   "Agni pastorem sequitur."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Guttam: acusativo singular, o objeto: o que é cavado.\nlapis: nominativo singular, o sujeito: quem cava.\ncavat: presente do indicativo, 3ª pessoa do singular.\nGutta, nominativo da 1ª declinação; guttam, o acusativo. Lapis, nominativo da 3ª; lapidem, acusativo; lapidis, genitivo. É o provérbio Gutta cavat lapidem, com outra ordem: quem cava é sempre o nominativo.\nAs quatro alternativas:\nGutta lapidem cavat — a gota cava a pedra.\nGuttam lapis cavat — a pedra cava a gota.\nGutta lapidis cavat — a gota da pedra cava.\nGuttam lapidis cavat — (ele ou ela) cava a gota da pedra.",
+  "nota": "Agnum: acusativo singular, o objeto: quem é seguido.\npastor: nominativo singular, o sujeito: quem segue.\nsequitur: presente do indicativo, 3ª pessoa do singular, verbo depoente.\nAgnus, nominativo da 2ª declinação; agnum, o acusativo; agni, o genitivo. Pastor, nominativo da 3ª; pastorem, acusativo; pastoris, genitivo. Sequor é depoente (forma passiva, sentido ativo) e pede acusativo: quem é seguido. Sem nominativo na frase, o sujeito fica no verbo: sequitur, «(ele ou ela) segue».\nAs quatro alternativas:\nAgnus pastorem sequitur — o cordeiro segue o pastor.\nAgnum pastor sequitur — o pastor segue o cordeiro.\nAgnum pastoris sequitur — (ele ou ela) segue o cordeiro do pastor.\nAgni pastorem sequitur — (ele ou ela) segue o pastor do cordeiro.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p150",
-   "la-p152",
-   "la-p151",
+   "la-p181",
+   "la-p005",
+   "la-p065",
    "la-g001",
    "la-g003",
    "la-g004"
   ],
   "palavras": [
    {
-    "w": "Guttam",
-    "c": "la-p150",
+    "w": "Agnum",
+    "c": "la-p181",
     "f": "acusativo singular",
-    "fn": "o objeto: o que é cavado"
+    "fn": "o objeto: quem é seguido"
    },
    {
-    "w": "lapis",
-    "c": "la-p152",
+    "w": "pastor",
+    "c": "la-p005",
     "f": "nominativo singular",
-    "fn": "o sujeito: quem cava"
+    "fn": "o sujeito: quem segue"
    },
    {
-    "w": "cavat",
-    "c": "la-p151",
-    "f": "presente do indicativo, 3ª pessoa do singular"
+    "w": "sequitur",
+    "c": "la-p065",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "verbo depoente"
    }
   ],
   "conceitos": [
@@ -711,12 +713,12 @@
   "pt": "A mãe acredita no homem.",
   "distratoresLa": [
    "Matri vir credit.",
-   "Matris vir credit.",
+   "Matri viri credit.",
    "Mater viri credit."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Mater: nominativo singular, o sujeito: quem acredita.\nviro: dativo singular, em quem se acredita.\ncredit: presente do indicativo, 3ª pessoa do singular.\nCredo pede dativo: em quem se acredita vai no dativo (viro, matri), onde o português diz «acreditar em». O genitivo (viri, matris) diria «de quem».\nAs quatro alternativas:\nMater viro credit — a mãe acredita no homem.\nMatri vir credit — o homem acredita na mãe.\nMatris vir credit — o homem da mãe acredita.\nMater viri credit — a mãe do homem acredita.",
+  "nota": "Mater: nominativo singular, o sujeito: quem acredita.\nviro: dativo singular, em quem se acredita.\ncredit: presente do indicativo, 3ª pessoa do singular.\nCredo pede dativo: em quem se acredita vai no dativo (viro, matri), onde o português diz «acreditar em». O genitivo viri diz «do homem»; sem nominativo na frase, o sujeito fica no verbo: credit, «(ele ou ela) acredita».\nAs quatro alternativas:\nMater viro credit — a mãe acredita no homem.\nMatri vir credit — o homem acredita na mãe.\nMatri viri credit — (ele ou ela) acredita na mãe do homem.\nMater viri credit — a mãe do homem acredita.",
   "nivel": "A2",
   "tags": [
    "contraste"
@@ -762,12 +764,12 @@
   "pt": "O homem acredita na mãe.",
   "distratoresLa": [
    "Mater viro credit.",
-   "Matris vir credit.",
+   "Matri viri credit.",
    "Mater viri credit."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Matri: dativo singular, em quem se acredita.\nvir: nominativo singular, o sujeito: quem acredita.\ncredit: presente do indicativo, 3ª pessoa do singular.\nCredo pede dativo: em quem se acredita vai no dativo (viro, matri), onde o português diz «acreditar em». O genitivo (viri, matris) diria «de quem».\nAs quatro alternativas:\nMater viro credit — a mãe acredita no homem.\nMatri vir credit — o homem acredita na mãe.\nMatris vir credit — o homem da mãe acredita.\nMater viri credit — a mãe do homem acredita.",
+  "nota": "Matri: dativo singular, em quem se acredita.\nvir: nominativo singular, o sujeito: quem acredita.\ncredit: presente do indicativo, 3ª pessoa do singular.\nCredo pede dativo: em quem se acredita vai no dativo (viro, matri), onde o português diz «acreditar em». O genitivo viri diz «do homem»; sem nominativo na frase, o sujeito fica no verbo: credit, «(ele ou ela) acredita».\nAs quatro alternativas:\nMater viro credit — a mãe acredita no homem.\nMatri vir credit — o homem acredita na mãe.\nMatri viri credit — (ele ou ela) acredita na mãe do homem.\nMater viri credit — a mãe do homem acredita.",
   "nivel": "A2",
   "tags": [
    "contraste"
@@ -984,22 +986,22 @@
   "id": "la-k019",
   "tipo": "contraste",
   "conjunto": "k08",
-  "la": "Lupe, pastor te videt.",
-  "pt": "Lobo, o pastor te vê.",
+  "la": "Domine, pastor te videt.",
+  "pt": "Patrão, o pastor te vê.",
   "distratoresLa": [
-   "Lupus, pastor, te videt.",
-   "Lupi pastor te videt.",
-   "Lupus pastoris te videt."
+   "Dominus, pastor, te videt.",
+   "Domini pastor te videt.",
+   "Dominus pastoris te videt."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Lupe: vocativo singular, a quem se fala.\npastor: nominativo singular, o sujeito: quem vê.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: lupe (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nLupe, pastor te videt — lobo, o pastor te vê.\nLupus, pastor, te videt — pastor, o lobo te vê.\nLupi pastor te videt — o pastor do lobo te vê.\nLupus pastoris te videt — o lobo do pastor te vê.",
+  "nota": "Domine: vocativo singular, a quem se fala.\npastor: nominativo singular, o sujeito: quem vê.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: domine (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nDomine, pastor te videt — patrão, o pastor te vê.\nDominus, pastor, te videt — pastor, o patrão te vê.\nDomini pastor te videt — o pastor do patrão te vê.\nDominus pastoris te videt — o patrão do pastor te vê.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p005",
    "la-p007",
    "la-p039",
@@ -1010,8 +1012,8 @@
   ],
   "palavras": [
    {
-    "w": "Lupe",
-    "c": "la-p153",
+    "w": "Domine",
+    "c": "la-p012",
     "f": "vocativo singular",
     "fn": "a quem se fala"
    },
@@ -1044,22 +1046,22 @@
   "id": "la-k020",
   "tipo": "contraste",
   "conjunto": "k08",
-  "la": "Lupus, pastor, te videt.",
-  "pt": "Pastor, o lobo te vê.",
+  "la": "Dominus, pastor, te videt.",
+  "pt": "Pastor, o patrão te vê.",
   "distratoresLa": [
-   "Lupe, pastor te videt.",
-   "Lupi pastor te videt.",
-   "Lupus pastoris te videt."
+   "Domine, pastor te videt.",
+   "Domini pastor te videt.",
+   "Dominus pastoris te videt."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Lupus: nominativo singular, o sujeito: quem vê.\npastor: vocativo singular, a quem se fala.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: lupe (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nLupe, pastor te videt — lobo, o pastor te vê.\nLupus, pastor, te videt — pastor, o lobo te vê.\nLupi pastor te videt — o pastor do lobo te vê.\nLupus pastoris te videt — o lobo do pastor te vê.",
+  "nota": "Dominus: nominativo singular, o sujeito: quem vê.\npastor: vocativo singular, a quem se fala.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: domine (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nDomine, pastor te videt — patrão, o pastor te vê.\nDominus, pastor, te videt — pastor, o patrão te vê.\nDomini pastor te videt — o pastor do patrão te vê.\nDominus pastoris te videt — o patrão do pastor te vê.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p005",
    "la-p007",
    "la-p039",
@@ -1070,8 +1072,8 @@
   ],
   "palavras": [
    {
-    "w": "Lupus",
-    "c": "la-p153",
+    "w": "Dominus",
+    "c": "la-p012",
     "f": "nominativo singular",
     "fn": "o sujeito: quem vê"
    },
@@ -1104,22 +1106,22 @@
   "id": "la-k021",
   "tipo": "contraste",
   "conjunto": "k08",
-  "la": "Lupus pastoris te videt.",
-  "pt": "O lobo do pastor te vê.",
+  "la": "Dominus pastoris te videt.",
+  "pt": "O patrão do pastor te vê.",
   "distratoresLa": [
-   "Lupe, pastor te videt.",
-   "Lupus, pastor, te videt.",
-   "Lupi pastor te videt."
+   "Domine, pastor te videt.",
+   "Dominus, pastor, te videt.",
+   "Domini pastor te videt."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Lupus: nominativo singular, o sujeito: quem vê.\npastoris: genitivo singular, de quem: do pastor.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: lupe (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nLupe, pastor te videt — lobo, o pastor te vê.\nLupus, pastor, te videt — pastor, o lobo te vê.\nLupi pastor te videt — o pastor do lobo te vê.\nLupus pastoris te videt — o lobo do pastor te vê.",
+  "nota": "Dominus: nominativo singular, o sujeito: quem vê.\npastoris: genitivo singular, de quem: do pastor.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: domine (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nDomine, pastor te videt — patrão, o pastor te vê.\nDominus, pastor, te videt — pastor, o patrão te vê.\nDomini pastor te videt — o pastor do patrão te vê.\nDominus pastoris te videt — o patrão do pastor te vê.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p005",
    "la-p007",
    "la-p039",
@@ -1130,8 +1132,8 @@
   ],
   "palavras": [
    {
-    "w": "Lupus",
-    "c": "la-p153",
+    "w": "Dominus",
+    "c": "la-p012",
     "f": "nominativo singular",
     "fn": "o sujeito: quem vê"
    },
@@ -1164,23 +1166,23 @@
   "id": "la-k022",
   "tipo": "contraste",
   "conjunto": "k09",
-  "la": "Agnus lupum timet.",
-  "pt": "O cordeiro teme o lobo.",
+  "la": "Latro canem timet.",
+  "pt": "O ladrão teme o cão.",
   "distratoresLa": [
-   "Agnum lupus timet.",
-   "Agni lupus timet.",
-   "Agnus lupi timet."
+   "Latronem canis timet.",
+   "Latronis canem timet.",
+   "Latronis canis timet."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Agnus: nominativo singular, o sujeito: quem teme.\nlupum: acusativo singular, o objeto: quem é temido.\ntimet: presente do indicativo, 3ª pessoa do singular.\nNa fábula de Fedro o cordeiro teme o lobo. Trocar só as terminações inverte a história: agnum lupus timet, o lobo teme o cordeiro.\nAs quatro alternativas:\nAgnus lupum timet — o cordeiro teme o lobo.\nAgnum lupus timet — o lobo teme o cordeiro.\nAgni lupus timet — o lobo do cordeiro teme.\nAgnus lupi timet — o cordeiro do lobo teme.",
+  "nota": "Latro: nominativo singular, o sujeito: quem teme.\ncanem: acusativo singular, o objeto: quem é temido.\ntimet: presente do indicativo, 3ª pessoa do singular.\nLatro, nominativo da 3ª declinação; latronem, o acusativo; latronis, o genitivo. Canis é igual no nominativo e no genitivo, e canem é o acusativo; em latronis canis timet, canis é o sujeito, porque latronis já diz de quem. Sem nominativo na frase, o sujeito fica no verbo: timet, «(ele ou ela) teme».\nAs quatro alternativas:\nLatro canem timet — o ladrão teme o cão.\nLatronem canis timet — o cão teme o ladrão.\nLatronis canem timet — (ele ou ela) teme o cão do ladrão.\nLatronis canis timet — o cão do ladrão tem medo.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p181",
-   "la-p153",
+   "la-p191",
+   "la-p137",
    "la-p203",
    "la-g001",
    "la-g003",
@@ -1188,14 +1190,14 @@
   ],
   "palavras": [
    {
-    "w": "Agnus",
-    "c": "la-p181",
+    "w": "Latro",
+    "c": "la-p191",
     "f": "nominativo singular",
     "fn": "o sujeito: quem teme"
    },
    {
-    "w": "lupum",
-    "c": "la-p153",
+    "w": "canem",
+    "c": "la-p137",
     "f": "acusativo singular",
     "fn": "o objeto: quem é temido"
    },
@@ -1215,23 +1217,23 @@
   "id": "la-k023",
   "tipo": "contraste",
   "conjunto": "k09",
-  "la": "Agnum lupus timet.",
-  "pt": "O lobo teme o cordeiro.",
+  "la": "Latronem canis timet.",
+  "pt": "O cão teme o ladrão.",
   "distratoresLa": [
-   "Agnus lupum timet.",
-   "Agni lupus timet.",
-   "Agnus lupi timet."
+   "Latro canem timet.",
+   "Latronis canem timet.",
+   "Latronis canis timet."
   ],
   "aceitas": [],
   "distratores": [],
-  "nota": "Agnum: acusativo singular, o objeto: quem é temido.\nlupus: nominativo singular, o sujeito: quem teme.\ntimet: presente do indicativo, 3ª pessoa do singular.\nNa fábula de Fedro o cordeiro teme o lobo. Trocar só as terminações inverte a história: agnum lupus timet, o lobo teme o cordeiro.\nAs quatro alternativas:\nAgnus lupum timet — o cordeiro teme o lobo.\nAgnum lupus timet — o lobo teme o cordeiro.\nAgni lupus timet — o lobo do cordeiro teme.\nAgnus lupi timet — o cordeiro do lobo teme.",
+  "nota": "Latronem: acusativo singular, o objeto: quem é temido.\ncanis: nominativo singular, o sujeito: quem teme.\ntimet: presente do indicativo, 3ª pessoa do singular.\nLatro, nominativo da 3ª declinação; latronem, o acusativo; latronis, o genitivo. Canis é igual no nominativo e no genitivo, e canem é o acusativo; em latronis canis timet, canis é o sujeito, porque latronis já diz de quem. Sem nominativo na frase, o sujeito fica no verbo: timet, «(ele ou ela) teme».\nAs quatro alternativas:\nLatro canem timet — o ladrão teme o cão.\nLatronem canis timet — o cão teme o ladrão.\nLatronis canem timet — (ele ou ela) teme o cão do ladrão.\nLatronis canis timet — o cão do ladrão tem medo.",
   "nivel": "A1",
   "tags": [
    "contraste"
   ],
   "requerTodas": [
-   "la-p181",
-   "la-p153",
+   "la-p191",
+   "la-p137",
    "la-p203",
    "la-g001",
    "la-g003",
@@ -1239,14 +1241,14 @@
   ],
   "palavras": [
    {
-    "w": "Agnum",
-    "c": "la-p181",
+    "w": "Latronem",
+    "c": "la-p191",
     "f": "acusativo singular",
     "fn": "o objeto: quem é temido"
    },
    {
-    "w": "lupus",
-    "c": "la-p153",
+    "w": "canis",
+    "c": "la-p137",
     "f": "nominativo singular",
     "fn": "o sujeito: quem teme"
    },

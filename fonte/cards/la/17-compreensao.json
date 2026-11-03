@@ -2,25 +2,25 @@
  {
   "id": "la-q001",
   "tipo": "compreensao",
-  "la": "Lupum canis videt.",
+  "la": "Dominum canis videt.",
   "pergunta": "Quem vê?",
   "pt": "o cão",
   "aceitas": [
    "cão"
   ],
   "distratores": [
-   "o lobo",
+   "o dono",
    "o pastor",
    "o cordeiro",
    "o homem"
   ],
-  "nota": "canis: nominativo, o sujeito: quem vê.\nlupum: acusativo, o objeto: quem é visto.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+  "nota": "canis: nominativo, o sujeito: quem vê.\ndominum: acusativo, o objeto: quem é visto.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p137",
    "la-p039",
    "la-g001",
@@ -33,11 +33,11 @@
  {
   "id": "la-q002",
   "tipo": "compreensao",
-  "la": "Lupum canis videt.",
+  "la": "Dominum canis videt.",
   "pergunta": "Quem é visto?",
-  "pt": "o lobo",
+  "pt": "o dono",
   "aceitas": [
-   "lobo"
+   "dono"
   ],
   "distratores": [
    "o cão",
@@ -45,13 +45,13 @@
    "o cordeiro",
    "o homem"
   ],
-  "nota": "lupum: acusativo, o objeto: quem é visto.\ncanis: nominativo, o sujeito: quem vê.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+  "nota": "dominum: acusativo, o objeto: quem é visto.\ncanis: nominativo, o sujeito: quem vê.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p137",
    "la-p039",
    "la-g001",
@@ -64,25 +64,25 @@
  {
   "id": "la-q003",
   "tipo": "compreensao",
-  "la": "Lupe, canis videt.",
+  "la": "Domine, canis videt.",
   "pergunta": "Com quem se fala?",
-  "pt": "com o lobo",
+  "pt": "com o dono",
   "aceitas": [
-   "lobo"
+   "dono"
   ],
   "distratores": [
    "com o cão",
    "com o pastor",
-   "com o cordeiro",
+   "com o pai",
    "com o homem"
   ],
-  "nota": "Lupe: vocativo, a quem se fala (o -e da 2ª declinação).\ncanis: nominativo, o sujeito: o cão vê.",
+  "nota": "Domine: vocativo, a quem se fala (o -e da 2ª declinação).\ncanis: nominativo, o sujeito: o cão vê.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p137",
    "la-p039",
    "la-g001",
@@ -155,7 +155,7 @@
  {
   "id": "la-q006",
   "tipo": "compreensao",
-  "la": "Patris mater amat.",
+  "la": "Patris matrem amat.",
   "pergunta": "De quem é a mãe?",
   "pt": "do pai",
   "aceitas": [
@@ -165,9 +165,9 @@
    "do filho",
    "do homem",
    "do pastor",
-   "do lobo"
+   "do dono"
   ],
-  "nota": "patris: genitivo, de quem é: a mãe do pai.\nmater: nominativo, o sujeito: a mãe do pai ama.",
+  "nota": "patris: genitivo, de quem é: a mãe do pai.\nmatrem: acusativo, o objeto: quem é amada; o sujeito está no verbo: (ele ou ela) ama a mãe do pai.",
   "nivel": "A1",
   "tags": [
    "compreensão"
@@ -185,26 +185,26 @@
  {
   "id": "la-q007",
   "tipo": "compreensao",
-  "la": "Pastorem lupus fugit.",
+  "la": "Hominem canis fugit.",
   "pergunta": "Quem foge?",
-  "pt": "o lobo",
+  "pt": "o cão",
   "aceitas": [
-   "lobo"
+   "cão"
   ],
   "distratores": [
+   "o homem",
+   "o lobo",
    "o pastor",
-   "o cão",
-   "o cordeiro",
-   "o homem"
+   "o cordeiro"
   ],
-  "nota": "lupus: nominativo, o sujeito: quem foge.\npastorem: acusativo, de quem se foge (fugio pede o acusativo).\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+  "nota": "canis: nominativo, o sujeito: quem foge.\nhominem: acusativo, de quem se foge (fugio pede o acusativo).\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p005",
-   "la-p153",
+   "la-p015",
+   "la-p137",
    "la-p127",
    "la-g001",
    "la-g003",
@@ -215,26 +215,26 @@
  {
   "id": "la-q008",
   "tipo": "compreensao",
-  "la": "Pastorem lupus fugit.",
+  "la": "Hominem canis fugit.",
   "pergunta": "De quem se foge?",
-  "pt": "do pastor",
+  "pt": "do homem",
   "aceitas": [
-   "pastor"
+   "homem"
   ],
   "distratores": [
-   "do lobo",
    "do cão",
-   "do cordeiro",
-   "do homem"
+   "do lobo",
+   "do pastor",
+   "do cordeiro"
   ],
-  "nota": "pastorem: acusativo; com fugio, é de quem se foge.\nlupus: nominativo, o sujeito: o lobo foge.",
+  "nota": "hominem: acusativo; com fugio, é de quem se foge.\ncanis: nominativo, o sujeito: o cão foge.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p005",
-   "la-p153",
+   "la-p015",
+   "la-p137",
    "la-p127",
    "la-g001",
    "la-g003",
@@ -341,27 +341,27 @@
  {
   "id": "la-q012",
   "tipo": "compreensao",
-  "la": "Guttam lapis cavat.",
-  "pergunta": "O que cava?",
-  "pt": "a pedra",
+  "la": "Agnum pastor sequitur.",
+  "pergunta": "Quem segue?",
+  "pt": "o pastor",
   "aceitas": [
-   "pedra"
+   "pastor"
   ],
   "distratores": [
-   "a gota",
-   "a água",
-   "a chuva",
-   "o rio"
+   "o cordeiro",
+   "o cão",
+   "o lobo",
+   "o homem"
   ],
-  "nota": "lapis: nominativo, o sujeito: o que cava.\nguttam: acusativo, o objeto: o que é cavado.\nNo provérbio é o contrário: Gutta cavat lapidem, a gota cava a pedra.",
+  "nota": "pastor: nominativo, o sujeito: quem segue.\nagnum: acusativo, o objeto: quem é seguido.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p150",
-   "la-p152",
-   "la-p151",
+   "la-p181",
+   "la-p005",
+   "la-p065",
    "la-g001",
    "la-g003",
    "la-g004"
@@ -493,25 +493,25 @@
  {
   "id": "la-q017",
   "tipo": "compreensao",
-  "la": "Lupe, pastor te videt.",
+  "la": "Domine, pastor te videt.",
   "pergunta": "Quem vê?",
   "pt": "o pastor",
   "aceitas": [
    "pastor"
   ],
   "distratores": [
-   "o lobo",
+   "o patrão",
    "o cão",
    "o cordeiro",
    "o pai"
   ],
-  "nota": "pastor: nominativo, o sujeito: quem vê.\nLupe: vocativo, a quem se fala: lobo, o pastor te vê.",
+  "nota": "pastor: nominativo, o sujeito: quem vê.\nDomine: vocativo, a quem se fala: patrão, o pastor te vê.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p005",
    "la-p007",
    "la-p039",
@@ -525,25 +525,25 @@
  {
   "id": "la-q018",
   "tipo": "compreensao",
-  "la": "Lupi pastor te videt.",
+  "la": "Domini pastor te videt.",
   "pergunta": "De quem é o pastor?",
-  "pt": "do lobo",
+  "pt": "do patrão",
   "aceitas": [
-   "lobo"
+   "patrão"
   ],
   "distratores": [
-   "do cão",
-   "do cordeiro",
    "do pai",
-   "do homem"
+   "do filho",
+   "do homem",
+   "da mãe"
   ],
-  "nota": "lupi: genitivo, de quem é: o pastor do lobo.\npastor: nominativo, o sujeito: o pastor te vê.",
+  "nota": "domini: genitivo, de quem é: o pastor do patrão.\npastor: nominativo, o sujeito: o pastor te vê.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p153",
+   "la-p012",
    "la-p005",
    "la-p007",
    "la-p039",
@@ -557,26 +557,26 @@
  {
   "id": "la-q019",
   "tipo": "compreensao",
-  "la": "Agnum lupus timet.",
+  "la": "Latronem canis timet.",
   "pergunta": "Quem tem medo?",
-  "pt": "o lobo",
+  "pt": "o cão",
   "aceitas": [
-   "lobo"
+   "cão"
   ],
   "distratores": [
-   "o cordeiro",
-   "o cão",
+   "o ladrão",
+   "o lobo",
    "o pastor",
    "o homem"
   ],
-  "nota": "lupus: nominativo, o sujeito: quem teme.\nagnum: acusativo, o objeto: quem é temido.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+  "nota": "canis: nominativo, o sujeito: quem teme.\nlatronem: acusativo, o objeto: quem é temido.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p181",
-   "la-p153",
+   "la-p191",
+   "la-p137",
    "la-p203",
    "la-g001",
    "la-g003",
@@ -587,26 +587,26 @@
  {
   "id": "la-q020",
   "tipo": "compreensao",
-  "la": "Agnus lupum timet.",
-  "pergunta": "Quem é temido?",
-  "pt": "o lobo",
+  "la": "Latronis canem timet.",
+  "pergunta": "De quem é o cão?",
+  "pt": "do ladrão",
   "aceitas": [
-   "lobo"
+   "ladrão"
   ],
   "distratores": [
-   "o cordeiro",
-   "o cão",
-   "o pastor",
-   "o homem"
+   "do pastor",
+   "do homem",
+   "do dono",
+   "da mãe"
   ],
-  "nota": "lupum: acusativo, o objeto: quem é temido.\nagnus: nominativo, o sujeito: o cordeiro teme.",
+  "nota": "latronis: genitivo, de quem é: o cão do ladrão.\ncanem: acusativo, o objeto: quem é temido; o sujeito está no verbo: (ele ou ela) teme.",
   "nivel": "A1",
   "tags": [
    "compreensão"
   ],
   "requerTodas": [
-   "la-p181",
-   "la-p153",
+   "la-p191",
+   "la-p137",
    "la-p203",
    "la-g001",
    "la-g003",

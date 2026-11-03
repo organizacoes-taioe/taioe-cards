@@ -1,8 +1,8 @@
 {
  "versao": 1,
  "idioma": "la",
- "gerado_em": "2026-10-31",
- "total": 1483,
+ "gerado_em": "2026-11-03",
+ "total": 1492,
  "cards": [
   {
    "idioma": "la",
@@ -32343,22 +32343,22 @@
    "id": "la-k001",
    "tipo": "contraste",
    "conjunto": "k01",
-   "la": "Lupus canem videt.",
-   "pt": "O lobo vê o cão.",
+   "la": "Dominus canem videt.",
+   "pt": "O dono vê o cão.",
    "distratoresLa": [
-    "Lupum canis videt.",
-    "Lupi canis videt.",
-    "Lupe, canis videt."
+    "Dominum canis videt.",
+    "Domini canis videt.",
+    "Domine, canis videt."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Lupus: nominativo singular, o sujeito: quem vê.\ncanem: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação: lupus e canis, o sujeito (nominativo); lupum e canem, o objeto (acusativo); lupi, «do lobo» (genitivo); lupe, a quem se fala (vocativo).\nAs quatro alternativas:\nLupus canem videt — o lobo vê o cão.\nLupum canis videt — o cão vê o lobo.\nLupi canis videt — o cão do lobo vê.\nLupe, canis videt — lobo, o cão vê.",
+   "nota": "Dominus: nominativo singular, o sujeito: quem vê.\ncanem: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação: dominus e canis, o sujeito (nominativo); dominum e canem, o objeto (acusativo); domini, «do dono» (genitivo); domine, a quem se fala (vocativo).\nAs quatro alternativas:\nDominus canem videt — o dono vê o cão.\nDominum canis videt — o cão vê o dono.\nDomini canis videt — o cão do dono vê.\nDomine, canis videt — dono, o cão vê.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p137",
     "la-p039",
     "la-g001",
@@ -32368,8 +32368,8 @@
    ],
    "palavras": [
     {
-     "w": "Lupus",
-     "c": "la-p153",
+     "w": "Dominus",
+     "c": "la-p012",
      "f": "nominativo singular",
      "fn": "o sujeito: quem vê"
     },
@@ -32397,22 +32397,22 @@
    "id": "la-k002",
    "tipo": "contraste",
    "conjunto": "k01",
-   "la": "Lupum canis videt.",
-   "pt": "O cão vê o lobo.",
+   "la": "Dominum canis videt.",
+   "pt": "O cão vê o dono.",
    "distratoresLa": [
-    "Lupus canem videt.",
-    "Lupi canis videt.",
-    "Lupe, canis videt."
+    "Dominus canem videt.",
+    "Domini canis videt.",
+    "Domine, canis videt."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Lupum: acusativo singular, o objeto: quem é visto.\ncanis: nominativo singular, o sujeito: quem vê.\nvidet: presente do indicativo, 3ª pessoa do singular.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação: lupus e canis, o sujeito (nominativo); lupum e canem, o objeto (acusativo); lupi, «do lobo» (genitivo); lupe, a quem se fala (vocativo).\nAs quatro alternativas:\nLupus canem videt — o lobo vê o cão.\nLupum canis videt — o cão vê o lobo.\nLupi canis videt — o cão do lobo vê.\nLupe, canis videt — lobo, o cão vê.",
+   "nota": "Dominum: acusativo singular, o objeto: quem é visto.\ncanis: nominativo singular, o sujeito: quem vê.\nvidet: presente do indicativo, 3ª pessoa do singular.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação: dominus e canis, o sujeito (nominativo); dominum e canem, o objeto (acusativo); domini, «do dono» (genitivo); domine, a quem se fala (vocativo).\nAs quatro alternativas:\nDominus canem videt — o dono vê o cão.\nDominum canis videt — o cão vê o dono.\nDomini canis videt — o cão do dono vê.\nDomine, canis videt — dono, o cão vê.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p137",
     "la-p039",
     "la-g001",
@@ -32422,8 +32422,8 @@
    ],
    "palavras": [
     {
-     "w": "Lupum",
-     "c": "la-p153",
+     "w": "Dominum",
+     "c": "la-p012",
      "f": "acusativo singular",
      "fn": "o objeto: quem é visto"
     },
@@ -32455,12 +32455,12 @@
    "pt": "O pai ama a mãe.",
    "distratoresLa": [
     "Patrem mater amat.",
-    "Patris mater amat.",
+    "Patris matrem amat.",
     "Patrem matris amat."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Pater: nominativo singular, o sujeito: quem ama.\nmatrem: acusativo singular, o objeto: quem é amada.\namat: presente do indicativo, 3ª pessoa do singular.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris mater amat — a mãe do pai ama.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
+   "nota": "Pater: nominativo singular, o sujeito: quem ama.\nmatrem: acusativo singular, o objeto: quem é amada.\namat: presente do indicativo, 3ª pessoa do singular.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris matrem amat — (ele ou ela) ama a mãe do pai.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
    "nivel": "A1",
    "tags": [
     "contraste"
@@ -32507,12 +32507,12 @@
    "pt": "A mãe ama o pai.",
    "distratoresLa": [
     "Pater matrem amat.",
-    "Patris mater amat.",
+    "Patris matrem amat.",
     "Patrem matris amat."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Patrem: acusativo singular, o objeto: quem é amado.\nmater: nominativo singular, o sujeito: quem ama.\namat: presente do indicativo, 3ª pessoa do singular.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris mater amat — a mãe do pai ama.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
+   "nota": "Patrem: acusativo singular, o objeto: quem é amado.\nmater: nominativo singular, o sujeito: quem ama.\namat: presente do indicativo, 3ª pessoa do singular.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris matrem amat — (ele ou ela) ama a mãe do pai.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
    "nivel": "A1",
    "tags": [
     "contraste"
@@ -32560,11 +32560,11 @@
    "distratoresLa": [
     "Pater matrem amat.",
     "Patrem mater amat.",
-    "Patris mater amat."
+    "Patris matrem amat."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Patrem: acusativo singular, o objeto: quem é amado.\nmatris: genitivo singular, de quem: da mãe.\namat: presente do indicativo, 3ª pessoa do singular, o sujeito está no verbo.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris mater amat — a mãe do pai ama.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
+   "nota": "Patrem: acusativo singular, o objeto: quem é amado.\nmatris: genitivo singular, de quem: da mãe.\namat: presente do indicativo, 3ª pessoa do singular, o sujeito está no verbo.\nNa 3ª declinação: pater e mater no nominativo, patrem e matrem no acusativo, patris e matris no genitivo. Sem nominativo na frase, o sujeito fica no verbo: amat, «(ele ou ela) ama».\nAs quatro alternativas:\nPater matrem amat — o pai ama a mãe.\nPatrem mater amat — a mãe ama o pai.\nPatris matrem amat — (ele ou ela) ama a mãe do pai.\nPatrem matris amat — (ele ou ela) ama o pai da mãe.",
    "nivel": "A1",
    "tags": [
     "contraste"
@@ -32608,23 +32608,23 @@
    "id": "la-k006",
    "tipo": "contraste",
    "conjunto": "k03",
-   "la": "Pastor lupum fugit.",
-   "pt": "O pastor foge do lobo.",
+   "la": "Homo canem fugit.",
+   "pt": "O homem foge do cão.",
    "distratoresLa": [
-    "Pastorem lupus fugit.",
-    "Pastor lupi fugit.",
-    "Pastoris lupus fugit."
+    "Hominem canis fugit.",
+    "Hominis canis fugit.",
+    "Hominis canem fugit."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Pastor: nominativo singular, o sujeito: quem foge.\nlupum: acusativo singular, o objeto: de quem se foge.\nfugit: presente do indicativo, 3ª pessoa do singular.\nFugio pede acusativo: de quem se foge é o objeto direto. Onde o português diz «foge do lobo», o latim diz lupum; lupi seria «do lobo» de posse, como em «o pastor do lobo».\nAs quatro alternativas:\nPastor lupum fugit — o pastor foge do lobo.\nPastorem lupus fugit — o lobo foge do pastor.\nPastor lupi fugit — o pastor do lobo foge.\nPastoris lupus fugit — o lobo do pastor foge.",
+   "nota": "Homo: nominativo singular, o sujeito: quem foge.\ncanem: acusativo singular, o objeto: de quem se foge.\nfugit: presente do indicativo, 3ª pessoa do singular.\nFugio pede acusativo: de quem se foge é o objeto direto. Onde o português diz «foge do cão», o latim diz canem; hominis é «do homem» de posse, como em «o cão do homem». Homo, hominem, hominis: nominativo, acusativo e genitivo; canis é igual no nominativo e no genitivo, e canem é o acusativo.\nAs quatro alternativas:\nHomo canem fugit — o homem foge do cão.\nHominem canis fugit — o cão foge do homem.\nHominis canis fugit — o cão do homem foge.\nHominis canem fugit — (ele ou ela) foge do cão do homem.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p005",
-    "la-p153",
+    "la-p015",
+    "la-p137",
     "la-p127",
     "la-g001",
     "la-g003",
@@ -32632,14 +32632,14 @@
    ],
    "palavras": [
     {
-     "w": "Pastor",
-     "c": "la-p005",
+     "w": "Homo",
+     "c": "la-p015",
      "f": "nominativo singular",
      "fn": "o sujeito: quem foge"
     },
     {
-     "w": "lupum",
-     "c": "la-p153",
+     "w": "canem",
+     "c": "la-p137",
      "f": "acusativo singular",
      "fn": "o objeto: de quem se foge"
     },
@@ -32660,23 +32660,23 @@
    "id": "la-k007",
    "tipo": "contraste",
    "conjunto": "k03",
-   "la": "Pastorem lupus fugit.",
-   "pt": "O lobo foge do pastor.",
+   "la": "Hominem canis fugit.",
+   "pt": "O cão foge do homem.",
    "distratoresLa": [
-    "Pastor lupum fugit.",
-    "Pastor lupi fugit.",
-    "Pastoris lupus fugit."
+    "Homo canem fugit.",
+    "Hominis canis fugit.",
+    "Hominis canem fugit."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Pastorem: acusativo singular, o objeto: de quem se foge.\nlupus: nominativo singular, o sujeito: quem foge.\nfugit: presente do indicativo, 3ª pessoa do singular.\nFugio pede acusativo: de quem se foge é o objeto direto. Onde o português diz «foge do lobo», o latim diz lupum; lupi seria «do lobo» de posse, como em «o pastor do lobo».\nAs quatro alternativas:\nPastor lupum fugit — o pastor foge do lobo.\nPastorem lupus fugit — o lobo foge do pastor.\nPastor lupi fugit — o pastor do lobo foge.\nPastoris lupus fugit — o lobo do pastor foge.",
+   "nota": "Hominem: acusativo singular, o objeto: de quem se foge.\ncanis: nominativo singular, o sujeito: quem foge.\nfugit: presente do indicativo, 3ª pessoa do singular.\nFugio pede acusativo: de quem se foge é o objeto direto. Onde o português diz «foge do cão», o latim diz canem; hominis é «do homem» de posse, como em «o cão do homem». Homo, hominem, hominis: nominativo, acusativo e genitivo; canis é igual no nominativo e no genitivo, e canem é o acusativo.\nAs quatro alternativas:\nHomo canem fugit — o homem foge do cão.\nHominem canis fugit — o cão foge do homem.\nHominis canis fugit — o cão do homem foge.\nHominis canem fugit — (ele ou ela) foge do cão do homem.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p005",
-    "la-p153",
+    "la-p015",
+    "la-p137",
     "la-p127",
     "la-g001",
     "la-g003",
@@ -32684,14 +32684,14 @@
    ],
    "palavras": [
     {
-     "w": "Pastorem",
-     "c": "la-p005",
+     "w": "Hominem",
+     "c": "la-p015",
      "f": "acusativo singular",
      "fn": "o objeto: de quem se foge"
     },
     {
-     "w": "lupus",
-     "c": "la-p153",
+     "w": "canis",
+     "c": "la-p137",
      "f": "nominativo singular",
      "fn": "o sujeito: quem foge"
     },
@@ -32956,45 +32956,46 @@
    "id": "la-k012",
    "tipo": "contraste",
    "conjunto": "k05",
-   "la": "Gutta lapidem cavat.",
-   "pt": "A gota cava a pedra.",
+   "la": "Agnus pastorem sequitur.",
+   "pt": "O cordeiro segue o pastor.",
    "distratoresLa": [
-    "Guttam lapis cavat.",
-    "Gutta lapidis cavat.",
-    "Guttam lapidis cavat."
+    "Agnum pastor sequitur.",
+    "Agnum pastoris sequitur.",
+    "Agni pastorem sequitur."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Gutta: nominativo singular, o sujeito: quem cava.\nlapidem: acusativo singular, o objeto: o que é cavado.\ncavat: presente do indicativo, 3ª pessoa do singular.\nGutta, nominativo da 1ª declinação; guttam, o acusativo. Lapis, nominativo da 3ª; lapidem, acusativo; lapidis, genitivo. É o provérbio Gutta cavat lapidem, com outra ordem: quem cava é sempre o nominativo.\nAs quatro alternativas:\nGutta lapidem cavat — a gota cava a pedra.\nGuttam lapis cavat — a pedra cava a gota.\nGutta lapidis cavat — a gota da pedra cava.\nGuttam lapidis cavat — (ele ou ela) cava a gota da pedra.",
+   "nota": "Agnus: nominativo singular, o sujeito: quem segue.\npastorem: acusativo singular, o objeto: quem é seguido.\nsequitur: presente do indicativo, 3ª pessoa do singular, verbo depoente.\nAgnus, nominativo da 2ª declinação; agnum, o acusativo; agni, o genitivo. Pastor, nominativo da 3ª; pastorem, acusativo; pastoris, genitivo. Sequor é depoente (forma passiva, sentido ativo) e pede acusativo: quem é seguido. Sem nominativo na frase, o sujeito fica no verbo: sequitur, «(ele ou ela) segue».\nAs quatro alternativas:\nAgnus pastorem sequitur — o cordeiro segue o pastor.\nAgnum pastor sequitur — o pastor segue o cordeiro.\nAgnum pastoris sequitur — (ele ou ela) segue o cordeiro do pastor.\nAgni pastorem sequitur — (ele ou ela) segue o pastor do cordeiro.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p150",
-    "la-p152",
-    "la-p151",
+    "la-p181",
+    "la-p005",
+    "la-p065",
     "la-g001",
     "la-g003",
     "la-g004"
    ],
    "palavras": [
     {
-     "w": "Gutta",
-     "c": "la-p150",
+     "w": "Agnus",
+     "c": "la-p181",
      "f": "nominativo singular",
-     "fn": "o sujeito: quem cava"
+     "fn": "o sujeito: quem segue"
     },
     {
-     "w": "lapidem",
-     "c": "la-p152",
+     "w": "pastorem",
+     "c": "la-p005",
      "f": "acusativo singular",
-     "fn": "o objeto: o que é cavado"
+     "fn": "o objeto: quem é seguido"
     },
     {
-     "w": "cavat",
-     "c": "la-p151",
-     "f": "presente do indicativo, 3ª pessoa do singular"
+     "w": "sequitur",
+     "c": "la-p065",
+     "f": "presente do indicativo, 3ª pessoa do singular",
+     "fn": "verbo depoente"
     }
    ],
    "conceitos": [
@@ -33008,45 +33009,46 @@
    "id": "la-k013",
    "tipo": "contraste",
    "conjunto": "k05",
-   "la": "Guttam lapis cavat.",
-   "pt": "A pedra cava a gota.",
+   "la": "Agnum pastor sequitur.",
+   "pt": "O pastor segue o cordeiro.",
    "distratoresLa": [
-    "Gutta lapidem cavat.",
-    "Gutta lapidis cavat.",
-    "Guttam lapidis cavat."
+    "Agnus pastorem sequitur.",
+    "Agnum pastoris sequitur.",
+    "Agni pastorem sequitur."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Guttam: acusativo singular, o objeto: o que é cavado.\nlapis: nominativo singular, o sujeito: quem cava.\ncavat: presente do indicativo, 3ª pessoa do singular.\nGutta, nominativo da 1ª declinação; guttam, o acusativo. Lapis, nominativo da 3ª; lapidem, acusativo; lapidis, genitivo. É o provérbio Gutta cavat lapidem, com outra ordem: quem cava é sempre o nominativo.\nAs quatro alternativas:\nGutta lapidem cavat — a gota cava a pedra.\nGuttam lapis cavat — a pedra cava a gota.\nGutta lapidis cavat — a gota da pedra cava.\nGuttam lapidis cavat — (ele ou ela) cava a gota da pedra.",
+   "nota": "Agnum: acusativo singular, o objeto: quem é seguido.\npastor: nominativo singular, o sujeito: quem segue.\nsequitur: presente do indicativo, 3ª pessoa do singular, verbo depoente.\nAgnus, nominativo da 2ª declinação; agnum, o acusativo; agni, o genitivo. Pastor, nominativo da 3ª; pastorem, acusativo; pastoris, genitivo. Sequor é depoente (forma passiva, sentido ativo) e pede acusativo: quem é seguido. Sem nominativo na frase, o sujeito fica no verbo: sequitur, «(ele ou ela) segue».\nAs quatro alternativas:\nAgnus pastorem sequitur — o cordeiro segue o pastor.\nAgnum pastor sequitur — o pastor segue o cordeiro.\nAgnum pastoris sequitur — (ele ou ela) segue o cordeiro do pastor.\nAgni pastorem sequitur — (ele ou ela) segue o pastor do cordeiro.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p150",
-    "la-p152",
-    "la-p151",
+    "la-p181",
+    "la-p005",
+    "la-p065",
     "la-g001",
     "la-g003",
     "la-g004"
    ],
    "palavras": [
     {
-     "w": "Guttam",
-     "c": "la-p150",
+     "w": "Agnum",
+     "c": "la-p181",
      "f": "acusativo singular",
-     "fn": "o objeto: o que é cavado"
+     "fn": "o objeto: quem é seguido"
     },
     {
-     "w": "lapis",
-     "c": "la-p152",
+     "w": "pastor",
+     "c": "la-p005",
      "f": "nominativo singular",
-     "fn": "o sujeito: quem cava"
+     "fn": "o sujeito: quem segue"
     },
     {
-     "w": "cavat",
-     "c": "la-p151",
-     "f": "presente do indicativo, 3ª pessoa do singular"
+     "w": "sequitur",
+     "c": "la-p065",
+     "f": "presente do indicativo, 3ª pessoa do singular",
+     "fn": "verbo depoente"
     }
    ],
    "conceitos": [
@@ -33064,12 +33066,12 @@
    "pt": "A mãe acredita no homem.",
    "distratoresLa": [
     "Matri vir credit.",
-    "Matris vir credit.",
+    "Matri viri credit.",
     "Mater viri credit."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Mater: nominativo singular, o sujeito: quem acredita.\nviro: dativo singular, em quem se acredita.\ncredit: presente do indicativo, 3ª pessoa do singular.\nCredo pede dativo: em quem se acredita vai no dativo (viro, matri), onde o português diz «acreditar em». O genitivo (viri, matris) diria «de quem».\nAs quatro alternativas:\nMater viro credit — a mãe acredita no homem.\nMatri vir credit — o homem acredita na mãe.\nMatris vir credit — o homem da mãe acredita.\nMater viri credit — a mãe do homem acredita.",
+   "nota": "Mater: nominativo singular, o sujeito: quem acredita.\nviro: dativo singular, em quem se acredita.\ncredit: presente do indicativo, 3ª pessoa do singular.\nCredo pede dativo: em quem se acredita vai no dativo (viro, matri), onde o português diz «acreditar em». O genitivo viri diz «do homem»; sem nominativo na frase, o sujeito fica no verbo: credit, «(ele ou ela) acredita».\nAs quatro alternativas:\nMater viro credit — a mãe acredita no homem.\nMatri vir credit — o homem acredita na mãe.\nMatri viri credit — (ele ou ela) acredita na mãe do homem.\nMater viri credit — a mãe do homem acredita.",
    "nivel": "A2",
    "tags": [
     "contraste"
@@ -33116,12 +33118,12 @@
    "pt": "O homem acredita na mãe.",
    "distratoresLa": [
     "Mater viro credit.",
-    "Matris vir credit.",
+    "Matri viri credit.",
     "Mater viri credit."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Matri: dativo singular, em quem se acredita.\nvir: nominativo singular, o sujeito: quem acredita.\ncredit: presente do indicativo, 3ª pessoa do singular.\nCredo pede dativo: em quem se acredita vai no dativo (viro, matri), onde o português diz «acreditar em». O genitivo (viri, matris) diria «de quem».\nAs quatro alternativas:\nMater viro credit — a mãe acredita no homem.\nMatri vir credit — o homem acredita na mãe.\nMatris vir credit — o homem da mãe acredita.\nMater viri credit — a mãe do homem acredita.",
+   "nota": "Matri: dativo singular, em quem se acredita.\nvir: nominativo singular, o sujeito: quem acredita.\ncredit: presente do indicativo, 3ª pessoa do singular.\nCredo pede dativo: em quem se acredita vai no dativo (viro, matri), onde o português diz «acreditar em». O genitivo viri diz «do homem»; sem nominativo na frase, o sujeito fica no verbo: credit, «(ele ou ela) acredita».\nAs quatro alternativas:\nMater viro credit — a mãe acredita no homem.\nMatri vir credit — o homem acredita na mãe.\nMatri viri credit — (ele ou ela) acredita na mãe do homem.\nMater viri credit — a mãe do homem acredita.",
    "nivel": "A2",
    "tags": [
     "contraste"
@@ -33342,22 +33344,22 @@
    "id": "la-k019",
    "tipo": "contraste",
    "conjunto": "k08",
-   "la": "Lupe, pastor te videt.",
-   "pt": "Lobo, o pastor te vê.",
+   "la": "Domine, pastor te videt.",
+   "pt": "Patrão, o pastor te vê.",
    "distratoresLa": [
-    "Lupus, pastor, te videt.",
-    "Lupi pastor te videt.",
-    "Lupus pastoris te videt."
+    "Dominus, pastor, te videt.",
+    "Domini pastor te videt.",
+    "Dominus pastoris te videt."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Lupe: vocativo singular, a quem se fala.\npastor: nominativo singular, o sujeito: quem vê.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: lupe (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nLupe, pastor te videt — lobo, o pastor te vê.\nLupus, pastor, te videt — pastor, o lobo te vê.\nLupi pastor te videt — o pastor do lobo te vê.\nLupus pastoris te videt — o lobo do pastor te vê.",
+   "nota": "Domine: vocativo singular, a quem se fala.\npastor: nominativo singular, o sujeito: quem vê.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: domine (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nDomine, pastor te videt — patrão, o pastor te vê.\nDominus, pastor, te videt — pastor, o patrão te vê.\nDomini pastor te videt — o pastor do patrão te vê.\nDominus pastoris te videt — o patrão do pastor te vê.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p005",
     "la-p007",
     "la-p039",
@@ -33368,8 +33370,8 @@
    ],
    "palavras": [
     {
-     "w": "Lupe",
-     "c": "la-p153",
+     "w": "Domine",
+     "c": "la-p012",
      "f": "vocativo singular",
      "fn": "a quem se fala"
     },
@@ -33403,22 +33405,22 @@
    "id": "la-k020",
    "tipo": "contraste",
    "conjunto": "k08",
-   "la": "Lupus, pastor, te videt.",
-   "pt": "Pastor, o lobo te vê.",
+   "la": "Dominus, pastor, te videt.",
+   "pt": "Pastor, o patrão te vê.",
    "distratoresLa": [
-    "Lupe, pastor te videt.",
-    "Lupi pastor te videt.",
-    "Lupus pastoris te videt."
+    "Domine, pastor te videt.",
+    "Domini pastor te videt.",
+    "Dominus pastoris te videt."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Lupus: nominativo singular, o sujeito: quem vê.\npastor: vocativo singular, a quem se fala.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: lupe (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nLupe, pastor te videt — lobo, o pastor te vê.\nLupus, pastor, te videt — pastor, o lobo te vê.\nLupi pastor te videt — o pastor do lobo te vê.\nLupus pastoris te videt — o lobo do pastor te vê.",
+   "nota": "Dominus: nominativo singular, o sujeito: quem vê.\npastor: vocativo singular, a quem se fala.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: domine (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nDomine, pastor te videt — patrão, o pastor te vê.\nDominus, pastor, te videt — pastor, o patrão te vê.\nDomini pastor te videt — o pastor do patrão te vê.\nDominus pastoris te videt — o patrão do pastor te vê.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p005",
     "la-p007",
     "la-p039",
@@ -33429,8 +33431,8 @@
    ],
    "palavras": [
     {
-     "w": "Lupus",
-     "c": "la-p153",
+     "w": "Dominus",
+     "c": "la-p012",
      "f": "nominativo singular",
      "fn": "o sujeito: quem vê"
     },
@@ -33464,22 +33466,22 @@
    "id": "la-k021",
    "tipo": "contraste",
    "conjunto": "k08",
-   "la": "Lupus pastoris te videt.",
-   "pt": "O lobo do pastor te vê.",
+   "la": "Dominus pastoris te videt.",
+   "pt": "O patrão do pastor te vê.",
    "distratoresLa": [
-    "Lupe, pastor te videt.",
-    "Lupus, pastor, te videt.",
-    "Lupi pastor te videt."
+    "Domine, pastor te videt.",
+    "Dominus, pastor, te videt.",
+    "Domini pastor te videt."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Lupus: nominativo singular, o sujeito: quem vê.\npastoris: genitivo singular, de quem: do pastor.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: lupe (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nLupe, pastor te videt — lobo, o pastor te vê.\nLupus, pastor, te videt — pastor, o lobo te vê.\nLupi pastor te videt — o pastor do lobo te vê.\nLupus pastoris te videt — o lobo do pastor te vê.",
+   "nota": "Dominus: nominativo singular, o sujeito: quem vê.\npastoris: genitivo singular, de quem: do pastor.\nte: acusativo singular, o objeto: quem é visto.\nvidet: presente do indicativo, 3ª pessoa do singular.\nO vocativo é a quem se fala: domine (a 2ª declinação em -us faz -e); pastor fica igual ao nominativo, e quem o mostra é a vírgula. Te é o acusativo de tu.\nAs quatro alternativas:\nDomine, pastor te videt — patrão, o pastor te vê.\nDominus, pastor, te videt — pastor, o patrão te vê.\nDomini pastor te videt — o pastor do patrão te vê.\nDominus pastoris te videt — o patrão do pastor te vê.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p005",
     "la-p007",
     "la-p039",
@@ -33490,8 +33492,8 @@
    ],
    "palavras": [
     {
-     "w": "Lupus",
-     "c": "la-p153",
+     "w": "Dominus",
+     "c": "la-p012",
      "f": "nominativo singular",
      "fn": "o sujeito: quem vê"
     },
@@ -33525,23 +33527,23 @@
    "id": "la-k022",
    "tipo": "contraste",
    "conjunto": "k09",
-   "la": "Agnus lupum timet.",
-   "pt": "O cordeiro teme o lobo.",
+   "la": "Latro canem timet.",
+   "pt": "O ladrão teme o cão.",
    "distratoresLa": [
-    "Agnum lupus timet.",
-    "Agni lupus timet.",
-    "Agnus lupi timet."
+    "Latronem canis timet.",
+    "Latronis canem timet.",
+    "Latronis canis timet."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Agnus: nominativo singular, o sujeito: quem teme.\nlupum: acusativo singular, o objeto: quem é temido.\ntimet: presente do indicativo, 3ª pessoa do singular.\nNa fábula de Fedro o cordeiro teme o lobo. Trocar só as terminações inverte a história: agnum lupus timet, o lobo teme o cordeiro.\nAs quatro alternativas:\nAgnus lupum timet — o cordeiro teme o lobo.\nAgnum lupus timet — o lobo teme o cordeiro.\nAgni lupus timet — o lobo do cordeiro teme.\nAgnus lupi timet — o cordeiro do lobo teme.",
+   "nota": "Latro: nominativo singular, o sujeito: quem teme.\ncanem: acusativo singular, o objeto: quem é temido.\ntimet: presente do indicativo, 3ª pessoa do singular.\nLatro, nominativo da 3ª declinação; latronem, o acusativo; latronis, o genitivo. Canis é igual no nominativo e no genitivo, e canem é o acusativo; em latronis canis timet, canis é o sujeito, porque latronis já diz de quem. Sem nominativo na frase, o sujeito fica no verbo: timet, «(ele ou ela) teme».\nAs quatro alternativas:\nLatro canem timet — o ladrão teme o cão.\nLatronem canis timet — o cão teme o ladrão.\nLatronis canem timet — (ele ou ela) teme o cão do ladrão.\nLatronis canis timet — o cão do ladrão tem medo.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p181",
-    "la-p153",
+    "la-p191",
+    "la-p137",
     "la-p203",
     "la-g001",
     "la-g003",
@@ -33549,14 +33551,14 @@
    ],
    "palavras": [
     {
-     "w": "Agnus",
-     "c": "la-p181",
+     "w": "Latro",
+     "c": "la-p191",
      "f": "nominativo singular",
      "fn": "o sujeito: quem teme"
     },
     {
-     "w": "lupum",
-     "c": "la-p153",
+     "w": "canem",
+     "c": "la-p137",
      "f": "acusativo singular",
      "fn": "o objeto: quem é temido"
     },
@@ -33577,23 +33579,23 @@
    "id": "la-k023",
    "tipo": "contraste",
    "conjunto": "k09",
-   "la": "Agnum lupus timet.",
-   "pt": "O lobo teme o cordeiro.",
+   "la": "Latronem canis timet.",
+   "pt": "O cão teme o ladrão.",
    "distratoresLa": [
-    "Agnus lupum timet.",
-    "Agni lupus timet.",
-    "Agnus lupi timet."
+    "Latro canem timet.",
+    "Latronis canem timet.",
+    "Latronis canis timet."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "Agnum: acusativo singular, o objeto: quem é temido.\nlupus: nominativo singular, o sujeito: quem teme.\ntimet: presente do indicativo, 3ª pessoa do singular.\nNa fábula de Fedro o cordeiro teme o lobo. Trocar só as terminações inverte a história: agnum lupus timet, o lobo teme o cordeiro.\nAs quatro alternativas:\nAgnus lupum timet — o cordeiro teme o lobo.\nAgnum lupus timet — o lobo teme o cordeiro.\nAgni lupus timet — o lobo do cordeiro teme.\nAgnus lupi timet — o cordeiro do lobo teme.",
+   "nota": "Latronem: acusativo singular, o objeto: quem é temido.\ncanis: nominativo singular, o sujeito: quem teme.\ntimet: presente do indicativo, 3ª pessoa do singular.\nLatro, nominativo da 3ª declinação; latronem, o acusativo; latronis, o genitivo. Canis é igual no nominativo e no genitivo, e canem é o acusativo; em latronis canis timet, canis é o sujeito, porque latronis já diz de quem. Sem nominativo na frase, o sujeito fica no verbo: timet, «(ele ou ela) teme».\nAs quatro alternativas:\nLatro canem timet — o ladrão teme o cão.\nLatronem canis timet — o cão teme o ladrão.\nLatronis canem timet — (ele ou ela) teme o cão do ladrão.\nLatronis canis timet — o cão do ladrão tem medo.",
    "nivel": "A1",
    "tags": [
     "contraste"
    ],
    "requerTodas": [
-    "la-p181",
-    "la-p153",
+    "la-p191",
+    "la-p137",
     "la-p203",
     "la-g001",
     "la-g003",
@@ -33601,14 +33603,14 @@
    ],
    "palavras": [
     {
-     "w": "Agnum",
-     "c": "la-p181",
+     "w": "Latronem",
+     "c": "la-p191",
      "f": "acusativo singular",
      "fn": "o objeto: quem é temido"
     },
     {
-     "w": "lupus",
-     "c": "la-p153",
+     "w": "canis",
+     "c": "la-p137",
      "f": "nominativo singular",
      "fn": "o sujeito: quem teme"
     },
@@ -38646,7 +38648,8 @@
     "la-g001",
     "la-g004"
    ],
-   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo"
+   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -38674,7 +38677,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -38701,7 +38705,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "2ª declinação: -os → plural: acusativo"
+   "terminacao": "2ª declinação: -os → plural: acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -38728,7 +38733,8 @@
    "conceitos": [
     "la-g004",
     "la-g003"
-   ]
+   ],
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -38755,7 +38761,8 @@
    ],
    "conceitos": [
     "la-g001"
-   ]
+   ],
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -38782,7 +38789,8 @@
    ],
    "conceitos": [
     "la-g001"
-   ]
+   ],
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -38809,7 +38817,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -40013,7 +40022,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -40204,7 +40214,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "1ª declinação: -am → singular: acusativo"
+   "terminacao": "1ª declinação: -am → singular: acusativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -40233,7 +40244,8 @@
     "la-g004",
     "la-g005"
    ],
-   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo"
+   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -40260,7 +40272,8 @@
    "conceitos": [
     "la-g002"
    ],
-   "terminacao": "2ª declinação: -e → singular: vocativo"
+   "terminacao": "2ª declinação: -e → singular: vocativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -40288,7 +40301,8 @@
     "la-g001",
     "la-g004"
    ],
-   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo"
+   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -40316,7 +40330,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -40343,7 +40358,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "2ª declinação: -um → singular: acusativo"
+   "terminacao": "2ª declinação: -um → singular: acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -40558,7 +40574,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -40586,7 +40603,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo"
+   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -40613,7 +40631,8 @@
    "conceitos": [
     "la-g005"
    ],
-   "terminacao": "3ª declinação: -i → singular: dativo"
+   "terminacao": "3ª declinação: -i → singular: dativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -40640,7 +40659,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação: -is → singular: genitivo"
+   "terminacao": "3ª declinação: -is → singular: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -40667,7 +40687,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação: -um → plural: genitivo"
+   "terminacao": "3ª declinação: -um → plural: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -40733,7 +40754,8 @@
    "conceitos": [
     "la-g010"
    ],
-   "terminacao": "1ª conjugação: futuro do indicativo, 1ª pessoa do singular (-bo)"
+   "terminacao": "1ª conjugação: futuro do indicativo, 1ª pessoa do singular (-bo)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -40766,7 +40788,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do plural (-te)"
+   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do plural (-te)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -40802,7 +40825,8 @@
    "conceitos": [
     "la-g009"
    ],
-   "terminacao": "1ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "1ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -40841,7 +40865,8 @@
    "conceitos": [
     "la-g012"
    ],
-   "terminacao": "1ª conjugação: presente do subjuntivo, 3ª pessoa do singular (-et)"
+   "terminacao": "1ª conjugação: presente do subjuntivo, 3ª pessoa do singular (-et)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -40980,7 +41005,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo"
+   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -41008,7 +41034,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -ibus → plural: dativo ou ablativo"
+   "terminacao": "3ª declinação: -ibus → plural: dativo ou ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -41047,7 +41074,8 @@
    "conceitos": [
     "la-g012"
    ],
-   "terminacao": "3ª conjugação: presente do subjuntivo, 2ª pessoa do singular (-as)"
+   "terminacao": "3ª conjugação: presente do subjuntivo, 2ª pessoa do singular (-as)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41078,7 +41106,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "3ª conjugação: imperativo presente, 2ª pessoa do singular (-de)"
+   "terminacao": "3ª conjugação: imperativo presente, 2ª pessoa do singular (-de)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41115,7 +41144,8 @@
    "tags": [
     "gramática",
     "flexão"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41147,7 +41177,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41183,7 +41214,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 2ª pessoa do singular (-is)"
+   "terminacao": "3ª conjugação: presente do indicativo, 2ª pessoa do singular (-is)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41269,7 +41301,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41296,7 +41329,8 @@
    "conceitos": [
     "la-g005",
     "la-g006"
-   ]
+   ],
+   "grupoConceito": "la-g025"
   },
   {
    "idioma": "la",
@@ -41322,7 +41356,8 @@
    ],
    "conceitos": [
     "la-g003"
-   ]
+   ],
+   "grupoConceito": "la-g025"
   },
   {
    "idioma": "la",
@@ -41377,7 +41412,8 @@
     "la-g001",
     "la-g004"
    ],
-   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo"
+   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -41404,7 +41440,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "2ª declinação: -um → singular: acusativo"
+   "terminacao": "2ª declinação: -um → singular: acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -41439,7 +41476,8 @@
    "conceitos": [
     "la-g012"
    ],
-   "terminacao": "3ª conjugação: presente do subjuntivo, 3ª pessoa do singular (-at)"
+   "terminacao": "3ª conjugação: presente do subjuntivo, 3ª pessoa do singular (-at)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41472,7 +41510,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41502,7 +41541,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41538,7 +41578,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41573,7 +41614,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41616,7 +41658,8 @@
    "conceitos": [
     "la-g005",
     "la-g014"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41651,7 +41694,8 @@
    "conceitos": [
     "la-g001",
     "la-g014"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41683,7 +41727,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41714,7 +41759,8 @@
    "conceitos": [
     "la-g013",
     "la-g015"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41749,7 +41795,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41776,7 +41823,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -41803,7 +41851,8 @@
    "conceitos": [
     "la-g005"
    ],
-   "terminacao": "3ª declinação: -i → singular: dativo"
+   "terminacao": "3ª declinação: -i → singular: dativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -41869,7 +41918,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -41900,7 +41950,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -42001,7 +42052,8 @@
    ],
    "conceitos": [
     "la-g013"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -42035,7 +42087,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -42066,7 +42119,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -42100,7 +42154,8 @@
    "conceitos": [
     "la-g010"
    ],
-   "terminacao": "1ª conjugação: futuro do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "1ª conjugação: futuro do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -42130,7 +42185,8 @@
    "conceitos": [
     "la-g013",
     "la-g015"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -42163,7 +42219,8 @@
    "conceitos": [
     "la-g009"
    ],
-   "terminacao": "1ª conjugação: perfeito do indicativo, 1ª pessoa do singular (-ui)"
+   "terminacao": "1ª conjugação: perfeito do indicativo, 1ª pessoa do singular (-ui)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -42196,7 +42253,8 @@
    "tags": [
     "gramática",
     "flexão"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42229,7 +42287,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42265,7 +42324,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42299,7 +42359,8 @@
    ],
    "conceitos": [
     "la-g010"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42334,7 +42395,8 @@
    ],
    "conceitos": [
     "la-g010"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42369,7 +42431,8 @@
    ],
    "conceitos": [
     "la-g007"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42398,7 +42461,8 @@
    ],
    "conceitos": [
     "la-g013"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42430,7 +42494,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42471,7 +42536,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42501,7 +42567,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -42539,7 +42606,8 @@
    ],
    "conceitos": [
     "la-g012"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42577,7 +42645,8 @@
    "conceitos": [
     "la-g010"
    ],
-   "terminacao": "2ª conjugação: futuro do indicativo, 2ª pessoa do singular (-is)"
+   "terminacao": "2ª conjugação: futuro do indicativo, 2ª pessoa do singular (-is)",
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42614,7 +42683,8 @@
    ],
    "conceitos": [
     "la-g010"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42651,7 +42721,8 @@
    "conceitos": [
     "la-g007",
     "la-g015"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42693,7 +42764,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42730,7 +42802,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42766,7 +42839,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42802,7 +42876,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42839,7 +42914,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42876,7 +42952,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -42904,7 +42981,8 @@
     "la-g001",
     "la-g004"
    ],
-   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo"
+   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -42932,7 +43010,8 @@
     "la-g001",
     "la-g004"
    ],
-   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo"
+   "terminacao": "2ª declinação: -i → singular: genitivo; plural: nominativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -42960,7 +43039,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -42986,7 +43066,8 @@
    ],
    "conceitos": [
     "la-g004"
-   ]
+   ],
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -43013,7 +43094,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "2ª declinação: -os → plural: acusativo"
+   "terminacao": "2ª declinação: -os → plural: acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -43040,7 +43122,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "2ª declinação: -um → singular: acusativo"
+   "terminacao": "2ª declinação: -um → singular: acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -43067,7 +43150,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação: -is → singular: genitivo"
+   "terminacao": "3ª declinação: -is → singular: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -43094,7 +43178,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação: -um → plural: genitivo"
+   "terminacao": "3ª declinação: -um → plural: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -43121,7 +43206,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -43148,7 +43234,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -43175,7 +43262,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação: -is → singular: genitivo"
+   "terminacao": "3ª declinação: -is → singular: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -43281,7 +43369,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "1ª declinação: -am → singular: acusativo"
+   "terminacao": "1ª declinação: -am → singular: acusativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -43364,7 +43453,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "4ª declinação: -u → singular: ablativo"
+   "terminacao": "4ª declinação: -u → singular: ablativo",
+   "grupoConceito": "la-g024"
   },
   {
    "idioma": "la",
@@ -43390,7 +43480,8 @@
    ],
    "conceitos": [
     "la-g005"
-   ]
+   ],
+   "grupoConceito": "la-g024"
   },
   {
    "idioma": "la",
@@ -43416,7 +43507,8 @@
    ],
    "conceitos": [
     "la-g003"
-   ]
+   ],
+   "grupoConceito": "la-g024"
   },
   {
    "idioma": "la",
@@ -43604,7 +43696,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -43632,7 +43725,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -43659,7 +43753,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "2ª declinação, neutro: -orum → plural: genitivo"
+   "terminacao": "2ª declinação, neutro: -orum → plural: genitivo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -43686,7 +43781,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -43770,7 +43866,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação, neutro: -e → singular: ablativo"
+   "terminacao": "3ª declinação, neutro: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -43796,7 +43893,8 @@
    ],
    "conceitos": [
     "la-g005"
-   ]
+   ],
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -43823,7 +43921,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação, neutro: -is → singular: genitivo"
+   "terminacao": "3ª declinação, neutro: -is → singular: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -44425,7 +44524,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -44459,7 +44559,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do singular (-at)"
+   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do singular (-at)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -44492,7 +44593,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -44660,7 +44762,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do singular (-ra)"
+   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do singular (-ra)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -44697,7 +44800,8 @@
    "conceitos": [
     "la-g010"
    ],
-   "terminacao": "1ª conjugação: futuro do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "1ª conjugação: futuro do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -44724,7 +44828,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -44752,7 +44857,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo"
+   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -44779,7 +44885,8 @@
    "conceitos": [
     "la-g005"
    ],
-   "terminacao": "3ª declinação: -i → singular: dativo"
+   "terminacao": "3ª declinação: -i → singular: dativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -44806,7 +44913,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "4ª declinação: -u → singular: ablativo"
+   "terminacao": "4ª declinação: -u → singular: ablativo",
+   "grupoConceito": "la-g024"
   },
   {
    "idioma": "la",
@@ -44842,7 +44950,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do singular (-at)"
+   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do singular (-at)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -44875,7 +44984,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "3ª conjugação: imperativo presente, 2ª pessoa do singular (-de)"
+   "terminacao": "3ª conjugação: imperativo presente, 2ª pessoa do singular (-de)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -44912,7 +45022,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 2ª pessoa do singular (-is)"
+   "terminacao": "3ª conjugação: presente do indicativo, 2ª pessoa do singular (-is)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -44946,7 +45057,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -44979,7 +45091,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do singular (-ra)"
+   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do singular (-ra)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -45015,7 +45128,8 @@
    "conceitos": [
     "la-g010"
    ],
-   "terminacao": "1ª conjugação: futuro do indicativo, 1ª pessoa do singular (-bo)"
+   "terminacao": "1ª conjugação: futuro do indicativo, 1ª pessoa do singular (-bo)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -45048,7 +45162,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do plural (-te)"
+   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do plural (-te)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -45240,7 +45355,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "2ª declinação, neutro: -a → plural: nominativo ou acusativo"
+   "terminacao": "2ª declinação, neutro: -a → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -45267,7 +45383,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "2ª declinação, neutro: -orum → plural: genitivo"
+   "terminacao": "2ª declinação, neutro: -orum → plural: genitivo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -45458,7 +45575,8 @@
    "conceitos": [
     "la-g001",
     "la-g004"
-   ]
+   ],
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -45485,7 +45603,8 @@
    "conceitos": [
     "la-g005",
     "la-g006"
-   ]
+   ],
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -45513,7 +45632,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -45548,7 +45668,8 @@
    "conceitos": [
     "la-g012",
     "la-g015"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -45582,7 +45703,8 @@
    ],
    "conceitos": [
     "la-g012"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -45623,7 +45745,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -45651,7 +45774,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -45678,7 +45802,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "1ª declinação: -am → singular: acusativo"
+   "terminacao": "1ª declinação: -am → singular: acusativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -45705,7 +45830,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -45914,7 +46040,8 @@
    ],
    "conceitos": [
     "la-g010"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -45948,7 +46075,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -45983,7 +46111,8 @@
    ],
    "conceitos": [
     "la-g007"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -46011,7 +46140,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "2ª declinação, neutro: -a → plural: nominativo ou acusativo"
+   "terminacao": "2ª declinação, neutro: -a → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -46039,7 +46169,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo"
+   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46067,7 +46198,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -ibus → plural: dativo ou ablativo"
+   "terminacao": "3ª declinação: -ibus → plural: dativo ou ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46106,7 +46238,8 @@
    "conceitos": [
     "la-g012"
    ],
-   "terminacao": "3ª conjugação: presente do subjuntivo, 2ª pessoa do singular (-as)"
+   "terminacao": "3ª conjugação: presente do subjuntivo, 2ª pessoa do singular (-as)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -46141,7 +46274,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -46168,7 +46302,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46232,7 +46367,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "2ª declinação, neutro: -a → plural: nominativo ou acusativo"
+   "terminacao": "2ª declinação, neutro: -a → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -46260,7 +46396,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -46326,7 +46463,8 @@
    "conceitos": [
     "la-g012"
    ],
-   "terminacao": "3ª conjugação: presente do subjuntivo, 3ª pessoa do singular (-at)"
+   "terminacao": "3ª conjugação: presente do subjuntivo, 3ª pessoa do singular (-at)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -46359,7 +46497,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "3ª conjugação: imperativo presente, 2ª pessoa do plural (-te)"
+   "terminacao": "3ª conjugação: imperativo presente, 2ª pessoa do plural (-te)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -46400,7 +46539,8 @@
    "conceitos": [
     "la-g001",
     "la-g014"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -46433,7 +46573,8 @@
    "conceitos": [
     "la-g001",
     "la-g014"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -46468,7 +46609,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -46495,7 +46637,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46523,7 +46666,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -ibus → plural: dativo ou ablativo"
+   "terminacao": "3ª declinação: -ibus → plural: dativo ou ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46550,7 +46694,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46577,7 +46722,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação: -is → singular: genitivo"
+   "terminacao": "3ª declinação: -is → singular: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46604,7 +46750,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46631,7 +46778,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação: -is → singular: genitivo"
+   "terminacao": "3ª declinação: -is → singular: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46658,7 +46806,8 @@
    "conceitos": [
     "la-g005"
    ],
-   "terminacao": "3ª declinação: -i → singular: dativo"
+   "terminacao": "3ª declinação: -i → singular: dativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46686,7 +46835,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -ibus → plural: dativo ou ablativo"
+   "terminacao": "3ª declinação: -ibus → plural: dativo ou ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -46713,7 +46863,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação: -is → singular: genitivo"
+   "terminacao": "3ª declinação: -is → singular: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -47636,7 +47787,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -47678,7 +47830,8 @@
    ],
    "conceitos": [
     "la-g013"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -47716,7 +47869,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -47754,7 +47908,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -48175,7 +48330,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação, neutro: -e → singular: ablativo"
+   "terminacao": "3ª declinação, neutro: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -48208,7 +48364,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -48240,7 +48397,8 @@
    ],
    "conceitos": [
     "la-g007"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -48281,7 +48439,8 @@
    ],
    "conceitos": [
     "la-g007"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -48313,7 +48472,8 @@
    ],
    "conceitos": [
     "la-g007"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -48340,7 +48500,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -48366,7 +48527,8 @@
    ],
    "conceitos": [
     "la-g004"
-   ]
+   ],
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -48486,7 +48648,8 @@
    "conceitos": [
     "la-g010"
    ],
-   "terminacao": "1ª conjugação: futuro do indicativo, 1ª pessoa do singular (-bo)"
+   "terminacao": "1ª conjugação: futuro do indicativo, 1ª pessoa do singular (-bo)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -48521,7 +48684,8 @@
    "conceitos": [
     "la-g009"
    ],
-   "terminacao": "1ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "1ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -48556,7 +48720,8 @@
    "conceitos": [
     "la-g009"
    ],
-   "terminacao": "1ª conjugação: perfeito do indicativo, 1ª pessoa do singular (-ui)"
+   "terminacao": "1ª conjugação: perfeito do indicativo, 1ª pessoa do singular (-ui)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -48593,7 +48758,8 @@
    "conceitos": [
     "la-g009"
    ],
-   "terminacao": "1ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "1ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -48628,7 +48794,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -48665,7 +48832,8 @@
    "conceitos": [
     "la-g010"
    ],
-   "terminacao": "2ª conjugação: futuro do indicativo, 2ª pessoa do singular (-is)"
+   "terminacao": "2ª conjugação: futuro do indicativo, 2ª pessoa do singular (-is)",
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -48692,7 +48860,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -48720,7 +48889,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo"
+   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -48755,7 +48925,8 @@
    "conceitos": [
     "la-g013"
    ],
-   "terminacao": "3ª conjugação: infinitivo presente (-re)"
+   "terminacao": "3ª conjugação: infinitivo presente (-re)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -48794,7 +48965,8 @@
    "conceitos": [
     "la-g001",
     "la-g019"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -48831,7 +49003,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -48980,7 +49153,8 @@
    "conceitos": [
     "la-g001",
     "la-g014"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -49012,7 +49186,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49047,7 +49222,8 @@
    "conceitos": [
     "la-g012"
    ],
-   "terminacao": "1ª conjugação: presente do subjuntivo, 3ª pessoa do singular (-et)"
+   "terminacao": "1ª conjugação: presente do subjuntivo, 3ª pessoa do singular (-et)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49075,7 +49251,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -49102,7 +49279,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -49131,7 +49309,8 @@
     "la-g004",
     "la-g005"
    ],
-   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo"
+   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -49169,7 +49348,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do singular (-at)"
+   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do singular (-at)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49206,7 +49386,8 @@
    ],
    "conceitos": [
     "la-g012"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49245,7 +49426,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do singular (-at)"
+   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do singular (-at)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49272,7 +49454,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -49299,7 +49482,8 @@
    "conceitos": [
     "la-g002"
    ],
-   "terminacao": "2ª declinação: -e → singular: vocativo"
+   "terminacao": "2ª declinação: -e → singular: vocativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -49461,7 +49645,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do singular (-ra)"
+   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do singular (-ra)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49494,7 +49679,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do plural (-te)"
+   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do plural (-te)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49529,7 +49715,8 @@
     "la-g001",
     "la-g014"
    ],
-   "terminacao": "1ª conjugação: particípio perfeito, nominativo masculino singular (-us)"
+   "terminacao": "1ª conjugação: particípio perfeito, nominativo masculino singular (-us)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49560,7 +49747,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -49595,7 +49783,8 @@
    ],
    "conceitos": [
     "la-g007"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -49629,7 +49818,8 @@
    "conceitos": [
     "la-g001",
     "la-g014"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -49664,7 +49854,8 @@
    "conceitos": [
     "la-g007",
     "la-g015"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -49698,7 +49889,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -49725,7 +49917,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "1ª declinação: -am → singular: acusativo"
+   "terminacao": "1ª declinação: -am → singular: acusativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -49787,7 +49980,8 @@
    "conceitos": [
     "la-g013"
    ],
-   "terminacao": "1ª conjugação: infinitivo presente (-re)"
+   "terminacao": "1ª conjugação: infinitivo presente (-re)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49821,7 +50015,8 @@
    ],
    "conceitos": [
     "la-g007"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49856,7 +50051,8 @@
    "conceitos": [
     "la-g009"
    ],
-   "terminacao": "1ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "1ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49892,7 +50088,8 @@
    "conceitos": [
     "la-g009"
    ],
-   "terminacao": "1ª conjugação: perfeito do indicativo, 1ª pessoa do singular (-ui)"
+   "terminacao": "1ª conjugação: perfeito do indicativo, 1ª pessoa do singular (-ui)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -49954,7 +50151,8 @@
    "conceitos": [
     "la-g013"
    ],
-   "terminacao": "3ª conjugação: infinitivo presente (-re)"
+   "terminacao": "3ª conjugação: infinitivo presente (-re)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -49995,7 +50193,8 @@
    ],
    "conceitos": [
     "la-g012"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -50027,7 +50226,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "3ª conjugação: imperativo presente, 2ª pessoa do plural (-te)"
+   "terminacao": "3ª conjugação: imperativo presente, 2ª pessoa do plural (-te)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -50061,7 +50261,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -50100,7 +50301,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 2ª pessoa do singular (-is)"
+   "terminacao": "3ª conjugação: presente do indicativo, 2ª pessoa do singular (-is)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -50139,7 +50341,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -50176,7 +50379,8 @@
    ],
    "conceitos": [
     "la-g007"
-   ]
+   ],
+   "grupoConceito": "la-g029"
   },
   {
    "idioma": "la",
@@ -50213,7 +50417,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "1ª conjugação: presente do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -50250,7 +50455,8 @@
    "conceitos": [
     "la-g007",
     "la-g015"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -50753,7 +50959,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -50785,7 +50992,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -50821,7 +51029,8 @@
    "conceitos": [
     "la-g010"
    ],
-   "terminacao": "1ª conjugação: futuro do indicativo, 1ª pessoa do singular (-bo)"
+   "terminacao": "1ª conjugação: futuro do indicativo, 1ª pessoa do singular (-bo)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -50854,7 +51063,8 @@
    "conceitos": [
     "la-g013"
    ],
-   "terminacao": "1ª conjugação: infinitivo presente (-re)"
+   "terminacao": "1ª conjugação: infinitivo presente (-re)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -50891,7 +51101,8 @@
    ],
    "conceitos": [
     "la-g007"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -50930,7 +51141,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -50968,7 +51180,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -50995,7 +51208,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "2ª declinação: -um → singular: acusativo"
+   "terminacao": "2ª declinação: -um → singular: acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -51418,7 +51632,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "2ª declinação: -os → plural: acusativo"
+   "terminacao": "2ª declinação: -os → plural: acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -51445,7 +51660,8 @@
    "conceitos": [
     "la-g005",
     "la-g006"
-   ]
+   ],
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -51487,7 +51703,8 @@
    "conceitos": [
     "la-g001",
     "la-g014"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -51525,7 +51742,8 @@
    ],
    "conceitos": [
     "la-g008"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -51563,7 +51781,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -51590,7 +51809,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -51684,7 +51904,8 @@
     "la-g001",
     "la-g014"
    ],
-   "terminacao": "1ª conjugação: particípio perfeito, nominativo masculino singular (-us)"
+   "terminacao": "1ª conjugação: particípio perfeito, nominativo masculino singular (-us)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -51710,7 +51931,8 @@
    ],
    "conceitos": [
     "la-g004"
-   ]
+   ],
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -51737,7 +51959,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "1ª declinação: -am → singular: acusativo"
+   "terminacao": "1ª declinação: -am → singular: acusativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -51930,7 +52153,8 @@
     "la-g004",
     "la-g005"
    ],
-   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo"
+   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -51957,7 +52181,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "1ª declinação: -am → singular: acusativo"
+   "terminacao": "1ª declinação: -am → singular: acusativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -51986,7 +52211,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -52029,7 +52255,8 @@
    "conceitos": [
     "la-g005",
     "la-g019"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -52064,7 +52291,8 @@
    "conceitos": [
     "la-g001",
     "la-g019"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -52101,7 +52329,8 @@
    ],
    "conceitos": [
     "la-g013"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -52135,7 +52364,8 @@
    "conceitos": [
     "la-g009"
    ],
-   "terminacao": "2ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "2ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -52250,7 +52480,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -52674,7 +52905,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -52708,7 +52940,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -52734,7 +52967,8 @@
    ],
    "conceitos": [
     "la-g006"
-   ]
+   ],
+   "grupoConceito": "la-g025"
   },
   {
    "idioma": "la",
@@ -52762,7 +52996,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -52801,7 +53036,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)"
+   "terminacao": "3ª conjugação: presente do indicativo, 3ª pessoa do singular (-it)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -52829,7 +53065,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "3ª declinação, neutro: -a → plural: nominativo ou acusativo"
+   "terminacao": "3ª declinação, neutro: -a → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -52925,7 +53162,8 @@
     "la-g004",
     "la-g005"
    ],
-   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo"
+   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -52953,7 +53191,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "1ª declinação: -is → plural: dativo ou ablativo"
+   "terminacao": "1ª declinação: -is → plural: dativo ou ablativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -52992,7 +53231,8 @@
    "conceitos": [
     "la-g007"
    ],
-   "terminacao": "3ª conjugação: presente do indicativo, 2ª pessoa do singular (-is)"
+   "terminacao": "3ª conjugação: presente do indicativo, 2ª pessoa do singular (-is)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -53020,7 +53260,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -53057,7 +53298,8 @@
    ],
    "conceitos": [
     "la-g012"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -53086,7 +53328,8 @@
     "la-g004",
     "la-g005"
    ],
-   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo"
+   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -53112,7 +53355,8 @@
    ],
    "conceitos": [
     "la-g003"
-   ]
+   ],
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -53205,7 +53449,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "1ª declinação: -am → singular: acusativo"
+   "terminacao": "1ª declinação: -am → singular: acusativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -53233,7 +53478,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "1ª declinação: -is → plural: dativo ou ablativo"
+   "terminacao": "1ª declinação: -is → plural: dativo ou ablativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -53261,7 +53507,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "2ª declinação, neutro: -a → plural: nominativo ou acusativo"
+   "terminacao": "2ª declinação, neutro: -a → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -53289,7 +53536,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação, neutro: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -53317,7 +53565,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "3ª declinação, neutro: -a → plural: nominativo ou acusativo"
+   "terminacao": "3ª declinação, neutro: -a → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -53344,7 +53593,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação, neutro: -e → singular: ablativo"
+   "terminacao": "3ª declinação, neutro: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -53371,7 +53621,8 @@
    "conceitos": [
     "la-g004"
    ],
-   "terminacao": "3ª declinação, neutro: -is → singular: genitivo"
+   "terminacao": "3ª declinação, neutro: -is → singular: genitivo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -53489,7 +53740,8 @@
    ],
    "conceitos": [
     "la-g011"
-   ]
+   ],
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -53525,7 +53777,8 @@
     "la-g001",
     "la-g014"
    ],
-   "terminacao": "1ª conjugação: particípio perfeito, nominativo masculino singular (-us)"
+   "terminacao": "1ª conjugação: particípio perfeito, nominativo masculino singular (-us)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -53827,7 +54080,8 @@
     "la-g004",
     "la-g005"
    ],
-   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo"
+   "terminacao": "1ª declinação: -ae → singular: genitivo ou dativo; plural: nominativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -53854,7 +54108,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "1ª declinação: -am → singular: acusativo"
+   "terminacao": "1ª declinação: -am → singular: acusativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -53967,7 +54222,8 @@
    "conceitos": [
     "la-g013"
    ],
-   "terminacao": "3ª conjugação: infinitivo presente (-re)"
+   "terminacao": "3ª conjugação: infinitivo presente (-re)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -54005,7 +54261,8 @@
    ],
    "conceitos": [
     "la-g017"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -54041,7 +54298,8 @@
    "conceitos": [
     "la-g001",
     "la-g014"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -54068,7 +54326,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -54095,7 +54354,8 @@
    "conceitos": [
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -em → singular: acusativo"
+   "terminacao": "3ª declinação: -em → singular: acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -54122,7 +54382,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação, neutro: -e → singular: ablativo"
+   "terminacao": "3ª declinação, neutro: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -54150,7 +54411,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "1ª declinação: -is → plural: dativo ou ablativo"
+   "terminacao": "1ª declinação: -is → plural: dativo ou ablativo",
+   "grupoConceito": "la-g021"
   },
   {
    "idioma": "la",
@@ -54185,7 +54447,8 @@
    "conceitos": [
     "la-g011"
    ],
-   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do singular (-ra)"
+   "terminacao": "1ª conjugação: imperativo presente, 2ª pessoa do singular (-ra)",
+   "grupoConceito": "la-g026"
   },
   {
    "idioma": "la",
@@ -54212,7 +54475,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação, neutro: -e → singular: ablativo"
+   "terminacao": "3ª declinação, neutro: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -54248,7 +54512,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -54287,7 +54552,8 @@
    "conceitos": [
     "la-g006",
     "la-g014"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -54408,7 +54674,8 @@
    "conceitos": [
     "la-g001",
     "la-g019"
-   ]
+   ],
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -54447,7 +54714,8 @@
    "conceitos": [
     "la-g009"
    ],
-   "terminacao": "2ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)"
+   "terminacao": "2ª conjugação: perfeito do indicativo, 3ª pessoa do plural (-nt)",
+   "grupoConceito": "la-g027"
   },
   {
    "idioma": "la",
@@ -54482,7 +54750,8 @@
    "conceitos": [
     "la-g013"
    ],
-   "terminacao": "3ª conjugação: infinitivo presente (-re)"
+   "terminacao": "3ª conjugação: infinitivo presente (-re)",
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -54509,7 +54778,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "4ª declinação: -u → singular: ablativo"
+   "terminacao": "4ª declinação: -u → singular: ablativo",
+   "grupoConceito": "la-g024"
   },
   {
    "idioma": "la",
@@ -54563,7 +54833,8 @@
    "conceitos": [
     "la-g006"
    ],
-   "terminacao": "3ª declinação: -e → singular: ablativo"
+   "terminacao": "3ª declinação: -e → singular: ablativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -54661,7 +54932,8 @@
     "la-g001",
     "la-g003"
    ],
-   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo"
+   "terminacao": "3ª declinação: -es → plural: nominativo ou acusativo",
+   "grupoConceito": "la-g023"
   },
   {
    "idioma": "la",
@@ -54702,7 +54974,8 @@
    ],
    "conceitos": [
     "la-g018"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -54740,7 +55013,8 @@
    ],
    "conceitos": [
     "la-g009"
-   ]
+   ],
+   "grupoConceito": "la-g028"
   },
   {
    "idioma": "la",
@@ -54796,7 +55070,8 @@
    "conceitos": [
     "la-g005",
     "la-g006"
-   ]
+   ],
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -54824,7 +55099,8 @@
     "la-g005",
     "la-g006"
    ],
-   "terminacao": "2ª declinação: -o → singular: dativo ou ablativo"
+   "terminacao": "2ª declinação: -o → singular: dativo ou ablativo",
+   "grupoConceito": "la-g022"
   },
   {
    "idioma": "la",
@@ -54886,25 +55162,25 @@
    "idioma": "la",
    "id": "la-q001",
    "tipo": "compreensao",
-   "la": "Lupum canis videt.",
+   "la": "Dominum canis videt.",
    "pergunta": "Quem vê?",
    "pt": "o cão",
    "aceitas": [
     "cão"
    ],
    "distratores": [
-    "o lobo",
+    "o dono",
     "o pastor",
     "o cordeiro",
     "o homem"
    ],
-   "nota": "canis: nominativo, o sujeito: quem vê.\nlupum: acusativo, o objeto: quem é visto.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nota": "canis: nominativo, o sujeito: quem vê.\ndominum: acusativo, o objeto: quem é visto.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p137",
     "la-p039",
     "la-g001",
@@ -54918,11 +55194,11 @@
    "idioma": "la",
    "id": "la-q002",
    "tipo": "compreensao",
-   "la": "Lupum canis videt.",
+   "la": "Dominum canis videt.",
    "pergunta": "Quem é visto?",
-   "pt": "o lobo",
+   "pt": "o dono",
    "aceitas": [
-    "lobo"
+    "dono"
    ],
    "distratores": [
     "o cão",
@@ -54930,13 +55206,13 @@
     "o cordeiro",
     "o homem"
    ],
-   "nota": "lupum: acusativo, o objeto: quem é visto.\ncanis: nominativo, o sujeito: quem vê.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nota": "dominum: acusativo, o objeto: quem é visto.\ncanis: nominativo, o sujeito: quem vê.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p137",
     "la-p039",
     "la-g001",
@@ -54950,25 +55226,25 @@
    "idioma": "la",
    "id": "la-q003",
    "tipo": "compreensao",
-   "la": "Lupe, canis videt.",
+   "la": "Domine, canis videt.",
    "pergunta": "Com quem se fala?",
-   "pt": "com o lobo",
+   "pt": "com o dono",
    "aceitas": [
-    "lobo"
+    "dono"
    ],
    "distratores": [
     "com o cão",
     "com o pastor",
-    "com o cordeiro",
+    "com o pai",
     "com o homem"
    ],
-   "nota": "Lupe: vocativo, a quem se fala (o -e da 2ª declinação).\ncanis: nominativo, o sujeito: o cão vê.",
+   "nota": "Domine: vocativo, a quem se fala (o -e da 2ª declinação).\ncanis: nominativo, o sujeito: o cão vê.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p137",
     "la-p039",
     "la-g001",
@@ -55044,7 +55320,7 @@
    "idioma": "la",
    "id": "la-q006",
    "tipo": "compreensao",
-   "la": "Patris mater amat.",
+   "la": "Patris matrem amat.",
    "pergunta": "De quem é a mãe?",
    "pt": "do pai",
    "aceitas": [
@@ -55054,9 +55330,9 @@
     "do filho",
     "do homem",
     "do pastor",
-    "do lobo"
+    "do dono"
    ],
-   "nota": "patris: genitivo, de quem é: a mãe do pai.\nmater: nominativo, o sujeito: a mãe do pai ama.",
+   "nota": "patris: genitivo, de quem é: a mãe do pai.\nmatrem: acusativo, o objeto: quem é amada; o sujeito está no verbo: (ele ou ela) ama a mãe do pai.",
    "nivel": "A1",
    "tags": [
     "compreensão"
@@ -55075,26 +55351,26 @@
    "idioma": "la",
    "id": "la-q007",
    "tipo": "compreensao",
-   "la": "Pastorem lupus fugit.",
+   "la": "Hominem canis fugit.",
    "pergunta": "Quem foge?",
-   "pt": "o lobo",
+   "pt": "o cão",
    "aceitas": [
-    "lobo"
+    "cão"
    ],
    "distratores": [
+    "o homem",
+    "o lobo",
     "o pastor",
-    "o cão",
-    "o cordeiro",
-    "o homem"
+    "o cordeiro"
    ],
-   "nota": "lupus: nominativo, o sujeito: quem foge.\npastorem: acusativo, de quem se foge (fugio pede o acusativo).\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nota": "canis: nominativo, o sujeito: quem foge.\nhominem: acusativo, de quem se foge (fugio pede o acusativo).\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p005",
-    "la-p153",
+    "la-p015",
+    "la-p137",
     "la-p127",
     "la-g001",
     "la-g003",
@@ -55106,26 +55382,26 @@
    "idioma": "la",
    "id": "la-q008",
    "tipo": "compreensao",
-   "la": "Pastorem lupus fugit.",
+   "la": "Hominem canis fugit.",
    "pergunta": "De quem se foge?",
-   "pt": "do pastor",
+   "pt": "do homem",
    "aceitas": [
-    "pastor"
+    "homem"
    ],
    "distratores": [
-    "do lobo",
     "do cão",
-    "do cordeiro",
-    "do homem"
+    "do lobo",
+    "do pastor",
+    "do cordeiro"
    ],
-   "nota": "pastorem: acusativo; com fugio, é de quem se foge.\nlupus: nominativo, o sujeito: o lobo foge.",
+   "nota": "hominem: acusativo; com fugio, é de quem se foge.\ncanis: nominativo, o sujeito: o cão foge.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p005",
-    "la-p153",
+    "la-p015",
+    "la-p137",
     "la-p127",
     "la-g001",
     "la-g003",
@@ -55236,27 +55512,27 @@
    "idioma": "la",
    "id": "la-q012",
    "tipo": "compreensao",
-   "la": "Guttam lapis cavat.",
-   "pergunta": "O que cava?",
-   "pt": "a pedra",
+   "la": "Agnum pastor sequitur.",
+   "pergunta": "Quem segue?",
+   "pt": "o pastor",
    "aceitas": [
-    "pedra"
+    "pastor"
    ],
    "distratores": [
-    "a gota",
-    "a água",
-    "a chuva",
-    "o rio"
+    "o cordeiro",
+    "o cão",
+    "o lobo",
+    "o homem"
    ],
-   "nota": "lapis: nominativo, o sujeito: o que cava.\nguttam: acusativo, o objeto: o que é cavado.\nNo provérbio é o contrário: Gutta cavat lapidem, a gota cava a pedra.",
+   "nota": "pastor: nominativo, o sujeito: quem segue.\nagnum: acusativo, o objeto: quem é seguido.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p150",
-    "la-p152",
-    "la-p151",
+    "la-p181",
+    "la-p005",
+    "la-p065",
     "la-g001",
     "la-g003",
     "la-g004"
@@ -55393,25 +55669,25 @@
    "idioma": "la",
    "id": "la-q017",
    "tipo": "compreensao",
-   "la": "Lupe, pastor te videt.",
+   "la": "Domine, pastor te videt.",
    "pergunta": "Quem vê?",
    "pt": "o pastor",
    "aceitas": [
     "pastor"
    ],
    "distratores": [
-    "o lobo",
+    "o patrão",
     "o cão",
     "o cordeiro",
     "o pai"
    ],
-   "nota": "pastor: nominativo, o sujeito: quem vê.\nLupe: vocativo, a quem se fala: lobo, o pastor te vê.",
+   "nota": "pastor: nominativo, o sujeito: quem vê.\nDomine: vocativo, a quem se fala: patrão, o pastor te vê.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p005",
     "la-p007",
     "la-p039",
@@ -55426,25 +55702,25 @@
    "idioma": "la",
    "id": "la-q018",
    "tipo": "compreensao",
-   "la": "Lupi pastor te videt.",
+   "la": "Domini pastor te videt.",
    "pergunta": "De quem é o pastor?",
-   "pt": "do lobo",
+   "pt": "do patrão",
    "aceitas": [
-    "lobo"
+    "patrão"
    ],
    "distratores": [
-    "do cão",
-    "do cordeiro",
     "do pai",
-    "do homem"
+    "do filho",
+    "do homem",
+    "da mãe"
    ],
-   "nota": "lupi: genitivo, de quem é: o pastor do lobo.\npastor: nominativo, o sujeito: o pastor te vê.",
+   "nota": "domini: genitivo, de quem é: o pastor do patrão.\npastor: nominativo, o sujeito: o pastor te vê.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p153",
+    "la-p012",
     "la-p005",
     "la-p007",
     "la-p039",
@@ -55459,26 +55735,26 @@
    "idioma": "la",
    "id": "la-q019",
    "tipo": "compreensao",
-   "la": "Agnum lupus timet.",
+   "la": "Latronem canis timet.",
    "pergunta": "Quem tem medo?",
-   "pt": "o lobo",
+   "pt": "o cão",
    "aceitas": [
-    "lobo"
+    "cão"
    ],
    "distratores": [
-    "o cordeiro",
-    "o cão",
+    "o ladrão",
+    "o lobo",
     "o pastor",
     "o homem"
    ],
-   "nota": "lupus: nominativo, o sujeito: quem teme.\nagnum: acusativo, o objeto: quem é temido.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
+   "nota": "canis: nominativo, o sujeito: quem teme.\nlatronem: acusativo, o objeto: quem é temido.\nEm latim a ordem não diz quem faz o quê; quem diz é a terminação.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p181",
-    "la-p153",
+    "la-p191",
+    "la-p137",
     "la-p203",
     "la-g001",
     "la-g003",
@@ -55490,26 +55766,26 @@
    "idioma": "la",
    "id": "la-q020",
    "tipo": "compreensao",
-   "la": "Agnus lupum timet.",
-   "pergunta": "Quem é temido?",
-   "pt": "o lobo",
+   "la": "Latronis canem timet.",
+   "pergunta": "De quem é o cão?",
+   "pt": "do ladrão",
    "aceitas": [
-    "lobo"
+    "ladrão"
    ],
    "distratores": [
-    "o cordeiro",
-    "o cão",
-    "o pastor",
-    "o homem"
+    "do pastor",
+    "do homem",
+    "do dono",
+    "da mãe"
    ],
-   "nota": "lupum: acusativo, o objeto: quem é temido.\nagnus: nominativo, o sujeito: o cordeiro teme.",
+   "nota": "latronis: genitivo, de quem é: o cão do ladrão.\ncanem: acusativo, o objeto: quem é temido; o sujeito está no verbo: (ele ou ela) teme.",
    "nivel": "A1",
    "tags": [
     "compreensão"
    ],
    "requerTodas": [
-    "la-p181",
-    "la-p153",
+    "la-p191",
+    "la-p137",
     "la-p203",
     "la-g001",
     "la-g003",
@@ -57201,6 +57477,2098 @@
     "herança"
    ],
    "requerTodas": []
+  },
+  {
+   "idioma": "la",
+   "id": "la-g021",
+   "tipo": "conceito",
+   "familia": "declinacao",
+   "la": "1ª declinação",
+   "pt": "1ª declinação",
+   "aceitas": [
+    "1a declinação",
+    "primeira declinação",
+    "primeira",
+    "1"
+   ],
+   "distratores": [
+    "2ª declinação",
+    "3ª declinação",
+    "4ª declinação",
+    "5ª declinação"
+   ],
+   "nota": "Nomes com o genitivo em -ae, quase todos femininos, com o nominativo em -a: rosa, rosae; aqua, aquae; terra, terrae.\nSingular: rosa (nom.), rosa (voc.), rosam (ac.), rosae (gen.), rosae (dat.), rosa (abl.).\nPlural: rosae, rosae, rosas, rosarum, rosis, rosis.\nO que a entrega é o genitivo do dicionário: -a, -ae.",
+   "nivel": "A1",
+   "tags": [
+    "gramática"
+   ],
+   "grupo": "1ª declinação",
+   "exemplos": [
+    {
+     "la": "via, viae, f.",
+     "w": "via",
+     "lema": "la-p008",
+     "fonte": "dicionário",
+     "exp": "via, viae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "vita, vitae, f.",
+     "w": "vita",
+     "lema": "la-p011",
+     "fonte": "dicionário",
+     "exp": "vita, vitae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "gratia, gratiae, f.",
+     "w": "gratia",
+     "lema": "la-p050",
+     "fonte": "dicionário",
+     "exp": "gratia, gratiae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "gloria, gloriae, f.",
+     "w": "gloria",
+     "lema": "la-p051",
+     "fonte": "dicionário",
+     "exp": "gloria, gloriae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "terra, terrae, f.",
+     "w": "terra",
+     "lema": "la-p096",
+     "fonte": "dicionário",
+     "exp": "terra, terrae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "hora, horae, f.",
+     "w": "hora",
+     "lema": "la-p118",
+     "fonte": "dicionário",
+     "exp": "hora, horae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "alea, aleae, f.",
+     "w": "alea",
+     "lema": "la-p141",
+     "fonte": "dicionário",
+     "exp": "alea, aleae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "fortuna, fortunae, f.",
+     "w": "fortuna",
+     "lema": "la-p148",
+     "fonte": "dicionário",
+     "exp": "fortuna, fortunae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "gutta, guttae, f.",
+     "w": "gutta",
+     "lema": "la-p150",
+     "fonte": "dicionário",
+     "exp": "gutta, guttae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "patria, patriae, f.",
+     "w": "patria",
+     "lema": "la-p161",
+     "fonte": "dicionário",
+     "exp": "patria, patriae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "regina, reginae, f.",
+     "w": "regina",
+     "lema": "la-p172",
+     "fonte": "dicionário",
+     "exp": "regina, reginae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "causa, causae, f.",
+     "w": "causa",
+     "lema": "la-p194",
+     "fonte": "dicionário",
+     "exp": "causa, causae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "aqua, aquae, f.",
+     "w": "aqua",
+     "lema": "la-p199",
+     "fonte": "dicionário",
+     "exp": "aqua, aquae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "ora, orae, f.",
+     "w": "ora",
+     "lema": "la-p210",
+     "fonte": "dicionário",
+     "exp": "ora, orae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "ira, irae, f.",
+     "w": "ira",
+     "lema": "la-p223",
+     "fonte": "dicionário",
+     "exp": "ira, irae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "musa, musae, f.",
+     "w": "musa",
+     "lema": "la-p232",
+     "fonte": "dicionário",
+     "exp": "musa, musae: o genitivo em -ae, 1ª declinação.",
+     "distratores": [
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    }
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-g022",
+   "tipo": "conceito",
+   "familia": "declinacao",
+   "la": "2ª declinação",
+   "pt": "2ª declinação",
+   "aceitas": [
+    "2a declinação",
+    "segunda declinação",
+    "segunda",
+    "2"
+   ],
+   "distratores": [
+    "1ª declinação",
+    "3ª declinação",
+    "4ª declinação",
+    "5ª declinação"
+   ],
+   "nota": "Nomes com o genitivo em -i: os masculinos em -us ou -er (dominus, domini; puer, pueri) e os neutros em -um (verbum, verbi).\nSingular: dominus, domine, dominum, domini, domino, domino (nom., voc., ac., gen., dat., abl.).\nPlural: domini, domini, dominos, dominorum, dominis, dominis.\nNo neutro, nominativo e acusativo iguais: verbum no singular, verba no plural.",
+   "nivel": "A1",
+   "tags": [
+    "gramática"
+   ],
+   "grupo": "2ª declinação",
+   "exemplos": [
+    {
+     "la": "deus, dei, m.",
+     "w": "deus",
+     "lema": "la-p001",
+     "fonte": "dicionário",
+     "exp": "deus, dei: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "dominus, domini, m.",
+     "w": "dominus",
+     "lema": "la-p012",
+     "fonte": "dicionário",
+     "exp": "dominus, domini: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "vir, viri, m.",
+     "w": "vir",
+     "lema": "la-p027",
+     "fonte": "dicionário",
+     "exp": "vir, viri: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "mundus, mundi, m.",
+     "w": "mundus",
+     "lema": "la-p042",
+     "fonte": "dicionário",
+     "exp": "mundus, mundi: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "filius, filii, m.",
+     "w": "filius",
+     "lema": "la-p043",
+     "fonte": "dicionário",
+     "exp": "filius, filii: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "principium, principii, n.",
+     "w": "principium",
+     "lema": "la-p056",
+     "fonte": "dicionário",
+     "exp": "principium, principii: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "verbum, verbi, n.",
+     "w": "verbum",
+     "lema": "la-p057",
+     "fonte": "dicionário",
+     "exp": "verbum, verbi: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "saeculum, saeculi, n.",
+     "w": "saeculum",
+     "lema": "la-p088",
+     "fonte": "dicionário",
+     "exp": "saeculum, saeculi: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "caelum, caeli, n.",
+     "w": "caelum",
+     "lema": "la-p090",
+     "fonte": "dicionário",
+     "exp": "caelum, caeli: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "regnum, regni, n.",
+     "w": "regnum",
+     "lema": "la-p094",
+     "fonte": "dicionário",
+     "exp": "regnum, regni: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "debitum, debiti, n.",
+     "w": "debitum",
+     "lema": "la-p102",
+     "fonte": "dicionário",
+     "exp": "debitum, debiti: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "malum, mali, n.",
+     "w": "malum",
+     "lema": "la-p109",
+     "fonte": "dicionário",
+     "exp": "malum, mali: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "vinum, vini, n.",
+     "w": "vinum",
+     "lema": "la-p144",
+     "fonte": "dicionário",
+     "exp": "vinum, vini: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "lupus, lupi, m.",
+     "w": "lupus",
+     "lema": "la-p153",
+     "fonte": "dicionário",
+     "exp": "lupus, lupi: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "bellum, belli, n.",
+     "w": "bellum",
+     "lema": "la-p157",
+     "fonte": "dicionário",
+     "exp": "bellum, belli: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "rivus, rivi, m.",
+     "w": "rivus",
+     "lema": "la-p179",
+     "fonte": "dicionário",
+     "exp": "rivus, rivi: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "agnus, agni, m.",
+     "w": "agnus",
+     "lema": "la-p181",
+     "fonte": "dicionário",
+     "exp": "agnus, agni: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "iurgium, iurgii, n.",
+     "w": "iurgium",
+     "lema": "la-p193",
+     "fonte": "dicionário",
+     "exp": "iurgium, iurgii: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "fatum, fati, n.",
+     "w": "fatum",
+     "lema": "la-p211",
+     "fonte": "dicionário",
+     "exp": "fatum, fati: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "animus, animi, m.",
+     "w": "animus",
+     "lema": "la-p249",
+     "fonte": "dicionário",
+     "exp": "animus, animi: o genitivo em -i, 2ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "3ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    }
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-g023",
+   "tipo": "conceito",
+   "familia": "declinacao",
+   "la": "3ª declinação",
+   "pt": "3ª declinação",
+   "aceitas": [
+    "3a declinação",
+    "terceira declinação",
+    "terceira",
+    "3"
+   ],
+   "distratores": [
+    "1ª declinação",
+    "2ª declinação",
+    "4ª declinação",
+    "5ª declinação"
+   ],
+   "nota": "Nomes com o genitivo em -is, de nominativo muito variado: rex, regis; lux, lucis; pater, patris; corpus, corporis (neutro). O radical sai do genitivo: reg-, luc-, patr-.\nSingular: rex, rex, regem, regis, regi, rege (nom., voc., ac., gen., dat., abl.).\nPlural: reges, reges, reges, regum, regibus, regibus.\nNo neutro: corpus, corpus, corpus no singular; corpora no plural.",
+   "nivel": "A1",
+   "tags": [
+    "gramática"
+   ],
+   "grupo": "3ª declinação",
+   "exemplos": [
+    {
+     "la": "caritas, caritatis, f.",
+     "w": "caritas",
+     "lema": "la-p002",
+     "fonte": "dicionário",
+     "exp": "caritas, caritatis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "pastor, pastoris, m.",
+     "w": "pastor",
+     "lema": "la-p005",
+     "fonte": "dicionário",
+     "exp": "pastor, pastoris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "veritas, veritatis, f.",
+     "w": "veritas",
+     "lema": "la-p010",
+     "fonte": "dicionário",
+     "exp": "veritas, veritatis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "homo, hominis, m.",
+     "w": "homo",
+     "lema": "la-p015",
+     "fonte": "dicionário",
+     "exp": "homo, hominis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "gens, gentis, f.",
+     "w": "gens",
+     "lema": "la-p020",
+     "fonte": "dicionário",
+     "exp": "gens, gentis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "amor, amoris, m.",
+     "w": "amor",
+     "lema": "la-p031",
+     "fonte": "dicionário",
+     "exp": "amor, amoris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "lux, lucis, f.",
+     "w": "lux",
+     "lema": "la-p041",
+     "fonte": "dicionário",
+     "exp": "lux, lucis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "vanitas, vanitatis, f.",
+     "w": "vanitas",
+     "lema": "la-p045",
+     "fonte": "dicionário",
+     "exp": "vanitas, vanitatis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "pax, pacis, f.",
+     "w": "pax",
+     "lema": "la-p048",
+     "fonte": "dicionário",
+     "exp": "pax, pacis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "mens, mentis, f.",
+     "w": "mens",
+     "lema": "la-p061",
+     "fonte": "dicionário",
+     "exp": "mens, mentis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "corpus, corporis, n.",
+     "w": "corpus",
+     "lema": "la-p063",
+     "fonte": "dicionário",
+     "exp": "corpus, corporis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "pater, patris, m.",
+     "w": "pater",
+     "lema": "la-p072",
+     "fonte": "dicionário",
+     "exp": "pater, patris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "nomen, nominis, n.",
+     "w": "nomen",
+     "lema": "la-p092",
+     "fonte": "dicionário",
+     "exp": "nomen, nominis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "voluntas, voluntatis, f.",
+     "w": "voluntas",
+     "lema": "la-p095",
+     "fonte": "dicionário",
+     "exp": "voluntas, voluntatis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "panis, panis, m.",
+     "w": "panis",
+     "lema": "la-p097",
+     "fonte": "dicionário",
+     "exp": "panis, panis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "debitor, debitoris, m.",
+     "w": "debitor",
+     "lema": "la-p103",
+     "fonte": "dicionário",
+     "exp": "debitor, debitoris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "tentatio, tentationis, f.",
+     "w": "tentatio",
+     "lema": "la-p106",
+     "fonte": "dicionário",
+     "exp": "tentatio, tentationis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "mulier, mulieris, f.",
+     "w": "mulier",
+     "lema": "la-p113",
+     "fonte": "dicionário",
+     "exp": "mulier, mulieris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "venter, ventris, m.",
+     "w": "venter",
+     "lema": "la-p115",
+     "fonte": "dicionário",
+     "exp": "venter, ventris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "mater, matris, f.",
+     "w": "mater",
+     "lema": "la-p116",
+     "fonte": "dicionário",
+     "exp": "mater, matris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "peccator, peccatoris, m.",
+     "w": "peccator",
+     "lema": "la-p117",
+     "fonte": "dicionário",
+     "exp": "peccator, peccatoris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "mors, mortis, f.",
+     "w": "mors",
+     "lema": "la-p119",
+     "fonte": "dicionário",
+     "exp": "mors, mortis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "tempus, temporis, n.",
+     "w": "tempus",
+     "lema": "la-p126",
+     "fonte": "dicionário",
+     "exp": "tempus, temporis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "ars, artis, f.",
+     "w": "ars",
+     "lema": "la-p128",
+     "fonte": "dicionário",
+     "exp": "ars, artis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "canis, canis, m. e f.",
+     "w": "canis",
+     "lema": "la-p137",
+     "fonte": "dicionário",
+     "exp": "canis, canis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "necessitas, necessitatis, f.",
+     "w": "necessitas",
+     "lema": "la-p147",
+     "fonte": "dicionário",
+     "exp": "necessitas, necessitatis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "lapis, lapidis, m.",
+     "w": "lapis",
+     "lema": "la-p152",
+     "fonte": "dicionário",
+     "exp": "lapis, lapidis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "sitis, sitis, f.",
+     "w": "sitis",
+     "lema": "la-p182",
+     "fonte": "dicionário",
+     "exp": "sitis, sitis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "faux, faucis, f.",
+     "w": "faux",
+     "lema": "la-p189",
+     "fonte": "dicionário",
+     "exp": "faux, faucis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "latro, latronis, m.",
+     "w": "latro",
+     "lema": "la-p191",
+     "fonte": "dicionário",
+     "exp": "latro, latronis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "liquor, liquoris, m.",
+     "w": "liquor",
+     "lema": "la-p208",
+     "fonte": "dicionário",
+     "exp": "liquor, liquoris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "litus, litoris, n.",
+     "w": "litus",
+     "lema": "la-p213",
+     "fonte": "dicionário",
+     "exp": "litus, litoris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "urbs, urbis, f.",
+     "w": "urbs",
+     "lema": "la-p227",
+     "fonte": "dicionário",
+     "exp": "urbs, urbis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "genus, generis, n.",
+     "w": "genus",
+     "lema": "la-p228",
+     "fonte": "dicionário",
+     "exp": "genus, generis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "numen, numinis, n.",
+     "w": "numen",
+     "lema": "la-p234",
+     "fonte": "dicionário",
+     "exp": "numen, numinis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "pietas, pietatis, f.",
+     "w": "pietas",
+     "lema": "la-p243",
+     "fonte": "dicionário",
+     "exp": "pietas, pietatis: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "labor, laboris, m.",
+     "w": "labor",
+     "lema": "la-p245",
+     "fonte": "dicionário",
+     "exp": "labor, laboris: o genitivo em -is, 3ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "4ª declinação",
+      "5ª declinação"
+     ]
+    }
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-g024",
+   "tipo": "conceito",
+   "familia": "declinacao",
+   "la": "4ª declinação",
+   "pt": "4ª declinação",
+   "aceitas": [
+    "4a declinação",
+    "quarta declinação",
+    "quarta",
+    "4"
+   ],
+   "distratores": [
+    "1ª declinação",
+    "2ª declinação",
+    "3ª declinação",
+    "5ª declinação"
+   ],
+   "nota": "Nomes com o genitivo em -us, quase todos masculinos em -us: spiritus, spiritus; manus, manus (feminino); fructus, fructus.\nSingular: spiritus, spiritus, spiritum, spiritus, spiritui, spiritu (nom., voc., ac., gen., dat., abl.).\nPlural: spiritus, spiritus, spiritus, spirituum, spiritibus, spiritibus.\nO nominativo é igual ao da 2ª (dominus); quem separa é o genitivo: domini × spiritus.",
+   "nivel": "A1",
+   "tags": [
+    "gramática"
+   ],
+   "grupo": "4ª declinação",
+   "exemplos": [
+    {
+     "la": "spiritus, spiritus, m.",
+     "w": "spiritus",
+     "fonte": "dicionário",
+     "fixo": true,
+     "lema": "la-p054",
+     "exp": "spiritus, spiritus: o genitivo em -us, 4ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "3ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "manus, manus, f.",
+     "w": "manus",
+     "fonte": "dicionário",
+     "fixo": true,
+     "lema": "la-p073",
+     "exp": "manus, manus: o genitivo em -us, 4ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "3ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "fructus, fructus, m.",
+     "w": "fructus",
+     "fonte": "dicionário",
+     "fixo": true,
+     "lema": "la-p114",
+     "exp": "fructus, fructus: o genitivo em -us, 4ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "3ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "haustus, haustus, m.",
+     "w": "haustus",
+     "lema": "la-p207",
+     "fonte": "dicionário",
+     "exp": "haustus, haustus: o genitivo em -us, 4ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "3ª declinação",
+      "5ª declinação"
+     ]
+    },
+    {
+     "la": "casus, casus, m.",
+     "w": "casus",
+     "lema": "la-p241",
+     "fonte": "dicionário",
+     "exp": "casus, casus: o genitivo em -us, 4ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "3ª declinação",
+      "5ª declinação"
+     ]
+    }
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-g025",
+   "tipo": "conceito",
+   "familia": "declinacao",
+   "la": "5ª declinação",
+   "pt": "5ª declinação",
+   "aceitas": [
+    "5a declinação",
+    "quinta declinação",
+    "quinta",
+    "5"
+   ],
+   "distratores": [
+    "1ª declinação",
+    "2ª declinação",
+    "3ª declinação",
+    "4ª declinação"
+   ],
+   "nota": "Nomes com o genitivo em -ei, femininos em -es (menos dies, que é masculino): dies, diei; res, rei; fides, fidei; spes, spei.\nSingular: dies, dies, diem, diei, diei, die (nom., voc., ac., gen., dat., abl.).\nPlural: dies, dies, dies, dierum, diebus, diebus.\nÉ a menor das declinações: pouco mais que estas palavras.",
+   "nivel": "A1",
+   "tags": [
+    "gramática"
+   ],
+   "grupo": "5ª declinação",
+   "exemplos": [
+    {
+     "la": "res, rei, f.",
+     "w": "res",
+     "fonte": "dicionário",
+     "fixo": true,
+     "exp": "res, rei: o genitivo em -ei, 5ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação"
+     ]
+    },
+    {
+     "la": "dies, diei, m.",
+     "w": "dies",
+     "fonte": "dicionário",
+     "fixo": true,
+     "lema": "la-p025",
+     "exp": "dies, diei: o genitivo em -ei, 5ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação"
+     ]
+    },
+    {
+     "la": "fides, fidei, f.",
+     "w": "fides",
+     "fonte": "dicionário",
+     "fixo": true,
+     "exp": "fides, fidei: o genitivo em -ei, 5ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação"
+     ]
+    },
+    {
+     "la": "spes, spei, f.",
+     "w": "spes",
+     "fonte": "dicionário",
+     "fixo": true,
+     "exp": "spes, spei: o genitivo em -ei, 5ª declinação.",
+     "distratores": [
+      "1ª declinação",
+      "2ª declinação",
+      "3ª declinação",
+      "4ª declinação"
+     ]
+    }
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-g026",
+   "tipo": "conceito",
+   "familia": "conjugacao",
+   "la": "1ª conjugação",
+   "pt": "1ª conjugação",
+   "aceitas": [
+    "1a conjugação",
+    "primeira conjugação",
+    "primeira",
+    "1"
+   ],
+   "distratores": [
+    "2ª conjugação",
+    "3ª conjugação",
+    "4ª conjugação",
+    "verbo irregular"
+   ],
+   "nota": "Verbos com o infinitivo em -are: amo, amare; laudo, laudare; voco, vocare. A vogal da conjugação é o a.\nPresente: amo, amas, amat, amamus, amatis, amant.\nImperfeito: amabam; futuro: amabo, amabis…; perfeito, quase sempre em -avi: amavi.",
+   "nivel": "A1",
+   "tags": [
+    "gramática"
+   ],
+   "grupo": "1ª conjugação",
+   "exemplos": [
+    {
+     "la": "laudo, laudare, laudavi, laudatum",
+     "w": "laudo",
+     "lema": "la-p018",
+     "fonte": "dicionário",
+     "exp": "laudo, laudare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "amo, amare, amavi, amatum",
+     "w": "amo",
+     "lema": "la-p037",
+     "fonte": "dicionário",
+     "exp": "amo, amare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "ambulo, ambulare, ambulavi, ambulatum",
+     "w": "ambulo",
+     "lema": "la-p067",
+     "fonte": "dicionário",
+     "exp": "ambulo, ambulare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "libero, liberare, liberavi, liberatum",
+     "w": "libero",
+     "lema": "la-p070",
+     "fonte": "dicionário",
+     "exp": "libero, liberare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "commendo, commendare, commendavi, commendatum",
+     "w": "commendo",
+     "lema": "la-p074",
+     "fonte": "dicionário",
+     "exp": "commendo, commendare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "oro, orare, oravi, oratum",
+     "w": "oro",
+     "lema": "la-p077",
+     "fonte": "dicionário",
+     "exp": "oro, orare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "sanctifico, sanctificare, sanctificavi, sanctificatum",
+     "w": "sanctifico",
+     "lema": "la-p091",
+     "fonte": "dicionário",
+     "exp": "sanctifico, sanctificare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "spiro, spirare, spiravi, spiratum",
+     "w": "spiro",
+     "lema": "la-p132",
+     "fonte": "dicionário",
+     "exp": "spiro, spirare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "spero, sperare, speravi, speratum",
+     "w": "spero",
+     "lema": "la-p133",
+     "fonte": "dicionário",
+     "exp": "spero, sperare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "cogito, cogitare, cogitavi, cogitatum",
+     "w": "cogito",
+     "lema": "la-p134",
+     "fonte": "dicionário",
+     "exp": "cogito, cogitare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "festino, festinare, festinavi, festinatum",
+     "w": "festino",
+     "lema": "la-p142",
+     "fonte": "dicionário",
+     "exp": "festino, festinare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "iuvo, iuvare, iuvi, iutum",
+     "w": "iuvo",
+     "lema": "la-p149",
+     "fonte": "dicionário",
+     "exp": "iuvo, iuvare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "cavo, cavare, cavavi, cavatum",
+     "w": "cavo",
+     "lema": "la-p151",
+     "fonte": "dicionário",
+     "exp": "cavo, cavare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "paro, parare, paravi, paratum",
+     "w": "paro",
+     "lema": "la-p156",
+     "fonte": "dicionário",
+     "exp": "paro, parare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "erro, errare, erravi, erratum",
+     "w": "erro",
+     "lema": "la-p163",
+     "fonte": "dicionário",
+     "exp": "erro, errare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "excrucio, excruciare, excruciavi, excruciatum",
+     "w": "excrucio",
+     "lema": "la-p170",
+     "fonte": "dicionário",
+     "exp": "excrucio, excruciare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "porto, portare, portavi, portatum",
+     "w": "porto",
+     "lema": "la-p176",
+     "fonte": "dicionário",
+     "exp": "porto, portare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "sto, stare, steti, statum",
+     "w": "sto",
+     "lema": "la-p185",
+     "fonte": "dicionário",
+     "exp": "sto, stare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "incito, incitare, incitavi, incitatum",
+     "w": "incito",
+     "lema": "la-p192",
+     "fonte": "dicionário",
+     "exp": "incito, incitare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "iacto, iactare, iactavi, iactatum",
+     "w": "iacto",
+     "lema": "la-p216",
+     "fonte": "dicionário",
+     "exp": "iacto, iactare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "memoro, memorare, memoravi, memoratum",
+     "w": "memoro",
+     "lema": "la-p233",
+     "fonte": "dicionário",
+     "exp": "memoro, memorare: o infinitivo em -are, 1ª conjugação.",
+     "distratores": [
+      "2ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    }
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-g027",
+   "tipo": "conceito",
+   "familia": "conjugacao",
+   "la": "2ª conjugação",
+   "pt": "2ª conjugação",
+   "aceitas": [
+    "2a conjugação",
+    "segunda conjugação",
+    "segunda",
+    "2"
+   ],
+   "distratores": [
+    "1ª conjugação",
+    "3ª conjugação",
+    "4ª conjugação",
+    "verbo irregular"
+   ],
+   "nota": "Verbos com o presente em -eo e o infinitivo em -ere, com o e longo: habeo, habere; timeo, timere; video, videre. A vogal da conjugação é o e.\nPresente: habeo, habes, habet, habemus, habetis, habent.\nImperfeito: habebam; futuro: habebo, habebis… (como na 1ª, em -bo).\nO que a separa da 3ª é o -eo da 1ª pessoa: timeo × credo.",
+   "nivel": "A1",
+   "tags": [
+    "gramática"
+   ],
+   "grupo": "2ª conjugação",
+   "exemplos": [
+    {
+     "la": "habeo, habere, habui, habitum",
+     "w": "habeo",
+     "fonte": "dicionário",
+     "fixo": true,
+     "exp": "habeo, habere: o presente em -eo e o infinitivo em -ere, 2ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "timeo, timere, timui",
+     "w": "timeo",
+     "fonte": "dicionário",
+     "fixo": true,
+     "lema": "la-p203",
+     "exp": "timeo, timere: o presente em -eo e o infinitivo em -ere, 2ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "video, videre, vidi, visum",
+     "w": "video",
+     "fonte": "dicionário",
+     "fixo": true,
+     "lema": "la-p039",
+     "exp": "video, videre: o presente em -eo e o infinitivo em -ere, 2ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "caveo, cavere, cavi, cautum",
+     "w": "caveo",
+     "lema": "la-p136",
+     "fonte": "dicionário",
+     "exp": "caveo, cavere: o presente em -eo e o infinitivo em -ere, 2ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "doceo, docere, docui, doctum",
+     "w": "doceo",
+     "lema": "la-p158",
+     "fonte": "dicionário",
+     "exp": "doceo, docere: o presente em -eo e o infinitivo em -ere, 2ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "mereo, merere, merui, meritum",
+     "w": "mereo",
+     "lema": "la-p175",
+     "fonte": "dicionário",
+     "exp": "mereo, merere: o presente em -eo e o infinitivo em -ere, 2ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "doleo, dolere, dolui, doliturus",
+     "w": "doleo",
+     "lema": "la-p238",
+     "fonte": "dicionário",
+     "exp": "doleo, dolere: o presente em -eo e o infinitivo em -ere, 2ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "3ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    }
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-g028",
+   "tipo": "conceito",
+   "familia": "conjugacao",
+   "la": "3ª conjugação",
+   "pt": "3ª conjugação",
+   "aceitas": [
+    "3a conjugação",
+    "terceira conjugação",
+    "terceira",
+    "3"
+   ],
+   "distratores": [
+    "1ª conjugação",
+    "2ª conjugação",
+    "4ª conjugação",
+    "verbo irregular"
+   ],
+   "nota": "Verbos com o presente em -o (ou -io) e o infinitivo em -ere, com o e breve: credo, credere; lego, legere; capio, capere. Sem vogal fixa: o i aparece no meio (legis, legit).\nPresente: lego, legis, legit, legimus, legitis, legunt.\nFuturo em -am, -es: legam, leges, leget (não em -bo).\nOs em -io (capio, facio) fazem capiunt, como a 4ª, mas o infinitivo é em -ere.",
+   "nivel": "A1",
+   "tags": [
+    "gramática"
+   ],
+   "grupo": "3ª conjugação",
+   "exemplos": [
+    {
+     "la": "credo, credere, credidi, creditum",
+     "w": "credo",
+     "lema": "la-p021",
+     "fonte": "dicionário",
+     "exp": "credo, credere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "carpo, carpere, carpsi, carptum",
+     "w": "carpo",
+     "lema": "la-p024",
+     "fonte": "dicionário",
+     "exp": "carpo, carpere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "cano, canere, cecini, cantum",
+     "w": "cano",
+     "lema": "la-p029",
+     "fonte": "dicionário",
+     "exp": "cano, canere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "vinco, vincere, vici, victum",
+     "w": "vinco",
+     "lema": "la-p030",
+     "fonte": "dicionário",
+     "exp": "vinco, vincere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "lego, legere, legi, lectum",
+     "w": "lego",
+     "lema": "la-p033",
+     "fonte": "dicionário",
+     "exp": "lego, legere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "tango, tangere, tetigi, tactum",
+     "w": "tango",
+     "lema": "la-p035",
+     "fonte": "dicionário",
+     "exp": "tango, tangere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "vado, vadere",
+     "w": "vado",
+     "lema": "la-p076",
+     "fonte": "dicionário",
+     "exp": "vado, vadere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "dimitto, dimittere, dimisi, dimissum",
+     "w": "dimitto",
+     "lema": "la-p101",
+     "fonte": "dicionário",
+     "exp": "dimitto, dimittere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "induco, inducere, induxi, inductum",
+     "w": "induco",
+     "lema": "la-p105",
+     "fonte": "dicionário",
+     "exp": "induco, inducere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "benedico, benedicere, benedixi, benedictum",
+     "w": "benedico",
+     "lema": "la-p112",
+     "fonte": "dicionário",
+     "exp": "benedico, benedicere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "dico, dicere, dixi, dictum",
+     "w": "dico",
+     "lema": "la-p122",
+     "fonte": "dicionário",
+     "exp": "dico, dicere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "fugio, fugere, fugi, fugitum",
+     "w": "fugio",
+     "lema": "la-p127",
+     "fonte": "dicionário",
+     "exp": "fugio, fugere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "sapio, sapere, sapivi",
+     "w": "sapio",
+     "lema": "la-p138",
+     "fonte": "dicionário",
+     "exp": "sapio, sapere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "iacio, iacere, ieci, iactum",
+     "w": "iacio",
+     "lema": "la-p140",
+     "fonte": "dicionário",
+     "exp": "iacio, iacere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "disco, discere, didici",
+     "w": "disco",
+     "lema": "la-p159",
+     "fonte": "dicionário",
+     "exp": "disco, discere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "facio, facere, feci, factum",
+     "w": "facio",
+     "lema": "la-p165",
+     "fonte": "dicionário",
+     "exp": "facio, facere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "requiro, requirere, requisivi, requisitum",
+     "w": "requiro",
+     "lema": "la-p167",
+     "fonte": "dicionário",
+     "exp": "requiro, requirere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "resurgo, resurgere, resurrexi, resurrectum",
+     "w": "resurgo",
+     "lema": "la-p177",
+     "fonte": "dicionário",
+     "exp": "resurgo, resurgere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "compello, compellere, compuli, compulsum",
+     "w": "compello",
+     "lema": "la-p183",
+     "fonte": "dicionário",
+     "exp": "compello, compellere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "bibo, bibere, bibi, bibitum",
+     "w": "bibo",
+     "lema": "la-p200",
+     "fonte": "dicionário",
+     "exp": "bibo, bibere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "decurro, decurrere, decucurri, decursum",
+     "w": "decurro",
+     "lema": "la-p206",
+     "fonte": "dicionário",
+     "exp": "decurro, decurrere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "condo, condere, condidi, conditum",
+     "w": "condo",
+     "lema": "la-p226",
+     "fonte": "dicionário",
+     "exp": "condo, condere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "laedo, laedere, laesi, laesum",
+     "w": "laedo",
+     "lema": "la-p235",
+     "fonte": "dicionário",
+     "exp": "laedo, laedere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "volvo, volvere, volvi, volutum",
+     "w": "volvo",
+     "lema": "la-p240",
+     "fonte": "dicionário",
+     "exp": "volvo, volvere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "impello, impellere, impuli, impulsum",
+     "w": "impello",
+     "lema": "la-p246",
+     "fonte": "dicionário",
+     "exp": "impello, impellere: o presente em -o (ou -io) e o infinitivo em -ere, 3ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "4ª conjugação",
+      "verbo irregular"
+     ]
+    }
+   ]
+  },
+  {
+   "idioma": "la",
+   "id": "la-g029",
+   "tipo": "conceito",
+   "familia": "conjugacao",
+   "la": "4ª conjugação",
+   "pt": "4ª conjugação",
+   "aceitas": [
+    "4a conjugação",
+    "quarta conjugação",
+    "quarta",
+    "4"
+   ],
+   "distratores": [
+    "1ª conjugação",
+    "2ª conjugação",
+    "3ª conjugação",
+    "verbo irregular"
+   ],
+   "nota": "Verbos com o presente em -io e o infinitivo em -ire: audio, audire; venio, venire; scio, scire. A vogal da conjugação é o i.\nPresente: audio, audis, audit, audimus, auditis, audiunt.\nImperfeito: audiebam; futuro: audiam, audies, audiet (como na 3ª).\nO que a separa da 3ª em -io é o infinitivo: audire × capere.",
+   "nivel": "A1",
+   "tags": [
+    "gramática"
+   ],
+   "grupo": "4ª conjugação",
+   "exemplos": [
+    {
+     "la": "audio, audire, audivi, auditum",
+     "w": "audio",
+     "fonte": "dicionário",
+     "fixo": true,
+     "exp": "audio, audire: o presente em -io e o infinitivo em -ire, 4ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "3ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "venio, venire, veni, ventum",
+     "w": "venio",
+     "fonte": "dicionário",
+     "fixo": true,
+     "lema": "la-p038",
+     "exp": "venio, venire: o presente em -io e o infinitivo em -ire, 4ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "3ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "scio, scire, scivi, scitum",
+     "w": "scio",
+     "fonte": "dicionário",
+     "fixo": true,
+     "exp": "scio, scire: o presente em -io e o infinitivo em -ire, 4ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "3ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "advenio, advenire, adveni, adventum",
+     "w": "advenio",
+     "lema": "la-p093",
+     "fonte": "dicionário",
+     "exp": "advenio, advenire: o presente em -io e o infinitivo em -ire, 4ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "3ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "nescio, nescire, nescivi, nescitum",
+     "w": "nescio",
+     "lema": "la-p168",
+     "fonte": "dicionário",
+     "exp": "nescio, nescire: o presente em -io e o infinitivo em -ire, 4ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "3ª conjugação",
+      "verbo irregular"
+     ]
+    },
+    {
+     "la": "sentio, sentire, sensi, sensum",
+     "w": "sentio",
+     "lema": "la-p169",
+     "fonte": "dicionário",
+     "exp": "sentio, sentire: o presente em -io e o infinitivo em -ire, 4ª conjugação.",
+     "distratores": [
+      "1ª conjugação",
+      "2ª conjugação",
+      "3ª conjugação",
+      "verbo irregular"
+     ]
+    }
+   ]
   }
  ]
 }

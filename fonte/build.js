@@ -120,6 +120,23 @@ for (const b of baralhos) {
   console.log('  la: ' + t.size + ' flexões em ' + new Set(t.values()).size + ' terminações (uma terminação, um card)');
 }
 
+/* ── as declinações e as conjugações (pedido do Gere, 03/11/2026) ──
+   Um conceito por grupo («grupo»: «2ª declinação», «1ª conjugação»…), com os exemplos gravados
+   por fonte/latim/declinacoes.js. Cada flexão das palavras do grupo pede o conceito
+   («grupoConceito»), que estreia antes da primeira delas. */
+const { doGrupo } = require('./latim/declinacoes');
+for (const b of baralhos) {
+  if (b.idioma !== 'la') continue;
+  const grupos = b.cards.filter(c => c.tipo === 'conceito' && c.grupo);
+  const doLema = new Map();
+  for (const g of grupos) b.cards.filter(c => doGrupo(c, g.grupo)).forEach(c => doLema.set(c.id, g.id));
+  let n = 0;
+  for (const c of b.cards) {
+    if (c.tipo === 'flexao' && doLema.has(c.lema)) { c.grupoConceito = doLema.get(c.lema); n++; }
+  }
+  console.log('  la: ' + grupos.length + ' declinações e conjugações; ' + n + ' flexões as pedem');
+}
+
 /* ── os textos ──
    Desde 20/10/2026 (PLANO.md, seção 9) o texto vem da Biblioteca: fonte/textos/<idioma>/
    <autor>--<poema>.json, gravado por fonte/importar-texto.py, com os versos em «blocos» (cada
@@ -772,7 +789,7 @@ const chaveLatina = s => String(s || '').toLowerCase().normalize('NFD').replace(
   .replace(/^-/, '').replace(/j/g, 'i').replace(/v/g, 'u');
 /* «construcao» (desde 24/10, o ablativo absoluto da Eneida): a pergunta é de que construção a
    palavra destacada faz parte, e não o caso dela, que seria só «ablativo» */
-const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz', 'construcao'];
+const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz', 'construcao', 'declinacao', 'conjugacao'];
 /* o card de flexão (LATIM.md §3.8): a alternativa errada nunca é leitura certa; com o parêntese
    ela pode repetir a palavra da certa («ele (sujeito)» no card de eum, que aceita «ele») */
 const chaveDaLeitura = t => String(t || '').toLowerCase().replace(/à/g, 'aa').replace(/(^|\s)ó(?=\s|$)/g, '$1oo').normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -1357,6 +1374,7 @@ for (const { idioma, cards } of baralhos) {
       const semCampo = Object.assign({}, c);
       delete semCampo.transparencia;
       delete semCampo.terminacao;
+      delete semCampo.grupoConceito;
       limpo.v = hash8(JSON.stringify(semCampo));
       /* O grau da transparência neste curso (PLANO.md, 7.1), depois do «v»:
          ele é do curso, não do card, e não muda a versão. Só quando há grau. */

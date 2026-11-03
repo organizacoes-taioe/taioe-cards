@@ -317,6 +317,11 @@ tr.vago td{opacity:.42}
 .alternativa.certa{border-color:var(--ok);background:var(--ok-fraco);opacity:1}
 .alternativa.certa .num{background:var(--ok);border-color:var(--ok);color:#0a231b}
 .alternativa.errada{border-color:var(--erro);background:var(--erro-fraco)}
+/* as alternativas de caso do latim: «Singular:» e «Plural:» alinhados nos dois pontos (a
+   coluna tem sempre a largura de «Singular:», pelo ::before invisível) */
+.casos{display:grid;grid-template-columns:max-content 1fr;column-gap:.4em;row-gap:2px}
+.casos-num{text-align:right;color:var(--texto-2,inherit)}
+.casos-num::before{content:'Singular:';display:block;height:0;overflow:hidden;visibility:hidden}
 
 /* ── escrita ── */
 #entrada{
