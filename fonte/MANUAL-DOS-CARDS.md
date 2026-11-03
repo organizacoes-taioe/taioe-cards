@@ -794,6 +794,9 @@ sem ele o navegador serve o baralho velho.
 | Duas letras vizinhas trocadas são um deslize só (vão ao «deu quase») | `p257` «la crata» por «la carta» |
 | «É necessário» ao lado de «é preciso», em todo «hay que» | `u194` «é necessário acatar…», e mais quatro cards |
 | Frase de uso do latim sem pontuação pendurada no fim (`:`, `;`, `,`); os trechos dos textos ficam como no texto | `la-u135` «non est inimicus Amori:», e mais 52 |
+| Toda alternativa tem sentido: nada de troca de palavra feita na hora, nada de frase absurda no contraste | `u599` «Preciso te dizer uma casa»; `la-k013`/`la-q012` «A pedra cava a gota»; `la-k023` «O lobo teme o cordeiro» — 03/11/2026 |
+| A resposta no outro gênero vale, no card de gênero variável | `f225` «he pedido cita con el médico» para «la médica» — 03/11/2026 |
+| Sinônimo na volta vai para `sinonimosEs`, não para as aceitas, quando o card ensina a outra palavra | `u602` «Es verdad» para «Es cierto»; `p923` «la felicidad» para «la dicha»; `p527` «la voluntad» para «la gana» — 03/11/2026 |
 
 ---
 
@@ -1177,4 +1180,22 @@ Os cards do mesmo `conjunto` (de 2 a 4) dividem as alternativas, cada um com a s
   leitura às cegas por outro agente, que recebe a pergunta e as alternativas embaralhadas.
 - `"publicos": ["pt"]` põe o card só nos cursos daqueles públicos, e o build só cobra a língua
   deles.
+- **Sentido** (03/11/2026, pedido do Gere): a errada pode ter erro de gramática, mas tem de ser
+  compreensível e ter um sentido possível; no latim, onde todas são latim correto, as duas
+  ordens do conjunto têm de fazer sentido («O cordeiro segue o pastor» / «O pastor segue o
+  cordeiro»), e nada de «a pedra cava a gota».
+
+## 21. O card de gramática do espanhol
+
+Desde 03/11/2026 (pedido do Gere), `fonte/cards/es/40-gramatica.json`, só para `pt`: o card de
+conceito, como o do latim, mas com os exemplos tirados das frases do curso.
+- Cada exemplo: `es` (igual ao campo `es` da frase), `de` (o id dela), `w` (a palavra ou o
+  trecho em destaque, que pode ter várias palavras: «he comido»), `exp` e as quatro erradas.
+- O app só mostra os exemplos de frases que a pessoa já viu (pelo menos dois), e há sempre
+  exatamente um card de gramática em jogo (`conceitoDaVez`).
+- As famílias são `tempo`, `ser-estar`, `por-para`, `pronome` e `apocope`. Cada uma tem a sua
+  pergunta, e as cinco alternativas são respostas da mesma família.
+- Todo card precisa de pelo menos 4 exemplos inequívocos; o build confere. A regra sem frases
+  no curso fica só como alternativa errada, até ganhar frases.
+- Exemplo de frase de gênero variável aparece no masculino.
 
