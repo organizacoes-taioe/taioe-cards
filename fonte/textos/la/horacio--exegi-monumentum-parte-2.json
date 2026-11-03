@@ -1,0 +1,604 @@
+{
+ "id": "horacio/exegi-monumentum-parte-2",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Exegi monumentum",
+ "autor": "Horácio",
+ "ano": null,
+ "biblioteca": "/biblioteca/horacio/exegi-monumentum/",
+ "ordem": 12,
+ "fonte": "Odes, livro III, 30, 10–16",
+ "obra": "horacio/exegi-monumentum",
+ "parte": 2,
+ "trecho": "10–16",
+ "blocos": [
+  [
+   {
+    "t": "Dicar, qua violens obstrepit Aufidus",
+    "p": [
+     [
+      "Dicar",
+      "dicar"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "qua",
+      "qua"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "violens",
+      "violens"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "obstrepit",
+      "obstrepit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Aufidus",
+      "aufidus"
+     ]
+    ],
+    "card": "la-t064"
+   },
+   {
+    "t": "et qua pauper aquae Daunus agrestium",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "qua",
+      "qua#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "pauper",
+      "pauper"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "aquae",
+      "aquae"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Daunus",
+      "daunus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "agrestium",
+      "agrestium"
+     ]
+    ],
+    "card": "la-t065"
+   },
+   {
+    "t": "regnavit populorum, ex humili potens",
+    "p": [
+     [
+      "regnavit",
+      "regnavit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "populorum",
+      "populorum"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "ex",
+      "ex"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "humili",
+      "humili"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "potens",
+      "potens"
+     ]
+    ],
+    "card": "la-t066"
+   },
+   {
+    "t": "princeps Aeolium carmen ad Italos",
+    "p": [
+     [
+      "princeps",
+      "princeps"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Aeolium",
+      "aeolium"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "carmen",
+      "carmen"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ad",
+      "ad"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Italos",
+      "italos"
+     ]
+    ],
+    "card": "la-t067"
+   },
+   {
+    "t": "deduxisse modos. Sume superbiam",
+    "p": [
+     [
+      "deduxisse",
+      "deduxisse"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "modos",
+      "modos"
+     ],
+     [
+      ". ",
+      null
+     ],
+     [
+      "Sume",
+      "sume"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "superbiam",
+      "superbiam"
+     ]
+    ],
+    "card": "la-t068"
+   },
+   {
+    "t": "quaesitam meritis et mihi Delphica",
+    "p": [
+     [
+      "quaesitam",
+      "quaesitam"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "meritis",
+      "meritis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mihi",
+      "mihi"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Delphica",
+      "delphica"
+     ]
+    ],
+    "card": "la-t069"
+   },
+   {
+    "t": "lauro cinge volens, Melpomene, comam.",
+    "p": [
+     [
+      "lauro",
+      "lauro"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "cinge",
+      "cinge"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "volens",
+      "volens"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Melpomene",
+      "melpomene"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "comam",
+      "comam"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "card": "la-t070"
+   }
+  ]
+ ],
+ "destinos": {
+  "dicar": {
+   "lema": "dico",
+   "classe": "verbo",
+   "forma": "futuro do indicativo, 1ª pessoa do singular, voz passiva",
+   "funcao": "serei dito: dirão de mim",
+   "card": "la-p122",
+   "wiki": "https://en.wiktionary.org/wiki/dico#Latin"
+  },
+  "qua": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "ablativo feminino singular",
+   "funcao": "advérbio de lugar (subentende-se via): por onde, onde",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "violens": {
+   "lema": "violens",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com Aufidus: violento",
+   "card": "la-p307",
+   "wiki": "https://en.wiktionary.org/wiki/violens#Latin"
+  },
+  "obstrepit": {
+   "lema": "obstrepo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "ruge, faz estrondo",
+   "card": "la-p308",
+   "wiki": "https://en.wiktionary.org/wiki/obstrepo#Latin"
+  },
+  "aufidus": {
+   "lema": "Aufidus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "O Áufido (hoje Ofanto), rio da Apúlia, a terra de Horácio."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Aufidus#Latin",
+   "forma": "nominativo singular",
+   "funcao": "o rio da terra de Horácio"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "qua#2": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "ablativo feminino singular",
+   "funcao": "advérbio de lugar: onde",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "pauper": {
+   "lema": "pauper",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com Daunus: pobre",
+   "card": "la-p309",
+   "wiki": "https://en.wiktionary.org/wiki/pauper#Latin"
+  },
+  "aquae": {
+   "lema": "aqua",
+   "classe": "substantivo feminino",
+   "forma": "genitivo singular",
+   "funcao": "com pauper: de água",
+   "card": "la-p199",
+   "wiki": "https://en.wiktionary.org/wiki/aqua#Latin"
+  },
+  "daunus": {
+   "lema": "Daunus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Dauno, rei lendário da Apúlia, terra seca."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Daunus#Latin",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de regnavit, no verso 12"
+  },
+  "agrestium": {
+   "lema": "agrestis",
+   "classe": "adjetivo",
+   "forma": "genitivo masculino plural",
+   "funcao": "concorda com populorum, no verso 12: agrestes",
+   "card": "la-p310",
+   "wiki": "https://en.wiktionary.org/wiki/agrestis#Latin"
+  },
+  "regnavit": {
+   "lema": "regno",
+   "classe": "verbo",
+   "forma": "perfeito do indicativo, 3ª pessoa do singular",
+   "funcao": "reinou, com o genitivo",
+   "card": "la-p311",
+   "wiki": "https://en.wiktionary.org/wiki/regno#Latin"
+  },
+  "populorum": {
+   "lema": "populus",
+   "classe": "substantivo masculino",
+   "forma": "genitivo plural",
+   "funcao": "sobre quem: os povos",
+   "card": "la-p312",
+   "wiki": "https://en.wiktionary.org/wiki/populus#Latin"
+  },
+  "ex": {
+   "lema": "ex",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p313",
+   "wiki": "https://en.wiktionary.org/wiki/ex#Latin"
+  },
+  "humili": {
+   "lema": "humilis",
+   "classe": "adjetivo",
+   "forma": "ablativo masculino singular",
+   "funcao": "com ex: de (origem) humilde",
+   "card": "la-p314",
+   "wiki": "https://en.wiktionary.org/wiki/humilis#Latin"
+  },
+  "potens": {
+   "lema": "potens",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com o sujeito de dicar, o poeta: poderoso",
+   "card": "la-p315",
+   "wiki": "https://en.wiktionary.org/wiki/potens#Latin"
+  },
+  "princeps": {
+   "lema": "princeps",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "predicativo do sujeito de deduxisse, o poeta: o primeiro",
+   "card": "la-p316",
+   "wiki": "https://en.wiktionary.org/wiki/princeps#Latin"
+  },
+  "aeolium": {
+   "lema": "Aeolius",
+   "classe": "adjetivo (nome próprio)",
+   "g": "nome",
+   "def": [
+    "Eólio: da Eólia, a terra de Safo e Alceu, os poetas líricos gregos."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Aeolius#Latin",
+   "forma": "acusativo neutro singular",
+   "funcao": "eólio"
+  },
+  "carmen": {
+   "lema": "carmen",
+   "classe": "substantivo neutro",
+   "forma": "acusativo singular",
+   "funcao": "objeto de deduxisse, no verso 14",
+   "card": "la-p317",
+   "wiki": "https://en.wiktionary.org/wiki/carmen#Latin"
+  },
+  "ad": {
+   "lema": "ad",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p178",
+   "wiki": "https://en.wiktionary.org/wiki/ad#Latin"
+  },
+  "italos": {
+   "lema": "Italus",
+   "classe": "adjetivo (nome próprio)",
+   "g": "nome",
+   "def": [
+    "Itálico, da Itália."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Italus#Latin",
+   "forma": "acusativo masculino plural",
+   "funcao": "itálicos"
+  },
+  "deduxisse": {
+   "lema": "deduco",
+   "classe": "verbo",
+   "forma": "infinitivo perfeito",
+   "funcao": "com dicar: (dirão) que eu trouxe, ter trazido",
+   "card": "la-p318",
+   "wiki": "https://en.wiktionary.org/wiki/deduco#Latin"
+  },
+  "modos": {
+   "lema": "modus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo plural",
+   "funcao": "com ad Italos: aos ritmos itálicos",
+   "card": "la-p319",
+   "wiki": "https://en.wiktionary.org/wiki/modus#Latin"
+  },
+  "sume": {
+   "lema": "sumo",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "assume",
+   "card": "la-p320",
+   "wiki": "https://en.wiktionary.org/wiki/sumo#Latin"
+  },
+  "superbiam": {
+   "lema": "superbia",
+   "classe": "substantivo feminino",
+   "forma": "acusativo singular",
+   "funcao": "objeto de sume",
+   "card": "la-p321",
+   "wiki": "https://en.wiktionary.org/wiki/superbia#Latin"
+  },
+  "quaesitam": {
+   "lema": "quaero",
+   "classe": "verbo",
+   "forma": "particípio perfeito, acusativo feminino singular",
+   "funcao": "concorda com superbiam: conquistado",
+   "card": "la-p251",
+   "wiki": "https://en.wiktionary.org/wiki/quaero#Latin"
+  },
+  "meritis": {
+   "lema": "meritum",
+   "classe": "substantivo neutro",
+   "forma": "ablativo plural",
+   "funcao": "com que: pelos méritos",
+   "card": "la-p322",
+   "wiki": "https://en.wiktionary.org/wiki/meritum#Latin"
+  },
+  "mihi": {
+   "lema": "ego",
+   "classe": "pronome",
+   "forma": "dativo singular",
+   "funcao": "a quem: a minha (cabeleira)",
+   "card": "la-p004",
+   "wiki": "https://en.wiktionary.org/wiki/ego#Latin"
+  },
+  "delphica": {
+   "lema": "Delphicus",
+   "classe": "adjetivo (nome próprio)",
+   "g": "nome",
+   "def": [
+    "Délfico, de Delfos, o santuário de Apolo, a quem o louro é sagrado."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Delphicus#Latin",
+   "forma": "ablativo feminino singular",
+   "funcao": "délfico"
+  },
+  "lauro": {
+   "lema": "laurus",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "com que: com o louro",
+   "card": "la-p323",
+   "wiki": "https://en.wiktionary.org/wiki/laurus#Latin"
+  },
+  "cinge": {
+   "lema": "cingo",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "cinge",
+   "card": "la-p324",
+   "wiki": "https://en.wiktionary.org/wiki/cingo#Latin"
+  },
+  "volens": {
+   "lema": "volo",
+   "classe": "verbo",
+   "forma": "particípio presente, nominativo feminino singular",
+   "funcao": "concorda com Melpomene: querendo, de bom grado",
+   "card": "la-p155",
+   "wiki": "https://en.wiktionary.org/wiki/volo#Latin"
+  },
+  "melpomene": {
+   "lema": "Melpomene",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Melpômene, uma das Musas."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Melpomene#Latin",
+   "forma": "vocativo singular",
+   "funcao": "a Musa a quem se fala"
+  },
+  "comam": {
+   "lema": "coma",
+   "classe": "substantivo feminino",
+   "forma": "acusativo singular",
+   "funcao": "objeto de cinge",
+   "card": "la-p325",
+   "wiki": "https://en.wiktionary.org/wiki/coma#Latin"
+  }
+ }
+}

@@ -68,6 +68,9 @@ def analisar(forma):
     minúscula e com maiúscula inicial, porque o Wiktionary separa «deus» de «Deus»."""
     vistos = set()
     saida = []
+    # a ligadura escrita na fonte («ære», o bronze, que a regra do hiato leria «aër»): sem ela
+    for de, para in latim.LIGADURAS.items():
+        forma = forma.replace(de, para)
     candidatas = {forma, forma.lower(), forma[:1].upper() + forma[1:].lower()}
     for f in sorted(candidatas):
         for e in baixar_palavra(f):
