@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso la-pt, leva 1e3f7bc6, 1518 cards.
+-- Catálogo do curso la-pt, leva ecda3bbe, 1518 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('la-pt', '1e3f7bc6', '1518 cards')
+values ('la-pt', 'ecda3bbe', '1518 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -782,8 +782,8 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('la-pt', 'la-u223', 'frase', 'A1', array['frase de uso']::text[], 'la-p204', '1d745121', array['Nós, por favor, apressamo-nos a vir até ti.', 'Tu, por favor, apressa-te a vir até nós.', 'Tu, por favor, apressaste-te a vir até nós.', 'Tu, por favor, demoras a vir até nós.', 'Vós, por favor, apressai-vos a vir até nós.']::text[]),
   ('la-pt', 'la-u224', 'frase', 'A1', array['frase de uso']::text[], 'la-p205', '6eefacfe', array['Foi lamentado gravemente.', 'Queixa-se gravemente.', 'Queixaram-se gravemente.', 'Queixei-me gravemente.', 'Queixou-se gravemente.']::text[]),
   ('la-pt', 'la-u225', 'frase', 'A1', array['frase de uso']::text[], 'la-p208', 'b215934e', array['A água era transparente.', 'A água foi transparente.', 'A água será transparente.', 'A água é transparente.', 'As águas são transparentes.']::text[]),
-  ('la-pt', 'la-k001', 'contraste', 'A1', array['contraste']::text[], null, '8884a845', array['Domine, canis videt.', 'Domini canis videt.', 'Dominum canis videt.', 'Dominus canem videt.']::text[]),
-  ('la-pt', 'la-k002', 'contraste', 'A1', array['contraste']::text[], null, '629458a0', array['Domine, canis videt.', 'Domini canis videt.', 'Dominum canis videt.', 'Dominus canem videt.']::text[]),
+  ('la-pt', 'la-k001', 'contraste', 'A1', array['contraste']::text[], null, '431f7e31', array['Domine, canis videt.', 'Domini canis videt.', 'Dominum canis videt.', 'Dominus canem videt.']::text[]),
+  ('la-pt', 'la-k002', 'contraste', 'A1', array['contraste']::text[], null, 'f4812e67', array['Domine, canis videt.', 'Domini canis videt.', 'Dominum canis videt.', 'Dominus canem videt.']::text[]),
   ('la-pt', 'la-k003', 'contraste', 'A1', array['contraste']::text[], null, 'cd9739b6', array['Pater matrem amat.', 'Patrem mater amat.', 'Patrem matris amat.', 'Patris matrem amat.']::text[]),
   ('la-pt', 'la-k004', 'contraste', 'A1', array['contraste']::text[], null, 'fbf88fc0', array['Pater matrem amat.', 'Patrem mater amat.', 'Patrem matris amat.', 'Patris matrem amat.']::text[]),
   ('la-pt', 'la-k005', 'contraste', 'A1', array['contraste']::text[], null, 'd1e73fcc', array['Pater matrem amat.', 'Patrem mater amat.', 'Patrem matris amat.', 'Patris matrem amat.']::text[]),
@@ -1436,12 +1436,12 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('la-pt', 'la-v530', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, 'e0b7c9f6', array['plural: dativo ou ablativo', 'singular: acusativo; plural: genitivo', 'singular: dativo ou ablativo', 'singular: genitivo; plural: nominativo', 'singular: nominativo ou acusativo']::text[]),
   ('la-pt', 'la-v531', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, 'e180a738', array['plural: dativo ou ablativo', 'plural: nominativo ou acusativo', 'singular: acusativo; plural: genitivo', 'singular: dativo ou ablativo', 'singular: nominativo ou genitivo']::text[]),
   ('la-pt', 'la-v532', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, 'af467663', array['plural: dativo ou ablativo', 'plural: genitivo ou acusativo', 'plural: nominativo ou acusativo', 'singular: dativo ou ablativo', 'singular: nominativo ou acusativo']::text[]),
-  ('la-pt', 'la-q001', 'compreensao', 'A1', array['compreensão']::text[], null, '3c434e68', array['o cordeiro', 'o cão', 'o dono', 'o homem', 'o pastor']::text[]),
-  ('la-pt', 'la-q002', 'compreensao', 'A1', array['compreensão']::text[], null, 'ca7a8926', array['o cordeiro', 'o cão', 'o dono', 'o homem', 'o pastor']::text[]),
-  ('la-pt', 'la-q003', 'compreensao', 'A1', array['compreensão']::text[], null, '9974c666', array['com o cão', 'com o dono', 'com o homem', 'com o pai', 'com o pastor']::text[]),
+  ('la-pt', 'la-q001', 'compreensao', 'A1', array['compreensão']::text[], null, '4a49594d', array['o cordeiro', 'o cão', 'o homem', 'o pastor', 'o senhor']::text[]),
+  ('la-pt', 'la-q002', 'compreensao', 'A1', array['compreensão']::text[], null, '28a01420', array['o cordeiro', 'o cão', 'o homem', 'o pastor', 'o senhor']::text[]),
+  ('la-pt', 'la-q003', 'compreensao', 'A1', array['compreensão']::text[], null, '31ff676d', array['com o cão', 'com o homem', 'com o pai', 'com o pastor', 'com o senhor']::text[]),
   ('la-pt', 'la-q004', 'compreensao', 'A1', array['compreensão']::text[], null, '6b2edfae', array['a mãe', 'o filho', 'o homem', 'o pai', 'o pastor']::text[]),
   ('la-pt', 'la-q005', 'compreensao', 'A1', array['compreensão']::text[], null, '98dd93e6', array['a mãe', 'o filho', 'o homem', 'o pai', 'o pastor']::text[]),
-  ('la-pt', 'la-q006', 'compreensao', 'A1', array['compreensão']::text[], null, '2406d1bb', array['do dono', 'do filho', 'do homem', 'do pai', 'do pastor']::text[]),
+  ('la-pt', 'la-q006', 'compreensao', 'A1', array['compreensão']::text[], null, '56adfaeb', array['do filho', 'do homem', 'do pai', 'do pastor', 'do senhor']::text[]),
   ('la-pt', 'la-q007', 'compreensao', 'A1', array['compreensão']::text[], null, 'cb4a650f', array['o cordeiro', 'o cão', 'o homem', 'o lobo', 'o pastor']::text[]),
   ('la-pt', 'la-q008', 'compreensao', 'A1', array['compreensão']::text[], null, 'c7b9fbc2', array['do cordeiro', 'do cão', 'do homem', 'do lobo', 'do pastor']::text[]),
   ('la-pt', 'la-q009', 'compreensao', 'A1', array['compreensão']::text[], null, '45ddb60f', array['a mãe', 'o filho', 'o homem', 'o pai', 'o pastor']::text[]),
@@ -1455,7 +1455,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('la-pt', 'la-q017', 'compreensao', 'A1', array['compreensão']::text[], null, '46807d84', array['o cordeiro', 'o cão', 'o pai', 'o pastor', 'o patrão']::text[]),
   ('la-pt', 'la-q018', 'compreensao', 'A1', array['compreensão']::text[], null, 'c981882e', array['da mãe', 'do filho', 'do homem', 'do pai', 'do patrão']::text[]),
   ('la-pt', 'la-q019', 'compreensao', 'A1', array['compreensão']::text[], null, '056e99f5', array['o cão', 'o homem', 'o ladrão', 'o lobo', 'o pastor']::text[]),
-  ('la-pt', 'la-q020', 'compreensao', 'A1', array['compreensão']::text[], null, '6ff5db5b', array['da mãe', 'do dono', 'do homem', 'do ladrão', 'do pastor']::text[]),
+  ('la-pt', 'la-q020', 'compreensao', 'A1', array['compreensão']::text[], null, '1c7749b5', array['da mãe', 'do homem', 'do ladrão', 'do pastor', 'do senhor']::text[]),
   ('la-pt', 'la-q021', 'compreensao', 'A1', array['compreensão']::text[], null, 'ceac818a', array['a mãe', 'o filho', 'o homem', 'o pai', 'o pastor']::text[]),
   ('la-pt', 'la-q022', 'compreensao', 'A1', array['compreensão']::text[], null, 'c5cbd4b6', array['a mãe', 'o filho', 'o homem', 'o pai', 'o pastor']::text[]),
   ('la-pt', 'la-q023', 'compreensao', 'A1', array['compreensão']::text[], null, '586cfd23', array['da mãe', 'do filho', 'do homem', 'do pai', 'do pastor']::text[]),
