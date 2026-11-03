@@ -102,6 +102,7 @@ window.TAIOE_TEXTOS = {
     'arquivar.perguntaFrase': 'Você já conhece «{x}»?\n\nEla sai dos seus estudos e não aparece mais. Se mudar de ideia, ela volta em Todos os cards → arquivados.',
     'arquivar.perguntaConceito': 'Você já conhece o «{x}»?\n\nEle sai dos seus estudos e não aparece mais. Se mudar de ideia, ele volta em Todos os cards → arquivados.',
     'arquivar.feito': '«{x}» arquivado. Para trazer de volta: Todos os cards → arquivados.',
+    'arquivar.sim': 'Sim, já conheço',
 
     'aviso.leitura': '<b>{resposta}</b> é a tradução de <b>{original}</b>, em {L} {bL}. Mas aqui <b>{pergunta}</b> está em {A} {bA}, e o que se pede é o {L} dela — tente de novo.',
     'aviso.sinonimo': '<b>{x}</b> também está certo, mas não é a palavra deste card. ',
@@ -500,6 +501,7 @@ window.TAIOE_TEXTOS = {
     'arquivar.perguntaFrase': '¿Ya conoces «{x}»?\n\nSale de tus estudios y no vuelve a aparecer. Si cambias de idea, vuelve en Todas las tarjetas → archivadas.',
     'arquivar.perguntaConceito': '¿Ya conoces el «{x}»?\n\nSale de tus estudios y no vuelve a aparecer. Si cambias de idea, vuelve en Todas las tarjetas → archivadas.',
     'arquivar.feito': '«{x}» archivada. Para recuperarla: Todas las tarjetas → archivadas.',
+    'arquivar.sim': 'Sí, ya lo conozco',
 
     'aviso.leitura': '<b>{resposta}</b> es la traducción de <b>{original}</b>, en {L} {bL}. Pero aquí <b>{pergunta}</b> está en {A} {bA}, y lo que se pide es cómo se dice en {L}. Inténtalo de nuevo.',
     'aviso.sinonimo': '<b>{x}</b> también es correcto, pero no es la palabra de esta tarjeta. ',
@@ -895,6 +897,7 @@ window.TAIOE_TEXTOS = {
     'arquivar.perguntaFrase': 'Do you already know “{x}”?\n\nIt leaves your study queue and won’t show up again. If you change your mind, it comes back under All cards → archived.',
     'arquivar.perguntaConceito': 'Do you already know “{x}”?\n\nIt leaves your study queue and won’t show up again. If you change your mind, it comes back under All cards → archived.',
     'arquivar.feito': '“{x}” archived. To bring it back: All cards → archived.',
+    'arquivar.sim': 'Yes, I know it',
 
     'aviso.leitura': '<b>{resposta}</b> is the translation of <b>{original}</b>, in {L} {bL}. But here <b>{pergunta}</b> is in {A} {bA}, and what’s asked is how to say it in {L}. Try again.',
     'aviso.sinonimo': '<b>{x}</b> is also right, but it isn’t the word on this card. ',

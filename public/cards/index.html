@@ -381,11 +381,25 @@
   </div>
 </div>
 
+<!-- «Já conheço»: a pergunta fica na própria página (03/11/2026). A janela do
+     navegador (confirm) deixava a página sem foco ao fechar, e no celular o
+     teclado do card seguinte não escrevia em caixa nenhuma. -->
+<div class="comentario-fundo oculto" id="arquivar-fundo">
+  <div class="comentario-painel" role="dialog" aria-modal="true" aria-labelledby="arquivar-titulo">
+    <h3 id="arquivar-titulo"></h3>
+    <p class="recomecar-texto" id="arquivar-texto"></p>
+    <div class="linha-botoes">
+      <button class="primario" id="btn-arquivar-sim" data-i18n="arquivar.sim"></button>
+      <button class="secundario" id="btn-arquivar-nao" data-i18n="comentario.cancelar"></button>
+    </div>
+  </div>
+</div>
+
 <footer class="rodape">
   <span id="rodape-sync">•</span>
 </footer>
 
-<script src="js/textos-i18n.js?v=bd2d8921"></script>
+<script src="js/textos-i18n.js?v=daefc786"></script>
 <script src="js/i18n.js?v=a99747e0"></script>
 <script src="vendor/supabase-js-2.117.2.js?v=16aeff36"></script>
 <script src="js/taioe-sessao.js?v=4c9cdaf3"></script>
@@ -394,7 +408,7 @@
 <script src="js/motor.js?v=d1ecee7f"></script>
 <script src="js/armazem.js?v=131120d0"></script>
 <script src="js/sincronia.js?v=ff987237"></script>
-<script src="js/app.js?v=c377ae12"></script>
+<script src="js/app.js?v=30372045"></script>
 <script src="js/inicio.js?v=e08c94ca"></script>
 </body>
 </html>

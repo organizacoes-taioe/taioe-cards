@@ -160,7 +160,8 @@ window.TaioeCardsApp = function (ctx) {
     /* o começo do app (PLANO.md, seção 7) */
     'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'aviso-previa', 'btn-refazer',
     'btn-recomecar', 'recomecar-fundo', 'recomecar-titulo', 'recomecar-vistos', 'recomecar-pede',
-    'recomecar-frase', 'btn-recomecar-sim', 'btn-recomecar-nao'
+    'recomecar-frase', 'btn-recomecar-sim', 'btn-recomecar-nao',
+    'arquivar-fundo', 'arquivar-titulo', 'arquivar-texto', 'btn-arquivar-sim', 'btn-arquivar-nao'
   ].forEach(id => { el[id] = document.getElementById(id); });
 
   /* ═══════════════ estado ═══════════════ */
@@ -1253,13 +1254,35 @@ window.TaioeCardsApp = function (ctx) {
      O card sai do jogo; se for de vocabulário, a palavra passa a contar como
      dominada para destravar frases e textos (ver Motor.liberadaEm). É para o
      óbvio, que custaria cinco respostas sem ensinar nada. Volta pela lista
-     de cards, no filtro «arquivados», se foi engano. */
+     de cards, no filtro «arquivados», se foi engano.
+     A pergunta é um painel da página, e não a janela do navegador (confirm):
+     no celular, a janela deixava a página sem foco ao fechar, e o teclado do
+     card seguinte, aberto, não escrevia em caixa nenhuma (03/11/2026). O
+     «Sim» é um toque de verdade, e é nele que o foco vai para a captura. */
+  let aArquivar = null;
   function arquivarCardAtual() {
     if (!cardAtual) return;
     const c = PORID[cardAtual.id] || cardAtual;
     const pergunta = t(c.tipo === 'palavra' || c.tipo === 'flexao' ? 'arquivar.perguntaPalavra'
       : c.tipo === 'conceito' ? 'arquivar.perguntaConceito' : 'arquivar.perguntaFrase', { x: c[L] });
-    if (!window.confirm(pergunta)) return;
+    const [titulo, ...resto] = pergunta.split(/\n\s*\n/);
+    el['arquivar-titulo'].textContent = titulo;
+    el['arquivar-texto'].textContent = resto.join(' ');
+    aArquivar = c.id;
+    el['arquivar-fundo'].classList.remove('oculto');
+    el['btn-arquivar-sim'].focus({ preventScroll: true });
+  }
+  function fecharArquivar(devolverFoco) {
+    if (el['arquivar-fundo'].classList.contains('oculto')) return;
+    el['arquivar-fundo'].classList.add('oculto');
+    aArquivar = null;
+    if (devolverFoco) el['btn-arquivar'].focus({ preventScroll: true });
+  }
+  function confirmarArquivar() {
+    const id = aArquivar;
+    fecharArquivar(false);
+    if (!cardAtual || cardAtual.id !== id) return;
+    const c = PORID[id] || cardAtual;
     marcarArquivo(c.id, true);
     statusSync(t('arquivar.feito', { x: c[L] }), 'ok');
     respostaPendente = null;
@@ -3222,6 +3245,14 @@ window.TaioeCardsApp = function (ctx) {
     }
   });
   el['btn-arquivar'].addEventListener('click', arquivarCardAtual);
+  el['btn-arquivar-sim'].addEventListener('click', confirmarArquivar);
+  el['btn-arquivar-nao'].addEventListener('click', () => fecharArquivar(true));
+  el['arquivar-fundo'].addEventListener('click', e => {
+    if (e.target === el['arquivar-fundo']) fecharArquivar(true);
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') fecharArquivar(true);
+  });
   el['btn-comentario-enviar'].addEventListener('click', enviarComentario);
   el['btn-comentario-fechar'].addEventListener('click', fecharComentario);
   el['comentario-texto'].addEventListener('input', contarComentario);
@@ -3267,6 +3298,7 @@ window.TaioeCardsApp = function (ctx) {
   function esperandoEscrita() {
     return modoAtual === 'escrita' && !!cardAtual && !respostaPendente && !el.entrada.disabled &&
       !el['tela-card'].classList.contains('oculto') && el['comentario-fundo'].classList.contains('oculto') &&
+      el['arquivar-fundo'].classList.contains('oculto') &&
       el['menu-topo'].hidden;
   }
   function ehCampo(n) {
@@ -3324,6 +3356,15 @@ window.TaioeCardsApp = function (ctx) {
   el.entrada.addEventListener('blur', () => setTimeout(devolverFoco, 0));
   document.addEventListener('pointerup', () => setTimeout(devolverFoco, 0));
   window.addEventListener('focus', () => setTimeout(devolverFoco, 0));
+  /* A rede de segurança: com a página sem foco (uma janela do navegador que
+     acabou de fechar, por exemplo), focar a caixa não liga o teclado a ela,
+     e as teclas chegam sem letra. Quando o foco volta à página, a caixa é
+     focada de novo, do zero (03/11/2026). */
+  window.addEventListener('focus', () => setTimeout(() => {
+    if (!esperandoEscrita() || document.activeElement !== el.entrada) return;
+    el.entrada.blur();
+    el.entrada.focus({ preventScroll: true });
+  }, 0));
   document.addEventListener('keydown', e => {
     if (e.ctrlKey || e.metaKey || e.altKey || !esperandoEscrita() || ehCampo(document.activeElement)) return;
     if (e.key.length === 1 || e.key === 'Backspace' || e.key === 'Dead') el.entrada.focus({ preventScroll: true });
