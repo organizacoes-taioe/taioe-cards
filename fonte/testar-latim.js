@@ -117,6 +117,14 @@ const vistosG = Object.fromEntries(comLema.map(e => [e.lema, { vistas: 2 }]));
 ok([0, 1, 2, 3].every(n => comLema.includes(M.exemploDoConceito(g2, { vistas: n }, vistosG))), 'o exemplo sai das palavras já vistas');
 ok(M.exemploDoConceito(g2, { vistas: 0 }, {}) === g2.exemplos[0], 'sem palavra vista, vale a lista toda');
 const { doGrupo } = require('./latim/declinacoes');
+/* o card de forma varia a pergunta (03/11/2026) */
+const formaVaria = CARDS.find(c => c.tipo === 'forma' && c.funcao && c.dicionario);
+const tiposVistos = new Set([0, 1, 2, 3, 4, 5].map(n => M.perguntaDaForma(formaVaria, { vistas: n }).tipo));
+ok(tiposVistos.has('caso') && tiposVistos.has('funcao') && tiposVistos.has('dicionario'), 'a forma pergunta o caso, a função e a forma de dicionário, uma por vez');
+ok(CARDS.filter(c => c.tipo === 'forma').every(c => [0, 1, 2].every(n => { const p = M.perguntaDaForma(c, { vistas: n }); return p.pt && p.distratores.length >= 4 && !p.distratores.includes(p.pt) && new Set(p.distratores).size === p.distratores.length; })),
+  'toda pergunta de forma tem a certa e quatro erradas distintas');
+ok(CARDS.filter(c => c.segundo).every(c => { const o = CARDS.find(x => x.id === c.segundo); return o && o.la.toLowerCase() === c.la.toLowerCase() && o.pt !== c.pt; }),
+  'o segundo contexto é a mesma forma noutro caso');
 ok(CARDS.some(c => c.tipo === 'flexao' && CARDS.some(l => l.id === c.lema && doGrupo(l, '2ª declinação'))), 'há flexões de palavras da 2ª declinação (o build as liga ao conceito)');
 M.usarTransparencias(CARDS);   // o motor aprende o tipo de cada card
 const conceito = M.estadoInicialDo(g001);

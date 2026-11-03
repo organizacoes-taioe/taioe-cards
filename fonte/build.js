@@ -390,6 +390,8 @@ for (const bruto of cards) {
   /* o campo que corrige a regra da transparência: públicos do baralho,
      graus que existem, só em palavra */
   Transp.errosDoCampo(bruto, audiencias, bruto.id + ' (' + bruto[L.texto] + ')').forEach(e => erros.push(e));
+  /* o conceito fora do latim (a gramática do espanhol) tem a régua dele, mais abaixo */
+  if (idioma !== 'la' && bruto.tipo === 'conceito') continue;
 
   /* Card comum devolve uma forma só, e o laço roda uma vez. */
   const formas = Motor.formasDoCard(bruto);
@@ -776,6 +778,37 @@ for (const { idioma, cards } of baralhos) {
     }
     if (String(c.pt || '').length > Motor.LIMITES.resposta) erros.push('pergunta com mais de ' + Motor.LIMITES.resposta + ' letras: ' + onde);
   }
+}
+
+/* ── a gramática fora do latim (o espanhol, 03/11/2026) ──
+   O card de conceito do espanhol mostra uma frase do curso («de», com o texto igual) com a
+   palavra ou o trecho em destaque («w»), e as cinco alternativas são respostas da família. */
+{
+  const FAMILIAS_FORA = ['tempo', 'ser-estar', 'por-para', 'pronome', 'apocope'];
+  const chave = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const palavras = s => String(s || '').match(/[A-Za-zÀ-ÿĀ-ſ]+/g) || [];
+  const problemas = [];
+  for (const b of baralhos) {
+    if (b.idioma === 'la') continue;
+    for (const c of b.cards.filter(x => x.tipo === 'conceito')) {
+      const onde = b.idioma + '/' + c.id;
+      if (!FAMILIAS_FORA.includes(c.familia)) problemas.push('conceito sem família (' + FAMILIAS_FORA.join(', ') + '): ' + onde);
+      const ex = Array.isArray(c.exemplos) ? c.exemplos : [];
+      if (ex.length < 4) problemas.push('conceito com menos de 4 exemplos: ' + onde);
+      ex.forEach((e, i) => {
+        const txt = e && e[b.idioma];
+        const de = e && b.cards.find(x => x.id === e.de);
+        if (!txt || !e.w || !e.exp || !de || de.tipo !== 'frase' || de[b.idioma] !== txt) {
+          problemas.push('exemplo ' + (i + 1) + ' sem a frase do curso (' + b.idioma + ', w, exp, de): ' + onde); return;
+        }
+        const toks = palavras(txt.replace(/\{([^{}|]*)\|[^{}|]*\}/g, '$1')).map(chave), alvo = palavras(e.w).map(chave);
+        if (!toks.some((t, k) => alvo.every((a, j) => toks[k + j] === a))) problemas.push('exemplo ' + (i + 1) + ' sem o destaque «' + e.w + '»: ' + onde);
+        const d = e.distratores || [];
+        if (d.length !== 4 || new Set(d).size !== 4 || d.includes(c.pt)) problemas.push('exemplo ' + (i + 1) + ' sem quatro erradas distintas: ' + onde);
+      });
+    }
+  }
+  if (problemas.length) { console.error('\n  ' + problemas.join('\n  ') + '\n'); process.exit(1); }
 }
 
 /* ── o latim (cards/LATIM.md) ──

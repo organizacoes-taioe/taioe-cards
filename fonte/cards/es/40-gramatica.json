@@ -1,0 +1,3253 @@
+[
+ {
+  "id": "g001",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "presente de indicativo",
+  "pt": "presente do indicativo (hablo)",
+  "aceitas": [
+   "presente",
+   "presente do indicativo",
+   "presente indicativo"
+  ],
+  "distratores": [
+   "pretérito indefinido (hablé)",
+   "presente do subjuntivo (hable)",
+   "pretérito imperfeito (hablaba)",
+   "futuro (hablaré)"
+  ],
+  "nota": "Regulares: hablo, hablas, habla, hablamos, habláis, hablan; como, comes, come…; vivo, vives, vive….\nMuitos verbos mudam a vogal da raiz quando ela é tônica: duermo, juego, cierra, empieza (mas dormimos, jugamos, cerramos).\nVários são irregulares só na 1ª pessoa: hago, salgo, oigo, conozco, traigo.\nO acento muda o tempo: hablo (eu falo) × habló (ele falou).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Yo hablo español.",
+    "w": "hablo",
+    "de": "v041",
+    "exp": "hablo: 1ª pessoa do presente de hablar, sem acento (habló seria «ele falou»).",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)",
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "Yo hago la comida.",
+    "w": "hago",
+    "de": "v007",
+    "exp": "hago: presente de hacer, irregular na 1ª pessoa, como salgo e pongo.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)",
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "Yo duermo poco.",
+    "w": "duermo",
+    "de": "v030",
+    "exp": "duermo: presente de dormir; o o tônico vira ue (duermo, mas dormimos).",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)",
+     "pretérito imperfeito (hablaba)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "Yo juego al fútbol.",
+    "w": "juego",
+    "de": "v032",
+    "exp": "juego: presente de jugar; o u tônico vira ue.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)",
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "La tienda cierra a las nueve.",
+    "w": "cierra",
+    "de": "u084",
+    "exp": "cierra: presente de cerrar (o e tônico vira ie); o sujeito é la tienda, não é uma ordem.",
+    "distratores": [
+     "imperativo afirmativo (habla)",
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "La película empieza a las ocho.",
+    "w": "empieza",
+    "de": "v033",
+    "exp": "empieza: presente de empezar; o e tônico vira ie.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)",
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "Yo oigo música.",
+    "w": "oigo",
+    "de": "v028",
+    "exp": "oigo: presente de oír, irregular na 1ª pessoa (oigo, oyes, oye).",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)",
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "El gato duerme en el sofá.",
+    "w": "duerme",
+    "de": "u500",
+    "exp": "duerme: presente de dormir, 3ª pessoa; quem dorme é o gato.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)",
+     "pretérito imperfeito (hablaba)",
+     "imperativo afirmativo (habla)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g002",
+  "tipo": "conceito",
+  "familia": "ser-estar",
+  "publicos": [
+   "pt"
+  ],
+  "es": "ser: identidad, origen, característica",
+  "pt": "ser: o que a coisa é (identidade, origem, característica)",
+  "aceitas": [
+   "ser identidade",
+   "identidade",
+   "caracteristica",
+   "o que a coisa e"
+  ],
+  "distratores": [
+   "estar: estado ou condição do momento",
+   "estar: onde algo ou alguém está",
+   "ser: hora, data ou onde acontece um evento",
+   "estar + gerúndio: ação em andamento"
+  ],
+  "nota": "Ser diz o que a coisa é: identidade, profissão, origem, material e as características que fazem parte dela (alta, simpática, de tijolo).\nOrigem é com ser (soy de Brasil); o lugar onde algo está é com estar.\nAlguns adjetivos mudam de sentido: ser listo é ser esperto, estar listo é estar pronto; ser rico é ter dinheiro, estar rico é estar gostoso.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Ese hombre es mi vecino.",
+    "w": "es",
+    "de": "u361",
+    "exp": "es: diz quem ele é (identidade).",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Mi yerno es médico.",
+    "w": "es",
+    "de": "u215",
+    "exp": "es: profissão é com ser, e sem artigo (es médico).",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar: onde algo ou alguém está",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Soy de Brasil.",
+    "w": "Soy",
+    "de": "u442",
+    "exp": "soy: origem é com ser, mesmo com de + lugar.",
+    "distratores": [
+     "estar: onde algo ou alguém está",
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "¿De dónde eres?",
+    "w": "eres",
+    "de": "b009",
+    "exp": "eres: a pergunta é a origem, com ser.",
+    "distratores": [
+     "estar: onde algo ou alguém está",
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "La calle es muy ancha.",
+    "w": "es",
+    "de": "u013",
+    "exp": "es: a largura é uma característica da rua.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "La casa es de ladrillo.",
+    "w": "es",
+    "de": "u156",
+    "exp": "es: o material de que a casa é feita.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Esta película es muy mala.",
+    "w": "es",
+    "de": "u510",
+    "exp": "es: como o filme é, a qualidade dele.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar: onde algo ou alguém está",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Mi abuela es muy dulce.",
+    "w": "es",
+    "de": "u577",
+    "exp": "es: o jeito de ser da avó; o café, ao contrário, está dulce.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Aprender idiomas es un reto.",
+    "w": "es",
+    "de": "u093",
+    "exp": "es: diz o que a coisa é (um desafio).",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar: onde algo ou alguém está",
+     "estar + gerúndio: ação em andamento"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g003",
+  "tipo": "conceito",
+  "familia": "ser-estar",
+  "publicos": [
+   "pt"
+  ],
+  "es": "estar: estado del momento",
+  "pt": "estar: estado ou condição do momento",
+  "aceitas": [
+   "estar estado",
+   "estado",
+   "condicao",
+   "estado do momento"
+  ],
+  "distratores": [
+   "ser: o que a coisa é (identidade, origem, característica)",
+   "estar: onde algo ou alguém está",
+   "ser: hora, data ou onde acontece um evento",
+   "estar + gerúndio: ação em andamento"
+  ],
+  "nota": "Estar diz como a coisa está agora, o estado ou o resultado de algo: la cena está lista, el espejo está roto, ¿cómo estás?\nCom comida, estar é o gosto deste prato: la sopa está rica (gostosa), el café está muy dulce.\nCom verde e maduro, estar é o ponto da fruta: los plátanos están verdes (não estão maduros).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "La cena está lista.",
+    "w": "está",
+    "de": "u007",
+    "exp": "está: o estado do jantar agora (pronto); es lista seria «é esperta».",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Mi hermana está embarazada.",
+    "w": "está",
+    "de": "u040",
+    "exp": "está: a gravidez é um estado.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "El espejo está roto.",
+    "w": "está",
+    "de": "v084",
+    "exp": "está: o resultado de algo que aconteceu (quebrou).",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "La piña está muy madura.",
+    "w": "está",
+    "de": "u129",
+    "exp": "está: o ponto da fruta agora.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Los plátanos todavía están verdes.",
+    "w": "están",
+    "de": "u516",
+    "exp": "están: verde aqui é «não maduro», um estado; son verdes falaria da cor.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Este café está demasiado dulce.",
+    "w": "está",
+    "de": "u576",
+    "exp": "está: o gosto deste café, agora.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "La casa está muy oscura.",
+    "w": "está",
+    "de": "u352",
+    "exp": "está: a casa está escura agora, com a luz que tem neste momento.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Hola, ¿cómo estás?",
+    "w": "estás",
+    "de": "b004",
+    "exp": "estás: pergunta como a pessoa está agora.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Estás muy flaco, ¿comes bien?",
+    "w": "Estás",
+    "de": "u386",
+    "exp": "estás: ele está magro agora, não é magro de nascença.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g004",
+  "tipo": "conceito",
+  "familia": "ser-estar",
+  "publicos": [
+   "pt"
+  ],
+  "es": "estar: ubicación",
+  "pt": "estar: onde algo ou alguém está",
+  "aceitas": [
+   "estar lugar",
+   "lugar",
+   "onde esta"
+  ],
+  "distratores": [
+   "ser: o que a coisa é (identidade, origem, característica)",
+   "estar: estado ou condição do momento",
+   "ser: hora, data ou onde acontece um evento",
+   "estar + gerúndio: ação em andamento"
+  ],
+  "nota": "Para dizer onde algo ou alguém está, sempre estar: ¿dónde está el baño?, las tijeras están en el cajón.\nO português diz «onde fica»; o espanhol, ¿dónde está?\nO lugar de um evento, ao contrário, é com ser: la fiesta es en mi casa.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "¿Dónde está el baño?",
+    "w": "está",
+    "de": "f072",
+    "exp": "está: onde fica uma coisa é com estar.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "¿Dónde está la estación de tren?",
+    "w": "está",
+    "de": "b029",
+    "exp": "está: o lugar da estação.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "ser: hora, data ou onde acontece um evento",
+     "estar: estado ou condição do momento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Las tijeras están en el primer cajón.",
+    "w": "están",
+    "de": "u149",
+    "exp": "están: onde a tesoura está (na gaveta).",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "La sopa está en la olla.",
+    "w": "está",
+    "de": "u507",
+    "exp": "está: onde a sopa está (na panela).",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "El aula está en el segundo piso.",
+    "w": "está",
+    "de": "u051",
+    "exp": "está: o lugar da sala de aula; «fica» em português.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Los aseos están al fondo.",
+    "w": "están",
+    "de": "u338",
+    "exp": "están: onde ficam os banheiros.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "La farmacia está a la vuelta de la esquina.",
+    "w": "está",
+    "de": "u237",
+    "exp": "está: o lugar da farmácia.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "¿Está lejos de aquí?",
+    "w": "Está",
+    "de": "b031",
+    "exp": "está: a distância de um lugar também é com estar («é longe» = está lejos).",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "ser: hora, data ou onde acontece um evento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g005",
+  "tipo": "conceito",
+  "familia": "ser-estar",
+  "publicos": [
+   "pt"
+  ],
+  "es": "ser: hora, fecha, evento",
+  "pt": "ser: hora, data ou onde acontece um evento",
+  "aceitas": [
+   "ser hora",
+   "hora",
+   "data",
+   "hora e data",
+   "evento"
+  ],
+  "distratores": [
+   "ser: o que a coisa é (identidade, origem, característica)",
+   "estar: estado ou condição do momento",
+   "estar: onde algo ou alguém está",
+   "estar + gerúndio: ação em andamento"
+  ],
+  "nota": "Hora e data são com ser: son las tres, es tarde, mi cumpleaños es en julio.\nNa hora, o verbo vai para o plural (son las tres); só es la una.\nO lugar de um evento também é com ser: la fiesta es en mi casa (a festa acontece lá). Já o lugar de uma coisa ou de uma pessoa é com estar.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Son las tres y media.",
+    "w": "Son",
+    "de": "u441",
+    "exp": "son: a hora é com ser, no plural (só es la una).",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "estar: onde algo ou alguém está",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "¿Qué hora es?",
+    "w": "es",
+    "de": "b028",
+    "exp": "es: perguntar a hora é com ser.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "estar: onde algo ou alguém está",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Mi cumpleaños es en julio.",
+    "w": "es",
+    "de": "u519",
+    "exp": "es: a data do aniversário.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "estar: estado ou condição do momento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Serán las diez.",
+    "w": "Serán",
+    "de": "v054",
+    "exp": "serán: a hora, com ser no futuro de suposição (devem ser dez).",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "estar: onde algo ou alguém está",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "Cuelga el teléfono, que es tarde.",
+    "w": "es",
+    "de": "u304",
+    "exp": "es tarde: a hora, com ser.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "estar: onde algo ou alguém está",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "La fiesta es en mi casa.",
+    "w": "es",
+    "de": "u443",
+    "exp": "es: onde a festa acontece; para uma coisa ou pessoa seria está.",
+    "distratores": [
+     "estar: onde algo ou alguém está",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "estar + gerúndio: ação em andamento"
+    ]
+   },
+   {
+    "es": "No es tarde sino temprano.",
+    "w": "es",
+    "de": "u345",
+    "exp": "es tarde, es temprano: a hora, com ser.",
+    "distratores": [
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: estado ou condição do momento",
+     "estar: onde algo ou alguém está",
+     "estar + gerúndio: ação em andamento"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g006",
+  "tipo": "conceito",
+  "familia": "ser-estar",
+  "publicos": [
+   "pt"
+  ],
+  "es": "estar + gerundio",
+  "pt": "estar + gerúndio: ação em andamento",
+  "aceitas": [
+   "estar gerundio",
+   "gerundio",
+   "acao em andamento"
+  ],
+  "distratores": [
+   "estar: estado ou condição do momento",
+   "ser: o que a coisa é (identidade, origem, característica)",
+   "estar: onde algo ou alguém está",
+   "ser: hora, data ou onde acontece um evento"
+  ],
+  "nota": "Estar + gerúndio é a ação em andamento, como no Brasil: estoy comiendo, está lloviendo.\nO gerúndio: -ar → -ando (juntando); -er e -ir → -iendo (aprendiendo, diciendo, durmiendo); entre vogais, -yendo (leyendo).\nNunca ser + gerúndio.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Estoy comiendo.",
+    "w": "Estoy",
+    "de": "v048",
+    "exp": "estoy: com comiendo, a ação que está acontecendo agora.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento"
+    ]
+   },
+   {
+    "es": "Está lloviendo a cántaros.",
+    "w": "Está",
+    "de": "f080",
+    "exp": "está: com lloviendo, a chuva que está caindo agora.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento"
+    ]
+   },
+   {
+    "es": "Estoy leyendo una novela policíaca.",
+    "w": "Estoy",
+    "de": "u254",
+    "exp": "estoy: com leyendo, a leitura em andamento.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento"
+    ]
+   },
+   {
+    "es": "Estoy aprendiendo sueco.",
+    "w": "Estoy",
+    "de": "u515",
+    "exp": "estoy: com aprendiendo, o que está em curso nesta fase.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento"
+    ]
+   },
+   {
+    "es": "¿Qué estás diciendo?",
+    "w": "estás",
+    "de": "v113",
+    "exp": "estás: com diciendo, o que a pessoa está dizendo agora.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento"
+    ]
+   },
+   {
+    "es": "Estaba durmiendo cuando llamaste.",
+    "w": "Estaba",
+    "de": "v088",
+    "exp": "estaba: com durmiendo, a ação em andamento no passado.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento"
+    ]
+   },
+   {
+    "es": "Me estás tomando el pelo.",
+    "w": "estás",
+    "de": "f127",
+    "exp": "estás: com tomando, o que a pessoa está fazendo agora.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento"
+    ]
+   },
+   {
+    "es": "Estoy juntando dinero para un coche.",
+    "w": "Estoy",
+    "de": "u606",
+    "exp": "estoy: com juntando, o que está em curso.",
+    "distratores": [
+     "estar: estado ou condição do momento",
+     "ser: o que a coisa é (identidade, origem, característica)",
+     "estar: onde algo ou alguém está",
+     "ser: hora, data ou onde acontece um evento"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g007",
+  "tipo": "conceito",
+  "familia": "apocope",
+  "publicos": [
+   "pt"
+  ],
+  "es": "apócope: buen, primer, algún",
+  "pt": "encurta: vem antes de substantivo masculino singular",
+  "aceitas": [
+   "antes de substantivo masculino singular",
+   "masculino singular",
+   "encurta"
+  ],
+  "distratores": [
+   "fica inteira: vem antes de substantivo feminino ou plural",
+   "fica inteira: vem depois do substantivo ou sem ele",
+   "encurta antes de qualquer substantivo singular, como gran",
+   "é advérbio (como bien), por isso não muda"
+  ],
+  "nota": "Bueno, malo, primero, tercero, alguno, ninguno e uno perdem o -o logo antes de um substantivo masculino singular: buen día, mal tiempo, primer piso, algún día, ningún problema, un libro.\nAlgún e ningún ganham acento ao encurtar.\nNo feminino e no plural não encurtam: buena idea, buenos días.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Llevo un buen rato esperando.",
+    "w": "buen",
+    "de": "f156",
+    "exp": "buen: antes de rato, masculino singular.",
+    "distratores": [
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "Ojalá haga buen tiempo mañana.",
+    "w": "buen",
+    "de": "v109",
+    "exp": "buen: antes de tiempo, masculino singular.",
+    "distratores": [
+     "é advérbio (como bien), por isso não muda",
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "encurta antes de qualquer substantivo singular, como gran"
+    ]
+   },
+   {
+    "es": "¡Que tengas un buen día!",
+    "w": "buen",
+    "de": "b012",
+    "exp": "buen: antes de día, que é masculino.",
+    "distratores": [
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "¡Buen provecho!",
+    "w": "Buen",
+    "de": "b040",
+    "exp": "buen: antes de provecho, masculino singular.",
+    "distratores": [
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "Tiene muy buen gusto.",
+    "w": "buen",
+    "de": "u668",
+    "exp": "buen: antes de gusto; o muy antes não muda nada.",
+    "distratores": [
+     "é advérbio (como bien), por isso não muda",
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "encurta antes de qualquer substantivo singular, como gran"
+    ]
+   },
+   {
+    "es": "Las tijeras están en el primer cajón.",
+    "w": "primer",
+    "de": "u149",
+    "exp": "primer: antes de cajón, masculino singular (no feminino, la primera vez).",
+    "distratores": [
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "No hay ningún enchufe cerca de la cama.",
+    "w": "ningún",
+    "de": "u150",
+    "exp": "ningún: antes de enchufe, masculino singular, e com acento.",
+    "distratores": [
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g008",
+  "tipo": "conceito",
+  "familia": "apocope",
+  "publicos": [
+   "pt"
+  ],
+  "es": "sin apócope: buena, buenos, alguna",
+  "pt": "fica inteira: vem antes de substantivo feminino ou plural",
+  "aceitas": [
+   "antes de substantivo feminino ou plural",
+   "feminino ou plural",
+   "feminino",
+   "plural"
+  ],
+  "distratores": [
+   "encurta: vem antes de substantivo masculino singular",
+   "fica inteira: vem depois do substantivo ou sem ele",
+   "encurta antes de qualquer substantivo singular, como gran",
+   "é advérbio (como bien), por isso não muda"
+  ],
+  "nota": "A forma curta é só do masculino singular. Antes de substantivo feminino ou plural, a palavra fica inteira: buena pinta, alguna pregunta, buenos días, primeras horas.\nTarde e noche são femininos: buenas tardes, buenas noches («buen tarde» não existe).\nA exceção é grande, que vira gran antes de qualquer singular: un gran día, una gran idea.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Tiene buena pinta.",
+    "w": "buena",
+    "de": "f184",
+    "exp": "buena: pinta é feminino, e no feminino não encurta.",
+    "distratores": [
+     "encurta: vem antes de substantivo masculino singular",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "¿Tienes alguna pregunta?",
+    "w": "alguna",
+    "de": "u396",
+    "exp": "alguna: pregunta é feminino; no masculino seria algún.",
+    "distratores": [
+     "encurta: vem antes de substantivo masculino singular",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "¡Buenos días!",
+    "w": "Buenos",
+    "de": "b001",
+    "exp": "buenos: días está no plural; no singular, buen día.",
+    "distratores": [
+     "encurta: vem antes de substantivo masculino singular",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "¡Buenas tardes!",
+    "w": "Buenas",
+    "de": "b002",
+    "exp": "buenas: tardes é feminino e plural.",
+    "distratores": [
+     "encurta: vem antes de substantivo masculino singular",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "¡Buenas noches!",
+    "w": "Buenas",
+    "de": "b003",
+    "exp": "buenas: noches é feminino e plural.",
+    "distratores": [
+     "encurta: vem antes de substantivo masculino singular",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem depois do substantivo ou sem ele",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g009",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "pretérito indefinido (perfecto simple)",
+  "pt": "pretérito indefinido (hablé)",
+  "aceitas": [
+   "indefinido",
+   "preterito indefinido",
+   "perfeito simples",
+   "preterito perfeito simples"
+  ],
+  "distratores": [
+   "pretérito perfeito composto (he hablado)",
+   "presente do indicativo (hablo)",
+   "pretérito imperfeito (hablaba)",
+   "mais-que-perfeito (había hablado)"
+  ],
+  "nota": "A ação acabada, num tempo já fechado: hablé, hablaste, habló, hablamos, hablaron; comí, comió, comieron.\nMuitos irregulares têm raiz própria e perdem o acento: hice, hizo; dije, dijo; traje, trajo; conduje, condujo.\nDormir e pedir mudam a vogal na 3ª pessoa: durmió, pidió; e o i entre vogais vira y: leyó, leyeron.\nNa Espanha é o tempo de ayer, la semana pasada; para o que é de hoy, o perfeito composto (he comido).",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Ella comió temprano.",
+    "w": "comió",
+    "de": "v042",
+    "exp": "comió: indefinido de comer, uma ação acabada (ela comeu).",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "pretérito perfeito composto (he hablado)",
+     "pretérito imperfeito (hablaba)",
+     "mais-que-perfeito (había hablado)"
+    ]
+   },
+   {
+    "es": "Ellos hicieron todo.",
+    "w": "hicieron",
+    "de": "v005",
+    "exp": "hicieron: indefinido de hacer, de raiz irregular (hic-).",
+    "distratores": [
+     "pretérito perfeito composto (he hablado)",
+     "pretérito imperfeito (hablaba)",
+     "imperfeito do subjuntivo (hablara)",
+     "mais-que-perfeito (había hablado)"
+    ]
+   },
+   {
+    "es": "Él dijo la verdad.",
+    "w": "dijo",
+    "de": "v013",
+    "exp": "dijo: indefinido de decir (dije, dijo, dijeron), sem acento.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "pretérito perfeito composto (he hablado)",
+     "pretérito imperfeito (hablaba)",
+     "mais-que-perfeito (había hablado)"
+    ]
+   },
+   {
+    "es": "Él trajo el libro.",
+    "w": "trajo",
+    "de": "v022",
+    "exp": "trajo: indefinido de traer (traje, trajo, trajeron).",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "pretérito perfeito composto (he hablado)",
+     "pretérito imperfeito (hablaba)",
+     "imperfeito do subjuntivo (hablara)"
+    ]
+   },
+   {
+    "es": "Ellos durmieron bien.",
+    "w": "durmieron",
+    "de": "v029",
+    "exp": "durmieron: indefinido de dormir; na 3ª pessoa o o vira u.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "pretérito perfeito composto (he hablado)",
+     "pretérito imperfeito (hablaba)",
+     "imperfeito do subjuntivo (hablara)"
+    ]
+   },
+   {
+    "es": "Él pidió la cuenta.",
+    "w": "pidió",
+    "de": "v031",
+    "exp": "pidió: indefinido de pedir; na 3ª pessoa o e vira i.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "pretérito perfeito composto (he hablado)",
+     "pretérito imperfeito (hablaba)",
+     "mais-que-perfeito (había hablado)"
+    ]
+   },
+   {
+    "es": "La semana pasada llovió mucho.",
+    "w": "llovió",
+    "de": "u589",
+    "exp": "llovió: indefinido de llover; la semana pasada é um tempo já fechado.",
+    "distratores": [
+     "pretérito perfeito composto (he hablado)",
+     "pretérito imperfeito (hablaba)",
+     "presente do indicativo (hablo)",
+     "mais-que-perfeito (había hablado)"
+    ]
+   },
+   {
+    "es": "Me desperté a las seis.",
+    "w": "desperté",
+    "de": "u112",
+    "exp": "desperté: indefinido de despertarse, 1ª pessoa, com -é tônico.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "pretérito perfeito composto (he hablado)",
+     "pretérito imperfeito (hablaba)",
+     "presente do subjuntivo (hable)"
+    ]
+   },
+   {
+    "es": "Condujo toda la noche.",
+    "w": "Condujo",
+    "de": "v064",
+    "exp": "condujo: indefinido de conducir (conduje, condujo, condujeron).",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)",
+     "pretérito perfeito composto (he hablado)",
+     "mais-que-perfeito (había hablado)"
+    ]
+   },
+   {
+    "es": "Ellos leyeron el libro.",
+    "w": "leyeron",
+    "de": "v078",
+    "exp": "leyeron: indefinido de leer; o i entre vogais vira y.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "pretérito perfeito composto (he hablado)",
+     "pretérito imperfeito (hablaba)",
+     "imperfeito do subjuntivo (hablara)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g010",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "imperativo afirmativo",
+  "pt": "imperativo afirmativo (habla)",
+  "aceitas": [
+   "imperativo",
+   "imperativo afirmativo"
+  ],
+  "distratores": [
+   "imperativo negativo (no hables)",
+   "presente do indicativo (hablo)",
+   "presente do subjuntivo (hable)",
+   "pretérito indefinido (hablé)"
+  ],
+  "nota": "O tú afirmativo é igual à 3ª pessoa do presente: habla, come, abre. Oito são curtos: ven, haz, pon, ten, sal, di, ve, sé.\nOs pronomes vêm colados no fim: dime, siéntate, échame.\nO usted usa o subjuntivo: hable, venga, siéntese. O português do Brasil mistura os dois; em espanhol, deja é de tú, deje de usted.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "¡Ven aquí!",
+    "w": "Ven",
+    "de": "v037",
+    "exp": "ven: o imperativo curto de venir (vem, venha).",
+    "distratores": [
+     "imperativo negativo (no hables)",
+     "presente do indicativo (hablo)",
+     "presente do subjuntivo (hable)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "¡Haz lo que quieras!",
+    "w": "Haz",
+    "de": "v038",
+    "exp": "haz: o imperativo curto de hacer; quieras, depois, é subjuntivo.",
+    "distratores": [
+     "imperativo negativo (no hables)",
+     "presente do indicativo (hablo)",
+     "presente do subjuntivo (hable)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Pon la mesa, por favor.",
+    "w": "Pon",
+    "de": "v062",
+    "exp": "pon: o imperativo curto de poner.",
+    "distratores": [
+     "imperativo negativo (no hables)",
+     "presente do indicativo (hablo)",
+     "presente do subjuntivo (hable)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Ten cuidado con el perro.",
+    "w": "Ten",
+    "de": "v097",
+    "exp": "ten: o imperativo curto de tener.",
+    "distratores": [
+     "imperativo negativo (no hables)",
+     "presente do indicativo (hablo)",
+     "presente do subjuntivo (hable)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Sal de ahí ahora mismo.",
+    "w": "Sal",
+    "de": "v098",
+    "exp": "sal: o imperativo curto de salir (sai daí).",
+    "distratores": [
+     "imperativo negativo (no hables)",
+     "presente do indicativo (hablo)",
+     "presente do subjuntivo (hable)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Dime la verdad.",
+    "w": "Dime",
+    "de": "v099",
+    "exp": "dime: di, o imperativo de decir, + me colado no fim.",
+    "distratores": [
+     "imperativo negativo (no hables)",
+     "presente do indicativo (hablo)",
+     "presente do subjuntivo (hable)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Ve tú primero.",
+    "w": "Ve",
+    "de": "v100",
+    "exp": "ve: o imperativo de ir (vai você); não é o ve de ver (ele vê).",
+    "distratores": [
+     "imperativo negativo (no hables)",
+     "presente do indicativo (hablo)",
+     "presente do subjuntivo (hable)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Sé bueno con tu hermana.",
+    "w": "Sé",
+    "de": "v101",
+    "exp": "sé: o imperativo de ser (seja); tem o mesmo acento de sé, «eu sei».",
+    "distratores": [
+     "imperativo negativo (no hables)",
+     "presente do indicativo (hablo)",
+     "presente do subjuntivo (hable)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "Siéntate en esa silla.",
+    "w": "Siéntate",
+    "de": "u122",
+    "exp": "siéntate: sienta + te, o pronome colado; por isso ganha acento.",
+    "distratores": [
+     "imperativo negativo (no hables)",
+     "presente do indicativo (hablo)",
+     "presente do subjuntivo (hable)",
+     "pretérito indefinido (hablé)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g011",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "es": "lo, la (complemento directo)",
+  "pt": "lo, la: objeto direto",
+  "aceitas": [
+   "lo",
+   "objeto direto",
+   "complemento direto"
+  ],
+  "distratores": [
+   "le, les: objeto indireto",
+   "se no lugar de le (antes de lo, la)",
+   "se reflexivo",
+   "se impessoal"
+  ],
+  "nota": "Lo, la, los, las são o objeto direto, o que recebe a ação: lo vi (eu o vi, «vi ele»).\nVêm antes do verbo conjugado (no lo veo) e colados no infinitivo e no imperativo afirmativo (hacerlo, hazlo).\nO lo neutro retoma uma ideia, «isso»: no lo sé, lo hago yo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Yo lo vi ayer.",
+    "w": "lo",
+    "de": "v024",
+    "exp": "lo: ele, quem eu vi (objeto direto).",
+    "distratores": [
+     "le, les: objeto indireto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se impessoal"
+    ]
+   },
+   {
+    "es": "Hace dos años que no lo veo.",
+    "w": "lo",
+    "de": "f197",
+    "exp": "lo: ele, quem não vejo (objeto direto).",
+    "distratores": [
+     "le, les: objeto indireto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se impessoal"
+    ]
+   },
+   {
+    "es": "Lo echaron del trabajo.",
+    "w": "Lo",
+    "de": "u452",
+    "exp": "lo: ele, quem foi mandado embora (objeto direto de echar).",
+    "distratores": [
+     "le, les: objeto indireto",
+     "se reflexivo",
+     "se no lugar de le (antes de lo, la)",
+     "se impessoal"
+    ]
+   },
+   {
+    "es": "Lo llevaron a urgencias de madrugada.",
+    "w": "Lo",
+    "de": "u226",
+    "exp": "lo: ele, quem foi levado (objeto direto de llevar).",
+    "distratores": [
+     "le, les: objeto indireto",
+     "se reflexivo",
+     "se no lugar de le (antes de lo, la)",
+     "se impessoal"
+    ]
+   },
+   {
+    "es": "Lo ingresaron en el hospital.",
+    "w": "Lo",
+    "de": "u308",
+    "exp": "lo: ele, quem foi internado (objeto direto).",
+    "distratores": [
+     "le, les: objeto indireto",
+     "se reflexivo",
+     "se no lugar de le (antes de lo, la)",
+     "se impessoal"
+    ]
+   },
+   {
+    "es": "No lo sé.",
+    "w": "lo",
+    "de": "b021",
+    "exp": "lo: o neutro, «isso», o que não sei.",
+    "distratores": [
+     "le, les: objeto indireto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se impessoal"
+    ]
+   },
+   {
+    "es": "No lo hagas.",
+    "w": "lo",
+    "de": "v052",
+    "exp": "lo: o neutro, «isso», o que não se deve fazer.",
+    "distratores": [
+     "le, les: objeto indireto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se impessoal"
+    ]
+   },
+   {
+    "es": "Está bien, lo hago yo.",
+    "w": "lo",
+    "de": "u487",
+    "exp": "lo: o neutro, «isso», o que eu faço.",
+    "distratores": [
+     "le, les: objeto indireto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se impessoal"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g012",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "es": "le (complemento indirecto)",
+  "pt": "le, les: objeto indireto",
+  "aceitas": [
+   "le",
+   "objeto indireto",
+   "complemento indireto"
+  ],
+  "distratores": [
+   "lo, la: objeto direto",
+   "se no lugar de le (antes de lo, la)",
+   "se reflexivo",
+   "se do acidente (se me cayó)"
+  ],
+  "nota": "Le, les são o objeto indireto, a pessoa a quem algo se dá, se diz ou acontece: le di el dinero (dei o dinheiro a ele), le escribí.\nNão variam em gênero: le serve para ele, ela e usted.\nAparecem também com gustar, encantar, faltar e doler: le encanta, le falta sal.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Yo le di el dinero.",
+    "w": "le",
+    "de": "v023",
+    "exp": "le: a ele, a quem dei o dinheiro; el dinero é o objeto direto.",
+    "distratores": [
+     "lo, la: objeto direto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se do acidente (se me cayó)"
+    ]
+   },
+   {
+    "es": "Le dieron una beca para estudiar fuera.",
+    "w": "Le",
+    "de": "u169",
+    "exp": "le: a ele, quem recebeu a bolsa.",
+    "distratores": [
+     "lo, la: objeto direto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se do acidente (se me cayó)"
+    ]
+   },
+   {
+    "es": "Le escribí, pero no me contestó.",
+    "w": "Le",
+    "de": "u198",
+    "exp": "le: a ele, a quem escrevi (escribir a alguien).",
+    "distratores": [
+     "lo, la: objeto direto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se do acidente (se me cayó)"
+    ]
+   },
+   {
+    "es": "Le sacaron sangre para el análisis.",
+    "w": "Le",
+    "de": "u415",
+    "exp": "le: dele, de quem tiraram sangue; sangre é o objeto direto.",
+    "distratores": [
+     "lo, la: objeto direto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se do acidente (se me cayó)"
+    ]
+   },
+   {
+    "es": "Le tengo mucho respeto.",
+    "w": "Le",
+    "de": "u551",
+    "exp": "le: a ele, a quem tenho respeito; respeto é o objeto direto.",
+    "distratores": [
+     "lo, la: objeto direto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se do acidente (se me cayó)"
+    ]
+   },
+   {
+    "es": "Le encanta el arte moderno.",
+    "w": "Le",
+    "de": "u367",
+    "exp": "le: a ele, com encantar (a arte lhe encanta).",
+    "distratores": [
+     "lo, la: objeto direto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se do acidente (se me cayó)"
+    ]
+   },
+   {
+    "es": "La sopa está sosa, le falta sal.",
+    "w": "le",
+    "de": "u064",
+    "exp": "le: à sopa, a quem falta sal, com faltar.",
+    "distratores": [
+     "lo, la: objeto direto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se do acidente (se me cayó)"
+    ]
+   },
+   {
+    "es": "Le dio un ataque de risa.",
+    "w": "Le",
+    "de": "u411",
+    "exp": "le: a ele, a quem deu o ataque de riso.",
+    "distratores": [
+     "lo, la: objeto direto",
+     "se no lugar de le (antes de lo, la)",
+     "se reflexivo",
+     "se do acidente (se me cayó)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g013",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "pretérito perfecto compuesto",
+  "pt": "pretérito perfeito composto (he hablado)",
+  "aceitas": [
+   "perfeito composto",
+   "preterito perfeito composto",
+   "perfecto compuesto"
+  ],
+  "distratores": [
+   "pretérito indefinido (hablé)",
+   "mais-que-perfeito (había hablado)",
+   "presente do indicativo (hablo)",
+   "pretérito imperfeito (hablaba)"
+  ],
+  "nota": "Haber no presente + particípio: he, has, ha, hemos, habéis, han + hablado, comido, vivido. O auxiliar é sempre haber, nunca tener.\nNa Espanha, é o passado de um tempo que ainda não acabou (hoy, esta semana, ya, todavía no); em boa parte da América se usa mais o indefinido: ¿qué hiciste hoy?\nNão é o «tenho falado» do português: he comido é «comi».\nParticípios irregulares: hecho, dicho, visto, puesto, vuelto, escrito, abierto.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Todavía no he comido.",
+    "w": "he comido",
+    "de": "u052",
+    "exp": "he comido: haber (he) + particípio; todavía no pede o perfeito composto.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "mais-que-perfeito (había hablado)",
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   },
+   {
+    "es": "Hemos terminado.",
+    "w": "Hemos terminado",
+    "de": "v047",
+    "exp": "hemos terminado: haber + particípio (nós terminamos).",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "mais-que-perfeito (había hablado)",
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   },
+   {
+    "es": "¿Has visto mis llaves?",
+    "w": "Has visto",
+    "de": "v102",
+    "exp": "has visto: haber + visto, o particípio irregular de ver.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "mais-que-perfeito (había hablado)",
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   },
+   {
+    "es": "Ya he vuelto.",
+    "w": "he vuelto",
+    "de": "v104",
+    "exp": "he vuelto: haber + vuelto, o particípio irregular de volver.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "mais-que-perfeito (había hablado)",
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   },
+   {
+    "es": "He escrito una carta a mi abuela.",
+    "w": "He escrito",
+    "de": "v105",
+    "exp": "he escrito: haber + escrito, o particípio irregular de escribir.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "mais-que-perfeito (había hablado)",
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   },
+   {
+    "es": "¿Quién ha abierto la ventana?",
+    "w": "ha abierto",
+    "de": "v106",
+    "exp": "ha abierto: haber + abierto, o particípio irregular de abrir.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "mais-que-perfeito (había hablado)",
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   },
+   {
+    "es": "¿Qué has hecho hoy?",
+    "w": "has hecho",
+    "de": "v108",
+    "exp": "has hecho: haber + hecho (de hacer); com hoy, na Espanha, o composto.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "mais-que-perfeito (había hablado)",
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   },
+   {
+    "es": "He cambiado de idea.",
+    "w": "He cambiado",
+    "de": "u479",
+    "exp": "he cambiado: haber + particípio (mudei de ideia).",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "mais-que-perfeito (había hablado)",
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   },
+   {
+    "es": "Todavía no he hecho la maleta.",
+    "w": "he hecho",
+    "de": "u162",
+    "exp": "he hecho: haber + hecho; todavía no pede o composto.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "mais-que-perfeito (había hablado)",
+     "presente do indicativo (hablo)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g014",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "pretérito imperfecto",
+  "pt": "pretérito imperfeito (hablaba)",
+  "aceitas": [
+   "imperfeito",
+   "preterito imperfeito",
+   "imperfeito do indicativo"
+  ],
+  "distratores": [
+   "pretérito indefinido (hablé)",
+   "condicional (hablaría)",
+   "presente do indicativo (hablo)",
+   "imperfeito do subjuntivo (hablara)"
+  ],
+  "nota": "O passado que dura ou se repete, o pano de fundo: hablaba, hablabas, hablaba, hablábamos, hablaban; comía, vivía, comían.\nSó três irregulares: ser (era), ir (iba) e ver (veía).\nO -ía lembra o condicional, mas o condicional leva o infinitivo inteiro: comía (comia) × comería (comeria).\nA 1ª e a 3ª pessoa são iguais: yo comía, él comía.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Antes yo iba mucho.",
+    "w": "iba",
+    "de": "v010",
+    "exp": "iba: imperfeito de ir, um dos três irregulares; antes marca o hábito.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "presente do indicativo (hablo)",
+     "condicional (hablaría)",
+     "mais-que-perfeito (había hablado)"
+    ]
+   },
+   {
+    "es": "Nosotros éramos amigos.",
+    "w": "éramos",
+    "de": "v011",
+    "exp": "éramos: imperfeito de ser, outro dos três irregulares.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "presente do indicativo (hablo)",
+     "condicional (hablaría)",
+     "imperfeito do subjuntivo (hablara)"
+    ]
+   },
+   {
+    "es": "Antes yo veía más.",
+    "w": "veía",
+    "de": "v025",
+    "exp": "veía: imperfeito de ver (veía, veías, veía…).",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)"
+    ]
+   },
+   {
+    "es": "Yo trabajaba mucho.",
+    "w": "trabajaba",
+    "de": "v044",
+    "exp": "trabajaba: imperfeito de um verbo em -ar, com -aba.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)"
+    ]
+   },
+   {
+    "es": "Mientras comía, sonó el teléfono.",
+    "w": "comía",
+    "de": "v082",
+    "exp": "comía: imperfeito, a ação de fundo; sonó, no indefinido, é o que a interrompe.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)"
+    ]
+   },
+   {
+    "es": "Los niños brincaban de alegría.",
+    "w": "brincaban",
+    "de": "u049",
+    "exp": "brincaban: imperfeito de brincar (pular), a cena que durava.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)"
+    ]
+   },
+   {
+    "es": "Mi madre me leía un cuento cada noche.",
+    "w": "leía",
+    "de": "u541",
+    "exp": "leía: imperfeito de leer; cada noche marca o hábito.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "mais-que-perfeito (había hablado)"
+    ]
+   },
+   {
+    "es": "Vivían en una aldea de montaña.",
+    "w": "Vivían",
+    "de": "u424",
+    "exp": "vivían: imperfeito de vivir, um estado que durava.",
+    "distratores": [
+     "pretérito indefinido (hablé)",
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g015",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "perífrasis ir a + infinitivo",
+  "pt": "ir a + infinitivo (voy a hablar)",
+  "aceitas": [
+   "ir a",
+   "ir a infinitivo",
+   "perifrase",
+   "futuro proximo"
+  ],
+  "distratores": [
+   "futuro (hablaré)",
+   "condicional (hablaría)",
+   "presente do subjuntivo (hable)",
+   "pretérito perfeito composto (he hablado)"
+  ],
+  "nota": "Ir no presente + a + infinitivo: voy a llamar, vas a ver, va a llover. É o futuro da conversa, como «vou ligar» no Brasil.\nO a não pode faltar: «voy llamar» não existe.\nO pronome vem antes de tudo ou colado no infinitivo: se va a casar = va a casarse.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Voy a darme una ducha.",
+    "w": "Voy a darme",
+    "de": "u009",
+    "exp": "voy a darme: ir + a + infinitivo, o plano para daqui a pouco.",
+    "distratores": [
+     "futuro (hablaré)",
+     "condicional (hablaría)",
+     "presente do subjuntivo (hable)",
+     "pretérito perfeito composto (he hablado)"
+    ]
+   },
+   {
+    "es": "Llévate el paraguas, va a llover.",
+    "w": "va a llover",
+    "de": "u144",
+    "exp": "va a llover: ir + a + infinitivo, o que está para acontecer.",
+    "distratores": [
+     "futuro (hablaré)",
+     "condicional (hablaría)",
+     "presente do subjuntivo (hable)",
+     "pretérito perfeito composto (he hablado)"
+    ]
+   },
+   {
+    "es": "Mi hermano se va a casar con su novia.",
+    "w": "va a casar",
+    "de": "u428",
+    "exp": "va a casar: ir + a + infinitivo, com o se antes de tudo.",
+    "distratores": [
+     "futuro (hablaré)",
+     "condicional (hablaría)",
+     "presente do subjuntivo (hable)",
+     "pretérito perfeito composto (he hablado)"
+    ]
+   },
+   {
+    "es": "Parece que va a llover.",
+    "w": "va a llover",
+    "de": "u473",
+    "exp": "va a llover: ir + a + infinitivo, a previsão.",
+    "distratores": [
+     "futuro (hablaré)",
+     "condicional (hablaría)",
+     "presente do subjuntivo (hable)",
+     "pretérito perfeito composto (he hablado)"
+    ]
+   },
+   {
+    "es": "Voy a ser franc{o|a} contigo.",
+    "w": "Voy a ser",
+    "de": "u521",
+    "exp": "voy a ser: ir + a + infinitivo, o que a pessoa já decidiu fazer.",
+    "distratores": [
+     "futuro (hablaré)",
+     "condicional (hablaría)",
+     "presente do subjuntivo (hable)",
+     "pretérito perfeito composto (he hablado)"
+    ]
+   },
+   {
+    "es": "Como sigas así, te vas a caer.",
+    "w": "vas a caer",
+    "de": "f190",
+    "exp": "vas a caer: ir + a + infinitivo, com o te antes de tudo.",
+    "distratores": [
+     "futuro (hablaré)",
+     "condicional (hablaría)",
+     "presente do subjuntivo (hable)",
+     "pretérito perfeito composto (he hablado)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g016",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "futuro simple",
+  "pt": "futuro (hablaré)",
+  "aceitas": [
+   "futuro",
+   "futuro do indicativo",
+   "futuro simples"
+  ],
+  "distratores": [
+   "condicional (hablaría)",
+   "imperfeito do subjuntivo (hablara)",
+   "presente do indicativo (hablo)",
+   "ir a + infinitivo (voy a hablar)"
+  ],
+  "nota": "O infinitivo inteiro + -é, -ás, -á, -emos, -éis, -án: hablaré, comerás, vivirá.\nAlguns encurtam a raiz: tendré, pondré, saldré, haré, diré, podré, sabré.\nNa fala, como no Brasil, muitas vezes se diz ir a + infinitivo (voy a hablar).\nO acento muda o tempo: hablará (falará) × hablara (falasse, imperfeito do subjuntivo).",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Ellos estudiarán mañana.",
+    "w": "estudiarán",
+    "de": "v045",
+    "exp": "estudiarán: o infinitivo estudiar + -án.",
+    "distratores": [
+     "condicional (hablaría)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do indicativo (hablo)",
+     "ir a + infinitivo (voy a hablar)"
+    ]
+   },
+   {
+    "es": "Tendré más tiempo para ti.",
+    "w": "Tendré",
+    "de": "v089",
+    "exp": "tendré: futuro de tener, de raiz curta (tendr-).",
+    "distratores": [
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do subjuntivo (hable)"
+    ]
+   },
+   {
+    "es": "Saldré de casa a las ocho.",
+    "w": "Saldré",
+    "de": "v091",
+    "exp": "saldré: futuro de salir, de raiz curta (saldr-).",
+    "distratores": [
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Lo haré yo.",
+    "w": "haré",
+    "de": "v092",
+    "exp": "haré: futuro de hacer, de raiz curta (har-).",
+    "distratores": [
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)"
+    ]
+   },
+   {
+    "es": "No podré ir a la fiesta.",
+    "w": "podré",
+    "de": "v093",
+    "exp": "podré: futuro de poder, de raiz curta (podr-).",
+    "distratores": [
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Hablaré con el jefe.",
+    "w": "Hablaré",
+    "de": "v114",
+    "exp": "hablaré: o infinitivo + -é; sem o acento, hablara seria o imperfeito do subjuntivo.",
+    "distratores": [
+     "condicional (hablaría)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do indicativo (hablo)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Comeremos en casa de mis padres.",
+    "w": "Comeremos",
+    "de": "v115",
+    "exp": "comeremos: o infinitivo comer + -emos.",
+    "distratores": [
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "pretérito imperfeito (hablaba)"
+    ]
+   },
+   {
+    "es": "Mañana lloverá en el norte.",
+    "w": "lloverá",
+    "de": "u492",
+    "exp": "lloverá: o infinitivo llover + -á, a previsão do tempo.",
+    "distratores": [
+     "condicional (hablaría)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do indicativo (hablo)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Te llamaré esta noche.",
+    "w": "llamaré",
+    "de": "u493",
+    "exp": "llamaré: o infinitivo llamar + -é.",
+    "distratores": [
+     "condicional (hablaría)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do indicativo (hablo)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Te lo diré mañana.",
+    "w": "diré",
+    "de": "v061",
+    "exp": "diré: futuro de decir, de raiz curta (dir-).",
+    "distratores": [
+     "condicional (hablaría)",
+     "presente do indicativo (hablo)",
+     "pretérito indefinido (hablé)",
+     "presente do subjuntivo (hable)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g017",
+  "tipo": "conceito",
+  "familia": "apocope",
+  "publicos": [
+   "pt"
+  ],
+  "es": "sin apócope: bueno, grande, uno",
+  "pt": "fica inteira: vem depois do substantivo ou sem ele",
+  "aceitas": [
+   "depois do substantivo",
+   "sem substantivo",
+   "fica inteira"
+  ],
+  "distratores": [
+   "encurta: vem antes de substantivo masculino singular",
+   "fica inteira: vem antes de substantivo feminino ou plural",
+   "encurta antes de qualquer substantivo singular, como gran",
+   "é advérbio (como bien), por isso não muda"
+  ],
+  "nota": "Sem substantivo logo depois, não há o que encurtar: sé bueno, el primero, escoge uno, la nariz muy grande.\nGrande só vira gran antes do substantivo (un gran disgusto); depois dele, fica grande.\nO mesmo com bueno: es un buen libro × el libro es bueno.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Sé bueno con tu hermana.",
+    "w": "bueno",
+    "de": "v101",
+    "exp": "bueno: não vem substantivo depois (seja bonzinho).",
+    "distratores": [
+     "encurta: vem antes de substantivo masculino singular",
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "Se llevó un disgusto muy grande.",
+    "w": "grande",
+    "de": "u018",
+    "exp": "grande: vem depois de disgusto; antes dele seria un gran disgusto.",
+    "distratores": [
+     "encurta antes de qualquer substantivo singular, como gran",
+     "encurta: vem antes de substantivo masculino singular",
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "Tiene la nariz muy grande.",
+    "w": "grande",
+    "de": "u506",
+    "exp": "grande: vem depois de nariz; antes dele seria una gran nariz.",
+    "distratores": [
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "encurta: vem antes de substantivo masculino singular",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "Tienes que escoger uno.",
+    "w": "uno",
+    "de": "u567",
+    "exp": "uno: sozinho, sem substantivo; antes de um, seria un (un libro).",
+    "distratores": [
+     "encurta: vem antes de substantivo masculino singular",
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "encurta antes de qualquer substantivo singular, como gran",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   },
+   {
+    "es": "Estas botas me quedan grandes.",
+    "w": "grandes",
+    "de": "u503",
+    "exp": "grandes: não vem substantivo depois (estão grandes para mim).",
+    "distratores": [
+     "encurta antes de qualquer substantivo singular, como gran",
+     "fica inteira: vem antes de substantivo feminino ou plural",
+     "encurta: vem antes de substantivo masculino singular",
+     "é advérbio (como bien), por isso não muda"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g018",
+  "tipo": "conceito",
+  "familia": "por-para",
+  "publicos": [
+   "pt"
+  ],
+  "es": "por: causa",
+  "pt": "por: causa ou motivo (por quê)",
+  "aceitas": [
+   "causa",
+   "motivo",
+   "por causa"
+  ],
+  "distratores": [
+   "para: finalidade (para quê)",
+   "por: por onde ou por qual meio",
+   "por: troca, preço ou medida",
+   "para: destinatário (para quem)"
+  ],
+  "nota": "Por dá a causa, o que levou a algo: llegué tarde por un atasco, lo hizo por amor.\nPara, ao contrário, aponta o objetivo: lo hizo para ayudar.\nA pergunta que separa os dois: «por quê?» pede por; «para quê?» pede para.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Llegué tarde por un atasco.",
+    "w": "por",
+    "de": "u091",
+    "exp": "por: o engarrafamento é a causa do atraso.",
+    "distratores": [
+     "para: finalidade (para quê)",
+     "por: por onde ou por qual meio",
+     "por: troca, preço ou medida",
+     "para: destinatário (para quem)"
+    ]
+   },
+   {
+    "es": "Lo hizo por amor.",
+    "w": "por",
+    "de": "u592",
+    "exp": "por: o amor é o motivo, não o objetivo.",
+    "distratores": [
+     "para: finalidade (para quê)",
+     "por: por onde ou por qual meio",
+     "por: troca, preço ou medida",
+     "para: destinatário (para quem)"
+    ]
+   },
+   {
+    "es": "Está de baja por una lesión.",
+    "w": "por",
+    "de": "u228",
+    "exp": "por: a lesão é a causa do afastamento.",
+    "distratores": [
+     "para: finalidade (para quê)",
+     "por: por onde ou por qual meio",
+     "por: troca, preço ou medida",
+     "para: destinatário (para quem)"
+    ]
+   },
+   {
+    "es": "Te lo pregunto por curiosidad.",
+    "w": "por",
+    "de": "u674",
+    "exp": "por: a curiosidade é o motivo da pergunta.",
+    "distratores": [
+     "para: finalidade (para quê)",
+     "por: por onde ou por qual meio",
+     "por: troca, preço ou medida",
+     "para: destinatário (para quem)"
+    ]
+   },
+   {
+    "es": "El edificio se cayó por pura desidia.",
+    "w": "por",
+    "de": "u027",
+    "exp": "por: o desleixo foi a causa da queda.",
+    "distratores": [
+     "para: finalidade (para quê)",
+     "por: por onde ou por qual meio",
+     "por: troca, preço ou medida",
+     "para: destinatário (para quem)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g019",
+  "tipo": "conceito",
+  "familia": "por-para",
+  "publicos": [
+   "pt"
+  ],
+  "es": "por: lugar de paso o medio",
+  "pt": "por: por onde ou por qual meio",
+  "aceitas": [
+   "por onde",
+   "meio",
+   "caminho",
+   "lugar de passagem"
+  ],
+  "distratores": [
+   "por: causa ou motivo (por quê)",
+   "para: destino (para onde)",
+   "para: finalidade (para quê)",
+   "por: troca, preço ou medida"
+  ],
+  "nota": "Por diz por onde se passa (por la ventana, por el parque) ou o meio (por internet, por WhatsApp).\nO português junta por e o artigo (pela janela, pelo parque); o espanhol, nunca: por la, por el.\nO destino, para onde se vai, é com para ou a: voy a casa, sale para Madrid.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Compré el billete de tren por internet.",
+    "w": "por",
+    "de": "u060",
+    "exp": "por: o meio da compra (pela internet).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destino (para onde)",
+     "para: finalidade (para quê)",
+     "por: troca, preço ou medida"
+    ]
+   },
+   {
+    "es": "El ascensor no funciona, sube por la escalera.",
+    "w": "por",
+    "de": "u157",
+    "exp": "por: o caminho por onde se sobe (pela escada).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destino (para onde)",
+     "para: finalidade (para quê)",
+     "por: troca, preço ou medida"
+    ]
+   },
+   {
+    "es": "El gato saltó por la ventana.",
+    "w": "por",
+    "de": "u405",
+    "exp": "por: por onde o gato passou (pela janela).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destino (para onde)",
+     "para: finalidade (para quê)",
+     "por: troca, preço ou medida"
+    ]
+   },
+   {
+    "es": "Cruza por el paso de cebra.",
+    "w": "por",
+    "de": "u314",
+    "exp": "por: por onde se atravessa (pela faixa).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destino (para onde)",
+     "para: finalidade (para quê)",
+     "por: troca, preço ou medida"
+    ]
+   },
+   {
+    "es": "Conozco un atajo por el parque.",
+    "w": "por",
+    "de": "u177",
+    "exp": "por: por onde passa o atalho.",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destino (para onde)",
+     "para: finalidade (para quê)",
+     "por: troca, preço ou medida"
+    ]
+   },
+   {
+    "es": "Te mando el enlace por WhatsApp.",
+    "w": "por",
+    "de": "u264",
+    "exp": "por: o meio de envio (pelo WhatsApp).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destino (para onde)",
+     "para: finalidade (para quê)",
+     "por: troca, preço ou medida"
+    ]
+   },
+   {
+    "es": "Nos perdimos por el casco antiguo.",
+    "w": "por",
+    "de": "u315",
+    "exp": "por: o lugar por onde andaram.",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destino (para onde)",
+     "para: finalidade (para quê)",
+     "por: troca, preço ou medida"
+    ]
+   },
+   {
+    "es": "Nos guio por la ciudad.",
+    "w": "por",
+    "de": "u601",
+    "exp": "por: o lugar por onde ele os levou.",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destino (para onde)",
+     "para: finalidade (para quê)",
+     "por: troca, preço ou medida"
+    ]
+   },
+   {
+    "es": "La banda está de gira por Europa.",
+    "w": "por",
+    "de": "u174",
+    "exp": "por: os lugares por onde passa a turnê.",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destino (para onde)",
+     "para: finalidade (para quê)",
+     "por: troca, preço ou medida"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g020",
+  "tipo": "conceito",
+  "familia": "por-para",
+  "publicos": [
+   "pt"
+  ],
+  "es": "para: finalidad",
+  "pt": "para: finalidade (para quê)",
+  "aceitas": [
+   "finalidade",
+   "objetivo",
+   "para que"
+  ],
+  "distratores": [
+   "por: causa ou motivo (por quê)",
+   "para: destinatário (para quem)",
+   "para: destino (para onde)",
+   "por: por onde ou por qual meio"
+  ],
+  "nota": "Para dá a finalidade, o objetivo: para leer, para el zumo, para la tos.\nAntes de infinitivo, como no português: busco un lugar para leer.\nSe a pergunta é «para quê?», é para; se é «por quê?», é por.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "No hay sitio para aparcar.",
+    "w": "para",
+    "de": "u053",
+    "exp": "para: a finalidade do lugar (estacionar).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destinatário (para quem)",
+     "para: destino (para onde)",
+     "por: por onde ou por qual meio"
+    ]
+   },
+   {
+    "es": "Le dieron una beca para estudiar fuera.",
+    "w": "para",
+    "de": "u169",
+    "exp": "para: o objetivo da bolsa (estudar fora).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destinatário (para quem)",
+     "para: destino (para onde)",
+     "por: por onde ou por qual meio"
+    ]
+   },
+   {
+    "es": "Busco un lugar tranquilo para leer.",
+    "w": "para",
+    "de": "u379",
+    "exp": "para: o que se quer fazer no lugar (ler).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destinatário (para quem)",
+     "para: destino (para onde)",
+     "por: por onde ou por qual meio"
+    ]
+   },
+   {
+    "es": "Exprime dos naranjas para el zumo.",
+    "w": "para",
+    "de": "u250",
+    "exp": "para: o que se vai fazer com as laranjas (o suco).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destinatário (para quem)",
+     "para: destino (para onde)",
+     "por: por onde ou por qual meio"
+    ]
+   },
+   {
+    "es": "Tómate el jarabe para la tos.",
+    "w": "para",
+    "de": "u267",
+    "exp": "para: o xarope serve para tratar a tosse.",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destinatário (para quem)",
+     "para: destino (para onde)",
+     "por: por onde ou por qual meio"
+    ]
+   },
+   {
+    "es": "Le sacaron sangre para el análisis.",
+    "w": "para",
+    "de": "u415",
+    "exp": "para: o objetivo de tirar sangue (o exame).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destinatário (para quem)",
+     "para: destino (para onde)",
+     "por: por onde ou por qual meio"
+    ]
+   },
+   {
+    "es": "Ahorro para el viaje de verano.",
+    "w": "para",
+    "de": "u333",
+    "exp": "para: o objetivo da poupança (a viagem).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destinatário (para quem)",
+     "para: destino (para onde)",
+     "por: por onde ou por qual meio"
+    ]
+   },
+   {
+    "es": "Estoy juntando dinero para un coche.",
+    "w": "para",
+    "de": "u606",
+    "exp": "para: o objetivo do dinheiro (comprar um carro).",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destinatário (para quem)",
+     "para: destino (para onde)",
+     "por: por onde ou por qual meio"
+    ]
+   },
+   {
+    "es": "Rompió la alcancía para comprar un regalo.",
+    "w": "para",
+    "de": "u429",
+    "exp": "para: o objetivo de quebrar o cofrinho.",
+    "distratores": [
+     "por: causa ou motivo (por quê)",
+     "para: destinatário (para quem)",
+     "para: destino (para onde)",
+     "por: por onde ou por qual meio"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g021",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "es": "se reflexivo",
+  "pt": "se reflexivo",
+  "aceitas": [
+   "reflexivo",
+   "se reflexivo"
+  ],
+  "distratores": [
+   "se impessoal",
+   "se no lugar de le (antes de lo, la)",
+   "se do acidente (se me cayó)",
+   "lo, la: objeto direto"
+  ],
+  "nota": "O se reflexivo é a ação que volta para o próprio sujeito: se miró en el espejo (olhou a si mesmo), se disfrazó.\nCom o corpo e a roupa, o espanhol usa o reflexivo e o artigo, não o possessivo: se hizo un corte en la barbilla, se puso una falda.\nMesmo sem querer (se hizo un corte), é reflexivo quando o sujeito é a própria pessoa; no se do acidente, o sujeito é a coisa e vem um me, te, le: se me cayó el vaso.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Se miró en el espejo.",
+    "w": "Se",
+    "de": "u146",
+    "exp": "se: ele olhou a si mesmo.",
+    "distratores": [
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "se do acidente (se me cayó)",
+     "lo, la: objeto direto"
+    ]
+   },
+   {
+    "es": "Se disfrazó de médico.",
+    "w": "Se",
+    "de": "u597",
+    "exp": "se: ele fantasiou a si mesmo.",
+    "distratores": [
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "se do acidente (se me cayó)",
+     "lo, la: objeto direto"
+    ]
+   },
+   {
+    "es": "Se puso una falda larga.",
+    "w": "Se",
+    "de": "u330",
+    "exp": "se: ela pôs a saia em si mesma.",
+    "distratores": [
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "se do acidente (se me cayó)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "Se hizo un corte en la barbilla al afeitarse.",
+    "w": "Se",
+    "de": "u221",
+    "exp": "se: ele cortou a si mesmo, no queixo.",
+    "distratores": [
+     "se impessoal",
+     "se do acidente (se me cayó)",
+     "se no lugar de le (antes de lo, la)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "El caminante se sentó a descansar.",
+    "w": "se",
+    "de": "u347",
+    "exp": "se: ele sentou a si mesmo (sentou-se).",
+    "distratores": [
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "se do acidente (se me cayó)",
+     "le, les: objeto indireto"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g022",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "condicional simple",
+  "pt": "condicional (hablaría)",
+  "aceitas": [
+   "condicional",
+   "futuro do preterito",
+   "condicional simples"
+  ],
+  "distratores": [
+   "pretérito imperfeito (hablaba)",
+   "futuro (hablaré)",
+   "imperfeito do subjuntivo (hablara)",
+   "presente do indicativo (hablo)"
+  ],
+  "nota": "O infinitivo inteiro + -ía, -ías, -ía, -íamos, -ían: hablaría, comería, viviría. A raiz curta do futuro vale também aqui: tendría, haría, podría, diría.\nServe para o que é hipotético e para o pedido educado: ¿podrías ayudarme?, me gustaría.\nNão confundir com o imperfeito, que não leva o infinitivo: comía (comia) × comería (comeria).",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Yo bebería un café.",
+    "w": "bebería",
+    "de": "v046",
+    "exp": "bebería: o infinitivo beber + -ía (eu tomaria).",
+    "distratores": [
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do indicativo (hablo)"
+    ]
+   },
+   {
+    "es": "Me gustaría ir contigo.",
+    "w": "gustaría",
+    "de": "v055",
+    "exp": "gustaría: o condicional de gustar, o desejo dito com educação.",
+    "distratores": [
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do subjuntivo (hable)"
+    ]
+   },
+   {
+    "es": "¿Podrías ayudarme?",
+    "w": "Podrías",
+    "de": "v095",
+    "exp": "podrías: a raiz curta podr- + -ías, o pedido educado.",
+    "distratores": [
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do indicativo (hablo)"
+    ]
+   },
+   {
+    "es": "Yo que tú, no lo haría.",
+    "w": "haría",
+    "de": "v096",
+    "exp": "haría: a raiz curta har- + -ía; yo que tú pede o condicional.",
+    "distratores": [
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do subjuntivo (hable)"
+    ]
+   },
+   {
+    "es": "Me encantaría conocerte.",
+    "w": "encantaría",
+    "de": "v117",
+    "exp": "encantaría: o infinitivo encantar + -ía (eu adoraria).",
+    "distratores": [
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do subjuntivo (hable)"
+    ]
+   },
+   {
+    "es": "Si tuviera dinero, viajaría.",
+    "w": "viajaría",
+    "de": "v039",
+    "exp": "viajaría: o condicional, o resultado da hipótese; tuviera é o imperfeito do subjuntivo.",
+    "distratores": [
+     "pretérito imperfeito (hablaba)",
+     "futuro (hablaré)",
+     "imperfeito do subjuntivo (hablara)",
+     "presente do indicativo (hablo)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g023",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "imperativo negativo",
+  "pt": "imperativo negativo (no hables)",
+  "aceitas": [
+   "imperativo negativo",
+   "imperativo negado"
+  ],
+  "distratores": [
+   "imperativo afirmativo (habla)",
+   "presente do indicativo (hablo)",
+   "imperfeito do subjuntivo (hablara)",
+   "futuro (hablaré)"
+  ],
+  "nota": "Não tem forma própria: é o presente do subjuntivo com no: no hables, no comas, no hagas, no vayas.\nOs pronomes vêm antes do verbo: no te preocupes, no lo hagas (no afirmativo, colados: hazlo).\nNegar o afirmativo é o erro típico: «no ven», «no haz» não existem; é no vengas, no hagas.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "No lo hagas.",
+    "w": "No lo hagas",
+    "de": "v052",
+    "exp": "no lo hagas: no + o subjuntivo de hacer, com o pronome antes.",
+    "distratores": [
+     "imperativo afirmativo (habla)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "No te preocupes.",
+    "w": "No te preocupes",
+    "de": "f081",
+    "exp": "no te preocupes: no + o subjuntivo de preocuparse (-ar → -es).",
+    "distratores": [
+     "imperativo afirmativo (habla)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "No mires atrás.",
+    "w": "No mires",
+    "de": "u348",
+    "exp": "no mires: no + o subjuntivo de mirar; no miras seria «você não olha».",
+    "distratores": [
+     "imperativo afirmativo (habla)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "No pises la hierba.",
+    "w": "No pises",
+    "de": "u370",
+    "exp": "no pises: no + o subjuntivo de pisar.",
+    "distratores": [
+     "imperativo afirmativo (habla)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "No te muevas.",
+    "w": "No te muevas",
+    "de": "u572",
+    "exp": "no te muevas: no + o subjuntivo de moverse (-er → -as).",
+    "distratores": [
+     "imperativo afirmativo (habla)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "No seas cruel con el perro.",
+    "w": "No seas",
+    "de": "u522",
+    "exp": "no seas: no + o subjuntivo de ser.",
+    "distratores": [
+     "imperativo afirmativo (habla)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "No te metas en mis asuntos.",
+    "w": "No te metas",
+    "de": "u466",
+    "exp": "no te metas: no + o subjuntivo de meterse.",
+    "distratores": [
+     "imperativo afirmativo (habla)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)"
+    ]
+   },
+   {
+    "es": "No te creas ese bulo.",
+    "w": "No te creas",
+    "de": "u305",
+    "exp": "no te creas: no + o subjuntivo de creerse.",
+    "distratores": [
+     "imperativo afirmativo (habla)",
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g024",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "es": "se impersonal",
+  "pt": "se impessoal",
+  "aceitas": [
+   "impessoal",
+   "se impessoal",
+   "passiva",
+   "se passivo"
+  ],
+  "distratores": [
+   "se reflexivo",
+   "se no lugar de le (antes de lo, la)",
+   "se do acidente (se me cayó)",
+   "le, les: objeto indireto"
+  ],
+  "nota": "O se impessoal não aponta ninguém: é «a gente», «as pessoas»: la sopa se toma con cuchara, ¿cómo se dice?\nCom uma coisa, o verbo concorda com ela: se paga el alquiler, se venden pisos.\nO português do Brasil faz igual (como se diz?) ou usa «a gente».",
+  "nivel": "B1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "La sopa se toma con cuchara.",
+    "w": "se",
+    "de": "u125",
+    "exp": "se: ninguém em especial; é como a sopa se toma.",
+    "distratores": [
+     "se reflexivo",
+     "se no lugar de le (antes de lo, la)",
+     "se do acidente (se me cayó)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "El alquiler se paga a principios de mes.",
+    "w": "se",
+    "de": "u297",
+    "exp": "se: o aluguel se paga, sem dizer quem paga.",
+    "distratores": [
+     "se reflexivo",
+     "se no lugar de le (antes de lo, la)",
+     "se do acidente (se me cayó)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "¿Cómo se dice esto en español?",
+    "w": "se",
+    "de": "b027",
+    "exp": "se: como as pessoas dizem isso.",
+    "distratores": [
+     "se reflexivo",
+     "se no lugar de le (antes de lo, la)",
+     "se do acidente (se me cayó)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "¿Cuánto se tarda en llegar?",
+    "w": "se",
+    "de": "f167",
+    "exp": "se: quanto tempo a gente leva, qualquer pessoa.",
+    "distratores": [
+     "se reflexivo",
+     "se no lugar de le (antes de lo, la)",
+     "se do acidente (se me cayó)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "Se nota a la legua que está nervioso.",
+    "w": "Se",
+    "de": "u435",
+    "exp": "se: qualquer pessoa nota.",
+    "distratores": [
+     "se reflexivo",
+     "se no lugar de le (antes de lo, la)",
+     "se do acidente (se me cayó)",
+     "le, les: objeto indireto"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g025",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "es": "se me (involuntario)",
+  "pt": "se do acidente (se me cayó)",
+  "aceitas": [
+   "acidente",
+   "sem querer",
+   "se me",
+   "involuntario"
+  ],
+  "distratores": [
+   "se reflexivo",
+   "se impessoal",
+   "se no lugar de le (antes de lo, la)",
+   "le, les: objeto indireto"
+  ],
+  "nota": "Se + me, te, le é o acidente: a coisa «se» cai, quebra ou esquece, e o me diz com quem aconteceu: se me cayó el vaso (deixei o copo cair, sem querer).\nO verbo concorda com a coisa: se me cayeron las llaves.\nA ordem é sempre o se primeiro: se me olvidó, nunca «me se».",
+  "nivel": "B1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Se me cayó el vaso.",
+    "w": "Se",
+    "de": "v050",
+    "exp": "se: o copo caiu, e o me diz com quem aconteceu.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "Se me cayó el vaso al suelo.",
+    "w": "Se",
+    "de": "u082",
+    "exp": "se: o copo caiu sem querer; o me é de quem o deixou cair.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "Se me rompió la pantalla del móvil.",
+    "w": "Se",
+    "de": "u012",
+    "exp": "se: a tela quebrou, sem querer; o me é o dono do celular.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "Se me olvidó.",
+    "w": "Se",
+    "de": "f040",
+    "exp": "se: a coisa «se esqueceu», e o me diz de quem: eu esqueci, sem querer.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "Se me ha colgado el ordenador.",
+    "w": "Se",
+    "de": "u260",
+    "exp": "se: o computador travou sozinho; o me é quem o usava.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "le, les: objeto indireto"
+    ]
+   },
+   {
+    "es": "Se me ha estropeado el móvil.",
+    "w": "Se",
+    "de": "u325",
+    "exp": "se: o celular estragou sozinho; o me é o dono.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se no lugar de le (antes de lo, la)",
+     "le, les: objeto indireto"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g026",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "es": "se lo (se en lugar de le)",
+  "pt": "se no lugar de le (antes de lo, la)",
+  "aceitas": [
+   "se lo",
+   "se no lugar de le",
+   "le vira se"
+  ],
+  "distratores": [
+   "se reflexivo",
+   "se impessoal",
+   "se do acidente (se me cayó)",
+   "lo, la: objeto direto"
+  ],
+  "nota": "Le e les viram se antes de lo, la, los, las: «le lo dije» não existe; é se lo dije (eu disse isso a ele).\nEsse se não é reflexivo: é o le disfarçado, e pode ser a ele, a ela, a eles ou a usted.\nA ordem é sempre o se e depois o lo: se lo dije, no se lo digas.",
+  "nivel": "B1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Se lo dije ayer.",
+    "w": "Se",
+    "de": "f051",
+    "exp": "se: o le (a ele) que vira se antes de lo: eu disse isso a ele.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se do acidente (se me cayó)",
+     "lo, la: objeto direto"
+    ]
+   },
+   {
+    "es": "No quiero que se lo digas a nadie.",
+    "w": "se",
+    "de": "v112",
+    "exp": "se: o le (a ele) que vira se antes de lo; a nadie diz a quem.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se do acidente (se me cayó)",
+     "lo, la: objeto direto"
+    ]
+   },
+   {
+    "es": "Y eso que se lo dije.",
+    "w": "se",
+    "de": "f188",
+    "exp": "se: o le (a ele) que vira se antes de lo: eu disse isso a ele.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se do acidente (se me cayó)",
+     "lo, la: objeto direto"
+    ]
+   },
+   {
+    "es": "Se lo tengo dicho mil veces.",
+    "w": "Se",
+    "de": "f194",
+    "exp": "se: o le (a ele) que vira se antes de lo: já disse isso a ele mil vezes.",
+    "distratores": [
+     "se reflexivo",
+     "se impessoal",
+     "se do acidente (se me cayó)",
+     "lo, la: objeto direto"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g027",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "presente de subjuntivo",
+  "pt": "presente do subjuntivo (hable)",
+  "aceitas": [
+   "presente do subjuntivo",
+   "subjuntivo",
+   "presente subjuntivo"
+  ],
+  "distratores": [
+   "presente do indicativo (hablo)",
+   "imperfeito do subjuntivo (hablara)",
+   "futuro (hablaré)",
+   "condicional (hablaría)"
+  ],
+  "nota": "O -ar troca o a por e (hable, hables); -er e -ir trocam por a (coma, viva). Os irregulares saem da 1ª pessoa do presente: tengo → tenga, hago → haga, vengo → venga; e há sea, vaya, esté.\nVem depois de quiero que, espero que, ojalá, no creo que, dudo que.\nE onde o português usa o futuro do subjuntivo, que o espanhol não tem: cuando tengas (quando tiver), en cuanto pueda (assim que puder).",
+  "nivel": "B1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Ojalá venga mañana.",
+    "w": "venga",
+    "de": "v034",
+    "exp": "venga: de vengo; depois de ojalá vem o subjuntivo.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "No creo que sea fácil.",
+    "w": "sea",
+    "de": "v035",
+    "exp": "sea: o subjuntivo de ser; no creo que pede o subjuntivo.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "Cuando tengas tiempo.",
+    "w": "tengas",
+    "de": "v036",
+    "exp": "tengas: cuando, falando do futuro, pede o subjuntivo; o português diria «quando tiver».",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "Quiero que vengas a la fiesta.",
+    "w": "vengas",
+    "de": "v051",
+    "exp": "vengas: quiero que pede o subjuntivo.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "Espero que te guste el regalo.",
+    "w": "guste",
+    "de": "v057",
+    "exp": "guste: espero que pede o subjuntivo (-ar → -e).",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "Dudo que tenga razón.",
+    "w": "tenga",
+    "de": "v058",
+    "exp": "tenga: dudo que pede o subjuntivo.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "Espero que estés bien.",
+    "w": "estés",
+    "de": "v110",
+    "exp": "estés: o subjuntivo de estar, depois de espero que.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "Quiero que vayas tú.",
+    "w": "vayas",
+    "de": "v111",
+    "exp": "vayas: o subjuntivo de ir (vaya, vayas…), depois de quiero que.",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "En cuanto pueda, te llamo.",
+    "w": "pueda",
+    "de": "f186",
+    "exp": "pueda: en cuanto, falando do futuro, pede o subjuntivo (assim que eu puder).",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   },
+   {
+    "es": "Aunque llueva, iré.",
+    "w": "llueva",
+    "de": "f049",
+    "exp": "llueva: aunque, para o que ainda não se sabe, pede o subjuntivo (mesmo que chova).",
+    "distratores": [
+     "presente do indicativo (hablo)",
+     "imperfeito do subjuntivo (hablara)",
+     "futuro (hablaré)",
+     "condicional (hablaría)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "g028",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "es": "pretérito imperfecto de subjuntivo",
+  "pt": "imperfeito do subjuntivo (hablara)",
+  "aceitas": [
+   "imperfeito do subjuntivo",
+   "preterito imperfeito do subjuntivo",
+   "subjuntivo imperfeito"
+  ],
+  "distratores": [
+   "presente do subjuntivo (hable)",
+   "condicional (hablaría)",
+   "pretérito imperfeito (hablaba)",
+   "pretérito indefinido (hablé)"
+  ],
+  "nota": "Sai da 3ª pessoa do plural do indefinido, trocando -ron por -ra (ou -se): tuvieron → tuviera, fueron → fuera, vinieron → viniera.\nÉ o «tivesse, viesse» do português: si tuviera dinero (se eu tivesse dinheiro), ojalá viniera.\nQuisiera é o jeito mais educado de pedir (eu queria).\nO acento muda o tempo: hablara (falasse) × hablará (falará).",
+  "nivel": "B2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "es": "Si tuviera dinero, viajaría.",
+    "w": "tuviera",
+    "de": "v039",
+    "exp": "tuviera: de tuvieron; depois de si, para o que não é real (se eu tivesse).",
+    "distratores": [
+     "presente do subjuntivo (hable)",
+     "condicional (hablaría)",
+     "pretérito imperfeito (hablaba)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Ojalá viniera mañana.",
+    "w": "viniera",
+    "de": "f045",
+    "exp": "viniera: de vinieron; ojalá com o imperfeito do subjuntivo é o desejo pouco provável.",
+    "distratores": [
+     "presente do subjuntivo (hable)",
+     "condicional (hablaría)",
+     "futuro (hablaré)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "¡Ni que fueras millonari{o|a}!",
+    "w": "fueras",
+    "de": "f179",
+    "exp": "fueras: de fueron (ser); ni que pede o imperfeito do subjuntivo.",
+    "distratores": [
+     "presente do subjuntivo (hable)",
+     "condicional (hablaría)",
+     "pretérito imperfeito (hablaba)",
+     "pretérito indefinido (hablé)"
+    ]
+   },
+   {
+    "es": "Quisiera hablar con {el director|la directora}.",
+    "w": "Quisiera",
+    "de": "v081",
+    "exp": "quisiera: de quisieron; o pedido mais educado (eu queria).",
+    "distratores": [
+     "condicional (hablaría)",
+     "pretérito imperfeito (hablaba)",
+     "presente do subjuntivo (hable)",
+     "pretérito indefinido (hablé)"
+    ]
+   }
+  ]
+ }
+]

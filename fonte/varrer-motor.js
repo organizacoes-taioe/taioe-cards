@@ -98,6 +98,21 @@ for (const bruto of FONTE.concat(DE_TEXTO)) {
     }
     continue;
   }
+  /* o conceito fora do latim (a gramática do espanhol, 03/11/2026) só existe na ida, para os
+     públicos dele, e se responde clicando: em cada exemplo, a certa e as quatro do exemplo */
+  if (bruto.tipo === 'conceito') {
+    for (const a of bruto.publicos || audiencias) {
+      const direcao = idioma + '-' + a;
+      (bruto.exemplos || []).forEach((ex, n) => {
+        const alts = M.alternativas(bruto, direcao, CARDS, { [bruto.id]: { vistas: n } });
+        const certas = alts.filter(x => M.conferir(bruto, String(x), direcao) === 'certo');
+        if (alts.length !== 5 || new Set(alts).size !== 5 || certas.length !== 1 || certas[0] !== bruto.pt) {
+          erro(bruto.id, '[' + direcao + '] exemplo ' + (n + 1) + ': ' + alts.join(' | '));
+        }
+      });
+    }
+    continue;
+  }
   /* card de gênero rende duas formas, e as duas têm de passar */
   for (const c of M.formasDoCard(bruto)) {
 

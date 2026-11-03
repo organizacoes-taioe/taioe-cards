@@ -2601,10 +2601,11 @@ window.Motor = (function () {
   function exemploDoConceito(card, est, estados) {
     let ex = (card && card.exemplos) || [];
     if (!ex.length) return null;
-    /* nas declinações e conjugações (03/11/2026), os exemplos são palavras do curso: vêm as que
-       a pessoa já viu, quando há ao menos duas */
-    if (estados && ex.some(e => e.lema)) {
-      const vistas = ex.filter(e => e.lema && estados[e.lema] && estados[e.lema].vistas);
+    /* nas declinações e conjugações do latim e na gramática do espanhol (03/11/2026), os
+       exemplos são palavras («lema») ou frases («de») do curso: vêm os que a pessoa já viu,
+       quando há ao menos dois */
+    if (estados && ex.some(e => e.lema || e.de)) {
+      const vistas = ex.filter(e => (e.lema || e.de) && estados[e.lema || e.de] && estados[e.lema || e.de].vistas);
       if (vistas.length >= 2) ex = vistas;
     }
     const n = (est && est.vistas) || 0;
