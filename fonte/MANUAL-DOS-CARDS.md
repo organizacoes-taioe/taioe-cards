@@ -797,6 +797,8 @@ sem ele o navegador serve o baralho velho.
 | Toda alternativa tem sentido: nada de troca de palavra feita na hora, nada de frase absurda no contraste | `u599` «Preciso te dizer uma casa»; `la-k013`/`la-q012` «A pedra cava a gota»; `la-k023` «O lobo teme o cordeiro» — 03/11/2026 |
 | A resposta no outro gênero vale, no card de gênero variável | `f225` «he pedido cita con el médico» para «la médica» — 03/11/2026 |
 | Sinônimo na volta vai para `sinonimosEs`, não para as aceitas, quando o card ensina a outra palavra | `u602` «Es verdad» para «Es cierto»; `p923` «la felicidad» para «la dicha»; `p527` «la voluntad» para «la gana» — 03/11/2026 |
+| No card de gramática, a palavra destacada não pode ser a forma de modelo entre parênteses das alternativas (o build acusa, na família `tempo`) | `g001` «Yo hablo español» com «presente do indicativo (hablo)»; `g016` «Hablaré con el jefe» — 04/11/2026 |
+| Exemplo que é o enunciado do dicionário vai inteiro, sem destaque, e a pergunta é «deste verbo», «deste nome» | `la-g027` «habeo, habere, habui, habitum» com *habeo* destacado — 04/11/2026 |
 
 ---
 
