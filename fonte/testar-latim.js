@@ -136,7 +136,12 @@ for (let i = 0; i < 2; i++) responder(conceito, true);
 ok(conceito.etapa !== 'dominado' && M.modoDe(conceito) === 'multipla', 'dois acertos: ainda não, e continua de escolher');
 responder(conceito, true);
 ok(conceito.etapa === 'dominado' && M.modoDe(conceito) === 'multipla', 'três seguidos dominam, e a revisão também é de escolher');
-for (const c of CARDS.filter(x => x.tipo === 'conceito' && x.familia !== 'voz')) {
+/* o gênero (o neutro, §15) só tem masculino e feminino para errar */
+for (const c of CARDS.filter(x => x.tipo === 'conceito' && x.familia === 'genero')) {
+  c.exemplos.forEach((ex, i) => ok(Array.isArray(ex.distratores) && ex.distratores.length === 2 && !ex.distratores.includes(c.pt),
+    c.id + ' exemplo ' + (i + 1) + ': as duas erradas, sem a certa'));
+}
+for (const c of CARDS.filter(x => x.tipo === 'conceito' && x.familia !== 'voz' && x.familia !== 'genero')) {
   c.exemplos.forEach((ex, i) => ok(Array.isArray(ex.distratores) && ex.distratores.length === 4 && !ex.distratores.includes(c.pt),
     c.id + ' exemplo ' + (i + 1) + ': quatro erradas, sem a certa'));
 }
@@ -403,6 +408,31 @@ ok(!M.liberado(q, todos, Date.now(), {}), 'sem uma delas, não');
 const expressao = CARDS.find(c => c.tipo === 'heranca' && c.familia === 'expressao');
 const derivado = CARDS.find(c => c.tipo === 'heranca' && c.familia === 'derivado');
 ok(M.liberado(expressao, {}, Date.now(), {}) && !M.liberado(derivado, {}, Date.now(), {}), 'a expressão vem desde o começo; a palavra derivada espera o lema');
+
+/* ═══════════ 6f. análise: o verbo, a concordância, a regência (LATIM.md §15) ═══════════ */
+secao('os cards de análise');
+for (const familia of ['verbo', 'concordancia', 'regencia']) {
+  const daFamilia = CARDS.filter(c => c.tipo === 'analise' && c.familia === familia);
+  ok(daFamilia.length >= 10, 'há cards de análise do ' + familia + ' (' + daFamilia.length + ')');
+  const c = daFamilia[0];
+  const e = M.estadoInicialDo(c);
+  const f = M.faseDe(e);
+  ok(f.modo === 'multipla' && f.direcao === IDA && M.resposta(c, f.direcao) === c.pt, familia + ': de escolher, com a resposta no card');
+  const alt = M.alternativas(c, f.direcao, CARDS, {});
+  ok(alt.length === c.distratores.length + 1 && alt.includes(c.pt), familia + ': as alternativas são a certa e as erradas do card');
+  ok(daFamilia.every(x => !x.distratores.some(d => M.conferir(x, d, IDA) === 'certo')), familia + ': nenhuma errada é aceita');
+  /* uma vez só (o Gere, 04/11/2026): o acerto de primeira fecha de vez; depois de um erro, dois seguidos */
+  M.registrar(e, { acertou: true, modo: 'multipla', direcao: IDA, resposta: 'x' });
+  ok(e.etapa === 'dominado' && !e.voltaEm && M.filaDe(e) === 'fora' && M.encerrado(c.id, e), familia + ': o acerto de primeira fecha de vez');
+  const e2 = M.estadoInicialDo(c);
+  const reg2 = acertou => M.registrar(e2, { acertou, modo: 'multipla', direcao: IDA, resposta: 'x' });
+  reg2(false); reg2(true);
+  ok(e2.etapa !== 'dominado', familia + ': depois do erro, um acerto ainda não fecha');
+  reg2(true);
+  ok(e2.etapa === 'dominado' && M.filaDe(e2) === 'fora', familia + ': dois seguidos depois do erro fecham de vez');
+}
+const regencia = CARDS.find(c => c.tipo === 'analise' && c.familia === 'regencia');
+ok(!M.liberado(regencia, {}, Date.now(), {}), 'a regência espera o card do verbo');
 
 /* ═══════════ 7. transparência e desafio ═══════════ */
 secao('transparência e desafio');
