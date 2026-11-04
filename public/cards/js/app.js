@@ -2437,7 +2437,8 @@ window.TaioeCardsApp = function (ctx) {
     let html = '<div class="grade">' +
       /* a ordem faz pares na tela de duas colunas: o que já saiu e a chance
          de sair mais; as duas taxas de acerto; as filas e onde elas acabam */
-      metrica(ids.length + '/' + CARDS.length, t('painel.vistos')) +
+      /* só os vistos: o total ainda por ver não ajuda ninguém (04/11) */
+      metrica(milhar(ids.length), t('painel.vistos')) +
       metrica(!temIneditos ? '—' : Math.round(100 * chanceNovo) + '%',
               t(!temIneditos
                 ? (presos ? 'painel.presos' : 'painel.todosApareceram')
@@ -2455,9 +2456,6 @@ window.TaioeCardsApp = function (ctx) {
       (aConfirmar.n ? metrica(milhar(aConfirmar.n), t('painel.aConfirmar')) : '') +
       '</div>';
 
-    /* A vitrine (PLANO.md, 7.4): desde o primeiro dia, o próximo texto. */
-    html += vitrine();
-
     /* O caminho vem primeiro: é a figura do estudo inteiro, etapa por etapa,
        e a tabela de acerto por nível lê melhor depois dela. «Em que pé está
        cada nível» e «Velocidade a cada semana» saíram a pedido (26/09). */
@@ -2467,6 +2465,9 @@ window.TaioeCardsApp = function (ctx) {
     html += tabelaMemoria();
     html += calendarioEstudo();
     html += graficoRespostasDia();
+    /* A vitrine (PLANO.md, 7.4) fecha a página, com todos os textos em
+       estudo (pedido dele, 04/11). */
+    html += vitrine();
 
     esconderDica();
     el['painel-conteudo'].innerHTML = html;
@@ -2493,23 +2494,26 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   /* ── a vitrine ──
-     O texto que a pessoa estuda agora (o primeiro dos ativos): título, autor,
+     Os textos que a pessoa estuda agora (todos os ativos): título, autor,
      o primeiro verso, quantos versos já leu e quantas palavras faltam. Curso
      sem texto não tem vitrine. */
   function vitrine() {
     if (!TEXTOS.length) return '';
-    const txt = textosAtivosAgora()[0];
-    if (!txt) return '';
-    const verso = Motor.versosDoTexto(txt)[0] || {};
-    const a = Motor.andamentoDoTexto(txt, progresso.cards, progresso.arquivados || {});
-    const vistos = Motor.versosVistos(txt, progresso.textos.lidos);
-    return '<div class="vitrine"><h3>' + t('painel.vitrine') + '</h3>' +
-      '<p class="vitrine-titulo"><b lang="' + L + '">' + escapar(txt.titulo) + '</b> · ' + escapar(txt.autor) +
-      (txt.parte ? ' · ' + rotuloDaParte(txt) : '') + '</p>' +
-      (verso.t ? '<p class="vitrine-verso" lang="' + L + '">' + escapar(verso.t) + '</p>' : '') +
-      '<p class="vitrine-conta">' + t(txt.tipo === 'prosa' ? 'texto.andamentoProsa' : 'texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
-      (a.faltam ? tn('painel.vitrineFaltam', a.faltam, { n: milhar(a.faltam) }) : t('painel.vitrinePronto')) + '</p>' +
-      '<button class="link-comentar" id="btn-vitrine">' + t('painel.vitrineVer') + '</button></div>';
+    const ativos = textosAtivosAgora();
+    if (!ativos.length) return '';
+    const itens = ativos.map(txt => {
+      const verso = Motor.versosDoTexto(txt)[0] || {};
+      const a = Motor.andamentoDoTexto(txt, progresso.cards, progresso.arquivados || {});
+      const vistos = Motor.versosVistos(txt, progresso.textos.lidos);
+      return '<div class="vitrine-item">' +
+        '<p class="vitrine-titulo"><b lang="' + L + '">' + escapar(txt.titulo) + '</b> · ' + escapar(txt.autor) +
+        (txt.parte ? ' · ' + rotuloDaParte(txt) : '') + '</p>' +
+        (verso.t ? '<p class="vitrine-verso" lang="' + L + '">' + escapar(verso.t) + '</p>' : '') +
+        '<p class="vitrine-conta">' + t(txt.tipo === 'prosa' ? 'texto.andamentoProsa' : 'texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
+        (a.faltam ? tn('painel.vitrineFaltam', a.faltam, { n: milhar(a.faltam) }) : t('painel.vitrinePronto')) + '</p></div>';
+    }).join('');
+    return '<div class="vitrine"><h3>' + t(ativos.length > 1 ? 'painel.vitrines' : 'painel.vitrine') + '</h3>' +
+      itens + '<button class="link-comentar" id="btn-vitrine">' + t('painel.vitrineVer') + '</button></div>';
   }
 
   /* A CSP da Taioé não aceita atributo style vindo de HTML montado em texto;
@@ -2713,16 +2717,17 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   /* Perto da hora, dias não dizem nada: «amanhã» pode ser daqui a uma hora ou
-     a vinte e três. Abaixo de dois dias a conta vira hora, e abaixo de cem
-     minutos vira minuto. */
+     a vinte e três. Cada unidade vale até 99, e só então passa à seguinte
+     (pedido dele, 04/11): minutos abaixo de 100 minutos, horas abaixo de 100
+     horas, dias abaixo de 100 dias e, daí para cima, meses. */
   function quandoVolta(iso) {
     const min = Math.round((Date.parse(iso) - Date.now()) / 60000);
     if (min <= 0) return t('volta.agora');
     if (min < 100) return t('volta.min', { n: min });
     const horas = Math.round(min / 60);
-    if (horas < 48) return t('volta.h', { n: horas });
+    if (horas < 100) return t('volta.h', { n: horas });
     const dias = Math.round(horas / 24);
-    if (dias < 60) return t('volta.dias', { n: dias });
+    if (dias < 100) return t('volta.dias', { n: dias });
     return t('volta.meses', { n: Math.round(dias / 30) });
   }
 
@@ -2747,26 +2752,26 @@ window.TaioeCardsApp = function (ctx) {
       { n: milhar(conf.n), quando: quandoVolta(conf.proxima) }) + '</p>' : '';
     if (!total) return aConfirmar ? '<h3>' + t('painel.escada') + '</h3>' + aConfirmar : '';
 
-    const linhas = degraus.map(d => {
-      /* Degrau vazio fica na tabela, esmaecido: a escada é a mesma para todo
-         mundo, e ver o degrau vago diz que ninguém chegou lá ainda. */
-      const vazio = d.n ? '' : ' class="vago"';
-      /* Havendo vencidos no degrau, o próximo é um deles, e volta agora — a
-         data do seguinte, ainda de molho, não diz nada. O número diz quantos
-         já esperam a vez na fila. */
-      const quando = d.vencidos ? tn('painel.agoraFila', d.vencidos, { n: milhar(d.vencidos) })
-        : d.proxima ? quandoVolta(d.proxima) : '—';
-      return '<tr' + vazio + '><td>' + rotuloEspera(d.dias) + '</td>' +
-        '<td class="num">' + (d.n || '—') + '</td>' +
-        '<td class="num">' + quando + '</td></tr>';
-    }).join('');
+    /* Duas colunas, nesta ordem (pedido dele, 04/11): quando o próximo dos
+       que ainda esperam chega à data e, depois, quantos já chegaram e esperam
+       a vez na fila. É a ordem do caminho: só entra na fila quem já chegou. */
+    const linha = (rotulo, n, proxima, vencidos, classe) =>
+      '<tr' + classe + '><td>' + rotulo + '</td>' +
+      '<td class="num">' + (n ? milhar(n) : '—') + '</td>' +
+      '<td class="num">' + (proxima ? quandoVolta(proxima) : '—') + '</td>' +
+      '<td class="num">' + (vencidos ? milhar(vencidos) : '—') + '</td></tr>';
+    /* Degrau vazio fica na tabela, esmaecido: a escada é a mesma para todo
+       mundo, e ver o degrau vago diz que ninguém chegou lá ainda. */
+    const linhas = degraus.map(d =>
+      linha(rotuloEspera(d.dias), d.n, d.proxima, d.vencidos, d.n ? '' : ' class="vago"')).join('');
+    const proximaDeTodos = degraus.reduce((m, d) => d.proxima && (!m || d.proxima < m) ? d.proxima : m, null);
+    const vencidosDeTodos = degraus.reduce((s, d) => s + d.vencidos, 0);
 
     return '<h3>' + t('painel.escada') + '</h3>' +
       '<p class="legenda">' + t('painel.escadaLegenda') + '</p>' +
       '<table><tr><th>' + t('painel.espera') + '</th><th class="num">' + t('painel.cards') + '</th>' +
-      '<th class="num">' + t('painel.proximoVolta') + '</th></tr>' + linhas +
-      '<tr class="soma"><td>' + t('painel.todos') + '</td><td class="num">' + total + '</td>' +
-      '<td class="num">—</td></tr></table>' + aConfirmar;
+      '<th class="num">' + t('painel.proximoEm') + '</th><th class="num">' + t('painel.naFila') + '</th></tr>' + linhas +
+      linha(t('painel.todos'), total, proximaDeTodos, vencidosDeTodos, ' class="soma"') + '</table>' + aConfirmar;
   }
 
   function tabelaNivel() {
