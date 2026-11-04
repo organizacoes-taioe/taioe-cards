@@ -1279,7 +1279,7 @@ const NAO_LIGAR = new Set(['id', 'v', 'texto', 'tags', 'conjunto', 'de', 'requer
   'wiki', 'g', 'obra', 'curso', 'audiencia', 'leva']);
 /* o «lema» é o enunciado latino no texto e o id do card de palavra na flexão (la-p001): os dois
    podem passar pela troca */
-const SO_LATIM = new Set(['la', 'frase', 'distratoresLa', 'w', 't', 'titulo', 'lema']);
+const SO_LATIM = new Set(['la', 'frase', 'distratoresLa', 'w', 't', 'titulo', 'lema', 'dicionario', 'distratoresDicionario']);
 const PT_COM_AE = ['israel', 'rafael', 'ismael', 'michael', 'maestro', 'maestros', 'aeroporto', 'aeroportos'];
 function palavrasDoLatim(cards, textos) {
   const latim = new Set(), pt = new Set(PT_COM_AE);

@@ -302,13 +302,224 @@ def enriquecer(cards, palavras):
         lema = palavras.get(c['lema'], {})
         dic = lema.get('la', '')
         if dic and sem_acento(dic) != sem_acento(c['la']):
-            erradas = parecidas(c['la'], lema, palavras)
+            # verbetes inventados da mesma palavra, pelos outros padrões (pedido do Gere, 04/11);
+            # irregulares, pronomes e o que não tem padrão ficam com verbetes reais do curso
+            erradas = falsos(lema, c['la'], existe=existe_no_wiktionary)[:4]
+            if len(erradas) < 2:
+                erradas = []
+            # com dois ou três inventados, um verbete real parecido completa os quatro; nunca um de
+            # que a forma da frase também possa vir («Iacta», imperativo de iacto)
+            origens = {sem_acento(a.get('lema') or '') for a in formas.analisar(sem_acento(limpa(c['la'])))}
+            reais = [v for v in parecidas(c['la'], lema, palavras, 12)
+                     if v not in erradas and sem_acento(v.split(',')[0].strip()) not in origens]
+            erradas += reais[:4 - len(erradas)]
             if len(erradas) >= 4:
-                c['dicionario'] = dic
+                c['dicionario'] = verbete(lema)
                 c['distratoresDicionario'] = erradas
 
 
-def parecidas(w, lema, palavras):
+def verbete(card):
+    """O verbete inteiro, como no dicionário: «vir, viri, m.», «habeo, habere, habui, habitum»
+    (pedido do Gere, 04/11/2026, no comentário do la-xt036-1; até então só a 1ª forma, «vir»).
+    Sem as observações em português entre parênteses («(defectivo)», «(comparativo de bonus)»)."""
+    v = card.get('enunciado') or card.get('la', '')
+    return re.sub(r'\s+', ' ', re.sub(r'\s*\([^)]*\)', '', v)).strip(' ,')
+
+
+CLASSES = ['pronomes', 'adjetivo', 'advérbio', 'conjunção', 'preposição', 'interjeição']
+
+
+def classe(card):
+    """A classe da palavra, pelas etiquetas: pronome, adjetivo… ou nome."""
+    tags = card.get('tags', [])
+    return next((t for t in CLASSES if t in tags), 'nome')
+
+
+def molde(v):
+    """A forma do verbete: quantas formas e se termina no gênero. As erradas seguem a da certa,
+    para o formato não entregar a resposta (manual §6.2)."""
+    return (len(v.split(',')), bool(re.search(r'\b[mfn]\.$', v)))
+
+
+# ── os verbetes falsos (pedido do Gere, 04/11/2026) ──
+# «quero que as alternativas sejam formas falsas, baseadas nos outros padrões de verbetes»: as
+# erradas da pergunta de dicionário são a mesma palavra posta noutra declinação ou conjugação
+# («vir, viri, m.» × «virus, virus, m.», «vira, virae, f.»). Primeiro as de que a forma da frase
+# também poderia vir (virum: virus, viri; virus, virus), que obrigam a saber o verbete; nunca uma
+# que seja palavra de verdade da mesma classe (dico, dicare; dea, deae), conferida no Wiktionary.
+
+# a declinação dos nomes: (nominativo, genitivo, gênero, terminações que a forma pode ter)
+NOMES = {
+    '1': ('a', 'ae', 'f.', ('a', 'ae', 'am', 'arum', 'is', 'as')),
+    '2m': ('us', 'i', 'm.', ('us', 'i', 'o', 'um', 'e', 'orum', 'is', 'os')),
+    '2n': ('um', 'i', 'n.', ('um', 'i', 'o', 'a', 'orum', 'is')),
+    '3': (None, 'is', None, ('is', 'i', 'em', 'e', 'es', 'um', 'ibus', 'a')),
+    '4': ('us', 'us', 'm.', ('us', 'ui', 'um', 'u', 'uum', 'ibus')),
+    '5': ('es', 'ei', 'f.', ('es', 'ei', 'em', 'e', 'erum', 'ebus')),
+}
+GENITIVO = {'1': 'ae', '2': 'i', '3': 'is', '4': 'us', '5': 'ei'}
+# a conjugação: (1ª pessoa, infinitivo, perfeito, supino), na ordem do que mais se confunde
+VERBOS = {'1': ('o', 'are', 'avi', 'atum'), '2': ('eo', 'ere', 'ui', 'itum'), '3': ('o', 'ere', None, None),
+          '3io': ('io', 'ere', None, None), '4': ('io', 'ire', 'ivi', 'itum')}
+DEPOENTES = {'1': ('or', 'ari', 'atus sum'), '2': ('eor', 'eri', 'itus sum'), '3': ('or', 'i', None),
+             '3io': ('ior', 'i', None), '4': ('ior', 'iri', 'itus sum')}
+ORDEM_VERBOS = {'1': ['3', '2', '4', '3io'], '2': ['3', '1', '4', '3io'], '3': ['2', '3io', '1', '4'],
+                '3io': ['4', '3', '2', '1'], '4': ['3io', '3', '2', '1']}
+VOGAIS = 'aeiou'
+
+
+def partes(card):
+    return [x.strip() for x in verbete(card).split(',')]
+
+
+def falsos_do_nome(card, w):
+    p = partes(card)
+    tags = card.get('tags', [])
+    dec = next((k for k in '12345' if f'{k}ª declinação' in tags), None)
+    if len(p) != 3 or not dec or not p[2] in ('m.', 'f.', 'n.', 'm. e f.') or not p[1].endswith(GENITIVO[dec]):
+        return []
+    nom, gen, g = p
+    st = gen[:-len(GENITIVO[dec])]
+    saida = []
+    for k, (n, gn, gg, fins) in NOMES.items():
+        if k == '3':
+            v = (nom if nom == st else st + 'is', st + 'is', g)
+        else:
+            v = (st + n, st + gn, gg)
+        pode = any(w == st + f for f in fins) or w == v[0]
+        saida.append((not pode, v[0], ', '.join(v)))
+    return [(cab, v) for _, cab, v in sorted(saida, key=lambda x: x[0])]
+
+
+def falsos_do_adjetivo(card, w):
+    p = partes(card)
+    if len(p) == 3:
+        m, f, _ = p
+        if not f.endswith('a'):
+            return []
+        st = f[:-1]
+        saida = [(st + 'is', f'{st}is, {st}e'), (m, f'{m}, {st}is')]
+        if m.endswith('er'):
+            saida += [(st + 'us', f'{st}us, {st}a, {st}um'), (m, f'{m}, {st}is, {st}e')]
+        elif st[-1] not in VOGAIS:
+            # como liber, libera, liberum e celer, celeris, celere
+            saida += [(st + 'er', f'{st}er, {st}era, {st}erum'), (st + 'er', f'{st}er, {st}eris, {st}ere')]
+        return saida
+    if len(p) == 2:
+        m, segunda = p
+        if segunda.endswith('e') and m.endswith('is'):      # omnis, omne
+            st = m[:-2]
+        elif segunda.endswith('is'):                         # memor, memoris
+            st = segunda[:-2]
+        else:
+            return []
+        saida = [(st + 'us', f'{st}us, {st}a, {st}um')]
+        saida += [(m, f'{m}, {st}is')] if segunda.endswith('e') else [(st + 'is', f'{st}is, {st}e')]
+        if st[-1] not in VOGAIS:
+            saida += [(st + 'er', f'{st}er, {st}era, {st}erum'), (st + 'er', f'{st}er, {st}eris, {st}ere')]
+        return saida
+    return []
+
+
+def falsos_do_verbo(card, w):
+    p = partes(card)
+    tags = card.get('tags', [])
+    if 'irregular' in tags or len(p) < 2:
+        return []
+    pres, inf = p[0], p[1]
+    if pres.endswith('or'):                                  # depoente
+        if inf.endswith('ari'):
+            conj, st = '1', inf[:-3]
+        elif inf.endswith('iri'):
+            conj, st = '4', inf[:-3]
+        elif inf.endswith('eri') and pres.endswith('eor'):
+            conj, st = '2', inf[:-3]
+        elif inf.endswith('i') and pres.endswith('ior'):
+            conj, st = '3io', inf[:-1]
+        elif inf.endswith('i'):
+            conj, st = '3', inf[:-1]
+        else:
+            return []
+        saida = []
+        for k in ORDEM_VERBOS[conj]:
+            a, b, perf = DEPOENTES[k]
+            v = [st + a, st + b] + ([st + perf] if perf else p[2:3])
+            saida.append((st + a, ', '.join(v[:len(p)])))
+        return saida
+    if inf.endswith('are'):
+        conj = '1'
+    elif inf.endswith('ire'):
+        conj = '4'
+    elif inf.endswith('ere') and pres.endswith('eo'):
+        conj = '2'
+    elif inf.endswith('ere') and pres.endswith('io'):
+        conj = '3io'
+    elif inf.endswith('ere'):
+        conj = '3'
+    else:
+        return []
+    st = inf[:-3]
+    saida = []
+    for k in ORDEM_VERBOS[conj]:
+        a, b, perf, sup = VERBOS[k]
+        v = [st + a, st + b] + ([st + perf, st + sup] if perf else p[2:4])
+        saida.append((st + a, ', '.join(v[:len(p)])))
+    return saida
+
+
+def falsos(lema, w, existe=None):
+    """Os verbetes falsos da palavra, na ordem de preferência; [] quando ela não tem padrão
+    (irregulares, pronomes, indeclináveis): aí as erradas são verbetes reais (parecidas)."""
+    tags = lema.get('tags', [])
+    w = sem_acento(limpa(w)).lower().replace('æ', 'ae').replace('œ', 'oe')
+    if 'verbo' in tags:
+        cands, cls = falsos_do_verbo(lema, w), 'verbo'
+    elif 'adjetivo' in tags:
+        cands, cls = falsos_do_adjetivo(lema, w), 'adjetivo'
+    elif 'pronomes' in tags:
+        cands, cls = [], ''
+    else:
+        cands, cls = falsos_do_nome(lema, w), 'nome'
+    certo = sem_acento(verbete(lema))
+    cabeca = sem_acento(partes(lema)[0])
+    duas = [sem_acento(x) for x in partes(lema)[:2]]
+    saida = []
+    for cab, v in cands:
+        # nem o próprio verbete, nem ele só com outro gênero («dies, diei, f.»)
+        if sem_acento(v) == certo or v in saida or [sem_acento(x.strip()) for x in v.split(',')[:2]] == duas:
+            continue
+        if existe and sem_acento(cab) != cabeca and existe(cab, cls, v, w):
+            continue
+        saida.append(v)
+    return saida
+
+
+POS = {'verbo': ('verb',), 'adjetivo': ('adj', 'participle', 'det', 'pron', 'num'), 'nome': ('noun', 'name')}
+
+
+def existe_no_wiktionary(palavra, cls, v, w):
+    """O verbete falso não serve quando é de verdade: a forma da frase pode vir daquela palavra
+    («malum», de «mālus»), ou a palavra existe com a mesma 2ª forma do verbete («dea, deae»,
+    «virus, viri»). Inventado de fato («fugo, fugere»: fugo é da 1ª) fica."""
+    try:
+        if any(sem_acento(a.get('lema') or '') == sem_acento(palavra) for a in formas.analisar(w)):
+            return True
+        entradas = formas.baixar_palavra(palavra)
+    except Exception:
+        return True
+    segunda = sem_acento(v.split(',')[1].strip()) if ',' in v else ''
+    for e in entradas:
+        if e.get('pos') not in POS.get(cls, ()) or sem_acento(e.get('word', '')) != sem_acento(palavra):
+            continue
+        # só o verbete de dicionário conta («aquis» é só uma forma de aqua)
+        if all(sn.get('form_of') or 'form-of' in sn.get('tags', []) for sn in e.get('senses', [])):
+            continue
+        if segunda and any(sem_acento(f.get('form', '')) == segunda for f in e.get('forms', [])):
+            return True
+    return False
+
+
+def parecidas(w, lema, palavras, quantas=4):
     """Quatro formas de dicionário do curso que se confundem com a certa: da mesma classe
     (verbo ou nome), com o começo mais parecido com a forma da frase e com a do dicionário."""
     verbo = 'verbo' in lema.get('tags', [])
@@ -320,21 +531,27 @@ def parecidas(w, lema, palavras):
             n += 1
         return n
     vistos, saida = {dic, alvo}, []
+    certo = molde(verbete(lema))
     candidatos = []
     for c in palavras.values():
         la = c.get('la', '')
         k = sem_acento(la)
         if not la or ' ' in la or k in vistos or ('verbo' in c.get('tags', [])) != verbo:
             continue
+        m = molde(verbete(c))
+        # verbete de uma forma só («hodie») nunca é errada de um que tem várias
+        if certo[0] > 1 and m[0] == 1:
+            continue
         nota = 2 * prefixo(alvo, k) + prefixo(dic, k) - abs(len(k) - len(dic)) * 0.3
-        candidatos.append((-nota, la))
-    for _, la in sorted(candidatos):
+        # primeiro as da mesma forma de verbete e da mesma classe (pronome com pronome)
+        candidatos.append(((m != certo) + (classe(c) != classe(lema)), -nota, la, verbete(c)))
+    for _, _, la, v in sorted(candidatos):
         k = sem_acento(la)
-        if k in vistos:
+        if k in vistos or sem_acento(v) in {sem_acento(x) for x in saida}:
             continue
         vistos.add(k)
-        saida.append(la)
-        if len(saida) == 4:
+        saida.append(v)
+        if len(saida) == quantas:
             break
     return saida
 
