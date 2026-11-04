@@ -25,6 +25,8 @@ jobs:
         run: cmp js/motor.js public/cards/js/motor.js
       - name: A interface nas três línguas (mesmas chaves, nada fora do dicionário)
         run: node fonte/conferir-i18n.js
+      - name: "A página tem todo elemento que os scripts procuram (04/11: um merge apagou o painel do «Já conheço»)"
+        run: node fonte/conferir-pagina.js
       - name: O build está em dia (baralhos, catálogo, carimbos)
         run: |
           node fonte/build.js
