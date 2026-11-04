@@ -408,7 +408,8 @@ for (const bruto of cards) {
      dois cards, e «is» é o card do lema e o da flexão (a repetição se confere no bloco do latim) */
   /* a compreensão e a herança (LATIM.md §13) repetem a frase de outro card, ou o lema: a frente
      delas é a pergunta */
-  const deForma = ['forma', 'contraste', 'flexao', 'compreensao', 'heranca'].includes(c.tipo);
+  /* a análise (LATIM.md §15) também: a frase de outro card, ou o verbo */
+  const deForma = ['forma', 'contraste', 'flexao', 'compreensao', 'heranca', 'analise'].includes(c.tipo);
   const igual = !deForma && textos.get(normalizar(c[L.texto]));
   const homografo = igual && ((bruto.homografos || []).includes(igual) ||
     ((cards.find(x => x.id === igual) || {}).homografos || []).includes(c.id));
@@ -433,7 +434,7 @@ for (const bruto of cards) {
     if (typeof c[campo] !== 'string' || !c[campo].trim()) erros.push('falta "' + campo + '": ' + onde);
   }
   /* o card de conceito (cards/LATIM.md §3.5) só existe no latim */
-  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma', 'contraste', 'flexao', 'compreensao', 'heranca'] : ['palavra', 'frase', 'contraste']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
+  if (!(idioma === 'la' ? ['palavra', 'frase', 'conceito', 'forma', 'contraste', 'flexao', 'compreensao', 'heranca', 'analise'] : ['palavra', 'frase', 'contraste']).includes(c.tipo)) erros.push('tipo inválido: ' + onde);
   if (!NIVEIS.includes(c.nivel)) erros.push('nível inválido: ' + onde);
   if (!Array.isArray(c.tags) || !c.tags.length) erros.push('sem tags: ' + onde);
 
@@ -536,9 +537,13 @@ for (const bruto of cards) {
     /* a frase latina pode ter só o gabarito (cards/LATIM.md §4); a flexão de nome, que pergunta o
        caso só na múltipla escolha (§3.8), não tem aceitas */
     if (c.tipo === 'flexao' && c.familia === 'caso') { /* conferida no bloco do latim */ }
+    /* a análise (LATIM.md §15) é só de escolher, com de 2 a 4 erradas: conferida no bloco do latim */
+    else if (c.tipo === 'analise') continue;
     else if (!Array.isArray(c[A.aceitas]) || (!c[A.aceitas].length && !(idioma === 'la' && c.gabarito))) erros.push('sem ' + A.aceitas + ': ' + ondeA);
     /* o card de forma é só por escrito: sem distratores */
-    if (c.tipo !== 'forma' && (!Array.isArray(c[A.distratores]) || c[A.distratores].length !== 4)) {
+    /* o gênero (o neutro, LATIM.md §15, D38) só tem masculino e feminino para errar */
+    const generos = c.tipo === 'conceito' && c.familia === 'genero';
+    if (c.tipo !== 'forma' && !generos && (!Array.isArray(c[A.distratores]) || c[A.distratores].length !== 4)) {
       erros.push('precisa de exatamente 4 ' + A.distratores + ': ' + ondeA);
     }
 
@@ -680,7 +685,7 @@ for (const { idioma, cards } of baralhos) {
     const onde = c.id + ' (' + c[L.texto] + ')';
     /* o contraste do latim também espera conceitos, e a compreensão e a herança (LATIM.md §13)
        esperam o que a pergunta pede; os três se conferem no bloco do latim */
-    if (['contraste', 'compreensao', 'heranca'].includes(c.tipo)) continue;
+    if (['contraste', 'compreensao', 'heranca', 'analise'].includes(c.tipo)) continue;
     if (c.tipo !== 'frase') { erros.push('só frase pode ter "requerTodas": ' + onde); continue; }
     if (!Array.isArray(c.requerTodas)) { erros.push('"requerTodas" tem de ser uma lista: ' + onde); continue; }
     if (!c.texto) anotadas++;
@@ -826,7 +831,8 @@ const chaveLatina = s => String(s || '').toLowerCase().normalize('NFD').replace(
   .replace(/^-/, '').replace(/j/g, 'i').replace(/v/g, 'u');
 /* «construcao» (desde 24/10, o ablativo absoluto da Eneida): a pergunta é de que construção a
    palavra destacada faz parte, e não o caso dela, que seria só «ablativo» */
-const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz', 'construcao', 'declinacao', 'conjugacao'];
+/* «genero» (desde 04/11, o neutro, LATIM.md §15, D38): a pergunta é o gênero da palavra destacada */
+const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz', 'construcao', 'declinacao', 'conjugacao', 'genero'];
 /* o card de flexão (LATIM.md §3.8): a alternativa errada nunca é leitura certa; com o parêntese
    ela pode repetir a palavra da certa («ele (sujeito)» no card de eum, que aceita «ele») */
 const chaveDaLeitura = t => String(t || '').toLowerCase().replace(/à/g, 'aa').replace(/(^|\s)ó(?=\s|$)/g, '$1oo').normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -854,6 +860,30 @@ for (const { idioma, cards } of baralhos) {
         /* a palavra pode vir com a enclítica ou o «cum» colados: virum em «virumque» */
         if (!palavrasDoEx.some(x => x === w || ['que', 'ne', 've', 'cum'].some(s => x === w + s))) erros.push('exemplo ' + (i + 1) + ' sem a palavra destacada «' + e.w + '»: ' + onde);
       });
+      continue;
+    }
+    if (c.tipo === 'analise') {
+      /* os cards de análise (LATIM.md §15): saem de fonte/latim/analise.py. O do verbo e o da
+         concordância perguntam pela frase de «de» e respondem com palavras dela; o da regência
+         espera o card do verbo e responde em português */
+      if (!['verbo', 'concordancia', 'regencia'].includes(c.familia)) erros.push('análise sem família (verbo, concordancia, regencia): ' + onde);
+      if (typeof c.pergunta !== 'string' || !/\?$/.test(c.pergunta.trim())) erros.push('card sem «pergunta» terminada em «?»: ' + onde);
+      const dis = Array.isArray(c.distratores) ? c.distratores : [];
+      if (dis.length < 2 || dis.length > 4) erros.push('análise com ' + dis.length + ' erradas (de 2 a 4): ' + onde);
+      if (new Set(dis.concat([c.pt]).map(chaveLatina)).size !== dis.length + 1) erros.push('análise com alternativas repetidas: ' + onde);
+      if (c.familia === 'regencia') {
+        const req = Array.isArray(c.requerTodas) ? c.requerTodas : [];
+        const lema = PORID.get(req[0]);
+        if (req.length !== 1 || !lema || lema.tipo !== 'palavra' || !(lema.tags || []).includes('verbo')) erros.push('regência que não espera o card do verbo: ' + onde);
+        else if (c.la !== lema.enunciado) erros.push('regência com o verbo diferente do enunciado de ' + req[0] + ': ' + onde);
+      } else {
+        const de = PORID.get(c.de);
+        if (!de || de.tipo !== 'frase') { erros.push('análise sem a frase de onde vem («de»): ' + onde); continue; }
+        if (c.frase !== de.la) erros.push('análise com a frase diferente da de ' + c.de + ' (rode analise.py): ' + onde);
+        const daFrase = new Set((de.palavras || []).map(x => chaveLatina(x.w)));
+        for (const w of [c.pt].concat(dis)) if (!daFrase.has(chaveLatina(w))) erros.push('análise com alternativa que não é palavra da frase («' + w + '»): ' + onde);
+        if (c.familia === 'concordancia' && !daFrase.has(chaveLatina(c.la))) erros.push('concordância com a palavra destacada fora da frase: ' + onde);
+      }
       continue;
     }
     if (c.tipo === 'forma') {
@@ -1291,7 +1321,10 @@ function palavrasDoLatim(cards, textos) {
     (c.palavras || []).forEach(x => junta(x.w, latim));
     (c.exemplos || []).forEach(x => { junta(x.la, latim); junta(x.w, latim); });
     /* só os campos que são todo português (as explicações, como «fn» e «funcao», citam latim) */
-    [c.pt, ...(c.aceitas || []), ...(c.tags || []), ...(c.outras || []),
+    /* a análise do verbo e da concordância (LATIM.md §15) responde com palavras latinas */
+    const respondeEmLatim = c.tipo === 'analise' && c.familia !== 'regencia';
+    if (respondeEmLatim) [c.pt, ...(c.distratores || [])].forEach(t => junta(t, latim));
+    [respondeEmLatim ? '' : c.pt, ...(c.aceitas || []), ...(c.tags || []), ...(c.outras || []),
       ...(c.tipo === 'palavra' || c.tipo === 'frase' || c.tipo === 'conceito' ? c.distratores || [] : [])].forEach(t => junta(t, pt));
     if (c.tipo === 'conceito') junta(c.la, pt);
   });

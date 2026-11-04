@@ -88,7 +88,13 @@ let desdeDominado = 99, ultimos = [];
 const filaDe = k => (k === 'esPt' ? p.filaEsPt : p.filaPtEs);
 const visto = id => !!(p.cards[id] && p.cards[id].vistas);
 const ehPresa = id => ['frase', 'contraste'].includes(tipo(id)) && M.requeridas(PORID.get(id)).length > 0;
-const DE_GRAMATICA = new Set(['conceito', 'forma', 'flexao', 'contraste']);
+const FRASES_DA_PALAVRA = new Map();
+CARDS.forEach(c => (c.tipo === 'frase' ? c.palavras || [] : []).forEach(x => {
+  if (x.c) (FRASES_DA_PALAVRA.get(x.c) || FRASES_DA_PALAVRA.set(x.c, []).get(x.c)).push(c.id);
+}));
+const DE_GRAMATICA = new Set(['conceito', 'forma', 'flexao', 'contraste', 'analise']);
+/* a análise da frase (LATIM.md §15: o verbo, a concordância) anda com os cards de forma */
+const comAForma = id => tipo(id) === 'forma' || (tipo(id) === 'analise' && PORID.get(id).familia !== 'regencia');
 const ehDeGramatica = id => DE_GRAMATICA.has(tipo(id));
 
 function elegivel(id) {
@@ -145,20 +151,28 @@ function ordenar() {
     .every(r => tipo(r) !== 'palavra' || M.sabidaEm(r, p.cards, p.arquivados) !== Infinity));
   const doUso = deTabela.filter(perto), soDeTabela = deTabela.filter(id => !EM_FRASE.has(id));
   const todas = estreias.filter(id => tipo(id) !== 'conceito').slice().reverse();
-  const semForma = todas.filter(id => tipo(id) !== 'forma');
+  const semForma = todas.filter(id => !comAForma(id));
   const desde = teste => { let n = 0; while (n < semForma.length && !teste(semForma[n])) n++; return n; };
   let fila = zero.slice();
   if (dosTextos.length) fila = naVez(fila, dosTextos, desde(id => doTexto.has(id)), 2);
   if (antigas.length) fila = naVez(fila, antigas, desde(ehPresa), 2);
   if (doUso.length) fila = naVez(fila, doUso, desde(id => DE_USO.has(id) && !DE_LEITURA.has(id)), 3);
   if (soDeTabela.length) fila = naVez(fila, soDeTabela, desde(id => tipo(id) === 'flexao' && !EM_FRASE.has(id)), 9);
+  /* a regência (§15), uma a cada cinco vagas, depois do verbo sabido */
+  const ehRegencia = id => tipo(id) === 'analise' && PORID.get(id).familia === 'regencia';
+  const verboVisto = c => visto(c.lema) || (FRASES_DA_PALAVRA.get(c.lema) || []).some(visto);
+  const regencias = CARDS.filter(c => ehRegencia(c.id) && !visto(c.id) && verboVisto(c) && M.liberado(c, p.cards, AGORA, p.arquivados)).map(c => c.id);
+  if (regencias.length) fila = naVez(fila, regencias, desde(ehRegencia), 5);
   fila = frescas.concat(fila);
-  const formas = CARDS.filter(c => c.tipo === 'forma' && !visto(c.id) && M.formaPronta(c, p.cards, p.arquivados) &&
+  const pronta = c => (c.tipo === 'forma' ? M.formaPronta(c, p.cards, p.arquivados) : visto(c.de));
+  const verboAntes = id => (tipo(id) === 'analise' && PORID.get(id).familia === 'verbo' ? 0 : 1);
+  const formas = CARDS.filter(c => comAForma(c.id) && !visto(c.id) && pronta(c) &&
     (!(PORID.get(c.de) || {}).texto || ativosIds.has(PORID.get(c.de).texto))).map(c => c.id)
-    .sort((a, b) => ((p.cards[PORID.get(b).de] || {}).estreouNa || 0) - ((p.cards[PORID.get(a).de] || {}).estreouNa || 0) || IDX.get(a) - IDX.get(b));
+    .sort((a, b) => ((p.cards[PORID.get(b).de] || {}).estreouNa || 0) - ((p.cards[PORID.get(a).de] || {}).estreouNa || 0) ||
+      verboAntes(a) - verboAntes(b) || IDX.get(a) - IDX.get(b));
   if (formas.length) {
     let seguidas = 0;
-    while (seguidas < todas.length && tipo(todas[seguidas]) === 'forma') seguidas++;
+    while (seguidas < todas.length && comAForma(todas[seguidas])) seguidas++;
     const s = []; let f = 0, i = 0, vez = Math.max(0, 2 - seguidas);
     while (f < formas.length) {
       for (let k = 0; k < vez && f < formas.length; k++) s.push(formas[f++]);
@@ -179,7 +193,7 @@ function ordenar() {
 const doisDeGramatica = () => ultimos.length === 2 && ultimos.every(ehDeGramatica);
 
 function proximoNovo(lista) {
-  const recentes = estreias.filter(id => tipo(id) !== 'forma').slice(-4);
+  const recentes = estreias.filter(id => !comAForma(id)).slice(-4);
   if (recentes.length === 4 && recentes.every(id => tipo(id) !== 'palavra')) {
     const i = lista.findIndex(id => tipo(id) === 'palavra');
     if (i >= 0) return lista[i];
@@ -270,12 +284,14 @@ function categoria(c) {
   if (c.tipo === 'conceito') return (c.familia === 'caso' || c.familia === 'construcao') ? 'caso: conceito' : 'verbo: conceito';
   if (c.tipo === 'forma') return c.familia === 'caso' ? 'caso: forma na frase' : 'verbo: tempo e modo na frase';
   if (c.tipo === 'flexao') return c.familia === 'caso' ? 'caso: flexão sozinha' : 'verbo: flexão com o sentido';
+  if (c.tipo === 'analise') return 'análise: ' + c.familia;
   return c.tipo;
 }
 const ORDEM = ['palavra (o sentido do dicionário)', 'frase: primeira frase', 'frase: verso do texto', 'frase: frase de uso',
   'caso: conceito', 'caso: forma na frase', 'caso: flexão sozinha', 'contraste (qual frase latina?)',
-  'verbo: conceito', 'verbo: tempo e modo na frase', 'verbo: flexão com o sentido'];
-const ehGram = k => k.startsWith('caso') || k.startsWith('verbo') || k.startsWith('contraste');
+  'verbo: conceito', 'verbo: tempo e modo na frase', 'verbo: flexão com o sentido',
+  'análise: verbo', 'análise: concordancia', 'análise: regencia'];
+const ehGram = k => k.startsWith('caso') || k.startsWith('verbo') || k.startsWith('contraste') || k.startsWith('análise');
 const FAIXAS = [[1, 100], [101, 300], [301, 600], [601, 1000], [1001, 1800], [1801, 3000], [3001, Infinity]];
 const contagem = FAIXAS.map(() => ({}));
 const sequencia = [];

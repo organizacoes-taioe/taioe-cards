@@ -1357,5 +1357,10 @@ window.TAGS_RAW = {
   "en": "heritage",
   "es": "herencia",
   "cards": 0
+ },
+ "análise": {
+  "en": "analysis",
+  "es": "análisis",
+  "cards": 0
  }
 };

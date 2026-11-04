@@ -807,3 +807,67 @@ e os cards de forma dos versos novos (`07-formas`; `22-trechos-4.json` entrou na
   ficou como na edição, com a nota da grafia grega.
 - O primeiro *Tu* da *Bucólica* (v. 8, *Tu modo… fave*) ficou sem rótulo de caso (nominativo ou
   vocativo, as gramáticas divergem): sem card de forma.
+
+## 15. A aula 1 do Falcon: ler pelo verbo (pedido de 04/11)
+
+O Gere assiste ao curso de latim de Rafael Falcon e quer tirar das aulas melhorias e cards novos
+(`../aulas latim falcon/`). A aula 1 ensina a ler pelo verbo: achar o verbo, perguntar o que ele
+pede (quem, o quê, a quem, de quê) e só então ligar cada adjetivo ao nome pela terminação; e achar
+a palavra no dicionário pelo radical. Proposta D34–D46; as respostas dele (04/11):
+
+- ✔ **D34. A forma de dicionário com o verbete inteiro**: já feita no mesmo dia (cards PR #77, §3.6).
+- ✔ **D35. A nota da frase começa pelo verbo**: nas 43 primeiras frases e nos 84 versos, a primeira
+  linha da nota é o verbo, o sentido e as perguntas que ele faz, com a palavra que responde cada uma
+  («solvit (soltar): quem solta? Teucria. O que é solto? se. De quê? luctu, do luto.»).
+- ✔ **D36. O radical na nota**: nos 50 nomes e adjetivos cujo radical não se vê no nominativo, a
+  nota da palavra termina com «Radical: patr- (do genitivo patris).», e a das flexões de caso deles
+  também (o «o tema é patr-» antigo virou «o radical é patr-, do genitivo patris»).
+  `fonte/latim/radicais.py`.
+- ✔ **D37. A errada que liga o adjetivo ao nome errado**: nas frases com um adjetivo longe do nome,
+  a primeira das quatro erradas passa a ser essa leitura («pela força dos deuses cruéis…» em
+  *vi superum saevae … Iunonis*); a última errada antiga saiu.
+- ✔ **D38. O conceito do neutro** (`la-g032`, família `genero`, «Qual o gênero da palavra
+  destacada?»): os três gêneros, o nominativo igual ao acusativo e o plural em -a; exemplos que
+  enganam (*Arma*, *Tempus*, *corpore*, *litora*); entra antes da primeira frase em que o neutro
+  decide a leitura (palavra neutra no plural ou no acusativo: *Arma virumque cano*), não em *Tempus fugit*.
+- ✔ **D39. «Qual é o verbo desta frase?»** (ou «… o verbo principal…», quando há infinitivo,
+  particípio ou verbo de oração subordinada, que viram as erradas): **uma vez só**, e depois de
+  um erro até acertar duas vezes seguidas (o Gere: «tem que ser desses cards feitos para aparecer
+  uma vez só»). Fora: frase sem verbo, com dois verbos principais coordenados (*Odi et amo*) ou com
+  menos de 3 palavras.
+- ✔ **D40. A regência, «O que este verbo pede?»** («interessante, vamos ver como fica»): um card por
+  verbo, depois do card do verbo, uma vez só; a certa diz os lugares e o caso de cada um
+  («alguém que solta e algo que é solto (acusativo)»), as erradas mudam o caso ou o número de lugares.
+- ✔ **D42. «Com que palavra concorda a palavra destacada?»**: a frase com o adjetivo destacado, as
+  alternativas são outras palavras dela; só quando os dois estão separados; uma vez só, como a D39.
+- D41 (perguntas «quem fez o quê?» nos versos) e D44 (perguntas sobre a parte inteira): o Gere
+  quis entender melhor; explicadas na conversa, à espera da resposta.
+- ✗ D43 («De que verbete vem?»): a pergunta «forma de dicionário» do card de forma já faz quase o
+  mesmo. ✗ D45 (deduzir a palavra pelo contexto): não quer. ✗ D46 (a *Eneida* II,26–49): ele segue
+  a *Eneida* do começo, com calma.
+
+**Como ficou.** Tipo novo `analise` (série `la-a`; infra, migração `20261104180000_latim_analise`),
+famílias `verbo` (`la-a<frase>-v`), `concordancia` (`la-a<frase>-c<índice>`) e `regencia`
+(`la-a<palavra>-r`), em `fonte/cards/la/25-analise.json`, gerado por `fonte/latim/analise.py` das
+levas `cache/levas/analise-frases-*.json` e `analise-verbos.json` (fora do git), escritas por
+agentes e revistas. O script também põe a leitura pelo verbo (D35) e a errada da concordância
+(D37) nas frases, e roda de novo sem estrago. No motor, a análise segue a regra da herança
+(`ACERTOS_PARA_FECHAR_HERANCA` = 2, sai das filas quando dominada); no app, o verbo e a
+concordância vêm logo depois da frase, com os cards de forma (o verbo primeiro), e a regência
+entra uma a cada `CADA_REGENCIA` = 5 vagas, depois do verbo dominado. Contam como gramática na
+D30. As alternativas latinas vão em `pt` e `distratores` (o build as passa pelas ligaduras).
+A regência só estreia depois que o verbo apareceu (o card dele, ou uma frase com ele): o verbo
+parecido com o português (*sentio*, *fugio*) conta como sabido sem nunca ter card, e sem essa trava a
+regência dele vinha antes de tudo (`FRASES_DA_PALAVRA` no app).
+
+Os números (04/11): 74 cards do verbo (das 127 frases, 53 sem verbo, com dois verbos principais ou
+curtas demais), 27 de concordância, 104 de regência (12 «armadilhas», em que o caso muda do
+português para o latim: *credo*, *faveo* + dativo; *fugio*, *caveo*, *queror* + acusativo; *doceo*
+com dois acusativos), 127 notas pela leitura do verbo, 13 frases com a errada da concordância, 50
+radicais (69 flexões) e o neutro em 31 frases. Simulação (`simular-latim.js`, Pai-Nosso e
+*Eneida* 1, 30 dias): a gramática fica onde estava (49% a 51% depois das 300 primeiras respostas),
+nunca mais de dois seguidos; a análise é de 2% a 6% das respostas, e o primeiro verso chega um dia
+depois (Pai-Nosso, resposta 366 → 423). As levas tiveram a revisão do principal: a regência de
+*regno* (o genitivo de Horácio é grecismo: virou «sem complemento»), *nascor* e *incipio*
+refeitas. Ficou anotado pelos agentes: em `la-t034`, *Qui* está ligado ao relativo, mas ali é o
+advérbio interrogativo «como?»; em `la-t078`, *Tu* sem `f`.

@@ -1,0 +1,105 @@
+[
+ {
+  "id": "la-g032",
+  "tipo": "conceito",
+  "familia": "genero",
+  "la": "neutro",
+  "pt": "neutro",
+  "aceitas": [
+   "genero neutro",
+   "gênero neutro",
+   "neutra"
+  ],
+  "distratores": [
+   "feminino",
+   "masculino"
+  ],
+  "nota": "O latim tem três gêneros: masculino, feminino e neutro (nem um nem outro), e o adjetivo concorda com o nome também no gênero (bonus, bona, bonum). O neutro tem duas marcas: o nominativo e o acusativo são sempre iguais (tempus, nomen, verbum), e no plural esses dois casos acabam em -a (arma, tempora, omnia), como o feminino singular. O dicionário diz o gênero: tempus, temporis, n.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "Arma virumque cano.",
+    "w": "Arma",
+    "exp": "arma, armorum, n.: neutro plural. O -a não é o do feminino (terra): é o do neutro plural, no acusativo, objeto de cano.",
+    "fonte": "Vergílio, Eneida I,1",
+    "distratores": [
+     "feminino",
+     "masculino"
+    ]
+   },
+   {
+    "la": "Tempus fugit.",
+    "w": "Tempus",
+    "exp": "tempus, temporis, n.: neutro, apesar do -us. Aqui é nominativo; o acusativo seria igual, tempus.",
+    "fonte": "Provérbio (de Vergílio, Geórgicas III,284)",
+    "distratores": [
+     "masculino",
+     "feminino"
+    ]
+   },
+   {
+    "la": "In principio erat Verbum.",
+    "w": "Verbum",
+    "exp": "verbum, verbi, n.: neutro da 2ª declinação. O -um é nominativo aqui (o sujeito de erat), e seria também o acusativo.",
+    "fonte": "Jo 1,1",
+    "distratores": [
+     "masculino",
+     "feminino"
+    ]
+   },
+   {
+    "la": "Omnia vincit Amor.",
+    "w": "Omnia",
+    "exp": "omnia: neutro plural de omnis, «todas as coisas». O -a é o do neutro plural, no acusativo.",
+    "fonte": "Vergílio, Bucólicas X,69",
+    "distratores": [
+     "feminino",
+     "masculino"
+    ]
+   },
+   {
+    "la": "Mens sana in corpore sano.",
+    "w": "corpore",
+    "exp": "corpus, corporis, n.: neutro, apesar do -us; o adjetivo vai no neutro com ele (sano).",
+    "fonte": "Juvenal, Sátiras X,356",
+    "distratores": [
+     "masculino",
+     "feminino"
+    ]
+   },
+   {
+    "la": "sanctificetur nomen tuum.",
+    "w": "nomen",
+    "exp": "nomen, nominis, n.: neutro; o possessivo concorda no neutro (tuum).",
+    "fonte": "Pai-Nosso",
+    "distratores": [
+     "masculino",
+     "feminino"
+    ]
+   },
+   {
+    "la": "litora, multum ille et terris iactatus et alto",
+    "w": "litora",
+    "exp": "litora: neutro plural de litus, litoris, n. (as praias). O -a é o do neutro plural, não o do feminino.",
+    "fonte": "Vergílio, Eneida I,3",
+    "distratores": [
+     "feminino",
+     "masculino"
+    ]
+   },
+   {
+    "la": "Exegi monumentum ære perennius",
+    "w": "monumentum",
+    "exp": "monumentum, monumenti, n.: neutro. No acusativo, objeto de exegi, igual ao nominativo.",
+    "fonte": "Horácio, Odes III,30,1",
+    "distratores": [
+     "masculino",
+     "feminino"
+    ]
+   }
+  ]
+ }
+]

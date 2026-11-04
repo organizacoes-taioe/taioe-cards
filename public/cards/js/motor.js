@@ -1484,7 +1484,7 @@ window.Motor = (function () {
   function filaDe(est) {
     const e = (est && est.etapa) || 'multipla';
     /* o card de forma acertado não volta: não mora em fila nenhuma */
-    if (e === 'dominado' && est && (ehForma(est.id) || ehHeranca(est.id))) return 'fora';
+    if (e === 'dominado' && est && (ehForma(est.id) || ehHeranca(est.id) || ehAnalise(est.id))) return 'fora';
     if (e === 'dominado') return 'dominados';
     return (e === 'multipla' || e === 'escrita') ? 'esPt' : 'ptEs';
   }
@@ -2433,9 +2433,11 @@ window.Motor = (function () {
        — quem já provou o espanhol→português não volta à estaca zero. */
     const inversa = ehVolta(r.direcao) && !ehContraste(est.id);
     const jaDominado = est.etapa === 'dominado';
-    if (ehHeranca(est.id)) {
+    if (ehHeranca(est.id) || ehAnalise(est.id)) {
       /* o card de herança (§13) é curiosidade, não fica no jogo (pedido do Gere, 03/11/2026):
-         o acerto de primeira, ou dois seguidos depois de um erro, fecham de vez, como na forma */
+         o acerto de primeira, ou dois seguidos depois de um erro, fecham de vez, como na forma;
+         e os de análise (§15: o verbo, a concordância, a regência), pela mesma regra (o Gere,
+         04/11/2026: «aparecer uma vez só, se errar, até acertar duas») */
       if (r.acertou && (est.vistas === 1 || est.seguidas >= ACERTOS_PARA_FECHAR_HERANCA)) {
         est.etapa = 'dominado';
         if (!est.dominadoEm) est.dominadoEm = new Date().toISOString();
@@ -2524,7 +2526,7 @@ window.Motor = (function () {
     }
 
     /* Só o maduro espera por data; qualquer outro volta pela fila e mais nada. */
-    est.voltaEm = est.etapa === 'dominado' && !ehForma(est.id) && !ehHeranca(est.id) ? proximaVolta(est.revisoes, est.ultima) : null;
+    est.voltaEm = est.etapa === 'dominado' && !ehForma(est.id) && !ehHeranca(est.id) && !ehAnalise(est.id) ? proximaVolta(est.revisoes, est.ultima) : null;
 
     // a estreia é a única medida limpa do que já se sabia antes do app
     if (est.vistas === 1) est.primeiraCerta = !!r.acertou;
@@ -2570,7 +2572,7 @@ window.Motor = (function () {
     if (est && (ehConceito(est.id) || ehForma(est.id))) return { direcao: IDA, modo: 'multipla' };
     /* e a flexão de nome, que pergunta o caso (pedido do Gere, 26/10/2026) */
     if (est && ehFlexaoDeCaso(est.id)) return { direcao: IDA, modo: 'multipla' };
-    /* e os de compreensão e de herança (LATIM.md §13, D31 e D32) */
+    /* e os de compreensão e de herança (LATIM.md §13, D31 e D32) e os de análise (§15) */
     if (est && deEscolherSempre(est.id)) return { direcao: IDA, modo: 'multipla' };
     /* o card de leitura só conhece a ida, também quando dominado; no modo trilhas, todos */
     if (est && (soIda() || ehLeitura(est.id))) {
@@ -2647,11 +2649,18 @@ window.Motor = (function () {
      («pergunta»), só se escolhem, e três acertos seguidos os dominam, como o contraste. */
   function ehCompreensao(id) { return TIPO[id] === 'compreensao'; }
   function ehHeranca(id) { return TIPO[id] === 'heranca'; }
-  function deEscolherSempre(id) { return ehCompreensao(id) || ehHeranca(id); }
+  function deEscolherSempre(id) { return ehCompreensao(id) || ehHeranca(id) || ehAnalise(id); }
+
+  /* ── os cards de análise (LATIM.md §15, D39, D40 e D42; aula 1 do Falcon, 04/11/2026) ──
+     O método de ler pelo verbo, treinado em três perguntas: «Qual é o verbo desta frase?» (a
+     frase inteira, as alternativas são palavras dela), «Com que palavra concorda?» (a frase com
+     o adjetivo destacado, as alternativas são os nomes dela) e «O que este verbo pede?» (a
+     regência, depois do card do verbo). Só de escolher, uma vez só, como a herança. */
+  function ehAnalise(id) { return TIPO[id] === 'analise'; }
 
   /* O card de forma acertado já disse o que tinha a dizer: fora de todas as filas. */
   function encerrado(id, est) {
-    return (ehForma(id) || ehHeranca(id)) && !!est && est.etapa === 'dominado';
+    return (ehForma(id) || ehHeranca(id) || ehAnalise(id)) && !!est && est.etapa === 'dominado';
   }
 
   /* A resposta tem sido errada nos cards de forma de mesmo gabarito: o último erro ainda não
@@ -3065,7 +3074,7 @@ window.Motor = (function () {
     /* na flexão, as outras formas do mesmo lema, escritas no card (LATIM.md §3.8) */
     if (card.tipo === 'flexao') return embaralhar([card.pt, ...(card.distratores || []).slice(0, 4)]);
     /* na compreensão e na herança (§13), as quatro escritas no card */
-    if (card.tipo === 'compreensao' || card.tipo === 'heranca') return embaralhar([card.pt, ...(card.distratores || []).slice(0, 4)]);
+    if (card.tipo === 'compreensao' || card.tipo === 'heranca' || card.tipo === 'analise') return embaralhar([card.pt, ...(card.distratores || []).slice(0, 4)]);
     const lingua = linguaDaResposta(direcao);
     const certa = card[CAMPOS[lingua].certa];
     /* Responder na língua que o baralho ensina é produzir, e aí não há quatro
@@ -4418,7 +4427,7 @@ window.Motor = (function () {
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
-    perguntaDaForma, ehForma, ehContraste, ehConceito, ehCompreensao, ehHeranca, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
+    perguntaDaForma, ehForma, ehContraste, ehConceito, ehCompreensao, ehHeranca, ehAnalise, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     ACERTOS_QUE_SOLTAM,
     DIA_DAS_TERMINACOES, ativoDaTerminacao, flexaoPuxada, adormecido, quemConta, exemploDaTerminacao,
     erroDeGenero, formasAceitas, LIMITES, cortar,

@@ -112,10 +112,20 @@ window.TaioeCardsApp = function (ctx) {
   });
   const FLEXAO_EM_FRASE = new Set(CARDS.filter(c => c.tipo === 'frase').flatMap(c => Motor.requeridas(c))
     .filter(r => (PORID_FONTE[r] || {}).tipo === 'flexao'));
+  /* as frases de cada palavra (pela anotação): a regência (LATIM.md §15) só estreia depois que o
+     verbo apareceu, no card dele ou numa frase; o verbo parecido com o português conta como sabido
+     sem nunca ter card (sentio, fugio), e sem isso a regência dele viria antes de tudo */
+  const FRASES_DA_PALAVRA = new Map();
+  CARDS.forEach(c => (c.tipo === 'frase' ? c.palavras || [] : []).forEach(x => {
+    if (!x.c) return;
+    if (!FRASES_DA_PALAVRA.has(x.c)) FRASES_DA_PALAVRA.set(x.c, []);
+    FRASES_DA_PALAVRA.get(x.c).push(c.id);
+  }));
   /* a pergunta do card de conceito, pela família */
   const ENUNCIADO_DO_CONCEITO = {
     caso: 'card.enunciado.conceito.caso', verbo: 'card.enunciado.conceito.verbo', voz: 'card.enunciado.conceito.voz',
     construcao: 'card.enunciado.conceito.construcao', declinacao: 'card.enunciado.conceito.declinacao',
+    genero: 'card.enunciado.conceito.genero',
     conjugacao: 'card.enunciado.conceito.conjugacao',
     /* os de gramática do espanhol (03/11/2026) */
     tempo: 'card.enunciado.conceito.tempo', 'ser-estar': 'card.enunciado.conceito.serEstar',
@@ -523,6 +533,8 @@ window.TaioeCardsApp = function (ctx) {
     if (c.tipo === 'palavra') return TZ_PALAVRAS.has(id) || deTexto.has(id);
     if (c.tipo === 'conceito') return true;
     if (c.tipo === 'forma') return formaDaTrilha(c, ativosIds, p);
+    if (c.tipo === 'analise' && c.familia !== 'regencia') return analiseDaTrilha(c, ativosIds, p);
+    if (c.tipo === 'analise') return [c.lema].concat(FRASES_DA_PALAVRA.get(c.lema) || []).some(x => p.cards[x] && p.cards[x].vistas);
     /* a flexão espera o card do lema: o dicionário primeiro, depois cada forma; e não estreia a
        que repete uma terminação já estudada, nem a variante (LATIM.md §13, Motor.adormecido) */
     if (c.tipo === 'flexao') {
@@ -539,6 +551,16 @@ window.TaioeCardsApp = function (ctx) {
     const de = PORID[c.de] || {};
     if (de.texto && !ativosIds.has(de.texto)) return false;
     return Motor.formaPronta(c, p.cards, p.arquivados || {});
+  }
+
+  /* Os cards de análise da frase (LATIM.md §15: «Qual é o verbo?», «Com que palavra concorda?»)
+     estreiam depois da frase de onde vêm, como o de forma, se o texto dela ainda está escolhido;
+     a regência espera o card do verbo («requerTodas»), como a palavra derivada da herança. */
+  function analiseDaTrilha(c, ativosIds, p) {
+    const de = PORID[c.de] || {};
+    if (de.texto && !ativosIds.has(de.texto)) return false;
+    const e = p.cards[c.de];
+    return !!(e && e.vistas) || Motor.arquivado(c.de, p.arquivados || {});
   }
 
   /* O baralho de inéditos é ordenado pelo desempenho: sai primeiro o nível
@@ -655,14 +677,16 @@ window.TaioeCardsApp = function (ctx) {
      (a frase, pelos «conceitos» dela; a palavra do texto, pelos do primeiro trecho em que ela
      aparece). A estreia de um conceito não conta na alternância. */
   function ordenarTrilhas(p) {
-    const CADA = 2, FORMAS_SEGUIDAS = 2, CADA_FLEXAO_DE_USO = 3, CADA_FLEXAO_DE_TABELA = 9, CADA_HERANCA = 7;
+    const CADA = 2, FORMAS_SEGUIDAS = 2, CADA_FLEXAO_DE_USO = 3, CADA_FLEXAO_DE_TABELA = 9, CADA_HERANCA = 7, CADA_REGENCIA = 5;
     const ehConceito = id => (PORID[id] || {}).tipo === 'conceito';
-    const ehForma = id => (PORID[id] || {}).tipo === 'forma';
+    /* os cards de análise da frase (LATIM.md §15) andam com os de forma: depois da frase */
+    const ehAnaliseDaFrase = id => { const c = PORID[id] || {}; return c.tipo === 'analise' && c.familia !== 'regencia'; };
+    const ehForma = id => (PORID[id] || {}).tipo === 'forma' || ehAnaliseDaFrase(id);
     const ehFlexao = id => (PORID[id] || {}).tipo === 'flexao';
     /* o card de forma que só o erro puxou sai quando o erro foi vencido (Motor.formaPronta), e a
        flexão que adormeceu depois de entrar na lista, quando o grupo dela ganhou card (LATIM.md §13) */
     const ativosAgora = new Set(textosAtivosDe(p).map(x => x.id));
-    p.ineditos = p.ineditos.filter(id => (!ehForma(id) || formaDaTrilha(PORID[id], ativosAgora, p)) &&
+    p.ineditos = p.ineditos.filter(id => (!ehForma(id) || (ehAnaliseDaFrase(id) ? analiseDaTrilha : formaDaTrilha)(PORID[id], ativosAgora, p)) &&
       !(ehFlexao(id) && Motor.adormecido(id, p.cards)));
     const pendentes = new Set(p.ineditos), postos = new Set();
     const pega = id => (pendentes.has(id) && !postos.has(id) ? (postos.add(id), [id]) : []);
@@ -673,6 +697,9 @@ window.TaioeCardsApp = function (ctx) {
        derivada depois do lema dominado */
     const ehHeranca = id => (PORID[id] || {}).tipo === 'heranca';
     const herancas = p.ineditos.filter(ehHeranca);
+    /* a regência (§15, D40), uma a cada CADA_REGENCIA vagas, depois do card do verbo */
+    const ehRegencia = id => { const c = PORID[id] || {}; return c.tipo === 'analise' && c.familia === 'regencia'; };
+    const regencias = p.ineditos.filter(ehRegencia);
     const quando = id => Motor.venceuEm(PORID[id], p.cards, p.arquivados);
     presas.sort((a, b) => quando(b) - quando(a));
     const agora = Date.now();
@@ -682,6 +709,7 @@ window.TaioeCardsApp = function (ctx) {
     const antigas = presas.filter(id => frescas.indexOf(id) < 0).map(id => [id]);
     presas.forEach(id => postos.add(id));
     herancas.forEach(id => postos.add(id));
+    regencias.forEach(id => postos.add(id));
     const ativos = textosQueSoltamDe(p);
     const ativosIds = new Set(ativos.map(x => x.id));
     const conceitosDaPalavra = id => {
@@ -727,13 +755,17 @@ window.TaioeCardsApp = function (ctx) {
       fila = naVez(fila, soDeTabela.map(id => [id]), desde(id => ehFlexao(id) && !FLEXAO_EM_FRASE.has(id)), CADA_FLEXAO_DE_TABELA);
     }
     if (herancas.length) fila = naVez(fila, herancas.map(id => [id]), desde(ehHeranca), CADA_HERANCA);
+    if (regencias.length) fila = naVez(fila, regencias.map(id => [id]), desde(ehRegencia), CADA_REGENCIA);
     fila = frescas.concat(fila);
     /* Os cards de forma (LATIM.md §3.6) vêm logo depois do verso que os destravou, o verso mais
        recente primeiro e, nele, na ordem de leitura; no máximo FORMAS_SEGUIDAS de uma vez, e o
        resto nas vagas seguintes. A estreia de forma não conta na alternância de cima. */
+    /* na mesma frase, o verbo primeiro (§15: o método do Falcon começa por ele), depois as formas
+       e as concordâncias, na ordem do baralho */
+    const primeiroOVerbo = id => ((PORID[id] || {}).familia === 'verbo' && ehAnaliseDaFrase(id) ? 0 : 1);
     const formas = p.ineditos.filter(ehForma).sort((a, b) => {
       const ea = (p.cards[PORID[a].de] || {}).estreouNa || 0, eb = (p.cards[PORID[b].de] || {}).estreouNa || 0;
-      return eb - ea || CARDS.indexOf(PORID[a]) - CARDS.indexOf(PORID[b]);
+      return eb - ea || primeiroOVerbo(a) - primeiroOVerbo(b) || CARDS.indexOf(PORID[a]) - CARDS.indexOf(PORID[b]);
     });
     if (formas.length) {
       let seguidas = 0;
@@ -999,7 +1031,7 @@ window.TaioeCardsApp = function (ctx) {
      de outro tipo, se houver um pronto: no card novo, o primeiro de outro tipo da lista de
      inéditos; na revisão, o mais urgente de outro tipo da mesma fila; no dominado vencido, outro
      vencido. Sem nenhum pronto, segue a fila. Não muda o que se estuda, só a ordem. */
-  const DE_GRAMATICA = new Set(['conceito', 'forma', 'flexao', 'contraste']);
+  const DE_GRAMATICA = new Set(['conceito', 'forma', 'flexao', 'contraste', 'analise']);
   const ehDeGramatica = id => DE_GRAMATICA.has((PORID[id] || {}).tipo);
   let ultimosTirados = [];
   function doisDeGramatica() {
@@ -1414,7 +1446,8 @@ window.TaioeCardsApp = function (ctx) {
     /* o card de forma acertado de primeira já sai sozinho: o «já conheço» não teria o que fazer */
     /* nem no de contraste, que é só treino de leitura das terminações */
     /* nem nos de compreensão e de herança (§13), que são leitura do que já se estudou */
-    jaConhecoNoCard = estreando && !previa && !['forma', 'contraste', 'compreensao', 'heranca'].includes(cardAtual.tipo);
+    /* nem nos de análise (§15), que são uma vez só */
+    jaConhecoNoCard = estreando && !previa && !['forma', 'contraste', 'compreensao', 'heranca', 'analise'].includes(cardAtual.tipo);
     posicionarJaConheco(false);
     el['aviso-previa'].classList.add('oculto');
     /* O nível vive na aba do fichário e fica à mostra o tempo todo: saber que
@@ -1429,7 +1462,7 @@ window.TaioeCardsApp = function (ctx) {
        (§3.8, desde 26/10/2026; desde 31/10, «Qual o caso dessa forma?») */
     const flexaoDeCaso = cardAtual.tipo === 'flexao' && cardAtual.familia === 'caso';
     /* a compreensão e a herança (LATIM.md §13, D31 e D32) trazem a pergunta escrita no card */
-    const perguntaDoCard = ['compreensao', 'heranca'].includes(cardAtual.tipo) ? cardAtual.pergunta : '';
+    const perguntaDoCard = ['compreensao', 'heranca', 'analise'].includes(cardAtual.tipo) ? cardAtual.pergunta : '';
     const conceito = cardAtual.tipo === 'conceito' || cardAtual.tipo === 'forma' || flexaoDeCaso || !!perguntaDoCard;
     el.enunciado.textContent = conceito ? ''
       : inversa
@@ -1466,11 +1499,15 @@ window.TaioeCardsApp = function (ctx) {
     if (exemploDoDicionario) el.termo.textContent = exemploAtual.la;
     else if (exemploAtual) el.termo.innerHTML = comDestaque(String(exemploAtual[L] || exemploAtual.la).replace(/\{([^{}|]*)\|[^{}|]*\}/g, '$1'), exemploAtual.w);
     else if (cardAtual.tipo === 'forma') el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.la, cardAtual.ocorrencia);
+    /* a análise (§15): a frase, com a palavra destacada na concordância; na regência, o verbo */
+    else if (cardAtual.tipo === 'analise' && cardAtual.familia === 'concordancia') el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.la, cardAtual.ocorrencia);
+    else if (cardAtual.tipo === 'analise') el.termo.textContent = cardAtual.familia === 'verbo' ? cardAtual.frase : cardAtual.la;
     /* a flexão mostra só a forma: o enunciado do dicionário embaixo era dica (pedido do Gere,
        31/10/2026); ele aparece depois, na nota */
     else if (cardAtual.tipo === 'flexao') el.termo.textContent = cardAtual.la;
     else el.termo.textContent = !inversa && cardAtual.enunciado ? cardAtual.enunciado : Motor.pergunta(cardAtual, direcaoAtual);
-    el.termo.classList.toggle('frase', ['frase', 'forma', 'contraste', 'compreensao'].includes(cardAtual.tipo) || !!exemploAtual);
+    el.termo.classList.toggle('frase', ['frase', 'forma', 'contraste', 'compreensao'].includes(cardAtual.tipo) ||
+      (cardAtual.tipo === 'analise' && cardAtual.familia !== 'regencia') || !!exemploAtual);
 
     el['aviso-lingua'].classList.add('oculto');
     el['aviso-acento'].classList.add('oculto');
@@ -1559,10 +1596,10 @@ window.TaioeCardsApp = function (ctx) {
     });
   }
 
-  /* «palavra», «frase» e (no latim) «conceito», «forma», «contraste», «flexão», «compreensão» e «herança»,
+  /* «palavra», «frase» e (no latim) «conceito», «forma», «contraste», «flexão», «compreensão», «herança» e «análise»,
      na língua da interface */
   function nomeTipo(tipo) {
-    return ['palavra', 'frase', 'conceito', 'forma', 'contraste', 'flexao', 'compreensao', 'heranca'].includes(tipo) ? t('tipo.' + tipo) : tipo;
+    return ['palavra', 'frase', 'conceito', 'forma', 'contraste', 'flexao', 'compreensao', 'heranca', 'analise'].includes(tipo) ? t('tipo.' + tipo) : tipo;
   }
 
   /* A frase do exemplo com a palavra em destaque (só ela: em «virumque», o «virum»); «vez» diz
@@ -2149,7 +2186,7 @@ window.TaioeCardsApp = function (ctx) {
     /* no modo trilhas, o trecho só entra se o texto dele estiver escolhido */
     const ativosIds = TRILHAS ? new Set(textosAtivosAgora().map(x => x.id)) : null;
     /* o card de contraste não entra por aqui: um de cada vez, por contrasteDaVez (31/10/2026) */
-    const novas = CARDS.filter(c => ['frase', 'compreensao', 'heranca'].includes(c.tipo) && Motor.requeridas(c).length &&
+    const novas = CARDS.filter(c => ['frase', 'compreensao', 'heranca', 'analise'].includes(c.tipo) && Motor.requeridas(c).length &&
       !progresso.cards[c.id] && !jaEsta.has(c.id) && !Motor.arquivado(c.id, progresso.arquivados) &&
       (!ativosIds || !c.texto || ativosIds.has(c.texto)) &&
       Motor.liberado(c, progresso.cards, agora, progresso.arquivados));
@@ -2160,6 +2197,9 @@ window.TaioeCardsApp = function (ctx) {
       CARDS.forEach(c => {
         if (c.tipo === 'forma' && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
             !Motor.arquivado(c.id, progresso.arquivados) && formaDaTrilha(c, ativosIds, progresso)) novas.push(c);
+        /* e os de análise da frase (LATIM.md §15), do mesmo jeito */
+        if (c.tipo === 'analise' && c.familia !== 'regencia' && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
+            !Motor.arquivado(c.id, progresso.arquivados) && analiseDaTrilha(c, ativosIds, progresso)) novas.push(c);
         if (c.tipo === 'flexao' && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
             !Motor.arquivado(c.id, progresso.arquivados) && daTrilha(c.id, null, ativosIds, progresso)) novas.push(c);
       });
