@@ -381,6 +381,20 @@
   </div>
 </div>
 
+<!-- «Já conheço»: a pergunta fica na própria página (03/11/2026). A janela do
+     navegador (confirm) deixava a página sem foco ao fechar, e no celular o
+     teclado do card seguinte não escrevia em caixa nenhuma. -->
+<div class="comentario-fundo oculto" id="arquivar-fundo">
+  <div class="comentario-painel" role="dialog" aria-modal="true" aria-labelledby="arquivar-titulo">
+    <h3 id="arquivar-titulo"></h3>
+    <p class="recomecar-texto" id="arquivar-texto"></p>
+    <div class="linha-botoes">
+      <button class="primario" id="btn-arquivar-sim" data-i18n="arquivar.sim"></button>
+      <button class="secundario" id="btn-arquivar-nao" data-i18n="comentario.cancelar"></button>
+    </div>
+  </div>
+</div>
+
 <footer class="rodape">
   <span id="rodape-sync">•</span>
 </footer>
