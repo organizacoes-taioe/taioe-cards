@@ -93,8 +93,10 @@ CARDS.forEach(c => (c.tipo === 'frase' ? c.palavras || [] : []).forEach(x => {
   if (x.c) (FRASES_DA_PALAVRA.get(x.c) || FRASES_DA_PALAVRA.set(x.c, []).get(x.c)).push(c.id);
 }));
 const DE_GRAMATICA = new Set(['conceito', 'forma', 'flexao', 'contraste', 'analise']);
-/* a análise da frase (LATIM.md §15: o verbo, a concordância) anda com os cards de forma */
-const comAForma = id => tipo(id) === 'forma' || (tipo(id) === 'analise' && PORID.get(id).familia !== 'regencia');
+/* a análise da frase (LATIM.md §15: o verbo, a concordância) e a pergunta sobre o trecho (§16,
+   D41) andam com os cards de forma */
+const comAForma = id => tipo(id) === 'forma' || (tipo(id) === 'analise' && PORID.get(id).familia !== 'regencia') ||
+  M.ehCompreensaoDoVerso(id);
 const ehDeGramatica = id => DE_GRAMATICA.has(tipo(id));
 
 function elegivel(id) {
@@ -285,12 +287,13 @@ function categoria(c) {
   if (c.tipo === 'forma') return c.familia === 'caso' ? 'caso: forma na frase' : 'verbo: tempo e modo na frase';
   if (c.tipo === 'flexao') return c.familia === 'caso' ? 'caso: flexão sozinha' : 'verbo: flexão com o sentido';
   if (c.tipo === 'analise') return 'análise: ' + c.familia;
+  if (c.tipo === 'compreensao') return M.ehCompreensaoDoVerso(c.id) ? 'compreensão: pergunta do trecho' : 'compreensão';
   return c.tipo;
 }
 const ORDEM = ['palavra (o sentido do dicionário)', 'frase: primeira frase', 'frase: verso do texto', 'frase: frase de uso',
   'caso: conceito', 'caso: forma na frase', 'caso: flexão sozinha', 'contraste (qual frase latina?)',
   'verbo: conceito', 'verbo: tempo e modo na frase', 'verbo: flexão com o sentido',
-  'análise: verbo', 'análise: concordancia', 'análise: regencia'];
+  'análise: verbo', 'análise: concordancia', 'análise: regencia', 'compreensão: pergunta do trecho'];
 const ehGram = k => k.startsWith('caso') || k.startsWith('verbo') || k.startsWith('contraste') || k.startsWith('análise');
 const FAIXAS = [[1, 100], [101, 300], [301, 600], [601, 1000], [1001, 1800], [1801, 3000], [3001, Infinity]];
 const contagem = FAIXAS.map(() => ({}));

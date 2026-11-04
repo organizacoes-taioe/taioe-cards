@@ -466,17 +466,41 @@ ok(textos.length >= 1, 'há textos latinos');
 for (const txt of textos) {
   ok(typeof txt.fila !== 'number', txt.id + ': sem «fila» (no modo trilhas não há texto automático)');
   const cardsDe = d => (Array.isArray(d.partes) ? d.partes : [d]).map(x => x.card).filter(Boolean);
-  (txt.blocos || []).flat().forEach((l, i) => {
-    const tr = PORID.get(l.card);
-    ok(tr && tr.texto === txt.id && tr.linha === i + 1 && tr.la === l.t, txt.id + ' linha ' + (i + 1) + ': o trecho bate');
-    const pede = new Set((l.p || []).filter(x => x[1]).flatMap(x => cardsDe(txt.destinos[x[1]])));
-    /* o trecho pede os lemas da linha e, depois deles, as flexões (LATIM.md §3.8) */
-    const req = new Set(((tr && tr.requerTodas) || []).filter(id => (PORID.get(id) || {}).tipo !== 'flexao'));
-    ok(pede.size === req.size && [...pede].every(id => req.has(id)),
-      txt.id + ' linha ' + (i + 1) + ': as palavras da linha são as que o trecho pede');
-    const flexDoTrecho = ((tr && tr.requerTodas) || []).filter(id => (PORID.get(id) || {}).tipo === 'flexao');
-    ok(flexDoTrecho.every(id => pede.has(PORID.get(id).lema)), txt.id + ' linha ' + (i + 1) + ': as flexões são de lemas da linha');
-  });
+  /* o card é o trecho, a frase, que pode atravessar o verso (LATIM.md §3.3, cortes.py) */
+  const linhas = (txt.blocos || []).flat();
+  const trechos = CARDS.filter(c => c.tipo === 'frase' && c.texto === txt.id).sort((a, b) => a.linha - b.linha);
+  ok(trechos.map(c => c.linha).join() === trechos.map((c, k) => k + 1).join(), txt.id + ': os trechos em ordem, de 1 a ' + trechos.length);
+  const cobertos = new Set();
+  for (const tr of trechos) {
+    const [a, z] = tr.versos || [0, 0];
+    for (let k = a; k <= z; k++) cobertos.add(k);
+    const pede = new Set(linhas.slice(a - 1, z).flatMap(l => (l.p || []).filter(x => x[1]).flatMap(x => cardsDe(txt.destinos[x[1]]))));
+    /* o trecho pede lemas dos versos dele e, depois deles, as flexões (LATIM.md §3.8) */
+    const req = (tr.requerTodas || []);
+    ok(req.filter(id => (PORID.get(id) || {}).tipo !== 'flexao').every(id => pede.has(id)), tr.id + ': as palavras do trecho estão nos versos ' + a + '–' + z);
+    ok(req.filter(id => (PORID.get(id) || {}).tipo === 'flexao').every(id => pede.has(PORID.get(id).lema)), tr.id + ': as flexões são de lemas do trecho');
+    ok(tr.palavras.filter(x => !x.w.startsWith('-')).length <= 12, tr.id + ': até 12 palavras');
+    const fecha = /[.;:?!]$/.test(tr.la) || z === linhas.length || tr.la.split(' ').length >= 3;
+    ok(fecha, tr.id + ': o trecho não é um fiapo');
+  }
+  ok(linhas.every((l, i) => cobertos.has(i + 1)), txt.id + ': todo verso está em algum trecho');
+}
+
+/* o corte novo (04/11/2026): «Arma virumque cano, Troiæ qui primus ab oris» deixou de ser card */
+ok(!CARDS.some(c => c.tipo === 'frase' && c.la === 'Arma virumque cano, Troiae qui primus ab oris'), 'o primeiro verso da Eneida não é mais card sozinho');
+ok(CARDS.some(c => c.tipo === 'frase' && c.texto && c.la.includes(' … ')), 'há trechos com «…» no que fica de fora');
+
+/* a pergunta sobre o trecho (§16, D41): depois do trecho, uma vez só */
+M.usarTransparencias(CARDS);
+const doVerso = CARDS.filter(c => c.tipo === 'compreensao' && /^la-t/.test(c.de || ''));
+ok(doVerso.length >= 20, 'há perguntas sobre os trechos (' + doVerso.length + ')');
+ok(doVerso.every(c => (PORID.get(c.de) || {}).la === c.la), 'a pergunta mostra o trecho como ele é');
+ok(doVerso.every(c => M.ehCompreensaoDoVerso(c.id)) && !M.ehCompreensaoDoVerso('la-q001'), 'o motor separa a pergunta do trecho da compreensão das primeiras frases');
+{
+  const c = doVerso[0];
+  const e = M.estadoInicialDo(c);
+  M.registrar(e, { acertou: true, modo: 'multipla', direcao: IDA, resposta: 'x' });
+  ok(e.etapa === 'dominado' && M.filaDe(e) === 'fora', 'a pergunta do trecho: o acerto de primeira fecha de vez');
 }
 
 M.usarModo('livre');

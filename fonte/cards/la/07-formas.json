@@ -8389,13 +8389,13 @@
   ]
  },
  {
-  "id": "la-xt025-1",
+  "id": "la-xt126-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "quem",
-  "frase": "Quia quem meruisti portare, alleluia.",
+  "frase": "Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.",
   "ocorrencia": 1,
-  "de": "la-t025",
+  "de": "la-t126",
   "fonte": "Regina caeli",
   "lema": "la-p064",
   "pt": "acusativo",
@@ -8422,13 +8422,6 @@
   "dificuldade": 1.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "qui, quae, quod",
   "distratoresDicionario": [
    "hic, haec, hoc",
@@ -8438,13 +8431,13 @@
   ]
  },
  {
-  "id": "la-xt025-2",
+  "id": "la-xt126-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "meruisti",
-  "frase": "Quia quem meruisti portare, alleluia.",
+  "frase": "Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.",
   "ocorrencia": 1,
-  "de": "la-t025",
+  "de": "la-t126",
   "fonte": "Regina caeli",
   "lema": "la-p175",
   "pt": "perfeito do indicativo",
@@ -8485,13 +8478,13 @@
   ]
  },
  {
-  "id": "la-xt025-3",
+  "id": "la-xt126-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "portare",
-  "frase": "Quia quem meruisti portare, alleluia.",
+  "frase": "Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.",
   "ocorrencia": 1,
-  "de": "la-t025",
+  "de": "la-t126",
   "fonte": "Regina caeli",
   "lema": "la-p176",
   "pt": "infinitivo",
@@ -8525,13 +8518,13 @@
   ]
  },
  {
-  "id": "la-xt026-0",
+  "id": "la-xt126-4",
   "tipo": "forma",
   "familia": "verbo",
-  "la": "Resurrexit",
-  "frase": "Resurrexit, sicut dixit, alleluia.",
+  "la": "resurrexit",
+  "frase": "Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.",
   "ocorrencia": 1,
-  "de": "la-t026",
+  "de": "la-t126",
   "fonte": "Regina caeli",
   "lema": "la-p177",
   "pt": "perfeito do indicativo",
@@ -8544,7 +8537,7 @@
    "mais-que-perfeito do indicativo",
    "futuro do indicativo"
   ],
-  "nota": "Resurrexit: perfeito do indicativo, 3ª pessoa do singular, o sujeito é quem, da linha anterior.",
+  "nota": "resurrexit: perfeito do indicativo, 3ª pessoa do singular, sujeito: aquele que (o antecedente de quem).",
   "nivel": "A1",
   "tags": [
    "gramática",
@@ -8572,13 +8565,13 @@
   ]
  },
  {
-  "id": "la-xt026-2",
+  "id": "la-xt126-6",
   "tipo": "forma",
   "familia": "verbo",
   "la": "dixit",
-  "frase": "Resurrexit, sicut dixit, alleluia.",
+  "frase": "Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.",
   "ocorrencia": 1,
-  "de": "la-t026",
+  "de": "la-t126",
   "fonte": "Regina caeli",
   "lema": "la-p122",
   "pt": "perfeito do indicativo",
@@ -8756,14 +8749,14 @@
   ]
  },
  {
-  "id": "la-xt028-1",
+  "id": "la-xt114-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "rivum",
-  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "frase": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
   "ocorrencia": 1,
-  "de": "la-t028",
-  "fonte": "Fedro, Fábulas I,1,1",
+  "de": "la-t114",
+  "fonte": "Fedro, Fábulas I,1,1–2",
   "lema": "la-p179",
   "pt": "acusativo",
   "aceitas": [
@@ -8789,13 +8782,6 @@
   "dificuldade": 0.5,
   "sempre": false,
   "ambigua": false,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto direto",
-   "sujeito",
-   "adjunto adnominal",
-   "complemento nominal"
-  ],
   "dicionario": "rivus, rivi, m.",
   "distratoresDicionario": [
    "rivum, rivi, n.",
@@ -8805,14 +8791,14 @@
   ]
  },
  {
-  "id": "la-xt028-2",
+  "id": "la-xt114-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "eundem",
-  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "frase": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
   "ocorrencia": 1,
-  "de": "la-t028",
-  "fonte": "Fedro, Fábulas I,1,1",
+  "de": "la-t114",
+  "fonte": "Fedro, Fábulas I,1,1–2",
   "lema": "la-p180",
   "pt": "acusativo",
   "aceitas": [
@@ -8838,13 +8824,6 @@
   "dificuldade": 1.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "objeto direto",
-   "sujeito",
-   "complemento nominal",
-   "predicativo do objeto"
-  ],
   "dicionario": "idem, eadem, idem",
   "distratoresDicionario": [
    "ille, illa, illud",
@@ -8854,14 +8833,14 @@
   ]
  },
  {
-  "id": "la-xt028-3",
+  "id": "la-xt114-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "lupus",
-  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "frase": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
   "ocorrencia": 1,
-  "de": "la-t028",
-  "fonte": "Fedro, Fábulas I,1,1",
+  "de": "la-t114",
+  "fonte": "Fedro, Fábulas I,1,1–2",
   "lema": "la-p153",
   "pt": "nominativo",
   "aceitas": [
@@ -8885,24 +8864,17 @@
   ],
   "dificuldade": 0.0,
   "sempre": false,
-  "ambigua": false,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ]
+  "ambigua": false
  },
  {
-  "id": "la-xt028-5",
+  "id": "la-xt114-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "agnus",
-  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "frase": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
   "ocorrencia": 1,
-  "de": "la-t028",
-  "fonte": "Fedro, Fábulas I,1,1",
+  "de": "la-t114",
+  "fonte": "Fedro, Fábulas I,1,1–2",
   "lema": "la-p181",
   "pt": "nominativo",
   "aceitas": [
@@ -8926,24 +8898,17 @@
   ],
   "dificuldade": 0.0,
   "sempre": false,
-  "ambigua": false,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ]
+  "ambigua": false
  },
  {
-  "id": "la-xt028-6",
+  "id": "la-xt114-6",
   "tipo": "forma",
   "familia": "verbo",
   "la": "venerant",
-  "frase": "Ad rivum eundem lupus et agnus venerant",
+  "frase": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
   "ocorrencia": 1,
-  "de": "la-t028",
-  "fonte": "Fedro, Fábulas I,1,1",
+  "de": "la-t114",
+  "fonte": "Fedro, Fábulas I,1,1–2",
   "lema": "la-p038",
   "pt": "mais-que-perfeito do indicativo",
   "aceitas": [
@@ -8981,14 +8946,14 @@
   ]
  },
  {
-  "id": "la-xt029-0",
+  "id": "la-xt114-7",
   "tipo": "forma",
   "familia": "caso",
-  "la": "Siti",
-  "frase": "Siti compulsi; superior stabat lupus",
+  "la": "siti",
+  "frase": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
   "ocorrencia": 1,
-  "de": "la-t029",
-  "fonte": "Fedro, Fábulas I,1,2",
+  "de": "la-t114",
+  "fonte": "Fedro, Fábulas I,1,1–2",
   "lema": "la-p182",
   "pt": "ablativo",
   "aceitas": [
@@ -9001,7 +8966,7 @@
    "genitivo",
    "nominativo"
   ],
-  "nota": "Siti: ablativo singular, a causa: pela sede.",
+  "nota": "siti: ablativo singular, a causa: pela sede.",
   "nivel": "A2",
   "tags": [
    "gramática",
@@ -9013,13 +8978,6 @@
   "dificuldade": 4.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "sujeito",
-   "complemento nominal"
-  ],
   "dicionario": "sitis, sitis, f.",
   "distratoresDicionario": [
    "situm, siti, n.",
@@ -9029,14 +8987,14 @@
   ]
  },
  {
-  "id": "la-xt029-1",
+  "id": "la-xt114-8",
   "tipo": "forma",
   "familia": "verbo",
   "la": "compulsi",
-  "frase": "Siti compulsi; superior stabat lupus",
+  "frase": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
   "ocorrencia": 1,
-  "de": "la-t029",
-  "fonte": "Fedro, Fábulas I,1,2",
+  "de": "la-t114",
+  "fonte": "Fedro, Fábulas I,1,1–2",
   "lema": "la-p183",
   "pt": "particípio perfeito",
   "aceitas": [
@@ -9069,14 +9027,14 @@
   ]
  },
  {
-  "id": "la-xt029-2",
+  "id": "la-xt115-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "superior",
-  "frase": "Siti compulsi; superior stabat lupus",
+  "frase": "superior stabat lupus longeque inferior agnus.",
   "ocorrencia": 1,
-  "de": "la-t029",
-  "fonte": "Fedro, Fábulas I,1,2",
+  "de": "la-t115",
+  "fonte": "Fedro, Fábulas I,1,2–3",
   "lema": "la-p184",
   "pt": "nominativo",
   "aceitas": [
@@ -9100,24 +9058,17 @@
   ],
   "dificuldade": 1.0,
   "sempre": false,
-  "ambigua": false,
-  "funcao": "predicativo do sujeito",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto direto",
-   "aposto",
-   "complemento nominal"
-  ]
+  "ambigua": false
  },
  {
-  "id": "la-xt029-3",
+  "id": "la-xt115-1",
   "tipo": "forma",
   "familia": "verbo",
   "la": "stabat",
-  "frase": "Siti compulsi; superior stabat lupus",
+  "frase": "superior stabat lupus longeque inferior agnus.",
   "ocorrencia": 1,
-  "de": "la-t029",
-  "fonte": "Fedro, Fábulas I,1,2",
+  "de": "la-t115",
+  "fonte": "Fedro, Fábulas I,1,2–3",
   "lema": "la-p185",
   "pt": "imperfeito do indicativo",
   "aceitas": [
@@ -9157,14 +9108,14 @@
   ]
  },
  {
-  "id": "la-xt030-2",
+  "id": "la-xt115-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "inferior",
-  "frase": "Longeque inferior agnus. Tunc fauce improba",
+  "frase": "superior stabat lupus longeque inferior agnus.",
   "ocorrencia": 1,
-  "de": "la-t030",
-  "fonte": "Fedro, Fábulas I,1,3",
+  "de": "la-t115",
+  "fonte": "Fedro, Fábulas I,1,2–3",
   "lema": "la-p187",
   "pt": "nominativo",
   "aceitas": [
@@ -9188,24 +9139,17 @@
   ],
   "dificuldade": 1.0,
   "sempre": false,
-  "ambigua": false,
-  "funcao": "predicativo do sujeito",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto direto",
-   "aposto",
-   "complemento nominal"
-  ]
+  "ambigua": false
  },
  {
-  "id": "la-xt030-5",
+  "id": "la-xt116-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "fauce",
-  "frase": "Longeque inferior agnus. Tunc fauce improba",
+  "frase": "Tunc fauce improba latro incitatus iurgii causam intulit.",
   "ocorrencia": 1,
-  "de": "la-t030",
-  "fonte": "Fedro, Fábulas I,1,3",
+  "de": "la-t116",
+  "fonte": "Fedro, Fábulas I,1,3–4",
   "lema": "la-p189",
   "pt": "ablativo",
   "aceitas": [
@@ -9230,13 +9174,6 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": false,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "adjunto adnominal",
-   "complemento nominal"
-  ],
   "dicionario": "faux, faucis, f.",
   "distratoresDicionario": [
    "faucus, fauci, m.",
@@ -9246,14 +9183,14 @@
   ]
  },
  {
-  "id": "la-xt030-6",
+  "id": "la-xt116-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "improba",
-  "frase": "Longeque inferior agnus. Tunc fauce improba",
+  "frase": "Tunc fauce improba latro incitatus iurgii causam intulit.",
   "ocorrencia": 1,
-  "de": "la-t030",
-  "fonte": "Fedro, Fábulas I,1,3",
+  "de": "la-t116",
+  "fonte": "Fedro, Fábulas I,1,3–4",
   "lema": "la-p190",
   "pt": "ablativo",
   "aceitas": [
@@ -9278,13 +9215,6 @@
   "dificuldade": 4.5,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "complemento nominal",
-   "sujeito"
-  ],
   "dicionario": "improbus, improba, improbum",
   "distratoresDicionario": [
    "improbis, improbe",
@@ -9294,14 +9224,14 @@
   ]
  },
  {
-  "id": "la-xt031-0",
+  "id": "la-xt116-3",
   "tipo": "forma",
   "familia": "caso",
-  "la": "Latro",
-  "frase": "Latro incitatus iurgii causam intulit.",
+  "la": "latro",
+  "frase": "Tunc fauce improba latro incitatus iurgii causam intulit.",
   "ocorrencia": 1,
-  "de": "la-t031",
-  "fonte": "Fedro, Fábulas I,1,4",
+  "de": "la-t116",
+  "fonte": "Fedro, Fábulas I,1,3–4",
   "lema": "la-p191",
   "pt": "nominativo",
   "aceitas": [
@@ -9314,7 +9244,7 @@
    "genitivo",
    "ablativo"
   ],
-  "nota": "Latro: nominativo singular, o sujeito: o ladrão, isto é, o lobo.",
+  "nota": "latro: nominativo singular, o sujeito: o ladrão, isto é, o lobo.",
   "nivel": "A2",
   "tags": [
    "gramática",
@@ -9325,24 +9255,17 @@
   ],
   "dificuldade": 1.0,
   "sempre": false,
-  "ambigua": false,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ]
+  "ambigua": false
  },
  {
-  "id": "la-xt031-1",
+  "id": "la-xt116-4",
   "tipo": "forma",
   "familia": "verbo",
   "la": "incitatus",
-  "frase": "Latro incitatus iurgii causam intulit.",
+  "frase": "Tunc fauce improba latro incitatus iurgii causam intulit.",
   "ocorrencia": 1,
-  "de": "la-t031",
-  "fonte": "Fedro, Fábulas I,1,4",
+  "de": "la-t116",
+  "fonte": "Fedro, Fábulas I,1,3–4",
   "lema": "la-p192",
   "pt": "particípio perfeito",
   "aceitas": [
@@ -9375,14 +9298,14 @@
   ]
  },
  {
-  "id": "la-xt031-2",
+  "id": "la-xt116-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "iurgii",
-  "frase": "Latro incitatus iurgii causam intulit.",
+  "frase": "Tunc fauce improba latro incitatus iurgii causam intulit.",
   "ocorrencia": 1,
-  "de": "la-t031",
-  "fonte": "Fedro, Fábulas I,1,4",
+  "de": "la-t116",
+  "fonte": "Fedro, Fábulas I,1,3–4",
   "lema": "la-p193",
   "pt": "genitivo",
   "aceitas": [
@@ -9416,14 +9339,14 @@
   ]
  },
  {
-  "id": "la-xt031-3",
+  "id": "la-xt116-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "causam",
-  "frase": "Latro incitatus iurgii causam intulit.",
+  "frase": "Tunc fauce improba latro incitatus iurgii causam intulit.",
   "ocorrencia": 1,
-  "de": "la-t031",
-  "fonte": "Fedro, Fábulas I,1,4",
+  "de": "la-t116",
+  "fonte": "Fedro, Fábulas I,1,3–4",
   "lema": "la-p194",
   "pt": "acusativo",
   "aceitas": [
@@ -9449,13 +9372,6 @@
   "dificuldade": 0.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "causa, causae, f.",
   "distratoresDicionario": [
    "causus, causi, m.",
@@ -9465,14 +9381,14 @@
   ]
  },
  {
-  "id": "la-xt031-4",
+  "id": "la-xt116-7",
   "tipo": "forma",
   "familia": "verbo",
   "la": "intulit",
-  "frase": "Latro incitatus iurgii causam intulit.",
+  "frase": "Tunc fauce improba latro incitatus iurgii causam intulit.",
   "ocorrencia": 1,
-  "de": "la-t031",
-  "fonte": "Fedro, Fábulas I,1,4",
+  "de": "la-t116",
+  "fonte": "Fedro, Fábulas I,1,3–4",
   "lema": "la-p195",
   "pt": "perfeito do indicativo",
   "aceitas": [
@@ -9512,14 +9428,14 @@
   ]
  },
  {
-  "id": "la-xt032-1",
+  "id": "la-xt117-1",
   "tipo": "forma",
   "familia": "verbo",
   "la": "inquit",
-  "frase": "Cur, inquit, turbulentam fecisti mihi",
+  "frase": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
   "ocorrencia": 1,
-  "de": "la-t032",
-  "fonte": "Fedro, Fábulas I,1,5",
+  "de": "la-t117",
+  "fonte": "Fedro, Fábulas I,1,5–6",
   "lema": "la-p197",
   "pt": "presente do indicativo",
   "aceitas": [
@@ -9559,14 +9475,14 @@
   ]
  },
  {
-  "id": "la-xt032-2",
+  "id": "la-xt117-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "turbulentam",
-  "frase": "Cur, inquit, turbulentam fecisti mihi",
+  "frase": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
   "ocorrencia": 1,
-  "de": "la-t032",
-  "fonte": "Fedro, Fábulas I,1,5",
+  "de": "la-t117",
+  "fonte": "Fedro, Fábulas I,1,5–6",
   "lema": "la-p198",
   "pt": "acusativo",
   "aceitas": [
@@ -9580,7 +9496,7 @@
    "genitivo",
    "dativo"
   ],
-  "nota": "turbulentam: acusativo feminino singular, predicativo de aquam, na linha seguinte: turva.",
+  "nota": "turbulentam: acusativo feminino singular, predicativo de aquam: turva.",
   "nivel": "A2",
   "tags": [
    "gramática",
@@ -9592,13 +9508,6 @@
   "dificuldade": 0.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "predicativo do objeto",
-  "distratoresFuncao": [
-   "objeto direto",
-   "adjunto adnominal",
-   "predicativo do sujeito",
-   "adjunto adverbial"
-  ],
   "dicionario": "turbulentus, turbulenta, turbulentum",
   "distratoresDicionario": [
    "turbulentis, turbulente",
@@ -9608,14 +9517,14 @@
   ]
  },
  {
-  "id": "la-xt032-3",
+  "id": "la-xt117-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "fecisti",
-  "frase": "Cur, inquit, turbulentam fecisti mihi",
+  "frase": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
   "ocorrencia": 1,
-  "de": "la-t032",
-  "fonte": "Fedro, Fábulas I,1,5",
+  "de": "la-t117",
+  "fonte": "Fedro, Fábulas I,1,5–6",
   "lema": "la-p165",
   "pt": "perfeito do indicativo",
   "aceitas": [
@@ -9655,14 +9564,14 @@
   ]
  },
  {
-  "id": "la-xt032-4",
+  "id": "la-xt117-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "mihi",
-  "frase": "Cur, inquit, turbulentam fecisti mihi",
+  "frase": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
   "ocorrencia": 1,
-  "de": "la-t032",
-  "fonte": "Fedro, Fábulas I,1,5",
+  "de": "la-t117",
+  "fonte": "Fedro, Fábulas I,1,5–6",
   "lema": "la-p004",
   "pt": "dativo",
   "aceitas": [
@@ -9687,13 +9596,6 @@
   "dificuldade": 3.0,
   "sempre": true,
   "ambigua": false,
-  "funcao": "objeto indireto",
-  "distratoresFuncao": [
-   "objeto direto",
-   "sujeito",
-   "adjunto adnominal",
-   "agente da passiva"
-  ],
   "dicionario": "ego",
   "distratoresDicionario": [
    "nos",
@@ -9703,14 +9605,14 @@
   ]
  },
  {
-  "id": "la-xt033-0",
+  "id": "la-xt117-5",
   "tipo": "forma",
   "familia": "caso",
-  "la": "Aquam",
-  "frase": "Aquam bibenti? Laniger contra timens:",
+  "la": "aquam",
+  "frase": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
   "ocorrencia": 1,
-  "de": "la-t033",
-  "fonte": "Fedro, Fábulas I,1,6",
+  "de": "la-t117",
+  "fonte": "Fedro, Fábulas I,1,5–6",
   "lema": "la-p199",
   "pt": "acusativo",
   "aceitas": [
@@ -9724,7 +9626,7 @@
    "genitivo",
    "dativo"
   ],
-  "nota": "Aquam: acusativo singular, o objeto de fecisti.",
+  "nota": "aquam: acusativo singular, o objeto de fecisti.",
   "nivel": "A2",
   "tags": [
    "gramática",
@@ -9736,13 +9638,6 @@
   "dificuldade": 0.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "aqua, aquae, f.",
   "distratoresDicionario": [
    "aquus, aqui, m.",
@@ -9752,14 +9647,14 @@
   ]
  },
  {
-  "id": "la-xt033-1",
+  "id": "la-xt117-6",
   "tipo": "forma",
   "familia": "verbo",
   "la": "bibenti",
-  "frase": "Aquam bibenti? Laniger contra timens:",
+  "frase": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
   "ocorrencia": 1,
-  "de": "la-t033",
-  "fonte": "Fedro, Fábulas I,1,6",
+  "de": "la-t117",
+  "fonte": "Fedro, Fábulas I,1,5–6",
   "lema": "la-p200",
   "pt": "particípio presente",
   "aceitas": [
@@ -9792,14 +9687,14 @@
   ]
  },
  {
-  "id": "la-xt033-2",
+  "id": "la-xt118-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "Laniger",
-  "frase": "Aquam bibenti? Laniger contra timens:",
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
   "ocorrencia": 1,
-  "de": "la-t033",
-  "fonte": "Fedro, Fábulas I,1,6",
+  "de": "la-t118",
+  "fonte": "Fedro, Fábulas I,1,6–7",
   "lema": "la-p201",
   "pt": "nominativo",
   "aceitas": [
@@ -9823,24 +9718,17 @@
   ],
   "dificuldade": 0.0,
   "sempre": false,
-  "ambigua": false,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ]
+  "ambigua": false
  },
  {
-  "id": "la-xt033-4",
+  "id": "la-xt118-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "timens",
-  "frase": "Aquam bibenti? Laniger contra timens:",
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
   "ocorrencia": 1,
-  "de": "la-t033",
-  "fonte": "Fedro, Fábulas I,1,6",
+  "de": "la-t118",
+  "fonte": "Fedro, Fábulas I,1,6–7",
   "lema": "la-p203",
   "pt": "particípio presente",
   "aceitas": [
@@ -9873,14 +9761,14 @@
   ]
  },
  {
-  "id": "la-xt034-1",
+  "id": "la-xt118-4",
   "tipo": "forma",
   "familia": "verbo",
   "la": "possum",
-  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
   "ocorrencia": 1,
-  "de": "la-t034",
-  "fonte": "Fedro, Fábulas I,1,7",
+  "de": "la-t118",
+  "fonte": "Fedro, Fábulas I,1,6–7",
   "lema": "la-p121",
   "pt": "presente do indicativo",
   "aceitas": [
@@ -9913,14 +9801,14 @@
   ]
  },
  {
-  "id": "la-xt034-2",
+  "id": "la-xt118-5",
   "tipo": "forma",
   "familia": "verbo",
   "la": "quaeso",
-  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
   "ocorrencia": 1,
-  "de": "la-t034",
-  "fonte": "Fedro, Fábulas I,1,7",
+  "de": "la-t118",
+  "fonte": "Fedro, Fábulas I,1,6–7",
   "lema": "la-p204",
   "pt": "presente do indicativo",
   "aceitas": [
@@ -9953,14 +9841,14 @@
   ]
  },
  {
-  "id": "la-xt034-3",
+  "id": "la-xt118-6",
   "tipo": "forma",
   "familia": "verbo",
   "la": "facere",
-  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
   "ocorrencia": 1,
-  "de": "la-t034",
-  "fonte": "Fedro, Fábulas I,1,7",
+  "de": "la-t118",
+  "fonte": "Fedro, Fábulas I,1,6–7",
   "lema": "la-p165",
   "pt": "infinitivo",
   "aceitas": [
@@ -9993,14 +9881,14 @@
   ]
  },
  {
-  "id": "la-xt034-4",
+  "id": "la-xt118-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "quod",
-  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
   "ocorrencia": 1,
-  "de": "la-t034",
-  "fonte": "Fedro, Fábulas I,1,7",
+  "de": "la-t118",
+  "fonte": "Fedro, Fábulas I,1,6–7",
   "lema": "la-p064",
   "pt": "acusativo",
   "aceitas": [
@@ -10026,13 +9914,6 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "qui, quae, quod",
   "distratoresDicionario": [
    "hic, haec, hoc",
@@ -10042,14 +9923,14 @@
   ]
  },
  {
-  "id": "la-xt034-5",
+  "id": "la-xt118-8",
   "tipo": "forma",
   "familia": "verbo",
   "la": "quereris",
-  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
   "ocorrencia": 1,
-  "de": "la-t034",
-  "fonte": "Fedro, Fábulas I,1,7",
+  "de": "la-t118",
+  "fonte": "Fedro, Fábulas I,1,6–7",
   "lema": "la-p205",
   "pt": "presente do indicativo",
   "aceitas": [
@@ -10089,14 +9970,14 @@
   ]
  },
  {
-  "id": "la-xt034-6",
+  "id": "la-xt118-9",
   "tipo": "forma",
   "familia": "caso",
   "la": "lupe",
-  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
   "ocorrencia": 1,
-  "de": "la-t034",
-  "fonte": "Fedro, Fábulas I,1,7",
+  "de": "la-t118",
+  "fonte": "Fedro, Fábulas I,1,6–7",
   "lema": "la-p153",
   "pt": "vocativo",
   "aceitas": [
@@ -10121,13 +10002,6 @@
   "dificuldade": 0.5,
   "sempre": false,
   "ambigua": false,
-  "funcao": "vocativo",
-  "distratoresFuncao": [
-   "sujeito",
-   "aposto",
-   "objeto direto",
-   "predicativo do sujeito"
-  ],
   "dicionario": "lupus, lupi, m.",
   "distratoresDicionario": [
    "lupis, lupis, m.",
@@ -10364,14 +10238,14 @@
   ]
  },
  {
-  "id": "la-xt036-0",
+  "id": "la-xt085-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "Arma",
-  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
   "ocorrencia": 1,
-  "de": "la-t036",
-  "fonte": "Vergílio, Eneida I,1",
+  "de": "la-t085",
+  "fonte": "Vergílio, Eneida I,1–2",
   "lema": "la-p026",
   "pt": "acusativo",
   "aceitas": [
@@ -10396,24 +10270,17 @@
   ],
   "dificuldade": 3.0,
   "sempre": true,
-  "ambigua": true,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ]
+  "ambigua": true
  },
  {
-  "id": "la-xt036-1",
+  "id": "la-xt085-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "virum",
-  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
   "ocorrencia": 1,
-  "de": "la-t036",
-  "fonte": "Vergílio, Eneida I,1",
+  "de": "la-t085",
+  "fonte": "Vergílio, Eneida I,1–2",
   "lema": "la-p027",
   "pt": "acusativo",
   "aceitas": [
@@ -10439,13 +10306,6 @@
   "dificuldade": 1.5,
   "sempre": false,
   "ambigua": true,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "vir, viri, m.",
   "distratoresDicionario": [
    "virum, viri, n.",
@@ -10455,14 +10315,14 @@
   ]
  },
  {
-  "id": "la-xt036-3",
+  "id": "la-xt085-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "cano",
-  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
   "ocorrencia": 1,
-  "de": "la-t036",
-  "fonte": "Vergílio, Eneida I,1",
+  "de": "la-t085",
+  "fonte": "Vergílio, Eneida I,1–2",
   "lema": "la-p029",
   "pt": "presente do indicativo",
   "aceitas": [
@@ -10495,14 +10355,14 @@
   ]
  },
  {
-  "id": "la-xt036-5",
+  "id": "la-xt085-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "qui",
-  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
   "ocorrencia": 1,
-  "de": "la-t036",
-  "fonte": "Vergílio, Eneida I,1",
+  "de": "la-t085",
+  "fonte": "Vergílio, Eneida I,1–2",
   "lema": "la-p064",
   "pt": "nominativo",
   "aceitas": [
@@ -10515,7 +10375,7 @@
    "acusativo",
    "genitivo"
   ],
-  "nota": "qui: nominativo masculino singular, sujeito de venit, no verso 2; retoma virum.",
+  "nota": "qui: nominativo masculino singular, sujeito de venit; retoma virum.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -10526,24 +10386,17 @@
   ],
   "dificuldade": 2.5,
   "sempre": true,
-  "ambigua": true,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ]
+  "ambigua": true
  },
  {
-  "id": "la-xt036-6",
+  "id": "la-xt085-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "primus",
-  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
   "ocorrencia": 1,
-  "de": "la-t036",
-  "fonte": "Vergílio, Eneida I,1",
+  "de": "la-t085",
+  "fonte": "Vergílio, Eneida I,1–2",
   "lema": "la-p209",
   "pt": "nominativo",
   "aceitas": [
@@ -10570,14 +10423,14 @@
   "ambigua": false
  },
  {
-  "id": "la-xt036-8",
+  "id": "la-xt085-8",
   "tipo": "forma",
   "familia": "caso",
   "la": "oris",
-  "frase": "Arma virumque cano, Troiae qui primus ab oris",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
   "ocorrencia": 1,
-  "de": "la-t036",
-  "fonte": "Vergílio, Eneida I,1",
+  "de": "la-t085",
+  "fonte": "Vergílio, Eneida I,1–2",
   "lema": "la-p210",
   "pt": "ablativo",
   "aceitas": [
@@ -10602,13 +10455,6 @@
   "dificuldade": 2.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "adjunto adnominal",
-   "complemento nominal"
-  ],
   "dicionario": "ora, orae, f.",
   "distratoresDicionario": [
    "orus, ori, m.",
@@ -10618,103 +10464,14 @@
   ]
  },
  {
-  "id": "la-xt037-1",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "fato",
-  "frase": "Italiam, fato profugus, Laviniaque venit",
-  "ocorrencia": 1,
-  "de": "la-t037",
-  "fonte": "Vergílio, Eneida I,2",
-  "lema": "la-p211",
-  "pt": "ablativo",
-  "aceitas": [
-   "caso ablativo",
-   "abl"
-  ],
-  "distratores": [
-   "dativo",
-   "acusativo",
-   "genitivo",
-   "nominativo"
-  ],
-  "nota": "fato: ablativo singular, a causa: pelo destino.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g006"
-  ],
-  "dificuldade": 3.0,
-  "sempre": true,
-  "ambigua": true,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "sujeito",
-   "adjunto adnominal"
-  ],
-  "dicionario": "fatum, fati, n.",
-  "distratoresDicionario": [
-   "fatis, fatis, n.",
-   "fates, fatei, f.",
-   "faux, faucis, f.",
-   "finis, finis, m."
-  ]
- },
- {
-  "id": "la-xt037-2",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "profugus",
-  "frase": "Italiam, fato profugus, Laviniaque venit",
-  "ocorrencia": 1,
-  "de": "la-t037",
-  "fonte": "Vergílio, Eneida I,2",
-  "lema": "la-p212",
-  "pt": "nominativo",
-  "aceitas": [
-   "caso nominativo",
-   "nom"
-  ],
-  "distratores": [
-   "vocativo",
-   "acusativo",
-   "genitivo",
-   "ablativo"
-  ],
-  "nota": "profugus: nominativo masculino singular, concorda com qui: exilado.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g001"
-  ],
-  "dificuldade": 0.0,
-  "sempre": false,
-  "ambigua": false,
-  "funcao": "predicativo do sujeito",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto direto",
-   "adjunto adverbial",
-   "complemento nominal"
-  ]
- },
- {
-  "id": "la-xt037-5",
+  "id": "la-xt085-10",
   "tipo": "forma",
   "familia": "verbo",
   "la": "venit",
-  "frase": "Italiam, fato profugus, Laviniaque venit",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
   "ocorrencia": 1,
-  "de": "la-t037",
-  "fonte": "Vergílio, Eneida I,2",
+  "de": "la-t085",
+  "fonte": "Vergílio, Eneida I,1–2",
   "lema": "la-p038",
   "pt": "perfeito do indicativo",
   "aceitas": [
@@ -10754,14 +10511,89 @@
   ]
  },
  {
-  "id": "la-xt038-0",
+  "id": "la-xt086-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "fato",
+  "frase": "Italiam, fato profugus, Laviniaque venit litora",
+  "ocorrencia": 1,
+  "de": "la-t086",
+  "fonte": "Vergílio, Eneida I,2–3",
+  "lema": "la-p211",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "fato: ablativo singular, a causa: pelo destino.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "fatum, fati, n.",
+  "distratoresDicionario": [
+   "fatis, fatis, n.",
+   "fates, fatei, f.",
+   "faux, faucis, f.",
+   "finis, finis, m."
+  ]
+ },
+ {
+  "id": "la-xt086-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "profugus",
+  "frase": "Italiam, fato profugus, Laviniaque venit litora",
+  "ocorrencia": 1,
+  "de": "la-t086",
+  "fonte": "Vergílio, Eneida I,2–3",
+  "lema": "la-p212",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "profugus: nominativo masculino singular, concorda com qui, no verso 1: exilado.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false
+ },
+ {
+  "id": "la-xt086-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "litora",
-  "frase": "litora, multum ille et terris iactatus et alto",
+  "frase": "Italiam, fato profugus, Laviniaque venit litora",
   "ocorrencia": 1,
-  "de": "la-t038",
-  "fonte": "Vergílio, Eneida I,3",
+  "de": "la-t086",
+  "fonte": "Vergílio, Eneida I,2–3",
   "lema": "la-p213",
   "pt": "acusativo",
   "aceitas": [
@@ -10787,13 +10619,6 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto direto",
-   "sujeito",
-   "predicativo do objeto",
-   "complemento nominal"
-  ],
   "dicionario": "litus, litoris, n.",
   "distratoresDicionario": [
    "litora, litorae, f.",
@@ -10803,14 +10628,14 @@
   ]
  },
  {
-  "id": "la-xt038-1",
+  "id": "la-xt087-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "multum",
-  "frase": "litora, multum ille et terris iactatus et alto",
+  "frase": "multum ille et terris iactatus et alto vi superum",
   "ocorrencia": 1,
-  "de": "la-t038",
-  "fonte": "Vergílio, Eneida I,3",
+  "de": "la-t087",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p214",
   "pt": "acusativo",
   "aceitas": [
@@ -10836,13 +10661,6 @@
   "dificuldade": 1.5,
   "sempre": false,
   "ambigua": true,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto direto",
-   "adjunto adnominal",
-   "sujeito",
-   "predicativo do sujeito"
-  ],
   "dicionario": "multus, multa, multum",
   "distratoresDicionario": [
    "multis, multe",
@@ -10852,14 +10670,14 @@
   ]
  },
  {
-  "id": "la-xt038-2",
+  "id": "la-xt087-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "ille",
-  "frase": "litora, multum ille et terris iactatus et alto",
+  "frase": "multum ille et terris iactatus et alto vi superum",
   "ocorrencia": 1,
-  "de": "la-t038",
-  "fonte": "Vergílio, Eneida I,3",
+  "de": "la-t087",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p215",
   "pt": "nominativo",
   "aceitas": [
@@ -10886,14 +10704,14 @@
   "ambigua": false
  },
  {
-  "id": "la-xt038-4",
+  "id": "la-xt087-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "terris",
-  "frase": "litora, multum ille et terris iactatus et alto",
+  "frase": "multum ille et terris iactatus et alto vi superum",
   "ocorrencia": 1,
-  "de": "la-t038",
-  "fonte": "Vergílio, Eneida I,3",
+  "de": "la-t087",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p096",
   "pt": "ablativo",
   "aceitas": [
@@ -10918,13 +10736,6 @@
   "dificuldade": 3.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "adjunto adnominal",
-   "complemento nominal"
-  ],
   "dicionario": "terra, terrae, f.",
   "distratoresDicionario": [
    "terrus, terri, m.",
@@ -10934,14 +10745,14 @@
   ]
  },
  {
-  "id": "la-xt038-5",
+  "id": "la-xt087-4",
   "tipo": "forma",
   "familia": "verbo",
   "la": "iactatus",
-  "frase": "litora, multum ille et terris iactatus et alto",
+  "frase": "multum ille et terris iactatus et alto vi superum",
   "ocorrencia": 1,
-  "de": "la-t038",
-  "fonte": "Vergílio, Eneida I,3",
+  "de": "la-t087",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p216",
   "pt": "particípio perfeito",
   "aceitas": [
@@ -10974,14 +10785,14 @@
   ]
  },
  {
-  "id": "la-xt038-7",
+  "id": "la-xt087-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "alto",
-  "frase": "litora, multum ille et terris iactatus et alto",
+  "frase": "multum ille et terris iactatus et alto vi superum",
   "ocorrencia": 1,
-  "de": "la-t038",
-  "fonte": "Vergílio, Eneida I,3",
+  "de": "la-t087",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p217",
   "pt": "ablativo",
   "aceitas": [
@@ -11006,13 +10817,6 @@
   "dificuldade": 3.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "adjunto adnominal",
-   "complemento nominal"
-  ],
   "dicionario": "altus, alta, altum",
   "distratoresDicionario": [
    "altis, alte",
@@ -11022,14 +10826,14 @@
   ]
  },
  {
-  "id": "la-xt039-0",
+  "id": "la-xt087-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "vi",
-  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "frase": "multum ille et terris iactatus et alto vi superum",
   "ocorrencia": 1,
-  "de": "la-t039",
-  "fonte": "Vergílio, Eneida I,4",
+  "de": "la-t087",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p218",
   "pt": "ablativo",
   "aceitas": [
@@ -11054,13 +10858,6 @@
   "dificuldade": 4.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "sujeito",
-   "complemento nominal"
-  ],
   "dicionario": "vis, vim, vi, f.",
   "distratoresDicionario": [
    "via, viae, f.",
@@ -11070,14 +10867,14 @@
   ]
  },
  {
-  "id": "la-xt039-1",
+  "id": "la-xt087-8",
   "tipo": "forma",
   "familia": "caso",
   "la": "superum",
-  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "frase": "multum ille et terris iactatus et alto vi superum",
   "ocorrencia": 1,
-  "de": "la-t039",
-  "fonte": "Vergílio, Eneida I,4",
+  "de": "la-t087",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p219",
   "pt": "genitivo",
   "aceitas": [
@@ -11102,13 +10899,6 @@
   "dificuldade": 4.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "sujeito",
-   "objeto direto",
-   "aposto"
-  ],
   "dicionario": "superus, supera, superum",
   "distratoresDicionario": [
    "superis, supere",
@@ -11118,14 +10908,14 @@
   ]
  },
  {
-  "id": "la-xt039-2",
+  "id": "la-xt088-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "saevae",
-  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "frase": "iactatus … saevae memorem Iunonis ob iram;",
   "ocorrencia": 1,
-  "de": "la-t039",
-  "fonte": "Vergílio, Eneida I,4",
+  "de": "la-t088",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p220",
   "pt": "genitivo",
   "aceitas": [
@@ -11150,13 +10940,6 @@
   "dificuldade": 4.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto indireto",
-   "sujeito",
-   "objeto direto"
-  ],
   "dicionario": "saevus, saeva, saevum",
   "distratoresDicionario": [
    "saevis, saeve",
@@ -11166,14 +10949,14 @@
   ]
  },
  {
-  "id": "la-xt039-3",
+  "id": "la-xt088-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "memorem",
-  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "frase": "iactatus … saevae memorem Iunonis ob iram;",
   "ocorrencia": 1,
-  "de": "la-t039",
-  "fonte": "Vergílio, Eneida I,4",
+  "de": "la-t088",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p221",
   "pt": "acusativo",
   "aceitas": [
@@ -11199,13 +10982,6 @@
   "dificuldade": 1.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "objeto direto",
-   "sujeito",
-   "predicativo do sujeito",
-   "objeto indireto"
-  ],
   "dicionario": "memor, memoris",
   "distratoresDicionario": [
    "memorus, memora, memorum",
@@ -11215,14 +10991,14 @@
   ]
  },
  {
-  "id": "la-xt039-6",
+  "id": "la-xt088-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "iram",
-  "frase": "vi superum saevae memorem Iunonis ob iram;",
+  "frase": "iactatus … saevae memorem Iunonis ob iram;",
   "ocorrencia": 1,
-  "de": "la-t039",
-  "fonte": "Vergílio, Eneida I,4",
+  "de": "la-t088",
+  "fonte": "Vergílio, Eneida I,3–4",
   "lema": "la-p223",
   "pt": "acusativo",
   "aceitas": [
@@ -11248,13 +11024,6 @@
   "dificuldade": 0.5,
   "sempre": false,
   "ambigua": false,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "adjunto adnominal",
-   "complemento nominal"
-  ],
   "dicionario": "ira, irae, f.",
   "distratoresDicionario": [
    "irus, iri, m.",
@@ -11264,13 +11033,13 @@
   ]
  },
  {
-  "id": "la-xt040-0",
+  "id": "la-xt089-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "multa",
-  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "frase": "multa quoque et bello passus",
   "ocorrencia": 1,
-  "de": "la-t040",
+  "de": "la-t089",
   "fonte": "Vergílio, Eneida I,5",
   "lema": "la-p214",
   "pt": "acusativo",
@@ -11297,13 +11066,6 @@
   "dificuldade": 3.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "multus, multa, multum",
   "distratoresDicionario": [
    "multis, multe",
@@ -11313,13 +11075,13 @@
   ]
  },
  {
-  "id": "la-xt040-3",
+  "id": "la-xt089-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "bello",
-  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "frase": "multa quoque et bello passus",
   "ocorrencia": 1,
-  "de": "la-t040",
+  "de": "la-t089",
   "fonte": "Vergílio, Eneida I,5",
   "lema": "la-p157",
   "pt": "ablativo",
@@ -11345,13 +11107,6 @@
   "dificuldade": 3.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "adjunto adnominal",
-   "complemento nominal"
-  ],
   "dicionario": "bellum, belli, n.",
   "distratoresDicionario": [
    "bella, bellae, f.",
@@ -11361,13 +11116,13 @@
   ]
  },
  {
-  "id": "la-xt040-4",
+  "id": "la-xt089-4",
   "tipo": "forma",
   "familia": "verbo",
   "la": "passus",
-  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "frase": "multa quoque et bello passus",
   "ocorrencia": 1,
-  "de": "la-t040",
+  "de": "la-t089",
   "fonte": "Vergílio, Eneida I,5",
   "lema": "la-p225",
   "pt": "particípio perfeito",
@@ -11401,14 +11156,14 @@
   ]
  },
  {
-  "id": "la-xt040-6",
+  "id": "la-xt090-1",
   "tipo": "forma",
   "familia": "verbo",
   "la": "conderet",
-  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "frase": "dum conderet urbem, inferretque deos Latio",
   "ocorrencia": 1,
-  "de": "la-t040",
-  "fonte": "Vergílio, Eneida I,5",
+  "de": "la-t090",
+  "fonte": "Vergílio, Eneida I,5–6",
   "lema": "la-p226",
   "pt": "imperfeito do subjuntivo",
   "aceitas": [
@@ -11448,14 +11203,14 @@
   ]
  },
  {
-  "id": "la-xt040-7",
+  "id": "la-xt090-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "urbem",
-  "frase": "multa quoque et bello passus, dum conderet urbem,",
+  "frase": "dum conderet urbem, inferretque deos Latio",
   "ocorrencia": 1,
-  "de": "la-t040",
-  "fonte": "Vergílio, Eneida I,5",
+  "de": "la-t090",
+  "fonte": "Vergílio, Eneida I,5–6",
   "lema": "la-p227",
   "pt": "acusativo",
   "aceitas": [
@@ -11481,13 +11236,6 @@
   "dificuldade": 1.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "urbs, urbis, f.",
   "distratoresDicionario": [
    "urbis, urbis, f.",
@@ -11497,14 +11245,14 @@
   ]
  },
  {
-  "id": "la-xt041-0",
+  "id": "la-xt090-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "inferret",
-  "frase": "inferretque deos Latio, genus unde Latinum,",
+  "frase": "dum conderet urbem, inferretque deos Latio",
   "ocorrencia": 1,
-  "de": "la-t041",
-  "fonte": "Vergílio, Eneida I,6",
+  "de": "la-t090",
+  "fonte": "Vergílio, Eneida I,5–6",
   "lema": "la-p195",
   "pt": "imperfeito do subjuntivo",
   "aceitas": [
@@ -11544,14 +11292,14 @@
   ]
  },
  {
-  "id": "la-xt041-2",
+  "id": "la-xt090-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "deos",
-  "frase": "inferretque deos Latio, genus unde Latinum,",
+  "frase": "dum conderet urbem, inferretque deos Latio",
   "ocorrencia": 1,
-  "de": "la-t041",
-  "fonte": "Vergílio, Eneida I,6",
+  "de": "la-t090",
+  "fonte": "Vergílio, Eneida I,5–6",
   "lema": "la-p001",
   "pt": "acusativo",
   "aceitas": [
@@ -11577,13 +11325,6 @@
   "dificuldade": 0.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "deus, dei, m.",
   "distratoresDicionario": [
    "deum, dei, n.",
@@ -11593,14 +11334,14 @@
   ]
  },
  {
-  "id": "la-xt041-4",
+  "id": "la-xt091-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "genus",
-  "frase": "inferretque deos Latio, genus unde Latinum,",
+  "frase": "genus unde Latinum, Albanique patres, atque altae moenia Romae.",
   "ocorrencia": 1,
-  "de": "la-t041",
-  "fonte": "Vergílio, Eneida I,6",
+  "de": "la-t091",
+  "fonte": "Vergílio, Eneida I,6–7",
   "lema": "la-p228",
   "pt": "nominativo",
   "aceitas": [
@@ -11613,7 +11354,7 @@
    "genitivo",
    "ablativo"
   ],
-  "nota": "genus: nominativo singular, o sujeito; o verbo fica subentendido.",
+  "nota": "genus: nominativo singular, sujeito; o verbo (est) fica subentendido.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -11624,24 +11365,17 @@
   ],
   "dificuldade": 2.5,
   "sempre": true,
-  "ambigua": true,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ]
+  "ambigua": true
  },
  {
-  "id": "la-xt042-2",
+  "id": "la-xt091-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "patres",
-  "frase": "Albanique patres, atque altae moenia Romae.",
+  "frase": "genus unde Latinum, Albanique patres, atque altae moenia Romae.",
   "ocorrencia": 1,
-  "de": "la-t042",
-  "fonte": "Vergílio, Eneida I,7",
+  "de": "la-t091",
+  "fonte": "Vergílio, Eneida I,6–7",
   "lema": "la-p072",
   "pt": "nominativo",
   "aceitas": [
@@ -11666,13 +11400,6 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ],
   "dicionario": "pater, patris, m.",
   "distratoresDicionario": [
    "patris, patris, m.",
@@ -11682,14 +11409,14 @@
   ]
  },
  {
-  "id": "la-xt042-4",
+  "id": "la-xt091-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "altae",
-  "frase": "Albanique patres, atque altae moenia Romae.",
+  "frase": "genus unde Latinum, Albanique patres, atque altae moenia Romae.",
   "ocorrencia": 1,
-  "de": "la-t042",
-  "fonte": "Vergílio, Eneida I,7",
+  "de": "la-t091",
+  "fonte": "Vergílio, Eneida I,6–7",
   "lema": "la-p217",
   "pt": "genitivo",
   "aceitas": [
@@ -11714,13 +11441,6 @@
   "dificuldade": 4.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto indireto",
-   "sujeito",
-   "objeto direto"
-  ],
   "dicionario": "altus, alta, altum",
   "distratoresDicionario": [
    "altis, alte",
@@ -11730,14 +11450,14 @@
   ]
  },
  {
-  "id": "la-xt042-5",
+  "id": "la-xt091-8",
   "tipo": "forma",
   "familia": "caso",
   "la": "moenia",
-  "frase": "Albanique patres, atque altae moenia Romae.",
+  "frase": "genus unde Latinum, Albanique patres, atque altae moenia Romae.",
   "ocorrencia": 1,
-  "de": "la-t042",
-  "fonte": "Vergílio, Eneida I,7",
+  "de": "la-t091",
+  "fonte": "Vergílio, Eneida I,6–7",
   "lema": "la-p231",
   "pt": "nominativo",
   "aceitas": [
@@ -11761,23 +11481,16 @@
   ],
   "dificuldade": 2.5,
   "sempre": true,
-  "ambigua": true,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ]
+  "ambigua": true
  },
  {
-  "id": "la-xt043-0",
+  "id": "la-xt092-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "Musa",
-  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "frase": "Musa, mihi causas memora",
   "ocorrencia": 1,
-  "de": "la-t043",
+  "de": "la-t092",
   "fonte": "Vergílio, Eneida I,8",
   "lema": "la-p232",
   "pt": "vocativo",
@@ -11802,23 +11515,16 @@
   ],
   "dificuldade": 3.5,
   "sempre": true,
-  "ambigua": true,
-  "funcao": "vocativo",
-  "distratoresFuncao": [
-   "sujeito",
-   "aposto",
-   "objeto direto",
-   "predicativo do sujeito"
-  ]
+  "ambigua": true
  },
  {
-  "id": "la-xt043-1",
+  "id": "la-xt092-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "mihi",
-  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "frase": "Musa, mihi causas memora",
   "ocorrencia": 1,
-  "de": "la-t043",
+  "de": "la-t092",
   "fonte": "Vergílio, Eneida I,8",
   "lema": "la-p004",
   "pt": "dativo",
@@ -11844,13 +11550,6 @@
   "dificuldade": 3.0,
   "sempre": true,
   "ambigua": false,
-  "funcao": "objeto indireto",
-  "distratoresFuncao": [
-   "objeto direto",
-   "sujeito",
-   "adjunto adnominal",
-   "vocativo"
-  ],
   "dicionario": "ego",
   "distratoresDicionario": [
    "nos",
@@ -11860,13 +11559,13 @@
   ]
  },
  {
-  "id": "la-xt043-2",
+  "id": "la-xt092-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "causas",
-  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "frase": "Musa, mihi causas memora",
   "ocorrencia": 1,
-  "de": "la-t043",
+  "de": "la-t092",
   "fonte": "Vergílio, Eneida I,8",
   "lema": "la-p194",
   "pt": "acusativo",
@@ -11893,13 +11592,6 @@
   "dificuldade": 0.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "causa, causae, f.",
   "distratoresDicionario": [
    "causus, causi, m.",
@@ -11909,13 +11601,13 @@
   ]
  },
  {
-  "id": "la-xt043-3",
+  "id": "la-xt092-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "memora",
-  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "frase": "Musa, mihi causas memora",
   "ocorrencia": 1,
-  "de": "la-t043",
+  "de": "la-t092",
   "fonte": "Vergílio, Eneida I,8",
   "lema": "la-p233",
   "pt": "imperativo",
@@ -11956,14 +11648,14 @@
   ]
  },
  {
-  "id": "la-xt043-4",
+  "id": "la-xt093-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "quo",
-  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t043",
-  "fonte": "Vergílio, Eneida I,8",
+  "de": "la-t093",
+  "fonte": "Vergílio, Eneida I,8–11",
   "lema": "la-p236",
   "pt": "ablativo",
   "aceitas": [
@@ -11988,13 +11680,6 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": false,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto direto",
-   "objeto indireto",
-   "predicativo do sujeito"
-  ],
   "dicionario": "quis, quid",
   "distratoresDicionario": [
    "quisquis, quidquid",
@@ -12004,14 +11689,14 @@
   ]
  },
  {
-  "id": "la-xt043-5",
+  "id": "la-xt093-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "numine",
-  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t043",
-  "fonte": "Vergílio, Eneida I,8",
+  "de": "la-t093",
+  "fonte": "Vergílio, Eneida I,8–11",
   "lema": "la-p234",
   "pt": "ablativo",
   "aceitas": [
@@ -12036,13 +11721,6 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": false,
-  "funcao": "adjunto adverbial",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "objeto direto",
-   "adjunto adnominal",
-   "complemento nominal"
-  ],
   "dicionario": "numen, numinis, n.",
   "distratoresDicionario": [
    "numinus, numini, m.",
@@ -12052,14 +11730,14 @@
   ]
  },
  {
-  "id": "la-xt043-6",
+  "id": "la-xt093-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "laeso",
-  "frase": "Musa, mihi causas memora, quo numine laeso,",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t043",
-  "fonte": "Vergílio, Eneida I,8",
+  "de": "la-t093",
+  "fonte": "Vergílio, Eneida I,8–11",
   "lema": "la-p235",
   "pt": "particípio perfeito",
   "aceitas": [
@@ -12092,14 +11770,14 @@
   ]
  },
  {
-  "id": "la-xt044-0",
+  "id": "la-xt093-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "quid",
-  "frase": "quidve dolens, regina deum tot volvere casus",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t044",
-  "fonte": "Vergílio, Eneida I,9",
+  "de": "la-t093",
+  "fonte": "Vergílio, Eneida I,8–11",
   "lema": "la-p236",
   "pt": "acusativo",
   "aceitas": [
@@ -12134,14 +11812,14 @@
   ]
  },
  {
-  "id": "la-xt044-2",
+  "id": "la-xt093-5",
   "tipo": "forma",
   "familia": "verbo",
   "la": "dolens",
-  "frase": "quidve dolens, regina deum tot volvere casus",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t044",
-  "fonte": "Vergílio, Eneida I,9",
+  "de": "la-t093",
+  "fonte": "Vergílio, Eneida I,8–11",
   "lema": "la-p238",
   "pt": "particípio presente",
   "aceitas": [
@@ -12174,14 +11852,14 @@
   ]
  },
  {
-  "id": "la-xt044-3",
+  "id": "la-xt093-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "regina",
-  "frase": "quidve dolens, regina deum tot volvere casus",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t044",
-  "fonte": "Vergílio, Eneida I,9",
+  "de": "la-t093",
+  "fonte": "Vergílio, Eneida I,8–11",
   "lema": "la-p172",
   "pt": "nominativo",
   "aceitas": [
@@ -12194,7 +11872,7 @@
    "acusativo",
    "genitivo"
   ],
-  "nota": "regina: nominativo singular, sujeito de impulerit, no verso 11.",
+  "nota": "regina: nominativo singular, sujeito de impulerit.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -12205,24 +11883,17 @@
   ],
   "dificuldade": 1.5,
   "sempre": false,
-  "ambigua": true,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ]
+  "ambigua": true
  },
  {
-  "id": "la-xt044-4",
+  "id": "la-xt093-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "deum",
-  "frase": "quidve dolens, regina deum tot volvere casus",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t044",
-  "fonte": "Vergílio, Eneida I,9",
+  "de": "la-t093",
+  "fonte": "Vergílio, Eneida I,8–11",
   "lema": "la-p001",
   "pt": "genitivo",
   "aceitas": [
@@ -12247,13 +11918,6 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "objeto indireto",
-   "adjunto adverbial",
-   "sujeito",
-   "objeto direto"
-  ],
   "dicionario": "deus, dei, m.",
   "distratoresDicionario": [
    "deis, deis, m.",
@@ -12263,22 +11927,111 @@
   ]
  },
  {
-  "id": "la-xt044-6",
+  "id": "la-xt093-8",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "virum",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
+  "ocorrencia": 1,
+  "de": "la-t093",
+  "fonte": "Vergílio, Eneida I,8–11",
+  "lema": "la-p027",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "genitivo",
+   "nominativo",
+   "ablativo",
+   "dativo"
+  ],
+  "nota": "virum: acusativo singular, objeto de impulerit.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": true,
+  "dicionario": "vir, viri, m.",
+  "distratoresDicionario": [
+   "virum, viri, n.",
+   "vir, viris, m.",
+   "vires, virei, f.",
+   "virgo, virginis, f."
+  ]
+ },
+ {
+  "id": "la-xt093-9",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "impulerit",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
+  "ocorrencia": 1,
+  "de": "la-t093",
+  "fonte": "Vergílio, Eneida I,8–11",
+  "lema": "la-p246",
+  "pt": "perfeito do subjuntivo",
+  "aceitas": [
+   "subjuntivo perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do subjuntivo",
+   "futuro do indicativo"
+  ],
+  "nota": "impulerit: perfeito do subjuntivo, 3ª pessoa do singular, na pergunta indireta: levou.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g018"
+  ],
+  "dificuldade": 3.5,
+  "sempre": true,
+  "ambigua": true,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "impello, impellere, impuli, impulsum",
+  "distratoresDicionario": [
+   "impelleo, impellere, impellui, impellitum",
+   "impellio, impellere, impuli, impulsum",
+   "impello, impellare, impellavi, impellatum",
+   "impellio, impellire, impellivi, impellitum"
+  ]
+ },
+ {
+  "id": "la-xt094-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "volvere",
-  "frase": "quidve dolens, regina deum tot volvere casus",
+  "frase": "regina deum tot volvere casus insignem pietate virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t044",
-  "fonte": "Vergílio, Eneida I,9",
+  "de": "la-t094",
+  "fonte": "Vergílio, Eneida I,9–11",
   "lema": "la-p240",
   "pt": "infinitivo",
   "aceitas": [
    "infinitivo"
   ],
   "distratores": [
-   "perfeito do indicativo",
    "futuro do indicativo",
+   "perfeito do indicativo",
    "imperativo",
    "imperfeito do subjuntivo"
   ],
@@ -12303,14 +12056,14 @@
   ]
  },
  {
-  "id": "la-xt044-7",
+  "id": "la-xt094-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "casus",
-  "frase": "quidve dolens, regina deum tot volvere casus",
+  "frase": "regina deum tot volvere casus insignem pietate virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t044",
-  "fonte": "Vergílio, Eneida I,9",
+  "de": "la-t094",
+  "fonte": "Vergílio, Eneida I,9–11",
   "lema": "la-p241",
   "pt": "acusativo",
   "aceitas": [
@@ -12335,24 +12088,17 @@
   ],
   "dificuldade": 4.0,
   "sempre": true,
-  "ambigua": true,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ]
+  "ambigua": true
  },
  {
-  "id": "la-xt045-0",
+  "id": "la-xt094-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "insignem",
-  "frase": "insignem pietate virum, tot adire labores",
+  "frase": "regina deum tot volvere casus insignem pietate virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t045",
-  "fonte": "Vergílio, Eneida I,10",
+  "de": "la-t094",
+  "fonte": "Vergílio, Eneida I,9–11",
   "lema": "la-p242",
   "pt": "acusativo",
   "aceitas": [
@@ -12378,13 +12124,6 @@
   "dificuldade": 1.0,
   "sempre": false,
   "ambigua": false,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "sujeito",
-   "complemento nominal",
-   "aposto",
-   "objeto indireto"
-  ],
   "dicionario": "insignis, insigne",
   "distratoresDicionario": [
    "insignus, insigna, insignum",
@@ -12394,14 +12133,14 @@
   ]
  },
  {
-  "id": "la-xt045-1",
+  "id": "la-xt094-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "pietate",
-  "frase": "insignem pietate virum, tot adire labores",
+  "frase": "regina deum tot volvere casus insignem pietate virum … impulerit.",
   "ocorrencia": 1,
-  "de": "la-t045",
-  "fonte": "Vergílio, Eneida I,10",
+  "de": "la-t094",
+  "fonte": "Vergílio, Eneida I,9–11",
   "lema": "la-p243",
   "pt": "ablativo",
   "aceitas": [
@@ -12435,63 +12174,14 @@
   ]
  },
  {
-  "id": "la-xt045-2",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "virum",
-  "frase": "insignem pietate virum, tot adire labores",
-  "ocorrencia": 1,
-  "de": "la-t045",
-  "fonte": "Vergílio, Eneida I,10",
-  "lema": "la-p027",
-  "pt": "acusativo",
-  "aceitas": [
-   "caso acusativo",
-   "acus",
-   "ac"
-  ],
-  "distratores": [
-   "genitivo",
-   "nominativo",
-   "ablativo",
-   "dativo"
-  ],
-  "nota": "virum: acusativo singular, objeto de impulerit, no verso 11.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g003"
-  ],
-  "dificuldade": 1.5,
-  "sempre": false,
-  "ambigua": true,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
-  "dicionario": "vir, viri, m.",
-  "distratoresDicionario": [
-   "virum, viri, n.",
-   "vir, viris, m.",
-   "vires, virei, f.",
-   "virgo, virginis, f."
-  ]
- },
- {
-  "id": "la-xt045-4",
+  "id": "la-xt095-4",
   "tipo": "forma",
   "familia": "verbo",
   "la": "adire",
-  "frase": "insignem pietate virum, tot adire labores",
+  "frase": "insignem pietate virum, tot adire labores impulerit.",
   "ocorrencia": 1,
-  "de": "la-t045",
-  "fonte": "Vergílio, Eneida I,10",
+  "de": "la-t095",
+  "fonte": "Vergílio, Eneida I,10–11",
   "lema": "la-p244",
   "pt": "infinitivo",
   "aceitas": [
@@ -12524,14 +12214,14 @@
   ]
  },
  {
-  "id": "la-xt045-5",
+  "id": "la-xt095-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "labores",
-  "frase": "insignem pietate virum, tot adire labores",
+  "frase": "insignem pietate virum, tot adire labores impulerit.",
   "ocorrencia": 1,
-  "de": "la-t045",
-  "fonte": "Vergílio, Eneida I,10",
+  "de": "la-t095",
+  "fonte": "Vergílio, Eneida I,10–11",
   "lema": "la-p245",
   "pt": "acusativo",
   "aceitas": [
@@ -12557,13 +12247,6 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "funcao": "objeto direto",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto indireto",
-   "adjunto adverbial",
-   "predicativo do objeto"
-  ],
   "dicionario": "labor, laboris, m.",
   "distratoresDicionario": [
    "labores, laborei, f.",
@@ -12573,60 +12256,13 @@
   ]
  },
  {
-  "id": "la-xt046-0",
-  "tipo": "forma",
-  "familia": "verbo",
-  "la": "impulerit",
-  "frase": "impulerit. Tantaene animis caelestibus irae?",
-  "ocorrencia": 1,
-  "de": "la-t046",
-  "fonte": "Vergílio, Eneida I,11",
-  "lema": "la-p246",
-  "pt": "perfeito do subjuntivo",
-  "aceitas": [
-   "subjuntivo perfeito"
-  ],
-  "distratores": [
-   "futuro do indicativo",
-   "perfeito do indicativo",
-   "presente do subjuntivo",
-   "imperfeito do subjuntivo"
-  ],
-  "nota": "impulerit: perfeito do subjuntivo, 3ª pessoa do singular, na pergunta indireta: levou.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "forma verbal"
-  ],
-  "conceitos": [
-   "la-g018"
-  ],
-  "dificuldade": 3.5,
-  "sempre": true,
-  "ambigua": true,
-  "pessoa": "3ª pessoa do singular",
-  "distratoresPessoa": [
-   "3ª pessoa do plural",
-   "1ª pessoa do singular",
-   "2ª pessoa do singular",
-   "1ª pessoa do plural"
-  ],
-  "dicionario": "impello, impellere, impuli, impulsum",
-  "distratoresDicionario": [
-   "impelleo, impellere, impellui, impellitum",
-   "impellio, impellere, impuli, impulsum",
-   "impello, impellare, impellavi, impellatum",
-   "impellio, impellire, impellivi, impellitum"
-  ]
- },
- {
-  "id": "la-xt046-1",
+  "id": "la-xt096-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "Tantae",
-  "frase": "impulerit. Tantaene animis caelestibus irae?",
+  "frase": "Tantaene animis caelestibus irae?",
   "ocorrencia": 1,
-  "de": "la-t046",
+  "de": "la-t096",
   "fonte": "Vergílio, Eneida I,11",
   "lema": "la-p247",
   "pt": "nominativo",
@@ -12661,13 +12297,13 @@
   ]
  },
  {
-  "id": "la-xt046-3",
+  "id": "la-xt096-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "animis",
-  "frase": "impulerit. Tantaene animis caelestibus irae?",
+  "frase": "Tantaene animis caelestibus irae?",
   "ocorrencia": 1,
-  "de": "la-t046",
+  "de": "la-t096",
   "fonte": "Vergílio, Eneida I,11",
   "lema": "la-p249",
   "pt": "dativo",
@@ -12693,13 +12329,6 @@
   "dificuldade": 3.5,
   "sempre": true,
   "ambigua": true,
-  "funcao": "objeto indireto",
-  "distratoresFuncao": [
-   "objeto direto",
-   "sujeito",
-   "vocativo",
-   "agente da passiva"
-  ],
   "dicionario": "animus, animi, m.",
   "distratoresDicionario": [
    "animum, animi, n.",
@@ -12709,13 +12338,13 @@
   ]
  },
  {
-  "id": "la-xt046-4",
+  "id": "la-xt096-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "caelestibus",
-  "frase": "impulerit. Tantaene animis caelestibus irae?",
+  "frase": "Tantaene animis caelestibus irae?",
   "ocorrencia": 1,
-  "de": "la-t046",
+  "de": "la-t096",
   "fonte": "Vergílio, Eneida I,11",
   "lema": "la-p250",
   "pt": "dativo",
@@ -12741,13 +12370,6 @@
   "dificuldade": 4.5,
   "sempre": true,
   "ambigua": true,
-  "funcao": "adjunto adnominal",
-  "distratoresFuncao": [
-   "sujeito",
-   "objeto direto",
-   "predicativo do sujeito",
-   "aposto"
-  ],
   "dicionario": "caelestis, caeleste",
   "distratoresDicionario": [
    "caelestus, caelesta, caelestum",
@@ -12757,13 +12379,13 @@
   ]
  },
  {
-  "id": "la-xt046-5",
+  "id": "la-xt096-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "irae",
-  "frase": "impulerit. Tantaene animis caelestibus irae?",
+  "frase": "Tantaene animis caelestibus irae?",
   "ocorrencia": 1,
-  "de": "la-t046",
+  "de": "la-t096",
   "fonte": "Vergílio, Eneida I,11",
   "lema": "la-p223",
   "pt": "nominativo",
@@ -12789,13 +12411,6 @@
   "dificuldade": 3.0,
   "sempre": true,
   "ambigua": true,
-  "funcao": "sujeito",
-  "distratoresFuncao": [
-   "predicativo do sujeito",
-   "objeto direto",
-   "vocativo",
-   "aposto"
-  ],
   "dicionario": "ira, irae, f.",
   "distratoresDicionario": [
    "irus, iri, m.",
@@ -12805,14 +12420,14 @@
   ]
  },
  {
-  "id": "la-xt047-0",
+  "id": "la-xt097-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "Tu",
-  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t047",
-  "fonte": "Horácio, Odes I,11,1",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p007",
   "pt": "nominativo",
   "aceitas": [
@@ -12839,24 +12454,24 @@
   "ambigua": false
  },
  {
-  "id": "la-xt047-2",
+  "id": "la-xt097-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "quaesieris",
-  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t047",
-  "fonte": "Horácio, Odes I,11,1",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p251",
   "pt": "perfeito do subjuntivo",
   "aceitas": [
    "subjuntivo perfeito"
   ],
   "distratores": [
-   "futuro do indicativo",
    "perfeito do indicativo",
    "presente do subjuntivo",
-   "imperfeito do subjuntivo"
+   "imperfeito do subjuntivo",
+   "futuro do indicativo"
   ],
   "nota": "quaesieris: perfeito do subjuntivo, 2ª pessoa do singular, com ne: não perguntes.",
   "nivel": "B1",
@@ -12886,14 +12501,14 @@
   ]
  },
  {
-  "id": "la-xt047-3",
+  "id": "la-xt097-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "scire",
-  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t047",
-  "fonte": "Horácio, Odes I,11,1",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p252",
   "pt": "infinitivo",
   "aceitas": [
@@ -12926,14 +12541,14 @@
   ]
  },
  {
-  "id": "la-xt047-4",
+  "id": "la-xt097-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "nefas",
-  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t047",
-  "fonte": "Horácio, Odes I,11,1",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p253",
   "pt": "nominativo",
   "aceitas": [
@@ -12960,14 +12575,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt047-5",
+  "id": "la-xt097-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "quem",
-  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t047",
-  "fonte": "Horácio, Odes I,11,1",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p236",
   "pt": "acusativo",
   "aceitas": [
@@ -12981,7 +12596,7 @@
    "genitivo",
    "dativo"
   ],
-  "nota": "quem: acusativo masculino singular, interrogativo, concorda com finem, no verso 2: que (fim).",
+  "nota": "quem: acusativo masculino singular, interrogativo, concorda com finem: que (fim).",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -13002,14 +12617,14 @@
   ]
  },
  {
-  "id": "la-xt047-6",
+  "id": "la-xt097-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "mihi",
-  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t047",
-  "fonte": "Horácio, Odes I,11,1",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p004",
   "pt": "dativo",
   "aceitas": [
@@ -13043,14 +12658,14 @@
   ]
  },
  {
-  "id": "la-xt047-8",
+  "id": "la-xt097-8",
   "tipo": "forma",
   "familia": "caso",
   "la": "tibi",
-  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t047",
-  "fonte": "Horácio, Odes I,11,1",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p007",
   "pt": "dativo",
   "aceitas": [
@@ -13084,14 +12699,14 @@
   ]
  },
  {
-  "id": "la-xt048-0",
+  "id": "la-xt097-9",
   "tipo": "forma",
   "familia": "caso",
   "la": "finem",
-  "frase": "finem di dederint, Leuconoë, nec Babylonios",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t048",
-  "fonte": "Horácio, Odes I,11,2",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p254",
   "pt": "acusativo",
   "aceitas": [
@@ -13126,14 +12741,14 @@
   ]
  },
  {
-  "id": "la-xt048-1",
+  "id": "la-xt097-10",
   "tipo": "forma",
   "familia": "caso",
   "la": "di",
-  "frase": "finem di dederint, Leuconoë, nec Babylonios",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t048",
-  "fonte": "Horácio, Odes I,11,2",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p001",
   "pt": "nominativo",
   "aceitas": [
@@ -13167,24 +12782,24 @@
   ]
  },
  {
-  "id": "la-xt048-2",
+  "id": "la-xt097-11",
   "tipo": "forma",
   "familia": "verbo",
   "la": "dederint",
-  "frase": "finem di dederint, Leuconoë, nec Babylonios",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
   "ocorrencia": 1,
-  "de": "la-t048",
-  "fonte": "Horácio, Odes I,11,2",
+  "de": "la-t097",
+  "fonte": "Horácio, Odes I,11,1–2",
   "lema": "la-p099",
   "pt": "perfeito do subjuntivo",
   "aceitas": [
    "subjuntivo perfeito"
   ],
   "distratores": [
-   "futuro do indicativo",
    "perfeito do indicativo",
    "presente do subjuntivo",
-   "imperfeito do subjuntivo"
+   "imperfeito do subjuntivo",
+   "futuro do indicativo"
   ],
   "nota": "dederint: perfeito do subjuntivo, 3ª pessoa do plural, na pergunta indireta: (que fim) deram.",
   "nivel": "B1",
@@ -13214,14 +12829,14 @@
   ]
  },
  {
-  "id": "la-xt049-0",
+  "id": "la-xt098-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "temptaris",
-  "frase": "temptaris numeros. Ut melius, quidquid erit, pati,",
+  "frase": "Leuconoë, nec Babylonios temptaris numeros.",
   "ocorrencia": 1,
-  "de": "la-t049",
-  "fonte": "Horácio, Odes I,11,3",
+  "de": "la-t098",
+  "fonte": "Horácio, Odes I,11,2–3",
   "lema": "la-p255",
   "pt": "perfeito do subjuntivo",
   "aceitas": [
@@ -13261,14 +12876,14 @@
   ]
  },
  {
-  "id": "la-xt049-1",
+  "id": "la-xt098-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "numeros",
-  "frase": "temptaris numeros. Ut melius, quidquid erit, pati,",
+  "frase": "Leuconoë, nec Babylonios temptaris numeros.",
   "ocorrencia": 1,
-  "de": "la-t049",
-  "fonte": "Horácio, Odes I,11,3",
+  "de": "la-t098",
+  "fonte": "Horácio, Odes I,11,2–3",
   "lema": "la-p256",
   "pt": "acusativo",
   "aceitas": [
@@ -13303,14 +12918,14 @@
   ]
  },
  {
-  "id": "la-xt049-3",
+  "id": "la-xt099-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "melius",
-  "frase": "temptaris numeros. Ut melius, quidquid erit, pati,",
+  "frase": "Ut melius, quidquid erit, pati, seu pluris hiemes seu tribuit Iuppiter ultimam",
   "ocorrencia": 1,
-  "de": "la-t049",
-  "fonte": "Horácio, Odes I,11,3",
+  "de": "la-t099",
+  "fonte": "Horácio, Odes I,11,3–4",
   "lema": "la-p258",
   "pt": "nominativo",
   "aceitas": [
@@ -13344,14 +12959,14 @@
   ]
  },
  {
-  "id": "la-xt049-4",
+  "id": "la-xt099-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "quidquid",
-  "frase": "temptaris numeros. Ut melius, quidquid erit, pati,",
+  "frase": "Ut melius, quidquid erit, pati, seu pluris hiemes seu tribuit Iuppiter ultimam",
   "ocorrencia": 1,
-  "de": "la-t049",
-  "fonte": "Horácio, Odes I,11,3",
+  "de": "la-t099",
+  "fonte": "Horácio, Odes I,11,3–4",
   "lema": "la-p259",
   "pt": "acusativo",
   "aceitas": [
@@ -13386,14 +13001,14 @@
   ]
  },
  {
-  "id": "la-xt049-5",
+  "id": "la-xt099-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "erit",
-  "frase": "temptaris numeros. Ut melius, quidquid erit, pati,",
+  "frase": "Ut melius, quidquid erit, pati, seu pluris hiemes seu tribuit Iuppiter ultimam",
   "ocorrencia": 1,
-  "de": "la-t049",
-  "fonte": "Horácio, Odes I,11,3",
+  "de": "la-t099",
+  "fonte": "Horácio, Odes I,11,3–4",
   "lema": "la-p003",
   "pt": "futuro do indicativo",
   "aceitas": [
@@ -13433,14 +13048,14 @@
   ]
  },
  {
-  "id": "la-xt049-6",
+  "id": "la-xt099-4",
   "tipo": "forma",
   "familia": "verbo",
   "la": "pati",
-  "frase": "temptaris numeros. Ut melius, quidquid erit, pati,",
+  "frase": "Ut melius, quidquid erit, pati, seu pluris hiemes seu tribuit Iuppiter ultimam",
   "ocorrencia": 1,
-  "de": "la-t049",
-  "fonte": "Horácio, Odes I,11,3",
+  "de": "la-t099",
+  "fonte": "Horácio, Odes I,11,3–4",
   "lema": "la-p225",
   "pt": "infinitivo",
   "aceitas": [
@@ -13473,14 +13088,14 @@
   ]
  },
  {
-  "id": "la-xt050-1",
+  "id": "la-xt099-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "pluris",
-  "frase": "seu pluris hiemes seu tribuit Iuppiter ultimam,",
+  "frase": "Ut melius, quidquid erit, pati, seu pluris hiemes seu tribuit Iuppiter ultimam",
   "ocorrencia": 1,
-  "de": "la-t050",
-  "fonte": "Horácio, Odes I,11,4",
+  "de": "la-t099",
+  "fonte": "Horácio, Odes I,11,3–4",
   "lema": "la-p261",
   "pt": "acusativo",
   "aceitas": [
@@ -13515,14 +13130,14 @@
   ]
  },
  {
-  "id": "la-xt050-2",
+  "id": "la-xt099-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "hiemes",
-  "frase": "seu pluris hiemes seu tribuit Iuppiter ultimam,",
+  "frase": "Ut melius, quidquid erit, pati, seu pluris hiemes seu tribuit Iuppiter ultimam",
   "ocorrencia": 1,
-  "de": "la-t050",
-  "fonte": "Horácio, Odes I,11,4",
+  "de": "la-t099",
+  "fonte": "Horácio, Odes I,11,3–4",
   "lema": "la-p262",
   "pt": "acusativo",
   "aceitas": [
@@ -13557,14 +13172,14 @@
   ]
  },
  {
-  "id": "la-xt050-4",
+  "id": "la-xt099-9",
   "tipo": "forma",
   "familia": "verbo",
   "la": "tribuit",
-  "frase": "seu pluris hiemes seu tribuit Iuppiter ultimam,",
+  "frase": "Ut melius, quidquid erit, pati, seu pluris hiemes seu tribuit Iuppiter ultimam",
   "ocorrencia": 1,
-  "de": "la-t050",
-  "fonte": "Horácio, Odes I,11,4",
+  "de": "la-t099",
+  "fonte": "Horácio, Odes I,11,3–4",
   "lema": "la-p263",
   "pt": "perfeito do indicativo",
   "aceitas": [
@@ -13604,14 +13219,14 @@
   ]
  },
  {
-  "id": "la-xt050-6",
+  "id": "la-xt099-11",
   "tipo": "forma",
   "familia": "caso",
   "la": "ultimam",
-  "frase": "seu pluris hiemes seu tribuit Iuppiter ultimam,",
+  "frase": "Ut melius, quidquid erit, pati, seu pluris hiemes seu tribuit Iuppiter ultimam",
   "ocorrencia": 1,
-  "de": "la-t050",
-  "fonte": "Horácio, Odes I,11,4",
+  "de": "la-t099",
+  "fonte": "Horácio, Odes I,11,3–4",
   "lema": "la-p264",
   "pt": "acusativo",
   "aceitas": [
@@ -13646,14 +13261,14 @@
   ]
  },
  {
-  "id": "la-xt051-0",
+  "id": "la-xt100-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "quae",
-  "frase": "quae nunc oppositis debilitat pumicibus mare",
+  "frase": "ultimam, quae nunc oppositis debilitat pumicibus mare Tyrrhenum:",
   "ocorrencia": 1,
-  "de": "la-t051",
-  "fonte": "Horácio, Odes I,11,5",
+  "de": "la-t100",
+  "fonte": "Horácio, Odes I,11,4–6",
   "lema": "la-p064",
   "pt": "nominativo",
   "aceitas": [
@@ -13687,14 +13302,14 @@
   ]
  },
  {
-  "id": "la-xt051-2",
+  "id": "la-xt100-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "oppositis",
-  "frase": "quae nunc oppositis debilitat pumicibus mare",
+  "frase": "ultimam, quae nunc oppositis debilitat pumicibus mare Tyrrhenum:",
   "ocorrencia": 1,
-  "de": "la-t051",
-  "fonte": "Horácio, Odes I,11,5",
+  "de": "la-t100",
+  "fonte": "Horácio, Odes I,11,4–6",
   "lema": "la-p265",
   "pt": "particípio perfeito",
   "aceitas": [
@@ -13727,14 +13342,14 @@
   ]
  },
  {
-  "id": "la-xt051-3",
+  "id": "la-xt100-4",
   "tipo": "forma",
   "familia": "verbo",
   "la": "debilitat",
-  "frase": "quae nunc oppositis debilitat pumicibus mare",
+  "frase": "ultimam, quae nunc oppositis debilitat pumicibus mare Tyrrhenum:",
   "ocorrencia": 1,
-  "de": "la-t051",
-  "fonte": "Horácio, Odes I,11,5",
+  "de": "la-t100",
+  "fonte": "Horácio, Odes I,11,4–6",
   "lema": "la-p266",
   "pt": "presente do indicativo",
   "aceitas": [
@@ -13774,14 +13389,14 @@
   ]
  },
  {
-  "id": "la-xt051-4",
+  "id": "la-xt100-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "pumicibus",
-  "frase": "quae nunc oppositis debilitat pumicibus mare",
+  "frase": "ultimam, quae nunc oppositis debilitat pumicibus mare Tyrrhenum:",
   "ocorrencia": 1,
-  "de": "la-t051",
-  "fonte": "Horácio, Odes I,11,5",
+  "de": "la-t100",
+  "fonte": "Horácio, Odes I,11,4–6",
   "lema": "la-p267",
   "pt": "ablativo",
   "aceitas": [
@@ -13815,14 +13430,14 @@
   ]
  },
  {
-  "id": "la-xt051-5",
+  "id": "la-xt100-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "mare",
-  "frase": "quae nunc oppositis debilitat pumicibus mare",
+  "frase": "ultimam, quae nunc oppositis debilitat pumicibus mare Tyrrhenum:",
   "ocorrencia": 1,
-  "de": "la-t051",
-  "fonte": "Horácio, Odes I,11,5",
+  "de": "la-t100",
+  "fonte": "Horácio, Odes I,11,4–6",
   "lema": "la-p268",
   "pt": "acusativo",
   "aceitas": [
@@ -13850,14 +13465,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt052-1",
+  "id": "la-xt101-0",
   "tipo": "forma",
   "familia": "verbo",
   "la": "sapias",
-  "frase": "Tyrrhenum: sapias, vina liques, et spatio brevi",
+  "frase": "sapias, vina liques, et spatio brevi spem longam reseces.",
   "ocorrencia": 1,
-  "de": "la-t052",
-  "fonte": "Horácio, Odes I,11,6",
+  "de": "la-t101",
+  "fonte": "Horácio, Odes I,11,6–7",
   "lema": "la-p138",
   "pt": "presente do subjuntivo",
   "aceitas": [
@@ -13897,14 +13512,14 @@
   ]
  },
  {
-  "id": "la-xt052-2",
+  "id": "la-xt101-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "vina",
-  "frase": "Tyrrhenum: sapias, vina liques, et spatio brevi",
+  "frase": "sapias, vina liques, et spatio brevi spem longam reseces.",
   "ocorrencia": 1,
-  "de": "la-t052",
-  "fonte": "Horácio, Odes I,11,6",
+  "de": "la-t101",
+  "fonte": "Horácio, Odes I,11,6–7",
   "lema": "la-p144",
   "pt": "acusativo",
   "aceitas": [
@@ -13939,14 +13554,14 @@
   ]
  },
  {
-  "id": "la-xt052-3",
+  "id": "la-xt101-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "liques",
-  "frase": "Tyrrhenum: sapias, vina liques, et spatio brevi",
+  "frase": "sapias, vina liques, et spatio brevi spem longam reseces.",
   "ocorrencia": 1,
-  "de": "la-t052",
-  "fonte": "Horácio, Odes I,11,6",
+  "de": "la-t101",
+  "fonte": "Horácio, Odes I,11,6–7",
   "lema": "la-p269",
   "pt": "presente do subjuntivo",
   "aceitas": [
@@ -13986,14 +13601,14 @@
   ]
  },
  {
-  "id": "la-xt052-5",
+  "id": "la-xt101-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "spatio",
-  "frase": "Tyrrhenum: sapias, vina liques, et spatio brevi",
+  "frase": "sapias, vina liques, et spatio brevi spem longam reseces.",
   "ocorrencia": 1,
-  "de": "la-t052",
-  "fonte": "Horácio, Odes I,11,6",
+  "de": "la-t101",
+  "fonte": "Horácio, Odes I,11,6–7",
   "lema": "la-p270",
   "pt": "ablativo",
   "aceitas": [
@@ -14027,14 +13642,14 @@
   ]
  },
  {
-  "id": "la-xt052-6",
+  "id": "la-xt101-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "brevi",
-  "frase": "Tyrrhenum: sapias, vina liques, et spatio brevi",
+  "frase": "sapias, vina liques, et spatio brevi spem longam reseces.",
   "ocorrencia": 1,
-  "de": "la-t052",
-  "fonte": "Horácio, Odes I,11,6",
+  "de": "la-t101",
+  "fonte": "Horácio, Odes I,11,6–7",
   "lema": "la-p130",
   "pt": "ablativo",
   "aceitas": [
@@ -14068,14 +13683,14 @@
   ]
  },
  {
-  "id": "la-xt053-0",
+  "id": "la-xt101-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "spem",
-  "frase": "spem longam reseces. Dum loquimur, fugerit invida",
+  "frase": "sapias, vina liques, et spatio brevi spem longam reseces.",
   "ocorrencia": 1,
-  "de": "la-t053",
-  "fonte": "Horácio, Odes I,11,7",
+  "de": "la-t101",
+  "fonte": "Horácio, Odes I,11,6–7",
   "lema": "la-p271",
   "pt": "acusativo",
   "aceitas": [
@@ -14110,14 +13725,14 @@
   ]
  },
  {
-  "id": "la-xt053-1",
+  "id": "la-xt101-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "longam",
-  "frase": "spem longam reseces. Dum loquimur, fugerit invida",
+  "frase": "sapias, vina liques, et spatio brevi spem longam reseces.",
   "ocorrencia": 1,
-  "de": "la-t053",
-  "fonte": "Horácio, Odes I,11,7",
+  "de": "la-t101",
+  "fonte": "Horácio, Odes I,11,6–7",
   "lema": "la-p129",
   "pt": "acusativo",
   "aceitas": [
@@ -14152,14 +13767,14 @@
   ]
  },
  {
-  "id": "la-xt053-2",
+  "id": "la-xt101-8",
   "tipo": "forma",
   "familia": "verbo",
   "la": "reseces",
-  "frase": "spem longam reseces. Dum loquimur, fugerit invida",
+  "frase": "sapias, vina liques, et spatio brevi spem longam reseces.",
   "ocorrencia": 1,
-  "de": "la-t053",
-  "fonte": "Horácio, Odes I,11,7",
+  "de": "la-t101",
+  "fonte": "Horácio, Odes I,11,6–7",
   "lema": "la-p272",
   "pt": "presente do subjuntivo",
   "aceitas": [
@@ -14199,14 +13814,14 @@
   ]
  },
  {
-  "id": "la-xt053-4",
+  "id": "la-xt102-1",
   "tipo": "forma",
   "familia": "verbo",
   "la": "loquimur",
-  "frase": "spem longam reseces. Dum loquimur, fugerit invida",
+  "frase": "Dum loquimur, fugerit invida aetas:",
   "ocorrencia": 1,
-  "de": "la-t053",
-  "fonte": "Horácio, Odes I,11,7",
+  "de": "la-t102",
+  "fonte": "Horácio, Odes I,11,7–8",
   "lema": "la-p273",
   "pt": "presente do indicativo",
   "aceitas": [
@@ -14246,14 +13861,14 @@
   ]
  },
  {
-  "id": "la-xt053-5",
+  "id": "la-xt102-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "fugerit",
-  "frase": "spem longam reseces. Dum loquimur, fugerit invida",
+  "frase": "Dum loquimur, fugerit invida aetas:",
   "ocorrencia": 1,
-  "de": "la-t053",
-  "fonte": "Horácio, Odes I,11,7",
+  "de": "la-t102",
+  "fonte": "Horácio, Odes I,11,7–8",
   "lema": "la-p127",
   "pt": "futuro perfeito do indicativo",
   "aceitas": [
@@ -14261,9 +13876,9 @@
   ],
   "distratores": [
    "perfeito do subjuntivo",
+   "perfeito do indicativo",
    "futuro do indicativo",
-   "imperativo",
-   "imperfeito do indicativo"
+   "imperativo"
   ],
   "nota": "fugerit: futuro perfeito do indicativo, 3ª pessoa do singular, terá fugido.",
   "nivel": "B1",
@@ -14293,14 +13908,14 @@
   ]
  },
  {
-  "id": "la-xt053-6",
+  "id": "la-xt102-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "invida",
-  "frase": "spem longam reseces. Dum loquimur, fugerit invida",
+  "frase": "Dum loquimur, fugerit invida aetas:",
   "ocorrencia": 1,
-  "de": "la-t053",
-  "fonte": "Horácio, Odes I,11,7",
+  "de": "la-t102",
+  "fonte": "Horácio, Odes I,11,7–8",
   "lema": "la-p274",
   "pt": "nominativo",
   "aceitas": [
@@ -14313,7 +13928,7 @@
    "ablativo",
    "genitivo"
   ],
-  "nota": "invida: nominativo feminino singular, concorda com aetas, no verso 8: a invejosa.",
+  "nota": "invida: nominativo feminino singular, concorda com aetas: invejosa.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -14334,14 +13949,14 @@
   ]
  },
  {
-  "id": "la-xt054-0",
+  "id": "la-xt102-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "aetas",
-  "frase": "aetas: carpe diem, quam minimum credula postero.",
+  "frase": "Dum loquimur, fugerit invida aetas:",
   "ocorrencia": 1,
-  "de": "la-t054",
-  "fonte": "Horácio, Odes I,11,8",
+  "de": "la-t102",
+  "fonte": "Horácio, Odes I,11,7–8",
   "lema": "la-p275",
   "pt": "nominativo",
   "aceitas": [
@@ -14354,7 +13969,7 @@
    "genitivo",
    "ablativo"
   ],
-  "nota": "aetas: nominativo singular, sujeito de fugerit, no verso 7: o tempo, a idade.",
+  "nota": "aetas: nominativo singular, sujeito de fugerit: o tempo, a idade.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -14368,13 +13983,13 @@
   "ambigua": false
  },
  {
-  "id": "la-xt054-1",
+  "id": "la-xt103-0",
   "tipo": "forma",
   "familia": "verbo",
   "la": "carpe",
-  "frase": "aetas: carpe diem, quam minimum credula postero.",
+  "frase": "carpe diem, quam minimum credula postero.",
   "ocorrencia": 1,
-  "de": "la-t054",
+  "de": "la-t103",
   "fonte": "Horácio, Odes I,11,8",
   "lema": "la-p024",
   "pt": "imperativo",
@@ -14415,13 +14030,13 @@
   ]
  },
  {
-  "id": "la-xt054-2",
+  "id": "la-xt103-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "diem",
-  "frase": "aetas: carpe diem, quam minimum credula postero.",
+  "frase": "carpe diem, quam minimum credula postero.",
   "ocorrencia": 1,
-  "de": "la-t054",
+  "de": "la-t103",
   "fonte": "Horácio, Odes I,11,8",
   "lema": "la-p025",
   "pt": "acusativo",
@@ -14457,13 +14072,13 @@
   ]
  },
  {
-  "id": "la-xt054-4",
+  "id": "la-xt103-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "minimum",
-  "frase": "aetas: carpe diem, quam minimum credula postero.",
+  "frase": "carpe diem, quam minimum credula postero.",
   "ocorrencia": 1,
-  "de": "la-t054",
+  "de": "la-t103",
   "fonte": "Horácio, Odes I,11,8",
   "lema": "la-p277",
   "pt": "acusativo",
@@ -14499,13 +14114,13 @@
   ]
  },
  {
-  "id": "la-xt054-5",
+  "id": "la-xt103-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "credula",
-  "frase": "aetas: carpe diem, quam minimum credula postero.",
+  "frase": "carpe diem, quam minimum credula postero.",
   "ocorrencia": 1,
-  "de": "la-t054",
+  "de": "la-t103",
   "fonte": "Horácio, Odes I,11,8",
   "lema": "la-p278",
   "pt": "nominativo",
@@ -14540,13 +14155,13 @@
   ]
  },
  {
-  "id": "la-xt054-6",
+  "id": "la-xt103-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "postero",
-  "frase": "aetas: carpe diem, quam minimum credula postero.",
+  "frase": "carpe diem, quam minimum credula postero.",
   "ocorrencia": 1,
-  "de": "la-t054",
+  "de": "la-t103",
   "fonte": "Horácio, Odes I,11,8",
   "lema": "la-p279",
   "pt": "dativo",
@@ -14581,14 +14196,14 @@
   ]
  },
  {
-  "id": "la-xt055-0",
+  "id": "la-xt104-0",
   "tipo": "forma",
   "familia": "verbo",
   "la": "Exegi",
-  "frase": "Exegi monumentum ære perennius",
+  "frase": "Exegi monumentum ære perennius regalique situ pyramidum altius",
   "ocorrencia": 1,
-  "de": "la-t055",
-  "fonte": "Horácio, Odes III,30,1",
+  "de": "la-t104",
+  "fonte": "Horácio, Odes III,30,1–2",
   "lema": "la-p280",
   "pt": "perfeito do indicativo",
   "aceitas": [
@@ -14628,14 +14243,14 @@
   ]
  },
  {
-  "id": "la-xt055-1",
+  "id": "la-xt104-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "monumentum",
-  "frase": "Exegi monumentum ære perennius",
+  "frase": "Exegi monumentum ære perennius regalique situ pyramidum altius",
   "ocorrencia": 1,
-  "de": "la-t055",
-  "fonte": "Horácio, Odes III,30,1",
+  "de": "la-t104",
+  "fonte": "Horácio, Odes III,30,1–2",
   "lema": "la-p281",
   "pt": "acusativo",
   "aceitas": [
@@ -14663,14 +14278,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt055-2",
+  "id": "la-xt104-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "ære",
-  "frase": "Exegi monumentum ære perennius",
+  "frase": "Exegi monumentum ære perennius regalique situ pyramidum altius",
   "ocorrencia": 1,
-  "de": "la-t055",
-  "fonte": "Horácio, Odes III,30,1",
+  "de": "la-t104",
+  "fonte": "Horácio, Odes III,30,1–2",
   "lema": "la-p282",
   "pt": "ablativo",
   "aceitas": [
@@ -14704,14 +14319,14 @@
   ]
  },
  {
-  "id": "la-xt056-0",
+  "id": "la-xt104-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "regali",
-  "frase": "regalique situ pyramidum altius,",
+  "frase": "Exegi monumentum ære perennius regalique situ pyramidum altius",
   "ocorrencia": 1,
-  "de": "la-t056",
-  "fonte": "Horácio, Odes III,30,2",
+  "de": "la-t104",
+  "fonte": "Horácio, Odes III,30,1–2",
   "lema": "la-p284",
   "pt": "ablativo",
   "aceitas": [
@@ -14745,14 +14360,14 @@
   ]
  },
  {
-  "id": "la-xt056-2",
+  "id": "la-xt104-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "situ",
-  "frase": "regalique situ pyramidum altius,",
+  "frase": "Exegi monumentum ære perennius regalique situ pyramidum altius",
   "ocorrencia": 1,
-  "de": "la-t056",
-  "fonte": "Horácio, Odes III,30,2",
+  "de": "la-t104",
+  "fonte": "Horácio, Odes III,30,1–2",
   "lema": "la-p285",
   "pt": "ablativo",
   "aceitas": [
@@ -14786,14 +14401,14 @@
   ]
  },
  {
-  "id": "la-xt056-3",
+  "id": "la-xt104-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "pyramidum",
-  "frase": "regalique situ pyramidum altius,",
+  "frase": "Exegi monumentum ære perennius regalique situ pyramidum altius",
   "ocorrencia": 1,
-  "de": "la-t056",
-  "fonte": "Horácio, Odes III,30,2",
+  "de": "la-t104",
+  "fonte": "Horácio, Odes III,30,1–2",
   "lema": "la-p286",
   "pt": "genitivo",
   "aceitas": [
@@ -14827,14 +14442,14 @@
   ]
  },
  {
-  "id": "la-xt057-0",
+  "id": "la-xt105-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "quod",
-  "frase": "quod non imber edax, non Aquilo impotens",
+  "frase": "quod non imber edax, non Aquilo impotens possit diruere",
   "ocorrencia": 1,
-  "de": "la-t057",
-  "fonte": "Horácio, Odes III,30,3",
+  "de": "la-t105",
+  "fonte": "Horácio, Odes III,30,3–4",
   "lema": "la-p064",
   "pt": "acusativo",
   "aceitas": [
@@ -14848,7 +14463,7 @@
    "genitivo",
    "dativo"
   ],
-  "nota": "quod: acusativo neutro singular, relativo, retoma monumentum: objeto de diruere, no verso 4.",
+  "nota": "quod: acusativo neutro singular, relativo, retoma monumentum (verso 1): objeto de diruere.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -14869,14 +14484,14 @@
   ]
  },
  {
-  "id": "la-xt057-2",
+  "id": "la-xt105-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "imber",
-  "frase": "quod non imber edax, non Aquilo impotens",
+  "frase": "quod non imber edax, non Aquilo impotens possit diruere",
   "ocorrencia": 1,
-  "de": "la-t057",
-  "fonte": "Horácio, Odes III,30,3",
+  "de": "la-t105",
+  "fonte": "Horácio, Odes III,30,3–4",
   "lema": "la-p287",
   "pt": "nominativo",
   "aceitas": [
@@ -14903,14 +14518,14 @@
   "ambigua": false
  },
  {
-  "id": "la-xt057-3",
+  "id": "la-xt105-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "edax",
-  "frase": "quod non imber edax, non Aquilo impotens",
+  "frase": "quod non imber edax, non Aquilo impotens possit diruere",
   "ocorrencia": 1,
-  "de": "la-t057",
-  "fonte": "Horácio, Odes III,30,3",
+  "de": "la-t105",
+  "fonte": "Horácio, Odes III,30,3–4",
   "lema": "la-p288",
   "pt": "nominativo",
   "aceitas": [
@@ -14937,14 +14552,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt057-6",
+  "id": "la-xt105-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "impotens",
-  "frase": "quod non imber edax, non Aquilo impotens",
+  "frase": "quod non imber edax, non Aquilo impotens possit diruere",
   "ocorrencia": 1,
-  "de": "la-t057",
-  "fonte": "Horácio, Odes III,30,3",
+  "de": "la-t105",
+  "fonte": "Horácio, Odes III,30,3–4",
   "lema": "la-p289",
   "pt": "nominativo",
   "aceitas": [
@@ -14971,14 +14586,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt058-0",
+  "id": "la-xt105-7",
   "tipo": "forma",
   "familia": "verbo",
   "la": "possit",
-  "frase": "possit diruere aut innumerabilis",
+  "frase": "quod non imber edax, non Aquilo impotens possit diruere",
   "ocorrencia": 1,
-  "de": "la-t058",
-  "fonte": "Horácio, Odes III,30,4",
+  "de": "la-t105",
+  "fonte": "Horácio, Odes III,30,3–4",
   "lema": "la-p121",
   "pt": "presente do subjuntivo",
   "aceitas": [
@@ -15018,22 +14633,22 @@
   ]
  },
  {
-  "id": "la-xt058-1",
+  "id": "la-xt105-8",
   "tipo": "forma",
   "familia": "verbo",
   "la": "diruere",
-  "frase": "possit diruere aut innumerabilis",
+  "frase": "quod non imber edax, non Aquilo impotens possit diruere",
   "ocorrencia": 1,
-  "de": "la-t058",
-  "fonte": "Horácio, Odes III,30,4",
+  "de": "la-t105",
+  "fonte": "Horácio, Odes III,30,3–4",
   "lema": "la-p290",
   "pt": "infinitivo",
   "aceitas": [
    "infinitivo"
   ],
   "distratores": [
-   "perfeito do indicativo",
    "futuro do indicativo",
+   "perfeito do indicativo",
    "imperativo",
    "imperfeito do subjuntivo"
   ],
@@ -15058,14 +14673,14 @@
   ]
  },
  {
-  "id": "la-xt058-3",
+  "id": "la-xt106-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "innumerabilis",
-  "frase": "possit diruere aut innumerabilis",
+  "frase": "quod … possit diruere aut innumerabilis annorum series et fuga temporum.",
   "ocorrencia": 1,
-  "de": "la-t058",
-  "fonte": "Horácio, Odes III,30,4",
+  "de": "la-t106",
+  "fonte": "Horácio, Odes III,30,3–5",
   "lema": "la-p292",
   "pt": "nominativo",
   "aceitas": [
@@ -15078,7 +14693,7 @@
    "genitivo",
    "ablativo"
   ],
-  "nota": "innumerabilis: nominativo feminino singular, concorda com series, no verso 5: inumerável.",
+  "nota": "innumerabilis: nominativo feminino singular, concorda com series: inumerável.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -15092,14 +14707,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt059-0",
+  "id": "la-xt106-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "annorum",
-  "frase": "annorum series et fuga temporum.",
+  "frase": "quod … possit diruere aut innumerabilis annorum series et fuga temporum.",
   "ocorrencia": 1,
-  "de": "la-t059",
-  "fonte": "Horácio, Odes III,30,5",
+  "de": "la-t106",
+  "fonte": "Horácio, Odes III,30,3–5",
   "lema": "la-p293",
   "pt": "genitivo",
   "aceitas": [
@@ -15133,14 +14748,14 @@
   ]
  },
  {
-  "id": "la-xt059-1",
+  "id": "la-xt106-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "series",
-  "frase": "annorum series et fuga temporum.",
+  "frase": "quod … possit diruere aut innumerabilis annorum series et fuga temporum.",
   "ocorrencia": 1,
-  "de": "la-t059",
-  "fonte": "Horácio, Odes III,30,5",
+  "de": "la-t106",
+  "fonte": "Horácio, Odes III,30,3–5",
   "lema": "la-p294",
   "pt": "nominativo",
   "aceitas": [
@@ -15167,14 +14782,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt059-3",
+  "id": "la-xt106-8",
   "tipo": "forma",
   "familia": "caso",
   "la": "fuga",
-  "frase": "annorum series et fuga temporum.",
+  "frase": "quod … possit diruere aut innumerabilis annorum series et fuga temporum.",
   "ocorrencia": 1,
-  "de": "la-t059",
-  "fonte": "Horácio, Odes III,30,5",
+  "de": "la-t106",
+  "fonte": "Horácio, Odes III,30,3–5",
   "lema": "la-p295",
   "pt": "nominativo",
   "aceitas": [
@@ -15201,14 +14816,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt059-4",
+  "id": "la-xt106-9",
   "tipo": "forma",
   "familia": "caso",
   "la": "temporum",
-  "frase": "annorum series et fuga temporum.",
+  "frase": "quod … possit diruere aut innumerabilis annorum series et fuga temporum.",
   "ocorrencia": 1,
-  "de": "la-t059",
-  "fonte": "Horácio, Odes III,30,5",
+  "de": "la-t106",
+  "fonte": "Horácio, Odes III,30,3–5",
   "lema": "la-p126",
   "pt": "genitivo",
   "aceitas": [
@@ -15242,14 +14857,14 @@
   ]
  },
  {
-  "id": "la-xt060-1",
+  "id": "la-xt107-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "omnis",
-  "frase": "Non omnis moriar, multaque pars mei",
+  "frase": "Non omnis moriar, multaque pars mei vitabit Libitinam:",
   "ocorrencia": 1,
-  "de": "la-t060",
-  "fonte": "Horácio, Odes III,30,6",
+  "de": "la-t107",
+  "fonte": "Horácio, Odes III,30,6–7",
   "lema": "la-p019",
   "pt": "nominativo",
   "aceitas": [
@@ -15276,14 +14891,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt060-2",
+  "id": "la-xt107-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "moriar",
-  "frase": "Non omnis moriar, multaque pars mei",
+  "frase": "Non omnis moriar, multaque pars mei vitabit Libitinam:",
   "ocorrencia": 1,
-  "de": "la-t060",
-  "fonte": "Horácio, Odes III,30,6",
+  "de": "la-t107",
+  "fonte": "Horácio, Odes III,30,6–7",
   "lema": "la-p296",
   "pt": "futuro do indicativo",
   "aceitas": [
@@ -15323,14 +14938,14 @@
   ]
  },
  {
-  "id": "la-xt060-3",
+  "id": "la-xt107-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "multa",
-  "frase": "Non omnis moriar, multaque pars mei",
+  "frase": "Non omnis moriar, multaque pars mei vitabit Libitinam:",
   "ocorrencia": 1,
-  "de": "la-t060",
-  "fonte": "Horácio, Odes III,30,6",
+  "de": "la-t107",
+  "fonte": "Horácio, Odes III,30,6–7",
   "lema": "la-p214",
   "pt": "nominativo",
   "aceitas": [
@@ -15364,14 +14979,14 @@
   ]
  },
  {
-  "id": "la-xt060-5",
+  "id": "la-xt107-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "pars",
-  "frase": "Non omnis moriar, multaque pars mei",
+  "frase": "Non omnis moriar, multaque pars mei vitabit Libitinam:",
   "ocorrencia": 1,
-  "de": "la-t060",
-  "fonte": "Horácio, Odes III,30,6",
+  "de": "la-t107",
+  "fonte": "Horácio, Odes III,30,6–7",
   "lema": "la-p297",
   "pt": "nominativo",
   "aceitas": [
@@ -15384,7 +14999,7 @@
    "genitivo",
    "ablativo"
   ],
-  "nota": "pars: nominativo singular, sujeito de vitabit, no verso 7.",
+  "nota": "pars: nominativo singular, sujeito de vitabit.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -15398,14 +15013,14 @@
   "ambigua": false
  },
  {
-  "id": "la-xt060-6",
+  "id": "la-xt107-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "mei",
-  "frase": "Non omnis moriar, multaque pars mei",
+  "frase": "Non omnis moriar, multaque pars mei vitabit Libitinam:",
   "ocorrencia": 1,
-  "de": "la-t060",
-  "fonte": "Horácio, Odes III,30,6",
+  "de": "la-t107",
+  "fonte": "Horácio, Odes III,30,6–7",
   "lema": "la-p004",
   "pt": "genitivo",
   "aceitas": [
@@ -15439,14 +15054,14 @@
   ]
  },
  {
-  "id": "la-xt061-0",
+  "id": "la-xt107-7",
   "tipo": "forma",
   "familia": "verbo",
   "la": "vitabit",
-  "frase": "vitabit Libitinam: usque ego postera",
+  "frase": "Non omnis moriar, multaque pars mei vitabit Libitinam:",
   "ocorrencia": 1,
-  "de": "la-t061",
-  "fonte": "Horácio, Odes III,30,7",
+  "de": "la-t107",
+  "fonte": "Horácio, Odes III,30,6–7",
   "lema": "la-p298",
   "pt": "futuro do indicativo",
   "aceitas": [
@@ -15458,7 +15073,7 @@
    "imperfeito do indicativo",
    "perfeito do indicativo"
   ],
-  "nota": "vitabit: futuro do indicativo, 3ª pessoa do singular, sujeito: pars, do verso 6.",
+  "nota": "vitabit: futuro do indicativo, 3ª pessoa do singular, evitará; o sujeito é pars.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -15486,14 +15101,14 @@
   ]
  },
  {
-  "id": "la-xt061-3",
+  "id": "la-xt108-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "ego",
-  "frase": "vitabit Libitinam: usque ego postera",
+  "frase": "usque ego postera crescam laude recens",
   "ocorrencia": 1,
-  "de": "la-t061",
-  "fonte": "Horácio, Odes III,30,7",
+  "de": "la-t108",
+  "fonte": "Horácio, Odes III,30,7–8",
   "lema": "la-p004",
   "pt": "nominativo",
   "aceitas": [
@@ -15506,7 +15121,7 @@
    "genitivo",
    "ablativo"
   ],
-  "nota": "ego: nominativo singular, sujeito de crescam, no verso 8.",
+  "nota": "ego: nominativo singular, sujeito de crescam.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -15520,14 +15135,14 @@
   "ambigua": false
  },
  {
-  "id": "la-xt061-4",
+  "id": "la-xt108-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "postera",
-  "frase": "vitabit Libitinam: usque ego postera",
+  "frase": "usque ego postera crescam laude recens",
   "ocorrencia": 1,
-  "de": "la-t061",
-  "fonte": "Horácio, Odes III,30,7",
+  "de": "la-t108",
+  "fonte": "Horácio, Odes III,30,7–8",
   "lema": "la-p279",
   "pt": "ablativo",
   "aceitas": [
@@ -15540,7 +15155,7 @@
    "vocativo",
    "dativo"
   ],
-  "nota": "postera: ablativo feminino singular, concorda com laude, no verso 8: futuro, da posteridade.",
+  "nota": "postera: ablativo feminino singular, concorda com laude: futuro, da posteridade.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -15561,14 +15176,14 @@
   ]
  },
  {
-  "id": "la-xt062-0",
+  "id": "la-xt108-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "crescam",
-  "frase": "crescam laude recens, dum Capitolium",
+  "frase": "usque ego postera crescam laude recens",
   "ocorrencia": 1,
-  "de": "la-t062",
-  "fonte": "Horácio, Odes III,30,8",
+  "de": "la-t108",
+  "fonte": "Horácio, Odes III,30,7–8",
   "lema": "la-p300",
   "pt": "futuro do indicativo",
   "aceitas": [
@@ -15608,14 +15223,14 @@
   ]
  },
  {
-  "id": "la-xt062-1",
+  "id": "la-xt108-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "laude",
-  "frase": "crescam laude recens, dum Capitolium",
+  "frase": "usque ego postera crescam laude recens",
   "ocorrencia": 1,
-  "de": "la-t062",
-  "fonte": "Horácio, Odes III,30,8",
+  "de": "la-t108",
+  "fonte": "Horácio, Odes III,30,7–8",
   "lema": "la-p301",
   "pt": "ablativo",
   "aceitas": [
@@ -15649,14 +15264,14 @@
   ]
  },
  {
-  "id": "la-xt062-2",
+  "id": "la-xt108-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "recens",
-  "frase": "crescam laude recens, dum Capitolium",
+  "frase": "usque ego postera crescam laude recens",
   "ocorrencia": 1,
-  "de": "la-t062",
-  "fonte": "Horácio, Odes III,30,8",
+  "de": "la-t108",
+  "fonte": "Horácio, Odes III,30,7–8",
   "lema": "la-p302",
   "pt": "nominativo",
   "aceitas": [
@@ -15683,14 +15298,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt063-0",
+  "id": "la-xt109-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "scandet",
-  "frase": "scandet cum tacita virgine pontifex.",
+  "frase": "dum Capitolium scandet cum tacita virgine pontifex.",
   "ocorrencia": 1,
-  "de": "la-t063",
-  "fonte": "Horácio, Odes III,30,9",
+  "de": "la-t109",
+  "fonte": "Horácio, Odes III,30,8–9",
   "lema": "la-p303",
   "pt": "futuro do indicativo",
   "aceitas": [
@@ -15730,14 +15345,14 @@
   ]
  },
  {
-  "id": "la-xt063-2",
+  "id": "la-xt109-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "tacita",
-  "frase": "scandet cum tacita virgine pontifex.",
+  "frase": "dum Capitolium scandet cum tacita virgine pontifex.",
   "ocorrencia": 1,
-  "de": "la-t063",
-  "fonte": "Horácio, Odes III,30,9",
+  "de": "la-t109",
+  "fonte": "Horácio, Odes III,30,8–9",
   "lema": "la-p304",
   "pt": "ablativo",
   "aceitas": [
@@ -15771,14 +15386,14 @@
   ]
  },
  {
-  "id": "la-xt063-3",
+  "id": "la-xt109-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "virgine",
-  "frase": "scandet cum tacita virgine pontifex.",
+  "frase": "dum Capitolium scandet cum tacita virgine pontifex.",
   "ocorrencia": 1,
-  "de": "la-t063",
-  "fonte": "Horácio, Odes III,30,9",
+  "de": "la-t109",
+  "fonte": "Horácio, Odes III,30,8–9",
   "lema": "la-p305",
   "pt": "ablativo",
   "aceitas": [
@@ -15812,14 +15427,14 @@
   ]
  },
  {
-  "id": "la-xt063-4",
+  "id": "la-xt109-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "pontifex",
-  "frase": "scandet cum tacita virgine pontifex.",
+  "frase": "dum Capitolium scandet cum tacita virgine pontifex.",
   "ocorrencia": 1,
-  "de": "la-t063",
-  "fonte": "Horácio, Odes III,30,9",
+  "de": "la-t109",
+  "fonte": "Horácio, Odes III,30,8–9",
   "lema": "la-p306",
   "pt": "nominativo",
   "aceitas": [
@@ -16015,14 +15630,14 @@
   ]
  },
  {
-  "id": "la-xt065-2",
+  "id": "la-xt110-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "pauper",
-  "frase": "et qua pauper aquae Daunus agrestium",
+  "frase": "et qua pauper aquae Daunus agrestium regnavit populorum",
   "ocorrencia": 1,
-  "de": "la-t065",
-  "fonte": "Horácio, Odes III,30,11",
+  "de": "la-t110",
+  "fonte": "Horácio, Odes III,30,11–12",
   "lema": "la-p309",
   "pt": "nominativo",
   "aceitas": [
@@ -16049,14 +15664,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt065-3",
+  "id": "la-xt110-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "aquae",
-  "frase": "et qua pauper aquae Daunus agrestium",
+  "frase": "et qua pauper aquae Daunus agrestium regnavit populorum",
   "ocorrencia": 1,
-  "de": "la-t065",
-  "fonte": "Horácio, Odes III,30,11",
+  "de": "la-t110",
+  "fonte": "Horácio, Odes III,30,11–12",
   "lema": "la-p199",
   "pt": "genitivo",
   "aceitas": [
@@ -16090,14 +15705,14 @@
   ]
  },
  {
-  "id": "la-xt065-5",
+  "id": "la-xt110-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "agrestium",
-  "frase": "et qua pauper aquae Daunus agrestium",
+  "frase": "et qua pauper aquae Daunus agrestium regnavit populorum",
   "ocorrencia": 1,
-  "de": "la-t065",
-  "fonte": "Horácio, Odes III,30,11",
+  "de": "la-t110",
+  "fonte": "Horácio, Odes III,30,11–12",
   "lema": "la-p310",
   "pt": "genitivo",
   "aceitas": [
@@ -16110,7 +15725,7 @@
    "ablativo",
    "acusativo"
   ],
-  "nota": "agrestium: genitivo masculino plural, concorda com populorum, no verso 12: agrestes.",
+  "nota": "agrestium: genitivo masculino plural, concorda com populorum: agrestes.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -16131,14 +15746,14 @@
   ]
  },
  {
-  "id": "la-xt066-0",
+  "id": "la-xt110-6",
   "tipo": "forma",
   "familia": "verbo",
   "la": "regnavit",
-  "frase": "regnavit populorum, ex humili potens",
+  "frase": "et qua pauper aquae Daunus agrestium regnavit populorum",
   "ocorrencia": 1,
-  "de": "la-t066",
-  "fonte": "Horácio, Odes III,30,12",
+  "de": "la-t110",
+  "fonte": "Horácio, Odes III,30,11–12",
   "lema": "la-p311",
   "pt": "perfeito do indicativo",
   "aceitas": [
@@ -16178,14 +15793,14 @@
   ]
  },
  {
-  "id": "la-xt066-1",
+  "id": "la-xt110-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "populorum",
-  "frase": "regnavit populorum, ex humili potens",
+  "frase": "et qua pauper aquae Daunus agrestium regnavit populorum",
   "ocorrencia": 1,
-  "de": "la-t066",
-  "fonte": "Horácio, Odes III,30,12",
+  "de": "la-t110",
+  "fonte": "Horácio, Odes III,30,11–12",
   "lema": "la-p312",
   "pt": "genitivo",
   "aceitas": [
@@ -16219,14 +15834,14 @@
   ]
  },
  {
-  "id": "la-xt066-3",
+  "id": "la-xt111-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "humili",
-  "frase": "regnavit populorum, ex humili potens",
+  "frase": "Dicar … ex humili potens princeps Aeolium carmen ad Italos deduxisse modos.",
   "ocorrencia": 1,
-  "de": "la-t066",
-  "fonte": "Horácio, Odes III,30,12",
+  "de": "la-t111",
+  "fonte": "Horácio, Odes III,30,10–14",
   "lema": "la-p314",
   "pt": "ablativo",
   "aceitas": [
@@ -16260,14 +15875,14 @@
   ]
  },
  {
-  "id": "la-xt066-4",
+  "id": "la-xt111-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "potens",
-  "frase": "regnavit populorum, ex humili potens",
+  "frase": "Dicar … ex humili potens princeps Aeolium carmen ad Italos deduxisse modos.",
   "ocorrencia": 1,
-  "de": "la-t066",
-  "fonte": "Horácio, Odes III,30,12",
+  "de": "la-t111",
+  "fonte": "Horácio, Odes III,30,10–14",
   "lema": "la-p315",
   "pt": "nominativo",
   "aceitas": [
@@ -16294,14 +15909,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt067-0",
+  "id": "la-xt111-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "princeps",
-  "frase": "princeps Aeolium carmen ad Italos",
+  "frase": "Dicar … ex humili potens princeps Aeolium carmen ad Italos deduxisse modos.",
   "ocorrencia": 1,
-  "de": "la-t067",
-  "fonte": "Horácio, Odes III,30,13",
+  "de": "la-t111",
+  "fonte": "Horácio, Odes III,30,10–14",
   "lema": "la-p316",
   "pt": "nominativo",
   "aceitas": [
@@ -16328,14 +15943,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt067-2",
+  "id": "la-xt111-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "carmen",
-  "frase": "princeps Aeolium carmen ad Italos",
+  "frase": "Dicar … ex humili potens princeps Aeolium carmen ad Italos deduxisse modos.",
   "ocorrencia": 1,
-  "de": "la-t067",
-  "fonte": "Horácio, Odes III,30,13",
+  "de": "la-t111",
+  "fonte": "Horácio, Odes III,30,10–14",
   "lema": "la-p317",
   "pt": "acusativo",
   "aceitas": [
@@ -16349,7 +15964,7 @@
    "ablativo",
    "genitivo"
   ],
-  "nota": "carmen: acusativo singular, objeto de deduxisse, no verso 14.",
+  "nota": "carmen: acusativo singular, objeto de deduxisse.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -16363,14 +15978,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt068-0",
+  "id": "la-xt111-9",
   "tipo": "forma",
   "familia": "verbo",
   "la": "deduxisse",
-  "frase": "deduxisse modos. Sume superbiam",
+  "frase": "Dicar … ex humili potens princeps Aeolium carmen ad Italos deduxisse modos.",
   "ocorrencia": 1,
-  "de": "la-t068",
-  "fonte": "Horácio, Odes III,30,14",
+  "de": "la-t111",
+  "fonte": "Horácio, Odes III,30,10–14",
   "lema": "la-p318",
   "pt": "infinitivo",
   "aceitas": [
@@ -16403,14 +16018,14 @@
   ]
  },
  {
-  "id": "la-xt068-1",
+  "id": "la-xt111-10",
   "tipo": "forma",
   "familia": "caso",
   "la": "modos",
-  "frase": "deduxisse modos. Sume superbiam",
+  "frase": "Dicar … ex humili potens princeps Aeolium carmen ad Italos deduxisse modos.",
   "ocorrencia": 1,
-  "de": "la-t068",
-  "fonte": "Horácio, Odes III,30,14",
+  "de": "la-t111",
+  "fonte": "Horácio, Odes III,30,10–14",
   "lema": "la-p319",
   "pt": "acusativo",
   "aceitas": [
@@ -16445,14 +16060,14 @@
   ]
  },
  {
-  "id": "la-xt068-2",
+  "id": "la-xt112-0",
   "tipo": "forma",
   "familia": "verbo",
   "la": "Sume",
-  "frase": "deduxisse modos. Sume superbiam",
+  "frase": "Sume superbiam quaesitam meritis",
   "ocorrencia": 1,
-  "de": "la-t068",
-  "fonte": "Horácio, Odes III,30,14",
+  "de": "la-t112",
+  "fonte": "Horácio, Odes III,30,14–15",
   "lema": "la-p320",
   "pt": "imperativo",
   "aceitas": [
@@ -16492,14 +16107,14 @@
   ]
  },
  {
-  "id": "la-xt068-3",
+  "id": "la-xt112-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "superbiam",
-  "frase": "deduxisse modos. Sume superbiam",
+  "frase": "Sume superbiam quaesitam meritis",
   "ocorrencia": 1,
-  "de": "la-t068",
-  "fonte": "Horácio, Odes III,30,14",
+  "de": "la-t112",
+  "fonte": "Horácio, Odes III,30,14–15",
   "lema": "la-p321",
   "pt": "acusativo",
   "aceitas": [
@@ -16534,14 +16149,14 @@
   ]
  },
  {
-  "id": "la-xt069-0",
+  "id": "la-xt112-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "quaesitam",
-  "frase": "quaesitam meritis et mihi Delphica",
+  "frase": "Sume superbiam quaesitam meritis",
   "ocorrencia": 1,
-  "de": "la-t069",
-  "fonte": "Horácio, Odes III,30,15",
+  "de": "la-t112",
+  "fonte": "Horácio, Odes III,30,14–15",
   "lema": "la-p251",
   "pt": "particípio perfeito",
   "aceitas": [
@@ -16574,14 +16189,14 @@
   ]
  },
  {
-  "id": "la-xt069-1",
+  "id": "la-xt112-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "meritis",
-  "frase": "quaesitam meritis et mihi Delphica",
+  "frase": "Sume superbiam quaesitam meritis",
   "ocorrencia": 1,
-  "de": "la-t069",
-  "fonte": "Horácio, Odes III,30,15",
+  "de": "la-t112",
+  "fonte": "Horácio, Odes III,30,14–15",
   "lema": "la-p322",
   "pt": "ablativo",
   "aceitas": [
@@ -16615,14 +16230,14 @@
   ]
  },
  {
-  "id": "la-xt069-3",
+  "id": "la-xt113-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "mihi",
-  "frase": "quaesitam meritis et mihi Delphica",
+  "frase": "et mihi Delphica lauro cinge volens, Melpomene, comam.",
   "ocorrencia": 1,
-  "de": "la-t069",
-  "fonte": "Horácio, Odes III,30,15",
+  "de": "la-t113",
+  "fonte": "Horácio, Odes III,30,15–16",
   "lema": "la-p004",
   "pt": "dativo",
   "aceitas": [
@@ -16656,14 +16271,14 @@
   ]
  },
  {
-  "id": "la-xt070-0",
+  "id": "la-xt113-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "lauro",
-  "frase": "lauro cinge volens, Melpomene, comam.",
+  "frase": "et mihi Delphica lauro cinge volens, Melpomene, comam.",
   "ocorrencia": 1,
-  "de": "la-t070",
-  "fonte": "Horácio, Odes III,30,16",
+  "de": "la-t113",
+  "fonte": "Horácio, Odes III,30,15–16",
   "lema": "la-p323",
   "pt": "ablativo",
   "aceitas": [
@@ -16697,14 +16312,14 @@
   ]
  },
  {
-  "id": "la-xt070-1",
+  "id": "la-xt113-4",
   "tipo": "forma",
   "familia": "verbo",
   "la": "cinge",
-  "frase": "lauro cinge volens, Melpomene, comam.",
+  "frase": "et mihi Delphica lauro cinge volens, Melpomene, comam.",
   "ocorrencia": 1,
-  "de": "la-t070",
-  "fonte": "Horácio, Odes III,30,16",
+  "de": "la-t113",
+  "fonte": "Horácio, Odes III,30,15–16",
   "lema": "la-p324",
   "pt": "imperativo",
   "aceitas": [
@@ -16744,14 +16359,14 @@
   ]
  },
  {
-  "id": "la-xt070-2",
+  "id": "la-xt113-5",
   "tipo": "forma",
   "familia": "verbo",
   "la": "volens",
-  "frase": "lauro cinge volens, Melpomene, comam.",
+  "frase": "et mihi Delphica lauro cinge volens, Melpomene, comam.",
   "ocorrencia": 1,
-  "de": "la-t070",
-  "fonte": "Horácio, Odes III,30,16",
+  "de": "la-t113",
+  "fonte": "Horácio, Odes III,30,15–16",
   "lema": "la-p155",
   "pt": "particípio presente",
   "aceitas": [
@@ -16784,14 +16399,14 @@
   ]
  },
  {
-  "id": "la-xt070-4",
+  "id": "la-xt113-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "comam",
-  "frase": "lauro cinge volens, Melpomene, comam.",
+  "frase": "et mihi Delphica lauro cinge volens, Melpomene, comam.",
   "ocorrencia": 1,
-  "de": "la-t070",
-  "fonte": "Horácio, Odes III,30,16",
+  "de": "la-t113",
+  "fonte": "Horácio, Odes III,30,15–16",
   "lema": "la-p325",
   "pt": "acusativo",
   "aceitas": [
@@ -18111,14 +17726,14 @@
   ]
  },
  {
-  "id": "la-xt078-2",
+  "id": "la-xt119-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "nascenti",
-  "frase": "Tu modo nascenti puero, quo ferrea primum",
+  "frase": "Tu modo nascenti puero … casta fave Lucina:",
   "ocorrencia": 1,
-  "de": "la-t078",
-  "fonte": "Vergílio, Bucólicas IV,8",
+  "de": "la-t119",
+  "fonte": "Vergílio, Bucólicas IV,8–10",
   "lema": "la-p334",
   "pt": "particípio presente",
   "aceitas": [
@@ -18151,14 +17766,14 @@
   ]
  },
  {
-  "id": "la-xt078-3",
+  "id": "la-xt119-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "puero",
-  "frase": "Tu modo nascenti puero, quo ferrea primum",
+  "frase": "Tu modo nascenti puero … casta fave Lucina:",
   "ocorrencia": 1,
-  "de": "la-t078",
-  "fonte": "Vergílio, Bucólicas IV,8",
+  "de": "la-t119",
+  "fonte": "Vergílio, Bucólicas IV,8–10",
   "lema": "la-p341",
   "pt": "dativo",
   "aceitas": [
@@ -18171,7 +17786,7 @@
    "nominativo",
    "acusativo"
   ],
-  "nota": "puero: dativo singular, com fave, no verso 10: ao menino.",
+  "nota": "puero: dativo singular, dativo com fave: ao menino.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -18192,347 +17807,14 @@
   ]
  },
  {
-  "id": "la-xt078-4",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "quo",
-  "frase": "Tu modo nascenti puero, quo ferrea primum",
-  "ocorrencia": 1,
-  "de": "la-t078",
-  "fonte": "Vergílio, Bucólicas IV,8",
-  "lema": "la-p064",
-  "pt": "ablativo",
-  "aceitas": [
-   "caso ablativo",
-   "abl"
-  ],
-  "distratores": [
-   "dativo",
-   "acusativo",
-   "genitivo",
-   "nominativo"
-  ],
-  "nota": "quo: ablativo masculino singular, relativo, retoma puero: com quem, sob quem.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g006"
-  ],
-  "dificuldade": 2.5,
-  "sempre": true,
-  "ambigua": false,
-  "dicionario": "qui, quae, quod",
-  "distratoresDicionario": [
-   "hic, haec, hoc",
-   "idem, eadem, idem",
-   "ille, illa, illud",
-   "is, ea, id"
-  ]
- },
- {
-  "id": "la-xt078-5",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "ferrea",
-  "frase": "Tu modo nascenti puero, quo ferrea primum",
-  "ocorrencia": 1,
-  "de": "la-t078",
-  "fonte": "Vergílio, Bucólicas IV,8",
-  "lema": "la-p342",
-  "pt": "nominativo",
-  "aceitas": [
-   "caso nominativo",
-   "nom"
-  ],
-  "distratores": [
-   "vocativo",
-   "acusativo",
-   "ablativo",
-   "genitivo"
-  ],
-  "nota": "ferrea: nominativo feminino singular, subentende-se gens: a (raça) de ferro.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g001"
-  ],
-  "dificuldade": 3.0,
-  "sempre": true,
-  "ambigua": true,
-  "dicionario": "ferreus, ferrea, ferreum",
-  "distratoresDicionario": [
-   "ferreis, ferree",
-   "ferreus, ferreis",
-   "humanus, humana, humanum",
-   "integer, integra, integrum"
-  ]
- },
- {
-  "id": "la-xt079-0",
-  "tipo": "forma",
-  "familia": "verbo",
-  "la": "desinet",
-  "frase": "desinet ac toto surget gens aurea mundo,",
-  "ocorrencia": 1,
-  "de": "la-t079",
-  "fonte": "Vergílio, Bucólicas IV,9",
-  "lema": "la-p344",
-  "pt": "futuro do indicativo",
-  "aceitas": [
-   "indicativo futuro"
-  ],
-  "distratores": [
-   "presente do subjuntivo",
-   "presente do indicativo",
-   "imperfeito do indicativo",
-   "perfeito do indicativo"
-  ],
-  "nota": "desinet: futuro do indicativo, 3ª pessoa do singular, sujeito: ferrea (gens), do verso 8.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "forma verbal"
-  ],
-  "conceitos": [
-   "la-g010"
-  ],
-  "dificuldade": 1.5,
-  "sempre": false,
-  "ambigua": false,
-  "pessoa": "3ª pessoa do singular",
-  "distratoresPessoa": [
-   "3ª pessoa do plural",
-   "1ª pessoa do singular",
-   "2ª pessoa do singular",
-   "1ª pessoa do plural"
-  ],
-  "dicionario": "desino, desinere, desii, desitum",
-  "distratoresDicionario": [
-   "desineo, desinere, desinui, desinitum",
-   "desinio, desinere, desii, desitum",
-   "desino, desinare, desinavi, desinatum",
-   "desinio, desinire, desinivi, desinitum"
-  ]
- },
- {
-  "id": "la-xt079-2",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "toto",
-  "frase": "desinet ac toto surget gens aurea mundo,",
-  "ocorrencia": 1,
-  "de": "la-t079",
-  "fonte": "Vergílio, Bucólicas IV,9",
-  "lema": "la-p345",
-  "pt": "ablativo",
-  "aceitas": [
-   "caso ablativo",
-   "abl"
-  ],
-  "distratores": [
-   "dativo",
-   "acusativo",
-   "genitivo",
-   "nominativo"
-  ],
-  "nota": "toto: ablativo masculino singular, concorda com mundo: inteiro.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g006"
-  ],
-  "dificuldade": 3.0,
-  "sempre": true,
-  "ambigua": true,
-  "dicionario": "totus, tota, totum",
-  "distratoresDicionario": [
-   "totis, tote",
-   "totus, totis",
-   "toter, totera, toterum",
-   "toter, toteris, totere"
-  ]
- },
- {
-  "id": "la-xt079-3",
-  "tipo": "forma",
-  "familia": "verbo",
-  "la": "surget",
-  "frase": "desinet ac toto surget gens aurea mundo,",
-  "ocorrencia": 1,
-  "de": "la-t079",
-  "fonte": "Vergílio, Bucólicas IV,9",
-  "lema": "la-p346",
-  "pt": "futuro do indicativo",
-  "aceitas": [
-   "indicativo futuro"
-  ],
-  "distratores": [
-   "presente do subjuntivo",
-   "presente do indicativo",
-   "imperfeito do indicativo",
-   "perfeito do indicativo"
-  ],
-  "nota": "surget: futuro do indicativo, 3ª pessoa do singular, surgirá.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "forma verbal"
-  ],
-  "conceitos": [
-   "la-g010"
-  ],
-  "dificuldade": 1.5,
-  "sempre": false,
-  "ambigua": false,
-  "pessoa": "3ª pessoa do singular",
-  "distratoresPessoa": [
-   "3ª pessoa do plural",
-   "1ª pessoa do singular",
-   "2ª pessoa do singular",
-   "1ª pessoa do plural"
-  ],
-  "dicionario": "surgo, surgere, surrexi, surrectum",
-  "distratoresDicionario": [
-   "surgeo, surgere, surgui, surgitum",
-   "surgio, surgere, surrexi, surrectum",
-   "surgo, surgare, surgavi, surgatum",
-   "surgio, surgire, surgivi, surgitum"
-  ]
- },
- {
-  "id": "la-xt079-4",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "gens",
-  "frase": "desinet ac toto surget gens aurea mundo,",
-  "ocorrencia": 1,
-  "de": "la-t079",
-  "fonte": "Vergílio, Bucólicas IV,9",
-  "lema": "la-p020",
-  "pt": "nominativo",
-  "aceitas": [
-   "caso nominativo",
-   "nom"
-  ],
-  "distratores": [
-   "vocativo",
-   "acusativo",
-   "genitivo",
-   "ablativo"
-  ],
-  "nota": "gens: nominativo singular, sujeito de surget.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g001"
-  ],
-  "dificuldade": 1.0,
-  "sempre": false,
-  "ambigua": false
- },
- {
-  "id": "la-xt079-5",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "aurea",
-  "frase": "desinet ac toto surget gens aurea mundo,",
-  "ocorrencia": 1,
-  "de": "la-t079",
-  "fonte": "Vergílio, Bucólicas IV,9",
-  "lema": "la-p347",
-  "pt": "nominativo",
-  "aceitas": [
-   "caso nominativo",
-   "nom"
-  ],
-  "distratores": [
-   "vocativo",
-   "acusativo",
-   "ablativo",
-   "genitivo"
-  ],
-  "nota": "aurea: nominativo feminino singular, concorda com gens: de ouro.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g001"
-  ],
-  "dificuldade": 3.0,
-  "sempre": true,
-  "ambigua": true,
-  "dicionario": "aureus, aurea, aureum",
-  "distratoresDicionario": [
-   "aureis, auree",
-   "aureus, aureis",
-   "altus, alta, altum",
-   "castus, casta, castum"
-  ]
- },
- {
-  "id": "la-xt079-6",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "mundo",
-  "frase": "desinet ac toto surget gens aurea mundo,",
-  "ocorrencia": 1,
-  "de": "la-t079",
-  "fonte": "Vergílio, Bucólicas IV,9",
-  "lema": "la-p042",
-  "pt": "ablativo",
-  "aceitas": [
-   "caso ablativo",
-   "abl"
-  ],
-  "distratores": [
-   "dativo",
-   "acusativo",
-   "genitivo",
-   "nominativo"
-  ],
-  "nota": "mundo: ablativo singular, onde: no mundo.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g006"
-  ],
-  "dificuldade": 3.0,
-  "sempre": true,
-  "ambigua": true,
-  "dicionario": "mundus, mundi, m.",
-  "distratoresDicionario": [
-   "mundum, mundi, n.",
-   "munda, mundae, f.",
-   "mundis, mundis, m.",
-   "mundus, mundus, m."
-  ]
- },
- {
-  "id": "la-xt080-0",
+  "id": "la-xt119-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "casta",
-  "frase": "casta fave Lucina: tuus iam regnat Apollo.",
+  "frase": "Tu modo nascenti puero … casta fave Lucina:",
   "ocorrencia": 1,
-  "de": "la-t080",
-  "fonte": "Vergílio, Bucólicas IV,10",
+  "de": "la-t119",
+  "fonte": "Vergílio, Bucólicas IV,8–10",
   "lema": "la-p348",
   "pt": "vocativo",
   "aceitas": [
@@ -18566,14 +17848,14 @@
   ]
  },
  {
-  "id": "la-xt080-1",
+  "id": "la-xt119-5",
   "tipo": "forma",
   "familia": "verbo",
   "la": "fave",
-  "frase": "casta fave Lucina: tuus iam regnat Apollo.",
+  "frase": "Tu modo nascenti puero … casta fave Lucina:",
   "ocorrencia": 1,
-  "de": "la-t080",
-  "fonte": "Vergílio, Bucólicas IV,10",
+  "de": "la-t119",
+  "fonte": "Vergílio, Bucólicas IV,8–10",
   "lema": "la-p349",
   "pt": "imperativo",
   "aceitas": [
@@ -18613,13 +17895,346 @@
   ]
  },
  {
-  "id": "la-xt080-3",
+  "id": "la-xt120-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "quo",
+  "frase": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "ocorrencia": 1,
+  "de": "la-t120",
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "lema": "la-p064",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "quo: ablativo masculino singular, relativo, retoma puero (verso 8): com quem, sob quem.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "qui, quae, quod",
+  "distratoresDicionario": [
+   "hic, haec, hoc",
+   "idem, eadem, idem",
+   "ille, illa, illud",
+   "is, ea, id"
+  ]
+ },
+ {
+  "id": "la-xt120-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "ferrea",
+  "frase": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "ocorrencia": 1,
+  "de": "la-t120",
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "lema": "la-p342",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "ferrea: nominativo feminino singular, subentende-se gens: a (raça) de ferro.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "ferreus, ferrea, ferreum",
+  "distratoresDicionario": [
+   "ferreis, ferree",
+   "ferreus, ferreis",
+   "humanus, humana, humanum",
+   "integer, integra, integrum"
+  ]
+ },
+ {
+  "id": "la-xt120-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "desinet",
+  "frase": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "ocorrencia": 1,
+  "de": "la-t120",
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "lema": "la-p344",
+  "pt": "futuro do indicativo",
+  "aceitas": [
+   "indicativo futuro"
+  ],
+  "distratores": [
+   "presente do subjuntivo",
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "perfeito do indicativo"
+  ],
+  "nota": "desinet: futuro do indicativo, 3ª pessoa do singular, sujeito: ferrea (gens): cessará.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g010"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "desino, desinere, desii, desitum",
+  "distratoresDicionario": [
+   "desineo, desinere, desinui, desinitum",
+   "desinio, desinere, desii, desitum",
+   "desino, desinare, desinavi, desinatum",
+   "desinio, desinire, desinivi, desinitum"
+  ]
+ },
+ {
+  "id": "la-xt120-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "toto",
+  "frase": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "ocorrencia": 1,
+  "de": "la-t120",
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "lema": "la-p345",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "toto: ablativo masculino singular, concorda com mundo: inteiro.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "totus, tota, totum",
+  "distratoresDicionario": [
+   "totis, tote",
+   "totus, totis",
+   "toter, totera, toterum",
+   "toter, toteris, totere"
+  ]
+ },
+ {
+  "id": "la-xt120-6",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "surget",
+  "frase": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "ocorrencia": 1,
+  "de": "la-t120",
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "lema": "la-p346",
+  "pt": "futuro do indicativo",
+  "aceitas": [
+   "indicativo futuro"
+  ],
+  "distratores": [
+   "presente do subjuntivo",
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "perfeito do indicativo"
+  ],
+  "nota": "surget: futuro do indicativo, 3ª pessoa do singular, surgirá.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g010"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "surgo, surgere, surrexi, surrectum",
+  "distratoresDicionario": [
+   "surgeo, surgere, surgui, surgitum",
+   "surgio, surgere, surrexi, surrectum",
+   "surgo, surgare, surgavi, surgatum",
+   "surgio, surgire, surgivi, surgitum"
+  ]
+ },
+ {
+  "id": "la-xt120-7",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "gens",
+  "frase": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "ocorrencia": 1,
+  "de": "la-t120",
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "lema": "la-p020",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "gens: nominativo singular, sujeito de surget.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false
+ },
+ {
+  "id": "la-xt120-8",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "aurea",
+  "frase": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "ocorrencia": 1,
+  "de": "la-t120",
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "lema": "la-p347",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "aurea: nominativo feminino singular, concorda com gens: de ouro.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "aureus, aurea, aureum",
+  "distratoresDicionario": [
+   "aureis, auree",
+   "aureus, aureis",
+   "altus, alta, altum",
+   "castus, casta, castum"
+  ]
+ },
+ {
+  "id": "la-xt120-9",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "mundo",
+  "frase": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "ocorrencia": 1,
+  "de": "la-t120",
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "lema": "la-p042",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "mundo: ablativo singular, onde: no mundo.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "mundus, mundi, m.",
+  "distratoresDicionario": [
+   "mundum, mundi, n.",
+   "munda, mundae, f.",
+   "mundis, mundis, m.",
+   "mundus, mundus, m."
+  ]
+ },
+ {
+  "id": "la-xt121-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "tuus",
-  "frase": "casta fave Lucina: tuus iam regnat Apollo.",
+  "frase": "tuus iam regnat Apollo.",
   "ocorrencia": 1,
-  "de": "la-t080",
+  "de": "la-t121",
   "fonte": "Vergílio, Bucólicas IV,10",
   "lema": "la-p055",
   "pt": "nominativo",
@@ -18647,13 +18262,13 @@
   "ambigua": false
  },
  {
-  "id": "la-xt080-5",
+  "id": "la-xt121-2",
   "tipo": "forma",
   "familia": "verbo",
   "la": "regnat",
-  "frase": "casta fave Lucina: tuus iam regnat Apollo.",
+  "frase": "tuus iam regnat Apollo.",
   "ocorrencia": 1,
-  "de": "la-t080",
+  "de": "la-t121",
   "fonte": "Vergílio, Bucólicas IV,10",
   "lema": "la-p311",
   "pt": "presente do indicativo",
@@ -18694,14 +18309,14 @@
   ]
  },
  {
-  "id": "la-xt081-0",
+  "id": "la-xt122-0",
   "tipo": "forma",
   "familia": "caso",
   "la": "Te",
-  "frase": "Teque adeo decus hoc aevi te consule inibit,",
+  "frase": "Teque adeo decus hoc aevi te consule inibit, Pollio",
   "ocorrencia": 1,
-  "de": "la-t081",
-  "fonte": "Vergílio, Bucólicas IV,11",
+  "de": "la-t122",
+  "fonte": "Vergílio, Bucólicas IV,11–12",
   "lema": "la-p007",
   "pt": "ablativo",
   "aceitas": [
@@ -18735,14 +18350,14 @@
   ]
  },
  {
-  "id": "la-xt081-3",
+  "id": "la-xt122-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "decus",
-  "frase": "Teque adeo decus hoc aevi te consule inibit,",
+  "frase": "Teque adeo decus hoc aevi te consule inibit, Pollio",
   "ocorrencia": 1,
-  "de": "la-t081",
-  "fonte": "Vergílio, Bucólicas IV,11",
+  "de": "la-t122",
+  "fonte": "Vergílio, Bucólicas IV,11–12",
   "lema": "la-p350",
   "pt": "nominativo",
   "aceitas": [
@@ -18769,14 +18384,14 @@
   "ambigua": true
  },
  {
-  "id": "la-xt081-4",
+  "id": "la-xt122-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "hoc",
-  "frase": "Teque adeo decus hoc aevi te consule inibit,",
+  "frase": "Teque adeo decus hoc aevi te consule inibit, Pollio",
   "ocorrencia": 1,
-  "de": "la-t081",
-  "fonte": "Vergílio, Bucólicas IV,11",
+  "de": "la-t122",
+  "fonte": "Vergílio, Bucólicas IV,11–12",
   "lema": "la-p124",
   "pt": "nominativo",
   "aceitas": [
@@ -18810,14 +18425,14 @@
   ]
  },
  {
-  "id": "la-xt081-5",
+  "id": "la-xt122-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "aevi",
-  "frase": "Teque adeo decus hoc aevi te consule inibit,",
+  "frase": "Teque adeo decus hoc aevi te consule inibit, Pollio",
   "ocorrencia": 1,
-  "de": "la-t081",
-  "fonte": "Vergílio, Bucólicas IV,11",
+  "de": "la-t122",
+  "fonte": "Vergílio, Bucólicas IV,11–12",
   "lema": "la-p351",
   "pt": "genitivo",
   "aceitas": [
@@ -18851,14 +18466,14 @@
   ]
  },
  {
-  "id": "la-xt081-7",
+  "id": "la-xt122-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "consule",
-  "frase": "Teque adeo decus hoc aevi te consule inibit,",
+  "frase": "Teque adeo decus hoc aevi te consule inibit, Pollio",
   "ocorrencia": 1,
-  "de": "la-t081",
-  "fonte": "Vergílio, Bucólicas IV,11",
+  "de": "la-t122",
+  "fonte": "Vergílio, Bucólicas IV,11–12",
   "lema": "la-p330",
   "pt": "ablativo",
   "aceitas": [
@@ -18892,14 +18507,14 @@
   ]
  },
  {
-  "id": "la-xt081-8",
+  "id": "la-xt122-8",
   "tipo": "forma",
   "familia": "verbo",
   "la": "inibit",
-  "frase": "Teque adeo decus hoc aevi te consule inibit,",
+  "frase": "Teque adeo decus hoc aevi te consule inibit, Pollio",
   "ocorrencia": 1,
-  "de": "la-t081",
-  "fonte": "Vergílio, Bucólicas IV,11",
+  "de": "la-t122",
+  "fonte": "Vergílio, Bucólicas IV,11–12",
   "lema": "la-p352",
   "pt": "futuro do indicativo",
   "aceitas": [
@@ -18939,13 +18554,13 @@
   ]
  },
  {
-  "id": "la-xt082-2",
+  "id": "la-xt123-1",
   "tipo": "forma",
   "familia": "verbo",
   "la": "incipient",
-  "frase": "Pollio, et incipient magni procedere menses.",
+  "frase": "et incipient magni procedere menses.",
   "ocorrencia": 1,
-  "de": "la-t082",
+  "de": "la-t123",
   "fonte": "Vergílio, Bucólicas IV,12",
   "lema": "la-p353",
   "pt": "futuro do indicativo",
@@ -18986,13 +18601,13 @@
   ]
  },
  {
-  "id": "la-xt082-3",
+  "id": "la-xt123-2",
   "tipo": "forma",
   "familia": "caso",
   "la": "magni",
-  "frase": "Pollio, et incipient magni procedere menses.",
+  "frase": "et incipient magni procedere menses.",
   "ocorrencia": 1,
-  "de": "la-t082",
+  "de": "la-t123",
   "fonte": "Vergílio, Bucólicas IV,12",
   "lema": "la-p016",
   "pt": "nominativo",
@@ -19027,13 +18642,13 @@
   ]
  },
  {
-  "id": "la-xt082-4",
+  "id": "la-xt123-3",
   "tipo": "forma",
   "familia": "verbo",
   "la": "procedere",
-  "frase": "Pollio, et incipient magni procedere menses.",
+  "frase": "et incipient magni procedere menses.",
   "ocorrencia": 1,
-  "de": "la-t082",
+  "de": "la-t123",
   "fonte": "Vergílio, Bucólicas IV,12",
   "lema": "la-p354",
   "pt": "infinitivo",
@@ -19067,13 +18682,13 @@
   ]
  },
  {
-  "id": "la-xt082-5",
+  "id": "la-xt123-4",
   "tipo": "forma",
   "familia": "caso",
   "la": "menses",
-  "frase": "Pollio, et incipient magni procedere menses.",
+  "frase": "et incipient magni procedere menses.",
   "ocorrencia": 1,
-  "de": "la-t082",
+  "de": "la-t123",
   "fonte": "Vergílio, Bucólicas IV,12",
   "lema": "la-p355",
   "pt": "nominativo",
@@ -19108,14 +18723,14 @@
   ]
  },
  {
-  "id": "la-xt083-1",
+  "id": "la-xt124-1",
   "tipo": "forma",
   "familia": "caso",
   "la": "duce",
-  "frase": "Te duce, si qua manent sceleris vestigia nostri,",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
   "ocorrencia": 1,
-  "de": "la-t083",
-  "fonte": "Vergílio, Bucólicas IV,13",
+  "de": "la-t124",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
   "lema": "la-p356",
   "pt": "ablativo",
   "aceitas": [
@@ -19149,14 +18764,14 @@
   ]
  },
  {
-  "id": "la-xt083-3",
+  "id": "la-xt124-3",
   "tipo": "forma",
   "familia": "caso",
   "la": "qua",
-  "frase": "Te duce, si qua manent sceleris vestigia nostri,",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
   "ocorrencia": 1,
-  "de": "la-t083",
-  "fonte": "Vergílio, Bucólicas IV,13",
+  "de": "la-t124",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
   "lema": "la-p236",
   "pt": "nominativo",
   "aceitas": [
@@ -19190,14 +18805,14 @@
   ]
  },
  {
-  "id": "la-xt083-4",
+  "id": "la-xt124-4",
   "tipo": "forma",
   "familia": "verbo",
   "la": "manent",
-  "frase": "Te duce, si qua manent sceleris vestigia nostri,",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
   "ocorrencia": 1,
-  "de": "la-t083",
-  "fonte": "Vergílio, Bucólicas IV,13",
+  "de": "la-t124",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
   "lema": "la-p357",
   "pt": "presente do indicativo",
   "aceitas": [
@@ -19237,14 +18852,14 @@
   ]
  },
  {
-  "id": "la-xt083-5",
+  "id": "la-xt124-5",
   "tipo": "forma",
   "familia": "caso",
   "la": "sceleris",
-  "frase": "Te duce, si qua manent sceleris vestigia nostri,",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
   "ocorrencia": 1,
-  "de": "la-t083",
-  "fonte": "Vergílio, Bucólicas IV,13",
+  "de": "la-t124",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
   "lema": "la-p358",
   "pt": "genitivo",
   "aceitas": [
@@ -19278,14 +18893,14 @@
   ]
  },
  {
-  "id": "la-xt083-6",
+  "id": "la-xt124-6",
   "tipo": "forma",
   "familia": "caso",
   "la": "vestigia",
-  "frase": "Te duce, si qua manent sceleris vestigia nostri,",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
   "ocorrencia": 1,
-  "de": "la-t083",
-  "fonte": "Vergílio, Bucólicas IV,13",
+  "de": "la-t124",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
   "lema": "la-p359",
   "pt": "nominativo",
   "aceitas": [
@@ -19298,7 +18913,7 @@
    "genitivo",
    "ablativo"
   ],
-  "nota": "vestigia: nominativo plural, sujeito de manent.",
+  "nota": "vestigia: nominativo plural, sujeito de manent e de solvent.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -19319,14 +18934,14 @@
   ]
  },
  {
-  "id": "la-xt083-7",
+  "id": "la-xt124-7",
   "tipo": "forma",
   "familia": "caso",
   "la": "nostri",
-  "frase": "Te duce, si qua manent sceleris vestigia nostri,",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
   "ocorrencia": 1,
-  "de": "la-t083",
-  "fonte": "Vergílio, Bucólicas IV,13",
+  "de": "la-t124",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
   "lema": "la-p089",
   "pt": "genitivo",
   "aceitas": [
@@ -19360,96 +18975,14 @@
   ]
  },
  {
-  "id": "la-xt084-0",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "inrita",
-  "frase": "inrita perpetua solvent formidine terras.",
-  "ocorrencia": 1,
-  "de": "la-t084",
-  "fonte": "Vergílio, Bucólicas IV,14",
-  "lema": "la-p360",
-  "pt": "nominativo",
-  "aceitas": [
-   "caso nominativo",
-   "nom"
-  ],
-  "distratores": [
-   "vocativo",
-   "acusativo",
-   "genitivo",
-   "ablativo"
-  ],
-  "nota": "inrita: nominativo neutro plural, concorda com vestigia, no verso 13: anulados, tornados vãos.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g001"
-  ],
-  "dificuldade": 0.0,
-  "sempre": false,
-  "ambigua": false,
-  "dicionario": "irritus, irrita, irritum",
-  "distratoresDicionario": [
-   "irritis, irrite",
-   "irritus, irritis",
-   "irriter, irritera, irriterum",
-   "irriter, irriteris, irritere"
-  ]
- },
- {
-  "id": "la-xt084-1",
-  "tipo": "forma",
-  "familia": "caso",
-  "la": "perpetua",
-  "frase": "inrita perpetua solvent formidine terras.",
-  "ocorrencia": 1,
-  "de": "la-t084",
-  "fonte": "Vergílio, Bucólicas IV,14",
-  "lema": "la-p361",
-  "pt": "ablativo",
-  "aceitas": [
-   "caso ablativo",
-   "abl"
-  ],
-  "distratores": [
-   "acusativo",
-   "nominativo",
-   "vocativo",
-   "dativo"
-  ],
-  "nota": "perpetua: ablativo feminino singular, concorda com formidine.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "caso"
-  ],
-  "conceitos": [
-   "la-g006"
-  ],
-  "dificuldade": 4.5,
-  "sempre": true,
-  "ambigua": true,
-  "dicionario": "perpetuus, perpetua, perpetuum",
-  "distratoresDicionario": [
-   "perpetuis, perpetue",
-   "perpetuus, perpetuis",
-   "posterus, postera, posterum",
-   "profugus, profuga, profugum"
-  ]
- },
- {
-  "id": "la-xt084-2",
+  "id": "la-xt124-8",
   "tipo": "forma",
   "familia": "verbo",
   "la": "solvent",
-  "frase": "inrita perpetua solvent formidine terras.",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
   "ocorrencia": 1,
-  "de": "la-t084",
-  "fonte": "Vergílio, Bucólicas IV,14",
+  "de": "la-t124",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
   "lema": "la-p362",
   "pt": "futuro do indicativo",
   "aceitas": [
@@ -19489,14 +19022,14 @@
   ]
  },
  {
-  "id": "la-xt084-3",
+  "id": "la-xt124-9",
   "tipo": "forma",
   "familia": "caso",
   "la": "formidine",
-  "frase": "inrita perpetua solvent formidine terras.",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
   "ocorrencia": 1,
-  "de": "la-t084",
-  "fonte": "Vergílio, Bucólicas IV,14",
+  "de": "la-t124",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
   "lema": "la-p363",
   "pt": "ablativo",
   "aceitas": [
@@ -19530,14 +19063,14 @@
   ]
  },
  {
-  "id": "la-xt084-4",
+  "id": "la-xt124-10",
   "tipo": "forma",
   "familia": "caso",
   "la": "terras",
-  "frase": "inrita perpetua solvent formidine terras.",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
   "ocorrencia": 1,
-  "de": "la-t084",
-  "fonte": "Vergílio, Bucólicas IV,14",
+  "de": "la-t124",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
   "lema": "la-p096",
   "pt": "acusativo",
   "aceitas": [
@@ -19569,6 +19102,88 @@
    "terrum, terri, n.",
    "terris, terris, f.",
    "terrus, terrus, m."
+  ]
+ },
+ {
+  "id": "la-xt125-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "inrita",
+  "frase": "vestigia … inrita perpetua solvent formidine terras.",
+  "ocorrencia": 1,
+  "de": "la-t125",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
+  "lema": "la-p360",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "inrita: nominativo neutro plural, concorda com vestigia: anulados, tornados vãos.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "irritus, irrita, irritum",
+  "distratoresDicionario": [
+   "irritis, irrite",
+   "irritus, irritis",
+   "irriter, irritera, irriterum",
+   "irriter, irriteris, irritere"
+  ]
+ },
+ {
+  "id": "la-xt125-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "perpetua",
+  "frase": "vestigia … inrita perpetua solvent formidine terras.",
+  "ocorrencia": 1,
+  "de": "la-t125",
+  "fonte": "Vergílio, Bucólicas IV,13–14",
+  "lema": "la-p361",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "acusativo",
+   "nominativo",
+   "vocativo",
+   "dativo"
+  ],
+  "nota": "perpetua: ablativo feminino singular, concorda com formidine.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 4.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "perpetuus, perpetua, perpetuum",
+  "distratoresDicionario": [
+   "perpetuis, perpetue",
+   "perpetuus, perpetuis",
+   "posterus, postera, posterum",
+   "profugus, profuga, profugum"
   ]
  },
  {
@@ -19646,7 +19261,7 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "segundo": "la-xt083-7",
+  "segundo": "la-xt124-7",
   "dicionario": "noster, nostra, nostrum",
   "distratoresDicionario": [
    "nostris, nostre",
@@ -20053,7 +19668,7 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "segundo": "la-xt034-4",
+  "segundo": "la-xt118-7",
   "funcao": "sujeito",
   "distratoresFuncao": [
    "predicativo do sujeito",
@@ -20651,7 +20266,7 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "segundo": "la-xt051-0",
+  "segundo": "la-xt100-1",
   "dicionario": "qui, quae, quod",
   "distratoresDicionario": [
    "hic, haec, hoc",
@@ -20693,7 +20308,7 @@
   "dificuldade": 3.0,
   "sempre": true,
   "ambigua": true,
-  "segundo": "la-xt065-3",
+  "segundo": "la-xt110-3",
   "dicionario": "aqua, aquae, f.",
   "distratoresDicionario": [
    "aquus, aqui, m.",
@@ -20786,7 +20401,7 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "segundo": "la-xt042-5",
+  "segundo": "la-xt091-8",
   "funcao": "objeto direto",
   "distratoresFuncao": [
    "sujeito",
@@ -20828,7 +20443,7 @@
   "dificuldade": 2.5,
   "sempre": true,
   "ambigua": true,
-  "segundo": "la-xt044-0",
+  "segundo": "la-xt093-3",
   "funcao": "predicativo do sujeito",
   "distratoresFuncao": [
    "objeto direto",
@@ -20877,7 +20492,7 @@
   "dificuldade": 4.0,
   "sempre": true,
   "ambigua": true,
-  "segundo": "la-xt046-1",
+  "segundo": "la-xt096-0",
   "funcao": "adjunto adnominal",
   "distratoresFuncao": [
    "complemento nominal",

@@ -46,8 +46,10 @@ cards = {}
 for arq in sorted(CARDS.glob('*.json')):
     for c in json.loads(arq.read_text(encoding='utf-8')):
         cards[c['id']] = c
-trechos = sorted([c for c in cards.values() if str(c.get('texto', '')).startswith('vergilio/eneida')],
-                 key=lambda c: (c['texto'], c['linha']))
+# os versos anotados (fonte/latim/versos.json), e não os trechos: desde 04/11/2026 o trecho é a frase,
+# que atravessa o verso (cortes.py)
+_versos = json.loads((CARDS.parent.parent / 'latim' / 'versos.json').read_text(encoding='utf-8'))
+trechos = [v for tid in sorted(_versos) if tid.startswith('vergilio/eneida') for v in _versos[tid]]
 
 def frase(fn):
     fn = fn.strip()
@@ -107,7 +109,7 @@ for n, tr in enumerate(trechos, start=1):
         verbetes[k] = d
         if k != base:
             ocorrencias[f'{n}.{pos}'] = k
-    assert not fila, tr['id']
+    assert not fila, tr['la']
 SAIDA.write_text(json.dumps({'verbetes': verbetes, 'ocorrencias': ocorrencias}, ensure_ascii=False, indent=2) + '\n',
                  encoding='utf-8', newline='\n')
 print(len(verbetes), 'verbetes;', len(ocorrencias), 'ocorrências especiais')

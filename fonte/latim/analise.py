@@ -104,6 +104,8 @@ def main():
     leituras = erradas = 0
     for leva in sorted(LEVAS.glob('analise-frases-*.json')):
         for ent in json.loads(leva.read_text(encoding='utf-8')):
+            if ent['id'] not in porid:   # o trecho que o corte novo tirou (cortes.py, 04/11/2026)
+                continue
             arq, fr = porid[ent['id']]
             pal = fr['palavras']
             c = card_da_frase(fr, ent, pal)

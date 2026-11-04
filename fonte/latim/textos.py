@@ -1,12 +1,13 @@
-"""Monta os textos latinos do app (fonte/textos/la/<autor>--<pasta>.json) a partir dos trechos.
+"""Monta os textos latinos do app (fonte/textos/la/<autor>--<pasta>.json) a partir dos versos anotados.
 
     python -I fonte/latim/textos.py
 
-No latim, cada linha do texto é um card de frase (o trecho, fonte/cards/la/04-trechos.json, com
-«texto» e «linha»), e a anotação palavra por palavra já está nele («palavras»: forma no texto,
-card do lema, rótulo da forma e função). Daqui sai o texto no formato que o build e o app leem
-(PLANO.md, 9.1): os versos em «blocos», cada um com as palavras em «p» e o card do trecho em
-«card», e, em «destinos», o que cada chave é (o card do lema, ou «nome» e «gramatical» para o
+No latim, o texto são os versos anotados (fonte/latim/versos.json: o verso e, palavra por palavra,
+a forma no texto, o card do lema, o rótulo da forma e a função), e os cards são os trechos (as
+frases, que podem atravessar o verso: cortes.py, desde 04/11/2026), com «texto», «linha» (a ordem)
+e «versos» (o primeiro e o último que tocam). Daqui sai o texto no formato que o build e o app leem
+(PLANO.md, 9.1): os versos em «blocos», cada um com as palavras em «p» e as flexões das formas dele
+em «flexoes», e, em «destinos», o que cada chave é (o card do lema, ou «nome» e «gramatical» para o
 que não tem card). A Biblioteca tem o mesmo texto com o glossário dela; o endereço vai em
 «biblioteca». Os dados de cada texto (título, autor, endereço) ficam em TEXTOS, abaixo.
 """
@@ -14,11 +15,13 @@ que não tem card). A Biblioteca tem o mesmo texto com o glossário dela; o ende
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
 BARALHO = AQUI.parent / 'cards' / 'la'
 DESTINO = AQUI.parent / 'textos' / 'la'
+VERSOS = AQUI / 'versos.json'
 
 # «ordem» é a da tela Textos: as orações e os clássicos intercalados (pedido de 22/10: menos
 # religioso), do mais curto ao mais difícil
@@ -230,25 +233,63 @@ def chave_para(base, d, destinos):
     return k
 
 
+def chave_latina(w):
+    """A mesma chave do build (chaveLatina): minúscula, sem acento, sem o hífen da enclítica, j→i, v→u."""
+    s = unicodedata.normalize('NFD', str(w).lower())
+    s = ''.join(ch for ch in s if not unicodedata.combining(ch)).lstrip('-')
+    return s.replace('j', 'i').replace('v', 'u')
+
+
+def flexoes_do_verso(verso, flexao):
+    """As flexões das formas do verso (LATIM.md §3.8), na ordem da leitura: o verso espera também
+    elas, e não só os lemas (o build as põe logo depois do lema de cada uma)."""
+    saida = []
+    for p in verso['palavras']:
+        if p.get('c') and not p['w'].startswith('-'):
+            f = flexao.get(chave_latina(p['w']) + '|' + p['c'])
+            if f and f not in saida:
+                saida.append(f)
+    return saida
+
+
 def montar():
     cards = {}
     for f in sorted(BARALHO.glob('*.json')):
         for c in json.loads(f.read_text(encoding='utf-8')):
             cards[c['id']] = c
-    por_texto = {}
+    flexao = {chave_latina(c['la']) + '|' + c['lema']: c['id'] for c in cards.values() if c.get('tipo') == 'flexao'}
+    # o texto vem dos versos anotados; o card é o trecho (a frase), que pode atravessar o verso
+    # (cortes.py, desde 04/11/2026)
+    versos = json.loads(VERSOS.read_text(encoding='utf-8'))
+    trechos = {}
     for c in cards.values():
-        if c.get('texto'):
-            por_texto.setdefault(c['texto'], []).append(c)
+        if c.get('tipo') == 'frase' and c.get('texto'):
+            trechos.setdefault(c['texto'], []).append(c)
     DESTINO.mkdir(parents=True, exist_ok=True)
-    for tid, trechos in sorted(por_texto.items()):
+    for tid, vs in sorted(versos.items()):
         if tid not in TEXTOS:
             raise SystemExit(f'o texto {tid} não está em TEXTOS')
         meta = TEXTOS[tid]
-        trechos.sort(key=lambda c: c['linha'])
-        if [c['linha'] for c in trechos] != list(range(1, len(trechos) + 1)):
-            raise SystemExit(f'{tid}: as linhas não vão de 1 a {len(trechos)}')
+        ts = sorted(trechos.get(tid, []), key=lambda c: c['linha'])
+        if [c['linha'] for c in ts] != list(range(1, len(ts) + 1)):
+            raise SystemExit(f'{tid}: os trechos não vão de 1 a {len(ts)} («linha» é a ordem deles)')
+        cobertos = set()
+        for c in ts:
+            a, b = c.get('versos') or (0, 0)
+            if not 1 <= a <= b <= len(vs):
+                raise SystemExit(f"{c['id']}: «versos» fora do texto")
+            cobertos.update(range(a, b + 1))
+        if cobertos != set(range(1, len(vs) + 1)):
+            raise SystemExit(f'{tid}: versos sem trecho: {sorted(set(range(1, len(vs) + 1)) - cobertos)}')
         destinos = {}
-        linhas = [linha_de(c, cards, destinos) for c in trechos]
+        linhas = []
+        for n, v in enumerate(vs, 1):
+            linha = linha_de(dict(v, id=f'{tid}#{n}'), cards, destinos)
+            del linha['card']
+            fl = flexoes_do_verso(v, flexao)
+            if fl:
+                linha['flexoes'] = fl
+            linhas.append(linha)
         autor, pasta = tid.split('/')
         texto = {'id': tid, 'idioma': 'la', 'tipo': meta['tipo'], 'titulo': meta['titulo'], 'autor': meta['autor'],
                  'ano': None, 'biblioteca': meta.get('biblioteca', f'/biblioteca/{autor}/{pasta}/'), 'ordem': meta['ordem']}
@@ -259,7 +300,7 @@ def montar():
         texto['destinos'] = destinos
         arq = DESTINO / f'{autor}--{pasta}.json'
         arq.write_text(json.dumps(texto, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
-        print(f'{arq.name}: {len(linhas)} linhas, {len(destinos)} chaves')
+        print(f'{arq.name}: {len(linhas)} versos, {len(ts)} trechos, {len(destinos)} chaves')
 
 
 if __name__ == '__main__':

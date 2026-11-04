@@ -80,7 +80,11 @@
    "la-g032"
   ],
   "texto": "catulo/odi-et-amo",
-  "linha": 1
+  "linha": 1,
+  "versos": [
+   1,
+   1
+  ]
  },
  {
   "id": "la-t023",
@@ -149,7 +153,11 @@
    "la-g015"
   ],
   "texto": "catulo/odi-et-amo",
-  "linha": 2
+  "linha": 2,
+  "versos": [
+   2,
+   2
+  ]
  },
  {
   "id": "la-t024",
@@ -207,22 +215,26 @@
    "la-g016"
   ],
   "texto": "oracoes/regina-caeli",
-  "linha": 1
+  "linha": 1,
+  "versos": [
+   1,
+   1
+  ]
  },
  {
-  "id": "la-t025",
+  "id": "la-t126",
   "tipo": "frase",
-  "la": "Quia quem meruisti portare, alleluia.",
-  "pt": "Porque aquele que mereceste trazer, aleluia.",
-  "gabarito": "[[Porque ~ Pois] [aquele que ~ o que ~ quem] [tu ~ você ~] [mereceste ~ mereceu] [trazer ~ carregar ~ levar ~ trazer no ventre ~ gerar] [aleluia ~] ~ Porque quem mereceste carregar em teu seio aleluia ~ Pois aquele que trazer mereceste aleluia ~ Visto que aquele que foste digna de levar aleluia]",
+  "la": "Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.",
+  "pt": "Porque aquele que mereceste trazer ressuscitou, como disse, aleluia.",
+  "gabarito": "[[Porque ~ Pois] [aquele que ~ quem] [mereceste ~ você mereceu] [trazer ~ carregar ~ trazer no ventre ~ gerar] [ressuscitou ~ ressurgiu] [como ~ conforme] [ele ~] [disse ~ tinha dito] [aleluia ~] ~ Porque ressuscitou, como disse, aquele que mereceste trazer, aleluia]",
   "aceitas": [],
   "distratores": [
-   "Porque aquele que mereces trazer, aleluia.",
-   "Porque mereceu trazer aquele, aleluia.",
-   "Porque aquele que merecerás trazer, aleluia.",
-   "Porque aquele que te mereceu trazer, aleluia."
+   "Porque aquele que mereceste trazer ressuscitará, como disse, aleluia.",
+   "Porque aquele que te mereceu trazer ressuscitou, como disse, aleluia.",
+   "Porque mereceste trazer aquele que ressuscitou, como disse, aleluia.",
+   "Porque aqueles que mereceste trazer ressuscitaram, como disseram, aleluia."
   ],
-  "nota": "meruisti (merecer): quem mereceu? tu (na terminação). Mereceu o quê? portare quem, trazer aquele que. O verbo principal, resurrexit, está no verso 3.\nquem: acusativo masculino singular, aquele que: o objeto de portare.\nmeruisti: perfeito do indicativo, 2ª pessoa do singular.\nportare: infinitivo presente, completa meruisti.\nQuem é o relativo no acusativo, objeto de portare: «aquele que mereceste trazer». A frase só se completa na linha seguinte: resurrexit.",
+  "nota": "resurrexit (ressuscitar): quem ressuscitou? quem, aquele que. · meruisti (merecer): quem? tu (na terminação). O quê? portare quem, trazer aquele. Como ressuscitou? sicut dixit, como disse.\nquem: acusativo masculino singular, aquele que: o objeto de portare.\nmeruisti: perfeito do indicativo, 2ª pessoa do singular.\nportare: infinitivo presente, completa meruisti.\nresurrexit: perfeito do indicativo, 3ª pessoa do singular, sujeito: aquele que (o antecedente de quem).\ndixit: perfeito do indicativo, 3ª pessoa do singular.\nQuem, acusativo, é objeto de portare; o seu antecedente, subentendido («aquele»), é o sujeito de resurrexit.",
   "nivel": "A1",
   "tags": [
    "trecho"
@@ -233,9 +245,14 @@
    "la-p064",
    "la-p175",
    "la-p176",
+   "la-p177",
+   "la-p085",
+   "la-p122",
    "la-v176",
    "la-v397",
-   "la-v399"
+   "la-v399",
+   "la-v402",
+   "la-v300"
   ],
   "palavras": [
    {
@@ -260,49 +277,10 @@
     "fn": "completa meruisti"
    },
    {
-    "w": "alleluia"
-   }
-  ],
-  "conceitos": [
-   "la-g009",
-   "la-g013",
-   "la-g003"
-  ],
-  "texto": "oracoes/regina-caeli",
-  "linha": 2
- },
- {
-  "id": "la-t026",
-  "tipo": "frase",
-  "la": "Resurrexit, sicut dixit, alleluia.",
-  "pt": "Ressuscitou, como disse, aleluia.",
-  "gabarito": "[[Ele ~] [ressuscitou ~ ressurgiu] [como ~ conforme ~ assim como] [ele ~] [disse ~ tinha dito ~ havia dito] [aleluia ~] ~ Como disse ressuscitou aleluia ~ Ressurgiu conforme falou aleluia]",
-  "aceitas": [],
-  "distratores": [
-   "Ressuscita, como diz, aleluia.",
-   "Ressuscitará, como disse, aleluia.",
-   "Ressuscitei, como disse, aleluia.",
-   "Ressuscitaram, como disseram, aleluia."
-  ],
-  "nota": "Resurrexit (ressuscitar): quem ressuscitou? quem, aquele que trouxeste (verso 2). Como? sicut dixit, como disse.\nResurrexit: perfeito do indicativo, 3ª pessoa do singular, o sujeito é quem, da linha anterior.\ndixit: perfeito do indicativo, 3ª pessoa do singular.\nDois perfeitos com o -x- de muitos verbos da 3ª conjugação: resurrexit (de resurgo), dixit (de dico).",
-  "nivel": "A1",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Regina caeli",
-  "requerTodas": [
-   "la-p177",
-   "la-p085",
-   "la-p122",
-   "la-v402",
-   "la-v300"
-  ],
-  "palavras": [
-   {
-    "w": "Resurrexit",
+    "w": "resurrexit",
     "c": "la-p177",
     "f": "perfeito do indicativo, 3ª pessoa do singular",
-    "fn": "o sujeito é quem, da linha anterior"
+    "fn": "sujeito: aquele que (o antecedente de quem)"
    },
    {
     "w": "sicut",
@@ -318,10 +296,16 @@
    }
   ],
   "conceitos": [
-   "la-g009"
+   "la-g009",
+   "la-g013",
+   "la-g003"
   ],
   "texto": "oracoes/regina-caeli",
-  "linha": 3
+  "linha": 2,
+  "versos": [
+   2,
+   3
+  ]
  },
  {
   "id": "la-t027",
@@ -384,27 +368,31 @@
    "la-g003"
   ],
   "texto": "oracoes/regina-caeli",
-  "linha": 4
+  "linha": 3,
+  "versos": [
+   4,
+   4
+  ]
  },
  {
-  "id": "la-t028",
+  "id": "la-t114",
   "tipo": "frase",
-  "la": "Ad rivum eundem lupus et agnus venerant",
-  "pt": "Ao mesmo riacho o lobo e o cordeiro tinham vindo,",
-  "gabarito": "[[[Ao mesmo [riacho ~ rio ~ regato ~ córrego] [o lobo e o cordeiro ~ um lobo e um cordeiro] [tinham ~ haviam] [vindo ~ chegado] ~ [O lobo e o cordeiro ~ Um lobo e um cordeiro] [tinham ~ haviam] [vindo ~ chegado] ao mesmo [riacho ~ rio ~ regato ~ córrego]] ~ O lobo e o cordeiro ao mesmo riacho tinham vindo ~ Ao mesmo regato haviam chegado o lobo e o cordeiro] ~ Ao mesmo riacho tinham vindo um lobo e um cordeiro]",
+  "la": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
+  "pt": "Ao mesmo riacho o lobo e o cordeiro tinham vindo, impelidos pela sede;",
+  "gabarito": "[Ao mesmo [riacho ~ rio ~ regato ~ córrego] [o lobo e o cordeiro ~ um lobo e um cordeiro] [tinham ~ haviam] [vindo ~ chegado] ~ [o lobo e o cordeiro ~ um lobo e um cordeiro] [tinham ~ haviam] [vindo ~ chegado] ao mesmo [riacho ~ rio ~ regato ~ córrego] ~ o lobo e o cordeiro ao mesmo riacho tinham vindo ~ ao mesmo riacho tinham vindo [o lobo e o cordeiro ~ um lobo e um cordeiro]] [[impelidos ~ levados ~ movidos ~ forçados ~ obrigados] pela sede ~ pela sede [impelidos ~ forçados]]",
   "aceitas": [],
   "distratores": [
-   "Ao mesmo riacho o lobo e o cordeiro vêm,",
-   "O lobo e o cordeiro do mesmo riacho tinham vindo,",
-   "Ao mesmo riacho o lobo tinha levado o cordeiro,",
-   "Ao mesmo riacho os lobos e os cordeiros tinham vindo,"
+   "Ao mesmo riacho o lobo e o cordeiro vêm, impelidos pela sede;",
+   "Do mesmo riacho o lobo e o cordeiro tinham vindo, impelidos pela sede;",
+   "Ao mesmo riacho o lobo tinha levado o cordeiro, impelido pela sede;",
+   "Ao mesmo riacho, impelido pela sede, o lobo e o cordeiro tinham vindo;"
   ],
-  "nota": "venerant (vir): quem tinha vindo? lupus et agnus, o lobo e o cordeiro. Para onde? Ad rivum eundem, ao mesmo riacho.\nAd: preposição com acusativo.\nrivum: acusativo singular, para onde.\neundem: acusativo masculino singular, concorda com rivum: o mesmo.\nlupus: nominativo singular, o sujeito.\nagnus: nominativo singular, o sujeito.\nvenerant: mais-que-perfeito do indicativo, 3ª pessoa do plural.\nVenerant é o mais-que-perfeito de venio: «tinham vindo». Ad com acusativo é o lugar para onde: ad rivum, ao riacho.",
+  "nota": "venerant (vir): quem tinha vindo? lupus et agnus, o lobo e o cordeiro. Para onde? ad rivum eundem, ao mesmo riacho. Por quê? siti, pela sede, compulsi, impelidos.\nAd: preposição com acusativo.\nrivum: acusativo singular, para onde.\neundem: acusativo masculino singular, concorda com rivum: o mesmo.\nlupus: nominativo singular, o sujeito.\nagnus: nominativo singular, o sujeito.\nvenerant: mais-que-perfeito do indicativo, 3ª pessoa do plural.\nsiti: ablativo singular, a causa: pela sede.\ncompulsi: particípio perfeito, nominativo masculino plural, os dois, impelidos.\nCompulsi, nominativo plural, vale pelos dois sujeitos, lupus et agnus, mesmo longe deles; siti, ablativo, diz a causa.",
   "nivel": "A2",
   "tags": [
    "trecho"
   ],
-  "fonte": "Fedro, Fábulas I,1,1",
+  "fonte": "Fedro, Fábulas I,1,1–2",
   "requerTodas": [
    "la-p178",
    "la-p179",
@@ -413,9 +401,13 @@
    "la-p009",
    "la-p181",
    "la-p038",
+   "la-p182",
+   "la-p183",
    "la-v403",
    "la-v408",
-   "la-v116"
+   "la-v116",
+   "la-v420",
+   "la-v421"
   ],
   "palavras": [
    {
@@ -455,47 +447,9 @@
     "w": "venerant",
     "c": "la-p038",
     "f": "mais-que-perfeito do indicativo, 3ª pessoa do plural"
-   }
-  ],
-  "conceitos": [
-   "la-g003",
-   "la-g001"
-  ],
-  "texto": "fedro/lupus-et-agnus",
-  "linha": 1
- },
- {
-  "id": "la-t029",
-  "tipo": "frase",
-  "la": "Siti compulsi; superior stabat lupus",
-  "pt": "impelidos pela sede; mais acima estava o lobo,",
-  "gabarito": "[[[impelidos ~ levados ~ movidos ~ empurrados ~ obrigados ~ forçados] pela sede [[mais acima ~ acima ~ mais alto ~ no alto ~ rio acima] [estava ~ ficava] o lobo ~ o lobo [estava ~ ficava] [mais acima ~ acima ~ mais alto ~ no alto ~ rio acima]] ~ pela sede impelidos mais acima estava o lobo ~ impelidos pela sede estava o lobo mais acima ~ forçados pela sede mais no alto ficava o lobo ~ movidos pela sede o lobo estava na parte de cima] ~ impelidos pela sede mais no alto ficava o lobo ~ forçados pela sede o lobo estava na parte de cima]",
-  "aceitas": [],
-  "distratores": [
-   "impelidos por uma sede maior; ali estava o lobo,",
-   "impelidos pela sede; mais acima está o lobo,",
-   "impelido pela sede, o lobo estava acima,",
-   "impelindo a sede; mais acima estava o lobo,"
-  ],
-  "nota": "stabat (estar): quem estava? lupus, o lobo. Onde? superior, mais acima. (compulsi, impelidos, vai com lupus et agnus, do verso 1.)\nSiti: ablativo singular, a causa: pela sede.\ncompulsi: particípio perfeito, nominativo masculino plural, os dois, impelidos.\nsuperior: nominativo masculino singular, predicativo: mais acima.\nstabat: imperfeito do indicativo, 3ª pessoa do singular.\nlupus: nominativo singular, o sujeito.\nSiti, ablativo de sitis, diz a causa: «pela sede». Compulsi, particípio no plural, vale pelos dois. Stabat, imperfeito de sto: «estava».",
-  "nivel": "A2",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Fedro, Fábulas I,1,2",
-  "requerTodas": [
-   "la-p182",
-   "la-p183",
-   "la-p184",
-   "la-p185",
-   "la-p153",
-   "la-v420",
-   "la-v421",
-   "la-v422"
-  ],
-  "palavras": [
+   },
    {
-    "w": "Siti",
+    "w": "siti",
     "c": "la-p182",
     "f": "ablativo singular",
     "fn": "a causa: pela sede"
@@ -505,7 +459,52 @@
     "c": "la-p183",
     "f": "particípio perfeito, nominativo masculino plural",
     "fn": "os dois, impelidos"
-   },
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g001",
+   "la-g006",
+   "la-g014",
+   "la-g008"
+  ],
+  "texto": "fedro/lupus-et-agnus",
+  "linha": 1,
+  "versos": [
+   1,
+   2
+  ]
+ },
+ {
+  "id": "la-t115",
+  "tipo": "frase",
+  "la": "superior stabat lupus longeque inferior agnus.",
+  "pt": "mais acima estava o lobo, e muito mais abaixo o cordeiro.",
+  "gabarito": "[[mais acima ~ acima ~ mais alto ~ rio acima] [estava ~ ficava] o lobo ~ o lobo [estava ~ ficava] [mais acima ~ acima ~ mais alto ~ rio acima]] e [[muito mais ~ bem mais] [abaixo ~ embaixo] [estava ~ ficava ~] o cordeiro ~ o cordeiro [estava ~ ficava ~] [muito mais ~ bem mais] [abaixo ~ embaixo] ~ bem mais para baixo o cordeiro]",
+  "aceitas": [],
+  "distratores": [
+   "mais acima está o lobo, e muito mais abaixo o cordeiro.",
+   "mais acima estava o cordeiro, e muito mais abaixo o lobo.",
+   "mais acima estavam os lobos, e muito mais abaixo os cordeiros.",
+   "mais acima estava o lobo, e muito mais abaixo estará o cordeiro."
+  ],
+  "nota": "stabat (estar): quem estava? lupus, o lobo. Onde? superior, mais acima. E agnus, o cordeiro (stabat subentendido)? longe inferior, muito mais abaixo.\nsuperior: nominativo masculino singular, predicativo: mais acima.\nstabat: imperfeito do indicativo, 3ª pessoa do singular.\nlupus: nominativo singular, o sujeito.\nlonge: com o comparativo: muito.\ninferior: nominativo masculino singular, predicativo: mais abaixo.\nagnus: nominativo singular, o sujeito, com stabat subentendido.\nNo segundo membro o verbo fica subentendido: stabat, do primeiro. Longe com o comparativo é «muito»: longe inferior, muito mais abaixo.",
+  "nivel": "A2",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Fedro, Fábulas I,1,2–3",
+  "requerTodas": [
+   "la-p184",
+   "la-p185",
+   "la-p153",
+   "la-p186",
+   "la-p028",
+   "la-p187",
+   "la-p181",
+   "la-v422"
+  ],
+  "palavras": [
    {
     "w": "superior",
     "c": "la-p184",
@@ -522,50 +521,9 @@
     "c": "la-p153",
     "f": "nominativo singular",
     "fn": "o sujeito"
-   }
-  ],
-  "conceitos": [
-   "la-g006",
-   "la-g014",
-   "la-g008",
-   "la-g001"
-  ],
-  "texto": "fedro/lupus-et-agnus",
-  "linha": 2
- },
- {
-  "id": "la-t030",
-  "tipo": "frase",
-  "la": "Longeque inferior agnus. Tunc fauce improba",
-  "pt": "e muito mais abaixo o cordeiro. Então, com a goela insaciável,",
-  "gabarito": "[[e [muito mais ~ muito ~ bem mais] [abaixo ~ embaixo] [estava ~] o cordeiro [Então ~ Aí ~ Nisso] [com a ~ de] [goela ~ garganta ~ boca] [insaciável ~ voraz ~ perversa ~ faminta] ~ e muito mais abaixo o cordeiro Então pela goela ímproba ~ e o cordeiro bem mais abaixo Então pela goela insaciável ~ e muito mais embaixo o cordeiro Então pela fauce perversa ~ e bem mais para baixo o cordeiro Nessa hora pela garganta voraz ~ e o cordeiro estava muito mais abaixo Então pela goela gananciosa] ~ e bem mais abaixo o cordeiro Então pela goela voraz ~ e o cordeiro muito mais embaixo Então por sua garganta perversa ~ e muito mais abaixo o cordeiro Nisso pela goela insaciável]",
-  "aceitas": [],
-  "distratores": [
-   "e muito mais abaixo os cordeiros. Então, com a goela insaciável,",
-   "e o cordeiro, longe do inferior. Então, a goela insaciável",
-   "e muito mais abaixo o cordeiro. Então, da goela insaciável,",
-   "e muito mais abaixo o cordeiro. Então, com as goelas insaciáveis,"
-  ],
-  "nota": "Sem verbo: subentende-se stabat (estava), do verso 2. Quem? agnus, o cordeiro. Onde? longe inferior, muito mais abaixo. Tunc fauce improba vai com intulit (verso 4).\nLonge: com o comparativo: muito.\ninferior: nominativo masculino singular, predicativo: mais abaixo.\nagnus: nominativo singular, o sujeito, com stabat subentendido.\nfauce: ablativo singular, o meio: com a goela.\nimproba: ablativo feminino singular, concorda com fauce.\nLonge com o comparativo é «muito»: longe inferior, muito mais abaixo. Fauce improba, no ablativo, diz o meio: «com a goela insaciável», a fome do lobo.",
-  "nivel": "A2",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Fedro, Fábulas I,1,3",
-  "requerTodas": [
-   "la-p186",
-   "la-p028",
-   "la-p187",
-   "la-p181",
-   "la-p188",
-   "la-p189",
-   "la-p190",
-   "la-v424",
-   "la-v425"
-  ],
-  "palavras": [
+   },
    {
-    "w": "Longe",
+    "w": "longe",
     "c": "la-p186",
     "fn": "com o comparativo: muito"
    },
@@ -584,7 +542,57 @@
     "c": "la-p181",
     "f": "nominativo singular",
     "fn": "o sujeito, com stabat subentendido"
-   },
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g014",
+   "la-g008",
+   "la-g001"
+  ],
+  "texto": "fedro/lupus-et-agnus",
+  "linha": 2,
+  "versos": [
+   2,
+   3
+  ]
+ },
+ {
+  "id": "la-t116",
+  "tipo": "frase",
+  "la": "Tunc fauce improba latro incitatus iurgii causam intulit.",
+  "pt": "Então, com a goela insaciável, o ladrão, incitado, trouxe um motivo de briga.",
+  "gabarito": "[Então ~ Nisso] [com a [goela ~ garganta] [insaciável ~ voraz] ~ pela goela insaciável] [ladrão ~ salteador] [incitado ~ instigado] [trouxe ~ inventou ~ provocou ~ apresentou] [um motivo ~ um pretexto ~ uma causa] de [briga ~ discussão]",
+  "aceitas": [],
+  "distratores": [
+   "Então, com a goela insaciável, os ladrões, incitados, trouxeram um motivo de briga.",
+   "Então, com a goela insaciável, o ladrão incitou a causa da briga.",
+   "Então, com a goela insaciável, o ladrão, incitado, traz um motivo de briga.",
+   "Então, a goela insaciável do ladrão, incitada, trouxe um motivo de briga."
+  ],
+  "nota": "intulit (trazer): quem trouxe? latro, o ladrão, incitatus, incitado. O quê? iurgii causam, um motivo de briga. Com quê? fauce improba, com a goela insaciável.\nfauce: ablativo singular, o meio: com a goela.\nimproba: ablativo feminino singular, concorda com fauce.\nlatro: nominativo singular, o sujeito: o ladrão, isto é, o lobo.\nincitatus: particípio perfeito, nominativo masculino singular, concorda com latro.\niurgii: genitivo singular, de briga.\ncausam: acusativo singular, o objeto direto.\nintulit: perfeito do indicativo, 3ª pessoa do singular.\nLatro, «o ladrão», é o lobo. Intulit é o perfeito de infero, que muda de tema como fero (fero, tuli): trouxe.",
+  "nivel": "A2",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Fedro, Fábulas I,1,3–4",
+  "requerTodas": [
+   "la-p188",
+   "la-p189",
+   "la-p190",
+   "la-p191",
+   "la-p192",
+   "la-p193",
+   "la-p194",
+   "la-p195",
+   "la-v424",
+   "la-v425",
+   "la-v427",
+   "la-v428",
+   "la-v429",
+   "la-v430"
+  ],
+  "palavras": [
    {
     "w": "Tunc",
     "c": "la-p188"
@@ -600,48 +608,9 @@
     "c": "la-p190",
     "f": "ablativo feminino singular",
     "fn": "concorda com fauce"
-   }
-  ],
-  "conceitos": [
-   "la-g006",
-   "la-g001"
-  ],
-  "texto": "fedro/lupus-et-agnus",
-  "linha": 3
- },
- {
-  "id": "la-t031",
-  "tipo": "frase",
-  "la": "Latro incitatus iurgii causam intulit.",
-  "pt": "o ladrão, incitado, trouxe um motivo de briga.",
-  "gabarito": "[[[o ~] [ladrão ~ bandido ~ salteador] [incitado ~ instigado ~ estimulado] [trouxe ~ arranjou ~ inventou ~ provocou ~ levantou] [um motivo ~ um pretexto ~ uma causa ~ o motivo ~ o pretexto ~ a causa] de [briga ~ discussão ~ disputa] ~ o ladrão incitado um motivo de briga apresentou ~ um pretexto de briga o ladrão incitado apresentou ~ o salteador atiçado trouxe um motivo de contenda ~ o ladrão incitado inventou um motivo para a briga] ~ o salteador estimulado inventou uma causa para a briga]",
-  "aceitas": [],
-  "distratores": [
-   "os ladrões, incitados, trouxeram um motivo de briga.",
-   "o ladrão incitou a causa da briga.",
-   "o ladrão, incitado, traz um motivo de briga.",
-   "a briga do ladrão trouxe um motivo."
-  ],
-  "nota": "intulit (trazer, apresentar): quem trouxe? Latro, o ladrão (o lobo). O quê? iurgii causam, um motivo de briga. Com quê? fauce improba, verso 3.\nLatro: nominativo singular, o sujeito: o ladrão, isto é, o lobo.\nincitatus: particípio perfeito, nominativo masculino singular, concorda com latro.\niurgii: genitivo singular, de briga.\ncausam: acusativo singular, o objeto direto.\nintulit: perfeito do indicativo, 3ª pessoa do singular.\nIntulit é o perfeito de infero, que muda de tema como fero (fero, tuli): «trouxe». Iurgii, genitivo, diz de que é o motivo.",
-  "nivel": "A2",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Fedro, Fábulas I,1,4",
-  "requerTodas": [
-   "la-p191",
-   "la-p192",
-   "la-p193",
-   "la-p194",
-   "la-p195",
-   "la-v427",
-   "la-v428",
-   "la-v429",
-   "la-v430"
-  ],
-  "palavras": [
+   },
    {
-    "w": "Latro",
+    "w": "latro",
     "c": "la-p191",
     "f": "nominativo singular",
     "fn": "o sujeito: o ladrão, isto é, o lobo"
@@ -671,6 +640,7 @@
    }
   ],
   "conceitos": [
+   "la-g006",
    "la-g001",
    "la-g004",
    "la-g003",
@@ -678,37 +648,45 @@
    "la-g014"
   ],
   "texto": "fedro/lupus-et-agnus",
-  "linha": 4
+  "linha": 3,
+  "versos": [
+   3,
+   4
+  ]
  },
  {
-  "id": "la-t032",
+  "id": "la-t117",
   "tipo": "frase",
-  "la": "Cur, inquit, turbulentam fecisti mihi",
-  "pt": "«Por que», diz ele, «tornaste turva para mim",
-  "gabarito": "[[[Por que ~ Por quê] [diz ~ disse ~ ele diz ~ ele disse ~ diz o lobo ~ disse o lobo ~ pergunta ~ perguntou] [tornaste ~ deixaste ~ fizeste ~ você tornou ~ você deixou ~ você fez ~ tu tornaste ~ tu deixaste] turva [para mim ~ a mim] ~ Por que disse turva fizeste para mim ~ Por que disse ele tornaste turva para mim ~ Por que tornaste para mim disse turva ~ Por que razão falou deixaste turva para mim] ~ Por que disse ele você deixou turva para mim]",
+  "la": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
+  "pt": "«Por que», diz ele, «tornaste turva a água para mim, enquanto bebo?»",
+  "gabarito": "Por que [diz ~ disse] [ele ~ o lobo ~] [[tornaste ~ deixaste ~ você tornou ~ você deixou ~ tu tornaste] [turva a água ~ a água turva] ~ [turvaste ~ sujaste] a água] [[para mim ~ a mim] [enquanto [eu ~] bebo ~ quando [eu ~] bebo] ~ a mim que bebo ~ para mim que bebo ~ enquanto [eu ~] bebo]",
   "aceitas": [],
   "distratores": [
-   "«Por que», diz ele, «tornas turva para mim",
-   "«Por que», diz ele, «torno turva para ti",
-   "«Por que», dizem eles, «tornastes turva para mim",
-   "«Por que», diz ele, «tornaste turvo para mim"
+   "«Por que», diz ele, «tornaste turva a água para mim, enquanto bebes?»",
+   "«Por que», diz ele, «tornas turva a água para mim, enquanto bebo?»",
+   "«Por que», digo eu, «tornaste turva a água para mim, enquanto bebo?»",
+   "«Por que», dizem eles, «tornastes turva a água para mim, enquanto bebo?»"
   ],
-  "nota": "inquit (dizer): quem diz? ele, o lobo (na terminação). · fecisti (fazer, tornar): quem? tu (na terminação). O quê? Aquam (verso 6). Como? turbulentam, turva. Para quem? mihi.\ninquit: presente do indicativo, 3ª pessoa do singular, diz o lobo.\nturbulentam: acusativo feminino singular, predicativo de aquam, na linha seguinte: turva.\nfecisti: perfeito do indicativo, 2ª pessoa do singular.\nmihi: dativo, para mim.\nTurbulentam facere aquam é «tornar a água turva»: dois acusativos, o objeto e o que ele vira. Turbulentam, feminino, já anuncia aquam, que só vem na linha seguinte.",
+  "nota": "inquit (dizer): quem diz? ele, o lobo (na terminação). · fecisti (fazer, tornar): quem? tu (na terminação). O quê? aquam, a água. Como? turbulentam, turva. Para quem? mihi bibenti, a mim, que bebo.\ninquit: presente do indicativo, 3ª pessoa do singular, diz o lobo.\nturbulentam: acusativo feminino singular, predicativo de aquam: turva.\nfecisti: perfeito do indicativo, 2ª pessoa do singular.\nmihi: dativo, para mim.\naquam: acusativo singular, o objeto de fecisti.\nbibenti: particípio presente, dativo masculino singular, concorda com mihi: a mim, que bebo.\nTurbulentam facere aquam: dois acusativos, a água e o que ela vira (turva). Bibenti, dativo, concorda com mihi: a mim, que bebo.",
   "nivel": "A2",
   "tags": [
    "trecho"
   ],
-  "fonte": "Fedro, Fábulas I,1,5",
+  "fonte": "Fedro, Fábulas I,1,5–6",
   "requerTodas": [
    "la-p196",
    "la-p197",
    "la-p198",
    "la-p165",
    "la-p004",
+   "la-p199",
+   "la-p200",
    "la-v431",
    "la-v434",
    "la-v373",
-   "la-v042"
+   "la-v042",
+   "la-v436",
+   "la-v438"
   ],
   "palavras": [
    {
@@ -725,7 +703,7 @@
     "w": "turbulentam",
     "c": "la-p198",
     "f": "acusativo feminino singular",
-    "fn": "predicativo de aquam, na linha seguinte: turva"
+    "fn": "predicativo de aquam: turva"
    },
    {
     "w": "fecisti",
@@ -737,48 +715,9 @@
     "c": "la-p004",
     "f": "dativo",
     "fn": "para mim"
-   }
-  ],
-  "conceitos": [
-   "la-g009",
-   "la-g005",
-   "la-g003"
-  ],
-  "texto": "fedro/lupus-et-agnus",
-  "linha": 5
- },
- {
-  "id": "la-t033",
-  "tipo": "frase",
-  "la": "Aquam bibenti? Laniger contra timens:",
-  "pt": "a água, enquanto bebo?» O lanígero, em resposta, temendo:",
-  "gabarito": "[[a água [enquanto [eu ~] bebo ~ quando [eu ~] bebo ~ que [eu ~] bebo ~ ao beber ~ a mim que bebo] [o ~] [lanígero ~ lanoso ~ cordeiro] [em resposta ~ por sua vez ~ respondendo ~ do outro lado ~ em troca] [temendo ~ com medo ~ temeroso ~ medroso ~ amedrontado] ~ a água que eu bebo Em resposta temendo o lanígero ~ a água a mim que estou bebendo O lanudo receoso do outro lado ~ a água quando bebo O lanígero com medo retrucou] ~ a água enquanto eu bebo O lanígero com medo em resposta ~ a água que estou bebendo O lanudo temeroso por sua vez ~ a água a mim que estou bebendo O cordeiro temendo responde]",
-  "aceitas": [],
-  "distratores": [
-   "a água, enquanto bebo com medo?» O lanígero, em resposta:",
-   "as águas, enquanto bebo? O lanígero, em resposta, temendo:",
-   "a água que bebes? O lanígero, em resposta, temendo:",
-   "a água, enquanto bebia? O lanígero, contra o medo:"
-  ],
-  "nota": "Sem verbo: Aquam é o objeto de fecisti (verso 5), e bibenti, que bebo, vai com mihi. Depois subentende-se um verbo de dizer. Quem? Laniger, o cordeiro, timens, temendo.\nAquam: acusativo singular, o objeto de fecisti.\nbibenti: particípio presente, dativo masculino singular, concorda com mihi: a mim, que bebo.\nLaniger: nominativo masculino singular, o sujeito: o que tem lã, o cordeiro.\ncontra: advérbio: em resposta.\ntimens: particípio presente, nominativo masculino singular, temendo.\nBibenti é o particípio presente de bibo no dativo, concordando com mihi: «a mim, que bebo». Timens, no nominativo, concorda com laniger. O verbo de dizer fica subentendido.",
-  "nivel": "A2",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Fedro, Fábulas I,1,6",
-  "requerTodas": [
-   "la-p199",
-   "la-p200",
-   "la-p201",
-   "la-p202",
-   "la-p203",
-   "la-v436",
-   "la-v438",
-   "la-v439"
-  ],
-  "palavras": [
+   },
    {
-    "w": "Aquam",
+    "w": "aquam",
     "c": "la-p199",
     "f": "acusativo singular",
     "fn": "o objeto de fecisti"
@@ -788,7 +727,59 @@
     "c": "la-p200",
     "f": "particípio presente, dativo masculino singular",
     "fn": "concorda com mihi: a mim, que bebo"
-   },
+   }
+  ],
+  "conceitos": [
+   "la-g009",
+   "la-g005",
+   "la-g003",
+   "la-g001"
+  ],
+  "texto": "fedro/lupus-et-agnus",
+  "linha": 4,
+  "versos": [
+   5,
+   6
+  ]
+ },
+ {
+  "id": "la-t118",
+  "tipo": "frase",
+  "la": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
+  "pt": "O lanígero, em resposta, temendo: «Como posso, por favor, fazer aquilo de que te queixas, lobo?»",
+  "gabarito": "[lanígero ~ cordeiro] [em resposta ~ por sua vez ~ respondendo] [temendo ~ com medo ~ temeroso] [[Como ~ De que modo] [eu ~] posso [por favor ~ te peço] fazer [aquilo de que ~ o que ~ aquilo que] [te queixas ~ você se queixa ~ reclamas] lobo ~ Como posso fazer por favor aquilo de que te queixas lobo]",
+  "aceitas": [],
+  "distratores": [
+   "O lanígero, em resposta, temendo: «Como pude, por favor, fazer aquilo de que te queixas, lobo?»",
+   "O lanígero, em resposta, temendo: «Como podes, por favor, fazer aquilo de que me queixo, lobo?»",
+   "O lanígero, em resposta: «Como posso, por favor, fazer aquilo de que te queixas, lobo medroso?»",
+   "O lanígero, em resposta, temendo: «Quem pode, por favor, fazer aquilo de que te queixas, lobo?»"
+  ],
+  "nota": "possum (poder): quem pode? eu (na terminação). Pode o quê? facere, fazer. Fazer o quê? quod quereris, aquilo de que te queixas. Como? qui, como. A quem fala? lupe, lobo.\nLaniger: nominativo masculino singular, o sujeito: o que tem lã, o cordeiro.\ncontra: advérbio: em resposta.\ntimens: particípio presente, nominativo masculino singular, temendo.\nQui: advérbio, a forma antiga do ablativo: como?.\npossum: presente do indicativo, 1ª pessoa do singular.\nquaeso: presente do indicativo, 1ª pessoa do singular, por favor.\nfacere: infinitivo presente, completa possum.\nquod: acusativo neutro singular, aquilo que: o objeto de facere.\nquereris: presente do indicativo, 2ª pessoa do singular, depoente: te queixas.\nlupe: vocativo singular, a quem o cordeiro fala.\nLaniger, «o que tem lã», é o cordeiro; o verbo de dizer fica subentendido. Qui é o advérbio «como?».",
+  "nivel": "A2",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Fedro, Fábulas I,1,6–7",
+  "requerTodas": [
+   "la-p201",
+   "la-p202",
+   "la-p203",
+   "la-p064",
+   "la-p121",
+   "la-p204",
+   "la-p165",
+   "la-p205",
+   "la-p153",
+   "la-v439",
+   "la-v171",
+   "la-v266",
+   "la-v370",
+   "la-v173",
+   "la-v442",
+   "la-v350"
+  ],
+  "palavras": [
    {
     "w": "Laniger",
     "c": "la-p201",
@@ -805,50 +796,7 @@
     "c": "la-p203",
     "f": "particípio presente, nominativo masculino singular",
     "fn": "temendo"
-   }
-  ],
-  "conceitos": [
-   "la-g003",
-   "la-g005",
-   "la-g001"
-  ],
-  "texto": "fedro/lupus-et-agnus",
-  "linha": 6
- },
- {
-  "id": "la-t034",
-  "tipo": "frase",
-  "la": "Qui possum, quaeso, facere, quod quereris, lupe?",
-  "pt": "«Como posso, por favor, fazer aquilo de que te queixas, lobo?",
-  "gabarito": "[[[Como ~ De que modo ~ De que jeito] [eu ~] posso [por favor ~ eu te peço ~ te peço ~ pergunto] fazer [o que ~ aquilo de que ~ isso de que ~ aquilo que] [te queixas ~ você se queixa ~ tu te queixas ~ reclamas ~ você reclama ~ alegas ~ você alega] lobo ~ Como posso peço fazer o de que te queixas lobo ~ Como é que eu posso por favor fazer o que reclamas lobo ~ Como posso eu fazer pergunto aquilo de que te queixas lobo ~ De que modo posso rogo causar aquilo de que te lamentas lobo] ~ Como posso eu pergunto fazer aquilo de que te queixas lobo ~ Como posso fazer por favor aquilo de que você se queixa lobo]",
-  "aceitas": [],
-  "distratores": [
-   "«Como pude, por favor, fazer aquilo de que te queixas, lobo?",
-   "«Como podes, por favor, fazer aquilo de que me queixo, lobo?",
-   "«Como posso, por favor, fazer aquilo de que os lobos se queixam?",
-   "«Quem pode, por favor, fazer aquilo de que te queixas, lobo?"
-  ],
-  "nota": "possum (poder): quem pode? eu (na terminação). Pode o quê? facere, fazer. Fazer o quê? quod quereris, aquilo de que te queixas. Como? Qui, como.\nQui: advérbio, a forma antiga do ablativo: como?.\npossum: presente do indicativo, 1ª pessoa do singular.\nquaeso: presente do indicativo, 1ª pessoa do singular, por favor.\nfacere: infinitivo presente, completa possum.\nquod: acusativo neutro singular, aquilo que: o objeto de facere.\nquereris: presente do indicativo, 2ª pessoa do singular, depoente: te queixas.\nlupe: vocativo singular, a quem o cordeiro fala.\nLupe é o vocativo de lupus: a 2ª declinação troca o -us por -e. Quereris, de queror, é depoente: forma de passiva, sentido ativo. Qui, aqui, é o advérbio «como?».",
-  "nivel": "A2",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Fedro, Fábulas I,1,7",
-  "requerTodas": [
-   "la-p064",
-   "la-p121",
-   "la-p204",
-   "la-p165",
-   "la-p205",
-   "la-p153",
-   "la-v171",
-   "la-v266",
-   "la-v370",
-   "la-v173",
-   "la-v442",
-   "la-v350"
-  ],
-  "palavras": [
+   },
    {
     "w": "Qui",
     "c": "la-p064",
@@ -891,14 +839,20 @@
    }
   ],
   "conceitos": [
+   "la-g003",
+   "la-g005",
+   "la-g001",
    "la-g002",
    "la-g013",
    "la-g016",
-   "la-g003",
    "la-g032"
   ],
   "texto": "fedro/lupus-et-agnus",
-  "linha": 7
+  "linha": 5,
+  "versos": [
+   6,
+   7
+  ]
  },
  {
   "id": "la-t035",
@@ -979,6 +933,10 @@
    "la-g001"
   ],
   "texto": "fedro/lupus-et-agnus",
-  "linha": 8
+  "linha": 6,
+  "versos": [
+   8,
+   8
+  ]
  }
 ]
