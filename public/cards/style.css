@@ -786,12 +786,14 @@ label input:focus{outline:0;border-color:var(--acento)}
 .selo.situacao.transparente{color:var(--ok);border-color:var(--ok-borda);border-style:dashed}
 .selo.situacao.presumido{color:var(--quase);border-color:var(--quase-borda);border-style:dashed}
 
-/* ── a vitrine do próximo texto, no painel (7.4) ── */
+/* ── a vitrine dos textos em estudo, no fim do painel (7.4) ── */
 .vitrine{
   background:var(--fundo-2);border:1px solid var(--borda);border-left:3px solid var(--acento);
-  border-radius:12px;padding:14px 16px;margin:0 0 22px;
+  border-radius:12px;padding:14px 16px;margin:26px 0 8px;
 }
 .vitrine h3{margin-bottom:6px}
+/* mais de um texto em estudo: um embaixo do outro, com um fio entre eles */
+.vitrine-item + .vitrine-item{border-top:1px solid var(--borda);padding-top:10px;margin-top:10px}
 .vitrine-titulo{margin:0 0 8px;color:var(--texto-2);font-size:14px}
 .vitrine-titulo b{color:var(--texto);font-size:15.5px}
 .vitrine-verso{margin:0;font-style:italic;font-size:16px;color:var(--texto)}
