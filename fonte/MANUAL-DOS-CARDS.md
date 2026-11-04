@@ -799,6 +799,7 @@ sem ele o navegador serve o baralho velho.
 | Sinônimo na volta vai para `sinonimosEs`, não para as aceitas, quando o card ensina a outra palavra | `u602` «Es verdad» para «Es cierto»; `p923` «la felicidad» para «la dicha»; `p527` «la voluntad» para «la gana» — 03/11/2026 |
 | No card de gramática, a palavra destacada não pode ser a forma de modelo entre parênteses das alternativas (o build acusa, na família `tempo`) | `g001` «Yo hablo español» com «presente do indicativo (hablo)»; `g016` «Hablaré con el jefe» — 04/11/2026 |
 | Exemplo que é o enunciado do dicionário vai inteiro, sem destaque, e a pergunta é «deste verbo», «deste nome» | `la-g027` «habeo, habere, habui, habitum» com *habeo* destacado — 04/11/2026 |
+| Na pergunta «forma de dicionário», o verbete inteiro (sem as observações em português); as erradas são verbetes inventados da mesma palavra pelos outros padrões («virum, viri, n.», «vir, viris, m.»), primeiro os de que a forma também poderia vir, nunca um que exista com aquela forma no Wiktionary; irregulares e pronomes ficam com verbetes reais (`cards_de_forma.py`: `falsos`) | `la-xt036-1` «vir» em vez de «vir, viri, m.» — 04/11/2026 |
 
 ---
 
