@@ -122,6 +122,11 @@ window.TaioeCardsApp = function (ctx) {
     'por-para': 'card.enunciado.conceito.porPara', pronome: 'card.enunciado.conceito.pronome',
     apocope: 'card.enunciado.conceito.apocope'
   };
+  /* o exemplo que é o enunciado do dicionário: a palavra inteira, sem destaque */
+  const ENUNCIADO_DO_DICIONARIO = {
+    declinacao: 'card.enunciado.conceito.declinacaoDicionario',
+    conjugacao: 'card.enunciado.conceito.conjugacaoDicionario'
+  };
 
   /* emVista.escolha: os textos que a pessoa estuda ({ textos, em, propria });
      poema e prosa ficaram do formato de antes; lidos: «<id>#<k>» por verso
@@ -1437,7 +1442,14 @@ window.TaioeCardsApp = function (ctx) {
     el['bandeira-feedback'].textContent = inversa ? BANDEIRA_L : BANDEIRA_A;
     /* na múltipla escolha a bandeira já diz tudo; o texto só ajuda quando
        é você quem tem que produzir a resposta */
+    /* O card de conceito pergunta com um exemplo real e a palavra em destaque; a palavra do
+       latim aparece pelo enunciado do dicionário («dominus, domini, m.»), e aí, como o
+       enunciado inteiro é a palavra, nada se destaca e a pergunta é «deste verbo», «deste nome»
+       (comentário do la-g027, 03/11/2026) */
+    exemploAtual = cardAtual.tipo === 'conceito' ? Motor.exemploDoConceito(cardAtual, est, progresso.cards) : null;
+    const exemploDoDicionario = !!(exemploAtual && /^dicion/.test(exemploAtual.fonte || '') && exemploAtual.la);
     el['rotulo-resposta-txt'].textContent = flexaoDeCaso ? t('card.enunciado.flexaoCaso')
+      : exemploDoDicionario && ENUNCIADO_DO_DICIONARIO[cardAtual.familia] ? t(ENUNCIADO_DO_DICIONARIO[cardAtual.familia])
       : perguntaDoCard ? perguntaDoCard
       : ['funcao', 'pessoa', 'dicionario'].includes(cardAtual.perguntaForma) ? t('card.enunciado.forma.' + cardAtual.perguntaForma)
       : conceito
@@ -1449,11 +1461,10 @@ window.TaioeCardsApp = function (ctx) {
     el.entrada.placeholder = inversa ? t('card.escrevaEm', { x: NOME_L })
       : t(conceito ? 'card.escrevaConceito' : 'card.escrevaSignificado');
 
-    /* O card de conceito pergunta com um exemplo real e a palavra em destaque; a palavra do
-       latim aparece pelo enunciado do dicionário («dominus, domini, m.»). */
-    exemploAtual = cardAtual.tipo === 'conceito' ? Motor.exemploDoConceito(cardAtual, est, progresso.cards) : null;
-    /* a frase de gênero variável do exemplo aparece no masculino */
-    if (exemploAtual) el.termo.innerHTML = comDestaque(String(exemploAtual[L] || exemploAtual.la).replace(/\{([^{}|]*)\|[^{}|]*\}/g, '$1'), exemploAtual.w);
+    /* a frase de gênero variável do exemplo aparece no masculino; o enunciado do dicionário
+       vai inteiro e sem destaque */
+    if (exemploDoDicionario) el.termo.textContent = exemploAtual.la;
+    else if (exemploAtual) el.termo.innerHTML = comDestaque(String(exemploAtual[L] || exemploAtual.la).replace(/\{([^{}|]*)\|[^{}|]*\}/g, '$1'), exemploAtual.w);
     else if (cardAtual.tipo === 'forma') el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.la, cardAtual.ocorrencia);
     /* a flexão mostra só a forma: o enunciado do dicionário embaixo era dica (pedido do Gere,
        31/10/2026); ele aparece depois, na nota */

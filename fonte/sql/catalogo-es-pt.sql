@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva 7bcf7940, 2272 cards.
+-- Catálogo do curso es-pt, leva ea3847e1, 2272 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', '7bcf7940', '2272 cards')
+values ('es-pt', 'ea3847e1', '2272 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -2239,7 +2239,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u674', 'frase', 'B1', array['social']::text[], 'p1217', '184db883', array['Estou perguntando por brincadeira.', 'Estou perguntando por curiosidade.', 'Estou perguntando por educação.', 'Estou perguntando por obrigação.', 'Estou perguntando por precaução.']::text[]),
   ('es-pt', 'u675', 'frase', 'A1', array['natureza']::text[], 'p1218', 'a765a5e3', array['As plantas precisam de areia e água.', 'As plantas precisam de atenção e água.', 'As plantas precisam de luz e água.', 'As plantas precisam de sombra e água.', 'As plantas precisam de terra e água.']::text[]),
   ('es-pt', 'u676', 'frase', 'A1', array['viagem']::text[], 'p1218', '4a1cebe3', array['Ele voltou para a casa dele.', 'Ele voltou para a escola dele.', 'Ele voltou para a família dele.', 'Ele voltou para a igreja dele.', 'Ele voltou para a terra dele.']::text[]),
-  ('es-pt', 'g001', 'conceito', 'A1', array['gramática']::text[], null, '13ca2317', array['futuro (hablaré)', 'presente do indicativo (hablo)', 'presente do subjuntivo (hable)', 'pretérito imperfeito (hablaba)', 'pretérito indefinido (hablé)']::text[]),
+  ('es-pt', 'g001', 'conceito', 'A1', array['gramática']::text[], null, '68689b5e', array['futuro (hablaré)', 'presente do indicativo (hablo)', 'presente do subjuntivo (hable)', 'pretérito imperfeito (hablaba)', 'pretérito indefinido (hablé)']::text[]),
   ('es-pt', 'g002', 'conceito', 'A1', array['gramática']::text[], null, '8cf816fd', array['estar + gerúndio: ação em andamento', 'estar: estado ou condição do momento', 'estar: onde algo ou alguém está', 'ser: hora, data ou onde acontece um evento', 'ser: o que a coisa é (identidade, origem, característica)']::text[]),
   ('es-pt', 'g003', 'conceito', 'A1', array['gramática']::text[], null, '0a5082d3', array['estar + gerúndio: ação em andamento', 'estar: estado ou condição do momento', 'estar: onde algo ou alguém está', 'ser: hora, data ou onde acontece um evento', 'ser: o que a coisa é (identidade, origem, característica)']::text[]),
   ('es-pt', 'g004', 'conceito', 'A1', array['gramática']::text[], null, 'd776a82c', array['estar + gerúndio: ação em andamento', 'estar: estado ou condição do momento', 'estar: onde algo ou alguém está', 'ser: hora, data ou onde acontece um evento', 'ser: o que a coisa é (identidade, origem, característica)']::text[]),
@@ -2254,7 +2254,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'g013', 'conceito', 'A2', array['gramática']::text[], null, 'fd1c3511', array['mais-que-perfeito (había hablado)', 'presente do indicativo (hablo)', 'pretérito imperfeito (hablaba)', 'pretérito indefinido (hablé)', 'pretérito perfeito composto (he hablado)']::text[]),
   ('es-pt', 'g014', 'conceito', 'A2', array['gramática']::text[], null, 'f6c3b5d9', array['condicional (hablaría)', 'imperfeito do subjuntivo (hablara)', 'presente do indicativo (hablo)', 'pretérito imperfeito (hablaba)', 'pretérito indefinido (hablé)']::text[]),
   ('es-pt', 'g015', 'conceito', 'A2', array['gramática']::text[], null, '9bf7e08c', array['condicional (hablaría)', 'futuro (hablaré)', 'ir a + infinitivo (voy a hablar)', 'presente do subjuntivo (hable)', 'pretérito perfeito composto (he hablado)']::text[]),
-  ('es-pt', 'g016', 'conceito', 'A2', array['gramática']::text[], null, 'c349b95c', array['condicional (hablaría)', 'futuro (hablaré)', 'imperfeito do subjuntivo (hablara)', 'ir a + infinitivo (voy a hablar)', 'presente do indicativo (hablo)']::text[]),
+  ('es-pt', 'g016', 'conceito', 'A2', array['gramática']::text[], null, 'c0c12f8a', array['condicional (hablaría)', 'futuro (hablaré)', 'imperfeito do subjuntivo (hablara)', 'ir a + infinitivo (voy a hablar)', 'presente do indicativo (hablo)']::text[]),
   ('es-pt', 'g017', 'conceito', 'A2', array['gramática']::text[], null, '500bad3f', array['encurta antes de qualquer substantivo singular, como gran', 'encurta: vem antes de substantivo masculino singular', 'fica inteira: vem antes de substantivo feminino ou plural', 'fica inteira: vem depois do substantivo ou sem ele', 'é advérbio (como bien), por isso não muda']::text[]),
   ('es-pt', 'g018', 'conceito', 'A2', array['gramática']::text[], null, '7c60cf94', array['para: destinatário (para quem)', 'para: finalidade (para quê)', 'por: causa ou motivo (por quê)', 'por: por onde ou por qual meio', 'por: troca, preço ou medida']::text[]),
   ('es-pt', 'g019', 'conceito', 'A2', array['gramática']::text[], null, 'a9edee0c', array['para: destino (para onde)', 'para: finalidade (para quê)', 'por: causa ou motivo (por quê)', 'por: por onde ou por qual meio', 'por: troca, preço ou medida']::text[]),
