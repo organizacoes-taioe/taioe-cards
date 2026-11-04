@@ -157,9 +157,25 @@ também são na ida.
   a serva». Sai dos dados da anotação, num molde fixo, para ficar igual em todos os cards.
 
 ### 3.3 Frase do texto (`la-t…`), dentro do arquivo do texto
-- O texto vai em trechos de **até 10 palavras**, cortados onde a sintaxe deixa (uma oração, ou um
-  grupo inteiro: preposição + nome, nome + adjetivo). No poema, um verso ou meio verso. Trecho que
-  não fecha a frase: a nota mostra a frase inteira (como o antigo card de verso, manual §16).
+- **O critério do corte** (o Gere, 04/11/2026: «Arma virumque cano, Troiæ qui primus ab oris» não
+  serve de card; «lembre-se desse critério para casos futuros»; vale para todo texto novo):
+  - o card é a **frase ou a oração inteira**, com o verbo dela, e não a linha do poema: pode
+    atravessar o fim do verso. O texto (a tela do texto, a Biblioteca) continua em versos;
+  - o que fica de fora vira **«…»**, e **nenhuma palavra latina muda** (nada de «virum cano» por
+    «virumque cano»): «Arma virumque cano, Troiæ qui primus ab oris Italiam … venit»;
+  - **até 10 palavras**, e até 12 quando é isso que fecha a frase;
+  - o mesmo pedaço pode estar em dois cards quando o sentido pede (o antecedente do relativo,
+    *ultimam, quae…*);
+  - toda palavra do texto entra em algum card;
+  - linha que já fecha sentido (as orações, Marcial, Catulo) fica como está.
+
+  Como se faz: os versos anotados ficam em `fonte/latim/versos.json`, e o corte de cada texto em
+  `CORTES`, no `fonte/latim/cortes.py` (intervalos de palavras; passo a passo no topo dele). O
+  trecho leva `linha` (a ordem dele no texto) e `versos` (o primeiro e o último que toca); o build
+  confere que todo verso está em algum trecho. Trecho refeito ganha id novo; o antigo é arquivado
+  pelo Catálogo.
+- Trecho que ainda assim não fecha a frase: a nota mostra a frase inteira (como o antigo card de
+  verso, manual §16).
 - Destrava quando todas as palavras dele estão dominadas, como as frases de hoje, e entra na fila
   como card. Verso repetido aponta para o mesmo card.
 - Múltipla escolha: os quatro distratores são **a mesma frase lida com a gramática errada** —
@@ -427,7 +443,7 @@ para tudo. Se ficar excessivo, depois a gente vai ajustando.»
    seco: é a leitura errada que o card já conhece.
 5. **O retorno**: os «quase» julgados como acerto e as contestações vão para a curadoria e daí para
    o gabarito, pela rotina de retorno.
-6. **Teto**: trecho de até 10 palavras latinas; resposta de até 120 caracteres (o teto do manual).
+6. **Teto**: trecho de até 10 palavras latinas (12 quando é o que fecha a frase, §3.3); resposta de até 120 caracteres (o teto do manual).
 
 ## 5. A ordem do estudo
 - **Entrada**: sem nivelamento. A tela de textos abre direto, com os textos por nível («bom para
@@ -871,3 +887,43 @@ depois (Pai-Nosso, resposta 366 → 423). As levas tiveram a revisão do princip
 *regno* (o genitivo de Horácio é grecismo: virou «sem complemento»), *nascor* e *incipio*
 refeitas. Ficou anotado pelos agentes: em `la-t034`, *Qui* está ligado ao relativo, mas ali é o
 advérbio interrogativo «como?»; em `la-t078`, *Tu* sem `f`.
+
+## 16. Os trechos pelo sentido e as perguntas nos versos (pedido de 04/11)
+
+**Pedido do Gere (04/11)**: «o modo como as frases dos textos são usadas nos cards […] algumas
+precisam ser cortadas de maneira mais inteligente […] do jeito que está, não ficou legal», com
+*Arma virumque cano, Troiæ qui primus ab oris* de exemplo. Proposta na conversa, aprovada no mesmo
+dia («pode fazer; lembre-se desse critério para casos futuros»): o critério está no §3.3.
+- ✔ D41 (perguntas de compreensão nos versos): «pode fazer o que achar que vale a pena», feita
+  depois do corte. ✗ D44 (pergunta sobre a parte inteira): fora, porque ficava perto da D33,
+  recusada em 29/10.
+
+**Como ficou.** O texto saiu dos cards: `fonte/latim/versos.json` (os 84 versos anotados) é a fonte
+da tela do texto (`textos.py`) e do glossário da *Eneida* na Biblioteca (`glossario_eneida.py`, que
+sai igual). Os trechos levam `versos` [primeiro, último] e `linha` = a ordem; cada verso do texto
+montado leva as `flexoes` das formas dele, que o build põe no `requer` (antes vinham do card da
+linha). O corte novo valeu para a *Eneida* (as duas partes), as duas odes de Horácio, o Fedro, a
+2ª parte da Bucólica IV e a *Regina caeli*: 54 linhas viraram 48 trechos, 42 novos (`la-t085` a
+`la-t126`; seis ficaram iguais e guardaram o id), 10 com «…». O total foi de 84 a 76 trechos. Os
+antigos são arquivados pelo Catálogo, e com eles as análises e os cards de forma presos a eles.
+
+As perguntas nos versos (D41) são cards `compreensao` com `de` = o trecho (`la-q<trecho><a|b>`,
+`fonte/cards/la/26-compreensao-versos.json`, gerado por `cortes.py perguntas` das levas
+`cache/levas/cortes-*.json`): 68, de 0 a 2 por trecho, só sobre o que a terminação decide («Quem
+veio à Itália?» → *o homem*, e não *as armas*). Andam como a análise da frase: depois do trecho
+visto, com o texto ativo, junto dos cards de forma; uma vez só (se errar, até acertar duas), como o
+Gere quis para o verbo e a concordância (`Motor.ehCompreensaoDoVerso`, `umaVezSo`; `daFrase` no app).
+Não contam como gramática.
+
+Os textos, as erradas, o gabarito, a análise e as perguntas foram escritos por quatro agentes
+(`cache/levas/cortes-*.json`, brief em `~/.cache/latim-falcon/cortes/BRIEF-cortes.md`, só neste PC)
+e revistos pelo principal: saíram 3 perguntas fracas e 2 concordâncias fáceis demais, 5 perguntas
+ganharam erradas do tamanho da certa. Análise dos trechos novos: `analise-frases-3.json` (71 cards
+do verbo, 36 de concordância no total). Os exemplos dos conceitos que mostravam uma linha que saiu
+passaram ao trecho novo da mesma palavra. Simulação (Pai-Nosso e *Eneida* 1, 30 dias): o mesmo
+ritmo de antes (primeiro verso na resposta 487, contra 485), a gramática em 51% a 56%.
+
+Anotado pelos agentes e não corrigido: na parte 2 da *Eneida* e do *Exegi monumentum*, as notas
+antigas citam os versos pela numeração da obra (I,8–11; 10–16), e o texto os conta de 1; *tot*
+anotado como «concorda com…», mas não declina; em *perennius* e *altius* o caso está na função e
+não na forma.

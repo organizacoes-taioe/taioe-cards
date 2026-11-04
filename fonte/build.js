@@ -160,12 +160,11 @@ for (const b of baralhos) {
     const destinos = texto.destinos || {};
     for (const l of (texto.blocos || []).flat()) {
       l.requer = [...new Set((l.p || []).filter(x => x[1]).flatMap(x => cardsDoDestino(destinos[x[1]])))];
-      /* no latim o verso espera também as flexões (cards/LATIM.md §3.8): as do trecho, cada uma
-         logo depois do lema, para estrearem na ordem de leitura */
-      const trecho = l.card && b.cards.find(c => c.id === l.card);
-      if (trecho) {
+      /* no latim o verso espera também as flexões (cards/LATIM.md §3.8): as das formas dele
+         («flexoes», do textos.py), cada uma logo depois do lema, para estrearem na ordem de leitura */
+      if (Array.isArray(l.flexoes)) {
         const lemaDe = id => (b.cards.find(c => c.id === id && c.tipo === 'flexao') || {}).lema;
-        for (const f of (trecho.requerTodas || []).filter(lemaDe)) {
+        for (const f of l.flexoes.filter(lemaDe)) {
           if (l.requer.includes(f)) continue;
           let i = l.requer.indexOf(lemaDe(f));
           if (i < 0) { l.requer.push(f); continue; }
@@ -1000,7 +999,9 @@ for (const { idioma, cards } of baralhos) {
     if (String(c.pt || '').length > Motor.LIMITES.resposta) erros.push('resposta com mais de ' + Motor.LIMITES.resposta + ' letras: ' + onde);
     const pal = Array.isArray(c.palavras) ? c.palavras : null;
     if (!pal) { erros.push('frase latina sem «palavras» (a anotação): ' + onde); continue; }
-    if (pal.filter(p => !String(p.w || '').startsWith('-')).length > 10) erros.push('frase latina com mais de 10 palavras: ' + onde);
+    /* o trecho de texto vai até 12 quando é isso que fecha a frase (cortes.py, 04/11/2026) */
+    const teto = c.texto ? 12 : 10;
+    if (pal.filter(p => !String(p.w || '').startsWith('-')).length > teto) erros.push('frase latina com mais de ' + teto + ' palavras: ' + onde);
     /* o alinhamento: cada palavra do texto é uma entrada, ou duas coladas (enclítica, cum) */
     const doTexto = (c.la.match(/[A-Za-zÀ-ÿĀ-ſ]+/g) || []).map(chaveLatina);
     let j = 0, alinhou = true;
@@ -1040,7 +1041,8 @@ for (const { idioma, cards } of baralhos) {
       const alvo = PORID.get(g);
       if (!alvo || alvo.tipo !== 'conceito') erros.push('conceito que não existe: ' + onde + ' → ' + g);
     }
-    if (c.texto && !Number.isInteger(c.linha)) erros.push('trecho de texto sem «linha»: ' + onde);
+    if (c.texto && !Number.isInteger(c.linha)) erros.push('trecho de texto sem «linha» (a ordem dele no texto): ' + onde);
+    if (c.texto && !(Array.isArray(c.versos) && c.versos.length === 2 && c.versos[0] <= c.versos[1])) erros.push('trecho de texto sem «versos» (o primeiro e o último): ' + onde);
   }
   /* texto novo antes da leva das flexões dele: aviso, e não erro (rode flexoes.py «faltam») */
   if (semFlexao.size) {
@@ -1092,15 +1094,20 @@ for (const b of baralhos) {
       }
       if (d.conferir) falta.push('conferir «' + ch + '»: ' + d.conferir);
     }
-    /* no latim cada linha é um card de frase (o trecho, cards/LATIM.md §3.3): o card existe, é
-       deste texto e tem a linha como está */
+    /* no latim o card é o trecho, a frase, que pode atravessar o verso (cards/LATIM.md §3.3,
+       cortes.py): todo verso está em algum trecho, e cada palavra do trecho está nos versos dele */
     if (b.idioma === 'la') {
-      const porId = new Map(b.cards.map(c => [c.id, c]));
-      (txt.blocos || []).flat().forEach((l, i) => {
-        const c = l.card && porId.get(l.card);
-        if (!c) erros.push(onde + ': a linha ' + (i + 1) + ' não tem card de trecho' + (l.card ? ' («' + l.card + '» não existe)' : ''));
-        else if (c.texto !== txt.id || c.la !== l.t) erros.push(onde + ': a linha ' + (i + 1) + ' não bate com o trecho ' + c.id);
-      });
+      const linhas = (txt.blocos || []).flat();
+      const doTexto = b.cards.filter(c => c.tipo === 'frase' && c.texto === txt.id);
+      const cobertos = new Set();
+      for (const c of doTexto) {
+        const [a, z] = c.versos || [0, 0];
+        if (a < 1 || z > linhas.length) { erros.push(onde + ': o trecho ' + c.id + ' aponta para versos que não existem'); continue; }
+        for (let k = a; k <= z; k++) cobertos.add(k);
+        const req = new Set(linhas.slice(a - 1, z).flatMap(l => l.requer || []));
+        for (const p of c.palavras || []) if (p.c && !req.has(p.c)) erros.push(onde + ': «' + p.w + '» do trecho ' + c.id + ' não está nos versos ' + a + '–' + z);
+      }
+      linhas.forEach((l, i) => { if (!cobertos.has(i + 1)) erros.push(onde + ': o verso ' + (i + 1) + ' não está em trecho nenhum'); });
     }
     if (txt.obra !== undefined && (typeof txt.obra !== 'string' || !Number.isInteger(txt.parte) || txt.parte < 1 || !txt.trecho)) {
       erros.push(onde + ': a parte de uma obra precisa de «obra», «parte» (1, 2…) e «trecho» (I, 1–7)');
@@ -1561,7 +1568,7 @@ for (const b of baralhos) {
       destinos[ch] = x;
     });
     const saida = { id: t.id, idioma: t.idioma, tipo: t.tipo, titulo: t.titulo, autor: t.autor, ano: t.ano,
-      biblioteca: t.biblioteca, blocos: t.blocos.map(bl => bl.map(l => Object.assign({ t: l.t, p: l.p, requer: l.requer }, l.card ? { card: l.card } : {}))),
+      biblioteca: t.biblioteca, blocos: t.blocos.map(bl => bl.map(l => ({ t: l.t, p: l.p, requer: l.requer }))),
       requerTodas: t.requerTodas, destinos };
     if (typeof t.fila === 'number') saida.fila = t.fila;
     if (t.obra) Object.assign(saida, { obra: t.obra, parte: t.parte, trecho: t.trecho });

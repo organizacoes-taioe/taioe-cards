@@ -1,23 +1,23 @@
 [
  {
-  "id": "la-t036",
+  "id": "la-t085",
   "tipo": "frase",
-  "la": "Arma virumque cano, Troiae qui primus ab oris",
-  "pt": "Canto as armas e o homem que, primeiro, das praias de Troia",
-  "gabarito": "[[[Eu ~] canto as armas e o [homem ~ varão ~ herói] [que ~ o qual] [[primeiro ~ por primeiro ~ pela primeira vez ~ em primeiro lugar] [das costas ~ das praias ~ das margens ~ da costa ~ do litoral] de Troia ~ [das costas ~ das praias ~ das margens ~ da costa ~ do litoral] de Troia [primeiro ~ por primeiro ~ pela primeira vez ~ em primeiro lugar]] ~ As armas e o [homem ~ varão ~ herói] [eu ~] canto [que ~ o qual] [primeiro ~ por primeiro ~ pela primeira vez] [das costas ~ das praias ~ das margens ~ da costa ~ do litoral] de Troia] ~ Entoo as armas e o varão que antes de todos das margens de Troia ~ Canto armas e um homem aquele que o primeiro das praias de Troia]",
+  "la": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
+  "pt": "Canto as armas e o homem que, primeiro, das praias de Troia veio à Itália",
+  "gabarito": "[[[Eu ~] canto ~ Canto eu] as armas e o [homem ~ varão ~ herói] ~ As armas e o [homem ~ varão ~ herói] [eu ~] canto] que [[primeiro ~ pela primeira vez] [das praias ~ das costas ~ do litoral] de Troia [veio ~ chegou] [à Itália ~ para a Itália ~ até a Itália] ~ [das praias ~ das costas ~ do litoral] de Troia [primeiro ~ pela primeira vez] [veio ~ chegou] [à Itália ~ para a Itália ~ até a Itália] ~ [primeiro ~ pela primeira vez] [veio ~ chegou] [à Itália ~ para a Itália ~ até a Itália] [das praias ~ das costas ~ do litoral] de Troia]",
   "aceitas": [],
   "distratores": [
-   "Canta as armas e o homem que, primeiro, das praias de Troia",
-   "Canto as armas do homem que, primeiro, das praias de Troia",
-   "Canto as armas e o homem que, primeiro, para as praias de Troia",
-   "Cantei as armas e o homem que, primeiro, das praias de Troia"
+   "Canta as armas e o homem que, primeiro, das praias de Troia veio à Itália",
+   "Canto as armas do homem que, primeiro, das praias de Troia veio à Itália",
+   "Canto as armas e o homem que das primeiras praias de Troia veio à Itália",
+   "Canto as armas e o homem que, primeiro, das praias de Troia virá à Itália"
   ],
-  "nota": "cano (cantar): quem canta? eu, o poeta (na terminação). O quê? Arma virumque, as armas e o homem. Depois, qui abre a oração do homem: o verbo dela, venit, está no verso 2.\nArma: acusativo neutro plural, objeto de cano.\nvirum: acusativo singular, objeto de cano.\ncano: presente do indicativo, 1ª pessoa do singular, quem fala é o poeta.\nTroiae: genitivo singular, nome próprio, Troia: de Troia.\nqui: nominativo masculino singular, sujeito de venit, no verso 2; retoma virum.\nprimus: nominativo masculino singular, concorda com qui: o primeiro.\nab: preposição com ablativo.\noris: ablativo plural, de onde: das costas.\nA primeira frase vai até o verso 7: «Canto as armas e o homem que, primeiro, das costas de Troia, exilado pelo destino, veio à Itália e às praias lavínias…». Primus concorda com qui, mas o português o diz como advérbio: «que primeiro veio».",
+  "nota": "cano (cantar): quem canta? eu (na terminação). O quê? Arma virumque, as armas e o homem. · venit (vir): quem veio? qui, o homem. De onde? ab oris, das praias. Para onde? Italiam.\nArma: acusativo neutro plural, objeto de cano.\nvirum: acusativo singular, objeto de cano.\ncano: presente do indicativo, 1ª pessoa do singular, quem fala é o poeta.\nTroiae: genitivo singular, nome próprio, Troia: de Troia.\nqui: nominativo masculino singular, sujeito de venit; retoma virum.\nprimus: nominativo masculino singular, concorda com qui: o primeiro.\nab: preposição com ablativo.\noris: ablativo plural, de onde: das costas.\nItaliam: acusativo singular, nome próprio, Itália: para onde, sem preposição.\nvenit: perfeito do indicativo, 3ª pessoa do singular, o verbo de qui: veio.\nA frase vai até o verso 7. Primus concorda com qui, mas o português o diz como advérbio: «que primeiro veio».",
   "nivel": "B1",
   "tags": [
    "trecho"
   ],
-  "fonte": "Vergílio, Eneida I,1",
+  "fonte": "Vergílio, Eneida I,1–2",
   "requerTodas": [
    "la-p026",
    "la-p027",
@@ -27,9 +27,11 @@
    "la-p209",
    "la-p108",
    "la-p210",
+   "la-p038",
    "la-v092",
    "la-v171",
-   "la-v478"
+   "la-v478",
+   "la-v124"
   ],
   "palavras": [
    {
@@ -63,7 +65,7 @@
     "w": "qui",
     "c": "la-p064",
     "f": "nominativo masculino singular",
-    "fn": "sujeito de venit, no verso 2; retoma virum"
+    "fn": "sujeito de venit; retoma virum"
    },
    {
     "w": "primus",
@@ -81,6 +83,17 @@
     "c": "la-p210",
     "f": "ablativo plural",
     "fn": "de onde: das costas"
+   },
+   {
+    "w": "Italiam",
+    "f": "acusativo singular",
+    "fn": "nome próprio, Itália: para onde, sem preposição"
+   },
+   {
+    "w": "venit",
+    "c": "la-p038",
+    "f": "perfeito do indicativo, 3ª pessoa do singular",
+    "fn": "o verbo de qui: veio"
    }
   ],
   "conceitos": [
@@ -89,37 +102,44 @@
    "la-g001",
    "la-g004",
    "la-g006",
-   "la-g032"
+   "la-g032",
+   "la-g009"
   ],
   "texto": "vergilio/eneida-parte-1",
-  "linha": 1
+  "linha": 1,
+  "versos": [
+   1,
+   2
+  ]
  },
  {
-  "id": "la-t037",
+  "id": "la-t086",
   "tipo": "frase",
-  "la": "Italiam, fato profugus, Laviniaque venit",
-  "pt": "veio à Itália, exilado pelo destino, e às de Lavínio",
-  "gabarito": "[[[veio ~ chegou] [à Itália ~ para a Itália ~ até a Itália ~ na Itália] [exilado ~ fugitivo ~ foragido ~ desterrado ~ prófugo ~ fugindo] [pelo destino ~ por destino ~ pelo fado ~ por obra do destino] e [às lavínias ~ às praias lavínias ~ às costas lavínias ~ às de Lavínio ~ ao Lavínio] ~ [à Itália ~ para a Itália ~ até a Itália] [exilado ~ fugitivo ~ foragido ~ desterrado ~ prófugo ~ fugindo] [pelo destino ~ por destino ~ pelo fado ~ por obra do destino] [veio ~ chegou] e às lavínias ~ [exilado ~ fugitivo ~ foragido ~ desterrado ~ prófugo] [pelo destino ~ por destino ~ pelo fado] [veio ~ chegou] [à Itália ~ para a Itália] e [às lavínias ~ às praias lavínias]] ~ À Itália fugitivo por obra do destino e às lavínias chegou ~ Chegou à Itália fugido por causa do destino e às lavínias ~ Veio à Itália banido pelo fado e às lavínias ~ Veio para a Itália fugitivo por decreto do destino e para as lavínias]",
+  "la": "Italiam, fato profugus, Laviniaque venit litora",
+  "pt": "veio à Itália, exilado pelo destino, e às praias de Lavínio",
+  "gabarito": "[[veio ~ chegou] [à Itália ~ para a Itália] [exilado ~ fugitivo ~ desterrado ~ prófugo] [pelo destino ~ por obra do destino ~ pelo fado] e [às [praias ~ costas] [lavínias ~ de Lavínio] ~ [aos litorais ~ ao litoral] [lavínios ~ de Lavínio]] ~ [exilado ~ fugitivo ~ desterrado ~ prófugo] [pelo destino ~ por obra do destino ~ pelo fado] [veio ~ chegou] [à Itália ~ para a Itália] e [às [praias ~ costas] [lavínias ~ de Lavínio] ~ [aos litorais ~ ao litoral] [lavínios ~ de Lavínio]] ~ [à Itália ~ para a Itália] [exilado ~ fugitivo ~ desterrado ~ prófugo] [pelo destino ~ por obra do destino ~ pelo fado] [veio ~ chegou] e [às [praias ~ costas] [lavínias ~ de Lavínio] ~ [aos litorais ~ ao litoral] [lavínios ~ de Lavínio]]]",
   "aceitas": [],
   "distratores": [
-   "veio da Itália, exilado pelo destino, e das de Lavínio",
-   "veio à Itália, exilado do destino, e às de Lavínio",
-   "vieram à Itália, exilados pelo destino, e às de Lavínio",
-   "virá à Itália, exilado pelo destino, e às de Lavínio"
+   "veio da Itália, exilado pelo destino, e das praias de Lavínio",
+   "Lavínia veio à Itália, exilada pelo destino, e às praias",
+   "vieram à Itália, exilados pelo destino, e às praias de Lavínio",
+   "virá à Itália, exilado pelo destino, e às praias de Lavínio"
   ],
-  "nota": "venit (vir): quem veio? qui, o homem do verso 1. Para onde? Italiam, à Itália, e Lavinia litora, às praias lavínias (verso 3). Como? fato profugus, exilado pelo destino.\nItaliam: acusativo singular, nome próprio, Itália: para onde, sem preposição.\nfato: ablativo singular, a causa: pelo destino.\nprofugus: nominativo masculino singular, concorda com qui: exilado.\nLavinia: acusativo neutro plural, nome próprio, lavínio: concorda com litora, no verso seguinte.\nvenit: perfeito do indicativo, 3ª pessoa do singular, o verbo de qui: veio.\nItaliam: com verbo de movimento, o acusativo sem preposição diz para onde (na prosa, ad Italiam). Venit aqui é o perfeito (vēnit, veio); o presente se escreve igual (vĕnit, vem), e quem separa é o contexto. Lavinia concorda com litora, no verso seguinte: as praias de Lavínio.",
+  "nota": "venit (vir): quem veio? ele, o qui do verso 1 (na terminação). Para onde? Italiam, à Itália, e Lavinia litora, às praias de Lavínio. Como? fato profugus, exilado pelo destino.\nItaliam: acusativo singular, nome próprio, Itália: para onde, sem preposição.\nfato: ablativo singular, a causa: pelo destino.\nprofugus: nominativo masculino singular, concorda com qui, no verso 1: exilado.\nLavinia: acusativo neutro plural, nome próprio, lavínio: concorda com litora.\nvenit: perfeito do indicativo, 3ª pessoa do singular, o verbo de qui, no verso 1: veio.\nlitora: acusativo neutro plural, para onde, com Lavinia: às praias lavínias.\nLavinia concorda com litora, duas palavras adiante: as praias de Lavínio. Italiam, com verbo de movimento, diz para onde sem preposição.",
   "nivel": "B1",
   "tags": [
    "trecho"
   ],
-  "fonte": "Vergílio, Eneida I,2",
+  "fonte": "Vergílio, Eneida I,2–3",
   "requerTodas": [
    "la-p211",
    "la-p212",
    "la-p028",
    "la-p038",
+   "la-p213",
    "la-v480",
-   "la-v124"
+   "la-v124",
+   "la-v481"
   ],
   "palavras": [
    {
@@ -137,12 +157,12 @@
     "w": "profugus",
     "c": "la-p212",
     "f": "nominativo masculino singular",
-    "fn": "concorda com qui: exilado"
+    "fn": "concorda com qui, no verso 1: exilado"
    },
    {
     "w": "Lavinia",
     "f": "acusativo neutro plural",
-    "fn": "nome próprio, lavínio: concorda com litora, no verso seguinte"
+    "fn": "nome próprio, lavínio: concorda com litora"
    },
    {
     "w": "-que",
@@ -152,7 +172,13 @@
     "w": "venit",
     "c": "la-p038",
     "f": "perfeito do indicativo, 3ª pessoa do singular",
-    "fn": "o verbo de qui: veio"
+    "fn": "o verbo de qui, no verso 1: veio"
+   },
+   {
+    "w": "litora",
+    "c": "la-p213",
+    "f": "acusativo neutro plural",
+    "fn": "para onde, com Lavinia: às praias lavínias"
    }
   ],
   "conceitos": [
@@ -160,52 +186,53 @@
    "la-g006",
    "la-g001",
    "la-g009",
-   "la-g032"
+   "la-g032",
+   "la-g014"
   ],
   "texto": "vergilio/eneida-parte-1",
-  "linha": 2
+  "linha": 2,
+  "versos": [
+   2,
+   3
+  ]
  },
  {
-  "id": "la-t038",
+  "id": "la-t087",
   "tipo": "frase",
-  "la": "litora, multum ille et terris iactatus et alto",
-  "pt": "praias; ele, muito sacudido por terras e pelo alto-mar,",
-  "gabarito": "[[praias ~ costas ~ litorais] [ele ~ aquele ~ ele foi] muito [sacudido ~ agitado ~ lançado ~ jogado ~ batido] [[por terras ~ por terra ~ em terras ~ em terra ~ nas terras] e [pelo alto-mar ~ por mar ~ pelo mar ~ no mar ~ no alto-mar ~ em alto-mar] ~ tanto [por terra ~ por terras] como [por mar ~ pelo mar]] ~ praias ele muito atirado de um lado a outro tanto em terra quanto no alto-mar ~ costas aquele homem bastante lançado de cá para lá em terras e no mar profundo ~ litorais ele muito açoitado por terra e no mar alto]",
+  "la": "multum ille et terris iactatus et alto vi superum",
+  "pt": "ele, muito sacudido por terras e pelo alto-mar, pela força dos deuses",
+  "gabarito": "[[ele ~ aquele] muito [sacudido ~ agitado ~ lançado ~ jogado] [[por terras ~ por terra ~ em terra] e [pelo alto-mar ~ por mar ~ pelo mar ~ no mar] ~ tanto [por terra ~ por terras] como [por mar ~ pelo mar]] [pela força ~ pela violência ~ pelo poder] [dos deuses ~ dos de cima ~ dos deuses do alto] ~ [ele ~ aquele] muito [sacudido ~ agitado ~ lançado ~ jogado] pela força dos deuses [por terra e por mar ~ por terras e pelo alto-mar ~ tanto por terra como por mar]]",
   "aceitas": [],
   "distratores": [
-   "praias; ele sacudiu muito as terras e o alto-mar,",
-   "praias; eles, muito sacudidos por terras e pelo alto-mar,",
-   "praias; ele, muito sacudido pelas terras do alto-mar,",
-   "praias; muitos, sacudidos por terras e pelo alto-mar,"
+   "ele sacudiu muito as terras e o alto-mar, pela força dos deuses",
+   "eles, muito sacudidos por terras e pelo alto-mar, pela força dos deuses",
+   "ele, por terras muito sacudidas e pelo alto-mar, pela força dos deuses",
+   "ele, muito sacudido por terras e pelo alto-mar, pela força de um deus"
   ],
-  "nota": "Sem verbo neste verso: iactatus (sacudir), particípio, vai com ille, ele. Sacudido onde? terris et alto, por terras e pelo alto-mar; quanto? multum, muito. O verbo de ille, venit, está no verso 2.\nlitora: acusativo neutro plural, para onde, com Lavinia: às praias lavínias.\nmultum: acusativo neutro singular, como advérbio: muito.\nille: nominativo masculino singular, ele, o homem do verso 1.\net: et… et: tanto… como.\nterris: ablativo plural, onde: por terras.\niactatus: particípio perfeito, nominativo masculino singular, concorda com ille: sacudido.\nalto: ablativo neutro singular, como nome, o alto-mar: onde.\nMultum, neutro de multus, vale como advérbio: «muito». Et… et é «tanto… como». Altum, como nome, é o alto-mar. Iactatus é particípio perfeito, de sentido passivo: «sacudido», e não «sacudindo».",
+  "nota": "iactatus (sacudir), particípio de ille: quem é sacudido? ille, ele. Onde? terris et alto, por terras e pelo alto-mar. Quanto? multum, muito. Por quê? vi superum, pela força dos deuses.\nmultum: acusativo neutro singular, como advérbio: muito.\nille: nominativo masculino singular, ele, o homem do verso 1.\net: et… et: tanto… como.\nterris: ablativo plural, onde: por terras.\niactatus: particípio perfeito, nominativo masculino singular, concorda com ille: sacudido.\nalto: ablativo neutro singular, como nome, o alto-mar: onde.\nvi: ablativo singular, a causa: pela força.\nsuperum: genitivo masculino plural, forma antiga de superorum: dos deuses.\nSem verbo: iactatus é particípio, e o verbo de ille é venit, no verso 2. Superum é o genitivo plural antigo (= superorum).",
   "nivel": "B1",
   "tags": [
    "trecho"
   ],
-  "fonte": "Vergílio, Eneida I,3",
+  "fonte": "Vergílio, Eneida I,3–4",
   "requerTodas": [
-   "la-p213",
    "la-p214",
    "la-p215",
    "la-p009",
    "la-p096",
    "la-p216",
    "la-p217",
-   "la-v481",
+   "la-p218",
+   "la-p219",
    "la-v486",
    "la-v445",
    "la-v469",
    "la-v488",
-   "la-v491"
+   "la-v491",
+   "la-v492",
+   "la-v495"
   ],
   "palavras": [
-   {
-    "w": "litora",
-    "c": "la-p213",
-    "f": "acusativo neutro plural",
-    "fn": "para onde, com Lavinia: às praias lavínias"
-   },
    {
     "w": "multum",
     "c": "la-p214",
@@ -244,51 +271,7 @@
     "c": "la-p217",
     "f": "ablativo neutro singular",
     "fn": "como nome, o alto-mar: onde"
-   }
-  ],
-  "conceitos": [
-   "la-g003",
-   "la-g001",
-   "la-g006",
-   "la-g014",
-   "la-g032"
-  ],
-  "texto": "vergilio/eneida-parte-1",
-  "linha": 3
- },
- {
-  "id": "la-t039",
-  "tipo": "frase",
-  "la": "vi superum saevae memorem Iunonis ob iram;",
-  "pt": "pela força dos deuses, por causa da ira rancorosa da cruel Juno;",
-  "gabarito": "[[[pela força ~ pela violência ~ pelo poder] [dos deuses ~ dos de cima ~ dos deuses do alto] [por causa da ~ pela ~ devido à] [ira ~ cólera] [rancorosa ~ que não esquece ~ memoriosa ~ vingativa ~ lembrada] da [cruel ~ feroz] Juno ~ [pela força ~ pela violência] dos deuses [por causa da ~ devido à] [ira ~ cólera] da [cruel ~ feroz] Juno [que não esquece ~ rancorosa ~ vingativa]] ~ pela força dos deuses de cima por causa da ira que não esquece da cruel Juno ~ pelo poder dos deuses celestes por causa da ira memoriosa da feroz Juno ~ por força dos deuses superiores devido à ira de Juno a cruel que não esquece]",
-  "aceitas": [],
-  "distratores": [
-   "pela força dos deuses cruéis, por causa da ira rancorosa de Juno;",
-   "pela força do deus de cima, por causa da ira rancorosa da cruel Juno;",
-   "pela força dos deuses, por causa da ira rancorosa contra a cruel Juno;",
-   "a força dos deuses, por causa da ira rancorosa da cruel Juno;"
-  ],
-  "nota": "Sem verbo neste verso: continua iactatus (verso 3). Sacudido por quê? vi superum, pela força dos deuses, e ob iram, por causa da ira memorem, rancorosa, saevae Iunonis, da cruel Juno.\nvi: ablativo singular, a causa: pela força.\nsuperum: genitivo masculino plural, forma antiga de superorum: dos deuses.\nsaevae: genitivo feminino singular, concorda com Iunonis.\nmemorem: acusativo feminino singular, concorda com iram: que não esquece.\nIunonis: genitivo singular, nome próprio, Juno: de quem é a ira.\nob: preposição com acusativo.\niram: acusativo singular, com ob: por causa da ira.\nSuperum é o genitivo plural antigo (= superorum), que a poesia prefere. Saevae concorda com Iunonis (genitivo) e memorem com iram (acusativo): é a ira que não esquece. Juno odeia os troianos e quer impedir que Eneias chegue à Itália.",
-  "nivel": "B1",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Vergílio, Eneida I,4",
-  "requerTodas": [
-   "la-p218",
-   "la-p219",
-   "la-p220",
-   "la-p221",
-   "la-p222",
-   "la-p223",
-   "la-v492",
-   "la-v495",
-   "la-v496",
-   "la-v498",
-   "la-v500"
-  ],
-  "palavras": [
+   },
    {
     "w": "vi",
     "c": "la-p218",
@@ -300,6 +283,59 @@
     "c": "la-p219",
     "f": "genitivo masculino plural",
     "fn": "forma antiga de superorum: dos deuses"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g001",
+   "la-g006",
+   "la-g014",
+   "la-g032",
+   "la-g004"
+  ],
+  "texto": "vergilio/eneida-parte-1",
+  "linha": 3,
+  "versos": [
+   3,
+   4
+  ]
+ },
+ {
+  "id": "la-t088",
+  "tipo": "frase",
+  "la": "iactatus … saevae memorem Iunonis ob iram;",
+  "pt": "sacudido por causa da ira rancorosa da cruel Juno",
+  "gabarito": "[sacudido ~ agitado ~ lançado ~ jogado ~ batido] [[por causa da ~ pela ~ devido à] [ira ~ cólera] [rancorosa ~ que não esquece ~ vingativa ~ memoriosa] da [cruel ~ feroz] Juno ~ [por causa da ~ devido à ~ pela] [ira ~ cólera] da [cruel ~ feroz] Juno [que não esquece ~ rancorosa ~ vingativa]]",
+  "aceitas": [],
+  "distratores": [
+   "sacudido por causa da ira cruel da rancorosa Juno",
+   "sacudindo, por causa da ira rancorosa da cruel Juno",
+   "sacudida pela ira rancorosa da cruel Juno",
+   "sacudido por causa das iras rancorosas da cruel Juno"
+  ],
+  "nota": "iactatus (sacudir), particípio de ille: sacudido por quê? ob iram, por causa da ira. Que ira? memorem, rancorosa. De quem? Iunonis, de Juno, saevae, cruel.\niactatus: particípio perfeito, nominativo masculino singular, concorda com ille, no verso 3: sacudido.\nsaevae: genitivo feminino singular, concorda com Iunonis.\nmemorem: acusativo feminino singular, concorda com iram: que não esquece.\nIunonis: genitivo singular, nome próprio, Juno: de quem é a ira.\nob: preposição com acusativo.\niram: acusativo singular, com ob: por causa da ira.\nSaevae concorda com Iunonis (genitivo) e memorem com iram (acusativo): cruel é Juno; rancorosa, que não esquece, é a ira.",
+  "nivel": "B1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Vergílio, Eneida I,3–4",
+  "requerTodas": [
+   "la-p216",
+   "la-p220",
+   "la-p221",
+   "la-p222",
+   "la-p223",
+   "la-v488",
+   "la-v496",
+   "la-v498",
+   "la-v500"
+  ],
+  "palavras": [
+   {
+    "w": "iactatus",
+    "c": "la-p216",
+    "f": "particípio perfeito, nominativo masculino singular",
+    "fn": "concorda com ille, no verso 3: sacudido"
    },
    {
     "w": "saevae",
@@ -331,27 +367,33 @@
    }
   ],
   "conceitos": [
+   "la-g003",
+   "la-g001",
    "la-g006",
-   "la-g004",
-   "la-g003"
+   "la-g014",
+   "la-g004"
   ],
   "texto": "vergilio/eneida-parte-1",
-  "linha": 4
+  "linha": 4,
+  "versos": [
+   3,
+   4
+  ]
  },
  {
-  "id": "la-t040",
+  "id": "la-t089",
   "tipo": "frase",
-  "la": "multa quoque et bello passus, dum conderet urbem,",
-  "pt": "tendo sofrido muitas coisas também na guerra, até que fundasse a cidade,",
-  "gabarito": "[[[tendo sofrido ~ sofrendo ~ tendo padecido ~ e sofreu ~ sofreu] [muitas coisas ~ muito ~ muitos males] [também ~ ainda] [na guerra ~ em guerra] ~ [tendo sofrido ~ sofreu ~ e sofreu] [também ~ ainda] [muitas coisas ~ muito] [na guerra ~ em guerra]] [até que ~ até] [fundasse ~ fundar ~ pudesse fundar ~ conseguisse fundar] a cidade ~ muitas coisas também e na guerra tendo sofrido até que fundasse a cidade ~ depois de padecer ainda muitas penas na guerra até que edificasse a cidade ~ e que também sofreu muito na guerra até fundar a cidade]",
+  "la": "multa quoque et bello passus",
+  "pt": "tendo sofrido muitas coisas também na guerra",
+  "gabarito": "[[tendo sofrido ~ tendo padecido ~ tendo suportado ~ e sofreu ~ sofreu] [muitas coisas ~ muito ~ muitos males] [também ~ ainda] [na guerra ~ em guerra] ~ [tendo sofrido ~ tendo padecido ~ sofreu ~ e sofreu] [também ~ ainda] [muitas coisas ~ muito] [na guerra ~ em guerra] ~ [também ~ ainda] na guerra [tendo sofrido ~ sofreu] muitas coisas]",
   "aceitas": [],
   "distratores": [
-   "tendo sofrido muitas coisas também na guerra, enquanto fundava a cidade,",
-   "tendo sofrido muitas coisas também na guerra, até que fundassem a cidade,",
-   "muitas coisas sofreram também na guerra, até que fundasse a cidade,",
-   "tendo sofrido muitas guerras também, até que fundasse a cidade,"
+   "muitas coisas sofreram também na guerra",
+   "tendo sofrido muitas guerras também",
+   "tendo sofrido muitas coisas também nas guerras",
+   "sofrendo muitas coisas também na guerra"
   ],
-  "nota": "passus (sofrer), particípio de ille (verso 3): sofreu o quê? multa, muitas coisas; onde? bello, na guerra. Até quando? dum conderet urbem, até que fundasse a cidade. O verbo de ille, venit, está no verso 2.\nmulta: acusativo neutro plural, objeto de passus: muitas coisas.\net: também, junto com quoque.\nbello: ablativo singular, onde: na guerra.\npassus: particípio perfeito, nominativo masculino singular, de depoente, sentido ativo: tendo sofrido.\ndum: com subjuntivo: até que.\nconderet: imperfeito do subjuntivo, 3ª pessoa do singular, até que fundasse.\nurbem: acusativo singular, objeto de conderet.\nPassus é o particípio de patior, depoente: forma passiva, sentido ativo, «tendo sofrido». Multa, neutro plural, é «muitas coisas». Dum com o subjuntivo diz o que se espera: «até que fundasse», até conseguir fundar a cidade (Lavínio).",
+  "nota": "passus (sofrer), particípio de patior, vai com ille: quem sofreu? ele, o homem. O quê? multa, muitas coisas. Onde? bello, na guerra.\nmulta: acusativo neutro plural, objeto de passus: muitas coisas.\net: também, junto com quoque.\nbello: ablativo singular, onde: na guerra.\npassus: particípio perfeito, nominativo masculino singular, de depoente, sentido ativo: tendo sofrido.\nPassus vai com ille (verso 3): ele veio à Itália, sacudido e tendo sofrido muito, até fundar a cidade (verso 5).\nPassus, de patior, é depoente: forma passiva, sentido ativo, «tendo sofrido».",
   "nivel": "B1",
   "tags": [
    "trecho"
@@ -363,14 +405,9 @@
    "la-p009",
    "la-p157",
    "la-p225",
-   "la-p131",
-   "la-p226",
-   "la-p227",
    "la-v484",
    "la-v471",
-   "la-v501",
-   "la-v504",
-   "la-v507"
+   "la-v501"
   ],
   "palavras": [
    {
@@ -399,7 +436,55 @@
     "c": "la-p225",
     "f": "particípio perfeito, nominativo masculino singular",
     "fn": "de depoente, sentido ativo: tendo sofrido"
-   },
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g006",
+   "la-g014",
+   "la-g016",
+   "la-g017",
+   "la-g032"
+  ],
+  "texto": "vergilio/eneida-parte-1",
+  "linha": 5,
+  "versos": [
+   5,
+   5
+  ]
+ },
+ {
+  "id": "la-t090",
+  "tipo": "frase",
+  "la": "dum conderet urbem, inferretque deos Latio",
+  "pt": "até que fundasse a cidade e levasse os deuses ao Lácio",
+  "gabarito": "[até que [fundasse ~ pudesse fundar ~ conseguisse fundar ~ edificasse] a cidade e [levasse ~ trouxesse ~ introduzisse ~ pudesse levar] os deuses [ao Lácio ~ para o Lácio ~ até o Lácio] ~ até [fundar ~ conseguir fundar] a cidade e [levar ~ trazer] os deuses [ao Lácio ~ para o Lácio]]",
+  "aceitas": [],
+  "distratores": [
+   "enquanto fundava a cidade e levava os deuses ao Lácio",
+   "até que fundassem a cidade e levassem os deuses ao Lácio",
+   "até que fundasse a cidade e levasse os deuses do Lácio",
+   "até que fundasse a cidade e os deuses o levassem ao Lácio"
+  ],
+  "nota": "conderet (fundar): quem? ele (na terminação). O quê? urbem, a cidade. · inferret (levar): quem? ele. O quê? deos, os deuses. Para onde? Latio, ao Lácio.\ndum: com subjuntivo: até que.\nconderet: imperfeito do subjuntivo, 3ª pessoa do singular, até que fundasse.\nurbem: acusativo singular, objeto de conderet.\ninferret: imperfeito do subjuntivo, 3ª pessoa do singular, ainda com dum: e levasse.\ndeos: acusativo plural, objeto de inferret: os deuses de Troia.\nLatio: dativo singular, nome próprio, Lácio: para onde.\nDum com o subjuntivo diz o que se espera: «até que fundasse». Inferret, com -que, ainda depende de dum. Latio é dativo de para onde, coisa da poesia.",
+  "nivel": "B1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Vergílio, Eneida I,5–6",
+  "requerTodas": [
+   "la-p131",
+   "la-p226",
+   "la-p227",
+   "la-p195",
+   "la-p028",
+   "la-p001",
+   "la-v504",
+   "la-v507",
+   "la-v475",
+   "la-v003"
+  ],
+  "palavras": [
    {
     "w": "dum",
     "c": "la-p131",
@@ -416,48 +501,7 @@
     "c": "la-p227",
     "f": "acusativo singular",
     "fn": "objeto de conderet"
-   }
-  ],
-  "conceitos": [
-   "la-g003",
-   "la-g006",
-   "la-g014",
-   "la-g016",
-   "la-g017",
-   "la-g032"
-  ],
-  "texto": "vergilio/eneida-parte-1",
-  "linha": 5
- },
- {
-  "id": "la-t041",
-  "tipo": "frase",
-  "la": "inferretque deos Latio, genus unde Latinum,",
-  "pt": "e levasse os deuses ao Lácio; de onde a raça latina,",
-  "gabarito": "[e [levasse ~ trouxesse ~ introduzisse ~ pudesse levar ~ levar] os deuses [ao Lácio ~ para o Lácio] [de onde ~ donde] [vem ~ veio ~ nasceu ~ descende ~ provém ~] a [raça ~ estirpe ~ linhagem ~ gente ~ nação] latina ~ e introduzisse os deuses no Lácio donde a raça latina ~ e trouxesse os deuses para o Lácio de onde o povo latino ~ e transportasse os deuses ao Lácio de onde provém a linhagem latina]",
-  "aceitas": [],
-  "distratores": [
-   "e levasse os deuses latinos ao Lácio; de onde a raça,",
-   "e levasse os deuses do Lácio; de onde a raça latina,",
-   "e levassem os deuses ao Lácio; de onde a raça latina,",
-   "e o deus levasse ao Lácio; de onde a raça latina,"
-  ],
-  "nota": "inferret (levar), ainda com dum (verso 5): quem leva? ele, Eneias (na terminação). O quê? deos, os deuses. Para onde? Latio, ao Lácio. Depois, genus unde Latinum: sem verbo, subentende-se est.\ninferret: imperfeito do subjuntivo, 3ª pessoa do singular, ainda com dum: e levasse.\ndeos: acusativo plural, objeto de inferret: os deuses de Troia.\nLatio: dativo singular, nome próprio, Lácio: para onde.\ngenus: nominativo singular, o sujeito; o verbo fica subentendido.\nunde: de onde: de Eneias e dos seus.\nLatinum: nominativo neutro singular, nome próprio, latino: concorda com genus.\nInferret, imperfeito do subjuntivo de infero, ainda depende de dum: «até que fundasse… e levasse». Latio é dativo de para onde, coisa da poesia. Unde genus Latinum: de onde vem a raça latina; o verbo fica subentendido, e a frase continua no verso seguinte.",
-  "nivel": "B1",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Vergílio, Eneida I,6",
-  "requerTodas": [
-   "la-p195",
-   "la-p028",
-   "la-p001",
-   "la-p228",
-   "la-p229",
-   "la-v475",
-   "la-v003"
-  ],
-  "palavras": [
+   },
    {
     "w": "inferret",
     "c": "la-p195",
@@ -478,12 +522,60 @@
     "w": "Latio",
     "f": "dativo singular",
     "fn": "nome próprio, Lácio: para onde"
-   },
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g006",
+   "la-g014",
+   "la-g016",
+   "la-g017",
+   "la-g005",
+   "la-g001"
+  ],
+  "texto": "vergilio/eneida-parte-1",
+  "linha": 6,
+  "versos": [
+   5,
+   6
+  ]
+ },
+ {
+  "id": "la-t091",
+  "tipo": "frase",
+  "la": "genus unde Latinum, Albanique patres, atque altae moenia Romae.",
+  "pt": "de onde vêm a raça latina, os pais albanos e as muralhas da alta Roma",
+  "gabarito": "de onde [vêm ~ vem ~ vieram ~ nasceram ~ descendem ~] a [raça ~ estirpe ~ linhagem] latina [e ~] os [pais ~ antepassados ~ patriarcas] [albanos ~ de Alba] [e ~ e também] as [muralhas ~ muros] da [alta ~ altiva] Roma",
+  "aceitas": [],
+  "distratores": [
+   "de onde vêm a raça latina, os pais albanos e as altas muralhas de Roma",
+   "de onde vêm a raça latina, o pai albano e as muralhas da alta Roma",
+   "de onde vem a raça latina dos pais albanos e das muralhas da alta Roma",
+   "aonde vão a raça latina, os pais albanos e as muralhas da alta Roma"
+  ],
+  "nota": "Sem verbo: subentende-se est (vir de): o que vem? genus Latinum, a raça latina, patres Albani, os pais albanos, e moenia, as muralhas de Roma. De onde? unde, de Eneias.\ngenus: nominativo singular, sujeito; o verbo (est) fica subentendido.\nunde: de onde: de Eneias e dos seus.\nLatinum: nominativo neutro singular, nome próprio, latino: concorda com genus.\nAlbani: nominativo masculino plural, nome próprio, albano: concorda com patres.\npatres: nominativo plural, sujeito, como genus: os antepassados.\naltae: genitivo feminino singular, concorda com Romae.\nmoenia: nominativo plural, sujeito, como genus.\nRomae: genitivo singular, nome próprio, Roma: de Roma.\nGenus, patres e moenia são os três sujeitos; o verbo (est, vem) fica subentendido. Aqui fecha a frase que começou no verso 1.",
+  "nivel": "B1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Vergílio, Eneida I,6–7",
+  "requerTodas": [
+   "la-p228",
+   "la-p229",
+   "la-p028",
+   "la-p072",
+   "la-p230",
+   "la-p217",
+   "la-p231",
+   "la-v201",
+   "la-v489"
+  ],
+  "palavras": [
    {
     "w": "genus",
     "c": "la-p228",
     "f": "nominativo singular",
-    "fn": "o sujeito; o verbo fica subentendido"
+    "fn": "sujeito; o verbo (est) fica subentendido"
    },
    {
     "w": "unde",
@@ -494,46 +586,7 @@
     "w": "Latinum",
     "f": "nominativo neutro singular",
     "fn": "nome próprio, latino: concorda com genus"
-   }
-  ],
-  "conceitos": [
-   "la-g017",
-   "la-g003",
-   "la-g005",
-   "la-g001"
-  ],
-  "texto": "vergilio/eneida-parte-1",
-  "linha": 6
- },
- {
-  "id": "la-t042",
-  "tipo": "frase",
-  "la": "Albanique patres, atque altae moenia Romae.",
-  "pt": "e os pais albanos, e as muralhas da alta Roma.",
-  "gabarito": "[e os [pais ~ patriarcas ~ antepassados ~ senadores ~ fundadores ~ avós] [albanos ~ de Alba] [e ~ e também ~ e ainda] as [muralhas ~ muros ~ fortificações] [da [alta ~ altiva ~ elevada ~ excelsa ~ grandiosa] Roma ~ da Roma [alta ~ altiva]] ~ e os ancestrais albanos e também os muros da alta Roma]",
-  "aceitas": [],
-  "distratores": [
-   "e os pais albanos, e as altas muralhas de Roma.",
-   "e levou os pais albanos e as muralhas da alta Roma.",
-   "e o pai albano, e as muralhas da alta Roma.",
-   "e os pais albanos, e as muralhas, na alta Roma."
-  ],
-  "nota": "Sem verbo: continua genus unde (verso 6), com est (é, vem) subentendido. Quem vem de Eneias? patres Albani, os pais albanos, e moenia altae Romae, as muralhas da alta Roma.\nAlbani: nominativo masculino plural, nome próprio, albano: concorda com patres.\npatres: nominativo plural, sujeito, como genus: os antepassados.\naltae: genitivo feminino singular, concorda com Romae.\nmoenia: nominativo plural, sujeito, como genus.\nRomae: genitivo singular, nome próprio, Roma: de Roma.\nPatres e moenia são sujeitos, como genus no verso anterior: de Eneias vêm a raça latina, os pais de Alba Longa e as muralhas de Roma. Romae é genitivo (de Roma); a mesma forma é também o locativo, «em Roma». Aqui fecha a primeira frase do poema.",
-  "nivel": "B1",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Vergílio, Eneida I,7",
-  "requerTodas": [
-   "la-p028",
-   "la-p072",
-   "la-p230",
-   "la-p217",
-   "la-p231",
-   "la-v201",
-   "la-v489"
-  ],
-  "palavras": [
+   },
    {
     "w": "Albani",
     "f": "nominativo masculino plural",
@@ -572,27 +625,33 @@
    }
   ],
   "conceitos": [
+   "la-g017",
+   "la-g003",
+   "la-g005",
    "la-g001",
-   "la-g004",
-   "la-g032"
+   "la-g004"
   ],
   "texto": "vergilio/eneida-parte-1",
-  "linha": 7
+  "linha": 7,
+  "versos": [
+   6,
+   7
+  ]
  },
  {
-  "id": "la-t043",
+  "id": "la-t092",
   "tipo": "frase",
-  "la": "Musa, mihi causas memora, quo numine laeso,",
-  "pt": "Musa, lembra-me as causas: por qual divindade ofendida,",
-  "gabarito": "[[Ó ~] Musa [lembra-me ~ conta-me ~ recorda-me ~ narra-me ~ me conta ~ me conte ~ me lembre ~ conte-me ~ lembre-me ~ narre-me] as causas [[por qual ~ por que ~ em que] [divindade ~ poder divino ~ nume ~ majestade ~ vontade divina] [ofendida ~ ofendido ~ ferida ~ ferido] ~ [ofendida ~ ofendido ~ ferida] [em qual ~ em que] [divindade ~ poder divino ~ nume ~ majestade]] ~ Musa recorda-me as causas tendo sido ofendida qual divindade ~ Musa conta-me as causas que divindade foi ofendida ~ Musa relembra-me os motivos ofendido que poder divino ~ Musa narra-me as razões por ter sido ofendida que divindade]",
+  "la": "Musa, mihi causas memora",
+  "pt": "Musa, lembra-me as causas",
+  "gabarito": "[Ó ~] Musa [lembra-me ~ conta-me ~ recorda-me ~ narra-me ~ me conta ~ me conte ~ me lembre ~ conte-me ~ lembre-me ~ narre-me] [as [causas ~ razões] ~ os motivos]",
   "aceitas": [],
   "distratores": [
-   "A Musa me lembra as causas: por qual divindade ofendida,",
-   "Musa, lembra-te das causas: por qual divindade ofendida,",
-   "Musa, lembro-me das causas: por qual divindade ofendida,",
-   "Musa, lembra-me as causas: qual divindade ofendeu,"
+   "A Musa me lembra as causas",
+   "Musa, lembra-te das causas",
+   "Musa, lembro-me das causas",
+   "Musa, lembra-me a causa"
   ],
-  "nota": "memora (lembrar, contar): quem? tu, Musa (vocativo). O quê? causas, as causas. A quem? mihi, a mim. Depois, quo numine laeso: ofendida qual divindade? A pergunta fecha em impulerit (verso 11).\nMusa: vocativo singular, a quem se fala.\nmihi: dativo singular, a quem: a mim.\ncausas: acusativo plural, objeto de memora.\nmemora: imperativo presente, 2ª pessoa do singular, lembra, conta.\nquo: ablativo neutro singular, interrogativo, concorda com numine: qual.\nnumine: ablativo singular, com laeso, ablativo absoluto.\nlaeso: particípio perfeito, ablativo neutro singular, com numine: tendo sido ofendido.\nMusa é vocativo, e memora, o imperativo: «lembra-me». Quo numine laeso é um ablativo absoluto: o nome e o particípio no ablativo, soltos do resto da frase, dizem a circunstância, «tendo sido ofendida qual divindade (de Juno)». A pergunta é indireta e só fecha no verso 11, com impulerit.",
+  "nota": "memora (lembrar, contar): quem? tu, Musa (vocativo). O quê? causas, as causas. A quem? mihi, a mim.\nMusa: vocativo singular, a quem se fala.\nmihi: dativo singular, a quem: a mim.\ncausas: acusativo plural, objeto de memora.\nmemora: imperativo presente, 2ª pessoa do singular, lembra, conta.\nA frase segue até o verso 11: as causas são a pergunta «por que a rainha dos deuses levou um homem tão piedoso a tantas desgraças».",
   "nivel": "B1",
   "tags": [
    "trecho"
@@ -603,15 +662,9 @@
    "la-p004",
    "la-p194",
    "la-p233",
-   "la-p236",
-   "la-p234",
-   "la-p235",
    "la-v042",
    "la-v474",
-   "la-v510",
-   "la-v515",
-   "la-v511",
-   "la-v513"
+   "la-v510"
   ],
   "palavras": [
    {
@@ -637,7 +690,63 @@
     "c": "la-p233",
     "f": "imperativo presente, 2ª pessoa do singular",
     "fn": "lembra, conta"
-   },
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g005",
+   "la-g003",
+   "la-g011",
+   "la-g006",
+   "la-g014",
+   "la-g020"
+  ],
+  "texto": "vergilio/eneida-parte-2",
+  "linha": 1,
+  "versos": [
+   1,
+   1
+  ]
+ },
+ {
+  "id": "la-t093",
+  "tipo": "frase",
+  "la": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
+  "pt": "por qual divindade ofendida, ou magoada com quê, a rainha dos deuses levou o homem …",
+  "gabarito": "[por qual ~ por que] [divindade ~ nume ~ poder divino] [ofendida ~ ofendido ~ ferida] ou [magoada ~ ressentida ~ sentida] [com quê ~ de quê] a rainha dos deuses [levou ~ impeliu ~ obrigou ~ tenha levado] o [homem ~ varão]",
+  "aceitas": [],
+  "distratores": [
+   "por qual divindade ofendida, ou magoada com quê, a rainha dos deuses levará o homem …",
+   "por qual divindade ofendida, ou magoado com quê, o homem levou a rainha dos deuses …",
+   "por qual divindade ofendida, ou magoada com quê, a rainha do deus levou o homem …",
+   "por qual divindade ofendida, ou magoadas com quê, as rainhas dos deuses levaram o homem …"
+  ],
+  "nota": "impulerit (levar): quem levou? regina deum, a rainha dos deuses. Levou quem? virum, o homem. Por quê? quo numine laeso, ofendida qual divindade, quid dolens, magoada com quê.\nquo: ablativo neutro singular, interrogativo, concorda com numine: qual.\nnumine: ablativo singular, com laeso, ablativo absoluto.\nlaeso: particípio perfeito, ablativo neutro singular, com numine: tendo sido ofendido.\nquid: acusativo neutro singular, de quê.\ndolens: particípio presente, nominativo feminino singular, concorda com regina: ressentida.\nregina: nominativo singular, sujeito de impulerit.\ndeum: genitivo plural, forma antiga de deorum: dos deuses.\nvirum: acusativo singular, objeto de impulerit.\nimpulerit: perfeito do subjuntivo, 3ª pessoa do singular, na pergunta indireta: levou.\nA pergunta depende de memora (verso 8): conta-me por que a rainha levou o homem a tantas desgraças.\nQuo numine laeso: ablativo absoluto.",
+  "nivel": "B1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Vergílio, Eneida I,8–11",
+  "requerTodas": [
+   "la-p236",
+   "la-p234",
+   "la-p235",
+   "la-p237",
+   "la-p238",
+   "la-p172",
+   "la-p001",
+   "la-p027",
+   "la-p246",
+   "la-v515",
+   "la-v511",
+   "la-v513",
+   "la-v514",
+   "la-v517",
+   "la-v004",
+   "la-v092",
+   "la-v526"
+  ],
+  "palavras": [
    {
     "w": "quo",
     "c": "la-p236",
@@ -655,54 +764,7 @@
     "c": "la-p235",
     "f": "particípio perfeito, ablativo neutro singular",
     "fn": "com numine: tendo sido ofendido"
-   }
-  ],
-  "conceitos": [
-   "la-g002",
-   "la-g005",
-   "la-g003",
-   "la-g011",
-   "la-g006",
-   "la-g014",
-   "la-g020"
-  ],
-  "texto": "vergilio/eneida-parte-2",
-  "linha": 1
- },
- {
-  "id": "la-t044",
-  "tipo": "frase",
-  "la": "quidve dolens, regina deum tot volvere casus",
-  "pt": "ou magoada com quê, a rainha dos deuses a passar por tantas desgraças",
-  "gabarito": "[ou [ressentida ~ sentida ~ magoada ~ irritada ~ ofendida ~ doída ~ sofrendo ~ sentindo dor] [de quê ~ com quê ~ por quê ~ pelo quê ~ por qual coisa] a rainha dos deuses [a passar por ~ a sofrer ~ a rolar ~ a percorrer ~ a atravessar ~ a enfrentar] tantas [desgraças ~ desventuras ~ infortúnios ~ calamidades ~ provações ~ quedas ~ desastres] ~ ou magoada com o quê a rainha dos deuses a revolver tantos infortúnios ~ ou sofrendo por qual dor a rainha dos deuses a passar por tantas desgraças ~ ou aflita por que motivo a rainha dos deuses a percorrer tantas vicissitudes ~ ou ressentida com o quê a rainha dos deuses a viver tantas adversidades]",
-  "aceitas": [],
-  "distratores": [
-   "ou magoando-se com quê, a rainha dos deuses passou por tantas desgraças",
-   "ou magoada com quê, a rainha do deus a passar por tantas desgraças",
-   "ou o que magoa a rainha dos deuses, a passar por tantas desgraças",
-   "e magoada com quê, a rainha dos deuses a passar por tantas desgraças"
-  ],
-  "nota": "O verbo principal, impulerit (levar), está no verso 11. Quem levou? regina deum, a rainha dos deuses, dolens, magoada com quê (quid). A quê? volvere casus, a passar por tantas (tot) desgraças.\nquid: acusativo neutro singular, de quê.\ndolens: particípio presente, nominativo feminino singular, concorda com regina: ressentida.\nregina: nominativo singular, sujeito de impulerit, no verso 11.\ndeum: genitivo plural, forma antiga de deorum: dos deuses.\ntot: concorda com casus.\nvolvere: infinitivo presente, depende de impulerit: a passar por.\ncasus: acusativo plural, objeto de volvere: as desgraças.\nDolens é particípio presente de doleo, «sentindo dor», «ressentida», e concorda com regina, Juno. Quid + -ve: «ou de quê». Deum é o genitivo plural antigo (= deorum). Volvere, infinitivo, depende de impulerit, no verso 11: a rainha levou o homem a passar por tantas desgraças.",
-  "nivel": "B1",
-  "tags": [
-   "trecho"
-  ],
-  "fonte": "Vergílio, Eneida I,9",
-  "requerTodas": [
-   "la-p236",
-   "la-p237",
-   "la-p238",
-   "la-p172",
-   "la-p001",
-   "la-p239",
-   "la-p240",
-   "la-p241",
-   "la-v514",
-   "la-v517",
-   "la-v004",
-   "la-v519"
-  ],
-  "palavras": [
+   },
    {
     "w": "quid",
     "c": "la-p236",
@@ -723,7 +785,91 @@
     "w": "regina",
     "c": "la-p172",
     "f": "nominativo singular",
-    "fn": "sujeito de impulerit, no verso 11"
+    "fn": "sujeito de impulerit"
+   },
+   {
+    "w": "deum",
+    "c": "la-p001",
+    "f": "genitivo plural",
+    "fn": "forma antiga de deorum: dos deuses"
+   },
+   {
+    "w": "virum",
+    "c": "la-p027",
+    "f": "acusativo singular",
+    "fn": "objeto de impulerit"
+   },
+   {
+    "w": "impulerit",
+    "c": "la-p246",
+    "f": "perfeito do subjuntivo, 3ª pessoa do singular",
+    "fn": "na pergunta indireta: levou"
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g005",
+   "la-g003",
+   "la-g011",
+   "la-g006",
+   "la-g014",
+   "la-g020",
+   "la-g019",
+   "la-g001",
+   "la-g004",
+   "la-g013",
+   "la-g032",
+   "la-g018"
+  ],
+  "texto": "vergilio/eneida-parte-2",
+  "linha": 2,
+  "versos": [
+   1,
+   4
+  ]
+ },
+ {
+  "id": "la-t094",
+  "tipo": "frase",
+  "la": "regina deum tot volvere casus insignem pietate virum … impulerit.",
+  "pt": "a rainha dos deuses levou um homem notável pela piedade a passar por tantas desgraças …",
+  "gabarito": "a rainha dos deuses [[levou ~ impeliu ~ obrigou] [um ~ o ~] [homem ~ varão] [notável ~ insigne] [pela piedade ~ por sua piedade] [a passar por ~ a sofrer ~ a atravessar] tantas [desgraças ~ desventuras ~ provações] ~ levou a passar por tantas desgraças um homem notável pela piedade]",
+  "aceitas": [],
+  "distratores": [
+   "a rainha dos deuses levará um homem notável pela piedade a passar por tantas desgraças …",
+   "o homem notável pela piedade levou a rainha dos deuses a passar por tantas desgraças …",
+   "a rainha dos deuses, notável pela piedade, levou um homem a passar por tantas desgraças …",
+   "a rainha do deus levou um homem notável pela piedade a passar por tantas desgraças …"
+  ],
+  "nota": "impulerit (levar): quem levou? regina deum, a rainha dos deuses. Levou quem? virum, um homem insignem pietate, notável pela piedade. A quê? volvere casus, a passar por desgraças.\nregina: nominativo singular, sujeito de impulerit.\ndeum: genitivo plural, forma antiga de deorum: dos deuses.\ntot: concorda com casus.\nvolvere: infinitivo presente, depende de impulerit: a passar por.\ncasus: acusativo plural, objeto de volvere: as desgraças.\ninsignem: acusativo masculino singular, concorda com virum.\npietate: ablativo singular, em quê: notável pela piedade.\nvirum: acusativo singular, objeto de impulerit.\nimpulerit: perfeito do subjuntivo, 3ª pessoa do singular, na pergunta indireta: levou.\nVolvere, infinitivo, depende de impulerit: levou a passar por. A frase segue com tot adire labores: e a enfrentar tantos trabalhos.",
+  "nivel": "B1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Vergílio, Eneida I,9–11",
+  "requerTodas": [
+   "la-p172",
+   "la-p001",
+   "la-p239",
+   "la-p240",
+   "la-p241",
+   "la-p242",
+   "la-p243",
+   "la-p027",
+   "la-p246",
+   "la-v004",
+   "la-v519",
+   "la-v521",
+   "la-v522",
+   "la-v092",
+   "la-v526"
+  ],
+  "palavras": [
+   {
+    "w": "regina",
+    "c": "la-p172",
+    "f": "nominativo singular",
+    "fn": "sujeito de impulerit"
    },
    {
     "w": "deum",
@@ -747,6 +893,30 @@
     "c": "la-p241",
     "f": "acusativo plural",
     "fn": "objeto de volvere: as desgraças"
+   },
+   {
+    "w": "insignem",
+    "c": "la-p242",
+    "f": "acusativo masculino singular",
+    "fn": "concorda com virum"
+   },
+   {
+    "w": "pietate",
+    "c": "la-p243",
+    "f": "ablativo singular",
+    "fn": "em quê: notável pela piedade"
+   },
+   {
+    "w": "virum",
+    "c": "la-p027",
+    "f": "acusativo singular",
+    "fn": "objeto de impulerit"
+   },
+   {
+    "w": "impulerit",
+    "c": "la-p246",
+    "f": "perfeito do subjuntivo, 3ª pessoa do singular",
+    "fn": "na pergunta indireta: levou"
    }
   ],
   "conceitos": [
@@ -755,30 +925,36 @@
    "la-g001",
    "la-g004",
    "la-g013",
-   "la-g032"
+   "la-g006",
+   "la-g018",
+   "la-g005"
   ],
   "texto": "vergilio/eneida-parte-2",
-  "linha": 2
+  "linha": 3,
+  "versos": [
+   2,
+   4
+  ]
  },
  {
-  "id": "la-t045",
+  "id": "la-t095",
   "tipo": "frase",
-  "la": "insignem pietate virum, tot adire labores",
-  "pt": "um homem notável pela piedade, a enfrentar tantos trabalhos",
-  "gabarito": "[[homem ~ varão ~ herói] [notável ~ insigne ~ famoso ~ ilustre] [pela piedade ~ pela devoção ~ pelo senso do dever ~ por sua piedade] [a enfrentar ~ a encarar ~ a empreender ~ a suportar ~ a passar por] [tantos [trabalhos ~ sofrimentos ~ esforços ~ labores] ~ tantas [provações ~ fadigas ~ dificuldades]] ~ um homem notável pela sua piedade a suportar tantas fadigas ~ varão célebre por sua piedade a se submeter a tantos labores ~ homem distinto pela piedade a passar por tantos trabalhos]",
+  "la": "insignem pietate virum, tot adire labores impulerit.",
+  "pt": "levou um homem notável pela piedade a enfrentar tantos trabalhos",
+  "gabarito": "[ela ~] [levou ~ impeliu ~ obrigou] [um ~ o ~] [homem ~ varão] [notável ~ insigne] [pela piedade ~ por sua piedade] [a enfrentar ~ a encarar ~ a suportar] [tantos [trabalhos ~ labores] ~ tantas provações]",
   "aceitas": [],
   "distratores": [
-   "um homem notável pela piedade enfrenta tantos trabalhos",
-   "a piedade notável do homem, a enfrentar tantos trabalhos",
-   "homens notáveis pela piedade, a enfrentar tantos trabalhos",
-   "um homem notável pela piedade, tendo enfrentado tantos trabalhos"
+   "levou um homem notável pela piedade, tendo enfrentado tantos trabalhos",
+   "levou homens notáveis pela piedade a enfrentar tantos trabalhos",
+   "o homem notável pela piedade a levou a enfrentar tantos trabalhos",
+   "levou um homem, pela piedade, a enfrentar tantos trabalhos notáveis"
   ],
-  "nota": "O verbo principal, impulerit (levar), está no verso 11. Levou quem? virum, o homem, insignem pietate, notável pela piedade. A quê? adire labores, a enfrentar tantos (tot) trabalhos.\ninsignem: acusativo masculino singular, concorda com virum.\npietate: ablativo singular, em quê: notável pela piedade.\nvirum: acusativo singular, objeto de impulerit, no verso 11.\ntot: concorda com labores.\nadire: infinitivo presente, depende de impulerit: a enfrentar.\nlabores: acusativo plural, objeto de adire.\nVirum é o objeto de impulerit, no verso 11: a rainha levou o homem a passar por tantas desgraças e a enfrentar tantos trabalhos. Pietate, ablativo: notável em quê. A pietas, o dever para com os deuses, a pátria e a família, é a virtude de Eneias, e a ira de Juno contra um homem assim é o espanto do poeta.",
+  "nota": "impulerit (levar): quem levou? ela, a rainha (na terminação). Levou quem? virum, um homem insignem pietate, notável pela piedade. A quê? adire labores, a enfrentar trabalhos.\ninsignem: acusativo masculino singular, concorda com virum.\npietate: ablativo singular, em quê: notável pela piedade.\nvirum: acusativo singular, objeto de impulerit.\ntot: concorda com labores.\nadire: infinitivo presente, depende de impulerit: a enfrentar.\nlabores: acusativo plural, objeto de adire.\nimpulerit: perfeito do subjuntivo, 3ª pessoa do singular, na pergunta indireta: levou.\nQuem levou está no verso 9: regina deum, a rainha dos deuses. Adire, infinitivo, depende de impulerit: levou a enfrentar.",
   "nivel": "B1",
   "tags": [
    "trecho"
   ],
-  "fonte": "Vergílio, Eneida I,10",
+  "fonte": "Vergílio, Eneida I,10–11",
   "requerTodas": [
    "la-p242",
    "la-p243",
@@ -786,11 +962,13 @@
    "la-p239",
    "la-p244",
    "la-p245",
+   "la-p246",
    "la-v521",
    "la-v522",
    "la-v092",
    "la-v523",
-   "la-v525"
+   "la-v525",
+   "la-v526"
   ],
   "palavras": [
    {
@@ -809,7 +987,7 @@
     "w": "virum",
     "c": "la-p027",
     "f": "acusativo singular",
-    "fn": "objeto de impulerit, no verso 11"
+    "fn": "objeto de impulerit"
    },
    {
     "w": "tot",
@@ -827,55 +1005,60 @@
     "c": "la-p245",
     "f": "acusativo plural",
     "fn": "objeto de adire"
+   },
+   {
+    "w": "impulerit",
+    "c": "la-p246",
+    "f": "perfeito do subjuntivo, 3ª pessoa do singular",
+    "fn": "na pergunta indireta: levou"
    }
   ],
   "conceitos": [
    "la-g003",
    "la-g006",
-   "la-g013"
+   "la-g013",
+   "la-g018",
+   "la-g001",
+   "la-g005"
   ],
   "texto": "vergilio/eneida-parte-2",
-  "linha": 3
+  "linha": 4,
+  "versos": [
+   3,
+   4
+  ]
  },
  {
-  "id": "la-t046",
+  "id": "la-t096",
   "tipo": "frase",
-  "la": "impulerit. Tantaene animis caelestibus irae?",
-  "pt": "levou. Há tamanhas iras nos ânimos celestes?",
-  "gabarito": "[[levou ~ impeliu ~ obrigou ~ forçou ~ tenha levado ~ empurrou] [[Há ~ Existem ~ Cabem] [tamanhas ~ tão grandes ~ tantas] [iras ~ raivas] [nos ânimos celestes ~ nas almas celestes ~ nos espíritos celestes ~ nos corações celestes ~ nos ânimos dos deuses ~ nas almas dos deuses ~ nos corações dos deuses] ~ [Tamanhas ~ Tão grandes ~ Tantas] [iras ~ raivas] [há ~ existem ~ cabem] [nos ânimos celestes ~ nas almas celestes ~ nos ânimos dos deuses ~ nas almas dos deuses] ~ [Os ânimos celestes ~ As almas celestes ~ Os deuses] têm [tamanhas ~ tão grandes ~ tantas] [iras ~ raivas]] ~ tenha impelido Tamanhas iras nos ânimos celestes ~ tenha empurrado Será que há tanta ira nos espíritos celestes ~ tenha levado Tão grandes iras para ânimos celestiais ~ tenha compelido Há ira tamanha nas almas celestiais]",
+  "la": "Tantaene animis caelestibus irae?",
+  "pt": "Há tamanhas iras nos ânimos celestes?",
+  "gabarito": "[[Há ~ Existem ~ Cabem] [tamanhas ~ tão grandes ~ tantas] [iras ~ raivas] [nos ânimos celestes ~ nas almas celestes ~ nos espíritos celestes ~ nos corações celestes ~ nos ânimos dos deuses ~ nas almas dos deuses ~ nos corações dos deuses] ~ [Tamanhas ~ Tão grandes ~ Tantas] [iras ~ raivas] [há ~ existem ~ cabem] [nos ânimos celestes ~ nas almas celestes ~ nos ânimos dos deuses ~ nas almas dos deuses] ~ [Os ânimos celestes ~ As almas celestes ~ Os deuses] têm [tamanhas ~ tão grandes ~ tantas] [iras ~ raivas] ~ Será que há tanta ira nos espíritos celestes ~ Há ira tamanha nas almas celestiais]",
   "aceitas": [],
   "distratores": [
-   "terá levado. Tamanhas iras há nos ânimos celestes?",
-   "levou. Tamanhas iras há contra os ânimos celestes?",
-   "levou. Tamanhas iras não há nos ânimos celestes?",
-   "levaram. Tamanhas iras há nos ânimos celestes?"
+   "Há tamanhas iras contra os ânimos celestes?",
+   "Não há tamanhas iras nos ânimos celestes?",
+   "Há iras celestes em tamanhos ânimos?",
+   "As iras celestes têm tamanhos ânimos?"
   ],
-  "nota": "impulerit (impelir, levar): quem levou? regina, a rainha (verso 9). Levou quem? virum, o homem (verso 10). Depois, sem verbo, subentende-se sunt (há): o quê? Tantae irae, tamanhas iras; onde? animis caelestibus.\nimpulerit: perfeito do subjuntivo, 3ª pessoa do singular, na pergunta indireta: levou.\nTantae: nominativo feminino plural, concorda com irae.\n-ne: faz a pergunta.\nanimis: dativo plural, de posse: os ânimos celestes têm.\ncaelestibus: dativo plural, concorda com animis.\nirae: nominativo plural, sujeito; o verbo (sunt) fica subentendido.\nImpulerit é o perfeito do subjuntivo de impello: a pergunta é indireta («conta-me por que a rainha levou…»), e o português a diz no indicativo. Tantae + -ne: a enclítica faz a pergunta de sim ou não. Animis caelestibus é dativo de posse: «os ânimos celestes têm tamanhas iras?».",
+  "nota": "Sem verbo: subentende-se sunt (haver): o que há? Tantae irae, tamanhas iras. Em quem? animis caelestibus, nos ânimos celestes (dativo de posse). O -ne faz a pergunta.\nTantae: nominativo feminino plural, concorda com irae.\nanimis: dativo plural, de posse: os ânimos celestes têm.\ncaelestibus: dativo plural, concorda com animis.\nirae: nominativo plural, sujeito; o verbo (sunt) fica subentendido.\nAnimis caelestibus é dativo de posse: «os ânimos celestes têm tamanhas iras?». Tantae, no começo, concorda com irae, no fim.",
   "nivel": "B1",
   "tags": [
    "trecho"
   ],
   "fonte": "Vergílio, Eneida I,11",
   "requerTodas": [
-   "la-p246",
    "la-p247",
    "la-p248",
    "la-p249",
    "la-p250",
    "la-p223",
-   "la-v526",
    "la-v528",
    "la-v529",
    "la-v532",
    "la-v499"
   ],
   "palavras": [
-   {
-    "w": "impulerit",
-    "c": "la-p246",
-    "f": "perfeito do subjuntivo, 3ª pessoa do singular",
-    "fn": "na pergunta indireta: levou"
-   },
    {
     "w": "Tantae",
     "c": "la-p247",
@@ -912,6 +1095,10 @@
    "la-g005"
   ],
   "texto": "vergilio/eneida-parte-2",
-  "linha": 4
+  "linha": 5,
+  "versos": [
+   4,
+   4
+  ]
  }
 ]

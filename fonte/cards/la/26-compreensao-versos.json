@@ -1,0 +1,2519 @@
+[
+ {
+  "id": "la-qt001a",
+  "tipo": "compreensao",
+  "la": "Gloria Patri, et Filio, et Spiritui Sancto.",
+  "pergunta": "A quem é a glória?",
+  "pt": "ao Pai",
+  "aceitas": [
+   "ao Pai."
+  ],
+  "distratores": [
+   "do Pai",
+   "o Pai",
+   "pelo Pai",
+   "com o Pai"
+  ],
+  "nota": "Patri é dativo singular (-i, 3ª declinação): a quem se dá a glória, «ao Pai».\n«Do Pai» seria o genitivo, Patris; «o Pai», o nominativo, Pater; «pelo» e «com» pediriam preposição e outro caso.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Glória ao Pai",
+  "de": "la-t001",
+  "requerTodas": [
+   "la-p051",
+   "la-p072",
+   "la-p009",
+   "la-p043",
+   "la-p054",
+   "la-p084",
+   "la-v202",
+   "la-v138",
+   "la-v154",
+   "la-v216"
+  ],
+  "conjunto": "q-t001"
+ },
+ {
+  "id": "la-qt004a",
+  "tipo": "compreensao",
+  "la": "Pater noster, qui es in caelis,",
+  "pergunta": "Quem está nos céus?",
+  "pt": "o Pai",
+  "aceitas": [
+   "o Pai."
+  ],
+  "distratores": [
+   "nós",
+   "os céus",
+   "eu",
+   "eles"
+  ],
+  "nota": "qui retoma Pater, e es é a 2ª pessoa: fala-se com o Pai, «que estás».\nnoster só concorda com Pater («nosso»); não é o sujeito. «Nós estamos» seria sumus; «eles estão», sunt.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pai-Nosso",
+  "de": "la-t004",
+  "requerTodas": [
+   "la-p072",
+   "la-p089",
+   "la-p064",
+   "la-p003",
+   "la-p022",
+   "la-p090",
+   "la-v171",
+   "la-v009",
+   "la-v226"
+  ],
+  "conjunto": "q-t004"
+ },
+ {
+  "id": "la-qt007a",
+  "tipo": "compreensao",
+  "la": "Fiat voluntas tua, sicut in caelo et in terra.",
+  "pergunta": "O que se pede que seja feito?",
+  "pt": "a tua vontade",
+  "aceitas": [
+   "a tua vontade."
+  ],
+  "distratores": [
+   "o teu céu",
+   "a vontade da terra",
+   "tu mesmo",
+   "o céu e a terra"
+  ],
+  "nota": "voluntas é o nominativo, sujeito de Fiat, e tua concorda com ela (feminino).\ncaelo e terra estão no ablativo, com in: são o lugar, não o que se faz; nem tua vai com caelo (neutro), nem terra é genitivo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pai-Nosso",
+  "de": "la-t007",
+  "requerTodas": [
+   "la-p069",
+   "la-p095",
+   "la-p055",
+   "la-p085",
+   "la-p022",
+   "la-p090",
+   "la-p009",
+   "la-p096",
+   "la-v196",
+   "la-v156",
+   "la-v227"
+  ],
+  "conjunto": "q-t007"
+ },
+ {
+  "id": "la-qt008a",
+  "tipo": "compreensao",
+  "la": "Panem nostrum quotidianum da nobis hodie,",
+  "pergunta": "Quem deve dar o pão?",
+  "pt": "tu, o Pai",
+  "aceitas": [
+   "tu, o Pai."
+  ],
+  "distratores": [
+   "nós",
+   "o dia de hoje",
+   "os nossos",
+   "o pão de cada dia"
+  ],
+  "nota": "da é o imperativo, 2ª pessoa do singular: «dá tu», dito ao Pai.\nnobis é dativo, a quem se dá; nostrum e quotidianum concordam com panem, o objeto; hodie é só o quando.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pai-Nosso",
+  "de": "la-t008",
+  "requerTodas": [
+   "la-p097",
+   "la-p089",
+   "la-p098",
+   "la-p099",
+   "la-p079",
+   "la-p100",
+   "la-v233",
+   "la-v224",
+   "la-v234",
+   "la-v235",
+   "la-v213"
+  ],
+  "conjunto": "q-t008"
+ },
+ {
+  "id": "la-qt009a",
+  "tipo": "compreensao",
+  "la": "et dimitte nobis debita nostra,",
+  "pergunta": "O que se pede que seja perdoado?",
+  "pt": "as nossas dívidas",
+  "aceitas": [
+   "as nossas dívidas."
+  ],
+  "distratores": [
+   "a nossa dívida",
+   "nós mesmos",
+   "os nossos devedores",
+   "tu"
+  ],
+  "nota": "debita é acusativo plural neutro (-a), o objeto de dimitte, com nostra concordando: «as nossas dívidas», no plural.\nnobis é dativo, a quem se perdoa; os devedores não estão neste trecho.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pai-Nosso",
+  "de": "la-t009",
+  "requerTodas": [
+   "la-p009",
+   "la-p101",
+   "la-p079",
+   "la-p102",
+   "la-p089",
+   "la-v240",
+   "la-v213",
+   "la-v242",
+   "la-v219"
+  ],
+  "conjunto": "q-t009"
+ },
+ {
+  "id": "la-qt010a",
+  "tipo": "compreensao",
+  "la": "sicut et nos dimittimus debitoribus nostris.",
+  "pergunta": "Quem perdoa?",
+  "pt": "nós",
+  "aceitas": [
+   "nós."
+  ],
+  "distratores": [
+   "os nossos devedores",
+   "tu",
+   "o Pai",
+   "eles"
+  ],
+  "nota": "dimittimus tem -mus, a 1ª pessoa do plural, e nos aqui é o nominativo, o sujeito: «nós perdoamos».\ndebitoribus nostris é dativo plural (-ibus): a quem se perdoa, não quem perdoa.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pai-Nosso",
+  "de": "la-t010",
+  "requerTodas": [
+   "la-p085",
+   "la-p009",
+   "la-p079",
+   "la-p101",
+   "la-p103",
+   "la-p089",
+   "la-v241",
+   "la-v244",
+   "la-v222"
+  ],
+  "conjunto": "q-t010"
+ },
+ {
+  "id": "la-qt011a",
+  "tipo": "compreensao",
+  "la": "Et ne nos inducas in tentationem,",
+  "pergunta": "Quem seria levado à tentação?",
+  "pt": "nós",
+  "aceitas": [
+   "nós."
+  ],
+  "distratores": [
+   "tu",
+   "o Pai",
+   "eles",
+   "a tentação"
+  ],
+  "nota": "nos é acusativo, o objeto de inducas: os levados somos nós.\ninducas é a 2ª pessoa (tu, o Pai): é quem levaria, não quem é levado. tentationem, com in, é para onde.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pai-Nosso",
+  "de": "la-t011",
+  "requerTodas": [
+   "la-p009",
+   "la-p104",
+   "la-p079",
+   "la-p105",
+   "la-p022",
+   "la-p106",
+   "la-v245",
+   "la-v247"
+  ],
+  "conjunto": "q-t011"
+ },
+ {
+  "id": "la-qt014a",
+  "tipo": "compreensao",
+  "la": "Dominus tecum.",
+  "pergunta": "Com quem está o Senhor?",
+  "pt": "contigo",
+  "aceitas": [
+   "contigo."
+  ],
+  "distratores": [
+   "comigo",
+   "conosco",
+   "com ele",
+   "convosco"
+  ],
+  "nota": "tecum é cum te: te, ablativo de tu, com a preposição colada depois, «contigo».\n«Comigo» seria mecum; «conosco», nobiscum; «convosco», vobiscum.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ave-Maria",
+  "de": "la-t014",
+  "requerTodas": [
+   "la-p012",
+   "la-p007",
+   "la-p053",
+   "la-v050"
+  ],
+  "conjunto": "q-t014"
+ },
+ {
+  "id": "la-qt015a",
+  "tipo": "compreensao",
+  "la": "Benedicta tu in mulieribus,",
+  "pergunta": "Quem é bendita?",
+  "pt": "tu",
+  "aceitas": [
+   "tu."
+  ],
+  "distratores": [
+   "as mulheres",
+   "o Senhor",
+   "nós",
+   "elas e tu"
+  ],
+  "nota": "Benedicta é nominativo feminino singular e vai com tu, o sujeito (es subentendido).\nmulieribus é ablativo plural, com in: «entre as mulheres», não quem é bendito; «o Senhor» pediria benedictus.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ave-Maria",
+  "de": "la-t015",
+  "requerTodas": [
+   "la-p112",
+   "la-p007",
+   "la-p022",
+   "la-p113",
+   "la-v254",
+   "la-v258"
+  ],
+  "conjunto": "q-t015"
+ },
+ {
+  "id": "la-qt016a",
+  "tipo": "compreensao",
+  "la": "et benedictus fructus ventris tui, Iesus.",
+  "pergunta": "O que é bendito?",
+  "pt": "o fruto",
+  "aceitas": [
+   "o fruto."
+  ],
+  "distratores": [
+   "o teu ventre",
+   "tu",
+   "o ventre e o fruto",
+   "a mulher"
+  ],
+  "nota": "benedictus é nominativo masculino singular e concorda com fructus, o sujeito; Iesus é aposto dele.\nventris tui é genitivo, «do teu ventre»: diz de onde é o fruto, não o que é bendito.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ave-Maria",
+  "de": "la-t016",
+  "requerTodas": [
+   "la-p009",
+   "la-p112",
+   "la-p114",
+   "la-p115",
+   "la-p055",
+   "la-v255",
+   "la-v260",
+   "la-v159"
+  ],
+  "conjunto": "q-t016"
+ },
+ {
+  "id": "la-qt018a",
+  "tipo": "compreensao",
+  "la": "ora pro nobis peccatoribus,",
+  "pergunta": "Quem são os pecadores?",
+  "pt": "nós",
+  "aceitas": [
+   "nós."
+  ],
+  "distratores": [
+   "tu",
+   "eles",
+   "os santos",
+   "todos os outros"
+  ],
+  "nota": "peccatoribus é ablativo plural, como nobis, com pro: concorda com nobis, «por nós, pecadores».\nora é o imperativo dito a Maria (tu): quem roga, não quem é pecador.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ave-Maria",
+  "de": "la-t018",
+  "requerTodas": [
+   "la-p077",
+   "la-p078",
+   "la-p079",
+   "la-p117",
+   "la-v208",
+   "la-v213",
+   "la-v264"
+  ],
+  "conjunto": "q-t018"
+ },
+ {
+  "id": "la-qt019a",
+  "tipo": "compreensao",
+  "la": "nunc et in hora mortis nostrae. Amen.",
+  "pergunta": "Nostrae (nossa) vai com que palavra?",
+  "pt": "com mortis, a morte",
+  "aceitas": [
+   "com mortis, a morte."
+  ],
+  "distratores": [
+   "com hora, a hora",
+   "com nunc, agora",
+   "com Amen",
+   "com hora e mortis"
+  ],
+  "nota": "nostrae é genitivo feminino singular (-ae), como mortis: «da nossa morte».\nhora também é feminina, mas está no ablativo (com in): «a nossa hora» seria hora nostra.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ave-Maria",
+  "de": "la-t019",
+  "requerTodas": [
+   "la-p086",
+   "la-p009",
+   "la-p022",
+   "la-p118",
+   "la-p119",
+   "la-p089",
+   "la-v265",
+   "la-v220"
+  ],
+  "conjunto": "q-t019"
+ },
+ {
+  "id": "la-qt020a",
+  "tipo": "compreensao",
+  "la": "Non amo te, Sabidi, nec possum dicere quare:",
+  "pergunta": "Quem não ama quem?",
+  "pt": "eu não amo Sabídio",
+  "aceitas": [
+   "eu não amo Sabídio."
+  ],
+  "distratores": [
+   "Sabídio não me ama",
+   "Sabídio não te ama",
+   "tu não amas Sabídio",
+   "nós não amamos Sabídio"
+  ],
+  "nota": "amo é a 1ª pessoa do singular: «eu amo»; te é acusativo, o objeto, e Sabidi, vocativo: é o «te» a quem se fala.\n«Sabídio não me ama» pediria Sabidius non amat me.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Marcial I,32",
+  "de": "la-t020",
+  "requerTodas": [
+   "la-p066",
+   "la-p037",
+   "la-p007",
+   "la-p120",
+   "la-p121",
+   "la-p122",
+   "la-p123",
+   "la-v050",
+   "la-v266",
+   "la-v298"
+  ],
+  "conjunto": "q-t020"
+ },
+ {
+  "id": "la-qt022a",
+  "tipo": "compreensao",
+  "la": "Odi et amo. Quare id faciam, fortasse requiris.",
+  "pergunta": "Quem talvez pergunte?",
+  "pt": "tu",
+  "aceitas": [
+   "tu."
+  ],
+  "distratores": [
+   "eu",
+   "ele",
+   "o poeta",
+   "nós"
+  ],
+  "nota": "requiris é a 2ª pessoa do singular (-s): «tu perguntas», o leitor.\nfaciam (1ª pessoa) é o que o poeta faz, na pergunta indireta; não é quem pergunta.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Catulo 85",
+  "de": "la-t022",
+  "requerTodas": [
+   "la-p164",
+   "la-p009",
+   "la-p037",
+   "la-p123",
+   "la-p171",
+   "la-p165",
+   "la-p166",
+   "la-p167",
+   "la-v381",
+   "la-v371",
+   "la-v374"
+  ],
+  "conjunto": "q-t022"
+ },
+ {
+  "id": "la-qt023a",
+  "tipo": "compreensao",
+  "la": "Nescio, sed fieri sentio et excrucior.",
+  "pergunta": "Em excrucior, o que acontece ao poeta?",
+  "pt": "é torturado",
+  "aceitas": [
+   "é torturado."
+  ],
+  "distratores": [
+   "tortura alguém",
+   "torturava",
+   "torturará alguém",
+   "foi torturado"
+  ],
+  "nota": "excrucior é presente, 1ª pessoa, voz passiva (-or): «sou torturado», «me torturo».\n«Tortura alguém» seria excrucio, ativo; «foi torturado», o perfeito, excruciatus sum.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Catulo 85",
+  "de": "la-t023",
+  "requerTodas": [
+   "la-p168",
+   "la-p107",
+   "la-p069",
+   "la-p169",
+   "la-p009",
+   "la-p170",
+   "la-v197",
+   "la-v378"
+  ],
+  "conjunto": "q-t023"
+ },
+ {
+  "id": "la-qt024a",
+  "tipo": "compreensao",
+  "la": "Regina caeli, laetare, alleluia.",
+  "pergunta": "Quem deve se alegrar?",
+  "pt": "a Rainha do céu",
+  "aceitas": [
+   "a Rainha do céu."
+  ],
+  "distratores": [
+   "o céu",
+   "quem reza",
+   "a rainha e o céu",
+   "os anjos do céu"
+  ],
+  "nota": "Regina, vocativo, é a quem se fala, e laetare, imperativo na 2ª pessoa, é para ela: alegra-te.\nCaeli, genitivo, só diz de onde é rainha: do céu.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Regina caeli",
+  "de": "la-t024",
+  "requerTodas": [
+   "la-p172",
+   "la-p090",
+   "la-p173",
+   "la-v225",
+   "la-v394"
+  ],
+  "conjunto": "q-t024"
+ },
+ {
+  "id": "la-qt027a",
+  "tipo": "compreensao",
+  "la": "Ora pro nobis Deum, alleluia.",
+  "pergunta": "A quem ela deve rogar por nós?",
+  "pt": "a Deus",
+  "aceitas": [
+   "a Deus."
+  ],
+  "distratores": [
+   "a nós",
+   "à Rainha do céu",
+   "aos anjos",
+   "a quem reza"
+  ],
+  "nota": "Deum, acusativo, é a pessoa a quem se roga: orare pede esse acusativo.\nPro nobis, preposição com ablativo, diz por quem: por nós, e não a quem.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Regina caeli",
+  "de": "la-t027",
+  "requerTodas": [
+   "la-p077",
+   "la-p078",
+   "la-p079",
+   "la-p001",
+   "la-v208",
+   "la-v213",
+   "la-v004"
+  ],
+  "conjunto": "q-t027"
+ },
+ {
+  "id": "la-qt035a",
+  "tipo": "compreensao",
+  "la": "A te decurrit ad meos haustus liquor.",
+  "pergunta": "O que desce?",
+  "pt": "a água",
+  "aceitas": [
+   "a água."
+  ],
+  "distratores": [
+   "os meus goles",
+   "o meu gole",
+   "tu, o lobo",
+   "eu, o cordeiro"
+  ],
+  "nota": "liquor, nominativo singular, é o sujeito de decurrit: a água.\nHaustus parece nominativo singular, mas com ad e meos é acusativo plural (4ª declinação): para onde, até os meus goles. A te é de onde.",
+  "nivel": "A2",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Fedro, Fábulas I,1,8",
+  "de": "la-t035",
+  "requerTodas": [
+   "la-p108",
+   "la-p007",
+   "la-p206",
+   "la-p178",
+   "la-p013",
+   "la-p207",
+   "la-p208",
+   "la-v248",
+   "la-v050",
+   "la-v444",
+   "la-v061"
+  ],
+  "conjunto": "q-t035"
+ },
+ {
+  "id": "la-qt035b",
+  "tipo": "compreensao",
+  "la": "A te decurrit ad meos haustus liquor.",
+  "pergunta": "De onde desce a água?",
+  "pt": "de ti, o lobo",
+  "aceitas": [
+   "de ti, o lobo."
+  ],
+  "distratores": [
+   "dos meus goles",
+   "de mim, o cordeiro",
+   "dos teus goles",
+   "para ti, o lobo"
+  ],
+  "nota": "a (ab) com o ablativo te diz de onde: de ti, o lobo, que está mais acima.\nAd com o acusativo meos haustus diz para onde: até os meus goles.",
+  "nivel": "A2",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Fedro, Fábulas I,1,8",
+  "de": "la-t035",
+  "requerTodas": [
+   "la-p108",
+   "la-p007",
+   "la-p206",
+   "la-p178",
+   "la-p013",
+   "la-p207",
+   "la-p208",
+   "la-v248",
+   "la-v050",
+   "la-v444",
+   "la-v061"
+  ],
+  "conjunto": "q-t035"
+ },
+ {
+  "id": "la-qt064a",
+  "tipo": "compreensao",
+  "la": "Dicar, qua violens obstrepit Aufidus",
+  "pergunta": "De quem se dirá?",
+  "pt": "de mim, o poeta",
+  "aceitas": [
+   "de mim, o poeta."
+  ],
+  "distratores": [
+   "do Áufido",
+   "dos que moram junto ao rio",
+   "de quem ouve o rio",
+   "de um lugar"
+  ],
+  "nota": "dicar é futuro passivo na 1ª pessoa do singular: «serei dito», dirão de mim.\nAufidus é nominativo, o sujeito de obstrepit: é o rio que ruge, não aquele de quem se fala.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,10",
+  "de": "la-t064",
+  "requerTodas": [
+   "la-p122",
+   "la-p064",
+   "la-p307",
+   "la-p308",
+   "la-v557",
+   "la-v179",
+   "la-v648"
+  ],
+  "conjunto": "q-t064"
+ },
+ {
+  "id": "la-qt071a",
+  "tipo": "compreensao",
+  "la": "Sicelides Musae, paulo maiora canamus!",
+  "pergunta": "O que se vai cantar?",
+  "pt": "coisas um pouco maiores",
+  "aceitas": [
+   "coisas um pouco maiores."
+  ],
+  "distratores": [
+   "as Musas sicilianas",
+   "as maiores Musas",
+   "um pouco das Musas",
+   "os maiores poetas"
+  ],
+  "nota": "maiora é acusativo neutro plural, o objeto de canamus: «coisas maiores»; paulo, «um pouco».\nSicelides Musae é vocativo: a quem se fala, não o que se canta; nem maiora concorda com Musae (feminino).",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,1",
+  "de": "la-t071",
+  "requerTodas": [
+   "la-p232",
+   "la-p326",
+   "la-p016",
+   "la-p029",
+   "la-v577",
+   "la-v537",
+   "la-v540"
+  ],
+  "conjunto": "q-t071"
+ },
+ {
+  "id": "la-qt072a",
+  "tipo": "compreensao",
+  "la": "Non omnis arbusta iuvant humilesque myricae;",
+  "pergunta": "O que não agrada a todos?",
+  "pt": "os arvoredos e as tamargueiras",
+  "aceitas": [
+   "os arvoredos e as tamargueiras."
+  ],
+  "distratores": [
+   "todos os homens, os humildes",
+   "só os arvoredos humildes",
+   "só as tamargueiras humildes",
+   "as coisas humildes e pequenas"
+  ],
+  "nota": "arbusta e myricae são nominativo plural, os sujeitos de iuvant; humiles concorda com myricae.\nomnis é a forma antiga do acusativo omnes, masculino: «a todos», o objeto; não vai com arbusta (neutro) nem com myricae.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,2",
+  "de": "la-t072",
+  "requerTodas": [
+   "la-p066",
+   "la-p019",
+   "la-p327",
+   "la-p149",
+   "la-p314",
+   "la-p028",
+   "la-p328",
+   "la-v673",
+   "la-v566",
+   "la-v657",
+   "la-v674"
+  ],
+  "conjunto": "q-t072"
+ },
+ {
+  "id": "la-qt073a",
+  "tipo": "compreensao",
+  "la": "si canimus silvas, silvae sint consule dignae.",
+  "pergunta": "O que deve ser digno de um cônsul?",
+  "pt": "as florestas",
+  "aceitas": [
+   "as florestas."
+  ],
+  "distratores": [
+   "nós, que cantamos",
+   "o cônsul",
+   "o nosso canto",
+   "os cônsules"
+  ],
+  "nota": "dignae é nominativo feminino plural e concorda com silvae, o sujeito de sint.\nconsule é ablativo singular, com dignae: «de um cônsul», aquilo de que se é digno; canimus, «nós», é o sujeito da outra oração.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,3",
+  "de": "la-t073",
+  "requerTodas": [
+   "la-p154",
+   "la-p029",
+   "la-p329",
+   "la-p003",
+   "la-p330",
+   "la-p331",
+   "la-v541",
+   "la-v676",
+   "la-v675",
+   "la-v037",
+   "la-v677",
+   "la-v679"
+  ],
+  "conjunto": "q-t073"
+ },
+ {
+  "id": "la-qt074a",
+  "tipo": "compreensao",
+  "la": "Ultima Cumaei venit iam carminis aetas;",
+  "pergunta": "O que é «último» (ultima)?",
+  "pt": "a idade",
+  "aceitas": [
+   "a idade."
+  ],
+  "distratores": [
+   "o canto",
+   "o canto de Cumas",
+   "Cumas",
+   "o poeta"
+  ],
+  "nota": "Ultima é nominativo feminino singular e concorda com aetas, longe, no fim: «a última idade».\ncarminis é genitivo, com Cumaei concordando: «do canto de Cumas»; nenhum dos dois vai com ultima.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,4",
+  "de": "la-t074",
+  "requerTodas": [
+   "la-p264",
+   "la-p038",
+   "la-p332",
+   "la-p317",
+   "la-p275",
+   "la-v598",
+   "la-v124",
+   "la-v661"
+  ],
+  "conjunto": "q-t074"
+ },
+ {
+  "id": "la-qt075a",
+  "tipo": "compreensao",
+  "la": "magnus ab integro saeclorum nascitur ordo:",
+  "pergunta": "O que é grande (magnus)?",
+  "pt": "a ordem",
+  "aceitas": [
+   "a ordem."
+  ],
+  "distratores": [
+   "os séculos",
+   "o começo",
+   "o nascimento",
+   "o que é íntegro"
+  ],
+  "nota": "magnus é nominativo masculino singular e concorda com ordo, no fim do verso, o sujeito de nascitur.\nsaeclorum é genitivo plural («dos séculos») e integro, ablativo com ab («de novo»): nenhum concorda com magnus.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,5",
+  "de": "la-t075",
+  "requerTodas": [
+   "la-p016",
+   "la-p108",
+   "la-p333",
+   "la-p088",
+   "la-p334",
+   "la-p335",
+   "la-v680",
+   "la-v552",
+   "la-v682"
+  ],
+  "conjunto": "q-t075"
+ },
+ {
+  "id": "la-qt076a",
+  "tipo": "compreensao",
+  "la": "iam redit et Virgo, redeunt Saturnia regna;",
+  "pergunta": "O que é de Saturno?",
+  "pt": "os reinos",
+  "aceitas": [
+   "os reinos."
+  ],
+  "distratores": [
+   "a Virgem",
+   "a volta",
+   "a Justiça",
+   "o tempo"
+  ],
+  "nota": "Saturnia é nominativo neutro plural e concorda com regna, o sujeito de redeunt: «os reinos de Saturno».\nVirgo é feminino singular, o sujeito de redit; não leva o adjetivo.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,6",
+  "de": "la-t076",
+  "requerTodas": [
+   "la-p332",
+   "la-p336",
+   "la-p009",
+   "la-p305",
+   "la-p094",
+   "la-v686",
+   "la-v685",
+   "la-v553"
+  ],
+  "conjunto": "q-t076"
+ },
+ {
+  "id": "la-qt077a",
+  "tipo": "compreensao",
+  "la": "iam nova progenies caelo demittitur alto.",
+  "pergunta": "De onde é enviada a nova geração?",
+  "pt": "do alto céu",
+  "aceitas": [
+   "do alto céu."
+  ],
+  "distratores": [
+   "do novo céu",
+   "para o alto céu",
+   "da alta linhagem",
+   "do céu, para o alto"
+  ],
+  "nota": "caelo é ablativo singular, de onde se desce, e alto concorda com ele, no fim do verso: «do alto céu».\nnova vai com progenies (nominativo feminino), não com caelo; demittitur é «enviada para baixo», não para o alto.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,7",
+  "de": "la-t077",
+  "requerTodas": [
+   "la-p332",
+   "la-p337",
+   "la-p338",
+   "la-p090",
+   "la-p339",
+   "la-p217",
+   "la-v687",
+   "la-v227",
+   "la-v689",
+   "la-v491"
+  ],
+  "conjunto": "q-t077"
+ },
+ {
+  "id": "la-qt085a",
+  "tipo": "compreensao",
+  "la": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
+  "pergunta": "Quem veio à Itália?",
+  "pt": "o homem",
+  "aceitas": [
+   "o homem."
+  ],
+  "distratores": [
+   "o poeta",
+   "as armas",
+   "Troia",
+   "os troianos"
+  ],
+  "nota": "Qui, nominativo masculino singular, é o sujeito de venit e retoma virum: quem veio foi o homem.\nCano está na 1ª pessoa (o poeta só canta); arma é neutro plural; Troiae é genitivo (de Troia).",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,1–2",
+  "de": "la-t085",
+  "requerTodas": [
+   "la-p026",
+   "la-p027",
+   "la-p028",
+   "la-p029",
+   "la-p064",
+   "la-p209",
+   "la-p108",
+   "la-p210",
+   "la-p038",
+   "la-v092",
+   "la-v171",
+   "la-v478",
+   "la-v124"
+  ],
+  "conjunto": "q-t085"
+ },
+ {
+  "id": "la-qt086a",
+  "tipo": "compreensao",
+  "la": "Italiam, fato profugus, Laviniaque venit litora",
+  "pergunta": "Para onde ele veio?",
+  "pt": "à Itália e às praias de Lavínio",
+  "aceitas": [
+   "à Itália e às praias de Lavínio."
+  ],
+  "distratores": [
+   "da Itália às praias de Lavínio",
+   "à Itália, vindo de Lavínio",
+   "às praias da Itália, vindo de Lavínio",
+   "de Lavínio à Itália"
+  ],
+  "nota": "Italiam e Lavinia litora estão os dois no acusativo, sem preposição: com venit, verbo de movimento, dizem para onde.\nNenhum dos dois é de onde (isso seria ablativo, com ab ou ex).",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,2–3",
+  "de": "la-t086",
+  "requerTodas": [
+   "la-p211",
+   "la-p212",
+   "la-p028",
+   "la-p038",
+   "la-p213",
+   "la-v480",
+   "la-v124",
+   "la-v481"
+  ],
+  "conjunto": "q-t086"
+ },
+ {
+  "id": "la-qt087a",
+  "tipo": "compreensao",
+  "la": "multum ille et terris iactatus et alto vi superum",
+  "pergunta": "Quem é sacudido?",
+  "pt": "ele",
+  "aceitas": [
+   "ele."
+  ],
+  "distratores": [
+   "as terras",
+   "o alto-mar",
+   "os deuses",
+   "a força"
+  ],
+  "nota": "Iactatus, nominativo masculino singular, concorda com ille, o sujeito: é ele o sacudido.\nTerris e alto estão no ablativo (onde), vi no ablativo (a causa) e superum no genitivo (de quem é a força).",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,3–4",
+  "de": "la-t087",
+  "requerTodas": [
+   "la-p214",
+   "la-p215",
+   "la-p009",
+   "la-p096",
+   "la-p216",
+   "la-p217",
+   "la-p218",
+   "la-p219",
+   "la-v486",
+   "la-v445",
+   "la-v469",
+   "la-v488",
+   "la-v491",
+   "la-v492",
+   "la-v495"
+  ],
+  "conjunto": "q-t087"
+ },
+ {
+  "id": "la-qt088a",
+  "tipo": "compreensao",
+  "la": "iactatus … saevae memorem Iunonis ob iram;",
+  "pergunta": "O que é rancoroso, que não esquece?",
+  "pt": "a ira",
+  "aceitas": [
+   "a ira."
+  ],
+  "distratores": [
+   "Juno",
+   "o homem sacudido",
+   "a crueldade",
+   "a causa"
+  ],
+  "nota": "Memorem, acusativo feminino singular, concorda com iram, que está no acusativo por causa de ob.\nIunonis e saevae estão no genitivo: cruel é Juno; e iactatus, nominativo masculino, é o homem.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,3–4",
+  "de": "la-t088",
+  "requerTodas": [
+   "la-p216",
+   "la-p220",
+   "la-p221",
+   "la-p222",
+   "la-p223",
+   "la-v488",
+   "la-v496",
+   "la-v498",
+   "la-v500"
+  ],
+  "conjunto": "q-t088"
+ },
+ {
+  "id": "la-qt089a",
+  "tipo": "compreensao",
+  "la": "multa quoque et bello passus",
+  "pergunta": "O que ele sofreu?",
+  "pt": "muitas coisas",
+  "aceitas": [
+   "muitas coisas."
+  ],
+  "distratores": [
+   "a guerra",
+   "muitas guerras",
+   "muitos homens",
+   "a si mesmo"
+  ],
+  "nota": "Multa, acusativo neutro plural, é o objeto de passus: muitas coisas.\nBello está no ablativo e no singular: diz onde (na guerra), e não o que se sofreu.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,5",
+  "de": "la-t089",
+  "requerTodas": [
+   "la-p214",
+   "la-p224",
+   "la-p009",
+   "la-p157",
+   "la-p225",
+   "la-v484",
+   "la-v471",
+   "la-v501"
+  ],
+  "conjunto": "q-t089"
+ },
+ {
+  "id": "la-qt090a",
+  "tipo": "compreensao",
+  "la": "dum conderet urbem, inferretque deos Latio",
+  "pergunta": "Quem é levado ao Lácio?",
+  "pt": "os deuses",
+  "aceitas": [
+   "os deuses."
+  ],
+  "distratores": [
+   "a cidade",
+   "ele, o homem",
+   "os habitantes do Lácio",
+   "o deus do Lácio"
+  ],
+  "nota": "Deos, acusativo plural, é o objeto de inferret: os deuses são levados.\nQuem leva é ele, na terminação de inferret; Latio, dativo, é o para onde, e urbem é o objeto de conderet.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,5–6",
+  "de": "la-t090",
+  "requerTodas": [
+   "la-p131",
+   "la-p226",
+   "la-p227",
+   "la-p195",
+   "la-p028",
+   "la-p001",
+   "la-v504",
+   "la-v507",
+   "la-v475",
+   "la-v003"
+  ],
+  "conjunto": "q-t090"
+ },
+ {
+  "id": "la-qt091a",
+  "tipo": "compreensao",
+  "la": "genus unde Latinum, Albanique patres, atque altae moenia Romae.",
+  "pergunta": "De quem são as muralhas?",
+  "pt": "de Roma",
+  "aceitas": [
+   "de Roma."
+  ],
+  "distratores": [
+   "dos pais albanos",
+   "da raça latina",
+   "dos latinos",
+   "dos albanos"
+  ],
+  "nota": "Romae, genitivo singular, diz de quem são as moenia: as muralhas de Roma.\nGenus e patres estão no nominativo: são sujeitos, como moenia, e não donos das muralhas.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,6–7",
+  "de": "la-t091",
+  "requerTodas": [
+   "la-p228",
+   "la-p229",
+   "la-p028",
+   "la-p072",
+   "la-p230",
+   "la-p217",
+   "la-p231",
+   "la-v201",
+   "la-v489"
+  ],
+  "conjunto": "q-t091"
+ },
+ {
+  "id": "la-qt092a",
+  "tipo": "compreensao",
+  "la": "Musa, mihi causas memora",
+  "pergunta": "A quem as causas devem ser lembradas?",
+  "pt": "a mim, o poeta",
+  "aceitas": [
+   "a mim, o poeta."
+  ],
+  "distratores": [
+   "à Musa, a quem se fala",
+   "a ti, o leitor",
+   "às próprias causas",
+   "a nós, os ouvintes"
+  ],
+  "nota": "Mihi, dativo singular da 1ª pessoa, é a quem: a mim, o poeta.\nMusa é vocativo (a quem se fala), e causas, acusativo, é o objeto de memora.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,8",
+  "de": "la-t092",
+  "requerTodas": [
+   "la-p232",
+   "la-p004",
+   "la-p194",
+   "la-p233",
+   "la-v042",
+   "la-v474",
+   "la-v510"
+  ],
+  "conjunto": "q-t092"
+ },
+ {
+  "id": "la-qt093a",
+  "tipo": "compreensao",
+  "la": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
+  "pergunta": "Quem sente a mágoa (dolens)?",
+  "pt": "a rainha dos deuses",
+  "aceitas": [
+   "a rainha dos deuses."
+  ],
+  "distratores": [
+   "a divindade ofendida",
+   "o homem piedoso",
+   "os deuses todos",
+   "o próprio poeta"
+  ],
+  "nota": "Dolens, nominativo feminino singular, concorda com regina, o sujeito de impulerit.\nNumine laeso está no ablativo, deum é genitivo plural (dos deuses) e virum, acusativo, é o objeto.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,8–11",
+  "de": "la-t093",
+  "requerTodas": [
+   "la-p236",
+   "la-p234",
+   "la-p235",
+   "la-p237",
+   "la-p238",
+   "la-p172",
+   "la-p001",
+   "la-p027",
+   "la-p246",
+   "la-v515",
+   "la-v511",
+   "la-v513",
+   "la-v514",
+   "la-v517",
+   "la-v004",
+   "la-v092",
+   "la-v526"
+  ],
+  "conjunto": "q-t093"
+ },
+ {
+  "id": "la-qt094a",
+  "tipo": "compreensao",
+  "la": "regina deum tot volvere casus insignem pietate virum … impulerit.",
+  "pergunta": "Quem é notável pela piedade?",
+  "pt": "o homem",
+  "aceitas": [
+   "o homem."
+  ],
+  "distratores": [
+   "a rainha dos deuses",
+   "os deuses",
+   "as desgraças",
+   "a rainha e o homem"
+  ],
+  "nota": "Insignem, acusativo masculino singular, concorda com virum, o objeto de impulerit.\nRegina está no nominativo (é quem leva), deum é genitivo plural e casus é o objeto de volvere.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,9–11",
+  "de": "la-t094",
+  "requerTodas": [
+   "la-p172",
+   "la-p001",
+   "la-p239",
+   "la-p240",
+   "la-p241",
+   "la-p242",
+   "la-p243",
+   "la-p027",
+   "la-p246",
+   "la-v004",
+   "la-v519",
+   "la-v521",
+   "la-v522",
+   "la-v092",
+   "la-v526"
+  ],
+  "conjunto": "q-t094"
+ },
+ {
+  "id": "la-qt096a",
+  "tipo": "compreensao",
+  "la": "Tantaene animis caelestibus irae?",
+  "pergunta": "O que é tão grande?",
+  "pt": "as iras",
+  "aceitas": [
+   "as iras."
+  ],
+  "distratores": [
+   "os ânimos",
+   "os ânimos celestes",
+   "os celestes",
+   "os céus"
+  ],
+  "nota": "Tantae, nominativo feminino plural, concorda com irae, o sujeito.\nAnimis e caelestibus estão no dativo plural: dizem quem tem as iras, e não o que é grande.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Eneida I,11",
+  "de": "la-t096",
+  "requerTodas": [
+   "la-p247",
+   "la-p248",
+   "la-p249",
+   "la-p250",
+   "la-p223",
+   "la-v528",
+   "la-v529",
+   "la-v532",
+   "la-v499"
+  ],
+  "conjunto": "q-t096"
+ },
+ {
+  "id": "la-qt097a",
+  "tipo": "compreensao",
+  "la": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
+  "pergunta": "A quem os deuses deram um fim?",
+  "pt": "a mim e a ti",
+  "aceitas": [
+   "a mim e a ti."
+  ],
+  "distratores": [
+   "aos deuses",
+   "só a ti",
+   "só a mim",
+   "aos deuses e a ti"
+  ],
+  "nota": "mihi e tibi são dativos: a quem foi dado o fim, «a mim, a ti».\ndi é nominativo plural, o sujeito de dederint (o dativo seria dis): os deuses dão, não recebem.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes I,11,1–2",
+  "de": "la-t097",
+  "requerTodas": [
+   "la-p007",
+   "la-p104",
+   "la-p251",
+   "la-p252",
+   "la-p253",
+   "la-p236",
+   "la-p004",
+   "la-p254",
+   "la-p001",
+   "la-p099",
+   "la-v582",
+   "la-v584",
+   "la-v580",
+   "la-v042",
+   "la-v049",
+   "la-v586",
+   "la-v005",
+   "la-v555"
+  ],
+  "conjunto": "q-t097"
+ },
+ {
+  "id": "la-qt098a",
+  "tipo": "compreensao",
+  "la": "Leuconoë, nec Babylonios temptaris numeros.",
+  "pergunta": "Quem não deve tentar os números?",
+  "pt": "Leucônoe",
+  "aceitas": [
+   "Leucônoe."
+  ],
+  "distratores": [
+   "os babilônios",
+   "os números",
+   "o poeta",
+   "os deuses"
+  ],
+  "nota": "temptaris é 2ª pessoa do singular: o sujeito é tu, Leucônoe, a quem se fala (Leuconoë, vocativo).\nBabylonios é acusativo plural e concorda com numeros: diz quais números, não quem tenta.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes I,11,2–3",
+  "de": "la-t098",
+  "requerTodas": [
+   "la-p120",
+   "la-p255",
+   "la-p256",
+   "la-v587",
+   "la-v589"
+  ],
+  "conjunto": "q-t098"
+ },
+ {
+  "id": "la-qt099a",
+  "tipo": "compreensao",
+  "la": "Ut melius, quidquid erit, pati, seu pluris hiemes seu tribuit Iuppiter ultimam",
+  "pergunta": "Quem concede os invernos?",
+  "pt": "Júpiter",
+  "aceitas": [
+   "Júpiter."
+  ],
+  "distratores": [
+   "os invernos",
+   "o último inverno",
+   "o que quer que venha",
+   "tu, Leucônoe"
+  ],
+  "nota": "Iuppiter é nominativo, o sujeito de tribuit.\nhiemes poderia ser nominativo plural, mas o verbo está no singular (tribuit): é o objeto, os invernos concedidos.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes I,11,3–4",
+  "de": "la-t099",
+  "requerTodas": [
+   "la-p257",
+   "la-p258",
+   "la-p259",
+   "la-p003",
+   "la-p225",
+   "la-p260",
+   "la-p261",
+   "la-p262",
+   "la-p263",
+   "la-p264",
+   "la-v591",
+   "la-v592",
+   "la-v022",
+   "la-v575",
+   "la-v593",
+   "la-v595",
+   "la-v597",
+   "la-v599"
+  ],
+  "conjunto": "q-t099"
+ },
+ {
+  "id": "la-qt100a",
+  "tipo": "compreensao",
+  "la": "ultimam, quae nunc oppositis debilitat pumicibus mare Tyrrhenum:",
+  "pergunta": "O que enfraquece o mar Tirreno?",
+  "pt": "o último inverno",
+  "aceitas": [
+   "o último inverno."
+  ],
+  "distratores": [
+   "os rochedos",
+   "o próprio mar",
+   "Júpiter",
+   "a chuva"
+  ],
+  "nota": "quae, nominativo feminino singular, é o sujeito de debilitat e retoma ultimam (hiemem): o último inverno.\npumicibus, no ablativo, é onde o mar se quebra, não quem quebra; mare é o objeto.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes I,11,4–6",
+  "de": "la-t100",
+  "requerTodas": [
+   "la-p264",
+   "la-p064",
+   "la-p086",
+   "la-p265",
+   "la-p266",
+   "la-p267",
+   "la-p268",
+   "la-v599",
+   "la-v172",
+   "la-v601",
+   "la-v602",
+   "la-v603"
+  ],
+  "conjunto": "q-t100"
+ },
+ {
+  "id": "la-qt101a",
+  "tipo": "compreensao",
+  "la": "sapias, vina liques, et spatio brevi spem longam reseces.",
+  "pergunta": "O que se deve cortar?",
+  "pt": "a longa esperança",
+  "aceitas": [
+   "a longa esperança."
+  ],
+  "distratores": [
+   "o breve espaço de tempo",
+   "os vinhos",
+   "a esperança breve",
+   "o tempo longo"
+  ],
+  "nota": "spem longam, no acusativo, é o objeto de reseces: a esperança, que é longa (longam concorda com spem).\nspatio brevi, no ablativo, diz quando; vina é o objeto de liques.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes I,11,6–7",
+  "de": "la-t101",
+  "requerTodas": [
+   "la-p138",
+   "la-p144",
+   "la-p269",
+   "la-p009",
+   "la-p270",
+   "la-p130",
+   "la-p271",
+   "la-p129",
+   "la-p272",
+   "la-v564",
+   "la-v565",
+   "la-v604",
+   "la-v605",
+   "la-v562",
+   "la-v607",
+   "la-v561",
+   "la-v608"
+  ],
+  "conjunto": "q-t101"
+ },
+ {
+  "id": "la-qt102a",
+  "tipo": "compreensao",
+  "la": "Dum loquimur, fugerit invida aetas:",
+  "pergunta": "Quem terá fugido?",
+  "pt": "a idade invejosa",
+  "aceitas": [
+   "a idade invejosa."
+  ],
+  "distratores": [
+   "nós, que falamos",
+   "tu, Leucônoe",
+   "a nossa conversa",
+   "a longa esperança"
+  ],
+  "nota": "aetas, nominativo, com invida, é o sujeito de fugerit, que está na 3ª pessoa do singular.\nloquimur é 1ª do plural: nós falamos, mas não somos nós que fugimos.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes I,11,7–8",
+  "de": "la-t102",
+  "requerTodas": [
+   "la-p131",
+   "la-p273",
+   "la-p127",
+   "la-p274",
+   "la-p275",
+   "la-v609",
+   "la-v560",
+   "la-v610"
+  ],
+  "conjunto": "q-t102"
+ },
+ {
+  "id": "la-qt103a",
+  "tipo": "compreensao",
+  "la": "carpe diem, quam minimum credula postero.",
+  "pergunta": "Quem deve confiar o menos possível no amanhã?",
+  "pt": "tu, Leucônoe",
+  "aceitas": [
+   "tu, Leucônoe."
+  ],
+  "distratores": [
+   "o dia",
+   "o dia seguinte",
+   "o poeta",
+   "os deuses"
+  ],
+  "nota": "credula, nominativo feminino singular, concorda com o sujeito de carpe: tu, Leucônoe.\nNão vai com diem (acusativo masculino) nem com postero (dativo masculino).",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes I,11,8",
+  "de": "la-t103",
+  "requerTodas": [
+   "la-p024",
+   "la-p025",
+   "la-p276",
+   "la-p277",
+   "la-p278",
+   "la-p279",
+   "la-v087",
+   "la-v089",
+   "la-v613",
+   "la-v614",
+   "la-v616"
+  ],
+  "conjunto": "q-t103"
+ },
+ {
+  "id": "la-qt104a",
+  "tipo": "compreensao",
+  "la": "Exegi monumentum ære perennius regalique situ pyramidum altius",
+  "pergunta": "O que é mais alto que as pirâmides?",
+  "pt": "o monumento",
+  "aceitas": [
+   "o monumento."
+  ],
+  "distratores": [
+   "o bronze",
+   "a construção régia",
+   "o poeta",
+   "o rei"
+  ],
+  "nota": "altius, acusativo neutro singular, concorda com monumentum, o objeto de exegi.\nsitu, no ablativo, é o termo da comparação (mais alto que a construção), e ære, o da primeira.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,1–2",
+  "de": "la-t104",
+  "requerTodas": [
+   "la-p280",
+   "la-p281",
+   "la-p282",
+   "la-p283",
+   "la-p284",
+   "la-p028",
+   "la-p285",
+   "la-p286",
+   "la-p217",
+   "la-v618",
+   "la-v621",
+   "la-v622",
+   "la-v623",
+   "la-v624",
+   "la-v625",
+   "la-v574"
+  ],
+  "conjunto": "q-t104"
+ },
+ {
+  "id": "la-qt105a",
+  "tipo": "compreensao",
+  "la": "quod non imber edax, non Aquilo impotens possit diruere",
+  "pergunta": "Quem não pode derrubar o monumento?",
+  "pt": "a chuva voraz e o Aquilão",
+  "aceitas": [
+   "a chuva voraz e o Aquilão."
+  ],
+  "distratores": [
+   "o monumento",
+   "o poeta",
+   "só o Aquilão",
+   "o monumento e a chuva"
+  ],
+  "nota": "imber e Aquilo, nominativos, são os sujeitos de possit (cada non nega um).\nquod é acusativo neutro, o objeto de diruere: é o monumento, que sofre e não derruba.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,3–4",
+  "de": "la-t105",
+  "requerTodas": [
+   "la-p064",
+   "la-p066",
+   "la-p287",
+   "la-p288",
+   "la-p289",
+   "la-p121",
+   "la-p290",
+   "la-v173",
+   "la-v292",
+   "la-v627"
+  ],
+  "conjunto": "q-t105"
+ },
+ {
+  "id": "la-qt106a",
+  "tipo": "compreensao",
+  "la": "quod … possit diruere aut innumerabilis annorum series et fuga temporum.",
+  "pergunta": "O que é inumerável?",
+  "pt": "a série",
+  "aceitas": [
+   "a série."
+  ],
+  "distratores": [
+   "os anos",
+   "os tempos",
+   "o monumento",
+   "as chuvas"
+  ],
+  "nota": "innumerabilis é nominativo singular e concorda com series, o sujeito de possit.\nannorum e temporum são genitivos plurais: não concordam com ele, embora os anos sejam muitos.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,3–5",
+  "de": "la-t106",
+  "requerTodas": [
+   "la-p064",
+   "la-p121",
+   "la-p290",
+   "la-p291",
+   "la-p292",
+   "la-p293",
+   "la-p294",
+   "la-p009",
+   "la-p295",
+   "la-p126",
+   "la-v173",
+   "la-v292",
+   "la-v627",
+   "la-v632",
+   "la-v559"
+  ],
+  "conjunto": "q-t106"
+ },
+ {
+  "id": "la-qt107a",
+  "tipo": "compreensao",
+  "la": "Non omnis moriar, multaque pars mei vitabit Libitinam:",
+  "pergunta": "Quem evitará Libitina?",
+  "pt": "grande parte de mim",
+  "aceitas": [
+   "grande parte de mim."
+  ],
+  "distratores": [
+   "eu, todo inteiro",
+   "Libitina",
+   "todos",
+   "os meus"
+  ],
+  "nota": "pars, nominativo, com multa, é o sujeito de vitabit; mei, genitivo de ego, diz de quem: de mim.\nLibitinam é acusativo, o que se evita; mei não é o plural de meus.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,6–7",
+  "de": "la-t107",
+  "requerTodas": [
+   "la-p066",
+   "la-p019",
+   "la-p296",
+   "la-p214",
+   "la-p028",
+   "la-p297",
+   "la-p004",
+   "la-p298",
+   "la-v633",
+   "la-v484",
+   "la-v041",
+   "la-v637"
+  ],
+  "conjunto": "q-t107"
+ },
+ {
+  "id": "la-qt108a",
+  "tipo": "compreensao",
+  "la": "usque ego postera crescam laude recens",
+  "pergunta": "Quem fica sempre novo?",
+  "pt": "eu, o poeta",
+  "aceitas": [
+   "eu, o poeta."
+  ],
+  "distratores": [
+   "o louvor",
+   "a posteridade",
+   "o tempo",
+   "o monumento"
+  ],
+  "nota": "recens é nominativo e concorda com ego, o sujeito de crescam: o poeta, sempre novo.\nlaude e postera estão no ablativo: o louvor da posteridade é onde ele cresce.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,7–8",
+  "de": "la-t108",
+  "requerTodas": [
+   "la-p299",
+   "la-p004",
+   "la-p279",
+   "la-p300",
+   "la-p301",
+   "la-p302",
+   "la-v615",
+   "la-v638",
+   "la-v640"
+  ],
+  "conjunto": "q-t108"
+ },
+ {
+  "id": "la-qt109a",
+  "tipo": "compreensao",
+  "la": "dum Capitolium scandet cum tacita virgine pontifex.",
+  "pergunta": "Quem vai em silêncio?",
+  "pt": "a virgem",
+  "aceitas": [
+   "a virgem."
+  ],
+  "distratores": [
+   "o pontífice",
+   "o poeta",
+   "o Capitólio",
+   "o povo de Roma"
+  ],
+  "nota": "tacita, ablativo feminino singular, concorda com virgine, depois de cum.\npontifex é nominativo masculino, o sujeito de scandet: não é ele o calado.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,8–9",
+  "de": "la-t109",
+  "requerTodas": [
+   "la-p131",
+   "la-p303",
+   "la-p053",
+   "la-p304",
+   "la-p305",
+   "la-p306",
+   "la-v642",
+   "la-v643",
+   "la-v644"
+  ],
+  "conjunto": "q-t109"
+ },
+ {
+  "id": "la-qt110a",
+  "tipo": "compreensao",
+  "la": "et qua pauper aquae Daunus agrestium regnavit populorum",
+  "pergunta": "Quem é pobre de água?",
+  "pt": "Dauno",
+  "aceitas": [
+   "Dauno."
+  ],
+  "distratores": [
+   "os povos agrestes",
+   "o rio Áufido",
+   "o poeta",
+   "os camponeses"
+  ],
+  "nota": "pauper, nominativo singular, concorda com Daunus, o sujeito de regnavit; aquae é o genitivo do que falta.\npopulorum e agrestium estão no genitivo plural: são os povos governados.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,11–12",
+  "de": "la-t110",
+  "requerTodas": [
+   "la-p009",
+   "la-p064",
+   "la-p309",
+   "la-p199",
+   "la-p310",
+   "la-p311",
+   "la-p312",
+   "la-v179",
+   "la-v435",
+   "la-v650",
+   "la-v653",
+   "la-v655"
+  ],
+  "conjunto": "q-t110"
+ },
+ {
+  "id": "la-qt111a",
+  "tipo": "compreensao",
+  "la": "Dicar … ex humili potens princeps Aeolium carmen ad Italos deduxisse modos.",
+  "pergunta": "Quem trouxe o canto eólio?",
+  "pt": "eu, o poeta",
+  "aceitas": [
+   "eu, o poeta."
+  ],
+  "distratores": [
+   "os itálicos",
+   "Dauno",
+   "os ritmos",
+   "o Áufido"
+  ],
+  "nota": "dicar é 1ª pessoa: o sujeito de deduxisse é o mesmo, eu, o poeta, princeps, o primeiro (nominativo).\nItalos e modos estão no acusativo com ad: para onde o canto foi trazido.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,10–14",
+  "de": "la-t111",
+  "requerTodas": [
+   "la-p122",
+   "la-p313",
+   "la-p314",
+   "la-p315",
+   "la-p316",
+   "la-p317",
+   "la-p178",
+   "la-p318",
+   "la-p319",
+   "la-v557",
+   "la-v658",
+   "la-v663",
+   "la-v664"
+  ],
+  "conjunto": "q-t111"
+ },
+ {
+  "id": "la-qt112a",
+  "tipo": "compreensao",
+  "la": "Sume superbiam quaesitam meritis",
+  "pergunta": "O que foi conquistado pelos méritos?",
+  "pt": "o orgulho",
+  "aceitas": [
+   "o orgulho."
+  ],
+  "distratores": [
+   "a Musa",
+   "os méritos",
+   "o poeta",
+   "a coroa de louro"
+  ],
+  "nota": "quaesitam, acusativo feminino singular, concorda com superbiam, o objeto de sume.\nA Musa, a quem se fala, estaria no vocativo; meritis, no ablativo, diz por meio de quê.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,14–15",
+  "de": "la-t112",
+  "requerTodas": [
+   "la-p320",
+   "la-p321",
+   "la-p251",
+   "la-p322",
+   "la-v665",
+   "la-v667",
+   "la-v583",
+   "la-v668"
+  ],
+  "conjunto": "q-t112"
+ },
+ {
+  "id": "la-qt113a",
+  "tipo": "compreensao",
+  "la": "et mihi Delphica lauro cinge volens, Melpomene, comam.",
+  "pergunta": "De quem é a cabeleira?",
+  "pt": "do poeta",
+  "aceitas": [
+   "do poeta."
+  ],
+  "distratores": [
+   "de Melpômene",
+   "de Apolo",
+   "do louro délfico",
+   "de quem quiser"
+  ],
+  "nota": "mihi, dativo, diz a quem se cinge a cabeleira: «cinge-me a cabeleira», a minha, do poeta.\nMelpomene é vocativo, a Musa a quem se fala e que cinge; lauro é o instrumento.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Horácio, Odes III,30,15–16",
+  "de": "la-t113",
+  "requerTodas": [
+   "la-p009",
+   "la-p004",
+   "la-p323",
+   "la-p324",
+   "la-p155",
+   "la-p325",
+   "la-v042",
+   "la-v669",
+   "la-v670",
+   "la-v569",
+   "la-v672"
+  ],
+  "conjunto": "q-t113"
+ },
+ {
+  "id": "la-qt114a",
+  "tipo": "compreensao",
+  "la": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
+  "pergunta": "Quem foi impelido pela sede?",
+  "pt": "o lobo e o cordeiro",
+  "aceitas": [
+   "o lobo e o cordeiro."
+  ],
+  "distratores": [
+   "só o lobo, o mais forte",
+   "só o cordeiro, o mais fraco",
+   "o mesmo riacho",
+   "a própria sede"
+  ],
+  "nota": "compulsi, nominativo masculino plural, vale pelos dois sujeitos, lupus et agnus; um só pediria compulsus.\nRivum é acusativo (para onde) e siti, ablativo, é a causa.",
+  "nivel": "A2",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Fedro, Fábulas I,1,1–2",
+  "de": "la-t114",
+  "requerTodas": [
+   "la-p178",
+   "la-p179",
+   "la-p180",
+   "la-p153",
+   "la-p009",
+   "la-p181",
+   "la-p038",
+   "la-p182",
+   "la-p183",
+   "la-v403",
+   "la-v408",
+   "la-v116",
+   "la-v420",
+   "la-v421"
+  ],
+  "conjunto": "q-t114"
+ },
+ {
+  "id": "la-qt116a",
+  "tipo": "compreensao",
+  "la": "Tunc fauce improba latro incitatus iurgii causam intulit.",
+  "pergunta": "Quem estava incitado?",
+  "pt": "o ladrão",
+  "aceitas": [
+   "o ladrão."
+  ],
+  "distratores": [
+   "a goela",
+   "a briga",
+   "o motivo",
+   "o cordeiro"
+  ],
+  "nota": "incitatus, nominativo masculino singular, concorda com latro, o sujeito.\nFauce e improba são ablativos femininos, causam é acusativo e iurgii, genitivo: nenhum deles vai com incitatus.",
+  "nivel": "A2",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Fedro, Fábulas I,1,3–4",
+  "de": "la-t116",
+  "requerTodas": [
+   "la-p188",
+   "la-p189",
+   "la-p190",
+   "la-p191",
+   "la-p192",
+   "la-p193",
+   "la-p194",
+   "la-p195",
+   "la-v424",
+   "la-v425",
+   "la-v427",
+   "la-v428",
+   "la-v429",
+   "la-v430"
+  ],
+  "conjunto": "q-t116"
+ },
+ {
+  "id": "la-qt117a",
+  "tipo": "compreensao",
+  "la": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
+  "pergunta": "Quem está bebendo?",
+  "pt": "eu, o lobo",
+  "aceitas": [
+   "eu, o lobo."
+  ],
+  "distratores": [
+   "tu, o cordeiro",
+   "a água",
+   "o lobo e o cordeiro",
+   "ele, o narrador"
+  ],
+  "nota": "bibenti, particípio no dativo, concorda com mihi: a mim, que bebo; quem fala é o lobo (inquit).\nO cordeiro é tu, o sujeito de fecisti, e aquam é o objeto.",
+  "nivel": "A2",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Fedro, Fábulas I,1,5–6",
+  "de": "la-t117",
+  "requerTodas": [
+   "la-p196",
+   "la-p197",
+   "la-p198",
+   "la-p165",
+   "la-p004",
+   "la-p199",
+   "la-p200",
+   "la-v431",
+   "la-v434",
+   "la-v373",
+   "la-v042",
+   "la-v436",
+   "la-v438"
+  ],
+  "conjunto": "q-t117"
+ },
+ {
+  "id": "la-qt117b",
+  "tipo": "compreensao",
+  "la": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
+  "pergunta": "Quem turvou a água, segundo o lobo?",
+  "pt": "tu, o cordeiro",
+  "aceitas": [
+   "tu, o cordeiro."
+  ],
+  "distratores": [
+   "eu, o lobo",
+   "ele, o narrador",
+   "a própria água",
+   "nós dois"
+  ],
+  "nota": "fecisti é 2ª pessoa do singular: tu, a quem o lobo fala, o cordeiro.\nMihi é só para quem (o lobo), e aquam, acusativo, é o que foi turvado.",
+  "nivel": "A2",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Fedro, Fábulas I,1,5–6",
+  "de": "la-t117",
+  "requerTodas": [
+   "la-p196",
+   "la-p197",
+   "la-p198",
+   "la-p165",
+   "la-p004",
+   "la-p199",
+   "la-p200",
+   "la-v431",
+   "la-v434",
+   "la-v373",
+   "la-v042",
+   "la-v436",
+   "la-v438"
+  ],
+  "conjunto": "q-t117"
+ },
+ {
+  "id": "la-qt118a",
+  "tipo": "compreensao",
+  "la": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
+  "pergunta": "Quem está com medo?",
+  "pt": "o cordeiro",
+  "aceitas": [
+   "o cordeiro."
+  ],
+  "distratores": [
+   "o lobo",
+   "o lobo e o cordeiro",
+   "o narrador",
+   "quem se queixa"
+  ],
+  "nota": "timens, particípio no nominativo singular, concorda com laniger, o sujeito: o cordeiro.\nLupe é vocativo: é a quem ele fala, e é o lobo quem se queixa (quereris).",
+  "nivel": "A2",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Fedro, Fábulas I,1,6–7",
+  "de": "la-t118",
+  "requerTodas": [
+   "la-p201",
+   "la-p202",
+   "la-p203",
+   "la-p064",
+   "la-p121",
+   "la-p204",
+   "la-p165",
+   "la-p205",
+   "la-p153",
+   "la-v439",
+   "la-v171",
+   "la-v266",
+   "la-v370",
+   "la-v173",
+   "la-v442",
+   "la-v350"
+  ],
+  "conjunto": "q-t118"
+ },
+ {
+  "id": "la-qt118b",
+  "tipo": "compreensao",
+  "la": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
+  "pergunta": "Quem se queixa?",
+  "pt": "o lobo",
+  "aceitas": [
+   "o lobo."
+  ],
+  "distratores": [
+   "o cordeiro",
+   "o narrador",
+   "os dois",
+   "quem fala"
+  ],
+  "nota": "quereris é 2ª pessoa do singular: tu, a quem o cordeiro fala, o lobo (lupe, vocativo).\nO cordeiro, que fala, está em possum (eu).",
+  "nivel": "A2",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Fedro, Fábulas I,1,6–7",
+  "de": "la-t118",
+  "requerTodas": [
+   "la-p201",
+   "la-p202",
+   "la-p203",
+   "la-p064",
+   "la-p121",
+   "la-p204",
+   "la-p165",
+   "la-p205",
+   "la-p153",
+   "la-v439",
+   "la-v171",
+   "la-v266",
+   "la-v370",
+   "la-v173",
+   "la-v442",
+   "la-v350"
+  ],
+  "conjunto": "q-t118"
+ },
+ {
+  "id": "la-qt119a",
+  "tipo": "compreensao",
+  "la": "Tu modo nascenti puero … casta fave Lucina:",
+  "pergunta": "Quem deve ser favorecido?",
+  "pt": "o menino que nasce",
+  "aceitas": [
+   "o menino que nasce."
+  ],
+  "distratores": [
+   "a casta Lucina",
+   "quem fala",
+   "a mãe do menino",
+   "todos os que nascem"
+  ],
+  "nota": "puero, dativo singular, é o que faveo pede: a quem se favorece; nascenti, dativo também, vai com ele.\nCasta Lucina está no vocativo: é a quem se fala, quem deve favorecer.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,8–10",
+  "de": "la-t119",
+  "requerTodas": [
+   "la-p007",
+   "la-p340",
+   "la-p334",
+   "la-p341",
+   "la-p348",
+   "la-p349",
+   "la-v681",
+   "la-v691",
+   "la-v701",
+   "la-v702"
+  ],
+  "conjunto": "q-t119"
+ },
+ {
+  "id": "la-qt120a",
+  "tipo": "compreensao",
+  "la": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "pergunta": "O que é «inteiro» (toto)?",
+  "pt": "o mundo",
+  "aceitas": [
+   "o mundo."
+  ],
+  "distratores": [
+   "a raça de ouro",
+   "a raça de ferro",
+   "o menino",
+   "a idade de ouro"
+  ],
+  "nota": "toto, ablativo masculino singular, concorda com mundo, que fecha o verso: no mundo inteiro.\nGens e ferrea estão no nominativo feminino, e quo, o menino, é outro ablativo, sem toto.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "de": "la-t120",
+  "requerTodas": [
+   "la-p064",
+   "la-p342",
+   "la-p343",
+   "la-p344",
+   "la-p230",
+   "la-p345",
+   "la-p346",
+   "la-p020",
+   "la-p347",
+   "la-p042",
+   "la-v178",
+   "la-v692",
+   "la-v694",
+   "la-v576",
+   "la-v696",
+   "la-v697",
+   "la-v699",
+   "la-v548"
+  ],
+  "conjunto": "q-t120"
+ },
+ {
+  "id": "la-qt120b",
+  "tipo": "compreensao",
+  "la": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "pergunta": "O que cessará?",
+  "pt": "a raça de ferro",
+  "aceitas": [
+   "a raça de ferro."
+  ],
+  "distratores": [
+   "o menino",
+   "a raça de ouro",
+   "o mundo inteiro",
+   "a primeira raça"
+  ],
+  "nota": "ferrea, nominativo feminino, é o sujeito de desinet (subentende-se gens). Quo, ablativo, é com quem: o menino.\nGens aurea é sujeito de surget, e primum é advérbio (pela primeira vez), não adjetivo.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,8–9",
+  "de": "la-t120",
+  "requerTodas": [
+   "la-p064",
+   "la-p342",
+   "la-p343",
+   "la-p344",
+   "la-p230",
+   "la-p345",
+   "la-p346",
+   "la-p020",
+   "la-p347",
+   "la-p042",
+   "la-v178",
+   "la-v692",
+   "la-v694",
+   "la-v576",
+   "la-v696",
+   "la-v697",
+   "la-v699",
+   "la-v548"
+  ],
+  "conjunto": "q-t120"
+ },
+ {
+  "id": "la-qt122a",
+  "tipo": "compreensao",
+  "la": "Teque adeo decus hoc aevi te consule inibit, Pollio",
+  "pergunta": "O que começará?",
+  "pt": "esta honra da era",
+  "aceitas": [
+   "esta honra da era."
+  ],
+  "distratores": [
+   "esta era",
+   "tu, o cônsul",
+   "Polião",
+   "o teu consulado"
+  ],
+  "nota": "decus, nominativo, com hoc, é o sujeito de inibit; aevi, genitivo, só diz de quê: da era.\nTe consule é ablativo absoluto (a data), e Pollio, vocativo, é a quem se fala.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,11–12",
+  "de": "la-t122",
+  "requerTodas": [
+   "la-p007",
+   "la-p028",
+   "la-p364",
+   "la-p350",
+   "la-p124",
+   "la-p351",
+   "la-p330",
+   "la-p352",
+   "la-v050",
+   "la-v303",
+   "la-v703",
+   "la-v677",
+   "la-v704"
+  ],
+  "conjunto": "q-t122"
+ },
+ {
+  "id": "la-qt124a",
+  "tipo": "compreensao",
+  "la": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
+  "pergunta": "O que livrará as terras do medo?",
+  "pt": "os vestígios do nosso crime",
+  "aceitas": [
+   "os vestígios do nosso crime."
+  ],
+  "distratores": [
+   "tu, o nosso guia",
+   "o nosso crime, sozinho",
+   "o medo que resta",
+   "as próprias terras livres"
+  ],
+  "nota": "solvent, 3ª pessoa do plural, tem por sujeito vestigia, nominativo plural (o mesmo de manent).\nTe duce é ablativo absoluto, sceleris genitivo singular, terras o objeto e formidine o de quê.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,13–14",
+  "de": "la-t124",
+  "requerTodas": [
+   "la-p007",
+   "la-p356",
+   "la-p154",
+   "la-p236",
+   "la-p357",
+   "la-p358",
+   "la-p359",
+   "la-p089",
+   "la-p362",
+   "la-p363",
+   "la-p096",
+   "la-v050",
+   "la-v712",
+   "la-v579",
+   "la-v714",
+   "la-v716",
+   "la-v717",
+   "la-v221",
+   "la-v721",
+   "la-v723",
+   "la-v554"
+  ],
+  "conjunto": "q-t124"
+ },
+ {
+  "id": "la-qt125a",
+  "tipo": "compreensao",
+  "la": "vestigia … inrita perpetua solvent formidine terras.",
+  "pergunta": "O que é «contínuo» (perpetua)?",
+  "pt": "o medo",
+  "aceitas": [
+   "o medo."
+  ],
+  "distratores": [
+   "as terras",
+   "os vestígios",
+   "o livramento das terras",
+   "o crime"
+  ],
+  "nota": "perpetua, ablativo feminino singular, concorda com formidine, também ablativo: do medo contínuo.\nTerras é acusativo plural e vestigia nominativo neutro plural; perpetua não é advérbio de solvent.",
+  "nivel": "B1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,13–14",
+  "de": "la-t125",
+  "requerTodas": [
+   "la-p359",
+   "la-p360",
+   "la-p361",
+   "la-p362",
+   "la-p363",
+   "la-p096",
+   "la-v717",
+   "la-v718",
+   "la-v720",
+   "la-v721",
+   "la-v723",
+   "la-v554"
+  ],
+  "conjunto": "q-t125"
+ },
+ {
+  "id": "la-qt126a",
+  "tipo": "compreensao",
+  "la": "Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.",
+  "pergunta": "Quem ressuscitou?",
+  "pt": "aquele que mereceste trazer",
+  "aceitas": [
+   "aquele que mereceste trazer."
+  ],
+  "distratores": [
+   "tu, que mereceste trazê-lo",
+   "quem o trouxe",
+   "a Rainha do céu",
+   "todos, como ele disse"
+  ],
+  "nota": "resurrexit, 3ª pessoa, tem por sujeito o antecedente de quem: aquele que tu trouxeste.\nMeruisti, 2ª pessoa, é tu, a Rainha: não é ela quem ressuscitou.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Regina caeli",
+  "de": "la-t126",
+  "requerTodas": [
+   "la-p174",
+   "la-p064",
+   "la-p175",
+   "la-p176",
+   "la-p177",
+   "la-p085",
+   "la-p122",
+   "la-v176",
+   "la-v397",
+   "la-v399",
+   "la-v402",
+   "la-v300"
+  ],
+  "conjunto": "q-t126"
+ }
+]

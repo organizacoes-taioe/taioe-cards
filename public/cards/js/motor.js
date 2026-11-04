@@ -1484,7 +1484,7 @@ window.Motor = (function () {
   function filaDe(est) {
     const e = (est && est.etapa) || 'multipla';
     /* o card de forma acertado não volta: não mora em fila nenhuma */
-    if (e === 'dominado' && est && (ehForma(est.id) || ehHeranca(est.id) || ehAnalise(est.id))) return 'fora';
+    if (e === 'dominado' && est && (ehForma(est.id) || umaVezSo(est.id))) return 'fora';
     if (e === 'dominado') return 'dominados';
     return (e === 'multipla' || e === 'escrita') ? 'esPt' : 'ptEs';
   }
@@ -2433,11 +2433,11 @@ window.Motor = (function () {
        — quem já provou o espanhol→português não volta à estaca zero. */
     const inversa = ehVolta(r.direcao) && !ehContraste(est.id);
     const jaDominado = est.etapa === 'dominado';
-    if (ehHeranca(est.id) || ehAnalise(est.id)) {
+    if (umaVezSo(est.id)) {
       /* o card de herança (§13) é curiosidade, não fica no jogo (pedido do Gere, 03/11/2026):
          o acerto de primeira, ou dois seguidos depois de um erro, fecham de vez, como na forma;
          e os de análise (§15: o verbo, a concordância, a regência), pela mesma regra (o Gere,
-         04/11/2026: «aparecer uma vez só, se errar, até acertar duas») */
+         04/11/2026: «aparecer uma vez só, se errar, até acertar duas»), e a pergunta sobre o trecho (§16, D41) */
       if (r.acertou && (est.vistas === 1 || est.seguidas >= ACERTOS_PARA_FECHAR_HERANCA)) {
         est.etapa = 'dominado';
         if (!est.dominadoEm) est.dominadoEm = new Date().toISOString();
@@ -2526,7 +2526,7 @@ window.Motor = (function () {
     }
 
     /* Só o maduro espera por data; qualquer outro volta pela fila e mais nada. */
-    est.voltaEm = est.etapa === 'dominado' && !ehForma(est.id) && !ehHeranca(est.id) && !ehAnalise(est.id) ? proximaVolta(est.revisoes, est.ultima) : null;
+    est.voltaEm = est.etapa === 'dominado' && !ehForma(est.id) && !umaVezSo(est.id) ? proximaVolta(est.revisoes, est.ultima) : null;
 
     // a estreia é a única medida limpa do que já se sabia antes do app
     if (est.vistas === 1) est.primeiraCerta = !!r.acertou;
@@ -2658,9 +2658,14 @@ window.Motor = (function () {
      regência, depois do card do verbo). Só de escolher, uma vez só, como a herança. */
   function ehAnalise(id) { return TIPO[id] === 'analise'; }
 
+  /* A pergunta de compreensão sobre um trecho de texto (LATIM.md §16, D41, 04/11/2026: «Quem é
+     enviado do alto céu?») é da mesma família: depois do trecho, uma vez só. */
+  function ehCompreensaoDoVerso(id) { return !!DO_VERSO[id]; }
+  function umaVezSo(id) { return ehHeranca(id) || ehAnalise(id) || ehCompreensaoDoVerso(id); }
+
   /* O card de forma acertado já disse o que tinha a dizer: fora de todas as filas. */
   function encerrado(id, est) {
-    return (ehForma(id) || ehHeranca(id) || ehAnalise(id)) && !!est && est.etapa === 'dominado';
+    return (ehForma(id) || umaVezSo(id)) && !!est && est.etapa === 'dominado';
   }
 
   /* A resposta tem sido errada nos cards de forma de mesmo gabarito: o último erro ainda não
@@ -3541,6 +3546,7 @@ window.Motor = (function () {
   /* o nivelamento pela lista (7.9) */
   let POS = Object.create(null);          // id → posição na lista de frequência (card.pos, do pacote)
   let TIPO = Object.create(null);         // id → tipo do card
+  let DO_VERSO = Object.create(null);     // id da compreensão sobre um trecho de texto → true
   let FLEXAO_DE_CASO = Object.create(null); // id → true: a flexão de nome, que pergunta o caso
   let FALSO_AMIGO = Object.create(null);  // id → true
   let DIVISA = 0;                         // nivelamento.divisa (0: sem nivelamento pela lista)
@@ -3552,6 +3558,7 @@ window.Motor = (function () {
     TRANSP = Object.create(null);
     POS = Object.create(null);
     TIPO = Object.create(null);
+    DO_VERSO = Object.create(null);
     FLEXAO_DE_CASO = Object.create(null);
     FALSO_AMIGO = Object.create(null);
     LEITURA = Object.create(null);
@@ -3586,6 +3593,7 @@ window.Motor = (function () {
       if (c.transp === 'total' || c.transp === 'parecida') TRANSP[c.id] = (c.leitura || soIda()) ? 'total' : c.transp;
       if (c.pos > 0) POS[c.id] = c.pos;
       TIPO[c.id] = c.tipo;
+      if (c.tipo === 'compreensao' && /^la-t/.test(c.de || '')) DO_VERSO[c.id] = true;
       if (temTag(c, ['falso-amigo'])) FALSO_AMIGO[c.id] = true;
     });
   }
@@ -4427,7 +4435,7 @@ window.Motor = (function () {
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
     usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
-    perguntaDaForma, ehForma, ehContraste, ehConceito, ehCompreensao, ehHeranca, ehAnalise, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
+    perguntaDaForma, ehForma, ehContraste, ehConceito, ehCompreensao, ehCompreensaoDoVerso, ehHeranca, ehAnalise, umaVezSo, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     ACERTOS_QUE_SOLTAM,
     DIA_DAS_TERMINACOES, ativoDaTerminacao, flexaoPuxada, adormecido, quemConta, exemploDaTerminacao,
     erroDeGenero, formasAceitas, LIMITES, cortar,

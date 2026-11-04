@@ -533,7 +533,7 @@ window.TaioeCardsApp = function (ctx) {
     if (c.tipo === 'palavra') return TZ_PALAVRAS.has(id) || deTexto.has(id);
     if (c.tipo === 'conceito') return true;
     if (c.tipo === 'forma') return formaDaTrilha(c, ativosIds, p);
-    if (c.tipo === 'analise' && c.familia !== 'regencia') return analiseDaTrilha(c, ativosIds, p);
+    if (daFrase(c)) return analiseDaTrilha(c, ativosIds, p);
     if (c.tipo === 'analise') return [c.lema].concat(FRASES_DA_PALAVRA.get(c.lema) || []).some(x => p.cards[x] && p.cards[x].vistas);
     /* a flexão espera o card do lema: o dicionário primeiro, depois cada forma; e não estreia a
        que repete uma terminação já estudada, nem a variante (LATIM.md §13, Motor.adormecido) */
@@ -551,6 +551,13 @@ window.TaioeCardsApp = function (ctx) {
     const de = PORID[c.de] || {};
     if (de.texto && !ativosIds.has(de.texto)) return false;
     return Motor.formaPronta(c, p.cards, p.arquivados || {});
+  }
+
+  /* Os que andam com a frase de onde vêm: os de análise (LATIM.md §15: o verbo e a concordância;
+     a regência não, ela espera o verbo) e a pergunta de compreensão sobre um trecho de texto (§16,
+     D41). */
+  function daFrase(c) {
+    return (c.tipo === 'analise' && c.familia !== 'regencia') || (c.tipo === 'compreensao' && Motor.ehCompreensaoDoVerso(c.id));
   }
 
   /* Os cards de análise da frase (LATIM.md §15: «Qual é o verbo?», «Com que palavra concorda?»)
@@ -680,7 +687,7 @@ window.TaioeCardsApp = function (ctx) {
     const CADA = 2, FORMAS_SEGUIDAS = 2, CADA_FLEXAO_DE_USO = 3, CADA_FLEXAO_DE_TABELA = 9, CADA_HERANCA = 7, CADA_REGENCIA = 5;
     const ehConceito = id => (PORID[id] || {}).tipo === 'conceito';
     /* os cards de análise da frase (LATIM.md §15) andam com os de forma: depois da frase */
-    const ehAnaliseDaFrase = id => { const c = PORID[id] || {}; return c.tipo === 'analise' && c.familia !== 'regencia'; };
+    const ehAnaliseDaFrase = id => daFrase(PORID[id] || {});
     const ehForma = id => (PORID[id] || {}).tipo === 'forma' || ehAnaliseDaFrase(id);
     const ehFlexao = id => (PORID[id] || {}).tipo === 'flexao';
     /* o card de forma que só o erro puxou sai quando o erro foi vencido (Motor.formaPronta), e a
@@ -691,7 +698,7 @@ window.TaioeCardsApp = function (ctx) {
     const pendentes = new Set(p.ineditos), postos = new Set();
     const pega = id => (pendentes.has(id) && !postos.has(id) ? (postos.add(id), [id]) : []);
     /* a compreensão (LATIM.md §13, D31) espera as palavras da frase, como a frase de uso */
-    const ehPresa = id => { const c = PORID[id] || {}; return ['frase', 'contraste', 'compreensao'].includes(c.tipo) && Motor.requeridas(c).length > 0; };
+    const ehPresa = id => { const c = PORID[id] || {}; return ['frase', 'contraste', 'compreensao'].includes(c.tipo) && !daFrase(c) && Motor.requeridas(c).length > 0; };
     const presas = p.ineditos.filter(ehPresa);
     /* a herança (§13, D32), uma a cada CADA_HERANCA vagas: a expressão desde o começo, a palavra
        derivada depois do lema dominado */
@@ -2188,7 +2195,7 @@ window.TaioeCardsApp = function (ctx) {
     /* o card de contraste não entra por aqui: um de cada vez, por contrasteDaVez (31/10/2026) */
     const novas = CARDS.filter(c => ['frase', 'compreensao', 'heranca', 'analise'].includes(c.tipo) && Motor.requeridas(c).length &&
       !progresso.cards[c.id] && !jaEsta.has(c.id) && !Motor.arquivado(c.id, progresso.arquivados) &&
-      (!ativosIds || !c.texto || ativosIds.has(c.texto)) &&
+      (!ativosIds || !c.texto || ativosIds.has(c.texto)) && !(TRILHAS && daFrase(c)) &&
       Motor.liberado(c, progresso.cards, agora, progresso.arquivados));
     /* e o card de forma do verso que acabou de aparecer, ou o que o erro num caso puxou
        (LATIM.md §3.6) */
@@ -2198,7 +2205,7 @@ window.TaioeCardsApp = function (ctx) {
         if (c.tipo === 'forma' && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
             !Motor.arquivado(c.id, progresso.arquivados) && formaDaTrilha(c, ativosIds, progresso)) novas.push(c);
         /* e os de análise da frase (LATIM.md §15), do mesmo jeito */
-        if (c.tipo === 'analise' && c.familia !== 'regencia' && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
+        if (daFrase(c) && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
             !Motor.arquivado(c.id, progresso.arquivados) && analiseDaTrilha(c, ativosIds, progresso)) novas.push(c);
         if (c.tipo === 'flexao' && !progresso.cards[c.id] && !jaEsta.has(c.id) &&
             !Motor.arquivado(c.id, progresso.arquivados) && daTrilha(c.id, null, ativosIds, progresso)) novas.push(c);

@@ -823,28 +823,6 @@
   "fonte": "Regina caeli"
  },
  {
-  "id": "la-at026-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "Resurrexit",
-  "frase": "Resurrexit, sicut dixit, alleluia.",
-  "de": "la-t026",
-  "pt": "Resurrexit",
-  "distratores": [
-   "dixit",
-   "sicut",
-   "alleluia"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "Resurrexit (ressuscitou) é o principal; dixit (disse) está na oração de sicut, como.",
-  "nivel": "A1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Regina caeli"
- },
- {
   "id": "la-at027-v",
   "tipo": "analise",
   "familia": "verbo",
@@ -867,140 +845,6 @@
   "fonte": "Regina caeli"
  },
  {
-  "id": "la-at028-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "venerant",
-  "frase": "Ad rivum eundem lupus et agnus venerant",
-  "de": "la-t028",
-  "pt": "venerant",
-  "distratores": [
-   "eundem",
-   "lupus",
-   "agnus"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "venerant (tinham vindo): a única forma verbal; eundem é pronome, o mesmo, e lupus e agnus são os sujeitos.",
-  "nivel": "A2",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Fedro, Fábulas I,1,1"
- },
- {
-  "id": "la-at029-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "stabat",
-  "frase": "Siti compulsi; superior stabat lupus",
-  "de": "la-t029",
-  "pt": "stabat",
-  "distratores": [
-   "compulsi",
-   "superior",
-   "Siti"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "stabat (estava) é o principal; compulsi é particípio, impelidos, e superior é adjetivo, mais acima.",
-  "nivel": "A2",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Fedro, Fábulas I,1,2"
- },
- {
-  "id": "la-at029-c2",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "superior",
-  "ocorrencia": 1,
-  "frase": "Siti compulsi; superior stabat lupus",
-  "de": "la-t029",
-  "pt": "lupus",
-  "distratores": [
-   "Siti",
-   "compulsi",
-   "stabat"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "superior e lupus: os dois no nominativo masculino singular; compulsi é plural, Siti é ablativo.",
-  "nivel": "A2",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Fedro, Fábulas I,1,2"
- },
- {
-  "id": "la-at031-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "intulit",
-  "frase": "Latro incitatus iurgii causam intulit.",
-  "de": "la-t031",
-  "pt": "intulit",
-  "distratores": [
-   "incitatus",
-   "Latro",
-   "causam"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "intulit (trouxe) é o principal, perfeito de infero; incitatus é particípio, incitado, e concorda com Latro.",
-  "nivel": "A2",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Fedro, Fábulas I,1,4"
- },
- {
-  "id": "la-at033-c4",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "timens",
-  "ocorrencia": 1,
-  "frase": "Aquam bibenti? Laniger contra timens:",
-  "de": "la-t033",
-  "pt": "Laniger",
-  "distratores": [
-   "bibenti",
-   "Aquam",
-   "contra"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "timens e Laniger: os dois no nominativo masculino singular; bibenti é dativo, Aquam é acusativo.",
-  "nivel": "A2",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Fedro, Fábulas I,1,6"
- },
- {
-  "id": "la-at034-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "possum",
-  "frase": "Qui possum, quaeso, facere, quod quereris, lupe?",
-  "de": "la-t034",
-  "pt": "possum",
-  "distratores": [
-   "facere",
-   "quereris",
-   "Qui"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "possum (posso) é o principal; facere é infinitivo que o completa, quereris é da oração de quod; quaeso é só «por favor».",
-  "nivel": "A2",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Fedro, Fábulas I,1,7"
- },
- {
   "id": "la-at035-v",
   "tipo": "analise",
   "familia": "verbo",
@@ -1021,581 +865,6 @@
    "análise"
   ],
   "fonte": "Fedro, Fábulas I,1,8"
- },
- {
-  "id": "la-at036-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "cano",
-  "frase": "Arma virumque cano, Troiae qui primus ab oris",
-  "de": "la-t036",
-  "pt": "cano",
-  "distratores": [
-   "oris",
-   "Arma",
-   "virum"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "cano: canto, quem fala é o poeta. oris, Arma e virum são nomes; o verbo de qui, venit, só vem no verso 2.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,1"
- },
- {
-  "id": "la-at037-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "venit",
-  "frase": "Italiam, fato profugus, Laviniaque venit",
-  "de": "la-t037",
-  "pt": "venit",
-  "distratores": [
-   "profugus",
-   "fato",
-   "Italiam"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "venit: veio, o verbo de qui (verso 1). profugus é adjetivo (exilado), fato é ablativo (pelo destino), Italiam diz para onde.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,2"
- },
- {
-  "id": "la-at038-c5",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "iactatus",
-  "ocorrencia": 1,
-  "frase": "litora, multum ille et terris iactatus et alto",
-  "de": "la-t038",
-  "pt": "ille",
-  "distratores": [
-   "terris",
-   "alto",
-   "litora"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "iactatus e ille: nominativo masculino singular; terris e alto são ablativos, litora é acusativo.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,3"
- },
- {
-  "id": "la-at039-c2",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "saevae",
-  "ocorrencia": 1,
-  "frase": "vi superum saevae memorem Iunonis ob iram;",
-  "de": "la-t039",
-  "pt": "Iunonis",
-  "distratores": [
-   "iram",
-   "vi",
-   "superum"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "saevae e Iunonis: genitivo feminino singular; iram é acusativo, vi é ablativo, superum é genitivo plural.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,4"
- },
- {
-  "id": "la-at039-c3",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "memorem",
-  "ocorrencia": 1,
-  "frase": "vi superum saevae memorem Iunonis ob iram;",
-  "de": "la-t039",
-  "pt": "iram",
-  "distratores": [
-   "Iunonis",
-   "vi",
-   "superum"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "memorem e iram: acusativo feminino singular; Iunonis é genitivo, vi é ablativo, superum é genitivo plural.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,4"
- },
- {
-  "id": "la-at041-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "inferret",
-  "frase": "inferretque deos Latio, genus unde Latinum,",
-  "de": "la-t041",
-  "pt": "inferret",
-  "distratores": [
-   "Latio",
-   "Latinum",
-   "genus"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "inferret: levasse, ainda com dum (verso 5). Latio e Latinum são nomes; genus unde Latinum não tem verbo (subentende-se est).",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,6"
- },
- {
-  "id": "la-at041-c6",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "Latinum",
-  "ocorrencia": 1,
-  "frase": "inferretque deos Latio, genus unde Latinum,",
-  "de": "la-t041",
-  "pt": "genus",
-  "distratores": [
-   "Latio",
-   "deos"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "Latinum e genus: nominativo neutro singular; Latio é dativo, deos é acusativo plural.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,6"
- },
- {
-  "id": "la-at042-c4",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "altae",
-  "ocorrencia": 1,
-  "frase": "Albanique patres, atque altae moenia Romae.",
-  "de": "la-t042",
-  "pt": "Romae",
-  "distratores": [
-   "moenia",
-   "patres"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "altae e Romae: genitivo feminino singular; moenia (neutro) e patres (masculino) são nominativos plurais.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,7"
- },
- {
-  "id": "la-at043-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "memora",
-  "frase": "Musa, mihi causas memora, quo numine laeso,",
-  "de": "la-t043",
-  "pt": "memora",
-  "distratores": [
-   "laeso",
-   "numine",
-   "Musa"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "memora: lembra, conta (imperativo). laeso é particípio, com numine (ablativo absoluto); Musa é vocativo.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,8"
- },
- {
-  "id": "la-at045-c0",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "insignem",
-  "ocorrencia": 1,
-  "frase": "insignem pietate virum, tot adire labores",
-  "de": "la-t045",
-  "pt": "virum",
-  "distratores": [
-   "pietate",
-   "labores"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "insignem e virum: acusativo masculino singular; pietate é ablativo, labores é plural.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,10"
- },
- {
-  "id": "la-at046-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "impulerit",
-  "frase": "impulerit. Tantaene animis caelestibus irae?",
-  "de": "la-t046",
-  "pt": "impulerit",
-  "distratores": [
-   "animis",
-   "caelestibus",
-   "irae"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "impulerit: levou, o verbo da pergunta indireta. Tantaene animis caelestibus irae não tem verbo: subentende-se sunt.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,11"
- },
- {
-  "id": "la-at046-c1",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "Tantae",
-  "ocorrencia": 1,
-  "frase": "impulerit. Tantaene animis caelestibus irae?",
-  "de": "la-t046",
-  "pt": "irae",
-  "distratores": [
-   "animis",
-   "caelestibus"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "Tantae e irae: nominativo feminino plural; animis e caelestibus são dativos plurais.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Eneida I,11"
- },
- {
-  "id": "la-at047-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "quaesieris",
-  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi",
-  "de": "la-t047",
-  "pt": "quaesieris",
-  "distratores": [
-   "scire",
-   "nefas",
-   "mihi"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "quaesieris, com ne: não perguntes. scire é infinitivo, sujeito de (est) nefas; nefas é nome.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes I,11,1"
- },
- {
-  "id": "la-at048-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "dederint",
-  "frase": "finem di dederint, Leuconoë, nec Babylonios",
-  "de": "la-t048",
-  "pt": "dederint",
-  "distratores": [
-   "finem",
-   "di",
-   "Babylonios"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "dederint: deram, na pergunta indireta aberta por quem (verso 1). finem e di são nomes, Babylonios é adjetivo.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes I,11,2"
- },
- {
-  "id": "la-at049-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "temptaris",
-  "frase": "temptaris numeros. Ut melius, quidquid erit, pati,",
-  "de": "la-t049",
-  "pt": "temptaris",
-  "distratores": [
-   "erit",
-   "pati",
-   "numeros"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "temptaris, com nec: nem tentes. erit é da oração de quidquid; pati é infinitivo, sujeito de (est) melius.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes I,11,3"
- },
- {
-  "id": "la-at050-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "tribuit",
-  "frase": "seu pluris hiemes seu tribuit Iuppiter ultimam,",
-  "de": "la-t050",
-  "pt": "tribuit",
-  "distratores": [
-   "Iuppiter",
-   "pluris",
-   "hiemes"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "tribuit: concedeu. Iuppiter é o sujeito; pluris e hiemes são acusativos (mais invernos).",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes I,11,4"
- },
- {
-  "id": "la-at051-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "debilitat",
-  "frase": "quae nunc oppositis debilitat pumicibus mare",
-  "de": "la-t051",
-  "pt": "debilitat",
-  "distratores": [
-   "oppositis",
-   "pumicibus",
-   "mare"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "debilitat: enfraquece. oppositis é particípio, com pumicibus (nos rochedos postos à frente); mare é o objeto.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes I,11,5"
- },
- {
-  "id": "la-at051-c2",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "oppositis",
-  "ocorrencia": 1,
-  "frase": "quae nunc oppositis debilitat pumicibus mare",
-  "de": "la-t051",
-  "pt": "pumicibus",
-  "distratores": [
-   "mare",
-   "quae"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "oppositis e pumicibus: ablativo plural; mare é acusativo singular, quae é nominativo.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes I,11,5"
- },
- {
-  "id": "la-at054-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "carpe",
-  "frase": "aetas: carpe diem, quam minimum credula postero.",
-  "de": "la-t054",
-  "pt": "carpe",
-  "distratores": [
-   "aetas",
-   "postero",
-   "diem"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "carpe: colhe (imperativo). aetas é o sujeito de fugerit (verso 7); postero e credula são adjetivos.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes I,11,8"
- },
- {
-  "id": "la-at055-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "Exegi",
-  "frase": "Exegi monumentum ære perennius",
-  "de": "la-t055",
-  "pt": "Exegi",
-  "distratores": [
-   "monumentum",
-   "ære",
-   "perennius"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "Exegi: terminei, quem fala é o poeta. monumentum é o objeto; ære é ablativo de comparação; perennius é adjetivo.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,1"
- },
- {
-  "id": "la-at055-c3",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "perennius",
-  "ocorrencia": 1,
-  "frase": "Exegi monumentum ære perennius",
-  "de": "la-t055",
-  "pt": "monumentum",
-  "distratores": [
-   "ære",
-   "Exegi"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "perennius e monumentum: acusativo neutro singular; ære é ablativo (de comparação), Exegi é o verbo.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,1"
- },
- {
-  "id": "la-at058-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "possit",
-  "frase": "possit diruere aut innumerabilis",
-  "de": "la-t058",
-  "pt": "possit",
-  "distratores": [
-   "diruere",
-   "innumerabilis",
-   "aut"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "possit: possa, na oração de quod. diruere é infinitivo, completa possit; innumerabilis é adjetivo.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,4"
- },
- {
-  "id": "la-at060-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "moriar",
-  "frase": "Non omnis moriar, multaque pars mei",
-  "de": "la-t060",
-  "pt": "moriar",
-  "distratores": [
-   "omnis",
-   "pars",
-   "multa"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "moriar: morrerei. omnis e multa são adjetivos, pars é nome; o verbo de pars, vitabit, está no verso 7.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,6"
- },
- {
-  "id": "la-at061-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "vitabit",
-  "frase": "vitabit Libitinam: usque ego postera",
-  "de": "la-t061",
-  "pt": "vitabit",
-  "distratores": [
-   "Libitinam",
-   "postera",
-   "ego"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "vitabit: evitará, sujeito pars (verso 6). Libitinam é o objeto; ego é sujeito de crescam (verso 8).",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,7"
- },
- {
-  "id": "la-at062-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "crescam",
-  "frase": "crescam laude recens, dum Capitolium",
-  "de": "la-t062",
-  "pt": "crescam",
-  "distratores": [
-   "recens",
-   "laude",
-   "Capitolium"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "crescam: crescerei. recens é adjetivo (sempre novo), laude é nome; o verbo do dum, scandet, está no verso 9.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,8"
- },
- {
-  "id": "la-at063-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "scandet",
-  "frase": "scandet cum tacita virgine pontifex.",
-  "de": "la-t063",
-  "pt": "scandet",
-  "distratores": [
-   "pontifex",
-   "tacita",
-   "virgine"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "scandet: subirá. pontifex é o sujeito; tacita e virgine vão com cum.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,9"
  },
  {
   "id": "la-at064-v",
@@ -1641,94 +910,6 @@
    "análise"
   ],
   "fonte": "Horácio, Odes III,30,10"
- },
- {
-  "id": "la-at065-c2",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "pauper",
-  "ocorrencia": 1,
-  "frase": "et qua pauper aquae Daunus agrestium",
-  "de": "la-t065",
-  "pt": "Daunus",
-  "distratores": [
-   "aquae",
-   "qua"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "pauper e Daunus: nominativo masculino singular; aquae é genitivo (de água), qua é ablativo.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,11"
- },
- {
-  "id": "la-at066-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "regnavit",
-  "frase": "regnavit populorum, ex humili potens",
-  "de": "la-t066",
-  "pt": "regnavit",
-  "distratores": [
-   "potens",
-   "populorum",
-   "humili"
-  ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "regnavit: reinou. potens é adjetivo (poderoso); populorum é genitivo (sobre quem); humili vai com ex.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,12"
- },
- {
-  "id": "la-at068-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "Sume",
-  "frase": "deduxisse modos. Sume superbiam",
-  "de": "la-t068",
-  "pt": "Sume",
-  "distratores": [
-   "deduxisse",
-   "modos",
-   "superbiam"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "Sume: assume (imperativo). deduxisse é infinitivo, depende de dicar (verso 10); superbiam é o objeto.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,14"
- },
- {
-  "id": "la-at070-v",
-  "tipo": "analise",
-  "familia": "verbo",
-  "la": "cinge",
-  "frase": "lauro cinge volens, Melpomene, comam.",
-  "de": "la-t070",
-  "pt": "cinge",
-  "distratores": [
-   "volens",
-   "Melpomene",
-   "comam"
-  ],
-  "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "cinge: cinge (imperativo). volens é particípio (de bom grado); Melpomene é vocativo; comam é o objeto.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Horácio, Odes III,30,16"
  },
  {
   "id": "la-at071-v",
@@ -1973,64 +1154,1017 @@
   "fonte": "Vergílio, Bucólicas IV,7"
  },
  {
-  "id": "la-at079-c2",
+  "id": "la-at085-v",
   "tipo": "analise",
-  "familia": "concordancia",
-  "la": "toto",
-  "ocorrencia": 1,
-  "frase": "desinet ac toto surget gens aurea mundo,",
-  "de": "la-t079",
-  "pt": "mundo",
+  "familia": "verbo",
+  "la": "cano",
+  "frase": "Arma virumque cano, Troiae qui primus ab oris Italiam … venit",
+  "de": "la-t085",
+  "pt": "cano",
   "distratores": [
-   "gens",
-   "aurea"
+   "venit",
+   "virum",
+   "Italiam"
   ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "toto e mundo: ablativo masculino singular; gens e aurea são nominativos.",
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "cano, presente: canto. Venit também é verbo, mas da oração de qui, que diz quem é o homem.",
   "nivel": "B1",
   "tags": [
    "gramática",
    "análise"
   ],
-  "fonte": "Vergílio, Bucólicas IV,9"
+  "fonte": "Vergílio, Eneida I,1–2"
  },
  {
-  "id": "la-at080-c0",
+  "id": "la-at086-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "venit",
+  "frase": "Italiam, fato profugus, Laviniaque venit litora",
+  "de": "la-t086",
+  "pt": "venit",
+  "distratores": [
+   "profugus",
+   "Lavinia",
+   "litora"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "venit, perfeito: veio. Profugus parece particípio, mas é adjetivo: exilado.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,2–3"
+ },
+ {
+  "id": "la-at086-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "Lavinia",
+  "ocorrencia": 1,
+  "frase": "Italiam, fato profugus, Laviniaque venit litora",
+  "de": "la-t086",
+  "pt": "litora",
+  "distratores": [
+   "Italiam",
+   "fato"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Lavinia, acusativo neutro plural, concorda com litora, depois de -que venit: as praias de Lavínio.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,2–3"
+ },
+ {
+  "id": "la-at087-c4",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "iactatus",
+  "ocorrencia": 1,
+  "frase": "multum ille et terris iactatus et alto vi superum",
+  "de": "la-t087",
+  "pt": "ille",
+  "distratores": [
+   "terris",
+   "alto",
+   "vi"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "iactatus, nominativo masculino singular, concorda com ille, duas palavras antes: ele, sacudido.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,3–4"
+ },
+ {
+  "id": "la-at088-c1",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "saevae",
+  "ocorrencia": 1,
+  "frase": "iactatus … saevae memorem Iunonis ob iram;",
+  "de": "la-t088",
+  "pt": "Iunonis",
+  "distratores": [
+   "iram",
+   "memorem"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "saevae, genitivo feminino singular, concorda com Iunonis, depois de memorem: a cruel Juno.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,3–4"
+ },
+ {
+  "id": "la-at088-c2",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "memorem",
+  "ocorrencia": 1,
+  "frase": "iactatus … saevae memorem Iunonis ob iram;",
+  "de": "la-t088",
+  "pt": "iram",
+  "distratores": [
+   "Iunonis",
+   "saevae"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "memorem, acusativo feminino singular, concorda com iram, no fim, e não com Iunonis (genitivo): a ira que não esquece.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,3–4"
+ },
+ {
+  "id": "la-at091-c2",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "Latinum",
+  "ocorrencia": 1,
+  "frase": "genus unde Latinum, Albanique patres, atque altae moenia Romae.",
+  "de": "la-t091",
+  "pt": "genus",
+  "distratores": [
+   "patres",
+   "moenia"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Latinum, nominativo neutro singular, concorda com genus, do outro lado de unde: a raça latina.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,6–7"
+ },
+ {
+  "id": "la-at091-c7",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "altae",
+  "ocorrencia": 1,
+  "frase": "genus unde Latinum, Albanique patres, atque altae moenia Romae.",
+  "de": "la-t091",
+  "pt": "Romae",
+  "distratores": [
+   "moenia",
+   "patres",
+   "genus"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "altae, genitivo feminino singular, concorda com Romae, e não com moenia (neutro plural): a alta Roma.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,6–7"
+ },
+ {
+  "id": "la-at092-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "memora",
+  "frase": "Musa, mihi causas memora",
+  "de": "la-t092",
+  "pt": "memora",
+  "distratores": [
+   "Musa",
+   "mihi",
+   "causas"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "memora, imperativo: lembra, conta. Musa é vocativo, mihi é dativo, causas é acusativo.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,8"
+ },
+ {
+  "id": "la-at093-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "impulerit",
+  "frase": "quo numine laeso, quidve dolens, regina deum … virum … impulerit.",
+  "de": "la-t093",
+  "pt": "impulerit",
+  "distratores": [
+   "dolens",
+   "laeso",
+   "regina"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "impulerit, perfeito do subjuntivo: levou. Laeso e dolens são particípios; regina é o sujeito.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,8–11"
+ },
+ {
+  "id": "la-at094-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "impulerit",
+  "frase": "regina deum tot volvere casus insignem pietate virum … impulerit.",
+  "de": "la-t094",
+  "pt": "impulerit",
+  "distratores": [
+   "volvere",
+   "casus",
+   "insignem"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "impulerit, perfeito do subjuntivo: levou. Volvere é infinitivo e depende dele: levou a passar por.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,9–11"
+ },
+ {
+  "id": "la-at094-c5",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "insignem",
+  "ocorrencia": 1,
+  "frase": "regina deum tot volvere casus insignem pietate virum … impulerit.",
+  "de": "la-t094",
+  "pt": "virum",
+  "distratores": [
+   "regina",
+   "casus",
+   "pietate"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "insignem, acusativo masculino singular, concorda com virum, depois de pietate: um homem notável.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,9–11"
+ },
+ {
+  "id": "la-at095-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "impulerit",
+  "frase": "insignem pietate virum, tot adire labores impulerit.",
+  "de": "la-t095",
+  "pt": "impulerit",
+  "distratores": [
+   "adire",
+   "insignem",
+   "labores"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "impulerit, perfeito do subjuntivo: levou. Adire é infinitivo e depende dele: levou a enfrentar.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,10–11"
+ },
+ {
+  "id": "la-at095-c0",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "insignem",
+  "ocorrencia": 1,
+  "frase": "insignem pietate virum, tot adire labores impulerit.",
+  "de": "la-t095",
+  "pt": "virum",
+  "distratores": [
+   "pietate",
+   "labores"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "insignem, acusativo masculino singular, concorda com virum, depois de pietate: um homem notável.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,10–11"
+ },
+ {
+  "id": "la-at096-c0",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "Tantae",
+  "ocorrencia": 1,
+  "frase": "Tantaene animis caelestibus irae?",
+  "de": "la-t096",
+  "pt": "irae",
+  "distratores": [
+   "animis",
+   "caelestibus"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Tantae, nominativo feminino plural, concorda com irae, no fim, e não com animis (dativo): tamanhas iras.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Eneida I,11"
+ },
+ {
+  "id": "la-at097-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "quaesieris",
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
+  "de": "la-t097",
+  "pt": "quaesieris",
+  "distratores": [
+   "dederint",
+   "scire",
+   "nefas"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "quaesieris, com ne, é a proibição que manda na frase; dederint é o verbo da pergunta indireta, e scire, o infinitivo do aparte.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes I,11,1–2"
+ },
+ {
+  "id": "la-at097-c5",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "quem",
+  "ocorrencia": 1,
+  "frase": "Tu ne quaesieris, scire nefas, quem mihi, quem tibi finem di dederint",
+  "de": "la-t097",
+  "pt": "finem",
+  "distratores": [
+   "mihi",
+   "tibi",
+   "di"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "quem, acusativo masculino singular, vai com finem, acusativo: «que fim»; mihi e tibi são dativos, e di, nominativo plural.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes I,11,1–2"
+ },
+ {
+  "id": "la-at098-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "temptaris",
+  "frase": "Leuconoë, nec Babylonios temptaris numeros.",
+  "de": "la-t098",
+  "pt": "temptaris",
+  "distratores": [
+   "numeros",
+   "Babylonios",
+   "Leuconoë"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "temptaris, perfeito do subjuntivo (forma breve de temptaveris), com nec: «nem tentes»; numeros é o objeto.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes I,11,2–3"
+ },
+ {
+  "id": "la-at098-c2",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "Babylonios",
+  "ocorrencia": 1,
+  "frase": "Leuconoë, nec Babylonios temptaris numeros.",
+  "de": "la-t098",
+  "pt": "numeros",
+  "distratores": [
+   "Leuconoë",
+   "temptaris"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Babylonios, acusativo masculino plural, vai com numeros, acusativo plural, do outro lado do verbo: «os números babilônicos».",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes I,11,2–3"
+ },
+ {
+  "id": "la-at100-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "oppositis",
+  "ocorrencia": 1,
+  "frase": "ultimam, quae nunc oppositis debilitat pumicibus mare Tyrrhenum:",
+  "de": "la-t100",
+  "pt": "pumicibus",
+  "distratores": [
+   "mare",
+   "quae",
+   "ultimam"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "oppositis, ablativo masculino plural, vai com pumicibus, ablativo plural, do outro lado do verbo; mare é acusativo neutro singular.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes I,11,4–6"
+ },
+ {
+  "id": "la-at102-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "fugerit",
+  "frase": "Dum loquimur, fugerit invida aetas:",
+  "de": "la-t102",
+  "pt": "fugerit",
+  "distratores": [
+   "loquimur",
+   "invida",
+   "aetas"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "fugerit é o verbo principal; loquimur é o verbo da oração de dum, que diz quando.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes I,11,7–8"
+ },
+ {
+  "id": "la-at103-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "carpe",
+  "frase": "carpe diem, quam minimum credula postero.",
+  "de": "la-t103",
+  "pt": "carpe",
+  "distratores": [
+   "diem",
+   "credula",
+   "postero"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "carpe, imperativo: «colhe»; credula é adjetivo, diem é o objeto e postero, o dativo.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes I,11,8"
+ },
+ {
+  "id": "la-at104-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Exegi",
+  "frase": "Exegi monumentum ære perennius regalique situ pyramidum altius",
+  "de": "la-t104",
+  "pt": "Exegi",
+  "distratores": [
+   "monumentum",
+   "perennius",
+   "altius"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "exegi, perfeito: «terminei»; perennius e altius são comparativos que concordam com monumentum.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,1–2"
+ },
+ {
+  "id": "la-at104-c8",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "altius",
+  "ocorrencia": 1,
+  "frase": "Exegi monumentum ære perennius regalique situ pyramidum altius",
+  "de": "la-t104",
+  "pt": "monumentum",
+  "distratores": [
+   "situ",
+   "ære",
+   "pyramidum"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "altius, acusativo neutro singular, volta a monumentum, lá no começo; situ e ære são ablativos, e pyramidum, genitivo.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,1–2"
+ },
+ {
+  "id": "la-at104-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "perennius",
+  "ocorrencia": 1,
+  "frase": "Exegi monumentum ære perennius regalique situ pyramidum altius",
+  "de": "la-t104",
+  "pt": "monumentum",
+  "distratores": [
+   "ære",
+   "situ"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "perennius, acusativo neutro singular, vai com monumentum; ære, entre os dois, é o ablativo de comparação.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,1–2"
+ },
+ {
+  "id": "la-at106-c4",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "innumerabilis",
+  "ocorrencia": 1,
+  "frase": "quod … possit diruere aut innumerabilis annorum series et fuga temporum.",
+  "de": "la-t106",
+  "pt": "series",
+  "distratores": [
+   "annorum",
+   "temporum",
+   "quod"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "innumerabilis, nominativo singular, vai com series, nominativo singular; annorum e temporum são genitivos plurais.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,3–5"
+ },
+ {
+  "id": "la-at108-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "crescam",
+  "frase": "usque ego postera crescam laude recens",
+  "de": "la-t108",
+  "pt": "crescam",
+  "distratores": [
+   "ego",
+   "postera",
+   "recens"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "crescam, futuro da 3ª conjugação (-am): «crescerei»; postera e recens são adjetivos.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,7–8"
+ },
+ {
+  "id": "la-at108-c2",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "postera",
+  "ocorrencia": 1,
+  "frase": "usque ego postera crescam laude recens",
+  "de": "la-t108",
+  "pt": "laude",
+  "distratores": [
+   "ego",
+   "recens"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "postera, ablativo feminino singular, vai com laude, ablativo, do outro lado de crescam; ego e recens são nominativos.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,7–8"
+ },
+ {
+  "id": "la-at108-c5",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "recens",
+  "ocorrencia": 1,
+  "frase": "usque ego postera crescam laude recens",
+  "de": "la-t108",
+  "pt": "ego",
+  "distratores": [
+   "laude",
+   "postera"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "recens, nominativo masculino singular, vai com ego, o sujeito; laude e postera estão no ablativo.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,7–8"
+ },
+ {
+  "id": "la-at110-c5",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "agrestium",
+  "ocorrencia": 1,
+  "frase": "et qua pauper aquae Daunus agrestium regnavit populorum",
+  "de": "la-t110",
+  "pt": "populorum",
+  "distratores": [
+   "aquae",
+   "Daunus"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "agrestium, genitivo plural, vai com populorum, genitivo plural, do outro lado do verbo; aquae é genitivo singular, e Daunus, nominativo.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,11–12"
+ },
+ {
+  "id": "la-at110-c2",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "pauper",
+  "ocorrencia": 1,
+  "frase": "et qua pauper aquae Daunus agrestium regnavit populorum",
+  "de": "la-t110",
+  "pt": "Daunus",
+  "distratores": [
+   "aquae",
+   "populorum"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "pauper, nominativo masculino singular, vai com Daunus; aquae, entre os dois, é o genitivo do que falta.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,11–12"
+ },
+ {
+  "id": "la-at111-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Dicar",
+  "frase": "Dicar … ex humili potens princeps Aeolium carmen ad Italos deduxisse modos.",
+  "de": "la-t111",
+  "pt": "Dicar",
+  "distratores": [
+   "deduxisse",
+   "potens",
+   "carmen"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "dicar, futuro passivo, «serei dito», é o verbo principal; deduxisse é o infinitivo que depende dele.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,10–14"
+ },
+ {
+  "id": "la-at111-c8",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "Italos",
+  "ocorrencia": 1,
+  "frase": "Dicar … ex humili potens princeps Aeolium carmen ad Italos deduxisse modos.",
+  "de": "la-t111",
+  "pt": "modos",
+  "distratores": [
+   "carmen",
+   "princeps"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Italos, acusativo masculino plural, vai com modos, depois do verbo: «aos ritmos itálicos»; carmen é neutro singular.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,10–14"
+ },
+ {
+  "id": "la-at112-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Sume",
+  "frase": "Sume superbiam quaesitam meritis",
+  "de": "la-t112",
+  "pt": "Sume",
+  "distratores": [
+   "quaesitam",
+   "superbiam",
+   "meritis"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "sume, imperativo, «assume», é o verbo principal; quaesitam é particípio e concorda com superbiam.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,14–15"
+ },
+ {
+  "id": "la-at113-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "cinge",
+  "frase": "et mihi Delphica lauro cinge volens, Melpomene, comam.",
+  "de": "la-t113",
+  "pt": "cinge",
+  "distratores": [
+   "volens",
+   "comam",
+   "lauro"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "cinge, imperativo, é o verbo principal; volens é particípio presente e concorda com Melpomene.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Horácio, Odes III,30,15–16"
+ },
+ {
+  "id": "la-at114-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "venerant",
+  "frase": "Ad rivum eundem lupus et agnus venerant siti compulsi;",
+  "de": "la-t114",
+  "pt": "venerant",
+  "distratores": [
+   "compulsi",
+   "siti",
+   "rivum"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "venerant, mais-que-perfeito de venio: tinham vindo. Compulsi é particípio: vai com o lobo e o cordeiro.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Fedro, Fábulas I,1,1–2"
+ },
+ {
+  "id": "la-at115-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "stabat",
+  "frase": "superior stabat lupus longeque inferior agnus.",
+  "de": "la-t115",
+  "pt": "stabat",
+  "distratores": [
+   "superior",
+   "inferior",
+   "longe"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "stabat, imperfeito de sto: estava; vale também para agnus. Superior e inferior são adjetivos comparativos.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Fedro, Fábulas I,1,2–3"
+ },
+ {
+  "id": "la-at116-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "intulit",
+  "frase": "Tunc fauce improba latro incitatus iurgii causam intulit.",
+  "de": "la-t116",
+  "pt": "intulit",
+  "distratores": [
+   "incitatus",
+   "causam",
+   "latro"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "intulit, perfeito de infero: trouxe. Incitatus é particípio e vai com latro.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Fedro, Fábulas I,1,3–4"
+ },
+ {
+  "id": "la-at117-c2",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "turbulentam",
+  "ocorrencia": 1,
+  "frase": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
+  "de": "la-t117",
+  "pt": "aquam",
+  "distratores": [
+   "mihi",
+   "bibenti"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "turbulentam, acusativo feminino singular, vai com aquam, três palavras adiante; mihi e bibenti são dativos.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Fedro, Fábulas I,1,5–6"
+ },
+ {
+  "id": "la-at117-c6",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "bibenti",
+  "ocorrencia": 1,
+  "frase": "Cur, inquit, turbulentam fecisti mihi aquam bibenti?",
+  "de": "la-t117",
+  "pt": "mihi",
+  "distratores": [
+   "aquam",
+   "turbulentam"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "bibenti, dativo singular, vai com mihi: a mim, que bebo; aquam e turbulentam são acusativos.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Fedro, Fábulas I,1,5–6"
+ },
+ {
+  "id": "la-at118-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "possum",
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
+  "de": "la-t118",
+  "pt": "possum",
+  "distratores": [
+   "facere",
+   "quereris",
+   "timens"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "possum: posso. Facere é infinitivo e completa possum; quereris está na oração de quod; timens é particípio.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Fedro, Fábulas I,1,6–7"
+ },
+ {
+  "id": "la-at118-c2",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "timens",
+  "ocorrencia": 1,
+  "frase": "Laniger contra timens: Qui possum, quaeso, facere, quod quereris, lupe?",
+  "de": "la-t118",
+  "pt": "Laniger",
+  "distratores": [
+   "lupe",
+   "quod"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "timens, nominativo masculino singular, vai com laniger: o cordeiro, temendo; lupe é vocativo, e quod, neutro.",
+  "nivel": "A2",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Fedro, Fábulas I,1,6–7"
+ },
+ {
+  "id": "la-at119-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "fave",
+  "frase": "Tu modo nascenti puero … casta fave Lucina:",
+  "de": "la-t119",
+  "pt": "fave",
+  "distratores": [
+   "nascenti",
+   "Lucina",
+   "puero"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "fave, imperativo de faveo: favorece. Nascenti é particípio presente e vai com puero.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,8–10"
+ },
+ {
+  "id": "la-at119-c4",
   "tipo": "analise",
   "familia": "concordancia",
   "la": "casta",
   "ocorrencia": 1,
-  "frase": "casta fave Lucina: tuus iam regnat Apollo.",
-  "de": "la-t080",
+  "frase": "Tu modo nascenti puero … casta fave Lucina:",
+  "de": "la-t119",
   "pt": "Lucina",
   "distratores": [
-   "Apollo",
-   "tuus"
+   "puero",
+   "nascenti"
   ],
   "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "casta e Lucina: vocativo feminino singular; Apollo e tuus são masculinos.",
+  "nota": "casta, vocativo feminino singular, vai com Lucina, do outro lado de fave; puero e nascenti são dativos masculinos.",
   "nivel": "B1",
   "tags": [
    "gramática",
    "análise"
   ],
-  "fonte": "Vergílio, Bucólicas IV,10"
+  "fonte": "Vergílio, Bucólicas IV,8–10"
  },
  {
-  "id": "la-at080-c3",
+  "id": "la-at120-c5",
   "tipo": "analise",
   "familia": "concordancia",
-  "la": "tuus",
+  "la": "toto",
   "ocorrencia": 1,
-  "frase": "casta fave Lucina: tuus iam regnat Apollo.",
-  "de": "la-t080",
-  "pt": "Apollo",
+  "frase": "quo ferrea primum desinet ac toto surget gens aurea mundo",
+  "de": "la-t120",
+  "pt": "mundo",
   "distratores": [
-   "Lucina",
-   "casta"
+   "gens",
+   "quo"
   ],
   "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "tuus e Apollo: nominativo masculino singular; Lucina e casta são femininos.",
+  "nota": "toto, ablativo masculino singular, vai com mundo, no fim do verso; gens é nominativo feminino.",
+  "nivel": "B1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Vergílio, Bucólicas IV,8–9"
+ },
+ {
+  "id": "la-at121-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "regnat",
+  "frase": "tuus iam regnat Apollo.",
+  "de": "la-t121",
+  "pt": "regnat",
+  "distratores": [
+   "tuus",
+   "Apollo",
+   "iam"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "regnat, presente: reina. Tuus e Apollo são nominativos, e iam é advérbio.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -2039,42 +2173,42 @@
   "fonte": "Vergílio, Bucólicas IV,10"
  },
  {
-  "id": "la-at081-v",
+  "id": "la-at122-v",
   "tipo": "analise",
   "familia": "verbo",
   "la": "inibit",
-  "frase": "Teque adeo decus hoc aevi te consule inibit,",
-  "de": "la-t081",
+  "frase": "Teque adeo decus hoc aevi te consule inibit, Pollio",
+  "de": "la-t122",
   "pt": "inibit",
   "distratores": [
+   "decus",
    "consule",
-   "adeo",
-   "decus"
+   "aevi"
   ],
   "pergunta": "Qual é o verbo desta frase?",
-  "nota": "inibit: começará. consule é nome (te consule, sendo tu cônsul); adeo aqui é advérbio; decus é o sujeito.",
+  "nota": "inibit, futuro de ineo (in + eo, ibit): começará. Consule é nome, e não verbo: cônsul.",
   "nivel": "B1",
   "tags": [
    "gramática",
    "análise"
   ],
-  "fonte": "Vergílio, Bucólicas IV,11"
+  "fonte": "Vergílio, Bucólicas IV,11–12"
  },
  {
-  "id": "la-at082-v",
+  "id": "la-at123-v",
   "tipo": "analise",
   "familia": "verbo",
   "la": "incipient",
-  "frase": "Pollio, et incipient magni procedere menses.",
-  "de": "la-t082",
+  "frase": "et incipient magni procedere menses.",
+  "de": "la-t123",
   "pt": "incipient",
   "distratores": [
    "procedere",
-   "Pollio",
-   "menses"
+   "menses",
+   "magni"
   ],
   "pergunta": "Qual é o verbo principal desta frase?",
-  "nota": "incipient: começarão. procedere é infinitivo, completa incipient; menses é o sujeito; Pollio é vocativo.",
+  "nota": "incipient, futuro de incipio: começarão. Procedere é infinitivo e completa incipient.",
   "nivel": "B1",
   "tags": [
    "gramática",
@@ -2083,137 +2217,138 @@
   "fonte": "Vergílio, Bucólicas IV,12"
  },
  {
-  "id": "la-at082-c3",
-  "tipo": "analise",
-  "familia": "concordancia",
-  "la": "magni",
-  "ocorrencia": 1,
-  "frase": "Pollio, et incipient magni procedere menses.",
-  "de": "la-t082",
-  "pt": "menses",
-  "distratores": [
-   "Pollio",
-   "procedere",
-   "incipient"
-  ],
-  "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "magni e menses: nominativo masculino plural; Pollio é vocativo singular; procedere e incipient são verbos.",
-  "nivel": "B1",
-  "tags": [
-   "gramática",
-   "análise"
-  ],
-  "fonte": "Vergílio, Bucólicas IV,12"
- },
- {
-  "id": "la-at083-v",
+  "id": "la-at124-v",
   "tipo": "analise",
   "familia": "verbo",
-  "la": "manent",
-  "frase": "Te duce, si qua manent sceleris vestigia nostri,",
-  "de": "la-t083",
-  "pt": "manent",
+  "la": "solvent",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
+  "de": "la-t124",
+  "pt": "solvent",
   "distratores": [
+   "manent",
    "duce",
-   "vestigia",
-   "sceleris"
+   "vestigia"
   ],
-  "pergunta": "Qual é o verbo desta frase?",
-  "nota": "manent: restam, na oração de si. vestigia é o sujeito; duce vai com te (sendo tu o guia); sceleris é genitivo.",
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "solvent, futuro: livrarão. Manent está na oração de si, a condição; duce é nome (o guia).",
   "nivel": "B1",
   "tags": [
    "gramática",
    "análise"
   ],
-  "fonte": "Vergílio, Bucólicas IV,13"
+  "fonte": "Vergílio, Bucólicas IV,13–14"
  },
  {
-  "id": "la-at083-c3",
+  "id": "la-at124-c3",
   "tipo": "analise",
   "familia": "concordancia",
   "la": "qua",
   "ocorrencia": 1,
-  "frase": "Te duce, si qua manent sceleris vestigia nostri,",
-  "de": "la-t083",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
+  "de": "la-t124",
   "pt": "vestigia",
   "distratores": [
    "sceleris",
-   "duce"
+   "formidine",
+   "terras"
   ],
   "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "qua e vestigia: nominativo neutro plural; sceleris é genitivo, duce é ablativo.",
+  "nota": "qua, nominativo neutro plural, vai com vestigia: alguns vestígios; sceleris e formidine são singulares.",
   "nivel": "B1",
   "tags": [
    "gramática",
    "análise"
   ],
-  "fonte": "Vergílio, Bucólicas IV,13"
+  "fonte": "Vergílio, Bucólicas IV,13–14"
  },
  {
-  "id": "la-at083-c7",
+  "id": "la-at124-c7",
   "tipo": "analise",
   "familia": "concordancia",
   "la": "nostri",
   "ocorrencia": 1,
-  "frase": "Te duce, si qua manent sceleris vestigia nostri,",
-  "de": "la-t083",
+  "frase": "Te duce, si qua manent sceleris vestigia nostri … solvent formidine terras.",
+  "de": "la-t124",
   "pt": "sceleris",
   "distratores": [
    "vestigia",
-   "duce"
+   "terras",
+   "formidine"
   ],
   "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "nostri e sceleris: genitivo neutro singular; vestigia é nominativo plural, duce é ablativo.",
+  "nota": "nostri, genitivo singular, vai com sceleris: do nosso crime; vestigia, entre os dois, é nominativo plural.",
   "nivel": "B1",
   "tags": [
    "gramática",
    "análise"
   ],
-  "fonte": "Vergílio, Bucólicas IV,13"
+  "fonte": "Vergílio, Bucólicas IV,13–14"
  },
  {
-  "id": "la-at084-v",
+  "id": "la-at125-v",
   "tipo": "analise",
   "familia": "verbo",
   "la": "solvent",
-  "frase": "inrita perpetua solvent formidine terras.",
-  "de": "la-t084",
+  "frase": "vestigia … inrita perpetua solvent formidine terras.",
+  "de": "la-t125",
   "pt": "solvent",
   "distratores": [
-   "formidine",
    "inrita",
-   "terras"
+   "terras",
+   "formidine"
   ],
   "pergunta": "Qual é o verbo desta frase?",
-  "nota": "solvent: livrarão. formidine diz de quê, terras é o objeto, inrita é adjetivo de vestigia (verso 13).",
+  "nota": "solvent, futuro da 3ª conjugação (-ent): livrarão. Inrita é adjetivo, e não verbo.",
   "nivel": "B1",
   "tags": [
    "gramática",
    "análise"
   ],
-  "fonte": "Vergílio, Bucólicas IV,14"
+  "fonte": "Vergílio, Bucólicas IV,13–14"
  },
  {
-  "id": "la-at084-c1",
+  "id": "la-at125-c2",
   "tipo": "analise",
   "familia": "concordancia",
   "la": "perpetua",
   "ocorrencia": 1,
-  "frase": "inrita perpetua solvent formidine terras.",
-  "de": "la-t084",
+  "frase": "vestigia … inrita perpetua solvent formidine terras.",
+  "de": "la-t125",
   "pt": "formidine",
   "distratores": [
    "terras",
-   "inrita"
+   "vestigia"
   ],
   "pergunta": "Com que palavra concorda a palavra destacada?",
-  "nota": "perpetua e formidine: ablativo feminino singular (o -a é longo); terras é acusativo; inrita, neutro plural, vai com vestigia.",
+  "nota": "perpetua, ablativo feminino singular, vai com formidine, do outro lado de solvent; terras é acusativo plural.",
   "nivel": "B1",
   "tags": [
    "gramática",
    "análise"
   ],
-  "fonte": "Vergílio, Bucólicas IV,14"
+  "fonte": "Vergílio, Bucólicas IV,13–14"
+ },
+ {
+  "id": "la-at126-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "resurrexit",
+  "frase": "Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.",
+  "de": "la-t126",
+  "pt": "resurrexit",
+  "distratores": [
+   "meruisti",
+   "portare",
+   "dixit"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "resurrexit é o principal; meruisti está na oração de quem, dixit na de sicut, e portare é infinitivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Regina caeli"
  },
  {
   "id": "la-ap003-r",
