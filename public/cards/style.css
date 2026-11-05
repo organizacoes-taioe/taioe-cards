@@ -60,7 +60,12 @@ body{
   background:rgba(13,22,20,.88);backdrop-filter:blur(8px);
   position:sticky;top:0;z-index:10;
 }
-.marca{font-weight:700;letter-spacing:.3px;color:inherit;text-decoration:none}
+.marca{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.3px;color:inherit;text-decoration:none}
+/* a logo (taioe/logo/LOGO.md, a 14e): máscara pintada com a cor do texto; no link para o hub,
+   o texto «Taioé» fica só para leitor de tela */
+.marca::before{content:"";flex:none;height:36px;aspect-ratio:384/355;background:currentColor;
+  -webkit-mask:url("img/taioe.svg") center/contain no-repeat;mask:url("img/taioe.svg") center/contain no-repeat}
+.marca[href="/"]{font-size:0;gap:0}
 .marca span{color:var(--acento)}
 .placar{margin-left:auto;font-size:13px;color:var(--texto-2);white-space:nowrap}
 .placar b{color:var(--texto)}
