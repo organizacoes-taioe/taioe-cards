@@ -767,8 +767,10 @@ ficou em `../anexos/latim-variedade.md`); a resposta dele: «Sim, todas (menos a
   vêm dele: *aquecer* de *calescere*, *belo* de *bellus*, *luxo* de *luxus*) ou `expressao` (20:
   «O que quer dizer, ao pé da letra?», *per capita*, *data venia*, *habeas corpus*…; livre desde o
   começo; a nota diz a gramática de dentro). Uma a cada oito vagas de card novo (`CADA_HERANCA`).
-- Os dois: só de escolher, três seguidos dominam e voltam por data (como o contraste); sem «Já
-  conheço»; não contam como gramática na D30. Catálogo: tipos `compreensao` e `heranca` (infra,
+- Os dois: só de escolher; sem «Já conheço»; não contam como gramática na D30. A herança passou a
+  aparecer uma vez só em 03/11 (o acerto de primeira fecha de vez; depois de um erro, dois seguidos),
+  e a compreensão também, em 07/11 (o Gere, no la-q026: «tratado que nem os cards de herança»);
+  até então, três seguidos dominavam e voltavam por data. Catálogo: tipos `compreensao` e `heranca` (infra,
   migração `20261029180000_latim_leitura`).
 - Conferência às cegas (um agente, sem o gabarito): acertou os 80; pelo que apontou, saiu a
   pergunta do vocativo *pastor* (igual ao nominativo: decide a vírgula, não a terminação), e
@@ -927,3 +929,9 @@ Anotado pelos agentes e não corrigido: na parte 2 da *Eneida* e do *Exegi monum
 antigas citam os versos pela numeração da obra (I,8–11; 10–16), e o texto os conta de 1; *tot*
 anotado como «concorda com…», mas não declina; em *perennius* e *altius* o caso está na função e
 não na forma.
+
+## 17. A meta da ida no latim (pedido de 07/11)
+
+Sem a volta, o card do latim sai da ida direto para os dominados, e com a meta das línguas vivas
+(30 a 50 na ida) ficavam menos cards em jogo. Desde 07/11/2026 a meta do modo trilhas é metade
+maior, de 45 a 75 (`ALVO_IDA_TRILHAS` no motor; o Gere: «50% a mais que a meta das línguas vivas»).

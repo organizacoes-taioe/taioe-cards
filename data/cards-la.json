@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "la",
- "gerado_em": "2026-11-04",
+ "gerado_em": "2026-11-07",
  "total": 2383,
  "cards": [
   {
@@ -1854,7 +1854,7 @@
    "id": "la-p004",
    "tipo": "palavra",
    "la": "ego",
-   "enunciado": "ego (pronome pessoal)",
+   "enunciado": "ego, mei (pronome pessoal)",
    "pt": "eu",
    "aceitas": [
     "eu"
@@ -1927,7 +1927,7 @@
    "id": "la-p007",
    "tipo": "palavra",
    "la": "tu",
-   "enunciado": "tu (pronome pessoal)",
+   "enunciado": "tu, tui (pronome pessoal)",
    "pt": "tu",
    "aceitas": [
     "tu",
@@ -2911,7 +2911,7 @@
    "id": "la-p049",
    "tipo": "palavra",
    "la": "vos",
-   "enunciado": "vos (pronome pessoal)",
+   "enunciado": "vos, vestri (pronome pessoal)",
    "pt": "vós",
    "aceitas": [
     "vos",
@@ -3621,7 +3621,7 @@
    "id": "la-p079",
    "tipo": "palavra",
    "la": "nos",
-   "enunciado": "nos (pronome pessoal)",
+   "enunciado": "nos, nostri (pronome pessoal)",
    "pt": "nós",
    "aceitas": [
     "nos",
@@ -17264,11 +17264,11 @@
     "adjunto adverbial",
     "predicativo do objeto"
    ],
-   "dicionario": "ego",
+   "dicionario": "ego, mei",
    "distratoresDicionario": [
-    "nos",
-    "vos",
-    "tu",
+    "nos, nostri",
+    "vos, vestri",
+    "tu, tui",
     "meus, mea, meum"
    ]
   },
@@ -17448,12 +17448,12 @@
     "adjunto adverbial",
     "predicativo do objeto"
    ],
-   "dicionario": "tu",
+   "dicionario": "tu, tui",
    "distratoresDicionario": [
-    "ego",
-    "nos",
-    "vos",
-    "tunc"
+    "ego, mei",
+    "vos, vestri",
+    "nos, nostri",
+    "tuus, tua, tuum"
    ]
   },
   {
@@ -18171,12 +18171,12 @@
     "vocativo",
     "agente da passiva"
    ],
-   "dicionario": "vos",
+   "dicionario": "vos, vestri",
    "distratoresDicionario": [
-    "ego",
-    "nos",
-    "tu",
-    "vae"
+    "ego, mei",
+    "nos, nostri",
+    "tu, tui",
+    "vester, vestra, vestrum"
    ]
   },
   {
@@ -21244,11 +21244,11 @@
     "adjunto adverbial",
     "complemento nominal"
    ],
-   "dicionario": "nos",
+   "dicionario": "nos, nostri",
    "distratoresDicionario": [
-    "ego",
-    "vos",
-    "tu",
+    "ego, mei",
+    "vos, vestri",
+    "tu, tui",
     "noster, nostra, nostrum"
    ]
   },
@@ -21979,12 +21979,12 @@
     "sujeito",
     "agente da passiva"
    ],
-   "dicionario": "tu",
+   "dicionario": "tu, tui",
    "distratoresDicionario": [
-    "ego",
-    "nos",
-    "vos",
-    "tunc"
+    "ego, mei",
+    "vos, vestri",
+    "nos, nostri",
+    "tuus, tua, tuum"
    ]
   },
   {
@@ -22522,11 +22522,11 @@
    "dificuldade": 3,
    "sempre": true,
    "ambigua": true,
-   "dicionario": "nos",
+   "dicionario": "nos, nostri",
    "distratoresDicionario": [
-    "ego",
-    "vos",
-    "tu",
+    "ego, mei",
+    "vos, vestri",
+    "tu, tui",
     "noster, nostra, nostrum"
    ]
   },
@@ -22802,12 +22802,12 @@
     "adjunto adverbial",
     "predicativo do objeto"
    ],
-   "dicionario": "tu",
+   "dicionario": "tu, tui",
    "distratoresDicionario": [
-    "ego",
-    "nos",
-    "vos",
-    "tunc"
+    "ego, mei",
+    "vos, vestri",
+    "nos, nostri",
+    "tuus, tua, tuum"
    ]
   },
   {
@@ -23749,11 +23749,11 @@
    "dificuldade": 3,
    "sempre": true,
    "ambigua": true,
-   "dicionario": "nos",
+   "dicionario": "nos, nostri",
    "distratoresDicionario": [
-    "ego",
-    "vos",
-    "tu",
+    "ego, mei",
+    "vos, vestri",
+    "tu, tui",
     "noster, nostra, nostrum"
    ]
   },
@@ -24676,11 +24676,11 @@
    "dificuldade": 3,
    "sempre": true,
    "ambigua": false,
-   "dicionario": "ego",
+   "dicionario": "ego, mei",
    "distratoresDicionario": [
-    "nos",
-    "vos",
-    "tu",
+    "nos, nostri",
+    "vos, vestri",
+    "tu, tui",
     "meus, mea, meum"
    ]
   },
@@ -25141,12 +25141,12 @@
     "objeto direto",
     "adjunto adnominal"
    ],
-   "dicionario": "tu",
+   "dicionario": "tu, tui",
    "distratoresDicionario": [
-    "ego",
-    "nos",
-    "vos",
-    "tunc"
+    "ego, mei",
+    "vos, vestri",
+    "nos, nostri",
+    "tuus, tua, tuum"
    ]
   },
   {
@@ -26678,11 +26678,11 @@
    "dificuldade": 3,
    "sempre": true,
    "ambigua": false,
-   "dicionario": "ego",
+   "dicionario": "ego, mei",
    "distratoresDicionario": [
-    "nos",
-    "vos",
-    "tu",
+    "nos, nostri",
+    "vos, vestri",
+    "tu, tui",
     "meus, mea, meum"
    ]
   },
@@ -27804,11 +27804,11 @@
    "dificuldade": 3,
    "sempre": true,
    "ambigua": false,
-   "dicionario": "ego",
+   "dicionario": "ego, mei",
    "distratoresDicionario": [
-    "nos",
-    "vos",
-    "tu",
+    "nos, nostri",
+    "vos, vestri",
+    "tu, tui",
     "meus, mea, meum"
    ]
   },
@@ -27846,12 +27846,12 @@
    "dificuldade": 3,
    "sempre": true,
    "ambigua": false,
-   "dicionario": "tu",
+   "dicionario": "tu, tui",
    "distratoresDicionario": [
-    "ego",
-    "nos",
-    "vos",
-    "tunc"
+    "ego, mei",
+    "vos, vestri",
+    "nos, nostri",
+    "tuus, tua, tuum"
    ]
   },
   {
@@ -30258,12 +30258,12 @@
    "dificuldade": 2,
    "sempre": true,
    "ambigua": false,
-   "dicionario": "ego",
+   "dicionario": "ego, mei",
    "distratoresDicionario": [
-    "nos",
-    "vos",
-    "tu",
-    "modo"
+    "nos, nostri",
+    "vos, vestri",
+    "tu, tui",
+    "meus, mea, meum"
    ]
   },
   {
@@ -31505,11 +31505,11 @@
    "dificuldade": 3,
    "sempre": true,
    "ambigua": false,
-   "dicionario": "ego",
+   "dicionario": "ego, mei",
    "distratoresDicionario": [
-    "nos",
-    "vos",
-    "tu",
+    "nos, nostri",
+    "vos, vestri",
+    "tu, tui",
     "meus, mea, meum"
    ]
   },
@@ -33634,12 +33634,12 @@
    "dificuldade": 4,
    "sempre": true,
    "ambigua": true,
-   "dicionario": "tu",
+   "dicionario": "tu, tui",
    "distratoresDicionario": [
-    "ego",
-    "nos",
-    "vos",
-    "tunc"
+    "ego, mei",
+    "vos, vestri",
+    "nos, nostri",
+    "tuus, tua, tuum"
    ]
   },
   {
@@ -34857,12 +34857,12 @@
     "sujeito",
     "agente da passiva"
    ],
-   "dicionario": "vos",
+   "dicionario": "vos, vestri",
    "distratoresDicionario": [
-    "ego",
-    "nos",
-    "tu",
-    "vae"
+    "ego, mei",
+    "nos, nostri",
+    "tu, tui",
+    "vester, vestra, vestrum"
    ]
   },
   {
@@ -35280,11 +35280,11 @@
     "adjunto adnominal",
     "complemento nominal"
    ],
-   "dicionario": "ego",
+   "dicionario": "ego, mei",
    "distratoresDicionario": [
-    "nos",
-    "vos",
-    "tu",
+    "nos, nostri",
+    "vos, vestri",
+    "tu, tui",
     "meus, mea, meum"
    ]
   },

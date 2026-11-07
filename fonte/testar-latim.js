@@ -36,7 +36,12 @@ secao('o modo trilhas');
 ok(M.modo() === 'trilhas' && M.soIda(), 'usarModo liga o modo trilhas');
 M.usarModo('qualquer');
 ok(M.modo() === 'livre' && !M.soIda(), 'modo desconhecido vira livre');
+/* a meta da ida no latim é metade maior que nas línguas vivas, porque não há volta (o Gere, 07/11/2026) */
+const diarioForte = { '2026-11-01': { n: 400, ok: 380 } };
+const vivaMin = M.alvoDaFila({}).esPt, vivaMax = M.alvoDaFila(diarioForte).esPt;
 M.usarModo('trilhas');
+ok(vivaMin === 30 && vivaMax === 50 && M.alvoDaFila({}).esPt === 45 && M.alvoDaFila(diarioForte).esPt === 75,
+  'a meta da ida: 30 a 50 nas línguas vivas, 45 a 75 no latim');
 
 /* ═══════════ 2. o gabarito ═══════════ */
 secao('o molde do gabarito');
@@ -381,23 +386,18 @@ for (const tipo of ['compreensao', 'heranca']) {
   ok(alt.length === 5 && alt.includes(c.pt) && c.distratores.every(d => alt.includes(d)), tipo + ': as cinco alternativas são a certa e as quatro do card');
   ok(doTipo.every(x => !x.distratores.some(d => M.conferir(x, d, IDA) === 'certo')), tipo + ': nenhuma errada é aceita');
   const reg = acertou => M.registrar(e, { acertou, modo: 'multipla', direcao: IDA, resposta: 'x' });
-  if (tipo === 'heranca') {
+  {
     /* a herança é curiosidade (o Gere, 03/11/2026): o acerto de primeira fecha de vez; depois
-       de um erro, dois acertos seguidos */
+       de um erro, dois acertos seguidos; e a compreensão, desde 07/11/2026, igual (la-q026) */
     reg(true);
-    ok(e.etapa === 'dominado' && !e.voltaEm && M.filaDe(e) === 'fora' && M.encerrado(c.id, e), 'heranca: o acerto de primeira fecha de vez');
+    ok(e.etapa === 'dominado' && !e.voltaEm && M.filaDe(e) === 'fora' && M.encerrado(c.id, e), tipo + ': o acerto de primeira fecha de vez');
     const e2 = M.estadoInicialDo(c);
     const reg2 = acertou => M.registrar(e2, { acertou, modo: 'multipla', direcao: IDA, resposta: 'x' });
     reg2(false); reg2(true);
-    ok(e2.etapa !== 'dominado', 'heranca: depois do erro, um acerto ainda não fecha');
+    ok(e2.etapa !== 'dominado', tipo + ': depois do erro, um acerto ainda não fecha');
     reg2(true);
-    ok(e2.etapa === 'dominado' && M.filaDe(e2) === 'fora', 'heranca: dois seguidos depois do erro fecham de vez');
-    continue;
+    ok(e2.etapa === 'dominado' && M.filaDe(e2) === 'fora', tipo + ': dois seguidos depois do erro fecham de vez');
   }
-  reg(true); reg(true);
-  ok(e.etapa !== 'dominado' && M.modoDe(e) === 'multipla', tipo + ': dois acertos ainda não dominam');
-  reg(true);
-  ok(e.etapa === 'dominado' && e.voltaEm && M.modoDe(e) === 'multipla', tipo + ': três seguidos dominam, e ele volta por data, de escolher');
 }
 const q = CARDS.find(c => c.tipo === 'compreensao' && c.de);
 const longe = new Date(Date.now() - 3 * 864e5).toISOString();
