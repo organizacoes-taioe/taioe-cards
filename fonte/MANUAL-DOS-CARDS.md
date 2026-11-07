@@ -797,9 +797,14 @@ sem ele o navegador serve o baralho velho.
 | Toda alternativa tem sentido: nada de troca de palavra feita na hora, nada de frase absurda no contraste | `u599` «Preciso te dizer uma casa»; `la-k013`/`la-q012` «A pedra cava a gota»; `la-k023` «O lobo teme o cordeiro» — 03/11/2026 |
 | A resposta no outro gênero vale, no card de gênero variável | `f225` «he pedido cita con el médico» para «la médica» — 03/11/2026 |
 | Sinônimo na volta vai para `sinonimosEs`, não para as aceitas, quando o card ensina a outra palavra | `u602` «Es verdad» para «Es cierto»; `p923` «la felicidad» para «la dicha»; `p527` «la voluntad» para «la gana» — 03/11/2026 |
-| No card de gramática, a palavra destacada não pode ser a forma de modelo entre parênteses das alternativas (o build acusa, na família `tempo`) | `g001` «Yo hablo español» com «presente do indicativo (hablo)»; `g016` «Hablaré con el jefe» — 04/11/2026 |
+| Nos tempos verbais do espanhol, a alternativa é só o nome do tempo, sem a forma de modelo entre parênteses: senão se comparam as formas em vez de decorar os nomes (o build barra o parêntese na família `tempo`) | `g001` «presente do indicativo (hablo)» — 04/11/2026; a regra de 04/11 (só o modelo igual ao destaque) foi lida errado, e o Gere a corrigiu em 07/11/2026 |
 | Exemplo que é o enunciado do dicionário vai inteiro, sem destaque, e a pergunta é «deste verbo», «deste nome» | `la-g027` «habeo, habere, habui, habitum» com *habeo* destacado — 04/11/2026 |
 | Na pergunta «forma de dicionário», o verbete inteiro (sem as observações em português); as erradas são verbetes inventados da mesma palavra pelos outros padrões («virum, viri, n.», «vir, viris, m.»), primeiro os de que a forma também poderia vir, nunca um que exista com aquela forma no Wiktionary; irregulares e pronomes ficam com verbetes reais (`cards_de_forma.py`: `falsos`) | `la-xt036-1` «vir» em vez de «vir, viri, m.» — 04/11/2026 |
+| O verbete inteiro vale também para os pronomes pessoais: «ego, mei», «tu, tui», «nos, nostri», «vos, vestri», e as erradas são os outros pessoais e o possessivo («meus, mea, meum») | `la-xf015-1` *me* → «ego» — 07/11/2026 |
+| Palavra de mais de um sentido corrente mostra os dois no `pt`, com barra («o apartamento / o andar»), para não parecer que é só um | `p278` el piso — 07/11/2026 |
+| Palavra cujo `pt` tem outro gênero no espanhol leva o parêntese que desfaz a confusão | `p1169` la guía → «o guia (o livro)», contra «el guía», o homem — 07/11/2026 |
+| A frase canônica segue a imagem do espanhol quando o português a tem, também na voz | `u452` «Lo echaron del trabajo» → «Mandaram ele embora do trabalho» (antes «Ele foi demitido»); `f203` «Lo que pasa es que…» → «O que acontece é que…» (antes «É que…») — 07/11/2026 |
+| Cognato verdadeiro fica no `pt` em vez do sentido vizinho | `p205` pretender → «pretender» (antes «tentar», que é «intentar») — 07/11/2026 |
 
 ---
 

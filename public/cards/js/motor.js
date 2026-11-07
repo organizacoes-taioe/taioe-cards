@@ -1468,9 +1468,14 @@ window.Motor = (function () {
      em linha reta entre os dois. O acerto é o das últimas trezentas respostas,
      e não o geral, que depois de milhares de respostas já não se mexe (ver
      alvoDaFila). Até 20/10/2026 a meta era de 40 a 60; nesse dia o Gere pediu
-     30 a 50. A volta tinha meta própria, de 40 a 60, até 24/10. */
+     30 a 50. A volta tinha meta própria, de 40 a 60, até 24/10.
+
+     No modo trilhas (o latim) a meta é metade maior, de 45 a 75: sem a volta,
+     o card sai da ida direto para os dominados, e com a mesma meta das línguas
+     vivas ficavam menos cards em jogo (pedido do Gere, 07/11/2026). */
   const ALVO_IDA_MIN = 30;     // cards em es→pt, para quem acerta pouco
   const ALVO_IDA_MAX = 50;     // e para quem acerta muito
+  const ALVO_IDA_TRILHAS = 1.5;   // o fator da meta no modo trilhas
   const ACERTO_DO_MIN = 0.65, ACERTO_DO_MAX = 0.85;
   const JANELA_DO_ACERTO = 300;   // respostas recentes que contam
   const CHANCE_NA_META = 0.15;    // a chance de card novo com a ida exatamente na meta
@@ -1531,7 +1536,8 @@ window.Motor = (function () {
     const a = acertoRecente(diario);
     const t = a.n < 50 ? 0
       : Math.min(1, Math.max(0, (a.taxa - ACERTO_DO_MIN) / (ACERTO_DO_MAX - ACERTO_DO_MIN)));
-    return { esPt: Math.round(ALVO_IDA_MIN + t * (ALVO_IDA_MAX - ALVO_IDA_MIN)) };
+    const f = soIda() ? ALVO_IDA_TRILHAS : 1;
+    return { esPt: Math.round(f * (ALVO_IDA_MIN + t * (ALVO_IDA_MAX - ALVO_IDA_MIN))) };
   }
 
   const entre = (v, min, max) => Math.min(max, Math.max(min, v));
@@ -1539,7 +1545,7 @@ window.Motor = (function () {
   /* A chance de card novo pela meta da ida, com os dois grupos disponíveis. */
   function chanceDoNovo(estados, alvo, arquivados) {
     const ida = contarDirecoes(estados, arquivados).esPt;
-    const meta = (alvo && alvo.esPt) || ALVO_IDA_MIN;
+    const meta = (alvo && alvo.esPt) || Math.round((soIda() ? ALVO_IDA_TRILHAS : 1) * ALVO_IDA_MIN);
     return entre(CHANCE_NA_META + CHANCE_POR_CARD * (meta - ida), CHANCE_MINIMA, CHANCE_MAXIMA);
   }
 
@@ -2661,7 +2667,9 @@ window.Motor = (function () {
   /* A pergunta de compreensão sobre um trecho de texto (LATIM.md §16, D41, 04/11/2026: «Quem é
      enviado do alto céu?») é da mesma família: depois do trecho, uma vez só. */
   function ehCompreensaoDoVerso(id) { return !!DO_VERSO[id]; }
-  function umaVezSo(id) { return ehHeranca(id) || ehAnalise(id) || ehCompreensaoDoVerso(id); }
+  /* e, desde 07/11/2026, toda compreensão, também a das frases (o Gere, no la-q026: «tratado que
+     nem os cards de herança»; até então ela fechava com três acertos e voltava por data) */
+  function umaVezSo(id) { return ehHeranca(id) || ehAnalise(id) || ehCompreensao(id) || ehCompreensaoDoVerso(id); }
 
   /* O card de forma acertado já disse o que tinha a dizer: fora de todas as filas. */
   function encerrado(id, est) {

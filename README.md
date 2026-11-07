@@ -119,7 +119,8 @@ Desde 24/10/2026 (pedido do Gere) a escolha tem **dois passos**:
    e 80%); dentro da fila, o mais urgente.
 
 A meta da ida vai de **30**, com 65% de acerto recente ou menos, a **50**, com
-85% ou mais (desde 20/10/2026; antes, 40 a 60). A chance que o painel mostra é
+85% ou mais (desde 20/10/2026; antes, 40 a 60). No latim, que só tem a ida, a meta é metade
+maior, de 45 a 75 (desde 07/11/2026). A chance que o painel mostra é
 a mesma conta do sorteio, e por isso é a de verdade.
 
 Na simulação (`node fonte/simular-fila.js`, aluno de mentira, 120 respostas por

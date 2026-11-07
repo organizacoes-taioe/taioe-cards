@@ -809,10 +809,10 @@ for (const { idioma, cards } of baralhos) {
         if (!toks.some((t, k) => alvo.every((a, j) => toks[k + j] === a))) problemas.push('exemplo ' + (i + 1) + ' sem o destaque «' + e.w + '»: ' + onde);
         const d = e.distratores || [];
         if (d.length !== 4 || new Set(d).size !== 4 || d.includes(c.pt)) problemas.push('exemplo ' + (i + 1) + ' sem quatro erradas distintas: ' + onde);
-        /* a forma de modelo entre parênteses («presente do indicativo (hablo)») não pode ser a
-           própria palavra destacada: «Yo hablo español» trazia a resposta escrita (g001, 03/11/2026) */
-        const modelos = [c.pt, ...d].flatMap(a => (String(a).match(/\(([^)]*)\)/g) || []).flatMap(palavras)).map(chave);
-        if (c.familia === 'tempo' && alvo.some(a => a.length >= 4 && modelos.includes(a))) problemas.push('exemplo ' + (i + 1) + ': «' + e.w + '» está nos parênteses das alternativas: ' + onde);
+        /* nos tempos, a alternativa é só o nome, sem a forma de modelo entre parênteses: com
+           «presente do indicativo (hablo)» se comparavam as formas em vez de decorar os nomes
+           (g001, 07/11/2026; antes, 03/11, só se barrava o modelo igual à palavra destacada) */
+        if (c.familia === 'tempo' && [c.pt, ...d].some(a => /[()]/.test(a))) problemas.push('exemplo ' + (i + 1) + ': nome de tempo com parêntese nas alternativas: ' + onde);
       });
     }
   }
