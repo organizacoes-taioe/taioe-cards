@@ -1,0 +1,3162 @@
+[
+ {
+  "id": "it-g001",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "presente indicativo",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "presente do indicativo",
+   "presente indicativo",
+   "indicativo presente"
+  ],
+  "distratores": [
+   "passato prossimo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo",
+   "futuro"
+  ],
+  "nota": "Regulares: parlo, parli, parla, parliamo, parlate, parlano; prendo, prendi, prende…; dormo, dormi, dorme…; e os em -isc-: capisco, capisci, capisce, capiamo, capite, capiscono.\nIrregulares de todo dia: sono, ho, faccio, vado, vengo, esco, posso, voglio, devo, so.\nO acento muda o tempo: parlo (eu falo) × parlò (ele falou).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Dormo poco.",
+    "w": "Dormo",
+    "de": "it-v022",
+    "exp": "dormo: 1ª pessoa do presente de dormire, regular.",
+    "distratores": [
+     "passato prossimo",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Mi capisci?",
+    "w": "capisci",
+    "de": "it-v017",
+    "exp": "capisci: presente de capire, que ganha -isc- (capisco, capisci, capisce).",
+    "distratores": [
+     "presente do subjuntivo",
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Esco di casa alle otto.",
+    "w": "Esco",
+    "de": "it-v007",
+    "exp": "esco: presente de uscire, irregular (esco, esci, esce, usciamo).",
+    "distratores": [
+     "passato remoto",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Che lavoro fai?",
+    "w": "fai",
+    "de": "it-v003",
+    "exp": "fai: presente de fare, 2ª pessoa (faccio, fai, fa).",
+    "distratores": [
+     "passato prossimo",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Vogliono una casa nuova.",
+    "w": "Vogliono",
+    "de": "it-v008",
+    "exp": "vogliono: presente de volere, 3ª do plural; o subjuntivo seria vogliano.",
+    "distratores": [
+     "presente do subjuntivo",
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Non sappiamo niente.",
+    "w": "sappiamo",
+    "de": "it-v011",
+    "exp": "sappiamo: presente de sapere (so, sai, sa, sappiamo).",
+    "distratores": [
+     "presente do subjuntivo",
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Il sabato rimango sempre a casa.",
+    "w": "rimango",
+    "de": "it-v015",
+    "exp": "rimango: presente de rimanere, com g na 1ª pessoa (rimango, rimani).",
+    "distratores": [
+     "passato prossimo",
+     "presente do subjuntivo",
+     "imperfeito do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Il treno arriva alle otto.",
+    "w": "arriva",
+    "de": "it-u156",
+    "exp": "arriva: presente de arrivare; o horário marcado vai no presente, como no Brasil.",
+    "distratores": [
+     "passato prossimo",
+     "passato remoto",
+     "imperfeito do indicativo",
+     "futuro"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g002",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "passato prossimo",
+  "pt": "passato prossimo",
+  "aceitas": [
+   "passato prossimo",
+   "preterito perfeito composto",
+   "perfeito composto",
+   "passato"
+  ],
+  "distratores": [
+   "passato remoto",
+   "imperfeito do indicativo",
+   "presente do indicativo",
+   "futuro"
+  ],
+  "nota": "É o passado de todo dia: o presente de avere ou de essere + o particípio (ho parlato, sono andato).\nParticípios regulares: -are → -ato, -ere → -uto, -ire → -ito (parlato, ricevuto, dormito); muitos são irregulares: fatto, detto, letto, scritto, preso, messo, visto, aperto, chiesto.\nCom essere, o particípio concorda com o sujeito: è andato, è andata, sono andati.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Stamattina ho lavorato a casa.",
+    "w": "ho lavorato",
+    "de": "it-v023",
+    "exp": "ho lavorato: o presente de avere + o particípio de lavorare.",
+    "distratores": [
+     "passato remoto",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Ho ricevuto un regalo.",
+    "w": "Ho ricevuto",
+    "de": "it-v024",
+    "exp": "ho ricevuto: avere + o particípio de ricevere (-ere → -uto).",
+    "distratores": [
+     "passato remoto",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Hai dormito bene?",
+    "w": "Hai dormito",
+    "de": "it-v025",
+    "exp": "hai dormito: avere + o particípio de dormire (-ire → -ito).",
+    "distratores": [
+     "passato remoto",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Ho fatto la spesa.",
+    "w": "Ho fatto",
+    "de": "it-v032",
+    "exp": "ho fatto: o particípio de fare é irregular, fatto.",
+    "distratores": [
+     "passato remoto",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Hai letto questo libro?",
+    "w": "Hai letto",
+    "de": "it-v038",
+    "exp": "hai letto: o particípio de leggere é irregular, letto.",
+    "distratores": [
+     "passato remoto",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Ho chiesto il conto.",
+    "w": "Ho chiesto",
+    "de": "it-v045",
+    "exp": "ho chiesto: o particípio de chiedere é irregular, chiesto.",
+    "distratores": [
+     "passato remoto",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Mia figlia è nata a maggio.",
+    "w": "è nata",
+    "de": "it-v042",
+    "exp": "è nata: essere + o particípio de nascere, que concorda com mia figlia.",
+    "distratores": [
+     "passato remoto",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Siamo andati a Roma in treno.",
+    "w": "Siamo andati",
+    "de": "it-u029",
+    "exp": "siamo andati: essere + o particípio de andare, no plural porque o sujeito é noi.",
+    "distratores": [
+     "passato remoto",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g003",
+  "tipo": "conceito",
+  "familia": "ausiliare",
+  "publicos": [
+   "pt"
+  ],
+  "it": "essere: verbi di moto, stato e cambiamento",
+  "pt": "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+  "aceitas": [
+   "movimento",
+   "verbo de movimento",
+   "mudanca de estado",
+   "movimento ou mudanca",
+   "permanencia"
+  ],
+  "distratores": [
+   "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+   "avere: verbo com objeto direto (ho mangiato la pizza)",
+   "avere: atividade sem objeto (ho dormito, ho parlato)",
+   "avere: movimento sem destino (ho camminato, ho nuotato)"
+  ],
+  "nota": "Com essere: os verbos sem objeto de movimento até um lugar ou dele (andare, venire, arrivare, partire, uscire, entrare, tornare), de permanência (stare, restare, rimanere, essere) e de mudança (nascere, morire, diventare).\nO particípio concorda com o sujeito: sono arrivato, è arrivata, siamo arrivati.\nO verbo que só diz o jeito de se mover, sem destino, vai com avere: ho camminato, ho nuotato.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Siamo andati a Roma in treno.",
+    "w": "Siamo andati",
+    "de": "it-u029",
+    "exp": "siamo andati: andare é movimento até um lugar (a Roma).",
+    "distratores": [
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Sono venuto in treno.",
+    "w": "Sono venuto",
+    "de": "it-u104",
+    "exp": "sono venuto: venire, movimento; o particípio é irregular.",
+    "distratores": [
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Sono arrivato ieri.",
+    "w": "Sono arrivato",
+    "de": "it-u157",
+    "exp": "sono arrivato: arrivare, chegar a um lugar.",
+    "distratores": [
+     "avere: movimento sem destino (ho camminato, ho nuotato)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)"
+    ]
+   },
+   {
+    "it": "Siamo usciti sotto la pioggia.",
+    "w": "Siamo usciti",
+    "de": "it-u476",
+    "exp": "siamo usciti: uscire, sair de um lugar.",
+    "distratores": [
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Mia sorella è tornata dal Brasile.",
+    "w": "è tornata",
+    "de": "it-v028",
+    "exp": "è tornata: tornare, movimento; tornata concorda com mia sorella.",
+    "distratores": [
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Sono rimast{o|a} a casa tutto il giorno.",
+    "w": "Sono rimasto",
+    "de": "it-v040",
+    "exp": "sono rimasto: rimanere, ficar num lugar (permanência).",
+    "distratores": [
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Sono nato in un piccolo paese.",
+    "w": "Sono nato",
+    "de": "it-u301",
+    "exp": "sono nato: nascere, uma mudança de estado.",
+    "distratores": [
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Il mio gatto è morto.",
+    "w": "è morto",
+    "de": "it-v043",
+    "exp": "è morto: morire, uma mudança de estado.",
+    "distratores": [
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Il gatto è diventato grasso.",
+    "w": "è diventato",
+    "de": "it-u662",
+    "exp": "è diventato: diventare, virar outra coisa.",
+    "distratores": [
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g004",
+  "tipo": "conceito",
+  "familia": "ausiliare",
+  "publicos": [
+   "pt"
+  ],
+  "it": "avere: verbi con complemento oggetto",
+  "pt": "avere: verbo com objeto direto (ho mangiato la pizza)",
+  "aceitas": [
+   "com objeto",
+   "com objeto direto",
+   "verbo com objeto",
+   "verbo transitivo",
+   "transitivo"
+  ],
+  "distratores": [
+   "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+   "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+   "avere: atividade sem objeto (ho dormito, ho parlato)",
+   "avere: movimento sem destino (ho camminato, ho nuotato)"
+  ],
+  "nota": "Com objeto direto (o que se perde, se compra, se faz), o auxiliar é avere: ho perso le chiavi, ho comprato una giacca.\nO particípio não concorda com o sujeito (Maria ha mangiato), mas concorda com lo, la, li, le antes do verbo: le chiavi? Le ho perse.\nO mesmo verbo muda de auxiliar quando fica sem objeto: ho finito gli studi, mas il film è finito; ho passato l'estate, mas la malattia è passata.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Ho perso le chiavi.",
+    "w": "Ho perso",
+    "de": "it-u309",
+    "exp": "ho perso: perdere tem objeto, le chiavi.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Ho lasciato le chiavi a casa.",
+    "w": "Ho lasciato",
+    "de": "it-u138",
+    "exp": "ho lasciato: lasciare tem objeto, le chiavi.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Ho comprato una giacca rossa.",
+    "w": "Ho comprato",
+    "de": "it-u184",
+    "exp": "ho comprato: comprare tem objeto, una giacca rossa.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Abbiamo perso il treno.",
+    "w": "Abbiamo perso",
+    "de": "it-u310",
+    "exp": "abbiamo perso: perdere tem objeto, il treno.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Ho ricevuto un regalo.",
+    "w": "Ho ricevuto",
+    "de": "it-v024",
+    "exp": "ho ricevuto: ricevere tem objeto, un regalo.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Ho aperto la finestra.",
+    "w": "Ho aperto",
+    "de": "it-v039",
+    "exp": "ho aperto: aprire tem objeto, la finestra.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Ho finito gli studi.",
+    "w": "Ho finito",
+    "de": "it-u482",
+    "exp": "ho finito: com objeto (gli studi) é avere; sem objeto, il film è finito.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Ho passato l'estate al mare.",
+    "w": "Ho passato",
+    "de": "it-u202",
+    "exp": "ho passato: com objeto (l'estate) é avere; sem objeto, la malattia è passata.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g005",
+  "tipo": "conceito",
+  "familia": "articolo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "il, i: davanti a consonante",
+  "pt": "il, i: masculino antes de consoante (il libro, i libri)",
+  "aceitas": [
+   "il",
+   "antes de consoante",
+   "consoante",
+   "il i"
+  ],
+  "distratores": [
+   "l': antes de vogal, no singular (l'anno, l'acqua)",
+   "gli: plural masculino antes de vogal (gli amici)",
+   "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+   "sem artigo: possessivo com parente no singular (mia madre)"
+  ],
+  "nota": "O masculino leva il no singular e i no plural antes de consoante: il libro, i libri, il treno, i bambini.\nS seguida de vogal conta como consoante: il sole, il servizio, i soldi; só s + consoante, z, gn e ps pedem lo, gli (lo studente, gli zii).\nAntes de vogal, l' no singular e gli no plural: l'amico, gli amici.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Prendiamo il treno delle otto.",
+    "w": "il treno",
+    "de": "it-u106",
+    "exp": "il: treno começa com t, consoante.",
+    "distratores": [
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Il gatto dorme sul letto.",
+    "w": "Il gatto",
+    "de": "it-u458",
+    "exp": "il: gatto começa com consoante.",
+    "distratores": [
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Il servizio è incluso?",
+    "w": "Il servizio",
+    "de": "it-u319",
+    "exp": "il: s seguida de vogal (se-) é como qualquer consoante.",
+    "distratores": [
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "I bambini sono a scuola.",
+    "w": "I bambini",
+    "de": "it-u268",
+    "exp": "i: o plural de il bambino.",
+    "distratores": [
+     "gli: plural masculino antes de vogal (gli amici)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Devo cambiare i soldi.",
+    "w": "i soldi",
+    "de": "it-u325",
+    "exp": "i: s + vogal pede i; gli seria só com s + consoante.",
+    "distratores": [
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Metti i piatti sul tavolo.",
+    "w": "i piatti",
+    "de": "it-u626",
+    "exp": "i: o plural de il piatto.",
+    "distratores": [
+     "gli: plural masculino antes de vogal (gli amici)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Ti piacciono i gatti?",
+    "w": "i gatti",
+    "de": "it-u405",
+    "exp": "i: o plural de il gatto.",
+    "distratores": [
+     "gli: plural masculino antes de vogal (gli amici)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g006",
+  "tipo": "conceito",
+  "familia": "articolo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "l': davanti a vocale",
+  "pt": "l': antes de vogal, no singular (l'anno, l'acqua)",
+  "aceitas": [
+   "l",
+   "antes de vogal",
+   "vogal",
+   "apostrofo",
+   "l apostrofo"
+  ],
+  "distratores": [
+   "il, i: masculino antes de consoante (il libro, i libri)",
+   "gli: plural masculino antes de vogal (gli amici)",
+   "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+   "sem artigo: possessivo com parente no singular (mia madre)"
+  ],
+  "nota": "Antes de vogal, lo e la viram l': l'anno, l'ombrello, l'estate, l'acqua.\nNo plural não há apóstrofo: gli anni, gli ombrelli, le estati.\nNo indefinido, só o feminino leva apóstrofo: un amico, un'amica.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "L'anno prossimo vado in Italia.",
+    "w": "L'anno",
+    "de": "it-u060",
+    "exp": "l': anno começa com vogal.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Prendi l'ombrello!",
+    "w": "l'ombrello",
+    "de": "it-u107",
+    "exp": "l': ombrello começa com vogal.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Pago l'affitto alla fine del mese.",
+    "w": "l'affitto",
+    "de": "it-u171",
+    "exp": "l': affitto começa com vogal.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Ho passato l'estate al mare.",
+    "w": "l'estate",
+    "de": "it-u202",
+    "exp": "l': estate é feminino, e la também vira l' antes de vogal.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "L'insegnante spiega bene.",
+    "w": "L'insegnante",
+    "de": "it-u321",
+    "exp": "l': insegnante começa com vogal, e serve ao professor e à professora.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Mi passi l'olio, per favore?",
+    "w": "l'olio",
+    "de": "it-u511",
+    "exp": "l': olio começa com vogal.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "L'orso dorme tutto l'inverno.",
+    "w": "L'orso",
+    "de": "it-u653",
+    "exp": "l': orso começa com vogal; no plural, gli orsi.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "L'asino mangia l'erba.",
+    "w": "L'asino",
+    "de": "it-u729",
+    "exp": "l': asino começa com vogal; no plural, gli asini.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g007",
+  "tipo": "conceito",
+  "familia": "articolo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "gli: davanti a vocale",
+  "pt": "gli: plural masculino antes de vogal (gli amici)",
+  "aceitas": [
+   "plural antes de vogal",
+   "gli antes de vogal",
+   "plural masculino antes de vogal"
+  ],
+  "distratores": [
+   "il, i: masculino antes de consoante (il libro, i libri)",
+   "l': antes de vogal, no singular (l'anno, l'acqua)",
+   "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+   "sem artigo: possessivo com parente no singular (mia madre)"
+  ],
+  "nota": "Gli é o plural de l' masculino e de lo: l'amico → gli amici, l'ospite → gli ospiti, lo studente → gli studenti.\nAntes de consoante, o plural é i (il libro → i libri); no feminino, le (l'amica → le amiche).\nCom preposição: agli, degli, negli, sugli, dagli (sugli alberi).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Stasera esco con gli amici.",
+    "w": "gli amici",
+    "de": "it-u284",
+    "exp": "gli: amici começa com vogal; no singular, l'amico.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Gli ospiti arrivano alle otto.",
+    "w": "Gli ospiti",
+    "de": "it-u634",
+    "exp": "gli: ospiti começa com vogal; no singular, l'ospite.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Porta gli occhiali.",
+    "w": "gli occhiali",
+    "de": "it-u168",
+    "exp": "gli: occhiali começa com vogal.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Le scimmie vivono sugli alberi.",
+    "w": "sugli alberi",
+    "de": "it-u658",
+    "exp": "sugli: su + gli, porque alberi começa com vogal (l'albero).",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   },
+   {
+    "it": "Sono arrivati gli ospiti.",
+    "w": "gli ospiti",
+    "de": "it-v027",
+    "exp": "gli: ospiti começa com vogal; o sujeito vem depois do verbo.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
+     "sem artigo: possessivo com parente no singular (mia madre)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g008",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "it": "c'è, ci sono",
+  "pt": "c'è, ci sono: «há», «tem»",
+  "aceitas": [
+   "ci sono",
+   "ha",
+   "tem",
+   "c e",
+   "ce"
+  ],
+  "distratores": [
+   "ci: «nos», a gente (ci vediamo)",
+   "ne: «disso», «deles» (ne parliamo)",
+   "si reflexivo (si chiama, si alza)",
+   "objeto direto (lo, la, mi, ti…)"
+  ],
+  "nota": "C'è (ci + è) é «há», «tem», no singular; ci sono, no plural: c'è un problema, ci sono due bagni.\nMuda de tempo como essere: c'era, c'erano, c'è stato, ci sarà.\nSem o ci, é outra coisa: è un problema (é um problema) × c'è un problema (tem um problema).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "C'è un problema.",
+    "w": "C'è",
+    "de": "it-u002",
+    "exp": "c'è: «tem», no singular (un problema).",
+    "distratores": [
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si reflexivo (si chiama, si alza)",
+     "objeto direto (lo, la, mi, ti…)"
+    ]
+   },
+   {
+    "it": "C'è posto per me?",
+    "w": "C'è",
+    "de": "it-u160",
+    "exp": "c'è: «tem lugar?», no singular.",
+    "distratores": [
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si impessoal (come si dice?)",
+     "objeto direto (lo, la, mi, ti…)"
+    ]
+   },
+   {
+    "it": "C'è troppa gente.",
+    "w": "C'è",
+    "de": "it-u250",
+    "exp": "c'è: gente é singular em italiano, então c'è.",
+    "distratores": [
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si reflexivo (si chiama, si alza)",
+     "objeto direto (lo, la, mi, ti…)"
+    ]
+   },
+   {
+    "it": "Non c'è bisogno.",
+    "w": "c'è",
+    "de": "it-u287",
+    "exp": "non c'è bisogno: «não precisa», ao pé da letra «não há necessidade».",
+    "distratores": [
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si impessoal (come si dice?)",
+     "objeto direto (lo, la, mi, ti…)"
+    ]
+   },
+   {
+    "it": "C'è un gatto sul tetto.",
+    "w": "C'è",
+    "de": "it-u639",
+    "exp": "c'è: «tem um gato», no singular.",
+    "distratores": [
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si reflexivo (si chiama, si alza)",
+     "objeto direto (lo, la, mi, ti…)"
+    ]
+   },
+   {
+    "it": "Non ci sono prove contro di lui.",
+    "w": "ci sono",
+    "de": "it-u433",
+    "exp": "ci sono: «há», no plural (prove).",
+    "distratores": [
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si reflexivo (si chiama, si alza)",
+     "objeto direto (lo, la, mi, ti…)"
+    ]
+   },
+   {
+    "it": "C'erano oltre cento persone.",
+    "w": "C'erano",
+    "de": "it-u456",
+    "exp": "c'erano: «havia», o imperfeito de ci sono.",
+    "distratores": [
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si impessoal (come si dice?)",
+     "objeto direto (lo, la, mi, ti…)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g009",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "it": "ci: pronome di noi",
+  "pt": "ci: «nos», a gente (ci vediamo)",
+  "aceitas": [
+   "nos",
+   "a gente",
+   "ci nos",
+   "noi"
+  ],
+  "distratores": [
+   "c'è, ci sono: «há», «tem»",
+   "ci: «lá», «nisso» (ci vado, non ci credo)",
+   "ne: «disso», «deles» (ne parliamo)",
+   "si impessoal (come si dice?)"
+  ],
+  "nota": "Ci é o pronome de noi: ci vediamo (a gente se vê), ci siamo conosciuti (a gente se conheceu), ci chiama (ele nos chama).\nCi vediamo domani é a despedida de todo dia: «até amanhã».\nO mesmo ci também diz «lá» e «nisso» (ci vado, non ci credo) e está em c'è; quem decide é a frase.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Ci vediamo domani!",
+    "w": "Ci",
+    "de": "it-u054",
+    "exp": "ci vediamo: «a gente se vê», com noi.",
+    "distratores": [
+     "c'è, ci sono: «há», «tem»",
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si impessoal (come si dice?)"
+    ]
+   },
+   {
+    "it": "Ci sentiamo domani.",
+    "w": "Ci",
+    "de": "it-u124",
+    "exp": "ci sentiamo: «a gente se fala», com noi.",
+    "distratores": [
+     "c'è, ci sono: «há», «tem»",
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si impessoal (come si dice?)"
+    ]
+   },
+   {
+    "it": "Ci vediamo alle tre.",
+    "w": "Ci",
+    "de": "it-u155",
+    "exp": "ci vediamo: «a gente se vê», com noi.",
+    "distratores": [
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "c'è, ci sono: «há», «tem»",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si impessoal (come si dice?)"
+    ]
+   },
+   {
+    "it": "Ci siamo visti l'altro giorno.",
+    "w": "Ci",
+    "de": "it-u042",
+    "exp": "ci siamo visti: «a gente se viu».",
+    "distratores": [
+     "c'è, ci sono: «há», «tem»",
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si impessoal (come si dice?)"
+    ]
+   },
+   {
+    "it": "Ci siamo conosciuti a Roma.",
+    "w": "Ci",
+    "de": "it-u173",
+    "exp": "ci siamo conosciuti: «a gente se conheceu».",
+    "distratores": [
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "c'è, ci sono: «há», «tem»",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si impessoal (come si dice?)"
+    ]
+   },
+   {
+    "it": "Ci siamo fatti una bella risata.",
+    "w": "Ci",
+    "de": "it-u680",
+    "exp": "ci siamo fatti una risata: «nós demos uma risada».",
+    "distratores": [
+     "c'è, ci sono: «há», «tem»",
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "si impessoal (come si dice?)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g010",
+  "tipo": "conceito",
+  "familia": "di-da",
+  "publicos": [
+   "pt"
+  ],
+  "it": "di: materia, contenuto, specificazione",
+  "pt": "di: de quê ou de quem (matéria, conteúdo, posse)",
+  "aceitas": [
+   "materia",
+   "conteudo",
+   "posse",
+   "de que",
+   "de quem",
+   "materia ou conteudo"
+  ],
+  "distratores": [
+   "da: para quê, ou em que idade (da bere, da piccolo)",
+   "da: de onde vem ou sai (torna dal Brasile)",
+   "di + infinitivo (cerco di dormire)",
+   "di sì, di no: «que sim», «que não» (penso di sì)"
+  ],
+  "nota": "Di diz de quê ou de quem: o material (una camicia di seta), o conteúdo (un bicchiere di vino), o tipo (un negozio di scarpe), a parte de um todo (la fine del film).\nCom artigo, junta-se a ele: del, dello, della, dell', dei, degli, delle.\nDa diz para que serve: un bicchiere di vino é um copo com vinho, un bicchiere da vino é uma taça para vinho.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Questa camicia è di seta.",
+    "w": "di seta",
+    "de": "it-u727",
+    "exp": "di: o material da camisa.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "di: de onde a pessoa é (sono di Roma)",
+     "di sì, di no: «que sim», «que não» (penso di sì)"
+    ]
+   },
+   {
+    "it": "Ho messo i libri in una scatola di cartone.",
+    "w": "di cartone",
+    "de": "it-u704",
+    "exp": "di: o material da caixa.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "da: há quanto tempo, desde (da tre anni)",
+     "di + infinitivo (cerco di dormire)",
+     "di sì, di no: «que sim», «que não» (penso di sì)"
+    ]
+   },
+   {
+    "it": "Un bicchiere di vino rosso.",
+    "w": "di vino",
+    "de": "it-u183",
+    "exp": "di: o que há no copo; da vino seria a taça própria para vinho.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "di + infinitivo (cerco di dormire)",
+     "di sì, di no: «que sim», «que não» (penso di sì)"
+    ]
+   },
+   {
+    "it": "Il brodo di pollo è pronto.",
+    "w": "di pollo",
+    "de": "it-u609",
+    "exp": "di: de que é feito o caldo.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "di + infinitivo (cerco di dormire)",
+     "di sì, di no: «que sim», «que não» (penso di sì)"
+    ]
+   },
+   {
+    "it": "Non mi piace la carne di maiale.",
+    "w": "di maiale",
+    "de": "it-u364",
+    "exp": "di: de que animal é a carne.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "di: de onde a pessoa é (sono di Roma)",
+     "di + infinitivo (cerco di dormire)"
+    ]
+   },
+   {
+    "it": "Lavoro in un negozio di scarpe.",
+    "w": "di scarpe",
+    "de": "it-u542",
+    "exp": "di: o que a loja vende.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "di + infinitivo (cerco di dormire)",
+     "di sì, di no: «que sim», «que não» (penso di sì)"
+    ]
+   },
+   {
+    "it": "Ho letto solo una parte del libro.",
+    "w": "del libro",
+    "de": "it-u075",
+    "exp": "del: di + il; a parte é do livro.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: na casa de, no consultório de (vado da te)",
+     "di + infinitivo (cerco di dormire)"
+    ]
+   },
+   {
+    "it": "La fine del film è scontata.",
+    "w": "del film",
+    "de": "it-u700",
+    "exp": "del: di + il; o final é do filme.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "di + infinitivo (cerco di dormire)",
+     "di sì, di no: «que sim», «que não» (penso di sì)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g011",
+  "tipo": "conceito",
+  "familia": "di-da",
+  "publicos": [
+   "pt"
+  ],
+  "it": "di sì, di no",
+  "pt": "di sì, di no: «que sim», «que não» (penso di sì)",
+  "aceitas": [
+   "di si",
+   "di no",
+   "que sim",
+   "que nao"
+  ],
+  "distratores": [
+   "di + infinitivo (cerco di dormire)",
+   "di: de quê ou de quem (matéria, conteúdo, posse)",
+   "da: de onde vem ou sai (torna dal Brasile)",
+   "da: para quê, ou em que idade (da bere, da piccolo)"
+  ],
+  "nota": "Depois de pensare, credere, sperare e dire, «que sim» e «que não» são di sì e di no: penso di sì (acho que sim), credo di no, mi ha detto di sì.\nEm italiano não se diz «penso che sì»: o «que» do português vira di.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Penso di sì.",
+    "w": "di sì",
+    "de": "it-u071",
+    "exp": "penso di sì: «acho que sim».",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: para quê, ou em que idade (da bere, da piccolo)"
+    ]
+   },
+   {
+    "it": "Penso di no.",
+    "w": "di no",
+    "de": "it-u159",
+    "exp": "penso di no: «acho que não».",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di: de onde a pessoa é (sono di Roma)",
+     "da: para quê, ou em que idade (da bere, da piccolo)"
+    ]
+   },
+   {
+    "it": "Credo di sì.",
+    "w": "di sì",
+    "de": "it-u294",
+    "exp": "credo di sì: «acho que sim», com credere.",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: para quê, ou em que idade (da bere, da piccolo)"
+    ]
+   },
+   {
+    "it": "Spero di sì.",
+    "w": "di sì",
+    "de": "it-u462",
+    "exp": "spero di sì: «espero que sim».",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di: de onde a pessoa é (sono di Roma)",
+     "da: há quanto tempo, desde (da tre anni)"
+    ]
+   },
+   {
+    "it": "Mi ha detto di sì.",
+    "w": "di sì",
+    "de": "it-u022",
+    "exp": "mi ha detto di sì: «ele me disse que sim».",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: para quê, ou em que idade (da bere, da piccolo)"
+    ]
+   },
+   {
+    "it": "Disse di sì.",
+    "w": "di sì",
+    "de": "it-v109",
+    "exp": "disse di sì: «ele disse que sim».",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: para quê, ou em que idade (da bere, da piccolo)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g012",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "imperativo",
+  "pt": "imperativo",
+  "aceitas": [
+   "imperativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "presente do subjuntivo",
+   "passato remoto",
+   "futuro"
+  ],
+  "nota": "O tu afirmativo: -are → -a (parla), -ere e -ire → -i (prendi, senti). Cinco têm forma curta, com apóstrofo: fa', va', di', da', sta' (também fai, vai, dai, stai).\nAvere e essere usam abbi e sii.\nO negativo do tu é non + infinitivo: non parlare, non piangere.\nOs pronomes vêm colados no fim: dimmi, lavati; depois de di', fa', va', da', sta', a consoante dobra (dimmi, fammi).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Fa' attenzione!",
+    "w": "Fa'",
+    "de": "it-v077",
+    "exp": "fa': o imperativo curto de fare (também fai).",
+    "distratores": [
+     "presente do indicativo",
+     "presente do subjuntivo",
+     "passato remoto",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Va' a casa!",
+    "w": "Va'",
+    "de": "it-v078",
+    "exp": "va': o imperativo curto de andare (também vai).",
+    "distratores": [
+     "presente do indicativo",
+     "presente do subjuntivo",
+     "passato remoto",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Di' qualcosa!",
+    "w": "Di'",
+    "de": "it-v079",
+    "exp": "di': o imperativo de dire.",
+    "distratores": [
+     "presente do indicativo",
+     "presente do subjuntivo",
+     "passato remoto",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Abbi pazienza!",
+    "w": "Abbi",
+    "de": "it-v082",
+    "exp": "abbi: o imperativo de avere; o subjuntivo seria abbia.",
+    "distratores": [
+     "presente do subjuntivo",
+     "presente do indicativo",
+     "passato remoto",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Sii brav{o|a}!",
+    "w": "Sii",
+    "de": "it-v083",
+    "exp": "sii: o imperativo de essere; o subjuntivo seria sia.",
+    "distratores": [
+     "presente do subjuntivo",
+     "presente do indicativo",
+     "passato remoto",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Non parlare così!",
+    "w": "Non parlare",
+    "de": "it-v087",
+    "exp": "non parlare: o imperativo negativo do tu é non + infinitivo.",
+    "distratores": [
+     "presente do indicativo",
+     "presente do subjuntivo",
+     "passato remoto",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Dimmi la verità.",
+    "w": "Dimmi",
+    "de": "it-u023",
+    "exp": "dimmi: di' + mi colado no fim, com o m dobrado.",
+    "distratores": [
+     "presente do indicativo",
+     "presente do subjuntivo",
+     "passato remoto",
+     "futuro"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g013",
+  "tipo": "conceito",
+  "familia": "articolo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "nessun articolo: possessivo e parentela",
+  "pt": "sem artigo: possessivo com parente no singular (mia madre)",
+  "aceitas": [
+   "sem artigo",
+   "nenhum artigo",
+   "parente",
+   "possessivo com parente",
+   "possessivo e parente"
+  ],
+  "distratores": [
+   "il, i: masculino antes de consoante (il libro, i libri)",
+   "l': antes de vogal, no singular (l'anno, l'acqua)",
+   "gli: plural masculino antes de vogal (gli amici)",
+   "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)"
+  ],
+  "nota": "Com mio, tuo, suo, nostro, vostro e um parente no singular, não há artigo: mia madre, tuo padre, mio marito, mia sorella.\nO artigo volta no plural (i miei fratelli), com loro (il loro figlio), com diminutivo ou adjetivo (la mia sorellina, il mio caro nonno) e, quase sempre, com mamma e papà (la mia mamma).\nCom quem não é parente, sempre artigo: il mio ragazzo, la mia famiglia, il mio capo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Come si chiama tua madre?",
+    "w": "tua madre",
+    "de": "it-u162",
+    "exp": "tua madre: parente no singular com possessivo, sem artigo.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)"
+    ]
+   },
+   {
+    "it": "Mia figlia ha sette anni.",
+    "w": "Mia figlia",
+    "de": "it-u179",
+    "exp": "mia figlia: parente no singular, sem artigo.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)"
+    ]
+   },
+   {
+    "it": "Mio marito lavora in banca.",
+    "w": "Mio marito",
+    "de": "it-u266",
+    "exp": "mio marito: parente no singular, sem artigo.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)"
+    ]
+   },
+   {
+    "it": "Ti presento mia sorella.",
+    "w": "mia sorella",
+    "de": "it-u303",
+    "exp": "mia sorella: «a minha irmã», mas sem artigo em italiano.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)"
+    ]
+   },
+   {
+    "it": "Mio padre lavora in banca.",
+    "w": "Mio padre",
+    "de": "it-u454",
+    "exp": "mio padre: parente no singular, sem artigo.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)"
+    ]
+   },
+   {
+    "it": "Mia suocera vive con noi.",
+    "w": "Mia suocera",
+    "de": "it-u541",
+    "exp": "mia suocera: sogra também é parente, sem artigo.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)"
+    ]
+   },
+   {
+    "it": "Mio nonno è morto due anni fa.",
+    "w": "Mio nonno",
+    "de": "it-u431",
+    "exp": "mio nonno: parente no singular, sem artigo.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)"
+    ]
+   },
+   {
+    "it": "Mio figlio ha preso la laurea.",
+    "w": "Mio figlio",
+    "de": "it-u659",
+    "exp": "mio figlio: parente no singular; no plural, i miei figli.",
+    "distratores": [
+     "il, i: masculino antes de consoante (il libro, i libri)",
+     "l': antes de vogal, no singular (l'anno, l'acqua)",
+     "gli: plural masculino antes de vogal (gli amici)",
+     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g014",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "imperfetto indicativo",
+  "pt": "imperfeito do indicativo",
+  "aceitas": [
+   "imperfeito",
+   "imperfeito do indicativo",
+   "preterito imperfeito",
+   "imperfetto"
+  ],
+  "distratores": [
+   "passato prossimo",
+   "passato remoto",
+   "imperfeito do subjuntivo",
+   "condicional"
+  ],
+  "nota": "Regular em todos os verbos: parlavo, parlavi, parlava, parlavamo, parlavate, parlavano; prendevo…; dormivo….\nIrregulares: ero (essere), facevo (fare), dicevo (dire), bevevo (bere).\nServe ao que se repetia ou durava no passado (da piccolo giocavo, faceva caldo); o fato pontual vai no passato prossimo.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "La mia casa era piccola.",
+    "w": "era",
+    "de": "it-v049",
+    "exp": "era: imperfeito de essere; a casa era assim naquele tempo.",
+    "distratores": [
+     "passato prossimo",
+     "passato remoto",
+     "imperfeito do subjuntivo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Faceva molto caldo.",
+    "w": "Faceva",
+    "de": "it-v050",
+    "exp": "faceva: imperfeito de fare, com o radical fac- (facevo, facevi).",
+    "distratores": [
+     "passato prossimo",
+     "passato remoto",
+     "imperfeito do subjuntivo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Che cosa dicevi?",
+    "w": "dicevi",
+    "de": "it-v051",
+    "exp": "dicevi: imperfeito de dire, com o radical dic-.",
+    "distratores": [
+     "passato prossimo",
+     "passato remoto",
+     "imperfeito do subjuntivo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Il nonno beveva sempre vino a pranzo.",
+    "w": "beveva",
+    "de": "it-v052",
+    "exp": "beveva: imperfeito de bere, com o radical bev-; o costume do avô.",
+    "distratores": [
+     "passato prossimo",
+     "passato remoto",
+     "imperfeito do subjuntivo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Lavoravo in un negozio.",
+    "w": "Lavoravo",
+    "de": "it-v053",
+    "exp": "lavoravo: imperfeito de lavorare, o que durava.",
+    "distratores": [
+     "passato prossimo",
+     "passato remoto",
+     "imperfeito do subjuntivo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Dormivi?",
+    "w": "Dormivi",
+    "de": "it-v055",
+    "exp": "dormivi: imperfeito de dormire, a ação em andamento.",
+    "distratores": [
+     "passato prossimo",
+     "passato remoto",
+     "imperfeito do subjuntivo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Non avevo tempo.",
+    "w": "avevo",
+    "de": "it-v056",
+    "exp": "avevo: imperfeito de avere.",
+    "distratores": [
+     "passato prossimo",
+     "passato remoto",
+     "imperfeito do subjuntivo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Da piccol{o|a} giocavo a calcio.",
+    "w": "giocavo",
+    "de": "it-u169",
+    "exp": "giocavo: o que se fazia sempre quando pequeno.",
+    "distratores": [
+     "passato prossimo",
+     "passato remoto",
+     "imperfeito do subjuntivo",
+     "condicional"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g015",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "futuro semplice",
+  "pt": "futuro",
+  "aceitas": [
+   "futuro",
+   "futuro simples",
+   "futuro semplice",
+   "futuro do presente"
+  ],
+  "distratores": [
+   "condicional",
+   "passato remoto",
+   "presente do indicativo",
+   "presente do subjuntivo"
+  ],
+  "nota": "Regular: parlerò, parlerai, parlerà, parleremo, parlerete, parleranno (o a de -are vira e); prenderò; dormirò.\nMuitos perdem a vogal: andrò, potrò, dovrò, saprò, avrò, vedrò; e alguns ganham rr: verrò, vorrò, rimarrò, berrò. Essere: sarò.\nO acento final é o do futuro: parlerò (vou falar) × parlerei (falaria).",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Sarà difficile.",
+    "w": "Sarà",
+    "de": "it-v057",
+    "exp": "sarà: futuro de essere.",
+    "distratores": [
+     "condicional",
+     "passato remoto",
+     "presente do indicativo",
+     "presente do subjuntivo"
+    ]
+   },
+   {
+    "it": "Avremo un figlio.",
+    "w": "Avremo",
+    "de": "it-v058",
+    "exp": "avremo: futuro de avere, sem o e (avr-).",
+    "distratores": [
+     "condicional",
+     "passato remoto",
+     "presente do indicativo",
+     "presente do subjuntivo"
+    ]
+   },
+   {
+    "it": "Un giorno andrò in Italia.",
+    "w": "andrò",
+    "de": "it-v059",
+    "exp": "andrò: futuro de andare, sem o a (andr-); andò seria «ele foi».",
+    "distratores": [
+     "condicional",
+     "passato remoto",
+     "presente do indicativo",
+     "presente do subjuntivo"
+    ]
+   },
+   {
+    "it": "Verrò anch'io.",
+    "w": "Verrò",
+    "de": "it-v060",
+    "exp": "verrò: futuro de venire, com rr.",
+    "distratores": [
+     "condicional",
+     "passato remoto",
+     "presente do indicativo",
+     "presente do subjuntivo"
+    ]
+   },
+   {
+    "it": "Non potrò venire.",
+    "w": "potrò",
+    "de": "it-v062",
+    "exp": "potrò: futuro de potere, sem o e.",
+    "distratores": [
+     "condicional",
+     "passato remoto",
+     "presente do indicativo",
+     "presente do subjuntivo"
+    ]
+   },
+   {
+    "it": "Dovrai aspettare.",
+    "w": "Dovrai",
+    "de": "it-v063",
+    "exp": "dovrai: futuro de dovere, sem o e.",
+    "distratores": [
+     "condicional",
+     "passato remoto",
+     "presente do indicativo",
+     "presente do subjuntivo"
+    ]
+   },
+   {
+    "it": "Rimarrò qui fino a domenica.",
+    "w": "Rimarrò",
+    "de": "it-v065",
+    "exp": "rimarrò: futuro de rimanere, com rr.",
+    "distratores": [
+     "condicional",
+     "passato remoto",
+     "presente do indicativo",
+     "presente do subjuntivo"
+    ]
+   },
+   {
+    "it": "Ti chiamerò.",
+    "w": "chiamerò",
+    "de": "it-v066",
+    "exp": "chiamerò: futuro regular de chiamare (o a vira e).",
+    "distratores": [
+     "condicional",
+     "passato remoto",
+     "presente do indicativo",
+     "presente do subjuntivo"
+    ]
+   },
+   {
+    "it": "Quando partirai?",
+    "w": "partirai",
+    "de": "it-v068",
+    "exp": "partirai: futuro regular de partire.",
+    "distratores": [
+     "condicional",
+     "passato remoto",
+     "presente do indicativo",
+     "presente do subjuntivo"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g016",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "condizionale presente",
+  "pt": "condicional",
+  "aceitas": [
+   "condicional",
+   "condizionale",
+   "futuro do preterito"
+  ],
+  "distratores": [
+   "futuro",
+   "imperfeito do subjuntivo",
+   "passato remoto",
+   "imperfeito do indicativo"
+  ],
+  "nota": "O mesmo radical do futuro + -ei, -esti, -ebbe, -emmo, -este, -ebbero: parlerei, parleresti, parlerebbe….\nOs irregulares são os do futuro: vorrei, potrei, dovrei, sarei, avrei, verrei.\nVorrei é o «eu queria» educado, para pedir: vorrei un caffè.\nNão confundir com o futuro: parlerò (vou falar) × parlerei (falaria).",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Vorrei parlare con il capo.",
+    "w": "Vorrei",
+    "de": "it-v069",
+    "exp": "vorrei: condicional de volere, o pedido educado.",
+    "distratores": [
+     "futuro",
+     "imperfeito do subjuntivo",
+     "passato remoto",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "it": "Potresti aiutarmi?",
+    "w": "Potresti",
+    "de": "it-v070",
+    "exp": "potresti: condicional de potere, o pedido educado.",
+    "distratores": [
+     "futuro",
+     "imperfeito do subjuntivo",
+     "passato remoto",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "it": "Dovresti dormire di più.",
+    "w": "Dovresti",
+    "de": "it-v071",
+    "exp": "dovresti: condicional de dovere, o conselho.",
+    "distratores": [
+     "futuro",
+     "imperfeito do subjuntivo",
+     "passato remoto",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "it": "Sarebbe un problema?",
+    "w": "Sarebbe",
+    "de": "it-v072",
+    "exp": "sarebbe: condicional de essere.",
+    "distratores": [
+     "futuro",
+     "imperfeito do subjuntivo",
+     "passato remoto",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "it": "Avresti tempo per un caffè?",
+    "w": "Avresti",
+    "de": "it-v073",
+    "exp": "avresti: condicional de avere.",
+    "distratores": [
+     "futuro",
+     "imperfeito do subjuntivo",
+     "passato remoto",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "it": "Al tuo posto, parlerei con lui.",
+    "w": "parlerei",
+    "de": "it-v074",
+    "exp": "parlerei: condicional regular de parlare (o a vira e).",
+    "distratores": [
+     "futuro",
+     "imperfeito do subjuntivo",
+     "passato remoto",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "it": "Io prenderei la pizza.",
+    "w": "prenderei",
+    "de": "it-v075",
+    "exp": "prenderei: condicional de prendere.",
+    "distratores": [
+     "futuro",
+     "imperfeito do subjuntivo",
+     "passato remoto",
+     "imperfeito do indicativo"
+    ]
+   },
+   {
+    "it": "Dormirei tutto il giorno.",
+    "w": "Dormirei",
+    "de": "it-v076",
+    "exp": "dormirei: condicional de dormire.",
+    "distratores": [
+     "futuro",
+     "imperfeito do subjuntivo",
+     "passato remoto",
+     "imperfeito do indicativo"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g017",
+  "tipo": "conceito",
+  "familia": "ausiliare",
+  "publicos": [
+   "pt"
+  ],
+  "it": "avere: verbi intransitivi di attività",
+  "pt": "avere: atividade sem objeto (ho dormito, ho parlato)",
+  "aceitas": [
+   "atividade",
+   "sem objeto",
+   "atividade sem objeto",
+   "verbo de atividade"
+  ],
+  "distratores": [
+   "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+   "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+   "avere: verbo com objeto direto (ho mangiato la pizza)",
+   "avere: movimento sem destino (ho camminato, ho nuotato)"
+  ],
+  "nota": "Os verbos sem objeto que dizem uma atividade, e não um movimento até um lugar ou uma mudança, vão com avere: ho dormito, ho lavorato, ho parlato, ho litigato, ho riso.\nO teste: se a frase diz aonde se foi, ou em que se virou, é essere (sono andato a casa, è diventato rosso); se diz só o que se fez, é avere.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Hai dormito bene?",
+    "w": "Hai dormito",
+    "de": "it-v025",
+    "exp": "hai dormito: dormire é atividade, sem objeto.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Non ho dormito bene.",
+    "w": "ho dormito",
+    "de": "it-u231",
+    "exp": "ho dormito: dormire é atividade, sem objeto.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Stamattina ho lavorato a casa.",
+    "w": "ho lavorato",
+    "de": "it-v023",
+    "exp": "ho lavorato: lavorare é atividade; a casa é só onde se trabalhou.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Ho parlato con il capo.",
+    "w": "Ho parlato",
+    "de": "it-u093",
+    "exp": "ho parlato: parlare con qualcuno não tem objeto direto, e é avere.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Ho litigato con mia sorella.",
+    "w": "Ho litigato",
+    "de": "it-u547",
+    "exp": "ho litigato: litigare con qualcuno, atividade sem objeto.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Non mi ha risposto.",
+    "w": "ha risposto",
+    "de": "it-v046",
+    "exp": "ha risposto: rispondere a qualcuno; mi é objeto indireto.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g018",
+  "tipo": "conceito",
+  "familia": "ausiliare",
+  "publicos": [
+   "pt"
+  ],
+  "it": "essere: verbi riflessivi e pronominali",
+  "pt": "essere: verbo reflexivo ou pronominal (mi sono alzato)",
+  "aceitas": [
+   "verbo reflexivo",
+   "pronominal",
+   "verbo pronominal",
+   "reflexivo ou pronominal"
+  ],
+  "distratores": [
+   "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+   "avere: verbo com objeto direto (ho mangiato la pizza)",
+   "avere: atividade sem objeto (ho dormito, ho parlato)",
+   "avere: movimento sem destino (ho camminato, ho nuotato)"
+  ],
+  "nota": "Todo verbo reflexivo ou pronominal faz o passato prossimo com essere: mi sono alzato, ci siamo visti, si è ricordata.\nVale mesmo quando há objeto: mi sono rotto il braccio (quebrei o braço), mi sono lavato le mani.\nO particípio concorda com o sujeito: si è vergognato, si è vergognata.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Ci siamo visti l'altro giorno.",
+    "w": "Ci siamo visti",
+    "de": "it-u042",
+    "exp": "ci siamo visti: vedersi, «a gente se viu».",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Ci siamo conosciuti a Roma.",
+    "w": "Ci siamo conosciuti",
+    "de": "it-u173",
+    "exp": "ci siamo conosciuti: conoscersi, «a gente se conheceu».",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Mi sono rotto il braccio.",
+    "w": "Mi sono rotto",
+    "de": "it-u241",
+    "exp": "mi sono rotto: rompersi; il braccio não muda o auxiliar.",
+    "distratores": [
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Mi sono tagliato un dito.",
+    "w": "Mi sono tagliato",
+    "de": "it-u361",
+    "exp": "mi sono tagliato: tagliarsi, mesmo com un dito depois.",
+    "distratores": [
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Mi sono fatto male alla caviglia.",
+    "w": "Mi sono fatto",
+    "de": "it-u523",
+    "exp": "mi sono fatto male: farsi male, «me machuquei».",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Si è ricordat{o|a} del mio compleanno.",
+    "w": "Si è ricordato",
+    "de": "it-v031",
+    "exp": "si è ricordato: ricordarsi, «ele se lembrou».",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Si è vergognat{o|a}.",
+    "w": "Si è vergognato",
+    "de": "it-v030",
+    "exp": "si è vergognato: vergognarsi, «ele ficou com vergonha».",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   },
+   {
+    "it": "Non me ne sono reso conto.",
+    "w": "me ne sono reso",
+    "de": "it-u229",
+    "exp": "me ne sono reso conto: rendersi conto; mi vira me antes de ne.",
+    "distratores": [
+     "essere: movimento, permanência ou mudança (andare, rimanere, diventare)",
+     "avere: verbo com objeto direto (ho mangiato la pizza)",
+     "avere: atividade sem objeto (ho dormito, ho parlato)",
+     "avere: movimento sem destino (ho camminato, ho nuotato)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g019",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "it": "complemento oggetto (lo, la, mi, ti)",
+  "pt": "objeto direto (lo, la, mi, ti…)",
+  "aceitas": [
+   "objeto direto",
+   "complemento direto",
+   "direto"
+  ],
+  "distratores": [
+   "objeto indireto (gli, le, mi, ti…)",
+   "ne: «disso», «deles» (ne parliamo)",
+   "ci: «nos», a gente (ci vediamo)",
+   "si reflexivo (si chiama, si alza)"
+  ],
+  "nota": "O objeto direto recebe a ação sem preposição: lo vedo (eu o vejo, «vejo ele»), la chiamo, ti aspetto, mi capisci?\nAs formas: mi, ti, lo, la, ci, vi, li, le; vêm antes do verbo conjugado e coladas no infinitivo e no imperativo (vederlo, chiamami).\nLo neutro retoma uma ideia, «isso»: non lo so, lo dicono tutti.\nChiamare pede objeto direto: ti chiamo é «te ligo», «ligo para você».",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Lo conosco di persona.",
+    "w": "Lo",
+    "de": "it-u114",
+    "exp": "lo: ele, quem eu conheço.",
+    "distratores": [
+     "objeto indireto (gli, le, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Non lo sopporto più.",
+    "w": "lo",
+    "de": "it-u628",
+    "exp": "lo: ele, quem não aguento mais.",
+    "distratores": [
+     "objeto indireto (gli, le, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Non lo so.",
+    "w": "lo",
+    "de": "it-b026",
+    "exp": "lo: o neutro, «isso», o que não sei.",
+    "distratores": [
+     "objeto indireto (gli, le, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Lo dicono tutti.",
+    "w": "Lo",
+    "de": "it-v006",
+    "exp": "lo: o neutro, «isso», o que todo mundo diz.",
+    "distratores": [
+     "objeto indireto (gli, le, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Ti amo.",
+    "w": "Ti",
+    "de": "it-u484",
+    "exp": "ti: você, quem eu amo (amare qualcuno).",
+    "distratores": [
+     "objeto indireto (gli, le, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Ti aspetto qui.",
+    "w": "Ti",
+    "de": "it-u401",
+    "exp": "ti: você, quem eu espero (aspettare qualcuno).",
+    "distratores": [
+     "objeto indireto (gli, le, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Non ti sento.",
+    "w": "ti",
+    "de": "it-u122",
+    "exp": "ti: você, quem eu não ouço (sentire qualcuno).",
+    "distratores": [
+     "objeto indireto (gli, le, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Ti chiamo stasera.",
+    "w": "Ti",
+    "de": "it-u163",
+    "exp": "ti: chiamare qualcuno, sem preposição; «te ligo».",
+    "distratores": [
+     "objeto indireto (gli, le, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Mi capisci?",
+    "w": "Mi",
+    "de": "it-v017",
+    "exp": "mi: eu, quem você entende (capire qualcuno).",
+    "distratores": [
+     "objeto indireto (gli, le, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g020",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "it": "complemento di termine (gli, le, mi, ti)",
+  "pt": "objeto indireto (gli, le, mi, ti…)",
+  "aceitas": [
+   "objeto indireto",
+   "complemento indireto",
+   "indireto",
+   "a quem"
+  ],
+  "distratores": [
+   "objeto direto (lo, la, mi, ti…)",
+   "ne: «disso», «deles» (ne parliamo)",
+   "ci: «nos», a gente (ci vediamo)",
+   "si reflexivo (si chiama, si alza)"
+  ],
+  "nota": "O objeto indireto diz a quem: gli do (dou a ele), le scrivo (escrevo a ela), mi dai?, ti devo.\nAs formas: mi, ti, gli, le, ci, vi, e gli no plural; só gli e le mudam em relação ao objeto direto (lo, la).\nO verbo é que decide: dare, dire, portare, prestare, chiedere a qualcuno; e credere a qualcuno, por isso ti credo e nessuno gli credette.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Nessuno gli credette.",
+    "w": "gli",
+    "de": "it-v116",
+    "exp": "gli: a ele; credere a qualcuno, «acreditar nele».",
+    "distratores": [
+     "objeto direto (lo, la, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Ti credo.",
+    "w": "Ti",
+    "de": "it-u128",
+    "exp": "ti: a você; credere a qualcuno, «acredito em você».",
+    "distratores": [
+     "objeto direto (lo, la, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Mi dai il tuo numero?",
+    "w": "Mi",
+    "de": "it-u084",
+    "exp": "mi: a mim, a quem se dá o número.",
+    "distratores": [
+     "objeto direto (lo, la, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Ti do il mio numero.",
+    "w": "Ti",
+    "de": "it-v012",
+    "exp": "ti: a você, a quem dou o número; o objeto direto é il mio numero.",
+    "distratores": [
+     "objeto direto (lo, la, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Mi porti un bicchiere d'acqua?",
+    "w": "Mi",
+    "de": "it-u167",
+    "exp": "mi: a mim, a quem se traz o copo.",
+    "distratores": [
+     "objeto direto (lo, la, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Ti devo dieci euro.",
+    "w": "Ti",
+    "de": "it-u025",
+    "exp": "ti: a você, a quem eu devo.",
+    "distratores": [
+     "objeto direto (lo, la, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Mi ha detto di sì.",
+    "w": "Mi",
+    "de": "it-u022",
+    "exp": "mi: a mim, a quem ele disse.",
+    "distratores": [
+     "objeto direto (lo, la, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Mi ha chiesto un favore.",
+    "w": "Mi",
+    "de": "it-u145",
+    "exp": "mi: a mim, a quem ele pediu; o objeto direto é un favore.",
+    "distratores": [
+     "objeto direto (lo, la, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   },
+   {
+    "it": "Ti presento mia sorella.",
+    "w": "Ti",
+    "de": "it-u303",
+    "exp": "ti: a você, a quem apresento; o objeto direto é mia sorella.",
+    "distratores": [
+     "objeto direto (lo, la, mi, ti…)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «nos», a gente (ci vediamo)",
+     "si reflexivo (si chiama, si alza)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g021",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "it": "si riflessivo",
+  "pt": "si reflexivo (si chiama, si alza)",
+  "aceitas": [
+   "si reflexivo",
+   "se reflexivo",
+   "reflexivo"
+  ],
+  "distratores": [
+   "si impessoal (come si dice?)",
+   "ci: «nos», a gente (ci vediamo)",
+   "ne: «disso», «deles» (ne parliamo)",
+   "ci: «lá», «nisso» (ci vado, non ci credo)"
+  ],
+  "nota": "Si é o reflexivo de lui, lei, Lei e loro: si chiama (ele se chama), si guarda allo specchio, si è ricordata.\nCom o senhor (Lei) também é si: si accomodi (sente-se), si sieda.\nOs outros: mi alzo, ti alzi, ci alziamo, vi alzate.\nNão confundir com o si impessoal, que não tem sujeito: come si dice? (como se diz?).",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Come si chiama tua madre?",
+    "w": "si",
+    "de": "it-u162",
+    "exp": "si chiama: o sujeito é tua madre, que se chama assim.",
+    "distratores": [
+     "si impessoal (come si dice?)",
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «lá», «nisso» (ci vado, non ci credo)"
+    ]
+   },
+   {
+    "it": "Il mio ragazzo si chiama Luca.",
+    "w": "si",
+    "de": "it-u343",
+    "exp": "si chiama: o sujeito é il mio ragazzo.",
+    "distratores": [
+     "si impessoal (come si dice?)",
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «lá», «nisso» (ci vado, non ci credo)"
+    ]
+   },
+   {
+    "it": "Si guarda sempre allo specchio.",
+    "w": "Si",
+    "de": "it-u655",
+    "exp": "si guarda: ele olha para si mesmo.",
+    "distratores": [
+     "si impessoal (come si dice?)",
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «lá», «nisso» (ci vado, non ci credo)"
+    ]
+   },
+   {
+    "it": "Mia sorella si prende cura del cane.",
+    "w": "si",
+    "de": "it-u504",
+    "exp": "si prende cura: prendersi cura di, «cuidar de».",
+    "distratores": [
+     "si impessoal (come si dice?)",
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «lá», «nisso» (ci vado, non ci credo)"
+    ]
+   },
+   {
+    "it": "Si è ricordat{o|a} del mio compleanno.",
+    "w": "Si",
+    "de": "it-v031",
+    "exp": "si è ricordato: ricordarsi, «ele se lembrou».",
+    "distratores": [
+     "si impessoal (come si dice?)",
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «lá», «nisso» (ci vado, non ci credo)"
+    ]
+   },
+   {
+    "it": "Si è vergognat{o|a}.",
+    "w": "Si",
+    "de": "it-v030",
+    "exp": "si è vergognato: vergognarsi, «ele ficou com vergonha».",
+    "distratores": [
+     "si impessoal (come si dice?)",
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «lá», «nisso» (ci vado, non ci credo)"
+    ]
+   },
+   {
+    "it": "Si accomodi, signore.",
+    "w": "Si",
+    "de": "it-v092",
+    "exp": "si accomodi: accomodarsi, com o senhor (Lei).",
+    "distratores": [
+     "si impessoal (come si dice?)",
+     "ci: «nos», a gente (ci vediamo)",
+     "ne: «disso», «deles» (ne parliamo)",
+     "ci: «lá», «nisso» (ci vado, non ci credo)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g022",
+  "tipo": "conceito",
+  "familia": "pronome",
+  "publicos": [
+   "pt"
+  ],
+  "it": "ne: di questo, di loro",
+  "pt": "ne: «disso», «deles» (ne parliamo)",
+  "aceitas": [
+   "ne",
+   "disso",
+   "deles",
+   "dele"
+  ],
+  "distratores": [
+   "ci: «lá», «nisso» (ci vado, non ci credo)",
+   "objeto direto (lo, la, mi, ti…)",
+   "objeto indireto (gli, le, mi, ti…)",
+   "ci: «nos», a gente (ci vediamo)"
+  ],
+  "nota": "Ne retoma algo dito com di: «disso», «dele», «deles»: ne parliamo (parlare di), cosa ne pensi? (pensare di), non ne ho idea.\nTambém retoma uma quantidade: quante mele? Ne voglio due (quero duas).\nAntes de ne, mi, ti, si viram me, te, se: non me ne sono reso conto, me ne vado.",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Cosa ne pensi?",
+    "w": "ne",
+    "de": "it-u072",
+    "exp": "ne: «disso»; pensare di qualcosa.",
+    "distratores": [
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "objeto direto (lo, la, mi, ti…)",
+     "objeto indireto (gli, le, mi, ti…)",
+     "ci: «nos», a gente (ci vediamo)"
+    ]
+   },
+   {
+    "it": "Ne parliamo poi.",
+    "w": "Ne",
+    "de": "it-u094",
+    "exp": "ne: «disso»; parlare di qualcosa.",
+    "distratores": [
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "objeto direto (lo, la, mi, ti…)",
+     "objeto indireto (gli, le, mi, ti…)",
+     "ci: «nos», a gente (ci vediamo)"
+    ]
+   },
+   {
+    "it": "Non ne ho idea.",
+    "w": "ne",
+    "de": "it-u264",
+    "exp": "ne: «disso»; non ho idea di questo.",
+    "distratores": [
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "objeto direto (lo, la, mi, ti…)",
+     "objeto indireto (gli, le, mi, ti…)",
+     "ci: «nos», a gente (ci vediamo)"
+    ]
+   },
+   {
+    "it": "Non me ne sono reso conto.",
+    "w": "ne",
+    "de": "it-u229",
+    "exp": "ne: «disso»; rendersi conto di qualcosa.",
+    "distratores": [
+     "ci: «lá», «nisso» (ci vado, non ci credo)",
+     "objeto direto (lo, la, mi, ti…)",
+     "objeto indireto (gli, le, mi, ti…)",
+     "ci: «nos», a gente (ci vediamo)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g023",
+  "tipo": "conceito",
+  "familia": "di-da",
+  "publicos": [
+   "pt"
+  ],
+  "it": "di + infinito",
+  "pt": "di + infinitivo (cerco di dormire)",
+  "aceitas": [
+   "di infinitivo",
+   "di mais infinitivo",
+   "antes de infinitivo",
+   "infinitivo"
+  ],
+  "distratores": [
+   "da: para quê, ou em que idade (da bere, da piccolo)",
+   "di: de quê ou de quem (matéria, conteúdo, posse)",
+   "di sì, di no: «que sim», «que não» (penso di sì)",
+   "da: de onde vem ou sai (torna dal Brasile)"
+  ],
+  "nota": "Muitos verbos, adjetivos e nomes pedem di antes do infinitivo: cerco di dormire (tento dormir), ho deciso di partire, spero di vederti, sono stanco di aspettare, il diritto di parlare.\nOutros pedem a (comincio a studiare, riesco a dormire), e alguns, nada (voglio dormire, devo andare, preferisco restare).\nDa + infinitivo é outra coisa: o que se tem para fazer (cose da fare).",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Cerco di dormire, ma non riesco.",
+    "w": "di dormire",
+    "de": "it-u127",
+    "exp": "cercare di + infinitivo: «tentar».",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di sì, di no: «que sim», «que não» (penso di sì)",
+     "da: de onde vem ou sai (torna dal Brasile)"
+    ]
+   },
+   {
+    "it": "Ho deciso di partire.",
+    "w": "di partire",
+    "de": "it-u510",
+    "exp": "decidere di + infinitivo.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di sì, di no: «que sim», «que não» (penso di sì)",
+     "da: de onde vem ou sai (torna dal Brasile)"
+    ]
+   },
+   {
+    "it": "Spero di vederti presto.",
+    "w": "di vederti",
+    "de": "it-u463",
+    "exp": "sperare di + infinitivo, quando o sujeito é o mesmo.",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di sì, di no: «que sim», «que não» (penso di sì)",
+     "da: de onde vem ou sai (torna dal Brasile)"
+    ]
+   },
+   {
+    "it": "A che ora finisci di lavorare?",
+    "w": "di lavorare",
+    "de": "it-u335",
+    "exp": "finire di + infinitivo: «terminar de».",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di sì, di no: «que sim», «que não» (penso di sì)",
+     "da: há quanto tempo, desde (da tre anni)"
+    ]
+   },
+   {
+    "it": "Sono stanc{o|a} di aspettare.",
+    "w": "di aspettare",
+    "de": "it-u619",
+    "exp": "stanco di + infinitivo: «cansado de».",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di sì, di no: «que sim», «que não» (penso di sì)",
+     "da: de onde vem ou sai (torna dal Brasile)"
+    ]
+   },
+   {
+    "it": "Ho il diritto di parlare.",
+    "w": "di parlare",
+    "de": "it-u414",
+    "exp": "il diritto di + infinitivo: «o direito de».",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di: de onde a pessoa é (sono di Roma)",
+     "da: de onde vem ou sai (torna dal Brasile)"
+    ]
+   },
+   {
+    "it": "Il medico non mi permette di bere vino.",
+    "w": "di bere",
+    "de": "it-u489",
+    "exp": "permettere di + infinitivo: «deixar».",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di sì, di no: «que sim», «que não» (penso di sì)",
+     "da: de onde vem ou sai (torna dal Brasile)"
+    ]
+   },
+   {
+    "it": "Il medico mi ha ordinato di stare a letto.",
+    "w": "di stare",
+    "de": "it-u605",
+    "exp": "ordinare di + infinitivo: «mandar».",
+    "distratores": [
+     "da: para quê, ou em que idade (da bere, da piccolo)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di sì, di no: «que sim», «que não» (penso di sì)",
+     "da: de onde vem ou sai (torna dal Brasile)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g024",
+  "tipo": "conceito",
+  "familia": "di-da",
+  "publicos": [
+   "pt"
+  ],
+  "it": "da: scopo ed età",
+  "pt": "da: para quê, ou em que idade (da bere, da piccolo)",
+  "aceitas": [
+   "finalidade",
+   "para que",
+   "idade",
+   "para que serve",
+   "finalidade ou idade"
+  ],
+  "distratores": [
+   "di + infinitivo (cerco di dormire)",
+   "di: de quê ou de quem (matéria, conteúdo, posse)",
+   "da: de onde vem ou sai (torna dal Brasile)",
+   "da: na casa de, no consultório de (vado da te)"
+  ],
+  "nota": "Da diz para que serve uma coisa: un campo da calcio (campo de futebol), qualcosa da bere (algo para beber), tante cose da fare (muitas coisas para fazer).\nCom idade ou fase da vida, é «quando»: da piccolo (quando pequeno), da grande (quando crescer).\nDa também diz de onde (torno dal Brasile), em casa de quem (vado da te) e há quanto tempo (vivo qui da tre anni).",
+  "nivel": "A2",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Ho tante cose da fare.",
+    "w": "da fare",
+    "de": "it-u053",
+    "exp": "da fare: as coisas para fazer; di fare viria depois de um verbo (cerco di fare).",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: na casa de, no consultório de (vado da te)"
+    ]
+   },
+   {
+    "it": "Andiamo al campo da calcio.",
+    "w": "da calcio",
+    "de": "it-u426",
+    "exp": "da calcio: o campo serve para o futebol.",
+    "distratores": [
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "di + infinitivo (cerco di dormire)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: há quanto tempo, desde (da tre anni)"
+    ]
+   },
+   {
+    "it": "Da' da bere al cane!",
+    "w": "da bere",
+    "de": "it-v080",
+    "exp": "da bere: algo para beber; o primeiro da' é o imperativo de dare.",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: na casa de, no consultório de (vado da te)"
+    ]
+   },
+   {
+    "it": "Da grande voglio fare il medico.",
+    "w": "Da grande",
+    "de": "it-u109",
+    "exp": "da grande: «quando eu crescer», a fase da vida.",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: na casa de, no consultório de (vado da te)"
+    ]
+   },
+   {
+    "it": "Da piccol{o|a} giocavo a calcio.",
+    "w": "Da piccolo",
+    "de": "it-u169",
+    "exp": "da piccolo: «quando eu era pequeno», a idade.",
+    "distratores": [
+     "di + infinitivo (cerco di dormire)",
+     "di: de quê ou de quem (matéria, conteúdo, posse)",
+     "da: de onde vem ou sai (torna dal Brasile)",
+     "da: na casa de, no consultório de (vado da te)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g025",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "passato remoto",
+  "pt": "passato remoto",
+  "aceitas": [
+   "passato remoto",
+   "preterito perfeito simples",
+   "perfeito simples",
+   "remoto"
+  ],
+  "distratores": [
+   "passato prossimo",
+   "imperfeito do indicativo",
+   "presente do indicativo",
+   "futuro"
+  ],
+  "nota": "É o passado dos livros e das histórias (e da fala do Sul da Itália); na conversa do dia a dia, o passato prossimo.\nRegulares: parlai, parlasti, parlò, parlammo, parlaste, parlarono; credei (ou credetti); partii, partisti, partì.\nMuitos são irregulares na 1ª e na 3ª pessoa do singular e na 3ª do plural: fui, fu; ebbi, ebbe; feci, fece; dissi, disse; venni, venne; vidi, vide; presi, prese; nacqui, nacque.\nO acento muda o tempo: parlò (ele falou) × parlo (eu falo).",
+  "nivel": "B1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Fu un anno difficile.",
+    "w": "Fu",
+    "de": "it-v106",
+    "exp": "fu: passato remoto de essere, 3ª pessoa.",
+    "distratores": [
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Ebbe tre figli.",
+    "w": "Ebbe",
+    "de": "it-v107",
+    "exp": "ebbe: passato remoto de avere.",
+    "distratores": [
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Fece tutto da sol{o|a}.",
+    "w": "Fece",
+    "de": "it-v108",
+    "exp": "fece: passato remoto de fare.",
+    "distratores": [
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Disse di sì.",
+    "w": "Disse",
+    "de": "it-v109",
+    "exp": "disse: passato remoto de dire.",
+    "distratores": [
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Un giorno venne un uomo.",
+    "w": "venne",
+    "de": "it-v110",
+    "exp": "venne: passato remoto de venire.",
+    "distratores": [
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Il bambino vide il lupo.",
+    "w": "vide",
+    "de": "it-v111",
+    "exp": "vide: passato remoto de vedere.",
+    "distratores": [
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Dante nacque a Firenze nel 1265.",
+    "w": "nacque",
+    "de": "it-v113",
+    "exp": "nacque: passato remoto de nascere.",
+    "distratores": [
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Il nonno morì in guerra.",
+    "w": "morì",
+    "de": "it-v114",
+    "exp": "morì: passato remoto de morire, com acento no fim.",
+    "distratores": [
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "presente do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Quel giorno parlò poco.",
+    "w": "parlò",
+    "de": "it-v115",
+    "exp": "parlò: passato remoto regular de parlare; parlo, sem acento, é «eu falo».",
+    "distratores": [
+     "presente do indicativo",
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "futuro"
+    ]
+   },
+   {
+    "it": "Partì per la guerra.",
+    "w": "Partì",
+    "de": "it-v117",
+    "exp": "partì: passato remoto regular de partire; parti, sem acento, é «você parte».",
+    "distratores": [
+     "presente do indicativo",
+     "passato prossimo",
+     "imperfeito do indicativo",
+     "futuro"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g026",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "congiuntivo presente",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "presente do subjuntivo",
+   "subjuntivo",
+   "congiuntivo",
+   "congiuntivo presente",
+   "presente do conjuntivo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperfeito do subjuntivo",
+   "imperativo",
+   "condicional"
+  ],
+  "nota": "Depois de penso che, credo che, voglio che, spero che, è meglio che, è necessario che: penso che sia vero.\nRegular: -are → -i (parli, parli, parli, parliamo, parliate, parlino); -ere e -ire → -a (prenda, dorma).\nAs três pessoas do singular são iguais, por isso se diz o sujeito: che tu vada, che lui vada.\nIrregulares: sia (essere), abbia (avere), faccia, vada, possa, voglia, debba, sappia, venga.",
+  "nivel": "B1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Penso che sia vero.",
+    "w": "sia",
+    "de": "it-v093",
+    "exp": "sia: subjuntivo de essere, depois de penso che.",
+    "distratores": [
+     "presente do indicativo",
+     "imperfeito do subjuntivo",
+     "imperativo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Credo che abbia ragione.",
+    "w": "abbia",
+    "de": "it-v094",
+    "exp": "abbia: subjuntivo de avere, depois de credo che.",
+    "distratores": [
+     "presente do indicativo",
+     "imperfeito do subjuntivo",
+     "imperativo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Voglio che tu faccia attenzione.",
+    "w": "faccia",
+    "de": "it-v095",
+    "exp": "faccia: subjuntivo de fare, depois de voglio che.",
+    "distratores": [
+     "presente do indicativo",
+     "imperfeito do subjuntivo",
+     "imperativo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "È meglio che tu vada.",
+    "w": "vada",
+    "de": "it-v096",
+    "exp": "vada: subjuntivo de andare, depois de è meglio che.",
+    "distratores": [
+     "presente do indicativo",
+     "imperfeito do subjuntivo",
+     "imperativo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Spero che tu possa venire.",
+    "w": "possa",
+    "de": "it-v097",
+    "exp": "possa: subjuntivo de potere, depois de spero che.",
+    "distratores": [
+     "presente do indicativo",
+     "imperfeito do subjuntivo",
+     "imperativo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Non credo che voglia parlare.",
+    "w": "voglia",
+    "de": "it-v098",
+    "exp": "voglia: subjuntivo de volere, depois de non credo che.",
+    "distratores": [
+     "presente do indicativo",
+     "imperfeito do subjuntivo",
+     "imperativo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "È necessario che tu prenda il farmaco.",
+    "w": "prenda",
+    "de": "it-v100",
+    "exp": "prenda: subjuntivo de prendere, depois de è necessario che.",
+    "distratores": [
+     "presente do indicativo",
+     "imperfeito do subjuntivo",
+     "imperativo",
+     "condicional"
+    ]
+   },
+   {
+    "it": "Spero che tu dorma bene.",
+    "w": "dorma",
+    "de": "it-v101",
+    "exp": "dorma: subjuntivo de dormire, depois de spero che.",
+    "distratores": [
+     "presente do indicativo",
+     "imperfeito do subjuntivo",
+     "imperativo",
+     "condicional"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "it-g027",
+  "tipo": "conceito",
+  "familia": "tempo",
+  "publicos": [
+   "pt"
+  ],
+  "it": "congiuntivo imperfetto",
+  "pt": "imperfeito do subjuntivo",
+  "aceitas": [
+   "imperfeito do subjuntivo",
+   "congiuntivo imperfetto",
+   "preterito imperfeito do subjuntivo",
+   "imperfeito do conjuntivo"
+  ],
+  "distratores": [
+   "imperfeito do indicativo",
+   "condicional",
+   "presente do subjuntivo",
+   "passato remoto"
+  ],
+  "nota": "Regular: parlassi, parlassi, parlasse, parlassimo, parlaste, parlassero; prendessi; dormissi.\nIrregulares: fossi (essere), facessi (fare), dicessi (dire), dessi (dare), stessi (stare); avessi é regular.\nSe + imperfeito do subjuntivo + condicional, como no português: se avessi tempo, verrei (se eu tivesse tempo, eu iria).",
+  "nivel": "B1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "it": "Se fossi in te, non lo farei.",
+    "w": "fossi",
+    "de": "it-v102",
+    "exp": "fossi: imperfeito do subjuntivo de essere, depois de se.",
+    "distratores": [
+     "imperfeito do indicativo",
+     "condicional",
+     "presente do subjuntivo",
+     "passato remoto"
+    ]
+   },
+   {
+    "it": "Se avessi tempo, verrei.",
+    "w": "avessi",
+    "de": "it-v103",
+    "exp": "avessi: imperfeito do subjuntivo de avere, depois de se.",
+    "distratores": [
+     "imperfeito do indicativo",
+     "condicional",
+     "presente do subjuntivo",
+     "passato remoto"
+    ]
+   },
+   {
+    "it": "Se potessi, ti aiuterei.",
+    "w": "potessi",
+    "de": "it-v104",
+    "exp": "potessi: imperfeito do subjuntivo de potere, depois de se.",
+    "distratores": [
+     "imperfeito do indicativo",
+     "condicional",
+     "presente do subjuntivo",
+     "passato remoto"
+    ]
+   },
+   {
+    "it": "Se lavorassi meno, dormirei di più.",
+    "w": "lavorassi",
+    "de": "it-v105",
+    "exp": "lavorassi: imperfeito do subjuntivo de lavorare; dormirei é o condicional.",
+    "distratores": [
+     "imperfeito do indicativo",
+     "condicional",
+     "presente do subjuntivo",
+     "passato remoto"
+    ]
+   }
+  ]
+ }
+]
