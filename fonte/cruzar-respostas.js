@@ -20,7 +20,7 @@ const pasta = path.join(__dirname, 'cards', idioma);
 let cards = [];
 for (const f of fs.readdirSync(pasta).filter(f => f.endsWith('.json')).sort())
   cards = cards.concat(JSON.parse(fs.readFileSync(path.join(pasta, f), 'utf8')).map(c => Object.assign({ idioma }, c)));
-const L = { pt: ['pt', 'aceitas'], es: ['es', 'aceitasEs'], en: ['en', 'aceitasEn'], fr: ['fr', 'aceitasFr'] };
+const L = { pt: ['pt', 'aceitas'], es: ['es', 'aceitasEs'], en: ['en', 'aceitasEn'], fr: ['fr', 'aceitasFr'], it: ['it', 'aceitasIt'] };
 let n = 0;
 for (const [l, [cer, ac]] of Object.entries(L)) {
   const canon = new Map();

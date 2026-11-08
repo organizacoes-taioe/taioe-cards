@@ -874,6 +874,44 @@ nenhum outro baralho.
 - **A conferência de candidatos** recebe quádruplas: `[inglês, português,
   espanhol, francês]`.
 
+### 15.2 O quinto baralho: italiano
+
+Desde 08/11/2026, `fonte/cards/it`, ids `it-…`, **um público só**: quem fala
+português (curso `it-pt`). O card traz `it`, o quarteto português
+(`pt`/`aceitas`/`distratores`/`nota`) e, quando houver, `aceitasIt`,
+`sinonimosIt`, `regionaisIt` e `formasIt`. Nada de `es` nem de `en`. As
+decisões do curso estão em [`../ITALIANO.md`](../ITALIANO.md).
+
+- **O italiano é o padrão**, tratamento *tu*; *Lei* nas frases formais. A forma
+  do Norte, do Sul ou da Toscana vai em `regionaisIt` («no Sul da Itália», «na
+  Toscana») e na nota.
+- **O funil do italiano** tira o acento («è» = «e»), o artigo da frente (também
+  `l'` e `un'`) e o pronome-sujeito **só quando abre a resposta** («Io non lo
+  so» = «Non lo so»): «lui», «lei» e «loro» também vêm depois de preposição, e
+  «vado con lui» não é «vado con lei». Plural e singular **não** se igualam: o
+  «-i» e o «-e» são também terminação de verbo. Por isso «papà» e «il papa»,
+  «là» e «la» se igualam, e cards assim pedem `homografos` ou parêntese.
+- **O passado.** O *passato prossimo* é o passado da fala; o *passato remoto*,
+  o da narração e da escrita (os textos o usam desde a primeira linha). Os dois
+  se traduzem pelo mesmo pretérito do português: no card de *passato remoto*, a
+  forma do *passato prossimo* vai em `aceitasIt`; no de *passato prossimo* (e na
+  frase de uso no passado), o *passato remoto* vai em `regionaisIt`, «no Sul da
+  Itália». Nenhum dos dois em `formasIt` do outro.
+- **Os nomes dos tempos** são os mesmos nas `formasIt` e nos conceitos de
+  gramática: presente do indicativo, passato prossimo, imperfeito do
+  indicativo, passato remoto, futuro, condicional, imperativo, presente do
+  subjuntivo, imperfeito do subjuntivo, mais-que-perfeito.
+- **Falsos amigos com cuidado redobrado**: quase todo o italiano é transparente
+  para o brasileiro, e o falso amigo sem a etiqueta vira palavra «já sabida».
+  Pares na nota com a bandeira 🇮🇹: `🇮🇹 burro → 🇧🇷 a manteiga`. Quando o sentido
+  raro torna certo o falso amigo (*tirare via* é «tirar», *negozio giuridico* é
+  «negócio jurídico»), ele sai dos distratores, e a etiqueta fica, para a
+  palavra não contar como transparente.
+- **Contrastes**: fora das erradas as que o italiano falado aceita («mi piace le
+  storie», «voglio che tu vieni») e as que uma região usa («sono per partire»,
+  toscano).
+- **A conferência de candidatos** recebe pares: `[português, italiano]`.
+
 ---
 
 ## 16. O card de verso

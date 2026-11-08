@@ -1,6 +1,6 @@
 # As listas de frequência
 
-`<língua>.tsv` (`fr`, `es`, `en`, `pt`): umas 5.000 palavras de cada língua, da mais básica à
+`<língua>.tsv` (`fr`, `es`, `en`, `pt`, `it`): umas 5.000 palavras de cada língua, da mais básica à
 mais rara, com todas as palavras que têm card no baralho (`fonte/cards/<língua>`) e as que
 ainda não têm. É o que o nivelamento de cada curso percorre (PLANO.md, 7.9) e o roteiro dos
 cards que vierem.
@@ -11,7 +11,7 @@ cards que vierem.
 | `<língua>` | a forma de citação (substantivo com o artigo, verbo no infinitivo — no inglês com `to` —, adjetivo no masculino) |
 | `classe`, `genero` | a classe, e o gênero do substantivo (vazio no inglês) |
 | `nivel` | o nível pela posição: até 700 A1, até 1.500 A2, até 2.500 B1, até 3.750 B2, até 5.000 C1, depois C2 |
-| as línguas dos públicos | a tradução curta (a resposta da conferência do nivelamento): `pt es en` no francês, `pt en` no espanhol, `pt es` no inglês, `es en` no português |
+| as línguas dos públicos | a tradução curta (a resposta da conferência do nivelamento): `pt es en` no francês, `pt en` no espanhol, `pt es` no inglês, `es en` no português, `pt` no italiano |
 | `cards` | os ids dos cards de palavra dessa entrada |
 
 ## Como foi feita
@@ -20,6 +20,9 @@ cards que vierem.
    cada lema ganha a posição na lista dos livros didáticos (nível de entrada, depois a
    frequência) e nas legendas (frequência do lema), e a ordem sai da média das duas. O
    português não tem lista de livros didáticos: vale só a das legendas, e a curadoria pesa mais.
+   O italiano também não tem CEFRLex: no lugar dele entra a lista Kelly (nível do QECR e ordem,
+   sem a frequência; a linha sem nível fica só com as legendas), e a curadoria segue as regras
+   de `brutos/CURADORIA-it.md` (08/11/2026: 7.200 candidatas em 7 trechos, 5.251 na lista).
 2. A curadoria, trecho a trecho (`brutos/CURADORIA.md` tem as regras): forma de citação,
    classe, gênero, tradução, e a marca do que sai (chulo, nome próprio, fragmento, forma
    flexionada, estrangeira, sigla, duplicata, gramatical) e do que muda de lugar (o
@@ -42,9 +45,14 @@ Para mexer depois, edite `<língua>.tsv` direto: a posição é a ordem das linh
 - **Lexique 4.10** (francês): Boris New, Christophe Pallier, Gauvain Schalchli, Jessica
   Bourggin e Manuel Gimenes, «Lexique 4: a major upgrade of the « Lexique » French Lexical
   Database», 2026. <http://www.lexique.org> — Creative Commons, uso não comercial.
-- **FrequencyWords** (espanhol, inglês e português do Brasil): Hermit Dave, a frequência das
+- **FrequencyWords** (espanhol, inglês, português do Brasil e italiano): Hermit Dave, a frequência das
   palavras nas legendas do OpenSubtitles 2018 (P. Lison e J. Tiedemann, LREC 2016).
   <https://github.com/hermitdave/FrequencyWords> — CC BY-SA 4.0.
+- **Kelly** (italiano): a lista do projeto KELLY (Keywords for Language Learning for Young and
+  adults alike, 2009–2012), feita do corpus itWaC e ajustada ao QECR. Adam Kilgarriff, Frieda
+  Charalabopoulou, Maria Gavrilidou et al., «Corpus-based vocabulary lists for language learners
+  for nine languages», Language Resources and Evaluation 48 (2014).
+  <https://ssharoff.github.io/kelly/> (`it_m3.xls`) — CC BY-NC-SA 2.0.
 - **lemmatization-lists** (as formas de cada lema, para somar a frequência das legendas):
   Michal Měchura. <https://github.com/michmech/lemmatization-lists> — ODbL.
 

@@ -8,7 +8,7 @@ window.TAIOE_TEXTOS = {
   /* ═══════════════════════ português ═══════════════════════ */
   pt: {
     'lingua.es': 'espanhol', 'lingua.en': 'inglês', 'lingua.pt': 'português', 'lingua.fr': 'francês',
-    'lingua.la': 'latim', 'curso.la': 'Latim',
+    'lingua.la': 'latim', 'curso.la': 'Latim', 'lingua.it': 'italiano', 'curso.it': 'Italiano',
     'curso.es': 'Espanhol', 'curso.en': 'Inglês', 'curso.pt': 'Português', 'curso.fr': 'Francês',
     'aspas': '«{x}»',
     'lista.e': ' e ',
@@ -84,6 +84,9 @@ window.TAIOE_TEXTOS = {
     'card.enunciado.conceito.porPara': 'Por que por ou para aqui?',
     'card.enunciado.conceito.pronome': 'Que pronome é o destacado?',
     'card.enunciado.conceito.apocope': 'Por que a palavra destacada tem esta forma?',
+    'card.enunciado.conceito.ausiliare': 'Por que essere ou avere aqui?',
+    'card.enunciado.conceito.diDa': 'Por que di ou da aqui?',
+    'card.enunciado.conceito.articolo': 'Por que este artigo (ou nenhum)?',
     'card.respondaEm': 'responda em {x}',
     'card.escrevaEm': 'escreva em {x}…',
     'card.escrevaSignificado': 'escreva o significado…',
@@ -411,7 +414,7 @@ window.TAIOE_TEXTOS = {
   /* ═══════════════════════ español ═══════════════════════ */
   es: {
     'lingua.es': 'español', 'lingua.en': 'inglés', 'lingua.pt': 'portugués', 'lingua.fr': 'francés',
-    'lingua.la': 'latín', 'curso.la': 'Latín',
+    'lingua.la': 'latín', 'curso.la': 'Latín', 'lingua.it': 'italiano', 'curso.it': 'Italiano',
     'curso.es': 'Español', 'curso.en': 'Inglés', 'curso.pt': 'Portugués', 'curso.fr': 'Francés',
     'aspas': '«{x}»',
     'lista.e': ' y ',
@@ -487,6 +490,9 @@ window.TAIOE_TEXTOS = {
     'card.enunciado.conceito.porPara': '¿Por qué por o para aquí?',
     'card.enunciado.conceito.pronome': '¿Qué pronombre es el destacado?',
     'card.enunciado.conceito.apocope': '¿Por qué la palabra destacada tiene esta forma?',
+    'card.enunciado.conceito.ausiliare': '¿Por qué essere o avere aquí?',
+    'card.enunciado.conceito.diDa': '¿Por qué di o da aquí?',
+    'card.enunciado.conceito.articolo': '¿Por qué este artículo (o ninguno)?',
     'card.respondaEm': 'responde en {x}',
     'card.escrevaEm': 'escribe en {x}…',
     'card.escrevaSignificado': 'escribe el significado…',
@@ -811,7 +817,7 @@ window.TAIOE_TEXTOS = {
   /* ═══════════════════════ English ═══════════════════════ */
   en: {
     'lingua.es': 'Spanish', 'lingua.en': 'English', 'lingua.pt': 'Portuguese', 'lingua.fr': 'French',
-    'lingua.la': 'Latin', 'curso.la': 'Latin',
+    'lingua.la': 'Latin', 'curso.la': 'Latin', 'lingua.it': 'Italian', 'curso.it': 'Italian',
     'curso.es': 'Spanish', 'curso.en': 'English', 'curso.pt': 'Portuguese', 'curso.fr': 'French',
     'aspas': '“{x}”',
     'lista.e': ' and ',
@@ -887,6 +893,9 @@ window.TAIOE_TEXTOS = {
     'card.enunciado.conceito.porPara': 'Why por or para here?',
     'card.enunciado.conceito.pronome': 'Which pronoun is the highlighted one?',
     'card.enunciado.conceito.apocope': 'Why does the highlighted word have this form?',
+    'card.enunciado.conceito.ausiliare': 'Why essere or avere here?',
+    'card.enunciado.conceito.diDa': 'Why di or da here?',
+    'card.enunciado.conceito.articolo': 'Why this article (or none)?',
     'card.respondaEm': 'answer in {x}',
     'card.escrevaEm': 'write in {x}…',
     'card.escrevaSignificado': 'write the meaning…',

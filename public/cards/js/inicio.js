@@ -28,11 +28,13 @@
     'fr-es': { lingua: 'fr', audiencia: 'es', bandeira: '🇫🇷' },
     'fr-en': { lingua: 'fr', audiencia: 'en', bandeira: '🇫🇷' },
     /* o latim (21/10/2026) só para quem fala português, e só pelos textos (cards/LATIM.md) */
-    'la-pt': { lingua: 'la', audiencia: 'pt', bandeira: '🇻🇦', modo: 'trilhas' }
+    'la-pt': { lingua: 'la', audiencia: 'pt', bandeira: '🇻🇦', modo: 'trilhas' },
+    /* o italiano (08/11/2026) só para quem fala português, no modo de sempre */
+    'it-pt': { lingua: 'it', audiencia: 'pt', bandeira: '🇮🇹' }
   };
   /* Os que aparecem na escolha e nas configurações. O de português (pt-es,
      pt-en) entra quando o baralho existir. */
-  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'en-es', 'es-en', 'pt-es', 'pt-en', 'fr-pt', 'fr-es', 'fr-en', 'la-pt'];
+  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'en-es', 'es-en', 'pt-es', 'pt-en', 'fr-pt', 'fr-es', 'fr-en', 'it-pt', 'la-pt'];
   var ativo = function (k) { return !!CURSOS[k] && CURSOS_ATIVOS.indexOf(k) >= 0; };
   function cursosDa(l) {
     return CURSOS_ATIVOS.filter(function (k) { return CURSOS[k] && CURSOS[k].audiencia === l; });
@@ -90,6 +92,10 @@
       forma(s, 'rect', { width: 30, height: 20, fill: '#ce1126' });
       forma(s, 'rect', { width: 20, height: 20, fill: '#fff' });
       forma(s, 'rect', { width: 10, height: 20, fill: '#002654' });
+    } else if (lingua === 'it') {
+      forma(s, 'rect', { width: 30, height: 20, fill: '#ce2b37' });
+      forma(s, 'rect', { width: 20, height: 20, fill: '#f4f5f0' });
+      forma(s, 'rect', { width: 10, height: 20, fill: '#009246' });
     } else if (lingua === 'la') {
       /* o Vaticano: amarelo e branco, com as chaves cruzadas, simplificadas */
       forma(s, 'rect', { width: 30, height: 20, fill: '#fff' });

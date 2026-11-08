@@ -23,7 +23,8 @@
 
    uso: node fonte/conferir-candidatos.js <arquivo.json> [idioma]
         node fonte/conferir-candidatos.js /tmp/cand.json en   (o padrão é en)
-        no francês, a tripla vira quádrupla: [inglês, português, espanhol, francês] */
+        no francês, a tripla vira quádrupla: [inglês, português, espanhol, francês];
+        no italiano (só para quem fala português), um par: [português, italiano] */
 
 const fs = require('fs');
 const path = require('path');
@@ -48,8 +49,8 @@ for (const f of fs.readdirSync(pasta)) {
 }
 
 /* uma forma de gênero por chave: o card {o|a} entra duas vezes */
-const LINGUAS = ['en', 'pt', 'es', 'fr'];
-const noBaralho = { en: new Map(), pt: new Map(), es: new Map(), fr: new Map() };
+const LINGUAS = ['en', 'pt', 'es', 'fr', 'it'];
+const noBaralho = { en: new Map(), pt: new Map(), es: new Map(), fr: new Map(), it: new Map() };
 baralho.forEach(bruto => M.formasDoCard(bruto).forEach(c => {
   LINGUAS.forEach(L => {
     const k = M.normalizar(c[L], L);
@@ -58,24 +59,25 @@ baralho.forEach(bruto => M.formasDoCard(bruto).forEach(c => {
 }));
 
 const candidatos = JSON.parse(fs.readFileSync(arquivo, 'utf8'));
-const naLista = { en: new Map(), pt: new Map(), es: new Map(), fr: new Map() };
+const naLista = { en: new Map(), pt: new Map(), es: new Map(), fr: new Map(), it: new Map() };
 let choques = 0;
 
 for (const tripla of candidatos) {
   /* no baralho de francês, a quarta posição é o francês */
-  const [en, pt, es, fr] = tripla;
+  const [en, pt, es, fr] = idioma === 'it' ? [null, tripla[0], null, null] : tripla;
+  const it = idioma === 'it' ? tripla[1] : null;
   const achados = [];
-  for (const [L, texto] of [['en', en], ['pt', pt], ['es', es], ['fr', fr]]) {
+  for (const [L, texto] of [['en', en], ['pt', pt], ['es', es], ['fr', fr], ['it', it]]) {
     if (texto == null) continue;
     const k = M.normalizar(texto, L);
     if (!k) continue;
     if (noBaralho[L].has(k)) achados.push(L + '=' + noBaralho[L].get(k));
     else if (naLista[L].has(k)) achados.push(L + '=o candidato «' + naLista[L].get(k) + '»');
-    else naLista[L].set(k, en);
+    else naLista[L].set(k, en || it || pt);
   }
   if (achados.length) {
     choques++;
-    console.log('  CHOQUE [' + achados.join(' ') + ']  ' + en + '  |  ' + pt + '  |  ' + es);
+    console.log('  CHOQUE [' + achados.join(' ') + ']  ' + (idioma === 'it' ? it + '  |  ' + pt : en + '  |  ' + pt + '  |  ' + es));
   }
 }
 

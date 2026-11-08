@@ -130,7 +130,10 @@ window.TaioeCardsApp = function (ctx) {
     /* os de gramática do espanhol (03/11/2026) */
     tempo: 'card.enunciado.conceito.tempo', 'ser-estar': 'card.enunciado.conceito.serEstar',
     'por-para': 'card.enunciado.conceito.porPara', pronome: 'card.enunciado.conceito.pronome',
-    apocope: 'card.enunciado.conceito.apocope'
+    apocope: 'card.enunciado.conceito.apocope',
+    /* os do italiano (08/11/2026) */
+    ausiliare: 'card.enunciado.conceito.ausiliare', 'di-da': 'card.enunciado.conceito.diDa',
+    articolo: 'card.enunciado.conceito.articolo'
   };
   /* o exemplo que é o enunciado do dicionário: a palavra inteira, sem destaque */
   const ENUNCIADO_DO_DICIONARIO = {
@@ -1613,12 +1616,13 @@ window.TaioeCardsApp = function (ctx) {
      qual ocorrência, quando ela se repete na frase. */
   function comDestaque(frase, palavra, vez) {
     const chave = s => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    const alvo = chave(palavra);
     const re = /[A-Za-zÀ-ÿĀ-ſ]+/g;
     let m, achadas = 0;
     /* o destaque de várias palavras seguidas («he comido», «voy a llamar»: os cards de
-       gramática do espanhol, 03/11/2026) */
-    const partes = String(palavra).trim().split(/\s+/);
+       gramática do espanhol, 03/11/2026); no italiano o apóstrofo também separa («L'asino»,
+       «C'è»), e o do imperativo curto entra no destaque («Fa'», 08/11/2026) */
+    const partes = String(palavra).trim().split(/[\s'’]+/).filter(Boolean);
+    const alvo = chave(partes[0] || palavra);
     if (partes.length > 1) {
       const toks = [];
       while ((m = re.exec(frase))) toks.push(m);
