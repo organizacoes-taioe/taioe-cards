@@ -22,7 +22,7 @@ const fs = require('fs');
 const path = require('path');
 const Transp = require('./transparencia');
 
-const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'] };
+const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], it: ['pt'] };
 
 const curso = process.argv[2] || '';
 const [ensinada, publico] = curso.split('-');

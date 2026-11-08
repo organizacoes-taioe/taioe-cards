@@ -26,7 +26,7 @@ function ok(cond, msg) {
 function secao(t) { console.log('\n  ' + t); }
 function zerar() { M.usarTransparencias([]); M.usarExtras({}); }
 
-const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'] };
+const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], it: ['pt'] };
 function baralho(l) {
   const pasta = path.join(__dirname, 'cards', l);
   return fs.readdirSync(pasta).filter(f => f.endsWith('.json')).sort()

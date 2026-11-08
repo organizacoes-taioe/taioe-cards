@@ -33,12 +33,13 @@ import re
 import sys
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
-COLUNA = {'es': 'es', 'en': 'en', 'fr': 'fr', 'pt': 'pt'}
+COLUNA = {'es': 'es', 'en': 'en', 'fr': 'fr', 'pt': 'pt', 'it': 'it'}
 ARTIGO = {
     'es': re.compile(r'^(el|la|los|las)\s+', re.I),
     'en': re.compile(r'^(the|to)\s+', re.I),
     'fr': re.compile(r"^(le\s+|la\s+|les\s+|l['’])", re.I),
     'pt': re.compile(r'^(o|a|os|as)\s+', re.I),
+    'it': re.compile(r"^(il\s+|lo\s+|la\s+|i\s+|gli\s+|le\s+|l['’])", re.I),
 }
 GRAMATICAL = re.compile(r'artigo|preposi|conjun|pronome|contra[cç]|interjei|determinante|numeral|possessiv|demonstrativ|interrogativ|part[íi]cula', re.I)
 PROPRIO = re.compile(r'pr[óo]prio', re.I)

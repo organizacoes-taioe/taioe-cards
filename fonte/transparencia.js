@@ -37,9 +37,12 @@ const ARTIGOS = {
   es: { el: 'm', los: 'm', un: 'm', unos: 'm', la: 'f', las: 'f', una: 'f', unas: 'f' },
   pt: { o: 'm', os: 'm', um: 'm', uns: 'm', a: 'f', as: 'f', uma: 'f', umas: 'f' },
   fr: { le: 'm', un: 'm', la: 'f', une: 'f', les: null, des: null, "l'": null },
-  en: { the: null, a: null, an: null, to: null }
+  en: { the: null, a: null, an: null, to: null },
+  /* o italiano: «il» e «lo» são os dois masculinos (o «lo» antes de s + consoante, z, gn, ps),
+     e o «l'» elidido, como no francês, não diz o gênero */
+  it: { il: 'm', lo: 'm', un: 'm', uno: 'm', la: 'f', una: 'f', i: null, gli: null, le: null, "l'": null, "un'": 'f' }
 };
-const COM_GENERO = new Set(['es', 'pt', 'fr']);
+const COM_GENERO = new Set(['es', 'pt', 'fr', 'it']);
 
 /* O card que muda de gênero traz «{o|a}»: a regra olha a forma masculina,
    que é a canônica (a mesma que a lista e o painel mostram). */
@@ -49,7 +52,8 @@ const masculino = t => String(t || '').replace(/\{([^{}|]*)\|([^{}|]*)\}/g, '$1'
 function partes(texto, lingua) {
   let t = masculino(texto).trim().toLowerCase().normalize('NFC').replace(/[’´`]/g, "'");
   const tabela = ARTIGOS[lingua] || {};
-  if (lingua === 'fr' && /^l'/.test(t)) return { artigo: "l'", genero: null, nucleo: t.slice(2) };
+  if ((lingua === 'fr' || lingua === 'it') && /^l'/.test(t)) return { artigo: "l'", genero: null, nucleo: t.slice(2) };
+  if (lingua === 'it' && /^un'/.test(t)) return { artigo: "un'", genero: 'f', nucleo: t.slice(3) };
   const m = t.match(/^(\S+)\s+(.+)$/);
   if (m && Object.prototype.hasOwnProperty.call(tabela, m[1])) {
     return { artigo: m[1], genero: tabela[m[1]], nucleo: m[2] };

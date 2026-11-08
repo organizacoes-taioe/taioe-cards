@@ -77,6 +77,15 @@ window.Motor = (function () {
     '50': 'cinquante', '60': 'soixante', '100': 'cent'
   });
 
+  /* O italiano (08/11/2026): os números corridos até vinte. O «1» fica de fora, como no
+     espanhol: «un», «uno» e «una» dependem do que vem depois. */
+  const NUMEROS_IT = tabela({
+    '0': 'zero', '2': 'due', '3': 'tre', '4': 'quattro', '5': 'cinque',
+    '6': 'sei', '7': 'sette', '8': 'otto', '9': 'nove', '10': 'dieci',
+    '11': 'undici', '12': 'dodici', '13': 'tredici', '14': 'quattordici', '15': 'quindici',
+    '16': 'sedici', '17': 'diciassette', '18': 'diciotto', '19': 'diciannove',
+    '20': 'venti', '30': 'trenta', '40': 'quaranta', '50': 'cinquanta', '100': 'cento'
+  });
   /* Contrações e grafias alternativas da mesma palavra. O valor pode trazer
      mais de uma palavra: cada uma volta para o funil e é conferida sozinha,
      então "im" vira "i am" e o "i" ainda cai como pronome-sujeito. */
@@ -175,6 +184,11 @@ window.Motor = (function () {
      preFr), como no espanhol: quem responde «maison» sabe tanto quanto quem
      responde «la maison». */
   const OMISSIVEIS_FR = new Set();
+  /* O italiano dispensa o sujeito como o espanhol («non lo so» = «io non lo so»), mas «lui»,
+     «lei» e «loro» são também o pronome depois de preposição («con lei», «per loro»), e lá não
+     podem cair: «vado con lui» não é «vado con lei». Então o sujeito só cai quando abre a
+     resposta (ver preIt), e nada é omissível no meio da frase. */
+  const OMISSIVEIS_IT = new Set();
 
   /* Plural = singular. Em português basta tirar o "s".
 
@@ -210,6 +224,16 @@ window.Motor = (function () {
     return s.trim().replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(ARTIGOS_FR, '');
   }
 
+  /* No italiano o «-i» e o «-e» do plural são também terminação de verbo («parli», «parle»),
+     como o «-s» do francês: plural e singular não se igualam, e a variante vai em aceitasIt.
+     O artigo da frente cai, também o elidido («l'acqua» = «acqua», «un'amica» = «amica»), e
+     depois dele o pronome-sujeito que abre a resposta. O acento já saiu antes («è» = «e»,
+     «perché» = «perche»): o teclado do celular não ensina nada, como no francês. */
+  const ARTIGOS_IT = /^(il|lo|la|i|gli|le|un|uno|una)\s+|^(l|un)['’´`]\s*/;
+  const SUJEITO_IT = /^(io|tu|lui|lei|noi|voi|loro|egli|ella)\s+/;
+  function preIt(s) {
+    return s.trim().replace(ARTIGOS_IT, '').replace(SUJEITO_IT, '');
+  }
   /* O espanhol dispensa o artigo do mesmo jeito que o português: quem
      responde "oficina" acertou tanto quanto quem responde "la oficina". */
   const ARTIGOS_ES = /^(el|la|los|las|un|una|unos|unas)\s+/;
@@ -282,6 +306,11 @@ window.Motor = (function () {
       grafias: tabela({}), plural: pluralFr, pre: preFr,
       pontuacao: PONTUACAO_PT
     },
+    it: {
+      omissiveis: OMISSIVEIS_IT, numeros: NUMEROS_IT,
+      grafias: tabela({}), plural: p => p, pre: preIt,
+      pontuacao: PONTUACAO_PT
+    },
     /* O latim (cards/LATIM.md) só é pergunta: quem estuda responde em português. O funil dele
        serve para comparar latim com latim (o card repetido, a resposta escrita na língua
        errada), e iguala o que as edições escrevem de jeitos diferentes: sem acento nem mácron,
@@ -324,7 +353,8 @@ window.Motor = (function () {
     es: new Set(['hoy', 'ayer', 'manana', 'ahora', 'siempre', 'nunca']),
     en: new Set(['today', 'yesterday', 'tomorrow', 'now', 'always', 'never']),
     fr: new Set(['hier', 'demain', 'maintenant', 'toujours']),
-    la: new Set()
+    la: new Set(),
+    it: new Set(['oggi', 'ieri', 'domani', 'adesso', 'sempre'])
   };
 
   function tempoParaOFim(palavras, lingua) {
@@ -457,7 +487,8 @@ window.Motor = (function () {
     es: { certa: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', formas: 'formasEs', sinonimos: 'sinonimosEs', regionais: 'regionaisEs' },
     en: { certa: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', formas: 'formasEn', sinonimos: 'sinonimosEn', regionais: 'regionaisEn' },
     fr: { certa: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', formas: 'formasFr', sinonimos: 'sinonimosFr', regionais: 'regionaisFr' },
-    la: { certa: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', formas: 'formasLa', sinonimos: 'sinonimosLa', regionais: 'regionaisLa' }
+    la: { certa: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', formas: 'formasLa', sinonimos: 'sinonimosLa', regionais: 'regionaisLa' },
+    it: { certa: 'it', aceitas: 'aceitasIt', distratores: 'distratoresIt', formas: 'formasIt', sinonimos: 'sinonimosIt', regionais: 'regionaisIt' }
   };
 
   /* ── a língua que o baralho ensina ──
@@ -652,7 +683,8 @@ window.Motor = (function () {
     es: tabela({ el:'m', los:'m', un:'m', unos:'m', la:'f', las:'f', una:'f', unas:'f' }),
     pt: tabela({ o:'m', os:'m', um:'m', uns:'m', a:'f', as:'f', uma:'f', umas:'f' }),
     en: tabela({}),
-    fr: tabela({ le:'m', un:'m', la:'f', une:'f' })
+    fr: tabela({ le:'m', un:'m', la:'f', une:'f' }),
+    it: tabela({ il:'m', lo:'m', un:'m', uno:'m', i:'m', gli:'m', la:'f', una:'f', le:'f' })
   };
 
   function generoDaFrente(txt, lingua) {
@@ -683,7 +715,7 @@ window.Motor = (function () {
      os pares vêm da nota do público («nota», «notaEs», «notaEn»), no formato
      «bandeira da ensinada x → bandeira do público y» — «🇺🇸 gun → 🇧🇷 a
      arma» no inglês, «🇧🇷 esquisito → 🇪🇸 raro» no português. */
-  const BANDEIRA_DA_LINGUA = { es: '🇪🇸', pt: '🇧🇷', en: '🇺🇸', fr: '🇫🇷', la: '🇻🇦' };
+  const BANDEIRA_DA_LINGUA = { es: '🇪🇸', pt: '🇧🇷', en: '🇺🇸', fr: '🇫🇷', la: '🇻🇦', it: '🇮🇹' };
   const notaDoPublico = (card, a) => String((card && card[a === 'pt' ? 'nota' : 'nota' + a[0].toUpperCase() + a[1]]) || '');
   function espanhoisDoCard(card, direcao) {
     const l = linguaDaPergunta(direcao || IDA), a = linguaDaResposta(direcao || IDA);
@@ -3263,7 +3295,7 @@ window.Motor = (function () {
      Sem elas, «Ayer lo supe» aparecia entre «Yo puse la mesa» e «No lo hagas»,
      sozinha no assunto, e a pergunta se respondia sem saber o verbo. As formas
      entram primeiro; o sorteio só completa o que faltar (há cards com três). */
-  const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt' };
+  const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt', it: 'pt' };
 
   /* As palavras de uma frase, já no funil, para medir o que duas frases têm
      em comum. */
@@ -3297,7 +3329,8 @@ window.Motor = (function () {
      com a palavra do card. Quando a palavra não aparece na frase tal como
      está no card (verbo conjugado, plural), não há troca, e valem as frases
      vizinhas, como antes. */
-  const ARTIGO_DA_LINGUA = { es: /^(el|la|los|las)\s+/i, en: /^(the)\s+/i, pt: /^(o|a|os|as)\s+/i, fr: /^(le\s+|la\s+|les\s+|l['’])/i };
+  const ARTIGO_DA_LINGUA = { es: /^(el|la|los|las)\s+/i, en: /^(the)\s+/i, pt: /^(o|a|os|as)\s+/i, fr: /^(le\s+|la\s+|les\s+|l['’])/i,
+    it: /^(il\s+|lo\s+|la\s+|i\s+|gli\s+|le\s+|l['’])/i };
   const cacheTraducoes = new Map();
   const LETRA_U = '\\p{L}';
   function trocasDePalavra(card, todos, lingua, certas) {

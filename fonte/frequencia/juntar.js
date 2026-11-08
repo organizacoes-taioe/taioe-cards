@@ -21,7 +21,7 @@ const fs = require('fs');
 const path = require('path');
 
 const LINGUA = process.argv[2], pasta = process.argv[3];
-const PUBLICOS = { fr: ['pt', 'es', 'en'], es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'] }[LINGUA];
+const PUBLICOS = { fr: ['pt', 'es', 'en'], es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], it: ['pt'] }[LINGUA];
 if (!PUBLICOS || !pasta) { console.error('uso: node fonte/frequencia/juntar.js <fr|es|en|pt> <pasta-das-partes>'); process.exit(1); }
 const AQUI = __dirname;
 const NIVEL_DA_POSICAO = [[700, 'A1'], [1500, 'A2'], [2500, 'B1'], [3750, 'B2'], [5000, 'C1'], [Infinity, 'C2']];

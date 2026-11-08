@@ -51,8 +51,9 @@ const Transp = require('./transparencia');
    porquê de cada decisão está em PLANO.md. */
 /* O latim (21/10/2026, cards/LATIM.md) vem por último: assim a ordem de tudo o que já saía
    não muda. */
-const IDIOMAS = ['es', 'en', 'pt', 'fr', 'la'];
-const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português', fr: 'francês', la: 'latim' };
+/* O italiano (08/11/2026, só para quem fala português) vem depois do latim, pelo mesmo motivo. */
+const IDIOMAS = ['es', 'en', 'pt', 'fr', 'la', 'it'];
+const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português', fr: 'francês', la: 'latim', it: 'italiano' };
 
 /* Cada língua tem o seu quarteto de campos. A do baralho é a que se cobra; as
    outras duas são as respostas, e cada uma leva os seus distratores e a sua
@@ -63,18 +64,19 @@ const CAMPOS_DA_LINGUA = {
   en: { texto: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', nota: 'notaEn', formas: 'formasEn' },
   es: { texto: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', nota: 'notaEs', formas: 'formasEs' },
   fr: { texto: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', nota: 'notaFr', formas: 'formasFr' },
-  la: { texto: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', nota: 'notaLa', formas: 'formasLa' }
+  la: { texto: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', nota: 'notaLa', formas: 'formasLa' },
+  it: { texto: 'it', aceitas: 'aceitasIt', distratores: 'distratoresIt', nota: 'notaIt', formas: 'formasIt' }
 };
 
 /* De cada baralho, o público de origem: aquele em cuja língua o card é
    escrito e relido. É dele o rótulo que vai sem sufixo. */
-const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt' };
+const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt', it: 'pt' };
 
 /* Quem estuda cada baralho. Os três primeiros servem às outras duas línguas
    da casa; o de francês (08/10/2026) serve às três — português, espanhol e
    inglês —, e por isso o card de francês traz os três quartetos inteiros. O
    francês não é língua de resposta de nenhum outro baralho. */
-const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], la: ['pt'] };
+const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], la: ['pt'], it: ['pt'] };
 
 /* O que vem colado na frente da palavra e não faz parte dela: o artigo, e o
    «to» do infinitivo inglês. */
@@ -83,7 +85,8 @@ const ARTIGOS = {
   pt: /^(o|a|os|as|um|uma)\s+/,
   en: /^(the|a|an|to)\s+/,
   fr: /^(le\s+|la\s+|les\s+|un\s+|une\s+|l['’])/,
-  la: /^(?!)/
+  la: /^(?!)/,
+  it: /^(il\s+|lo\s+|la\s+|i\s+|gli\s+|le\s+|un\s+|uno\s+|una\s+|l['’]|un['’])/
 };
 
 const audienciasDe = idioma => AUDIENCIAS[idioma];
@@ -193,7 +196,7 @@ const ids = new Set();
 /* Arquivo largado direto em fonte/cards/ não pertence a baralho nenhum, e
    passaria despercebido: o build não o leria e ninguém saberia por quê. */
 for (const f of fs.readdirSync(pastaCards).filter(f => f.endsWith('.json'))) {
-  erros.push('arquivo fora de baralho: fonte/cards/' + f + ' (tem de estar em cards/es, cards/en, cards/pt ou cards/fr)');
+  erros.push('arquivo fora de baralho: fonte/cards/' + f + ' (tem de estar em cards/es, cards/en, cards/pt, cards/fr, cards/la ou cards/it)');
 }
 if (!baralhos.length) erros.push('nenhum baralho em fonte/cards/');
 
@@ -788,7 +791,8 @@ for (const { idioma, cards } of baralhos) {
    O card de conceito do espanhol mostra uma frase do curso («de», com o texto igual) com a
    palavra ou o trecho em destaque («w»), e as cinco alternativas são respostas da família. */
 {
-  const FAMILIAS_FORA = ['tempo', 'ser-estar', 'por-para', 'pronome', 'apocope'];
+  /* o italiano (08/11/2026): tempo, pronome, o auxiliar do passado («ausiliare»), «di» × «da» e o artigo */
+  const FAMILIAS_FORA = ['tempo', 'ser-estar', 'por-para', 'pronome', 'apocope', 'ausiliare', 'di-da', 'articolo'];
   const chave = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   const palavras = s => String(s || '').match(/[A-Za-zÀ-ÿĀ-ſ]+/g) || [];
   const problemas = [];
@@ -1398,7 +1402,8 @@ const ID_DO_CATALOGO = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const LISTAS = {};
 const FONTES_DA_LISTA = {
   fr: 'FLELex (UCLouvain) e Lexique 4', es: 'ELELex (UCLouvain) e OpenSubtitles 2018 (FrequencyWords)',
-  en: 'EFLLex (UCLouvain) e OpenSubtitles 2018 (FrequencyWords)', pt: 'OpenSubtitles 2018 (FrequencyWords)' };
+  en: 'EFLLex (UCLouvain) e OpenSubtitles 2018 (FrequencyWords)', pt: 'OpenSubtitles 2018 (FrequencyWords)',
+  it: 'Kelly (KELLY, CC BY-NC-SA 2.0) e OpenSubtitles 2018 (FrequencyWords)' };
 for (const { idioma, cards } of baralhos) {
   const arq = path.join(raiz, 'fonte', 'frequencia', idioma + '.tsv');
   if (!fs.existsSync(arq)) continue;
@@ -1625,7 +1630,7 @@ const assets = [
   'js/motor.js', 'js/github.js', 'js/app.js',
   'js/revisao.js',
   'data/tags.js', 'data/historico.js',
-  'data/cards-es.js', 'data/cards-en.js', 'data/cards-pt.js', 'data/cards-fr.js',
+  'data/cards-es.js', 'data/cards-en.js', 'data/cards-pt.js', 'data/cards-fr.js', 'data/cards-it.js',
   'data/textos-es.js', 'data/textos-en.js', 'data/textos-pt.js',
   'data/candidatos-es.js', 'js/revisao.js', 'js/escolher-textos.js'
 ].filter(a => fs.existsSync(path.join(raiz, a)));   // as páginas de revisão podem ainda não existir

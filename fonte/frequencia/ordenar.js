@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* ordenar.js — a ordem de partida da lista de frequência de uma língua (PLANO.md, 7.9).
 
-   node fonte/frequencia/ordenar.js <fr|es|en|pt> [--max=5600]
+   node fonte/frequencia/ordenar.js <fr|es|en|pt|it> [--max=5600]
 
    Lê os originais em fonte/frequencia/brutos/ (fora do git; ver o README da pasta):
      fr  flelex/FleLex_TT.csv    FLELex (UCLouvain): frequência de cada lema nos livros
@@ -14,7 +14,10 @@
      en  efllex/EFLLex.tsv       EFLLex (UCLouvain), o mesmo para o inglês;
          legendas/en_full.txt    idem, com lemas/lemmatization-en.txt;
      pt  legendas/pt_br_full.txt só as legendas (não há CEFRLex do português), com
-                                 lemas/lemmatization-pt.txt; a classe vem da curadoria.
+                                 lemas/lemmatization-pt.txt; a classe vem da curadoria;
+     it  kelly/kelly-it.tsv      a lista Kelly do italiano (KELLY, 2012: corpus da web, níveis do
+                                 QECR pela frequência; sem a frequência, só a ordem), exportada da
+                                 planilha it_m3.xls; legendas/it_full.txt com lemas/lemmatization-it.txt.
    Grava fonte/frequencia/candidatos-<língua>.tsv: as palavras de conteúdo (substantivo, verbo,
    adjetivo, advérbio, numeral, interjeição) e toda palavra que já tem card, na ordem
    proposta. É o ponto de partida; a lista que vale é fonte/frequencia/<língua>.tsv, com a
@@ -32,8 +35,8 @@ const fs = require('fs');
 const path = require('path');
 
 const LINGUA = process.argv[2];
-if (!['fr', 'es', 'en', 'pt'].includes(LINGUA)) {
-  console.error('uso: node fonte/frequencia/ordenar.js <fr|es|en|pt> [--max=5600]'); process.exit(1);
+if (!['fr', 'es', 'en', 'pt', 'it'].includes(LINGUA)) {
+  console.error('uso: node fonte/frequencia/ordenar.js <fr|es|en|pt|it> [--max=5600]'); process.exit(1);
 }
 const RAIZ = path.join(__dirname, '..', '..');
 const BRUTOS = path.join(__dirname, 'brutos');
@@ -85,6 +88,11 @@ function classeEn(tag) {
   return null;
 }
 
+// Kelly (italiano): n, v, adj, adv, num, int; np é nome próprio (fora)
+const CLASSE_IT = { n: 'substantivo', v: 'verbo', adj: 'adjetivo', adv: 'advérbio', num: 'numeral', int: 'interjeição',
+  prep: 'preposição', conj: 'conjunção', pron: 'pronome', det: 'determinante' };
+const classeIt = tag => CLASSE_IT[String(tag || '').trim()] || null;
+
 // a chave de comparação: minúsculas, «oe» do Lexique = «œ» dos cards, apóstrofo reto
 const chave = s => String(s || '').trim().toLowerCase().normalize('NFC')
   .replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(/’/g, "'");
@@ -132,6 +140,16 @@ if (LINGUA === 'fr') {
 } else {
   /* CEFRLex (ELELex, EFLLex): level_freq@a1 … @c1, total_freq@total. Não há C2. */
   const cefr = { es: ['elelex', 'ELELex.tsv', classeEs], en: ['efllex', 'EFLLex.tsv', classeEn] }[LINGUA];
+  /* Kelly (italiano): só a ordem e o nível; a ordem faz as vezes da frequência. A linha sem nível
+     (vocabulário acrescentado à mão pelos autores: «padella», «passaporto») fica de fora, e a
+     posição dela vem só das legendas. */
+  if (LINGUA === 'it') {
+    for (const r of lerTsv(path.join(BRUTOS, 'kelly', 'kelly-it.tsv'))) {
+      if (!r.nivel || /,/.test(r.lemma)) continue;
+      const i = NIVEIS.indexOf(r.nivel);
+      guardarFle(chave(r.lemma), classeIt(r.tag), NIVEIS.map((_, j) => (j >= i ? 1 : 0)), -Number(r.pos));
+    }
+  }
   if (cefr) {
     for (const r of lerTsv(path.join(BRUTOS, cefr[0], cefr[1])))
       guardarFle(chave(r.word), cefr[2](r.tag), ['a1', 'a2', 'b1', 'b2', 'c1'].map(n => Number(r['level_freq@' + n]) || 0),
@@ -162,7 +180,9 @@ if (LINGUA === 'fr') {
     en: ['as', 'like', 'since', 'for', 'but', 'near', 'past', 'round', 'down', 'up', 'out', 'off', 'over'],
     pt: ['para', 'pra', 'como', 'sobre', 'entre', 'uma', 'umas', 'sua', 'suas', 'pela', 'pelas', 'pelo', 'pelos',
       'nós', 'até', 'mas', 'contra', 'durante', 'mediante', 'fora', 'segundo', 'antes', 'logo', 'cerca', 'perante',
-      'desde', 'nada', 'quer', 'seja', 'era', 'são', 'tinha', 'deve', 'acha', 'fez', 'vão', 'dele', 'dela']
+      'desde', 'nada', 'quer', 'seja', 'era', 'são', 'tinha', 'deve', 'acha', 'fez', 'vão', 'dele', 'dela'],
+    it: ['come', 'per', 'ma', 'su', 'sopra', 'tra', 'fra', 'contro', 'mentre', 'durante', 'dopo', 'fino', 'dove',
+      'quando', 'così', 'anche', 'più', 'solo', 'bene', 'qui', 'ora', 'mai', 'sempre', 'già']
   }[LINGUA] || []);
   const total = contagens.reduce((s, [, n]) => s + n, 0) / 1e6;
   const freqDaForma = new Map(contagens);
@@ -216,15 +236,20 @@ for (const lema of new Set([...fle.keys(), ...lex.keys()])) {
 
 /* ── os cards que já existem ── */
 const ARTIGO = { fr: /^(le|la|les|un|une|des)\s+|^l['’]\s*/i, es: /^(el|la|los|las|un|una|unos|unas|lo)\s+/i,
-  en: /^(the|a|an|to)\s+/i, pt: /^(o|a|os|as|um|uma|uns|umas)\s+/i }[LINGUA];
-const PRONOMINAL = { fr: /^(se |s')/, es: /(se)$/, en: null, pt: /-se$/ }[LINGUA];
-const semPronome = b => LINGUA === 'es' ? b.replace(/se$/, '') : LINGUA === 'pt' ? b.replace(/-se$/, '') : b.replace(/^(se |s')/, '');
+  en: /^(the|a|an|to)\s+/i, pt: /^(o|a|os|as|um|uma|uns|umas)\s+/i,
+  it: /^(il|lo|la|i|gli|le|un|uno|una)\s+|^(l|un)['’]\s*/i }[LINGUA];
+const PRONOMINAL = { fr: /^(se |s')/, es: /(se)$/, en: null, pt: /-se$/, it: /rsi$/ }[LINGUA];
+const semPronome = b => LINGUA === 'es' ? b.replace(/se$/, '') : LINGUA === 'pt' ? b.replace(/-se$/, '')
+  : LINGUA === 'it' ? b.replace(/rsi$/, 're') : b.replace(/^(se |s')/, '');
 const formaBase = s => chave(String(s || '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/[¡!¿?.,…]/g, '')).replace(ARTIGO, '').trim();
 const VAZIAS = new Set({
   fr: ['de', 'du', 'des', 'la', 'le', 'les', "l'", 'à', 'au', 'aux', 'en', 'et', 'd'],
   es: ['de', 'del', 'el', 'la', 'los', 'las', 'lo', 'un', 'una', 'a', 'al', 'en', 'y', 'con', 'por', 'para', 'que', 'se', 'me', 'te', 'le'],
   en: ['the', 'a', 'an', 'to', 'of', 'and', 'in', 'on', 'at', 'for', 'with', 'one', "one's", 'someone', 'something', 'sb', 'sth'],
-  pt: ['de', 'do', 'da', 'dos', 'das', 'o', 'a', 'os', 'as', 'um', 'uma', 'em', 'no', 'na', 'e', 'com', 'por', 'para', 'que', 'se']
+  pt: ['de', 'do', 'da', 'dos', 'das', 'o', 'a', 'os', 'as', 'um', 'uma', 'em', 'no', 'na', 'e', 'com', 'por', 'para', 'que', 'se'],
+  it: ['di', 'del', 'della', 'dei', 'degli', 'delle', "dell'", 'il', 'lo', 'la', 'i', 'gli', 'le', "l'", 'un', 'uno', 'una',
+    "un'", 'a', 'al', 'alla', 'in', 'nel', 'nella', 'e', 'con', 'per', 'che', 'si', 'mi', 'ti', 'ci', 'da', 'dal', 'dalla',
+    'su', 'sul', 'sulla']
 }[LINGUA]);
 const cards = [];
 const pasta = path.join(RAIZ, 'fonte', 'cards', LINGUA);

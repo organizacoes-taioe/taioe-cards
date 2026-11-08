@@ -8,7 +8,7 @@ window.TAIOE_TEXTOS = {
   /* ═══════════════════════ português ═══════════════════════ */
   pt: {
     'lingua.es': 'espanhol', 'lingua.en': 'inglês', 'lingua.pt': 'português', 'lingua.fr': 'francês',
-    'lingua.la': 'latim', 'curso.la': 'Latim',
+    'lingua.la': 'latim', 'curso.la': 'Latim', 'lingua.it': 'italiano', 'curso.it': 'Italiano',
     'curso.es': 'Espanhol', 'curso.en': 'Inglês', 'curso.pt': 'Português', 'curso.fr': 'Francês',
     'aspas': '«{x}»',
     'lista.e': ' e ',
@@ -411,7 +411,7 @@ window.TAIOE_TEXTOS = {
   /* ═══════════════════════ español ═══════════════════════ */
   es: {
     'lingua.es': 'español', 'lingua.en': 'inglés', 'lingua.pt': 'portugués', 'lingua.fr': 'francés',
-    'lingua.la': 'latín', 'curso.la': 'Latín',
+    'lingua.la': 'latín', 'curso.la': 'Latín', 'lingua.it': 'italiano', 'curso.it': 'Italiano',
     'curso.es': 'Español', 'curso.en': 'Inglés', 'curso.pt': 'Portugués', 'curso.fr': 'Francés',
     'aspas': '«{x}»',
     'lista.e': ' y ',
@@ -811,7 +811,7 @@ window.TAIOE_TEXTOS = {
   /* ═══════════════════════ English ═══════════════════════ */
   en: {
     'lingua.es': 'Spanish', 'lingua.en': 'English', 'lingua.pt': 'Portuguese', 'lingua.fr': 'French',
-    'lingua.la': 'Latin', 'curso.la': 'Latin',
+    'lingua.la': 'Latin', 'curso.la': 'Latin', 'lingua.it': 'Italian', 'curso.it': 'Italian',
     'curso.es': 'Spanish', 'curso.en': 'English', 'curso.pt': 'Portuguese', 'curso.fr': 'French',
     'aspas': '“{x}”',
     'lista.e': ' and ',

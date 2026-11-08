@@ -17,7 +17,7 @@ import urllib.request
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
-NOME = {'es': 'Spanish', 'en': 'English', 'fr': 'French', 'pt': 'Portuguese'}
+NOME = {'es': 'Spanish', 'en': 'English', 'fr': 'French', 'pt': 'Portuguese', 'it': 'Italian'}
 
 
 def pasta(lingua):

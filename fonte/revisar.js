@@ -30,15 +30,16 @@ const janela = {};
 new Function('window', fs.readFileSync(path.join(__dirname, '..', 'js', 'motor.js'), 'utf8'))(janela);
 const Motor = janela.Motor;
 
-const IDIOMAS = ['es', 'en', 'pt', 'fr', 'la'];
-const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt' };
-const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], la: ['pt'] };
+const IDIOMAS = ['es', 'en', 'pt', 'fr', 'la', 'it'];
+const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt', it: 'pt' };
+const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], la: ['pt'], it: ['pt'] };
 const CAMPOS = {
   pt: { texto: 'pt', aceitas: 'aceitas',   distratores: 'distratores',   nota: 'nota',   formas: 'formasPt' },
   en: { texto: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', nota: 'notaEn', formas: 'formasEn' },
   es: { texto: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', nota: 'notaEs', formas: 'formasEs' },
   fr: { texto: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', nota: 'notaFr', formas: 'formasFr' },
-  la: { texto: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', nota: 'notaLa', formas: 'formasLa' }
+  la: { texto: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', nota: 'notaLa', formas: 'formasLa' },
+  it: { texto: 'it', aceitas: 'aceitasIt', distratores: 'distratoresIt', nota: 'notaIt', formas: 'formasIt' }
 };
 const audienciasDe = idioma => AUDIENCIAS[idioma];
 
