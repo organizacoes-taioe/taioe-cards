@@ -26,15 +26,30 @@ gramática no modelo do piloto do espanhol (manual §21). A contraproposta foi a
 `it-b` primeiros passos · `it-p` palavra · `it-u` frase de uso · `it-v` conjugação · `it-k` contraste ·
 `it-g` conceito de gramática.
 
-## 3. Etapas
+## 3. Etapas (todas feitas em 2026-11-08)
 
-| etapa | o que | estado |
+| etapa | o que | resultado |
 |---|---|---|
-| 1 | lista `it.tsv` (Kelly + legendas, curadoria em 7 trechos) | em andamento |
-| 2 | o italiano no código: build, motor (funil), telas, ferramentas; o curso no banco (infra PR #26) e nas estatísticas do hub | feito (08/11) |
-| 3 | primeiros passos e palavras | |
-| 4 | frases de uso e conjugação | |
-| 5 | as palavras que as frases pedem, e as frases delas | |
-| 6 | contrastes e conceitos de gramática | |
-| 7 | os 5 textos na Biblioteca e nos Cards | |
+| 1 | lista `it.tsv` (Kelly + legendas, curadoria em 7 trechos, `brutos/CURADORIA-it.md`) | 5.254 palavras |
+| 2 | o italiano no código: build, motor (funil), telas, ferramentas; o curso no banco (infra PR #26, Migrar no teste e na produção) e nas estatísticas do hub | feito |
+| 3 | primeiros passos e palavras (`01`–`04`) | 40 + 480 |
+| 4 | frases de uso e conjugação (`05`–`09`) | ~630 + 116 |
+| 5 | as palavras que as frases e os textos pediam, e as frases delas (`10`–`13`); os cards de leitura dos textos (`14`) | 183 palavras, 217 frases, 69 de leitura |
+| 6 | contrastes (`50`) e conceitos de gramática (`60`) | 33 + 27 |
+| 7 | os 5 textos na Biblioteca (com nota em cada palavra, do it.wiktionary) e nos Cards | fila: Pianto antico → Novembre → L'infinito; por escolha: San Martino, Pinocchio (3 partes) |
 | 8 | conferências, Catálogo no teste e na produção, publicação | |
+
+Total: **1.796 cards** (732 palavras, 1.004 frases, 33 contrastes, 27 conceitos).
+
+## 4. Como foi feito, e o que fica para depois
+
+- As levas foram feitas por subagentes em worktrees próprias (`~/.cache/claude-it/wt-<branch>`, uma
+  branch por leva), com as regras em `~/.cache/claude-it/BRIEF-cards-it.md` e `BRIEF-frases-it.md`
+  (só neste PC). A junção: merge das branches, as frases repetidas entre levas tiradas, os `+forma`
+  trocados pelos ids, `~/.cache/claude-it/ligar-lista.py .` (a coluna `cards` do `it.tsv`) e os textos
+  reimportados (os destinos à mão sobrevivem).
+- Sem tradução em domínio público para nenhum dos 5 textos (o *Pinocchio* talvez tenha a de 1933,
+  revista por Monteiro Lobato, sobre a de Mary Baxter Lee, de 1929; não digitalizada).
+- Próximos: frases com *lo* e *gli* antes de s + consoante (lo studente, lo zio, gli spaghetti), para
+  o conceito do artigo ganhar a regra que hoje só aparece como alternativa errada; o *ci* de lugar e o
+  *si* impessoal pelo mesmo motivo; o resto do *Pinocchio* e outros textos quando o Gere pedir.
