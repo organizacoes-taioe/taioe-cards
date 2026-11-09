@@ -97,6 +97,51 @@
     p.cards[e.id] = Object.assign({}, e, { historico: (local && local.historico) || [], vistasServidor: e.vistas });
   }
 
+  /* ── a série do gráfico «O caminho até aqui» ──
+     [respostas, ida, volta, d0..d5]. Ela anda sempre para a frente no número de respostas: fica
+     a maior sequência crescente (até 09/11/2026 a carga podia pôr o ponto do outro aparelho fora
+     de ordem). E sai a foto velha: o ponto que vem depois de um salto de mais de 20 respostas
+     quase sem mudança nenhuma, mais os seguidos dele de uma em uma resposta, até a contagem dar
+     o pulo de quando o aparelho recebeu os estados do outro. Era a resposta que ficara na fila
+     deste aparelho, empurrada para depois das do outro com as contagens de antes delas: no
+     gráfico, um trecho parado e um degrau (o Gere, 09/11/2026). */
+  function mudanca(a, b) {
+    var s = 0;
+    for (var k = 1; k < 9; k++) s += Math.abs(a[k] - b[k]);
+    return s;
+  }
+  function limparSerie(serie) {
+    serie = (serie || []).filter(function (pt) { return Array.isArray(pt) && pt.length === 9; });
+    var fins = [], antes = new Array(serie.length);   // fins[k]: o ponto que fecha a sequência de k+1
+    serie.forEach(function (pt, i) {
+      var a = 0, b = fins.length;
+      while (a < b) { var m = (a + b) >> 1; if (serie[fins[m]][0] < pt[0]) a = m + 1; else b = m; }
+      antes[i] = a ? fins[a - 1] : -1;
+      fins[a] = i;
+    });
+    var ordem = [];
+    for (var i = fins.length ? fins[fins.length - 1] : -1; i >= 0; i = antes[i]) ordem.push(serie[i]);
+    ordem.reverse();
+    var fica = [];
+    for (var j = 0; j < ordem.length; j++) {
+      var ant = fica[fica.length - 1];
+      if (ant && ordem[j][0] - ant[0] > 20 && mudanca(ant, ordem[j]) <= 2) {
+        while (j + 1 < ordem.length && ordem[j + 1][0] - ordem[j][0] === 1 && mudanca(ordem[j], ordem[j + 1]) <= 2) j++;
+        continue;
+      }
+      fica.push(ordem[j]);
+    }
+    return fica;
+  }
+  // um ponto por vaga de «passo» respostas (o último de cada), com no máximo «teto» pontos
+  function rarear(serie, teto) {
+    if (!serie.length) return serie;
+    var passo = Math.max(5, Math.ceil(serie[serie.length - 1][0] / teto));
+    return serie.filter(function (pt, i) {
+      return i === serie.length - 1 || Math.floor(serie[i + 1][0] / passo) !== Math.floor(pt[0] / passo);
+    });
+  }
+
   function filaVazia() {
     return { base: 0, eventos: [], sujos: [], puxadoEm: null, loteSemRecibo: null,
              extrasEnviados: null, retorno: [], quarentena: [] };
@@ -230,7 +275,9 @@
           if (e.estreouNa !== undefined && e.estreouNa >= fila.base) e.estreouNa += r.delta;
         });
         fila.eventos.forEach(function (e) { if (e.relogio != null) e.relogio += r.delta; });
-        (p.serie || []).forEach(function (pt) { if (pt[0] > fila.base) pt[0] += r.delta; });
+        // os pontos da série depois da base são fotos de antes das respostas do outro
+        // aparelho: empurrados, viravam um degrau falso. Saem; a carga traz os certos
+        if (p.serie) p.serie = p.serie.filter(function (pt) { return pt[0] <= fila.base; });
       }
       fila.base = r.relogio;
       p.totais.respostas = r.relogio + fila.eventos.length;
@@ -445,6 +492,38 @@
         .finally(function () { emVoo = false; });
     }
 
+    /* ── a série no servidor (migração 20261109120000 do taioe-infra) ──
+       Um ponto a cada lote, e a mesma curva em todo aparelho. Na primeira vez, o aparelho
+       manda a série que já tinha (o servidor fica, em cada faixa de 25 respostas, com a fonte
+       de mais pontos); na abertura vem a série inteira, e depois só o que veio de novo. O que
+       ainda não subiu fica por cima, do aparelho. Devolve false se o servidor não a tem. */
+    var serieInteira = false;
+    async function juntarSerie() {
+      var p = o.progresso();
+      if (!fila.serieEnviada) {
+        var minha = rarear(limparSerie(p.serie), 3000);
+        if (minha.length) {
+          var g = await sb.schema('cards').rpc('gravar_serie', { curso: curso, pontos: minha });
+          if (g.error) return false;
+        }
+        fila.serieEnviada = true;
+      }
+      var depois = serieInteira ? (fila.serieAte || 0) : null;
+      var r = await sb.schema('cards').rpc('carregar_serie', { curso: curso, depois: depois });
+      if (r.error) return false;
+      var pontos = Array.isArray(r.data) ? r.data : [];
+      p = o.progresso();
+      if (pontos.length) {
+        var ate = pontos[pontos.length - 1][0];
+        var local = p.serie || [];
+        p.serie = local.filter(function (pt) { return depois !== null && pt[0] <= depois; })
+          .concat(pontos, local.filter(function (pt) { return pt[0] > ate; }));
+        fila.serieAte = ate;
+      }
+      serieInteira = true;
+      return true;
+    }
+
     /* ── puxar (§2.4) ── */
     async function puxar(completo) {
       var p = o.progresso();
@@ -494,12 +573,8 @@
         });
       }
 
-      // a série: um ponto por dia (o retrato), depois do último ponto que o aparelho já tem.
-      // Só sem fila: com resposta daqui ainda sem subir, o retrato do outro aparelho vinha no
-      // número do servidor, à frente das respostas daqui, que voltavam a ser anotadas atrás
-      // dele, e o recibo ainda o empurrava; o gráfico «O caminho até aqui» dava a volta para
-      // trás (o Gere, 09/11/2026). A carga a cada minuto deixou isso comum.
-      if (semFila) {
+      // a série: a do servidor; se ele ainda não a tiver, o retrato de cada dia, como antes
+      if (!(await juntarSerie()) && semFila) {
         var retratos = Object.keys(c.diario || {}).map(function (d) { return c.diario[d].retrato; })
           .filter(function (x) { return Array.isArray(x) && x.length === 9; })
           .sort(function (a, b) { return a[0] - b[0]; });
@@ -605,5 +680,6 @@
     };
   }
 
-  window.TaioeSincronia = { criar: criar, mesclarExtras: mesclarExtras, gestoAtivo: gestoAtivo, dataDoGesto: dataDoGesto };
+  window.TaioeSincronia = { criar: criar, mesclarExtras: mesclarExtras, gestoAtivo: gestoAtivo, dataDoGesto: dataDoGesto,
+                           limparSerie: limparSerie };
 })();
