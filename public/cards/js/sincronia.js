@@ -278,6 +278,7 @@
         // os pontos da série depois da base são fotos de antes das respostas do outro
         // aparelho: empurrados, viravam um degrau falso. Saem; a carga traz os certos
         if (p.serie) p.serie = p.serie.filter(function (pt) { return pt[0] <= fila.base; });
+        if (fila.serieAte > fila.base) fila.serieAte = fila.base;   // a carga seguinte os traz de novo
       }
       fila.base = r.relogio;
       p.totais.respostas = r.relogio + fila.eventos.length;
