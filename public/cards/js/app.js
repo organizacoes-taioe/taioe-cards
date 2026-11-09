@@ -393,6 +393,7 @@ window.TaioeCardsApp = function (ctx) {
        e a semente nova — que já vem dividida, e cobre até a última
        sincronização — entra no lugar. */
     if (p.serie.some(pt => !Array.isArray(pt) || pt.length !== 9)) p.serie = [];
+    p.serie = serieEmOrdem(p.serie);
     const semente = (window.HISTORICO_RAW && window.HISTORICO_RAW.serie) || [];
     if (!p.serie.length && semente.length) {
       const fim = semente[semente.length - 1][0];
@@ -2630,8 +2631,26 @@ window.TaioeCardsApp = function (ctx) {
     { chave: 7, nome: rotuloEspera(180), cor: 'var(--escada-5)', degrau: true }
   ];
 
+  /* A série anda sempre para a frente no número de respostas. Até 09/11/2026
+     a sincronia podia pôr o retrato do outro aparelho no meio das respostas
+     daqui, fora de ordem, e a curva voltava para trás. Fica a maior sequência
+     crescente (os pontos fora de ordem são poucos e saem; os outros ficam). */
+  function serieEmOrdem(serie) {
+    const fins = [], antes = new Array(serie.length);   // fins[k]: o ponto que fecha a sequência de k+1
+    serie.forEach((pt, i) => {
+      let a = 0, b = fins.length;
+      while (a < b) { const m = (a + b) >> 1; if (serie[fins[m]][0] < pt[0]) a = m + 1; else b = m; }
+      antes[i] = a ? fins[a - 1] : -1;
+      fins[a] = i;
+    });
+    if (fins.length === serie.length) return serie;
+    const fica = [];
+    for (let i = fins.length ? fins[fins.length - 1] : -1; i >= 0; i = antes[i]) fica.push(serie[i]);
+    return fica.reverse();
+  }
+
   function graficoEtapas() {
-    const bruta = (progresso.serie || []).filter(p => Array.isArray(p) && p.length === 9);
+    const bruta = serieEmOrdem((progresso.serie || []).filter(p => Array.isArray(p) && p.length === 9));
     if (bruta.length < 20) return '';           // curva de nada não se desenha
     /* [respostas, esPt, ptEs, d0..d5] → o desenho precisa das oito contagens,
        e a resposta vira o rótulo do eixo. */

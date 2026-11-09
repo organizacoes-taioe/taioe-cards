@@ -494,13 +494,19 @@
         });
       }
 
-      // a série: um ponto por dia (o retrato), depois do último ponto que o aparelho já tem
-      var retratos = Object.keys(c.diario || {}).map(function (d) { return c.diario[d].retrato; })
-        .filter(function (x) { return Array.isArray(x) && x.length === 9; })
-        .sort(function (a, b) { return a[0] - b[0]; });
-      p.serie = p.serie || [];
-      var ultimo = p.serie.length ? p.serie[p.serie.length - 1][0] : -1;
-      retratos.forEach(function (x) { if (x[0] > ultimo) { p.serie.push(x.slice()); ultimo = x[0]; } });
+      // a série: um ponto por dia (o retrato), depois do último ponto que o aparelho já tem.
+      // Só sem fila: com resposta daqui ainda sem subir, o retrato do outro aparelho vinha no
+      // número do servidor, à frente das respostas daqui, que voltavam a ser anotadas atrás
+      // dele, e o recibo ainda o empurrava; o gráfico «O caminho até aqui» dava a volta para
+      // trás (o Gere, 09/11/2026). A carga a cada minuto deixou isso comum.
+      if (semFila) {
+        var retratos = Object.keys(c.diario || {}).map(function (d) { return c.diario[d].retrato; })
+          .filter(function (x) { return Array.isArray(x) && x.length === 9; })
+          .sort(function (a, b) { return a[0] - b[0]; });
+        p.serie = p.serie || [];
+        var ultimo = p.serie.length ? p.serie[p.serie.length - 1][0] : -1;
+        retratos.forEach(function (x) { if (x[0] > ultimo) { p.serie.push(x.slice()); ultimo = x[0]; } });
+      }
 
       if (c.extras) {
         if (fila.extrasEnviados === null) {
