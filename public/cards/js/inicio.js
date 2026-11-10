@@ -32,10 +32,13 @@
     /* o italiano (08/11/2026) só para quem fala português, no modo de sempre */
     'it-pt': { lingua: 'it', audiencia: 'pt', bandeira: '🇮🇹' }
   };
-  /* Os que aparecem na escolha e nas configurações. O de português (pt-es,
-     pt-en) entra quando o baralho existir. */
-  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'en-es', 'es-en', 'pt-es', 'pt-en', 'fr-pt', 'fr-es', 'fr-en', 'it-pt', 'la-pt'];
+  /* Os que aparecem na escolha e nas configurações: desde 09/11/2026, só os
+     de quem fala português (decisão do Gere). Os guardados não aparecem na
+     escolha, mas continuam abrindo para quem já os tem como curso atual. */
+  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'fr-pt', 'it-pt', 'la-pt'];
+  var CURSOS_GUARDADOS = ['en-es', 'es-en', 'pt-es', 'pt-en', 'fr-es', 'fr-en'];
   var ativo = function (k) { return !!CURSOS[k] && CURSOS_ATIVOS.indexOf(k) >= 0; };
+  var aberto = function (k) { return ativo(k) || (!!CURSOS[k] && CURSOS_GUARDADOS.indexOf(k) >= 0); };
   function cursosDa(l) {
     return CURSOS_ATIVOS.filter(function (k) { return CURSOS[k] && CURSOS[k].audiencia === l; });
   }
@@ -171,7 +174,7 @@
           caixa.appendChild(b);
         });
         $('escolha-nenhum').classList.toggle('oculto', lista.length > 0);
-        var mostraManter = ativo(atual) && CURSOS[atual].audiencia !== l;
+        var mostraManter = aberto(atual) && CURSOS[atual].audiencia !== l;
         manter.classList.toggle('oculto', !mostraManter);
         if (mostraManter) {
           manter.textContent = I.tEm(l, 'escolha.manter', {
@@ -339,8 +342,8 @@
         if (doTexto !== curso) { curso = doTexto; await gravarCurso(sb, uid, perfil, curso); }
       } else textoPedido = null;
     }
-    if (!ativo(curso) || CURSOS[curso].audiencia !== I.lingua()) {
-      var escolhido = await escolherCurso(I.lingua(), ativo(curso) ? curso : null);
+    if (!aberto(curso) || CURSOS[curso].audiencia !== I.lingua()) {
+      var escolhido = await escolherCurso(I.lingua(), aberto(curso) ? curso : null);
       if (escolhido !== curso) { curso = escolhido; await gravarCurso(sb, uid, perfil, curso); }
     }
 
