@@ -441,7 +441,7 @@ window.TAIOE_TEXTOS = {
     'escolha.titulo': '¿Qué quieres estudiar?',
     'escolha.apoio': 'Los cursos se responden en español. Puedes cambiar después, en la configuración, sin perder nada.',
     'escolha.lingua': 'Idioma de la interfaz',
-    'escolha.nenhum': 'Todavía no hay cursos para hablantes de español.',
+    'escolha.nenhum': 'Por ahora solo hay cursos para hablantes de portugués.',
     'escolha.manter': 'Seguir en el curso de {L}, en {A}',
 
     'inicio.titulo': '¿Todo listo para estudiar?',
@@ -844,7 +844,7 @@ window.TAIOE_TEXTOS = {
     'escolha.titulo': 'What do you want to study?',
     'escolha.apoio': 'You answer every course in English. You can switch later in Settings without losing anything.',
     'escolha.lingua': 'Interface language',
-    'escolha.nenhum': 'There are no courses for English speakers yet.',
+    'escolha.nenhum': 'For now there are only courses for Portuguese speakers.',
     'escolha.manter': 'Keep studying {L} in {A}',
 
     'inicio.titulo': 'Ready to study?',
