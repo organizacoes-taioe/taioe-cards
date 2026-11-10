@@ -1,8 +1,8 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-11-07",
- "total": 2272,
+ "gerado_em": "2026-11-10",
+ "total": 2271,
  "cards": [
   {
    "idioma": "es",
@@ -26373,6 +26373,9 @@
    "requerTodas": [
     "p478",
     "p182"
+   ],
+   "aceitasEs": [
+    "Beba con mesura."
    ]
   },
   {
@@ -34728,52 +34731,6 @@
     "p353",
     "p390",
     "p362"
-   ]
-  },
-  {
-   "idioma": "es",
-   "id": "f183",
-   "tipo": "frase",
-   "es": "Me llevo bien con mi herman{o|a}.",
-   "pt": "Me dou bem com {meu irmão|minha irmã}.",
-   "en": "I get on well with my {brother|sister}.",
-   "aceitas": [
-    "me dou bem com {meu irmao|minha irma}",
-    "eu me dou bem com {meu irmao|minha irma}",
-    "me dou bem com {o meu irmao|a minha irma}",
-    "tenho uma boa relacao com {meu irmao|minha irma}",
-    "me entendo bem com {meu irmao|minha irma}",
-    "nos damos bem eu e {meu irmao|minha irma}"
-   ],
-   "aceitasEn": [
-    "i get on well with my {brother|sister}",
-    "i get along well with my {brother|sister}",
-    "i get along with my {brother|sister}",
-    "my {brother|sister} and i get on well"
-   ],
-   "distratores": [
-    "Levo {meu irmão|minha irmã} comigo.",
-    "Aguento bem {meu irmão|minha irmã}.",
-    "Moro perto d{o meu irmão|a minha irmã}.",
-    "Pareço muito com {meu irmão|minha irmã}."
-   ],
-   "distratoresEn": [
-    "I take my {brother|sister} with me.",
-    "I put up with my {brother|sister}.",
-    "I live near my {brother|sister}.",
-    "I look a lot like my {brother|sister}."
-   ],
-   "nivel": "A2",
-   "tags": [
-    "família",
-    "cotidiano"
-   ],
-   "nota": "«Llevarse bien (o mal) con alguien» é a relação entre pessoas. Sozinho, «llevarse» é levar embora: «se llevó mi paraguas».",
-   "notaEn": "«Llevarse bien (o mal) con alguien» is how people get on. On its own, «llevarse» means to carry off: «se llevó mi paraguas».",
-   "requerTodas": [
-    "p359",
-    "p369",
-    "p217"
    ]
   },
   {
@@ -68049,12 +68006,13 @@
    "id": "p994",
    "tipo": "palavra",
    "es": "el orden",
-   "pt": "a ordem",
+   "pt": "a ordem (arrumação)",
    "en": "the order",
    "aceitas": [
     "ordem",
     "a organizacao",
-    "a arrumacao"
+    "a arrumacao",
+    "a ordem"
    ],
    "aceitasEn": [
     "order",
@@ -68063,10 +68021,10 @@
     "arrangement"
    ],
    "distratores": [
-    "a ordenha",
-    "o horário",
-    "a orla",
-    "o ódio"
+    "a ordenha (do leite)",
+    "o horário (da aula)",
+    "a orla (da praia)",
+    "o ódio (a raiva)"
    ],
    "distratoresEn": [
     "the milking",
@@ -74837,7 +74795,11 @@
     "demitiram ele",
     "ele foi mandado embora do trabalho",
     "botaram ele pra fora do trabalho",
-    "mandaram ele embora"
+    "mandaram ele embora",
+    "o demitiram do trabalho",
+    "o demitiram",
+    "demitiram ele do trabalho",
+    "ele foi demitido do trabalho"
    ],
    "aceitasEn": [
     "he got fired",
@@ -90263,7 +90225,7 @@
     "advérbio",
     "cotidiano"
    ],
-   "nota": "Sem acento, «aun» é até, mesmo: «aun así», mesmo assim; «ni aun», nem mesmo. Com acento, «aún» é ainda, como «todavía»: «aún no ha llegado». No Quixote, «y aun la administración de su hacienda», e até a administração dos seus bens.",
+   "nota": "«Até mesmo», junto: o «even» do inglês. Sem acento, «aun» é até, mesmo: «aun así», mesmo assim; «ni aun», nem mesmo. Com acento, «aún» é ainda, como «todavía»: «aún no ha llegado». No Quixote, «y aun la administración de su hacienda», e até a administração dos seus bens.",
    "notaEn": "Without an accent, «aun» means even: «aun así», even so; «ni aun», not even. With an accent, «aún» means still or yet, like «todavía»: «aún no ha llegado». In the Quixote, «y aun la administración de su hacienda», and even the running of his estate.",
    "sinonimosEs": [
     "incluso",
@@ -93519,48 +93481,47 @@
   },
   {
    "idioma": "es",
-   "id": "u602",
+   "id": "u677",
    "tipo": "frase",
    "requer": "p1171",
-   "es": "Es cierto.",
-   "pt": "É verdade.",
-   "en": "It's true.",
+   "es": "Lo cierto es que no tengo tiempo.",
+   "pt": "A verdade é que eu não tenho tempo.",
+   "en": "The truth is I don't have time.",
    "aceitas": [
-    "isso e verdade",
-    "e certo",
-    "e verdade sim",
-    "isso e certo"
+    "a verdade e que eu nao tenho tempo",
+    "a verdade e que nao tenho tempo",
+    "o certo e que eu nao tenho tempo",
+    "o certo e que nao tenho tempo",
+    "na verdade eu nao tenho tempo"
    ],
    "aceitasEn": [
-    "it's true",
-    "it is true",
-    "that's true",
-    "that's right"
+    "the truth is i don't have time",
+    "the truth is that i don't have time",
+    "the truth is i have no time"
    ],
    "distratores": [
-    "É mentira.",
-    "É bobagem.",
-    "É brincadeira.",
-    "É exagero."
+    "Com certeza eu ainda tenho muito tempo.",
+    "Talvez eu não tenha tempo para isso.",
+    "Por acaso eu não tenho tempo hoje.",
+    "Ainda bem que eu tenho tempo de sobra."
    ],
    "distratoresEn": [
-    "It's a lie.",
-    "It's nonsense.",
-    "It's a joke.",
-    "It's an exaggeration."
+    "Of course I still have plenty of time.",
+    "Maybe I don't have time for that.",
+    "By any chance I don't have time today.",
+    "Luckily I have time to spare."
    ],
-   "nivel": "A1",
+   "nivel": "B1",
    "tags": [
     "cotidiano"
    ],
-   "nota": "«Es cierto» e «es verdad» são a mesma coisa; aqui o card pede «cierto». «Lo cierto es que…», a verdade é que…",
-   "notaEn": "«Es cierto» and «es verdad» mean the same. «Lo cierto es que…», the truth is that…",
+   "nota": "«Lo cierto es que…» é «a verdade é que…»: abre a frase que conta o que de fato acontece. «Es cierto», é verdade.",
+   "notaEn": "«Lo cierto es que…» means «the truth is that…». «Es cierto», it's true.",
    "requerTodas": [
     "p351",
+    "p354",
+    "p424",
     "p1171"
-   ],
-   "sinonimosEs": [
-    "Es verdad."
    ]
   },
   {

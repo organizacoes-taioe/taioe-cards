@@ -3100,6 +3100,22 @@ window.Motor = (function () {
     return ordem;
   }
 
+  /* Alternativas que têm ordem natural vão nela, e não sorteadas (pedido do Gere, 09/11,
+     la-g023 e la-af019-v): os números («1ª declinação», «2ª…»), com o que não tem número
+     no fim, e, na análise, as palavras da frase na ordem em que aparecem nela. */
+  function emOrdem(lista, card) {
+    const num = x => { const m = /^(\d+)/.exec(String(x)); return m ? +m[1] : Infinity; };
+    if (lista.filter(x => num(x) < Infinity).length >= 2) {
+      return lista.slice().sort((x, y) => num(x) - num(y));
+    }
+    if (card.tipo === 'analise' && card.frase) {
+      const palavras = normalizar(card.frase).split(/[^a-z0-9]+/);
+      const lugar = x => palavras.indexOf(normalizar(x));
+      if (lista.every(x => lugar(x) >= 0)) return lista.slice().sort((x, y) => lugar(x) - lugar(y));
+    }
+    return lista;
+  }
+
   /* Alternativas da múltipla escolha: a certa mais os 4 distratores.
      «estados» é o progresso de quem responde: com ele, a frase de uso pode
      trocar distrator pronto por palavra que a pessoa já viu (ver abaixo). */
@@ -3114,12 +3130,12 @@ window.Motor = (function () {
        exemplo da vez, no conceito, e as do card, na forma (ver fonte/latim/cards_de_forma.py) */
     if (card.tipo === 'conceito' || card.tipo === 'forma') {
       const ex = card.tipo === 'conceito' ? exemploDoConceito(card, estados && estados[card.id], estados) : null;
-      return embaralhar([card.pt, ...((ex && ex.distratores) || card.distratores || []).slice(0, 4)]);
+      return emOrdem(embaralhar([card.pt, ...((ex && ex.distratores) || card.distratores || []).slice(0, 4)]), card);
     }
     /* na flexão, as outras formas do mesmo lema, escritas no card (LATIM.md §3.8) */
     if (card.tipo === 'flexao') return embaralhar([card.pt, ...(card.distratores || []).slice(0, 4)]);
     /* na compreensão e na herança (§13), as quatro escritas no card */
-    if (card.tipo === 'compreensao' || card.tipo === 'heranca' || card.tipo === 'analise') return embaralhar([card.pt, ...(card.distratores || []).slice(0, 4)]);
+    if (card.tipo === 'compreensao' || card.tipo === 'heranca' || card.tipo === 'analise') return emOrdem(embaralhar([card.pt, ...(card.distratores || []).slice(0, 4)]), card);
     const lingua = linguaDaResposta(direcao);
     const certa = card[CAMPOS[lingua].certa];
     /* Responder na língua que o baralho ensina é produzir, e aí não há quatro
