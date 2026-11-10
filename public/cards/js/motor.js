@@ -3815,13 +3815,15 @@ window.Motor = (function () {
   const BLOCO_DO_TESTE = 6, TETO_DO_TESTE = 40, CONFERE_UM_EM = 4;
   const FORCA_DO_NIVEL = 4, LIMIAR_PRESUMIR = 0.9;
 
-  /* O banco do teste: palavras com tema, sem transparente total e sem falso
-     amigo, por nível e por tema: { A1: { casa: [ids], … }, … }. */
+  /* O banco do teste: palavras com tema, sem transparente total e sem as
+     etiquetas que a dedução deixa de fora (falso amigo, expressão, gíria…;
+     até 10/11/2026 só o falso amigo, e o «Já conheço» de «la liebre» se
+     perdia), por nível e por tema: { A1: { casa: [ids], … }, … }. */
   function bancoDoTeste(cards) {
     const banco = {};
     (cards || []).forEach(c => {
       if (!c || c.tipo !== 'palavra' || NIVEIS.indexOf(c.nivel) < 0) return;
-      if (transparencia(c) === 'total' || temTag(c, ['falso-amigo'])) return;
+      if (transparencia(c) === 'total' || temTag(c, TAGS_FORA_DA_DEDUCAO)) return;
       const tema = temaDe(c);
       if (!tema) return;
       const n = banco[c.nivel] || (banco[c.nivel] = {});
