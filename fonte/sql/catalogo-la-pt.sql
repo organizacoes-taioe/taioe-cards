@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso la-pt, leva 638c07b0, 2383 cards.
+-- Catálogo do curso la-pt, leva 619f26df, 2383 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('la-pt', '638c07b0', '2383 cards')
+values ('la-pt', '619f26df', '2383 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -156,7 +156,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('la-pt', 'la-p143', 'palavra', 'A1', array['advérbio']::text[], null, '74781a3b', array['de leve', 'de longe', 'de novo', 'depressa', 'devagar']::text[]),
   ('la-pt', 'la-p144', 'palavra', 'A1', array['substantivo', '2ª declinação']::text[], null, '34d4633e', array['a vinha', 'o veneno', 'o vime', 'o vinagre', 'o vinho']::text[]),
   ('la-pt', 'la-p145', 'palavra', 'A1', array['substantivo', '3ª declinação']::text[], null, '7023b685', array['as cercas do campo', 'os cercos da cidade', 'os cirurgiões do exército', 'os círculos do céu', 'os jogos do circo']::text[]),
-  ('la-pt', 'la-p146', 'palavra', 'A1', array['interjeição']::text[], null, 'f9eb5604', array['ai (de)', 'eia (vamos)', 'olá (oi)', 'vai (anda)', 'ó (oh)']::text[]),
+  ('la-pt', 'la-p146', 'palavra', 'A1', array['interjeição']::text[], null, '82230113', array['adeus', 'ai de', 'bravo', 'olá', 'viva']::text[]),
   ('la-pt', 'la-p147', 'palavra', 'A1', array['substantivo', '3ª declinação']::text[], null, '29155e31', array['a nacionalidade', 'a neblina', 'a necessidade', 'a nitidez', 'a novidade']::text[]),
   ('la-pt', 'la-p148', 'palavra', 'A1', array['substantivo', '1ª declinação']::text[], null, '95ebb7f8', array['a forma (o molde)', 'a fortaleza (o forte)', 'a força (o vigor)', 'a fórmula (a regra)', 'a sorte (a fortuna)']::text[]),
   ('la-pt', 'la-p149', 'palavra', 'A1', array['verbo', '1ª conjugação']::text[], null, 'f232f4a1', array['ajudar', 'jejuar', 'julgar', 'juntar', 'jurar']::text[]),
