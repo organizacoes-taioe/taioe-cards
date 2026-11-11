@@ -994,6 +994,48 @@ dia depois de uns 40 dias de estudo, e a fila de vencidos cresce sem parar. Pedi
   dominado a mais por dia e, no aluno forte, de 13,2 para 12,3 cards novos por dia nos dias
   61 a 90.
 
+
+**A escada das línguas mortas (decidido em 11/11/2026).** As línguas mortas (hoje só `la-pt`; as
+próximas herdam) têm escada própria, de **7 degraus**, com o nome igual à espera de fato: 3 dias,
+4 dias, 1 semana, 2 semanas, 1 mês, 3 meses, 6 meses (`[3, 4, 7, 14, 30, 90, 180]`). As vivas não
+mudam (`[3, 5, 14, 30, 90, 180]`, nomes `3, 7, 14…`).
+- A família é do curso, separada do modo `trilhas`: `escada: 'mortas' | 'vivas'` (padrão `vivas`),
+  na config do curso em `inicio.js` e ligada por `Motor.usarEscada` (no molde de `usarModo`; o
+  build, os simuladores e os testes ligam também). O motor tem `ESCADAS = { vivas, mortas }` com
+  dias, nomes, pesos e o ponto até onde se sobe um degrau por vez; `DIAS_DOMINADO`, `DIAS_NOMINAIS`,
+  `PESO_DO_DEGRAU` e `PESO_NA_VEZ` viraram getters da escada em uso, e `Motor.degraus()` diz a
+  quantidade. Nenhum número de degrau fica escrito fora do motor (série, retenção, tabelas e o gráfico).
+- Subida nas mortas: **um degrau por acerto abaixo do índice 3** (2 semanas), mesmo para quem nunca
+  errou; do índice 3 para cima vale a regra das vivas (sem nenhum erro na vida sobe 2, senão 1). Errar
+  desce 1. Pesos: urgência `[1,2,2,1,1,1,1]`, vez do dominado `[2,2,2,1,1,1,1]`. O sorteio de metade ao
+  dobro é o mesmo. As mortas não têm nivelamento, então não há presumido.
+- Dados por curso: `revisoes` e o degrau da resposta 0–6 (vivas 0–5); `retencao` 7 (vivas 6); a série
+  guarda `[ida, volta, d0…d6]`, e o ponto da série e o `retrato` têm 10 números (vivas, 9). O cliente
+  ajusta o estado local de tamanho velho sem perder dados: ponto de série de 9 ganha 0 no fim, e a
+  retenção de 6 se remarca pelo nome antigo (3→0, 7→2, 14→3, 30→4, 90→5, 180→6; o «4 dias» nasce vazio).
+- Os cards de latim já dominados: o índice gravado (`revisoes`) e as datas marcadas (`voltaEm`) **ficam**;
+  a escada nova vale a partir da próxima resposta. O índice passa a significar a espera nova: quem estava no
+  índice 2, «2 semanas», passa a estar em «1 semana» (revê um pouco antes) e assim por diante.
+- Cores (`--escada-6`, peridoto): nas mortas a sétima cor entra entre o topázio e o quartzo rosa
+  (`CORES_DA_ESCADA` no app); as vivas não mudam de cor. A cor nova não passou pelo validador de paleta.
+- **Simulação** (`node fonte/simular-fila.js --latim --dias=150 --troca=60 [--remapear]`, mesma semente;
+  o aluno inventado estuda 120 respostas por dia por 59 dias na escada antiga e a escada muda no dia 60;
+  não há progresso real do latim fora do banco; saída inteira guardada pelo autor em `~/.cache/taioe-escada/simulacao.txt`).
+  Nos 91 dias depois da troca, aluno normal (~85% de acerto) / forte (~95%):
+
+  | | revisões de dominados por dia (média, pico) | cards novos por dia | dominados nas respostas | vencidos (média, máx.) |
+  |---|---|---|---|---|
+  | (a) escada antiga | 55,7 (73) / 58,2 (75) | 13,4 / 16,6 | 46% / 49% | 77 (95) / 86 (101) |
+  | (b) nova, índice mantido | 67,4 (88) / 72,3 (90) | 11,0 / 12,8 | 56% / 60% | 94 (119) / 107 (131) |
+  | (c) nova, índices remapeados pela espera | 64,1 (78) / 70,5 (89) | 11,5 / 13,6 | 53% / 59% | 90 (111) / 104 (125) |
+
+  O custo da escada nova é uns 20% mais revisões de dominados por dia e 18% a 23% menos cards novos
+  (14% a 18% no remapeamento); a fila de vencidos fica uns 15 a 20 acima, estável (o `ACUMULO`
+  a segura). Não há seca: nenhum dia sem card novo nas oito semanas depois da troca (o mínimo em (b) é de 3 a 4 novos em um dia). Nas 4 primeiras semanas (b) vai de 12,9 a 11,0 cards novos por dia e (a),
+  de 13,1 a 15,0; a média de revisões em (b) é maior na 3ª semana (72 a 78 por dia, contra 56 em (a)). A
+  referência com a escada nova desde o primeiro dia (d) dá 64,6 e 11,4 (normal), os mesmos de (c): o custo é
+  da escada, não da transição.
+
 ---
 
 ## 9. Os textos da Biblioteca (decidido em 20/10/2026)
