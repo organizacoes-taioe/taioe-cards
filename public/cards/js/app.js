@@ -46,6 +46,8 @@ window.TaioeCardsApp = function (ctx) {
      textos antes de começar. Vem antes de usarTransparencias, que depende dele. */
   const TRILHAS = ctx.modo === 'trilhas';
   Motor.usarModo(TRILHAS ? 'trilhas' : 'livre');
+  /* A escada dos dominados é da família do curso (vivas ou mortas), não do modo (Motor.ESCADAS). */
+  Motor.usarEscada(ctx.escada || 'vivas');
   const IDA = Motor.direcoes().ida;
   const ROTULO_IDA = L + ' → ' + A, ROTULO_VOLTA = A + ' → ' + L;
   let Sinc = null;   // a sincronização, criada no arranque
@@ -225,7 +227,7 @@ window.TaioeCardsApp = function (ctx) {
       filaEsPt: [],                            // você reconhece a língua (ida)
       filaPtEs: [],                            // você produz a língua (volta)
       dominados: [],                           // vencido nas duas, esperando data
-      serie: [],                               // [respostas, es→pt, pt→es, 6 degraus]
+      serie: [],                               // [respostas, ida, volta, os degraus da escada do curso]
       cards: {},
       contestacoes: [],
       comentarios: [],
@@ -392,7 +394,11 @@ window.TaioeCardsApp = function (ctx) {
        e bolo não se divide por degrau depois. Série nesse formato sai inteira,
        e a semente nova — que já vem dividida, e cobre até a última
        sincronização — entra no lugar. */
-    if (p.serie.some(pt => !Array.isArray(pt) || pt.length !== 9)) p.serie = [];
+    /* O ponto tem 3 números e os degraus do curso (9 nas vivas, 10 nas mortas). Ponto de uma
+       degrau a menos (latim, até a escada nova de 11/11/2026) ganha 0 no fim: o índice é o do
+       estado do card, que não mudou. */
+    p.serie = p.serie.map(pt => TaioeSincronia.ajustarPonto(pt));
+    if (p.serie.some(pt => !pt)) p.serie = [];
     p.serie = TaioeSincronia.limparSerie(p.serie);   // em ordem e sem foto velha (sincronia.js)
     const semente = (window.HISTORICO_RAW && window.HISTORICO_RAW.serie) || [];
     if (!p.serie.length && semente.length) {
@@ -416,8 +422,16 @@ window.TaioeCardsApp = function (ctx) {
         if (h && h.em && h.em > desde) Motor.anotarDiario(p.diario, h, h.em);
       }));
     }
+    if (Array.isArray(p.retencao) && p.retencao.length === Motor.degraus() - 1 && Motor.escada() === 'mortas') {
+      /* retenção do latim de antes da escada de sete degraus: remarca pelo nome antigo (3→0,
+         7→2, 14→3, 30→4, 90→5, 180→6), como o servidor fez; o degrau «4 dias» nasce vazio */
+      const velha = p.retencao;
+      p.retencao = Motor.DIAS_DOMINADO.map(() => [0, 0]);
+      velha.forEach((g, i) => { p.retencao[Motor.degrauDoNome(Motor.ESCADAS.vivas.nominais[i])] = g.slice(); });
+    }
     if (!Array.isArray(p.retencao) || p.retencao.length !== Motor.DIAS_DOMINADO.length) {
-      p.retencao = continua && raw.retencao ? raw.retencao.map(g => g.slice())
+      p.retencao = continua && raw.retencao && raw.retencao.length === Motor.DIAS_DOMINADO.length
+        ? raw.retencao.map(g => g.slice())
         : Motor.DIAS_DOMINADO.map(() => [0, 0]);
     }
     /* ── a estreia de cada card ──
@@ -2277,7 +2291,7 @@ window.TaioeCardsApp = function (ctx) {
     let est = progresso.cards[id] || (presumido ? Motor.estadoDoPresumido(id, progresso.cards)
       : (progresso.cards[id] = Motor.estadoInicialDo(PORID[id] || { id: id })));
     const etapaAntes = est.etapa;
-    const degrauAntes = Math.min(est.revisoes || 0, 5);
+    const degrauAntes = Math.min(est.revisoes || 0, Motor.degraus() - 1);
     /* a resposta em que o card estreou: é dela que sai a ordem das estreias
        (a vez do texto, das frases livres; ver ordenarIneditos). O presumido
        não é card novo, e não conta. */
@@ -2321,10 +2335,10 @@ window.TaioeCardsApp = function (ctx) {
        dominados divididos pelos seis degraus. Nove números; mil respostas
        somam uns 25 KB no progresso.json, que já tem 500. */
     const d = Motor.contarDirecoes(progresso.cards, progresso.arquivados);
-    const degraus = [0, 0, 0, 0, 0, 0];
+    const degraus = new Array(Motor.degraus()).fill(0);
     progresso.dominados.forEach(id => {
       const e = progresso.cards[id];
-      if (e) degraus[Math.min(e.revisoes || 0, 5)]++;
+      if (e) degraus[Math.min(e.revisoes || 0, degraus.length - 1)]++;
     });
     progresso.serie.push([progresso.totais.respostas, d.esPt, d.ptEs].concat(degraus));
 
@@ -2619,16 +2633,18 @@ window.TaioeCardsApp = function (ctx) {
      juntava os degraus num bloco só; o pedido foi tratá-los como etapas
      separadas, com o último — seis meses, o card que ficou — em branco. A
      claridade sobe a cada degrau, então a ordem continua visível. */
+  const CORES_DA_ESCADA = { vivas: [0, 1, 2, 3, 4, 5], mortas: [0, 1, 2, 3, 6, 4, 5] };
   const SERIES = [
     { chave: 0, nome: ROTULO_IDA,   cor: 'var(--serie-espt)' },
     /* a volta, que o modo trilhas não tem */
     ...(TRILHAS ? [] : [{ chave: 1, nome: ROTULO_VOLTA, cor: 'var(--serie-ptes)' }]),
-    { chave: 2, nome: rotuloEspera(3),   cor: 'var(--escada-0)', degrau: true },
-    { chave: 3, nome: rotuloEspera(7),   cor: 'var(--escada-1)', degrau: true },
-    { chave: 4, nome: rotuloEspera(14),  cor: 'var(--escada-2)', degrau: true },
-    { chave: 5, nome: rotuloEspera(30),  cor: 'var(--escada-3)', degrau: true },
-    { chave: 6, nome: rotuloEspera(90),  cor: 'var(--escada-4)', degrau: true },
-    { chave: 7, nome: rotuloEspera(180), cor: 'var(--escada-5)', degrau: true }
+    /* um por degrau da escada do curso, com o nome da espera; nas mortas, a sétima cor
+       (--escada-6, peridoto) entra entre o topázio e o quartzo rosa, para a claridade
+       continuar subindo */
+    ...Motor.DIAS_NOMINAIS.map((dias, i) => ({
+      chave: 2 + i, nome: rotuloEspera(dias),
+      cor: 'var(--escada-' + CORES_DA_ESCADA[Motor.escada()][i] + ')', degrau: true
+    }))
   ];
 
   function graficoEtapas() {

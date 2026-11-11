@@ -9,7 +9,7 @@
    O app entrega os ganchos em TaioeSincronia.criar(opcoes):
      progresso()        o objeto progresso, vivo
      aoMudar(motivo)    o servidor mexeu no progresso: reconciliar filas, salvar, redesenhar
-     retrato()          o ponto da série agora: [respostas, ida, volta, d0..d5], ou null
+     retrato()          o ponto da série agora: [respostas, ida, volta, d0…] (um d por degrau da escada do curso), ou null
      extras()           { arquivados, emVista, textos: { emVista, lidos } }, e, quando existem,
                         nivelamento, reativados e dicasVistas (o começo do app, PLANO.md, 7)
      aplicarExtras(x)   adota os extras mesclados pelo servidor
@@ -98,7 +98,7 @@
   }
 
   /* ── a série do gráfico «O caminho até aqui» ──
-     [respostas, ida, volta, d0..d5]. Ela anda sempre para a frente no número de respostas: fica
+     [respostas, ida, volta, d0…]. Ela anda sempre para a frente no número de respostas: fica
      a maior sequência crescente (até 09/11/2026 a carga podia pôr o ponto do outro aparelho fora
      de ordem). E sai a foto velha: o ponto que vem depois de um salto de mais de 20 respostas
      quase sem mudança nenhuma, mais os seguidos dele de uma em uma resposta, até a contagem dar
@@ -107,11 +107,22 @@
      gráfico, um trecho parado e um degrau (o Gere, 09/11/2026). */
   function mudanca(a, b) {
     var s = 0;
-    for (var k = 1; k < 9; k++) s += Math.abs(a[k] - b[k]);
+    for (var k = 1; k < a.length; k++) s += Math.abs(a[k] - b[k]);
     return s;
   }
+  /* O tamanho do ponto é do curso: 3 números e um por degrau da escada (Motor.degraus): 9 nas
+     línguas vivas, 10 nas mortas. Nas mortas, o ponto de 9 (de antes da escada de sete degraus,
+     11/11/2026) ganha 0 no fim; os índices são os mesmos do estado do card. Devolve o ponto
+     certo (cópia, se completou) ou null. */
+  function ajustarPonto(pt) {
+    var n = 3 + Motor.degraus();
+    if (!Array.isArray(pt)) return null;
+    if (pt.length === n) return pt;
+    if (Motor.escada() === 'mortas' && pt.length === n - 1) return pt.concat([0]);
+    return null;
+  }
   function limparSerie(serie) {
-    serie = (serie || []).filter(function (pt) { return Array.isArray(pt) && pt.length === 9; });
+    serie = (serie || []).map(ajustarPonto).filter(function (pt) { return pt; });
     var fins = [], antes = new Array(serie.length);   // fins[k]: o ponto que fecha a sequência de k+1
     serie.forEach(function (pt, i) {
       var a = 0, b = fins.length;
@@ -246,7 +257,7 @@
         });
       var lote = { curso: curso, base: fila.base, respostas: fila.eventos.slice(0, POR_LOTE), estados: estados };
       var r = o.retrato();
-      if (r && r.length === 9) lote.retrato = r;
+      if (r && r.length === 3 + Motor.degraus()) lote.retrato = r;
       while (limite.bytes && bytes({ lote: lote }) > limite.bytes &&
              (lote.respostas.length > 1 || lote.estados.length > 1)) {
         if (lote.estados.length > 1) lote.estados = lote.estados.slice(0, Math.floor(lote.estados.length / 2));
@@ -586,7 +597,7 @@
         p.totais.respostas = c.relogio;
         p.totais.acertos = c.acertos;
         fila.base = c.relogio;
-        if (Array.isArray(c.retencao)) p.retencao = c.retencao.map(function (x) { return x.slice(); });
+        if (Array.isArray(c.retencao) && c.retencao.length === Motor.degraus()) p.retencao = c.retencao.map(function (x) { return x.slice(); });
       } else {
         // com fila pendente, a base e o relógio NÃO mudam (correção 11); o diário do servidor
         // ganha por cima os eventos que ainda não subiram
@@ -599,7 +610,7 @@
       // a série: a do servidor; se ele ainda não a tiver, o retrato de cada dia, como antes
       if (!(await juntarSerie()) && semFila) {
         var retratos = Object.keys(c.diario || {}).map(function (d) { return c.diario[d].retrato; })
-          .filter(function (x) { return Array.isArray(x) && x.length === 9; })
+          .map(ajustarPonto).filter(function (x) { return x; })
           .sort(function (a, b) { return a[0] - b[0]; });
         p.serie = p.serie || [];
         var ultimo = p.serie.length ? p.serie[p.serie.length - 1][0] : -1;
@@ -704,5 +715,5 @@
   }
 
   window.TaioeSincronia = { criar: criar, mesclarExtras: mesclarExtras, gestoAtivo: gestoAtivo, dataDoGesto: dataDoGesto,
-                           limparSerie: limparSerie };
+                           limparSerie: limparSerie, ajustarPonto: ajustarPonto };
 })();

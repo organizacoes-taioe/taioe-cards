@@ -452,6 +452,7 @@ th.vert span{
   --degrau-3:#5ecfa4;
   --degrau-4:#8ce0bf;
   --degrau-5:#b9f0d8;
+  --degrau-6:#d9f8e8;   /* um sétimo tom, para uma rampa de sete níveis */
   /* Os seis degraus no caminho até aqui, cada um uma etapa com cor própria
      (pedido de 26/09): pedras que clareiam até o diamante — ametista,
      turquesa, esmeralda, topázio (o âmbar da casa), quartzo rosa e branco.
@@ -465,6 +466,10 @@ th.vert span{
   --escada-3:#e6af28;
   --escada-4:#f8b9da;
   --escada-5:#ffffff;
+  /* a sétima cor, só das línguas mortas (7 degraus, desde 11/11/2026): peridoto, entre o
+     topázio e o quartzo rosa, para a claridade continuar subindo (CORES_DA_ESCADA no app.js).
+     Não passou pelo validador de paleta: conferir a olho no escuro e em daltonismo. */
+  --escada-6:#b4d94c;
 }
 svg.grafico-etapas{display:block;width:100%;height:auto;margin:4px 0 14px}
 svg.grafico-etapas .malha{stroke:var(--borda);stroke-width:1}
