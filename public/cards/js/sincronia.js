@@ -131,6 +131,28 @@
       }
       fica.push(ordem[j]);
     }
+    return semDesvio(fica);
+  }
+  /* Cada resposta muda no máximo duas contagens em um (um card sai de uma etapa e entra em
+     outra): entre dois pontos a mudança não passa de duas vezes as respostas que os separam,
+     mais uma folga. O ponto que passa disso e que os pontos seguintes desmentem (algum dos
+     próximos doze volta a combinar com o anterior) é foto velha que ficou no meio dos pontos do
+     outro aparelho: sai. Se os seguintes confirmam o salto, ele é de verdade (o nivelamento, a
+     flexão que adormece) e fica. Era a reentrância perto da resposta 7.800 (o Gere, 11/11/2026). */
+  function combina(a, b) { return mudanca(a, b) <= 2 * (b[0] - a[0]) + 4; }
+  function semDesvio(serie) {
+    var fica = serie.length ? [serie[0]] : [];
+    for (var i = 1; i < serie.length; i++) {
+      var ant = fica[fica.length - 1];
+      if (!combina(ant, serie[i])) {
+        var desmentido = false;
+        for (var j = i + 1; j < serie.length && j <= i + 12; j++) {
+          if (combina(ant, serie[j])) { desmentido = true; break; }
+        }
+        if (desmentido) continue;
+      }
+      fica.push(serie[i]);
+    }
     return fica;
   }
   // um ponto por vaga de «passo» respostas (o último de cada), com no máximo «teto» pontos
