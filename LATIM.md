@@ -404,7 +404,7 @@ para tudo. Se ficar excessivo, depois a gente vai ajustando.»
   múltipla escolha mostra; as outras (`outras`) valem na escrita e aparecem na nota.
 - **A régua da escrita** (`conferirFlexao` no motor): o artigo e a preposição são resposta (*eum*
   aceita «o»; «a ele» é *ei*); só caem o acento, a maiúscula, a pontuação e o parêntese. O que
-  fica perto da certa é «deu quase», pela régua geral (desde 12/11: um erro, ou até 20% das letras;
+  fica perto da certa é «deu quase», pela régua geral (desde 12/11: um erro, ou até 20% das letras, 10% se tudo o que foi escrito são palavras de verdade;
   não há mais erro seco para as erradas nem para a leitura de outra flexão do lema).
 - **Os dados.** `fonte/latim/flexoes.py`: `lista`; `faltam --saida X.json` (as formas sem card, com
   as frases, para a leva); `gravar [leva.json …]` junta as tabelas (no próprio script) e as levas
@@ -440,7 +440,7 @@ para tudo. Se ficar excessivo, depois a gente vai ajustando.»
 4. **«Deu quase» de frase**: as mesmas palavras em outra ordem (`parecidoDeFrase`). Quem julga
    continua sendo a pessoa (nenhuma semelhança vira acerto sozinha, regra do motor). Desde 12/11
    (pedido do Gere) saíram a «palavra diferente» e o erro seco do distrator escrito igual: vale a
-   régua geral do «deu quase» (um erro, ou até 20% das letras; README, «A régua do deu quase»).
+   régua geral do «deu quase» (um erro, ou até 20% das letras, 10% se tudo o que foi escrito são palavras de verdade; README, «A régua do deu quase»).
 5. **O retorno**: os «quase» julgados como acerto e as contestações vão para a curadoria e daí para
    o gabarito, pela rotina de retorno.
 6. **Teto**: trecho de até 10 palavras latinas (12 quando é o que fecha a frase, §3.3); resposta de até 120 caracteres (o teto do manual).

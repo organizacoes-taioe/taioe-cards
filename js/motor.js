@@ -1230,8 +1230,57 @@ window.Motor = (function () {
         resposta certa (2 erros a partir de 10 letras, 3 a partir de 15).
 
      Não há piso de tamanho: também se erra a tecla em palavra pequena.
-     «a» é o que foi escrito, «b» a resposta certa, os dois já normalizados. */
+     «a» é o que foi escrito, «b» a resposta certa, os dois já normalizados.
+
+     A regra 2 aperta para 10% quando tudo o que foi escrito são palavras de
+     verdade (pedido do Gere, 12/11/2026): a tecla errada quase nunca dá uma
+     palavra que existe («borbolwta»), e quem escreveu «eu era o bom pastor»
+     por «eu sou o bom pastor» não escorregou, trocou a palavra. «Palavra de
+     verdade» é a que aparece em algum card do baralho, na língua da resposta
+     (respostas, aceitas e alternativas erradas): não há dicionário no app. A
+     que não está em card nenhum fica com os 20%, o lado generoso. A regra 1
+     não muda: «sal» por «sol» é palavra de verdade e ainda pode ser a mão. */
   const PARTE_DE_ERROS = 0.20;
+  const PARTE_COM_PALAVRAS_REAIS = 0.10;
+
+  /* o vocabulário do baralho, por língua, montado na primeira vez em que é preciso */
+  let CARDS_DO_VOCABULARIO = [];
+  let VOCABULARIO = Object.create(null);
+  const semSinais = t => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  function usarVocabulario(cards) {
+    CARDS_DO_VOCABULARIO = cards || [];
+    VOCABULARIO = Object.create(null);
+  }
+  function vocabulario(lingua) {
+    if (VOCABULARIO[lingua]) return VOCABULARIO[lingua];
+    const v = VOCABULARIO[lingua] = new Set();
+    const campo = CAMPOS[lingua];
+    if (!campo) return v;
+    const junta = t => semSinais(t).split(/[^a-z0-9]+/).forEach(w => { if (w) v.add(w); });
+    CARDS_DO_VOCABULARIO.forEach(c => {
+      if (!c) return;
+      let textos = [c[campo.certa]].concat(c[campo.aceitas] || [], c[campo.distratores] || [],
+        Object.keys(c[campo.formas] || {}), Object.keys(c[campo.regionais] || {}));
+      if (lingua === 'pt') textos = textos.concat(c.outras || []);
+      textos.forEach(t => {
+        if (typeof t !== 'string' || !t) return;
+        /* como está escrita e como o funil a entrega (sem plural, com e sem o sujeito) */
+        junta(t);
+        junta(normalizar(t, lingua));
+        junta(normalizar(t, lingua, { cru: true }));
+        junta(normalizar(t, lingua, { plural: false }));
+        if (lingua === 'pt') junta(normalizarFlexao(t));
+      });
+    });
+    return v;
+  }
+  /* tudo o que foi escrito e não está na resposta certa é palavra do baralho? */
+  function soPalavrasReais(a, b, lingua) {
+    const v = vocabulario(lingua);
+    if (!v.size) return false;
+    const certas = new Set(semSinais(b).split(' '));
+    return semSinais(a).split(' ').every(w => !w || certas.has(w) || v.has(w));
+  }
 
   function errosEntre(a, b) {
     let d = distancia(a, b);
@@ -1255,7 +1304,10 @@ window.Motor = (function () {
     const semAcentos = t => (LINGUAS[lingua] && LINGUAS[lingua].guardaAcento ? semAcentoMantendoEne(t) : t);
     const certa = semAcentos(b);
     const d = errosEntre(semAcentos(a), certa);
-    return d <= 1 || d <= PARTE_DE_ERROS * certa.replace(/ /g, '').length;
+    if (d <= 1) return true;
+    const letras = certa.replace(/ /g, '').length;
+    if (d > PARTE_DE_ERROS * letras) return false;
+    return d <= PARTE_COM_PALAVRAS_REAIS * letras || !soPalavrasReais(a, b, lingua);
   }
 
   /* ── o «deu quase» da frase traduzida (cards/LATIM.md §4) ──
@@ -3601,6 +3653,7 @@ window.Motor = (function () {
   let LEITURA = Object.create(null);      // id → true: card de leitura (PLANO.md, 9.2)
 
   function usarTransparencias(cards) {
+    usarVocabulario(cards);
     TRANSP = Object.create(null);
     POS = Object.create(null);
     TIPO = Object.create(null);
@@ -4477,7 +4530,7 @@ window.Motor = (function () {
     pergunta, resposta, normalizarEs, normalizarEn, formaReconhecida,
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
-    usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecido, parecidoDeFrase, exemploDoConceito,
+    usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecido, parecidoDeFrase, usarVocabulario, exemploDoConceito,
     perguntaDaForma, ehForma, ehContraste, ehConceito, ehCompreensao, ehCompreensaoDoVerso, ehHeranca, ehAnalise, umaVezSo, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     ACERTOS_QUE_SOLTAM,
     DIA_DAS_TERMINACOES, ativoDaTerminacao, flexaoPuxada, adormecido, quemConta, exemploDaTerminacao,

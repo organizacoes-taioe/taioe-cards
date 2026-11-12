@@ -1,7 +1,8 @@
 /* Confere a régua do «deu quase» (Motor.conferir e Motor.parecido), a de 12/11/2026:
      1. um erro só: pergunta (letra trocada, a mais, a menos, duas letras vizinhas invertidas ou
         duas palavras vizinhas invertidas);
-     2. mais de um: pergunta se os erros não passam de 20% das letras da resposta certa.
+     2. mais de um: pergunta se os erros não passam de 20% das letras da resposta certa; ou de
+        10%, quando tudo o que foi escrito são palavras de verdade (as dos cards do baralho).
    Sem piso de tamanho e sem erro seco por tipo de erro (gênero, forma do verbo, ñ).
 
    uso: node fonte/testar-quase.js */
@@ -79,6 +80,22 @@ ok(volta(hablan, 'ellos habla mucho') === 'quase', 'outra pessoa do verbo, uma l
 /* ── o latim: as mesmas palavras em outra ordem ── */
 ok(M.parecidoDeFrase('a b c', 'c b a'), 'as mesmas palavras em qualquer ordem');
 ok(!M.parecidoDeFrase('a b c', 'a b d'), 'uma palavra trocada não vale mais');
+
+/* ── regra 2 com palavras de verdade: 10% ──
+   Com o baralho carregado, quando tudo o que foi escrito é palavra de algum card, o limite cai
+   de 20% para 10%: a tecla errada quase nunca dá palavra que existe. */
+const pastor = frase('Ego sum pastor bonus.', 'Eu sou o bom pastor.');                 // «sou bom pastor»: 12 letras
+const pastorLongo = frase('x', 'Eu sou o bom pastor de todas as ovelhas do campo.');
+const era = palavra('erat', 'era');
+M.usarVocabulario([pastor, pastorLongo, era, mariposa, desayuno]);
+ok(ida(pastor, 'eu era o bom pastor') === 'errado', 'palavra de verdade trocada, 2 erros em 12 letras (17%): erro');
+ok(ida(pastor, 'eu sqi o bom pastor') === 'quase', 'os mesmos 2 erros numa palavra que não existe: pergunta');
+ok(ida(pastor, 'eu sou o bom pastos') === 'quase', 'um erro só: pergunta, exista a palavra ou não');
+ok(ida(pastor, 'eu sou o bom era') === 'errado', 'longe demais continua erro');
+ok(ida(pastorLongo, 'eu era o bom pastor de todas as ovelhas do campo') === 'quase', 'palavra de verdade trocada, 3 erros em 35 letras (9%): pergunta');
+ok(ida(desayuno, 'cafw da manhq') === 'quase', 'com o baralho carregado, o erro de dedo segue com os 20%');
+M.usarVocabulario([]);
+ok(ida(pastor, 'eu era o bom pastor') === 'quase', 'sem baralho não há como saber: valem os 20%');
 
 console.log(falhas ? falhas + ' de ' + feitos + ' falharam' : 'testar-quase: ' + feitos + ' conferências, tudo certo');
 process.exit(falhas ? 1 : 0);
