@@ -40,3 +40,5 @@ jobs:
         run: node fonte/testar-latim.js
       - name: "A pergunta lida como espanhol: o aviso dispara, também com artigo"
         run: node fonte/testar-leitura.js
+      - name: "O «deu quase»: um erro, ou até 20% das letras"
+        run: node fonte/testar-quase.js
