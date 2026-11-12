@@ -1117,6 +1117,17 @@ window.Motor = (function () {
     if (formasAceitas(card, direcao).some(f => parecido(cru, normalizar(f, lingua, { cru: true }), lingua))) {
       return 'quase';
     }
+    /* E o erro que cai no artigo da frente ou numa letra que a língua não tem: «lsa tijeras»
+       deixava de ser artigo e sobrava inteiro contra «tijera»; «aõ» por «año» perdia o «õ»
+       como se fosse pontuação (contestações do p832 e do u167, 12/11/2026). Compara-se
+       também letra por letra, sem funil nenhum. */
+    const nu = t => {
+      const x = String(t || '').toLowerCase().replace(/æ/g, 'ae').replace(/œ/g, 'oe').normalize('NFC');
+      return (LINGUAS[lingua] && LINGUAS[lingua].guardaAcento ? semAcentoMantendoEne(x)
+        : x.normalize('NFD').replace(/[\u0300-\u036f]/g, '')).replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+    };
+    const escrito = nu(texto);
+    if (escrito && formasAceitas(card, direcao).some(f => parecido(escrito, nu(f), lingua))) return 'quase';
     if (soIda() && card.tipo === 'frase' && aceitas.some(alvo => parecidoDeFrase(dado, alvo))) return 'quase';
     return 'errado';
   }

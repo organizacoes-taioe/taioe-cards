@@ -1576,8 +1576,10 @@ window.TaioeCardsApp = function (ctx) {
     if (partes.length && partes.every(p => /^(singular|plural):\s*\S/.test(p))) {
       return '<span class="casos">' + partes.map(p => {
         const m = p.match(/^(singular|plural):\s*(.*)$/);
-        return '<span class="casos-num">' + (m[1] === 'singular' ? 'Singular' : 'Plural') + ':</span>' +
-          '<span class="casos-nome">' + escapar(maiusculaCasos(m[2])) + '</span>';
+        /* uma cor para o singular e outra para o plural (pedido do Gere, 11/11/2026) */
+        const cor = m[1] === 'singular' ? ' casos-sing' : ' casos-plur';
+        return '<span class="casos-num' + cor + '">' + (m[1] === 'singular' ? 'Singular' : 'Plural') + ':</span>' +
+          '<span class="casos-nome' + cor + '">' + escapar(maiusculaCasos(m[2])) + '</span>';
       }).join('') + '</span>';
     }
     return escapar(maiusculaCasos(texto));

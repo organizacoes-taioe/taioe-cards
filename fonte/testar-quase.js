@@ -81,6 +81,14 @@ ok(volta(hablan, 'ellos habla mucho') === 'quase', 'outra pessoa do verbo, uma l
 ok(M.parecidoDeFrase('a b c', 'c b a'), 'as mesmas palavras em qualquer ordem');
 ok(!M.parecidoDeFrase('a b c', 'a b d'), 'uma palavra trocada não vale mais');
 
+/* ── o erro no artigo e a letra que a língua não tem ── */
+const tijeras = palavra('las tijeras', 'a tesoura');
+ok(volta(tijeras, 'lsa tijeras') === 'quase', 'o artigo com as letras invertidas: um erro');
+ok(volta(tijeras, 'las tijeras') === 'certo' && volta(tijeras, 'tijeras') === 'certo', 'com e sem o artigo: certo');
+const paro = frase('Lleva un año en el paro.', 'Está desempregado há um ano.');
+ok(volta(paro, 'lleva un aõ en el paro') === 'quase', '«aõ» por «año»: um erro');
+ok(volta(paro, 'lleva un siglo en el paro') === 'errado', 'outra palavra, longe da certa, continua erro');
+
 /* ── regra 2 com palavras de verdade: 10% ──
    Com o baralho carregado, quando tudo o que foi escrito é palavra de algum card, o limite cai
    de 20% para 10%: a tecla errada quase nunca dá palavra que existe. */
