@@ -48,6 +48,10 @@ window.TaioeCardsApp = function (ctx) {
   Motor.usarModo(TRILHAS ? 'trilhas' : 'livre');
   /* A escada dos dominados é da família do curso (vivas ou mortas), não do modo (Motor.ESCADAS). */
   Motor.usarEscada(ctx.escada || 'vivas');
+  /* O degrau de «1 semana» espera de fato 5 dias desde 01/11/2026. No espanhol o nome antigo
+     fica, a pedido do Gere (12/11/2026); nos outros cursos o rótulo diz a espera de verdade
+     (nas línguas mortas a escada já tem o nome igual à espera). Depois do usarEscada. */
+  const DIAS_DO_ROTULO = L === 'es' ? Motor.DIAS_NOMINAIS : Motor.DIAS_DOMINADO;
   const IDA = Motor.direcoes().ida;
   const ROTULO_IDA = L + ' → ' + A, ROTULO_VOLTA = A + ' → ' + L;
   let Sinc = null;   // a sincronização, criada no arranque
@@ -1590,7 +1594,9 @@ window.TaioeCardsApp = function (ctx) {
     if (partes.length && partes.every(p => /^(singular|plural):\s*\S/.test(p))) {
       return '<span class="casos">' + partes.map(p => {
         const m = p.match(/^(singular|plural):\s*(.*)$/);
-        return '<span class="casos-num">' + (m[1] === 'singular' ? 'Singular' : 'Plural') + ':</span>' +
+        /* «Singular» e «Plural» em cores diferentes; os casos ficam na cor de sempre (pedido do Gere, 11 e 12/11/2026) */
+        const cor = m[1] === 'singular' ? ' casos-sing' : ' casos-plur';
+        return '<span class="casos-num' + cor + '">' + (m[1] === 'singular' ? 'Singular' : 'Plural') + ':</span>' +
           '<span class="casos-nome">' + escapar(maiusculaCasos(m[2])) + '</span>';
       }).join('') + '</span>';
     }
@@ -1837,17 +1843,20 @@ window.TaioeCardsApp = function (ctx) {
 
     /* Escreveu outra conjugação: mostra qual foi, para o erro ensinar algo. */
     const escrevendo = r.modo === 'escrita' && !r.desistiu;
-    const forma = escrevendo
+    /* O erro só ganha nome quando é erro: no «deu quase» a pessoa ainda vai julgar, e o que
+       aparece é a diferença pintada (desde 12/11/2026 esses erros também passam pelo quase). */
+    const comNome = escrevendo && !r.quase && !r.acertou;
+    const forma = comNome
       ? Motor.formaReconhecida(cardAtual, r.resposta, r.direcao) : null;
     /* Só o artigo saiu errado. Dizer isso ensina mais do que "não foi dessa
        vez": o que faltou tem nome, e é o gênero. */
-    const genero = escrevendo && !forma
+    const genero = comNome && !forma
       ? Motor.erroDeGenero(cardAtual, r.resposta, r.direcao) : null;
     /* E o «ñ», que é letra e não «n» com enfeite. */
-    const acento = escrevendo && !forma && !genero
+    const acento = comNome && !forma && !genero
       ? Motor.erroDeEne(cardAtual, r.resposta, r.direcao) : null;
     /* A terminação de outra pessoa ou outro tempo: «suele» por «suelo». */
-    const flexao = escrevendo && !forma && !genero && !acento
+    const flexao = comNome && !forma && !genero && !acento
       ? Motor.erroDeFlexao(cardAtual, r.resposta, r.direcao) : null;
 
     /* Acertou, mas sem o acento. Não custa ponto — custa uma linha, que diz
@@ -2324,7 +2333,7 @@ window.TaioeCardsApp = function (ctx) {
     }
     const virouDominado = est.etapa === 'dominado' && etapaAntes !== 'dominado';
     mostrarConquista(virouDominado,
-      etapaAntes === 'dominado' && r.acertou ? Motor.DIAS_NOMINAIS[est.revisoes] : null);
+      etapaAntes === 'dominado' && r.acertou ? DIAS_DO_ROTULO[est.revisoes] : null);
 
     const guardado = guardarNaFila(id, est, r);
 
@@ -2641,7 +2650,7 @@ window.TaioeCardsApp = function (ctx) {
     /* um por degrau da escada do curso, com o nome da espera; nas mortas, a sétima cor
        (--escada-6, peridoto) entra entre o topázio e o quartzo rosa, para a claridade
        continuar subindo */
-    ...Motor.DIAS_NOMINAIS.map((dias, i) => ({
+    ...DIAS_DO_ROTULO.map((dias, i) => ({
       chave: 2 + i, nome: rotuloEspera(dias),
       cor: 'var(--escada-' + CORES_DA_ESCADA[Motor.escada()][i] + ')', degrau: true
     }))
@@ -2812,7 +2821,7 @@ window.TaioeCardsApp = function (ctx) {
 
   function tabelaDominados() {
     const agora = new Date().toISOString();
-    const degraus = Motor.DIAS_NOMINAIS.map(dias => (
+    const degraus = DIAS_DO_ROTULO.map(dias => (
       { dias: dias, n: 0, vencidos: 0, proxima: null }));
     (progresso.dominados || []).forEach(id => {
       const e = progresso.cards[id];
@@ -3055,7 +3064,7 @@ window.TaioeCardsApp = function (ctx) {
   function tabelaMemoria() {
     const ret = progresso.retencao || [];
     if (!ret.some(g => g && g[0])) return '';
-    const linhas = Motor.DIAS_NOMINAIS.map((dias, i) => {
+    const linhas = DIAS_DO_ROTULO.map((dias, i) => {
       const g = ret[i] || [0, 0];
       const acerto = g[0] >= 5 ? pctDe(g[1], g[0]) : g[0] ? t('painel.poucosDados') : '—';
       return '<tr' + (g[0] < 5 ? ' class="vago"' : '') + '><td>' + rotuloEspera(dias) + '</td>' +

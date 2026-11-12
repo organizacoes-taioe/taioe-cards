@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva 5651fdba, 2335 cards.
+-- Catálogo do curso es-pt, leva e6258592, 2335 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', '5651fdba', '2335 cards')
+values ('es-pt', 'e6258592', '2335 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -520,7 +520,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u111', 'frase', 'A2', array['falso-amigo', 'comida']::text[], 'p108', 'e100e564', array['Pedimos uma porção de batata.', 'Pedimos uma porção de lula.', 'Pedimos uma porção de presunto.', 'Pedimos uma porção de queijo.', 'Pedimos uma porção de suspeito.']::text[]),
   ('es-pt', 'u112', 'frase', 'A2', array['falso-amigo', 'verbo']::text[], 'p109', '9c51f248', array['Acordei às seis.', 'Dormi às seis.', 'Me lembrei às seis.', 'Saí às seis.', 'Tomei banho às seis.']::text[]),
   ('es-pt', 'u113', 'frase', 'A2', array['falso-amigo']::text[], 'p110', 'f6a1362c', array['A última cena do filme me deu sono.', 'A última cena do filme me fez chorar.', 'A última música do show me fez dançar.', 'O último capítulo do livro me fez rir.', 'O último jantar da viagem me fez chorar.']::text[]),
-  ('es-pt', 'u114', 'frase', 'B1', array['falso-amigo']::text[], 'p111', 'fea87a09', array['Na escola me deram um apelido.', 'Na escola me deram um armário.', 'Na escola me deram uma bronca.', 'Na escola me deram uma medalha.', 'Na escola trocaram meu sobrenome.']::text[]),
+  ('es-pt', 'u114', 'frase', 'B1', array['falso-amigo']::text[], 'p111', '924115aa', array['Na escola me deram um apelido.', 'Na escola me deram um armário.', 'Na escola me deram uma bronca.', 'Na escola me deram uma medalha.', 'Na escola trocaram meu sobrenome.']::text[]),
   ('es-pt', 'u115', 'frase', 'A2', array['falso-amigo']::text[], 'p112', 'c5884c1d', array['A peça foi um escândalo absoluto.', 'A peça foi um fracasso absoluto.', 'A peça foi um mistério absoluto.', 'A peça foi um sucesso absoluto.', 'A peça foi uma saída absoluta.']::text[]),
   ('es-pt', 'u116', 'frase', 'B1', array['falso-amigo']::text[], 'p113', '11c06b23', array['O jornal cobriu a eleição.', 'O jornal cobriu o acontecimento.', 'O jornal cobriu o lançamento.', 'O jornal cobriu o prêmio.', 'O jornal cobriu o sucesso.']::text[]),
   ('es-pt', 'u117', 'frase', 'A2', array['falso-amigo', 'casa']::text[], 'p115', '58f4da03', array['Brindamos com um copo de suco.', 'Brindamos com um copo de vinho.', 'Brindamos com uma garrafa de vinho.', 'Brindamos com uma taça de vinho.', 'Brindamos com uma xícara de café.']::text[]),
@@ -834,7 +834,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p296', 'palavra', 'A2', array['comida', 'Espanha', 'substantivo']::text[], null, '87fb2719', array['a torrada', 'o biscoito', 'o pãozinho', 'o salgadinho', 'o sanduíche']::text[]),
   ('es-pt', 'u292', 'frase', 'A2', array['comida', 'cotidiano']::text[], 'p296', '97f17e7a', array['Fiz um crepe de presunto.', 'Fiz um omelete de presunto.', 'Fiz um pastel de presunto.', 'Fiz um risoto de presunto.', 'Fiz um sanduíche de presunto.']::text[]),
   ('es-pt', 'p297', 'palavra', 'B1', array['comida', 'Espanha', 'substantivo']::text[], null, 'e6b5e636', array['a garrafa', 'a taça', 'o chope', 'o guaraná', 'o vinho']::text[]),
-  ('es-pt', 'u293', 'frase', 'B1', array['comida', 'Espanha', 'cotidiano']::text[], 'p297', 'f39a1b2f', array['Traz dois cafés para nós?', 'Traz dois chopes para nós?', 'Traz dois copos para nós?', 'Traz dois pratos para nós?', 'Traz dois sucos para nós?']::text[]),
+  ('es-pt', 'u293', 'frase', 'B1', array['comida', 'Espanha', 'cotidiano']::text[], 'p297', '3b8a449e', array['Traz dois cafés para a gente?', 'Traz dois chopes para a gente?', 'Traz dois copos para a gente?', 'Traz dois pratos para a gente?', 'Traz dois sucos para a gente?']::text[]),
   ('es-pt', 'p298', 'palavra', 'B1', array['comida', 'falso-amigo', 'substantivo']::text[], null, '6239c585', array['o alho-poró', 'o aspargo', 'o cogumelo', 'o pepino', 'o pimentão']::text[]),
   ('es-pt', 'u294', 'frase', 'B1', array['comida', 'cultura', 'Espanha']::text[], 'p298', 'b0015b4e', array['No outono a gente sai para procurar caracóis.', 'No outono a gente sai para procurar cogumelos.', 'No outono a gente sai para procurar figos.', 'No outono a gente sai para procurar gravetos.', 'No outono a gente sai para procurar pinhões.']::text[]),
   ('es-pt', 'p299', 'palavra', 'A2', array['comida', 'falso-amigo', 'substantivo']::text[], null, 'a387cf7e', array['a banana', 'o abacaxi', 'o caqui', 'o mamão', 'o maracujá']::text[]),
@@ -1795,7 +1795,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u459', 'frase', 'A1', array['escola']::text[], 'p353', '71097a0d', array['Posso te fazer uma pergunta?', 'Posso te ler uma pergunta?', 'Posso te mandar uma pergunta?', 'Posso te mostrar uma pergunta?', 'Posso te responder uma pergunta?']::text[]),
   ('es-pt', 'u460', 'frase', 'A1', array['escola']::text[], 'p371', '6fe829d3', array['Como se escreve esta palavra?', 'Como se pronuncia esta palavra?', 'De onde vem esta palavra?', 'O que quer dizer esta palavra?', 'Quem inventou esta palavra?']::text[]),
   ('es-pt', 'u461', 'frase', 'B1', array['cotidiano']::text[], 'p371', 'cef40ff2', array['De novo, você não vem.', 'Mesmo assim, você não vem.', 'Por enquanto, você não vem.', 'Por isso, você não vem.', 'Quer dizer, você não vem.']::text[]),
-  ('es-pt', 'u462', 'frase', 'B1', array['social']::text[], 'p373', 'd7c8422c', array['Ele brigou com uma garota da turma dele.', 'Ele estuda com uma garota da turma dele.', 'Ele namora uma garota da turma dele.', 'Ele senta com uma garota da turma dele.', 'Ele trabalha com uma garota da turma dele.']::text[]),
+  ('es-pt', 'u462', 'frase', 'B1', array['social']::text[], 'p373', '9e2c0773', array['Ele brigou com uma garota da turma dele.', 'Ele estuda com uma garota da turma dele.', 'Ele namora uma garota da turma dele.', 'Ele senta com uma garota da turma dele.', 'Ele trabalha com uma garota da turma dele.']::text[]),
   ('es-pt', 'u463', 'frase', 'B1', array['cotidiano']::text[], 'p373', '9be5a23c', array['No fim, deu tudo certo.', 'No fim, deu tudo errado.', 'No fim, ficou tudo igual.', 'No fim, sobrou tudo.', 'No fim, sumiu tudo.']::text[]),
   ('es-pt', 'u464', 'frase', 'A2', array['social']::text[], 'p409', '6ad4072c', array['Vamos beber alguma coisa?', 'Vamos comprar alguma coisa?', 'Vamos fazer alguma coisa?', 'Vamos pedir alguma coisa?', 'Vamos ver alguma coisa?']::text[]),
   ('es-pt', 'u465', 'frase', 'A2', array['viagem']::text[], 'p409', '9ae7e1af', array['Adoro tomar banho.', 'Adoro tomar chá.', 'Adoro tomar sol.', 'Adoro tomar sorvete.', 'Adoro tomar vinho.']::text[]),

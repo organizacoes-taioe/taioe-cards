@@ -70,8 +70,8 @@ for (const c of CARDS) {
        (sujeito)» no card de eum, que aceita «ele» (LATIM.md §3.8, D24) */
     if (c.tipo === 'flexao' && d.includes('(')) continue;
     ok(conf(c, d) !== 'certo', c.id + ': o distrator «' + d + '» não pode valer');
-    if (c.tipo === 'flexao') ok(conf(c, d) === 'errado', c.id + ': o distrator da flexão é erro seco («' + d + '»)');
-    if (c.tipo === 'frase') ok(conf(c, d) === 'errado', c.id + ': o distrator da frase é erro seco («' + d + '»)');
+    if (c.tipo === 'flexao') ok(conf(c, d) !== 'certo', c.id + ': o distrator da flexão nunca é acerto («' + d + '»)');
+    if (c.tipo === 'frase') ok(conf(c, d) !== 'certo', c.id + ': o distrator da frase nunca é acerto («' + d + '»)');
   }
 }
 console.log('    ' + CARDS.length + ' cards, ' + respostas + ' respostas aceitas conferidas');
@@ -85,9 +85,9 @@ ok(conf(f009, 'Louvai o Senhor, todas as nações.') === 'certo', 'la-f009 como 
 ok(conf(f009, 'Louvai Senhor, todas nações') === 'certo', 'o artigo pode faltar');
 ok(conf(f009, 'Louvai o Senhor, toda a nação') !== 'certo', 'o plural não vira singular');
 ok(conf(f009, 'O Senhor louvai, todas as nações') === 'quase', 'as mesmas palavras em outra ordem: «deu quase»');
-ok(conf(f009, 'Cantai o Senhor, todas as nações') === 'quase', 'uma palavra trocada: «deu quase»');
+ok(conf(f009, 'Cantai o Senhor, todas as nações') === 'quase', 'uma palavra trocada, 4 letras em 26: «deu quase» pela régua geral');
 ok(conf(f009, 'Cantai a Deus, todos os povos') === 'errado', 'outra frase: erro');
-ok(M.parecidoDeFrase('a b c', 'c b a') && !M.parecidoDeFrase('a b', 'b a'), 'parecidoDeFrase pede 3 palavras');
+ok(M.parecidoDeFrase('a b c', 'c b a') && !M.parecidoDeFrase('a b c', 'a b d'), 'parecidoDeFrase: as mesmas palavras, em qualquer ordem');
 ok(M.normalizar('Já é tarde', 'pt') === M.normalizar('é tarde', 'pt'), 'o «já» é omissível');
 
 /* ═══════════ 5. as fases: só a ida ═══════════ */
@@ -188,7 +188,7 @@ ok(nC === 3, 'três acertos seguidos a dominam (foram ' + nC + ')');
 ok(M.modoDe(estC) === 'multipla' && estC.voltaEm, 'e ela volta por data, de escolher');
 const fFac = flex('faciam', 'facio'), fReq = flex('requiris', 'requiro');
 ok(!fFac.familia && conf(fFac, 'que eu faça') === 'certo' && conf(fFac, 'Farei.') === 'certo', 'faciam: «que eu faça», e a outra leitura, «farei»');
-ok(conf(fReq, 'pergunta') === 'errado', 'requiris: a leitura de outra forma do lema é erro seco');
+ok(conf(fReq, 'pergunta') !== 'certo', 'requiris: a leitura de outra forma do lema nunca é acerto');
 ok(conf(fReq, 'tu perguntas (sujeito)') === 'certo', 'a certa com o parêntese também vale');
 const altFlex = M.alternativas(fId, IDA, CARDS, {});
 ok(altFlex.length === 5 && altFlex.includes(fId.pt) && fId.distratores.every(d => altFlex.includes(d)), 'as alternativas: a certa e as quatro do card');

@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-11-10",
+ "gerado_em": "2026-11-12",
  "total": 2335,
  "cards": [
   {
@@ -23314,7 +23314,11 @@
     "na escola me botaram um apelido",
     "na escola me puseram um apelido",
     "na escola ganhei um apelido",
-    "na escola colocaram um apelido em mim"
+    "na escola colocaram um apelido em mim",
+    "no colegio me deram um apelido",
+    "no colegio me puseram um apelido",
+    "no colegio me botaram um apelido",
+    "no colegio ganhei um apelido"
    ],
    "aceitasEn": [
     "at school they gave me a nickname",
@@ -37936,14 +37940,19 @@
    "tipo": "frase",
    "requer": "p297",
    "es": "¿Nos pones dos cañas?",
-   "pt": "Traz dois chopes para nós?",
+   "pt": "Traz dois chopes para a gente?",
    "en": "Can you bring us two beers?",
    "aceitas": [
     "traz dois chopes para nos",
     "nos traz dois chopes",
     "traz dois chopes pra gente",
     "voce traz dois chopes para nos",
-    "poe dois chopes para nos"
+    "poe dois chopes para nos",
+    "traz dois chopes para a gente",
+    "nos ve dois chopes",
+    "ve dois chopes para nos",
+    "ve dois chopes pra gente",
+    "ve dois chopes para a gente"
    ],
    "aceitasEn": [
     "can you bring us two beers",
@@ -37951,10 +37960,10 @@
     "two beers please"
    ],
    "distratores": [
-    "Traz dois cafés para nós?",
-    "Traz dois sucos para nós?",
-    "Traz dois copos para nós?",
-    "Traz dois pratos para nós?"
+    "Traz dois cafés para a gente?",
+    "Traz dois sucos para a gente?",
+    "Traz dois copos para a gente?",
+    "Traz dois pratos para a gente?"
    ],
    "distratoresEn": [
     "Can you bring us two coffees?",
@@ -75208,7 +75217,16 @@
     "sai com uma menina da sala dele",
     "ele namora uma menina da classe dele",
     "esta saindo com uma garota da turma",
-    "ele sai com uma garota da turma dele"
+    "ele sai com uma garota da turma dele",
+    "ele namora uma menina da sua turma",
+    "ele namora uma garota da sua turma",
+    "ele namora uma menina da turma dele",
+    "ele sai com uma menina da turma dele",
+    "ele esta saindo com uma menina da turma dele",
+    "ele namora uma menina da sala dele",
+    "ele namora uma garota da sala dele",
+    "ele namora uma garota da sua sala",
+    "ele namora uma menina da sua sala"
    ],
    "aceitasEn": [
     "he s going out with a girl from his class",

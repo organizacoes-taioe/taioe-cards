@@ -326,6 +326,10 @@ tr.vago td{opacity:.42}
    coluna tem sempre a largura de «Singular:», pelo ::before invisível) */
 .casos{display:grid;grid-template-columns:max-content 1fr;column-gap:.4em;row-gap:2px}
 .casos-num{text-align:right;color:var(--texto-2,inherit)}
+/* singular e plural em cores diferentes, para bater o olho (pedido do Gere, 11/11/2026);
+   nenhuma delas é a do certo, a do erro ou a do quase */
+.casos-sing{color:#8fc4ff}
+.casos-plur{color:#e3a6ea}
 .casos-num::before{content:'Singular:';display:block;height:0;overflow:hidden;visibility:hidden}
 
 /* ── escrita ── */

@@ -478,7 +478,7 @@ window.Motor = (function () {
   /* o índice do degrau da escada em uso pelo nome (3, 7, 14… dias), ou -1 */
   function degrauDoNome(nominal) { return ESCADAS[ESCADA].nominais.indexOf(nominal); }
 
-  /* distância de Levenshtein, só para deslize de digitação em palavra única.
+  /* distância de Levenshtein, a conta dos erros de «parecido».
      Duas letras vizinhas trocadas de lugar contam como UM deslize, e não dois:
      «la crata» por «la carta» caía como erro seco, e foi a mão que correu na
      frente (contestação do p257, 25/10/2026). */
@@ -1100,10 +1100,14 @@ window.Motor = (function () {
      nenhuma semelhança de texto vira acerto sozinha.
 
      'quase' não decide nada: marca que a resposta chegou perto o bastante
-     para valer a pergunta, e quem julga é a pessoa. Como ninguém é aprovado
-     à revelia, aqui dá para ser generoso: erro de digitação, uma letra
-     trocada, uma palavra fora do lugar. Se for deslize, ela diz que
-     acertou; se o sentido mudou, ela diz que errou. */
+     para valer a pergunta, e quem julga é a pessoa. Perto o bastante é a
+     régua de «parecido», a mesma em toda língua e em todo card.
+
+     Desde 12/11/2026 (pedido do Gere) não há mais erro seco por tipo de erro:
+     o gênero trocado, a outra pessoa do verbo, o «n» por «ñ» e a resposta
+     igual a uma alternativa errada passam pela mesma régua. Muitas vezes são
+     a mão, e quem sabe é quem escreveu. O nome do erro (gênero, ñ, forma) o
+     app só mostra quando a resposta fica fora da régua. */
   function conferir(card, texto, direcao) {
     /* o card de flexão tem a régua dele, em que o artigo é resposta (ver conferirFlexao) */
     if (card.tipo === 'flexao') return conferirFlexao(card, texto);
@@ -1112,30 +1116,21 @@ window.Motor = (function () {
     if (!dado) return 'errado';
     if (card.tipo === 'forma') return conferirForma(card, texto);
 
-    /* O gênero errado é erro seco, sem passar pelo "deu quase": não foi a
-       mão que escorregou, foi o gênero — que é o que o card ensina. */
-    if (erroDeGenero(card, texto, direcao)) return 'errado';
-
-    /* A terminação de outra pessoa ou outro tempo: «suele» por «suelo»,
-       «apeteces» por «apetece». Erro seco — e antes da lista de aceitas,
-       porque o plural = singular deixaria o «-s» passar como certo. */
-    if (erroDeFlexao(card, texto, direcao)) return 'errado';
-
     const aceitas = respostasAceitas(card, direcao);
+
+    /* O funil tira o artigo, e «el mano» chegaria igual a «la mano»: não é
+       acerto, é uma palavra trocada, e vale a pergunta. */
+    if (aceitas.includes(dado) && erroDeGenero(card, texto, direcao)) return 'quase';
+
+    /* O funil também lê plural como singular, e «apeteces» chegaria igual a
+       «apetece». Aqui a régua é aplicada sem essa folga. */
+    if (erroDeFlexao(card, texto, direcao)) {
+      const semFolga = t => normalizar(t, lingua, { plural: false });
+      return formasAceitas(card, direcao).some(f => parecido(semFolga(texto), semFolga(f), lingua))
+        ? 'quase' : 'errado';
+    }
+
     if (aceitas.includes(dado)) return 'certo';
-
-    /* No modo trilhas, o distrator da frase é a leitura errada que o card já conhece (a
-       gramática mal lida): escrito igual, é erro seco, e não «deu quase». */
-    if (soIda() && card.tipo === 'frase' &&
-        (card[CAMPOS[lingua].distratores] || []).some(d => normalizar(d, lingua) === dado)) return 'errado';
-
-    /* Se o que ele escreveu é outra conjugação registrada do mesmo verbo,
-       não foi a mão que escorregou: foi o tempo ou a pessoa que ele errou,
-       que é justamente o que o card cobra. Erro seco, sem perguntar. */
-    if (formaReconhecida(card, texto, direcao)) return 'errado';
-
-    /* O «ñ» trocado por «n» é erro seco: são letras diferentes. */
-    if (erroDeEne(card, texto, direcao)) return 'errado';
 
     /* Faltou só o acento: conta como certo. Quem avisa é o app. */
     if (acentoRelevado(card, texto, direcao)) return 'certo';
@@ -1146,14 +1141,23 @@ window.Motor = (function () {
        «elles estudiarán» por «ellos estudiarán»: o sujeito certo sairia da
        frase, o errado fica, e a conta via uma palavra a mais. «No hoy sitio»
        por «no hay sitio»: o «hoy» é advérbio de tempo, vai para o fim, e a
-       frase vira outra. Nos dois casos foi uma letra, e caiu como erro seco
-       (v045, u053). Então, antes de desistir, compara-se também sem tirar o
-       sujeito e sem mexer no advérbio. Só abre a pergunta do «quase»: quem
-       decide continua sendo a pessoa. */
+       frase vira outra (v045, u053). Então, antes de desistir, compara-se
+       também sem tirar o sujeito e sem mexer no advérbio. */
     const cru = normalizar(texto, lingua, { cru: true });
     if (formasAceitas(card, direcao).some(f => parecido(cru, normalizar(f, lingua, { cru: true }), lingua))) {
       return 'quase';
     }
+    /* E o erro que cai no artigo da frente ou numa letra que a língua não tem: «lsa tijeras»
+       deixava de ser artigo e sobrava inteiro contra «tijera»; «aõ» por «año» perdia o «õ»
+       como se fosse pontuação (contestações do p832 e do u167, 12/11/2026). Compara-se
+       também letra por letra, sem funil nenhum. */
+    const nu = t => {
+      const x = String(t || '').toLowerCase().replace(/æ/g, 'ae').replace(/œ/g, 'oe').normalize('NFC');
+      return (LINGUAS[lingua] && LINGUAS[lingua].guardaAcento ? semAcentoMantendoEne(x)
+        : x.normalize('NFD').replace(/[\u0300-\u036f]/g, '')).replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+    };
+    const escrito = nu(texto);
+    if (escrito && formasAceitas(card, direcao).some(f => parecido(escrito, nu(f), lingua))) return 'quase';
     if (soIda() && card.tipo === 'frase' && aceitas.some(alvo => parecidoDeFrase(dado, alvo))) return 'quase';
     return 'errado';
   }
@@ -1258,51 +1262,103 @@ window.Motor = (function () {
 
   /* Perto o bastante para perguntar — não perto o bastante para valer ponto.
 
-     Escrevendo em espanhol a régua é mais dura: a grafia é parte do que se
-     está aprendendo, então uma letra fora do lugar pode ser exatamente a
-     lacuna, não um deslize de teclado. Escrevendo na língua de casa —
-     português ou inglês —, errar uma tecla não diz nada sobre saber a
-     palavra. Por isso quem decide é a língua da resposta, não a direção. */
-  function parecido(a, b, lingua) {
-    const maior = Math.max(a.length, b.length);
-    if (maior < 4) return false;
+     Duas regras, as mesmas em toda língua e em todo card (pedido do Gere,
+     12/11/2026; antes havia sete limiares, por língua e por tamanho):
 
-    const inversa = lingua === 'es';
-    /* No espanhol o acento já é conferido antes, com régua própria; aqui ele
-       não soma. Sem isso «yo etuve alli» contava duas diferenças contra
-       «yo estuve allí» — a letra e o acento — e caía no errado. */
-    const d = inversa
-      ? distancia(semAcentoMantendoEne(a), semAcentoMantendoEne(b))
-      : distancia(a, b);
-    if (!d) return true;
+     1. um erro só: pergunta. Um erro é uma letra trocada, a mais ou a menos,
+        duas letras vizinhas invertidas ou duas palavras vizinhas invertidas;
+     2. mais de um: pergunta se os erros não passam de 20% das letras da
+        resposta certa (2 erros a partir de 10 letras, 3 a partir de 15).
 
-    if (!a.includes(' ') && !b.includes(' ')) {
-      /* Em espanhol, uma letra a menos ou a mais vale a pergunta a partir de
-         quatro letras: era a partir de seis, e «la buca» por «la beca» caía
-         como erro seco (p170). Quem decide se foi a mão é a pessoa. */
-      return inversa ? (d === 1 && maior >= 4) : d <= (maior >= 8 ? 2 : 1);
+     Não há piso de tamanho: também se erra a tecla em palavra pequena.
+     «a» é o que foi escrito, «b» a resposta certa, os dois já normalizados.
+
+     A regra 2 aperta para 10% quando tudo o que foi escrito são palavras de
+     verdade (pedido do Gere, 12/11/2026): a tecla errada quase nunca dá uma
+     palavra que existe («borbolwta»), e quem escreveu «eu era o bom pastor»
+     por «eu sou o bom pastor» não escorregou, trocou a palavra. «Palavra de
+     verdade» é a que aparece em algum card do baralho, na língua da resposta
+     (respostas, aceitas e alternativas erradas): não há dicionário no app. A
+     que não está em card nenhum fica com os 20%, o lado generoso. A regra 1
+     não muda: «sal» por «sol» é palavra de verdade e ainda pode ser a mão. */
+  const PARTE_DE_ERROS = 0.20;
+  const PARTE_COM_PALAVRAS_REAIS = 0.10;
+
+  /* o vocabulário do baralho, por língua, montado na primeira vez em que é preciso */
+  let CARDS_DO_VOCABULARIO = [];
+  let VOCABULARIO = Object.create(null);
+  const semSinais = t => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  function usarVocabulario(cards) {
+    CARDS_DO_VOCABULARIO = cards || [];
+    VOCABULARIO = Object.create(null);
+  }
+  function vocabulario(lingua) {
+    if (VOCABULARIO[lingua]) return VOCABULARIO[lingua];
+    const v = VOCABULARIO[lingua] = new Set();
+    const campo = CAMPOS[lingua];
+    if (!campo) return v;
+    const junta = t => semSinais(t).split(/[^a-z0-9]+/).forEach(w => { if (w) v.add(w); });
+    CARDS_DO_VOCABULARIO.forEach(c => {
+      if (!c) return;
+      let textos = [c[campo.certa]].concat(c[campo.aceitas] || [], c[campo.distratores] || [],
+        Object.keys(c[campo.formas] || {}), Object.keys(c[campo.regionais] || {}));
+      if (lingua === 'pt') textos = textos.concat(c.outras || []);
+      textos.forEach(t => {
+        if (typeof t !== 'string' || !t) return;
+        /* como está escrita e como o funil a entrega (sem plural, com e sem o sujeito) */
+        junta(t);
+        junta(normalizar(t, lingua));
+        junta(normalizar(t, lingua, { cru: true }));
+        junta(normalizar(t, lingua, { plural: false }));
+        if (lingua === 'pt') junta(normalizarFlexao(t));
+      });
+    });
+    return v;
+  }
+  /* tudo o que foi escrito e não está na resposta certa é palavra do baralho? */
+  function soPalavrasReais(a, b, lingua) {
+    const v = vocabulario(lingua);
+    if (!v.size) return false;
+    const certas = new Set(semSinais(b).split(' '));
+    return semSinais(a).split(' ').every(w => !w || certas.has(w) || v.has(w));
+  }
+
+  function errosEntre(a, b) {
+    let d = distancia(a, b);
+    if (d < 2) return d;
+    /* duas palavras vizinhas invertidas valem um erro, somado aos das letras */
+    const p = a.split(' ');
+    for (let i = 0; i + 1 < p.length && d > 1; i++) {
+      if (p[i] === p[i + 1]) continue;
+      const q = p.slice();
+      q[i] = p[i + 1];
+      q[i + 1] = p[i];
+      d = Math.min(d, 1 + distancia(q.join(' '), b));
     }
-    /* Uma letra só, em espanhol, também vale a pergunta numa frase curta.
-       A régua de 92% pedia onze letras por erro, e «etuve allí» contra
-       «estuve allí» (dez contra onze) caía como errado seco — era uma tecla. */
-    if (inversa && d === 1 && maior >= 6) return true;
-    return 1 - d / maior >= (inversa ? 0.92 : 0.82);
+    return d;
+  }
+
+  function parecido(a, b, lingua) {
+    /* No espanhol o acento é conferido antes, com régua própria; aqui ele não
+       soma («yo etuve alli» contra «yo estuve allí» é uma letra). O «ñ» fica:
+       «ano» por «año» é um erro. */
+    const semAcentos = t => (LINGUAS[lingua] && LINGUAS[lingua].guardaAcento ? semAcentoMantendoEne(t) : t);
+    const certa = semAcentos(b);
+    const d = errosEntre(semAcentos(a), certa);
+    if (d <= 1) return true;
+    const letras = certa.replace(/ /g, '').length;
+    if (d > PARTE_DE_ERROS * letras) return false;
+    return d <= PARTE_COM_PALAVRAS_REAIS * letras || !soPalavrasReais(a, b, lingua);
   }
 
   /* ── o «deu quase» da frase traduzida (cards/LATIM.md §4) ──
-     Traduzindo uma frase latina, quem acerta o sentido erra fácil na ordem («o Senhor louvai»)
-     ou numa palavra («cantai o Senhor»). Com as mesmas palavras em outra ordem, ou uma
-     palavra só trocada, a pergunta vale: quem decide se está certo é a pessoa, e o que ela
-     aceitar vai para a curadoria, que amplia o gabarito. Só no modo trilhas. */
+     Traduzindo uma frase latina, quem acerta o sentido erra fácil na ordem («o Senhor
+     louvai»). Com as mesmas palavras em outra ordem, a pergunta vale. Só no modo trilhas.
+     A palavra trocada por outra («cantai o Senhor») deixou de valer em 12/11/2026: para
+     ampliar o gabarito já existe o «acho que essa resposta deveria ser aceita». */
   function parecidoDeFrase(a, b) {
     const x = String(a || '').split(' ').filter(Boolean), y = String(b || '').split(' ').filter(Boolean);
-    if (Math.min(x.length, y.length) < 3) return false;
-    const conta = new Map();
-    x.forEach(p => conta.set(p, (conta.get(p) || 0) + 1));
-    y.forEach(p => conta.set(p, (conta.get(p) || 0) - 1));
-    let sobra = 0, falta = 0;
-    for (const v of conta.values()) { if (v > 0) sobra += v; else falta -= v; }
-    return sobra <= 1 && falta <= 1;
+    return x.length > 1 && x.length === y.length && x.slice().sort().join(' ') === y.slice().sort().join(' ');
   }
 
   /* ── onde foi que deu quase ──
@@ -2865,9 +2921,7 @@ window.Motor = (function () {
      (objeto)»), que ninguém escreve. A leitura principal («pt») é a que a múltipla escolha
      mostra; as outras («outras»: faciam também é «farei») e as «aceitas» valem igual. A crase
      e o «ó» ficam («à água», dativo, e «ó água», vocativo, não são «a água»).
-     Escrever a leitura de outra forma do mesmo lema («pergunta» em requiris, que é requirit)
-     é erro seco, e não «deu quase». */
-  let LEITURAS_DO_LEMA = Object.create(null);   // id do lema → as leituras de todas as flexões dele
+     A leitura de outra forma do mesmo lema passa pela régua de «parecido», como tudo. */
 
   function normalizarFlexao(texto) {
     /* a crase e o «ó» ficam: «à água» é o dativo, «ó água», o vocativo, e «a água», o nominativo */
@@ -2889,8 +2943,6 @@ window.Motor = (function () {
     if (!dado) return 'errado';
     const certas = leiturasDaFlexao(card);
     if (certas.includes(dado)) return 'certo';
-    if ((card.distratores || []).some(d => normalizarFlexao(d) === dado)) return 'errado';
-    if (LEITURAS_DO_LEMA[card.lema] && LEITURAS_DO_LEMA[card.lema].has(dado)) return 'errado';
     return certas.some(alvo => parecido(dado, alvo, 'pt')) ? 'quase' : 'errado';
   }
 
@@ -3643,6 +3695,7 @@ window.Motor = (function () {
   let LEITURA = Object.create(null);      // id → true: card de leitura (PLANO.md, 9.2)
 
   function usarTransparencias(cards) {
+    usarVocabulario(cards);
     TRANSP = Object.create(null);
     POS = Object.create(null);
     TIPO = Object.create(null);
@@ -3651,7 +3704,6 @@ window.Motor = (function () {
     FALSO_AMIGO = Object.create(null);
     LEITURA = Object.create(null);
     RESPOSTA_DA_FORMA = Object.create(null);
-    LEITURAS_DO_LEMA = Object.create(null);
     TERMINACAO = Object.create(null);
     MEMBROS = Object.create(null);
     RARA = Object.create(null);
@@ -3672,10 +3724,6 @@ window.Motor = (function () {
       }
       if (c.tipo === 'frase') requeridas(c).forEach(r => (FRASES_DA_FLEXAO[r] || (FRASES_DA_FLEXAO[r] = [])).push(c.id));
       if (c.tipo === 'flexao' && c.familia === 'caso') FLEXAO_DE_CASO[c.id] = true;
-      else if (c.tipo === 'flexao') {
-        const lista = LEITURAS_DO_LEMA[c.lema] || (LEITURAS_DO_LEMA[c.lema] = new Set());
-        leiturasDaFlexao(c).forEach(x => lista.add(x));
-      }
       /* no card de leitura, a «parecida» conta como total: ler é de graça, e
          ele não tem a volta, que é onde a parecida estrearia */
       if (c.transp === 'total' || c.transp === 'parecida') TRANSP[c.id] = (c.leitura || soIda()) ? 'total' : c.transp;
@@ -4528,7 +4576,7 @@ window.Motor = (function () {
     pergunta, resposta, normalizarEs, normalizarEn, formaReconhecida,
     usarBaralho, ehVolta, direcoes, CAMPOS,
     /* o latim (cards/LATIM.md) */
-    usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecidoDeFrase, exemploDoConceito,
+    usarModo, modo, soIda, expandirGabarito, GABARITO_MAXIMO, parecido, parecidoDeFrase, usarVocabulario, exemploDoConceito,
     perguntaDaForma, ehForma, ehContraste, ehConceito, ehCompreensao, ehCompreensaoDoVerso, ehHeranca, ehAnalise, umaVezSo, ehFlexao, ehFlexaoDeCaso, conferirFlexao, normalizarFlexao, leiturasDaFlexao, encerrado, formaPuxada, formaEscolhida, formaPronta, conferirForma, foraDaPergunta,
     ACERTOS_QUE_SOLTAM,
     DIA_DAS_TERMINACOES, ativoDaTerminacao, flexaoPuxada, adormecido, quemConta, exemploDaTerminacao,

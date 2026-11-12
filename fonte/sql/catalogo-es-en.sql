@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-en, leva 0e34f552, 2263 cards.
+-- Catálogo do curso es-en, leva 5f91d78c, 2263 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-en', '0e34f552', '2263 cards')
+values ('es-en', '5f91d78c', '2263 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -520,7 +520,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'u111', 'frase', 'A2', array['falso-amigo', 'comida']::text[], 'p108', 'e100e564', array['We ordered a plate of cheese.', 'We ordered a plate of chips.', 'We ordered a plate of ham.', 'We ordered a plate of squid.', 'We ordered a plate of suspect.']::text[]),
   ('es-en', 'u112', 'frase', 'A2', array['falso-amigo', 'verbo']::text[], 'p109', '9c51f248', array['I fell asleep at six.', 'I remembered at six.', 'I showered at six.', 'I went out at six.', 'I woke up at six.']::text[]),
   ('es-en', 'u113', 'frase', 'A2', array['falso-amigo']::text[], 'p110', 'f6a1362c', array['The last chapter of the book made me laugh.', 'The last dinner of the trip made me cry.', 'The last scene of the film made me cry.', 'The last scene of the film made me sleepy.', 'The last song of the concert made me dance.']::text[]),
-  ('es-en', 'u114', 'frase', 'B1', array['falso-amigo']::text[], 'p111', 'fea87a09', array['At school they changed my surname.', 'At school they gave me a locker.', 'At school they gave me a medal.', 'At school they gave me a nickname.', 'At school they told me off.']::text[]),
+  ('es-en', 'u114', 'frase', 'B1', array['falso-amigo']::text[], 'p111', '924115aa', array['At school they changed my surname.', 'At school they gave me a locker.', 'At school they gave me a medal.', 'At school they gave me a nickname.', 'At school they told me off.']::text[]),
   ('es-en', 'u115', 'frase', 'A2', array['falso-amigo']::text[], 'p112', 'c5884c1d', array['The play was a complete mystery.', 'The play was a resounding success.', 'The play was a resounding way out.', 'The play was a total flop.', 'The play was an utter scandal.']::text[]),
   ('es-en', 'u116', 'frase', 'B1', array['falso-amigo']::text[], 'p113', '11c06b23', array['The newspaper covered the award.', 'The newspaper covered the election.', 'The newspaper covered the incident.', 'The newspaper covered the launch.', 'The newspaper covered the success.']::text[]),
   ('es-en', 'u117', 'frase', 'A2', array['falso-amigo', 'casa']::text[], 'p115', '58f4da03', array['We toasted with a bottle of wine.', 'We toasted with a cup of coffee.', 'We toasted with a glass of juice.', 'We toasted with a glass of wine.', 'We toasted with a tumbler of wine.']::text[]),
@@ -834,7 +834,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'p296', 'palavra', 'A2', array['comida', 'Espanha', 'substantivo']::text[], null, '87fb2719', array['the baguette sandwich', 'the biscuit', 'the bread roll', 'the savoury snack', 'the toast']::text[]),
   ('es-en', 'u292', 'frase', 'A2', array['comida', 'cotidiano']::text[], 'p296', '97f17e7a', array['I made myself a ham crepe.', 'I made myself a ham omelette.', 'I made myself a ham pasty.', 'I made myself a ham risotto.', 'I made myself a ham sandwich.']::text[]),
   ('es-en', 'p297', 'palavra', 'B1', array['comida', 'Espanha', 'substantivo']::text[], null, 'e6b5e636', array['the bottle', 'the small draught beer', 'the soft drink', 'the wine', 'the wine glass']::text[]),
-  ('es-en', 'u293', 'frase', 'B1', array['comida', 'Espanha', 'cotidiano']::text[], 'p297', 'f39a1b2f', array['Can you bring us two beers?', 'Can you bring us two coffees?', 'Can you bring us two glasses?', 'Can you bring us two juices?', 'Can you bring us two plates?']::text[]),
+  ('es-en', 'u293', 'frase', 'B1', array['comida', 'Espanha', 'cotidiano']::text[], 'p297', '3b8a449e', array['Can you bring us two beers?', 'Can you bring us two coffees?', 'Can you bring us two glasses?', 'Can you bring us two juices?', 'Can you bring us two plates?']::text[]),
   ('es-en', 'p298', 'palavra', 'B1', array['comida', 'falso-amigo', 'substantivo']::text[], null, '6239c585', array['the asparagus', 'the cucumber', 'the leek', 'the mushroom', 'the pepper']::text[]),
   ('es-en', 'u294', 'frase', 'B1', array['comida', 'cultura', 'Espanha']::text[], 'p298', 'b0015b4e', array['In autumn we go out looking for figs.', 'In autumn we go out looking for firewood.', 'In autumn we go out looking for mushrooms.', 'In autumn we go out looking for pine nuts.', 'In autumn we go out looking for snails.']::text[]),
   ('es-en', 'p299', 'palavra', 'A2', array['comida', 'falso-amigo', 'substantivo']::text[], null, 'a387cf7e', array['the banana', 'the papaya', 'the passion fruit', 'the persimmon', 'the pineapple']::text[]),
@@ -1795,7 +1795,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'u459', 'frase', 'A1', array['escola']::text[], 'p353', '71097a0d', array['Can I answer a question for you?', 'Can I ask you a question?', 'Can I read you a question?', 'Can I send you a question?', 'Can I show you a question?']::text[]),
   ('es-en', 'u460', 'frase', 'A1', array['escola']::text[], 'p371', '6fe829d3', array['How do you pronounce this word?', 'How do you spell this word?', 'What does this word mean?', 'Where does this word come from?', 'Who invented this word?']::text[]),
   ('es-en', 'u461', 'frase', 'B1', array['cotidiano']::text[], 'p371', 'cef40ff2', array['Even so, you''re not coming.', 'For now, you''re not coming.', 'In other words, you''re not coming.', 'Once again, you''re not coming.', 'That''s why you''re not coming.']::text[]),
-  ('es-en', 'u462', 'frase', 'B1', array['social']::text[], 'p373', 'd7c8422c', array['He sits with a girl from his class.', 'He studies with a girl from his class.', 'He works with a girl from his class.', 'He''s fallen out with a girl from his class.', 'He''s going out with a girl from his class.']::text[]),
+  ('es-en', 'u462', 'frase', 'B1', array['social']::text[], 'p373', '9e2c0773', array['He sits with a girl from his class.', 'He studies with a girl from his class.', 'He works with a girl from his class.', 'He''s fallen out with a girl from his class.', 'He''s going out with a girl from his class.']::text[]),
   ('es-en', 'u463', 'frase', 'B1', array['cotidiano']::text[], 'p373', '9be5a23c', array['In the end, everything disappeared.', 'In the end, everything turned out fine.', 'In the end, everything was left over.', 'In the end, everything went wrong.', 'In the end, nothing changed.']::text[]),
   ('es-en', 'u464', 'frase', 'A2', array['social']::text[], 'p409', '6ad4072c', array['Shall we buy something?', 'Shall we do anything?', 'Shall we have a drink?', 'Shall we order food?', 'Shall we watch a film?']::text[]),
   ('es-en', 'u465', 'frase', 'A2', array['viagem']::text[], 'p409', '9ae7e1af', array['I love drinking tea.', 'I love drinking wine.', 'I love eating ice cream.', 'I love having a bath.', 'I love sunbathing.']::text[]),
