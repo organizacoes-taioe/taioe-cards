@@ -608,7 +608,13 @@ língua e em todo tipo de card (`Motor.parecido`):
    menos, duas letras vizinhas invertidas ou duas palavras vizinhas invertidas;
 2. **mais de um**: pergunta se os erros não passam de **20% das letras** da
    resposta certa (`PARTE_DE_ERROS`): 2 erros a partir de 10 letras, 3 a partir
-   de 15.
+   de 15. Quando **tudo o que foi escrito são palavras de verdade**, o limite
+   cai para **10%** (`PARTE_COM_PALAVRAS_REAIS`): a tecla errada quase nunca dá
+   palavra que existe, e «eu era o bom pastor» por «eu sou o bom pastor» é
+   palavra trocada, não deslize. Palavra de verdade é a que aparece em algum
+   card do baralho, na língua da resposta (resposta, aceitas e alternativas
+   erradas; `Motor.usarVocabulario`, chamado por `usarTransparencias`); não há
+   dicionário no app, e a palavra que não está em card nenhum fica com os 20%.
 
 Não há piso de tamanho nem erro seco por tipo de erro: o gênero trocado («el
 servilleta», «el servilleto»), a outra pessoa do verbo («apeteces»), o «n» por
