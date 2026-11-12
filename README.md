@@ -599,37 +599,25 @@ pintada de amarelo na resposta certa, logo abaixo. Numa frase de cinco
 palavras com um acento só, é essa a que importa. Vale também para o acento
 que **sobrou** — «me dá corte», «água», «dió» —, e aí o que se pinta é a letra
 onde ele foi posto sem ser. E vale para o `él` escrito `el`, que o funil lia
-como artigo e jogava fora. Já o `ñ` é **outra letra**:
-`año` e `ano` são duas palavras, e confundi-las é constrangedor. Aí é erro
-**seco**, sem passar pelo «deu quase»: *preste atenção ao ñ*.
+como artigo e jogava fora.
 
-O **gênero** também é erro seco: *gênero errado — era «la servilleta»*. Tanto o
-artigo trocado quanto a palavra que vai inteira para o outro gênero —
-«el servilleto» —, que antes caía no «deu quase» por ser uma letra só. Esse
-segundo caso vale só nos cards de palavra: numa frase, «hablo» e «habla»
-também trocam `-o` por `-a`, e ali o erro é de pessoa, não de gênero.
+**A régua do «deu quase»** (desde 12/11/2026) tem duas regras, iguais em toda
+língua e em todo tipo de card (`Motor.parecido`):
 
-Em português nada disso vale: a acentuação não é o que você está aprendendo, e
-o teclado do celular atrapalha mais do que ajuda.
+1. **um erro só**: o app pergunta. Um erro é uma letra trocada, a mais ou a
+   menos, duas letras vizinhas invertidas ou duas palavras vizinhas invertidas;
+2. **mais de um**: pergunta se os erros não passam de **20% das letras** da
+   resposta certa (`PARTE_DE_ERROS`): 2 erros a partir de 10 letras, 3 a partir
+   de 15.
 
-Nos cards de conjugação há um corte a mais: se o que você escreveu **é outra
-forma verbal registrada do card**, não foi a mão que escorregou — foi o tempo
-ou a pessoa, que é justamente o que o card cobra. Isso é erro seco, sem
-perguntar nada, e o feedback nomeia o que você escreveu: *«Él dice la verdad»
-— presente*, contra o pretérito que era pedido.
-
-Fora dos cards de conjugação vale uma regra geral de **flexão**: se as duas
-respostas têm as mesmas palavras menos uma, e essa tem o mesmo radical com
-outra desinência verbal — «apeteces» por «apetece», «juega» por «juegan» —,
-é erro seco, com o aviso *forma errada — era «apetece»*. O «-s» sozinho
-precisava de cuidado: o funil lê plural como singular, e «apeteces» chegava
-igual a «apetece» e contava como certo. Nas frases, uma palavra que só ganhou
-ou perdeu o «-s» é tratada como flexão; plural de verdade quase nunca vem
-sozinho numa frase («la sábana» → «las sábanas» muda duas palavras).
-
-A exceção é a **vogal final trocada por outra** — «suele» por «suelo»,
-«harte» por «harto». No teclado Dvorak a, o, e, u, i são vizinhas, e dali não
-dá para saber se foi a pessoa do verbo ou o dedo: fica para o «deu quase».
+Não há piso de tamanho nem erro seco por tipo de erro: o gênero trocado («el
+servilleta», «el servilleto»), a outra pessoa do verbo («apeteces»), o «n» por
+«ñ» e a resposta igual a uma alternativa errada passam pela mesma régua, e quem
+julga é a pessoa. Fora da régua, o erro continua ganhando nome no aviso
+(*gênero errado*, *preste atenção ao ñ*, *forma errada*). O acento que falta no
+espanhol continua valendo como certo, com aviso. Ficam duas ajudas: a comparação
+também sem o funil (o erro que cai num sujeito ou num advérbio de tempo) e, no
+latim, as mesmas palavras em outra ordem. `fonte/testar-quase.js` confere tudo.
 
 **O «deu quase» mostra onde foi.** A diferença é, por definição, pequena — uma
 letra numa frase de quarenta —, e achá-la a olho custa mais do que devia. O

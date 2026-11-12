@@ -1823,17 +1823,20 @@ window.TaioeCardsApp = function (ctx) {
 
     /* Escreveu outra conjugação: mostra qual foi, para o erro ensinar algo. */
     const escrevendo = r.modo === 'escrita' && !r.desistiu;
-    const forma = escrevendo
+    /* O erro só ganha nome quando é erro: no «deu quase» a pessoa ainda vai julgar, e o que
+       aparece é a diferença pintada (desde 12/11/2026 esses erros também passam pelo quase). */
+    const comNome = escrevendo && !r.quase && !r.acertou;
+    const forma = comNome
       ? Motor.formaReconhecida(cardAtual, r.resposta, r.direcao) : null;
     /* Só o artigo saiu errado. Dizer isso ensina mais do que "não foi dessa
        vez": o que faltou tem nome, e é o gênero. */
-    const genero = escrevendo && !forma
+    const genero = comNome && !forma
       ? Motor.erroDeGenero(cardAtual, r.resposta, r.direcao) : null;
     /* E o «ñ», que é letra e não «n» com enfeite. */
-    const acento = escrevendo && !forma && !genero
+    const acento = comNome && !forma && !genero
       ? Motor.erroDeEne(cardAtual, r.resposta, r.direcao) : null;
     /* A terminação de outra pessoa ou outro tempo: «suele» por «suelo». */
-    const flexao = escrevendo && !forma && !genero && !acento
+    const flexao = comNome && !forma && !genero && !acento
       ? Motor.erroDeFlexao(cardAtual, r.resposta, r.direcao) : null;
 
     /* Acertou, mas sem o acento. Não custa ponto — custa uma linha, que diz
