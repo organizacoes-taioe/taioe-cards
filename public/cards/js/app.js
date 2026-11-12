@@ -45,6 +45,9 @@ window.TaioeCardsApp = function (ctx) {
      todo card só tem a ida, não há teste de nível nem desafio, e a pessoa escolhe de 1 a 3
      textos antes de começar. Vem antes de usarTransparencias, que depende dele. */
   const TRILHAS = ctx.modo === 'trilhas';
+  /* O degrau de «1 semana» espera de fato 5 dias desde 01/11/2026. No espanhol o nome antigo
+     fica, a pedido do Gere (12/11/2026); nos outros cursos o rótulo diz a espera de verdade. */
+  const DIAS_DO_ROTULO = L === 'es' ? Motor.DIAS_NOMINAIS : Motor.DIAS_DOMINADO;
   Motor.usarModo(TRILHAS ? 'trilhas' : 'livre');
   const IDA = Motor.direcoes().ida;
   const ROTULO_IDA = L + ' → ' + A, ROTULO_VOLTA = A + ' → ' + L;
@@ -2315,7 +2318,7 @@ window.TaioeCardsApp = function (ctx) {
     }
     const virouDominado = est.etapa === 'dominado' && etapaAntes !== 'dominado';
     mostrarConquista(virouDominado,
-      etapaAntes === 'dominado' && r.acertou ? Motor.DIAS_NOMINAIS[est.revisoes] : null);
+      etapaAntes === 'dominado' && r.acertou ? DIAS_DO_ROTULO[est.revisoes] : null);
 
     const guardado = guardarNaFila(id, est, r);
 
@@ -2628,12 +2631,12 @@ window.TaioeCardsApp = function (ctx) {
     { chave: 0, nome: ROTULO_IDA,   cor: 'var(--serie-espt)' },
     /* a volta, que o modo trilhas não tem */
     ...(TRILHAS ? [] : [{ chave: 1, nome: ROTULO_VOLTA, cor: 'var(--serie-ptes)' }]),
-    { chave: 2, nome: rotuloEspera(3),   cor: 'var(--escada-0)', degrau: true },
-    { chave: 3, nome: rotuloEspera(7),   cor: 'var(--escada-1)', degrau: true },
-    { chave: 4, nome: rotuloEspera(14),  cor: 'var(--escada-2)', degrau: true },
-    { chave: 5, nome: rotuloEspera(30),  cor: 'var(--escada-3)', degrau: true },
-    { chave: 6, nome: rotuloEspera(90),  cor: 'var(--escada-4)', degrau: true },
-    { chave: 7, nome: rotuloEspera(180), cor: 'var(--escada-5)', degrau: true }
+    { chave: 2, nome: rotuloEspera(DIAS_DO_ROTULO[0]),   cor: 'var(--escada-0)', degrau: true },
+    { chave: 3, nome: rotuloEspera(DIAS_DO_ROTULO[1]),   cor: 'var(--escada-1)', degrau: true },
+    { chave: 4, nome: rotuloEspera(DIAS_DO_ROTULO[2]),  cor: 'var(--escada-2)', degrau: true },
+    { chave: 5, nome: rotuloEspera(DIAS_DO_ROTULO[3]),  cor: 'var(--escada-3)', degrau: true },
+    { chave: 6, nome: rotuloEspera(DIAS_DO_ROTULO[4]),  cor: 'var(--escada-4)', degrau: true },
+    { chave: 7, nome: rotuloEspera(DIAS_DO_ROTULO[5]), cor: 'var(--escada-5)', degrau: true }
   ];
 
   function graficoEtapas() {
@@ -2801,7 +2804,7 @@ window.TaioeCardsApp = function (ctx) {
 
   function tabelaDominados() {
     const agora = new Date().toISOString();
-    const degraus = Motor.DIAS_NOMINAIS.map(dias => (
+    const degraus = DIAS_DO_ROTULO.map(dias => (
       { dias: dias, n: 0, vencidos: 0, proxima: null }));
     (progresso.dominados || []).forEach(id => {
       const e = progresso.cards[id];
@@ -3044,7 +3047,7 @@ window.TaioeCardsApp = function (ctx) {
   function tabelaMemoria() {
     const ret = progresso.retencao || [];
     if (!ret.some(g => g && g[0])) return '';
-    const linhas = Motor.DIAS_NOMINAIS.map((dias, i) => {
+    const linhas = DIAS_DO_ROTULO.map((dias, i) => {
       const g = ret[i] || [0, 0];
       const acerto = g[0] >= 5 ? pctDe(g[1], g[0]) : g[0] ? t('painel.poucosDados') : '—';
       return '<tr' + (g[0] < 5 ? ' class="vago"' : '') + '><td>' + rotuloEspera(dias) + '</td>' +
