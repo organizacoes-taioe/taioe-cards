@@ -10,7 +10,8 @@
    inéditos não acabam; textos, frases e desafios ficam de fora.
 
    Uso:  node fonte/simular-fila.js [--dias=60] [--semente=11] [--forte] [--latim] [--todos]
-                                    [--pausa=7] [--antigo]
+                                    [--pausa=7] [--antigo] [--escada=mortas]
+                                    [--troca=60 [--para=mortas] [--remapear]]
          --forte   o aluno acerta ~95% (sem ele, ~85%)
          --latim   o modo trilhas (só a ida)
          --todos   uma linha por dia (sem ele, os três primeiros e de dez em dez)
@@ -18,6 +19,13 @@
          --antigo  a regra dos dominados até 31/10/2026: degrau de 7 dias de
                    fato, o vencido de data mais antiga primeiro, sem pesos e
                    sem a subida da parte dos dominados quando eles se acumulam
+
+         --escada  a escada dos dominados desde o começo (vivas, o padrão, ou mortas; Motor.usarEscada)
+         --troca   no dia indicado (de 1 em diante) o curso passa de escada, com os mesmos cards e
+                   as mesmas datas marcadas (a migração do latim, 11/11/2026): o índice gravado
+                   (revisoes) fica como está; com --remapear, é refeito pela espera (0→0, 1→1, 2→3,
+                   3→4, 4→5, 5→6). --para diz a escada nova (padrão mortas). Com --troca, o fim traz
+                   as médias do antes, de cada semana depois e do total depois.
 
    Cada linha: cards novos no dia; a chance média de card novo (a do painel)
    e a fração real; a ida, contra a meta; a volta; as revisões de dominados;
@@ -36,6 +44,10 @@ const tem = nome => process.argv.includes('--' + nome);
 const DIAS = arg('dias', 60);
 const FORTE = tem('forte'), LATIM = tem('latim'), TODOS = tem('todos');
 const PAUSA = arg('pausa', 0), ANTIGO = tem('antigo');
+const argTxt = (nome, padrao) => { const a = process.argv.find(x => x.startsWith('--' + nome + '=')); return a ? a.split('=')[1] : padrao; };
+const TROCA = arg('troca', 0), PARA = argTxt('para', 'mortas'), REMAPEAR = tem('remapear');
+const ESCADA_INICIAL = argTxt('escada', 'vivas');
+const REMAPA_DOS_INDICES = [0, 1, 3, 4, 5, 6];   // pela espera: 3, 7(5), 14, 30, 90, 180 → a escada nova
 
 /* sorteio com semente (mulberry32): o mesmo resultado a cada rodada */
 let semente = arg('semente', 11);
@@ -58,6 +70,7 @@ new Function('window', 'Date', fs.readFileSync(path.join(__dirname, '..', 'js', 
 const M = janela.Motor;
 M.usarBaralho('es', 'pt');
 if (LATIM) M.usarModo('trilhas');
+M.usarEscada(ESCADA_INICIAL);
 if (ANTIGO) { M.DIAS_DOMINADO[1] = 7; M.ACUMULO.folga = Infinity; }   // os mesmos objetos de dentro do motor
 
 /* a chance de acerto em cada etapa; a estreia é um chute meio informado */
@@ -96,7 +109,8 @@ function escolher() {
 
 /* o atraso de cada revisão de dominado, por degrau: no período todo e nos dez
    dias depois da pausa */
-const ATRASOS = { todo: M.DIAS_DOMINADO.map(() => []), depois: M.DIAS_DOMINADO.map(() => []) };
+const NDEG = TROCA ? 7 : M.DIAS_DOMINADO.length;
+const ATRASOS = { todo: Array.from({ length: NDEG }, () => []), depois: Array.from({ length: NDEG }, () => []) };
 let depoisDaPausa = false;
 function anotarAtraso(est) {
   const i = Math.min(est.revisoes || 0, M.DIAS_DOMINADO.length - 1);
@@ -130,7 +144,16 @@ function responder(id) {
 const SESSOES = [[8, 30], [12, 30], [18, 30], [21, 30]];
 const inicio = AGORA;
 const pad = (x, n) => String(x).padStart(n);
+const DIARIO = [];   // um registro por dia estudado, para o resumo da troca de escada
 for (let d = 0; d < DIAS; d++) {
+  if (TROCA && d === TROCA - 1) {
+    M.usarEscada(PARA);
+    if (REMAPEAR) for (const id in p.cards) {
+      const e = p.cards[id];
+      if (e.revisoes) e.revisoes = REMAPA_DOS_INDICES[Math.min(e.revisoes, 5)];
+    }
+    console.log('— dia ' + d + ': a escada passa a ser «' + PARA + '»' + (REMAPEAR ? ', com os índices remapeados pela espera' : ', com o índice mantido') + ' —');
+  }
   if (PAUSA && d >= 30 && d < 30 + PAUSA) continue;
   depoisDaPausa = PAUSA > 0 && d >= 30 + PAUSA && d < 40 + PAUSA;
   let novos = 0, n = 0, chance = 0, ida = 0, volta = 0, meta = 0, doms = 0;
@@ -151,6 +174,7 @@ for (let d = 0; d < DIAS; d++) {
   }
   const fimDoDia = new DataFalsa().toISOString();
   const vencidos = p.dominados.filter(id => !M.esperando(p.cards[id], fimDoDia)).length;
+  DIARIO.push({ d: d + 1, novos, doms, n, vencidos, dominados: p.dominados.length });
   if (TODOS || d < 3 || (d + 1) % 10 === 0) {
     console.log('dia ' + pad(d + 1, 3) + '  novos ' + pad(novos, 3) + '  chance ' + pad(Math.round(100 * chance / n), 3) +
       '%  real ' + pad(Math.round(100 * novos / n), 3) + '%  ida ' + pad(Math.round(ida / n), 3) + '/' + Math.round(meta / n) +
@@ -180,5 +204,27 @@ const resumo = a => {
 for (const [chave, titulo] of [['todo', 'atraso dos dominados (dias), período todo'], ['depois', 'nos 10 dias depois da pausa']]) {
   if (chave === 'depois' && !PAUSA) continue;
   console.log(titulo + ':');
-  ATRASOS[chave].forEach((a, i) => console.log('  ' + NOMES[i].padEnd(12) + resumo(a)));
+  ATRASOS[chave].forEach((a, i) => console.log('  ' + (NOMES[i] || 'índice ' + i).padEnd(12) + resumo(a)));
+}
+
+/* ── o resumo da troca de escada (--troca): antes, cada semana depois e o total depois ── */
+if (TROCA) {
+  const media = a => a.reduce((x, y) => x + y, 0) / (a.length || 1);
+  const faixa = (de, ate) => DIARIO.filter(r => r.d >= de && r.d <= ate);
+  const linhaDe = (nome, f) => {
+    if (!f.length) return;
+    const respostas = f.reduce((x, r) => x + r.n, 0), doms = f.reduce((x, r) => x + r.doms, 0);
+    console.log('  ' + nome.padEnd(22) + pad(f.length, 4) + ' dias  doms/dia ' + pad(media(f.map(r => r.doms)).toFixed(1), 5) +
+      ' (pico ' + pad(Math.max(...f.map(r => r.doms)), 3) + ')  novos/dia ' + pad(media(f.map(r => r.novos)).toFixed(1), 5) +
+      ' (mín ' + pad(Math.min(...f.map(r => r.novos)), 3) + ')  doms/resp ' + pad((100 * doms / respostas).toFixed(1), 5) + '%' +
+      '  vencidos méd ' + pad(media(f.map(r => r.vencidos)).toFixed(0), 4) + ' máx ' + pad(Math.max(...f.map(r => r.vencidos)), 4) +
+      ' fim ' + pad(f[f.length - 1].vencidos, 4) + '  dominados no fim ' + pad(f[f.length - 1].dominados, 4));
+  };
+  console.log('\nresumo da troca (dia ' + TROCA + '; escada ' + ESCADA_INICIAL + ' → ' + PARA + (REMAPEAR ? ', remapeada' : ', índice mantido') + '):');
+  linhaDe('antes (dias 1–' + (TROCA - 1) + ')', faixa(1, TROCA - 1));
+  linhaDe('últimos 14 antes', faixa(TROCA - 14, TROCA - 1));
+  for (let w = 0; TROCA + 7 * w <= DIAS; w++) linhaDe('semana ' + (w + 1) + ' depois', faixa(TROCA + 7 * w, TROCA + 7 * w + 6));
+  linhaDe('depois, tudo', faixa(TROCA, DIAS));
+  const sem = DIARIO.filter(r => r.d >= TROCA && r.novos === 0);
+  console.log('  dias sem card novo depois da troca: ' + sem.length);
 }

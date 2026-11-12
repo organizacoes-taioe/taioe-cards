@@ -448,6 +448,36 @@ window.Motor = (function () {
   function modo() { return MODO; }
   function soIda() { return MODO === 'trilhas'; }
 
+  /* ── a escada do curso (decisão do Gere, 2026-11-11; PLANO.md §8, LATIM.md D47) ──
+     A «família» da escada é do curso, separada do modo: 'vivas' (padrão, 6 degraus) ou
+     'mortas' (latim e as próximas: 7 degraus, o nome é a espera de fato). O app chama
+     usarEscada junto com usarBaralho/usarModo; quem nunca chama fica nas vivas. Nenhum
+     código fora do motor escreve a quantidade de degraus: tudo sai de aqui. */
+  const ESCADAS = {
+    vivas: {
+      dias: [3, 5, 14, 30, 90, 180],
+      nominais: [3, 7, 14, 30, 90, 180],
+      pesoDoDegrau: [1, 2, 1, 1, 1, 1],
+      pesoNaVez: [2, 2, 1, 1, 1, 1],
+      umPorVezAte: 0,          // sem erro na vida, sobe 2 desde o primeiro degrau
+      presumido: 90            // o nivelamento só existe nas vivas
+    },
+    mortas: {
+      dias: [3, 4, 7, 14, 30, 90, 180],
+      nominais: [3, 4, 7, 14, 30, 90, 180],
+      pesoDoDegrau: [1, 2, 2, 1, 1, 1, 1],
+      pesoNaVez: [2, 2, 2, 1, 1, 1, 1],
+      umPorVezAte: 3,          // abaixo do índice 3 (2 semanas) sobe um por acerto
+      presumido: null
+    }
+  };
+  let ESCADA = 'vivas';
+  function usarEscada(nome) { ESCADA = ESCADAS[nome] ? nome : 'vivas'; }
+  function escada() { return ESCADA; }
+  function degraus() { return ESCADAS[ESCADA].dias.length; }
+  /* o índice do degrau da escada em uso pelo nome (3, 7, 14… dias), ou -1 */
+  function degrauDoNome(nominal) { return ESCADAS[ESCADA].nominais.indexOf(nominal); }
+
   /* distância de Levenshtein, a conta dos erros de «parecido».
      Duas letras vizinhas trocadas de lugar contam como UM deslize, e não dois:
      «la crata» por «la carta» caía como erro seco, e foi a mão que correu na
@@ -2094,18 +2124,17 @@ window.Motor = (function () {
        meio ano, 20 dias: 0,11.
      O presumido do nivelamento conta no degrau de três meses, onde nasce.
      Sem «agora» (nada vencido), vem o de data mais próxima, como antes. */
-  const PESO_DO_DEGRAU = [1, 2, 1, 1, 1, 1];
-  const PESO_NA_VEZ = [2, 2, 1, 1, 1, 1];
-
+  
   function degrauDoDominado(est) {
-    if (est.presumido) return DEGRAU_DO_PRESUMIDO;
-    return Math.min(est.revisoes || 0, DIAS_DOMINADO.length - 1);
+    if (est.presumido) return degrauDoPresumido();
+    return Math.min(est.revisoes || 0, degraus() - 1);
   }
 
   function urgenciaDoDominado(est, agora) {
     const i = degrauDoDominado(est);
     const atraso = est.voltaEm ? (Date.parse(agora) - Date.parse(est.voltaEm)) / 864e5 : 0;
-    return atraso / DIAS_DOMINADO[i] * PESO_DO_DEGRAU[i];
+    const E = ESCADAS[ESCADA];
+    return atraso / E.dias[i] * E.pesoDoDegrau[i];
   }
 
   /* O índice, em ids, do dominado que sai agora, ou null. estadoDe(id) dá o
@@ -2129,7 +2158,7 @@ window.Motor = (function () {
     let soma = 0;
     ids.forEach(id => {
       const e = estadoDe(id);
-      if (e && !esperando(e, agora)) soma += PESO_NA_VEZ[degrauDoDominado(e)];
+      if (e && !esperando(e, agora)) soma += ESCADAS[ESCADA].pesoNaVez[degrauDoDominado(e)];
     });
     return soma;
   }
@@ -2365,8 +2394,8 @@ window.Motor = (function () {
      É a única parte do app que olha o calendário, e só para os maduros. A
      fila tem 361 cards e todo card respondido volta para ela, então sem data
      o intervalo máximo seria uma passada pelo baralho — perto demais. */
-  const DIAS_DOMINADO = [3, 5, 14, 30, 90, 180];
-  const DIAS_NOMINAIS = [3, 7, 14, 30, 90, 180];
+  /* Desde 11/11/2026 as listas moram em ESCADAS (acima), uma por família de curso;
+     DIAS_DOMINADO e DIAS_NOMINAIS, exportados, são as da escada em uso. */
 
   /* ── a espera sorteada (pedido do Gere, 17/10/2026) ──
      Para escolher os intervalos com dado, e não com palpite, cada volta é
@@ -2390,7 +2419,7 @@ window.Motor = (function () {
   }
 
   function proximaVolta(revisoes, agora, fator) {
-    const dias = DIAS_DOMINADO[Math.min(revisoes || 0, DIAS_DOMINADO.length - 1)];
+    const dias = ESCADAS[ESCADA].dias[Math.min(revisoes || 0, degraus() - 1)];
     const d = agora ? new Date(agora) : new Date();
     d.setTime(d.getTime() + dias * (fator === undefined ? fatorDaVolta() : fator) * 864e5);
     return d.toISOString();
@@ -2573,8 +2602,10 @@ window.Motor = (function () {
         /* Quem nunca errou — nem antes de dominar, nem nas revisões — sobe
            de dois em dois: 3 dias, 2 semanas, 3 meses, 6 meses. Um erro em
            qualquer momento da vida do card devolve o passo de um. */
-        est.revisoes = Math.min(DIAS_DOMINADO.length - 1,
-          (est.revisoes || 0) + (est.erros ? 1 : 2));
+        /* Nas línguas mortas, abaixo da «2 semanas» sobe um degrau por acerto, erro ou não. */
+        const atual = est.revisoes || 0;
+        const passo = (est.erros || atual < ESCADAS[ESCADA].umPorVezAte) ? 1 : 2;
+        est.revisoes = Math.min(degraus() - 1, atual + passo);
       } else if (r.modo === 'multipla') {
         if (inversa) est.etapa = 'inversa-escrita';
         else est.etapa = 'escrita';
@@ -3785,7 +3816,11 @@ window.Motor = (function () {
      (volta, escrita), com o espaçamento que os dominados já têm. Este é o
      estado que ele mostra à fila — calculado, NUNCA gravado: o estado só
      nasce de resposta de verdade (responderPresumido). */
-  const DEGRAU_DO_PRESUMIDO = DIAS_DOMINADO.indexOf(90);   // 4: o degrau de três meses
+  const DEGRAU_DO_PRESUMIDO = ESCADAS.vivas.dias.indexOf(90);   // 4: o degrau de três meses (só nas vivas)
+  function degrauDoPresumido() {
+    const p = ESCADAS[ESCADA].presumido;
+    return p == null ? DEGRAU_DO_PRESUMIDO : ESCADAS[ESCADA].dias.indexOf(p);
+  }
 
   function estadoDoPresumido(id, estados) {
     const volta = presumidoEm(id, estados);
@@ -3804,7 +3839,7 @@ window.Motor = (function () {
     if (r && r.acertou) {
       est.etapa = 'dominado';
       registrar(est, r);
-      est.revisoes = DEGRAU_DO_PRESUMIDO;
+      est.revisoes = degrauDoPresumido();
       est.voltaEm = proximaVolta(est.revisoes, est.ultima);
       est.dominadoEm = est.ultima;
     } else {
@@ -4551,8 +4586,15 @@ window.Motor = (function () {
     descontoDePassos, acertosParaVirar, ACERTOS_PARA_VIRAR,
     linguaDaPergunta, linguaDaResposta,
     temVariante, formaDoCard, formasDoCard, sortearForma, idiomaDoCard,
-    distanciaNaFila, esperando, proximaVolta, DIAS_DOMINADO, DIAS_NOMINAIS, VARIACAO_DA_VOLTA,
-    urgenciaDoDominado, dominadoDaVez, pesoDosVencidos, PESO_DO_DEGRAU, PESO_NA_VEZ, ACUMULO, parteDosDominados,
+    distanciaNaFila, esperando, proximaVolta, VARIACAO_DA_VOLTA,
+    urgenciaDoDominado, dominadoDaVez, pesoDosVencidos, ACUMULO, parteDosDominados,
+    /* a escada da família do curso (usarEscada); os getters devolvem a lista da escada em uso */
+    usarEscada, escada, degraus, degrauDoNome, ESCADAS,
+    get DIAS_DOMINADO() { return ESCADAS[ESCADA].dias; },
+    get DIAS_NOMINAIS() { return ESCADAS[ESCADA].nominais; },
+    get PESO_DO_DEGRAU() { return ESCADAS[ESCADA].pesoDoDegrau; },
+    get PESO_NA_VEZ() { return ESCADAS[ESCADA].pesoNaVez; },
+    get UM_POR_VEZ_ATE() { return ESCADAS[ESCADA].umPorVezAte; },
     tempoConfiavel, MS_ABANDONO,
     contarDirecoes,
     filaDe, chancesDasFilas, chanceDoNovo, chanceDaIda, chanceDoProximoNovo, escolherProximo,

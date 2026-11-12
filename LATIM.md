@@ -935,3 +935,20 @@ não na forma.
 Sem a volta, o card do latim sai da ida direto para os dominados, e com a meta das línguas vivas
 (30 a 50 na ida) ficavam menos cards em jogo. Desde 07/11/2026 a meta do modo trilhas é metade
 maior, de 45 a 75 (`ALVO_IDA_TRILHAS` no motor; o Gere: «50% a mais que a meta das línguas vivas»).
+
+## 18. A escada das línguas mortas (pedido de 11/11, D47)
+
+**D47. As línguas mortas têm escada própria.** O latim não tem volta nem nivelamento e é lido mais devagar:
+a escada das vivas (3, 5, 14… dias) o faz esperar demais no começo. A escada do latim passa a ter **7 degraus**,
+com o nome igual à espera de fato: **3 dias, 4 dias, 1 semana, 2 semanas, 1 mês, 3 meses, 6 meses**. Abaixo das
+2 semanas sobe um degrau por acerto (mesmo sem nunca ter errado); dali para cima, a regra das vivas (sem erro
+sobe dois). Errar desce um. O que vale é do curso (`escada: 'mortas'` em `inicio.js` e em `cards.cursos.escada`),
+não do modo; as próximas línguas mortas herdam. Os cards de latim que já estavam dominados ficam com o índice e a
+data marcada que tinham, e a escada nova vale da próxima resposta; o histórico estatístico anterior é remarcado
+pelo nome antigo. Detalhe e dados no `PLANO.md` §8.
+
+Simulado (aluno inventado, 91 dias depois da troca no dia 60; `simular-fila.js --latim --troca=60`): contra a
+escada antiga, a nova com o índice mantido dá 20% a 24% mais revisões de dominados por dia (55,7 → 67,4 no aluno
+normal; 58,2 → 72,3 no forte) e 18% a 23% menos cards novos por dia (13,4 → 11,0; 16,6 → 12,8), sem nenhum dia
+sem card novo. Remapear os índices pela espera custa um pouco menos (64,1 revisões e 11,5 novos; 70,5 e 13,6),
+e o custo restante é o da própria escada (a referência «nova desde o dia 1» dá o mesmo).

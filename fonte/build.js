@@ -371,6 +371,7 @@ for (const { idioma, cards } of baralhos) {
   /* o latim se confere no modo dele (só a ida, e o funil que não iguala plural nem tira o
      pronome: ver usarModo no motor); os outros, no de sempre */
   Motor.usarModo(idioma === 'la' ? 'trilhas' : 'livre');
+  Motor.usarEscada(idioma === 'la' ? 'mortas' : 'vivas');
   /* as línguas de quem estuda este baralho são as outras duas */
   const audiencias = audienciasDe(idioma);
   const textos = new Map();
@@ -592,6 +593,7 @@ for (const bruto of cards) {
 }
 
 Motor.usarModo('livre');
+Motor.usarEscada('vivas');
 
 /* ── dicionário de temas ──
    Vira data/tags.js, e não um .json buscado por fetch, pela mesma razão do

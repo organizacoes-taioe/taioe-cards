@@ -309,6 +309,22 @@ certa diz quanto ganhou: **«volta em 2 semanas»**.
 | 4ª | 3 meses | 6 meses |
 | daí em diante | 6 meses | 6 meses |
 
+Essa é a escada das línguas **vivas**. As **mortas** (o latim) têm a sua, de sete degraus, com o nome igual à
+espera de fato (`Motor.ESCADAS`; a família é a do curso, `escada` em `inicio.js`):
+
+| Degrau (índice) | Volta em (mortas) | Cor no gráfico (mortas) | Volta em (vivas; de fato) | Cor (vivas) |
+|---|---:|---|---:|---|
+| 0 | 3 dias | ametista | 3 dias | ametista |
+| 1 | 4 dias | turquesa | 1 semana (5 dias) | turquesa |
+| 2 | 1 semana | esmeralda | 2 semanas | esmeralda |
+| 3 | 2 semanas | topázio | 1 mês | topázio |
+| 4 | 1 mês | peridoto (`--escada-6`) | 3 meses | quartzo rosa |
+| 5 | 3 meses | quartzo rosa | 6 meses | branco |
+| 6 | 6 meses | branco | — | — |
+
+Nas mortas, abaixo de 2 semanas o card sobe um degrau por acerto, e só dali em diante vale o salto de dois de
+quem nunca errou (decisão de 11/11/2026, `PLANO.md` §8 e `LATIM.md` D47).
+
 **Quem nunca errou sobe de dois em dois.** Card sem nenhum erro na vida — nem
 antes de dominar, nem nas revisões — pula um degrau a cada revisão certa. Um
 erro em qualquer momento devolve o passo de um.

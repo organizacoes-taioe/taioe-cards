@@ -503,6 +503,63 @@ ok(doVerso.every(c => M.ehCompreensaoDoVerso(c.id)) && !M.ehCompreensaoDoVerso('
   ok(e.etapa === 'dominado' && M.filaDe(e) === 'fora', 'a pergunta do trecho: o acerto de primeira fecha de vez');
 }
 
+/* ═══════════ a escada das línguas mortas (o Gere, 11/11/2026; LATIM.md D47) ═══════════ */
+secao('a escada das línguas mortas');
+{
+  const dominadoEm = (revisoes, erros) => {
+    const e = M.estadoInicial('la-p001');
+    e.etapa = 'dominado'; e.dominadoEm = new Date().toISOString(); e.ateDominar = 1;
+    e.revisoes = revisoes; e.erros = erros || 0; e.vistas = 5;
+    return e;
+  };
+  const acerta = e => { M.registrar(e, { acertou: true, modo: 'escrita', direcao: IDA, resposta: 'x' }); return e; };
+  const erra = e => { M.registrar(e, { acertou: false, modo: 'escrita', direcao: IDA, resposta: 'x' }); return e; };
+  const agora = () => new Date().toISOString();
+
+  M.usarEscada('mortas');
+  ok(M.escada() === 'mortas' && M.degraus() === 7, 'usarEscada(mortas): 7 degraus');
+  ok(M.DIAS_DOMINADO.join() === '3,4,7,14,30,90,180' && M.DIAS_NOMINAIS.join() === '3,4,7,14,30,90,180',
+    'mortas: espera de fato = nome (3, 4, 1 semana, 2 semanas, 1 mês, 3 meses, 6 meses)');
+  ok(M.PESO_DO_DEGRAU.join() === '1,2,2,1,1,1,1' && M.PESO_NA_VEZ.join() === '2,2,2,1,1,1,1', 'mortas: pesos da urgência e da vez');
+  /* abaixo do índice 3, um degrau por acerto, mesmo para quem nunca errou */
+  [0, 1, 2].forEach(i => ok(acerta(dominadoEm(i, 0)).revisoes === i + 1, 'sem nunca errar, índice ' + i + ' sobe um (' + (i + 1) + ')'));
+  /* do índice 3 para cima vale a regra das vivas: sem erro sobe 2, com erro sobe 1; o teto é o 6 */
+  ok(acerta(dominadoEm(3, 0)).revisoes === 5, 'índice 3 sem erro: sobe dois (5)');
+  ok(acerta(dominadoEm(3, 1)).revisoes === 4, 'índice 3 com erro: sobe um (4)');
+  ok(acerta(dominadoEm(4, 0)).revisoes === 6, 'índice 4 sem erro: sobe dois (6)');
+  ok(acerta(dominadoEm(5, 0)).revisoes === 6 && acerta(dominadoEm(6, 0)).revisoes === 6, 'o teto é o índice 6');
+  ok(acerta(dominadoEm(5, 1)).revisoes === 6, 'índice 5 com erro: sobe um (6)');
+  /* o erro desce um */
+  ok(erra(dominadoEm(4, 0)).revisoes === 3 && erra(dominadoEm(0, 0)).revisoes === 0, 'o erro desce um degrau, sem passar de 0');
+  /* a data de volta usa os dias da escada nova (de metade ao dobro) */
+  [0, 1, 2, 3, 4, 5, 6].forEach(i => {
+    const dias = M.DIAS_DOMINADO[i];
+    const t0 = agora();
+    const lo = (Date.parse(M.proximaVolta(i, t0, 0.5)) - Date.parse(t0)) / 864e5;
+    const hi = (Date.parse(M.proximaVolta(i, t0, 2)) - Date.parse(t0)) / 864e5;
+    ok(Math.abs(lo - dias / 2) < 1e-6 && Math.abs(hi - dias * 2) < 1e-6, 'índice ' + i + ': a volta sorteada vai de ' + dias / 2 + ' a ' + dias * 2 + ' dias');
+  });
+  /* a urgência e o degrau do dominado seguem a escada em uso */
+  {
+    const e = dominadoEm(2, 1); e.voltaEm = new Date(Date.now() - 7 * 864e5).toISOString();
+    ok(Math.abs(M.urgenciaDoDominado(e, agora()) - (7 / 7) * 2) < 0.01, 'urgência do índice 2: atraso ÷ 7 dias × peso 2');
+    ok(M.degrauDoNome(7) === 2 && M.degrauDoNome(3) === 0 && M.degrauDoNome(180) === 6, 'degrauDoNome nas mortas');
+  }
+  ok(M.DEGRAU_DO_PRESUMIDO === 4, 'o presumido existe só nas vivas (constante das vivas)');
+
+  /* as vivas ficam como eram */
+  M.usarEscada('vivas');
+  ok(M.escada() === 'vivas' && M.degraus() === 6, 'usarEscada(vivas): 6 degraus');
+  ok(M.DIAS_DOMINADO.join() === '3,5,14,30,90,180' && M.DIAS_NOMINAIS.join() === '3,7,14,30,90,180', 'vivas: 3, 5 (de fato), 14, 30, 90, 180; nomes 3, 7…');
+  ok(M.PESO_DO_DEGRAU.join() === '1,2,1,1,1,1' && M.PESO_NA_VEZ.join() === '2,2,1,1,1,1', 'vivas: pesos como eram');
+  ok(acerta(dominadoEm(0, 0)).revisoes === 2 && acerta(dominadoEm(0, 1)).revisoes === 1 && acerta(dominadoEm(4, 0)).revisoes === 5 && acerta(dominadoEm(5, 0)).revisoes === 5,
+    'vivas: sem erro sobe dois desde o primeiro degrau; com erro um; teto 5');
+  ok(erra(dominadoEm(3, 0)).revisoes === 2, 'vivas: o erro desce um');
+  ok(M.degrauDoNome(7) === 1 && M.degrauDoNome(180) === 5, 'degrauDoNome nas vivas');
+  M.usarEscada('qualquer');
+  ok(M.escada() === 'vivas', 'escada desconhecida vira vivas');
+}
+
 M.usarModo('livre');
 ok(!M.soIda(), 'de volta ao modo livre');
 

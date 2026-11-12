@@ -28,7 +28,9 @@
     'fr-es': { lingua: 'fr', audiencia: 'es', bandeira: '🇫🇷' },
     'fr-en': { lingua: 'fr', audiencia: 'en', bandeira: '🇫🇷' },
     /* o latim (21/10/2026) só para quem fala português, e só pelos textos (cards/LATIM.md) */
-    'la-pt': { lingua: 'la', audiencia: 'pt', bandeira: '🇻🇦', modo: 'trilhas' },
+    'la-pt': { lingua: 'la', audiencia: 'pt', bandeira: '🇻🇦', modo: 'trilhas', escada: 'mortas' },
+    /* escada: a família da escada dos dominados (Motor.ESCADAS), do curso e separada do modo:
+       'vivas' (padrão) ou 'mortas', de 7 degraus; o servidor tem o mesmo em cards.cursos.escada */
     /* o italiano (08/11/2026) só para quem fala português, no modo de sempre */
     'it-pt': { lingua: 'it', audiencia: 'pt', bandeira: '🇮🇹' }
   };
@@ -238,6 +240,7 @@
       curso: curso, lingua: c.lingua, audiencia: c.audiencia, nomeCurso: nomeDoCurso(curso, c.audiencia), bandeira: c.bandeira,
       /* «trilhas» no latim: só pelos textos, só a ida (cards/LATIM.md §10) */
       modo: c.modo || 'livre',
+      escada: c.escada || 'vivas',
       /* os outros cursos ativos para quem fala a mesma língua */
       outrosCursos: cursosDa(c.audiencia).filter(function (k) { return k !== curso; }),
       /* todos, na ordem de sempre, para os botões das línguas no topo */
