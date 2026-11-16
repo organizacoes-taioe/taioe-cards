@@ -242,7 +242,11 @@ window.Motor = (function () {
      vogal antes de outra. «Um copo d'água» é «um copo de água», e a
      pontuação viraria espaço logo adiante, deixando um «d» solto. */
   function prePt(s) {
-    return s.replace(/\bd['’´`]\s*/g, 'de ');
+    return s.replace(/\bd['’´`]\s*/g, 'de ')
+      /* «Chegamos ao meio-dia» e «chegamos meio-dia» são a mesma frase no português falado (o
+         Gere, 16/11/2026, no u580: «no português coloquial, não precisa de "ao" antes de
+         "meio-dia»»); vale também para «à meia-noite». O acento já saiu: «à» chega «a». */
+      .replace(/\b(?:ao|a)\s+(meio[-\s]*dia|meia[-\s]*noite)\b/g, '$1');
   }
 
   /* Ajustes que precisam do texto ainda inteiro, antes de a pontuação virar
