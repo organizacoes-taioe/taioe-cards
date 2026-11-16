@@ -123,5 +123,12 @@ ok(M.porExtenso('1920', 'en').includes('nineteen twenty'), 'o ano em inglês');
 ok(M.porExtenso('1945', 'it').includes('millenovecentoquarantacinque'), 'o ano em italiano');
 ok(M.porExtenso('71', 'fr').includes('soixante et onze'), 'o 71 em francês');
 
+/* «ao» antes de «meio-dia» é opcional no português falado (16/11, u580) */
+const cume = frase('Llegamos a la cumbre a mediodía.', 'Chegamos ao cume ao meio-dia.');
+ok(ida(cume, 'chegamos ao cume meio-dia') === 'certo', 'sem o «ao» antes de «meio-dia»: certo');
+ok(ida(cume, 'chegamos ao cume ao meio dia') === 'certo', 'com o «ao»: certo');
+const noite = frase('x', 'Ele chegou à meia-noite.');
+ok(ida(noite, 'ele chegou meia noite') === 'certo', 'sem o «à» antes de «meia-noite»: certo');
+
 console.log(falhas ? falhas + ' de ' + feitos + ' falharam' : 'testar-quase: ' + feitos + ' conferências, tudo certo');
 process.exit(falhas ? 1 : 0);
