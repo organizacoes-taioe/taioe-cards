@@ -3074,8 +3074,7 @@
     "nao faz diferenca",
     "me e indiferente",
     "e indiferente",
-    "pouco importa",
-    "que seja"
+    "pouco importa"
    ],
    "aceitasEn": [
     "i dont mind",
@@ -4423,7 +4422,7 @@
     "alright"
    ],
    "distratores": [
-    "Que tal isso? / Gostou?",
+    "Quem é esse? / Apresente.",
     "Qual deles? / Escolha um.",
     "O que é isso? / Explique.",
     "Quanto custa? / Qual o preço?"
@@ -4456,7 +4455,6 @@
     "estou a fim de dormir",
     "bateu uma vontade de dormir",
     "to com vontade de dormir",
-    "estou com sono",
     "deu vontade de dormir"
    ],
    "aceitasEn": [
@@ -4971,7 +4969,11 @@
     "eu contei pra ele ontem",
     "falei isso para ele ontem",
     "eu disse a ele ontem",
-    "contei isso a ele ontem"
+    "contei isso a ele ontem",
+    "eu disse isso a ela ontem",
+    "eu disse isso a eles ontem",
+    "eu disse isso para ele ontem",
+    "eu disse isso para ela ontem"
    ],
    "aceitasEn": [
     "i told him that yesterday",
@@ -4984,7 +4986,7 @@
     "Ele me disse ontem.",
     "Eu disse a ele hoje.",
     "Disseram-me ontem.",
-    "Eu disse isso para você ontem."
+    "Ele disse isso a mim ontem."
    ],
    "distratoresEn": [
     "He told me that yesterday.",
@@ -5201,7 +5203,7 @@
    "id": "f056",
    "tipo": "frase",
    "es": "El que mucho abarca, poco aprieta.",
-   "pt": "Quem muito quer, nada tem.",
+   "pt": "Quem tudo quer, tudo perde.",
    "en": "Don't bite off more than you can chew.",
    "aceitas": [
     "quem muito quer nada tem",
@@ -7470,7 +7472,7 @@
    ],
    "distratores": [
     "Está chovendo devagar.",
-    "Está chovendo em cântaros.",
+    "Está chovendo só de manhã.",
     "Está garoando bem pouco.",
     "Está prestes a chover."
    ],
@@ -8976,7 +8978,6 @@
     "eu estive la",
     "estive la",
     "eu estive ali",
-    "eu fui la",
     "eu estive naquele lugar",
     "estive por la"
    ],
@@ -9372,8 +9373,7 @@
    "en": "She wanted to help.",
    "aceitas": [
     "ela quis ajudar",
-    "quis ajudar",
-    "ela tentou ajudar"
+    "quis ajudar"
    ],
    "aceitasEn": [
     "she wanted to help",
@@ -9659,9 +9659,7 @@
     "eu o vi ontem",
     "vi ele ontem",
     "eu vi ele ontem",
-    "o vi ontem",
-    "eu o vi na ultima vez ontem",
-    "eu vi ela ontem"
+    "o vi ontem"
    ],
    "aceitasEn": [
     "i saw him yesterday",
@@ -10063,8 +10061,7 @@
    "aceitas": [
     "ele pediu a conta",
     "pediu a conta",
-    "ele pediu a conta ao garcom",
-    "ele chamou a conta"
+    "ele pediu a conta ao garcom"
    ],
    "aceitasEn": [
     "he asked for the bill",
@@ -10592,7 +10589,6 @@
    "aceitas": [
     "eu teria vindo antes",
     "teria vindo antes",
-    "tinha vindo antes",
     "eu teria chegado antes",
     "eu teria vindo mais cedo"
    ],
@@ -11105,7 +11101,6 @@
    "aceitas": [
     "eu nao gosto de esperar",
     "nao gosto de esperar",
-    "eu odeio esperar",
     "nao gosto de ficar esperando"
    ],
    "aceitasEn": [
@@ -18274,8 +18269,7 @@
    "aceitas": [
     "o jantar esta pronto",
     "a janta esta pronta",
-    "o jantar ja esta pronto",
-    "a comida esta pronta"
+    "o jantar ja esta pronto"
    ],
    "aceitasEn": [
     "dinner is ready",
@@ -18654,7 +18648,9 @@
     "quebrou o quadril ao cair",
     "ele fraturou o quadril ao cair",
     "ele quebrou a bacia ao cair",
-    "ele quebrou o quadril na queda"
+    "ele quebrou o quadril na queda",
+    "ela quebrou o quadril ao cair",
+    "ela fraturou o quadril ao cair"
    ],
    "aceitasEn": [
     "he broke his hip when he fell",
@@ -18792,7 +18788,9 @@
     "ele levou um desgosto muito grande",
     "ele teve um grande aborrecimento",
     "foi um grande aborrecimento para ele",
-    "ele teve um desgosto muito grande"
+    "ele teve um desgosto muito grande",
+    "ela teve um aborrecimento muito grande",
+    "ela levou um desgosto muito grande"
    ],
    "aceitasEn": [
     "he was very badly upset",
@@ -21939,8 +21937,7 @@
     "um passaro fez o ninho na varanda",
     "um passaro fez ninho na varanda",
     "um passarinho fez o ninho na varanda",
-    "um passaro fez o ninho na sacada",
-    "um passaro fez o ninho no balcao"
+    "um passaro fez o ninho na sacada"
    ],
    "aceitasEn": [
     "a bird built its nest on the balcony",
@@ -23163,7 +23160,7 @@
     "we ordered a plate of cured ham"
    ],
    "distratores": [
-    "Pedimos uma porção de suspeito.",
+    "Pedimos uma porção de lagosta.",
     "Pedimos uma porção de queijo.",
     "Pedimos uma porção de lula.",
     "Pedimos uma porção de batata."
@@ -23986,7 +23983,7 @@
     "the pineapple is overripe"
    ],
    "distratores": [
-    "A pinha está muito madura.",
+    "A cereja está muito madura.",
     "A banana está muito madura.",
     "O abacaxi está muito verde.",
     "A manga está muito madura."
@@ -30753,7 +30750,7 @@
    ],
    "distratores": [
     "Você vem na terça?",
-    "Terça você está livre?",
+    "Terça você vai trabalhar?",
     "Você chegou bem na terça?",
     "Terça foi bom para você?"
    ],
@@ -33585,9 +33582,7 @@
    "aceitas": [
     "cortei o cabelo",
     "eu cortei o cabelo",
-    "cortei meu cabelo",
-    "cortei o cabelo ontem",
-    "fui cortar o cabelo"
+    "cortei meu cabelo"
    ],
    "aceitasEn": [
     "i got my hair cut",
@@ -36037,7 +36032,7 @@
     "put the coat on the hanger"
    ],
    "distratores": [
-    "Pendura o casaco no gancho.",
+    "Pendura o casaco no sofá.",
     "Pendura o casaco no armário.",
     "Pendura o casaco no varal.",
     "Pendura o casaco no encosto."
@@ -36471,7 +36466,6 @@
    "en": "The mayor works at city hall.",
    "aceitas": [
     "o prefeito trabalha na prefeitura",
-    "o prefeito trabalha na camara municipal",
     "o prefeito trabalha na prefeitura da cidade"
    ],
    "aceitasEn": [
@@ -38954,8 +38948,7 @@
     "estou saindo agora",
     "estou prestes a sair",
     "ja estou saindo",
-    "estou quase saindo",
-    "estou na hora de sair"
+    "estou quase saindo"
    ],
    "aceitasEn": [
     "i am about to leave",
@@ -39056,7 +39049,7 @@
    "distratores": [
     "Me dá raiva ver ele assim.",
     "Me dá medo ver ele assim.",
-    "Fico com vergonha de ver ele assim.",
+    "Fico com inveja de ver ele assim.",
     "Me dá vontade de ver ele assim."
    ],
    "distratoresEn": [
@@ -39546,7 +39539,7 @@
     "cotidiano",
     "gramática"
    ],
-   "nota": "«Sin querer» é sem intenção, e o contrário é «a propósito» ou «aposta» na Espanha. Quem quer tirar a culpa de si diz «se me rompió el vaso», com o copo de sujeito.",
+   "nota": "«Sin querer» é sem intenção, e o contrário é «a propósito» ou «adrede». Quem quer tirar a culpa de si diz «se me rompió el vaso», com o copo de sujeito.",
    "notaEn": "«Sin querer» means by accident; the opposite is «a propósito». To shed the blame entirely Spanish says «se me rompió el vaso».",
    "requerTodas": [
     "p377",
@@ -39787,10 +39780,8 @@
    "aceitas": [
     "ja que voce esta ai me traz agua",
     "ja que esta ai me traz agua",
-    "ja que voce ja esta de pe me traz agua",
     "aproveita que esta ai e me traz agua",
-    "ja que voce esta ai traz agua para mim",
-    "ja que esta em pe me traz agua"
+    "ja que voce esta ai traz agua para mim"
    ],
    "aceitasEn": [
     "since you are up bring me some water",
@@ -40051,7 +40042,7 @@
     "saúde",
     "cotidiano"
    ],
-   "nota": "«Pedir cita» é marcar; «tener cita» é já ter a hora marcada. No posto de saúde pede-se «cita previa», e no consultório particular se diz «hora».",
+   "nota": "«Pedir cita» é marcar; «tener cita» é já ter a hora marcada. No posto de saúde pede-se «cita previa».",
    "notaEn": "«Pedir cita» is to book; «tener cita» is to have the slot already. Health centres ask for «cita previa».",
    "regionaisEs": {
     "Pedí cita con {el médico|la médica}.": "na América Latina"
@@ -40587,9 +40578,7 @@
    "aceitas": [
     "o espelho esta quebrado",
     "o espelho ta quebrado",
-    "o espelho esta trincado",
-    "o espelho esta partido",
-    "o espelho esta rachado"
+    "o espelho esta partido"
    ],
    "aceitasEn": [
     "the mirror is broken",
@@ -41706,7 +41695,7 @@
    ],
    "distratores": [
     "Desce no próximo cruzamento.",
-    "Desce na próxima estação.",
+    "Desce na próxima rua.",
     "Desce na próxima esquina.",
     "Desce no próximo semáforo."
    ],
@@ -42468,9 +42457,7 @@
    "en": "Put a wash on before you go out.",
    "aceitas": [
     "liga a maquina de lavar antes de sair",
-    "ligue a maquina de lavar antes de sair",
-    "poe a roupa na maquina antes de sair",
-    "deixa a maquina de lavar ligada antes de sair"
+    "ligue a maquina de lavar antes de sair"
    ],
    "aceitasEn": [
     "put a wash on before you go out",
@@ -43273,7 +43260,7 @@
    ],
    "distratores": [
     "Faz a redação da escola antes de jantar.",
-    "Faz o trabalho da escola antes de jantar.",
+    "Faz o lanche da escola antes de jantar.",
     "Faz a mochila da escola antes de jantar.",
     "Faz as contas do mercado antes de jantar."
    ],
@@ -54826,8 +54813,7 @@
    "aceitas": [
     "diretor",
     "a diretora",
-    "diretora",
-    "o gerente"
+    "diretora"
    ],
    "aceitasEn": [
     "director",
@@ -56102,7 +56088,7 @@
     "o gato",
     "o lobo",
     "o porco",
-    "o pêlo"
+    "o pelo"
    ],
    "distratoresEn": [
     "the cat",
@@ -57144,7 +57130,7 @@
     "encerar",
     "terminar",
     "enterrar",
-    "cerrar"
+    "cerzir"
    ],
    "distratoresEn": [
     "to wax",
@@ -57688,7 +57674,7 @@
     "magro",
     "gorro",
     "forte",
-    "grosso"
+    "fraco"
    ],
    "distratoresEn": [
     "thin",
@@ -58739,7 +58725,7 @@
    ],
    "distratores": [
     "a calabresa",
-    "a cabaça",
+    "a berinjela",
     "a abobrinha",
     "a cenoura"
    ],
@@ -58911,7 +58897,9 @@
     "cadeia",
     "a prisao",
     "prisao",
-    "o presidio"
+    "o presidio",
+    "o carcere",
+    "carcere"
    ],
    "aceitasEn": [
     "prison",
@@ -58920,7 +58908,7 @@
     "the jail"
    ],
    "distratores": [
-    "o cárcere",
+    "o manicômio",
     "o tribunal",
     "a delegacia",
     "a algema"
@@ -59787,7 +59775,6 @@
    "en": "the can",
    "aceitas": [
     "lata",
-    "o saco",
     "a chatice"
    ],
    "aceitasEn": [
@@ -60505,8 +60492,7 @@
    "pt": "a orelha",
    "en": "the ear",
    "aceitas": [
-    "orelha",
-    "o ouvido"
+    "orelha"
    ],
    "aceitasEn": [
     "ear",
@@ -60621,10 +60607,10 @@
     "dough"
    ],
    "distratores": [
-    "a pasta",
     "o molho",
     "o pastel",
-    "a pista"
+    "a pista",
+    "o pastor"
    ],
    "distratoresEn": [
     "the folder",
@@ -62040,7 +62026,7 @@
    "distratores": [
     "rápido",
     "lenço",
-    "lerdo",
+    "lindo",
     "leve"
    ],
    "distratoresEn": [
@@ -62510,7 +62496,6 @@
    "aceitas": [
     "roxo",
     "roxa",
-    "lilas",
     "morado"
    ],
    "aceitasEn": [
@@ -62933,8 +62918,7 @@
    "aceitas": [
     "colar",
     "bater",
-    "grudar",
-    "grampear"
+    "grudar"
    ],
    "aceitasEn": [
     "to stick",
@@ -62946,8 +62930,8 @@
    "distratores": [
     "pagar",
     "pescar",
-    "pegar",
-    "apagar"
+    "apagar",
+    "pesar"
    ],
    "distratoresEn": [
     "to pay / to settle",
@@ -63552,7 +63536,8 @@
    "pt": "quinto",
    "en": "fifth",
    "aceitas": [
-    "quinto"
+    "quinto",
+    "quinta"
    ],
    "aceitasEn": [
     "fifth",
@@ -63561,8 +63546,8 @@
    "distratores": [
     "quarto",
     "sexto",
-    "quinta",
-    "quinze"
+    "quinze",
+    "cinco"
    ],
    "distratoresEn": [
     "fourth",
@@ -64825,8 +64810,7 @@
    "en": "behind / back",
    "aceitas": [
     "atras",
-    "para tras",
-    "detras"
+    "para tras"
    ],
    "aceitasEn": [
     "behind",
@@ -64966,7 +64950,7 @@
     "substantivo",
     "viagem"
    ],
-   "nota": "Masculino no dia a dia («el mar Mediterráneo»), feminino no poema e na boca de pescador: «la mar». «Hacer un mar de dudas», cheio de dúvidas.",
+   "nota": "Masculino no dia a dia («el mar Mediterráneo»), feminino no poema e na boca de pescador: «la mar». «Estar hecho un mar de dudas», estar cheio de dúvidas.",
    "notaEn": "Masculine in everyday use, feminine in poetry and among sailors: «la mar»."
   },
   {
@@ -65085,8 +65069,7 @@
     "vidro",
     "o cristal",
     "a vidraca",
-    "cristal",
-    "a janela"
+    "cristal"
    ],
    "aceitasEn": [
     "glass",
@@ -66251,7 +66234,7 @@
    ],
    "distratores": [
     "gordo",
-    "fraco de saúde",
+    "forte",
     "frouxo",
     "frágil"
    ],
@@ -66266,7 +66249,7 @@
     "adjetivo",
     "falso-amigo"
    ],
-   "nota": "Magro, não fraco: «está muy flaco». «Punto flaco», ponto fraco, é o único lugar onde ele quer dizer fraco.",
+   "nota": "Magro: «está muy flaco». Também fraco, em sentido figurado: «punto flaco», ponto fraco; «flaca memoria».",
    "notaEn": "Thin, not weak. «Punto flaco», weak spot.",
    "sinonimosEs": [
     "delgado"
@@ -67073,7 +67056,6 @@
    "en": "the jararacussu",
    "aceitas": [
     "jararacucu",
-    "a jararaca",
     "a cobra"
    ],
    "aceitasEn": [
@@ -67526,8 +67508,7 @@
    "en": "the villager",
    "aceitas": [
     "aldeao",
-    "o campones",
-    "a aldea"
+    "o campones"
    ],
    "aceitasEn": [
     "villager",
@@ -68128,7 +68109,7 @@
     "fighting"
    ],
    "distratores": [
-    "a peleja",
+    "a pelagem",
     "a plateia",
     "a pele",
     "a peneira"
@@ -68926,9 +68907,9 @@
    ],
    "distratores": [
     "Esse menino é meu vizinho.",
-    "Esse senhor é meu vizinho.",
-    "Esse rapaz é meu vizinho.",
-    "Esse velho é meu vizinho."
+    "Esse garoto é meu vizinho.",
+    "Essa mulher é minha vizinha.",
+    "Esse homem é meu primo."
    ],
    "distratoresEn": [
     "That boy is my neighbour.",
@@ -69282,7 +69263,7 @@
    "distratores": [
     "É normal que ele não tenha ligado.",
     "É bom que ele não tenha ligado.",
-    "É claro que ele não tenha ligado.",
+    "É óbvio que ele não ligou.",
     "É triste que ele não tenha ligado."
    ],
    "distratoresEn": [
@@ -70316,7 +70297,6 @@
     "a crise representou um prejuizo economico",
     "a crise significou uma perda economica",
     "a crise causou um prejuizo economico",
-    "a crise representou um quebranto economico",
     "a crise representou uma perda economica",
     "a crise foi um prejuizo economico"
    ],
@@ -72620,8 +72600,7 @@
    "en": "so much",
    "aceitas": [
     "tanto",
-    "tanta",
-    "tao"
+    "tanta"
    ],
    "aceitasEn": [
     "so much",
@@ -73397,7 +73376,6 @@
    "aceitas": [
     "infeccionar",
     "infectar",
-    "inflamar",
     "infectar-se"
    ],
    "aceitasEn": [
@@ -74224,8 +74202,7 @@
    "aceitas": [
     "sao tres e meia",
     "agora sao tres e meia",
-    "sao tres e trinta",
-    "e tres e meia"
+    "sao tres e trinta"
    ],
    "aceitasEn": [
     "it s half past three",
@@ -74281,7 +74258,7 @@
     "Moro no Brasil.",
     "Estou no Brasil.",
     "Vou para o Brasil.",
-    "Venho do Brasil."
+    "Viajo para o Brasil."
    ],
    "distratoresEn": [
     "I live in Brazil.",
@@ -76015,7 +75992,6 @@
     "pretendo ir ao casamento",
     "penso em ir ao casamento",
     "tenho a intencao de ir ao casamento",
-    "quero ir ao casamento",
     "estou pensando em ir ao casamento",
     "penso ir ao casamento"
    ],
@@ -76505,7 +76481,7 @@
     "inteiro",
     "meado",
     "mesmo",
-    "médio"
+    "menos"
    ],
    "distratoresEn": [
     "whole",
@@ -78552,9 +78528,7 @@
    "pt": "aí",
    "en": "there",
    "aceitas": [
-    "ai",
-    "ali",
-    "la"
+    "ai"
    ],
    "aceitasEn": [
     "there",
@@ -78589,8 +78563,7 @@
    "aceitas": [
     "alarme",
     "o despertador",
-    "despertador",
-    "a alarme"
+    "despertador"
    ],
    "aceitasEn": [
     "alarm",
@@ -83820,8 +83793,7 @@
     "arrancou uma folha do livro",
     "ele arrancou uma folha do livro",
     "ela arrancou uma folha do livro",
-    "arrancou uma pagina do livro",
-    "rasgou uma folha do livro"
+    "arrancou uma pagina do livro"
    ],
    "aceitasEn": [
     "he tore a page out of the book",
@@ -85428,8 +85400,7 @@
    "aceitas": [
     "o juiz concluiu o julgamento",
     "o juiz encerrou o julgamento",
-    "o juiz terminou o julgamento",
-    "o juiz concluiu o juizo"
+    "o juiz terminou o julgamento"
    ],
    "aceitasEn": [
     "the judge concluded the trial",
@@ -85520,8 +85491,7 @@
    "en": "The walls are very thin.",
    "aceitas": [
     "as paredes sao bem finas",
-    "as paredes sao finissimas",
-    "a parede e muito fina"
+    "as paredes sao finissimas"
    ],
    "aceitasEn": [
     "the walls are very thin",
@@ -86110,7 +86080,7 @@
     "He never visits me.",
     "He never invites me."
    ],
-   "nivel": "A1",
+   "nivel": "B1",
    "tags": [
     "social"
    ],
@@ -92509,10 +92479,10 @@
     "No me acuerdo de dónde dejé las llaves."
    ],
    "distratores": [
-    "Não sei onde deixei as chaves.",
     "Não digo onde deixei as chaves.",
     "Não conto onde deixei as chaves.",
-    "Não mostro onde deixei as chaves."
+    "Não mostro onde deixei as chaves.",
+    "Não anoto onde deixei as chaves."
    ],
    "distratoresEn": [
     "I don't know where I left the keys.",
@@ -93827,10 +93797,10 @@
     "he got me a book"
    ],
    "distratores": [
-    "Ele me deu um livro de receitas.",
-    "Ele me deu um livro de piadas.",
-    "Ele me deu um livro de bolso.",
-    "Ele me deu um livro de poemas."
+    "Ele me emprestou um livro de receitas.",
+    "Ele me vendeu um livro de bolso.",
+    "Ele me devolveu um livro de poemas.",
+    "Ele me mostrou um livro de presente."
    ],
    "distratoresEn": [
     "He gave me a book of recipes.",
@@ -93872,7 +93842,7 @@
    "distratores": [
     "O acidente assustou três pessoas.",
     "O acidente atrasou três pessoas.",
-    "O acidente envolveu três pessoas.",
+    "O acidente matou três pessoas.",
     "O acidente acordou três pessoas."
    ],
    "distratoresEn": [
@@ -94004,7 +93974,6 @@
    "aceitas": [
     "cancelaram o jogo",
     "interromperam o jogo",
-    "adiaram o jogo",
     "o jogo foi suspenso",
     "o jogo foi cancelado",
     "suspenderam a partida"
@@ -98221,8 +98190,7 @@
    "en": "the room / the bedroom",
    "aceitas": [
     "quarto",
-    "o comodo",
-    "a sala"
+    "o comodo"
    ],
    "aceitasEn": [
     "room",
@@ -98369,8 +98337,7 @@
    "pt": "cinza",
    "en": "gray",
    "aceitas": [
-    "cinzento",
-    "cinza claro"
+    "cinzento"
    ],
    "aceitasEn": [
     "gray",
@@ -98523,7 +98490,6 @@
    "en": "there / over there",
    "aceitas": [
     "la longe",
-    "ali",
     "pra la",
     "para la"
    ],
@@ -99203,8 +99169,7 @@
    "pt": "as férias",
    "en": "the vacation / the holidays",
    "aceitas": [
-    "ferias",
-    "o feriado prolongado"
+    "ferias"
    ],
    "aceitasEn": [
     "vacation",
@@ -99278,8 +99243,7 @@
    "pt": "cem",
    "en": "one hundred",
    "aceitas": [
-    "100",
-    "cento"
+    "100"
    ],
    "aceitasEn": [
     "one hundred",
@@ -99616,8 +99580,7 @@
    "aceitas": [
     "o ceu esta cinzento hoje",
     "hoje o ceu esta cinza",
-    "o ceu ta cinza hoje",
-    "o ceu esta nublado hoje"
+    "o ceu ta cinza hoje"
    ],
    "aceitasEn": [
     "the sky is gray today",
@@ -100578,7 +100541,6 @@
     "amanha nos vamos de ferias",
     "amanha a gente sai de ferias",
     "amanha saimos de ferias",
-    "amanha vamos entrar de ferias",
     "amanha nos saimos de ferias",
     "amanha a gente vai de ferias"
    ],
