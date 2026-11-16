@@ -82,6 +82,13 @@ TEXTOS = {
     'oracoes/ne-recorderis-parte-1': {"titulo": "Ne recorderis", "autor": "Orações", "tipo": "prosa", "ordem": 32, "fonte": "Responso pelos defuntos", "obra": "oracoes/ne-recorderis", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/ne-recorderis/"},
     'oracoes/ne-recorderis-parte-2': {"titulo": "Ne recorderis", "autor": "Orações", "tipo": "prosa", "ordem": 33, "fonte": "Responso pelos defuntos", "obra": "oracoes/ne-recorderis", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/ne-recorderis/"},
     'oracoes/ne-recorderis-parte-3': {"titulo": "Ne recorderis", "autor": "Orações", "tipo": "prosa", "ordem": 34, "fonte": "Responso pelos defuntos", "obra": "oracoes/ne-recorderis", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/ne-recorderis/"},
+    # poemas curtos de 16/11/2026 (só por escolha)
+    'horacio/persicos-odi': {'titulo': 'Persicos odi', 'autor': 'Horácio', 'tipo': 'poema', 'ordem': 35,
+                             'fonte': 'Odes, livro I, 38'},
+    'catulo/vivamus-mea-lesbia': {'titulo': 'Vivamus, mea Lesbia', 'autor': 'Catulo', 'tipo': 'poema', 'ordem': 36,
+                                  'fonte': 'Poemas, 5'},
+    'catulo/multas-per-gentes': {'titulo': 'Multas per gentes', 'autor': 'Catulo', 'tipo': 'poema', 'ordem': 37,
+                                 'fonte': 'Poemas, 101'},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -185,6 +192,13 @@ SEM_CARD = {
     "pontio": {"lema": "Pontius", "classe": "nome próprio", "g": "nome", "def": ["Pôncio, nome de família romano, o de Pilatos."]},
     "sion": {"lema": "Sion", "classe": "nome próprio", "g": "nome", "def": ["Sião, o monte santo de Jerusalém, cidade de Deus."], "wiki": "https://en.wiktionary.org/wiki/Sion#Latin"},
     "thomas": {"lema": "Thomas", "classe": "nome próprio", "g": "nome", "def": ["Tomé, o apóstolo que só creu depois de ver as chagas do Senhor."]},
+    # poemas curtos de 16/11/2026
+    'lesbia': {'lema': 'Lesbia', 'classe': 'nome próprio', 'g': 'nome',
+               'def': ['Lésbia, a amada dos poemas de Catulo.'],
+               'wiki': 'https://en.wiktionary.org/wiki/Lesbia#Latin'},
+    'persicos': {'lema': 'Persicus', 'classe': 'adjetivo (nome próprio)', 'g': 'nome',
+                 'def': ['Persa, da Pérsia: para os romanos, a terra do luxo.'],
+                 'wiki': 'https://en.wiktionary.org/wiki/Persicus#Latin'},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')

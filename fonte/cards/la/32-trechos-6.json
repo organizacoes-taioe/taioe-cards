@@ -1,0 +1,2003 @@
+[
+ {
+  "id": "la-t292",
+  "tipo": "frase",
+  "la": "Persicos odi, puer, apparatus",
+  "pt": "Odeio, menino, os luxos persas",
+  "gabarito": "[[Eu ~] odeio, [menino ~ rapaz ~ garoto ~ ó menino], [os luxos ~ os aparatos ~ as pompas ~ os requintes ~ o luxo ~ o aparato] [persas ~ da Pérsia] ~ [Menino ~ Rapaz ~ Garoto ~ Ó menino], [eu ~] odeio [os luxos ~ os aparatos ~ as pompas ~ os requintes ~ o luxo ~ o aparato] [persas ~ da Pérsia]]",
+  "aceitas": [],
+  "distratores": [
+   "Odeia, menino, os luxos persas",
+   "Odiei, menino, os luxos persas",
+   "O menino odeia os luxos persas",
+   "Odeio os luxos do menino persa"
+  ],
+  "nota": "Persicos: acusativo masculino plural, adjetivo de nome próprio, persas: concorda com apparatus.\nodi: 1ª pessoa do singular; forma de perfeito, sentido de presente, odeio.\npuer: vocativo singular, a quem se fala: menino, o escravo que serve.\napparatus: acusativo plural, objeto de odi: os luxos.\nPersicos, acusativo plural, vai com apparatus, e não com puer, que é vocativo.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Odes, livro I, 38",
+  "requerTodas": [
+   "la-p164",
+   "la-p341",
+   "la-p701"
+  ],
+  "palavras": [
+   {
+    "w": "Persicos",
+    "f": "acusativo masculino plural",
+    "fn": "adjetivo de nome próprio, persas: concorda com apparatus"
+   },
+   {
+    "w": "odi",
+    "c": "la-p164",
+    "f": "1ª pessoa do singular; forma de perfeito, sentido de presente",
+    "fn": "odeio"
+   },
+   {
+    "w": "puer",
+    "c": "la-p341",
+    "f": "vocativo singular",
+    "fn": "a quem se fala: menino, o escravo que serve"
+   },
+   {
+    "w": "apparatus",
+    "c": "la-p701",
+    "f": "acusativo plural",
+    "fn": "objeto de odi: os luxos"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g002"
+  ],
+  "texto": "horacio/persicos-odi",
+  "linha": 1,
+  "versos": [
+   1,
+   1
+  ]
+ },
+ {
+  "id": "la-t293",
+  "tipo": "frase",
+  "la": "displicent nexae philyra coronae;",
+  "pt": "desagradam as coroas entrelaçadas com fibra de tília",
+  "gabarito": "[[desagradam ~ desagradam-me ~ me desagradam ~ não me agradam ~ não agradam] as [coroas ~ grinaldas ~ guirlandas] [entrelaçadas ~ atadas ~ trançadas ~ amarradas] [com fibra de tília ~ com tília ~ com casca de tília ~ com entrecasca de tília] ~ as [coroas ~ grinaldas ~ guirlandas] [entrelaçadas ~ atadas ~ trançadas ~ amarradas] [com fibra de tília ~ com tília ~ com casca de tília] [desagradam ~ desagradam-me ~ me desagradam ~ não me agradam]]",
+  "aceitas": [],
+  "distratores": [
+   "desagrada a coroa entrelaçada com fibra de tília",
+   "desagradaram as coroas entrelaçadas com fibra de tília",
+   "desagradam as coroas da tília entrelaçada",
+   "as coroas entrelaçam a fibra de tília"
+  ],
+  "nota": "displicent: presente do indicativo, 3ª pessoa do plural, desagradam.\nnexae: particípio perfeito, nominativo feminino plural, concorda com coronae: entrelaçadas.\nphilyra: ablativo singular, com quê: com fibra de tília.\ncoronae: nominativo plural, sujeito de displicent: as coroas.\nNas coroas de luxo, as flores eram atadas com a fibra fina da tília.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Odes, livro I, 38",
+  "requerTodas": [
+   "la-p702",
+   "la-p703",
+   "la-p704",
+   "la-p705",
+   "la-v1304",
+   "la-v1305",
+   "la-v1306"
+  ],
+  "palavras": [
+   {
+    "w": "displicent",
+    "c": "la-p702",
+    "f": "presente do indicativo, 3ª pessoa do plural",
+    "fn": "desagradam"
+   },
+   {
+    "w": "nexae",
+    "c": "la-p703",
+    "f": "particípio perfeito, nominativo feminino plural",
+    "fn": "concorda com coronae: entrelaçadas"
+   },
+   {
+    "w": "philyra",
+    "c": "la-p704",
+    "f": "ablativo singular",
+    "fn": "com quê: com fibra de tília"
+   },
+   {
+    "w": "coronae",
+    "c": "la-p705",
+    "f": "nominativo plural",
+    "fn": "sujeito de displicent: as coroas"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g006",
+   "la-g014",
+   "la-g007"
+  ],
+  "texto": "horacio/persicos-odi",
+  "linha": 2,
+  "versos": [
+   2,
+   2
+  ]
+ },
+ {
+  "id": "la-t294",
+  "tipo": "frase",
+  "la": "mitte sectari, rosa quo locorum sera moretur.",
+  "pt": "deixa de procurar em que lugar se demora a rosa tardia.",
+  "gabarito": "[deixa de ~ para de ~ desiste de ~ não queiras] [procurar ~ buscar ~ andar atrás de ~ ir atrás de] [em que lugar ~ onde ~ em que lugares] [se demora a rosa tardia ~ a rosa tardia se demora ~ fica a rosa tardia ~ a rosa tardia ainda fica ~ se detém a rosa tardia ~ a rosa tardia se detém ~ ainda está a rosa tardia]",
+  "aceitas": [],
+  "distratores": [
+   "deixa de procurar em que lugar se demorou a rosa tardia.",
+   "manda procurar em que lugar se demora a rosa tardia.",
+   "deixas de procurar em que lugar se demora a rosa tardia.",
+   "deixa de procurar em que lugar se demoram as rosas tardias."
+  ],
+  "nota": "mitte: imperativo presente, 2ª pessoa do singular, com infinitivo: deixa de.\nsectari: infinitivo presente, depende de mitte, depoente: procurar.\nrosa: nominativo singular, sujeito de moretur: a rosa.\nquo: com locorum: em que lugar.\nlocorum: genitivo plural, partitivo, com quo: dos lugares.\nsera: nominativo feminino singular, concorda com rosa: tardia.\nmoretur: presente do subjuntivo, 3ª pessoa do singular, pergunta indireta, depoente: se demora.\nMitto com infinitivo é «deixar de»: mitte sectari, para de procurar. Quo locorum, «em que dos lugares», é onde.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Odes, livro I, 38",
+  "requerTodas": [
+   "la-p706",
+   "la-p707",
+   "la-p708",
+   "la-p075",
+   "la-p709",
+   "la-p710",
+   "la-p711",
+   "la-v1307",
+   "la-v1308",
+   "la-v1309",
+   "la-v1310",
+   "la-v1311"
+  ],
+  "palavras": [
+   {
+    "w": "mitte",
+    "c": "la-p706",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "com infinitivo: deixa de"
+   },
+   {
+    "w": "sectari",
+    "c": "la-p707",
+    "f": "infinitivo presente",
+    "fn": "depende de mitte, depoente: procurar"
+   },
+   {
+    "w": "rosa",
+    "c": "la-p708",
+    "f": "nominativo singular",
+    "fn": "sujeito de moretur: a rosa"
+   },
+   {
+    "w": "quo",
+    "c": "la-p075",
+    "fn": "com locorum: em que lugar"
+   },
+   {
+    "w": "locorum",
+    "c": "la-p709",
+    "f": "genitivo plural",
+    "fn": "partitivo, com quo: dos lugares"
+   },
+   {
+    "w": "sera",
+    "c": "la-p710",
+    "f": "nominativo feminino singular",
+    "fn": "concorda com rosa: tardia"
+   },
+   {
+    "w": "moretur",
+    "c": "la-p711",
+    "f": "presente do subjuntivo, 3ª pessoa do singular",
+    "fn": "pergunta indireta, depoente: se demora"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g013",
+   "la-g016",
+   "la-g004",
+   "la-g012",
+   "la-g001"
+  ],
+  "texto": "horacio/persicos-odi",
+  "linha": 3,
+  "versos": [
+   3,
+   4
+  ]
+ },
+ {
+  "id": "la-t295",
+  "tipo": "frase",
+  "la": "Simplici myrto nihil allabores sedulus curo:",
+  "pt": "faço questão de que nada acrescentes, zeloso, à simples murta",
+  "gabarito": "[faço questão de que ~ quero que ~ cuido que ~ cuido de que ~ não quero que] [zeloso ~ com zelo ~ ] [nada acrescentes ~ não acrescentes nada ~ acrescentes nada ~ nada juntes ~ não juntes nada] [zeloso ~ com zelo ~ ] [à simples murta ~ à murta simples]",
+  "aceitas": [],
+  "distratores": [
+   "cuidei de que nada acrescentasses, zeloso, à simples murta",
+   "faço questão de que nada acrescente, zeloso, à simples murta",
+   "faço questão de que a simples murta nada te acrescente",
+   "faço questão de que nada acrescentes, zeloso, com a simples murta"
+  ],
+  "nota": "Simplici: dativo feminino singular, concorda com myrto: simples.\nmyrto: dativo singular, a quê se acrescenta: à murta.\nnihil: objeto de allabores: nada.\nallabores: presente do subjuntivo, 2ª pessoa do singular, depende de curo, sem ut: que acrescentes.\nsedulus: nominativo masculino singular, concorda com o sujeito de allabores (tu): zeloso.\ncuro: presente do indicativo, 1ª pessoa do singular, faço questão.\nCuro com o subjuntivo, sem ut: faço questão de que. Myrto, dativo: a que se acrescenta.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Odes, livro I, 38",
+  "requerTodas": [
+   "la-p712",
+   "la-p713",
+   "la-p494",
+   "la-p714",
+   "la-p715",
+   "la-p392",
+   "la-v1312",
+   "la-v1313",
+   "la-v1262",
+   "la-v1314"
+  ],
+  "palavras": [
+   {
+    "w": "Simplici",
+    "c": "la-p712",
+    "f": "dativo feminino singular",
+    "fn": "concorda com myrto: simples"
+   },
+   {
+    "w": "myrto",
+    "c": "la-p713",
+    "f": "dativo singular",
+    "fn": "a quê se acrescenta: à murta"
+   },
+   {
+    "w": "nihil",
+    "c": "la-p494",
+    "fn": "objeto de allabores: nada"
+   },
+   {
+    "w": "allabores",
+    "c": "la-p714",
+    "f": "presente do subjuntivo, 2ª pessoa do singular",
+    "fn": "depende de curo, sem ut: que acrescentes"
+   },
+   {
+    "w": "sedulus",
+    "c": "la-p715",
+    "f": "nominativo masculino singular",
+    "fn": "concorda com o sujeito de allabores (tu): zeloso"
+   },
+   {
+    "w": "curo",
+    "c": "la-p392",
+    "f": "presente do indicativo, 1ª pessoa do singular",
+    "fn": "faço questão"
+   }
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g012",
+   "la-g007"
+  ],
+  "texto": "horacio/persicos-odi",
+  "linha": 4,
+  "versos": [
+   5,
+   6
+  ]
+ },
+ {
+  "id": "la-t296",
+  "tipo": "frase",
+  "la": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "pt": "a murta não fica mal nem a ti, que serves, nem a mim, que bebo sob a parreira densa.",
+  "gabarito": "[a murta não [fica mal ~ desonra ~ cai mal] ~ não [fica mal ~ cai mal] a murta] nem a ti, [que serves ~ o criado ~ criado ~ servidor ~ que me serves], nem a mim, [que bebo ~ bebendo] sob a [parreira ~ videira] [densa ~ cerrada ~ espessa ~ fechada ~ apertada]",
+  "aceitas": [],
+  "distratores": [
+   "a murta não fica mal nem a ti, que serves, nem a mim, que bebi sob a parreira densa.",
+   "a murta não fica mal nem a ti, que bebes sob a parreira densa, nem a mim, que sirvo.",
+   "nem tu, que serves, nem eu, que bebo sob a parreira densa, desonramos a murta.",
+   "a murta não fica bem nem a ti, que serves, nem a mim, que bebo sob a parreira densa."
+  ],
+  "nota": "te: acusativo singular, objeto de dedecet: a ti.\nministrum: acusativo singular, concorda com te: que serves.\ndedecet: presente do indicativo, 3ª pessoa do singular, fica mal.\nmyrtus: nominativo singular, sujeito de dedecet: a murta.\nme: acusativo singular, objeto de dedecet: a mim.\nsub: preposição com ablativo.\narta: ablativo feminino singular, concorda com vite: densa.\nvite: ablativo singular, depois de sub: a parreira.\nbibentem: particípio presente, acusativo masculino singular, concorda com me: bebendo.\nDedecet pede o acusativo de quem: te, me. É o contrário de decet, ficar bem.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Odes, livro I, 38",
+  "requerTodas": [
+   "la-p120",
+   "la-p007",
+   "la-p716",
+   "la-p717",
+   "la-p713",
+   "la-p004",
+   "la-p432",
+   "la-p718",
+   "la-p719",
+   "la-p200",
+   "la-v556",
+   "la-v050",
+   "la-v1315",
+   "la-v043",
+   "la-v1316",
+   "la-v1317",
+   "la-v1256"
+  ],
+  "palavras": [
+   {
+    "w": "neque",
+    "c": "la-p120"
+   },
+   {
+    "w": "te",
+    "c": "la-p007",
+    "f": "acusativo singular",
+    "fn": "objeto de dedecet: a ti"
+   },
+   {
+    "w": "ministrum",
+    "c": "la-p716",
+    "f": "acusativo singular",
+    "fn": "concorda com te: que serves"
+   },
+   {
+    "w": "dedecet",
+    "c": "la-p717",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "fica mal"
+   },
+   {
+    "w": "myrtus",
+    "c": "la-p713",
+    "f": "nominativo singular",
+    "fn": "sujeito de dedecet: a murta"
+   },
+   {
+    "w": "neque",
+    "c": "la-p120"
+   },
+   {
+    "w": "me",
+    "c": "la-p004",
+    "f": "acusativo singular",
+    "fn": "objeto de dedecet: a mim"
+   },
+   {
+    "w": "sub",
+    "c": "la-p432",
+    "f": "preposição com ablativo"
+   },
+   {
+    "w": "arta",
+    "c": "la-p718",
+    "f": "ablativo feminino singular",
+    "fn": "concorda com vite: densa"
+   },
+   {
+    "w": "vite",
+    "c": "la-p719",
+    "f": "ablativo singular",
+    "fn": "depois de sub: a parreira"
+   },
+   {
+    "w": "bibentem",
+    "c": "la-p200",
+    "f": "particípio presente, acusativo masculino singular",
+    "fn": "concorda com me: bebendo"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g001",
+   "la-g006",
+   "la-g019",
+   "la-g007"
+  ],
+  "texto": "horacio/persicos-odi",
+  "linha": 5,
+  "versos": [
+   6,
+   8
+  ]
+ },
+ {
+  "id": "la-t297",
+  "tipo": "frase",
+  "la": "Vivamus, mea Lesbia, atque amemus",
+  "pt": "Vivamos, minha Lésbia, e amemos",
+  "gabarito": "[[Vivamos ~ Vamos viver], [minha Lésbia ~ ó minha Lésbia ~ Lésbia minha], [e ~ e também] [amemos ~ nos amemos ~ amar ~ vamos amar] ~ [Minha Lésbia ~ Ó minha Lésbia], [vivamos ~ vamos viver] [e ~ e também] [amemos ~ nos amemos ~ amar ~ vamos amar]]",
+  "aceitas": [],
+  "distratores": [
+   "Vivemos, minha Lésbia, e amamos",
+   "Viveremos, minha Lésbia, e amaremos",
+   "Viva a minha Lésbia, e amemos",
+   "Vivíamos, minha Lésbia, e amávamos"
+  ],
+  "nota": "Vivamus: presente do subjuntivo, 1ª pessoa do plural, exortação: vivamos.\nmea: vocativo feminino singular, concorda com Lesbia: minha.\nLesbia: vocativo singular, nome próprio, Lésbia: a quem se fala.\namemus: presente do subjuntivo, 1ª pessoa do plural, exortação: amemos.\nO subjuntivo na 1ª pessoa do plural convida: vivamos, amemos.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 5",
+  "requerTodas": [
+   "la-p508",
+   "la-p013",
+   "la-p230",
+   "la-p037",
+   "la-v1263",
+   "la-v057",
+   "la-v1254"
+  ],
+  "palavras": [
+   {
+    "w": "Vivamus",
+    "c": "la-p508",
+    "f": "presente do subjuntivo, 1ª pessoa do plural",
+    "fn": "exortação: vivamos"
+   },
+   {
+    "w": "mea",
+    "c": "la-p013",
+    "f": "vocativo feminino singular",
+    "fn": "concorda com Lesbia: minha"
+   },
+   {
+    "w": "Lesbia",
+    "f": "vocativo singular",
+    "fn": "nome próprio, Lésbia: a quem se fala"
+   },
+   {
+    "w": "atque",
+    "c": "la-p230"
+   },
+   {
+    "w": "amemus",
+    "c": "la-p037",
+    "f": "presente do subjuntivo, 1ª pessoa do plural",
+    "fn": "exortação: amemos"
+   }
+  ],
+  "conceitos": [
+   "la-g012",
+   "la-g002"
+  ],
+  "texto": "catulo/vivamus-mea-lesbia",
+  "linha": 1,
+  "versos": [
+   1,
+   1
+  ]
+ },
+ {
+  "id": "la-t298",
+  "tipo": "frase",
+  "la": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "pt": "e todos os falatórios dos velhos mais severos avaliemos em um só asse.",
+  "gabarito": "e [todos os ~ os] [falatórios ~ boatos ~ rumores] [todos ~ ] dos velhos [mais severos ~ severos demais ~ rabugentos ~ mais rabugentos] [avaliemos ~ estimemos ~ consideremos ~ vamos avaliar] [em um só asse ~ no valor de um só asse ~ em um asse ~ em um único asse ~ no valor de um asse ~ por um só asse]",
+  "aceitas": [],
+  "distratores": [
+   "e todos os falatórios dos velhos mais severos avaliamos em um só asse.",
+   "e todos os falatórios do velho mais severo avaliemos em um só asse.",
+   "e avaliemos em um só asse os falatórios de todos os velhos mais severos.",
+   "e os falatórios dos velhos mais severos nos avaliem em um só asse."
+  ],
+  "nota": "rumores: acusativo plural, objeto de aestimemus: os falatórios.\nsenum: genitivo plural, de quem são os falatórios: dos velhos.\nseveriorum: genitivo masculino plural, comparativo, concorda com senum: mais severos.\nomnes: acusativo masculino plural, concorda com rumores: todos.\nunius: genitivo masculino singular, concorda com assis: um só.\naestimemus: presente do subjuntivo, 1ª pessoa do plural, exortação: avaliemos.\nassis: genitivo singular, genitivo de preço: no valor de um asse.\nUnius assis é o genitivo de preço: no valor de um asse, a moeda de menos valor; não liguemos para eles.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 5",
+  "requerTodas": [
+   "la-p659",
+   "la-p028",
+   "la-p660",
+   "la-p661",
+   "la-p019",
+   "la-p023",
+   "la-p662",
+   "la-p663",
+   "la-v1267",
+   "la-v1268",
+   "la-v1269",
+   "la-v074",
+   "la-v085",
+   "la-v1270",
+   "la-v1271"
+  ],
+  "palavras": [
+   {
+    "w": "rumores",
+    "c": "la-p659",
+    "f": "acusativo plural",
+    "fn": "objeto de aestimemus: os falatórios"
+   },
+   {
+    "w": "-que",
+    "c": "la-p028"
+   },
+   {
+    "w": "senum",
+    "c": "la-p660",
+    "f": "genitivo plural",
+    "fn": "de quem são os falatórios: dos velhos"
+   },
+   {
+    "w": "severiorum",
+    "c": "la-p661",
+    "f": "genitivo masculino plural",
+    "fn": "comparativo, concorda com senum: mais severos"
+   },
+   {
+    "w": "omnes",
+    "c": "la-p019",
+    "f": "acusativo masculino plural",
+    "fn": "concorda com rumores: todos"
+   },
+   {
+    "w": "unius",
+    "c": "la-p023",
+    "f": "genitivo masculino singular",
+    "fn": "concorda com assis: um só"
+   },
+   {
+    "w": "aestimemus",
+    "c": "la-p662",
+    "f": "presente do subjuntivo, 1ª pessoa do plural",
+    "fn": "exortação: avaliemos"
+   },
+   {
+    "w": "assis",
+    "c": "la-p663",
+    "f": "genitivo singular",
+    "fn": "genitivo de preço: no valor de um asse"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g004",
+   "la-g012"
+  ],
+  "texto": "catulo/vivamus-mea-lesbia",
+  "linha": 2,
+  "versos": [
+   2,
+   3
+  ]
+ },
+ {
+  "id": "la-t299",
+  "tipo": "frase",
+  "la": "Soles occidere et redire possunt:",
+  "pt": "os sóis podem pôr-se e voltar",
+  "gabarito": "[os sóis ~ os dias] podem [pôr-se ~ se pôr ~ morrer ~ cair ~ desaparecer] e [voltar ~ retornar ~ regressar ~ renascer]",
+  "aceitas": [],
+  "distratores": [
+   "o sol pode pôr-se e voltar",
+   "os sóis puderam pôr-se e voltar",
+   "os sóis podem matar e voltar",
+   "os sóis poderão pôr-se e voltar"
+  ],
+  "nota": "Soles: nominativo plural, sujeito de possunt: os sóis.\noccidere: infinitivo presente, depende de possunt: pôr-se.\nredire: infinitivo presente, depende de possunt: voltar.\npossunt: presente do indicativo, 3ª pessoa do plural.\nSoles, plural de sol: os sóis, isto é, os dias, que se põem e voltam.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 5",
+  "requerTodas": [
+   "la-p664",
+   "la-p665",
+   "la-p009",
+   "la-p336",
+   "la-p121",
+   "la-v1272",
+   "la-v1273",
+   "la-v1260",
+   "la-v271"
+  ],
+  "palavras": [
+   {
+    "w": "Soles",
+    "c": "la-p664",
+    "f": "nominativo plural",
+    "fn": "sujeito de possunt: os sóis"
+   },
+   {
+    "w": "occidere",
+    "c": "la-p665",
+    "f": "infinitivo presente",
+    "fn": "depende de possunt: pôr-se"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "redire",
+    "c": "la-p336",
+    "f": "infinitivo presente",
+    "fn": "depende de possunt: voltar"
+   },
+   {
+    "w": "possunt",
+    "c": "la-p121",
+    "f": "presente do indicativo, 3ª pessoa do plural"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g013",
+   "la-g007"
+  ],
+  "texto": "catulo/vivamus-mea-lesbia",
+  "linha": 3,
+  "versos": [
+   4,
+   4
+  ]
+ },
+ {
+  "id": "la-t300",
+  "tipo": "frase",
+  "la": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "pt": "para nós, quando uma vez se põe a breve luz, há uma só noite perpétua a ser dormida",
+  "gabarito": "[[para nós ~ a nós], quando [de uma vez ~ uma vez ~ uma só vez ~ ] [se põe a breve luz ~ a breve luz se põe], [há ~ resta] [uma só ~ uma única ~ uma] noite perpétua [a ser dormida ~ a dormir ~ para dormir ~ que deve ser dormida] ~ nós, quando [de uma vez ~ uma vez ~ ] [se põe a breve luz ~ a breve luz se põe], [temos de ~ temos que ~ devemos] dormir [uma só ~ uma única ~ uma] noite perpétua]",
+  "aceitas": [],
+  "distratores": [
+   "para nós, quando se pôs de uma vez a breve luz, houve uma só noite perpétua a ser dormida",
+   "nós, quando de uma vez se põe a breve luz, dormimos uma só noite perpétua",
+   "para nós, quando se põe de uma vez a breve luz, há uma só noite perpétua que dorme",
+   "para nós, quando de uma vez pomos a breve luz, há uma só noite perpétua a ser dormida"
+  ],
+  "nota": "nobis: dativo plural, com dormienda, quem há de dormir: por nós.\ncum: conjunção: quando.\noccidit: presente do indicativo, 3ª pessoa do singular, depois de cum: se põe.\nbrevis: nominativo feminino singular, concorda com lux: breve.\nlux: nominativo singular, sujeito de occidit: a luz.\nnox: nominativo singular, sujeito de est dormienda: a noite.\nest: presente do indicativo, 3ª pessoa do singular, com dormienda: há de ser dormida.\nperpetua: nominativo feminino singular, concorda com nox: perpétua.\nuna: nominativo feminino singular, concorda com nox: uma só.\ndormienda: gerundivo, nominativo feminino singular, concorda com nox: que deve ser dormida.\nDormienda é o gerundivo, «que deve ser dormida»; com est e o dativo nobis, «nós temos de dormir». A luz é a vida; a noite, a morte.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 5",
+  "requerTodas": [
+   "la-p079",
+   "la-p618",
+   "la-p666",
+   "la-p665",
+   "la-p130",
+   "la-p041",
+   "la-p542",
+   "la-p003",
+   "la-p361",
+   "la-p023",
+   "la-p667",
+   "la-v213",
+   "la-v1274",
+   "la-v010",
+   "la-v720",
+   "la-v746",
+   "la-v1275"
+  ],
+  "palavras": [
+   {
+    "w": "nobis",
+    "c": "la-p079",
+    "f": "dativo plural",
+    "fn": "com dormienda, quem há de dormir: por nós"
+   },
+   {
+    "w": "cum",
+    "c": "la-p618",
+    "fn": "conjunção: quando"
+   },
+   {
+    "w": "semel",
+    "c": "la-p666"
+   },
+   {
+    "w": "occidit",
+    "c": "la-p665",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "depois de cum: se põe"
+   },
+   {
+    "w": "brevis",
+    "c": "la-p130",
+    "f": "nominativo feminino singular",
+    "fn": "concorda com lux: breve"
+   },
+   {
+    "w": "lux",
+    "c": "la-p041",
+    "f": "nominativo singular",
+    "fn": "sujeito de occidit: a luz"
+   },
+   {
+    "w": "nox",
+    "c": "la-p542",
+    "f": "nominativo singular",
+    "fn": "sujeito de est dormienda: a noite"
+   },
+   {
+    "w": "est",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do singular",
+    "fn": "com dormienda: há de ser dormida"
+   },
+   {
+    "w": "perpetua",
+    "c": "la-p361",
+    "f": "nominativo feminino singular",
+    "fn": "concorda com nox: perpétua"
+   },
+   {
+    "w": "una",
+    "c": "la-p023",
+    "f": "nominativo feminino singular",
+    "fn": "concorda com nox: uma só"
+   },
+   {
+    "w": "dormienda",
+    "c": "la-p667",
+    "f": "gerundivo, nominativo feminino singular",
+    "fn": "concorda com nox: que deve ser dormida"
+   }
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g001",
+   "la-g007"
+  ],
+  "texto": "catulo/vivamus-mea-lesbia",
+  "linha": 4,
+  "versos": [
+   5,
+   6
+  ]
+ },
+ {
+  "id": "la-t301",
+  "tipo": "frase",
+  "la": "Da mi basia mille, deinde centum",
+  "pt": "Dá-me mil beijos, depois cem",
+  "gabarito": "[Dá-me ~ Me dá ~ Dê-me ~ Me dê] mil beijos, [depois ~ em seguida ~ então ~ logo] cem",
+  "aceitas": [],
+  "distratores": [
+   "Dou-te mil beijos, depois cem",
+   "Deu-me mil beijos, depois cem",
+   "Dai-me mil beijos, depois cem",
+   "Dá-te mil beijos, depois cem"
+  ],
+  "nota": "Da: imperativo presente, 2ª pessoa do singular, dá.\nmi: dativo singular, forma breve de mihi: a mim.\nbasia: acusativo plural, objeto de da: beijos.\nmille: concorda com basia: mil.\ncentum: subentende basia: cem.\nMi é a forma breve de mihi: a mim.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 5",
+  "requerTodas": [
+   "la-p099",
+   "la-p004",
+   "la-p668",
+   "la-p669",
+   "la-p670",
+   "la-p671",
+   "la-v235",
+   "la-v1252",
+   "la-v1276"
+  ],
+  "palavras": [
+   {
+    "w": "Da",
+    "c": "la-p099",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "dá"
+   },
+   {
+    "w": "mi",
+    "c": "la-p004",
+    "f": "dativo singular",
+    "fn": "forma breve de mihi: a mim"
+   },
+   {
+    "w": "basia",
+    "c": "la-p668",
+    "f": "acusativo plural",
+    "fn": "objeto de da: beijos"
+   },
+   {
+    "w": "mille",
+    "c": "la-p669",
+    "fn": "concorda com basia: mil"
+   },
+   {
+    "w": "deinde",
+    "c": "la-p670"
+   },
+   {
+    "w": "centum",
+    "c": "la-p671",
+    "fn": "subentende basia: cem"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g005",
+   "la-g003"
+  ],
+  "texto": "catulo/vivamus-mea-lesbia",
+  "linha": 5,
+  "versos": [
+   7,
+   7
+  ]
+ },
+ {
+  "id": "la-t302",
+  "tipo": "frase",
+  "la": "Da … dein mille altera, dein secunda centum",
+  "pt": "Dá … depois outros mil, depois mais cem",
+  "gabarito": "[Dá ~ Dá-me ~ Me dá ~ Dê ~ Dê-me] … [depois ~ em seguida ~ então] [outros mil ~ mais mil ~ mil outros ~ um segundo milhar], [depois ~ em seguida ~ então] [mais cem ~ outros cem ~ cem mais ~ uma segunda centena ~ a segunda centena]",
+  "aceitas": [],
+  "distratores": [
+   "Deste … depois outros mil, depois mais cem",
+   "Dou … depois outros mil, depois mais cem",
+   "Dá … depois mil à outra, depois cem à segunda",
+   "Dai … depois outros mil, depois mais cem"
+  ],
+  "nota": "Da: imperativo presente, 2ª pessoa do singular, dá.\ndein: forma curta de deinde: depois.\nmille: subentende basia: mil.\naltera: acusativo neutro plural, concorda com mille (basia): outros.\ndein: forma curta de deinde: depois.\nsecunda: acusativo neutro plural, concorda com centum (basia): segundos.\ncentum: subentende basia: cem.\nMille e centum não declinam; basia (os beijos) fica subentendido.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 5",
+  "requerTodas": [
+   "la-p099",
+   "la-p670",
+   "la-p669",
+   "la-p672",
+   "la-p673",
+   "la-p671",
+   "la-v235",
+   "la-v1279",
+   "la-v1280",
+   "la-v1281"
+  ],
+  "palavras": [
+   {
+    "w": "Da",
+    "c": "la-p099",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "dá"
+   },
+   {
+    "w": "dein",
+    "c": "la-p670",
+    "fn": "forma curta de deinde: depois"
+   },
+   {
+    "w": "mille",
+    "c": "la-p669",
+    "fn": "subentende basia: mil"
+   },
+   {
+    "w": "altera",
+    "c": "la-p672",
+    "f": "acusativo neutro plural",
+    "fn": "concorda com mille (basia): outros"
+   },
+   {
+    "w": "dein",
+    "c": "la-p670",
+    "fn": "forma curta de deinde: depois"
+   },
+   {
+    "w": "secunda",
+    "c": "la-p673",
+    "f": "acusativo neutro plural",
+    "fn": "concorda com centum (basia): segundos"
+   },
+   {
+    "w": "centum",
+    "c": "la-p671",
+    "fn": "subentende basia: cem"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g003"
+  ],
+  "texto": "catulo/vivamus-mea-lesbia",
+  "linha": 6,
+  "versos": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "la-t303",
+  "tipo": "frase",
+  "la": "Da … deinde usque altera mille, deinde centum",
+  "pt": "Dá … depois, sem parar, outros mil, depois cem",
+  "gabarito": "[Dá ~ Dá-me ~ Me dá ~ Dê ~ Dê-me] … [depois ~ em seguida ~ então] [sem parar ~ ainda ~ sem cessar ~ continuamente ~ de novo] [outros mil ~ mais mil ~ mil outros], [depois ~ em seguida ~ então] cem",
+  "aceitas": [],
+  "distratores": [
+   "Deste … depois, sem parar, outros mil, depois cem",
+   "Dou … depois, sem parar, outros mil, depois cem",
+   "Dá … depois, sem parar, mil à outra, depois cem",
+   "Dai … depois, sem parar, outros mil, depois cem"
+  ],
+  "nota": "Da: imperativo presente, 2ª pessoa do singular, dá.\nusque: sem parar.\naltera: acusativo neutro plural, concorda com mille (basia): outros.\nmille: subentende basia: mil.\ncentum: subentende basia: cem.\nUsque: sem parar, sem fim.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 5",
+  "requerTodas": [
+   "la-p099",
+   "la-p670",
+   "la-p299",
+   "la-p672",
+   "la-p669",
+   "la-p671",
+   "la-v235",
+   "la-v1280"
+  ],
+  "palavras": [
+   {
+    "w": "Da",
+    "c": "la-p099",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "dá"
+   },
+   {
+    "w": "deinde",
+    "c": "la-p670"
+   },
+   {
+    "w": "usque",
+    "c": "la-p299",
+    "fn": "sem parar"
+   },
+   {
+    "w": "altera",
+    "c": "la-p672",
+    "f": "acusativo neutro plural",
+    "fn": "concorda com mille (basia): outros"
+   },
+   {
+    "w": "mille",
+    "c": "la-p669",
+    "fn": "subentende basia: mil"
+   },
+   {
+    "w": "deinde",
+    "c": "la-p670"
+   },
+   {
+    "w": "centum",
+    "c": "la-p671",
+    "fn": "subentende basia: cem"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g003"
+  ],
+  "texto": "catulo/vivamus-mea-lesbia",
+  "linha": 7,
+  "versos": [
+   7,
+   9
+  ]
+ },
+ {
+  "id": "la-t304",
+  "tipo": "frase",
+  "la": "dein, cum milia multa fecerimus, conturbabimus illa, ne sciamus",
+  "pt": "depois, quando tivermos feito muitos milhares, os embaralharemos, para não sabermos",
+  "gabarito": "[depois ~ em seguida ~ então], quando [tivermos feito ~ tivermos dado ~ fizermos] [muitos milhares ~ milhares e milhares], [os embaralharemos ~ embaralharemos a conta ~ embaralharemos tudo ~ embaralharemos ~ os confundiremos ~ confundiremos a conta ~ confundiremos tudo ~ os misturaremos ~ misturaremos tudo], [para não sabermos ~ para que não saibamos] [ ~ a conta ~ quantos são ~ o número]",
+  "aceitas": [],
+  "distratores": [
+   "depois, quando fizemos muitos milhares, os embaralhamos, para não sabermos",
+   "depois, quando tivermos feito muitos milhares, eles nos embaralharão, para não sabermos",
+   "depois, quando tivermos feito muitos milhares, os embaralharemos, para sabermos",
+   "depois, quando tivermos feito muitos milhares, os embaralharemos, para não saberem"
+  ],
+  "nota": "dein: forma curta de deinde: depois.\ncum: conjunção: quando.\nmilia: acusativo plural, objeto de fecerimus: milhares.\nmulta: acusativo neutro plural, concorda com milia: muitos.\nfecerimus: futuro perfeito do indicativo, 1ª pessoa do plural, depois de cum: quando tivermos feito.\nconturbabimus: futuro do indicativo, 1ª pessoa do plural, embaralharemos (a conta).\nilla: acusativo neutro plural, objeto de conturbabimus: aqueles (os milhares).\nne: com subjuntivo: para que não.\nsciamus: presente do subjuntivo, 1ª pessoa do plural, depois de ne: saibamos (a conta).\nFecerimus, futuro perfeito: «quando tivermos feito». Conturbare é embaralhar a conta: ninguém saberá o total.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 5",
+  "requerTodas": [
+   "la-p670",
+   "la-p618",
+   "la-p669",
+   "la-p214",
+   "la-p165",
+   "la-p592",
+   "la-p215",
+   "la-p104",
+   "la-p252",
+   "la-v1279",
+   "la-v1278",
+   "la-v484",
+   "la-v1255",
+   "la-v1265",
+   "la-v446",
+   "la-v1258"
+  ],
+  "palavras": [
+   {
+    "w": "dein",
+    "c": "la-p670",
+    "fn": "forma curta de deinde: depois"
+   },
+   {
+    "w": "cum",
+    "c": "la-p618",
+    "fn": "conjunção: quando"
+   },
+   {
+    "w": "milia",
+    "c": "la-p669",
+    "f": "acusativo plural",
+    "fn": "objeto de fecerimus: milhares"
+   },
+   {
+    "w": "multa",
+    "c": "la-p214",
+    "f": "acusativo neutro plural",
+    "fn": "concorda com milia: muitos"
+   },
+   {
+    "w": "fecerimus",
+    "c": "la-p165",
+    "f": "futuro perfeito do indicativo, 1ª pessoa do plural",
+    "fn": "depois de cum: quando tivermos feito"
+   },
+   {
+    "w": "conturbabimus",
+    "c": "la-p592",
+    "f": "futuro do indicativo, 1ª pessoa do plural",
+    "fn": "embaralharemos (a conta)"
+   },
+   {
+    "w": "illa",
+    "c": "la-p215",
+    "f": "acusativo neutro plural",
+    "fn": "objeto de conturbabimus: aqueles (os milhares)"
+   },
+   {
+    "w": "ne",
+    "c": "la-p104",
+    "fn": "com subjuntivo: para que não"
+   },
+   {
+    "w": "sciamus",
+    "c": "la-p252",
+    "f": "presente do subjuntivo, 1ª pessoa do plural",
+    "fn": "depois de ne: saibamos (a conta)"
+   }
+  ],
+  "conceitos": [
+   "la-g030",
+   "la-g010",
+   "la-g012",
+   "la-g003"
+  ],
+  "texto": "catulo/vivamus-mea-lesbia",
+  "linha": 8,
+  "versos": [
+   10,
+   11
+  ]
+ },
+ {
+  "id": "la-t305",
+  "tipo": "frase",
+  "la": "aut ne quis malus invidere possit, cum tantum sciat esse basiorum.",
+  "pt": "ou para que nenhum mau possa pôr mau-olhado, quando souber que há tantos beijos.",
+  "gabarito": "ou para que [nenhum mau ~ nenhum malvado ~ nenhum invejoso ~ ninguém mau ~ algum mau não ~ ninguém maldoso] [possa ~ consiga] [pôr mau-olhado ~ pôr mau olhado ~ invejar ~ nos invejar ~ ter inveja ~ botar mau-olhado ~ lançar mau-olhado], quando souber que [há tantos beijos ~ são tantos os beijos ~ há tamanho número de beijos ~ os beijos são tantos]",
+  "aceitas": [],
+  "distratores": [
+   "ou para que nenhum mau possa pôr mau-olhado, quando soube que havia tantos beijos.",
+   "ou para que algum mau possa pôr mau-olhado, quando souber que há tantos beijos.",
+   "ou para que nenhum mau possa pôr mau-olhado, quando soubermos que há tantos beijos.",
+   "ou para que nenhum mau possa pôr mau-olhado, quando souber que há beijos tão grandes."
+  ],
+  "nota": "ne: com subjuntivo: para que não.\nquis: nominativo masculino singular, depois de ne: alguém (= aliquis).\nmalus: nominativo masculino singular, concorda com quis: mau, mal-intencionado.\ninvidere: infinitivo presente, depende de possit: pôr mau-olhado, invejar.\npossit: presente do subjuntivo, 3ª pessoa do singular, depois de ne: possa.\ncum: conjunção: quando.\ntantum: acusativo neutro singular, sujeito de esse, com basiorum: tamanho número.\nsciat: presente do subjuntivo, 3ª pessoa do singular, depois de cum: souber.\nesse: infinitivo presente, oração infinitiva: que há.\nbasiorum: genitivo plural, partitivo, com tantum: de beijos.\nTantum com o genitivo basiorum: «tanto de beijos», tantos beijos. Sabendo o número, o invejoso podia lançar mau-olhado.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 5",
+  "requerTodas": [
+   "la-p291",
+   "la-p104",
+   "la-p236",
+   "la-p675",
+   "la-p674",
+   "la-p121",
+   "la-p618",
+   "la-p247",
+   "la-p252",
+   "la-p003",
+   "la-p668",
+   "la-v516",
+   "la-v1282",
+   "la-v292",
+   "la-v826",
+   "la-v1259",
+   "la-v038",
+   "la-v1277"
+  ],
+  "palavras": [
+   {
+    "w": "aut",
+    "c": "la-p291"
+   },
+   {
+    "w": "ne",
+    "c": "la-p104",
+    "fn": "com subjuntivo: para que não"
+   },
+   {
+    "w": "quis",
+    "c": "la-p236",
+    "f": "nominativo masculino singular",
+    "fn": "depois de ne: alguém (= aliquis)"
+   },
+   {
+    "w": "malus",
+    "c": "la-p675",
+    "f": "nominativo masculino singular",
+    "fn": "concorda com quis: mau, mal-intencionado"
+   },
+   {
+    "w": "invidere",
+    "c": "la-p674",
+    "f": "infinitivo presente",
+    "fn": "depende de possit: pôr mau-olhado, invejar"
+   },
+   {
+    "w": "possit",
+    "c": "la-p121",
+    "f": "presente do subjuntivo, 3ª pessoa do singular",
+    "fn": "depois de ne: possa"
+   },
+   {
+    "w": "cum",
+    "c": "la-p618",
+    "fn": "conjunção: quando"
+   },
+   {
+    "w": "tantum",
+    "c": "la-p247",
+    "f": "acusativo neutro singular",
+    "fn": "sujeito de esse, com basiorum: tamanho número"
+   },
+   {
+    "w": "sciat",
+    "c": "la-p252",
+    "f": "presente do subjuntivo, 3ª pessoa do singular",
+    "fn": "depois de cum: souber"
+   },
+   {
+    "w": "esse",
+    "c": "la-p003",
+    "f": "infinitivo presente",
+    "fn": "oração infinitiva: que há"
+   },
+   {
+    "w": "basiorum",
+    "c": "la-p668",
+    "f": "genitivo plural",
+    "fn": "partitivo, com tantum: de beijos"
+   }
+  ],
+  "conceitos": [
+   "la-g012",
+   "la-g013",
+   "la-g004",
+   "la-g001"
+  ],
+  "texto": "catulo/vivamus-mea-lesbia",
+  "linha": 9,
+  "versos": [
+   12,
+   13
+  ]
+ },
+ {
+  "id": "la-t306",
+  "tipo": "frase",
+  "la": "Multas per gentes et multa per aequora vectus advenio",
+  "pt": "Levado por muitos povos e por muitos mares, chego",
+  "gabarito": "[Levado ~ Transportado ~ Viajando ~ Tendo viajado ~ Depois de viajar] por muitos [povos ~ nações ~ países] e por muitos mares, [chego ~ venho ~ eu chego ~ eu venho ~ aqui chego]",
+  "aceitas": [],
+  "distratores": [
+   "Levado por muitos povos e por muitos mares, chegou",
+   "Levando muitos povos e muitos mares, chego",
+   "Levado por muitos povos e por muitos mares, chegarei",
+   "Levados por muitos povos e por muitos mares, chegamos"
+  ],
+  "nota": "Multas: acusativo feminino plural, concorda com gentes: muitos.\nper: preposição com acusativo.\ngentes: acusativo plural, depois de per: por povos.\nmulta: acusativo neutro plural, concorda com aequora: muitos.\nper: preposição com acusativo.\naequora: acusativo plural, depois de per: pelos mares.\nvectus: particípio perfeito, nominativo masculino singular, concorda com o sujeito de advenio: levado, depois de viajar.\nadvenio: presente do indicativo, 1ª pessoa do singular, chego.\nA frase vai até o verso 2: «chego, irmão, a estas tristes oferendas aos mortos». O irmão de Catulo morreu na Tróade, longe de Verona.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 101",
+  "requerTodas": [
+   "la-p214",
+   "la-p427",
+   "la-p020",
+   "la-p009",
+   "la-p676",
+   "la-p677",
+   "la-p093",
+   "la-v1257",
+   "la-v078",
+   "la-v484",
+   "la-v1283",
+   "la-v1284"
+  ],
+  "palavras": [
+   {
+    "w": "Multas",
+    "c": "la-p214",
+    "f": "acusativo feminino plural",
+    "fn": "concorda com gentes: muitos"
+   },
+   {
+    "w": "per",
+    "c": "la-p427",
+    "f": "preposição com acusativo"
+   },
+   {
+    "w": "gentes",
+    "c": "la-p020",
+    "f": "acusativo plural",
+    "fn": "depois de per: por povos"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "multa",
+    "c": "la-p214",
+    "f": "acusativo neutro plural",
+    "fn": "concorda com aequora: muitos"
+   },
+   {
+    "w": "per",
+    "c": "la-p427",
+    "f": "preposição com acusativo"
+   },
+   {
+    "w": "aequora",
+    "c": "la-p676",
+    "f": "acusativo plural",
+    "fn": "depois de per: pelos mares"
+   },
+   {
+    "w": "vectus",
+    "c": "la-p677",
+    "f": "particípio perfeito, nominativo masculino singular",
+    "fn": "concorda com o sujeito de advenio: levado, depois de viajar"
+   },
+   {
+    "w": "advenio",
+    "c": "la-p093",
+    "f": "presente do indicativo, 1ª pessoa do singular",
+    "fn": "chego"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g014",
+   "la-g007"
+  ],
+  "texto": "catulo/multas-per-gentes",
+  "linha": 1,
+  "versos": [
+   1,
+   2
+  ]
+ },
+ {
+  "id": "la-t307",
+  "tipo": "frase",
+  "la": "advenio has miseras, frater, ad inferias",
+  "pt": "chego, irmão, a estas tristes oferendas aos mortos",
+  "gabarito": "[chego ~ venho ~ eu chego ~ eu venho], [irmão ~ ó irmão], [a estas ~ para estas ~ até estas] [tristes ~ infelizes ~ míseras ~ miseráveis] [oferendas aos mortos ~ oferendas fúnebres ~ exéquias ~ honras fúnebres ~ ritos fúnebres]",
+  "aceitas": [],
+  "distratores": [
+   "chega, irmão, a estas tristes oferendas aos mortos",
+   "chego, irmão, às oferendas destes infelizes mortos",
+   "o irmão chega a estas tristes oferendas aos mortos",
+   "cheguei, irmão, a estas tristes oferendas aos mortos"
+  ],
+  "nota": "advenio: presente do indicativo, 1ª pessoa do singular, chego.\nhas: acusativo feminino plural, concorda com inferias: estas.\nmiseras: acusativo feminino plural, concorda com inferias: tristes.\nfrater: vocativo singular, a quem se fala: irmão.\nad: preposição com acusativo.\ninferias: acusativo plural, depois de ad, para quê: para as oferendas aos mortos.\nInferiae são as oferendas sobre o túmulo: vinho, leite, mel e flores.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 101",
+  "requerTodas": [
+   "la-p093",
+   "la-p124",
+   "la-p678",
+   "la-p545",
+   "la-p178",
+   "la-p679",
+   "la-v315",
+   "la-v1285",
+   "la-v1286"
+  ],
+  "palavras": [
+   {
+    "w": "advenio",
+    "c": "la-p093",
+    "f": "presente do indicativo, 1ª pessoa do singular",
+    "fn": "chego"
+   },
+   {
+    "w": "has",
+    "c": "la-p124",
+    "f": "acusativo feminino plural",
+    "fn": "concorda com inferias: estas"
+   },
+   {
+    "w": "miseras",
+    "c": "la-p678",
+    "f": "acusativo feminino plural",
+    "fn": "concorda com inferias: tristes"
+   },
+   {
+    "w": "frater",
+    "c": "la-p545",
+    "f": "vocativo singular",
+    "fn": "a quem se fala: irmão"
+   },
+   {
+    "w": "ad",
+    "c": "la-p178",
+    "f": "preposição com acusativo"
+   },
+   {
+    "w": "inferias",
+    "c": "la-p679",
+    "f": "acusativo plural",
+    "fn": "depois de ad, para quê: para as oferendas aos mortos"
+   }
+  ],
+  "conceitos": [
+   "la-g003",
+   "la-g002",
+   "la-g007"
+  ],
+  "texto": "catulo/multas-per-gentes",
+  "linha": 2,
+  "versos": [
+   2,
+   2
+  ]
+ },
+ {
+  "id": "la-t308",
+  "tipo": "frase",
+  "la": "ut te postremo donarem munere mortis",
+  "pt": "para te presentear com o último dom da morte",
+  "gabarito": "para [te presentear ~ te honrar ~ te dar ~ te ofertar ~ que eu te presenteasse ~ que eu te honrasse ~ que te presenteasse ~ presentear-te] com [o último ~ o derradeiro ~ a última ~ a derradeira] [dom ~ presente ~ oferenda ~ homenagem ~ honra] [da morte ~ devido à morte ~ devido aos mortos ~ dos mortos ~ do morto]",
+  "aceitas": [],
+  "distratores": [
+   "para que me presenteasses com o último dom da morte",
+   "para te presentear com o dom da última morte",
+   "porque te presenteei com o último dom da morte",
+   "para que te presenteiem com o último dom da morte"
+  ],
+  "nota": "ut: com subjuntivo: para que.\nte: acusativo singular, objeto de donarem: te.\npostremo: ablativo neutro singular, concorda com munere: último.\ndonarem: imperfeito do subjuntivo, 1ª pessoa do singular, depois de ut: presenteasse.\nmunere: ablativo singular, com donarem, com quê: com o presente.\nmortis: genitivo singular, de que é o presente: da morte, o devido aos mortos.\nDonare aliquem aliqua re: presentear alguém (acusativo) com algo (ablativo).",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 101",
+  "requerTodas": [
+   "la-p257",
+   "la-p007",
+   "la-p680",
+   "la-p639",
+   "la-p681",
+   "la-p119",
+   "la-v050",
+   "la-v1287",
+   "la-v1266",
+   "la-v1288",
+   "la-v265"
+  ],
+  "palavras": [
+   {
+    "w": "ut",
+    "c": "la-p257",
+    "fn": "com subjuntivo: para que"
+   },
+   {
+    "w": "te",
+    "c": "la-p007",
+    "f": "acusativo singular",
+    "fn": "objeto de donarem: te"
+   },
+   {
+    "w": "postremo",
+    "c": "la-p680",
+    "f": "ablativo neutro singular",
+    "fn": "concorda com munere: último"
+   },
+   {
+    "w": "donarem",
+    "c": "la-p639",
+    "f": "imperfeito do subjuntivo, 1ª pessoa do singular",
+    "fn": "depois de ut: presenteasse"
+   },
+   {
+    "w": "munere",
+    "c": "la-p681",
+    "f": "ablativo singular",
+    "fn": "com donarem, com quê: com o presente"
+   },
+   {
+    "w": "mortis",
+    "c": "la-p119",
+    "f": "genitivo singular",
+    "fn": "de que é o presente: da morte, o devido aos mortos"
+   }
+  ],
+  "conceitos": [
+   "la-g017",
+   "la-g003",
+   "la-g006",
+   "la-g004"
+  ],
+  "texto": "catulo/multas-per-gentes",
+  "linha": 3,
+  "versos": [
+   3,
+   3
+  ]
+ },
+ {
+  "id": "la-t309",
+  "tipo": "frase",
+  "la": "ut … et mutam nequiquam adloquerer cinerem",
+  "pt": "para que … e falasse em vão à cinza muda",
+  "gabarito": "para [que ~ ] … e [falasse ~ eu falasse ~ me dirigisse ~ falar ~ me dirigir ~ dirigisse a palavra] [em vão ~ inutilmente] [à cinza muda ~ às cinzas mudas ~ à muda cinza ~ às mudas cinzas]",
+  "aceitas": [],
+  "distratores": [
+   "para que … e a cinza muda me falasse em vão",
+   "para que … e falasse em vão à cinza do mudo",
+   "para que … e falei em vão à cinza muda",
+   "para que … e falassem em vão à cinza muda"
+  ],
+  "nota": "ut: com subjuntivo: para que.\nmutam: acusativo feminino singular, concorda com cinerem: muda.\nadloquerer: imperfeito do subjuntivo, 1ª pessoa do singular, depende de ut, depoente: falasse.\ncinerem: acusativo singular, objeto de adloquerer: a cinza (aqui, feminino).\nA frase vem do verso 3: «para te presentear com o último dom da morte e falar em vão à cinza muda». Adloquor é depoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 101",
+  "requerTodas": [
+   "la-p257",
+   "la-p009",
+   "la-p682",
+   "la-p683",
+   "la-p684",
+   "la-p685",
+   "la-v1289",
+   "la-v1290",
+   "la-v1291"
+  ],
+  "palavras": [
+   {
+    "w": "ut",
+    "c": "la-p257",
+    "fn": "com subjuntivo: para que"
+   },
+   {
+    "w": "et",
+    "c": "la-p009"
+   },
+   {
+    "w": "mutam",
+    "c": "la-p682",
+    "f": "acusativo feminino singular",
+    "fn": "concorda com cinerem: muda"
+   },
+   {
+    "w": "nequiquam",
+    "c": "la-p683"
+   },
+   {
+    "w": "adloquerer",
+    "c": "la-p684",
+    "f": "imperfeito do subjuntivo, 1ª pessoa do singular",
+    "fn": "depende de ut, depoente: falasse"
+   },
+   {
+    "w": "cinerem",
+    "c": "la-p685",
+    "f": "acusativo singular",
+    "fn": "objeto de adloquerer: a cinza (aqui, feminino)"
+   }
+  ],
+  "conceitos": [
+   "la-g017",
+   "la-g016",
+   "la-g003"
+  ],
+  "texto": "catulo/multas-per-gentes",
+  "linha": 4,
+  "versos": [
+   3,
+   4
+  ]
+ },
+ {
+  "id": "la-t310",
+  "tipo": "frase",
+  "la": "quandoquidem fortuna mihi tete abstulit ipsum",
+  "pt": "já que a sorte tirou de mim a ti mesmo",
+  "gabarito": "[já que ~ visto que ~ uma vez que ~ pois ~ porque] [a sorte ~ a fortuna ~ o destino] [tirou de mim a ti mesmo ~ te tirou de mim ~ me tirou a ti mesmo ~ me tirou a ti ~ tirou-me a ti mesmo ~ tirou de mim a ti ~ te arrebatou de mim ~ levou-te de mim ~ te levou de mim ~ tirou a ti mesmo de mim ~ te tirou de mim, a ti mesmo]",
+  "aceitas": [],
+  "distratores": [
+   "já que a sorte tirou de ti a mim mesmo",
+   "já que a sorte me tirará a ti mesmo",
+   "já que a sorte tirou de mim a si mesma",
+   "já que tu mesmo me tiraste a sorte"
+  ],
+  "nota": "fortuna: nominativo singular, sujeito de abstulit: a sorte.\nmihi: dativo singular, de quem foi tirado: de mim.\ntete: acusativo singular, forma reforçada de te, objeto de abstulit: a ti.\nabstulit: perfeito do indicativo, 3ª pessoa do singular, tirou.\nipsum: acusativo masculino singular, concorda com tete: a ti mesmo.\nTete é te reforçado. Com os verbos de tirar, o dativo diz de quem se tira: mihi, de mim.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 101",
+  "requerTodas": [
+   "la-p686",
+   "la-p148",
+   "la-p004",
+   "la-p007",
+   "la-p687",
+   "la-p587",
+   "la-v042",
+   "la-v1253",
+   "la-v1292",
+   "la-v1264"
+  ],
+  "palavras": [
+   {
+    "w": "quandoquidem",
+    "c": "la-p686"
+   },
+   {
+    "w": "fortuna",
+    "c": "la-p148",
+    "f": "nominativo singular",
+    "fn": "sujeito de abstulit: a sorte"
+   },
+   {
+    "w": "mihi",
+    "c": "la-p004",
+    "f": "dativo singular",
+    "fn": "de quem foi tirado: de mim"
+   },
+   {
+    "w": "tete",
+    "c": "la-p007",
+    "f": "acusativo singular",
+    "fn": "forma reforçada de te, objeto de abstulit: a ti"
+   },
+   {
+    "w": "abstulit",
+    "c": "la-p687",
+    "f": "perfeito do indicativo, 3ª pessoa do singular",
+    "fn": "tirou"
+   },
+   {
+    "w": "ipsum",
+    "c": "la-p587",
+    "f": "acusativo masculino singular",
+    "fn": "concorda com tete: a ti mesmo"
+   }
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g005",
+   "la-g003",
+   "la-g009"
+  ],
+  "texto": "catulo/multas-per-gentes",
+  "linha": 5,
+  "versos": [
+   5,
+   5
+  ]
+ },
+ {
+  "id": "la-t311",
+  "tipo": "frase",
+  "la": "heu miser indigne frater adempte mihi.",
+  "pt": "ai, irmão infeliz, arrebatado de mim sem o merecer.",
+  "gabarito": "[ai ~ ai de mim ~ ah ~ oh], [irmão infeliz ~ infeliz irmão ~ pobre irmão ~ irmão desgraçado ~ mísero irmão ~ ó irmão infeliz ~ ó infeliz irmão], [arrebatado ~ tirado ~ tomado ~ roubado ~ levado] [de mim ~ a mim] [sem o merecer ~ sem merecer ~ indignamente ~ injustamente ~ sem que o merecesses]",
+  "aceitas": [],
+  "distratores": [
+   "ai, irmão infeliz, que me arrebataste sem o merecer.",
+   "ai, infeliz de mim, irmão arrebatado sem o merecer.",
+   "ai, o irmão infeliz foi arrebatado de mim sem o merecer.",
+   "ai, irmão infeliz, que serás arrebatado de mim sem o merecer."
+  ],
+  "nota": "miser: vocativo masculino singular, concorda com frater: infeliz.\nindigne: vocativo masculino singular, concorda com frater: que não merecias isso.\nfrater: vocativo singular, a quem se fala: irmão.\nadempte: particípio perfeito, vocativo masculino singular, concorda com frater: arrebatado.\nmihi: dativo singular, de quem: de mim.\nTudo no vocativo: miser, frater, adempte (o -e da 2ª declinação). Muitos leem indigne como advérbio: indignamente.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 101",
+  "requerTodas": [
+   "la-p688",
+   "la-p678",
+   "la-p689",
+   "la-p545",
+   "la-p690",
+   "la-p004",
+   "la-v1293",
+   "la-v1294",
+   "la-v042"
+  ],
+  "palavras": [
+   {
+    "w": "heu",
+    "c": "la-p688"
+   },
+   {
+    "w": "miser",
+    "c": "la-p678",
+    "f": "vocativo masculino singular",
+    "fn": "concorda com frater: infeliz"
+   },
+   {
+    "w": "indigne",
+    "c": "la-p689",
+    "f": "vocativo masculino singular",
+    "fn": "concorda com frater: que não merecias isso"
+   },
+   {
+    "w": "frater",
+    "c": "la-p545",
+    "f": "vocativo singular",
+    "fn": "a quem se fala: irmão"
+   },
+   {
+    "w": "adempte",
+    "c": "la-p690",
+    "f": "particípio perfeito, vocativo masculino singular",
+    "fn": "concorda com frater: arrebatado"
+   },
+   {
+    "w": "mihi",
+    "c": "la-p004",
+    "f": "dativo singular",
+    "fn": "de quem: de mim"
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g014",
+   "la-g005"
+  ],
+  "texto": "catulo/multas-per-gentes",
+  "linha": 6,
+  "versos": [
+   6,
+   6
+  ]
+ },
+ {
+  "id": "la-t312",
+  "tipo": "frase",
+  "la": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "pt": "Agora, porém, enquanto isso, recebe estas coisas … que escorrem muito do pranto fraterno",
+  "gabarito": "[Agora, porém ~ Mas agora] [enquanto isso ~ entretanto ~ ] [recebe ~ aceita ~ acolhe] [estas coisas ~ estas oferendas ~ estes dons ~ isto] [que escorrem muito ~ que muito escorrem ~ muito molhadas ~ que manam muito] [do pranto ~ de pranto ~ de lágrimas] [fraterno ~ de irmão]",
+  "aceitas": [],
+  "distratores": [
+   "Agora, porém, enquanto isso, recebeu estas coisas … que escorrem muito do pranto fraterno",
+   "Agora, porém, enquanto isso, recebe estas coisas … do pranto fraterno que escorre muito",
+   "Agora, porém, enquanto isso, recebe esta … que escorre muito do pranto fraterno",
+   "Agora, porém, enquanto isso, recebe estas coisas … que escorriam muito do pranto fraterno"
+  ],
+  "nota": "haec: acusativo neutro plural, objeto de accipe: estas coisas.\naccipe: imperativo presente, 2ª pessoa do singular, recebe.\nfraterno: ablativo masculino singular, concorda com fletu: de irmão.\nmultum: acusativo neutro singular, como advérbio: muito.\nmanantia: particípio presente, acusativo neutro plural, concorda com haec: que escorrem.\nfletu: ablativo singular, de quê: do pranto.\nA frase inteira: «Agora, porém, enquanto isso, estas coisas que, pelo antigo costume dos pais, foram oferecidas aos mortos, recebe-as, muito molhadas de pranto fraterno».",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 101",
+  "requerTodas": [
+   "la-p086",
+   "la-p499",
+   "la-p691",
+   "la-p124",
+   "la-p697",
+   "la-p698",
+   "la-p214",
+   "la-p699",
+   "la-p700",
+   "la-v302",
+   "la-v1300",
+   "la-v1301",
+   "la-v486",
+   "la-v1302",
+   "la-v1303"
+  ],
+  "palavras": [
+   {
+    "w": "Nunc",
+    "c": "la-p086"
+   },
+   {
+    "w": "tamen",
+    "c": "la-p499"
+   },
+   {
+    "w": "interea",
+    "c": "la-p691"
+   },
+   {
+    "w": "haec",
+    "c": "la-p124",
+    "f": "acusativo neutro plural",
+    "fn": "objeto de accipe: estas coisas"
+   },
+   {
+    "w": "accipe",
+    "c": "la-p697",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "recebe"
+   },
+   {
+    "w": "fraterno",
+    "c": "la-p698",
+    "f": "ablativo masculino singular",
+    "fn": "concorda com fletu: de irmão"
+   },
+   {
+    "w": "multum",
+    "c": "la-p214",
+    "f": "acusativo neutro singular",
+    "fn": "como advérbio: muito"
+   },
+   {
+    "w": "manantia",
+    "c": "la-p699",
+    "f": "particípio presente, acusativo neutro plural",
+    "fn": "concorda com haec: que escorrem"
+   },
+   {
+    "w": "fletu",
+    "c": "la-p700",
+    "f": "ablativo singular",
+    "fn": "de quê: do pranto"
+   }
+  ],
+  "conceitos": [
+   "la-g011",
+   "la-g003",
+   "la-g019",
+   "la-g006"
+  ],
+  "texto": "catulo/multas-per-gentes",
+  "linha": 7,
+  "versos": [
+   7,
+   9
+  ]
+ },
+ {
+  "id": "la-t313",
+  "tipo": "frase",
+  "la": "prisco quae more parentum tradita sunt tristi munere ad inferias",
+  "pt": "que, pelo antigo costume dos pais, foram entregues como triste oferenda para os ritos fúnebres",
+  "gabarito": "que, [pelo antigo costume ~ segundo o antigo costume ~ conforme o antigo costume ~ pelo costume antigo ~ segundo o costume antigo] [dos pais ~ dos antepassados ~ dos ancestrais], [foram entregues ~ foram oferecidas ~ foram transmitidas ~ foram dadas] [como triste oferenda ~ em triste oferenda ~ como triste dever ~ como triste presente] [para os ritos fúnebres ~ para as exéquias ~ às oferendas aos mortos ~ para as oferendas aos mortos ~ aos mortos ~ para os mortos]",
+  "aceitas": [],
+  "distratores": [
+   "que, pelo antigo costume dos pais, entregaram como triste oferenda para os ritos fúnebres",
+   "que, pelo costume dos antigos pais, foram entregues como triste oferenda para os ritos fúnebres",
+   "que, pelo antigo costume dos pais, serão entregues como triste oferenda para os ritos fúnebres",
+   "que, pelo antigo costume do pai, foram entregues como triste oferenda para os ritos fúnebres"
+  ],
+  "nota": "prisco: ablativo masculino singular, concorda com more: antigo.\nquae: nominativo neutro plural, sujeito de tradita sunt; retoma haec.\nmore: ablativo singular, como: pelo costume.\nparentum: genitivo plural, de quem é o costume: dos pais, dos antepassados.\ntradita: particípio perfeito, nominativo neutro plural, com sunt: foram oferecidas.\nsunt: presente do indicativo, 3ª pessoa do plural, com tradita: perfeito passivo.\ntristi: ablativo neutro singular, concorda com munere: triste.\nmunere: ablativo singular, como quê: como oferenda.\nad: preposição com acusativo.\ninferias: acusativo plural, depois de ad, para quê: para as oferendas aos mortos.\nA frase vai do verso 7 ao 9: quae retoma haec, as coisas que o irmão deve receber.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 101",
+  "requerTodas": [
+   "la-p692",
+   "la-p064",
+   "la-p693",
+   "la-p694",
+   "la-p695",
+   "la-p003",
+   "la-p696",
+   "la-p681",
+   "la-p178",
+   "la-p679",
+   "la-v1295",
+   "la-v172",
+   "la-v1296",
+   "la-v1297",
+   "la-v1298",
+   "la-v013",
+   "la-v1299",
+   "la-v1288",
+   "la-v1286"
+  ],
+  "palavras": [
+   {
+    "w": "prisco",
+    "c": "la-p692",
+    "f": "ablativo masculino singular",
+    "fn": "concorda com more: antigo"
+   },
+   {
+    "w": "quae",
+    "c": "la-p064",
+    "f": "nominativo neutro plural",
+    "fn": "sujeito de tradita sunt; retoma haec"
+   },
+   {
+    "w": "more",
+    "c": "la-p693",
+    "f": "ablativo singular",
+    "fn": "como: pelo costume"
+   },
+   {
+    "w": "parentum",
+    "c": "la-p694",
+    "f": "genitivo plural",
+    "fn": "de quem é o costume: dos pais, dos antepassados"
+   },
+   {
+    "w": "tradita",
+    "c": "la-p695",
+    "f": "particípio perfeito, nominativo neutro plural",
+    "fn": "com sunt: foram oferecidas"
+   },
+   {
+    "w": "sunt",
+    "c": "la-p003",
+    "f": "presente do indicativo, 3ª pessoa do plural",
+    "fn": "com tradita: perfeito passivo"
+   },
+   {
+    "w": "tristi",
+    "c": "la-p696",
+    "f": "ablativo neutro singular",
+    "fn": "concorda com munere: triste"
+   },
+   {
+    "w": "munere",
+    "c": "la-p681",
+    "f": "ablativo singular",
+    "fn": "como quê: como oferenda"
+   },
+   {
+    "w": "ad",
+    "c": "la-p178",
+    "f": "preposição com acusativo"
+   },
+   {
+    "w": "inferias",
+    "c": "la-p679",
+    "f": "acusativo plural",
+    "fn": "depois de ad, para quê: para as oferendas aos mortos"
+   }
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g004",
+   "la-g014",
+   "la-g015",
+   "la-g001"
+  ],
+  "texto": "catulo/multas-per-gentes",
+  "linha": 8,
+  "versos": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "la-t314",
+  "tipo": "frase",
+  "la": "atque in perpetuum, frater, ave atque vale.",
+  "pt": "e para sempre, irmão, salve e adeus.",
+  "gabarito": "[e ~ e também] [para sempre ~ eternamente ~ pela eternidade], [irmão ~ ó irmão ~ meu irmão], [salve e adeus ~ ave e adeus ~ salve e passa bem ~ salve e fica bem ~ olá e adeus ~ eu te saúdo e me despeço]",
+  "aceitas": [],
+  "distratores": [
+   "e para sempre o irmão saúda e se despede.",
+   "e, irmão perpétuo, salve e adeus.",
+   "e para sempre, irmãos, salve e adeus.",
+   "e para sempre, irmão, saudei-te e despedi-me."
+  ],
+  "nota": "in: preposição com acusativo.\nperpetuum: acusativo neutro singular, in perpetuum: para sempre.\nfrater: vocativo singular, a quem se fala: irmão.\nave: a saudação: salve.\nvale: imperativo presente, 2ª pessoa do singular, passa bem: adeus.\nAve e vale são imperativos: «passa bem» era o adeus dos romanos, e ave atque vale, a despedida do morto.",
+  "nivel": "A1",
+  "tags": [
+   "trecho"
+  ],
+  "fonte": "Poemas, 101",
+  "requerTodas": [
+   "la-p230",
+   "la-p022",
+   "la-p361",
+   "la-p545",
+   "la-p110",
+   "la-p410",
+   "la-v1261",
+   "la-v908"
+  ],
+  "palavras": [
+   {
+    "w": "atque",
+    "c": "la-p230"
+   },
+   {
+    "w": "in",
+    "c": "la-p022",
+    "f": "preposição com acusativo"
+   },
+   {
+    "w": "perpetuum",
+    "c": "la-p361",
+    "f": "acusativo neutro singular",
+    "fn": "in perpetuum: para sempre"
+   },
+   {
+    "w": "frater",
+    "c": "la-p545",
+    "f": "vocativo singular",
+    "fn": "a quem se fala: irmão"
+   },
+   {
+    "w": "ave",
+    "c": "la-p110",
+    "fn": "a saudação: salve"
+   },
+   {
+    "w": "atque",
+    "c": "la-p230"
+   },
+   {
+    "w": "vale",
+    "c": "la-p410",
+    "f": "imperativo presente, 2ª pessoa do singular",
+    "fn": "passa bem: adeus"
+   }
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g011",
+   "la-g003"
+  ],
+  "texto": "catulo/multas-per-gentes",
+  "linha": 9,
+  "versos": [
+   10,
+   10
+  ]
+ }
+]

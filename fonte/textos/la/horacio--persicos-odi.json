@@ -1,0 +1,551 @@
+{
+ "id": "horacio/persicos-odi",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Persicos odi",
+ "autor": "Horácio",
+ "ano": null,
+ "biblioteca": "/biblioteca/horacio/persicos-odi/",
+ "ordem": 35,
+ "fonte": "Odes, livro I, 38",
+ "blocos": [
+  [
+   {
+    "t": "Persicos odi, puer, apparatus,",
+    "p": [
+     [
+      "Persicos",
+      "persicos"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "odi",
+      "odi"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "puer",
+      "puer"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "apparatus",
+      "apparatus"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "displicent nexae philyra coronae;",
+    "p": [
+     [
+      "displicent",
+      "displicent"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nexae",
+      "nexae"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "philyra",
+      "philyra"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "coronae",
+      "coronae"
+     ],
+     [
+      ";",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "mitte sectari, rosa quo locorum",
+    "p": [
+     [
+      "mitte",
+      "mitte"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sectari",
+      "sectari"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "rosa",
+      "rosa"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "quo",
+      "quo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "locorum",
+      "locorum"
+     ]
+    ]
+   },
+   {
+    "t": "sera moretur.",
+    "p": [
+     [
+      "sera",
+      "sera"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "moretur",
+      "moretur"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "Simplici myrto nihil allabores",
+    "p": [
+     [
+      "Simplici",
+      "simplici"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "myrto",
+      "myrto"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nihil",
+      "nihil"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "allabores",
+      "allabores"
+     ]
+    ]
+   },
+   {
+    "t": "sedulus curo: neque te ministrum",
+    "p": [
+     [
+      "sedulus",
+      "sedulus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "curo",
+      "curo"
+     ],
+     [
+      ": ",
+      null
+     ],
+     [
+      "neque",
+      "neque"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "te",
+      "te"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ministrum",
+      "ministrum"
+     ]
+    ],
+    "flexoes": [
+     "la-v556",
+     "la-v050"
+    ]
+   },
+   {
+    "t": "dedecet myrtus neque me sub arta",
+    "p": [
+     [
+      "dedecet",
+      "dedecet"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "myrtus",
+      "myrtus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "neque",
+      "neque"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "me",
+      "me"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sub",
+      "sub"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "arta",
+      "arta"
+     ]
+    ],
+    "flexoes": [
+     "la-v556",
+     "la-v043"
+    ]
+   },
+   {
+    "t": "vite bibentem.",
+    "p": [
+     [
+      "vite",
+      "vite"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "bibentem",
+      "bibentem"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "persicos": {
+   "lema": "Persicus",
+   "classe": "adjetivo (nome próprio)",
+   "g": "nome",
+   "def": [
+    "Persa, da Pérsia: para os romanos, a terra do luxo."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Persicus#Latin",
+   "forma": "acusativo masculino plural",
+   "funcao": "concorda com apparatus"
+  },
+  "odi": {
+   "lema": "odi",
+   "classe": "verbo",
+   "forma": "1ª pessoa do singular; forma de perfeito, sentido de presente",
+   "funcao": "odeio",
+   "card": "la-p164",
+   "wiki": "https://en.wiktionary.org/wiki/odi#Latin"
+  },
+  "puer": {
+   "lema": "puer",
+   "classe": "substantivo masculino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala: menino, o escravo que serve",
+   "card": "la-p341",
+   "wiki": "https://en.wiktionary.org/wiki/puer#Latin"
+  },
+  "apparatus": {
+   "lema": "apparatus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de odi: os luxos",
+   "card": "la-p701",
+   "wiki": "https://en.wiktionary.org/wiki/apparatus#Latin"
+  },
+  "displicent": {
+   "lema": "displiceo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do plural",
+   "funcao": "desagradam",
+   "card": "la-p702",
+   "wiki": "https://en.wiktionary.org/wiki/displiceo#Latin"
+  },
+  "nexae": {
+   "lema": "necto",
+   "classe": "verbo",
+   "forma": "particípio perfeito, nominativo feminino plural",
+   "funcao": "concorda com coronae: entrelaçadas",
+   "card": "la-p703",
+   "wiki": "https://en.wiktionary.org/wiki/necto#Latin"
+  },
+  "philyra": {
+   "lema": "philyra",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "com quê: com fibra de tília",
+   "card": "la-p704",
+   "wiki": "https://en.wiktionary.org/wiki/philyra#Latin"
+  },
+  "coronae": {
+   "lema": "corona",
+   "classe": "substantivo feminino",
+   "forma": "nominativo plural",
+   "funcao": "sujeito de displicent: as coroas",
+   "card": "la-p705",
+   "wiki": "https://en.wiktionary.org/wiki/corona#Latin"
+  },
+  "mitte": {
+   "lema": "mitto",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "com infinitivo: deixa de",
+   "card": "la-p706",
+   "wiki": "https://en.wiktionary.org/wiki/mitto#Latin"
+  },
+  "sectari": {
+   "lema": "sector",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "depende de mitte, depoente: procurar",
+   "card": "la-p707",
+   "wiki": "https://en.wiktionary.org/wiki/sector#Latin"
+  },
+  "rosa": {
+   "lema": "rosa",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de moretur: a rosa",
+   "card": "la-p708",
+   "wiki": "https://en.wiktionary.org/wiki/rosa#Latin"
+  },
+  "quo": {
+   "lema": "quo",
+   "classe": "advérbio",
+   "funcao": "com locorum: em que lugar",
+   "card": "la-p075",
+   "wiki": "https://en.wiktionary.org/wiki/quo#Latin"
+  },
+  "locorum": {
+   "lema": "locus",
+   "classe": "substantivo",
+   "forma": "genitivo plural",
+   "funcao": "partitivo, com quo: dos lugares",
+   "card": "la-p709",
+   "wiki": "https://en.wiktionary.org/wiki/locus#Latin"
+  },
+  "sera": {
+   "lema": "serus",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "concorda com rosa: tardia",
+   "card": "la-p710",
+   "wiki": "https://en.wiktionary.org/wiki/serus#Latin"
+  },
+  "moretur": {
+   "lema": "moror",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 3ª pessoa do singular",
+   "funcao": "pergunta indireta, depoente: se demora",
+   "card": "la-p711",
+   "wiki": "https://en.wiktionary.org/wiki/moror#Latin"
+  },
+  "simplici": {
+   "lema": "simplex",
+   "classe": "adjetivo",
+   "forma": "dativo feminino singular",
+   "funcao": "concorda com myrto: simples",
+   "card": "la-p712",
+   "wiki": "https://en.wiktionary.org/wiki/simplex#Latin"
+  },
+  "myrto": {
+   "lema": "myrtus",
+   "classe": "substantivo feminino",
+   "forma": "dativo singular",
+   "funcao": "a quê se acrescenta: à murta",
+   "card": "la-p713",
+   "wiki": "https://en.wiktionary.org/wiki/myrtus#Latin"
+  },
+  "nihil": {
+   "lema": "nil",
+   "classe": "pronome",
+   "funcao": "objeto de allabores: nada",
+   "card": "la-p494",
+   "wiki": "https://en.wiktionary.org/wiki/nil#Latin"
+  },
+  "allabores": {
+   "lema": "allaboro",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 2ª pessoa do singular",
+   "funcao": "depende de curo, sem ut: que acrescentes",
+   "card": "la-p714",
+   "wiki": "https://en.wiktionary.org/wiki/allaboro#Latin"
+  },
+  "sedulus": {
+   "lema": "sedulus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com o sujeito de allabores (tu): zeloso",
+   "card": "la-p715",
+   "wiki": "https://en.wiktionary.org/wiki/sedulus#Latin"
+  },
+  "curo": {
+   "lema": "curo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "funcao": "faço questão",
+   "card": "la-p392",
+   "wiki": "https://en.wiktionary.org/wiki/curo#Latin"
+  },
+  "neque": {
+   "lema": "nec",
+   "classe": "conjunção",
+   "card": "la-p120",
+   "wiki": "https://en.wiktionary.org/wiki/nec#Latin"
+  },
+  "te": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "acusativo singular",
+   "funcao": "objeto de dedecet: a ti",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  },
+  "ministrum": {
+   "lema": "minister",
+   "classe": "substantivo masculino",
+   "forma": "acusativo singular",
+   "funcao": "concorda com te: que serves",
+   "card": "la-p716",
+   "wiki": "https://en.wiktionary.org/wiki/minister#Latin"
+  },
+  "dedecet": {
+   "lema": "dedecet",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "fica mal",
+   "card": "la-p717",
+   "wiki": "https://en.wiktionary.org/wiki/dedecet#Latin"
+  },
+  "myrtus": {
+   "lema": "myrtus",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de dedecet: a murta",
+   "card": "la-p713",
+   "wiki": "https://en.wiktionary.org/wiki/myrtus#Latin"
+  },
+  "me": {
+   "lema": "ego",
+   "classe": "pronome",
+   "forma": "acusativo singular",
+   "funcao": "objeto de dedecet: a mim",
+   "card": "la-p004",
+   "wiki": "https://en.wiktionary.org/wiki/ego#Latin"
+  },
+  "sub": {
+   "lema": "sub",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p432",
+   "wiki": "https://en.wiktionary.org/wiki/sub#Latin"
+  },
+  "arta": {
+   "lema": "artus",
+   "classe": "adjetivo",
+   "forma": "ablativo feminino singular",
+   "funcao": "concorda com vite: densa",
+   "card": "la-p718",
+   "wiki": "https://en.wiktionary.org/wiki/artus#Latin"
+  },
+  "vite": {
+   "lema": "vitis",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "depois de sub: a parreira",
+   "card": "la-p719",
+   "wiki": "https://en.wiktionary.org/wiki/vitis#Latin"
+  },
+  "bibentem": {
+   "lema": "bibo",
+   "classe": "verbo",
+   "forma": "particípio presente, acusativo masculino singular",
+   "funcao": "concorda com me: bebendo",
+   "card": "la-p200",
+   "wiki": "https://en.wiktionary.org/wiki/bibo#Latin"
+  }
+ }
+}
