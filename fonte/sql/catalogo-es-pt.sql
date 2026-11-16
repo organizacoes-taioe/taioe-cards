@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva 153be147, 2494 cards.
+-- Catálogo do curso es-pt, leva 0b6574e1, 2494 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', '153be147', '2494 cards')
+values ('es-pt', '0b6574e1', '2494 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -2428,7 +2428,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p1303', 'palavra', 'C1', array['substantivo', 'social']::text[], null, '5f029db9', array['a briga / a discussão', 'a homenagem / a festa', 'a zombaria / a gozação', 'o castigo / a pena', 'o elogio / o aplauso']::text[]),
   ('es-pt', 'p1304', 'palavra', 'A2', array['advérbio', 'cotidiano']::text[], null, 'a5a4e99c', array['atrás / depois', 'dentro / ao redor', 'embaixo / abaixo', 'longe / fora', 'na frente / adiante']::text[]),
   ('es-pt', 'p1305', 'palavra', 'B1', array['verbo', 'formal']::text[], null, 'ef7883f3', array['achar / encontrar', 'buscar / procurar', 'esconder / ocultar', 'guardar / reter', 'perder / extraviar']::text[]),
-  ('es-pt', 'p1306', 'palavra', 'B1', array['verbo', 'cotidiano']::text[], null, '654264cd', array['confirmar', 'esquecer', 'ignorar', 'provar', 'suspeitar']::text[]),
+  ('es-pt', 'p1306', 'palavra', 'B1', array['verbo', 'cotidiano']::text[], null, '2c68b45f', array['confirmar', 'esquecer', 'ignorar', 'provar', 'suspeitar']::text[]),
   ('es-pt', 'p1307', 'palavra', 'B2', array['verbo', 'social']::text[], null, '5cdac7db', array['compartilhar / dividir', 'competir / concorrer', 'completar / terminar', 'comprar / adquirir', 'cooperar / colaborar']::text[]),
   ('es-pt', 'p1308', 'palavra', 'A2', array['adjetivo']::text[], null, '80a0f085', array['belo', 'bravo', 'calvo', 'cheio', 'velho']::text[]),
   ('es-pt', 'p1309', 'palavra', 'A2', array['substantivo', 'corpo']::text[], null, 'bb41de77', array['a bochecha', 'a língua', 'o dente', 'o lábio', 'o queixo']::text[]),
@@ -2442,7 +2442,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p1317', 'palavra', 'B2', array['adjetivo']::text[], null, 'dceceb41', array['coerente', 'consciente', 'contente', 'deficiente', 'paciente']::text[]),
   ('es-pt', 'p1318', 'palavra', 'B2', array['substantivo', 'viagem']::text[], null, '7b92ebe3', array['o remo', 'o ritmo', 'o rombo', 'o rumo', 'o rumor']::text[]),
   ('es-pt', 'p1319', 'palavra', 'B2', array['substantivo', 'social']::text[], null, 'ccbad1c7', array['a coragem / a bravura', 'o pudor / a vergonha', 'o rancor / o ódio', 'o temor / o medo', 'o tremor / o calafrio']::text[]),
-  ('es-pt', 'p1320', 'palavra', 'A1', array['substantivo', 'futuro']::text[], null, '39123e3a', array['o fruto (o resultado)', 'o furo (o buraco)', 'o futuro (o porvir)', 'o passado (o antes)', 'o presente (o agora)']::text[]),
+  ('es-pt', 'p1320', 'palavra', 'A1', array['substantivo', 'cotidiano']::text[], null, '4dd0358b', array['o fruto (o resultado)', 'o furo (o buraco)', 'o futuro (o porvir)', 'o passado (o antes)', 'o presente (o agora)']::text[]),
   ('es-pt', 'p1321', 'palavra', 'B2', array['substantivo', 'cultura']::text[], null, '3997dffe', array['o erro', 'o terreno', 'o terror', 'o torpor', 'o tremor']::text[]),
   ('es-pt', 'p1322', 'palavra', 'A1', array['adjetivo']::text[], null, 'e9d8ef10', array['forte', 'morno', 'morto', 'mudo', 'torto']::text[]),
   ('es-pt', 'p1323', 'palavra', 'A2', array['adjetivo', 'cotidiano']::text[], null, '0d8f9edc', array['doce', 'fresco', 'quente', 'salgado', 'seco']::text[]),

@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-en, leva c91adea1, 2422 cards.
+-- Catálogo do curso es-en, leva cc9663cb, 2422 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-en', 'c91adea1', '2422 cards')
+values ('es-en', 'cc9663cb', '2422 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -2356,7 +2356,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'p1303', 'palavra', 'C1', array['substantivo', 'social']::text[], null, '5f029db9', array['the fight / the quarrel', 'the mockery / the taunt', 'the praise / the applause', 'the punishment / the penalty', 'the tribute / the party']::text[]),
   ('es-en', 'p1304', 'palavra', 'A2', array['advérbio', 'cotidiano']::text[], null, 'a5a4e99c', array['behind / after', 'far / outside', 'in front / ahead', 'inside / around', 'under / below']::text[]),
   ('es-en', 'p1305', 'palavra', 'B1', array['verbo', 'formal']::text[], null, 'ef7883f3', array['to find / to come across', 'to hide / to conceal', 'to keep / to hold back', 'to look for / to search', 'to lose / to misplace']::text[]),
-  ('es-en', 'p1306', 'palavra', 'B1', array['verbo', 'cotidiano']::text[], null, '654264cd', array['to confirm', 'to forget', 'to ignore', 'to prove', 'to suspect']::text[]),
+  ('es-en', 'p1306', 'palavra', 'B1', array['verbo', 'cotidiano']::text[], null, '2c68b45f', array['to confirm', 'to forget', 'to ignore', 'to prove', 'to suspect']::text[]),
   ('es-en', 'p1307', 'palavra', 'B2', array['verbo', 'social']::text[], null, '5cdac7db', array['to buy / to acquire', 'to compete', 'to complete / to finish', 'to cooperate / to collaborate', 'to share / to divide']::text[]),
   ('es-en', 'p1308', 'palavra', 'A2', array['adjetivo']::text[], null, '80a0f085', array['angry', 'bald', 'beautiful / fair', 'full', 'old']::text[]),
   ('es-en', 'p1309', 'palavra', 'A2', array['substantivo', 'corpo']::text[], null, 'bb41de77', array['the cheek', 'the chin', 'the lip', 'the tongue', 'the tooth']::text[]),
@@ -2370,7 +2370,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'p1317', 'palavra', 'B2', array['adjetivo']::text[], null, 'dceceb41', array['aware / conscious', 'consistent', 'deficient', 'happy', 'patient']::text[]),
   ('es-en', 'p1318', 'palavra', 'B2', array['substantivo', 'viagem']::text[], null, '7b92ebe3', array['the course / the direction', 'the gash', 'the oar', 'the rhythm', 'the rumor']::text[]),
   ('es-en', 'p1319', 'palavra', 'B2', array['substantivo', 'social']::text[], null, 'ccbad1c7', array['the courage / the bravery', 'the fear / the dread', 'the grudge / the hatred', 'the modesty / the shame', 'the shiver / the chill']::text[]),
-  ('es-en', 'p1320', 'palavra', 'A1', array['substantivo', 'futuro']::text[], null, '39123e3a', array['the fruit', 'the future', 'the hole', 'the past', 'the present']::text[]),
+  ('es-en', 'p1320', 'palavra', 'A1', array['substantivo', 'cotidiano']::text[], null, '4dd0358b', array['the fruit', 'the future', 'the hole', 'the past', 'the present']::text[]),
   ('es-en', 'p1321', 'palavra', 'B2', array['substantivo', 'cultura']::text[], null, '3997dffe', array['the error', 'the ground', 'the numbness', 'the terror / the horror', 'the tremor']::text[]),
   ('es-en', 'p1322', 'palavra', 'A1', array['adjetivo']::text[], null, 'e9d8ef10', array['crooked', 'dead', 'lukewarm', 'mute', 'strong']::text[]),
   ('es-en', 'p1323', 'palavra', 'A2', array['adjetivo', 'cotidiano']::text[], null, '0d8f9edc', array['dry', 'fresh / cool', 'hot', 'salty', 'sweet']::text[]),
