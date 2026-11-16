@@ -13753,30 +13753,28 @@
    "id": "it-u038",
    "tipo": "frase",
    "requer": "it-p011",
-   "it": "Oggi sto a casa.",
-   "pt": "Hoje fico em casa.",
+   "it": "Stai attento!",
+   "pt": "Fique atento!",
    "aceitas": [
-    "hoje fico em casa",
-    "hoje vou ficar em casa",
-    "hoje eu fico em casa",
-    "hoje estou em casa"
+    "fique atento",
+    "fica atento",
+    "esteja atento",
+    "presta atencao"
    ],
    "distratores": [
-    "Hoje durmo em casa.",
-    "Hoje como em casa.",
-    "Hoje trabalho em casa.",
-    "Hoje chego em casa."
+    "Fique sentado!",
+    "Fique longe!",
+    "Fique de pé!",
+    "Fique em silêncio!"
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "casa"
    ],
-   "nota": "«Stare» é também ficar, permanecer: «stare a casa», ficar em casa; «stai qui!», fica aqui! «A casa», sem artigo, é em casa.",
+   "nota": "«Stare» é estar e ficar: «stai attento», fique atento; «stai tranquillo», fique tranquilo. «Stai» é o imperativo, com «tu».",
    "requerTodas": [
-    "it-p069",
-    "it-p011",
-    "it-p062"
+    "it-p011"
    ]
   },
   {
@@ -15518,33 +15516,28 @@
    "id": "it-u095",
    "tipo": "frase",
    "requer": "it-p041",
-   "it": "Piove, quindi resto a casa.",
-   "pt": "Está chovendo, então fico em casa.",
+   "it": "Era tardi, quindi siamo andati via.",
+   "pt": "Era tarde, então fomos embora.",
    "aceitas": [
-    "esta chovendo entao fico em casa",
-    "esta chovendo entao vou ficar em casa",
-    "esta chovendo por isso fico em casa",
-    "esta chovendo portanto fico em casa",
-    "ta chovendo entao fico em casa",
-    "chove entao fico em casa"
+    "era tarde entao fomos embora",
+    "era tarde por isso fomos embora",
+    "era tarde portanto fomos embora",
+    "era tarde entao a gente foi embora"
    ],
    "distratores": [
-    "Está chovendo, mas fico em casa.",
-    "Está chovendo, porém fico em casa.",
-    "Está chovendo, contudo fico em casa.",
-    "Está chovendo, ainda assim fico em casa."
+    "Era tarde, mas fomos embora.",
+    "Era tarde, porque fomos embora.",
+    "Era tarde quando fomos embora.",
+    "Era tarde, e fomos embora."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "natureza"
    ],
-   "nota": "«Quindi» liga a consequência: então, portanto, por isso. «Restare», ficar: «resto a casa», fico em casa.",
+   "nota": "«Quindi» liga a consequência: então, portanto, por isso. «Siamo andati via» é fomos embora: «andare» faz o passado com «essere».",
    "requerTodas": [
-    "it-p658",
-    "it-p041",
-    "it-p138",
-    "it-p062"
+    "it-p041"
    ]
   },
   {
@@ -16497,30 +16490,28 @@
    "id": "it-u126",
    "tipo": "frase",
    "requer": "it-p059",
-   "it": "In ogni caso ti chiamo.",
-   "pt": "Em todo caso, te ligo.",
+   "it": "In questo caso hai ragione.",
+   "pt": "Neste caso você tem razão.",
    "aceitas": [
-    "em todo caso te ligo",
-    "de qualquer forma te ligo",
-    "de qualquer jeito te ligo",
-    "em todo caso eu te ligo",
-    "em qualquer caso te ligo"
+    "neste caso voce tem razao",
+    "nesse caso voce tem razao",
+    "neste caso tem razao",
+    "neste caso voce esta certo"
    ],
    "distratores": [
-    "Em todo lugar, te ligo.",
-    "Em todo momento, te ligo.",
-    "Em todo canto, te ligo.",
-    "Em todo minuto, te ligo."
+    "Em geral você tem razão.",
+    "Às vezes você tem razão.",
+    "Pelo menos você tem razão.",
+    "Desta vez você tem razão."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "cotidiano"
    ],
-   "nota": "«In ogni caso», em todo caso, de qualquer jeito. «Ogni» não muda e vem com singular: «ogni giorno», todo dia. «Chiamare» é também telefonar.",
+   "nota": "«In questo caso», neste caso. «Avere ragione» é ter razão: «hai ragione»; ter razão se tem, e não se é.",
    "requerTodas": [
-    "it-p059",
-    "it-p082"
+    "it-p059"
    ]
   },
   {
@@ -17389,29 +17380,27 @@
    "id": "it-u155",
    "tipo": "frase",
    "requer": "it-p078",
-   "it": "Ci vediamo alle tre.",
-   "pt": "A gente se vê às três.",
+   "it": "Siamo in tre.",
+   "pt": "Somos em três.",
    "aceitas": [
-    "a gente se ve as tres",
-    "nos vemos as tres",
-    "a gente se encontra as tres",
-    "nos encontramos as tres",
-    "ate as tres"
+    "somos em tres",
+    "somos tres",
+    "nos somos tres",
+    "estamos em tres"
    ],
    "distratores": [
-    "A gente se vê às duas.",
-    "A gente se vê às quatro.",
-    "A gente se vê às cinco.",
-    "A gente se vê às seis."
+    "Somos em dois.",
+    "Somos em quatro.",
+    "Somos em cinco.",
+    "Somos em seis."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "social"
    ],
-   "nota": "As horas vão com «alle»: «alle tre», às três; mas «all'una», à uma. «Tre» não leva acento; nos compostos, sim: «ventitré».",
+   "nota": "«In» + número diz quantos são: «siamo in tre». «Tre» não leva acento; só nos compostos: «ventitré».",
    "requerTodas": [
-    "it-p019",
     "it-p078"
    ]
   },
@@ -17420,29 +17409,29 @@
    "id": "it-u156",
    "tipo": "frase",
    "requer": "it-p079",
-   "it": "Il treno arriva alle otto.",
-   "pt": "O trem chega às oito.",
+   "it": "Il treno arriva in ritardo.",
+   "pt": "O trem chega atrasado.",
    "aceitas": [
-    "o trem chega as oito",
-    "o trem chega as oito horas",
-    "o trem vai chegar as oito"
+    "o trem chega atrasado",
+    "o trem chega com atraso",
+    "o trem esta chegando atrasado",
+    "o trem chega tarde"
    ],
    "distratores": [
-    "O trem sai às oito.",
-    "O trem passa às oito.",
-    "O trem volta às oito.",
-    "O trem para às oito."
+    "O trem chega adiantado.",
+    "O trem chega vazio.",
+    "O trem chega lotado.",
+    "O trem chega rápido."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "viagem"
    ],
-   "nota": "«Arrivare», chegar; sair, para o trem, é «partire»: «il treno parte alle sette e arriva alle otto».",
+   "nota": "«In ritardo», atrasado; «in anticipo», adiantado. «Arrivare» é chegar.",
    "requerTodas": [
-    "it-p739",
     "it-p079",
-    "it-p155"
+    "it-p739"
    ]
   },
   {
@@ -18017,29 +18006,27 @@
    "id": "it-u175",
    "tipo": "frase",
    "requer": "it-p090",
-   "it": "Ci vediamo alle otto in punto.",
-   "pt": "A gente se vê às oito em ponto.",
+   "it": "Metti un punto alla fine.",
+   "pt": "Põe um ponto no fim.",
    "aceitas": [
-    "a gente se ve as oito em ponto",
-    "nos vemos as oito em ponto",
-    "a gente se encontra as oito em ponto",
-    "nos encontramos as oito em ponto"
+    "poe um ponto no fim",
+    "coloque um ponto no fim",
+    "poe um ponto no final",
+    "ponha um ponto no fim"
    ],
    "distratores": [
-    "A gente se vê às oito e pouco.",
-    "A gente se vê às oito e meia.",
-    "A gente se vê às oito e quinze.",
-    "A gente se vê às oito e dez."
+    "Põe uma vírgula no fim.",
+    "Põe um acento no fim.",
+    "Põe um traço no fim.",
+    "Põe um parêntese no fim."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "cotidiano"
    ],
-   "nota": "«In punto», em ponto, exato: «alle otto in punto». «Il punto» é também a questão: «il punto è che…», a questão é que…",
+   "nota": "«Il punto» é o ponto final, e também a questão: «il punto è che…», a questão é que… «Alla fine» é «a» + «la fine».",
    "requerTodas": [
-    "it-p019",
-    "it-p155",
     "it-p090"
    ]
   },
@@ -18362,27 +18349,25 @@
    "id": "it-u187",
    "tipo": "frase",
    "requer": "it-p099",
-   "it": "Mi piace la storia.",
-   "pt": "Gosto de história.",
+   "it": "La storia dell'Italia è lunga.",
+   "pt": "A história da Itália é longa.",
    "aceitas": [
-    "gosto de historia",
-    "eu gosto de historia",
-    "gosto da historia"
+    "a historia da italia e longa",
+    "a historia da italia e comprida"
    ],
    "distratores": [
-    "Gosto de geografia.",
-    "Gosto de música.",
-    "Gosto de matemática.",
-    "Gosto de pintura."
+    "A história da Itália é curta.",
+    "A história da Itália é triste.",
+    "A história da Itália é antiga.",
+    "A história da Itália é difícil."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "escola"
    ],
-   "nota": "Com «piacere», a coisa de que se gosta é o sujeito: «mi piace la storia», «mi piacciono i libri». E «la storia», sem «h», é a matéria e a história contada.",
+   "nota": "«La storia», sem «h», é a matéria e a história contada. «Dell'Italia» é «di» + «l'Italia»: o apóstrofo aparece quando o artigo perde a vogal.",
    "requerTodas": [
-    "it-p263",
     "it-p099"
    ]
   },
@@ -19447,35 +19432,27 @@
    "id": "it-u232",
    "tipo": "frase",
    "requer": "it-p122",
-   "it": "A che ora vai a dormire?",
-   "aceitasIt": [
-    "A che ora va a dormire?"
-   ],
-   "pt": "A que horas você vai dormir?",
+   "it": "Il gatto dorme tutto il giorno.",
+   "pt": "O gato dorme o dia todo.",
    "aceitas": [
-    "a que horas voce vai dormir",
-    "que horas voce vai dormir",
-    "que horas vai dormir",
-    "a que horas vai dormir",
-    "voce vai dormir que horas",
-    "que horas voce vai deitar",
-    "a que horas voce vai deitar"
+    "o gato dorme o dia todo",
+    "o gato dorme o dia inteiro",
+    "o gato dorme todo o dia",
+    "o gato dorme dia todo"
    ],
    "distratores": [
-    "A que horas você vai jantar?",
-    "A que horas você vai sair?",
-    "A que horas você vai trabalhar?",
-    "A que horas você vai acordar?"
+    "O gato dorme a noite toda.",
+    "O gato dorme a manhã toda.",
+    "O gato dorme a tarde toda.",
+    "O gato dorme a semana toda."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "casa"
    ],
-   "nota": "«Andare a» + infinitivo: «vado a dormire», vou dormir. «A che ora?», a que horas, com «ora» no singular.",
+   "nota": "«Dormire»: dormo, dormi, dorme, dormiamo, dormite, dormono. «Tutto il giorno» é o dia todo, com «tutto» concordando.",
    "requerTodas": [
-    "it-p601",
-    "it-p009",
     "it-p122"
    ]
   },
@@ -20199,37 +20176,28 @@
    "id": "it-u256",
    "tipo": "frase",
    "requer": "it-p138",
-   "it": "Stasera resto a casa.",
-   "sinonimosIt": [
-    "Stasera rimango a casa."
-   ],
-   "pt": "Hoje à noite fico em casa.",
+   "it": "Restano solo due biglietti.",
+   "pt": "Restam só dois ingressos.",
    "aceitas": [
-    "hoje a noite fico em casa",
-    "hoje a noite eu fico em casa",
-    "fico em casa hoje a noite",
-    "hoje a noite vou ficar em casa",
-    "vou ficar em casa hoje a noite",
-    "esta noite fico em casa",
-    "essa noite fico em casa",
-    "hoje de noite fico em casa"
+    "restam so dois ingressos",
+    "sobram so dois ingressos",
+    "restam apenas dois ingressos",
+    "so restam dois ingressos"
    ],
    "distratores": [
-    "Hoje à noite janto em casa.",
-    "Hoje à noite durmo em casa.",
-    "Hoje à noite trabalho em casa.",
-    "Hoje à noite estudo em casa."
+    "Resta só um ingresso.",
+    "Restam só três ingressos.",
+    "Restam só cinco ingressos.",
+    "Restam só dez ingressos."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "casa"
    ],
-   "nota": "«A casa», em casa, sem artigo. «Restare» e «rimanere» são quase sinônimos: «resto», «rimango».",
+   "nota": "«Restare» é ficar e também sobrar: «restano», sobram. O verbo concorda com o que sobra: «restano due biglietti».",
    "requerTodas": [
-    "it-p744",
-    "it-p138",
-    "it-p062"
+    "it-p138"
    ]
   },
   {
@@ -20685,30 +20653,27 @@
    "id": "it-u270",
    "tipo": "frase",
    "requer": "it-p149",
-   "it": "Mi piace quella giacca verde.",
-   "pt": "Gosto daquela jaqueta verde.",
+   "it": "Il semaforo è verde.",
+   "pt": "O semáforo está verde.",
    "aceitas": [
-    "gosto daquela jaqueta verde",
-    "eu gosto daquela jaqueta verde",
-    "gosto dessa jaqueta verde",
-    "gosto daquele paleto verde",
-    "eu gosto daquele paleto verde"
+    "o semaforo esta verde",
+    "o semaforo e verde",
+    "o sinal esta verde",
+    "o sinal e verde"
    ],
    "distratores": [
-    "Gosto daquela jaqueta azul.",
-    "Gosto daquela jaqueta vermelha.",
-    "Gosto daquela jaqueta preta.",
-    "Gosto daquela jaqueta amarela."
+    "O semáforo está vermelho.",
+    "O semáforo está amarelo.",
+    "O semáforo está apagado.",
+    "O semáforo está quebrado."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
-    "roupa"
+    "cotidiano"
    ],
-   "nota": "«Verde» não muda no feminino: «la giacca verde». Com «piacere», a coisa é o sujeito: «mi piace la giacca», «mi piacciono le scarpe».",
+   "nota": "«Verde» não muda no feminino: «la luce verde». O plural é «verdi». «Il semaforo» é o semáforo, o sinal de trânsito.",
    "requerTodas": [
-    "it-p263",
-    "it-p315",
     "it-p149"
    ]
   },
@@ -20888,31 +20853,28 @@
    "id": "it-u276",
    "tipo": "frase",
    "requer": "it-p153",
-   "it": "Il cibo italiano mi piace molto.",
-   "pt": "Gosto muito da comida italiana.",
+   "it": "Il cibo è pronto.",
+   "pt": "A comida está pronta.",
    "aceitas": [
-    "gosto muito da comida italiana",
-    "eu gosto muito da comida italiana",
-    "gosto muito de comida italiana",
-    "eu gosto muito de comida italiana",
-    "a comida italiana me agrada muito"
+    "a comida esta pronta",
+    "a comida e pronta",
+    "o jantar esta pronto",
+    "a comida ficou pronta"
    ],
    "distratores": [
-    "Gosto muito da música italiana.",
-    "Gosto muito da língua italiana.",
-    "Gosto muito da moda italiana.",
-    "Gosto muito da arte italiana."
+    "A comida está fria.",
+    "A comida está queimada.",
+    "A comida está cara.",
+    "A comida está salgada."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "comida"
    ],
-   "nota": "«Il cibo» é masculino: «il cibo italiano». Com «piacere», a coisa é o sujeito: «il cibo mi piace».",
+   "nota": "«Il cibo» é masculino, e o adjetivo concorda: «il cibo è pronto». A comida do prato também é «il piatto» ou «il pranzo».",
    "requerTodas": [
-    "it-p153",
-    "it-p263",
-    "it-p020"
+    "it-p153"
    ]
   },
   {
@@ -20950,31 +20912,29 @@
    "id": "it-u278",
    "tipo": "frase",
    "requer": "it-p155",
-   "it": "Mi alzo alle otto.",
-   "pt": "Eu me levanto às oito.",
+   "it": "Mio figlio ha otto anni.",
+   "pt": "Meu filho tem oito anos.",
    "aceitas": [
-    "eu me levanto as oito",
-    "me levanto as oito",
-    "levanto as oito",
-    "me levanto as oito horas",
-    "levanto as oito horas",
-    "me levanto as 8"
+    "meu filho tem oito anos",
+    "o meu filho tem oito anos",
+    "meu filho fez oito anos"
    ],
    "distratores": [
-    "Eu me levanto às sete.",
-    "Eu me levanto às seis.",
-    "Eu me levanto às nove.",
-    "Eu me levanto às dez."
+    "Meu filho tem sete anos.",
+    "Meu filho tem nove anos.",
+    "Meu filho tem seis anos.",
+    "Meu filho tem dez anos."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "cotidiano"
    ],
-   "nota": "As horas vão com «a» + «le»: «alle otto», às oito. «Alzarsi» é levantar-se da cama; acordar é «svegliarsi».",
+   "nota": "«Otto» tem «tt». A idade vai com «avere», como em português: «ha otto anni». E sem artigo antes de «mio figlio»: parente no singular dispensa o artigo.",
    "requerTodas": [
-    "it-p418",
-    "it-p155"
+    "it-p155",
+    "it-p228",
+    "it-p003"
    ]
   },
   {
@@ -21352,30 +21312,28 @@
    "id": "it-u290",
    "tipo": "frase",
    "requer": "it-p202",
-   "it": "Le chiavi sono sul tavolo.",
-   "pt": "As chaves estão na mesa.",
+   "it": "Ci sediamo intorno al tavolo.",
+   "pt": "Sentamos em volta da mesa.",
    "aceitas": [
-    "as chaves estao na mesa",
-    "as chaves estao em cima da mesa",
-    "as chaves tao na mesa",
-    "as chaves estao sobre a mesa",
-    "a chave esta na mesa"
+    "sentamos em volta da mesa",
+    "nos sentamos em volta da mesa",
+    "a gente senta em volta da mesa",
+    "sentamos ao redor da mesa",
+    "nos sentamos ao redor da mesa"
    ],
    "distratores": [
-    "As chaves estão na cama.",
-    "As chaves estão na gaveta.",
-    "As chaves estão na bolsa.",
-    "As chaves estão na estante."
+    "Sentamos em volta da lareira.",
+    "Sentamos em volta da fogueira.",
+    "Sentamos em volta do sofá.",
+    "Sentamos em volta da cama."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "casa"
    ],
-   "nota": "«Sul tavolo», na mesa, em cima dela: «su» + «il». «Il tavolo» é masculino; «la tavola» é a mesa posta para comer.",
+   "nota": "«Il tavolo» é a mesa, o móvel; «la tavola» é a mesa posta, a refeição («a tavola!», «à mesa!»). «Intorno a» é em volta de.",
    "requerTodas": [
-    "it-p684",
-    "it-p001",
     "it-p202"
    ]
   },
@@ -21933,38 +21891,26 @@
    "id": "it-u307",
    "tipo": "frase",
    "requer": "it-p216",
-   "it": "Chiudi la finestra, fa freddo.",
-   "aceitasIt": [
-    "Chiuda la finestra, fa freddo."
-   ],
-   "pt": "Fecha a janela, está frio.",
+   "it": "La finestra dà sul giardino.",
+   "pt": "A janela dá para o jardim.",
    "aceitas": [
-    "fecha a janela esta frio",
-    "feche a janela esta frio",
-    "fecha a janela que esta frio",
-    "feche a janela que esta frio",
-    "fecha a janela ta frio",
-    "fecha a janela que ta frio",
-    "fecha a janela esta fazendo frio",
-    "feche a janela esta fazendo frio"
+    "a janela da para o jardim",
+    "a janela da pro jardim"
    ],
    "distratores": [
-    "Fecha a porta, está frio.",
-    "Fecha a cortina, está frio.",
-    "Fecha a persiana, está frio.",
-    "Fecha a garagem, está frio."
+    "A janela dá para a rua.",
+    "A janela dá para o mar.",
+    "A janela dá para a praça.",
+    "A janela dá para o pátio."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "casa"
    ],
-   "nota": "«Chiudi», fecha, de «chiudere». A janela do carro ou do trem é «il finestrino»; a vitrine da loja, «la vetrina».",
+   "nota": "«Dare su» é dar para, falando de janela ou porta: «dà sul giardino». A janela do carro é «il finestrino».",
    "requerTodas": [
-    "it-p616",
-    "it-p216",
-    "it-p004",
-    "it-p115"
+    "it-p216"
    ]
   },
   {
@@ -22176,34 +22122,28 @@
    "id": "it-u314",
    "tipo": "frase",
    "requer": "it-p222",
-   "it": "Mi piace, però è troppo caro.",
-   "pt": "Gosto, mas é caro demais.",
+   "it": "È bello, però è piccolo.",
+   "pt": "É bonito, mas é pequeno.",
    "aceitas": [
-    "gosto mas e caro demais",
-    "eu gosto mas e caro demais",
-    "gosto porem e caro demais",
-    "gosto so que e caro demais",
-    "eu gosto so que e caro demais",
-    "gosto mas e caro de mais"
+    "e bonito mas e pequeno",
+    "e bonito porem e pequeno",
+    "e bonito mas pequeno",
+    "e lindo mas e pequeno"
    ],
    "distratores": [
-    "Gosto, porque é caro demais.",
-    "Gosto, e é caro demais.",
-    "Gosto, pois é caro demais.",
-    "Gosto, já que é caro demais."
+    "É bonito, e é pequeno.",
+    "É bonito, então é pequeno.",
+    "É bonito, porque é pequeno.",
+    "É bonito, por isso é pequeno."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "compras"
    ],
-   "nota": "«Però», com acento no «ò», é mas, porém, e na conversa é tão comum quanto «ma». «Troppo caro», caro demais: «troppo» vem antes.",
+   "nota": "«Però», com acento no «ò», é mas, porém, e na conversa é tão comum quanto «ma». Liga duas ideias que se contrariam.",
    "requerTodas": [
-    "it-p263",
-    "it-p222",
-    "it-p001",
-    "it-p135",
-    "it-p627"
+    "it-p222"
    ]
   },
   {
@@ -22879,36 +22819,27 @@
    "id": "it-u335",
    "tipo": "frase",
    "requer": "it-p236",
-   "it": "A che ora finisci di lavorare?",
-   "aceitasIt": [
-    "A che ora finisce di lavorare?"
-   ],
-   "pt": "A que horas você termina de trabalhar?",
+   "it": "Il film finisce bene.",
+   "pt": "O filme termina bem.",
    "aceitas": [
-    "a que horas voce termina de trabalhar",
-    "que horas voce termina de trabalhar",
-    "a que horas termina de trabalhar",
-    "que horas voce acaba de trabalhar",
-    "a que horas voce acaba de trabalhar",
-    "que horas voce termina o trabalho",
-    "voce termina de trabalhar que horas"
+    "o filme termina bem",
+    "o filme acaba bem",
+    "o filme finaliza bem"
    ],
    "distratores": [
-    "A que horas você começa a trabalhar?",
-    "A que horas você vai trabalhar?",
-    "A que horas você volta a trabalhar?",
-    "A que horas você sai para trabalhar?"
+    "O filme termina mal.",
+    "O filme termina tarde.",
+    "O filme termina cedo.",
+    "O filme termina logo."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "trabalho"
    ],
-   "nota": "«Finire di» + infinitivo, terminar de. Ganha «-isc-» em quatro pessoas: finisco, finisci, finisce, finiscono.",
+   "nota": "«Finire» ganha «-isc-» em quatro pessoas: finisco, finisci, finisce, finiscono. «Finisce bene» é termina bem.",
    "requerTodas": [
-    "it-p601",
-    "it-p236",
-    "it-p158"
+    "it-p236"
    ]
   },
   {
@@ -23383,32 +23314,28 @@
    "id": "it-u350",
    "tipo": "frase",
    "requer": "it-p248",
-   "it": "Sono in ufficio fino alle sei.",
-   "pt": "Estou no escritório até as seis.",
+   "it": "L'ufficio è al secondo piano.",
+   "pt": "O escritório fica no segundo andar.",
    "aceitas": [
-    "estou no escritorio ate as seis",
-    "fico no escritorio ate as seis",
-    "to no escritorio ate as seis",
-    "estou no escritorio ate as 6",
-    "eu estou no escritorio ate as seis",
-    "estou no escritorio ate as seis horas"
+    "o escritorio fica no segundo andar",
+    "o escritorio e no segundo andar",
+    "o escritorio esta no segundo andar",
+    "o escritorio fica no segundo piso"
    ],
    "distratores": [
-    "Estou no hospital até as seis.",
-    "Estou no banco até as seis.",
-    "Estou no mercado até as seis.",
-    "Estou no hotel até as seis."
+    "O escritório fica no primeiro andar.",
+    "O escritório fica no terceiro andar.",
+    "O escritório fica no quarto andar.",
+    "O escritório fica no último andar."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "trabalho"
    ],
-   "nota": "«In ufficio», no escritório, sem artigo, como «in banca», «in cucina». Masculino, com «ff». A oficina mecânica é «l'officina».",
+   "nota": "«L'ufficio» tem «ff» e é masculino. «Al secondo piano» é «a» + «il»: no segundo andar. «Il piano» é o andar.",
    "requerTodas": [
-    "it-p001",
-    "it-p248",
-    "it-p639"
+    "it-p248"
    ]
   },
   {
@@ -23987,30 +23914,28 @@
    "id": "it-u404",
    "tipo": "frase",
    "requer": "it-p263",
-   "it": "Mi piace il caffè.",
-   "pt": "Gosto de café.",
+   "it": "Questo film piace a tutti.",
+   "pt": "Este filme agrada a todos.",
    "aceitas": [
-    "gosto de cafe",
-    "eu gosto de cafe",
-    "gosto do cafe",
-    "eu gosto do cafe",
-    "curto cafe"
+    "este filme agrada a todos",
+    "esse filme agrada a todos",
+    "este filme agrada todo mundo",
+    "todos gostam deste filme"
    ],
    "distratores": [
-    "Odeio café.",
-    "Bebo café.",
-    "Prefiro café.",
-    "Quero café."
+    "Este filme assusta a todos.",
+    "Este filme cansa a todos.",
+    "Este filme irrita a todos.",
+    "Este filme entedia a todos."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
-    "comida"
+    "cultura"
    ],
-   "nota": "Ao pé da letra, «o café me agrada»: quem gosta vai no pronome («mi»), e a coisa de que se gosta é o sujeito, com artigo: «mi piace il caffè».",
+   "nota": "«Piacere» é agradar: o que agrada é o sujeito, e quem gosta vai com «a»: «piace a tutti», agrada a todos. Com pronome é «mi piace», «ti piace».",
    "requerTodas": [
-    "it-p263",
-    "it-p305"
+    "it-p263"
    ]
   },
   {
@@ -24018,30 +23943,27 @@
    "id": "it-u405",
    "tipo": "frase",
    "requer": "it-p263",
-   "it": "Ti piacciono i gatti?",
-   "pt": "Você gosta de gatos?",
+   "it": "Ti è piaciuta la cena?",
+   "pt": "Você gostou do jantar?",
    "aceitas": [
-    "voce gosta de gatos",
-    "gosta de gatos",
-    "voce gosta dos gatos",
-    "tu gosta de gatos",
-    "voce curte gatos"
+    "voce gostou do jantar",
+    "gostou do jantar",
+    "o jantar te agradou"
    ],
    "distratores": [
-    "Você tem gatos?",
-    "Você quer gatos?",
-    "Você cria gatos?",
-    "Você odeia gatos?"
+    "Você preparou o jantar?",
+    "Você pagou o jantar?",
+    "Você pediu o jantar?",
+    "Você esqueceu o jantar?"
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
-    "animais"
+    "comida"
    ],
-   "nota": "Com coisa no plural, o verbo vai ao plural: «mi piacciono i gatti», com «cc». Quem gosta continua no pronome: «ti», a você.",
+   "nota": "No passado, «piacere» usa «essere» e concorda com o que agradou: «ti è piaciuta la cena», «mi sono piaciuti i film». «Piaciuta» é feminino porque «la cena» é.",
    "requerTodas": [
-    "it-p263",
-    "it-p313"
+    "it-p263"
    ]
   },
   {
@@ -24358,30 +24280,27 @@
    "id": "it-u415",
    "tipo": "frase",
    "requer": "it-p272",
-   "it": "Il negozio apre alle nove.",
-   "pt": "A loja abre às nove.",
+   "it": "Costa nove euro.",
+   "pt": "Custa nove euros.",
    "aceitas": [
-    "a loja abre as nove",
-    "a loja abre as 9",
-    "a loja abre as nove horas",
-    "a loja abre as 9h",
-    "a loja abre nove horas"
+    "custa nove euros",
+    "custa nove euro",
+    "sai por nove euros",
+    "custa 9 euros"
    ],
    "distratores": [
-    "A loja abre às oito.",
-    "A loja abre às dez.",
-    "A loja abre às sete.",
-    "A loja abre às onze."
+    "Custa sete euros.",
+    "Custa oito euros.",
+    "Custa dez euros.",
+    "Custa onze euros."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "compras"
    ],
-   "nota": "As horas vão no feminino plural, com artigo: «alle nove», às nove (horas). Só a uma hora fica no singular: «all'una».",
+   "nota": "«Nove» é o número nove; «nuovo» é novo. «Euro» não muda no plural: «nove euro».",
    "requerTodas": [
-    "it-p425",
-    "it-p207",
     "it-p272"
    ]
   },
@@ -25104,34 +25023,28 @@
    "id": "it-u437",
    "tipo": "frase",
    "requer": "it-p293",
-   "it": "Adesso non posso, ti chiamo più tardi.",
-   "pt": "Agora não posso, te ligo mais tarde.",
+   "it": "Adesso tocca a te.",
+   "pt": "Agora é a sua vez.",
    "aceitas": [
-    "agora nao posso te ligo mais tarde",
-    "agora eu nao posso te ligo mais tarde",
-    "agora nao posso eu te ligo mais tarde",
-    "agora nao posso ligo pra voce mais tarde",
-    "agora nao posso te ligo depois",
-    "agora nao da te ligo mais tarde"
+    "agora e a sua vez",
+    "agora e a tua vez",
+    "agora e sua vez",
+    "agora e a vez de voce"
    ],
    "distratores": [
-    "Hoje não posso, te ligo mais tarde.",
-    "Aqui não posso, te ligo mais tarde.",
-    "Ainda não posso, te ligo mais tarde.",
-    "Assim não posso, te ligo mais tarde."
+    "Depois é a sua vez.",
+    "Ontem foi a sua vez.",
+    "Amanhã é a sua vez.",
+    "Antes era a sua vez."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "cotidiano"
    ],
-   "nota": "«Adesso» é o agora da conversa, igual a «ora». «Chiamare» é também telefonar: «ti chiamo», te ligo.",
+   "nota": "«Adesso» é o agora da conversa, igual a «ora». «Toccare a» + pessoa é ser a vez dela: «tocca a te», é a sua vez.",
    "requerTodas": [
-    "it-p293",
-    "it-p005",
-    "it-p082",
-    "it-p016",
-    "it-p685"
+    "it-p293"
    ]
   },
   {
@@ -25370,39 +25283,28 @@
    "id": "it-u445",
    "tipo": "frase",
    "requer": "it-p301",
-   "it": "A causa della pioggia, siamo rimasti a casa.",
-   "aceitasIt": [
-    "A causa della pioggia, siamo rimaste a casa."
-   ],
-   "regionaisIt": {
-    "A causa della pioggia, rimanemmo a casa.": "no Sul da Itália"
-   },
-   "pt": "Por causa da chuva, ficamos em casa.",
+   "it": "Qual è la causa del problema?",
+   "pt": "Qual é a causa do problema?",
    "aceitas": [
-    "por causa da chuva ficamos em casa",
-    "por causa da chuva a gente ficou em casa",
-    "por conta da chuva ficamos em casa",
-    "devido a chuva ficamos em casa",
-    "ficamos em casa por causa da chuva"
+    "qual e a causa do problema",
+    "qual a causa do problema",
+    "qual e a causa desse problema",
+    "qual e o motivo do problema"
    ],
    "distratores": [
-    "Apesar da chuva, ficamos em casa.",
-    "Depois da chuva, ficamos em casa.",
-    "Antes da chuva, ficamos em casa.",
-    "Durante a chuva, ficamos em casa."
+    "Qual é a solução do problema?",
+    "Qual é o fim do problema?",
+    "Qual é o início do problema?",
+    "Qual é a consequência do problema?"
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "natureza"
    ],
-   "nota": "«A causa di», por causa de: «a causa della pioggia». «Rimanere» faz o passado com «essere»: «siamo rimasti».",
+   "nota": "«Qual è» não leva apóstrofo: «qual» perde o «e», não o «è». «La causa» é a causa; «a causa di» é por causa de.",
    "requerTodas": [
-    "it-p301",
-    "it-p329",
-    "it-p001",
-    "it-p130",
-    "it-p062"
+    "it-p301"
    ]
   },
   {
@@ -25876,38 +25778,28 @@
    "id": "it-u460",
    "tipo": "frase",
    "requer": "it-p315",
-   "it": "Mettiti la giacca, fa freddo.",
-   "aceitasIt": [
-    "Si metta la giacca, fa freddo."
-   ],
-   "pt": "Põe a jaqueta, está frio.",
+   "it": "Questa giacca è troppo stretta.",
+   "pt": "Esta jaqueta é apertada demais.",
    "aceitas": [
-    "poe a jaqueta esta frio",
-    "coloca a jaqueta esta frio",
-    "veste a jaqueta esta frio",
-    "poe a jaqueta ta frio",
-    "bota a jaqueta esta frio",
-    "poe a jaqueta faz frio",
-    "ponha a jaqueta esta frio",
-    "poe o paleto esta frio"
+    "esta jaqueta e apertada demais",
+    "esta jaqueta esta apertada demais",
+    "esta jaqueta e muito apertada",
+    "esse paleto e apertado demais"
    ],
    "distratores": [
-    "Põe a blusa, está frio.",
-    "Põe a touca, está frio.",
-    "Põe a camisa, está frio.",
-    "Põe a bota, está frio."
+    "Esta jaqueta é larga demais.",
+    "Esta jaqueta é curta demais.",
+    "Esta jaqueta é cara demais.",
+    "Esta jaqueta é pesada demais."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "roupa"
    ],
-   "nota": "Pôr no corpo é «mettersi», com o pronome colado no imperativo: «mettiti la giacca». Frio se faz: «fa freddo».",
+   "nota": "«Troppo» vem antes do adjetivo: «troppo stretta», apertada demais. «La giacca» é a jaqueta ou o paletó.",
    "requerTodas": [
-    "it-p063",
-    "it-p315",
-    "it-p004",
-    "it-p115"
+    "it-p315"
    ]
   },
   {
@@ -26984,31 +26876,27 @@
    "id": "it-u493",
    "tipo": "frase",
    "requer": "it-p346",
-   "it": "Vado a trovare i nonni.",
-   "pt": "Vou visitar meus avós.",
+   "it": "Mio nonno ha ottant'anni.",
+   "pt": "Meu avô tem oitenta anos.",
    "aceitas": [
-    "vou visitar meus avos",
-    "vou visitar os meus avos",
-    "vou ver meus avos",
-    "eu vou visitar meus avos",
-    "vou visitar os avos",
-    "vou ver os meus avos"
+    "meu avo tem oitenta anos",
+    "o meu avo tem oitenta anos",
+    "meu avo tem 80 anos",
+    "meu vo tem oitenta anos"
    ],
    "distratores": [
-    "Vou visitar meus tios.",
-    "Vou visitar meus primos.",
-    "Vou visitar meus sogros.",
-    "Vou visitar meus padrinhos."
+    "Meu avô tem setenta anos.",
+    "Meu avô tem noventa anos.",
+    "Meu avô tem sessenta anos.",
+    "Meu avô tem cem anos."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "família"
    ],
-   "nota": "«Andare a trovare», visitar alguém (ao pé da letra, ir encontrar). «I nonni», os avós, com «nn».",
+   "nota": "A idade se tem: «ha ottant'anni». «Ottanta» perde o «a» antes de «anni». O avô é «il nonno», com «nn»; sem artigo antes do possessivo de família.",
    "requerTodas": [
-    "it-p009",
-    "it-p026",
     "it-p346"
    ]
   },
@@ -27119,34 +27007,28 @@
    "id": "it-u497",
    "tipo": "frase",
    "requer": "it-p350",
-   "it": "Puoi spiegarmi questa parola?",
-   "aceitasIt": [
-    "Mi puoi spiegare questa parola?"
-   ],
-   "pt": "Você pode me explicar esta palavra?",
+   "it": "Il professore spiega la lezione.",
+   "pt": "O professor explica a lição.",
    "aceitas": [
-    "voce pode me explicar esta palavra",
-    "pode me explicar esta palavra",
-    "me explica esta palavra",
-    "voce me explica esta palavra",
-    "pode explicar esta palavra para mim"
+    "o professor explica a licao",
+    "o professor explica a aula",
+    "o professor esta explicando a licao",
+    "o professor explica a materia"
    ],
    "distratores": [
-    "Você pode me traduzir esta palavra?",
-    "Você pode me repetir esta palavra?",
-    "Você pode me soletrar esta palavra?",
-    "Você pode me escrever esta palavra?"
+    "O professor repete a lição.",
+    "O professor começa a lição.",
+    "O professor corrige a lição.",
+    "O professor termina a lição."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "escola"
    ],
-   "nota": "«Spiegare qualcosa a qualcuno», explicar algo a alguém; o pronome cola no infinitivo: «spiegarmi». Antes de «i» e «e», ganha «h»: «spieghi».",
+   "nota": "«Spiegare», explicar: «spiega», «spieghi» (ganha «h» antes de «i»). «La lezione» é a aula e a lição.",
    "requerTodas": [
-    "it-p005",
-    "it-p350",
-    "it-p123"
+    "it-p350"
    ]
   },
   {
@@ -27524,33 +27406,25 @@
    "id": "it-u509",
    "tipo": "frase",
    "requer": "it-p360",
-   "it": "Ci vediamo a ottobre.",
-   "aceitasIt": [
-    "Ci vediamo in ottobre."
-   ],
-   "pt": "A gente se vê em outubro.",
+   "it": "Ottobre è un mese piovoso.",
+   "pt": "Outubro é um mês chuvoso.",
    "aceitas": [
-    "a gente se ve em outubro",
-    "nos vemos em outubro",
-    "te vejo em outubro",
-    "ate outubro",
-    "a gente se encontra em outubro",
-    "nos nos vemos em outubro"
+    "outubro e um mes chuvoso",
+    "outubro e um mes de chuva"
    ],
    "distratores": [
-    "A gente se vê em setembro.",
-    "A gente se vê em novembro.",
-    "A gente se vê em dezembro.",
-    "A gente se vê em agosto."
+    "Janeiro é um mês chuvoso.",
+    "Março é um mês chuvoso.",
+    "Julho é um mês chuvoso.",
+    "Agosto é um mês chuvoso."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "cotidiano"
    ],
-   "nota": "«Ci vediamo», a gente se vê: a despedida de quem combina de se reencontrar. «A ottobre» ou «in ottobre», em outubro.",
+   "nota": "Os meses vão em minúscula: «ottobre», «gennaio». «Piovoso» é chuvoso, de «piovere», chover.",
    "requerTodas": [
-    "it-p019",
     "it-p360"
    ]
   },
@@ -27628,37 +27502,28 @@
    "id": "it-u512",
    "tipo": "frase",
    "requer": "it-p363",
-   "it": "Cosa significa questa parola?",
-   "aceitasIt": [
-    "Che cosa significa questa parola?",
-    "Che significa questa parola?"
-   ],
-   "sinonimosIt": [
-    "Cosa vuol dire questa parola?"
-   ],
-   "pt": "O que significa esta palavra?",
+   "it": "Questa frase non significa niente.",
+   "pt": "Esta frase não significa nada.",
    "aceitas": [
-    "o que significa esta palavra",
-    "o que quer dizer esta palavra",
-    "que significa esta palavra",
-    "qual o significado desta palavra",
-    "qual e o significado desta palavra"
+    "esta frase nao significa nada",
+    "essa frase nao significa nada",
+    "esta frase nao quer dizer nada",
+    "esta frase nao diz nada"
    ],
    "distratores": [
-    "O que substitui esta palavra?",
-    "O que acompanha esta palavra?",
-    "O que antecede esta palavra?",
-    "O que completa esta palavra?"
+    "Esta frase não prova nada.",
+    "Esta frase não explica nada.",
+    "Esta frase não muda nada.",
+    "Esta frase não ensina nada."
    ],
    "nivel": "A1",
    "tags": [
     "frase de uso",
     "escola"
    ],
-   "nota": "«Cosa significa?», o que significa? Na conversa também se diz «cosa vuol dire?», o que quer dizer?",
+   "nota": "«Significare» é significar; na conversa, «vuol dire», quer dizer. Com «non», «niente» fica depois do verbo: «non significa niente».",
    "requerTodas": [
-    "it-p363",
-    "it-p123"
+    "it-p363"
    ]
   },
   {
@@ -27696,28 +27561,27 @@
    "id": "it-u514",
    "tipo": "frase",
    "requer": "it-p402",
-   "it": "Non mi piace la cipolla.",
-   "pt": "Não gosto de cebola.",
+   "it": "La cipolla fa piangere.",
+   "pt": "A cebola faz chorar.",
    "aceitas": [
-    "nao gosto de cebola",
-    "eu nao gosto de cebola",
-    "nao gosto da cebola",
-    "nao curto cebola"
+    "a cebola faz chorar",
+    "a cebola faz a gente chorar",
+    "a cebola nos faz chorar",
+    "cebola faz chorar"
    ],
    "distratores": [
-    "Não gosto de cenoura.",
-    "Não gosto de abobrinha.",
-    "Não gosto de beterraba.",
-    "Não gosto de pimenta."
+    "A fumaça faz chorar.",
+    "O alho faz chorar.",
+    "O vento faz chorar.",
+    "A piada faz chorar."
    ],
    "nivel": "A2",
    "tags": [
     "frase de uso",
     "comida"
    ],
-   "nota": "Com dois «l»: «cipolla». A comida de que se gosta (ou não) vai com artigo, e é o sujeito do verbo: «non mi piace la cipolla».",
+   "nota": "Com dois «l»: «cipolla». «Fare» + infinitivo é fazer alguém ou algo: «fa piangere», faz chorar; «mi fa ridere», me faz rir.",
    "requerTodas": [
-    "it-p263",
     "it-p402"
    ]
   },
@@ -27963,31 +27827,27 @@
    "id": "it-u522",
    "tipo": "frase",
    "requer": "it-p409",
-   "it": "Devo andare in banca.",
-   "pt": "Tenho que ir ao banco.",
+   "it": "La banca è chiusa il sabato.",
+   "pt": "O banco fecha aos sábados.",
    "aceitas": [
-    "tenho que ir ao banco",
-    "preciso ir ao banco",
-    "tenho de ir ao banco",
-    "devo ir ao banco",
-    "tenho que ir no banco",
-    "preciso ir no banco"
+    "o banco fecha aos sabados",
+    "o banco esta fechado aos sabados",
+    "o banco nao abre aos sabados",
+    "o banco fica fechado aos sabados"
    ],
    "distratores": [
-    "Tenho que ir à banca.",
-    "Tenho que ir ao correio.",
-    "Tenho que ir ao mercado.",
-    "Tenho que ir ao cartório."
+    "O banco fecha aos domingos.",
+    "O banco fecha às segundas.",
+    "O banco fecha às sextas.",
+    "O banco fecha à noite."
    ],
    "nivel": "A2",
    "tags": [
     "frase de uso",
     "economia"
    ],
-   "nota": "Sem artigo, como «in ufficio»: «vado in banca», vou ao banco. A banca de jornal é «l'edicola», e «il banco» é a carteira da escola ou o balcão.\n🇮🇹 banca → 🇧🇷 o banco\n🇮🇹 edicola → 🇧🇷 a banca de jornal\n🇮🇹 banco → 🇧🇷 a carteira (da escola), o balcão",
+   "nota": "«Il sabato», com artigo, é todo sábado: aos sábados. A banca de jornal é «l'edicola», e «il banco» é a carteira da escola ou o balcão.\n🇮🇹 banca → 🇧🇷 o banco\n🇮🇹 edicola → 🇧🇷 a banca de jornal\n🇮🇹 banco → 🇧🇷 a carteira (da escola), o balcão",
    "requerTodas": [
-    "it-p008",
-    "it-p009",
     "it-p409"
    ]
   },
@@ -28298,32 +28158,28 @@
    "id": "it-u532",
    "tipo": "frase",
    "requer": "it-p418",
-   "it": "Mi alzo sempre alle sette.",
-   "pt": "Sempre me levanto às sete.",
+   "it": "Alza la mano se hai una domanda.",
+   "pt": "Levante a mão se tem uma pergunta.",
    "aceitas": [
-    "sempre me levanto as sete",
-    "me levanto sempre as sete",
-    "eu sempre me levanto as sete",
-    "levanto sempre as sete",
-    "sempre levanto as sete",
-    "eu me levanto sempre as sete"
+    "levante a mao se tem uma pergunta",
+    "levante a mao se voce tem uma pergunta",
+    "levanta a mao se tiver uma pergunta",
+    "ergue a mao se tem uma pergunta"
    ],
    "distratores": [
-    "Sempre me deito às sete.",
-    "Sempre saio às sete.",
-    "Sempre janto às sete.",
-    "Sempre chego às sete."
+    "Baixe a mão se tem uma pergunta.",
+    "Abra a mão se tem uma pergunta.",
+    "Feche a mão se tem uma pergunta.",
+    "Estenda a mão se tem uma pergunta."
    ],
    "nivel": "A2",
    "tags": [
     "frase de uso",
     "cotidiano"
    ],
-   "nota": "Para a pessoa que sai da cama, «alzarsi»: «mi alzo», «ti alzi», «si alza». Acordar é outro verbo, «svegliarsi».",
+   "nota": "«Alzare» é erguer algo: «alza la mano». Para levantar-se da cama, «alzarsi». «Hai una domanda», você tem uma pergunta.",
    "requerTodas": [
-    "it-p418",
-    "it-p030",
-    "it-p093"
+    "it-p418"
    ]
   },
   {
@@ -29071,25 +28927,19 @@
    "id": "it-u607",
    "tipo": "frase",
    "requer": "it-p435",
-   "it": "Vi attendiamo alle otto.",
-   "sinonimosIt": [
-    "Vi aspettiamo alle otto."
-   ],
-   "pt": "Esperamos vocês às oito.",
+   "it": "Attendiamo una risposta.",
+   "pt": "Aguardamos uma resposta.",
    "aceitas": [
-    "esperamos voces as oito",
-    "aguardamos voces as oito",
-    "a gente espera voces as oito",
-    "esperamos por voces as oito",
-    "aguardamos por voces as oito",
-    "esperamos voces as oito horas",
-    "aguardamos a presenca de voces as oito"
+    "aguardamos uma resposta",
+    "esperamos uma resposta",
+    "estamos aguardando uma resposta",
+    "nos aguardamos uma resposta"
    ],
    "distratores": [
-    "Atendemos vocês às oito.",
-    "Buscamos vocês às oito.",
-    "Chamamos vocês às oito.",
-    "Levamos vocês às oito."
+    "Damos uma resposta.",
+    "Escrevemos uma resposta.",
+    "Ouvimos uma resposta.",
+    "Lemos uma resposta."
    ],
    "nivel": "A2",
    "tags": [
@@ -29097,10 +28947,9 @@
     "social",
     "falso-amigo"
    ],
-   "nota": "«Attendere» é esperar, aguardar, mais formal que «aspettare»: convite, aviso, telefone. «Vi» é vocês, o objeto. Atender é «servire» ou «rispondere».\n🇮🇹 attendere → 🇧🇷 aguardar, esperar\n🇮🇹 servire → 🇧🇷 atender (o cliente)",
+   "nota": "«Attendere» é esperar, aguardar, mais formal que «aspettare»: carta, aviso, telefone. Atender é «servire» ou «rispondere».\n🇮🇹 attendere → 🇧🇷 aguardar, esperar\n🇮🇹 servire → 🇧🇷 atender (o cliente)",
    "requerTodas": [
-    "it-p435",
-    "it-p155"
+    "it-p435"
    ]
   },
   {
@@ -29723,36 +29572,26 @@
    "id": "it-u626",
    "tipo": "frase",
    "requer": "it-p450",
-   "it": "Metti i piatti sul tavolo.",
-   "aceitasIt": [
-    "Metta i piatti sul tavolo."
-   ],
-   "pt": "Põe os pratos na mesa.",
+   "it": "Il piatto del giorno è il pesce.",
+   "pt": "O prato do dia é peixe.",
    "aceitas": [
-    "poe os pratos na mesa",
-    "coloca os pratos na mesa",
-    "bota os pratos na mesa",
-    "ponha os pratos na mesa",
-    "coloque os pratos na mesa",
-    "poe os pratos em cima da mesa",
-    "coloca os pratos em cima da mesa"
+    "o prato do dia e peixe",
+    "o prato do dia e o peixe"
    ],
    "distratores": [
-    "Põe os copos na mesa.",
-    "Põe os talheres na mesa.",
-    "Põe os guardanapos na mesa.",
-    "Põe os garfos na mesa."
+    "O prato do dia é carne.",
+    "O prato do dia é massa.",
+    "O prato do dia é frango.",
+    "O prato do dia é sopa."
    ],
    "nivel": "A2",
    "tags": [
     "frase de uso",
     "casa"
    ],
-   "nota": "Plural «i piatti». «Sul» = su + il. Cuidado: «il prato» é o gramado.\n🇮🇹 prato → 🇧🇷 o gramado",
+   "nota": "«Il piatto» é o prato, a louça e o que se come nela. Plural «i piatti». Cuidado: «il prato» é o gramado.\n🇮🇹 prato → 🇧🇷 o gramado",
    "requerTodas": [
-    "it-p063",
-    "it-p450",
-    "it-p202"
+    "it-p450"
    ]
   },
   {
@@ -30005,31 +29844,27 @@
    "id": "it-u634",
    "tipo": "frase",
    "requer": "it-p457",
-   "it": "Gli ospiti arrivano alle otto.",
-   "pt": "Os convidados chegam às oito.",
+   "it": "L'ospite dorme nella camera blu.",
+   "pt": "O hóspede dorme no quarto azul.",
    "aceitas": [
-    "os convidados chegam as oito",
-    "os convidados chegam as oito horas",
-    "os hospedes chegam as oito",
-    "os convidados vao chegar as oito",
-    "os convidados chegam as 8"
+    "o hospede dorme no quarto azul",
+    "o convidado dorme no quarto azul",
+    "a visita dorme no quarto azul"
    ],
    "distratores": [
-    "Os músicos chegam às oito.",
-    "Os garçons chegam às oito.",
-    "Os alunos chegam às oito.",
-    "Os primos chegam às oito."
+    "O cachorro dorme no quarto azul.",
+    "O vizinho dorme no quarto azul.",
+    "O filho dorme no quarto azul.",
+    "O avô dorme no quarto azul."
    ],
    "nivel": "B1",
    "tags": [
     "frase de uso",
     "social"
    ],
-   "nota": "«L'ospite» é quem é recebido, em casa ou no hotel, e serve para homem e mulher. Plural «gli ospiti».",
+   "nota": "«L'ospite» é quem é recebido, em casa ou no hotel, e serve para homem e mulher. Plural «gli ospiti». «Nella» é «in» + «la».",
    "requerTodas": [
-    "it-p457",
-    "it-p079",
-    "it-p155"
+    "it-p457"
    ]
   },
   {
@@ -31472,18 +31307,19 @@
    "id": "it-u676",
    "tipo": "frase",
    "requer": "it-p496",
-   "it": "La palestra apre alle sei.",
-   "pt": "A academia abre às seis.",
+   "it": "La palestra è aperta anche la domenica.",
+   "pt": "A academia abre também aos domingos.",
    "aceitas": [
-    "a academia abre as seis",
-    "a academia abre as 6",
-    "a academia abre as seis horas"
+    "a academia abre tambem aos domingos",
+    "a academia abre aos domingos tambem",
+    "a academia fica aberta aos domingos tambem",
+    "a academia esta aberta tambem aos domingos"
    ],
    "distratores": [
-    "A piscina abre às seis.",
-    "A biblioteca abre às seis.",
-    "A escola abre às seis.",
-    "A palestra abre às seis."
+    "A loja abre também aos domingos.",
+    "A escola abre também aos domingos.",
+    "A biblioteca abre também aos domingos.",
+    "A piscina abre também aos domingos."
    ],
    "nivel": "B2",
    "tags": [
@@ -31491,11 +31327,9 @@
     "saúde",
     "falso-amigo"
    ],
-   "nota": "«La palestra» é a academia de ginástica; a palestra, a conferência, é «la conferenza».\n🇮🇹 palestra → 🇧🇷 a academia\n🇮🇹 conferenza → 🇧🇷 a palestra",
+   "nota": "«La palestra» é a academia de ginástica; a palestra, a conferência, é «la conferenza». «La domenica» é aos domingos.\n🇮🇹 palestra → 🇧🇷 a academia\n🇮🇹 conferenza → 🇧🇷 a palestra",
    "requerTodas": [
-    "it-p496",
-    "it-p207",
-    "it-p639"
+    "it-p496"
    ]
   },
   {
@@ -40498,30 +40332,26 @@
    "id": "it-u801",
    "tipo": "frase",
    "requer": "it-p601",
-   "it": "Ci vediamo tra un'ora.",
-   "pt": "A gente se vê daqui a uma hora.",
+   "it": "Un'ora ha sessanta minuti.",
+   "pt": "Uma hora tem sessenta minutos.",
    "aceitas": [
-    "a gente se ve daqui a uma hora",
-    "nos vemos daqui a uma hora",
-    "te vejo daqui a uma hora",
-    "a gente se ve em uma hora",
-    "nos vemos em uma hora",
-    "ate daqui a uma hora"
+    "uma hora tem sessenta minutos",
+    "uma hora tem 60 minutos",
+    "uma hora possui sessenta minutos"
    ],
    "distratores": [
-    "A gente se vê daqui a uma semana.",
-    "A gente se vê daqui a uma quinzena.",
-    "A gente se vê daqui a uma década.",
-    "A gente se vê daqui a uma temporada."
+    "Uma hora tem trinta minutos.",
+    "Uma hora tem quarenta minutos.",
+    "Uma hora tem cem minutos.",
+    "Uma hora tem noventa minutos."
    ],
    "tags": [
     "frase de uso",
     "cotidiano"
    ],
-   "nota": "«Tra» (ou «fra») + tempo, daqui a: «tra un'ora». «Un'ora», com apóstrofo, porque «l'ora» é feminina. «Ci vediamo», a gente se vê.",
+   "nota": "«Un'ora», com apóstrofo, porque «ora» é feminina; «un'» é «una» perdendo a vogal. «L'ora» é também o agora, em «ora» sem artigo.",
    "nivel": "A1",
    "requerTodas": [
-    "it-p019",
     "it-p601"
    ]
   },
@@ -42162,30 +41992,27 @@
    "id": "it-u850",
    "tipo": "frase",
    "requer": "it-p639",
-   "it": "Mi alzo alle sei.",
-   "pt": "Levanto às seis.",
+   "it": "Sei persone vivono in questa casa.",
+   "pt": "Seis pessoas moram nesta casa.",
    "aceitas": [
-    "levanto as seis",
-    "eu levanto as seis",
-    "me levanto as seis",
-    "acordo as seis",
-    "eu acordo as seis",
-    "levanto as 6"
+    "seis pessoas moram nesta casa",
+    "seis pessoas vivem nesta casa",
+    "seis pessoas moram nessa casa",
+    "moram seis pessoas nesta casa"
    ],
    "distratores": [
-    "Levanto às sete.",
-    "Levanto às oito.",
-    "Levanto às cinco.",
-    "Levanto às nove."
+    "Duas pessoas moram nesta casa.",
+    "Quatro pessoas moram nesta casa.",
+    "Oito pessoas moram nesta casa.",
+    "Dez pessoas moram nesta casa."
    ],
    "tags": [
     "frase de uso",
     "cotidiano"
    ],
-   "nota": "As horas vão com «le»: «alle sei», às seis; «sono le sei», são seis horas. E cuidado: «sei» é também «você é».",
+   "nota": "«Sei» é seis, e também «você é»: o sentido sai do contexto, como em «sei persone». «Vivere» é viver e morar.",
    "nivel": "A1",
    "requerTodas": [
-    "it-p418",
     "it-p639"
    ]
   },
@@ -42496,31 +42323,27 @@
    "id": "it-u860",
    "tipo": "frase",
    "requer": "it-p647",
-   "it": "Mi piace molto il cioccolato.",
-   "pt": "Gosto muito de chocolate.",
+   "it": "Il cioccolato si scioglie al sole.",
+   "pt": "O chocolate derrete no sol.",
    "aceitas": [
-    "gosto muito de chocolate",
-    "eu gosto muito de chocolate",
-    "adoro chocolate",
-    "gosto demais de chocolate",
-    "gosto bastante de chocolate",
-    "amo chocolate"
+    "o chocolate derrete no sol",
+    "o chocolate derrete ao sol",
+    "o chocolate se derrete no sol",
+    "o chocolate derrete com o sol"
    ],
    "distratores": [
-    "Gosto muito de café.",
-    "Gosto muito de queijo.",
-    "Gosto muito de pão.",
-    "Gosto muito de sorvete."
+    "O chocolate endurece no sol.",
+    "O chocolate esfria no sol.",
+    "O chocolate cresce no sol.",
+    "O chocolate encolhe no sol."
    ],
    "tags": [
     "frase de uso",
     "comida"
    ],
-   "nota": "Com «piacere», o que se gosta é o sujeito e leva artigo: «mi piace il cioccolato»; no plural, «mi piacciono i dolci».",
+   "nota": "«Il cioccolato» tem «cc», como «cioccolata», a bebida quente. «Sciogliersi» é derreter-se: «si scioglie». «Al sole» é «a» + «il».",
    "nivel": "A1",
    "requerTodas": [
-    "it-p263",
-    "it-p020",
     "it-p647"
    ]
   },
@@ -43093,31 +42916,26 @@
    "id": "it-u878",
    "tipo": "frase",
    "requer": "it-p663",
-   "it": "Ci vediamo alle dieci.",
-   "pt": "A gente se vê às dez.",
+   "it": "Conta fino a dieci.",
+   "pt": "Conte até dez.",
    "aceitas": [
-    "a gente se ve as dez",
-    "nos vemos as dez",
-    "te vejo as dez",
-    "a gente se encontra as dez",
-    "nos encontramos as dez",
-    "a gente se ve as 10",
-    "ate as dez"
+    "conte ate dez",
+    "conta ate dez",
+    "conte ate 10"
    ],
    "distratores": [
-    "A gente se vê às nove.",
-    "A gente se vê às onze.",
-    "A gente se vê às oito.",
-    "A gente se vê às duas."
+    "Conte até cinco.",
+    "Conte até vinte.",
+    "Conte até cem.",
+    "Conte até três."
    ],
    "tags": [
     "frase de uso",
     "cotidiano"
    ],
-   "nota": "«Ci vediamo», a gente se vê, é a despedida de quem marca encontro. As horas com «alle»: «alle dieci».",
+   "nota": "«Conta» é o imperativo de «contare» (tu). «Fino a» é até. «Dieci» é dez; os números vão de «uno» a «dieci».",
    "nivel": "A1",
    "requerTodas": [
-    "it-p019",
     "it-p663"
    ]
   },
@@ -43327,33 +43145,29 @@
    "id": "it-u885",
    "tipo": "frase",
    "requer": "it-p669",
-   "it": "A dire la verità, non mi piace.",
-   "pt": "Para falar a verdade, não gosto.",
+   "it": "Cerco sempre la verità.",
+   "pt": "Sempre busco a verdade.",
    "aceitas": [
-    "para falar a verdade nao gosto",
-    "pra falar a verdade nao gosto",
-    "pra falar a verdade eu nao gosto",
-    "para dizer a verdade nao gosto",
-    "na verdade nao gosto",
-    "para ser sincero nao gosto",
-    "para ser sincera nao gosto"
+    "sempre busco a verdade",
+    "eu sempre busco a verdade",
+    "sempre procuro a verdade",
+    "eu sempre procuro a verdade",
+    "busco sempre a verdade"
    ],
    "distratores": [
-    "Para variar um pouco, não gosto.",
-    "Para começar o dia, não gosto.",
-    "Para resumir a história, não gosto.",
-    "Para piorar a situação, não gosto."
+    "Sempre busco a paz.",
+    "Sempre busco a fama.",
+    "Sempre busco a justiça.",
+    "Sempre busco a beleza."
    ],
    "tags": [
     "frase de uso",
     "social"
    ],
-   "nota": "«A dire la verità», para falar a verdade, abre a frase como em português. «Non mi piace», não gosto (disso).",
+   "nota": "«La verità», com acento no a final: a verdade. «Cercare» é procurar, buscar: «cerco», eu procuro.",
    "nivel": "A1",
    "requerTodas": [
-    "it-p007",
-    "it-p669",
-    "it-p263"
+    "it-p669"
    ]
   },
   {
@@ -43986,35 +43800,26 @@
    "id": "it-u904",
    "tipo": "frase",
    "requer": "it-p684",
-   "it": "Ho perso le chiavi di casa.",
-   "pt": "Perdi as chaves de casa.",
+   "it": "La chiave è nella serratura.",
+   "pt": "A chave está na fechadura.",
    "aceitas": [
-    "perdi as chaves de casa",
-    "perdi a chave de casa",
-    "eu perdi as chaves de casa",
-    "perdi as chaves da casa",
-    "perdi a chave da casa",
-    "perdi minhas chaves de casa"
+    "a chave esta na fechadura",
+    "a chave ficou na fechadura"
    ],
    "distratores": [
-    "Perdi as fotos de casa.",
-    "Perdi as coisas de casa.",
-    "Perdi as roupas de casa.",
-    "Perdi as contas de casa."
+    "A chave está na bolsa.",
+    "A chave está no bolso.",
+    "A chave está na gaveta.",
+    "A chave está na porta."
    ],
    "tags": [
     "frase de uso",
     "casa"
    ],
-   "nota": "«Perso» é o particípio irregular de «perdere». «Le chiavi di casa», sem artigo antes de «casa». O plural de «chiave» é «chiavi».",
-   "regionaisIt": {
-    "Persi le chiavi di casa.": "no Sul da Itália"
-   },
+   "nota": "«La serratura» é a fechadura; a chave é «la chiave». «Nella» é «in» + «la». O plural de «chiave» é «chiavi».",
    "nivel": "A2",
    "requerTodas": [
-    "it-p218",
-    "it-p684",
-    "it-p062"
+    "it-p684"
    ]
   },
   {
@@ -46742,31 +46547,28 @@
    "id": "it-u957",
    "tipo": "frase",
    "requer": "it-p706",
-   "it": "La partita comincia alle otto.",
-   "pt": "O jogo começa às oito.",
+   "it": "La partita finisce tre a due.",
+   "pt": "O jogo termina três a dois.",
    "aceitas": [
-    "o jogo comeca as oito",
-    "a partida comeca as oito",
-    "o jogo comeca as 8",
-    "a partida comeca as 8",
-    "o jogo comeca as oito horas"
+    "o jogo termina tres a dois",
+    "o jogo acaba tres a dois",
+    "o jogo termina 3 a 2",
+    "a partida termina tres a dois"
    ],
    "distratores": [
-    "O filme começa às oito.",
-    "A aula começa às oito.",
-    "A festa começa às oito.",
-    "A missa começa às oito."
+    "O jogo termina dois a um.",
+    "O jogo termina quatro a zero.",
+    "O jogo termina zero a zero.",
+    "O jogo termina cinco a três."
    ],
    "nivel": "A2",
    "tags": [
     "frase de uso",
     "cultura"
    ],
-   "nota": "«La partita» é o jogo, a partida (de futebol, de cartas): «guardare la partita», ver o jogo. «Il gioco» é a brincadeira, ou o jogo em geral.",
+   "nota": "«La partita» é o jogo, a partida. O placar diz-se «tre a due», com «a» entre os números.",
    "requerTodas": [
-    "it-p706",
-    "it-p273",
-    "it-p155"
+    "it-p706"
    ]
   },
   {
@@ -47303,31 +47105,28 @@
    "id": "it-u974",
    "tipo": "frase",
    "requer": "it-p721",
-   "it": "Ci vediamo alla stazione alle otto.",
-   "pt": "A gente se vê na estação às oito.",
+   "it": "La stazione è lontana da qui.",
+   "pt": "A estação fica longe daqui.",
    "aceitas": [
-    "a gente se ve na estacao as oito",
-    "nos vemos na estacao as oito",
-    "a gente se encontra na estacao as oito",
-    "nos encontramos na estacao as oito",
-    "te vejo na estacao as oito"
+    "a estacao fica longe daqui",
+    "a estacao e longe daqui",
+    "a estacao esta longe daqui",
+    "a estacao fica longe"
    ],
    "distratores": [
-    "A gente se vê na praça às oito.",
-    "A gente se vê na escola às oito.",
-    "A gente se vê na praia às oito.",
-    "A gente se vê na igreja às oito."
+    "A estação fica perto daqui.",
+    "A estação fica a dois passos daqui.",
+    "A estação fica logo ali.",
+    "A estação fica no caminho daqui."
    ],
    "nivel": "A2",
    "tags": [
     "frase de uso",
     "viagem"
    ],
-   "nota": "«Alla stazione», na estação, com «a» e artigo, como «alle otto», às oito. «Ci vediamo», a gente se vê, é também a despedida: até mais.",
+   "nota": "«Lontano da», longe de: «lontana da qui». «Lontana» é feminino, porque «la stazione» é feminino.",
    "requerTodas": [
-    "it-p019",
-    "it-p721",
-    "it-p155"
+    "it-p721"
    ]
   },
   {
@@ -47931,30 +47730,26 @@
    "id": "it-u992",
    "tipo": "frase",
    "requer": "it-p736",
-   "it": "Mi piace il suono della pioggia.",
-   "pt": "Gosto do som da chuva.",
+   "it": "Il suono del pianoforte è dolce.",
+   "pt": "O som do piano é doce.",
    "aceitas": [
-    "gosto do som da chuva",
-    "eu gosto do som da chuva",
-    "gosto do barulho da chuva",
-    "eu gosto do barulho da chuva"
+    "o som do piano e doce",
+    "o som do piano e suave"
    ],
    "distratores": [
-    "Gosto do cheiro da chuva.",
-    "Gosto do frescor da chuva.",
-    "Gosto do ritmo da chuva.",
-    "Gosto do brilho da chuva."
+    "O som do violino é doce.",
+    "O som do sino é doce.",
+    "O som do trompete é doce.",
+    "O som do tambor é doce."
    ],
    "nivel": "A2",
    "tags": [
     "frase de uso",
     "natureza"
    ],
-   "nota": "«Il suono», o som: «il suono della voce», «il suono delle campane». O sono é «il sonno», com dois «n».",
+   "nota": "«Il suono», o som: «il suono della voce». O sono é «il sonno», com dois «n». «Il pianoforte» é o piano, e também se diz «il piano».",
    "requerTodas": [
-    "it-p263",
-    "it-p736",
-    "it-p329"
+    "it-p736"
    ]
   },
   {
@@ -48027,29 +47822,28 @@
    "id": "it-u995",
    "tipo": "frase",
    "requer": "it-p739",
-   "it": "Il treno per Milano parte alle nove.",
-   "pt": "O trem para Milão sai às nove.",
+   "it": "Il treno è molto affollato.",
+   "pt": "O trem está muito lotado.",
    "aceitas": [
-    "o trem para milao sai as nove",
-    "o trem para milao parte as nove",
-    "o trem pra milao sai as nove"
+    "o trem esta muito lotado",
+    "o trem esta muito cheio",
+    "o trem e muito lotado",
+    "o trem esta bem lotado"
    ],
    "distratores": [
-    "O ônibus para Milão sai às nove.",
-    "O voo para Milão sai às nove.",
-    "O avião para Milão sai às nove.",
-    "O táxi para Milão sai às nove."
+    "O trem está muito vazio.",
+    "O trem está muito lento.",
+    "O trem está muito novo.",
+    "O trem está muito limpo."
    ],
    "nivel": "A2",
    "tags": [
     "frase de uso",
     "viagem"
    ],
-   "nota": "«Il treno per», o trem para: «per» dá o destino. «Partire», partir, sair de viagem: «parte alle nove».",
+   "nota": "«Affollato» é lotado, cheio de gente, de «la folla», a multidão. «Il treno» é masculino.",
    "requerTodas": [
-    "it-p739",
-    "it-p344",
-    "it-p272"
+    "it-p739"
    ]
   },
   {
@@ -48120,28 +47914,28 @@
    "id": "it-u998",
    "tipo": "frase",
    "requer": "it-p741",
-   "it": "Mi piace viaggiare da sol{o|a}.",
-   "pt": "Gosto de viajar sozinh{o|a}.",
+   "it": "Viaggiare costa molto.",
+   "pt": "Viajar custa muito.",
    "aceitas": [
-    "gosto de viajar sozinh{o|a}",
-    "eu gosto de viajar sozinh{o|a}"
+    "viajar custa muito",
+    "viajar custa caro",
+    "viajar e caro",
+    "viajar sai caro"
    ],
    "distratores": [
-    "Gosto de jantar sozinh{o|a}.",
-    "Gosto de correr sozinh{o|a}.",
-    "Gosto de morar sozinh{o|a}.",
-    "Gosto de estudar sozinh{o|a}."
+    "Estudar custa muito.",
+    "Dormir custa muito.",
+    "Cozinhar custa muito.",
+    "Morar custa muito."
    ],
    "nivel": "A2",
    "tags": [
     "frase de uso",
     "viagem"
    ],
-   "nota": "«Mi piace» + infinitivo, sem preposição: «mi piace viaggiare», gosto de viajar. «Da solo», «da sola», sozinho, sozinha.",
+   "nota": "O infinitivo pode ser o sujeito: «viaggiare costa molto», viajar custa caro. «Costare» é custar, e «molto» aqui é muito.",
    "requerTodas": [
-    "it-p263",
-    "it-p741",
-    "it-p012"
+    "it-p741"
    ]
   },
   {
@@ -48379,33 +48173,28 @@
    "id": "it-u1007",
    "tipo": "frase",
    "requer": "it-p749",
-   "it": "Mi fa male la punta del dito.",
-   "pt": "A ponta do dedo está doendo.",
+   "it": "Cammino in punta di piedi.",
+   "pt": "Ando na ponta dos pés.",
    "aceitas": [
-    "a ponta do dedo esta doendo",
-    "esta doendo a ponta do dedo",
-    "doi a ponta do dedo",
-    "a ponta do meu dedo esta doendo",
-    "a ponta do meu dedo doi",
-    "estou com dor na ponta do dedo"
+    "ando na ponta dos pes",
+    "eu ando na ponta dos pes",
+    "caminho na ponta dos pes",
+    "eu caminho na ponta dos pes"
    ],
    "distratores": [
-    "A unha do dedo está doendo.",
-    "A junta do dedo está doendo.",
-    "A pele do dedo está doendo.",
-    "A base do dedo está doendo."
+    "Ando de pés descalços.",
+    "Ando na beira da calçada.",
+    "Ando com os pés juntos.",
+    "Ando com passos largos."
    ],
    "nivel": "B1",
    "tags": [
     "frase de uso",
     "corpo"
    ],
-   "nota": "«Fare male», doer, com o que dói depois: «mi fa male la testa», minha cabeça dói. «La punta», a ponta: «in punta di piedi», na ponta dos pés.",
+   "nota": "«In punta di piedi» é na ponta dos pés. «La punta» é a ponta; «il piede», o pé, no plural «i piedi».",
    "requerTodas": [
-    "it-p004",
-    "it-p624",
-    "it-p749",
-    "it-p257"
+    "it-p749"
    ]
   },
   {
@@ -49039,29 +48828,28 @@
    "id": "it-u1027",
    "tipo": "frase",
    "requer": "it-p766",
-   "it": "Mi piace nuotare nel lago.",
-   "pt": "Gosto de nadar no lago.",
+   "it": "Nuotare fa bene alla schiena.",
+   "pt": "Nadar faz bem às costas.",
    "aceitas": [
-    "gosto de nadar no lago",
-    "eu gosto de nadar no lago",
-    "gosto de nadar na lagoa"
+    "nadar faz bem as costas",
+    "nadar faz bem para as costas",
+    "nadar e bom para as costas",
+    "nadar faz bem a coluna"
    ],
    "distratores": [
-    "Gosto de pescar no lago.",
-    "Gosto de remar no lago.",
-    "Gosto de mergulhar no lago.",
-    "Gosto de patinar no lago."
+    "Correr faz bem às costas.",
+    "Dormir faz bem às costas.",
+    "Cozinhar faz bem às costas.",
+    "Cantar faz bem às costas."
    ],
    "nivel": "B1",
    "tags": [
     "frase de uso",
     "natureza"
    ],
-   "nota": "«Mi piace» + infinitivo, sem preposição: «mi piace nuotare». «Nel lago», no lago: «in» com o artigo. A natação é «il nuoto».",
+   "nota": "«Nuotare» é nadar; a natação é «il nuoto». «Fare bene a» é fazer bem a: «alla schiena», às costas, com «a» + «la».",
    "requerTodas": [
-    "it-p263",
-    "it-p766",
-    "it-p755"
+    "it-p766"
    ]
   },
   {
@@ -49328,36 +49116,28 @@
    "id": "it-u1036",
    "tipo": "frase",
    "requer": "it-p775",
-   "it": "Accendi la stufa, fa freddo!",
-   "aceitasIt": [
-    "Accenda la stufa, fa freddo!"
-   ],
-   "pt": "Liga o aquecedor, está frio!",
+   "it": "La stufa a legna scalda tutta la casa.",
+   "pt": "O aquecedor a lenha esquenta a casa toda.",
    "aceitas": [
-    "liga o aquecedor esta frio",
-    "ligue o aquecedor esta frio",
-    "acende o aquecedor esta frio",
-    "liga o aquecedor que esta frio",
-    "liga o aquecedor faz frio",
-    "liga o aquecedor esta fazendo frio"
+    "o aquecedor a lenha esquenta a casa toda",
+    "a estufa a lenha esquenta a casa toda",
+    "o aquecedor a lenha aquece a casa toda",
+    "o fogao a lenha esquenta a casa toda"
    ],
    "distratores": [
-    "Liga o forno, está frio!",
-    "Liga o motor, está frio!",
-    "Liga o chuveiro, está frio!",
-    "Liga o secador, está frio!"
+    "O aquecedor a lenha esquenta só a sala.",
+    "O aquecedor a lenha esquenta só o quarto.",
+    "O aquecedor a lenha esquenta só a cozinha.",
+    "O aquecedor a lenha esquenta só o corredor."
    ],
    "nivel": "B2",
    "tags": [
     "frase de uso",
     "casa"
    ],
-   "nota": "«La stufa», o aquecedor, elétrico, a gás ou a lenha. «Accendere» é acender e é ligar. A estufa de plantas é «la serra».",
+   "nota": "«La stufa» é o aquecedor, e a lenha é «la legna»: «la stufa a legna». A estufa de plantas é «la serra».",
    "requerTodas": [
-    "it-p455",
-    "it-p775",
-    "it-p004",
-    "it-p115"
+    "it-p775"
    ]
   },
   {
@@ -52874,7 +52654,7 @@
      ]
     },
     {
-     "it": "Il treno arriva alle otto.",
+     "it": "Il treno arriva in ritardo.",
      "w": "arriva",
      "de": "it-u156",
      "exp": "arriva: presente de arrivare; o horário marcado vai no presente, como no Brasil.",
@@ -53366,30 +53146,6 @@
       "l': antes de vogal, no singular (l'anno, l'acqua)",
       "sem artigo: possessivo com parente no singular (mia madre)"
      ]
-    },
-    {
-     "it": "Metti i piatti sul tavolo.",
-     "w": "i piatti",
-     "de": "it-u626",
-     "exp": "i: o plural de il piatto.",
-     "distratores": [
-      "gli: plural masculino antes de vogal (gli amici)",
-      "l': antes de vogal, no singular (l'anno, l'acqua)",
-      "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
-      "sem artigo: possessivo com parente no singular (mia madre)"
-     ]
-    },
-    {
-     "it": "Ti piacciono i gatti?",
-     "w": "i gatti",
-     "de": "it-u405",
-     "exp": "i: o plural de il gatto.",
-     "distratores": [
-      "gli: plural masculino antes de vogal (gli amici)",
-      "l': antes de vogal, no singular (l'anno, l'acqua)",
-      "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
-      "sem artigo: possessivo com parente no singular (mia madre)"
-     ]
     }
    ]
   },
@@ -53552,18 +53308,6 @@
      "w": "gli amici",
      "de": "it-u284",
      "exp": "gli: amici começa com vogal; no singular, l'amico.",
-     "distratores": [
-      "il, i: masculino antes de consoante (il libro, i libri)",
-      "l': antes de vogal, no singular (l'anno, l'acqua)",
-      "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
-      "sem artigo: possessivo com parente no singular (mia madre)"
-     ]
-    },
-    {
-     "it": "Gli ospiti arrivano alle otto.",
-     "w": "Gli ospiti",
-     "de": "it-u634",
-     "exp": "gli: ospiti começa com vogal; no singular, l'ospite.",
      "distratores": [
       "il, i: masculino antes de consoante (il libro, i libri)",
       "l': antes de vogal, no singular (l'anno, l'acqua)",
@@ -53772,18 +53516,6 @@
      "distratores": [
       "c'è, ci sono: «há», «tem»",
       "ci: «lá», «nisso» (ci vado, non ci credo)",
-      "ne: «disso», «deles» (ne parliamo)",
-      "si impessoal (come si dice?)"
-     ]
-    },
-    {
-     "it": "Ci vediamo alle tre.",
-     "w": "Ci",
-     "de": "it-u155",
-     "exp": "ci vediamo: «a gente se vê», com noi.",
-     "distratores": [
-      "ci: «lá», «nisso» (ci vado, non ci credo)",
-      "c'è, ci sono: «há», «tem»",
       "ne: «disso», «deles» (ne parliamo)",
       "si impessoal (come si dice?)"
      ]
@@ -55439,18 +55171,6 @@
       "di: de quê ou de quem (matéria, conteúdo, posse)",
       "di sì, di no: «que sim», «que não» (penso di sì)",
       "da: de onde vem ou sai (torna dal Brasile)"
-     ]
-    },
-    {
-     "it": "A che ora finisci di lavorare?",
-     "w": "di lavorare",
-     "de": "it-u335",
-     "exp": "finire di + infinitivo: «terminar de».",
-     "distratores": [
-      "da: para quê, ou em que idade (da bere, da piccolo)",
-      "di: de quê ou de quem (matéria, conteúdo, posse)",
-      "di sì, di no: «que sim», «que não» (penso di sì)",
-      "da: há quanto tempo, desde (da tre anni)"
      ]
     },
     {

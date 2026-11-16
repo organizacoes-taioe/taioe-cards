@@ -7290,55 +7290,52 @@
    "id": "fr-u044",
    "tipo": "frase",
    "requer": "fr-p029",
-   "fr": "J'aime mon travail.",
-   "pt": "Gosto do meu trabalho.",
+   "fr": "Mon travail est intéressant.",
+   "pt": "O meu trabalho é interessante.",
    "aceitas": [
-    "gosto do meu trabalho",
-    "eu gosto do meu trabalho",
-    "amo meu trabalho",
-    "amo o meu trabalho",
-    "gosto do meu emprego"
+    "o meu trabalho e interessante",
+    "meu trabalho e interessante",
+    "meu trabalho e bem interessante"
    ],
    "distratores": [
-    "Gosto do meu bairro.",
-    "Gosto do meu carro.",
-    "Gosto do meu chefe.",
-    "Gosto do meu quarto."
+    "O meu trabalho é difícil.",
+    "O meu trabalho é cansativo.",
+    "O meu trabalho é bem pago.",
+    "O meu trabalho é perigoso."
    ],
-   "es": "Me gusta mi trabajo.",
+   "es": "Mi trabajo es interesante.",
    "aceitasEs": [
-    "Me gusta mi trabajo.",
-    "Amo mi trabajo.",
-    "Me encanta mi trabajo."
+    "Mi trabajo es interesante.",
+    "Mi trabajo me resulta interesante.",
+    "Mi trabajo es muy interesante."
    ],
    "distratoresEs": [
-    "Me gusta mi barrio.",
-    "Me gusta mi coche.",
-    "Me gusta mi jefe.",
-    "Me gusta mi cuarto."
+    "Mi trabajo es difícil.",
+    "Mi trabajo es cansado.",
+    "Mi trabajo está bien pagado.",
+    "Mi trabajo es peligroso."
    ],
-   "en": "I like my job.",
+   "en": "My job is interesting.",
    "aceitasEn": [
-    "i like my job",
-    "i love my job",
-    "i like my work",
-    "i love my work"
+    "my job is interesting",
+    "my work is interesting",
+    "my job is really interesting",
+    "my job is quite interesting"
    ],
    "distratoresEn": [
-    "I like my neighborhood.",
-    "I like my car.",
-    "I like my boss.",
-    "I like my room."
+    "My job is difficult.",
+    "My job is tiring.",
+    "My job is well paid.",
+    "My job is dangerous."
    ],
    "nivel": "A1",
    "tags": [
     "trabalho"
    ],
-   "nota": "«Mon travail»: o possessivo masculino, porque «travail» é masculino.",
-   "notaEs": "«Mon travail»: posesivo masculino, porque «travail» es masculino.",
-   "notaEn": "«Mon travail»: masculine possessive, because «travail» is masculine.",
+   "nota": "«Mon travail»: o possessivo masculino, porque «travail» é masculino. Aqui é o emprego; o plural é «travaux», com «x».",
+   "notaEs": "«Mon travail»: posesivo masculino, porque «travail» es masculino. El plural es «travaux».",
+   "notaEn": "«Mon travail»: the masculine possessive, because «travail» is masculine. The plural is «travaux».",
    "requerTodas": [
-    "fr-p015",
     "fr-p029"
    ]
   },
@@ -8210,55 +8207,55 @@
    "id": "fr-u060",
    "tipo": "frase",
    "requer": "fr-p043",
-   "fr": "Il fait très froid.",
-   "pt": "Está muito frio.",
+   "fr": "Ce café est très bon.",
+   "pt": "Este café é muito bom.",
    "aceitas": [
-    "esta muito frio",
-    "ta muito frio",
-    "faz muito frio",
-    "esta fazendo muito frio"
+    "este cafe e muito bom",
+    "esse cafe e muito bom",
+    "este cafe esta muito bom",
+    "esse cafe esta muito bom"
    ],
    "distratores": [
-    "Está muito quente.",
-    "Está um pouco frio.",
-    "Está meio frio.",
-    "Está muito úmido."
+    "Este café é bom demais.",
+    "Este café não é muito bom.",
+    "Este café é tão bom.",
+    "Este café é quase bom."
    ],
-   "es": "Hace mucho frío.",
+   "es": "Este café está muy bueno.",
    "aceitasEs": [
-    "Hace mucho frío.",
-    "Hace muchísimo frío."
+    "Este café está muy bueno.",
+    "Este café es muy bueno.",
+    "Este café está muy rico.",
+    "Este café es muy rico."
    ],
    "distratoresEs": [
-    "Hace mucho calor.",
-    "Hace un poco de frío.",
-    "Hace algo de frío.",
-    "Hay mucha humedad."
+    "Este café parece muy bueno.",
+    "Este café queda muy bueno.",
+    "Este café era muy bueno.",
+    "Este café sigue muy bueno."
    ],
-   "en": "It's very cold.",
+   "en": "This coffee is very good.",
    "aceitasEn": [
-    "its very cold",
-    "it is very cold",
-    "its really cold",
-    "its freezing"
+    "this coffee is very good",
+    "this coffee is really good",
+    "this coffee is very tasty",
+    "this coffee is very nice"
    ],
    "distratoresEn": [
-    "It's very hot.",
-    "It's a bit cold.",
-    "It's kind of cold.",
-    "It's very humid."
+    "This coffee seems very good.",
+    "This coffee turns out very good.",
+    "This coffee was very good.",
+    "This coffee is still very good."
    ],
    "nivel": "A1",
    "tags": [
     "natureza"
    ],
-   "nota": "«Froid» aqui é adjetivo, e por isso «très»: «il fait très froid».",
-   "notaEs": "En francés «froid» aquí es adjetivo, y por eso «très»: «il fait très froid», no «beaucoup de froid».",
-   "notaEn": "«Froid» is an adjective here, so it takes «très»: «il fait très froid».",
+   "nota": "«Très» vem antes de adjetivo ou advérbio: «très bon», «très bien». Com verbo, é «beaucoup»: «j'aime beaucoup».",
+   "notaEs": "«Très» va antes de adjetivo o adverbio: «très bon», «très bien». Con verbo, es «beaucoup».",
+   "notaEn": "«Très» goes before an adjective or adverb: «très bon». With a verb, use «beaucoup».",
    "requerTodas": [
-    "fr-p004",
-    "fr-p043",
-    "fr-p080"
+    "fr-p043"
    ]
   },
   {
@@ -14015,60 +14012,56 @@
    "id": "fr-u075",
    "tipo": "frase",
    "requer": "fr-p108",
-   "fr": "Je sors du travail à six heures.",
-   "pt": "Saio do trabalho às seis.",
+   "fr": "Je sors avec mes amis samedi.",
+   "pt": "Saio com meus amigos no sábado.",
    "aceitas": [
-    "saio do trabalho as seis",
-    "eu saio do trabalho as seis",
-    "saio do trabalho as 6",
-    "saio do trabalho as seis horas",
-    "saio do servico as seis"
+    "saio com meus amigos no sabado",
+    "saio com os meus amigos no sabado",
+    "eu saio com meus amigos no sabado",
+    "sabado saio com meus amigos"
    ],
    "distratores": [
-    "Chego ao trabalho às seis.",
-    "Entro no trabalho às seis.",
-    "Janto no trabalho às seis.",
-    "Estou no trabalho às seis."
+    "Almoço com meus amigos no sábado.",
+    "Viajo com meus amigos no sábado.",
+    "Estudo com meus amigos no sábado.",
+    "Jogo com meus amigos no sábado."
    ],
-   "es": "Salgo del trabajo a las seis.",
+   "es": "Salgo con mis amigos el sábado.",
    "aceitasEs": [
-    "Salgo del trabajo a las seis.",
-    "Salgo de trabajar a las seis.",
-    "Salgo del trabajo a las 6."
+    "Salgo con mis amigos el sábado.",
+    "El sábado salgo con mis amigos.",
+    "Yo salgo con mis amigos el sábado.",
+    "Salgo con mis amigos este sábado."
    ],
    "distratoresEs": [
-    "Llego al trabajo a las seis.",
-    "Entro al trabajo a las seis.",
-    "Ceno en el trabajo a las seis.",
-    "Estoy en el trabajo a las seis."
+    "Almuerzo con mis amigos el sábado.",
+    "Viajo con mis amigos el sábado.",
+    "Estudio con mis amigos el sábado.",
+    "Juego con mis amigos el sábado."
    ],
-   "en": "I leave work at six.",
+   "en": "I go out with my friends on Saturday.",
    "aceitasEn": [
-    "i leave work at six",
-    "i leave work at 6",
-    "i get off work at six",
-    "i get out of work at six",
-    "i finish work at six"
+    "i go out with my friends on saturday",
+    "i am going out with my friends on saturday",
+    "i go out with my friends saturday",
+    "on saturday i go out with my friends"
    ],
    "distratoresEn": [
-    "I get to work at six.",
-    "I start work at six.",
-    "I have dinner at work at six.",
-    "I'm at work at six."
+    "I have lunch with my friends on Saturday.",
+    "I travel with my friends on Saturday.",
+    "I study with my friends on Saturday.",
+    "I play with my friends on Saturday."
    ],
    "nivel": "A1",
    "tags": [
     "trabalho",
     "cotidiano"
    ],
-   "nota": "Sair de um lugar é «sortir de»; «du» é «de» + «le». A hora leva «heures», que o português costuma calar: «à six heures», às seis.",
-   "notaEs": "Salir de un lugar es «sortir de»; «du» es «de» + «le», como «del». La hora lleva «heures»: «à six heures», a las seis.",
-   "notaEn": "Leaving a place is «sortir de»; «du» is «de» + «le». Clock times need «heures»: «à six heures», at six (o'clock).",
+   "nota": "«Sortir» é sair; «je sors avec mes amis», saio com os amigos. O dia da semana sem artigo é o próximo: «samedi», no sábado; «le samedi», aos sábados.",
+   "notaEs": "«Sortir» es salir. El día sin artículo es el próximo: «samedi», el sábado; «le samedi», los sábados.",
+   "notaEn": "«Sortir» means to go out. A weekday without an article is the next one: «samedi»; «le samedi» means on Saturdays.",
    "requerTodas": [
-    "fr-p108",
-    "fr-p029",
-    "fr-p179",
-    "fr-p129"
+    "fr-p108"
    ]
   },
   {
@@ -15187,64 +15180,56 @@
    "id": "fr-u094",
    "tipo": "frase",
    "requer": "fr-p011",
-   "fr": "On prend le petit déjeuner à huit heures.",
-   "aceitasFr": [
-    "Nous prenons le petit déjeuner à huit heures.",
-    "On prend le petit-déjeuner à huit heures."
-   ],
-   "pt": "A gente toma café da manhã às oito.",
+   "fr": "Je prends le bus tous les jours.",
+   "pt": "Eu pego o ônibus todo dia.",
    "aceitas": [
-    "a gente toma cafe da manha as oito",
-    "a gente toma o cafe da manha as oito",
-    "a gente toma cafe da manha as 8",
-    "tomamos cafe da manha as oito",
-    "tomamos o cafe da manha as oito",
-    "nos tomamos cafe da manha as oito"
+    "eu pego o onibus todo dia",
+    "pego o onibus todo dia",
+    "eu pego o onibus todos os dias",
+    "pego o onibus todos os dias"
    ],
    "distratores": [
-    "A gente toma o remédio às oito.",
-    "A gente toma um banho às oito.",
-    "A gente toma o ônibus às oito.",
-    "A gente toma o trem às oito."
+    "Eu perco o ônibus todo dia.",
+    "Eu espero o ônibus todo dia.",
+    "Eu pago o ônibus todo dia.",
+    "Eu dirijo o ônibus todo dia."
    ],
-   "es": "Desayunamos a las ocho.",
+   "es": "Tomo el autobús todos los días.",
    "aceitasEs": [
-    "Desayunamos a las ocho.",
-    "Desayunamos a las 8.",
-    "Tomamos el desayuno a las ocho."
+    "Tomo el autobús todos los días.",
+    "Yo tomo el autobús todos los días.",
+    "Tomo el bus todos los días.",
+    "Cada día tomo el autobús."
    ],
    "distratoresEs": [
-    "Almorzamos a las ocho.",
-    "Cenamos a las ocho.",
-    "Merendamos a las ocho.",
-    "Salimos a las ocho."
+    "Pierdo el autobús todos los días.",
+    "Espero el autobús todos los días.",
+    "Pago el autobús todos los días.",
+    "Conduzco el autobús todos los días."
    ],
-   "en": "We have breakfast at eight.",
+   "en": "I take the bus every day.",
    "aceitasEn": [
-    "we have breakfast at eight",
-    "we have breakfast at 8",
-    "we eat breakfast at eight",
-    "we have breakfast at eight oclock"
+    "i take the bus every day",
+    "i take the bus daily",
+    "i catch the bus every day",
+    "every day i take the bus"
    ],
    "distratoresEn": [
-    "We have lunch at eight.",
-    "We have dinner at eight.",
-    "We have a snack at eight.",
-    "We have a meeting at eight."
+    "I miss the bus every day.",
+    "I wait for the bus every day.",
+    "I pay for the bus every day.",
+    "I drive the bus every day."
    ],
    "nivel": "A1",
    "tags": [
     "comida",
     "cotidiano"
    ],
-   "nota": "O café da manhã é «le petit déjeuner», e também se toma: «prendre le petit déjeuner». O almoço é «le déjeuner»; o jantar, «le dîner».",
-   "notaEs": "El desayuno es «le petit déjeuner», el «pequeño almuerzo», y se toma con «prendre». El almuerzo es «le déjeuner»; la cena, «le dîner».",
-   "notaEn": "Breakfast is «le petit déjeuner», literally the little lunch, and you «take» it with «prendre». Lunch is «le déjeuner»; dinner, «le dîner».",
+   "nota": "«Prendre» é pegar, tomar: «prendre le bus», «prendre un thé». «Tous les jours» é todo dia; «tous» soa «touss» antes de «les».",
+   "notaEs": "«Prendre» es tomar, coger: «prendre le bus». «Tous les jours» es todos los días.",
+   "notaEn": "«Prendre» means to take: «prendre le bus». «Tous les jours» means every day.",
    "requerTodas": [
-    "fr-p011",
-    "fr-p156",
-    "fr-p126",
-    "fr-p129"
+    "fr-p011"
    ]
   },
   {
@@ -25812,60 +25797,56 @@
    "id": "fr-u157",
    "tipo": "frase",
    "requer": "fr-p196",
-   "fr": "Le film commence à huit heures.",
-   "pt": "O filme começa às oito.",
+   "fr": "Le cours commence lundi.",
+   "pt": "A aula começa na segunda.",
    "aceitas": [
-    "o filme comeca as oito",
-    "o filme comeca as oito horas",
-    "o filme comeca as 8",
-    "o filme comeca as 8 horas"
+    "a aula comeca na segunda",
+    "a aula comeca na segunda feira",
+    "a aula comeca segunda",
+    "o curso comeca na segunda"
    ],
    "distratores": [
-    "O filme termina às oito.",
-    "O filme recomeça às oito.",
-    "O filme para às oito.",
-    "O filme volta às oito."
+    "A aula termina na segunda.",
+    "A aula muda na segunda.",
+    "A aula para na segunda.",
+    "A aula acaba na segunda."
    ],
-   "es": "La película empieza a las ocho.",
+   "es": "La clase empieza el lunes.",
    "aceitasEs": [
-    "La película empieza a las ocho.",
-    "La película comienza a las ocho.",
-    "La peli empieza a las ocho."
+    "La clase empieza el lunes.",
+    "La clase comienza el lunes.",
+    "El curso empieza el lunes.",
+    "La clase empieza este lunes."
    ],
    "distratoresEs": [
-    "La película termina a las ocho.",
-    "La película se reanuda a las ocho.",
-    "La película para a las ocho.",
-    "La película vuelve a las ocho."
+    "La clase termina el lunes.",
+    "La clase cambia el lunes.",
+    "La clase para el lunes.",
+    "La clase acaba el lunes."
    ],
-   "en": "The movie starts at eight.",
+   "en": "The class starts on Monday.",
    "aceitasEn": [
-    "the movie starts at eight",
-    "the movie begins at eight",
-    "the film starts at eight",
-    "the film begins at eight",
-    "the movie starts at 8",
-    "the movie starts at eight oclock"
+    "the class starts on monday",
+    "the class begins on monday",
+    "the course starts on monday",
+    "the class starts monday"
    ],
    "distratoresEn": [
-    "The movie ends at eight.",
-    "The movie restarts at eight.",
-    "The movie stops at eight.",
-    "The movie comes back at eight."
+    "The class ends on Monday.",
+    "The class changes on Monday.",
+    "The class stops on Monday.",
+    "The class finishes on Monday."
    ],
    "nivel": "A1",
    "tags": [
     "cultura",
     "cotidiano"
    ],
-   "nota": "Começar é «commencer». Antes de «a» e «o», o «c» ganha cedilha para manter o som de «s»: «nous commençons», «je commençais».",
-   "notaEs": "Empezar es «commencer», primo de «comenzar». Delante de «a» y «o», la «c» lleva cedilla para seguir sonando como «s»: «nous commençons».",
-   "notaEn": "To start is «commencer», like commence. Before «a» and «o», the «c» takes a cedilla to keep its «s» sound: «nous commençons».",
+   "nota": "Começar é «commencer»; com «nous», «nous commençons», o «c» ganha cedilha. «Le cours» é a aula ou o curso. «Lundi», sem artigo, é na segunda.",
+   "notaEs": "Empezar es «commencer»; con «nous», «nous commençons», la «c» lleva cedilla. «Le cours» es la clase o el curso.",
+   "notaEn": "«Commencer» means to begin; with «nous», «nous commençons», the c takes a cedilla. «Le cours» is the class.",
    "requerTodas": [
-    "fr-p100",
-    "fr-p196",
-    "fr-p126",
-    "fr-p129"
+    "fr-p196"
    ]
   },
   {
@@ -26972,64 +26953,55 @@
    "id": "fr-u176",
    "tipo": "frase",
    "requer": "fr-p167",
-   "fr": "Mets ton manteau, il fait froid.",
-   "pt": "Põe o casaco, está frio.",
+   "fr": "Je mets la table.",
+   "pt": "Eu ponho a mesa.",
    "aceitas": [
-    "poe o casaco esta frio",
-    "coloca o casaco esta frio",
-    "poe o casaco que esta frio",
-    "veste o casaco esta frio",
-    "bota o casaco esta frio",
-    "ponha o casaco esta frio",
-    "poe seu casaco esta frio",
-    "coloca o casaco que ta frio",
-    "poe o casaco ta frio"
+    "eu ponho a mesa",
+    "ponho a mesa",
+    "eu arrumo a mesa",
+    "eu coloco a mesa"
    ],
    "distratores": [
-    "Põe o cachecol, está frio.",
-    "Põe o gorro, está frio.",
-    "Põe o suéter, está frio.",
-    "Põe o moletom, está frio."
+    "Eu limpo a mesa.",
+    "Eu cubro a mesa.",
+    "Eu pinto a mesa.",
+    "Eu movo a mesa."
    ],
-   "es": "Ponte el abrigo, hace frío.",
+   "es": "Pongo la mesa.",
    "aceitasEs": [
-    "Ponte el abrigo, hace frío.",
-    "Ponte el abrigo, que hace frío.",
-    "Ponte tu abrigo, hace frío."
+    "Pongo la mesa.",
+    "Yo pongo la mesa.",
+    "Preparo la mesa."
    ],
    "distratoresEs": [
-    "Ponte el gorro, hace frío.",
-    "Ponte el suéter, hace frío.",
-    "Ponte el chaleco, hace frío.",
-    "Ponte el pañuelo, hace frío."
+    "Limpio la mesa.",
+    "Cubro la mesa.",
+    "Pinto la mesa.",
+    "Muevo la mesa."
    ],
-   "en": "Put your coat on, it's cold.",
+   "en": "I set the table.",
    "aceitasEn": [
-    "put your coat on its cold",
-    "put on your coat its cold",
-    "put your coat on it is cold",
-    "wear your coat its cold",
-    "put your coat on its cold out"
+    "i set the table",
+    "i am setting the table",
+    "i lay the table",
+    "i put the table"
    ],
    "distratoresEn": [
-    "Put your hat on, it's cold.",
-    "Put your sweater on, it's cold.",
-    "Put your vest on, it's cold.",
-    "Put your scarf on, it's cold."
+    "I clean the table.",
+    "I cover the table.",
+    "I paint the table.",
+    "I move the table."
    ],
    "nivel": "A1",
    "tags": [
     "roupa",
     "natureza"
    ],
-   "nota": "Vestir uma roupa é «mettre»: «mets ton manteau». O frio do tempo é com «faire»: «il fait froid».",
-   "notaEs": "Ponerse una prenda es «mettre», sin pronombre: «mets ton manteau», ponte el abrigo. El frío del tiempo va con «faire»: «il fait froid».",
-   "notaEn": "To put on clothes is «mettre»: «mets ton manteau». Cold weather takes «faire»: «il fait froid».",
+   "nota": "«Mettre la table» é pôr a mesa. «Mettre» é pôr, colocar, e também vestir: «mettre un manteau». O plural: «je mets, tu mets, il met».",
+   "notaEs": "«Mettre la table» es poner la mesa. «Mettre» es poner y también ponerse una prenda: «mettre un manteau».",
+   "notaEn": "«Mettre la table» means to set the table. «Mettre» means to put, and also to put on clothes.",
    "requerTodas": [
-    "fr-p167",
-    "fr-p222",
-    "fr-p004",
-    "fr-p080"
+    "fr-p167"
    ]
   },
   {
@@ -28232,62 +28204,54 @@
    "id": "fr-u196",
    "tipo": "frase",
    "requer": "fr-p155",
-   "fr": "Il faut appeler un médecin.",
-   "pt": "Tem que chamar um médico.",
+   "fr": "Le médecin arrive dans cinq minutes.",
+   "pt": "O médico chega em cinco minutos.",
    "aceitas": [
-    "tem que chamar um medico",
-    "precisa chamar um medico",
-    "e preciso chamar um medico",
-    "temos que chamar um medico",
-    "a gente tem que chamar um medico",
-    "precisamos chamar um medico",
-    "tem que ligar para um medico",
-    "tem que chamar o medico"
+    "o medico chega em cinco minutos",
+    "o medico chega daqui a cinco minutos",
+    "o medico chega dentro de cinco minutos",
+    "o doutor chega em cinco minutos"
    ],
    "distratores": [
-    "Tem que chamar um advogado.",
-    "Tem que chamar um bombeiro.",
-    "Tem que chamar um técnico.",
-    "Tem que chamar um eletricista."
+    "O professor chega em cinco minutos.",
+    "O dentista chega em cinco minutos.",
+    "O vizinho chega em cinco minutos.",
+    "O motorista chega em cinco minutos."
    ],
-   "es": "Hay que llamar a un médico.",
+   "es": "El médico llega en cinco minutos.",
    "aceitasEs": [
-    "Hay que llamar a un médico.",
-    "Hay que llamar al médico.",
-    "Tenemos que llamar a un médico.",
-    "Hace falta llamar a un médico."
+    "El médico llega en cinco minutos.",
+    "El médico llegará en cinco minutos.",
+    "El doctor llega en cinco minutos.",
+    "El médico llega dentro de cinco minutos."
    ],
    "distratoresEs": [
-    "Hay que llamar a un abogado.",
-    "Hay que llamar a un bombero.",
-    "Hay que llamar a un técnico.",
-    "Hay que llamar a un electricista."
+    "El profesor llega en cinco minutos.",
+    "El dentista llega en cinco minutos.",
+    "El vecino llega en cinco minutos.",
+    "El conductor llega en cinco minutos."
    ],
-   "en": "We need to call a doctor.",
+   "en": "The doctor arrives in five minutes.",
    "aceitasEn": [
-    "we need to call a doctor",
-    "we have to call a doctor",
-    "someone needs to call a doctor",
-    "we need to get a doctor",
-    "we must call a doctor",
-    "we need to call the doctor"
+    "the doctor arrives in five minutes",
+    "the doctor will arrive in five minutes",
+    "the doctor is arriving in five minutes",
+    "the doctor is coming in five minutes"
    ],
    "distratoresEn": [
-    "We need to call a lawyer.",
-    "We need to call a firefighter.",
-    "We need to call a technician.",
-    "We need to call an electrician."
+    "The teacher arrives in five minutes.",
+    "The dentist arrives in five minutes.",
+    "The neighbor arrives in five minutes.",
+    "The driver arrives in five minutes."
    ],
    "nivel": "A1",
    "tags": [
     "saúde"
    ],
-   "nota": "Chamar alguém, e também telefonar, é «appeler»: «appeler un médecin», «je t'appelle demain». Com dois «p», e em «j'appelle» também dois «l».",
-   "notaEs": "Llamar a alguien, también por teléfono, es «appeler», sin «à»: «appeler un médecin», «je t'appelle demain». Con dos «p», y en «j'appelle» también dos «l».",
-   "notaEn": "To call, also on the phone, is «appeler»: «appeler un médecin», «je t'appelle demain». Two «p»s, and in «j'appelle» two «l»s as well.",
+   "nota": "«Dans cinq minutes» é daqui a cinco minutos: «dans» + tempo marca o futuro. «En cinq minutes» seria o tempo que leva para fazer algo.",
+   "notaEs": "«Dans cinq minutes» es dentro de cinco minutos: «dans» + tiempo marca el futuro.",
+   "notaEn": "«Dans cinq minutes» means in five minutes' time: «dans» + time marks the future.",
    "requerTodas": [
-    "fr-p122",
-    "fr-p229",
     "fr-p155"
    ]
   },
@@ -28786,56 +28750,55 @@
    "id": "fr-u205",
    "tipo": "frase",
    "requer": "fr-p183",
-   "fr": "J'aime voyager en avion.",
-   "pt": "Gosto de viajar de avião.",
+   "fr": "Nous voyageons en famille.",
+   "pt": "Nós viajamos em família.",
    "aceitas": [
-    "gosto de viajar de aviao",
-    "eu gosto de viajar de aviao",
-    "adoro viajar de aviao"
+    "nos viajamos em familia",
+    "viajamos em familia",
+    "a gente viaja em familia",
+    "nos viajamos com a familia"
    ],
    "distratores": [
-    "Gosto de viajar de trem.",
-    "Gosto de viajar de carro.",
-    "Gosto de viajar de ônibus.",
-    "Gosto de viajar de navio."
+    "Nós jantamos em família.",
+    "Nós trabalhamos em família.",
+    "Nós moramos em família.",
+    "Nós jogamos em família."
    ],
-   "es": "Me gusta viajar en avión.",
+   "es": "Viajamos en familia.",
    "aceitasEs": [
-    "Me gusta viajar en avión.",
-    "Me encanta viajar en avión."
+    "Viajamos en familia.",
+    "Nosotros viajamos en familia.",
+    "Viajamos con la familia.",
+    "Nosotros viajamos con nuestra familia."
    ],
    "distratoresEs": [
-    "Me gusta viajar en tren.",
-    "Me gusta viajar en coche.",
-    "Me gusta viajar en autobús.",
-    "Me gusta viajar en barco."
+    "Cenamos en familia.",
+    "Trabajamos en familia.",
+    "Vivimos en familia.",
+    "Jugamos en familia."
    ],
-   "en": "I like traveling by plane.",
+   "en": "We travel as a family.",
    "aceitasEn": [
-    "i like traveling by plane",
-    "i like to travel by plane",
-    "i love traveling by plane",
-    "i like travelling by plane",
-    "i like flying",
-    "i like to fly"
+    "we travel as a family",
+    "we travel with our family",
+    "we travel together as a family",
+    "we go on trips as a family"
    ],
    "distratoresEn": [
-    "I like traveling by train.",
-    "I like traveling by car.",
-    "I like traveling by bus.",
-    "I like traveling by boat."
+    "We have dinner as a family.",
+    "We work as a family.",
+    "We live as a family.",
+    "We play as a family."
    ],
    "nivel": "A1",
    "tags": [
     "viagem"
    ],
-   "nota": "De avião é «en avion», como «en train», «en voiture». A pé e de bicicleta são com «à»: «à pied», «à vélo».",
-   "notaEs": "En avión es «en avion», como «en train», «en voiture». A pie y en bici van con «à»: «à pied», «à vélo».",
-   "notaEn": "By plane is «en avion», like «en train», «en voiture». On foot and by bike take «à»: «à pied», «à vélo».",
+   "nota": "«Voyager» é viajar. Com «nous», o «g» ganha um «e» para manter o som: «nous voyageons». «En famille» é em família, sem artigo.",
+   "notaEs": "«Voyager» es viajar. Con «nous», la «g» lleva una «e» para mantener el sonido: «nous voyageons». «En famille» es en familia.",
+   "notaEn": "«Voyager» means to travel. With «nous» the g takes an e to keep its sound: «nous voyageons». «En famille» means as a family.",
    "requerTodas": [
-    "fr-p015",
-    "fr-p183",
-    "fr-p231"
+    "fr-p183"
    ]
   },
   {
@@ -29417,63 +29380,55 @@
    "id": "fr-u215",
    "tipo": "frase",
    "requer": "fr-p030",
-   "fr": "Il fait déjà nuit.",
-   "pt": "Já está de noite.",
+   "fr": "La nuit, la ville est calme.",
+   "pt": "À noite, a cidade é tranquila.",
    "aceitas": [
-    "ja esta de noite",
-    "ja e noite",
-    "ja escureceu",
-    "ja esta escuro",
-    "ja anoiteceu",
-    "ja ta de noite",
-    "ja ta escuro"
+    "a noite a cidade e tranquila",
+    "a noite a cidade e calma",
+    "de noite a cidade e tranquila",
+    "a noite a cidade fica tranquila"
    ],
    "distratores": [
-    "Já está de dia.",
-    "Já está frio.",
-    "Já está tarde.",
-    "Já está claro."
+    "De manhã, a cidade é tranquila.",
+    "À tarde, a cidade é tranquila.",
+    "No inverno, a cidade é tranquila.",
+    "No domingo, a cidade é tranquila."
    ],
-   "es": "Ya es de noche.",
+   "es": "De noche, la ciudad está tranquila.",
    "aceitasEs": [
-    "Ya es de noche.",
-    "Ya anocheció.",
-    "Ya está oscuro.",
-    "Ya oscureció.",
-    "Ya ha anochecido."
+    "De noche, la ciudad está tranquila.",
+    "Por la noche, la ciudad está tranquila.",
+    "De noche la ciudad es tranquila.",
+    "Por la noche la ciudad es tranquila."
    ],
    "distratoresEs": [
-    "Ya es de día.",
-    "Ya hace frío.",
-    "Ya es tarde.",
-    "Ya hay luz."
+    "Por la mañana, la ciudad está tranquila.",
+    "Por la tarde, la ciudad está tranquila.",
+    "En invierno, la ciudad está tranquila.",
+    "El domingo, la ciudad está tranquila."
    ],
-   "en": "It's already dark.",
+   "en": "At night, the city is quiet.",
    "aceitasEn": [
-    "its already dark",
-    "it is already dark",
-    "its dark already",
-    "it is already night",
-    "its already night",
-    "its already nighttime"
+    "at night the city is quiet",
+    "at night the city is calm",
+    "at night the city is peaceful",
+    "in the night the city is quiet"
    ],
    "distratoresEn": [
-    "It's already light.",
-    "It's already cold.",
-    "It's already late.",
-    "It's already hot."
+    "In the morning, the city is quiet.",
+    "In the afternoon, the city is quiet.",
+    "In winter, the city is quiet.",
+    "On Sunday, the city is quiet."
    ],
    "nivel": "A1",
    "tags": [
     "natureza",
     "cotidiano"
    ],
-   "nota": "Escurecer é com «faire»: «il fait nuit», já é noite; «il fait jour», já é dia. É o mesmo «faire» do tempo: «il fait froid».",
-   "notaEs": "Hacerse de noche va con «faire»: «il fait nuit», es de noche; «il fait jour», es de día. Es el mismo «faire» del tiempo: «il fait froid».",
-   "notaEn": "Darkness, like the weather, takes «faire»: «il fait nuit», it's dark; «il fait jour», it's light.",
+   "nota": "«La nuit» sozinho, no começo da frase, é à noite. «De nuit», com «de», é de noite; «il fait nuit» é já é noite.",
+   "notaEs": "«La nuit», al principio de la frase, es por la noche. «Il fait nuit» es ya es de noche.",
+   "notaEn": "«La nuit» at the start of a sentence means at night. «Il fait nuit» means it is dark outside.",
    "requerTodas": [
-    "fr-p004",
-    "fr-p050",
     "fr-p030"
    ]
   },
@@ -31285,63 +31240,56 @@
    "id": "fr-u245",
    "tipo": "frase",
    "requer": "fr-p007",
-   "fr": "Je voudrais un kilo de tomates.",
-   "pt": "Eu queria um quilo de tomate.",
+   "fr": "Il veut une glace.",
+   "pt": "Ele quer um sorvete.",
    "aceitas": [
-    "eu queria um quilo de tomate",
-    "queria um quilo de tomates",
-    "eu queria um quilo de tomates",
-    "quero um quilo de tomate",
-    "me ve um quilo de tomate",
-    "um quilo de tomate por favor",
-    "eu gostaria de um quilo de tomate"
+    "ele quer um sorvete",
+    "ele quer sorvete",
+    "ele deseja um sorvete",
+    "ele quer uma casquinha de sorvete"
    ],
    "distratores": [
-    "Eu queria um quilo de batata.",
-    "Eu queria um quilo de cebola.",
-    "Eu queria um quilo de cenoura.",
-    "Eu queria um quilo de laranja."
+    "Ele pede um sorvete.",
+    "Ele compra um sorvete.",
+    "Ele faz um sorvete.",
+    "Ele vende um sorvete."
    ],
-   "es": "Quería un kilo de tomates.",
+   "es": "Quiere un helado.",
    "aceitasEs": [
-    "Quería un kilo de tomates.",
-    "Quisiera un kilo de tomates.",
-    "¿Me da un kilo de tomates?",
-    "Un kilo de tomates, por favor.",
-    "Quería un kilo de jitomates."
+    "Quiere un helado.",
+    "Él quiere un helado.",
+    "Él quiere helado.",
+    "Quiere helado."
    ],
    "distratoresEs": [
-    "Quería un kilo de cebollas.",
-    "Quería un kilo de zanahorias.",
-    "Quería un kilo de naranjas.",
-    "Quería un kilo de manzanas."
+    "Pide un helado.",
+    "Compra un helado.",
+    "Hace un helado.",
+    "Vende un helado."
    ],
-   "en": "I'd like a kilo of tomatoes.",
+   "en": "He wants an ice cream.",
    "aceitasEn": [
-    "id like a kilo of tomatoes",
-    "i would like a kilo of tomatoes",
-    "can i have a kilo of tomatoes",
-    "a kilo of tomatoes please",
-    "id like one kilo of tomatoes"
+    "he wants an ice cream",
+    "he wants some ice cream",
+    "he wants an ice cream cone",
+    "he wants ice cream"
    ],
    "distratoresEn": [
-    "I'd like a kilo of onions.",
-    "I'd like a kilo of carrots.",
-    "I'd like a kilo of oranges.",
-    "I'd like a kilo of apples."
+    "He orders an ice cream.",
+    "He buys an ice cream.",
+    "He makes an ice cream.",
+    "He sells an ice cream."
    ],
    "nivel": "A1",
    "tags": [
     "compras",
     "comida"
    ],
-   "nota": "Na feira, pede-se com o condicional de «vouloir»: «je voudrais». Depois de quantidade, só «de», sem artigo: «un kilo de tomates».",
-   "notaEs": "En el mercado se pide con el condicional de «vouloir»: «je voudrais». Tras una cantidad, solo «de», sin artículo: «un kilo de tomates».",
-   "notaEn": "At a market, you order with the conditional of «vouloir»: «je voudrais». After a quantity, just «de», no article: «un kilo de tomates».",
+   "nota": "«Vouloir» é querer: «il veut», «je veux», «nous voulons». «Une glace» é o sorvete, e também o espelho grande ou o gelo da superfície.",
+   "notaEs": "«Vouloir» es querer: «il veut», «je veux», «nous voulons». «Une glace» es el helado.",
+   "notaEn": "«Vouloir» means to want: «il veut», «je veux», «nous voulons». «Une glace» is an ice cream.",
    "requerTodas": [
-    "fr-p007",
-    "fr-p259",
-    "fr-p260"
+    "fr-p007"
    ]
   },
   {
@@ -31702,62 +31650,56 @@
    "id": "fr-u252",
    "tipo": "frase",
    "requer": "fr-p040",
-   "fr": "Il fait beau, on va au parc ?",
-   "pt": "O tempo está bom, vamos ao parque?",
+   "fr": "Quel beau jardin !",
+   "pt": "Que jardim bonito!",
    "aceitas": [
-    "o tempo esta bom vamos ao parque",
-    "ta um dia bonito vamos ao parque",
-    "o tempo ta bom vamos no parque",
-    "esta um dia bonito vamos ao parque",
-    "o dia esta bonito vamos ao parque",
-    "o tempo esta bom vamos pro parque",
-    "o tempo esta bom vamos no parque"
+    "que jardim bonito",
+    "que belo jardim",
+    "que jardim lindo",
+    "que lindo jardim"
    ],
    "distratores": [
-    "O tempo está fresco, vamos ao parque?",
-    "O tempo está nublado, vamos ao parque?",
-    "O tempo está quente, vamos ao parque?",
-    "O tempo está frio, vamos ao parque?"
+    "Que jardim grande!",
+    "Que jardim velho!",
+    "Que jardim pequeno!",
+    "Que jardim feio!"
    ],
-   "es": "Hace buen tiempo, ¿vamos al parque?",
+   "es": "¡Qué bonito jardín!",
    "aceitasEs": [
-    "Hace buen tiempo, ¿vamos al parque?",
-    "Hace buen día, ¿vamos al parque?",
-    "Hace bueno, ¿vamos al parque?"
+    "¡Qué bonito jardín!",
+    "¡Qué jardín tan bonito!",
+    "¡Qué hermoso jardín!",
+    "¡Qué lindo jardín!"
    ],
    "distratoresEs": [
-    "Hace fresco, ¿vamos al parque?",
-    "Está nublado, ¿vamos al parque?",
-    "Hace calor, ¿vamos al parque?",
-    "Hace frío, ¿vamos al parque?"
+    "¡Qué jardín tan grande!",
+    "¡Qué jardín tan viejo!",
+    "¡Qué jardín tan pequeño!",
+    "¡Qué jardín tan feo!"
    ],
-   "en": "The weather's nice, shall we go to the park?",
+   "en": "What a beautiful garden!",
    "aceitasEn": [
-    "the weathers nice shall we go to the park",
-    "its nice out shall we go to the park",
-    "the weather is nice shall we go to the park",
-    "its a nice day shall we go to the park",
-    "its nice outside lets go to the park"
+    "what a beautiful garden",
+    "what a lovely garden",
+    "what a nice garden",
+    "what a pretty garden"
    ],
    "distratoresEn": [
-    "The weather's cool, shall we go to the park?",
-    "The weather's cloudy, shall we go to the park?",
-    "The weather's hot, shall we go to the park?",
-    "The weather's cold, shall we go to the park?"
+    "What a big garden!",
+    "What an old garden!",
+    "What a small garden!",
+    "What an ugly garden!"
    ],
    "nivel": "A1",
    "tags": [
     "natureza",
     "cidade"
    ],
-   "nota": "«Il fait beau» é o tempo bom; o ruim é «il fait mauvais». «On va au parc ?», com «on», é o vamos? da conversa.",
-   "notaEs": "«Il fait beau» es hace buen tiempo; el malo es «il fait mauvais». «On va au parc ?», con «on», es el ¿vamos? de la conversación.",
-   "notaEn": "«Il fait beau» is nice weather; bad weather is «il fait mauvais». «On va au parc ?», with «on», is the casual shall we.",
+   "nota": "«Beau» vem antes do substantivo: «un beau jardin»; antes de vogal vira «bel»: «un bel arbre». «Quel» é «que», na exclamação.",
+   "notaEs": "«Beau» va antes del sustantivo: «un beau jardin»; ante vocal es «bel». «Quel» es «qué» en exclamación.",
+   "notaEn": "«Beau» goes before the noun: «un beau jardin»; before a vowel it is «bel». «Quel» means what in an exclamation.",
    "requerTodas": [
-    "fr-p004",
-    "fr-p040",
-    "fr-p003",
-    "fr-p267"
+    "fr-p040"
    ]
   },
   {
@@ -39374,66 +39316,55 @@
    "id": "fr-u264",
    "tipo": "frase",
    "requer": "fr-p284",
-   "fr": "En hiver, il fait très froid ici.",
-   "aceitasFr": [
-    "Il fait très froid ici en hiver."
-   ],
-   "pt": "No inverno faz muito frio aqui.",
+   "fr": "L'hiver est ma saison préférée.",
+   "pt": "O inverno é a minha estação preferida.",
    "aceitas": [
-    "no inverno faz muito frio aqui",
-    "no inverno aqui faz muito frio",
-    "aqui faz muito frio no inverno",
-    "no inverno esta muito frio aqui",
-    "faz muito frio aqui no inverno",
-    "no inverno aqui e muito frio"
+    "o inverno e a minha estacao preferida",
+    "o inverno e a minha estacao favorita",
+    "o inverno e minha estacao preferida",
+    "o inverno e minha estacao favorita"
    ],
    "distratores": [
-    "No outono faz muito frio aqui.",
-    "No verão faz muito frio aqui.",
-    "No Natal faz muito frio aqui.",
-    "No fim do ano faz muito frio aqui."
+    "O verão é a minha estação preferida.",
+    "O outono é a minha estação preferida.",
+    "A primavera é a minha estação preferida.",
+    "A estação das chuvas é a minha estação preferida."
    ],
-   "es": "En invierno hace mucho frío aquí.",
+   "es": "El invierno es mi estación preferida.",
    "aceitasEs": [
-    "En invierno hace mucho frío aquí.",
-    "Aquí hace mucho frío en invierno.",
-    "En invierno aquí hace mucho frío.",
-    "Hace mucho frío aquí en invierno."
+    "El invierno es mi estación preferida.",
+    "El invierno es mi estación favorita.",
+    "El invierno es mi época preferida."
    ],
    "distratoresEs": [
-    "En otoño hace mucho frío aquí.",
-    "En verano hace mucho frío aquí.",
-    "En Navidad hace mucho frío aquí.",
-    "En primavera hace mucho frío aquí."
+    "El verano es mi estación preferida.",
+    "El otoño es mi estación preferida.",
+    "La primavera es mi estación preferida.",
+    "La estación de lluvias es mi estación preferida."
    ],
-   "en": "In winter it's very cold here.",
+   "en": "Winter is my favorite season.",
    "aceitasEn": [
-    "in winter its very cold here",
-    "its very cold here in winter",
-    "in the winter its very cold here",
-    "its very cold here in the winter",
-    "in winter it is very cold here"
+    "winter is my favorite season",
+    "winter is my favourite season",
+    "winter is my favorite time of year",
+    "winter is my preferred season"
    ],
    "distratoresEn": [
-    "In the fall it's very cold here.",
-    "In summer it's very cold here.",
-    "At Christmas it's very cold here.",
-    "In spring it's very cold here."
+    "Summer is my favorite season.",
+    "Autumn is my favorite season.",
+    "Spring is my favorite season.",
+    "The rainy season is my favorite season."
    ],
    "nivel": "A1",
    "tags": [
     "natureza",
     "cotidiano"
    ],
-   "nota": "As estações vão com «en»: «en hiver», «en été», «en automne»; só a primavera foge: «au printemps».",
-   "notaEs": "Las estaciones van con «en»: «en hiver», «en été», «en automne»; solo la primavera cambia: «au printemps».",
-   "notaEn": "Seasons take «en»: «en hiver», «en été», «en automne»; only spring is different: «au printemps».",
+   "nota": "«L'hiver» é o inverno, masculino, com apóstrofo antes da vogal. «Préféré» é preferido; também se diz «favori».",
+   "notaEs": "«L'hiver» es el invierno, masculino, con apóstrofo ante vocal. «Préféré» es preferido.",
+   "notaEn": "«L'hiver» is winter, masculine, with an apostrophe before the vowel. «Préféré» means favorite.",
    "requerTodas": [
-    "fr-p284",
-    "fr-p004",
-    "fr-p043",
-    "fr-p080",
-    "fr-p048"
+    "fr-p284"
    ]
   },
   {
@@ -40030,60 +39961,56 @@
    "id": "fr-u274",
    "tipo": "frase",
    "requer": "fr-p292",
-   "fr": "J'aime écouter de la musique.",
-   "pt": "Gosto de ouvir música.",
+   "fr": "J'écoute la radio le matin.",
+   "pt": "Eu escuto rádio de manhã.",
    "aceitas": [
-    "gosto de ouvir musica",
-    "eu gosto de ouvir musica",
-    "gosto de escutar musica",
-    "eu gosto de escutar musica",
-    "adoro ouvir musica",
-    "adoro escutar musica"
+    "eu escuto radio de manha",
+    "escuto radio de manha",
+    "eu escuto o radio de manha",
+    "eu ouco radio de manha"
    ],
    "distratores": [
-    "Gosto de tocar música.",
-    "Gosto de compor música.",
-    "Gosto de baixar música.",
-    "Gosto de estudar música."
+    "Eu vejo televisão de manhã.",
+    "Eu leio o jornal de manhã.",
+    "Eu faço ginástica de manhã.",
+    "Eu tomo café de manhã."
    ],
-   "es": "Me gusta escuchar música.",
+   "es": "Escucho la radio por la mañana.",
    "aceitasEs": [
-    "Me gusta escuchar música.",
-    "Me encanta escuchar música.",
-    "Me gusta oír música."
+    "Escucho la radio por la mañana.",
+    "Escucho la radio en la mañana.",
+    "Yo escucho la radio por la mañana.",
+    "Por la mañana escucho la radio."
    ],
    "distratoresEs": [
-    "Me gusta tocar música.",
-    "Me gusta componer música.",
-    "Me gusta descargar música.",
-    "Me gusta estudiar música."
+    "Veo la televisión por la mañana.",
+    "Leo el periódico por la mañana.",
+    "Hago ejercicio por la mañana.",
+    "Tomo café por la mañana."
    ],
-   "en": "I like listening to music.",
+   "en": "I listen to the radio in the morning.",
    "aceitasEn": [
-    "i like listening to music",
-    "i like to listen to music",
-    "i love listening to music",
-    "i enjoy listening to music",
-    "i love to listen to music"
+    "i listen to the radio in the morning",
+    "i listen to the radio every morning",
+    "i listen to radio in the morning",
+    "in the morning i listen to the radio"
    ],
    "distratoresEn": [
-    "I like playing music.",
-    "I like writing music.",
-    "I like downloading music.",
-    "I like studying music."
+    "I watch TV in the morning.",
+    "I read the newspaper in the morning.",
+    "I exercise in the morning.",
+    "I have coffee in the morning."
    ],
    "nivel": "A1",
    "tags": [
     "cultura",
     "cotidiano"
    ],
-   "nota": "«Écouter» é escutar, ouvir com atenção; ouvir um barulho sem querer é «entendre». Música, em quantidade indefinida, leva o partitivo: «de la musique».",
-   "notaEs": "«Écouter» es escuchar; oír un ruido sin querer es «entendre». La música, en cantidad indefinida, lleva el partitivo: «de la musique».",
-   "notaEn": "«Écouter» takes no preposition: «écouter de la musique», listen to music. To hear a sound is «entendre».",
+   "nota": "«Écouter» é escutar, com atenção, e leva objeto direto: «écouter la radio», sem preposição. O português diz «ouvir rádio».",
+   "notaEs": "«Écouter» es escuchar, y lleva complemento directo: «écouter la radio», sin preposición.",
+   "notaEn": "«Écouter» means to listen to, and takes a direct object: «écouter la radio», with no preposition.",
    "requerTodas": [
-    "fr-p015",
-    "fr-p292",
-    "fr-p305"
+    "fr-p292"
    ]
   },
   {
@@ -43788,53 +43715,45 @@
    "id": "fr-u334",
    "tipo": "frase",
    "requer": "fr-p254",
-   "fr": "Il faut réserver à l'avance.",
-   "pt": "É preciso reservar com antecedência.",
+   "fr": "Je paie à l'avance.",
+   "pt": "Pago com antecedência.",
    "aceitas": [
-    "e preciso reservar com antecedencia",
-    "tem que reservar com antecedencia",
-    "precisa reservar com antecedencia",
-    "tem que reservar antes",
-    "e preciso reservar antes",
-    "e necessario reservar com antecedencia",
-    "precisa reservar antes"
+    "pago com antecedencia",
+    "pago antecipado",
+    "eu pago com antecedencia",
+    "pago adiantado"
    ],
    "distratores": [
-    "É preciso reservar pela internet.",
-    "É preciso reservar por telefone.",
-    "É preciso reservar pessoalmente.",
-    "É preciso reservar na recepção."
+    "Pago à vista.",
+    "Pago no cartão.",
+    "Pago em dinheiro.",
+    "Pago em dez vezes."
    ],
-   "es": "Hay que reservar con antelación.",
+   "es": "Pago por adelantado.",
    "aceitasEs": [
-    "Hay que reservar con antelación.",
-    "Hay que reservar con anticipación.",
-    "Hay que reservar antes.",
-    "Es necesario reservar con antelación.",
-    "Hay que reservar por adelantado.",
-    "Hay que reservar con tiempo."
+    "Pago por adelantado.",
+    "Pago con antelación.",
+    "Pago por anticipado.",
+    "Yo pago por adelantado."
    ],
    "distratoresEs": [
-    "Hay que reservar por internet.",
-    "Hay que reservar por teléfono.",
-    "Hay que reservar en persona.",
-    "Hay que reservar en la recepción."
+    "Pago al contado.",
+    "Pago con tarjeta.",
+    "Pago en efectivo.",
+    "Pago en diez cuotas."
    ],
-   "en": "You have to book in advance.",
+   "en": "I pay in advance.",
    "aceitasEn": [
-    "you have to book in advance",
-    "you need to book in advance",
-    "you must book in advance",
-    "you have to reserve in advance",
-    "you need to reserve in advance",
-    "you have to book ahead",
-    "you need to book ahead"
+    "i pay in advance",
+    "i pay ahead of time",
+    "i pay up front",
+    "i pay beforehand"
    ],
    "distratoresEn": [
-    "You have to book online.",
-    "You have to book by phone.",
-    "You have to book in person.",
-    "You have to book at the front desk."
+    "I pay in cash.",
+    "I pay by card.",
+    "I pay in full.",
+    "I pay in installments."
    ],
    "nivel": "A1",
    "tags": [
@@ -43842,11 +43761,9 @@
     "comida"
    ],
    "nota": "«À l'avance» é com antecedência; «en avance» é adiantado, antes da hora. O contrário de «en avance» é «en retard».",
-   "notaEs": "«À l'avance» es con antelación; «en avance» es adelantado, antes de la hora. Lo contrario de «en avance» es «en retard».",
-   "notaEn": "«À l'avance» means in advance; «en avance» means early. The opposite of «en avance» is «en retard», late.",
+   "notaEs": "«À l'avance» es por adelantado; «en avance» es adelantado, antes de la hora.",
+   "notaEn": "«À l'avance» means in advance; «en avance» means early, ahead of time.",
    "requerTodas": [
-    "fr-p122",
-    "fr-p174",
     "fr-p254"
    ]
   },
@@ -43916,60 +43833,54 @@
    "id": "fr-u336",
    "tipo": "frase",
    "requer": "fr-p261",
-   "fr": "La réunion commence à dix heures.",
-   "pt": "A reunião começa às dez.",
+   "fr": "J'ai une réunion avec le directeur.",
+   "pt": "Tenho uma reunião com o diretor.",
    "aceitas": [
-    "a reuniao comeca as dez",
-    "a reuniao comeca as dez horas",
-    "a reuniao e as dez",
-    "a reuniao comeca as 10",
-    "a reuniao e as dez horas"
+    "tenho uma reuniao com o diretor",
+    "eu tenho uma reuniao com o diretor",
+    "tenho reuniao com o diretor",
+    "tenho uma reuniao com o gerente"
    ],
    "distratores": [
-    "A aula começa às dez.",
-    "A palestra começa às dez.",
-    "A prova começa às dez.",
-    "A consulta começa às dez."
+    "Tenho uma reunião com o médico.",
+    "Tenho uma reunião com o professor.",
+    "Tenho uma reunião com o advogado.",
+    "Tenho uma reunião com o cliente."
    ],
-   "es": "La reunión empieza a las diez.",
+   "es": "Tengo una reunión con el director.",
    "aceitasEs": [
-    "La reunión empieza a las diez.",
-    "La reunión comienza a las diez.",
-    "La reunión es a las diez.",
-    "La reunión empieza a las diez en punto."
+    "Tengo una reunión con el director.",
+    "Tengo reunión con el director.",
+    "Tengo una reunión con el gerente."
    ],
    "distratoresEs": [
-    "La clase empieza a las diez.",
-    "La charla empieza a las diez.",
-    "La consulta empieza a las diez.",
-    "La función empieza a las diez."
+    "Tengo una reunión con el médico.",
+    "Tengo una reunión con el profesor.",
+    "Tengo una reunión con el abogado.",
+    "Tengo una reunión con el cliente."
    ],
-   "en": "The meeting starts at ten.",
+   "en": "I have a meeting with the director.",
    "aceitasEn": [
-    "the meeting starts at ten",
-    "the meeting begins at ten",
-    "the meeting starts at ten oclock",
-    "the meeting is at ten",
-    "the meetings at ten"
+    "i have a meeting with the director",
+    "i have a meeting with the manager",
+    "i have a meeting with the principal",
+    "ive got a meeting with the director"
    ],
    "distratoresEn": [
-    "The class starts at ten.",
-    "The talk starts at ten.",
-    "The exam starts at ten.",
-    "The appointment starts at ten."
+    "I have a meeting with the doctor.",
+    "I have a meeting with the teacher.",
+    "I have a meeting with the lawyer.",
+    "I have a meeting with the client."
    ],
    "nivel": "A1",
    "tags": [
     "trabalho"
    ],
-   "nota": "Na hora, o francês diz sempre «heures»: «à dix heures», às dez. «La réunion» é a reunião de trabalho.",
-   "notaEs": "Para la hora, el francés dice siempre «heures»: «à dix heures», a las diez.",
-   "notaEn": "French always says «heures» with the time: «à dix heures», at ten. «La réunion» is a meeting, not a reunion.",
+   "nota": "«La réunion» é a reunião de trabalho. «Le directeur» é o diretor, e o feminino é «la directrice».",
+   "notaEs": "«La réunion» es la reunión de trabajo. «Le directeur» es el director; el femenino es «la directrice».",
+   "notaEn": "«La réunion» is a work meeting. «Le directeur» is the director; the feminine is «la directrice».",
    "requerTodas": [
-    "fr-p261",
-    "fr-p196",
-    "fr-p121",
-    "fr-p129"
+    "fr-p261"
    ]
   },
   {
@@ -46373,58 +46284,54 @@
    "id": "fr-u375",
    "tipo": "frase",
    "requer": "fr-p030",
-   "fr": "Je voudrais une chambre pour deux nuits.",
-   "pt": "Eu queria um quarto para duas noites.",
+   "fr": "Il pleut toute la nuit.",
+   "pt": "Chove a noite toda.",
    "aceitas": [
-    "eu queria um quarto para duas noites",
-    "queria um quarto para duas noites",
-    "gostaria de um quarto para duas noites",
-    "quero um quarto para duas noites",
-    "eu gostaria de um quarto para duas noites",
-    "queria um quarto pra duas noites"
+    "chove a noite toda",
+    "chove a noite inteira",
+    "chove toda a noite",
+    "esta chovendo a noite toda"
    ],
    "distratores": [
-    "Eu queria um quarto para duas semanas.",
-    "Eu queria um quarto para duas pessoas.",
-    "Eu queria um quarto com duas camas.",
-    "Eu queria um quarto por duas horas."
+    "Chove o dia todo.",
+    "Chove a semana toda.",
+    "Chove a manhã toda.",
+    "Chove o mês todo."
    ],
-   "es": "Quisiera una habitación para dos noches.",
+   "es": "Llueve toda la noche.",
    "aceitasEs": [
-    "Quisiera una habitación para dos noches.",
-    "Quiero una habitación para dos noches.",
-    "Querría una habitación para dos noches.",
-    "Me gustaría una habitación para dos noches."
+    "Llueve toda la noche.",
+    "Llueve la noche entera.",
+    "Llueve durante toda la noche.",
+    "Está lloviendo toda la noche."
    ],
    "distratoresEs": [
-    "Quisiera una habitación para dos semanas.",
-    "Quisiera una habitación para dos personas.",
-    "Quisiera una habitación con dos camas.",
-    "Quisiera una habitación por dos horas."
+    "Llueve todo el día.",
+    "Llueve toda la semana.",
+    "Llueve toda la mañana.",
+    "Llueve todo el mes."
    ],
-   "en": "I'd like a room for two nights.",
+   "en": "It rains all night long.",
    "aceitasEn": [
-    "id like a room for two nights",
-    "i would like a room for two nights",
-    "id like a room for 2 nights"
+    "it rains all night long",
+    "it rains all night",
+    "it rains the whole night",
+    "it is raining all night"
    ],
    "distratoresEn": [
-    "I'd like a room for two weeks.",
-    "I'd like a room for two people.",
-    "I'd like a room with two beds.",
-    "I'd like a room for two hours."
+    "It rains all day long.",
+    "It rains all week long.",
+    "It rains all morning.",
+    "It rains all month long."
    ],
    "nivel": "A1",
    "tags": [
     "viagem"
    ],
-   "nota": "«Je voudrais», condicional de «vouloir», é o pedido educado. No hotel, o quarto é «la chambre».",
-   "notaEs": "«Je voudrais», condicional de «vouloir», es la forma cortés de pedir. En el hotel, la habitación es «la chambre».",
-   "notaEn": "«Je voudrais», the conditional of «vouloir», is the polite way to ask. A hotel room is «la chambre».",
+   "nota": "«Toute la nuit» é a noite toda: «tout» concorda com o substantivo, «tout le jour», «toute la nuit». «Il pleut» é chove.",
+   "notaEs": "«Toute la nuit» es toda la noche: «tout» concuerda con el sustantivo, «tout le jour», «toute la nuit».",
+   "notaEn": "«Toute la nuit» means all night: «tout» agrees with the noun, «tout le jour», «toute la nuit».",
    "requerTodas": [
-    "fr-p007",
-    "fr-p107",
-    "fr-p120",
     "fr-p030"
    ]
   },
@@ -46433,57 +46340,52 @@
    "id": "fr-u376",
    "tipo": "frase",
    "requer": "fr-p151",
-   "fr": "J'ai mal à la gorge.",
-   "pt": "Estou com dor de garganta.",
+   "fr": "Ce sirop est bon pour la gorge.",
+   "pt": "Este xarope é bom para a garganta.",
    "aceitas": [
-    "estou com dor de garganta",
-    "tenho dor de garganta",
-    "minha garganta esta doendo",
-    "to com dor de garganta",
-    "estou com a garganta doendo",
-    "a garganta esta doendo",
-    "minha garganta ta doendo"
+    "este xarope e bom para a garganta",
+    "esse xarope e bom para a garganta",
+    "este xarope faz bem a garganta",
+    "esse xarope faz bem para a garganta"
    ],
    "distratores": [
-    "Estou com dor de dente.",
-    "Estou com dor de ouvido.",
-    "Estou com dor de barriga.",
-    "Estou com dor de estômago."
+    "Este xarope é bom para a tosse.",
+    "Este xarope é bom para a gripe.",
+    "Este xarope é bom para a cabeça.",
+    "Este xarope é bom para a barriga."
    ],
-   "es": "Me duele la garganta.",
+   "es": "Este jarabe es bueno para la garganta.",
    "aceitasEs": [
-    "Me duele la garganta.",
-    "Tengo dolor de garganta."
+    "Este jarabe es bueno para la garganta.",
+    "Este jarabe le hace bien a la garganta."
    ],
    "distratoresEs": [
-    "Me duele la muela.",
-    "Me duele la oreja.",
-    "Me duele la barriga.",
-    "Me duele la rodilla."
+    "Este jarabe es bueno para la tos.",
+    "Este jarabe es bueno para la gripe.",
+    "Este jarabe es bueno para la cabeza.",
+    "Este jarabe es bueno para la barriga."
    ],
-   "en": "I have a sore throat.",
+   "en": "This syrup is good for the throat.",
    "aceitasEn": [
-    "i have a sore throat",
-    "my throat hurts",
-    "ive got a sore throat",
-    "my throat is sore"
+    "this syrup is good for the throat",
+    "this syrup is good for your throat",
+    "this syrup is good for a sore throat"
    ],
    "distratoresEn": [
-    "I have a toothache.",
-    "I have an earache.",
-    "I have a stomachache.",
-    "I have a sore knee."
+    "This syrup is good for a cough.",
+    "This syrup is good for the flu.",
+    "This syrup is good for the head.",
+    "This syrup is good for the stomach."
    ],
    "nivel": "A1",
    "tags": [
     "saúde",
     "corpo"
    ],
-   "nota": "A dor se tem com «à»: «j'ai mal à la gorge», «j'ai mal au ventre». «La gorge» é a garganta.",
-   "notaEs": "El dolor se tiene con «à»: «j'ai mal à la gorge», me duele la garganta.",
-   "notaEn": "Pain takes «avoir mal à»: «j'ai mal à la gorge», I have a sore throat; «j'ai mal au ventre», I have a stomachache.",
+   "nota": "«La gorge» é a garganta. «Bon pour» + o que se cura: «bon pour la gorge», bom para a garganta; «bon pour la toux», para a tosse.",
+   "notaEs": "«La gorge» es la garganta. «Bon pour» + lo que se cura: «bon pour la gorge», bueno para la garganta.",
+   "notaEn": "«La gorge» is the throat. «Bon pour» + what it helps: «bon pour la gorge», good for the throat.",
    "requerTodas": [
-    "fr-p002",
     "fr-p151",
     "fr-p336"
    ]
@@ -53307,59 +53209,53 @@
    "id": "fr-u386",
    "tipo": "frase",
    "requer": "fr-p345",
-   "fr": "Il fait noir ici.",
-   "pt": "Está escuro aqui.",
+   "fr": "Mon chat est noir.",
+   "pt": "Meu gato é preto.",
    "aceitas": [
-    "esta escuro aqui",
-    "ta escuro aqui",
-    "aqui esta escuro",
-    "aqui ta escuro",
-    "esta escuro aqui dentro"
+    "meu gato e preto",
+    "o meu gato e preto",
+    "meu gato e negro"
    ],
    "distratores": [
-    "Está frio aqui.",
-    "Está quente aqui.",
-    "Está úmido aqui.",
-    "Está abafado aqui."
+    "Meu gato é branco.",
+    "Meu gato é cinza.",
+    "Meu gato é laranja.",
+    "Meu gato é marrom."
    ],
-   "es": "Está oscuro aquí.",
+   "es": "Mi gato es negro.",
    "aceitasEs": [
-    "Está oscuro aquí.",
-    "Aquí está oscuro.",
-    "Está oscuro acá.",
-    "Acá está oscuro."
+    "Mi gato es negro.",
+    "Mi gato es de color negro.",
+    "Mi gato es todo negro."
    ],
    "distratoresEs": [
-    "Hace frío aquí.",
-    "Hace calor aquí.",
-    "Está húmedo aquí.",
-    "Está cargado aquí."
+    "Mi gato es blanco.",
+    "Mi gato es gris.",
+    "Mi gato es naranja.",
+    "Mi gato es marrón."
    ],
-   "en": "It's dark in here.",
+   "en": "My cat is black.",
    "aceitasEn": [
-    "its dark in here",
-    "its dark here",
-    "it is dark in here",
-    "it is dark here"
+    "my cat is black",
+    "my cat is all black",
+    "my cat is a black cat"
    ],
    "distratoresEn": [
-    "It's cold in here.",
-    "It's hot in here.",
-    "It's humid in here.",
-    "It's stuffy in here."
+    "My cat is white.",
+    "My cat is gray.",
+    "My cat is orange.",
+    "My cat is brown."
    ],
    "nivel": "A1",
    "tags": [
     "casa",
     "cotidiano"
    ],
-   "nota": "«Noir» também é escuro: «il fait noir», está escuro, como «il fait froid», está frio. A luz e o tempo vão com «il fait».",
-   "notaEs": "«Noir» también es oscuro: «il fait noir», está oscuro, igual que «il fait froid», hace frío. La luz y el tiempo van con «il fait».",
-   "notaEn": "«Noir» also means dark: «il fait noir», it's dark, just like «il fait froid», it's cold. Light and weather take «il fait».",
+   "nota": "As cores vêm depois do substantivo e concordam: «un chat noir», «une chatte noire». «Mon» é masculino, porque «chat» é masculino.",
+   "notaEs": "Los colores van después del sustantivo y concuerdan: «un chat noir», «une chatte noire».",
+   "notaEn": "Colors come after the noun and agree: «un chat noir», «une chatte noire».",
    "requerTodas": [
-    "fr-p004",
-    "fr-p345",
-    "fr-p048"
+    "fr-p345"
    ]
   },
   {
@@ -53481,55 +53377,51 @@
    "id": "fr-u389",
    "tipo": "frase",
    "requer": "fr-p347",
-   "fr": "J'aime le thé vert.",
-   "pt": "Gosto de chá verde.",
+   "fr": "Les feuilles sont vertes.",
+   "pt": "As folhas são verdes.",
    "aceitas": [
-    "gosto de cha verde",
-    "eu gosto de cha verde",
-    "adoro cha verde",
-    "eu adoro cha verde",
-    "gosto muito de cha verde"
+    "as folhas sao verdes",
+    "as folhas estao verdes",
+    "as folhas ficam verdes"
    ],
    "distratores": [
-    "Gosto de chá preto.",
-    "Gosto de chá branco.",
-    "Gosto de chá gelado.",
-    "Gosto de chá doce."
+    "As folhas são amarelas.",
+    "As folhas são secas.",
+    "As folhas são grandes.",
+    "As folhas são macias."
    ],
-   "es": "Me gusta el té verde.",
+   "es": "Las hojas son verdes.",
    "aceitasEs": [
-    "Me gusta el té verde.",
-    "Me encanta el té verde.",
-    "A mí me gusta el té verde."
+    "Las hojas son verdes.",
+    "Las hojas están verdes.",
+    "Las hojas son de color verde."
    ],
    "distratoresEs": [
-    "Me gusta el té negro.",
-    "Me gusta el té blanco.",
-    "Me gusta el té helado.",
-    "Me gusta el té dulce."
+    "Las hojas son amarillas.",
+    "Las hojas son secas.",
+    "Las hojas son grandes.",
+    "Las hojas son suaves."
    ],
-   "en": "I like green tea.",
+   "en": "The leaves are green.",
    "aceitasEn": [
-    "i like green tea",
-    "i love green tea",
-    "i really like green tea"
+    "the leaves are green",
+    "the leaves are all green",
+    "leaves are green"
    ],
    "distratoresEn": [
-    "I like black tea.",
-    "I like white tea.",
-    "I like iced tea.",
-    "I like sweet tea."
+    "The leaves are yellow.",
+    "The leaves are dry.",
+    "The leaves are big.",
+    "The leaves are soft."
    ],
    "nivel": "A1",
    "tags": [
     "comida"
    ],
-   "nota": "Com «aimer», o francês usa o artigo, que o português não põe: «j'aime le thé». A cor vem depois: «le thé vert».",
-   "notaEs": "Con «aimer», el francés usa el artículo, como «me gusta el té»: «j'aime le thé vert». El color va detrás.",
-   "notaEn": "With «aimer», French keeps the article where English drops it: «j'aime le thé vert», I like green tea.",
+   "nota": "«Vert» é verde e concorda: «vert», «verte», «verts», «vertes». «La feuille» é a folha da planta e a folha de papel.",
+   "notaEs": "«Vert» es verde y concuerda: «vert», «verte», «verts», «vertes». «La feuille» es la hoja de planta y de papel.",
+   "notaEn": "«Vert» means green and agrees: «vert», «verte», «verts», «vertes». «La feuille» is a leaf and a sheet of paper.",
    "requerTodas": [
-    "fr-p015",
-    "fr-p242",
     "fr-p347"
    ]
   },
@@ -54265,61 +54157,54 @@
    "id": "fr-u402",
    "tipo": "frase",
    "requer": "fr-p360",
-   "fr": "J'ai mal à la jambe.",
-   "pt": "Estou com dor na perna.",
+   "fr": "Il s'est cassé la jambe.",
+   "pt": "Ele quebrou a perna.",
    "aceitas": [
-    "estou com dor na perna",
-    "to com dor na perna",
-    "minha perna esta doendo",
-    "minha perna ta doendo",
-    "minha perna doi",
-    "estou sentindo dor na perna",
-    "doi a perna"
+    "ele quebrou a perna",
+    "ele fraturou a perna",
+    "ele quebrou a propria perna"
    ],
    "distratores": [
-    "Estou com dor na mão.",
-    "Estou com dor na barriga.",
-    "Estou com dor na coxa.",
-    "Estou com dor na orelha."
+    "Ele quebrou o braço.",
+    "Ele quebrou o dedo.",
+    "Ele quebrou o pé.",
+    "Ele quebrou o nariz."
    ],
-   "es": "Me duele la pierna.",
+   "es": "Se rompió la pierna.",
    "aceitasEs": [
-    "Me duele la pierna.",
-    "Tengo dolor en la pierna.",
-    "Tengo dolor de pierna."
+    "Se rompió la pierna.",
+    "Se ha roto la pierna.",
+    "Se fracturó la pierna.",
+    "Él se rompió la pierna."
    ],
    "distratoresEs": [
-    "Me duele la mano.",
-    "Me duele la rodilla.",
-    "Me duele la espalda.",
-    "Me duele la cadera."
+    "Se rompió el brazo.",
+    "Se rompió el dedo.",
+    "Se rompió el pie.",
+    "Se rompió la nariz."
    ],
-   "en": "My leg hurts.",
+   "en": "He broke his leg.",
    "aceitasEn": [
-    "my leg hurts",
-    "my leg is hurting",
-    "my leg aches",
-    "i have a pain in my leg",
-    "ive got a pain in my leg",
-    "i have a sore leg"
+    "he broke his leg",
+    "he has broken his leg",
+    "he fractured his leg",
+    "he broke the leg"
    ],
    "distratoresEn": [
-    "My hand hurts.",
-    "My knee hurts.",
-    "My back hurts.",
-    "My hip hurts."
+    "He broke his arm.",
+    "He broke his finger.",
+    "He broke his foot.",
+    "He broke his nose."
    ],
    "nivel": "A1",
    "tags": [
     "corpo",
     "saúde"
    ],
-   "nota": "A dor vem com «avoir mal à» e o artigo, não o possessivo: «à la jambe», «au dos», «aux dents». O presunto, «le jambon», vem da mesma palavra.",
-   "notaEs": "El dolor va con «avoir mal à» y el artículo: «à la jambe», «au dos», «aux dents». El jamón, «le jambon», viene de la misma palabra.",
-   "notaEn": "Pain is «avoir mal à» + the body part, with «la», not «my»: «j'ai mal à la jambe». Ham, «le jambon», comes from the same word.",
+   "nota": "Quem quebra o próprio corpo usa «se casser» + o artigo, não o possessivo: «il s'est cassé la jambe». O presunto, «le jambon», vem da mesma palavra.",
+   "notaEs": "Quien se rompe una parte del cuerpo usa «se casser» + artículo, no posesivo: «il s'est cassé la jambe».",
+   "notaEn": "For a body part, French uses «se casser» + the article, not a possessive: «il s'est cassé la jambe».",
    "requerTodas": [
-    "fr-p002",
-    "fr-p151",
     "fr-p360"
    ]
   },
@@ -54388,63 +54273,53 @@
    "id": "fr-u404",
    "tipo": "frase",
    "requer": "fr-p362",
-   "fr": "J'ai mal aux dents.",
-   "pt": "Estou com dor de dente.",
+   "fr": "Il se brosse les dents deux fois par jour.",
+   "pt": "Ele escova os dentes duas vezes por dia.",
    "aceitas": [
-    "estou com dor de dente",
-    "to com dor de dente",
-    "estou com dor nos dentes",
-    "estou com dor de dentes",
-    "meus dentes estao doendo",
-    "meu dente esta doendo",
-    "meu dente doi"
+    "ele escova os dentes duas vezes por dia",
+    "ele escova os dentes duas vezes ao dia",
+    "ele escova os dentes duas vezes no dia",
+    "ele limpa os dentes duas vezes por dia"
    ],
    "distratores": [
-    "Estou com dor de ouvido.",
-    "Estou com dor de barriga.",
-    "Estou com dor no joelho.",
-    "Estou com dor no ombro."
+    "Ele lava as mãos duas vezes por dia.",
+    "Ele escova o cabelo duas vezes por dia.",
+    "Ele corta as unhas duas vezes por dia.",
+    "Ele lava o rosto duas vezes por dia."
    ],
-   "es": "Me duelen las muelas.",
+   "es": "Se cepilla los dientes dos veces al día.",
    "aceitasEs": [
-    "Me duelen las muelas.",
-    "Me duelen los dientes.",
-    "Tengo dolor de muelas.",
-    "Tengo dolor de dientes.",
-    "Tengo dolor de muela."
+    "Se cepilla los dientes dos veces al día.",
+    "Se lava los dientes dos veces al día.",
+    "Él se cepilla los dientes dos veces al día."
    ],
    "distratoresEs": [
-    "Me duelen los oídos.",
-    "Me duelen los ojos.",
-    "Me duelen las rodillas.",
-    "Me duelen los hombros."
+    "Se lava las manos dos veces al día.",
+    "Se cepilla el pelo dos veces al día.",
+    "Se corta las uñas dos veces al día.",
+    "Se lava la cara dos veces al día."
    ],
-   "en": "My teeth hurt.",
+   "en": "He brushes his teeth twice a day.",
    "aceitasEn": [
-    "my teeth hurt",
-    "i have a toothache",
-    "ive got a toothache",
-    "i have toothache",
-    "my tooth hurts",
-    "my teeth are hurting"
+    "he brushes his teeth twice a day",
+    "he brushes his teeth two times a day",
+    "he brushes his teeth twice daily"
    ],
    "distratoresEn": [
-    "My ears hurt.",
-    "My eyes hurt.",
-    "My knees hurt.",
-    "My shoulders hurt."
+    "He washes his hands twice a day.",
+    "He brushes his hair twice a day.",
+    "He cuts his nails twice a day.",
+    "He washes his face twice a day."
    ],
    "nivel": "A1",
    "tags": [
     "corpo",
     "saúde"
    ],
-   "nota": "«Aux» é «à» + «les»: «j'ai mal aux dents». «La dent» é feminino, ao contrário de dente.",
-   "notaEs": "«Aux» es «à» + «les»: «j'ai mal aux dents». «La dent» es femenino, al revés que «el diente».",
-   "notaEn": "«Aux» is «à» + «les»: «j'ai mal aux dents», literally I have pain at the teeth.",
+   "nota": "Com o pronome «se», o verbo é reflexivo: «il se brosse les dents». O artigo vale pelo possessivo: «les dents», e não «ses dents». «La dent» é feminino.",
+   "notaEs": "Con «se», el verbo es reflexivo: «il se brosse les dents». El artículo vale por el posesivo: «les dents», no «ses dents».",
+   "notaEn": "With «se» the verb is reflexive: «il se brosse les dents». The article stands for the possessive: «les dents», not «ses dents».",
    "requerTodas": [
-    "fr-p002",
-    "fr-p151",
     "fr-p362"
    ]
   },
@@ -55010,63 +54885,54 @@
    "id": "fr-u414",
    "tipo": "frase",
    "requer": "fr-p369",
-   "fr": "Il fait mauvais aujourd'hui.",
-   "pt": "Hoje o tempo está ruim.",
+   "fr": "Ce film est mauvais.",
+   "pt": "Este filme é ruim.",
    "aceitas": [
-    "hoje o tempo esta ruim",
-    "o tempo esta ruim hoje",
-    "hoje o tempo ta ruim",
-    "hoje esta fazendo tempo ruim",
-    "hoje o tempo esta feio",
-    "o tempo esta feio hoje",
-    "hoje o tempo nao esta bom"
+    "este filme e ruim",
+    "esse filme e ruim",
+    "este filme e mau",
+    "este filme e pessimo"
    ],
    "distratores": [
-    "Hoje o tempo está seco.",
-    "Hoje o tempo está abafado.",
-    "Hoje o tempo está frio.",
-    "Hoje o tempo está quente."
+    "Este filme é bom.",
+    "Este filme é longo.",
+    "Este filme é antigo.",
+    "Este filme é curto."
    ],
-   "es": "Hoy hace mal tiempo.",
+   "es": "Esta película es mala.",
    "aceitasEs": [
-    "Hoy hace mal tiempo.",
-    "Hace mal tiempo hoy.",
-    "Hoy el tiempo está feo.",
-    "Hoy está feo el tiempo."
+    "Esta película es mala.",
+    "Esta película es muy mala.",
+    "Este filme es malo."
    ],
    "distratoresEs": [
-    "Hoy hace un tiempo seco.",
-    "Hoy hace un tiempo bochornoso.",
-    "Hoy hace un tiempo frío.",
-    "Hoy hace un tiempo caluroso."
+    "Esta película es buena.",
+    "Esta película es larga.",
+    "Esta película es antigua.",
+    "Esta película es corta."
    ],
-   "en": "The weather is bad today.",
+   "en": "This movie is bad.",
    "aceitasEn": [
-    "the weather is bad today",
-    "the weathers bad today",
-    "today the weather is bad",
-    "its bad weather today",
-    "the weather is awful today",
-    "the weather is not good today",
-    "the weather isnt good today"
+    "this movie is bad",
+    "this film is bad",
+    "this movie is terrible",
+    "this movie is awful"
    ],
    "distratoresEn": [
-    "The weather is dry today.",
-    "The weather is muggy today.",
-    "The weather is cold today.",
-    "The weather is hot today."
+    "This movie is good.",
+    "This movie is long.",
+    "This movie is old.",
+    "This movie is short."
    ],
    "nivel": "A1",
    "tags": [
     "natureza"
    ],
-   "nota": "«Il fait mauvais», o tempo está ruim; o contrário é «il fait beau». O tempo vai sempre com «il fait».",
-   "notaEs": "«Il fait mauvais», hace mal tiempo; lo contrario es «il fait beau». Como en español, el tiempo va con «hacer».",
-   "notaEn": "«Il fait mauvais», the weather's bad; the opposite is «il fait beau». Weather takes «il fait».",
+   "nota": "«Mauvais» é ruim, e o feminino é «mauvaise». O contrário é «bon». «Ce» é este ou esse, antes de substantivo masculino.",
+   "notaEs": "«Mauvais» es malo; el femenino es «mauvaise». Lo contrario es «bon».",
+   "notaEn": "«Mauvais» means bad; the feminine is «mauvaise». The opposite is «bon».",
    "requerTodas": [
-    "fr-p004",
-    "fr-p369",
-    "fr-p049"
+    "fr-p369"
    ]
   },
   {
@@ -56437,62 +56303,52 @@
    "id": "fr-u437",
    "tipo": "frase",
    "requer": "fr-p303",
-   "fr": "Il fait frais ce soir.",
-   "pt": "Está fresquinho hoje à noite.",
+   "fr": "Le lait est frais.",
+   "pt": "O leite está fresco.",
    "aceitas": [
-    "esta fresquinho hoje a noite",
-    "ta fresquinho hoje a noite",
-    "esta fresco hoje a noite",
-    "esta friozinho hoje a noite",
-    "esta fazendo fresco hoje a noite",
-    "hoje a noite esta fresquinho",
-    "esta fresquinho esta noite"
+    "o leite esta fresco",
+    "o leite e fresco",
+    "o leite esta fresquinho"
    ],
    "distratores": [
-    "Está quente hoje à noite.",
-    "Está abafado hoje à noite.",
-    "Está gelado hoje à noite.",
-    "Está úmido hoje à noite."
+    "O leite está quente.",
+    "O leite está azedo.",
+    "O leite está gelado.",
+    "O leite está estragado."
    ],
-   "es": "Hace fresco esta noche.",
+   "es": "La leche está fresca.",
    "aceitasEs": [
-    "Hace fresco esta noche.",
-    "Esta noche hace fresco.",
-    "Hace fresquito esta noche.",
-    "Está fresco esta noche."
+    "La leche está fresca.",
+    "La leche es fresca.",
+    "La leche está muy fresca."
    ],
    "distratoresEs": [
-    "Hace calor esta noche.",
-    "Hace bochorno esta noche.",
-    "Hace un frío helado esta noche.",
-    "Hace viento esta noche."
+    "La leche está caliente.",
+    "La leche está agria.",
+    "La leche está helada.",
+    "La leche está echada a perder."
    ],
-   "en": "It's chilly tonight.",
+   "en": "The milk is fresh.",
    "aceitasEn": [
-    "its chilly tonight",
-    "it is chilly tonight",
-    "its cool tonight",
-    "it is cool tonight",
-    "its a bit chilly tonight",
-    "its a little chilly tonight"
+    "the milk is fresh",
+    "the milk is nice and fresh",
+    "the milk is cool and fresh"
    ],
    "distratoresEn": [
-    "It's hot tonight.",
-    "It's muggy tonight.",
-    "It's freezing tonight.",
-    "It's windy tonight."
+    "The milk is hot.",
+    "The milk is sour.",
+    "The milk is frozen.",
+    "The milk is spoiled."
    ],
    "nivel": "A1",
    "tags": [
     "natureza"
    ],
-   "nota": "«Il fait frais», está fresquinho: nem frio, nem calor. «Ce soir» é hoje à noite.",
-   "notaEs": "«Il fait frais», hace fresco: ni frío ni calor. «Ce soir» es esta noche.",
-   "notaEn": "«Il fait frais», it's cool, a bit chilly: not quite cold. «Ce soir» means tonight.",
+   "nota": "«Frais» é fresco, e o feminino é «fraîche»: «de l'eau fraîche», «du lait frais». Para o tempo, «il fait frais».",
+   "notaEs": "«Frais» es fresco; el femenino es «fraîche»: «de l'eau fraîche», «du lait frais».",
+   "notaEn": "«Frais» means fresh or cool; the feminine is «fraîche»: «de l'eau fraîche».",
    "requerTodas": [
-    "fr-p004",
-    "fr-p303",
-    "fr-p160"
+    "fr-p303"
    ]
   },
   {
@@ -56825,63 +56681,56 @@
    "id": "fr-u443",
    "tipo": "frase",
    "requer": "fr-p311",
-   "fr": "On regarde le match ce soir ?",
-   "pt": "Vamos ver o jogo hoje à noite?",
+   "fr": "Il regarde le match à la télé.",
+   "pt": "Ele assiste ao jogo pela TV.",
    "aceitas": [
-    "vamos ver o jogo hoje a noite",
-    "vamos assistir o jogo hoje a noite",
-    "vamos assistir ao jogo hoje a noite",
-    "a gente ve o jogo hoje a noite",
-    "a gente assiste o jogo hoje a noite",
-    "vamos ver a partida hoje a noite",
-    "vamos ver o jogo esta noite"
+    "ele assiste ao jogo pela tv",
+    "ele ve o jogo pela tv",
+    "ele assiste ao jogo na tv",
+    "ele esta vendo o jogo na tv"
    ],
    "distratores": [
-    "Vamos ver o show hoje à noite?",
-    "Vamos ver o desfile hoje à noite?",
-    "Vamos ver o jornal hoje à noite?",
-    "Vamos ver o espetáculo hoje à noite?"
+    "Ele assiste ao filme pela TV.",
+    "Ele assiste ao noticiário pela TV.",
+    "Ele assiste à novela pela TV.",
+    "Ele assiste ao programa pela TV."
    ],
-   "es": "¿Vemos el partido esta noche?",
+   "es": "Mira el partido en la tele.",
    "aceitasEs": [
-    "¿Vemos el partido esta noche?",
-    "¿Vamos a ver el partido esta noche?",
-    "¿Miramos el partido esta noche?",
-    "¿Vemos el partido hoy en la noche?"
+    "Mira el partido en la tele.",
+    "Ve el partido por la tele.",
+    "Ve el partido en la televisión.",
+    "Él mira el partido en la tele."
    ],
    "distratoresEs": [
-    "¿Vemos el concierto esta noche?",
-    "¿Vemos el desfile esta noche?",
-    "¿Vemos el noticiero esta noche?",
-    "¿Vemos el espectáculo esta noche?"
+    "Mira la película en la tele.",
+    "Mira el noticiero en la tele.",
+    "Mira la telenovela en la tele.",
+    "Mira el programa en la tele."
    ],
-   "en": "Shall we watch the game tonight?",
+   "en": "He watches the game on TV.",
    "aceitasEn": [
-    "shall we watch the game tonight",
-    "should we watch the game tonight",
-    "do you want to watch the game tonight",
-    "want to watch the game tonight",
-    "are we watching the game tonight",
-    "lets watch the game tonight",
-    "shall we watch the match tonight"
+    "he watches the game on tv",
+    "he watches the match on tv",
+    "he is watching the game on tv",
+    "he watches the game on television"
    ],
    "distratoresEn": [
-    "Shall we watch the concert tonight?",
-    "Shall we watch the parade tonight?",
-    "Shall we watch the news tonight?",
-    "Shall we watch the show tonight?"
+    "He watches the movie on TV.",
+    "He watches the news on TV.",
+    "He watches the soap opera on TV.",
+    "He watches the show on TV."
    ],
    "nivel": "A1",
    "tags": [
     "cultura"
    ],
-   "nota": "«On regarde…?», com entonação de pergunta, é um convite: vamos ver…? «Le match» é o jogo, a partida.",
-   "notaEs": "«On regarde…?», con entonación de pregunta, es una invitación: ¿vemos…? «Le match» es el partido.",
-   "notaEn": "«On regarde…?» with rising intonation is a suggestion: shall we watch…? «Le match» is the game.",
+   "nota": "«Le match» é o jogo, a partida, e o plural «les matchs». «À la télé» é na TV, com o artigo: «la télé» é o aparelho e a programação.",
+   "notaEs": "«Le match» es el partido. «À la télé» es en la tele.",
+   "notaEn": "«Le match» is the game. «À la télé» means on TV.",
    "requerTodas": [
-    "fr-p172",
     "fr-p311",
-    "fr-p160"
+    "fr-p172"
    ]
   },
   {
@@ -67600,71 +67449,56 @@
    "id": "fr-u480",
    "tipo": "frase",
    "requer": "fr-p389",
-   "fr": "J'aime tous les sports, surtout le foot.",
-   "aceitasFr": [
-    "J'aime tous les sports, surtout le football."
-   ],
-   "pt": "Gosto de todos os esportes, principalmente futebol.",
+   "fr": "Il pleut beaucoup, surtout en hiver.",
+   "pt": "Chove muito, principalmente no inverno.",
    "aceitas": [
-    "gosto de todos os esportes principalmente futebol",
-    "gosto de todos os esportes principalmente de futebol",
-    "gosto de todos os esportes principalmente o futebol",
-    "gosto de todos os esportes sobretudo futebol",
-    "gosto de todos os esportes sobretudo de futebol",
-    "gosto de todos os esportes especialmente futebol",
-    "gosto de todos os esportes especialmente de futebol",
-    "gosto de todo esporte principalmente futebol",
-    "adoro todos os esportes principalmente futebol"
+    "chove muito principalmente no inverno",
+    "chove muito sobretudo no inverno",
+    "chove muito em especial no inverno",
+    "chove bastante principalmente no inverno"
    ],
    "distratores": [
-    "Gosto de todos os esportes, menos futebol.",
-    "Gosto de todos os esportes, exceto futebol.",
-    "Gosto de todos os esportes, inclusive futebol.",
-    "Gosto de todos os esportes, até futebol."
+    "Chove muito, só no inverno.",
+    "Chove muito, também no inverno.",
+    "Chove muito, mesmo no inverno.",
+    "Chove muito, nunca no inverno."
    ],
-   "es": "Me gustan todos los deportes, sobre todo el fútbol.",
+   "es": "Llueve mucho, sobre todo en invierno.",
    "aceitasEs": [
-    "Me gustan todos los deportes, sobre todo el fútbol.",
-    "Me gustan todos los deportes, especialmente el fútbol.",
-    "Me gustan todos los deportes, en especial el fútbol.",
-    "Me gustan todos los deportes, principalmente el fútbol.",
-    "Me encantan todos los deportes, sobre todo el fútbol."
+    "Llueve mucho, sobre todo en invierno.",
+    "Llueve mucho, especialmente en invierno.",
+    "Llueve mucho, principalmente en invierno.",
+    "Llueve mucho, en especial en invierno."
    ],
    "distratoresEs": [
-    "Me gustan todos los deportes, menos el fútbol.",
-    "Me gustan todos los deportes, excepto el fútbol.",
-    "Me gustan todos los deportes, incluso el fútbol.",
-    "Me gustan todos los deportes, hasta el fútbol."
+    "Llueve mucho, solo en invierno.",
+    "Llueve mucho, también en invierno.",
+    "Llueve mucho, incluso en invierno.",
+    "Llueve mucho, nunca en invierno."
    ],
-   "en": "I like all sports, especially soccer.",
+   "en": "It rains a lot, especially in winter.",
    "aceitasEn": [
-    "i like all sports especially soccer",
-    "i like all sports especially football",
-    "i love all sports especially soccer",
-    "i like every sport especially soccer",
-    "i like all sports particularly soccer",
-    "i like all sports above all soccer",
-    "i like all sports mostly soccer"
+    "it rains a lot especially in winter",
+    "it rains a lot mainly in winter",
+    "it rains a lot above all in winter",
+    "it rains a lot particularly in winter"
    ],
    "distratoresEn": [
-    "I like all sports, except soccer.",
-    "I like all sports, but not soccer.",
-    "I like all sports, including soccer.",
-    "I like all sports, even soccer."
+    "It rains a lot, only in winter.",
+    "It rains a lot, also in winter.",
+    "It rains a lot, even in winter.",
+    "It rains a lot, never in winter."
    ],
    "nivel": "A1",
    "tags": [
     "cotidiano"
    ],
-   "nota": "«Surtout» destaca um entre todos: principalmente, sobretudo («sur» + «tout»). Vem logo antes do que se destaca. «Le foot» é o futebol, curto de «le football», e «tous» é o plural de «tout».",
-   "notaEs": "«Surtout» destaca uno entre todos, como sobre todo, de donde viene: «sur» + «tout». Va justo antes de lo que se destaca. «Le foot» es el fútbol, corto de «le football». Y con «aimer» la cosa es complemento: «j'aime», no «me gusta».",
-   "notaEn": "«Surtout» singles one out: especially, above all («sur» + «tout»). It comes right before what it highlights. «Le foot» is short for «le football», soccer.",
+   "nota": "«Surtout» destaca um caso entre todos: principalmente, sobretudo («sur» + «tout»). Vem antes do que se destaca: «surtout en hiver».",
+   "notaEs": "«Surtout» destaca un caso entre todos: sobre todo («sur» + «tout»). Va antes de lo que se destaca.",
+   "notaEn": "«Surtout» singles out one case: especially, above all («sur» + «tout»). It comes before the thing singled out.",
    "requerTodas": [
-    "fr-p015",
-    "fr-p070",
-    "fr-p161",
     "fr-p389",
-    "fr-p149"
+    "fr-p070"
    ]
   },
   {
@@ -68276,67 +68110,54 @@
    "id": "fr-u490",
    "tipo": "frase",
    "requer": "fr-p394",
-   "fr": "Il faut se protéger du froid.",
-   "aceitasFr": [
-    "Il faut se protéger contre le froid."
-   ],
-   "pt": "É preciso se proteger do frio.",
+   "fr": "Ce manteau protège du froid.",
+   "pt": "Este casaco protege do frio.",
    "aceitas": [
-    "e preciso se proteger do frio",
-    "e preciso proteger se do frio",
-    "e necessario se proteger do frio",
-    "tem que se proteger do frio",
-    "tem de se proteger do frio",
-    "precisa se proteger do frio",
-    "temos que nos proteger do frio",
-    "a gente tem que se proteger do frio"
+    "este casaco protege do frio",
+    "esse casaco protege do frio",
+    "este casaco protege contra o frio",
+    "este agasalho protege do frio"
    ],
    "distratores": [
-    "É preciso se acostumar ao frio.",
-    "É preciso fugir do frio.",
-    "É preciso se lembrar do frio.",
-    "É preciso se esquecer do frio."
+    "Este casaco protege da chuva.",
+    "Este casaco protege do vento.",
+    "Este casaco protege do sol.",
+    "Este casaco protege da neve."
    ],
-   "es": "Hay que protegerse del frío.",
+   "es": "Este abrigo protege del frío.",
    "aceitasEs": [
-    "Hay que protegerse del frío.",
-    "Es necesario protegerse del frío.",
-    "Tienes que protegerte del frío.",
-    "Tenemos que protegernos del frío.",
-    "Uno tiene que protegerse del frío."
+    "Este abrigo protege del frío.",
+    "Este abrigo protege contra el frío.",
+    "Este abrigo te protege del frío."
    ],
    "distratoresEs": [
-    "Hay que acostumbrarse al frío.",
-    "Hay que huir del frío.",
-    "Hay que acordarse del frío.",
-    "Hay que olvidarse del frío."
+    "Este abrigo protege de la lluvia.",
+    "Este abrigo protege del viento.",
+    "Este abrigo protege del sol.",
+    "Este abrigo protege de la nieve."
    ],
-   "en": "You have to protect yourself from the cold.",
+   "en": "This coat protects against the cold.",
    "aceitasEn": [
-    "you have to protect yourself from the cold",
-    "you have to protect yourself against the cold",
-    "you need to protect yourself from the cold",
-    "you must protect yourself from the cold",
-    "youve got to protect yourself from the cold",
-    "we have to protect ourselves from the cold",
-    "one must protect oneself from the cold"
+    "this coat protects against the cold",
+    "this coat protects from the cold",
+    "this coat protects you from the cold",
+    "this coat keeps out the cold"
    ],
    "distratoresEn": [
-    "You have to get used to the cold.",
-    "You have to get away from the cold.",
-    "You have to remember the cold.",
-    "You have to forget about the cold."
+    "This coat protects against the rain.",
+    "This coat protects against the wind.",
+    "This coat protects against the sun.",
+    "This coat protects against the snow."
    ],
    "nivel": "A1",
    "tags": [
     "verbo",
     "cotidiano"
    ],
-   "nota": "«Protéger de», proteger de: «du froid» é «de» + «le». Depois de «il faut», é preciso, o verbo fica no infinitivo, com o pronome antes: «se protéger». Também se diz «contre le froid».",
-   "notaEs": "«Protéger de», proteger de: «du froid» es «de» + «le», como «del». Tras «il faut», hay que, el verbo va en infinitivo con el pronombre delante: «se protéger», no «protéger-se». También vale «contre le froid».",
-   "notaEn": "«Protéger de», to protect from: «du froid» is «de» + «le». After «il faut», you have to, the verb stays in the infinitive with the pronoun in front: «se protéger». «Contre le froid» works too.",
+   "nota": "«Protéger de», proteger de: «du froid» é «de» + «le». «Du froid» é do frio; «de la pluie», da chuva.",
+   "notaEs": "«Protéger de», proteger de: «du froid» es «de» + «le».",
+   "notaEn": "«Protéger de» means to protect from: «du froid» is «de» + «le».",
    "requerTodas": [
-    "fr-p122",
     "fr-p394",
     "fr-p080"
    ]
@@ -68750,58 +68571,54 @@
    "id": "fr-u497",
    "tipo": "frase",
    "requer": "fr-p398",
-   "fr": "Le bateau part à huit heures.",
-   "pt": "O barco sai às oito.",
+   "fr": "Le bateau traverse la rivière.",
+   "pt": "O barco atravessa o rio.",
    "aceitas": [
-    "o barco sai as oito",
-    "o barco sai as oito horas",
-    "o barco parte as oito",
-    "o barco parte as oito horas"
+    "o barco atravessa o rio",
+    "o barco cruza o rio",
+    "o barco passa pelo rio"
    ],
    "distratores": [
-    "O trem sai às oito.",
-    "O ônibus sai às oito.",
-    "O avião sai às oito.",
-    "O metrô sai às oito."
+    "O barco atravessa o lago.",
+    "O barco atravessa o oceano.",
+    "O barco atravessa o canal.",
+    "O barco atravessa a baía."
    ],
-   "es": "El barco sale a las ocho.",
+   "es": "El barco cruza el río.",
    "aceitasEs": [
-    "El barco sale a las ocho.",
-    "El barco zarpa a las ocho.",
-    "El barco parte a las ocho."
+    "El barco cruza el río.",
+    "El barco atraviesa el río.",
+    "El barco cruza la ría.",
+    "El bote cruza el río."
    ],
    "distratoresEs": [
-    "El tren sale a las ocho.",
-    "El autobús sale a las ocho.",
-    "El avión sale a las ocho.",
-    "El metro sale a las ocho."
+    "El barco cruza el lago.",
+    "El barco cruza el océano.",
+    "El barco cruza el canal.",
+    "El barco cruza la bahía."
    ],
-   "en": "The boat leaves at eight.",
+   "en": "The boat crosses the river.",
    "aceitasEn": [
-    "the boat leaves at eight",
-    "the boat leaves at eight oclock",
-    "the boat departs at eight",
-    "the boat sails at eight",
-    "the ship leaves at eight"
+    "the boat crosses the river",
+    "the boat is crossing the river",
+    "the boat goes across the river",
+    "the ship crosses the river"
    ],
    "distratoresEn": [
-    "The train leaves at eight.",
-    "The bus leaves at eight.",
-    "The plane leaves at eight.",
-    "The subway leaves at eight."
+    "The boat crosses the lake.",
+    "The boat crosses the ocean.",
+    "The boat crosses the channel.",
+    "The boat crosses the bay."
    ],
    "nivel": "A1",
    "tags": [
     "viagem"
    ],
-   "nota": "«Partir» é sair, ir embora: «le bateau part», o barco sai. Na hora, «heures» não cai como no português: «à huit heures», às oito. O plural de «bateau» leva «x»: «les bateaux».",
-   "notaEs": "«Partir» es salir, irse: «le bateau part», el barco sale. En la hora, «heures» no se omite: «à huit heures», a las ocho. El plural de «bateau» lleva «x»: «les bateaux».",
-   "notaEn": "«Partir» is to leave, to depart: «le bateau part». With times, «heures» isn't dropped: «à huit heures», at eight. The plural takes «x»: «les bateaux».",
+   "nota": "O plural de «bateau» leva «x»: «bateaux». «Traverser» é atravessar. «La rivière» é o rio que desemboca em outro; o que chega ao mar é «le fleuve».",
+   "notaEs": "El plural de «bateau» lleva «x»: «bateaux». «Traverser» es atravesar. «La rivière» desemboca en otro río; el que llega al mar es «le fleuve».",
+   "notaEn": "The plural of «bateau» takes «x»: «bateaux». «Traverser» means to cross. «Le fleuve» is a river that reaches the sea.",
    "requerTodas": [
-    "fr-p398",
-    "fr-p083",
-    "fr-p126",
-    "fr-p129"
+    "fr-p398"
    ]
   },
   {
@@ -68930,64 +68747,54 @@
    "id": "fr-u504",
    "tipo": "frase",
    "requer": "fr-p400",
-   "fr": "J'ai mal à l'oreille.",
-   "pt": "Estou com dor de ouvido.",
+   "fr": "Elle lui chuchote à l'oreille.",
+   "pt": "Ela cochicha no ouvido dele.",
    "aceitas": [
-    "estou com dor de ouvido",
-    "to com dor de ouvido",
-    "tenho dor de ouvido",
-    "estou com dor no ouvido",
-    "meu ouvido esta doendo",
-    "meu ouvido doi",
-    "estou com dor na orelha",
-    "minha orelha esta doendo",
-    "minha orelha doi"
+    "ela cochicha no ouvido dele",
+    "ela sussurra no ouvido dele",
+    "ela fala baixinho no ouvido dele"
    ],
    "distratores": [
-    "Estou com dor de cabeça.",
-    "Estou com dor de dente.",
-    "Estou com dor de garganta.",
-    "Estou com dor de estômago."
+    "Ela cochicha no ombro dele.",
+    "Ela cochicha na mão dele.",
+    "Ela cochicha na testa dele.",
+    "Ela cochicha no nariz dele."
    ],
-   "es": "Me duele el oído.",
+   "es": "Ella le susurra al oído.",
    "aceitasEs": [
-    "Me duele el oído.",
-    "Tengo dolor de oído.",
-    "Me duelen los oídos.",
-    "Me duele la oreja."
+    "Ella le susurra al oído.",
+    "Ella le susurra en la oreja.",
+    "Le susurra al oído.",
+    "Ella le habla bajito al oído."
    ],
    "distratoresEs": [
-    "Me duele el estómago.",
-    "Me duele el cuello.",
-    "Me duele el pie.",
-    "Me duele el brazo."
+    "Ella le susurra en el hombro.",
+    "Ella le susurra en la mano.",
+    "Ella le susurra en la frente.",
+    "Ella le susurra en la nariz."
    ],
-   "en": "I have an earache.",
+   "en": "She whispers in his ear.",
    "aceitasEn": [
-    "i have an earache",
-    "ive got an earache",
-    "i have an ear ache",
-    "my ear hurts",
-    "my ears hurt",
-    "i have ear pain"
+    "she whispers in his ear",
+    "she whispers into his ear",
+    "she is whispering in his ear",
+    "she whispers in his ear softly"
    ],
    "distratoresEn": [
-    "I have a headache.",
-    "I have a toothache.",
-    "I have a stomachache.",
-    "I have a backache."
+    "She whispers on his shoulder.",
+    "She whispers on his hand.",
+    "She whispers on his forehead.",
+    "She whispers on his nose."
    ],
    "nivel": "A1",
    "tags": [
     "corpo",
     "saúde"
    ],
-   "nota": "«Avoir mal à» + a parte do corpo é estar com dor: «j'ai mal à l'oreille», «j'ai mal à la tête». «L'oreille» é a orelha e também o ouvido.",
-   "notaEs": "«Avoir mal à» + la parte del cuerpo es «doler»: «j'ai mal à l'oreille», me duele el oído. «L'oreille» es la oreja y también el oído.",
-   "notaEn": "«Avoir mal à» + body part means it hurts: «j'ai mal à l'oreille», «j'ai mal à la tête». «L'oreille» is the whole ear, inside and out.",
+   "nota": "«L'oreille» é a orelha e também o ouvido: «à l'oreille» é no ouvido. «Lui» é «a ele» ou «a ela», e vem antes do verbo.",
+   "notaEs": "«L'oreille» es la oreja y también el oído: «à l'oreille» es al oído. «Lui» es «le» y va antes del verbo.",
+   "notaEn": "«L'oreille» is the ear. «Lui» means to him or to her, and goes before the verb.",
    "requerTodas": [
-    "fr-p002",
-    "fr-p151",
     "fr-p400"
    ]
   },
@@ -70851,68 +70658,55 @@
    "id": "fr-u533",
    "tipo": "frase",
    "requer": "fr-p418",
-   "fr": "Je voudrais échanger ce pantalon.",
-   "aceitasFr": [
-    "J'aimerais échanger ce pantalon.",
-    "Je veux échanger ce pantalon."
-   ],
-   "pt": "Eu queria trocar esta calça.",
+   "fr": "Il échange des euros contre des dollars.",
+   "pt": "Ele troca euros por dólares.",
    "aceitas": [
-    "eu queria trocar esta calca",
-    "queria trocar esta calca",
-    "eu gostaria de trocar esta calca",
-    "gostaria de trocar esta calca",
-    "quero trocar esta calca",
-    "eu quero trocar esta calca",
-    "queria trocar estas calcas"
+    "ele troca euros por dolares",
+    "ele cambia euros por dolares",
+    "ele troca euros em dolares"
    ],
    "distratores": [
-    "Eu queria provar esta calça.",
-    "Eu queria devolver esta calça.",
-    "Eu queria comprar esta calça.",
-    "Eu queria ajustar esta calça."
+    "Ele troca dólares por euros.",
+    "Ele troca euros por reais.",
+    "Ele troca reais por dólares.",
+    "Ele troca libras por euros."
    ],
-   "es": "Quería cambiar este pantalón.",
+   "es": "Cambia euros por dólares.",
    "aceitasEs": [
-    "Quería cambiar este pantalón.",
-    "Quisiera cambiar este pantalón.",
-    "Me gustaría cambiar este pantalón.",
-    "Quiero cambiar este pantalón.",
-    "Quería cambiar estos pantalones.",
-    "Quisiera cambiar estos pantalones."
+    "Cambia euros por dólares.",
+    "Él cambia euros por dólares.",
+    "Cambia euros en dólares.",
+    "Cambia dólares por euros."
    ],
    "distratoresEs": [
-    "Quería probarme este pantalón.",
-    "Quería devolver este pantalón.",
-    "Quería comprar este pantalón.",
-    "Quería arreglar este pantalón."
+    "Cambia dólares por libras.",
+    "Cambia euros por reales.",
+    "Cambia reales por dólares.",
+    "Cambia libras por euros."
    ],
-   "en": "I'd like to exchange these pants.",
+   "en": "He exchanges euros for dollars.",
    "aceitasEn": [
-    "id like to exchange these pants",
-    "i would like to exchange these pants",
-    "id like to exchange these trousers",
-    "i want to exchange these pants",
-    "id like to swap these pants"
+    "he exchanges euros for dollars",
+    "he changes euros for dollars",
+    "he swaps euros for dollars",
+    "he is exchanging euros for dollars"
    ],
    "distratoresEn": [
-    "I'd like to try on these pants.",
-    "I'd like to return these pants.",
-    "I'd like to buy these pants.",
-    "I'd like to alter these pants."
+    "He exchanges dollars for euros.",
+    "He exchanges euros for reais.",
+    "He exchanges reais for dollars.",
+    "He exchanges pounds for euros."
    ],
    "nivel": "A2",
    "tags": [
     "compras",
     "roupa"
    ],
-   "nota": "Na loja, trocar uma peça por outra é «échanger». «Je voudrais» é o jeito educado de pedir. «Le pantalon» é singular: «ce pantalon», esta calça.",
-   "notaEs": "En la tienda, cambiar una prenda por otra es «échanger». «Je voudrais» es la forma educada de pedir. «Le pantalon» va en singular: «ce pantalon».",
-   "notaEn": "In a shop, to exchange an item is «échanger». «Je voudrais» is the polite way to ask. «Le pantalon» is singular in French: «ce pantalon», these pants.",
+   "nota": "«Échanger A contre B» é trocar A por B. Em francês os euros ficam no plural: «des euros», «des dollars».",
+   "notaEs": "«Échanger A contre B» es cambiar A por B.",
+   "notaEn": "«Échanger A contre B» means to exchange A for B.",
    "requerTodas": [
-    "fr-p007",
-    "fr-p418",
-    "fr-p279"
+    "fr-p418"
    ]
   },
   {
@@ -71449,66 +71243,56 @@
    "id": "fr-u542",
    "tipo": "frase",
    "requer": "fr-p424",
-   "fr": "Il faut comparer les prix.",
-   "pt": "É preciso comparar os preços.",
+   "fr": "Je compare les deux téléphones.",
+   "pt": "Eu comparo os dois celulares.",
    "aceitas": [
-    "e preciso comparar os precos",
-    "e necessario comparar os precos",
-    "tem que comparar os precos",
-    "tem de comparar os precos",
-    "precisa comparar os precos",
-    "temos que comparar os precos",
-    "a gente tem que comparar os precos",
-    "voce tem que comparar os precos"
+    "eu comparo os dois celulares",
+    "comparo os dois celulares",
+    "eu comparo os dois telefones",
+    "comparo os dois telefones"
    ],
    "distratores": [
-    "É preciso baixar os preços.",
-    "É preciso aumentar os preços.",
-    "É preciso mudar os preços.",
-    "É preciso anotar os preços."
+    "Eu vendo os dois celulares.",
+    "Eu troco os dois celulares.",
+    "Eu quebro os dois celulares.",
+    "Eu conserto os dois celulares."
    ],
-   "es": "Hay que comparar los precios.",
+   "es": "Comparo los dos teléfonos.",
    "aceitasEs": [
-    "Hay que comparar los precios.",
-    "Hay que comparar precios.",
-    "Es necesario comparar los precios.",
-    "Tienes que comparar los precios.",
-    "Tenemos que comparar los precios."
+    "Comparo los dos teléfonos.",
+    "Comparo los dos móviles.",
+    "Comparo los dos celulares.",
+    "Yo comparo los dos teléfonos."
    ],
    "distratoresEs": [
-    "Hay que bajar los precios.",
-    "Hay que subir los precios.",
-    "Hay que cambiar los precios.",
-    "Hay que apuntar los precios."
+    "Vendo los dos teléfonos.",
+    "Cambio los dos teléfonos.",
+    "Rompo los dos teléfonos.",
+    "Arreglo los dos teléfonos."
    ],
-   "en": "You have to compare prices.",
+   "en": "I compare the two phones.",
    "aceitasEn": [
-    "you have to compare prices",
-    "you have to compare the prices",
-    "you need to compare prices",
-    "you need to compare the prices",
-    "we have to compare prices",
-    "we need to compare prices",
-    "its necessary to compare prices"
+    "i compare the two phones",
+    "i am comparing the two phones",
+    "i compare the two cell phones",
+    "im comparing the two phones"
    ],
    "distratoresEn": [
-    "You have to lower prices.",
-    "You have to raise prices.",
-    "You have to change prices.",
-    "You have to write down prices."
+    "I sell the two phones.",
+    "I swap the two phones.",
+    "I break the two phones.",
+    "I fix the two phones."
    ],
    "nivel": "A2",
    "tags": [
     "compras",
     "economia"
    ],
-   "nota": "«Il faut» + infinitivo é «é preciso», para qualquer pessoa. «Comparer» se usa com «à» ou «avec»: «comparer un prix avec un autre».",
-   "notaEs": "«Il faut» + infinitivo es «hay que». «Comparer» va con «à» o «avec»: «comparer un prix avec un autre».",
-   "notaEn": "«Il faut» + infinitive means you have to, one must. «Comparer» takes «à» or «avec»: «comparer un prix avec un autre».",
+   "nota": "«Comparer» é comparar. Compara-se uma coisa «à» ou «avec» outra: «comparer un téléphone avec un autre».",
+   "notaEs": "«Comparer» se usa con «à» o «avec»: «comparer un téléphone avec un autre».",
+   "notaEn": "«Comparer» takes «à» or «avec»: «comparer un téléphone avec un autre».",
    "requerTodas": [
-    "fr-p122",
-    "fr-p424",
-    "fr-p192"
+    "fr-p424"
    ]
   },
   {
@@ -73892,71 +73676,55 @@
    "id": "fr-u579",
    "tipo": "frase",
    "requer": "fr-p446",
-   "fr": "Je voudrais un steak bien cuit.",
-   "pt": "Eu queria um bife bem passado.",
+   "fr": "Le steak est trop cuit.",
+   "pt": "O bife está passado demais.",
    "aceitas": [
-    "eu queria um bife bem passado",
-    "queria um bife bem passado",
-    "eu gostaria de um bife bem passado",
-    "gostaria de um bife bem passado",
-    "eu quero um bife bem passado",
-    "quero um bife bem passado",
-    "eu queria um steak bem passado"
+    "o bife esta passado demais",
+    "o bife esta muito passado",
+    "o bife esta passado do ponto",
+    "o bife esta bem passado demais"
    ],
    "distratores": [
-    "Eu queria um ovo bem passado.",
-    "Eu queria um salmão bem passado.",
-    "Eu queria um peixe bem passado.",
-    "Eu queria um atum bem passado."
+    "O bife está cru.",
+    "O bife está frio.",
+    "O bife está salgado.",
+    "O bife está duro."
    ],
-   "es": "Quería un bistec muy hecho.",
+   "es": "El bistec está demasiado hecho.",
    "aceitasEs": [
-    "Quería un bistec muy hecho.",
-    "Quería un bistec bien hecho.",
-    "Quisiera un bistec muy hecho.",
-    "Quisiera un bistec bien hecho.",
-    "Quería un filete muy hecho.",
-    "Quería un filete bien hecho.",
-    "Quisiera un filete muy hecho.",
-    "Me gustaría un bistec muy hecho.",
-    "Quería un bistec bien cocido.",
-    "Quisiera un bistec bien cocido.",
-    "Quería un bife bien cocido."
+    "El bistec está demasiado hecho.",
+    "El bistec está muy hecho.",
+    "El filete está demasiado hecho.",
+    "El filete está pasado."
    ],
    "distratoresEs": [
-    "Quería un huevo muy hecho.",
-    "Quería un salmón muy hecho.",
-    "Quería un pescado muy hecho.",
-    "Quería un atún muy hecho."
+    "El bistec está crudo.",
+    "El bistec está frío.",
+    "El bistec está salado.",
+    "El bistec está duro."
    ],
-   "en": "I'd like a steak, well done.",
+   "en": "The steak is overcooked.",
    "aceitasEn": [
-    "id like a steak well done",
-    "id like a well done steak",
-    "id like a well-done steak",
-    "i would like a steak well done",
-    "i would like a well done steak",
-    "id like my steak well done",
-    "can i have a steak well done",
-    "can i have a well done steak"
+    "the steak is overcooked",
+    "the steak is too well done",
+    "the steak is cooked too much",
+    "the steak is overdone"
    ],
    "distratoresEn": [
-    "I'd like a salmon fillet, well done.",
-    "I'd like a pork chop, well done.",
-    "I'd like a lamb chop, well done.",
-    "I'd like a chicken breast, well done."
+    "The steak is raw.",
+    "The steak is cold.",
+    "The steak is salty.",
+    "The steak is tough."
    ],
    "nivel": "B1",
    "tags": [
     "comida"
    ],
-   "nota": "O ponto da carne: «bien cuit», bem passado; «à point», ao ponto; «saignant», malpassado. «Steak» soa «stéc», e «je voudrais» é o jeito educado de pedir.",
-   "notaEs": "El punto de la carne: «bien cuit», muy hecho; «à point», en su punto; «saignant», poco hecho. «Steak» suena «stéc», y «je voudrais» es la forma educada de pedir.",
-   "notaEn": "How it's cooked: «bien cuit», well done; «à point», medium; «saignant», rare. «Je voudrais», I would like, is the polite way to order.",
+   "nota": "O ponto da carne: «bien cuit», bem passado; «à point», ao ponto; «saignant», malpassado. «Steak» soa «stéc». «Trop» é demais.",
+   "notaEs": "El punto de la carne: «bien cuit», muy hecho; «à point», en su punto; «saignant», poco hecho. «Trop» es demasiado.",
+   "notaEn": "Steak doneness: «bien cuit», well done; «à point», medium; «saignant», rare. «Trop» means too.",
    "requerTodas": [
-    "fr-p007",
     "fr-p446",
-    "fr-p044",
     "fr-p529"
    ]
   },
@@ -74371,67 +74139,54 @@
    "id": "fr-u587",
    "tipo": "frase",
    "requer": "fr-p452",
-   "fr": "Il faut isoler la maison avant l'hiver.",
-   "pt": "É preciso isolar a casa antes do inverno.",
+   "fr": "Cette fenêtre isole bien du bruit.",
+   "pt": "Esta janela isola bem do barulho.",
    "aceitas": [
-    "e preciso isolar a casa antes do inverno",
-    "precisa isolar a casa antes do inverno",
-    "temos que isolar a casa antes do inverno",
-    "tem que isolar a casa antes do inverno",
-    "a gente precisa isolar a casa antes do inverno",
-    "precisamos isolar a casa antes do inverno",
-    "e necessario isolar a casa antes do inverno",
-    "tem que fazer o isolamento da casa antes do inverno"
+    "esta janela isola bem do barulho",
+    "esta janela isola bem do ruido",
+    "essa janela isola bem do barulho",
+    "esta janela isola bem contra o barulho"
    ],
    "distratores": [
-    "É preciso pintar a casa antes do inverno.",
-    "É preciso limpar a casa antes do inverno.",
-    "É preciso vender a casa antes do inverno.",
-    "É preciso consertar a casa antes do inverno."
+    "Esta janela isola bem do frio.",
+    "Esta janela isola bem do vento.",
+    "Esta janela isola bem da chuva.",
+    "Esta janela isola bem do calor."
    ],
-   "es": "Hay que aislar la casa antes del invierno.",
+   "es": "Esta ventana aísla bien del ruido.",
    "aceitasEs": [
-    "Hay que aislar la casa antes del invierno.",
-    "Tenemos que aislar la casa antes del invierno.",
-    "Es necesario aislar la casa antes del invierno.",
-    "Hace falta aislar la casa antes del invierno.",
-    "Hay que aislar la casa antes de que llegue el invierno."
+    "Esta ventana aísla bien del ruido.",
+    "Esta ventana aísla bien contra el ruido.",
+    "Esta ventana aísla muy bien del ruido."
    ],
    "distratoresEs": [
-    "Hay que pintar la casa antes del invierno.",
-    "Hay que limpiar la casa antes del invierno.",
-    "Hay que vender la casa antes del invierno.",
-    "Hay que arreglar la casa antes del invierno."
+    "Esta ventana aísla bien del frío.",
+    "Esta ventana aísla bien del viento.",
+    "Esta ventana aísla bien de la lluvia.",
+    "Esta ventana aísla bien del calor."
    ],
-   "en": "We need to insulate the house before winter.",
+   "en": "This window insulates well against noise.",
    "aceitasEn": [
-    "we need to insulate the house before winter",
-    "we have to insulate the house before winter",
-    "we need to insulate the house before the winter",
-    "we must insulate the house before winter",
-    "you need to insulate the house before winter",
-    "you have to insulate the house before winter",
-    "the house needs to be insulated before winter",
-    "the house needs insulating before winter"
+    "this window insulates well against noise",
+    "this window blocks noise well",
+    "this window insulates well from noise",
+    "this window soundproofs well"
    ],
    "distratoresEn": [
-    "We need to paint the house before winter.",
-    "We need to clean the house before winter.",
-    "We need to sell the house before winter.",
-    "We need to fix the house before winter."
+    "This window insulates well against the cold.",
+    "This window insulates well against the wind.",
+    "This window insulates well against the rain.",
+    "This window insulates well against the heat."
    ],
    "nivel": "B2",
    "tags": [
     "casa"
    ],
-   "nota": "«Il faut» + infinitivo é o é preciso, sem dizer quem. Isolar do frio ou do barulho é «isoler»; o isolamento térmico é «l'isolation».",
-   "notaEs": "«Il faut» + infinitivo es el hay que, sin decir quién. Aislar es «isoler», y el aislamiento térmico, «l'isolation».",
-   "notaEn": "English insulates a house, but French uses the same verb as for isolating: «isoler». Thermal insulation is «l'isolation». «Il faut» + infinitive: we need to, without saying who.",
+   "nota": "Isolar do frio ou do barulho é «isoler»; o isolamento é «l'isolation». «Du bruit» é «de» + «le bruit».",
+   "notaEs": "Aislar del frío o del ruido es «isoler»; el aislamiento es «l'isolation».",
+   "notaEn": "«Isoler» means to insulate against cold or noise; insulation is «l'isolation».",
    "requerTodas": [
-    "fr-p122",
-    "fr-p452",
-    "fr-p020",
-    "fr-p284"
+    "fr-p452"
    ]
   },
   {
@@ -76568,63 +76323,53 @@
    "id": "fr-u620",
    "tipo": "frase",
    "requer": "fr-p473",
-   "fr": "Il faut protéger le consommateur.",
-   "pt": "É preciso proteger o consumidor.",
+   "fr": "Le consommateur a le droit de savoir.",
+   "pt": "O consumidor tem o direito de saber.",
    "aceitas": [
-    "e preciso proteger o consumidor",
-    "precisa proteger o consumidor",
-    "precisamos proteger o consumidor",
-    "temos que proteger o consumidor",
-    "tem que proteger o consumidor",
-    "e necessario proteger o consumidor"
+    "o consumidor tem o direito de saber",
+    "o consumidor tem direito de saber",
+    "o consumidor tem direito a saber",
+    "o consumidor tem o direito de ser informado"
    ],
    "distratores": [
-    "É preciso proteger o vendedor.",
-    "É preciso proteger o produtor.",
-    "É preciso proteger o motorista.",
-    "É preciso proteger o pedestre."
+    "O cidadão tem o direito de saber.",
+    "O paciente tem o direito de saber.",
+    "O aluno tem o direito de saber.",
+    "O passageiro tem o direito de saber."
    ],
-   "es": "Hay que proteger al consumidor.",
+   "es": "El consumidor tiene derecho a saber.",
    "aceitasEs": [
-    "Hay que proteger al consumidor.",
-    "Hay que proteger a los consumidores.",
-    "Es necesario proteger al consumidor.",
-    "Tenemos que proteger al consumidor.",
-    "Hace falta proteger al consumidor."
+    "El consumidor tiene derecho a saber.",
+    "El consumidor tiene el derecho de saber.",
+    "El consumidor tiene derecho a saberlo."
    ],
    "distratoresEs": [
-    "Hay que proteger al vendedor.",
-    "Hay que proteger al productor.",
-    "Hay que proteger al conductor.",
-    "Hay que proteger al peatón."
+    "El ciudadano tiene derecho a saber.",
+    "El paciente tiene derecho a saber.",
+    "El alumno tiene derecho a saber.",
+    "El pasajero tiene derecho a saber."
    ],
-   "en": "We need to protect the consumer.",
+   "en": "The consumer has the right to know.",
    "aceitasEn": [
-    "we need to protect the consumer",
-    "we need to protect consumers",
-    "we have to protect the consumer",
-    "we must protect the consumer",
-    "the consumer needs to be protected",
-    "the consumer must be protected",
-    "consumers need to be protected"
+    "the consumer has the right to know",
+    "consumers have the right to know",
+    "the consumer has a right to know"
    ],
    "distratoresEn": [
-    "We need to protect the seller.",
-    "We need to protect the producer.",
-    "We need to protect the driver.",
-    "We need to protect the pedestrian."
+    "The citizen has the right to know.",
+    "The patient has the right to know.",
+    "The student has the right to know.",
+    "The passenger has the right to know."
    ],
    "nivel": "B2",
    "tags": [
     "economia",
     "compras"
    ],
-   "nota": "Masculino; o feminino é «consommatrice». Consumir é «consommer», e o consumo, «la consommation»: com dois «m», e «o» onde o português tem «u».",
-   "notaEs": "Masculino; el femenino es «consommatrice». Consumir es «consommer», y el consumo, «la consommation»: con doble «m», y «o» donde el español tiene «u».",
-   "notaEn": "Masculine; the feminine is «consommatrice». To consume is «consommer»; consumption, «la consommation».",
+   "nota": "Masculino; o feminino é «consommatrice». «Avoir le droit de» + infinitivo é ter o direito de: «le droit de savoir».",
+   "notaEs": "Masculino; el femenino es «consommatrice». «Avoir le droit de» + infinitivo: tener derecho a.",
+   "notaEn": "Masculine; the feminine is «consommatrice». «Avoir le droit de» + infinitive: to have the right to.",
    "requerTodas": [
-    "fr-p122",
-    "fr-p394",
     "fr-p473"
    ]
   },
@@ -77432,63 +77177,53 @@
    "id": "fr-u633",
    "tipo": "frase",
    "requer": "fr-p480",
-   "fr": "J'aime beaucoup la cuisine égyptienne.",
-   "pt": "Gosto muito da culinária egípcia.",
+   "fr": "Ma voisine est égyptienne.",
+   "pt": "Minha vizinha é egípcia.",
    "aceitas": [
-    "gosto muito da culinaria egipcia",
-    "eu gosto muito da culinaria egipcia",
-    "gosto muito da comida egipcia",
-    "eu gosto muito da comida egipcia",
-    "gosto muito da cozinha egipcia",
-    "eu gosto muito da cozinha egipcia",
-    "gosto bastante da comida egipcia"
+    "minha vizinha e egipcia",
+    "a minha vizinha e egipcia",
+    "minha vizinha e do egito"
    ],
    "distratores": [
-    "Gosto muito da culinária libanesa.",
-    "Gosto muito da culinária marroquina.",
-    "Gosto muito da culinária turca.",
-    "Gosto muito da culinária grega."
+    "Minha vizinha é italiana.",
+    "Minha vizinha é grega.",
+    "Minha vizinha é turca.",
+    "Minha vizinha é libanesa."
    ],
-   "es": "Me gusta mucho la cocina egipcia.",
+   "es": "Mi vecina es egipcia.",
    "aceitasEs": [
-    "Me gusta mucho la cocina egipcia.",
-    "Me gusta mucho la comida egipcia.",
-    "Me encanta la cocina egipcia.",
-    "Me encanta la comida egipcia."
+    "Mi vecina es egipcia.",
+    "Mi vecina es de Egipto.",
+    "Mi vecina es egipcia."
    ],
    "distratoresEs": [
-    "Me gusta mucho la cocina libanesa.",
-    "Me gusta mucho la cocina marroquí.",
-    "Me gusta mucho la cocina turca.",
-    "Me gusta mucho la cocina griega."
+    "Mi vecina es italiana.",
+    "Mi vecina es griega.",
+    "Mi vecina es turca.",
+    "Mi vecina es libanesa."
    ],
-   "en": "I really like Egyptian food.",
+   "en": "My neighbor is Egyptian.",
    "aceitasEn": [
-    "i really like egyptian food",
-    "i really like egyptian cuisine",
-    "i like egyptian food a lot",
-    "i like egyptian cuisine a lot",
-    "i like egyptian food very much",
-    "i love egyptian food"
+    "my neighbor is egyptian",
+    "my neighbour is egyptian",
+    "my neighbor is from egypt",
+    "my neighbour is from egypt"
    ],
    "distratoresEn": [
-    "I really like Lebanese food.",
-    "I really like Moroccan food.",
-    "I really like Turkish food.",
-    "I really like Greek food."
+    "My neighbor is Italian.",
+    "My neighbor is Greek.",
+    "My neighbor is Turkish.",
+    "My neighbor is Lebanese."
    ],
    "nivel": "B1",
    "tags": [
     "cultura",
     "comida"
    ],
-   "nota": "No feminino, «-ien» dobra o n: «égyptien», «égyptienne», como «brésilien», «brésilienne». «La cuisine» é a cozinha e também a culinária.",
-   "notaEs": "En femenino, «-ien» dobla la n: «égyptien», «égyptienne», como «brésilien», «brésilienne». «La cuisine» es la cocina: el cuarto y el arte.",
-   "notaEn": "In the feminine, «-ien» doubles the n: «égyptien», «égyptienne», like «brésilien», «brésilienne». «La cuisine» is both the kitchen and the cuisine.",
+   "nota": "No feminino, «-ien» dobra o n: «égyptien», «égyptienne», como «italien», «italienne». Nacionalidade não leva artigo nem maiúscula.",
+   "notaEs": "En femenino, «-ien» duplica la n: «égyptien», «égyptienne». La nacionalidad va en minúscula.",
+   "notaEn": "In the feminine, «-ien» doubles the n: «égyptien», «égyptienne». Nationality adjectives are not capitalized.",
    "requerTodas": [
-    "fr-p015",
-    "fr-p067",
-    "fr-p088",
     "fr-p480"
    ]
   },
@@ -83977,68 +83712,55 @@
    "id": "fr-u683",
    "tipo": "frase",
    "requer": "fr-p538",
-   "fr": "Il fait doux aujourd'hui.",
-   "aceitasFr": [
-    "Aujourd'hui, il fait doux."
-   ],
-   "pt": "Hoje o tempo está ameno.",
+   "fr": "Elle a une voix douce.",
+   "pt": "Ela tem uma voz suave.",
    "aceitas": [
-    "hoje o tempo esta ameno",
-    "hoje esta ameno",
-    "o tempo esta ameno hoje",
-    "hoje o tempo esta agradavel",
-    "hoje esta agradavel",
-    "hoje faz um tempo ameno",
-    "hoje esta um tempo ameno",
-    "hoje o clima esta ameno",
-    "hoje o tempo ta ameno"
+    "ela tem uma voz suave",
+    "ela tem uma voz doce",
+    "ela tem a voz suave",
+    "ela tem uma voz macia"
    ],
    "distratores": [
-    "Hoje o tempo está frio.",
-    "Hoje o tempo está quente.",
-    "Hoje o tempo está seco.",
-    "Hoje o tempo está úmido."
+    "Ela tem uma voz alta.",
+    "Ela tem uma voz fraca.",
+    "Ela tem uma voz rouca.",
+    "Ela tem uma voz grossa."
    ],
-   "es": "Hoy el tiempo está templado.",
+   "es": "Tiene una voz dulce.",
    "aceitasEs": [
-    "Hoy el tiempo está templado.",
-    "Hoy hace un tiempo templado.",
-    "Hoy hace un tiempo agradable.",
-    "Hoy el tiempo está agradable.",
-    "Hoy está templado."
+    "Tiene una voz dulce.",
+    "Tiene una voz suave.",
+    "Ella tiene una voz dulce.",
+    "Ella tiene una voz suave."
    ],
    "distratoresEs": [
-    "Hoy el tiempo está frío.",
-    "Hoy el tiempo está caluroso.",
-    "Hoy el tiempo está seco.",
-    "Hoy el tiempo está húmedo."
+    "Tiene una voz fuerte.",
+    "Tiene una voz débil.",
+    "Tiene una voz ronca.",
+    "Tiene una voz grave."
    ],
-   "en": "It's mild today.",
+   "en": "She has a soft voice.",
    "aceitasEn": [
-    "its mild today",
-    "it is mild today",
-    "the weather is mild today",
-    "the weathers mild today",
-    "its nice and mild today",
-    "its mild out today"
+    "she has a soft voice",
+    "she has a gentle voice",
+    "she has a sweet voice",
+    "she has a soft and gentle voice"
    ],
    "distratoresEn": [
-    "It's cold today.",
-    "It's hot today.",
-    "It's dry today.",
-    "It's humid today."
+    "She has a loud voice.",
+    "She has a weak voice.",
+    "She has a hoarse voice.",
+    "She has a deep voice."
    ],
    "nivel": "A2",
    "tags": [
     "natureza"
    ],
-   "nota": "O tempo se diz com «il fait»: «il fait doux», está ameno; «il fait froid», «il fait chaud». «Doux» é o tempo nem frio nem quente.",
-   "notaEs": "El tiempo se dice con «il fait»: «il fait doux», está templado; «il fait froid», «il fait chaud». «Doux» es el tiempo ni frío ni caluroso.",
-   "notaEn": "Weather goes with «il fait»: «il fait doux», it's mild; «il fait froid», «il fait chaud». «Doux» is neither cold nor hot.",
+   "nota": "«Doux» é suave, doce, macio, e o feminino é «douce». Vale para a voz, o gesto, o clima e o sabor.",
+   "notaEs": "«Doux» es suave, dulce; el femenino es «douce». Vale para la voz, el gesto, el clima y el sabor.",
+   "notaEn": "«Doux» means soft, gentle or sweet; the feminine is «douce». It fits a voice, a gesture, weather or taste.",
    "requerTodas": [
-    "fr-p004",
-    "fr-p538",
-    "fr-p049"
+    "fr-p538"
    ]
   },
   {
@@ -94232,61 +93954,54 @@
    "id": "fr-u715",
    "tipo": "frase",
    "requer": "fr-p575",
-   "fr": "J'aime le poulet aux herbes.",
-   "pt": "Gosto de frango com ervas.",
+   "fr": "Le chien court dans l'herbe.",
+   "pt": "O cachorro corre na grama.",
    "aceitas": [
-    "gosto de frango com ervas",
-    "eu gosto de frango com ervas",
-    "adoro frango com ervas",
-    "eu adoro frango com ervas",
-    "gosto do frango com ervas",
-    "gosto de frango as ervas",
-    "gosto de frango com ervas finas",
-    "eu amo frango com ervas"
+    "o cachorro corre na grama",
+    "o cachorro corre no capim",
+    "o cao corre na grama",
+    "o cachorro corre pela grama"
    ],
    "distratores": [
-    "Gosto de frango com azeitonas.",
-    "Gosto de frango com cebolas.",
-    "Gosto de frango com castanhas.",
-    "Gosto de frango com amêndoas."
+    "O cachorro corre na areia.",
+    "O cachorro corre na rua.",
+    "O cachorro corre no parque.",
+    "O cachorro corre na lama."
    ],
-   "es": "Me gusta el pollo con hierbas.",
+   "es": "El perro corre por la hierba.",
    "aceitasEs": [
-    "Me gusta el pollo con hierbas.",
-    "Me gusta el pollo a las hierbas.",
-    "Me encanta el pollo a las hierbas.",
-    "Me encanta el pollo con hierbas."
+    "El perro corre por la hierba.",
+    "El perro corre en la hierba.",
+    "El perro corre por el césped.",
+    "El perro corre por el pasto."
    ],
    "distratoresEs": [
-    "Me gusta el pollo con aceitunas.",
-    "Me gusta el pollo con cebollas.",
-    "Me gusta el pollo con castañas.",
-    "Me gusta el pollo con almendras."
+    "El perro corre por la arena.",
+    "El perro corre por la calle.",
+    "El perro corre por el parque.",
+    "El perro corre por el barro."
    ],
-   "en": "I like chicken with herbs.",
+   "en": "The dog runs through the grass.",
    "aceitasEn": [
-    "i like chicken with herbs",
-    "i love chicken with herbs",
-    "i like herb chicken",
-    "i love herb chicken",
-    "i like herbed chicken"
+    "the dog runs through the grass",
+    "the dog runs in the grass",
+    "the dog is running through the grass",
+    "the dog runs on the grass"
    ],
    "distratoresEn": [
-    "I like chicken with olives.",
-    "I like chicken with onions.",
-    "I like chicken with chestnuts.",
-    "I like chicken with almonds."
+    "The dog runs on the sand.",
+    "The dog runs in the street.",
+    "The dog runs in the park.",
+    "The dog runs in the mud."
    ],
    "nivel": "A2",
    "tags": [
     "comida"
    ],
-   "nota": "No prato, «aux herbes», com ervas, como «le poulet aux champignons», frango com cogumelos. «J'aime le poulet» leva o artigo: o gosto é geral.",
-   "notaEs": "En el plato, «aux herbes», a las hierbas, como «le poulet aux champignons», pollo con champiñones. «J'aime le poulet» lleva artículo: el gusto es general.",
-   "notaEn": "On a menu, «aux herbes», with herbs, like «le poulet aux champignons», chicken with mushrooms. «J'aime le poulet» takes the article: liking in general.",
+   "nota": "«L'herbe» é a grama e a erva, feminino, com apóstrofo antes da vogal. «Dans l'herbe» é na grama. «Courir» é correr.",
+   "notaEs": "«L'herbe» es la hierba, femenino, con apóstrofo ante vocal. «Dans l'herbe» es en la hierba.",
+   "notaEn": "«L'herbe» is grass or herb, feminine, with an apostrophe before the vowel. «Dans l'herbe» means in the grass.",
    "requerTodas": [
-    "fr-p015",
-    "fr-p283",
     "fr-p575"
    ]
   },
@@ -94480,61 +94195,55 @@
    "id": "fr-u719",
    "tipo": "frase",
    "requer": "fr-p578",
-   "fr": "J'aime les premiers rayons de soleil.",
-   "pt": "Gosto dos primeiros raios de sol.",
+   "fr": "Le rayon des légumes est au fond.",
+   "pt": "A seção de legumes fica no fundo.",
    "aceitas": [
-    "gosto dos primeiros raios de sol",
-    "eu gosto dos primeiros raios de sol",
-    "adoro os primeiros raios de sol",
-    "gosto dos primeiros raios do sol",
-    "amo os primeiros raios de sol",
-    "eu adoro os primeiros raios de sol"
+    "a secao de legumes fica no fundo",
+    "a secao de legumes e no fundo",
+    "a secao de verduras fica no fundo",
+    "a secao de legumes fica ao fundo"
    ],
    "distratores": [
-    "Gosto dos primeiros dias de sol.",
-    "Gosto dos primeiros banhos de sol.",
-    "Gosto dos primeiros minutos de sol.",
-    "Gosto dos primeiros momentos de sol."
+    "A seção de frutas fica no fundo.",
+    "A seção de pães fica no fundo.",
+    "A seção de laticínios fica no fundo.",
+    "A seção de bebidas fica no fundo."
    ],
-   "es": "Me gustan los primeros rayos de sol.",
+   "es": "La sección de verduras está al fondo.",
    "aceitasEs": [
-    "Me gustan los primeros rayos de sol.",
-    "Me gustan los primeros rayos del sol.",
-    "Me encantan los primeros rayos de sol."
+    "La sección de verduras está al fondo.",
+    "La sección de verduras está en el fondo.",
+    "La sección de legumbres está al fondo.",
+    "El pasillo de verduras está al fondo."
    ],
    "distratoresEs": [
-    "Me gustan los primeros días de sol.",
-    "Me gustan los primeros baños de sol.",
-    "Me gustan los primeros minutos de sol.",
-    "Me gustan los primeros momentos de sol."
+    "La sección de frutas está al fondo.",
+    "La sección de panes está al fondo.",
+    "La sección de lácteos está al fondo.",
+    "La sección de bebidas está al fondo."
    ],
-   "en": "I love the first rays of sunshine.",
+   "en": "The vegetable section is at the back.",
    "aceitasEn": [
-    "i love the first rays of sunshine",
-    "i like the first rays of sunshine",
-    "i love the first rays of the sun",
-    "i like the first rays of the sun",
-    "i love the first sunbeams",
-    "i like the first sunbeams"
+    "the vegetable section is at the back",
+    "the vegetable aisle is at the back",
+    "the vegetable section is in the back",
+    "the vegetables section is at the back"
    ],
    "distratoresEn": [
-    "I love the first days of sunshine.",
-    "I love the first hours of sunshine.",
-    "I love the first minutes of sunshine.",
-    "I love the first moments of sunshine."
+    "The fruit section is at the back.",
+    "The bread section is at the back.",
+    "The dairy section is at the back.",
+    "The drinks section is at the back."
    ],
    "nivel": "B1",
    "tags": [
     "natureza"
    ],
-   "nota": "«Un rayon de soleil», um raio de sol. «Premier» vem antes do substantivo e concorda: «les premiers rayons».",
-   "notaEs": "«Un rayon de soleil», un rayo de sol. «Premier» va antes del sustantivo y concuerda: «les premiers rayons».",
-   "notaEn": "«Un rayon de soleil», a ray of sunshine. «Premier» goes before the noun and agrees: «les premiers rayons».",
+   "nota": "«Le rayon» é a seção ou a prateleira da loja; também é o raio de sol ou de roda. «Au fond» é no fundo.",
+   "notaEs": "«Le rayon» es la sección o el estante de una tienda; también es el rayo de sol. «Au fond» es al fondo.",
+   "notaEn": "«Le rayon» is a shop section or shelf; it also means a ray. «Au fond» means at the back.",
    "requerTodas": [
-    "fr-p015",
-    "fr-p211",
-    "fr-p578",
-    "fr-p383"
+    "fr-p578"
    ]
   },
   {
@@ -94735,62 +94444,53 @@
    "id": "fr-u723",
    "tipo": "frase",
    "requer": "fr-p582",
-   "fr": "J'ai mal à la nuque.",
-   "pt": "Estou com dor na nuca.",
+   "fr": "Elle a un tatouage sur la nuque.",
+   "pt": "Ela tem uma tatuagem na nuca.",
    "aceitas": [
-    "estou com dor na nuca",
-    "to com dor na nuca",
-    "tenho dor na nuca",
-    "minha nuca doi",
-    "minha nuca esta doendo",
-    "sinto dor na nuca",
-    "doi a nuca",
-    "doi minha nuca",
-    "estou com dor de nuca"
+    "ela tem uma tatuagem na nuca",
+    "ela tem uma tatuagem na nuca dela",
+    "ela tem tatuagem na nuca",
+    "ela tem uma tattoo na nuca"
    ],
    "distratores": [
-    "Estou com dor na garganta.",
-    "Estou com dor na cabeça.",
-    "Estou com dor na perna.",
-    "Estou com dor na barriga."
+    "Ela tem uma tatuagem no tornozelo.",
+    "Ela tem uma tatuagem no ombro.",
+    "Ela tem uma tatuagem na costela.",
+    "Ela tem uma tatuagem no pulso."
    ],
-   "es": "Me duele la nuca.",
+   "es": "Tiene un tatuaje en la nuca.",
    "aceitasEs": [
-    "Me duele la nuca.",
-    "Tengo dolor en la nuca.",
-    "Tengo dolor de nuca."
+    "Tiene un tatuaje en la nuca.",
+    "Ella tiene un tatuaje en la nuca.",
+    "Lleva un tatuaje en la nuca."
    ],
    "distratoresEs": [
-    "Me duele la garganta.",
-    "Me duele la cabeza.",
-    "Me duele la pierna.",
-    "Me duele la espalda."
+    "Tiene un tatuaje en el tobillo.",
+    "Tiene un tatuaje en el hombro.",
+    "Tiene un tatuaje en la costilla.",
+    "Tiene un tatuaje en la muñeca."
    ],
-   "en": "The back of my neck hurts.",
+   "en": "She has a tattoo on the back of her neck.",
    "aceitasEn": [
-    "the back of my neck hurts",
-    "my nape hurts",
-    "the nape of my neck hurts",
-    "i have a pain in the back of my neck",
-    "ive got a pain in the back of my neck",
-    "the back of my neck is sore"
+    "she has a tattoo on the back of her neck",
+    "she has a tattoo on her nape",
+    "she has a tattoo on her neck",
+    "she has a tattoo at the nape of her neck"
    ],
    "distratoresEn": [
-    "The back of my head hurts.",
-    "The back of my leg hurts.",
-    "The back of my hand hurts.",
-    "The back of my knee hurts."
+    "She has a tattoo on her ankle.",
+    "She has a tattoo on her shoulder.",
+    "She has a tattoo on her rib.",
+    "She has a tattoo on her wrist."
    ],
    "nivel": "C1",
    "tags": [
     "saúde"
    ],
-   "nota": "«Avoir mal à», sentir dor em: «j'ai mal à la tête», «j'ai mal au dos». O «à» se junta com «le»: «au».",
-   "notaEs": "«Avoir mal à», dolerle a uno: «j'ai mal à la tête», «j'ai mal au dos». La «à» se une con «le»: «au».",
-   "notaEn": "«Avoir mal à», to have a pain in: «j'ai mal à la tête», «j'ai mal au dos». «À» + «le» becomes «au».",
+   "nota": "«La nuque» é a nuca, a parte de trás do pescoço. «Sur la nuque» é na nuca, com o artigo.",
+   "notaEs": "«La nuque» es la nuca, la parte de atrás del cuello. «Sur la nuque» es en la nuca.",
+   "notaEn": "«La nuque» is the back of the neck. «Sur la nuque» means on the back of the neck.",
    "requerTodas": [
-    "fr-p002",
-    "fr-p151",
     "fr-p582"
    ]
   },
@@ -97315,62 +97015,54 @@
    "id": "fr-u789",
    "tipo": "frase",
    "requer": "fr-p611",
-   "fr": "J'aime les films comiques.",
-   "aceitasFr": [
-    "J'adore les films comiques."
-   ],
-   "pt": "Gosto de filmes de comédia.",
+   "fr": "Il raconte des histoires comiques.",
+   "pt": "Ele conta histórias engraçadas.",
    "aceitas": [
-    "gosto de filmes de comedia",
-    "eu gosto de filmes de comedia",
-    "gosto de filmes comicos",
-    "adoro filmes de comedia",
-    "gosto de comedias",
-    "amo filmes de comedia"
+    "ele conta historias engracadas",
+    "ele conta historias comicas",
+    "ele conta historias divertidas",
+    "ele conta historias de comedia"
    ],
    "distratores": [
-    "Gosto de filmes de terror.",
-    "Gosto de filmes de ação.",
-    "Gosto de filmes de guerra.",
-    "Gosto de filmes de aventura."
+    "Ele conta histórias tristes.",
+    "Ele conta histórias longas.",
+    "Ele conta histórias assustadoras.",
+    "Ele conta histórias antigas."
    ],
-   "es": "Me gustan las películas de comedia.",
+   "es": "Cuenta historias cómicas.",
    "aceitasEs": [
-    "Me gustan las películas cómicas.",
-    "Me gustan las comedias.",
-    "Me encantan las películas de comedia."
+    "Cuenta historias cómicas.",
+    "Cuenta historias graciosas.",
+    "Él cuenta historias cómicas.",
+    "Cuenta historias divertidas."
    ],
    "distratoresEs": [
-    "Me gustan las películas de terror.",
-    "Me gustan las películas de acción.",
-    "Me gustan las películas de guerra.",
-    "Me gustan las películas de aventuras."
+    "Cuenta historias tristes.",
+    "Cuenta historias largas.",
+    "Cuenta historias de miedo.",
+    "Cuenta historias antiguas."
    ],
-   "en": "I like comedy movies.",
+   "en": "He tells funny stories.",
    "aceitasEn": [
-    "i like comedy films",
-    "i like comedies",
-    "i love comedy movies",
-    "i love comedies",
-    "i like comic films",
-    "i love comedy films"
+    "he tells funny stories",
+    "he tells comic stories",
+    "he tells humorous stories",
+    "he tells amusing stories"
    ],
    "distratoresEn": [
-    "I like horror movies.",
-    "I like action movies.",
-    "I like war movies.",
-    "I like adventure movies."
+    "He tells sad stories.",
+    "He tells long stories.",
+    "He tells scary stories.",
+    "He tells old stories."
    ],
    "nivel": "B2",
    "tags": [
     "cultura"
    ],
-   "nota": "«Un film comique» é um filme de comédia. Depois de «aimer» vem o artigo definido, sem o «de» do português: «j'aime les films».",
-   "notaEs": "«Un film comique» es una película de comedia. Con «aimer», quien gusta es el sujeto y lo que gusta lleva artículo definido: «j'aime les films».",
-   "notaEn": "«Un film comique» is a comedy. After «aimer», French uses the definite article: «j'aime les films», I like movies.",
+   "nota": "«Comique» é cômico: serve para quem faz rir e para a coisa engraçada. O adjetivo vem depois do substantivo: «des histoires comiques».",
+   "notaEs": "«Comique» es cómico: sirve para quien hace reír y para lo gracioso. El adjetivo va después: «des histoires comiques».",
+   "notaEn": "«Comique» means comic or funny. The adjective comes after the noun: «des histoires comiques».",
    "requerTodas": [
-    "fr-p015",
-    "fr-p100",
     "fr-p611"
    ]
   },
@@ -99601,59 +99293,55 @@
    "id": "fr-u827",
    "tipo": "frase",
    "requer": "fr-p641",
-   "fr": "Je me réveille à sept heures.",
-   "pt": "Acordo às sete horas.",
+   "fr": "Le bruit réveille le bébé.",
+   "pt": "O barulho acorda o bebê.",
    "aceitas": [
-    "acordo as sete horas",
-    "eu acordo as sete",
-    "acordo as sete",
-    "eu acordo as sete horas",
-    "acordo as 7",
-    "acordo as sete da manha",
-    "eu acordo as 7 horas"
+    "o barulho acorda o bebe",
+    "o barulho acorda o nenem",
+    "o ruido acorda o bebe",
+    "o barulho desperta o bebe"
    ],
    "distratores": [
-    "Durmo às sete horas.",
-    "Saio às sete horas.",
-    "Janto às sete horas.",
-    "Chego às sete horas."
+    "O barulho assusta o bebê.",
+    "O barulho cansa o bebê.",
+    "O barulho distrai o bebê.",
+    "O barulho incomoda o bebê."
    ],
-   "es": "Me despierto a las siete.",
+   "es": "El ruido despierta al bebé.",
    "aceitasEs": [
-    "Despierto a las siete.",
-    "Me despierto a las 7.",
-    "Me despierto a las siete en punto."
+    "El ruido despierta al bebé.",
+    "El ruido despierta al niño.",
+    "El ruido despierta al bebe.",
+    "El ruido le despierta al bebé."
    ],
    "distratoresEs": [
-    "Me duermo a las siete.",
-    "Salgo a las siete.",
-    "Ceno a las siete.",
-    "Llego a las siete."
+    "El ruido asusta al bebé.",
+    "El ruido cansa al bebé.",
+    "El ruido distrae al bebé.",
+    "El ruido molesta al bebé."
    ],
-   "en": "I wake up at seven o'clock.",
+   "en": "The noise wakes the baby.",
    "aceitasEn": [
-    "i wake up at seven",
-    "i wake up at 7",
-    "i wake at seven",
-    "i wake up at seven oclock"
+    "the noise wakes the baby",
+    "the noise wakes up the baby",
+    "the noise wakes the baby up",
+    "the noise is waking the baby"
    ],
    "distratoresEn": [
-    "I fall asleep at seven o'clock.",
-    "I go out at seven o'clock.",
-    "I have dinner at seven o'clock.",
-    "I arrive at seven o'clock."
+    "The noise scares the baby.",
+    "The noise tires the baby.",
+    "The noise distracts the baby.",
+    "The noise bothers the baby."
    ],
    "nivel": "A1",
    "tags": [
     "cotidiano"
    ],
-   "nota": "«Se réveiller», com o pronome, é acordar sozinho; sem ele, «je réveille», acordo outra pessoa. Levantar da cama é «se lever».",
-   "notaEs": "«Se réveiller», con el pronombre, es despertarse; sin él, «je réveille», despierto a otra persona. Levantarse es «se lever».",
-   "notaEn": "«Se réveiller», with the pronoun, is to wake up; without it, «je réveille», I wake someone else. Getting out of bed is «se lever».",
+   "nota": "«Réveiller» alguém é acordar o outro; com o pronome, «se réveiller», é acordar sozinho. «Le bruit» é o barulho.",
+   "notaEs": "«Réveiller» es despertar a otro; con el pronombre, «se réveiller», es despertarse.",
+   "notaEn": "«Réveiller» means to wake someone; with the pronoun, «se réveiller», you wake yourself.",
    "requerTodas": [
-    "fr-p641",
-    "fr-p178",
-    "fr-p129"
+    "fr-p641"
    ]
   },
   {
@@ -99840,62 +99528,56 @@
    "id": "fr-u831",
    "tipo": "frase",
    "requer": "fr-p644",
-   "fr": "Il fait trop chaud, restons à l'ombre.",
-   "pt": "Está quente demais, vamos ficar na sombra.",
+   "fr": "Le chat dort à l'ombre.",
+   "pt": "O gato dorme na sombra.",
    "aceitas": [
-    "esta quente demais vamos ficar na sombra",
-    "ta quente demais vamos ficar na sombra",
-    "esta muito quente vamos ficar na sombra",
-    "esta calor demais vamos ficar na sombra",
-    "esta quente demais fiquemos na sombra",
-    "faz calor demais vamos ficar na sombra",
-    "ta muito calor vamos ficar na sombra",
-    "esta quente demais vamos ficar a sombra",
-    "ta calor demais vamos ficar na sombra"
+    "o gato dorme na sombra",
+    "o gato dorme a sombra",
+    "o gato esta dormindo na sombra",
+    "o gato cochila na sombra"
    ],
    "distratores": [
-    "Está quente demais, vamos ficar na praia.",
-    "Está quente demais, vamos ficar na cozinha.",
-    "Está quente demais, vamos ficar na varanda.",
-    "Está quente demais, vamos ficar na piscina."
+    "O gato dorme no sol.",
+    "O gato dorme na grama.",
+    "O gato dorme no sofá.",
+    "O gato dorme na cama."
    ],
-   "es": "Hace demasiado calor, quedémonos a la sombra.",
+   "es": "El gato duerme a la sombra.",
    "aceitasEs": [
-    "Hace mucho calor, quedémonos a la sombra.",
-    "Hace demasiado calor, vamos a quedarnos a la sombra.",
-    "Hace demasiado calor, quedémonos en la sombra."
+    "El gato duerme a la sombra.",
+    "El gato duerme en la sombra.",
+    "El gato está durmiendo a la sombra.",
+    "El gato duerme bajo la sombra."
    ],
    "distratoresEs": [
-    "Hace demasiado calor, quedémonos en la playa.",
-    "Hace demasiado calor, quedémonos en la cocina.",
-    "Hace demasiado calor, quedémonos en la terraza.",
-    "Hace demasiado calor, quedémonos en la piscina."
+    "El gato duerme al sol.",
+    "El gato duerme en la hierba.",
+    "El gato duerme en el sofá.",
+    "El gato duerme en la cama."
    ],
-   "en": "It's too hot, let's stay in the shade.",
+   "en": "The cat sleeps in the shade.",
    "aceitasEn": [
-    "it is too hot lets stay in the shade",
-    "its so hot lets stay in the shade",
-    "its too hot lets keep to the shade"
+    "the cat sleeps in the shade",
+    "the cat is sleeping in the shade",
+    "the cat sleeps in the shadow",
+    "the cat naps in the shade"
    ],
    "distratoresEn": [
-    "It's too hot, let's stay on the beach.",
-    "It's too hot, let's stay in the kitchen.",
-    "It's too hot, let's stay on the porch.",
-    "It's too hot, let's stay in the pool."
+    "The cat sleeps in the sun.",
+    "The cat sleeps on the grass.",
+    "The cat sleeps on the sofa.",
+    "The cat sleeps in the bed."
    ],
    "nivel": "A2",
    "tags": [
     "natureza"
    ],
-   "nota": "«Restons», imperativo de «nous»: vamos ficar. O calor do tempo se diz com «faire»: «il fait chaud».",
-   "notaEs": "«Restons», imperativo de «nous»: quedémonos. El tiempo se dice con «faire»: «il fait chaud», hace calor.",
-   "notaEn": "«Restons», the «nous» imperative: let's stay. Weather takes «faire»: «il fait chaud», it's hot.",
+   "nota": "«L'ombre» é a sombra: «à l'ombre», na sombra; o contrário, «au soleil», ao sol. Também é «l'ombre» a sombra de uma pessoa.",
+   "notaEs": "«L'ombre» es la sombra: «à l'ombre», a la sombra; lo contrario, «au soleil».",
+   "notaEn": "«L'ombre» is the shade: «à l'ombre», in the shade; the opposite is «au soleil».",
    "requerTodas": [
-    "fr-p004",
-    "fr-p061",
-    "fr-p112",
-    "fr-p269",
-    "fr-p644"
+    "fr-p644",
+    "fr-p112"
    ]
   },
   {

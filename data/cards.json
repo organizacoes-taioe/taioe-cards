@@ -5683,53 +5683,42 @@
    "idioma": "es",
    "id": "f069",
    "tipo": "frase",
-   "es": "Vale, quedamos a las ocho.",
-   "pt": "Beleza, a gente se encontra às oito.",
-   "en": "OK, let's meet at eight.",
+   "es": "Quedamos en la puerta del cine.",
+   "pt": "A gente se encontra na porta do cinema.",
+   "en": "We're meeting at the door of the cinema.",
    "aceitas": [
-    "beleza a gente se encontra as oito",
-    "ok combinado as oito",
-    "ta bom nos vemos as oito",
-    "fechado as oito",
-    "beleza fica combinado as oito",
-    "ta certo a gente se ve as oito",
-    "ok nos vemos as oito",
-    "ok a gente se encontra as oito",
-    "beleza nos vemos as oito",
-    "ok fica combinado as oito",
-    "beleza combinado as oito"
+    "a gente se encontra na porta do cinema",
+    "a gente marcou na porta do cinema",
+    "a gente combinou na porta do cinema",
+    "nos encontramos na porta do cinema"
    ],
    "aceitasEn": [
-    "ok lets meet at eight",
-    "okay lets meet at eight",
-    "right lets meet at eight",
-    "fine well meet at eight",
-    "ok were meeting at eight",
-    "sure lets meet at eight"
+    "were meeting at the door of the cinema",
+    "were meeting at the cinema entrance",
+    "we have agreed to meet at the door of the cinema",
+    "well meet at the cinema door"
    ],
    "distratores": [
-    "Tudo bem, isso vale oito reais.",
-    "Beleza, a gente fica até as oito.",
-    "Certo, sobraram oito lugares para nós.",
-    "Combinado, vale a pena chegar às oito."
+    "A gente se despede na porta do cinema.",
+    "A gente espera na porta do cinema.",
+    "A gente dorme na porta do cinema.",
+    "A gente trabalha na porta do cinema."
    ],
    "distratoresEn": [
-    "Fine, that is worth eight euros.",
-    "OK, we will stay until eight.",
-    "Right, eight places are left for us.",
-    "Agreed, it is worth arriving at eight."
+    "We're saying goodbye at the door of the cinema.",
+    "We're waiting at the door of the cinema.",
+    "We're sleeping at the door of the cinema.",
+    "We're working at the door of the cinema."
    ],
    "nivel": "B1",
    "tags": [
-    "cotidiano",
-    "Espanha"
+    "cotidiano"
    ],
-   "nota": "'Quedar' = marcar/combinar encontro. 'Vale' = ok (Espanha).",
-   "notaEn": "'Quedar' here is to arrange to meet: 'hemos quedado a las ocho'. 'Vale' is the all-purpose OK in Spain — in Latin America you would hear 'listo', 'dale' or 'bueno'.",
+   "nota": "«Quedar» aqui é marcar de se encontrar: «quedamos en» + lugar. Não é «ficar»: para ficar num lugar, «quedarse».",
+   "notaEn": "«Quedar» here means to arrange to meet: «quedamos en» + place. To stay somewhere is «quedarse».",
    "requerTodas": [
-    "p434",
     "p366",
-    "p467"
+    "p625"
    ]
   },
   {
@@ -20804,44 +20793,40 @@
    "id": "u061",
    "tipo": "frase",
    "requer": "p036",
-   "es": "Mañana tengo que madrugar.",
-   "pt": "Amanhã tenho que acordar cedo.",
-   "en": "I have to get up early tomorrow.",
+   "es": "Mi padre madruga todos los días.",
+   "pt": "Meu pai acorda cedo todos os dias.",
+   "en": "My father gets up early every day.",
    "aceitas": [
-    "amanha tenho que acordar cedo",
-    "amanha eu tenho que acordar cedo",
-    "amanha preciso acordar cedo",
-    "amanha tenho que madrugar",
-    "tenho que acordar cedo amanha",
-    "amanha tenho de acordar cedo"
+    "meu pai acorda cedo todos os dias",
+    "meu pai levanta cedo todos os dias",
+    "meu pai acorda cedo todo dia",
+    "meu pai madruga todos os dias"
    ],
    "aceitasEn": [
-    "i have to get up early tomorrow",
-    "tomorrow i have to get up early",
-    "i have to wake up early tomorrow",
-    "i need to get up early tomorrow"
+    "my father gets up early every day",
+    "my dad gets up early every day",
+    "my father wakes up early every day",
+    "my dad wakes up early every day"
    ],
    "distratores": [
-    "Amanhã tenho que dormir tarde.",
-    "Amanhã tenho que ficar acordado.",
-    "Amanhã tenho que sair de madrugada.",
-    "Amanhã tenho que trabalhar até tarde."
+    "Meu pai dorme até tarde todos os dias.",
+    "Meu pai trabalha de noite todos os dias.",
+    "Meu pai volta cedo todos os dias.",
+    "Meu pai passa a noite acordado todos os dias."
    ],
    "distratoresEn": [
-    "I have to sleep late tomorrow.",
-    "I have to stay up tomorrow.",
-    "I have to leave at dawn tomorrow.",
-    "I have to work late tomorrow."
+    "My father sleeps in every day.",
+    "My father works at night every day.",
+    "My father comes home early every day.",
+    "My father stays up all night every day."
    ],
    "nivel": "B1",
    "tags": [
     "verbo"
    ],
    "nota": "«Madrugar» é levantar cedo, e não passar a madrugada acordado — isso é «trasnochar».\n🇪🇸 madrugar → 🇧🇷 acordar cedo\n🇪🇸 trasnochar → 🇧🇷 virar a noite",
-   "notaEn": "'Madrugar' is to get up early. Staying up late is the opposite verb, 'trasnochar'.",
+   "notaEn": "«Madrugar» means to get up early, not to stay up all night — that is «trasnochar».",
    "requerTodas": [
-    "p372",
-    "p354",
     "p036"
    ]
   },
@@ -21817,48 +21802,40 @@
    "id": "u082",
    "tipo": "frase",
    "requer": "p073",
-   "es": "Se me cayó el vaso al suelo.",
-   "pt": "Deixei o copo cair no chão.",
-   "en": "I dropped the glass on the floor.",
+   "es": "El suelo está mojado.",
+   "pt": "O chão está molhado.",
+   "en": "The floor is wet.",
    "aceitas": [
-    "deixei o copo cair no chao",
-    "o copo caiu no chao",
-    "o copo me caiu no chao",
-    "deixei cair o copo no chao",
-    "derrubei o copo no chao",
-    "deixei o copo cair no chao sem querer"
+    "o chao esta molhado",
+    "o piso esta molhado",
+    "o chao esta encharcado"
    ],
    "aceitasEn": [
-    "i dropped the glass on the floor",
-    "the glass fell on the floor",
-    "i dropped the glass",
-    "my glass fell to the floor"
+    "the floor is wet",
+    "the ground is wet",
+    "the floor is soaked"
    ],
    "distratores": [
-    "Deixei o vaso cair no chão.",
-    "Deixei o copo em cima da mesa.",
-    "Deixei o copo sujo na pia.",
-    "Deixei o copo cheio de água."
+    "O chão está sujo.",
+    "O chão está frio.",
+    "O chão está limpo.",
+    "O chão está escorregadio."
    ],
    "distratoresEn": [
-    "I dropped the vase on the floor.",
-    "I left the glass on the table.",
-    "I left the dirty glass in the sink.",
-    "I left the glass full of water."
+    "The floor is dirty.",
+    "The floor is cold.",
+    "The floor is clean.",
+    "The floor is slippery."
    ],
    "nivel": "A1",
    "tags": [
     "casa"
    ],
-   "nota": "«Se me cayó» é o acidente sem culpado: a coisa caiu, e eu estava ali. «Suelo» é o chão; a forma de «soler» é outra palavra.",
-   "notaEn": "'Se me cayó' frames the accident as something that happened to me, not something I did. 'Suelo' here is the floor, not the verb form of 'soler'.",
-   "regionaisEs": {
-    "Se me cayó el vaso al piso.": "na América Latina"
-   },
+   "nota": "«El suelo» é o chão; «el piso» é o andar e, na América, também o chão. «Suelo» é ainda uma forma de «soler».",
+   "notaEn": "«El suelo» is the floor or the ground. «Suelo» is also a form of «soler».",
    "requerTodas": [
-    "p370",
-    "p012",
-    "p073"
+    "p073",
+    "p358"
    ]
   },
   {
@@ -21912,43 +21889,42 @@
    "id": "u084",
    "tipo": "frase",
    "requer": "p075",
-   "es": "La tienda cierra a las nueve.",
-   "pt": "A loja fecha às nove.",
-   "en": "The shop closes at nine.",
+   "es": "La tienda de la esquina vende pan.",
+   "pt": "A loja da esquina vende pão.",
+   "en": "The corner shop sells bread.",
    "aceitas": [
-    "a loja fecha as nove",
-    "a loja fecha as nove horas",
-    "a loja fecha as 9",
-    "a loja fecha as nove da noite"
+    "a loja da esquina vende pao",
+    "o comercio da esquina vende pao"
    ],
    "aceitasEn": [
-    "the shop closes at nine",
-    "the store closes at nine",
-    "the shop shuts at nine",
-    "the shop closes at 9"
+    "the corner shop sells bread",
+    "the shop on the corner sells bread",
+    "the corner store sells bread",
+    "the store on the corner sells bread"
    ],
    "distratores": [
-    "A loja abre às nove.",
-    "A tenda fecha às nove.",
-    "A escola fecha às nove.",
-    "A loja fecha às onze."
+    "A farmácia da esquina vende pão.",
+    "A livraria da esquina vende pão.",
+    "A oficina da esquina vende pão.",
+    "A joalheria da esquina vende pão."
    ],
    "distratoresEn": [
-    "The shop opens at nine.",
-    "The tent closes at nine.",
-    "The school closes at nine.",
-    "The shop closes at eleven."
+    "The corner pharmacy sells bread.",
+    "The corner bookstore sells bread.",
+    "The corner garage sells bread.",
+    "The corner jeweler's sells bread."
    ],
    "nivel": "A1",
    "tags": [
     "cidade"
    ],
-   "nota": "«Tienda» é qualquer loja; a barraca de camping é «tienda de campaña». Fechar é «cerrar», e ela fecha «a las» horas.",
-   "notaEn": "'Tienda' is any shop; a camping tent is 'tienda de campaña'. Times take 'a las': 'a las nueve'.",
+   "nota": "«Tienda» é qualquer loja; a barraca de camping é «tienda de campaña». «La esquina» é a esquina da rua, por fora.",
+   "notaEn": "«Tienda» is any shop; a camping tent is «tienda de campaña». «La esquina» is the outer corner of a street.",
    "requerTodas": [
     "p075",
-    "p438",
-    "p853"
+    "p241",
+    "p905",
+    "p453"
    ]
   },
   {
@@ -23216,43 +23192,41 @@
    "id": "u112",
    "tipo": "frase",
    "requer": "p109",
-   "es": "Me desperté a las seis.",
-   "pt": "Acordei às seis.",
-   "en": "I woke up at six.",
+   "es": "El bebé se despertó llorando.",
+   "pt": "O bebê acordou chorando.",
+   "en": "The baby woke up crying.",
    "aceitas": [
-    "acordei as seis",
-    "eu acordei as seis",
-    "acordei as seis horas",
-    "despertei as seis",
-    "acordei as 6"
+    "o bebe acordou chorando",
+    "o nenem acordou chorando",
+    "o bebe acordou aos prantos"
    ],
    "aceitasEn": [
-    "i woke up at six",
-    "i woke at six",
-    "i woke up at six o clock"
+    "the baby woke up crying",
+    "the baby woke crying",
+    "the baby woke up in tears"
    ],
    "distratores": [
-    "Me lembrei às seis.",
-    "Dormi às seis.",
-    "Saí às seis.",
-    "Tomei banho às seis."
+    "O bebê adormeceu chorando.",
+    "O bebê nasceu chorando.",
+    "O bebê chegou chorando.",
+    "O bebê saiu chorando."
    ],
    "distratoresEn": [
-    "I remembered at six.",
-    "I fell asleep at six.",
-    "I went out at six.",
-    "I showered at six."
+    "The baby fell asleep crying.",
+    "The baby was born crying.",
+    "The baby arrived crying.",
+    "The baby left crying."
    ],
    "nivel": "A2",
    "tags": [
     "falso-amigo",
     "verbo"
    ],
-   "nota": "Acordar do sono é «despertarse». «Acordarse» é lembrar-se.\n🇪🇸 me desperté → 🇧🇷 acordei\n🇪🇸 me acordé → 🇧🇷 lembrei",
-   "notaEn": "'Despertarse' is to wake up; 'levantarse' is to get out of bed. 'Acordarse' means to remember.",
+   "nota": "Acordar do sono é «despertarse». «Acordarse» é lembrar-se.\n🇪🇸 se despertó → 🇧🇷 acordou\n🇪🇸 se acordó → 🇧🇷 lembrou",
+   "notaEn": "To wake up is «despertarse». «Acordarse» means to remember.",
    "requerTodas": [
     "p109",
-    "p889"
+    "p540"
    ]
   },
   {
@@ -24542,44 +24516,43 @@
    "id": "u141",
    "tipo": "frase",
    "requer": "p139",
-   "es": "Tengo que ir con corbata a la boda.",
-   "pt": "Tenho que ir de gravata ao casamento.",
-   "en": "I have to wear a tie to the wedding.",
+   "es": "Mi tío siempre lleva corbata.",
+   "pt": "Meu tio sempre usa gravata.",
+   "en": "My uncle always wears a tie.",
    "aceitas": [
-    "tenho que ir de gravata ao casamento",
-    "tenho que ir de gravata no casamento",
-    "preciso ir de gravata ao casamento",
-    "tenho de ir de gravata ao casamento",
-    "tenho que usar gravata no casamento"
+    "meu tio sempre usa gravata",
+    "meu tio sempre veste gravata",
+    "meu tio esta sempre de gravata",
+    "meu tio sempre vai de gravata"
    ],
    "aceitasEn": [
-    "i have to wear a tie to the wedding",
-    "i need to wear a tie to the wedding",
-    "i have to go to the wedding in a tie"
+    "my uncle always wears a tie",
+    "my uncle always wears a necktie",
+    "my uncle is always wearing a tie"
    ],
    "distratores": [
-    "Tenho que ir de chinelo ao casamento.",
-    "Tenho que ir de terno ao trabalho.",
-    "Tenho que ir de chapéu ao casamento.",
-    "Tenho que ir de óculos ao casamento."
+    "Meu tio sempre usa chapéu.",
+    "Meu tio sempre usa óculos.",
+    "Meu tio sempre usa cinto.",
+    "Meu tio sempre usa relógio."
    ],
    "distratoresEn": [
-    "I have to wear flip-flops to the wedding.",
-    "I have to wear a suit to work.",
-    "I have to wear a hat to the wedding.",
-    "I have to wear glasses to the wedding."
+    "My uncle always wears a hat.",
+    "My uncle always wears glasses.",
+    "My uncle always wears a belt.",
+    "My uncle always wears a watch."
    ],
    "nivel": "A2",
    "tags": [
     "roupa"
    ],
-   "nota": "«Ir con corbata» é ir de gravata: o espanhol usa «con» onde o português usa «de». «La boda» é o casamento.",
-   "notaEn": "'Ir con corbata' is to go wearing a tie. 'La boda' is the wedding.",
+   "nota": "«Llevar corbata» é usar gravata: com roupa, «llevar» é usar. «Ir con corbata» é ir de gravata, com «con» onde o português usa «de».",
+   "notaEn": "«Llevar corbata» means to wear a tie: with clothes, «llevar» means to wear.",
    "requerTodas": [
-    "p354",
-    "p355",
     "p139",
-    "p735"
+    "p511",
+    "p359",
+    "p407"
    ]
   },
   {
@@ -25603,52 +25576,42 @@
    "id": "u164",
    "tipo": "frase",
    "requer": "p163",
-   "es": "Hay que llamar al fontanero, gotea el grifo.",
-   "pt": "Tem que chamar o encanador, a torneira está pingando.",
-   "en": "We need to call the plumber, the tap is dripping.",
+   "es": "El fontanero arregló la tubería.",
+   "pt": "O encanador consertou o cano.",
+   "en": "The plumber fixed the pipe.",
    "aceitas": [
-    "tem que chamar o encanador a torneira esta pingando",
-    "e preciso chamar o encanador a torneira esta pingando",
-    "temos que chamar o encanador a torneira esta pingando",
-    "precisa chamar o encanador a torneira pinga",
-    "tem que chamar o bombeiro a torneira esta pingando",
-    "e necessario chamar o encanador a torneira esta pingando"
+    "o encanador consertou o cano",
+    "o encanador arrumou o cano",
+    "o encanador consertou a tubulacao",
+    "o bombeiro hidraulico consertou o cano"
    ],
    "aceitasEn": [
-    "we need to call the plumber the tap is dripping",
-    "we have to call the plumber the tap is dripping",
-    "call the plumber the faucet is dripping"
+    "the plumber fixed the pipe",
+    "the plumber repaired the pipe",
+    "the plumber fixed the pipes",
+    "the plumber repaired the plumbing"
    ],
    "distratores": [
-    "Tem que chamar o eletricista, a luz está piscando.",
-    "Tem que chamar o pedreiro, a parede está rachando.",
-    "Tem que chamar o chaveiro, a porta está emperrando.",
-    "Tem que chamar o pintor, o teto está descascando."
+    "O eletricista consertou o cano.",
+    "O pedreiro consertou o cano.",
+    "O pintor consertou o cano.",
+    "O carpinteiro consertou o cano."
    ],
    "distratoresEn": [
-    "We need to call the electrician, the light is flickering.",
-    "We need to call the builder, the wall is cracking.",
-    "We need to call the locksmith, the door is sticking.",
-    "We need to call the painter, the ceiling is peeling."
+    "The electrician fixed the pipe.",
+    "The bricklayer fixed the pipe.",
+    "The painter fixed the pipe.",
+    "The carpenter fixed the pipe."
    ],
    "nivel": "B1",
    "tags": [
     "profissões"
    ],
-   "nota": "«Fontanero» é da Espanha; na América Latina é «plomero». «Gotear» é pingar, de «gota».",
-   "notaEn": "'Fontanero' is Spain's plumber; Latin America says 'plomero'. 'Gotear' is to drip, from 'gota'.",
-   "regionaisEs": {
-    "Hay que llamar al plomero, gotea la llave.": "em boa parte da América Latina",
-    "Hay que llamar al plomero, gotea la canilla.": "na Argentina e no Uruguai",
-    "Hay que llamar al fontanero, gotea el caño.": "no Peru",
-    "Hay que llamar al plomero, gotea el grifo.": "na América Latina"
-   },
+   "nota": "«Fontanero» é da Espanha; na América Latina, «plomero». «La tubería» é o encanamento; «el tubo», o cano.",
+   "notaEn": "«Fontanero» is used in Spain; in Latin America it is «plomero». «La tubería» is the plumbing.",
    "requerTodas": [
-    "p352",
-    "p381",
     "p163",
-    "p715",
-    "p080"
+    "p343"
    ]
   },
   {
@@ -26732,45 +26695,42 @@
    "id": "u188",
    "tipo": "frase",
    "requer": "p191",
-   "es": "No seas remilgad{o|a} y pruébalo.",
-   "pt": "Não seja fresc{o|a} e experimenta.",
-   "en": "Don't be so prissy and try it.",
+   "es": "Mi primo es remilgado con la comida.",
+   "pt": "Meu primo é fresco com a comida.",
+   "en": "My cousin is picky about food.",
    "aceitas": [
-    "nao seja fresc{o|a} e experimenta",
-    "nao seja melindros{o|a} e prova",
-    "deixa de frescura e experimenta",
-    "nao seja enjoad{o|a} e prova",
-    "nao seja che{io|ia} de nove horas e experimenta",
-    "nao seja fresc{o|a} e prova"
+    "meu primo e fresco com a comida",
+    "meu primo e enjoado com a comida",
+    "meu primo e exigente com a comida",
+    "meu primo e cheio de frescura com a comida"
    ],
    "aceitasEn": [
-    "don t be so prissy and try it",
-    "don t be fussy and try it",
-    "stop being so squeamish and try it",
-    "don t be picky just try it"
+    "my cousin is picky about food",
+    "my cousin is fussy about food",
+    "my cousin is picky about his food",
+    "my cousin is a picky eater"
    ],
    "distratores": [
-    "Não seja apressad{o|a} e experimenta.",
-    "Não seja gulos{o|a} e divide.",
-    "Não seja teimos{o|a} e escuta.",
-    "Não seja tímid{o|a} e dança."
+    "Meu primo é guloso com a comida.",
+    "Meu primo é educado com a comida.",
+    "Meu primo é calmo com a comida.",
+    "Meu primo é generoso com a comida."
    ],
    "distratoresEn": [
-    "Don't be so hasty and try it.",
-    "Don't be greedy and share it.",
-    "Don't be stubborn and listen.",
-    "Don't be shy and dance."
+    "My cousin is greedy about food.",
+    "My cousin is polite about food.",
+    "My cousin is calm about food.",
+    "My cousin is generous about food."
    ],
    "nivel": "C2",
    "tags": [
     "adjetivo"
    ],
-   "nota": "«Remilgado» é cheio de melindres, afetado. Os melindres são «los remilgos»: «hacer remilgos a la comida».",
-   "notaEn": "'Remilgado' is prissy or finicky; the fussing itself is 'los remilgos'.",
+   "nota": "«Remilgado» é melindroso, enjoado: «los remilgos» são os melindres, e «hacer remilgos a la comida» é fazer cena na hora de comer.",
+   "notaEn": "«Remilgado» means fussy, prim. «Los remilgos» are the fuss: «hacer remilgos a la comida».",
    "requerTodas": [
-    "p351",
     "p191",
-    "p873"
+    "p524"
    ]
   },
   {
@@ -27010,49 +26970,42 @@
    "id": "u194",
    "tipo": "frase",
    "requer": "p198",
-   "es": "Hay que acatar la decisión del juez.",
-   "pt": "É preciso acatar a decisão do juiz.",
-   "en": "The judge's decision must be complied with.",
+   "es": "Los ciudadanos deben acatar la ley.",
+   "pt": "Os cidadãos devem acatar a lei.",
+   "en": "Citizens must obey the law.",
    "aceitas": [
-    "e preciso acatar a decisao do juiz",
-    "tem que acatar a decisao do juiz",
-    "e preciso cumprir a decisao do juiz",
-    "tem que respeitar a decisao do juiz",
-    "temos que acatar a decisao do juiz",
-    "e preciso obedecer a decisao do juiz",
-    "e necessario acatar a decisao do juiz",
-    "e necessario cumprir a decisao do juiz",
-    "e necessario obedecer a decisao do juiz"
+    "os cidadaos devem acatar a lei",
+    "os cidadaos devem obedecer a lei",
+    "os cidadaos devem cumprir a lei",
+    "os cidadaos devem respeitar a lei"
    ],
    "aceitasEn": [
-    "the judge s decision must be complied with",
-    "we must abide by the judge s decision",
-    "you have to comply with the judge s ruling",
-    "the judge s decision has to be respected"
+    "citizens must obey the law",
+    "the citizens must obey the law",
+    "citizens must comply with the law",
+    "citizens must abide by the law"
    ],
    "distratores": [
-    "É preciso atacar a decisão do juiz.",
-    "É preciso adiar a decisão do juiz.",
-    "É preciso explicar a decisão do juiz.",
-    "É preciso publicar a decisão do juiz."
+    "Os cidadãos devem atacar a lei.",
+    "Os cidadãos devem alterar a lei.",
+    "Os cidadãos devem revogar a lei.",
+    "Os cidadãos devem debater a lei."
    ],
    "distratoresEn": [
-    "The judge's decision must be attacked.",
-    "The judge's decision must be postponed.",
-    "The judge's decision must be explained.",
-    "The judge's decision must be published."
+    "Citizens must attack the law.",
+    "Citizens must change the law.",
+    "Citizens must repeal the law.",
+    "Citizens must debate the law."
    ],
    "nivel": "B2",
    "tags": [
     "verbo"
    ],
-   "nota": "«Acatar» é cumprir e respeitar: uma ordem, uma lei, uma decisão. As letras são as mesmas de «atacar», que é o oposto.",
-   "notaEn": "'Acatar' is to comply with and respect an order, law or ruling. Its letters rearrange into 'atacar', to attack — the opposite.",
+   "nota": "«Acatar» é cumprir e respeitar: uma lei, uma ordem, uma decisão. As letras são as de «atacar», que é o oposto.",
+   "notaEn": "«Acatar» means to obey and respect a law, an order, a decision. It has the same letters as «atacar» (to attack).",
    "requerTodas": [
-    "p352",
     "p198",
-    "p756",
-    "p651"
+    "p1048"
    ]
   },
   {
@@ -27541,47 +27494,43 @@
    "id": "u205",
    "tipo": "frase",
    "requer": "p209",
-   "es": "Tengo cita con el dentista a las cinco.",
-   "pt": "Tenho consulta com o dentista às cinco.",
-   "en": "I've got a dentist's appointment at five.",
+   "es": "Tengo una cita con el médico el lunes.",
+   "pt": "Tenho uma consulta com o médico na segunda.",
+   "en": "I have an appointment with the doctor on Monday.",
    "aceitas": [
-    "tenho consulta com o dentista as cinco",
-    "tenho hora marcada no dentista as cinco",
-    "tenho dentista as cinco",
-    "tenho consulta no dentista as cinco",
-    "tenho horario com o dentista as cinco",
-    "tenho uma consulta com o dentista as cinco"
+    "tenho uma consulta com o medico na segunda",
+    "tenho uma consulta com o medico na segunda feira",
+    "tenho hora marcada com o medico na segunda",
+    "tenho consulta com o medico na segunda"
    ],
    "aceitasEn": [
-    "i ve got a dentist s appointment at five",
-    "i have an appointment with the dentist at five",
-    "i have a dental appointment at five",
-    "i m seeing the dentist at five"
+    "i have an appointment with the doctor on monday",
+    "i have a doctors appointment on monday",
+    "i have an appointment with the doctor monday"
    ],
    "distratores": [
-    "Tenho encontro com a namorada às cinco.",
-    "Tenho aula com o professor às cinco.",
-    "Tenho reunião com o chefe às cinco.",
-    "Tenho jogo com os amigos às cinco."
+    "Tenho uma reunião com o médico na segunda.",
+    "Tenho uma discussão com o médico na segunda.",
+    "Tenho uma entrevista com o médico na segunda.",
+    "Tenho uma viagem com o médico na segunda."
    ],
    "distratoresEn": [
-    "I've got a date with my girlfriend at five.",
-    "I've got a lesson with the teacher at five.",
-    "I've got a meeting with the boss at five.",
-    "I've got a match with friends at five."
+    "I have a meeting with the doctor on Monday.",
+    "I have an argument with the doctor on Monday.",
+    "I have an interview with the doctor on Monday.",
+    "I have a trip with the doctor on Monday."
    ],
    "nivel": "B1",
    "tags": [
     "falso-amigo",
     "cotidiano"
    ],
-   "nota": "«Cita» é a hora marcada com médico, o encontro amoroso e a citação de um texto. «Tener cita» dispensa o artigo.",
-   "notaEn": "'Cita' covers an appointment, a date and a quotation. 'Tener cita' needs no article.",
+   "nota": "«Cita» é a hora marcada com o médico, o encontro amoroso e a citação de um texto. A consulta é «la cita» ou «la consulta».",
+   "notaEn": "«Cita» is an appointment with a doctor, a date, and a quotation.",
    "requerTodas": [
-    "p354",
     "p209",
-    "p633",
-    "p396"
+    "p354",
+    "p422"
    ]
   },
   {
@@ -27634,47 +27583,41 @@
    "id": "u207",
    "tipo": "frase",
    "requer": "p211",
-   "es": "Me duele la espalda de estar sentad{o|a}.",
-   "pt": "Minhas costas doem de ficar sentad{o|a}.",
-   "en": "My back hurts from sitting down.",
+   "es": "Llevo la mochila a la espalda.",
+   "pt": "Levo a mochila nas costas.",
+   "en": "I carry the backpack on my back.",
    "aceitas": [
-    "minhas costas doem de ficar sentad{o|a}",
-    "estou com dor nas costas de ficar sentad{o|a}",
-    "minhas costas doem de tanto ficar sentad{o|a}",
-    "doem as costas de ficar sentad{o|a}",
-    "minhas costas estao doendo de ficar sentad{o|a}",
-    "estou com dor nas costas de tanto ficar sentad{o|a}"
+    "levo a mochila nas costas",
+    "carrego a mochila nas costas",
+    "levo a mochila nas minhas costas"
    ],
    "aceitasEn": [
-    "my back hurts from sitting down",
-    "my back aches from sitting",
-    "my back hurts from sitting too long",
-    "i have backache from sitting"
+    "i carry the backpack on my back",
+    "i carry my backpack on my back",
+    "i wear the backpack on my back"
    ],
    "distratores": [
-    "Minha espada dói de ficar sentad{o|a}.",
-    "Minhas pernas doem de ficar em pé.",
-    "Minha cabeça dói de ficar no sol.",
-    "Meus olhos doem de ficar no celular."
+    "Levo a mochila no ombro.",
+    "Levo a mochila na cabeça.",
+    "Levo a mochila na mão.",
+    "Levo a mochila no braço."
    ],
    "distratoresEn": [
-    "My sword hurts from sitting down.",
-    "My legs hurt from standing.",
-    "My head hurts from being in the sun.",
-    "My eyes hurt from looking at my phone."
+    "I carry the backpack on my shoulder.",
+    "I carry the backpack on my head.",
+    "I carry the backpack in my hand.",
+    "I carry the backpack on my arm."
    ],
    "nivel": "A2",
    "tags": [
     "falso-amigo",
     "corpo"
    ],
-   "nota": "Com «doler», o espanhol usa o artigo e o singular: «me duele la espalda». A espada é «la espada», sem L.\n🇪🇸 me duele la espalda → 🇧🇷 minhas costas doem\n🇪🇸 la espada → 🇧🇷 a espada",
-   "notaEn": "With 'doler' Spanish uses the article, not 'my': 'me duele la espalda'. 'La espada', without the L, is a sword.",
+   "nota": "«La espalda» são as costas; «la espada» é a arma de lâmina. «A la espalda» é nas costas, com o artigo.\n🇪🇸 la espalda → 🇧🇷 as costas\n🇪🇸 la espada → 🇧🇷 a espada",
+   "notaEn": "«La espalda» is the back of the body; «la espada» is the sword. «A la espalda» means on one's back.",
    "requerTodas": [
-    "p416",
     "p211",
-    "p358",
-    "p469"
+    "p359"
    ]
   },
   {
@@ -28126,46 +28069,41 @@
    "id": "u218",
    "tipo": "frase",
    "requer": "p222",
-   "es": "Me duelen las rodillas al subir escaleras.",
-   "pt": "Meus joelhos doem ao subir escadas.",
-   "en": "My knees hurt when I climb stairs.",
+   "es": "Se puso de rodillas para rezar.",
+   "pt": "Ele ficou de joelhos para rezar.",
+   "en": "He got down on his knees to pray.",
    "aceitas": [
-    "meus joelhos doem ao subir escadas",
-    "meus joelhos doem quando subo escada",
-    "os joelhos doem ao subir escadas",
-    "sinto dor nos joelhos ao subir escadas",
-    "doem os joelhos quando subo escadas",
-    "meus joelhos doem para subir escada"
+    "ele ficou de joelhos para rezar",
+    "ele se ajoelhou para rezar",
+    "ela ficou de joelhos para rezar",
+    "ele pos se de joelhos para rezar"
    ],
    "aceitasEn": [
-    "my knees hurt when i climb stairs",
-    "my knees ache going up stairs",
-    "my knees hurt going upstairs",
-    "my knees hurt when i go up the stairs"
+    "he got down on his knees to pray",
+    "he knelt down to pray",
+    "he knelt to pray",
+    "he went down on his knees to pray"
    ],
    "distratores": [
-    "Meus tornozelos doem ao descer ladeiras.",
-    "Minhas costas doem ao carregar peso.",
-    "Meus pés doem ao usar salto.",
-    "Meus ombros doem ao nadar."
+    "Ele ficou de pé para rezar.",
+    "Ele sentou para rezar.",
+    "Ele deitou de costas para rezar.",
+    "Ele baixou a cabeça para rezar."
    ],
    "distratoresEn": [
-    "My ankles hurt when I go downhill.",
-    "My back hurts when I lift things.",
-    "My feet hurt when I wear heels.",
-    "My shoulders hurt when I swim."
+    "He stood up to pray.",
+    "He sat down to pray.",
+    "He lay on his back to pray.",
+    "He bowed his head to pray."
    ],
    "nivel": "A2",
    "tags": [
     "corpo"
    ],
-   "nota": "Com «doler», quem dói é o sujeito: «me duelen las rodillas», com o verbo no plural. «De rodillas» é de joelhos.",
-   "notaEn": "With 'doler' the aching part is the subject, so the verb is plural: 'me duelen las rodillas'. 'De rodillas' means kneeling.",
+   "nota": "«De rodillas» é de joelhos: «ponerse de rodillas», ajoelhar-se, também «arrodillarse». «Rodilla» é o joelho, sempre com o artigo no corpo.",
+   "notaEn": "«De rodillas» means on one's knees: «ponerse de rodillas», to kneel down, also «arrodillarse».",
    "requerTodas": [
-    "p416",
-    "p222",
-    "p408",
-    "p525"
+    "p222"
    ]
   },
   {
@@ -28778,44 +28716,42 @@
    "id": "u232",
    "tipo": "frase",
    "requer": "p236",
-   "es": "Llegamos a las cuatro de la madrugada.",
-   "pt": "Chegamos às quatro da madrugada.",
-   "en": "We got in at four in the morning.",
+   "es": "Hace frío en la madrugada.",
+   "pt": "Faz frio de madrugada.",
+   "en": "It's cold at dawn.",
    "aceitas": [
-    "chegamos as quatro da madrugada",
-    "chegamos as quatro da manha",
-    "chegamos as 4 da madrugada",
-    "a gente chegou as quatro da madrugada",
-    "chegamos as quatro horas da madrugada"
+    "faz frio de madrugada",
+    "faz frio na madrugada",
+    "esta frio de madrugada"
    ],
    "aceitasEn": [
-    "we got in at four in the morning",
-    "we arrived at four in the morning",
-    "we got there at 4 am",
-    "we arrived at four a m"
+    "its cold at dawn",
+    "its cold in the early morning",
+    "it is cold in the early hours",
+    "its cold before dawn"
    ],
    "distratores": [
-    "Chegamos às quatro da tarde.",
-    "Saímos às quatro da madrugada.",
-    "Chegamos às quatro do dia seguinte.",
-    "Acordamos às quatro da madrugada."
+    "Faz frio de tarde.",
+    "Faz frio ao meio-dia.",
+    "Faz frio de noite.",
+    "Faz frio ao pôr do sol."
    ],
    "distratoresEn": [
-    "We got in at four in the afternoon.",
-    "We left at four in the morning.",
-    "We arrived at four the next day.",
-    "We woke up at four in the morning."
+    "It's cold in the afternoon.",
+    "It's cold at noon.",
+    "It's cold in the evening.",
+    "It's cold at sunset."
    ],
    "nivel": "A2",
    "tags": [
     "cotidiano"
    ],
-   "nota": "«De la madrugada» vai da meia-noite ao amanhecer. Depois, «de la mañana».",
-   "notaEn": "'De la madrugada' covers midnight to dawn; after that it's 'de la mañana'.",
+   "nota": "«La madrugada» vai da meia-noite ao amanhecer: «de madrugada», «en la madrugada». Depois dela, «la mañana».",
+   "notaEn": "«La madrugada» is the time from midnight to dawn: «en la madrugada».",
    "requerTodas": [
-    "p363",
-    "p596",
-    "p236"
+    "p236",
+    "p353",
+    "p447"
    ]
   },
   {
@@ -33179,34 +33115,32 @@
    "id": "u248",
    "tipo": "frase",
    "requer": "p252",
-   "es": "Me acuesto a las once.",
-   "pt": "Vou dormir às onze.",
-   "en": "I go to bed at eleven.",
+   "es": "Mi hermana se acuesta tarde.",
+   "pt": "Minha irmã vai dormir tarde.",
+   "en": "My sister goes to bed late.",
    "aceitas": [
-    "vou dormir as onze",
-    "me deito as onze",
-    "deito as onze",
-    "vou para a cama as onze",
-    "vou deitar as onze",
-    "eu me deito as onze",
-    "durmo as onze"
+    "minha irma vai dormir tarde",
+    "minha irma se deita tarde",
+    "minha irma vai para a cama tarde",
+    "minha irma dorme tarde"
    ],
    "aceitasEn": [
-    "i go to bed at eleven",
-    "i go to bed at 11",
-    "i turn in at eleven"
+    "my sister goes to bed late",
+    "my sister goes to sleep late",
+    "my sister gets to bed late",
+    "my sister goes to bed late at night"
    ],
    "distratores": [
-    "Me acostumo às onze.",
-    "Acordo às onze.",
-    "Janto às onze.",
-    "Encosto no sofá às onze."
+    "Minha irmã acorda tarde.",
+    "Minha irmã chega tarde.",
+    "Minha irmã almoça tarde.",
+    "Minha irmã sai tarde."
    ],
    "distratoresEn": [
-    "I get used to it at eleven.",
-    "I wake up at eleven.",
-    "I have dinner at eleven.",
-    "I lean back on the sofa at eleven."
+    "My sister wakes up late.",
+    "My sister arrives late.",
+    "My sister has lunch late.",
+    "My sister goes out late."
    ],
    "nivel": "A2",
    "tags": [
@@ -33214,11 +33148,11 @@
     "verbo",
     "casa"
    ],
-   "nota": "«Acostarse» muda o «o» em «ue» no presente: «me acuesto», «te acuestas». Acostumar-se é «acostumbrarse».\n🇪🇸 me acuesto → 🇧🇷 vou dormir\n🇪🇸 me acostumbro → 🇧🇷 me acostumo",
-   "notaEn": "'Acostarse' changes o to ue in the present: 'me acuesto'. Getting used to is 'acostumbrarse'.",
+   "nota": "«Acostarse» muda o o em ue no presente: «me acuesto», «te acuestas», «se acuesta». Acostumar-se é «acostumbrarse».\n🇪🇸 me acuesto → 🇧🇷 vou dormir\n🇪🇸 me acostumbro → 🇧🇷 me acostumo",
+   "notaEn": "«Acostarse» changes o to ue in the present: «me acuesto», «se acuesta». To get used to is «acostumbrarse».",
    "requerTodas": [
     "p252",
-    "p857"
+    "p384"
    ]
   },
   {
@@ -34153,45 +34087,42 @@
    "id": "u269",
    "tipo": "frase",
    "requer": "p273",
-   "es": "Me duele una muela.",
-   "pt": "Estou com dor de dente.",
-   "en": "I've got toothache.",
+   "es": "Mi abuelo tiene una muela de oro.",
+   "pt": "Meu avô tem um dente de ouro.",
+   "en": "My grandfather has a gold tooth.",
    "aceitas": [
-    "estou com dor de dente",
-    "me doi um dente",
-    "estou com dor num dente",
-    "doi um dente",
-    "estou com dor de dente do fundo",
-    "doi um molar"
+    "meu avo tem um dente de ouro",
+    "meu avo tem um molar de ouro",
+    "meu avo tem um dente de ouro na boca"
    ],
    "aceitasEn": [
-    "i ve got toothache",
-    "i have a toothache",
-    "one of my teeth hurts",
-    "a back tooth is hurting"
+    "my grandfather has a gold tooth",
+    "my grandpa has a gold tooth",
+    "my grandfather has a gold molar"
    ],
    "distratores": [
-    "Estou com dor de ouvido.",
-    "Estou com dor nas costas.",
-    "Estou com a gengiva inchada.",
-    "Estou com um dente mole."
+    "Meu avô tem um dente de prata.",
+    "Meu avô tem um dente de madeira.",
+    "Meu avô tem um dente de plástico.",
+    "Meu avô tem um dente de osso."
    ],
    "distratoresEn": [
-    "I've got earache.",
-    "I've got backache.",
-    "My gums are swollen.",
-    "I've got a loose tooth."
+    "My grandfather has a silver tooth.",
+    "My grandfather has a wooden tooth.",
+    "My grandfather has a plastic tooth.",
+    "My grandfather has a bone tooth."
    ],
    "nivel": "B1",
    "tags": [
-    "saúde",
     "corpo"
    ],
-   "nota": "A dor de dente, em espanhol, quase sempre é de «muela». «Dolor de muelas» é a expressão feita.",
-   "notaEn": "Toothache in Spanish is usually a 'muela' that hurts; 'dolor de muelas' is the set phrase.",
+   "nota": "«La muela» é o dente de trás, o molar; o da frente é «el diente». «La muela del juicio» é o dente do siso.",
+   "notaEn": "«La muela» is a back tooth, a molar; a front tooth is «el diente». «La muela del juicio» is the wisdom tooth.",
    "requerTodas": [
-    "p416",
-    "p273"
+    "p273",
+    "p1019",
+    "p354",
+    "p1142"
    ]
   },
   {
@@ -36535,48 +36466,42 @@
    "id": "u277",
    "tipo": "frase",
    "requer": "p281",
-   "es": "Hay que pedir el permiso en el ayuntamiento.",
-   "pt": "É preciso pedir a licença na prefeitura.",
-   "en": "You have to ask for the permit at the town hall.",
+   "es": "El alcalde trabaja en el ayuntamiento.",
+   "pt": "O prefeito trabalha na prefeitura.",
+   "en": "The mayor works at city hall.",
    "aceitas": [
-    "e preciso pedir a licenca na prefeitura",
-    "tem que pedir a licenca na prefeitura",
-    "e necessario pedir a licenca na prefeitura",
-    "precisa pedir a autorizacao na prefeitura",
-    "tem que pedir a autorizacao na prefeitura"
+    "o prefeito trabalha na prefeitura",
+    "o prefeito trabalha na camara municipal",
+    "o prefeito trabalha na prefeitura da cidade"
    ],
    "aceitasEn": [
-    "you have to ask for the permit at the town hall",
-    "you need to apply for the permit at the town hall"
+    "the mayor works at city hall",
+    "the mayor works at the town hall",
+    "the mayor works in city hall",
+    "the mayor works at the city hall"
    ],
    "distratores": [
-    "É preciso pedir a licença na delegacia.",
-    "É preciso pedir a licença na portaria.",
-    "É preciso pedir a licença na secretaria.",
-    "É preciso pedir a licença na embaixada."
+    "O prefeito trabalha no tribunal.",
+    "O prefeito trabalha na escola.",
+    "O prefeito trabalha no banco.",
+    "O prefeito trabalha na delegacia."
    ],
    "distratoresEn": [
-    "You have to ask for the permit at the police station.",
-    "You have to ask for the permit at the front desk.",
-    "You have to ask for the permit at the secretariat.",
-    "You have to ask for the permit at the embassy."
+    "The mayor works at the courthouse.",
+    "The mayor works at the school.",
+    "The mayor works at the bank.",
+    "The mayor works at the police station."
    ],
    "nivel": "B1",
    "tags": [
-    "cidade",
-    "jurídico"
+    "cidade"
    ],
-   "nota": "«El permiso» é a licença ou a autorização — de obra, de trabalho, de dirigir. «Hay que» deixa a obrigação sem dono: é preciso, e pronto.",
-   "notaEn": "«El permiso» is a permit or licence — for building, working, driving. «Hay que» leaves the obligation ownerless.",
-   "regionaisEs": {
-    "Hay que pedir el permiso en la alcaldía.": "na América Latina",
-    "Hay que pedir el permiso en la municipalidad.": "na América Latina"
-   },
+   "nota": "«El ayuntamiento» é a prefeitura, o prédio e o governo local; é a palavra da Espanha. Na América se diz «la alcaldía» ou «la municipalidad».",
+   "notaEn": "«El ayuntamiento» is the city hall, the building and the local government; it is the word used in Spain.",
    "requerTodas": [
-    "p352",
-    "p367",
-    "p670",
-    "p281"
+    "p281",
+    "p988",
+    "p898"
    ]
   },
   {
@@ -38575,42 +38500,43 @@
    "id": "u300",
    "tipo": "frase",
    "requer": "p304",
-   "es": "No me gusta el cotilleo de oficina.",
-   "pt": "Não gosto de fofoca de escritório.",
-   "en": "I dont like office gossip.",
+   "es": "El cotilleo corre rápido en la oficina.",
+   "pt": "A fofoca corre rápido no escritório.",
+   "en": "Gossip spreads fast in the office.",
    "aceitas": [
-    "nao gosto de fofoca de escritorio",
-    "eu nao gosto de fofoca de escritorio",
-    "nao gosto da fofoca do escritorio",
-    "nao gosto de fofoca no trabalho"
+    "a fofoca corre rapido no escritorio",
+    "a fofoca se espalha rapido no escritorio",
+    "a fofoca corre depressa no escritorio"
    ],
    "aceitasEn": [
-    "i dont like office gossip",
-    "i do not like office gossip",
-    "im not keen on office gossip"
+    "gossip spreads fast in the office",
+    "gossip travels fast in the office",
+    "gossip goes around fast in the office",
+    "gossip runs fast in the office"
    ],
    "distratores": [
-    "Não gosto de piada de escritório.",
-    "Não gosto de política de escritório.",
-    "Não gosto de festa de escritório.",
-    "Não gosto de rotina de escritório."
+    "A notícia corre rápido no escritório.",
+    "A mentira corre rápido no escritório.",
+    "A gripe corre rápido no escritório.",
+    "A moda corre rápido no escritório."
    ],
    "distratoresEn": [
-    "I dont like office jokes.",
-    "I dont like office politics.",
-    "I dont like office parties.",
-    "I dont like office routine."
+    "News spreads fast in the office.",
+    "A lie spreads fast in the office.",
+    "The flu spreads fast in the office.",
+    "Fashion spreads fast in the office."
    ],
    "nivel": "B2",
    "tags": [
     "gíria",
     "trabalho"
    ],
-   "nota": "«De oficina», solto e sem artigo, é «de escritório». Os programas de fofoca da televisão espanhola chamam-se «programas del corazón».",
-   "notaEn": "«De oficina», bare and article free, means «office» as a modifier. Spanish celebrity gossip shows are «programas del corazón».",
+   "nota": "«El cotilleo» é a fofoca, a mexerica; na América também se diz «el chisme». O verbo é «cotillear». «De oficina», solto e sem artigo, é «de escritório».",
+   "notaEn": "«El cotilleo» is gossip; in Latin America «el chisme» is also common. The verb is «cotillear».",
    "requerTodas": [
-    "p398",
     "p304",
+    "p590",
+    "p878",
     "p005"
    ]
   },
@@ -38977,44 +38903,43 @@
    "idioma": "es",
    "id": "f199",
    "tipo": "frase",
-   "es": "A mí tampoco me gusta.",
-   "pt": "Eu também não gosto.",
-   "en": "I dont like it either.",
+   "es": "A mí tampoco me importa.",
+   "pt": "Eu também não me importo.",
+   "en": "I don't mind either.",
    "aceitas": [
-    "eu tambem nao gosto",
-    "tambem nao gosto",
-    "eu tampouco gosto",
-    "nem eu gosto",
-    "eu nao gosto tambem"
+    "eu tambem nao me importo",
+    "para mim tambem tanto faz",
+    "tambem nao me importa",
+    "eu tambem nao ligo"
    ],
    "aceitasEn": [
-    "i dont like it either",
-    "me neither",
-    "i dont like it too",
-    "neither do i"
+    "i dont mind either",
+    "i do not mind either",
+    "i dont care either",
+    "it doesnt bother me either"
    ],
    "distratores": [
-    "Eu também gosto.",
-    "Eu gosto menos.",
-    "Eu nunca gostei.",
-    "Eu gosto de qualquer jeito."
+    "Eu também me importo.",
+    "Eu só me importo.",
+    "Eu já não me importava.",
+    "Eu nunca me importo."
    ],
    "distratoresEn": [
-    "I like it too.",
-    "I like it less.",
-    "I never liked it.",
-    "I like it anyway."
+    "I mind too.",
+    "I only mind.",
+    "I no longer minded.",
+    "I never mind."
    ],
    "nivel": "A2",
    "tags": [
     "gramática",
     "cotidiano"
    ],
-   "nota": "Para concordar com uma frase negativa o espanhol usa «tampoco», e não «también». O «a mí» na frente não é enfeite: com «gustar», quem gosta vai sempre com «a».",
-   "notaEn": "To agree with a negative sentence Spanish uses «tampoco», never «también». The «a mí» is required: with «gustar» the person always takes «a».",
+   "nota": "Para concordar com uma frase negativa o espanhol usa «tampoco», e não «también». «Importar» funciona como «gustar»: quem se importa vai no «me», e o «a mí» reforça.",
+   "notaEn": "To agree with a negative sentence Spanish uses «tampoco», not «también». «Importar» works like «gustar»: the person is the pronoun, and «a mí» adds emphasis.",
    "requerTodas": [
     "p895",
-    "p398"
+    "p520"
    ]
   },
   {
@@ -41419,43 +41344,40 @@
    "id": "u309",
    "tipo": "frase",
    "requer": "p313",
-   "es": "Deja los papeles en el escritorio.",
-   "pt": "Deixa os papéis na escrivaninha.",
-   "en": "Leave the papers on the desk.",
+   "es": "Compré un escritorio de madera.",
+   "pt": "Comprei uma escrivaninha de madeira.",
+   "en": "I bought a wooden desk.",
    "aceitas": [
-    "deixa os papeis na escrivaninha",
-    "deixe os papeis na escrivaninha",
-    "poe os papeis na escrivaninha",
-    "deixa os papeis em cima da escrivaninha"
+    "comprei uma escrivaninha de madeira",
+    "comprei uma mesa de escritorio de madeira",
+    "comprei uma escrivaninha de madeira macica"
    ],
    "aceitasEn": [
-    "leave the papers on the desk",
-    "put the papers on the desk",
-    "leave the documents on the desk"
+    "i bought a wooden desk",
+    "i bought a desk made of wood",
+    "i bought a desk of wood"
    ],
    "distratores": [
-    "Deixa os papéis na estante.",
-    "Deixa os papéis na gaveta.",
-    "Deixa os papéis na poltrona.",
-    "Deixa os papéis na prateleira."
+    "Comprei uma estante de madeira.",
+    "Comprei uma cadeira de madeira.",
+    "Comprei uma cômoda de madeira.",
+    "Comprei uma poltrona de madeira."
    ],
    "distratoresEn": [
-    "Leave the papers on the bookcase.",
-    "Leave the papers in the drawer.",
-    "Leave the papers on the armchair.",
-    "Leave the papers on the shelf."
+    "I bought a wooden bookcase.",
+    "I bought a wooden chair.",
+    "I bought a wooden dresser.",
+    "I bought a wooden armchair."
    ],
    "nivel": "B1",
    "tags": [
-    "escritório",
-    "cotidiano"
+    "escritório"
    ],
-   "nota": "Em cima de um móvel, o espanhol usa «en» onde o português pede «na» ou «em cima de»: «en la mesa», «en la silla».",
-   "notaEn": "For things resting on furniture Spanish uses plain «en»: «en la mesa», «en la silla».",
+   "nota": "«El escritorio» é a escrivaninha e também o escritório, a sala de trabalho. «De madera» é de madeira.",
+   "notaEn": "«El escritorio» is the desk and also the study or office room. «De madera» means made of wood.",
    "requerTodas": [
-    "p365",
-    "p665",
-    "p313"
+    "p313",
+    "p413"
    ]
   },
   {
@@ -42812,47 +42734,42 @@
    "id": "u325",
    "tipo": "frase",
    "requer": "p329",
-   "es": "Se me ha estropeado el móvil.",
-   "pt": "Meu celular deu defeito.",
-   "en": "My phone has broken down.",
+   "es": "Se estropeó la lavadora.",
+   "pt": "A máquina de lavar estragou.",
+   "en": "The washing machine broke down.",
    "aceitas": [
-    "meu celular deu defeito",
-    "meu celular estragou",
-    "meu celular quebrou",
-    "meu celular pifou",
-    "meu celular parou de funcionar"
+    "a maquina de lavar estragou",
+    "a maquina de lavar deu defeito",
+    "a maquina de lavar quebrou",
+    "a lavadora estragou"
    ],
    "aceitasEn": [
-    "my phone has broken down",
-    "my phone stopped working",
-    "my phone has packed up"
+    "the washing machine broke down",
+    "the washing machine broke",
+    "the washer broke down",
+    "the washing machine stopped working"
    ],
    "distratores": [
-    "Meu celular ficou sem bateria.",
-    "Meu celular travou de novo.",
-    "Meu celular caiu no chão.",
-    "Meu celular sumiu ontem."
+    "A máquina de lavar caiu.",
+    "A máquina de lavar encolheu.",
+    "A máquina de lavar foi vendida.",
+    "A máquina de lavar sumiu."
    ],
    "distratoresEn": [
-    "My phone ran out of battery.",
-    "My phone froze again.",
-    "My phone fell on the floor.",
-    "My phone went missing yesterday."
+    "The washing machine fell.",
+    "The washing machine shrank.",
+    "The washing machine was sold.",
+    "The washing machine disappeared."
    ],
    "nivel": "B1",
    "tags": [
-    "tecnologia",
-    "cotidiano"
+    "casa"
    ],
-   "nota": "Esse «me» tira a culpa de quem fala: a frase diz que o aparelho estragou sozinho, como em «se me cayó» e «se me olvidó».",
-   "notaEn": "That «me» shifts the blame off the speaker: the phone broke on its own, as in «se me cayó» and «se me olvidó».",
-   "regionaisEs": {
-    "Se me estropeó el móvil.": "na América Latina"
-   },
+   "nota": "«Estropearse» é estragar-se: o aparelho deixa de funcionar, e a frase não diz de quem é a culpa.",
+   "notaEn": "«Estropearse» means to break down: the machine stops working, and no one is blamed.",
    "requerTodas": [
-    "p352",
     "p329",
-    "p423"
+    "p326"
    ]
   },
   {
@@ -43427,43 +43344,39 @@
    "id": "u332",
    "tipo": "frase",
    "requer": "p336",
-   "es": "Deja el paquete en el mostrador.",
-   "pt": "Deixa o pacote no balcão.",
-   "en": "Leave the parcel on the counter.",
+   "es": "El camarero limpia el mostrador.",
+   "pt": "O garçom limpa o balcão.",
+   "en": "The waiter wipes the counter.",
    "aceitas": [
-    "deixa o pacote no balcao",
-    "deixe o pacote no balcao",
-    "poe o pacote no balcao",
-    "deixa a encomenda no balcao"
+    "o garcom limpa o balcao",
+    "o garcom passa um pano no balcao"
    ],
    "aceitasEn": [
-    "leave the parcel on the counter",
-    "put the package on the counter",
-    "leave the parcel at the desk"
+    "the waiter wipes the counter",
+    "the waiter cleans the counter",
+    "the waiter wipes down the counter"
    ],
    "distratores": [
-    "Deixa o pacote na prateleira.",
-    "Deixa o pacote na vitrine.",
-    "Deixa o pacote no caixa.",
-    "Deixa o pacote na entrada."
+    "O garçom limpa o chão.",
+    "O garçom limpa o espelho.",
+    "O garçom limpa o forno.",
+    "O garçom limpa o cardápio."
    ],
    "distratoresEn": [
-    "Leave the parcel on the shelf.",
-    "Leave the parcel in the shop window.",
-    "Leave the parcel at the till.",
-    "Leave the parcel at the entrance."
+    "The waiter wipes the floor.",
+    "The waiter wipes the mirror.",
+    "The waiter wipes the oven.",
+    "The waiter wipes the menu."
    ],
    "nivel": "B2",
    "tags": [
-    "trabalho",
-    "cidade"
+    "trabalho"
    ],
-   "nota": "«El paquete» é o pacote e a encomenda do correio; quem entrega é «el repartidor».",
-   "notaEn": "«El paquete» is both a parcel and a delivery; the courier is «el repartidor».",
+   "nota": "«El mostrador» é o balcão de loja, de bar ou de check-in. «El camarero» é o garçom, na Espanha; na América, «el mesero».",
+   "notaEn": "«El mostrador» is the counter of a shop, a bar or a check-in desk. «El camarero» is the waiter in Spain; in Latin America «el mesero».",
    "requerTodas": [
-    "p365",
-    "p666",
-    "p336"
+    "p336",
+    "p837"
    ]
   },
   {
@@ -44183,44 +44096,43 @@
    "id": "u341",
    "tipo": "frase",
    "requer": "p345",
-   "es": "Los niños meriendan a las cinco.",
-   "pt": "As crianças lancham às cinco.",
-   "en": "The children have their snack at five.",
+   "es": "Mi abuela prepara la merienda.",
+   "pt": "Minha avó prepara o lanche.",
+   "en": "My grandmother makes the afternoon snack.",
    "aceitas": [
-    "as criancas lancham as cinco",
-    "as criancas fazem o lanche as cinco",
-    "as criancas tomam o lanche as cinco",
-    "as criancas merendam as cinco"
+    "minha avo prepara o lanche",
+    "minha avo prepara o lanche da tarde",
+    "minha avo faz o lanche",
+    "minha avo faz o lanche da tarde"
    ],
    "aceitasEn": [
-    "the children have their snack at five",
-    "the kids have a snack at five",
-    "the children eat their afternoon snack at five"
+    "my grandmother makes the afternoon snack",
+    "my grandmother prepares the afternoon snack",
+    "my grandmother makes the snack",
+    "my grandma makes the afternoon snack"
    ],
    "distratores": [
-    "As crianças jantam às cinco.",
-    "As crianças almoçam às cinco.",
-    "As crianças acordam às cinco.",
-    "As crianças estudam às cinco."
+    "Minha avó prepara o jantar.",
+    "Minha avó prepara o almoço.",
+    "Minha avó prepara o café da manhã.",
+    "Minha avó prepara a sobremesa."
    ],
    "distratoresEn": [
-    "The children have dinner at five.",
-    "The children have lunch at five.",
-    "The children wake up at five.",
-    "The children study at five."
+    "My grandmother makes dinner.",
+    "My grandmother makes lunch.",
+    "My grandmother makes breakfast.",
+    "My grandmother makes dessert."
    ],
    "nivel": "B1",
    "tags": [
     "comida",
     "família"
    ],
-   "nota": "«Merendar» tem o e que vira ie: meriendo, meriendas, merienda, merendamos, merendáis, meriendan.",
-   "notaEn": "«Merendar» is an e to ie verb: meriendo, meriendas, merienda, merendamos, merendáis, meriendan.",
+   "nota": "«La merienda» é o lanche da tarde; o verbo é «merendar». Em casa, é a refeição das crianças depois da escola.",
+   "notaEn": "«La merienda» is the afternoon snack; the verb is «merendar».",
    "requerTodas": [
     "p345",
-    "p106",
-    "p843",
-    "p396"
+    "p870"
    ]
   },
   {
@@ -69041,45 +68953,42 @@
    "id": "u362",
    "tipo": "frase",
    "requer": "p926",
-   "es": "Para serte sincero, no me gusta.",
-   "pt": "Para ser sincero, não gosto.",
-   "en": "To be honest, I don't like it.",
+   "es": "Sé sincero conmigo.",
+   "pt": "Seja sincero comigo.",
+   "en": "Be honest with me.",
    "aceitas": [
-    "para ser sincero nao gosto",
-    "para ser sincero com voce nao gosto",
-    "sinceramente nao gosto",
-    "pra ser sincero nao gosto",
-    "para ser sincera nao gosto",
-    "para ser sincero eu nao gosto"
+    "seja sincero comigo",
+    "seja honesto comigo",
+    "seja franco comigo",
+    "se sincero comigo"
    ],
    "aceitasEn": [
-    "to be honest i don t like it",
-    "to be honest with you i dont like it",
-    "honestly i dont like it",
-    "to be honest with you i do not like it"
+    "be honest with me",
+    "be sincere with me",
+    "be frank with me",
+    "be straight with me"
    ],
    "distratores": [
-    "Para ser educado, não gosto.",
-    "Para ser justo, não gosto.",
-    "Para ser breve, não gosto.",
-    "Para ser exato, não gosto."
+    "Seja paciente comigo.",
+    "Seja justo comigo.",
+    "Seja gentil comigo.",
+    "Seja rápido comigo."
    ],
    "distratoresEn": [
-    "To be polite, I don't like it.",
-    "To be fair, I don't like it.",
-    "To be brief, I don't like it.",
-    "To be precise, I don't like it."
+    "Be patient with me.",
+    "Be fair with me.",
+    "Be gentle with me.",
+    "Be quick with me."
    ],
    "nivel": "B1",
    "tags": [
     "social"
    ],
-   "nota": "«Serte» é «ser» + «te» colado: para ser sincero com você. Com usted, «para serle sincero».",
-   "notaEn": "«Serte» is «ser» + «te». With usted, «para serle sincero».",
+   "nota": "«Sé», com acento, é o imperativo de «ser» (tú); sem acento, «se» é outra palavra. Com usted, «sea sincero». «Conmigo» é «comigo».",
+   "notaEn": "«Sé», with the accent, is the tú imperative of «ser»; without it, «se» is another word. With usted: «sea sincero».",
    "requerTodas": [
-    "p351",
     "p926",
-    "p398"
+    "p351"
    ]
   },
   {
@@ -70758,49 +70667,43 @@
    "id": "u401",
    "tipo": "frase",
    "requer": "p964",
-   "es": "Tengo que hacer la declaración a Hacienda.",
-   "pt": "Tenho que fazer a declaração do imposto de renda.",
-   "en": "I have to file my tax return.",
+   "es": "Compraron una hacienda en el campo.",
+   "pt": "Eles compraram uma fazenda no campo.",
+   "en": "They bought a ranch in the countryside.",
    "aceitas": [
-    "tenho que fazer a declaracao do imposto de renda",
-    "tenho que declarar o imposto de renda",
-    "tenho de fazer a declaracao para a receita",
-    "tenho que fazer a declaracao para a receita",
-    "preciso fazer a declaracao do imposto de renda",
-    "tenho que fazer o imposto de renda",
-    "preciso fazer o imposto de renda",
-    "tenho de fazer o imposto de renda"
+    "eles compraram uma fazenda no campo",
+    "compraram uma fazenda no campo",
+    "eles compraram uma fazenda no interior",
+    "elas compraram uma fazenda no campo"
    ],
    "aceitasEn": [
-    "i have to file my tax return",
-    "i have to do my tax return",
-    "i have to file my taxes",
-    "i need to file my tax return"
+    "they bought a ranch in the countryside",
+    "they bought a farm in the countryside",
+    "they bought an estate in the countryside",
+    "they bought a ranch in the country"
    ],
    "distratores": [
-    "Tenho que fazer a declaração para a polícia.",
-    "Tenho que fazer a declaração para o banco.",
-    "Tenho que fazer a declaração para o juiz.",
-    "Tenho que fazer a declaração para a escola."
+    "Eles compraram uma loja no campo.",
+    "Eles compraram uma padaria no campo.",
+    "Eles compraram uma fábrica no campo.",
+    "Eles compraram uma pousada no campo."
    ],
    "distratoresEn": [
-    "I have to report to the police.",
-    "I have to go to the bank.",
-    "I have to appear before the judge.",
-    "I have to hand it in at school."
+    "They bought a shop in the countryside.",
+    "They bought a bakery in the countryside.",
+    "They bought a factory in the countryside.",
+    "They bought an inn in the countryside."
    ],
    "nivel": "B2",
    "tags": [
-    "economia",
-    "Espanha"
+    "economia"
    ],
-   "nota": "Na Espanha, «Hacienda», com maiúscula, é a Receita; «la declaración de la renta», a declaração do imposto de renda. Na América, a «hacienda» é a fazenda.",
-   "notaEn": "In Spain «Hacienda» is the tax office.",
+   "nota": "Na América, «la hacienda» é a fazenda, a grande propriedade rural. Na Espanha, «Hacienda», com maiúscula, é a Receita.",
+   "notaEn": "In Latin America «la hacienda» is a large rural estate. In Spain «Hacienda», capitalized, is the tax office.",
    "requerTodas": [
-    "p354",
-    "p353",
-    "p1029",
-    "p964"
+    "p964",
+    "p413",
+    "p1093"
    ]
   },
   {
@@ -72095,45 +71998,40 @@
    "id": "u431",
    "tipo": "frase",
    "requer": "p994",
-   "es": "Me gusta tener la casa en orden.",
-   "pt": "Gosto de ter a casa em ordem.",
-   "en": "I like to keep the house tidy.",
+   "es": "Los nombres están en orden alfabético.",
+   "pt": "Os nomes estão em ordem alfabética.",
+   "en": "The names are in alphabetical order.",
    "aceitas": [
-    "gosto de ter a casa em ordem",
-    "gosto da casa em ordem",
-    "gosto de manter a casa em ordem",
-    "gosto de deixar a casa arrumada",
-    "eu gosto de ter a casa em ordem"
+    "os nomes estao em ordem alfabetica",
+    "os nomes estao por ordem alfabetica"
    ],
    "aceitasEn": [
-    "i like to keep the house tidy",
-    "i like having the house in order",
-    "i like to keep the house in order",
-    "i like the house tidy"
+    "the names are in alphabetical order",
+    "the names are in alphabetic order",
+    "the names are listed alphabetically"
    ],
    "distratores": [
-    "Gosto de ter a casa em silêncio.",
-    "Gosto de ter a casa em festa.",
-    "Gosto de ter a casa em obras.",
-    "Gosto de ter a casa em paz."
+    "Os nomes estão em ordem numérica.",
+    "Os nomes estão em ordem cronológica.",
+    "Os nomes estão em ordem aleatória.",
+    "Os nomes estão em ordem decrescente."
    ],
    "distratoresEn": [
-    "I like to keep the house quiet.",
-    "I like to keep the house full of parties.",
-    "I like to keep the house under renovation.",
-    "I like to keep the house peaceful."
+    "The names are in numerical order.",
+    "The names are in chronological order.",
+    "The names are in random order.",
+    "The names are in descending order."
    ],
    "nivel": "B1",
    "tags": [
-    "casa"
+    "escola"
    ],
-   "nota": "Masculino quando é arrumação ou sequência: «en orden», «el orden alfabético». Feminino quando é mandado: «la orden del juez».",
-   "notaEn": "Masculine for order and tidiness; feminine for a command.",
+   "nota": "Masculino quando é arrumação ou sequência: «el orden alfabético», «en orden». Feminino quando é mandado: «la orden del juez».",
+   "notaEn": "Masculine when it means arrangement or sequence: «el orden alfabético». Feminine when it is a command: «la orden del juez».",
    "requerTodas": [
-    "p398",
-    "p354",
-    "p400",
-    "p994"
+    "p994",
+    "p661",
+    "p358"
    ]
   },
   {
@@ -72223,41 +72121,43 @@
    "id": "u434",
    "tipo": "frase",
    "requer": "p997",
-   "es": "Me levanto a las siete.",
-   "pt": "Eu me levanto às sete.",
-   "en": "I get up at seven.",
+   "es": "Somos siete en la familia.",
+   "pt": "Somos sete na família.",
+   "en": "There are seven of us in the family.",
    "aceitas": [
-    "eu me levanto as sete",
-    "levanto as sete",
-    "eu levanto as sete",
-    "me levanto as sete"
+    "somos sete na familia",
+    "somos sete em casa",
+    "nos somos sete na familia",
+    "na familia somos sete"
    ],
    "aceitasEn": [
-    "i get up at seven",
-    "i get up at seven oclock",
-    "i get up at 7"
+    "there are seven of us in the family",
+    "we are seven in the family",
+    "there are seven of us in my family",
+    "our family has seven people"
    ],
    "distratores": [
-    "Eu me levanto às seis.",
-    "Eu me levanto às oito.",
-    "Eu me levanto às nove.",
-    "Eu me levanto às dez."
+    "Somos seis na família.",
+    "Somos oito na família.",
+    "Somos cinco na família.",
+    "Somos nove na família."
    ],
    "distratoresEn": [
-    "I get up at six.",
-    "I get up at eight.",
-    "I get up at nine.",
-    "I get up at ten."
+    "There are six of us in the family.",
+    "There are eight of us in the family.",
+    "There are five of us in the family.",
+    "There are nine of us in the family."
    ],
    "nivel": "A1",
    "tags": [
-    "cotidiano"
+    "família"
    ],
-   "nota": "«A las siete», às sete — com o artigo feminino de «horas». Levantar-se é «levantarse»; acordar, «despertarse».",
-   "notaEn": "«A las siete», at seven.",
+   "nota": "«Siete» é sete: o plural de «ser» na primeira pessoa é «somos». Para dizer quantas pessoas são, «somos» + número.",
+   "notaEn": "«Siete» is seven; «somos» is we are. To say how many people there are, «somos» + number.",
    "requerTodas": [
-    "p538",
-    "p997"
+    "p997",
+    "p351",
+    "p764"
    ]
   },
   {
@@ -76371,44 +76271,43 @@
    "id": "u488",
    "tipo": "frase",
    "requer": "p360",
-   "es": "Me gusta mucho, es muy bonito.",
-   "pt": "Gosto muito, é muito bonito.",
-   "en": "I like it a lot, it's very pretty.",
+   "es": "Hoy llegué muy tarde.",
+   "pt": "Hoje cheguei muito tarde.",
+   "en": "Today I arrived very late.",
    "aceitas": [
-    "gosto muito e muito bonito",
-    "eu gosto muito e muito bonito",
-    "adoro e muito bonito",
-    "gosto muito ele e muito bonito"
+    "hoje cheguei muito tarde",
+    "hoje eu cheguei muito tarde",
+    "cheguei muito tarde hoje"
    ],
    "aceitasEn": [
-    "i like it a lot it s very pretty",
-    "i really like it its very pretty",
-    "i like it a lot its very nice"
+    "today i arrived very late",
+    "i arrived very late today",
+    "today i got there very late",
+    "today i came very late"
    ],
    "distratores": [
-    "Gosto pouco, é muito bonito.",
-    "Gosto muito, é pouco bonito.",
-    "Gosto muito, é bonito demais.",
-    "Gosto demais, é meio bonito."
+    "Hoje cheguei muito cedo.",
+    "Hoje cheguei muito mal.",
+    "Hoje cheguei muito bem.",
+    "Hoje cheguei muito rápido."
    ],
    "distratoresEn": [
-    "I don't like it much, it's very pretty.",
-    "I like it a lot, it's not very pretty.",
-    "I like it a lot, it's too pretty.",
-    "I like it far too much, it's fairly pretty."
+    "Today I arrived very early.",
+    "Today I arrived very badly.",
+    "Today I arrived very well.",
+    "Today I arrived very quickly."
    ],
    "nivel": "A1",
    "tags": [
     "cotidiano"
    ],
-   "nota": "Os dois «muito»: «muy» antes de adjetivo e advérbio («muy bonito», «muy tarde»); «mucho» com verbo e substantivo («me gusta mucho», «mucho dinero»).",
-   "notaEn": "«Muy» before adjectives and adverbs; «mucho» with verbs and nouns.",
+   "nota": "«Muy» vem antes de adjetivo e de advérbio: «muy tarde», «muy bien». «Mucho» vai com verbo e substantivo: «trabajo mucho», «mucho dinero».",
+   "notaEn": "«Muy» goes before an adjective or adverb: «muy tarde», «muy bien». «Mucho» goes with verbs and nouns: «trabajo mucho».",
    "requerTodas": [
-    "p398",
-    "p361",
-    "p351",
     "p360",
-    "p1068"
+    "p391",
+    "p363",
+    "p384"
    ]
   },
   {
@@ -81625,46 +81524,44 @@
    "id": "u501",
    "tipo": "frase",
    "requer": "p710",
-   "es": "Me gustan las patatas fritas.",
-   "pt": "Gosto de batata frita.",
-   "en": "I like French fries.",
+   "es": "El pollo frito está muy rico.",
+   "pt": "O frango frito está muito gostoso.",
+   "en": "The fried chicken is very tasty.",
    "aceitas": [
-    "gosto de batata frita",
-    "eu gosto de batata frita",
-    "gosto de fritas",
-    "eu gosto de fritas"
+    "o frango frito esta muito gostoso",
+    "o frango frito esta muito bom",
+    "o frango frito esta delicioso",
+    "o frango frito esta muito saboroso"
    ],
    "aceitasEn": [
-    "i like fries",
-    "i like french fries",
-    "i like chips",
-    "i like fried potatoes"
+    "the fried chicken is very tasty",
+    "the fried chicken is very good",
+    "the fried chicken is delicious",
+    "the fried chicken tastes great"
    ],
    "distratores": [
-    "Gosto de batata cozida.",
-    "Gosto de batata assada.",
-    "Gosto de batata recheada.",
-    "Gosto de batata amassada."
+    "O frango assado está muito gostoso.",
+    "O frango cozido está muito gostoso.",
+    "O frango grelhado está muito gostoso.",
+    "O frango empanado está muito gostoso."
    ],
    "distratoresEn": [
-    "I like mashed potatoes.",
-    "I like onion rings.",
-    "I like potato salad.",
-    "I like garlic bread."
+    "The roast chicken is very tasty.",
+    "The boiled chicken is very tasty.",
+    "The grilled chicken is very tasty.",
+    "The breaded chicken is very tasty."
    ],
    "nivel": "A2",
    "tags": [
     "comida"
    ],
-   "nota": "Com «gustar», quem concorda é a coisa de que se gosta: «me gusta la patata», «me gustan las patatas». «Patatas fritas» são as do prato e as de pacote.",
-   "notaEn": "With «gustar» the verb agrees with the thing liked: «me gusta la patata», «me gustan las patatas». «Patatas fritas» covers both fries and potato chips.",
-   "regionaisEs": {
-    "Me gustan las papas fritas.": "na América Latina"
-   },
+   "nota": "«Frito» é o particípio de «freír» e vale como adjetivo: «huevo frito», «pollo frito», «patatas fritas». «Rico» aqui é gostoso.",
+   "notaEn": "«Frito» is the participle of «freír» and works as an adjective: «huevo frito», «pollo frito». «Rico» here means tasty.",
    "requerTodas": [
-    "p398",
-    "p798",
-    "p710"
+    "p710",
+    "p130",
+    "p358",
+    "p340"
    ]
   },
   {
@@ -81672,54 +81569,39 @@
    "id": "u502",
    "tipo": "frase",
    "requer": "p737",
-   "es": "Hay que arreglar la bomba de agua.",
-   "pt": "Tem que consertar a bomba d'água.",
-   "en": "We have to fix the water pump.",
+   "es": "El agua sube con una bomba eléctrica.",
+   "pt": "A água sobe com uma bomba elétrica.",
+   "en": "The water rises with an electric pump.",
    "aceitas": [
-    "tem que consertar a bomba d agua",
-    "tem que consertar a bomba de agua",
-    "e preciso consertar a bomba d agua",
-    "e preciso consertar a bomba de agua",
-    "precisa consertar a bomba d agua",
-    "precisa consertar a bomba de agua",
-    "temos que consertar a bomba d agua",
-    "a gente tem que consertar a bomba d agua",
-    "tem que arrumar a bomba d agua",
-    "e preciso arrumar a bomba d agua",
-    "e necessario consertar a bomba d agua",
-    "e necessario consertar a bomba de agua",
-    "e necessario arrumar a bomba d agua"
+    "a agua sobe com uma bomba eletrica",
+    "a agua sobe por meio de uma bomba eletrica"
    ],
    "aceitasEn": [
-    "we have to fix the water pump",
-    "the water pump needs fixing",
-    "the water pump needs to be fixed",
-    "we need to fix the water pump",
-    "the water pump has to be fixed",
-    "someone has to fix the water pump"
+    "the water rises with an electric pump",
+    "the water goes up with an electric pump",
+    "the water is pumped up with an electric pump"
    ],
    "distratores": [
-    "Tem que consertar a caixa d'água.",
-    "Tem que consertar a torneira.",
-    "Tem que consertar a mangueira.",
-    "Tem que consertar a descarga."
+    "A água sobe com uma bomba manual.",
+    "A água sobe com uma bomba solar.",
+    "A água sobe com uma bomba hidráulica.",
+    "A água sobe com uma bomba pequena."
    ],
    "distratoresEn": [
-    "We have to fix the water tank.",
-    "We have to fix the tap.",
-    "We have to fix the hose.",
-    "We have to fix the toilet flush."
+    "The water rises with a manual pump.",
+    "The water rises with a solar pump.",
+    "The water rises with a hydraulic pump.",
+    "The water rises with a small pump."
    ],
    "nivel": "B1",
    "tags": [
     "casa"
    ],
-   "nota": "«La bomba» é a que explode e também a que puxa água ou combustível: «la bomba de agua», «la bomba de gasolina». «Hay que + infinitivo» é o tem que sem sujeito, que vale para todo mundo.",
-   "notaEn": "«La bomba» is a bomb and also a pump: «la bomba de agua», «la bomba de gasolina». «Hay que + infinitive» is an impersonal must, with no subject: someone has to do it.",
+   "nota": "«La bomba» é a que explode e também a que puxa líquido: «la bomba de agua», «la bomba de gasolina».",
+   "notaEn": "«La bomba» is a bomb and also a pump: «la bomba de agua», «la bomba de gasolina».",
    "requerTodas": [
-    "p352",
-    "p343",
     "p737",
+    "p408",
     "p380"
    ]
   },
@@ -85540,48 +85422,42 @@
    "id": "u526",
    "tipo": "frase",
    "requer": "p1086",
-   "es": "La reunión concluyó a las seis.",
-   "pt": "A reunião terminou às seis.",
-   "en": "The meeting ended at six.",
+   "es": "El juez concluyó el juicio.",
+   "pt": "O juiz concluiu o julgamento.",
+   "en": "The judge concluded the trial.",
    "aceitas": [
-    "a reuniao acabou as seis",
-    "a reuniao foi concluida as seis",
-    "a reuniao se encerrou as seis",
-    "a reuniao encerrou as seis",
-    "a reuniao terminou as seis horas",
-    "a reuniao acabou as seis horas",
-    "a reuniao foi encerrada as seis"
+    "o juiz concluiu o julgamento",
+    "o juiz encerrou o julgamento",
+    "o juiz terminou o julgamento",
+    "o juiz concluiu o juizo"
    ],
    "aceitasEn": [
-    "the meeting ended at six",
-    "the meeting finished at six",
-    "the meeting concluded at six",
-    "the meeting was over at six",
-    "the meeting ended at six o'clock",
-    "the meeting finished at six o'clock"
+    "the judge concluded the trial",
+    "the judge ended the trial",
+    "the judge finished the trial",
+    "the judge closed the trial"
    ],
    "distratores": [
-    "A reunião começou às seis.",
-    "A reunião recomeçou às seis.",
-    "A reunião continuou às seis.",
-    "A reunião foi interrompida às seis."
+    "O juiz adiou o julgamento.",
+    "O juiz iniciou o julgamento.",
+    "O juiz anulou o julgamento.",
+    "O juiz interrompeu o julgamento."
    ],
    "distratoresEn": [
-    "The meeting started at six.",
-    "The meeting restarted at six.",
-    "The meeting continued at six.",
-    "The meeting was interrupted at six."
+    "The judge postponed the trial.",
+    "The judge started the trial.",
+    "The judge annulled the trial.",
+    "The judge interrupted the trial."
    ],
    "nivel": "B2",
    "tags": [
     "trabalho"
    ],
-   "nota": "No pretérito aparece o y: «concluyó», «concluyeron». Na conversa, o mais comum é «terminó» ou «acabó».",
-   "notaEn": "In the preterite a y appears: «concluyó», «concluyeron». In conversation, «terminó» or «acabó» is more common.",
+   "nota": "No pretérito aparece o y: «concluyó», «concluyeron». Na conversa, o mais comum é «terminó» ou «acabó». «El juicio» é o julgamento.",
+   "notaEn": "In the preterite a y appears: «concluyó», «concluyeron». In conversation «terminó» or «acabó» is more common.",
    "requerTodas": [
-    "p814",
     "p1086",
-    "p889"
+    "p651"
    ]
   },
   {
@@ -91383,46 +91259,43 @@
    "id": "u557",
    "tipo": "frase",
    "requer": "p1133",
-   "es": "Me duele todo el cuerpo.",
-   "pt": "Estou com o corpo todo doendo.",
-   "en": "My whole body hurts.",
+   "es": "Beber agua es bueno para el cuerpo.",
+   "pt": "Beber água faz bem ao corpo.",
+   "en": "Drinking water is good for the body.",
    "aceitas": [
-    "meu corpo todo esta doendo",
-    "meu corpo inteiro doi",
-    "doi o corpo todo",
-    "estou com dor no corpo todo",
-    "meu corpo todo doi",
-    "estou com o corpo inteiro doendo"
+    "beber agua faz bem ao corpo",
+    "beber agua e bom para o corpo",
+    "tomar agua faz bem ao corpo",
+    "beber agua faz bem para o corpo"
    ],
    "aceitasEn": [
-    "my whole body hurts",
-    "my whole body aches",
-    "my entire body hurts",
-    "i ache all over",
-    "everything hurts"
+    "drinking water is good for the body",
+    "drinking water is good for your body",
+    "water is good for the body"
    ],
    "distratores": [
-    "Estou com o braço todo doendo.",
-    "Estou com o pé todo doendo.",
-    "Estou com o rosto todo doendo.",
-    "Estou com o pescoço todo doendo."
+    "Beber água faz bem à pele.",
+    "Beber água faz bem ao coração.",
+    "Beber água faz bem à mente.",
+    "Beber água faz bem ao cabelo."
    ],
    "distratoresEn": [
-    "My whole arm hurts.",
-    "My whole foot hurts.",
-    "My whole face hurts.",
-    "My whole neck hurts."
+    "Drinking water is good for the skin.",
+    "Drinking water is good for the heart.",
+    "Drinking water is good for the mind.",
+    "Drinking water is good for the hair."
    ],
    "nivel": "A1",
    "tags": [
     "saúde"
    ],
-   "nota": "«Doler» concorda com o que dói, e a pessoa vem no «me»: «me duele el cuerpo», «me duelen las piernas».",
-   "notaEn": "«Doler» agrees with what hurts, and the person goes in «me»: «me duele el cuerpo», «me duelen las piernas».",
+   "nota": "«Es bueno para» + substantivo é «faz bem a / é bom para». «El cuerpo» é o corpo; «el cuerpo de bomberos» é o corpo de bombeiros.",
+   "notaEn": "«Es bueno para» + noun means good for. «El cuerpo» is the body; «el cuerpo de bomberos» is the fire brigade.",
    "requerTodas": [
-    "p416",
-    "p385",
-    "p1133"
+    "p1133",
+    "p478",
+    "p380",
+    "p412"
    ]
   },
   {
@@ -91568,46 +91441,46 @@
    "id": "u561",
    "tipo": "frase",
    "requer": "p1137",
-   "es": "Me gusta el color de tus ojos.",
-   "pt": "Gosto da cor dos seus olhos.",
-   "en": "I like the color of your eyes.",
+   "es": "¿De qué color es tu casa?",
+   "pt": "De que cor é a sua casa?",
+   "en": "What color is your house?",
    "aceitas": [
-    "eu gosto da cor dos seus olhos",
-    "gosto da cor dos teus olhos",
-    "eu gosto da cor dos teus olhos",
-    "adoro a cor dos seus olhos"
+    "de que cor e a sua casa",
+    "qual e a cor da sua casa",
+    "de que cor e a tua casa",
+    "qual a cor da sua casa"
    ],
    "aceitasEn": [
-    "i like the color of your eyes",
-    "i like your eye color",
-    "i like the colour of your eyes",
-    "i love the color of your eyes"
+    "what color is your house",
+    "what colour is your house",
+    "what is the color of your house",
+    "whats the color of your house"
    ],
    "aceitasEs": [
-    "Me gusta el color de sus ojos."
+    "¿Qué color tiene tu casa?",
+    "¿De qué color es su casa?"
    ],
    "distratores": [
-    "Gosto da forma dos seus olhos.",
-    "Gosto da luz dos seus olhos.",
-    "Gosto da expressão dos seus olhos.",
-    "Gosto da beleza dos seus olhos."
+    "De que tamanho é a sua casa?",
+    "De que estilo é a sua casa?",
+    "De que material é a sua casa?",
+    "De que época é a sua casa?"
    ],
    "distratoresEn": [
-    "I like the shape of your eyes.",
-    "I like the light in your eyes.",
-    "I like the expression in your eyes.",
-    "I like the beauty of your eyes."
+    "What size is your house?",
+    "What style is your house?",
+    "What material is your house?",
+    "What era is your house?"
    ],
    "nivel": "A1",
    "tags": [
-    "corpo"
+    "cotidiano"
    ],
-   "nota": "«El color», masculino: «el color de tus ojos», «un color bonito».",
-   "notaEn": "«El color» is masculine: «el color de tus ojos», «un color bonito».",
+   "nota": "«De qué color» é «de que cor». «El color» é masculino: «un color bonito», «el color de la casa».",
+   "notaEn": "«De qué color» means what color. «El color» is masculine: «un color bonito».",
    "requerTodas": [
-    "p398",
     "p1137",
-    "p452"
+    "p400"
    ]
   },
   {
@@ -91963,44 +91836,42 @@
    "id": "u569",
    "tipo": "frase",
    "requer": "p1145",
-   "es": "Me duele el cuello.",
-   "pt": "Estou com dor no pescoço.",
-   "en": "My neck hurts.",
+   "es": "Lleva una bufanda alrededor del cuello.",
+   "pt": "Ele usa um cachecol em volta do pescoço.",
+   "en": "He wears a scarf around his neck.",
    "aceitas": [
-    "meu pescoco esta doendo",
-    "meu pescoco doi",
-    "doi o pescoco",
-    "estou com dor de pescoco",
-    "to com dor no pescoco"
+    "ele usa um cachecol em volta do pescoco",
+    "ele usa um cachecol no pescoco",
+    "ela usa um cachecol em volta do pescoco",
+    "ele leva um cachecol em volta do pescoco"
    ],
    "aceitasEn": [
-    "my neck hurts",
-    "my neck is sore",
-    "i have a sore neck",
-    "i have a pain in my neck",
-    "i've got a sore neck"
+    "he wears a scarf around his neck",
+    "she wears a scarf around her neck",
+    "he has a scarf around his neck"
    ],
    "distratores": [
-    "Estou com dor no ombro.",
-    "Estou com dor no joelho.",
-    "Estou com dor no pé.",
-    "Estou com dor no queixo."
+    "Ele usa um cachecol em volta da cabeça.",
+    "Ele usa um cachecol em volta da cintura.",
+    "Ele usa um cachecol em volta do braço.",
+    "Ele usa um cachecol em volta do pulso."
    ],
    "distratoresEn": [
-    "My shoulder hurts.",
-    "My knee hurts.",
-    "My foot hurts.",
-    "My chin hurts."
+    "He wears a scarf around his head.",
+    "He wears a scarf around his waist.",
+    "He wears a scarf around his arm.",
+    "He wears a scarf around his wrist."
    ],
    "nivel": "A1",
    "tags": [
-    "saúde"
+    "corpo"
    ],
-   "nota": "Com «doler», o artigo no lugar do possessivo: «me duele el cuello», e não «mi cuello».",
-   "notaEn": "With «doler», the article replaces the possessive: «me duele el cuello», not «mi cuello».",
+   "nota": "«Alrededor de» é em volta de. «El cuello» é o pescoço e também a gola da camisa: «el cuello de la camisa». «Llevar» é usar, falando de roupa.",
+   "notaEn": "«Alrededor de» means around. «El cuello» is the neck and also the shirt collar. «Llevar» means to wear, for clothes.",
    "requerTodas": [
-    "p416",
-    "p1145"
+    "p1145",
+    "p359",
+    "p332"
    ]
   },
   {
@@ -92717,50 +92588,46 @@
    "id": "u585",
    "tipo": "frase",
    "requer": "p1157",
-   "es": "¿Me despiertas a las siete?",
-   "pt": "Você me acorda às sete?",
-   "en": "Will you wake me up at seven?",
+   "es": "El ruido despertó a toda la casa.",
+   "pt": "O barulho acordou a casa toda.",
+   "en": "The noise woke the whole house.",
    "aceitas": [
-    "me acorda as sete",
-    "voce pode me acordar as sete",
-    "pode me acordar as sete",
-    "tu me acordas as sete",
-    "me acorde as sete"
+    "o barulho acordou a casa toda",
+    "o barulho acordou toda a casa",
+    "o ruido acordou a casa toda",
+    "o barulho acordou todo mundo em casa"
    ],
    "aceitasEn": [
-    "will you wake me up at seven",
-    "can you wake me up at seven",
-    "could you wake me up at seven",
-    "will you wake me at seven",
-    "can you wake me at seven"
+    "the noise woke the whole house",
+    "the noise woke up the whole house",
+    "the noise woke everyone in the house",
+    "the noise woke the entire house"
    ],
    "aceitasEs": [
-    "¿Me despierta a las siete?"
+    "El ruido despertó a todos en la casa."
    ],
-   "regionaisEs": {
-    "¿Me despertás a las siete?": "na Argentina, no Uruguai e na América Central"
-   },
    "distratores": [
-    "Você me liga às sete?",
-    "Você me busca às sete?",
-    "Você me espera às sete?",
-    "Você me encontra às sete?"
+    "O barulho assustou a casa toda.",
+    "O barulho cansou a casa toda.",
+    "O barulho incomodou a casa toda.",
+    "O barulho distraiu a casa toda."
    ],
    "distratoresEn": [
-    "Will you call me at seven?",
-    "Will you pick me up at seven?",
-    "Will you wait for me at seven?",
-    "Will you meet me at seven?"
+    "The noise scared the whole house.",
+    "The noise tired the whole house.",
+    "The noise bothered the whole house.",
+    "The noise distracted the whole house."
    ],
    "nivel": "A2",
    "tags": [
     "cotidiano"
    ],
-   "nota": "Acordar alguém é «despertar» sem «se»; acordar sozinho, «despertarse»: «me despierto a las siete». O e vira ie: «despiertas».",
-   "notaEn": "Waking someone up is «despertar» without «se»; waking up yourself is «despertarse»: «me despierto a las siete». The e becomes ie: «despiertas».",
+   "nota": "Acordar alguém é «despertar» sem «se»; acordar sozinho é «despertarse». Com pessoa, leva «a»: «despertó a toda la casa».",
+   "notaEn": "To wake someone up is «despertar» without «se». With a person it takes «a».",
    "requerTodas": [
     "p1157",
-    "p997"
+    "p682",
+    "p400"
    ]
   },
   {
@@ -93519,44 +93386,42 @@
    "id": "u677",
    "tipo": "frase",
    "requer": "p1171",
-   "es": "Lo cierto es que no tengo tiempo.",
-   "pt": "A verdade é que eu não tenho tempo.",
-   "en": "The truth is I don't have time.",
+   "es": "Lo que dijo no es cierto.",
+   "pt": "O que ele disse não é verdade.",
+   "en": "What he said is not true.",
    "aceitas": [
-    "a verdade e que eu nao tenho tempo",
-    "a verdade e que nao tenho tempo",
-    "o certo e que eu nao tenho tempo",
-    "o certo e que nao tenho tempo",
-    "na verdade eu nao tenho tempo"
+    "o que ele disse nao e verdade",
+    "o que ele disse nao e certo",
+    "o que ela disse nao e verdade",
+    "o que ele falou nao e verdade"
    ],
    "aceitasEn": [
-    "the truth is i don't have time",
-    "the truth is that i don't have time",
-    "the truth is i have no time"
+    "what he said is not true",
+    "what he said isnt true",
+    "what she said is not true",
+    "what he said is untrue"
    ],
    "distratores": [
-    "Com certeza eu ainda tenho muito tempo.",
-    "Talvez eu não tenha tempo para isso.",
-    "Por acaso eu não tenho tempo hoje.",
-    "Ainda bem que eu tenho tempo de sobra."
+    "O que ele disse não é novo.",
+    "O que ele disse não é justo.",
+    "O que ele disse não é seguro.",
+    "O que ele disse não é importante."
    ],
    "distratoresEn": [
-    "Of course I still have plenty of time.",
-    "Maybe I don't have time for that.",
-    "By any chance I don't have time today.",
-    "Luckily I have time to spare."
+    "What he said is not new.",
+    "What he said is not fair.",
+    "What he said is not safe.",
+    "What he said is not important."
    ],
    "nivel": "B1",
    "tags": [
     "cotidiano"
    ],
-   "nota": "«Lo cierto es que…» é «a verdade é que…»: abre a frase que conta o que de fato acontece. «Es cierto», é verdade.",
-   "notaEn": "«Lo cierto es que…» means «the truth is that…». «Es cierto», it's true.",
+   "nota": "«Cierto» aqui é verdadeiro: «es cierto», é verdade. «Por cierto» é a propósito.",
+   "notaEn": "«Cierto» here means true: «es cierto». «Por cierto» means by the way.",
    "requerTodas": [
-    "p351",
-    "p354",
-    "p424",
-    "p1171"
+    "p1171",
+    "p371"
    ]
   },
   {
@@ -93849,47 +93714,46 @@
    "id": "u609",
    "tipo": "frase",
    "requer": "p1177",
-   "es": "Me duele el pecho.",
-   "pt": "Estou com dor no peito.",
-   "en": "My chest hurts.",
+   "es": "El bebé duerme sobre el pecho de su madre.",
+   "pt": "O bebê dorme no peito da mãe.",
+   "en": "The baby sleeps on his mother's chest.",
    "aceitas": [
-    "meu peito esta doendo",
-    "meu peito doi",
-    "doi o peito",
-    "estou com uma dor no peito",
-    "to com dor no peito"
+    "o bebe dorme no peito da mae",
+    "o bebe dorme sobre o peito da mae",
+    "o bebe dorme em cima do peito da mae",
+    "o nenem dorme no peito da mae"
    ],
    "aceitasEn": [
-    "my chest hurts",
-    "i have chest pain",
-    "i have a pain in my chest",
-    "my chest is sore",
-    "i've got chest pain"
+    "the baby sleeps on his mothers chest",
+    "the baby sleeps on its mothers chest",
+    "the baby sleeps on moms chest",
+    "the baby sleeps on her mothers chest"
    ],
    "aceitasEs": [
-    "Tengo un dolor en el pecho."
+    "El bebé duerme encima del pecho de su madre."
    ],
    "distratores": [
-    "Estou com dor no estômago.",
-    "Estou com dor no ombro.",
-    "Estou com dor no joelho.",
-    "Estou com dor no braço."
+    "O bebê dorme no colo da mãe.",
+    "O bebê dorme nas costas da mãe.",
+    "O bebê dorme no braço da mãe.",
+    "O bebê dorme na barriga da mãe."
    ],
    "distratoresEn": [
-    "My stomach hurts.",
-    "My shoulder hurts.",
-    "My knee hurts.",
-    "My arm hurts."
+    "The baby sleeps on his mother's lap.",
+    "The baby sleeps on his mother's back.",
+    "The baby sleeps on his mother's arm.",
+    "The baby sleeps on his mother's belly."
    ],
    "nivel": "A2",
    "tags": [
-    "saúde"
+    "corpo"
    ],
-   "nota": "Dor no peito se diz com «doler»: «me duele el pecho». Também «tengo un dolor en el pecho».",
-   "notaEn": "Chest pain is said with «doler»: «me duele el pecho». Also «tengo un dolor en el pecho».",
+   "nota": "«El pecho» é o peito do corpo e também o seio: «dar el pecho» é amamentar. «Sobre» é em cima de.",
+   "notaEn": "«El pecho» is the chest and also the breast: «dar el pecho» means to breastfeed. «Sobre» means on top of.",
    "requerTodas": [
-    "p416",
-    "p1177"
+    "p1177",
+    "p387",
+    "p1056"
    ]
   },
   {
@@ -94726,18 +94590,6 @@
       "pretérito indefinido",
       "presente do subjuntivo",
       "pretérito imperfeito",
-      "futuro"
-     ]
-    },
-    {
-     "es": "La tienda cierra a las nueve.",
-     "w": "cierra",
-     "de": "u084",
-     "exp": "cierra: presente de cerrar (o e tônico vira ie); o sujeito é la tienda, não é uma ordem.",
-     "distratores": [
-      "imperativo afirmativo",
-      "pretérito indefinido",
-      "presente do subjuntivo",
       "futuro"
      ]
     },
@@ -95745,18 +95597,6 @@
       "pretérito imperfeito",
       "presente do indicativo",
       "mais-que-perfeito"
-     ]
-    },
-    {
-     "es": "Me desperté a las seis.",
-     "w": "desperté",
-     "de": "u112",
-     "exp": "desperté: indefinido de despertarse, 1ª pessoa, com -é tônico.",
-     "distratores": [
-      "presente do indicativo",
-      "pretérito perfeito composto",
-      "pretérito imperfeito",
-      "presente do subjuntivo"
      ]
     },
     {
@@ -97569,18 +97409,6 @@
      ]
     },
     {
-     "es": "Se me cayó el vaso al suelo.",
-     "w": "Se",
-     "de": "u082",
-     "exp": "se: o copo caiu sem querer; o me é de quem o deixou cair.",
-     "distratores": [
-      "se reflexivo",
-      "se impessoal",
-      "se no lugar de le (antes de lo, la)",
-      "le, les: objeto indireto"
-     ]
-    },
-    {
      "es": "Se me rompió la pantalla del móvil.",
      "w": "Se",
      "de": "u012",
@@ -97609,18 +97437,6 @@
      "w": "Se",
      "de": "u260",
      "exp": "se: o computador travou sozinho; o me é quem o usava.",
-     "distratores": [
-      "se reflexivo",
-      "se impessoal",
-      "se no lugar de le (antes de lo, la)",
-      "le, les: objeto indireto"
-     ]
-    },
-    {
-     "es": "Se me ha estropeado el móvil.",
-     "w": "Se",
-     "de": "u325",
-     "exp": "se: o celular estragou sozinho; o me é o dono.",
      "distratores": [
       "se reflexivo",
       "se impessoal",
@@ -100013,47 +99829,43 @@
    "id": "u690",
    "tipo": "frase",
    "requer": "p1241",
-   "es": "No tengo tiempo; sin embargo, voy a ir.",
-   "pt": "Não tenho tempo; no entanto, vou.",
-   "en": "I don't have time; however, I'm going.",
+   "es": "Es caro; sin embargo, lo compré.",
+   "pt": "É caro; no entanto, comprei.",
+   "en": "It's expensive; however, I bought it.",
    "aceitas": [
-    "nao tenho tempo no entanto vou",
-    "nao tenho tempo no entanto vou ir",
-    "nao tenho tempo mesmo assim vou",
-    "nao tenho tempo porem vou",
-    "nao tenho tempo contudo vou",
-    "nao tenho tempo mas vou",
-    "nao tenho tempo entretanto vou"
+    "e caro no entanto comprei",
+    "e caro mesmo assim comprei",
+    "e caro mas mesmo assim eu comprei",
+    "e caro porem comprei"
    ],
    "aceitasEn": [
-    "i don't have time however i'm going",
-    "i don't have time but i'm going",
-    "i don't have time however i'm going to go",
-    "i have no time however i'm going"
+    "its expensive however i bought it",
+    "its expensive nevertheless i bought it",
+    "it is expensive however i bought it",
+    "its expensive but i bought it anyway"
    ],
    "distratores": [
-    "Não tenho tempo; por isso, não vou.",
-    "Tenho tempo; por isso, vou.",
-    "Não tenho tempo; além disso, não vou.",
-    "Não tenho tempo; de repente, vou."
+    "É caro; por isso, comprei.",
+    "É caro; portanto, comprei.",
+    "É caro; além disso, comprei.",
+    "É caro; então, comprei."
    ],
    "distratoresEn": [
-    "I don't have time, so I'm not going.",
-    "I have time, so I'm going.",
-    "I don't have time; besides, I'm not going.",
-    "I don't have time; suddenly, I'm going."
+    "It's expensive; therefore, I bought it.",
+    "It's expensive; besides, I bought it.",
+    "It's expensive; so I bought it.",
+    "It's expensive; because of that, I bought it."
    ],
    "nivel": "A2",
    "tags": [
     "cotidiano"
    ],
-   "nota": "Frase de uso de «sin embargo».",
-   "notaEn": "Usage sentence for «sin embargo».",
+   "nota": "«Sin embargo» é «no entanto» e abre uma ideia que contraria a anterior. Costuma vir depois de ponto e vírgula ou de ponto, e com vírgula depois.",
+   "notaEn": "«Sin embargo» means however and introduces an idea that goes against the previous one.",
    "requerTodas": [
-    "p354",
-    "p424",
-    "p355",
-    "p1241"
+    "p1241",
+    "p586",
+    "p413"
    ]
   },
   {
@@ -100061,39 +99873,43 @@
    "id": "u691",
    "tipo": "frase",
    "requer": "p1242",
-   "es": "No me gusta el ajo.",
-   "pt": "Eu não gosto de alho.",
-   "en": "I don't like garlic.",
+   "es": "Corta el ajo muy fino.",
+   "pt": "Corte o alho bem fino.",
+   "en": "Chop the garlic very fine.",
    "aceitas": [
-    "nao gosto de alho",
-    "nao gosto do alho",
-    "eu nao gosto do alho"
+    "corte o alho bem fino",
+    "corta o alho bem fino",
+    "corte o alho muito fino",
+    "corta o alho muito fino"
    ],
    "aceitasEn": [
-    "i don't like garlic",
-    "i do not like garlic"
+    "chop the garlic very fine",
+    "chop the garlic very finely",
+    "cut the garlic very fine",
+    "mince the garlic"
    ],
    "distratores": [
-    "Eu não gosto de sal.",
-    "Eu gosto muito de alho.",
-    "Eu não como cebola.",
-    "Eu não gosto de óleo."
+    "Corte a cebola bem fino.",
+    "Corte a cenoura bem fino.",
+    "Corte o tomate bem fino.",
+    "Corte o pimentão bem fino."
    ],
    "distratoresEn": [
-    "I don't like salt.",
-    "I really like garlic.",
-    "I don't eat onion.",
-    "I don't like oil."
+    "Chop the onion very fine.",
+    "Chop the carrot very fine.",
+    "Chop the tomato very fine.",
+    "Chop the pepper very fine."
    ],
    "nivel": "A1",
    "tags": [
-    "cotidiano"
+    "comida"
    ],
-   "nota": "Frase de uso de «el ajo».",
-   "notaEn": "Usage sentence for «el ajo».",
+   "nota": "«Un diente de ajo» é um dente de alho, e «diente» aqui é a parte do bulbo. «Cortar» é cortar; «muy fino», bem fininho.",
+   "notaEn": "«Un diente de ajo» is a clove of garlic: «diente» here is the clove, not a tooth.",
    "requerTodas": [
-    "p398",
-    "p1242"
+    "p1242",
+    "p591",
+    "p1088"
    ]
   },
   {
