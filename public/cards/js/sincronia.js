@@ -307,6 +307,7 @@
           var e = p.cards[id];
           if (e.naFila && e.naFila.desde >= fila.base) e.naFila.desde += r.delta;
           if (e.estreouNa !== undefined && e.estreouNa >= fila.base) e.estreouNa += r.delta;
+          if (e.testadoNa !== undefined && e.testadoNa >= fila.base) e.testadoNa += r.delta;   // o teste do presumido (15/11/2026)
         });
         fila.eventos.forEach(function (e) { if (e.relogio != null) e.relogio += r.delta; });
         // os pontos da série depois da base são fotos de antes das respostas do outro
