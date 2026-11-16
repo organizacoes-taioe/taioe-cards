@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso fr-en, leva b699d5bc, 1862 cards.
+-- Catálogo do curso fr-en, leva 7e342470, 1862 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('fr-en', 'b699d5bc', '1862 cards')
+values ('fr-en', '7e342470', '1862 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -1734,7 +1734,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-en', 'fr-p753', 'palavra', 'A2', array['substantivo']::text[], null, '0631888d', array['the body / the skin', 'the fear / the sleep', 'the name / the weight', 'the spirit / the mind', 'the voice / the face']::text[]),
   ('fr-en', 'fr-p754', 'palavra', 'A1', array['substantivo']::text[], null, 'f32c1598', array['the meaning / the sense', 'the path', 'the reason', 'the sound', 'the taste']::text[]),
   ('fr-en', 'fr-p755', 'palavra', 'A2', array['substantivo']::text[], null, '5c0c6a50', array['the fall / the punishment', 'the flight / the theft', 'the jump / the fine', 'the landing / the prize', 'the trip / the scare']::text[]),
-  ('fr-en', 'fr-p756', 'palavra', 'C1', array['adjetivo']::text[], null, '09d026ae', array['distant', 'foreign', 'native', 'neighboring', 'old']::text[]),
+  ('fr-en', 'fr-p756', 'palavra', 'C1', array['adjetivo']::text[], null, 'e2680f3a', array['distant', 'foreign', 'native', 'neighboring', 'old']::text[]),
   ('fr-en', 'fr-p757', 'palavra', 'B2', array['substantivo']::text[], null, '350d6a0b', array['the illness', 'the loneliness', 'the misery / the poverty', 'the sadness', 'the war']::text[]),
   ('fr-en', 'fr-p758', 'palavra', 'C1', array['substantivo']::text[], null, 'd17992ff', array['the cyclist', 'the pilot', 'the railwayman', 'the taxi driver', 'the trucker']::text[]),
   ('fr-en', 'fr-p759', 'palavra', 'B1', array['substantivo']::text[], null, '309724a3', array['the captain', 'the general', 'the mayor', 'the pilot', 'the soldier']::text[]),

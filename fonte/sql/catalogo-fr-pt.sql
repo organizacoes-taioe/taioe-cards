@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso fr-pt, leva e0950a1e, 1900 cards.
+-- Catálogo do curso fr-pt, leva f79881d2, 1900 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('fr-pt', 'e0950a1e', '1900 cards')
+values ('fr-pt', 'f79881d2', '1900 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -1772,7 +1772,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-pt', 'fr-p753', 'palavra', 'A2', array['substantivo']::text[], null, '0631888d', array['a voz / o rosto', 'o corpo / a pele', 'o espírito / a mente', 'o medo / o sono', 'o nome / o peso']::text[]),
   ('fr-pt', 'fr-p754', 'palavra', 'A1', array['substantivo']::text[], null, 'f32c1598', array['a razão', 'o caminho', 'o gosto', 'o sentido', 'o som']::text[]),
   ('fr-pt', 'fr-p755', 'palavra', 'A2', array['substantivo']::text[], null, '5c0c6a50', array['a queda / o castigo', 'a viagem / o susto', 'o pouso / o prêmio', 'o salto / a multa', 'o voo / o roubo']::text[]),
-  ('fr-pt', 'fr-p756', 'palavra', 'C1', array['adjetivo']::text[], null, '09d026ae', array['antigo', 'distante', 'estrangeiro', 'nativo', 'vizinho']::text[]),
+  ('fr-pt', 'fr-p756', 'palavra', 'C1', array['adjetivo']::text[], null, 'e2680f3a', array['antigo (de outrora)', 'distante (de longe)', 'estrangeiro (de fora)', 'natal (de nascença)', 'vizinho (de perto)']::text[]),
   ('fr-pt', 'fr-p757', 'palavra', 'B2', array['substantivo']::text[], null, '350d6a0b', array['a doença', 'a guerra', 'a miséria', 'a solidão', 'a tristeza']::text[]),
   ('fr-pt', 'fr-p758', 'palavra', 'C1', array['substantivo']::text[], null, 'd17992ff', array['o caminhoneiro', 'o ciclista', 'o ferroviário', 'o piloto', 'o taxista']::text[]),
   ('fr-pt', 'fr-p759', 'palavra', 'B1', array['substantivo']::text[], null, '309724a3', array['o capitão', 'o general', 'o piloto', 'o prefeito', 'o soldado']::text[]),

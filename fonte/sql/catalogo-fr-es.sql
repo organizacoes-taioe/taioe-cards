@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso fr-es, leva b699d5bc, 1862 cards.
+-- Catálogo do curso fr-es, leva 7e342470, 1862 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('fr-es', 'b699d5bc', '1862 cards')
+values ('fr-es', '7e342470', '1862 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -1734,7 +1734,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-es', 'fr-p753', 'palavra', 'A2', array['substantivo']::text[], null, '0631888d', array['el cuerpo / la piel', 'el espíritu / la mente', 'el miedo / el sueño', 'el nombre / el peso', 'la voz / el rostro']::text[]),
   ('fr-es', 'fr-p754', 'palavra', 'A1', array['substantivo']::text[], null, 'f32c1598', array['el camino', 'el gusto', 'el sentido', 'el sonido', 'la razón']::text[]),
   ('fr-es', 'fr-p755', 'palavra', 'A2', array['substantivo']::text[], null, '5c0c6a50', array['el aterrizaje / el premio', 'el salto / la multa', 'el viaje / el susto', 'el vuelo / el robo', 'la caída / el castigo']::text[]),
-  ('fr-es', 'fr-p756', 'palavra', 'C1', array['adjetivo']::text[], null, '09d026ae', array['antiguo', 'extranjero', 'lejano', 'natal', 'vecino']::text[]),
+  ('fr-es', 'fr-p756', 'palavra', 'C1', array['adjetivo']::text[], null, 'e2680f3a', array['antiguo', 'extranjero', 'lejano', 'natal', 'vecino']::text[]),
   ('fr-es', 'fr-p757', 'palavra', 'B2', array['substantivo']::text[], null, '350d6a0b', array['la enfermedad', 'la guerra', 'la miseria', 'la soledad', 'la tristeza']::text[]),
   ('fr-es', 'fr-p758', 'palavra', 'C1', array['substantivo']::text[], null, 'd17992ff', array['el camionero', 'el ciclista', 'el ferroviario', 'el piloto', 'el taxista']::text[]),
   ('fr-es', 'fr-p759', 'palavra', 'B1', array['substantivo']::text[], null, '309724a3', array['el alcalde', 'el capitán', 'el general', 'el piloto', 'el soldado']::text[]),
