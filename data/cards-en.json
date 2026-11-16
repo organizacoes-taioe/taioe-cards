@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "en",
- "gerado_em": "2026-11-03",
+ "gerado_em": "2026-11-16",
  "total": 2810,
  "cards": [
   {
@@ -9362,14 +9362,18 @@
    "idioma": "en",
    "id": "en-f064",
    "tipo": "frase",
-   "en": "The house was built in 1920.",
+   "en": "The house was built in nineteen twenty.",
    "pt": "A casa foi construída em 1920.",
    "es": "La casa fue construida en 1920.",
    "aceitas": [
     "a casa foi construida em 1920",
     "construiram a casa em 1920",
     "a casa e de 1920",
-    "a casa foi feita em 1920"
+    "a casa foi feita em 1920",
+    "a casa foi construida em mil novecentos e vinte",
+    "construiram a casa em mil novecentos e vinte",
+    "a casa e de mil novecentos e vinte",
+    "a casa foi feita em mil novecentos e vinte"
    ],
    "aceitasEs": [
     "La casa fue construida en 1920",
@@ -9377,8 +9381,8 @@
     "La casa se construyó en 1920"
    ],
    "aceitasEn": [
-    "the house was built in 1920",
-    "they built the house in 1920"
+    "the house was built in nineteen twenty",
+    "they built the house in nineteen twenty"
    ],
    "distratores": [
     "A casa foi vendida em 1920.",
@@ -44476,13 +44480,16 @@
    "idioma": "en",
    "id": "en-v173",
    "tipo": "frase",
-   "en": "The bridge was built in 1920.",
+   "en": "The bridge was built in nineteen twenty.",
    "pt": "A ponte foi construída em 1920.",
    "es": "El puente fue construido en 1920.",
    "aceitas": [
     "a ponte foi construida em 1920",
     "a ponte foi feita em 1920",
-    "construiram a ponte em 1920"
+    "construiram a ponte em 1920",
+    "a ponte foi construida em mil novecentos e vinte",
+    "a ponte foi feita em mil novecentos e vinte",
+    "construiram a ponte em mil novecentos e vinte"
    ],
    "aceitasEs": [
     "El puente fue construido en 1920",
@@ -44490,8 +44497,8 @@
     "Construyeron el puente en 1920"
    ],
    "aceitasEn": [
-    "the bridge was built in 1920",
-    "the bridge was constructed in 1920"
+    "the bridge was built in nineteen twenty",
+    "the bridge was constructed in nineteen twenty"
    ],
    "distratores": [
     "A ponte é construída em 1920.",
@@ -44506,16 +44513,16 @@
     "El puente había sido construido en 1920."
    ],
    "formasEn": {
-    "The bridge is built in 1920": "presente",
-    "The bridge will be built in 1920": "futuro",
-    "The bridge would be built in 1920": "condicional",
-    "The bridge had been built in 1920": "mais-que-perfeito"
+    "The bridge is built in nineteen twenty": "presente",
+    "The bridge will be built in nineteen twenty": "futuro",
+    "The bridge would be built in nineteen twenty": "condicional",
+    "The bridge had been built in nineteen twenty": "mais-que-perfeito"
    },
    "formasEnEs": {
-    "The bridge is built in 1920": "presente",
-    "The bridge will be built in 1920": "futuro",
-    "The bridge would be built in 1920": "condicional",
-    "The bridge had been built in 1920": "pluscuamperfecto"
+    "The bridge is built in nineteen twenty": "presente",
+    "The bridge will be built in nineteen twenty": "futuro",
+    "The bridge would be built in nineteen twenty": "condicional",
+    "The bridge had been built in nineteen twenty": "pluscuamperfecto"
    },
    "nivel": "B1",
    "tags": [
@@ -99858,14 +99865,14 @@
    "en": "I have lived here for two years.",
    "pt": "Moro aqui há dois anos.",
    "distratoresEn": [
-    "I have lived here since 2020.",
+    "I have lived here since twenty twenty.",
     "I lived here two years ago.",
     "I live here for two years.",
     "I have lived here since two years."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since 2020. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since 2020 — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since 2020); a duração vai com for.",
+   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since twenty twenty. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since twenty twenty — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since twenty twenty); a duração vai com for.",
    "nivel": "B1",
    "tags": [
     "contraste"
@@ -99883,7 +99890,7 @@
    "id": "en-k032",
    "tipo": "contraste",
    "conjunto": "n15",
-   "en": "I have lived here since 2020.",
+   "en": "I have lived here since twenty twenty.",
    "pt": "Moro aqui desde 2020.",
    "distratoresEn": [
     "I have lived here for two years.",
@@ -99893,7 +99900,7 @@
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since 2020. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since 2020 — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since 2020); a duração vai com for.",
+   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since twenty twenty. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since twenty twenty — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since twenty twenty); a duração vai com for.",
    "nivel": "B1",
    "tags": [
     "contraste"
@@ -99915,13 +99922,13 @@
    "pt": "Eu morava aqui há dois anos.",
    "distratoresEn": [
     "I have lived here for two years.",
-    "I have lived here since 2020.",
+    "I have lived here since twenty twenty.",
     "I live here for two years.",
     "I have lived here since two years."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since 2020. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since 2020 — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since 2020); a duração vai com for.",
+   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since twenty twenty. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since twenty twenty — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since twenty twenty); a duração vai com for.",
    "nivel": "B1",
    "tags": [
     "contraste"

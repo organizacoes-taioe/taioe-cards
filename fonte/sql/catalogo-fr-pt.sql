@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso fr-pt, leva baa1744b, 1714 cards.
+-- Catálogo do curso fr-pt, leva 8786b97c, 1714 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('fr-pt', 'baa1744b', '1714 cards')
+values ('fr-pt', '8786b97c', '1714 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -1465,9 +1465,9 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('fr-pt', 'fr-k017', 'contraste', 'A1', array['contraste']::text[], null, 'fe5218ba', array['Je vais au Brésil.', 'Je vais en France.', 'Je vais en Paris.', 'Je vais à France.', 'Je vais à Paris.']::text[]),
   ('fr-pt', 'fr-k018', 'contraste', 'A2', array['contraste']::text[], null, 'ce52f312', array['Elle a mangé à Paris.', 'Elle a mangée à Paris.', 'Elle a né à Paris.', 'Elle est né à Paris.', 'Elle est née à Paris.']::text[]),
   ('fr-pt', 'fr-k019', 'contraste', 'A2', array['contraste']::text[], null, 'e25b3365', array['Elle a mangé à Paris.', 'Elle a mangée à Paris.', 'Elle a né à Paris.', 'Elle est né à Paris.', 'Elle est née à Paris.']::text[]),
-  ('fr-pt', 'fr-k020', 'contraste', 'A2', array['contraste']::text[], null, '370a2676', array['J''ai habité ici depuis deux ans.', 'J''habitais ici il y a deux ans.', 'J''habite ici depuis 2020.', 'J''habite ici depuis deux ans.', 'J''habite ici il y a deux ans.']::text[]),
-  ('fr-pt', 'fr-k021', 'contraste', 'A2', array['contraste']::text[], null, '09ef8b75', array['J''ai habité ici depuis deux ans.', 'J''habitais ici il y a deux ans.', 'J''habite ici depuis 2020.', 'J''habite ici depuis deux ans.', 'J''habite ici il y a deux ans.']::text[]),
-  ('fr-pt', 'fr-k022', 'contraste', 'A2', array['contraste']::text[], null, 'a8255a8c', array['J''ai habité ici depuis deux ans.', 'J''habitais ici il y a deux ans.', 'J''habite ici depuis 2020.', 'J''habite ici depuis deux ans.', 'J''habite ici il y a deux ans.']::text[]),
+  ('fr-pt', 'fr-k020', 'contraste', 'A2', array['contraste']::text[], null, '55fc7b91', array['J''ai habité ici depuis deux ans.', 'J''habitais ici il y a deux ans.', 'J''habite ici depuis deux ans.', 'J''habite ici depuis deux mille vingt.', 'J''habite ici il y a deux ans.']::text[]),
+  ('fr-pt', 'fr-k021', 'contraste', 'A2', array['contraste']::text[], null, '0d4153f5', array['J''ai habité ici depuis deux ans.', 'J''habitais ici il y a deux ans.', 'J''habite ici depuis deux ans.', 'J''habite ici depuis deux mille vingt.', 'J''habite ici il y a deux ans.']::text[]),
+  ('fr-pt', 'fr-k022', 'contraste', 'A2', array['contraste']::text[], null, 'cc482059', array['J''ai habité ici depuis deux ans.', 'J''habitais ici il y a deux ans.', 'J''habite ici depuis deux ans.', 'J''habite ici depuis deux mille vingt.', 'J''habite ici il y a deux ans.']::text[]),
   ('fr-pt', 'fr-k023', 'contraste', 'A2', array['contraste']::text[], null, 'f7d6dd8a', array['Quand j''arriver, je t''appellerai.', 'Quand j''arriverai, je t''appellerai.', 'Quand je suis arrivé, je t''ai appelé.', 'Si j''arrive, je t''appellerai.', 'Si j''arriverai, je t''appellerai.']::text[]),
   ('fr-pt', 'fr-k024', 'contraste', 'A2', array['contraste']::text[], null, 'f6631030', array['Quand j''arriver, je t''appellerai.', 'Quand j''arriverai, je t''appellerai.', 'Quand je suis arrivé, je t''ai appelé.', 'Si j''arrive, je t''appellerai.', 'Si j''arriverai, je t''appellerai.']::text[]),
   ('fr-pt', 'fr-k025', 'contraste', 'A2', array['contraste']::text[], null, 'a5499abf', array['Quand j''arriver, je t''appellerai.', 'Quand j''arriverai, je t''appellerai.', 'Quand je suis arrivé, je t''ai appelé.', 'Si j''arrive, je t''appellerai.', 'Si j''arriverai, je t''appellerai.']::text[]),

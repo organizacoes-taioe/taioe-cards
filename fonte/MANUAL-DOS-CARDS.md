@@ -805,6 +805,9 @@ sem ele o navegador serve o baralho velho.
 | Palavra cujo `pt` tem outro gênero no espanhol leva o parêntese que desfaz a confusão | `p1169` la guía → «o guia (o livro)», contra «el guía», o homem — 07/11/2026 |
 | A frase canônica segue a imagem do espanhol quando o português a tem, também na voz | `u452` «Lo echaron del trabajo» → «Mandaram ele embora do trabalho» (antes «Ele foi demitido»); `f203` «Lo que pasa es que…» → «O que acontece é que…» (antes «É que…») — 07/11/2026 |
 | Cognato verdadeiro fica no `pt` em vez do sentido vizinho | `p205` pretender → «pretender» (antes «tentar», que é «intentar») — 07/11/2026 |
+| Número na língua estudada vai por extenso no card; a resposta pode vir em algarismos (o motor lê os dois: `Motor.porExtenso`), e o `pt` pode ficar em algarismos, com o extenso nas `aceitas` | `v059` «Nos conocimos en dos mil diez», `en-f064`, `en-v173`, `en-k032`, `fr-k022`, `it-u457`, `it-v113` — 15/11/2026 |
+| «Ese/esa» é «esse/essa»; «aquel», «aquele» (a tradução que troca um pelo outro confunde) | `u122` «Siéntate en esa silla» → «Senta nessa cadeira»; `u361` — 15/11/2026 |
+| No máximo três frases com a mesma construção («me duele», «j'ai mal», «mi piace», «ci vediamo»); as outras viram frases da mesma palavra em outra situação | pedido de 15/11/2026 («vários cards com "me duele"») |
 
 ---
 

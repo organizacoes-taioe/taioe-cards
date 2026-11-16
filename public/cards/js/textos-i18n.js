@@ -76,6 +76,7 @@ window.TAIOE_TEXTOS = {
     'card.enunciado.conceito.conjugacao': 'De que conjugação é o verbo destacado?',
     'card.enunciado.conceito.declinacaoDicionario': 'De que declinação é este nome?',
     'card.enunciado.conceito.conjugacaoDicionario': 'De que conjugação é este verbo?',
+    'card.enunciado.conceito.verbete': 'O que é, em ordem, cada parte deste verbete?',
     'card.enunciado.forma.funcao': 'Qual a função da palavra destacada na frase?',
     'card.enunciado.forma.pessoa': 'Em que pessoa e número está o verbo destacado?',
     'card.enunciado.forma.dicionario': 'Qual a forma de dicionário da palavra destacada?',
@@ -344,6 +345,10 @@ window.TAIOE_TEXTOS = {
     'comeco.estudar': 'Começar a estudar',
 
     'card.desafio': 'Desafio',
+    'card.teste': 'Teste',
+    'card.avisoTeste': 'Pela estimativa, você já sabe esta palavra. Acertando, ela fica como conhecida.',
+    'card.testeConfirmado': 'Confirmado: esta palavra fica como conhecida.',
+    'card.testeEntra': 'Esta palavra entra no seu estudo a partir de agora.',
     'card.previaVolta': 'Essa volta quando você tiver as palavras dela.',
     'card.previaEntra': 'Acertou de primeira: esta frase entra no seu jogo.',
 
@@ -482,6 +487,7 @@ window.TAIOE_TEXTOS = {
     'card.enunciado.conceito.conjugacao': '¿De qué conjugación es el verbo destacado?',
     'card.enunciado.conceito.declinacaoDicionario': '¿De qué declinación es este sustantivo?',
     'card.enunciado.conceito.conjugacaoDicionario': '¿De qué conjugación es este verbo?',
+    'card.enunciado.conceito.verbete': '¿Qué es, en orden, cada parte de esta entrada?',
     'card.enunciado.forma.funcao': '¿Qué función tiene en la frase la palabra destacada?',
     'card.enunciado.forma.pessoa': '¿En qué persona y número está el verbo destacado?',
     'card.enunciado.forma.dicionario': '¿Cuál es la forma de diccionario de la palabra destacada?',
@@ -749,6 +755,10 @@ window.TAIOE_TEXTOS = {
     'comeco.estudar': 'Empezar a estudiar',
 
     'card.desafio': 'Desafío',
+    'card.teste': 'Prueba',
+    'card.avisoTeste': 'Según la estimación, ya sabes esta palabra. Si aciertas, queda como conocida.',
+    'card.testeConfirmado': 'Confirmado: esta palabra queda como conocida.',
+    'card.testeEntra': 'Esta palabra entra en tu estudio a partir de ahora.',
     'card.previaVolta': 'Esta vuelve cuando tengas sus palabras.',
     'card.previaEntra': 'Acertaste a la primera: esta frase entra en tu juego.',
 
@@ -885,6 +895,7 @@ window.TAIOE_TEXTOS = {
     'card.enunciado.conceito.conjugacao': 'Which conjugation is the highlighted verb?',
     'card.enunciado.conceito.declinacaoDicionario': 'Which declension is this noun?',
     'card.enunciado.conceito.conjugacaoDicionario': 'Which conjugation is this verb?',
+    'card.enunciado.conceito.verbete': 'What is each part of this entry, in order?',
     'card.enunciado.forma.funcao': 'What is the function of the highlighted word in the sentence?',
     'card.enunciado.forma.pessoa': 'What person and number is the highlighted verb?',
     'card.enunciado.forma.dicionario': 'What is the dictionary form of the highlighted word?',
@@ -1152,6 +1163,10 @@ window.TAIOE_TEXTOS = {
     'comeco.estudar': 'Start studying',
 
     'card.desafio': 'Challenge',
+    'card.teste': 'Check',
+    'card.avisoTeste': 'Our estimate says you already know this word. Get it right and it stays as known.',
+    'card.testeConfirmado': 'Confirmed: this word stays as known.',
+    'card.testeEntra': 'This word joins your study from now on.',
     'card.previaVolta': 'This one comes back once you have its words.',
     'card.previaEntra': 'Right first time: this sentence joins your game.',
 

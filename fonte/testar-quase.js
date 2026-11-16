@@ -105,5 +105,23 @@ ok(ida(desayuno, 'cafw da manhq') === 'quase', 'com o baralho carregado, o erro 
 M.usarVocabulario([]);
 ok(ida(pastor, 'eu era o bom pastor') === 'quase', 'sem baralho não há como saber: valem os 20%');
 
+/* o acento que separa palavras («tú» × «tu»): o funil tira o sujeito «tú» e guarda o «tu» (v096) */
+const yoQueTu = frase('Yo que tú, no lo haría.', 'Se eu fosse você, não faria isso.');
+ok(volta(yoQueTu, 'Yo que tu, no lo haria') === 'certo', 'tú sem acento: certo, com aviso');
+ok(!!M.acentoRelevado(yoQueTu, 'yo que tu no lo haria', 'pt-es'), 'tú sem acento: o aviso do acento');
+ok(volta(yoQueTu, 'yo que tú no lo haría') === 'certo', 'com os acentos: certo');
+
+/* número em algarismos vale pelo número por extenso (15/11) */
+const conocimos = frase('Nos conocimos en dos mil diez.', 'Nós nos conhecemos em 2010.');
+ok(volta(conocimos, 'Nos conocimos en 2010') === 'certo', 'algarismo no espanhol: certo');
+ok(volta(conocimos, 'Nos conocimos en 2011') !== 'certo', 'outro número: não é certo');
+const horas = frase('Tardé dos horas en llegar.', 'Demorei duas horas para chegar.');
+ok(ida(horas, 'demorei 2 horas para chegar') === 'certo', 'algarismo no português, no feminino: certo');
+const vinte = frase('x', 'Tenho vinte e um anos.');
+ok(ida(vinte, 'tenho 21 anos') === 'certo', 'número composto: certo');
+ok(M.porExtenso('1920', 'en').includes('nineteen twenty'), 'o ano em inglês');
+ok(M.porExtenso('1945', 'it').includes('millenovecentoquarantacinque'), 'o ano em italiano');
+ok(M.porExtenso('71', 'fr').includes('soixante et onze'), 'o 71 em francês');
+
 console.log(falhas ? falhas + ' de ' + feitos + ' falharam' : 'testar-quase: ' + feitos + ' conferências, tudo certo');
 process.exit(falhas ? 1 : 0);

@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso en-es, leva 463bb40b, 2770 cards.
+-- Catálogo do curso en-es, leva c24cdaa4, 2770 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('en-es', '463bb40b', '2770 cards')
+values ('en-es', 'c24cdaa4', '2770 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -200,7 +200,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-f061', 'frase', 'A2', array['preposição', 'objetos']::text[], null, '5897a6a5', array['Es de madera.', 'Está cubierto de madera.', 'Está lleno de madera.', 'Está pintado de madera.', 'Parece de madera.']::text[]),
   ('en-es', 'en-f062', 'frase', 'A2', array['preposição', 'objetos']::text[], null, '92c02d40', array['Estoy arreglando mis gafas.', 'Estoy buscando mis gafas.', 'Estoy guardando mis gafas.', 'Estoy limpiando mis gafas.', 'Estoy usando mis gafas.']::text[]),
   ('en-es', 'en-f063', 'frase', 'A2', array['futuro', 'gramática']::text[], null, '3faba6c2', array['Va a dejar de llover.', 'Va a despejar.', 'Va a hacer viento.', 'Va a llover.', 'Va a refrescar.']::text[]),
-  ('en-es', 'en-f064', 'frase', 'B1', array['gramática', 'casa']::text[], null, 'f81ac5b1', array['La casa fue comprada en 1920.', 'La casa fue construida en 1920.', 'La casa fue derribada en 1920.', 'La casa fue reformada en 1920.', 'La casa fue vendida en 1920.']::text[]),
+  ('en-es', 'en-f064', 'frase', 'B1', array['gramática', 'casa']::text[], null, '12caf207', array['La casa fue comprada en 1920.', 'La casa fue construida en 1920.', 'La casa fue derribada en 1920.', 'La casa fue reformada en 1920.', 'La casa fue vendida en 1920.']::text[]),
   ('en-es', 'en-f065', 'frase', 'B1', array['gramática', 'social']::text[], null, '6d63d478', array['Eres de Brasil, ¿verdad?', 'Quieres ir a Brasil, ¿verdad?', 'Vives en Brasil, ¿verdad?', 'Ya has estado en Brasil, ¿verdad?', '¿Eres de Brasil o de Portugal?']::text[]),
   ('en-es', 'en-f066', 'frase', 'A2', array['gramática', 'economia']::text[], null, 'b153d7c2', array['Este es casi tan caro como aquel.', 'Este es el más barato de todos.', 'Este es más barato que aquel.', 'Este es más caro que aquel.', 'Este es tan barato como aquel.']::text[]),
   ('en-es', 'en-f067', 'frase', 'B1', array['gramática', 'cultura']::text[], null, 'cd10d12d', array['Es la mejor película que he visto.', 'Es la película más larga que he visto.', 'Es la peor película que he visto.', 'Es la primera película que he visto.', 'Es la única película que he visto.']::text[]),
@@ -897,7 +897,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-es', 'en-v170', 'frase', 'A2', array['conjugação', 'irregular', 'be', 'present perfect', 'viagem']::text[], null, '7adfd1e0', array['¿Fuiste a España el año pasado?', '¿Habías ido a España?', '¿Has estado alguna vez en España?', '¿Irás a España?', '¿Irías a España?']::text[]),
   ('en-es', 'en-v171', 'frase', 'B1', array['conjugação', 'irregular', 'be', 'presente']::text[], null, 'e373ea46', array['Debe de estar roto.', 'Deberá estar roto.', 'Debería estar roto.', 'Debió de estar roto.', 'Debía de estar roto.']::text[]),
   ('en-es', 'en-v172', 'frase', 'B1', array['conjugação', 'irregular', 'tell', 'pretérito', 'trabalho']::text[], null, '4e2fa816', array['Me decían que esperara.', 'Me dijeron que esperara.', 'Me dirían que esperara.', 'Me habían dicho que esperara.', 'Me van a decir que espere.']::text[]),
-  ('en-es', 'en-v173', 'frase', 'B1', array['conjugação', 'irregular', 'build', 'pretérito']::text[], null, '1f948103', array['El puente es construido en 1920.', 'El puente fue construido en 1920.', 'El puente había sido construido en 1920.', 'El puente será construido en 1920.', 'El puente sería construido en 1920.']::text[]),
+  ('en-es', 'en-v173', 'frase', 'B1', array['conjugação', 'irregular', 'build', 'pretérito']::text[], null, '0899286c', array['El puente es construido en 1920.', 'El puente fue construido en 1920.', 'El puente había sido construido en 1920.', 'El puente será construido en 1920.', 'El puente sería construido en 1920.']::text[]),
   ('en-es', 'en-v174', 'frase', 'B1', array['conjugação', 'regular', 'paint', 'presente', 'casa']::text[], null, 'e0a502b3', array['La casa está siendo pintada.', 'La casa fue pintada.', 'La casa había sido pintada.', 'La casa será pintada.', 'La casa sería pintada.']::text[]),
   ('en-es', 'en-v175', 'frase', 'B1', array['conjugação', 'regular', 'live', 'present perfect']::text[], null, '9ccc1b8f', array['Había vivido aquí diez años.', 'Vive aquí desde hace diez años.', 'Vivirá aquí diez años.', 'Viviría aquí diez años.', 'Vivió aquí diez años.']::text[]),
   ('en-es', 'en-v176', 'frase', 'B1', array['conjugação', 'irregular', 'win', 'condicional composto']::text[], null, '1993db64', array['Ganará.', 'Ganaría.', 'Ganó.', 'Habría ganado.', 'Había ganado.']::text[]),

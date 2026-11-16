@@ -133,6 +133,7 @@ window.TaioeCardsApp = function (ctx) {
     construcao: 'card.enunciado.conceito.construcao', declinacao: 'card.enunciado.conceito.declinacao',
     genero: 'card.enunciado.conceito.genero',
     conjugacao: 'card.enunciado.conceito.conjugacao',
+    verbete: 'card.enunciado.conceito.verbete',
     /* os de gramática do espanhol (03/11/2026) */
     tempo: 'card.enunciado.conceito.tempo', 'ser-estar': 'card.enunciado.conceito.serEstar',
     'por-para': 'card.enunciado.conceito.porPara', pronome: 'card.enunciado.conceito.pronome',
@@ -144,7 +145,8 @@ window.TaioeCardsApp = function (ctx) {
   /* o exemplo que é o enunciado do dicionário: a palavra inteira, sem destaque */
   const ENUNCIADO_DO_DICIONARIO = {
     declinacao: 'card.enunciado.conceito.declinacaoDicionario',
-    conjugacao: 'card.enunciado.conceito.conjugacaoDicionario'
+    conjugacao: 'card.enunciado.conceito.conjugacaoDicionario',
+    verbete: 'card.enunciado.conceito.verbete'
   };
 
   /* emVista.escolha: os textos que a pessoa estuda ({ textos, em, propria });
@@ -182,7 +184,7 @@ window.TaioeCardsApp = function (ctx) {
     'cfg-conta', 'cfg-curso', 'btn-conta', 'btn-sair', 'cfg-outros-cursos', 'cfg-lingua',
     'estado-sync', 'btn-exportar', 'btn-zerar', 'rodape-sync', 'cfg-comentarios',
     /* o começo do app (PLANO.md, seção 7) */
-    'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'aviso-previa', 'btn-refazer',
+    'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'meta-teste', 'aviso-teste', 'aviso-previa', 'btn-refazer',
     'btn-recomecar', 'recomecar-fundo', 'recomecar-titulo', 'recomecar-vistos', 'recomecar-pede',
     'recomecar-frase', 'btn-recomecar-sim', 'btn-recomecar-nao',
     'arquivar-fundo', 'arquivar-titulo', 'arquivar-texto', 'btn-arquivar-sim', 'btn-arquivar-nao'
@@ -812,10 +814,15 @@ window.TaioeCardsApp = function (ctx) {
     /* os conceitos, cada um antes do primeiro card que o pede; o que nenhum pede vai no fim */
     const pede = id => {
       const c = PORID[id] || {};
-      return c.tipo === 'palavra' ? (palavrasDosTextos.has(id) ? conceitosDaPalavra(id) : [])
+      return c.tipo === 'palavra' ? (palavrasDosTextos.has(id) ? conceitosDaPalavra(id) : []).concat(c.verbete ? [c.verbete] : [])
         : (c.conceitos || []).concat(c.grupoConceito ? [c.grupoConceito] : []);
     };
+    /* o conceito do verbete de quem já viu palavras daquele tipo (o caso de quem estudava antes
+       de 15/11/2026) vem na frente, e não no fim */
     const saida = [];
+    const verbetes = new Set();
+    CARDS.forEach(c => { if (c.verbete && p.cards[c.id] && p.cards[c.id].vistas) verbetes.add(c.verbete); });
+    verbetes.forEach(g => saida.push(...pega(g)));
     for (const id of fila) {
       pede(id).forEach(g => saida.push(...pega(g)));
       saida.push(id);
@@ -1171,6 +1178,14 @@ window.TaioeCardsApp = function (ctx) {
       if (i >= 0) progresso.ineditos.splice(i, 1);
       return contraste;
     }
+    /* Uma vaga de card novo em cada dez é do teste de um presumido (o Gere, 15/11/2026; ver
+       Motor.presumidoParaTestar): ele sai da fila dos dominados, onde esperava a data. */
+    const testado = testeDaVez();
+    if (testado) {
+      retirarDasFilas(testado);
+      testeAtual = { id: testado };
+      return testado;
+    }
     /* A vaga de card novo pode ser de um desafio (PLANO.md, 7.4): o motor
        diz se é a hora e qual; a frase ainda presa vem como prévia. */
     const desafio = Motor.escolherDesafio(CARDS, progresso.cards, contextoDoDesafio());
@@ -1200,6 +1215,27 @@ window.TaioeCardsApp = function (ctx) {
       if (outro >= 0) i = outro;
     }
     return progresso.ineditos.splice(i, 1)[0];
+  }
+
+  /* O presumido da vez do teste, ou null: só com a lista de frequência, fora do latim. */
+  function testeDaVez() {
+    if (TRILHAS || !LISTA || !Motor.horaDoTeste(progresso.cards)) return null;
+    return Motor.presumidoParaTestar(CARDS, progresso.cards, progresso.arquivados || {});
+  }
+
+  /* ── a estimativa viva (o Gere, 15/11/2026; Motor.reverDivisa) ──
+     Depois da primeira resposta de um card de palavra da lista, do teste de um presumido ou de
+     um «Já conheço», a divisa se refaz com tudo o que a pessoa respondeu. Mudou: os presumidos,
+     as filas e os inéditos se refazem, e o nivelamento sobe com os extras. */
+  function reverEstimativa() {
+    if (TRILHAS || !LISTA) return false;
+    const novo = Motor.reverDivisa(progresso.nivelamento, LISTA, CARDS, {
+      uid: ctx.uid, agora: new Date().toISOString(), estados: progresso.cards, arquivados: progresso.arquivados || {} });
+    if (!novo) return false;
+    progresso.nivelamento = novo;
+    conciliarFila(progresso);
+    if (Sinc) Sinc.agendar(3000);
+    return true;
   }
 
   /* ── sempre um contraste em jogo, e só um ──
@@ -1350,6 +1386,7 @@ window.TaioeCardsApp = function (ctx) {
     if (!cardAtual || cardAtual.id !== id) return;
     const c = PORID[id] || cardAtual;
     marcarArquivo(c.id, true);
+    reverEstimativa();
     statusSync(t('arquivar.feito', { x: c[L] }), 'ok');
     respostaPendente = null;
     proximoCard();
@@ -1409,8 +1446,9 @@ window.TaioeCardsApp = function (ctx) {
     const lido = textoParaLer();
     if (lido) { mostrarRecompensa(lido); return; }
     if (window.scrollY >= 2) el['tela-card'].style.minHeight = el['tela-card'].offsetHeight + 'px';
-    /* o desafio, se vier, é marcado por proximoNovo durante a escolha */
+    /* o desafio e o teste do presumido, se vierem, são marcados por proximoNovo durante a escolha */
     desafioAtual = null;
+    testeAtual = null;
     const id = tirarProximoId();
     if (!id) { irParaInicio(); return; }
     const bruto = PORID_FONTE[id];
@@ -1472,11 +1510,15 @@ window.TaioeCardsApp = function (ctx) {
        só, e arquivar uma frase que nem entrou no jogo não faz sentido */
     const previa = !!(desafioAtual && desafioAtual.previa);
     el['meta-desafio'].classList.toggle('oculto', !desafioAtual);
+    /* o teste do presumido avisa que é teste (pedido do Gere, 15/11/2026) */
+    const emTeste = !!(testeAtual && testeAtual.id === id);
+    el['meta-teste'].classList.toggle('oculto', !emTeste);
+    el['aviso-teste'].classList.toggle('oculto', !emTeste);
     /* o card de forma acertado de primeira já sai sozinho: o «já conheço» não teria o que fazer */
     /* nem no de contraste, que é só treino de leitura das terminações */
     /* nem nos de compreensão e de herança (§13), que são leitura do que já se estudou */
     /* nem nos de análise (§15), que são uma vez só */
-    jaConhecoNoCard = estreando && !previa && !['forma', 'contraste', 'compreensao', 'heranca', 'analise'].includes(cardAtual.tipo);
+    jaConhecoNoCard = estreando && !previa && !emTeste && !['forma', 'contraste', 'compreensao', 'heranca', 'analise'].includes(cardAtual.tipo);
     posicionarJaConheco(false);
     el['aviso-previa'].classList.add('oculto');
     /* O nível vive na aba do fichário e fica à mostra o tempo todo: saber que
@@ -1940,6 +1982,7 @@ window.TaioeCardsApp = function (ctx) {
       if (previa && !r.acertou) guardarPreviaErrada(r);
       else registrar(r);
       if (desafioAtual && desafioAtual.id === cardAtual.id) anotarDesafio(r);
+      if (testeAtual && testeAtual.id === cardAtual.id) concluirTeste(r);
       if (previa) {
         el['aviso-previa'].textContent = t(r.acertou ? 'card.previaEntra' : 'card.previaVolta');
         el['aviso-previa'].classList.remove('oculto');
@@ -1952,6 +1995,19 @@ window.TaioeCardsApp = function (ctx) {
     posicionarJaConheco(true);
     el['btn-proximo'].focus({ preventScroll: true });
     trazerBotaoParaAVista();
+  }
+
+  /* O fim do teste do presumido: acertou, a palavra fica como conhecida de vez (o arquivo do
+     «Já conheço»); errou, ela já entrou no jogo pelo registrar (Motor.responderPresumido). */
+  function concluirTeste(r) {
+    const id = testeAtual.id;
+    if (r.acertou) {
+      marcarArquivo(id, true);
+      reverEstimativa();
+    }
+    el['aviso-teste'].classList.add('oculto');
+    el['aviso-previa'].textContent = t(r.acertou ? 'card.testeConfirmado' : 'card.testeEntra');
+    el['aviso-previa'].classList.remove('oculto');
   }
 
   function pintarPedacos(ps) {
@@ -2320,6 +2376,8 @@ window.TaioeCardsApp = function (ctx) {
     if (presumido) {
       est = progresso.cards[id] = Motor.responderPresumido(id, r);
       if (est.vistasServidor === undefined) est.vistasServidor = 0;
+      /* o teste da vaga de card novo (15/11/2026): é dele que sai a vez do próximo teste */
+      if (testeAtual && testeAtual.id === id) { est.testado = true; est.testadoNa = relogioAntes; }
     }
     else Motor.registrar(est, r);
     /* Para o painel: o dia, a hora e o tempo desta resposta, e — se era a
@@ -2332,8 +2390,9 @@ window.TaioeCardsApp = function (ctx) {
       if (r.acertou) progresso.retencao[degrauAntes][1]++;
     }
     const virouDominado = est.etapa === 'dominado' && etapaAntes !== 'dominado';
-    mostrarConquista(virouDominado,
-      etapaAntes === 'dominado' && r.acertou ? DIAS_DO_ROTULO[est.revisoes] : null);
+    /* o teste do presumido acertado não volta: fica como conhecido (concluirTeste), sem o «volta em» */
+    mostrarConquista(virouDominado, etapaAntes === 'dominado' && r.acertou &&
+      !(testeAtual && testeAtual.id === id) ? DIAS_DO_ROTULO[est.revisoes] : null);
 
     const guardado = guardarNaFila(id, est, r);
 
@@ -2381,6 +2440,9 @@ window.TaioeCardsApp = function (ctx) {
     if (Sinc) Sinc.anotar(evento, id);
 
     ultimoRegistro = { id, est, evento, r };
+
+    /* a primeira resposta de uma palavra da lista (ou a do presumido) refaz a estimativa */
+    if (est.vistas === 1 && (PORID[id] || {}).tipo === 'palavra' && (PORID[id] || {}).pos) reverEstimativa();
 
     reordenarNovos();
     salvarProgresso();
@@ -3864,6 +3926,7 @@ window.TaioeCardsApp = function (ctx) {
      mais, e é só). */
   const CHAVE_DESAFIOS = 'cards:desafios:' + CHAVE;
   let desafioAtual = null;   // { id, previa }: o card na tela é um desafio
+  let testeAtual = null;     // { id }: o card na tela é o teste de um presumido (15/11/2026)
 
   function desafiosDoAparelho() {
     const x = lerLocal(CHAVE_DESAFIOS);

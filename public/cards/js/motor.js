@@ -809,10 +809,14 @@ window.Motor = (function () {
     }
     const comEne = semAcentoMantendoEne(dado);
     const semNada = semAcento(dado);
+    /* O acento que separa duas palavras («tú» e «tu», «él» e «el») muda o que o funil tira:
+       «Yo que tú, no lo haría» solta o «tú», sujeito, e «yo que tu…» guarda o «tu». Por isso a
+       comparação também se faz tirando o acento ANTES do funil, dos dois lados (v096, 13/11). */
+    const cru = normalizarEs(semAcentoMantendoEne(texto));
     let doEne = null;
     for (const alvo of formasAceitas(card, direcao)) {
       const n = normalizar(alvo, 'es');
-      if (semAcentoMantendoEne(n) === comEne) {
+      if (semAcentoMantendoEne(n) === comEne || (cru && normalizarEs(semAcentoMantendoEne(alvo)) === cru)) {
         return { forma: String(alvo).trim(), classe: 'acento' };
       }
       if (!doEne && semAcento(n) === semNada) doEne = String(alvo).trim();
@@ -1107,8 +1111,148 @@ window.Motor = (function () {
      o gênero trocado, a outra pessoa do verbo, o «n» por «ñ» e a resposta
      igual a uma alternativa errada passam pela mesma régua. Muitas vezes são
      a mão, e quem sabe é quem escreveu. O nome do erro (gênero, ñ, forma) o
-     app só mostra quando a resposta fica fora da régua. */
+     app só mostra quando a resposta fica fora da régua.
+
+     Número em algarismos vale pelo número por extenso (o Gere, 15/11: «Posso responder com
+     numerais, mas quero que o card na língua sendo estudada coloque o número por extenso»):
+     «2010» é «dos mil diez», «2 horas» é «duas horas». Ver porExtenso. */
   function conferir(card, texto, direcao) {
+    const r = conferirTexto(card, texto, direcao);
+    if (r === 'certo' || !/\d/.test(String(texto || ''))) return r;
+    let melhor = r;
+    for (const v of porExtenso(texto, linguaDaResposta(direcao))) {
+      const x = conferirTexto(card, v, direcao);
+      if (x === 'certo') return x;
+      if (x === 'quase') melhor = x;
+    }
+    return melhor;
+  }
+
+  /* ── o número por extenso ──
+     Todas as leituras de cada número do texto (0 a 9999), na língua da resposta: os dois gêneros
+     (um/uma, dois/duas, duzentos/duzentas; uno/un/una; un/une) e, no inglês e no francês, o
+     ano dito em duas partes («nineteen twenty», «dix-neuf cent vingt»). Devolve os textos com os
+     algarismos trocados, no máximo 24. */
+  const POR_EXTENSO = {
+    pt: n => {
+      const u = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez',
+        'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove'];
+      const d = ['', '', 'vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa'];
+      const c = ['', 'cento', 'duzentos', 'trezentos', 'quatrocentos', 'quinhentos', 'seiscentos',
+        'setecentos', 'oitocentos', 'novecentos'];
+      const ate999 = x => {
+        if (x < 20) return u[x];
+        if (x < 100) return d[Math.floor(x / 10)] + (x % 10 ? ' e ' + u[x % 10] : '');
+        if (x === 100) return 'cem';
+        return c[Math.floor(x / 100)] + (x % 100 ? ' e ' + ate999(x % 100) : '');
+      };
+      const m = Math.floor(n / 1000), r = n % 1000;
+      const masc = m ? (m === 1 ? 'mil' : ate999(m) + ' mil') +
+        (r ? ((r < 100 || r % 100 === 0) ? ' e ' : ' ') + ate999(r) : '') : ate999(n);
+      const fem = masc.replace(/\bum\b/g, 'uma').replace(/\bdois\b/g, 'duas').replace(/entos\b/g, 'entas');
+      return [masc, fem, masc.replace(/catorze/g, 'quatorze')];
+    },
+    es: n => {
+      const u = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez',
+        'once', 'doce', 'trece', 'catorce', 'quince', 'dieciséis', 'diecisiete', 'dieciocho', 'diecinueve',
+        'veinte', 'veintiuno', 'veintidós', 'veintitrés', 'veinticuatro', 'veinticinco', 'veintiséis',
+        'veintisiete', 'veintiocho', 'veintinueve'];
+      const d = ['', '', '', 'treinta', 'cuarenta', 'cincuenta', 'sesenta', 'setenta', 'ochenta', 'noventa'];
+      const c = ['', 'ciento', 'doscientos', 'trescientos', 'cuatrocientos', 'quinientos', 'seiscientos',
+        'setecientos', 'ochocientos', 'novecientos'];
+      const ate999 = x => {
+        if (x < 30) return u[x];
+        if (x < 100) return d[Math.floor(x / 10)] + (x % 10 ? ' y ' + u[x % 10] : '');
+        if (x === 100) return 'cien';
+        return c[Math.floor(x / 100)] + (x % 100 ? ' ' + ate999(x % 100) : '');
+      };
+      const m = Math.floor(n / 1000), r = n % 1000;
+      const masc = m ? (m === 1 ? 'mil' : ate999(m) + ' mil') + (r ? ' ' + ate999(r) : '') : ate999(n);
+      return [masc,
+        masc.replace(/veintiuno$/, 'veintiún').replace(/\buno$/, 'un'),          // antes do nome
+        masc.replace(/uno$/, 'una').replace(/ientos\b/g, 'ientas')];
+    },
+    en: n => {
+      const u = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+        'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+      const d = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+      const ate99 = x => x < 20 ? u[x] : d[Math.floor(x / 10)] + (x % 10 ? '-' + u[x % 10] : '');
+      const ate999 = (x, e) => x < 100 ? ate99(x)
+        : u[Math.floor(x / 100)] + ' hundred' + (x % 100 ? (e ? ' and ' : ' ') + ate99(x % 100) : '');
+      const cheio = e => {
+        const m = Math.floor(n / 1000), r = n % 1000;
+        return m ? ate999(m, e) + ' thousand' + (r ? (r < 100 && e ? ' and ' : ' ') + ate999(r, e) : '') : ate999(n, e);
+      };
+      const saida = [cheio(true), cheio(false)];
+      if (n >= 1100 && n <= 2099 && n % 1000 >= 10 || (n >= 1100 && n < 2000)) {      // o ano
+        const a = Math.floor(n / 100), b = n % 100;
+        saida.push(ate99(a) + ' ' + (b === 0 ? 'hundred' : b < 10 ? 'oh ' + u[b] : ate99(b)));
+        if (b === 0) saida.push(ate99(a) + ' hundred');
+      }
+      return saida;
+    },
+    fr: n => {
+      const u = ['zéro', 'un', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix',
+        'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf'];
+      const d = ['', '', 'vingt', 'trente', 'quarante', 'cinquante', 'soixante'];
+      const ate99 = x => {
+        if (x < 20) return u[x];
+        const t = Math.floor(x / 10), r = x % 10;
+        if (t < 7) return d[t] + (r === 1 ? ' et un' : r ? '-' + u[r] : '');
+        if (t === 7) return 'soixante' + (r === 1 ? ' et onze' : '-' + u[10 + r]);
+        if (t === 8) return 'quatre-vingt' + (r ? '-' + u[r] : 's');
+        return 'quatre-vingt-' + u[10 + r];
+      };
+      const ate999 = x => {
+        if (x < 100) return ate99(x);
+        const c = Math.floor(x / 100), r = x % 100;
+        return (c === 1 ? 'cent' : u[c] + ' cent' + (r ? '' : 's')) + (r ? ' ' + ate99(r) : '');
+      };
+      const m = Math.floor(n / 1000), r = n % 1000;
+      const masc = m ? (m === 1 ? 'mille' : ate999(m).replace(/cents$/, 'cent') + ' mille') + (r ? ' ' + ate999(r) : '') : ate999(n);
+      const saida = [masc, masc.replace(/\bun$/, 'une')];
+      if (n >= 1100 && n < 2000) saida.push(ate99(Math.floor(n / 100)) + ' cent' + (n % 100 ? ' ' + ate99(n % 100) : ''));
+      return saida;
+    },
+    it: n => {
+      const u = ['zero', 'uno', 'due', 'tre', 'quattro', 'cinque', 'sei', 'sette', 'otto', 'nove', 'dieci',
+        'undici', 'dodici', 'tredici', 'quattordici', 'quindici', 'sedici', 'diciassette', 'diciotto', 'diciannove'];
+      const d = ['', '', 'venti', 'trenta', 'quaranta', 'cinquanta', 'sessanta', 'settanta', 'ottanta', 'novanta'];
+      const ate99 = x => {
+        if (x < 20) return u[x];
+        const t = d[Math.floor(x / 10)], r = x % 10;
+        if (!r) return t;
+        return (r === 1 || r === 8 ? t.slice(0, -1) : t) + (r === 3 ? 'tré' : u[r]);
+      };
+      const ate999 = x => x < 100 ? ate99(x)
+        : (x < 200 ? 'cento' : u[Math.floor(x / 100)] + 'cento') + (x % 100 ? ate99(x % 100) : '');
+      const m = Math.floor(n / 1000), r = n % 1000;
+      const junto = m ? (m === 1 ? 'mille' : ate999(m) + 'mila') + (r ? ate999(r) : '') : ate999(n);
+      const saida = [junto, junto.replace(/uno$/, 'una'), junto.replace(/uno$/, 'un'), junto.replace(/centoo/g, 'cento')];
+      if (m) saida.push((m === 1 ? 'mille' : ate999(m) + 'mila') + (r ? ' ' + ate999(r) : ''));
+      return saida;
+    }
+  };
+
+  function porExtenso(texto, lingua) {
+    const ler = POR_EXTENSO[lingua];
+    const t = String(texto || '');
+    if (!ler || !/\d/.test(t)) return [];
+    let saida = [''];
+    for (const p of t.split(/(\d+)/)) {
+      if (/^\d+$/.test(p) && +p <= 9999 && !(p.length > 1 && p[0] === '0')) {
+        const leituras = Array.from(new Set(ler(+p)));
+        const novo = [];
+        saida.forEach(s => leituras.forEach(l => novo.push(s + l)));
+        saida = novo.slice(0, 24);
+      } else {
+        saida = saida.map(s => s + p);
+      }
+    }
+    return saida.filter(s => s !== t);
+  }
+
+  function conferirTexto(card, texto, direcao) {
     /* o card de flexão tem a régua dele, em que o artigo é resposta (ver conferirFlexao) */
     if (card.tipo === 'flexao') return conferirFlexao(card, texto);
     const lingua = linguaDaResposta(direcao);
@@ -2524,6 +2668,8 @@ window.Motor = (function () {
   function registrar(est, r) {
     /* o dia da estreia, para o painel contar os cards novos de cada dia */
     if (!est.vistas && !est.estreia) est.estreia = diaLocal(new Date());
+    /* a primeira resposta, para a estimativa viva (evidenciasDaDivisa, 15/11/2026) */
+    if (!est.vistas && est.primeira === undefined) est.primeira = !!r.acertou;
     est.vistas++;
     est.ultima = new Date().toISOString();
 
@@ -3836,6 +3982,7 @@ window.Motor = (function () {
      de todos. Devolve o estado novo, para o app guardar em progresso.cards. */
   function responderPresumido(id, r) {
     const est = estadoInicial(id);
+    est.confirmacao = true;     // a resposta de quem já era presumido: evidência forte (evidenciasDaDivisa)
     if (r && r.acertou) {
       est.etapa = 'dominado';
       registrar(est, r);
@@ -4446,6 +4593,137 @@ window.Motor = (function () {
              cartas: resumo, perguntas: resumo.length };
   }
 
+  /* ── a estimativa viva (o Gere, 15/11/2026) ──
+     «Sempre atualizar a previsão de quais palavras a pessoa já conhece. Tem um teste inicial
+     mas, depois, é possível ir atualizando essas estimativas com base em quais palavras a pessoa
+     acertou de primeira.» A divisa da lista (7.9) deixa de ser só a do teste: a cada primeira
+     resposta de um card de palavra da lista, a cada teste de presumido e a cada «Já conheço»,
+     ela é refeita como o ponto da lista que melhor explica tudo o que a pessoa respondeu até ali.
+
+     Cada resposta pesa pela chance de sair assim de quem sabe e de quem não sabe a palavra
+     (CHANCE_DE_ACERTO, [sabe, não sabe]): na estreia, que é de escolher, o chute acerta muito; no
+     teste, que é escrito, quase nunca. A divisa é a posição D que maximiza a soma dos logaritmos,
+     com tudo antes de D «sabe» e o resto «não sabe». Só muda quando a nova explica a evidência
+     com folga (FOLGA_DA_DIVISA, em logaritmo natural), para não oscilar a cada resposta. */
+  const CHANCE_DE_ACERTO = { estreia: [0.95, 0.35], teste: [0.9, 0.05], lista: [0.9, 0.1] };
+  const FOLGA_DA_DIVISA = 2;
+
+  /* As evidências: [{ pos, certo, tipo }]. As cartas do teste, as primeiras respostas dos cards de
+     palavra da lista (est.primeira; para os estados de antes de 15/11, o histórico quando ainda
+     tem a primeira, ou «nunca errou») e os «Já conheço». */
+  function evidenciasDaDivisa(cards, estados, arquivados, niv) {
+    const saida = [];
+    ((niv && niv.cartas) || []).forEach(c => {
+      if (c && c.pos > 0) saida.push({ pos: c.pos, certo: cartaConhecida(c), tipo: 'lista' });
+    });
+    estados = estados || {};
+    (cards || []).forEach(c => {
+      if (!c || c.tipo !== 'palavra' || !POS[c.id]) return;
+      const e = estados[c.id];
+      if (arquivado(c.id, arquivados)) {
+        saida.push({ pos: POS[c.id], certo: true, tipo: 'teste' });
+        return;
+      }
+      if (!e || !e.vistas) return;
+      let certo = e.primeira;
+      if (certo === undefined) {
+        const h = e.historico || [];
+        if (h.length && h.length === e.vistas) certo = !!h[0].acertou;
+        else if (!e.erros) certo = true;
+        else return;
+      }
+      saida.push({ pos: POS[c.id], certo: !!certo, tipo: e.testado || e.confirmacao ? 'teste' : 'estreia' });
+    });
+    return saida;
+  }
+
+  /* A divisa que melhor explica as evidências, e o quanto ela explica melhor que a atual:
+     { divisa, ganho }. */
+  function divisaPelaEvidencia(evid, atual) {
+    const lista = (evid || []).slice().sort((a, b) => a.pos - b.pos);
+    const ll = (x, sabe) => {
+      const p = CHANCE_DE_ACERTO[x.tipo] || CHANCE_DE_ACERTO.estreia;
+      const q = sabe ? p[0] : p[1];
+      return Math.log(x.certo ? q : 1 - q);
+    };
+    /* com D = 1, ninguém sabe nada: a soma toda do «não sabe»; cada evidência que passa para antes
+       de D troca o seu «não sabe» pelo «sabe» */
+    let base = 0;
+    lista.forEach(x => { base += ll(x, false); });
+    const em = d => {       // a soma para uma divisa qualquer
+      let s = base;
+      for (const x of lista) { if (x.pos >= d) break; s += ll(x, true) - ll(x, false); }
+      return s;
+    };
+    atual = Math.max(1, atual || 1);
+    const doAtual = em(atual);
+    let melhor = atual, valor = doAtual, s = base, i = 0;
+    const candidatos = [1].concat(lista.map(x => x.pos + 1));
+    for (const d of candidatos) {
+      while (i < lista.length && lista[i].pos < d) { s += ll(lista[i], true) - ll(lista[i], false); i++; }
+      if (s > valor + 1e-9 || (Math.abs(s - valor) <= 1e-9 && Math.abs(d - atual) < Math.abs(melhor - atual))) {
+        melhor = d; valor = s;
+      }
+    }
+    return { divisa: melhor, ganho: valor - doAtual };
+  }
+
+  /* O nivelamento refeito pela evidência, ou null quando a divisa fica. Os presumidos que já
+     existiam guardam a data de volta; os novos ganham a sua (dataDoPresumido, a partir de agora);
+     os que ficaram depois da nova divisa deixam de ser presumidos e voltam a ser cards novos, menos
+     os «Já conheço» do teste. Sem nivelamento pela lista, começa de uma divisa zero. */
+  function reverDivisa(niv, itens, cards, opcoes) {
+    const o = opcoes || {};
+    if (niv && niv.versao !== 2) return null;           // o nivelamento antigo, por blocos (7.3)
+    const base = niv || { versao: 2, divisa: 0, presumidos: {}, fora: [], cartas: [], perguntas: 0 };
+    const evid = evidenciasDaDivisa(cards, o.estados, o.arquivados, base);
+    if (!evid.length) return null;
+    const r = divisaPelaEvidencia(evid, base.divisa || 1);
+    if (r.ganho < FOLGA_DA_DIVISA || r.divisa === (base.divisa || 1)) return null;
+    const agora = o.agora || new Date().toISOString();
+    const d = deduzirDaLista({ divisa: r.divisa, cartas: base.cartas || [] }, itens || [], cards, o);
+    const antigos = base.presumidos || {};
+    const presumidos = {};
+    Object.keys(d.presumidos).forEach(id => { presumidos[id] = antigos[id] || d.presumidos[id]; });
+    return Object.assign({}, base, {
+      divisa: r.divisa, porNivel: d.porNivel, presumidos: presumidos, fora: d.fora,
+      divisaDoTeste: base.divisaDoTeste !== undefined ? base.divisaDoTeste : (base.divisa || 0),
+      revistoEm: agora, revisoes: (base.revisoes || 0) + 1, feitoEm: base.feitoEm || agora
+    });
+  }
+
+  /* ── o teste do presumido (o Gere, 15/11/2026) ──
+     «De vez em quando, na hora de um card novo, escolha algum desses presumidamente conhecidos e
+     mostre para a pessoa, avisando que está fazendo esse teste. Se a pessoa acertar, o card é
+     marcado como conhecido de vez; se ela errar, o card entra no jogo normalmente na hora, já
+     levando em conta essa primeira resposta errada.» Uma vaga de card novo em cada
+     TESTE_A_CADA é de um presumido ainda sem resposta, de preferência dos mais perto da divisa
+     (os 30% de cima), que são os mais incertos e os que mais ensinam à estimativa. A vez conta
+     pelas estreias desde o último teste (est.estreouNa, est.testadoNa), e por isso vale em
+     qualquer aparelho. */
+  const TESTE_A_CADA = 10, FAIXA_DO_TESTE = 0.3;
+
+  function horaDoTeste(estados) {
+    let ultimo = -1;
+    const est = estados || {};
+    for (const id in est) { const e = est[id]; if (e && e.testadoNa !== undefined && e.testadoNa > ultimo) ultimo = e.testadoNa; }
+    let n = 0;
+    for (const id in est) { const e = est[id]; if (e && e.estreouNa !== undefined && e.estreouNa > ultimo && !e.testado) n++; }
+    return n >= TESTE_A_CADA - 1;
+  }
+
+  function presumidoParaTestar(cards, estados, arquivados, sorte) {
+    if (soIda() || !(DIVISA || Object.keys(PRESUMIDOS).length)) return null;
+    const todos = (cards || []).filter(c => c && c.tipo === 'palavra' && !arquivado(c.id, arquivados) &&
+      presumidoEm(c.id, estados));
+    if (!todos.length) return null;
+    const corte = (DIVISA || 0) * (1 - FAIXA_DO_TESTE);
+    const perto = todos.filter(c => POS[c.id] && POS[c.id] >= corte);
+    const grupo = perto.length ? perto : todos;
+    const s = typeof sorte === 'function' ? sorte : Math.random;
+    return grupo[Math.min(grupo.length - 1, Math.floor(s() * grupo.length))].id;
+  }
+
   /* As alternativas da conferência da palavra sem card: a tradução certa e
      as de quatro vizinhas da lista, da mesma classe e de tradução diferente,
      escolhidas pelo sorteio do teste. Com card, a tela usa as do card. */
@@ -4581,7 +4859,7 @@ window.Motor = (function () {
     ACERTOS_QUE_SOLTAM,
     DIA_DAS_TERMINACOES, ativoDaTerminacao, flexaoPuxada, adormecido, quemConta, exemploDaTerminacao,
     erroDeGenero, formasAceitas, LIMITES, cortar,
-    linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
+    porExtenso, linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
     indiceEspanhol, leituraEspanhola, erroDeFlexao,
     descontoDePassos, acertosParaVirar, ACERTOS_PARA_VIRAR,
     linguaDaPergunta, linguaDaResposta,
@@ -4611,6 +4889,7 @@ window.Motor = (function () {
     respostasAceitas,
     /* o começo do app (PLANO.md, seção 7) */
     TAGS_DE_CLASSE, temaDe, usarTransparencias, usarExtras, transparencia, transparenteTotal,
+    evidenciasDaDivisa, divisaPelaEvidencia, reverDivisa, horaDoTeste, presumidoParaTestar, TESTE_A_CADA, CHANCE_DE_ACERTO,
     presumidoEm, conhecidaSemEstado, estadoInicialDo, estadoDoPresumido, responderPresumido,
     dataDoPresumido, DEGRAU_DO_PRESUMIDO, nivelamento, palavrasConhecidas,
     escolherDesafio, marcarDesafio, nivelAtual,

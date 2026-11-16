@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "it",
- "gerado_em": "2026-11-08",
+ "gerado_em": "2026-11-16",
  "total": 1796,
  "cards": [
   {
@@ -25777,15 +25777,18 @@
    "id": "it-u457",
    "tipo": "frase",
    "requer": "it-p312",
-   "it": "La guerra è finita nel 1945.",
+   "it": "La guerra è finita nel millenovecentoquarantacinque.",
    "aceitasIt": [
-    "La guerra finì nel 1945."
+    "La guerra finì nel millenovecentoquarantacinque."
    ],
    "pt": "A guerra acabou em 1945.",
    "aceitas": [
     "a guerra acabou em 1945",
     "a guerra terminou em 1945",
-    "a guerra chegou ao fim em 1945"
+    "a guerra chegou ao fim em 1945",
+    "a guerra acabou em mil novecentos e quarenta e cinco",
+    "a guerra terminou em mil novecentos e quarenta e cinco",
+    "a guerra chegou ao fim em mil novecentos e quarenta e cinco"
    ],
    "distratores": [
     "A greve acabou em 1945.",
@@ -25798,7 +25801,7 @@
     "frase de uso",
     "política"
    ],
-   "nota": "Ano com artigo: «nel 1945», em 1945. Para fatos históricos, o italiano escrito usa também o passado remoto: «la guerra finì».",
+   "nota": "Ano com artigo: «nel millenovecentoquarantacinque», em 1945. Para fatos históricos, o italiano escrito usa também o passado remoto: «la guerra finì».",
    "requerTodas": [
     "it-p312",
     "it-p001",
@@ -38190,15 +38193,18 @@
    "idioma": "it",
    "id": "it-v113",
    "tipo": "frase",
-   "it": "Dante nacque a Firenze nel 1265.",
+   "it": "Dante nacque a Firenze nel milleduecentosessantacinque.",
    "aceitasIt": [
-    "Dante è nato a Firenze nel 1265."
+    "Dante è nato a Firenze nel milleduecentosessantacinque."
    ],
    "pt": "Dante nasceu em Florença em 1265.",
    "aceitas": [
     "dante nasceu em florenca em 1265",
     "dante nasceu em florenca no ano de 1265",
-    "dante nasceu em 1265 em florenca"
+    "dante nasceu em 1265 em florenca",
+    "dante nasceu em florenca em mil duzentos e sessenta e cinco",
+    "dante nasceu em florenca no ano de mil duzentos e sessenta e cinco",
+    "dante nasceu em mil duzentos e sessenta e cinco em florenca"
    ],
    "distratores": [
     "Dante nascia em Florença em 1265.",
@@ -38207,10 +38213,10 @@
     "Dante tinha nascido em Florença em 1265."
    ],
    "formasIt": {
-    "Dante nasceva a Firenze nel 1265": "imperfeito do indicativo",
-    "Dante nascerà a Firenze nel 1265": "futuro",
-    "Dante nascerebbe a Firenze nel 1265": "condicional",
-    "Dante era nato a Firenze nel 1265": "mais-que-perfeito"
+    "Dante nasceva a Firenze nel milleduecentosessantacinque": "imperfeito do indicativo",
+    "Dante nascerà a Firenze nel milleduecentosessantacinque": "futuro",
+    "Dante nascerebbe a Firenze nel milleduecentosessantacinque": "condicional",
+    "Dante era nato a Firenze nel milleduecentosessantacinque": "mais-que-perfeito"
    },
    "nivel": "B1",
    "tags": [
@@ -55689,7 +55695,7 @@
      ]
     },
     {
-     "it": "Dante nacque a Firenze nel 1265.",
+     "it": "Dante nacque a Firenze nel milleduecentosessantacinque.",
      "w": "nacque",
      "de": "it-v113",
      "exp": "nacque: passato remoto de nascere.",

@@ -138,6 +138,18 @@ for (const b of baralhos) {
     if (c.tipo === 'flexao' && doLema.has(c.lema)) { c.grupoConceito = doLema.get(c.lema); n++; }
   }
   console.log('  la: ' + grupos.length + ' declinações e conjugações; ' + n + ' flexões as pedem');
+  /* o verbete (pedido do Gere, 15/11/2026: «um card para explicar a ordem das palavras nos
+     verbetes»): o conceito do nome, o do adjetivo e o do verbo estreiam antes da primeira palavra
+     que mostra esse tipo de verbete («verbete», fora do «v» do card) */
+  const VERBETE = { substantivo: 'la-g033', adjetivo: 'la-g034', verbo: 'la-g035' };
+  const existe = new Set(b.cards.map(c => c.id));
+  let nv = 0;
+  for (const c of b.cards) {
+    if (c.tipo !== 'palavra' || !c.enunciado || (c.tags || []).includes('pronomes')) continue;
+    const classe = Object.keys(VERBETE).find(k => (c.tags || []).includes(k));
+    if (classe && existe.has(VERBETE[classe]) && c.enunciado.split(', ').length >= 2) { c.verbete = VERBETE[classe]; nv++; }
+  }
+  console.log('  la: ' + nv + ' palavras pedem o conceito do verbete');
 }
 
 /* ── os textos ──
@@ -837,7 +849,7 @@ const chaveLatina = s => String(s || '').toLowerCase().normalize('NFD').replace(
 /* «construcao» (desde 24/10, o ablativo absoluto da Eneida): a pergunta é de que construção a
    palavra destacada faz parte, e não o caso dela, que seria só «ablativo» */
 /* «genero» (desde 04/11, o neutro, LATIM.md §15, D38): a pergunta é o gênero da palavra destacada */
-const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz', 'construcao', 'declinacao', 'conjugacao', 'genero'];
+const FAMILIAS_DO_CONCEITO = ['caso', 'verbo', 'voz', 'construcao', 'declinacao', 'conjugacao', 'genero', 'verbete'];
 /* o card de flexão (LATIM.md §3.8): a alternativa errada nunca é leitura certa; com o parêntese
    ela pode repetir a palavra da certa («ele (sujeito)» no card de eum, que aceita «ele») */
 const chaveDaLeitura = t => String(t || '').toLowerCase().replace(/à/g, 'aa').replace(/(^|\s)ó(?=\s|$)/g, '$1oo').normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -1459,6 +1471,7 @@ for (const { idioma, cards } of baralhos) {
       delete semCampo.transparencia;
       delete semCampo.terminacao;
       delete semCampo.grupoConceito;
+      delete semCampo.verbete;
       limpo.v = hash8(JSON.stringify(semCampo));
       /* O grau da transparência neste curso (PLANO.md, 7.1), depois do «v»:
          ele é do curso, não do card, e não muda a versão. Só quando há grau. */

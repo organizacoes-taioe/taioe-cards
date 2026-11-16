@@ -595,6 +595,53 @@ for (const curso of ['es-pt', 'es-en', 'en-pt', 'en-es', 'pt-es', 'pt-en']) {
   }
 }
 
+secao('a estimativa viva e o teste do presumido (15/11/2026)');
+{
+  const jv = {};
+  new Function('window', fs.readFileSync(path.join(RAIZ, 'public', 'cards', 'data', 'cards-fr-pt.js'), 'utf8'))(Object.assign(jv, { BARALHOS: {} }));
+  new Function('window', fs.readFileSync(path.join(RAIZ, 'public', 'cards', 'data', 'lista-fr-pt.js'), 'utf8'))(jv);
+  const CV = jv.BARALHOS.fr.cards.map(c => M.formaDoCard(c, 0));
+  const NLv = M.nivelamentoLista, LV = NLv.itens(jv.TAIOE_LISTA);
+  M.usarTransparencias(CV);
+  M.usarExtras({});
+  const cartas = [200, 400, 600, 700, 800, 900, 1000, 1200].map(pos => ({ pos: pos, resposta: pos < 800 ? 'conheco' : 'nao' }));
+  const niv = Object.assign({ feitoEm: '2026-11-01T10:00:00Z' },
+    NLv.deduzir({ divisa: 800, cartas: cartas }, LV, CV, { uid: 'u', agora: '2026-11-01T10:00:00Z', estados: {}, arquivados: {} }));
+  M.usarExtras({ nivelamento: niv, uid: 'u' });
+  const palavras = CV.filter(c => c.tipo === 'palavra' && c.pos && !(c.tags || []).includes('falso-amigo') && c.transp !== 'total');
+  /* acertou de primeira 30 palavras entre 800 e 1500 (e errou as depois de 1600) */
+  const estados = {};
+  let n = 0;
+  palavras.filter(c => c.pos >= 800 && c.pos < 1500).slice(0, 30).forEach(c => { estados[c.id] = { id: c.id, vistas: 1, primeira: true, estreouNa: n++ }; });
+  palavras.filter(c => c.pos >= 1600).slice(0, 8).forEach(c => { estados[c.id] = { id: c.id, vistas: 1, primeira: false, erros: 1, estreouNa: n++ }; });
+  const subiu = M.reverDivisa(niv, LV, CV, { uid: 'u', agora: '2026-11-15T10:00:00Z', estados: estados, arquivados: {} });
+  ok(subiu && subiu.divisa > 1300 && subiu.divisa <= 1601, 'acertos de primeira depois da divisa a sobem (' + (subiu && subiu.divisa) + ')');
+  const velho = Object.keys(niv.presumidos)[0];
+  ok(subiu && subiu.presumidos[velho] === niv.presumidos[velho], 'o presumido antigo guarda a data de volta');
+  const novos = subiu ? Object.keys(subiu.presumidos).filter(id => !niv.presumidos[id]) : [];
+  ok(novos.length > 0 && novos.every(id => subiu.presumidos[id] > '2026-11-21'), 'os presumidos novos voltam de 7 a 60 dias depois de agora (' + novos.length + ')');
+  ok(subiu && subiu.revistoEm === '2026-11-15T10:00:00Z' && subiu.divisaDoTeste === 800, 'guarda quando reviu e a divisa do teste');
+  ok(M.reverDivisa(subiu, LV, CV, { uid: 'u', estados: estados, arquivados: {} }) === null, 'sem evidência nova, a divisa fica');
+  /* errou por escrito 6 presumidos entre 500 e 800: a divisa desce */
+  const est2 = {};
+  palavras.filter(c => c.pos >= 500 && c.pos < 800).slice(0, 6).forEach(c => { est2[c.id] = { id: c.id, vistas: 1, primeira: false, erros: 1, testado: true }; });
+  const desceu = M.reverDivisa(niv, LV, CV, { uid: 'u', estados: est2, arquivados: {} });
+  ok(desceu && desceu.divisa <= 520, 'testes errados antes da divisa a descem (' + (desceu && desceu.divisa) + ')');
+  ok(desceu && !Object.keys(desceu.presumidos).some(id => (CV.find(c => c.id === id) || {}).pos >= desceu.divisa + 1 &&
+    !cartas.some(x => x.resposta === 'conheco' && x.pos === (CV.find(c => c.id === id) || {}).pos)), 'depois da divisa nova, ninguém fica presumido');
+  /* o teste: a vez, e o presumido perto da divisa */
+  M.usarExtras({ nivelamento: subiu, uid: 'u' });
+  const nove = {};
+  for (let k = 0; k < 9; k++) nove['x' + k] = { estreouNa: k };
+  ok(M.horaDoTeste(nove), 'nove estreias desde o último teste: é a vez');
+  ok(!M.horaDoTeste(Object.assign({ t: { testado: true, testadoNa: 5 } }, nove)), 'teste recente: não é a vez');
+  const escolhido = M.presumidoParaTestar(CV, estados, {}, () => 0.5);
+  const pe = (CV.find(c => c.id === escolhido) || {}).pos;
+  ok(escolhido && M.presumidoEm(escolhido, estados) && pe >= subiu.divisa * 0.7 && pe < subiu.divisa, 'o testado é presumido e está perto da divisa (' + pe + ')');
+  const r = M.responderPresumido(escolhido, { acertou: false, modo: 'escrita', direcao: 'pt-fr' });
+  ok(r.etapa === 'multipla' && r.primeira === false && r.confirmacao, 'errou o teste: entra do zero, com o erro e a marca de evidência');
+}
+
 zerar();
 console.log('\n  ' + (falhas ? falhas + ' de ' + feitas + ' conferências falharam' : feitas + ' conferências, todas passaram') + '\n');
 process.exit(falhas ? 1 : 0);

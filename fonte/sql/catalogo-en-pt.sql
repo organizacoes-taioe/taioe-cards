@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso en-pt, leva 5c78a861, 2810 cards.
+-- Catálogo do curso en-pt, leva 48c72ad9, 2810 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('en-pt', '5c78a861', '2810 cards')
+values ('en-pt', '48c72ad9', '2810 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -200,7 +200,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-pt', 'en-f061', 'frase', 'A2', array['preposição', 'objetos']::text[], null, '5897a6a5', array['É cheio de madeira.', 'É coberto de madeira.', 'É de madeira.', 'É parecido com madeira.', 'É pintado de madeira.']::text[]),
   ('en-pt', 'en-f062', 'frase', 'A2', array['preposição', 'objetos']::text[], null, '92c02d40', array['Estou consertando meus óculos.', 'Estou guardando meus óculos.', 'Estou limpando meus óculos.', 'Estou procurando meus óculos.', 'Estou usando meus óculos.']::text[]),
   ('en-pt', 'en-f063', 'frase', 'A2', array['futuro', 'gramática']::text[], null, '3faba6c2', array['Vai chover.', 'Vai clarear.', 'Vai esfriar.', 'Vai parar de chover.', 'Vai ventar.']::text[]),
-  ('en-pt', 'en-f064', 'frase', 'B1', array['gramática', 'casa']::text[], null, 'f81ac5b1', array['A casa foi comprada em 1920.', 'A casa foi construída em 1920.', 'A casa foi demolida em 1920.', 'A casa foi reformada em 1920.', 'A casa foi vendida em 1920.']::text[]),
+  ('en-pt', 'en-f064', 'frase', 'B1', array['gramática', 'casa']::text[], null, '12caf207', array['A casa foi comprada em 1920.', 'A casa foi construída em 1920.', 'A casa foi demolida em 1920.', 'A casa foi reformada em 1920.', 'A casa foi vendida em 1920.']::text[]),
   ('en-pt', 'en-f065', 'frase', 'B1', array['gramática', 'social']::text[], null, '6d63d478', array['Você já foi ao Brasil, né?', 'Você mora no Brasil, né?', 'Você quer ir ao Brasil, né?', 'Você é do Brasil ou não?', 'Você é do Brasil, né?']::text[]),
   ('en-pt', 'en-f066', 'frase', 'A2', array['gramática', 'economia']::text[], null, 'b153d7c2', array['Este é mais barato que aquele.', 'Este é mais caro que aquele.', 'Este é o mais barato de todos.', 'Este é quase tão caro quanto aquele.', 'Este é tão barato quanto aquele.']::text[]),
   ('en-pt', 'en-f067', 'frase', 'B1', array['gramática', 'cultura']::text[], null, 'cd10d12d', array['É o filme mais longo que eu já vi.', 'É o melhor filme que eu já vi.', 'É o pior filme que eu já vi.', 'É o primeiro filme que eu já vi.', 'É o único filme que eu já vi.']::text[]),
@@ -897,7 +897,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-pt', 'en-v170', 'frase', 'A2', array['conjugação', 'irregular', 'be', 'present perfect', 'viagem']::text[], null, '7adfd1e0', array['Você foi à Espanha no ano passado?', 'Você iria à Espanha?', 'Você irá à Espanha?', 'Você já foi à Espanha?', 'Você tinha ido à Espanha?']::text[]),
   ('en-pt', 'en-v171', 'frase', 'B1', array['conjugação', 'irregular', 'be', 'presente']::text[], null, 'e373ea46', array['Deve estar quebrado.', 'Deveria estar quebrado.', 'Deverá estar quebrado.', 'Devia estar quebrado.', 'Devia ter quebrado.']::text[]),
   ('en-pt', 'en-v172', 'frase', 'B1', array['conjugação', 'irregular', 'tell', 'pretérito', 'trabalho']::text[], null, '4e2fa816', array['Me diriam para esperar.', 'Me disseram para esperar.', 'Me diziam para esperar.', 'Tinham me dito para esperar.', 'Vão me dizer para esperar.']::text[]),
-  ('en-pt', 'en-v173', 'frase', 'B1', array['conjugação', 'irregular', 'build', 'pretérito']::text[], null, '1f948103', array['A ponte foi construída em 1920.', 'A ponte seria construída em 1920.', 'A ponte será construída em 1920.', 'A ponte tinha sido construída em 1920.', 'A ponte é construída em 1920.']::text[]),
+  ('en-pt', 'en-v173', 'frase', 'B1', array['conjugação', 'irregular', 'build', 'pretérito']::text[], null, '0899286c', array['A ponte foi construída em 1920.', 'A ponte seria construída em 1920.', 'A ponte será construída em 1920.', 'A ponte tinha sido construída em 1920.', 'A ponte é construída em 1920.']::text[]),
   ('en-pt', 'en-v174', 'frase', 'B1', array['conjugação', 'regular', 'paint', 'presente', 'casa']::text[], null, 'e0a502b3', array['A casa está sendo pintada.', 'A casa foi pintada.', 'A casa seria pintada.', 'A casa será pintada.', 'A casa tinha sido pintada.']::text[]),
   ('en-pt', 'en-v175', 'frase', 'B1', array['conjugação', 'regular', 'live', 'present perfect']::text[], null, '9ccc1b8f', array['Ele mora aqui há dez anos.', 'Ele moraria aqui dez anos.', 'Ele morará aqui dez anos.', 'Ele morou aqui dez anos.', 'Ele tinha morado aqui dez anos.']::text[]),
   ('en-pt', 'en-v176', 'frase', 'B1', array['conjugação', 'irregular', 'win', 'condicional composto']::text[], null, '1993db64', array['Ele ganharia.', 'Ele ganhará.', 'Ele ganhou.', 'Ele teria ganhado.', 'Ele tinha ganhado.']::text[]),
@@ -2072,9 +2072,9 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('en-pt', 'en-k028', 'contraste', 'A2', array['contraste']::text[], null, '1c18c011', array['He said he was tired.', 'He said me he was tired.', 'He told he was tired.', 'He told me he was tired.', 'He told to me he was tired.']::text[]),
   ('en-pt', 'en-k029', 'contraste', 'A2', array['contraste']::text[], null, '335fb9ae', array['I agree with her.', 'I am agree with her.', 'You are right.', 'You have reason.', 'You have the right.']::text[]),
   ('en-pt', 'en-k030', 'contraste', 'A2', array['contraste']::text[], null, 'cec478b0', array['I agree with her.', 'I am agree with her.', 'You are right.', 'You have reason.', 'You have the right.']::text[]),
-  ('en-pt', 'en-k031', 'contraste', 'B1', array['contraste']::text[], null, 'd49b0a58', array['I have lived here for two years.', 'I have lived here since 2020.', 'I have lived here since two years.', 'I live here for two years.', 'I lived here two years ago.']::text[]),
-  ('en-pt', 'en-k032', 'contraste', 'B1', array['contraste']::text[], null, '8c4a8208', array['I have lived here for two years.', 'I have lived here since 2020.', 'I have lived here since two years.', 'I live here for two years.', 'I lived here two years ago.']::text[]),
-  ('en-pt', 'en-k033', 'contraste', 'B1', array['contraste']::text[], null, '60c107eb', array['I have lived here for two years.', 'I have lived here since 2020.', 'I have lived here since two years.', 'I live here for two years.', 'I lived here two years ago.']::text[]),
+  ('en-pt', 'en-k031', 'contraste', 'B1', array['contraste']::text[], null, '88a0de8f', array['I have lived here for two years.', 'I have lived here since twenty twenty.', 'I have lived here since two years.', 'I live here for two years.', 'I lived here two years ago.']::text[]),
+  ('en-pt', 'en-k032', 'contraste', 'B1', array['contraste']::text[], null, 'a8656130', array['I have lived here for two years.', 'I have lived here since twenty twenty.', 'I have lived here since two years.', 'I live here for two years.', 'I lived here two years ago.']::text[]),
+  ('en-pt', 'en-k033', 'contraste', 'B1', array['contraste']::text[], null, 'ea860a47', array['I have lived here for two years.', 'I have lived here since twenty twenty.', 'I have lived here since two years.', 'I live here for two years.', 'I lived here two years ago.']::text[]),
   ('en-pt', 'en-k034', 'contraste', 'B1', array['contraste']::text[], null, '2f85d2aa', array['If I arrive, I will call you.', 'If I will arrive, I will call you.', 'When I arrive, I will call you.', 'When I arrived, I called you.', 'When I will arrive, I will call you.']::text[]),
   ('en-pt', 'en-k035', 'contraste', 'B1', array['contraste']::text[], null, '9948b6db', array['If I arrive, I will call you.', 'If I will arrive, I will call you.', 'When I arrive, I will call you.', 'When I arrived, I called you.', 'When I will arrive, I will call you.']::text[]),
   ('en-pt', 'en-k036', 'contraste', 'B1', array['contraste']::text[], null, '0c6459ae', array['If I arrive, I will call you.', 'If I will arrive, I will call you.', 'When I arrive, I will call you.', 'When I arrived, I called you.', 'When I will arrive, I will call you.']::text[]),

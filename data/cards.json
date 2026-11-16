@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-11-12",
+ "gerado_em": "2026-11-16",
  "total": 2335,
  "cards": [
   {
@@ -23672,15 +23672,16 @@
    "tipo": "frase",
    "requer": "p120",
    "es": "Siéntate en esa silla.",
-   "pt": "Senta naquela cadeira.",
+   "pt": "Senta nessa cadeira.",
    "en": "Sit on that chair.",
    "aceitas": [
+    "senta nessa cadeira",
+    "sente nessa cadeira",
+    "sente se nessa cadeira",
     "senta naquela cadeira",
     "sente naquela cadeira",
     "sente se naquela cadeira",
-    "senta nessa cadeira",
-    "sente nessa cadeira",
-    "senta ali naquela cadeira"
+    "senta ali nessa cadeira"
    ],
    "aceitasEn": [
     "sit on that chair",
@@ -23689,10 +23690,10 @@
     "have a seat on that chair"
    ],
    "distratores": [
-    "Senta naquela poltrona.",
-    "Senta naquele sofá.",
-    "Senta naquele banco.",
-    "Senta naquela cama."
+    "Senta nessa poltrona.",
+    "Senta nesse sofá.",
+    "Senta nesse banco.",
+    "Senta nessa cama."
    ],
    "distratoresEn": [
     "Sit in that armchair.",
@@ -23704,7 +23705,7 @@
    "tags": [
     "casa"
    ],
-   "nota": "«Silla» é a cadeira comum; a poltrona é «el sillón». «La cadera» é o quadril.\n🇪🇸 la silla → 🇧🇷 a cadeira\n🇪🇸 la cadera → 🇧🇷 o quadril",
+   "nota": "«Esa» é essa, perto de quem ouve; aquela é «aquella». «Silla» é a cadeira comum; a poltrona é «el sillón». «La cadera» é o quadril.\n🇪🇸 la silla → 🇧🇷 a cadeira\n🇪🇸 la cadera → 🇧🇷 o quadril",
    "notaEn": "'Silla' is an ordinary chair; an armchair is 'el sillón'. Don't mix it up with 'la cadera', the hip.",
    "requerTodas": [
     "p469",
@@ -31122,6 +31123,11 @@
     "p862",
     "p352",
     "p549"
+   ],
+   "aceitasEs": [
+    "Disculpa, no te he oído.",
+    "Perdón, no te he oído.",
+    "Disculpa, no te oí."
    ]
   },
   {
@@ -31609,7 +31615,7 @@
    "idioma": "es",
    "id": "v059",
    "tipo": "frase",
-   "es": "Nos conocimos en 2010.",
+   "es": "Nos conocimos en dos mil diez.",
    "pt": "Nós nos conhecemos em 2010.",
    "en": "We met in 2010.",
    "aceitas": [
@@ -31617,7 +31623,10 @@
     "nos conhecemos em 2010",
     "a gente se conheceu em 2010",
     "conhecemo nos em 2010",
-    "nos conhecemos em dois mil e dez"
+    "nos conhecemos em dois mil e dez",
+    "nos nos conhecemos em dois mil e dez",
+    "a gente se conheceu em dois mil e dez",
+    "conhecemo nos em dois mil e dez"
    ],
    "aceitasEn": [
     "we met in 2010",
@@ -31646,16 +31655,16 @@
    "nota": "«Conocerse» no pretérito é o momento em que duas pessoas se conheceram. No imperfeito, «nos conocíamos», é que já se conheciam.",
    "notaEn": "'Conocerse' in the preterite is the moment two people met. The imperfect 'nos conocíamos' means they already knew each other.",
    "formasEs": {
-    "Nos conocemos en 2010": "presente",
-    "Nos conocíamos en 2010": "imperfeito",
-    "Nos conoceremos en 2010": "futuro",
-    "Nos conoceríamos en 2010": "condicional"
+    "Nos conocemos en dos mil diez": "presente",
+    "Nos conocíamos en dos mil diez": "imperfeito",
+    "Nos conoceremos en dos mil diez": "futuro",
+    "Nos conoceríamos en dos mil diez": "condicional"
    },
    "formasEsEn": {
-    "Nos conocemos en 2010": "present",
-    "Nos conocíamos en 2010": "imperfect",
-    "Nos conoceremos en 2010": "future",
-    "Nos conoceríamos en 2010": "conditional"
+    "Nos conocemos en dos mil diez": "present",
+    "Nos conocíamos en dos mil diez": "imperfect",
+    "Nos conoceremos en dos mil diez": "future",
+    "Nos conoceríamos en dos mil diez": "conditional"
    },
    "requerTodas": [
     "p414"
@@ -68990,23 +68999,24 @@
    "tipo": "frase",
    "requer": "p925",
    "es": "Ese hombre es mi vecino.",
-   "pt": "Aquele homem é meu vizinho.",
+   "pt": "Esse homem é meu vizinho.",
    "en": "That man is my neighbour.",
    "aceitas": [
-    "aquele homem e meu vizinho",
     "esse homem e meu vizinho",
-    "aquele homem e o meu vizinho",
-    "esse cara e meu vizinho"
+    "esse homem e o meu vizinho",
+    "esse cara e meu vizinho",
+    "aquele homem e meu vizinho",
+    "aquele homem e o meu vizinho"
    ],
    "aceitasEn": [
     "that man is my neighbour",
     "that man is my neighbor"
    ],
    "distratores": [
-    "Aquele menino é meu vizinho.",
-    "Aquele senhor é meu vizinho.",
-    "Aquele rapaz é meu vizinho.",
-    "Aquele velho é meu vizinho."
+    "Esse menino é meu vizinho.",
+    "Esse senhor é meu vizinho.",
+    "Esse rapaz é meu vizinho.",
+    "Esse velho é meu vizinho."
    ],
    "distratoresEn": [
     "That boy is my neighbour.",
@@ -82148,6 +82158,9 @@
     "p360",
     "p842",
     "p759"
+   ],
+   "aceitasEs": [
+    "El chico es muy menudo para su edad."
    ]
   },
   {
@@ -88954,7 +88967,9 @@
     "a beira",
     "a ribeira",
     "a beira do rio",
-    "a orla"
+    "a orla",
+    "a beirada",
+    "beirada"
    ],
    "aceitasEn": [
     "riverbank",
@@ -93379,7 +93394,9 @@
    ],
    "aceitasEs": [
     "Tengo que decirte algo.",
-    "Tengo que decirle una cosa."
+    "Tengo que decirle una cosa.",
+    "Necesito decirte una cosa.",
+    "Necesito decirte algo."
    ],
    "distratores": [
     "Preciso te dizer uma mentira.",
@@ -99222,7 +99239,8 @@
     "alem do mais",
     "tambem",
     "ainda por cima",
-    "de mais a mais"
+    "de mais a mais",
+    "ademais"
    ],
    "aceitasEn": [
     "besides",

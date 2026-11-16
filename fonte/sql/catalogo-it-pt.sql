@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso it-pt, leva 09e66115, 1796 cards.
+-- Catálogo do curso it-pt, leva 6d36b327, 1796 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('it-pt', '09e66115', '1796 cards')
+values ('it-pt', '6d36b327', '1796 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -926,7 +926,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('it-pt', 'it-u454', 'frase', 'A1', array['frase de uso', 'família']::text[], 'it-p310', '4e1dbf17', array['Meu avô trabalha num banco.', 'Meu irmão trabalha num banco.', 'Meu pai trabalha num banco.', 'Meu sogro trabalha num banco.', 'Meu tio trabalha num banco.']::text[]),
   ('it-pt', 'it-u455', 'frase', 'A1', array['frase de uso', 'trabalho']::text[], 'it-p311', '9de3d706', array['Além de trabalhar, ela estuda.', 'Antes de trabalhar, ela estuda.', 'Depois de trabalhar, ela estuda.', 'Em vez de trabalhar, ela estuda.', 'Para não trabalhar, ela estuda.']::text[]),
   ('it-pt', 'it-u456', 'frase', 'A1', array['frase de uso', 'cotidiano']::text[], 'it-p311', '7b13e678', array['Havia cerca de cem pessoas.', 'Havia mais de cem pessoas.', 'Havia menos de cem pessoas.', 'Havia quase cem pessoas.', 'Havia umas cem pessoas.']::text[]),
-  ('it-pt', 'it-u457', 'frase', 'A1', array['frase de uso', 'política']::text[], 'it-p312', '52efa28d', array['A crise acabou em 1945.', 'A ditadura acabou em 1945.', 'A greve acabou em 1945.', 'A guerra acabou em 1945.', 'A obra acabou em 1945.']::text[]),
+  ('it-pt', 'it-u457', 'frase', 'A1', array['frase de uso', 'política']::text[], 'it-p312', '34aa86dd', array['A crise acabou em 1945.', 'A ditadura acabou em 1945.', 'A greve acabou em 1945.', 'A guerra acabou em 1945.', 'A obra acabou em 1945.']::text[]),
   ('it-pt', 'it-u458', 'frase', 'A1', array['frase de uso', 'animais']::text[], 'it-p313', '4f9cf700', array['O bebê dorme na cama.', 'O cachorro dorme na cama.', 'O coelho dorme na cama.', 'O gato dorme na cama.', 'O menino dorme na cama.']::text[]),
   ('it-pt', 'it-u459', 'frase', 'A1', array['frase de uso', 'escola']::text[], 'it-p314', '524683cd', array['Você me empresta o seu caderno?', 'Você me empresta o seu carro?', 'Você me empresta o seu casaco?', 'Você me empresta o seu celular?', 'Você me empresta o seu livro?']::text[]),
   ('it-pt', 'it-u460', 'frase', 'A1', array['frase de uso', 'roupa']::text[], 'it-p315', '6784871b', array['Põe a blusa, está frio.', 'Põe a bota, está frio.', 'Põe a camisa, está frio.', 'Põe a jaqueta, está frio.', 'Põe a touca, está frio.']::text[]),
@@ -1269,7 +1269,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('it-pt', 'it-v110', 'frase', 'B1', array['conjugação', 'pretérito', 'irregular']::text[], null, '25a5b432', array['Um dia vai vir um homem.', 'Um dia veio um homem.', 'Um dia vem um homem.', 'Um dia vinha um homem.', 'Um dia viria um homem.']::text[]),
   ('it-pt', 'it-v111', 'frase', 'B1', array['conjugação', 'pretérito', 'irregular', 'animais']::text[], null, 'a76029c9', array['O menino vai ver o lobo.', 'O menino veria o lobo.', 'O menino via o lobo.', 'O menino viu o lobo.', 'O menino vê o lobo.']::text[]),
   ('it-pt', 'it-v112', 'frase', 'B1', array['conjugação', 'pretérito', 'irregular', 'viagem']::text[], null, 'f2aaa532', array['Ele pega a mala dele.', 'Ele pegaria a mala dele.', 'Ele pegava a mala dele.', 'Ele pegou a mala dele.', 'Ele vai pegar a mala dele.']::text[]),
-  ('it-pt', 'it-v113', 'frase', 'B1', array['conjugação', 'pretérito', 'irregular', 'cultura']::text[], null, 'eff0d6da', array['Dante nasceria em Florença em 1265.', 'Dante nasceu em Florença em 1265.', 'Dante nascia em Florença em 1265.', 'Dante tinha nascido em Florença em 1265.', 'Dante vai nascer em Florença em 1265.']::text[]),
+  ('it-pt', 'it-v113', 'frase', 'B1', array['conjugação', 'pretérito', 'irregular', 'cultura']::text[], null, '932ada62', array['Dante nasceria em Florença em 1265.', 'Dante nasceu em Florença em 1265.', 'Dante nascia em Florença em 1265.', 'Dante tinha nascido em Florença em 1265.', 'Dante vai nascer em Florença em 1265.']::text[]),
   ('it-pt', 'it-v114', 'frase', 'B1', array['conjugação', 'pretérito', 'regular', 'família']::text[], null, 'a7afaf63', array['O avô morre na guerra.', 'O avô morreria na guerra.', 'O avô morreu na guerra.', 'O avô morria na guerra.', 'O avô vai morrer na guerra.']::text[]),
   ('it-pt', 'it-v115', 'frase', 'B1', array['conjugação', 'pretérito', 'regular']::text[], null, 'e4e449d7', array['Naquele dia ele fala pouco.', 'Naquele dia ele falaria pouco.', 'Naquele dia ele falava pouco.', 'Naquele dia ele falou pouco.', 'Naquele dia ele vai falar pouco.']::text[]),
   ('it-pt', 'it-v116', 'frase', 'B1', array['conjugação', 'pretérito', 'regular']::text[], null, '75e276a4', array['Ninguém acredita nele.', 'Ninguém acreditaria nele.', 'Ninguém acreditava nele.', 'Ninguém acreditou nele.', 'Ninguém vai acreditar nele.']::text[]),
@@ -1800,7 +1800,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('it-pt', 'it-g022', 'conceito', 'A2', array['gramática']::text[], null, 'eaef0054', array['ci: «lá», «nisso» (ci vado, non ci credo)', 'ci: «nos», a gente (ci vediamo)', 'ne: «disso», «deles» (ne parliamo)', 'objeto direto (lo, la, mi, ti…)', 'objeto indireto (gli, le, mi, ti…)']::text[]),
   ('it-pt', 'it-g023', 'conceito', 'A2', array['gramática']::text[], null, '6606c8ce', array['da: de onde vem ou sai (torna dal Brasile)', 'da: para quê, ou em que idade (da bere, da piccolo)', 'di + infinitivo (cerco di dormire)', 'di sì, di no: «que sim», «que não» (penso di sì)', 'di: de quê ou de quem (matéria, conteúdo, posse)']::text[]),
   ('it-pt', 'it-g024', 'conceito', 'A2', array['gramática']::text[], null, 'ec343896', array['da: de onde vem ou sai (torna dal Brasile)', 'da: na casa de, no consultório de (vado da te)', 'da: para quê, ou em que idade (da bere, da piccolo)', 'di + infinitivo (cerco di dormire)', 'di: de quê ou de quem (matéria, conteúdo, posse)']::text[]),
-  ('it-pt', 'it-g025', 'conceito', 'B1', array['gramática']::text[], null, '11484120', array['futuro', 'imperfeito do indicativo', 'passato prossimo', 'passato remoto', 'presente do indicativo']::text[]),
+  ('it-pt', 'it-g025', 'conceito', 'B1', array['gramática']::text[], null, 'fdcd7799', array['futuro', 'imperfeito do indicativo', 'passato prossimo', 'passato remoto', 'presente do indicativo']::text[]),
   ('it-pt', 'it-g026', 'conceito', 'B1', array['gramática']::text[], null, '90c09ca7', array['condicional', 'imperativo', 'imperfeito do subjuntivo', 'presente do indicativo', 'presente do subjuntivo']::text[]),
   ('it-pt', 'it-g027', 'conceito', 'B1', array['gramática']::text[], null, '898fa6a7', array['condicional', 'imperfeito do indicativo', 'imperfeito do subjuntivo', 'passato remoto', 'presente do subjuntivo']::text[])
 on conflict (curso, card_id) do update set
