@@ -273,9 +273,8 @@ CORTES = {
         [(14, 17)],  # Domine, exaudi orationem meam.
         [(18, 23)],  # Et clamor meus ad te veniat.
         [(24, 24)],  # Oremus.
-        [(25, 27)],  # Omnipotens sempiterne Deus
+        [(25, 27), (38, 39)],  # Omnipotens sempiterne Deus … concede propitius
         [(28, 34), (35, 37)],  # qui in dilecto Filio tuo, universorum Rege … omnia instaurare voluisti
-        [(38, 39)],  # concede propitius
         [(40, 46), (47, 50)],  # ut cuncta familia Gentium, peccati vulnere disgregata … eius suavissimo subdantur Imperio:
         [(51, 60)],  # Qui tecum vivit et regnat in unitate Spiritus Sancti Deus:
         [(61, 64)],  # per omnia saecula saeculorum.

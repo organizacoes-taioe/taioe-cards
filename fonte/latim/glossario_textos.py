@@ -37,14 +37,11 @@ def frase(fn):
 
 
 def definicao(card):
-    sentidos = [card['pt']] + [a for a in card.get('aceitas', []) if a.lower() != card['pt'].lower()][:2]
-    vistos, saida = set(), []
-    for s in sentidos:
-        s = re.sub(r'\s*\([^)]*\)', '', s).strip()
-        if s and s.lower() not in vistos:
-            vistos.add(s.lower())
-            saida.append(s)
-    d = '; '.join(saida)
+    """O sentido do card (o «pt», com o parêntese virando segundo sentido: «o laço (o vínculo)» →
+    «O laço; o vínculo.»). As «aceitas» não servem: no baralho elas ficam sem acento."""
+    pt = card['pt']
+    m = re.match(r'^(.*?)\s*\(([^)]*)\)\s*$', pt)
+    d = f'{m.group(1)}; {m.group(2)}' if m else pt
     return [d[0].upper() + d[1:] + '.']
 
 

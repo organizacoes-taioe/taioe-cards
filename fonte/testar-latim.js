@@ -483,7 +483,13 @@ for (const txt of textos) {
     const fecha = /[.;:?!]$/.test(tr.la) || z === linhas.length || tr.la.split(' ').length >= 3;
     ok(fecha, tr.id + ': o trecho não é um fiapo');
   }
-  ok(linhas.every((l, i) => cobertos.has(i + 1)), txt.id + ': todo verso está em algum trecho');
+  /* o verso repetido (a antífona que volta, «Oremus.») não ganha card de novo: cada palavra com
+     card dele está num trecho de algum texto (cortes.py, so_letras; build.js) */
+  const letras = s => String(s || '').toLowerCase().replace(/[^a-z ]/g, ' ').split(/\s+/).filter(Boolean);
+  const emTrecho = new Set(CARDS.filter(c => c.tipo === 'frase' && c.texto).flatMap(c => letras(c.la)));
+  const repetido = l => (l.p || []).filter(x => Array.isArray(x) && x[1] && (txt.destinos[x[1]] || {}).card)
+    .every(x => letras(x[0]).every(w => emTrecho.has(w)));
+  ok(linhas.every((l, i) => cobertos.has(i + 1) || repetido(l)), txt.id + ': todo verso está em algum trecho');
 }
 
 /* o corte novo (04/11/2026): «Arma virumque cano, Troiæ qui primus ab oris» deixou de ser card */

@@ -5152,6 +5152,28 @@
   "fonte": "Responso pelos defuntos"
  },
  {
+  "id": "la-at291-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "concede",
+  "frase": "Omnipotens sempiterne Deus … concede propitius",
+  "de": "la-t291",
+  "pt": "concede",
+  "distratores": [
+   "Omnipotens",
+   "sempiterne",
+   "propitius"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "concede, imperativo: concede. Omnipotens e sempiterne acompanham Deus, e propitius diz como Deus concede.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Sl 2, com antífona e oração"
+ },
+ {
   "id": "la-ap003-r",
   "tipo": "analise",
   "familia": "regencia",
@@ -7645,6 +7667,2574 @@
   ],
   "requerTodas": [
    "la-p362"
+  ]
+ },
+ {
+  "id": "la-ap367-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "audio, audire, audivi, auditum",
+  "lema": "la-p367",
+  "pt": "alguém que ouve e algo ou alguém que é ouvido (acusativo)",
+  "distratores": [
+   "alguém que ouve e de quê (genitivo)",
+   "alguém que ouve e aonde (in ou ad com acusativo)",
+   "alguém que ouve e com quê (ablativo)",
+   "alguém que ouve e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em non esse auditum a saeculo quemquam esse derelictum: o que se ouviu? que ninguém foi abandonado (acusativo e infinitivo, na passiva auditum esse, sem sujeito expresso).\nNo ativo: audi = ouve; o ouvido fica em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p367"
+  ]
+ },
+ {
+  "id": "la-ap369-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "curro, currere, cucurri, cursum",
+  "lema": "la-p369",
+  "pt": "alguém que corre e aonde (ad ou in com acusativo)",
+  "distratores": [
+   "alguém que corre e de quê (genitivo)",
+   "alguém que corre e o que ele é (nominativo, como o sujeito)",
+   "alguém que corre e quem ele faz correr (acusativo)",
+   "alguém que corre e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ad te, Virgo virginum, Mater, curro: quem corre? eu; aonde? ad te (ad com acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p369"
+  ]
+ },
+ {
+  "id": "la-ap371-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "imploro, implorare, imploravi, imploratum",
+  "lema": "la-p371",
+  "pt": "alguém que implora e quem ou o que é implorado (acusativo)",
+  "distratores": [
+   "alguém que implora e de quê (genitivo)",
+   "alguém que implora e aonde (in ou ad com acusativo)",
+   "alguém que implora e o que ele é (nominativo, como o sujeito)",
+   "só alguém que implora"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em tua implorantem auxilia: quem implora? quemquam (ninguém); o quê? tua auxilia (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p371"
+  ]
+ },
+ {
+  "id": "la-ap373-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "peto, petere, petivi, petitum",
+  "lema": "la-p373",
+  "pt": "alguém que pede e o que pede (acusativo)",
+  "distratores": [
+   "alguém que pede e a quem pede (dativo)",
+   "alguém que pede e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que peça",
+   "alguém que pede e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em peto quod petivit latro paenitens: quem pede? eu; o quê? quod (acusativo).\nEm português se pede a alguém; em latim, de quem se pede vem com ab e ablativo (petere aliquid ab aliquo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p373"
+  ]
+ },
+ {
+  "id": "la-ap375-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "derelinquo, derelinquere, dereliqui, derelictum",
+  "lema": "la-p375",
+  "pt": "alguém que abandona e quem ou o que é abandonado (acusativo)",
+  "distratores": [
+   "alguém que abandona e de quê (genitivo)",
+   "alguém que abandona e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que abandona",
+   "alguém que abandona e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quemquam esse derelictum: quem foi abandonado? quemquam (ninguém); na passiva, o abandonado vira sujeito.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p375"
+  ]
+ },
+ {
+  "id": "la-ap377-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "animo, animare, animavi, animatum",
+  "lema": "la-p377",
+  "pt": "alguém que anima e quem é animado (acusativo)",
+  "distratores": [
+   "alguém que anima e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que anima",
+   "alguém que anima e o que ele é (nominativo, como o sujeito)",
+   "só alguém que anima"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Ego tali animatus confidentia: quem foi animado? Ego; com quê? tali confidentia (ablativo, causa).\nNa passiva, o animado vira sujeito.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p377"
+  ]
+ },
+ {
+  "id": "la-ap380-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "gemo, gemere, gemui, gemitum",
+  "lema": "la-p380",
+  "pt": "só alguém que geme",
+  "distratores": [
+   "alguém que geme e de quê (genitivo)",
+   "alguém que geme e o que ele é (nominativo, como o sujeito)",
+   "alguém que geme e uma ação no infinitivo",
+   "alguém que geme e quem ele faz gemer (acusativo)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em coram te gemens peccator assisto: quem geme? peccator; coram te diz diante de quem (preposição, sem exigência do verbo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p380"
+  ]
+ },
+ {
+  "id": "la-ap381-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "assisto, assistere, astiti",
+  "lema": "la-p381",
+  "pt": "alguém que se apresenta e diante de quem (dativo)",
+  "distratores": [
+   "alguém que se apresenta e o que é apresentado (acusativo)",
+   "alguém que se apresenta e de quê (genitivo)",
+   "alguém que se apresenta e o que ele é (nominativo, como o sujeito)",
+   "alguém que se apresenta e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ad te venio, coram te gemens peccator assisto: quem se apresenta? eu (peccator); diante de quem? te, com coram.\nA regência normal de assisto é o dativo (assistere alicui).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p381"
+  ]
+ },
+ {
+  "id": "la-ap382-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "despicio, despicere, despexi, despectum",
+  "lema": "la-p382",
+  "pt": "alguém que despreza e o que é desprezado (acusativo)",
+  "distratores": [
+   "alguém que despreza e de quê (genitivo)",
+   "alguém que despreza e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que despreza",
+   "só alguém que despreza"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Noli, Mater Verbi, verba mea despicere: quem despreza? tu (Mater); o quê? verba mea (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p382"
+  ]
+ },
+ {
+  "id": "la-ap384-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "exaudio, exaudire, exaudivi, exauditum",
+  "lema": "la-p384",
+  "pt": "alguém que atende e quem ou o que é atendido (acusativo)",
+  "distratores": [
+   "alguém que atende e de quê (genitivo)",
+   "alguém que atende e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que atende",
+   "alguém que atende e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em sed audi propitia et exaudi: quem atende? tu (imperativo); o quê? a oração, subentendida (acusativo).\nExaudi: ouve e atende.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p384"
+  ]
+ },
+ {
+  "id": "la-ap390-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "succurro, succurrere, succurri, succursum",
+  "lema": "la-p390",
+  "pt": "alguém que socorre e quem é socorrido (dativo)",
+  "distratores": [
+   "alguém que socorre e quem é socorrido (acusativo)",
+   "alguém que socorre e de quê (genitivo)",
+   "alguém que socorre e aonde (in ou ad com acusativo)",
+   "alguém que socorre e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em stella maris, succurre cadenti: quem socorre? tu (estrela do mar); a quem? cadenti (dativo): ao que cai.\nEm português se socorre alguém; em latim, succurro pede o dativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p390"
+  ]
+ },
+ {
+  "id": "la-ap391-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "cado, cadere, cecidi, casum",
+  "lema": "la-p391",
+  "pt": "só alguém ou algo que cai",
+  "distratores": [
+   "alguém que cai e o que é derrubado (acusativo)",
+   "alguém que cai e de quê (genitivo)",
+   "alguém que cai e o que ele é (nominativo, como o sujeito)",
+   "alguém que cai e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em succurre cadenti: quem cai? o que cai (cadenti, dativo, particípio de cado); o verbo não pede mais nada.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p391"
+  ]
+ },
+ {
+  "id": "la-ap392-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "curo, curare, curavi, curatum",
+  "lema": "la-p392",
+  "pt": "alguém que cuida e o que procura fazer (infinitivo)",
+  "distratores": [
+   "alguém que cuida e de quê (genitivo)",
+   "alguém que cuida e a quem (dativo)",
+   "alguém que cuida e aonde (in ou ad com acusativo)",
+   "alguém que cuida e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em surgere qui curat: quem cuida? qui (aquele que); o quê? surgere (levantar-se, infinitivo): procura levantar-se.\nTambém pede acusativo: curare aliquem = cuidar de alguém.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p392"
+  ]
+ },
+ {
+  "id": "la-ap393-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "gigno, gignere, genui, genitum",
+  "lema": "la-p393",
+  "pt": "alguém que gera e quem é gerado (acusativo)",
+  "distratores": [
+   "alguém que gera e de quê (genitivo)",
+   "alguém que gera e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que gera",
+   "só alguém que gera"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em tu quae genuisti tuum sanctum Genitorem: quem gerou? tu (quae); quem? Genitorem (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p393"
+  ]
+ },
+ {
+  "id": "la-ap395-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "miror, mirari, miratus sum (depoente)",
+  "lema": "la-p395",
+  "pt": "alguém que se admira e do que ou de quem se admira (acusativo)",
+  "distratores": [
+   "alguém que se admira e de quê (genitivo)",
+   "alguém que se admira e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que se admira",
+   "alguém que se admira e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em natura mirante: quem se admira? natura (ablativo absoluto); o admirado não vem expresso.\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p395"
+  ]
+ },
+ {
+  "id": "la-ap400-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "misereor, misereri, misertus sum (depoente)",
+  "lema": "la-p400",
+  "pt": "alguém que tem piedade e de quem (genitivo)",
+  "distratores": [
+   "alguém que tem piedade e de quem (acusativo)",
+   "alguém que tem piedade e de quê (ablativo)",
+   "alguém que tem piedade e aonde (in ou ad com acusativo)",
+   "alguém que tem piedade e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em peccatorum miserere: quem tem piedade? tu (imperativo); de quem? peccatorum (genitivo).\nEm português: «ter piedade de»; em latim, misereor pede o genitivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p400"
+  ]
+ },
+ {
+  "id": "la-ap405-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "orior, oriri, ortus sum (depoente)",
+  "lema": "la-p405",
+  "pt": "alguém ou algo que nasce e de onde (ex ou ab com ablativo)",
+  "distratores": [
+   "alguém que nasce e quem faz nascer (acusativo)",
+   "alguém que nasce e de quê (genitivo)",
+   "alguém que nasce e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: só a ação, sem ninguém que nasça"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ex qua mundo lux est orta: quem nasceu? lux; de onde? ex qua (ex com ablativo); para quem? mundo (dativo, livre).\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p405"
+  ]
+ },
+ {
+  "id": "la-ap406-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "gaudeo, gaudere, gavisus sum (semidepoente)",
+  "lema": "la-p406",
+  "pt": "alguém que se alegra e de quê (ablativo)",
+  "distratores": [
+   "alguém que se alegra e quem faz alegrar (acusativo)",
+   "alguém que se alegra e de quê (genitivo)",
+   "alguém que se alegra e aonde (in ou ad com acusativo)",
+   "alguém que se alegra e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Gaude, Virgo gloriosa: quem se alegra? tu (Virgo); o motivo não vem aqui.\nO motivo vem em ablativo (gaudere re) ou com in. Semidepoente: perfeito gavisus sum.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p406"
+  ]
+ },
+ {
+  "id": "la-ap410-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "valeo, valere, valui",
+  "lema": "la-p410",
+  "pt": "só alguém que está bem",
+  "distratores": [
+   "alguém que está bem e o que é fortalecido (acusativo)",
+   "alguém que está bem e de quê (genitivo)",
+   "alguém que está bem e o que ele é (nominativo, como o sujeito)",
+   "alguém que está bem e aonde (in ou ad com acusativo)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em vale, o valde decora: quem está bem? tu (imperativo): fórmula de despedida, adeus.\nTambém valere + infinitivo = ter força para.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p410"
+  ]
+ },
+ {
+  "id": "la-ap413-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "exoro, exorare, exoravi, exoratum",
+  "lema": "la-p413",
+  "pt": "alguém que suplica e a quem suplica (acusativo)",
+  "distratores": [
+   "alguém que suplica e a quem suplica (dativo)",
+   "alguém que suplica e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que suplique",
+   "alguém que suplica e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em et pro nobis Christum exora: quem suplica? tu (imperativo); a quem? Christum (acusativo); por quem? pro nobis.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p413"
+  ]
+ },
+ {
+  "id": "la-ap414-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "repleo, replere, replevi, repletum",
+  "lema": "la-p414",
+  "pt": "alguém que enche, o que enche (acusativo) e com quê (ablativo)",
+  "distratores": [
+   "alguém que enche, o que enche (dativo) e com quê (acusativo)",
+   "alguém que enche e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que encha",
+   "alguém que enche e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em reple tuorum corda fidelium: quem enche? tu (Santo Espírito); o quê? corda (acusativo); com quê? fica subentendido (ablativo).\nO que enche também pode vir em genitivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p414"
+  ]
+ },
+ {
+  "id": "la-ap418-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "accendo, accendere, accendi, accensum",
+  "lema": "la-p418",
+  "pt": "alguém que acende e o que é aceso (acusativo)",
+  "distratores": [
+   "alguém que acende e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que acende",
+   "alguém que acende e o que ele é (nominativo, como o sujeito)",
+   "só alguém que acende"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em et tui amoris in eis ignem accende: quem acende? tu (imperativo); o quê? ignem (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p418"
+  ]
+ },
+ {
+  "id": "la-ap419-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "emitto, emittere, emisi, emissum",
+  "lema": "la-p419",
+  "pt": "alguém que envia e o que ou quem é enviado (acusativo)",
+  "distratores": [
+   "alguém que envia e de quê (genitivo)",
+   "alguém que envia e aonde (in ou ad com acusativo)",
+   "alguém que envia e o que ele é (nominativo, como o sujeito)",
+   "só alguém que envia"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Emitte Spiritum tuum: quem envia? tu (imperativo); o quê? Spiritum tuum (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p419"
+  ]
+ },
+ {
+  "id": "la-ap420-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "creo, creare, creavi, creatum",
+  "lema": "la-p420",
+  "pt": "alguém que cria e quem ou o que é criado (acusativo)",
+  "distratores": [
+   "alguém que cria e de quê (genitivo)",
+   "alguém que cria e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que cria",
+   "só alguém que cria"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Emitte Spiritum tuum et creabuntur: quem é criado? eles (sujeito de creabuntur, na passiva); quem cria fica subentendido.\nNo ativo, o criado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p420"
+  ]
+ },
+ {
+  "id": "la-ap421-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "renovo, renovare, renovavi, renovatum",
+  "lema": "la-p421",
+  "pt": "alguém que renova e o que é renovado (acusativo)",
+  "distratores": [
+   "alguém que renova e de quê (genitivo)",
+   "alguém que renova e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que renova",
+   "alguém que renova e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Et renovabis faciem terrae: quem renova? tu; o quê? faciem terrae (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p421"
+  ]
+ },
+ {
+  "id": "la-ap431-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "concipio, concipere, concepi, conceptum",
+  "lema": "la-p431",
+  "pt": "alguém que concebe e quem é concebido (acusativo)",
+  "distratores": [
+   "alguém que concebe e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que concebe",
+   "alguém que concebe e o que ele é (nominativo, como o sujeito)",
+   "só alguém que concebe"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em qui conceptus est de Spiritu Sancto: quem foi concebido? qui (sujeito, na passiva); por quem? de Spiritu Sancto.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p431"
+  ]
+ },
+ {
+  "id": "la-ap433-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "crucifigo, crucifigere, crucifixi, crucifixum",
+  "lema": "la-p433",
+  "pt": "alguém que crucifica e quem é crucificado (acusativo)",
+  "distratores": [
+   "alguém que crucifica e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que crucifica",
+   "alguém que crucifica e o que ele é (nominativo, como o sujeito)",
+   "só alguém que crucifica"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em crucifixus (est subentendido): quem foi crucificado? ele (sujeito, na passiva); no ativo, o crucificado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p433"
+  ]
+ },
+ {
+  "id": "la-ap435-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "sepelio, sepelire, sepelivi, sepultum",
+  "lema": "la-p435",
+  "pt": "alguém que sepulta e quem é sepultado (acusativo)",
+  "distratores": [
+   "alguém que sepulta e de quê (genitivo)",
+   "alguém que sepulta e aonde (in ou ad com acusativo)",
+   "alguém que sepulta e o que ele é (nominativo, como o sujeito)",
+   "só alguém que sepulta"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em et sepultus (est subentendido): quem foi sepultado? ele (sujeito, na passiva); no ativo, o sepultado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p435"
+  ]
+ },
+ {
+  "id": "la-ap436-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "descendo, descendere, descendi, descensum",
+  "lema": "la-p436",
+  "pt": "alguém que desce e aonde (ad ou in com acusativo)",
+  "distratores": [
+   "alguém que desce e de quê (genitivo)",
+   "alguém que desce e o que ele é (nominativo, como o sujeito)",
+   "alguém que desce e quem ele faz descer (acusativo)",
+   "alguém que desce e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em descendit ad inferos: quem desceu? ele; aonde? ad inferos (ad com acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p436"
+  ]
+ },
+ {
+  "id": "la-ap439-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "ascendo, ascendere, ascendi, ascensum",
+  "lema": "la-p439",
+  "pt": "alguém que sobe e aonde (ad ou in com acusativo)",
+  "distratores": [
+   "alguém que sobe e de quê (genitivo)",
+   "alguém que sobe e o que ele é (nominativo, como o sujeito)",
+   "alguém que sobe e quem ele faz subir (dativo)",
+   "alguém que sobe e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ascendit ad caelos: quem subiu? ele; aonde? ad caelos (ad com acusativo).\nTambém aceita acusativo sem preposição (ascendere montem).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p439"
+  ]
+ },
+ {
+  "id": "la-ap440-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "sedeo, sedere, sedi, sessum",
+  "lema": "la-p440",
+  "pt": "alguém que está sentado e onde (preposição com ablativo ou acusativo)",
+  "distratores": [
+   "alguém que está sentado e quem é sentado (acusativo)",
+   "alguém que está sentado e de quê (genitivo)",
+   "alguém que está sentado e o que ele é (nominativo, como o sujeito)",
+   "alguém que está sentado e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em sedet ad dexteram Dei Patris: quem está sentado? ele; onde? ad dexteram (ad com acusativo: junto à direita).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p440"
+  ]
+ },
+ {
+  "id": "la-ap443-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "iudico, iudicare, iudicavi, iudicatum",
+  "lema": "la-p443",
+  "pt": "alguém que julga e quem é julgado (acusativo)",
+  "distratores": [
+   "alguém que julga e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que julga",
+   "alguém que julga e o que ele é (nominativo, como o sujeito)",
+   "só alguém que julga"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em venturus est iudicare vivos et mortuos: quem julga? o que há de vir; quem? vivos et mortuos (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p443"
+  ]
+ },
+ {
+  "id": "la-ap468-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "vivifico, vivificare, vivificavi, vivificatum",
+  "lema": "la-p468",
+  "pt": "alguém que dá vida e quem recebe a vida (acusativo)",
+  "distratores": [
+   "alguém que dá vida e de quê (genitivo)",
+   "alguém que dá vida e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que dá vida",
+   "só alguém que dá vida"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Dominum et vivificantem: quem dá a vida? o Senhor (Espírito Santo); a quem? o objeto fica subentendido (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p468"
+  ]
+ },
+ {
+  "id": "la-ap470-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "adoro, adorare, adoravi, adoratum",
+  "lema": "la-p470",
+  "pt": "alguém que adora e quem é adorado (acusativo)",
+  "distratores": [
+   "alguém que adora e de quê (genitivo)",
+   "alguém que adora e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que adora",
+   "alguém que adora e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Qui … adoratur: quem é adorado? Qui (o Espírito Santo, sujeito da passiva); no ativo, o adorado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p470"
+  ]
+ },
+ {
+  "id": "la-ap471-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "conglorifico, conglorificare, conglorificavi, conglorificatum",
+  "lema": "la-p471",
+  "pt": "alguém que glorifica e quem é glorificado (acusativo)",
+  "distratores": [
+   "alguém que glorifica e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que glorifica",
+   "alguém que glorifica e o que ele é (nominativo, como o sujeito)",
+   "só alguém que glorifica"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em adoratur et conglorificatur: quem é glorificado? o Espírito Santo (sujeito da passiva); no ativo, o glorificado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p471"
+  ]
+ },
+ {
+  "id": "la-ap474-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "confiteor, confiteri, confessus sum (depoente)",
+  "lema": "la-p474",
+  "pt": "alguém que confessa e o que é confessado (acusativo)",
+  "distratores": [
+   "alguém que confessa e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que confessa",
+   "alguém que confessa e o que ele é (nominativo, como o sujeito)",
+   "só alguém que confessa"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Confiteor unum baptisma: quem confessa? eu; o quê? unum baptisma (acusativo).\nTambém se confessa a alguém, no dativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p474"
+  ]
+ },
+ {
+  "id": "la-ap476-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "exspecto, exspectare, exspectavi, exspectatum",
+  "lema": "la-p476",
+  "pt": "alguém que espera e o que ou quem é esperado (acusativo)",
+  "distratores": [
+   "alguém que espera e de quê (genitivo)",
+   "alguém que espera e aonde (in ou ad com acusativo)",
+   "alguém que espera e o que ele é (nominativo, como o sujeito)",
+   "só alguém que espera"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Et exspecto resurrectionem mortuorum: quem espera? eu; o quê? resurrectionem (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p476"
+  ]
+ },
+ {
+  "id": "la-ap478-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "lateo, latere, latui",
+  "lema": "la-p478",
+  "pt": "só alguém que se esconde",
+  "distratores": [
+   "alguém que se esconde e de quê (genitivo)",
+   "alguém que se esconde e o que ele é (nominativo, como o sujeito)",
+   "alguém que se esconde e aonde (ad ou in com acusativo)",
+   "alguém que se esconde e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em latens Deitas: quem se esconde? Deitas (vocativo); o verbo não pede mais nada.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p478"
+  ]
+ },
+ {
+  "id": "la-ap482-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "latito, latitare, latitavi",
+  "lema": "la-p482",
+  "pt": "só alguém que se esconde",
+  "distratores": [
+   "alguém que se esconde e quem ele esconde (genitivo)",
+   "alguém que se esconde e o que ele é (nominativo, como o sujeito)",
+   "alguém que se esconde e aonde (ad ou in com acusativo)",
+   "alguém que se esconde e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quae sub his figuris vere latitas: quem se esconde? tu (Deitas); sob quê? sub his figuris (preposição, livre).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p482"
+  ]
+ },
+ {
+  "id": "la-ap484-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "subicio, subicere, subieci, subiectum",
+  "lema": "la-p484",
+  "pt": "alguém que submete, o que é submetido (acusativo) e a quem (dativo)",
+  "distratores": [
+   "alguém que submete, o que é submetido (dativo) e a quem (acusativo)",
+   "alguém que submete e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que submeta",
+   "alguém que submete e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em tibi se cor meum totum subicit: quem submete? cor meum; o quê? se (acusativo); a quem? tibi (dativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p484"
+  ]
+ },
+ {
+  "id": "la-ap485-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "contemplor, contemplari, contemplatus sum (depoente)",
+  "lema": "la-p485",
+  "pt": "alguém que contempla e quem ou o que é contemplado (acusativo)",
+  "distratores": [
+   "alguém que contempla e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que contempla",
+   "alguém que contempla e o que ele é (nominativo, como o sujeito)",
+   "só alguém que contempla"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quia te contemplans totum deficit: quem contempla? cor (subentendido); quem? te (acusativo).\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p485"
+  ]
+ },
+ {
+  "id": "la-ap486-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "deficio, deficere, defeci, defectum",
+  "lema": "la-p486",
+  "pt": "só alguém ou algo que falha",
+  "distratores": [
+   "alguém que falha e de quê (genitivo)",
+   "alguém que falha e o que ele é (nominativo, como o sujeito)",
+   "alguém que falha e uma ação no infinitivo",
+   "alguém que falha e quem ele faz falhar (dativo)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quia te contemplans totum deficit: quem falha? cor (o coração); o verbo não pede mais nada.\nTambém se usa com acusativo: deficere aliquem = abandonar alguém.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p486"
+  ]
+ },
+ {
+  "id": "la-ap490-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "fallo, fallere, fefelli, falsum",
+  "lema": "la-p490",
+  "pt": "alguém que engana e quem é enganado (acusativo)",
+  "distratores": [
+   "alguém que engana e de quê (genitivo)",
+   "alguém que engana e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que engana",
+   "só alguém que engana"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Visus, tactus, gustus in te fallitur: quem é enganado? visus, tactus, gustus (sujeito da passiva); no ativo, o enganado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p490"
+  ]
+ },
+ {
+  "id": "la-ap502-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "intueor, intueri, intuitus sum (depoente)",
+  "lema": "la-p502",
+  "pt": "alguém que vê e o que ou quem é visto (acusativo)",
+  "distratores": [
+   "alguém que vê e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que vê",
+   "alguém que vê e o que ele é (nominativo, como o sujeito)",
+   "só alguém que vê"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Plagas, sicut Thomas, non intueor: quem vê? eu; o quê? plagas (acusativo).\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p502"
+  ]
+ },
+ {
+  "id": "la-ap504-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "habeo, habere, habui, habitum",
+  "lema": "la-p504",
+  "pt": "alguém que tem e o que tem (acusativo)",
+  "distratores": [
+   "alguém que tem e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que tem",
+   "alguém que tem e o que ele é (nominativo, como o sujeito)",
+   "só alguém que tem"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em in te spem habere: quem tem? me (sujeito do infinitivo, subentendido); o quê? spem (acusativo); em quem? in te.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p504"
+  ]
+ },
+ {
+  "id": "la-ap505-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "diligo, diligere, dilexi, dilectum",
+  "lema": "la-p505",
+  "pt": "alguém que ama e quem é amado (acusativo)",
+  "distratores": [
+   "alguém que ama e de quê (genitivo)",
+   "alguém que ama e aonde (in ou ad com acusativo)",
+   "alguém que ama e o que ele é (nominativo, como o sujeito)",
+   "só alguém que ama"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em te diligere: quem ama? me (sujeito do infinitivo, subentendido); quem? te (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p505"
+  ]
+ },
+ {
+  "id": "la-ap507-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "praesto, praestare, praestiti, praestitum",
+  "lema": "la-p507",
+  "pt": "alguém que concede, o que concede (acusativo) e a quem (dativo)",
+  "distratores": [
+   "alguém que concede, o que concede (dativo) e a quem (acusativo)",
+   "alguém que concede e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que conceda",
+   "alguém que concede e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em vitam praestans homini: quem concede? panis vivus; o quê? vitam (acusativo); a quem? homini (dativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p507"
+  ]
+ },
+ {
+  "id": "la-ap508-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "vivo, vivere, vixi, victum",
+  "lema": "la-p508",
+  "pt": "alguém que vive e de que vive (de ou ablativo)",
+  "distratores": [
+   "alguém que vive e o que é vivido (dativo)",
+   "alguém que vive e de quê (genitivo)",
+   "alguém que vive e o que ele é (nominativo, como o sujeito)",
+   "alguém que vive e quem ele faz viver (acusativo)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em praesta meae menti de te vivere: quem vive? mens (a minha mente); de quê? de te (de com ablativo).\nTambém vem só em ablativo (vivere re).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p508"
+  ]
+ },
+ {
+  "id": "la-ap512-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "mundo, mundare, mundavi, mundatum",
+  "lema": "la-p512",
+  "pt": "alguém que purifica e quem ou o que é purificado (acusativo)",
+  "distratores": [
+   "alguém que purifica e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que purifica",
+   "alguém que purifica e o que ele é (nominativo, como o sujeito)",
+   "só alguém que purifica"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em me immundum munda tuo sanguine: quem purifica? tu (imperativo); quem? me (acusativo); com quê? tuo sanguine (ablativo, instrumento).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p512"
+  ]
+ },
+ {
+  "id": "la-ap516-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "queo, quire, quivi, quitum",
+  "lema": "la-p516",
+  "pt": "alguém que pode e a ação que é possível (infinitivo)",
+  "distratores": [
+   "alguém que pode e o que é possível (acusativo)",
+   "alguém que pode e de quê (genitivo)",
+   "só alguém que pode, sem ação nenhuma",
+   "alguém que pode e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em una stilla salvum facere totum mundum quit: quem pode? una stilla; o quê? salvum facere totum mundum (infinitivo, com o objeto dele).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p516"
+  ]
+ },
+ {
+  "id": "la-ap517-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "velo, velare, velavi, velatum",
+  "lema": "la-p517",
+  "pt": "alguém que vela e o que é velado (acusativo)",
+  "distratores": [
+   "alguém que vela e de quê (genitivo)",
+   "alguém que vela e aonde (in ou ad com acusativo)",
+   "alguém que vela e o que ele é (nominativo, como o sujeito)",
+   "só alguém que vela"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Iesu, quem velatum nunc aspicio: o que foi velado? quem, isto é, Jesus (particípio passivo, acusativo); no ativo, o velado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p517"
+  ]
+ },
+ {
+  "id": "la-ap518-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "aspicio, aspicere, aspexi, aspectum",
+  "lema": "la-p518",
+  "pt": "alguém que olha e quem ou o que é olhado (acusativo)",
+  "distratores": [
+   "alguém que olha e de quê (genitivo)",
+   "alguém que olha e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que olha",
+   "só alguém que olha"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quem velatum nunc aspicio: quem olha? eu; quem? quem (Jesus, acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p518"
+  ]
+ },
+ {
+  "id": "la-ap520-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "sitio, sitire, sitivi",
+  "lema": "la-p520",
+  "pt": "alguém que tem sede e do que tem sede (acusativo)",
+  "distratores": [
+   "alguém que tem sede e do que tem sede (genitivo)",
+   "alguém que tem sede e do que tem sede (ablativo)",
+   "alguém que tem sede e aonde (in ou ad com acusativo)",
+   "alguém que tem sede e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em fiat illud quod tam sitio: quem tem sede? eu; de quê? quod (acusativo): aquilo de que tenho sede.\nEm português: «ter sede de»; em latim, sitio pede o acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p520"
+  ]
+ },
+ {
+  "id": "la-ap521-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "revelo, revelare, revelavi, revelatum",
+  "lema": "la-p521",
+  "pt": "alguém que revela e o que é revelado (acusativo)",
+  "distratores": [
+   "alguém que revela e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que revela",
+   "alguém que revela e o que ele é (nominativo, como o sujeito)",
+   "só alguém que revela"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em te revelata cernens facie: o que é revelado? facie (ablativo absoluto: descoberto o rosto); no ativo, o revelado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p521"
+  ]
+ },
+ {
+  "id": "la-ap522-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "cerno, cernere, crevi, cretum",
+  "lema": "la-p522",
+  "pt": "alguém que vê e quem ou o que é visto (acusativo)",
+  "distratores": [
+   "alguém que vê e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que vê",
+   "alguém que vê e o que ele é (nominativo, como o sujeito)",
+   "só alguém que vê"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ut te revelata cernens facie: quem vê? eu (sujeito de sim); quem? te (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p522"
+  ]
+ },
+ {
+  "id": "la-ap524-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "pango, pangere, panxi, panctum",
+  "lema": "la-p524",
+  "pt": "alguém que canta e o que é cantado (acusativo)",
+  "distratores": [
+   "alguém que canta e de quê (genitivo)",
+   "alguém que canta e aonde (in ou ad com acusativo)",
+   "alguém que canta e o que ele é (nominativo, como o sujeito)",
+   "só alguém que canta"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Pange, lingua, gloriosi corporis mysterium: quem canta? tu (lingua); o quê? mysterium (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p524"
+  ]
+ },
+ {
+  "id": "la-ap531-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "effundo, effundere, effudi, effusum",
+  "lema": "la-p531",
+  "pt": "alguém que derrama e o que é derramado (acusativo)",
+  "distratores": [
+   "alguém que derrama e de quê (genitivo)",
+   "alguém que derrama e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que derrama",
+   "só alguém que derrama"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quem … rex effudit gentium: quem derramou? rex; o quê? quem, isto é, o sangue (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p531"
+  ]
+ },
+ {
+  "id": "la-ap533-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "conversor, conversari, conversatus sum (depoente)",
+  "lema": "la-p533",
+  "pt": "alguém que vive e onde (in com ablativo)",
+  "distratores": [
+   "alguém que vive e o que é vivido (genitivo)",
+   "alguém que vive e aonde (in ou ad com acusativo)",
+   "alguém que vive e o que ele é (nominativo, como o sujeito)",
+   "alguém que vive e quem ele faz viver (acusativo)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em et in mundo conversatus: quem viveu? ele; onde? in mundo (in com ablativo).\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p533"
+  ]
+ },
+ {
+  "id": "la-ap534-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "spargo, spargere, sparsi, sparsum",
+  "lema": "la-p534",
+  "pt": "alguém que espalha e o que é espalhado (acusativo)",
+  "distratores": [
+   "alguém que espalha e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que espalha",
+   "alguém que espalha e o que ele é (nominativo, como o sujeito)",
+   "só alguém que espalha"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em sparso verbi semine: o que foi espalhado? semine (ablativo absoluto: espalhada a semente); no ativo, o espalhado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p534"
+  ]
+ },
+ {
+  "id": "la-ap540-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "claudo, claudere, clausi, clausum",
+  "lema": "la-p540",
+  "pt": "alguém que fecha e o que é fechado (acusativo)",
+  "distratores": [
+   "alguém que fecha e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que fecha",
+   "alguém que fecha e o que ele é (nominativo, como o sujeito)",
+   "só alguém que fecha"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em moras incolatus miro clausit ordine: quem fechou? ele (o Rei); o quê? moras incolatus (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p540"
+  ]
+ },
+ {
+  "id": "la-ap544-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "recumbo, recumbere, recubui",
+  "lema": "la-p544",
+  "pt": "só alguém que se reclina (e onde, com preposição)",
+  "distratores": [
+   "alguém que se reclina e o que é reclinado (acusativo)",
+   "alguém que se reclina e de quê (genitivo)",
+   "alguém que se reclina e o que ele é (nominativo, como o sujeito)",
+   "alguém que se reclina e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em recumbens cum fratribus: quem se reclina? o sujeito de dat (ele); com quem? cum fratribus (preposição, livre).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p544"
+  ]
+ },
+ {
+  "id": "la-ap546-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "observo, observare, observavi, observatum",
+  "lema": "la-p546",
+  "pt": "alguém que observa e o que é observado (acusativo)",
+  "distratores": [
+   "alguém que observa e de quê (genitivo)",
+   "alguém que observa e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que observa",
+   "só alguém que observa"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em observata lege: o que foi observado? lege (ablativo absoluto: cumprida a lei); no ativo, o observado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p546"
+  ]
+ },
+ {
+  "id": "la-ap552-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "efficio, efficere, effeci, effectum",
+  "lema": "la-p552",
+  "pt": "alguém que faz, o que é feito (acusativo) e o que se torna (outro acusativo)",
+  "distratores": [
+   "alguém que faz, o que é feito (acusativo) e o que se torna (dativo)",
+   "alguém que faz e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que faça",
+   "alguém que faz e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em panem verum verbo carnem efficit: quem faz? Verbum caro; o quê? panem verum (acusativo); em quê? carnem (outro acusativo); por quê? verbo (ablativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p552"
+  ]
+ },
+ {
+  "id": "la-ap555-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "firmo, firmare, firmavi, firmatum",
+  "lema": "la-p555",
+  "pt": "alguém que fortalece e o que é fortalecido (acusativo)",
+  "distratores": [
+   "alguém que fortalece e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que fortalece",
+   "alguém que fortalece e o que ele é (nominativo, como o sujeito)",
+   "só alguém que fortalece"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ad firmandum cor sincerum: quem fortalece? subentendido; o quê? cor sincerum (acusativo, com o gerúndio).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p555"
+  ]
+ },
+ {
+  "id": "la-ap558-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "sufficio, sufficere, suffeci, suffectum",
+  "lema": "la-p558",
+  "pt": "algo que basta e a quem basta (dativo)",
+  "distratores": [
+   "algo que basta e a quem basta (genitivo)",
+   "algo que basta e aonde (in ou ad com acusativo)",
+   "algo que basta e o que ele é (nominativo, como o sujeito)",
+   "algo que basta e o que é pedido (ablativo)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em sola fides sufficit: o que basta? sola fides; a quem? fica subentendido, o coração (dativo).\nTambém se diz sufficere + infinitivo: bastar para fazer algo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p558"
+  ]
+ },
+ {
+  "id": "la-ap560-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "veneror, venerari, veneratus sum (depoente)",
+  "lema": "la-p560",
+  "pt": "alguém que venera e quem ou o que é venerado (acusativo)",
+  "distratores": [
+   "alguém que venera e de quê (genitivo)",
+   "alguém que venera e aonde (in ou ad com acusativo)",
+   "alguém que venera e o que ele é (nominativo, como o sujeito)",
+   "só alguém que venera"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Sacramentum veneremur: quem venera? nós (subjuntivo, exortação); o quê? Sacramentum (acusativo).\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p560"
+  ]
+ },
+ {
+  "id": "la-ap564-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "cedo, cedere, cessi, cessum",
+  "lema": "la-p564",
+  "pt": "alguém ou algo que cede e a quem cede (dativo)",
+  "distratores": [
+   "alguém ou algo que cede e a quem cede (acusativo)",
+   "alguém ou algo que cede e de quê (genitivo)",
+   "alguém ou algo que cede e o que ele é (nominativo, como o sujeito)",
+   "alguém ou algo que cede e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em antiquum documentum novo cedat ritui: quem cede? antiquum documentum; a quem? novo ritui (dativo).\nEm português se cede «a» alguém, mas em latim o dativo é obrigatório; cedere ex = retirar-se de.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p564"
+  ]
+ },
+ {
+  "id": "la-ap576-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "servio, servire, servivi, servitum",
+  "lema": "la-p576",
+  "pt": "alguém que serve e a quem serve (dativo)",
+  "distratores": [
+   "alguém que serve e a quem serve (acusativo)",
+   "alguém que serve e de quê (genitivo)",
+   "alguém que serve e o que ele é (nominativo, como o sujeito)",
+   "alguém que serve e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em omnes reges servient ei: quem serve? omnes reges; a quem? ei (dativo).\nEm português se serve alguém; em latim, servio pede o dativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p576"
+  ]
+ },
+ {
+  "id": "la-ap577-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "oboedio, oboedire, oboedivi, oboeditum",
+  "lema": "la-p577",
+  "pt": "alguém que obedece e a quem obedece (dativo)",
+  "distratores": [
+   "alguém que obedece e a quem obedece (acusativo)",
+   "alguém que obedece e de quê (genitivo)",
+   "alguém que obedece e por quem (ab com ablativo)",
+   "alguém que obedece e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em omnes reges … oboedient: quem obedece? omnes reges; a quem? ei (dativo, o do verbo anterior).\nObedecer e servir pedem o dativo, não o acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p577"
+  ]
+ },
+ {
+  "id": "la-ap578-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "fremo, fremere, fremui, fremitum",
+  "lema": "la-p578",
+  "pt": "só alguém ou algo que freme",
+  "distratores": [
+   "alguém que freme e de quê (genitivo)",
+   "alguém que freme e o que ele é (nominativo, como o sujeito)",
+   "alguém que freme e uma ação no infinitivo",
+   "alguém que freme e quem ele faz fremir (dativo)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Quare fremuerunt gentes: quem freme? gentes; o verbo não pede mais nada.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p578"
+  ]
+ },
+ {
+  "id": "la-ap579-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "meditor, meditari, meditatus sum (depoente)",
+  "lema": "la-p579",
+  "pt": "alguém que medita e o que é meditado (acusativo)",
+  "distratores": [
+   "alguém que medita e de quê (genitivo)",
+   "alguém que medita e aonde (in ou ad com acusativo)",
+   "alguém que medita e o que ele é (nominativo, como o sujeito)",
+   "só alguém que medita"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em populi meditati sunt inania: quem medita? populi; o quê? inania (acusativo).\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p579"
+  ]
+ },
+ {
+  "id": "la-ap581-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "convenio, convenire, conveni, conventum",
+  "lema": "la-p581",
+  "pt": "alguém que se reúne e aonde (in ou ad com acusativo)",
+  "distratores": [
+   "alguém que se reúne e de quê (genitivo)",
+   "alguém que se reúne e o que ele é (nominativo, como o sujeito)",
+   "alguém que se reúne e quem ele reúne (genitivo)",
+   "alguém que se reúne e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em principes convenerunt in unum: quem se reúne? principes; aonde? in unum (in com acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p581"
+  ]
+ },
+ {
+  "id": "la-ap583-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "dirumpo, dirumpere, dirupi, diruptum",
+  "lema": "la-p583",
+  "pt": "alguém que rompe e o que é rompido (acusativo)",
+  "distratores": [
+   "alguém que rompe e de quê (genitivo)",
+   "alguém que rompe e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que rompe",
+   "alguém que rompe e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Dirumpamus vincula eorum: quem rompe? nós; o quê? vincula eorum (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p583"
+  ]
+ },
+ {
+  "id": "la-ap585-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "proicio, proicere, proieci, proiectum",
+  "lema": "la-p585",
+  "pt": "alguém que lança e o que é lançado (acusativo)",
+  "distratores": [
+   "alguém que lança e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que lança",
+   "alguém que lança e o que ele é (nominativo, como o sujeito)",
+   "só alguém que lança"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em proiciamus a nobis iugum ipsorum: quem lança? nós; o quê? iugum (acusativo); para longe de quem? a nobis.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p585"
+  ]
+ },
+ {
+  "id": "la-ap588-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "habito, habitare, habitavi, habitatum",
+  "lema": "la-p588",
+  "pt": "alguém que habita e onde (in com ablativo)",
+  "distratores": [
+   "alguém que habita e de quê (genitivo)",
+   "alguém que habita e aonde (in ou ad com acusativo)",
+   "alguém que habita e o que ele é (nominativo, como o sujeito)",
+   "alguém que habita e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Qui habitat in caelis: quem habita? qui (aquele); onde? in caelis (in com ablativo).\nTambém se usa com acusativo: habitare urbem = habitar a cidade.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p588"
+  ]
+ },
+ {
+  "id": "la-ap589-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "irrideo, irridere, irrisi, irrisum",
+  "lema": "la-p589",
+  "pt": "alguém que zomba e quem é alvo da zombaria (acusativo)",
+  "distratores": [
+   "alguém que zomba e de quê (genitivo)",
+   "alguém que zomba e aonde (in ou ad com acusativo)",
+   "alguém que zomba e o que ele é (nominativo, como o sujeito)",
+   "só alguém que zomba"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em irridebit eos: quem zomba? o que habita nos céus; de quem? eos (acusativo).\nEm português: «zombar de»; em latim, acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p589"
+  ]
+ },
+ {
+  "id": "la-ap590-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "subsanno, subsannare, subsannavi, subsannatum",
+  "lema": "la-p590",
+  "pt": "alguém que escarnece e quem é escarnecido (acusativo)",
+  "distratores": [
+   "alguém que escarnece e de quê (genitivo)",
+   "alguém que escarnece e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que escarnece",
+   "só alguém que escarnece"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Dominus subsannabit eos: quem escarnece? Dominus; quem? eos (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p590"
+  ]
+ },
+ {
+  "id": "la-ap592-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "conturbo, conturbare, conturbavi, conturbatum",
+  "lema": "la-p592",
+  "pt": "alguém que perturba e quem é perturbado (acusativo)",
+  "distratores": [
+   "alguém que perturba e de quê (genitivo)",
+   "alguém que perturba e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que perturba",
+   "alguém que perturba e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em in furore suo conturbabit eos: quem perturba? ele; quem? eos (acusativo); como? in furore suo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p592"
+  ]
+ },
+ {
+  "id": "la-ap594-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "constituo, constituere, constitui, constitutum",
+  "lema": "la-p594",
+  "pt": "alguém que estabelece e quem ou o que é estabelecido (acusativo)",
+  "distratores": [
+   "alguém que estabelece e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que estabelece",
+   "alguém que estabelece e o que ele é (nominativo, como o sujeito)",
+   "só alguém que estabelece"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Ego autem constitui regem meum super Sion: quem estabelece? eu; quem? regem meum (acusativo); onde? super Sion.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p594"
+  ]
+ },
+ {
+  "id": "la-ap596-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "praedico, praedicare, praedicavi, praedicatum",
+  "lema": "la-p596",
+  "pt": "alguém que proclama e o que é proclamado (acusativo)",
+  "distratores": [
+   "alguém que proclama e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que proclama",
+   "alguém que proclama e o que ele é (nominativo, como o sujeito)",
+   "só alguém que proclama"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Praedicabo decretum eius: quem proclama? eu; o quê? decretum eius (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p596"
+  ]
+ },
+ {
+  "id": "la-ap598-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "postulo, postulare, postulavi, postulatum",
+  "lema": "la-p598",
+  "pt": "alguém que pede, o que pede (acusativo) e de quem (a ou ab com ablativo)",
+  "distratores": [
+   "alguém que pede, o que pede (acusativo) e a quem (dativo)",
+   "alguém que pede e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que peça",
+   "alguém que pede e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Postula a me, et dabo tibi gentes: quem pede? tu (imperativo); de quem? a me (a com ablativo); o quê? as nações, na frase seguinte (acusativo).\nEm português se pede a alguém; em latim, de alguém (a ou ab).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p598"
+  ]
+ },
+ {
+  "id": "la-ap602-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "rego, regere, rexi, rectum",
+  "lema": "la-p602",
+  "pt": "alguém que rege e quem é regido (acusativo)",
+  "distratores": [
+   "alguém que rege e de quê (genitivo)",
+   "alguém que rege e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que rege",
+   "só alguém que rege"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Reges eos in virga ferrea: quem rege? tu; quem? eos (acusativo); com quê? in virga ferrea.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p602"
+  ]
+ },
+ {
+  "id": "la-ap607-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "confringo, confringere, confregi, confractum",
+  "lema": "la-p607",
+  "pt": "alguém que quebra e o que é quebrado (acusativo)",
+  "distratores": [
+   "alguém que quebra e de quê (genitivo)",
+   "alguém que quebra e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que quebra",
+   "alguém que quebra e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em et tamquam vas figuli confringes eos: quem quebra? tu; quem? eos (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p607"
+  ]
+ },
+ {
+  "id": "la-ap608-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "intellego, intellegere, intellexi, intellectum",
+  "lema": "la-p608",
+  "pt": "alguém que compreende e o que é compreendido (acusativo)",
+  "distratores": [
+   "alguém que compreende e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que compreende",
+   "alguém que compreende e o que ele é (nominativo, como o sujeito)",
+   "só alguém que compreende"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Et nunc, reges, intellegite: quem compreende? vós (reges, imperativo); o objeto fica subentendido (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p608"
+  ]
+ },
+ {
+  "id": "la-ap609-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "erudio, erudire, erudivi, eruditum",
+  "lema": "la-p609",
+  "pt": "alguém que instrui e quem é instruído (acusativo)",
+  "distratores": [
+   "alguém que instrui e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que instrui",
+   "alguém que instrui e o que ele é (nominativo, como o sujeito)",
+   "só alguém que instrui"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em erudimini, qui iudicatis terram: quem é instruído? vós (sujeito da passiva); no ativo, o instruído vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p609"
+  ]
+ },
+ {
+  "id": "la-ap611-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "exsulto, exsultare, exsultavi, exsultatum",
+  "lema": "la-p611",
+  "pt": "alguém que exulta e em quem exulta (dativo)",
+  "distratores": [
+   "alguém que exulta e em quem exulta (acusativo)",
+   "alguém que exulta e de quê (genitivo)",
+   "alguém que exulta e o que ele é (nominativo, como o sujeito)",
+   "alguém que exulta e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em exsultate ei cum tremore: quem exulta? vós; em quem? ei (dativo); como? cum tremore.\nTambém se diz exsultare in + ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p611"
+  ]
+ },
+ {
+  "id": "la-ap613-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "apprehendo, apprehendere, apprehendi, apprehensum",
+  "lema": "la-p613",
+  "pt": "alguém que agarra e o que é agarrado (acusativo)",
+  "distratores": [
+   "alguém que agarra e de quê (genitivo)",
+   "alguém que agarra e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que agarra",
+   "só alguém que agarra"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Apprehendite disciplinam: quem agarra? vós (imperativo); o quê? disciplinam (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p613"
+  ]
+ },
+ {
+  "id": "la-ap616-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "irascor, irasci, iratus sum (depoente)",
+  "lema": "la-p616",
+  "pt": "alguém que se irrita e contra quem (dativo)",
+  "distratores": [
+   "alguém que se irrita e contra quem (acusativo)",
+   "alguém que se irrita e de quê (genitivo)",
+   "alguém que se irrita e aonde (in ou ad com acusativo)",
+   "alguém que se irrita e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ne quando irascatur: quem se irrita? ele (o Senhor, subentendido); contra quem? não vem aqui; o dativo seria a regência normal.\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p616"
+  ]
+ },
+ {
+  "id": "la-ap617-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "pereo, perire, perii, peritum",
+  "lema": "la-p617",
+  "pt": "só alguém ou algo que perece",
+  "distratores": [
+   "alguém que perece e quem é destruído (acusativo)",
+   "alguém que perece e de quê (genitivo)",
+   "alguém que perece e o que ele é (nominativo, como o sujeito)",
+   "alguém que perece e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em pereatis de via: quem perece? vós; de onde? de via (de com ablativo, livre).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p617"
+  ]
+ },
+ {
+  "id": "la-ap619-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "exardesco, exardescere, exarsi, exarsum",
+  "lema": "la-p619",
+  "pt": "só alguém ou algo que se inflama",
+  "distratores": [
+   "alguém que se inflama e o que é inflamado (acusativo)",
+   "alguém que se inflama e de quê (genitivo)",
+   "alguém que se inflama e o que ele é (nominativo, como o sujeito)",
+   "alguém que se inflama e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em cum exarserit in brevi ira eius: quem se inflama? ira eius; o verbo não pede mais nada.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p619"
+  ]
+ },
+ {
+  "id": "la-ap620-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "confido, confidere, confisus sum (semidepoente)",
+  "lema": "la-p620",
+  "pt": "alguém que confia e em quem (dativo ou in com ablativo)",
+  "distratores": [
+   "alguém que confia e em quem (acusativo)",
+   "alguém que confia e de quê (genitivo)",
+   "alguém que confia e aonde (ad com acusativo)",
+   "alguém que confia e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Beati omnes, qui confidunt in eo: quem confia? qui (todos os que); em quem? in eo (in com ablativo).\nSemidepoente: perfeito confisus sum. O dativo é igualmente comum (confidere Deo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p620"
+  ]
+ },
+ {
+  "id": "la-ap625-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "instauro, instaurare, instauravi, instauratum",
+  "lema": "la-p625",
+  "pt": "alguém que restaura e o que é restaurado (acusativo)",
+  "distratores": [
+   "alguém que restaura e de quê (genitivo)",
+   "alguém que restaura e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que restaura",
+   "só alguém que restaura"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em omnia instaurare voluisti: quem restaura? tu (sujeito de voluisti); o quê? omnia (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p625"
+  ]
+ },
+ {
+  "id": "la-ap626-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "concedo, concedere, concessi, concessum",
+  "lema": "la-p626",
+  "pt": "alguém que concede, o que concede (acusativo) e a quem (dativo)",
+  "distratores": [
+   "alguém que concede, o que concede (dativo) e a quem (acusativo)",
+   "alguém que concede e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que conceda",
+   "alguém que concede e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em concede propitius: quem concede? tu (imperativo); o quê e a quem ficam subentendidos (acusativo e dativo).\nTambém concedere = retirar-se, com ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p626"
+  ]
+ },
+ {
+  "id": "la-ap630-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "disgrego, disgregare, disgregavi, disgregatum",
+  "lema": "la-p630",
+  "pt": "alguém que dispersa e quem ou o que é dispersado (acusativo)",
+  "distratores": [
+   "alguém que dispersa e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que dispersa",
+   "alguém que dispersa e o que ele é (nominativo, como o sujeito)",
+   "só alguém que dispersa"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em familia Gentium, peccati vulnere disgregata: quem foi dispersa? familia (particípio); por quê? vulnere (ablativo, causa).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p630"
+  ]
+ },
+ {
+  "id": "la-ap632-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "subdo, subdere, subdidi, subditum",
+  "lema": "la-p632",
+  "pt": "alguém que submete, o que é submetido (acusativo) e a quem (dativo)",
+  "distratores": [
+   "alguém que submete, o que é submetido (dativo) e a quem (acusativo)",
+   "alguém que submete e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que submeta",
+   "alguém que submete e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em eius suavissimo subdantur Imperio: quem é submetido? cuncta familia (sujeito da passiva); a quem? Imperio (dativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p632"
+  ]
+ },
+ {
+  "id": "la-ap635-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "recordor, recordari, recordatus sum (depoente)",
+  "lema": "la-p635",
+  "pt": "alguém que se lembra e do que se lembra (acusativo)",
+  "distratores": [
+   "alguém que se lembra e do que se lembra (dativo)",
+   "alguém que se lembra e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que se lembre",
+   "alguém que se lembra e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Ne recorderis peccata mea: quem se lembra? tu; do quê? peccata mea (acusativo).\nEm português: «lembrar-se de»; em latim, acusativo; para pessoas, também o genitivo.\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p635"
+  ]
+ },
+ {
+  "id": "la-ap636-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "dirigo, dirigere, direxi, directum",
+  "lema": "la-p636",
+  "pt": "alguém que dirige e o que é dirigido (acusativo)",
+  "distratores": [
+   "alguém que dirige e de quê (genitivo)",
+   "alguém que dirige e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que dirige",
+   "só alguém que dirige"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Dirige, Domine Deus meus, viam meam: quem dirige? tu (Domine); o quê? viam meam (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p636"
+  ]
+ },
+ {
+  "id": "la-ap639-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "dono, donare, donavi, donatum",
+  "lema": "la-p639",
+  "pt": "alguém que dá, o que dá (acusativo) e a quem (dativo)",
+  "distratores": [
+   "alguém que dá, o que dá (dativo) e a quem (acusativo)",
+   "alguém que dá e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que dê",
+   "alguém que dá e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Requiem aeternam dona ei, Domine: quem dá? tu (Domine); o quê? requiem (acusativo); a quem? ei (dativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p639"
+  ]
+ },
+ {
+  "id": "la-ap640-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "luceo, lucere, luxi",
+  "lema": "la-p640",
+  "pt": "algo que brilha e para quem brilha (dativo)",
+  "distratores": [
+   "algo que brilha e quem é iluminado (acusativo)",
+   "algo que brilha e de quê (genitivo)",
+   "algo que brilha e o que ele é (nominativo, como o sujeito)",
+   "algo que brilha e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em lux perpetua luceat ei: o que brilha? lux perpetua; para quem? ei (dativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p640"
+  ]
+ },
+ {
+  "id": "la-ap641-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "eruo, eruere, erui, erutum",
+  "lema": "la-p641",
+  "pt": "alguém que arranca e o que é arrancado (acusativo)",
+  "distratores": [
+   "alguém que arranca e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que arranca",
+   "alguém que arranca e o que ele é (nominativo, como o sujeito)",
+   "só alguém que arranca"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em A porta inferi erue, Domine, animam eius: quem arranca? tu (Domine); o quê? animam eius (acusativo); de onde? a porta inferi.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p641"
+  ]
+ },
+ {
+  "id": "la-ap643-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "requiesco, requiescere, requievi, requietum",
+  "lema": "la-p643",
+  "pt": "só alguém que descansa",
+  "distratores": [
+   "alguém que descansa e o que é descansado (acusativo)",
+   "alguém que descansa e de quê (genitivo)",
+   "alguém que descansa e o que ele é (nominativo, como o sujeito)",
+   "alguém que descansa e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Requiescat in pace: quem descansa? ele (subentendido); como? in pace (preposição, livre).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p643"
+  ]
+ },
+ {
+  "id": "la-ap644-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "absolvo, absolvere, absolvi, absolutum",
+  "lema": "la-p644",
+  "pt": "alguém que absolve, quem é absolvido (acusativo) e de quê (ab com ablativo)",
+  "distratores": [
+   "alguém que absolve, quem é absolvido (acusativo) e de quê (dativo)",
+   "alguém que absolve e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que absolva",
+   "alguém que absolve e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Absolve, quaesumus, Domine, famulum tuum ab omni vinculo delictorum: quem absolve? tu (Domine); quem? famulum tuum (acusativo); de quê? ab omni vinculo (ab com ablativo).\nO crime também pode vir em genitivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p644"
+  ]
+ },
+ {
+  "id": "la-ap647-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "conformo, conformare, conformavi, conformatum",
+  "lema": "la-p647",
+  "pt": "alguém que conforma, quem é moldado (acusativo) e a quê (dativo)",
+  "distratores": [
+   "alguém que conforma, quem é moldado (dativo) e a quê (acusativo)",
+   "alguém que conforma e de quê (genitivo)",
+   "nenhum sujeito: só a ação, sem ninguém que conforme",
+   "alguém que conforma e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Christo meruit conformari: quem se conforma? quem mereceu (sujeito); a quê? Christo (dativo). Na passiva o moldado vira sujeito.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p647"
+  ]
+ },
+ {
+  "id": "la-ap649-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "resuscito, resuscitare, resuscitavi, resuscitatum",
+  "lema": "la-p649",
+  "pt": "alguém que ressuscita e quem é ressuscitado (acusativo)",
+  "distratores": [
+   "alguém que ressuscita e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que ressuscita",
+   "alguém que ressuscita e o que ele é (nominativo, como o sujeito)",
+   "só alguém que ressuscita"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em resuscitatus respiret: quem foi ressuscitado? o sujeito de respiret (particípio); no ativo, o ressuscitado vem em acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p649"
+  ]
+ },
+ {
+  "id": "la-ap650-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "respiro, respirare, respiravi, respiratum",
+  "lema": "la-p650",
+  "pt": "só alguém que respira",
+  "distratores": [
+   "alguém que respira e o que é respirado (genitivo)",
+   "alguém que respira e de quê (genitivo)",
+   "alguém que respira e o que ele é (nominativo, como o sujeito)",
+   "alguém que respira e uma ação no infinitivo"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em inter Sanctos tuos resuscitatus respiret: quem respira (vive)? ele (subentendido); entre quem? inter Sanctos tuos (preposição, livre).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p650"
+  ]
+ },
+ {
+  "id": "la-ap654-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "opto, optare, optavi, optatum",
+  "lema": "la-p654",
+  "pt": "alguém que deseja e o que é desejado (acusativo)",
+  "distratores": [
+   "alguém que deseja e de quê (genitivo)",
+   "alguém que deseja e aonde (in ou ad com acusativo)",
+   "alguém que deseja e o que ele é (nominativo, como o sujeito)",
+   "só alguém que deseja"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quam semper optaverunt: quem deseja? eles; o quê? quam, isto é, a indulgência (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p654"
+  ]
+ },
+ {
+  "id": "la-ap656-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "consequor, consequi, consecutus sum (depoente)",
+  "lema": "la-p656",
+  "pt": "alguém que alcança e o que é alcançado (acusativo)",
+  "distratores": [
+   "alguém que alcança e de quê (genitivo)",
+   "alguém que alcança e aonde (in ou ad com acusativo)",
+   "nenhum sujeito: só a ação, sem ninguém que alcança",
+   "só alguém que alcança"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em indulgentiam … consequantur: quem alcança? eles (subjuntivo); o quê? indulgentiam (acusativo).\nDepoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p656"
   ]
  }
 ]
