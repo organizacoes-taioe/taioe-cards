@@ -1,7 +1,7 @@
 """O corte dos textos latinos em trechos (cards/LATIM.md §3.3, critério de 04/11/2026).
 
     python -I fonte/latim/cortes.py extrair        # uma vez: os versos anotados → fonte/latim/versos.json
-    python -I fonte/latim/cortes.py entrada <saida.json>     # os trechos de CORTES, com o contexto, para a leva
+    python -I fonte/latim/cortes.py entrada <saida.json> [texto…]  # os trechos de CORTES (ou só os dos textos dados), para a leva
     python -I fonte/latim/cortes.py gravar <leva.json> ...   # os trechos novos no lugar dos antigos
     python -I fonte/latim/cortes.py perguntas                # as perguntas sobre os trechos (D41)
 
@@ -100,6 +100,221 @@ CORTES = {
         [(4, 7), (9, 11)],           # Quia quem meruisti portare resurrexit, sicut dixit.
         [(13, 16)],                  # Ora pro nobis Deum.
     ],
+    # orações, leva A (16/11/2026)
+    'oracoes/memorare': [
+        [(0, 9)],  # Memorare o piissima Virgo Maria non esse auditum a saeculo
+        [(5, 10), (21, 22)],  # non esse auditum a saeculo quemquam … esse derelictum
+        [(10, 14), (21, 22)],  # quemquam ad tua currentem praesidia … esse derelictum
+        [(10, 10), (15, 22)],  # quemquam … tua implorantem auxilia tua petentem suffragia esse derelictum
+        [(23, 32)],  # Ego tali animatus confidentia ad te Virgo virginum Mater curro
+        [(33, 40)],  # ad te venio coram te gemens peccator assisto
+        [(41, 46)],  # Noli Mater Verbi verba mea despicere
+        [(47, 52)],  # sed audi propitia et exaudi Amen
+    ],
+    'oracoes/alma-redemptoris-mater': [
+        [(0, 7)],  # Alma Redemptoris Mater quae pervia caeli porta manes
+        [(0, 2), (8, 12)],  # Alma Redemptoris Mater … et stella maris succurre cadenti
+        [(11, 16)],  # succurre cadenti surgere qui curat populo
+        [(17, 24)],  # tu quae genuisti natura mirante tuum sanctum Genitorem
+        [(25, 34)],  # Virgo prius ac posterius Gabrielis ab ore sumens illud Ave
+        [(32, 36)],  # sumens illud Ave peccatorum miserere
+    ],
+    'oracoes/ave-regina-caelorum': [
+        [(0, 2)],  # Ave Regina caelorum
+        [(3, 5)],  # ave Domina angelorum
+        [(6, 9)],  # salve radix salve porta
+        [(10, 15)],  # ex qua mundo lux est orta
+        [(16, 21)],  # Gaude Virgo gloriosa super omnes speciosa
+        [(22, 25)],  # vale o valde decora
+        [(26, 30)],  # et pro nobis Christum exora
+    ],
+    'oracoes/veni-sancte-spiritus': [
+        [(0, 6)],  # Veni Sancte Spiritus reple tuorum corda fidelium
+        [(7, 13)],  # et tui amoris in eis ignem accende
+        [(14, 18)],  # Emitte Spiritum tuum et creabuntur
+        [(19, 22)],  # Et renovabis faciem terrae
+        [(23, 23)],  # Oremus
+        [(24, 31)],  # Deus qui corda fidelium Sancti Spiritus illustratione docuisti
+        [(32, 38)],  # da nobis in eodem Spiritu recta sapere
+        [(39, 44)],  # et de eius semper consolatione gaudere
+        [(45, 49)],  # Per Christum Dominum nostrum Amen
+    ],
+    'oracoes/symbolum-apostolorum': [
+        [(0, 8)],  # Credo in Deum, Patrem omnipotentem, Creatorem caeli et terrae.
+        [(9, 17)],  # Et in Iesum Christum, Filium eius unicum, Dominum nostrum,
+        [(18, 27)],  # qui conceptus est de Spiritu Sancto, natus ex Maria Virgine,
+        [(28, 35)],  # passus sub Pontio Pilato, crucifixus, mortuus, et sepultus,
+        [(36, 43)],  # descendit ad inferos, tertia die resurrexit a mortuis,
+        [(44, 52)],  # ascendit ad caelos, sedet ad dexteram Dei Patris omnipotentis,
+        [(53, 59)],  # inde venturus est iudicare vivos et mortuos.
+        [(60, 63)],  # Credo in Spiritum Sanctum,
+        [(64, 68)],  # sanctam Ecclesiam catholicam, Sanctorum communionem,
+        [(69, 75)],  # remissionem peccatorum, carnis resurrectionem, vitam aeternam. Amen.
+    ],
+    'oracoes/credo-parte-1': [
+        [(0, 5)],  # Credo in unum Deum, Patrem omnipotentem,
+        [(6, 13)],  # factorem caeli et terrae, visibilium omnium et invisibilium.
+        [(14, 22)],  # Et in unum Dominum Iesum Christum, Filium Dei unigenitum,
+        [(23, 29)],  # et ex Patre natum ante omnia saecula.
+        [(30, 35)],  # Deum de Deo, lumen de lumine,
+        [(36, 40)],  # Deum verum de Deo vero,
+        [(41, 45)],  # genitum, non factum, consubstantialem Patri:
+        [(46, 50)],  # per quem omnia facta sunt.
+        [(51, 61)],  # Qui propter nos homines et propter nostram salutem descendit de caelis.
+        [(62, 70)],  # Et incarnatus est de Spiritu Sancto ex Maria Virgine,
+        [(71, 74)],  # et homo factus est.
+    ],
+    'oracoes/credo-parte-2': [
+        [(0, 6)],  # Crucifixus etiam pro nobis sub Pontio Pilato;
+        [(7, 10)],  # passus et sepultus est,
+        [(11, 16)],  # et resurrexit tertia die, secundum Scripturas,
+        [(17, 24)],  # et ascendit in caelum, sedet ad dexteram Patris.
+        [(25, 34)],  # Et iterum venturus est cum gloria, iudicare vivos et mortuos,
+        [(35, 39)],  # cuius regni non erit finis.
+        [(40, 46)],  # Et in Spiritum Sanctum, Dominum et vivificantem:
+        [(47, 51)],  # qui ex Patre Filioque procedit.
+        [(52, 60)],  # Qui cum Patre et Filio simul adoratur et conglorificatur:
+        [(61, 65)],  # qui locutus est per prophetas.
+        [(66, 72)],  # Et unam, sanctam, catholicam et apostolicam Ecclesiam.
+        [(73, 78)],  # Confiteor unum baptisma in remissionem peccatorum.
+        [(79, 82)],  # Et exspecto resurrectionem mortuorum,
+        [(83, 87)],  # et vitam venturi saeculi. Amen.
+    ],
+    'oracoes/adoro-te-devote-parte-1': [
+        [(0, 4)],  # Adoro te devote, latens Deitas
+        [(4, 10)],  # Deitas, quae sub his figuris vere latitas
+        [(11, 16)],  # tibi se cor meum totum subicit
+        [(17, 21)],  # quia te contemplans totum deficit
+        [(22, 27)],  # Visus, tactus, gustus in te fallitur
+        [(28, 32)],  # sed auditu solo tuto creditur
+        [(33, 37)],  # credo quidquid dixit Dei Filius
+        [(38, 42)],  # nil hoc verbo Veritatis verius
+    ],
+    'oracoes/adoro-te-devote-parte-2': [
+        [(0, 4)],  # In cruce latebat sola Deitas
+        [(5, 10)],  # at hic latet simul et humanitas
+        [(11, 15)],  # ambo tamen credens atque confitens
+        [(16, 20)],  # peto quod petivit latro paenitens
+        [(21, 25)],  # Plagas, sicut Thomas, non intueor
+        [(26, 30)],  # Deum tamen meum te confiteor
+        [(31, 36)],  # fac me tibi semper magis credere
+        [(37, 42)],  # in te spem habere, te diligere
+    ],
+    'oracoes/adoro-te-devote-parte-3': [
+        [(0, 3)],  # O memoriale mortis Domini
+        [(4, 8)],  # panis vivus, vitam praestans homini
+        [(9, 14)],  # praesta meae menti de te vivere
+        [(15, 20)],  # et te illi semper dulce sapere
+        [(21, 24)],  # Pie pellicane, Iesu Domine
+        [(25, 29)],  # me immundum munda tuo sanguine
+        [(30, 40)],  # cuius una stilla salvum facere totum mundum quit ab omni scelere
+    ],
+    'oracoes/adoro-te-devote-parte-4': [
+        [(0, 4)],  # Iesu, quem velatum nunc aspicio
+        [(5, 10)],  # oro fiat illud quod tam sitio
+        [(11, 20)],  # ut te revelata cernens facie, visu sim beatus tuae gloriae
+    ],
+    'oracoes/pange-lingua-parte-1': [
+        [(0, 4)],  # Pange, lingua, gloriosi Corporis mysterium,
+        [(5, 10), (14, 16)],  # Sanguinisque pretiosi, quem in mundi pretium … Rex effudit gentium.
+        [(11, 16)],  # fructus ventris generosi Rex effudit gentium.
+        [(17, 23)],  # Nobis datus, nobis natus ex intacta Virgine,
+        [(24, 27), (31, 36)],  # et in mundo conversatus, … sui moras incolatus miro clausit ordine.
+        [(28, 36)],  # sparso verbi semine, sui moras incolatus miro clausit ordine.
+    ],
+    'oracoes/pange-lingua-parte-2': [
+        [(0, 6)],  # In supremae nocte cenae recumbens cum fratribus,
+        [(7, 12)],  # observata lege plene cibis in legalibus,
+        [(13, 19)],  # cibum turbae duodenae se dat suis manibus.
+        [(20, 26)],  # Verbum caro, panem verum verbo carnem efficit:
+        [(27, 30)],  # fitque sanguis Christi merum,
+        [(31, 34)],  # et si sensus deficit,
+        [(35, 41)],  # ad firmandum cor sincerum sola fides sufficit.
+    ],
+    'oracoes/pange-lingua-parte-3': [
+        [(0, 4)],  # Tantum ergo Sacramentum veneremur cernui:
+        [(5, 10)],  # et antiquum documentum novo cedat ritui:
+        [(11, 15)],  # praestet fides supplementum sensuum defectui.
+        [(16, 20)],  # Genitori, Genitoque laus et iubilatio,
+        [(21, 27)],  # salus, honor, virtus quoque sit et benedictio:
+        [(28, 33)],  # procedenti ab utroque compar sit laudatio.
+    ],
+    'oracoes/psalmus-2-parte-1': [
+        [(0, 4)],  # Regnum eius regnum sempiternum est
+        [(5, 11)],  # et omnes reges servient ei et oboedient.
+        [(12, 19)],  # Quare fremuerunt gentes, et populi meditati sunt inania?
+        [(20, 27)],  # Astiterunt reges terrae, et principes convenerunt in unum
+        [(25, 27), (28, 33)],  # convenerunt in unum … adversus Dominum et adversus Christum eius:
+        [(34, 42)],  # Dirumpamus vincula eorum et proiciamus a nobis iugum ipsorum!
+        [(43, 51)],  # Qui habitat in caelis, irridebit eos, Dominus subsannabit eos.
+        [(52, 58)],  # Tunc loquetur ad eos in ira sua
+        [(59, 64)],  # et in furore suo conturbabit eos:
+        [(65, 74)],  # Ego autem constitui regem meum super Sion, montem sanctum meum!
+    ],
+    'oracoes/psalmus-2-parte-2': [
+        [(0, 2)],  # Praedicabo decretum eius.
+        [(3, 6)],  # Dominus dixit ad me:
+        [(7, 10)],  # Filius meus es tu;
+        [(11, 14)],  # ego hodie genui te.
+        [(15, 23)],  # Postula a me, et dabo tibi gentes hereditatem tuam
+        [(19, 23), (24, 28)],  # dabo tibi gentes hereditatem tuam … et possessionem tuam terminos terrae.
+        [(29, 33)],  # Reges eos in virga ferrea
+        [(34, 39)],  # et tamquam vas figuli confringes eos
+        [(40, 47)],  # Et nunc, reges, intellegite; erudimini, qui iudicatis terram.
+        [(48, 56)],  # Servite Domino in timore et exsultate ei cum tremore.
+        [(57, 61)],  # Apprehendite disciplinam, ne quando irascatur
+        [(62, 71)],  # et pereatis de via, cum exarserit in brevi ira eius.
+        [(72, 77)],  # Beati omnes, qui confidunt in eo.
+    ],
+    'oracoes/psalmus-2-parte-3': [
+        [(0, 1)],  # Gloria Patri.
+        [(2, 6)],  # Regnum eius regnum sempiternum est
+        [(7, 13)],  # et omnes reges servient ei et oboedient.
+        [(14, 17)],  # Domine, exaudi orationem meam.
+        [(18, 23)],  # Et clamor meus ad te veniat.
+        [(24, 24)],  # Oremus.
+        [(25, 27)],  # Omnipotens sempiterne Deus
+        [(28, 34), (35, 37)],  # qui in dilecto Filio tuo, universorum Rege … omnia instaurare voluisti
+        [(38, 39)],  # concede propitius
+        [(40, 46), (47, 50)],  # ut cuncta familia Gentium, peccati vulnere disgregata … eius suavissimo subdantur Imperio:
+        [(51, 60)],  # Qui tecum vivit et regnat in unitate Spiritus Sancti Deus:
+        [(61, 64)],  # per omnia saecula saeculorum.
+    ],
+    'oracoes/ne-recorderis-parte-1': [
+        [(0, 10)],  # Ne recorderis peccata mea, Domine, dum veneris iudicare saeculum per ignem.
+        [(11, 19)],  # Dirige, Domine Deus meus, in conspectu tuo viam meam,
+        [(11, 11), (18, 19), (20, 25)],  # Dirige, … viam meam, … dum veneris iudicare saeculum per ignem.
+        [(26, 35)],  # Requiem aeternam dona ei, Domine, et lux perpetua luceat ei,
+        [(36, 41)],  # dum veneris iudicare saeculum per ignem.
+    ],
+    'oracoes/ne-recorderis-parte-2': [
+        [(0, 1)],  # Pater noster.
+        [(2, 7)],  # Et ne nos inducas in tentationem.
+        [(8, 12)],  # Sed libera nos a malo.
+        [(13, 19)],  # A porta inferi erue, Domine, animam eius.
+        [(20, 22)],  # Requiescat in pace.
+        [(24, 27)],  # Domine, exaudi orationem meam.
+        [(28, 33)],  # Et clamor meus ad te veniat.
+        [(34, 35)],  # Dominus vobiscum.
+        [(36, 39)],  # Et cum spiritu tuo.
+    ],
+    'oracoes/ne-recorderis-parte-3': [
+        [(0, 0)],  # Oremus.
+        [(1, 9)],  # Absolve, quaesumus, Domine, famulum tuum ab omni vinculo delictorum,
+        [(10, 17)],  # ut, qui in hoc saeculo Christo meruit conformari,
+        [(18, 25)],  # in resurrectionis gloria inter Sanctos tuos resuscitatus respiret.
+        [(26, 29)],  # Per Christum Dominum nostrum.
+        [(31, 31)],  # Oremus.
+        [(32, 37)],  # Fidelium, Deus, omnium conditor et redemptor:
+        [(38, 45)],  # animabus famulorum famularumque tuarum remissionem cunctorum tribue peccatorum;
+        [(46, 53)],  # ut indulgentiam, quam semper optaverunt, piis supplicationibus consequantur.
+        [(54, 57)],  # Per Christum Dominum nostrum.
+        [(59, 63)],  # Requiem aeternam dona ei, Domine.
+        [(64, 68)],  # Et lux perpetua luceat ei.
+        [(69, 71)],  # Requiescat in pace.
+        [(73, 79), (83, 83)],  # Anima eius et animae omnium fidelium defunctorum … requiescant
+        [(80, 85)],  # per misericordiam Dei requiescant in pace.
+    ],
 }
 
 FIM = '.;:?!'
@@ -107,6 +322,8 @@ FIM = '.;:?!'
 # O refrão que sai do trecho sem deixar «…» (o Gere, 15/11, la-t126: «pode tirar o aleluia do fim
 # […] E não precisa dos três pontinhos»). Também não precisa entrar em trecho nenhum.
 REFRAO = {'alleluia'}
+# o arquivo dos trechos dos textos novos (os que ainda não têm card de trecho)
+ARQUIVO_NOVO = '29-trechos-5.json'
 
 
 def ler_baralho():
@@ -218,33 +435,54 @@ def fonte_de(antigos, a, b):
     return f'{fa}–{m.group(1)}'
 
 
+def so_letras(la):
+    return re.sub(r'[^a-z ]', '', la.lower().replace('…', ' ')).split().__str__()
+
+
 def trechos_novos(tid, versos, cards, antigos):
     proximo = max(int(i[4:]) for i in cards if i.startswith('la-t')) + 1
     por_la = {c['la']: c for c in antigos}
     total = sum(len(palavras_do_verso(v)) for v in versos)
-    usados = set()
+    usados, repetidas = set(), set()
     saida = []
+    # a frase que já é card (noutro texto, ou antes neste) não se repete: o build recusa card repetido
+    # («Oremus.», a antífona repetida, «Et ne nos inducas in tentationem» do Pai-Nosso no responso)
+    outros = {so_letras(c['la']) for c in cards.values()
+              if c.get('tipo') == 'frase' and c.get('texto') and c.get('texto') != tid}
+    neste = set()
     for intervalos in CORTES[tid]:
         t = montar_trecho(tid, versos, intervalos, cards)
-        usados.update(t.pop('usados'))
+        u = t.pop('usados')
+        chave = so_letras(t['la'])
+        if chave in neste or (chave in outros and t['la'] not in por_la):
+            repetidas.update(u)
+            continue
+        neste.add(chave)
+        usados.update(u)
         velho = por_la.get(t['la'])
         t['id'] = velho['id'] if velho else None
-        t['fonte'] = fonte_de(antigos, *t['versos'])
+        if velho:
+            t['fonte'] = velho['fonte']
+        else:
+            t['fonte'] = fonte_de(antigos, *t['versos']) if antigos else textos.TEXTOS[tid]['fonte']
         saida.append(t)
-    faltam = set(range(total)) - usados
+    faltam = set(range(total)) - usados - repetidas
     if faltam:
         # a palavra que só se repete (o alleluia do fim de cada linha) pode ficar de fora
         formas = {w.lower() for v in versos for _, _, w, _ in palavras_do_verso(v)}
         nos_trechos = {re.sub(r'[^\w]', '', x).lower() for t in saida for x in t['la'].split()}
         lista = [w for v in versos for _, _, w, _ in palavras_do_verso(v)]
         faltam = {n for n in faltam if lista[n].lower() not in nos_trechos}
+        # e a palavra sem card nem forma (amen, Kyrie, eleison), que não se estuda
+        sem = [all(not x.get('c') for x in partes) for v in versos for _, _, _, partes in palavras_do_verso(v)]
+        faltam = {n for n in faltam if not sem[n]}
         if faltam:
             raise SystemExit(f'{tid}: palavras fora de todo trecho: {[lista[n] for n in sorted(faltam)]}')
     for t in saida:
         if not t['id']:
             t['id'] = f'la-t{proximo:03d}'
             proximo += 1
-            cards[t['id']] = t
+            cards[t['id']] = dict(t, tipo='frase', texto=tid)
         n = len([p for p in t['palavras'] if not p['w'].startswith('-')])
         if n > 12:
             raise SystemExit(f"{tid}: trecho com {n} palavras: {t['la']}")
@@ -256,14 +494,16 @@ def antigos_de(cards, tid):
                   key=lambda c: c['linha'])
 
 
-def entrada(destino):
+def entrada(destino, so=()):
     _, cards = ler_baralho()
     versos = ler_versos()
     saida = []
     for tid in CORTES:
+        if so and tid not in so:
+            continue
         antigos = antigos_de(cards, tid)
         novos = trechos_novos(tid, versos[tid], cards, antigos)
-        texto = {'texto': tid, 'versos': [{'n': i, 'la': v['la'], 'pt': antigos[i - 1]['pt']}
+        texto = {'texto': tid, 'versos': [{'n': i, 'la': v['la'], 'pt': antigos[i - 1]['pt'] if i <= len(antigos) else ''}
                                           for i, v in enumerate(versos[tid], 1)], 'trechos': []}
         for t in novos:
             a, b = t['versos']
@@ -304,6 +544,19 @@ def conceitos_de(palavras, antigos):
     return [g for g in vistos if g != 'la-g032' or neutro]
 
 
+def conceitos_da_leva(x, palavras, cards):
+    """Texto novo, sem versos de antes: os conceitos que a leva dá pelo nome («conceitos»: ["acusativo",
+    "verbo depoente"]), na ordem, sem o do neutro quando o trecho não pede (como conceitos_de)."""
+    por_nome = {c.get('pt'): c['id'] for c in cards.values() if c['id'].startswith('la-g')}
+    ids = []
+    for nome in x.get('conceitos') or []:
+        if nome not in por_nome:
+            raise SystemExit(f"{x['id']}: conceito desconhecido «{nome}»")
+        if por_nome[nome] not in ids:
+            ids.append(por_nome[nome])
+    return conceitos_de(palavras, [{'conceitos': ids}])
+
+
 def gravar(levas):
     arquivos, cards = ler_baralho()
     versos = ler_versos()
@@ -313,10 +566,20 @@ def gravar(levas):
             escrito[x['id']] = x
     for tid in CORTES:
         antigos = antigos_de(cards, tid)
+        # o texto já cortado só se refaz quando a leva traz trecho dele (os cards antigos têm
+        # ajustes feitos à mão, como a pontuação, e o corte de novo os trocaria por outros)
+        if antigos and not any(escrito.get(c['id'], {}).get('texto_novo') for c in antigos) and \
+                not any(x.get('texto') == tid for x in escrito.values()):
+            continue
         novos = trechos_novos(tid, versos[tid], cards, antigos)
-        arq = next(f for f, lista in arquivos.items() if any(c['id'] == antigos[0]['id'] for c in lista))
+        if antigos:
+            arq = next(f for f, lista in arquivos.items() if any(c['id'] == antigos[0]['id'] for c in lista))
+        else:
+            # texto novo: os trechos vão para o arquivo da leva (ARQUIVO_NOVO), no fim
+            arq = BARALHO / ARQUIVO_NOVO
+            arquivos.setdefault(arq, [])
         lista = arquivos[arq]
-        pos = min(i for i, c in enumerate(lista) if c.get('texto') == tid)
+        pos = min((i for i, c in enumerate(lista) if c.get('texto') == tid), default=len(lista))
         resto = [c for c in lista if not (c.get('tipo') == 'frase' and c.get('texto') == tid)]
         feitos = []
         for k, t in enumerate(novos, 1):
@@ -334,8 +597,9 @@ def gravar(levas):
                 nota = nota_das_palavras(pal) + [l for l in (x.get('ensina') or []) if l]
                 card = {'id': t['id'], 'tipo': 'frase', 'la': t['la'], 'pt': x['pt'], 'gabarito': x['gabarito'],
                         'aceitas': x.get('aceitas', []), 'distratores': x['distratores'], 'nota': '\n'.join(nota),
-                        'nivel': antigos[0]['nivel'], 'tags': ['trecho'], 'fonte': t['fonte'],
-                        'requerTodas': [], 'palavras': pal, 'conceitos': conceitos_de(pal, antigos[a - 1:b])}
+                        'nivel': antigos[0]['nivel'] if antigos else 'A1', 'tags': ['trecho'], 'fonte': t['fonte'],
+                        'requerTodas': [], 'palavras': pal,
+                        'conceitos': conceitos_de(pal, antigos[a - 1:b]) if antigos else conceitos_da_leva(x, pal, cards)}
             card['texto'] = tid
             card['linha'] = k
             card['versos'] = t['versos']
@@ -354,7 +618,7 @@ def gravar(levas):
 
 def gravar_cards(f, lista):
     """Só o arquivo que mudou, no formato que ele já tinha (um card por linha, ou indentado)."""
-    antes = f.read_text(encoding='utf-8')
+    antes = f.read_text(encoding='utf-8') if f.exists() else '[]'
     if json.loads(antes) == lista:
         return
     if antes.startswith('[\n {"'):
@@ -399,7 +663,7 @@ if __name__ == '__main__':
     if sys.argv[1:2] == ['extrair']:
         extrair()
     elif sys.argv[1:2] == ['entrada']:
-        entrada(sys.argv[2])
+        entrada(sys.argv[2], sys.argv[3:])
     elif sys.argv[1:2] == ['gravar']:
         gravar(sys.argv[2:])
     elif sys.argv[1:2] == ['perguntas']:

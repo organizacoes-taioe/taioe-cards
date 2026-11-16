@@ -2515,5 +2515,1980 @@
    "la-v300"
   ],
   "conjunto": "q-t126"
+ },
+ {
+  "id": "la-qt131a",
+  "tipo": "compreensao",
+  "la": "Ego tali animatus confidentia, ad te, Virgo virginum, Mater, curro",
+  "pergunta": "Com o que o orante corre, animado?",
+  "pt": "com tal confiança no coração",
+  "aceitas": [
+   "com tal confiança no coração."
+  ],
+  "distratores": [
+   "com a Mãe das virgens",
+   "com a ajuda de ti",
+   "com a confiança da Virgem",
+   "com ele mesmo, que corre"
+  ],
+  "nota": "tali confidentia: ablativo, «por meio de tal confiança», com tali concordando com confidentia. Virgo virginum e Mater são vocativos (quem é chamada).",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Memorare",
+  "de": "la-t131",
+  "requerTodas": [],
+  "conjunto": "q-t131"
+ },
+ {
+  "id": "la-qt133a",
+  "tipo": "compreensao",
+  "la": "Noli, Mater Verbi, verba mea despicere",
+  "pergunta": "De quem é Mãe aquela a quem o orante se dirige?",
+  "pt": "do Verbo",
+  "aceitas": [
+   "do Verbo."
+  ],
+  "distratores": [
+   "das minhas palavras",
+   "do orante",
+   "das virgens",
+   "do desprezo"
+  ],
+  "nota": "Verbi é genitivo singular, «de quem é mãe: do Verbo». Mater é vocativo (quem é chamada); verba mea é acusativo, o que se pede para não desprezar.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Memorare",
+  "de": "la-t133",
+  "requerTodas": [],
+  "conjunto": "q-t133"
+ },
+ {
+  "id": "la-qt133b",
+  "tipo": "compreensao",
+  "la": "Noli, Mater Verbi, verba mea despicere",
+  "pergunta": "O que a Mãe não deve desprezar?",
+  "pt": "as minhas palavras",
+  "aceitas": [
+   "as minhas palavras."
+  ],
+  "distratores": [
+   "o Verbo",
+   "a própria Mãe",
+   "as palavras do Verbo",
+   "o orante"
+  ],
+  "nota": "verba é acusativo plural, objeto de despicere, e mea concorda com ele. Verbi é genitivo: «do Verbo», complemento de Mater.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Memorare",
+  "de": "la-t133",
+  "requerTodas": [],
+  "conjunto": "q-t133"
+ },
+ {
+  "id": "la-qt135a",
+  "tipo": "compreensao",
+  "la": "Alma Redemptoris Mater, quae pervia caeli porta manes",
+  "pergunta": "De quem é Mãe aquela a quem se dirige a oração?",
+  "pt": "do Redentor",
+  "aceitas": [
+   "do Redentor."
+  ],
+  "distratores": [
+   "do céu",
+   "da porta",
+   "dos pecadores",
+   "de quem reza"
+  ],
+  "nota": "Redemptoris é genitivo singular: «do Redentor», complemento de Mater. Caeli, também genitivo, depende de porta.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Alma Redemptoris Mater",
+  "de": "la-t135",
+  "requerTodas": [],
+  "conjunto": "q-t135"
+ },
+ {
+  "id": "la-qt135b",
+  "tipo": "compreensao",
+  "la": "Alma Redemptoris Mater, quae pervia caeli porta manes",
+  "pergunta": "De que é porta aquela a quem se dirige a oração?",
+  "pt": "do céu",
+  "aceitas": [
+   "do céu."
+  ],
+  "distratores": [
+   "do Redentor",
+   "da Mãe",
+   "do povo",
+   "de quem reza"
+  ],
+  "nota": "caeli é genitivo e completa porta: «porta do céu». Redemptoris completa Mater, e não porta.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Alma Redemptoris Mater",
+  "de": "la-t135",
+  "requerTodas": [],
+  "conjunto": "q-t135"
+ },
+ {
+  "id": "la-qt136a",
+  "tipo": "compreensao",
+  "la": "Alma Redemptoris Mater … et stella maris, succurre cadenti",
+  "pergunta": "Quem se pede que seja socorrido?",
+  "pt": "o que cai",
+  "aceitas": [
+   "o que cai."
+  ],
+  "distratores": [
+   "a estrela do mar",
+   "o Redentor",
+   "a Mãe",
+   "o mar"
+  ],
+  "nota": "cadenti é particípio presente no dativo: «a quem socorre». Stella maris, nominativo, é a própria Mãe invocada, e Redemptoris é genitivo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Alma Redemptoris Mater",
+  "de": "la-t136",
+  "requerTodas": [],
+  "conjunto": "q-t136"
+ },
+ {
+  "id": "la-qt137a",
+  "tipo": "compreensao",
+  "la": "succurre cadenti, surgere qui curat, populo:",
+  "pergunta": "Quem procura levantar-se?",
+  "pt": "o povo que cai",
+  "aceitas": [
+   "o povo que cai."
+  ],
+  "distratores": [
+   "a Mãe, que socorre",
+   "a estrela do mar",
+   "o Redentor",
+   "o que socorre"
+  ],
+  "nota": "qui (nominativo) é o sujeito de curat e retoma populo, o povo que cai (cadenti). A Mãe é quem socorre, no vocativo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Alma Redemptoris Mater",
+  "de": "la-t137",
+  "requerTodas": [],
+  "conjunto": "q-t137"
+ },
+ {
+  "id": "la-qt138a",
+  "tipo": "compreensao",
+  "la": "tu quae genuisti, natura mirante, tuum sanctum Genitorem",
+  "pergunta": "Quem se admira?",
+  "pt": "a natureza",
+  "aceitas": [
+   "a natureza."
+  ],
+  "distratores": [
+   "o teu santo Gerador",
+   "tu, que geraste",
+   "os pecadores",
+   "o povo"
+  ],
+  "nota": "natura mirante é um ablativo absoluto: natura (ablativo) é o sujeito do particípio mirante, «admirando-se a natureza».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Alma Redemptoris Mater",
+  "de": "la-t138",
+  "requerTodas": [],
+  "conjunto": "q-t138"
+ },
+ {
+  "id": "la-qt138b",
+  "tipo": "compreensao",
+  "la": "tu quae genuisti, natura mirante, tuum sanctum Genitorem",
+  "pergunta": "Quem foi gerado por aquela a quem se fala?",
+  "pt": "o teu santo Gerador",
+  "aceitas": [
+   "o teu santo Gerador."
+  ],
+  "distratores": [
+   "a própria natureza",
+   "ela mesma, a Virgem",
+   "o povo que cai",
+   "o anjo Gabriel"
+  ],
+  "nota": "Genitorem é acusativo, objeto de genuisti; tuum e sanctum concordam com ele. Natura está no ablativo absoluto e não é objeto.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Alma Redemptoris Mater",
+  "de": "la-t138",
+  "requerTodas": [],
+  "conjunto": "q-t138"
+ },
+ {
+  "id": "la-qt139a",
+  "tipo": "compreensao",
+  "la": "Virgo prius ac posterius, Gabrielis ab ore sumens illud Ave",
+  "pergunta": "De quem é a boca de onde se recebeu o Ave?",
+  "pt": "de Gabriel",
+  "aceitas": [
+   "de Gabriel."
+  ],
+  "distratores": [
+   "da Virgem",
+   "do Redentor",
+   "do Gerador",
+   "do povo"
+  ],
+  "nota": "Gabrielis é genitivo singular, complemento de ore: «da boca de Gabriel». Virgo é vocativo, a quem se fala; é ela que recebe (sumens).",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Alma Redemptoris Mater",
+  "de": "la-t139",
+  "requerTodas": [],
+  "conjunto": "q-t139"
+ },
+ {
+  "id": "la-qt140a",
+  "tipo": "compreensao",
+  "la": "sumens illud Ave, peccatorum miserere.",
+  "pergunta": "De quem se pede que ela tenha piedade?",
+  "pt": "dos pecadores",
+  "aceitas": [
+   "dos pecadores."
+  ],
+  "distratores": [
+   "do Ave",
+   "da Virgem",
+   "de Gabriel",
+   "do que recebe"
+  ],
+  "nota": "Misereor rege o genitivo: peccatorum, «dos pecadores». Illud Ave é acusativo, objeto de sumens, e não de miserere.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Alma Redemptoris Mater",
+  "de": "la-t140",
+  "requerTodas": [],
+  "conjunto": "q-t140"
+ },
+ {
+  "id": "la-qt144a",
+  "tipo": "compreensao",
+  "la": "ex qua mundo lux est orta.",
+  "pergunta": "Para quem surgiu a luz?",
+  "pt": "para o mundo",
+  "aceitas": [
+   "para o mundo."
+  ],
+  "distratores": [
+   "para a porta",
+   "para a raiz",
+   "para si mesma",
+   "para a Virgem"
+  ],
+  "nota": "mundo é dativo singular: «para o mundo». Ex qua, no ablativo, diz de onde a luz surgiu: da porta.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ave, Regina caelorum",
+  "de": "la-t144",
+  "requerTodas": [],
+  "conjunto": "q-t144"
+ },
+ {
+  "id": "la-qt147a",
+  "tipo": "compreensao",
+  "la": "et pro nobis Christum exora.",
+  "pergunta": "A quem é dirigida a súplica?",
+  "pt": "a Cristo",
+  "aceitas": [
+   "a Cristo."
+  ],
+  "distratores": [
+   "a nós, os que pedem",
+   "à Virgem, que ouve",
+   "a si mesma",
+   "aos anjos"
+  ],
+  "nota": "Christum é acusativo, objeto de exora: a quem se suplica. Nobis, no ablativo depois de pro, é quem recebe o benefício: «por nós».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ave, Regina caelorum",
+  "de": "la-t147",
+  "requerTodas": [],
+  "conjunto": "q-t147"
+ },
+ {
+  "id": "la-qt148a",
+  "tipo": "compreensao",
+  "la": "Veni, Sancte Spiritus, reple tuorum corda fidelium",
+  "pergunta": "De quem são os corações que se pede encher?",
+  "pt": "dos fiéis do Espírito",
+  "aceitas": [
+   "dos fiéis do Espírito."
+  ],
+  "distratores": [
+   "do Espírito Santo",
+   "de quem fala",
+   "dos pecadores",
+   "dos anjos"
+  ],
+  "nota": "fidelium é genitivo plural, «dos fiéis», e tuorum concorda com ele: os fiéis são do Espírito. Corda, acusativo, é o que se enche.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Veni, Sancte Spiritus",
+  "de": "la-t148",
+  "requerTodas": [],
+  "conjunto": "q-t148"
+ },
+ {
+  "id": "la-qt149a",
+  "tipo": "compreensao",
+  "la": "et tui amoris in eis ignem accende.",
+  "pergunta": "De quem é o amor cujo fogo se pede?",
+  "pt": "do Espírito, a quem se fala",
+  "aceitas": [
+   "do Espírito, a quem se fala."
+  ],
+  "distratores": [
+   "dos fiéis que rezam",
+   "dos corações dos fiéis",
+   "de quem reza a oração",
+   "do fogo que se acende"
+  ],
+  "nota": "tui é genitivo singular de tu: «teu amor». O amor é daquele a quem se pede, o Espírito; ignem, acusativo, é o fogo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Veni, Sancte Spiritus",
+  "de": "la-t149",
+  "requerTodas": [],
+  "conjunto": "q-t149"
+ },
+ {
+  "id": "la-qt151a",
+  "tipo": "compreensao",
+  "la": "Et renovabis faciem terrae.",
+  "pergunta": "O que é renovado?",
+  "pt": "a face da terra",
+  "aceitas": [
+   "a face da terra."
+  ],
+  "distratores": [
+   "a terra da face",
+   "a face de quem fala",
+   "a face do Espírito",
+   "a terra e a face, duas coisas"
+  ],
+  "nota": "faciem é acusativo, objeto de renovabis; terrae é genitivo, «da terra». O genitivo não é o que se renova: completa faciem.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Veni, Sancte Spiritus",
+  "de": "la-t151",
+  "requerTodas": [],
+  "conjunto": "q-t151"
+ },
+ {
+  "id": "la-qt153a",
+  "tipo": "compreensao",
+  "la": "Deus, qui corda fidelium Sancti Spiritus illustratione docuisti",
+  "pergunta": "Por meio de que Deus instruiu os corações dos fiéis?",
+  "pt": "pela iluminação do Espírito Santo",
+  "aceitas": [
+   "pela iluminação do Espírito Santo."
+  ],
+  "distratores": [
+   "pelos corações dos fiéis",
+   "pela luz do próprio Deus",
+   "pelo Espírito Santo, que foi iluminado",
+   "pelos fiéis iluminados"
+  ],
+  "nota": "illustratione é ablativo: meio. Sancti Spiritus é genitivo (ele dá a iluminação), e corda fidelium é o que é instruído.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Veni, Sancte Spiritus",
+  "de": "la-t153",
+  "requerTodas": [],
+  "conjunto": "q-t153"
+ },
+ {
+  "id": "la-qt154a",
+  "tipo": "compreensao",
+  "la": "da nobis in eodem Spiritu recta sapere",
+  "pergunta": "O que o orante pede para saber?",
+  "pt": "as coisas retas",
+  "aceitas": [
+   "as coisas retas."
+  ],
+  "distratores": [
+   "o mesmo Espírito",
+   "a nós mesmos",
+   "as coisas dadas",
+   "o que damos"
+  ],
+  "nota": "recta (acusativo neutro plural) é objeto de sapere. Nobis é dativo, a quem se concede, e Spiritu, ablativo depois de in, é onde.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Veni, Sancte Spiritus",
+  "de": "la-t154",
+  "requerTodas": [],
+  "conjunto": "q-t154"
+ },
+ {
+  "id": "la-qt157a",
+  "tipo": "compreensao",
+  "la": "Credo in Deum, Patrem omnipotentem, Creatorem caeli et terrae.",
+  "pergunta": "De que é criador aquele em quem se crê?",
+  "pt": "do céu e da terra",
+  "aceitas": [
+   "do céu e da terra."
+  ],
+  "distratores": [
+   "do Pai, que é todo-poderoso",
+   "de Deus, que é o Pai",
+   "de quem crê, o fiel",
+   "do que é todo-poderoso"
+  ],
+  "nota": "caeli e terrae são genitivos que completam Creatorem: «criador do céu e da terra». Patrem e Creatorem são acusativos em aposto a Deum.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Credo dos Apóstolos",
+  "de": "la-t157",
+  "requerTodas": [],
+  "conjunto": "q-t157"
+ },
+ {
+  "id": "la-qt159a",
+  "tipo": "compreensao",
+  "la": "qui conceptus est de Spiritu Sancto, natus ex Maria Virgine",
+  "pergunta": "Por obra de quem foi concebido?",
+  "pt": "do Espírito Santo",
+  "aceitas": [
+   "do Espírito Santo."
+  ],
+  "distratores": [
+   "da Virgem Maria",
+   "de si mesmo",
+   "do Pai",
+   "do Filho"
+  ],
+  "nota": "De Spiritu Sancto: ablativo com de. Ex Maria Virgine, também ablativo, diz de quem nasceu, e não por obra de quem foi concebido.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Credo dos Apóstolos",
+  "de": "la-t159",
+  "requerTodas": [],
+  "conjunto": "q-t159"
+ },
+ {
+  "id": "la-qt159b",
+  "tipo": "compreensao",
+  "la": "qui conceptus est de Spiritu Sancto, natus ex Maria Virgine",
+  "pergunta": "De quem nasceu?",
+  "pt": "da Virgem Maria",
+  "aceitas": [
+   "da Virgem Maria."
+  ],
+  "distratores": [
+   "do Espírito Santo",
+   "de si mesmo",
+   "do Pai",
+   "de Pôncio Pilatos"
+  ],
+  "nota": "Ex Maria Virgine: ablativo depois de ex, «da Virgem Maria». O Espírito Santo, depois de de, está ligado a conceptus est.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Credo dos Apóstolos",
+  "de": "la-t159",
+  "requerTodas": [],
+  "conjunto": "q-t159"
+ },
+ {
+  "id": "la-qt161a",
+  "tipo": "compreensao",
+  "la": "descendit ad inferos, tertia die resurrexit a mortuis",
+  "pergunta": "De onde ele ressuscitou?",
+  "pt": "dentre os mortos",
+  "aceitas": [
+   "dentre os mortos."
+  ],
+  "distratores": [
+   "à mansão dos mortos",
+   "do terceiro dia",
+   "para os vivos",
+   "do céu"
+  ],
+  "nota": "A mortuis: ablativo depois de a, origem: «dentre os mortos». Ad inferos, com acusativo, é para onde desceu.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Credo dos Apóstolos",
+  "de": "la-t161",
+  "requerTodas": [],
+  "conjunto": "q-t161"
+ },
+ {
+  "id": "la-qt165a",
+  "tipo": "compreensao",
+  "la": "sanctam Ecclesiam catholicam, Sanctorum communionem",
+  "pergunta": "De quem é a comunhão de que se fala?",
+  "pt": "dos santos",
+  "aceitas": [
+   "dos santos."
+  ],
+  "distratores": [
+   "da Igreja católica",
+   "do Espírito Santo",
+   "de quem crê",
+   "dos que creem"
+  ],
+  "nota": "Sanctorum é genitivo plural, complemento de communionem: «comunhão dos santos». Ecclesiam é outro objeto de credo, e não possui a comunhão.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Credo dos Apóstolos",
+  "de": "la-t165",
+  "requerTodas": [],
+  "conjunto": "q-t165"
+ },
+ {
+  "id": "la-qt166a",
+  "tipo": "compreensao",
+  "la": "remissionem peccatorum, carnis resurrectionem, vitam aeternam. Amen.",
+  "pergunta": "De que é a ressurreição de que se fala?",
+  "pt": "da carne",
+  "aceitas": [
+   "da carne."
+  ],
+  "distratores": [
+   "dos pecados",
+   "da vida eterna",
+   "do perdão",
+   "do Espírito"
+  ],
+  "nota": "carnis é genitivo singular, complemento de resurrectionem: «ressurreição da carne». Peccatorum completa remissionem, e vitam aeternam é outro objeto.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Credo dos Apóstolos",
+  "de": "la-t166",
+  "requerTodas": [],
+  "conjunto": "q-t166"
+ },
+ {
+  "id": "la-qt182a",
+  "tipo": "compreensao",
+  "la": "Et iterum venturus est cum gloria, iudicare vivos et mortuos",
+  "pergunta": "Quem há de ser julgado?",
+  "pt": "os vivos e os mortos",
+  "aceitas": [
+   "os vivos e os mortos."
+  ],
+  "distratores": [
+   "aquele que há de vir com glória",
+   "a glória",
+   "somente os vivos",
+   "somente os mortos"
+  ],
+  "nota": "Vivos et mortuos são acusativos, objeto de iudicare: são julgados, não julgam. O sujeito de iudicare é o que há de vir.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Credo niceno-constantinopolitano",
+  "de": "la-t182",
+  "requerTodas": [],
+  "conjunto": "q-t182"
+ },
+ {
+  "id": "la-qt199a",
+  "tipo": "compreensao",
+  "la": "nil hoc verbo Veritatis verius.",
+  "pergunta": "Qual é o termo da comparação, aquilo do que nada é mais verdadeiro?",
+  "pt": "esta palavra da Verdade",
+  "aceitas": [
+   "esta palavra da Verdade."
+  ],
+  "distratores": [
+   "nada",
+   "a Verdade, sem a palavra",
+   "o que é mais verdadeiro",
+   "a palavra do Filho de Deus, sem a Verdade"
+  ],
+  "nota": "Hoc verbo (ablativo) é o termo da comparação, com Veritatis (genitivo): «esta palavra da Verdade». Nil, nominativo, é o sujeito.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Adoro te devote (Santo Tomás de Aquino)",
+  "de": "la-t199",
+  "requerTodas": [],
+  "conjunto": "q-t199"
+ },
+ {
+  "id": "la-qt206a",
+  "tipo": "compreensao",
+  "la": "fac me tibi semper magis credere",
+  "pergunta": "Quem deve crer em quem?",
+  "pt": "eu em ti",
+  "aceitas": [
+   "eu em ti."
+  ],
+  "distratores": [
+   "tu em mim",
+   "eu em mim",
+   "tu em ti",
+   "ele em ti"
+  ],
+  "nota": "Me (acusativo) é o sujeito de credere: «eu creia»; tibi (dativo) é aquele em quem se crê: «em ti». Fac é só o «faze».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Adoro te devote (Santo Tomás de Aquino)",
+  "de": "la-t206",
+  "requerTodas": [],
+  "conjunto": "q-t206"
+ },
+ {
+  "id": "la-qt214a",
+  "tipo": "compreensao",
+  "la": "cuius una stilla salvum facere totum mundum quit ab omni scelere.",
+  "pergunta": "Quem ou o que pode ser salvo?",
+  "pt": "o mundo inteiro",
+  "aceitas": [
+   "o mundo inteiro."
+  ],
+  "distratores": [
+   "a gota",
+   "o crime",
+   "uma só gota do sangue",
+   "aquele de quem se fala"
+  ],
+  "nota": "Totum mundum é acusativo, objeto de facere: é salvo. Stilla, nominativo, é o sujeito de quit: é ela que pode.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Adoro te devote (Santo Tomás de Aquino)",
+  "de": "la-t214",
+  "requerTodas": [],
+  "conjunto": "q-t214"
+ },
+ {
+  "id": "la-qt218a",
+  "tipo": "compreensao",
+  "la": "Pange, lingua, gloriosi corporis mysterium",
+  "pergunta": "A quem se dirige a ordem «Pange»?",
+  "pt": "à língua",
+  "aceitas": [
+   "à língua."
+  ],
+  "distratores": [
+   "ao mistério",
+   "ao glorioso corpo",
+   "ao Rei",
+   "a quem canta o corpo"
+  ],
+  "nota": "Lingua está no vocativo (a quem se fala); mysterium é acusativo, o que se canta; corporis é genitivo, do corpo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t218",
+  "requerTodas": [],
+  "conjunto": "q-t218"
+ },
+ {
+  "id": "la-qt219a",
+  "tipo": "compreensao",
+  "la": "Sanguinisque pretiosi, quem in mundi pretium … rex effudit gentium.",
+  "pergunta": "Quem derramou o sangue?",
+  "pt": "o Rei das nações",
+  "aceitas": [
+   "o Rei das nações."
+  ],
+  "distratores": [
+   "as nações",
+   "o mundo",
+   "o preço do mundo",
+   "o próprio sangue"
+  ],
+  "nota": "Rex é nominativo, o sujeito de effudit. Gentium e mundi são genitivos (das nações, do mundo); quem é o objeto.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t219",
+  "requerTodas": [],
+  "conjunto": "q-t219"
+ },
+ {
+  "id": "la-qt220a",
+  "tipo": "compreensao",
+  "la": "fructus ventris generosi rex effudit gentium.",
+  "pergunta": "Rei de quem?",
+  "pt": "das nações",
+  "aceitas": [
+   "das nações."
+  ],
+  "distratores": [
+   "do ventre",
+   "do fruto",
+   "do ventre nobre",
+   "do sangue"
+  ],
+  "nota": "Gentium é genitivo plural: de quem? das nações. Ventris, também genitivo, é do fruto («fruto do ventre»).",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t220",
+  "requerTodas": [],
+  "conjunto": "q-t220"
+ },
+ {
+  "id": "la-qt222a",
+  "tipo": "compreensao",
+  "la": "et in mundo conversatus … sui moras incolatus miro clausit ordine.",
+  "pergunta": "O que ele encerrou com admirável ordem?",
+  "pt": "o tempo da sua estada",
+  "aceitas": [
+   "o tempo da sua estada."
+  ],
+  "distratores": [
+   "a ordem da sua estada",
+   "o tempo do mundo",
+   "o mundo da sua estada",
+   "a admirável estada do tempo"
+  ],
+  "nota": "Moras é acusativo plural, o objeto de clausit; incolatus é genitivo (da estada); ordine é ablativo (com ordem), e miro concorda com ele.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t222",
+  "requerTodas": [],
+  "conjunto": "q-t222"
+ },
+ {
+  "id": "la-qt223a",
+  "tipo": "compreensao",
+  "la": "sparso verbi semine, sui moras incolatus miro clausit ordine.",
+  "pergunta": "O que foi espalhado?",
+  "pt": "a semente da palavra",
+  "aceitas": [
+   "a semente da palavra."
+  ],
+  "distratores": [
+   "a palavra da semente",
+   "o tempo da estada",
+   "a admirável ordem",
+   "a estada do tempo"
+  ],
+  "nota": "Semine é o ablativo do ablativo absoluto (a semente); verbi é genitivo (da palavra). Sparso, particípio, concorda com semine.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t223",
+  "requerTodas": [],
+  "conjunto": "q-t223"
+ },
+ {
+  "id": "la-qt224a",
+  "tipo": "compreensao",
+  "la": "In supremae nocte cenae recumbens cum fratribus",
+  "pergunta": "Que noite é essa?",
+  "pt": "a noite da última ceia",
+  "aceitas": [
+   "a noite da última ceia."
+  ],
+  "distratores": [
+   "a última noite da ceia",
+   "a noite da ceia dos irmãos",
+   "a última ceia da noite",
+   "a noite dos irmãos"
+  ],
+  "nota": "Supremae concorda com cenae (genitivo feminino): a última ceia. Nocte é ablativo e não combina com ele; fratribus vem com cum.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t224",
+  "requerTodas": [],
+  "conjunto": "q-t224"
+ },
+ {
+  "id": "la-qt225a",
+  "tipo": "compreensao",
+  "la": "observata lege plene cibis in legalibus",
+  "pergunta": "O que foi observado plenamente?",
+  "pt": "a lei",
+  "aceitas": [
+   "a lei."
+  ],
+  "distratores": [
+   "os alimentos",
+   "a ceia",
+   "a lei dos alimentos",
+   "os irmãos"
+  ],
+  "nota": "Observata é feminino singular e concorda com lege (ablativo absoluto). Cibis e legalibus são masculinos plurais: não combinam com ele.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t225",
+  "requerTodas": [],
+  "conjunto": "q-t225"
+ },
+ {
+  "id": "la-qt226a",
+  "tipo": "compreensao",
+  "la": "cibum turbae duodenae se dat suis manibus.",
+  "pergunta": "Por meio de que ele se dá?",
+  "pt": "com as suas mãos",
+  "aceitas": [
+   "com as suas mãos."
+  ],
+  "distratores": [
+   "com a multidão dos doze",
+   "com o alimento",
+   "com os doze irmãos",
+   "com as mãos da multidão"
+  ],
+  "nota": "Manibus é ablativo (meio), com suis. Turbae é dativo (a quem), não meio; cibum é o acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t226",
+  "requerTodas": [],
+  "conjunto": "q-t226"
+ },
+ {
+  "id": "la-qt227a",
+  "tipo": "compreensao",
+  "la": "Verbum caro, panem verum verbo carnem efficit:",
+  "pergunta": "Quem transforma o pão?",
+  "pt": "o Verbo feito carne",
+  "aceitas": [
+   "o Verbo feito carne."
+  ],
+  "distratores": [
+   "a palavra",
+   "o pão verdadeiro",
+   "a carne",
+   "a carne verdadeira"
+  ],
+  "nota": "Verbum caro está no nominativo: é o sujeito. Verbo, ablativo, é o meio (pela palavra); panem e carnem são acusativos.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t227",
+  "requerTodas": [],
+  "conjunto": "q-t227"
+ },
+ {
+  "id": "la-qt228a",
+  "tipo": "compreensao",
+  "la": "fitque sanguis Christi merum",
+  "pergunta": "O que se torna puro vinho?",
+  "pt": "o sangue de Cristo",
+  "aceitas": [
+   "o sangue de Cristo."
+  ],
+  "distratores": [
+   "o vinho de Cristo",
+   "o sangue do vinho",
+   "Cristo",
+   "o puro sangue"
+  ],
+  "nota": "Sanguis é o nominativo, o sujeito; Christi é genitivo (de Cristo). Merum, também nominativo, é o predicativo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t228",
+  "requerTodas": [],
+  "conjunto": "q-t228"
+ },
+ {
+  "id": "la-qt230a",
+  "tipo": "compreensao",
+  "la": "ad firmandum cor sincerum sola fides sufficit.",
+  "pergunta": "O que é fortalecido?",
+  "pt": "o coração sincero",
+  "aceitas": [
+   "o coração sincero."
+  ],
+  "distratores": [
+   "a fé sincera",
+   "o coração sozinho",
+   "a fé do coração",
+   "a fé sozinha"
+  ],
+  "nota": "Cor sincerum está no acusativo, o objeto de firmandum. Sola concorda com fides (nominativo): a fé é quem basta, sozinha.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t230",
+  "requerTodas": [],
+  "conjunto": "q-t230"
+ },
+ {
+  "id": "la-qt231a",
+  "tipo": "compreensao",
+  "la": "Tantum ergo Sacramentum veneremur cernui:",
+  "pergunta": "Quem venera de cabeça baixa?",
+  "pt": "nós",
+  "aceitas": [
+   "nós."
+  ],
+  "distratores": [
+   "o Sacramento",
+   "ele",
+   "vós",
+   "eles"
+  ],
+  "nota": "Veneremur está na 1ª pessoa do plural e cernui concorda com ela (nominativo plural). Sacramentum, no acusativo, é o que se venera.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t231",
+  "requerTodas": [],
+  "conjunto": "q-t231"
+ },
+ {
+  "id": "la-qt232a",
+  "tipo": "compreensao",
+  "la": "et antiquum documentum novo cedat ritui:",
+  "pergunta": "A que o antigo documento deve ceder?",
+  "pt": "ao novo rito",
+  "aceitas": [
+   "ao novo rito."
+  ],
+  "distratores": [
+   "ao documento novo",
+   "ao antigo rito",
+   "do novo rito",
+   "o novo rito"
+  ],
+  "nota": "Ritui é dativo (a quem), com novo; documentum é o sujeito (nominativo), com antiquum.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t232",
+  "requerTodas": [],
+  "conjunto": "q-t232"
+ },
+ {
+  "id": "la-qt233a",
+  "tipo": "compreensao",
+  "la": "praestet fides supplementum sensuum defectui.",
+  "pergunta": "De quem é a falha?",
+  "pt": "dos sentidos",
+  "aceitas": [
+   "dos sentidos."
+  ],
+  "distratores": [
+   "da fé",
+   "do complemento",
+   "da própria falha",
+   "dos sentidos e da fé"
+  ],
+  "nota": "Sensuum é genitivo plural: de quem? dos sentidos. Defectui é o dativo, a falha.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t233",
+  "requerTodas": [],
+  "conjunto": "q-t233"
+ },
+ {
+  "id": "la-qt234a",
+  "tipo": "compreensao",
+  "la": "Genitori, Genitoque laus et iubilatio",
+  "pergunta": "Para quem vão o louvor e o júbilo?",
+  "pt": "ao Genitor e ao Gerado",
+  "aceitas": [
+   "ao Genitor e ao Gerado."
+  ],
+  "distratores": [
+   "do Genitor e do Gerado",
+   "pelo Genitor e pelo Gerado",
+   "o Genitor e o Gerado",
+   "ao louvor e ao júbilo"
+  ],
+  "nota": "Genitori e Genito(que) estão no dativo: a quem. Laus e iubilatio são nominativos: o que se deseja.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t234",
+  "requerTodas": [],
+  "conjunto": "q-t234"
+ },
+ {
+  "id": "la-qt236a",
+  "tipo": "compreensao",
+  "la": "procedenti ab utroque compar sit laudatio.",
+  "pergunta": "A quem é dado o louvor igual?",
+  "pt": "àquele que procede de ambos",
+  "aceitas": [
+   "àquele que procede de ambos."
+  ],
+  "distratores": [
+   "daquele que procede de ambos",
+   "àquele de quem procedem ambos",
+   "àquele que procede do louvor",
+   "ao louvor de ambos"
+  ],
+  "nota": "Procedenti está no dativo (a quem); ab utroque, no ablativo, diz de onde ele procede.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Pange lingua (Santo Tomás de Aquino)",
+  "de": "la-t236",
+  "requerTodas": [],
+  "conjunto": "q-t236"
+ },
+ {
+  "id": "la-qt238a",
+  "tipo": "compreensao",
+  "la": "et omnes reges servient ei et oboedient.",
+  "pergunta": "A quem os reis servirão?",
+  "pt": "a ele",
+  "aceitas": [
+   "a ele."
+  ],
+  "distratores": [
+   "a todos os reis",
+   "a eles",
+   "a si mesmos",
+   "ao reino"
+  ],
+  "nota": "Ei é dativo singular, a quem se serve e se obedece; reges é o sujeito (nominativo plural).",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t238",
+  "requerTodas": [],
+  "conjunto": "q-t238"
+ },
+ {
+  "id": "la-qt239a",
+  "tipo": "compreensao",
+  "la": "Quare fremuerunt gentes, et populi meditati sunt inania?",
+  "pergunta": "Quem meditou coisas vãs?",
+  "pt": "os povos",
+  "aceitas": [
+   "os povos."
+  ],
+  "distratores": [
+   "as nações",
+   "as coisas vãs",
+   "os povos e as nações",
+   "ninguém"
+  ],
+  "nota": "Populi é o nominativo plural, sujeito de meditati sunt; gentes é sujeito de fremuerunt; inania, acusativo, é o que se medita.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t239",
+  "requerTodas": [],
+  "conjunto": "q-t239"
+ },
+ {
+  "id": "la-qt240a",
+  "tipo": "compreensao",
+  "la": "Astiterunt reges terrae, et principes convenerunt in unum",
+  "pergunta": "Quem se levantou?",
+  "pt": "os reis da terra",
+  "aceitas": [
+   "os reis da terra."
+  ],
+  "distratores": [
+   "os príncipes",
+   "a terra",
+   "os reis e os príncipes",
+   "a terra dos reis"
+  ],
+  "nota": "Reges é o sujeito de astiterunt (nominativo); terrae, genitivo, diz de quê (da terra). Os príncipes são o sujeito de convenerunt.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t240",
+  "requerTodas": [],
+  "conjunto": "q-t240"
+ },
+ {
+  "id": "la-qt242a",
+  "tipo": "compreensao",
+  "la": "Dirumpamus vincula eorum et proiciamus a nobis iugum ipsorum!",
+  "pergunta": "De quem são os laços que se querem romper?",
+  "pt": "deles",
+  "aceitas": [
+   "deles."
+  ],
+  "distratores": [
+   "nossos",
+   "do jugo",
+   "de ninguém",
+   "de nós mesmos"
+  ],
+  "nota": "Eorum é genitivo plural: de quem? deles. Nobis, ablativo depois de a, é «de nós»: de onde se lança o jugo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t242",
+  "requerTodas": [],
+  "conjunto": "q-t242"
+ },
+ {
+  "id": "la-qt243a",
+  "tipo": "compreensao",
+  "la": "Qui habitat in caelis, irridebit eos, Dominus subsannabit eos.",
+  "pergunta": "Quem é alvo da zombaria?",
+  "pt": "eles",
+  "aceitas": [
+   "eles."
+  ],
+  "distratores": [
+   "o Senhor",
+   "aquele que habita nos céus",
+   "os céus",
+   "ele"
+  ],
+  "nota": "Eos é acusativo plural, o objeto dos dois verbos. Qui e Dominus são nominativos: quem zomba.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t243",
+  "requerTodas": [],
+  "conjunto": "q-t243"
+ },
+ {
+  "id": "la-qt244a",
+  "tipo": "compreensao",
+  "la": "Tunc loquetur ad eos in ira sua",
+  "pergunta": "A quem ele falará?",
+  "pt": "a eles",
+  "aceitas": [
+   "a eles."
+  ],
+  "distratores": [
+   "a ele",
+   "à ira",
+   "dela",
+   "à sua ira"
+  ],
+  "nota": "Eos, depois de ad, é acusativo plural: a eles. Ira, no ablativo, é o modo (em sua ira).",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t244",
+  "requerTodas": [],
+  "conjunto": "q-t244"
+ },
+ {
+  "id": "la-qt245a",
+  "tipo": "compreensao",
+  "la": "et in furore suo conturbabit eos:",
+  "pergunta": "Quem será perturbado?",
+  "pt": "eles",
+  "aceitas": [
+   "eles."
+  ],
+  "distratores": [
+   "ele",
+   "o furor",
+   "a ira",
+   "o Senhor"
+  ],
+  "nota": "Eos é acusativo plural, o objeto de conturbabit; furore, ablativo, é o modo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t245",
+  "requerTodas": [],
+  "conjunto": "q-t245"
+ },
+ {
+  "id": "la-qt246a",
+  "tipo": "compreensao",
+  "la": "Ego autem constitui regem meum super Sion, montem sanctum meum!",
+  "pergunta": "Quem foi posto sobre Sião?",
+  "pt": "o meu rei",
+  "aceitas": [
+   "o meu rei."
+  ],
+  "distratores": [
+   "eu",
+   "o meu santo monte",
+   "Sião",
+   "o rei do meu monte"
+  ],
+  "nota": "Regem meum é acusativo, objeto de constitui; ego, nominativo, é quem o pôs. Montem é aposto de Sion, não o rei.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t246",
+  "requerTodas": [],
+  "conjunto": "q-t246"
+ },
+ {
+  "id": "la-qt250a",
+  "tipo": "compreensao",
+  "la": "ego hodie genui te.",
+  "pergunta": "Quem foi gerado?",
+  "pt": "tu",
+  "aceitas": [
+   "tu."
+  ],
+  "distratores": [
+   "eu",
+   "ele",
+   "nós",
+   "os dias"
+  ],
+  "nota": "Te é acusativo: o objeto de genui, quem foi gerado. Ego, nominativo, é quem gera.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t250",
+  "requerTodas": [],
+  "conjunto": "q-t250"
+ },
+ {
+  "id": "la-qt251a",
+  "tipo": "compreensao",
+  "la": "Postula a me, et dabo tibi gentes hereditatem tuam",
+  "pergunta": "A quem serão dadas as nações?",
+  "pt": "a ti",
+  "aceitas": [
+   "a ti."
+  ],
+  "distratores": [
+   "a mim",
+   "às nações",
+   "à herança",
+   "a ele"
+  ],
+  "nota": "Tibi é dativo: a quem se dá. Gentes é acusativo, o que se dá; a me, com a e ablativo, é «de mim», de quem se pede.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t251",
+  "requerTodas": [],
+  "conjunto": "q-t251"
+ },
+ {
+  "id": "la-qt252a",
+  "tipo": "compreensao",
+  "la": "dabo tibi gentes hereditatem tuam … et possessionem tuam terminos terrae.",
+  "pergunta": "Os confins de quê?",
+  "pt": "da terra",
+  "aceitas": [
+   "da terra."
+  ],
+  "distratores": [
+   "das nações",
+   "da herança",
+   "de ti",
+   "do tempo"
+  ],
+  "nota": "Terrae é genitivo singular: de quê? da terra. Terminos é o acusativo plural, o que se dá.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t252",
+  "requerTodas": [],
+  "conjunto": "q-t252"
+ },
+ {
+  "id": "la-qt253a",
+  "tipo": "compreensao",
+  "la": "Reges eos in virga ferrea",
+  "pergunta": "Quem é regido?",
+  "pt": "eles",
+  "aceitas": [
+   "eles."
+  ],
+  "distratores": [
+   "tu",
+   "os reis",
+   "a vara",
+   "o ferro"
+  ],
+  "nota": "Eos é acusativo plural, o objeto de reges. Reges aqui é verbo (futuro), e não «os reis».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t253",
+  "requerTodas": [],
+  "conjunto": "q-t253"
+ },
+ {
+  "id": "la-qt254a",
+  "tipo": "compreensao",
+  "la": "et tamquam vas figuli confringes eos",
+  "pergunta": "De quem é o vaso?",
+  "pt": "do oleiro",
+  "aceitas": [
+   "do oleiro."
+  ],
+  "distratores": [
+   "deles",
+   "de ti",
+   "do ferro",
+   "dos reis"
+  ],
+  "nota": "Figuli é genitivo singular: de quem? do oleiro. Vas é o acusativo, o termo de comparação, e eos, o objeto.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t254",
+  "requerTodas": [],
+  "conjunto": "q-t254"
+ },
+ {
+  "id": "la-qt255a",
+  "tipo": "compreensao",
+  "la": "Et nunc, reges, intellegite; erudimini, qui iudicatis terram.",
+  "pergunta": "A quem se dirige o apelo?",
+  "pt": "aos reis",
+  "aceitas": [
+   "aos reis."
+  ],
+  "distratores": [
+   "à terra",
+   "aos povos",
+   "às nações",
+   "a cada nação"
+  ],
+  "nota": "Reges está no vocativo plural: a quem se fala. Terram é acusativo, o que os reis julgam.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t255",
+  "requerTodas": [],
+  "conjunto": "q-t255"
+ },
+ {
+  "id": "la-qt258a",
+  "tipo": "compreensao",
+  "la": "et pereatis de via, cum exarserit in brevi ira eius.",
+  "pergunta": "O que se inflamará em pouco tempo?",
+  "pt": "a ira dele",
+  "aceitas": [
+   "a ira dele."
+  ],
+  "distratores": [
+   "o caminho",
+   "vós",
+   "ele",
+   "o tempo"
+  ],
+  "nota": "Ira é nominativo, o sujeito de exarserit; eius, genitivo, diz de quem é. Via é ablativo, depois de de.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t258",
+  "requerTodas": [],
+  "conjunto": "q-t258"
+ },
+ {
+  "id": "la-qt260a",
+  "tipo": "compreensao",
+  "la": "Gloria Patri.",
+  "pergunta": "A quem se dá a glória?",
+  "pt": "ao Pai",
+  "aceitas": [
+   "ao Pai."
+  ],
+  "distratores": [
+   "do Pai",
+   "aos pais",
+   "pelo Pai",
+   "com o Pai"
+  ],
+  "nota": "Patri é dativo singular: a quem se dá a glória. O genitivo seria Patris; o plural, patribus.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t260",
+  "requerTodas": [],
+  "conjunto": "q-t260"
+ },
+ {
+  "id": "la-qt262a",
+  "tipo": "compreensao",
+  "la": "Et clamor meus ad te veniat.",
+  "pergunta": "Quem chega até quem?",
+  "pt": "o meu clamor chega até ti",
+  "aceitas": [
+   "o meu clamor chega até ti."
+  ],
+  "distratores": [
+   "tu chegas até o meu clamor",
+   "eu chego até ti",
+   "o meu clamor chega até mim",
+   "os meus clamores chegam até mim"
+  ],
+  "nota": "clamor meus é nominativo (sujeito de veniat); te, depois de ad, é acusativo: o ponto de chegada.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t262",
+  "requerTodas": [],
+  "conjunto": "q-t262"
+ },
+ {
+  "id": "la-qt264a",
+  "tipo": "compreensao",
+  "la": "qui in dilecto Filio tuo, universorum Rege … omnia instaurare voluisti",
+  "pergunta": "A quem se refere «Rei de todos»?",
+  "pt": "ao amado Filho",
+  "aceitas": [
+   "ao amado Filho."
+  ],
+  "distratores": [
+   "ao Pai, que quis restaurar",
+   "a todas as coisas",
+   "ao orante, que fala",
+   "a todos os reis"
+  ],
+  "nota": "Rege é ablativo, como Filio: aposto dele. O sujeito de voluisti é qui; todas as coisas (omnia) são o objeto.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t264",
+  "requerTodas": [],
+  "conjunto": "q-t264"
+ },
+ {
+  "id": "la-qt266a",
+  "tipo": "compreensao",
+  "la": "ut cuncta familia Gentium, peccati vulnere disgregata … eius suavissimo subdantur Imperio:",
+  "pergunta": "Pelo que a família das Nações está dispersa?",
+  "pt": "pela ferida do pecado",
+  "aceitas": [
+   "pela ferida do pecado."
+  ],
+  "distratores": [
+   "pelo suavíssimo Império",
+   "pela família do pecado",
+   "pelas Nações feridas",
+   "pelo Império do pecado"
+  ],
+  "nota": "vulnere (ablativo, causa) com peccati (genitivo): «pela ferida do pecado». A família é o sujeito (nominativo), não a causa.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t266",
+  "requerTodas": [],
+  "conjunto": "q-t266"
+ },
+ {
+  "id": "la-qt266b",
+  "tipo": "compreensao",
+  "la": "ut cuncta familia Gentium, peccati vulnere disgregata … eius suavissimo subdantur Imperio:",
+  "pergunta": "A quem a família das Nações é submetida?",
+  "pt": "ao seu suavíssimo Império",
+  "aceitas": [
+   "ao seu suavíssimo Império."
+  ],
+  "distratores": [
+   "à ferida do pecado",
+   "às Nações dispersas",
+   "ao pecado dos povos",
+   "à sua própria família"
+  ],
+  "nota": "Imperio é dativo, com suavissimo e eius: «ao seu suavíssimo Império». A ferida é a causa da dispersão.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t266",
+  "requerTodas": [],
+  "conjunto": "q-t266"
+ },
+ {
+  "id": "la-qt267a",
+  "tipo": "compreensao",
+  "la": "Qui tecum vivit et regnat in unitate Spiritus Sancti Deus:",
+  "pergunta": "De quem é a unidade em que se reina?",
+  "pt": "do Espírito Santo",
+  "aceitas": [
+   "do Espírito Santo."
+  ],
+  "distratores": [
+   "de Deus, que vive e reina",
+   "de ti, com quem vive",
+   "de quem fala",
+   "dos que reinam"
+  ],
+  "nota": "Spiritus Sancti é genitivo: «unidade do Espírito Santo». Deus, nominativo, é aposto de Qui e não leva o genitivo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sl 2, com antífona e oração",
+  "de": "la-t267",
+  "requerTodas": [],
+  "conjunto": "q-t267"
+ },
+ {
+  "id": "la-qt269a",
+  "tipo": "compreensao",
+  "la": "Ne recorderis peccata mea, Domine, dum veneris iudicare saeculum per ignem.",
+  "pergunta": "Quem julgará, e quem será julgado?",
+  "pt": "o Senhor julga; o mundo é julgado",
+  "aceitas": [
+   "o Senhor julga; o mundo é julgado."
+  ],
+  "distratores": [
+   "o mundo julga; o Senhor é julgado",
+   "eu julgo o mundo",
+   "o fogo julga os pecados",
+   "os pecados julgam o mundo"
+  ],
+  "nota": "veneris é 2ª pessoa (tu, o Senhor) e saeculum é acusativo, objeto de iudicare: o mundo é julgado, e não julga.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t269",
+  "requerTodas": [],
+  "conjunto": "q-t269"
+ },
+ {
+  "id": "la-qt270a",
+  "tipo": "compreensao",
+  "la": "Dirige, Domine Deus meus, in conspectu tuo viam meam",
+  "pergunta": "De quem é o caminho, e de quem é a presença?",
+  "pt": "o caminho é de quem reza; a presença é de Deus",
+  "aceitas": [
+   "o caminho é de quem reza; a presença é de Deus."
+  ],
+  "distratores": [
+   "o caminho é de Deus; a presença é de quem reza",
+   "ambos são de quem reza",
+   "ambos são de Deus",
+   "o caminho é de quem reza; a presença é de outra pessoa"
+  ],
+  "nota": "meam concorda com viam (o meu caminho) e tuo com conspectu (a tua presença): o possessivo diz de quem é cada um.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t270",
+  "requerTodas": [],
+  "conjunto": "q-t270"
+ },
+ {
+  "id": "la-qt272a",
+  "tipo": "compreensao",
+  "la": "Requiem aeternam dona ei, Domine, et lux perpetua luceat ei",
+  "pergunta": "O que se pede a Deus que dê?",
+  "pt": "o descanso eterno",
+  "aceitas": [
+   "o descanso eterno."
+  ],
+  "distratores": [
+   "a luz perpétua",
+   "o Senhor",
+   "ele (o defunto)",
+   "o brilho eterno dele"
+  ],
+  "nota": "Requiem aeternam é acusativo: o que se dá. A luz perpétua é nominativo, sujeito de luceat; ei, dativo, é quem recebe.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t272",
+  "requerTodas": [],
+  "conjunto": "q-t272"
+ },
+ {
+  "id": "la-qt273a",
+  "tipo": "compreensao",
+  "la": "dum veneris iudicare saeculum per ignem.",
+  "pergunta": "Quem ou o quê é julgado, e com que meio?",
+  "pt": "o mundo é julgado, pelo fogo",
+  "aceitas": [
+   "o mundo é julgado, pelo fogo."
+  ],
+  "distratores": [
+   "o fogo é julgado pelo mundo",
+   "o mundo julga o fogo",
+   "quem vem é julgado pelo fogo",
+   "o Senhor é julgado pelo mundo"
+  ],
+  "nota": "saeculum é acusativo, objeto de iudicare; per ignem diz o meio. O sujeito de veneris é tu.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t273",
+  "requerTodas": [],
+  "conjunto": "q-t273"
+ },
+ {
+  "id": "la-qt275a",
+  "tipo": "compreensao",
+  "la": "Sed libera nos a malo.",
+  "pergunta": "Quem é livrado, e de quê?",
+  "pt": "nós, do mal",
+  "aceitas": [
+   "nós, do mal."
+  ],
+  "distratores": [
+   "o mal, de nós",
+   "nós, para o mal",
+   "o mal livra-nos, de nada",
+   "eu, do mal"
+  ],
+  "nota": "nos é acusativo (quem é livrado) e a malo é ablativo (de onde): o mal é de onde se livra, e não quem é livrado.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t275",
+  "requerTodas": [],
+  "conjunto": "q-t275"
+ },
+ {
+  "id": "la-qt276a",
+  "tipo": "compreensao",
+  "la": "A porta inferi erue, Domine, animam eius.",
+  "pergunta": "De quem é a alma que se pede que seja arrancada?",
+  "pt": "do defunto",
+  "aceitas": [
+   "do defunto."
+  ],
+  "distratores": [
+   "do inferno",
+   "da porta",
+   "do Senhor",
+   "de quem reza"
+  ],
+  "nota": "eius é genitivo: «dele». O inferno (inferi) é genitivo de porta: a porta é que é do inferno, não a alma.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t276",
+  "requerTodas": [],
+  "conjunto": "q-t276"
+ },
+ {
+  "id": "la-qt278a",
+  "tipo": "compreensao",
+  "la": "Dominus vobiscum.",
+  "pergunta": "Quem está com quem?",
+  "pt": "o Senhor, com vós",
+  "aceitas": [
+   "o Senhor, com vós."
+  ],
+  "distratores": [
+   "vós, com o Senhor",
+   "o Senhor, contigo",
+   "nós, com o Senhor",
+   "o Senhor, comigo"
+  ],
+  "nota": "Dominus é nominativo (quem está) e vobis, ablativo plural depois de cum (com quem): o Senhor está com vós.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t278",
+  "requerTodas": [],
+  "conjunto": "q-t278"
+ },
+ {
+  "id": "la-qt280a",
+  "tipo": "compreensao",
+  "la": "Absolve, quaesumus, Domine, famulum tuum ab omni vinculo delictorum",
+  "pergunta": "O vínculo de que se pede livrar o servo é vínculo de quê?",
+  "pt": "dos delitos",
+  "aceitas": [
+   "dos delitos."
+  ],
+  "distratores": [
+   "do servo",
+   "do Senhor",
+   "de todos os servos",
+   "dos que rogam"
+  ],
+  "nota": "delictorum é genitivo plural e depende de vinculo: «vínculo dos delitos». famulum é o objeto, acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t280",
+  "requerTodas": [],
+  "conjunto": "q-t280"
+ },
+ {
+  "id": "la-qt282a",
+  "tipo": "compreensao",
+  "la": "in resurrectionis gloria inter Sanctos tuos resuscitatus respiret.",
+  "pergunta": "De que é a glória em que se vive?",
+  "pt": "da ressurreição",
+  "aceitas": [
+   "da ressurreição."
+  ],
+  "distratores": [
+   "dos Santos",
+   "de Deus",
+   "do que respira",
+   "do ressuscitado"
+  ],
+  "nota": "resurrectionis é genitivo e depende de gloria: «a glória da ressurreição».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t282",
+  "requerTodas": [],
+  "conjunto": "q-t282"
+ },
+ {
+  "id": "la-qt285a",
+  "tipo": "compreensao",
+  "la": "animabus famulorum famularumque tuarum remissionem cunctorum tribue peccatorum;",
+  "pergunta": "A remissão é de quê?",
+  "pt": "de todos os pecados",
+  "aceitas": [
+   "de todos os pecados."
+  ],
+  "distratores": [
+   "das almas",
+   "dos teus servos",
+   "das tuas servas",
+   "do teu perdão"
+  ],
+  "nota": "peccatorum, genitivo (com cunctorum), depende de remissionem. Animabus é dativo: quem recebe.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t285",
+  "requerTodas": [],
+  "conjunto": "q-t285"
+ },
+ {
+  "id": "la-qt286a",
+  "tipo": "compreensao",
+  "la": "ut indulgentiam, quam semper optaverunt, piis supplicationibus consequantur.",
+  "pergunta": "Por meio de quê se alcança a indulgência?",
+  "pt": "por piedosas súplicas",
+  "aceitas": [
+   "por piedosas súplicas."
+  ],
+  "distratores": [
+   "pela indulgência que desejaram",
+   "pelos que sempre desejam",
+   "por quem as suplica",
+   "pelos piedosos"
+  ],
+  "nota": "piis supplicationibus é ablativo (meio), adjetivo e nome juntos; os piedosos não são o sujeito de optaverunt.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t286",
+  "requerTodas": [],
+  "conjunto": "q-t286"
+ },
+ {
+  "id": "la-qt287a",
+  "tipo": "compreensao",
+  "la": "Requiem aeternam dona ei, Domine.",
+  "pergunta": "A quem se dá o descanso?",
+  "pt": "ao defunto",
+  "aceitas": [
+   "ao defunto."
+  ],
+  "distratores": [
+   "ao Senhor",
+   "ao descanso",
+   "a nós",
+   "à luz"
+  ],
+  "nota": "ei é dativo: quem recebe. Domine é vocativo: a quem se fala, e não quem recebe.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t287",
+  "requerTodas": [],
+  "conjunto": "q-t287"
+ },
+ {
+  "id": "la-qt288a",
+  "tipo": "compreensao",
+  "la": "Et lux perpetua luceat ei.",
+  "pergunta": "O que brilha para ele?",
+  "pt": "a luz perpétua",
+  "aceitas": [
+   "a luz perpétua."
+  ],
+  "distratores": [
+   "ele mesmo",
+   "o descanso eterno",
+   "o Senhor",
+   "a luz de todos eles"
+  ],
+  "nota": "lux perpetua é nominativo: o sujeito de luceat. Ei, dativo, é para quem brilha.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t288",
+  "requerTodas": [],
+  "conjunto": "q-t288"
+ },
+ {
+  "id": "la-qt289a",
+  "tipo": "compreensao",
+  "la": "Anima eius et animae omnium fidelium defunctorum … requiescant",
+  "pergunta": "Quem deve descansar?",
+  "pt": "a alma dele e as de todos os fiéis defuntos",
+  "aceitas": [
+   "a alma dele e as de todos os fiéis defuntos."
+  ],
+  "distratores": [
+   "só a alma dele, e não as dos fiéis",
+   "só as almas dos fiéis, e não a dele",
+   "Deus, pela sua grande misericórdia",
+   "os fiéis defuntos, e não as suas almas"
+  ],
+  "nota": "Anima e animae são dois nominativos: os dois sujeitos de requiescant.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Responso pelos defuntos",
+  "de": "la-t289",
+  "requerTodas": [],
+  "conjunto": "q-t289"
  }
 ]

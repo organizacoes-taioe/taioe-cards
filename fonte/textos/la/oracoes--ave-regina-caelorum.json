@@ -1,0 +1,538 @@
+{
+ "id": "oracoes/ave-regina-caelorum",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Ave, Regina caelorum",
+ "autor": "Orações",
+ "ano": null,
+ "biblioteca": "/biblioteca/oracoes/ave-regina-caelorum/",
+ "ordem": 17,
+ "fonte": "Ave, Regina caelorum",
+ "blocos": [
+  [
+   {
+    "t": "Ave, Regina caelorum,",
+    "p": [
+     [
+      "Ave",
+      "ave"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Regina",
+      "regina"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "caelorum",
+      "caelorum"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "ave, Domina angelorum:",
+    "p": [
+     [
+      "ave",
+      "ave"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Domina",
+      "domina"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "angelorum",
+      "angelorum"
+     ],
+     [
+      ":",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "salve, radix, salve, porta,",
+    "p": [
+     [
+      "salve",
+      "salve"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "radix",
+      "radix"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "salve",
+      "salve"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "porta",
+      "porta"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "ex qua mundo lux est orta.",
+    "p": [
+     [
+      "ex",
+      "ex"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "qua",
+      "qua"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mundo",
+      "mundo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "lux",
+      "lux"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "est",
+      "est"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "orta",
+      "orta"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v179",
+     "la-v548",
+     "la-v010"
+    ]
+   },
+   {
+    "t": "Gaude, Virgo gloriosa,",
+    "p": [
+     [
+      "Gaude",
+      "gaude"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Virgo",
+      "virgo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "gloriosa",
+      "gloriosa"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "super omnes speciosa;",
+    "p": [
+     [
+      "super",
+      "super"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "omnes",
+      "omnes"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "speciosa",
+      "speciosa"
+     ],
+     [
+      ";",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v074"
+    ]
+   },
+   {
+    "t": "vale, o valde decora,",
+    "p": [
+     [
+      "vale",
+      "vale"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "o",
+      "o"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "valde",
+      "valde"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "decora",
+      "decora"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "et pro nobis Christum exora.",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "pro",
+      "pro"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nobis",
+      "nobis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Christum",
+      "christum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "exora",
+      "exora"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v213"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "ave": {
+   "lema": "ave",
+   "classe": "interjeição",
+   "card": "la-p110",
+   "wiki": "https://en.wiktionary.org/wiki/ave#Latin"
+  },
+  "regina": {
+   "lema": "regina",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala",
+   "card": "la-p172",
+   "wiki": "https://en.wiktionary.org/wiki/regina#Latin"
+  },
+  "caelorum": {
+   "lema": "caelum",
+   "classe": "substantivo neutro",
+   "forma": "genitivo plural",
+   "funcao": "rainha dos céus",
+   "card": "la-p090",
+   "wiki": "https://en.wiktionary.org/wiki/caelum#Latin"
+  },
+  "domina": {
+   "lema": "domina",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala",
+   "card": "la-p401",
+   "wiki": "https://en.wiktionary.org/wiki/domina#Latin"
+  },
+  "angelorum": {
+   "lema": "angelus",
+   "classe": "substantivo masculino",
+   "forma": "genitivo plural",
+   "funcao": "senhora dos anjos",
+   "card": "la-p402",
+   "wiki": "https://en.wiktionary.org/wiki/angelus#Latin"
+  },
+  "salve": {
+   "lema": "salve",
+   "classe": "interjeição",
+   "card": "la-p403",
+   "wiki": "https://en.wiktionary.org/wiki/salve#Latin"
+  },
+  "radix": {
+   "lema": "radix",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala",
+   "card": "la-p404",
+   "wiki": "https://en.wiktionary.org/wiki/radix#Latin"
+  },
+  "porta": {
+   "lema": "porta",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala",
+   "card": "la-p388",
+   "wiki": "https://en.wiktionary.org/wiki/porta#Latin"
+  },
+  "ex": {
+   "lema": "ex",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p313",
+   "wiki": "https://en.wiktionary.org/wiki/ex#Latin"
+  },
+  "qua": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "ablativo feminino singular",
+   "funcao": "antecedente: porta",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "mundo": {
+   "lema": "mundus",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "funcao": "para quem a luz nasceu: para o mundo",
+   "card": "la-p042",
+   "wiki": "https://en.wiktionary.org/wiki/mundus#Latin"
+  },
+  "lux": {
+   "lema": "lux",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de est orta",
+   "card": "la-p041",
+   "wiki": "https://en.wiktionary.org/wiki/lux#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "auxiliar do perfeito (depoente)",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "orta": {
+   "lema": "orior",
+   "classe": "verbo",
+   "forma": "particípio perfeito, nominativo feminino singular",
+   "funcao": "com est: nasceu (perfeito de depoente)",
+   "card": "la-p405",
+   "wiki": "https://en.wiktionary.org/wiki/orior#Latin"
+  },
+  "gaude": {
+   "lema": "gaudeo",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "semidepoente: alegra-te",
+   "card": "la-p406",
+   "wiki": "https://en.wiktionary.org/wiki/gaudeo#Latin"
+  },
+  "virgo": {
+   "lema": "virgo",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala",
+   "card": "la-p305",
+   "wiki": "https://en.wiktionary.org/wiki/virgo#Latin"
+  },
+  "gloriosa": {
+   "lema": "gloriosus",
+   "classe": "adjetivo",
+   "forma": "vocativo feminino singular",
+   "funcao": "concorda com Virgo",
+   "card": "la-p407",
+   "wiki": "https://en.wiktionary.org/wiki/gloriosus#Latin"
+  },
+  "super": {
+   "lema": "super",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "funcao": "acima de",
+   "card": "la-p408",
+   "wiki": "https://en.wiktionary.org/wiki/super#Latin"
+  },
+  "omnes": {
+   "lema": "omnis",
+   "classe": "adjetivo",
+   "forma": "acusativo feminino plural",
+   "funcao": "todas (as mulheres)",
+   "card": "la-p019",
+   "wiki": "https://en.wiktionary.org/wiki/omnis#Latin"
+  },
+  "speciosa": {
+   "lema": "speciosus",
+   "classe": "adjetivo",
+   "forma": "vocativo feminino singular",
+   "funcao": "concorda com Virgo: formosa",
+   "card": "la-p409",
+   "wiki": "https://en.wiktionary.org/wiki/speciosus#Latin"
+  },
+  "vale": {
+   "lema": "valeo",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "despede-te: adeus",
+   "card": "la-p410",
+   "wiki": "https://en.wiktionary.org/wiki/valeo#Latin"
+  },
+  "o": {
+   "lema": "o",
+   "classe": "interjeição",
+   "card": "la-p365",
+   "wiki": "https://en.wiktionary.org/wiki/o#Latin"
+  },
+  "valde": {
+   "lema": "valde",
+   "classe": "advérbio",
+   "card": "la-p411",
+   "wiki": "https://en.wiktionary.org/wiki/valde#Latin"
+  },
+  "decora": {
+   "lema": "decorus",
+   "classe": "adjetivo",
+   "forma": "vocativo feminino singular",
+   "funcao": "concorda com o tu de vale: formosa",
+   "card": "la-p412",
+   "wiki": "https://en.wiktionary.org/wiki/decorus#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "pro": {
+   "lema": "pro",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p078",
+   "wiki": "https://en.wiktionary.org/wiki/pro#Latin"
+  },
+  "nobis": {
+   "lema": "nos",
+   "classe": "pronome",
+   "forma": "ablativo plural",
+   "funcao": "em favor de quem: por nós",
+   "card": "la-p079",
+   "wiki": "https://en.wiktionary.org/wiki/nos#Latin"
+  },
+  "christum": {
+   "lema": "Christus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Cristo, o Ungido: título de Jesus."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Christus#Latin",
+   "forma": "acusativo singular"
+  },
+  "exora": {
+   "lema": "exoro",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "suplica a",
+   "card": "la-p413",
+   "wiki": "https://en.wiktionary.org/wiki/exoro#Latin"
+  }
+ }
+}

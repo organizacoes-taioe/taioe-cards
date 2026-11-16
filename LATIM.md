@@ -964,3 +964,34 @@ gênero»). O build marca cada palavra do curso com o conceito do seu verbete (`
 `v`), e o conceito estreia antes da primeira palavra daquele tipo; quem já viu palavras do tipo o
 recebe na frente dos inéditos. Simulado: estreiam nas respostas 6, 84 e 122.
 
+
+## 19. As orações (pedido de 16/11/2026)
+
+Pedido do Gere (16/11): cards para o Salmo II (como ele o reza, com antífona, Glória e oração),
+*Adoro te devote*, ladainha lauretana, *Quicumque*, *Trium puerorum*, *Memorare*, *Alma
+Redemptoris Mater*, *Ave, Regina caelorum*, o responso, o Credo, *Veni, Sancte Spiritus* e *Pange
+lingua*. O *Pater Noster* já estava (21/10).
+
+- **Menos religioso vale para os cards soltos, não para os textos** (o Gere, 16/11: «Esse pedido era
+  principalmente pensando nos cards soltos. […] para a pessoa escolher quais textos aprender, tanto
+  faz, pode ser os que eu pedir»; ele ainda vai pedir mais clássicos). A preocupação de verdade:
+  **as frases de uso não podem ser só religiosas**; continuam meio a meio com os clássicos (D13).
+- ✔ D48. Credo: **os dois**, o niceno-constantinopolitano (`oracoes/credo`, em 2 partes) e o dos
+  Apóstolos (`oracoes/symbolum-apostolorum`).
+- ✔ D49. Responso: o texto que ele mandou, o *Ne recorderis* pelos defuntos
+  (`oracoes/ne-recorderis`, 3 partes). Nos cards, a forma para um defunto (*ei*, *eius*,
+  *famulum tuum*, *resuscitatus*, *requiescat*), sem o «N.» e sem as rubricas; as duas orações
+  (*Absolve* e *Fidelium*) ficam; *Kyrie, eleison* sem card (grego), como *amen*.
+- ✔ D50 (recomendação): *Veni, Sancte Spiritus*, a oração curta (antífona, versículo e *Deus, qui
+  corda fidelium*), não a sequência de Pentecostes.
+- ✔ D51 (recomendação): *Trium puerorum* com o cântico de Dn 3, o Sl 150, os versículos e as três
+  orações, sem o *Kyrie* e o *Pater*.
+- ✔ D52 (recomendação): a ladainha lauretana oficial de hoje, com os títulos de 2018 e 2020.
+- **Salmo II pela Nova Vulgata**: o texto que ele mandou é o da NV (conferido no vatican.va),
+  não o da Clementina (D1); fica o dele, porque é como ele reza. Grafia da NV (*exsultate*,
+  *Praedicabo*).
+- **Duas levas**: A (Memorare, Alma, Ave Regina, Veni, os dois Credos, Adoro te em 4 partes, Pange
+  lingua em 3, Salmo II em 3, Ne recorderis em 3) e B (ladainha, *Trium puerorum*, *Quicumque*).
+  Os textos ficam em `~/.cache/taioe-oracoes/textos-a.json` enquanto a leva corre.
+- **Tamanho das partes**: o *Pange lingua* tem estrofes de 3 setenários trocaicos, impressos em 6
+  linhas: a parte leva 2 estrofes (12 linhas, 6 versos de verdade), e a 3ª é o *Tantum ergo*.

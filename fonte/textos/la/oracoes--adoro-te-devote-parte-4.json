@@ -1,0 +1,395 @@
+{
+ "id": "oracoes/adoro-te-devote-parte-4",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Adoro te devote",
+ "autor": "Orações",
+ "ano": null,
+ "biblioteca": "/biblioteca/oracoes/adoro-te-devote/",
+ "ordem": 25,
+ "fonte": "Adoro te devote (Santo Tomás de Aquino)",
+ "obra": "oracoes/adoro-te-devote",
+ "parte": 4,
+ "trecho": "parte 4",
+ "blocos": [
+  [
+   {
+    "t": "Iesu, quem velatum nunc aspicio,",
+    "p": [
+     [
+      "Iesu",
+      "iesu"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "quem",
+      "quem"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "velatum",
+      "velatum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nunc",
+      "nunc"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "aspicio",
+      "aspicio"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v176"
+    ]
+   },
+   {
+    "t": "oro fiat illud quod tam sitio:",
+    "p": [
+     [
+      "oro",
+      "oro"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "fiat",
+      "fiat"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "illud",
+      "illud"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "quod",
+      "quod"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tam",
+      "tam"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sitio",
+      "sitio"
+     ],
+     [
+      ":",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v196",
+     "la-v447",
+     "la-v173"
+    ]
+   },
+   {
+    "t": "ut te revelata cernens facie,",
+    "p": [
+     [
+      "ut",
+      "ut"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "te",
+      "te"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "revelata",
+      "revelata"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "cernens",
+      "cernens"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "facie",
+      "facie"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v050"
+    ]
+   },
+   {
+    "t": "visu sim beatus tuae gloriae. Amen.",
+    "p": [
+     [
+      "visu",
+      "visu"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sim",
+      "sim"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "beatus",
+      "beatus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tuae",
+      "tuae"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "gloriae",
+      "gloriae"
+     ],
+     [
+      ". ",
+      null
+     ],
+     [
+      "Amen",
+      "amen"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v032"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "iesu": {
+   "lema": "Iesus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Jesus."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Iesus#Latin",
+   "funcao": "Jesus"
+  },
+  "quem": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "acusativo masculino singular",
+   "funcao": "objeto de aspicio",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "velatum": {
+   "lema": "velo",
+   "classe": "verbo",
+   "forma": "particípio perfeito, acusativo masculino singular",
+   "funcao": "concorda com quem",
+   "card": "la-p517",
+   "wiki": "https://en.wiktionary.org/wiki/velo#Latin"
+  },
+  "nunc": {
+   "lema": "nunc",
+   "classe": "advérbio",
+   "card": "la-p086",
+   "wiki": "https://en.wiktionary.org/wiki/nunc#Latin"
+  },
+  "aspicio": {
+   "lema": "aspicio",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "card": "la-p518",
+   "wiki": "https://en.wiktionary.org/wiki/aspicio#Latin"
+  },
+  "oro": {
+   "lema": "oro",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "card": "la-p077",
+   "wiki": "https://en.wiktionary.org/wiki/oro#Latin"
+  },
+  "fiat": {
+   "lema": "fio",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 3ª pessoa do singular",
+   "funcao": "que se faça",
+   "card": "la-p069",
+   "wiki": "https://en.wiktionary.org/wiki/fio#Latin"
+  },
+  "illud": {
+   "lema": "ille",
+   "classe": "pronome",
+   "forma": "nominativo neutro singular",
+   "funcao": "sujeito de fiat",
+   "card": "la-p215",
+   "wiki": "https://en.wiktionary.org/wiki/ille#Latin"
+  },
+  "quod": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "acusativo neutro singular",
+   "funcao": "objeto de sitio",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "tam": {
+   "lema": "tam",
+   "classe": "advérbio",
+   "card": "la-p519",
+   "wiki": "https://en.wiktionary.org/wiki/tam#Latin"
+  },
+  "sitio": {
+   "lema": "sitio",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "card": "la-p520",
+   "wiki": "https://en.wiktionary.org/wiki/sitio#Latin"
+  },
+  "ut": {
+   "lema": "ut",
+   "classe": "advérbio",
+   "card": "la-p257",
+   "wiki": "https://en.wiktionary.org/wiki/ut#Latin"
+  },
+  "te": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "acusativo singular",
+   "funcao": "objeto de cernens",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  },
+  "revelata": {
+   "lema": "revelo",
+   "classe": "verbo",
+   "forma": "particípio perfeito, ablativo feminino singular",
+   "funcao": "concorda com facie",
+   "card": "la-p521",
+   "wiki": "https://en.wiktionary.org/wiki/revelo#Latin"
+  },
+  "cernens": {
+   "lema": "cerno",
+   "classe": "verbo",
+   "forma": "particípio presente, nominativo masculino singular",
+   "card": "la-p522",
+   "wiki": "https://en.wiktionary.org/wiki/cerno#Latin"
+  },
+  "facie": {
+   "lema": "facies",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "ablativo absoluto: com o rosto descoberto",
+   "card": "la-p422",
+   "wiki": "https://en.wiktionary.org/wiki/facies#Latin"
+  },
+  "visu": {
+   "lema": "visus",
+   "classe": "substantivo masculino",
+   "forma": "ablativo singular",
+   "card": "la-p487",
+   "wiki": "https://en.wiktionary.org/wiki/visus#Latin"
+  },
+  "sim": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 1ª pessoa do singular",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "beatus": {
+   "lema": "beatus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "card": "la-p523",
+   "wiki": "https://en.wiktionary.org/wiki/beatus#Latin"
+  },
+  "tuae": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "genitivo feminino singular",
+   "funcao": "concorda com gloriae",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  },
+  "gloriae": {
+   "lema": "gloria",
+   "classe": "substantivo feminino",
+   "forma": "genitivo singular",
+   "card": "la-p051",
+   "wiki": "https://en.wiktionary.org/wiki/gloria#Latin"
+  },
+  "amen": {
+   "lema": "amen",
+   "classe": "interjeição",
+   "g": "gramatical",
+   "def": [
+    "Amém: assim seja. Palavra hebraica que fecha a oração."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/amen#Latin"
+  }
+ }
+}

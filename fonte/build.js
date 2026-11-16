@@ -1125,7 +1125,17 @@ for (const b of baralhos) {
         const req = new Set(linhas.slice(a - 1, z).flatMap(l => l.requer || []));
         for (const p of c.palavras || []) if (p.c && !req.has(p.c)) erros.push(onde + ': «' + p.w + '» do trecho ' + c.id + ' não está nos versos ' + a + '–' + z);
       }
-      linhas.forEach((l, i) => { if (!cobertos.has(i + 1)) erros.push(onde + ': o verso ' + (i + 1) + ' não está em trecho nenhum'); });
+      /* o verso repetido de outro texto (ou de antes neste: «Oremus.», a antífona que volta) não
+         ganha card de novo, porque o build recusa card repetido: basta que cada palavra dele esteja
+         num trecho de algum texto (cortes.py, so_letras) */
+      const letras = s => String(s || '').toLowerCase().replace(/[^a-z ]/g, ' ').split(/\s+/).filter(Boolean);
+      if (!b.palavrasEmTrecho) b.palavrasEmTrecho = new Set(b.cards.filter(c => c.tipo === 'frase' && c.texto).flatMap(c => letras(c.la)));
+      linhas.forEach((l, i) => {
+        if (cobertos.has(i + 1)) return;
+        const comCard = (l.p || []).filter(x => Array.isArray(x) && x[1] && ((txt.destinos || {})[x[1]] || {}).card);
+        const ws = letras(comCard.map(x => x[0]).join(' '));
+        if (ws.some(w => !b.palavrasEmTrecho.has(w))) erros.push(onde + ': o verso ' + (i + 1) + ' não está em trecho nenhum');
+      });
     }
     if (txt.obra !== undefined && (typeof txt.obra !== 'string' || !Number.isInteger(txt.parte) || txt.parte < 1 || !txt.trecho)) {
       erros.push(onde + ': a parte de uma obra precisa de «obra», «parte» (1, 2…) e «trecho» (I, 1–7)');
