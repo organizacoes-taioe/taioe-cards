@@ -61,6 +61,27 @@ TEXTOS = {
     'vergilio/bucolica-iv-parte-2': {'titulo': 'Ecloga IV', 'autor': 'Vergílio', 'tipo': 'poema', 'ordem': 14,
                                      'fonte': 'Bucólicas, IV, 8–14', 'obra': 'vergilio/bucolica-iv', 'parte': 2,
                                      'trecho': '8–14', 'biblioteca': '/biblioteca/vergilio/bucolica-iv/'},
+    # orações, leva A (16/11/2026; LATIM.md §19)
+    'oracoes/memorare': {"titulo": "Memorare", "autor": "Orações", "tipo": "prosa", "ordem": 15, "fonte": "Memorare"},
+    'oracoes/alma-redemptoris-mater': {"titulo": "Alma Redemptoris Mater", "autor": "Orações", "tipo": "poema", "ordem": 16, "fonte": "Alma Redemptoris Mater"},
+    'oracoes/ave-regina-caelorum': {"titulo": "Ave, Regina caelorum", "autor": "Orações", "tipo": "poema", "ordem": 17, "fonte": "Ave, Regina caelorum"},
+    'oracoes/veni-sancte-spiritus': {"titulo": "Veni, Sancte Spiritus", "autor": "Orações", "tipo": "prosa", "ordem": 18, "fonte": "Veni, Sancte Spiritus"},
+    'oracoes/symbolum-apostolorum': {"titulo": "Symbolum Apostolorum", "autor": "Orações", "tipo": "prosa", "ordem": 19, "fonte": "Credo dos Apóstolos"},
+    'oracoes/credo-parte-1': {"titulo": "Credo", "autor": "Orações", "tipo": "prosa", "ordem": 20, "fonte": "Credo niceno-constantinopolitano", "obra": "oracoes/credo", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/credo/"},
+    'oracoes/credo-parte-2': {"titulo": "Credo", "autor": "Orações", "tipo": "prosa", "ordem": 21, "fonte": "Credo niceno-constantinopolitano", "obra": "oracoes/credo", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/credo/"},
+    'oracoes/adoro-te-devote-parte-1': {"titulo": "Adoro te devote", "autor": "Orações", "tipo": "poema", "ordem": 22, "fonte": "Adoro te devote (Santo Tomás de Aquino)", "obra": "oracoes/adoro-te-devote", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/adoro-te-devote/"},
+    'oracoes/adoro-te-devote-parte-2': {"titulo": "Adoro te devote", "autor": "Orações", "tipo": "poema", "ordem": 23, "fonte": "Adoro te devote (Santo Tomás de Aquino)", "obra": "oracoes/adoro-te-devote", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/adoro-te-devote/"},
+    'oracoes/adoro-te-devote-parte-3': {"titulo": "Adoro te devote", "autor": "Orações", "tipo": "poema", "ordem": 24, "fonte": "Adoro te devote (Santo Tomás de Aquino)", "obra": "oracoes/adoro-te-devote", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/adoro-te-devote/"},
+    'oracoes/adoro-te-devote-parte-4': {"titulo": "Adoro te devote", "autor": "Orações", "tipo": "poema", "ordem": 25, "fonte": "Adoro te devote (Santo Tomás de Aquino)", "obra": "oracoes/adoro-te-devote", "parte": 4, "trecho": "parte 4", "biblioteca": "/biblioteca/oracoes/adoro-te-devote/"},
+    'oracoes/pange-lingua-parte-1': {"titulo": "Pange lingua", "autor": "Orações", "tipo": "poema", "ordem": 26, "fonte": "Pange lingua (Santo Tomás de Aquino)", "obra": "oracoes/pange-lingua", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/pange-lingua/"},
+    'oracoes/pange-lingua-parte-2': {"titulo": "Pange lingua", "autor": "Orações", "tipo": "poema", "ordem": 27, "fonte": "Pange lingua (Santo Tomás de Aquino)", "obra": "oracoes/pange-lingua", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/pange-lingua/"},
+    'oracoes/pange-lingua-parte-3': {"titulo": "Pange lingua", "autor": "Orações", "tipo": "poema", "ordem": 28, "fonte": "Pange lingua (Santo Tomás de Aquino)", "obra": "oracoes/pange-lingua", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/pange-lingua/"},
+    'oracoes/psalmus-2-parte-1': {"titulo": "Psalmus II", "autor": "Orações", "tipo": "prosa", "ordem": 29, "fonte": "Sl 2, com antífona e oração", "obra": "oracoes/psalmus-2", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/psalmus-2/"},
+    'oracoes/psalmus-2-parte-2': {"titulo": "Psalmus II", "autor": "Orações", "tipo": "prosa", "ordem": 30, "fonte": "Sl 2, com antífona e oração", "obra": "oracoes/psalmus-2", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/psalmus-2/"},
+    'oracoes/psalmus-2-parte-3': {"titulo": "Psalmus II", "autor": "Orações", "tipo": "prosa", "ordem": 31, "fonte": "Sl 2, com antífona e oração", "obra": "oracoes/psalmus-2", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/psalmus-2/"},
+    'oracoes/ne-recorderis-parte-1': {"titulo": "Ne recorderis", "autor": "Orações", "tipo": "prosa", "ordem": 32, "fonte": "Responso pelos defuntos", "obra": "oracoes/ne-recorderis", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/ne-recorderis/"},
+    'oracoes/ne-recorderis-parte-2': {"titulo": "Ne recorderis", "autor": "Orações", "tipo": "prosa", "ordem": 33, "fonte": "Responso pelos defuntos", "obra": "oracoes/ne-recorderis", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/ne-recorderis/"},
+    'oracoes/ne-recorderis-parte-3': {"titulo": "Ne recorderis", "autor": "Orações", "tipo": "prosa", "ordem": 34, "fonte": "Responso pelos defuntos", "obra": "oracoes/ne-recorderis", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/ne-recorderis/"},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -150,6 +171,20 @@ SEM_CARD = {
     'pollio': {'lema': 'Pollio', 'classe': 'nome próprio', 'g': 'nome',
                'def': ['Polião (Caio Asínio Polião), cônsul em 40 a.C., amigo de Vergílio.'],
                'wiki': 'https://en.wiktionary.org/wiki/Pollio#Latin'},
+    # orações, leva A (16/11/2026)
+    "christe": {"lema": "Christus", "classe": "nome próprio", "g": "nome", "def": ["Cristo, o Ungido: título de Jesus."], "wiki": "https://en.wiktionary.org/wiki/Christus#Latin"},
+    "christi": {"lema": "Christus", "classe": "nome próprio", "g": "nome", "def": ["Cristo, o Ungido: título de Jesus."], "wiki": "https://en.wiktionary.org/wiki/Christus#Latin"},
+    "christo": {"lema": "Christus", "classe": "nome próprio", "g": "nome", "def": ["Cristo, o Ungido: título de Jesus."], "wiki": "https://en.wiktionary.org/wiki/Christus#Latin"},
+    "christum": {"lema": "Christus", "classe": "nome próprio", "g": "nome", "def": ["Cristo, o Ungido: título de Jesus."], "wiki": "https://en.wiktionary.org/wiki/Christus#Latin"},
+    "eleison": {"lema": "eleison", "classe": "verbo (imperativo)", "g": "gramatical", "def": ["Tende piedade, em grego: «Kyrie, eleison»."], "wiki": "https://en.wiktionary.org/wiki/eleison#Latin"},
+    "gabrielis": {"lema": "Gabriel", "classe": "nome próprio", "g": "nome", "def": ["Gabriel, o arcanjo que anunciou a Maria."]},
+    "iesu": {"lema": "Iesus", "classe": "nome próprio", "g": "nome", "def": ["Jesus."], "wiki": "https://en.wiktionary.org/wiki/Iesus#Latin"},
+    "iesum": {"lema": "Iesus", "classe": "nome próprio", "g": "nome", "def": ["Jesus."], "wiki": "https://en.wiktionary.org/wiki/Iesus#Latin"},
+    "kyrie": {"lema": "Kyrie", "classe": "interjeição", "g": "gramatical", "def": ["Senhor, em grego: «Kyrie, eleison» é «Senhor, tende piedade»."], "wiki": "https://en.wiktionary.org/wiki/Kyrie#Latin"},
+    "pilato": {"lema": "Pilatus", "classe": "nome próprio", "g": "nome", "def": ["Pilatos, o governador romano da Judeia que condenou Jesus."]},
+    "pontio": {"lema": "Pontius", "classe": "nome próprio", "g": "nome", "def": ["Pôncio, nome de família romano, o de Pilatos."]},
+    "sion": {"lema": "Sion", "classe": "nome próprio", "g": "nome", "def": ["Sião, o monte santo de Jerusalém, cidade de Deus."], "wiki": "https://en.wiktionary.org/wiki/Sion#Latin"},
+    "thomas": {"lema": "Thomas", "classe": "nome próprio", "g": "nome", "def": ["Tomé, o apóstolo que só creu depois de ver as chagas do Senhor."]},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')
@@ -279,6 +314,14 @@ def montar():
             if not 1 <= a <= b <= len(vs):
                 raise SystemExit(f"{c['id']}: «versos» fora do texto")
             cobertos.update(range(a, b + 1))
+        # o verso repetido (a antífona que volta, «Oremus.») não ganha trecho de novo: basta que cada
+        # palavra com card dele esteja num trecho de algum texto (cortes.py, so_letras)
+        em_trecho = {w for c in cards.values() if c.get('tipo') == 'frase' and c.get('texto')
+                     for w in re.findall(r'[a-z]+', c['la'].lower())}
+        for n, v in enumerate(vs, 1):
+            if n not in cobertos and all(w in em_trecho for p in v['palavras'] if p.get('c')
+                                         for w in re.findall(r'[a-z]+', p['w'].lower())):
+                cobertos.add(n)
         if cobertos != set(range(1, len(vs) + 1)):
             raise SystemExit(f'{tid}: versos sem trecho: {sorted(set(range(1, len(vs) + 1)) - cobertos)}')
         destinos = {}

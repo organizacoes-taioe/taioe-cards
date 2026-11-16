@@ -964,3 +964,62 @@ gênero»). O build marca cada palavra do curso com o conceito do seu verbete (`
 `v`), e o conceito estreia antes da primeira palavra daquele tipo; quem já viu palavras do tipo o
 recebe na frente dos inéditos. Simulado: estreiam nas respostas 6, 84 e 122.
 
+
+## 19. As orações (pedido de 16/11/2026)
+
+Pedido do Gere (16/11): cards para o Salmo II (como ele o reza, com antífona, Glória e oração),
+*Adoro te devote*, ladainha lauretana, *Quicumque*, *Trium puerorum*, *Memorare*, *Alma
+Redemptoris Mater*, *Ave, Regina caelorum*, o responso, o Credo, *Veni, Sancte Spiritus* e *Pange
+lingua*. O *Pater Noster* já estava (21/10).
+
+- **Menos religioso vale para os cards soltos, não para os textos** (o Gere, 16/11: «Esse pedido era
+  principalmente pensando nos cards soltos. […] para a pessoa escolher quais textos aprender, tanto
+  faz, pode ser os que eu pedir»; ele ainda vai pedir mais clássicos). A preocupação de verdade:
+  **as frases de uso não podem ser só religiosas**; continuam meio a meio com os clássicos (D13).
+- ✔ D48. Credo: **os dois**, o niceno-constantinopolitano (`oracoes/credo`, em 2 partes) e o dos
+  Apóstolos (`oracoes/symbolum-apostolorum`).
+- ✔ D49. Responso: o texto que ele mandou, o *Ne recorderis* pelos defuntos
+  (`oracoes/ne-recorderis`, 3 partes). Nos cards, a forma para um defunto (*ei*, *eius*,
+  *famulum tuum*, *resuscitatus*, *requiescat*), sem o «N.» e sem as rubricas; as duas orações
+  (*Absolve* e *Fidelium*) ficam; *Kyrie, eleison* sem card (grego), como *amen*.
+- ✔ D50 (recomendação): *Veni, Sancte Spiritus*, a oração curta (antífona, versículo e *Deus, qui
+  corda fidelium*), não a sequência de Pentecostes.
+- ✔ D51 (recomendação): *Trium puerorum* com o cântico de Dn 3, o Sl 150, os versículos e as três
+  orações, sem o *Kyrie* e o *Pater*.
+- ✔ D52 (recomendação): a ladainha lauretana oficial de hoje, com os títulos de 2018 e 2020.
+- **Salmo II pela Nova Vulgata**: o texto que ele mandou é o da NV (conferido no vatican.va),
+  não o da Clementina (D1); fica o dele, porque é como ele reza. Grafia da NV (*exsultate*,
+  *Praedicabo*).
+- **Duas levas**: A (Memorare, Alma, Ave Regina, Veni, os dois Credos, Adoro te em 4 partes, Pange
+  lingua em 3, Salmo II em 3, Ne recorderis em 3) e B (ladainha, *Trium puerorum*, *Quicumque*).
+  Os textos ficam em `~/.cache/taioe-oracoes/textos-a.json` enquanto a leva corre.
+- **Tamanho das partes**: o *Pange lingua* tem estrofes de 3 setenários trocaicos, impressos em 6
+  linhas: a parte leva 2 estrofes (12 linhas, 6 versos de verdade), e a 3ª é o *Tantum ergo*.
+
+### 19.1 Como ficou a leva A (16/11; cards PR #97, biblioteca PR #110)
+- 20 textos (`ordem` 15 a 34, autor «Orações»), 294 palavras (`28-palavras-5`, `la-p365`–`p658`),
+  163 trechos (`29-trechos-5`), 218 frases de uso (`30-usos-f`, 120 clássicas e 98 da Vulgata),
+  527 flexões, 107 regências e 128 cards de verbo e concordância, 79 perguntas, os cards de forma.
+- **Receita do texto novo** (a primeira depois do corte de 04/11): o texto em
+  `~/.cache/taioe-oracoes/textos-a.json` → `casar.py` (formas × cards, baixa o Wiktionary) →
+  agentes anotam os versos e escrevem as palavras novas (brief `BRIEF-anotar.md`, conferidor
+  `conferir-anotacao.py`) → revisão das palavras novas, uma por lema (`revisar/`) →
+  `juntar-anotacao.py` (ids, `versos.json`, `CORTES`, `TEXTOS`, `SEM_CARD`) → `cortes.py entrada`
+  → agentes dos trechos (`BRIEF-trechos-novos.md`) → `cortes.py gravar`, `perguntas`, `analise.py`
+  (as levas em `cache/levas/`: `cortes-oracoes-*`, `analise-frases-4`, `analise-verbos`),
+  `radicais.py` → `buscar.py` → agentes das frases de uso (`usos/BRIEF-usos.md`; `usos-juntar.py`
+  tira a palavra de outro texto e a frase com mais de uma desconhecida) → `montar.py` →
+  `flexoes.py faltam` → agentes (`flexoes-REGRAS.md`) → `flexoes.py gravar` → `cards_de_forma.py`
+  → `textos.py` → build. Tudo isso (scripts e briefs) fica em `~/.cache/taioe-oracoes/`, só neste PC.
+- `cortes.py` aceita texto novo: `ARQUIVO_NOVO`, os conceitos pelo nome na leva, `gravar` só
+  refaz texto da leva (os cards antigos têm ajustes à mão), e a frase que já é card (noutro texto,
+  ou antes no mesmo) não se repete. O verso repetido (antífona, «Oremus.», «Per Christum…», o
+  verso do Pai-Nosso no responso) fica sem trecho próprio; build, `textos.py` e `testar-latim.js`
+  o aceitam quando cada palavra com card dele está em algum trecho.
+- **`analise.py` e `cards_de_forma.py` mexem em cards antigos** (levas velhas com índice que o
+  ajuste à mão tirou; ajustes à mão desfeitos): depois de rodar, devolver do `HEAD` os antigos
+  que mudaram (`22-trechos-4`, `la-at027-v`, 88 cards de forma, `la-g013`).
+- Na Biblioteca, `fonte/latim/glossario_textos.py` faz o `poema.txt` e o `glossario.json` de uma
+  obra a partir dos versos; a definição é o `pt` do card (as `aceitas` ficam sem acento).
+- Faltam: a leva B (ladainha, *Trium puerorum*, *Quicumque*), quando ele pedir; um conceito de
+  particípio futuro (*venturus*, três vezes nos Credos) não existe e ficou fora dos `conceitos`.

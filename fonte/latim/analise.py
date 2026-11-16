@@ -52,9 +52,13 @@ def card_da_frase(fr, ent, pal):
     v = ent.get('verbo')
     if not v:
         return None
+    if v['i'] >= len(pal):
+        return None
     certa = pal[v['i']]['w']
     erradas = []
     for j in v['distratores']:
+        if j >= len(pal):   # a leva antiga, de antes de um ajuste à mão no trecho (Regina caeli sem o alleluia)
+            continue
         w = pal[j]['w']
         if w.startswith('-') or chave(w) == chave(certa) or chave(w) in map(chave, erradas):
             continue
