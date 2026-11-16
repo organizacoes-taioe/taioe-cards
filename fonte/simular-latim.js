@@ -121,10 +121,11 @@ const naVez = (muitos, poucos, desde, cada) => {
 };
 const pede = id => {
   const c = PORID.get(id) || {};
-  if (c.tipo !== 'palavra') return c.conceitos || [];
-  if (!doTexto.has(id)) return [];
+  if (c.tipo !== 'palavra') return (c.conceitos || []).concat(c.grupoConceito ? [c.grupoConceito] : []);
+  const doVerbete = c.verbete ? [c.verbete] : [];   // o conceito do verbete (15/11/2026)
+  if (!doTexto.has(id)) return doVerbete;
   const tr = TRECHOS.find(t => ativosIds.has(t.texto) && (t.requerTodas || []).includes(id));
-  return (tr && tr.conceitos) || [];
+  return ((tr && tr.conceitos) || []).concat(doVerbete);
 };
 
 /* a lista de inéditos na ordem do ordenarTrilhas */

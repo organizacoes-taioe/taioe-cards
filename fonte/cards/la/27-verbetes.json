@@ -1,0 +1,387 @@
+[
+ {
+  "id": "la-g033",
+  "tipo": "conceito",
+  "familia": "verbete",
+  "la": "o verbete do nome",
+  "pt": "nominativo, genitivo, gênero",
+  "aceitas": [
+   "nominativo genitivo genero",
+   "nominativo, genitivo e gênero"
+  ],
+  "distratores": [
+   "genitivo, nominativo, gênero",
+   "nominativo, plural, gênero",
+   "nominativo, acusativo, gênero",
+   "masculino, feminino, neutro"
+  ],
+  "nota": "No dicionário, o nome vem sempre nesta ordem: o nominativo singular (dominus), o genitivo singular (domini) e o gênero (m. masculino, f. feminino, n. neutro). O genitivo é que mostra a declinação e o radical: lux, lucis → luc-. Com «pl.», o nome só se usa no plural, e as duas formas são do plural: arma, armorum, n. pl.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "dominus, domini, m.",
+    "w": "dominus",
+    "lema": "la-p012",
+    "fonte": "dicionário",
+    "exp": "dominus: nominativo; domini: genitivo, que dá a 2ª declinação e o radical (domin-); m.: masculino.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   },
+   {
+    "la": "via, viae, f.",
+    "w": "via",
+    "lema": "la-p008",
+    "fonte": "dicionário",
+    "exp": "via: nominativo; viae: genitivo, que dá a 1ª declinação e o radical (vi-); f.: feminino.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   },
+   {
+    "la": "lux, lucis, f.",
+    "w": "lux",
+    "lema": "la-p041",
+    "fonte": "dicionário",
+    "exp": "lux: nominativo; lucis: genitivo, que dá a 3ª declinação e o radical (luc-); f.: feminino.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   },
+   {
+    "la": "tempus, temporis, n.",
+    "w": "tempus",
+    "lema": "la-p126",
+    "fonte": "dicionário",
+    "exp": "tempus: nominativo; temporis: genitivo, que dá a 3ª declinação e o radical (tempor-); n.: neutro.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   },
+   {
+    "la": "deus, dei, m.",
+    "w": "deus",
+    "lema": "la-p001",
+    "fonte": "dicionário",
+    "exp": "deus: nominativo; dei: genitivo, que dá a 2ª declinação e o radical (de-); m.: masculino.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   },
+   {
+    "la": "pastor, pastoris, m.",
+    "w": "pastor",
+    "lema": "la-p005",
+    "fonte": "dicionário",
+    "exp": "pastor: nominativo; pastoris: genitivo, que dá a 3ª declinação e o radical (pastor-); m.: masculino.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   },
+   {
+    "la": "dies, diei, m.",
+    "w": "dies",
+    "lema": "la-p025",
+    "fonte": "dicionário",
+    "exp": "dies: nominativo; diei: genitivo, que dá a 5ª declinação e o radical (di-); m.: masculino.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   },
+   {
+    "la": "caritas, caritatis, f.",
+    "w": "caritas",
+    "lema": "la-p002",
+    "fonte": "dicionário",
+    "exp": "caritas: nominativo; caritatis: genitivo, que dá a 3ª declinação e o radical (caritat-); f.: feminino.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   },
+   {
+    "la": "arma, armorum, n. pl.",
+    "w": "arma",
+    "lema": "la-p026",
+    "fonte": "dicionário",
+    "exp": "arma: nominativo plural; armorum: genitivo plural, que dá a 2ª declinação e o radical (arm-); n. pl.: neutro, e o nome só se usa no plural.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   },
+   {
+    "la": "vir, viri, m.",
+    "w": "vir",
+    "lema": "la-p027",
+    "fonte": "dicionário",
+    "exp": "vir: nominativo; viri: genitivo, que dá a 2ª declinação e o radical (vir-); m.: masculino.",
+    "distratores": [
+     "genitivo, nominativo, gênero",
+     "nominativo, plural, gênero",
+     "nominativo, acusativo, gênero",
+     "masculino, feminino, neutro"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "la-g034",
+  "tipo": "conceito",
+  "familia": "verbete",
+  "la": "o verbete do adjetivo",
+  "pt": "masculino, feminino, neutro",
+  "aceitas": [
+   "masculino feminino neutro",
+   "masculino, feminino e neutro"
+  ],
+  "distratores": [
+   "nominativo, genitivo, gênero",
+   "feminino, masculino, neutro",
+   "singular, plural, neutro",
+   "nominativo, acusativo, ablativo"
+  ],
+  "nota": "No dicionário, o adjetivo vem no nominativo singular dos três gêneros, nesta ordem: masculino, feminino e neutro (bonus, bona, bonum). Quando são só duas formas, a primeira serve ao masculino e ao feminino (omnis, omne); quando é uma só, vem com o genitivo, como o nome (felix, felicis).",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "bonus, bona, bonum",
+    "w": "bonus",
+    "lema": "la-p006",
+    "fonte": "dicionário",
+    "exp": "bonus: masculino; bona: feminino; bonum: neutro, todos no nominativo singular.",
+    "distratores": [
+     "nominativo, genitivo, gênero",
+     "feminino, masculino, neutro",
+     "singular, plural, neutro",
+     "nominativo, acusativo, ablativo"
+    ]
+   },
+   {
+    "la": "magnus, magna, magnum",
+    "w": "magnus",
+    "lema": "la-p016",
+    "fonte": "dicionário",
+    "exp": "magnus: masculino; magna: feminino; magnum: neutro, todos no nominativo singular.",
+    "distratores": [
+     "nominativo, genitivo, gênero",
+     "feminino, masculino, neutro",
+     "singular, plural, neutro",
+     "nominativo, acusativo, ablativo"
+    ]
+   },
+   {
+    "la": "sanctus, sancta, sanctum",
+    "w": "sanctus",
+    "lema": "la-p084",
+    "fonte": "dicionário",
+    "exp": "sanctus: masculino; sancta: feminino; sanctum: neutro, todos no nominativo singular.",
+    "distratores": [
+     "nominativo, genitivo, gênero",
+     "feminino, masculino, neutro",
+     "singular, plural, neutro",
+     "nominativo, acusativo, ablativo"
+    ]
+   },
+   {
+    "la": "excelsus, excelsa, excelsum",
+    "w": "excelsus",
+    "lema": "la-p052",
+    "fonte": "dicionário",
+    "exp": "excelsus: masculino; excelsa: feminino; excelsum: neutro, todos no nominativo singular.",
+    "distratores": [
+     "nominativo, genitivo, gênero",
+     "feminino, masculino, neutro",
+     "singular, plural, neutro",
+     "nominativo, acusativo, ablativo"
+    ]
+   },
+   {
+    "la": "meus, mea, meum",
+    "w": "meus",
+    "lema": "la-p013",
+    "fonte": "dicionário",
+    "exp": "meus: masculino; mea: feminino; meum: neutro, todos no nominativo singular.",
+    "distratores": [
+     "nominativo, genitivo, gênero",
+     "feminino, masculino, neutro",
+     "singular, plural, neutro",
+     "nominativo, acusativo, ablativo"
+    ]
+   },
+   {
+    "la": "omnis, omne",
+    "w": "omnis",
+    "lema": "la-p019",
+    "fonte": "dicionário",
+    "exp": "omnis: masculino e feminino; omne: neutro. Com duas formas, a primeira serve aos dois gêneros.",
+    "distratores": [
+     "nominativo, genitivo, gênero",
+     "feminino, masculino, neutro",
+     "singular, plural, neutro",
+     "nominativo, acusativo, ablativo"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "la-g035",
+  "tipo": "conceito",
+  "familia": "verbete",
+  "la": "o verbete do verbo",
+  "pt": "1ª pessoa do presente, infinitivo, perfeito, supino",
+  "aceitas": [
+   "1a pessoa do presente infinitivo perfeito supino",
+   "presente, infinitivo, perfeito, supino",
+   "presente infinitivo perfeito supino"
+  ],
+  "distratores": [
+   "infinitivo, 1ª pessoa do presente, perfeito, supino",
+   "1ª pessoa do presente, infinitivo, imperfeito, futuro",
+   "1ª, 2ª e 3ª pessoas do presente",
+   "nominativo, genitivo, gênero"
+  ],
+  "nota": "No dicionário, o verbo vem em quatro formas, sempre nesta ordem: a 1ª pessoa do singular do presente (amo, «amo»), o infinitivo (amare, que mostra a conjugação), a 1ª pessoa do perfeito (amavi, «amei», o radical do perfeito) e o supino (amatum, o radical do particípio, amatus). O depoente tem três, porque o perfeito já é o particípio: sequor, sequi, secutus sum. E há verbos sem supino: sum, esse, fui.",
+  "nivel": "A1",
+  "tags": [
+   "gramática"
+  ],
+  "exemplos": [
+   {
+    "la": "amo, amare, amavi, amatum",
+    "w": "amo",
+    "lema": "la-p037",
+    "fonte": "dicionário",
+    "exp": "amo: 1ª pessoa do presente («amo»); amare: infinitivo, que dá a 1ª conjugação; amavi: perfeito («amei»), o radical do perfeito; amatum: supino, o radical do particípio (amatus).",
+    "distratores": [
+     "infinitivo, 1ª pessoa do presente, perfeito, supino",
+     "1ª pessoa do presente, infinitivo, imperfeito, futuro",
+     "1ª, 2ª e 3ª pessoas do presente",
+     "nominativo, genitivo, gênero"
+    ]
+   },
+   {
+    "la": "video, videre, vidi, visum",
+    "w": "video",
+    "lema": "la-p039",
+    "fonte": "dicionário",
+    "exp": "video: 1ª pessoa do presente («vejo»); videre: infinitivo, que dá a 2ª conjugação; vidi: perfeito («vi»), o radical do perfeito; visum: supino, o radical do particípio (visus).",
+    "distratores": [
+     "infinitivo, 1ª pessoa do presente, perfeito, supino",
+     "1ª pessoa do presente, infinitivo, imperfeito, futuro",
+     "1ª, 2ª e 3ª pessoas do presente",
+     "nominativo, genitivo, gênero"
+    ]
+   },
+   {
+    "la": "credo, credere, credidi, creditum",
+    "w": "credo",
+    "lema": "la-p021",
+    "fonte": "dicionário",
+    "exp": "credo: 1ª pessoa do presente («creio»); credere: infinitivo, que dá a 3ª conjugação; credidi: perfeito («cri»), o radical do perfeito; creditum: supino, o radical do particípio (creditus).",
+    "distratores": [
+     "infinitivo, 1ª pessoa do presente, perfeito, supino",
+     "1ª pessoa do presente, infinitivo, imperfeito, futuro",
+     "1ª, 2ª e 3ª pessoas do presente",
+     "nominativo, genitivo, gênero"
+    ]
+   },
+   {
+    "la": "venio, venire, veni, ventum",
+    "w": "venio",
+    "lema": "la-p038",
+    "fonte": "dicionário",
+    "exp": "venio: 1ª pessoa do presente («venho»); venire: infinitivo, que dá a 4ª conjugação; veni: perfeito («vim»), o radical do perfeito; ventum: supino, o radical do particípio (ventus).",
+    "distratores": [
+     "infinitivo, 1ª pessoa do presente, perfeito, supino",
+     "1ª pessoa do presente, infinitivo, imperfeito, futuro",
+     "1ª, 2ª e 3ª pessoas do presente",
+     "nominativo, genitivo, gênero"
+    ]
+   },
+   {
+    "la": "laudo, laudare, laudavi, laudatum",
+    "w": "laudo",
+    "lema": "la-p018",
+    "fonte": "dicionário",
+    "exp": "laudo: 1ª pessoa do presente («louvo»); laudare: infinitivo, que dá a 1ª conjugação; laudavi: perfeito («louvei»), o radical do perfeito; laudatum: supino, o radical do particípio (laudatus).",
+    "distratores": [
+     "infinitivo, 1ª pessoa do presente, perfeito, supino",
+     "1ª pessoa do presente, infinitivo, imperfeito, futuro",
+     "1ª, 2ª e 3ª pessoas do presente",
+     "nominativo, genitivo, gênero"
+    ]
+   },
+   {
+    "la": "lego, legere, legi, lectum",
+    "w": "lego",
+    "lema": "la-p033",
+    "fonte": "dicionário",
+    "exp": "lego: 1ª pessoa do presente («leio»); legere: infinitivo, que dá a 3ª conjugação; legi: perfeito («li»), o radical do perfeito; lectum: supino, o radical do particípio (lectus).",
+    "distratores": [
+     "infinitivo, 1ª pessoa do presente, perfeito, supino",
+     "1ª pessoa do presente, infinitivo, imperfeito, futuro",
+     "1ª, 2ª e 3ª pessoas do presente",
+     "nominativo, genitivo, gênero"
+    ]
+   },
+   {
+    "la": "vinco, vincere, vici, victum",
+    "w": "vinco",
+    "lema": "la-p030",
+    "fonte": "dicionário",
+    "exp": "vinco: 1ª pessoa do presente («venço»); vincere: infinitivo, que dá a 3ª conjugação; vici: perfeito («venci»), o radical do perfeito; victum: supino, o radical do particípio (victus).",
+    "distratores": [
+     "infinitivo, 1ª pessoa do presente, perfeito, supino",
+     "1ª pessoa do presente, infinitivo, imperfeito, futuro",
+     "1ª, 2ª e 3ª pessoas do presente",
+     "nominativo, genitivo, gênero"
+    ]
+   },
+   {
+    "la": "cano, canere, cecini, cantum",
+    "w": "cano",
+    "lema": "la-p029",
+    "fonte": "dicionário",
+    "exp": "cano: 1ª pessoa do presente («canto»); canere: infinitivo, que dá a 3ª conjugação; cecini: perfeito («cantei»), o radical do perfeito; cantum: supino, o radical do particípio (cantus).",
+    "distratores": [
+     "infinitivo, 1ª pessoa do presente, perfeito, supino",
+     "1ª pessoa do presente, infinitivo, imperfeito, futuro",
+     "1ª, 2ª e 3ª pessoas do presente",
+     "nominativo, genitivo, gênero"
+    ]
+   }
+  ]
+ }
+]

@@ -96,13 +96,17 @@ CORTES = {
         [(41, 41), (43, 47)],        # vestigia … inrita perpetua solvent formidine terras.
     ],
     'oracoes/regina-caeli': [
-        [(0, 3)],                    # Regina caeli, laetare, alleluia.
-        [(4, 7), (9, 12)],           # Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.
-        [(13, 17)],                  # Ora pro nobis Deum, alleluia.
+        [(0, 2)],                    # Regina caeli, laetare.
+        [(4, 7), (9, 11)],           # Quia quem meruisti portare resurrexit, sicut dixit.
+        [(13, 16)],                  # Ora pro nobis Deum.
     ],
 }
 
 FIM = '.;:?!'
+
+# O refrão que sai do trecho sem deixar «…» (o Gere, 15/11, la-t126: «pode tirar o aleluia do fim
+# […] E não precisa dos três pontinhos»). Também não precisa entrar em trecho nenhum.
+REFRAO = {'alleluia'}
 
 
 def ler_baralho():
@@ -192,7 +196,10 @@ def montar_trecho(tid, versos, intervalos, cards):
             trecho += entre + w
             pal.extend(json.loads(json.dumps(partes, ensure_ascii=False)))
         pedacos.append(trecho)
-    la = ' … '.join(pedacos)
+    la = pedacos[0]
+    for k in range(1, len(pedacos)):
+        fora = [lista[n][3].lower() for n in range(intervalos[k - 1][1] + 1, intervalos[k][0])]
+        la += (' ' if fora and all(w in REFRAO for w in fora) else ' … ') + pedacos[k]
     # a pontuação forte depois da última palavra fica
     nv, ini, fim, w, _ = lista[intervalos[-1][1]]
     resto = versos[nv - 1]['la'][fim:].strip()

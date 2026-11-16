@@ -925,6 +925,34 @@ sexual ou de crime sexual, mesmo neutro.
   cursos, também para quem já estudava (a ordem dos inéditos; as filas de revisão não mudam).
 - O catálogo do banco não muda (a posição vai só no pacote do app), e não houve Catálogo.
 
+### 7.10 A estimativa viva e o teste do presumido (decidido em 15/11/2026)
+
+Pedido do Gere: «Sempre atualizar a previsão de quais palavras a pessoa já conhece […] de vez em
+quando, na hora de um card novo, escolha algum desses presumidamente conhecidos e mostre para a
+pessoa, avisando que está fazendo esse teste.» Ele escolheu as recomendações: refazer a cada
+primeira resposta e, no teste acertado, «conhecido de vez».
+
+- **A divisa se refaz** (`Motor.reverDivisa`, chamada pelo `reverEstimativa` do app) depois da
+  primeira resposta de cada card de palavra da lista, de cada teste e de cada «Já conheço». Ela é
+  a posição que melhor explica tudo o que a pessoa respondeu (`divisaPelaEvidencia`): antes dela
+  «sabe», depois «não sabe», cada resposta pesando pela chance de sair assim
+  (`CHANCE_DE_ACERTO`: estreia de escolher 95% × 35%, teste escrito 90% × 5%, carta do teste
+  inicial 90% × 10%). Só muda com ganho de 2 (logaritmo natural) sobre a atual. Subiu: as palavras
+  entre as duas viram presumidas, com a volta em 7 a 60 dias a partir de agora; desceu: as
+  presumidas depois da nova divisa voltam aos inéditos (menos os «Já conheço» do teste). Grava
+  `revistoEm`, `revisoes` e `divisaDoTeste`; na sincronia vale o mais recente entre `feitoEm` e
+  `revistoEm`. Simulado com alunos inventados: de uma divisa errada em 400 a 1.500 posições, chega
+  à verdadeira em ~50 cards novos.
+- **O teste**: uma vaga de card novo em cada 10 (`TESTE_A_CADA`, contada pelas estreias desde o
+  último teste, `estreouNa` e `testadoNa`), depois do contraste e do conceito da vez e antes do
+  desafio, é de um presumido sem resposta, sorteado entre os 30% de cima abaixo da divisa
+  (`presumidoParaTestar`). A tela avisa («Teste», «Pela estimativa, você já sabe esta palavra»). É
+  a revisão escrita do presumido (`responderPresumido`): acertou, o card vai ao arquivo, como o
+  «Já conheço», e não volta; errou, entra no jogo do zero com o erro. Fora do latim e só com lista.
+- A primeira resposta de todo card fica em `est.primeira`; a de um presumido leva
+  `est.confirmacao` (e o teste, `testado`/`testadoNa`). Para estados antigos, o histórico ou «nunca
+  errou». Conferido em `fonte/testar-comeco.js`, seção «a estimativa viva».
+
 ## 8. O tempo de retorno dos dominados (decidido em 17/10/2026)
 
 **O pedido.** Estudar quanto tempo o card dominado deve esperar para voltar: anotar, em cada

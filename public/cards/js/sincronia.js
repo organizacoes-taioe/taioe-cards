@@ -62,12 +62,13 @@
 
     // o começo do app (PLANO.md, seção 7). Cada campo só entra na mescla se um dos lados o tem:
     // vazio a mais mudaria a assinatura dos extras (ver o extras() do app).
-    // — nivelamento: o feito mais recente (feitoEm) vence, inteiro — o «refazer» troca o teste
+    // — nivelamento: o feito ou revisto mais recente vence, inteiro — o «refazer» troca o teste
     //   e os presumidos juntos, e misturar dois testes não tem sentido; no empate, o do servidor;
     var nl = local.nivelamento, ns = servidor.nivelamento;
     if (nl || ns) {
-      saida.nivelamento = !nl ? ns : !ns ? nl
-        : (String(ns.feitoEm || '') >= String(nl.feitoEm || '') ? ns : nl);
+      // desde 15/11/2026 a estimativa viva refaz a divisa (revistoEm), e vale a mais recente
+      var quando = function (n) { return String(n.revistoEm || n.feitoEm || ''); };
+      saida.nivelamento = !nl ? ns : !ns ? nl : (quando(ns) >= quando(nl) ? ns : nl);
     }
     // — reativados (id → ISO) e dicasVistas (chave → ISO): chave a chave, o GESTO MAIS RECENTE
     //   vence, como no arquivo. A primeira versão era a união com a data mais antiga, e a união
@@ -306,6 +307,7 @@
           var e = p.cards[id];
           if (e.naFila && e.naFila.desde >= fila.base) e.naFila.desde += r.delta;
           if (e.estreouNa !== undefined && e.estreouNa >= fila.base) e.estreouNa += r.delta;
+          if (e.testadoNa !== undefined && e.testadoNa >= fila.base) e.testadoNa += r.delta;   // o teste do presumido (15/11/2026)
         });
         fila.eventos.forEach(function (e) { if (e.relogio != null) e.relogio += r.delta; });
         // os pontos da série depois da base são fotos de antes das respostas do outro

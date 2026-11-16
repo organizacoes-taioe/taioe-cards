@@ -952,3 +952,15 @@ escada antiga, a nova com o índice mantido dá 20% a 24% mais revisões de domi
 normal; 58,2 → 72,3 no forte) e 18% a 23% menos cards novos por dia (13,4 → 11,0; 16,6 → 12,8), sem nenhum dia
 sem card novo. Remapear os índices pela espera custa um pouco menos (64,1 revisões e 11,5 novos; 70,5 e 13,6),
 e o custo restante é o da própria escada (a referência «nova desde o dia 1» dá o mesmo).
+
+## 17. O verbete (pedido de 15/11/2026)
+
+«Falta no latim um card para explicar a ordem das palavras nos verbetes.» Três conceitos na família
+`verbete` (`fonte/cards/la/27-verbetes.json`): do nome (nominativo, genitivo, gênero), do adjetivo
+(masculino, feminino, neutro) e do verbo (1ª pessoa do presente, infinitivo, perfeito, supino). A
+pergunta mostra um verbete inteiro do curso, sem destaque («O que é, em ordem, cada parte deste
+verbete?»), e as erradas são ordens trocadas («genitivo, nominativo, gênero», «nominativo, plural,
+gênero»). O build marca cada palavra do curso com o conceito do seu verbete (`verbete`, fora do
+`v`), e o conceito estreia antes da primeira palavra daquele tipo; quem já viu palavras do tipo o
+recebe na frente dos inéditos. Simulado: estreiam nas respostas 6, 84 e 122.
+

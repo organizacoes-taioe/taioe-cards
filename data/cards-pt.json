@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "pt",
- "gerado_em": "2026-11-03",
+ "gerado_em": "2026-11-16",
  "total": 964,
  "cards": [
   {
@@ -8868,53 +8868,46 @@
    "id": "pt-u053",
    "tipo": "frase",
    "requer": "pt-p015",
-   "pt": "Vamos ver um filme?",
-   "es": "¿Vemos una película?",
-   "en": "Shall we watch a movie?",
+   "pt": "Eu vejo o mar da janela.",
+   "es": "Veo el mar desde la ventana.",
+   "en": "I see the sea from the window.",
    "aceitas": [
-    "vamos ver um filme",
-    "vamos assistir um filme",
-    "vamos assistir a um filme",
-    "bora ver um filme",
-    "que tal ver um filme"
+    "eu vejo o mar da janela",
+    "vejo o mar da janela",
+    "eu vejo o mar pela janela",
+    "vejo o mar pela janela"
    ],
    "aceitasEs": [
-    "¿Vemos una película?",
-    "¿Vamos a ver una película?",
-    "¿Miramos una película?",
-    "¿Vemos una peli?"
+    "Veo el mar desde la ventana",
+    "Yo veo el mar desde la ventana",
+    "Veo el mar por la ventana",
+    "Desde la ventana veo el mar"
    ],
    "aceitasEn": [
-    "shall we watch a movie",
-    "should we watch a movie",
-    "lets watch a movie",
-    "want to watch a movie",
-    "how about watching a movie",
-    "shall we watch a film"
+    "i see the sea from the window",
+    "i can see the sea from the window",
+    "i see the ocean from the window"
    ],
    "distratoresEs": [
-    "¿Hacemos una película?",
-    "¿Compramos una película?",
-    "¿Elegimos una película?",
-    "¿Grabamos una película?"
+    "Oigo el mar desde la ventana.",
+    "Pinto el mar desde la ventana.",
+    "Cruzo el mar desde la ventana.",
+    "Fotografío el mar desde la ventana."
    ],
    "distratoresEn": [
-    "Shall we make a movie?",
-    "Shall we buy a movie?",
-    "Shall we pick a movie?",
-    "Shall we record a movie?"
+    "I hear the sea from the window.",
+    "I paint the sea from the window.",
+    "I cross the sea from the window.",
+    "I photograph the sea from the window."
    ],
    "nivel": "A1",
    "tags": [
-    "cultura",
-    "falso-amigo"
+    "cotidiano"
    ],
-   "notaEs": "«O filme» es la película; «a película», en portugués, es una capa fina. Para películas se dice «ver» o «assistir (a)»: «assistir um filme».",
-   "notaEn": "«Ver» covers see and watch: «ver um filme», watch a movie. Brazilians also say «assistir (a) um filme». «Vamos…?» is the usual let's or shall we.",
+   "notaEs": "«Ver» es ver con los ojos: «vejo o mar». Para películas y partidos, en Brasil se dice «assistir (a)».",
+   "notaEn": "«Ver» means to see: «vejo o mar». For films and games Brazilians say «assistir (a)».",
    "requerTodas": [
-    "pt-p005",
-    "pt-p015",
-    "pt-p105"
+    "pt-p015"
    ]
   },
   {
@@ -11658,49 +11651,46 @@
    "id": "pt-u107",
    "tipo": "frase",
    "requer": "pt-p036",
-   "pt": "Chego às três.",
-   "es": "Llego a las tres.",
-   "en": "I'll get there at three.",
+   "pt": "Três mais três são seis.",
+   "es": "Tres más tres son seis.",
+   "en": "Three plus three is six.",
    "aceitas": [
-    "chego as tres",
-    "eu chego as tres",
-    "chego as tres horas",
-    "vou chegar as tres"
+    "tres mais tres sao seis",
+    "tres mais tres e seis",
+    "tres mais tres da seis",
+    "tres mais tres igual a seis"
    ],
    "aceitasEs": [
-    "Llego a las tres.",
-    "Voy a llegar a las tres.",
-    "Llegaré a las tres."
+    "Tres más tres son seis",
+    "Tres más tres es seis",
+    "Tres y tres son seis",
+    "Tres más tres da seis"
    ],
    "aceitasEn": [
-    "ill get there at three",
-    "i will get there at three",
-    "ill arrive at three",
-    "i arrive at three",
-    "im arriving at three",
-    "ill be there at three",
-    "ill get there at three oclock"
+    "three plus three is six",
+    "three plus three equals six",
+    "three and three is six",
+    "three plus three are six"
    ],
    "distratoresEs": [
-    "Llego a las dos.",
-    "Llego a las seis.",
-    "Llego en tres horas.",
-    "Llego a las doce."
+    "Dos más tres son seis.",
+    "Cuatro más tres son seis.",
+    "Cinco más tres son seis.",
+    "Uno más tres son seis."
    ],
    "distratoresEn": [
-    "I'll get there at two.",
-    "I'll get there at six.",
-    "I'll get there in three hours.",
-    "I'll get there at twelve."
+    "Two plus three is six.",
+    "Four plus three is six.",
+    "Five plus three is six.",
+    "One plus three is six."
    ],
    "nivel": "A1",
    "tags": [
     "cotidiano"
    ],
-   "notaEs": "La hora va con «às» (a + as): «às três», a las tres. El presente «chego» ya sirve de futuro cercano.",
-   "notaEn": "At + time is «às»: «às três», at three. The present «chego» (I arrive) works for the near future.",
+   "notaEs": "«Três», con tilde, es tres. En la suma, «são» (plural) o «dá»: «três mais três são seis». «Mais» es más.",
+   "notaEn": "«Três», with the accent, is three. In sums, «são» (plural) or «dá»: «três mais três são seis». «Mais» means plus or more.",
    "requerTodas": [
-    "pt-p043",
     "pt-p036"
    ]
   },
@@ -17226,51 +17216,47 @@
    "id": "pt-u264",
    "tipo": "frase",
    "requer": "pt-p078",
-   "pt": "Vamos comer alguma coisa?",
-   "es": "¿Vamos a comer algo?",
-   "en": "Shall we get something to eat?",
+   "pt": "Meu filho come pouco.",
+   "es": "Mi hijo come poco.",
+   "en": "My son eats little.",
    "aceitas": [
-    "vamos comer alguma coisa",
-    "vamos comer algo",
-    "bora comer alguma coisa",
-    "bora comer algo"
+    "meu filho come pouco",
+    "o meu filho come pouco",
+    "meu filho come muito pouco",
+    "meu filho nao come muito"
    ],
    "aceitasEs": [
-    "¿Vamos a comer algo?",
-    "¿Comemos algo?",
-    "¿Vamos a comer alguna cosa?"
+    "Mi hijo come poco",
+    "Mi hijo come muy poco",
+    "Mi hijo no come mucho",
+    "Mi niño come poco"
    ],
    "aceitasEn": [
-    "shall we get something to eat",
-    "shall we eat something",
-    "lets eat something",
-    "lets get something to eat",
-    "should we eat something",
-    "should we get something to eat"
+    "my son eats little",
+    "my son doesnt eat much",
+    "my son does not eat much",
+    "my son eats very little"
    ],
    "distratoresEs": [
-    "¿Vamos a beber algo?",
-    "¿Vamos a comprar algo?",
-    "¿Vamos a hacer algo?",
-    "¿Vamos a ver algo?"
+    "Mi hijo duerme poco.",
+    "Mi hijo bebe poco.",
+    "Mi hijo estudia poco.",
+    "Mi hijo corre poco."
    ],
    "distratoresEn": [
-    "Shall we get something to drink?",
-    "Shall we buy something?",
-    "Shall we do something?",
-    "Shall we watch something?"
+    "My son sleeps little.",
+    "My son drinks little.",
+    "My son studies little.",
+    "My son runs little."
    ],
    "nivel": "A1",
    "tags": [
-    "comida",
-    "social"
+    "comida"
    ],
-   "notaEs": "«Vamos comer», sin «a»: el «ir» + infinitivo portugués no lleva preposición. «Alguma coisa» es algo.",
-   "notaEn": "«Vamos comer?» = shall we eat? «Alguma coisa» = something.",
+   "notaEs": "«Pouco» es poco, una cantidad pequeña; «um pouco» es un poco. «Comer» es comer, sin cambios en «come».",
+   "notaEn": "«Pouco» means little, a small amount; «um pouco» means a little. «Comer» means to eat.",
    "requerTodas": [
-    "pt-p005",
-    "pt-p078",
-    "pt-p024"
+    "pt-p078"
    ]
   },
   {
@@ -17400,49 +17386,46 @@
    "id": "pt-u267",
    "tipo": "frase",
    "requer": "pt-p079",
-   "pt": "O que você quer beber?",
-   "es": "¿Qué quieres beber?",
-   "en": "What would you like to drink?",
+   "pt": "Eu bebo muita água.",
+   "es": "Bebo mucha agua.",
+   "en": "I drink a lot of water.",
    "aceitas": [
-    "o que voce quer beber",
-    "o que voce quer tomar",
-    "voce quer beber o que"
+    "eu bebo muita agua",
+    "bebo muita agua",
+    "eu tomo muita agua",
+    "tomo muita agua"
    ],
-   "regionais": {
-    "O que queres beber?": "em Portugal"
-   },
    "aceitasEs": [
-    "¿Qué quieres beber?",
-    "¿Qué quieres tomar?",
-    "¿Qué quiere beber?",
-    "¿Qué quiere tomar?",
-    "¿Qué querés tomar?",
-    "¿Qué querés beber?"
+    "Bebo mucha agua",
+    "Yo bebo mucha agua",
+    "Tomo mucha agua",
+    "Bebo bastante agua"
    ],
    "aceitasEn": [
-    "what would you like to drink",
-    "what do you want to drink"
+    "i drink a lot of water",
+    "i drink lots of water",
+    "i drink plenty of water",
+    "i drink much water"
    ],
    "distratoresEs": [
-    "¿Qué quieres comer?",
-    "¿Qué quieres comprar?",
-    "¿Qué quieres hacer?",
-    "¿Qué quieres ver?"
+    "Vendo mucha agua.",
+    "Desperdicio mucha agua.",
+    "Derramo mucha agua.",
+    "Compro mucha agua."
    ],
    "distratoresEn": [
-    "What would you like to eat?",
-    "What would you like to buy?",
-    "What would you like to do?",
-    "What would you like to see?"
+    "I sell a lot of water.",
+    "I waste a lot of water.",
+    "I spill a lot of water.",
+    "I buy a lot of water."
    ],
    "nivel": "A1",
    "tags": [
     "comida"
    ],
-   "notaEs": "«Beber» y «tomar» sirven igual para las bebidas. En la pregunta, «o que», qué, lleva el «o» delante.",
-   "notaEn": "«O que...?» = what...? «Tomar» works for drinks too.",
+   "notaEs": "«Beber» es beber; con líquidos también se dice «tomar». «Muita água»: «muito» concuerda con «água», que es femenino.",
+   "notaEn": "«Beber» means to drink; with liquids «tomar» also works. «Muita água»: «muito» agrees with the feminine «água».",
    "requerTodas": [
-    "pt-p021",
     "pt-p079"
    ]
   },
@@ -18063,50 +18046,47 @@
    "id": "pt-u278",
    "tipo": "frase",
    "requer": "pt-p082",
-   "pt": "Acordo às sete todo dia.",
-   "es": "Me despierto a las siete todos los días.",
-   "en": "I wake up at seven every day.",
+   "pt": "Ele acorda de mau humor.",
+   "es": "Se despierta de mal humor.",
+   "en": "He wakes up in a bad mood.",
    "aceitas": [
-    "acordo as sete todo dia",
-    "acordo as sete todos os dias",
-    "todo dia acordo as sete",
-    "todos os dias acordo as sete"
+    "ele acorda de mau humor",
+    "ele acorda mal humorado",
+    "ele acorda irritado"
    ],
    "aceitasEs": [
-    "Me despierto a las siete todos los días",
-    "Todos los días me despierto a las siete",
-    "Me despierto todos los días a las siete"
+    "Se despierta de mal humor",
+    "Él se despierta de mal humor",
+    "Se despierta con mal humor",
+    "Despierta de mal humor"
    ],
    "aceitasEn": [
-    "i wake up at seven every day",
-    "every day i wake up at seven",
-    "i wake up every day at seven",
-    "i wake at seven every day"
+    "he wakes up in a bad mood",
+    "he wakes up grumpy",
+    "he wakes up in a foul mood",
+    "he wakes up cranky"
    ],
    "distratoresEs": [
-    "Me acuesto a las siete todos los días.",
-    "Desayuno a las siete todos los días.",
-    "Salgo a las siete todos los días.",
-    "Llego a las siete todos los días."
+    "Se acuesta de mal humor.",
+    "Come de mal humor.",
+    "Trabaja de mal humor.",
+    "Sale de mal humor."
    ],
    "distratoresEn": [
-    "I go to bed at seven every day.",
-    "I have breakfast at seven every day.",
-    "I leave at seven every day.",
-    "I arrive at seven every day."
+    "He goes to bed in a bad mood.",
+    "He eats in a bad mood.",
+    "He works in a bad mood.",
+    "He leaves in a bad mood."
    ],
    "nivel": "A1",
    "tags": [
     "cotidiano",
     "falso-amigo"
    ],
-   "notaEs": "«Acordar» es despertarse, y va sin «me»: «acordo», me despierto. Acordarse es «lembrar».\n🇧🇷 acordar → 🇪🇸 despertarse\n🇧🇷 lembrar → 🇪🇸 acordarse",
-   "notaEn": "«Acordar» = to wake up, with no reflexive pronoun. «Todo dia» = every day.",
+   "notaEs": "«Acordar» es despertarse, y va sin «se» en portugués: «ele acorda». Acordarse es «lembrar».\n🇧🇷 acordar → 🇪🇸 despertarse\n🇧🇷 lembrar → 🇪🇸 acordarse",
+   "notaEn": "«Acordar» means to wake up, with no reflexive pronoun: «ele acorda». «Mau humor» is bad mood.",
    "requerTodas": [
-    "pt-p082",
-    "pt-p120",
-    "pt-p045",
-    "pt-p022"
+    "pt-p082"
    ]
   },
   {
@@ -18114,55 +18094,46 @@
    "id": "pt-u279",
    "tipo": "frase",
    "requer": "pt-p082",
-   "pt": "Me acorda às seis?",
-   "es": "¿Me despiertas a las seis?",
-   "en": "Will you wake me up at six?",
+   "pt": "Quem acordou o bebê?",
+   "es": "¿Quién despertó al bebé?",
+   "en": "Who woke the baby?",
    "aceitas": [
-    "me acorda as seis",
-    "voce me acorda as seis",
-    "pode me acordar as seis",
-    "voce pode me acordar as seis",
-    "me acorde as seis"
+    "quem acordou o bebe",
+    "quem acordou o nenem",
+    "quem foi que acordou o bebe"
    ],
-   "regionais": {
-    "Acordas-me às seis?": "em Portugal"
-   },
    "aceitasEs": [
-    "¿Me despiertas a las seis?",
-    "¿Me despierta a las seis?",
-    "¿Me despertás a las seis?",
-    "¿Me puedes despertar a las seis?",
-    "¿Puedes despertarme a las seis?",
-    "¿Me puede despertar a las seis?"
+    "¿Quién despertó al bebé?",
+    "¿Quién ha despertado al bebé?",
+    "¿Quién fue el que despertó al bebé?",
+    "¿Quién despertó al niño?"
    ],
    "aceitasEn": [
-    "will you wake me up at six",
-    "can you wake me up at six",
-    "will you wake me at six",
-    "can you wake me at six"
+    "who woke the baby",
+    "who woke up the baby",
+    "who woke the baby up",
+    "who was it that woke the baby"
    ],
    "distratoresEs": [
-    "¿Me llamas a las seis?",
-    "¿Me esperas a las seis?",
-    "¿Me recoges a las seis?",
-    "¿Me ves a las seis?"
+    "¿Quién abrazó al bebé?",
+    "¿Quién asustó al bebé?",
+    "¿Quién cargó al bebé?",
+    "¿Quién vio al bebé?"
    ],
    "distratoresEn": [
-    "Will you call me at six?",
-    "Will you wait for me at six?",
-    "Will you pick me up at six?",
-    "Will you see me at six?"
+    "Who hugged the baby?",
+    "Who scared the baby?",
+    "Who carried the baby?",
+    "Who saw the baby?"
    ],
    "nivel": "A1",
    "tags": [
-    "cotidiano",
-    "pronomes"
+    "cotidiano"
    ],
-   "notaEs": "Con objeto, «acordar» es despertar a alguien: «me acorda». En Brasil el pronombre va delante, aun al empezar la frase.",
-   "notaEn": "With an object, «acordar» = to wake someone up. In Brazil the pronoun comes first, even at the start of the sentence.",
+   "notaEs": "Con objeto, «acordar» es despertar a alguien: «acordou o bebê». El portugués no usa «a» delante de la persona: «acordou o bebê», y no «ao bebê».",
+   "notaEn": "With an object, «acordar» means to wake someone up. Portuguese has no «a» before the person: «acordou o bebê».",
    "requerTodas": [
-    "pt-p082",
-    "pt-p179"
+    "pt-p082"
    ]
   },
   {
@@ -19761,47 +19732,48 @@
    "id": "pt-u310",
    "tipo": "frase",
    "requer": "pt-p098",
-   "pt": "Tomo café da manhã às sete.",
-   "es": "Desayuno a las siete.",
-   "en": "I have breakfast at seven.",
+   "pt": "O café da manhã tem pão e fruta.",
+   "es": "El desayuno tiene pan y fruta.",
+   "en": "Breakfast has bread and fruit.",
    "aceitas": [
-    "tomo cafe da manha as sete",
-    "tomo o cafe da manha as sete"
+    "o cafe da manha tem pao e fruta",
+    "o cafe da manha tem pao e frutas",
+    "o cafe da manha inclui pao e fruta",
+    "no cafe da manha tem pao e fruta"
    ],
-   "regionais": {
-    "Tomo o pequeno-almoço às sete.": "em Portugal"
-   },
    "aceitasEs": [
-    "Desayuno a las siete",
-    "Tomo el desayuno a las siete"
+    "El desayuno tiene pan y fruta",
+    "El desayuno incluye pan y fruta",
+    "El desayuno trae pan y fruta",
+    "En el desayuno hay pan y fruta"
    ],
    "aceitasEn": [
-    "i have breakfast at seven",
-    "i eat breakfast at seven"
+    "breakfast has bread and fruit",
+    "breakfast includes bread and fruit",
+    "breakfast comes with bread and fruit",
+    "breakfast is bread and fruit"
    ],
    "distratoresEs": [
-    "Almuerzo a las siete.",
-    "Ceno a las siete.",
-    "Me despierto a las siete.",
-    "Salgo a las siete."
+    "El desayuno tiene arroz y frijoles.",
+    "El desayuno tiene pasta y salsa.",
+    "El desayuno tiene sopa y carne.",
+    "El desayuno tiene pescado y ensalada."
    ],
    "distratoresEn": [
-    "I have lunch at seven.",
-    "I have dinner at seven.",
-    "I wake up at seven.",
-    "I leave at seven."
+    "Breakfast has rice and beans.",
+    "Breakfast has pasta and sauce.",
+    "Breakfast has soup and meat.",
+    "Breakfast has fish and salad."
    ],
    "nivel": "A1",
    "tags": [
     "comida",
     "cotidiano"
    ],
-   "notaEs": "Desayunar no tiene verbo propio en portugués: es «tomar café da manhã». Almorzar y cenar sí lo tienen: «almoçar», «jantar».",
-   "notaEn": "There's no single verb for having breakfast: «tomar café da manhã». Lunch and dinner do have verbs: «almoçar», «jantar».",
+   "notaEs": "«O café da manhã» es el desayuno; «o café» solo es la bebida. «Da» es «de» + «a». La fruta se dice en singular, como colectivo: «pão e fruta».",
+   "notaEn": "«O café da manhã» is breakfast; «o café» alone is the drink. «Da» is «de» + «a».",
    "requerTodas": [
-    "pt-p190",
-    "pt-p098",
-    "pt-p120"
+    "pt-p098"
    ]
   },
   {
@@ -24720,52 +24692,48 @@
    "id": "pt-u416",
    "tipo": "frase",
    "requer": "pt-p109",
-   "pt": "Vamos ao cinema hoje?",
-   "es": "¿Vamos al cine hoy?",
-   "en": "Shall we go to the movies today?",
+   "pt": "O cinema fica perto do hotel.",
+   "es": "El cine queda cerca del hotel.",
+   "en": "The movie theater is near the hotel.",
    "aceitas": [
-    "vamos ao cinema hoje",
-    "vamos no cinema hoje",
-    "a gente vai ao cinema hoje"
+    "o cinema fica perto do hotel",
+    "o cinema e perto do hotel",
+    "o cinema fica pertinho do hotel",
+    "o cinema fica proximo ao hotel"
    ],
    "aceitasEs": [
-    "¿Vamos al cine hoy?",
-    "¿Vamos hoy al cine?",
-    "¿Hoy vamos al cine?"
+    "El cine queda cerca del hotel",
+    "El cine está cerca del hotel",
+    "El cine está cerca del hotel.",
+    "El cine queda al lado del hotel"
    ],
    "aceitasEn": [
-    "shall we go to the movies today",
-    "should we go to the movies today",
-    "do you want to go to the movies today",
-    "lets go to the movies today",
-    "shall we go to the cinema today",
-    "want to go to the movies today",
-    "how about the movies today"
+    "the movie theater is near the hotel",
+    "the cinema is near the hotel",
+    "the cinema is close to the hotel",
+    "the movie theater is close to the hotel"
    ],
    "distratoresEs": [
-    "¿Vamos al parque hoy?",
-    "¿Vamos al centro hoy?",
-    "¿Vamos al teatro hoy?",
-    "¿Vamos al mercado hoy?"
+    "El museo queda cerca del hotel.",
+    "El banco queda cerca del hotel.",
+    "El mercado queda cerca del hotel.",
+    "El parque queda cerca del hotel."
    ],
    "distratoresEn": [
-    "Shall we go to the park today?",
-    "Shall we go downtown today?",
-    "Shall we go to the theater today?",
-    "Shall we go to the market today?"
+    "The museum is near the hotel.",
+    "The bank is near the hotel.",
+    "The market is near the hotel.",
+    "The park is near the hotel."
    ],
    "nivel": "A1",
    "tags": [
     "cidade",
-    "cultura",
-    "preposição"
+    "cultura"
    ],
-   "notaEs": "«Ao» es «a» + «o», como «al»: «vamos ao cinema». En la charla de Brasil se oye «vamos no cinema», con «em»; escrito, «ao».",
-   "notaEn": "«Ao» = «a» (to) + «o» (the). «O cinema» is the movie theater; you go «ao cinema». Casual Brazil also says «no cinema».",
+   "notaEs": "«Ficar» aquí es estar situado: «fica perto». «Do» es «de» + «o». «Cinema» es el cine, la sala y el arte.",
+   "notaEn": "«Ficar» here means to be located: «fica perto». «Do» is «de» + «o». «Cinema» is the movie theater and the art form.",
    "requerTodas": [
-    "pt-p005",
-    "pt-p109",
-    "pt-p046"
+    "pt-p109"
    ]
   },
   {
@@ -24773,50 +24741,47 @@
    "id": "pt-u417",
    "tipo": "frase",
    "requer": "pt-p109",
-   "pt": "Gosto muito de cinema.",
-   "es": "Me gusta mucho el cine.",
-   "en": "I really like movies.",
+   "pt": "Meu irmão trabalha no cinema.",
+   "es": "Mi hermano trabaja en el cine.",
+   "en": "My brother works in the movies.",
    "aceitas": [
-    "gosto muito de cinema",
-    "eu gosto muito de cinema",
-    "gosto muito do cinema"
+    "meu irmao trabalha no cinema",
+    "o meu irmao trabalha no cinema",
+    "meu irmao trabalha em cinema",
+    "meu irmao trabalha com cinema"
    ],
    "aceitasEs": [
-    "Me gusta mucho el cine.",
-    "El cine me gusta mucho.",
-    "A mí me gusta mucho el cine."
+    "Mi hermano trabaja en el cine",
+    "Mi hermano trabaja en el cine.",
+    "Mi hermano trabaja en una sala de cine",
+    "Mi hermano trabaja con cine"
    ],
    "aceitasEn": [
-    "i really like movies",
-    "i like movies a lot",
-    "i really like the movies",
-    "i really like cinema",
-    "i like cinema a lot",
-    "i really like film",
-    "i really like films",
-    "i like films a lot"
+    "my brother works in the movies",
+    "my brother works in film",
+    "my brother works in cinema",
+    "my brother works at the movie theater"
    ],
    "distratoresEs": [
-    "Me gusta mucho el teatro.",
-    "Me gusta mucho el fútbol.",
-    "Me gusta mucho el arte.",
-    "Me gusta mucho el baile."
+    "Mi hermano trabaja en el banco.",
+    "Mi hermano trabaja en la escuela.",
+    "Mi hermano trabaja en el hospital.",
+    "Mi hermano trabaja en el mercado."
    ],
    "distratoresEn": [
-    "I really like theater.",
-    "I really like soccer.",
-    "I really like art.",
-    "I really like dancing."
+    "My brother works at the bank.",
+    "My brother works at the school.",
+    "My brother works at the hospital.",
+    "My brother works at the market."
    ],
    "nivel": "A1",
    "tags": [
-    "cultura"
+    "cultura",
+    "trabalho"
    ],
-   "notaEs": "Aquí «cinema» es el arte, no la sala. Y tras «gostar de» el portugués no pone artículo cuando habla en general: «gosto de cinema», me gusta el cine.",
-   "notaEn": "«Cinema» here is film as an art. «Gostar de» + a noun in general takes no article: «gosto de cinema», «gosto de café».",
+   "notaEs": "«No» es «em» + «o»: «no cinema», en el cine. «Cinema» es la sala, el arte y el sector.",
+   "notaEn": "«No» is «em» + «o»: «no cinema», in the movies. «Cinema» is the theater, the art and the industry.",
    "requerTodas": [
-    "pt-p062",
-    "pt-p006",
     "pt-p109"
    ]
   },
@@ -26171,55 +26136,48 @@
    "id": "pt-u444",
    "tipo": "frase",
    "requer": "pt-p125",
-   "pt": "Vamos jantar fora?",
-   "es": "¿Vamos a cenar afuera?",
-   "en": "Shall we eat out?",
+   "pt": "O jantar está pronto.",
+   "es": "La cena está lista.",
+   "en": "Dinner is ready.",
    "aceitas": [
-    "vamos jantar fora",
-    "vamos sair para jantar"
+    "o jantar esta pronto",
+    "a janta esta pronta",
+    "o jantar ficou pronto",
+    "o jantar ja esta pronto"
    ],
    "aceitasEs": [
-    "¿Vamos a cenar afuera?",
-    "¿Vamos a cenar fuera?",
-    "¿Cenamos afuera?",
-    "¿Cenamos fuera?",
-    "¿Salimos a cenar?",
-    "¿Vamos a salir a cenar?"
+    "La cena está lista",
+    "La cena ya está lista",
+    "La cena está preparada",
+    "La comida de la noche está lista"
    ],
    "aceitasEn": [
-    "shall we eat out",
-    "should we eat out",
-    "shall we go out for dinner",
-    "should we go out for dinner",
-    "do you want to eat out",
-    "lets eat out",
-    "lets go out for dinner",
-    "want to go out for dinner",
-    "shall we have dinner out"
+    "dinner is ready",
+    "the dinner is ready",
+    "supper is ready",
+    "dinner is done"
    ],
    "distratoresEs": [
-    "¿Vamos a almorzar afuera?",
-    "¿Vamos a desayunar afuera?",
-    "¿Vamos a correr afuera?",
-    "¿Vamos a jugar afuera?"
+    "La cena está fría.",
+    "La cena está cara.",
+    "La cena está quemada.",
+    "La cena está salada."
    ],
    "distratoresEn": [
-    "Shall we go out for lunch?",
-    "Shall we go out for breakfast?",
-    "Shall we go for a run outside?",
-    "Shall we play outside?"
+    "Dinner is cold.",
+    "Dinner is expensive.",
+    "Dinner is burnt.",
+    "Dinner is salty."
    ],
    "nivel": "A1",
    "tags": [
     "comida",
-    "social"
+    "casa"
    ],
-   "notaEs": "«Jantar» es también el verbo cenar: «vamos jantar fora?», ¿salimos a cenar? «Fora», afuera: comer en un restaurante.",
-   "notaEn": "«Jantar» is also the verb, to have dinner. «Jantar fora» = to eat out.",
+   "notaEs": "«O jantar» es la cena, la comida de la noche; «jantar» es también el verbo. El almuerzo es «o almoço».",
+   "notaEn": "«O jantar» is dinner, the evening meal; «jantar» is also the verb. Lunch is «o almoço».",
    "requerTodas": [
-    "pt-p005",
-    "pt-p125",
-    "+fora"
+    "pt-p125"
    ]
   },
   {
@@ -28968,53 +28926,46 @@
    "id": "pt-u535",
    "tipo": "frase",
    "requer": "pt-p155",
-   "pt": "Vamos à praia no domingo?",
-   "es": "¿Vamos a la playa el domingo?",
-   "en": "Shall we go to the beach on Sunday?",
+   "pt": "O domingo é meu dia de descanso.",
+   "es": "El domingo es mi día de descanso.",
+   "en": "Sunday is my day of rest.",
    "aceitas": [
-    "vamos na praia no domingo",
-    "vamos para a praia no domingo",
-    "bora pra praia no domingo",
-    "domingo vamos a praia",
-    "vamos a praia domingo",
-    "vamos na praia domingo"
+    "o domingo e meu dia de descanso",
+    "domingo e meu dia de descanso",
+    "o domingo e o meu dia de descanso",
+    "domingo e o meu dia de descanso"
    ],
    "aceitasEs": [
-    "¿Vamos a la playa el domingo?",
-    "¿Vamos el domingo a la playa?",
-    "¿Vamos a ir a la playa el domingo?"
+    "El domingo es mi día de descanso",
+    "Domingo es mi día de descanso",
+    "El domingo es mi día libre",
+    "El domingo es mi día de reposo"
    ],
    "aceitasEn": [
-    "shall we go to the beach on sunday",
-    "should we go to the beach on sunday",
-    "lets go to the beach on sunday",
-    "do you want to go to the beach on sunday",
-    "want to go to the beach on sunday",
-    "how about going to the beach on sunday",
-    "shall we go to the beach sunday"
+    "sunday is my day of rest",
+    "sunday is my day off",
+    "sunday is my rest day",
+    "sunday is my day to rest"
    ],
    "distratoresEs": [
-    "¿Vamos a la playa el sábado?",
-    "¿Vamos a la playa el lunes?",
-    "¿Vamos a la playa el viernes?",
-    "¿Vamos a la playa el jueves?"
+    "El lunes es mi día de descanso.",
+    "El sábado es mi día de descanso.",
+    "El viernes es mi día de descanso.",
+    "El martes es mi día de descanso."
    ],
    "distratoresEn": [
-    "Shall we go to the beach on Saturday?",
-    "Shall we go to the beach on Monday?",
-    "Shall we go to the beach on Friday?",
-    "Shall we go to the beach on Thursday?"
+    "Monday is my day of rest.",
+    "Saturday is my day of rest.",
+    "Friday is my day of rest.",
+    "Tuesday is my day of rest."
    ],
    "nivel": "A1",
    "tags": [
-    "viagem",
-    "social"
+    "cotidiano"
    ],
-   "notaEs": "«Vamos à praia?» es la invitación de siempre; «à» = «a» + «a». En Brasil también se oye «vamos na praia». Con día concreto: «no domingo», el domingo.",
-   "notaEn": "«Vamos…?» = shall we…?, let's. «No domingo» = on Sunday (the coming one). «À» is «a» + «a», to the.",
+   "notaEs": "«Domingo» y «sábado» no llevan «-feira»; los demás días sí: «segunda-feira», «terça-feira». Los días se escriben en minúscula.",
+   "notaEn": "«Domingo» and «sábado» take no «-feira»; the other days do: «segunda-feira», «terça-feira». Weekdays are lowercase.",
    "requerTodas": [
-    "pt-p005",
-    "pt-p113",
     "pt-p155"
    ]
   },
@@ -29254,53 +29205,47 @@
    "id": "pt-u540",
    "tipo": "frase",
    "requer": "pt-p158",
-   "pt": "O que tem para o almoço?",
-   "es": "¿Qué hay de almuerzo?",
-   "en": "What's for lunch?",
+   "pt": "O almoço dura uma hora.",
+   "es": "El almuerzo dura una hora.",
+   "en": "Lunch lasts one hour.",
    "aceitas": [
-    "o que tem de almoco",
-    "o que e que tem pro almoco",
-    "o que ha para o almoco",
-    "que que tem pro almoco"
+    "o almoco dura uma hora",
+    "o almoco dura 1 hora",
+    "o almoco leva uma hora",
+    "o almoco demora uma hora"
    ],
-   "regionais": {
-    "O que é que há para o almoço?": "em Portugal"
-   },
    "aceitasEs": [
-    "¿Qué hay de almuerzo?",
-    "¿Qué hay para el almuerzo?",
-    "¿Qué hay para almorzar?",
-    "¿Qué hay de comer?",
-    "¿Qué hay para comer?"
+    "El almuerzo dura una hora",
+    "La comida dura una hora",
+    "El almuerzo dura 1 hora",
+    "El almuerzo tarda una hora"
    ],
    "aceitasEn": [
-    "whats for lunch",
-    "what is for lunch",
-    "what are we having for lunch",
-    "whats there for lunch",
-    "what do we have for lunch"
+    "lunch lasts an hour",
+    "lunch lasts one hour",
+    "lunch takes an hour",
+    "the lunch lasts an hour"
    ],
    "distratoresEs": [
-    "¿Qué hay de cena?",
-    "¿Qué hay de postre?",
-    "¿Qué hay de desayuno?",
-    "¿Qué hay de beber?"
+    "El almuerzo dura dos horas.",
+    "El almuerzo dura media hora.",
+    "El almuerzo dura tres horas.",
+    "El almuerzo dura diez minutos."
    ],
    "distratoresEn": [
-    "What's for dinner?",
-    "What's for dessert?",
-    "What's for breakfast?",
-    "What's to drink?"
+    "Lunch lasts two hours.",
+    "Lunch lasts half an hour.",
+    "Lunch lasts three hours.",
+    "Lunch lasts ten minutes."
    ],
    "nivel": "A1",
    "tags": [
     "comida",
-    "casa"
+    "cotidiano"
    ],
-   "notaEs": "En Brasil «tem» hace muchas veces de «hay»: «o que tem para o almoço?», ¿qué hay de almuerzo? «Há» es la forma más formal.",
-   "notaEn": "In speech Brazilians use «tem» (has) for there is: «o que tem para o almoço?», what's for lunch? «Há» is the formal option.",
+   "notaEs": "«O almoço» es el almuerzo, la comida del mediodía; «almoçar» es el verbo. «Durar» es durar, como en español.",
+   "notaEn": "«O almoço» is lunch; «almoçar» is the verb. «Durar» means to last.",
    "requerTodas": [
-    "pt-p003",
     "pt-p158"
    ]
   },
@@ -30940,55 +30885,46 @@
    "id": "pt-u623",
    "tipo": "frase",
    "requer": "pt-p178",
-   "pt": "Passei a manhã toda em casa.",
-   "es": "Pasé toda la mañana en casa.",
-   "en": "I spent the whole morning at home.",
+   "pt": "A manhã está fria.",
+   "es": "La mañana está fría.",
+   "en": "The morning is cold.",
    "aceitas": [
-    "passei a manha toda em casa",
-    "passei a manha inteira em casa",
-    "passei toda a manha em casa",
-    "fiquei a manha toda em casa"
+    "a manha esta fria",
+    "a manha e fria",
+    "a manha esta friinha"
    ],
    "aceitasEs": [
-    "Pasé toda la mañana en casa",
-    "Pasé la mañana entera en casa",
-    "Estuve toda la mañana en casa",
-    "Me quedé toda la mañana en casa",
-    "He pasado toda la mañana en casa"
+    "La mañana está fría",
+    "Hace frío por la mañana",
+    "La mañana es fría",
+    "Esta mañana está fría"
    ],
    "aceitasEn": [
-    "i spent the whole morning at home",
-    "i spent all morning at home",
-    "i was home all morning",
-    "i was at home all morning",
-    "i spent the entire morning at home",
-    "ive spent the whole morning at home",
-    "ive spent all morning at home"
+    "the morning is cold",
+    "the morning is chilly",
+    "this morning is cold",
+    "the morning is cool"
    ],
    "distratoresEs": [
-    "Pasé toda la tarde en casa.",
-    "Pasé toda la noche en casa.",
-    "Pasé todo el día en casa.",
-    "Pasé toda la semana en casa."
+    "La mañana está calurosa.",
+    "La mañana está lluviosa.",
+    "La mañana está oscura.",
+    "La mañana está tranquila."
    ],
    "distratoresEn": [
-    "I spent the whole afternoon at home.",
-    "I spent the whole night at home.",
-    "I spent the whole day at home.",
-    "I spent the whole week at home."
+    "The morning is hot.",
+    "The morning is rainy.",
+    "The morning is dark.",
+    "The morning is quiet."
    ],
    "nivel": "A1",
    "tags": [
-    "casa",
     "cotidiano"
    ],
-   "notaEs": "«Passar» el tiempo es pasarlo, como en español. «A manhã toda» o «toda a manhã», toda la mañana; sin artículo, «toda manhã» es cada mañana.",
-   "notaEn": "«Passar» time = to spend it. «A manhã toda» = the whole morning; «toda manhã», with no article, means every morning.",
+   "notaEs": "«A manhã» es la mañana, parte del día; «amanhã», con una «m» más, es mañana, el día siguiente.\n🇧🇷 a manhã → 🇪🇸 la mañana\n🇧🇷 amanhã → 🇪🇸 mañana",
+   "notaEn": "«A manhã» is the morning; «amanhã», one letter longer, is tomorrow.",
    "requerTodas": [
-    "pt-p037",
-    "pt-p178",
-    "pt-p045",
-    "pt-p033"
+    "pt-p178"
    ]
   },
   {
@@ -43311,43 +43247,45 @@
    "id": "pt-u705",
    "tipo": "frase",
    "requer": "pt-p259",
-   "pt": "Gosto da história do Brasil.",
-   "es": "Me gusta la historia de Brasil.",
-   "en": "I like Brazilian history.",
+   "pt": "A história do livro é triste.",
+   "es": "La historia del libro es triste.",
+   "en": "The story of the book is sad.",
    "aceitas": [
-    "gosto da historia do brasil",
-    "eu gosto da historia do brasil",
-    "gosto de historia do brasil"
+    "a historia do livro e triste",
+    "a historia do livro e muito triste",
+    "o enredo do livro e triste"
    ],
    "aceitasEs": [
-    "Me gusta la historia de Brasil.",
-    "Me gusta la historia del Brasil.",
-    "Me gusta la historia brasileña."
+    "La historia del libro es triste",
+    "La trama del libro es triste",
+    "La historia del libro es muy triste",
+    "El libro tiene una historia triste"
    ],
    "aceitasEn": [
-    "i like brazilian history",
-    "i like the history of brazil"
+    "the story of the book is sad",
+    "the books story is sad",
+    "the plot of the book is sad",
+    "the story in the book is sad"
    ],
    "distratoresEs": [
-    "Me gusta la música de Brasil.",
-    "Me gusta la comida de Brasil.",
-    "Me gusta la gente de Brasil.",
-    "Me gusta la geografía de Brasil."
+    "La historia del libro es larga.",
+    "La historia del libro es divertida.",
+    "La historia del libro es difícil.",
+    "La historia del libro es antigua."
    ],
    "distratoresEn": [
-    "I like Brazilian music.",
-    "I like Brazilian food.",
-    "I like Brazilian people.",
-    "I like Brazilian geography."
+    "The story of the book is long.",
+    "The story of the book is funny.",
+    "The story of the book is hard.",
+    "The story of the book is old."
    ],
    "nivel": "A1",
    "tags": [
     "cultura"
    ],
-   "notaEs": "«Gostar de» + «a» = «gostar da»: «gosto da história», me gusta la historia.",
-   "notaEn": "«Gosto da história», I like the history: «gostar de» + «a» = «da».",
+   "notaEs": "«História» es historia, la ciencia, y también el cuento o la trama: «a história do livro». «Do» es «de» + «o».",
+   "notaEn": "«História» means history and also story or plot: «a história do livro». «Do» is «de» + «o».",
    "requerTodas": [
-    "pt-p062",
     "pt-p259"
    ]
   },

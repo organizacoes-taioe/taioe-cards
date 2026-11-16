@@ -110,7 +110,7 @@
     ]
    },
    {
-    "it": "Il treno arriva alle otto.",
+    "it": "Il treno arriva in ritardo.",
     "w": "arriva",
     "de": "it-u156",
     "exp": "arriva: presente de arrivare; o horário marcado vai no presente, como no Brasil.",
@@ -598,30 +598,6 @@
      "l': antes de vogal, no singular (l'anno, l'acqua)",
      "sem artigo: possessivo com parente no singular (mia madre)"
     ]
-   },
-   {
-    "it": "Metti i piatti sul tavolo.",
-    "w": "i piatti",
-    "de": "it-u626",
-    "exp": "i: o plural de il piatto.",
-    "distratores": [
-     "gli: plural masculino antes de vogal (gli amici)",
-     "l': antes de vogal, no singular (l'anno, l'acqua)",
-     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
-     "sem artigo: possessivo com parente no singular (mia madre)"
-    ]
-   },
-   {
-    "it": "Ti piacciono i gatti?",
-    "w": "i gatti",
-    "de": "it-u405",
-    "exp": "i: o plural de il gatto.",
-    "distratores": [
-     "gli: plural masculino antes de vogal (gli amici)",
-     "l': antes de vogal, no singular (l'anno, l'acqua)",
-     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
-     "sem artigo: possessivo com parente no singular (mia madre)"
-    ]
    }
   ]
  },
@@ -782,18 +758,6 @@
     "w": "gli amici",
     "de": "it-u284",
     "exp": "gli: amici começa com vogal; no singular, l'amico.",
-    "distratores": [
-     "il, i: masculino antes de consoante (il libro, i libri)",
-     "l': antes de vogal, no singular (l'anno, l'acqua)",
-     "lo, gli: antes de s + consoante, z, gn, ps (lo stesso, gli studi)",
-     "sem artigo: possessivo com parente no singular (mia madre)"
-    ]
-   },
-   {
-    "it": "Gli ospiti arrivano alle otto.",
-    "w": "Gli ospiti",
-    "de": "it-u634",
-    "exp": "gli: ospiti começa com vogal; no singular, l'ospite.",
     "distratores": [
      "il, i: masculino antes de consoante (il libro, i libri)",
      "l': antes de vogal, no singular (l'anno, l'acqua)",
@@ -1000,18 +964,6 @@
     "distratores": [
      "c'è, ci sono: «há», «tem»",
      "ci: «lá», «nisso» (ci vado, non ci credo)",
-     "ne: «disso», «deles» (ne parliamo)",
-     "si impessoal (come si dice?)"
-    ]
-   },
-   {
-    "it": "Ci vediamo alle tre.",
-    "w": "Ci",
-    "de": "it-u155",
-    "exp": "ci vediamo: «a gente se vê», com noi.",
-    "distratores": [
-     "ci: «lá», «nisso» (ci vado, non ci credo)",
-     "c'è, ci sono: «há», «tem»",
      "ne: «disso», «deles» (ne parliamo)",
      "si impessoal (come si dice?)"
     ]
@@ -2656,18 +2608,6 @@
     ]
    },
    {
-    "it": "A che ora finisci di lavorare?",
-    "w": "di lavorare",
-    "de": "it-u335",
-    "exp": "finire di + infinitivo: «terminar de».",
-    "distratores": [
-     "da: para quê, ou em que idade (da bere, da piccolo)",
-     "di: de quê ou de quem (matéria, conteúdo, posse)",
-     "di sì, di no: «que sim», «que não» (penso di sì)",
-     "da: há quanto tempo, desde (da tre anni)"
-    ]
-   },
-   {
     "it": "Sono stanc{o|a} di aspettare.",
     "w": "di aspettare",
     "de": "it-u619",
@@ -2907,7 +2847,7 @@
     ]
    },
    {
-    "it": "Dante nacque a Firenze nel 1265.",
+    "it": "Dante nacque a Firenze nel milleduecentosessantacinque.",
     "w": "nacque",
     "de": "it-v113",
     "exp": "nacque: passato remoto de nascere.",

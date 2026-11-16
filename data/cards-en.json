@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "en",
- "gerado_em": "2026-11-03",
+ "gerado_em": "2026-11-16",
  "total": 2810,
  "cards": [
   {
@@ -703,47 +703,46 @@
    "id": "en-u008",
    "tipo": "frase",
    "requer": "en-p008",
-   "en": "I need a spoon for the soup.",
-   "pt": "Preciso de uma colher para a sopa.",
-   "es": "Necesito una cuchara para la sopa.",
+   "en": "She stirs the tea with a spoon.",
+   "pt": "Ela mexe o chá com uma colher.",
+   "es": "Ella revuelve el té con una cuchara.",
    "aceitas": [
-    "preciso de uma colher para a sopa",
-    "preciso de uma colher pra sopa",
-    "queria uma colher para a sopa",
-    "eu preciso de colher para a sopa"
+    "ela mexe o cha com uma colher",
+    "ela mexe o cha com a colher",
+    "ela mexe o cha usando uma colher"
    ],
    "aceitasEs": [
-    "Necesito una cuchara para la sopa",
-    "Hace falta una cuchara para la sopa",
-    "Quiero una cuchara para la sopa"
+    "Ella revuelve el té con una cuchara",
+    "Revuelve el té con una cuchara",
+    "Ella remueve el té con una cuchara",
+    "Ella mueve el té con una cuchara"
    ],
    "aceitasEn": [
-    "i need a spoon for the soup",
-    "i need a spoon to eat the soup"
+    "she stirs the tea with a spoon",
+    "she stirs her tea with a spoon",
+    "she is stirring the tea with a spoon"
    ],
    "distratores": [
-    "Preciso de um garfo para a sopa.",
-    "Preciso de uma faca para a sopa.",
-    "Preciso de um prato para a sopa.",
-    "Preciso de um guardanapo para a sopa."
+    "Ela mexe o chá com um garfo.",
+    "Ela mexe o chá com uma faca.",
+    "Ela mexe o chá com um palito.",
+    "Ela mexe o chá com uma vareta."
    ],
    "distratoresEs": [
-    "Necesito un tenedor para la sopa.",
-    "Necesito un cuchillo para la sopa.",
-    "Necesito un plato para la sopa.",
-    "Necesito una servilleta para la sopa."
+    "Ella revuelve el té con un tenedor.",
+    "Ella revuelve el té con un cuchillo.",
+    "Ella revuelve el té con un palillo.",
+    "Ella revuelve el té con una varilla."
    ],
    "nivel": "A1",
    "tags": [
     "comida",
     "cotidiano"
    ],
-   "nota": "Objeto contável pede artigo: «a spoon», e nunca «I need spoon». No plural, «spoons», sem artigo nenhum.",
-   "notaEs": "El objeto contable pide artículo: «a spoon», nunca «I need spoon». En plural, «spoons», sin artículo.",
+   "nota": "«With» marca o instrumento: «with a spoon», com uma colher. Objeto contável pede artigo: «a spoon», e nunca «with spoon».",
+   "notaEs": "«With» marca el instrumento: «with a spoon», con una cuchara. El objeto contable pide artículo: «a spoon».",
    "requerTodas": [
-    "en-p244",
-    "en-p008",
-    "en-p684"
+    "en-p008"
    ]
   },
   {
@@ -2181,48 +2180,47 @@
    "id": "en-u016",
    "tipo": "frase",
    "requer": "en-p016",
-   "en": "Let's resume the meeting.",
-   "pt": "Vamos retomar a reunião.",
-   "es": "Vamos a reanudar la reunión.",
+   "en": "The class resumes after lunch.",
+   "pt": "A aula recomeça depois do almoço.",
+   "es": "La clase se reanuda después del almuerzo.",
    "aceitas": [
-    "vamos retomar a reuniao",
-    "vamos recomecar a reuniao",
-    "vamos continuar a reuniao",
-    "vamos voltar a reuniao"
+    "a aula recomeca depois do almoco",
+    "a aula e retomada depois do almoco",
+    "a aula volta depois do almoco",
+    "a aula continua depois do almoco"
    ],
    "aceitasEs": [
-    "Vamos a reanudar la reunión",
-    "Reanudemos la reunión",
-    "Vamos a retomar la reunión",
-    "Vamos a continuar la reunión"
+    "La clase se reanuda después del almuerzo",
+    "La clase se retoma después del almuerzo",
+    "La clase continúa después del almuerzo",
+    "La clase vuelve después del almuerzo"
    ],
    "aceitasEn": [
-    "lets resume the meeting",
-    "let us resume the meeting"
+    "the class resumes after lunch",
+    "the class starts again after lunch",
+    "the class begins again after lunch"
    ],
    "distratores": [
-    "Vamos resumir a reunião.",
-    "Vamos encerrar a reunião.",
-    "Vamos adiar a reunião.",
-    "Vamos gravar a reunião."
+    "A aula termina depois do almoço.",
+    "A aula muda depois do almoço.",
+    "A aula para depois do almoço.",
+    "A aula é cancelada depois do almoço."
    ],
    "distratoresEs": [
-    "Vamos a resumir la reunión.",
-    "Vamos a terminar la reunión.",
-    "Vamos a aplazar la reunión.",
-    "Vamos a grabar la reunión."
+    "La clase termina después del almuerzo.",
+    "La clase cambia después del almuerzo.",
+    "La clase se detiene después del almuerzo.",
+    "La clase se cancela después del almuerzo."
    ],
    "nivel": "B2",
    "tags": [
     "falso-amigo",
     "trabalho"
    ],
-   "nota": "Com nome, o falso amigo é outro: «a résumé» é o currículo, e é assim que se chama nos Estados Unidos — na Inglaterra é «a CV».",
-   "notaEs": "Con el sustantivo el falso amigo es otro: «a résumé» es el currículum, y así se llama en Estados Unidos; en Inglaterra es «a CV».",
+   "nota": "«To resume» é retomar, continuar depois de uma pausa; resumir é «to summarize». O substantivo «résumé» é o currículo, nos Estados Unidos.",
+   "notaEs": "«To resume» es reanudar, continuar tras una pausa; resumir es «to summarize». El sustantivo «résumé» es el currículum, en Estados Unidos.",
    "requerTodas": [
-    "en-p234",
-    "en-p016",
-    "en-p325"
+    "en-p016"
    ]
   },
   {
@@ -2827,45 +2825,46 @@
    "id": "en-u023",
    "tipo": "frase",
    "requer": "en-p023",
-   "en": "I need another blanket.",
-   "pt": "Preciso de outro cobertor.",
-   "es": "Necesito otra manta.",
+   "en": "Cover yourself with a blanket.",
+   "pt": "Cubra-se com um cobertor.",
+   "es": "Cúbrete con una manta.",
    "aceitas": [
-    "preciso de outro cobertor",
-    "eu preciso de outro cobertor",
-    "preciso de mais um cobertor"
+    "cubra se com um cobertor",
+    "cubra te com um cobertor",
+    "se cubra com um cobertor",
+    "se cobre com um cobertor"
    ],
    "aceitasEs": [
-    "Necesito otra manta",
-    "Necesito una manta más",
-    "Me hace falta otra manta"
+    "Cúbrete con una manta",
+    "Tápate con una manta",
+    "Cúbrete con una frazada",
+    "Cúbrete con una cobija"
    ],
    "aceitasEn": [
-    "i need another blanket",
-    "i need one more blanket"
+    "cover yourself with a blanket",
+    "cover up with a blanket",
+    "cover yourself up with a blanket"
    ],
    "distratores": [
-    "Preciso de outro lençol.",
-    "Preciso de outro colchão.",
-    "Preciso de outro casaco.",
-    "Preciso de outro tapete."
+    "Cubra-se com uma toalha.",
+    "Cubra-se com um lençol.",
+    "Cubra-se com uma jaqueta.",
+    "Cubra-se com um travesseiro."
    ],
    "distratoresEs": [
-    "Necesito otra sábana.",
-    "Necesito otro colchón.",
-    "Necesito otra chaqueta.",
-    "Necesito otra alfombra."
+    "Cúbrete con una toalla.",
+    "Cúbrete con una sábana.",
+    "Cúbrete con una chaqueta.",
+    "Cúbrete con una almohada."
    ],
    "nivel": "A2",
    "tags": [
     "casa",
     "cotidiano"
    ],
-   "nota": "«Another» é uma palavra só, e já carrega o «um»: «another blanket», mais um. Com plural ou incontável se usa «more»: «more blankets», «more water».",
-   "notaEs": "«Another» es una sola palabra, y ya lleva el «un» dentro: «another blanket», una más. Con plural o incontable se usa «more»: «more blankets», «more water».",
+   "nota": "«Blanket» é o cobertor. «Cover yourself» é cubra-se: o pronome «yourself» é reflexivo, e o «with» marca o que cobre.",
+   "notaEs": "«Blanket» es la manta. «Cover yourself» es cúbrete: «yourself» es reflexivo y «with» marca lo que cubre.",
    "requerTodas": [
-    "en-p244",
-    "en-p469",
     "en-p023"
    ]
   },
@@ -9362,14 +9361,18 @@
    "idioma": "en",
    "id": "en-f064",
    "tipo": "frase",
-   "en": "The house was built in 1920.",
+   "en": "The house was built in nineteen twenty.",
    "pt": "A casa foi construída em 1920.",
    "es": "La casa fue construida en 1920.",
    "aceitas": [
     "a casa foi construida em 1920",
     "construiram a casa em 1920",
     "a casa e de 1920",
-    "a casa foi feita em 1920"
+    "a casa foi feita em 1920",
+    "a casa foi construida em mil novecentos e vinte",
+    "construiram a casa em mil novecentos e vinte",
+    "a casa e de mil novecentos e vinte",
+    "a casa foi feita em mil novecentos e vinte"
    ],
    "aceitasEs": [
     "La casa fue construida en 1920",
@@ -9377,8 +9380,8 @@
     "La casa se construyó en 1920"
    ],
    "aceitasEn": [
-    "the house was built in 1920",
-    "they built the house in 1920"
+    "the house was built in nineteen twenty",
+    "they built the house in nineteen twenty"
    ],
    "distratores": [
     "A casa foi vendida em 1920.",
@@ -23289,35 +23292,36 @@
    "id": "en-u116",
    "tipo": "frase",
    "requer": "en-p116",
-   "en": "I need a needle and thread.",
-   "pt": "Preciso de agulha e linha.",
-   "es": "Necesito aguja e hilo.",
+   "en": "She sewed the button with red thread.",
+   "pt": "Ela costurou o botão com linha vermelha.",
+   "es": "Cosió el botón con hilo rojo.",
    "aceitas": [
-    "preciso de agulha e linha",
-    "eu preciso de agulha e linha",
-    "preciso de uma agulha e linha",
-    "preciso de linha e agulha"
+    "ela costurou o botao com linha vermelha",
+    "ela pregou o botao com linha vermelha",
+    "ela pregou o botao usando linha vermelha"
    ],
    "aceitasEs": [
-    "Necesito aguja e hilo",
-    "Necesito una aguja e hilo",
-    "Necesito hilo y aguja"
+    "Cosió el botón con hilo rojo",
+    "Ella cosió el botón con hilo rojo",
+    "Cosió el botón con hilo de color rojo",
+    "Pegó el botón con hilo rojo"
    ],
    "aceitasEn": [
-    "i need a needle and thread",
-    "i need needle and thread"
+    "she sewed the button with red thread",
+    "she sewed on the button with red thread",
+    "she sewed the button on with red thread"
    ],
    "distratores": [
-    "Preciso de agulha e tesoura.",
-    "Preciso de agulha e dedal.",
-    "Preciso de agulha e cola.",
-    "Preciso de agulha e fita."
+    "Ela costurou o botão com linha azul.",
+    "Ela costurou o botão com linha preta.",
+    "Ela costurou o botão com fita vermelha.",
+    "Ela costurou o botão com corda vermelha."
    ],
    "distratoresEs": [
-    "Necesito aguja y tijera.",
-    "Necesito aguja y dedal.",
-    "Necesito aguja y pegamento.",
-    "Necesito aguja y cinta."
+    "Cosió el botón con hilo azul.",
+    "Cosió el botón con hilo negro.",
+    "Cosió el botón con cinta roja.",
+    "Cosió el botón con cuerda roja."
    ],
    "nivel": "B1",
    "tags": [
@@ -23325,11 +23329,9 @@
     "objetos",
     "cotidiano"
    ],
-   "nota": "«A needle and thread» anda como bloco, com um artigo só para os dois: o inglês trata o par como uma coisa. E não leva «of» — «a needle of thread» não existe.",
-   "notaEs": "«A needle and thread» va como bloque, con un solo artículo para los dos: el inglés trata la pareja como una cosa. Y no lleva «of» — «a needle of thread» no existe.",
+   "nota": "«Thread» é a linha de costura; sem artigo, porque é incontável: «red thread». «Sewed» é o passado de «sew», que soa «sôu»: «sew» e «so» rimam.",
+   "notaEs": "«Thread» es el hilo de coser; sin artículo, porque es incontable: «red thread». «Sewed» es el pasado de «sew».",
    "requerTodas": [
-    "en-p244",
-    "en-p640",
     "en-p116"
    ]
   },
@@ -27556,34 +27558,37 @@
    "id": "en-u130",
    "tipo": "frase",
    "requer": "en-p130",
-   "en": "I need a new razor.",
-   "pt": "Preciso de um barbeador novo.",
-   "es": "Necesito una maquinilla nueva.",
+   "en": "He cut himself with the razor.",
+   "pt": "Ele se cortou com o barbeador.",
+   "es": "Se cortó con la maquinilla.",
    "aceitas": [
-    "preciso de um barbeador novo",
-    "eu preciso de um barbeador novo",
-    "preciso de uma gilete nova",
-    "preciso comprar um barbeador novo"
+    "ele se cortou com o barbeador",
+    "ele se cortou com a lamina",
+    "ele cortou se com o barbeador",
+    "ele se cortou com o aparelho de barbear"
    ],
    "aceitasEs": [
-    "Necesito una maquinilla nueva",
-    "Necesito una maquinilla de afeitar nueva",
-    "Necesito comprar una maquinilla nueva"
+    "Se cortó con la maquinilla",
+    "Se cortó con la cuchilla",
+    "Se cortó con la navaja",
+    "Se cortó con la rasuradora"
    ],
    "aceitasEn": [
-    "i need a new razor"
+    "he cut himself with the razor",
+    "he cut himself on the razor",
+    "he cut himself using the razor"
    ],
    "distratores": [
-    "Preciso de um pente novo.",
-    "Preciso de um travesseiro novo.",
-    "Preciso de um casaco novo.",
-    "Preciso de um relógio novo."
+    "Ele se cortou com a faca.",
+    "Ele se cortou com o vidro.",
+    "Ele se cortou com a tesoura.",
+    "Ele se cortou com a lata."
    ],
    "distratoresEs": [
-    "Necesito una toalla nueva.",
-    "Necesito una almohada nueva.",
-    "Necesito una chaqueta nueva.",
-    "Necesito una mochila nueva."
+    "Se cortó con el cuchillo.",
+    "Se cortó con el vidrio.",
+    "Se cortó con las tijeras.",
+    "Se cortó con la lata."
    ],
    "nivel": "A2",
    "tags": [
@@ -27591,11 +27596,9 @@
     "objetos",
     "cotidiano"
    ],
-   "nota": "O adjetivo vem antes do substantivo em inglês, sempre: «a new razor», e nunca «a razor new». É a ordem inversa da portuguesa, e é o que mais trava quem está começando a montar frase.",
-   "notaEs": "El adjetivo va delante del sustantivo en inglés, siempre: «a new razor», y nunca «a razor new». Es el orden inverso del español, y es lo que más traba a quien empieza a montar frases.",
+   "nota": "Quem corta o próprio corpo usa o pronome reflexivo: «he cut himself», e não «he cut him». «Razor» é a lâmina ou o aparelho de barbear.",
+   "notaEs": "Quien se corta usa el pronombre reflexivo: «he cut himself», no «he cut him». «Razor» es la cuchilla o la maquinilla de afeitar.",
    "requerTodas": [
-    "en-p244",
-    "en-p310",
     "en-p130"
    ]
   },
@@ -44476,13 +44479,16 @@
    "idioma": "en",
    "id": "en-v173",
    "tipo": "frase",
-   "en": "The bridge was built in 1920.",
+   "en": "The bridge was built in nineteen twenty.",
    "pt": "A ponte foi construída em 1920.",
    "es": "El puente fue construido en 1920.",
    "aceitas": [
     "a ponte foi construida em 1920",
     "a ponte foi feita em 1920",
-    "construiram a ponte em 1920"
+    "construiram a ponte em 1920",
+    "a ponte foi construida em mil novecentos e vinte",
+    "a ponte foi feita em mil novecentos e vinte",
+    "construiram a ponte em mil novecentos e vinte"
    ],
    "aceitasEs": [
     "El puente fue construido en 1920",
@@ -44490,8 +44496,8 @@
     "Construyeron el puente en 1920"
    ],
    "aceitasEn": [
-    "the bridge was built in 1920",
-    "the bridge was constructed in 1920"
+    "the bridge was built in nineteen twenty",
+    "the bridge was constructed in nineteen twenty"
    ],
    "distratores": [
     "A ponte é construída em 1920.",
@@ -44506,16 +44512,16 @@
     "El puente había sido construido en 1920."
    ],
    "formasEn": {
-    "The bridge is built in 1920": "presente",
-    "The bridge will be built in 1920": "futuro",
-    "The bridge would be built in 1920": "condicional",
-    "The bridge had been built in 1920": "mais-que-perfeito"
+    "The bridge is built in nineteen twenty": "presente",
+    "The bridge will be built in nineteen twenty": "futuro",
+    "The bridge would be built in nineteen twenty": "condicional",
+    "The bridge had been built in nineteen twenty": "mais-que-perfeito"
    },
    "formasEnEs": {
-    "The bridge is built in 1920": "presente",
-    "The bridge will be built in 1920": "futuro",
-    "The bridge would be built in 1920": "condicional",
-    "The bridge had been built in 1920": "pluscuamperfecto"
+    "The bridge is built in nineteen twenty": "presente",
+    "The bridge will be built in nineteen twenty": "futuro",
+    "The bridge would be built in nineteen twenty": "condicional",
+    "The bridge had been built in nineteen twenty": "pluscuamperfecto"
    },
    "nivel": "B1",
    "tags": [
@@ -91268,37 +91274,36 @@
    "id": "en-u276",
    "tipo": "frase",
    "requer": "en-p989",
-   "en": "Let's go to the pool.",
-   "pt": "Vamos à piscina.",
-   "es": "Vamos a la piscina.",
+   "en": "The pool is closed today.",
+   "pt": "A piscina está fechada hoje.",
+   "es": "La piscina está cerrada hoy.",
    "aceitas": [
-    "vamos a piscina",
-    "vamos pra piscina",
-    "vamos para a piscina",
-    "vamos na piscina",
-    "bora pra piscina"
+    "a piscina esta fechada hoje",
+    "a piscina fecha hoje",
+    "a piscina nao abre hoje"
    ],
    "aceitasEs": [
-    "Vamos a la piscina",
-    "Vamos a la alberca",
-    "Vamos a la pileta",
-    "Vámonos a la piscina"
+    "La piscina está cerrada hoy",
+    "Hoy la piscina está cerrada",
+    "La alberca está cerrada hoy",
+    "La pileta está cerrada hoy"
    ],
    "aceitasEn": [
-    "lets go to the pool",
-    "let us go to the pool"
+    "the pool is closed today",
+    "the swimming pool is closed today",
+    "the pool is shut today"
    ],
    "distratores": [
-    "Vamos à praia.",
-    "Vamos à festa.",
-    "Vamos à feira.",
-    "Vamos à academia."
+    "A piscina está aberta hoje.",
+    "A piscina está vazia hoje.",
+    "A piscina está cheia hoje.",
+    "A piscina está suja hoje."
    ],
    "distratoresEs": [
-    "Vamos a la playa.",
-    "Vamos a la fiesta.",
-    "Vamos a la feria.",
-    "Vamos a la plaza."
+    "La piscina está abierta hoy.",
+    "La piscina está vacía hoy.",
+    "La piscina está llena hoy.",
+    "La piscina está sucia hoy."
    ],
    "nivel": "A2",
    "tags": [
@@ -91306,10 +91311,8 @@
     "cotidiano"
    ],
    "nota": "«Pool» sozinho já é a piscina, ou «swimming pool». Também é a poça e o laguinho: «a pool of water»; e o jogo de sinuca: «let's play pool».",
-   "notaEs": "«Pool» solo ya es la piscina, o «swimming pool». También es el charco y la laguna pequeña: «a pool of water»; y el billar americano: «let's play pool».",
+   "notaEs": "«Pool» solo ya es la piscina, o «swimming pool». También es el charco: «a pool of water»; y el billar: «let's play pool».",
    "requerTodas": [
-    "en-p234",
-    "en-p237",
     "en-p989"
    ]
   },
@@ -92128,40 +92131,37 @@
    "id": "en-u293",
    "tipo": "frase",
    "requer": "en-p1006",
-   "en": "Let's compare the two cars.",
-   "pt": "Vamos comparar os dois carros.",
-   "es": "Comparemos los dos coches.",
+   "en": "I compare prices before I buy.",
+   "pt": "Eu comparo os preços antes de comprar.",
+   "es": "Comparo los precios antes de comprar.",
    "aceitas": [
-    "vamos comparar os dois carros",
-    "bora comparar os dois carros",
-    "comparemos os dois carros",
-    "vamos comparar os carros",
-    "a gente compara os dois carros"
+    "eu comparo os precos antes de comprar",
+    "comparo os precos antes de comprar",
+    "eu comparo precos antes de comprar",
+    "eu comparo os precos antes de eu comprar"
    ],
    "aceitasEs": [
-    "Comparemos los dos coches",
-    "Vamos a comparar los dos coches"
+    "Comparo los precios antes de comprar",
+    "Yo comparo los precios antes de comprar",
+    "Comparo precios antes de comprar",
+    "Comparo los precios antes de comprarlo"
    ],
-   "regionaisEs": {
-    "Comparemos los dos carros": "na América Latina",
-    "Comparemos los dos autos": "na Argentina e no Chile"
-   },
    "aceitasEn": [
-    "lets compare the two cars",
-    "let us compare the two cars",
-    "lets compare both cars"
+    "i compare prices before i buy",
+    "i compare the prices before i buy",
+    "i compare prices before buying"
    ],
    "distratores": [
-    "Vamos consertar os dois carros.",
-    "Vamos vender os dois carros.",
-    "Vamos lavar os dois carros.",
-    "Vamos trocar os dois carros."
+    "Eu pergunto os preços antes de comprar.",
+    "Eu mudo os preços antes de comprar.",
+    "Eu anoto os preços antes de comprar.",
+    "Eu aceito os preços antes de comprar."
    ],
    "distratoresEs": [
-    "Arreglemos los dos coches.",
-    "Vendamos los dos coches.",
-    "Lavemos los dos coches.",
-    "Cambiemos los dos coches."
+    "Pregunto los precios antes de comprar.",
+    "Cambio los precios antes de comprar.",
+    "Apunto los precios antes de comprar.",
+    "Acepto los precios antes de comprar."
    ],
    "nivel": "A2",
    "tags": [
@@ -92169,12 +92169,9 @@
     "cotidiano"
    ],
    "nota": "Compara-se uma coisa «with» ou «to» outra: «compare this car with that one». «Compare to» também é comparar para elogiar: «Shall I compare thee to a summer's day?».",
-   "notaEs": "Se compara una cosa «with» o «to» otra: «compare this car with that one». «Compare to» también es comparar para elogiar: «Shall I compare thee to a summer's day?».",
+   "notaEs": "Se compara una cosa «with» o «to» otra: «compare this car with that one». «Compare to» también es comparar para elogiar.",
    "requerTodas": [
-    "en-p234",
-    "en-p1006",
-    "en-p257",
-    "en-p168"
+    "en-p1006"
    ]
   },
   {
@@ -93624,49 +93621,46 @@
    "id": "en-u321",
    "tipo": "frase",
    "requer": "en-p1034",
-   "en": "Let's sit in the shade.",
-   "pt": "Vamos sentar na sombra.",
-   "es": "Sentémonos a la sombra.",
+   "en": "We rested in the shade of a tree.",
+   "pt": "Descansamos à sombra de uma árvore.",
+   "es": "Descansamos a la sombra de un árbol.",
    "aceitas": [
-    "vamos sentar na sombra",
-    "vamos nos sentar na sombra",
-    "vamos sentar a sombra",
-    "bora sentar na sombra",
-    "vamos ficar na sombra"
+    "descansamos a sombra de uma arvore",
+    "descansamos na sombra de uma arvore",
+    "a gente descansou a sombra de uma arvore",
+    "descansamos sob a sombra de uma arvore"
    ],
    "aceitasEs": [
-    "Sentémonos a la sombra",
-    "Vamos a sentarnos a la sombra",
-    "Sentémonos en la sombra",
-    "Vamos a sentarnos en la sombra"
+    "Descansamos a la sombra de un árbol",
+    "Descansamos bajo la sombra de un árbol",
+    "Descansamos a la sombra de un arbol",
+    "Reposamos a la sombra de un árbol"
    ],
    "aceitasEn": [
-    "lets sit in the shade",
-    "let us sit in the shade",
-    "lets sit down in the shade"
+    "we rested in the shade of a tree",
+    "we rested under the shade of a tree",
+    "we relaxed in the shade of a tree"
    ],
    "distratores": [
-    "Vamos sentar na grama.",
-    "Vamos sentar na areia.",
-    "Vamos sentar na varanda.",
-    "Vamos sentar na escada."
+    "Descansamos à sombra de uma ponte.",
+    "Descansamos à sombra de um muro.",
+    "Descansamos à sombra de um prédio.",
+    "Descansamos à sombra de um guarda-sol."
    ],
    "distratoresEs": [
-    "Sentémonos en la hierba.",
-    "Sentémonos en la arena.",
-    "Sentémonos en el balcón.",
-    "Sentémonos en la escalera."
+    "Descansamos a la sombra de un puente.",
+    "Descansamos a la sombra de un muro.",
+    "Descansamos a la sombra de un edificio.",
+    "Descansamos a la sombra de una sombrilla."
    ],
    "nivel": "B1",
    "tags": [
     "substantivo",
     "natureza"
    ],
-   "nota": "«Shade» é a sombra onde se fica, longe do sol; «shadow» é a sombra que algo projeta, com forma. Senta-se «in the shade». E «shades», no plural e na gíria, são os óculos escuros.",
-   "notaEs": "«Shade» es la sombra donde uno se pone, lejos del sol; «shadow» es la sombra que algo proyecta, con forma. Uno se sienta «in the shade». Y «shades», en plural y en jerga, son las gafas de sol.",
+   "nota": "«Shade» é a sombra onde se fica, longe do sol; «shadow» é a sombra que algo projeta, com forma. Descansa-se «in the shade». E «shades», no plural e na gíria, são os óculos escuros.",
+   "notaEs": "«Shade» es la sombra donde uno se resguarda del sol; «shadow» es la sombra que proyecta algo. Se descansa «in the shade». Y «shades», en plural y en jerga, son las gafas de sol.",
    "requerTodas": [
-    "en-p234",
-    "en-p445",
     "en-p1034"
    ]
   },
@@ -98794,55 +98788,46 @@
    "id": "en-u364",
    "tipo": "frase",
    "requer": "en-p1074",
-   "en": "He laid the book on the table.",
-   "pt": "Ele pôs o livro na mesa.",
-   "es": "Puso el libro en la mesa.",
+   "en": "The hens lay eggs.",
+   "pt": "As galinhas põem ovos.",
+   "es": "Las gallinas ponen huevos.",
    "aceitas": [
-    "ele pos o livro na mesa",
-    "pos o livro na mesa",
-    "ele colocou o livro na mesa",
-    "ele botou o livro na mesa",
-    "ele pousou o livro na mesa",
-    "ele deitou o livro na mesa",
-    "ele pos o livro sobre a mesa",
-    "ele colocou o livro sobre a mesa",
-    "ele pos o livro em cima da mesa",
-    "ele colocou o livro em cima da mesa"
+    "as galinhas poem ovos",
+    "as galinhas botam ovos",
+    "galinhas poem ovos",
+    "as galinhas botam ovo"
    ],
    "aceitasEs": [
-    "Puso el libro en la mesa",
-    "Él puso el libro en la mesa",
-    "Puso el libro sobre la mesa",
-    "Colocó el libro en la mesa",
-    "Colocó el libro sobre la mesa",
-    "Dejó el libro en la mesa",
-    "Dejó el libro sobre la mesa"
+    "Las gallinas ponen huevos",
+    "Las gallinas ponen huevos",
+    "Las gallinas colocan huevos",
+    "Las gallinas ponen los huevos"
    ],
    "aceitasEn": [
-    "he laid the book on the table"
+    "the hens lay eggs",
+    "hens lay eggs",
+    "chickens lay eggs"
    ],
    "distratores": [
-    "Ele jogou o livro na mesa.",
-    "Ele pegou o livro na mesa.",
-    "Ele achou o livro na mesa.",
-    "Ele esqueceu o livro na mesa."
+    "As galinhas comem ovos.",
+    "As galinhas quebram ovos.",
+    "As galinhas escondem ovos.",
+    "As galinhas vendem ovos."
    ],
    "distratoresEs": [
-    "Tiró el libro en la mesa.",
-    "Agarró el libro en la mesa.",
-    "Encontró el libro en la mesa.",
-    "Olvidó el libro en la mesa."
+    "Las gallinas comen huevos.",
+    "Las gallinas rompen huevos.",
+    "Las gallinas esconden huevos.",
+    "Las gallinas venden huevos."
    ],
    "nivel": "A2",
    "tags": [
     "verbo",
     "cotidiano"
    ],
-   "nota": "«Laid» é o passado de «lay», que pede objeto. «Lay», sozinho, é também o passado de «lie», estar deitado: «he lay on the sofa», ele ficou deitado no sofá.",
-   "notaEs": "«Laid» es el pasado de «lay», que pide objeto. «Lay», solo, es también el pasado de «lie», estar acostado: «he lay on the sofa», se quedó tumbado en el sofá.",
+   "nota": "«Lay» pede objeto: «lay eggs», pôr ovos; passado «laid». Sem objeto, «lie» é estar deitado; e «lay» também é o passado dele: «he lay on the sofa».",
+   "notaEs": "«Lay» pide objeto: «lay eggs», poner huevos; pasado «laid». Sin objeto, «lie» es estar tumbado; y «lay» es también su pasado.",
    "requerTodas": [
-    "en-p120",
-    "en-p164",
     "en-p1074"
    ]
   },
@@ -99858,14 +99843,14 @@
    "en": "I have lived here for two years.",
    "pt": "Moro aqui há dois anos.",
    "distratoresEn": [
-    "I have lived here since 2020.",
+    "I have lived here since twenty twenty.",
     "I lived here two years ago.",
     "I live here for two years.",
     "I have lived here since two years."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since 2020. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since 2020 — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since 2020); a duração vai com for.",
+   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since twenty twenty. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since twenty twenty — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since twenty twenty); a duração vai com for.",
    "nivel": "B1",
    "tags": [
     "contraste"
@@ -99883,7 +99868,7 @@
    "id": "en-k032",
    "tipo": "contraste",
    "conjunto": "n15",
-   "en": "I have lived here since 2020.",
+   "en": "I have lived here since twenty twenty.",
    "pt": "Moro aqui desde 2020.",
    "distratoresEn": [
     "I have lived here for two years.",
@@ -99893,7 +99878,7 @@
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since 2020. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since 2020 — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since 2020); a duração vai com for.",
+   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since twenty twenty. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since twenty twenty — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since twenty twenty); a duração vai com for.",
    "nivel": "B1",
    "tags": [
     "contraste"
@@ -99915,13 +99900,13 @@
    "pt": "Eu morava aqui há dois anos.",
    "distratoresEn": [
     "I have lived here for two years.",
-    "I have lived here since 2020.",
+    "I have lived here since twenty twenty.",
     "I live here for two years.",
     "I have lived here since two years."
    ],
    "aceitas": [],
    "distratores": [],
-   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since 2020. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since 2020 — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since 2020); a duração vai com for.",
+   "nota": "O «há» do português tem três traduções. Se ainda dura, present perfect com for (a duração) ou since (o começo): I have lived here for two years, since twenty twenty. Se acabou, o passado com ago: I lived here two years ago.\nAs alternativas:\nI have lived here for two years — moro aqui há dois anos (e ainda moro).\nI have lived here since twenty twenty — moro aqui desde 2020.\nI lived here two years ago — eu morava aqui há dois anos (e não moro mais).\nI live here for two years — ✗ o que começou no passado e continua leva o present perfect: I have lived.\nI have lived here since two years — ✗ since vem com o começo (since twenty twenty); a duração vai com for.",
    "nivel": "B1",
    "tags": [
     "contraste"
@@ -117813,50 +117798,45 @@
    "id": "en-u381",
    "tipo": "frase",
    "requer": "en-p1100",
-   "en": "The bride wore a white dress.",
-   "pt": "A noiva usava um vestido branco.",
-   "es": "La novia llevaba un vestido blanco.",
+   "en": "The bride is very nervous.",
+   "pt": "A noiva está muito nervosa.",
+   "es": "La novia está muy nerviosa.",
    "aceitas": [
-    "a noiva usava um vestido branco",
-    "a noiva usou um vestido branco",
-    "a noiva estava de vestido branco",
-    "a noiva vestia um vestido branco",
-    "a noiva estava com um vestido branco",
-    "a noiva foi de vestido branco"
+    "a noiva esta muito nervosa",
+    "a noiva esta bem nervosa",
+    "a noiva esta muito agitada"
    ],
    "aceitasEs": [
-    "La novia llevaba un vestido blanco",
-    "La novia llevó un vestido blanco",
-    "La novia usó un vestido blanco",
-    "La novia vestía un vestido blanco",
-    "La novia iba de blanco"
+    "La novia está muy nerviosa",
+    "La novia está muy nerviosa",
+    "La novia está nerviosísima",
+    "La novia anda muy nerviosa"
    ],
    "aceitasEn": [
-    "the bride wore a white dress"
+    "the bride is very nervous",
+    "the bride is really nervous",
+    "the bride is so nervous"
    ],
    "distratores": [
-    "A madrinha usava um vestido branco.",
-    "A rainha usava um vestido branco.",
-    "A atriz usava um vestido branco.",
-    "A professora usava um vestido branco."
+    "A madrinha está muito nervosa.",
+    "A professora está muito nervosa.",
+    "A atriz está muito nervosa.",
+    "A rainha está muito nervosa."
    ],
    "distratoresEs": [
-    "La madrina llevaba un vestido blanco.",
-    "La reina llevaba un vestido blanco.",
-    "La actriz llevaba un vestido blanco.",
-    "La profesora llevaba un vestido blanco."
+    "La madrina está muy nerviosa.",
+    "La profesora está muy nerviosa.",
+    "La actriz está muy nerviosa.",
+    "La reina está muy nerviosa."
    ],
    "nivel": "A2",
    "tags": [
     "substantivo",
     "família"
    ],
-   "nota": "«Wore» é o passado de «wear», usar roupa. O noivo é «the groom».",
-   "notaEs": "«Wore» es el pasado de «wear», llevar ropa. El novio es «the groom».",
+   "nota": "«The bride» é a noiva no dia do casamento; o noivo é «the groom». «Nervous» é nervosa, ansiosa: «nervous» não é «com raiva».",
+   "notaEs": "«The bride» es la novia el día de la boda; el novio es «the groom». «Nervous» es nerviosa, ansiosa.",
    "requerTodas": [
-    "en-p347",
-    "en-p993",
-    "en-p600",
     "en-p1100"
    ]
   },
@@ -122434,57 +122414,47 @@
    "id": "en-u524",
    "tipo": "frase",
    "requer": "en-p1183",
-   "en": "I heard a faint noise.",
-   "pt": "Ouvi um barulho fraco.",
-   "es": "Oí un ruido leve.",
+   "en": "The light was too faint to read.",
+   "pt": "A luz era fraca demais para ler.",
+   "es": "La luz era demasiado tenue para leer.",
    "aceitas": [
-    "ouvi um barulho fraco",
-    "eu ouvi um barulho fraco",
-    "ouvi um ruido fraco",
-    "escutei um barulho fraco",
-    "ouvi um barulhinho",
-    "ouvi um barulho baixo",
-    "ouvi um som fraco",
-    "ouvi um leve barulho",
-    "ouvi um ruido leve",
-    "ouvi um barulho leve",
-    "ouvi um barulho baixinho"
+    "a luz era fraca demais para ler",
+    "a luz era muito fraca para ler",
+    "a luz era tenue demais para ler",
+    "a luz era fraca demais pra ler"
    ],
    "aceitasEs": [
-    "Oí un ruido leve",
-    "Oí un leve ruido",
-    "Oí un ruido débil",
-    "Oí un ruido tenue",
-    "Escuché un ruido leve",
-    "Oí un ruidito",
-    "Escuché un leve ruido"
+    "La luz era demasiado tenue para leer",
+    "La luz era muy débil para leer",
+    "La luz era demasiado débil para leer",
+    "La luz era muy tenue para leer"
    ],
    "aceitasEn": [
-    "i heard a faint noise"
+    "the light was too faint to read",
+    "the light was too dim to read",
+    "the light was too weak to read"
    ],
    "distratores": [
-    "Ouvi um barulho forte.",
-    "Ouvi um barulho estranho.",
-    "Ouvi um barulho metálico.",
-    "Ouvi um barulho agudo."
+    "A luz era forte demais para ler.",
+    "A luz era azul demais para ler.",
+    "A luz era quente demais para ler.",
+    "A luz era estranha demais para ler."
    ],
    "distratoresEs": [
-    "Oí un ruido fuerte.",
-    "Oí un ruido extraño.",
-    "Oí un ruido metálico.",
-    "Oí un ruido agudo."
+    "La luz era demasiado fuerte para leer.",
+    "La luz era demasiado azul para leer.",
+    "La luz era demasiado cálida para leer.",
+    "La luz era demasiado extraña para leer."
    ],
    "nivel": "B2",
    "tags": [
     "adjetivo",
     "cotidiano"
    ],
-   "nota": "«Faint» é o que quase não se percebe: som, cheiro, luz ou lembrança. O contrário é «loud» ou «strong».",
-   "notaEs": "«Faint» es lo que apenas se percibe: sonido, olor, luz o recuerdo. Lo contrario es «loud» o «strong».",
+   "nota": "«Faint» é o que quase não se percebe: luz, som, cheiro ou lembrança. «Too … to» é «demais para»: «too faint to read».",
+   "notaEs": "«Faint» es lo que apenas se percibe: luz, sonido, olor o recuerdo. «Too … to» es demasiado para: «too faint to read».",
    "requerTodas": [
-    "en-p337",
-    "en-p1183",
-    "en-p642"
+    "en-p1183"
    ]
   },
   {
@@ -123009,52 +122979,47 @@
    "id": "en-u535",
    "tipo": "frase",
    "requer": "en-p1193",
-   "en": "We heard a distant bell.",
-   "pt": "Ouvimos um sino distante.",
-   "es": "Oímos una campana lejana.",
+   "en": "The mountains look distant today.",
+   "pt": "As montanhas parecem distantes hoje.",
+   "es": "Las montañas se ven distantes hoy.",
    "aceitas": [
-    "ouvimos um sino distante",
-    "ouvimos um sino ao longe",
-    "ouvimos um sino longe",
-    "a gente ouviu um sino distante",
-    "ouvimos um sino longinquo",
-    "nos ouvimos um sino distante",
-    "escutamos um sino distante",
-    "escutamos um sino ao longe"
+    "as montanhas parecem distantes hoje",
+    "as montanhas parecem longe hoje",
+    "as montanhas estao com aparencia distante hoje",
+    "hoje as montanhas parecem distantes"
    ],
    "aceitasEs": [
-    "Oímos una campana lejana",
-    "Oímos una campana a lo lejos",
-    "Oímos una campana distante",
-    "Escuchamos una campana lejana",
-    "Escuchamos una campana a lo lejos"
+    "Las montañas se ven distantes hoy",
+    "Las montañas parecen lejanas hoy",
+    "Las montañas se ven lejos hoy",
+    "Hoy las montañas parecen distantes"
    ],
    "aceitasEn": [
-    "we heard a distant bell"
+    "the mountains look distant today",
+    "the mountains look far away today",
+    "the mountains seem distant today"
    ],
    "distratores": [
-    "Ouvimos um sino estranho.",
-    "Ouvimos um sino alto.",
-    "Ouvimos um sino pequeno.",
-    "Ouvimos um sino antigo."
+    "As montanhas parecem próximas hoje.",
+    "As montanhas parecem altas hoje.",
+    "As montanhas parecem verdes hoje.",
+    "As montanhas parecem frias hoje."
    ],
    "distratoresEs": [
-    "Oímos una campana extraña.",
-    "Oímos una campana fuerte.",
-    "Oímos una campana pequeña.",
-    "Oímos una campana antigua."
+    "Las montañas se ven cercanas hoy.",
+    "Las montañas se ven altas hoy.",
+    "Las montañas se ven verdes hoy.",
+    "Las montañas se ven frías hoy."
    ],
    "nivel": "B1",
    "tags": [
     "adjetivo",
     "viagem"
    ],
-   "nota": "«Distant» vem antes do substantivo; depois do verbo, o mais comum é «far away»: «the bell was far away».",
-   "notaEs": "«Distant» va delante del sustantivo; detrás del verbo, lo más común es «far away»: «the bell was far away».",
+   "nota": "«Look» + adjetivo é parecer: «look distant». «Distant» vem antes do substantivo; depois do verbo, o mais comum é «far away».",
+   "notaEs": "«Look» + adjetivo es parecer: «look distant». Después del verbo, lo más común es «far away».",
    "requerTodas": [
-    "en-p337",
-    "en-p1193",
-    "en-p562"
+    "en-p1193"
    ]
   },
   {
@@ -124280,47 +124245,46 @@
    "id": "en-u613",
    "tipo": "frase",
    "requer": "en-p1217",
-   "en": "I need a day of rest.",
-   "pt": "Preciso de um dia de descanso.",
-   "es": "Necesito un día de descanso.",
+   "en": "The doctor recommends rest.",
+   "pt": "O médico recomenda descanso.",
+   "es": "El médico recomienda descanso.",
    "aceitas": [
-    "preciso de um dia de descanso",
-    "eu preciso de um dia de descanso",
-    "preciso de um dia para descansar",
-    "preciso de um dia de folga",
-    "eu preciso de um dia para descansar"
+    "o medico recomenda descanso",
+    "o medico recomenda repouso",
+    "o medico aconselha descanso",
+    "o medico recomenda que descanse"
    ],
    "aceitasEs": [
-    "Necesito un día de descanso",
-    "Necesito un día para descansar",
-    "Me hace falta un día de descanso"
+    "El médico recomienda descanso",
+    "El médico recomienda reposo",
+    "El doctor recomienda descanso",
+    "El médico aconseja descanso"
    ],
    "aceitasEn": [
-    "i need a day of rest",
-    "i need a day off to rest"
+    "the doctor recommends rest",
+    "the doctor recommends some rest",
+    "the doctor advises rest"
    ],
    "distratores": [
-    "Preciso de um dia de sol.",
-    "Preciso de um dia de festa.",
-    "Preciso de um dia de praia.",
-    "Preciso de um dia de trabalho."
+    "O médico recomenda exercício.",
+    "O médico recomenda dieta.",
+    "O médico recomenda silêncio.",
+    "O médico recomenda remédio."
    ],
    "distratoresEs": [
-    "Necesito un día de sol.",
-    "Necesito un día de fiesta.",
-    "Necesito un día de playa.",
-    "Necesito un día de trabajo."
+    "El médico recomienda ejercicio.",
+    "El médico recomienda dieta.",
+    "El médico recomienda silencio.",
+    "El médico recomienda medicina."
    ],
    "nivel": "A1",
    "tags": [
     "substantivo",
     "cotidiano"
    ],
-   "nota": "O descanso se tira com «get» ou «take»: «get some rest», descanse um pouco; «take a rest», fazer uma pausa.",
-   "notaEs": "El descanso se toma con «get» o «take»: «get some rest», descansa un poco; «take a rest», hacer una pausa.",
+   "nota": "«Rest» é o descanso e também o resto. «Recommend» é recomendar, e o substantivo vem direto: «recommends rest», sem «to».",
+   "notaEs": "«Rest» es el descanso y también el resto. «Recommend» es recomendar, y el sustantivo viene directo: «recommends rest».",
    "requerTodas": [
-    "en-p244",
-    "en-p289",
     "en-p1217"
    ]
   },

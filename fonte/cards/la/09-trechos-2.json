@@ -162,15 +162,15 @@
  {
   "id": "la-t024",
   "tipo": "frase",
-  "la": "Regina caeli, laetare, alleluia.",
-  "pt": "Rainha do céu, alegra-te, aleluia.",
-  "gabarito": "[Rainha do céu [alegra-te ~ alegre-se ~ te alegra ~ se alegre ~ rejubila ~ exulta] [aleluia ~] ~ Alegra-te Rainha do céu aleluia ~ Rainha dos céus rejubila aleluia]",
+  "la": "Regina caeli, laetare.",
+  "pt": "Rainha do céu, alegra-te.",
+  "gabarito": "[Rainha do céu [alegra-te ~ alegre-se ~ te alegra ~ se alegre ~ rejubila ~ exulta] ~ Alegra-te Rainha do céu ~ Rainha dos céus rejubila]",
   "aceitas": [],
   "distratores": [
-   "Rainha, o céu se alegra, aleluia.",
-   "Rainhas do céu, alegrai-vos, aleluia.",
-   "A rainha do céu se alegrou, aleluia.",
-   "Rainha, alegra o céu, aleluia."
+   "Rainha, o céu se alegra.",
+   "Rainhas do céu, alegrai-vos.",
+   "A rainha do céu se alegrou.",
+   "Rainha, alegra o céu."
   ],
   "nota": "laetare (alegrar-se): quem se alegra? tu, Regina caeli, Rainha do céu (a quem se fala).\nRegina: vocativo singular, a quem se fala.\ncaeli: genitivo singular, de onde é rainha.\nlaetare: imperativo presente, 2ª pessoa do singular, depoente: alegra-te.\nLaetare é o imperativo de laetor, depoente: a forma é de passiva, o sentido é ativo, «alegra-te». Caeli, genitivo de caelum: «do céu».",
   "nivel": "A1",
@@ -203,9 +203,6 @@
     "c": "la-p173",
     "f": "imperativo presente, 2ª pessoa do singular",
     "fn": "depoente: alegra-te"
-   },
-   {
-    "w": "alleluia"
    }
   ],
   "conceitos": [
@@ -224,15 +221,15 @@
  {
   "id": "la-t126",
   "tipo": "frase",
-  "la": "Quia quem meruisti portare … resurrexit, sicut dixit, alleluia.",
-  "pt": "Porque aquele que mereceste trazer ressuscitou, como disse, aleluia.",
-  "gabarito": "[[Porque ~ Pois] [aquele que ~ quem] [mereceste ~ você mereceu] [trazer ~ carregar ~ trazer no ventre ~ gerar] [ressuscitou ~ ressurgiu] [como ~ conforme] [ele ~] [disse ~ tinha dito] [aleluia ~] ~ Porque ressuscitou, como disse, aquele que mereceste trazer, aleluia]",
+  "la": "Quia quem meruisti portare resurrexit, sicut dixit.",
+  "pt": "Porque aquele que mereceste trazer ressuscitou, como disse.",
+  "gabarito": "[[Porque ~ Pois] [aquele que ~ quem] [mereceste ~ você mereceu] [trazer ~ carregar ~ trazer no ventre ~ gerar] [ressuscitou ~ ressurgiu] [como ~ conforme] [ele ~] [disse ~ tinha dito] ~ Porque ressuscitou, como disse, aquele que mereceste trazer,]",
   "aceitas": [],
   "distratores": [
-   "Porque aquele que mereceste trazer ressuscitará, como disse, aleluia.",
-   "Porque aquele que te mereceu trazer ressuscitou, como disse, aleluia.",
-   "Porque mereceste trazer aquele que ressuscitou, como disse, aleluia.",
-   "Porque aqueles que mereceste trazer ressuscitaram, como disseram, aleluia."
+   "Porque aquele que mereceste trazer ressuscitará, como disse.",
+   "Porque aquele que te mereceu trazer ressuscitou, como disse.",
+   "Porque mereceste trazer aquele que ressuscitou, como disse.",
+   "Porque aqueles que mereceste trazer ressuscitaram, como disseram."
   ],
   "nota": "resurrexit (ressuscitar): quem ressuscitou? quem, aquele que. · meruisti (merecer): quem? tu (na terminação). O quê? portare quem, trazer aquele. Como ressuscitou? sicut dixit, como disse.\nquem: acusativo masculino singular, aquele que: o objeto de portare.\nmeruisti: perfeito do indicativo, 2ª pessoa do singular.\nportare: infinitivo presente, completa meruisti.\nresurrexit: perfeito do indicativo, 3ª pessoa do singular, sujeito: aquele que (o antecedente de quem).\ndixit: perfeito do indicativo, 3ª pessoa do singular.\nQuem, acusativo, é objeto de portare; o seu antecedente, subentendido («aquele»), é o sujeito de resurrexit.",
   "nivel": "A1",
@@ -290,9 +287,6 @@
     "w": "dixit",
     "c": "la-p122",
     "f": "perfeito do indicativo, 3ª pessoa do singular"
-   },
-   {
-    "w": "alleluia"
    }
   ],
   "conceitos": [
@@ -310,15 +304,15 @@
  {
   "id": "la-t027",
   "tipo": "frase",
-  "la": "Ora pro nobis Deum, alleluia.",
-  "pt": "Roga a Deus por nós, aleluia.",
-  "gabarito": "[[Roga ~ Rogue ~ Ora ~ Reza ~ Pede ~ Intercede] [a Deus por nós ~ por nós a Deus] [aleluia ~] ~ A Deus por nós roga aleluia ~ Suplica a Deus por nós aleluia]",
+  "la": "Ora pro nobis Deum.",
+  "pt": "Roga a Deus por nós.",
+  "gabarito": "[[Roga ~ Rogue ~ Ora ~ Reza ~ Pede ~ Intercede] [a Deus por nós ~ por nós a Deus] ~ A Deus por nós roga ~ Suplica a Deus por nós]",
   "aceitas": [],
   "distratores": [
-   "Rogai a Deus por nós, aleluia.",
-   "Deus roga por nós, aleluia.",
-   "Roga a nós por Deus, aleluia.",
-   "Rogou a Deus por nós, aleluia."
+   "Rogai a Deus por nós.",
+   "Deus roga por nós.",
+   "Roga a nós por Deus.",
+   "Rogou a Deus por nós."
   ],
   "nota": "Ora (rogar): quem roga? tu (na terminação). A quem? Deum, a Deus. Por quem? pro nobis, por nós.\nOra: imperativo presente, 2ª pessoa do singular.\npro: preposição com ablativo.\nnobis: ablativo plural, por quem.\nDeum: acusativo singular, o objeto de ora: a quem se pede.\nOrare pede o acusativo de quem se roga: ora Deum, «roga a Deus». Pro nobis, com ablativo, «por nós».",
   "nivel": "A1",
@@ -357,9 +351,6 @@
     "c": "la-p001",
     "f": "acusativo singular",
     "fn": "o objeto de ora: a quem se pede"
-   },
-   {
-    "w": "alleluia"
    }
   ],
   "conceitos": [
