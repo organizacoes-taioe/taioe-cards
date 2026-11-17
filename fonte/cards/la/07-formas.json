@@ -49798,5 +49798,4440 @@
    "tanter, tantera, tanterum",
    "tanter, tanteris, tantere"
   ]
+ },
+ {
+  "id": "la-xt292-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "puer",
+  "frase": "Persicos odi, puer, apparatus",
+  "ocorrencia": 1,
+  "de": "la-t292",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p341",
+  "pt": "vocativo",
+  "aceitas": [
+   "caso vocativo",
+   "voc"
+  ],
+  "distratores": [
+   "nominativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "puer: vocativo singular, a quem se fala: menino, o escravo que serve.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g002"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true,
+  "ambigua": true
+ },
+ {
+  "id": "la-xt292-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "apparatus",
+  "frase": "Persicos odi, puer, apparatus",
+  "ocorrencia": 1,
+  "de": "la-t292",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p701",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "genitivo",
+   "vocativo",
+   "ablativo"
+  ],
+  "nota": "apparatus: acusativo plural, objeto de odi: os luxos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true,
+  "ambigua": true
+ },
+ {
+  "id": "la-xt293-0",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "displicent",
+  "frase": "displicent nexae philyra coronae;",
+  "ocorrencia": 1,
+  "de": "la-t293",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p702",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "displicent: presente do indicativo, 3ª pessoa do plural, desagradam.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do plural",
+  "distratoresPessoa": [
+   "3ª pessoa do singular",
+   "1ª pessoa do plural",
+   "2ª pessoa do plural",
+   "1ª pessoa do singular"
+  ],
+  "dicionario": "displiceo, displicere, displicui, displicitum",
+  "distratoresDicionario": [
+   "displicio, displicire, displicivi, displicitum",
+   "displicio, displicere, displicui, displicitum",
+   "disgrego, disgregare, disgregavi, disgregatum",
+   "dimitto, dimittere, dimisi, dimissum"
+  ]
+ },
+ {
+  "id": "la-xt293-1",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "nexae",
+  "frase": "displicent nexae philyra coronae;",
+  "ocorrencia": 1,
+  "de": "la-t293",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p703",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "particípio presente",
+   "infinitivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "nexae: particípio perfeito, nominativo feminino plural, concorda com coronae: entrelaçadas.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g014"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "necto, nectere, nexui, nexum",
+  "distratoresDicionario": [
+   "necteo, nectere, nectui, nectitum",
+   "nectio, nectere, nexui, nexum",
+   "necto, nectare, nectavi, nectatum",
+   "nectio, nectire, nectivi, nectitum"
+  ]
+ },
+ {
+  "id": "la-xt293-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "philyra",
+  "frase": "displicent nexae philyra coronae;",
+  "ocorrencia": 1,
+  "de": "la-t293",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p704",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "dativo",
+   "acusativo"
+  ],
+  "nota": "philyra: ablativo singular, com quê: com fibra de tília.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true
+ },
+ {
+  "id": "la-xt293-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "coronae",
+  "frase": "displicent nexae philyra coronae;",
+  "ocorrencia": 1,
+  "de": "la-t293",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p705",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "genitivo",
+   "dativo",
+   "acusativo"
+  ],
+  "nota": "coronae: nominativo plural, sujeito de displicent: as coroas.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "corona, coronae, f.",
+  "distratoresDicionario": [
+   "coronus, coroni, m.",
+   "coronum, coroni, n.",
+   "coronus, coronus, m.",
+   "corones, coronei, f."
+  ]
+ },
+ {
+  "id": "la-xt294-0",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "mitte",
+  "frase": "mitte sectari, rosa quo locorum sera moretur.",
+  "ocorrencia": 1,
+  "de": "la-t294",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p706",
+  "pt": "imperativo",
+  "aceitas": [
+   "imperativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "infinitivo",
+   "presente do subjuntivo",
+   "futuro do indicativo"
+  ],
+  "nota": "mitte: imperativo presente, 2ª pessoa do singular, com infinitivo: deixa de.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g011"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "2ª pessoa do singular",
+  "distratoresPessoa": [
+   "2ª pessoa do plural",
+   "1ª pessoa do singular",
+   "3ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "mitto, mittere, misi, missum",
+  "distratoresDicionario": [
+   "mitteo, mittere, mittui, mittitum",
+   "mittio, mittere, misi, missum",
+   "mitto, mittare, mittavi, mittatum",
+   "mittio, mittire, mittivi, mittitum"
+  ]
+ },
+ {
+  "id": "la-xt294-1",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "sectari",
+  "frase": "mitte sectari, rosa quo locorum sera moretur.",
+  "ocorrencia": 1,
+  "de": "la-t294",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p707",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "distratores": [
+   "imperativo",
+   "imperfeito do subjuntivo",
+   "presente do indicativo",
+   "particípio presente"
+  ],
+  "nota": "sectari: infinitivo presente, depende de mitte, depoente: procurar.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "sector, sectari, sectatus sum",
+  "distratoresDicionario": [
+   "sector, secti, sectatus sum",
+   "secteor, secteri, sectitus sum",
+   "sectior, sectiri, sectitus sum",
+   "sectior, secti, sectatus sum"
+  ]
+ },
+ {
+  "id": "la-xt294-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "rosa",
+  "frase": "mitte sectari, rosa quo locorum sera moretur.",
+  "ocorrencia": 1,
+  "de": "la-t294",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p708",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "ablativo",
+   "acusativo",
+   "genitivo"
+  ],
+  "nota": "rosa: nominativo singular, sujeito de moretur: a rosa.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": true
+ },
+ {
+  "id": "la-xt294-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "locorum",
+  "frase": "mitte sectari, rosa quo locorum sera moretur.",
+  "ocorrencia": 1,
+  "de": "la-t294",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p709",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "ablativo",
+   "acusativo"
+  ],
+  "nota": "locorum: genitivo plural, partitivo, com quo: dos lugares.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "locus, loci, m.",
+  "distratoresDicionario": [
+   "loca, locae, f.",
+   "locis, locis, m.",
+   "locus, locus, m.",
+   "loces, locei, f."
+  ]
+ },
+ {
+  "id": "la-xt294-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "sera",
+  "frase": "mitte sectari, rosa quo locorum sera moretur.",
+  "ocorrencia": 1,
+  "de": "la-t294",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p710",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "sera: nominativo feminino singular, concorda com rosa: tardia.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "serus, sera, serum",
+  "distratoresDicionario": [
+   "seris, sere",
+   "serus, seris",
+   "serer, serera, sererum",
+   "serer, sereris, serere"
+  ]
+ },
+ {
+  "id": "la-xt294-6",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "moretur",
+  "frase": "mitte sectari, rosa quo locorum sera moretur.",
+  "ocorrencia": 1,
+  "de": "la-t294",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p711",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "subjuntivo presente"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "presente do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "moretur: presente do subjuntivo, 3ª pessoa do singular, pergunta indireta, depoente: se demora.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g012"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "moror, morari, moratus sum",
+  "distratoresDicionario": [
+   "moror, mori, moratus sum",
+   "moreor, moreri, moritus sum",
+   "morior, mori, mortuus sum",
+   "miror, mirari, miratus sum"
+  ]
+ },
+ {
+  "id": "la-xt295-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Simplici",
+  "frase": "Simplici myrto nihil allabores sedulus curo:",
+  "ocorrencia": 1,
+  "de": "la-t295",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p712",
+  "pt": "dativo",
+  "aceitas": [
+   "caso dativo",
+   "dat"
+  ],
+  "distratores": [
+   "ablativo",
+   "genitivo",
+   "nominativo",
+   "acusativo"
+  ],
+  "nota": "Simplici: dativo feminino singular, concorda com myrto: simples.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g005"
+  ],
+  "dificuldade": 4.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "simplex, simplicis",
+  "distratoresDicionario": [
+   "simplicus, simplica, simplicum",
+   "simplicis, simplice",
+   "simplicer, simplicera, simplicerum",
+   "simplicer, simpliceris, simplicere"
+  ]
+ },
+ {
+  "id": "la-xt295-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "myrto",
+  "frase": "Simplici myrto nihil allabores sedulus curo:",
+  "ocorrencia": 1,
+  "de": "la-t295",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p713",
+  "pt": "dativo",
+  "aceitas": [
+   "caso dativo",
+   "dat"
+  ],
+  "distratores": [
+   "ablativo",
+   "genitivo",
+   "nominativo",
+   "acusativo"
+  ],
+  "nota": "myrto: dativo singular, a quê se acrescenta: à murta.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g005"
+  ],
+  "dificuldade": 3.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "myrtus, myrti, f.",
+  "distratoresDicionario": [
+   "myrta, myrtae, f.",
+   "myrtis, myrtis, f.",
+   "myrtus, myrtus, m.",
+   "myrtes, myrtei, f."
+  ]
+ },
+ {
+  "id": "la-xt295-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "allabores",
+  "frase": "Simplici myrto nihil allabores sedulus curo:",
+  "ocorrencia": 1,
+  "de": "la-t295",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p714",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "subjuntivo presente"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "presente do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "allabores: presente do subjuntivo, 2ª pessoa do singular, depende de curo, sem ut: que acrescentes.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g012"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "2ª pessoa do singular",
+  "distratoresPessoa": [
+   "2ª pessoa do plural",
+   "1ª pessoa do singular",
+   "3ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "allaboro, allaborare, allaboravi, allaboratum",
+  "distratoresDicionario": [
+   "allaboro, allaborere, allaboravi, allaboratum",
+   "allaboreo, allaborere, allaborui, allaboritum",
+   "allaborio, allaborire, allaborivi, allaboritum",
+   "allaborio, allaborere, allaboravi, allaboratum"
+  ]
+ },
+ {
+  "id": "la-xt295-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "sedulus",
+  "frase": "Simplici myrto nihil allabores sedulus curo:",
+  "ocorrencia": 1,
+  "de": "la-t295",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p715",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "sedulus: nominativo masculino singular, concorda com o sujeito de allabores (tu): zeloso.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false
+ },
+ {
+  "id": "la-xt295-5",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "curo",
+  "frase": "Simplici myrto nihil allabores sedulus curo:",
+  "ocorrencia": 1,
+  "de": "la-t295",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p392",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "curo: presente do indicativo, 1ª pessoa do singular, faço questão.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "1ª pessoa do singular",
+  "distratoresPessoa": [
+   "1ª pessoa do plural",
+   "2ª pessoa do singular",
+   "3ª pessoa do singular",
+   "2ª pessoa do plural"
+  ]
+ },
+ {
+  "id": "la-xt296-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "te",
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "ocorrencia": 1,
+  "de": "la-t296",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p007",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "ablativo",
+   "nominativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "te: acusativo singular, objeto de dedecet: a ti.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "tu, tui",
+  "distratoresDicionario": [
+   "ego, mei",
+   "nil, nihil",
+   "nos, nostri",
+   "vos, vestri"
+  ]
+ },
+ {
+  "id": "la-xt296-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "ministrum",
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "ocorrencia": 1,
+  "de": "la-t296",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p716",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "ministrum: acusativo singular, concorda com te: que serves.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "minister, ministri, m.",
+  "distratoresDicionario": [
+   "ministrus, ministri, m.",
+   "ministrum, ministri, n.",
+   "ministris, ministris, m.",
+   "ministrus, ministrus, m."
+  ]
+ },
+ {
+  "id": "la-xt296-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "dedecet",
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "ocorrencia": 1,
+  "de": "la-t296",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p717",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "dedecet: presente do indicativo, 3ª pessoa do singular, fica mal.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ]
+ },
+ {
+  "id": "la-xt296-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "myrtus",
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "ocorrencia": 1,
+  "de": "la-t296",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p713",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "myrtus: nominativo singular, sujeito de dedecet: a murta.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false
+ },
+ {
+  "id": "la-xt296-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "me",
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "ocorrencia": 1,
+  "de": "la-t296",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p004",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "ablativo",
+   "nominativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "me: acusativo singular, objeto de dedecet: a mim.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "ego, mei",
+  "distratoresDicionario": [
+   "nil, nihil",
+   "nos, nostri",
+   "vos, vestri",
+   "quis, quid"
+  ]
+ },
+ {
+  "id": "la-xt296-8",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "arta",
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "ocorrencia": 1,
+  "de": "la-t296",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p718",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "acusativo",
+   "nominativo",
+   "vocativo",
+   "dativo"
+  ],
+  "nota": "arta: ablativo feminino singular, concorda com vite: densa. Vem depois de «sub», preposição com ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "artus, arta, artum",
+  "distratoresDicionario": [
+   "artis, arte",
+   "artus, artis",
+   "arter, artera, arterum",
+   "arter, arteris, artere"
+  ]
+ },
+ {
+  "id": "la-xt296-9",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "vite",
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "ocorrencia": 1,
+  "de": "la-t296",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p719",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "vite: ablativo singular, depois de sub: a parreira.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "vitis, vitis, f.",
+  "distratoresDicionario": [
+   "vitus, viti, m.",
+   "vites, vitei, f.",
+   "vitum, viti, n.",
+   "vita, vitae, f."
+  ]
+ },
+ {
+  "id": "la-xt296-10",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "bibentem",
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "ocorrencia": 1,
+  "de": "la-t296",
+  "fonte": "Odes, livro I, 38",
+  "lema": "la-p200",
+  "pt": "particípio presente",
+  "aceitas": [
+   "participio presente"
+  ],
+  "distratores": [
+   "particípio perfeito",
+   "presente do indicativo",
+   "infinitivo",
+   "imperativo"
+  ],
+  "nota": "bibentem: particípio presente, acusativo masculino singular, concorda com me: bebendo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g019"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "bibo, bibere, bibi, bibitum",
+  "distratoresDicionario": [
+   "bibeo, bibere, bibui, bibitum",
+   "bibio, bibere, bibi, bibitum",
+   "bibo, bibare, bibavi, bibatum",
+   "bibio, bibire, bibivi, bibitum"
+  ]
+ },
+ {
+  "id": "la-xt297-0",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "Vivamus",
+  "frase": "Vivamus, mea Lesbia, atque amemus",
+  "ocorrencia": 1,
+  "de": "la-t297",
+  "fonte": "Poemas, 5",
+  "lema": "la-p508",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "subjuntivo presente"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "presente do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "Vivamus: presente do subjuntivo, 1ª pessoa do plural, exortação: vivamos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g012"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "1ª pessoa do plural",
+  "distratoresPessoa": [
+   "1ª pessoa do singular",
+   "2ª pessoa do plural",
+   "3ª pessoa do plural",
+   "2ª pessoa do singular"
+  ],
+  "dicionario": "vivo, vivere, vixi, victum",
+  "distratoresDicionario": [
+   "viveo, vivere, vivui, vivitum",
+   "vivio, vivere, vixi, victum",
+   "vivo, vivare, vivavi, vivatum",
+   "vivio, vivire, vivivi, vivitum"
+  ]
+ },
+ {
+  "id": "la-xt297-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "mea",
+  "frase": "Vivamus, mea Lesbia, atque amemus",
+  "ocorrencia": 1,
+  "de": "la-t297",
+  "fonte": "Poemas, 5",
+  "lema": "la-p013",
+  "pt": "vocativo",
+  "aceitas": [
+   "caso vocativo",
+   "voc"
+  ],
+  "distratores": [
+   "nominativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "mea: vocativo feminino singular, concorda com Lesbia: minha.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g002"
+  ],
+  "dificuldade": 6.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "meus, mea, meum",
+  "distratoresDicionario": [
+   "meis, mee",
+   "meus, meis",
+   "idem, eadem, idem",
+   "ille, illa, illud"
+  ]
+ },
+ {
+  "id": "la-xt297-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "amemus",
+  "frase": "Vivamus, mea Lesbia, atque amemus",
+  "ocorrencia": 1,
+  "de": "la-t297",
+  "fonte": "Poemas, 5",
+  "lema": "la-p037",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "subjuntivo presente"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "presente do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "amemus: presente do subjuntivo, 1ª pessoa do plural, exortação: amemos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g012"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "1ª pessoa do plural",
+  "distratoresPessoa": [
+   "1ª pessoa do singular",
+   "2ª pessoa do plural",
+   "3ª pessoa do plural",
+   "2ª pessoa do singular"
+  ],
+  "dicionario": "amo, amare, amavi, amatum",
+  "distratoresDicionario": [
+   "amo, amere, amavi, amatum",
+   "ameo, amere, amui, amitum",
+   "amio, amire, amivi, amitum",
+   "amio, amere, amavi, amatum"
+  ]
+ },
+ {
+  "id": "la-xt298-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "rumores",
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "ocorrencia": 1,
+  "de": "la-t298",
+  "fonte": "Poemas, 5",
+  "lema": "la-p659",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "rumores: acusativo plural, objeto de aestimemus: os falatórios.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "rumor, rumoris, m.",
+  "distratoresDicionario": [
+   "rumores, rumorei, f.",
+   "rumora, rumorae, f.",
+   "rumorus, rumori, m.",
+   "rumorum, rumori, n."
+  ]
+ },
+ {
+  "id": "la-xt298-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "senum",
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "ocorrencia": 1,
+  "de": "la-t298",
+  "fonte": "Poemas, 5",
+  "lema": "la-p660",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "ablativo",
+   "acusativo"
+  ],
+  "nota": "senum: genitivo plural, de quem são os falatórios: dos velhos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "senex, senis, m.",
+  "distratoresDicionario": [
+   "senum, seni, n.",
+   "senis, senis, m.",
+   "sena, senae, f.",
+   "senes, senei, f."
+  ]
+ },
+ {
+  "id": "la-xt298-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "severiorum",
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "ocorrencia": 1,
+  "de": "la-t298",
+  "fonte": "Poemas, 5",
+  "lema": "la-p661",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "ablativo",
+   "acusativo"
+  ],
+  "nota": "severiorum: genitivo masculino plural, comparativo, concorda com senum: mais severos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "severus, severa, severum",
+  "distratoresDicionario": [
+   "severis, severe",
+   "severus, severis",
+   "severer, severera, severerum",
+   "severer, severeris, severere"
+  ]
+ },
+ {
+  "id": "la-xt298-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "omnes",
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "ocorrencia": 1,
+  "de": "la-t298",
+  "fonte": "Poemas, 5",
+  "lema": "la-p019",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "omnes: acusativo masculino plural, concorda com rumores: todos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "omnis, omne",
+  "distratoresDicionario": [
+   "omnus, omna, omnum",
+   "omnis, omnis",
+   "omner, omnera, omnerum",
+   "omner, omneris, omnere"
+  ]
+ },
+ {
+  "id": "la-xt298-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "unius",
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "ocorrencia": 1,
+  "de": "la-t298",
+  "fonte": "Poemas, 5",
+  "lema": "la-p023",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "ablativo",
+   "acusativo"
+  ],
+  "nota": "unius: genitivo masculino singular, concorda com assis: um só.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "unus, una, unum",
+  "distratoresDicionario": [
+   "unis, une",
+   "unus, unis",
+   "uner, unera, unerum",
+   "uner, uneris, unere"
+  ]
+ },
+ {
+  "id": "la-xt298-6",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "aestimemus",
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "ocorrencia": 1,
+  "de": "la-t298",
+  "fonte": "Poemas, 5",
+  "lema": "la-p662",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "subjuntivo presente"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "presente do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "aestimemus: presente do subjuntivo, 1ª pessoa do plural, exortação: avaliemos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g012"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "1ª pessoa do plural",
+  "distratoresPessoa": [
+   "1ª pessoa do singular",
+   "2ª pessoa do plural",
+   "3ª pessoa do plural",
+   "2ª pessoa do singular"
+  ],
+  "dicionario": "aestimo, aestimare, aestimavi, aestimatum",
+  "distratoresDicionario": [
+   "aestimo, aestimere, aestimavi, aestimatum",
+   "aestimeo, aestimere, aestimui, aestimitum",
+   "aestimio, aestimire, aestimivi, aestimitum",
+   "aestimio, aestimere, aestimavi, aestimatum"
+  ]
+ },
+ {
+  "id": "la-xt298-7",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "assis",
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "ocorrencia": 1,
+  "de": "la-t298",
+  "fonte": "Poemas, 5",
+  "lema": "la-p663",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "ablativo",
+   "acusativo"
+  ],
+  "nota": "assis: genitivo singular, genitivo de preço: no valor de um asse.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "as, assis, m.",
+  "distratoresDicionario": [
+   "assa, assae, f.",
+   "assus, assi, m.",
+   "assum, assi, n.",
+   "assus, assus, m."
+  ]
+ },
+ {
+  "id": "la-xt299-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Soles",
+  "frase": "Soles occidere et redire possunt:",
+  "ocorrencia": 1,
+  "de": "la-t299",
+  "fonte": "Poemas, 5",
+  "lema": "la-p664",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "Soles: nominativo plural, sujeito de possunt: os sóis.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "sol, solis, m.",
+  "distratoresDicionario": [
+   "soles, solei, f.",
+   "sola, solae, f.",
+   "solus, soli, m.",
+   "solus, solus, m."
+  ]
+ },
+ {
+  "id": "la-xt299-1",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "occidere",
+  "frase": "Soles occidere et redire possunt:",
+  "ocorrencia": 1,
+  "de": "la-t299",
+  "fonte": "Poemas, 5",
+  "lema": "la-p665",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "distratores": [
+   "imperativo",
+   "perfeito do indicativo",
+   "imperfeito do subjuntivo",
+   "presente do indicativo"
+  ],
+  "nota": "occidere: infinitivo presente, depende de possunt: pôr-se.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 3.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "occido, occidere, occidi, occasum",
+  "distratoresDicionario": [
+   "occideo, occidere, occidui, occiditum",
+   "occidio, occidere, occidi, occasum",
+   "occido, occidare, occidavi, occidatum",
+   "occidio, occidire, occidivi, occiditum"
+  ]
+ },
+ {
+  "id": "la-xt299-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "redire",
+  "frase": "Soles occidere et redire possunt:",
+  "ocorrencia": 1,
+  "de": "la-t299",
+  "fonte": "Poemas, 5",
+  "lema": "la-p336",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "distratores": [
+   "imperativo",
+   "imperfeito do subjuntivo",
+   "presente do indicativo",
+   "particípio presente"
+  ],
+  "nota": "redire: infinitivo presente, depende de possunt: voltar.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "redeo, redire, redii, reditum",
+  "distratoresDicionario": [
+   "regno, regnare, regnavi, regnatum",
+   "rego, regere, rexi, rectum",
+   "renovo, renovare, renovavi, renovatum",
+   "repleo, replere, replevi, repletum"
+  ]
+ },
+ {
+  "id": "la-xt299-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "possunt",
+  "frase": "Soles occidere et redire possunt:",
+  "ocorrencia": 1,
+  "de": "la-t299",
+  "fonte": "Poemas, 5",
+  "lema": "la-p121",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "possunt: presente do indicativo, 3ª pessoa do plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do plural",
+  "distratoresPessoa": [
+   "3ª pessoa do singular",
+   "1ª pessoa do plural",
+   "2ª pessoa do plural",
+   "1ª pessoa do singular"
+  ],
+  "dicionario": "possum, posse, potui",
+  "distratoresDicionario": [
+   "patior, pati, passus sum",
+   "paeniteo, paenitere, paenitui",
+   "gaudeo, gaudere, gavisus sum",
+   "inquam, inquis, inquit"
+  ]
+ },
+ {
+  "id": "la-xt300-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "nobis",
+  "frase": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "ocorrencia": 1,
+  "de": "la-t300",
+  "fonte": "Poemas, 5",
+  "lema": "la-p079",
+  "pt": "dativo",
+  "aceitas": [
+   "caso dativo",
+   "dat"
+  ],
+  "distratores": [
+   "ablativo",
+   "genitivo",
+   "nominativo",
+   "acusativo"
+  ],
+  "nota": "nobis: dativo plural, com dormienda, quem há de dormir: por nós.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g005"
+  ],
+  "dificuldade": 4.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "nos, nostri",
+  "distratoresDicionario": [
+   "nil, nihil",
+   "ego, mei",
+   "vos, vestri",
+   "quis, quid"
+  ]
+ },
+ {
+  "id": "la-xt300-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "occidit",
+  "frase": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "ocorrencia": 1,
+  "de": "la-t300",
+  "fonte": "Poemas, 5",
+  "lema": "la-p665",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "occidit: presente do indicativo, 3ª pessoa do singular, depois de cum: se põe.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "occido, occidere, occidi, occasum",
+  "distratoresDicionario": [
+   "occideo, occidere, occidui, occiditum",
+   "occidio, occidere, occidi, occasum",
+   "occido, occidare, occidavi, occidatum",
+   "occidio, occidire, occidivi, occiditum"
+  ]
+ },
+ {
+  "id": "la-xt300-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "brevis",
+  "frase": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "ocorrencia": 1,
+  "de": "la-t300",
+  "fonte": "Poemas, 5",
+  "lema": "la-p130",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "brevis: nominativo feminino singular, concorda com lux: breve.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true,
+  "ambigua": true
+ },
+ {
+  "id": "la-xt300-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "lux",
+  "frase": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "ocorrencia": 1,
+  "de": "la-t300",
+  "fonte": "Poemas, 5",
+  "lema": "la-p041",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "lux: nominativo singular, sujeito de occidit: a luz.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false
+ },
+ {
+  "id": "la-xt300-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "nox",
+  "frase": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "ocorrencia": 1,
+  "de": "la-t300",
+  "fonte": "Poemas, 5",
+  "lema": "la-p542",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "nox: nominativo singular, sujeito de est dormienda: a noite.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false
+ },
+ {
+  "id": "la-xt300-7",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "ocorrencia": 1,
+  "de": "la-t300",
+  "fonte": "Poemas, 5",
+  "lema": "la-p003",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "est: presente do indicativo, 3ª pessoa do singular, com dormienda: há de ser dormida.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "sum, esse, fui",
+  "distratoresDicionario": [
+   "sapio, sapere, sapivi",
+   "sitio, sitire, sitivi",
+   "sector, sectari, sectatus sum",
+   "sequor, sequi, secutus sum"
+  ]
+ },
+ {
+  "id": "la-xt300-8",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "perpetua",
+  "frase": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "ocorrencia": 1,
+  "de": "la-t300",
+  "fonte": "Poemas, 5",
+  "lema": "la-p361",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "perpetua: nominativo feminino singular, concorda com nox: perpétua.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "perpetuus, perpetua, perpetuum",
+  "distratoresDicionario": [
+   "perpetuis, perpetue",
+   "perpetuus, perpetuis",
+   "pervius, pervia, pervium",
+   "postremus, postrema, postremum"
+  ]
+ },
+ {
+  "id": "la-xt300-9",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "una",
+  "frase": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "ocorrencia": 1,
+  "de": "la-t300",
+  "fonte": "Poemas, 5",
+  "lema": "la-p023",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "una: nominativo feminino singular, concorda com nox: uma só.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "unus, una, unum",
+  "distratoresDicionario": [
+   "unis, une",
+   "unus, unis",
+   "uner, unera, unerum",
+   "uner, uneris, unere"
+  ]
+ },
+ {
+  "id": "la-xt301-0",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "Da",
+  "frase": "Da mi basia mille, deinde centum",
+  "ocorrencia": 1,
+  "de": "la-t301",
+  "fonte": "Poemas, 5",
+  "lema": "la-p099",
+  "pt": "imperativo",
+  "aceitas": [
+   "imperativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "infinitivo",
+   "presente do subjuntivo",
+   "futuro do indicativo"
+  ],
+  "nota": "Da: imperativo presente, 2ª pessoa do singular, dá.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g011"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "2ª pessoa do singular",
+  "distratoresPessoa": [
+   "2ª pessoa do plural",
+   "1ª pessoa do singular",
+   "3ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "do, dare, dedi, datum",
+  "distratoresDicionario": [
+   "dono, donare, donavi, donatum",
+   "doceo, docere, docui, doctum",
+   "doleo, dolere, dolui, doliturus",
+   "dormio, dormire, dormivi, dormitum"
+  ]
+ },
+ {
+  "id": "la-xt301-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "mi",
+  "frase": "Da mi basia mille, deinde centum",
+  "ocorrencia": 1,
+  "de": "la-t301",
+  "fonte": "Poemas, 5",
+  "lema": "la-p004",
+  "pt": "dativo",
+  "aceitas": [
+   "caso dativo",
+   "dat"
+  ],
+  "distratores": [
+   "ablativo",
+   "genitivo",
+   "nominativo",
+   "acusativo"
+  ],
+  "nota": "mi: dativo singular, forma breve de mihi: a mim.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g005"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "ego, mei",
+  "distratoresDicionario": [
+   "nil, nihil",
+   "nos, nostri",
+   "vos, vestri",
+   "quis, quid"
+  ]
+ },
+ {
+  "id": "la-xt301-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "basia",
+  "frase": "Da mi basia mille, deinde centum",
+  "ocorrencia": 1,
+  "de": "la-t301",
+  "fonte": "Poemas, 5",
+  "lema": "la-p668",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "basia: acusativo plural, objeto de da: beijos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": true,
+  "dicionario": "basium, basii, n.",
+  "distratoresDicionario": [
+   "basia, basiae, f.",
+   "basiis, basiis, n.",
+   "basius, basii, m.",
+   "basius, basius, m."
+  ]
+ },
+ {
+  "id": "la-xt302-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "altera",
+  "frase": "Da … dein mille altera, dein secunda centum",
+  "ocorrencia": 1,
+  "de": "la-t302",
+  "fonte": "Poemas, 5",
+  "lema": "la-p672",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "vocativo",
+   "genitivo"
+  ],
+  "nota": "altera: acusativo neutro plural, concorda com mille (basia): outros.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "alter, altera, alterum",
+  "distratoresDicionario": [
+   "alteris, altere",
+   "alter, alteris",
+   "alterus, altera, alterum",
+   "alter, alteris, altere"
+  ]
+ },
+ {
+  "id": "la-xt302-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "secunda",
+  "frase": "Da … dein mille altera, dein secunda centum",
+  "ocorrencia": 1,
+  "de": "la-t302",
+  "fonte": "Poemas, 5",
+  "lema": "la-p673",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "vocativo",
+   "genitivo"
+  ],
+  "nota": "secunda: acusativo neutro plural, concorda com centum (basia): segundos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "secundus, secunda, secundum",
+  "distratoresDicionario": [
+   "secundis, secunde",
+   "secundus, secundis",
+   "secunder, secundera, secunderum",
+   "secunder, secunderis, secundere"
+  ]
+ },
+ {
+  "id": "la-xt304-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "milia",
+  "frase": "dein, cum milia multa fecerimus, conturbabimus illa, ne sciamus",
+  "ocorrencia": 1,
+  "de": "la-t304",
+  "fonte": "Poemas, 5",
+  "lema": "la-p669",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "milia: acusativo plural, objeto de fecerimus: milhares.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": true,
+  "dicionario": "mille; plural milia, milium, n.",
+  "distratoresDicionario": [
+   "mirus, mira, mirum",
+   "miser, misera, miserum",
+   "minimus, minima, minimum",
+   "minister, ministri, m."
+  ]
+ },
+ {
+  "id": "la-xt304-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "multa",
+  "frase": "dein, cum milia multa fecerimus, conturbabimus illa, ne sciamus",
+  "ocorrencia": 1,
+  "de": "la-t304",
+  "fonte": "Poemas, 5",
+  "lema": "la-p214",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "vocativo",
+   "genitivo"
+  ],
+  "nota": "multa: acusativo neutro plural, concorda com milia: muitos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "multus, multa, multum",
+  "distratoresDicionario": [
+   "multis, multe",
+   "multus, multis",
+   "multer, multera, multerum",
+   "multer, multeris, multere"
+  ]
+ },
+ {
+  "id": "la-xt304-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "fecerimus",
+  "frase": "dein, cum milia multa fecerimus, conturbabimus illa, ne sciamus",
+  "ocorrencia": 1,
+  "de": "la-t304",
+  "fonte": "Poemas, 5",
+  "lema": "la-p165",
+  "pt": "futuro perfeito do indicativo",
+  "aceitas": [
+   "indicativo futuro perfeito"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "perfeito do subjuntivo",
+   "imperativo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "fecerimus: futuro perfeito do indicativo, 1ª pessoa do plural, depois de cum: quando tivermos feito.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g030"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "pessoa": "1ª pessoa do plural",
+  "distratoresPessoa": [
+   "1ª pessoa do singular",
+   "2ª pessoa do plural",
+   "3ª pessoa do plural",
+   "2ª pessoa do singular"
+  ],
+  "dicionario": "facio, facere, feci, factum",
+  "distratoresDicionario": [
+   "facio, facire, facivi, facitum",
+   "faco, facere, feci, factum",
+   "faceo, facere, facui, facitum",
+   "faco, facare, facavi, facatum"
+  ]
+ },
+ {
+  "id": "la-xt304-5",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "conturbabimus",
+  "frase": "dein, cum milia multa fecerimus, conturbabimus illa, ne sciamus",
+  "ocorrencia": 1,
+  "de": "la-t304",
+  "fonte": "Poemas, 5",
+  "lema": "la-p592",
+  "pt": "futuro do indicativo",
+  "aceitas": [
+   "indicativo futuro"
+  ],
+  "distratores": [
+   "presente do subjuntivo",
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "perfeito do indicativo"
+  ],
+  "nota": "conturbabimus: futuro do indicativo, 1ª pessoa do plural, embaralharemos (a conta).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g010"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "1ª pessoa do plural",
+  "distratoresPessoa": [
+   "1ª pessoa do singular",
+   "2ª pessoa do plural",
+   "3ª pessoa do plural",
+   "2ª pessoa do singular"
+  ],
+  "dicionario": "conturbo, conturbare, conturbavi, conturbatum",
+  "distratoresDicionario": [
+   "conturbo, conturbere, conturbavi, conturbatum",
+   "conturbeo, conturbere, conturbui, conturbitum",
+   "conturbio, conturbire, conturbivi, conturbitum",
+   "conturbio, conturbere, conturbavi, conturbatum"
+  ]
+ },
+ {
+  "id": "la-xt304-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "illa",
+  "frase": "dein, cum milia multa fecerimus, conturbabimus illa, ne sciamus",
+  "ocorrencia": 1,
+  "de": "la-t304",
+  "fonte": "Poemas, 5",
+  "lema": "la-p215",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "illa: acusativo neutro plural, objeto de conturbabimus: aqueles (os milhares).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "ille, illa, illud",
+  "distratoresDicionario": [
+   "idem, eadem, idem",
+   "ipse, ipsa, ipsum",
+   "is, ea, id",
+   "meus, mea, meum"
+  ]
+ },
+ {
+  "id": "la-xt304-8",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "sciamus",
+  "frase": "dein, cum milia multa fecerimus, conturbabimus illa, ne sciamus",
+  "ocorrencia": 1,
+  "de": "la-t304",
+  "fonte": "Poemas, 5",
+  "lema": "la-p252",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "subjuntivo presente"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "presente do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "sciamus: presente do subjuntivo, 1ª pessoa do plural, depois de ne: saibamos (a conta).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g012"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "1ª pessoa do plural",
+  "distratoresPessoa": [
+   "1ª pessoa do singular",
+   "2ª pessoa do plural",
+   "3ª pessoa do plural",
+   "2ª pessoa do singular"
+  ],
+  "dicionario": "scio, scire, scivi, scitum",
+  "distratoresDicionario": [
+   "scio, scere, scivi, scitum",
+   "sco, scere, scivi, scitum",
+   "sceo, scere, scui, scitum",
+   "sco, scare, scavi, scatum"
+  ]
+ },
+ {
+  "id": "la-xt305-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "quis",
+  "frase": "aut ne quis malus invidere possit, cum tantum sciat esse basiorum.",
+  "ocorrencia": 1,
+  "de": "la-t305",
+  "fonte": "Poemas, 5",
+  "lema": "la-p236",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "ablativo",
+   "dativo",
+   "vocativo",
+   "acusativo"
+  ],
+  "nota": "quis: nominativo masculino singular, depois de ne: alguém (= aliquis).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true,
+  "ambigua": true
+ },
+ {
+  "id": "la-xt305-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "malus",
+  "frase": "aut ne quis malus invidere possit, cum tantum sciat esse basiorum.",
+  "ocorrencia": 1,
+  "de": "la-t305",
+  "fonte": "Poemas, 5",
+  "lema": "la-p675",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "acusativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "malus: nominativo masculino singular, concorda com quis: mau, mal-intencionado.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false
+ },
+ {
+  "id": "la-xt305-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "invidere",
+  "frase": "aut ne quis malus invidere possit, cum tantum sciat esse basiorum.",
+  "ocorrencia": 1,
+  "de": "la-t305",
+  "fonte": "Poemas, 5",
+  "lema": "la-p674",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo",
+   "presente do indicativo"
+  ],
+  "nota": "invidere: infinitivo presente, depende de possit: pôr mau-olhado, invejar.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "invideo, invidere, invidi, invisum",
+  "distratoresDicionario": [
+   "invido, invidere, invidi, invisum",
+   "invido, invidare, invidavi, invidatum",
+   "invidio, invidire, invidivi, inviditum",
+   "invidio, invidere, invidi, invisum"
+  ]
+ },
+ {
+  "id": "la-xt305-5",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "possit",
+  "frase": "aut ne quis malus invidere possit, cum tantum sciat esse basiorum.",
+  "ocorrencia": 1,
+  "de": "la-t305",
+  "fonte": "Poemas, 5",
+  "lema": "la-p121",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "subjuntivo presente"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "presente do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "possit: presente do subjuntivo, 3ª pessoa do singular, depois de ne: possa.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g012"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "possum, posse, potui",
+  "distratoresDicionario": [
+   "patior, pati, passus sum",
+   "paeniteo, paenitere, paenitui",
+   "gaudeo, gaudere, gavisus sum",
+   "inquam, inquis, inquit"
+  ]
+ },
+ {
+  "id": "la-xt305-7",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "tantum",
+  "frase": "aut ne quis malus invidere possit, cum tantum sciat esse basiorum.",
+  "ocorrencia": 1,
+  "de": "la-t305",
+  "fonte": "Poemas, 5",
+  "lema": "la-p247",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "tantum: acusativo neutro singular, sujeito de esse, com basiorum: tamanho número.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": true,
+  "dicionario": "tantus, tanta, tantum",
+  "distratoresDicionario": [
+   "tantis, tante",
+   "tantus, tantis",
+   "tanter, tantera, tanterum",
+   "tanter, tanteris, tantere"
+  ]
+ },
+ {
+  "id": "la-xt305-8",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "sciat",
+  "frase": "aut ne quis malus invidere possit, cum tantum sciat esse basiorum.",
+  "ocorrencia": 1,
+  "de": "la-t305",
+  "fonte": "Poemas, 5",
+  "lema": "la-p252",
+  "pt": "presente do subjuntivo",
+  "aceitas": [
+   "subjuntivo presente"
+  ],
+  "distratores": [
+   "futuro do indicativo",
+   "presente do indicativo",
+   "imperativo",
+   "imperfeito do subjuntivo"
+  ],
+  "nota": "sciat: presente do subjuntivo, 3ª pessoa do singular, depois de cum: souber.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g012"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "scio, scire, scivi, scitum",
+  "distratoresDicionario": [
+   "scio, scere, scivi, scitum",
+   "sco, scere, scivi, scitum",
+   "sceo, scere, scui, scitum",
+   "sco, scare, scavi, scatum"
+  ]
+ },
+ {
+  "id": "la-xt305-9",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "esse",
+  "frase": "aut ne quis malus invidere possit, cum tantum sciat esse basiorum.",
+  "ocorrencia": 1,
+  "de": "la-t305",
+  "fonte": "Poemas, 5",
+  "lema": "la-p003",
+  "pt": "infinitivo",
+  "aceitas": [
+   "infinitivo"
+  ],
+  "distratores": [
+   "imperativo",
+   "imperfeito do subjuntivo",
+   "presente do indicativo",
+   "particípio presente"
+  ],
+  "nota": "esse: infinitivo presente, oração infinitiva: que há.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g013"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "sum, esse, fui",
+  "distratoresDicionario": [
+   "sapio, sapere, sapivi",
+   "sitio, sitire, sitivi",
+   "sector, sectari, sectatus sum",
+   "sequor, sequi, secutus sum"
+  ]
+ },
+ {
+  "id": "la-xt305-10",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "basiorum",
+  "frase": "aut ne quis malus invidere possit, cum tantum sciat esse basiorum.",
+  "ocorrencia": 1,
+  "de": "la-t305",
+  "fonte": "Poemas, 5",
+  "lema": "la-p668",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "ablativo",
+   "acusativo"
+  ],
+  "nota": "basiorum: genitivo plural, partitivo, com tantum: de beijos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "basium, basii, n.",
+  "distratoresDicionario": [
+   "basius, basii, m.",
+   "basia, basiae, f.",
+   "basiis, basiis, n.",
+   "basius, basius, m."
+  ]
+ },
+ {
+  "id": "la-xt306-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "Multas",
+  "frase": "Multas per gentes et multa per aequora vectus advenio",
+  "ocorrencia": 1,
+  "de": "la-t306",
+  "fonte": "Poemas, 101",
+  "lema": "la-p214",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "Multas: acusativo feminino plural, concorda com gentes: muitos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "multus, multa, multum",
+  "distratoresDicionario": [
+   "multis, multe",
+   "multus, multis",
+   "multer, multera, multerum",
+   "multer, multeris, multere"
+  ]
+ },
+ {
+  "id": "la-xt306-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "gentes",
+  "frase": "Multas per gentes et multa per aequora vectus advenio",
+  "ocorrencia": 1,
+  "de": "la-t306",
+  "fonte": "Poemas, 101",
+  "lema": "la-p020",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "gentes: acusativo plural, depois de per: por povos. Vem depois de «per», preposição com acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "gens, gentis, f.",
+  "distratoresDicionario": [
+   "gentis, gentis, f.",
+   "gentes, gentei, f.",
+   "genta, gentae, f.",
+   "gentus, genti, m."
+  ]
+ },
+ {
+  "id": "la-xt306-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "multa",
+  "frase": "Multas per gentes et multa per aequora vectus advenio",
+  "ocorrencia": 1,
+  "de": "la-t306",
+  "fonte": "Poemas, 101",
+  "lema": "la-p214",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "vocativo",
+   "genitivo"
+  ],
+  "nota": "multa: acusativo neutro plural, concorda com aequora: muitos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "multus, multa, multum",
+  "distratoresDicionario": [
+   "multis, multe",
+   "multus, multis",
+   "multer, multera, multerum",
+   "multer, multeris, multere"
+  ]
+ },
+ {
+  "id": "la-xt306-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "aequora",
+  "frase": "Multas per gentes et multa per aequora vectus advenio",
+  "ocorrencia": 1,
+  "de": "la-t306",
+  "fonte": "Poemas, 101",
+  "lema": "la-p676",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "aequora: acusativo plural, depois de per: pelos mares. Vem depois de «per», preposição com acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "aequor, aequoris, n.",
+  "distratoresDicionario": [
+   "aequora, aequorae, f.",
+   "aequorum, aequori, n.",
+   "aequorus, aequori, m.",
+   "aequorus, aequorus, m."
+  ]
+ },
+ {
+  "id": "la-xt306-7",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "vectus",
+  "frase": "Multas per gentes et multa per aequora vectus advenio",
+  "ocorrencia": 1,
+  "de": "la-t306",
+  "fonte": "Poemas, 101",
+  "lema": "la-p677",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "particípio presente",
+   "infinitivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "vectus: particípio perfeito, nominativo masculino singular, concorda com o sujeito de advenio: levado, depois de viajar.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g014"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "veho, vehere, vexi, vectum",
+  "distratoresDicionario": [
+   "veheo, vehere, vehui, vehitum",
+   "vehio, vehere, vexi, vectum",
+   "veho, vehare, vehavi, vehatum",
+   "vehio, vehire, vehivi, vehitum"
+  ]
+ },
+ {
+  "id": "la-xt306-8",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "advenio",
+  "frase": "Multas per gentes et multa per aequora vectus advenio",
+  "ocorrencia": 1,
+  "de": "la-t306",
+  "fonte": "Poemas, 101",
+  "lema": "la-p093",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "advenio: presente do indicativo, 1ª pessoa do singular, chego.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "1ª pessoa do singular",
+  "distratoresPessoa": [
+   "1ª pessoa do plural",
+   "2ª pessoa do singular",
+   "3ª pessoa do singular",
+   "2ª pessoa do plural"
+  ]
+ },
+ {
+  "id": "la-xt307-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "has",
+  "frase": "advenio has miseras, frater, ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t307",
+  "fonte": "Poemas, 101",
+  "lema": "la-p124",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "has: acusativo feminino plural, concorda com inferias: estas.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "hic, haec, hoc",
+  "distratoresDicionario": [
+   "qui, quae, quod",
+   "sui, sibi, se",
+   "idem, eadem, idem",
+   "ille, illa, illud"
+  ]
+ },
+ {
+  "id": "la-xt307-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "miseras",
+  "frase": "advenio has miseras, frater, ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t307",
+  "fonte": "Poemas, 101",
+  "lema": "la-p678",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "miseras: acusativo feminino plural, concorda com inferias: tristes.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "miser, misera, miserum",
+  "distratoresDicionario": [
+   "miseris, misere",
+   "miser, miseris",
+   "miserus, misera, miserum",
+   "miser, miseris, misere"
+  ]
+ },
+ {
+  "id": "la-xt307-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "frater",
+  "frase": "advenio has miseras, frater, ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t307",
+  "fonte": "Poemas, 101",
+  "lema": "la-p545",
+  "pt": "vocativo",
+  "aceitas": [
+   "caso vocativo",
+   "voc"
+  ],
+  "distratores": [
+   "nominativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "frater: vocativo singular, a quem se fala: irmão.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g002"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true
+ },
+ {
+  "id": "la-xt307-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "inferias",
+  "frase": "advenio has miseras, frater, ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t307",
+  "fonte": "Poemas, 101",
+  "lema": "la-p679",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "inferias: acusativo plural, depois de ad, para quê: para as oferendas aos mortos. Vem depois de «ad», preposição com acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "inferiae, inferiarum, f. pl.",
+  "distratoresDicionario": [
+   "tenebrae, tenebrarum, f. pl.",
+   "circenses, circensium, m. pl.",
+   "moenia, moenium, n. pl.",
+   "arma, armorum, n. pl."
+  ]
+ },
+ {
+  "id": "la-xt308-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "te",
+  "frase": "ut te postremo donarem munere mortis",
+  "ocorrencia": 1,
+  "de": "la-t308",
+  "fonte": "Poemas, 101",
+  "lema": "la-p007",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "ablativo",
+   "nominativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "te: acusativo singular, objeto de donarem: te.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "tu, tui",
+  "distratoresDicionario": [
+   "ego, mei",
+   "nil, nihil",
+   "nos, nostri",
+   "vos, vestri"
+  ]
+ },
+ {
+  "id": "la-xt308-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "postremo",
+  "frase": "ut te postremo donarem munere mortis",
+  "ocorrencia": 1,
+  "de": "la-t308",
+  "fonte": "Poemas, 101",
+  "lema": "la-p680",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "postremo: ablativo neutro singular, concorda com munere: último.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "postremus, postrema, postremum",
+  "distratoresDicionario": [
+   "postremis, postreme",
+   "postremus, postremis",
+   "postremer, postremera, postremerum",
+   "postremer, postremeris, postremere"
+  ]
+ },
+ {
+  "id": "la-xt308-3",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "donarem",
+  "frase": "ut te postremo donarem munere mortis",
+  "ocorrencia": 1,
+  "de": "la-t308",
+  "fonte": "Poemas, 101",
+  "lema": "la-p639",
+  "pt": "imperfeito do subjuntivo",
+  "aceitas": [
+   "subjuntivo imperfeito"
+  ],
+  "distratores": [
+   "infinitivo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo"
+  ],
+  "nota": "donarem: imperfeito do subjuntivo, 1ª pessoa do singular, depois de ut: presenteasse.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g017"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "1ª pessoa do singular",
+  "distratoresPessoa": [
+   "1ª pessoa do plural",
+   "2ª pessoa do singular",
+   "3ª pessoa do singular",
+   "2ª pessoa do plural"
+  ],
+  "dicionario": "dono, donare, donavi, donatum",
+  "distratoresDicionario": [
+   "dono, donere, donavi, donatum",
+   "doneo, donere, donui, donitum",
+   "donio, donire, donivi, donitum",
+   "donio, donere, donavi, donatum"
+  ]
+ },
+ {
+  "id": "la-xt308-4",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "munere",
+  "frase": "ut te postremo donarem munere mortis",
+  "ocorrencia": 1,
+  "de": "la-t308",
+  "fonte": "Poemas, 101",
+  "lema": "la-p681",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "munere: ablativo singular, com donarem, com quê: com o presente.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "munus, muneris, n.",
+  "distratoresDicionario": [
+   "munerus, muneri, m.",
+   "muneris, muneris, n.",
+   "muneres, munerei, f.",
+   "munera, munerae, f."
+  ]
+ },
+ {
+  "id": "la-xt308-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "mortis",
+  "frase": "ut te postremo donarem munere mortis",
+  "ocorrencia": 1,
+  "de": "la-t308",
+  "fonte": "Poemas, 101",
+  "lema": "la-p119",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "ablativo",
+   "acusativo"
+  ],
+  "nota": "mortis: genitivo singular, de que é o presente: da morte, o devido aos mortos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "mors, mortis, f.",
+  "distratoresDicionario": [
+   "morta, mortae, f.",
+   "mortus, morti, m.",
+   "mortum, morti, n.",
+   "mortis, mortis, f."
+  ]
+ },
+ {
+  "id": "la-xt309-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "mutam",
+  "frase": "ut … et mutam nequiquam adloquerer cinerem",
+  "ocorrencia": 1,
+  "de": "la-t309",
+  "fonte": "Poemas, 101",
+  "lema": "la-p682",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "mutam: acusativo feminino singular, concorda com cinerem: muda.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 0.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "mutus, muta, mutum",
+  "distratoresDicionario": [
+   "mutis, mute",
+   "mutus, mutis",
+   "muter, mutera, muterum",
+   "muter, muteris, mutere"
+  ]
+ },
+ {
+  "id": "la-xt309-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "adloquerer",
+  "frase": "ut … et mutam nequiquam adloquerer cinerem",
+  "ocorrencia": 1,
+  "de": "la-t309",
+  "fonte": "Poemas, 101",
+  "lema": "la-p684",
+  "pt": "imperfeito do subjuntivo",
+  "aceitas": [
+   "subjuntivo imperfeito"
+  ],
+  "distratores": [
+   "infinitivo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo"
+  ],
+  "nota": "adloquerer: imperfeito do subjuntivo, 1ª pessoa do singular, depende de ut, depoente: falasse.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g017"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "1ª pessoa do singular",
+  "distratoresPessoa": [
+   "1ª pessoa do plural",
+   "2ª pessoa do singular",
+   "3ª pessoa do singular",
+   "2ª pessoa do plural"
+  ],
+  "dicionario": "adloquor, adloqui, adlocutus sum",
+  "distratoresDicionario": [
+   "adloqueor, adloqueri, adloquitus sum",
+   "adloquior, adloqui, adlocutus sum",
+   "adloquor, adloquari, adloquatus sum",
+   "adloquior, adloquiri, adloquitus sum"
+  ]
+ },
+ {
+  "id": "la-xt309-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "cinerem",
+  "frase": "ut … et mutam nequiquam adloquerer cinerem",
+  "ocorrencia": 1,
+  "de": "la-t309",
+  "fonte": "Poemas, 101",
+  "lema": "la-p685",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "cinerem: acusativo singular, objeto de adloquerer: a cinza (aqui, feminino).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "cinis, cineris, m.",
+  "distratoresDicionario": [
+   "cineris, cineris, m.",
+   "cineres, cinerei, f.",
+   "cinera, cinerae, f.",
+   "cinerus, cineri, m."
+  ]
+ },
+ {
+  "id": "la-xt310-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "fortuna",
+  "frase": "quandoquidem fortuna mihi tete abstulit ipsum",
+  "ocorrencia": 1,
+  "de": "la-t310",
+  "fonte": "Poemas, 101",
+  "lema": "la-p148",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "vocativo",
+   "ablativo",
+   "acusativo",
+   "genitivo"
+  ],
+  "nota": "fortuna: nominativo singular, sujeito de abstulit: a sorte.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": true
+ },
+ {
+  "id": "la-xt310-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "mihi",
+  "frase": "quandoquidem fortuna mihi tete abstulit ipsum",
+  "ocorrencia": 1,
+  "de": "la-t310",
+  "fonte": "Poemas, 101",
+  "lema": "la-p004",
+  "pt": "dativo",
+  "aceitas": [
+   "caso dativo",
+   "dat"
+  ],
+  "distratores": [
+   "ablativo",
+   "genitivo",
+   "nominativo",
+   "acusativo"
+  ],
+  "nota": "mihi: dativo singular, de quem foi tirado: de mim.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g005"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "ego, mei",
+  "distratoresDicionario": [
+   "nil, nihil",
+   "nos, nostri",
+   "vos, vestri",
+   "quis, quid"
+  ]
+ },
+ {
+  "id": "la-xt310-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "tete",
+  "frase": "quandoquidem fortuna mihi tete abstulit ipsum",
+  "ocorrencia": 1,
+  "de": "la-t310",
+  "fonte": "Poemas, 101",
+  "lema": "la-p007",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "tete: acusativo singular, forma reforçada de te, objeto de abstulit: a ti.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "tu, tui",
+  "distratoresDicionario": [
+   "ego, mei",
+   "nil, nihil",
+   "nos, nostri",
+   "vos, vestri"
+  ]
+ },
+ {
+  "id": "la-xt310-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "abstulit",
+  "frase": "quandoquidem fortuna mihi tete abstulit ipsum",
+  "ocorrencia": 1,
+  "de": "la-t310",
+  "fonte": "Poemas, 101",
+  "lema": "la-p687",
+  "pt": "perfeito do indicativo",
+  "aceitas": [
+   "indicativo perfeito"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "imperfeito do indicativo",
+   "mais-que-perfeito do indicativo",
+   "futuro do indicativo"
+  ],
+  "nota": "abstulit: perfeito do indicativo, 3ª pessoa do singular, tirou.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g009"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do singular",
+  "distratoresPessoa": [
+   "3ª pessoa do plural",
+   "1ª pessoa do singular",
+   "2ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "aufero, auferre, abstuli, ablatum",
+  "distratoresDicionario": [
+   "absolvo, absolvere, absolvi, absolutum",
+   "audio, audire, audivi, auditum",
+   "ambulo, ambulare, ambulavi, ambulatum",
+   "accendo, accendere, accendi, accensum"
+  ]
+ },
+ {
+  "id": "la-xt310-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "ipsum",
+  "frase": "quandoquidem fortuna mihi tete abstulit ipsum",
+  "ocorrencia": 1,
+  "de": "la-t310",
+  "fonte": "Poemas, 101",
+  "lema": "la-p587",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "ipsum: acusativo masculino singular, concorda com tete: a ti mesmo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "ipse, ipsa, ipsum",
+  "distratoresDicionario": [
+   "idem, eadem, idem",
+   "ille, illa, illud",
+   "is, ea, id",
+   "meus, mea, meum"
+  ]
+ },
+ {
+  "id": "la-xt311-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "miser",
+  "frase": "heu miser indigne frater adempte mihi.",
+  "ocorrencia": 1,
+  "de": "la-t311",
+  "fonte": "Poemas, 101",
+  "lema": "la-p678",
+  "pt": "vocativo",
+  "aceitas": [
+   "caso vocativo",
+   "voc"
+  ],
+  "distratores": [
+   "nominativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "miser: vocativo masculino singular, concorda com frater: infeliz.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g002"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true,
+  "ambigua": true
+ },
+ {
+  "id": "la-xt311-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "indigne",
+  "frase": "heu miser indigne frater adempte mihi.",
+  "ocorrencia": 1,
+  "de": "la-t311",
+  "fonte": "Poemas, 101",
+  "lema": "la-p689",
+  "pt": "vocativo",
+  "aceitas": [
+   "caso vocativo",
+   "voc"
+  ],
+  "distratores": [
+   "nominativo",
+   "acusativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "indigne: vocativo masculino singular, concorda com frater: que não merecias isso.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g002"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "indignus, indigna, indignum",
+  "distratoresDicionario": [
+   "indignis, indigne",
+   "indignus, indignis",
+   "indigner, indignera, indignerum",
+   "indigner, indigneris, indignere"
+  ]
+ },
+ {
+  "id": "la-xt311-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "adempte",
+  "frase": "heu miser indigne frater adempte mihi.",
+  "ocorrencia": 1,
+  "de": "la-t311",
+  "fonte": "Poemas, 101",
+  "lema": "la-p690",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "particípio presente",
+   "infinitivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "adempte: particípio perfeito, vocativo masculino singular, concorda com frater: arrebatado.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g014"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "adimo, adimere, ademi, ademptum",
+  "distratoresDicionario": [
+   "adimeo, adimere, adimui, adimitum",
+   "adimio, adimere, ademi, ademptum",
+   "adimo, adimare, adimavi, adimatum",
+   "adimio, adimire, adimivi, adimitum"
+  ]
+ },
+ {
+  "id": "la-xt312-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "haec",
+  "frase": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "ocorrencia": 1,
+  "de": "la-t312",
+  "fonte": "Poemas, 101",
+  "lema": "la-p124",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "ablativo",
+   "genitivo",
+   "dativo"
+  ],
+  "nota": "haec: acusativo neutro plural, objeto de accipe: estas coisas.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "hic, haec, hoc",
+  "distratoresDicionario": [
+   "qui, quae, quod",
+   "sui, sibi, se",
+   "idem, eadem, idem",
+   "ille, illa, illud"
+  ]
+ },
+ {
+  "id": "la-xt312-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "accipe",
+  "frase": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "ocorrencia": 1,
+  "de": "la-t312",
+  "fonte": "Poemas, 101",
+  "lema": "la-p697",
+  "pt": "imperativo",
+  "aceitas": [
+   "imperativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "infinitivo",
+   "presente do subjuntivo",
+   "futuro do indicativo"
+  ],
+  "nota": "accipe: imperativo presente, 2ª pessoa do singular, recebe.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g011"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "2ª pessoa do singular",
+  "distratoresPessoa": [
+   "2ª pessoa do plural",
+   "1ª pessoa do singular",
+   "3ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "accipio, accipere, accepi, acceptum",
+  "distratoresDicionario": [
+   "accipio, accipire, accipivi, accipitum",
+   "accipo, accipere, accepi, acceptum",
+   "accipeo, accipere, accipui, accipitum",
+   "accipo, accipare, accipavi, accipatum"
+  ]
+ },
+ {
+  "id": "la-xt312-5",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "fraterno",
+  "frase": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "ocorrencia": 1,
+  "de": "la-t312",
+  "fonte": "Poemas, 101",
+  "lema": "la-p698",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "fraterno: ablativo masculino singular, concorda com fletu: de irmão.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "fraternus, fraterna, fraternum",
+  "distratoresDicionario": [
+   "fraternis, fraterne",
+   "fraternus, fraternis",
+   "fraterner, fraternera, fraternerum",
+   "fraterner, fraterneris, fraternere"
+  ]
+ },
+ {
+  "id": "la-xt312-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "multum",
+  "frase": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "ocorrencia": 1,
+  "de": "la-t312",
+  "fonte": "Poemas, 101",
+  "lema": "la-p214",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "multum: acusativo neutro singular, como advérbio: muito.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": true,
+  "dicionario": "multus, multa, multum",
+  "distratoresDicionario": [
+   "multis, multe",
+   "multus, multis",
+   "multer, multera, multerum",
+   "multer, multeris, multere"
+  ]
+ },
+ {
+  "id": "la-xt312-7",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "manantia",
+  "frase": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "ocorrencia": 1,
+  "de": "la-t312",
+  "fonte": "Poemas, 101",
+  "lema": "la-p699",
+  "pt": "particípio presente",
+  "aceitas": [
+   "participio presente"
+  ],
+  "distratores": [
+   "particípio perfeito",
+   "presente do indicativo",
+   "infinitivo",
+   "imperativo"
+  ],
+  "nota": "manantia: particípio presente, acusativo neutro plural, concorda com haec: que escorrem.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g019"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "mano, manare, manavi, manatum",
+  "distratoresDicionario": [
+   "mano, manere, manavi, manatum",
+   "manio, manire, manivi, manitum",
+   "manio, manere, manavi, manatum",
+   "maneo, manere, mansi, mansum"
+  ]
+ },
+ {
+  "id": "la-xt312-8",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "fletu",
+  "frase": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "ocorrencia": 1,
+  "de": "la-t312",
+  "fonte": "Poemas, 101",
+  "lema": "la-p700",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "fletu: ablativo singular, de quê: do pranto.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "fletus, fletus, m.",
+  "distratoresDicionario": [
+   "fleta, fletae, f.",
+   "fletus, fleti, m.",
+   "fletum, fleti, n.",
+   "fletis, fletis, m."
+  ]
+ },
+ {
+  "id": "la-xt313-0",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "prisco",
+  "frase": "prisco quae more parentum tradita sunt tristi munere ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t313",
+  "fonte": "Poemas, 101",
+  "lema": "la-p692",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "prisco: ablativo masculino singular, concorda com more: antigo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 3.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "priscus, prisca, priscum",
+  "distratoresDicionario": [
+   "priscis, prisce",
+   "priscus, priscis",
+   "priscer, priscera, priscerum",
+   "priscer, prisceris, priscere"
+  ]
+ },
+ {
+  "id": "la-xt313-1",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "quae",
+  "frase": "prisco quae more parentum tradita sunt tristi munere ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t313",
+  "fonte": "Poemas, 101",
+  "lema": "la-p064",
+  "pt": "nominativo",
+  "aceitas": [
+   "caso nominativo",
+   "nom"
+  ],
+  "distratores": [
+   "acusativo",
+   "vocativo",
+   "genitivo",
+   "ablativo"
+  ],
+  "nota": "quae: nominativo neutro plural, sujeito de tradita sunt; retoma haec.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g001"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "qui, quae, quod",
+  "distratoresDicionario": [
+   "hic, haec, hoc",
+   "sui, sibi, se",
+   "idem, eadem, idem",
+   "ille, illa, illud"
+  ]
+ },
+ {
+  "id": "la-xt313-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "more",
+  "frase": "prisco quae more parentum tradita sunt tristi munere ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t313",
+  "fonte": "Poemas, 101",
+  "lema": "la-p693",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "more: ablativo singular, como: pelo costume.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 2.5,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "mos, moris, m.",
+  "distratoresDicionario": [
+   "moris, moris, m.",
+   "mores, morei, f.",
+   "mora, morae, f.",
+   "mors, mortis, f."
+  ]
+ },
+ {
+  "id": "la-xt313-3",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "parentum",
+  "frase": "prisco quae more parentum tradita sunt tristi munere ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t313",
+  "fonte": "Poemas, 101",
+  "lema": "la-p694",
+  "pt": "genitivo",
+  "aceitas": [
+   "caso genitivo",
+   "gen"
+  ],
+  "distratores": [
+   "dativo",
+   "nominativo",
+   "ablativo",
+   "acusativo"
+  ],
+  "nota": "parentum: genitivo plural, de quem é o costume: dos pais, dos antepassados.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g004"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true,
+  "ambigua": false,
+  "dicionario": "parens, parentis, m. e f.",
+  "distratoresDicionario": [
+   "parentus, parenti, m.",
+   "parentum, parenti, n.",
+   "parentis, parentis, m. e f.",
+   "parentus, parentus, m."
+  ]
+ },
+ {
+  "id": "la-xt313-4",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "tradita",
+  "frase": "prisco quae more parentum tradita sunt tristi munere ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t313",
+  "fonte": "Poemas, 101",
+  "lema": "la-p695",
+  "pt": "particípio perfeito",
+  "aceitas": [
+   "participio perfeito"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "particípio presente",
+   "infinitivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "tradita: particípio perfeito, nominativo neutro plural, com sunt: foram oferecidas.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g014"
+  ],
+  "dificuldade": 1.5,
+  "sempre": false,
+  "ambigua": false,
+  "dicionario": "trado, tradere, tradidi, traditum",
+  "distratoresDicionario": [
+   "tradeo, tradere, tradui, traditum",
+   "tradio, tradere, tradidi, traditum",
+   "trado, tradare, tradavi, tradatum",
+   "tradio, tradire, tradivi, traditum"
+  ]
+ },
+ {
+  "id": "la-xt313-5",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "sunt",
+  "frase": "prisco quae more parentum tradita sunt tristi munere ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t313",
+  "fonte": "Poemas, 101",
+  "lema": "la-p003",
+  "pt": "presente do indicativo",
+  "aceitas": [
+   "indicativo presente"
+  ],
+  "distratores": [
+   "perfeito do indicativo",
+   "futuro do indicativo",
+   "presente do subjuntivo",
+   "imperfeito do indicativo"
+  ],
+  "nota": "sunt: presente do indicativo, 3ª pessoa do plural, com tradita: perfeito passivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g007"
+  ],
+  "dificuldade": 1.0,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "3ª pessoa do plural",
+  "distratoresPessoa": [
+   "3ª pessoa do singular",
+   "1ª pessoa do plural",
+   "2ª pessoa do plural",
+   "1ª pessoa do singular"
+  ],
+  "dicionario": "sum, esse, fui",
+  "distratoresDicionario": [
+   "sapio, sapere, sapivi",
+   "sitio, sitire, sitivi",
+   "sector, sectari, sectatus sum",
+   "sequor, sequi, secutus sum"
+  ]
+ },
+ {
+  "id": "la-xt313-6",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "tristi",
+  "frase": "prisco quae more parentum tradita sunt tristi munere ad inferias",
+  "ocorrencia": 1,
+  "de": "la-t313",
+  "fonte": "Poemas, 101",
+  "lema": "la-p696",
+  "pt": "ablativo",
+  "aceitas": [
+   "caso ablativo",
+   "abl"
+  ],
+  "distratores": [
+   "dativo",
+   "acusativo",
+   "genitivo",
+   "nominativo"
+  ],
+  "nota": "tristi: ablativo neutro singular, concorda com munere: triste.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g006"
+  ],
+  "dificuldade": 4.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "tristis, triste",
+  "distratoresDicionario": [
+   "tristis, tristis",
+   "trister, tristera, tristerum",
+   "trister, tristeris, tristere",
+   "talis, tale"
+  ]
+ },
+ {
+  "id": "la-xt314-2",
+  "tipo": "forma",
+  "familia": "caso",
+  "la": "perpetuum",
+  "frase": "atque in perpetuum, frater, ave atque vale.",
+  "ocorrencia": 1,
+  "de": "la-t314",
+  "fonte": "Poemas, 101",
+  "lema": "la-p361",
+  "pt": "acusativo",
+  "aceitas": [
+   "caso acusativo",
+   "acus",
+   "ac"
+  ],
+  "distratores": [
+   "nominativo",
+   "vocativo",
+   "ablativo",
+   "genitivo"
+  ],
+  "nota": "perpetuum: acusativo neutro singular, in perpetuum: para sempre. Vem depois de «in», preposição com acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "caso"
+  ],
+  "conceitos": [
+   "la-g003"
+  ],
+  "dificuldade": 2.0,
+  "sempre": true,
+  "ambigua": true,
+  "dicionario": "perpetuus, perpetua, perpetuum",
+  "distratoresDicionario": [
+   "perpetuis, perpetue",
+   "perpetuus, perpetuis",
+   "pervius, pervia, pervium",
+   "postremus, postrema, postremum"
+  ]
+ },
+ {
+  "id": "la-xt314-6",
+  "tipo": "forma",
+  "familia": "verbo",
+  "la": "vale",
+  "frase": "atque in perpetuum, frater, ave atque vale.",
+  "ocorrencia": 1,
+  "de": "la-t314",
+  "fonte": "Poemas, 101",
+  "lema": "la-p410",
+  "pt": "imperativo",
+  "aceitas": [
+   "imperativo"
+  ],
+  "distratores": [
+   "presente do indicativo",
+   "infinitivo",
+   "presente do subjuntivo",
+   "futuro do indicativo"
+  ],
+  "nota": "vale: imperativo presente, 2ª pessoa do singular, passa bem: adeus.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "forma verbal"
+  ],
+  "conceitos": [
+   "la-g011"
+  ],
+  "dificuldade": 0.5,
+  "sempre": false,
+  "ambigua": false,
+  "pessoa": "2ª pessoa do singular",
+  "distratoresPessoa": [
+   "2ª pessoa do plural",
+   "1ª pessoa do singular",
+   "3ª pessoa do singular",
+   "1ª pessoa do plural"
+  ],
+  "dicionario": "valeo, valere, valui",
+  "distratoresDicionario": [
+   "valo, valere, valui",
+   "valo, valare, valavi",
+   "valio, valire, valivi",
+   "valio, valere, valui"
+  ]
  }
 ]

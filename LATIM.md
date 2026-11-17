@@ -1023,3 +1023,21 @@ lingua*. O *Pater Noster* já estava (21/10).
   obra a partir dos versos; a definição é o `pt` do card (as `aceitas` ficam sem acento).
 - Faltam: a leva B (ladainha, *Trium puerorum*, *Quicumque*), quando ele pedir; um conceito de
   particípio futuro (*venturus*, três vezes nos Credos) não existe e ficou fora dos `conceitos`.
+
+## 20. Poemas curtos (pedido de 16/11/2026)
+- Catulo 5 (*Vivamus, mea Lesbia*), Catulo 101 (*Multas per gentes*) e Horácio, *Odes* I,38 (*Persicos
+  odi*), só por escolha (`ordem` 35 a 37), inteiros (5, 9 e 9 trechos); cards PR #98, biblioteca PR #114.
+  Texto: Merrill 1893 (Catulo) e Wickham–Garrod 1912 (Horácio). 61 palavras (`31-palavras-6`,
+  la-p659–p719), 23 trechos (`32-trechos-6`), 46 frases de uso (`33-usos-g`, 36 clássicas), 103 flexões,
+  44 de análise, 19 perguntas, 107 de forma.
+- **Receita sem os scripts de `~/.cache/taioe-oracoes/`** (que não existem neste PC): texto por script do XML
+  do Perseus → `vocab.py` (cada forma × `formas.analisar` × os cards; o particípio e a variante escondem lema
+  já existente, como *bibo*) → anotação dos versos gravada em `versos.json` por `cortes.gravar_versos`; cards
+  de palavra por um agente a partir de um `lemas.tsv` → `CORTES`, `TEXTOS`, `SEM_CARD`, `ARQUIVO_NOVO` e
+  `FONTES` → `cortes.py entrada`, leva dos trechos conferida por um `lote.js`, `cortes.py gravar` →
+  `flexoes.py faltam`/`gravar` → `cortes.py perguntas`, `analise.py` (regências em `analise-verbos.json`),
+  `radicais.py`, `cards_de_forma.py` (sem timeout: baixa muito do Wiktionary); os antigos voltam do `HEAD` →
+  `buscar.py`, agentes dos usos, `montar.py`, `flexoes.py` de novo → `textos.py`, build,
+  `glossario_textos.py`. Scripts auxiliares em `~/.cache/poemas-1611/la/` (só neste PC).
+- Sem frase de uso (sem candidata no corpus): basium, aequor, veho, inferiae, nequiquam, adloquor, necto,
+  philyra, rosa, allaboro, mano, myrtus, serus, malus, secundus.
