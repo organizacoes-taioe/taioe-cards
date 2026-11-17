@@ -2573,6 +2573,24 @@ window.Motor = (function () {
     return d.toISOString();
   }
 
+  /* ── a data que passou do degrau (17/11/2026) ──
+     A escada das línguas mortas (12/11) manteve o índice e a data de cada card,
+     e o índice passou a valer uma espera mais curta: o card do índice 4 era
+     «3 meses» (volta de 45 a 180 dias) e virou «1 mês», com a mesma data. Toda
+     data além do dobro do degrau em uso, contado da última resposta, é sorteada
+     de novo pelo degrau de agora. O sorteio sai de um hash do card e da última
+     resposta, para dar a mesma data em todo aparelho. Devolve true se mudou. */
+  function ajustarVoltaAoDegrau(id, est) {
+    if (!est || est.etapa !== 'dominado' || !est.voltaEm || !est.ultima || est.presumido) return false;
+    const dias = ESCADAS[ESCADA].dias[Math.min(est.revisoes || 0, degraus() - 1)];
+    const [menor, maior] = VARIACAO_DA_VOLTA;
+    const limite = Date.parse(est.ultima) + dias * maior * 864e5 + 6e4;
+    if (!(Date.parse(est.voltaEm) > limite)) return false;
+    const u = hashDeTexto(id + '|' + est.ultima) / 4294967296;
+    est.voltaEm = proximaVolta(est.revisoes, est.ultima, menor * Math.pow(maior / menor, u));
+    return true;
+  }
+
   /* O card ainda está de molho? Só o dominado tem voltaEm. */
   function esperando(est, agora) {
     if (!est || !est.voltaEm) return false;
@@ -4868,7 +4886,7 @@ window.Motor = (function () {
     descontoDePassos, acertosParaVirar, ACERTOS_PARA_VIRAR,
     linguaDaPergunta, linguaDaResposta,
     temVariante, formaDoCard, formasDoCard, sortearForma, idiomaDoCard,
-    distanciaNaFila, esperando, proximaVolta, VARIACAO_DA_VOLTA,
+    distanciaNaFila, esperando, proximaVolta, ajustarVoltaAoDegrau, VARIACAO_DA_VOLTA,
     urgenciaDoDominado, dominadoDaVez, pesoDosVencidos, ACUMULO, parteDosDominados,
     /* a escada da família do curso (usarEscada); os getters devolvem a lista da escada em uso */
     usarEscada, escada, degraus, degrauDoNome, ESCADAS,
