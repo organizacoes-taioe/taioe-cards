@@ -314,6 +314,36 @@ CORTES = {
         [(73, 79), (83, 83)],  # Anima eius et animae omnium fidelium defunctorum … requiescant
         [(80, 85)],  # per misericordiam Dei requiescant in pace.
     ],
+    # poemas curtos de 16/11/2026: Horácio, Odes I,38, e Catulo 5 e 101
+    'horacio/persicos-odi': [
+        [(0, 3)],                    # Persicos odi, puer, apparatus,
+        [(4, 7)],                    # displicent nexae philyra coronae;
+        [(8, 14)],                   # mitte sectari, rosa quo locorum sera moretur.
+        [(15, 20)],                  # Simplici myrto nihil allabores sedulus curo:
+        [(21, 31)],                  # neque te ministrum dedecet myrtus neque me sub arta vite bibentem.
+    ],
+    'catulo/vivamus-mea-lesbia': [
+        [(0, 4)],                    # Vivamus, mea Lesbia, atque amemus,
+        [(5, 11)],                   # rumoresque senum severiorum omnes unius aestimemus assis.
+        [(12, 16)],                  # Soles occidere et redire possunt:
+        [(17, 27)],                  # nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.
+        [(28, 33)],                  # Da mi basia mille, deinde centum,
+        [(28, 28), (34, 39)],        # Da … dein mille altera, dein secunda centum,
+        [(28, 28), (40, 45)],        # Da … deinde usque altera mille, deinde centum,
+        [(46, 54)],                  # dein, cum milia multa fecerimus, conturbabimus illa, ne sciamus,
+        [(55, 65)],                  # aut ne quis malus invidere possit, cum tantum sciat esse basiorum.
+    ],
+    'catulo/multas-per-gentes': [
+        [(0, 8)],                    # Multas per gentes et multa per aequora vectus advenio
+        [(8, 13)],                   # advenio has miseras, frater, ad inferias,
+        [(14, 19)],                  # ut te postremo donarem munere mortis
+        [(14, 14), (20, 24)],        # ut … et mutam nequiquam adloquerer cinerem,
+        [(25, 30)],                  # quandoquidem fortuna mihi tete abstulit ipsum,
+        [(31, 36)],                  # heu miser indigne frater adempte mihi.
+        [(37, 40), (51, 55)],        # Nunc tamen interea haec … accipe fraterno multum manantia fletu
+        [(41, 50)],                  # prisco quae more parentum tradita sunt tristi munere ad inferias,
+        [(56, 62)],                  # atque in perpetuum, frater, ave atque vale.
+    ],
 }
 
 FIM = '.;:?!'
@@ -322,7 +352,7 @@ FIM = '.;:?!'
 # […] E não precisa dos três pontinhos»). Também não precisa entrar em trecho nenhum.
 REFRAO = {'alleluia'}
 # o arquivo dos trechos dos textos novos (os que ainda não têm card de trecho)
-ARQUIVO_NOVO = '29-trechos-5.json'
+ARQUIVO_NOVO = '32-trechos-6.json'
 
 
 def ler_baralho():
