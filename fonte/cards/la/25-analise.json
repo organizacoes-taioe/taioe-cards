@@ -5174,6 +5174,578 @@
   "fonte": "Sl 2, com antífona e oração"
  },
  {
+  "id": "la-at292-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "odi",
+  "frase": "Persicos odi, puer, apparatus",
+  "de": "la-t292",
+  "pt": "odi",
+  "distratores": [
+   "apparatus",
+   "puer",
+   "Persicos"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "odi: forma de perfeito e sentido de presente, odeio. Apparatus parece particípio de apparo, mas aqui é o substantivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Odes, livro I, 38"
+ },
+ {
+  "id": "la-at293-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "displicent",
+  "frase": "displicent nexae philyra coronae;",
+  "de": "la-t293",
+  "pt": "displicent",
+  "distratores": [
+   "nexae",
+   "philyra",
+   "coronae"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "displicent, presente: desagradam. Nexae é particípio (entrelaçadas), que concorda com coronae.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Odes, livro I, 38"
+ },
+ {
+  "id": "la-at294-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "mitte",
+  "frase": "mitte sectari, rosa quo locorum sera moretur.",
+  "de": "la-t294",
+  "pt": "mitte",
+  "distratores": [
+   "sectari",
+   "moretur"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "mitte, imperativo: deixa (de). Sectari é o infinitivo que ele pede; moretur é o verbo da pergunta indireta.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Odes, livro I, 38"
+ },
+ {
+  "id": "la-at295-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "curo",
+  "frase": "Simplici myrto nihil allabores sedulus curo:",
+  "de": "la-t295",
+  "pt": "curo",
+  "distratores": [
+   "allabores",
+   "myrto",
+   "Simplici"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "curo, presente: faço questão (de que). Allabores, no subjuntivo, é o verbo do que ele quer.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Odes, livro I, 38"
+ },
+ {
+  "id": "la-at296-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "dedecet",
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "de": "la-t296",
+  "pt": "dedecet",
+  "distratores": [
+   "bibentem",
+   "ministrum",
+   "vite"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "dedecet, presente: fica mal (o contrário de decet). Bibentem é particípio: bebendo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Odes, livro I, 38"
+ },
+ {
+  "id": "la-at296-c10",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "bibentem",
+  "ocorrencia": 1,
+  "frase": "neque te ministrum dedecet myrtus neque me sub arta vite bibentem.",
+  "de": "la-t296",
+  "pt": "me",
+  "distratores": [
+   "te",
+   "myrtus",
+   "vite"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "bibentem, acusativo masculino singular, concorda com me: a mim, que bebo; te já tem ministrum, myrtus é nominativo e vite ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Odes, livro I, 38"
+ },
+ {
+  "id": "la-at298-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "aestimemus",
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "de": "la-t298",
+  "pt": "aestimemus",
+  "distratores": [
+   "rumores",
+   "severiorum",
+   "assis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "aestimemus, presente do subjuntivo: avaliemos (exortação, como vivamus).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 5"
+ },
+ {
+  "id": "la-at298-c4",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "omnes",
+  "ocorrencia": 1,
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "de": "la-t298",
+  "pt": "rumores",
+  "distratores": [
+   "senum",
+   "assis"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "omnes, acusativo masculino plural, concorda com rumores, o objeto de aestimemus; senum é genitivo plural, assis genitivo singular.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 5"
+ },
+ {
+  "id": "la-at298-c5",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "unius",
+  "ocorrencia": 1,
+  "frase": "rumoresque senum severiorum omnes unius aestimemus assis.",
+  "de": "la-t298",
+  "pt": "assis",
+  "distratores": [
+   "rumores",
+   "senum"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "unius, genitivo singular, concorda com assis: de um só asse; rumores é acusativo, senum é plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 5"
+ },
+ {
+  "id": "la-at299-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "possunt",
+  "frase": "Soles occidere et redire possunt:",
+  "de": "la-t299",
+  "pt": "possunt",
+  "distratores": [
+   "occidere",
+   "redire",
+   "Soles"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "possunt, presente: podem. Occidere e redire são os infinitivos que ele pede; Soles é nome (não soles, «costumas»).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 5"
+ },
+ {
+  "id": "la-at300-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "nobis, cum semel occidit brevis lux, nox est perpetua una dormienda.",
+  "de": "la-t300",
+  "pt": "est",
+  "distratores": [
+   "occidit",
+   "dormienda",
+   "lux"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "est (com dormienda): há de ser dormida. Occidit é o verbo da oração de cum; dormienda é o gerundivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 5"
+ },
+ {
+  "id": "la-at301-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Da",
+  "frase": "Da mi basia mille, deinde centum",
+  "de": "la-t301",
+  "pt": "Da",
+  "distratores": [
+   "basia",
+   "mi",
+   "deinde"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Da, imperativo: dá. Basia aqui é o acusativo plural de basium (os beijos), e não o imperativo de basio.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 5"
+ },
+ {
+  "id": "la-at302-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Da",
+  "frase": "Da … dein mille altera, dein secunda centum",
+  "de": "la-t302",
+  "pt": "Da",
+  "distratores": [
+   "altera",
+   "secunda",
+   "mille"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Da, imperativo, vale para a frase toda: dá. Altera parece o imperativo de altero (muda!), mas aqui é alter: outros.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 5"
+ },
+ {
+  "id": "la-at303-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Da",
+  "frase": "Da … deinde usque altera mille, deinde centum",
+  "de": "la-t303",
+  "pt": "Da",
+  "distratores": [
+   "altera",
+   "mille",
+   "deinde"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Da, imperativo, vale para a frase toda: dá. Altera aqui é alter (outros), e não o imperativo de altero.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 5"
+ },
+ {
+  "id": "la-at304-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "conturbabimus",
+  "frase": "dein, cum milia multa fecerimus, conturbabimus illa, ne sciamus",
+  "de": "la-t304",
+  "pt": "conturbabimus",
+  "distratores": [
+   "fecerimus",
+   "sciamus",
+   "milia"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "conturbabimus, futuro: embaralharemos. Fecerimus (com cum) e sciamus (com ne) são de orações que dependem dele.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 5"
+ },
+ {
+  "id": "la-at306-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "advenio",
+  "frase": "Multas per gentes et multa per aequora vectus advenio",
+  "de": "la-t306",
+  "pt": "advenio",
+  "distratores": [
+   "vectus",
+   "aequora",
+   "gentes"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "advenio, presente: chego. Vectus é particípio (levado), que concorda com o sujeito, eu.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at307-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "advenio",
+  "frase": "advenio has miseras, frater, ad inferias",
+  "de": "la-t307",
+  "pt": "advenio",
+  "distratores": [
+   "miseras",
+   "inferias",
+   "frater"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "advenio, presente: chego. Miseras aqui é o adjetivo miser (tristes), e não o mais-que-perfeito de mitto.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at308-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "donarem",
+  "frase": "ut te postremo donarem munere mortis",
+  "de": "la-t308",
+  "pt": "donarem",
+  "distratores": [
+   "munere",
+   "mortis",
+   "postremo"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "donarem, imperfeito do subjuntivo depois de ut: para que eu presenteasse.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at308-c2",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "postremo",
+  "ocorrencia": 1,
+  "frase": "ut te postremo donarem munere mortis",
+  "de": "la-t308",
+  "pt": "munere",
+  "distratores": [
+   "mortis",
+   "te"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "postremo, ablativo neutro singular, concorda com munere: o último dom; mortis é genitivo feminino, te é o pronome.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at309-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "adloquerer",
+  "frase": "ut … et mutam nequiquam adloquerer cinerem",
+  "de": "la-t309",
+  "pt": "adloquerer",
+  "distratores": [
+   "cinerem",
+   "mutam",
+   "nequiquam"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "adloquerer, imperfeito do subjuntivo de adloquor, depoente: para que eu falasse.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at310-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "abstulit",
+  "frase": "quandoquidem fortuna mihi tete abstulit ipsum",
+  "de": "la-t310",
+  "pt": "abstulit",
+  "distratores": [
+   "fortuna",
+   "ipsum",
+   "tete"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "abstulit, perfeito de aufero: tirou. O radical muda muito: aufero, auferre, abstuli, ablatum.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at310-c5",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "ipsum",
+  "ocorrencia": 1,
+  "frase": "quandoquidem fortuna mihi tete abstulit ipsum",
+  "de": "la-t310",
+  "pt": "tete",
+  "distratores": [
+   "fortuna",
+   "mihi"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "ipsum, acusativo masculino singular, concorda com tete: a ti mesmo; fortuna é feminino, mihi é dativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at312-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "accipe",
+  "frase": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "de": "la-t312",
+  "pt": "accipe",
+  "distratores": [
+   "manantia",
+   "fletu",
+   "haec"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "accipe, imperativo: recebe. Manantia é particípio presente (que escorrem), que concorda com haec.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at312-c7",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "manantia",
+  "ocorrencia": 1,
+  "frase": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "de": "la-t312",
+  "pt": "haec",
+  "distratores": [
+   "fletu",
+   "fraterno"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "manantia, acusativo neutro plural, concorda com haec: estas coisas que escorrem; fletu e fraterno são ablativo singular.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at312-c5",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "fraterno",
+  "ocorrencia": 1,
+  "frase": "Nunc tamen interea haec … accipe fraterno multum manantia fletu",
+  "de": "la-t312",
+  "pt": "fletu",
+  "distratores": [
+   "haec",
+   "manantia"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "fraterno, ablativo masculino singular, concorda com fletu: o pranto de irmão; haec e manantia são neutro plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
+  "id": "la-at313-c0",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "prisco",
+  "ocorrencia": 1,
+  "frase": "prisco quae more parentum tradita sunt tristi munere ad inferias",
+  "de": "la-t313",
+  "pt": "more",
+  "distratores": [
+   "parentum",
+   "quae"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "prisco, ablativo masculino singular, concorda com more: o antigo costume; parentum é genitivo plural, quae é o relativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 101"
+ },
+ {
   "id": "la-ap003-r",
   "tipo": "analise",
   "familia": "regencia",
@@ -10235,6 +10807,438 @@
   ],
   "requerTodas": [
    "la-p656"
+  ]
+ },
+ {
+  "id": "la-ap662-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "aestimo, aestimare, aestimavi, aestimatum",
+  "lema": "la-p662",
+  "pt": "alguém que avalia, o que é avaliado (acusativo) e por quanto (genitivo)",
+  "distratores": [
+   "alguém que avalia, o que é avaliado (dativo) e por quanto (acusativo)",
+   "alguém que avalia e quem é avaliado (genitivo)",
+   "alguém que avalia, o que (acusativo) e com quem (ablativo)",
+   "nenhum sujeito: «avalia-se», sem ninguém que avalie"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em rumores… omnes unius aestimemus assis: quem avalia? nós (na terminação); o quê? rumores (acusativo); por quanto? unius assis, o genitivo de preço.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p662"
+  ]
+ },
+ {
+  "id": "la-ap665-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "occido, occidere, occidi, occasum",
+  "lema": "la-p665",
+  "pt": "só algo que se põe ou cai, sem complemento",
+  "distratores": [
+   "alguém que põe e o que é posto (acusativo)",
+   "alguém que mata e quem é morto (acusativo)",
+   "alguém que cai e sobre quem (genitivo)",
+   "nenhum sujeito: «põe-se», sem nada que se ponha"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Soles occidere et redire possunt: o que se põe? soles; não há objeto.\nOccīdo, de vogal longa (matar), é que pede o acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p665"
+  ]
+ },
+ {
+  "id": "la-ap667-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "dormio, dormire, dormivi, dormitum",
+  "lema": "la-p667",
+  "pt": "alguém que dorme e, às vezes, o tempo dormido (acusativo)",
+  "distratores": [
+   "alguém que dorme e quem é adormecido (dativo)",
+   "alguém que dorme e com quem (genitivo)",
+   "alguém que dorme e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: «dorme-se», sem ninguém que durma"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em nox est perpetua una dormienda: a noite é o tempo que se dorme, e no gerundivo vira o sujeito; quem dorme? nobis, o dativo de agente.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p667"
+  ]
+ },
+ {
+  "id": "la-ap674-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "invideo, invidere, invidi, invisum",
+  "lema": "la-p674",
+  "pt": "alguém que inveja e a quem (dativo)",
+  "distratores": [
+   "alguém que inveja e quem é invejado (acusativo)",
+   "alguém que inveja e de quem (genitivo)",
+   "alguém que inveja e com quê (ablativo)",
+   "nenhum sujeito: «inveja-se», sem ninguém que inveje"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ne quis malus invidere possit: quem? quis malus; aqui sem complemento: pôr mau-olhado.\nInvideo pede o dativo (invidere alicui); o português diz «invejar alguém», com objeto direto.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p674"
+  ]
+ },
+ {
+  "id": "la-ap677-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "veho, vehere, vexi, vectum",
+  "lema": "la-p677",
+  "pt": "alguém que leva e o que é levado (acusativo)",
+  "distratores": [
+   "alguém que leva e o que é levado (dativo)",
+   "alguém que leva e de quem (genitivo)",
+   "alguém que leva e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: «leva-se», sem ninguém que leve"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em multa per aequora vectus: no particípio passivo, o levado é o sujeito (eu).\nNa voz passiva, vehor é «viajar».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p677"
+  ]
+ },
+ {
+  "id": "la-ap684-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "adloquor, adloqui, adlocutus sum",
+  "lema": "la-p684",
+  "pt": "alguém que fala e a quem se dirige (acusativo)",
+  "distratores": [
+   "alguém que fala e a quem se dirige (dativo)",
+   "alguém que fala e de quem (genitivo)",
+   "alguém que fala e com quê (ablativo)",
+   "nenhum sujeito: «fala-se», sem ninguém que fale"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em mutam nequiquam adloquerer cinerem: quem fala? eu (na terminação); a quem? cinerem (acusativo).\nO português diz «falar a»; o latim põe o acusativo. Depoente: forma passiva, sentido ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p684"
+  ]
+ },
+ {
+  "id": "la-ap687-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "aufero, auferre, abstuli, ablatum",
+  "lema": "la-p687",
+  "pt": "alguém que tira, o que é tirado (acusativo) e de quem (dativo)",
+  "distratores": [
+   "alguém que tira, o que é tirado (dativo) e de quem (acusativo)",
+   "alguém que tira, o que é tirado (acusativo) e de quem (genitivo)",
+   "alguém que tira e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: «tira-se», sem ninguém que tire"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em fortuna mihi tete abstulit ipsum: quem tirou? fortuna; o quê? tete ipsum (acusativo); de quem? mihi (dativo).\nO português diz «tirar de alguém»; o latim põe o dativo (ou ab com ablativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p687"
+  ]
+ },
+ {
+  "id": "la-ap690-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "adimo, adimere, ademi, ademptum",
+  "lema": "la-p690",
+  "pt": "alguém que arrebata, o que é arrebatado (acusativo) e de quem (dativo)",
+  "distratores": [
+   "alguém que arrebata, o que é arrebatado (dativo) e de quem (acusativo)",
+   "alguém que arrebata, o que é arrebatado (acusativo) e de quem (genitivo)",
+   "alguém que arrebata e com quê (ablativo)",
+   "nenhum sujeito: «arrebata-se», sem ninguém que arrebate"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em frater adempte mihi: no particípio passivo, o arrebatado é o irmão (vocativo); de quem? mihi (dativo).\nComo aufero, o dativo diz de quem se tira.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p690"
+  ]
+ },
+ {
+  "id": "la-ap695-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "trado, tradere, tradidi, traditum",
+  "lema": "la-p695",
+  "pt": "alguém que entrega, o que é entregue (acusativo) e a quem (dativo)",
+  "distratores": [
+   "alguém que entrega, o que é entregue (dativo) e a quem (acusativo)",
+   "alguém que entrega, o que é entregue (acusativo) e de quem (genitivo)",
+   "alguém que entrega e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: «entrega-se», sem ninguém que entregue"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quae… tradita sunt tristi munere ad inferias: na passiva, o entregue é o sujeito (quae, as coisas); para quê? ad inferias.\nTradere alicui aliquid: entregar algo a alguém.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p695"
+  ]
+ },
+ {
+  "id": "la-ap697-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "accipio, accipere, accepi, acceptum",
+  "lema": "la-p697",
+  "pt": "alguém que recebe e o que é recebido (acusativo)",
+  "distratores": [
+   "alguém que recebe e o que é recebido (dativo)",
+   "alguém que recebe e o que é recebido (genitivo)",
+   "alguém que recebe e o que é recebido (ablativo)",
+   "nenhum sujeito: «recebe-se», sem ninguém que receba"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em haec… accipe: quem recebe? tu, o irmão; o quê? haec (acusativo).\nDe quem se recebe: ab com ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p697"
+  ]
+ },
+ {
+  "id": "la-ap699-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "mano, manare, manavi, manatum",
+  "lema": "la-p699",
+  "pt": "algo que escorre e de quê (ablativo)",
+  "distratores": [
+   "algo que escorre e o que é escorrido (acusativo)",
+   "algo que escorre e para quem (dativo)",
+   "algo que escorre e de quem (genitivo)",
+   "nenhum sujeito: «escorre», sem nada que escorra"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em multum manantia fletu: o que escorre? haec, as oferendas; de quê? fletu (ablativo), sem preposição.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p699"
+  ]
+ },
+ {
+  "id": "la-ap702-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "displiceo, displicere, displicui, displicitum",
+  "lema": "la-p702",
+  "pt": "algo que desagrada e a quem (dativo)",
+  "distratores": [
+   "algo que desagrada e a quem (acusativo)",
+   "algo que desagrada e de quem (genitivo)",
+   "algo que desagrada e com quê (ablativo)",
+   "nenhum sujeito: «desagrada», sem nada que desagrade"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em displicent nexae philyra coronae: o que desagrada? coronae; a quem fica subentendido: mihi (dativo), como com placeo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p702"
+  ]
+ },
+ {
+  "id": "la-ap703-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "necto, nectere, nexui, nexum",
+  "lema": "la-p703",
+  "pt": "alguém que ata, o que é atado (acusativo) e com quê (ablativo)",
+  "distratores": [
+   "alguém que ata, o que é atado (dativo) e com quê (genitivo)",
+   "alguém que ata e o que é atado (genitivo)",
+   "alguém que ata e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: «ata-se», sem ninguém que ate"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em nexae philyra coronae: no particípio passivo, o atado é o sujeito (coronae); com quê? philyra (ablativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p703"
+  ]
+ },
+ {
+  "id": "la-ap706-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "mitto, mittere, misi, missum",
+  "lema": "la-p706",
+  "pt": "alguém que envia, o que é enviado (acusativo) e para onde (ad com acusativo)",
+  "distratores": [
+   "alguém que envia, o que é enviado (dativo) e de onde (genitivo)",
+   "alguém que envia e o que ele é (nominativo, como o sujeito)",
+   "alguém que envia, o que é enviado (ablativo) e a quem (genitivo)",
+   "nenhum sujeito: «envia-se», sem ninguém que envie"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em mitte sectari: com infinitivo, mitto é «deixar de»: deixa de procurar.\nNo sentido comum, mittere aliquid ad aliquem: enviar algo a alguém.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p706"
+  ]
+ },
+ {
+  "id": "la-ap707-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "sector, sectari, sectatus sum",
+  "lema": "la-p707",
+  "pt": "alguém que persegue e o que é perseguido (acusativo)",
+  "distratores": [
+   "alguém que persegue e o que é perseguido (dativo)",
+   "alguém que persegue e o que é perseguido (genitivo)",
+   "alguém que persegue e o que é perseguido (ablativo)",
+   "nenhum sujeito: «persegue-se», sem ninguém que persiga"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em mitte sectari, rosa quo locorum sera moretur: o que se procura? a pergunta indireta (onde fica a rosa), no lugar do acusativo. Depoente.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p707"
+  ]
+ },
+ {
+  "id": "la-ap711-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "moror, morari, moratus sum",
+  "lema": "la-p711",
+  "pt": "só alguém que se demora, sem complemento",
+  "distratores": [
+   "alguém que se demora e para quem (dativo)",
+   "alguém que se demora e o que ele é (nominativo, como o sujeito)",
+   "alguém que se demora e de quem (genitivo)",
+   "nenhum sujeito: «demora-se», sem ninguém que se demore"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em rosa quo locorum sera moretur: quem se demora? rosa sera; onde? quo locorum. Depoente.\nCom acusativo, moror também é «deter alguém».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p711"
+  ]
+ },
+ {
+  "id": "la-ap714-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "allaboro, allaborare, allaboravi, allaboratum",
+  "lema": "la-p714",
+  "pt": "alguém que acrescenta, o quê (acusativo) e a quê (dativo)",
+  "distratores": [
+   "alguém que acrescenta, o quê (dativo) e a quê (acusativo)",
+   "alguém que acrescenta, o quê (acusativo) e de quê (genitivo)",
+   "alguém que acrescenta e com quem (ablativo)",
+   "nenhum sujeito: «acrescenta-se», sem ninguém que acrescente"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Simplici myrto nihil allabores: quem? tu (na terminação); o quê? nihil (acusativo); a quê? simplici myrto (dativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p714"
+  ]
+ },
+ {
+  "id": "la-ap717-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "dedecet, dedecere, dedecuit (impessoal)",
+  "lema": "la-p717",
+  "pt": "algo que fica mal e a quem (acusativo)",
+  "distratores": [
+   "algo que fica mal e a quem (dativo)",
+   "algo que fica mal e de quem (genitivo)",
+   "algo que fica mal e com quê (ablativo)",
+   "nenhum sujeito: «fica mal», sem nada que fique mal"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em neque te ministrum dedecet myrtus: o que fica mal? myrtus; a quem? te (acusativo).\nO português diz «ficar mal a alguém»; o latim, como em decet, põe o acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p717"
   ]
  }
 ]
