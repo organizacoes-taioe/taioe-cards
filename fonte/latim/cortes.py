@@ -344,6 +344,191 @@ CORTES = {
         [(41, 50)],                  # prisco quae more parentum tradita sunt tristi munere ad inferias,
         [(56, 62)],                  # atque in perpetuum, frater, ave atque vale.
     ],
+    # orações, leva B (17/11/2026)
+    'oracoes/litaniae-lauretanae-parte-1': [
+        [(6, 11)],  # Christe, audi nos. Christe, exaudi nos.
+        [(12, 17)],  # Pater de caelis, Deus, miserere nobis.
+        [(18, 23)],  # Fili, Redemptor mundi, Deus, miserere nobis.
+        [(24, 28)],  # Spiritus Sancte, Deus, miserere nobis.
+        [(29, 34)],  # Sancta Trinitas, unus Deus, miserere nobis.
+        [(35, 39)],  # Sancta Maria, ora pro nobis.
+        [(40, 45)],  # Sancta Dei Genetrix, sancta Virgo virginum
+        [(46, 51)],  # Mater Christi, mater Ecclesiae, mater misericordiae
+        [(52, 56)],  # Mater divinae gratiae, mater spei
+        [(57, 62)],  # Mater purissima, mater castissima, mater inviolata
+        [(63, 68)],  # Mater intemerata, mater amabilis, mater admirabilis
+        [(69, 75)],  # Mater boni consilii, mater Creatoris, mater Salvatoris
+    ],
+    'oracoes/litaniae-lauretanae-parte-2': [
+        [(0, 7)],  # Virgo prudentissima, virgo veneranda, virgo praedicanda, virgo potens
+        [(8, 15)],  # Virgo clemens, virgo fidelis, speculum iustitiae, sedes sapientiae
+        [(16, 22)],  # Causa nostrae laetitiae, vas spirituale, vas honorabile
+        [(23, 29)],  # Vas insigne devotionis, rosa mystica, turris Davidica
+        [(30, 37)],  # Turris eburnea, domus aurea, foederis arca, ianua caeli
+        [(38, 43)],  # Stella matutina, salus infirmorum, refugium peccatorum
+        [(44, 49)],  # Solacium migrantium, consolatrix afflictorum, auxilium Christianorum
+    ],
+    'oracoes/litaniae-lauretanae-parte-3': [
+        [(0, 7)],  # Regina Angelorum, regina Patriarcharum, regina Prophetarum, regina Apostolorum
+        [(8, 13)],  # Regina Martyrum, regina Confessorum, regina Virginum
+        [(14, 21)],  # Regina Sanctorum omnium, regina sine labe originali concepta
+        [(22, 28)],  # Regina in caelum assumpta, regina sacratissimi Rosarii
+        [(29, 32)],  # Regina familiae, regina pacis.
+        [(33, 41)],  # Agnus Dei, qui tollis peccata mundi, parce nobis, Domine.
+        [(42, 50)],  # Agnus Dei, qui tollis peccata mundi, exaudi nos, Domine.
+        [(51, 58)],  # Agnus Dei, qui tollis peccata mundi, miserere nobis.
+        [(59, 64)],  # Ora pro nobis, sancta Dei Genetrix.
+        [(65, 69)],  # Ut digni efficiamur promissionibus Christi.
+        [(70, 77), (83, 83)],  # Oremus. Concede nos famulos tuos, quaesumus, Domine Deus … gaudere:
+        [(78, 83)],  # perpetua mentis et corporis sanitate gaudere:
+        [(84, 90), (91, 94)],  # et gloriosa beatae Mariae semper Virginis intercessione … a praesenti liberari tristitia
+        [(95, 98)],  # et aeterna perfrui laetitia.
+        [(99, 103)],  # Per Christum Dominum nostrum. Amen.
+    ],
+    'oracoes/trium-puerorum-parte-1': [
+        [(0, 11)],  # Trium puerorum cantemus hymnum, quem cantabant sancti in camino ignis, benedicentes Dominum.
+        [(12, 22)],  # Benedicite, omnia opera Domini, Domino: laudate et superexaltate eum in saecula.
+        [(23, 29)],  # Benedicite, Angeli Domini, Domino: benedicite, caeli, Domino.
+        [(30, 37)],  # Benedicite, aquae omnes, quae super caelos sunt, Domino:
+        [(38, 42)],  # benedicite, omnes virtutes Domini, Domino.
+        [(43, 51)],  # Benedicite, sol et luna, Domino: benedicite, stellae caeli, Domino.
+        [(52, 62)],  # Benedicite, omnis imber et ros, Domino: benedicite, omnes spiritus Dei, Domino.
+        [(63, 72)],  # Benedicite, ignis et aestus, Domino: benedicite, frigus et aestus, Domino.
+        [(73, 82)],  # Benedicite, rores et pruina, Domino: benedicite, gelu et frigus, Domino.
+        [(83, 92)],  # Benedicite, glacies et nives, Domino: benedicite, noctes et dies, Domino.
+        [(93, 102)],  # Benedicite, lux et tenebrae, Domino: benedicite, fulgura et nubes, Domino.
+    ],
+    'oracoes/trium-puerorum-parte-2': [
+        [(0, 8)],  # Benedicat terra Dominum: laudet et superexaltet eum in saecula.
+        [(9, 19)],  # Benedicite, montes et colles, Domino: benedicite, universa germinantia in terra, Domino.
+        [(20, 27)],  # Benedicite, fontes, Domino: benedicite, maria et flumina, Domino.
+        [(28, 36)],  # Benedicite, cete, et omnia, quae moventur in aquis, Domino:
+        [(37, 41)],  # benedicite, omnes volucres caeli, Domino.
+        [(42, 51)],  # Benedicite, omnes bestiae et pecora, Domino: benedicite, filii hominum, Domino.
+        [(52, 60)],  # Benedicat Israel Dominum: laudet et superexaltet eum in saecula.
+        [(61, 68)],  # Benedicite, sacerdotes Domini, Domino: benedicite, servi Domini, Domino.
+        [(69, 80)],  # Benedicite, spiritus et animae iustorum, Domino: benedicite, sancti et humiles corde, Domino.
+    ],
+    'oracoes/trium-puerorum-parte-3': [
+        [(0, 4)],  # Benedicite, Anania, Azaria, Misael, Domino:
+        [(5, 10)],  # laudate et superexaltate eum in saecula.
+        [(11, 17)],  # Benedicamus Patrem et Filium cum Sancto Spiritu:
+        [(18, 23)],  # laudemus et superexaltemus eum in saecula.
+        [(24, 29)],  # Benedictus es, Domine, in firmamento caeli:
+        [(30, 37)],  # et laudabilis, et gloriosus, et superexaltatus in saecula.
+        [(38, 42)],  # Laudate Dominum in sanctis eius:
+        [(43, 48)],  # laudate eum in firmamento virtutis eius.
+        [(49, 53)],  # Laudate eum in virtutibus eius:
+        [(54, 59)],  # laudate eum secundum multitudinem magnitudinis eius.
+        [(60, 64)],  # Laudate eum in sono tubae:
+        [(65, 70)],  # laudate eum in psalterio et cithara.
+        [(71, 76)],  # Laudate eum in tympano et choro:
+        [(77, 82)],  # laudate eum in chordis et organo.
+        [(83, 87)],  # Laudate eum in cymbalis benesonantibus:
+        [(88, 92)],  # laudate eum in cymbalis iubilationis:
+        [(93, 96)],  # omnis spiritus laudet Dominum.
+    ],
+    'oracoes/trium-puerorum-parte-4': [
+        [(0, 1)],  # Gloria Patri.
+        [(2, 5)],  # Trium puerorum cantemus hymnum,
+        [(5, 13)],  # hymnum, quem cantabant sancti in camino ignis, benedicentes Dominum.
+        [(14, 19)],  # Confiteantur tibi, Domine, omnia opera tua.
+        [(20, 24)],  # Et sancti tui benedicant tibi.
+        [(25, 28)],  # Exsultabunt sancti in gloria.
+        [(29, 32)],  # Laetabuntur in cubilibus suis.
+        [(33, 37)],  # Non nobis, Domine, non nobis.
+        [(38, 42)],  # Sed nomini tuo da gloriam.
+        [(43, 46)],  # Domine, exaudi orationem meam.
+        [(47, 52)],  # Et clamor meus ad te veniat.
+    ],
+    'oracoes/trium-puerorum-parte-5': [
+        [(0, 0)],  # Oremus.
+        [(1, 7)],  # Deus, qui tribus pueris mitigasti flammas ignium:
+        [(8, 17)],  # concede propitius; ut nos famulos tuos non exurat flamma vitiorum.
+        [(18, 26)],  # Actiones nostras, quaesumus, Domine, aspirando praeveni et adiuvando prosequere:
+        [(27, 36)],  # ut cuncta nostra oratio et operatio a te semper incipiat,
+        [(37, 41)],  # et per te coepta finiatur.
+        [(42, 49)],  # Da nobis, quaesumus, Domine, vitiorum nostrorum flammas exstinguere:
+        [(50, 57)],  # qui beato Laurentio tribuisti tormentorum suorum incendia superare.
+        [(58, 61)],  # Per Christum Dominum nostrum.
+    ],
+    'oracoes/quicumque-parte-1': [
+        [(0, 3)],  # Quicumque vult salvus esse,
+        [(4, 11)],  # ante omnia opus est, ut teneat catholicam fidem:
+        [(12, 22)],  # Quam nisi quisque integram inviolatamque servaverit, absque dubio in aeternum peribit.
+        [(23, 27)],  # Fides autem catholica haec est:
+        [(28, 37)],  # ut unum Deum in Trinitate, et Trinitatem in unitate veneremur.
+        [(38, 43)],  # Neque confundentes personas, neque substantiam separantes.
+        [(44, 53)],  # Alia est enim persona Patris, alia Filii, alia Spiritus Sancti.
+        [(54, 63)],  # Sed Patris, et Filii, et Spiritus Sancti una est divinitas,
+        [(61, 67)],  # una est divinitas, aequalis gloria, coaeterna maiestas.
+    ],
+    'oracoes/quicumque-parte-2': [
+        [(0, 6)],  # Qualis Pater, talis Filius, talis Spiritus Sanctus.
+        [(7, 13)],  # Increatus Pater, increatus Filius, increatus Spiritus Sanctus.
+        [(14, 20)],  # Immensus Pater, immensus Filius, immensus Spiritus Sanctus.
+        [(21, 27)],  # Aeternus Pater, aeternus Filius, aeternus Spiritus Sanctus.
+        [(28, 35)],  # Et tamen non tres aeterni, sed unus aeternus.
+        [(36, 42)],  # Sicut non tres increati, nec tres immensi,
+        [(43, 48)],  # sed unus increatus, et unus immensus.
+        [(49, 56)],  # Similiter omnipotens Pater, omnipotens Filius, omnipotens Spiritus Sanctus.
+        [(57, 64)],  # Et tamen non tres omnipotentes, sed unus omnipotens.
+        [(65, 72)],  # Ita Deus Pater, Deus Filius, Deus Spiritus Sanctus.
+        [(73, 81)],  # Et tamen non tres dii, sed unus est Deus.
+        [(82, 89)],  # Ita Dominus Pater, Dominus Filius, Dominus Spiritus Sanctus.
+        [(90, 98)],  # Et tamen non tres domini, sed unus est Dominus.
+    ],
+    'oracoes/quicumque-parte-3': [
+        [(0, 0), (3, 8), (11, 11)],  # Quia, … unamquamque personam Deum ac Dominum confiteri … compellimur,
+        [(0, 2), (9, 11)],  # Quia, sicut singillatim … christiana veritate compellimur,
+        [(12, 20)],  # ita tres deos aut dominos dicere catholica religione prohibemur.
+        [(21, 25)],  # Pater a nullo est factus:
+        [(26, 29)],  # nec creatus, nec genitus.
+        [(30, 34)],  # Filius a Patre solo est:
+        [(35, 40)],  # non factus, nec creatus, sed genitus.
+        [(41, 46)],  # Spiritus Sanctus a Patre et Filio:
+        [(47, 54)],  # non factus, nec creatus, nec genitus, sed procedens.
+        [(55, 60)],  # Unus ergo Pater, non tres Patres;
+        [(61, 65)],  # unus Filius, non tres Filii;
+        [(66, 72)],  # unus Spiritus Sanctus, non tres Spiritus Sancti.
+        [(73, 80)],  # Et in hac Trinitate nihil prius aut posterius,
+        [(81, 84)],  # nihil maius aut minus,
+        [(85, 93)],  # sed totae tres personae coaeternae sibi sunt et coaequales.
+        [(94, 102)],  # Ita ut per omnia, sicut iam supra dictum est,
+        [(94, 95), (103, 112)],  # Ita ut … et unitas in Trinitate, et Trinitas in unitate veneranda sit.
+    ],
+    'oracoes/quicumque-parte-4': [
+        [(0, 8)],  # Qui vult ergo salvus esse, ita de Trinitate sentiat.
+        [(9, 14)],  # Sed necessarium est ad aeternam salutem
+        [(9, 11), (15, 23)],  # Sed necessarium est … ut incarnationem quoque Domini nostri Iesu Christi fideliter credat.
+        [(24, 31)],  # Est ergo fides recta ut credamus et confiteamur
+        [(32, 42)],  # quia Dominus noster Iesus Christus, Dei Filius, Deus et homo est.
+        [(43, 49)],  # Deus ex substantia Patris ante saecula genitus
+        [(50, 57)],  # et homo ex substantia matris in saeculo natus.
+        [(58, 61)],  # Perfectus Deus, perfectus homo:
+        [(60, 68)],  # perfectus homo: ex anima rationali et humana carne subsistens.
+        [(69, 76)],  # Aequalis Patri secundum divinitatem, minor Patre secundum humanitatem.
+    ],
+    'oracoes/quicumque-parte-5': [
+        [(0, 5)],  # Qui, licet Deus sit et homo
+        [(0, 0), (6, 12)],  # Qui … non duo tamen, sed unus est Christus.
+        [(13, 24)],  # Unus autem non conversione divinitatis in carnem, sed assumptione humanitatis in Deum.
+        [(25, 32)],  # Unus omnino, non confusione substantiae, sed unitate personae.
+        [(33, 41)],  # Nam sicut anima rationalis et caro unus est homo:
+        [(42, 48)],  # ita Deus et homo unus est Christus.
+        [(49, 57)],  # Qui passus est pro salute nostra; descendit ad inferos;
+        [(49, 49), (58, 62)],  # Qui … tertia die resurrexit a mortuis.
+    ],
+    'oracoes/quicumque-parte-6': [
+        [(0, 8)],  # Ascendit ad caelos, sedet ad dexteram Dei Patris omnipotentis:
+        [(9, 15)],  # inde venturus est iudicare vivos et mortuos.
+        [(16, 25)],  # Ad cuius adventum omnes homines resurgere habent cum corporibus suis
+        [(26, 32)],  # et reddituri sunt de factis propriis rationem.
+        [(33, 40)],  # Et qui bona egerunt, ibunt in vitam aeternam;
+        [(41, 46)],  # qui vero mala, in ignem aeternum.
+        [(47, 50)],  # Haec est fides catholica
+        [(51, 60)],  # quam nisi quisque fideliter firmiterque crediderit, salvus esse non poterit.
+    ],
 }
 
 FIM = '.;:?!'
@@ -352,7 +537,7 @@ FIM = '.;:?!'
 # […] E não precisa dos três pontinhos»). Também não precisa entrar em trecho nenhum.
 REFRAO = {'alleluia'}
 # o arquivo dos trechos dos textos novos (os que ainda não têm card de trecho)
-ARQUIVO_NOVO = '32-trechos-6.json'
+ARQUIVO_NOVO = '35-trechos-7.json'
 
 
 def ler_baralho():
@@ -435,7 +620,8 @@ def montar_trecho(tid, versos, intervalos, cards):
                 entre = re.sub(r'\s+', ' ', entre)
             antes = (trecho + entre).rstrip()
             comeco_de_verso = ini == 0 or not versos[nv - 1]['la'][:ini].strip()
-            proprio = any(not x.get('c') or (cards.get(x['c'], {}).get('la') or 'a')[0].isupper() for x in partes[:1])
+            # Deus e Dominus (Deus, o Senhor) guardam a maiúscula no começo do verso (Quicumque: «… Deus Spiritus Sanctus»)
+            proprio = any(not x.get('c') or x.get('c') in ('la-p001', 'la-p012') or (cards.get(x['c'], {}).get('la') or 'a')[0].isupper() for x in partes[:1])
             if comeco_de_verso and n != intervalos[0][0] and not proprio and w[0].isupper() and (not antes or antes[-1] not in FIM):
                 w = w[0].lower() + w[1:]
                 partes = [dict(partes[0], w=partes[0]['w'][0].lower() + partes[0]['w'][1:])] + partes[1:]

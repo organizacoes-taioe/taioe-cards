@@ -89,6 +89,21 @@ TEXTOS = {
                                   'fonte': 'Poemas, 5'},
     'catulo/multas-per-gentes': {'titulo': 'Multas per gentes', 'autor': 'Catulo', 'tipo': 'poema', 'ordem': 37,
                                  'fonte': 'Poemas, 101'},
+    # orações, leva B (17/11/2026; LATIM.md §19)
+    'oracoes/litaniae-lauretanae-parte-1': {"titulo": "Litaniae Lauretanae", "autor": "Orações", "tipo": "prosa", "ordem": 38, "fonte": "Ladainha lauretana", "obra": "oracoes/litaniae-lauretanae", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/litaniae-lauretanae/"},
+    'oracoes/litaniae-lauretanae-parte-2': {"titulo": "Litaniae Lauretanae", "autor": "Orações", "tipo": "prosa", "ordem": 39, "fonte": "Ladainha lauretana", "obra": "oracoes/litaniae-lauretanae", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/litaniae-lauretanae/"},
+    'oracoes/litaniae-lauretanae-parte-3': {"titulo": "Litaniae Lauretanae", "autor": "Orações", "tipo": "prosa", "ordem": 40, "fonte": "Ladainha lauretana", "obra": "oracoes/litaniae-lauretanae", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/litaniae-lauretanae/"},
+    'oracoes/trium-puerorum-parte-1': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 41, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/trium-puerorum-parte-2': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 42, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/trium-puerorum-parte-3': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 43, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/trium-puerorum-parte-4': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 44, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 4, "trecho": "parte 4", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/trium-puerorum-parte-5': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 45, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 5, "trecho": "parte 5", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/quicumque-parte-1': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 46, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-2': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 47, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-3': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 48, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-4': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 49, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 4, "trecho": "parte 4", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-5': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 50, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 5, "trecho": "parte 5", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-6': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 51, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 6, "trecho": "parte 6", "biblioteca": "/biblioteca/oracoes/quicumque/"},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -199,6 +214,15 @@ SEM_CARD = {
     'persicos': {'lema': 'Persicus', 'classe': 'adjetivo (nome próprio)', 'g': 'nome',
                  'def': ['Persa, da Pérsia: para os romanos, a terra do luxo.'],
                  'wiki': 'https://en.wiktionary.org/wiki/Persicus#Latin'},
+    # orações, leva B (17/11/2026)
+    "anania": {"lema": "Ananias", "classe": "nome próprio", "g": "nome", "def": ["Ananias, um dos três jovens na fornalha de Babilônia (Dn 3)."]},
+    "azaria": {"lema": "Azarias", "classe": "nome próprio", "g": "nome", "def": ["Azarias, um dos três jovens na fornalha de Babilônia (Dn 3)."]},
+    "christus": {"lema": "Christus", "classe": "nome próprio", "g": "nome", "def": ["Cristo, o Ungido: título de Jesus."], "wiki": "https://en.wiktionary.org/wiki/Christus#Latin"},
+    "davidica": {"lema": "Davidicus", "classe": "adjetivo (nome próprio)", "g": "nome", "def": ["De Davi, o rei de Israel, antepassado de Jesus."]},
+    "israel": {"lema": "Israel", "classe": "nome próprio", "g": "nome", "def": ["Israel, o povo de Deus."]},
+    "laurentio": {"lema": "Laurentius", "classe": "nome próprio", "g": "nome", "def": ["São Lourenço, diácono de Roma, mártir queimado numa grelha em 258."]},
+    "mariae": {"lema": "Maria", "classe": "nome próprio", "g": "nome", "def": ["Maria, a mãe de Jesus (genitivo)."]},
+    "misael": {"lema": "Misael", "classe": "nome próprio", "g": "nome", "def": ["Misael, um dos três jovens na fornalha de Babilônia (Dn 3)."]},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')

@@ -6258,5 +6258,1530 @@
    "la-v1286"
   ],
   "conjunto": "q-t313"
+ },
+ {
+  "id": "la-qt315a",
+  "tipo": "compreensao",
+  "la": "Christe, audi nos. Christe, exaudi nos.",
+  "pergunta": "Quem deve ouvir e atender, no pedido?",
+  "pt": "Cristo",
+  "aceitas": [
+   "Cristo."
+  ],
+  "distratores": [
+   "nós",
+   "nós, que ouvimos a Cristo",
+   "Cristo, que é ouvido por nós",
+   "ninguém: é só uma afirmação"
+  ],
+  "nota": "Christe é vocativo: é a quem se fala, e não o sujeito. nos é acusativo (objeto de audi e exaudi): quem é ouvido somos nós.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ladainha lauretana",
+  "de": "la-t315",
+  "requerTodas": [],
+  "conjunto": "q-t315"
+ },
+ {
+  "id": "la-qt321a",
+  "tipo": "compreensao",
+  "la": "Sancta Dei Genetrix, sancta Virgo virginum",
+  "pergunta": "De quem é Mãe a invocada, na primeira invocação?",
+  "pt": "de Deus",
+  "aceitas": [
+   "de Deus."
+  ],
+  "distratores": [
+   "das virgens",
+   "da Virgem",
+   "de nós",
+   "de Maria"
+  ],
+  "nota": "Dei é genitivo singular e completa Genetrix: «Mãe de Deus». Virginum é genitivo plural, de Virgo: «Virgem das virgens».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ladainha lauretana",
+  "de": "la-t321",
+  "requerTodas": [],
+  "conjunto": "q-t321"
+ },
+ {
+  "id": "la-qt337a",
+  "tipo": "compreensao",
+  "la": "Regina in caelum assumpta, regina sacratissimi Rosarii",
+  "pergunta": "Para onde foi levada a Rainha?",
+  "pt": "para o céu",
+  "aceitas": [
+   "para o céu."
+  ],
+  "distratores": [
+   "no céu",
+   "do céu",
+   "ao Rosário",
+   "para a terra"
+  ],
+  "nota": "In com acusativo (caelum) indica movimento: «para o céu». Com ablativo (in caelo) seria «no céu».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ladainha lauretana",
+  "de": "la-t337",
+  "requerTodas": [],
+  "conjunto": "q-t337"
+ },
+ {
+  "id": "la-qt339a",
+  "tipo": "compreensao",
+  "la": "Agnus Dei, qui tollis peccata mundi, parce nobis, Domine.",
+  "pergunta": "Quem tira os pecados do mundo?",
+  "pt": "o Cordeiro de Deus",
+  "aceitas": [
+   "o Cordeiro de Deus."
+  ],
+  "distratores": [
+   "o mundo",
+   "os pecados do mundo",
+   "nós, que pedimos",
+   "o Cordeiro, que é tirado do mundo"
+  ],
+  "nota": "Qui é nominativo, sujeito de tollis, e retoma Agnus Dei. Peccata é o acusativo plural: o que é tirado; mundi, genitivo: «do mundo».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ladainha lauretana",
+  "de": "la-t339",
+  "requerTodas": [],
+  "conjunto": "q-t339"
+ },
+ {
+  "id": "la-qt340a",
+  "tipo": "compreensao",
+  "la": "Agnus Dei, qui tollis peccata mundi, exaudi nos, Domine.",
+  "pergunta": "Quem é atendido, no pedido?",
+  "pt": "nós",
+  "aceitas": [
+   "nós."
+  ],
+  "distratores": [
+   "o Cordeiro de Deus",
+   "o mundo",
+   "os pecados do mundo",
+   "o Senhor"
+  ],
+  "nota": "Nos é acusativo, objeto de exaudi: somos nós os atendidos. Agnus Dei e Domine são vocativos: são a quem se fala.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ladainha lauretana",
+  "de": "la-t340",
+  "requerTodas": [],
+  "conjunto": "q-t340"
+ },
+ {
+  "id": "la-qt343a",
+  "tipo": "compreensao",
+  "la": "Ut digni efficiamur promissionibus Christi.",
+  "pergunta": "Dignos de quê?",
+  "pt": "das promessas de Cristo",
+  "aceitas": [
+   "das promessas de Cristo."
+  ],
+  "distratores": [
+   "por meio das promessas de Cristo",
+   "das promessas feitas a Cristo",
+   "de Cristo, dado como promessa",
+   "dos que prometem a Cristo"
+  ],
+  "nota": "Digni pede o ablativo (promissionibus): «dignos das promessas». Christi é genitivo: as promessas são de Cristo, e não feitas a ele.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ladainha lauretana",
+  "de": "la-t343",
+  "requerTodas": [],
+  "conjunto": "q-t343"
+ },
+ {
+  "id": "la-qt345a",
+  "tipo": "compreensao",
+  "la": "perpetua mentis et corporis sanitate gaudere:",
+  "pergunta": "O que é perpétuo?",
+  "pt": "a saúde da mente e do corpo",
+  "aceitas": [
+   "a saúde da mente e do corpo."
+  ],
+  "distratores": [
+   "a mente",
+   "o corpo",
+   "a mente e o corpo, mas não a saúde",
+   "só a mente, e o corpo não"
+  ],
+  "nota": "Perpetua é ablativo feminino singular e concorda com sanitate (a saúde). Mentis e corporis são genitivos: «da mente e do corpo».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ladainha lauretana",
+  "de": "la-t345",
+  "requerTodas": [],
+  "conjunto": "q-t345"
+ },
+ {
+  "id": "la-qt346a",
+  "tipo": "compreensao",
+  "la": "et gloriosa beatae Mariae semper Virginis intercessione … a praesenti liberari tristitia",
+  "pergunta": "Libertados de quê?",
+  "pt": "da tristeza presente",
+  "aceitas": [
+   "da tristeza presente."
+  ],
+  "distratores": [
+   "para a tristeza presente",
+   "pela tristeza presente",
+   "com a tristeza presente",
+   "de quem está presente"
+  ],
+  "nota": "A + ablativo (a … tristitia) indica separação: «da tristeza». Praesenti concorda com tristitia: a tristeza presente.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ladainha lauretana",
+  "de": "la-t346",
+  "requerTodas": [],
+  "conjunto": "q-t346"
+ },
+ {
+  "id": "la-qt348a",
+  "tipo": "compreensao",
+  "la": "Trium puerorum cantemus hymnum, quem cantabant sancti in camino ignis, benedicentes Dominum.",
+  "pergunta": "De que é a fornalha em que cantavam?",
+  "pt": "de fogo",
+  "aceitas": [
+   "de fogo."
+  ],
+  "distratores": [
+   "do Senhor",
+   "dos santos",
+   "do hino",
+   "dos três jovens"
+  ],
+  "nota": "Ignis é genitivo singular: «fornalha de fogo». Domini não está no trecho, e sancti é o sujeito de cantabant, não complemento de camino.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t348",
+  "requerTodas": [],
+  "conjunto": "q-t348"
+ },
+ {
+  "id": "la-qt349a",
+  "tipo": "compreensao",
+  "la": "Benedicite, omnia opera Domini, Domino: laudate et superexaltate eum in saecula.",
+  "pergunta": "Quem é louvado e exaltado para sempre?",
+  "pt": "o Senhor",
+  "aceitas": [
+   "o Senhor."
+  ],
+  "distratores": [
+   "todas as obras",
+   "os séculos",
+   "os que bendizem",
+   "os anjos"
+  ],
+  "nota": "Eum é masculino singular e retoma Domino; não pode retomar omnia opera, que é neutro plural.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t349",
+  "requerTodas": [],
+  "conjunto": "q-t349"
+ },
+ {
+  "id": "la-qt350a",
+  "tipo": "compreensao",
+  "la": "Benedicite, Angeli Domini, Domino: benedicite, caeli, Domino.",
+  "pergunta": "De quem são os anjos chamados a bendizer?",
+  "pt": "do Senhor",
+  "aceitas": [
+   "do Senhor."
+  ],
+  "distratores": [
+   "dos céus",
+   "dos homens",
+   "dos que bendizem",
+   "de si mesmos"
+  ],
+  "nota": "Domini é genitivo singular e completa Angeli: «anjos do Senhor». Caeli, no verso seguinte, é outro chamado, não o dono dos anjos.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t350",
+  "requerTodas": [],
+  "conjunto": "q-t350"
+ },
+ {
+  "id": "la-qt351a",
+  "tipo": "compreensao",
+  "la": "Benedicite, aquae omnes, quae super caelos sunt, Domino:",
+  "pergunta": "Quem está acima dos céus?",
+  "pt": "as águas",
+  "aceitas": [
+   "as águas."
+  ],
+  "distratores": [
+   "o Senhor",
+   "os céus",
+   "os que bendizem",
+   "o louvor"
+  ],
+  "nota": "Quae é feminino plural, nominativo, sujeito de sunt, e retoma aquae. Domino é dativo singular: o Senhor é aquele a quem se bendiz.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t351",
+  "requerTodas": [],
+  "conjunto": "q-t351"
+ },
+ {
+  "id": "la-qt359a",
+  "tipo": "compreensao",
+  "la": "Benedicat terra Dominum: laudet et superexaltet eum in saecula.",
+  "pergunta": "Quem bendiz o Senhor?",
+  "pt": "a terra",
+  "aceitas": [
+   "a terra."
+  ],
+  "distratores": [
+   "o Senhor",
+   "os séculos",
+   "ele, o louvado",
+   "todos os que o exaltam"
+  ],
+  "nota": "Terra é o sujeito de Benedicat (3ª pessoa do singular, nominativo); Dominum é acusativo, objeto: o Senhor é o bendito.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t359",
+  "requerTodas": [],
+  "conjunto": "q-t359"
+ },
+ {
+  "id": "la-qt360a",
+  "tipo": "compreensao",
+  "la": "Benedicite, montes et colles, Domino: benedicite, universa germinantia in terra, Domino.",
+  "pergunta": "Onde brota o que é chamado a bendizer?",
+  "pt": "na terra",
+  "aceitas": [
+   "na terra."
+  ],
+  "distratores": [
+   "em direção à terra",
+   "nos montes",
+   "nas colinas",
+   "em Deus"
+  ],
+  "nota": "In terra tem terra no ablativo: com in + ablativo, o lugar onde. A direção pediria o acusativo (in terram).",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t360",
+  "requerTodas": [],
+  "conjunto": "q-t360"
+ },
+ {
+  "id": "la-qt364a",
+  "tipo": "compreensao",
+  "la": "Benedicite, omnes bestiae et pecora, Domino: benedicite, filii hominum, Domino.",
+  "pergunta": "De quem são filhos os chamados a bendizer?",
+  "pt": "dos homens",
+  "aceitas": [
+   "dos homens."
+  ],
+  "distratores": [
+   "do Senhor",
+   "das feras",
+   "dos rebanhos",
+   "dos que bendizem"
+  ],
+  "nota": "Hominum é genitivo plural e completa filii: «filhos dos homens». Domino é dativo: o Senhor é a quem se bendiz.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t364",
+  "requerTodas": [],
+  "conjunto": "q-t364"
+ },
+ {
+  "id": "la-qt367a",
+  "tipo": "compreensao",
+  "la": "Benedicite, spiritus et animae iustorum, Domino: benedicite, sancti et humiles corde, Domino.",
+  "pergunta": "De quem são os espíritos e as almas chamados a bendizer?",
+  "pt": "dos justos",
+  "aceitas": [
+   "dos justos."
+  ],
+  "distratores": [
+   "do Senhor",
+   "dos santos",
+   "dos humildes",
+   "dos que bendizem"
+  ],
+  "nota": "Iustorum é genitivo plural substantivado: «dos justos». Sancti e humiles são outros chamados, no vocativo, não os donos das almas.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t367",
+  "requerTodas": [],
+  "conjunto": "q-t367"
+ },
+ {
+  "id": "la-qt368a",
+  "tipo": "compreensao",
+  "la": "Benedicite, Anania, Azaria, Misael, Domino:",
+  "pergunta": "Quem é chamado a bendizer?",
+  "pt": "Ananias, Azarias e Misael",
+  "aceitas": [
+   "Ananias, Azarias e Misael."
+  ],
+  "distratores": [
+   "o Senhor",
+   "somente Misael",
+   "o Senhor e Ananias",
+   "Ananias e Azarias, que bendizem Misael"
+  ],
+  "nota": "Anania, Azaria e Misael estão no vocativo: são os chamados. Domino é dativo, aquele a quem se bendiz.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t368",
+  "requerTodas": [],
+  "conjunto": "q-t368"
+ },
+ {
+  "id": "la-qt374a",
+  "tipo": "compreensao",
+  "la": "Laudate Dominum in sanctis eius:",
+  "pergunta": "De quem são os santos?",
+  "pt": "do Senhor",
+  "aceitas": [
+   "do Senhor."
+  ],
+  "distratores": [
+   "de vós, que louvais",
+   "dos anjos",
+   "do louvor",
+   "deles mesmos"
+  ],
+  "nota": "Eius é genitivo do pronome de 3ª pessoa e retoma Dominum: os santos são «dele», do Senhor, e não de vós.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t374",
+  "requerTodas": [],
+  "conjunto": "q-t374"
+ },
+ {
+  "id": "la-qt377a",
+  "tipo": "compreensao",
+  "la": "laudate eum secundum multitudinem magnitudinis eius.",
+  "pergunta": "Louva-se segundo o quê?",
+  "pt": "a multidão da sua grandeza",
+  "aceitas": [
+   "a multidão da sua grandeza."
+  ],
+  "distratores": [
+   "a grandeza da sua multidão",
+   "a multidão que vem depois da grandeza",
+   "a multidão dos que o louvam",
+   "a grandeza que ele dá à multidão"
+  ],
+  "nota": "Multitudinem é o termo de secundum (acusativo); magnitudinis, genitivo, diz de que é a multidão: «a multidão da grandeza». A ordem inversa trocaria os dois nomes.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t377",
+  "requerTodas": [],
+  "conjunto": "q-t377"
+ },
+ {
+  "id": "la-qt384a",
+  "tipo": "compreensao",
+  "la": "omnis spiritus laudet Dominum.",
+  "pergunta": "Quem é louvado?",
+  "pt": "o Senhor",
+  "aceitas": [
+   "o Senhor."
+  ],
+  "distratores": [
+   "todo espírito",
+   "o espírito do Senhor",
+   "o louvor de todos",
+   "todos os que o Senhor sustenta"
+  ],
+  "nota": "Dominum é acusativo, objeto de laudet; spiritus, nominativo, é quem louva.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t384",
+  "requerTodas": [],
+  "conjunto": "q-t384"
+ },
+ {
+  "id": "la-qt385a",
+  "tipo": "compreensao",
+  "la": "Trium puerorum cantemus hymnum",
+  "pergunta": "Quem canta o hino?",
+  "pt": "nós",
+  "aceitas": [
+   "nós."
+  ],
+  "distratores": [
+   "os três meninos",
+   "eles",
+   "o hino",
+   "tu"
+  ],
+  "nota": "cantemus tem terminação de 1ª pessoa do plural: o sujeito é «nós». puerorum é genitivo, «dos meninos»; hymnum, acusativo, é o objeto.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t385",
+  "requerTodas": [],
+  "conjunto": "q-t385"
+ },
+ {
+  "id": "la-qt386a",
+  "tipo": "compreensao",
+  "la": "hymnum, quem cantabant sancti in camino ignis, benedicentes Dominum.",
+  "pergunta": "Quem cantava o hino na fornalha?",
+  "pt": "os santos",
+  "aceitas": [
+   "os santos."
+  ],
+  "distratores": [
+   "o Senhor",
+   "o fogo",
+   "a fornalha",
+   "o hino"
+  ],
+  "nota": "sancti é nominativo plural, o sujeito de cantabant. Dominum é acusativo (objeto de benedicentes); camino, ablativo, diz só o lugar.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t386",
+  "requerTodas": [],
+  "conjunto": "q-t386"
+ },
+ {
+  "id": "la-qt387a",
+  "tipo": "compreensao",
+  "la": "Confiteantur tibi, Domine, omnia opera tua.",
+  "pergunta": "Quem deve louvar o Senhor?",
+  "pt": "todas as tuas obras",
+  "aceitas": [
+   "todas as tuas obras."
+  ],
+  "distratores": [
+   "o Senhor",
+   "a ti",
+   "tu e as tuas obras",
+   "todos os que te louvam"
+  ],
+  "nota": "omnia opera tua é nominativo plural, o sujeito de confiteantur. tibi é dativo («a ti»); Domine é vocativo, só chama.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t387",
+  "requerTodas": [],
+  "conjunto": "q-t387"
+ },
+ {
+  "id": "la-qt388a",
+  "tipo": "compreensao",
+  "la": "Et sancti tui benedicant tibi.",
+  "pergunta": "Quem bendiz a quem?",
+  "pt": "os teus santos bendizem a ti",
+  "aceitas": [
+   "os teus santos bendizem a ti."
+  ],
+  "distratores": [
+   "tu bendizes os teus santos",
+   "os teus santos são bendizidos por ti",
+   "tu e os santos se bendizem",
+   "os santos se bendizem a si"
+  ],
+  "nota": "sancti tui é nominativo plural: sujeito. tibi é dativo: a quem se bendiz. Não é «tu» que bendiz: tibi não é sujeito.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t388",
+  "requerTodas": [],
+  "conjunto": "q-t388"
+ },
+ {
+  "id": "la-qt391a",
+  "tipo": "compreensao",
+  "la": "Non nobis, Domine, non nobis.",
+  "pergunta": "A quem se dirige a oração?",
+  "pt": "ao Senhor",
+  "aceitas": [
+   "ao Senhor."
+  ],
+  "distratores": [
+   "a nós",
+   "ao povo",
+   "ao Senhor e a nós",
+   "a ninguém"
+  ],
+  "nota": "Domine é vocativo: chama quem escuta. nobis é dativo: «a nós», de quem se diz que a glória não é.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t391",
+  "requerTodas": [],
+  "conjunto": "q-t391"
+ },
+ {
+  "id": "la-qt392a",
+  "tipo": "compreensao",
+  "la": "Sed nomini tuo da gloriam.",
+  "pergunta": "Para quem se pede a glória?",
+  "pt": "para o teu nome",
+  "aceitas": [
+   "para o teu nome."
+  ],
+  "distratores": [
+   "para nós",
+   "do teu nome",
+   "pelo teu nome",
+   "o teu nome é a glória"
+  ],
+  "nota": "nomini tuo é dativo: a quem se dá. gloriam é acusativo, o objeto; Sed opõe ao «não a nós» do verso anterior.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t392",
+  "requerTodas": [],
+  "conjunto": "q-t392"
+ },
+ {
+  "id": "la-qt393a",
+  "tipo": "compreensao",
+  "la": "Deus, qui tribus pueris mitigasti flammas ignium:",
+  "pergunta": "A quem Deus abrandou as chamas?",
+  "pt": "aos três meninos",
+  "aceitas": [
+   "aos três meninos."
+  ],
+  "distratores": [
+   "aos fogos",
+   "às chamas",
+   "aos três fogos",
+   "a Deus"
+  ],
+  "nota": "tribus pueris é dativo plural: a quem se faz algo. flammas é o objeto (acusativo) e ignium, genitivo, diz «dos fogos».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t393",
+  "requerTodas": [],
+  "conjunto": "q-t393"
+ },
+ {
+  "id": "la-qt394a",
+  "tipo": "compreensao",
+  "la": "concede propitius; ut nos famulos tuos non exurat flamma vitiorum.",
+  "pergunta": "Quem não deve ser queimado?",
+  "pt": "nós, teus servos",
+  "aceitas": [
+   "nós, teus servos."
+  ],
+  "distratores": [
+   "a chama dos vícios",
+   "os vícios",
+   "os servos dos vícios",
+   "a chama"
+  ],
+  "nota": "nos famulos tuos é acusativo plural: quem sofre a ação de exurat. flamma, nominativo, é o sujeito: quem queimaria.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t394",
+  "requerTodas": [],
+  "conjunto": "q-t394"
+ },
+ {
+  "id": "la-qt396a",
+  "tipo": "compreensao",
+  "la": "ut cuncta nostra oratio et operatio a te semper incipiat",
+  "pergunta": "De quem deve partir toda a nossa oração?",
+  "pt": "de ti",
+  "aceitas": [
+   "de ti."
+  ],
+  "distratores": [
+   "para ti",
+   "a ti",
+   "contra ti",
+   "sem ti"
+  ],
+  "nota": "a te: a preposição a pede ablativo e indica de onde vem. te é ablativo; por isso «de ti», e não «para ti».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t396",
+  "requerTodas": [],
+  "conjunto": "q-t396"
+ },
+ {
+  "id": "la-qt398a",
+  "tipo": "compreensao",
+  "la": "Da nobis, quaesumus, Domine, vitiorum nostrorum flammas exstinguere:",
+  "pergunta": "O que se pede para extinguir?",
+  "pt": "as chamas dos nossos vícios",
+  "aceitas": [
+   "as chamas dos nossos vícios."
+  ],
+  "distratores": [
+   "os vícios das nossas chamas",
+   "as nossas chamas, não os vícios",
+   "os nossos vícios, mas não as chamas",
+   "as chamas que nós extinguimos"
+  ],
+  "nota": "flammas é acusativo plural (objeto de exstinguere); vitiorum nostrorum é genitivo plural: «dos nossos vícios». As chamas é que se extinguem.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t398",
+  "requerTodas": [],
+  "conjunto": "q-t398"
+ },
+ {
+  "id": "la-qt399a",
+  "tipo": "compreensao",
+  "la": "qui beato Laurentio tribuisti tormentorum suorum incendia superare.",
+  "pergunta": "A quem foi concedido superar os incêndios?",
+  "pt": "ao bem-aventurado Lourenço",
+  "aceitas": [
+   "ao bem-aventurado Lourenço."
+  ],
+  "distratores": [
+   "aos seus tormentos",
+   "aos incêndios",
+   "ao Deus que concede",
+   "ao tormento de Lourenço"
+  ],
+  "nota": "beato Laurentio é dativo: a quem se concedeu. incendia é acusativo, objeto de superare; tormentorum, genitivo, é «dos tormentos».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)",
+  "de": "la-t399",
+  "requerTodas": [],
+  "conjunto": "q-t399"
+ },
+ {
+  "id": "la-qt402a",
+  "tipo": "compreensao",
+  "la": "Quam nisi quisque integram inviolatamque servaverit, absque dubio in aeternum peribit.",
+  "pergunta": "Quem perecerá se não guardar a fé inteira?",
+  "pt": "cada um",
+  "aceitas": [
+   "cada um."
+  ],
+  "distratores": [
+   "a fé",
+   "a dúvida",
+   "a eternidade",
+   "todos os fiéis"
+  ],
+  "nota": "quisque é nominativo: o sujeito de servaverit e de peribit. quam é acusativo (a fé): o que se deve guardar.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t402",
+  "requerTodas": [],
+  "conjunto": "q-t402"
+ },
+ {
+  "id": "la-qt404a",
+  "tipo": "compreensao",
+  "la": "ut unum Deum in Trinitate, et Trinitatem in unitate veneremur.",
+  "pergunta": "O que se venera na unidade?",
+  "pt": "a Trindade",
+  "aceitas": [
+   "a Trindade."
+  ],
+  "distratores": [
+   "um só Deus",
+   "a unidade",
+   "nós, os fiéis",
+   "a Trindade e a unidade"
+  ],
+  "nota": "Trinitatem é acusativo, objeto de veneremur; in unitate, com ablativo, diz onde. Deum é o outro objeto, ligado a in Trinitate.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t404",
+  "requerTodas": [],
+  "conjunto": "q-t404"
+ },
+ {
+  "id": "la-qt407a",
+  "tipo": "compreensao",
+  "la": "Sed Patris, et Filii, et Spiritus Sancti una est divinitas",
+  "pergunta": "Quem é uma só?",
+  "pt": "a divindade",
+  "aceitas": [
+   "a divindade."
+  ],
+  "distratores": [
+   "o Pai",
+   "o Filho",
+   "o Espírito Santo",
+   "a glória"
+  ],
+  "nota": "una e divinitas são nominativos femininos singulares. Patris, Filii e Spiritus Sancti estão no genitivo: «do Pai…», e não são o sujeito.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t407",
+  "requerTodas": [],
+  "conjunto": "q-t407"
+ },
+ {
+  "id": "la-qt408a",
+  "tipo": "compreensao",
+  "la": "una est divinitas, aequalis gloria, coaeterna maiestas.",
+  "pergunta": "O que é coeterno?",
+  "pt": "a majestade",
+  "aceitas": [
+   "a majestade."
+  ],
+  "distratores": [
+   "a glória",
+   "a divindade",
+   "o Pai",
+   "uma só"
+  ],
+  "nota": "coaeterna é nominativo feminino singular e concorda com maiestas; aequalis concorda com gloria.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t408",
+  "requerTodas": [],
+  "conjunto": "q-t408"
+ },
+ {
+  "id": "la-qt419a",
+  "tipo": "compreensao",
+  "la": "Et tamen non tres dii, sed unus est Deus.",
+  "pergunta": "Quem é Deus, segundo a frase?",
+  "pt": "um só",
+  "aceitas": [
+   "um só."
+  ],
+  "distratores": [
+   "três deuses",
+   "cada um dos três",
+   "todos eles",
+   "nenhum"
+  ],
+  "nota": "unus é nominativo singular e concorda com est: é ele o Deus. tres dii (nominativo plural) vem negado por non.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t419",
+  "requerTodas": [],
+  "conjunto": "q-t419"
+ },
+ {
+  "id": "la-qt421a",
+  "tipo": "compreensao",
+  "la": "Et tamen non tres domini, sed unus est Dominus.",
+  "pergunta": "Quem é Senhor, segundo a frase?",
+  "pt": "um só",
+  "aceitas": [
+   "um só."
+  ],
+  "distratores": [
+   "três senhores",
+   "cada um dos três",
+   "todos eles",
+   "nenhum"
+  ],
+  "nota": "unus é nominativo singular e concorda com est: é ele o Senhor. tres domini (nominativo plural) vem negado por non.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t421",
+  "requerTodas": [],
+  "conjunto": "q-t421"
+ },
+ {
+  "id": "la-qt422a",
+  "tipo": "compreensao",
+  "la": "Quia … unamquamque personam Deum ac Dominum confiteri … compellimur",
+  "pergunta": "Quem somos obrigados a confessar como Deus e Senhor?",
+  "pt": "cada pessoa",
+  "aceitas": [
+   "cada pessoa."
+  ],
+  "distratores": [
+   "a verdade cristã",
+   "todas as pessoas juntas",
+   "só uma pessoa",
+   "o próprio Senhor"
+  ],
+  "nota": "unamquamque personam é acusativo: objeto de confiteri, o que se confessa. Deum ac Dominum, também acusativos, dizem como: predicativos de personam. Veritate (ablativo) não é objeto.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t422",
+  "requerTodas": [],
+  "conjunto": "q-t422"
+ },
+ {
+  "id": "la-qt424a",
+  "tipo": "compreensao",
+  "la": "ita tres deos aut dominos dicere catholica religione prohibemur.",
+  "pergunta": "O que somos proibidos de dizer?",
+  "pt": "três deuses ou três senhores",
+  "aceitas": [
+   "três deuses ou três senhores."
+  ],
+  "distratores": [
+   "a religião católica",
+   "três religiões católicas",
+   "três deuses, mas não senhores",
+   "que somos três deuses"
+  ],
+  "nota": "Deos e dominos são acusativos plurais: objeto de dicere, o que se diz. Catholica religione é ablativo: quem proíbe. Prohibemur (passivo): nós é que somos proibidos.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t424",
+  "requerTodas": [],
+  "conjunto": "q-t424"
+ },
+ {
+  "id": "la-qt427a",
+  "tipo": "compreensao",
+  "la": "Filius a Patre solo est:",
+  "pergunta": "De quem procede o Filho?",
+  "pt": "só do Pai",
+  "aceitas": [
+   "só do Pai."
+  ],
+  "distratores": [
+   "do Filho",
+   "do Pai e do Filho",
+   "de ninguém",
+   "do Espírito Santo"
+  ],
+  "nota": "A Patre solo: ablativo com «a», origem; solo concorda com Patre («do Pai só»), não com Filius (seria solus).",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t427",
+  "requerTodas": [],
+  "conjunto": "q-t427"
+ },
+ {
+  "id": "la-qt429a",
+  "tipo": "compreensao",
+  "la": "Spiritus Sanctus a Patre et Filio:",
+  "pergunta": "De quem vem o Espírito Santo?",
+  "pt": "do Pai e do Filho",
+  "aceitas": [
+   "do Pai e do Filho."
+  ],
+  "distratores": [
+   "só do Pai",
+   "só do Filho",
+   "do Espírito Santo",
+   "de ninguém"
+  ],
+  "nota": "A Patre et Filio: dois ablativos com «a», origem: dos dois, não de um só.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t429",
+  "requerTodas": [],
+  "conjunto": "q-t429"
+ },
+ {
+  "id": "la-qt434a",
+  "tipo": "compreensao",
+  "la": "Et in hac Trinitate nihil prius aut posterius",
+  "pergunta": "Onde nada é anterior ou posterior?",
+  "pt": "nesta Trindade",
+  "aceitas": [
+   "nesta Trindade."
+  ],
+  "distratores": [
+   "para esta Trindade",
+   "por esta Trindade",
+   "nesta unidade",
+   "sobre esta Trindade"
+  ],
+  "nota": "In hac Trinitate: «in» com ablativo, lugar onde; hac concorda com Trinitate. Com acusativo, «in» seria «para».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t434",
+  "requerTodas": [],
+  "conjunto": "q-t434"
+ },
+ {
+  "id": "la-qt438a",
+  "tipo": "compreensao",
+  "la": "Ita ut … et unitas in Trinitate, et Trinitas in unitate veneranda sit.",
+  "pergunta": "O que deve ser venerado na unidade?",
+  "pt": "a Trindade",
+  "aceitas": [
+   "a Trindade."
+  ],
+  "distratores": [
+   "a unidade",
+   "a unidade na Trindade",
+   "a unidade e a Trindade juntas, sem distinção",
+   "nada"
+  ],
+  "nota": "Trinitas é nominativo: o que é venerado; in unitate (ablativo) diz onde. Unitas é o outro sujeito, venerado in Trinitate.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t438",
+  "requerTodas": [],
+  "conjunto": "q-t438"
+ },
+ {
+  "id": "la-qt439a",
+  "tipo": "compreensao",
+  "la": "Qui vult ergo salvus esse, ita de Trinitate sentiat.",
+  "pergunta": "Quem deve sentir assim a respeito da Trindade?",
+  "pt": "quem quer ser salvo",
+  "aceitas": [
+   "quem quer ser salvo."
+  ],
+  "distratores": [
+   "a Trindade, que quer ser salva",
+   "quem a Trindade quer salvar",
+   "quem já foi salvo",
+   "o que a Trindade sente"
+  ],
+  "nota": "Qui é nominativo, sujeito de vult e de sentiat; salvus (nominativo) concorda com ele. Trinitate é ablativo: o assunto, «a respeito de quê».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t439",
+  "requerTodas": [],
+  "conjunto": "q-t439"
+ },
+ {
+  "id": "la-qt441a",
+  "tipo": "compreensao",
+  "la": "Sed necessarium est … ut incarnationem quoque Domini nostri Iesu Christi fideliter credat.",
+  "pergunta": "De quem é a encarnação em que se deve crer?",
+  "pt": "de nosso Senhor Jesus Cristo",
+  "aceitas": [
+   "de nosso Senhor Jesus Cristo."
+  ],
+  "distratores": [
+   "da salvação eterna",
+   "da Trindade",
+   "de quem crê",
+   "do nosso Senhor, por Jesus Cristo"
+  ],
+  "nota": "Domini nostri Iesu Christi: quatro genitivos juntos, de quem é a encarnação. Incarnationem é o objeto de credat.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t441",
+  "requerTodas": [],
+  "conjunto": "q-t441"
+ },
+ {
+  "id": "la-qt443a",
+  "tipo": "compreensao",
+  "la": "quia Dominus noster Iesus Christus, Dei Filius, Deus et homo est.",
+  "pergunta": "Filho de quem é Jesus Cristo?",
+  "pt": "de Deus",
+  "aceitas": [
+   "de Deus."
+  ],
+  "distratores": [
+   "do homem",
+   "de nosso Senhor",
+   "de Deus e do homem",
+   "de si mesmo"
+  ],
+  "nota": "Dei é genitivo singular, de quem; Filius, nominativo, aponta o Filho. «Homo» é nominativo, predicativo, não o pai.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t443",
+  "requerTodas": [],
+  "conjunto": "q-t443"
+ },
+ {
+  "id": "la-qt444a",
+  "tipo": "compreensao",
+  "la": "Deus ex substantia Patris ante saecula genitus",
+  "pergunta": "Gerado de quê?",
+  "pt": "da substância do Pai",
+  "aceitas": [
+   "da substância do Pai."
+  ],
+  "distratores": [
+   "da substância da mãe",
+   "do tempo dos séculos",
+   "antes do Pai",
+   "da substância dos séculos"
+  ],
+  "nota": "Ex substantia Patris: «ex» com ablativo, origem; Patris, genitivo, de quem é a substância. Ante saecula diz quando, não de quê.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t444",
+  "requerTodas": [],
+  "conjunto": "q-t444"
+ },
+ {
+  "id": "la-qt445a",
+  "tipo": "compreensao",
+  "la": "et homo ex substantia matris in saeculo natus.",
+  "pergunta": "De quem é a substância de que ele nasceu?",
+  "pt": "da mãe",
+  "aceitas": [
+   "da mãe."
+  ],
+  "distratores": [
+   "do Pai",
+   "do tempo",
+   "do homem",
+   "dos séculos"
+  ],
+  "nota": "Matris é genitivo singular: de quem é a substância. Ex substantia: de onde nasceu. In saeculo diz quando.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t445",
+  "requerTodas": [],
+  "conjunto": "q-t445"
+ },
+ {
+  "id": "la-qt447a",
+  "tipo": "compreensao",
+  "la": "perfectus homo: ex anima rationali et humana carne subsistens.",
+  "pergunta": "De que alma e de que carne subsiste o homem perfeito?",
+  "pt": "de alma racional e de carne humana",
+  "aceitas": [
+   "de alma racional e de carne humana."
+  ],
+  "distratores": [
+   "de alma humana e de carne racional",
+   "de alma racional e humana, e de carne",
+   "de alma e carne, só racionais",
+   "de alma e carne divinas"
+  ],
+  "nota": "Rationali concorda com anima, e humana com carne (ablativos femininos). A ordem das palavras faz a armadilha: não se trocam os adjetivos.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t447",
+  "requerTodas": [],
+  "conjunto": "q-t447"
+ },
+ {
+  "id": "la-qt448a",
+  "tipo": "compreensao",
+  "la": "Aequalis Patri secundum divinitatem, minor Patre secundum humanitatem.",
+  "pergunta": "Quanto a quê ele é igual ao Pai?",
+  "pt": "quanto à divindade",
+  "aceitas": [
+   "quanto à divindade."
+  ],
+  "distratores": [
+   "quanto à humanidade",
+   "quanto ao Pai",
+   "em tudo, sem exceção",
+   "só quanto ao nome"
+  ],
+  "nota": "Aequalis Patri secundum divinitatem: «secundum» com acusativo, quanto a; o dativo Patri é a quem se iguala. Minor … secundum humanitatem é o outro lado.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t448",
+  "requerTodas": [],
+  "conjunto": "q-t448"
+ },
+ {
+  "id": "la-qt448b",
+  "tipo": "compreensao",
+  "la": "Aequalis Patri secundum divinitatem, minor Patre secundum humanitatem.",
+  "pergunta": "Com quem se compara «menor»?",
+  "pt": "o Pai",
+  "aceitas": [
+   "o Pai."
+  ],
+  "distratores": [
+   "a humanidade",
+   "a divindade",
+   "o Filho",
+   "ele mesmo"
+  ],
+  "nota": "Patre é ablativo de comparação: «menor que o Pai». Patri, no começo, é dativo («igual a»); a terminação separa os dois.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t448",
+  "requerTodas": [],
+  "conjunto": "q-t448"
+ },
+ {
+  "id": "la-qt451a",
+  "tipo": "compreensao",
+  "la": "Unus autem non conversione divinitatis in carnem, sed assumptione humanitatis in Deum.",
+  "pergunta": "Por meio de quê ele é um só?",
+  "pt": "pela assunção da humanidade em Deus",
+  "aceitas": [
+   "pela assunção da humanidade em Deus."
+  ],
+  "distratores": [
+   "pela conversão da divindade em carne",
+   "pela conversão da carne em divindade",
+   "pela assunção de Deus na humanidade",
+   "pela confusão da substância"
+  ],
+  "nota": "Assumptione é ablativo: por quê; humanitatis é genitivo (da humanidade); in Deum, acusativo, direção. Conversione, com non, é o que se nega.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t451",
+  "requerTodas": [],
+  "conjunto": "q-t451"
+ },
+ {
+  "id": "la-qt452a",
+  "tipo": "compreensao",
+  "la": "Unus omnino, non confusione substantiae, sed unitate personae.",
+  "pergunta": "De quê é a unidade que o faz um só?",
+  "pt": "da pessoa",
+  "aceitas": [
+   "da pessoa."
+  ],
+  "distratores": [
+   "da substância",
+   "de Deus",
+   "da carne",
+   "da confusão"
+  ],
+  "nota": "Personae é genitivo singular: de quê é a unidade. Substantiae, também genitivo, é a que se nega: confusão da substância.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t452",
+  "requerTodas": [],
+  "conjunto": "q-t452"
+ },
+ {
+  "id": "la-qt453a",
+  "tipo": "compreensao",
+  "la": "Nam sicut anima rationalis et caro unus est homo:",
+  "pergunta": "O que, juntos, constitui um só homem?",
+  "pt": "a alma racional e a carne",
+  "aceitas": [
+   "a alma racional e a carne."
+  ],
+  "distratores": [
+   "o homem e a alma",
+   "só a alma racional",
+   "só a carne",
+   "Deus e o homem"
+  ],
+  "nota": "Anima rationalis et caro são os nominativos: o sujeito. Unus homo é o predicativo, o que eles são.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t453",
+  "requerTodas": [],
+  "conjunto": "q-t453"
+ },
+ {
+  "id": "la-qt455a",
+  "tipo": "compreensao",
+  "la": "Qui passus est pro salute nostra; descendit ad inferos;",
+  "pergunta": "Por que ele sofreu?",
+  "pt": "pela nossa salvação",
+  "aceitas": [
+   "pela nossa salvação."
+  ],
+  "distratores": [
+   "pela salvação deles",
+   "pelos nossos sofrimentos",
+   "contra a nossa salvação",
+   "porque a nossa salvação o fez sofrer"
+  ],
+  "nota": "Pro salute nostra: «pro» com ablativo, em favor de; nostra concorda com salute. Passus est é depoente: forma passiva, sentido ativo («sofreu»).",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t455",
+  "requerTodas": [],
+  "conjunto": "q-t455"
+ },
+ {
+  "id": "la-qt456a",
+  "tipo": "compreensao",
+  "la": "Qui … tertia die resurrexit a mortuis.",
+  "pergunta": "De onde ele ressuscitou?",
+  "pt": "dentre os mortos",
+  "aceitas": [
+   "dentre os mortos."
+  ],
+  "distratores": [
+   "para os mortos",
+   "aos infernos",
+   "por causa dos mortos",
+   "do terceiro dia"
+  ],
+  "nota": "A mortuis: «a» com ablativo, de onde, dentre. Tertia die, ablativo, diz quando.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t456",
+  "requerTodas": [],
+  "conjunto": "q-t456"
+ },
+ {
+  "id": "la-qt457a",
+  "tipo": "compreensao",
+  "la": "Ad cuius adventum omnes homines resurgere habent cum corporibus suis",
+  "pergunta": "Quem há de ressuscitar com os seus corpos?",
+  "pt": "todos os homens",
+  "aceitas": [
+   "todos os homens."
+  ],
+  "distratores": [
+   "os corpos de todos",
+   "aquele cuja vinda se espera",
+   "a vinda do juiz",
+   "cada corpo sem o homem"
+  ],
+  "nota": "Omnes homines são nominativos: o sujeito de habent. Cuius (genitivo) é o relativo, «cuja vinda»; corporibus suis é ablativo, o acompanhamento.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t457",
+  "requerTodas": [],
+  "conjunto": "q-t457"
+ },
+ {
+  "id": "la-qt458a",
+  "tipo": "compreensao",
+  "la": "et reddituri sunt de factis propriis rationem.",
+  "pergunta": "De quê se hão de prestar contas?",
+  "pt": "dos seus próprios atos",
+  "aceitas": [
+   "dos seus próprios atos."
+  ],
+  "distratores": [
+   "dos seus próprios corpos",
+   "dos atos dos outros",
+   "das contas dos outros",
+   "para os atos próprios"
+  ],
+  "nota": "De factis propriis: «de» com ablativo, a respeito de; propriis concorda com factis (próprios, dos próprios atos). Rationem é o objeto: as contas.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t458",
+  "requerTodas": [],
+  "conjunto": "q-t458"
+ },
+ {
+  "id": "la-qt459a",
+  "tipo": "compreensao",
+  "la": "Et qui bona egerunt, ibunt in vitam aeternam;",
+  "pergunta": "O que praticaram os que irão para a vida eterna?",
+  "pt": "o bem",
+  "aceitas": [
+   "o bem."
+  ],
+  "distratores": [
+   "a vida eterna",
+   "o mal",
+   "o fogo eterno",
+   "nada"
+  ],
+  "nota": "Bona é acusativo plural neutro: o objeto de egerunt, «as coisas boas». Vitam aeternam, acusativo com «in», é aonde vão.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t459",
+  "requerTodas": [],
+  "conjunto": "q-t459"
+ },
+ {
+  "id": "la-qt460a",
+  "tipo": "compreensao",
+  "la": "qui vero mala, in ignem aeternum.",
+  "pergunta": "Para onde vão os que praticaram o mal?",
+  "pt": "para o fogo eterno",
+  "aceitas": [
+   "para o fogo eterno."
+  ],
+  "distratores": [
+   "para a vida eterna",
+   "do fogo eterno",
+   "para o mal eterno",
+   "no fogo passageiro"
+  ],
+  "nota": "In ignem aeternum: «in» com acusativo, direção; aeternum (masculino) concorda com ignem, não com mala (neutro plural).",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t460",
+  "requerTodas": [],
+  "conjunto": "q-t460"
+ },
+ {
+  "id": "la-qt462a",
+  "tipo": "compreensao",
+  "la": "quam nisi quisque fideliter firmiterque crediderit, salvus esse non poterit.",
+  "pergunta": "O que cada um tem de crer fiel e firmemente?",
+  "pt": "a fé católica",
+  "aceitas": [
+   "a fé católica."
+  ],
+  "distratores": [
+   "a salvação",
+   "cada um",
+   "a si mesmo",
+   "o Pai"
+  ],
+  "nota": "Quam é acusativo feminino singular: objeto de crediderit, retoma fides catholica. Quisque, nominativo, é quem crê.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Símbolo Quicumque",
+  "de": "la-t462",
+  "requerTodas": [],
+  "conjunto": "q-t462"
  }
 ]
