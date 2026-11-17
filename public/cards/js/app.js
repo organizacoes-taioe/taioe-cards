@@ -285,6 +285,9 @@ window.TaioeCardsApp = function (ctx) {
       if (h.length >= e.vistas && h[0]) e.primeiraCerta = !!h[0].acertou;
     });
 
+    /* data além do dobro do degrau (latim, depois da escada nova de 12/11): sorteada de novo */
+    Object.keys(p.cards).forEach(id => Motor.ajustarVoltaAoDegrau(id, p.cards[id]));
+
     /* O histórico antigo gravava em toda resposta três campos que quase
        sempre dizem «não» — quase, pausado e o «conhecia» da pergunta que já
        saiu do app. Tirá-los quando não dizem nada enxuga o arquivo em um
