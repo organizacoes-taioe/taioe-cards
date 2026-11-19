@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva 4c042afa, 2494 cards.
+-- Catálogo do curso es-pt, leva 875a5c65, 2494 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', '4c042afa', '2494 cards')
+values ('es-pt', '875a5c65', '2494 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -849,7 +849,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u299', 'frase', 'B2', array['cultura', 'cidade']::text[], 'p303', '3e048eda', array['Nesta cidade tem muita opção de estudo.', 'Nesta cidade tem muita opção de lazer.', 'Nesta cidade tem muita opção de moradia.', 'Nesta cidade tem muita opção de trabalho.', 'Nesta cidade tem muita opção de transporte.']::text[]),
   ('es-pt', 'p304', 'palavra', 'B2', array['gíria', 'Espanha', 'social', 'substantivo']::text[], null, 'b9c95709', array['a bajulação', 'a bronca', 'a fofoca', 'a piada', 'a reclamação']::text[]),
   ('es-pt', 'u300', 'frase', 'B2', array['gíria', 'trabalho']::text[], 'p304', 'f069d4d4', array['A fofoca corre rápido no escritório.', 'A gripe corre rápido no escritório.', 'A mentira corre rápido no escritório.', 'A moda corre rápido no escritório.', 'A notícia corre rápido no escritório.']::text[]),
-  ('es-pt', 'p305', 'palavra', 'B1', array['gíria', 'Espanha', 'social', 'substantivo']::text[], null, '8ac74a70', array['o colega', 'o garoto', 'o primo', 'o velho', 'o vizinho']::text[]),
+  ('es-pt', 'p305', 'palavra', 'B1', array['gíria', 'Espanha', 'social', 'substantivo']::text[], null, '7cad839e', array['o colega', 'o moleque (o garoto)', 'o primo', 'o velhote (o idoso)', 'o vizinho']::text[]),
   ('es-pt', 'u301', 'frase', 'B1', array['gíria', 'Espanha']::text[], 'p305', '3c303e5d', array['Essa estreante joga muito bem.', 'Essa garota joga muito bem.', 'Essa goleira joga muito bem.', 'Essa veterana joga muito bem.', 'Esse estreante joga muito bem.', 'Esse garoto joga muito bem.', 'Esse goleiro joga muito bem.', 'Esse time joga muito bem.', 'Esse veterano joga muito bem.']::text[]),
   ('es-pt', 'p306', 'palavra', 'B2', array['escola', 'gíria', 'Espanha', 'substantivo']::text[], null, 'ea412123', array['a cola de prova', 'a folha de rascunho', 'a lista de presença', 'a prova final', 'a régua de cálculo']::text[]),
   ('es-pt', 'u302', 'frase', 'B2', array['escola', 'gíria']::text[], 'p306', 'f948475c', array['Pegaram ele com uma calculadora na prova.', 'Pegaram ele com uma caneta na prova.', 'Pegaram ele com uma cola na prova.', 'Pegaram ele com uma folha na prova.', 'Pegaram ele com uma revista na prova.']::text[]),
@@ -2200,7 +2200,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u585', 'frase', 'A2', array['cotidiano']::text[], 'p1157', '5c2aab1f', array['O barulho acordou a casa toda.', 'O barulho assustou a casa toda.', 'O barulho cansou a casa toda.', 'O barulho distraiu a casa toda.', 'O barulho incomodou a casa toda.']::text[]),
   ('es-pt', 'u586', 'frase', 'A1', array['filosofia']::text[], 'p1158', '6c246d27', array['É a lei.', 'É a moda.', 'É a regra.', 'É a sorte.', 'É a vida.']::text[]),
   ('es-pt', 'u587', 'frase', 'A1', array['filosofia']::text[], 'p1159', '98699137', array['Ele tem medo da altura.', 'Ele tem medo da chuva.', 'Ele tem medo da escuridão.', 'Ele tem medo da morte.', 'Ele tem medo da solidão.']::text[]),
-  ('es-pt', 'u588', 'frase', 'A2', array['social']::text[], 'p1160', 'd99ae097', array['É um alívio te conhecer.', 'É um erro te conhecer.', 'É um perigo te conhecer.', 'É um prazer te conhecer.', 'É um sonho te conhecer.']::text[]),
+  ('es-pt', 'u588', 'frase', 'A2', array['social']::text[], 'p1160', '05b76a2e', array['Alívio em te conhecer.', 'Orgulho em te conhecer.', 'Prazer em te conhecer.', 'Surpresa em te conhecer.', 'Tristeza em te conhecer.']::text[]),
   ('es-pt', 'u589', 'frase', 'A2', array['natureza']::text[], 'p1161', '357d6159', array['Na Semana Santa choveu muito.', 'Na semana inteira choveu muito.', 'Na semana passada choveu muito.', 'Na semana seguinte choveu muito.', 'Na semana toda choveu muito.']::text[]),
   ('es-pt', 'u590', 'frase', 'C1', array['social']::text[], 'p1162', '3da4ab94', array['Espero o verão com ansiedade.', 'Espero o verão com calma.', 'Espero o verão com paciência.', 'Espero o verão com preguiça.', 'Espero o verão com tristeza.']::text[]),
   ('es-pt', 'u591', 'frase', 'A1', array['social']::text[], 'p1163', '0de1c901', array['Eu te amo, meu amigo.', 'Eu te amo, meu amor.', 'Eu te amo, meu filho.', 'Eu te amo, meu irmão.', 'Eu te amo, meu pai.']::text[]),

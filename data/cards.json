@@ -38547,14 +38547,15 @@
    "id": "p305",
    "tipo": "palavra",
    "es": "el chaval",
-   "pt": "o garoto",
+   "pt": "o moleque (o garoto)",
    "en": "the kid",
    "aceitas": [
     "o garoto",
     "o moleque",
     "o guri",
     "o rapaz",
-    "o menino"
+    "o menino",
+    "moleque"
    ],
    "aceitasEn": [
     "the kid",
@@ -38562,7 +38563,7 @@
     "the young lad"
    ],
    "distratores": [
-    "o velho",
+    "o velhote (o idoso)",
     "o vizinho",
     "o primo",
     "o colega"
@@ -92715,14 +92716,18 @@
    "tipo": "frase",
    "requer": "p1160",
    "es": "Es un placer conocerte.",
-   "pt": "É um prazer te conhecer.",
+   "pt": "Prazer em te conhecer.",
    "en": "It's a pleasure to meet you.",
    "aceitas": [
     "e um prazer conhecer voce",
     "prazer em te conhecer",
     "prazer em conhecer voce",
     "e um prazer conhece-lo",
-    "e um prazer conhece-la"
+    "e um prazer conhece-la",
+    "e um prazer te conhecer",
+    "muito prazer em te conhecer",
+    "prazer em conhece-lo",
+    "prazer em conhece-la"
    ],
    "aceitasEn": [
     "it's a pleasure to meet you",
@@ -92734,10 +92739,10 @@
     "Es un placer conocerla."
    ],
    "distratores": [
-    "É um alívio te conhecer.",
-    "É um perigo te conhecer.",
-    "É um erro te conhecer.",
-    "É um sonho te conhecer."
+    "Alívio em te conhecer.",
+    "Orgulho em te conhecer.",
+    "Surpresa em te conhecer.",
+    "Tristeza em te conhecer."
    ],
    "distratoresEn": [
     "It's a relief to meet you.",
@@ -92749,7 +92754,7 @@
    "tags": [
     "social"
    ],
-   "nota": "O pronome vem colado no infinitivo: «conocerte», «conocerlo». Mais curto: «un placer» ou «mucho gusto».",
+   "nota": "O pronome vem colado no infinitivo: «conocerte», «conocerlo». Mais curto: «un placer» ou «mucho gusto». Na despedida, o passado: «fue un placer conocerte», foi um prazer te conhecer.",
    "notaEn": "The pronoun attaches to the infinitive: «conocerte», «conocerlo». Shorter: «un placer» or «mucho gusto».",
    "requerTodas": [
     "p351",
