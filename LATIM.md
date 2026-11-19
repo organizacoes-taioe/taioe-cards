@@ -1054,8 +1054,8 @@ aprovada no mesmo dia, com as cinco recomendações:
   todas, a consagração, o *Mysterium fidei* com as três aclamações e o *Per ipsum*.
 - **D55. Três levas**, cada uma com commit: (1) os textos não religiosos curtos e os diálogos curtos da
   Missa; (2) o resto da Missa; (3) as Horas.
-- **D56. Só por escolha**, como os poemas de 16/11; os bem curtos (Marcial, Publílio, diálogos da Missa)
-  também na fila automática.
+- **D56. Só por escolha**, como os poemas de 16/11. O latim não tem fila automática (a pessoa escolhe de 1 a
+  3 textos), e a tela Textos já põe primeiro o que tem menos palavras faltando: os curtos sobem sozinhos.
 - **D57. Na Biblioteca, todos**: a liturgia em Catolicismo → Orações, com os autores «Missal Romano» e
   «Liturgia das Horas»; os clássicos na Literatura → Latim.
 - Muitos textos curtos de propósito: a tela Textos já põe primeiro o que tem menos palavras faltando.
