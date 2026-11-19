@@ -1,0 +1,494 @@
+{
+ "id": "carmina-burana/o-fortuna-parte-2",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "O Fortuna",
+ "autor": "Carmina Burana",
+ "ano": null,
+ "biblioteca": "/biblioteca/carmina-burana/o-fortuna/",
+ "ordem": 65,
+ "fonte": "Carmina Burana, 17",
+ "obra": "carmina-burana/o-fortuna",
+ "parte": 2,
+ "trecho": "parte 2",
+ "blocos": [
+  [
+   {
+    "t": "Sors immanis",
+    "p": [
+     [
+      "Sors",
+      "sors"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "immanis",
+      "immanis"
+     ]
+    ]
+   },
+   {
+    "t": "et inanis,",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "inanis",
+      "inanis"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "rota tu volubilis,",
+    "p": [
+     [
+      "rota",
+      "rota"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tu",
+      "tu"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "volubilis",
+      "volubilis"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "status malus,",
+    "p": [
+     [
+      "status",
+      "status"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "malus",
+      "malus"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "vana salus",
+    "p": [
+     [
+      "vana",
+      "vana"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "salus",
+      "salus"
+     ]
+    ],
+    "flexoes": [
+     "la-v1677"
+    ]
+   },
+   {
+    "t": "semper dissolubilis,",
+    "p": [
+     [
+      "semper",
+      "semper"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dissolubilis",
+      "dissolubilis"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "obumbrata",
+    "p": [
+     [
+      "obumbrata",
+      "obumbrata"
+     ]
+    ],
+    "flexoes": [
+     "la-v1678"
+    ]
+   },
+   {
+    "t": "et velata",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "velata",
+      "velata"
+     ]
+    ],
+    "flexoes": [
+     "la-v1565"
+    ]
+   },
+   {
+    "t": "mihi quoque niteris;",
+    "p": [
+     [
+      "mihi",
+      "mihi"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "quoque",
+      "quoque"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "niteris",
+      "niteris"
+     ],
+     [
+      ";",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v042",
+     "la-v1679"
+    ]
+   },
+   {
+    "t": "nunc per ludum",
+    "p": [
+     [
+      "nunc",
+      "nunc"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "per",
+      "per"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ludum",
+      "ludum"
+     ]
+    ],
+    "flexoes": [
+     "la-v1670"
+    ]
+   },
+   {
+    "t": "dorsum nudum",
+    "p": [
+     [
+      "dorsum",
+      "dorsum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nudum",
+      "nudum"
+     ]
+    ],
+    "flexoes": [
+     "la-v1680"
+    ]
+   },
+   {
+    "t": "fero tui sceleris.",
+    "p": [
+     [
+      "fero",
+      "fero"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tui",
+      "tui"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sceleris",
+      "sceleris"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v159",
+     "la-v716"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "sors": {
+   "lema": "sors",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala: sorte",
+   "card": "la-p1093",
+   "wiki": "https://en.wiktionary.org/wiki/sors#Latin"
+  },
+  "immanis": {
+   "lema": "immanis",
+   "classe": "adjetivo",
+   "forma": "vocativo feminino singular",
+   "funcao": "concorda com sors: monstruosa",
+   "card": "la-p1094",
+   "wiki": "https://en.wiktionary.org/wiki/immanis#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "inanis": {
+   "lema": "inanis",
+   "classe": "adjetivo",
+   "forma": "vocativo feminino singular",
+   "funcao": "concorda com sors: vazia",
+   "card": "la-p580",
+   "wiki": "https://en.wiktionary.org/wiki/inanis#Latin"
+  },
+  "rota": {
+   "lema": "rota",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "aposto de tu: roda",
+   "card": "la-p1095",
+   "wiki": "https://en.wiktionary.org/wiki/rota#Latin"
+  },
+  "tu": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "nominativo singular",
+   "funcao": "tu",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  },
+  "volubilis": {
+   "lema": "volubilis",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "concorda com rota: que gira",
+   "card": "la-p1096",
+   "wiki": "https://en.wiktionary.org/wiki/volubilis#Latin"
+  },
+  "status": {
+   "lema": "status",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "aposto de tu: estado",
+   "card": "la-p1082",
+   "wiki": "https://en.wiktionary.org/wiki/status#Latin"
+  },
+  "malus": {
+   "lema": "malus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com status: mau",
+   "card": "la-p675",
+   "wiki": "https://en.wiktionary.org/wiki/malus#Latin"
+  },
+  "vana": {
+   "lema": "vanus",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "concorda com salus: ilusório",
+   "card": "la-p1097",
+   "wiki": "https://en.wiktionary.org/wiki/vanus#Latin"
+  },
+  "salus": {
+   "lema": "salus",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "aposto de tu: bem-estar",
+   "card": "la-p462",
+   "wiki": "https://en.wiktionary.org/wiki/salus#Latin"
+  },
+  "semper": {
+   "lema": "semper",
+   "classe": "advérbio",
+   "card": "la-p087",
+   "wiki": "https://en.wiktionary.org/wiki/semper#Latin"
+  },
+  "dissolubilis": {
+   "lema": "dissolubilis",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "concorda com salus: que se desfaz",
+   "card": "la-p1098",
+   "wiki": "https://en.wiktionary.org/wiki/dissolubilis#Latin"
+  },
+  "obumbrata": {
+   "lema": "obumbro",
+   "classe": "verbo",
+   "forma": "particípio perfeito, nominativo feminino singular",
+   "funcao": "concorda com tu: coberta de sombra",
+   "card": "la-p1099",
+   "wiki": "https://en.wiktionary.org/wiki/obumbro#Latin"
+  },
+  "velata": {
+   "lema": "velo",
+   "classe": "verbo",
+   "forma": "particípio perfeito, nominativo feminino singular",
+   "funcao": "concorda com tu: velada",
+   "card": "la-p517",
+   "wiki": "https://en.wiktionary.org/wiki/velo#Latin"
+  },
+  "mihi": {
+   "lema": "ego",
+   "classe": "pronome",
+   "forma": "dativo singular",
+   "funcao": "contra quem: contra mim",
+   "card": "la-p004",
+   "wiki": "https://en.wiktionary.org/wiki/ego#Latin"
+  },
+  "quoque": {
+   "lema": "quoque",
+   "classe": "advérbio",
+   "card": "la-p224",
+   "wiki": "https://en.wiktionary.org/wiki/quoque#Latin"
+  },
+  "niteris": {
+   "lema": "nitor",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "depoente: pesas, fazes força",
+   "card": "la-p1101",
+   "wiki": "https://en.wiktionary.org/wiki/nitor#Latin"
+  },
+  "nunc": {
+   "lema": "nunc",
+   "classe": "advérbio",
+   "card": "la-p086",
+   "wiki": "https://en.wiktionary.org/wiki/nunc#Latin"
+  },
+  "per": {
+   "lema": "per",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p427",
+   "wiki": "https://en.wiktionary.org/wiki/per#Latin"
+  },
+  "ludum": {
+   "lema": "ludus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo singular",
+   "funcao": "depois de per: por jogo",
+   "card": "la-p1087",
+   "wiki": "https://en.wiktionary.org/wiki/ludus#Latin"
+  },
+  "dorsum": {
+   "lema": "dorsum",
+   "classe": "substantivo neutro",
+   "forma": "acusativo singular",
+   "funcao": "objeto de fero: as costas",
+   "card": "la-p1102",
+   "wiki": "https://en.wiktionary.org/wiki/dorsum#Latin"
+  },
+  "nudum": {
+   "lema": "nudus",
+   "classe": "adjetivo",
+   "forma": "acusativo neutro singular",
+   "funcao": "concorda com dorsum: nu",
+   "card": "la-p1103",
+   "wiki": "https://en.wiktionary.org/wiki/nudus#Latin"
+  },
+  "fero": {
+   "lema": "fero",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "funcao": "levo, ofereço",
+   "card": "la-p997",
+   "wiki": "https://en.wiktionary.org/wiki/fero#Latin"
+  },
+  "tui": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "genitivo neutro singular",
+   "funcao": "concorda com sceleris: tua",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  },
+  "sceleris": {
+   "lema": "scelus",
+   "classe": "substantivo neutro",
+   "forma": "genitivo singular",
+   "funcao": "por causa de quê: da maldade",
+   "card": "la-p358",
+   "wiki": "https://en.wiktionary.org/wiki/scelus#Latin"
+  }
+ }
+}

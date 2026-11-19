@@ -1,0 +1,473 @@
+{
+ "id": "carmina-burana/o-fortuna-parte-1",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "O Fortuna",
+ "autor": "Carmina Burana",
+ "ano": null,
+ "biblioteca": "/biblioteca/carmina-burana/o-fortuna/",
+ "ordem": 64,
+ "fonte": "Carmina Burana, 17",
+ "obra": "carmina-burana/o-fortuna",
+ "parte": 1,
+ "trecho": "parte 1",
+ "blocos": [
+  [
+   {
+    "t": "O Fortuna,",
+    "p": [
+     [
+      "O",
+      "o"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Fortuna",
+      "fortuna"
+     ],
+     [
+      ",",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "velut luna",
+    "p": [
+     [
+      "velut",
+      "velut"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "luna",
+      "luna"
+     ]
+    ]
+   },
+   {
+    "t": "statu variabilis,",
+    "p": [
+     [
+      "statu",
+      "statu"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "variabilis",
+      "variabilis"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1666"
+    ]
+   },
+   {
+    "t": "semper crescis",
+    "p": [
+     [
+      "semper",
+      "semper"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "crescis",
+      "crescis"
+     ]
+    ],
+    "flexoes": [
+     "la-v1547"
+    ]
+   },
+   {
+    "t": "aut decrescis;",
+    "p": [
+     [
+      "aut",
+      "aut"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "decrescis",
+      "decrescis"
+     ],
+     [
+      ";",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1667"
+    ]
+   },
+   {
+    "t": "vita detestabilis",
+    "p": [
+     [
+      "vita",
+      "vita"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "detestabilis",
+      "detestabilis"
+     ]
+    ]
+   },
+   {
+    "t": "nunc obdurat",
+    "p": [
+     [
+      "nunc",
+      "nunc"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "obdurat",
+      "obdurat"
+     ]
+    ],
+    "flexoes": [
+     "la-v1668"
+    ]
+   },
+   {
+    "t": "et tunc curat",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tunc",
+      "tunc"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "curat",
+      "curat"
+     ]
+    ],
+    "flexoes": [
+     "la-v885"
+    ]
+   },
+   {
+    "t": "ludo mentis aciem,",
+    "p": [
+     [
+      "ludo",
+      "ludo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mentis",
+      "mentis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "aciem",
+      "aciem"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1669",
+     "la-v1534",
+     "la-v1671"
+    ]
+   },
+   {
+    "t": "egestatem,",
+    "p": [
+     [
+      "egestatem",
+      "egestatem"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1672"
+    ]
+   },
+   {
+    "t": "potestatem",
+    "p": [
+     [
+      "potestatem",
+      "potestatem"
+     ]
+    ],
+    "flexoes": [
+     "la-v1673"
+    ]
+   },
+   {
+    "t": "dissolvit ut glaciem.",
+    "p": [
+     [
+      "dissolvit",
+      "dissolvit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ut",
+      "ut"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "glaciem",
+      "glaciem"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1674",
+     "la-v1675"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "o": {
+   "lema": "o",
+   "classe": "interjeição",
+   "card": "la-p365",
+   "wiki": "https://en.wiktionary.org/wiki/o#Latin"
+  },
+  "fortuna": {
+   "lema": "fortuna",
+   "classe": "substantivo feminino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala: Fortuna, a sorte em pessoa",
+   "card": "la-p148",
+   "wiki": "https://en.wiktionary.org/wiki/fortuna#Latin"
+  },
+  "velut": {
+   "lema": "velut",
+   "classe": "advérbio",
+   "card": "la-p1080",
+   "wiki": "https://en.wiktionary.org/wiki/velut#Latin"
+  },
+  "luna": {
+   "lema": "luna",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "comparação: a lua",
+   "card": "la-p1081",
+   "wiki": "https://en.wiktionary.org/wiki/luna#Latin"
+  },
+  "statu": {
+   "lema": "status",
+   "classe": "substantivo masculino",
+   "forma": "ablativo singular",
+   "funcao": "em quê: de estado",
+   "card": "la-p1082",
+   "wiki": "https://en.wiktionary.org/wiki/status#Latin"
+  },
+  "variabilis": {
+   "lema": "variabilis",
+   "classe": "adjetivo",
+   "forma": "vocativo feminino singular",
+   "funcao": "concorda com Fortuna: mudável",
+   "card": "la-p1083",
+   "wiki": "https://en.wiktionary.org/wiki/variabilis#Latin"
+  },
+  "semper": {
+   "lema": "semper",
+   "classe": "advérbio",
+   "card": "la-p087",
+   "wiki": "https://en.wiktionary.org/wiki/semper#Latin"
+  },
+  "crescis": {
+   "lema": "cresco",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "cresces",
+   "card": "la-p300",
+   "wiki": "https://en.wiktionary.org/wiki/cresco#Latin"
+  },
+  "aut": {
+   "lema": "aut",
+   "classe": "conjunção",
+   "card": "la-p291",
+   "wiki": "https://en.wiktionary.org/wiki/aut#Latin"
+  },
+  "decrescis": {
+   "lema": "decresco",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "decresces",
+   "card": "la-p1084",
+   "wiki": "https://en.wiktionary.org/wiki/decresco#Latin"
+  },
+  "vita": {
+   "lema": "vita",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de obdurat e de curat: a vida",
+   "card": "la-p011",
+   "wiki": "https://en.wiktionary.org/wiki/vita#Latin"
+  },
+  "detestabilis": {
+   "lema": "detestabilis",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "concorda com vita: detestável",
+   "card": "la-p1085",
+   "wiki": "https://en.wiktionary.org/wiki/detestabilis#Latin"
+  },
+  "nunc": {
+   "lema": "nunc",
+   "classe": "advérbio",
+   "funcao": "com tunc: ora",
+   "card": "la-p086",
+   "wiki": "https://en.wiktionary.org/wiki/nunc#Latin"
+  },
+  "obdurat": {
+   "lema": "obduro",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "endurece",
+   "card": "la-p1086",
+   "wiki": "https://en.wiktionary.org/wiki/obduro#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "tunc": {
+   "lema": "tunc",
+   "classe": "advérbio",
+   "funcao": "com nunc: ora",
+   "card": "la-p188",
+   "wiki": "https://en.wiktionary.org/wiki/tunc#Latin"
+  },
+  "curat": {
+   "lema": "curo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "cura",
+   "card": "la-p392",
+   "wiki": "https://en.wiktionary.org/wiki/curo#Latin"
+  },
+  "ludo": {
+   "lema": "ludus",
+   "classe": "substantivo masculino",
+   "forma": "ablativo singular",
+   "funcao": "modo: por brincadeira",
+   "card": "la-p1087",
+   "wiki": "https://en.wiktionary.org/wiki/ludus#Latin"
+  },
+  "mentis": {
+   "lema": "mens",
+   "classe": "substantivo feminino",
+   "forma": "genitivo singular",
+   "funcao": "de quê: da mente",
+   "card": "la-p061",
+   "wiki": "https://en.wiktionary.org/wiki/mens#Latin"
+  },
+  "aciem": {
+   "lema": "acies",
+   "classe": "substantivo feminino",
+   "forma": "acusativo singular",
+   "funcao": "objeto de obdurat e de curat: a agudeza",
+   "card": "la-p1088",
+   "wiki": "https://en.wiktionary.org/wiki/acies#Latin"
+  },
+  "egestatem": {
+   "lema": "egestas",
+   "classe": "substantivo feminino",
+   "forma": "acusativo singular",
+   "funcao": "objeto de dissolvit: a pobreza",
+   "card": "la-p1089",
+   "wiki": "https://en.wiktionary.org/wiki/egestas#Latin"
+  },
+  "potestatem": {
+   "lema": "potestas",
+   "classe": "substantivo feminino",
+   "forma": "acusativo singular",
+   "funcao": "objeto de dissolvit: o poder",
+   "card": "la-p1090",
+   "wiki": "https://en.wiktionary.org/wiki/potestas#Latin"
+  },
+  "dissolvit": {
+   "lema": "dissolvo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "dissolve",
+   "card": "la-p1091",
+   "wiki": "https://en.wiktionary.org/wiki/dissolvo#Latin"
+  },
+  "ut": {
+   "lema": "ut",
+   "classe": "advérbio",
+   "funcao": "comparação: como",
+   "card": "la-p257",
+   "wiki": "https://en.wiktionary.org/wiki/ut#Latin"
+  },
+  "glaciem": {
+   "lema": "glacies",
+   "classe": "substantivo feminino",
+   "forma": "acusativo singular",
+   "funcao": "comparação, como objeto: o gelo",
+   "card": "la-p1092",
+   "wiki": "https://en.wiktionary.org/wiki/glacies#Latin"
+  }
+ }
+}
