@@ -138,6 +138,22 @@ TEXTOS = {
     'missal-romano/libera-nos': {"titulo": "Libera nos", "autor": "Missal Romano", "tipo": "prosa", "ordem": 80, "fonte": "O rito da comunhão", "biblioteca": None},
     'missal-romano/pacem-relinquo-vobis': {"titulo": "Pacem relinquo vobis", "autor": "Missal Romano", "tipo": "prosa", "ordem": 81, "fonte": "O rito da paz", "biblioteca": None},
     'missal-romano/ecce-agnus-dei': {"titulo": "Ecce Agnus Dei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 82, "fonte": "O rito da comunhão", "biblioteca": None},
+    # leva 3 de 19/11/2026 (LATIM.md §21): a Liturgia das Horas (só por escolha, sem Biblioteca)
+    'liturgia-das-horas/deus-in-adiutorium': {"titulo": "Deus, in adiutorium", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 83, "fonte": "O começo das Horas", "biblioteca": None},
+    'liturgia-das-horas/venite-exsultemus-parte-1': {"titulo": "Venite, exsultemus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 84, "fonte": "Salmo invitatório, 94 (95), pela Nova Vulgata", "obra": "liturgia-das-horas/venite-exsultemus", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'liturgia-das-horas/venite-exsultemus-parte-2': {"titulo": "Venite, exsultemus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 85, "fonte": "Salmo invitatório, 94 (95), pela Nova Vulgata", "obra": "liturgia-das-horas/venite-exsultemus", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'liturgia-das-horas/venite-exsultemus-parte-3': {"titulo": "Venite, exsultemus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 86, "fonte": "Salmo invitatório, 94 (95), pela Nova Vulgata", "obra": "liturgia-das-horas/venite-exsultemus", "parte": 3, "trecho": "parte 3", "biblioteca": None},
+    'liturgia-das-horas/benedictus-parte-1': {"titulo": "Benedictus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 87, "fonte": "Cântico de Zacarias (Lc 1,68–79), nas Laudes", "obra": "liturgia-das-horas/benedictus", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'liturgia-das-horas/benedictus-parte-2': {"titulo": "Benedictus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 88, "fonte": "Cântico de Zacarias (Lc 1,68–79), nas Laudes", "obra": "liturgia-das-horas/benedictus", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'liturgia-das-horas/benedictus-parte-3': {"titulo": "Benedictus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 89, "fonte": "Cântico de Zacarias (Lc 1,68–79), nas Laudes", "obra": "liturgia-das-horas/benedictus", "parte": 3, "trecho": "parte 3", "biblioteca": None},
+    'liturgia-das-horas/magnificat-parte-1': {"titulo": "Magnificat", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 90, "fonte": "Cântico de Maria (Lc 1,46–55), nas Vésperas", "obra": "liturgia-das-horas/magnificat", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'liturgia-das-horas/magnificat-parte-2': {"titulo": "Magnificat", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 91, "fonte": "Cântico de Maria (Lc 1,46–55), nas Vésperas", "obra": "liturgia-das-horas/magnificat", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'liturgia-das-horas/nunc-dimittis': {"titulo": "Nunc dimittis", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 92, "fonte": "Cântico de Simeão (Lc 2,29–32) e o fim das Completas", "biblioteca": None},
+    'liturgia-das-horas/salve-regina': {"titulo": "Salve, Regina", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 93, "fonte": "Antífona de Nossa Senhora, nas Completas", "biblioteca": None},
+    'liturgia-das-horas/te-deum-parte-1': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 94, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'liturgia-das-horas/te-deum-parte-2': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 95, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'liturgia-das-horas/te-deum-parte-3': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 96, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 3, "trecho": "parte 3", "biblioteca": None},
+    'liturgia-das-horas/te-deum-parte-4': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 97, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 4, "trecho": "parte 4", "biblioteca": None},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -271,6 +287,15 @@ SEM_CARD = {
     'lucili': {'lema': 'Lucilius', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Lucílio, o amigo a quem Sêneca escreve as cartas.']},
     # leva 2 de 19/11/2026
     'mariam': {'lema': 'Maria', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Maria, a mãe de Jesus.'], 'wiki': 'https://en.wiktionary.org/wiki/Maria#Latin'},
+    # leva 3 de 19/11/2026
+    'israel': {'lema': 'Israel', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Israel, o povo de Deus (e o patriarca Jacó, que deu o nome ao povo).'], 'wiki': 'https://en.wiktionary.org/wiki/Israel#Latin'},
+    'david': {'lema': 'David', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Davi, o rei de Israel, de cuja casa vem o Messias.'], 'wiki': 'https://en.wiktionary.org/wiki/David#Latin'},
+    'abraham': {'lema': 'Abraham', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Abraão, o patriarca, pai do povo de Israel.'], 'wiki': 'https://en.wiktionary.org/wiki/Abraham#Latin'},
+    'meriba': {'lema': 'Meriba', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Meribá, o lugar do deserto onde o povo discutiu com Deus por falta de água (Ex 17).']},
+    'massa': {'lema': 'Massa', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Massá, o lugar do deserto onde o povo tentou a Deus (Ex 17); o mesmo episódio de Meribá.']},
+    'evae': {'lema': 'Eva', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Eva, a primeira mulher.'], 'wiki': 'https://en.wiktionary.org/wiki/Eva#Latin'},
+    'cherubim': {'lema': 'Cherubim', 'classe': 'nome (hebraico)', 'g': 'nome', 'def': ['Os Querubins, uma das ordens dos anjos (plural hebraico de cherub).'], 'wiki': 'https://en.wiktionary.org/wiki/cherubim#Latin'},
+    'seraphim': {'lema': 'Seraphim', 'classe': 'nome (hebraico)', 'g': 'nome', 'def': ['Os Serafins, uma das ordens dos anjos (plural hebraico de seraph).'], 'wiki': 'https://en.wiktionary.org/wiki/seraphim#Latin'},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')

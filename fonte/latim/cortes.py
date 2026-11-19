@@ -548,6 +548,135 @@ CORTES = {
         [(24, 31)],                  # sed tantum dic verbo, et sanabitur anima mea.
         [(32, 33)],                  # Corpus Christi.
     ],
+    # leva 3 de 19/11/2026 (LATIM.md §21): a Liturgia das Horas
+    'liturgia-das-horas/deus-in-adiutorium': [
+        [(0, 3)],                    # Domine, labia mea aperies.
+        [(4, 9)],                    # Et os meum annuntiabit laudem tuam.
+        [(10, 14)],                  # Deus, in adiutorium meum intende.
+        [(15, 19)],                  # Domine, ad adiuvandum me festina.
+    ],
+    'liturgia-das-horas/venite-exsultemus-parte-1': [
+        [(0, 6)],                    # Venite, exsultemus Domino; iubilemus Deo salutari nostro.
+        [(7, 16)],                   # Praeoccupemus faciem eius in confessione et in psalmis iubilemus ei.
+        [(17, 26)],                  # Quoniam Deus magnus Dominus et rex magnus super omnes deos.
+    ],
+    'liturgia-das-horas/venite-exsultemus-parte-2': [
+        [(0, 11)],                   # Quia in manu eius sunt profunda terrae, et altitudines montium ipsius sunt.
+        [(12, 19)],                  # Quoniam ipsius est mare, et ipse fecit illud,
+        [(20, 24)],                  # et siccam manus eius formaverunt.
+        [(25, 33)],                  # Venite, adoremus et procidamus et genua flectamus ante Dominum,
+        [(33, 41)],                  # Dominum, qui fecit nos, quia ipse est Deus noster,
+        [(42, 50)],                  # et nos populus pascuae eius et oves manus eius.
+    ],
+    'liturgia-das-horas/venite-exsultemus-parte-3': [
+        [(0, 4)],                    # Utinam hodie vocem eius audiatis:
+        [(5, 11)],                   # Nolite obdurare corda vestra, sicut in Meriba,
+        [(5, 6), (12, 16)],          # Nolite obdurare … secundum diem Massa in deserto,
+        [(17, 27)],                  # ubi tentaverunt me patres vestri: probaverunt me, etsi viderunt opera mea.
+        [(28, 33)],                  # Quadraginta annis taeduit me generationis illius,
+        [(34, 40)],                  # et dixi: Populus errantium corde sunt isti.
+        [(41, 46)],                  # Et ipsi non cognoverunt vias meas;
+        [(47, 56)],                  # ideo iuravi in ira mea: Non introibunt in requiem meam.
+    ],
+    'liturgia-das-horas/benedictus-parte-1': [
+        [(0, 3)],                    # Benedictus Dominus, Deus Israel,
+        [(4, 10)],                   # quia visitavit et fecit redemptionem plebi suae
+        [(11, 20)],                  # et erexit cornu salutis nobis in domo David pueri sui,
+        [(21, 26), (31, 32)],        # sicut locutus est per os sanctorum … prophetarum eius,
+        [(26, 32)],                  # sanctorum, qui a saeculo sunt, prophetarum eius,
+        [(12, 13), (33, 36)],        # erexit cornu … salutem ex inimicis nostris
+        [(33, 33), (37, 43)],        # salutem … et de manu omnium, qui oderunt nos;
+    ],
+    'liturgia-das-horas/benedictus-parte-2': [
+        [(0, 5)],                    # ad faciendam misericordiam cum patribus nostris
+        [(6, 10)],                   # et memorari testamenti sui sancti,
+        [(11, 17)],                  # iusiurandum, quod iuravit ad Abraham patrem nostrum,
+        [(11, 13), (18, 20)],        # iusiurandum, quod iuravit … daturum se nobis,
+        [(21, 29)],                  # ut sine timore, de manu inimicorum liberati, serviamus illi
+        [(28, 38)],                  # serviamus illi in sanctitate et iustitia coram ipso omnibus diebus nostris.
+    ],
+    'liturgia-das-horas/benedictus-parte-3': [
+        [(0, 5)],                    # Et tu, puer, propheta Altissimi vocaberis:
+        [(6, 13)],                   # praeibis enim ante faciem Domini parare vias eius,
+        [(14, 23)],                  # ad dandam scientiam salutis plebi eius in remissionem peccatorum eorum,
+        [(24, 28)],                  # per viscera misericordiae Dei nostri,
+        [(25, 25), (29, 35)],        # viscera … in quibus visitabit nos oriens ex alto,
+        [(36, 45)],                  # illuminare his, qui in tenebris et in umbra mortis sedent,
+        [(46, 52)],                  # ad dirigendos pedes nostros in viam pacis.
+    ],
+    'liturgia-das-horas/magnificat-parte-1': [
+        [(0, 3)],                    # Magnificat anima mea Dominum,
+        [(4, 11)],                   # et exsultavit spiritus meus in Deo salvatore meo,
+        [(12, 16)],                  # quia respexit humilitatem ancillae suae.
+        [(17, 25)],                  # Ecce enim ex hoc beatam me dicent omnes generationes,
+        [(26, 32)],                  # quia fecit mihi magna, qui potens est,
+        [(33, 36)],                  # et sanctum nomen eius,
+        [(37, 45)],                  # et misericordia eius in progenies et progenies timentibus eum.
+    ],
+    'liturgia-das-horas/magnificat-parte-2': [
+        [(0, 9)],                    # Fecit potentiam in brachio suo, dispersit superbos mente cordis sui;
+        [(10, 16)],                  # deposuit potentes de sede et exaltavit humiles.
+        [(17, 23)],                  # Esurientes implevit bonis et divites dimisit inanes.
+        [(24, 29)],                  # Suscepit Israel puerum suum, recordatus misericordiae,
+        [(30, 41)],                  # sicut locutus est ad patres nostros, Abraham et semini eius in saecula.
+    ],
+    'liturgia-das-horas/nunc-dimittis': [
+        [(0, 6)],                    # Salva nos, Domine, vigilantes, custodi nos dormientes,
+        [(7, 14)],                   # ut vigilemus cum Christo et requiescamus in pace.
+        [(15, 24)],                  # Nunc dimittis servum tuum, Domine, secundum verbum tuum in pace,
+        [(25, 30)],                  # quia viderunt oculi mei salutare tuum,
+        [(29, 36)],                  # salutare tuum, quod parasti ante faciem omnium populorum,
+        [(37, 45)],                  # lumen ad revelationem gentium et gloriam plebis tuae Israel.
+        [(46, 52)],                  # In manus tuas, Domine, commendo spiritum meum.
+        [(53, 57)],                  # Redemisti nos, Domine, Deus veritatis.
+        [(58, 66)],                  # Noctem quietam et finem perfectum concedat nobis Dominus omnipotens.
+    ],
+    'liturgia-das-horas/salve-regina': [
+        [(0, 9)],                    # Salve, Regina, mater misericordiae, vita, dulcedo et spes nostra, salve.
+        [(10, 15)],                  # Ad te clamamus, exsules filii Evae.
+        [(16, 25)],                  # Ad te suspiramus gementes et flentes in hac lacrimarum valle.
+        [(26, 36)],                  # Eia ergo, advocata nostra, illos tuos misericordes oculos ad nos converte.
+        [(37, 47)],                  # Et Iesum, benedictum fructum ventris tui, nobis post hoc exsilium ostende.
+        [(48, 55)],                  # O clemens, o pia, o dulcis Virgo Maria.
+    ],
+    'liturgia-das-horas/te-deum-parte-1': [
+        [(0, 5)],                    # Te Deum laudamus: te Dominum confitemur.
+        [(6, 11)],                   # Te aeternum Patrem omnis terra veneratur.
+        [(12, 14), (24, 26)],        # Tibi omnes Angeli … incessabili voce proclamant
+        [(15, 19), (26, 26)],        # tibi caeli et universae potestates … proclamant
+        [(20, 26)],                  # tibi Cherubim et Seraphim incessabili voce proclamant:
+        [(27, 32)],                  # Sanctus, Sanctus, Sanctus Dominus Deus Sabaoth. (já é card)
+        [(33, 40)],                  # Pleni sunt caeli et terra maiestatis gloriae tuae.
+    ],
+    'liturgia-das-horas/te-deum-parte-2': [
+        [(0, 3), (11, 11)],          # Te gloriosus Apostolorum chorus … laudat
+        [(4, 7), (11, 11)],          # te Prophetarum laudabilis numerus … laudat
+        [(8, 12)],                   # te Martyrum candidatus laudat exercitus.
+        [(13, 19)],                  # Te per orbem terrarum sancta confitetur Ecclesia,
+        [(13, 13), (18, 22)],        # Te … confitetur Ecclesia, Patrem immensae maiestatis;
+        [(18, 19), (23, 28)],        # confitetur Ecclesia … venerandum tuum verum et unicum Filium;
+        [(18, 19), (29, 32)],        # confitetur Ecclesia … Sanctum quoque Paraclitum Spiritum.
+    ],
+    'liturgia-das-horas/te-deum-parte-3': [
+        [(0, 3)],                    # Tu rex gloriae, Christe.
+        [(4, 8)],                    # Tu Patris sempiternus es Filius.
+        [(9, 17)],                   # Tu, ad liberandum suscepturus hominem, non horruisti Virginis uterum.
+        [(18, 25)],                  # Tu, devicto mortis aculeo, aperuisti credentibus regna caelorum.
+        [(26, 33)],                  # Tu ad dexteram Dei sedes, in gloria Patris.
+        [(34, 37)],                  # Iudex crederis esse venturus.
+        [(38, 47)],                  # Te ergo quaesumus, tuis famulis subveni, quos pretioso sanguine redemisti.
+        [(48, 55)],                  # Aeterna fac cum sanctis tuis in gloria numerari.
+    ],
+    'liturgia-das-horas/te-deum-parte-4': [
+        [(0, 8)],                    # Salvum fac populum tuum, Domine, et benedic hereditati tuae.
+        [(9, 17)],                   # Et rege eos, et extolle illos usque in aeternum.
+        [(18, 22)],                  # Per singulos dies benedicimus te;
+        [(23, 32)],                  # et laudamus nomen tuum in saeculum, et in saeculum saeculi.
+        [(33, 40)],                  # Dignare, Domine, die isto sine peccato nos custodire.
+        [(41, 45)],                  # Miserere nostri, Domine, miserere nostri.
+        [(46, 55)],                  # Fiat misericordia tua, Domine, super nos, quemadmodum speravimus in te.
+        [(56, 63)],                  # In te, Domine, speravi: non confundar in aeternum.
+    ],
 }
 
 FIM = '.;:?!'
@@ -555,7 +684,7 @@ FIM = '.;:?!'
 MAIUSCULA = {'la-p001', 'la-p012', 'la-p072', 'la-p043', 'la-p054'}
 
 # o arquivo dos trechos dos textos novos (os que ainda não têm card de trecho)
-ARQUIVO_NOVO = '43-trechos-10.json'
+ARQUIVO_NOVO = '46-trechos-11.json'
 
 
 def ler_baralho():
