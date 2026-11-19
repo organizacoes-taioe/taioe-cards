@@ -402,13 +402,58 @@ CORTES = {
     'missal-romano/sanctus': [[(0, 5)], [(6, 12)], [(13, 15)], [(16, 21)], [(22, 24)]],
     'missal-romano/agnus-dei': [[(0, 7)], [(8, 15)], [(16, 24)]],
     'missal-romano/ite-missa-est': [[(0, 1)], [(2, 5)], [(6, 15)], [(17, 19)], [(20, 21)]],
+    # leva 1b de 19/11/2026 (LATIM.md §21): Fedro, Gaudeamus, O Fortuna, César, Cícero, Sêneca, Ovídio
+    'fedro/vulpes-et-uva': [[(0, 10)], [(11, 17)], [(18, 23)], [(24, 35)]],
+    'fedro/canis-per-fluvium': [
+        [(0, 5)],                    # Amittit merito proprium qui alienum adpetit.
+        [(6, 12)],                   # Canis per flumen carnem cum ferret natans,
+        [(6, 6), (13, 18)],          # Canis … lympharum in speculo vidit simulacrum suum,
+        [(19, 26)],                  # aliamque praedam ab altero ferri putans eripere voluit;
+        [(27, 35)],                  # verum decepta aviditas et quem tenebat ore dimisit cibum,
+        [(27, 29), (36, 41)],        # verum decepta aviditas … nec quem petebat potuit adeo adtingere.
+    ],
+    'fedro/vulpes-et-corvus': [
+        [(0, 10)],                   # Qui se laudari gaudet verbis subdolis, fere dat poenas turpi paenitentia.
+        [(11, 18)],                  # Cum de fenestra corvus raptum caseum comesse vellet,
+        [(19, 28)],                  # celsa residens arbore, vulpes hunc vidit, deinde sic coepit loqui:
+        [(29, 35)], [(36, 41)], [(42, 48)],
+        [(49, 58)],                  # At ille stultus, dum vult vocem ostendere, emisit ore caseum,
+        [(58, 65)],                  # caseum, quem celeriter dolosa vulpes avidis rapuit dentibus.
+        [(66, 71)], [(72, 77)], [(78, 81)],
+    ],
+    'fedro/rana-rupta-et-bos': [
+        [(0, 5)], [(6, 11)],
+        [(12, 19)],                  # et tacta invidia tantae magnitudinis rugosam inflavit pellem:
+        [(20, 27)],                  # tum natos suos interrogavit, an bove esset latior.
+        [(28, 29)],                  # Illi negarunt.
+        [(30, 41)],                  # Rursus intendit cutem maiore nisu et simili quaesivit modo, quis maior esset.
+        [(42, 44)], [(45, 54)],
+    ],
+    'anonimo/gaudeamus-igitur': [[(0, 4)], [(5, 13)], [(14, 21)], [(22, 30)], [(31, 36)], [(37, 44)]],
+    'carmina-burana/o-fortuna-parte-1': [[(0, 9)], [(10, 19)], [(20, 24)]],
+    'carmina-burana/o-fortuna-parte-2': [[(0, 6)], [(7, 12)], [(13, 18)], [(19, 26)]],
+    'carmina-burana/o-fortuna-parte-3': [[(0, 6)], [(7, 13)], [(14, 21)], [(22, 29)]],
+    'cesar/gallia-est-omnis': [[(0, 6)], [(7, 12)], [(13, 20)], [(21, 28)]],
+    'cicero/quo-usque-tandem': [[(0, 6)], [(7, 14)], [(15, 21)], [(22, 25)], [(26, 30)], [(31, 33)]],
+    'seneca/ita-fac-mi-lucili': [
+        [(0, 6)],                    # Ita fac, mi Lucili; vindica te tibi,
+        [(7, 12), (17, 19)],         # et tempus, quod adhuc aut auferebatur … collige et serva.
+        [(8, 9), (13, 19)],          # tempus, quod … aut subripiebatur aut excidebat, collige et serva.
+        [(20, 26)], [(27, 34)], [(35, 42)],
+    ],
+    'ovidio/in-nova-fert-animus': [
+        [(0, 7)],                    # In nova fert animus mutatas dicere formas corpora;
+        [(8, 9), (15, 16)],          # di, coeptis … adspirate meis
+        [(10, 14)],                  # nam vos mutastis et illas
+        [(17, 26)],                  # primaque ab origine mundi ad mea perpetuum deducite tempora carmen.
+    ],
 }
 
 FIM = '.;:?!'
 MAIUSCULA = {'la-p001', 'la-p012', 'la-p072', 'la-p043', 'la-p054'}
 
 # o arquivo dos trechos dos textos novos (os que ainda não têm card de trecho)
-ARQUIVO_NOVO = '37-trechos-8.json'
+ARQUIVO_NOVO = '40-trechos-9.json'
 
 
 def ler_baralho():

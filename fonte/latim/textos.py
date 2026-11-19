@@ -112,6 +112,19 @@ TEXTOS = {
     'missal-romano/sanctus': {"titulo": "Sanctus", "autor": "Missal Romano", "tipo": "prosa", "ordem": 56, "fonte": "Ordinário da Missa", "biblioteca": None},
     'missal-romano/agnus-dei': {"titulo": "Agnus Dei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 57, "fonte": "Ordinário da Missa", "biblioteca": None},
     'missal-romano/ite-missa-est': {"titulo": "Ite, missa est", "autor": "Missal Romano", "tipo": "prosa", "ordem": 58, "fonte": "Ritos finais da Missa", "biblioteca": None},
+    # leva 1b de 19/11/2026 (LATIM.md §21): textos curtos fora da liturgia (só por escolha)
+    'fedro/vulpes-et-uva': {"titulo": "Vulpes et uva", "autor": "Fedro", "tipo": "poema", "ordem": 59, "fonte": "Fábulas, IV,3"},
+    'fedro/canis-per-fluvium': {"titulo": "Canis per fluvium", "autor": "Fedro", "tipo": "poema", "ordem": 60, "fonte": "Fábulas, I,4"},
+    'fedro/vulpes-et-corvus': {"titulo": "Vulpes et corvus", "autor": "Fedro", "tipo": "poema", "ordem": 61, "fonte": "Fábulas, I,13"},
+    'fedro/rana-rupta-et-bos': {"titulo": "Rana rupta et bos", "autor": "Fedro", "tipo": "poema", "ordem": 62, "fonte": "Fábulas, I,24"},
+    'anonimo/gaudeamus-igitur': {"titulo": "Gaudeamus igitur", "autor": "Anônimo", "tipo": "poema", "ordem": 63, "fonte": "Canção estudantil, estrofes 1 a 3 (Kindleben, 1781)"},
+    'carmina-burana/o-fortuna-parte-1': {"titulo": "O Fortuna", "autor": "Carmina Burana", "tipo": "poema", "ordem": 64, "fonte": "Carmina Burana, 17", "obra": "carmina-burana/o-fortuna", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/carmina-burana/o-fortuna/"},
+    'carmina-burana/o-fortuna-parte-2': {"titulo": "O Fortuna", "autor": "Carmina Burana", "tipo": "poema", "ordem": 65, "fonte": "Carmina Burana, 17", "obra": "carmina-burana/o-fortuna", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/carmina-burana/o-fortuna/"},
+    'carmina-burana/o-fortuna-parte-3': {"titulo": "O Fortuna", "autor": "Carmina Burana", "tipo": "poema", "ordem": 66, "fonte": "Carmina Burana, 17", "obra": "carmina-burana/o-fortuna", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/carmina-burana/o-fortuna/"},
+    'cesar/gallia-est-omnis': {"titulo": "Gallia est omnis", "autor": "César", "tipo": "prosa", "ordem": 67, "fonte": "Guerra das Gálias, I,1 (começo)"},
+    'cicero/quo-usque-tandem': {"titulo": "Quo usque tandem", "autor": "Cícero", "tipo": "prosa", "ordem": 68, "fonte": "Primeira Catilinária, 1–2 (começo)"},
+    'seneca/ita-fac-mi-lucili': {"titulo": "Ita fac, mi Lucili", "autor": "Sêneca", "tipo": "prosa", "ordem": 69, "fonte": "Cartas a Lucílio, I,1 (começo)"},
+    'ovidio/in-nova-fert-animus': {"titulo": "In nova fert animus", "autor": "Ovídio", "tipo": "poema", "ordem": 70, "fonte": "Metamorfoses, I,1–4"},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -235,6 +248,14 @@ SEM_CARD = {
     'matthaeum': {'lema': 'Matthaeus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Mateus, o apóstolo e evangelista.']},
     'hosanna': {'lema': 'hosanna', 'classe': 'interjeição', 'g': 'gramatical', 'def': ['Hosana: salva, por favor! Aclamação hebraica de louvor.'], 'wiki': 'https://en.wiktionary.org/wiki/hosanna#Latin'},
     'sabaoth': {'lema': 'Sabaoth', 'classe': 'nome (hebraico)', 'g': 'gramatical', 'def': ['Dos exércitos: palavra hebraica, em «Senhor Deus Sabaoth», o Senhor dos exércitos (do céu).'], 'wiki': 'https://en.wiktionary.org/wiki/Sabaoth#Latin'},
+    # leva 1b de 19/11/2026
+    'gallia': {'lema': 'Gallia', 'classe': 'nome próprio', 'g': 'nome', 'def': ['A Gália, a terra dos gauleses (hoje, sobretudo a França e a Bélgica).']},
+    'belgae': {'lema': 'Belgae', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Os belgas, o povo do norte da Gália.']},
+    'aquitani': {'lema': 'Aquitani', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Os aquitanos, o povo do sudoeste da Gália.']},
+    'celtae': {'lema': 'Celtae', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Os celtas: o nome que os gauleses do centro davam a si mesmos.']},
+    'galli': {'lema': 'Galli', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Os gauleses: o nome romano dos celtas da Gália.']},
+    'catilina': {'lema': 'Catilina', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Catilina, o senador que conspirou contra Roma em 63 a.C.']},
+    'lucili': {'lema': 'Lucilius', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Lucílio, o amigo a quem Sêneca escreve as cartas.']},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')
