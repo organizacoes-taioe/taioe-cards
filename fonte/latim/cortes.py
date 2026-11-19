@@ -344,12 +344,71 @@ CORTES = {
         [(41, 50)],                  # prisco quae more parentum tradita sunt tristi munere ad inferias,
         [(56, 62)],                  # atque in perpetuum, frater, ave atque vale.
     ],
+    # leva 1a de 19/11/2026 (LATIM.md §21): Marcial, Catulo 70, Publílio Siro, inscrições e a Missa
+    'marcial/sunt-bona': [
+        [(0, 10)],                   # Sunt bona, sunt quaedam mediocria, sunt mala plura quae legis hic:
+        [(11, 15)],                  # aliter non fit, Avite, liber.
+    ],
+    'marcial/quem-recitas': [[(0, 6)], [(7, 13)]],
+    'marcial/nuper-erat-medicus': [[(0, 6)], [(7, 12)]],
+    'marcial/bella-es': [
+        [(0, 6)],                    # Bella es, novimus, et puella, verum est,
+        [(7, 12)],                   # et dives, quis enim potest negare?
+        [(13, 16), (18, 25)],        # Sed cum te nimium laudas, nec dives neque bella nec puella es.
+    ],
+    'marcial/versiculos-in-me': [[(0, 5)], [(6, 11)]],
+    'marcial/thais-habet': [[(0, 5)], [(6, 8)], [(9, 13)]],
+    'marcial/semper-pauper-eris': [[(0, 6)], [(7, 12)]],
+    'marcial/miraris-veteres': [
+        [(0, 8)],                    # Miraris veteres, Vacerra, solos, nec laudas nisi mortuos poetas.
+        [(9, 11)],                   # Ignoscas petimus, Vacerra:
+        [(12, 18)],                  # tanti non est, ut placeam tibi, perire.
+    ],
+    'marcial/difficilis-facilis': [[(0, 5)], [(6, 12)]],
+    'catulo/nulli-se-dicit': [
+        [(0, 8)],                    # Nulli se dicit mulier mea nubere malle quam mihi,
+        [(9, 14)],                   # non si se Iuppiter ipse petat.
+        [(15, 21)],                  # Dicit: sed mulier cupido quod dicit amanti,
+        [(19, 28)],                  # quod dicit amanti, in vento et rapida scribere oportet aqua.
+    ],
+    'publilio-siro/sententiae-parte-1': [[(0, 6)], [(7, 12)], [(13, 17)], [(18, 24)], [(25, 31)]],
+    'publilio-siro/sententiae-parte-2': [[(0, 6)], [(7, 13)], [(14, 19)], [(20, 25)], [(26, 31)]],
+    'publilio-siro/sententiae-parte-3': [[(0, 5)], [(6, 12)], [(13, 21)], [(22, 31)], [(32, 37)]],
+    'inscricoes/admiror-paries': [
+        [(0, 10)],                   # Admiror, paries, te non cecidisse ruinis, qui tot scriptorum taedia sustineas.
+        [(11, 17)],                  # Quisquis amat valeat, pereat qui nescit amare;
+        [(18, 23)],                  # bis tanto pereat quisquis amare vetat.
+        [(24, 30)],                  # Non fui, fui, non sum, non desidero.
+        [(31, 34)],                  # Sit tibi terra levis.
+    ],
+    'missal-romano/in-nomine-patris': [
+        [(0, 7)],                    # In nomine Patris, et Filii, et Spiritus Sancti.
+        [(9, 16), (21, 24)],         # Gratia Domini nostri Iesu Christi, et caritas Dei sit cum omnibus vobis
+        [(17, 24)],                  # et communicatio Sancti Spiritus sit cum omnibus vobis.
+        [(25, 28)], [(29, 30)], [(31, 34)],   # Et cum spiritu tuo. / Dominus vobiscum. (já são cards)
+        [(35, 45)],                  # Fratres, agnoscamus peccata nostra, ut apti simus ad sacra mysteria celebranda.
+    ],
+    'missal-romano/per-dominum-nostrum': [
+        [(0, 0)],                    # Oremus. (já é card)
+        [(1, 7)],                    # Per Dominum nostrum Iesum Christum, Filium tuum,
+        [(8, 17)],                   # qui tecum vivit et regnat in unitate Spiritus Sancti, Deus,
+        [(18, 21)],                  # per omnia saecula saeculorum. (já é card)
+        [(23, 26)],                  # Per Christum Dominum nostrum. (já é card)
+    ],
+    'missal-romano/verbum-domini': [
+        [(0, 1)], [(2, 3)], [(4, 5)], [(6, 9)], [(10, 14)], [(15, 17)], [(18, 19)], [(20, 22)],
+    ],
+    'missal-romano/sursum-corda': [[(0, 1)], [(2, 5)], [(6, 7)], [(8, 10)], [(11, 15)], [(16, 19)]],
+    'missal-romano/sanctus': [[(0, 5)], [(6, 12)], [(13, 15)], [(16, 21)], [(22, 24)]],
+    'missal-romano/agnus-dei': [[(0, 7)], [(8, 15)], [(16, 24)]],
+    'missal-romano/ite-missa-est': [[(0, 1)], [(2, 5)], [(6, 15)], [(17, 19)], [(20, 21)]],
 }
 
 FIM = '.;:?!'
+MAIUSCULA = {'la-p001', 'la-p012', 'la-p072', 'la-p043', 'la-p054'}
 
 # o arquivo dos trechos dos textos novos (os que ainda não têm card de trecho)
-ARQUIVO_NOVO = '32-trechos-6.json'
+ARQUIVO_NOVO = '37-trechos-8.json'
 
 
 def ler_baralho():
@@ -367,12 +426,15 @@ def palavras_do_verso(verso):
     alinha (a enclítica e o cum colado consomem duas entradas)."""
     fila = list(verso['palavras'])
     saida = []
-    for m in textos.PALAVRA.finditer(verso['la']):
+    ms = list(textos.PALAVRA.finditer(verso['la']))
+    for k, m in enumerate(ms):
         w = m.group(0)
         partes = [fila.pop(0)]
         while partes[0]['w'].lower() != w.lower() and ''.join(x['w'].lstrip('-') for x in partes).lower() != w.lower():
             partes.append(fila.pop(0))
-        if partes[0]['w'].lower() == w.lower() and fila and fila[0]['w'].lower() == w.lower():
+        # a mesma palavra repetida no texto («Sanctus, Sanctus», «fui, fui») é uma entrada cada
+        prox = ms[k + 1].group(0).lower() if k + 1 < len(ms) else None
+        if partes[0]['w'].lower() == w.lower() and fila and fila[0]['w'].lower() == w.lower() and prox != w.lower():
             partes.append(fila.pop(0))
         saida.append((m.start(), m.end(), w, partes))
     if fila:
@@ -432,7 +494,9 @@ def montar_trecho(tid, versos, intervalos, cards):
                 entre = re.sub(r'\s+', ' ', entre)
             antes = (trecho + entre).rstrip()
             comeco_de_verso = ini == 0 or not versos[nv - 1]['la'][:ini].strip()
-            proprio = any(not x.get('c') or (cards.get(x['c'], {}).get('la') or 'a')[0].isupper() for x in partes[:1])
+            # Deus, Dominus e as Pessoas divinas (Pater, Filius, Spiritus) guardam a maiúscula no começo
+            # do verso (Missa: «Benedicat vos omnipotens Deus, Pater, et Filius…»)
+            proprio = any(not x.get('c') or x.get('c') in MAIUSCULA or (cards.get(x['c'], {}).get('la') or 'a')[0].isupper() for x in partes[:1])
             if comeco_de_verso and n != intervalos[0][0] and not proprio and w[0].isupper() and (not antes or antes[-1] not in FIM):
                 w = w[0].lower() + w[1:]
                 partes = [dict(partes[0], w=partes[0]['w'][0].lower() + partes[0]['w'][1:])] + partes[1:]

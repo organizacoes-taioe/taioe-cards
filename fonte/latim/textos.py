@@ -89,6 +89,28 @@ TEXTOS = {
                                   'fonte': 'Poemas, 5'},
     'catulo/multas-per-gentes': {'titulo': 'Multas per gentes', 'autor': 'Catulo', 'tipo': 'poema', 'ordem': 37,
                                  'fonte': 'Poemas, 101'},
+    # leva 1a de 19/11/2026 (LATIM.md §21): textos curtos fora da liturgia e diálogos curtos da Missa (só por escolha)
+    'marcial/sunt-bona': {"titulo": "Sunt bona", "autor": "Marcial", "tipo": "poema", "ordem": 38, "fonte": "Epigramas, I,16"},
+    'marcial/quem-recitas': {"titulo": "Quem recitas", "autor": "Marcial", "tipo": "poema", "ordem": 39, "fonte": "Epigramas, I,38"},
+    'marcial/nuper-erat-medicus': {"titulo": "Nuper erat medicus", "autor": "Marcial", "tipo": "poema", "ordem": 40, "fonte": "Epigramas, I,47"},
+    'marcial/bella-es': {"titulo": "Bella es", "autor": "Marcial", "tipo": "poema", "ordem": 41, "fonte": "Epigramas, I,64"},
+    'marcial/versiculos-in-me': {"titulo": "Versiculos in me", "autor": "Marcial", "tipo": "poema", "ordem": 42, "fonte": "Epigramas, III,9"},
+    'marcial/thais-habet': {"titulo": "Thais habet", "autor": "Marcial", "tipo": "poema", "ordem": 43, "fonte": "Epigramas, V,43"},
+    'marcial/semper-pauper-eris': {"titulo": "Semper pauper eris", "autor": "Marcial", "tipo": "poema", "ordem": 44, "fonte": "Epigramas, V,81"},
+    'marcial/miraris-veteres': {"titulo": "Miraris veteres", "autor": "Marcial", "tipo": "poema", "ordem": 45, "fonte": "Epigramas, VIII,69"},
+    'marcial/difficilis-facilis': {"titulo": "Difficilis facilis", "autor": "Marcial", "tipo": "poema", "ordem": 46, "fonte": "Epigramas, XII,46"},
+    'catulo/nulli-se-dicit': {"titulo": "Nulli se dicit", "autor": "Catulo", "tipo": "poema", "ordem": 47, "fonte": "Poemas, 70"},
+    'publilio-siro/sententiae-parte-1': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 48, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 1, "trecho": "parte 1"},
+    'publilio-siro/sententiae-parte-2': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 49, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 2, "trecho": "parte 2"},
+    'publilio-siro/sententiae-parte-3': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 50, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 3, "trecho": "parte 3"},
+    'inscricoes/admiror-paries': {"titulo": "Admiror, paries", "autor": "Inscrições", "tipo": "poema", "ordem": 51, "fonte": "Grafites de Pompeia e epitáfios"},
+    'missal-romano/in-nomine-patris': {"titulo": "In nomine Patris", "autor": "Missal Romano", "tipo": "prosa", "ordem": 52, "fonte": "Ritos iniciais da Missa"},
+    'missal-romano/per-dominum-nostrum': {"titulo": "Per Dominum nostrum", "autor": "Missal Romano", "tipo": "prosa", "ordem": 53, "fonte": "A conclusão das orações da Missa"},
+    'missal-romano/verbum-domini': {"titulo": "Verbum Domini", "autor": "Missal Romano", "tipo": "prosa", "ordem": 54, "fonte": "As leituras da Missa"},
+    'missal-romano/sursum-corda': {"titulo": "Sursum corda", "autor": "Missal Romano", "tipo": "prosa", "ordem": 55, "fonte": "O diálogo do Prefácio"},
+    'missal-romano/sanctus': {"titulo": "Sanctus", "autor": "Missal Romano", "tipo": "prosa", "ordem": 56, "fonte": "Ordinário da Missa"},
+    'missal-romano/agnus-dei': {"titulo": "Agnus Dei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 57, "fonte": "Ordinário da Missa"},
+    'missal-romano/ite-missa-est': {"titulo": "Ite, missa est", "autor": "Missal Romano", "tipo": "prosa", "ordem": 58, "fonte": "Ritos finais da Missa"},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -199,6 +221,19 @@ SEM_CARD = {
     'persicos': {'lema': 'Persicus', 'classe': 'adjetivo (nome próprio)', 'g': 'nome',
                  'def': ['Persa, da Pérsia: para os romanos, a terra do luxo.'],
                  'wiki': 'https://en.wiktionary.org/wiki/Persicus#Latin'},
+    # leva 1a de 19/11/2026
+    'avite': {'lema': 'Avitus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Avito, o amigo a quem Marcial dedica o epigrama.']},
+    'fidentine': {'lema': 'Fidentinus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Fidentino, o plagiário que recitava os versos de Marcial como seus.']},
+    'diaulus': {'lema': 'Diaulus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Diaulo, o médico que virou coveiro nos epigramas de Marcial.']},
+    'fabulla': {'lema': 'Fabulla', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Fabula, a mulher vaidosa do epigrama.']},
+    'cinna': {'lema': 'Cinna', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Cina, o poeta invejoso do epigrama.']},
+    'thais': {'lema': 'Thais', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Taís, nome grego de mulher, comum nos epigramas.']},
+    'laecania': {'lema': 'Laecania', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Lecânia, a mulher de dentes postiços do epigrama.']},
+    'aemiliane': {'lema': 'Aemilianus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Emiliano, o pobre a quem o epigrama se dirige.']},
+    'vacerra': {'lema': 'Vacerra', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Vacerra, o que só admirava os poetas mortos.']},
+    'matthaeum': {'lema': 'Matthaeus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Mateus, o apóstolo e evangelista.']},
+    'hosanna': {'lema': 'hosanna', 'classe': 'interjeição', 'g': 'gramatical', 'def': ['Hosana: salva, por favor! Aclamação hebraica de louvor.'], 'wiki': 'https://en.wiktionary.org/wiki/hosanna#Latin'},
+    'sabaoth': {'lema': 'Sabaoth', 'classe': 'nome (hebraico)', 'g': 'gramatical', 'def': ['Dos exércitos: palavra hebraica, em «Senhor Deus Sabaoth», o Senhor dos exércitos (do céu).'], 'wiki': 'https://en.wiktionary.org/wiki/Sabaoth#Latin'},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')
@@ -247,7 +282,8 @@ def linha_de(trecho, cards, destinos):
     «palavras» (duas quando a palavra junta duas, como tecum = te + cum)."""
     fila = list(trecho['palavras'])
     p, pos = [], 0
-    for m in PALAVRA.finditer(trecho['la']):
+    ms = list(PALAVRA.finditer(trecho['la']))
+    for k, m in enumerate(ms):
         if m.start() > pos:
             p.append([trecho['la'][pos:m.start()], None])
         w = m.group(0)
@@ -259,7 +295,9 @@ def linha_de(trecho, cards, destinos):
             if not fila or len(partes) > 2:
                 raise SystemExit(f"{trecho['id']}: «{w}» não bate com a anotação")
             partes.append(fila.pop(0))
-        if partes[0]['w'].lower() == w.lower() and fila and fila[0]['w'].lower() == w.lower():
+        # a mesma palavra repetida no texto («Sanctus, Sanctus», «fui, fui») é uma entrada cada
+        prox = ms[k + 1].group(0).lower() if k + 1 < len(ms) else None
+        if partes[0]['w'].lower() == w.lower() and fila and fila[0]['w'].lower() == w.lower() and prox != w.lower():
             partes.append(fila.pop(0))
         ds = [destino_de(x, cards) if x.get('c') else sem_card(x) for x in partes]
         d = ds[0] if len(ds) == 1 else {'partes': ds}
