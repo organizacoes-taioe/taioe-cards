@@ -447,13 +447,115 @@ CORTES = {
         [(10, 14)],                  # nam vos mutastis et illas
         [(17, 26)],                  # primaque ab origine mundi ad mea perpetuum deducite tempora carmen.
     ],
+    # leva 2 de 19/11/2026 (LATIM.md §21): o resto da Missa
+    'missal-romano/confiteor': [
+        [(0, 5)],                    # Confiteor Deo omnipotenti et vobis, fratres,
+        [(6, 13)],                   # quia peccavi nimis cogitatione, verbo, opere et omissione:
+        [(14, 20)],                  # mea culpa, mea culpa, mea maxima culpa.
+        [(21, 26)],                  # Ideo precor beatam Mariam semper Virginem,
+        [(22, 22), (27, 33)],        # precor … omnes Angelos et Sanctos, et vos, fratres,
+        [(22, 22), (34, 40)],        # precor … orare pro me ad Dominum Deum nostrum.
+        [(41, 44)],                  # Misereatur nostri omnipotens Deus
+        [(45, 53)],                  # et, dimissis peccatis nostris, perducat nos ad vitam aeternam.
+    ],
+    'missal-romano/gloria-parte-1': [
+        [(0, 10)],                   # Gloria in excelsis Deo et in terra pax hominibus bonae voluntatis.
+        [(11, 18)],                  # Laudamus te, benedicimus te, adoramus te, glorificamus te,
+        [(19, 25)],                  # gratias agimus tibi propter magnam gloriam tuam,
+        [(26, 32)],                  # Domine Deus, Rex caelestis, Deus Pater omnipotens.
+    ],
+    'missal-romano/gloria-parte-2': [
+        [(0, 4)],                    # Domine Fili unigenite, Iesu Christe,
+        [(5, 10)],                   # Domine Deus, Agnus Dei, Filius Patris,
+        [(11, 16)],                  # qui tollis peccata mundi, miserere nobis;
+        [(17, 23)],                  # qui tollis peccata mundi, suscipe deprecationem nostram.
+        [(24, 30)],                  # Qui sedes ad dexteram Patris, miserere nobis.
+        [(31, 37)],                  # Quoniam tu solus Sanctus, tu solus Dominus,
+        [(38, 49)],                  # tu solus Altissimus, Iesu Christe, cum Sancto Spiritu: in gloria Dei Patris.
+    ],
+    'missal-romano/benedictus-es-domine-parte-1': [
+        [(0, 4)],                    # Benedictus es, Domine, Deus universi,
+        [(5, 10)],                   # quia de tua largitate accepimus panem,
+        [(11, 19)],                  # quem tibi offerimus, fructum terrae et operis manuum hominum:
+        [(20, 25)],                  # ex quo nobis fiet panis vitae.
+        [(26, 29)],                  # Benedictus Deus in saecula.
+        [(30, 39)],                  # Per huius aquae et vini mysterium eius efficiamur divinitatis consortes,
+        [(36, 36), (40, 46)],        # eius … qui humanitatis nostrae fieri dignatus est particeps.
+    ],
+    'missal-romano/benedictus-es-domine-parte-2': [
+        [(0, 4)],                    # (igual à parte 1)
+        [(5, 10)],                   # quia de tua largitate accepimus vinum,
+        [(11, 19)],                  # quod tibi offerimus, fructum vitis et operis manuum hominum:
+        [(20, 25)],                  # ex quo nobis fiet potus spiritalis.
+        [(26, 29)],                  # (igual à parte 1)
+        [(30, 40)],                  # In spiritu humilitatis et in animo contrito suscipiamur a te, Domine;
+        [(41, 49)],                  # et sic fiat sacrificium nostrum in conspectu tuo hodie,
+        [(43, 44), (50, 54)],        # fiat sacrificium … ut placeat tibi, Domine Deus.
+        [(55, 60)],                  # Lava me, Domine, ab iniquitate mea,
+        [(61, 66)],                  # et a peccato meo munda me.
+    ],
+    'missal-romano/orate-fratres': [
+        [(0, 1)],                    # Orate, fratres:
+        [(2, 12)],                   # ut meum ac vestrum sacrificium acceptabile fiat apud Deum Patrem omnipotentem.
+        [(13, 18)],                  # Suscipiat Dominus sacrificium de manibus tuis
+        [(13, 15), (19, 24)],        # Suscipiat Dominus sacrificium … ad laudem et gloriam nominis sui,
+        [(13, 15), (25, 32)],        # Suscipiat Dominus sacrificium … ad utilitatem quoque nostram totiusque Ecclesiae suae sanctae.
+    ],
+    'missal-romano/accipite': [
+        [(0, 5)],                    # Accipite et manducate ex hoc omnes:
+        [(6, 14)],                   # hoc est enim Corpus meum, quod pro vobis tradetur.
+        [(15, 20)],                  # Accipite et bibite ex eo omnes:
+        [(21, 30)],                  # hic est enim calix Sanguinis mei novi et aeterni testamenti,
+        [(24, 25), (31, 40)],        # calix Sanguinis … qui pro vobis et pro multis effundetur in remissionem peccatorum.
+        [(41, 45)],                  # Hoc facite in meam commemorationem.
+    ],
+    'missal-romano/mysterium-fidei': [
+        [(0, 1)],                    # Mysterium fidei.
+        [(2, 11)],                   # Mortem tuam annuntiamus, Domine, et tuam resurrectionem confitemur, donec venias.
+        [(12, 18)],                  # Quotiescumque manducamus panem hunc et calicem bibimus,
+        [(19, 24)],                  # mortem tuam annuntiamus, Domine, donec venias.
+        [(25, 28)],                  # Salvator mundi, salva nos,
+        [(29, 36)],                  # qui per crucem et resurrectionem tuam liberasti nos.
+    ],
+    'missal-romano/per-ipsum': [
+        [(0, 8)],                    # Per ipsum, et cum ipso, et in ipso, est
+        [(8, 12), (17, 20)],         # est tibi Deo Patri omnipotenti, … omnis honor et gloria
+        [(13, 24)],                  # in unitate Spiritus Sancti, omnis honor et gloria per omnia saecula saeculorum.
+    ],
+    'missal-romano/libera-nos': [
+        [(0, 8)],                    # Praeceptis salutaribus moniti, et divina institutione formati, audemus dicere:
+        [(9, 15)],                   # Libera nos, quaesumus, Domine, ab omnibus malis,
+        [(16, 21)],                  # da propitius pacem in diebus nostris,
+        [(22, 26), (30, 32)],        # ut, ope misericordiae tuae adiuti, … simus semper liberi
+        [(22, 22), (27, 37)],        # ut … et a peccato simus semper liberi et ab omni perturbatione securi:
+        [(38, 46)],                  # exspectantes beatam spem et adventum Salvatoris nostri Iesu Christi.
+        [(47, 56)],                  # Quia tuum est regnum, et potestas, et gloria in saecula.
+    ],
+    'missal-romano/pacem-relinquo-vobis': [
+        [(0, 6)],                    # Domine Iesu Christe, qui dixisti Apostolis tuis:
+        [(7, 13)],                   # Pacem relinquo vobis, pacem meam do vobis:
+        [(14, 21)],                  # ne respicias peccata nostra, sed fidem Ecclesiae tuae;
+        [(22, 29)],                  # eamque secundum voluntatem tuam pacificare et coadunare digneris.
+        [(30, 36)],                  # Qui vivis et regnas in saecula saeculorum.
+        [(38, 42)],                  # Pax Domini sit semper vobiscum.
+        [(43, 46)],                  # Et cum spiritu tuo. (já é card)
+        [(47, 49)],                  # Offerte vobis pacem.
+    ],
+    'missal-romano/ecce-agnus-dei': [
+        [(0, 7)],                    # Ecce Agnus Dei, ecce qui tollit peccata mundi.
+        [(8, 14)],                   # Beati qui ad cenam Agni vocati sunt.
+        [(15, 23)],                  # Domine, non sum dignus, ut intres sub tectum meum,
+        [(24, 31)],                  # sed tantum dic verbo, et sanabitur anima mea.
+        [(32, 33)],                  # Corpus Christi.
+    ],
 }
 
 FIM = '.;:?!'
+
 MAIUSCULA = {'la-p001', 'la-p012', 'la-p072', 'la-p043', 'la-p054'}
 
 # o arquivo dos trechos dos textos novos (os que ainda não têm card de trecho)
-ARQUIVO_NOVO = '40-trechos-9.json'
+ARQUIVO_NOVO = '43-trechos-10.json'
 
 
 def ler_baralho():

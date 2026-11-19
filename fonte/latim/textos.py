@@ -125,6 +125,19 @@ TEXTOS = {
     'cicero/quo-usque-tandem': {"titulo": "Quo usque tandem", "autor": "Cícero", "tipo": "prosa", "ordem": 68, "fonte": "Primeira Catilinária, 1–2 (começo)"},
     'seneca/ita-fac-mi-lucili': {"titulo": "Ita fac, mi Lucili", "autor": "Sêneca", "tipo": "prosa", "ordem": 69, "fonte": "Cartas a Lucílio, I,1 (começo)"},
     'ovidio/in-nova-fert-animus': {"titulo": "In nova fert animus", "autor": "Ovídio", "tipo": "poema", "ordem": 70, "fonte": "Metamorfoses, I,1–4"},
+    # leva 2 de 19/11/2026 (LATIM.md §21): o resto da Missa (só por escolha, sem Biblioteca)
+    'missal-romano/confiteor': {"titulo": "Confiteor", "autor": "Missal Romano", "tipo": "prosa", "ordem": 71, "fonte": "Ato penitencial da Missa", "biblioteca": None},
+    'missal-romano/gloria-parte-1': {"titulo": "Gloria in excelsis", "autor": "Missal Romano", "tipo": "prosa", "ordem": 72, "fonte": "Ordinário da Missa", "obra": "missal-romano/gloria", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'missal-romano/gloria-parte-2': {"titulo": "Gloria in excelsis", "autor": "Missal Romano", "tipo": "prosa", "ordem": 73, "fonte": "Ordinário da Missa", "obra": "missal-romano/gloria", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'missal-romano/benedictus-es-domine-parte-1': {"titulo": "Benedictus es, Domine", "autor": "Missal Romano", "tipo": "prosa", "ordem": 74, "fonte": "A apresentação dos dons", "obra": "missal-romano/benedictus-es-domine", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'missal-romano/benedictus-es-domine-parte-2': {"titulo": "Benedictus es, Domine", "autor": "Missal Romano", "tipo": "prosa", "ordem": 75, "fonte": "A apresentação dos dons", "obra": "missal-romano/benedictus-es-domine", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'missal-romano/orate-fratres': {"titulo": "Orate, fratres", "autor": "Missal Romano", "tipo": "prosa", "ordem": 76, "fonte": "A apresentação dos dons", "biblioteca": None},
+    'missal-romano/accipite': {"titulo": "Accipite et manducate", "autor": "Missal Romano", "tipo": "prosa", "ordem": 77, "fonte": "A consagração (igual em todas as Orações Eucarísticas)", "biblioteca": None},
+    'missal-romano/mysterium-fidei': {"titulo": "Mysterium fidei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 78, "fonte": "A aclamação depois da consagração", "biblioteca": None},
+    'missal-romano/per-ipsum': {"titulo": "Per ipsum", "autor": "Missal Romano", "tipo": "prosa", "ordem": 79, "fonte": "A doxologia da Oração Eucarística", "biblioteca": None},
+    'missal-romano/libera-nos': {"titulo": "Libera nos", "autor": "Missal Romano", "tipo": "prosa", "ordem": 80, "fonte": "O rito da comunhão", "biblioteca": None},
+    'missal-romano/pacem-relinquo-vobis': {"titulo": "Pacem relinquo vobis", "autor": "Missal Romano", "tipo": "prosa", "ordem": 81, "fonte": "O rito da paz", "biblioteca": None},
+    'missal-romano/ecce-agnus-dei': {"titulo": "Ecce Agnus Dei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 82, "fonte": "O rito da comunhão", "biblioteca": None},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -256,6 +269,8 @@ SEM_CARD = {
     'galli': {'lema': 'Galli', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Os gauleses: o nome romano dos celtas da Gália.']},
     'catilina': {'lema': 'Catilina', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Catilina, o senador que conspirou contra Roma em 63 a.C.']},
     'lucili': {'lema': 'Lucilius', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Lucílio, o amigo a quem Sêneca escreve as cartas.']},
+    # leva 2 de 19/11/2026
+    'mariam': {'lema': 'Maria', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Maria, a mãe de Jesus.'], 'wiki': 'https://en.wiktionary.org/wiki/Maria#Latin'},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')
