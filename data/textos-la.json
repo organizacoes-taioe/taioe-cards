@@ -1,7 +1,7 @@
 {
  "versao": 3,
  "idioma": "la",
- "total": 37,
+ "total": 58,
  "textos": [
   {
    "id": "oracoes/gloria-patri",
@@ -33733,6 +33733,9699 @@
      "funcao": "passa bem: adeus",
      "wiki": "https://en.wiktionary.org/wiki/valeo#Latin",
      "card": "la-p410"
+    }
+   }
+  },
+  {
+   "id": "marcial/sunt-bona",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Sunt bona",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/sunt-bona/",
+   "blocos": [
+    [
+     {
+      "t": "Sunt bona, sunt quaedam mediocria, sunt mala plura",
+      "p": [
+       [
+        "Sunt",
+        "sunt"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bona",
+        "bona"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "sunt",
+        "sunt"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quaedam",
+        "quaedam"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mediocria",
+        "mediocria"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "sunt",
+        "sunt"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mala",
+        "mala"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "plura",
+        "plura"
+       ]
+      ],
+      "requer": [
+       "la-p003",
+       "la-v013",
+       "la-p006",
+       "la-v045",
+       "la-p880",
+       "la-v1394",
+       "la-p881",
+       "la-v1395",
+       "la-p675",
+       "la-v1390",
+       "la-p261",
+       "la-v1371"
+      ]
+     },
+     {
+      "t": "quae legis hic: aliter non fit, Avite, liber.",
+      "p": [
+       [
+        "quae",
+        "quae"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "legis",
+        "legis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "hic",
+        "hic"
+       ],
+       [
+        ": ",
+        null
+       ],
+       [
+        "aliter",
+        "aliter"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fit",
+        "fit"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Avite",
+        "avite"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "liber",
+        "liber"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p064",
+       "la-v172",
+       "la-p033",
+       "la-v1357",
+       "la-p882",
+       "la-p883",
+       "la-p066",
+       "la-p069",
+       "la-v779",
+       "la-p884"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p003",
+    "la-v013",
+    "la-p006",
+    "la-v045",
+    "la-p880",
+    "la-v1394",
+    "la-p881",
+    "la-v1395",
+    "la-p675",
+    "la-v1390",
+    "la-p261",
+    "la-v1371",
+    "la-p064",
+    "la-v172",
+    "la-p033",
+    "la-v1357",
+    "la-p882",
+    "la-p883",
+    "la-p066",
+    "la-p069",
+    "la-v779",
+    "la-p884"
+   ],
+   "destinos": {
+    "sunt": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "funcao": "há",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "bona": {
+     "lema": "bonus",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro plural",
+     "funcao": "sujeito de sunt: coisas boas",
+     "wiki": "https://en.wiktionary.org/wiki/bonus#Latin",
+     "card": "la-p006"
+    },
+    "quaedam": {
+     "lema": "quidam",
+     "classe": "pronome",
+     "forma": "nominativo neutro plural",
+     "funcao": "concorda com mediocria: algumas",
+     "wiki": "https://en.wiktionary.org/wiki/quidam#Latin",
+     "card": "la-p880"
+    },
+    "mediocria": {
+     "lema": "mediocris",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro plural",
+     "funcao": "sujeito de sunt: coisas medianas",
+     "wiki": "https://en.wiktionary.org/wiki/mediocris#Latin",
+     "card": "la-p881"
+    },
+    "mala": {
+     "lema": "malus",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro plural",
+     "funcao": "sujeito de sunt: coisas ruins",
+     "wiki": "https://en.wiktionary.org/wiki/malus#Latin",
+     "card": "la-p675"
+    },
+    "plura": {
+     "lema": "plus",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro plural",
+     "funcao": "concorda com mala: em maior número",
+     "wiki": "https://en.wiktionary.org/wiki/plus#Latin",
+     "card": "la-p261"
+    },
+    "quae": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "acusativo neutro plural",
+     "funcao": "objeto de legis: as coisas que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "legis": {
+     "lema": "lego",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "lês",
+     "wiki": "https://en.wiktionary.org/wiki/lego#Latin",
+     "card": "la-p033"
+    },
+    "hic": {
+     "lema": "hic",
+     "classe": "advérbio",
+     "funcao": "aqui",
+     "wiki": "https://en.wiktionary.org/wiki/hic#Latin",
+     "card": "la-p882"
+    },
+    "aliter": {
+     "lema": "aliter",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/aliter#Latin",
+     "card": "la-p883"
+    },
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "fit": {
+     "lema": "fio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "se faz",
+     "wiki": "https://en.wiktionary.org/wiki/fio#Latin",
+     "card": "la-p069"
+    },
+    "avite": {
+     "lema": "Avitus",
+     "classe": "nome próprio",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "def": [
+      "Avito, o amigo a quem Marcial dedica o epigrama."
+     ],
+     "g": "nome"
+    },
+    "liber": {
+     "lema": "liber",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de fit: um livro",
+     "wiki": "https://en.wiktionary.org/wiki/liber#Latin",
+     "card": "la-p884"
+    }
+   }
+  },
+  {
+   "id": "marcial/quem-recitas",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Quem recitas",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/quem-recitas/",
+   "blocos": [
+    [
+     {
+      "t": "Quem recitas meus est, o Fidentine, libellus:",
+      "p": [
+       [
+        "Quem",
+        "quem"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "recitas",
+        "recitas"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "meus",
+        "meus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "o",
+        "o"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Fidentine",
+        "fidentine"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "libellus",
+        "libellus"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p064",
+       "la-v176",
+       "la-p885",
+       "la-v1396",
+       "la-p013",
+       "la-p003",
+       "la-v010",
+       "la-p365",
+       "la-p886"
+      ]
+     },
+     {
+      "t": "sed male cum recitas, incipit esse tuus.",
+      "p": [
+       [
+        "sed",
+        "sed"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "male",
+        "male"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cum",
+        "cum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "recitas",
+        "recitas#2"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "incipit",
+        "incipit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "esse",
+        "esse"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tuus",
+        "tuus"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p107",
+       "la-p887",
+       "la-p618",
+       "la-p885",
+       "la-v1396",
+       "la-p353",
+       "la-v1375",
+       "la-p003",
+       "la-v038",
+       "la-p055"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p064",
+    "la-v176",
+    "la-p885",
+    "la-v1396",
+    "la-p013",
+    "la-p003",
+    "la-v010",
+    "la-p365",
+    "la-p886",
+    "la-p107",
+    "la-p887",
+    "la-p618",
+    "la-p353",
+    "la-v1375",
+    "la-v038",
+    "la-p055"
+   ],
+   "destinos": {
+    "quem": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "acusativo masculino singular",
+     "funcao": "objeto de recitas: o que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "recitas": {
+     "lema": "recito",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "recitas",
+     "wiki": "https://en.wiktionary.org/wiki/recito#Latin",
+     "card": "la-p885"
+    },
+    "meus": {
+     "lema": "meus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "concorda com libellus: meu",
+     "wiki": "https://en.wiktionary.org/wiki/meus#Latin",
+     "card": "la-p013"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "o": {
+     "lema": "o",
+     "classe": "interjeição",
+     "wiki": "https://en.wiktionary.org/wiki/o#Latin",
+     "card": "la-p365"
+    },
+    "fidentine": {
+     "lema": "Fidentinus",
+     "classe": "nome próprio",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "def": [
+      "Fidentino, o plagiário que recitava os versos de Marcial como seus."
+     ],
+     "g": "nome"
+    },
+    "libellus": {
+     "lema": "libellus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de est: o livrinho",
+     "wiki": "https://en.wiktionary.org/wiki/libellus#Latin",
+     "card": "la-p886"
+    },
+    "sed": {
+     "lema": "sed",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/sed#Latin",
+     "card": "la-p107"
+    },
+    "male": {
+     "lema": "male",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/male#Latin",
+     "card": "la-p887"
+    },
+    "cum": {
+     "lema": "cum",
+     "classe": "conjunção",
+     "funcao": "conjunção: quando",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+     "card": "la-p618"
+    },
+    "recitas#2": {
+     "lema": "recito",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "depois de cum: recitas",
+     "wiki": "https://en.wiktionary.org/wiki/recito#Latin",
+     "card": "la-p885"
+    },
+    "incipit": {
+     "lema": "incipio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "começa (o livrinho)",
+     "wiki": "https://en.wiktionary.org/wiki/incipio#Latin",
+     "card": "la-p353"
+    },
+    "esse": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de incipit: ser",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "tuus": {
+     "lema": "tuus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo do livrinho: teu",
+     "wiki": "https://en.wiktionary.org/wiki/tuus#Latin",
+     "card": "la-p055"
+    }
+   }
+  },
+  {
+   "id": "marcial/nuper-erat-medicus",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Nuper erat medicus",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/nuper-erat-medicus/",
+   "blocos": [
+    [
+     {
+      "t": "Nuper erat medicus, nunc est vispillo Diaulus:",
+      "p": [
+       [
+        "Nuper",
+        "nuper"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "erat",
+        "erat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "medicus",
+        "medicus"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "nunc",
+        "nunc"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vispillo",
+        "vispillo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Diaulus",
+        "diaulus"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p888",
+       "la-p003",
+       "la-v016",
+       "la-v010",
+       "la-p889",
+       "la-p086",
+       "la-p890"
+      ]
+     },
+     {
+      "t": "quod vispillo facit, fecerat et medicus.",
+      "p": [
+       [
+        "quod",
+        "quod"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vispillo",
+        "vispillo#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "facit",
+        "facit"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "fecerat",
+        "fecerat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "medicus",
+        "medicus#2"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p064",
+       "la-v173",
+       "la-p890",
+       "la-p165",
+       "la-v1365",
+       "la-v1366",
+       "la-p009",
+       "la-p889"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p888",
+    "la-p003",
+    "la-v016",
+    "la-v010",
+    "la-p889",
+    "la-p086",
+    "la-p890",
+    "la-p064",
+    "la-v173",
+    "la-p165",
+    "la-v1365",
+    "la-v1366",
+    "la-p009"
+   ],
+   "destinos": {
+    "nuper": {
+     "lema": "nuper",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/nuper#Latin",
+     "card": "la-p888"
+    },
+    "erat": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "imperfeito do indicativo, 3ª pessoa do singular",
+     "funcao": "era",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "medicus": {
+     "lema": "medicus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "predicativo de erat: médico",
+     "wiki": "https://en.wiktionary.org/wiki/medicus#Latin",
+     "card": "la-p889"
+    },
+    "nunc": {
+     "lema": "nunc",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/nunc#Latin",
+     "card": "la-p086"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "é",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "vispillo": {
+     "lema": "vispillo",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "predicativo de est: coveiro",
+     "wiki": "https://en.wiktionary.org/wiki/vispillo#Latin",
+     "card": "la-p890"
+    },
+    "diaulus": {
+     "lema": "Diaulus",
+     "classe": "nome próprio",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de erat e de est",
+     "def": [
+      "Diaulo, o médico que virou coveiro nos epigramas de Marcial."
+     ],
+     "g": "nome"
+    },
+    "quod": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "acusativo neutro singular",
+     "funcao": "objeto de facit e de fecerat: o que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "vispillo#2": {
+     "lema": "vispillo",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de facit: o coveiro",
+     "wiki": "https://en.wiktionary.org/wiki/vispillo#Latin",
+     "card": "la-p890"
+    },
+    "facit": {
+     "lema": "facio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "faz",
+     "wiki": "https://en.wiktionary.org/wiki/facio#Latin",
+     "card": "la-p165"
+    },
+    "fecerat": {
+     "lema": "facio",
+     "classe": "verbo",
+     "forma": "mais-que-perfeito do indicativo, 3ª pessoa do singular",
+     "funcao": "tinha feito",
+     "wiki": "https://en.wiktionary.org/wiki/facio#Latin",
+     "card": "la-p165"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "funcao": "também",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "medicus#2": {
+     "lema": "medicus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de fecerat: o médico",
+     "wiki": "https://en.wiktionary.org/wiki/medicus#Latin",
+     "card": "la-p889"
+    }
+   }
+  },
+  {
+   "id": "marcial/bella-es",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Bella es",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/bella-es/",
+   "blocos": [
+    [
+     {
+      "t": "Bella es, novimus, et puella, verum est,",
+      "p": [
+       [
+        "Bella",
+        "bella"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "es",
+        "es"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "novimus",
+        "novimus"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "puella",
+        "puella"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "verum",
+        "verum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p891",
+       "la-v1397",
+       "la-p003",
+       "la-v009",
+       "la-v010",
+       "la-p892",
+       "la-v1398",
+       "la-p009",
+       "la-p893",
+       "la-p459",
+       "la-v988"
+      ]
+     },
+     {
+      "t": "et dives, quis enim potest negare?",
+      "p": [
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dives",
+        "dives"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "quis",
+        "quis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "enim",
+        "enim"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "potest",
+        "potest"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "negare",
+        "negare"
+       ],
+       [
+        "?",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p009",
+       "la-p894",
+       "la-p236",
+       "la-v516",
+       "la-p895",
+       "la-p121",
+       "la-v268",
+       "la-p896",
+       "la-v1400"
+      ]
+     },
+     {
+      "t": "Sed cum te nimium, Fabulla, laudas,",
+      "p": [
+       [
+        "Sed",
+        "sed"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cum",
+        "cum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "te",
+        "te"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nimium",
+        "nimium"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Fabulla",
+        "fabulla"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "laudas",
+        "laudas"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p107",
+       "la-p618",
+       "la-p007",
+       "la-v050",
+       "la-p897",
+       "la-p018",
+       "la-v1355"
+      ]
+     },
+     {
+      "t": "nec dives neque bella nec puella es.",
+      "p": [
+       [
+        "nec",
+        "nec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dives",
+        "dives"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "neque",
+        "neque"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bella",
+        "bella"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nec",
+        "nec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "puella",
+        "puella"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "es",
+        "es"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p120",
+       "la-v556",
+       "la-p894",
+       "la-p891",
+       "la-v1397",
+       "la-p893",
+       "la-p003",
+       "la-v009"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p891",
+    "la-v1397",
+    "la-p003",
+    "la-v009",
+    "la-v010",
+    "la-p892",
+    "la-v1398",
+    "la-p009",
+    "la-p893",
+    "la-p459",
+    "la-v988",
+    "la-p894",
+    "la-p236",
+    "la-v516",
+    "la-p895",
+    "la-p121",
+    "la-v268",
+    "la-p896",
+    "la-v1400",
+    "la-p107",
+    "la-p618",
+    "la-p007",
+    "la-v050",
+    "la-p897",
+    "la-p018",
+    "la-v1355",
+    "la-p120",
+    "la-v556"
+   ],
+   "destinos": {
+    "bella": {
+     "lema": "bellus",
+     "classe": "adjetivo",
+     "forma": "nominativo feminino singular",
+     "funcao": "predicativo de es: bonita",
+     "wiki": "https://en.wiktionary.org/wiki/bellus#Latin",
+     "card": "la-p891"
+    },
+    "es": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "és",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "novimus": {
+     "lema": "nosco",
+     "classe": "verbo",
+     "forma": "perfeito do indicativo, 1ª pessoa do plural",
+     "funcao": "perfeito com sentido de presente: sabemos",
+     "wiki": "https://en.wiktionary.org/wiki/nosco#Latin",
+     "card": "la-p892"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "puella": {
+     "lema": "puella",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "predicativo de es: moça",
+     "wiki": "https://en.wiktionary.org/wiki/puella#Latin",
+     "card": "la-p893"
+    },
+    "verum": {
+     "lema": "verus",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro singular",
+     "funcao": "predicativo de est: verdade",
+     "wiki": "https://en.wiktionary.org/wiki/verus#Latin",
+     "card": "la-p459"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "dives": {
+     "lema": "dives",
+     "classe": "adjetivo",
+     "forma": "nominativo feminino singular",
+     "funcao": "predicativo de es: rica",
+     "wiki": "https://en.wiktionary.org/wiki/dives#Latin",
+     "card": "la-p894"
+    },
+    "quis": {
+     "lema": "quis",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de potest: quem",
+     "wiki": "https://en.wiktionary.org/wiki/quis#Latin",
+     "card": "la-p236"
+    },
+    "enim": {
+     "lema": "enim",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/enim#Latin",
+     "card": "la-p895"
+    },
+    "potest": {
+     "lema": "possum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "pode",
+     "wiki": "https://en.wiktionary.org/wiki/possum#Latin",
+     "card": "la-p121"
+    },
+    "negare": {
+     "lema": "nego",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de potest: negar",
+     "wiki": "https://en.wiktionary.org/wiki/nego#Latin",
+     "card": "la-p896"
+    },
+    "sed": {
+     "lema": "sed",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/sed#Latin",
+     "card": "la-p107"
+    },
+    "cum": {
+     "lema": "cum",
+     "classe": "conjunção",
+     "funcao": "conjunção: quando",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+     "card": "la-p618"
+    },
+    "te": {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "acusativo singular",
+     "funcao": "objeto de laudas: a ti mesma",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+     "card": "la-p007"
+    },
+    "nimium": {
+     "lema": "nimium",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/nimium#Latin",
+     "card": "la-p897"
+    },
+    "fabulla": {
+     "lema": "Fabulla",
+     "classe": "nome próprio",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "def": [
+      "Fabula, a mulher vaidosa do epigrama."
+     ],
+     "g": "nome"
+    },
+    "laudas": {
+     "lema": "laudo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "depois de cum: elogias",
+     "wiki": "https://en.wiktionary.org/wiki/laudo#Latin",
+     "card": "la-p018"
+    },
+    "nec": {
+     "lema": "nec",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/nec#Latin",
+     "card": "la-p120"
+    },
+    "neque": {
+     "lema": "nec",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/nec#Latin",
+     "card": "la-p120"
+    }
+   }
+  },
+  {
+   "id": "marcial/versiculos-in-me",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Versiculos in me",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/versiculos-in-me/",
+   "blocos": [
+    [
+     {
+      "t": "Versiculos in me narratur scribere Cinna.",
+      "p": [
+       [
+        "Versiculos",
+        "versiculos"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "in",
+        "in"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "me",
+        "me"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "narratur",
+        "narratur"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "scribere",
+        "scribere"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Cinna",
+        "cinna"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p898",
+       "la-v1401",
+       "la-p022",
+       "la-p004",
+       "la-v043",
+       "la-p899",
+       "la-v1402",
+       "la-p900",
+       "la-v1403"
+      ]
+     },
+     {
+      "t": "Non scribit, cuius carmina nemo legit.",
+      "p": [
+       [
+        "Non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "scribit",
+        "scribit"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "cuius",
+        "cuius"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "carmina",
+        "carmina"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nemo",
+        "nemo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "legit",
+        "legit"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p066",
+       "la-p900",
+       "la-v1404",
+       "la-p064",
+       "la-v174",
+       "la-p317",
+       "la-v660",
+       "la-p901",
+       "la-p033",
+       "la-v1358"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p898",
+    "la-v1401",
+    "la-p022",
+    "la-p004",
+    "la-v043",
+    "la-p899",
+    "la-v1402",
+    "la-p900",
+    "la-v1403",
+    "la-p066",
+    "la-v1404",
+    "la-p064",
+    "la-v174",
+    "la-p317",
+    "la-v660",
+    "la-p901",
+    "la-p033",
+    "la-v1358"
+   ],
+   "destinos": {
+    "versiculos": {
+     "lema": "versiculus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de scribere: versinhos",
+     "wiki": "https://en.wiktionary.org/wiki/versiculus#Latin",
+     "card": "la-p898"
+    },
+    "in": {
+     "lema": "in",
+     "classe": "preposição",
+     "forma": "preposição com acusativo",
+     "wiki": "https://en.wiktionary.org/wiki/in#Latin",
+     "card": "la-p022"
+    },
+    "me": {
+     "lema": "ego",
+     "classe": "pronome",
+     "forma": "acusativo singular",
+     "funcao": "depois de in: contra mim",
+     "wiki": "https://en.wiktionary.org/wiki/ego#Latin",
+     "card": "la-p004"
+    },
+    "narratur": {
+     "lema": "narro",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular, voz passiva",
+     "funcao": "passivo pessoal: diz-se que (ele)",
+     "wiki": "https://en.wiktionary.org/wiki/narro#Latin",
+     "card": "la-p899"
+    },
+    "scribere": {
+     "lema": "scribo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de narratur: escrever",
+     "wiki": "https://en.wiktionary.org/wiki/scribo#Latin",
+     "card": "la-p900"
+    },
+    "cinna": {
+     "lema": "Cinna",
+     "classe": "nome próprio",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de narratur",
+     "def": [
+      "Cina, o poeta invejoso do epigrama."
+     ],
+     "g": "nome"
+    },
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "scribit": {
+     "lema": "scribo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "escreve",
+     "wiki": "https://en.wiktionary.org/wiki/scribo#Latin",
+     "card": "la-p900"
+    },
+    "cuius": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "genitivo masculino singular",
+     "funcao": "relativo, de quem são os poemas: cujos",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "carmina": {
+     "lema": "carmen",
+     "classe": "substantivo neutro",
+     "forma": "acusativo plural",
+     "funcao": "objeto de legit: os poemas",
+     "wiki": "https://en.wiktionary.org/wiki/carmen#Latin",
+     "card": "la-p317"
+    },
+    "nemo": {
+     "lema": "nemo",
+     "classe": "pronome",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de legit: ninguém",
+     "wiki": "https://en.wiktionary.org/wiki/nemo#Latin",
+     "card": "la-p901"
+    },
+    "legit": {
+     "lema": "lego",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "lê",
+     "wiki": "https://en.wiktionary.org/wiki/lego#Latin",
+     "card": "la-p033"
+    }
+   }
+  },
+  {
+   "id": "marcial/thais-habet",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Thais habet",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/thais-habet/",
+   "blocos": [
+    [
+     {
+      "t": "Thais habet nigros, niveos Laecania dentes.",
+      "p": [
+       [
+        "Thais",
+        "thais"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "habet",
+        "habet"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nigros",
+        "nigros"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "niveos",
+        "niveos"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Laecania",
+        "laecania"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dentes",
+        "dentes"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p504",
+       "la-v1384",
+       "la-p902",
+       "la-v1405",
+       "la-p903",
+       "la-v1406",
+       "la-p904",
+       "la-v1407"
+      ]
+     },
+     {
+      "t": "Quae ratio est? Emptos haec habet, illa suos.",
+      "p": [
+       [
+        "Quae",
+        "quae"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ratio",
+        "ratio"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        "? ",
+        null
+       ],
+       [
+        "Emptos",
+        "emptos"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "haec",
+        "haec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "habet",
+        "habet"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "illa",
+        "illa"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "suos",
+        "suos"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p064",
+       "la-v172",
+       "la-p905",
+       "la-p003",
+       "la-v010",
+       "la-p906",
+       "la-v1408",
+       "la-p124",
+       "la-v302",
+       "la-p504",
+       "la-v1384",
+       "la-p215",
+       "la-v446",
+       "la-p536",
+       "la-v1386"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p504",
+    "la-v1384",
+    "la-p902",
+    "la-v1405",
+    "la-p903",
+    "la-v1406",
+    "la-p904",
+    "la-v1407",
+    "la-p064",
+    "la-v172",
+    "la-p905",
+    "la-p003",
+    "la-v010",
+    "la-p906",
+    "la-v1408",
+    "la-p124",
+    "la-v302",
+    "la-p215",
+    "la-v446",
+    "la-p536",
+    "la-v1386"
+   ],
+   "destinos": {
+    "thais": {
+     "lema": "Thais",
+     "classe": "nome próprio",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de habet",
+     "def": [
+      "Taís, nome grego de mulher, comum nos epigramas."
+     ],
+     "g": "nome"
+    },
+    "habet": {
+     "lema": "habeo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "tem",
+     "wiki": "https://en.wiktionary.org/wiki/habeo#Latin",
+     "card": "la-p504"
+    },
+    "nigros": {
+     "lema": "niger",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino plural",
+     "funcao": "concorda com dentes: pretos",
+     "wiki": "https://en.wiktionary.org/wiki/niger#Latin",
+     "card": "la-p902"
+    },
+    "niveos": {
+     "lema": "niveus",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino plural",
+     "funcao": "concorda com dentes: brancos como a neve",
+     "wiki": "https://en.wiktionary.org/wiki/niveus#Latin",
+     "card": "la-p903"
+    },
+    "laecania": {
+     "lema": "Laecania",
+     "classe": "nome próprio",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de habet, subentendido",
+     "def": [
+      "Lecânia, a mulher de dentes postiços do epigrama."
+     ],
+     "g": "nome"
+    },
+    "dentes": {
+     "lema": "dens",
+     "classe": "substantivo masculino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de habet: os dentes",
+     "wiki": "https://en.wiktionary.org/wiki/dens#Latin",
+     "card": "la-p904"
+    },
+    "quae": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo feminino singular",
+     "funcao": "interrogativo, concorda com ratio: qual",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "ratio": {
+     "lema": "ratio",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de est: a razão",
+     "wiki": "https://en.wiktionary.org/wiki/ratio#Latin",
+     "card": "la-p905"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "emptos": {
+     "lema": "emo",
+     "classe": "verbo",
+     "forma": "particípio perfeito, acusativo masculino plural",
+     "funcao": "concorda com os dentes, subentendidos: comprados",
+     "wiki": "https://en.wiktionary.org/wiki/emo#Latin",
+     "card": "la-p906"
+    },
+    "haec": {
+     "lema": "hic",
+     "classe": "pronome",
+     "forma": "nominativo feminino singular",
+     "funcao": "sujeito de habet: esta (Lecânia, a mais perto)",
+     "wiki": "https://en.wiktionary.org/wiki/hic#Latin",
+     "card": "la-p124"
+    },
+    "illa": {
+     "lema": "ille",
+     "classe": "pronome",
+     "forma": "nominativo feminino singular",
+     "funcao": "sujeito de habet, subentendido: aquela (Taís)",
+     "wiki": "https://en.wiktionary.org/wiki/ille#Latin",
+     "card": "la-p215"
+    },
+    "suos": {
+     "lema": "suus",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino plural",
+     "funcao": "concorda com os dentes, subentendidos: os seus",
+     "wiki": "https://en.wiktionary.org/wiki/suus#Latin",
+     "card": "la-p536"
+    }
+   }
+  },
+  {
+   "id": "marcial/semper-pauper-eris",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Semper pauper eris",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/semper-pauper-eris/",
+   "blocos": [
+    [
+     {
+      "t": "Semper pauper eris, si pauper es, Aemiliane.",
+      "p": [
+       [
+        "Semper",
+        "semper"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pauper",
+        "pauper"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "eris",
+        "eris"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "si",
+        "si"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pauper",
+        "pauper#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "es",
+        "es"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Aemiliane",
+        "aemiliane"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p087",
+       "la-p309",
+       "la-p003",
+       "la-v021",
+       "la-v009",
+       "la-p154"
+      ]
+     },
+     {
+      "t": "Dantur opes nullis nunc nisi divitibus.",
+      "p": [
+       [
+        "Dantur",
+        "dantur"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "opes",
+        "opes"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nullis",
+        "nullis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nunc",
+        "nunc"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nisi",
+        "nisi"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "divitibus",
+        "divitibus"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p099",
+       "la-v1363",
+       "la-p907",
+       "la-v1409",
+       "la-p908",
+       "la-v1411",
+       "la-p086",
+       "la-p909",
+       "la-p894",
+       "la-v1399"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p087",
+    "la-p309",
+    "la-p003",
+    "la-v021",
+    "la-v009",
+    "la-p154",
+    "la-p099",
+    "la-v1363",
+    "la-p907",
+    "la-v1409",
+    "la-p908",
+    "la-v1411",
+    "la-p086",
+    "la-p909",
+    "la-p894",
+    "la-v1399"
+   ],
+   "destinos": {
+    "semper": {
+     "lema": "semper",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/semper#Latin",
+     "card": "la-p087"
+    },
+    "pauper": {
+     "lema": "pauper",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo de eris: pobre",
+     "wiki": "https://en.wiktionary.org/wiki/pauper#Latin",
+     "card": "la-p309"
+    },
+    "eris": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "futuro do indicativo, 2ª pessoa do singular",
+     "funcao": "serás",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "si": {
+     "lema": "si",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/si#Latin",
+     "card": "la-p154"
+    },
+    "pauper#2": {
+     "lema": "pauper",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo de es: pobre",
+     "wiki": "https://en.wiktionary.org/wiki/pauper#Latin",
+     "card": "la-p309"
+    },
+    "es": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "és",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "aemiliane": {
+     "lema": "Aemilianus",
+     "classe": "nome próprio",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "def": [
+      "Emiliano, o pobre a quem o epigrama se dirige."
+     ],
+     "g": "nome"
+    },
+    "dantur": {
+     "lema": "do",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural, voz passiva",
+     "funcao": "são dadas",
+     "wiki": "https://en.wiktionary.org/wiki/do#Latin",
+     "card": "la-p099"
+    },
+    "opes": {
+     "lema": "ops",
+     "classe": "substantivo",
+     "forma": "nominativo plural",
+     "funcao": "sujeito de dantur: as riquezas",
+     "wiki": "https://en.wiktionary.org/wiki/ops#Latin",
+     "card": "la-p907"
+    },
+    "nullis": {
+     "lema": "nullus",
+     "classe": "adjetivo",
+     "forma": "dativo masculino plural",
+     "funcao": "a quem: a nenhuns",
+     "wiki": "https://en.wiktionary.org/wiki/nullus#Latin",
+     "card": "la-p908"
+    },
+    "nunc": {
+     "lema": "nunc",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/nunc#Latin",
+     "card": "la-p086"
+    },
+    "nisi": {
+     "lema": "nisi",
+     "classe": "conjunção",
+     "funcao": "senão",
+     "wiki": "https://en.wiktionary.org/wiki/nisi#Latin",
+     "card": "la-p909"
+    },
+    "divitibus": {
+     "lema": "dives",
+     "classe": "adjetivo",
+     "forma": "dativo masculino plural",
+     "funcao": "a quem: aos ricos",
+     "wiki": "https://en.wiktionary.org/wiki/dives#Latin",
+     "card": "la-p894"
+    }
+   }
+  },
+  {
+   "id": "marcial/miraris-veteres",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Miraris veteres",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/miraris-veteres/",
+   "blocos": [
+    [
+     {
+      "t": "Miraris veteres, Vacerra, solos,",
+      "p": [
+       [
+        "Miraris",
+        "miraris"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "veteres",
+        "veteres"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Vacerra",
+        "vacerra"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "solos",
+        "solos"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p395",
+       "la-v1379",
+       "la-p910",
+       "la-v1412",
+       "la-p492",
+       "la-v1381"
+      ]
+     },
+     {
+      "t": "nec laudas nisi mortuos poetas.",
+      "p": [
+       [
+        "nec",
+        "nec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "laudas",
+        "laudas"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nisi",
+        "nisi"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mortuos",
+        "mortuos"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "poetas",
+        "poetas"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p120",
+       "la-p018",
+       "la-v1355",
+       "la-p909",
+       "la-p434",
+       "la-v946",
+       "la-p911",
+       "la-v1413"
+      ]
+     },
+     {
+      "t": "Ignoscas petimus, Vacerra: tanti",
+      "p": [
+       [
+        "Ignoscas",
+        "ignoscas"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "petimus",
+        "petimus"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Vacerra",
+        "vacerra"
+       ],
+       [
+        ": ",
+        null
+       ],
+       [
+        "tanti",
+        "tanti"
+       ]
+      ],
+      "requer": [
+       "la-p912",
+       "la-v1414",
+       "la-p373",
+       "la-v1377",
+       "la-p247",
+       "la-v1369"
+      ]
+     },
+     {
+      "t": "non est, ut placeam tibi, perire.",
+      "p": [
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "ut",
+        "ut"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "placeam",
+        "placeam"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tibi",
+        "tibi"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "perire",
+        "perire"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p066",
+       "la-p003",
+       "la-v010",
+       "la-p257",
+       "la-p913",
+       "la-v1415",
+       "la-p007",
+       "la-v049",
+       "la-p617",
+       "la-v1389"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p395",
+    "la-v1379",
+    "la-p910",
+    "la-v1412",
+    "la-p492",
+    "la-v1381",
+    "la-p120",
+    "la-p018",
+    "la-v1355",
+    "la-p909",
+    "la-p434",
+    "la-v946",
+    "la-p911",
+    "la-v1413",
+    "la-p912",
+    "la-v1414",
+    "la-p373",
+    "la-v1377",
+    "la-p247",
+    "la-v1369",
+    "la-p066",
+    "la-p003",
+    "la-v010",
+    "la-p257",
+    "la-p913",
+    "la-v1415",
+    "la-p007",
+    "la-v049",
+    "la-p617",
+    "la-v1389"
+   ],
+   "destinos": {
+    "miraris": {
+     "lema": "miror",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "depoente: admiras",
+     "wiki": "https://en.wiktionary.org/wiki/miror#Latin",
+     "card": "la-p395"
+    },
+    "veteres": {
+     "lema": "vetus",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino plural",
+     "funcao": "objeto de miraris: os antigos",
+     "wiki": "https://en.wiktionary.org/wiki/vetus#Latin",
+     "card": "la-p910"
+    },
+    "vacerra": {
+     "lema": "Vacerra",
+     "classe": "nome próprio",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "def": [
+      "Vacerra, o que só admirava os poetas mortos."
+     ],
+     "g": "nome"
+    },
+    "solos": {
+     "lema": "solus",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino plural",
+     "funcao": "concorda com veteres: só",
+     "wiki": "https://en.wiktionary.org/wiki/solus#Latin",
+     "card": "la-p492"
+    },
+    "nec": {
+     "lema": "nec",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/nec#Latin",
+     "card": "la-p120"
+    },
+    "laudas": {
+     "lema": "laudo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "elogias",
+     "wiki": "https://en.wiktionary.org/wiki/laudo#Latin",
+     "card": "la-p018"
+    },
+    "nisi": {
+     "lema": "nisi",
+     "classe": "conjunção",
+     "funcao": "senão",
+     "wiki": "https://en.wiktionary.org/wiki/nisi#Latin",
+     "card": "la-p909"
+    },
+    "mortuos": {
+     "lema": "mortuus",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino plural",
+     "funcao": "concorda com poetas: mortos",
+     "wiki": "https://en.wiktionary.org/wiki/mortuus#Latin",
+     "card": "la-p434"
+    },
+    "poetas": {
+     "lema": "poeta",
+     "classe": "substantivo masculino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de laudas: os poetas",
+     "wiki": "https://en.wiktionary.org/wiki/poeta#Latin",
+     "card": "la-p911"
+    },
+    "ignoscas": {
+     "lema": "ignosco",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 2ª pessoa do singular",
+     "funcao": "depende de petimus, sem ut: que perdoes",
+     "wiki": "https://en.wiktionary.org/wiki/ignosco#Latin",
+     "card": "la-p912"
+    },
+    "petimus": {
+     "lema": "peto",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do plural",
+     "funcao": "pedimos",
+     "wiki": "https://en.wiktionary.org/wiki/peto#Latin",
+     "card": "la-p373"
+    },
+    "tanti": {
+     "lema": "tantus",
+     "classe": "adjetivo",
+     "forma": "genitivo neutro singular",
+     "funcao": "genitivo de preço, com est: valer tanto",
+     "wiki": "https://en.wiktionary.org/wiki/tantus#Latin",
+     "card": "la-p247"
+    },
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "com tanti: vale tanto",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "ut": {
+     "lema": "ut",
+     "classe": "advérbio",
+     "funcao": "com subjuntivo: para que",
+     "wiki": "https://en.wiktionary.org/wiki/ut#Latin",
+     "card": "la-p257"
+    },
+    "placeam": {
+     "lema": "placeo",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 1ª pessoa do singular",
+     "funcao": "depois de ut: agrade",
+     "wiki": "https://en.wiktionary.org/wiki/placeo#Latin",
+     "card": "la-p913"
+    },
+    "tibi": {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "dativo singular",
+     "funcao": "a quem: a ti",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+     "card": "la-p007"
+    },
+    "perire": {
+     "lema": "pereo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "sujeito de est: morrer",
+     "wiki": "https://en.wiktionary.org/wiki/pereo#Latin",
+     "card": "la-p617"
+    }
+   }
+  },
+  {
+   "id": "marcial/difficilis-facilis",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Difficilis facilis",
+   "autor": "Marcial",
+   "ano": null,
+   "biblioteca": "/biblioteca/marcial/difficilis-facilis/",
+   "blocos": [
+    [
+     {
+      "t": "Difficilis facilis, iucundus acerbus es idem:",
+      "p": [
+       [
+        "Difficilis",
+        "difficilis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "facilis",
+        "facilis"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "iucundus",
+        "iucundus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "acerbus",
+        "acerbus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "es",
+        "es"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "idem",
+        "idem"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p914",
+       "la-p915",
+       "la-p916",
+       "la-p917",
+       "la-p003",
+       "la-v009",
+       "la-p180",
+       "la-v404"
+      ]
+     },
+     {
+      "t": "nec tecum possum vivere, nec sine te.",
+      "p": [
+       [
+        "nec",
+        "nec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tecum",
+        "tecum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "possum",
+        "possum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vivere",
+        "vivere"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "nec",
+        "nec"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sine",
+        "sine"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "te",
+        "te"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p120",
+       "la-p007",
+       "la-v050",
+       "la-p053",
+       "la-p121",
+       "la-v266",
+       "la-p508",
+       "la-v1044",
+       "la-p918"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p914",
+    "la-p915",
+    "la-p916",
+    "la-p917",
+    "la-p003",
+    "la-v009",
+    "la-p180",
+    "la-v404",
+    "la-p120",
+    "la-p007",
+    "la-v050",
+    "la-p053",
+    "la-p121",
+    "la-v266",
+    "la-p508",
+    "la-v1044",
+    "la-p918"
+   ],
+   "destinos": {
+    "difficilis": {
+     "lema": "difficilis",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo de es: difícil",
+     "wiki": "https://en.wiktionary.org/wiki/difficilis#Latin",
+     "card": "la-p914"
+    },
+    "facilis": {
+     "lema": "facilis",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo de es: fácil",
+     "wiki": "https://en.wiktionary.org/wiki/facilis#Latin",
+     "card": "la-p915"
+    },
+    "iucundus": {
+     "lema": "iucundus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo de es: agradável",
+     "wiki": "https://en.wiktionary.org/wiki/iucundus#Latin",
+     "card": "la-p916"
+    },
+    "acerbus": {
+     "lema": "acerbus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo de es: amargo",
+     "wiki": "https://en.wiktionary.org/wiki/acerbus#Latin",
+     "card": "la-p917"
+    },
+    "es": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "és",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "idem": {
+     "lema": "idem",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "o mesmo: ao mesmo tempo",
+     "wiki": "https://en.wiktionary.org/wiki/idem#Latin",
+     "card": "la-p180"
+    },
+    "nec": {
+     "lema": "nec",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/nec#Latin",
+     "card": "la-p120"
+    },
+    "tecum": {
+     "partes": [
+      {
+       "lema": "tu",
+       "classe": "pronome",
+       "forma": "ablativo singular",
+       "funcao": "depois de cum",
+       "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+       "card": "la-p007"
+      },
+      {
+       "lema": "cum",
+       "classe": "preposição",
+       "forma": "preposição com ablativo",
+       "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+       "card": "la-p053"
+      }
+     ]
+    },
+    "possum": {
+     "lema": "possum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "funcao": "posso",
+     "wiki": "https://en.wiktionary.org/wiki/possum#Latin",
+     "card": "la-p121"
+    },
+    "vivere": {
+     "lema": "vivo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de possum: viver",
+     "wiki": "https://en.wiktionary.org/wiki/vivo#Latin",
+     "card": "la-p508"
+    },
+    "sine": {
+     "lema": "sine",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/sine#Latin",
+     "card": "la-p918"
+    },
+    "te": {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "ablativo singular",
+     "funcao": "depois de sine: sem ti",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+     "card": "la-p007"
+    }
+   }
+  },
+  {
+   "id": "catulo/nulli-se-dicit",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Nulli se dicit",
+   "autor": "Catulo",
+   "ano": null,
+   "biblioteca": "/biblioteca/catulo/nulli-se-dicit/",
+   "blocos": [
+    [
+     {
+      "t": "Nulli se dicit mulier mea nubere malle",
+      "p": [
+       [
+        "Nulli",
+        "nulli"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "se",
+        "se"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dicit",
+        "dicit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mulier",
+        "mulier"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mea",
+        "mea"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nubere",
+        "nubere"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "malle",
+        "malle"
+       ]
+      ],
+      "requer": [
+       "la-p908",
+       "la-v1410",
+       "la-p483",
+       "la-v1011",
+       "la-p122",
+       "la-v299",
+       "la-p113",
+       "la-p013",
+       "la-v057",
+       "la-p919",
+       "la-v1416",
+       "la-p920",
+       "la-v1417"
+      ]
+     },
+     {
+      "t": "quam mihi, non si se Iuppiter ipse petat.",
+      "p": [
+       [
+        "quam",
+        "quam"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mihi",
+        "mihi"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "si",
+        "si"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "se",
+        "se#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Iuppiter",
+        "iuppiter"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ipse",
+        "ipse"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "petat",
+        "petat"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p276",
+       "la-p004",
+       "la-v042",
+       "la-p066",
+       "la-p154",
+       "la-p483",
+       "la-v1011",
+       "la-p587",
+       "la-p373",
+       "la-v1376"
+      ]
+     },
+     {
+      "t": "Dicit: sed mulier cupido quod dicit amanti,",
+      "p": [
+       [
+        "Dicit",
+        "dicit"
+       ],
+       [
+        ": ",
+        null
+       ],
+       [
+        "sed",
+        "sed"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mulier",
+        "mulier"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cupido",
+        "cupido"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quod",
+        "quod"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dicit",
+        "dicit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amanti",
+        "amanti"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p122",
+       "la-v299",
+       "la-p107",
+       "la-p113",
+       "la-p921",
+       "la-v1418",
+       "la-p064",
+       "la-v173",
+       "la-p037",
+       "la-v1359"
+      ]
+     },
+     {
+      "t": "in vento et rapida scribere oportet aqua.",
+      "p": [
+       [
+        "in",
+        "in"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vento",
+        "vento"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "rapida",
+        "rapida"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "scribere",
+        "scribere"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "oportet",
+        "oportet"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "aqua",
+        "aqua"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p022",
+       "la-p922",
+       "la-v1419",
+       "la-p009",
+       "la-p923",
+       "la-v1420",
+       "la-p900",
+       "la-v1403",
+       "la-p924",
+       "la-p199"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p908",
+    "la-v1410",
+    "la-p483",
+    "la-v1011",
+    "la-p122",
+    "la-v299",
+    "la-p113",
+    "la-p013",
+    "la-v057",
+    "la-p919",
+    "la-v1416",
+    "la-p920",
+    "la-v1417",
+    "la-p276",
+    "la-p004",
+    "la-v042",
+    "la-p066",
+    "la-p154",
+    "la-p587",
+    "la-p373",
+    "la-v1376",
+    "la-p107",
+    "la-p921",
+    "la-v1418",
+    "la-p064",
+    "la-v173",
+    "la-p037",
+    "la-v1359",
+    "la-p022",
+    "la-p922",
+    "la-v1419",
+    "la-p009",
+    "la-p923",
+    "la-v1420",
+    "la-p900",
+    "la-v1403",
+    "la-p924",
+    "la-p199"
+   ],
+   "destinos": {
+    "nulli": {
+     "lema": "nullus",
+     "classe": "adjetivo",
+     "forma": "dativo masculino singular",
+     "funcao": "com nubere, com quem: a nenhum",
+     "wiki": "https://en.wiktionary.org/wiki/nullus#Latin",
+     "card": "la-p908"
+    },
+    "se": {
+     "lema": "sui",
+     "classe": "pronome",
+     "forma": "acusativo singular",
+     "funcao": "sujeito de malle (oração infinitiva): ela",
+     "wiki": "https://en.wiktionary.org/wiki/sui#Latin",
+     "card": "la-p483"
+    },
+    "dicit": {
+     "lema": "dico",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "diz",
+     "wiki": "https://en.wiktionary.org/wiki/dico#Latin",
+     "card": "la-p122"
+    },
+    "mulier": {
+     "lema": "mulier",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de dicit: a mulher",
+     "wiki": "https://en.wiktionary.org/wiki/mulier#Latin",
+     "card": "la-p113"
+    },
+    "mea": {
+     "lema": "meus",
+     "classe": "adjetivo",
+     "forma": "nominativo feminino singular",
+     "funcao": "concorda com mulier: minha",
+     "wiki": "https://en.wiktionary.org/wiki/meus#Latin",
+     "card": "la-p013"
+    },
+    "nubere": {
+     "lema": "nubo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de malle: casar-se",
+     "wiki": "https://en.wiktionary.org/wiki/nubo#Latin",
+     "card": "la-p919"
+    },
+    "malle": {
+     "lema": "malo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "oração infinitiva, com se: preferir",
+     "wiki": "https://en.wiktionary.org/wiki/malo#Latin",
+     "card": "la-p920"
+    },
+    "quam": {
+     "lema": "quam",
+     "classe": "advérbio",
+     "funcao": "depois de malle: do que",
+     "wiki": "https://en.wiktionary.org/wiki/quam#Latin",
+     "card": "la-p276"
+    },
+    "mihi": {
+     "lema": "ego",
+     "classe": "pronome",
+     "forma": "dativo singular",
+     "funcao": "com nubere, subentendido: comigo",
+     "wiki": "https://en.wiktionary.org/wiki/ego#Latin",
+     "card": "la-p004"
+    },
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "si": {
+     "lema": "si",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/si#Latin",
+     "card": "la-p154"
+    },
+    "se#2": {
+     "lema": "sui",
+     "classe": "pronome",
+     "forma": "acusativo singular",
+     "funcao": "objeto de petat: a ela",
+     "wiki": "https://en.wiktionary.org/wiki/sui#Latin",
+     "card": "la-p483"
+    },
+    "iuppiter": {
+     "lema": "Iuppiter",
+     "classe": "nome próprio",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de petat",
+     "def": [
+      "Júpiter, o rei dos deuses."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Iuppiter#Latin",
+     "g": "nome"
+    },
+    "ipse": {
+     "lema": "ipse",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "concorda com Iuppiter: em pessoa",
+     "wiki": "https://en.wiktionary.org/wiki/ipse#Latin",
+     "card": "la-p587"
+    },
+    "petat": {
+     "lema": "peto",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 3ª pessoa do singular",
+     "funcao": "depois de si: pedisse",
+     "wiki": "https://en.wiktionary.org/wiki/peto#Latin",
+     "card": "la-p373"
+    },
+    "sed": {
+     "lema": "sed",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/sed#Latin",
+     "card": "la-p107"
+    },
+    "cupido": {
+     "lema": "cupidus",
+     "classe": "adjetivo",
+     "forma": "dativo masculino singular",
+     "funcao": "concorda com amanti: apaixonado",
+     "wiki": "https://en.wiktionary.org/wiki/cupidus#Latin",
+     "card": "la-p921"
+    },
+    "quod": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "acusativo neutro singular",
+     "funcao": "objeto de dicit: o que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "amanti": {
+     "lema": "amo",
+     "classe": "verbo",
+     "forma": "particípio presente, dativo masculino singular",
+     "funcao": "a quem: ao amante",
+     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
+     "card": "la-p037"
+    },
+    "in": {
+     "lema": "in",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/in#Latin",
+     "card": "la-p022"
+    },
+    "vento": {
+     "lema": "ventus",
+     "classe": "substantivo masculino",
+     "forma": "ablativo singular",
+     "funcao": "depois de in: no vento",
+     "wiki": "https://en.wiktionary.org/wiki/ventus#Latin",
+     "card": "la-p922"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "rapida": {
+     "lema": "rapidus",
+     "classe": "adjetivo",
+     "forma": "ablativo feminino singular",
+     "funcao": "concorda com aqua: corrente",
+     "wiki": "https://en.wiktionary.org/wiki/rapidus#Latin",
+     "card": "la-p923"
+    },
+    "scribere": {
+     "lema": "scribo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "sujeito de oportet: escrever",
+     "wiki": "https://en.wiktionary.org/wiki/scribo#Latin",
+     "card": "la-p900"
+    },
+    "oportet": {
+     "lema": "oportet",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "impessoal: é preciso",
+     "wiki": "https://en.wiktionary.org/wiki/oportet#Latin",
+     "card": "la-p924"
+    },
+    "aqua": {
+     "lema": "aqua",
+     "classe": "substantivo feminino",
+     "forma": "ablativo singular",
+     "funcao": "depois de in: na água",
+     "wiki": "https://en.wiktionary.org/wiki/aqua#Latin",
+     "card": "la-p199"
+    }
+   }
+  },
+  {
+   "id": "publilio-siro/sententiae-parte-1",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "Sententiae",
+   "autor": "Publílio Siro",
+   "ano": null,
+   "biblioteca": "/biblioteca/publilio-siro/sententiae/",
+   "blocos": [
+    [
+     {
+      "t": "Bis vincit qui se vincit in victoria.",
+      "p": [
+       [
+        "Bis",
+        "bis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vincit",
+        "vincit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "se",
+        "se"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vincit",
+        "vincit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "in",
+        "in"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "victoria",
+        "victoria"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p925",
+       "la-p030",
+       "la-v102",
+       "la-p064",
+       "la-v171",
+       "la-p483",
+       "la-v1011",
+       "la-p022",
+       "la-p926"
+      ]
+     },
+     {
+      "t": "Avarus ipse miseriae causa est suae.",
+      "p": [
+       [
+        "Avarus",
+        "avarus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ipse",
+        "ipse"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "miseriae",
+        "miseriae"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "causa",
+        "causa"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "suae",
+        "suae"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p927",
+       "la-p587",
+       "la-p928",
+       "la-v1421",
+       "la-p194",
+       "la-p003",
+       "la-v010",
+       "la-p536",
+       "la-v1085"
+      ]
+     },
+     {
+      "t": "Discipulus est prioris posterior dies.",
+      "p": [
+       [
+        "Discipulus",
+        "discipulus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "prioris",
+        "prioris"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "posterior",
+        "posterior"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dies",
+        "dies"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p929",
+       "la-p003",
+       "la-v010",
+       "la-p930",
+       "la-v1422",
+       "la-p931",
+       "la-p025"
+      ]
+     },
+     {
+      "t": "Fortuna vitrea est: tum cum splendet frangitur.",
+      "p": [
+       [
+        "Fortuna",
+        "fortuna"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vitrea",
+        "vitrea"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est#2"
+       ],
+       [
+        ": ",
+        null
+       ],
+       [
+        "tum",
+        "tum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cum",
+        "cum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "splendet",
+        "splendet"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "frangitur",
+        "frangitur"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p148",
+       "la-p932",
+       "la-v1423",
+       "la-p003",
+       "la-v010",
+       "la-p933",
+       "la-p618",
+       "la-p934",
+       "la-v1424",
+       "la-p935",
+       "la-v1425"
+      ]
+     },
+     {
+      "t": "Stultum est timere quod vitari non potest.",
+      "p": [
+       [
+        "Stultum",
+        "stultum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "timere",
+        "timere"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quod",
+        "quod"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vitari",
+        "vitari"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "potest",
+        "potest"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p936",
+       "la-v1426",
+       "la-p003",
+       "la-v010",
+       "la-p203",
+       "la-v440",
+       "la-p064",
+       "la-v173",
+       "la-p298",
+       "la-v1373",
+       "la-p066",
+       "la-p121",
+       "la-v268"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p925",
+    "la-p030",
+    "la-v102",
+    "la-p064",
+    "la-v171",
+    "la-p483",
+    "la-v1011",
+    "la-p022",
+    "la-p926",
+    "la-p927",
+    "la-p587",
+    "la-p928",
+    "la-v1421",
+    "la-p194",
+    "la-p003",
+    "la-v010",
+    "la-p536",
+    "la-v1085",
+    "la-p929",
+    "la-p930",
+    "la-v1422",
+    "la-p931",
+    "la-p025",
+    "la-p148",
+    "la-p932",
+    "la-v1423",
+    "la-p933",
+    "la-p618",
+    "la-p934",
+    "la-v1424",
+    "la-p935",
+    "la-v1425",
+    "la-p936",
+    "la-v1426",
+    "la-p203",
+    "la-v440",
+    "la-v173",
+    "la-p298",
+    "la-v1373",
+    "la-p066",
+    "la-p121",
+    "la-v268"
+   ],
+   "destinos": {
+    "bis": {
+     "lema": "bis",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/bis#Latin",
+     "card": "la-p925"
+    },
+    "vincit": {
+     "lema": "vinco",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "vence",
+     "wiki": "https://en.wiktionary.org/wiki/vinco#Latin",
+     "card": "la-p030"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de vincit, sem antecedente: quem",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "se": {
+     "lema": "sui",
+     "classe": "pronome",
+     "forma": "acusativo singular",
+     "funcao": "objeto de vincit: a si mesmo",
+     "wiki": "https://en.wiktionary.org/wiki/sui#Latin",
+     "card": "la-p483"
+    },
+    "in": {
+     "lema": "in",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/in#Latin",
+     "card": "la-p022"
+    },
+    "victoria": {
+     "lema": "victoria",
+     "classe": "substantivo feminino",
+     "forma": "ablativo singular",
+     "funcao": "depois de in: na vitória",
+     "wiki": "https://en.wiktionary.org/wiki/victoria#Latin",
+     "card": "la-p926"
+    },
+    "avarus": {
+     "lema": "avarus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de est: o avarento",
+     "wiki": "https://en.wiktionary.org/wiki/avarus#Latin",
+     "card": "la-p927"
+    },
+    "ipse": {
+     "lema": "ipse",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "concorda com avarus: ele mesmo",
+     "wiki": "https://en.wiktionary.org/wiki/ipse#Latin",
+     "card": "la-p587"
+    },
+    "miseriae": {
+     "lema": "miseria",
+     "classe": "substantivo feminino",
+     "forma": "genitivo singular",
+     "funcao": "de que é a causa: da miséria",
+     "wiki": "https://en.wiktionary.org/wiki/miseria#Latin",
+     "card": "la-p928"
+    },
+    "causa": {
+     "lema": "causa",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "predicativo de est: a causa",
+     "wiki": "https://en.wiktionary.org/wiki/causa#Latin",
+     "card": "la-p194"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "é",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "suae": {
+     "lema": "suus",
+     "classe": "adjetivo",
+     "forma": "genitivo feminino singular",
+     "funcao": "concorda com miseriae: sua",
+     "wiki": "https://en.wiktionary.org/wiki/suus#Latin",
+     "card": "la-p536"
+    },
+    "discipulus": {
+     "lema": "discipulus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "predicativo de est: discípulo",
+     "wiki": "https://en.wiktionary.org/wiki/discipulus#Latin",
+     "card": "la-p929"
+    },
+    "prioris": {
+     "lema": "prior",
+     "classe": "adjetivo",
+     "forma": "genitivo masculino singular",
+     "funcao": "de quem é discípulo: do anterior (dia)",
+     "wiki": "https://en.wiktionary.org/wiki/prior#Latin",
+     "card": "la-p930"
+    },
+    "posterior": {
+     "lema": "posterior",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "concorda com dies: seguinte",
+     "wiki": "https://en.wiktionary.org/wiki/posterior#Latin",
+     "card": "la-p931"
+    },
+    "dies": {
+     "lema": "dies",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de est: o dia",
+     "wiki": "https://en.wiktionary.org/wiki/dies#Latin",
+     "card": "la-p025"
+    },
+    "fortuna": {
+     "lema": "fortuna",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de est: a sorte",
+     "wiki": "https://en.wiktionary.org/wiki/fortuna#Latin",
+     "card": "la-p148"
+    },
+    "vitrea": {
+     "lema": "vitreus",
+     "classe": "adjetivo",
+     "forma": "nominativo feminino singular",
+     "funcao": "predicativo, concorda com fortuna: de vidro",
+     "wiki": "https://en.wiktionary.org/wiki/vitreus#Latin",
+     "card": "la-p932"
+    },
+    "est#2": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "tum": {
+     "lema": "tum",
+     "classe": "advérbio",
+     "funcao": "então, justamente",
+     "wiki": "https://en.wiktionary.org/wiki/tum#Latin",
+     "card": "la-p933"
+    },
+    "cum": {
+     "lema": "cum",
+     "classe": "conjunção",
+     "funcao": "conjunção: quando",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+     "card": "la-p618"
+    },
+    "splendet": {
+     "lema": "splendeo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "depois de cum: brilha",
+     "wiki": "https://en.wiktionary.org/wiki/splendeo#Latin",
+     "card": "la-p934"
+    },
+    "frangitur": {
+     "lema": "frango",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular, voz passiva",
+     "funcao": "quebra-se",
+     "wiki": "https://en.wiktionary.org/wiki/frango#Latin",
+     "card": "la-p935"
+    },
+    "stultum": {
+     "lema": "stultus",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro singular",
+     "funcao": "predicativo de est: coisa tola",
+     "wiki": "https://en.wiktionary.org/wiki/stultus#Latin",
+     "card": "la-p936"
+    },
+    "timere": {
+     "lema": "timeo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "sujeito de est: temer",
+     "wiki": "https://en.wiktionary.org/wiki/timeo#Latin",
+     "card": "la-p203"
+    },
+    "quod": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo neutro singular",
+     "funcao": "sujeito de potest (id quod: aquilo que)",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "vitari": {
+     "lema": "vito",
+     "classe": "verbo",
+     "forma": "infinitivo presente, voz passiva",
+     "funcao": "depende de potest: ser evitado",
+     "wiki": "https://en.wiktionary.org/wiki/vito#Latin",
+     "card": "la-p298"
+    },
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "potest": {
+     "lema": "possum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "pode",
+     "wiki": "https://en.wiktionary.org/wiki/possum#Latin",
+     "card": "la-p121"
+    }
+   },
+   "obra": "publilio-siro/sententiae",
+   "parte": 1,
+   "trecho": "parte 1"
+  },
+  {
+   "id": "publilio-siro/sententiae-parte-2",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "Sententiae",
+   "autor": "Publílio Siro",
+   "ano": null,
+   "biblioteca": "/biblioteca/publilio-siro/sententiae/",
+   "blocos": [
+    [
+     {
+      "t": "Inopi beneficium bis dat qui dat celeriter.",
+      "p": [
+       [
+        "Inopi",
+        "inopi"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "beneficium",
+        "beneficium"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "bis",
+        "bis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dat",
+        "dat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "dat",
+        "dat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "celeriter",
+        "celeriter"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p937",
+       "la-v1427",
+       "la-p938",
+       "la-p925",
+       "la-p099",
+       "la-v798",
+       "la-p064",
+       "la-v171",
+       "la-p939"
+      ]
+     },
+     {
+      "t": "Malum est consilium quod mutari non potest.",
+      "p": [
+       [
+        "Malum",
+        "malum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "consilium",
+        "consilium"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quod",
+        "quod"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mutari",
+        "mutari"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "potest",
+        "potest"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p675",
+       "la-v1391",
+       "la-p003",
+       "la-v010",
+       "la-p940",
+       "la-p064",
+       "la-v173",
+       "la-p941",
+       "la-v1428",
+       "la-p066",
+       "la-p121",
+       "la-v268"
+      ]
+     },
+     {
+      "t": "Iratus nil non criminis loquitur loco.",
+      "p": [
+       [
+        "Iratus",
+        "iratus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nil",
+        "nil"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "non",
+        "non#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "criminis",
+        "criminis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "loquitur",
+        "loquitur"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "loco",
+        "loco"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p942",
+       "la-p494",
+       "la-p066",
+       "la-p943",
+       "la-v1429",
+       "la-p273",
+       "la-v1372",
+       "la-p709",
+       "la-v1348"
+      ]
+     },
+     {
+      "t": "Etiam capillus unus habet umbram suam.",
+      "p": [
+       [
+        "Etiam",
+        "etiam"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "capillus",
+        "capillus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "unus",
+        "unus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "habet",
+        "habet"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "umbram",
+        "umbram"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "suam",
+        "suam"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p464",
+       "la-p944",
+       "la-p023",
+       "la-p504",
+       "la-v1384",
+       "la-p945",
+       "la-v1430",
+       "la-p536",
+       "la-v1086"
+      ]
+     },
+     {
+      "t": "Amicum an nomen habeas aperit calamitas.",
+      "p": [
+       [
+        "Amicum",
+        "amicum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "an",
+        "an"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nomen",
+        "nomen"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "habeas",
+        "habeas"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "aperit",
+        "aperit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "calamitas",
+        "calamitas"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p946",
+       "la-v1431",
+       "la-p947",
+       "la-p092",
+       "la-p504",
+       "la-v1382",
+       "la-p948",
+       "la-v1432",
+       "la-p949"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p937",
+    "la-v1427",
+    "la-p938",
+    "la-p925",
+    "la-p099",
+    "la-v798",
+    "la-p064",
+    "la-v171",
+    "la-p939",
+    "la-p675",
+    "la-v1391",
+    "la-p003",
+    "la-v010",
+    "la-p940",
+    "la-v173",
+    "la-p941",
+    "la-v1428",
+    "la-p066",
+    "la-p121",
+    "la-v268",
+    "la-p942",
+    "la-p494",
+    "la-p943",
+    "la-v1429",
+    "la-p273",
+    "la-v1372",
+    "la-p709",
+    "la-v1348",
+    "la-p464",
+    "la-p944",
+    "la-p023",
+    "la-p504",
+    "la-v1384",
+    "la-p945",
+    "la-v1430",
+    "la-p536",
+    "la-v1086",
+    "la-p946",
+    "la-v1431",
+    "la-p947",
+    "la-p092",
+    "la-v1382",
+    "la-p948",
+    "la-v1432",
+    "la-p949"
+   ],
+   "destinos": {
+    "inopi": {
+     "lema": "inops",
+     "classe": "adjetivo",
+     "forma": "dativo masculino singular",
+     "funcao": "a quem: ao pobre",
+     "wiki": "https://en.wiktionary.org/wiki/inops#Latin",
+     "card": "la-p937"
+    },
+    "beneficium": {
+     "lema": "beneficium",
+     "classe": "substantivo neutro",
+     "forma": "acusativo singular",
+     "funcao": "objeto de dat: o benefício",
+     "wiki": "https://en.wiktionary.org/wiki/beneficium#Latin",
+     "card": "la-p938"
+    },
+    "bis": {
+     "lema": "bis",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/bis#Latin",
+     "card": "la-p925"
+    },
+    "dat": {
+     "lema": "do",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "dá",
+     "wiki": "https://en.wiktionary.org/wiki/do#Latin",
+     "card": "la-p099"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de dat, sem antecedente: quem",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "celeriter": {
+     "lema": "celeriter",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/celeriter#Latin",
+     "card": "la-p939"
+    },
+    "malum": {
+     "lema": "malus",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro singular",
+     "funcao": "predicativo, concorda com consilium: mau",
+     "wiki": "https://en.wiktionary.org/wiki/malus#Latin",
+     "card": "la-p675"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "consilium": {
+     "lema": "consilium",
+     "classe": "substantivo neutro",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de est: o plano",
+     "wiki": "https://en.wiktionary.org/wiki/consilium#Latin",
+     "card": "la-p940"
+    },
+    "quod": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo neutro singular",
+     "funcao": "sujeito de potest, retoma consilium: que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "mutari": {
+     "lema": "muto",
+     "classe": "verbo",
+     "forma": "infinitivo presente, voz passiva",
+     "funcao": "depende de potest: ser mudado",
+     "wiki": "https://en.wiktionary.org/wiki/muto#Latin",
+     "card": "la-p941"
+    },
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "potest": {
+     "lema": "possum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "pode",
+     "wiki": "https://en.wiktionary.org/wiki/possum#Latin",
+     "card": "la-p121"
+    },
+    "iratus": {
+     "lema": "iratus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de loquitur: o irado",
+     "wiki": "https://en.wiktionary.org/wiki/iratus#Latin",
+     "card": "la-p942"
+    },
+    "nil": {
+     "lema": "nil",
+     "classe": "pronome",
+     "funcao": "objeto de loquitur: nada",
+     "wiki": "https://en.wiktionary.org/wiki/nil#Latin",
+     "card": "la-p494"
+    },
+    "non#2": {
+     "lema": "non",
+     "classe": "advérbio",
+     "funcao": "com nil: nada que não",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "criminis": {
+     "lema": "crimen",
+     "classe": "substantivo neutro",
+     "forma": "genitivo singular",
+     "funcao": "com loco: de acusação",
+     "wiki": "https://en.wiktionary.org/wiki/crimen#Latin",
+     "card": "la-p943"
+    },
+    "loquitur": {
+     "lema": "loquor",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "depoente: diz",
+     "wiki": "https://en.wiktionary.org/wiki/loquor#Latin",
+     "card": "la-p273"
+    },
+    "loco": {
+     "lema": "locus",
+     "classe": "substantivo",
+     "forma": "ablativo singular",
+     "funcao": "com criminis: em lugar de acusação",
+     "wiki": "https://en.wiktionary.org/wiki/locus#Latin",
+     "card": "la-p709"
+    },
+    "etiam": {
+     "lema": "etiam",
+     "classe": "advérbio",
+     "funcao": "até",
+     "wiki": "https://en.wiktionary.org/wiki/etiam#Latin",
+     "card": "la-p464"
+    },
+    "capillus": {
+     "lema": "capillus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de habet: o fio de cabelo",
+     "wiki": "https://en.wiktionary.org/wiki/capillus#Latin",
+     "card": "la-p944"
+    },
+    "unus": {
+     "lema": "unus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "concorda com capillus: um só",
+     "wiki": "https://en.wiktionary.org/wiki/unus#Latin",
+     "card": "la-p023"
+    },
+    "habet": {
+     "lema": "habeo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "tem",
+     "wiki": "https://en.wiktionary.org/wiki/habeo#Latin",
+     "card": "la-p504"
+    },
+    "umbram": {
+     "lema": "umbra",
+     "classe": "substantivo feminino",
+     "forma": "acusativo singular",
+     "funcao": "objeto de habet: a sombra",
+     "wiki": "https://en.wiktionary.org/wiki/umbra#Latin",
+     "card": "la-p945"
+    },
+    "suam": {
+     "lema": "suus",
+     "classe": "adjetivo",
+     "forma": "acusativo feminino singular",
+     "funcao": "concorda com umbram: sua",
+     "wiki": "https://en.wiktionary.org/wiki/suus#Latin",
+     "card": "la-p536"
+    },
+    "amicum": {
+     "lema": "amicus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo singular",
+     "funcao": "objeto de habeas: um amigo",
+     "wiki": "https://en.wiktionary.org/wiki/amicus#Latin",
+     "card": "la-p946"
+    },
+    "an": {
+     "lema": "an",
+     "classe": "conjunção",
+     "funcao": "ou",
+     "wiki": "https://en.wiktionary.org/wiki/an#Latin",
+     "card": "la-p947"
+    },
+    "nomen": {
+     "lema": "nomen",
+     "classe": "substantivo neutro",
+     "forma": "acusativo singular",
+     "funcao": "objeto de habeas: só um nome",
+     "wiki": "https://en.wiktionary.org/wiki/nomen#Latin",
+     "card": "la-p092"
+    },
+    "habeas": {
+     "lema": "habeo",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 2ª pessoa do singular",
+     "funcao": "pergunta indireta: tens",
+     "wiki": "https://en.wiktionary.org/wiki/habeo#Latin",
+     "card": "la-p504"
+    },
+    "aperit": {
+     "lema": "aperio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "revela",
+     "wiki": "https://en.wiktionary.org/wiki/aperio#Latin",
+     "card": "la-p948"
+    },
+    "calamitas": {
+     "lema": "calamitas",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de aperit: a desgraça",
+     "wiki": "https://en.wiktionary.org/wiki/calamitas#Latin",
+     "card": "la-p949"
+    }
+   },
+   "obra": "publilio-siro/sententiae",
+   "parte": 2,
+   "trecho": "parte 2"
+  },
+  {
+   "id": "publilio-siro/sententiae-parte-3",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "Sententiae",
+   "autor": "Publílio Siro",
+   "ano": null,
+   "biblioteca": "/biblioteca/publilio-siro/sententiae/",
+   "blocos": [
+    [
+     {
+      "t": "Heu quam difficilis gloriae custodia est!",
+      "p": [
+       [
+        "Heu",
+        "heu"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quam",
+        "quam"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "difficilis",
+        "difficilis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "gloriae",
+        "gloriae"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "custodia",
+        "custodia"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        "!",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p688",
+       "la-p276",
+       "la-p914",
+       "la-p051",
+       "la-v763",
+       "la-p950",
+       "la-p003",
+       "la-v010"
+      ]
+     },
+     {
+      "t": "Pericla timidus etiam quae non sunt videt.",
+      "p": [
+       [
+        "Pericla",
+        "pericla"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "timidus",
+        "timidus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "etiam",
+        "etiam"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quae",
+        "quae"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sunt",
+        "sunt"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "videt",
+        "videt"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p951",
+       "la-v1433",
+       "la-p952",
+       "la-p464",
+       "la-p064",
+       "la-v172",
+       "la-p066",
+       "la-p003",
+       "la-v013",
+       "la-p039",
+       "la-v759"
+      ]
+     },
+     {
+      "t": "Quod vult habet qui velle quod satis est potest.",
+      "p": [
+       [
+        "Quod",
+        "quod"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vult",
+        "vult"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "habet",
+        "habet"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "velle",
+        "velle"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quod",
+        "quod#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "satis",
+        "satis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "potest",
+        "potest"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p064",
+       "la-v173",
+       "la-v171",
+       "la-p155",
+       "la-v354",
+       "la-v351",
+       "la-p504",
+       "la-v1384",
+       "la-p953",
+       "la-p003",
+       "la-v010",
+       "la-p121",
+       "la-v268"
+      ]
+     },
+     {
+      "t": "Cui plus licet quam par est plus vult quam licet.",
+      "p": [
+       [
+        "Cui",
+        "cui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "plus",
+        "plus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "licet",
+        "licet"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quam",
+        "quam#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "par",
+        "par"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "plus",
+        "plus#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vult",
+        "vult"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quam",
+        "quam#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "licet",
+        "licet"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p064",
+       "la-v175",
+       "la-p261",
+       "la-p954",
+       "la-p276",
+       "la-p955",
+       "la-p003",
+       "la-v010",
+       "la-p155",
+       "la-v354"
+      ]
+     },
+     {
+      "t": "Nemo timendo ad summum pervenit locum.",
+      "p": [
+       [
+        "Nemo",
+        "nemo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "timendo",
+        "timendo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ad",
+        "ad"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "summum",
+        "summum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pervenit",
+        "pervenit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "locum",
+        "locum"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p901",
+       "la-p203",
+       "la-v1368",
+       "la-p178",
+       "la-p956",
+       "la-v1434",
+       "la-p957",
+       "la-v1435",
+       "la-p709",
+       "la-v1393"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p688",
+    "la-p276",
+    "la-p914",
+    "la-p051",
+    "la-v763",
+    "la-p950",
+    "la-p003",
+    "la-v010",
+    "la-p951",
+    "la-v1433",
+    "la-p952",
+    "la-p464",
+    "la-p064",
+    "la-v172",
+    "la-p066",
+    "la-v013",
+    "la-p039",
+    "la-v759",
+    "la-v173",
+    "la-v171",
+    "la-p155",
+    "la-v354",
+    "la-v351",
+    "la-p504",
+    "la-v1384",
+    "la-p953",
+    "la-p121",
+    "la-v268",
+    "la-v175",
+    "la-p261",
+    "la-p954",
+    "la-p955",
+    "la-p901",
+    "la-p203",
+    "la-v1368",
+    "la-p178",
+    "la-p956",
+    "la-v1434",
+    "la-p957",
+    "la-v1435",
+    "la-p709",
+    "la-v1393"
+   ],
+   "destinos": {
+    "heu": {
+     "lema": "heu",
+     "classe": "interjeição",
+     "wiki": "https://en.wiktionary.org/wiki/heu#Latin",
+     "card": "la-p688"
+    },
+    "quam": {
+     "lema": "quam",
+     "classe": "advérbio",
+     "funcao": "exclamação: quão, como",
+     "wiki": "https://en.wiktionary.org/wiki/quam#Latin",
+     "card": "la-p276"
+    },
+    "difficilis": {
+     "lema": "difficilis",
+     "classe": "adjetivo",
+     "forma": "nominativo feminino singular",
+     "funcao": "predicativo, concorda com custodia: difícil",
+     "wiki": "https://en.wiktionary.org/wiki/difficilis#Latin",
+     "card": "la-p914"
+    },
+    "gloriae": {
+     "lema": "gloria",
+     "classe": "substantivo feminino",
+     "forma": "genitivo singular",
+     "funcao": "de que é a guarda: da glória",
+     "wiki": "https://en.wiktionary.org/wiki/gloria#Latin",
+     "card": "la-p051"
+    },
+    "custodia": {
+     "lema": "custodia",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de est: a guarda",
+     "wiki": "https://en.wiktionary.org/wiki/custodia#Latin",
+     "card": "la-p950"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "pericla": {
+     "lema": "periculum",
+     "classe": "substantivo neutro",
+     "forma": "acusativo plural",
+     "funcao": "objeto de videt: os perigos",
+     "wiki": "https://en.wiktionary.org/wiki/periculum#Latin",
+     "card": "la-p951"
+    },
+    "timidus": {
+     "lema": "timidus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de videt: o medroso",
+     "wiki": "https://en.wiktionary.org/wiki/timidus#Latin",
+     "card": "la-p952"
+    },
+    "etiam": {
+     "lema": "etiam",
+     "classe": "advérbio",
+     "funcao": "até",
+     "wiki": "https://en.wiktionary.org/wiki/etiam#Latin",
+     "card": "la-p464"
+    },
+    "quae": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo neutro plural",
+     "funcao": "sujeito de sunt, retoma pericla: que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "sunt": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "funcao": "existem",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "videt": {
+     "lema": "video",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "vê",
+     "wiki": "https://en.wiktionary.org/wiki/video#Latin",
+     "card": "la-p039"
+    },
+    "quod": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "acusativo neutro singular",
+     "funcao": "objeto de vult e de habet: o que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "vult": {
+     "lema": "volo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "quer",
+     "wiki": "https://en.wiktionary.org/wiki/volo#Latin",
+     "card": "la-p155"
+    },
+    "habet": {
+     "lema": "habeo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "tem",
+     "wiki": "https://en.wiktionary.org/wiki/habeo#Latin",
+     "card": "la-p504"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de habet e de potest, sem antecedente: quem",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "velle": {
+     "lema": "volo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de potest: querer",
+     "wiki": "https://en.wiktionary.org/wiki/volo#Latin",
+     "card": "la-p155"
+    },
+    "quod#2": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo neutro singular",
+     "funcao": "sujeito de est: o que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "satis": {
+     "lema": "satis",
+     "classe": "advérbio",
+     "funcao": "predicativo de est: bastante",
+     "wiki": "https://en.wiktionary.org/wiki/satis#Latin",
+     "card": "la-p953"
+    },
+    "potest": {
+     "lema": "possum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "pode",
+     "wiki": "https://en.wiktionary.org/wiki/possum#Latin",
+     "card": "la-p121"
+    },
+    "cui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "dativo masculino singular",
+     "funcao": "com licet, sem antecedente: a quem",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "plus": {
+     "lema": "plus",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro singular",
+     "funcao": "sujeito de licet: mais",
+     "wiki": "https://en.wiktionary.org/wiki/plus#Latin",
+     "card": "la-p261"
+    },
+    "licet": {
+     "lema": "licet",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "impessoal: é permitido",
+     "wiki": "https://en.wiktionary.org/wiki/licet#Latin",
+     "card": "la-p954"
+    },
+    "quam#2": {
+     "lema": "quam",
+     "classe": "advérbio",
+     "funcao": "depois de plus: do que",
+     "wiki": "https://en.wiktionary.org/wiki/quam#Latin",
+     "card": "la-p276"
+    },
+    "par": {
+     "lema": "par",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro singular",
+     "funcao": "predicativo de est: justo",
+     "wiki": "https://en.wiktionary.org/wiki/par#Latin",
+     "card": "la-p955"
+    },
+    "plus#2": {
+     "lema": "plus",
+     "classe": "adjetivo",
+     "forma": "acusativo neutro singular",
+     "funcao": "objeto de vult: mais",
+     "wiki": "https://en.wiktionary.org/wiki/plus#Latin",
+     "card": "la-p261"
+    },
+    "nemo": {
+     "lema": "nemo",
+     "classe": "pronome",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de pervenit: ninguém",
+     "wiki": "https://en.wiktionary.org/wiki/nemo#Latin",
+     "card": "la-p901"
+    },
+    "timendo": {
+     "lema": "timeo",
+     "classe": "verbo",
+     "forma": "gerúndio, ablativo",
+     "funcao": "como: tendo medo",
+     "wiki": "https://en.wiktionary.org/wiki/timeo#Latin",
+     "card": "la-p203"
+    },
+    "ad": {
+     "lema": "ad",
+     "classe": "preposição",
+     "forma": "preposição com acusativo",
+     "wiki": "https://en.wiktionary.org/wiki/ad#Latin",
+     "card": "la-p178"
+    },
+    "summum": {
+     "lema": "summus",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino singular",
+     "funcao": "concorda com locum: o mais alto",
+     "wiki": "https://en.wiktionary.org/wiki/summus#Latin",
+     "card": "la-p956"
+    },
+    "pervenit": {
+     "lema": "pervenio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "chega",
+     "wiki": "https://en.wiktionary.org/wiki/pervenio#Latin",
+     "card": "la-p957"
+    },
+    "locum": {
+     "lema": "locus",
+     "classe": "substantivo",
+     "forma": "acusativo singular",
+     "funcao": "depois de ad: ao lugar",
+     "wiki": "https://en.wiktionary.org/wiki/locus#Latin",
+     "card": "la-p709"
+    }
+   },
+   "obra": "publilio-siro/sententiae",
+   "parte": 3,
+   "trecho": "parte 3"
+  },
+  {
+   "id": "inscricoes/admiror-paries",
+   "idioma": "la",
+   "tipo": "poema",
+   "titulo": "Admiror, paries",
+   "autor": "Inscrições",
+   "ano": null,
+   "biblioteca": "/biblioteca/inscricoes/admiror-paries/",
+   "blocos": [
+    [
+     {
+      "t": "Admiror, paries, te non cecidisse ruinis,",
+      "p": [
+       [
+        "Admiror",
+        "admiror"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "paries",
+        "paries"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "te",
+        "te"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cecidisse",
+        "cecidisse"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ruinis",
+        "ruinis"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p958",
+       "la-p959",
+       "la-p007",
+       "la-v050",
+       "la-p066",
+       "la-p391",
+       "la-v1378",
+       "la-p960",
+       "la-v1436"
+      ]
+     },
+     {
+      "t": "qui tot scriptorum taedia sustineas.",
+      "p": [
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tot",
+        "tot"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "scriptorum",
+        "scriptorum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "taedia",
+        "taedia"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sustineas",
+        "sustineas"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p064",
+       "la-v171",
+       "la-p239",
+       "la-p961",
+       "la-v1437",
+       "la-p962",
+       "la-v1438",
+       "la-p963",
+       "la-v1439"
+      ]
+     },
+     {
+      "t": "Quisquis amat valeat, pereat qui nescit amare;",
+      "p": [
+       [
+        "Quisquis",
+        "quisquis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amat",
+        "amat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "valeat",
+        "valeat"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "pereat",
+        "pereat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "qui",
+        "qui#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nescit",
+        "nescit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amare",
+        "amare"
+       ],
+       [
+        ";",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p259",
+       "la-p037",
+       "la-v1360",
+       "la-v1319",
+       "la-p410",
+       "la-v1380",
+       "la-p617",
+       "la-v1388",
+       "la-p064",
+       "la-v171",
+       "la-p168",
+       "la-v1367"
+      ]
+     },
+     {
+      "t": "bis tanto pereat quisquis amare vetat.",
+      "p": [
+       [
+        "bis",
+        "bis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tanto",
+        "tanto"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pereat",
+        "pereat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "quisquis",
+        "quisquis#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "amare",
+        "amare#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vetat",
+        "vetat"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p925",
+       "la-p247",
+       "la-v1370",
+       "la-p617",
+       "la-v1388",
+       "la-p259",
+       "la-p037",
+       "la-v1319",
+       "la-p964",
+       "la-v1440"
+      ]
+     },
+     {
+      "t": "Non fui, fui, non sum, non desidero.",
+      "p": [
+       [
+        "Non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "fui",
+        "fui"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "fui",
+        "fui"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sum",
+        "sum"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "non",
+        "non"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "desidero",
+        "desidero"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p066",
+       "la-p003",
+       "la-v026",
+       "la-v008",
+       "la-p965"
+      ]
+     },
+     {
+      "t": "Sit tibi terra levis.",
+      "p": [
+       [
+        "Sit",
+        "sit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tibi",
+        "tibi"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "terra",
+        "terra"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "levis",
+        "levis"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p003",
+       "la-v034",
+       "la-p007",
+       "la-v049",
+       "la-p096",
+       "la-p966"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p958",
+    "la-p959",
+    "la-p007",
+    "la-v050",
+    "la-p066",
+    "la-p391",
+    "la-v1378",
+    "la-p960",
+    "la-v1436",
+    "la-p064",
+    "la-v171",
+    "la-p239",
+    "la-p961",
+    "la-v1437",
+    "la-p962",
+    "la-v1438",
+    "la-p963",
+    "la-v1439",
+    "la-p259",
+    "la-p037",
+    "la-v1360",
+    "la-v1319",
+    "la-p410",
+    "la-v1380",
+    "la-p617",
+    "la-v1388",
+    "la-p168",
+    "la-v1367",
+    "la-p925",
+    "la-p247",
+    "la-v1370",
+    "la-p964",
+    "la-v1440",
+    "la-p003",
+    "la-v026",
+    "la-v008",
+    "la-p965",
+    "la-v034",
+    "la-v049",
+    "la-p096",
+    "la-p966"
+   ],
+   "destinos": {
+    "admiror": {
+     "lema": "admiror",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "funcao": "depoente: admiro-me",
+     "wiki": "https://en.wiktionary.org/wiki/admiror#Latin",
+     "card": "la-p958"
+    },
+    "paries": {
+     "lema": "paries",
+     "classe": "substantivo masculino",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala: parede",
+     "wiki": "https://en.wiktionary.org/wiki/paries#Latin",
+     "card": "la-p959"
+    },
+    "te": {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "acusativo singular",
+     "funcao": "sujeito de cecidisse (oração infinitiva): tu",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+     "card": "la-p007"
+    },
+    "non": {
+     "lema": "non",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/non#Latin",
+     "card": "la-p066"
+    },
+    "cecidisse": {
+     "lema": "cado",
+     "classe": "verbo",
+     "forma": "infinitivo perfeito",
+     "funcao": "depende de admiror: ter caído",
+     "wiki": "https://en.wiktionary.org/wiki/cado#Latin",
+     "card": "la-p391"
+    },
+    "ruinis": {
+     "lema": "ruina",
+     "classe": "substantivo feminino",
+     "forma": "ablativo plural",
+     "funcao": "como: em ruínas",
+     "wiki": "https://en.wiktionary.org/wiki/ruina#Latin",
+     "card": "la-p960"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "retoma paries: tu que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "tot": {
+     "lema": "tot",
+     "classe": "adjetivo",
+     "funcao": "com scriptorum: tantos",
+     "wiki": "https://en.wiktionary.org/wiki/tot#Latin",
+     "card": "la-p239"
+    },
+    "scriptorum": {
+     "lema": "scriptor",
+     "classe": "substantivo masculino",
+     "forma": "genitivo plural",
+     "funcao": "de quem: dos escritores",
+     "wiki": "https://en.wiktionary.org/wiki/scriptor#Latin",
+     "card": "la-p961"
+    },
+    "taedia": {
+     "lema": "taedium",
+     "classe": "substantivo neutro",
+     "forma": "acusativo plural",
+     "funcao": "objeto de sustineas: os enfados",
+     "wiki": "https://en.wiktionary.org/wiki/taedium#Latin",
+     "card": "la-p962"
+    },
+    "sustineas": {
+     "lema": "sustineo",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 2ª pessoa do singular",
+     "funcao": "relativa de causa: suportas",
+     "wiki": "https://en.wiktionary.org/wiki/sustineo#Latin",
+     "card": "la-p963"
+    },
+    "quisquis": {
+     "lema": "quisquis",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de amat e de valeat: quem quer que",
+     "wiki": "https://en.wiktionary.org/wiki/quisquis#Latin",
+     "card": "la-p259"
+    },
+    "amat": {
+     "lema": "amo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "ama",
+     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
+     "card": "la-p037"
+    },
+    "valeat": {
+     "lema": "valeo",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 3ª pessoa do singular",
+     "funcao": "desejo: passe bem",
+     "wiki": "https://en.wiktionary.org/wiki/valeo#Latin",
+     "card": "la-p410"
+    },
+    "pereat": {
+     "lema": "pereo",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 3ª pessoa do singular",
+     "funcao": "desejo: morra",
+     "wiki": "https://en.wiktionary.org/wiki/pereo#Latin",
+     "card": "la-p617"
+    },
+    "qui#2": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de pereat e de nescit, sem antecedente: quem",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "nescit": {
+     "lema": "nescio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "não sabe",
+     "wiki": "https://en.wiktionary.org/wiki/nescio#Latin",
+     "card": "la-p168"
+    },
+    "amare": {
+     "lema": "amo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de nescit: amar",
+     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
+     "card": "la-p037"
+    },
+    "bis": {
+     "lema": "bis",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/bis#Latin",
+     "card": "la-p925"
+    },
+    "tanto": {
+     "lema": "tantus",
+     "classe": "adjetivo",
+     "forma": "ablativo neutro singular",
+     "funcao": "medida, com bis: duas vezes mais",
+     "wiki": "https://en.wiktionary.org/wiki/tantus#Latin",
+     "card": "la-p247"
+    },
+    "quisquis#2": {
+     "lema": "quisquis",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de pereat e de vetat: quem quer que",
+     "wiki": "https://en.wiktionary.org/wiki/quisquis#Latin",
+     "card": "la-p259"
+    },
+    "amare#2": {
+     "lema": "amo",
+     "classe": "verbo",
+     "forma": "infinitivo presente",
+     "funcao": "depende de vetat: amar",
+     "wiki": "https://en.wiktionary.org/wiki/amo#Latin",
+     "card": "la-p037"
+    },
+    "vetat": {
+     "lema": "veto",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "proíbe",
+     "wiki": "https://en.wiktionary.org/wiki/veto#Latin",
+     "card": "la-p964"
+    },
+    "fui": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "perfeito do indicativo, 1ª pessoa do singular",
+     "funcao": "fui",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "sum": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "funcao": "sou",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "desidero": {
+     "lema": "desidero",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do singular",
+     "funcao": "desejo",
+     "wiki": "https://en.wiktionary.org/wiki/desidero#Latin",
+     "card": "la-p965"
+    },
+    "sit": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 3ª pessoa do singular",
+     "funcao": "desejo: seja",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "tibi": {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "dativo singular",
+     "funcao": "a quem: a ti",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+     "card": "la-p007"
+    },
+    "terra": {
+     "lema": "terra",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de sit: a terra",
+     "wiki": "https://en.wiktionary.org/wiki/terra#Latin",
+     "card": "la-p096"
+    },
+    "levis": {
+     "lema": "levis",
+     "classe": "adjetivo",
+     "forma": "nominativo feminino singular",
+     "funcao": "predicativo, concorda com terra: leve",
+     "wiki": "https://en.wiktionary.org/wiki/levis#Latin",
+     "card": "la-p966"
+    }
+   }
+  },
+  {
+   "id": "missal-romano/in-nomine-patris",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "In nomine Patris",
+   "autor": "Missal Romano",
+   "ano": null,
+   "biblioteca": null,
+   "blocos": [
+    [
+     {
+      "t": "In nomine Patris, et Filii, et Spiritus Sancti.",
+      "p": [
+       [
+        "In",
+        "in"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nomine",
+        "nomine"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Patris",
+        "patris"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Filii",
+        "filii"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Spiritus",
+        "spiritus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Sancti",
+        "sancti"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p022",
+       "la-p092",
+       "la-v1362",
+       "la-p072",
+       "la-v782",
+       "la-p009",
+       "la-p043",
+       "la-v137",
+       "la-p054",
+       "la-p084",
+       "la-v215"
+      ]
+     },
+     {
+      "t": "Amen.",
+      "p": [
+       [
+        "Amen",
+        "amen"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": []
+     },
+     {
+      "t": "Gratia Domini nostri Iesu Christi, et caritas Dei,",
+      "p": [
+       [
+        "Gratia",
+        "gratia"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Domini",
+        "domini"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nostri",
+        "nostri"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Iesu",
+        "iesu"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Christi",
+        "christi"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "caritas",
+        "caritas"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Dei",
+        "dei"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p050",
+       "la-p012",
+       "la-v054",
+       "la-p089",
+       "la-v221",
+       "la-p009",
+       "la-p002",
+       "la-p001",
+       "la-v001"
+      ]
+     },
+     {
+      "t": "et communicatio Sancti Spiritus sit cum omnibus vobis.",
+      "p": [
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "communicatio",
+        "communicatio"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Sancti",
+        "sancti"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Spiritus",
+        "spiritus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sit",
+        "sit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cum",
+        "cum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "omnibus",
+        "omnibus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vobis",
+        "vobis"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p009",
+       "la-p967",
+       "la-p084",
+       "la-v215",
+       "la-p054",
+       "la-p003",
+       "la-v034",
+       "la-p053",
+       "la-p019",
+       "la-v077",
+       "la-p049",
+       "la-v149"
+      ]
+     },
+     {
+      "t": "Et cum spiritu tuo.",
+      "p": [
+       [
+        "Et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cum",
+        "cum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "spiritu",
+        "spiritu"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tuo",
+        "tuo"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p009",
+       "la-p053",
+       "la-p054",
+       "la-v153",
+       "la-p055",
+       "la-v769"
+      ]
+     },
+     {
+      "t": "Dominus vobiscum.",
+      "p": [
+       [
+        "Dominus",
+        "dominus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vobiscum",
+        "vobiscum"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p012",
+       "la-p049",
+       "la-v149",
+       "la-p053"
+      ]
+     },
+     {
+      "t": "Et cum spiritu tuo.",
+      "p": [
+       [
+        "Et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cum",
+        "cum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "spiritu",
+        "spiritu"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tuo",
+        "tuo"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p009",
+       "la-p053",
+       "la-p054",
+       "la-v153",
+       "la-p055",
+       "la-v769"
+      ]
+     },
+     {
+      "t": "Fratres, agnoscamus peccata nostra,",
+      "p": [
+       [
+        "Fratres",
+        "fratres"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "agnoscamus",
+        "agnoscamus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "peccata",
+        "peccata"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nostra",
+        "nostra"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p545",
+       "la-v1387",
+       "la-p968",
+       "la-v1441",
+       "la-p449",
+       "la-v968",
+       "la-p089",
+       "la-v219"
+      ]
+     },
+     {
+      "t": "ut apti simus ad sacra mysteria celebranda.",
+      "p": [
+       [
+        "ut",
+        "ut"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "apti",
+        "apti"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "simus",
+        "simus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ad",
+        "ad"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sacra",
+        "sacra"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mysteria",
+        "mysteria"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "celebranda",
+        "celebranda"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p257",
+       "la-p969",
+       "la-v1442",
+       "la-p003",
+       "la-v035",
+       "la-p178",
+       "la-p970",
+       "la-v1443",
+       "la-p526",
+       "la-v1385",
+       "la-p971",
+       "la-v1444"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p022",
+    "la-p092",
+    "la-v1362",
+    "la-p072",
+    "la-v782",
+    "la-p009",
+    "la-p043",
+    "la-v137",
+    "la-p054",
+    "la-p084",
+    "la-v215",
+    "la-p050",
+    "la-p012",
+    "la-v054",
+    "la-p089",
+    "la-v221",
+    "la-p002",
+    "la-p001",
+    "la-v001",
+    "la-p967",
+    "la-p003",
+    "la-v034",
+    "la-p053",
+    "la-p019",
+    "la-v077",
+    "la-p049",
+    "la-v149",
+    "la-v153",
+    "la-p055",
+    "la-v769",
+    "la-p545",
+    "la-v1387",
+    "la-p968",
+    "la-v1441",
+    "la-p449",
+    "la-v968",
+    "la-v219",
+    "la-p257",
+    "la-p969",
+    "la-v1442",
+    "la-v035",
+    "la-p178",
+    "la-p970",
+    "la-v1443",
+    "la-p526",
+    "la-v1385",
+    "la-p971",
+    "la-v1444"
+   ],
+   "destinos": {
+    "in": {
+     "lema": "in",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/in#Latin",
+     "card": "la-p022"
+    },
+    "nomine": {
+     "lema": "nomen",
+     "classe": "substantivo neutro",
+     "forma": "ablativo singular",
+     "funcao": "depois de in: em nome",
+     "wiki": "https://en.wiktionary.org/wiki/nomen#Latin",
+     "card": "la-p092"
+    },
+    "patris": {
+     "lema": "pater",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "de quem é o nome: do Pai",
+     "wiki": "https://en.wiktionary.org/wiki/pater#Latin",
+     "card": "la-p072"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "filii": {
+     "lema": "filius",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "do Filho",
+     "wiki": "https://en.wiktionary.org/wiki/filius#Latin",
+     "card": "la-p043"
+    },
+    "spiritus": {
+     "lema": "spiritus",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "do Espírito",
+     "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin",
+     "card": "la-p054"
+    },
+    "sancti": {
+     "lema": "sanctus",
+     "classe": "adjetivo",
+     "forma": "genitivo masculino singular",
+     "funcao": "concorda com Spiritus",
+     "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin",
+     "card": "la-p084"
+    },
+    "amen": {
+     "lema": "amen",
+     "classe": "interjeição",
+     "def": [
+      "Amém: assim seja. Palavra hebraica que fecha a oração."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/amen#Latin",
+     "g": "gramatical"
+    },
+    "gratia": {
+     "lema": "gratia",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de sit: a graça",
+     "wiki": "https://en.wiktionary.org/wiki/gratia#Latin",
+     "card": "la-p050"
+    },
+    "domini": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "de quem é a graça: do Senhor",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "nostri": {
+     "lema": "noster",
+     "classe": "adjetivo",
+     "forma": "genitivo masculino singular",
+     "funcao": "concorda com Domini: nosso",
+     "wiki": "https://en.wiktionary.org/wiki/noster#Latin",
+     "card": "la-p089"
+    },
+    "iesu": {
+     "lema": "Iesus",
+     "classe": "nome próprio",
+     "forma": "genitivo singular",
+     "funcao": "do Senhor",
+     "def": [
+      "Jesus."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Iesus#Latin",
+     "g": "nome"
+    },
+    "christi": {
+     "lema": "Christus",
+     "classe": "nome próprio",
+     "forma": "genitivo singular",
+     "funcao": "de Cristo",
+     "def": [
+      "Cristo, o Ungido: título de Jesus."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Christus#Latin",
+     "g": "nome"
+    },
+    "caritas": {
+     "lema": "caritas",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de sit: o amor",
+     "wiki": "https://en.wiktionary.org/wiki/caritas#Latin",
+     "card": "la-p002"
+    },
+    "dei": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "de quem: de Deus",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "communicatio": {
+     "lema": "communicatio",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de sit: a comunhão",
+     "wiki": "https://en.wiktionary.org/wiki/communicatio#Latin",
+     "card": "la-p967"
+    },
+    "sit": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 3ª pessoa do singular",
+     "funcao": "desejo: esteja",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "cum": {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+     "card": "la-p053"
+    },
+    "omnibus": {
+     "lema": "omnis",
+     "classe": "adjetivo",
+     "forma": "ablativo masculino plural",
+     "funcao": "concorda com vobis: todos",
+     "wiki": "https://en.wiktionary.org/wiki/omnis#Latin",
+     "card": "la-p019"
+    },
+    "vobis": {
+     "lema": "vos",
+     "classe": "pronome",
+     "forma": "ablativo plural",
+     "funcao": "depois de cum: vós",
+     "wiki": "https://en.wiktionary.org/wiki/vos#Latin",
+     "card": "la-p049"
+    },
+    "spiritu": {
+     "lema": "spiritus",
+     "classe": "substantivo masculino",
+     "forma": "ablativo singular",
+     "funcao": "com quem",
+     "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin",
+     "card": "la-p054"
+    },
+    "tuo": {
+     "lema": "tuus",
+     "classe": "adjetivo",
+     "forma": "ablativo masculino singular",
+     "funcao": "concorda com spiritu",
+     "wiki": "https://en.wiktionary.org/wiki/tuus#Latin",
+     "card": "la-p055"
+    },
+    "dominus": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito: esteja",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "vobiscum": {
+     "partes": [
+      {
+       "lema": "vos",
+       "classe": "pronome",
+       "forma": "ablativo plural",
+       "funcao": "depois de cum: convosco",
+       "wiki": "https://en.wiktionary.org/wiki/vos#Latin",
+       "card": "la-p049"
+      },
+      {
+       "lema": "cum",
+       "classe": "preposição",
+       "forma": "preposição com ablativo",
+       "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+       "card": "la-p053"
+      }
+     ]
+    },
+    "fratres": {
+     "lema": "frater",
+     "classe": "substantivo masculino",
+     "forma": "vocativo plural",
+     "funcao": "a quem se fala: irmãos",
+     "wiki": "https://en.wiktionary.org/wiki/frater#Latin",
+     "card": "la-p545"
+    },
+    "agnoscamus": {
+     "lema": "agnosco",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 1ª pessoa do plural",
+     "funcao": "exortação: reconheçamos",
+     "wiki": "https://en.wiktionary.org/wiki/agnosco#Latin",
+     "card": "la-p968"
+    },
+    "peccata": {
+     "lema": "peccatum",
+     "classe": "substantivo neutro",
+     "forma": "acusativo plural",
+     "funcao": "objeto de agnoscamus: os pecados",
+     "wiki": "https://en.wiktionary.org/wiki/peccatum#Latin",
+     "card": "la-p449"
+    },
+    "nostra": {
+     "lema": "noster",
+     "classe": "adjetivo",
+     "forma": "acusativo neutro plural",
+     "funcao": "concorda com peccata: nossos",
+     "wiki": "https://en.wiktionary.org/wiki/noster#Latin",
+     "card": "la-p089"
+    },
+    "ut": {
+     "lema": "ut",
+     "classe": "advérbio",
+     "funcao": "com subjuntivo: para que",
+     "wiki": "https://en.wiktionary.org/wiki/ut#Latin",
+     "card": "la-p257"
+    },
+    "apti": {
+     "lema": "aptus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino plural",
+     "funcao": "predicativo de simus: aptos",
+     "wiki": "https://en.wiktionary.org/wiki/aptus#Latin",
+     "card": "la-p969"
+    },
+    "simus": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 1ª pessoa do plural",
+     "funcao": "depois de ut: sejamos",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "ad": {
+     "lema": "ad",
+     "classe": "preposição",
+     "forma": "preposição com acusativo",
+     "wiki": "https://en.wiktionary.org/wiki/ad#Latin",
+     "card": "la-p178"
+    },
+    "sacra": {
+     "lema": "sacer",
+     "classe": "adjetivo",
+     "forma": "acusativo neutro plural",
+     "funcao": "concorda com mysteria: sagrados",
+     "wiki": "https://en.wiktionary.org/wiki/sacer#Latin",
+     "card": "la-p970"
+    },
+    "mysteria": {
+     "lema": "mysterium",
+     "classe": "substantivo neutro",
+     "forma": "acusativo plural",
+     "funcao": "depois de ad: os mistérios",
+     "wiki": "https://en.wiktionary.org/wiki/mysterium#Latin",
+     "card": "la-p526"
+    },
+    "celebranda": {
+     "lema": "celebro",
+     "classe": "verbo",
+     "forma": "gerundivo, acusativo neutro plural",
+     "funcao": "concorda com mysteria: para celebrar",
+     "wiki": "https://en.wiktionary.org/wiki/celebro#Latin",
+     "card": "la-p971"
+    }
+   }
+  },
+  {
+   "id": "missal-romano/per-dominum-nostrum",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "Per Dominum nostrum",
+   "autor": "Missal Romano",
+   "ano": null,
+   "biblioteca": null,
+   "blocos": [
+    [
+     {
+      "t": "Oremus.",
+      "p": [
+       [
+        "Oremus",
+        "oremus"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p077",
+       "la-v784"
+      ]
+     },
+     {
+      "t": "Per Dominum nostrum Iesum Christum, Filium tuum,",
+      "p": [
+       [
+        "Per",
+        "per"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Dominum",
+        "dominum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nostrum",
+        "nostrum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Iesum",
+        "iesum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Christum",
+        "christum"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Filium",
+        "filium"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tuum",
+        "tuum"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p427",
+       "la-p012",
+       "la-v056",
+       "la-p089",
+       "la-v224",
+       "la-p043",
+       "la-v141",
+       "la-p055",
+       "la-v161"
+      ]
+     },
+     {
+      "t": "qui tecum vivit et regnat",
+      "p": [
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tecum",
+        "tecum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vivit",
+        "vivit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "regnat",
+        "regnat"
+       ]
+      ],
+      "requer": [
+       "la-p064",
+       "la-v171",
+       "la-p007",
+       "la-v050",
+       "la-p053",
+       "la-p508",
+       "la-v1046",
+       "la-p009",
+       "la-p311",
+       "la-v652"
+      ]
+     },
+     {
+      "t": "in unitate Spiritus Sancti, Deus,",
+      "p": [
+       [
+        "in",
+        "in"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "unitate",
+        "unitate"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Spiritus",
+        "spiritus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Sancti",
+        "sancti"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Deus",
+        "deus"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p022",
+       "la-p634",
+       "la-v1216",
+       "la-p054",
+       "la-p084",
+       "la-v215",
+       "la-p001"
+      ]
+     },
+     {
+      "t": "per omnia saecula saeculorum.",
+      "p": [
+       [
+        "per",
+        "per"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "omnia",
+        "omnia"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "saecula",
+        "saecula"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "saeculorum",
+        "saeculorum"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p427",
+       "la-p019",
+       "la-v076",
+       "la-p088",
+       "la-v217",
+       "la-v218"
+      ]
+     },
+     {
+      "t": "Amen.",
+      "p": [
+       [
+        "Amen",
+        "amen"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": []
+     },
+     {
+      "t": "Per Christum Dominum nostrum.",
+      "p": [
+       [
+        "Per",
+        "per"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Christum",
+        "christum#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Dominum",
+        "dominum#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nostrum",
+        "nostrum"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p427",
+       "la-p012",
+       "la-v056",
+       "la-p089",
+       "la-v224"
+      ]
+     },
+     {
+      "t": "Amen.",
+      "p": [
+       [
+        "Amen",
+        "amen"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": []
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p077",
+    "la-v784",
+    "la-p427",
+    "la-p012",
+    "la-v056",
+    "la-p089",
+    "la-v224",
+    "la-p043",
+    "la-v141",
+    "la-p055",
+    "la-v161",
+    "la-p064",
+    "la-v171",
+    "la-p007",
+    "la-v050",
+    "la-p053",
+    "la-p508",
+    "la-v1046",
+    "la-p009",
+    "la-p311",
+    "la-v652",
+    "la-p022",
+    "la-p634",
+    "la-v1216",
+    "la-p054",
+    "la-p084",
+    "la-v215",
+    "la-p001",
+    "la-p019",
+    "la-v076",
+    "la-p088",
+    "la-v217",
+    "la-v218"
+   ],
+   "destinos": {
+    "oremus": {
+     "lema": "oro",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 1ª pessoa do plural",
+     "funcao": "rezemos",
+     "wiki": "https://en.wiktionary.org/wiki/oro#Latin",
+     "card": "la-p077"
+    },
+    "per": {
+     "lema": "per",
+     "classe": "preposição",
+     "forma": "preposição com acusativo",
+     "wiki": "https://en.wiktionary.org/wiki/per#Latin",
+     "card": "la-p427"
+    },
+    "dominum": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo singular",
+     "funcao": "depois de per: pelo Senhor",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "nostrum": {
+     "lema": "noster",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino singular",
+     "funcao": "concorda com Dominum",
+     "wiki": "https://en.wiktionary.org/wiki/noster#Latin",
+     "card": "la-p089"
+    },
+    "iesum": {
+     "lema": "Iesus",
+     "classe": "nome próprio",
+     "forma": "acusativo singular",
+     "funcao": "o Senhor",
+     "def": [
+      "Jesus."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Iesus#Latin",
+     "g": "nome"
+    },
+    "christum": {
+     "lema": "Christus",
+     "classe": "nome próprio",
+     "forma": "acusativo singular",
+     "def": [
+      "Cristo, o Ungido: título de Jesus."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Christus#Latin",
+     "g": "nome"
+    },
+    "filium": {
+     "lema": "filius",
+     "classe": "substantivo masculino",
+     "forma": "acusativo singular",
+     "funcao": "aposto de Dominum: o Filho",
+     "wiki": "https://en.wiktionary.org/wiki/filius#Latin",
+     "card": "la-p043"
+    },
+    "tuum": {
+     "lema": "tuus",
+     "classe": "adjetivo",
+     "forma": "acusativo masculino singular",
+     "funcao": "concorda com Filium: teu",
+     "wiki": "https://en.wiktionary.org/wiki/tuus#Latin",
+     "card": "la-p055"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de vivit e de regnat, retoma Filium: que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "tecum": {
+     "partes": [
+      {
+       "lema": "tu",
+       "classe": "pronome",
+       "forma": "ablativo singular",
+       "funcao": "depois de cum",
+       "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+       "card": "la-p007"
+      },
+      {
+       "lema": "cum",
+       "classe": "preposição",
+       "forma": "preposição com ablativo",
+       "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+       "card": "la-p053"
+      }
+     ]
+    },
+    "vivit": {
+     "lema": "vivo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "vive",
+     "wiki": "https://en.wiktionary.org/wiki/vivo#Latin",
+     "card": "la-p508"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "regnat": {
+     "lema": "regno",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "reina",
+     "wiki": "https://en.wiktionary.org/wiki/regno#Latin",
+     "card": "la-p311"
+    },
+    "in": {
+     "lema": "in",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/in#Latin",
+     "card": "la-p022"
+    },
+    "unitate": {
+     "lema": "unitas",
+     "classe": "substantivo feminino",
+     "forma": "ablativo singular",
+     "funcao": "depois de in: na unidade",
+     "wiki": "https://en.wiktionary.org/wiki/unitas#Latin",
+     "card": "la-p634"
+    },
+    "spiritus": {
+     "lema": "spiritus",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "do Espírito",
+     "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin",
+     "card": "la-p054"
+    },
+    "sancti": {
+     "lema": "sanctus",
+     "classe": "adjetivo",
+     "forma": "genitivo masculino singular",
+     "funcao": "concorda com Spiritus",
+     "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin",
+     "card": "la-p084"
+    },
+    "deus": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "aposto de qui: (sendo) Deus",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "omnia": {
+     "lema": "omnis",
+     "classe": "adjetivo",
+     "forma": "acusativo neutro plural",
+     "funcao": "concorda com saecula",
+     "wiki": "https://en.wiktionary.org/wiki/omnis#Latin",
+     "card": "la-p019"
+    },
+    "saecula": {
+     "lema": "saeculum",
+     "classe": "substantivo neutro",
+     "forma": "acusativo plural",
+     "funcao": "depois de per",
+     "wiki": "https://en.wiktionary.org/wiki/saeculum#Latin",
+     "card": "la-p088"
+    },
+    "saeculorum": {
+     "lema": "saeculum",
+     "classe": "substantivo neutro",
+     "forma": "genitivo plural",
+     "funcao": "dos séculos",
+     "wiki": "https://en.wiktionary.org/wiki/saeculum#Latin",
+     "card": "la-p088"
+    },
+    "amen": {
+     "lema": "amen",
+     "classe": "interjeição",
+     "def": [
+      "Amém: assim seja. Palavra hebraica que fecha a oração."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/amen#Latin",
+     "g": "gramatical"
+    },
+    "christum#2": {
+     "lema": "Christus",
+     "classe": "nome próprio",
+     "funcao": "Cristo",
+     "def": [
+      "Cristo, o Ungido: título de Jesus."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Christus#Latin",
+     "g": "nome"
+    },
+    "dominum#2": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo singular",
+     "funcao": "concorda com Christum",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    }
+   }
+  },
+  {
+   "id": "missal-romano/verbum-domini",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "Verbum Domini",
+   "autor": "Missal Romano",
+   "ano": null,
+   "biblioteca": null,
+   "blocos": [
+    [
+     {
+      "t": "Verbum Domini.",
+      "p": [
+       [
+        "Verbum",
+        "verbum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Domini",
+        "domini"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p057",
+       "la-p012",
+       "la-v054"
+      ]
+     },
+     {
+      "t": "Deo gratias.",
+      "p": [
+       [
+        "Deo",
+        "deo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "gratias",
+        "gratias"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p001",
+       "la-v002",
+       "la-p050",
+       "la-v1361"
+      ]
+     },
+     {
+      "t": "Dominus vobiscum.",
+      "p": [
+       [
+        "Dominus",
+        "dominus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vobiscum",
+        "vobiscum"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p012",
+       "la-p049",
+       "la-v149",
+       "la-p053"
+      ]
+     },
+     {
+      "t": "Et cum spiritu tuo.",
+      "p": [
+       [
+        "Et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cum",
+        "cum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "spiritu",
+        "spiritu"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tuo",
+        "tuo"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p009",
+       "la-p053",
+       "la-p054",
+       "la-v153",
+       "la-p055",
+       "la-v769"
+      ]
+     },
+     {
+      "t": "Lectio sancti Evangelii secundum Matthaeum.",
+      "p": [
+       [
+        "Lectio",
+        "lectio"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sancti",
+        "sancti"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Evangelii",
+        "evangelii"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "secundum",
+        "secundum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Matthaeum",
+        "matthaeum"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p972",
+       "la-p084",
+       "la-v215",
+       "la-p973",
+       "la-v1445",
+       "la-p465"
+      ]
+     },
+     {
+      "t": "Gloria tibi, Domine.",
+      "p": [
+       [
+        "Gloria",
+        "gloria"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tibi",
+        "tibi"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Domine",
+        "domine"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p051",
+       "la-p007",
+       "la-v049",
+       "la-p012",
+       "la-v053"
+      ]
+     },
+     {
+      "t": "Verbum Domini.",
+      "p": [
+       [
+        "Verbum",
+        "verbum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Domini",
+        "domini"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p057",
+       "la-p012",
+       "la-v054"
+      ]
+     },
+     {
+      "t": "Laus tibi, Christe.",
+      "p": [
+       [
+        "Laus",
+        "laus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tibi",
+        "tibi"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Christe",
+        "christe"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p301",
+       "la-p007",
+       "la-v049"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p057",
+    "la-p012",
+    "la-v054",
+    "la-p001",
+    "la-v002",
+    "la-p050",
+    "la-v1361",
+    "la-p049",
+    "la-v149",
+    "la-p053",
+    "la-p009",
+    "la-p054",
+    "la-v153",
+    "la-p055",
+    "la-v769",
+    "la-p972",
+    "la-p084",
+    "la-v215",
+    "la-p973",
+    "la-v1445",
+    "la-p465",
+    "la-p051",
+    "la-p007",
+    "la-v049",
+    "la-v053",
+    "la-p301"
+   ],
+   "destinos": {
+    "verbum": {
+     "lema": "verbum",
+     "classe": "substantivo neutro",
+     "forma": "nominativo singular",
+     "funcao": "(eis) a palavra",
+     "wiki": "https://en.wiktionary.org/wiki/verbum#Latin",
+     "card": "la-p057"
+    },
+    "domini": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "de quem: do Senhor",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "deo": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "dativo singular",
+     "funcao": "a quem: a Deus",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "gratias": {
+     "lema": "gratia",
+     "classe": "substantivo feminino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de agimus, subentendido: graças",
+     "wiki": "https://en.wiktionary.org/wiki/gratia#Latin",
+     "card": "la-p050"
+    },
+    "dominus": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito: esteja",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "vobiscum": {
+     "partes": [
+      {
+       "lema": "vos",
+       "classe": "pronome",
+       "forma": "ablativo plural",
+       "funcao": "depois de cum: convosco",
+       "wiki": "https://en.wiktionary.org/wiki/vos#Latin",
+       "card": "la-p049"
+      },
+      {
+       "lema": "cum",
+       "classe": "preposição",
+       "forma": "preposição com ablativo",
+       "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+       "card": "la-p053"
+      }
+     ]
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "cum": {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+     "card": "la-p053"
+    },
+    "spiritu": {
+     "lema": "spiritus",
+     "classe": "substantivo masculino",
+     "forma": "ablativo singular",
+     "funcao": "com quem",
+     "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin",
+     "card": "la-p054"
+    },
+    "tuo": {
+     "lema": "tuus",
+     "classe": "adjetivo",
+     "forma": "ablativo masculino singular",
+     "funcao": "concorda com spiritu",
+     "wiki": "https://en.wiktionary.org/wiki/tuus#Latin",
+     "card": "la-p055"
+    },
+    "lectio": {
+     "lema": "lectio",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "(eis) a leitura",
+     "wiki": "https://en.wiktionary.org/wiki/lectio#Latin",
+     "card": "la-p972"
+    },
+    "sancti": {
+     "lema": "sanctus",
+     "classe": "adjetivo",
+     "forma": "genitivo neutro singular",
+     "funcao": "concorda com Evangelii: santo",
+     "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin",
+     "card": "la-p084"
+    },
+    "evangelii": {
+     "lema": "evangelium",
+     "classe": "substantivo neutro",
+     "forma": "genitivo singular",
+     "funcao": "de quê: do Evangelho",
+     "wiki": "https://en.wiktionary.org/wiki/evangelium#Latin",
+     "card": "la-p973"
+    },
+    "secundum": {
+     "lema": "secundum",
+     "classe": "preposição",
+     "forma": "preposição com acusativo",
+     "wiki": "https://en.wiktionary.org/wiki/secundum#Latin",
+     "card": "la-p465"
+    },
+    "matthaeum": {
+     "lema": "Matthaeus",
+     "classe": "nome próprio",
+     "forma": "acusativo singular",
+     "funcao": "depois de secundum",
+     "def": [
+      "Mateus, o apóstolo e evangelista."
+     ],
+     "g": "nome"
+    },
+    "gloria": {
+     "lema": "gloria",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "(seja) a glória",
+     "wiki": "https://en.wiktionary.org/wiki/gloria#Latin",
+     "card": "la-p051"
+    },
+    "tibi": {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "dativo singular",
+     "funcao": "a quem: a ti",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin",
+     "card": "la-p007"
+    },
+    "domine": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "laus": {
+     "lema": "laus",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "(seja) o louvor",
+     "wiki": "https://en.wiktionary.org/wiki/laus#Latin",
+     "card": "la-p301"
+    },
+    "christe": {
+     "lema": "Christus",
+     "classe": "nome próprio",
+     "forma": "vocativo singular",
+     "funcao": "a quem se fala",
+     "def": [
+      "Cristo, o Ungido: título de Jesus."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Christus#Latin",
+     "g": "nome"
+    }
+   }
+  },
+  {
+   "id": "missal-romano/sursum-corda",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "Sursum corda",
+   "autor": "Missal Romano",
+   "ano": null,
+   "biblioteca": null,
+   "blocos": [
+    [
+     {
+      "t": "Dominus vobiscum.",
+      "p": [
+       [
+        "Dominus",
+        "dominus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vobiscum",
+        "vobiscum"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p012",
+       "la-p049",
+       "la-v149",
+       "la-p053"
+      ]
+     },
+     {
+      "t": "Et cum spiritu tuo.",
+      "p": [
+       [
+        "Et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cum",
+        "cum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "spiritu",
+        "spiritu"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tuo",
+        "tuo"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p009",
+       "la-p053",
+       "la-p054",
+       "la-v153",
+       "la-p055",
+       "la-v769"
+      ]
+     },
+     {
+      "t": "Sursum corda.",
+      "p": [
+       [
+        "Sursum",
+        "sursum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "corda",
+        "corda"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p974",
+       "la-p415",
+       "la-v916"
+      ]
+     },
+     {
+      "t": "Habemus ad Dominum.",
+      "p": [
+       [
+        "Habemus",
+        "habemus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "ad",
+        "ad"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Dominum",
+        "dominum"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p504",
+       "la-v1383",
+       "la-p178",
+       "la-p012",
+       "la-v056"
+      ]
+     },
+     {
+      "t": "Gratias agamus Domino Deo nostro.",
+      "p": [
+       [
+        "Gratias",
+        "gratias"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "agamus",
+        "agamus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Domino",
+        "domino"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Deo",
+        "deo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nostro",
+        "nostro"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p050",
+       "la-v1361",
+       "la-p975",
+       "la-v1446",
+       "la-p012",
+       "la-v055",
+       "la-p001",
+       "la-v002",
+       "la-p089",
+       "la-v223"
+      ]
+     },
+     {
+      "t": "Dignum et iustum est.",
+      "p": [
+       [
+        "Dignum",
+        "dignum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "iustum",
+        "iustum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p331",
+       "la-v1374",
+       "la-p009",
+       "la-p976",
+       "la-v1447",
+       "la-p003",
+       "la-v010"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p012",
+    "la-p049",
+    "la-v149",
+    "la-p053",
+    "la-p009",
+    "la-p054",
+    "la-v153",
+    "la-p055",
+    "la-v769",
+    "la-p974",
+    "la-p415",
+    "la-v916",
+    "la-p504",
+    "la-v1383",
+    "la-p178",
+    "la-v056",
+    "la-p050",
+    "la-v1361",
+    "la-p975",
+    "la-v1446",
+    "la-v055",
+    "la-p001",
+    "la-v002",
+    "la-p089",
+    "la-v223",
+    "la-p331",
+    "la-v1374",
+    "la-p976",
+    "la-v1447",
+    "la-p003",
+    "la-v010"
+   ],
+   "destinos": {
+    "dominus": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito: esteja",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "vobiscum": {
+     "partes": [
+      {
+       "lema": "vos",
+       "classe": "pronome",
+       "forma": "ablativo plural",
+       "funcao": "depois de cum: convosco",
+       "wiki": "https://en.wiktionary.org/wiki/vos#Latin",
+       "card": "la-p049"
+      },
+      {
+       "lema": "cum",
+       "classe": "preposição",
+       "forma": "preposição com ablativo",
+       "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+       "card": "la-p053"
+      }
+     ]
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "cum": {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+     "card": "la-p053"
+    },
+    "spiritu": {
+     "lema": "spiritus",
+     "classe": "substantivo masculino",
+     "forma": "ablativo singular",
+     "funcao": "com quem",
+     "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin",
+     "card": "la-p054"
+    },
+    "tuo": {
+     "lema": "tuus",
+     "classe": "adjetivo",
+     "forma": "ablativo masculino singular",
+     "funcao": "concorda com spiritu",
+     "wiki": "https://en.wiktionary.org/wiki/tuus#Latin",
+     "card": "la-p055"
+    },
+    "sursum": {
+     "lema": "sursum",
+     "classe": "advérbio",
+     "wiki": "https://en.wiktionary.org/wiki/sursum#Latin",
+     "card": "la-p974"
+    },
+    "corda": {
+     "lema": "cor",
+     "classe": "substantivo neutro",
+     "forma": "acusativo plural",
+     "funcao": "objeto de habete, subentendido: os corações",
+     "wiki": "https://en.wiktionary.org/wiki/cor#Latin",
+     "card": "la-p415"
+    },
+    "habemus": {
+     "lema": "habeo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 1ª pessoa do plural",
+     "funcao": "(os) temos",
+     "wiki": "https://en.wiktionary.org/wiki/habeo#Latin",
+     "card": "la-p504"
+    },
+    "ad": {
+     "lema": "ad",
+     "classe": "preposição",
+     "forma": "preposição com acusativo",
+     "wiki": "https://en.wiktionary.org/wiki/ad#Latin",
+     "card": "la-p178"
+    },
+    "dominum": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "acusativo singular",
+     "funcao": "depois de ad: para o Senhor",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "gratias": {
+     "lema": "gratia",
+     "classe": "substantivo feminino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de agamus: graças",
+     "wiki": "https://en.wiktionary.org/wiki/gratia#Latin",
+     "card": "la-p050"
+    },
+    "agamus": {
+     "lema": "ago",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 1ª pessoa do plural",
+     "funcao": "exortação: demos",
+     "wiki": "https://en.wiktionary.org/wiki/ago#Latin",
+     "card": "la-p975"
+    },
+    "domino": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "dativo singular",
+     "funcao": "a quem: ao Senhor",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "deo": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "dativo singular",
+     "funcao": "aposto de Domino: Deus",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "nostro": {
+     "lema": "noster",
+     "classe": "adjetivo",
+     "forma": "dativo masculino singular",
+     "funcao": "concorda com Deo: nosso",
+     "wiki": "https://en.wiktionary.org/wiki/noster#Latin",
+     "card": "la-p089"
+    },
+    "dignum": {
+     "lema": "dignus",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro singular",
+     "funcao": "predicativo de est: digno",
+     "wiki": "https://en.wiktionary.org/wiki/dignus#Latin",
+     "card": "la-p331"
+    },
+    "iustum": {
+     "lema": "iustus",
+     "classe": "adjetivo",
+     "forma": "nominativo neutro singular",
+     "funcao": "predicativo de est: justo",
+     "wiki": "https://en.wiktionary.org/wiki/iustus#Latin",
+     "card": "la-p976"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    }
+   }
+  },
+  {
+   "id": "missal-romano/sanctus",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "Sanctus",
+   "autor": "Missal Romano",
+   "ano": null,
+   "biblioteca": null,
+   "blocos": [
+    [
+     {
+      "t": "Sanctus, Sanctus, Sanctus Dominus Deus Sabaoth.",
+      "p": [
+       [
+        "Sanctus",
+        "sanctus"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Sanctus",
+        "sanctus"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "Sanctus",
+        "sanctus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Dominus",
+        "dominus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Deus",
+        "deus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Sabaoth",
+        "sabaoth"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p084",
+       "la-p012",
+       "la-p001"
+      ]
+     },
+     {
+      "t": "Pleni sunt caeli et terra gloria tua.",
+      "p": [
+       [
+        "Pleni",
+        "pleni"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "sunt",
+        "sunt"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "caeli",
+        "caeli"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "terra",
+        "terra"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "gloria",
+        "gloria"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tua",
+        "tua"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p111",
+       "la-v1364",
+       "la-p003",
+       "la-v013",
+       "la-p090",
+       "la-v225",
+       "la-p009",
+       "la-p096",
+       "la-p051",
+       "la-p055",
+       "la-v156"
+      ]
+     },
+     {
+      "t": "Hosanna in excelsis.",
+      "p": [
+       [
+        "Hosanna",
+        "hosanna"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "in",
+        "in"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "excelsis",
+        "excelsis"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p022",
+       "la-p052",
+       "la-v152"
+      ]
+     },
+     {
+      "t": "Benedictus qui venit in nomine Domini.",
+      "p": [
+       [
+        "Benedictus",
+        "benedictus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "venit",
+        "venit"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "in",
+        "in"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nomine",
+        "nomine"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Domini",
+        "domini"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p112",
+       "la-v255",
+       "la-p064",
+       "la-v171",
+       "la-p038",
+       "la-v124",
+       "la-p022",
+       "la-p092",
+       "la-v1362",
+       "la-p012",
+       "la-v054"
+      ]
+     },
+     {
+      "t": "Hosanna in excelsis.",
+      "p": [
+       [
+        "Hosanna",
+        "hosanna"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "in",
+        "in"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "excelsis",
+        "excelsis"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p022",
+       "la-p052",
+       "la-v152"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p084",
+    "la-p012",
+    "la-p001",
+    "la-p111",
+    "la-v1364",
+    "la-p003",
+    "la-v013",
+    "la-p090",
+    "la-v225",
+    "la-p009",
+    "la-p096",
+    "la-p051",
+    "la-p055",
+    "la-v156",
+    "la-p022",
+    "la-p052",
+    "la-v152",
+    "la-p112",
+    "la-v255",
+    "la-p064",
+    "la-v171",
+    "la-p038",
+    "la-v124",
+    "la-p092",
+    "la-v1362",
+    "la-v054"
+   ],
+   "destinos": {
+    "sanctus": {
+     "lema": "sanctus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "predicativo: santo",
+     "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin",
+     "card": "la-p084"
+    },
+    "dominus": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito, sem verbo: o Senhor",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "deus": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "aposto de Dominus",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "sabaoth": {
+     "lema": "Sabaoth",
+     "classe": "nome (hebraico)",
+     "def": [
+      "Dos exércitos: palavra hebraica, em «Senhor Deus Sabaoth», o Senhor dos exércitos (do céu)."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/Sabaoth#Latin",
+     "g": "gramatical"
+    },
+    "pleni": {
+     "lema": "plenus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino plural",
+     "funcao": "predicativo de sunt: cheios",
+     "wiki": "https://en.wiktionary.org/wiki/plenus#Latin",
+     "card": "la-p111"
+    },
+    "sunt": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do plural",
+     "funcao": "estão",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "caeli": {
+     "lema": "caelum",
+     "classe": "substantivo neutro",
+     "forma": "nominativo plural",
+     "funcao": "sujeito de sunt: os céus",
+     "wiki": "https://en.wiktionary.org/wiki/caelum#Latin",
+     "card": "la-p090"
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "terra": {
+     "lema": "terra",
+     "classe": "substantivo feminino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de sunt: a terra",
+     "wiki": "https://en.wiktionary.org/wiki/terra#Latin",
+     "card": "la-p096"
+    },
+    "gloria": {
+     "lema": "gloria",
+     "classe": "substantivo feminino",
+     "forma": "ablativo singular",
+     "funcao": "de quê: da glória",
+     "wiki": "https://en.wiktionary.org/wiki/gloria#Latin",
+     "card": "la-p051"
+    },
+    "tua": {
+     "lema": "tuus",
+     "classe": "adjetivo",
+     "forma": "ablativo feminino singular",
+     "funcao": "concorda com gloria: tua",
+     "wiki": "https://en.wiktionary.org/wiki/tuus#Latin",
+     "card": "la-p055"
+    },
+    "hosanna": {
+     "lema": "hosanna",
+     "classe": "interjeição",
+     "def": [
+      "Hosana: salva, por favor! Aclamação hebraica de louvor."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/hosanna#Latin",
+     "g": "gramatical"
+    },
+    "in": {
+     "lema": "in",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/in#Latin",
+     "card": "la-p022"
+    },
+    "excelsis": {
+     "lema": "excelsus",
+     "classe": "adjetivo",
+     "forma": "ablativo neutro plural",
+     "funcao": "depois de in: nas alturas",
+     "wiki": "https://en.wiktionary.org/wiki/excelsus#Latin",
+     "card": "la-p052"
+    },
+    "benedictus": {
+     "lema": "benedico",
+     "classe": "verbo",
+     "forma": "particípio perfeito, nominativo masculino singular",
+     "funcao": "predicativo: bendito",
+     "wiki": "https://en.wiktionary.org/wiki/benedico#Latin",
+     "card": "la-p112"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "sujeito de venit: o que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "venit": {
+     "lema": "venio",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "vem",
+     "wiki": "https://en.wiktionary.org/wiki/venio#Latin",
+     "card": "la-p038"
+    },
+    "nomine": {
+     "lema": "nomen",
+     "classe": "substantivo neutro",
+     "forma": "ablativo singular",
+     "funcao": "depois de in: em nome",
+     "wiki": "https://en.wiktionary.org/wiki/nomen#Latin",
+     "card": "la-p092"
+    },
+    "domini": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "de quem: do Senhor",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    }
+   }
+  },
+  {
+   "id": "missal-romano/agnus-dei",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "Agnus Dei",
+   "autor": "Missal Romano",
+   "ano": null,
+   "biblioteca": null,
+   "blocos": [
+    [
+     {
+      "t": "Agnus Dei, qui tollis peccata mundi:",
+      "p": [
+       [
+        "Agnus",
+        "agnus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Dei",
+        "dei"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tollis",
+        "tollis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "peccata",
+        "peccata"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mundi",
+        "mundi"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p181",
+       "la-p001",
+       "la-v001",
+       "la-p064",
+       "la-v171",
+       "la-p032",
+       "la-v1356",
+       "la-p449",
+       "la-v968",
+       "la-p042",
+       "la-v136"
+      ]
+     },
+     {
+      "t": "miserere nobis.",
+      "p": [
+       [
+        "miserere",
+        "miserere"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nobis",
+        "nobis"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p400",
+       "la-v896",
+       "la-p079",
+       "la-v213"
+      ]
+     },
+     {
+      "t": "Agnus Dei, qui tollis peccata mundi:",
+      "p": [
+       [
+        "Agnus",
+        "agnus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Dei",
+        "dei"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tollis",
+        "tollis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "peccata",
+        "peccata"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mundi",
+        "mundi"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p181",
+       "la-p001",
+       "la-v001",
+       "la-p064",
+       "la-v171",
+       "la-p032",
+       "la-v1356",
+       "la-p449",
+       "la-v968",
+       "la-p042",
+       "la-v136"
+      ]
+     },
+     {
+      "t": "miserere nobis.",
+      "p": [
+       [
+        "miserere",
+        "miserere"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nobis",
+        "nobis"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p400",
+       "la-v896",
+       "la-p079",
+       "la-v213"
+      ]
+     },
+     {
+      "t": "Agnus Dei, qui tollis peccata mundi:",
+      "p": [
+       [
+        "Agnus",
+        "agnus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Dei",
+        "dei"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "qui",
+        "qui"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tollis",
+        "tollis"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "peccata",
+        "peccata"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "mundi",
+        "mundi"
+       ],
+       [
+        ":",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p181",
+       "la-p001",
+       "la-v001",
+       "la-p064",
+       "la-v171",
+       "la-p032",
+       "la-v1356",
+       "la-p449",
+       "la-v968",
+       "la-p042",
+       "la-v136"
+      ]
+     },
+     {
+      "t": "dona nobis pacem.",
+      "p": [
+       [
+        "dona",
+        "dona"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "nobis",
+        "nobis#2"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "pacem",
+        "pacem"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p639",
+       "la-v1222",
+       "la-p079",
+       "la-v213",
+       "la-p048",
+       "la-v145"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p181",
+    "la-p001",
+    "la-v001",
+    "la-p064",
+    "la-v171",
+    "la-p032",
+    "la-v1356",
+    "la-p449",
+    "la-v968",
+    "la-p042",
+    "la-v136",
+    "la-p400",
+    "la-v896",
+    "la-p079",
+    "la-v213",
+    "la-p639",
+    "la-v1222",
+    "la-p048",
+    "la-v145"
+   ],
+   "destinos": {
+    "agnus": {
+     "lema": "agnus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "como vocativo, a quem se fala: Cordeiro",
+     "wiki": "https://en.wiktionary.org/wiki/agnus#Latin",
+     "card": "la-p181"
+    },
+    "dei": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "de quem: de Deus",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "qui": {
+     "lema": "qui",
+     "classe": "pronome",
+     "forma": "nominativo masculino singular",
+     "funcao": "retoma Agnus: que",
+     "wiki": "https://en.wiktionary.org/wiki/qui#Latin",
+     "card": "la-p064"
+    },
+    "tollis": {
+     "lema": "tollo",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 2ª pessoa do singular",
+     "funcao": "tiras",
+     "wiki": "https://en.wiktionary.org/wiki/tollo#Latin",
+     "card": "la-p032"
+    },
+    "peccata": {
+     "lema": "peccatum",
+     "classe": "substantivo neutro",
+     "forma": "acusativo plural",
+     "funcao": "objeto de tollis: os pecados",
+     "wiki": "https://en.wiktionary.org/wiki/peccatum#Latin",
+     "card": "la-p449"
+    },
+    "mundi": {
+     "lema": "mundus",
+     "classe": "substantivo masculino",
+     "forma": "genitivo singular",
+     "funcao": "de quem: do mundo",
+     "wiki": "https://en.wiktionary.org/wiki/mundus#Latin",
+     "card": "la-p042"
+    },
+    "miserere": {
+     "lema": "misereor",
+     "classe": "verbo",
+     "forma": "imperativo presente, 2ª pessoa do singular",
+     "funcao": "depoente: tem piedade",
+     "wiki": "https://en.wiktionary.org/wiki/misereor#Latin",
+     "card": "la-p400"
+    },
+    "nobis": {
+     "lema": "nos",
+     "classe": "pronome",
+     "forma": "dativo plural",
+     "funcao": "de quem: de nós",
+     "wiki": "https://en.wiktionary.org/wiki/nos#Latin",
+     "card": "la-p079"
+    },
+    "dona": {
+     "lema": "dono",
+     "classe": "verbo",
+     "forma": "imperativo presente, 2ª pessoa do singular",
+     "funcao": "dá",
+     "wiki": "https://en.wiktionary.org/wiki/dono#Latin",
+     "card": "la-p639"
+    },
+    "nobis#2": {
+     "lema": "nos",
+     "classe": "pronome",
+     "forma": "dativo plural",
+     "funcao": "a quem: a nós",
+     "wiki": "https://en.wiktionary.org/wiki/nos#Latin",
+     "card": "la-p079"
+    },
+    "pacem": {
+     "lema": "pax",
+     "classe": "substantivo feminino",
+     "forma": "acusativo singular",
+     "funcao": "objeto de dona: a paz",
+     "wiki": "https://en.wiktionary.org/wiki/pax#Latin",
+     "card": "la-p048"
+    }
+   }
+  },
+  {
+   "id": "missal-romano/ite-missa-est",
+   "idioma": "la",
+   "tipo": "prosa",
+   "titulo": "Ite, missa est",
+   "autor": "Missal Romano",
+   "ano": null,
+   "biblioteca": null,
+   "blocos": [
+    [
+     {
+      "t": "Dominus vobiscum.",
+      "p": [
+       [
+        "Dominus",
+        "dominus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vobiscum",
+        "vobiscum"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p012",
+       "la-p049",
+       "la-v149",
+       "la-p053"
+      ]
+     },
+     {
+      "t": "Et cum spiritu tuo.",
+      "p": [
+       [
+        "Et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "cum",
+        "cum"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "spiritu",
+        "spiritu"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "tuo",
+        "tuo"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p009",
+       "la-p053",
+       "la-p054",
+       "la-v153",
+       "la-p055",
+       "la-v769"
+      ]
+     },
+     {
+      "t": "Benedicat vos omnipotens Deus,",
+      "p": [
+       [
+        "Benedicat",
+        "benedicat"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "vos",
+        "vos"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "omnipotens",
+        "omnipotens"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Deus",
+        "deus"
+       ],
+       [
+        ",",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p112",
+       "la-v252",
+       "la-p049",
+       "la-p428",
+       "la-p001"
+      ]
+     },
+     {
+      "t": "Pater, et Filius, et Spiritus Sanctus.",
+      "p": [
+       [
+        "Pater",
+        "pater"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Filius",
+        "filius"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "et",
+        "et"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Spiritus",
+        "spiritus"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "Sanctus",
+        "sanctus"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p072",
+       "la-p009",
+       "la-p043",
+       "la-p054",
+       "la-p084"
+      ]
+     },
+     {
+      "t": "Amen.",
+      "p": [
+       [
+        "Amen",
+        "amen"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": []
+     },
+     {
+      "t": "Ite, missa est.",
+      "p": [
+       [
+        "Ite",
+        "ite"
+       ],
+       [
+        ", ",
+        null
+       ],
+       [
+        "missa",
+        "missa"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "est",
+        "est"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p977",
+       "la-v1448",
+       "la-p706",
+       "la-v1392",
+       "la-p003",
+       "la-v010"
+      ]
+     },
+     {
+      "t": "Deo gratias.",
+      "p": [
+       [
+        "Deo",
+        "deo"
+       ],
+       [
+        " ",
+        null
+       ],
+       [
+        "gratias",
+        "gratias"
+       ],
+       [
+        ".",
+        null
+       ]
+      ],
+      "requer": [
+       "la-p001",
+       "la-v002",
+       "la-p050",
+       "la-v1361"
+      ]
+     }
+    ]
+   ],
+   "requerTodas": [
+    "la-p012",
+    "la-p049",
+    "la-v149",
+    "la-p053",
+    "la-p009",
+    "la-p054",
+    "la-v153",
+    "la-p055",
+    "la-v769",
+    "la-p112",
+    "la-v252",
+    "la-p428",
+    "la-p001",
+    "la-p072",
+    "la-p043",
+    "la-p084",
+    "la-p977",
+    "la-v1448",
+    "la-p706",
+    "la-v1392",
+    "la-p003",
+    "la-v010",
+    "la-v002",
+    "la-p050",
+    "la-v1361"
+   ],
+   "destinos": {
+    "dominus": {
+     "lema": "dominus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito: esteja",
+     "wiki": "https://en.wiktionary.org/wiki/dominus#Latin",
+     "card": "la-p012"
+    },
+    "vobiscum": {
+     "partes": [
+      {
+       "lema": "vos",
+       "classe": "pronome",
+       "forma": "ablativo plural",
+       "funcao": "depois de cum: convosco",
+       "wiki": "https://en.wiktionary.org/wiki/vos#Latin",
+       "card": "la-p049"
+      },
+      {
+       "lema": "cum",
+       "classe": "preposição",
+       "forma": "preposição com ablativo",
+       "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+       "card": "la-p053"
+      }
+     ]
+    },
+    "et": {
+     "lema": "et",
+     "classe": "conjunção",
+     "wiki": "https://en.wiktionary.org/wiki/et#Latin",
+     "card": "la-p009"
+    },
+    "cum": {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin",
+     "card": "la-p053"
+    },
+    "spiritu": {
+     "lema": "spiritus",
+     "classe": "substantivo masculino",
+     "forma": "ablativo singular",
+     "funcao": "com quem",
+     "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin",
+     "card": "la-p054"
+    },
+    "tuo": {
+     "lema": "tuus",
+     "classe": "adjetivo",
+     "forma": "ablativo masculino singular",
+     "funcao": "concorda com spiritu",
+     "wiki": "https://en.wiktionary.org/wiki/tuus#Latin",
+     "card": "la-p055"
+    },
+    "benedicat": {
+     "lema": "benedico",
+     "classe": "verbo",
+     "forma": "presente do subjuntivo, 3ª pessoa do singular",
+     "funcao": "desejo: abençoe",
+     "wiki": "https://en.wiktionary.org/wiki/benedico#Latin",
+     "card": "la-p112"
+    },
+    "vos": {
+     "lema": "vos",
+     "classe": "pronome",
+     "forma": "acusativo plural",
+     "funcao": "objeto de benedicat: vós",
+     "wiki": "https://en.wiktionary.org/wiki/vos#Latin",
+     "card": "la-p049"
+    },
+    "omnipotens": {
+     "lema": "omnipotens",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "concorda com Deus: todo-poderoso",
+     "wiki": "https://en.wiktionary.org/wiki/omnipotens#Latin",
+     "card": "la-p428"
+    },
+    "deus": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "sujeito de benedicat",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "pater": {
+     "lema": "pater",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "aposto de Deus: o Pai",
+     "wiki": "https://en.wiktionary.org/wiki/pater#Latin",
+     "card": "la-p072"
+    },
+    "filius": {
+     "lema": "filius",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "o Filho",
+     "wiki": "https://en.wiktionary.org/wiki/filius#Latin",
+     "card": "la-p043"
+    },
+    "spiritus": {
+     "lema": "spiritus",
+     "classe": "substantivo masculino",
+     "forma": "nominativo singular",
+     "funcao": "o Espírito",
+     "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin",
+     "card": "la-p054"
+    },
+    "sanctus": {
+     "lema": "sanctus",
+     "classe": "adjetivo",
+     "forma": "nominativo masculino singular",
+     "funcao": "concorda com Spiritus",
+     "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin",
+     "card": "la-p084"
+    },
+    "amen": {
+     "lema": "amen",
+     "classe": "interjeição",
+     "def": [
+      "Amém: assim seja. Palavra hebraica que fecha a oração."
+     ],
+     "wiki": "https://en.wiktionary.org/wiki/amen#Latin",
+     "g": "gramatical"
+    },
+    "ite": {
+     "lema": "eo",
+     "classe": "verbo",
+     "forma": "imperativo presente, 2ª pessoa do plural",
+     "funcao": "ide",
+     "wiki": "https://en.wiktionary.org/wiki/eo#Latin",
+     "card": "la-p977"
+    },
+    "missa": {
+     "lema": "mitto",
+     "classe": "verbo",
+     "forma": "particípio perfeito, nominativo feminino singular",
+     "funcao": "com est: está despedida (a assembleia)",
+     "wiki": "https://en.wiktionary.org/wiki/mitto#Latin",
+     "card": "la-p706"
+    },
+    "est": {
+     "lema": "sum",
+     "classe": "verbo",
+     "forma": "presente do indicativo, 3ª pessoa do singular",
+     "funcao": "com missa: perfeito passivo",
+     "wiki": "https://en.wiktionary.org/wiki/sum#Latin",
+     "card": "la-p003"
+    },
+    "deo": {
+     "lema": "deus",
+     "classe": "substantivo masculino",
+     "forma": "dativo singular",
+     "funcao": "a quem: a Deus",
+     "wiki": "https://en.wiktionary.org/wiki/deus#Latin",
+     "card": "la-p001"
+    },
+    "gratias": {
+     "lema": "gratia",
+     "classe": "substantivo feminino",
+     "forma": "acusativo plural",
+     "funcao": "objeto de agimus, subentendido: graças",
+     "wiki": "https://en.wiktionary.org/wiki/gratia#Latin",
+     "card": "la-p050"
     }
    }
   }

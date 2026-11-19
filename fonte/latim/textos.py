@@ -89,7 +89,8 @@ TEXTOS = {
                                   'fonte': 'Poemas, 5'},
     'catulo/multas-per-gentes': {'titulo': 'Multas per gentes', 'autor': 'Catulo', 'tipo': 'poema', 'ordem': 37,
                                  'fonte': 'Poemas, 101'},
-    # leva 1a de 19/11/2026 (LATIM.md §21): textos curtos fora da liturgia e diálogos curtos da Missa (só por escolha)
+    # leva 1a de 19/11/2026 (LATIM.md §21): textos curtos fora da liturgia e diálogos curtos da Missa (só por escolha);
+    # a liturgia fica só nos Cards, sem página na Biblioteca (o Gere, 19/11): «biblioteca» None
     'marcial/sunt-bona': {"titulo": "Sunt bona", "autor": "Marcial", "tipo": "poema", "ordem": 38, "fonte": "Epigramas, I,16"},
     'marcial/quem-recitas': {"titulo": "Quem recitas", "autor": "Marcial", "tipo": "poema", "ordem": 39, "fonte": "Epigramas, I,38"},
     'marcial/nuper-erat-medicus': {"titulo": "Nuper erat medicus", "autor": "Marcial", "tipo": "poema", "ordem": 40, "fonte": "Epigramas, I,47"},
@@ -100,17 +101,17 @@ TEXTOS = {
     'marcial/miraris-veteres': {"titulo": "Miraris veteres", "autor": "Marcial", "tipo": "poema", "ordem": 45, "fonte": "Epigramas, VIII,69"},
     'marcial/difficilis-facilis': {"titulo": "Difficilis facilis", "autor": "Marcial", "tipo": "poema", "ordem": 46, "fonte": "Epigramas, XII,46"},
     'catulo/nulli-se-dicit': {"titulo": "Nulli se dicit", "autor": "Catulo", "tipo": "poema", "ordem": 47, "fonte": "Poemas, 70"},
-    'publilio-siro/sententiae-parte-1': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 48, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 1, "trecho": "parte 1"},
-    'publilio-siro/sententiae-parte-2': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 49, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 2, "trecho": "parte 2"},
-    'publilio-siro/sententiae-parte-3': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 50, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 3, "trecho": "parte 3"},
+    'publilio-siro/sententiae-parte-1': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 48, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/publilio-siro/sententiae/"},
+    'publilio-siro/sententiae-parte-2': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 49, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/publilio-siro/sententiae/"},
+    'publilio-siro/sententiae-parte-3': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 50, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/publilio-siro/sententiae/"},
     'inscricoes/admiror-paries': {"titulo": "Admiror, paries", "autor": "Inscrições", "tipo": "poema", "ordem": 51, "fonte": "Grafites de Pompeia e epitáfios"},
-    'missal-romano/in-nomine-patris': {"titulo": "In nomine Patris", "autor": "Missal Romano", "tipo": "prosa", "ordem": 52, "fonte": "Ritos iniciais da Missa"},
-    'missal-romano/per-dominum-nostrum': {"titulo": "Per Dominum nostrum", "autor": "Missal Romano", "tipo": "prosa", "ordem": 53, "fonte": "A conclusão das orações da Missa"},
-    'missal-romano/verbum-domini': {"titulo": "Verbum Domini", "autor": "Missal Romano", "tipo": "prosa", "ordem": 54, "fonte": "As leituras da Missa"},
-    'missal-romano/sursum-corda': {"titulo": "Sursum corda", "autor": "Missal Romano", "tipo": "prosa", "ordem": 55, "fonte": "O diálogo do Prefácio"},
-    'missal-romano/sanctus': {"titulo": "Sanctus", "autor": "Missal Romano", "tipo": "prosa", "ordem": 56, "fonte": "Ordinário da Missa"},
-    'missal-romano/agnus-dei': {"titulo": "Agnus Dei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 57, "fonte": "Ordinário da Missa"},
-    'missal-romano/ite-missa-est': {"titulo": "Ite, missa est", "autor": "Missal Romano", "tipo": "prosa", "ordem": 58, "fonte": "Ritos finais da Missa"},
+    'missal-romano/in-nomine-patris': {"titulo": "In nomine Patris", "autor": "Missal Romano", "tipo": "prosa", "ordem": 52, "fonte": "Ritos iniciais da Missa", "biblioteca": None},
+    'missal-romano/per-dominum-nostrum': {"titulo": "Per Dominum nostrum", "autor": "Missal Romano", "tipo": "prosa", "ordem": 53, "fonte": "A conclusão das orações da Missa", "biblioteca": None},
+    'missal-romano/verbum-domini': {"titulo": "Verbum Domini", "autor": "Missal Romano", "tipo": "prosa", "ordem": 54, "fonte": "As leituras da Missa", "biblioteca": None},
+    'missal-romano/sursum-corda': {"titulo": "Sursum corda", "autor": "Missal Romano", "tipo": "prosa", "ordem": 55, "fonte": "O diálogo do Prefácio", "biblioteca": None},
+    'missal-romano/sanctus': {"titulo": "Sanctus", "autor": "Missal Romano", "tipo": "prosa", "ordem": 56, "fonte": "Ordinário da Missa", "biblioteca": None},
+    'missal-romano/agnus-dei': {"titulo": "Agnus Dei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 57, "fonte": "Ordinário da Missa", "biblioteca": None},
+    'missal-romano/ite-missa-est': {"titulo": "Ite, missa est", "autor": "Missal Romano", "tipo": "prosa", "ordem": 58, "fonte": "Ritos finais da Missa", "biblioteca": None},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»

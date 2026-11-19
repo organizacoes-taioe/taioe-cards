@@ -1084,9 +1084,12 @@ for (const b of baralhos) {
     if (!txt.id) erros.push(onde + ': falta o id');
     else if (idsDeTexto.has(txt.id)) erros.push(onde + ': id de texto repetido');
     idsDeTexto.add(txt.id);
-    for (const campo of ['idioma', 'tipo', 'titulo', 'autor', 'biblioteca', 'blocos', 'destinos']) {
+    for (const campo of ['idioma', 'tipo', 'titulo', 'autor', 'blocos', 'destinos']) {
       if (!txt[campo]) erros.push(onde + ': falta «' + campo + '»');
     }
+    /* o endereço na Biblioteca é opcional: a liturgia (Missal Romano, Liturgia das Horas) fica só nos
+       Cards (o Gere, 19/11/2026), e o app esconde o link quando ele falta */
+    if (txt.biblioteca != null && (typeof txt.biblioteca !== 'string' || !txt.biblioteca.startsWith('/biblioteca/'))) erros.push(onde + ': «biblioteca» é um endereço /biblioteca/… ou null');
     if (txt.tipo && txt.tipo !== 'poema' && txt.tipo !== 'prosa') erros.push(onde + ': o tipo é «poema» ou «prosa», não «' + txt.tipo + '»');
     if (txt.idioma && txt.idioma !== b.idioma) erros.push(onde + ': diz idioma «' + txt.idioma + '» e está na pasta de ' + b.idioma);
     const destinos = txt.destinos || {};

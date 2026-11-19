@@ -6259,5 +6259,1003 @@
    "la-v1286"
   ],
   "conjunto": "q-t313"
+ },
+ {
+  "id": "la-qt463a",
+  "tipo": "compreensao",
+  "la": "Sunt bona, sunt quaedam mediocria, sunt mala plura quae legis hic:",
+  "pergunta": "O que há em maior número?",
+  "pt": "as coisas ruins",
+  "aceitas": [
+   "as coisas ruins."
+  ],
+  "distratores": [
+   "as coisas boas",
+   "as coisas medianas",
+   "os leitores",
+   "os livros"
+  ],
+  "nota": "Plura, «em maior número», concorda com mala, as coisas ruins.\nBona e mediocria vêm sem comparação.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, I,16",
+  "de": "la-t463",
+  "requerTodas": [
+   "la-p003",
+   "la-p006",
+   "la-p880",
+   "la-p881",
+   "la-p675",
+   "la-p261",
+   "la-p064",
+   "la-p033",
+   "la-p882",
+   "la-v013",
+   "la-v045",
+   "la-v1394",
+   "la-v1395",
+   "la-v1390",
+   "la-v1371",
+   "la-v172",
+   "la-v1357"
+  ],
+  "conjunto": "q-t463"
+ },
+ {
+  "id": "la-qt464a",
+  "tipo": "compreensao",
+  "la": "aliter non fit, Avite, liber.",
+  "pergunta": "A quem o poeta fala?",
+  "pt": "a Avito",
+  "aceitas": [
+   "a Avito."
+  ],
+  "distratores": [
+   "ao livro",
+   "ao leitor",
+   "aos críticos",
+   "a si mesmo"
+  ],
+  "nota": "Avite é vocativo de Avitus: a quem se fala.\nLiber, nominativo, é o sujeito de fit.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, I,16",
+  "de": "la-t464",
+  "requerTodas": [
+   "la-p883",
+   "la-p066",
+   "la-p069",
+   "la-p884",
+   "la-v779"
+  ],
+  "conjunto": "q-t464"
+ },
+ {
+  "id": "la-qt465a",
+  "tipo": "compreensao",
+  "la": "Quem recitas meus est, o Fidentine, libellus:",
+  "pergunta": "De quem é o livrinho?",
+  "pt": "do poeta",
+  "aceitas": [
+   "do poeta."
+  ],
+  "distratores": [
+   "de Fidentino",
+   "do leitor",
+   "de um amigo",
+   "de ninguém"
+  ],
+  "nota": "Meus, «meu», concorda com libellus: o livrinho é de quem fala, o poeta.\nFidentine é vocativo: só o recita.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, I,38",
+  "de": "la-t465",
+  "requerTodas": [
+   "la-p064",
+   "la-p885",
+   "la-p013",
+   "la-p003",
+   "la-p365",
+   "la-p886",
+   "la-v176",
+   "la-v1396",
+   "la-v010"
+  ],
+  "conjunto": "q-t465"
+ },
+ {
+  "id": "la-qt466a",
+  "tipo": "compreensao",
+  "la": "sed male cum recitas, incipit esse tuus.",
+  "pergunta": "O que passa a ser de Fidentino?",
+  "pt": "o livrinho",
+  "aceitas": [
+   "o livrinho."
+  ],
+  "distratores": [
+   "o poeta",
+   "a leitura",
+   "o mal",
+   "a fama"
+  ],
+  "nota": "Incipit tem por sujeito o livrinho (libellus, da frase anterior); tuus concorda com ele.\nMale é advérbio: o modo de recitar.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, I,38",
+  "de": "la-t466",
+  "requerTodas": [
+   "la-p107",
+   "la-p887",
+   "la-p618",
+   "la-p885",
+   "la-p353",
+   "la-p003",
+   "la-p055",
+   "la-v1396",
+   "la-v1375",
+   "la-v038"
+  ],
+  "conjunto": "q-t466"
+ },
+ {
+  "id": "la-qt467a",
+  "tipo": "compreensao",
+  "la": "Nuper erat medicus, nunc est vispillo Diaulus:",
+  "pergunta": "O que Diaulo é agora?",
+  "pt": "coveiro",
+  "aceitas": [
+   "coveiro."
+  ],
+  "distratores": [
+   "médico",
+   "poeta",
+   "doente",
+   "barbeiro"
+  ],
+  "nota": "Nunc est vispillo: agora é coveiro.\nMedicus vem com erat, o imperfeito: era antes.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, I,47",
+  "de": "la-t467",
+  "requerTodas": [
+   "la-p888",
+   "la-p003",
+   "la-p889",
+   "la-p086",
+   "la-p890",
+   "la-v016",
+   "la-v010"
+  ],
+  "conjunto": "q-t467"
+ },
+ {
+  "id": "la-qt468a",
+  "tipo": "compreensao",
+  "la": "quod vispillo facit, fecerat et medicus.",
+  "pergunta": "O que o médico já fazia?",
+  "pt": "o mesmo que o coveiro",
+  "aceitas": [
+   "o mesmo que o coveiro."
+  ],
+  "distratores": [
+   "curar os seus doentes",
+   "escrever os seus versos",
+   "nada de útil",
+   "o contrário do coveiro"
+  ],
+  "nota": "Quod vispillo facit, fecerat et medicus: o que o coveiro faz, o médico também fizera.\nEt aqui é «também».",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, I,47",
+  "de": "la-t468",
+  "requerTodas": [
+   "la-p064",
+   "la-p890",
+   "la-p165",
+   "la-p009",
+   "la-p889",
+   "la-v173",
+   "la-v1365",
+   "la-v1366"
+  ],
+  "conjunto": "q-t468"
+ },
+ {
+  "id": "la-qt469a",
+  "tipo": "compreensao",
+  "la": "Bella es, novimus, et puella, verum est",
+  "pergunta": "Quem sabe que ela é bonita?",
+  "pt": "nós",
+  "aceitas": [
+   "nós."
+  ],
+  "distratores": [
+   "ela",
+   "tu",
+   "o poeta sozinho",
+   "ninguém"
+  ],
+  "nota": "Novimus, 1ª pessoa do plural: nós sabemos.\nEs, 2ª do singular, é Fabula: és bonita.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, I,64",
+  "de": "la-t469",
+  "requerTodas": [
+   "la-p891",
+   "la-p003",
+   "la-p892",
+   "la-p009",
+   "la-p893",
+   "la-p459",
+   "la-v1397",
+   "la-v009",
+   "la-v1398",
+   "la-v988",
+   "la-v010"
+  ],
+  "conjunto": "q-t469"
+ },
+ {
+  "id": "la-qt471a",
+  "tipo": "compreensao",
+  "la": "Sed cum te nimium laudas, nec dives neque bella nec puella es.",
+  "pergunta": "Quem elogia Fabula?",
+  "pt": "ela mesma",
+  "aceitas": [
+   "ela mesma."
+  ],
+  "distratores": [
+   "o poeta",
+   "os amigos",
+   "os ricos",
+   "ninguém"
+  ],
+  "nota": "Te nimium laudas: tu te elogias, com laudas na 2ª pessoa e te no acusativo.\nO poeta só fala com ela.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, I,64",
+  "de": "la-t471",
+  "requerTodas": [
+   "la-p107",
+   "la-p618",
+   "la-p007",
+   "la-p897",
+   "la-p018",
+   "la-p120",
+   "la-p894",
+   "la-p891",
+   "la-p893",
+   "la-p003",
+   "la-v050",
+   "la-v1355",
+   "la-v556",
+   "la-v1397",
+   "la-v009"
+  ],
+  "conjunto": "q-t471"
+ },
+ {
+  "id": "la-qt472a",
+  "tipo": "compreensao",
+  "la": "Versiculos in me narratur scribere Cinna.",
+  "pergunta": "Quem escreve os versinhos?",
+  "pt": "Cina",
+  "aceitas": [
+   "Cina."
+  ],
+  "distratores": [
+   "o poeta",
+   "os leitores",
+   "ninguém",
+   "os amigos"
+  ],
+  "nota": "Cinna, nominativo, é o sujeito de narratur e de scribere.\nMe, depois de in, é contra quem: o poeta.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, III,9",
+  "de": "la-t472",
+  "requerTodas": [
+   "la-p898",
+   "la-p022",
+   "la-p004",
+   "la-p899",
+   "la-p900",
+   "la-v1401",
+   "la-v043",
+   "la-v1402",
+   "la-v1403"
+  ],
+  "conjunto": "q-t472"
+ },
+ {
+  "id": "la-qt473a",
+  "tipo": "compreensao",
+  "la": "Non scribit, cuius carmina nemo legit.",
+  "pergunta": "Quem não lê os poemas?",
+  "pt": "ninguém",
+  "aceitas": [
+   "ninguém."
+  ],
+  "distratores": [
+   "Cina",
+   "o poeta",
+   "os amigos",
+   "todos"
+  ],
+  "nota": "Nemo, nominativo, é o sujeito de legit: ninguém lê.\nCarmina, acusativo, é o que não se lê.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, III,9",
+  "de": "la-t473",
+  "requerTodas": [
+   "la-p066",
+   "la-p900",
+   "la-p064",
+   "la-p317",
+   "la-p901",
+   "la-p033",
+   "la-v1404",
+   "la-v174",
+   "la-v660",
+   "la-v1358"
+  ],
+  "conjunto": "q-t473"
+ },
+ {
+  "id": "la-qt474a",
+  "tipo": "compreensao",
+  "la": "Thais habet nigros, niveos Laecania dentes.",
+  "pergunta": "Quem tem os dentes pretos?",
+  "pt": "Taís",
+  "aceitas": [
+   "Taís."
+  ],
+  "distratores": [
+   "Lecânia",
+   "as duas",
+   "nenhuma",
+   "o poeta"
+  ],
+  "nota": "Thais, a primeira, vai com nigros: Taís, os pretos.\nLaecania vai com niveos: Lecânia, os brancos.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, V,43",
+  "de": "la-t474",
+  "requerTodas": [
+   "la-p504",
+   "la-p902",
+   "la-p903",
+   "la-p904",
+   "la-v1384",
+   "la-v1405",
+   "la-v1406",
+   "la-v1407"
+  ],
+  "conjunto": "q-t474"
+ },
+ {
+  "id": "la-qt476a",
+  "tipo": "compreensao",
+  "la": "Emptos haec habet, illa suos.",
+  "pergunta": "Quem tem os dentes comprados?",
+  "pt": "Lecânia",
+  "aceitas": [
+   "Lecânia."
+  ],
+  "distratores": [
+   "Taís",
+   "as duas",
+   "o poeta",
+   "nenhuma"
+  ],
+  "nota": "Haec, «esta», é a última nomeada, Lecânia; illa, «aquela», é Taís.\nEmptos concorda com os dentes de haec.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, V,43",
+  "de": "la-t476",
+  "requerTodas": [
+   "la-p906",
+   "la-p124",
+   "la-p504",
+   "la-p215",
+   "la-p536",
+   "la-v1408",
+   "la-v302",
+   "la-v1384",
+   "la-v446",
+   "la-v1386"
+  ],
+  "conjunto": "q-t476"
+ },
+ {
+  "id": "la-qt478a",
+  "tipo": "compreensao",
+  "la": "Dantur opes nullis nunc nisi divitibus.",
+  "pergunta": "A quem se dão as riquezas?",
+  "pt": "aos ricos",
+  "aceitas": [
+   "aos ricos."
+  ],
+  "distratores": [
+   "aos pobres",
+   "a todos",
+   "aos poetas",
+   "a Emiliano"
+  ],
+  "nota": "Divitibus, dativo plural de dives: aos ricos.\nNullis nisi: a ninguém senão.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, V,81",
+  "de": "la-t478",
+  "requerTodas": [
+   "la-p099",
+   "la-p907",
+   "la-p908",
+   "la-p086",
+   "la-p909",
+   "la-p894",
+   "la-v1363",
+   "la-v1409",
+   "la-v1411",
+   "la-v1399"
+  ],
+  "conjunto": "q-t478"
+ },
+ {
+  "id": "la-qt479a",
+  "tipo": "compreensao",
+  "la": "Miraris veteres, Vacerra, solos, nec laudas nisi mortuos poetas.",
+  "pergunta": "Quem Vacerra elogia?",
+  "pt": "os poetas mortos",
+  "aceitas": [
+   "os poetas mortos."
+  ],
+  "distratores": [
+   "os poetas vivos",
+   "o próprio Marcial",
+   "os ricos",
+   "ninguém"
+  ],
+  "nota": "Nisi mortuos poetas: senão os poetas mortos.\nVacerra é vocativo: a quem se fala.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, VIII,69",
+  "de": "la-t479",
+  "requerTodas": [
+   "la-p395",
+   "la-p910",
+   "la-p492",
+   "la-p120",
+   "la-p018",
+   "la-p909",
+   "la-p434",
+   "la-p911",
+   "la-v1379",
+   "la-v1412",
+   "la-v1381",
+   "la-v1355",
+   "la-v946",
+   "la-v1413"
+  ],
+  "conjunto": "q-t479"
+ },
+ {
+  "id": "la-qt481a",
+  "tipo": "compreensao",
+  "la": "tanti non est, ut placeam tibi, perire.",
+  "pergunta": "O que não vale tanto?",
+  "pt": "morrer",
+  "aceitas": [
+   "morrer."
+  ],
+  "distratores": [
+   "agradar",
+   "viver",
+   "perdoar",
+   "elogiar"
+  ],
+  "nota": "Perire, infinitivo, é o sujeito de est: morrer não vale tanto.\nUt placeam tibi é o fim: para te agradar.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Epigramas, VIII,69",
+  "de": "la-t481",
+  "requerTodas": [
+   "la-p247",
+   "la-p066",
+   "la-p003",
+   "la-p257",
+   "la-p913",
+   "la-p007",
+   "la-p617",
+   "la-v1369",
+   "la-v010",
+   "la-v1415",
+   "la-v049",
+   "la-v1389"
+  ],
+  "conjunto": "q-t481"
+ },
+ {
+  "id": "la-qt484a",
+  "tipo": "compreensao",
+  "la": "Nulli se dicit mulier mea nubere malle quam mihi",
+  "pergunta": "Com quem ela diz preferir casar-se?",
+  "pt": "com o poeta",
+  "aceitas": [
+   "com o poeta."
+  ],
+  "distratores": [
+   "com Júpiter",
+   "com ninguém",
+   "com um amante",
+   "com um deus"
+  ],
+  "nota": "Quam mihi: do que comigo, o poeta (mihi, dativo, com nubere).\nNulli é «a ninguém» que não seja ele.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Poemas, 70",
+  "de": "la-t484",
+  "requerTodas": [
+   "la-p908",
+   "la-p483",
+   "la-p122",
+   "la-p113",
+   "la-p013",
+   "la-p919",
+   "la-p920",
+   "la-p276",
+   "la-p004",
+   "la-v1410",
+   "la-v1011",
+   "la-v299",
+   "la-v057",
+   "la-v1416",
+   "la-v1417",
+   "la-v042"
+  ],
+  "conjunto": "q-t484"
+ },
+ {
+  "id": "la-qt485a",
+  "tipo": "compreensao",
+  "la": "non si se Iuppiter ipse petat.",
+  "pergunta": "Quem pediria a mulher?",
+  "pt": "Júpiter",
+  "aceitas": [
+   "Júpiter."
+  ],
+  "distratores": [
+   "o poeta",
+   "a própria mulher",
+   "o amante",
+   "ninguém"
+  ],
+  "nota": "Iuppiter, nominativo, é o sujeito de petat; ipse concorda com ele.\nSe é o objeto: a ela.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Poemas, 70",
+  "de": "la-t485",
+  "requerTodas": [
+   "la-p066",
+   "la-p154",
+   "la-p483",
+   "la-p587",
+   "la-p373",
+   "la-v1011",
+   "la-v1376"
+  ],
+  "conjunto": "q-t485"
+ },
+ {
+  "id": "la-qt486a",
+  "tipo": "compreensao",
+  "la": "Dicit: sed mulier cupido quod dicit amanti",
+  "pergunta": "Quem está apaixonado?",
+  "pt": "o amante",
+  "aceitas": [
+   "o amante."
+  ],
+  "distratores": [
+   "a mulher",
+   "o poeta",
+   "Júpiter",
+   "ninguém"
+  ],
+  "nota": "Cupido, dativo masculino singular, concorda com amanti: ao amante apaixonado.\nMulier é o sujeito de dicit.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Poemas, 70",
+  "de": "la-t486",
+  "requerTodas": [
+   "la-p122",
+   "la-p107",
+   "la-p113",
+   "la-p921",
+   "la-p064",
+   "la-p037",
+   "la-v299",
+   "la-v1418",
+   "la-v173",
+   "la-v1359"
+  ],
+  "conjunto": "q-t486"
+ },
+ {
+  "id": "la-qt487a",
+  "tipo": "compreensao",
+  "la": "quod dicit amanti, in vento et rapida scribere oportet aqua.",
+  "pergunta": "Onde é preciso escrever o que ela diz?",
+  "pt": "no vento e na água",
+  "aceitas": [
+   "no vento e na água."
+  ],
+  "distratores": [
+   "na pedra e no bronze",
+   "no coração do amante",
+   "num livro de versos",
+   "na areia da praia"
+  ],
+  "nota": "In vento et rapida aqua, ablativo com in: no vento e na água corrente.\nRapida concorda com aqua.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Poemas, 70",
+  "de": "la-t487",
+  "requerTodas": [
+   "la-p064",
+   "la-p122",
+   "la-p037",
+   "la-p022",
+   "la-p922",
+   "la-p009",
+   "la-p923",
+   "la-p900",
+   "la-p924",
+   "la-p199",
+   "la-v173",
+   "la-v299",
+   "la-v1359",
+   "la-v1419",
+   "la-v1420",
+   "la-v1403"
+  ],
+  "conjunto": "q-t487"
+ },
+ {
+  "id": "la-qt488a",
+  "tipo": "compreensao",
+  "la": "Bis vincit qui se vincit in victoria.",
+  "pergunta": "Quem é vencido por quem vence duas vezes?",
+  "pt": "ele mesmo",
+  "aceitas": [
+   "ele mesmo."
+  ],
+  "distratores": [
+   "o inimigo",
+   "os outros",
+   "a vitória",
+   "ninguém"
+  ],
+  "nota": "Se, acusativo do reflexivo, é o objeto: vence a si mesmo.\nIn victoria, ablativo: na hora da vitória.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sentenças",
+  "de": "la-t488",
+  "requerTodas": [
+   "la-p925",
+   "la-p030",
+   "la-p064",
+   "la-p483",
+   "la-p022",
+   "la-p926",
+   "la-v102",
+   "la-v171",
+   "la-v1011"
+  ],
+  "conjunto": "q-t488"
+ },
+ {
+  "id": "la-qt489a",
+  "tipo": "compreensao",
+  "la": "Avarus ipse miseriae causa est suae.",
+  "pergunta": "De que o avarento é a causa?",
+  "pt": "da sua miséria",
+  "aceitas": [
+   "da sua miséria."
+  ],
+  "distratores": [
+   "da riqueza",
+   "da miséria dos outros",
+   "do dinheiro",
+   "da alegria"
+  ],
+  "nota": "Miseriae… suae, genitivo: da sua miséria.\nCausa, nominativo, é o predicativo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sentenças",
+  "de": "la-t489",
+  "requerTodas": [
+   "la-p927",
+   "la-p587",
+   "la-p928",
+   "la-p194",
+   "la-p003",
+   "la-p536",
+   "la-v1421",
+   "la-v010",
+   "la-v1085"
+  ],
+  "conjunto": "q-t489"
+ },
+ {
+  "id": "la-qt490a",
+  "tipo": "compreensao",
+  "la": "Discipulus est prioris posterior dies.",
+  "pergunta": "Quem é o discípulo?",
+  "pt": "o dia seguinte",
+  "aceitas": [
+   "o dia seguinte."
+  ],
+  "distratores": [
+   "o dia anterior",
+   "o mestre",
+   "o aluno de ontem",
+   "os dois dias"
+  ],
+  "nota": "Posterior, nominativo, concorda com dies, o sujeito.\nPrioris, genitivo, é de quem é discípulo.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sentenças",
+  "de": "la-t490",
+  "requerTodas": [
+   "la-p929",
+   "la-p003",
+   "la-p930",
+   "la-p931",
+   "la-p025",
+   "la-v010",
+   "la-v1422"
+  ],
+  "conjunto": "q-t490"
+ },
+ {
+  "id": "la-qt493a",
+  "tipo": "compreensao",
+  "la": "Inopi beneficium bis dat qui dat celeriter.",
+  "pergunta": "A quem se dá o benefício?",
+  "pt": "ao pobre",
+  "aceitas": [
+   "ao pobre."
+  ],
+  "distratores": [
+   "ao rico",
+   "a quem dá",
+   "aos amigos",
+   "a ninguém"
+  ],
+  "nota": "Inopi, dativo singular de inops: ao pobre.\nQui dat celeriter é o sujeito: quem dá depressa.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sentenças",
+  "de": "la-t493",
+  "requerTodas": [
+   "la-p937",
+   "la-p938",
+   "la-p925",
+   "la-p099",
+   "la-p064",
+   "la-p939",
+   "la-v1427",
+   "la-v798",
+   "la-v171"
+  ],
+  "conjunto": "q-t493"
+ },
+ {
+  "id": "la-qt497a",
+  "tipo": "compreensao",
+  "la": "Amicum an nomen habeas aperit calamitas.",
+  "pergunta": "O que revela o amigo verdadeiro?",
+  "pt": "a desgraça",
+  "aceitas": [
+   "a desgraça."
+  ],
+  "distratores": [
+   "o nome",
+   "o próprio amigo",
+   "a riqueza",
+   "o tempo"
+  ],
+  "nota": "Calamitas, nominativo, é o sujeito de aperit.\nAmicum e nomen, acusativo, são objetos de habeas.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sentenças",
+  "de": "la-t497",
+  "requerTodas": [
+   "la-p946",
+   "la-p947",
+   "la-p092",
+   "la-p504",
+   "la-p948",
+   "la-p949",
+   "la-v1431",
+   "la-v1382",
+   "la-v1432"
+  ],
+  "conjunto": "q-t497"
+ },
+ {
+  "id": "la-qt499a",
+  "tipo": "compreensao",
+  "la": "Pericla timidus etiam quae non sunt videt.",
+  "pergunta": "Quem vê os perigos?",
+  "pt": "o medroso",
+  "aceitas": [
+   "o medroso."
+  ],
+  "distratores": [
+   "os perigos",
+   "o corajoso",
+   "ninguém",
+   "os outros"
+  ],
+  "nota": "Timidus, nominativo, é o sujeito de videt.\nPericla, acusativo plural neutro, é o que ele vê.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Sentenças",
+  "de": "la-t499",
+  "requerTodas": [
+   "la-p951",
+   "la-p952",
+   "la-p464",
+   "la-p064",
+   "la-p066",
+   "la-p003",
+   "la-p039",
+   "la-v1433",
+   "la-v172",
+   "la-v013",
+   "la-v759"
+  ],
+  "conjunto": "q-t499"
+ },
+ {
+  "id": "la-qt503a",
+  "tipo": "compreensao",
+  "la": "Admiror, paries, te non cecidisse ruinis, qui tot scriptorum taedia sustineas.",
+  "pergunta": "Quem fala?",
+  "pt": "quem escreve na parede",
+  "aceitas": [
+   "quem escreve na parede."
+  ],
+  "distratores": [
+   "a parede",
+   "os escritores",
+   "o dono da casa",
+   "um poeta morto"
+  ],
+  "nota": "Admiror, 1ª pessoa: quem escreve o grafite.\nParies é vocativo: a parede é a quem se fala.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Grafites de Pompeia e epitáfios",
+  "de": "la-t503",
+  "requerTodas": [
+   "la-p958",
+   "la-p959",
+   "la-p007",
+   "la-p066",
+   "la-p391",
+   "la-p960",
+   "la-p064",
+   "la-p239",
+   "la-p961",
+   "la-p962",
+   "la-p963",
+   "la-v050",
+   "la-v1378",
+   "la-v1436",
+   "la-v171",
+   "la-v1437",
+   "la-v1438",
+   "la-v1439"
+  ],
+  "conjunto": "q-t503"
+ },
+ {
+  "id": "la-qt511a",
+  "tipo": "compreensao",
+  "la": "Fratres, agnoscamus peccata nostra, ut apti simus ad sacra mysteria celebranda.",
+  "pergunta": "Quem deve reconhecer os pecados?",
+  "pt": "todos, padre e fiéis",
+  "aceitas": [
+   "todos, padre e fiéis."
+  ],
+  "distratores": [
+   "só os fiéis",
+   "só o padre",
+   "os santos",
+   "os mistérios"
+  ],
+  "nota": "Agnoscamus, 1ª pessoa do plural: reconheçamos, nós, quem fala e quem ouve.\nFratres é vocativo: a quem se fala.",
+  "nivel": "A1",
+  "tags": [
+   "compreensão"
+  ],
+  "fonte": "Ritos iniciais da Missa",
+  "de": "la-t511",
+  "requerTodas": [
+   "la-p545",
+   "la-p968",
+   "la-p449",
+   "la-p089",
+   "la-p257",
+   "la-p969",
+   "la-p003",
+   "la-p178",
+   "la-p970",
+   "la-p526",
+   "la-p971",
+   "la-v1387",
+   "la-v1441",
+   "la-v968",
+   "la-v219",
+   "la-v1442",
+   "la-v035",
+   "la-v1443",
+   "la-v1385",
+   "la-v1444"
+  ],
+  "conjunto": "q-t511"
  }
 ]

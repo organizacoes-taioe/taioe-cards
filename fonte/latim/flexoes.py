@@ -378,7 +378,12 @@ def ler_baralho():
 
 
 def lemas_por_la(cards):
-    return {c['la']: c for _, c in cards if c.get('tipo') == 'palavra'}
+    # o primeiro card de cada lema: o homógrafo novo (hic, advérbio) não toma a tabela do pronome
+    saida = {}
+    for _, c in cards:
+        if c.get('tipo') == 'palavra':
+            saida.setdefault(c['la'], c)
+    return saida
 
 
 def presa(c):
@@ -410,7 +415,8 @@ def ocorrencias(cards):
 
 def pede_card(forma, lema):
     """A forma pede card de flexão se não é a do dicionário, ou se é de pronome de três gêneros."""
-    return forma != chave(lema['la']) or lema['la'] in TABELAS_COM_O_LEMA
+    # o homógrafo (hic, advérbio, com «homografos») não é o pronome da tabela
+    return forma != chave(lema['la']) or (lema['la'] in TABELAS_COM_O_LEMA and not lema.get('homografos'))
 
 
 def conceitos_de(analise):

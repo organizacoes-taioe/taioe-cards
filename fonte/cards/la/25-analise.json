@@ -11240,5 +11240,1267 @@
   "requerTodas": [
    "la-p717"
   ]
+ },
+ {
+  "id": "la-at464-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "fit",
+  "frase": "aliter non fit, Avite, liber.",
+  "de": "la-t464",
+  "pt": "fit",
+  "distratores": [
+   "liber",
+   "aliter"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "fit, presente de fio: faz-se. Liber parece verbo, mas é o nome, o livro.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, I,16"
+ },
+ {
+  "id": "la-at465-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Quem recitas meus est, o Fidentine, libellus:",
+  "de": "la-t465",
+  "pt": "est",
+  "distratores": [
+   "recitas",
+   "libellus"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "est, presente de sum: é. Recitas é o verbo da oração relativa (quem recitas).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, I,38"
+ },
+ {
+  "id": "la-at465-c2",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "meus",
+  "ocorrencia": 1,
+  "frase": "Quem recitas meus est, o Fidentine, libellus:",
+  "de": "la-t465",
+  "pt": "libellus",
+  "distratores": [
+   "Fidentine",
+   "Quem"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "meus, nominativo masculino singular, concorda com libellus: o livrinho é meu; Fidentine é vocativo e quem é acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, I,38"
+ },
+ {
+  "id": "la-at466-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "incipit",
+  "frase": "sed male cum recitas, incipit esse tuus.",
+  "de": "la-t466",
+  "pt": "incipit",
+  "distratores": [
+   "recitas",
+   "esse"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "incipit, presente de incipio: começa. Recitas é o verbo da oração de cum; esse é o infinitivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, I,38"
+ },
+ {
+  "id": "la-at468-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "fecerat",
+  "frase": "quod vispillo facit, fecerat et medicus.",
+  "de": "la-t468",
+  "pt": "fecerat",
+  "distratores": [
+   "facit",
+   "vispillo"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "fecerat, mais-que-perfeito de facio: tinha feito. Facit é o verbo da oração relativa.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, I,47"
+ },
+ {
+  "id": "la-at470-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "potest",
+  "frase": "et dives, quis enim potest negare?",
+  "de": "la-t470",
+  "pt": "potest",
+  "distratores": [
+   "negare",
+   "dives"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "potest, presente de possum: pode. Negare é o infinitivo que ele pede.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, I,64"
+ },
+ {
+  "id": "la-at471-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "es",
+  "frase": "Sed cum te nimium laudas, nec dives neque bella nec puella es.",
+  "de": "la-t471",
+  "pt": "es",
+  "distratores": [
+   "laudas",
+   "dives"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "es, presente de sum: és (não és). Laudas é o verbo da oração de cum.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, I,64"
+ },
+ {
+  "id": "la-at472-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "narratur",
+  "frase": "Versiculos in me narratur scribere Cinna.",
+  "de": "la-t472",
+  "pt": "narratur",
+  "distratores": [
+   "scribere",
+   "Versiculos"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "narratur, presente passivo de narro: diz-se, contam. Scribere é o infinitivo que depende dele.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, III,9"
+ },
+ {
+  "id": "la-at474-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "habet",
+  "frase": "Thais habet nigros, niveos Laecania dentes.",
+  "de": "la-t474",
+  "pt": "habet",
+  "distratores": [
+   "dentes",
+   "nigros"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "habet, presente de habeo: tem. É o verbo das duas orações.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, V,43"
+ },
+ {
+  "id": "la-at474-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "niveos",
+  "ocorrencia": 1,
+  "frase": "Thais habet nigros, niveos Laecania dentes.",
+  "de": "la-t474",
+  "pt": "dentes",
+  "distratores": [
+   "Laecania",
+   "nigros"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "niveos, acusativo masculino plural, concorda com dentes: os dentes brancos; Laecania é nominativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, V,43"
+ },
+ {
+  "id": "la-at478-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Dantur",
+  "frase": "Dantur opes nullis nunc nisi divitibus.",
+  "de": "la-t478",
+  "pt": "Dantur",
+  "distratores": [
+   "opes",
+   "divitibus"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "dantur, presente passivo de do: são dadas. Opes é o nome, as riquezas.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, V,81"
+ },
+ {
+  "id": "la-at479-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "solos",
+  "ocorrencia": 1,
+  "frase": "Miraris veteres, Vacerra, solos, nec laudas nisi mortuos poetas.",
+  "de": "la-t479",
+  "pt": "veteres",
+  "distratores": [
+   "Vacerra",
+   "Miraris"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "solos, acusativo masculino plural, concorda com veteres: só os antigos; Vacerra é vocativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, VIII,69"
+ },
+ {
+  "id": "la-at481-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "tanti non est, ut placeam tibi, perire.",
+  "de": "la-t481",
+  "pt": "est",
+  "distratores": [
+   "perire",
+   "placeam"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "est, com o genitivo de preço tanti: vale tanto. Perire é o infinitivo sujeito; placeam, o verbo da oração de ut.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, VIII,69"
+ },
+ {
+  "id": "la-at482-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "es",
+  "frase": "Difficilis facilis, iucundus acerbus es idem:",
+  "de": "la-t482",
+  "pt": "es",
+  "distratores": [
+   "idem",
+   "Difficilis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "es, presente de sum: és. Idem é o pronome, «o mesmo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Epigramas, XII,46"
+ },
+ {
+  "id": "la-at484-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "dicit",
+  "frase": "Nulli se dicit mulier mea nubere malle quam mihi",
+  "de": "la-t484",
+  "pt": "dicit",
+  "distratores": [
+   "malle",
+   "nubere"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "dicit, presente de dico: diz. Malle e nubere são os infinitivos que dependem dele.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 70"
+ },
+ {
+  "id": "la-at484-c4",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "mea",
+  "ocorrencia": 1,
+  "frase": "Nulli se dicit mulier mea nubere malle quam mihi",
+  "de": "la-t484",
+  "pt": "mulier",
+  "distratores": [
+   "mihi",
+   "Nulli"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "mea, nominativo feminino singular, concorda com mulier: a minha mulher; nulli e mihi são dativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 70"
+ },
+ {
+  "id": "la-at485-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "petat",
+  "frase": "non si se Iuppiter ipse petat.",
+  "de": "la-t485",
+  "pt": "petat",
+  "distratores": [
+   "ipse",
+   "se"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "petat, presente do subjuntivo de peto: peça, pedisse.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 70"
+ },
+ {
+  "id": "la-at485-c4",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "ipse",
+  "ocorrencia": 1,
+  "frase": "non si se Iuppiter ipse petat.",
+  "de": "la-t485",
+  "pt": "Iuppiter",
+  "distratores": [
+   "se",
+   "si"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "ipse, nominativo masculino singular, concorda com Iuppiter: o próprio Júpiter; se é acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 70"
+ },
+ {
+  "id": "la-at486-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "cupido",
+  "ocorrencia": 1,
+  "frase": "Dicit: sed mulier cupido quod dicit amanti",
+  "de": "la-t486",
+  "pt": "amanti",
+  "distratores": [
+   "mulier",
+   "quod"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "cupido, dativo masculino singular, concorda com amanti: ao amante apaixonado; mulier é nominativo e quod, o relativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 70"
+ },
+ {
+  "id": "la-at487-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "oportet",
+  "frase": "quod dicit amanti, in vento et rapida scribere oportet aqua.",
+  "de": "la-t487",
+  "pt": "oportet",
+  "distratores": [
+   "scribere",
+   "dicit"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "oportet, impessoal: é preciso. Scribere é o infinitivo sujeito; dicit, o verbo da relativa.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 70"
+ },
+ {
+  "id": "la-at487-c6",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "rapida",
+  "ocorrencia": 1,
+  "frase": "quod dicit amanti, in vento et rapida scribere oportet aqua.",
+  "de": "la-t487",
+  "pt": "aqua",
+  "distratores": [
+   "vento",
+   "amanti"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "rapida, ablativo feminino singular, concorda com aqua: a água corrente; vento é masculino e amanti, dativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Poemas, 70"
+ },
+ {
+  "id": "la-at489-c5",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "suae",
+  "ocorrencia": 1,
+  "frase": "Avarus ipse miseriae causa est suae.",
+  "de": "la-t489",
+  "pt": "miseriae",
+  "distratores": [
+   "causa",
+   "Avarus"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "suae, genitivo feminino singular, concorda com miseriae: da sua miséria; causa é nominativo, avarus é masculino.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Sentenças"
+ },
+ {
+  "id": "la-at490-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "posterior",
+  "ocorrencia": 1,
+  "frase": "Discipulus est prioris posterior dies.",
+  "de": "la-t490",
+  "pt": "dies",
+  "distratores": [
+   "prioris",
+   "Discipulus"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "posterior, nominativo masculino singular, concorda com dies: o dia seguinte; prioris é genitivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Sentenças"
+ },
+ {
+  "id": "la-at491-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "frangitur",
+  "frase": "Fortuna vitrea est: tum cum splendet frangitur.",
+  "de": "la-t491",
+  "pt": "frangitur",
+  "distratores": [
+   "splendet",
+   "est"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "frangitur, presente passivo de frango: quebra-se. Splendet é o verbo da oração de cum.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Sentenças"
+ },
+ {
+  "id": "la-at492-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Stultum est timere quod vitari non potest.",
+  "de": "la-t492",
+  "pt": "est",
+  "distratores": [
+   "timere",
+   "potest"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "est, presente de sum: é. Timere é o infinitivo sujeito; potest, o verbo da relativa.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Sentenças"
+ },
+ {
+  "id": "la-at494-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Malum est consilium quod mutari non potest.",
+  "de": "la-t494",
+  "pt": "est",
+  "distratores": [
+   "potest",
+   "mutari"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "est, presente de sum: é. Potest é o verbo da relativa; mutari, o infinitivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Sentenças"
+ },
+ {
+  "id": "la-at500-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "habet",
+  "frase": "Quod vult habet qui velle quod satis est potest.",
+  "de": "la-t500",
+  "pt": "habet",
+  "distratores": [
+   "vult",
+   "potest",
+   "velle"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "habet, presente de habeo: tem. Vult e potest são verbos das relativas; velle é o infinitivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Sentenças"
+ },
+ {
+  "id": "la-at503-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Admiror",
+  "frase": "Admiror, paries, te non cecidisse ruinis, qui tot scriptorum taedia sustineas.",
+  "de": "la-t503",
+  "pt": "Admiror",
+  "distratores": [
+   "cecidisse",
+   "sustineas"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "admiror, presente de um depoente: admiro-me. Cecidisse é o infinitivo; sustineas, o verbo da relativa.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Grafites de Pompeia e epitáfios"
+ },
+ {
+  "id": "la-at505-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "pereat",
+  "frase": "bis tanto pereat quisquis amare vetat.",
+  "de": "la-t505",
+  "pt": "pereat",
+  "distratores": [
+   "vetat",
+   "amare"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "pereat, presente do subjuntivo de pereo: morra. Vetat é o verbo da relativa (quisquis… vetat).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Grafites de Pompeia e epitáfios"
+ },
+ {
+  "id": "la-at511-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "agnoscamus",
+  "frase": "Fratres, agnoscamus peccata nostra, ut apti simus ad sacra mysteria celebranda.",
+  "de": "la-t511",
+  "pt": "agnoscamus",
+  "distratores": [
+   "simus",
+   "celebranda"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "agnoscamus, presente do subjuntivo de agnosco: reconheçamos. Simus é o verbo da oração de ut; celebranda, o gerundivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ritos iniciais da Missa"
+ },
+ {
+  "id": "la-at511-c8",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "sacra",
+  "ocorrencia": 1,
+  "frase": "Fratres, agnoscamus peccata nostra, ut apti simus ad sacra mysteria celebranda.",
+  "de": "la-t511",
+  "pt": "mysteria",
+  "distratores": [
+   "nostra",
+   "peccata"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "sacra, acusativo neutro plural, concorda com mysteria: os santos mistérios; nostra e peccata são da outra oração.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ritos iniciais da Missa"
+ },
+ {
+  "id": "la-ap885-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "recito, recitare, recitavi, recitatum",
+  "lema": "la-p885",
+  "pt": "alguém que recita e algo que é recitado (acusativo)",
+  "distratores": [
+   "alguém que recita e algo que é recitado (dativo)",
+   "alguém que recita e algo que é recitado (genitivo)",
+   "alguém que recita e algo que é recitado (ablativo)",
+   "nenhum sujeito: «recita-se», sem ninguém que recite"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Quem recitas… libellus: quem recita? tu (na terminação); o quê? quem, o livrinho (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p885"
+  ]
+ },
+ {
+  "id": "la-ap892-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "nosco, noscere, novi, notum",
+  "lema": "la-p892",
+  "pt": "alguém que conhece e algo que é conhecido (acusativo)",
+  "distratores": [
+   "alguém que conhece e algo que é conhecido (dativo)",
+   "alguém que conhece e algo que é conhecido (genitivo)",
+   "alguém que conhece e algo que é conhecido (ablativo)",
+   "nenhum sujeito: «conhece-se», sem ninguém que conheça"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Bella es, novimus: o que sabemos? a frase toda (que és bonita), no lugar do acusativo. O perfeito novi vale como presente: sei, conheço.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p892"
+  ]
+ },
+ {
+  "id": "la-ap896-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "nego, negare, negavi, negatum",
+  "lema": "la-p896",
+  "pt": "alguém que nega e algo que é negado (acusativo)",
+  "distratores": [
+   "alguém que nega e algo que é negado (dativo)",
+   "alguém que nega e algo que é negado (genitivo)",
+   "alguém que nega e algo que é negado (ablativo)",
+   "nenhum sujeito: «nega-se», sem ninguém que negue"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quis enim potest negare?: o que se nega? o que foi dito (subentendido), no acusativo; também com oração infinitiva: negar que.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p896"
+  ]
+ },
+ {
+  "id": "la-ap899-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "narro, narrare, narravi, narratum",
+  "lema": "la-p899",
+  "pt": "alguém que conta e algo que é contado (acusativo)",
+  "distratores": [
+   "alguém que conta e algo que é contado (dativo)",
+   "alguém que conta e algo que é contado (genitivo)",
+   "alguém que conta e algo que é contado (ablativo)",
+   "nenhum sujeito: «conta-se», sem ninguém que conte"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Versiculos in me narratur scribere Cinna: no passivo pessoal, quem «é contado» é o sujeito (Cinna), com o infinitivo; na ativa, narrare aliquid: contar algo (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p899"
+  ]
+ },
+ {
+  "id": "la-ap900-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "scribo, scribere, scripsi, scriptum",
+  "lema": "la-p900",
+  "pt": "alguém que escreve e algo que é escrito (acusativo)",
+  "distratores": [
+   "alguém que escreve e algo que é escrito (dativo)",
+   "alguém que escreve e algo que é escrito (genitivo)",
+   "alguém que escreve e algo que é escrito (ablativo)",
+   "nenhum sujeito: «escreve-se», sem ninguém que escreva"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Versiculos… scribere Cinna: o que se escreve? versiculos (acusativo). Em in vento scribere oportet: onde? in com ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p900"
+  ]
+ },
+ {
+  "id": "la-ap906-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "emo, emere, emi, emptum",
+  "lema": "la-p906",
+  "pt": "alguém que compra e algo que é comprado (acusativo)",
+  "distratores": [
+   "alguém que compra e algo que é comprado (dativo)",
+   "alguém que compra e algo que é comprado (genitivo)",
+   "alguém que compra e algo que é comprado (ablativo)",
+   "nenhum sujeito: «compra-se», sem ninguém que compre"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Emptos haec habet: no particípio passivo, o comprado concorda com o que se tem (os dentes); na ativa, emere aliquid: comprar algo (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p906"
+  ]
+ },
+ {
+  "id": "la-ap912-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "ignosco, ignoscere, ignovi, ignotum",
+  "lema": "la-p912",
+  "pt": "alguém que perdoa e a quem perdoa (dativo)",
+  "distratores": [
+   "alguém que perdoa e a quem perdoa (acusativo)",
+   "alguém que perdoa e a quem perdoa (genitivo)",
+   "alguém que perdoa e a quem perdoa (ablativo)",
+   "nenhum sujeito: «perdoa-se», sem ninguém que perdoe"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Ignoscas petimus: perdoar a quem? Vacerra, subentendido; ignosco pede o dativo da pessoa (ignosce mihi, perdoa-me). Armadilha: o português diz «perdoar alguém».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p912"
+  ]
+ },
+ {
+  "id": "la-ap913-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "placeo, placere, placui, placitum",
+  "lema": "la-p913",
+  "pt": "algo que agrada e a quem agrada (dativo)",
+  "distratores": [
+   "algo que agrada e a quem agrada (acusativo)",
+   "algo que agrada e a quem agrada (genitivo)",
+   "algo que agrada e a quem agrada (ablativo)",
+   "nenhum sujeito: «agrada-se», sem nada que agrade"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ut placeam tibi: quem agrada? eu (na terminação); a quem? tibi (dativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p913"
+  ]
+ },
+ {
+  "id": "la-ap919-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "nubo, nubere, nupsi, nuptum",
+  "lema": "la-p919",
+  "pt": "a mulher que se casa e com quem (dativo)",
+  "distratores": [
+   "a mulher que se casa e com quem (acusativo)",
+   "a mulher que se casa e com quem (genitivo)",
+   "a mulher que se casa e com quem (ablativo)",
+   "nenhum sujeito: «casa-se», sem ninguém que se case"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Nulli se dicit mulier mea nubere malle quam mihi: com quem? nulli, mihi (dativo). Nubo é «tomar o véu por alguém»: dito da mulher. Armadilha: o português diz «casar com».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p919"
+  ]
+ },
+ {
+  "id": "la-ap920-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "malo, malle, malui",
+  "lema": "la-p920",
+  "pt": "alguém que prefere e o que prefere (infinitivo ou acusativo), e do que (quam)",
+  "distratores": [
+   "alguém que prefere e o que prefere (dativo), e do que (genitivo)",
+   "alguém que prefere e o que prefere (genitivo), e do que (dativo)",
+   "alguém que prefere e o que prefere (ablativo), sem comparação",
+   "nenhum sujeito: «prefere-se», sem ninguém que prefira"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em nubere malle quam mihi: o que prefere? nubere, casar-se (infinitivo); do que? quam mihi, do que comigo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p920"
+  ]
+ },
+ {
+  "id": "la-ap924-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "oportet, oportere, oportuit (impessoal)",
+  "lema": "la-p924",
+  "pt": "o que é preciso (infinitivo ou oração infinitiva), sem sujeito pessoal",
+  "distratores": [
+   "alguém que precisa e o que precisa (acusativo)",
+   "alguém que precisa e de quê (genitivo)",
+   "alguém que precisa e para quem (dativo)",
+   "alguém que precisa e com quê (ablativo)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em in vento… scribere oportet aqua: o que é preciso? scribere, escrever. Impessoal: sem «quem precisa» no nominativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p924"
+  ]
+ },
+ {
+  "id": "la-ap934-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "splendeo, splendere, splendui",
+  "lema": "la-p934",
+  "pt": "só algo que brilha, sem complemento",
+  "distratores": [
+   "algo que brilha e o que é brilhado (acusativo)",
+   "algo que brilha e a quem brilha (dativo)",
+   "algo que brilha e de quê (genitivo)",
+   "nenhum sujeito: «brilha-se», sem nada que brilhe"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em tum cum splendet frangitur: o que brilha? a sorte (fortuna), sujeito subentendido. Intransitivo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p934"
+  ]
+ },
+ {
+  "id": "la-ap935-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "frango, frangere, fregi, fractum",
+  "lema": "la-p935",
+  "pt": "alguém que quebra e algo que é quebrado (acusativo)",
+  "distratores": [
+   "alguém que quebra e algo que é quebrado (dativo)",
+   "alguém que quebra e algo que é quebrado (genitivo)",
+   "alguém que quebra e algo que é quebrado (ablativo)",
+   "nenhum sujeito: «quebra-se», sem ninguém que quebre"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em frangitur: no passivo, o que é quebrado é o sujeito (fortuna); na ativa, frangere aliquid: quebrar algo (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p935"
+  ]
+ },
+ {
+  "id": "la-ap941-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "muto, mutare, mutavi, mutatum",
+  "lema": "la-p941",
+  "pt": "alguém que muda e algo que é mudado (acusativo)",
+  "distratores": [
+   "alguém que muda e algo que é mudado (dativo)",
+   "alguém que muda e algo que é mudado (genitivo)",
+   "alguém que muda e algo que é mudado (ablativo)",
+   "nenhum sujeito: «muda-se», sem ninguém que mude"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quod mutari non potest: no passivo, o que é mudado é o sujeito (quod, o plano); na ativa, mutare aliquid: mudar algo (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p941"
+  ]
+ },
+ {
+  "id": "la-ap948-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "aperio, aperire, aperui, apertum",
+  "lema": "la-p948",
+  "pt": "alguém que revela e algo que é revelado (acusativo)",
+  "distratores": [
+   "alguém que revela e algo que é revelado (dativo)",
+   "alguém que revela e algo que é revelado (genitivo)",
+   "alguém que revela e algo que é revelado (ablativo)",
+   "nenhum sujeito: «revela-se», sem ninguém que revele"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Amicum an nomen habeas aperit calamitas: quem revela? calamitas; o quê? a pergunta indireta (se tens um amigo ou um nome), no lugar do acusativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p948"
+  ]
+ },
+ {
+  "id": "la-ap954-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "licet, licere, licuit (impessoal)",
+  "lema": "la-p954",
+  "pt": "o que é permitido (infinitivo) e a quem (dativo), sem sujeito pessoal",
+  "distratores": [
+   "o que é permitido (infinitivo) e a quem (acusativo)",
+   "o que é permitido (infinitivo) e a quem (genitivo)",
+   "alguém que permite e o que é permitido (acusativo)",
+   "alguém que permite e a quem (ablativo)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Cui plus licet quam par est: a quem? cui (dativo); o quê? plus, mais. Impessoal: licet mihi, «é-me permitido». Armadilha: o português diz «eu posso».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p954"
+  ]
+ },
+ {
+  "id": "la-ap957-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "pervenio, pervenire, perveni, perventum",
+  "lema": "la-p957",
+  "pt": "alguém que chega e aonde (ad com acusativo)",
+  "distratores": [
+   "alguém que chega e aonde (dativo)",
+   "alguém que chega e aonde (ablativo, sem preposição)",
+   "alguém que chega e o que é alcançado (genitivo)",
+   "nenhum sujeito: «chega-se», sem ninguém que chegue"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Nemo… ad summum pervenit locum: quem chega? nemo; aonde? ad summum locum (ad com acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p957"
+  ]
+ },
+ {
+  "id": "la-ap958-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "admiror, admirari, admiratus sum",
+  "lema": "la-p958",
+  "pt": "alguém que se admira e de quê (acusativo ou oração infinitiva)",
+  "distratores": [
+   "alguém que se admira e de quê (dativo)",
+   "alguém que se admira e de quê (genitivo)",
+   "alguém que se admira e de quê (ablativo)",
+   "nenhum sujeito: «admira-se», sem ninguém que se admire"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Admiror, paries, te non cecidisse ruinis: de quê? te non cecidisse, de não teres caído (oração infinitiva). Depoente.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p958"
+  ]
+ },
+ {
+  "id": "la-ap963-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "sustineo, sustinere, sustinui, sustentum",
+  "lema": "la-p963",
+  "pt": "alguém que aguenta e algo que é aguentado (acusativo)",
+  "distratores": [
+   "alguém que aguenta e algo que é aguentado (dativo)",
+   "alguém que aguenta e algo que é aguentado (genitivo)",
+   "alguém que aguenta e algo que é aguentado (ablativo)",
+   "nenhum sujeito: «aguenta-se», sem ninguém que aguente"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em qui tot scriptorum taedia sustineas: quem aguenta? qui (a parede); o quê? taedia (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p963"
+  ]
+ },
+ {
+  "id": "la-ap964-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "veto, vetare, vetui, vetitum",
+  "lema": "la-p964",
+  "pt": "alguém que proíbe, quem é proibido (acusativo) e de fazer o quê (infinitivo)",
+  "distratores": [
+   "alguém que proíbe, a quem proíbe (dativo) e de quê (genitivo)",
+   "alguém que proíbe e de quê (ablativo)",
+   "alguém que proíbe e a quem proíbe (genitivo)",
+   "nenhum sujeito: «proíbe-se», sem ninguém que proíba"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em quisquis amare vetat: quem proíbe? quisquis; o quê? amare (infinitivo); a pessoa proibida iria no acusativo (vetat me amare). Armadilha: o português diz «proibir a alguém».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p964"
+  ]
+ },
+ {
+  "id": "la-ap965-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "desidero, desiderare, desideravi, desideratum",
+  "lema": "la-p965",
+  "pt": "alguém que deseja e algo que é desejado (acusativo)",
+  "distratores": [
+   "alguém que deseja e algo que é desejado (dativo)",
+   "alguém que deseja e algo que é desejado (genitivo)",
+   "alguém que deseja e algo que é desejado (ablativo)",
+   "nenhum sujeito: «deseja-se», sem ninguém que deseje"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Non fui, fui, non sum, non desidero: quem? eu, o morto; o quê? nada (sem objeto: já não deseja nada); com objeto, desiderare aliquid (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p965"
+  ]
+ },
+ {
+  "id": "la-ap968-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "agnosco, agnoscere, agnovi, agnitum",
+  "lema": "la-p968",
+  "pt": "alguém que reconhece e algo que é reconhecido (acusativo)",
+  "distratores": [
+   "alguém que reconhece e algo que é reconhecido (dativo)",
+   "alguém que reconhece e algo que é reconhecido (genitivo)",
+   "alguém que reconhece e algo que é reconhecido (ablativo)",
+   "nenhum sujeito: «reconhece-se», sem ninguém que reconheça"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em agnoscamus peccata nostra: quem? nós; o quê? peccata nostra (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p968"
+  ]
+ },
+ {
+  "id": "la-ap971-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "celebro, celebrare, celebravi, celebratum",
+  "lema": "la-p971",
+  "pt": "alguém que celebra e algo que é celebrado (acusativo)",
+  "distratores": [
+   "alguém que celebra e algo que é celebrado (dativo)",
+   "alguém que celebra e algo que é celebrado (genitivo)",
+   "alguém que celebra e algo que é celebrado (ablativo)",
+   "nenhum sujeito: «celebra-se», sem ninguém que celebre"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ad sacra mysteria celebranda: no gerundivo, o que é celebrado concorda com ele (mysteria); na ativa, celebrare aliquid: celebrar algo (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p971"
+  ]
+ },
+ {
+  "id": "la-ap975-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "ago, agere, egi, actum",
+  "lema": "la-p975",
+  "pt": "alguém que faz e o que é feito (acusativo); com gratias, a quem (dativo)",
+  "distratores": [
+   "alguém que faz e o que é feito (dativo); com gratias, a quem (acusativo)",
+   "alguém que faz e o que é feito (genitivo)",
+   "alguém que faz e o que é feito (ablativo)",
+   "nenhum sujeito: «faz-se», sem ninguém que faça"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Gratias agamus Domino Deo nostro: quem? nós; o quê? gratias (acusativo); a quem? Domino Deo nostro (dativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p975"
+  ]
+ },
+ {
+  "id": "la-ap977-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "eo, ire, ivi (ii), itum",
+  "lema": "la-p977",
+  "pt": "alguém que vai e aonde (in ou ad com acusativo)",
+  "distratores": [
+   "alguém que vai e o que é ido (acusativo)",
+   "alguém que vai e a quem vai (dativo)",
+   "alguém que vai e de quê (genitivo)",
+   "nenhum sujeito: «vai-se», sem ninguém que vá"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Ite, missa est: quem vai? vós (na terminação); aonde? não se diz. Intransitivo: o lugar vem com in ou ad.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p977"
+  ]
  }
 ]
