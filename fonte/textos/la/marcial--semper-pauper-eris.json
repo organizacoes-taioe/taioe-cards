@@ -1,0 +1,240 @@
+{
+ "id": "marcial/semper-pauper-eris",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Semper pauper eris",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/semper-pauper-eris/",
+ "ordem": 44,
+ "fonte": "Epigramas, V,81",
+ "blocos": [
+  [
+   {
+    "t": "Semper pauper eris, si pauper es, Aemiliane.",
+    "p": [
+     [
+      "Semper",
+      "semper"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "pauper",
+      "pauper"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "eris",
+      "eris"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "si",
+      "si"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "pauper",
+      "pauper#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "es",
+      "es"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Aemiliane",
+      "aemiliane"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v021",
+     "la-v009"
+    ]
+   },
+   {
+    "t": "Dantur opes nullis nunc nisi divitibus.",
+    "p": [
+     [
+      "Dantur",
+      "dantur"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "opes",
+      "opes"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nullis",
+      "nullis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nunc",
+      "nunc"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nisi",
+      "nisi"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "divitibus",
+      "divitibus"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1363",
+     "la-v1409",
+     "la-v1411",
+     "la-v1399"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "semper": {
+   "lema": "semper",
+   "classe": "advérbio",
+   "card": "la-p087",
+   "wiki": "https://en.wiktionary.org/wiki/semper#Latin"
+  },
+  "pauper": {
+   "lema": "pauper",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "predicativo de eris: pobre",
+   "card": "la-p309",
+   "wiki": "https://en.wiktionary.org/wiki/pauper#Latin"
+  },
+  "eris": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "futuro do indicativo, 2ª pessoa do singular",
+   "funcao": "serás",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "si": {
+   "lema": "si",
+   "classe": "conjunção",
+   "card": "la-p154",
+   "wiki": "https://en.wiktionary.org/wiki/si#Latin"
+  },
+  "pauper#2": {
+   "lema": "pauper",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "predicativo de es: pobre",
+   "card": "la-p309",
+   "wiki": "https://en.wiktionary.org/wiki/pauper#Latin"
+  },
+  "es": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "és",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "aemiliane": {
+   "lema": "Aemilianus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Emiliano, o pobre a quem o epigrama se dirige."
+   ],
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala"
+  },
+  "dantur": {
+   "lema": "do",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do plural, voz passiva",
+   "funcao": "são dadas",
+   "card": "la-p099",
+   "wiki": "https://en.wiktionary.org/wiki/do#Latin"
+  },
+  "opes": {
+   "lema": "ops",
+   "classe": "substantivo",
+   "forma": "nominativo plural",
+   "funcao": "sujeito de dantur: as riquezas",
+   "card": "la-p907",
+   "wiki": "https://en.wiktionary.org/wiki/ops#Latin"
+  },
+  "nullis": {
+   "lema": "nullus",
+   "classe": "adjetivo",
+   "forma": "dativo masculino plural",
+   "funcao": "a quem: a nenhuns",
+   "card": "la-p908",
+   "wiki": "https://en.wiktionary.org/wiki/nullus#Latin"
+  },
+  "nunc": {
+   "lema": "nunc",
+   "classe": "advérbio",
+   "card": "la-p086",
+   "wiki": "https://en.wiktionary.org/wiki/nunc#Latin"
+  },
+  "nisi": {
+   "lema": "nisi",
+   "classe": "conjunção",
+   "funcao": "senão",
+   "card": "la-p909",
+   "wiki": "https://en.wiktionary.org/wiki/nisi#Latin"
+  },
+  "divitibus": {
+   "lema": "dives",
+   "classe": "adjetivo",
+   "forma": "dativo masculino plural",
+   "funcao": "a quem: aos ricos",
+   "card": "la-p894",
+   "wiki": "https://en.wiktionary.org/wiki/dives#Latin"
+  }
+ }
+}

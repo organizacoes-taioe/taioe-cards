@@ -1,0 +1,244 @@
+{
+ "id": "marcial/difficilis-facilis",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Difficilis facilis",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/difficilis-facilis/",
+ "ordem": 46,
+ "fonte": "Epigramas, XII,46",
+ "blocos": [
+  [
+   {
+    "t": "Difficilis facilis, iucundus acerbus es idem:",
+    "p": [
+     [
+      "Difficilis",
+      "difficilis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "facilis",
+      "facilis"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "iucundus",
+      "iucundus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "acerbus",
+      "acerbus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "es",
+      "es"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "idem",
+      "idem"
+     ],
+     [
+      ":",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v009",
+     "la-v404"
+    ]
+   },
+   {
+    "t": "nec tecum possum vivere, nec sine te.",
+    "p": [
+     [
+      "nec",
+      "nec"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tecum",
+      "tecum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "possum",
+      "possum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vivere",
+      "vivere"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "nec",
+      "nec"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sine",
+      "sine"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "te",
+      "te"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v050",
+     "la-v266",
+     "la-v1044"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "difficilis": {
+   "lema": "difficilis",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "predicativo de es: difícil",
+   "card": "la-p914",
+   "wiki": "https://en.wiktionary.org/wiki/difficilis#Latin"
+  },
+  "facilis": {
+   "lema": "facilis",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "predicativo de es: fácil",
+   "card": "la-p915",
+   "wiki": "https://en.wiktionary.org/wiki/facilis#Latin"
+  },
+  "iucundus": {
+   "lema": "iucundus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "predicativo de es: agradável",
+   "card": "la-p916",
+   "wiki": "https://en.wiktionary.org/wiki/iucundus#Latin"
+  },
+  "acerbus": {
+   "lema": "acerbus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "predicativo de es: amargo",
+   "card": "la-p917",
+   "wiki": "https://en.wiktionary.org/wiki/acerbus#Latin"
+  },
+  "es": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "és",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "idem": {
+   "lema": "idem",
+   "classe": "pronome",
+   "forma": "nominativo masculino singular",
+   "funcao": "o mesmo: ao mesmo tempo",
+   "card": "la-p180",
+   "wiki": "https://en.wiktionary.org/wiki/idem#Latin"
+  },
+  "nec": {
+   "lema": "nec",
+   "classe": "conjunção",
+   "card": "la-p120",
+   "wiki": "https://en.wiktionary.org/wiki/nec#Latin"
+  },
+  "tecum": {
+   "partes": [
+    {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "ablativo singular",
+     "funcao": "depois de cum",
+     "card": "la-p007",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+    },
+    {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "card": "la-p053",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+    }
+   ]
+  },
+  "possum": {
+   "lema": "possum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do singular",
+   "funcao": "posso",
+   "card": "la-p121",
+   "wiki": "https://en.wiktionary.org/wiki/possum#Latin"
+  },
+  "vivere": {
+   "lema": "vivo",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "depende de possum: viver",
+   "card": "la-p508",
+   "wiki": "https://en.wiktionary.org/wiki/vivo#Latin"
+  },
+  "sine": {
+   "lema": "sine",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p918",
+   "wiki": "https://en.wiktionary.org/wiki/sine#Latin"
+  },
+  "te": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "ablativo singular",
+   "funcao": "depois de sine: sem ti",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  }
+ }
+}

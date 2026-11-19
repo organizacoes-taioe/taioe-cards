@@ -1,0 +1,441 @@
+{
+ "id": "missal-romano/verbum-domini",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Verbum Domini",
+ "autor": "Missal Romano",
+ "ano": null,
+ "biblioteca": null,
+ "ordem": 54,
+ "fonte": "As leituras da Missa",
+ "blocos": [
+  [
+   {
+    "t": "Verbum Domini.",
+    "p": [
+     [
+      "Verbum",
+      "verbum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Domini",
+      "domini"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v054"
+    ]
+   },
+   {
+    "t": "Deo gratias.",
+    "p": [
+     [
+      "Deo",
+      "deo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "gratias",
+      "gratias"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v002",
+     "la-v1361"
+    ]
+   },
+   {
+    "t": "Dominus vobiscum.",
+    "p": [
+     [
+      "Dominus",
+      "dominus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vobiscum",
+      "vobiscum"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v149"
+    ]
+   },
+   {
+    "t": "Et cum spiritu tuo.",
+    "p": [
+     [
+      "Et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "cum",
+      "cum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "spiritu",
+      "spiritu"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tuo",
+      "tuo"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v153",
+     "la-v769"
+    ]
+   },
+   {
+    "t": "Lectio sancti Evangelii secundum Matthaeum.",
+    "p": [
+     [
+      "Lectio",
+      "lectio"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sancti",
+      "sancti"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Evangelii",
+      "evangelii"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "secundum",
+      "secundum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Matthaeum",
+      "matthaeum"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v215",
+     "la-v1445"
+    ]
+   },
+   {
+    "t": "Gloria tibi, Domine.",
+    "p": [
+     [
+      "Gloria",
+      "gloria"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tibi",
+      "tibi"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Domine",
+      "domine"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v049",
+     "la-v053"
+    ]
+   },
+   {
+    "t": "Verbum Domini.",
+    "p": [
+     [
+      "Verbum",
+      "verbum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Domini",
+      "domini"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v054"
+    ]
+   },
+   {
+    "t": "Laus tibi, Christe.",
+    "p": [
+     [
+      "Laus",
+      "laus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tibi",
+      "tibi"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Christe",
+      "christe"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v049"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "verbum": {
+   "lema": "verbum",
+   "classe": "substantivo neutro",
+   "forma": "nominativo singular",
+   "funcao": "(eis) a palavra",
+   "card": "la-p057",
+   "wiki": "https://en.wiktionary.org/wiki/verbum#Latin"
+  },
+  "domini": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "genitivo singular",
+   "funcao": "de quem: do Senhor",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "deo": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "funcao": "a quem: a Deus",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "gratias": {
+   "lema": "gratia",
+   "classe": "substantivo feminino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de agimus, subentendido: graças",
+   "card": "la-p050",
+   "wiki": "https://en.wiktionary.org/wiki/gratia#Latin"
+  },
+  "dominus": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito: esteja",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "vobiscum": {
+   "partes": [
+    {
+     "lema": "vos",
+     "classe": "pronome",
+     "forma": "ablativo plural",
+     "funcao": "depois de cum: convosco",
+     "card": "la-p049",
+     "wiki": "https://en.wiktionary.org/wiki/vos#Latin"
+    },
+    {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "card": "la-p053",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+    }
+   ]
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "cum": {
+   "lema": "cum",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p053",
+   "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+  },
+  "spiritu": {
+   "lema": "spiritus",
+   "classe": "substantivo masculino",
+   "forma": "ablativo singular",
+   "funcao": "com quem",
+   "card": "la-p054",
+   "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin"
+  },
+  "tuo": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "ablativo masculino singular",
+   "funcao": "concorda com spiritu",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  },
+  "lectio": {
+   "lema": "lectio",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "(eis) a leitura",
+   "card": "la-p972",
+   "wiki": "https://en.wiktionary.org/wiki/lectio#Latin"
+  },
+  "sancti": {
+   "lema": "sanctus",
+   "classe": "adjetivo",
+   "forma": "genitivo neutro singular",
+   "funcao": "concorda com Evangelii: santo",
+   "card": "la-p084",
+   "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin"
+  },
+  "evangelii": {
+   "lema": "evangelium",
+   "classe": "substantivo neutro",
+   "forma": "genitivo singular",
+   "funcao": "de quê: do Evangelho",
+   "card": "la-p973",
+   "wiki": "https://en.wiktionary.org/wiki/evangelium#Latin"
+  },
+  "secundum": {
+   "lema": "secundum",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p465",
+   "wiki": "https://en.wiktionary.org/wiki/secundum#Latin"
+  },
+  "matthaeum": {
+   "lema": "Matthaeus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Mateus, o apóstolo e evangelista."
+   ],
+   "forma": "acusativo singular",
+   "funcao": "depois de secundum"
+  },
+  "gloria": {
+   "lema": "gloria",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "(seja) a glória",
+   "card": "la-p051",
+   "wiki": "https://en.wiktionary.org/wiki/gloria#Latin"
+  },
+  "tibi": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "dativo singular",
+   "funcao": "a quem: a ti",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  },
+  "domine": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "laus": {
+   "lema": "laus",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "(seja) o louvor",
+   "card": "la-p301",
+   "wiki": "https://en.wiktionary.org/wiki/laus#Latin"
+  },
+  "christe": {
+   "lema": "Christus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Cristo, o Ungido: título de Jesus."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Christus#Latin",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala"
+  }
+ }
+}

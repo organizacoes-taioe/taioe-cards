@@ -1,0 +1,412 @@
+{
+ "id": "missal-romano/sanctus",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Sanctus",
+ "autor": "Missal Romano",
+ "ano": null,
+ "biblioteca": null,
+ "ordem": 56,
+ "fonte": "Ordinário da Missa",
+ "blocos": [
+  [
+   {
+    "t": "Sanctus, Sanctus, Sanctus Dominus Deus Sabaoth.",
+    "p": [
+     [
+      "Sanctus",
+      "sanctus"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Sanctus",
+      "sanctus"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Sanctus",
+      "sanctus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Dominus",
+      "dominus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Deus",
+      "deus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Sabaoth",
+      "sabaoth"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "Pleni sunt caeli et terra gloria tua.",
+    "p": [
+     [
+      "Pleni",
+      "pleni"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sunt",
+      "sunt"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "caeli",
+      "caeli"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "terra",
+      "terra"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "gloria",
+      "gloria"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tua",
+      "tua"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1364",
+     "la-v013",
+     "la-v225",
+     "la-v156"
+    ]
+   },
+   {
+    "t": "Hosanna in excelsis.",
+    "p": [
+     [
+      "Hosanna",
+      "hosanna"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "excelsis",
+      "excelsis"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v152"
+    ]
+   },
+   {
+    "t": "Benedictus qui venit in nomine Domini.",
+    "p": [
+     [
+      "Benedictus",
+      "benedictus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "qui",
+      "qui"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "venit",
+      "venit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nomine",
+      "nomine"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Domini",
+      "domini"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v255",
+     "la-v171",
+     "la-v124",
+     "la-v1362",
+     "la-v054"
+    ]
+   },
+   {
+    "t": "Hosanna in excelsis.",
+    "p": [
+     [
+      "Hosanna",
+      "hosanna"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "excelsis",
+      "excelsis"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v152"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "sanctus": {
+   "lema": "sanctus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "predicativo: santo",
+   "card": "la-p084",
+   "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin"
+  },
+  "dominus": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito, sem verbo: o Senhor",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "deus": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "aposto de Dominus",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "sabaoth": {
+   "lema": "Sabaoth",
+   "classe": "nome (hebraico)",
+   "g": "gramatical",
+   "def": [
+    "Dos exércitos: palavra hebraica, em «Senhor Deus Sabaoth», o Senhor dos exércitos (do céu)."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Sabaoth#Latin"
+  },
+  "pleni": {
+   "lema": "plenus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino plural",
+   "funcao": "predicativo de sunt: cheios",
+   "card": "la-p111",
+   "wiki": "https://en.wiktionary.org/wiki/plenus#Latin"
+  },
+  "sunt": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do plural",
+   "funcao": "estão",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "caeli": {
+   "lema": "caelum",
+   "classe": "substantivo neutro",
+   "forma": "nominativo plural",
+   "funcao": "sujeito de sunt: os céus",
+   "card": "la-p090",
+   "wiki": "https://en.wiktionary.org/wiki/caelum#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "terra": {
+   "lema": "terra",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de sunt: a terra",
+   "card": "la-p096",
+   "wiki": "https://en.wiktionary.org/wiki/terra#Latin"
+  },
+  "gloria": {
+   "lema": "gloria",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "de quê: da glória",
+   "card": "la-p051",
+   "wiki": "https://en.wiktionary.org/wiki/gloria#Latin"
+  },
+  "tua": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "ablativo feminino singular",
+   "funcao": "concorda com gloria: tua",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  },
+  "hosanna": {
+   "lema": "hosanna",
+   "classe": "interjeição",
+   "g": "gramatical",
+   "def": [
+    "Hosana: salva, por favor! Aclamação hebraica de louvor."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/hosanna#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "excelsis": {
+   "lema": "excelsus",
+   "classe": "adjetivo",
+   "forma": "ablativo neutro plural",
+   "funcao": "depois de in: nas alturas",
+   "card": "la-p052",
+   "wiki": "https://en.wiktionary.org/wiki/excelsus#Latin"
+  },
+  "benedictus": {
+   "lema": "benedico",
+   "classe": "verbo",
+   "forma": "particípio perfeito, nominativo masculino singular",
+   "funcao": "predicativo: bendito",
+   "card": "la-p112",
+   "wiki": "https://en.wiktionary.org/wiki/benedico#Latin"
+  },
+  "qui": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "nominativo masculino singular",
+   "funcao": "sujeito de venit: o que",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "venit": {
+   "lema": "venio",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "vem",
+   "card": "la-p038",
+   "wiki": "https://en.wiktionary.org/wiki/venio#Latin"
+  },
+  "nomine": {
+   "lema": "nomen",
+   "classe": "substantivo neutro",
+   "forma": "ablativo singular",
+   "funcao": "depois de in: em nome",
+   "card": "la-p092",
+   "wiki": "https://en.wiktionary.org/wiki/nomen#Latin"
+  },
+  "domini": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "genitivo singular",
+   "funcao": "de quem: do Senhor",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  }
+ }
+}

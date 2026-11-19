@@ -1,0 +1,273 @@
+{
+ "id": "marcial/sunt-bona",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Sunt bona",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/sunt-bona/",
+ "ordem": 38,
+ "fonte": "Epigramas, I,16",
+ "blocos": [
+  [
+   {
+    "t": "Sunt bona, sunt quaedam mediocria, sunt mala plura",
+    "p": [
+     [
+      "Sunt",
+      "sunt"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "bona",
+      "bona"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "sunt",
+      "sunt"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "quaedam",
+      "quaedam"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mediocria",
+      "mediocria"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "sunt",
+      "sunt"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mala",
+      "mala"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "plura",
+      "plura"
+     ]
+    ],
+    "flexoes": [
+     "la-v013",
+     "la-v045",
+     "la-v1394",
+     "la-v1395",
+     "la-v1390",
+     "la-v1371"
+    ]
+   },
+   {
+    "t": "quae legis hic: aliter non fit, Avite, liber.",
+    "p": [
+     [
+      "quae",
+      "quae"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "legis",
+      "legis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "hic",
+      "hic"
+     ],
+     [
+      ": ",
+      null
+     ],
+     [
+      "aliter",
+      "aliter"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "non",
+      "non"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "fit",
+      "fit"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Avite",
+      "avite"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "liber",
+      "liber"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v172",
+     "la-v1357",
+     "la-v779"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "sunt": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do plural",
+   "funcao": "há",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "bona": {
+   "lema": "bonus",
+   "classe": "adjetivo",
+   "forma": "nominativo neutro plural",
+   "funcao": "sujeito de sunt: coisas boas",
+   "card": "la-p006",
+   "wiki": "https://en.wiktionary.org/wiki/bonus#Latin"
+  },
+  "quaedam": {
+   "lema": "quidam",
+   "classe": "pronome",
+   "forma": "nominativo neutro plural",
+   "funcao": "concorda com mediocria: algumas",
+   "card": "la-p880",
+   "wiki": "https://en.wiktionary.org/wiki/quidam#Latin"
+  },
+  "mediocria": {
+   "lema": "mediocris",
+   "classe": "adjetivo",
+   "forma": "nominativo neutro plural",
+   "funcao": "sujeito de sunt: coisas medianas",
+   "card": "la-p881",
+   "wiki": "https://en.wiktionary.org/wiki/mediocris#Latin"
+  },
+  "mala": {
+   "lema": "malus",
+   "classe": "adjetivo",
+   "forma": "nominativo neutro plural",
+   "funcao": "sujeito de sunt: coisas ruins",
+   "card": "la-p675",
+   "wiki": "https://en.wiktionary.org/wiki/malus#Latin"
+  },
+  "plura": {
+   "lema": "plus",
+   "classe": "adjetivo",
+   "forma": "nominativo neutro plural",
+   "funcao": "concorda com mala: em maior número",
+   "card": "la-p261",
+   "wiki": "https://en.wiktionary.org/wiki/plus#Latin"
+  },
+  "quae": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "acusativo neutro plural",
+   "funcao": "objeto de legis: as coisas que",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "legis": {
+   "lema": "lego",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "lês",
+   "card": "la-p033",
+   "wiki": "https://en.wiktionary.org/wiki/lego#Latin"
+  },
+  "hic": {
+   "lema": "hic",
+   "classe": "advérbio",
+   "funcao": "aqui",
+   "card": "la-p882",
+   "wiki": "https://en.wiktionary.org/wiki/hic#Latin"
+  },
+  "aliter": {
+   "lema": "aliter",
+   "classe": "advérbio",
+   "card": "la-p883",
+   "wiki": "https://en.wiktionary.org/wiki/aliter#Latin"
+  },
+  "non": {
+   "lema": "non",
+   "classe": "advérbio",
+   "card": "la-p066",
+   "wiki": "https://en.wiktionary.org/wiki/non#Latin"
+  },
+  "fit": {
+   "lema": "fio",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "se faz",
+   "card": "la-p069",
+   "wiki": "https://en.wiktionary.org/wiki/fio#Latin"
+  },
+  "avite": {
+   "lema": "Avitus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Avito, o amigo a quem Marcial dedica o epigrama."
+   ],
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala"
+  },
+  "liber": {
+   "lema": "liber",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de fit: um livro",
+   "card": "la-p884",
+   "wiki": "https://en.wiktionary.org/wiki/liber#Latin"
+  }
+ }
+}

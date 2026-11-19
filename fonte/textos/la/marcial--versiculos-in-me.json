@@ -1,0 +1,230 @@
+{
+ "id": "marcial/versiculos-in-me",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Versiculos in me",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/versiculos-in-me/",
+ "ordem": 42,
+ "fonte": "Epigramas, III,9",
+ "blocos": [
+  [
+   {
+    "t": "Versiculos in me narratur scribere Cinna.",
+    "p": [
+     [
+      "Versiculos",
+      "versiculos"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "me",
+      "me"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "narratur",
+      "narratur"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "scribere",
+      "scribere"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Cinna",
+      "cinna"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1401",
+     "la-v043",
+     "la-v1402",
+     "la-v1403"
+    ]
+   },
+   {
+    "t": "Non scribit, cuius carmina nemo legit.",
+    "p": [
+     [
+      "Non",
+      "non"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "scribit",
+      "scribit"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "cuius",
+      "cuius"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "carmina",
+      "carmina"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nemo",
+      "nemo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "legit",
+      "legit"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1404",
+     "la-v174",
+     "la-v660",
+     "la-v1358"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "versiculos": {
+   "lema": "versiculus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de scribere: versinhos",
+   "card": "la-p898",
+   "wiki": "https://en.wiktionary.org/wiki/versiculus#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "me": {
+   "lema": "ego",
+   "classe": "pronome",
+   "forma": "acusativo singular",
+   "funcao": "depois de in: contra mim",
+   "card": "la-p004",
+   "wiki": "https://en.wiktionary.org/wiki/ego#Latin"
+  },
+  "narratur": {
+   "lema": "narro",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular, voz passiva",
+   "funcao": "passivo pessoal: diz-se que (ele)",
+   "card": "la-p899",
+   "wiki": "https://en.wiktionary.org/wiki/narro#Latin"
+  },
+  "scribere": {
+   "lema": "scribo",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "depende de narratur: escrever",
+   "card": "la-p900",
+   "wiki": "https://en.wiktionary.org/wiki/scribo#Latin"
+  },
+  "cinna": {
+   "lema": "Cinna",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Cina, o poeta invejoso do epigrama."
+   ],
+   "forma": "nominativo singular",
+   "funcao": "sujeito de narratur"
+  },
+  "non": {
+   "lema": "non",
+   "classe": "advérbio",
+   "card": "la-p066",
+   "wiki": "https://en.wiktionary.org/wiki/non#Latin"
+  },
+  "scribit": {
+   "lema": "scribo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "escreve",
+   "card": "la-p900",
+   "wiki": "https://en.wiktionary.org/wiki/scribo#Latin"
+  },
+  "cuius": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "genitivo masculino singular",
+   "funcao": "relativo, de quem são os poemas: cujos",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "carmina": {
+   "lema": "carmen",
+   "classe": "substantivo neutro",
+   "forma": "acusativo plural",
+   "funcao": "objeto de legit: os poemas",
+   "card": "la-p317",
+   "wiki": "https://en.wiktionary.org/wiki/carmen#Latin"
+  },
+  "nemo": {
+   "lema": "nemo",
+   "classe": "pronome",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de legit: ninguém",
+   "card": "la-p901",
+   "wiki": "https://en.wiktionary.org/wiki/nemo#Latin"
+  },
+  "legit": {
+   "lema": "lego",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "lê",
+   "card": "la-p033",
+   "wiki": "https://en.wiktionary.org/wiki/lego#Latin"
+  }
+ }
+}

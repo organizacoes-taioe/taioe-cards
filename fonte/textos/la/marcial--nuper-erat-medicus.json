@@ -1,0 +1,241 @@
+{
+ "id": "marcial/nuper-erat-medicus",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Nuper erat medicus",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/nuper-erat-medicus/",
+ "ordem": 40,
+ "fonte": "Epigramas, I,47",
+ "blocos": [
+  [
+   {
+    "t": "Nuper erat medicus, nunc est vispillo Diaulus:",
+    "p": [
+     [
+      "Nuper",
+      "nuper"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "erat",
+      "erat"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "medicus",
+      "medicus"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "nunc",
+      "nunc"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "est",
+      "est"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vispillo",
+      "vispillo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Diaulus",
+      "diaulus"
+     ],
+     [
+      ":",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v016",
+     "la-v010"
+    ]
+   },
+   {
+    "t": "quod vispillo facit, fecerat et medicus.",
+    "p": [
+     [
+      "quod",
+      "quod"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vispillo",
+      "vispillo#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "facit",
+      "facit"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "fecerat",
+      "fecerat"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "medicus",
+      "medicus#2"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v173",
+     "la-v1365",
+     "la-v1366"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "nuper": {
+   "lema": "nuper",
+   "classe": "advérbio",
+   "card": "la-p888",
+   "wiki": "https://en.wiktionary.org/wiki/nuper#Latin"
+  },
+  "erat": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "imperfeito do indicativo, 3ª pessoa do singular",
+   "funcao": "era",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "medicus": {
+   "lema": "medicus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "predicativo de erat: médico",
+   "card": "la-p889",
+   "wiki": "https://en.wiktionary.org/wiki/medicus#Latin"
+  },
+  "nunc": {
+   "lema": "nunc",
+   "classe": "advérbio",
+   "card": "la-p086",
+   "wiki": "https://en.wiktionary.org/wiki/nunc#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "é",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "vispillo": {
+   "lema": "vispillo",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "predicativo de est: coveiro",
+   "card": "la-p890",
+   "wiki": "https://en.wiktionary.org/wiki/vispillo#Latin"
+  },
+  "diaulus": {
+   "lema": "Diaulus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Diaulo, o médico que virou coveiro nos epigramas de Marcial."
+   ],
+   "forma": "nominativo singular",
+   "funcao": "sujeito de erat e de est"
+  },
+  "quod": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "acusativo neutro singular",
+   "funcao": "objeto de facit e de fecerat: o que",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "vispillo#2": {
+   "lema": "vispillo",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de facit: o coveiro",
+   "card": "la-p890",
+   "wiki": "https://en.wiktionary.org/wiki/vispillo#Latin"
+  },
+  "facit": {
+   "lema": "facio",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "faz",
+   "card": "la-p165",
+   "wiki": "https://en.wiktionary.org/wiki/facio#Latin"
+  },
+  "fecerat": {
+   "lema": "facio",
+   "classe": "verbo",
+   "forma": "mais-que-perfeito do indicativo, 3ª pessoa do singular",
+   "funcao": "tinha feito",
+   "card": "la-p165",
+   "wiki": "https://en.wiktionary.org/wiki/facio#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "funcao": "também",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "medicus#2": {
+   "lema": "medicus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de fecerat: o médico",
+   "card": "la-p889",
+   "wiki": "https://en.wiktionary.org/wiki/medicus#Latin"
+  }
+ }
+}

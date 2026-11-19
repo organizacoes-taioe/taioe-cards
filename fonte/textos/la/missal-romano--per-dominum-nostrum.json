@@ -1,0 +1,512 @@
+{
+ "id": "missal-romano/per-dominum-nostrum",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Per Dominum nostrum",
+ "autor": "Missal Romano",
+ "ano": null,
+ "biblioteca": null,
+ "ordem": 53,
+ "fonte": "A conclusão das orações da Missa",
+ "blocos": [
+  [
+   {
+    "t": "Oremus.",
+    "p": [
+     [
+      "Oremus",
+      "oremus"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v784"
+    ]
+   },
+   {
+    "t": "Per Dominum nostrum Iesum Christum, Filium tuum,",
+    "p": [
+     [
+      "Per",
+      "per"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Dominum",
+      "dominum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nostrum",
+      "nostrum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Iesum",
+      "iesum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Christum",
+      "christum"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Filium",
+      "filium"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tuum",
+      "tuum"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v056",
+     "la-v224",
+     "la-v141",
+     "la-v161"
+    ]
+   },
+   {
+    "t": "qui tecum vivit et regnat",
+    "p": [
+     [
+      "qui",
+      "qui"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tecum",
+      "tecum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vivit",
+      "vivit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "regnat",
+      "regnat"
+     ]
+    ],
+    "flexoes": [
+     "la-v171",
+     "la-v050",
+     "la-v1046",
+     "la-v652"
+    ]
+   },
+   {
+    "t": "in unitate Spiritus Sancti, Deus,",
+    "p": [
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "unitate",
+      "unitate"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Spiritus",
+      "spiritus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Sancti",
+      "sancti"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Deus",
+      "deus"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1216",
+     "la-v215"
+    ]
+   },
+   {
+    "t": "per omnia saecula saeculorum.",
+    "p": [
+     [
+      "per",
+      "per"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "omnia",
+      "omnia"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "saecula",
+      "saecula"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "saeculorum",
+      "saeculorum"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v076",
+     "la-v217",
+     "la-v218"
+    ]
+   },
+   {
+    "t": "Amen.",
+    "p": [
+     [
+      "Amen",
+      "amen"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "Per Christum Dominum nostrum.",
+    "p": [
+     [
+      "Per",
+      "per"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Christum",
+      "christum#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Dominum",
+      "dominum#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nostrum",
+      "nostrum"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v056",
+     "la-v224"
+    ]
+   },
+   {
+    "t": "Amen.",
+    "p": [
+     [
+      "Amen",
+      "amen"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "oremus": {
+   "lema": "oro",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 1ª pessoa do plural",
+   "funcao": "rezemos",
+   "card": "la-p077",
+   "wiki": "https://en.wiktionary.org/wiki/oro#Latin"
+  },
+  "per": {
+   "lema": "per",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p427",
+   "wiki": "https://en.wiktionary.org/wiki/per#Latin"
+  },
+  "dominum": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo singular",
+   "funcao": "depois de per: pelo Senhor",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "nostrum": {
+   "lema": "noster",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino singular",
+   "funcao": "concorda com Dominum",
+   "card": "la-p089",
+   "wiki": "https://en.wiktionary.org/wiki/noster#Latin"
+  },
+  "iesum": {
+   "lema": "Iesus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Jesus."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Iesus#Latin",
+   "forma": "acusativo singular",
+   "funcao": "o Senhor"
+  },
+  "christum": {
+   "lema": "Christus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Cristo, o Ungido: título de Jesus."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Christus#Latin",
+   "forma": "acusativo singular"
+  },
+  "filium": {
+   "lema": "filius",
+   "classe": "substantivo masculino",
+   "forma": "acusativo singular",
+   "funcao": "aposto de Dominum: o Filho",
+   "card": "la-p043",
+   "wiki": "https://en.wiktionary.org/wiki/filius#Latin"
+  },
+  "tuum": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino singular",
+   "funcao": "concorda com Filium: teu",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  },
+  "qui": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "nominativo masculino singular",
+   "funcao": "sujeito de vivit e de regnat, retoma Filium: que",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "tecum": {
+   "partes": [
+    {
+     "lema": "tu",
+     "classe": "pronome",
+     "forma": "ablativo singular",
+     "funcao": "depois de cum",
+     "card": "la-p007",
+     "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+    },
+    {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "card": "la-p053",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+    }
+   ]
+  },
+  "vivit": {
+   "lema": "vivo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "vive",
+   "card": "la-p508",
+   "wiki": "https://en.wiktionary.org/wiki/vivo#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "regnat": {
+   "lema": "regno",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "reina",
+   "card": "la-p311",
+   "wiki": "https://en.wiktionary.org/wiki/regno#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "unitate": {
+   "lema": "unitas",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "depois de in: na unidade",
+   "card": "la-p634",
+   "wiki": "https://en.wiktionary.org/wiki/unitas#Latin"
+  },
+  "spiritus": {
+   "lema": "spiritus",
+   "classe": "substantivo masculino",
+   "forma": "genitivo singular",
+   "funcao": "do Espírito",
+   "card": "la-p054",
+   "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin"
+  },
+  "sancti": {
+   "lema": "sanctus",
+   "classe": "adjetivo",
+   "forma": "genitivo masculino singular",
+   "funcao": "concorda com Spiritus",
+   "card": "la-p084",
+   "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin"
+  },
+  "deus": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "aposto de qui: (sendo) Deus",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "omnia": {
+   "lema": "omnis",
+   "classe": "adjetivo",
+   "forma": "acusativo neutro plural",
+   "funcao": "concorda com saecula",
+   "card": "la-p019",
+   "wiki": "https://en.wiktionary.org/wiki/omnis#Latin"
+  },
+  "saecula": {
+   "lema": "saeculum",
+   "classe": "substantivo neutro",
+   "forma": "acusativo plural",
+   "funcao": "depois de per",
+   "card": "la-p088",
+   "wiki": "https://en.wiktionary.org/wiki/saeculum#Latin"
+  },
+  "saeculorum": {
+   "lema": "saeculum",
+   "classe": "substantivo neutro",
+   "forma": "genitivo plural",
+   "funcao": "dos séculos",
+   "card": "la-p088",
+   "wiki": "https://en.wiktionary.org/wiki/saeculum#Latin"
+  },
+  "amen": {
+   "lema": "amen",
+   "classe": "interjeição",
+   "g": "gramatical",
+   "def": [
+    "Amém: assim seja. Palavra hebraica que fecha a oração."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/amen#Latin"
+  },
+  "christum#2": {
+   "lema": "Christus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Cristo, o Ungido: título de Jesus."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Christus#Latin",
+   "funcao": "Cristo"
+  },
+  "dominum#2": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo singular",
+   "funcao": "concorda com Christum",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  }
+ }
+}
