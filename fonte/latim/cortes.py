@@ -16,8 +16,8 @@ inteira, que pode atravessar o fim do verso. Pedido do Gere (04/11): «Arma viru
 primus ab oris» não serve de card. O critério:
 
 - o trecho é uma unidade de sentido, com o verbo dela;
-- o que fica de fora vira «…», e nenhuma palavra muda («Arma virumque cano, Troiæ qui primus ab
-  oris Italiam … venit»);
+- o que fica de fora some sem marca, e nenhuma palavra muda («Arma virumque cano, Troiæ qui primus
+  ab oris Italiam venit»; até 19/11/2026 com «…» no lugar do que saiu, que o Gere dispensou);
 - até 10 palavras, e até 12 quando é isso que fecha a frase;
 - pode repetir palavras de outro trecho, quando o sentido pede (o antecedente do relativo);
 - toda palavra do texto entra em algum trecho.
@@ -348,9 +348,6 @@ CORTES = {
 
 FIM = '.;:?!'
 
-# O refrão que sai do trecho sem deixar «…» (o Gere, 15/11, la-t126: «pode tirar o aleluia do fim
-# […] E não precisa dos três pontinhos»). Também não precisa entrar em trecho nenhum.
-REFRAO = {'alleluia'}
 # o arquivo dos trechos dos textos novos (os que ainda não têm card de trecho)
 ARQUIVO_NOVO = '32-trechos-6.json'
 
@@ -415,7 +412,7 @@ def ler_versos():
 
 def montar_trecho(tid, versos, intervalos, cards):
     """O «la», as «palavras» e os versos de um trecho: as palavras dos intervalos, com a pontuação
-    de dentro de cada intervalo, «…» entre um intervalo e outro e a pontuação forte do fim. A
+    de dentro de cada intervalo, um espaço entre um intervalo e outro e a pontuação forte do fim. A
     maiúscula do começo do verso cai no meio da frase (Longeque → longeque), menos no nome
     próprio e depois de pontuação forte (a fala do cordeiro: «timens: Qui possum»)."""
     lista = []      # (n do verso, início, fim, texto, entradas)
@@ -444,8 +441,7 @@ def montar_trecho(tid, versos, intervalos, cards):
         pedacos.append(trecho)
     la = pedacos[0]
     for k in range(1, len(pedacos)):
-        fora = [lista[n][3].lower() for n in range(intervalos[k - 1][1] + 1, intervalos[k][0])]
-        la += (' ' if fora and all(w in REFRAO for w in fora) else ' … ') + pedacos[k]
+        la += ' ' + pedacos[k]
     # a pontuação forte depois da última palavra fica
     nv, ini, fim, w, _ = lista[intervalos[-1][1]]
     resto = versos[nv - 1]['la'][fim:].strip()
