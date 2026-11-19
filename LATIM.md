@@ -1041,3 +1041,23 @@ lingua*. O *Pater Noster* já estava (21/10).
   `glossario_textos.py`. Scripts auxiliares em `~/.cache/poemas-1611/la/` (só neste PC).
 - Sem frase de uso (sem candidata no corpus): basium, aequor, veho, inferiae, nequiquam, adloquor, necto,
   philyra, rosa, allaboro, mano, myrtus, serus, malus, secundus.
+
+## 21. Liturgia de hoje e mais textos curtos fora da liturgia (pedido de 19/11/2026)
+Pedido do Gere: «os principais trechos da liturgia romana atual que se repetem diariamente ou quase
+diariamente; mais alguns poemas e textos curtos não religiosos. […] que tenha bastantes textos, de modo
+que sempre tenha algum que falte poucas palavras para que eu seja capaz de lê-lo por inteiro». Contraproposta
+aprovada no mesmo dia, com as cinco recomendações:
+- **D53. Texto oficial de hoje**: o Ordinário da Missa do *Missale Romanum* (3ª ed. típica, 2002/2008) e as
+  partes fixas da *Liturgia Horarum*, com os salmos e cânticos pela Nova Vulgata (como no Salmo II, §19),
+  e não pela Clementina (D1).
+- **D54. Oração Eucarística II inteira fica de fora** (composta em 1968, direitos da LEV): só o que é comum a
+  todas, a consagração, o *Mysterium fidei* com as três aclamações e o *Per ipsum*.
+- **D55. Três levas**, cada uma com commit: (1) os textos não religiosos curtos e os diálogos curtos da
+  Missa; (2) o resto da Missa; (3) as Horas.
+- **D56. Só por escolha**, como os poemas de 16/11; os bem curtos (Marcial, Publílio, diálogos da Missa)
+  também na fila automática.
+- **D57. Na Biblioteca, todos**: a liturgia em Catolicismo → Orações, com os autores «Missal Romano» e
+  «Liturgia das Horas»; os clássicos na Literatura → Latim.
+- Muitos textos curtos de propósito: a tela Textos já põe primeiro o que tem menos palavras faltando.
+- Fora: o *Kyrie* (grego), como no responso; o nome do evangelista no «Lectio sancti Evangelii secundum…»
+  fica Matthaeum.
