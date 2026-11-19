@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "idioma": "es",
- "gerado_em": "2026-11-16",
+ "gerado_em": "2026-11-19",
  "total": 2494,
  "cards": [
   {
@@ -26442,6 +26442,9 @@
     "p354",
     "p184",
     "p632"
+   ],
+   "aceitasEs": [
+    "Le tiene inquina al cuñado."
    ]
   },
   {
@@ -27811,7 +27814,10 @@
     "poe sal e pimenta",
     "tempera com sal e pimenta",
     "bota sal e pimenta do reino",
-    "coloque sal e pimenta do reino"
+    "coloque sal e pimenta do reino",
+    "bota sal e pimenta",
+    "coloca sal e pimenta do reino",
+    "joga sal e pimenta"
    ],
    "aceitasEn": [
     "add salt and pepper",
@@ -30739,7 +30745,10 @@
     "terca feira fica bom para voce",
     "terca te serve",
     "pode ser na terca",
-    "terca da para voce"
+    "terca da para voce",
+    "fica bom para voce na terca",
+    "na terca fica bom para voce",
+    "fica bom na terca para voce"
    ],
    "aceitasEn": [
     "does tuesday suit you",
@@ -32696,7 +32705,7 @@
    "id": "p267",
    "tipo": "palavra",
    "es": "descargar",
-   "pt": "baixar",
+   "pt": "baixar (um arquivo)",
    "en": "to download",
    "aceitas": [
     "baixar",
@@ -32709,10 +32718,10 @@
     "download"
    ],
    "distratores": [
-    "carregar",
-    "apagar",
-    "enviar",
-    "imprimir"
+    "carregar (a bateria)",
+    "apagar (um arquivo)",
+    "enviar (um arquivo)",
+    "imprimir (um arquivo)"
    ],
    "distratoresEn": [
     "to charge",
@@ -40943,7 +40952,7 @@
    "id": "p309",
    "tipo": "palavra",
    "es": "el bulo",
-   "pt": "o boato",
+   "pt": "a notícia falsa",
    "en": "the hoax",
    "aceitas": [
     "o boato",
@@ -43159,7 +43168,11 @@
     "ela colocou uma saia longa",
     "pos uma saia longa",
     "ela vestiu uma saia longa",
-    "ela botou uma saia longa"
+    "ela botou uma saia longa",
+    "ela colocou uma saia comprida",
+    "ela pos uma saia comprida",
+    "ela vestiu uma saia comprida",
+    "ela botou uma saia comprida"
    ],
    "aceitasEn": [
     "she put on a long skirt",
@@ -56514,13 +56527,15 @@
    "id": "p683",
    "tipo": "palavra",
    "es": "el rumor",
-   "pt": "o boato",
+   "pt": "o boato / o murmúrio",
    "en": "the rumour",
    "aceitas": [
     "boato",
     "o rumor",
     "rumor",
-    "o burburinho"
+    "o burburinho",
+    "murmurio",
+    "o murmurio"
    ],
    "aceitasEn": [
     "rumour",
@@ -56530,10 +56545,10 @@
     "murmur"
    ],
    "distratores": [
-    "o humor",
-    "o tumor",
-    "o barulho",
-    "o fato"
+    "o humor / o ânimo",
+    "o tumor / o caroço",
+    "o barulho / o ruído",
+    "o fato / a notícia"
    ],
    "distratoresEn": [
     "the mood",
@@ -91811,7 +91826,11 @@
     "ele usa um cachecol em volta do pescoco",
     "ele usa um cachecol no pescoco",
     "ela usa um cachecol em volta do pescoco",
-    "ele leva um cachecol em volta do pescoco"
+    "ele leva um cachecol em volta do pescoco",
+    "ele esta com um cachecol no pescoco",
+    "ele esta com um cachecol em volta do pescoco",
+    "ele usa um cachecol ao redor do pescoco",
+    "ele esta com um cachecol ao redor do pescoco"
    ],
    "aceitasEn": [
     "he wears a scarf around his neck",
@@ -104041,7 +104060,10 @@
     "gozacao",
     "deboche",
     "trapaca",
-    "fraude"
+    "fraude",
+    "zoacao",
+    "zoeira",
+    "chacota"
    ],
    "aceitasEn": [
     "mockery",

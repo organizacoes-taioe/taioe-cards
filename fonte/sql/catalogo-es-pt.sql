@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva 0b6574e1, 2494 cards.
+-- Catálogo do curso es-pt, leva 4c042afa, 2494 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', '0b6574e1', '2494 cards')
+values ('es-pt', '4c042afa', '2494 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -588,7 +588,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u179', 'frase', 'C1', array['substantivo']::text[], 'p181', '578e1644', array['Estudou com afinco para a prova.', 'Estudou com colegas para a prova.', 'Estudou com medo para a prova.', 'Estudou com preguiça para a prova.', 'Estudou com pressa para a prova.']::text[]),
   ('es-pt', 'u180', 'frase', 'C1', array['substantivo']::text[], 'p182', 'e000e981', array['Bebe com canudo.', 'Bebe com medida certa de gelo.', 'Bebe com moderação.', 'Bebe com os amigos.', 'Bebe com pressa.']::text[]),
   ('es-pt', 'u181', 'frase', 'C2', array['substantivo', 'jurídico']::text[], 'p183', '9947ce0e', array['A idade não foi desculpa para faltar ao curso.', 'A idade não foi empecilho para terminar o curso.', 'A idade não foi motivo para largar o curso.', 'A idade não foi pergunta na entrevista do curso.', 'A idade não foi segredo para ninguém do curso.']::text[]),
-  ('es-pt', 'u182', 'frase', 'C2', array['substantivo']::text[], 'p184', 'fb173bb0', array['Ele tem birra com o cunhado.', 'Ele tem carinho pelo cunhado.', 'Ele tem dívida com o cunhado.', 'Ele tem inveja do cunhado.', 'Ele tem medo do cunhado.']::text[]),
+  ('es-pt', 'u182', 'frase', 'C2', array['substantivo']::text[], 'p184', '4be97d3d', array['Ele tem birra com o cunhado.', 'Ele tem carinho pelo cunhado.', 'Ele tem dívida com o cunhado.', 'Ele tem inveja do cunhado.', 'Ele tem medo do cunhado.']::text[]),
   ('es-pt', 'u183', 'frase', 'C2', array['substantivo']::text[], 'p185', '458632aa', array['Foi alvo de concurso público.', 'Foi alvo de elogio público.', 'Foi alvo de escárnio público.', 'Foi alvo de homenagem pública.', 'Foi alvo de investigação pública.']::text[]),
   ('es-pt', 'u184', 'frase', 'C1', array['substantivo']::text[], 'p186', 'efb1c1ea', array['Preciso de um pouco de sal.', 'Preciso de um pouco de sono.', 'Preciso de um pouco de sorte.', 'Preciso de um pouco de sossego.', 'Preciso de um pouco de sucesso.']::text[]),
   ('es-pt', 'u185', 'frase', 'C1', array['substantivo']::text[], 'p187', '3f91bdc3', array['Se jogou na água com cuidado.', 'Se jogou na água com medo.', 'Se jogou na água com o cachorro.', 'Se jogou na água com ousadia.', 'Se jogou na água com roupa.']::text[]),
@@ -618,7 +618,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u209', 'frase', 'B2', array['falso-amigo', 'casa']::text[], 'p213', 'a6a93248', array['Encontrei fotos antigas na gaveta.', 'Encontrei fotos antigas no celular.', 'Encontrei fotos antigas no porão.', 'Encontrei fotos antigas no sótão.', 'Encontrei fotos antigas no álbum.']::text[]),
   ('es-pt', 'u210', 'frase', 'B1', array['falso-amigo', 'casa']::text[], 'p214', '47a29b49', array['Põe a planta naquela esquina.', 'Põe a planta naquela janela.', 'Põe a planta naquela prateleira.', 'Põe a planta naquele canto.', 'Põe a planta naquele vaso.']::text[]),
   ('es-pt', 'u211', 'frase', 'B1', array['comida']::text[], 'p215', '3dc2eb88', array['Às sextas comemos fora.', 'Às sextas comemos frango.', 'Às sextas comemos peixe.', 'Às sextas comemos pizza.', 'Às sextas pescamos peixe.']::text[]),
-  ('es-pt', 'u212', 'frase', 'B1', array['comida']::text[], 'p216', '135f5259', array['Põe sal e alho.', 'Põe sal e azeite.', 'Põe sal e orégano.', 'Põe sal e pimenta-do-reino.', 'Põe sal e pimentão.']::text[]),
+  ('es-pt', 'u212', 'frase', 'B1', array['comida']::text[], 'p216', 'dd62c707', array['Põe sal e alho.', 'Põe sal e azeite.', 'Põe sal e orégano.', 'Põe sal e pimenta-do-reino.', 'Põe sal e pimentão.']::text[]),
   ('es-pt', 'u213', 'frase', 'A1', array['família']::text[], 'p217', '85ec0775', array['Meu avô mais velho mora no Chile.', 'Meu irmão mais novo mora no Chile.', 'Meu irmão mais velho mora no Chile.', 'Meu irmão mais velho trabalha no Chile.', 'Meu primo mais velho mora no Chile.', 'Minha avó mais velha mora no Chile.', 'Minha irmã mais nova mora no Chile.', 'Minha irmã mais velha mora no Chile.', 'Minha irmã mais velha trabalha no Chile.', 'Minha prima mais velha mora no Chile.']::text[]),
   ('es-pt', 'u214', 'frase', 'A1', array['falso-amigo', 'família']::text[], 'p218', '18686c81', array['Meus padres se conheceram na faculdade.', 'Meus pais se casaram na faculdade.', 'Meus pais se conheceram na faculdade.', 'Meus pais se formaram na faculdade.', 'Meus pais se separaram na faculdade.']::text[]),
   ('es-pt', 'u215', 'frase', 'B1', array['família']::text[], 'p219', 'a7b75b92', array['Meu cunhado é médico.', 'Meu genro é médico.', 'Meu sobrinho é médico.', 'Meu sogro é médico.', 'Minha nora é médica.']::text[]),
@@ -681,7 +681,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'f161', 'frase', 'A2', array['cotidiano']::text[], null, '294b3c8c', array['Aonde você vai?', 'O que você comeu?', 'O que você passou?', 'O que você tem?', 'Por que você passou aqui?']::text[]),
   ('es-pt', 'f162', 'frase', 'B1', array['cotidiano', 'viagem']::text[], null, '8461c27a', array['Anda logo, que a gente perde o trem.', 'Calma, que o trem ainda está atrasado.', 'Espera, que o trem já vem vindo aí.', 'Olha, que o trem chegou mais cedo hoje.', 'Senta, que o trem já vai sair agora.']::text[]),
   ('es-pt', 'f163', 'frase', 'B1', array['cotidiano']::text[], null, '344bf0f4', array['Não dá tempo de comer.', 'Não gosto de comer.', 'Não me deixa comer.', 'Não me dá comida.', 'Não me dá vontade de comer.']::text[]),
-  ('es-pt', 'f164', 'frase', 'B1', array['cotidiano']::text[], null, 'ab9f86c5', array['Terça fica bom para você?', 'Terça foi bom para você?', 'Terça você vai trabalhar?', 'Você chegou bem na terça?', 'Você vem na terça?']::text[]),
+  ('es-pt', 'f164', 'frase', 'B1', array['cotidiano']::text[], null, '793b14e3', array['Terça fica bom para você?', 'Terça foi bom para você?', 'Terça você vai trabalhar?', 'Você chegou bem na terça?', 'Você vem na terça?']::text[]),
   ('es-pt', 'f165', 'frase', 'B1', array['cotidiano']::text[], null, '74eb8d28', array['Você me deve um favor?', 'Você me faz um favor?', 'Você me fez um favor?', 'Você me pede um favor?', 'Você quer um favor?']::text[]),
   ('es-pt', 'f166', 'frase', 'B1', array['cotidiano', 'tecnologia']::text[], null, 'c198dcb8', array['Meu celular está com a tela quebrada.', 'Meu celular está no conserto.', 'Meu celular está no modo avião.', 'Meu celular está no silencioso.', 'Meu celular está sem bateria.']::text[]),
   ('es-pt', 'f167', 'frase', 'B1', array['cotidiano', 'viagem']::text[], null, 'd6eb758f', array['A que horas você chegou?', 'Quando você vai chegar?', 'Quanto custa para chegar?', 'Quanto tempo leva para chegar?', 'Quanto tempo você ficou lá?']::text[]),
@@ -721,7 +721,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p264', 'palavra', 'A2', array['tecnologia', 'Espanha']::text[], null, '1f6c870e', array['a impressora', 'o computador', 'o monitor', 'o ordenado', 'o organizador']::text[]),
   ('es-pt', 'p265', 'palavra', 'A2', array['tecnologia']::text[], null, '64e76048', array['o carregador', 'o celular', 'o fone de ouvido', 'o notebook', 'o tablet']::text[]),
   ('es-pt', 'p266', 'palavra', 'B1', array['tecnologia']::text[], null, 'e8ff1fe2', array['a conta', 'a senha', 'o contrato', 'o código de barras', 'o usuário']::text[]),
-  ('es-pt', 'p267', 'palavra', 'B1', array['tecnologia', 'verbo']::text[], null, '6933751a', array['apagar', 'baixar', 'carregar', 'enviar', 'imprimir']::text[]),
+  ('es-pt', 'p267', 'palavra', 'B1', array['tecnologia', 'verbo']::text[], null, '6e712a0b', array['apagar (um arquivo)', 'baixar (um arquivo)', 'carregar (a bateria)', 'enviar (um arquivo)', 'imprimir (um arquivo)']::text[]),
   ('es-pt', 'p268', 'palavra', 'B1', array['tecnologia']::text[], null, '8d4a3186', array['a mensagem', 'o anexo', 'o arquivo', 'o encaixe', 'o link']::text[]),
   ('es-pt', 'p269', 'palavra', 'B2', array['tecnologia', 'verbo', 'trabalho']::text[], null, '44e89005', array['adiantar', 'adiar', 'ajuntar dinheiro', 'ajustar', 'anexar']::text[]),
   ('es-pt', 'p270', 'palavra', 'B1', array['saúde']::text[], null, '7f06cb7b', array['a bula', 'a consulta', 'a receita', 'a recepção', 'o atestado']::text[]),
@@ -898,7 +898,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'v088', 'frase', 'B1', array['conjugação', 'gerúndio', 'imperfeito', 'dormir']::text[], null, '82c6aa97', array['Eu dormi quando você ligou.', 'Eu durmo quando você liga.', 'Eu estava dormindo quando você ligou.', 'Eu tinha dormido quando você ligou.', 'Eu vou dormir quando você ligar.']::text[]),
   ('es-pt', 'p308', 'palavra', 'B1', array['verbo', 'tecnologia', 'cotidiano']::text[], null, '00c4cf6d', array['atender (o telefone)', 'desligar (o telefone)', 'discar (o número)', 'gravar (o recado)', 'tocar (a campainha)']::text[]),
   ('es-pt', 'u304', 'frase', 'B1', array['tecnologia', 'cotidiano']::text[], 'p308', '78c710c2', array['Atende o telefone, que é tarde.', 'Carrega o telefone, que é tarde.', 'Desliga o telefone, que é tarde.', 'Guarda o telefone, que é tarde.', 'Leva o telefone, que é tarde.']::text[]),
-  ('es-pt', 'p309', 'palavra', 'B2', array['mídia', 'tecnologia']::text[], null, '135fdfde', array['a denúncia', 'a fofoca', 'a manchete', 'o boato', 'o desmentido']::text[]),
+  ('es-pt', 'p309', 'palavra', 'B2', array['mídia', 'tecnologia']::text[], null, '69beb9a1', array['a denúncia', 'a fofoca', 'a manchete', 'a notícia falsa', 'o desmentido']::text[]),
   ('es-pt', 'u305', 'frase', 'B2', array['mídia', 'tecnologia']::text[], 'p309', '0178b698', array['Não acredita nessa denúncia.', 'Não acredita nessa fofoca.', 'Não acredita nessa manchete.', 'Não acredita nesse boato.', 'Não acredita nesse desmentido.']::text[]),
   ('es-pt', 'p310', 'palavra', 'B2', array['saúde']::text[], null, '30247b79', array['a bengala', 'a muleta', 'a tala', 'a tipoia', 'o gesso']::text[]),
   ('es-pt', 'u306', 'frase', 'B2', array['saúde', 'corpo']::text[], 'p310', '6cd25ae7', array['Está com o braço enfaixado.', 'Está com o braço engessado.', 'Está com o braço inchado.', 'Está com o braço machucado.', 'Está com o braço na tipoia.']::text[]),
@@ -949,7 +949,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p333', 'palavra', 'A2', array['falso-amigo', 'roupa', 'objetos']::text[], null, '9ce6d7d5', array['a bolsa (de mão)', 'a carteira', 'a mochila', 'a sacola', 'o bolso (da calça)']::text[]),
   ('es-pt', 'u329', 'frase', 'A2', array['cidade', 'objetos']::text[], 'p333', 'c3b81caf', array['Roubaram meu celular no metrô.', 'Roubaram meu relógio no metrô.', 'Roubaram minha bolsa no metrô.', 'Roubaram minha carteira no metrô.', 'Roubaram minha mochila no metrô.']::text[]),
   ('es-pt', 'p334', 'palavra', 'A2', array['roupa']::text[], null, 'de3c47c9', array['a blusa', 'a calça', 'a saia', 'o avental', 'o vestido']::text[]),
-  ('es-pt', 'u330', 'frase', 'A2', array['roupa']::text[], 'p334', '12446f07', array['Ela pôs um vestido longo.', 'Ela pôs uma blusa longa.', 'Ela pôs uma calça longa.', 'Ela pôs uma capa longa.', 'Ela pôs uma saia longa.']::text[]),
+  ('es-pt', 'u330', 'frase', 'A2', array['roupa']::text[], 'p334', '8a8176d2', array['Ela pôs um vestido longo.', 'Ela pôs uma blusa longa.', 'Ela pôs uma calça longa.', 'Ela pôs uma capa longa.', 'Ela pôs uma saia longa.']::text[]),
   ('es-pt', 'p335', 'palavra', 'A2', array['falso-amigo', 'escola']::text[], null, '7ad84b3c', array['a lição de casa', 'as férias', 'as provas', 'as regras da escola', 'os recados']::text[]),
   ('es-pt', 'u331', 'frase', 'A2', array['escola', 'cotidiano']::text[], 'p335', 'f9c75bde', array['Faz a lição de casa antes de jantar.', 'Faz a mochila da escola antes de jantar.', 'Faz a redação da escola antes de jantar.', 'Faz as contas do mercado antes de jantar.', 'Faz o lanche da escola antes de jantar.']::text[]),
   ('es-pt', 'p336', 'palavra', 'B2', array['trabalho', 'cidade', 'objetos']::text[], null, '2146e7d8', array['a bancada', 'a prateleira', 'a vitrine', 'o balcão', 'o caixa']::text[]),
@@ -1313,7 +1313,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p680', 'palavra', 'A1', array['substantivo', 'cotidiano', 'falso-amigo']::text[], null, '4a006644', array['o embrulho', 'o legado', 'o presente', 'o recibo', 'o regalo']::text[]),
   ('es-pt', 'p681', 'palavra', 'B1', array['substantivo', 'jurídico']::text[], null, '40f280df', array['o golpe', 'o lobo', 'o robô', 'o roubo', 'o rubor']::text[]),
   ('es-pt', 'p682', 'palavra', 'A2', array['substantivo', 'casa']::text[], null, '0eb41398', array['a ruína', 'o barulho', 'o ruivo', 'o rumor', 'o silêncio']::text[]),
-  ('es-pt', 'p683', 'palavra', 'B2', array['substantivo', 'mídia']::text[], null, '510cd0b9', array['o barulho', 'o boato', 'o fato', 'o humor', 'o tumor']::text[]),
+  ('es-pt', 'p683', 'palavra', 'B2', array['substantivo', 'mídia']::text[], null, 'c4c40a53', array['o barulho / o ruído', 'o boato / o murmúrio', 'o fato / a notícia', 'o humor / o ânimo', 'o tumor / o caroço']::text[]),
   ('es-pt', 'p684', 'palavra', 'A2', array['substantivo', 'casa']::text[], null, '9ae94ee9', array['a cozinha', 'a sala', 'o porão', 'o quarto', 'o salão de beleza']::text[]),
   ('es-pt', 'p685', 'palavra', 'B1', array['substantivo', 'social']::text[], null, 'bce8a99e', array['a despedida', 'a saúde', 'o cumprimento', 'o salto', 'o soluço']::text[]),
   ('es-pt', 'p686', 'palavra', 'A2', array['substantivo']::text[], null, 'a5fd562e', array['o barulho', 'o cilindro', 'o sigilo', 'o silêncio', 'o sossego']::text[]),
@@ -2181,7 +2181,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u566', 'frase', 'A2', array['economia']::text[], 'p1142', 'b7522e94', array['O cobre está muito caro.', 'O couro está muito caro.', 'O ferro está muito caro.', 'O ouro está muito caro.', 'O vinho está muito caro.']::text[]),
   ('es-pt', 'u567', 'frase', 'A2', array['cotidiano']::text[], 'p1143', 'a38df07c', array['Você tem que comprar um.', 'Você tem que devolver um.', 'Você tem que escolher um.', 'Você tem que pegar um.', 'Você tem que trazer um.']::text[]),
   ('es-pt', 'u568', 'frase', 'A1', array['natureza']::text[], 'p1144', 'a36a9792', array['Que dia cansativo!', 'Que dia chato!', 'Que dia lindo!', 'Que dia longo!', 'Que dia quente!']::text[]),
-  ('es-pt', 'u569', 'frase', 'A1', array['corpo']::text[], 'p1145', '544b2efb', array['Ele usa um cachecol em volta da cabeça.', 'Ele usa um cachecol em volta da cintura.', 'Ele usa um cachecol em volta do braço.', 'Ele usa um cachecol em volta do pescoço.', 'Ele usa um cachecol em volta do pulso.']::text[]),
+  ('es-pt', 'u569', 'frase', 'A1', array['corpo']::text[], 'p1145', 'ba3ae9c3', array['Ele usa um cachecol em volta da cabeça.', 'Ele usa um cachecol em volta da cintura.', 'Ele usa um cachecol em volta do braço.', 'Ele usa um cachecol em volta do pescoço.', 'Ele usa um cachecol em volta do pulso.']::text[]),
   ('es-pt', 'u570', 'frase', 'A1', array['roupa']::text[], 'p1145', 'abf076e2', array['A camisa tem o bolso branco.', 'A camisa tem o botão branco.', 'A camisa tem o colarinho branco.', 'A camisa tem o punho branco.', 'A camisa tem o tecido branco.']::text[]),
   ('es-pt', 'u571', 'frase', 'A2', array['natureza']::text[], 'p1146', '6d8727a3', array['Hoje está chovendo muito.', 'Hoje está esfriando muito.', 'Hoje está nevando muito.', 'Hoje está trovejando muito.', 'Hoje está ventando muito.']::text[]),
   ('es-pt', 'u572', 'frase', 'A1', array['cotidiano']::text[], 'p1147', 'efd917fa', array['Não se assuste.', 'Não se atrase.', 'Não se esqueça.', 'Não se mexa.', 'Não se preocupe.']::text[]),
@@ -2425,7 +2425,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u749', 'frase', 'A2', array['cotidiano']::text[], 'p1300', '26dcfb9f', array['O cachorro nada no mar.', 'O cavalo nada no mar.', 'O menino nada no mar.', 'O pato nada no mar.', 'O peixe nada no mar.']::text[]),
   ('es-pt', 'u750', 'frase', 'A2', array['cotidiano']::text[], 'p1301', '14b1866a', array['Meu irmão é muito bravo.', 'Meu irmão é muito chato.', 'Meu irmão é muito engraçado.', 'Meu irmão é muito sério.', 'Meu irmão é muito tímido.']::text[]),
   ('es-pt', 'p1302', 'palavra', 'A2', array['verbo', 'cotidiano']::text[], null, '816b8cf5', array['guardar / reter', 'ordenar / enviar', 'pedir / rogar', 'proibir / vetar', 'trazer / buscar']::text[]),
-  ('es-pt', 'p1303', 'palavra', 'C1', array['substantivo', 'social']::text[], null, '5f029db9', array['a briga / a discussão', 'a homenagem / a festa', 'a zombaria / a gozação', 'o castigo / a pena', 'o elogio / o aplauso']::text[]),
+  ('es-pt', 'p1303', 'palavra', 'C1', array['substantivo', 'social']::text[], null, 'b6ba7435', array['a briga / a discussão', 'a homenagem / a festa', 'a zombaria / a gozação', 'o castigo / a pena', 'o elogio / o aplauso']::text[]),
   ('es-pt', 'p1304', 'palavra', 'A2', array['advérbio', 'cotidiano']::text[], null, 'a5a4e99c', array['atrás / depois', 'dentro / ao redor', 'embaixo / abaixo', 'longe / fora', 'na frente / adiante']::text[]),
   ('es-pt', 'p1305', 'palavra', 'B1', array['verbo', 'formal']::text[], null, 'ef7883f3', array['achar / encontrar', 'buscar / procurar', 'esconder / ocultar', 'guardar / reter', 'perder / extraviar']::text[]),
   ('es-pt', 'p1306', 'palavra', 'B1', array['verbo', 'cotidiano']::text[], null, '2c68b45f', array['confirmar', 'esquecer', 'ignorar', 'provar', 'suspeitar']::text[]),

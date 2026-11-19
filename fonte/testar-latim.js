@@ -494,7 +494,8 @@ for (const txt of textos) {
 
 /* o corte novo (04/11/2026): «Arma virumque cano, Troiæ qui primus ab oris» deixou de ser card */
 ok(!CARDS.some(c => c.tipo === 'frase' && c.la === 'Arma virumque cano, Troiae qui primus ab oris'), 'o primeiro verso da Eneida não é mais card sozinho');
-ok(CARDS.some(c => c.tipo === 'frase' && c.texto && c.la.includes(' … ')), 'há trechos com «…» no que fica de fora');
+/* desde 19/11/2026 o que fica de fora some sem marca (o Gere, no la-t085: «não precisa colocar os três pontinhos») */
+ok(!CARDS.some(c => c.tipo === 'frase' && c.texto && /…/.test(c.la + ' ' + c.pt)), 'nenhum trecho com «…» no que fica de fora');
 
 /* a pergunta sobre o trecho (§16, D41): depois do trecho, uma vez só */
 M.usarTransparencias(CARDS);
