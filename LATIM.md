@@ -1056,8 +1056,10 @@ aprovada no mesmo dia, com as cinco recomendações:
   Missa; (2) o resto da Missa; (3) as Horas.
 - **D56. Só por escolha**, como os poemas de 16/11. O latim não tem fila automática (a pessoa escolhe de 1 a
   3 textos), e a tela Textos já põe primeiro o que tem menos palavras faltando: os curtos sobem sozinhos.
-- **D57. Na Biblioteca, todos**: a liturgia em Catolicismo → Orações, com os autores «Missal Romano» e
-  «Liturgia das Horas»; os clássicos na Literatura → Latim.
+- **D57. Na Biblioteca, só os clássicos** (Literatura → Latim). A liturgia fica **só nos Cards** (o Gere, 19/11:
+  «esses trechos da liturgia não precisam entrar na biblioteca, podem ser acessíveis apenas pelos cards
+  mesmo»): no `TEXTOS` do `textos.py`, `'biblioteca': None`, e o app não mostra o link (o build aceita texto
+  sem `biblioteca`).
 - Muitos textos curtos de propósito: a tela Textos já põe primeiro o que tem menos palavras faltando.
 - Fora: o *Kyrie* (grego), como no responso; o nome do evangelista no «Lectio sancti Evangelii secundum…»
   fica Matthaeum.
