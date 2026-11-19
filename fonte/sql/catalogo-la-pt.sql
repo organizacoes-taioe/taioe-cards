@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso la-pt, leva 7c6d69ca, 7791 cards.
+-- Catálogo do curso la-pt, leva e053e26a, 7791 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('la-pt', '7c6d69ca', '7791 cards')
+values ('la-pt', 'e053e26a', '7791 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -7792,7 +7792,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('la-pt', 'la-u864', 'frase', 'A1', array['frase de uso']::text[], 'la-p1193', 'c12a908f', array['E o Senhor disse aos apóstolos', 'E o apóstolo disse ao Senhor', 'E os apóstolos dirão ao Senhor', 'E os apóstolos disseram ao Senhor', 'E os apóstolos dizem ao Senhor']::text[]),
   ('la-pt', 'la-u865', 'frase', 'A1', array['frase de uso']::text[], 'la-p1194', '40a719f1', array['Eu abandonei os escravos.', 'O escravo me abandonou.', 'Os escravos me abandonaram.', 'Os escravos me abandonarão.', 'Os escravos nos abandonaram.']::text[]),
   ('la-pt', 'la-u866', 'frase', 'A1', array['frase de uso']::text[], 'la-p1195', 'b8e16292', array['Olha para mim.', 'Olha para nós.', 'Olha para ti.', 'Olhai para mim.', 'Olhas para mim.']::text[]),
-  ('la-pt', 'la-u867', 'frase', 'A1', array['frase de uso']::text[], 'la-p1198', 'defc84a8', array['Ao deus, eis, ao deus!', 'Com o deus, eis, com o deus!', 'Do deus, eis, do deus!', 'O deus, eis o deus!', 'Os deuses, eis, os deuses!']::text[]),
+  ('la-pt', 'la-u867', 'frase', 'A1', array['frase de uso']::text[], 'la-p1198', 'fb50edd4', array['Do deus, eis o deus!', 'O deus não está aqui!', 'O deus, eis o deus!', 'O deus, onde está o deus?', 'Os deuses, eis os deuses!']::text[]),
   ('la-pt', 'la-u868', 'frase', 'A1', array['frase de uso']::text[], 'la-p1199', '8b24c278', array['Não me chamaste, meu filho', 'Não te chamarei, meu filho', 'Não te chamei, meu filho', 'Não te chamo, meu filho', 'Não vos chamei, meus filhos']::text[]),
   ('la-pt', 'la-u869', 'frase', 'A1', array['frase de uso']::text[], 'la-p1200', 'ea094efd', array['Entra até mim, meu senhor', 'Entrai até mim, meus senhores', 'Entrará até mim o meu senhor', 'Entras até mim, meu senhor', 'Entrei até ti, meu senhor']::text[]),
   ('la-pt', 'la-u870', 'frase', 'A1', array['frase de uso']::text[], 'la-p1201', 'c67b15d8', array['e preparam-se para sair do palácio', 'e prepararam-se para sair do palácio', 'e preparava-se para sair do palácio', 'e preparavam-se para sair do palácio', 'e se prepararão para sair do palácio']::text[]),
