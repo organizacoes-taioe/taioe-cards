@@ -68,7 +68,7 @@ Tudo em `fonte/raras/` (no repositório), um script por passo:
 - Como foi feito (refazer para uma obra nova): `obra.mjs` (a obra e o corpus) → `palavras.py` →
   `corpus.py` → lotes de ~45 palavras para agentes Sonnet (`BRIEF.md`) → revisão por outros
   agentes (`REVISAO.md`, que gravam `revisada-N.jsonl`) → `verificar.py` → sinônimos (um agente,
-  `SINONIMOS.md`, `buscar.py`) → `montar.py` → build. Os briefs estão em `fonte/raras/briefs/`; os lotes e as saídas, em
+  `SINONIMOS.md`, `buscar.py`) → `montar.py` → build. Os briefs estão em `fonte/raras/briefs/`, e os dados revisados (de onde o `montar.py` refaz os cards) em `fonte/raras/trabalho/`; o resto (lotes brutos, corpus), em
   `~/.cache/raras-2011/` (só no notebook). Lições: o agente põe erradas absurdas no card de uso
   («gasoso», «domingo»): pedir parônimos reais que não caibam; e frase de uso em que qualquer
   palavra da classe cabe («cavalo ___») não serve.
