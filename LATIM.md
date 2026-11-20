@@ -834,6 +834,10 @@ pede (quem, o quê, a quem, de quê) e só então ligar cada adjetivo ao nome pe
 a palavra no dicionário pelo radical. Proposta D34–D46; as respostas dele (04/11):
 
 - ✔ **D34. A forma de dicionário com o verbete inteiro**: já feita no mesmo dia (cards PR #77, §3.6).
+  As erradas são sempre o mesmo verbete falseado (pedido de 04/11; desde 19/11/2026 também nos
+  plurais só, irregulares, pronomes e adjetivos, com uma forma trocada de cada vez: «tenebrae,
+  tenebrorum, f. pl.», «sum, essere, fui», «tu, tuis»; `cards_de_forma.py`, `variacoes`). Verbete
+  de outra palavra só se nem assim der quatro.
 - ✔ **D35. A nota da frase começa pelo verbo**: nas 43 primeiras frases e nos 84 versos, a primeira
   linha da nota é o verbo, o sentido e as perguntas que ele faz, com a palavra que responde cada uma
   («solvit (soltar): quem solta? Teucria. O que é solto? se. De quê? luctu, do luto.»).

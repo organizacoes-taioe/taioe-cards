@@ -286,6 +286,7 @@ def enriquecer(cards, palavras):
     funcoes.json), a pessoa e o número do verbo e a forma de dicionário."""
     arq = AQUI / 'funcoes.json'
     funcoes = json.loads(arq.read_text(encoding='utf-8')) if arq.exists() else {}
+    reais_do_curso = {sem_acento(verbete(x)) for x in palavras.values()}
     for c in cards:
         rotulo = c.pop('_rotulo', '')
         f = funcoes.get(c['id'])
@@ -305,10 +306,11 @@ def enriquecer(cards, palavras):
             # verbetes inventados da mesma palavra, pelos outros padrões (pedido do Gere, 04/11);
             # irregulares, pronomes e o que não tem padrão ficam com verbetes reais do curso
             erradas = falsos(lema, c['la'], existe=existe_no_wiktionary)[:4]
-            if len(erradas) < 2:
-                erradas = []
-            # com dois ou três inventados, um verbete real parecido completa os quatro; nunca um de
-            # que a forma da frase também possa vir («Iacta», imperativo de iacto)
+            # o que faltar, o mesmo verbete com uma forma trocada (pedido do Gere, 19/11)
+            if len(erradas) < 4:
+                erradas += variacoes(lema, c['la'], erradas, reais_do_curso, existe=existe_no_wiktionary)[:4 - len(erradas)]
+            # só se nem assim der quatro, um verbete real parecido completa; nunca um de que a forma
+            # da frase também possa vir («Iacta», imperativo de iacto)
             origens = {sem_acento(a.get('lema') or '') for a in formas.analisar(sem_acento(limpa(c['la'])))}
             reais = [v for v in parecidas(c['la'], lema, palavras, 12)
                      if v not in erradas and sem_acento(v.split(',')[0].strip()) not in origens]
@@ -491,6 +493,73 @@ def falsos(lema, w, existe=None):
         if existe and sem_acento(cab) != cabeca and existe(cab, cls, v, w):
             continue
         saida.append(v)
+    return saida
+
+
+# ── as variações (pedido do Gere, 19/11/2026, no comentário do la-xf032-6) ──
+# «Os distratores tem que ser variações falsas com o mesmo tema da palavra selecionada, e não outras
+# palavras». Quando os padrões de cima não dão quatro (o plural só, como tenebrae; os irregulares,
+# sum, volo, fero; os pronomes, ego, is, qui; o adjetivo de que só saem dois), completa-se com o
+# próprio verbete com uma forma trocada, uma terminação de cada vez, alternando as formas: primeiro
+# as de depois da primeira, que são a lição do verbete («tenebrae, tenebrorum, f. pl.», «sum,
+# essere, fui», «is, ea, it», «tu, tuis»). O gênero não muda (só ele não basta, como nos padrões
+# de cima), e verbete de verdade do curso não entra.
+TROCAS_NOME = [('arum', 'orum'), ('orum', 'arum'), ('ium', 'um'), ('um', 'ium'), ('orum', 'um'),
+               ('ae', 'a'), ('ae', 'i'), ('a', 'ae'), ('a', 'us'), ('us', 'um'), ('us', 'is'),
+               ('um', 'us'), ('um', 'a'), ('ei', 'i'), ('ei', 'ii'), ('is', 'i'), ('is', 'us'),
+               ('i', 'is'), ('i', 'ae'), ('i', 'o'), ('es', 'is'), ('ud', 'um'), ('ud', 'ut'),
+               ('od', 'ud'), ('od', 'id'), ('id', 'it'), ('id', 'ud'), ('ic', 'ec'), ('aec', 'ac'),
+               ('oc', 'uc'), ('er', 'or'), ('or', 'er'), ('x', 'xis'), ('e', 'is'), ('e', 'a'),
+               ('o', 'us'), ('u', 'us'), ('s', 'm'), ('m', 's'), ('d', 't'), ('aec', 'oec'), ('em', 'um'),
+               ('ius', 'ior'), ('a', 'i'), ('am', 'um'), ('am', 'em')]
+# no verbo, cada forma tem as suas: a 1ª pessoa, o infinitivo, o perfeito e o supino
+TROCAS_VERBO = [
+    [('eo', 'o'), ('io', 'o'), ('o', 'eo'), ('o', 'io'), ('or', 'eor'), ('eor', 'or'), ('m', 'o'), ('am', 'o')],
+    [('are', 'ere'), ('ere', 'ire'), ('ire', 'ere'), ('ere', 'are'), ('ari', 'eri'), ('eri', 'iri'),
+     ('iri', 'ari'), ('e', 'ere'), ('i', 'ere'), ('is', 'es'), ('i', 'ari')],
+    [('avi', 'ui'), ('ivi', 'ii'), ('ui', 'avi'), ('si', 'xi'), ('xi', 'si'), ('ii', 'ivi'), ('i', 'ivi'),
+     ('i', 'avi'), ('us sum', 'um sum'), ('t', 'nt'), ('i', 'si')],
+    [('atum', 'itum'), ('itum', 'atum'), ('tum', 'sum'), ('sum', 'tum'), ('urus', 'urum'), ('um', 'us')],
+]
+GENERO = re.compile(r'^[mfn]\.( e [mfn]\.)?( pl\.)?$')
+
+
+def variacoes(lema, w, ja, reais, existe=None):
+    """O verbete com uma forma trocada, para completar os falsos (ver acima). «ja» são os falsos
+    que já entraram; «reais», os verbetes do curso, sem acento."""
+    tags = lema.get('tags', [])
+    verbo = 'verbo' in tags
+    cls = 'verbo' if verbo else 'adjetivo' if 'adjetivo' in tags else '' if 'pronomes' in tags else 'nome'
+    p = partes(lema)
+    certo = sem_acento(verbete(lema))
+    w = sem_acento(limpa(w)).lower().replace('æ', 'ae').replace('œ', 'oe')
+    ordem = [i for i in range(1, len(p)) if not GENERO.match(p[i])] + [0]
+    por_forma = []
+    for i in ordem:
+        lista = []
+        trocas = TROCAS_VERBO[min(i, 3)] if verbo else TROCAS_NOME
+        for a, b in trocas:
+            if p[i].endswith(a) and (len(p[i]) > len(a) or b):
+                nova = p[i][:-len(a)] + b
+                v = ', '.join(p[:i] + [nova] + p[i + 1:])
+                if v not in lista:
+                    lista.append(v)
+        por_forma.append((i, lista))
+    vistos = {sem_acento(x) for x in ja} | {certo}
+    saida = []
+    for k in range(max((len(l) for _, l in por_forma), default=0)):
+        for i, lista in por_forma:
+            if k >= len(lista):
+                continue
+            v = lista[k]
+            sv = sem_acento(v)
+            if sv in vistos or sv in reais:
+                continue
+            cab = v.split(',')[0].strip()
+            if i == 0 and existe and existe(cab, cls, v, w):
+                continue
+            vistos.add(sv)
+            saida.append(v)
     return saida
 
 

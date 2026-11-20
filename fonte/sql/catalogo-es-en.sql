@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-en, leva f44141be, 2422 cards.
+-- Catálogo do curso es-en, leva 2be447dc, 2422 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-en', 'f44141be', '2422 cards')
+values ('es-en', '2be447dc', '2422 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -849,7 +849,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'u299', 'frase', 'B2', array['cultura', 'cidade']::text[], 'p303', '3e048eda', array['There is plenty of housing in this city.', 'There is plenty of transport in this city.', 'There is plenty of work in this city.', 'There is plenty to do in this city.', 'There is plenty to study in this city.']::text[]),
   ('es-en', 'p304', 'palavra', 'B2', array['gíria', 'Espanha', 'social', 'substantivo']::text[], null, 'b9c95709', array['the complaint', 'the flattery', 'the gossip', 'the joke', 'the telling off']::text[]),
   ('es-en', 'u300', 'frase', 'B2', array['gíria', 'trabalho']::text[], 'p304', 'f069d4d4', array['A lie spreads fast in the office.', 'Fashion spreads fast in the office.', 'Gossip spreads fast in the office.', 'News spreads fast in the office.', 'The flu spreads fast in the office.']::text[]),
-  ('es-en', 'p305', 'palavra', 'B1', array['gíria', 'Espanha', 'social', 'substantivo']::text[], null, '8ac74a70', array['the cousin', 'the kid', 'the neighbour', 'the old man', 'the workmate']::text[]),
+  ('es-en', 'p305', 'palavra', 'B1', array['gíria', 'Espanha', 'social', 'substantivo']::text[], null, '7cad839e', array['the cousin', 'the kid', 'the neighbour', 'the old man', 'the workmate']::text[]),
   ('es-en', 'u301', 'frase', 'B1', array['gíria', 'Espanha']::text[], 'p305', '3c303e5d', array['That debutant plays really well.', 'That goalkeeper plays really well.', 'That kid plays really well.', 'That team plays really well.', 'That veteran plays really well.']::text[]),
   ('es-en', 'p306', 'palavra', 'B2', array['escola', 'gíria', 'Espanha', 'substantivo']::text[], null, 'ea412123', array['the attendance list', 'the crib sheet', 'the final exam', 'the scrap paper', 'the slide rule']::text[]),
   ('es-en', 'u302', 'frase', 'B2', array['escola', 'gíria']::text[], 'p306', 'f948475c', array['They caught him with a calculator in the exam.', 'They caught him with a crib sheet in the exam.', 'They caught him with a magazine in the exam.', 'They caught him with a pen in the exam.', 'They caught him with a sheet of paper in the exam.']::text[]),
@@ -2168,7 +2168,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'u585', 'frase', 'A2', array['cotidiano']::text[], 'p1157', '5c2aab1f', array['The noise bothered the whole house.', 'The noise distracted the whole house.', 'The noise scared the whole house.', 'The noise tired the whole house.', 'The noise woke the whole house.']::text[]),
   ('es-en', 'u586', 'frase', 'A1', array['filosofia']::text[], 'p1158', '6c246d27', array['That''s life.', 'That''s luck.', 'That''s the fashion.', 'That''s the law.', 'That''s the rule.']::text[]),
   ('es-en', 'u587', 'frase', 'A1', array['filosofia']::text[], 'p1159', '98699137', array['He''s afraid of death.', 'He''s afraid of heights.', 'He''s afraid of loneliness.', 'He''s afraid of the dark.', 'He''s afraid of the rain.']::text[]),
-  ('es-en', 'u588', 'frase', 'A2', array['social']::text[], 'p1160', 'd99ae097', array['It''s a danger to meet you.', 'It''s a dream to meet you.', 'It''s a mistake to meet you.', 'It''s a pleasure to meet you.', 'It''s a relief to meet you.']::text[]),
+  ('es-en', 'u588', 'frase', 'A2', array['social']::text[], 'p1160', '05b76a2e', array['It''s a danger to meet you.', 'It''s a dream to meet you.', 'It''s a mistake to meet you.', 'It''s a pleasure to meet you.', 'It''s a relief to meet you.']::text[]),
   ('es-en', 'u589', 'frase', 'A2', array['natureza']::text[], 'p1161', '357d6159', array['It rained a lot all week.', 'It rained a lot during Holy Week.', 'It rained a lot last week.', 'It rained a lot the following week.', 'It rained a lot the whole week.']::text[]),
   ('es-en', 'u590', 'frase', 'C1', array['social']::text[], 'p1162', '3da4ab94', array['I''m calmly waiting for summer.', 'I''m eagerly waiting for summer.', 'I''m lazily waiting for summer.', 'I''m patiently waiting for summer.', 'I''m sadly waiting for summer.']::text[]),
   ('es-en', 'u591', 'frase', 'A1', array['social']::text[], 'p1163', '0de1c901', array['I love you, my brother.', 'I love you, my father.', 'I love you, my friend.', 'I love you, my love.', 'I love you, my son.']::text[]),
