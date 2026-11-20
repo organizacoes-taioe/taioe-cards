@@ -1362,5 +1362,15 @@ window.TAGS_RAW = {
   "en": "analysis",
   "es": "análisis",
   "cards": 0
+ },
+ "raras": {
+  "en": "rare words",
+  "es": "palabras raras",
+  "cards": 0
+ },
+ "sinônimos": {
+  "en": "synonyms",
+  "es": "sinónimos",
+  "cards": 0
  }
 };

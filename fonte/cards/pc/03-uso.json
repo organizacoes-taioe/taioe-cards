@@ -1,0 +1,1978 @@
+[
+ {
+  "id": "pc-u001",
+  "tipo": "frase",
+  "pc": "Eu ia de garupa, ___ num travesseiro, agarrando-me ao paletó de José Leonardo para equilibrar-me, em posição muito incômoda.",
+  "pt": "escanchado",
+  "aceitas": [
+   "escanchado"
+  ],
+  "distratores": [
+   "escancarado",
+   "escalavrado",
+   "escarmentado",
+   "escamado"
+  ],
+  "escolher": true,
+  "requer": "pc-p001",
+  "requerTodas": [
+   "pc-p001"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "verbo"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Costuma vir no particípio, seguido de «em» ou «num» e do lugar onde a pessoa se monta.\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u007",
+  "tipo": "frase",
+  "pc": "Fizeram um rio com areia da praia e ___ miúdos em cima de um espelho.",
+  "pt": "seixos",
+  "aceitas": [
+   "seixos"
+  ],
+  "distratores": [
+   "feixes",
+   "beijos",
+   "seios",
+   "queixos"
+  ],
+  "escolher": true,
+  "requer": "pc-p007",
+  "requerTodas": [
+   "pc-p007"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Caetés (1933)",
+  "nota": "Costuma vir com «miúdos», «de rio» ou «da praia»; quase sempre no plural.\n— Graciliano Ramos, Caetés (1933)"
+ },
+ {
+  "id": "pc-u008",
+  "tipo": "frase",
+  "pc": "Porém como ela só se mostrava de frente e fastava sem virar Macunaíma não via o buraco no ___ por onde a pérfida respirava.",
+  "pt": "cangote",
+  "aceitas": [
+   "cangote"
+  ],
+  "distratores": [
+   "cotovelo",
+   "calcanhar",
+   "cóccix",
+   "tornozelo"
+  ],
+  "escolher": true,
+  "requer": "pc-p008",
+  "requerTodas": [
+   "pc-p008"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Mário de Andrade, Macunaíma (1928)",
+  "nota": "Costuma vir com «no» ou «pelo»: pegar pelo cangote, levar no cangote. Registro coloquial.\n— Mário de Andrade, Macunaíma (1928)"
+ },
+ {
+  "id": "pc-u009",
+  "tipo": "frase",
+  "pc": "O peito era uma tábua, os braços finos, as pernas uns ___ que nem sei como aguentavam o corpo.",
+  "pt": "cambitos",
+  "aceitas": [
+   "cambitos"
+  ],
+  "distratores": [
+   "cambistas",
+   "camarotes",
+   "camafeus",
+   "cabrestos"
+  ],
+  "escolher": true,
+  "requer": "pc-p009",
+  "requerTodas": [
+   "pc-p009"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Vem com «finas como» ou «as pernas uns…», em tom de zombaria ou de pena.\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u010",
+  "tipo": "frase",
+  "pc": "Os meninos brincam na sombra do outão, com pequenos ossos de ___, que figuram a boiada.",
+  "pt": "reses",
+  "aceitas": [
+   "reses"
+  ],
+  "distratores": [
+   "pacas",
+   "cutias",
+   "tatus",
+   "emas"
+  ],
+  "escolher": true,
+  "requer": "pc-p010",
+  "requerTodas": [
+   "pc-p010"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "José de Alencar, Iracema (1865)",
+  "nota": "Costuma andar com «cabeça de», «matar uma rês», «as reses da fazenda». Plural em «-es».\n— José de Alencar, Iracema (1865)"
+ },
+ {
+  "id": "pc-u014",
+  "tipo": "frase",
+  "pc": "O cabra jantou, recebeu uma nota de vinte mil-réis, que naquele tempo era muito dinheiro, e atravessou o Ipanema, ___ o bicho.",
+  "pt": "tangendo",
+  "aceitas": [
+   "tangendo"
+  ],
+  "distratores": [
+   "tingindo",
+   "tosquiando",
+   "tateando",
+   "tragando"
+  ],
+  "escolher": true,
+  "requer": "pc-p014",
+  "requerTodas": [
+   "pc-p014"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "verbo"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Pede objeto direto: tanger o gado, o bicho, a boiada. Em português do Brasil é mais comum «tocar».\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u017",
+  "tipo": "frase",
+  "pc": "A simples flor, ainda que pálida, alegrou o barro ___ e as pedras despidas.",
+  "pt": "gretado",
+  "aceitas": [
+   "gretado"
+  ],
+  "distratores": [
+   "gradeado",
+   "grelado",
+   "granizado",
+   "gramado"
+  ],
+  "escolher": true,
+  "requer": "pc-p017",
+  "requerTodas": [
+   "pc-p017"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "verbo"
+  ],
+  "fonte": "Machado de Assis, Esaú e Jacó (1904)",
+  "nota": "Particípio usado como adjetivo para terra seca, pele ou lábios: barro gretado, pé gretado.\n— Machado de Assis, Esaú e Jacó (1904)"
+ },
+ {
+  "id": "pc-u018",
+  "tipo": "frase",
+  "pc": "E emergiu da trouxa de ___ uma pergunta flácida:",
+  "pt": "molambos",
+  "aceitas": [
+   "molambos"
+  ],
+  "distratores": [
+   "mocambos",
+   "moinhos",
+   "mocotós",
+   "morcegos"
+  ],
+  "escolher": true,
+  "requer": "pc-p018",
+  "requerTodas": [
+   "pc-p018"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Costuma vir no plural e junto de «trouxa», «enrolar», «cobrir-se de».\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u020",
+  "tipo": "frase",
+  "pc": "Conheço um coração, ___ escura, Casa assombrada, onde andam penitentes Sombras e ecos de amor, e em que perdura A saudade, presença dos ausentes.",
+  "pt": "tapera",
+  "aceitas": [
+   "tapera"
+  ],
+  "distratores": [
+   "tulha",
+   "taipa",
+   "trincheira",
+   "tapeçaria"
+  ],
+  "escolher": true,
+  "requer": "pc-p020",
+  "requerTodas": [
+   "pc-p020"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Olavo Bilac, Assombração",
+  "nota": "Pode servir de imagem para lugar ou coração vazio, como aqui.\n— Olavo Bilac, Assombração"
+ },
+ {
+  "id": "pc-u021",
+  "tipo": "frase",
+  "pc": "No ___, diante do rescaldo, homens e mulheres choravam, lamentavam-se, gesticulavam.",
+  "pt": "terreiro",
+  "aceitas": [
+   "terreiro"
+  ],
+  "distratores": [
+   "terrário",
+   "terço",
+   "tesouro",
+   "terrão"
+  ],
+  "escolher": true,
+  "requer": "pc-p021",
+  "requerTodas": [
+   "pc-p021"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Com «no» ou «do», marca o espaço aberto ao redor da casa; de fazenda ou de roça.\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u024",
+  "tipo": "frase",
+  "pc": "Trepado no ___ do curral, Amaro passava uma hora aboiando.",
+  "pt": "mourão",
+  "aceitas": [
+   "mourão"
+  ],
+  "distratores": [
+   "morrão",
+   "mosquete",
+   "moitão",
+   "moinho"
+  ],
+  "escolher": true,
+  "requer": "pc-p024",
+  "requerTodas": [
+   "pc-p024"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Vem com «de cerca» ou «de curral» e com verbos como trepar, fincar e amarrar.\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u028",
+  "tipo": "frase",
+  "pc": "O rapaz continuava a rir, o mulato resmungava e franzia as ___, Fernando me injuriava.",
+  "pt": "ventas",
+  "aceitas": [
+   "ventas"
+  ],
+  "distratores": [
+   "ventoinhas",
+   "vertentes",
+   "veredas",
+   "vergônteas"
+  ],
+  "escolher": true,
+  "requer": "pc-p028",
+  "requerTodas": [
+   "pc-p028"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Pede verbos como franzir, arregaçar e fungar: «franzir as ventas».\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u030",
+  "tipo": "frase",
+  "pc": "Esta pergunta surgiu-me de ___ no sono profundo e acordou-me.",
+  "pt": "chofre",
+  "aceitas": [
+   "chofre"
+  ],
+  "distratores": [
+   "choro",
+   "chiste",
+   "chuvisco",
+   "chumbo"
+  ],
+  "escolher": true,
+  "requer": "pc-p030",
+  "requerTodas": [
+   "pc-p030"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Insônia (1947)",
+  "nota": "Vem depois do verbo, na locução «de chofre»: surgir, entrar, abrir, mudar de chofre.\n— Graciliano Ramos, Insônia (1947)"
+ },
+ {
+  "id": "pc-u045",
+  "tipo": "frase",
+  "pc": "Respirava com dificuldade, o corpo se ___ na cadeira, bocejos enormes.",
+  "pt": "derreava",
+  "aceitas": [
+   "derreava"
+  ],
+  "distratores": [
+   "derrapava",
+   "derivava",
+   "derrogava",
+   "decantava"
+  ],
+  "escolher": true,
+  "requer": "pc-p045",
+  "requerTodas": [
+   "pc-p045"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "verbo"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Verbo pronominal: o corpo se derreava, o sujeito se derreava; vem muitas vezes com o lugar onde a pessoa cede (na cadeira, na poltrona).\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u046",
+  "tipo": "frase",
+  "pc": "Fecho os olhos, ___, como um menino surpreendido a praticar tolice.",
+  "pt": "vexado",
+  "aceitas": [
+   "vexado"
+  ],
+  "distratores": [
+   "vetusto",
+   "vistoso",
+   "vindouro",
+   "venoso"
+  ],
+  "escolher": true,
+  "requer": "pc-p046",
+  "requerTodas": [
+   "pc-p046"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "adjetivo"
+  ],
+  "fonte": "Graciliano Ramos, Paulo (1947)",
+  "nota": "Aparece como predicativo, solto entre vírgulas ou depois de sentir-se e ficar.\n— Graciliano Ramos, Paulo (1947)"
+ },
+ {
+  "id": "pc-u048",
+  "tipo": "frase",
+  "pc": "A vizinha contemplava a sua saia ___, dizendo para os circunstantes:",
+  "pt": "rota",
+  "aceitas": [
+   "rota"
+  ],
+  "distratores": [
+   "rouca",
+   "rotunda",
+   "rançosa",
+   "rombuda"
+  ],
+  "escolher": true,
+  "requer": "pc-p048",
+  "requerTodas": [
+   "pc-p048"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "adjetivo"
+  ],
+  "fonte": "Manuel Antônio de Almeida, Memórias de um Sargento de Milícias (1854)",
+  "nota": "Vem depois do substantivo (saia rota, roupa rota), com o sentido de gasta e rasgada.\n— Manuel Antônio de Almeida, Memórias de um Sargento de Milícias (1854)"
+ },
+ {
+  "id": "pc-u049",
+  "tipo": "frase",
+  "pc": "Esperei ___ vê-lo concluir esse exercício, voltar ao banco do alpendre e à vazante.",
+  "pt": "debalde",
+  "aceitas": [
+   "debalde"
+  ],
+  "distratores": [
+   "depressa",
+   "debaixo",
+   "defronte",
+   "dantes"
+  ],
+  "escolher": true,
+  "requer": "pc-p049",
+  "requerTodas": [
+   "pc-p049"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Vem junto de verbos de esforço ou espera (esperar, procurar, tentar) e pode ficar no fim da frase.\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u056",
+  "tipo": "frase",
+  "pc": "Aquele modo de o ___ brincando, era conhecido; mas o resto confirmava a suspeita do desastre.",
+  "pt": "descompor",
+  "aceitas": [
+   "descompor"
+  ],
+  "distratores": [
+   "descascar",
+   "descosturar",
+   "desencalhar",
+   "descarrilhar"
+  ],
+  "escolher": true,
+  "requer": "pc-p056",
+  "requerTodas": [
+   "pc-p056"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "verbo"
+  ],
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "nota": "Pede objeto direto de pessoa (descompor alguém), muitas vezes com um modo: descompor brincando, descompor em público.\n— Machado de Assis, Quincas Borba (1891)"
+ },
+ {
+  "id": "pc-u066",
+  "tipo": "frase",
+  "pc": "Os ___ do estabelecimento deixaram de afligir-me e, pelos modos, entraram a considerar-me um indivíduo esquisito.",
+  "pt": "caixeiros",
+  "aceitas": [
+   "caixeiros"
+  ],
+  "distratores": [
+   "caiadores",
+   "carvoeiros",
+   "cabreiros",
+   "calafates"
+  ],
+  "escolher": true,
+  "requer": "pc-p066",
+  "requerTodas": [
+   "pc-p066"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Costuma ser empregado de loja, armazém ou estabelecimento; vem com o lugar (caixeiros do estabelecimento).\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u067",
+  "tipo": "frase",
+  "pc": "Dizendo isto, tirou um lenço da ___ e ofereceu-o ao bacharel para que tapasse os olhos.",
+  "pt": "algibeira",
+  "aceitas": [
+   "algibeira"
+  ],
+  "distratores": [
+   "alcatra",
+   "alcunha",
+   "alcachofra",
+   "algaravia"
+  ],
+  "escolher": true,
+  "requer": "pc-p067",
+  "requerTodas": [
+   "pc-p067"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, A Chinela Turca (1882)",
+  "nota": "Entra em meter na algibeira e tirar da algibeira.\n— Machado de Assis, A Chinela Turca (1882)"
+ },
+ {
+  "id": "pc-u068",
+  "tipo": "frase",
+  "pc": "Se não o obtinha, entrava na ___ e comprava um maço.",
+  "pt": "bodega",
+  "aceitas": [
+   "bodega"
+  ],
+  "distratores": [
+   "bolha",
+   "bossa",
+   "bochecha",
+   "bússola"
+  ],
+  "escolher": true,
+  "requer": "pc-p068",
+  "requerTodas": [
+   "pc-p068"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Vem com a preposição na/da ou a em ir à bodega, entrar na bodega.\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u072",
+  "tipo": "frase",
+  "pc": "Tem todas as condições para ser ministro: tem voz sonora, leu Maurício Block, está ___, e é um asno!...",
+  "pt": "encalacrado",
+  "aceitas": [
+   "encalacrado"
+  ],
+  "distratores": [
+   "encarquilhado",
+   "encaixotado",
+   "encapuzado",
+   "encarnado"
+  ],
+  "escolher": true,
+  "requer": "pc-p072",
+  "requerTodas": [
+   "pc-p072"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "verbo"
+  ],
+  "fonte": "Eça de Queirós, Os Maias (1888)",
+  "nota": "Costuma vir com estar ou ficar (estar encalacrado); fala de dívida ou de aperto.\n— Eça de Queirós, Os Maias (1888)"
+ },
+ {
+  "id": "pc-u074",
+  "tipo": "frase",
+  "pc": "Aparecia aos sábados na feira, sob um vasto chapéu, aprumado na carona bojuda, numa complicação de ___, látegos e bagagens.",
+  "pt": "alforjes",
+  "aceitas": [
+   "alforjes"
+  ],
+  "distratores": [
+   "alfarrábios",
+   "alcatruzes",
+   "alcaides",
+   "alfaiates"
+  ],
+  "escolher": true,
+  "requer": "pc-p074",
+  "requerTodas": [
+   "pc-p074"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Costuma vir no plural e junto de outras peças de viagem (látegos, bagagens).\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u080",
+  "tipo": "frase",
+  "pc": "Agora, depois de receber o ___, declarou-me que as mercadorias já tinham sido pagas.",
+  "pt": "cobre",
+  "aceitas": [
+   "cobre"
+  ],
+  "distratores": [
+   "coice",
+   "cobro",
+   "cocho",
+   "colar"
+  ],
+  "escolher": true,
+  "requer": "pc-p080",
+  "requerTodas": [
+   "pc-p080"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Costuma ser objeto de receber, juntar, gastar; no registro popular.\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u081",
+  "tipo": "frase",
+  "pc": "Alegrava-a o pensamento de que os outros se iludiam, considerou-se ___, capaz de provocar a admiração de criaturas experientes.",
+  "pt": "atilada",
+  "aceitas": [
+   "atilada"
+  ],
+  "distratores": [
+   "atônita",
+   "atrofiada",
+   "atabalhoada",
+   "atrasada"
+  ],
+  "escolher": true,
+  "requer": "pc-p081",
+  "requerTodas": [
+   "pc-p081"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "adjetivo"
+  ],
+  "fonte": "Graciliano Ramos, Luciana (1947)",
+  "nota": "Costuma ser predicativo (considerar-se atilado) e elogia a esperteza do juízo.\n— Graciliano Ramos, Luciana (1947)"
+ },
+ {
+  "id": "pc-u089",
+  "tipo": "frase",
+  "pc": "O cipó de boi chiaria no ar, cortaria o ___ descoberto.",
+  "pt": "lombo",
+  "aceitas": [
+   "lombo"
+  ],
+  "distratores": [
+   "lobo",
+   "lodo",
+   "logro",
+   "lume"
+  ],
+  "escolher": true,
+  "requer": "pc-p089",
+  "requerTodas": [
+   "pc-p089"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Costuma vir com verbos de bater e de carregar: «cortar o lombo», «bater no lombo», «saltar para o lombo».\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u133",
+  "tipo": "frase",
+  "pc": "Pareceu-me que ele tinha vindo aqui ___ de mim.",
+  "pt": "mangar",
+  "aceitas": [
+   "mangar"
+  ],
+  "distratores": [
+   "mancar",
+   "marear",
+   "matutar",
+   "malhar"
+  ],
+  "escolher": true,
+  "requer": "pc-p133",
+  "requerTodas": [
+   "pc-p133"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "verbo"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Pede a preposição «de»: mangar de alguém; registro coloquial, de quem faz troça.\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u134",
+  "tipo": "frase",
+  "pc": "Logo topou com uma que fora varina lá na terrinha do compadre chegadinho chegadinho e inda cheirava no-mais! um ___ bem de peixe.",
+  "pt": "fartum",
+  "aceitas": [
+   "fartum"
+  ],
+  "distratores": [
+   "fuzil",
+   "fórum",
+   "fuxico",
+   "fortim"
+  ],
+  "escolher": true,
+  "requer": "pc-p134",
+  "requerTodas": [
+   "pc-p134"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Mário de Andrade, Macunaíma (1928)",
+  "nota": "Costuma vir com «de»: um fartum de peixe, de suor, de bicho.\n— Mário de Andrade, Macunaíma (1928)"
+ },
+ {
+  "id": "pc-u135",
+  "tipo": "frase",
+  "pc": "Este não esperou convencer o companheiro: desceu a ___ do cascalho.",
+  "pt": "ribanceira",
+  "aceitas": [
+   "ribanceira"
+  ],
+  "distratores": [
+   "rabeira",
+   "ribalta",
+   "rebarba",
+   "roseira"
+  ],
+  "escolher": true,
+  "requer": "pc-p135",
+  "requerTodas": [
+   "pc-p135"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Camilo Castelo Branco, Amor de Perdição (1862)",
+  "nota": "Com verbos de movimento: descer, saltar, trepar a ribanceira.\n— Camilo Castelo Branco, Amor de Perdição (1862)"
+ },
+ {
+  "id": "pc-u138",
+  "tipo": "frase",
+  "pc": "Que valiam, diante daquela desgraça, ___ e puxões de orelhas, logo esquecidos?",
+  "pt": "cocorotes",
+  "aceitas": [
+   "cocorotes"
+  ],
+  "distratores": [
+   "cocares",
+   "coques",
+   "colares",
+   "cochichos"
+  ],
+  "escolher": true,
+  "requer": "pc-p138",
+  "requerTodas": [
+   "pc-p138"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Quase sempre no plural, ao lado de puxões de orelha e outros castigos de criança.\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u140",
+  "tipo": "frase",
+  "pc": "Agnelina ___ com a filha por questões de namoro e, em caso de necessidade, administrava-lhe corretivos.",
+  "pt": "rezingava",
+  "aceitas": [
+   "rezingava"
+  ],
+  "distratores": [
+   "rezava",
+   "rechinava",
+   "reinava",
+   "remendava"
+  ],
+  "escolher": true,
+  "requer": "pc-p140",
+  "requerTodas": [
+   "pc-p140"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "verbo"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Constrói-se com «com» ou «de»: rezingar com alguém; mau humor de quem não para de resmungar.\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u142",
+  "tipo": "frase",
+  "pc": "Ia se erguendo pra busca-la porém do galho baixo em riba dele furou o silêncio o miado temível da ___.",
+  "pt": "suçuarana",
+  "aceitas": [
+   "suçuarana"
+  ],
+  "distratores": [
+   "anta",
+   "irara",
+   "paca",
+   "cutia"
+  ],
+  "escolher": true,
+  "requer": "pc-p142",
+  "requerTodas": [
+   "pc-p142"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Mário de Andrade, Macunaíma (1928)",
+  "nota": "Costuma vir com «da»: o miado, a toca, o rastro da suçuarana.\n— Mário de Andrade, Macunaíma (1928)"
+ },
+ {
+  "id": "pc-u144",
+  "tipo": "frase",
+  "pc": "À porta da pensão, quando ia introduzir a chave na fechadura, ouvi ___ lá dentro.",
+  "pt": "rumor",
+  "aceitas": [
+   "rumor"
+  ],
+  "distratores": [
+   "rumo",
+   "remorso",
+   "rótulo",
+   "rubi"
+  ],
+  "escolher": true,
+  "requer": "pc-p144",
+  "requerTodas": [
+   "pc-p144"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Caetés (1933)",
+  "nota": "Usa-se com ouvir e escutar: ouvir rumor, rumor de passos, de vozes.\n— Graciliano Ramos, Caetés (1933)"
+ },
+ {
+  "id": "pc-u154",
+  "tipo": "frase",
+  "pc": "Atravessei a ___ e fui ver o último produto limosino-caracu.",
+  "pt": "pinguela",
+  "aceitas": [
+   "pinguela"
+  ],
+  "distratores": [
+   "pinça",
+   "pingadeira",
+   "piteira",
+   "pitanga"
+  ],
+  "escolher": true,
+  "requer": "pc-p154",
+  "requerTodas": [
+   "pc-p154"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, São Bernardo (1934)",
+  "nota": "Verbos típicos: atravessar a pinguela, passar pela pinguela.\n— Graciliano Ramos, São Bernardo (1934)"
+ },
+ {
+  "id": "pc-u158",
+  "tipo": "frase",
+  "pc": "Subitamente o ___ estacava, o laço caía, o zunido da corda continuava um instante no ouvido da gente.",
+  "pt": "aboio",
+  "aceitas": [
+   "aboio"
+  ],
+  "distratores": [
+   "abono",
+   "abutre",
+   "abrigo",
+   "arroio"
+  ],
+  "escolher": true,
+  "requer": "pc-p158",
+  "requerTodas": [
+   "pc-p158"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Costuma vir com «o» e verbos de som: o aboio estaca, soa, morre ao longe.\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u165",
+  "tipo": "frase",
+  "pc": "Tinham amarrado no pescoço da cachorra Moqueca um rosário de ___ de milho queimados.",
+  "pt": "sabugos",
+  "aceitas": [
+   "sabugos"
+  ],
+  "distratores": [
+   "sabujos",
+   "sabonetes",
+   "sabres",
+   "saguis"
+  ],
+  "escolher": true,
+  "requer": "pc-p165",
+  "requerTodas": [
+   "pc-p165"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Quase sempre «de milho»: sabugo de milho, seco ou queimado.\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u173",
+  "tipo": "frase",
+  "pc": "Um deles, muito menor que todos, apegava-se às calças de outro, ___.",
+  "pt": "taludo",
+  "aceitas": [
+   "taludo"
+  ],
+  "distratores": [
+   "talado",
+   "talhado",
+   "tonsurado",
+   "tosquiado"
+  ],
+  "escolher": true,
+  "requer": "pc-p173",
+  "requerTodas": [
+   "pc-p173"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "adjetivo"
+  ],
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "nota": "Adjetivo que se pospõe ao nome ou fica no fim da frase; costuma contrastar com «pequeno».\n— Machado de Assis, Quincas Borba (1891)"
+ },
+ {
+  "id": "pc-u176",
+  "tipo": "frase",
+  "pc": "Tinha um ___ de cravos amarelos ao peito, polainas brancas, — e queria animar as corridas.",
+  "pt": "molho",
+  "aceitas": [
+   "molho"
+  ],
+  "distratores": [
+   "mofo",
+   "mosto",
+   "molar",
+   "moleque"
+  ],
+  "escolher": true,
+  "requer": "pc-p176",
+  "requerTodas": [
+   "pc-p176"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Eça de Queirós, Os Maias (1888)",
+  "nota": "Costuma vir com «de» e o que se amarra: molho de chaves, de cravos, de lenha.\n— Eça de Queirós, Os Maias (1888)"
+ },
+ {
+  "id": "pc-u181",
+  "tipo": "frase",
+  "pc": "Aparecia aos sábados na feira, sob um vasto chapéu, aprumado na carona bojuda, numa complicação de alforjes, ___ e bagagens.",
+  "pt": "látegos",
+  "aceitas": [
+   "látegos"
+  ],
+  "distratores": [
+   "lagartos",
+   "lacres",
+   "legados",
+   "lamentos"
+  ],
+  "escolher": true,
+  "requer": "pc-p181",
+  "requerTodas": [
+   "pc-p181"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "nota": "Aparece em lista de objetos de couro e arreio, no plural: látegos, alforjes, cabrestos.\n— Graciliano Ramos, Infância (1945)"
+ },
+ {
+  "id": "pc-u208",
+  "tipo": "frase",
+  "pc": "Como ostentasse certa arrogância, não se distinguia bem se era uma criança com ___ de homem, se um homem com ares de menino.",
+  "pt": "fumos",
+  "aceitas": [
+   "fumos"
+  ],
+  "distratores": [
+   "fusos",
+   "funis",
+   "furos",
+   "fungos"
+  ],
+  "escolher": true,
+  "requer": "pc-p208",
+  "requerTodas": [
+   "pc-p208"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "nota": "Vem com «de» e a condição que se finge: fumos de fidalgo, de homem, de pacholice.\n— Machado de Assis, Memórias Póstumas de Brás Cubas (1881)"
+ },
+ {
+  "id": "pc-u220",
+  "tipo": "frase",
+  "pc": "Eu encostei-me à janela, a olhar para a ___, onde verdejavam as laranjeiras sem flores.",
+  "pt": "chácara",
+  "aceitas": [
+   "chácara"
+  ],
+  "distratores": [
+   "chaminé",
+   "charrua",
+   "chalupa",
+   "charada"
+  ],
+  "escolher": true,
+  "requer": "pc-p220",
+  "requerTodas": [
+   "pc-p220"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "nota": "Costuma andar com «janela», «muro», «jardim» e verbos de ver: a chácara é o que se avista de casa.\n— Machado de Assis, Memórias Póstumas de Brás Cubas (1881)"
+ },
+ {
+  "id": "pc-u222",
+  "tipo": "frase",
+  "pc": "Rubião deu-lhe uns ___ em recompensa, coisa em que o rapazinho não cuidara, ao ir apanhar o chapéu.",
+  "pt": "cobres",
+  "aceitas": [
+   "cobres"
+  ],
+  "distratores": [
+   "cofres",
+   "cochos",
+   "corvos",
+   "coretos"
+  ],
+  "escolher": true,
+  "requer": "pc-p222",
+  "requerTodas": [
+   "pc-p222"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "nota": "Só no plural, com «uns» ou «alguns», e verbos como «dar» e «apertar»; tom familiar.\n— Machado de Assis, Quincas Borba (1891)"
+ },
+ {
+  "id": "pc-u228",
+  "tipo": "frase",
+  "pc": "Ela, para não estar vadia, ia cosendo uns ___; e, quando a conversação fazia pausa…",
+  "pt": "folhos",
+  "aceitas": [
+   "folhos"
+  ],
+  "distratores": [
+   "fojos",
+   "fornos",
+   "fusos",
+   "foguetes"
+  ],
+  "escolher": true,
+  "requer": "pc-p228",
+  "requerTodas": [
+   "pc-p228"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "nota": "Verbos de costura, como «coser» e «pregar»; quase sempre no plural.\n— Machado de Assis, Quincas Borba (1891)"
+ },
+ {
+  "id": "pc-u231",
+  "tipo": "frase",
+  "pc": "O compadre foi quem tocou o minuete na ___; e o afilhadinho, deitado no colo da Maria…",
+  "pt": "rabeca",
+  "aceitas": [
+   "rabeca"
+  ],
+  "distratores": [
+   "rabeira",
+   "raquete",
+   "rapadura",
+   "ramagem"
+  ],
+  "escolher": true,
+  "requer": "pc-p231",
+  "requerTodas": [
+   "pc-p231"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Manuel Antônio de Almeida, Memórias de um Sargento de Milícias (1854)",
+  "nota": "O verbo é «tocar»: diz-se «tocar rabeca» ou «tocar na rabeca»; é o instrumento do tocador de festa.\n— Manuel Antônio de Almeida, Memórias de um Sargento de Milícias (1854)"
+ },
+ {
+  "id": "pc-u233",
+  "tipo": "frase",
+  "pc": "Não estava aquele ___, com os seus ares de homem de armas, talhado para um soberbo Francisco I, em toda a glória de Marignam?",
+  "pt": "mocetão",
+  "aceitas": [
+   "mocetão"
+  ],
+  "distratores": [
+   "molengão",
+   "fracote",
+   "pirralho",
+   "magricela"
+  ],
+  "escolher": true,
+  "requer": "pc-p233",
+  "requerTodas": [
+   "pc-p233"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Eça de Queirós, Os Maias (1888)",
+  "nota": "Costuma levar «aquele» ou «um» e elogiar a presença física.\n— Eça de Queirós, Os Maias (1888)"
+ },
+ {
+  "id": "pc-u235",
+  "tipo": "frase",
+  "pc": "José Manuel estava com um ar entre compungido e triunfante, e desfazia-se em ___ à D.",
+  "pt": "mesuras",
+  "aceitas": [
+   "mesuras"
+  ],
+  "distratores": [
+   "mesadas",
+   "mensagens",
+   "mesquitas",
+   "medidas"
+  ],
+  "escolher": true,
+  "requer": "pc-p235",
+  "requerTodas": [
+   "pc-p235"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Manuel Antônio de Almeida, Memórias de um Sargento de Milícias (1854)",
+  "nota": "A expressão fixa é «desfazer-se em mesuras», seguida de «a» ou «diante de» quem se agrada.\n— Manuel Antônio de Almeida, Memórias de um Sargento de Milícias (1854)"
+ },
+ {
+  "id": "pc-u236",
+  "tipo": "frase",
+  "pc": "Que pode valer a loja de um barbeiro que eu via por esse tempo, com ___ à porta, dentro de um grosso frasco de vidro…",
+  "pt": "sanguessugas",
+  "aceitas": [
+   "sanguessugas"
+  ],
+  "distratores": [
+   "sanfonas",
+   "sandálias",
+   "sangrias",
+   "sanguinárias"
+  ],
+  "escolher": true,
+  "requer": "pc-p236",
+  "requerTodas": [
+   "pc-p236"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Memorial de Aires (1908)",
+  "nota": "Costuma andar com «frasco», «água» e a loja do barbeiro, que sangrava os doentes.\n— Machado de Assis, Memorial de Aires (1908)"
+ },
+ {
+  "id": "pc-u246",
+  "tipo": "frase",
+  "pc": "Gargalhadas na rua, barulho de automóvel, o ___ de um vendedor ambulante.",
+  "pt": "pregão",
+  "aceitas": [
+   "pregão"
+  ],
+  "distratores": [
+   "pregador",
+   "prego",
+   "preço",
+   "prelo"
+  ],
+  "escolher": true,
+  "requer": "pc-p246",
+  "requerTodas": [
+   "pc-p246"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, O relógio do hospital (1947)",
+  "nota": "Vem com «de vendedor ambulante» ou «de feirante», entre os ruídos da rua.\n— Graciliano Ramos, O relógio do hospital (1947)"
+ },
+ {
+  "id": "pc-u248",
+  "tipo": "frase",
+  "pc": "Ante o telúrico recorte, Na ___ discórdia, a equórea coorte Atordoadoramente ribombava!",
+  "pt": "diuturna",
+  "aceitas": [
+   "diuturna"
+  ],
+  "distratores": [
+   "diáfana",
+   "dúctil",
+   "dormente",
+   "dengosa"
+  ],
+  "escolher": true,
+  "requer": "pc-p248",
+  "requerTodas": [
+   "pc-p248"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "adjetivo"
+  ],
+  "fonte": "Augusto dos Anjos, Alucinação à Beira-Mar",
+  "nota": "Vem antes do substantivo, em tom solene: «diuturna espera», «diuturna luta».\n— Augusto dos Anjos, Alucinação à Beira-Mar"
+ },
+ {
+  "id": "pc-u251",
+  "tipo": "frase",
+  "pc": "Recebe-nos à porta Do templo de verdura Azul, ___, leve borboleta; Vai volateando inquieta…",
+  "pt": "trêfega",
+  "aceitas": [
+   "trêfega"
+  ],
+  "distratores": [
+   "soturna",
+   "taciturna",
+   "sisuda",
+   "macambúzia"
+  ],
+  "escolher": true,
+  "requer": "pc-p251",
+  "requerTodas": [
+   "pc-p251"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "adjetivo"
+  ],
+  "fonte": "Alberto de Oliveira, Alma em Flor",
+  "nota": "Entre vírgulas, como adjetivo de bicho ou de criança em movimento.\n— Alberto de Oliveira, Alma em Flor"
+ },
+ {
+  "id": "pc-u257",
+  "tipo": "frase",
+  "pc": "Estavam lá os indivíduos que vão aos bailes da prefeitura, os que levam o ___ nas procissões e os que frequentam a Semana…",
+  "pt": "pálio",
+  "aceitas": [
+   "pálio"
+  ],
+  "distratores": [
+   "palanque",
+   "páreo",
+   "palhaço",
+   "palheiro"
+  ],
+  "escolher": true,
+  "requer": "pc-p257",
+  "requerTodas": [
+   "pc-p257"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Caetés (1933)",
+  "nota": "O verbo é «levar» ou «segurar»; carregar uma vara do pálio era honra de leigo.\n— Graciliano Ramos, Caetés (1933)"
+ },
+ {
+  "id": "pc-u262",
+  "tipo": "frase",
+  "pc": "Não cuidou de nada; calçou as chinelas africanas sem interesse, não mirou as ___ belas, ou simplesmente ricas, que lhe enchiam a casa.",
+  "pt": "alfaias",
+  "aceitas": [
+   "alfaias"
+  ],
+  "distratores": [
+   "alfândegas",
+   "alforrias",
+   "alfinetadas",
+   "algemas"
+  ],
+  "escolher": true,
+  "requer": "pc-p262",
+  "requerTodas": [
+   "pc-p262"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "nota": "Costuma vir no plural e junto de móveis, baixela e luxo: as alfaias de uma casa.\n— Machado de Assis, Quincas Borba (1891)"
+ },
+ {
+  "id": "pc-u276",
+  "tipo": "frase",
+  "pc": "Iracema sentiu que sua alma se escapava para embeber-se no ___ ardente.",
+  "pt": "ósculo",
+  "aceitas": [
+   "ósculo"
+  ],
+  "distratores": [
+   "vestíbulo",
+   "cálculo",
+   "pináculo",
+   "tentáculo"
+  ],
+  "escolher": true,
+  "requer": "pc-p276",
+  "requerTodas": [
+   "pc-p276"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "José de Alencar, Iracema (1865)",
+  "nota": "Costuma vir com adjetivo de intensidade ou de religiosidade: ósculo ardente, ósculo santo, ósculo de paz.\n— José de Alencar, Iracema (1865)"
+ },
+ {
+  "id": "pc-u278",
+  "tipo": "frase",
+  "pc": "De repente, levantou-se e atirou as linhas e a navette à cestinha de junco, onde guardava os seus ___ de trabalho.",
+  "pt": "petrechos",
+  "aceitas": [
+   "petrechos"
+  ],
+  "distratores": [
+   "pretextos",
+   "pecados",
+   "petardos",
+   "peitoris"
+  ],
+  "escolher": true,
+  "requer": "pc-p278",
+  "requerTodas": [
+   "pc-p278"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "nota": "Vem no plural e com de + o trabalho: petrechos de trabalho, de pesca, de costura.\n— Machado de Assis, Quincas Borba (1891)"
+ },
+ {
+  "id": "pc-u285",
+  "tipo": "frase",
+  "pc": "Olhei-o com um olho por cima do ombro, vi-o levantar a cabeça e ___ nos molambos.",
+  "pt": "bulir",
+  "aceitas": [
+   "bulir"
+  ],
+  "distratores": [
+   "burilar",
+   "boiar",
+   "bocejar",
+   "brunir"
+  ],
+  "escolher": true,
+  "requer": "pc-p285",
+  "requerTodas": [
+   "pc-p285"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "verbo"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Pede a preposição em (bulir nos molambos) ou com (bulir com alguém); costuma aparecer em frases negativas.\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u286",
+  "tipo": "frase",
+  "pc": "Rejeitei o primeiro ___, que era simplesmente absurdo, e encaminhei-me para Virgília, que lá estava sentada e calada.",
+  "pt": "alvitre",
+  "aceitas": [
+   "alvitre"
+  ],
+  "distratores": [
+   "álveo",
+   "alvéolo",
+   "alvião",
+   "alvaiade"
+  ],
+  "escolher": true,
+  "requer": "pc-p286",
+  "requerTodas": [
+   "pc-p286"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "nota": "Anda com verbos de decisão: rejeitar, adotar, aceitar, tomar um alvitre.\n— Machado de Assis, Memórias Póstumas de Brás Cubas (1881)"
+ },
+ {
+  "id": "pc-u287",
+  "tipo": "frase",
+  "pc": "Talvez estivesse num cinema de ___, com o namorado.",
+  "pt": "arrabalde",
+  "aceitas": [
+   "arrabalde"
+  ],
+  "distratores": [
+   "arroto",
+   "arrimo",
+   "arreio",
+   "arrastão"
+  ],
+  "escolher": true,
+  "requer": "pc-p287",
+  "requerTodas": [
+   "pc-p287"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Vem com de: cinema de arrabalde, igreja de arrabalde, doentes do arrabalde.\n— Graciliano Ramos, Angústia (1936)"
+ },
+ {
+  "id": "pc-u290",
+  "tipo": "frase",
+  "pc": "Hoje, que não saio, vou glosar este ___.",
+  "pt": "mote",
+  "aceitas": [
+   "mote"
+  ],
+  "distratores": [
+   "motim",
+   "mosto",
+   "motor",
+   "moinho"
+  ],
+  "escolher": true,
+  "requer": "pc-p290",
+  "requerTodas": [
+   "pc-p290"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Memorial de Aires (1908)",
+  "nota": "Anda com glosar, dar e pedir: dar um mote, glosar um mote.\n— Machado de Assis, Memorial de Aires (1908)"
+ },
+ {
+  "id": "pc-u298",
+  "tipo": "frase",
+  "pc": "Gostava ___ de mulheres e ainda mais se eram bonitas.",
+  "pt": "assaz",
+  "aceitas": [
+   "assaz"
+  ],
+  "distratores": [
+   "atrás",
+   "adiante",
+   "aquém",
+   "alhures"
+  ],
+  "escolher": true,
+  "requer": "pc-p298",
+  "requerTodas": [
+   "pc-p298"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Esaú e Jacó (1904)",
+  "nota": "Fica junto do verbo ou do adjetivo que reforça: gostava assaz de, assaz rude, assaz iluminada.\n— Machado de Assis, Esaú e Jacó (1904)"
+ },
+ {
+  "id": "pc-u301",
+  "tipo": "frase",
+  "pc": "Não era novo o elogio, ao contrário; mas ele estava tão acostumado a ouvi-lo que o sorriso era já agora um ___.",
+  "pt": "sestro",
+  "aceitas": [
+   "sestro"
+  ],
+  "distratores": [
+   "sistro",
+   "sexteto",
+   "silogismo",
+   "salmo"
+  ],
+  "escolher": true,
+  "requer": "pc-p301",
+  "requerTodas": [
+   "pc-p301"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Esaú e Jacó (1904)",
+  "nota": "Vem com artigo: o sestro de fazer algo, um sestro mórbido, velho sestro.\n— Machado de Assis, Esaú e Jacó (1904)"
+ },
+ {
+  "id": "pc-u305",
+  "tipo": "frase",
+  "pc": "Ministro carrancudo Frio ___ amola, E as vítimas degola Sobre o medonho altar.",
+  "pt": "cutelo",
+  "aceitas": [
+   "cutelo"
+  ],
+  "distratores": [
+   "castelo",
+   "capelo",
+   "colete",
+   "cabelo"
+  ],
+  "escolher": true,
+  "requer": "pc-p305",
+  "requerTodas": [
+   "pc-p305"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Bocage, A gruta do Ciúme",
+  "nota": "Anda com verbos de afiar e brandir: «amolar o cutelo», «brandir um cutelo».\n— Bocage, A gruta do Ciúme"
+ },
+ {
+  "id": "pc-u314",
+  "tipo": "frase",
+  "pc": "E, naquela satisfação que o tornava loquaz, acrescentou, repetindo a sua ___:",
+  "pt": "chalaça",
+  "aceitas": [
+   "chalaça"
+  ],
+  "distratores": [
+   "chalupa",
+   "chaleira",
+   "chapada",
+   "charneca"
+  ],
+  "escolher": true,
+  "requer": "pc-p314",
+  "requerTodas": [
+   "pc-p314"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Eça de Queirós, Os Maias (1888)",
+  "nota": "Costuma andar com «dizer», «soltar» e «repetir»: dizer uma chalaça.\n— Eça de Queirós, Os Maias (1888)"
+ },
+ {
+  "id": "pc-u317",
+  "tipo": "frase",
+  "pc": "Vede este rapaz: entra no mundo com uma grande ambição, uma pasta de ministro, um Banco, uma coroa de visconde, um ___ pastoral.",
+  "pt": "báculo",
+  "aceitas": [
+   "báculo"
+  ],
+  "distratores": [
+   "bácoro",
+   "bacilo",
+   "bandolim",
+   "baluarte"
+  ],
+  "escolher": true,
+  "requer": "pc-p317",
+  "requerTodas": [
+   "pc-p317"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, O Empréstimo (1882)",
+  "nota": "Quase sempre com «pastoral»: báculo pastoral, ao lado de mitra e anel.\n— Machado de Assis, O Empréstimo (1882)"
+ },
+ {
+  "id": "pc-u325",
+  "tipo": "frase",
+  "pc": "Tinha além disso o mau ___ de andar com os olhos fechados e de costas.",
+  "pt": "vezo",
+  "aceitas": [
+   "vezo"
+  ],
+  "distratores": [
+   "veto",
+   "verso",
+   "vértice",
+   "verniz"
+  ],
+  "escolher": true,
+  "requer": "pc-p325",
+  "requerTodas": [
+   "pc-p325"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Graciliano Ramos, Minsk (1947)",
+  "nota": "Pede «de» e o verbo no infinitivo: o mau vezo de andar.\n— Graciliano Ramos, Minsk (1947)"
+ },
+ {
+  "id": "pc-u327",
+  "tipo": "frase",
+  "pc": "Evidentemente uma pessoa ___ tomou conta de mim.",
+  "pt": "achacada",
+  "aceitas": [
+   "achacada"
+  ],
+  "distratores": [
+   "atarracada",
+   "achatada",
+   "abarrotada",
+   "acanalada"
+  ],
+  "escolher": true,
+  "requer": "pc-p327",
+  "requerTodas": [
+   "pc-p327"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras",
+   "adjetivo"
+  ],
+  "fonte": "Graciliano Ramos, Paulo (1947)",
+  "nota": "Vem depois do substantivo («pessoa achacada», «cadela achacada») e fala de saúde fraca.\n— Graciliano Ramos, Paulo (1947)"
+ },
+ {
+  "id": "pc-u328",
+  "tipo": "frase",
+  "pc": "Forte sede, e forte ___ De zurrapa, de atum, de ti, chanfana, De ti, que dos pingões és golosina!",
+  "pt": "gana",
+  "aceitas": [
+   "gana"
+  ],
+  "distratores": [
+   "gala",
+   "galhada",
+   "gabela",
+   "galera"
+  ],
+  "escolher": true,
+  "requer": "pc-p328",
+  "requerTodas": [
+   "pc-p328"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Bocage, Se eu poderá ir de tralha, ir à surdina",
+  "nota": "Pede «de» para dizer o que se deseja: gana de comer, gana de rir.\n— Bocage, Se eu poderá ir de tralha, ir à surdina"
+ },
+ {
+  "id": "pc-u329",
+  "tipo": "frase",
+  "pc": "Notei-lhe a perfeição da ___, a alvura da camisa, o asseio das botas.",
+  "pt": "sobrecasaca",
+  "aceitas": [
+   "sobrecasaca"
+  ],
+  "distratores": [
+   "sobremesa",
+   "sobrecarga",
+   "sobrenome",
+   "sobreloja"
+  ],
+  "escolher": true,
+  "requer": "pc-p329",
+  "requerTodas": [
+   "pc-p329"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "nota": "Anda com «vestir», «abotoar» e «preta»: a sobrecasaca preta era roupa de cerimônia.\n— Machado de Assis, Memórias Póstumas de Brás Cubas (1881)"
+ },
+ {
+  "id": "pc-u332",
+  "tipo": "frase",
+  "pc": "Na sala mortuária achei Virgília, ao pé do ___, a soluçar.",
+  "pt": "féretro",
+  "aceitas": [
+   "féretro"
+  ],
+  "distratores": [
+   "feltro",
+   "fêmur",
+   "fetiche",
+   "ferrão"
+  ],
+  "escolher": true,
+  "requer": "pc-p332",
+  "requerTodas": [
+   "pc-p332"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "nota": "Costuma andar com «ao pé do», «diante do» e «seguir o»: o cortejo segue o féretro.\n— Machado de Assis, Memórias Póstumas de Brás Cubas (1881)"
+ },
+ {
+  "id": "pc-u334",
+  "tipo": "frase",
+  "pc": "Todos os papéis, aliás ações, saíam frescos e eternos do ___.",
+  "pt": "prelo",
+  "aceitas": [
+   "prelo"
+  ],
+  "distratores": [
+   "prado",
+   "preço",
+   "pregão",
+   "preâmbulo"
+  ],
+  "escolher": true,
+  "requer": "pc-p334",
+  "requerTodas": [
+   "pc-p334"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, Esaú e Jacó (1904)",
+  "nota": "Pede «ao prelo» ou «do prelo»: mandar ao prelo, sair do prelo.\n— Machado de Assis, Esaú e Jacó (1904)"
+ },
+ {
+  "id": "pc-u338",
+  "tipo": "frase",
+  "pc": "O ___ deu-lhe o açúcar; ela, mexendo o chá, lembrou-se do carro que iria buscar o cônego, e reiterou uma ordem da véspera.",
+  "pt": "copeiro",
+  "aceitas": [
+   "copeiro"
+  ],
+  "distratores": [
+   "copista",
+   "coveiro",
+   "corneteiro",
+   "cuteleiro"
+  ],
+  "escolher": true,
+  "requer": "pc-p338",
+  "requerTodas": [
+   "pc-p338"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "raras"
+  ],
+  "fonte": "Machado de Assis, D. Benedita (1882)",
+  "nota": "Vai com artigo masculino e verbos de servir: o copeiro serviu o chá.\n— Machado de Assis, D. Benedita (1882)"
+ }
+]

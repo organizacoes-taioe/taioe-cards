@@ -45,6 +45,8 @@ window.TaioeCardsApp = function (ctx) {
      todo card só tem a ida, não há teste de nível nem desafio, e a pessoa escolhe de 1 a 3
      textos antes de começar. Vem antes de usarTransparencias, que depende dele. */
   const TRILHAS = ctx.modo === 'trilhas';
+  /* as palavras raras do português (cards/RARAS.md, 20/11/2026): trilhas, como o latim */
+  const RARAS = ctx.lingua === 'pc';
   Motor.usarModo(TRILHAS ? 'trilhas' : 'livre');
   /* A escada dos dominados é da família do curso (vivas ou mortas), não do modo (Motor.ESCADAS). */
   Motor.usarEscada(ctx.escada || 'vivas');
@@ -1491,7 +1493,8 @@ window.TaioeCardsApp = function (ctx) {
     chanceUsada = false;
     pausou = false;
 
-    el['meta-tipo'].textContent = nomeTipo(cardAtual.tipo) + (bruto.leitura ? ' · ' + t('card.leitura') : '');
+    /* nas palavras raras o selo diz o que o card pede («sentido», «escrever», «uso», «sinônimos»; RARAS.md §3) */
+    el['meta-tipo'].textContent = (RARAS && cardAtual.selo ? cardAtual.selo : nomeTipo(cardAtual.tipo)) + (bruto.leitura ? ' · ' + t(RARAS ? 'card.leituraRara' : 'card.leitura') : '');
     el['meta-modo'].textContent = t(modoAtual === 'multipla' ? 'modo.multipla' : 'modo.escrita');
 
     /* A frase destravada diz de que palavra veio — ela está aqui porque
@@ -1536,7 +1539,9 @@ window.TaioeCardsApp = function (ctx) {
        (§3.8, desde 26/10/2026; desde 31/10, «Qual o caso dessa forma?») */
     const flexaoDeCaso = cardAtual.tipo === 'flexao' && cardAtual.familia === 'caso';
     /* a compreensão e a herança (LATIM.md §13, D31 e D32) trazem a pergunta escrita no card */
-    const perguntaDoCard = ['compreensao', 'heranca', 'analise'].includes(cardAtual.tipo) ? cardAtual.pergunta : '';
+    /* e, nas palavras raras (cards/RARAS.md §3), todo card traz a dele («O que quer dizer a
+       palavra destacada?», «Que palavra completa a frase?») */
+    const perguntaDoCard = ['compreensao', 'heranca', 'analise'].includes(cardAtual.tipo) || RARAS ? cardAtual.pergunta || '' : '';
     const conceito = cardAtual.tipo === 'conceito' || cardAtual.tipo === 'forma' || flexaoDeCaso || !!perguntaDoCard;
     el.enunciado.textContent = conceito ? ''
       : inversa
@@ -1566,7 +1571,7 @@ window.TaioeCardsApp = function (ctx) {
     el['rotulo-resposta-txt'].parentNode.classList.toggle('pergunta', conceito);
     el.enunciado.classList.toggle('oculto', conceito);
     el.entrada.placeholder = inversa ? t('card.escrevaEm', { x: NOME_L })
-      : t(conceito ? 'card.escrevaConceito' : 'card.escrevaSignificado');
+      : t(RARAS ? 'card.escrevaPalavra' : conceito ? 'card.escrevaConceito' : 'card.escrevaSignificado');
 
     /* a frase de gênero variável do exemplo aparece no masculino; o enunciado do dicionário
        vai inteiro e sem destaque */
@@ -1579,8 +1584,10 @@ window.TaioeCardsApp = function (ctx) {
     /* a flexão mostra só a forma: o enunciado do dicionário embaixo era dica (pedido do Gere,
        31/10/2026); ele aparece depois, na nota */
     else if (cardAtual.tipo === 'flexao') el.termo.textContent = cardAtual.la;
+    /* nas palavras raras, o card do sentido mostra a frase do livro com a palavra destacada */
+    else if (RARAS && cardAtual.tipo === 'palavra' && cardAtual.frase) el.termo.innerHTML = comDestaque(cardAtual.frase, cardAtual.w || cardAtual[L], cardAtual.ocorrencia);
     else el.termo.textContent = !inversa && cardAtual.enunciado ? cardAtual.enunciado : Motor.pergunta(cardAtual, direcaoAtual);
-    el.termo.classList.toggle('frase', ['frase', 'forma', 'contraste', 'compreensao'].includes(cardAtual.tipo) ||
+    el.termo.classList.toggle('frase', ['frase', 'forma', 'contraste', 'compreensao'].includes(cardAtual.tipo) || (RARAS && !!cardAtual.frase) ||
       (cardAtual.tipo === 'analise' && cardAtual.familia !== 'regencia') || !!exemploAtual);
 
     el['aviso-lingua'].classList.add('oculto');
@@ -3833,7 +3840,7 @@ window.TaioeCardsApp = function (ctx) {
     const escolha = escolhaDosTextos();
     const ativos = new Set(textosAtivosAgora().map(x => x.id));
     const arq = progresso.arquivados || {};
-    const partes = ['<p class="ajuda">' + t(TRILHAS ? 'texto.explicaTrilhas' : 'texto.explica', { n: Motor.MAX_TEXTOS }) + '</p>'];
+    const partes = ['<p class="ajuda">' + t(RARAS ? 'texto.explicaRaras' : TRILHAS ? 'texto.explicaTrilhas' : 'texto.explica', { n: Motor.MAX_TEXTOS }) + '</p>'];
     if (novo && TEXTO_POR_ID[novo]) {
       partes.push('<p class="recompensa">' + t('texto.trocar', { n: Motor.MAX_TEXTOS, t: escapar(TEXTO_POR_ID[novo].titulo) }) + '</p>');
     }

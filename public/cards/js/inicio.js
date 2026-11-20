@@ -32,12 +32,15 @@
     /* escada: a família da escada dos dominados (Motor.ESCADAS), do curso e separada do modo:
        'vivas' (padrão) ou 'mortas', de 7 degraus; o servidor tem o mesmo em cards.cursos.escada */
     /* o italiano (08/11/2026) só para quem fala português, no modo de sempre */
-    'it-pt': { lingua: 'it', audiencia: 'pt', bandeira: '🇮🇹' }
+    'it-pt': { lingua: 'it', audiencia: 'pt', bandeira: '🇮🇹' },
+    /* as palavras raras do português (20/11/2026, cards/RARAS.md): para quem fala português, só
+       pelas obras da Biblioteca e só a ida, como o latim, mas na escada das vivas */
+    'pc-pt': { lingua: 'pc', audiencia: 'pt', bandeira: '📖', modo: 'trilhas' }
   };
   /* Os que aparecem na escolha e nas configurações: desde 09/11/2026, só os
      de quem fala português (decisão do Gere). Os guardados não aparecem na
      escolha, mas continuam abrindo para quem já os tem como curso atual. */
-  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'fr-pt', 'it-pt', 'la-pt'];
+  var CURSOS_ATIVOS = ['es-pt', 'en-pt', 'fr-pt', 'it-pt', 'la-pt', 'pc-pt'];
   var CURSOS_GUARDADOS = ['en-es', 'es-en', 'pt-es', 'pt-en', 'fr-es', 'fr-en'];
   var ativo = function (k) { return !!CURSOS[k] && CURSOS_ATIVOS.indexOf(k) >= 0; };
   var aberto = function (k) { return ativo(k) || (!!CURSOS[k] && CURSOS_GUARDADOS.indexOf(k) >= 0); };
@@ -101,6 +104,12 @@
       forma(s, 'rect', { width: 30, height: 20, fill: '#ce2b37' });
       forma(s, 'rect', { width: 20, height: 20, fill: '#f4f5f0' });
       forma(s, 'rect', { width: 10, height: 20, fill: '#009246' });
+    } else if (lingua === 'pc') {
+      /* as palavras raras: um livro aberto, nas cores da Biblioteca (papel e tinta) */
+      forma(s, 'rect', { width: 30, height: 20, fill: '#f3ede1' });
+      forma(s, 'path', { d: 'M15 5.2C12.6 3.9 9.4 3.6 6 4.2v11.6c3.4-.6 6.6-.3 9 1 2.4-1.3 5.6-1.6 9-1V4.2c-3.4-.6-6.6-.3-9 1Z', fill: '#fff', stroke: '#3b3732', 'stroke-width': 1, 'stroke-linejoin': 'round' });
+      forma(s, 'path', { d: 'M15 5.2v11.6', stroke: '#3b3732', 'stroke-width': 1 });
+      forma(s, 'path', { d: 'M8.4 7.6h4.2M8.4 10h4.2M8.4 12.4h3M17.4 7.6h4.2M17.4 10h4.2M17.4 12.4h3', stroke: '#9a8f7e', 'stroke-width': 0.7 });
     } else if (lingua === 'la') {
       /* o Vaticano: amarelo e branco, com as chaves cruzadas, simplificadas */
       forma(s, 'rect', { width: 30, height: 20, fill: '#fff' });
