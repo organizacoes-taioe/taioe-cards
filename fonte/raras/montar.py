@@ -2,6 +2,11 @@
 
   python3 -I fonte/raras/montar.py <pasta de trabalho> <pasta da biblioteca> <obra>…
 
+A pasta de trabalho do piloto está no repositório: fonte/raras/trabalho (correção de card: na
+linha da palavra em trabalho/lotes/revisada-N.jsonl, ou em trabalho/sinonimos.json, e montar de
+novo; o que se muda à mão em fonte/cards/pc/ se perde):
+  python3 -I fonte/raras/montar.py fonte/raras/trabalho ../biblioteca vidas-secas dom-casmurro
+
 Na pasta de trabalho: dados/palavras-<obra>.json (de palavras.py), lotes/saida-*.jsonl (os agentes:
 a marca, as erradas, a nota, o card de escrever e o de uso) e, se houver, sinonimos.json (os
 conjuntos de sinônimos). Grava fonte/cards/pc/01-sentido.json, 02-escrever.json, 03-uso.json,
@@ -90,11 +95,11 @@ def main():
     trab, bib, *obras = sys.argv[1:]
     nomes = dict(re.findall(r"id: '([^']+)',\s*nome: '([^']+)'", open(os.path.join(bib, 'conteudo', 'autores.js'), encoding='utf-8').read()))
     agentes = {}
-    for f in sorted(glob.glob(os.path.join(trab, 'lotes', 'saida-*.jsonl'))):
-        # a versão revisada, quando há (REVISAO.md)
-        rev = f.replace('saida-', 'revisada-')
-        if os.path.exists(rev):
-            f = rev
+    # a versão revisada de cada lote (REVISAO.md), ou a dos agentes, quando não há revisada
+    revisadas = sorted(glob.glob(os.path.join(trab, 'lotes', 'revisada-*.jsonl')))
+    saidas = [f for f in sorted(glob.glob(os.path.join(trab, 'lotes', 'saida-*.jsonl')))
+              if not os.path.exists(f.replace('saida-', 'revisada-'))]
+    for f in revisadas + saidas:
         for linha in open(f, encoding='utf-8'):
             linha = linha.strip()
             if linha:
