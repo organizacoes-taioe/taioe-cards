@@ -52,7 +52,7 @@ Toda palavra tem a marca **viva** (ainda se usa: lânguido, sobranceiro, azáfam
 Tudo em `fonte/raras/` (no repositório), um script por passo:
 1. `extrair.mjs`: lê o vocabulário e o texto da obra na Biblioteca e grava, por palavra, as formas,
    a definição, a frase da primeira ocorrência e o parágrafo; e as partes.
-2. `corpus.mjs`: as frases dos originais em português da Biblioteca, com cada forma das palavras,
+2. `corpus.py`: as frases dos originais em português da Biblioteca, com cada forma das palavras,
    para o card de uso e os sinônimos (só obras que não são tradução nossa).
 3. Agentes de modelo leve, em lotes, escrevem a marca viva/de leitura, as erradas, a nota e
    escolhem a frase real; o principal lê card a card.
@@ -68,7 +68,7 @@ Tudo em `fonte/raras/` (no repositório), um script por passo:
 - Como foi feito (refazer para uma obra nova): `obra.mjs` (a obra e o corpus) → `palavras.py` →
   `corpus.py` → lotes de ~45 palavras para agentes Sonnet (`BRIEF.md`) → revisão por outros
   agentes (`REVISAO.md`, que gravam `revisada-N.jsonl`) → `verificar.py` → sinônimos (um agente,
-  `SINONIMOS.md`, `buscar.py`) → `montar.py` → build. Os briefs, os lotes e as saídas ficaram em
+  `SINONIMOS.md`, `buscar.py`) → `montar.py` → build. Os briefs estão em `fonte/raras/briefs/`; os lotes e as saídas, em
   `~/.cache/raras-2011/` (só no notebook). Lições: o agente põe erradas absurdas no card de uso
   («gasoso», «domingo»): pedir parônimos reais que não caibam; e frase de uso em que qualquer
   palavra da classe cabe («cavalo ___») não serve.
