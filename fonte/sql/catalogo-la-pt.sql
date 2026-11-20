@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso la-pt, leva 8e2bf728, 8948 cards.
+-- Catálogo do curso la-pt, leva 4a796701, 8948 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('la-pt', '8e2bf728', '8948 cards')
+values ('la-pt', '4a796701', '8948 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -8937,7 +8937,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('la-pt', 'la-u904', 'frase', 'A1', array['frase de uso']::text[], 'la-p1253', '665c6651', array['vigia muito, ousa.', 'vigiam muito, ousam.', 'vigiará muito, ousará.', 'vigias muito, ousas.', 'vigiou muito, ousou.']::text[]),
   ('la-pt', 'la-u905', 'frase', 'A1', array['frase de uso']::text[], 'la-p1255', '599e7de4', array['o escravo não queria obedecer.', 'os escravos não querem obedecer.', 'os escravos não queriam obedecer.', 'os escravos não queriam ser obedecidos.', 'os escravos não quiseram obedecer.']::text[]),
   ('la-pt', 'la-u906', 'frase', 'A1', array['frase de uso']::text[], 'la-p1256', '4bcf5a3c', array['estais todos diante dos meus olhos.', 'estavas todo diante dos meus olhos.', 'estou todo diante dos teus olhos.', 'estás todo diante do meu olho.', 'estás todo diante dos meus olhos.']::text[]),
-  ('la-pt', 'la-u907', 'frase', 'A1', array['frase de uso']::text[], 'la-p1258', 'd0366c9f', array['redime-me e tem piedade de mim.', 'redime-nos e tem piedade de nós.', 'redimes-me e tens piedade de mim.', 'redimirei-te e terei piedade de ti.', 'redimiu-me e teve piedade de mim.']::text[]),
+  ('la-pt', 'la-u907', 'frase', 'A1', array['frase de uso']::text[], 'la-p1258', 'baa8ebe2', array['redime-me e tem piedade de mim.', 'redime-nos e tem piedade de nós.', 'redimes-me e tens piedade de mim.', 'redimiu-me e teve piedade de mim.', 'te redimirei e terei piedade de ti.']::text[]),
   ('la-pt', 'la-u908', 'frase', 'A1', array['frase de uso']::text[], 'la-p1259', 'e9c0b19f', array['fica tranquilo, digo.', 'ficai tranquilos, digo.', 'ficarei tranquilo, digo.', 'ficaria tranquilo, digo.', 'ficou tranquilo, digo.']::text[]),
   ('la-pt', 'la-u909', 'frase', 'A1', array['frase de uso']::text[], 'la-p1261', '8f3afdce', array['prepararam, na tua doçura, para o pobre, ó Deus.', 'prepararás, na tua doçura, para o pobre, ó Deus.', 'preparaste, na tua doçura, para o pobre, ó Deus.', 'preparaste, na tua doçura, para os pobres, ó Deus.', 'preparei, na minha doçura, para o pobre, ó Deus.']::text[]),
   ('la-pt', 'la-u910', 'frase', 'A1', array['frase de uso']::text[], 'la-p1262', '77213656', array['muitas vezes veio a mim gritando.', 'muitas vezes veio a mim para gritar.', 'muitas vezes vieram a mim gritando.', 'muitas vezes vim a ele gritando.', 'muitas vezes vinha a mim gritando.']::text[]),
@@ -8952,7 +8952,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('la-pt', 'la-u919', 'frase', 'A1', array['frase de uso']::text[], 'la-p1285', 'cf9fcfc9', array['mas a mãe me teme.', 'mas tememos a mãe.', 'mas temerei a mãe.', 'mas temi a mãe.', 'mas temo a mãe.']::text[]),
   ('la-pt', 'la-u920', 'frase', 'A1', array['frase de uso']::text[], 'la-p1289', '956b36f5', array['não farei, juiz.', 'não farei, juízes.', 'não faremos, juízes.', 'não fazeis, juízes.', 'não fiz, juízes.']::text[]),
   ('la-pt', 'la-u921', 'frase', 'A1', array['frase de uso']::text[], 'la-p1290', 'f07d9889', array['acode, peço-te, Senhor meu Deus, a mim, viúva.', 'acode, peço-te, Senhor meu Deus, aos viúvos.', 'acodem, peço-te, Senhor meu Deus, a mim, viúva.', 'acudi, peço-te, Senhor meu Deus, a mim, viúva.', 'acudirás, peço-te, Senhor meu Deus, a mim, viúva.']::text[]),
-  ('la-pt', 'la-u922', 'frase', 'A1', array['frase de uso']::text[], 'la-p1292', '60bedc0e', array['a alegria não eleva?', 'a alegria não elevou?', 'a alegria não é elevada?', 'as alegrias não elevam?', 'não eleva a alegria?']::text[]),
+  ('la-pt', 'la-u922', 'frase', 'A1', array['frase de uso']::text[], 'la-p1292', 'c0008de2', array['a alegria não eleva?', 'a alegria não elevou?', 'a alegria não se eleva?', 'a alegria não é elevada?', 'as alegrias não elevam?']::text[]),
   ('la-pt', 'la-u923', 'frase', 'A1', array['frase de uso']::text[], 'la-p1293', '6f675aaa', array['o que vale no indivíduo, o mesmo vale no povo.', 'o que vale nos indivíduos, o mesmo vale nos povos.', 'o que vale nos povos, o mesmo vale nos indivíduos.', 'o que valerá nos indivíduos, o mesmo valerá nos povos.', 'o que valeu nos indivíduos, o mesmo valeu nos povos.']::text[]),
   ('la-pt', 'la-u924', 'frase', 'A1', array['frase de uso']::text[], 'la-p1294', 'b60c26c1', array['todo aquele que crê nele não confunde.', 'todo aquele que crê nele não foi confundido.', 'todo aquele que crê nele não será confundido.', 'todo aquele que crê neles não será confundido.', 'todos os que creem nele não serão confundidos.']::text[])
 on conflict (curso, card_id) do update set
