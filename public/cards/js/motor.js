@@ -286,6 +286,13 @@ window.Motor = (function () {
       grafias: GRAFIAS_PT, plural: pluralPt, pre: prePt,
       pontuacao: PONTUACAO_PT
     },
+    /* As palavras raras do português (cards/RARAS.md, 20/11/2026): a pergunta é português, e o
+       funil é o do português. */
+    pc: {
+      omissiveis: OMISSIVEIS_PT, numeros: NUMEROS_PT,
+      grafias: GRAFIAS_PT, plural: pluralPt, pre: prePt,
+      pontuacao: PONTUACAO_PT
+    },
     /* O espanhol não herda as grafias do português: «pra», «vc» e «isso» não
        são palavras dele, e desfazê-las aqui só abriria porta para casar coisa
        que não casa. A tabela própria está vazia porque, até agora, o espanhol
@@ -358,7 +365,8 @@ window.Motor = (function () {
     en: new Set(['today', 'yesterday', 'tomorrow', 'now', 'always', 'never']),
     fr: new Set(['hier', 'demain', 'maintenant', 'toujours']),
     la: new Set(),
-    it: new Set(['oggi', 'ieri', 'domani', 'adesso', 'sempre'])
+    it: new Set(['oggi', 'ieri', 'domani', 'adesso', 'sempre']),
+    pc: new Set(['hoje', 'ontem', 'amanha', 'agora', 'sempre', 'nunca'])
   };
 
   function tempoParaOFim(palavras, lingua) {
@@ -522,7 +530,8 @@ window.Motor = (function () {
     en: { certa: 'en', aceitas: 'aceitasEn', distratores: 'distratoresEn', formas: 'formasEn', sinonimos: 'sinonimosEn', regionais: 'regionaisEn' },
     fr: { certa: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', formas: 'formasFr', sinonimos: 'sinonimosFr', regionais: 'regionaisFr' },
     la: { certa: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', formas: 'formasLa', sinonimos: 'sinonimosLa', regionais: 'regionaisLa' },
-    it: { certa: 'it', aceitas: 'aceitasIt', distratores: 'distratoresIt', formas: 'formasIt', sinonimos: 'sinonimosIt', regionais: 'regionaisIt' }
+    it: { certa: 'it', aceitas: 'aceitasIt', distratores: 'distratoresIt', formas: 'formasIt', sinonimos: 'sinonimosIt', regionais: 'regionaisIt' },
+    pc: { certa: 'pc', aceitas: 'aceitasPc', distratores: 'distratoresPc', formas: 'formasPc', sinonimos: 'sinonimosPc', regionais: 'regionaisPc' }
   };
 
   /* ── a língua que o baralho ensina ──
@@ -718,7 +727,8 @@ window.Motor = (function () {
     pt: tabela({ o:'m', os:'m', um:'m', uns:'m', a:'f', as:'f', uma:'f', umas:'f' }),
     en: tabela({}),
     fr: tabela({ le:'m', un:'m', la:'f', une:'f' }),
-    it: tabela({ il:'m', lo:'m', un:'m', uno:'m', i:'m', gli:'m', la:'f', una:'f', le:'f' })
+    it: tabela({ il:'m', lo:'m', un:'m', uno:'m', i:'m', gli:'m', la:'f', una:'f', le:'f' }),
+    pc: tabela({ o:'m', os:'m', um:'m', uns:'m', a:'f', as:'f', uma:'f', umas:'f' })
   };
 
   function generoDaFrente(txt, lingua) {
@@ -749,7 +759,7 @@ window.Motor = (function () {
      os pares vêm da nota do público («nota», «notaEs», «notaEn»), no formato
      «bandeira da ensinada x → bandeira do público y» — «🇺🇸 gun → 🇧🇷 a
      arma» no inglês, «🇧🇷 esquisito → 🇪🇸 raro» no português. */
-  const BANDEIRA_DA_LINGUA = { es: '🇪🇸', pt: '🇧🇷', en: '🇺🇸', fr: '🇫🇷', la: '🇻🇦', it: '🇮🇹' };
+  const BANDEIRA_DA_LINGUA = { es: '🇪🇸', pt: '🇧🇷', en: '🇺🇸', fr: '🇫🇷', la: '🇻🇦', it: '🇮🇹', pc: '📖' };
   const notaDoPublico = (card, a) => String((card && card[a === 'pt' ? 'nota' : 'nota' + a[0].toUpperCase() + a[1]]) || '');
   function espanhoisDoCard(card, direcao) {
     const l = linguaDaPergunta(direcao || IDA), a = linguaDaResposta(direcao || IDA);
@@ -2942,7 +2952,9 @@ window.Motor = (function () {
      («pergunta»), só se escolhem, e três acertos seguidos os dominam, como o contraste. */
   function ehCompreensao(id) { return TIPO[id] === 'compreensao'; }
   function ehHeranca(id) { return TIPO[id] === 'heranca'; }
-  function deEscolherSempre(id) { return ehCompreensao(id) || ehHeranca(id) || ehAnalise(id); }
+  /* e, nas palavras raras (cards/RARAS.md §3, 20/11/2026), o card do sentido e o do uso, que
+     levam «escolher»: escrever uma definição não se confere */
+  function deEscolherSempre(id) { return ehCompreensao(id) || ehHeranca(id) || ehAnalise(id) || !!ESCOLHER[id]; }
 
   /* ── os cards de análise (LATIM.md §15, D39, D40 e D42; aula 1 do Falcon, 04/11/2026) ──
      O método de ler pelo verbo, treinado em três perguntas: «Qual é o verbo desta frase?» (a
@@ -3562,7 +3574,7 @@ window.Motor = (function () {
      Sem elas, «Ayer lo supe» aparecia entre «Yo puse la mesa» e «No lo hagas»,
      sozinha no assunto, e a pergunta se respondia sem saber o verbo. As formas
      entram primeiro; o sorteio só completa o que faltar (há cards com três). */
-  const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt', it: 'pt' };
+  const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt', it: 'pt', pc: 'pt' };
 
   /* As palavras de uma frase, já no funil, para medir o que duas frases têm
      em comum. */
@@ -3597,7 +3609,7 @@ window.Motor = (function () {
      está no card (verbo conjugado, plural), não há troca, e valem as frases
      vizinhas, como antes. */
   const ARTIGO_DA_LINGUA = { es: /^(el|la|los|las)\s+/i, en: /^(the)\s+/i, pt: /^(o|a|os|as)\s+/i, fr: /^(le\s+|la\s+|les\s+|l['’])/i,
-    it: /^(il\s+|lo\s+|la\s+|i\s+|gli\s+|le\s+|l['’])/i };
+    it: /^(il\s+|lo\s+|la\s+|i\s+|gli\s+|le\s+|l['’])/i, pc: /^(o|a|os|as)\s+/i };
   const cacheTraducoes = new Map();
   const LETRA_U = '\\p{L}';
   function trocasDePalavra(card, todos, lingua, certas) {
@@ -3861,6 +3873,7 @@ window.Motor = (function () {
   let FORA_DA_DIVISA = Object.create(null); // nivelamento.fora: antes da divisa, mas não presumidos
   let UID = '';                           // para a data do presumido pela divisa
   let LEITURA = Object.create(null);      // id → true: card de leitura (PLANO.md, 9.2)
+  let ESCOLHER = Object.create(null);     // id → true: card que só se escolhe («escolher», RARAS.md §3)
 
   function usarTransparencias(cards) {
     usarVocabulario(cards);
@@ -3871,6 +3884,7 @@ window.Motor = (function () {
     FLEXAO_DE_CASO = Object.create(null);
     FALSO_AMIGO = Object.create(null);
     LEITURA = Object.create(null);
+    ESCOLHER = Object.create(null);
     RESPOSTA_DA_FORMA = Object.create(null);
     TERMINACAO = Object.create(null);
     MEMBROS = Object.create(null);
@@ -3880,6 +3894,7 @@ window.Motor = (function () {
     (cards || []).forEach(c => {
       if (!c) return;
       if (c.leitura) LEITURA[c.id] = true;
+      if (c.escolher) ESCOLHER[c.id] = true;
       if (c.tipo === 'forma') RESPOSTA_DA_FORMA[c.id] = c.pt;
       /* uma terminação, um card (LATIM.md §13): os grupos, a variante e as frases de cada flexão */
       if (c.tipo === 'flexao') {
