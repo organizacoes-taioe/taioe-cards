@@ -1248,3 +1248,34 @@ conceito, como o do latim, mas com os exemplos tirados das frases do curso.
   no curso fica só como alternativa errada, até ganhar frases.
 - Exemplo de frase de gênero variável aparece no masculino.
 
+
+## 22. As palavras raras do português (`pc`)
+
+Desde 20/11/2026 (pedido do Gere; plano em [`../RARAS.md`](../RARAS.md)), `fonte/cards/pc`, ids `pc-…`,
+curso `pc-pt`: quem fala português aprende as palavras raras das obras da Biblioteca. A pergunta é
+o campo `pc` (português), a resposta o `pt`. Modo `trilhas`, como o latim (só pelas obras, só a
+ida), na escada das vivas. Os cards não se escrevem à mão: saem de `fonte/raras/montar.py`, a
+partir do vocabulário da Biblioteca e do trabalho dos agentes (RARAS.md §4).
+
+- **Quatro cards**, todos com `pergunta` (a linha acima das alternativas) e `selo` (o nome no
+  canto): o **sentido** (`pc-p`, `palavra`, `escolher: true`, com a `frase` do livro e a forma `w`
+  destacada); **escrever** (`pc-e`, `frase`: a definição → a palavra; primeiro escolher, depois
+  escrever); **uso** (`pc-u`, `frase`, `escolher: true`: frase real com `___`); **sinônimos**
+  (`pc-k`, `contraste`: a frase real no `pt`, as alternativas no `pc` e em `distratoresPc`).
+- **`escolher: true`** faz o card ser sempre de múltipla escolha (`Motor.deEscolherSempre`): três
+  acertos seguidos o dominam. Escrever uma definição não se confere.
+- **No card do sentido, o sentido de hoje é bom distrator** quando a frase do livro o desmente
+  (quarto = «cômodo onde se dorme», com a frase do quadril): a pergunta é «o que quer dizer
+  aqui». Fora isso vale o §6.1: nenhuma errada que seja sentido verdadeiro que sirva na frase.
+- **Palavra viva × de leitura.** Só a viva (ainda se usa, nesse sentido) tem escrever e uso; a de
+  leitura (antiga, regional, de ofício, sentido antigo de palavra comum) leva `leitura: true` e
+  só o sentido.
+- **No escrever, o sinônimo comum vai em `sinonimos`** (lombo → «dorso»; xadrez → «cadeia»): quem o
+  escreve vê «certo, mas não é a palavra do card» com a primeira letra (§5.1). As `aceitas` são só
+  as formas da própria palavra.
+- **Frase de uso e de sinônimos: só real**, de obra em domínio público da Biblioteca que não seja
+  tradução nossa (`fonte/raras/buscar.py`), letra por letra, com a fonte na nota.
+- **Nada chulo** (§2): a palavra de duplo sentido no Brasil sai do curso, mesmo que no livro seja
+  inocente («boceta», a caixinha de rapé de *Dom Casmurro*).
+- Conferir: `python3 -I fonte/raras/verificar.py <trabalho>` antes de montar (formato, MorphoBr,
+  frase de uso conferida com o corpus), e depois o build.

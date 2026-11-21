@@ -52,8 +52,9 @@ const Transp = require('./transparencia');
 /* O latim (21/10/2026, cards/LATIM.md) vem por último: assim a ordem de tudo o que já saía
    não muda. */
 /* O italiano (08/11/2026, só para quem fala português) vem depois do latim, pelo mesmo motivo. */
-const IDIOMAS = ['es', 'en', 'pt', 'fr', 'la', 'it'];
-const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português', fr: 'francês', la: 'latim', it: 'italiano' };
+/* As palavras raras do português (20/11/2026, cards/RARAS.md), para quem fala português, por último. */
+const IDIOMAS = ['es', 'en', 'pt', 'fr', 'la', 'it', 'pc'];
+const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português', fr: 'francês', la: 'latim', it: 'italiano', pc: 'palavras raras' };
 
 /* Cada língua tem o seu quarteto de campos. A do baralho é a que se cobra; as
    outras duas são as respostas, e cada uma leva os seus distratores e a sua
@@ -65,18 +66,19 @@ const CAMPOS_DA_LINGUA = {
   es: { texto: 'es', aceitas: 'aceitasEs', distratores: 'distratoresEs', nota: 'notaEs', formas: 'formasEs' },
   fr: { texto: 'fr', aceitas: 'aceitasFr', distratores: 'distratoresFr', nota: 'notaFr', formas: 'formasFr' },
   la: { texto: 'la', aceitas: 'aceitasLa', distratores: 'distratoresLa', nota: 'notaLa', formas: 'formasLa' },
-  it: { texto: 'it', aceitas: 'aceitasIt', distratores: 'distratoresIt', nota: 'notaIt', formas: 'formasIt' }
+  it: { texto: 'it', aceitas: 'aceitasIt', distratores: 'distratoresIt', nota: 'notaIt', formas: 'formasIt' },
+  pc: { texto: 'pc', aceitas: 'aceitasPc', distratores: 'distratoresPc', nota: 'notaPc', formas: 'formasPc' }
 };
 
 /* De cada baralho, o público de origem: aquele em cuja língua o card é
    escrito e relido. É dele o rótulo que vai sem sufixo. */
-const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt', it: 'pt' };
+const AUDIENCIA_PRINCIPAL = { es: 'pt', en: 'pt', pt: 'es', fr: 'pt', la: 'pt', it: 'pt', pc: 'pt' };
 
 /* Quem estuda cada baralho. Os três primeiros servem às outras duas línguas
    da casa; o de francês (08/10/2026) serve às três — português, espanhol e
    inglês —, e por isso o card de francês traz os três quartetos inteiros. O
    francês não é língua de resposta de nenhum outro baralho. */
-const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], la: ['pt'], it: ['pt'] };
+const AUDIENCIAS = { es: ['pt', 'en'], en: ['pt', 'es'], pt: ['es', 'en'], fr: ['pt', 'es', 'en'], la: ['pt'], it: ['pt'], pc: ['pt'] };
 
 /* O que vem colado na frente da palavra e não faz parte dela: o artigo, e o
    «to» do infinitivo inglês. */
@@ -86,7 +88,8 @@ const ARTIGOS = {
   en: /^(the|a|an|to)\s+/,
   fr: /^(le\s+|la\s+|les\s+|un\s+|une\s+|l['’])/,
   la: /^(?!)/,
-  it: /^(il\s+|lo\s+|la\s+|i\s+|gli\s+|le\s+|un\s+|uno\s+|una\s+|l['’]|un['’])/
+  it: /^(il\s+|lo\s+|la\s+|i\s+|gli\s+|le\s+|un\s+|uno\s+|una\s+|l['’]|un['’])/,
+  pc: /^(o|a|os|as|um|uma)\s+/
 };
 
 const audienciasDe = idioma => AUDIENCIAS[idioma];
@@ -382,7 +385,8 @@ for (const { idioma, cards } of baralhos) {
   const L = CAMPOS_DA_LINGUA[idioma];
   /* o latim se confere no modo dele (só a ida, e o funil que não iguala plural nem tira o
      pronome: ver usarModo no motor); os outros, no de sempre */
-  Motor.usarModo(idioma === 'la' ? 'trilhas' : 'livre');
+  /* as palavras raras (RARAS.md) também são só pelas obras, só a ida, mas na escada das vivas */
+  Motor.usarModo(idioma === 'la' || idioma === 'pc' ? 'trilhas' : 'livre');
   Motor.usarEscada(idioma === 'la' ? 'mortas' : 'vivas');
   /* as línguas de quem estuda este baralho são as outras duas */
   const audiencias = audienciasDe(idioma);
@@ -651,7 +655,9 @@ for (const { idioma, cards } of baralhos) {
     /* A frase tem de usar mesmo a palavra. Aviso, e não erro: a língua
        flexiona (el vaso → los vasos, quitar → me quitó, bring → brought), e a
        comparação é por radical, então erra para menos de vez em quando. */
-    if (alvo.tipo === 'palavra' && idioma !== 'la') {
+    /* nas palavras raras (RARAS.md) a frase esconde a palavra: o card de escrever é a definição, e o
+       de uso tem a lacuna no lugar dela */
+    if (alvo.tipo === 'palavra' && idioma !== 'la' && idioma !== 'pc') {
       const limpar = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
       const nucleo = limpar(Motor.formaDoCard(alvo, 0)[L.texto])
         .replace(ARTIGOS[idioma], '')
@@ -775,7 +781,8 @@ for (const { idioma, cards } of baralhos) {
     if (c.tipo !== 'contraste') continue;
     const onde = c.id + ' (' + c[L.texto] + ')';
     const opcoes = opcoesDe(c);
-    const quantas = idioma === 'la' ? [4] : [4, 5];
+    /* nas palavras raras (RARAS.md §3), o conjunto de sinônimos tem de 3 a 5 palavras */
+    const quantas = idioma === 'la' ? [4] : idioma === 'pc' ? [3, 4, 5] : [4, 5];
     if (!quantas.includes(opcoes.length) || new Set(opcoes.map(chave)).size !== opcoes.length) {
       erros.push('contraste sem ' + quantas.join(' ou ') + ' alternativas diferentes: ' + onde);
     }
@@ -797,7 +804,8 @@ for (const { idioma, cards } of baralhos) {
       const alvo = PORID.get(r);
       if (!alvo || !['palavra', 'conceito'].includes(alvo.tipo)) erros.push('contraste preso a card que não é palavra nem conceito: ' + onde + ' → ' + r);
     }
-    if (String(c.pt || '').length > Motor.LIMITES.resposta) erros.push('pergunta com mais de ' + Motor.LIMITES.resposta + ' letras: ' + onde);
+    /* nas palavras raras a pergunta é uma frase real de livro, que só se lê */
+    if (idioma !== 'pc' && String(c.pt || '').length > Motor.LIMITES.resposta) erros.push('pergunta com mais de ' + Motor.LIMITES.resposta + ' letras: ' + onde);
   }
 }
 
