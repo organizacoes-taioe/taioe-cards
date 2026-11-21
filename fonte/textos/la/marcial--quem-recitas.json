@@ -1,0 +1,255 @@
+{
+ "id": "marcial/quem-recitas",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Quem recitas",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/quem-recitas/",
+ "ordem": 39,
+ "fonte": "Epigramas, I,38",
+ "blocos": [
+  [
+   {
+    "t": "Quem recitas meus est, o Fidentine, libellus:",
+    "p": [
+     [
+      "Quem",
+      "quem"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "recitas",
+      "recitas"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "meus",
+      "meus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "est",
+      "est"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "o",
+      "o"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Fidentine",
+      "fidentine"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "libellus",
+      "libellus"
+     ],
+     [
+      ":",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v176",
+     "la-v1396",
+     "la-v010"
+    ]
+   },
+   {
+    "t": "sed male cum recitas, incipit esse tuus.",
+    "p": [
+     [
+      "sed",
+      "sed"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "male",
+      "male"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "cum",
+      "cum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "recitas",
+      "recitas#2"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "incipit",
+      "incipit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "esse",
+      "esse"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tuus",
+      "tuus"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1396",
+     "la-v1375",
+     "la-v038"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "quem": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "acusativo masculino singular",
+   "funcao": "objeto de recitas: o que",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "recitas": {
+   "lema": "recito",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "recitas",
+   "card": "la-p885",
+   "wiki": "https://en.wiktionary.org/wiki/recito#Latin"
+  },
+  "meus": {
+   "lema": "meus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com libellus: meu",
+   "card": "la-p013",
+   "wiki": "https://en.wiktionary.org/wiki/meus#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "o": {
+   "lema": "o",
+   "classe": "interjeição",
+   "card": "la-p365",
+   "wiki": "https://en.wiktionary.org/wiki/o#Latin"
+  },
+  "fidentine": {
+   "lema": "Fidentinus",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Fidentino, o plagiário que recitava os versos de Marcial como seus."
+   ],
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala"
+  },
+  "libellus": {
+   "lema": "libellus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de est: o livrinho",
+   "card": "la-p886",
+   "wiki": "https://en.wiktionary.org/wiki/libellus#Latin"
+  },
+  "sed": {
+   "lema": "sed",
+   "classe": "conjunção",
+   "card": "la-p107",
+   "wiki": "https://en.wiktionary.org/wiki/sed#Latin"
+  },
+  "male": {
+   "lema": "male",
+   "classe": "advérbio",
+   "card": "la-p887",
+   "wiki": "https://en.wiktionary.org/wiki/male#Latin"
+  },
+  "cum": {
+   "lema": "cum",
+   "classe": "conjunção",
+   "funcao": "conjunção: quando",
+   "card": "la-p618",
+   "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+  },
+  "recitas#2": {
+   "lema": "recito",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "depois de cum: recitas",
+   "card": "la-p885",
+   "wiki": "https://en.wiktionary.org/wiki/recito#Latin"
+  },
+  "incipit": {
+   "lema": "incipio",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "começa (o livrinho)",
+   "card": "la-p353",
+   "wiki": "https://en.wiktionary.org/wiki/incipio#Latin"
+  },
+  "esse": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "depende de incipit: ser",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "tuus": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "predicativo do livrinho: teu",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  }
+ }
+}

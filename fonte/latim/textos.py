@@ -89,6 +89,71 @@ TEXTOS = {
                                   'fonte': 'Poemas, 5'},
     'catulo/multas-per-gentes': {'titulo': 'Multas per gentes', 'autor': 'Catulo', 'tipo': 'poema', 'ordem': 37,
                                  'fonte': 'Poemas, 101'},
+    # leva 1a de 19/11/2026 (LATIM.md §21): textos curtos fora da liturgia e diálogos curtos da Missa (só por escolha);
+    # a liturgia fica só nos Cards, sem página na Biblioteca (o Gere, 19/11): «biblioteca» None
+    'marcial/sunt-bona': {"titulo": "Sunt bona", "autor": "Marcial", "tipo": "poema", "ordem": 38, "fonte": "Epigramas, I,16"},
+    'marcial/quem-recitas': {"titulo": "Quem recitas", "autor": "Marcial", "tipo": "poema", "ordem": 39, "fonte": "Epigramas, I,38"},
+    'marcial/nuper-erat-medicus': {"titulo": "Nuper erat medicus", "autor": "Marcial", "tipo": "poema", "ordem": 40, "fonte": "Epigramas, I,47"},
+    'marcial/bella-es': {"titulo": "Bella es", "autor": "Marcial", "tipo": "poema", "ordem": 41, "fonte": "Epigramas, I,64"},
+    'marcial/versiculos-in-me': {"titulo": "Versiculos in me", "autor": "Marcial", "tipo": "poema", "ordem": 42, "fonte": "Epigramas, III,9"},
+    'marcial/thais-habet': {"titulo": "Thais habet", "autor": "Marcial", "tipo": "poema", "ordem": 43, "fonte": "Epigramas, V,43"},
+    'marcial/semper-pauper-eris': {"titulo": "Semper pauper eris", "autor": "Marcial", "tipo": "poema", "ordem": 44, "fonte": "Epigramas, V,81"},
+    'marcial/miraris-veteres': {"titulo": "Miraris veteres", "autor": "Marcial", "tipo": "poema", "ordem": 45, "fonte": "Epigramas, VIII,69"},
+    'marcial/difficilis-facilis': {"titulo": "Difficilis facilis", "autor": "Marcial", "tipo": "poema", "ordem": 46, "fonte": "Epigramas, XII,46"},
+    'catulo/nulli-se-dicit': {"titulo": "Nulli se dicit", "autor": "Catulo", "tipo": "poema", "ordem": 47, "fonte": "Poemas, 70"},
+    'publilio-siro/sententiae-parte-1': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 48, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/publilio-siro/sententiae/"},
+    'publilio-siro/sententiae-parte-2': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 49, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/publilio-siro/sententiae/"},
+    'publilio-siro/sententiae-parte-3': {"titulo": "Sententiae", "autor": "Publílio Siro", "tipo": "prosa", "ordem": 50, "fonte": "Sentenças", "obra": "publilio-siro/sententiae", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/publilio-siro/sententiae/"},
+    'inscricoes/admiror-paries': {"titulo": "Admiror, paries", "autor": "Inscrições", "tipo": "poema", "ordem": 51, "fonte": "Grafites de Pompeia e epitáfios"},
+    'missal-romano/in-nomine-patris': {"titulo": "In nomine Patris", "autor": "Missal Romano", "tipo": "prosa", "ordem": 52, "fonte": "Ritos iniciais da Missa", "biblioteca": None},
+    'missal-romano/per-dominum-nostrum': {"titulo": "Per Dominum nostrum", "autor": "Missal Romano", "tipo": "prosa", "ordem": 53, "fonte": "A conclusão das orações da Missa", "biblioteca": None},
+    'missal-romano/verbum-domini': {"titulo": "Verbum Domini", "autor": "Missal Romano", "tipo": "prosa", "ordem": 54, "fonte": "As leituras da Missa", "biblioteca": None},
+    'missal-romano/sursum-corda': {"titulo": "Sursum corda", "autor": "Missal Romano", "tipo": "prosa", "ordem": 55, "fonte": "O diálogo do Prefácio", "biblioteca": None},
+    'missal-romano/sanctus': {"titulo": "Sanctus", "autor": "Missal Romano", "tipo": "prosa", "ordem": 56, "fonte": "Ordinário da Missa", "biblioteca": None},
+    'missal-romano/agnus-dei': {"titulo": "Agnus Dei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 57, "fonte": "Ordinário da Missa", "biblioteca": None},
+    'missal-romano/ite-missa-est': {"titulo": "Ite, missa est", "autor": "Missal Romano", "tipo": "prosa", "ordem": 58, "fonte": "Ritos finais da Missa", "biblioteca": None},
+    # leva 1b de 19/11/2026 (LATIM.md §21): textos curtos fora da liturgia (só por escolha)
+    'fedro/vulpes-et-uva': {"titulo": "Vulpes et uva", "autor": "Fedro", "tipo": "poema", "ordem": 59, "fonte": "Fábulas, IV,3"},
+    'fedro/canis-per-fluvium': {"titulo": "Canis per fluvium", "autor": "Fedro", "tipo": "poema", "ordem": 60, "fonte": "Fábulas, I,4"},
+    'fedro/vulpes-et-corvus': {"titulo": "Vulpes et corvus", "autor": "Fedro", "tipo": "poema", "ordem": 61, "fonte": "Fábulas, I,13"},
+    'fedro/rana-rupta-et-bos': {"titulo": "Rana rupta et bos", "autor": "Fedro", "tipo": "poema", "ordem": 62, "fonte": "Fábulas, I,24"},
+    'anonimo/gaudeamus-igitur': {"titulo": "Gaudeamus igitur", "autor": "Anônimo", "tipo": "poema", "ordem": 63, "fonte": "Canção estudantil, estrofes 1 a 3 (Kindleben, 1781)", "biblioteca": "/biblioteca/cancoes-estudantis/gaudeamus-igitur/"},
+    'carmina-burana/o-fortuna-parte-1': {"titulo": "O Fortuna", "autor": "Carmina Burana", "tipo": "poema", "ordem": 64, "fonte": "Carmina Burana, 17", "obra": "carmina-burana/o-fortuna", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/carmina-burana/o-fortuna/"},
+    'carmina-burana/o-fortuna-parte-2': {"titulo": "O Fortuna", "autor": "Carmina Burana", "tipo": "poema", "ordem": 65, "fonte": "Carmina Burana, 17", "obra": "carmina-burana/o-fortuna", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/carmina-burana/o-fortuna/"},
+    'carmina-burana/o-fortuna-parte-3': {"titulo": "O Fortuna", "autor": "Carmina Burana", "tipo": "poema", "ordem": 66, "fonte": "Carmina Burana, 17", "obra": "carmina-burana/o-fortuna", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/carmina-burana/o-fortuna/"},
+    'cesar/gallia-est-omnis': {"titulo": "Gallia est omnis", "autor": "César", "tipo": "prosa", "ordem": 67, "fonte": "Guerra das Gálias, I,1 (começo)"},
+    'cicero/quo-usque-tandem': {"titulo": "Quo usque tandem", "autor": "Cícero", "tipo": "prosa", "ordem": 68, "fonte": "Primeira Catilinária, 1–2 (começo)"},
+    'seneca/ita-fac-mi-lucili': {"titulo": "Ita fac, mi Lucili", "autor": "Sêneca", "tipo": "prosa", "ordem": 69, "fonte": "Cartas a Lucílio, I,1 (começo)"},
+    'ovidio/in-nova-fert-animus': {"titulo": "In nova fert animus", "autor": "Ovídio", "tipo": "poema", "ordem": 70, "fonte": "Metamorfoses, I,1–4", "biblioteca": "/biblioteca/ovidio/metamorfoses-i/"},
+    # leva 2 de 19/11/2026 (LATIM.md §21): o resto da Missa (só por escolha, sem Biblioteca)
+    'missal-romano/confiteor': {"titulo": "Confiteor", "autor": "Missal Romano", "tipo": "prosa", "ordem": 71, "fonte": "Ato penitencial da Missa", "biblioteca": None},
+    'missal-romano/gloria-parte-1': {"titulo": "Gloria in excelsis", "autor": "Missal Romano", "tipo": "prosa", "ordem": 72, "fonte": "Ordinário da Missa", "obra": "missal-romano/gloria", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'missal-romano/gloria-parte-2': {"titulo": "Gloria in excelsis", "autor": "Missal Romano", "tipo": "prosa", "ordem": 73, "fonte": "Ordinário da Missa", "obra": "missal-romano/gloria", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'missal-romano/benedictus-es-domine-parte-1': {"titulo": "Benedictus es, Domine", "autor": "Missal Romano", "tipo": "prosa", "ordem": 74, "fonte": "A apresentação dos dons", "obra": "missal-romano/benedictus-es-domine", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'missal-romano/benedictus-es-domine-parte-2': {"titulo": "Benedictus es, Domine", "autor": "Missal Romano", "tipo": "prosa", "ordem": 75, "fonte": "A apresentação dos dons", "obra": "missal-romano/benedictus-es-domine", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'missal-romano/orate-fratres': {"titulo": "Orate, fratres", "autor": "Missal Romano", "tipo": "prosa", "ordem": 76, "fonte": "A apresentação dos dons", "biblioteca": None},
+    'missal-romano/accipite': {"titulo": "Accipite et manducate", "autor": "Missal Romano", "tipo": "prosa", "ordem": 77, "fonte": "A consagração (igual em todas as Orações Eucarísticas)", "biblioteca": None},
+    'missal-romano/mysterium-fidei': {"titulo": "Mysterium fidei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 78, "fonte": "A aclamação depois da consagração", "biblioteca": None},
+    'missal-romano/per-ipsum': {"titulo": "Per ipsum", "autor": "Missal Romano", "tipo": "prosa", "ordem": 79, "fonte": "A doxologia da Oração Eucarística", "biblioteca": None},
+    'missal-romano/libera-nos': {"titulo": "Libera nos", "autor": "Missal Romano", "tipo": "prosa", "ordem": 80, "fonte": "O rito da comunhão", "biblioteca": None},
+    'missal-romano/pacem-relinquo-vobis': {"titulo": "Pacem relinquo vobis", "autor": "Missal Romano", "tipo": "prosa", "ordem": 81, "fonte": "O rito da paz", "biblioteca": None},
+    'missal-romano/ecce-agnus-dei': {"titulo": "Ecce Agnus Dei", "autor": "Missal Romano", "tipo": "prosa", "ordem": 82, "fonte": "O rito da comunhão", "biblioteca": None},
+    # leva 3 de 19/11/2026 (LATIM.md §21): a Liturgia das Horas (só por escolha, sem Biblioteca)
+    'liturgia-das-horas/deus-in-adiutorium': {"titulo": "Deus, in adiutorium", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 83, "fonte": "O começo das Horas", "biblioteca": None},
+    'liturgia-das-horas/venite-exsultemus-parte-1': {"titulo": "Venite, exsultemus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 84, "fonte": "Salmo invitatório, 94 (95), pela Nova Vulgata", "obra": "liturgia-das-horas/venite-exsultemus", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'liturgia-das-horas/venite-exsultemus-parte-2': {"titulo": "Venite, exsultemus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 85, "fonte": "Salmo invitatório, 94 (95), pela Nova Vulgata", "obra": "liturgia-das-horas/venite-exsultemus", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'liturgia-das-horas/venite-exsultemus-parte-3': {"titulo": "Venite, exsultemus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 86, "fonte": "Salmo invitatório, 94 (95), pela Nova Vulgata", "obra": "liturgia-das-horas/venite-exsultemus", "parte": 3, "trecho": "parte 3", "biblioteca": None},
+    'liturgia-das-horas/benedictus-parte-1': {"titulo": "Benedictus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 87, "fonte": "Cântico de Zacarias (Lc 1,68–79), nas Laudes", "obra": "liturgia-das-horas/benedictus", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'liturgia-das-horas/benedictus-parte-2': {"titulo": "Benedictus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 88, "fonte": "Cântico de Zacarias (Lc 1,68–79), nas Laudes", "obra": "liturgia-das-horas/benedictus", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'liturgia-das-horas/benedictus-parte-3': {"titulo": "Benedictus", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 89, "fonte": "Cântico de Zacarias (Lc 1,68–79), nas Laudes", "obra": "liturgia-das-horas/benedictus", "parte": 3, "trecho": "parte 3", "biblioteca": None},
+    'liturgia-das-horas/magnificat-parte-1': {"titulo": "Magnificat", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 90, "fonte": "Cântico de Maria (Lc 1,46–55), nas Vésperas", "obra": "liturgia-das-horas/magnificat", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'liturgia-das-horas/magnificat-parte-2': {"titulo": "Magnificat", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 91, "fonte": "Cântico de Maria (Lc 1,46–55), nas Vésperas", "obra": "liturgia-das-horas/magnificat", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'liturgia-das-horas/nunc-dimittis': {"titulo": "Nunc dimittis", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 92, "fonte": "Cântico de Simeão (Lc 2,29–32) e o fim das Completas", "biblioteca": None},
+    'liturgia-das-horas/salve-regina': {"titulo": "Salve, Regina", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 93, "fonte": "Antífona de Nossa Senhora, nas Completas", "biblioteca": None},
+    'liturgia-das-horas/te-deum-parte-1': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 94, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 1, "trecho": "parte 1", "biblioteca": None},
+    'liturgia-das-horas/te-deum-parte-2': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 95, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 2, "trecho": "parte 2", "biblioteca": None},
+    'liturgia-das-horas/te-deum-parte-3': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 96, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 3, "trecho": "parte 3", "biblioteca": None},
+    'liturgia-das-horas/te-deum-parte-4': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 97, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 4, "trecho": "parte 4", "biblioteca": None},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -199,6 +264,38 @@ SEM_CARD = {
     'persicos': {'lema': 'Persicus', 'classe': 'adjetivo (nome próprio)', 'g': 'nome',
                  'def': ['Persa, da Pérsia: para os romanos, a terra do luxo.'],
                  'wiki': 'https://en.wiktionary.org/wiki/Persicus#Latin'},
+    # leva 1a de 19/11/2026
+    'avite': {'lema': 'Avitus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Avito, o amigo a quem Marcial dedica o epigrama.']},
+    'fidentine': {'lema': 'Fidentinus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Fidentino, o plagiário que recitava os versos de Marcial como seus.']},
+    'diaulus': {'lema': 'Diaulus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Diaulo, o médico que virou coveiro nos epigramas de Marcial.']},
+    'fabulla': {'lema': 'Fabulla', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Fabula, a mulher vaidosa do epigrama.']},
+    'cinna': {'lema': 'Cinna', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Cina, o poeta invejoso do epigrama.']},
+    'thais': {'lema': 'Thais', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Taís, nome grego de mulher, comum nos epigramas.']},
+    'laecania': {'lema': 'Laecania', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Lecânia, a mulher de dentes postiços do epigrama.']},
+    'aemiliane': {'lema': 'Aemilianus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Emiliano, o pobre a quem o epigrama se dirige.']},
+    'vacerra': {'lema': 'Vacerra', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Vacerra, o que só admirava os poetas mortos.']},
+    'matthaeum': {'lema': 'Matthaeus', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Mateus, o apóstolo e evangelista.']},
+    'hosanna': {'lema': 'hosanna', 'classe': 'interjeição', 'g': 'gramatical', 'def': ['Hosana: salva, por favor! Aclamação hebraica de louvor.'], 'wiki': 'https://en.wiktionary.org/wiki/hosanna#Latin'},
+    'sabaoth': {'lema': 'Sabaoth', 'classe': 'nome (hebraico)', 'g': 'gramatical', 'def': ['Dos exércitos: palavra hebraica, em «Senhor Deus Sabaoth», o Senhor dos exércitos (do céu).'], 'wiki': 'https://en.wiktionary.org/wiki/Sabaoth#Latin'},
+    # leva 1b de 19/11/2026
+    'gallia': {'lema': 'Gallia', 'classe': 'nome próprio', 'g': 'nome', 'def': ['A Gália, a terra dos gauleses (hoje, sobretudo a França e a Bélgica).']},
+    'belgae': {'lema': 'Belgae', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Os belgas, o povo do norte da Gália.']},
+    'aquitani': {'lema': 'Aquitani', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Os aquitanos, o povo do sudoeste da Gália.']},
+    'celtae': {'lema': 'Celtae', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Os celtas: o nome que os gauleses do centro davam a si mesmos.']},
+    'galli': {'lema': 'Galli', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Os gauleses: o nome romano dos celtas da Gália.']},
+    'catilina': {'lema': 'Catilina', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Catilina, o senador que conspirou contra Roma em 63 a.C.']},
+    'lucili': {'lema': 'Lucilius', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Lucílio, o amigo a quem Sêneca escreve as cartas.']},
+    # leva 2 de 19/11/2026
+    'mariam': {'lema': 'Maria', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Maria, a mãe de Jesus.'], 'wiki': 'https://en.wiktionary.org/wiki/Maria#Latin'},
+    # leva 3 de 19/11/2026
+    'israel': {'lema': 'Israel', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Israel, o povo de Deus (e o patriarca Jacó, que deu o nome ao povo).'], 'wiki': 'https://en.wiktionary.org/wiki/Israel#Latin'},
+    'david': {'lema': 'David', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Davi, o rei de Israel, de cuja casa vem o Messias.'], 'wiki': 'https://en.wiktionary.org/wiki/David#Latin'},
+    'abraham': {'lema': 'Abraham', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Abraão, o patriarca, pai do povo de Israel.'], 'wiki': 'https://en.wiktionary.org/wiki/Abraham#Latin'},
+    'meriba': {'lema': 'Meriba', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Meribá, o lugar do deserto onde o povo discutiu com Deus por falta de água (Ex 17).']},
+    'massa': {'lema': 'Massa', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Massá, o lugar do deserto onde o povo tentou a Deus (Ex 17); o mesmo episódio de Meribá.']},
+    'evae': {'lema': 'Eva', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Eva, a primeira mulher.'], 'wiki': 'https://en.wiktionary.org/wiki/Eva#Latin'},
+    'cherubim': {'lema': 'Cherubim', 'classe': 'nome (hebraico)', 'g': 'nome', 'def': ['Os Querubins, uma das ordens dos anjos (plural hebraico de cherub).'], 'wiki': 'https://en.wiktionary.org/wiki/cherubim#Latin'},
+    'seraphim': {'lema': 'Seraphim', 'classe': 'nome (hebraico)', 'g': 'nome', 'def': ['Os Serafins, uma das ordens dos anjos (plural hebraico de seraph).'], 'wiki': 'https://en.wiktionary.org/wiki/seraphim#Latin'},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')
@@ -247,7 +344,8 @@ def linha_de(trecho, cards, destinos):
     «palavras» (duas quando a palavra junta duas, como tecum = te + cum)."""
     fila = list(trecho['palavras'])
     p, pos = [], 0
-    for m in PALAVRA.finditer(trecho['la']):
+    ms = list(PALAVRA.finditer(trecho['la']))
+    for k, m in enumerate(ms):
         if m.start() > pos:
             p.append([trecho['la'][pos:m.start()], None])
         w = m.group(0)
@@ -259,7 +357,9 @@ def linha_de(trecho, cards, destinos):
             if not fila or len(partes) > 2:
                 raise SystemExit(f"{trecho['id']}: «{w}» não bate com a anotação")
             partes.append(fila.pop(0))
-        if partes[0]['w'].lower() == w.lower() and fila and fila[0]['w'].lower() == w.lower():
+        # a mesma palavra repetida no texto («Sanctus, Sanctus», «fui, fui») é uma entrada cada
+        prox = ms[k + 1].group(0).lower() if k + 1 < len(ms) else None
+        if partes[0]['w'].lower() == w.lower() and fila and fila[0]['w'].lower() == w.lower() and prox != w.lower():
             partes.append(fila.pop(0))
         ds = [destino_de(x, cards) if x.get('c') else sem_card(x) for x in partes]
         d = ds[0] if len(ds) == 1 else {'partes': ds}

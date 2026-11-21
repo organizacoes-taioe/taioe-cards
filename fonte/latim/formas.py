@@ -30,6 +30,8 @@ RE_GLOSA = re.compile(r'((?:nominative|genitive|dative|accusative|ablative|vocat
 
 # A enclítica que se escreve junto (virumque = virum + -que) e o «cum» posposto ao pronome.
 ENCLITICAS = ('que', 'ne', 've')
+# palavras inteiras que o índice não tem e que pareceriam raiz + enclítica (omissione = omissio + -ne)
+NAO_SEPARAR = {'omissione'}
 COM_CUM = {'mecum': 'me', 'tecum': 'te', 'secum': 'se', 'nobiscum': 'nobis', 'vobiscum': 'vobis',
            'quocum': 'quo', 'quacum': 'qua', 'quibuscum': 'quibus', 'quicum': 'qui'}
 
@@ -121,6 +123,8 @@ def separar(palavra):
     if k in com_cum:
         corte = len(com_cum[k])
         return [palavra[:corte], palavra[corte:]]
+    if k in NAO_SEPARAR:
+        return [palavra]
     for enc in ENCLITICAS:
         # a chave troca v por u: «quidve» → «quidue»
         if k.endswith(latim.chave(enc)) and len(k) > len(enc) + 1 and not analisar(palavra):

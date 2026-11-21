@@ -1,0 +1,414 @@
+{
+ "id": "marcial/bella-es",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Bella es",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/bella-es/",
+ "ordem": 41,
+ "fonte": "Epigramas, I,64",
+ "blocos": [
+  [
+   {
+    "t": "Bella es, novimus, et puella, verum est,",
+    "p": [
+     [
+      "Bella",
+      "bella"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "es",
+      "es"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "novimus",
+      "novimus"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "puella",
+      "puella"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "verum",
+      "verum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "est",
+      "est"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1397",
+     "la-v009",
+     "la-v1398",
+     "la-v988",
+     "la-v010"
+    ]
+   },
+   {
+    "t": "et dives, quis enim potest negare?",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dives",
+      "dives"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "quis",
+      "quis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "enim",
+      "enim"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "potest",
+      "potest"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "negare",
+      "negare"
+     ],
+     [
+      "?",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v516",
+     "la-v268",
+     "la-v1400"
+    ]
+   },
+   {
+    "t": "Sed cum te nimium, Fabulla, laudas,",
+    "p": [
+     [
+      "Sed",
+      "sed"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "cum",
+      "cum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "te",
+      "te"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nimium",
+      "nimium"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Fabulla",
+      "fabulla"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "laudas",
+      "laudas"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v050",
+     "la-v1355"
+    ]
+   },
+   {
+    "t": "nec dives neque bella nec puella es.",
+    "p": [
+     [
+      "nec",
+      "nec"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dives",
+      "dives"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "neque",
+      "neque"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "bella",
+      "bella"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nec",
+      "nec"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "puella",
+      "puella"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "es",
+      "es"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v556",
+     "la-v1397",
+     "la-v009"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "bella": {
+   "lema": "bellus",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "predicativo de es: bonita",
+   "card": "la-p891",
+   "wiki": "https://en.wiktionary.org/wiki/bellus#Latin"
+  },
+  "es": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "és",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "novimus": {
+   "lema": "nosco",
+   "classe": "verbo",
+   "forma": "perfeito do indicativo, 1ª pessoa do plural",
+   "funcao": "perfeito com sentido de presente: sabemos",
+   "card": "la-p892",
+   "wiki": "https://en.wiktionary.org/wiki/nosco#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "puella": {
+   "lema": "puella",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "predicativo de es: moça",
+   "card": "la-p893",
+   "wiki": "https://en.wiktionary.org/wiki/puella#Latin"
+  },
+  "verum": {
+   "lema": "verus",
+   "classe": "adjetivo",
+   "forma": "nominativo neutro singular",
+   "funcao": "predicativo de est: verdade",
+   "card": "la-p459",
+   "wiki": "https://en.wiktionary.org/wiki/verus#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "dives": {
+   "lema": "dives",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "predicativo de es: rica",
+   "card": "la-p894",
+   "wiki": "https://en.wiktionary.org/wiki/dives#Latin"
+  },
+  "quis": {
+   "lema": "quis",
+   "classe": "pronome",
+   "forma": "nominativo masculino singular",
+   "funcao": "sujeito de potest: quem",
+   "card": "la-p236",
+   "wiki": "https://en.wiktionary.org/wiki/quis#Latin"
+  },
+  "enim": {
+   "lema": "enim",
+   "classe": "conjunção",
+   "card": "la-p895",
+   "wiki": "https://en.wiktionary.org/wiki/enim#Latin"
+  },
+  "potest": {
+   "lema": "possum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "pode",
+   "card": "la-p121",
+   "wiki": "https://en.wiktionary.org/wiki/possum#Latin"
+  },
+  "negare": {
+   "lema": "nego",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "depende de potest: negar",
+   "card": "la-p896",
+   "wiki": "https://en.wiktionary.org/wiki/nego#Latin"
+  },
+  "sed": {
+   "lema": "sed",
+   "classe": "conjunção",
+   "card": "la-p107",
+   "wiki": "https://en.wiktionary.org/wiki/sed#Latin"
+  },
+  "cum": {
+   "lema": "cum",
+   "classe": "conjunção",
+   "funcao": "conjunção: quando",
+   "card": "la-p618",
+   "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+  },
+  "te": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "acusativo singular",
+   "funcao": "objeto de laudas: a ti mesma",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  },
+  "nimium": {
+   "lema": "nimium",
+   "classe": "advérbio",
+   "card": "la-p897",
+   "wiki": "https://en.wiktionary.org/wiki/nimium#Latin"
+  },
+  "fabulla": {
+   "lema": "Fabulla",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Fabula, a mulher vaidosa do epigrama."
+   ],
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala"
+  },
+  "laudas": {
+   "lema": "laudo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "depois de cum: elogias",
+   "card": "la-p018",
+   "wiki": "https://en.wiktionary.org/wiki/laudo#Latin"
+  },
+  "nec": {
+   "lema": "nec",
+   "classe": "conjunção",
+   "card": "la-p120",
+   "wiki": "https://en.wiktionary.org/wiki/nec#Latin"
+  },
+  "neque": {
+   "lema": "nec",
+   "classe": "conjunção",
+   "card": "la-p120",
+   "wiki": "https://en.wiktionary.org/wiki/nec#Latin"
+  }
+ }
+}

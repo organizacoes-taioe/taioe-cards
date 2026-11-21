@@ -1,0 +1,261 @@
+{
+ "id": "marcial/thais-habet",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Thais habet",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/thais-habet/",
+ "ordem": 43,
+ "fonte": "Epigramas, V,43",
+ "blocos": [
+  [
+   {
+    "t": "Thais habet nigros, niveos Laecania dentes.",
+    "p": [
+     [
+      "Thais",
+      "thais"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "habet",
+      "habet"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nigros",
+      "nigros"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "niveos",
+      "niveos"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Laecania",
+      "laecania"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dentes",
+      "dentes"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1384",
+     "la-v1405",
+     "la-v1406",
+     "la-v1407"
+    ]
+   },
+   {
+    "t": "Quae ratio est? Emptos haec habet, illa suos.",
+    "p": [
+     [
+      "Quae",
+      "quae"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ratio",
+      "ratio"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "est",
+      "est"
+     ],
+     [
+      "? ",
+      null
+     ],
+     [
+      "Emptos",
+      "emptos"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "haec",
+      "haec"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "habet",
+      "habet"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "illa",
+      "illa"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "suos",
+      "suos"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v172",
+     "la-v010",
+     "la-v1408",
+     "la-v302",
+     "la-v1384",
+     "la-v446",
+     "la-v1386"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "thais": {
+   "lema": "Thais",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Taís, nome grego de mulher, comum nos epigramas."
+   ],
+   "forma": "nominativo singular",
+   "funcao": "sujeito de habet"
+  },
+  "habet": {
+   "lema": "habeo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "tem",
+   "card": "la-p504",
+   "wiki": "https://en.wiktionary.org/wiki/habeo#Latin"
+  },
+  "nigros": {
+   "lema": "niger",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino plural",
+   "funcao": "concorda com dentes: pretos",
+   "card": "la-p902",
+   "wiki": "https://en.wiktionary.org/wiki/niger#Latin"
+  },
+  "niveos": {
+   "lema": "niveus",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino plural",
+   "funcao": "concorda com dentes: brancos como a neve",
+   "card": "la-p903",
+   "wiki": "https://en.wiktionary.org/wiki/niveus#Latin"
+  },
+  "laecania": {
+   "lema": "Laecania",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Lecânia, a mulher de dentes postiços do epigrama."
+   ],
+   "forma": "nominativo singular",
+   "funcao": "sujeito de habet, subentendido"
+  },
+  "dentes": {
+   "lema": "dens",
+   "classe": "substantivo masculino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de habet: os dentes",
+   "card": "la-p904",
+   "wiki": "https://en.wiktionary.org/wiki/dens#Latin"
+  },
+  "quae": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "nominativo feminino singular",
+   "funcao": "interrogativo, concorda com ratio: qual",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "ratio": {
+   "lema": "ratio",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de est: a razão",
+   "card": "la-p905",
+   "wiki": "https://en.wiktionary.org/wiki/ratio#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "emptos": {
+   "lema": "emo",
+   "classe": "verbo",
+   "forma": "particípio perfeito, acusativo masculino plural",
+   "funcao": "concorda com os dentes, subentendidos: comprados",
+   "card": "la-p906",
+   "wiki": "https://en.wiktionary.org/wiki/emo#Latin"
+  },
+  "haec": {
+   "lema": "hic",
+   "classe": "pronome",
+   "forma": "nominativo feminino singular",
+   "funcao": "sujeito de habet: esta (Lecânia, a mais perto)",
+   "card": "la-p124",
+   "wiki": "https://en.wiktionary.org/wiki/hic#Latin"
+  },
+  "illa": {
+   "lema": "ille",
+   "classe": "pronome",
+   "forma": "nominativo feminino singular",
+   "funcao": "sujeito de habet, subentendido: aquela (Taís)",
+   "card": "la-p215",
+   "wiki": "https://en.wiktionary.org/wiki/ille#Latin"
+  },
+  "suos": {
+   "lema": "suus",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino plural",
+   "funcao": "concorda com os dentes, subentendidos: os seus",
+   "card": "la-p536",
+   "wiki": "https://en.wiktionary.org/wiki/suus#Latin"
+  }
+ }
+}

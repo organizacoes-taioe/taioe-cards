@@ -344,12 +344,347 @@ CORTES = {
         [(41, 50)],                  # prisco quae more parentum tradita sunt tristi munere ad inferias,
         [(56, 62)],                  # atque in perpetuum, frater, ave atque vale.
     ],
+    # leva 1a de 19/11/2026 (LATIM.md §21): Marcial, Catulo 70, Publílio Siro, inscrições e a Missa
+    'marcial/sunt-bona': [
+        [(0, 10)],                   # Sunt bona, sunt quaedam mediocria, sunt mala plura quae legis hic:
+        [(11, 15)],                  # aliter non fit, Avite, liber.
+    ],
+    'marcial/quem-recitas': [[(0, 6)], [(7, 13)]],
+    'marcial/nuper-erat-medicus': [[(0, 6)], [(7, 12)]],
+    'marcial/bella-es': [
+        [(0, 6)],                    # Bella es, novimus, et puella, verum est,
+        [(7, 12)],                   # et dives, quis enim potest negare?
+        [(13, 16), (18, 25)],        # Sed cum te nimium laudas, nec dives neque bella nec puella es.
+    ],
+    'marcial/versiculos-in-me': [[(0, 5)], [(6, 11)]],
+    'marcial/thais-habet': [[(0, 5)], [(6, 8)], [(9, 13)]],
+    'marcial/semper-pauper-eris': [[(0, 6)], [(7, 12)]],
+    'marcial/miraris-veteres': [
+        [(0, 8)],                    # Miraris veteres, Vacerra, solos, nec laudas nisi mortuos poetas.
+        [(9, 11)],                   # Ignoscas petimus, Vacerra:
+        [(12, 18)],                  # tanti non est, ut placeam tibi, perire.
+    ],
+    'marcial/difficilis-facilis': [[(0, 5)], [(6, 12)]],
+    'catulo/nulli-se-dicit': [
+        [(0, 8)],                    # Nulli se dicit mulier mea nubere malle quam mihi,
+        [(9, 14)],                   # non si se Iuppiter ipse petat.
+        [(15, 21)],                  # Dicit: sed mulier cupido quod dicit amanti,
+        [(19, 28)],                  # quod dicit amanti, in vento et rapida scribere oportet aqua.
+    ],
+    'publilio-siro/sententiae-parte-1': [[(0, 6)], [(7, 12)], [(13, 17)], [(18, 24)], [(25, 31)]],
+    'publilio-siro/sententiae-parte-2': [[(0, 6)], [(7, 13)], [(14, 19)], [(20, 25)], [(26, 31)]],
+    'publilio-siro/sententiae-parte-3': [[(0, 5)], [(6, 12)], [(13, 21)], [(22, 31)], [(32, 37)]],
+    'inscricoes/admiror-paries': [
+        [(0, 10)],                   # Admiror, paries, te non cecidisse ruinis, qui tot scriptorum taedia sustineas.
+        [(11, 17)],                  # Quisquis amat valeat, pereat qui nescit amare;
+        [(18, 23)],                  # bis tanto pereat quisquis amare vetat.
+        [(24, 30)],                  # Non fui, fui, non sum, non desidero.
+        [(31, 34)],                  # Sit tibi terra levis.
+    ],
+    'missal-romano/in-nomine-patris': [
+        [(0, 7)],                    # In nomine Patris, et Filii, et Spiritus Sancti.
+        [(9, 16), (21, 24)],         # Gratia Domini nostri Iesu Christi, et caritas Dei sit cum omnibus vobis
+        [(17, 24)],                  # et communicatio Sancti Spiritus sit cum omnibus vobis.
+        [(25, 28)], [(29, 30)], [(31, 34)],   # Et cum spiritu tuo. / Dominus vobiscum. (já são cards)
+        [(35, 45)],                  # Fratres, agnoscamus peccata nostra, ut apti simus ad sacra mysteria celebranda.
+    ],
+    'missal-romano/per-dominum-nostrum': [
+        [(0, 0)],                    # Oremus. (já é card)
+        [(1, 7)],                    # Per Dominum nostrum Iesum Christum, Filium tuum,
+        [(8, 17)],                   # qui tecum vivit et regnat in unitate Spiritus Sancti, Deus,
+        [(18, 21)],                  # per omnia saecula saeculorum. (já é card)
+        [(23, 26)],                  # Per Christum Dominum nostrum. (já é card)
+    ],
+    'missal-romano/verbum-domini': [
+        [(0, 1)], [(2, 3)], [(4, 5)], [(6, 9)], [(10, 14)], [(15, 17)], [(18, 19)], [(20, 22)],
+    ],
+    'missal-romano/sursum-corda': [[(0, 1)], [(2, 5)], [(6, 7)], [(8, 10)], [(11, 15)], [(16, 19)]],
+    'missal-romano/sanctus': [[(0, 5)], [(6, 12)], [(13, 15)], [(16, 21)], [(22, 24)]],
+    'missal-romano/agnus-dei': [[(0, 7)], [(8, 15)], [(16, 24)]],
+    'missal-romano/ite-missa-est': [[(0, 1)], [(2, 5)], [(6, 15)], [(17, 19)], [(20, 21)]],
+    # leva 1b de 19/11/2026 (LATIM.md §21): Fedro, Gaudeamus, O Fortuna, César, Cícero, Sêneca, Ovídio
+    'fedro/vulpes-et-uva': [[(0, 10)], [(11, 17)], [(18, 23)], [(24, 35)]],
+    'fedro/canis-per-fluvium': [
+        [(0, 5)],                    # Amittit merito proprium qui alienum adpetit.
+        [(6, 12)],                   # Canis per flumen carnem cum ferret natans,
+        [(6, 6), (13, 18)],          # Canis … lympharum in speculo vidit simulacrum suum,
+        [(19, 26)],                  # aliamque praedam ab altero ferri putans eripere voluit;
+        [(27, 35)],                  # verum decepta aviditas et quem tenebat ore dimisit cibum,
+        [(27, 29), (36, 41)],        # verum decepta aviditas … nec quem petebat potuit adeo adtingere.
+    ],
+    'fedro/vulpes-et-corvus': [
+        [(0, 10)],                   # Qui se laudari gaudet verbis subdolis, fere dat poenas turpi paenitentia.
+        [(11, 18)],                  # Cum de fenestra corvus raptum caseum comesse vellet,
+        [(19, 28)],                  # celsa residens arbore, vulpes hunc vidit, deinde sic coepit loqui:
+        [(29, 35)], [(36, 41)], [(42, 48)],
+        [(49, 58)],                  # At ille stultus, dum vult vocem ostendere, emisit ore caseum,
+        [(58, 65)],                  # caseum, quem celeriter dolosa vulpes avidis rapuit dentibus.
+        [(66, 71)], [(72, 77)], [(78, 81)],
+    ],
+    'fedro/rana-rupta-et-bos': [
+        [(0, 5)], [(6, 11)],
+        [(12, 19)],                  # et tacta invidia tantae magnitudinis rugosam inflavit pellem:
+        [(20, 27)],                  # tum natos suos interrogavit, an bove esset latior.
+        [(28, 29)],                  # Illi negarunt.
+        [(30, 41)],                  # Rursus intendit cutem maiore nisu et simili quaesivit modo, quis maior esset.
+        [(42, 44)], [(45, 54)],
+    ],
+    'anonimo/gaudeamus-igitur': [[(0, 4)], [(5, 13)], [(14, 21)], [(22, 30)], [(31, 36)], [(37, 44)]],
+    'carmina-burana/o-fortuna-parte-1': [[(0, 9)], [(10, 19)], [(20, 24)]],
+    'carmina-burana/o-fortuna-parte-2': [[(0, 6)], [(7, 12)], [(13, 18)], [(19, 26)]],
+    'carmina-burana/o-fortuna-parte-3': [[(0, 6)], [(7, 13)], [(14, 21)], [(22, 29)]],
+    'cesar/gallia-est-omnis': [[(0, 6)], [(7, 12)], [(13, 20)], [(21, 28)]],
+    'cicero/quo-usque-tandem': [[(0, 6)], [(7, 14)], [(15, 21)], [(22, 25)], [(26, 30)], [(31, 33)]],
+    'seneca/ita-fac-mi-lucili': [
+        [(0, 6)],                    # Ita fac, mi Lucili; vindica te tibi,
+        [(7, 12), (17, 19)],         # et tempus, quod adhuc aut auferebatur … collige et serva.
+        [(8, 9), (13, 19)],          # tempus, quod … aut subripiebatur aut excidebat, collige et serva.
+        [(20, 26)], [(27, 34)], [(35, 42)],
+    ],
+    'ovidio/in-nova-fert-animus': [
+        [(0, 7)],                    # In nova fert animus mutatas dicere formas corpora;
+        [(8, 9), (15, 16)],          # di, coeptis … adspirate meis
+        [(10, 14)],                  # nam vos mutastis et illas
+        [(17, 26)],                  # primaque ab origine mundi ad mea perpetuum deducite tempora carmen.
+    ],
+    # leva 2 de 19/11/2026 (LATIM.md §21): o resto da Missa
+    'missal-romano/confiteor': [
+        [(0, 5)],                    # Confiteor Deo omnipotenti et vobis, fratres,
+        [(6, 13)],                   # quia peccavi nimis cogitatione, verbo, opere et omissione:
+        [(14, 20)],                  # mea culpa, mea culpa, mea maxima culpa.
+        [(21, 26)],                  # Ideo precor beatam Mariam semper Virginem,
+        [(22, 22), (27, 33)],        # precor … omnes Angelos et Sanctos, et vos, fratres,
+        [(22, 22), (34, 40)],        # precor … orare pro me ad Dominum Deum nostrum.
+        [(41, 44)],                  # Misereatur nostri omnipotens Deus
+        [(45, 53)],                  # et, dimissis peccatis nostris, perducat nos ad vitam aeternam.
+    ],
+    'missal-romano/gloria-parte-1': [
+        [(0, 10)],                   # Gloria in excelsis Deo et in terra pax hominibus bonae voluntatis.
+        [(11, 18)],                  # Laudamus te, benedicimus te, adoramus te, glorificamus te,
+        [(19, 25)],                  # gratias agimus tibi propter magnam gloriam tuam,
+        [(26, 32)],                  # Domine Deus, Rex caelestis, Deus Pater omnipotens.
+    ],
+    'missal-romano/gloria-parte-2': [
+        [(0, 4)],                    # Domine Fili unigenite, Iesu Christe,
+        [(5, 10)],                   # Domine Deus, Agnus Dei, Filius Patris,
+        [(11, 16)],                  # qui tollis peccata mundi, miserere nobis;
+        [(17, 23)],                  # qui tollis peccata mundi, suscipe deprecationem nostram.
+        [(24, 30)],                  # Qui sedes ad dexteram Patris, miserere nobis.
+        [(31, 37)],                  # Quoniam tu solus Sanctus, tu solus Dominus,
+        [(38, 49)],                  # tu solus Altissimus, Iesu Christe, cum Sancto Spiritu: in gloria Dei Patris.
+    ],
+    'missal-romano/benedictus-es-domine-parte-1': [
+        [(0, 4)],                    # Benedictus es, Domine, Deus universi,
+        [(5, 10)],                   # quia de tua largitate accepimus panem,
+        [(11, 19)],                  # quem tibi offerimus, fructum terrae et operis manuum hominum:
+        [(20, 25)],                  # ex quo nobis fiet panis vitae.
+        [(26, 29)],                  # Benedictus Deus in saecula.
+        [(30, 39)],                  # Per huius aquae et vini mysterium eius efficiamur divinitatis consortes,
+        [(36, 36), (40, 46)],        # eius … qui humanitatis nostrae fieri dignatus est particeps.
+    ],
+    'missal-romano/benedictus-es-domine-parte-2': [
+        [(0, 4)],                    # (igual à parte 1)
+        [(5, 10)],                   # quia de tua largitate accepimus vinum,
+        [(11, 19)],                  # quod tibi offerimus, fructum vitis et operis manuum hominum:
+        [(20, 25)],                  # ex quo nobis fiet potus spiritalis.
+        [(26, 29)],                  # (igual à parte 1)
+        [(30, 40)],                  # In spiritu humilitatis et in animo contrito suscipiamur a te, Domine;
+        [(41, 49)],                  # et sic fiat sacrificium nostrum in conspectu tuo hodie,
+        [(43, 44), (50, 54)],        # fiat sacrificium … ut placeat tibi, Domine Deus.
+        [(55, 60)],                  # Lava me, Domine, ab iniquitate mea,
+        [(61, 66)],                  # et a peccato meo munda me.
+    ],
+    'missal-romano/orate-fratres': [
+        [(0, 1)],                    # Orate, fratres:
+        [(2, 12)],                   # ut meum ac vestrum sacrificium acceptabile fiat apud Deum Patrem omnipotentem.
+        [(13, 18)],                  # Suscipiat Dominus sacrificium de manibus tuis
+        [(13, 15), (19, 24)],        # Suscipiat Dominus sacrificium … ad laudem et gloriam nominis sui,
+        [(13, 15), (25, 32)],        # Suscipiat Dominus sacrificium … ad utilitatem quoque nostram totiusque Ecclesiae suae sanctae.
+    ],
+    'missal-romano/accipite': [
+        [(0, 5)],                    # Accipite et manducate ex hoc omnes:
+        [(6, 14)],                   # hoc est enim Corpus meum, quod pro vobis tradetur.
+        [(15, 20)],                  # Accipite et bibite ex eo omnes:
+        [(21, 30)],                  # hic est enim calix Sanguinis mei novi et aeterni testamenti,
+        [(24, 25), (31, 40)],        # calix Sanguinis … qui pro vobis et pro multis effundetur in remissionem peccatorum.
+        [(41, 45)],                  # Hoc facite in meam commemorationem.
+    ],
+    'missal-romano/mysterium-fidei': [
+        [(0, 1)],                    # Mysterium fidei.
+        [(2, 11)],                   # Mortem tuam annuntiamus, Domine, et tuam resurrectionem confitemur, donec venias.
+        [(12, 18)],                  # Quotiescumque manducamus panem hunc et calicem bibimus,
+        [(19, 24)],                  # mortem tuam annuntiamus, Domine, donec venias.
+        [(25, 28)],                  # Salvator mundi, salva nos,
+        [(29, 36)],                  # qui per crucem et resurrectionem tuam liberasti nos.
+    ],
+    'missal-romano/per-ipsum': [
+        [(0, 8)],                    # Per ipsum, et cum ipso, et in ipso, est
+        [(8, 12), (17, 20)],         # est tibi Deo Patri omnipotenti, … omnis honor et gloria
+        [(13, 24)],                  # in unitate Spiritus Sancti, omnis honor et gloria per omnia saecula saeculorum.
+    ],
+    'missal-romano/libera-nos': [
+        [(0, 8)],                    # Praeceptis salutaribus moniti, et divina institutione formati, audemus dicere:
+        [(9, 15)],                   # Libera nos, quaesumus, Domine, ab omnibus malis,
+        [(16, 21)],                  # da propitius pacem in diebus nostris,
+        [(22, 26), (30, 32)],        # ut, ope misericordiae tuae adiuti, … simus semper liberi
+        [(22, 22), (27, 37)],        # ut … et a peccato simus semper liberi et ab omni perturbatione securi:
+        [(38, 46)],                  # exspectantes beatam spem et adventum Salvatoris nostri Iesu Christi.
+        [(47, 56)],                  # Quia tuum est regnum, et potestas, et gloria in saecula.
+    ],
+    'missal-romano/pacem-relinquo-vobis': [
+        [(0, 6)],                    # Domine Iesu Christe, qui dixisti Apostolis tuis:
+        [(7, 13)],                   # Pacem relinquo vobis, pacem meam do vobis:
+        [(14, 21)],                  # ne respicias peccata nostra, sed fidem Ecclesiae tuae;
+        [(22, 29)],                  # eamque secundum voluntatem tuam pacificare et coadunare digneris.
+        [(30, 36)],                  # Qui vivis et regnas in saecula saeculorum.
+        [(38, 42)],                  # Pax Domini sit semper vobiscum.
+        [(43, 46)],                  # Et cum spiritu tuo. (já é card)
+        [(47, 49)],                  # Offerte vobis pacem.
+    ],
+    'missal-romano/ecce-agnus-dei': [
+        [(0, 7)],                    # Ecce Agnus Dei, ecce qui tollit peccata mundi.
+        [(8, 14)],                   # Beati qui ad cenam Agni vocati sunt.
+        [(15, 23)],                  # Domine, non sum dignus, ut intres sub tectum meum,
+        [(24, 31)],                  # sed tantum dic verbo, et sanabitur anima mea.
+        [(32, 33)],                  # Corpus Christi.
+    ],
+    # leva 3 de 19/11/2026 (LATIM.md §21): a Liturgia das Horas
+    'liturgia-das-horas/deus-in-adiutorium': [
+        [(0, 3)],                    # Domine, labia mea aperies.
+        [(4, 9)],                    # Et os meum annuntiabit laudem tuam.
+        [(10, 14)],                  # Deus, in adiutorium meum intende.
+        [(15, 19)],                  # Domine, ad adiuvandum me festina.
+    ],
+    'liturgia-das-horas/venite-exsultemus-parte-1': [
+        [(0, 6)],                    # Venite, exsultemus Domino; iubilemus Deo salutari nostro.
+        [(7, 16)],                   # Praeoccupemus faciem eius in confessione et in psalmis iubilemus ei.
+        [(17, 26)],                  # Quoniam Deus magnus Dominus et rex magnus super omnes deos.
+    ],
+    'liturgia-das-horas/venite-exsultemus-parte-2': [
+        [(0, 11)],                   # Quia in manu eius sunt profunda terrae, et altitudines montium ipsius sunt.
+        [(12, 19)],                  # Quoniam ipsius est mare, et ipse fecit illud,
+        [(20, 24)],                  # et siccam manus eius formaverunt.
+        [(25, 33)],                  # Venite, adoremus et procidamus et genua flectamus ante Dominum,
+        [(33, 41)],                  # Dominum, qui fecit nos, quia ipse est Deus noster,
+        [(42, 50)],                  # et nos populus pascuae eius et oves manus eius.
+    ],
+    'liturgia-das-horas/venite-exsultemus-parte-3': [
+        [(0, 4)],                    # Utinam hodie vocem eius audiatis:
+        [(5, 11)],                   # Nolite obdurare corda vestra, sicut in Meriba,
+        [(5, 6), (12, 16)],          # Nolite obdurare … secundum diem Massa in deserto,
+        [(17, 27)],                  # ubi tentaverunt me patres vestri: probaverunt me, etsi viderunt opera mea.
+        [(28, 33)],                  # Quadraginta annis taeduit me generationis illius,
+        [(34, 40)],                  # et dixi: Populus errantium corde sunt isti.
+        [(41, 46)],                  # Et ipsi non cognoverunt vias meas;
+        [(47, 56)],                  # ideo iuravi in ira mea: Non introibunt in requiem meam.
+    ],
+    'liturgia-das-horas/benedictus-parte-1': [
+        [(0, 3)],                    # Benedictus Dominus, Deus Israel,
+        [(4, 10)],                   # quia visitavit et fecit redemptionem plebi suae
+        [(11, 20)],                  # et erexit cornu salutis nobis in domo David pueri sui,
+        [(21, 26), (31, 32)],        # sicut locutus est per os sanctorum … prophetarum eius,
+        [(26, 32)],                  # sanctorum, qui a saeculo sunt, prophetarum eius,
+        [(12, 13), (33, 36)],        # erexit cornu … salutem ex inimicis nostris
+        [(33, 33), (37, 43)],        # salutem … et de manu omnium, qui oderunt nos;
+    ],
+    'liturgia-das-horas/benedictus-parte-2': [
+        [(0, 5)],                    # ad faciendam misericordiam cum patribus nostris
+        [(6, 10)],                   # et memorari testamenti sui sancti,
+        [(11, 17)],                  # iusiurandum, quod iuravit ad Abraham patrem nostrum,
+        [(11, 13), (18, 20)],        # iusiurandum, quod iuravit … daturum se nobis,
+        [(21, 29)],                  # ut sine timore, de manu inimicorum liberati, serviamus illi
+        [(28, 38)],                  # serviamus illi in sanctitate et iustitia coram ipso omnibus diebus nostris.
+    ],
+    'liturgia-das-horas/benedictus-parte-3': [
+        [(0, 5)],                    # Et tu, puer, propheta Altissimi vocaberis:
+        [(6, 13)],                   # praeibis enim ante faciem Domini parare vias eius,
+        [(14, 23)],                  # ad dandam scientiam salutis plebi eius in remissionem peccatorum eorum,
+        [(24, 28)],                  # per viscera misericordiae Dei nostri,
+        [(25, 25), (29, 35)],        # viscera … in quibus visitabit nos oriens ex alto,
+        [(36, 45)],                  # illuminare his, qui in tenebris et in umbra mortis sedent,
+        [(46, 52)],                  # ad dirigendos pedes nostros in viam pacis.
+    ],
+    'liturgia-das-horas/magnificat-parte-1': [
+        [(0, 3)],                    # Magnificat anima mea Dominum,
+        [(4, 11)],                   # et exsultavit spiritus meus in Deo salvatore meo,
+        [(12, 16)],                  # quia respexit humilitatem ancillae suae.
+        [(17, 25)],                  # Ecce enim ex hoc beatam me dicent omnes generationes,
+        [(26, 32)],                  # quia fecit mihi magna, qui potens est,
+        [(33, 36)],                  # et sanctum nomen eius,
+        [(37, 45)],                  # et misericordia eius in progenies et progenies timentibus eum.
+    ],
+    'liturgia-das-horas/magnificat-parte-2': [
+        [(0, 9)],                    # Fecit potentiam in brachio suo, dispersit superbos mente cordis sui;
+        [(10, 16)],                  # deposuit potentes de sede et exaltavit humiles.
+        [(17, 23)],                  # Esurientes implevit bonis et divites dimisit inanes.
+        [(24, 29)],                  # Suscepit Israel puerum suum, recordatus misericordiae,
+        [(30, 41)],                  # sicut locutus est ad patres nostros, Abraham et semini eius in saecula.
+    ],
+    'liturgia-das-horas/nunc-dimittis': [
+        [(0, 6)],                    # Salva nos, Domine, vigilantes, custodi nos dormientes,
+        [(7, 14)],                   # ut vigilemus cum Christo et requiescamus in pace.
+        [(15, 24)],                  # Nunc dimittis servum tuum, Domine, secundum verbum tuum in pace,
+        [(25, 30)],                  # quia viderunt oculi mei salutare tuum,
+        [(29, 36)],                  # salutare tuum, quod parasti ante faciem omnium populorum,
+        [(37, 45)],                  # lumen ad revelationem gentium et gloriam plebis tuae Israel.
+        [(46, 52)],                  # In manus tuas, Domine, commendo spiritum meum.
+        [(53, 57)],                  # Redemisti nos, Domine, Deus veritatis.
+        [(58, 66)],                  # Noctem quietam et finem perfectum concedat nobis Dominus omnipotens.
+    ],
+    'liturgia-das-horas/salve-regina': [
+        [(0, 9)],                    # Salve, Regina, mater misericordiae, vita, dulcedo et spes nostra, salve.
+        [(10, 15)],                  # Ad te clamamus, exsules filii Evae.
+        [(16, 25)],                  # Ad te suspiramus gementes et flentes in hac lacrimarum valle.
+        [(26, 36)],                  # Eia ergo, advocata nostra, illos tuos misericordes oculos ad nos converte.
+        [(37, 47)],                  # Et Iesum, benedictum fructum ventris tui, nobis post hoc exsilium ostende.
+        [(48, 55)],                  # O clemens, o pia, o dulcis Virgo Maria.
+    ],
+    'liturgia-das-horas/te-deum-parte-1': [
+        [(0, 5)],                    # Te Deum laudamus: te Dominum confitemur.
+        [(6, 11)],                   # Te aeternum Patrem omnis terra veneratur.
+        [(12, 14), (24, 26)],        # Tibi omnes Angeli … incessabili voce proclamant
+        [(15, 19), (26, 26)],        # tibi caeli et universae potestates … proclamant
+        [(20, 26)],                  # tibi Cherubim et Seraphim incessabili voce proclamant:
+        [(27, 32)],                  # Sanctus, Sanctus, Sanctus Dominus Deus Sabaoth. (já é card)
+        [(33, 40)],                  # Pleni sunt caeli et terra maiestatis gloriae tuae.
+    ],
+    'liturgia-das-horas/te-deum-parte-2': [
+        [(0, 3), (11, 11)],          # Te gloriosus Apostolorum chorus … laudat
+        [(4, 7), (11, 11)],          # te Prophetarum laudabilis numerus … laudat
+        [(8, 12)],                   # te Martyrum candidatus laudat exercitus.
+        [(13, 19)],                  # Te per orbem terrarum sancta confitetur Ecclesia,
+        [(13, 13), (18, 22)],        # Te … confitetur Ecclesia, Patrem immensae maiestatis;
+        [(18, 19), (23, 28)],        # confitetur Ecclesia … venerandum tuum verum et unicum Filium;
+        [(18, 19), (29, 32)],        # confitetur Ecclesia … Sanctum quoque Paraclitum Spiritum.
+    ],
+    'liturgia-das-horas/te-deum-parte-3': [
+        [(0, 3)],                    # Tu rex gloriae, Christe.
+        [(4, 8)],                    # Tu Patris sempiternus es Filius.
+        [(9, 17)],                   # Tu, ad liberandum suscepturus hominem, non horruisti Virginis uterum.
+        [(18, 25)],                  # Tu, devicto mortis aculeo, aperuisti credentibus regna caelorum.
+        [(26, 33)],                  # Tu ad dexteram Dei sedes, in gloria Patris.
+        [(34, 37)],                  # Iudex crederis esse venturus.
+        [(38, 47)],                  # Te ergo quaesumus, tuis famulis subveni, quos pretioso sanguine redemisti.
+        [(48, 55)],                  # Aeterna fac cum sanctis tuis in gloria numerari.
+    ],
+    'liturgia-das-horas/te-deum-parte-4': [
+        [(0, 8)],                    # Salvum fac populum tuum, Domine, et benedic hereditati tuae.
+        [(9, 17)],                   # Et rege eos, et extolle illos usque in aeternum.
+        [(18, 22)],                  # Per singulos dies benedicimus te;
+        [(23, 32)],                  # et laudamus nomen tuum in saeculum, et in saeculum saeculi.
+        [(33, 40)],                  # Dignare, Domine, die isto sine peccato nos custodire.
+        [(41, 45)],                  # Miserere nostri, Domine, miserere nostri.
+        [(46, 55)],                  # Fiat misericordia tua, Domine, super nos, quemadmodum speravimus in te.
+        [(56, 63)],                  # In te, Domine, speravi: non confundar in aeternum.
+    ],
 }
 
 FIM = '.;:?!'
 
+MAIUSCULA = {'la-p001', 'la-p012', 'la-p072', 'la-p043', 'la-p054'}
+
 # o arquivo dos trechos dos textos novos (os que ainda não têm card de trecho)
-ARQUIVO_NOVO = '32-trechos-6.json'
+ARQUIVO_NOVO = '46-trechos-11.json'
 
 
 def ler_baralho():
@@ -367,12 +702,15 @@ def palavras_do_verso(verso):
     alinha (a enclítica e o cum colado consomem duas entradas)."""
     fila = list(verso['palavras'])
     saida = []
-    for m in textos.PALAVRA.finditer(verso['la']):
+    ms = list(textos.PALAVRA.finditer(verso['la']))
+    for k, m in enumerate(ms):
         w = m.group(0)
         partes = [fila.pop(0)]
         while partes[0]['w'].lower() != w.lower() and ''.join(x['w'].lstrip('-') for x in partes).lower() != w.lower():
             partes.append(fila.pop(0))
-        if partes[0]['w'].lower() == w.lower() and fila and fila[0]['w'].lower() == w.lower():
+        # a mesma palavra repetida no texto («Sanctus, Sanctus», «fui, fui») é uma entrada cada
+        prox = ms[k + 1].group(0).lower() if k + 1 < len(ms) else None
+        if partes[0]['w'].lower() == w.lower() and fila and fila[0]['w'].lower() == w.lower() and prox != w.lower():
             partes.append(fila.pop(0))
         saida.append((m.start(), m.end(), w, partes))
     if fila:
@@ -432,7 +770,9 @@ def montar_trecho(tid, versos, intervalos, cards):
                 entre = re.sub(r'\s+', ' ', entre)
             antes = (trecho + entre).rstrip()
             comeco_de_verso = ini == 0 or not versos[nv - 1]['la'][:ini].strip()
-            proprio = any(not x.get('c') or (cards.get(x['c'], {}).get('la') or 'a')[0].isupper() for x in partes[:1])
+            # Deus, Dominus e as Pessoas divinas (Pater, Filius, Spiritus) guardam a maiúscula no começo
+            # do verso (Missa: «Benedicat vos omnipotens Deus, Pater, et Filius…»)
+            proprio = any(not x.get('c') or x.get('c') in MAIUSCULA or (cards.get(x['c'], {}).get('la') or 'a')[0].isupper() for x in partes[:1])
             if comeco_de_verso and n != intervalos[0][0] and not proprio and w[0].isupper() and (not antes or antes[-1] not in FIM):
                 w = w[0].lower() + w[1:]
                 partes = [dict(partes[0], w=partes[0]['w'][0].lower() + partes[0]['w'][1:])] + partes[1:]

@@ -1,0 +1,494 @@
+{
+ "id": "ovidio/in-nova-fert-animus",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "In nova fert animus",
+ "autor": "Ovídio",
+ "ano": null,
+ "biblioteca": "/biblioteca/ovidio/metamorfoses-i/",
+ "ordem": 70,
+ "fonte": "Metamorfoses, I,1–4",
+ "blocos": [
+  [
+   {
+    "t": "In nova fert animus mutatas dicere formas",
+    "p": [
+     [
+      "In",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nova",
+      "nova"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "fert",
+      "fert"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "animus",
+      "animus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mutatas",
+      "mutatas"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dicere",
+      "dicere"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "formas",
+      "formas"
+     ]
+    ],
+    "flexoes": [
+     "la-v687",
+     "la-v1598",
+     "la-v1579",
+     "la-v298",
+     "la-v1704"
+    ]
+   },
+   {
+    "t": "corpora; di, coeptis (nam vos mutastis et illas)",
+    "p": [
+     [
+      "corpora",
+      "corpora"
+     ],
+     [
+      "; ",
+      null
+     ],
+     [
+      "di",
+      "di"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "coeptis",
+      "coeptis"
+     ],
+     [
+      " (",
+      null
+     ],
+     [
+      "nam",
+      "nam"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vos",
+      "vos"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mutastis",
+      "mutastis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "illas",
+      "illas"
+     ],
+     [
+      ")",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v465",
+     "la-v005",
+     "la-v1626",
+     "la-v1578",
+     "la-v458"
+    ]
+   },
+   {
+    "t": "adspirate meis primaque ab origine mundi",
+    "p": [
+     [
+      "adspirate",
+      "adspirate"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "meis",
+      "meis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "primaque",
+      "primaque"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ab",
+      "ab"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "origine",
+      "origine"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mundi",
+      "mundi"
+     ]
+    ],
+    "flexoes": [
+     "la-v1705",
+     "la-v060",
+     "la-v1541",
+     "la-v1706",
+     "la-v136"
+    ]
+   },
+   {
+    "t": "ad mea perpetuum deducite tempora carmen.",
+    "p": [
+     [
+      "ad",
+      "ad"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mea",
+      "mea"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "perpetuum",
+      "perpetuum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "deducite",
+      "deducite"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tempora",
+      "tempora"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "carmen",
+      "carmen"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v057",
+     "la-v1261",
+     "la-v1549",
+     "la-v1538"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "nova": {
+   "lema": "novus",
+   "classe": "adjetivo",
+   "forma": "acusativo neutro plural",
+   "funcao": "depois de in, concorda com corpora: novos",
+   "card": "la-p337",
+   "wiki": "https://en.wiktionary.org/wiki/novus#Latin"
+  },
+  "fert": {
+   "lema": "fero",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "leva, impele",
+   "card": "la-p997",
+   "wiki": "https://en.wiktionary.org/wiki/fero#Latin"
+  },
+  "animus": {
+   "lema": "animus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de fert: o ânimo",
+   "card": "la-p249",
+   "wiki": "https://en.wiktionary.org/wiki/animus#Latin"
+  },
+  "mutatas": {
+   "lema": "muto",
+   "classe": "verbo",
+   "forma": "particípio perfeito, acusativo feminino plural",
+   "funcao": "concorda com formas: mudadas",
+   "card": "la-p941",
+   "wiki": "https://en.wiktionary.org/wiki/muto#Latin"
+  },
+  "dicere": {
+   "lema": "dico",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "depende de fert: cantar",
+   "card": "la-p122",
+   "wiki": "https://en.wiktionary.org/wiki/dico#Latin"
+  },
+  "formas": {
+   "lema": "forma",
+   "classe": "substantivo feminino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de dicere: as formas",
+   "card": "la-p1140",
+   "wiki": "https://en.wiktionary.org/wiki/forma#Latin"
+  },
+  "corpora": {
+   "lema": "corpus",
+   "classe": "substantivo neutro",
+   "forma": "acusativo plural",
+   "funcao": "depois de in nova: em corpos (novos)",
+   "card": "la-p063",
+   "wiki": "https://en.wiktionary.org/wiki/corpus#Latin"
+  },
+  "di": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "vocativo plural",
+   "funcao": "a quem se fala: deuses",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "coeptis": {
+   "lema": "coepi",
+   "classe": "verbo",
+   "forma": "particípio perfeito, dativo neutro plural",
+   "funcao": "substantivado, com adspirate: às empresas (ao que comecei)",
+   "card": "la-p1025",
+   "wiki": "https://en.wiktionary.org/wiki/coepi#Latin"
+  },
+  "nam": {
+   "lema": "nam",
+   "classe": "conjunção",
+   "funcao": "pois",
+   "card": "la-p1141",
+   "wiki": "https://en.wiktionary.org/wiki/nam#Latin"
+  },
+  "vos": {
+   "lema": "vos",
+   "classe": "pronome",
+   "forma": "nominativo plural",
+   "funcao": "sujeito de mutastis: vós",
+   "card": "la-p049",
+   "wiki": "https://en.wiktionary.org/wiki/vos#Latin"
+  },
+  "mutastis": {
+   "lema": "muto",
+   "classe": "verbo",
+   "forma": "perfeito do indicativo, 2ª pessoa do plural",
+   "funcao": "forma curta de mutavistis: mudastes",
+   "card": "la-p941",
+   "wiki": "https://en.wiktionary.org/wiki/muto#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "funcao": "também",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "illas": {
+   "lema": "ille",
+   "classe": "pronome",
+   "forma": "acusativo feminino plural",
+   "funcao": "objeto de mutastis: elas (as formas)",
+   "card": "la-p215",
+   "wiki": "https://en.wiktionary.org/wiki/ille#Latin"
+  },
+  "adspirate": {
+   "lema": "aspiro",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do plural",
+   "funcao": "soprai a favor",
+   "card": "la-p1142",
+   "wiki": "https://en.wiktionary.org/wiki/aspiro#Latin"
+  },
+  "meis": {
+   "lema": "meus",
+   "classe": "adjetivo",
+   "forma": "dativo neutro plural",
+   "funcao": "concorda com coeptis: minhas",
+   "card": "la-p013",
+   "wiki": "https://en.wiktionary.org/wiki/meus#Latin"
+  },
+  "primaque": {
+   "partes": [
+    {
+     "lema": "primus",
+     "classe": "adjetivo",
+     "forma": "ablativo feminino singular",
+     "funcao": "concorda com origine: primeira",
+     "card": "la-p209",
+     "wiki": "https://en.wiktionary.org/wiki/primus#Latin"
+    },
+    {
+     "lema": "-que",
+     "classe": "conjunção",
+     "funcao": "liga deducite a adspirate: e",
+     "card": "la-p028",
+     "wiki": "https://en.wiktionary.org/wiki/-que#Latin"
+    }
+   ]
+  },
+  "ab": {
+   "lema": "ab",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p108",
+   "wiki": "https://en.wiktionary.org/wiki/ab#Latin"
+  },
+  "origine": {
+   "lema": "origo",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "depois de ab: desde a origem",
+   "card": "la-p1143",
+   "wiki": "https://en.wiktionary.org/wiki/origo#Latin"
+  },
+  "mundi": {
+   "lema": "mundus",
+   "classe": "substantivo masculino",
+   "forma": "genitivo singular",
+   "funcao": "de quê: do mundo",
+   "card": "la-p042",
+   "wiki": "https://en.wiktionary.org/wiki/mundus#Latin"
+  },
+  "ad": {
+   "lema": "ad",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p178",
+   "wiki": "https://en.wiktionary.org/wiki/ad#Latin"
+  },
+  "mea": {
+   "lema": "meus",
+   "classe": "adjetivo",
+   "forma": "acusativo neutro plural",
+   "funcao": "concorda com tempora: meus",
+   "card": "la-p013",
+   "wiki": "https://en.wiktionary.org/wiki/meus#Latin"
+  },
+  "perpetuum": {
+   "lema": "perpetuus",
+   "classe": "adjetivo",
+   "forma": "acusativo neutro singular",
+   "funcao": "concorda com carmen: contínuo",
+   "card": "la-p361",
+   "wiki": "https://en.wiktionary.org/wiki/perpetuus#Latin"
+  },
+  "deducite": {
+   "lema": "deduco",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do plural",
+   "funcao": "conduzi",
+   "card": "la-p318",
+   "wiki": "https://en.wiktionary.org/wiki/deduco#Latin"
+  },
+  "tempora": {
+   "lema": "tempus",
+   "classe": "substantivo neutro",
+   "forma": "acusativo plural",
+   "funcao": "depois de ad: até os tempos",
+   "card": "la-p126",
+   "wiki": "https://en.wiktionary.org/wiki/tempus#Latin"
+  },
+  "carmen": {
+   "lema": "carmen",
+   "classe": "substantivo neutro",
+   "forma": "acusativo singular",
+   "funcao": "objeto de deducite: o canto",
+   "card": "la-p317",
+   "wiki": "https://en.wiktionary.org/wiki/carmen#Latin"
+  }
+ }
+}

@@ -1,0 +1,416 @@
+{
+ "id": "missal-romano/ite-missa-est",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Ite, missa est",
+ "autor": "Missal Romano",
+ "ano": null,
+ "biblioteca": null,
+ "ordem": 58,
+ "fonte": "Ritos finais da Missa",
+ "blocos": [
+  [
+   {
+    "t": "Dominus vobiscum.",
+    "p": [
+     [
+      "Dominus",
+      "dominus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vobiscum",
+      "vobiscum"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v149"
+    ]
+   },
+   {
+    "t": "Et cum spiritu tuo.",
+    "p": [
+     [
+      "Et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "cum",
+      "cum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "spiritu",
+      "spiritu"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tuo",
+      "tuo"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v153",
+     "la-v769"
+    ]
+   },
+   {
+    "t": "Benedicat vos omnipotens Deus,",
+    "p": [
+     [
+      "Benedicat",
+      "benedicat"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vos",
+      "vos"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "omnipotens",
+      "omnipotens"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Deus",
+      "deus"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v252"
+    ]
+   },
+   {
+    "t": "Pater, et Filius, et Spiritus Sanctus.",
+    "p": [
+     [
+      "Pater",
+      "pater"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Filius",
+      "filius"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Spiritus",
+      "spiritus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Sanctus",
+      "sanctus"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "Amen.",
+    "p": [
+     [
+      "Amen",
+      "amen"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "Ite, missa est.",
+    "p": [
+     [
+      "Ite",
+      "ite"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "missa",
+      "missa"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "est",
+      "est"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1448",
+     "la-v1392",
+     "la-v010"
+    ]
+   },
+   {
+    "t": "Deo gratias.",
+    "p": [
+     [
+      "Deo",
+      "deo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "gratias",
+      "gratias"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v002",
+     "la-v1361"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "dominus": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito: esteja",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "vobiscum": {
+   "partes": [
+    {
+     "lema": "vos",
+     "classe": "pronome",
+     "forma": "ablativo plural",
+     "funcao": "depois de cum: convosco",
+     "card": "la-p049",
+     "wiki": "https://en.wiktionary.org/wiki/vos#Latin"
+    },
+    {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "card": "la-p053",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+    }
+   ]
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "cum": {
+   "lema": "cum",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p053",
+   "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+  },
+  "spiritu": {
+   "lema": "spiritus",
+   "classe": "substantivo masculino",
+   "forma": "ablativo singular",
+   "funcao": "com quem",
+   "card": "la-p054",
+   "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin"
+  },
+  "tuo": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "ablativo masculino singular",
+   "funcao": "concorda com spiritu",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  },
+  "benedicat": {
+   "lema": "benedico",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 3ª pessoa do singular",
+   "funcao": "desejo: abençoe",
+   "card": "la-p112",
+   "wiki": "https://en.wiktionary.org/wiki/benedico#Latin"
+  },
+  "vos": {
+   "lema": "vos",
+   "classe": "pronome",
+   "forma": "acusativo plural",
+   "funcao": "objeto de benedicat: vós",
+   "card": "la-p049",
+   "wiki": "https://en.wiktionary.org/wiki/vos#Latin"
+  },
+  "omnipotens": {
+   "lema": "omnipotens",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com Deus: todo-poderoso",
+   "card": "la-p428",
+   "wiki": "https://en.wiktionary.org/wiki/omnipotens#Latin"
+  },
+  "deus": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de benedicat",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "pater": {
+   "lema": "pater",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "aposto de Deus: o Pai",
+   "card": "la-p072",
+   "wiki": "https://en.wiktionary.org/wiki/pater#Latin"
+  },
+  "filius": {
+   "lema": "filius",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "o Filho",
+   "card": "la-p043",
+   "wiki": "https://en.wiktionary.org/wiki/filius#Latin"
+  },
+  "spiritus": {
+   "lema": "spiritus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "o Espírito",
+   "card": "la-p054",
+   "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin"
+  },
+  "sanctus": {
+   "lema": "sanctus",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com Spiritus",
+   "card": "la-p084",
+   "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin"
+  },
+  "amen": {
+   "lema": "amen",
+   "classe": "interjeição",
+   "g": "gramatical",
+   "def": [
+    "Amém: assim seja. Palavra hebraica que fecha a oração."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/amen#Latin"
+  },
+  "ite": {
+   "lema": "eo",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do plural",
+   "funcao": "ide",
+   "card": "la-p977",
+   "wiki": "https://en.wiktionary.org/wiki/eo#Latin"
+  },
+  "missa": {
+   "lema": "mitto",
+   "classe": "verbo",
+   "forma": "particípio perfeito, nominativo feminino singular",
+   "funcao": "com est: está despedida (a assembleia)",
+   "card": "la-p706",
+   "wiki": "https://en.wiktionary.org/wiki/mitto#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "com missa: perfeito passivo",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "deo": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "funcao": "a quem: a Deus",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "gratias": {
+   "lema": "gratia",
+   "classe": "substantivo feminino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de agimus, subentendido: graças",
+   "card": "la-p050",
+   "wiki": "https://en.wiktionary.org/wiki/gratia#Latin"
+  }
+ }
+}

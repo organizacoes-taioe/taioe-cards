@@ -37,7 +37,7 @@ import formas  # noqa: E402
 AQUI = Path(__file__).resolve().parent
 BARALHO = AQUI.parent / 'cards' / 'la'
 SAIDA = BARALHO / '07-formas.json'
-FONTES = ['03-texto-zero.json', '04-trechos.json', '09-trechos-2.json', '14-trechos-3.json', '22-trechos-4.json', '29-trechos-5.json', '32-trechos-6.json']
+FONTES = ['03-texto-zero.json', '04-trechos.json', '09-trechos-2.json', '14-trechos-3.json', '22-trechos-4.json', '29-trechos-5.json', '32-trechos-6.json', '37-trechos-8.json', '40-trechos-9.json', '43-trechos-10.json', '46-trechos-11.json']
 CORTE = 2.0
 
 CASOS = {'nominative': 'nominativo', 'vocative': 'vocativo', 'accusative': 'acusativo',

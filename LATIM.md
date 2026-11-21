@@ -1045,3 +1045,68 @@ lingua*. O *Pater Noster* já estava (21/10).
   `glossario_textos.py`. Scripts auxiliares em `~/.cache/poemas-1611/la/` (só neste PC).
 - Sem frase de uso (sem candidata no corpus): basium, aequor, veho, inferiae, nequiquam, adloquor, necto,
   philyra, rosa, allaboro, mano, myrtus, serus, malus, secundus.
+
+## 21. Liturgia de hoje e mais textos curtos fora da liturgia (pedido de 19/11/2026)
+Pedido do Gere: «os principais trechos da liturgia romana atual que se repetem diariamente ou quase
+diariamente; mais alguns poemas e textos curtos não religiosos. […] que tenha bastantes textos, de modo
+que sempre tenha algum que falte poucas palavras para que eu seja capaz de lê-lo por inteiro». Contraproposta
+aprovada no mesmo dia, com as cinco recomendações:
+- **D53. Texto oficial de hoje**: o Ordinário da Missa do *Missale Romanum* (3ª ed. típica, 2002/2008) e as
+  partes fixas da *Liturgia Horarum*, com os salmos e cânticos pela Nova Vulgata (como no Salmo II, §19),
+  e não pela Clementina (D1).
+- **D54. Oração Eucarística II inteira fica de fora** (composta em 1968, direitos da LEV): só o que é comum a
+  todas, a consagração, o *Mysterium fidei* com as três aclamações e o *Per ipsum*.
+- **D55. Três levas**, cada uma com commit: (1) os textos não religiosos curtos e os diálogos curtos da
+  Missa; (2) o resto da Missa; (3) as Horas.
+- **D56. Só por escolha**, como os poemas de 16/11. O latim não tem fila automática (a pessoa escolhe de 1 a
+  3 textos), e a tela Textos já põe primeiro o que tem menos palavras faltando: os curtos sobem sozinhos.
+- **D57. Na Biblioteca, só os clássicos** (Literatura → Latim). A liturgia fica **só nos Cards** (o Gere, 19/11:
+  «esses trechos da liturgia não precisam entrar na biblioteca, podem ser acessíveis apenas pelos cards
+  mesmo»): no `TEXTOS` do `textos.py`, `'biblioteca': None`, e o app não mostra o link (o build aceita texto
+  sem `biblioteca`).
+- Muitos textos curtos de propósito: a tela Textos já põe primeiro o que tem menos palavras faltando.
+- Fora: o *Kyrie* (grego), como no responso; o nome do evangelista no «Lectio sancti Evangelii secundum…»
+  fica Matthaeum.
+
+### 21.1. O que entrou (19 e 20/11, branch `latim-1911`, cards e biblioteca)
+| leva | textos (`ordem`) | palavras | trechos | usos | flexões |
+|---|---|---|---|---|---|
+| 1a | Marcial ×9, Catulo 70, Publílio Siro (3 partes), *Admiror, paries*, 7 diálogos da Missa (38–58) | p880–977 | t463–529 | u635–718 | v1355–1526 |
+| 1b | Fedro ×4, *Gaudeamus*, *O Fortuna* (3), César, Cícero, Sêneca, Ovídio (59–70) | p978–1143 | t530–595 | u719–825 | v1527–1802 |
+| 2 | Missa: *Confiteor* ao *Ecce Agnus Dei*, 12 textos (71–82) | p1144–1203 | t596–668 | u826–872 | v1803–1946 |
+| 3 | Horas: *Deus in adiutorium*, *Venite*, *Benedictus*, *Magnificat*, *Nunc dimittis*, *Salve Regina*, *Te Deum* (83–97) | p1204–1295 | t669–765 | u873–924 | v1947–2162 |
+
+- Arquivos `36`–`47` (`palavras-8`…`11`, `trechos-8`…`11`, `usos-h`…`k`). Os ids p720–879, t315–462 e os
+  arquivos `34`/`35` ficam com a leva B das orações (branch parada `latim-oracoes-b`). Ela tem card próprio de
+  21 lemas que estas levas também fizeram (enim, ratio, nullus, consilium, alius, luna, servo…): ao retomá-la,
+  usar os daqui e apagar os dela.
+- Biblioteca: os 21 clássicos em Literatura → Latim (biblioteca branch `latim-1911`), com os autores novos
+  Publílio Siro, Inscrições, Carmina Burana, César, Cícero e «Canções estudantis» (o *Gaudeamus*: o
+  «Anônimo» é do Catolicismo). Sêneca já era da Não-ficção, e a carta ficou lá. O Ovídio aponta para
+  `ovidio/metamorfoses-i` (o Livro I inteiro, já publicado).
+- Leituras escolhidas (o Gere pode mudar): *Habemus ad Dominum* «Temo-los no Senhor», aceitando «O nosso
+  coração está em Deus»; *corde pulsum tangite* «tocai o pulsar das cordas» (*corde* = *chordae*); *affectus et
+  defectus* substantivos; *aeterna… numerari* (não *munerari*); na Missa, a tradução gramatical com a forma
+  litúrgica do Brasil no gabarito; o *Per ipsum* em 3 trechos.
+
+### 21.2. A receita do §20, com o que estas levas acrescentaram
+- Scripts da última leva em `~/.cache/latim-1911/leva3/` (só neste PC); `restaurar.py` devolve do HEAD os
+  cards antigos que os scripts mudaram. **Commit antes de restaurar**, e só passar arquivos antigos (com um
+  arquivo novo já commitado ele desfaz os radicais e as correções dos cards novos).
+- Devolver do HEAD também: as 58 flexões da 1a que o `radicais.py` muda a cada rodada (la-v733…),
+  `19-declinacoes` e `01-conceitos` (o `cards_de_forma.py` só reordena), e tirar os cards de forma novos que
+  ele cria para frases de uso antigas.
+- O `cortes.py gravar` não grava a leva em `cache/levas/`: copiar os trechos para `cortes-<leva>.json`,
+  montar `analise-frases-<n>.json` e pôr as regências em `analise-verbos.json` (`leva1b/regencias.py`).
+  O `cortes.py` não vê as primeiras frases (la-f…): linha que já é la-f vai junto com a seguinte.
+- `candidatos-uso.json` é indexado pelo id do card (homógrafos). Frase de uso tirada depois do `montar.py` ou
+  do `flexoes.py gravar`: refazer, renumerar e apagar a flexão órfã também em `cache/levas`. Conferir que a frase
+  de uso não é a própria linha do texto nem usa o sentido que o card dá como falso amigo.
+- Pergunta de compreensão com a certa bem mais longa que as erradas barra o build: pedir erradas do mesmo
+  tamanho. A enclítica `-que` anotada leva o id `la-p028`.
+- Tempo neste notebook: `cards_de_forma.py` ~30 min, `buscar.py` ~8, `testar-latim.js` ~16–25.
+- `simular-latim.js`: o primeiro verso varia de 420 a 900 com a semente; comparar a média de 10 sementes
+  (~530 depois da leva 3).
+- Biblioteca: `glossario_textos.py` partia «fui, fui» (cópia corrigida em
+  `~/.cache/latim-1911/bib-rascunho/`); «in» e «si» saem malformados do «pt» dos cards e pedem acerto à mão; o
+  `gerar.mjs` ganhou rótulos de prosa (História, Discursos, Cartas).

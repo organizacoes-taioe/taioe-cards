@@ -1,0 +1,549 @@
+{
+ "id": "carmina-burana/o-fortuna-parte-3",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "O Fortuna",
+ "autor": "Carmina Burana",
+ "ano": null,
+ "biblioteca": "/biblioteca/carmina-burana/o-fortuna/",
+ "ordem": 66,
+ "fonte": "Carmina Burana, 17",
+ "obra": "carmina-burana/o-fortuna",
+ "parte": 3,
+ "trecho": "parte 3",
+ "blocos": [
+  [
+   {
+    "t": "Sors salutis",
+    "p": [
+     [
+      "Sors",
+      "sors"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "salutis",
+      "salutis"
+     ]
+    ],
+    "flexoes": [
+     "la-v1561"
+    ]
+   },
+   {
+    "t": "et virtutis",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "virtutis",
+      "virtutis"
+     ]
+    ],
+    "flexoes": [
+     "la-v1477"
+    ]
+   },
+   {
+    "t": "mihi nunc contraria,",
+    "p": [
+     [
+      "mihi",
+      "mihi"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nunc",
+      "nunc"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "contraria",
+      "contraria"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v042",
+     "la-v1681"
+    ]
+   },
+   {
+    "t": "est affectus",
+    "p": [
+     [
+      "est",
+      "est"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "affectus",
+      "affectus"
+     ]
+    ],
+    "flexoes": [
+     "la-v010"
+    ]
+   },
+   {
+    "t": "et defectus",
+    "p": [
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "defectus",
+      "defectus"
+     ]
+    ]
+   },
+   {
+    "t": "semper in angaria.",
+    "p": [
+     [
+      "semper",
+      "semper"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "angaria",
+      "angaria"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   },
+   {
+    "t": "Hac in hora",
+    "p": [
+     [
+      "Hac",
+      "hac"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "hora",
+      "hora"
+     ]
+    ],
+    "flexoes": [
+     "la-v308"
+    ]
+   },
+   {
+    "t": "sine mora",
+    "p": [
+     [
+      "sine",
+      "sine"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mora",
+      "mora"
+     ]
+    ]
+   },
+   {
+    "t": "corde pulsum tangite;",
+    "p": [
+     [
+      "corde",
+      "corde"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "pulsum",
+      "pulsum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tangite",
+      "tangite"
+     ],
+     [
+      ";",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1682",
+     "la-v1683",
+     "la-v1532"
+    ]
+   },
+   {
+    "t": "quod per sortem",
+    "p": [
+     [
+      "quod",
+      "quod"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "per",
+      "per"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "sortem",
+      "sortem"
+     ]
+    ],
+    "flexoes": [
+     "la-v1676"
+    ]
+   },
+   {
+    "t": "sternit fortem,",
+    "p": [
+     [
+      "sternit",
+      "sternit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "fortem",
+      "fortem"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1684",
+     "la-v1685"
+    ]
+   },
+   {
+    "t": "mecum omnes plangite!",
+    "p": [
+     [
+      "mecum",
+      "mecum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "omnes",
+      "omnes"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "plangite",
+      "plangite"
+     ],
+     [
+      "!",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v043",
+     "la-v074",
+     "la-v1686"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "sors": {
+   "lema": "sors",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de est (subentendido): a sorte",
+   "card": "la-p1093",
+   "wiki": "https://en.wiktionary.org/wiki/sors#Latin"
+  },
+  "salutis": {
+   "lema": "salus",
+   "classe": "substantivo feminino",
+   "forma": "genitivo singular",
+   "funcao": "de quê: da saúde",
+   "card": "la-p462",
+   "wiki": "https://en.wiktionary.org/wiki/salus#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "virtutis": {
+   "lema": "virtus",
+   "classe": "substantivo feminino",
+   "forma": "genitivo singular",
+   "funcao": "de quê: da virtude",
+   "card": "la-p570",
+   "wiki": "https://en.wiktionary.org/wiki/virtus#Latin"
+  },
+  "mihi": {
+   "lema": "ego",
+   "classe": "pronome",
+   "forma": "dativo singular",
+   "funcao": "com contraria: a mim",
+   "card": "la-p004",
+   "wiki": "https://en.wiktionary.org/wiki/ego#Latin"
+  },
+  "nunc": {
+   "lema": "nunc",
+   "classe": "advérbio",
+   "card": "la-p086",
+   "wiki": "https://en.wiktionary.org/wiki/nunc#Latin"
+  },
+  "contraria": {
+   "lema": "contrarius",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "predicativo de sors: contrária",
+   "card": "la-p1104",
+   "wiki": "https://en.wiktionary.org/wiki/contrarius#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "affectus": {
+   "lema": "affectus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de est: o ânimo",
+   "card": "la-p1105",
+   "wiki": "https://en.wiktionary.org/wiki/affectus#Latin"
+  },
+  "defectus": {
+   "lema": "defectus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de est: a fraqueza",
+   "card": "la-p567",
+   "wiki": "https://en.wiktionary.org/wiki/defectus#Latin"
+  },
+  "semper": {
+   "lema": "semper",
+   "classe": "advérbio",
+   "card": "la-p087",
+   "wiki": "https://en.wiktionary.org/wiki/semper#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "angaria": {
+   "lema": "angaria",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "depois de in: em servidão",
+   "card": "la-p1106",
+   "wiki": "https://en.wiktionary.org/wiki/angaria#Latin"
+  },
+  "hac": {
+   "lema": "hic",
+   "classe": "pronome",
+   "forma": "ablativo feminino singular",
+   "funcao": "concorda com hora: nesta",
+   "card": "la-p124",
+   "wiki": "https://en.wiktionary.org/wiki/hic#Latin"
+  },
+  "hora": {
+   "lema": "hora",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "depois de in: hora",
+   "card": "la-p118",
+   "wiki": "https://en.wiktionary.org/wiki/hora#Latin"
+  },
+  "sine": {
+   "lema": "sine",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p918",
+   "wiki": "https://en.wiktionary.org/wiki/sine#Latin"
+  },
+  "mora": {
+   "lema": "mora",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "depois de sine: sem demora",
+   "card": "la-p537",
+   "wiki": "https://en.wiktionary.org/wiki/mora#Latin"
+  },
+  "corde": {
+   "lema": "chorda",
+   "classe": "substantivo feminino",
+   "forma": "genitivo singular",
+   "funcao": "grafia medieval de chordae: da corda",
+   "card": "la-p1107",
+   "wiki": "https://en.wiktionary.org/wiki/chorda#Latin"
+  },
+  "pulsum": {
+   "lema": "pulsus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo singular",
+   "funcao": "objeto de tangite: o pulsar",
+   "card": "la-p1108",
+   "wiki": "https://en.wiktionary.org/wiki/pulsus#Latin"
+  },
+  "tangite": {
+   "lema": "tango",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do plural",
+   "funcao": "tocai",
+   "card": "la-p035",
+   "wiki": "https://en.wiktionary.org/wiki/tango#Latin"
+  },
+  "quod": {
+   "lema": "quod",
+   "classe": "conjunção",
+   "funcao": "porque",
+   "card": "la-p1112",
+   "wiki": "https://en.wiktionary.org/wiki/quod#Latin"
+  },
+  "per": {
+   "lema": "per",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p427",
+   "wiki": "https://en.wiktionary.org/wiki/per#Latin"
+  },
+  "sortem": {
+   "lema": "sors",
+   "classe": "substantivo feminino",
+   "forma": "acusativo singular",
+   "funcao": "depois de per: pela sorte",
+   "card": "la-p1093",
+   "wiki": "https://en.wiktionary.org/wiki/sors#Latin"
+  },
+  "sternit": {
+   "lema": "sterno",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "(a Fortuna) derruba",
+   "card": "la-p1109",
+   "wiki": "https://en.wiktionary.org/wiki/sterno#Latin"
+  },
+  "fortem": {
+   "lema": "fortis",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino singular",
+   "funcao": "substantivado, objeto de sternit: o forte",
+   "card": "la-p1110",
+   "wiki": "https://en.wiktionary.org/wiki/fortis#Latin"
+  },
+  "mecum": {
+   "partes": [
+    {
+     "lema": "ego",
+     "classe": "pronome",
+     "forma": "ablativo singular",
+     "funcao": "depois de cum",
+     "card": "la-p004",
+     "wiki": "https://en.wiktionary.org/wiki/ego#Latin"
+    },
+    {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "card": "la-p053",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+    }
+   ]
+  },
+  "omnes": {
+   "lema": "omnis",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino plural",
+   "funcao": "sujeito de plangite: todos",
+   "card": "la-p019",
+   "wiki": "https://en.wiktionary.org/wiki/omnis#Latin"
+  },
+  "plangite": {
+   "lema": "plango",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do plural",
+   "funcao": "chorai",
+   "card": "la-p1111",
+   "wiki": "https://en.wiktionary.org/wiki/plango#Latin"
+  }
+ }
+}

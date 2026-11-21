@@ -1,0 +1,490 @@
+{
+ "id": "catulo/nulli-se-dicit",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Nulli se dicit",
+ "autor": "Catulo",
+ "ano": null,
+ "biblioteca": "/biblioteca/catulo/nulli-se-dicit/",
+ "ordem": 47,
+ "fonte": "Poemas, 70",
+ "blocos": [
+  [
+   {
+    "t": "Nulli se dicit mulier mea nubere malle",
+    "p": [
+     [
+      "Nulli",
+      "nulli"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "se",
+      "se"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dicit",
+      "dicit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mulier",
+      "mulier"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mea",
+      "mea"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nubere",
+      "nubere"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "malle",
+      "malle"
+     ]
+    ],
+    "flexoes": [
+     "la-v1410",
+     "la-v1011",
+     "la-v299",
+     "la-v057",
+     "la-v1416",
+     "la-v1417"
+    ]
+   },
+   {
+    "t": "quam mihi, non si se Iuppiter ipse petat.",
+    "p": [
+     [
+      "quam",
+      "quam"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mihi",
+      "mihi"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "non",
+      "non"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "si",
+      "si"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "se",
+      "se#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Iuppiter",
+      "iuppiter"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ipse",
+      "ipse"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "petat",
+      "petat"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v042",
+     "la-v1011",
+     "la-v1376"
+    ]
+   },
+   {
+    "t": "Dicit: sed mulier cupido quod dicit amanti,",
+    "p": [
+     [
+      "Dicit",
+      "dicit"
+     ],
+     [
+      ": ",
+      null
+     ],
+     [
+      "sed",
+      "sed"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mulier",
+      "mulier"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "cupido",
+      "cupido"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "quod",
+      "quod"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "dicit",
+      "dicit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "amanti",
+      "amanti"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v299",
+     "la-v1418",
+     "la-v173",
+     "la-v1359"
+    ]
+   },
+   {
+    "t": "in vento et rapida scribere oportet aqua.",
+    "p": [
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vento",
+      "vento"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "rapida",
+      "rapida"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "scribere",
+      "scribere"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "oportet",
+      "oportet"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "aqua",
+      "aqua"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1419",
+     "la-v1420",
+     "la-v1403"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "nulli": {
+   "lema": "nullus",
+   "classe": "adjetivo",
+   "forma": "dativo masculino singular",
+   "funcao": "com nubere, com quem: a nenhum",
+   "card": "la-p908",
+   "wiki": "https://en.wiktionary.org/wiki/nullus#Latin"
+  },
+  "se": {
+   "lema": "sui",
+   "classe": "pronome",
+   "forma": "acusativo singular",
+   "funcao": "sujeito de malle (oração infinitiva): ela",
+   "card": "la-p483",
+   "wiki": "https://en.wiktionary.org/wiki/sui#Latin"
+  },
+  "dicit": {
+   "lema": "dico",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "diz",
+   "card": "la-p122",
+   "wiki": "https://en.wiktionary.org/wiki/dico#Latin"
+  },
+  "mulier": {
+   "lema": "mulier",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de dicit: a mulher",
+   "card": "la-p113",
+   "wiki": "https://en.wiktionary.org/wiki/mulier#Latin"
+  },
+  "mea": {
+   "lema": "meus",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "concorda com mulier: minha",
+   "card": "la-p013",
+   "wiki": "https://en.wiktionary.org/wiki/meus#Latin"
+  },
+  "nubere": {
+   "lema": "nubo",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "depende de malle: casar-se",
+   "card": "la-p919",
+   "wiki": "https://en.wiktionary.org/wiki/nubo#Latin"
+  },
+  "malle": {
+   "lema": "malo",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "oração infinitiva, com se: preferir",
+   "card": "la-p920",
+   "wiki": "https://en.wiktionary.org/wiki/malo#Latin"
+  },
+  "quam": {
+   "lema": "quam",
+   "classe": "advérbio",
+   "funcao": "depois de malle: do que",
+   "card": "la-p276",
+   "wiki": "https://en.wiktionary.org/wiki/quam#Latin"
+  },
+  "mihi": {
+   "lema": "ego",
+   "classe": "pronome",
+   "forma": "dativo singular",
+   "funcao": "com nubere, subentendido: comigo",
+   "card": "la-p004",
+   "wiki": "https://en.wiktionary.org/wiki/ego#Latin"
+  },
+  "non": {
+   "lema": "non",
+   "classe": "advérbio",
+   "card": "la-p066",
+   "wiki": "https://en.wiktionary.org/wiki/non#Latin"
+  },
+  "si": {
+   "lema": "si",
+   "classe": "conjunção",
+   "card": "la-p154",
+   "wiki": "https://en.wiktionary.org/wiki/si#Latin"
+  },
+  "se#2": {
+   "lema": "sui",
+   "classe": "pronome",
+   "forma": "acusativo singular",
+   "funcao": "objeto de petat: a ela",
+   "card": "la-p483",
+   "wiki": "https://en.wiktionary.org/wiki/sui#Latin"
+  },
+  "iuppiter": {
+   "lema": "Iuppiter",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Júpiter, o rei dos deuses."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/Iuppiter#Latin",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de petat"
+  },
+  "ipse": {
+   "lema": "ipse",
+   "classe": "pronome",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com Iuppiter: em pessoa",
+   "card": "la-p587",
+   "wiki": "https://en.wiktionary.org/wiki/ipse#Latin"
+  },
+  "petat": {
+   "lema": "peto",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 3ª pessoa do singular",
+   "funcao": "depois de si: pedisse",
+   "card": "la-p373",
+   "wiki": "https://en.wiktionary.org/wiki/peto#Latin"
+  },
+  "sed": {
+   "lema": "sed",
+   "classe": "conjunção",
+   "card": "la-p107",
+   "wiki": "https://en.wiktionary.org/wiki/sed#Latin"
+  },
+  "cupido": {
+   "lema": "cupidus",
+   "classe": "adjetivo",
+   "forma": "dativo masculino singular",
+   "funcao": "concorda com amanti: apaixonado",
+   "card": "la-p921",
+   "wiki": "https://en.wiktionary.org/wiki/cupidus#Latin"
+  },
+  "quod": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "acusativo neutro singular",
+   "funcao": "objeto de dicit: o que",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "amanti": {
+   "lema": "amo",
+   "classe": "verbo",
+   "forma": "particípio presente, dativo masculino singular",
+   "funcao": "a quem: ao amante",
+   "card": "la-p037",
+   "wiki": "https://en.wiktionary.org/wiki/amo#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "vento": {
+   "lema": "ventus",
+   "classe": "substantivo masculino",
+   "forma": "ablativo singular",
+   "funcao": "depois de in: no vento",
+   "card": "la-p922",
+   "wiki": "https://en.wiktionary.org/wiki/ventus#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "rapida": {
+   "lema": "rapidus",
+   "classe": "adjetivo",
+   "forma": "ablativo feminino singular",
+   "funcao": "concorda com aqua: corrente",
+   "card": "la-p923",
+   "wiki": "https://en.wiktionary.org/wiki/rapidus#Latin"
+  },
+  "scribere": {
+   "lema": "scribo",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "sujeito de oportet: escrever",
+   "card": "la-p900",
+   "wiki": "https://en.wiktionary.org/wiki/scribo#Latin"
+  },
+  "oportet": {
+   "lema": "oportet",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "impessoal: é preciso",
+   "card": "la-p924",
+   "wiki": "https://en.wiktionary.org/wiki/oportet#Latin"
+  },
+  "aqua": {
+   "lema": "aqua",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "depois de in: na água",
+   "card": "la-p199",
+   "wiki": "https://en.wiktionary.org/wiki/aqua#Latin"
+  }
+ }
+}

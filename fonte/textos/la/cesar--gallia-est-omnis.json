@@ -1,0 +1,527 @@
+{
+ "id": "cesar/gallia-est-omnis",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Gallia est omnis",
+ "autor": "César",
+ "ano": null,
+ "biblioteca": "/biblioteca/cesar/gallia-est-omnis/",
+ "ordem": 67,
+ "fonte": "Guerra das Gálias, I,1 (começo)",
+ "blocos": [
+  [
+   {
+    "t": "Gallia est omnis divisa in partes tres,",
+    "p": [
+     [
+      "Gallia",
+      "gallia"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "est",
+      "est"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "omnis",
+      "omnis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "divisa",
+      "divisa"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "partes",
+      "partes"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tres",
+      "tres"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v010",
+     "la-v1687",
+     "la-v1546"
+    ]
+   },
+   {
+    "t": "quarum unam incolunt Belgae, aliam Aquitani,",
+    "p": [
+     [
+      "quarum",
+      "quarum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "unam",
+      "unam"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "incolunt",
+      "incolunt"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Belgae",
+      "belgae"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "aliam",
+      "aliam"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Aquitani",
+      "aquitani"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v181",
+     "la-v747",
+     "la-v1688",
+     "la-v1602"
+    ]
+   },
+   {
+    "t": "tertiam qui ipsorum lingua Celtae, nostra Galli appellantur.",
+    "p": [
+     [
+      "tertiam",
+      "tertiam"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "qui",
+      "qui"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ipsorum",
+      "ipsorum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "lingua",
+      "lingua"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Celtae",
+      "celtae"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "nostra",
+      "nostra"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Galli",
+      "galli"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "appellantur",
+      "appellantur"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1560",
+     "la-v171",
+     "la-v1153",
+     "la-v219",
+     "la-v1689"
+    ]
+   },
+   {
+    "t": "Hi omnes lingua, institutis, legibus inter se differunt.",
+    "p": [
+     [
+      "Hi",
+      "hi"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "omnes",
+      "omnes"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "lingua",
+      "lingua"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "institutis",
+      "institutis"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "legibus",
+      "legibus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "inter",
+      "inter"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "se",
+      "se"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "differunt",
+      "differunt"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v309",
+     "la-v074",
+     "la-v1690",
+     "la-v1567",
+     "la-v1011",
+     "la-v1691"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "gallia": {
+   "lema": "Gallia",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "A Gália, a terra dos gauleses (hoje, sobretudo a França e a Bélgica)."
+   ],
+   "forma": "nominativo singular",
+   "funcao": "sujeito de est divisa"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "com divisa: está dividida",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "omnis": {
+   "lema": "omnis",
+   "classe": "adjetivo",
+   "forma": "nominativo feminino singular",
+   "funcao": "concorda com Gallia: toda",
+   "card": "la-p019",
+   "wiki": "https://en.wiktionary.org/wiki/omnis#Latin"
+  },
+  "divisa": {
+   "lema": "divido",
+   "classe": "verbo",
+   "forma": "particípio perfeito, nominativo feminino singular",
+   "funcao": "com est: dividida",
+   "card": "la-p1113",
+   "wiki": "https://en.wiktionary.org/wiki/divido#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "partes": {
+   "lema": "pars",
+   "classe": "substantivo feminino",
+   "forma": "acusativo plural",
+   "funcao": "depois de in: em partes",
+   "card": "la-p297",
+   "wiki": "https://en.wiktionary.org/wiki/pars#Latin"
+  },
+  "tres": {
+   "lema": "tres",
+   "classe": "adjetivo",
+   "forma": "acusativo feminino plural",
+   "funcao": "concorda com partes: três",
+   "card": "la-p1114",
+   "wiki": "https://en.wiktionary.org/wiki/tres#Latin"
+  },
+  "quarum": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "genitivo feminino plural",
+   "funcao": "relativo, retoma partes: das quais",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "unam": {
+   "lema": "unus",
+   "classe": "adjetivo",
+   "forma": "acusativo feminino singular",
+   "funcao": "objeto de incolunt: uma",
+   "card": "la-p023",
+   "wiki": "https://en.wiktionary.org/wiki/unus#Latin"
+  },
+  "incolunt": {
+   "lema": "incolo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do plural",
+   "funcao": "habitam",
+   "card": "la-p1115",
+   "wiki": "https://en.wiktionary.org/wiki/incolo#Latin"
+  },
+  "belgae": {
+   "lema": "Belgae",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Os belgas, o povo do norte da Gália."
+   ],
+   "forma": "nominativo plural",
+   "funcao": "sujeito de incolunt"
+  },
+  "aliam": {
+   "lema": "alius",
+   "classe": "adjetivo",
+   "forma": "acusativo feminino singular",
+   "funcao": "objeto de incolunt, subentendido: outra",
+   "card": "la-p1002",
+   "wiki": "https://en.wiktionary.org/wiki/alius#Latin"
+  },
+  "aquitani": {
+   "lema": "Aquitani",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Os aquitanos, o povo do sudoeste da Gália."
+   ],
+   "forma": "nominativo plural",
+   "funcao": "sujeito de incolunt, subentendido"
+  },
+  "tertiam": {
+   "lema": "tertius",
+   "classe": "adjetivo",
+   "forma": "acusativo feminino singular",
+   "funcao": "objeto de incolunt, subentendido: a terceira",
+   "card": "la-p438",
+   "wiki": "https://en.wiktionary.org/wiki/tertius#Latin"
+  },
+  "qui": {
+   "lema": "qui",
+   "classe": "pronome",
+   "forma": "nominativo masculino plural",
+   "funcao": "sujeito de appellantur e de incolunt: os que",
+   "card": "la-p064",
+   "wiki": "https://en.wiktionary.org/wiki/qui#Latin"
+  },
+  "ipsorum": {
+   "lema": "ipse",
+   "classe": "pronome",
+   "forma": "genitivo masculino plural",
+   "funcao": "de quem: deles mesmos",
+   "card": "la-p587",
+   "wiki": "https://en.wiktionary.org/wiki/ipse#Latin"
+  },
+  "lingua": {
+   "lema": "lingua",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "em quê: na língua",
+   "card": "la-p525",
+   "wiki": "https://en.wiktionary.org/wiki/lingua#Latin"
+  },
+  "celtae": {
+   "lema": "Celtae",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Os celtas: o nome que os gauleses do centro davam a si mesmos."
+   ],
+   "forma": "nominativo plural",
+   "funcao": "predicativo de appellantur"
+  },
+  "nostra": {
+   "lema": "noster",
+   "classe": "adjetivo",
+   "forma": "ablativo feminino singular",
+   "funcao": "concorda com lingua, subentendida: na nossa",
+   "card": "la-p089",
+   "wiki": "https://en.wiktionary.org/wiki/noster#Latin"
+  },
+  "galli": {
+   "lema": "Galli",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Os gauleses: o nome romano dos celtas da Gália."
+   ],
+   "forma": "nominativo plural",
+   "funcao": "predicativo de appellantur"
+  },
+  "appellantur": {
+   "lema": "appello",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do plural, voz passiva",
+   "funcao": "são chamados",
+   "card": "la-p1116",
+   "wiki": "https://en.wiktionary.org/wiki/appello#Latin"
+  },
+  "hi": {
+   "lema": "hic",
+   "classe": "pronome",
+   "forma": "nominativo masculino plural",
+   "funcao": "sujeito de differunt: estes",
+   "card": "la-p124",
+   "wiki": "https://en.wiktionary.org/wiki/hic#Latin"
+  },
+  "omnes": {
+   "lema": "omnis",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino plural",
+   "funcao": "concorda com hi: todos",
+   "card": "la-p019",
+   "wiki": "https://en.wiktionary.org/wiki/omnis#Latin"
+  },
+  "institutis": {
+   "lema": "institutum",
+   "classe": "substantivo neutro",
+   "forma": "ablativo plural",
+   "funcao": "em quê: nos costumes",
+   "card": "la-p1117",
+   "wiki": "https://en.wiktionary.org/wiki/institutum#Latin"
+  },
+  "legibus": {
+   "lema": "lex",
+   "classe": "substantivo feminino",
+   "forma": "ablativo plural",
+   "funcao": "em quê: nas leis",
+   "card": "la-p547",
+   "wiki": "https://en.wiktionary.org/wiki/lex#Latin"
+  },
+  "inter": {
+   "lema": "inter",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p648",
+   "wiki": "https://en.wiktionary.org/wiki/inter#Latin"
+  },
+  "se": {
+   "lema": "sui",
+   "classe": "pronome",
+   "forma": "acusativo plural",
+   "funcao": "depois de inter: si",
+   "card": "la-p483",
+   "wiki": "https://en.wiktionary.org/wiki/sui#Latin"
+  },
+  "differunt": {
+   "lema": "differo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do plural",
+   "funcao": "diferem",
+   "card": "la-p1118",
+   "wiki": "https://en.wiktionary.org/wiki/differo#Latin"
+  }
+ }
+}

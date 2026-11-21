@@ -1,0 +1,367 @@
+{
+ "id": "liturgia-das-horas/deus-in-adiutorium",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Deus, in adiutorium",
+ "autor": "Liturgia das Horas",
+ "ano": null,
+ "biblioteca": null,
+ "ordem": 83,
+ "fonte": "O começo das Horas",
+ "blocos": [
+  [
+   {
+    "t": "Domine, labia mea aperies.",
+    "p": [
+     [
+      "Domine",
+      "domine"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "labia",
+      "labia"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mea",
+      "mea"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "aperies",
+      "aperies"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v053",
+     "la-v2033",
+     "la-v057",
+     "la-v2010"
+    ]
+   },
+   {
+    "t": "Et os meum annuntiabit laudem tuam.",
+    "p": [
+     [
+      "Et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "os",
+      "os"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "meum",
+      "meum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "annuntiabit",
+      "annuntiabit"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "laudem",
+      "laudem"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tuam",
+      "tuam"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v062",
+     "la-v2025",
+     "la-v641",
+     "la-v157"
+    ]
+   },
+   {
+    "t": "Deus, in adiutorium meum intende.",
+    "p": [
+     [
+      "Deus",
+      "deus"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "adiutorium",
+      "adiutorium"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "meum",
+      "meum#2"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "intende",
+      "intende"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v062",
+     "la-v2015"
+    ]
+   },
+   {
+    "t": "Domine, ad adiuvandum me festina.",
+    "p": [
+     [
+      "Domine",
+      "domine"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "ad",
+      "ad"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "adiuvandum",
+      "adiuvandum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "me",
+      "me"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "festina",
+      "festina"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v053",
+     "la-v2029",
+     "la-v043",
+     "la-v341"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "domine": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala: Senhor",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "labia": {
+   "lema": "labium",
+   "classe": "substantivo neutro",
+   "forma": "acusativo plural",
+   "funcao": "objeto de aperies: os lábios",
+   "card": "la-p1204",
+   "wiki": "https://en.wiktionary.org/wiki/labium#Latin"
+  },
+  "mea": {
+   "lema": "meus",
+   "classe": "adjetivo",
+   "forma": "acusativo neutro plural",
+   "funcao": "concorda com labia: meus",
+   "card": "la-p013",
+   "wiki": "https://en.wiktionary.org/wiki/meus#Latin"
+  },
+  "aperies": {
+   "lema": "aperio",
+   "classe": "verbo",
+   "forma": "futuro do indicativo, 2ª pessoa do singular",
+   "funcao": "abrirás",
+   "card": "la-p948",
+   "wiki": "https://en.wiktionary.org/wiki/aperio#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "os": {
+   "lema": "os",
+   "classe": "substantivo neutro",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de annuntiabit: a boca",
+   "card": "la-p399",
+   "wiki": "https://en.wiktionary.org/wiki/os#Latin"
+  },
+  "meum": {
+   "lema": "meus",
+   "classe": "adjetivo",
+   "forma": "nominativo neutro singular",
+   "funcao": "concorda com os: minha",
+   "card": "la-p013",
+   "wiki": "https://en.wiktionary.org/wiki/meus#Latin"
+  },
+  "annuntiabit": {
+   "lema": "annuntio",
+   "classe": "verbo",
+   "forma": "futuro do indicativo, 3ª pessoa do singular",
+   "funcao": "anunciará",
+   "card": "la-p1178",
+   "wiki": "https://en.wiktionary.org/wiki/annuntio#Latin"
+  },
+  "laudem": {
+   "lema": "laus",
+   "classe": "substantivo feminino",
+   "forma": "acusativo singular",
+   "funcao": "objeto de annuntiabit: o louvor",
+   "card": "la-p301",
+   "wiki": "https://en.wiktionary.org/wiki/laus#Latin"
+  },
+  "tuam": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "acusativo feminino singular",
+   "funcao": "concorda com laudem: teu",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  },
+  "deus": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala: Deus",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "adiutorium": {
+   "lema": "adiutorium",
+   "classe": "substantivo neutro",
+   "forma": "acusativo singular",
+   "funcao": "depois de in: para o auxílio",
+   "card": "la-p1205",
+   "wiki": "https://en.wiktionary.org/wiki/adiutorium#Latin"
+  },
+  "meum#2": {
+   "lema": "meus",
+   "classe": "adjetivo",
+   "forma": "acusativo neutro singular",
+   "funcao": "concorda com adiutorium: meu",
+   "card": "la-p013",
+   "wiki": "https://en.wiktionary.org/wiki/meus#Latin"
+  },
+  "intende": {
+   "lema": "intendo",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "volta-te, atende",
+   "card": "la-p1059",
+   "wiki": "https://en.wiktionary.org/wiki/intendo#Latin"
+  },
+  "ad": {
+   "lema": "ad",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p178",
+   "wiki": "https://en.wiktionary.org/wiki/ad#Latin"
+  },
+  "adiuvandum": {
+   "lema": "adiuvo",
+   "classe": "verbo",
+   "forma": "gerúndio, acusativo",
+   "funcao": "com ad: para ajudar",
+   "card": "la-p1189",
+   "wiki": "https://en.wiktionary.org/wiki/adiuvo#Latin"
+  },
+  "me": {
+   "lema": "ego",
+   "classe": "pronome",
+   "forma": "acusativo singular",
+   "funcao": "objeto de adiuvandum: me",
+   "card": "la-p004",
+   "wiki": "https://en.wiktionary.org/wiki/ego#Latin"
+  },
+  "festina": {
+   "lema": "festino",
+   "classe": "verbo",
+   "forma": "imperativo presente, 2ª pessoa do singular",
+   "funcao": "apressa-te",
+   "card": "la-p142",
+   "wiki": "https://en.wiktionary.org/wiki/festino#Latin"
+  }
+ }
+}

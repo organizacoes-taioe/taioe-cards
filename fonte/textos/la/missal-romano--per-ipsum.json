@@ -1,0 +1,443 @@
+{
+ "id": "missal-romano/per-ipsum",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Per ipsum",
+ "autor": "Missal Romano",
+ "ano": null,
+ "biblioteca": null,
+ "ordem": 79,
+ "fonte": "A doxologia da Oração Eucarística",
+ "blocos": [
+  [
+   {
+    "t": "Per ipsum, et cum ipso, et in ipso,",
+    "p": [
+     [
+      "Per",
+      "per"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ipsum",
+      "ipsum"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "cum",
+      "cum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ipso",
+      "ipso"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ipso",
+      "ipso#2"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1264",
+     "la-v1848"
+    ]
+   },
+   {
+    "t": "est tibi Deo Patri omnipotenti,",
+    "p": [
+     [
+      "est",
+      "est"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tibi",
+      "tibi"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Deo",
+      "deo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Patri",
+      "patri"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "omnipotenti",
+      "omnipotenti"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v010",
+     "la-v049",
+     "la-v002",
+     "la-v202",
+     "la-v1833"
+    ]
+   },
+   {
+    "t": "in unitate Spiritus Sancti,",
+    "p": [
+     [
+      "in",
+      "in"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "unitate",
+      "unitate"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Spiritus",
+      "spiritus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Sancti",
+      "sancti"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1216",
+     "la-v215"
+    ]
+   },
+   {
+    "t": "omnis honor et gloria",
+    "p": [
+     [
+      "omnis",
+      "omnis"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "honor",
+      "honor"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "gloria",
+      "gloria"
+     ]
+    ]
+   },
+   {
+    "t": "per omnia saecula saeculorum.",
+    "p": [
+     [
+      "per",
+      "per"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "omnia",
+      "omnia"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "saecula",
+      "saecula"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "saeculorum",
+      "saeculorum"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v076",
+     "la-v217",
+     "la-v218"
+    ]
+   },
+   {
+    "t": "Amen.",
+    "p": [
+     [
+      "Amen",
+      "amen"
+     ],
+     [
+      ".",
+      null
+     ]
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "per": {
+   "lema": "per",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p427",
+   "wiki": "https://en.wiktionary.org/wiki/per#Latin"
+  },
+  "ipsum": {
+   "lema": "ipse",
+   "classe": "pronome",
+   "forma": "acusativo masculino singular",
+   "funcao": "depois de per: por ele",
+   "card": "la-p587",
+   "wiki": "https://en.wiktionary.org/wiki/ipse#Latin"
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "cum": {
+   "lema": "cum",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p053",
+   "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+  },
+  "ipso": {
+   "lema": "ipse",
+   "classe": "pronome",
+   "forma": "ablativo masculino singular",
+   "funcao": "depois de cum: com ele",
+   "card": "la-p587",
+   "wiki": "https://en.wiktionary.org/wiki/ipse#Latin"
+  },
+  "in": {
+   "lema": "in",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p022",
+   "wiki": "https://en.wiktionary.org/wiki/in#Latin"
+  },
+  "ipso#2": {
+   "lema": "ipse",
+   "classe": "pronome",
+   "forma": "ablativo masculino singular",
+   "funcao": "depois de in: nele",
+   "card": "la-p587",
+   "wiki": "https://en.wiktionary.org/wiki/ipse#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "com tibi: é teu (pertence a ti)",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "tibi": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "dativo singular",
+   "funcao": "dativo de posse: a ti",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  },
+  "deo": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "funcao": "aposto de tibi: a Deus",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "patri": {
+   "lema": "pater",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "funcao": "aposto de Deo: Pai",
+   "card": "la-p072",
+   "wiki": "https://en.wiktionary.org/wiki/pater#Latin"
+  },
+  "omnipotenti": {
+   "lema": "omnipotens",
+   "classe": "adjetivo",
+   "forma": "dativo masculino singular",
+   "funcao": "concorda com Patri: todo-poderoso",
+   "card": "la-p428",
+   "wiki": "https://en.wiktionary.org/wiki/omnipotens#Latin"
+  },
+  "unitate": {
+   "lema": "unitas",
+   "classe": "substantivo feminino",
+   "forma": "ablativo singular",
+   "funcao": "depois de in: na unidade",
+   "card": "la-p634",
+   "wiki": "https://en.wiktionary.org/wiki/unitas#Latin"
+  },
+  "spiritus": {
+   "lema": "spiritus",
+   "classe": "substantivo masculino",
+   "forma": "genitivo singular",
+   "funcao": "de quem: do Espírito",
+   "card": "la-p054",
+   "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin"
+  },
+  "sancti": {
+   "lema": "sanctus",
+   "classe": "adjetivo",
+   "forma": "genitivo masculino singular",
+   "funcao": "concorda com Spiritus: Santo",
+   "card": "la-p084",
+   "wiki": "https://en.wiktionary.org/wiki/sanctus#Latin"
+  },
+  "omnis": {
+   "lema": "omnis",
+   "classe": "adjetivo",
+   "forma": "nominativo masculino singular",
+   "funcao": "concorda com honor: toda",
+   "card": "la-p019",
+   "wiki": "https://en.wiktionary.org/wiki/omnis#Latin"
+  },
+  "honor": {
+   "lema": "honor",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de est: a honra",
+   "card": "la-p569",
+   "wiki": "https://en.wiktionary.org/wiki/honor#Latin"
+  },
+  "gloria": {
+   "lema": "gloria",
+   "classe": "substantivo feminino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito de est: a glória",
+   "card": "la-p051",
+   "wiki": "https://en.wiktionary.org/wiki/gloria#Latin"
+  },
+  "omnia": {
+   "lema": "omnis",
+   "classe": "adjetivo",
+   "forma": "acusativo neutro plural",
+   "funcao": "concorda com saecula",
+   "card": "la-p019",
+   "wiki": "https://en.wiktionary.org/wiki/omnis#Latin"
+  },
+  "saecula": {
+   "lema": "saeculum",
+   "classe": "substantivo neutro",
+   "forma": "acusativo plural",
+   "funcao": "depois de per",
+   "card": "la-p088",
+   "wiki": "https://en.wiktionary.org/wiki/saeculum#Latin"
+  },
+  "saeculorum": {
+   "lema": "saeculum",
+   "classe": "substantivo neutro",
+   "forma": "genitivo plural",
+   "funcao": "dos séculos",
+   "card": "la-p088",
+   "wiki": "https://en.wiktionary.org/wiki/saeculum#Latin"
+  },
+  "amen": {
+   "lema": "amen",
+   "classe": "interjeição",
+   "g": "gramatical",
+   "def": [
+    "Amém: assim seja. Palavra hebraica que fecha a oração."
+   ],
+   "wiki": "https://en.wiktionary.org/wiki/amen#Latin"
+  }
+ }
+}

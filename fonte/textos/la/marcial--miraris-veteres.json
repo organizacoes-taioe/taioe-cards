@@ -1,0 +1,346 @@
+{
+ "id": "marcial/miraris-veteres",
+ "idioma": "la",
+ "tipo": "poema",
+ "titulo": "Miraris veteres",
+ "autor": "Marcial",
+ "ano": null,
+ "biblioteca": "/biblioteca/marcial/miraris-veteres/",
+ "ordem": 45,
+ "fonte": "Epigramas, VIII,69",
+ "blocos": [
+  [
+   {
+    "t": "Miraris veteres, Vacerra, solos,",
+    "p": [
+     [
+      "Miraris",
+      "miraris"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "veteres",
+      "veteres"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Vacerra",
+      "vacerra"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "solos",
+      "solos"
+     ],
+     [
+      ",",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1379",
+     "la-v1412",
+     "la-v1381"
+    ]
+   },
+   {
+    "t": "nec laudas nisi mortuos poetas.",
+    "p": [
+     [
+      "nec",
+      "nec"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "laudas",
+      "laudas"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nisi",
+      "nisi"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "mortuos",
+      "mortuos"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "poetas",
+      "poetas"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1355",
+     "la-v946",
+     "la-v1413"
+    ]
+   },
+   {
+    "t": "Ignoscas petimus, Vacerra: tanti",
+    "p": [
+     [
+      "Ignoscas",
+      "ignoscas"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "petimus",
+      "petimus"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "Vacerra",
+      "vacerra"
+     ],
+     [
+      ": ",
+      null
+     ],
+     [
+      "tanti",
+      "tanti"
+     ]
+    ],
+    "flexoes": [
+     "la-v1414",
+     "la-v1377",
+     "la-v1369"
+    ]
+   },
+   {
+    "t": "non est, ut placeam tibi, perire.",
+    "p": [
+     [
+      "non",
+      "non"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "est",
+      "est"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "ut",
+      "ut"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "placeam",
+      "placeam"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tibi",
+      "tibi"
+     ],
+     [
+      ", ",
+      null
+     ],
+     [
+      "perire",
+      "perire"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v010",
+     "la-v1415",
+     "la-v049",
+     "la-v1389"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "miraris": {
+   "lema": "miror",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "depoente: admiras",
+   "card": "la-p395",
+   "wiki": "https://en.wiktionary.org/wiki/miror#Latin"
+  },
+  "veteres": {
+   "lema": "vetus",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino plural",
+   "funcao": "objeto de miraris: os antigos",
+   "card": "la-p910",
+   "wiki": "https://en.wiktionary.org/wiki/vetus#Latin"
+  },
+  "vacerra": {
+   "lema": "Vacerra",
+   "classe": "nome próprio",
+   "g": "nome",
+   "def": [
+    "Vacerra, o que só admirava os poetas mortos."
+   ],
+   "forma": "vocativo singular",
+   "funcao": "a quem se fala"
+  },
+  "solos": {
+   "lema": "solus",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino plural",
+   "funcao": "concorda com veteres: só",
+   "card": "la-p492",
+   "wiki": "https://en.wiktionary.org/wiki/solus#Latin"
+  },
+  "nec": {
+   "lema": "nec",
+   "classe": "conjunção",
+   "card": "la-p120",
+   "wiki": "https://en.wiktionary.org/wiki/nec#Latin"
+  },
+  "laudas": {
+   "lema": "laudo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 2ª pessoa do singular",
+   "funcao": "elogias",
+   "card": "la-p018",
+   "wiki": "https://en.wiktionary.org/wiki/laudo#Latin"
+  },
+  "nisi": {
+   "lema": "nisi",
+   "classe": "conjunção",
+   "funcao": "senão",
+   "card": "la-p909",
+   "wiki": "https://en.wiktionary.org/wiki/nisi#Latin"
+  },
+  "mortuos": {
+   "lema": "mortuus",
+   "classe": "adjetivo",
+   "forma": "acusativo masculino plural",
+   "funcao": "concorda com poetas: mortos",
+   "card": "la-p434",
+   "wiki": "https://en.wiktionary.org/wiki/mortuus#Latin"
+  },
+  "poetas": {
+   "lema": "poeta",
+   "classe": "substantivo masculino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de laudas: os poetas",
+   "card": "la-p911",
+   "wiki": "https://en.wiktionary.org/wiki/poeta#Latin"
+  },
+  "ignoscas": {
+   "lema": "ignosco",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 2ª pessoa do singular",
+   "funcao": "depende de petimus, sem ut: que perdoes",
+   "card": "la-p912",
+   "wiki": "https://en.wiktionary.org/wiki/ignosco#Latin"
+  },
+  "petimus": {
+   "lema": "peto",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do plural",
+   "funcao": "pedimos",
+   "card": "la-p373",
+   "wiki": "https://en.wiktionary.org/wiki/peto#Latin"
+  },
+  "tanti": {
+   "lema": "tantus",
+   "classe": "adjetivo",
+   "forma": "genitivo neutro singular",
+   "funcao": "genitivo de preço, com est: valer tanto",
+   "card": "la-p247",
+   "wiki": "https://en.wiktionary.org/wiki/tantus#Latin"
+  },
+  "non": {
+   "lema": "non",
+   "classe": "advérbio",
+   "card": "la-p066",
+   "wiki": "https://en.wiktionary.org/wiki/non#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "funcao": "com tanti: vale tanto",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  },
+  "ut": {
+   "lema": "ut",
+   "classe": "advérbio",
+   "funcao": "com subjuntivo: para que",
+   "card": "la-p257",
+   "wiki": "https://en.wiktionary.org/wiki/ut#Latin"
+  },
+  "placeam": {
+   "lema": "placeo",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 1ª pessoa do singular",
+   "funcao": "depois de ut: agrade",
+   "card": "la-p913",
+   "wiki": "https://en.wiktionary.org/wiki/placeo#Latin"
+  },
+  "tibi": {
+   "lema": "tu",
+   "classe": "pronome",
+   "forma": "dativo singular",
+   "funcao": "a quem: a ti",
+   "card": "la-p007",
+   "wiki": "https://en.wiktionary.org/wiki/tu#Latin"
+  },
+  "perire": {
+   "lema": "pereo",
+   "classe": "verbo",
+   "forma": "infinitivo presente",
+   "funcao": "sujeito de est: morrer",
+   "card": "la-p617",
+   "wiki": "https://en.wiktionary.org/wiki/pereo#Latin"
+  }
+ }
+}

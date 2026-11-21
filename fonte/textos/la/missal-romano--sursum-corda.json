@@ -1,0 +1,389 @@
+{
+ "id": "missal-romano/sursum-corda",
+ "idioma": "la",
+ "tipo": "prosa",
+ "titulo": "Sursum corda",
+ "autor": "Missal Romano",
+ "ano": null,
+ "biblioteca": null,
+ "ordem": 55,
+ "fonte": "O diálogo do Prefácio",
+ "blocos": [
+  [
+   {
+    "t": "Dominus vobiscum.",
+    "p": [
+     [
+      "Dominus",
+      "dominus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "vobiscum",
+      "vobiscum"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v149"
+    ]
+   },
+   {
+    "t": "Et cum spiritu tuo.",
+    "p": [
+     [
+      "Et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "cum",
+      "cum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "spiritu",
+      "spiritu"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "tuo",
+      "tuo"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v153",
+     "la-v769"
+    ]
+   },
+   {
+    "t": "Sursum corda.",
+    "p": [
+     [
+      "Sursum",
+      "sursum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "corda",
+      "corda"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v916"
+    ]
+   },
+   {
+    "t": "Habemus ad Dominum.",
+    "p": [
+     [
+      "Habemus",
+      "habemus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "ad",
+      "ad"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Dominum",
+      "dominum"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1383",
+     "la-v056"
+    ]
+   },
+   {
+    "t": "Gratias agamus Domino Deo nostro.",
+    "p": [
+     [
+      "Gratias",
+      "gratias"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "agamus",
+      "agamus"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Domino",
+      "domino"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "Deo",
+      "deo"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "nostro",
+      "nostro"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1361",
+     "la-v1446",
+     "la-v055",
+     "la-v002",
+     "la-v223"
+    ]
+   },
+   {
+    "t": "Dignum et iustum est.",
+    "p": [
+     [
+      "Dignum",
+      "dignum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "et",
+      "et"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "iustum",
+      "iustum"
+     ],
+     [
+      " ",
+      null
+     ],
+     [
+      "est",
+      "est"
+     ],
+     [
+      ".",
+      null
+     ]
+    ],
+    "flexoes": [
+     "la-v1374",
+     "la-v1447",
+     "la-v010"
+    ]
+   }
+  ]
+ ],
+ "destinos": {
+  "dominus": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "nominativo singular",
+   "funcao": "sujeito: esteja",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "vobiscum": {
+   "partes": [
+    {
+     "lema": "vos",
+     "classe": "pronome",
+     "forma": "ablativo plural",
+     "funcao": "depois de cum: convosco",
+     "card": "la-p049",
+     "wiki": "https://en.wiktionary.org/wiki/vos#Latin"
+    },
+    {
+     "lema": "cum",
+     "classe": "preposição",
+     "forma": "preposição com ablativo",
+     "card": "la-p053",
+     "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+    }
+   ]
+  },
+  "et": {
+   "lema": "et",
+   "classe": "conjunção",
+   "card": "la-p009",
+   "wiki": "https://en.wiktionary.org/wiki/et#Latin"
+  },
+  "cum": {
+   "lema": "cum",
+   "classe": "preposição",
+   "forma": "preposição com ablativo",
+   "card": "la-p053",
+   "wiki": "https://en.wiktionary.org/wiki/cum#Latin"
+  },
+  "spiritu": {
+   "lema": "spiritus",
+   "classe": "substantivo masculino",
+   "forma": "ablativo singular",
+   "funcao": "com quem",
+   "card": "la-p054",
+   "wiki": "https://en.wiktionary.org/wiki/spiritus#Latin"
+  },
+  "tuo": {
+   "lema": "tuus",
+   "classe": "adjetivo",
+   "forma": "ablativo masculino singular",
+   "funcao": "concorda com spiritu",
+   "card": "la-p055",
+   "wiki": "https://en.wiktionary.org/wiki/tuus#Latin"
+  },
+  "sursum": {
+   "lema": "sursum",
+   "classe": "advérbio",
+   "card": "la-p974",
+   "wiki": "https://en.wiktionary.org/wiki/sursum#Latin"
+  },
+  "corda": {
+   "lema": "cor",
+   "classe": "substantivo neutro",
+   "forma": "acusativo plural",
+   "funcao": "objeto de habete, subentendido: os corações",
+   "card": "la-p415",
+   "wiki": "https://en.wiktionary.org/wiki/cor#Latin"
+  },
+  "habemus": {
+   "lema": "habeo",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 1ª pessoa do plural",
+   "funcao": "(os) temos",
+   "card": "la-p504",
+   "wiki": "https://en.wiktionary.org/wiki/habeo#Latin"
+  },
+  "ad": {
+   "lema": "ad",
+   "classe": "preposição",
+   "forma": "preposição com acusativo",
+   "card": "la-p178",
+   "wiki": "https://en.wiktionary.org/wiki/ad#Latin"
+  },
+  "dominum": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "acusativo singular",
+   "funcao": "depois de ad: para o Senhor",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "gratias": {
+   "lema": "gratia",
+   "classe": "substantivo feminino",
+   "forma": "acusativo plural",
+   "funcao": "objeto de agamus: graças",
+   "card": "la-p050",
+   "wiki": "https://en.wiktionary.org/wiki/gratia#Latin"
+  },
+  "agamus": {
+   "lema": "ago",
+   "classe": "verbo",
+   "forma": "presente do subjuntivo, 1ª pessoa do plural",
+   "funcao": "exortação: demos",
+   "card": "la-p975",
+   "wiki": "https://en.wiktionary.org/wiki/ago#Latin"
+  },
+  "domino": {
+   "lema": "dominus",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "funcao": "a quem: ao Senhor",
+   "card": "la-p012",
+   "wiki": "https://en.wiktionary.org/wiki/dominus#Latin"
+  },
+  "deo": {
+   "lema": "deus",
+   "classe": "substantivo masculino",
+   "forma": "dativo singular",
+   "funcao": "aposto de Domino: Deus",
+   "card": "la-p001",
+   "wiki": "https://en.wiktionary.org/wiki/deus#Latin"
+  },
+  "nostro": {
+   "lema": "noster",
+   "classe": "adjetivo",
+   "forma": "dativo masculino singular",
+   "funcao": "concorda com Deo: nosso",
+   "card": "la-p089",
+   "wiki": "https://en.wiktionary.org/wiki/noster#Latin"
+  },
+  "dignum": {
+   "lema": "dignus",
+   "classe": "adjetivo",
+   "forma": "nominativo neutro singular",
+   "funcao": "predicativo de est: digno",
+   "card": "la-p331",
+   "wiki": "https://en.wiktionary.org/wiki/dignus#Latin"
+  },
+  "iustum": {
+   "lema": "iustus",
+   "classe": "adjetivo",
+   "forma": "nominativo neutro singular",
+   "funcao": "predicativo de est: justo",
+   "card": "la-p976",
+   "wiki": "https://en.wiktionary.org/wiki/iustus#Latin"
+  },
+  "est": {
+   "lema": "sum",
+   "classe": "verbo",
+   "forma": "presente do indicativo, 3ª pessoa do singular",
+   "card": "la-p003",
+   "wiki": "https://en.wiktionary.org/wiki/sum#Latin"
+  }
+ }
+}
