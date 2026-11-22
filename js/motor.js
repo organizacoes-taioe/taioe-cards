@@ -1934,16 +1934,36 @@ window.Motor = (function () {
   /* Quantos versos, a contar do primeiro, já podem ser lidos: todas as
      palavras deles reconhecidas (ver idaFechada). O verso sem palavra de card
      (só artigo, preposição, nome) vem junto com o seguinte, e não sozinho. */
-  function versosProntos(texto, estados, arquivados) {
+  /* «vistos» (opcional): os versos já lidos contam como prontos. Palavra de verso já lido que
+     volta a faltar (o teste do presumido errado, a forma do latim que acordou) segue em estudo,
+     mas não trava os versos seguintes (relato do Gere, 22/11/2026: «falta só uma palavra, e a
+     próxima frase não sai»). */
+  function versosProntos(texto, estados, arquivados, vistos) {
     const vs = versosDoTexto(texto);
-    let k = 0;
-    for (const l of vs) {
+    const de = Math.max(0, Math.min(vs.length, vistos || 0));
+    let k = de;
+    for (const l of vs.slice(de)) {
       const req = (l && l.requer) || [];
       if (req.some(id => String(id)[0] === '+' || !idaFechada(id, estados || {}, arquivados))) break;
       k++;
     }
-    while (k > 0 && k < vs.length && !((vs[k - 1] && vs[k - 1].requer) || []).length) k--;
+    while (k > de && k < vs.length && !((vs[k - 1] && vs[k - 1].requer) || []).length) k--;
     return k;
+  }
+
+  /* As palavras que ainda faltam reconhecer nos versos não lidos (a partir de «vistos»), sem
+     repetir, na ordem do texto. */
+  function faltamNoTexto(texto, estados, arquivados, vistos) {
+    const vs = versosDoTexto(texto).slice(Math.max(0, vistos || 0));
+    const vistas = new Set(), faltam = [];
+    for (const l of vs) {
+      for (const id of (l && l.requer) || []) {
+        if (vistas.has(id)) continue;
+        vistas.add(id);
+        if (String(id)[0] === '+' || !idaFechada(id, estados || {}, arquivados)) faltam.push(id);
+      }
+    }
+    return faltam;
   }
 
   /* Quantos versos a pessoa já viu (textos.lidos guarda «<id>#<k>» por verso,
@@ -1990,12 +2010,16 @@ window.Motor = (function () {
   }
 
   /* Palavras reconhecidas sobre o total, e os versos prontos sobre o total. */
-  function andamentoDoTexto(texto, estados, arquivados) {
+  /* Com «vistos», contam só as palavras dos versos ainda não lidos, e «quais» diz quais são. */
+  function andamentoDoTexto(texto, estados, arquivados, vistos) {
     const req = requeridas(texto);
-    const faltam = req.filter(id => String(id)[0] === '+' || !idaFechada(id, estados || {}, arquivados)).length;
+    const quais = vistos === undefined
+      ? req.filter(id => String(id)[0] === '+' || !idaFechada(id, estados || {}, arquivados))
+      : faltamNoTexto(texto, estados, arquivados, vistos);
+    const faltam = quais.length;
     const versos = versosDoTexto(texto).length;
-    const prontos = versosProntos(texto, estados, arquivados);
-    return { palavras: req.length, sabidas: req.length - faltam, faltam: faltam, versos: versos, prontos: prontos };
+    const prontos = versosProntos(texto, estados, arquivados, vistos);
+    return { palavras: req.length, sabidas: req.length - faltam, faltam: faltam, quais: quais, versos: versos, prontos: prontos };
   }
 
   /* A fila dos poemas automáticos do curso (o campo «fila», do mais fácil ao
@@ -2407,8 +2431,22 @@ window.Motor = (function () {
       if (quem !== id) return sabidaEm(quem, estados, arquivados);
     }
     const e = estados && estados[id];
-    if (!e || e.etapa !== 'dominado') return presumidoEm(id, estados) ? PRESUMIDOS_EM : Infinity;
-    return e.dominadoEm ? Date.parse(e.dominadoEm) || 0 : 0;
+    const propria = (!e || e.etapa !== 'dominado') ? (presumidoEm(id, estados) ? PRESUMIDOS_EM : Infinity)
+      : (e.dominadoEm ? Date.parse(e.dominadoEm) || 0 : 0);
+    /* A forma que acordou (flexaoPuxada) volta a ser estudada, mas para destravar frases e
+       versos continua contando também pelo card da terminação dela: sem isso, o erro num trecho
+       já liberado fazia a palavra «voltar a faltar» e travava o texto (relato do Gere, 22/11/2026). */
+    const ativo = acordada(id, estados);
+    if (ativo) return Math.min(propria, sabidaEm(ativo, estados, arquivados));
+    return propria;
+  }
+
+  /* O card da terminação, se esta forma acordou depois de dormir nele (ou null). */
+  function acordada(id, estados) {
+    if (!TERMINACAO[id] || RARA[id]) return null;
+    const ativo = ativoDaTerminacao(TERMINACAO[id], estados);
+    if (!ativo || ativo === id || !flexaoPuxada(id, estados)) return null;
+    return ativo;
   }
 
   function liberadaEm(card, estados, arquivados) {
@@ -4916,8 +4954,8 @@ window.Motor = (function () {
     CHANCE_NA_META, CHANCE_POR_CARD, CHANCE_MINIMA, CHANCE_MAXIMA,
     urgencia, cumpriu, escolherNaFila, podeVoltar, INTERVALO_MINIMO, vezDoDominado, ESPACO_DOMINADO,
     ALVO_IDA_MIN, ALVO_IDA_MAX, alvoDaFila, acertoRecente, atrasadoQueFura,
-    MAX_TEXTOS, TEXTO_A_CADA, vezDoTexto, idaFechada, dominadosNoTotal, versosDoTexto, versosProntos, versosVistos, textoTerminado,
-    andamentoDoTexto, textosAutomaticos, escolhaDosTextos, textosAtivos, textosQueSoltamPalavras, palavrasDosTextos, ehLeitura,
+    MAX_TEXTOS, TEXTO_A_CADA, vezDoTexto, idaFechada, dominadosNoTotal, versosDoTexto, versosProntos, faltamNoTexto, versosVistos, textoTerminado,
+    andamentoDoTexto, acordada, textosAutomaticos, escolhaDosTextos, textosAtivos, textosQueSoltamPalavras, palavrasDosTextos, ehLeitura,
     partesDaObra, parteDaVez, parteSeguinte, textoEscolhivel,
     liberado, liberadaEm, venceuEm, requeridas, arquivado, sabidaEm,
     situacaoDaFrase, atualizarEmVista, palavrasEmVista, FRASES_EM_VISTA,

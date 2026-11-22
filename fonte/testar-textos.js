@@ -83,6 +83,13 @@ ok(M.andamentoDoTexto(P1, { a: naVolta('a'), b: naIda('b') }).faltam === 3, 'o a
 const P0 = poema('p0', 0, [[], ['a']]);
 ok(M.versosProntos(P0, {}) === 0 && M.versosProntos(P0, { a: dominado('a') }) === 2, 'o primeiro verso vazio vem com o segundo');
 ok(M.versosVistos(P1, { 'p1#1': 'x', 'p1#3': 'y' }) === 3 && M.versosVistos(P1, { p1: 'x' }) === 4, 'versosVistos lê os lidos');
+/* relato do Gere, 22/11/2026: palavra de verso já lido que volta a faltar não trava os seguintes */
+ok(M.versosProntos(P1, { a: naIda('a'), b: dominado('b'), c: dominado('c') }) === 0, 'sem os lidos, a palavra que voltou trava');
+ok(M.versosProntos(P1, { a: naIda('a'), b: dominado('b'), c: dominado('c') }, {}, 1) === 3,
+  'com o verso 1 já lido, os seguintes abrem pelas palavras deles');
+ok(M.versosProntos(P1, { a: naIda('a'), b: dominado('b') }, {}, 1) === 1, 'e esperam as palavras deles');
+const and1 = M.andamentoDoTexto(P1, { a: naIda('a'), b: dominado('b') }, {}, 1);
+ok(and1.faltam === 2 && and1.quais.join() === 'c,d', 'o andamento com os lidos conta só os versos não lidos, e diz quais');
 
 /* ═══════════ 3. a escolha ═══════════ */
 secao('escolha dos textos');
