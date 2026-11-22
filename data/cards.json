@@ -2,7 +2,7 @@
  "versao": 1,
  "idioma": "es",
  "gerado_em": "2026-11-22",
- "total": 2648,
+ "total": 2646,
  "cards": [
   {
    "idioma": "es",
@@ -107630,46 +107630,6 @@
   },
   {
    "idioma": "es",
-   "id": "p1362",
-   "tipo": "palavra",
-   "es": "el bicho",
-   "pt": "o bicho / o inseto",
-   "en": "the bug / the critter",
-   "aceitas": [
-    "bicho",
-    "inseto",
-    "bichinho",
-    "animalzinho"
-   ],
-   "aceitasEn": [
-    "bug",
-    "the bug",
-    "critter",
-    "insect",
-    "creepy-crawly"
-   ],
-   "distratores": [
-    "o verme / a lagarta",
-    "o monstro / o fantasma",
-    "o pássaro / o morcego",
-    "o ninho / a toca"
-   ],
-   "distratoresEn": [
-    "the worm / the caterpillar",
-    "the monster / the ghost",
-    "the bird / the bat",
-    "the nest / the burrow"
-   ],
-   "nivel": "B2",
-   "tags": [
-    "substantivo",
-    "animais"
-   ],
-   "nota": "«Bicho» é qualquer animalzinho, sobretudo inseto ou animal do mato: «un bicho raro». Atenção: em alguns países da América é palavra grosseira; em caso de dúvida, use «animal» ou «insecto».",
-   "notaEn": "«Bicho» is any small animal, especially an insect or a wild creature: «un bicho raro». Careful: in some countries of America it is a rude word; when in doubt, use «animal» or «insecto»."
-  },
-  {
-   "idioma": "es",
    "id": "p1363",
    "tipo": "palavra",
    "es": "el bosque",
@@ -111183,49 +111143,6 @@
     "p1361",
     "p480",
     "p372"
-   ]
-  },
-  {
-   "idioma": "es",
-   "id": "u788",
-   "tipo": "frase",
-   "requer": "p1362",
-   "es": "Hay un bicho en la pared.",
-   "pt": "Tem um bicho na parede.",
-   "en": "There is a bug on the wall.",
-   "aceitas": [
-    "ha um bicho na parede",
-    "tem um inseto na parede",
-    "existe um bicho na parede",
-    "ha um inseto na parede"
-   ],
-   "aceitasEn": [
-    "there is a bug on the wall",
-    "there is an insect on the wall",
-    "a bug is on the wall"
-   ],
-   "distratores": [
-    "Tem um buraco na parede.",
-    "Tem um quadro na parede.",
-    "Tem um relógio na parede.",
-    "Tem um prego na parede."
-   ],
-   "distratoresEn": [
-    "There is a hole in the wall.",
-    "There is a picture on the wall.",
-    "There is a clock on the wall.",
-    "There is a nail in the wall."
-   ],
-   "nivel": "B2",
-   "tags": [
-    "animais"
-   ],
-   "nota": "«Hay un bicho» é «tem um bicho»: com «hay» não se usa artigo definido («hay el bicho» não existe).",
-   "notaEn": "«Hay un bicho» is «there is a bug»: with «hay» there is no definite article.",
-   "requerTodas": [
-    "p352",
-    "p119",
-    "p1362"
    ]
   },
   {
