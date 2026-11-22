@@ -2107,6 +2107,22 @@ window.TaioeCardsApp = function (ctx) {
 
   let rolagemAtual = null;
 
+  /* Quanto a tela cresce quando a barra do navegador se recolhe: a altura grande (100lvh, ou
+     100vh, que no Chrome do celular já é a grande) menos a de agora, e uns pixels de margem. */
+  let sondaDaBarra = null;
+  function folgaDaBarra() {
+    if (!sondaDaBarra) {
+      sondaDaBarra = document.createElement('div');
+      sondaDaBarra.setAttribute('aria-hidden', 'true');
+      const st = sondaDaBarra.style;
+      st.position = 'fixed'; st.top = '0'; st.left = '0'; st.width = '1px';
+      st.height = '100vh'; st.height = '100lvh';
+      st.visibility = 'hidden'; st.pointerEvents = 'none';
+      document.body.appendChild(sondaDaBarra);
+    }
+    return Math.max(0, Math.min(200, sondaDaBarra.offsetHeight - window.innerHeight)) + 8;
+  }
+
   /* Anima a rolagem até «falta()» chegar a zero. «falta» devolve pixels,
      positivos para descer e negativos para subir. «opcoes.subida» é a volta
      ao topo do card novo: essa pode ser mais ligeira, porque é o card que
@@ -2150,12 +2166,15 @@ window.TaioeCardsApp = function (ctx) {
       cancelAnimationFrame(quadro);
       window.removeEventListener('touchstart', interromper);
       window.removeEventListener('wheel', interromper);
-      /* a sobra do chão que ficou abaixo da tela sai sem mexer em nada */
+      /* A sobra do chão que ficou abaixo da tela sai sem mexer em nada, menos a folga da barra
+         do navegador. Sem a folga a página acabava rente ao pé da tela, e no celular, ao descer
+         com o dedo, a barra de endereço se recolhe e a tela cresce: sem página para ocupar o
+         espaço, o Chrome devolvia a rolagem, e a tela pulava para cima (relato do Gere, 22/11). */
       const pad = parseFloat(chao.style.paddingBottom) || 0;
       if (pad) {
         const sobra = raiz.scrollHeight - (window.scrollY + window.innerHeight);
-        const tirar = Math.min(pad, Math.max(0, Math.floor(sobra)));
-        chao.style.paddingBottom = (pad - tirar) ? (pad - tirar) + 'px' : '';
+        const novo = Math.max(0, Math.ceil(pad - sobra + folgaDaBarra()));
+        chao.style.paddingBottom = novo ? novo + 'px' : '';
       }
       if (rolagemAtual === controle) rolagemAtual = null;
       if ((concluiu || sempre) && aoTerminar) aoTerminar();
@@ -2661,14 +2680,14 @@ window.TaioeCardsApp = function (ctx) {
     if (!ativos.length) return '';
     const itens = ativos.map(txt => {
       const verso = Motor.versosDoTexto(txt)[0] || {};
-      const a = Motor.andamentoDoTexto(txt, progresso.cards, progresso.arquivados || {});
       const vistos = Motor.versosVistos(txt, progresso.textos.lidos);
+      const a = Motor.andamentoDoTexto(txt, progresso.cards, progresso.arquivados || {}, vistos);
       return '<div class="vitrine-item">' +
         '<p class="vitrine-titulo"><b lang="' + L + '">' + escapar(txt.titulo) + '</b> · ' + escapar(txt.autor) +
         (txt.parte ? ' · ' + rotuloDaParte(txt) : '') + '</p>' +
         (verso.t ? '<p class="vitrine-verso" lang="' + L + '">' + escapar(verso.t) + '</p>' : '') +
         '<p class="vitrine-conta">' + t(txt.tipo === 'prosa' ? 'texto.andamentoProsa' : 'texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
-        (a.faltam ? tn('painel.vitrineFaltam', a.faltam, { n: milhar(a.faltam) }) : t('painel.vitrinePronto')) + '</p></div>';
+        (a.faltam ? tn('painel.vitrineFaltam', a.faltam, { n: milhar(a.faltam) }) + quaisFaltam(a) : t('painel.vitrinePronto')) + '</p></div>';
     }).join('');
     return '<div class="vitrine"><h3>' + t(ativos.length > 1 ? 'painel.vitrines' : 'painel.vitrine') + '</h3>' +
       itens + '<button class="link-comentar" id="btn-vitrine">' + t('painel.vitrineVer') + '</button></div>';
@@ -3605,6 +3624,15 @@ window.TaioeCardsApp = function (ctx) {
     return Motor.textosAtivos(escolhaDosTextos(), TEXTOS, tx.lidos || {});
   }
 
+  /* Quando faltam poucas palavras (até 3), quais são: «falta 1 palavra: «deus»» (pedido do Gere,
+     22/11/2026: o texto parecia parado a uma palavra do fim, sem dizer qual). */
+  function quaisFaltam(a) {
+    if (!a || !a.quais || !a.quais.length || a.quais.length > 3) return '';
+    return ': <span lang="' + L + '">' + a.quais
+      .map(r => String(r)[0] === '+' ? String(r).slice(1) : (PORID[r] || {})[L] || r)
+      .map(x => aspas(escapar(x))).join(', ') + '</span>';
+  }
+
   /* Os versos que acabaram de ficar prontos num texto ativo: todas as
      palavras deles sabidas. Vem logo antes do próximo card, sem esperar a
      meia-noite: o verso não é card. */
@@ -3613,8 +3641,8 @@ window.TaioeCardsApp = function (ctx) {
     const lidos = progresso.textos.lidos;
     for (const txt of textosAtivosAgora()) {
       const total = Motor.versosDoTexto(txt).length;
-      const k = Motor.versosProntos(txt, progresso.cards, progresso.arquivados || {});
       const vistos = Motor.versosVistos(txt, lidos);
+      const k = Motor.versosProntos(txt, progresso.cards, progresso.arquivados || {}, vistos);
       if (total && k > vistos) return { txt: txt, de: vistos, versos: k, total: total };
     }
     return null;
@@ -3849,7 +3877,7 @@ window.TaioeCardsApp = function (ctx) {
        está mais perto de completar ao mais longe; os lidos inteiros vão para o grupo de baixo. */
     const andamento = new Map();
     const abertos = TEXTOS.filter(x => Motor.textoEscolhivel(x, TEXTOS, tx.lidos));
-    abertos.forEach(x => andamento.set(x.id, Motor.andamentoDoTexto(x, progresso.cards, arq)));
+    abertos.forEach(x => andamento.set(x.id, Motor.andamentoDoTexto(x, progresso.cards, arq, Motor.versosVistos(x, tx.lidos))));
     const fila = x => x.fila === undefined ? 1e9 : x.fila;
     abertos.sort((a, b) => ((b.id === novo) - (a.id === novo)) || (ativos.has(b.id) - ativos.has(a.id)) ||
       (andamento.get(a.id).faltam - andamento.get(b.id).faltam) || (fila(a) - fila(b)));
@@ -3863,7 +3891,7 @@ window.TaioeCardsApp = function (ctx) {
         (marcado ? ' checked' : '') + '> <b lang="' + L + '">' + escapar(x.titulo) + '</b> · ' + escapar(x.autor) +
         (x.parte ? ' · ' + rotuloDaParte(x) : '') + '</label>' +
         '<p class="andamento-texto">' + t(x.tipo === 'prosa' ? 'texto.andamentoProsa' : 'texto.andamento', { k: vistos, n: a.versos }) + ' · ' +
-        (a.faltam ? tn('texto.faltamPalavras', a.faltam, { n: milhar(a.faltam) }) : t('texto.semFalta')) +
+        (a.faltam ? tn('texto.faltamPalavras', a.faltam, { n: milhar(a.faltam) }) + quaisFaltam(a) : t('texto.semFalta')) +
         (marcado && escolha && !escolha.propria ? ' · ' + t('texto.automatico') : '') +
         (seguinte ? ' · ' + t('texto.aSeguir', { n: seguinte.parte, r: escapar(seguinte.trecho || '') }) : '') + '</p>' +
         (vistos ? '<details class="texto-lido"><summary>' + t(x.tipo === 'prosa' ? 'texto.descobertosProsa' : 'texto.descobertos') + '</summary>' + cartaDoTexto(x, vistos) + '</details>' : '') +

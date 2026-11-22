@@ -347,6 +347,12 @@ if (fraseDaOutra) {
   ok(M.flexaoPuxada(outraAe.id, errou) && !M.adormecido(outraAe.id, errou), 'errou a frase depois da mudança: a forma acorda');
   const antes = Object.assign({}, dominou, { [fraseDaOutra.id]: { vistas: 2, etapa: 'multipla', historico: [{ em: '2026-10-20T10:00:00Z', acertou: false }] } });
   ok(!M.flexaoPuxada(outraAe.id, antes), 'o erro de antes da mudança não acorda ninguém');
+  /* relato do Gere, 22/11/2026: a forma que acordou volta a ser estudada, mas não trava a frase */
+  const voltou = Object.assign({}, tudo, errou, { [outraAe.id]: { vistas: 1, etapa: 'multipla', estreia: '2026-11-04' } });
+  ok(M.acordada(outraAe.id, voltou) === aquae.id && M.sabidaEm(outraAe.id, voltou, {}) === Date.parse(quando),
+    'a forma que acordou segue contando pelo ativo dominado');
+  ok(M.liberado(fraseDaOutra, voltou, Date.parse('2026-12-01'), {}), 'e a frase continua liberada');
+  ok(!M.adormecido(outraAe.id, voltou), 'mas a forma segue em estudo');
 }
 const acordada = Object.assign({}, dominou, { [outraAe.id]: { vistas: 1, etapa: 'multipla', estreia: '2026-11-04' } });
 ok(!M.adormecido(outraAe.id, acordada) && M.ativoDaTerminacao(chaveAe, acordada) === aquae.id, 'quem estreou depois da mudança é card próprio, e o ativo não muda');
