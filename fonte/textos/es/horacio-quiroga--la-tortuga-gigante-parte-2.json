@@ -684,7 +684,8 @@
     "Forma de segunda pessoa, usada como tratamento de respeito, cortesia ou distanciamento, tanto para o masculino quanto para o feminino."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/usted"
+   "wiki": "https://es.wiktionary.org/wiki/usted",
+   "defEn": "Personal pronoun: you (formal)."
   },
   "es": {
    "lema": "ser",
@@ -714,7 +715,8 @@
     "Pronome possessivo de primeira pessoa (yo). Refere-se ao que é próprio ou pertence a mim."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/m%C3%ADo"
+   "wiki": "https://es.wiktionary.org/wiki/m%C3%ADo",
+   "defEn": "Possessive pronoun: mine."
   },
   "y": {
    "lema": "y",
@@ -723,7 +725,8 @@
     "Conjunção copulativa: une palavras, orações ou frases."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/y"
+   "wiki": "https://es.wiktionary.org/wiki/y",
+   "defEn": "Conjunction: and."
   },
   "un": {
    "lema": "un",
@@ -733,7 +736,8 @@
     "Artigo indefinido masculino singular."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/un"
+   "wiki": "https://es.wiktionary.org/wiki/un",
+   "defEn": "Indefinite article: a, an (masculine)."
   },
   "hombre": {
    "lema": "hombre",
@@ -761,8 +765,9 @@
    "def": [
     "Que se esforça e se entusiasma com o que faz; que se empenha em fazer bem as coisas."
    ],
-   "card": "+trabajador",
-   "wiki": "https://es.wiktionary.org/wiki/trabajador"
+   "card": "p1409",
+   "wiki": "https://es.wiktionary.org/wiki/trabajador",
+   "manual": true
   },
   "por": {
    "lema": "por",
@@ -771,7 +776,8 @@
     "Indica o motivo ou a causa."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/por"
+   "wiki": "https://es.wiktionary.org/wiki/por",
+   "defEn": "Preposition: by, through, for."
   },
   "eso": {
    "lema": "eso",
@@ -781,7 +787,8 @@
     "Designa genericamente um fato, ideia ou oração enunciados anteriormente."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/eso"
+   "wiki": "https://es.wiktionary.org/wiki/eso",
+   "defEn": "Neuter demonstrative: that."
   },
   "quiero": {
    "lema": "querer",
@@ -800,7 +807,8 @@
     "Introduz uma oração subordinada substantiva com função de sujeito ou de complemento direto."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/que"
+   "wiki": "https://es.wiktionary.org/wiki/que",
+   "defEn": "Conjunction: that."
   },
   "se#2": {
    "lema": "se",
@@ -809,7 +817,8 @@
     "Pronome reflexivo que estabelece correferência com o sujeito da oração na terceira pessoa."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/se"
+   "wiki": "https://es.wiktionary.org/wiki/se",
+   "defEn": "Reflexive pronoun: himself, herself, oneself, themselves."
   },
   "vaya": {
    "lema": "ir",
@@ -828,7 +837,8 @@
     "Precede um infinitivo cujo significado implique começo, intenção, êxito, manutenção, aprendizagem ou finalidade da ação."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/a"
+   "wiki": "https://es.wiktionary.org/wiki/a",
+   "defEn": "Preposition: to, at."
   },
   "vivir": {
    "lema": "vivir",
@@ -847,7 +857,8 @@
     "Contração da preposição «a» com o artigo «el»."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/al"
+   "wiki": "https://es.wiktionary.org/wiki/al",
+   "defEn": "Contraction of «a» + «el»: to the, at the."
   },
   "monte": {
    "lema": "monte",
@@ -913,7 +924,8 @@
     "Indica o objetivo ou a finalidade da ação."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/para"
+   "wiki": "https://es.wiktionary.org/wiki/para",
+   "defEn": "Preposition: for, in order to."
   },
   "curarse": {
    "partes": [
@@ -924,7 +936,7 @@
      "def": [
       "Restaurar a saúde de uma pessoa, ou de alguma parte de seu corpo, afetada por uma doença, lesão ou dor."
      ],
-     "card": "+curar"
+     "card": "p1371"
     },
     {
      "lema": "se",
@@ -932,9 +944,11 @@
      "def": [
       "Pronome reflexivo que estabelece correferência com o sujeito da oração na terceira pessoa."
      ],
-     "g": "gramatical"
+     "g": "gramatical",
+     "defEn": "Reflexive pronoun: himself, herself, oneself, themselves."
     }
-   ]
+   ],
+   "manual": true
   },
   "como": {
    "lema": "como",
@@ -943,7 +957,8 @@
     "Introduz uma oração que indica a causa do que se expressa na oração principal."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/como"
+   "wiki": "https://es.wiktionary.org/wiki/como",
+   "defEn": "Conjunction: as, like."
   },
   "tiene": {
    "lema": "tener",
@@ -971,9 +986,9 @@
    "def": [
     "Habilidade do atirador para acertar o ponto que quer tocar."
    ],
-   "card": "+puntería",
-   "leitura": true,
-   "wiki": "https://es.wiktionary.org/wiki/punter%C3%ADa"
+   "card": "p1436",
+   "wiki": "https://es.wiktionary.org/wiki/punter%C3%ADa",
+   "manual": true
   },
   "con": {
    "lema": "con",
@@ -982,7 +997,8 @@
     "Indica o meio empregado para fazer algo."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/con"
+   "wiki": "https://es.wiktionary.org/wiki/con",
+   "defEn": "Preposition: with."
   },
   "la": {
    "lema": "la",
@@ -992,7 +1008,8 @@
     "Artigo definido feminino singular. Antecede substantivos femininos, indicando que devem ser tomados como informação conhecida."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/la"
+   "wiki": "https://es.wiktionary.org/wiki/la",
+   "defEn": "Definite article: the (feminine)."
   },
   "escopeta": {
    "lema": "escopeta",
@@ -1000,9 +1017,9 @@
    "def": [
     "Arma de fogo portátil com um ou dois canos longos, que dispara munição de pequeno calibre ou cartuchos, muito usada como arma de caça."
    ],
-   "card": "+escopeta",
-   "leitura": true,
-   "wiki": "https://es.wiktionary.org/wiki/escopeta"
+   "card": "p1419",
+   "wiki": "https://es.wiktionary.org/wiki/escopeta",
+   "manual": true
   },
   "cace": {
    "lema": "cazar",
@@ -1011,8 +1028,9 @@
    "def": [
     "Buscar ou seguir as aves, feras e outros animais para pegá-los e matá-los."
    ],
-   "card": "+cazar",
-   "wiki": "https://es.wiktionary.org/wiki/cazar"
+   "card": "p1411",
+   "wiki": "https://es.wiktionary.org/wiki/cazar",
+   "manual": true
   },
   "bichos": {
    "lema": "bicho",
@@ -1021,8 +1039,9 @@
    "def": [
     "Ser vivo, geralmente com capacidade de movimento."
    ],
-   "card": "+bicho",
-   "wiki": "https://es.wiktionary.org/wiki/bicho"
+   "card": "p1362",
+   "wiki": "https://es.wiktionary.org/wiki/bicho",
+   "manual": true
   },
   "del": {
    "lema": "del",
@@ -1031,7 +1050,8 @@
     "Contração da preposição «de» com o artigo «el»."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/del"
+   "wiki": "https://es.wiktionary.org/wiki/del",
+   "defEn": "Contraction of «de» + «el»: of the, from the."
   },
   "traerme": {
    "partes": [
@@ -1050,7 +1070,8 @@
      "def": [
       "Pronome pessoal de primeira pessoa do singular, para os objetos direto e indireto."
      ],
-     "g": "gramatical"
+     "g": "gramatical",
+     "defEn": "Personal pronoun: me, to me."
     }
    ]
   },
@@ -1062,7 +1083,8 @@
     "Artigo definido masculino plural."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/los"
+   "wiki": "https://es.wiktionary.org/wiki/los",
+   "defEn": "Definite article: the (masculine plural)."
   },
   "cueros": {
    "lema": "cuero",
@@ -1071,8 +1093,9 @@
    "def": [
     "Pele grossa e dura que cobre a carne de alguns animais."
    ],
-   "card": "+cuero",
-   "wiki": "https://es.wiktionary.org/wiki/cuero"
+   "card": "p1369",
+   "wiki": "https://es.wiktionary.org/wiki/cuero",
+   "manual": true
   },
   "yo": {
    "lema": "yo",
@@ -1081,7 +1104,8 @@
     "Usa-se para designar o falante ou enunciador como sujeito da frase."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/yo"
+   "wiki": "https://es.wiktionary.org/wiki/yo",
+   "defEn": "Personal pronoun: I."
   },
   "le": {
    "lema": "le",
@@ -1090,7 +1114,8 @@
     "Dativo dos pronomes pessoais de terceira pessoa: «él», «ella» e «ello»."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/le"
+   "wiki": "https://es.wiktionary.org/wiki/le",
+   "defEn": "Personal pronoun: him, her, you (formal), to him, to her."
   },
   "daré": {
    "lema": "dar",
@@ -1118,8 +1143,9 @@
    "def": [
     "Diz-se do dinheiro que se paga por antecipação."
    ],
-   "card": "+adelantado",
-   "wiki": "https://es.wiktionary.org/wiki/adelantado"
+   "card": "p1355",
+   "wiki": "https://es.wiktionary.org/wiki/adelantado",
+   "manual": true
   },
   "sus": {
    "lema": "su",
@@ -1129,7 +1155,8 @@
     "Adjetivo possessivo de terceira pessoa: dele, dela, deles, delas."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/su"
+   "wiki": "https://es.wiktionary.org/wiki/su",
+   "defEn": "Possessive: his, her, its, their, your (formal)."
   },
   "hermanitos": {
    "lema": "hermanito",
@@ -1138,9 +1165,9 @@
    "def": [
     "Diminutivo de «hermano»."
    ],
-   "card": "+hermanito",
-   "leitura": true,
-   "wiki": "https://es.wiktionary.org/wiki/hermanito"
+   "card": "p1424",
+   "wiki": "https://es.wiktionary.org/wiki/hermanito",
+   "manual": true
   },
   "puedan": {
    "lema": "poder",
@@ -1179,7 +1206,8 @@
     "Artigo definido masculino singular. Antecede substantivos masculinos, indicando que devem ser tomados como informação conhecida."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/el"
+   "wiki": "https://es.wiktionary.org/wiki/el",
+   "defEn": "Definite article: the (masculine)."
   },
   "enfermo": {
    "lema": "enfermo",
@@ -1236,7 +1264,8 @@
     "Usa-se para construir frases comparativas."
    ],
    "g": "gramatical",
-   "wiki": "https://es.wiktionary.org/wiki/que"
+   "wiki": "https://es.wiktionary.org/wiki/que",
+   "defEn": "Conjunction: that."
   },
   "misiones": {
    "lema": "Misiones",
@@ -1245,7 +1274,8 @@
     "Província da Argentina."
    ],
    "g": "nome",
-   "wiki": "https://es.wiktionary.org/wiki/Misiones"
+   "wiki": "https://es.wiktionary.org/wiki/Misiones",
+   "defEn": "Proper noun: Misiones, a province in the northeast of Argentina."
   },
   "todavía": {
    "lema": "todavía",
