@@ -960,9 +960,12 @@ window.TaioeCardsApp = function (ctx) {
   /* os nomes, se couberem na linha do topo; senão, as siglas */
   function ajustarCursosDoTopo() {
     if (caixaDosCursos.hidden) return;
-    const topo = caixaDosCursos.parentNode;
     caixaDosCursos.classList.remove('curtos');
-    if (topo.scrollWidth > topo.clientWidth + 1) caixaDosCursos.classList.add('curtos');
+    if (caixaDosCursos.scrollWidth > caixaDosCursos.clientWidth + 1) caixaDosCursos.classList.add('curtos');
+    /* se nem as siglas couberem, a fileira rola por dentro: a língua atual fica à vista */
+    const atual = caixaDosCursos.querySelector('[aria-current="true"]');
+    if (atual) caixaDosCursos.scrollLeft = atual.offsetLeft - caixaDosCursos.offsetLeft
+      - (caixaDosCursos.clientWidth - atual.offsetWidth) / 2;
   }
   async function carregarCursosDoTopo() {
     const guardados = lerLocal(CHAVE_CURSOS);
@@ -981,7 +984,14 @@ window.TaioeCardsApp = function (ctx) {
     caixaDosCursos.querySelectorAll('.curso-topo').forEach(x => { x.disabled = true; });
     irParaCurso(b.dataset.curso);
   });
-  window.addEventListener('resize', ajustarCursosDoTopo);
+  /* a barra do Chrome muda só a altura: refazer a fileira nessa hora mexeria na página em plena rolagem */
+  let larguraDosCursos = document.documentElement.clientWidth;
+  window.addEventListener('resize', () => {
+    const largura = document.documentElement.clientWidth;
+    if (largura === larguraDosCursos) return;
+    larguraDosCursos = largura;
+    ajustarCursosDoTopo();
+  });
 
   /* Qual botão do topo corresponde a cada tela. A de card não tem botão:
      ela é para onde o «começar» leva, não um destino do menu. */

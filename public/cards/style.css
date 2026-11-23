@@ -60,7 +60,7 @@ body{
   background:rgba(13,22,20,.88);backdrop-filter:blur(8px);
   position:sticky;top:0;z-index:10;
 }
-.marca{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.3px;color:inherit;text-decoration:none}
+.marca{flex:none;display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.3px;color:inherit;text-decoration:none}
 /* a logo (taioe/logo/LOGO.md, a 14e): máscara pintada com a cor do texto; no link para o hub,
    o texto «Taioé» fica só para leitor de tela */
 .marca::before{content:"";flex:none;height:36px;aspect-ratio:384/355;background:currentColor;
@@ -69,7 +69,7 @@ body{
 .marca span{color:var(--acento)}
 .placar{margin-left:auto;font-size:13px;color:var(--texto-2);white-space:nowrap}
 .placar b{color:var(--texto)}
-.acoes-topo{display:flex;gap:6px}
+.acoes-topo{flex:none;display:flex;gap:6px}
 /* o «hidden» que o inicio.js (a escolha do curso) e o começo do app usam:
    sem isto, o display:flex acima vencia o atributo e os botões ficavam */
 .acoes-topo[hidden]{display:none}
@@ -96,9 +96,13 @@ body{
    Um botão por curso começado, à esquerda do menu; o atual fica cheio, na cor
    de destaque, e os outros só com o contorno. Quando os nomes não cabem na
    linha do topo, viram a sigla da língua («curtos»). */
-.cursos-topo{display:flex;gap:6px}
+/* Com muitas línguas a fileira rola por dentro: se alargasse o topo, a página inteira ficava mais
+   larga que a tela, e ao sumir a barra do Chrome a rolagem voltava ao começo (relato de 23/11). */
+.cursos-topo{display:flex;gap:6px;min-width:0;overflow-x:auto;scrollbar-width:none}
+.cursos-topo::-webkit-scrollbar{display:none}
 .cursos-topo[hidden]{display:none}
 .curso-topo{
+  flex:none;
   height:36px;padding:0 11px;border-radius:10px;
   border:1px solid var(--borda);background:transparent;color:var(--texto-2);
   font:inherit;font-size:13.5px;font-weight:700;white-space:nowrap;cursor:pointer;
