@@ -98,7 +98,9 @@ body{
    linha do topo, viram a sigla da língua («curtos»). */
 /* Com muitas línguas a fileira rola por dentro: se alargasse o topo, a página inteira ficava mais
    larga que a tela, e ao sumir a barra do Chrome a rolagem voltava ao começo (relato de 23/11). */
-.cursos-topo{display:flex;gap:6px;min-width:0;overflow-x:auto;scrollbar-width:none}
+.cursos-topo{display:flex;gap:6px;min-width:0;overflow-x:auto;scrollbar-width:none;
+  position:sticky;top:var(--altura-topo,60px);z-index:9;padding:8px 13px;
+  background:rgba(13,22,20,.94);border-bottom:1px solid var(--borda)}
 .cursos-topo::-webkit-scrollbar{display:none}
 .cursos-topo[hidden]{display:none}
 .curso-topo{
@@ -549,8 +551,6 @@ label input:focus{outline:0;border-color:var(--acento)}
   /* sem o placar, nada empurrava o botão do menu para o canto; com as
      línguas em estudo, são elas que vão para a direita, junto do menu */
   .acoes-topo{margin-left:auto}
-  .cursos-topo{margin-left:auto}
-  .cursos-topo:not([hidden]) + .acoes-topo{margin-left:0}
   main{padding:16px 13px 30px}
 }
 
@@ -819,3 +819,21 @@ label input:focus{outline:0;border-color:var(--acento)}
 .vitrine-traducao{margin:2px 0 10px;color:var(--texto-2);font-size:14px}
 .vitrine-conta{margin:0 0 4px;font-size:13.5px;color:var(--texto-2);line-height:1.55}
 .vitrine-conta b{color:var(--texto)}
+
+/* ── o fluxo único das línguas (23/11/2026) ── */
+.aviso-ciclo{margin:0 0 8px;text-align:center;font-size:13px;font-weight:700;color:var(--texto-2)}
+.proporcao{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.proporcao-linha{display:grid;grid-template-columns:minmax(0,1fr) 40px 52px 40px 82px;align-items:center;gap:6px;
+  padding:10px;border:1px solid var(--borda);border-radius:10px}
+.proporcao-linha.pausada{opacity:.68}
+.proporcao-info{display:flex;flex-direction:column;min-width:0}
+.proporcao-info strong{overflow-wrap:anywhere}
+.proporcao-info span{font-size:12.5px;color:var(--texto-2)}
+.proporcao-botao{min-width:0;height:40px;padding:0;margin:0}
+.proporcao-pausa{font-size:13px}
+.proporcao-pct{text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.proporcao-pe{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px;color:var(--texto-2)}
+@media (max-width:420px){
+  .proporcao-linha{grid-template-columns:40px 52px 40px minmax(0,1fr)}
+  .proporcao-info{grid-column:1/-1}
+}

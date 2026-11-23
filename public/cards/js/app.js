@@ -189,7 +189,9 @@ window.TaioeCardsApp = function (ctx) {
     'tela-comeco', 'comeco-conteudo', 'meta-desafio', 'meta-teste', 'aviso-teste', 'aviso-previa', 'btn-refazer',
     'btn-recomecar', 'recomecar-fundo', 'recomecar-titulo', 'recomecar-vistos', 'recomecar-pede',
     'recomecar-frase', 'btn-recomecar-sim', 'btn-recomecar-nao',
-    'arquivar-fundo', 'arquivar-titulo', 'arquivar-texto', 'btn-arquivar-sim', 'btn-arquivar-nao'
+    'arquivar-fundo', 'arquivar-titulo', 'arquivar-texto', 'btn-arquivar-sim', 'btn-arquivar-nao',
+    /* o fluxo único das línguas (23/11/2026) */
+    'btn-proporcao', 'tela-proporcao', 'proporcao-conteudo', 'aviso-ciclo'
   ].forEach(id => { el[id] = document.getElementById(id); });
 
   /* ═══════════════ estado ═══════════════ */
@@ -935,11 +937,29 @@ window.TaioeCardsApp = function (ctx) {
      para aparecer já na abertura, e a conta a confirma logo depois. */
   const caixaDosCursos = document.getElementById('cursos-topo');
   const CHAVE_CURSOS = 'cards:cursos:' + ctx.uid;
+  const TELAS_COM_ABAS = new Set(['tela-painel', 'tela-cards', 'tela-texto']);
+  let telaAtual = null;
+  let cursosComecados = [];
+  const ORDEM_FLUXO = ctx.cursosDaLingua || [];
+  const FLUXO_LIGADO = ORDEM_FLUXO.includes(ctx.curso);
+  const CHAVE_FLUXO = 'cards:fluxo:' + ctx.uid;
+  const CHAVE_SEGUIR = 'cards:fluxo-seguir:' + ctx.uid;
+  const CHAVE_ABA = 'cards:fluxo-aba:' + ctx.uid;
+  let fluxo = lerLocal(CHAVE_FLUXO) || {};
+  let fluxoSemServidor = false;
+  let esperaFluxo = null;
+  let trocandoDeLingua = false;
+  let pulosDoFluxo = 0;
+  const proporcaoAtual = () => (FLUXO_LIGADO ? TaioeCiclo.limpar(fluxo.proporcao, ORDEM_FLUXO) : null);
+  /* o que atravessa o recarregar da troca de língua, só nesta aba */
+  const lerSessao = k => { try { const v = JSON.parse(sessionStorage.getItem(k)); sessionStorage.removeItem(k); return v; } catch (e) { return null; } };
+  lerSessao.gravar = (k, v) => { try { sessionStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
   function montarCursosDoTopo(comecados) {
-    const ja = new Set((comecados || []).concat([ctx.curso]));
+    const prop = proporcaoAtual();
+    const ja = new Set((comecados || []).concat([ctx.curso], prop ? TaioeCiclo.ativos(prop, ORDEM_FLUXO) : []));
+    cursosComecados = comecados || [];
     const cursos = (ctx.cursosDaLingua || [ctx.curso]).filter(k => ja.has(k));
     caixaDosCursos.textContent = '';
-    caixaDosCursos.hidden = cursos.length < 2 || document.querySelector('.acoes-topo').hidden;
     cursos.forEach(k => {
       const b = document.createElement('button');
       b.className = 'curso-topo';
@@ -955,6 +975,11 @@ window.TaioeCardsApp = function (ctx) {
       b.append(nome, sigla);
       caixaDosCursos.appendChild(b);
     });
+    acertarAbas();
+  }
+  /* desde 23/11/2026 as línguas são abas, fixas no alto, só onde se escolhe o que ver */
+  function acertarAbas() {
+    caixaDosCursos.hidden = !TELAS_COM_ABAS.has(telaAtual) || caixaDosCursos.children.length < 2;
     ajustarCursosDoTopo();
   }
   /* os nomes, se couberem na linha do topo; senão, as siglas */
@@ -976,12 +1001,161 @@ window.TaioeCardsApp = function (ctx) {
     if (!r || r.error || !Array.isArray(r.data)) return;
     const lista = r.data.map(x => x.curso);
     guardarLocal(CHAVE_CURSOS, lista);
+    await iniciarFluxo(lista);
     montarCursosDoTopo(lista);
   }
+
+  /* ── todas as línguas num fluxo só (pedido do Gere, 23/11/2026; contas em ciclo.js) ──
+     Cada língua continua com o próprio progresso e a própria fila. O ciclo só decide de qual
+     língua vem o próximo card, e a troca de bloco recarrega a página no curso da vez. A
+     proporção e a posição moram no aparelho e, com a tabela cards.fluxo, também na conta. */
+  async function iniciarFluxo(comecados) {
+    if (!FLUXO_LIGADO) return;
+    const r = await ctx.sb.schema('cards').from('fluxo').select('proporcao, posicao')
+      .eq('usuario_id', ctx.uid).maybeSingle().then(x => x, () => ({ error: true }));
+    if (r && r.error) fluxoSemServidor = true;
+    else if (r && r.data) fluxo = TaioeCiclo.mesclar(fluxo, r.data);
+    if (!proporcaoAtual()) {
+      const ja = new Set(comecados.concat([ctx.curso]));
+      /* data antiga de propósito: a divisão inicial nunca passa por cima de uma escolha gravada */
+      fluxo.proporcao = Object.assign(TaioeCiclo.iguais(ORDEM_FLUXO.filter(k => ja.has(k))), { em: '2000-01-01T00:00:00.000Z' });
+    }
+    gravarFluxo();
+    if (!el['tela-proporcao'].classList.contains('oculto')) desenharProporcao();
+  }
+  function gravarFluxo() {
+    guardarLocal(CHAVE_FLUXO, fluxo);
+    clearTimeout(esperaFluxo);
+    esperaFluxo = setTimeout(enviarFluxo, 3000);
+  }
+  async function enviarFluxo() {
+    clearTimeout(esperaFluxo);
+    if (fluxoSemServidor || !fluxo.proporcao) return;
+    const r = await ctx.sb.schema('cards').rpc('gravar_fluxo', { proporcao: fluxo.proporcao, posicao: fluxo.posicao || null })
+      .then(x => x, () => ({ error: true }));
+    if (r && r.error) fluxoSemServidor = true;
+  }
+  function fluxoContar() {
+    const p = proporcaoAtual();
+    if (!p) return;
+    fluxo.posicao = Object.assign(TaioeCiclo.contar(p, ORDEM_FLUXO, fluxo.posicao, ctx.curso), { em: new Date().toISOString() });
+    gravarFluxo();
+  }
+  async function irAoBloco(k, pulos) {
+    trocandoDeLingua = true;
+    lerSessao.gravar(CHAVE_SEGUIR, { pulos: pulos || 0 });
+    el['tela-card'].classList.add('oculto');
+    el['tela-inicio'].classList.add('oculto');
+    const porta = document.getElementById('porta-texto');
+    porta.removeAttribute('data-i18n');
+    porta.textContent = t('porta.abrindoCurso', { L: t('lingua.' + ctx.linguaDoCurso(k)) });
+    document.getElementById('tela-porta').classList.remove('oculto');
+    /* rede lenta não prende a troca: o que não subiu fica guardado e sobe depois */
+    await Promise.race([enviarFluxo(), new Promise(ok => setTimeout(ok, 2500))]);
+    await irParaCurso(k);
+  }
+  /* A vez é de outra língua? Sem rede fica nesta: a página não recarregaria. */
+  function fluxoTrocar() {
+    if (trocandoDeLingua) return true;
+    const p = proporcaoAtual();
+    if (!p || navigator.onLine === false) return false;
+    const r = TaioeCiclo.resolver(p, ORDEM_FLUXO, fluxo.posicao);
+    if (!r || r.curso === ctx.curso) return false;
+    irAoBloco(r.curso);
+    return true;
+  }
+  /* esta língua não tem card para dar agora: passa a vez, sem rodar em círculo */
+  function fluxoPularBloco() {
+    const p = proporcaoAtual();
+    if (!p || navigator.onLine === false) return false;
+    const n = TaioeCiclo.ativos(p, ORDEM_FLUXO).length;
+    if (n < 2 || pulosDoFluxo >= n - 1) return false;
+    const r = TaioeCiclo.pular(p, ORDEM_FLUXO, ctx.curso);
+    if (!r || r.curso === ctx.curso) return false;
+    fluxo.posicao = Object.assign(r, { em: new Date().toISOString() });
+    guardarLocal(CHAVE_FLUXO, fluxo);
+    irAoBloco(r.curso, pulosDoFluxo + 1);
+    return true;
+  }
+  function mostrarAvisoDoCiclo() {
+    const p = proporcaoAtual();
+    const r = p && TaioeCiclo.resolver(p, ORDEM_FLUXO, fluxo.posicao);
+    const ver = !!r && r.curso === ctx.curso && TaioeCiclo.ativos(p, ORDEM_FLUXO).length > 1;
+    el['aviso-ciclo'].classList.toggle('oculto', !ver);
+    if (ver) el['aviso-ciclo'].textContent = t('ciclo.aviso', { L: ctx.nomeDoCurso(ctx.curso), n: r.feitos + 1, total: p.cotas[ctx.curso] });
+  }
+
+  /* ── a página da proporção ── */
+  function mudarProporcao(nova) {
+    fluxo.proporcao = Object.assign({}, nova, { em: new Date().toISOString() });
+    gravarFluxo();
+    montarCursosDoTopo(cursosComecados);
+    desenharProporcao();
+  }
+  function desenharProporcao() {
+    const caixa = el['proporcao-conteudo'];
+    const p = proporcaoAtual() || TaioeCiclo.iguais([ctx.curso]);
+    const ligadas = TaioeCiclo.ativos(p, ORDEM_FLUXO).length;
+    caixa.textContent = '';
+    ORDEM_FLUXO.forEach(k => {
+      const cota = p.cotas[k] || 0;
+      const nome = ctx.nomeDoCurso(k);
+      const linha = document.createElement('div');
+      linha.className = 'proporcao-linha' + (cota ? '' : ' pausada');
+      const info = document.createElement('div');
+      info.className = 'proporcao-info';
+      const n = document.createElement('strong');
+      n.textContent = nome;
+      const d = document.createElement('span');
+      d.textContent = cota ? tn('proporcao.porCiclo', cota) : t('proporcao.pausada');
+      info.append(n, d);
+      const botao = (txt, rotulo, acao, off) => {
+        const b = document.createElement('button');
+        b.className = 'secundario proporcao-botao';
+        b.textContent = txt;
+        b.setAttribute('aria-label', rotulo);
+        b.disabled = !!off;
+        b.addEventListener('click', acao);
+        return b;
+      };
+      const unica = cota > 0 && ligadas === 1;
+      const pct = document.createElement('output');
+      pct.className = 'proporcao-pct';
+      pct.textContent = TaioeCiclo.percentual(p, ORDEM_FLUXO, k) + '%';
+      const pausa = botao(t(cota ? 'proporcao.pausar' : 'proporcao.retomar'), t(cota ? 'proporcao.pausar' : 'proporcao.retomar') + ': ' + nome,
+        () => mudarProporcao(cota ? TaioeCiclo.pausar(p, ORDEM_FLUXO, k) : TaioeCiclo.ajustar(p, ORDEM_FLUXO, k, 1)), unica);
+      pausa.classList.add('proporcao-pausa');
+      linha.append(info,
+        botao('−', t('proporcao.menos', { L: nome }), () => mudarProporcao(TaioeCiclo.ajustar(p, ORDEM_FLUXO, k, -1)), !cota || unica),
+        pct,
+        botao('+', t('proporcao.mais', { L: nome }), () => mudarProporcao(TaioeCiclo.ajustar(p, ORDEM_FLUXO, k, 1)), cota >= TaioeCiclo.total(p, ORDEM_FLUXO)),
+        pausa);
+      caixa.appendChild(linha);
+    });
+    const pe = document.createElement('div');
+    pe.className = 'proporcao-pe';
+    const ciclo = document.createElement('span');
+    ciclo.textContent = t('proporcao.ciclo', { n: TaioeCiclo.total(p, ORDEM_FLUXO) });
+    const igual = document.createElement('button');
+    igual.className = 'secundario';
+    igual.textContent = t('proporcao.igual');
+    igual.disabled = !!p.igual;
+    igual.addEventListener('click', () => mudarProporcao(TaioeCiclo.iguais(TaioeCiclo.ativos(p, ORDEM_FLUXO))));
+    pe.append(ciclo, igual);
+    caixa.appendChild(pe);
+  }
+  function abrirProporcao() {
+    desenharProporcao();
+    mostrar('tela-proporcao');
+  }
+  el['btn-proporcao'].hidden = !FLUXO_LIGADO;
+  el['btn-proporcao'].addEventListener('click', abrirProporcao);
   caixaDosCursos.addEventListener('click', e => {
     const b = e.target.closest('.curso-topo');
     if (!b || b.getAttribute('aria-current') === 'true' || b.disabled) return;
     caixaDosCursos.querySelectorAll('.curso-topo').forEach(x => { x.disabled = true; });
+    /* a aba troca só o que se vê: a mesma tela, na outra língua, e o ciclo fica onde estava */
+    lerSessao.gravar(CHAVE_ABA, telaAtual);
     irParaCurso(b.dataset.curso);
   });
   /* a barra do Chrome muda só a altura: refazer a fileira nessa hora mexeria na página em plena rolagem */
@@ -998,13 +1172,14 @@ window.TaioeCardsApp = function (ctx) {
   const BOTAO_DA_TELA = {
     'tela-inicio': 'btn-inicio', 'tela-cards': 'btn-cards',
     'tela-painel': 'btn-painel', 'tela-config': 'btn-config',
-    'tela-texto': 'btn-texto'
+    'tela-texto': 'btn-texto', 'tela-proporcao': 'btn-proporcao'
   };
 
   function mostrar(tela) {
     fecharMenu();
     if (tela !== 'tela-texto') textosDaAbertura = false;
-    ['tela-inicio', 'tela-comeco', 'tela-card', 'tela-painel', 'tela-config', 'tela-cards', 'tela-texto']
+    telaAtual = tela;
+    ['tela-inicio', 'tela-comeco', 'tela-card', 'tela-painel', 'tela-config', 'tela-cards', 'tela-texto', 'tela-proporcao']
       .forEach(t => el[t].classList.toggle('oculto', t !== tela));
     el.dica.hidden = true;
     const aceso = BOTAO_DA_TELA[tela];
@@ -1014,8 +1189,7 @@ window.TaioeCardsApp = function (ctx) {
     const nav = document.querySelector('.acoes-topo');
     if (nav) nav.hidden = tela === 'tela-comeco';
     acertarMarca(tela === 'tela-inicio' || tela === 'tela-comeco');
-    if (caixaDosCursos.children.length > 1) caixaDosCursos.hidden = tela === 'tela-comeco';
-    ajustarCursosDoTopo();
+    acertarAbas();
     /* Tela nova abre no topo. Sem isto o painel herdava a rolagem de onde
        se estava — no meio do feedback de um card, em geral — e abria já nos
        gráficos. O card fica de fora: ele tem a sua subida (voltarAoTopo). */
@@ -1455,19 +1629,26 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   function proximoCard() {
+    if (trocandoDeLingua) return;
+    /* o verso que acabou de se abrir aparece antes de a vez passar à outra língua */
+    if (!TRILHAS || textosAtivosAgora().length) {
+      recolherFrasesLiberadas();
+      const lido = textoParaLer();
+      if (lido) { mostrarRecompensa(lido); return; }
+    }
+    if (fluxoTrocar()) return;
     /* no modo trilhas, sem texto escolhido não há o que estudar: a escolha vem antes */
     if (TRILHAS && !textosAtivosAgora().length) { abrirTexto(); return; }
-    recolherFrasesLiberadas();
-    const lido = textoParaLer();
-    if (lido) { mostrarRecompensa(lido); return; }
     if (window.scrollY >= 2) el['tela-card'].style.minHeight = el['tela-card'].offsetHeight + 'px';
     /* o desafio e o teste do presumido, se vierem, são marcados por proximoNovo durante a escolha */
     desafioAtual = null;
     testeAtual = null;
     const id = tirarProximoId();
-    if (!id) { irParaInicio(); return; }
+    if (!id) { if (!fluxoPularBloco()) irParaInicio(); return; }
+    pulosDoFluxo = 0;
     const bruto = PORID_FONTE[id];
     if (!bruto) return proximoCard();
+    mostrarAvisoDoCiclo();
     /* O gênero é sorteado a cada aparição, e vale para o card inteiro: a
        pergunta, a resposta certa, as aceitas e os distratores saem todos do
        mesmo lado. O outro lado fica guardado para a nota. */
@@ -2437,6 +2618,7 @@ window.TaioeCardsApp = function (ctx) {
 
     progresso.totais.respostas++;
     if (r.acertou) progresso.totais.acertos++;
+    fluxoContar();
 
     /* Um ponto por resposta, para o gráfico do painel: as duas direções e os
        dominados divididos pelos seis degraus. Nove números; mil respostas
@@ -4463,7 +4645,8 @@ window.TaioeCardsApp = function (ctx) {
     /* os outros cursos para quem fala a mesma língua, um botão cada */
     const outros = el['cfg-outros-cursos'];
     outros.textContent = '';
-    (ctx.outrosCursos || []).forEach(k => {
+    /* no fluxo único, quem liga outra língua é a página da proporção */
+    (FLUXO_LIGADO ? [] : ctx.outrosCursos || []).forEach(k => {
       const b = document.createElement('button');
       b.className = 'secundario';
       b.dataset.curso = k;
@@ -4480,7 +4663,7 @@ window.TaioeCardsApp = function (ctx) {
      guardado na conta e no aparelho, e nada se perde na troca). */
   async function irParaCurso(k) {
     salvarProgresso(true);
-    await Sinc.antesDeSair().catch(() => 0);
+    await Promise.race([Sinc.antesDeSair().catch(() => 0), new Promise(ok => setTimeout(ok, 4000))]);
     await ctx.trocarCurso(k);
   }
 
@@ -4751,8 +4934,14 @@ window.TaioeCardsApp = function (ctx) {
   /* a primeira entrada no curso (ou a avaliação que ficou pela metade) abre
      no começo; o resto, na página inicial */
   if (TRILHAS) esquecerLocal(CHAVE_COMECO);
-  if (!retomarComeco()) {
+  /* a troca de língua recarregou a página: segue no card, ou na mesma aba */
+  const seguirNoFluxo = lerSessao(CHAVE_SEGUIR);
+  const abaDoFluxo = lerSessao(CHAVE_ABA);
+  if (seguirNoFluxo) pulosDoFluxo = seguirNoFluxo.pulos || 0;
+  const emComeco = retomarComeco();
+  if (!emComeco) {
     if (textoParaTrocar) { renderizarTexto(textoParaTrocar); mostrar('tela-texto'); }
+    else if (seguirNoFluxo || abaDoFluxo) mostrar('tela-inicio');
     /* no modo trilhas, quem ainda não escolheu texto começa pela escolha */
     else if (TRILHAS && !textosAtivosAgora().length) { abrirTexto(); textosDaAbertura = true; }
     else mostrar('tela-inicio');
@@ -4806,6 +4995,12 @@ window.TaioeCardsApp = function (ctx) {
     t: t, local: LOCAL
   });
   Sinc.iniciar();
+  if (!emComeco && !textoParaTrocar) {
+    if (abaDoFluxo === 'tela-painel') abrirPainel();
+    else if (abaDoFluxo === 'tela-cards') abrirCards();
+    else if (abaDoFluxo === 'tela-texto') abrirTexto();
+    else if (seguirNoFluxo) proximoCard();
+  }
 
   window.TaioeCards = { progresso: () => progresso, sessao: () => sessao };
 };

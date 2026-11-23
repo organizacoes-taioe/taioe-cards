@@ -260,7 +260,8 @@
       /* o texto pedido pela Biblioteca («Aprender as palavras deste poema»), ou null */
       textoPedido: textoPedido || null,
       trocarCurso: async function (novo) {
-        await gravarCurso(sb, uid, perfil, novo);
+        await Promise.race([gravarCurso(sb, uid, perfil, novo).catch(function () {}),
+          new Promise(function (ok) { setTimeout(ok, 3000); })]);
         location.reload();
       },
       /* A pessoa trocou a língua nas configurações. Se é a do curso, só
@@ -360,7 +361,8 @@
     }
 
     if (!navigator.locks) { await abrir(sb, sessao, perfil, curso, textoPedido); return; }
-    navigator.locks.request('cards:estudo:' + uid + ':' + curso, { ifAvailable: true }, function (trava) {
+    /* desde o fluxo único (23/11/2026) a trava é da conta: duas abas andariam o mesmo ciclo */
+    navigator.locks.request('cards:estudo:' + uid, { ifAvailable: true }, function (trava) {
       if (!trava) {
         porta('porta.outraAba', true);
         return null;
