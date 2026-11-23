@@ -154,6 +154,21 @@ TEXTOS = {
     'liturgia-das-horas/te-deum-parte-2': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 95, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 2, "trecho": "parte 2", "biblioteca": None},
     'liturgia-das-horas/te-deum-parte-3': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 96, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 3, "trecho": "parte 3", "biblioteca": None},
     'liturgia-das-horas/te-deum-parte-4': {"titulo": "Te Deum", "autor": "Liturgia das Horas", "tipo": "prosa", "ordem": 97, "fonte": "Hino do Ofício das Leituras, nos domingos e festas", "obra": "liturgia-das-horas/te-deum", "parte": 4, "trecho": "parte 4", "biblioteca": None},
+    # orações, leva B (17/11/2026; LATIM.md §19)
+    'oracoes/litaniae-lauretanae-parte-1': {"titulo": "Litaniae Lauretanae", "autor": "Orações", "tipo": "prosa", "ordem": 98, "fonte": "Ladainha lauretana", "obra": "oracoes/litaniae-lauretanae", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/litaniae-lauretanae/"},
+    'oracoes/litaniae-lauretanae-parte-2': {"titulo": "Litaniae Lauretanae", "autor": "Orações", "tipo": "prosa", "ordem": 99, "fonte": "Ladainha lauretana", "obra": "oracoes/litaniae-lauretanae", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/litaniae-lauretanae/"},
+    'oracoes/litaniae-lauretanae-parte-3': {"titulo": "Litaniae Lauretanae", "autor": "Orações", "tipo": "prosa", "ordem": 100, "fonte": "Ladainha lauretana", "obra": "oracoes/litaniae-lauretanae", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/litaniae-lauretanae/"},
+    'oracoes/trium-puerorum-parte-1': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 101, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/trium-puerorum-parte-2': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 102, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/trium-puerorum-parte-3': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 103, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/trium-puerorum-parte-4': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 104, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 4, "trecho": "parte 4", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/trium-puerorum-parte-5': {"titulo": "Trium puerorum", "autor": "Orações", "tipo": "prosa", "ordem": 105, "fonte": "Trium puerorum (ação de graças depois da Missa)", "obra": "oracoes/trium-puerorum", "parte": 5, "trecho": "parte 5", "biblioteca": "/biblioteca/oracoes/trium-puerorum/"},
+    'oracoes/quicumque-parte-1': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 106, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 1, "trecho": "parte 1", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-2': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 107, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 2, "trecho": "parte 2", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-3': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 108, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 3, "trecho": "parte 3", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-4': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 109, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 4, "trecho": "parte 4", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-5': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 110, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 5, "trecho": "parte 5", "biblioteca": "/biblioteca/oracoes/quicumque/"},
+    'oracoes/quicumque-parte-6': {"titulo": "Quicumque", "autor": "Orações", "tipo": "prosa", "ordem": 111, "fonte": "Símbolo Quicumque", "obra": "oracoes/quicumque", "parte": 6, "trecho": "parte 6", "biblioteca": "/biblioteca/oracoes/quicumque/"},
 }
 
 # o que não tem card: nomes próprios, «amen» e «alleluia»
@@ -296,6 +311,14 @@ SEM_CARD = {
     'evae': {'lema': 'Eva', 'classe': 'nome próprio', 'g': 'nome', 'def': ['Eva, a primeira mulher.'], 'wiki': 'https://en.wiktionary.org/wiki/Eva#Latin'},
     'cherubim': {'lema': 'Cherubim', 'classe': 'nome (hebraico)', 'g': 'nome', 'def': ['Os Querubins, uma das ordens dos anjos (plural hebraico de cherub).'], 'wiki': 'https://en.wiktionary.org/wiki/cherubim#Latin'},
     'seraphim': {'lema': 'Seraphim', 'classe': 'nome (hebraico)', 'g': 'nome', 'def': ['Os Serafins, uma das ordens dos anjos (plural hebraico de seraph).'], 'wiki': 'https://en.wiktionary.org/wiki/seraphim#Latin'},
+    # orações, leva B (17/11/2026)
+    "anania": {"lema": "Ananias", "classe": "nome próprio", "g": "nome", "def": ["Ananias, um dos três jovens na fornalha de Babilônia (Dn 3)."]},
+    "azaria": {"lema": "Azarias", "classe": "nome próprio", "g": "nome", "def": ["Azarias, um dos três jovens na fornalha de Babilônia (Dn 3)."]},
+    "christus": {"lema": "Christus", "classe": "nome próprio", "g": "nome", "def": ["Cristo, o Ungido: título de Jesus."], "wiki": "https://en.wiktionary.org/wiki/Christus#Latin"},
+    "davidica": {"lema": "Davidicus", "classe": "adjetivo (nome próprio)", "g": "nome", "def": ["De Davi, o rei de Israel, antepassado de Jesus."]},
+    "laurentio": {"lema": "Laurentius", "classe": "nome próprio", "g": "nome", "def": ["São Lourenço, diácono de Roma, mártir queimado numa grelha em 258."]},
+    "mariae": {"lema": "Maria", "classe": "nome próprio", "g": "nome", "def": ["Maria, a mãe de Jesus (genitivo)."]},
+    "misael": {"lema": "Misael", "classe": "nome próprio", "g": "nome", "def": ["Misael, um dos três jovens na fornalha de Babilônia (Dn 3)."]},
 }
 
 PALAVRA = re.compile(r'[A-Za-zÀ-ÿ]+')
@@ -429,8 +452,8 @@ def montar():
                 raise SystemExit(f"{c['id']}: «versos» fora do texto")
             cobertos.update(range(a, b + 1))
         # o verso repetido (a antífona que volta, «Oremus.») não ganha trecho de novo: basta que cada
-        # palavra com card dele esteja num trecho de algum texto (cortes.py, so_letras)
-        em_trecho = {w for c in cards.values() if c.get('tipo') == 'frase' and c.get('texto')
+        # palavra com card dele esteja em alguma frase do baralho (trecho ou frase de uso; cortes.py, so_letras)
+        em_trecho = {w for c in cards.values() if c.get('tipo') == 'frase'
                      for w in re.findall(r'[a-z]+', c['la'].lower())}
         for n, v in enumerate(vs, 1):
             if n not in cobertos and all(w in em_trecho for p in v['palavras'] if p.get('c')

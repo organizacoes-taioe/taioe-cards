@@ -1140,7 +1140,7 @@ for (const b of baralhos) {
          ganha card de novo, porque o build recusa card repetido: basta que cada palavra dele esteja
          num trecho de algum texto (cortes.py, so_letras) */
       const letras = s => String(s || '').toLowerCase().replace(/[^a-z ]/g, ' ').split(/\s+/).filter(Boolean);
-      if (!b.palavrasEmTrecho) b.palavrasEmTrecho = new Set(b.cards.filter(c => c.tipo === 'frase' && c.texto).flatMap(c => letras(c.la)));
+      if (!b.palavrasEmTrecho) b.palavrasEmTrecho = new Set(b.cards.filter(c => c.tipo === 'frase').flatMap(c => letras(c.la)));
       linhas.forEach((l, i) => {
         if (cobertos.has(i + 1)) return;
         const comCard = (l.p || []).filter(x => Array.isArray(x) && x[1] && ((txt.destinos || {})[x[1]] || {}).card);
