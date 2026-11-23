@@ -42,3 +42,5 @@ jobs:
         run: node fonte/testar-leitura.js
       - name: "O «deu quase»: um erro, ou até 20% das letras"
         run: node fonte/testar-quase.js
+      - name: "O fluxo único das línguas: ciclo, proporção e posição"
+        run: node fonte/testar-ciclo.js

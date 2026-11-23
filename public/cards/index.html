@@ -7,15 +7,13 @@
 <meta name="theme-color" content="#12141c">
 <title>Taioé Cards</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇪🇸</text></svg>">
-<link rel="stylesheet" href="style.css?v=c4c0d6e3">
+<link rel="stylesheet" href="style.css?v=3a8d06f6">
 </head>
 <body>
 
 <header class="topo">
   <a class="marca" href="/" title="Taioé" data-i18n-attr="title:topo.marca">Taioé</a>
   <div class="placar" id="placar"></div>
-  <!-- as línguas em estudo, com dois ou mais cursos começados (24/10/2026) -->
-  <nav class="cursos-topo" id="cursos-topo" hidden data-i18n-attr="aria-label:topo.cursos"></nav>
   <!-- guarda o que se digita enquanto a tela sobe para o card novo (24/10/2026; ver segurarTeclas) -->
   <input id="captura" class="captura" type="text" tabindex="-1" aria-hidden="true"
          autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
@@ -63,6 +61,13 @@
         </svg>
         <span data-i18n="topo.textos"></span>
       </button>
+      <button class="item-menu" id="btn-proporcao" role="menuitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="8.4"/>
+          <path d="M12 3.6V12l6 5.9"/>
+        </svg>
+        <span data-i18n="topo.proporcao"></span>
+      </button>
       <button class="item-menu" id="btn-config" role="menuitem">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M4 7.2h16"/><path d="M4 12h16"/><path d="M4 16.8h16"/>
@@ -75,6 +80,8 @@
     </div>
   </nav>
 </header>
+<!-- as abas das línguas, fixas no alto das estatísticas, dos cards e dos textos (23/11/2026) -->
+<nav class="cursos-topo" id="cursos-topo" hidden data-i18n-attr="aria-label:topo.cursos"></nav>
 
 <main>
 
@@ -122,6 +129,7 @@
 
   <!-- ══════════ CARD ══════════ -->
   <section id="tela-card" class="tela oculto">
+    <p class="aviso-ciclo oculto" id="aviso-ciclo" role="status"></p>
     <div class="fichario">
     <div class="card">
       <span class="aba" id="aba-nivel"></span>
@@ -285,6 +293,14 @@
     <button class="secundario" data-voltar data-i18n="comum.voltar"></button>
   </section>
 
+  <!-- ══════════ PROPORÇÃO DAS LÍNGUAS (23/11/2026) ══════════ -->
+  <section id="tela-proporcao" class="tela oculto">
+    <button class="secundario" data-voltar data-i18n="comum.voltar"></button>
+    <h2 data-i18n="topo.proporcao"></h2>
+    <p class="ajuda" data-i18n="proporcao.apoio"></p>
+    <div id="proporcao-conteudo" class="proporcao"></div>
+  </section>
+
   <!-- ══════════ CONFIGURAÇÕES ══════════ -->
   <section id="tela-config" class="tela oculto">
     <h2 data-i18n="config.titulo"></h2>
@@ -403,7 +419,7 @@
   <span id="rodape-sync">•</span>
 </footer>
 
-<script src="js/textos-i18n.js?v=4471cf70"></script>
+<script src="js/textos-i18n.js?v=962bbdbc"></script>
 <script src="js/i18n.js?v=a99747e0"></script>
 <script src="vendor/supabase-js-2.117.2.js?v=16aeff36"></script>
 <script src="js/taioe-sessao.js?v=4c9cdaf3"></script>
@@ -412,7 +428,8 @@
 <script src="js/motor.js?v=938089a0"></script>
 <script src="js/armazem.js?v=131120d0"></script>
 <script src="js/sincronia.js?v=e9949e1c"></script>
-<script src="js/app.js?v=1e91b382"></script>
-<script src="js/inicio.js?v=2a2c438a"></script>
+<script src="js/ciclo.js?v=3b170064"></script>
+<script src="js/app.js?v=df3256fa"></script>
+<script src="js/inicio.js?v=8e968f8c"></script>
 </body>
 </html>
