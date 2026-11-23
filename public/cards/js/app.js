@@ -2235,7 +2235,7 @@ window.TaioeCardsApp = function (ctx) {
 
   function trazerBotaoParaAVista() {
     const alvo = el['btn-proximo'].classList.contains('oculto')
-      ? el['area-julgamento'] : el['btn-proximo'];
+      ? el['area-julgamento'] : el['btn-comentar-card'];   // o «Comentar» fica logo abaixo do «Próximo»
     if (!alvo) return;
     /* O alvo tem dois lados. Se a tela cresce no meio do caminho — o teclado
        que fecha tarde, a barra do navegador que some —, o que já se desceu
