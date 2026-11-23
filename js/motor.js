@@ -1925,10 +1925,21 @@ window.Motor = (function () {
   /* A palavra que a pessoa já reconhece lendo: sabida (dominada, arquivada,
      transparente ou presumida) ou com a ida fechada — o card já passou para a
      volta, e o erro na volta não o devolve à ida. É o que o verso espera. */
+  /* A flexão que dorme conta pelo card da terminação dela, e a variante pelo lema (LATIM.md §13):
+     basta a ida fechada DELE. Antes só o domínio dele contava, e o verso esperava o card da
+     terminação ser dominado (relato do Gere, 23/11/2026: o «Deum» da Regina caeli, que dorme em
+     «amicum» ou «puerum», demorava a liberar «Ora pro nobis Deum»). A forma que acordou conta pela
+     própria ida ou pela do card da terminação. */
   function idaFechada(id, estados, arquivados) {
     if (sabidaEm(id, estados, arquivados) !== Infinity) return true;
+    if (TERMINACAO[id] || RARA[id]) {
+      const quem = quemConta(id, estados);
+      if (quem !== id) return idaFechada(quem, estados, arquivados);
+    }
     const e = estados && estados[id];
-    return !!(e && e.vistas && ['inversa-multipla', 'inversa-escrita', 'consolidado'].indexOf(e.etapa) >= 0);
+    if (e && e.vistas && ['inversa-multipla', 'inversa-escrita', 'consolidado'].indexOf(e.etapa) >= 0) return true;
+    const ativo = acordada(id, estados);
+    return !!(ativo && idaFechada(ativo, estados, arquivados));
   }
 
   /* Quantos versos, a contar do primeiro, já podem ser lidos: todas as

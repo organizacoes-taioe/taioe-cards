@@ -332,6 +332,10 @@ const viu = { [aquae.id]: { vistas: 1, etapa: 'multipla', estreia: depois } };
 ok(M.ativoDaTerminacao(chaveAe, viu) === aquae.id && !M.adormecido(aquae.id, viu), 'o primeiro visto é o ativo');
 ok(M.adormecido(outraAe.id, viu) && M.quemConta(outraAe.id, viu) === aquae.id, 'as outras formas dormem e contam como ele');
 ok(M.sabidaEm(outraAe.id, viu, {}) === Infinity, 'com o ativo em estudo, a que dorme não está sabida');
+/* relato do Gere, 23/11/2026: o verso espera da forma que dorme só a ida fechada do ativo, e não o domínio */
+ok(!M.idaFechada(outraAe.id, viu, {}), 'com o ativo ainda na ida, a que dorme não está reconhecida');
+const naVolta = { [aquae.id]: { vistas: 4, etapa: 'inversa-multipla', estreia: depois } };
+ok(M.idaFechada(outraAe.id, naVolta, {}), 'com a ida do ativo fechada, a que dorme já se reconhece no verso');
 const quando = '2026-11-02T10:00:00Z';
 const dominou = { [aquae.id]: { vistas: 3, etapa: 'dominado', estreia: depois, dominadoEm: quando } };
 ok(M.sabidaEm(outraAe.id, dominou, {}) === Date.parse(quando), 'com o ativo dominado, a que dorme conta como sabida desde então');
