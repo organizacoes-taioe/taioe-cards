@@ -20267,5 +20267,2447 @@
   "requerTodas": [
    "la-p1294"
   ]
+ },
+ {
+  "id": "la-at316-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "miserere",
+  "frase": "Pater de caelis, Deus, miserere nobis.",
+  "de": "la-t316",
+  "pt": "miserere",
+  "distratores": [
+   "Pater",
+   "Deus",
+   "nobis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "miserere é o imperativo do depoente misereor (ter piedade), com o dativo nobis; Pater e Deus são vocativos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at317-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "miserere",
+  "frase": "Fili, Redemptor mundi, Deus, miserere nobis.",
+  "de": "la-t317",
+  "pt": "miserere",
+  "distratores": [
+   "Fili",
+   "mundi",
+   "nobis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "miserere é o imperativo do depoente misereor (ter piedade); Fili, Redemptor e Deus são vocativos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at318-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "miserere",
+  "frase": "Spiritus Sancte, Deus, miserere nobis.",
+  "de": "la-t318",
+  "pt": "miserere",
+  "distratores": [
+   "Spiritus",
+   "Deus",
+   "nobis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "miserere é o imperativo do depoente misereor (ter piedade); Spiritus, Sancte e Deus são vocativos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at319-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "miserere",
+  "frase": "Sancta Trinitas, unus Deus, miserere nobis.",
+  "de": "la-t319",
+  "pt": "miserere",
+  "distratores": [
+   "Trinitas",
+   "Deus",
+   "nobis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "miserere é o imperativo do depoente misereor (ter piedade); Trinitas e Deus são vocativos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at320-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "ora",
+  "frase": "Sancta Maria, ora pro nobis.",
+  "de": "la-t320",
+  "pt": "ora",
+  "distratores": [
+   "Sancta",
+   "Maria",
+   "nobis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "ora é o imperativo de orare (rezar): «reza»; Maria é o vocativo, a quem se pede.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at321-c0",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "Sancta",
+  "ocorrencia": 1,
+  "frase": "Sancta Dei Genetrix, sancta Virgo virginum",
+  "de": "la-t321",
+  "pt": "Genetrix",
+  "distratores": [
+   "Dei",
+   "Virgo",
+   "virginum"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Sancta (vocativo feminino) concorda com Genetrix, que vem depois de Dei; Dei é genitivo masculino e não concorda.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at336-c7",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "concepta",
+  "ocorrencia": 1,
+  "frase": "Regina Sanctorum omnium, regina sine labe originali concepta",
+  "de": "la-t336",
+  "pt": "regina",
+  "distratores": [
+   "labe",
+   "Sanctorum"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Concepta (particípio, vocativo feminino) concorda com Regina, que vem antes de sine labe originali; labe é ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at337-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "assumpta",
+  "ocorrencia": 1,
+  "frase": "Regina in caelum assumpta, regina sacratissimi Rosarii",
+  "de": "la-t337",
+  "pt": "Regina",
+  "distratores": [
+   "caelum",
+   "Rosarii"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Assumpta (particípio, vocativo feminino) concorda com Regina; caelum é acusativo neutro e Rosarii, genitivo masculino.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at339-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "parce",
+  "frase": "Agnus Dei, qui tollis peccata mundi, parce nobis, Domine.",
+  "de": "la-t339",
+  "pt": "parce",
+  "distratores": [
+   "tollis",
+   "peccata",
+   "Agnus"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "parce é o imperativo de parcere (poupar), o pedido da frase; tollis está na oração relativa «que tiras».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at340-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "exaudi",
+  "frase": "Agnus Dei, qui tollis peccata mundi, exaudi nos, Domine.",
+  "de": "la-t340",
+  "pt": "exaudi",
+  "distratores": [
+   "tollis",
+   "peccata",
+   "qui"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "exaudi é o imperativo de exaudire (atender), o pedido da frase; tollis está na oração relativa «que tiras».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at342-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Ora",
+  "frase": "Ora pro nobis, sancta Dei Genetrix.",
+  "de": "la-t342",
+  "pt": "Ora",
+  "distratores": [
+   "nobis",
+   "sancta",
+   "Genetrix"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Ora é o imperativo de orare (rezar): «reza»; Genetrix é o vocativo, a quem se pede.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at342-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "sancta",
+  "ocorrencia": 1,
+  "frase": "Ora pro nobis, sancta Dei Genetrix.",
+  "de": "la-t342",
+  "pt": "Genetrix",
+  "distratores": [
+   "Dei",
+   "nobis"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Sancta (vocativo feminino) concorda com Genetrix, depois de Dei; Dei é genitivo masculino e nobis é ablativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at343-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "efficiamur",
+  "frase": "Ut digni efficiamur promissionibus Christi.",
+  "de": "la-t343",
+  "pt": "efficiamur",
+  "distratores": [
+   "digni",
+   "promissionibus",
+   "Christi"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "efficiamur é presente do subjuntivo passivo («sejamos feitos»), com ut: finalidade.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at345-c0",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "perpetua",
+  "ocorrencia": 1,
+  "frase": "perpetua mentis et corporis sanitate gaudere:",
+  "de": "la-t345",
+  "pt": "sanitate",
+  "distratores": [
+   "mentis",
+   "corporis"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Perpetua (ablativo feminino) concorda com sanitate; mentis e corporis são genitivos, que completam sanitate.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at346-c1",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "gloriosa",
+  "ocorrencia": 1,
+  "frase": "et gloriosa beatae Mariae semper Virginis intercessione … a praesenti liberari tristitia",
+  "de": "la-t346",
+  "pt": "intercessione",
+  "distratores": [
+   "Mariae",
+   "Virginis",
+   "tristitia"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Gloriosa (ablativo feminino) concorda com intercessione, apesar de beatae Mariae semper Virginis entre os dois.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at346-c8",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "praesenti",
+  "ocorrencia": 1,
+  "frase": "et gloriosa beatae Mariae semper Virginis intercessione … a praesenti liberari tristitia",
+  "de": "la-t346",
+  "pt": "tristitia",
+  "distratores": [
+   "intercessione",
+   "Mariae"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Praesenti (ablativo feminino) concorda com tristitia; liberari, infinitivo, vem no meio.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Ladainha lauretana"
+ },
+ {
+  "id": "la-at348-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "cantemus",
+  "frase": "Trium puerorum cantemus hymnum, quem cantabant sancti in camino ignis, benedicentes Dominum.",
+  "de": "la-t348",
+  "pt": "cantemus",
+  "distratores": [
+   "cantabant",
+   "benedicentes",
+   "hymnum"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "Cantemus é o principal; cantabant é o verbo da oração relativa, e benedicentes é particípio.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at348-c10",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "benedicentes",
+  "ocorrencia": 1,
+  "frase": "Trium puerorum cantemus hymnum, quem cantabant sancti in camino ignis, benedicentes Dominum.",
+  "de": "la-t348",
+  "pt": "sancti",
+  "distratores": [
+   "puerorum",
+   "hymnum",
+   "Dominum"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Benedicentes é nominativo plural masculino: concorda com sancti (os santos bendizem), não com puerorum (genitivo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at351-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Benedicite",
+  "frase": "Benedicite, aquae omnes, quae super caelos sunt, Domino:",
+  "de": "la-t351",
+  "pt": "Benedicite",
+  "distratores": [
+   "sunt",
+   "quae",
+   "Domino"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "Benedicite é o verbo principal; sunt é o verbo da oração relativa (quae … sunt).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at352-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "benedicite",
+  "frase": "benedicite, omnes virtutes Domini, Domino.",
+  "de": "la-t352",
+  "pt": "benedicite",
+  "distratores": [
+   "virtutes",
+   "Domino",
+   "Domini"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Benedicite é a única forma verbal: «bendizei», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at362-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Benedicite",
+  "frase": "Benedicite, cete, et omnia, quae moventur in aquis, Domino:",
+  "de": "la-t362",
+  "pt": "Benedicite",
+  "distratores": [
+   "moventur",
+   "omnia",
+   "cete"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "Benedicite é o verbo principal; moventur é o verbo da oração relativa (quae moventur).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at363-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "benedicite",
+  "frase": "benedicite, omnes volucres caeli, Domino.",
+  "de": "la-t363",
+  "pt": "benedicite",
+  "distratores": [
+   "volucres",
+   "caeli",
+   "Domino"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Benedicite é a única forma verbal: «bendizei», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at368-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Benedicite",
+  "frase": "Benedicite, Anania, Azaria, Misael, Domino:",
+  "de": "la-t368",
+  "pt": "Benedicite",
+  "distratores": [
+   "Anania",
+   "Domino",
+   "Azaria"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Benedicite é a única forma verbal: «bendizei», imperativo plural; os nomes são os chamados.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at370-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Benedicamus",
+  "frase": "Benedicamus Patrem et Filium cum Sancto Spiritu:",
+  "de": "la-t370",
+  "pt": "Benedicamus",
+  "distratores": [
+   "Patrem",
+   "Filium",
+   "Spiritu"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Benedicamus é a única forma verbal: subjuntivo de exortação, «bendigamos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at372-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "es",
+  "frase": "Benedictus es, Domine, in firmamento caeli:",
+  "de": "la-t372",
+  "pt": "es",
+  "distratores": [
+   "Benedictus",
+   "Domine",
+   "firmamento"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "Benedictus es: o verbo é es; benedictus é o particípio que diz como o Senhor é: «bendito».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at374-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Laudate",
+  "frase": "Laudate Dominum in sanctis eius:",
+  "de": "la-t374",
+  "pt": "Laudate",
+  "distratores": [
+   "Dominum",
+   "sanctis",
+   "eius"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at375-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "laudate",
+  "frase": "laudate eum in firmamento virtutis eius.",
+  "de": "la-t375",
+  "pt": "laudate",
+  "distratores": [
+   "eum",
+   "firmamento",
+   "virtutis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at376-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Laudate",
+  "frase": "Laudate eum in virtutibus eius:",
+  "de": "la-t376",
+  "pt": "Laudate",
+  "distratores": [
+   "eum",
+   "virtutibus",
+   "eius"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at377-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "laudate",
+  "frase": "laudate eum secundum multitudinem magnitudinis eius.",
+  "de": "la-t377",
+  "pt": "laudate",
+  "distratores": [
+   "eum",
+   "multitudinem",
+   "magnitudinis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at378-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Laudate",
+  "frase": "Laudate eum in sono tubae:",
+  "de": "la-t378",
+  "pt": "Laudate",
+  "distratores": [
+   "eum",
+   "sono",
+   "tubae"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at379-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "laudate",
+  "frase": "laudate eum in psalterio et cithara.",
+  "de": "la-t379",
+  "pt": "laudate",
+  "distratores": [
+   "eum",
+   "psalterio",
+   "cithara"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at380-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Laudate",
+  "frase": "Laudate eum in tympano et choro:",
+  "de": "la-t380",
+  "pt": "Laudate",
+  "distratores": [
+   "eum",
+   "tympano",
+   "choro"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at381-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "laudate",
+  "frase": "laudate eum in chordis et organo.",
+  "de": "la-t381",
+  "pt": "laudate",
+  "distratores": [
+   "eum",
+   "chordis",
+   "organo"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at382-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Laudate",
+  "frase": "Laudate eum in cymbalis benesonantibus:",
+  "de": "la-t382",
+  "pt": "Laudate",
+  "distratores": [
+   "eum",
+   "cymbalis",
+   "benesonantibus"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at383-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "laudate",
+  "frase": "laudate eum in cymbalis iubilationis:",
+  "de": "la-t383",
+  "pt": "laudate",
+  "distratores": [
+   "eum",
+   "cymbalis",
+   "iubilationis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laudate é a única forma verbal: «louvai», imperativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at385-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "cantemus",
+  "frase": "Trium puerorum cantemus hymnum",
+  "de": "la-t385",
+  "pt": "cantemus",
+  "distratores": [
+   "hymnum",
+   "puerorum"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "cantemus está no subjuntivo (exortação): «cantemos»; hymnum é o objeto.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at386-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "cantabant",
+  "frase": "hymnum, quem cantabant sancti in camino ignis, benedicentes Dominum.",
+  "de": "la-t386",
+  "pt": "cantabant",
+  "distratores": [
+   "benedicentes",
+   "sancti",
+   "camino"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "cantabant é o único verbo conjugado (imperfeito); benedicentes é particípio, e o verbo de cantemus ficou no trecho anterior.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at386-c7",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "benedicentes",
+  "ocorrencia": 1,
+  "frase": "hymnum, quem cantabant sancti in camino ignis, benedicentes Dominum.",
+  "de": "la-t386",
+  "pt": "sancti",
+  "distratores": [
+   "Dominum",
+   "camino",
+   "ignis"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "benedicentes concorda com sancti (nominativo masculino plural): os santos é que bendizem. Dominum é acusativo, objeto.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at387-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Confiteantur",
+  "frase": "Confiteantur tibi, Domine, omnia opera tua.",
+  "de": "la-t387",
+  "pt": "Confiteantur",
+  "distratores": [
+   "opera",
+   "omnia",
+   "tua"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Confiteantur é depoente, no subjuntivo (desejo); o sujeito é omnia opera.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at388-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "benedicant",
+  "frase": "Et sancti tui benedicant tibi.",
+  "de": "la-t388",
+  "pt": "benedicant",
+  "distratores": [
+   "sancti",
+   "tibi",
+   "tui"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "benedicant está no subjuntivo (desejo); o sujeito é sancti tui.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at390-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Laetabuntur",
+  "frase": "Laetabuntur in cubilibus suis.",
+  "de": "la-t390",
+  "pt": "Laetabuntur",
+  "distratores": [
+   "cubilibus",
+   "suis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "Laetabuntur está no futuro, 3ª pessoa do plural; o sujeito vem só na terminação.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at392-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "da",
+  "frase": "Sed nomini tuo da gloriam.",
+  "de": "la-t392",
+  "pt": "da",
+  "distratores": [
+   "nomini",
+   "gloriam",
+   "tuo"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "da é o imperativo de dare, «dá»; o sujeito (tu) vem na terminação.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at393-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "mitigasti",
+  "frase": "Deus, qui tribus pueris mitigasti flammas ignium:",
+  "de": "la-t393",
+  "pt": "mitigasti",
+  "distratores": [
+   "pueris",
+   "flammas",
+   "ignium"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "mitigasti é o verbo da oração com «qui»: perfeito, 2ª pessoa do singular («abrandaste»).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at394-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "concede",
+  "frase": "concede propitius; ut nos famulos tuos non exurat flamma vitiorum.",
+  "de": "la-t394",
+  "pt": "concede",
+  "distratores": [
+   "exurat",
+   "propitius",
+   "nos"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "concede é o imperativo da oração principal; exurat é o subjuntivo da oração com ut.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at396-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "incipiat",
+  "frase": "ut cuncta nostra oratio et operatio a te semper incipiat",
+  "de": "la-t396",
+  "pt": "incipiat",
+  "distratores": [
+   "oratio",
+   "operatio",
+   "semper"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "incipiat está no subjuntivo (finalidade); o sujeito é oratio et operatio.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at397-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "finiatur",
+  "frase": "et per te coepta finiatur.",
+  "de": "la-t397",
+  "pt": "finiatur",
+  "distratores": [
+   "coepta",
+   "te",
+   "per"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "finiatur é o verbo conjugado, no subjuntivo passivo; coepta é particípio.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at399-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "tribuisti",
+  "frase": "qui beato Laurentio tribuisti tormentorum suorum incendia superare.",
+  "de": "la-t399",
+  "pt": "tribuisti",
+  "distratores": [
+   "superare",
+   "Laurentio",
+   "incendia"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "tribuisti é o verbo conjugado (perfeito, «concedeste»); superare é infinitivo e completa tribuisti.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Trium puerorum (ação de graças depois da Missa)"
+ },
+ {
+  "id": "la-at400-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "vult",
+  "frase": "Quicumque vult salvus esse",
+  "de": "la-t400",
+  "pt": "vult",
+  "distratores": [
+   "esse",
+   "salvus",
+   "Quicumque"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "vult é o verbo conjugado; esse é infinitivo e completa vult.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at401-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "ante omnia opus est, ut teneat catholicam fidem:",
+  "de": "la-t401",
+  "pt": "est",
+  "distratores": [
+   "teneat",
+   "opus",
+   "fidem"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "opus est («é preciso») é a oração principal; teneat é o subjuntivo depois de ut.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at402-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "peribit",
+  "frase": "Quam nisi quisque integram inviolatamque servaverit, absque dubio in aeternum peribit.",
+  "de": "la-t402",
+  "pt": "peribit",
+  "distratores": [
+   "servaverit",
+   "dubio",
+   "aeternum"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "peribit é o verbo principal; servaverit, no futuro perfeito, está na oração com nisi.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at402-c3",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "integram",
+  "ocorrencia": 1,
+  "frase": "Quam nisi quisque integram inviolatamque servaverit, absque dubio in aeternum peribit.",
+  "de": "la-t402",
+  "pt": "Quam",
+  "distratores": [
+   "quisque",
+   "dubio",
+   "aeternum"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "integram é acusativo feminino: concorda com quam (a fé), não com quisque, masculino.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at402-c4",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "inviolatam",
+  "ocorrencia": 1,
+  "frase": "Quam nisi quisque integram inviolatamque servaverit, absque dubio in aeternum peribit.",
+  "de": "la-t402",
+  "pt": "Quam",
+  "distratores": [
+   "quisque",
+   "dubio",
+   "aeternum"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "inviolatam também é acusativo feminino e concorda com quam; o -que a liga a integram.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at403-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Fides autem catholica haec est:",
+  "de": "la-t403",
+  "pt": "est",
+  "distratores": [
+   "Fides",
+   "catholica",
+   "haec"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est liga fides catholica a haec: «a fé católica é esta».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at404-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "veneremur",
+  "frase": "ut unum Deum in Trinitate, et Trinitatem in unitate veneremur.",
+  "de": "la-t404",
+  "pt": "veneremur",
+  "distratores": [
+   "Deum",
+   "Trinitatem",
+   "unum"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "veneremur é depoente, no subjuntivo depois de ut; o sujeito é «nós».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at406-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Alia est enim persona Patris, alia Filii, alia Spiritus Sancti.",
+  "de": "la-t406",
+  "pt": "est",
+  "distratores": [
+   "persona",
+   "Alia",
+   "enim"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est liga persona a alia; nos dois últimos membros ele fica subentendido.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at406-c0",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "Alia",
+  "ocorrencia": 1,
+  "frase": "Alia est enim persona Patris, alia Filii, alia Spiritus Sancti.",
+  "de": "la-t406",
+  "pt": "persona",
+  "distratores": [
+   "Patris",
+   "Filii",
+   "Spiritus"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "alia é nominativo feminino e concorda com persona (a pessoa); Patris, Filii e Spiritus são genitivos, sem concordar com ela.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at407-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Sed Patris, et Filii, et Spiritus Sancti una est divinitas",
+  "de": "la-t407",
+  "pt": "est",
+  "distratores": [
+   "divinitas",
+   "una",
+   "Patris"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est liga divinitas a una: «a divindade é una».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at407-c7",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "una",
+  "ocorrencia": 1,
+  "frase": "Sed Patris, et Filii, et Spiritus Sancti una est divinitas",
+  "de": "la-t407",
+  "pt": "divinitas",
+  "distratores": [
+   "Patris",
+   "Filii",
+   "Spiritus"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "una é nominativo feminino e concorda com divinitas; Patris, Filii e Spiritus são genitivos, que não concordam com ela.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at408-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "una est divinitas, aequalis gloria, coaeterna maiestas.",
+  "de": "la-t408",
+  "pt": "est",
+  "distratores": [
+   "divinitas",
+   "gloria",
+   "maiestas"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est é o único verbo escrito; nos dois últimos membros ele fica subentendido.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at408-c0",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "una",
+  "ocorrencia": 1,
+  "frase": "una est divinitas, aequalis gloria, coaeterna maiestas.",
+  "de": "la-t408",
+  "pt": "divinitas",
+  "distratores": [
+   "gloria",
+   "maiestas"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "una é nominativo feminino e concorda com divinitas, separada dela por est; gloria e maiestas são sujeitos de outros membros.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at419-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Et tamen non tres dii, sed unus est Deus.",
+  "de": "la-t419",
+  "pt": "est",
+  "distratores": [
+   "dii",
+   "Deus",
+   "tres"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est liga unus a Deus: «um só é Deus»; non tres dii fica sem verbo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at421-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Et tamen non tres domini, sed unus est Dominus.",
+  "de": "la-t421",
+  "pt": "est",
+  "distratores": [
+   "domini",
+   "Dominus",
+   "tres"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est liga unus a Dominus: «um só é Senhor»; non tres domini fica sem verbo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at422-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "compellimur",
+  "frase": "Quia … unamquamque personam Deum ac Dominum confiteri … compellimur",
+  "de": "la-t422",
+  "pt": "compellimur",
+  "distratores": [
+   "confiteri",
+   "personam",
+   "Dominum"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "compellimur: presente passivo, «somos obrigados»; confiteri é só o infinitivo que completa.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at423-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "compellimur",
+  "frase": "Quia, sicut singillatim … christiana veritate compellimur",
+  "de": "la-t423",
+  "pt": "compellimur",
+  "distratores": [
+   "singillatim",
+   "christiana",
+   "veritate"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "compellimur: presente passivo, «somos obrigados»; o resto são palavras de ligação e o ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at424-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "prohibemur",
+  "frase": "ita tres deos aut dominos dicere catholica religione prohibemur.",
+  "de": "la-t424",
+  "pt": "prohibemur",
+  "distratores": [
+   "dicere",
+   "deos",
+   "dominos"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "prohibemur: presente passivo, «somos proibidos»; dicere é infinitivo que completa o sentido.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at425-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "factus",
+  "frase": "Pater a nullo est factus:",
+  "de": "la-t425",
+  "pt": "factus",
+  "distratores": [
+   "Pater",
+   "a",
+   "nullo"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "factus est: perfeito passivo, «foi feito»; as duas palavras formam uma só forma verbal.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at427-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Filius a Patre solo est:",
+  "de": "la-t427",
+  "pt": "est",
+  "distratores": [
+   "Filius",
+   "a",
+   "solo"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est: aqui com a Patre, «vem de»; Filius é o sujeito.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at431-c0",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "Unus",
+  "ocorrencia": 1,
+  "frase": "Unus ergo Pater, non tres Patres;",
+  "de": "la-t431",
+  "pt": "Pater",
+  "distratores": [
+   "Patres",
+   "tres"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Unus (nominativo masculino singular) concorda com Pater; Patres está no plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at436-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "sunt",
+  "frase": "sed totae tres personae coaeternae sibi sunt et coaequales.",
+  "de": "la-t436",
+  "pt": "sunt",
+  "distratores": [
+   "totae",
+   "personae",
+   "sibi"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "sunt: presente do indicativo, 3ª pessoa do plural, concorda com personae.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at436-c1",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "totae",
+  "ocorrencia": 1,
+  "frase": "sed totae tres personae coaeternae sibi sunt et coaequales.",
+  "de": "la-t436",
+  "pt": "personae",
+  "distratores": [
+   "sibi",
+   "tres"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Totae (feminino plural) concorda com personae, pulando tres; sibi é dativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at436-c8",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "coaequales",
+  "ocorrencia": 1,
+  "frase": "sed totae tres personae coaeternae sibi sunt et coaequales.",
+  "de": "la-t436",
+  "pt": "personae",
+  "distratores": [
+   "sibi",
+   "tres"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Coaequales (nominativo feminino plural) concorda com personae, que está lá no começo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at437-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "dictum",
+  "frase": "Ita ut per omnia, sicut iam supra dictum est",
+  "de": "la-t437",
+  "pt": "dictum",
+  "distratores": [
+   "omnia",
+   "iam",
+   "supra"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "dictum est: perfeito passivo, «foi dito»; as duas palavras formam uma só forma verbal.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at438-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "sit",
+  "frase": "Ita ut … et unitas in Trinitate, et Trinitas in unitate veneranda sit.",
+  "de": "la-t438",
+  "pt": "sit",
+  "distratores": [
+   "unitas",
+   "Trinitas",
+   "Trinitate"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "sit: presente do subjuntivo; com veneranda forma «deve ser venerada».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at439-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "sentiat",
+  "frase": "Qui vult ergo salvus esse, ita de Trinitate sentiat.",
+  "de": "la-t439",
+  "pt": "sentiat",
+  "distratores": [
+   "vult",
+   "esse",
+   "salvus"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "sentiat: subjuntivo de ordem, «que sinta»; vult e esse formam a oração do sujeito («quem quer ser salvo»).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at440-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Sed necessarium est ad aeternam salutem",
+  "de": "la-t440",
+  "pt": "est",
+  "distratores": [
+   "necessarium",
+   "ad",
+   "salutem"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est: presente do indicativo, «é»; necessarium é o predicativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at441-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Sed necessarium est … ut incarnationem quoque Domini nostri Iesu Christi fideliter credat.",
+  "de": "la-t441",
+  "pt": "est",
+  "distratores": [
+   "credat",
+   "fideliter",
+   "incarnationem"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "est: verbo principal, «é necessário»; credat (que creia) é o verbo da oração com ut.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at442-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "Est",
+  "frase": "Est ergo fides recta ut credamus et confiteamur",
+  "de": "la-t442",
+  "pt": "Est",
+  "distratores": [
+   "credamus",
+   "confiteamur",
+   "recta"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "est: verbo principal, «é»; credamus e confiteamur (subjuntivo, com ut) vêm depois.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at443-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "quia Dominus noster Iesus Christus, Dei Filius, Deus et homo est.",
+  "de": "la-t443",
+  "pt": "est",
+  "distratores": [
+   "Dominus",
+   "Filius",
+   "Deus"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est: presente do indicativo, «é»; Deus e homo são os predicativos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at444-c6",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "genitus",
+  "ocorrencia": 1,
+  "frase": "Deus ex substantia Patris ante saecula genitus",
+  "de": "la-t444",
+  "pt": "Deus",
+  "distratores": [
+   "Patris",
+   "saecula",
+   "substantia"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Genitus (nominativo masculino singular) concorda com Deus; Patris é genitivo, saecula acusativo plural.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at445-c7",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "natus",
+  "ocorrencia": 1,
+  "frase": "et homo ex substantia matris in saeculo natus.",
+  "de": "la-t445",
+  "pt": "homo",
+  "distratores": [
+   "matris",
+   "saeculo",
+   "substantia"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Natus (nominativo masculino singular) concorda com homo; matris é genitivo, saeculo e substantia, ablativos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at447-c8",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "subsistens",
+  "ocorrencia": 1,
+  "frase": "perfectus homo: ex anima rationali et humana carne subsistens.",
+  "de": "la-t447",
+  "pt": "homo",
+  "distratores": [
+   "anima",
+   "carne"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Subsistens (nominativo masculino singular) concorda com homo; anima e carne são femininos, em ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at450-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Qui … non duo tamen, sed unus est Christus.",
+  "de": "la-t450",
+  "pt": "est",
+  "distratores": [
+   "non",
+   "duo",
+   "unus"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est: presente do indicativo, «é»; duo e unus são predicativos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at453-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Nam sicut anima rationalis et caro unus est homo:",
+  "de": "la-t453",
+  "pt": "est",
+  "distratores": [
+   "anima",
+   "caro",
+   "homo"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est: presente do indicativo, 3ª pessoa do singular; o sujeito é duplo, mas o verbo concorda com o mais próximo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at453-c6",
+  "tipo": "analise",
+  "familia": "concordancia",
+  "la": "unus",
+  "ocorrencia": 1,
+  "frase": "Nam sicut anima rationalis et caro unus est homo:",
+  "de": "la-t453",
+  "pt": "homo",
+  "distratores": [
+   "anima",
+   "caro"
+  ],
+  "pergunta": "Com que palavra concorda a palavra destacada?",
+  "nota": "Unus (masculino) concorda com homo; anima e caro são femininos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at454-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "ita Deus et homo unus est Christus.",
+  "de": "la-t454",
+  "pt": "est",
+  "distratores": [
+   "Deus",
+   "homo",
+   "unus"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est: presente do indicativo, singular; Deus et homo são o sujeito e unus Christus, o predicativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at456-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "resurrexit",
+  "frase": "Qui … tertia die resurrexit a mortuis.",
+  "de": "la-t456",
+  "pt": "resurrexit",
+  "distratores": [
+   "Qui",
+   "die",
+   "mortuis"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "resurrexit: perfeito do indicativo, 3ª pessoa do singular, «ressuscitou».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at457-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "habent",
+  "frase": "Ad cuius adventum omnes homines resurgere habent cum corporibus suis",
+  "de": "la-t457",
+  "pt": "habent",
+  "distratores": [
+   "resurgere",
+   "homines",
+   "adventum"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "habent: «habeo + infinitivo» dá o futuro, «hão de»; resurgere é o infinitivo que completa.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at458-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "reddituri",
+  "frase": "et reddituri sunt de factis propriis rationem.",
+  "de": "la-t458",
+  "pt": "reddituri",
+  "distratores": [
+   "factis",
+   "propriis",
+   "rationem"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "reddituri sunt: «hão de prestar»; o particípio futuro com sunt dá uma só forma verbal.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at459-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "ibunt",
+  "frase": "Et qui bona egerunt, ibunt in vitam aeternam;",
+  "de": "la-t459",
+  "pt": "ibunt",
+  "distratores": [
+   "egerunt",
+   "bona",
+   "vitam"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "ibunt: futuro do indicativo, «irão»; egerunt é verbo da oração relativa («os que praticaram»).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at461-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "est",
+  "frase": "Haec est fides catholica",
+  "de": "la-t461",
+  "pt": "est",
+  "distratores": [
+   "Haec",
+   "fides",
+   "catholica"
+  ],
+  "pergunta": "Qual é o verbo desta frase?",
+  "nota": "est: presente do indicativo, «é»; haec é o sujeito, fides catholica o predicativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-at462-v",
+  "tipo": "analise",
+  "familia": "verbo",
+  "la": "poterit",
+  "frase": "quam nisi quisque fideliter firmiterque crediderit, salvus esse non poterit.",
+  "de": "la-t462",
+  "pt": "poterit",
+  "distratores": [
+   "crediderit",
+   "esse",
+   "fideliter"
+  ],
+  "pergunta": "Qual é o verbo principal desta frase?",
+  "nota": "poterit: verbo principal, futuro do indicativo, «poderá»; crediderit é da oração com nisi.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "fonte": "Símbolo Quicumque"
+ },
+ {
+  "id": "la-ap751-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "migro, migrare, migravi, migratum",
+  "lema": "la-p751",
+  "pt": "só alguém que migra, sem complemento obrigatório",
+  "distratores": [
+   "alguém que migra e algo que é migrado (acusativo)",
+   "alguém que migra e a quem migra (dativo)",
+   "alguém que migra e de quê (genitivo)",
+   "alguém que migra e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Solacium migrantium: quem migra? os migrantes (migrantium, particípio presente); nada mais é pedido.\nPode dizer aonde, com in ou ad e acusativo, ou de onde, com ex e ablativo, mas não é obrigatório.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p751"
+  ]
+ },
+ {
+  "id": "la-ap753-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "affligo, affligere, afflixi, afflictum",
+  "lema": "la-p753",
+  "pt": "alguém que aflige e alguém que é afligido (acusativo)",
+  "distratores": [
+   "só alguém que aflige, sem ninguém afligido",
+   "alguém que aflige e a quem aflige (dativo)",
+   "alguém que aflige e de quê (genitivo)",
+   "nenhum sujeito: «aflige-se», sem ninguém que aflija"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em consolatrix afflictorum: quem é afligido? afflictorum, «os aflitos» (particípio passivo, no genitivo plural).\nO particípio mostra o lugar do objeto: os aflitos são os que alguém abateu.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p753"
+  ]
+ },
+ {
+  "id": "la-ap762-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "assumo, assumere, assumpsi, assumptum",
+  "lema": "la-p762",
+  "pt": "alguém que toma e algo que é tomado (acusativo)",
+  "distratores": [
+   "só alguém que toma, sem nada tomado",
+   "alguém que toma e de quê (genitivo)",
+   "alguém que toma e algo tomado (ablativo)",
+   "nenhum sujeito: «toma-se», sem ninguém que tome"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Regina in caelum assumpta: quem foi tomada? Regina (assumpta, particípio passivo); aonde? in caelum (in com acusativo).\nÉ a Assunção: tomada ao céu por outro, que é o sujeito do ativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p762"
+  ]
+ },
+ {
+  "id": "la-ap771-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "perfruor, perfrui, perfructus sum (depoente)",
+  "lema": "la-p771",
+  "pt": "alguém que goza e aquilo de que goza (ablativo)",
+  "distratores": [
+   "só alguém que goza, sem nada de que goze",
+   "alguém que goza e aquilo de que goza (dativo)",
+   "alguém que goza e aquilo de que goza (genitivo)",
+   "alguém que goza e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em perfrui laetitia: quem goza? o sujeito de concede (nós); de quê? laetitia (ablativo).\nNo português «gozar alguma coisa» tem objeto direto; os depoentes fruor, utor e afins pedem o ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p771"
+  ]
+ },
+ {
+  "id": "la-ap773-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "canto, cantare, cantavi, cantatum",
+  "lema": "la-p773",
+  "pt": "alguém que canta e algo que é cantado (acusativo)",
+  "distratores": [
+   "alguém que canta e de quê se canta (genitivo)",
+   "alguém que canta e algo cantado (ablativo)",
+   "alguém que canta e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: «canta-se», sem ninguém que cante"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Trium puerorum cantemus hymnum: quem canta? nós (cantemus); o quê? hymnum (acusativo).\nTambém se usa sem objeto: «cantar», só com o sujeito.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p773"
+  ]
+ },
+ {
+  "id": "la-ap777-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "superexalto, superexaltare, superexaltavi, superexaltatum",
+  "lema": "la-p777",
+  "pt": "alguém que exalta e alguém que é exaltado (acusativo)",
+  "distratores": [
+   "alguém que exalta e a quem exalta (dativo)",
+   "alguém que exalta e de quê (genitivo)",
+   "alguém que exalta e por quê (ablativo)",
+   "alguém que exalta e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em laudate et superexaltate eum in saecula: quem exalta? vós; quem é exaltado? eum (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p777"
+  ]
+ },
+ {
+  "id": "la-ap789-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "germino, germinare, germinavi, germinatum",
+  "lema": "la-p789",
+  "pt": "só algo que brota, sem complemento obrigatório",
+  "distratores": [
+   "algo que brota e algo que é brotado (acusativo)",
+   "algo que brota e a quem brota (dativo)",
+   "algo que brota e de quê (genitivo)",
+   "nenhum sujeito: «brota-se», sem nada que brote"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em universa germinantia in terra: quem brota? universa germinantia, «tudo o que brota»; onde? in terra (in com ablativo).\nO lugar é livre, não é exigido.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p789"
+  ]
+ },
+ {
+  "id": "la-ap793-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "moveo, movere, movi, motum",
+  "lema": "la-p793",
+  "pt": "alguém que move e algo que é movido (acusativo)",
+  "distratores": [
+   "só alguém que move, sem nada movido",
+   "alguém que move e de quê (genitivo)",
+   "alguém que move e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: «move-se», sem ninguém que mova"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em omnia quae moventur in aquis: quem é movido? omnia (sujeito do passivo); onde? in aquis (in com ablativo).\nNo passivo, moventur dá «movem-se»: o objeto do ativo vira o sujeito.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p793"
+  ]
+ },
+ {
+  "id": "la-ap815-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "mitigo, mitigare, mitigavi, mitigatum",
+  "lema": "la-p815",
+  "pt": "alguém que abranda e algo que é abrandado (acusativo)",
+  "distratores": [
+   "só alguém que abranda, sem nada abrandado",
+   "alguém que abranda e de quê (genitivo)",
+   "alguém que abranda e algo abrandado (ablativo)",
+   "alguém que abranda e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Deus, qui tribus pueris mitigasti flammas: quem abranda? Deus (qui); o quê? flammas (acusativo).\nAqui vem também tribus pueris, dativo de interesse («em favor dos meninos»), que é livre.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p815"
+  ]
+ },
+ {
+  "id": "la-ap817-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "exuro, exurere, exussi, exustum",
+  "lema": "la-p817",
+  "pt": "alguém que queima e algo ou alguém que é queimado (acusativo)",
+  "distratores": [
+   "só alguém que queima, sem nada queimado",
+   "alguém que queima e a quem queima (dativo)",
+   "alguém que queima e de quê (genitivo)",
+   "nenhum sujeito: «queima-se», sem ninguém que queime"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ut nos famulos tuos non exurat flamma vitiorum: quem queima? flamma; quem é queimado? nos famulos tuos (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p817"
+  ]
+ },
+ {
+  "id": "la-ap821-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "praevenio, praevenire, praeveni, praeventum",
+  "lema": "la-p821",
+  "pt": "alguém que previne e algo que é prevenido (acusativo)",
+  "distratores": [
+   "alguém que previne e de quê (genitivo)",
+   "alguém que previne e algo prevenido (ablativo)",
+   "alguém que previne e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: «previne-se», sem ninguém que previna"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em actiones nostras ... praeveni: quem previne? tu (Domine, subentendido); o quê? actiones nostras (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p821"
+  ]
+ },
+ {
+  "id": "la-ap823-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "prosequor, prosequi, prosecutus sum (depoente)",
+  "lema": "la-p823",
+  "pt": "alguém que acompanha e alguém ou algo que é acompanhado (acusativo)",
+  "distratores": [
+   "alguém que acompanha e a quem acompanha (dativo)",
+   "alguém que acompanha e de quê (genitivo)",
+   "alguém que acompanha e com quê (ablativo)",
+   "alguém que acompanha e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em actiones nostras ... prosequere: quem acompanha? tu (Domine); o quê? actiones nostras (acusativo).\nÉ depoente: forma passiva, sentido ativo, regência normal.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p823"
+  ]
+ },
+ {
+  "id": "la-ap827-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "exstinguo, exstinguere, exstinxi, exstinctum",
+  "lema": "la-p827",
+  "pt": "alguém que apaga e algo que é apagado (acusativo)",
+  "distratores": [
+   "alguém que apaga e a quem apaga (dativo)",
+   "alguém que apaga e de quê (genitivo)",
+   "alguém que apaga e algo apagado (ablativo)",
+   "alguém que apaga e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em Da nobis ... vitiorum nostrorum flammas exstinguere: quem apaga? nós (nobis, com Da); o quê? flammas (acusativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p827"
+  ]
+ },
+ {
+  "id": "la-ap830-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "supero, superare, superavi, superatum",
+  "lema": "la-p830",
+  "pt": "alguém que supera e algo que é superado (acusativo)",
+  "distratores": [
+   "alguém que supera e a quem supera (dativo)",
+   "alguém que supera e de quê (genitivo)",
+   "alguém que supera e algo superado (ablativo)",
+   "alguém que supera e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em tribuisti Laurentio ... incendia superare: quem supera? Lourenço (beato Laurentio); o quê? incendia (acusativo).\nTambém se usa sem objeto: «ficar por cima».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p830"
+  ]
+ },
+ {
+  "id": "la-ap841-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "separo, separare, separavi, separatum",
+  "lema": "la-p841",
+  "pt": "alguém que separa e algo que é separado (acusativo)",
+  "distratores": [
+   "alguém que separa e a quem separa (dativo)",
+   "alguém que separa e de quê (genitivo)",
+   "alguém que separa e o que ele é (nominativo, como o sujeito)",
+   "nenhum sujeito: «separa-se», sem ninguém que separe"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em neque substantiam separantes: quem separa? nós (sujeito de veneremur); o quê? substantiam (acusativo).\nPode dizer de quê se separa, com ab ou ex e ablativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p841"
+  ]
+ },
+ {
+  "id": "la-ap856-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "prohibeo, prohibere, prohibui, prohibitum",
+  "lema": "la-p856",
+  "pt": "alguém que proíbe e quem é proibido (acusativo), de fazer algo (infinitivo)",
+  "distratores": [
+   "alguém que proíbe e a quem proíbe (dativo), com um infinitivo",
+   "alguém que proíbe e de quê (genitivo)",
+   "só alguém que proíbe, sem ninguém proibido",
+   "alguém que proíbe e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em tres deos dicere ... prohibemur: no passivo, quem é proibido? nós (sujeito); de quê? dicere (infinitivo); por quem? catholica religione.\nNo ativo seria prohibemus nos dicere: acusativo da pessoa e infinitivo, e não o dativo de «proibir a alguém».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p856"
+  ]
+ },
+ {
+  "id": "la-ap866-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "subsisto, subsistere, substiti",
+  "lema": "la-p866",
+  "pt": "só alguém que subsiste (de quê, com ex e ablativo, é livre)",
+  "distratores": [
+   "alguém que subsiste e algo subsistido (acusativo)",
+   "alguém que subsiste e a quem subsiste (dativo)",
+   "alguém que subsiste e de quê (genitivo)",
+   "nenhum sujeito: «subsiste-se», sem ninguém que subsista"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em ex anima rationali et humana carne subsistens: quem subsiste? homo; de quê? anima e carne (ex com ablativo).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p866"
+  ]
+ },
+ {
+  "id": "la-ap874-r",
+  "tipo": "analise",
+  "familia": "regencia",
+  "la": "reddo, reddere, reddidi, redditum",
+  "lema": "la-p874",
+  "pt": "alguém que devolve e algo que é devolvido (acusativo)",
+  "distratores": [
+   "só alguém que devolve, sem nada devolvido",
+   "alguém que devolve e de quê (genitivo)",
+   "alguém que devolve e algo devolvido (ablativo)",
+   "alguém que devolve e o que ele é (nominativo, como o sujeito)"
+  ],
+  "pergunta": "O que este verbo pede?",
+  "nota": "Em reddituri sunt de factis propriis rationem: quem presta? eles; o quê? rationem (acusativo); a respeito de quê? de factis (de com ablativo).\nPode dizer a quem se devolve, no dativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "análise"
+  ],
+  "requerTodas": [
+   "la-p874"
+  ]
  }
 ]

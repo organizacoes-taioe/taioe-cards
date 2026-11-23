@@ -1372,5 +1372,15 @@ window.TAGS_RAW = {
   "en": "synonyms",
   "es": "sinónimos",
   "cards": 0
+ },
+ "grego": {
+  "en": "Greek",
+  "es": "griego",
+  "cards": 0
+ },
+ "numeral": {
+  "en": "numeral",
+  "es": "numeral",
+  "cards": 0
  }
 };

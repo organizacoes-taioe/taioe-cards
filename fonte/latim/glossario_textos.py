@@ -26,6 +26,10 @@ TITULO = {
                 'nota': 'O título: o Salmo II do Saltério.'},
     'ii': {'lema': 'II', 'classe': 'numeral', 'def': ['Dois (em algarismo romano).']},
     'symbolum': {'lema': 'symbolum', 'classe': 'substantivo neutro', 'def': ['Símbolo: o resumo da fé, o Credo.']},
+    'litaniae': {'lema': 'litania', 'classe': 'substantivo feminino', 'forma': 'nominativo plural',
+                 'def': ['Ladainha: oração de súplicas curtas, uma depois da outra.']},
+    'lauretanae': {'lema': 'Lauretanus', 'classe': 'adjetivo (nome próprio)', 'forma': 'nominativo feminino plural',
+                   'def': ['De Loreto, o santuário de Nossa Senhora na Itália onde a ladainha se rezava.']},
     'apostolorum': {'lema': 'apostolus', 'classe': 'substantivo masculino', 'forma': 'genitivo plural',
                     'def': ['Apóstolo.'], 'nota': 'Dos Apóstolos: o Credo que a tradição atribui a eles.'},
 }
@@ -56,7 +60,8 @@ def main():
     def parte(p):
         if p.get('c'):
             c = cards[p['c']]
-            d = {'lema': c['la'], 'classe': textos.classe_de(c) or ('conjunção' if c['la'].startswith('-') else '')}
+            d = {'lema': c['la'], 'classe': textos.classe_de(c) or ('conjunção' if c['la'].startswith('-') else
+                                                              'numeral' if 'numeral' in c.get('tags', []) else '')}
             if p.get('f'):
                 d['forma'] = p['f']
             d['def'] = definicao(c)

@@ -63013,5 +63013,6776 @@
    "la-g010",
    "la-g015"
   ]
+ },
+ {
+  "id": "la-v2164",
+  "tipo": "flexao",
+  "la": "veritate",
+  "lema": "la-p010",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "com a verdade",
+  "distratores": [
+   "singular: genitivo",
+   "singular: acusativo",
+   "singular: dativo",
+   "singular: vocativo"
+  ],
+  "nota": "veritate: ablativo singular de veritas.\nTerminação -e na 3ª declinação: ablativo singular. Radical: veritat- (do genitivo veritatis).\nEm «christiana veritate compellimur» (Símbolo Quicumque), «pela verdade cristã».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2165",
+  "tipo": "flexao",
+  "la": "dominos",
+  "lema": "la-p012",
+  "analise": "acusativo plural",
+  "familia": "caso",
+  "pt": "plural: acusativo",
+  "sentido": "os senhores (objeto)",
+  "distratores": [
+   "plural: genitivo",
+   "plural: nominativo",
+   "singular: acusativo",
+   "singular: vocativo"
+  ],
+  "nota": "dominos: acusativo plural de dominus.\nTerminação -os: acusativo plural da 2ª declinação masculina.\nEm «tres deos aut dominos dicere» (Símbolo Quicumque), objeto de dicere.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2166",
+  "tipo": "flexao",
+  "la": "maius",
+  "lema": "la-p016",
+  "analise": "comparativo, nominativo neutro singular; também comparativo, acusativo neutro singular; também comparativo, vocativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou acusativo",
+  "sentido": "maior",
+  "distratores": [
+   "singular: dativo ou ablativo",
+   "singular: genitivo; plural: nominativo",
+   "plural: dativo ou ablativo",
+   "plural: nominativo ou acusativo"
+  ],
+  "nota": "maius: comparativo de magnus, neutro singular (nominativo, acusativo ou vocativo).\nNo comparativo, o neutro termina em -us.\nEm «nihil maius aut minus» (Símbolo Quicumque), «nada maior ou menor».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2167",
+  "tipo": "flexao",
+  "la": "laudatur",
+  "lema": "la-p018",
+  "analise": "presente do indicativo, 3ª pessoa do singular, voz passiva",
+  "pt": "é louvado",
+  "aceitas": [
+   "é louvado",
+   "é louvada",
+   "ele é louvado",
+   "ela é louvada",
+   "é elogiado",
+   "é elogiada",
+   "é celebrado",
+   "é exaltado",
+   "é enaltecido"
+  ],
+  "distratores": [
+   "louva",
+   "foi louvado",
+   "são louvados",
+   "será louvado"
+  ],
+  "nota": "laudatur: presente do indicativo passivo, 3ª pessoa do singular, de laudo.\nTerminação -tur: 3ª pessoa da voz passiva.\nEm «Cur iustitia laudatur» (Cícero, Dos fins 2,52), «é louvada» (sujeito: iustitia).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2168",
+  "tipo": "flexao",
+  "la": "laudavi",
+  "lema": "la-p018",
+  "analise": "perfeito do indicativo, 1ª pessoa do singular",
+  "pt": "louvei",
+  "aceitas": [
+   "louvei",
+   "eu louvei",
+   "elogiei",
+   "eu elogiei",
+   "celebrei",
+   "exaltei",
+   "enalteci"
+  ],
+  "distratores": [
+   "louvo",
+   "louvava",
+   "louvarei",
+   "fui louvado"
+  ],
+  "nota": "laudavi: perfeito do indicativo, 1ª pessoa do singular, de laudo.\nTerminação -avi: perfeito da 1ª conjugação.\nEm «Laudavi igitur laetitiam» (Ecl 8,15), «Louvei, pois, a alegria».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-v2169",
+  "tipo": "flexao",
+  "la": "laudemus",
+  "lema": "la-p018",
+  "analise": "presente do subjuntivo, 1ª pessoa do plural",
+  "pt": "louvemos",
+  "aceitas": [
+   "louvemos",
+   "que louvemos",
+   "elogiemos",
+   "celebremos",
+   "exaltemos"
+  ],
+  "distratores": [
+   "louvamos",
+   "louvávamos",
+   "louvaremos",
+   "louvai"
+  ],
+  "nota": "laudemus: presente do subjuntivo, 1ª pessoa do plural, de laudo.\nNa 1ª conjugação o subjuntivo troca o -a- por -e-: laud-e-mus.\nEm «laudemus et superexaltemus eum» (Trium puerorum), exortação: «louvemos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2170",
+  "tipo": "flexao",
+  "la": "credamus",
+  "lema": "la-p021",
+  "analise": "presente do subjuntivo, 1ª pessoa do plural",
+  "pt": "que creiamos",
+  "aceitas": [
+   "que creiamos",
+   "creiamos",
+   "acreditemos",
+   "que acreditemos",
+   "confiemos",
+   "que confiemos"
+  ],
+  "distratores": [
+   "cremos",
+   "críamos",
+   "creremos",
+   "crede!"
+  ],
+  "nota": "credamus: presente do subjuntivo, 1ª pessoa do plural, de credo.\nNa 3ª conjugação o subjuntivo tem -a-: cred-a-mus.\nEm «fides recta ut credamus et confiteamur» (Símbolo Quicumque), subjuntivo depois de ut.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2171",
+  "tipo": "flexao",
+  "la": "credat",
+  "lema": "la-p021",
+  "analise": "presente do subjuntivo, 3ª pessoa do singular",
+  "pt": "que ele creia",
+  "aceitas": [
+   "que ele creia",
+   "que creia",
+   "creia",
+   "ele creia",
+   "acredite",
+   "que ele acredite",
+   "que acredite",
+   "confie",
+   "que confie"
+  ],
+  "distratores": [
+   "ele crê",
+   "ele cria",
+   "ele creu",
+   "que tu creias"
+  ],
+  "nota": "credat: presente do subjuntivo, 3ª pessoa do singular, de credo.\nNa 3ª conjugação o subjuntivo tem -a-: cred-a-t.\nEm «necessarium est ... ut ... credat» (Símbolo Quicumque), verbo de ut: «que creia».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2172",
+  "tipo": "flexao",
+  "la": "canite",
+  "lema": "la-p029",
+  "analise": "imperativo, 2ª pessoa do plural",
+  "pt": "cantai!",
+  "aceitas": [
+   "cantai",
+   "cantai!",
+   "tocai",
+   "tocai!",
+   "celebrai",
+   "louvai"
+  ],
+  "distratores": [
+   "canta!",
+   "cantais",
+   "cantem",
+   "cantareis"
+  ],
+  "nota": "canite: imperativo, 2ª pessoa do plural, de cano.\nNa 3ª conjugação o imperativo plural termina em -ite.\nEm «Canite tuba» (Ez 7,14), «Tocai a trombeta».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g011"
+  ]
+ },
+ {
+  "id": "la-v2173",
+  "tipo": "flexao",
+  "la": "tollite",
+  "lema": "la-p032",
+  "analise": "imperativo, 2ª pessoa do plural",
+  "pt": "levantai!",
+  "aceitas": [
+   "levantai",
+   "levantai!",
+   "tomai",
+   "tirai",
+   "erguei",
+   "pegai",
+   "apanhai",
+   "removei",
+   "retirai",
+   "carregai"
+  ],
+  "distratores": [
+   "levanta!",
+   "levantais",
+   "levantem",
+   "levantareis"
+  ],
+  "nota": "tollite: imperativo, 2ª pessoa do plural, de tollo.\nNa 3ª conjugação o imperativo plural termina em -ite.\nEm «Tollite arcam foederis» (Js 6,6), «Levantai a arca da aliança».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g011"
+  ]
+ },
+ {
+  "id": "la-v2174",
+  "tipo": "flexao",
+  "la": "amabitur",
+  "lema": "la-p037",
+  "analise": "futuro do indicativo, 3ª pessoa do singular, voz passiva",
+  "pt": "será amado",
+  "aceitas": [
+   "será amado",
+   "será amada",
+   "ele será amado",
+   "ela será amada",
+   "será estimado",
+   "será estimada"
+  ],
+  "distratores": [
+   "é amado",
+   "foi amado",
+   "amará",
+   "serão amados"
+  ],
+  "nota": "amabitur: futuro do indicativo passivo, 3ª pessoa do singular, de amo.\nTerminação -bitur: futuro passivo da 1ª conjugação.\nEm «exstinctus amabitur idem» (Horácio, Epístolas 2,1,14), «será amado».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g010",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2175",
+  "tipo": "flexao",
+  "la": "videri",
+  "lema": "la-p039",
+  "analise": "infinitivo presente, voz passiva",
+  "pt": "ser visto",
+  "aceitas": [
+   "ser visto",
+   "ser vista",
+   "ser vistos",
+   "parecer",
+   "ser percebido",
+   "ser notado"
+  ],
+  "distratores": [
+   "ver",
+   "ter visto",
+   "vendo",
+   "visto"
+  ],
+  "nota": "videri: infinitivo presente passivo de video.\nTerminação -eri: infinitivo passivo da 2ª conjugação.\nEm «Numquid purus videri volebat» (Sêneca, Dos benefícios 4,31,3), «parecer» (ser visto) puro.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g013",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2176",
+  "tipo": "flexao",
+  "la": "gratiae",
+  "lema": "la-p050",
+  "analise": "genitivo singular; também dativo singular; também nominativo plural; também vocativo plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da graça; à graça; as graças (sujeito)",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo; plural: acusativo",
+   "singular: acusativo; plural: genitivo ou acusativo"
+  ],
+  "nota": "gratiae: genitivo ou dativo singular; nominativo ou vocativo plural de gratia.\nTerminação -ae na 1ª declinação: quatro casos possíveis; o contexto decide.\nEm «Mater divinae gratiae» (Ladainha lauretana), genitivo: «da graça».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2177",
+  "tipo": "flexao",
+  "la": "corporibus",
+  "lema": "la-p063",
+  "analise": "ablativo plural; também dativo plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "com os corpos; aos corpos",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: genitivo ou dativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: nominativo ou ablativo"
+  ],
+  "nota": "corporibus: ablativo ou dativo plural de corpus.\nTerminação -ibus: dativo e ablativo plural da 3ª declinação. Radical: corpor- (do genitivo corporis).\nEm «resurgere habent cum corporibus suis» (Símbolo Quicumque), ablativo com cum.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2178",
+  "tipo": "flexao",
+  "la": "liberari",
+  "lema": "la-p070",
+  "analise": "infinitivo presente, voz passiva",
+  "pt": "ser libertado",
+  "aceitas": [
+   "ser libertado",
+   "ser libertada",
+   "ser libertados",
+   "ser livrado",
+   "ser salvo",
+   "ser solto",
+   "ser liberado"
+  ],
+  "distratores": [
+   "libertar",
+   "ter libertado",
+   "libertando",
+   "libertado"
+  ],
+  "nota": "liberari: infinitivo presente passivo de libero.\nTerminação -ari: infinitivo passivo da 1ª conjugação.\nEm «a praesenti liberari tristitia» (Ladainha lauretana), «ser libertados da tristeza presente».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g013",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2179",
+  "tipo": "flexao",
+  "la": "saeculis",
+  "lema": "la-p088",
+  "analise": "ablativo plural; também dativo plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "nos séculos; aos séculos",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "plural: nominativo ou genitivo"
+  ],
+  "nota": "saeculis: ablativo ou dativo plural de saeculum.\nTerminação -is: dativo e ablativo plural da 2ª declinação.\nEm «in omnibus saeculis» (Dn 3,52), ablativo com in: «em todos os séculos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2180",
+  "tipo": "flexao",
+  "la": "nostras",
+  "lema": "la-p089",
+  "analise": "acusativo feminino plural",
+  "familia": "caso",
+  "pt": "plural: acusativo",
+  "sentido": "as nossas (objeto)",
+  "distratores": [
+   "plural: genitivo",
+   "plural: nominativo",
+   "singular: acusativo",
+   "plural: dativo"
+  ],
+  "nota": "nostras: acusativo feminino plural de noster.\nTerminação -as: acusativo plural do feminino (1ª declinação). Radical: nostr- (do feminino nostra).\nEm «Actiones nostras» (Trium puerorum), concorda com actiones: «as nossas ações».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2181",
+  "tipo": "flexao",
+  "la": "nostrorum",
+  "lema": "la-p089",
+  "analise": "genitivo masculino plural; também genitivo neutro plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos nossos",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "singular: acusativo",
+   "plural: ablativo"
+  ],
+  "nota": "nostrorum: genitivo plural, masculino ou neutro, de noster.\nTerminação -orum: genitivo plural da 2ª declinação. Radical: nostr- (do feminino nostra).\nEm «vitiorum nostrorum flammas» (Trium puerorum), concorda com vitiorum: «dos nossos vícios».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2182",
+  "tipo": "flexao",
+  "la": "nomini",
+  "lema": "la-p092",
+  "analise": "dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo",
+  "sentido": "ao nome",
+  "distratores": [
+   "singular: acusativo",
+   "singular: vocativo",
+   "singular: ablativo",
+   "singular: nominativo"
+  ],
+  "nota": "nomini: dativo singular de nomen.\nTerminação -i: dativo singular da 3ª declinação. Radical: nomin- (do genitivo nominis).\nEm «nomini tuo da gloriam» (Trium puerorum), «ao teu nome dá glória».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2183",
+  "tipo": "flexao",
+  "la": "benedicamus",
+  "lema": "la-p112",
+  "analise": "presente do subjuntivo, 1ª pessoa do plural",
+  "pt": "bendigamos",
+  "aceitas": [
+   "bendigamos",
+   "que bendigamos",
+   "abençoemos",
+   "que abençoemos",
+   "louvemos"
+  ],
+  "distratores": [
+   "bendizemos",
+   "bendizíamos",
+   "bendiremos",
+   "bendizei"
+  ],
+  "nota": "benedicamus: presente do subjuntivo, 1ª pessoa do plural, de benedico.\nNa 3ª conjugação o subjuntivo tem -a-: benedic-a-mus.\nEm «Benedicamus Patrem et Filium» (Trium puerorum), exortação: «bendigamos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2184",
+  "tipo": "flexao",
+  "la": "benedicant",
+  "lema": "la-p112",
+  "analise": "presente do subjuntivo, 3ª pessoa do plural",
+  "pt": "que bendigam",
+  "aceitas": [
+   "que bendigam",
+   "bendigam",
+   "que eles bendigam",
+   "eles bendigam",
+   "abençoem",
+   "que abençoem",
+   "louvem",
+   "que louvem"
+  ],
+  "distratores": [
+   "bendizem",
+   "bendisseram",
+   "bendiziam",
+   "bendirão"
+  ],
+  "nota": "benedicant: presente do subjuntivo, 3ª pessoa do plural, de benedico.\nNa 3ª conjugação o subjuntivo tem -a-: benedic-a-nt.\nEm «Et sancti tui benedicant tibi» (Trium puerorum), desejo: «que te bendigam».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2185",
+  "tipo": "flexao",
+  "la": "benedicentes",
+  "lema": "la-p112",
+  "analise": "particípio presente, nominativo masculino plural; também acusativo masculino plural; também nominativo feminino plural; também acusativo feminino plural",
+  "pt": "os que bendizem (sujeito)",
+  "outras": [
+   "os que bendizem (objeto)"
+  ],
+  "aceitas": [
+   "os que bendizem",
+   "que bendizem",
+   "bendizendo",
+   "os que abençoam",
+   "abençoando",
+   "as que bendizem",
+   "os que louvam"
+  ],
+  "distratores": [
+   "o que bendiz (sujeito)",
+   "do que bendiz",
+   "ao que bendiz",
+   "dos que bendizem"
+  ],
+  "nota": "benedicentes: particípio presente de benedico, plural (nominativo ou acusativo).\nParticípio presente: radical + -ens, -entis; plural em -entes.\nEm «sancti ... benedicentes Dominum» (Trium puerorum), concorda com sancti: «bendizendo o Senhor».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g019"
+  ]
+ },
+ {
+  "id": "la-v2186",
+  "tipo": "flexao",
+  "la": "dictum",
+  "lema": "la-p122",
+  "analise": "particípio perfeito, nominativo neutro singular; também acusativo neutro singular; também acusativo masculino singular; também supino",
+  "pt": "dito",
+  "outras": [
+   "para dizer"
+  ],
+  "aceitas": [
+   "dito",
+   "o dito",
+   "falado",
+   "afirmado",
+   "contado",
+   "para dizer",
+   "para falar"
+  ],
+  "distratores": [
+   "diz",
+   "disse",
+   "dizendo",
+   "dizer"
+  ],
+  "nota": "dictum: particípio perfeito de dico, neutro singular; também supino.\nTerminação -um: neutro singular, ou acusativo masculino, do particípio.\nEm «sicut iam supra dictum est» (Símbolo Quicumque), com est: «foi dito».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2187",
+  "tipo": "flexao",
+  "la": "artis",
+  "lema": "la-p128",
+  "analise": "genitivo singular; também acusativo plural",
+  "familia": "caso",
+  "pt": "singular: genitivo; plural: acusativo",
+  "sentido": "da arte; as artes",
+  "distratores": [
+   "singular: dativo; plural: nominativo",
+   "singular: acusativo; plural: genitivo",
+   "singular ou plural: ablativo",
+   "singular: nominativo; plural: dativo"
+  ],
+  "nota": "artis: genitivo singular de ars; também acusativo plural (forma em -is dos temas em -i).\nTerminação -is: genitivo singular da 3ª declinação. Radical: art- (do genitivo artis).\nEm «hoc erit artis opus» (Ovídio, Arte de amar 2,14), «obra da arte».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2188",
+  "tipo": "flexao",
+  "la": "cogitasti",
+  "lema": "la-p134",
+  "analise": "perfeito do indicativo, 2ª pessoa do singular",
+  "pt": "pensaste",
+  "aceitas": [
+   "pensaste",
+   "tu pensaste",
+   "refletiste",
+   "cogitaste",
+   "meditaste",
+   "consideraste",
+   "planejaste",
+   "tu planejaste"
+  ],
+  "distratores": [
+   "pensas",
+   "pensavas",
+   "pensarás",
+   "pensei"
+  ],
+  "nota": "cogitasti: perfeito do indicativo, 2ª pessoa do singular, de cogito (forma contraída de cogitavisti).\nTerminação -asti: perfeito da 1ª conjugação, 2ª pessoa do singular.\nEm «Cogitasti confusionem domui tuae» (Hab 2,10), «planejaste a confusão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-v2189",
+  "tipo": "flexao",
+  "la": "velis",
+  "lema": "la-p155",
+  "analise": "presente do subjuntivo, 2ª pessoa do singular",
+  "pt": "tu queiras",
+  "aceitas": [
+   "que tu queiras",
+   "tu queiras",
+   "queiras",
+   "que queiras",
+   "desejes",
+   "que tu desejes",
+   "que desejes"
+  ],
+  "distratores": [
+   "queres",
+   "querias",
+   "quiseste",
+   "quererás"
+  ],
+  "nota": "velis: presente do subjuntivo, 2ª pessoa do singular, de volo.\nO subjuntivo de volo tem -i-: vel-i-s, vel-i-m.\nEm «quale velis velim scire» (Cícero, Cartas a Ático 15,13,3), «qual queiras».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2190",
+  "tipo": "flexao",
+  "la": "volebat",
+  "lema": "la-p155",
+  "analise": "imperfeito do indicativo, 3ª pessoa do singular",
+  "pt": "ele queria",
+  "aceitas": [
+   "ele queria",
+   "ela queria",
+   "ele desejava",
+   "ela desejava"
+  ],
+  "distratores": [
+   "ele quer",
+   "ele quis",
+   "ele quererá",
+   "eu queria"
+  ],
+  "nota": "volebat: imperfeito do indicativo, 3ª pessoa do singular, de volo.\nTerminação -bat: imperfeito, 3ª pessoa do singular.\nEm «Numquid purus videri volebat» (Sêneca, Dos benefícios 4,31,3), «queria parecer puro».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g008"
+  ]
+ },
+ {
+  "id": "la-v2191",
+  "tipo": "flexao",
+  "la": "humana",
+  "lema": "la-p162",
+  "analise": "ablativo feminino singular; também nominativo feminino singular; também vocativo feminino singular; também nominativo neutro plural; também acusativo neutro plural; também vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "pela humana; a humana (sujeito); as humanas",
+  "distratores": [
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: acusativo; plural: genitivo ou dativo"
+  ],
+  "nota": "humana: ablativo feminino singular de humanus; também nominativo e vocativo feminino singular; neutro plural.\nTerminação -a: ablativo ou nominativo da 1ª declinação; neutro plural da 2ª.\nEm «ex anima rationali et humana carne» (Símbolo Quicumque), concorda com carne: «de carne humana».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2192",
+  "tipo": "flexao",
+  "la": "humanae",
+  "lema": "la-p162",
+  "analise": "genitivo feminino singular; também dativo feminino singular; também nominativo feminino plural; também vocativo feminino plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da humana; à humana; as humanas (sujeito)",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo; plural: acusativo",
+   "singular: acusativo; plural: genitivo ou acusativo"
+  ],
+  "nota": "humanae: genitivo ou dativo feminino singular; nominativo ou vocativo feminino plural de humanus.\nTerminação -ae: quatro casos possíveis; o contexto decide.\nEm «bonum est mentis humanae» (Sêneca, Cartas a Lucílio 89,4), concorda com mentis: «da mente humana».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2193",
+  "tipo": "flexao",
+  "la": "faciebant",
+  "lema": "la-p165",
+  "analise": "imperfeito do indicativo, 3ª pessoa do plural",
+  "pt": "faziam",
+  "aceitas": [
+   "faziam",
+   "eles faziam",
+   "elas faziam",
+   "realizavam",
+   "tornavam",
+   "produziam"
+  ],
+  "distratores": [
+   "fazem",
+   "fizeram",
+   "farão",
+   "fazia"
+  ],
+  "nota": "faciebant: imperfeito do indicativo, 3ª pessoa do plural, de facio.\nTerminação -iebant: imperfeito da 3ª conjugação em -io.\nEm «cuncta faciebant» (2Cr 34,12), «faziam tudo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g008"
+  ]
+ },
+ {
+  "id": "la-v2194",
+  "tipo": "flexao",
+  "la": "factis",
+  "lema": "la-p165",
+  "analise": "particípio perfeito, ablativo neutro plural; também ablativo masculino plural; também ablativo feminino plural; também dativo plural",
+  "pt": "com os feitos",
+  "outras": [
+   "aos feitos"
+  ],
+  "aceitas": [
+   "com os feitos",
+   "pelos feitos",
+   "pelos atos",
+   "com os atos",
+   "nos atos",
+   "pelos fatos",
+   "aos feitos",
+   "aos atos"
+  ],
+  "distratores": [
+   "os feitos (sujeito)",
+   "do feito",
+   "dos feitos",
+   "com o feito"
+  ],
+  "nota": "factis: particípio perfeito de facio, ablativo ou dativo plural.\nTerminação -is: dativo e ablativo plural da 1ª e 2ª declinação.\nEm «de factis propriis» (Símbolo Quicumque), ablativo com de: «dos atos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2195",
+  "tipo": "flexao",
+  "la": "sentiat",
+  "lema": "la-p169",
+  "analise": "presente do subjuntivo, 3ª pessoa do singular",
+  "pt": "que ele sinta",
+  "aceitas": [
+   "que ele sinta",
+   "que sinta",
+   "sinta",
+   "ele sinta",
+   "perceba",
+   "que ele perceba"
+  ],
+  "distratores": [
+   "sente",
+   "sentiu",
+   "sentirá",
+   "que tu sintas"
+  ],
+  "nota": "sentiat: presente do subjuntivo, 3ª pessoa do singular, de sentio.\nNa 4ª conjugação o subjuntivo tem -ia-: sent-ia-t.\nEm «ita de Trinitate sentiat» (Símbolo Quicumque), subjuntivo de ordem: «que sinta».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2196",
+  "tipo": "flexao",
+  "la": "laetabuntur",
+  "lema": "la-p173",
+  "analise": "futuro do indicativo, 3ª pessoa do plural, verbo depoente",
+  "pt": "se alegrarão",
+  "aceitas": [
+   "se alegrarão",
+   "eles se alegrarão",
+   "exultarão",
+   "rejubilarão",
+   "se regozijarão",
+   "se rejubilarão"
+  ],
+  "distratores": [
+   "se alegram",
+   "se alegraram",
+   "se alegravam",
+   "se alegrará"
+  ],
+  "nota": "laetabuntur: futuro do indicativo, 3ª pessoa do plural, de laetor (depoente: forma passiva, sentido ativo).\nTerminação -bun-tur: futuro da 1ª conjugação.\nEm «Laetabuntur in cubilibus suis» (Trium puerorum), «se alegrarão nos seus leitos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g010"
+  ]
+ },
+ {
+  "id": "la-v2197",
+  "tipo": "flexao",
+  "la": "resurgere",
+  "lema": "la-p177",
+  "analise": "infinitivo presente",
+  "pt": "ressurgir",
+  "aceitas": [
+   "ressurgir",
+   "ressuscitar",
+   "levantar-se de novo",
+   "erguer-se de novo",
+   "reerguer-se",
+   "renascer"
+  ],
+  "distratores": [
+   "ressurge",
+   "ressurgindo",
+   "ressurgido",
+   "ter ressurgido"
+  ],
+  "nota": "resurgere: infinitivo presente de resurgo.\nTerminação -ere: infinitivo da 3ª conjugação.\nEm «resurgere habent» (Símbolo Quicumque), com habent: «hão de ressurgir».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g013"
+  ]
+ },
+ {
+  "id": "la-v2198",
+  "tipo": "flexao",
+  "la": "compellimur",
+  "lema": "la-p183",
+  "analise": "presente do indicativo, 1ª pessoa do plural, voz passiva",
+  "pt": "somos obrigados",
+  "aceitas": [
+   "somos obrigados",
+   "somos obrigadas",
+   "somos forçados",
+   "somos impelidos",
+   "somos levados",
+   "somos compelidos",
+   "somos empurrados",
+   "nós somos obrigados"
+  ],
+  "distratores": [
+   "obrigamos",
+   "fomos obrigados",
+   "seremos obrigados",
+   "são obrigados"
+  ],
+  "nota": "compellimur: presente do indicativo passivo, 1ª pessoa do plural, de compello.\nTerminação -mur: 1ª pessoa do plural da voz passiva.\nEm «veritate compellimur» (Símbolo Quicumque), «somos obrigados pela verdade».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2199",
+  "tipo": "flexao",
+  "la": "aquis",
+  "lema": "la-p199",
+  "analise": "ablativo plural; também dativo plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "nas águas; às águas",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: genitivo ou dativo",
+   "singular: nominativo ou acusativo",
+   "plural: nominativo ou genitivo"
+  ],
+  "nota": "aquis: ablativo ou dativo plural de aqua.\nTerminação -is: dativo e ablativo plural da 1ª declinação.\nEm «quae moventur in aquis» (Trium puerorum), ablativo com in: «nas águas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2200",
+  "tipo": "flexao",
+  "la": "insigne",
+  "lema": "la-p242",
+  "analise": "nominativo neutro singular; também acusativo neutro singular; também vocativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou acusativo",
+  "sentido": "notável",
+  "distratores": [
+   "singular: genitivo ou dativo",
+   "singular: dativo ou ablativo",
+   "plural: dativo ou ablativo",
+   "plural: nominativo ou acusativo"
+  ],
+  "nota": "insigne: nominativo, acusativo ou vocativo neutro singular de insignis.\nAdjetivo da 3ª declinação: o neutro singular termina em -e.\nEm «Vas insigne devotionis» (Ladainha lauretana), concorda com vas: «vaso insigne».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2201",
+  "tipo": "flexao",
+  "la": "tribuisti",
+  "lema": "la-p263",
+  "analise": "perfeito do indicativo, 2ª pessoa do singular",
+  "pt": "concedeste",
+  "aceitas": [
+   "concedeste",
+   "tu concedeste",
+   "atribuíste",
+   "deste",
+   "conferiste",
+   "outorgaste",
+   "distribuíste",
+   "repartiste"
+  ],
+  "distratores": [
+   "concedes",
+   "concedias",
+   "concederás",
+   "concedi"
+  ],
+  "nota": "tribuisti: perfeito do indicativo, 2ª pessoa do singular, de tribuo (forma contraída de tribuisti).\nTerminação -isti: 2ª pessoa do singular do perfeito.\nEm «qui beato Laurentio tribuisti» (Trium puerorum), «que concedeste ao bem-aventurado Lourenço».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-v2202",
+  "tipo": "flexao",
+  "la": "maria",
+  "lema": "la-p268",
+  "analise": "nominativo plural; também acusativo plural; também vocativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "os mares",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: acusativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "plural: genitivo ou dativo"
+  ],
+  "nota": "maria: nominativo, acusativo ou vocativo plural de mare.\nNo neutro, o plural termina em -ia nesses três casos (tema em -i).\nEm «benedicite, maria et flumina, Domino» (Trium puerorum), vocativo: «mares».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2203",
+  "tipo": "flexao",
+  "la": "digni",
+  "lema": "la-p331",
+  "analise": "nominativo masculino plural; também vocativo masculino plural; também genitivo masculino singular; também genitivo neutro singular",
+  "familia": "caso",
+  "pt": "singular: genitivo; plural: nominativo",
+  "sentido": "dignos (sujeito); do digno; ó dignos",
+  "distratores": [
+   "singular: acusativo; plural: genitivo",
+   "singular: ablativo; plural: acusativo",
+   "singular: nominativo; plural: ablativo",
+   "singular ou plural: dativo"
+  ],
+  "nota": "digni: nominativo ou vocativo masculino plural; genitivo singular (masculino ou neutro) de dignus.\nTerminação -i: genitivo singular ou nominativo plural da 2ª declinação.\nEm «Ut digni efficiamur» (Ladainha lauretana), predicativo do sujeito subentendido: «sejamos feitos dignos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2204",
+  "tipo": "flexao",
+  "la": "integram",
+  "lema": "la-p333",
+  "analise": "acusativo feminino singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "íntegra (objeto)",
+  "distratores": [
+   "singular: vocativo",
+   "singular: ablativo",
+   "singular: dativo",
+   "singular: nominativo"
+  ],
+  "nota": "integram: acusativo feminino singular de integer.\nTerminação -am: acusativo singular do feminino (1ª declinação). Radical: integr- (do feminino integra).\nEm «Quam nisi quisque integram inviolatamque servaverit» (Símbolo Quicumque), concorda com quam: «íntegra».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2205",
+  "tipo": "flexao",
+  "la": "pueris",
+  "lema": "la-p341",
+  "analise": "dativo plural; também ablativo plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "aos meninos; com os meninos; pelos meninos",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "singular: genitivo; plural: nominativo"
+  ],
+  "nota": "pueris: dativo ou ablativo plural de puer.\nTerminação -is: dativo e ablativo plural da 2ª declinação.\nEm «tribus pueris mitigasti flammas» (Trium puerorum), dativo: «aos três meninos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2206",
+  "tipo": "flexao",
+  "la": "puerorum",
+  "lema": "la-p341",
+  "analise": "genitivo plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos meninos",
+  "distratores": [
+   "plural: nominativo",
+   "plural: acusativo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "puerorum: genitivo plural de puer.\nTerminação -orum: genitivo plural da 2ª declinação.\nEm «Trium puerorum cantemus hymnum» (Trium puerorum), «o hino dos três meninos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2207",
+  "tipo": "flexao",
+  "la": "totae",
+  "lema": "la-p345",
+  "analise": "nominativo feminino plural; também vocativo feminino plural; também genitivo feminino singular; também dativo feminino singular",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "todas (sujeito); de toda; a toda",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou acusativo",
+   "singular: nominativo ou acusativo; plural: acusativo"
+  ],
+  "nota": "totae: nominativo ou vocativo feminino plural; genitivo ou dativo feminino singular de totus.\nTerminação -ae: quatro casos possíveis; o contexto decide.\nEm «totae tres personae» (Símbolo Quicumque), concorda com personae: «todas as três pessoas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2208",
+  "tipo": "flexao",
+  "la": "castissima",
+  "lema": "la-p348",
+  "analise": "superlativo, vocativo feminino singular; também superlativo, nominativo feminino singular; também superlativo, ablativo feminino singular; também superlativo, nominativo e acusativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "ó castíssima; castíssima (sujeito); com a castíssima",
+  "distratores": [
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: genitivo ou acusativo; plural: genitivo"
+  ],
+  "nota": "castissima: superlativo de castus (castissimus), feminino singular (vocativo, nominativo ou ablativo).\nSuperlativo: radical + -issim-; feminino em -a.\nEm «Mater castissima» (Ladainha lauretana), vocativo: «ó castíssima».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2209",
+  "tipo": "flexao",
+  "la": "incipiat",
+  "lema": "la-p353",
+  "analise": "presente do subjuntivo, 3ª pessoa do singular",
+  "pt": "que ele comece",
+  "aceitas": [
+   "que ele comece",
+   "que comece",
+   "comece",
+   "ele comece",
+   "inicie",
+   "que ele inicie",
+   "que inicie",
+   "principie"
+  ],
+  "distratores": [
+   "começa",
+   "começou",
+   "começará",
+   "que eu comece"
+  ],
+  "nota": "incipiat: presente do subjuntivo, 3ª pessoa do singular, de incipio.\nNa 3ª conjugação em -io o subjuntivo tem -ia-: incip-ia-t.\nEm «ut ... oratio et operatio a te semper incipiat» (Trium puerorum), finalidade: «comece».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2210",
+  "tipo": "flexao",
+  "la": "procedens",
+  "lema": "la-p354",
+  "analise": "particípio presente, nominativo masculino singular; também nominativo feminino singular; também nominativo neutro singular; também acusativo neutro singular",
+  "pt": "o que procede",
+  "aceitas": [
+   "o que procede",
+   "procedente",
+   "que procede",
+   "o que avança",
+   "avançando",
+   "procedendo",
+   "o que prossegue",
+   "prosseguindo"
+  ],
+  "distratores": [
+   "os que procedem",
+   "do que procede",
+   "ao que procede",
+   "o que procedeu"
+  ],
+  "nota": "procedens: particípio presente de procedo, singular (nominativo, ou acusativo neutro).\nParticípio presente: radical + -ens, -entis.\nEm «non factus, nec creatus, nec genitus, sed procedens» (Símbolo Quicumque), «procedente».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g019"
+  ]
+ },
+ {
+  "id": "la-v2211",
+  "tipo": "flexao",
+  "la": "genitus",
+  "lema": "la-p393",
+  "analise": "particípio perfeito, nominativo masculino singular",
+  "pt": "gerado",
+  "aceitas": [
+   "gerado",
+   "engendrado",
+   "produzido",
+   "parido"
+  ],
+  "distratores": [
+   "gerada",
+   "gerados",
+   "do gerado",
+   "ao gerado"
+  ],
+  "nota": "genitus: particípio perfeito de gigno, nominativo masculino singular.\nParticípio perfeito: radical + -tus (genitus, -a, -um).\nEm «sed genitus» (Símbolo Quicumque), com est subentendido: «foi gerado».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2212",
+  "tipo": "flexao",
+  "la": "ignium",
+  "lema": "la-p417",
+  "analise": "genitivo plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos fogos",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "singular: acusativo",
+   "plural: ablativo"
+  ],
+  "nota": "ignium: genitivo plural de ignis.\nTerminação -ium: genitivo plural dos temas em -i (3ª declinação).\nEm «flammas ignium» (Trium puerorum), «as chamas dos fogos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2213",
+  "tipo": "flexao",
+  "la": "creatus",
+  "lema": "la-p420",
+  "analise": "particípio perfeito, nominativo masculino singular",
+  "pt": "criado",
+  "aceitas": [
+   "criado",
+   "gerado",
+   "produzido",
+   "eleito",
+   "escolhido"
+  ],
+  "distratores": [
+   "criada",
+   "criados",
+   "do criado",
+   "ao criado"
+  ],
+  "nota": "creatus: particípio perfeito de creo, nominativo masculino singular.\nParticípio perfeito: radical + -tus (creatus, -a, -um).\nEm «nec creatus, nec genitus» (Símbolo Quicumque), com est subentendido: «foi criado».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2214",
+  "tipo": "flexao",
+  "la": "omnipotentes",
+  "lema": "la-p428",
+  "analise": "nominativo masculino plural; também acusativo masculino plural; também vocativo masculino plural; também nominativo feminino plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "onipotentes (sujeito); onipotentes (objeto)",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "plural: genitivo ou ablativo"
+  ],
+  "nota": "omnipotentes: nominativo, acusativo ou vocativo plural (masculino ou feminino) de omnipotens.\nAdjetivo da 3ª declinação: plural em -es. Radical: omnipotent- (do genitivo omnipotentis).\nEm «non tres omnipotentes» (Símbolo Quicumque), concorda com tres: «não três onipotentes».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2215",
+  "tipo": "flexao",
+  "la": "creatoris",
+  "lema": "la-p429",
+  "analise": "genitivo singular",
+  "familia": "caso",
+  "pt": "singular: genitivo",
+  "sentido": "do Criador",
+  "distratores": [
+   "singular: acusativo",
+   "singular: dativo",
+   "singular: ablativo",
+   "singular: vocativo"
+  ],
+  "nota": "creatoris: genitivo singular de creator.\nTerminação -is: genitivo singular da 3ª declinação.\nEm «mater Creatoris» (Ladainha lauretana), «mãe do Criador».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2216",
+  "tipo": "flexao",
+  "la": "concepta",
+  "lema": "la-p431",
+  "analise": "particípio perfeito, vocativo feminino singular; também nominativo feminino singular; também ablativo feminino singular; também nominativo neutro plural; também acusativo neutro plural",
+  "pt": "ó concebida",
+  "outras": [
+   "a concebida (sujeito)",
+   "com a concebida"
+  ],
+  "aceitas": [
+   "ó concebida",
+   "concebida",
+   "a concebida",
+   "com a concebida",
+   "pela concebida",
+   "imaginada",
+   "compreendida",
+   "contida"
+  ],
+  "distratores": [
+   "da concebida",
+   "à concebida",
+   "concebido (sujeito)",
+   "as concebidas (sujeito)"
+  ],
+  "nota": "concepta: particípio perfeito de concipio, feminino singular (vocativo, nominativo ou ablativo); também neutro plural.\nParticípio perfeito: radical + -tus (conceptus, -a, -um).\nEm «regina sine labe originali concepta» (Ladainha lauretana), concorda com regina: «concebida».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2217",
+  "tipo": "flexao",
+  "la": "catholica",
+  "lema": "la-p446",
+  "analise": "nominativo feminino singular; também ablativo feminino singular; também vocativo feminino singular; também nominativo neutro plural; também acusativo neutro plural; também vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "católica (sujeito); pela católica; as católicas",
+  "distratores": [
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: dativo ou acusativo; plural: genitivo"
+  ],
+  "nota": "catholica: nominativo, ablativo ou vocativo feminino singular de catholicus; também neutro plural.\nTerminação -a: nominativo ou ablativo da 1ª declinação; neutro plural da 2ª.\nEm «Fides ... catholica» (Símbolo Quicumque), nominativo; em «catholica religione», ablativo (concorda com religione).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2218",
+  "tipo": "flexao",
+  "la": "carne",
+  "lema": "la-p450",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "com a carne",
+  "distratores": [
+   "singular: genitivo",
+   "singular: acusativo",
+   "singular: vocativo",
+   "singular: dativo"
+  ],
+  "nota": "carne: ablativo singular de caro, carnis.\nAblativo da 3ª declinação em -e. Radical: carn- (do genitivo carnis).\nEm «ex anima rationali et humana carne subsistens» (Símbolo Quicumque), «de carne humana».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2219",
+  "tipo": "flexao",
+  "la": "salute",
+  "lema": "la-p462",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "pela salvação",
+  "distratores": [
+   "singular: dativo",
+   "singular: acusativo",
+   "singular: nominativo",
+   "singular: vocativo"
+  ],
+  "nota": "salute: ablativo singular de salus, salutis.\nAblativo da 3ª declinação em -e. Radical: salut- (do genitivo salutis).\nEm «pro salute nostra» (Símbolo Quicumque), com pro: «pela nossa salvação».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2220",
+  "tipo": "flexao",
+  "la": "confiteamur",
+  "lema": "la-p474",
+  "analise": "presente do subjuntivo, 1ª pessoa do plural; verbo depoente",
+  "pt": "que confessemos",
+  "aceitas": [
+   "que confessemos",
+   "confessemos",
+   "nós confessemos",
+   "que nós confessemos",
+   "que reconheçamos",
+   "reconheçamos",
+   "que professemos",
+   "professemos",
+   "que declaremos",
+   "declaremos",
+   "que admitamos",
+   "admitamos"
+  ],
+  "distratores": [
+   "confessamos",
+   "confessávamos",
+   "que eles confessem",
+   "confessaremos"
+  ],
+  "nota": "confiteamur: presente do subjuntivo, 1ª pessoa do plural de confiteor (depoente: forma passiva, sentido ativo).\n-eamur: subjuntivo da 2ª conjugação.\nEm «ut credamus et confiteamur» (Símbolo Quicumque), «que creiamos e confessemos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2221",
+  "tipo": "flexao",
+  "la": "confiteantur",
+  "lema": "la-p474",
+  "analise": "presente do subjuntivo, 3ª pessoa do plural; verbo depoente",
+  "pt": "que eles confessem",
+  "aceitas": [
+   "que eles confessem",
+   "eles confessem",
+   "que confessem",
+   "confessem",
+   "que eles louvem",
+   "eles louvem",
+   "que louvem",
+   "louvem",
+   "que eles reconheçam",
+   "que reconheçam",
+   "que eles declarem",
+   "que declarem"
+  ],
+  "distratores": [
+   "eles confessam",
+   "eles confessavam",
+   "que nós confessemos",
+   "eles confessarão"
+  ],
+  "nota": "confiteantur: presente do subjuntivo, 3ª pessoa do plural de confiteor (depoente: sentido ativo).\n-eantur: subjuntivo da 2ª conjugação.\nEm «Confiteantur tibi, Domine, omnia opera tua» (Trium puerorum), desejo: «que te louvem».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2222",
+  "tipo": "flexao",
+  "la": "confiteri",
+  "lema": "la-p474",
+  "analise": "infinitivo presente; verbo depoente",
+  "pt": "confessar",
+  "aceitas": [
+   "confessar",
+   "reconhecer",
+   "declarar",
+   "admitir",
+   "professar",
+   "louvar",
+   "dar graças"
+  ],
+  "distratores": [
+   "eu confesso",
+   "confessarão",
+   "confessado",
+   "ele confessou"
+  ],
+  "nota": "confiteri: infinitivo presente de confiteor (depoente: forma passiva, sentido ativo).\nInfinitivo da 2ª conjugação depoente: -eri.\nEm «unamquamque personam Deum ac Dominum confiteri» (Símbolo Quicumque), «confessar cada pessoa como Deus e Senhor».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g013"
+  ]
+ },
+ {
+  "id": "la-v2223",
+  "tipo": "flexao",
+  "la": "beatae",
+  "lema": "la-p523",
+  "analise": "genitivo feminino singular; também dativo feminino singular; também nominativo feminino plural; também vocativo feminino plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da bem-aventurada; à bem-aventurada; bem-aventuradas (sujeito)",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo; plural: acusativo",
+   "singular: acusativo; plural: genitivo ou acusativo"
+  ],
+  "nota": "beatae: genitivo feminino singular de beatus; também dativo singular ou nominativo plural.\n-ae: genitivo e dativo singular, nominativo e vocativo plural da 1ª declinação.\nEm «beatae Mariae semper Virginis intercessione» (Ladainha lauretana), concorda com Mariae.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2224",
+  "tipo": "flexao",
+  "la": "beato",
+  "lema": "la-p523",
+  "analise": "dativo masculino singular; também ablativo masculino singular; também dativo neutro singular; também ablativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "ao bem-aventurado; pelo bem-aventurado",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "singular: genitivo; plural: nominativo",
+   "plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo"
+  ],
+  "nota": "beato: dativo masculino singular de beatus; a mesma forma é ablativo.\n-o: dativo ou ablativo singular da 2ª declinação (masculino e neutro).\nEm «qui beato Laurentio tribuisti» (Trium puerorum), concorda com Laurentio: «ao bem-aventurado Lourenço».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2225",
+  "tipo": "flexao",
+  "la": "suorum",
+  "lema": "la-p536",
+  "analise": "genitivo neutro plural; também genitivo masculino plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos seus",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "singular: acusativo",
+   "plural: ablativo"
+  ],
+  "nota": "suorum: genitivo plural de suus (neutro ou masculino).\n-orum: genitivo plural masculino ou neutro; o feminino é suarum.\nEm «tormentorum suorum incendia» (Trium puerorum), concorda com tormentorum: «dos seus tormentos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2226",
+  "tipo": "flexao",
+  "la": "noctes",
+  "lema": "la-p542",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó noites; as noites",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: acusativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "plural: genitivo ou dativo"
+  ],
+  "nota": "noctes: vocativo plural de nox, noctis; também nominativo ou acusativo plural.\nNa 3ª declinação, -es é o plural de três casos; o contexto decide. Radical: noct- (do genitivo noctis).\nEm «benedicite, noctes et dies, Domino» (Trium puerorum), as noites são chamadas a bendizer.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2227",
+  "tipo": "flexao",
+  "la": "veneranda",
+  "lema": "la-p560",
+  "analise": "gerundivo, vocativo feminino singular; também nominativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "pt": "que deve ser venerada",
+  "outras": [
+   "que devem ser veneradas"
+  ],
+  "aceitas": [
+   "que deve ser venerada",
+   "deve ser venerada",
+   "a ser venerada",
+   "digna de ser venerada",
+   "deve ser adorada",
+   "deve ser honrada",
+   "deve ser reverenciada",
+   "que devem ser veneradas",
+   "devem ser veneradas",
+   "a serem veneradas",
+   "dignas de ser veneradas",
+   "dignas de serem veneradas"
+  ],
+  "distratores": [
+   "ela venera",
+   "que ela venere",
+   "venerai!",
+   "ela venerou"
+  ],
+  "nota": "veneranda: gerundivo de veneror, feminino singular; também neutro plural.\n-nd-: gerundivo, o que deve ser feito; concorda como adjetivo.\nEm «virgo veneranda» (Ladainha lauretana), vocativo: «virgem venerável»; no Símbolo Quicumque, nominativo: «unitas … veneranda sit».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g002"
+  ]
+ },
+ {
+  "id": "la-v2228",
+  "tipo": "flexao",
+  "la": "iubilationis",
+  "lema": "la-p568",
+  "analise": "genitivo singular",
+  "familia": "caso",
+  "pt": "singular: genitivo",
+  "sentido": "do júbilo",
+  "distratores": [
+   "singular: acusativo",
+   "singular: ablativo",
+   "singular: vocativo",
+   "singular: dativo"
+  ],
+  "nota": "iubilationis: genitivo singular de iubilatio, iubilationis.\n-onis: genitivo singular da 3ª declinação. Radical: iubilation- (do genitivo iubilationis).\nEm «laudate eum in cymbalis iubilationis», «com címbalos de júbilo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2229",
+  "tipo": "flexao",
+  "la": "virtutes",
+  "lema": "la-p570",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó potências; as potências",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: dativo ou ablativo",
+   "singular: nominativo ou acusativo"
+  ],
+  "nota": "virtutes: vocativo plural de virtus, virtutis; também nominativo ou acusativo plural.\nNa 3ª declinação, -es é o plural de três casos. Radical: virtut- (do genitivo virtutis).\nEm «benedicite, omnes virtutes Domini, Domino» (Trium puerorum), as potências do Senhor são chamadas a bendizer.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2230",
+  "tipo": "flexao",
+  "la": "montes",
+  "lema": "la-p595",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó montes; os montes",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "plural: genitivo ou ablativo"
+  ],
+  "nota": "montes: vocativo plural de mons, montis; também nominativo ou acusativo plural.\nNa 3ª declinação, -es é o plural de três casos. Radical: mont- (do genitivo montis).\nEm «Benedicite, montes et colles, Domino» (Trium puerorum), vocativo: os montes são chamados a bendizer.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2231",
+  "tipo": "flexao",
+  "la": "praedicanda",
+  "lema": "la-p596",
+  "analise": "gerundivo, vocativo feminino singular; também nominativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "pt": "que deve ser proclamada",
+  "outras": [
+   "que devem ser proclamadas"
+  ],
+  "aceitas": [
+   "que deve ser proclamada",
+   "deve ser proclamada",
+   "a ser proclamada",
+   "digna de ser proclamada",
+   "deve ser anunciada",
+   "deve ser pregada",
+   "que devem ser proclamadas",
+   "devem ser proclamadas",
+   "a serem proclamadas",
+   "dignas de ser proclamadas",
+   "dignas de serem proclamadas",
+   "devem ser anunciadas"
+  ],
+  "distratores": [
+   "ela proclama",
+   "que ela proclame",
+   "proclamai!",
+   "ela proclamou"
+  ],
+  "nota": "praedicanda: gerundivo de praedico, feminino singular; também neutro plural.\n-nd-: gerundivo, o que deve ser feito.\nEm «virgo praedicanda» (Ladainha lauretana), vocativo: «virgem digna de ser proclamada».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g002"
+  ]
+ },
+ {
+  "id": "la-v2232",
+  "tipo": "flexao",
+  "la": "peribit",
+  "lema": "la-p617",
+  "analise": "futuro do indicativo, 3ª pessoa do singular",
+  "pt": "perecerá",
+  "aceitas": [
+   "perecerá",
+   "ele perecerá",
+   "ela perecerá",
+   "morrerá",
+   "ele morrerá",
+   "ela morrerá"
+  ],
+  "distratores": [
+   "perece",
+   "pereceu",
+   "perecia",
+   "que ele pereça"
+  ],
+  "nota": "peribit: futuro do indicativo, 3ª pessoa do singular de pereo.\nOs compostos de eo fazem o futuro em -bit: ibit, peribit.\nEm «absque dubio in aeternum peribit» (Símbolo Quicumque), «sem dúvida perecerá para sempre».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g010"
+  ]
+ },
+ {
+  "id": "la-v2233",
+  "tipo": "flexao",
+  "la": "universa",
+  "lema": "la-p624",
+  "analise": "vocativo neutro plural; também nominativo neutro plural; também acusativo neutro plural; também nominativo feminino singular; também vocativo feminino singular; também ablativo feminino singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "ó universais; universais; pela universal",
+  "distratores": [
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: dativo ou acusativo; plural: genitivo"
+  ],
+  "nota": "universa: vocativo neutro plural de universus; também nominativo e acusativo neutro plural, ou feminino singular.\nNo neutro, -a é o plural de três casos.\nEm «benedicite, universa germinantia in terra» (Trium puerorum), «tudo o que brota na terra».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2234",
+  "tipo": "flexao",
+  "la": "familiae",
+  "lema": "la-p628",
+  "analise": "genitivo singular; também dativo singular; também nominativo plural; também vocativo plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da família; à família; as famílias (sujeito)",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou acusativo",
+   "singular: nominativo; plural: dativo ou ablativo"
+  ],
+  "nota": "familiae: genitivo singular de familia, familiae; também dativo singular, nominativo e vocativo plural.\n-ae: terminação da 1ª declinação, de quatro leituras; o contexto decide.\nEm «Regina familiae» (Ladainha lauretana), genitivo: «rainha da família».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2235",
+  "tipo": "flexao",
+  "la": "famulos",
+  "lema": "la-p645",
+  "analise": "acusativo plural",
+  "familia": "caso",
+  "pt": "plural: acusativo",
+  "sentido": "os servos (objeto)",
+  "distratores": [
+   "plural: genitivo",
+   "plural: nominativo",
+   "singular: acusativo",
+   "plural: dativo"
+  ],
+  "nota": "famulos: acusativo plural de famulus, famuli.\n-os: acusativo plural da 2ª declinação.\nEm «Concede nos famulos tuos» (Trium puerorum), «nós, teus servos», apostos de nos.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2236",
+  "tipo": "flexao",
+  "la": "trinitate",
+  "lema": "la-p720",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "na Trindade",
+  "distratores": [
+   "singular: acusativo",
+   "singular: nominativo",
+   "singular: vocativo",
+   "singular: dativo"
+  ],
+  "nota": "trinitate: ablativo singular de trinitas, trinitatis.\nAblativo da 3ª declinação em -e. Radical: trinitat- (do genitivo trinitatis).\nEm «ut unum Deum in Trinitate … veneremur» (Símbolo Quicumque), «na Trindade»; em «de Trinitate sentiat», «a respeito da Trindade».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2237",
+  "tipo": "flexao",
+  "la": "trinitatem",
+  "lema": "la-p720",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a Trindade (objeto)",
+  "distratores": [
+   "singular: ablativo",
+   "singular: vocativo",
+   "singular: dativo",
+   "singular: genitivo"
+  ],
+  "nota": "trinitatem: acusativo singular de trinitas, trinitatis.\n-em: acusativo singular da 3ª declinação. Radical: trinitat- (do genitivo trinitatis).\nEm «Trinitatem in unitate veneremur» (Símbolo Quicumque), objeto de veneremur: «a Trindade na unidade».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2238",
+  "tipo": "flexao",
+  "la": "divinae",
+  "lema": "la-p1186",
+  "analise": "genitivo feminino singular; também dativo feminino singular; também nominativo feminino plural; também vocativo feminino plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da divina; à divina; divinas (sujeito)",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo; plural: acusativo",
+   "singular: acusativo; plural: genitivo ou acusativo"
+  ],
+  "nota": "divinae: genitivo feminino singular de divinus; também dativo singular, nominativo e vocativo plural.\n-ae: terminação do feminino da 1ª declinação, de quatro leituras.\nEm «Mater divinae gratiae» (Ladainha lauretana), concorda com gratiae: «da divina graça».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2239",
+  "tipo": "flexao",
+  "la": "divinorum",
+  "lema": "la-p1186",
+  "analise": "genitivo neutro plural; também genitivo masculino plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "das coisas divinas",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "divinorum: genitivo plural de divinus (neutro ou masculino).\n-orum: genitivo plural masculino ou neutro.\nEm «divinorum una natura est» (Símbolo Quicumque), neutro substantivado: «a natureza das coisas divinas é uma só».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2240",
+  "tipo": "flexao",
+  "la": "purissima",
+  "lema": "la-p723",
+  "analise": "vocativo feminino singular; também nominativo feminino singular; também ablativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "ó puríssima; puríssima (sujeito); pela puríssima",
+  "distratores": [
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: genitivo; plural: dativo ou ablativo"
+  ],
+  "nota": "purissima: vocativo feminino singular de purus, no superlativo (-issimus); também nominativo ou ablativo.\n-a: feminino singular (nominativo, vocativo ou ablativo) ou neutro plural.\nEm «Mater purissima» (Ladainha lauretana), vocativo: «Mãe puríssima».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2241",
+  "tipo": "flexao",
+  "la": "inviolata",
+  "lema": "la-p724",
+  "analise": "vocativo feminino singular; também nominativo feminino singular; também ablativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "ó inviolada; inviolada (sujeito); pela inviolada",
+  "distratores": [
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: genitivo ou acusativo; plural: genitivo"
+  ],
+  "nota": "inviolata: vocativo feminino singular de inviolatus; também nominativo ou ablativo.\n-a: feminino singular ou neutro plural.\nEm «Mater inviolata» (Ladainha lauretana), vocativo: «Mãe inviolada».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2242",
+  "tipo": "flexao",
+  "la": "inviolatam",
+  "lema": "la-p724",
+  "analise": "acusativo feminino singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "inviolada (objeto)",
+  "distratores": [
+   "singular: nominativo",
+   "singular: vocativo",
+   "singular: dativo",
+   "singular: ablativo"
+  ],
+  "nota": "inviolatam: acusativo feminino singular de inviolatus.\n-am: acusativo singular do feminino.\nEm «integram inviolatamque servaverit» (Símbolo Quicumque), concorda com a fé: «íntegra e inviolada».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2243",
+  "tipo": "flexao",
+  "la": "intemerata",
+  "lema": "la-p725",
+  "analise": "vocativo feminino singular; também nominativo feminino singular; também ablativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "ó imaculada; imaculada (sujeito); pela imaculada",
+  "distratores": [
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: dativo; plural: dativo ou ablativo"
+  ],
+  "nota": "intemerata: vocativo feminino singular de intemeratus; também nominativo ou ablativo.\n-a: feminino singular ou neutro plural.\nEm «Mater intemerata» (Ladainha lauretana), vocativo: «Mãe imaculada».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2244",
+  "tipo": "flexao",
+  "la": "consilii",
+  "lema": "la-p940",
+  "analise": "genitivo singular",
+  "familia": "caso",
+  "pt": "singular: genitivo",
+  "sentido": "do conselho",
+  "distratores": [
+   "singular: vocativo",
+   "singular: ablativo",
+   "singular: dativo",
+   "singular: nominativo"
+  ],
+  "nota": "consilii: genitivo singular de consilium, consilii.\n-ii: genitivo singular da 2ª declinação (nome em -ium).\nEm «Mater boni consilii» (Ladainha lauretana), «Mãe do bom conselho».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2245",
+  "tipo": "flexao",
+  "la": "prudentissima",
+  "lema": "la-p730",
+  "analise": "vocativo feminino singular; também nominativo feminino singular; também ablativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "ó prudentíssima; prudentíssima (sujeito); pela prudentíssima",
+  "distratores": [
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou ablativo"
+  ],
+  "nota": "prudentissima: vocativo feminino singular de prudens, no superlativo (-issimus); também nominativo ou ablativo.\n-a: feminino singular ou neutro plural. Radical: prudent- (do genitivo prudentis).\nEm «Virgo prudentissima» (Ladainha lauretana), vocativo: «Virgem prudentíssima».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2246",
+  "tipo": "flexao",
+  "la": "iustitiae",
+  "lema": "la-p1236",
+  "analise": "genitivo singular; também dativo singular; também nominativo plural; também vocativo plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da justiça; à justiça; as justiças (sujeito)",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou acusativo",
+   "singular: nominativo; plural: dativo ou ablativo"
+  ],
+  "nota": "iustitiae: genitivo singular de iustitia, iustitiae; também dativo singular, nominativo e vocativo plural.\n-ae: terminação da 1ª declinação, de quatro leituras.\nEm «speculum iustitiae» (Ladainha lauretana), «espelho da justiça».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2247",
+  "tipo": "flexao",
+  "la": "sapientiae",
+  "lema": "la-p1044",
+  "analise": "genitivo singular; também dativo singular; também nominativo plural; também vocativo plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da sabedoria; à sabedoria; as sabedorias (sujeito)",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo; plural: acusativo",
+   "singular: acusativo; plural: genitivo ou acusativo"
+  ],
+  "nota": "sapientiae: genitivo singular de sapientia, sapientiae; também dativo singular, nominativo e vocativo plural.\n-ae: terminação da 1ª declinação, de quatro leituras.\nEm «sedes sapientiae» (Ladainha lauretana), «sede da sabedoria».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2248",
+  "tipo": "flexao",
+  "la": "laetitiae",
+  "lema": "la-p736",
+  "analise": "genitivo singular; também dativo singular; também nominativo plural; também vocativo plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da alegria; à alegria; as alegrias (sujeito)",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou acusativo",
+   "singular: nominativo; plural: dativo ou ablativo"
+  ],
+  "nota": "laetitiae: genitivo singular de laetitia, laetitiae; também dativo singular, nominativo e vocativo plural.\n-ae: terminação da 1ª declinação, de quatro leituras.\nEm «Causa nostrae laetitiae» (Ladainha lauretana), «causa da nossa alegria».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2249",
+  "tipo": "flexao",
+  "la": "laetitiam",
+  "lema": "la-p736",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a alegria (objeto)",
+  "distratores": [
+   "singular: ablativo",
+   "singular: dativo",
+   "singular: vocativo",
+   "singular: nominativo"
+  ],
+  "nota": "laetitiam: acusativo singular de laetitia, laetitiae.\n-am: acusativo singular da 1ª declinação.\nEm «Laudavi igitur laetitiam» (Ecl 8,15), objeto de laudavi: «louvei a alegria».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2250",
+  "tipo": "flexao",
+  "la": "spirituale",
+  "lema": "la-p737",
+  "analise": "vocativo neutro singular; também nominativo neutro singular; também acusativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou acusativo",
+  "sentido": "ó espiritual; espiritual",
+  "distratores": [
+   "singular: dativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "plural: dativo ou ablativo",
+   "plural: nominativo ou acusativo"
+  ],
+  "nota": "spirituale: vocativo neutro singular de spiritualis; também nominativo e acusativo.\nNo neutro, nominativo, vocativo e acusativo são iguais (-e nos adjetivos em -is).\nEm «vas spirituale» (Ladainha lauretana), concorda com vas: «vaso espiritual».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2251",
+  "tipo": "flexao",
+  "la": "honorabile",
+  "lema": "la-p738",
+  "analise": "vocativo neutro singular; também nominativo neutro singular; também acusativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou acusativo",
+  "sentido": "ó honorável; honorável",
+  "distratores": [
+   "singular: dativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "plural: nominativo ou acusativo",
+   "plural: dativo ou ablativo"
+  ],
+  "nota": "honorabile: vocativo neutro singular de honorabilis; também nominativo e acusativo.\nNo neutro, nominativo, vocativo e acusativo são iguais.\nEm «vas honorabile» (Ladainha lauretana), concorda com vas: «vaso honorável».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2252",
+  "tipo": "flexao",
+  "la": "devotionis",
+  "lema": "la-p739",
+  "analise": "genitivo singular",
+  "familia": "caso",
+  "pt": "singular: genitivo",
+  "sentido": "da devoção",
+  "distratores": [
+   "singular: ablativo",
+   "singular: nominativo",
+   "singular: dativo",
+   "singular: acusativo"
+  ],
+  "nota": "devotionis: genitivo singular de devotio, devotionis.\n-onis: genitivo singular da 3ª declinação. Radical: devotion- (do genitivo devotionis).\nEm «Vas insigne devotionis» (Ladainha lauretana), «vaso insigne de devoção».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2253",
+  "tipo": "flexao",
+  "la": "mystica",
+  "lema": "la-p740",
+  "analise": "vocativo feminino singular; também nominativo feminino singular; também ablativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "ó mística; mística (sujeito); pela mística",
+  "distratores": [
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou dativo"
+  ],
+  "nota": "mystica: vocativo feminino singular de mysticus; também nominativo ou ablativo.\n-a: feminino singular ou neutro plural.\nEm «rosa mystica» (Ladainha lauretana), vocativo: «rosa mística».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2254",
+  "tipo": "flexao",
+  "la": "eburnea",
+  "lema": "la-p742",
+  "analise": "vocativo feminino singular; também nominativo feminino singular; também ablativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "ó ebúrnea; ebúrnea (sujeito); pela ebúrnea",
+  "distratores": [
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou dativo"
+  ],
+  "nota": "eburnea: vocativo feminino singular de eburneus; também nominativo ou ablativo.\n-a: feminino singular ou neutro plural.\nEm «Turris eburnea» (Ladainha lauretana), vocativo: «torre de marfim».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2255",
+  "tipo": "flexao",
+  "la": "domum",
+  "lema": "la-p1232",
+  "analise": "acusativo singular; também genitivo plural",
+  "familia": "caso",
+  "pt": "singular: acusativo; plural: genitivo",
+  "sentido": "a casa (objeto); das casas",
+  "distratores": [
+   "singular: genitivo; plural: acusativo",
+   "singular: dativo; plural: nominativo",
+   "singular: nominativo; plural: dativo",
+   "singular ou plural: ablativo"
+  ],
+  "nota": "domum: acusativo singular de domus, domus; também genitivo plural (forma alternativa a domuum).\ndomus é irregular: mistura a 2ª e a 4ª declinação.\nEm «in meam domum veniat» (Sêneca, Da clemência 1,15,3), objeto de direção: «venha à minha casa».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2256",
+  "tipo": "flexao",
+  "la": "foederis",
+  "lema": "la-p744",
+  "analise": "genitivo singular",
+  "familia": "caso",
+  "pt": "singular: genitivo",
+  "sentido": "da aliança",
+  "distratores": [
+   "singular: vocativo",
+   "singular: acusativo",
+   "singular: nominativo",
+   "singular: ablativo"
+  ],
+  "nota": "foederis: genitivo singular de foedus, foederis.\n-eris: genitivo singular da 3ª declinação. Radical: foeder- (do genitivo foederis).\nEm «foederis arca» e «arcam foederis», complemento de arca: «arca da aliança».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2257",
+  "tipo": "flexao",
+  "la": "arcam",
+  "lema": "la-p745",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a arca (objeto)",
+  "distratores": [
+   "singular: nominativo",
+   "singular: ablativo",
+   "singular: genitivo",
+   "singular: vocativo"
+  ],
+  "nota": "arcam: acusativo singular de arca, arcae.\n-am: acusativo singular da 1ª declinação.\nEm «Tollite arcam foederis» (Js 6,6), objeto de tollite: «levantai a arca da aliança».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2258",
+  "tipo": "flexao",
+  "la": "matutina",
+  "lema": "la-p747",
+  "analise": "vocativo feminino singular; também nominativo feminino singular; também ablativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "ó matutina; matutina (sujeito); pela matutina",
+  "distratores": [
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: genitivo; plural: dativo ou ablativo"
+  ],
+  "nota": "matutina: vocativo feminino singular de matutinus; também nominativo ou ablativo.\n-a: feminino singular ou neutro plural.\nEm «Stella matutina» (Ladainha lauretana), vocativo: «estrela da manhã».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2259",
+  "tipo": "flexao",
+  "la": "matutino",
+  "lema": "la-p747",
+  "analise": "ablativo neutro singular; também ablativo masculino singular; também dativo masculino singular; também dativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "no matutino; ao matutino",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "plural: dativo ou ablativo",
+   "singular: genitivo; plural: nominativo",
+   "singular: acusativo; plural: genitivo"
+  ],
+  "nota": "matutino: ablativo neutro singular de matutinus; também ablativo masculino, ou dativo.\n-o: dativo ou ablativo singular da 2ª declinação (masculino e neutro).\nEm «in matutino, et non subsistet» (Is 17,14), neutro substantivado: «de manhã».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2260",
+  "tipo": "flexao",
+  "la": "infirmi",
+  "lema": "la-p748",
+  "analise": "nominativo masculino plural; também genitivo masculino singular; também genitivo neutro singular; também vocativo masculino plural",
+  "familia": "caso",
+  "pt": "singular: genitivo; plural: nominativo",
+  "sentido": "fracos (sujeito); do fraco; ó fracos",
+  "distratores": [
+   "singular: acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo",
+   "singular: nominativo; plural: acusativo",
+   "singular: dativo; plural: ablativo"
+  ],
+  "nota": "infirmi: nominativo masculino plural de infirmus; também genitivo singular.\n-i: genitivo singular ou nominativo plural da 2ª declinação.\nEm «si distrahemur, infirmi erimus» (Cícero, Cartas a Ático 8,3), predicativo: «seremos fracos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2261",
+  "tipo": "flexao",
+  "la": "infirmorum",
+  "lema": "la-p748",
+  "analise": "genitivo masculino plural; também genitivo neutro plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos enfermos",
+  "distratores": [
+   "plural: nominativo",
+   "plural: acusativo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "infirmorum: genitivo plural de infirmus (masculino ou neutro).\n-orum: genitivo plural masculino ou neutro.\nEm «salus infirmorum» (Ladainha lauretana), substantivado: «saúde dos enfermos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2262",
+  "tipo": "flexao",
+  "la": "solacio",
+  "lema": "la-p750",
+  "analise": "dativo singular; também ablativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "ao consolo; pelo consolo",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "singular: genitivo; plural: nominativo",
+   "plural: dativo ou ablativo",
+   "plural: genitivo ou acusativo"
+  ],
+  "nota": "solacio: dativo singular de solacium, solacii; também ablativo.\n-o: dativo ou ablativo singular da 2ª declinação (neutro).\nEm «qui mihi utinam solacio sit» (Cícero, Cartas aos amigos 9,1,1), dativo de finalidade: «oxalá ele me sirva de consolo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2263",
+  "tipo": "flexao",
+  "la": "migrantium",
+  "lema": "la-p751",
+  "analise": "particípio presente, genitivo plural",
+  "pt": "dos migrantes",
+  "aceitas": [
+   "dos migrantes",
+   "de migrantes",
+   "dos que migram",
+   "dos que se mudam",
+   "dos que emigram",
+   "dos emigrantes"
+  ],
+  "distratores": [
+   "o migrante (sujeito)",
+   "ao migrante",
+   "os migrantes (objeto)",
+   "pelo migrante"
+  ],
+  "nota": "migrantium: particípio presente de migro, genitivo plural (todos os gêneros).\n-ntium: genitivo plural do particípio presente.\nEm «Solacium migrantium» (Ladainha lauretana), substantivado: «consolo dos migrantes».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g019"
+  ]
+ },
+ {
+  "id": "la-v2264",
+  "tipo": "flexao",
+  "la": "afflictorum",
+  "lema": "la-p753",
+  "analise": "particípio perfeito, genitivo masculino plural; também genitivo neutro plural",
+  "pt": "dos aflitos",
+  "aceitas": [
+   "dos aflitos",
+   "de aflitos",
+   "dos abatidos",
+   "dos atormentados",
+   "dos feridos"
+  ],
+  "distratores": [
+   "o aflito (sujeito)",
+   "ao aflito",
+   "os aflitos (objeto)",
+   "pelo aflito"
+  ],
+  "nota": "afflictorum: particípio perfeito de affligo, genitivo plural (masculino ou neutro).\n-orum: genitivo plural masculino ou neutro.\nEm «consolatrix afflictorum» (Ladainha lauretana), substantivado: «consoladora dos aflitos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2265",
+  "tipo": "flexao",
+  "la": "affligam",
+  "lema": "la-p753",
+  "analise": "futuro do indicativo, 1ª pessoa do singular; também presente do subjuntivo, 1ª pessoa do singular",
+  "pt": "afligirei",
+  "outras": [
+   "que eu aflija"
+  ],
+  "aceitas": [
+   "afligirei",
+   "eu afligirei",
+   "abaterei",
+   "eu abaterei",
+   "derrubarei",
+   "eu derrubarei",
+   "atormentarei",
+   "ferirei",
+   "que eu aflija",
+   "eu aflija",
+   "que aflija",
+   "aflija"
+  ],
+  "distratores": [
+   "aflijo",
+   "afligi",
+   "eu afligia",
+   "tu afligirás"
+  ],
+  "nota": "affligam: futuro do indicativo, 1ª pessoa do singular de affligo; a mesma forma é o subjuntivo.\nNa 3ª conjugação, -am é futuro ou subjuntivo: o contexto decide.\nEm «non affligam te ultra» (Na 1,12), futuro: «não te afligirei mais».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g010"
+  ]
+ },
+ {
+  "id": "la-v2266",
+  "tipo": "flexao",
+  "la": "afflixi",
+  "lema": "la-p753",
+  "analise": "perfeito do indicativo, 1ª pessoa do singular",
+  "pt": "afligi",
+  "aceitas": [
+   "afligi",
+   "eu afligi",
+   "abati",
+   "eu abati",
+   "derrubei",
+   "eu derrubei",
+   "atormentei",
+   "feri"
+  ],
+  "distratores": [
+   "aflijo",
+   "afligia",
+   "afligirei",
+   "tu afligiste"
+  ],
+  "nota": "afflixi: perfeito do indicativo, 1ª pessoa do singular de affligo.\n-xi: perfeito em -si (afflig-si).\nEm «afflixi te, et non affligam te ultra», «afligi-te, e não te afligirei mais» (Na 1,12).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-v2267",
+  "tipo": "flexao",
+  "la": "christiana",
+  "lema": "la-p754",
+  "analise": "ablativo feminino singular; também nominativo feminino singular; também vocativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "pela cristã; cristã (sujeito); ó cristã",
+  "distratores": [
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo; plural: dativo ou ablativo"
+  ],
+  "nota": "christiana: ablativo feminino singular de christianus; também nominativo ou vocativo.\n-a: feminino singular ou neutro plural.\nEm «christiana veritate compellimur» (Símbolo Quicumque), concorda com veritate: «pela verdade cristã».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2268",
+  "tipo": "flexao",
+  "la": "christianorum",
+  "lema": "la-p754",
+  "analise": "genitivo masculino plural; também genitivo neutro plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos cristãos",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "christianorum: genitivo plural de christianus (masculino ou neutro).\n-orum: genitivo plural masculino ou neutro.\nEm «auxilium Christianorum» (Ladainha lauretana), substantivado: «auxílio dos cristãos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2269",
+  "tipo": "flexao",
+  "la": "patriarcharum",
+  "lema": "la-p755",
+  "analise": "genitivo plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos patriarcas",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "patriarcharum: genitivo plural de patriarcha, patriarchae.\n-arum: genitivo plural da 1ª declinação.\nEm «regina Patriarcharum» (Ladainha lauretana), «rainha dos patriarcas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2270",
+  "tipo": "flexao",
+  "la": "confessorum",
+  "lema": "la-p758",
+  "analise": "genitivo plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos confessores",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "confessorum: genitivo plural de confessor, confessoris.\n-orum: genitivo plural (aqui, de nome em -or da 3ª declinação, por analogia com a 2ª).\nEm «Regina Confessorum» (Ladainha lauretana), «rainha dos confessores».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2271",
+  "tipo": "flexao",
+  "la": "labe",
+  "lema": "la-p760",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "sem a mancha",
+  "distratores": [
+   "singular: vocativo",
+   "singular: genitivo",
+   "singular: nominativo",
+   "singular: dativo"
+  ],
+  "nota": "labe: ablativo singular de labes, labis.\nAblativo da 3ª declinação em -e.\nEm «sine labe originali concepta» (Ladainha lauretana), com sine: «sem mancha original».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2272",
+  "tipo": "flexao",
+  "la": "originali",
+  "lema": "la-p761",
+  "analise": "ablativo feminino singular; também ablativo masculino singular; também ablativo neutro singular; também dativo masculino singular; também dativo feminino singular; também dativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "pela original; à original",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "plural: nominativo ou acusativo",
+   "plural: dativo ou ablativo",
+   "singular: genitivo ou acusativo"
+  ],
+  "nota": "originali: ablativo feminino singular de originalis; também dativo (os três gêneros).\n-i: ablativo ou dativo singular dos adjetivos da 3ª declinação.\nEm «sine labe originali» (Ladainha lauretana), concorda com labe: «sem mancha original».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2273",
+  "tipo": "flexao",
+  "la": "assumetur",
+  "lema": "la-p762",
+  "analise": "futuro do indicativo, 3ª pessoa do singular, voz passiva",
+  "pt": "será tomado",
+  "aceitas": [
+   "será tomado",
+   "ele será tomado",
+   "será assumido",
+   "ele será assumido",
+   "será tomada",
+   "ela será tomada",
+   "será assumida",
+   "ela será assumida"
+  ],
+  "distratores": [
+   "é tomado",
+   "foi tomado",
+   "seja tomado",
+   "seria tomado"
+  ],
+  "nota": "assumetur: futuro do indicativo passivo, 3ª pessoa do singular de assumo.\nNa 3ª conjugação, o futuro é em -am, -es, -et; o passivo, -etur.\nEm «unus assumetur, et unus relinquetur» (Mt 24,40), «um será tomado, e um será deixado».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g010",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2274",
+  "tipo": "flexao",
+  "la": "assumpta",
+  "lema": "la-p762",
+  "analise": "particípio perfeito, vocativo feminino singular; também nominativo feminino singular; também ablativo feminino singular; também nominativo, acusativo e vocativo neutro plural",
+  "pt": "ó assunta",
+  "outras": [
+   "assunta (sujeito)",
+   "pela assunta"
+  ],
+  "aceitas": [
+   "ó assunta",
+   "assunta",
+   "a assunta",
+   "pela assunta",
+   "com a assunta",
+   "ó tomada",
+   "tomada",
+   "a tomada",
+   "pela tomada",
+   "ó assumida",
+   "assumida",
+   "a assumida"
+  ],
+  "distratores": [
+   "tomado (objeto)",
+   "da tomada",
+   "à tomada",
+   "dos tomados"
+  ],
+  "nota": "assumpta: particípio perfeito de assumo, vocativo feminino singular; também nominativo ou ablativo.\n-a: feminino singular ou neutro plural.\nEm «Regina in caelum assumpta» (Ladainha lauretana), «rainha assunta ao céu».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2275",
+  "tipo": "flexao",
+  "la": "sacratissimi",
+  "lema": "la-p763",
+  "analise": "genitivo masculino singular; também genitivo neutro singular; também nominativo masculino plural; também vocativo masculino plural",
+  "familia": "caso",
+  "pt": "singular: genitivo; plural: nominativo",
+  "sentido": "do sacratíssimo; sacratíssimos (sujeito); ó sacratíssimos",
+  "distratores": [
+   "singular: acusativo; plural: genitivo",
+   "singular: ablativo; plural: acusativo",
+   "singular: dativo; plural: ablativo",
+   "singular: nominativo; plural: dativo"
+  ],
+  "nota": "sacratissimi: genitivo masculino singular de sacratus, no superlativo (-issimus); também nominativo plural.\n-i: genitivo singular ou nominativo plural da 2ª declinação.\nEm «sacratissimi Rosarii» (Ladainha lauretana), concorda com Rosarii: «do santíssimo Rosário».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2276",
+  "tipo": "flexao",
+  "la": "rosarii",
+  "lema": "la-p764",
+  "analise": "genitivo singular",
+  "familia": "caso",
+  "pt": "singular: genitivo",
+  "sentido": "do rosário",
+  "distratores": [
+   "singular: nominativo",
+   "singular: acusativo",
+   "singular: dativo",
+   "singular: ablativo"
+  ],
+  "nota": "rosarii: genitivo singular de rosarium (2ª declinação, neutro).\n-ii é o genitivo singular dos nomes em -ium.\nEm «regina sacratissimi Rosarii» (Ladainha lauretana): «do Rosário».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2277",
+  "tipo": "flexao",
+  "la": "promissionibus",
+  "lema": "la-p766",
+  "analise": "ablativo plural; também dativo plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "com as promessas; às promessas",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: acusativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "plural: genitivo ou acusativo"
+  ],
+  "nota": "promissionibus: ablativo plural de promissio; a mesma forma é o dativo plural.\n-ibus é a terminação do dativo e do ablativo plural da 3ª declinação. Radical: promission- (do genitivo promissionis).\nEm «digni … promissionibus Christi» (Ladainha lauretana), complemento de digni: «dignos das promessas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2278",
+  "tipo": "flexao",
+  "la": "sanitate",
+  "lema": "la-p767",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "com saúde, pela saúde",
+  "distratores": [
+   "singular: acusativo",
+   "singular: nominativo",
+   "singular: genitivo",
+   "singular: vocativo"
+  ],
+  "nota": "sanitate: ablativo singular de sanitas.\n-e é o ablativo singular da 3ª declinação. Radical: sanitat- (do genitivo sanitatis).\nEm «perpetua mentis et corporis sanitate gaudere» (Ladainha lauretana): «gozar de saúde», complemento de gaudere.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2279",
+  "tipo": "flexao",
+  "la": "sanitatem",
+  "lema": "la-p767",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a saúde (objeto)",
+  "distratores": [
+   "singular: ablativo",
+   "singular: dativo",
+   "singular: genitivo",
+   "singular: vocativo"
+  ],
+  "nota": "sanitatem: acusativo singular de sanitas.\n-em é o acusativo singular dos nomes femininos da 3ª declinação. Radical: sanitat- (do genitivo sanitatis).\nEm «Noveramus corporis sanitatem» (Sêneca, Cartas a Lucílio 120,5): «a saúde», objeto.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2280",
+  "tipo": "flexao",
+  "la": "intercessione",
+  "lema": "la-p768",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "pela intercessão",
+  "distratores": [
+   "singular: vocativo",
+   "singular: dativo",
+   "singular: acusativo",
+   "singular: nominativo"
+  ],
+  "nota": "intercessione: ablativo singular de intercessio.\n-e é o ablativo singular da 3ª declinação. Radical: intercession- (do genitivo intercessionis).\nEm «gloriosa … Mariae … intercessione» (Ladainha lauretana): «pela intercessão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2281",
+  "tipo": "flexao",
+  "la": "praesentem",
+  "lema": "la-p769",
+  "analise": "acusativo masculino singular; também acusativo feminino singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "presente (objeto)",
+  "distratores": [
+   "singular: genitivo",
+   "singular: dativo",
+   "singular: vocativo",
+   "singular: ablativo"
+  ],
+  "nota": "praesentem: acusativo singular, masculino ou feminino, de praesens.\n-em é o acusativo singular masculino e feminino dos adjetivos da 3ª declinação. Radical: praesent- (do genitivo praesentis).\nEm «usque in praesentem diem» (Js 4,9): concorda com diem, «até o dia de hoje».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2282",
+  "tipo": "flexao",
+  "la": "praesenti",
+  "lema": "la-p769",
+  "analise": "ablativo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "pela presente; à presente",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "singular: genitivo; plural: acusativo",
+   "plural: dativo ou ablativo",
+   "singular ou plural: nominativo"
+  ],
+  "nota": "praesenti: ablativo singular de praesens (nos três gêneros); a mesma forma é o dativo singular.\nAdjetivos da 3ª declinação com -ns fazem o ablativo em -i ou -e; -i é o mais comum. Radical: praesent- (do genitivo praesentis).\nEm «a praesenti … tristitia» (Ladainha lauretana): concorda com tristitia, «da tristeza presente».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2283",
+  "tipo": "flexao",
+  "la": "perfrui",
+  "lema": "la-p771",
+  "analise": "infinitivo presente",
+  "pt": "gozar plenamente",
+  "aceitas": [
+   "gozar",
+   "desfrutar",
+   "usufruir",
+   "gozar plenamente",
+   "desfrutar plenamente",
+   "usufruir plenamente",
+   "aproveitar",
+   "gozar de",
+   "desfrutar de",
+   "usufruir de"
+  ],
+  "distratores": [
+   "gozo plenamente",
+   "gozando plenamente",
+   "gozei plenamente",
+   "goza plenamente!"
+  ],
+  "nota": "perfrui: infinitivo presente de perfruor, verbo depoente (forma passiva, sentido ativo).\nNa 3ª conjugação, o infinitivo dos depoentes acaba em -i.\nEm «et aeterna perfrui laetitia» (Ladainha lauretana): «e gozar plenamente de alegria eterna».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g013"
+  ]
+ },
+ {
+  "id": "la-v2284",
+  "tipo": "flexao",
+  "la": "tribus",
+  "lema": "la-p1114",
+  "analise": "dativo masculino plural; também dativo plural feminino e neutro; também ablativo plural, nos três gêneros",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "a três; com três",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: genitivo ou dativo",
+   "singular: acusativo ou ablativo",
+   "plural: nominativo ou genitivo"
+  ],
+  "nota": "tribus: dativo plural de tres, tria (nos três gêneros); a mesma forma é o ablativo plural.\n-ibus é a terminação do dativo e do ablativo plural da 3ª declinação.\nEm «tribus pueris mitigasti flammas» (Trium puerorum): dativo masculino, «aos três meninos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2285",
+  "tipo": "flexao",
+  "la": "trium",
+  "lema": "la-p1114",
+  "analise": "genitivo plural, nos três gêneros",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "de três",
+  "distratores": [
+   "plural: nominativo",
+   "plural: acusativo",
+   "plural: dativo",
+   "plural: ablativo"
+  ],
+  "nota": "trium: genitivo plural de tres, tria, igual nos três gêneros.\n-ium é o genitivo plural dos nomes e adjetivos da 3ª declinação com tema em -i.\nEm «Trium puerorum … hymnum» (Trium puerorum): concorda com puerorum, «dos três meninos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2286",
+  "tipo": "flexao",
+  "la": "canta",
+  "lema": "la-p773",
+  "analise": "imperativo presente, 2ª pessoa do singular",
+  "pt": "canta!",
+  "aceitas": [
+   "canta",
+   "canta!",
+   "entoa",
+   "entoa!",
+   "recita",
+   "recita!"
+  ],
+  "distratores": [
+   "cantas",
+   "cantar",
+   "cantai!",
+   "que ele cante"
+  ],
+  "nota": "canta: imperativo presente, 2ª pessoa do singular de canto.\nNa 1ª conjugação, o imperativo do singular é o radical com -a.\nEm «Si vox est, canta» (Ovídio, Arte de amar 1,595): «canta».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g011"
+  ]
+ },
+ {
+  "id": "la-v2287",
+  "tipo": "flexao",
+  "la": "cantabant",
+  "lema": "la-p773",
+  "analise": "imperfeito do indicativo, 3ª pessoa do plural",
+  "pt": "cantavam",
+  "aceitas": [
+   "cantavam",
+   "eles cantavam",
+   "elas cantavam",
+   "entoavam",
+   "eles entoavam",
+   "elas entoavam",
+   "recitavam"
+  ],
+  "distratores": [
+   "cantaram",
+   "cantam",
+   "cantávamos",
+   "cantavas"
+  ],
+  "nota": "cantabant: imperfeito do indicativo, 3ª pessoa do plural de canto.\n-bat- é a marca do imperfeito na 1ª conjugação; -nt, a 3ª pessoa do plural.\nEm «quem cantabant sancti in camino ignis» (Trium puerorum): «os santos cantavam».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g008"
+  ]
+ },
+ {
+  "id": "la-v2288",
+  "tipo": "flexao",
+  "la": "cantemus",
+  "lema": "la-p773",
+  "analise": "presente do subjuntivo, 1ª pessoa do plural",
+  "pt": "cantemos",
+  "aceitas": [
+   "cantemos",
+   "nós cantemos",
+   "que cantemos",
+   "entoemos",
+   "que entoemos",
+   "recitemos",
+   "que recitemos"
+  ],
+  "distratores": [
+   "cantamos",
+   "cantávamos",
+   "cantaremos",
+   "que cantem"
+  ],
+  "nota": "cantemus: presente do subjuntivo, 1ª pessoa do plural de canto.\nNa 1ª conjugação o subjuntivo troca o -a- por -e-: cantemus (indicativo, cantamus).\nEm «Trium puerorum cantemus hymnum» (Trium puerorum): exortação, «cantemos o hino».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2289",
+  "tipo": "flexao",
+  "la": "hymnum",
+  "lema": "la-p774",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "o hino (objeto)",
+  "distratores": [
+   "singular: genitivo",
+   "singular: vocativo",
+   "singular: ablativo",
+   "singular: nominativo"
+  ],
+  "nota": "hymnum: acusativo singular de hymnus (2ª declinação, masculino).\n-um é o acusativo singular dos nomes da 2ª declinação.\nEm «cantemus hymnum» (Trium puerorum): objeto de cantemus, «cantemos o hino».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2290",
+  "tipo": "flexao",
+  "la": "camino",
+  "lema": "la-p775",
+  "analise": "ablativo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "na fornalha; à fornalha",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "plural: dativo ou ablativo",
+   "plural: nominativo ou acusativo",
+   "singular: genitivo ou acusativo"
+  ],
+  "nota": "camino: ablativo singular de caminus; a mesma forma é o dativo singular.\n-o é o dativo e o ablativo singular da 2ª declinação.\nEm «in camino ignis» (Trium puerorum): «na fornalha de fogo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2291",
+  "tipo": "flexao",
+  "la": "caminum",
+  "lema": "la-p775",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a fornalha (objeto)",
+  "distratores": [
+   "singular: genitivo",
+   "singular: dativo",
+   "singular: nominativo",
+   "singular: vocativo"
+  ],
+  "nota": "caminum: acusativo singular de caminus (2ª declinação, masculino).\n-um é o acusativo singular dos nomes da 2ª declinação.\nEm «mittent eos in caminum ignis» (Mt 13,42): in com acusativo indica direção, «na fornalha de fogo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2292",
+  "tipo": "flexao",
+  "la": "superexaltate",
+  "lema": "la-p777",
+  "analise": "imperativo presente, 2ª pessoa do plural",
+  "pt": "exaltai!",
+  "aceitas": [
+   "exaltai",
+   "exaltai!",
+   "exaltai acima de tudo",
+   "engrandecei",
+   "engrandecei!",
+   "elevai",
+   "elevai!",
+   "glorificai",
+   "glorificai!",
+   "exaltai muito"
+  ],
+  "distratores": [
+   "exaltas",
+   "exalta!",
+   "exaltais",
+   "exaltar"
+  ],
+  "nota": "superexaltate: imperativo presente, 2ª pessoa do plural de superexalto.\nNa 1ª conjugação, o imperativo do plural é o radical com -ate.\nEm «laudate et superexaltate eum» (Trium puerorum): «louvai-o e exaltai-o acima de tudo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g011"
+  ]
+ },
+ {
+  "id": "la-v2293",
+  "tipo": "flexao",
+  "la": "superexaltatum",
+  "lema": "la-p777",
+  "analise": "particípio perfeito, nominativo neutro singular; também particípio perfeito, acusativo masculino singular; também particípio perfeito, acusativo neutro singular",
+  "pt": "exaltado",
+  "outras": [
+   "o exaltado (objeto)"
+  ],
+  "aceitas": [
+   "exaltado",
+   "o exaltado",
+   "engrandecido",
+   "o engrandecido",
+   "elevado",
+   "glorificado",
+   "exaltado acima de tudo",
+   "exaltado muito"
+  ],
+  "distratores": [
+   "exaltada",
+   "exaltados",
+   "exaltando",
+   "do exaltado"
+  ],
+  "nota": "superexaltatum: particípio perfeito (superexaltatus, -a, -um) de superexalto; nominativo ou acusativo neutro, ou acusativo masculino.\n-um: neutro singular ou acusativo masculino.\nEm «et laudabile, et superexaltatum» (Dn 3,52): neutro, «exaltado acima de tudo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2294",
+  "tipo": "flexao",
+  "la": "superexaltatus",
+  "lema": "la-p777",
+  "analise": "particípio perfeito, nominativo masculino singular",
+  "pt": "exaltado (sujeito)",
+  "aceitas": [
+   "exaltado",
+   "o exaltado",
+   "engrandecido",
+   "o engrandecido",
+   "elevado",
+   "glorificado",
+   "exaltado acima de tudo"
+  ],
+  "distratores": [
+   "exaltada",
+   "os exaltados (sujeito)",
+   "do exaltado",
+   "ao exaltado"
+  ],
+  "nota": "superexaltatus: particípio perfeito, nominativo masculino singular de superexalto.\n-us é o nominativo singular masculino do particípio.\nEm «gloriosus, et superexaltatus» (Trium puerorum): predicativo, «exaltado acima de tudo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2295",
+  "tipo": "flexao",
+  "la": "superexaltemus",
+  "lema": "la-p777",
+  "analise": "presente do subjuntivo, 1ª pessoa do plural",
+  "pt": "exaltemos",
+  "aceitas": [
+   "exaltemos",
+   "nós exaltemos",
+   "que exaltemos",
+   "exaltemos acima de tudo",
+   "engrandeçamos",
+   "que engrandeçamos",
+   "elevemos",
+   "glorifiquemos"
+  ],
+  "distratores": [
+   "exaltamos",
+   "exaltávamos",
+   "exaltaremos",
+   "que exaltem"
+  ],
+  "nota": "superexaltemus: presente do subjuntivo, 1ª pessoa do plural de superexalto.\nNa 1ª conjugação o subjuntivo troca o -a- por -e-.\nEm «laudemus et superexaltemus eum» (Trium puerorum): exortação, «exaltemo-lo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2296",
+  "tipo": "flexao",
+  "la": "superexaltet",
+  "lema": "la-p777",
+  "analise": "presente do subjuntivo, 3ª pessoa do singular",
+  "pt": "que ele exalte",
+  "aceitas": [
+   "que exalte",
+   "que ele exalte",
+   "que ela exalte",
+   "ele exalte",
+   "exalte",
+   "que engrandeça",
+   "que ele engrandeça",
+   "que eleve",
+   "que ele eleve",
+   "que glorifique"
+  ],
+  "distratores": [
+   "que eu exalte",
+   "que tu exaltes",
+   "que eles exaltem",
+   "ele exalta"
+  ],
+  "nota": "superexaltet: presente do subjuntivo, 3ª pessoa do singular de superexalto.\nNa 1ª conjugação o subjuntivo troca o -a- por -e-: superexaltat (indicativo), superexaltet.\nEm «laudet et superexaltet eum» (Trium puerorum): «que o louve e o exalte».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2297",
+  "tipo": "flexao",
+  "la": "lunam",
+  "lema": "la-p1081",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a lua (objeto)",
+  "distratores": [
+   "singular: genitivo",
+   "singular: nominativo",
+   "singular: dativo",
+   "singular: ablativo"
+  ],
+  "nota": "lunam: acusativo singular de luna (1ª declinação).\n-am é o acusativo singular da 1ª declinação.\nEm «Fecit lunam in tempora» (Sl 104,19): «fez a lua».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2298",
+  "tipo": "flexao",
+  "la": "rores",
+  "lema": "la-p779",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó orvalhos; os orvalhos (sujeito); os orvalhos (objeto)",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "plural: genitivo ou dativo"
+  ],
+  "nota": "rores: nominativo, vocativo e acusativo plural de ros.\n-es é a terminação desses três casos no plural da 3ª declinação (masculino e feminino). Radical: ror- (do genitivo roris).\nEm «Benedicite, rores et pruina» (Trium puerorum): vocativo, «ó orvalhos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2299",
+  "tipo": "flexao",
+  "la": "nive",
+  "lema": "la-p785",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "pela neve",
+  "distratores": [
+   "singular: nominativo",
+   "singular: dativo",
+   "singular: acusativo",
+   "singular: genitivo"
+  ],
+  "nota": "nive: ablativo singular de nix.\n-e é o ablativo singular da 3ª declinação; o radical é niv-, do genitivo nivis.\nEm «Sit nive candidior» (Marcial, Epigramas 4,42,5): ablativo de comparação, «mais branco que a neve».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2300",
+  "tipo": "flexao",
+  "la": "nives",
+  "lema": "la-p785",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó neves; as neves (sujeito); as neves (objeto)",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: dativo ou ablativo"
+  ],
+  "nota": "nives: nominativo, vocativo e acusativo plural de nix.\n-es é a terminação desses três casos no plural da 3ª declinação; o radical é niv-, do genitivo nivis.\nEm «glacies et nives» (Trium puerorum): vocativo, «ó gelos e neves».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2301",
+  "tipo": "flexao",
+  "la": "fulgura",
+  "lema": "la-p786",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó relâmpagos; os relâmpagos",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: acusativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "plural: genitivo ou ablativo"
+  ],
+  "nota": "fulgura: nominativo, vocativo e acusativo plural de fulgur (3ª declinação, neutro).\nNos neutros esses casos são iguais no plural: -a.\nEm «fulgura et nubes» (Trium puerorum): vocativo, «ó relâmpagos e nuvens».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2302",
+  "tipo": "flexao",
+  "la": "nube",
+  "lema": "la-p787",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "na nuvem",
+  "distratores": [
+   "singular: genitivo",
+   "singular: nominativo",
+   "singular: vocativo",
+   "singular: dativo"
+  ],
+  "nota": "nube: ablativo singular de nubes.\n-e é o ablativo singular da 3ª declinação.\nEm «ascenderunt in caelum in nube» (Ap 11,12): «numa nuvem».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2303",
+  "tipo": "flexao",
+  "la": "colles",
+  "lema": "la-p788",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó colinas; as colinas (sujeito); as colinas (objeto)",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: dativo ou ablativo"
+  ],
+  "nota": "colles: nominativo, vocativo e acusativo plural de collis.\n-es é a terminação desses três casos no plural da 3ª declinação.\nEm «montes et colles» (Trium puerorum): vocativo, «ó montes e colinas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2304",
+  "tipo": "flexao",
+  "la": "germinantia",
+  "lema": "la-p789",
+  "analise": "particípio presente, vocativo neutro plural; também particípio presente, nominativo neutro plural; também particípio presente, acusativo neutro plural",
+  "pt": "ó brotantes",
+  "outras": [
+   "os brotantes"
+  ],
+  "aceitas": [
+   "ó brotantes",
+   "brotantes",
+   "os brotantes",
+   "ó germinantes",
+   "germinantes",
+   "os germinantes",
+   "tudo o que brota",
+   "o que brota",
+   "as coisas que brotam",
+   "ó coisas que brotam",
+   "ó tudo o que brota"
+  ],
+  "distratores": [
+   "do brotante",
+   "ao brotante",
+   "o brotante (sujeito)",
+   "dos brotantes"
+  ],
+  "nota": "germinantia: particípio presente de germino, neutro plural (nominativo, vocativo ou acusativo).\n-ntia é o neutro plural dos particípios presentes.\nEm «universa germinantia in terra» (Trium puerorum): vocativo, «ó tudo o que brota na terra».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g002",
+   "la-g019"
+  ]
+ },
+ {
+  "id": "la-v2305",
+  "tipo": "flexao",
+  "la": "fontes",
+  "lema": "la-p790",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó fontes; as fontes (sujeito); as fontes (objeto)",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: dativo ou ablativo"
+  ],
+  "nota": "fontes: nominativo, vocativo e acusativo plural de fons.\n-es é a terminação desses três casos no plural da 3ª declinação. Radical: font- (do genitivo fontis).\nEm «Benedicite, fontes, Domino» (Trium puerorum): vocativo; em «et flumina et fontes» (Cícero), nominativo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2306",
+  "tipo": "flexao",
+  "la": "flumina",
+  "lema": "la-p996",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó rios; os rios",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "singular: genitivo ou dativo",
+   "plural: genitivo ou ablativo"
+  ],
+  "nota": "flumina: nominativo, vocativo e acusativo plural de flumen (3ª declinação, neutro).\nNos neutros esses casos são iguais no plural: -a. Radical: flumin- (do genitivo fluminis).\nEm «maria et flumina» (Trium puerorum): vocativo, «ó mares e rios».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2307",
+  "tipo": "flexao",
+  "la": "cete",
+  "lema": "la-p792",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó baleias; as baleias",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "singular: dativo ou ablativo",
+   "plural: genitivo ou dativo"
+  ],
+  "nota": "cete: nominativo, vocativo e acusativo plural de cetos, neutro de origem grega.\nO plural neutro grego acaba em -e (cete), e não em -a.\nEm «Benedicite, cete, et omnia» (Trium puerorum): vocativo, «ó monstros marinhos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2308",
+  "tipo": "flexao",
+  "la": "moventur",
+  "lema": "la-p793",
+  "analise": "presente do indicativo, 3ª pessoa do plural, voz passiva",
+  "pt": "movem-se",
+  "aceitas": [
+   "movem-se",
+   "se movem",
+   "eles se movem",
+   "elas se movem",
+   "são movidos",
+   "são movidas",
+   "mexem-se",
+   "agitam-se",
+   "são agitados"
+  ],
+  "distratores": [
+   "movem",
+   "moviam-se",
+   "moveram-se",
+   "moves-te"
+  ],
+  "nota": "moventur: presente do indicativo, 3ª pessoa do plural, voz passiva de moveo.\n-ntur é a desinência passiva da 3ª pessoa do plural.\nEm «omnia, quae moventur in aquis» (Trium puerorum): «tudo o que se move nas águas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2309",
+  "tipo": "flexao",
+  "la": "moveor",
+  "lema": "la-p793",
+  "analise": "presente do indicativo, 1ª pessoa do singular, voz passiva",
+  "pt": "movo-me",
+  "aceitas": [
+   "movo-me",
+   "me movo",
+   "eu me movo",
+   "sou movido",
+   "sou movida",
+   "eu sou movido",
+   "deixo-me mover",
+   "mexo-me",
+   "me mexo",
+   "agito-me"
+  ],
+  "distratores": [
+   "movo",
+   "moves-te",
+   "movia-me",
+   "movi"
+  ],
+  "nota": "moveor: presente do indicativo, 1ª pessoa do singular, voz passiva de moveo.\n-or é a desinência passiva da 1ª pessoa do singular.\nEm «Verbis non moveor tuis» (Fedro, Fábulas 3,6): «não me movo com as tuas palavras».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2310",
+  "tipo": "flexao",
+  "la": "volucres",
+  "lema": "la-p794",
+  "analise": "vocativo feminino plural; também vocativo masculino plural; também nominativo plural (masculino e feminino); também acusativo plural (masculino e feminino)",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó aves; as aves",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: nominativo ou genitivo"
+  ],
+  "nota": "volucres: nominativo, vocativo e acusativo plural de volucer, volucris, volucre (masculino e feminino).\n-es é a terminação desses casos no plural da 3ª declinação; usado como substantivo, volucris é «ave». Radical: volucr- (do genitivo volucris).\nEm «omnes volucres caeli» (Trium puerorum): vocativo, «ó todas as aves do céu».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2311",
+  "tipo": "flexao",
+  "la": "volucrum",
+  "lema": "la-p794",
+  "analise": "genitivo plural (masculino, feminino e neutro)",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "das aves",
+  "distratores": [
+   "plural: nominativo",
+   "plural: acusativo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "volucrum: genitivo plural de volucer, volucris, volucre, nos três gêneros.\nOs adjetivos da 3ª declinação fazem o genitivo plural em -ium; volucrum é a forma sem o -i-. Radical: volucr- (do genitivo volucris).\nEm «Praedo fuit volucrum» (Marcial, Epigramas 14,217,1): «predador das aves».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2312",
+  "tipo": "flexao",
+  "la": "bestiae",
+  "lema": "la-p795",
+  "analise": "vocativo plural; também nominativo plural; também genitivo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "ó feras; da fera; à fera",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou acusativo",
+   "singular: nominativo; plural: dativo ou ablativo"
+  ],
+  "nota": "bestiae: vocativo ou nominativo plural; genitivo ou dativo singular de bestia.\n-ae na 1ª declinação: genitivo e dativo singular ou nominativo e vocativo plural; o contexto decide.\nEm «omnes bestiae et pecora» (Trium puerorum): vocativo plural, «ó todas as feras».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2313",
+  "tipo": "flexao",
+  "la": "pecora",
+  "lema": "la-p796",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó rebanhos; os rebanhos",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: genitivo ou dativo",
+   "singular: acusativo ou ablativo"
+  ],
+  "nota": "pecora: nominativo, vocativo e acusativo plural de pecus, pecoris (3ª declinação, neutro).\nNos neutros esses casos são iguais no plural: -a; o radical é pecor-, do genitivo pecoris.\nEm «bestiae et pecora» (Trium puerorum): vocativo, «ó feras e rebanhos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2314",
+  "tipo": "flexao",
+  "la": "sacerdotes",
+  "lema": "la-p797",
+  "analise": "vocativo plural; também nominativo plural; também acusativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "ó sacerdotes; os sacerdotes (sujeito); os sacerdotes (objeto)",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: genitivo ou dativo"
+  ],
+  "nota": "sacerdotes: nominativo, vocativo e acusativo plural de sacerdos (masculino e feminino).\n-es é a terminação desses casos no plural da 3ª declinação; o radical é sacerdot-, do genitivo sacerdotis.\nEm «Benedicite, sacerdotes Domini» (Trium puerorum): vocativo, «ó sacerdotes do Senhor».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2315",
+  "tipo": "flexao",
+  "la": "iustorum",
+  "lema": "la-p976",
+  "analise": "genitivo masculino plural; também genitivo neutro plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos justos; das coisas justas",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "plural: dativo",
+   "plural: ablativo"
+  ],
+  "nota": "iustorum: genitivo plural masculino ou neutro de iustus.\n-orum é o genitivo plural da 2ª declinação; no feminino seria iustarum.\nEm «animae iustorum» (Trium puerorum): substantivado, «das almas dos justos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2316",
+  "tipo": "flexao",
+  "la": "firmamento",
+  "lema": "la-p800",
+  "analise": "ablativo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "no firmamento; ao firmamento",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "singular: genitivo; plural: nominativo",
+   "plural: dativo ou ablativo",
+   "singular: genitivo; plural: acusativo"
+  ],
+  "nota": "firmamento: ablativo singular de firmamentum; a mesma forma é o dativo singular.\n-o é o dativo e o ablativo singular da 2ª declinação.\nEm «in firmamento caeli» (Trium puerorum): «no firmamento do céu».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2317",
+  "tipo": "flexao",
+  "la": "multitudinem",
+  "lema": "la-p802",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a multidão (objeto)",
+  "distratores": [
+   "singular: genitivo",
+   "singular: nominativo",
+   "singular: ablativo",
+   "singular: vocativo"
+  ],
+  "nota": "multitudinem: acusativo singular de multitudo.\n-em é o acusativo singular dos nomes femininos da 3ª declinação; o radical é multitudin-, do genitivo multitudinis.\nEm «secundum multitudinem magnitudinis eius» (Trium puerorum): termo de secundum, «segundo a multidão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2318",
+  "tipo": "flexao",
+  "la": "multitudinis",
+  "lema": "la-p802",
+  "analise": "genitivo singular",
+  "familia": "caso",
+  "pt": "singular: genitivo",
+  "sentido": "da multidão",
+  "distratores": [
+   "singular: acusativo",
+   "singular: vocativo",
+   "singular: nominativo",
+   "singular: dativo"
+  ],
+  "nota": "multitudinis: genitivo singular de multitudo.\n-is é o genitivo singular da 3ª declinação. Radical: multitudin- (do genitivo multitudinis).\nEm «ea natura multitudinis est» (Lívio, História de Roma 24,25,8): «tal é a natureza da multidão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2319",
+  "tipo": "flexao",
+  "la": "sono",
+  "lema": "la-p804",
+  "analise": "ablativo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "ao som; com o som",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "plural: dativo ou ablativo",
+   "singular: genitivo; plural: nominativo",
+   "singular: genitivo; plural: acusativo"
+  ],
+  "nota": "sono: ablativo singular de sonus; a mesma forma é o dativo singular.\n-o é o dativo e o ablativo singular da 2ª declinação.\nEm «in sono tubae» (Trium puerorum): «ao som da trombeta».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2320",
+  "tipo": "flexao",
+  "la": "tubae",
+  "lema": "la-p805",
+  "analise": "genitivo singular; também dativo singular; também nominativo plural; também vocativo plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da trombeta; à trombeta; as trombetas (sujeito)",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou acusativo",
+   "singular: nominativo; plural: dativo ou ablativo"
+  ],
+  "nota": "tubae: genitivo ou dativo singular; nominativo ou vocativo plural de tuba.\n-ae na 1ª declinação: genitivo e dativo singular ou nominativo plural; o contexto decide.\nEm «in sono tubae» (Trium puerorum): genitivo, «ao som da trombeta».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2321",
+  "tipo": "flexao",
+  "la": "psalterio",
+  "lema": "la-p806",
+  "analise": "ablativo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "com o saltério; ao saltério",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "singular: genitivo; plural: acusativo",
+   "plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo"
+  ],
+  "nota": "psalterio: ablativo singular de psalterium; a mesma forma é o dativo singular.\n-o é o dativo e o ablativo singular da 2ª declinação.\nEm «laudate eum in psalterio et cithara» (Trium puerorum): «louvai-o com o saltério e a cítara».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2322",
+  "tipo": "flexao",
+  "la": "tympanis",
+  "lema": "la-p808",
+  "analise": "ablativo plural; também dativo plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "com tímpanos; aos tímpanos",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "plural: nominativo ou genitivo"
+  ],
+  "nota": "tympanis: ablativo plural de tympanum (neutro); a mesma forma é o dativo plural.\n-is é o dativo e o ablativo plural da 2ª declinação.\nEm «Incipite Domino in tympanis» (Jt 16,2): «começai para o Senhor com tímpanos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2323",
+  "tipo": "flexao",
+  "la": "tympano",
+  "lema": "la-p808",
+  "analise": "ablativo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "com o tambor; ao tambor",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "plural: dativo ou ablativo",
+   "singular: genitivo; plural: nominativo",
+   "singular: acusativo; plural: genitivo"
+  ],
+  "nota": "tympano: ablativo singular de tympanum; a mesma forma é o dativo singular.\n-o é o dativo e o ablativo singular da 2ª declinação.\nEm «Laudate eum in tympano et choro» (Trium puerorum): «louvai-o com o tambor e no coro».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2324",
+  "tipo": "flexao",
+  "la": "choro",
+  "lema": "la-p1277",
+  "analise": "ablativo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "no coro; ao coro",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "plural: dativo ou ablativo",
+   "singular: genitivo; plural: nominativo",
+   "plural: genitivo ou acusativo"
+  ],
+  "nota": "choro: ablativo singular de chorus; a mesma forma é o dativo singular.\n-o é o dativo e o ablativo singular da 2ª declinação.\nEm «in tympano et choro» (Trium puerorum): «com o tambor e no coro».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2325",
+  "tipo": "flexao",
+  "la": "chordis",
+  "lema": "la-p1107",
+  "analise": "ablativo plural; também dativo plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "nas cordas; às cordas",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: genitivo; plural: nominativo"
+  ],
+  "nota": "chordis: ablativo plural de chorda; a mesma forma é o dativo plural.\n-is é o dativo e o ablativo plural da 1ª declinação.\nEm «in chordis et organo» (Trium puerorum): «nas cordas e no órgão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2326",
+  "tipo": "flexao",
+  "la": "organo",
+  "lema": "la-p811",
+  "analise": "ablativo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "no órgão; ao órgão",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "singular: genitivo; plural: acusativo",
+   "plural: dativo ou ablativo",
+   "singular: genitivo; plural: nominativo"
+  ],
+  "nota": "organo: ablativo singular de organum; a mesma forma é o dativo singular.\n-o é o dativo e o ablativo singular da 2ª declinação.\nEm «in chordis et organo» (Trium puerorum): «nas cordas e no órgão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2327",
+  "tipo": "flexao",
+  "la": "cymbalis",
+  "lema": "la-p812",
+  "analise": "ablativo plural; também dativo plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "com címbalos; aos címbalos",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: genitivo ou dativo"
+  ],
+  "nota": "cymbalis: ablativo plural de cymbalum; a mesma forma é o dativo plural.\n-is é o dativo e o ablativo plural da 2ª declinação.\nEm «in cymbalis iubilationis» (Trium puerorum): «com címbalos de júbilo».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2328",
+  "tipo": "flexao",
+  "la": "benesonantibus",
+  "lema": "la-p813",
+  "analise": "ablativo plural, nos três gêneros; também dativo plural, nos três gêneros",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "com harmoniosos; aos harmoniosos",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: genitivo ou dativo",
+   "singular ou plural: nominativo"
+  ],
+  "nota": "benesonantibus: ablativo plural de benesonans (nos três gêneros); a mesma forma é o dativo plural.\n-ibus é o dativo e o ablativo plural da 3ª declinação. Radical: benesonant- (do genitivo benesonantis).\nEm «in cymbalis benesonantibus» (Trium puerorum): concorda com cymbalis, «com címbalos de bom som».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2329",
+  "tipo": "flexao",
+  "la": "cubilibus",
+  "lema": "la-p814",
+  "analise": "ablativo plural; também dativo plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "nos leitos; aos leitos",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: genitivo ou dativo",
+   "singular: nominativo ou ablativo"
+  ],
+  "nota": "cubilibus: ablativo plural de cubile (neutro); a mesma forma é o dativo plural.\n-ibus é o dativo e o ablativo plural da 3ª declinação.\nEm «Laetabuntur in cubilibus suis» (Trium puerorum): «eles se alegrarão nos seus leitos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2330",
+  "tipo": "flexao",
+  "la": "mitigasti",
+  "lema": "la-p815",
+  "analise": "perfeito do indicativo, 2ª pessoa do singular",
+  "pt": "abrandaste",
+  "aceitas": [
+   "abrandaste",
+   "tu abrandaste",
+   "mitigaste",
+   "tu mitigaste",
+   "suavizaste",
+   "tu suavizaste",
+   "acalmaste",
+   "amansaste"
+  ],
+  "distratores": [
+   "abrandas",
+   "abrandei",
+   "abrandou",
+   "abrandavas"
+  ],
+  "nota": "mitigasti: perfeito do indicativo, 2ª pessoa do singular de mitigo; forma contraída de mitigavisti.\n-sti é a desinência do perfeito na 2ª pessoa do singular; o -vi- cai.\nEm «qui tribus pueris mitigasti flammas» (Trium puerorum): «que abrandaste as chamas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-v2331",
+  "tipo": "flexao",
+  "la": "flammas",
+  "lema": "la-p816",
+  "analise": "acusativo plural",
+  "familia": "caso",
+  "pt": "plural: acusativo",
+  "sentido": "as chamas (objeto)",
+  "distratores": [
+   "plural: nominativo",
+   "plural: genitivo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "flammas: acusativo plural de flamma (1ª declinação).\n-as é o acusativo plural da 1ª declinação.\nEm «mitigasti flammas ignium» (Trium puerorum): objeto de mitigasti, «abrandaste as chamas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2332",
+  "tipo": "flexao",
+  "la": "exurat",
+  "lema": "la-p817",
+  "analise": "presente do subjuntivo, 3ª pessoa do singular",
+  "pt": "que ele queime",
+  "aceitas": [
+   "que queime",
+   "que ele queime",
+   "que ela queime",
+   "ele queime",
+   "queime",
+   "que abrase",
+   "que ele abrase",
+   "que consuma",
+   "que ele consuma"
+  ],
+  "distratores": [
+   "que eu queime",
+   "que tu queimes",
+   "que eles queimem",
+   "ele queima"
+  ],
+  "nota": "exurat: presente do subjuntivo, 3ª pessoa do singular de exuro.\nNa 3ª conjugação o subjuntivo usa -a-: exurit (indicativo), exurat.\nEm «ut nos famulos tuos non exurat flamma vitiorum» (Trium puerorum): sujeito flamma, «que a chama dos vícios não queime».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2333",
+  "tipo": "flexao",
+  "la": "vitio",
+  "lema": "la-p818",
+  "analise": "ablativo singular; também dativo singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "no vício; ao vício",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "singular: genitivo; plural: nominativo",
+   "plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo"
+  ],
+  "nota": "vitio: ablativo singular de vitium; a mesma forma é o dativo singular.\n-o é o dativo e o ablativo singular da 2ª declinação.\nEm «In vitio decor est» (Ovídio, Arte de amar 3,295): «no defeito há graça».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2334",
+  "tipo": "flexao",
+  "la": "vitiorum",
+  "lema": "la-p818",
+  "analise": "genitivo plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos vícios",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "vitiorum: genitivo plural de vitium.\n-orum é o genitivo plural da 2ª declinação.\nEm «flamma vitiorum» (Trium puerorum): «a chama dos vícios».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2335",
+  "tipo": "flexao",
+  "la": "actiones",
+  "lema": "la-p819",
+  "analise": "acusativo plural; também nominativo plural; também vocativo plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "as ações (objeto); as ações (sujeito); ó ações",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "singular: acusativo ou ablativo",
+   "plural: genitivo ou dativo"
+  ],
+  "nota": "actiones: nominativo, vocativo e acusativo plural de actio.\n-es é a terminação desses três casos no plural da 3ª declinação; o radical é action-, do genitivo actionis.\nEm «Actiones nostras … praeveni» (Trium puerorum): objeto de praeveni e prosequere, «as nossas ações».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2336",
+  "tipo": "flexao",
+  "la": "aspirando",
+  "lema": "la-p1142",
+  "analise": "gerúndio, ablativo",
+  "pt": "inspirando",
+  "aceitas": [
+   "inspirando",
+   "soprando sobre",
+   "favorecendo",
+   "assistindo",
+   "aspirando",
+   "ao inspirar",
+   "por inspirar"
+  ],
+  "distratores": [
+   "de inspirar",
+   "para inspirar",
+   "inspira!",
+   "inspirava"
+  ],
+  "nota": "aspirando: gerúndio de aspiro, no ablativo.\n-ndo é o ablativo do gerúndio e diz o modo: «inspirando».\nEm «aspirando praeveni et adiuvando prosequere» (Trium puerorum): «previne inspirando e acompanha ajudando».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2337",
+  "tipo": "flexao",
+  "la": "praevenerunt",
+  "lema": "la-p821",
+  "analise": "perfeito do indicativo, 3ª pessoa do plural",
+  "pt": "anteciparam",
+  "aceitas": [
+   "anteciparam",
+   "eles anteciparam",
+   "elas anteciparam",
+   "previniram",
+   "eles previniram",
+   "precederam",
+   "eles precederam",
+   "adiantaram-se",
+   "alcançaram",
+   "eles alcançaram",
+   "ultrapassaram",
+   "chegaram antes"
+  ],
+  "distratores": [
+   "antecipam",
+   "anteciparão",
+   "antecipavam",
+   "antecipei"
+  ],
+  "nota": "praevenerunt: perfeito do indicativo, 3ª pessoa do plural de praevenio.\n-erunt é a desinência do perfeito na 3ª pessoa do plural; o radical do perfeito é praeven-.\nEm «praevenerunt me dies afflictionis» (Jó 30,27): «os dias da aflição me alcançaram».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-v2338",
+  "tipo": "flexao",
+  "la": "praeveni",
+  "lema": "la-p821",
+  "analise": "imperativo presente, 2ª pessoa do singular; também perfeito do indicativo, 1ª pessoa do singular",
+  "pt": "previne!",
+  "outras": [
+   "eu previni"
+  ],
+  "aceitas": [
+   "previne",
+   "previne!",
+   "antecipa",
+   "antecipa!",
+   "precede",
+   "precede!",
+   "eu previni",
+   "previni",
+   "eu antecipei",
+   "antecipei"
+  ],
+  "distratores": [
+   "preveni!",
+   "prevenir",
+   "prevenindo",
+   "ele prevenia"
+  ],
+  "nota": "praeveni: imperativo presente, 2ª pessoa do singular de praevenio; a mesma forma é o perfeito, previni.\nNa 4ª conjugação, o imperativo é o radical (praevení-); o perfeito acaba em -i.\nEm «Actiones nostras … aspirando praeveni» (Trium puerorum), é o imperativo: «previne».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g011"
+  ]
+ },
+ {
+  "id": "la-v2339",
+  "tipo": "flexao",
+  "la": "adiuvando",
+  "lema": "la-p1189",
+  "analise": "gerúndio, ablativo; também gerúndio, dativo",
+  "pt": "ajudando",
+  "outras": [
+   "para ajudar"
+  ],
+  "aceitas": [
+   "ajudando",
+   "auxiliando",
+   "socorrendo",
+   "apoiando",
+   "favorecendo",
+   "para ajudar",
+   "para auxiliar",
+   "para socorrer"
+  ],
+  "distratores": [
+   "de ajudar",
+   "ajudar",
+   "ajudado",
+   "ajudai!"
+  ],
+  "nota": "adiuvando: gerúndio de adiuvo, no ablativo (ajudando); a mesma forma é o dativo (para ajudar).\n-ndo marca o gerúndio no ablativo e no dativo; o ablativo traduz-se por gerúndio português.\nEm «aspirando praeveni et adiuvando prosequere» (Trium puerorum), é o ablativo: «ajudando».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2340",
+  "tipo": "flexao",
+  "la": "adiuvat",
+  "lema": "la-p1189",
+  "analise": "presente do indicativo, 3ª pessoa do singular",
+  "pt": "ajuda",
+  "aceitas": [
+   "ajuda",
+   "ele ajuda",
+   "ela ajuda",
+   "auxilia",
+   "ele auxilia",
+   "socorre",
+   "ele socorre",
+   "apoia",
+   "ele apoia",
+   "favorece",
+   "ele favorece"
+  ],
+  "distratores": [
+   "ajudam",
+   "ajudou",
+   "ele ajudava",
+   "tu ajudas"
+  ],
+  "nota": "adiuvat: presente do indicativo, 3ª pessoa do singular de adiuvo.\n-at na 1ª conjugação: 3ª pessoa do singular.\nEm «Fortes fortuna adiuvat» (Terêncio, Formião 203): «A sorte ajuda os fortes».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-v2341",
+  "tipo": "flexao",
+  "la": "prosecutus",
+  "lema": "la-p823",
+  "analise": "particípio perfeito, nominativo masculino singular",
+  "pt": "tendo acompanhado",
+  "aceitas": [
+   "tendo acompanhado",
+   "acompanhado",
+   "tendo continuado",
+   "tendo seguido",
+   "seguido",
+   "tendo escoltado",
+   "tendo perseguido",
+   "tendo prosseguido",
+   "prosseguido"
+  ],
+  "distratores": [
+   "acompanhando",
+   "acompanhar",
+   "acompanha!",
+   "acompanhada"
+  ],
+  "nota": "prosecutus: particípio perfeito de prosequor (depoente), nominativo masculino singular; tem sentido ativo.\n-us é o nominativo masculino do particípio; com sum, forma o perfeito: prosecutus sum, «acompanhei».\nEm «Modo te prosecutus sum» (Sêneca, Cartas a Lucílio 49,4): «Há pouco te acompanhei».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2342",
+  "tipo": "flexao",
+  "la": "prosequere",
+  "lema": "la-p823",
+  "analise": "imperativo presente, 2ª pessoa do singular; também presente do indicativo, 2ª pessoa do singular (verbo depoente)",
+  "pt": "acompanha!",
+  "outras": [
+   "tu acompanhas"
+  ],
+  "aceitas": [
+   "acompanha",
+   "acompanha!",
+   "continua",
+   "continua!",
+   "segue",
+   "segue!",
+   "persegue",
+   "persegue!",
+   "escolta!",
+   "prossegue!",
+   "tu acompanhas",
+   "acompanhas",
+   "tu segues",
+   "segues",
+   "tu continuas",
+   "continuas"
+  ],
+  "distratores": [
+   "acompanhar",
+   "acompanhai!",
+   "tendo acompanhado",
+   "ele acompanha"
+  ],
+  "nota": "prosequere: imperativo presente, 2ª pessoa do singular de prosequor (depoente); também o presente, tu acompanhas.\nNos depoentes, -re (ou -ris) é a 2ª pessoa do singular com sentido ativo.\nEm «aspirando praeveni et adiuvando prosequere» (Trium puerorum), é o imperativo: «acompanha».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g011"
+  ]
+ },
+ {
+  "id": "la-v2343",
+  "tipo": "flexao",
+  "la": "coepta",
+  "lema": "la-p1025",
+  "analise": "particípio perfeito, nominativo neutro plural; também acusativo neutro plural; também nominativo feminino singular",
+  "pt": "as coisas começadas",
+  "outras": [
+   "começada"
+  ],
+  "aceitas": [
+   "as coisas começadas",
+   "coisas começadas",
+   "as coisas iniciadas",
+   "coisas iniciadas",
+   "as coisas principiadas",
+   "começada",
+   "iniciada"
+  ],
+  "distratores": [
+   "o começado",
+   "os começados",
+   "as começadas",
+   "do começado"
+  ],
+  "nota": "coepta: particípio perfeito de coepi, nominativo ou acusativo neutro plural; também nominativo feminino singular.\n-a no neutro plural; coepi só tem o perfeito, e este particípio é passivo.\nEm «et per te coepta finiatur» (Trium puerorum), é sujeito de finiatur: «as coisas começadas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2344",
+  "tipo": "flexao",
+  "la": "finiatur",
+  "lema": "la-p1076",
+  "analise": "presente do subjuntivo, 3ª pessoa do singular, voz passiva",
+  "pt": "seja terminado",
+  "aceitas": [
+   "seja terminado",
+   "que seja terminado",
+   "seja acabado",
+   "que seja acabado",
+   "seja concluído",
+   "que seja concluído",
+   "seja finalizado",
+   "que seja finalizado",
+   "seja limitado",
+   "seja determinado"
+  ],
+  "distratores": [
+   "é terminado",
+   "sejam terminados",
+   "termine",
+   "seria terminado"
+  ],
+  "nota": "finiatur: presente do subjuntivo, 3ª pessoa do singular, voz passiva de finio.\nNa 4ª conjugação, -iatur é o subjuntivo passivo (-iat ativo, -iatur passivo).\nEm «et per te coepta finiatur» (Trium puerorum), é o desejo: «sejam terminadas as coisas começadas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2345",
+  "tipo": "flexao",
+  "la": "finiet",
+  "lema": "la-p1076",
+  "analise": "futuro do indicativo, 3ª pessoa do singular",
+  "pt": "acabará",
+  "aceitas": [
+   "acabará",
+   "ele acabará",
+   "ela acabará",
+   "terminará",
+   "ele terminará",
+   "concluirá",
+   "ele concluirá",
+   "finalizará",
+   "limitará",
+   "determinará",
+   "acabará com",
+   "terminará com"
+  ],
+  "distratores": [
+   "acaba",
+   "acabarão",
+   "acabou",
+   "ele acabava"
+  ],
+  "nota": "finiet: futuro do indicativo, 3ª pessoa do singular de finio.\nNa 4ª conjugação, o futuro é -iet (finiet), distinto do presente finit.\nEm «Flamma rogi flammas finiet una meas» (Ovídio, Heroides 16,164): «acabará com as minhas chamas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g010"
+  ]
+ },
+ {
+  "id": "la-v2346",
+  "tipo": "flexao",
+  "la": "exstinctus",
+  "lema": "la-p827",
+  "analise": "particípio perfeito, nominativo masculino singular",
+  "pt": "extinto",
+  "aceitas": [
+   "extinto",
+   "apagado",
+   "morto",
+   "destruído",
+   "aniquilado",
+   "extinguido",
+   "tendo sido extinto"
+  ],
+  "distratores": [
+   "extinta",
+   "extintos",
+   "extinguir",
+   "extinguindo"
+  ],
+  "nota": "exstinctus: particípio perfeito de exstinguo, nominativo masculino singular.\n-tus (com -nct- no radical) é a terminação do particípio perfeito masculino.\nEm «exstinctus amabitur idem» (Horácio, Epístolas 2,1,14): «depois de morto, será amado».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2347",
+  "tipo": "flexao",
+  "la": "exstinguere",
+  "lema": "la-p827",
+  "analise": "infinitivo presente; também presente do indicativo, 2ª pessoa do singular, voz passiva; também imperativo presente, 2ª pessoa do singular, voz passiva",
+  "pt": "extinguir",
+  "outras": [
+   "tu és extinto",
+   "sê extinto!"
+  ],
+  "aceitas": [
+   "extinguir",
+   "apagar",
+   "aniquilar",
+   "destruir",
+   "matar",
+   "tu és extinto",
+   "és extinto",
+   "tu és apagado",
+   "és apagado",
+   "sê extinto!",
+   "sê apagado!"
+  ],
+  "distratores": [
+   "extinguem",
+   "extinguiu",
+   "extinguindo",
+   "extinto"
+  ],
+  "nota": "exstinguere: infinitivo presente de exstinguo; também 2ª pessoa do singular passiva (és extinto).\nNa 3ª conjugação, -ere é infinitivo (e também a 2ª passiva).\nEm «Da nobis … vitiorum nostrorum flammas exstinguere» (Trium puerorum), completa Da: «dá-nos extinguir».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g013"
+  ]
+ },
+ {
+  "id": "la-v2348",
+  "tipo": "flexao",
+  "la": "tormenta",
+  "lema": "la-p828",
+  "analise": "nominativo neutro plural; também acusativo neutro plural; também vocativo neutro plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "os tormentos",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "singular: genitivo ou dativo",
+   "plural: genitivo ou dativo"
+  ],
+  "nota": "tormenta: nominativo, acusativo ou vocativo neutro plural de tormentum.\nNo neutro da 2ª declinação, o plural acaba em -a, igual no nominativo e no acusativo.\nEm «Tormenta abesse a me velim» (Sêneca, Cartas a Lucílio 67,4), é sujeito de abesse.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2349",
+  "tipo": "flexao",
+  "la": "tormentorum",
+  "lema": "la-p828",
+  "analise": "genitivo plural",
+  "familia": "caso",
+  "pt": "plural: genitivo",
+  "sentido": "dos tormentos",
+  "distratores": [
+   "plural: acusativo",
+   "plural: nominativo",
+   "plural: dativo",
+   "plural: ablativo"
+  ],
+  "nota": "tormentorum: genitivo plural de tormentum.\n-orum é o genitivo plural da 2ª declinação.\nEm «tormentorum suorum incendia» (Trium puerorum): «os incêndios dos seus tormentos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2350",
+  "tipo": "flexao",
+  "la": "incendia",
+  "lema": "la-p829",
+  "analise": "acusativo neutro plural; também nominativo neutro plural; também vocativo neutro plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "os incêndios",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "singular: genitivo ou dativo",
+   "plural: genitivo ou ablativo"
+  ],
+  "nota": "incendia: acusativo (ou nominativo, vocativo) neutro plural de incendium.\nNo neutro da 2ª declinação, o plural acaba em -a: nominativo e acusativo iguais.\nEm «tormentorum suorum incendia superare» (Trium puerorum), é objeto de superare: «os incêndios».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2351",
+  "tipo": "flexao",
+  "la": "superare",
+  "lema": "la-p830",
+  "analise": "infinitivo presente; também presente do indicativo, 2ª pessoa do singular, voz passiva; também imperativo presente, 2ª pessoa do singular, voz passiva",
+  "pt": "superar",
+  "outras": [
+   "tu és superado",
+   "sê superado!"
+  ],
+  "aceitas": [
+   "superar",
+   "vencer",
+   "ultrapassar",
+   "sobrepujar",
+   "dominar",
+   "tu és superado",
+   "és superado",
+   "tu és vencido",
+   "és vencido",
+   "sê superado!",
+   "sê vencido!"
+  ],
+  "distratores": [
+   "superando",
+   "superado",
+   "ele supera",
+   "superarão"
+  ],
+  "nota": "superare: infinitivo presente de supero; também a 2ª pessoa do singular passiva (és superado).\nNa 1ª conjugação, -are é o infinitivo (e também a 2ª passiva).\nEm «tribuisti … incendia superare» (Trium puerorum), completa tribuisti: «concedeste superar».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g013"
+  ]
+ },
+ {
+  "id": "la-v2352",
+  "tipo": "flexao",
+  "la": "quaecumque",
+  "lema": "la-p831",
+  "analise": "nominativo feminino singular; também nominativo neutro plural; também acusativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo; plural: nominativo ou acusativo",
+  "sentido": "qualquer que; todas as coisas que",
+  "distratores": [
+   "singular: dativo ou ablativo; plural: ablativo",
+   "singular: acusativo; plural: genitivo ou dativo",
+   "singular: genitivo ou dativo; plural: ablativo",
+   "singular: acusativo ou ablativo; plural: genitivo"
+  ],
+  "nota": "quaecumque: nominativo feminino singular de quicumque; também neutro plural (nominativo e acusativo).\nÉ qui/quae/quod + -cumque: quaecumque = quae + cumque.\nEm «Quaecumque est Fortuna, mea est» (Vergílio, Eneida 12,694): «qualquer que seja a sorte».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2353",
+  "tipo": "flexao",
+  "la": "teneat",
+  "lema": "la-p1008",
+  "analise": "presente do subjuntivo, 3ª pessoa do singular",
+  "pt": "que mantenha",
+  "aceitas": [
+   "que mantenha",
+   "mantenha",
+   "que ele mantenha",
+   "ele mantenha",
+   "que ela mantenha",
+   "que tenha",
+   "tenha",
+   "que segure",
+   "segure",
+   "que guarde",
+   "guarde",
+   "que retenha"
+  ],
+  "distratores": [
+   "mantém",
+   "que eu mantenha",
+   "que tu mantenhas",
+   "ele mantinha"
+  ],
+  "nota": "teneat: presente do subjuntivo, 3ª pessoa do singular de teneo.\nNa 2ª conjugação, -eat é o subjuntivo (tenet é o indicativo).\nEm «ut teneat catholicam fidem» (Símbolo Quicumque): «que mantenha a fé católica».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2354",
+  "tipo": "flexao",
+  "la": "tenet",
+  "lema": "la-p1008",
+  "analise": "presente do indicativo, 3ª pessoa do singular",
+  "pt": "retém",
+  "aceitas": [
+   "retém",
+   "ele retém",
+   "ela retém",
+   "mantém",
+   "ele mantém",
+   "ela mantém",
+   "tem",
+   "ele tem",
+   "ela tem",
+   "segura",
+   "ele segura",
+   "guarda"
+  ],
+  "distratores": [
+   "eu retenho",
+   "reteve",
+   "reterá",
+   "ele retinha"
+  ],
+  "nota": "tenet: presente do indicativo, 3ª pessoa do singular de teneo.\nNa 2ª conjugação, -et é a 3ª pessoa do presente (teneat é o subjuntivo).\nEm «Hunc tenet, huic comes est» (Ovídio, Metamorfoses 10,533): «Ela o retém».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-v2355",
+  "tipo": "flexao",
+  "la": "servaverit",
+  "lema": "la-p1134",
+  "analise": "futuro perfeito do indicativo, 3ª pessoa do singular; também perfeito do subjuntivo, 3ª pessoa do singular",
+  "pt": "tiver guardado",
+  "outras": [
+   "tenha guardado"
+  ],
+  "aceitas": [
+   "tiver guardado",
+   "ele tiver guardado",
+   "terá guardado",
+   "tiver observado",
+   "tiver conservado",
+   "tiver salvo",
+   "tiver preservado",
+   "tiver mantido",
+   "tenha guardado",
+   "ele tenha guardado",
+   "tenha observado",
+   "tenha conservado"
+  ],
+  "distratores": [
+   "guardou",
+   "guardará",
+   "ele guardava",
+   "tinha guardado"
+  ],
+  "nota": "servaverit: futuro perfeito do indicativo, 3ª pessoa do singular de servo; também perfeito do subjuntivo.\n-averit: radical do perfeito (servav-) + -erit.\nEm «nisi quisque integram … servaverit» (Símbolo Quicumque), é condição: «se cada um não a tiver guardado».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ]
+ },
+ {
+  "id": "la-v2356",
+  "tipo": "flexao",
+  "la": "dubio",
+  "lema": "la-p837",
+  "analise": "ablativo neutro singular; também dativo neutro singular; também ablativo masculino singular; também dativo masculino singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "na dúvida; à dúvida; ao duvidoso",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "plural: dativo ou ablativo",
+   "plural: nominativo ou acusativo",
+   "singular: genitivo ou acusativo"
+  ],
+  "nota": "dubio: ablativo (ou dativo) neutro (ou masculino) singular de dubius, aqui substantivado.\n-o: dativo e ablativo singular da 2ª declinação.\nEm «absque dubio» (Símbolo Quicumque), depois de absque: «sem dúvida».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2357",
+  "tipo": "flexao",
+  "la": "dubium",
+  "lema": "la-p837",
+  "analise": "nominativo neutro singular; também acusativo neutro singular; também acusativo masculino singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou acusativo",
+  "sentido": "duvidoso; o duvidoso",
+  "distratores": [
+   "singular: dativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "plural: dativo ou ablativo",
+   "plural: nominativo ou acusativo"
+  ],
+  "nota": "dubium: nominativo ou acusativo neutro singular de dubius; também acusativo masculino singular.\n-um: neutro singular (nominativo = acusativo) ou acusativo masculino.\nEm «hoc mihi non est dubium» (Cícero, Cartas aos amigos 8,9,2), é predicativo: «não é duvidoso».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2358",
+  "tipo": "flexao",
+  "la": "confundentes",
+  "lema": "la-p1294",
+  "analise": "particípio presente, nominativo masculino plural; também acusativo masculino plural; também nominativo feminino plural; também acusativo feminino plural",
+  "pt": "confundindo",
+  "aceitas": [
+   "confundindo",
+   "misturando",
+   "perturbando",
+   "juntando",
+   "derramando"
+  ],
+  "distratores": [
+   "confundir",
+   "confundido",
+   "confundem",
+   "confunde!"
+  ],
+  "nota": "confundentes: particípio presente de confundo, nominativo ou acusativo plural (masculino e feminino).\n-ntes: plural do particípio presente (singular -ns).\nEm «Neque confundentes personas» (Símbolo Quicumque), concorda com o sujeito de veneremur: «nem confundindo as pessoas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g019"
+  ]
+ },
+ {
+  "id": "la-v2359",
+  "tipo": "flexao",
+  "la": "personae",
+  "lema": "la-p839",
+  "analise": "nominativo plural; também genitivo singular; também dativo singular; também vocativo plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "as pessoas (sujeito); da pessoa; à pessoa",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo; plural: acusativo",
+   "singular: acusativo; plural: genitivo ou acusativo"
+  ],
+  "nota": "personae: nominativo plural de persona; também genitivo e dativo singular.\n-ae na 1ª declinação: genitivo ou dativo singular, nominativo ou vocativo plural.\nEm «tres personae coaeternae» e «unitate personae» (Símbolo Quicumque): sujeito (plural) e genitivo (singular).",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2360",
+  "tipo": "flexao",
+  "la": "personam",
+  "lema": "la-p839",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a pessoa (objeto)",
+  "distratores": [
+   "singular: ablativo",
+   "singular: vocativo",
+   "singular: genitivo",
+   "singular: dativo"
+  ],
+  "nota": "personam: acusativo singular de persona.\n-am é o acusativo singular da 1ª declinação.\nEm «unamquamque personam Deum ac Dominum confiteri» (Símbolo Quicumque), é objeto de confiteri.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2361",
+  "tipo": "flexao",
+  "la": "personas",
+  "lema": "la-p839",
+  "analise": "acusativo plural",
+  "familia": "caso",
+  "pt": "plural: acusativo",
+  "sentido": "as pessoas (objeto)",
+  "distratores": [
+   "plural: genitivo",
+   "plural: nominativo",
+   "singular: acusativo",
+   "plural: ablativo"
+  ],
+  "nota": "personas: acusativo plural de persona.\n-as é o acusativo plural da 1ª declinação.\nEm «Neque confundentes personas» (Símbolo Quicumque), é objeto de confundentes.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2362",
+  "tipo": "flexao",
+  "la": "substantiae",
+  "lema": "la-p840",
+  "analise": "genitivo singular; também dativo singular; também nominativo plural; também vocativo plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "da substância; à substância; as substâncias",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo ou acusativo",
+   "singular: nominativo; plural: dativo ou ablativo"
+  ],
+  "nota": "substantiae: genitivo singular de substantia; também dativo singular e nominativo ou vocativo plural.\n-ae na 1ª declinação: genitivo ou dativo singular, nominativo ou vocativo plural.\nEm «non confusione substantiae» (Símbolo Quicumque): «da substância».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2363",
+  "tipo": "flexao",
+  "la": "substantiam",
+  "lema": "la-p840",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a substância (objeto)",
+  "distratores": [
+   "singular: vocativo",
+   "singular: dativo",
+   "singular: nominativo",
+   "singular: ablativo"
+  ],
+  "nota": "substantiam: acusativo singular de substantia.\n-am é o acusativo singular da 1ª declinação.\nEm «neque substantiam separantes» (Símbolo Quicumque), é objeto de separantes.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2364",
+  "tipo": "flexao",
+  "la": "separantes",
+  "lema": "la-p841",
+  "analise": "particípio presente, nominativo masculino plural; também acusativo masculino plural; também nominativo feminino plural; também acusativo feminino plural",
+  "pt": "separando",
+  "aceitas": [
+   "separando",
+   "apartando",
+   "dividindo",
+   "distinguindo"
+  ],
+  "distratores": [
+   "separar",
+   "separado",
+   "separam",
+   "separa!"
+  ],
+  "nota": "separantes: particípio presente de separo, nominativo ou acusativo plural (masculino e feminino).\n-ntes: plural do particípio presente (singular -ns).\nEm «neque substantiam separantes» (Símbolo Quicumque), concorda com o sujeito de veneremur.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g019"
+  ]
+ },
+ {
+  "id": "la-v2365",
+  "tipo": "flexao",
+  "la": "separet",
+  "lema": "la-p841",
+  "analise": "presente do subjuntivo, 3ª pessoa do singular",
+  "pt": "que separe",
+  "aceitas": [
+   "que separe",
+   "separe",
+   "que ele separe",
+   "ele separe",
+   "que ela separe",
+   "que aparte",
+   "aparte",
+   "que divida",
+   "divida",
+   "que distinga",
+   "distinga"
+  ],
+  "distratores": [
+   "separa",
+   "que eu separe",
+   "que tu separes",
+   "ele separava"
+  ],
+  "nota": "separet: presente do subjuntivo, 3ª pessoa do singular de separo.\nNa 1ª conjugação, o subjuntivo troca o -a- por -e- (separat → separet).\nEm «homo non separet» (Mc 10,9): «o homem não separe».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g012"
+  ]
+ },
+ {
+  "id": "la-v2366",
+  "tipo": "flexao",
+  "la": "alia",
+  "lema": "la-p1002",
+  "analise": "nominativo feminino singular; também ablativo feminino singular; também nominativo neutro plural; também acusativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "outra; por outra; as outras coisas",
+  "distratores": [
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: genitivo; plural: dativo ou ablativo"
+  ],
+  "nota": "alia: nominativo feminino singular de alius (também ablativo); também neutro plural.\n-a: feminino singular, ou neutro plural (nominativo e acusativo).\nEm «Alia est enim persona Patris, alia Filii» (Símbolo Quicumque), concorda com persona (e persona est fica subentendido): «uma é a pessoa do Pai, outra a do Filho».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2367",
+  "tipo": "flexao",
+  "la": "divinitatem",
+  "lema": "la-p1159",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a divindade (objeto)",
+  "distratores": [
+   "singular: genitivo",
+   "singular: nominativo",
+   "singular: ablativo",
+   "singular: vocativo"
+  ],
+  "nota": "divinitatem: acusativo singular de divinitas.\n-em é o acusativo singular da 3ª declinação. Radical: divinitat- (do genitivo divinitatis).\nEm «secundum divinitatem» (Símbolo Quicumque), depois de secundum: «quanto à divindade».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2368",
+  "tipo": "flexao",
+  "la": "coaeterna",
+  "lema": "la-p846",
+  "analise": "nominativo feminino singular; também ablativo feminino singular; também nominativo neutro plural; também acusativo neutro plural",
+  "familia": "caso",
+  "pt": "singular: nominativo ou ablativo; plural: nominativo ou acusativo",
+  "sentido": "coeterna; pela coeterna; as coisas coeternas",
+  "distratores": [
+   "singular: genitivo, dativo ou acusativo; plural: genitivo",
+   "singular: acusativo; plural: genitivo, dativo ou ablativo",
+   "singular: genitivo ou dativo; plural: dativo ou ablativo",
+   "singular: genitivo ou acusativo; plural: genitivo"
+  ],
+  "nota": "coaeterna: nominativo feminino singular de coaeternus (também ablativo); também neutro plural.\n-a: feminino singular, ou neutro plural (nominativo e acusativo).\nEm «coaeterna maiestas» (Símbolo Quicumque), concorda com maiestas: «coeterna a majestade».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2369",
+  "tipo": "flexao",
+  "la": "coaeternae",
+  "lema": "la-p846",
+  "analise": "nominativo feminino plural; também genitivo feminino singular; também dativo feminino singular; também vocativo feminino plural",
+  "familia": "caso",
+  "pt": "singular: genitivo ou dativo; plural: nominativo",
+  "sentido": "coeternas; da coeterna; à coeterna",
+  "distratores": [
+   "singular: nominativo ou acusativo; plural: genitivo",
+   "singular: ablativo; plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo; plural: acusativo",
+   "singular: acusativo; plural: genitivo ou acusativo"
+  ],
+  "nota": "coaeternae: nominativo feminino plural de coaeternus; também genitivo e dativo singular.\n-ae no feminino da 1ª classe: nominativo plural, ou genitivo e dativo singular.\nEm «tres personae coaeternae sibi sunt» (Símbolo Quicumque), concorda com personae.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004",
+   "la-g005"
+  ]
+ },
+ {
+  "id": "la-v2370",
+  "tipo": "flexao",
+  "la": "quale",
+  "lema": "la-p848",
+  "analise": "acusativo neutro singular; também nominativo neutro singular; também vocativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou acusativo",
+  "sentido": "qual",
+  "distratores": [
+   "singular: dativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "plural: dativo ou ablativo",
+   "plural: nominativo ou acusativo"
+  ],
+  "nota": "quale: acusativo (ou nominativo, vocativo) neutro singular de qualis.\n-e é o neutro singular dos adjetivos de 2 terminações (qualis, quale).\nEm «sed quale velis velim scire» (Cícero, Cartas a Ático 15,13,3), é objeto de velis: «qual desejas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2371",
+  "tipo": "flexao",
+  "la": "increati",
+  "lema": "la-p849",
+  "analise": "nominativo masculino plural; também genitivo masculino singular; também genitivo neutro singular; também vocativo masculino plural",
+  "familia": "caso",
+  "pt": "singular: genitivo; plural: nominativo",
+  "sentido": "incriados; do incriado",
+  "distratores": [
+   "singular: acusativo; plural: genitivo",
+   "singular: nominativo; plural: ablativo",
+   "singular: ablativo; plural: acusativo",
+   "singular ou plural: dativo"
+  ],
+  "nota": "increati: nominativo masculino plural de increatus; também genitivo singular (masculino e neutro).\n-i: nominativo plural ou genitivo singular da 2ª declinação.\nEm «non tres increati» (Símbolo Quicumque), concorda com tres: «três incriados».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2372",
+  "tipo": "flexao",
+  "la": "immensi",
+  "lema": "la-p1283",
+  "analise": "nominativo masculino plural; também genitivo masculino singular; também genitivo neutro singular; também vocativo masculino plural",
+  "familia": "caso",
+  "pt": "singular: genitivo; plural: nominativo",
+  "sentido": "imensos; do imenso",
+  "distratores": [
+   "singular: acusativo; plural: genitivo",
+   "singular ou plural: ablativo",
+   "singular ou plural: dativo",
+   "singular: nominativo; plural: acusativo"
+  ],
+  "nota": "immensi: nominativo masculino plural de immensus; também genitivo singular (masculino e neutro).\n-i: nominativo plural ou genitivo singular da 2ª declinação.\nEm «nec tres immensi» (Símbolo Quicumque), concorda com tres: «três imensos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2373",
+  "tipo": "flexao",
+  "la": "unamquamque",
+  "lema": "la-p854",
+  "analise": "acusativo feminino singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "cada uma (objeto)",
+  "distratores": [
+   "singular: dativo",
+   "singular: nominativo",
+   "singular: vocativo",
+   "singular: genitivo"
+  ],
+  "nota": "unamquamque: acusativo feminino singular de unusquisque (una + quaeque, as duas partes declinam).\n-am … -que: acusativo feminino singular.\nEm «unamquamque personam … confiteri» (Símbolo Quicumque), concorda com personam: «cada pessoa».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2374",
+  "tipo": "flexao",
+  "la": "religione",
+  "lema": "la-p855",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "pela religião",
+  "distratores": [
+   "singular: genitivo",
+   "singular: nominativo",
+   "singular: dativo",
+   "singular: acusativo"
+  ],
+  "nota": "religione: ablativo singular de religio.\n-e é o ablativo singular da 3ª declinação. Radical: religion- (do genitivo religionis).\nEm «catholica religione prohibemur» (Símbolo Quicumque), é o agente da passiva: «pela religião católica».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2375",
+  "tipo": "flexao",
+  "la": "prohibemur",
+  "lema": "la-p856",
+  "analise": "presente do indicativo, 1ª pessoa do plural, voz passiva",
+  "pt": "somos proibidos",
+  "aceitas": [
+   "somos proibidos",
+   "nós somos proibidos",
+   "somos impedidos",
+   "nós somos impedidos",
+   "somos vetados",
+   "somos afastados",
+   "somos detidos",
+   "nós somos detidos"
+  ],
+  "distratores": [
+   "proibimos",
+   "sois proibidos",
+   "é proibido",
+   "serão proibidos"
+  ],
+  "nota": "prohibemur: presente do indicativo passivo, 1ª pessoa do plural de prohibeo.\n-mur: 1ª pessoa do plural passiva (ativa: -mus).\nEm «tres deos … dicere … prohibemur» (Símbolo Quicumque): «somos proibidos de dizer».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g007",
+   "la-g015"
+  ]
+ },
+ {
+  "id": "la-v2376",
+  "tipo": "flexao",
+  "la": "prohibitus",
+  "lema": "la-p856",
+  "analise": "particípio perfeito, nominativo masculino singular",
+  "pt": "impedido",
+  "aceitas": [
+   "impedido",
+   "proibido",
+   "vetado",
+   "afastado",
+   "detido",
+   "tendo sido impedido",
+   "tendo sido proibido"
+  ],
+  "distratores": [
+   "impedida",
+   "impedidos",
+   "impedir",
+   "impedindo"
+  ],
+  "nota": "prohibitus: particípio perfeito de prohibeo, nominativo masculino singular (passivo).\n-tus: particípio perfeito; com est, forma o perfeito passivo.\nEm «prohibitus nemo est» (Lívio, História de Roma 3,27,5): «ninguém foi impedido».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g014"
+  ]
+ },
+ {
+  "id": "la-v2377",
+  "tipo": "flexao",
+  "la": "nullo",
+  "lema": "la-p908",
+  "analise": "ablativo masculino singular; também ablativo neutro singular; também dativo masculino singular; também dativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "por ninguém; a nenhum; a ninguém",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "singular: genitivo; plural: acusativo",
+   "plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo"
+  ],
+  "nota": "nullo: ablativo masculino singular de nullus; também neutro, e dativo (masculino e neutro).\n-o: ablativo ou dativo singular, no masculino e no neutro.\nEm «Pater a nullo est factus» (Símbolo Quicumque), a nullo é o agente: «por ninguém».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2378",
+  "tipo": "flexao",
+  "la": "minora",
+  "lema": "la-p858",
+  "analise": "nominativo neutro plural; também acusativo neutro plural; também vocativo neutro plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "as coisas menores",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: nominativo ou acusativo",
+   "singular: genitivo ou dativo",
+   "plural: genitivo ou ablativo"
+  ],
+  "nota": "minora: nominativo (ou acusativo, vocativo) neutro plural de minor.\n-ora: neutro plural dos comparativos (minus no singular).\nEm «sed haec minora sunt» (Cícero, Cartas aos amigos 14,4,4), é predicativo: «essas coisas são menores».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2379",
+  "tipo": "flexao",
+  "la": "minus",
+  "lema": "la-p858",
+  "analise": "nominativo neutro singular; também acusativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou acusativo",
+  "sentido": "menor",
+  "distratores": [
+   "singular: dativo ou ablativo",
+   "plural: nominativo ou acusativo",
+   "singular: genitivo ou dativo",
+   "plural: dativo ou ablativo"
+  ],
+  "nota": "minus: nominativo ou acusativo neutro singular de minor (comparativo de parvus).\n-us no comparativo é neutro (masculino e feminino: minor).\nEm «nihil maius aut minus» (Símbolo Quicumque): «nada maior ou menor».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2380",
+  "tipo": "flexao",
+  "la": "coaequales",
+  "lema": "la-p859",
+  "analise": "nominativo feminino plural; também acusativo feminino plural; também nominativo masculino plural; também acusativo masculino plural",
+  "familia": "caso",
+  "pt": "plural: nominativo ou acusativo",
+  "sentido": "coiguais",
+  "distratores": [
+   "plural: dativo ou ablativo",
+   "singular: acusativo; plural: genitivo",
+   "singular: genitivo ou dativo",
+   "singular: nominativo ou acusativo"
+  ],
+  "nota": "coaequales: nominativo ou acusativo plural (masculino e feminino) de coaequalis.\n-es: plural dos adjetivos de 3ª declinação (singular -is).\nEm «tres personae coaeternae sibi sunt et coaequales» (Símbolo Quicumque), concorda com personae.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2381",
+  "tipo": "flexao",
+  "la": "necessarii",
+  "lema": "la-p861",
+  "analise": "nominativo masculino plural; também genitivo masculino singular; também genitivo neutro singular; também vocativo masculino plural",
+  "familia": "caso",
+  "pt": "singular: genitivo; plural: nominativo",
+  "sentido": "necessários; do necessário",
+  "distratores": [
+   "singular: acusativo; plural: genitivo",
+   "singular ou plural: ablativo",
+   "singular: nominativo; plural: dativo",
+   "singular: dativo; plural: acusativo"
+  ],
+  "nota": "necessarii: nominativo masculino plural de necessarius; também genitivo singular (masculino e neutro).\n-i: nominativo plural ou genitivo singular da 2ª declinação.\nEm «Non estis mihi necessarii» (1Cor 12,21), é predicativo: «não sois necessários».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g004"
+  ]
+ },
+ {
+  "id": "la-v2382",
+  "tipo": "flexao",
+  "la": "necessarium",
+  "lema": "la-p861",
+  "analise": "nominativo neutro singular; também acusativo neutro singular; também acusativo masculino singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou acusativo",
+  "sentido": "necessário; o necessário",
+  "distratores": [
+   "singular: dativo ou ablativo",
+   "singular: genitivo; plural: nominativo",
+   "plural: dativo ou ablativo",
+   "singular: genitivo ou dativo"
+  ],
+  "nota": "necessarium: nominativo ou acusativo neutro singular de necessarius; também acusativo masculino singular.\n-um: neutro singular (nominativo = acusativo) ou acusativo masculino.\nEm «Sed necessarium est ad aeternam salutem» (Símbolo Quicumque), é predicativo: «é necessário».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2383",
+  "tipo": "flexao",
+  "la": "incarnationem",
+  "lema": "la-p862",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a encarnação (objeto)",
+  "distratores": [
+   "singular: genitivo",
+   "singular: vocativo",
+   "singular: dativo",
+   "singular: ablativo"
+  ],
+  "nota": "incarnationem: acusativo singular de incarnatio.\n-em é o acusativo singular da 3ª declinação. Radical: incarnation- (do genitivo incarnationis).\nEm «ut incarnationem … fideliter credat» (Símbolo Quicumque), é objeto de credat.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2384",
+  "tipo": "flexao",
+  "la": "rationale",
+  "lema": "la-p865",
+  "analise": "nominativo neutro singular; também acusativo neutro singular; também vocativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: nominativo ou acusativo",
+  "sentido": "racional",
+  "distratores": [
+   "singular: dativo ou ablativo",
+   "singular: genitivo ou dativo",
+   "plural: nominativo ou acusativo",
+   "plural: dativo ou ablativo"
+  ],
+  "nota": "rationale: nominativo (ou acusativo, vocativo) neutro singular de rationalis.\n-e é o neutro singular dos adjetivos de 3ª declinação (rationalis, rationale).\nEm «Rationale animal es» (Sêneca, Cartas a Lucílio 124,23), concorda com animal: «és um animal racional».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2385",
+  "tipo": "flexao",
+  "la": "rationali",
+  "lema": "la-p865",
+  "analise": "ablativo feminino singular; também ablativo masculino singular; também ablativo neutro singular; também dativo masculino singular; também dativo feminino singular; também dativo neutro singular",
+  "familia": "caso",
+  "pt": "singular: dativo ou ablativo",
+  "sentido": "pela racional; pelo racional; à racional",
+  "distratores": [
+   "singular: nominativo ou acusativo",
+   "plural: dativo ou ablativo",
+   "singular: genitivo; plural: acusativo",
+   "singular: acusativo; plural: genitivo"
+  ],
+  "nota": "rationali: ablativo (ou dativo) singular de rationalis, em qualquer gênero.\n-i: ablativo e dativo singular dos adjetivos de 3ª declinação.\nEm «ex anima rationali» (Símbolo Quicumque), concorda com anima: «de alma racional».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2386",
+  "tipo": "flexao",
+  "la": "subsistens",
+  "lema": "la-p866",
+  "analise": "particípio presente, nominativo masculino singular; também nominativo feminino singular; também nominativo neutro singular; também acusativo neutro singular",
+  "pt": "subsistente",
+  "aceitas": [
+   "subsistente",
+   "subsistindo",
+   "existente",
+   "existindo",
+   "permanecendo",
+   "resistindo",
+   "mantendo-se"
+  ],
+  "distratores": [
+   "subsistentes",
+   "subsistir",
+   "subsistiu",
+   "subsiste!"
+  ],
+  "nota": "subsistens: particípio presente de subsisto, nominativo singular (todos os gêneros).\n-ns: o particípio presente tem o nominativo igual nos três gêneros.\nEm «ex anima rationali et humana carne subsistens» (Símbolo Quicumque), concorda com homo.",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001",
+   "la-g019"
+  ]
+ },
+ {
+  "id": "la-v2387",
+  "tipo": "flexao",
+  "la": "subsistent",
+  "lema": "la-p866",
+  "analise": "futuro do indicativo, 3ª pessoa do plural",
+  "pt": "subsistirão",
+  "aceitas": [
+   "subsistirão",
+   "eles subsistirão",
+   "elas subsistirão",
+   "existirão",
+   "eles existirão",
+   "permanecerão",
+   "eles permanecerão",
+   "resistirão",
+   "eles resistirão"
+  ],
+  "distratores": [
+   "subsistem",
+   "subsistiram",
+   "subsistirá",
+   "eles subsistiam"
+  ],
+  "nota": "subsistent: futuro do indicativo, 3ª pessoa do plural de subsisto.\nNa 3ª conjugação, o futuro é -am, -es, -et, -emus, -etis, -ent.\nEm «in miseriis non subsistent» (Sl 139,11): «nas misérias não subsistirão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g010"
+  ]
+ },
+ {
+  "id": "la-v2388",
+  "tipo": "flexao",
+  "la": "duae",
+  "lema": "la-p868",
+  "analise": "nominativo feminino plural; também vocativo feminino plural",
+  "familia": "caso",
+  "pt": "plural: nominativo",
+  "sentido": "duas",
+  "distratores": [
+   "plural: acusativo",
+   "plural: genitivo",
+   "plural: ablativo",
+   "plural: dativo"
+  ],
+  "nota": "duae: nominativo feminino plural de duo.\nDuo declina-se como plural: duo/duae/duo; acusativo masculino duos ou duo, feminino duas.\nEm «Horae duae fuerunt» (Cícero, Em defesa de Públio Quíncio 53), concorda com horae: «Foram duas horas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-v2389",
+  "tipo": "flexao",
+  "la": "conversione",
+  "lema": "la-p869",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "pela conversão",
+  "distratores": [
+   "singular: genitivo",
+   "singular: dativo",
+   "singular: vocativo",
+   "singular: nominativo"
+  ],
+  "nota": "conversione: ablativo singular de conversio.\n-e é o ablativo singular da 3ª declinação. Radical: conversion- (do genitivo conversionis).\nEm «non conversione divinitatis in carnem» (Símbolo Quicumque), indica o meio: «não por conversão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2390",
+  "tipo": "flexao",
+  "la": "assumptione",
+  "lema": "la-p870",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "pela assunção",
+  "distratores": [
+   "singular: acusativo",
+   "singular: genitivo",
+   "singular: dativo",
+   "singular: nominativo"
+  ],
+  "nota": "assumptione: ablativo singular de assumptio.\n-e é o ablativo singular da 3ª declinação. Radical: assumption- (do genitivo assumptionis).\nEm «sed assumptione humanitatis in Deum» (Símbolo Quicumque), indica o meio: «por assunção».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2391",
+  "tipo": "flexao",
+  "la": "confusione",
+  "lema": "la-p872",
+  "analise": "ablativo singular",
+  "familia": "caso",
+  "pt": "singular: ablativo",
+  "sentido": "pela confusão",
+  "distratores": [
+   "singular: acusativo",
+   "singular: genitivo",
+   "singular: nominativo",
+   "singular: dativo"
+  ],
+  "nota": "confusione: ablativo singular de confusio.\n-e é o ablativo singular da 3ª declinação. Radical: confusion- (do genitivo confusionis).\nEm «non confusione substantiae» (Símbolo Quicumque), indica o meio: «não por confusão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2392",
+  "tipo": "flexao",
+  "la": "confusionem",
+  "lema": "la-p872",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a confusão (objeto)",
+  "distratores": [
+   "singular: ablativo",
+   "singular: genitivo",
+   "singular: vocativo",
+   "singular: nominativo"
+  ],
+  "nota": "confusionem: acusativo singular de confusio.\n-em é o acusativo singular da 3ª declinação. Radical: confusion- (do genitivo confusionis).\nEm «Cogitasti confusionem domui tuae» (Hab 2,10), é objeto de cogitasti: «planejaste a confusão».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2393",
+  "tipo": "flexao",
+  "la": "reddituri",
+  "lema": "la-p874",
+  "analise": "particípio futuro, nominativo masculino plural; também genitivo masculino singular; também genitivo neutro singular; também vocativo masculino plural",
+  "pt": "prestes a dar",
+  "outras": [
+   "de quem vai dar"
+  ],
+  "aceitas": [
+   "prestes a dar",
+   "prestes a devolver",
+   "prestes a restituir",
+   "prestes a prestar",
+   "prestes a entregar",
+   "prestes a pagar",
+   "que hão de dar",
+   "que hão de devolver",
+   "que hão de prestar",
+   "que vão dar",
+   "que vão devolver",
+   "de quem vai dar"
+  ],
+  "distratores": [
+   "devolvido",
+   "dando",
+   "que devolvem",
+   "ele devolvia"
+  ],
+  "nota": "reddituri: particípio futuro de reddo, nominativo masculino plural; também genitivo singular.\n-turi: particípio futuro (radical do supino + -urus); com sunt, dá o futuro perifrástico.\nEm «et reddituri sunt de factis propriis rationem» (Símbolo Quicumque): «hão de prestar contas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g001"
+  ]
+ },
+ {
+  "id": "la-v2394",
+  "tipo": "flexao",
+  "la": "propriis",
+  "lema": "la-p994",
+  "analise": "ablativo neutro plural; também ablativo masculino plural; também ablativo feminino plural; também dativo neutro plural; também dativo masculino plural; também dativo feminino plural",
+  "familia": "caso",
+  "pt": "plural: dativo ou ablativo",
+  "sentido": "pelos próprios; aos próprios",
+  "distratores": [
+   "plural: nominativo ou acusativo",
+   "singular: nominativo ou acusativo",
+   "singular: genitivo ou dativo",
+   "plural: genitivo ou acusativo"
+  ],
+  "nota": "propriis: ablativo (ou dativo) plural de proprius, em qualquer gênero.\n-is: dativo e ablativo plural da 1ª e da 2ª declinação.\nEm «de factis propriis» (Símbolo Quicumque), concorda com factis: «dos próprios atos».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g005",
+   "la-g006"
+  ]
+ },
+ {
+  "id": "la-v2395",
+  "tipo": "flexao",
+  "la": "rationem",
+  "lema": "la-p905",
+  "analise": "acusativo singular",
+  "familia": "caso",
+  "pt": "singular: acusativo",
+  "sentido": "a razão (objeto)",
+  "distratores": [
+   "singular: nominativo",
+   "singular: dativo",
+   "singular: ablativo",
+   "singular: genitivo"
+  ],
+  "nota": "rationem: acusativo singular de ratio.\n-em é o acusativo singular da 3ª declinação. Radical: ration- (do genitivo rationis).\nEm «reddituri sunt … rationem» (Símbolo Quicumque), é objeto: rationem reddere, «prestar contas».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g003"
+  ]
+ },
+ {
+  "id": "la-v2396",
+  "tipo": "flexao",
+  "la": "agis",
+  "lema": "la-p975",
+  "analise": "presente do indicativo, 2ª pessoa do singular",
+  "pt": "fazes",
+  "aceitas": [
+   "fazes",
+   "tu fazes",
+   "você faz",
+   "ages",
+   "tu ages",
+   "praticas",
+   "tu praticas",
+   "conduzes",
+   "tu conduzes",
+   "tratas",
+   "tu tratas"
+  ],
+  "distratores": [
+   "faz",
+   "fazemos",
+   "tu fazias",
+   "farás"
+  ],
+  "nota": "agis: presente do indicativo, 2ª pessoa do singular de ago.\nNa 3ª conjugação, -is é a 2ª pessoa do singular (agimus, agitis).\nEm «Quid est hoc quod agis?» (Nm 23,11): «Que é isto que fazes?»",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g007"
+  ]
+ },
+ {
+  "id": "la-v2397",
+  "tipo": "flexao",
+  "la": "egerunt",
+  "lema": "la-p975",
+  "analise": "perfeito do indicativo, 3ª pessoa do plural",
+  "pt": "praticaram",
+  "aceitas": [
+   "praticaram",
+   "eles praticaram",
+   "elas praticaram",
+   "fizeram",
+   "eles fizeram",
+   "agiram",
+   "eles agiram",
+   "conduziram",
+   "trataram",
+   "impeliram"
+  ],
+  "distratores": [
+   "praticam",
+   "praticou",
+   "praticavam",
+   "praticarão"
+  ],
+  "nota": "egerunt: perfeito do indicativo, 3ª pessoa do plural de ago.\n-erunt é a terminação do perfeito na 3ª pessoa do plural; o radical egi- vem da 3ª forma do enunciado.\nEm «qui bona egerunt» (Símbolo Quicumque): «os que praticaram o bem».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g009"
+  ]
+ },
+ {
+  "id": "la-v2398",
+  "tipo": "flexao",
+  "la": "ibunt",
+  "lema": "la-p977",
+  "analise": "futuro do indicativo, 3ª pessoa do plural",
+  "pt": "irão",
+  "aceitas": [
+   "irão",
+   "eles irão",
+   "elas irão",
+   "caminharão",
+   "eles caminharão",
+   "andarão",
+   "marcharão",
+   "avançarão"
+  ],
+  "distratores": [
+   "vão",
+   "foram",
+   "iam",
+   "irá"
+  ],
+  "nota": "ibunt: futuro do indicativo, 3ª pessoa do plural de eo.\neo tem o futuro em -bo (ibo, ibis, ibit), como a 1ª e a 2ª conjugações.\nEm «ibunt in vitam aeternam» (Símbolo Quicumque): «irão para a vida eterna».",
+  "nivel": "A1",
+  "tags": [
+   "gramática",
+   "flexão"
+  ],
+  "conceitos": [
+   "la-g010"
+  ]
  }
 ]

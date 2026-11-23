@@ -1110,3 +1110,20 @@ aprovada no mesmo dia, com as cinco recomendações:
 - Biblioteca: `glossario_textos.py` partia «fui, fui» (cópia corrigida em
   `~/.cache/latim-1911/bib-rascunho/`); «in» e «si» saem malformados do «pt» dos cards e pedem acerto à mão; o
   `gerar.mjs` ganhou rótulos de prosa (História, Discursos, Cartas).
+
+### 19.2 A leva B (ladainha, *Trium puerorum*, *Quicumque*; 17/11, publicada em 23/11)
+- 14 textos (ordem 98–111): ladainha lauretana em 3 partes (com os títulos de 2018 e 2020),
+  *Trium puerorum* em 5 (antífona, cântico de Dn 3 na forma do Breviário, Sl 150 da Clementina,
+  versículos e as três orações) e *Quicumque* em 6 (Wikisource, «corporibus» no lugar de «corporis»).
+- 115 palavras (`34-palavras-7`, p720–879), 145 trechos (`35-trechos-7`, t315–462), 89 frases de uso
+  (`48-usos-l`, 46 clássicas), 235 flexões, 109 análises, 60 perguntas, 547 cards de forma.
+- **Parada de 17 a 23/11** e refeita sobre a `main` de 23/11 (`~/.cache/taioe-oracoes/b/migrar.py`):
+  46 lemas que as levas de 19–20/11 também fizeram ficaram com o card delas (regra do §21.1), menos
+  *licet* conjunção («embora», homógrafo do verbo); as frases de uso e as flexões ganharam ids novos
+  (as faixas antigas foram usadas); saíram 3 trechos e 14 frases de uso iguais a cards que já estavam
+  no ar. O verso repetido aceita agora qualquer frase do baralho (também a de uso) na conta das
+  palavras (build, `textos.py`, `testar-latim.js`).
+- Lição: leva parada em branch tem de reservar **todas** as faixas de ids no LATIM.md (palavras,
+  trechos, frases de uso, flexões) e os nomes de arquivo; os geradores refazem `25-analise`,
+  `26-compreensao` e `07-formas` pelas levas que existem neste PC, e apagam o que veio de outro:
+  depois de rodá-los, `~/.cache/taioe-oracoes/proteger.py <arquivos>` devolve do `HEAD` todo card antigo.
