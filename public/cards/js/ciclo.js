@@ -1,115 +1,87 @@
 /* ciclo.js — todas as línguas num fluxo só (pedido do Gere, 23/11/2026).
 
-   A referência é uma rodada de 25 respostas: cada 4% valem 1 card. Uma língua por vez, na ordem
-   dos cursos, e o ciclo recomeça. Em 0% a língua fica pausada.
-
-   Divisão por igual: em vez de revezar o card que sobraria, o ciclo cresce até o múltiplo do
-   número de línguas (2 → 26, 3 → 27, 4 → 28, 5 → 25, 6 → 30).
+   Cada língua tem a quantidade de cards dela no ciclo (de 0 a 99), e o ciclo é a soma
+   (pedido de 24/11: antes era uma rodada fixa de 25 dividida em percentuais). Uma língua por
+   vez, na ordem dos cursos, e o ciclo recomeça. Em 0 a língua fica pausada; a que nunca entrou
+   fica em 0 até a pessoa ligá-la. A página mostra as línguas da maior quantidade para a menor.
 
    Só contas, sem tela nem rede: o app guarda o resultado, e fonte/testar-ciclo.js confere.
-     proporção: { igual: bool, cotas: { curso: cards por ciclo } }
+     proporção: { cotas: { curso: cards por ciclo }, antes: { curso: o que tinha antes da pausa } }
      posição:   { curso, feitos } */
 (function (raiz) {
   'use strict';
-  var BASE = 25;
+  var MAX = 99;
+  var INICIO = 25;   // só na primeira vez: as línguas já começadas dividem 25 por igual
+
+  function cotaDe(p, k) { return ((p && p.cotas) || {})[k] || 0; }
 
   function ativos(p, ordem) {
-    return ordem.filter(function (k) { return ((p && p.cotas) || {})[k] > 0; });
+    return ordem.filter(function (k) { return cotaDe(p, k) > 0; });
   }
   function total(p, ordem) {
-    return ordem.reduce(function (s, k) { return s + (((p && p.cotas) || {})[k] || 0); }, 0);
+    return ordem.reduce(function (s, k) { return s + cotaDe(p, k); }, 0);
   }
 
-  /* por igual: o menor múltiplo do número de línguas que alcança a base */
-  function iguais(cursos) {
+  /* a primeira proporção de quem ainda não tem nenhuma */
+  function inicial(cursos) {
     var cotas = {};
-    if (!cursos.length) return { igual: true, cotas: cotas };
-    var cada = Math.ceil(BASE / cursos.length);
-    cursos.forEach(function (k) { cotas[k] = cada; });
-    return { igual: true, cotas: cotas };
-  }
-
-  /* leva as cotas a somar 25, pelos maiores restos, sem zerar quem está ligado */
-  function escalar(cotas, ordem) {
-    var ligados = ordem.filter(function (k) { return cotas[k] > 0; });
-    var soma = ligados.reduce(function (s, k) { return s + cotas[k]; }, 0);
-    var novas = {};
-    if (!soma) return novas;
-    var partes = ligados.map(function (k, i) {
-      var exata = cotas[k] * BASE / soma;
-      novas[k] = Math.max(1, Math.floor(exata));
-      return { k: k, resto: exata - Math.floor(exata), i: i };
-    });
-    var falta = BASE - ligados.reduce(function (s, k) { return s + novas[k]; }, 0);
-    partes.sort(function (a, b) { return b.resto - a.resto || a.i - b.i; });
-    for (var n = 0; falta > 0; n++, falta--) novas[partes[n % partes.length].k]++;
-    /* o piso de 1 pode ter passado da soma: tira de quem tem mais */
-    while (falta < 0) {
-      var maior = ligados.reduce(function (a, k) { return novas[k] > novas[a] ? k : a; }, ligados[0]);
-      novas[maior]--;
-      falta++;
+    if (cursos.length) {
+      var cada = Math.ceil(INICIO / cursos.length);
+      cursos.forEach(function (k) { cotas[k] = cada; });
     }
-    return novas;
+    return { cotas: cotas, antes: {} };
   }
 
-  /* o que veio guardado, conferido contra os cursos que existem; sem nada ligado, null */
+  function inteiro(n) {
+    return Number.isInteger(n) && n > 0 ? Math.min(n, MAX) : 0;
+  }
+
+  /* o que veio guardado (também o formato de 23/11, com «igual»), conferido contra os cursos
+     que existem; sem nada ligado, null */
   function limpar(p, ordem) {
     if (!p || typeof p.cotas !== 'object' || !p.cotas) return null;
-    var cotas = {};
+    var cotas = {}, antes = {};
+    var velho = (typeof p.antes === 'object' && p.antes) || {};
     ordem.forEach(function (k) {
-      var n = p.cotas[k];
-      if (Number.isInteger(n) && n > 0) cotas[k] = n;
+      var n = inteiro(p.cotas[k]);
+      if (n) cotas[k] = n;
+      else if (inteiro(velho[k])) antes[k] = inteiro(velho[k]);
     });
-    var ligados = ordem.filter(function (k) { return cotas[k] > 0; });
-    if (!ligados.length) return null;
-    if (p.igual) return iguais(ligados);
-    if (total({ cotas: cotas }, ordem) === BASE) return { igual: false, cotas: cotas };
-    return { igual: false, cotas: escalar(cotas, ordem) };
+    if (!ativos({ cotas: cotas }, ordem).length) return null;
+    return { cotas: cotas, antes: antes };
   }
 
-  /* a mesma proporção somando 25, para mexer de card em card */
-  function naBase(p, ordem) {
-    var ligados = ativos(p, ordem), cotas = {};
-    if (!p.igual) { ligados.forEach(function (k) { cotas[k] = p.cotas[k]; }); return cotas; }
-    var cada = Math.floor(BASE / ligados.length), sobra = BASE - cada * ligados.length;
-    ligados.forEach(function (k, i) { cotas[k] = cada + (i < sobra ? 1 : 0); });
-    return cotas;
+  /* a quantidade desta língua; em 0 ela pausa e guarda o que tinha. A última ligada não zera */
+  function definir(p, ordem, curso, n) {
+    if (ordem.indexOf(curso) < 0) return p;
+    n = Math.max(0, Math.min(MAX, Math.round(Number(n)) || 0));
+    var atual = cotaDe(p, curso);
+    if (n === atual) return p;
+    if (!n && ativos(p, ordem).length === 1) return p;
+    var cotas = Object.assign({}, p.cotas), antes = Object.assign({}, p.antes);
+    if (n) { cotas[curso] = n; delete antes[curso]; }
+    else { delete cotas[curso]; antes[curso] = atual; }
+    return { cotas: cotas, antes: antes };
   }
-
-  /* a outra língua que paga ou recebe o card: a de maior cota */
-  function maiorOutra(cotas, ordem, curso) {
-    var achada = null;
-    ordem.forEach(function (k) {
-      if (k !== curso && cotas[k] > 0 && (achada === null || cotas[k] >= cotas[achada])) achada = k;
-    });
-    return achada;
-  }
-
-  /* +1 ou -1 card (4%) nesta língua, sempre somando 25 */
   function ajustar(p, ordem, curso, delta) {
-    var cotas = naBase(p, ordem), outra = maiorOutra(cotas, ordem, curso);
-    if (outra === null) return p;
-    if (delta < 0 && !(cotas[curso] > 0)) return p;
-    cotas[curso] = (cotas[curso] || 0) + (delta > 0 ? 1 : -1);
-    cotas[outra] += delta > 0 ? -1 : 1;
-    if (!cotas[curso]) delete cotas[curso];
-    if (!cotas[outra]) delete cotas[outra];
-    return { igual: false, cotas: cotas };
+    return definir(p, ordem, curso, cotaDe(p, curso) + (delta > 0 ? 1 : -1));
+  }
+  function pausar(p, ordem, curso) { return definir(p, ordem, curso, 0); }
+  /* volta com o que tinha antes da pausa; a que nunca entrou volta com 1 */
+  function retomar(p, ordem, curso) {
+    return definir(p, ordem, curso, (p.antes && p.antes[curso]) || 1);
   }
 
-  /* 0%: a parte dela se divide entre as outras; a última ligada não pausa */
-  function pausar(p, ordem, curso) {
-    var resto = ativos(p, ordem).filter(function (k) { return k !== curso; });
-    if (!resto.length) return p;
-    if (p.igual) return iguais(resto);
-    var cotas = {};
-    resto.forEach(function (k) { cotas[k] = p.cotas[k]; });
-    return { igual: false, cotas: escalar(cotas, ordem) };
+  /* para a página: da maior quantidade para a menor; no empate, a ordem dos cursos */
+  function ordenada(p, ordem) {
+    return ordem.slice().sort(function (a, b) {
+      return cotaDe(p, b) - cotaDe(p, a) || ordem.indexOf(a) - ordem.indexOf(b);
+    });
   }
 
   function percentual(p, ordem, curso) {
     var t = total(p, ordem);
-    return t ? Math.round(100 * ((p.cotas[curso] || 0) / t)) : 0;
+    return t ? Math.round(100 * cotaDe(p, curso) / t) : 0;
   }
 
   function seguinte(lig, curso, ordem) {
@@ -157,9 +129,9 @@
   }
 
   var api = {
-    BASE: BASE, ativos: ativos, total: total, iguais: iguais, limpar: limpar, ajustar: ajustar,
-    pausar: pausar, percentual: percentual, resolver: resolver, contar: contar, pular: pular,
-    mesclar: mesclar
+    MAX: MAX, ativos: ativos, total: total, inicial: inicial, limpar: limpar, definir: definir,
+    ajustar: ajustar, pausar: pausar, retomar: retomar, ordenada: ordenada, percentual: percentual,
+    resolver: resolver, contar: contar, pular: pular, mesclar: mesclar
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else raiz.TaioeCiclo = api;

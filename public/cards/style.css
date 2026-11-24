@@ -823,17 +823,22 @@ label input:focus{outline:0;border-color:var(--acento)}
 /* ── o fluxo único das línguas (23/11/2026) ── */
 .aviso-ciclo{margin:0 0 8px;text-align:center;font-size:13px;font-weight:700;color:var(--texto-2)}
 .proporcao{display:flex;flex-direction:column;gap:8px;margin-top:12px}
-.proporcao-linha{display:grid;grid-template-columns:minmax(0,1fr) 40px 52px 40px 82px;align-items:center;gap:6px;
-  padding:10px;border:1px solid var(--borda);border-radius:10px}
+.proporcao-linha{display:grid;grid-template-columns:minmax(0,1fr) 40px 52px 40px 48px 82px;align-items:center;gap:6px;
+  padding:10px;border:1px solid var(--borda);border-radius:10px;background:var(--fundo)}
+.proporcao-n{width:100%;height:40px;margin:0;padding:0 2px;box-sizing:border-box;text-align:center;font:inherit;font-weight:700;
+  font-variant-numeric:tabular-nums;color:var(--texto);background:var(--fundo-3);border:1px solid var(--borda);border-radius:8px;
+  -moz-appearance:textfield;appearance:textfield}
+.proporcao-n::-webkit-inner-spin-button,.proporcao-n::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.proporcao-n:focus{outline:0;border-color:var(--acento)}
 .proporcao-linha.pausada{opacity:.68}
 .proporcao-info{display:flex;flex-direction:column;min-width:0}
 .proporcao-info strong{overflow-wrap:anywhere}
 .proporcao-info span{font-size:12.5px;color:var(--texto-2)}
 .proporcao-botao{min-width:0;height:40px;padding:0;margin:0}
 .proporcao-pausa{font-size:13px}
-.proporcao-pct{text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.proporcao-pct{text-align:center;font-size:13.5px;color:var(--texto-2);font-variant-numeric:tabular-nums}
 .proporcao-pe{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px;color:var(--texto-2)}
 @media (max-width:420px){
-  .proporcao-linha{grid-template-columns:40px 52px 40px minmax(0,1fr)}
+  .proporcao-linha{grid-template-columns:40px 52px 40px minmax(0,1fr) 82px}
   .proporcao-info{grid-column:1/-1}
 }
