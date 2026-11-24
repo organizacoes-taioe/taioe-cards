@@ -1018,7 +1018,7 @@ window.TaioeCardsApp = function (ctx) {
     if (!proporcaoAtual()) {
       const ja = new Set(comecados.concat([ctx.curso]));
       /* data antiga de propósito: a divisão inicial nunca passa por cima de uma escolha gravada */
-      fluxo.proporcao = Object.assign(TaioeCiclo.iguais(ORDEM_FLUXO.filter(k => ja.has(k))), { em: '2000-01-01T00:00:00.000Z' });
+      fluxo.proporcao = Object.assign(TaioeCiclo.inicial(ORDEM_FLUXO.filter(k => ja.has(k))), { em: '2000-01-01T00:00:00.000Z' });
     }
     gravarFluxo();
     if (!el['tela-proporcao'].classList.contains('oculto')) desenharProporcao();
@@ -1085,8 +1085,9 @@ window.TaioeCardsApp = function (ctx) {
     if (ver) el['aviso-ciclo'].textContent = t('ciclo.aviso', { L: ctx.nomeDoCurso(ctx.curso), n: r.feitos + 1, total: p.cotas[ctx.curso] });
   }
 
-  /* ── a página da proporção ── */
-  function mudarProporcao(nova) {
+  /* ── a página do ciclo (desde 24/11: a quantidade de cada língua; o ciclo é a soma) ── */
+  function mudarProporcao(nova, atual) {
+    if (nova === atual) { desenharProporcao(); return; }  // recusada (a última ligada não zera): volta o número
     fluxo.proporcao = Object.assign({}, nova, { em: new Date().toISOString() });
     gravarFluxo();
     montarCursosDoTopo(cursosComecados);
@@ -1094,41 +1095,70 @@ window.TaioeCardsApp = function (ctx) {
   }
   function desenharProporcao() {
     const caixa = el['proporcao-conteudo'];
-    const p = proporcaoAtual() || TaioeCiclo.iguais([ctx.curso]);
+    const p = proporcaoAtual() || TaioeCiclo.inicial([ctx.curso]);
     const ligadas = TaioeCiclo.ativos(p, ORDEM_FLUXO).length;
+    /* a ordem segue a quantidade, e muda com o clique: guarda onde cada linha estava e quem tinha o
+       foco, para a linha deslizar até o lugar novo e o foco seguir com ela */
+    const topoAntes = new Map();
+    caixa.querySelectorAll('.proporcao-linha').forEach(l => topoAntes.set(l.dataset.curso, l.getBoundingClientRect().top));
+    const ativo = document.activeElement;
+    const foco = ativo && caixa.contains(ativo) && ativo.dataset.acao
+      ? { curso: ativo.closest('.proporcao-linha').dataset.curso, acao: ativo.dataset.acao } : null;
     caixa.textContent = '';
-    ORDEM_FLUXO.forEach(k => {
+    TaioeCiclo.ordenada(p, ORDEM_FLUXO).forEach(k => {
       const cota = p.cotas[k] || 0;
+      const pausada = !cota && !!(p.antes && p.antes[k]);
       const nome = ctx.nomeDoCurso(k);
       const linha = document.createElement('div');
       linha.className = 'proporcao-linha' + (cota ? '' : ' pausada');
+      linha.dataset.curso = k;
       const info = document.createElement('div');
       info.className = 'proporcao-info';
       const n = document.createElement('strong');
       n.textContent = nome;
       const d = document.createElement('span');
-      d.textContent = cota ? tn('proporcao.porCiclo', cota) : t('proporcao.pausada');
+      d.textContent = cota ? tn('proporcao.porCiclo', cota) : t(pausada ? 'proporcao.pausada' : 'proporcao.fora');
       info.append(n, d);
-      const botao = (txt, rotulo, acao, off) => {
+      const botao = (txt, rotulo, acao, off, qual) => {
         const b = document.createElement('button');
         b.className = 'secundario proporcao-botao';
         b.textContent = txt;
         b.setAttribute('aria-label', rotulo);
+        b.dataset.acao = qual;
         b.disabled = !!off;
-        b.addEventListener('click', acao);
+        b.addEventListener('click', () => mudarProporcao(acao(), p));
         return b;
       };
       const unica = cota > 0 && ligadas === 1;
+      const quantos = document.createElement('input');
+      quantos.type = 'number';
+      quantos.inputMode = 'numeric';
+      quantos.min = '0';
+      quantos.max = String(TaioeCiclo.MAX);
+      quantos.step = '1';
+      quantos.value = String(cota);
+      quantos.className = 'proporcao-n';
+      quantos.dataset.acao = 'n';
+      quantos.setAttribute('aria-label', t('proporcao.quantos', { L: nome }));
+      quantos.addEventListener('focus', () => quantos.select());
+      quantos.addEventListener('keydown', e => { if (e.key === 'Enter') quantos.blur(); });
+      quantos.addEventListener('change', () => {
+        const v = quantos.value.trim();
+        mudarProporcao(v === '' ? p : TaioeCiclo.definir(p, ORDEM_FLUXO, k, Number(v)), p);
+      });
       const pct = document.createElement('output');
       pct.className = 'proporcao-pct';
       pct.textContent = TaioeCiclo.percentual(p, ORDEM_FLUXO, k) + '%';
-      const pausa = botao(t(cota ? 'proporcao.pausar' : 'proporcao.retomar'), t(cota ? 'proporcao.pausar' : 'proporcao.retomar') + ': ' + nome,
-        () => mudarProporcao(cota ? TaioeCiclo.pausar(p, ORDEM_FLUXO, k) : TaioeCiclo.ajustar(p, ORDEM_FLUXO, k, 1)), unica);
+      let pausa;
+      if (cota) pausa = botao(t('proporcao.pausar'), t('proporcao.pausar') + ': ' + nome, () => TaioeCiclo.pausar(p, ORDEM_FLUXO, k), unica, 'pausa');
+      else if (pausada) pausa = botao(t('proporcao.retomar'), t('proporcao.retomar') + ': ' + nome, () => TaioeCiclo.retomar(p, ORDEM_FLUXO, k), false, 'pausa');
+      else pausa = document.createElement('span');
       pausa.classList.add('proporcao-pausa');
       linha.append(info,
-        botao('−', t('proporcao.menos', { L: nome }), () => mudarProporcao(TaioeCiclo.ajustar(p, ORDEM_FLUXO, k, -1)), !cota || unica),
+        botao('−', t('proporcao.menos', { L: nome }), () => TaioeCiclo.ajustar(p, ORDEM_FLUXO, k, -1), !cota || (unica && cota === 1), 'menos'),
+        quantos,
+        botao('+', t('proporcao.mais', { L: nome }), () => TaioeCiclo.ajustar(p, ORDEM_FLUXO, k, 1), cota >= TaioeCiclo.MAX, 'mais'),
         pct,
-        botao('+', t('proporcao.mais', { L: nome }), () => mudarProporcao(TaioeCiclo.ajustar(p, ORDEM_FLUXO, k, 1)), cota >= TaioeCiclo.total(p, ORDEM_FLUXO)),
         pausa);
       caixa.appendChild(linha);
     });
@@ -1136,13 +1166,19 @@ window.TaioeCardsApp = function (ctx) {
     pe.className = 'proporcao-pe';
     const ciclo = document.createElement('span');
     ciclo.textContent = t('proporcao.ciclo', { n: TaioeCiclo.total(p, ORDEM_FLUXO) });
-    const igual = document.createElement('button');
-    igual.className = 'secundario';
-    igual.textContent = t('proporcao.igual');
-    igual.disabled = !!p.igual;
-    igual.addEventListener('click', () => mudarProporcao(TaioeCiclo.iguais(TaioeCiclo.ativos(p, ORDEM_FLUXO))));
-    pe.append(ciclo, igual);
+    pe.append(ciclo);
     caixa.appendChild(pe);
+    if (foco) {
+      const linha = caixa.querySelector('.proporcao-linha[data-curso="' + CSS.escape(foco.curso) + '"]');
+      const alvo = linha && (linha.querySelector('[data-acao="' + foco.acao + '"]:not([disabled])') || linha.querySelector('[data-acao="n"]'));
+      if (alvo && foco.acao !== 'n') alvo.focus({ preventScroll: true });
+    }
+    const calmo = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (calmo || !topoAntes.size) return;
+    caixa.querySelectorAll('.proporcao-linha').forEach(l => {
+      const dy = (topoAntes.get(l.dataset.curso) ?? l.getBoundingClientRect().top) - l.getBoundingClientRect().top;
+      if (Math.abs(dy) > 1 && l.animate) l.animate([{ transform: 'translateY(' + dy + 'px)' }, { transform: 'none' }], { duration: 220, easing: 'ease-out' });
+    });
   }
   function abrirProporcao() {
     desenharProporcao();
