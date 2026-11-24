@@ -2333,6 +2333,10 @@ window.TaioeCardsApp = function (ctx) {
   }
 
   let rolagemAtual = null;
+  /* Quando a última rolagem animada parou. O «Comentar» ignora o toque que chega durante
+     ela ou logo depois: a tela desliza debaixo do dedo e o toque cai nele sem querer
+     (relato do Gere, 24/11). */
+  let fimDaRolagem = 0;
 
   /* Quanto a tela cresce quando a barra do navegador se recolhe: a altura grande (100lvh, ou
      100vh, que no Chrome do celular já é a grande) menos a de agora, e uns pixels de margem. */
@@ -2403,6 +2407,7 @@ window.TaioeCardsApp = function (ctx) {
         const novo = Math.max(0, Math.ceil(pad - sobra + folgaDaBarra()));
         chao.style.paddingBottom = novo ? novo + 'px' : '';
       }
+      fimDaRolagem = Date.now();
       if (rolagemAtual === controle) rolagemAtual = null;
       if ((concluiu || sempre) && aoTerminar) aoTerminar();
     }
@@ -2462,7 +2467,7 @@ window.TaioeCardsApp = function (ctx) {
 
   function trazerBotaoParaAVista() {
     const alvo = el['btn-proximo'].classList.contains('oculto')
-      ? el['area-julgamento'] : el['btn-comentar-card'];   // o «Comentar» fica logo abaixo do «Próximo»
+      ? el['area-julgamento'] : el['btn-proximo'];
     if (!alvo) return;
     /* O alvo tem dois lados. Se a tela cresce no meio do caminho — o teclado
        que fecha tarde, a barra do navegador que some —, o que já se desceu
@@ -3639,7 +3644,10 @@ window.TaioeCardsApp = function (ctx) {
   el['btn-proximo'].addEventListener('click', avancar);
   el['btn-contestar'].addEventListener('click', contestar);
 
-  el['btn-comentar-card'].addEventListener('click', () => cardAtual && abrirComentario(cardAtual.id));
+  el['btn-comentar-card'].addEventListener('click', () => {
+    if (rolagemAtual || Date.now() - fimDaRolagem < 600) return;   // toque sem querer, com a tela andando
+    if (cardAtual) abrirComentario(cardAtual.id);
+  });
   /* delegado: a lista se redesenha a cada filtro, e religar ouvinte a ouvinte
      em 458 linhas seria trabalho à toa */
   el['lista-cards'].addEventListener('click', e => {
