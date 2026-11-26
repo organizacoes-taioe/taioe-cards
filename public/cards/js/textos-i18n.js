@@ -140,6 +140,8 @@ window.TAIOE_TEXTOS = {
     'aviso.foraDaPergunta.construcao': 'A pergunta é a <b>construção</b>. Tente de novo.',
     'aviso.acento': 'atenção ao acento: <b>{x}</b>',
     'aviso.regiao': '🌎 {forma} é como se diz {onde}. A forma deste card é {certa}.',
+    'aviso.irma': '🌎 {forma} é como se diz {onde}. Este card pede a forma usada {aqui}: {certa}.',
+    'card.regiao': 'Forma usada em: {x}',
 
     'nota.masculino': 'No masculino', 'nota.feminino': 'No feminino',
     'nota.outraForma': '🔁 {g}: «{x}» — {y}',
@@ -412,7 +414,7 @@ window.TAIOE_TEXTOS = {
 
     /* os lugares das formas regionais (ver TaioeI18n.lugar): no português,
        o próprio nome; nas outras línguas, com o artigo quando ele cabe */
-    'lugar.em': 'em', 'lugar.boaParte': 'boa parte de {x}', 'lugar.outrosPaises': 'outros países de {x}',
+    'lugar.em': 'em', 'lugar.boaParte': 'boa parte de {x}', 'lugar.outrosPaises': 'outros países de {x}', 'lugar.quaseToda': 'quase toda a {x}', 'lugar.parte': 'parte de {x}',
     'lugar.América Latina': 'América Latina', 'lugar.América do Sul': 'América do Sul',
     'lugar.América Central': 'América Central', 'lugar.América do Norte': 'América do Norte',
     'lugar.Andes': 'Andes', 'lugar.Caribe': 'Caribe', 'lugar.Canárias': 'Canárias',
@@ -566,6 +568,8 @@ window.TAIOE_TEXTOS = {
     'aviso.foraDaPergunta.construcao': 'La pregunta es la <b>construcción</b>. Inténtalo de nuevo.',
     'aviso.acento': 'atención a la tilde: <b>{x}</b>',
     'aviso.regiao': '🌎 {forma} es como se dice {onde}. La forma de esta tarjeta es {certa}.',
+    'aviso.irma': '🌎 {forma} es como se dice {onde}. Esta tarjeta pide la forma que se usa {aqui}: {certa}.',
+    'card.regiao': 'Forma usada en: {x}',
 
     'nota.masculino': 'En masculino', 'nota.feminino': 'En femenino',
     'nota.outraForma': '🔁 {g}: «{x}» — {y}',
@@ -835,7 +839,7 @@ window.TAIOE_TEXTOS = {
     'sinc.cursoFechado': 'Este curso no está abierto en el servidor. Las respuestas quedan guardadas aquí.',
     'sinc.limite': 'Llegaste al límite de respuestas por día. Las nuevas quedan guardadas aquí y se suben mañana.',
 
-    'lugar.em': 'en', 'lugar.boaParte': 'buena parte de {x}', 'lugar.outrosPaises': 'otros países de {x}',
+    'lugar.em': 'en', 'lugar.boaParte': 'buena parte de {x}', 'lugar.outrosPaises': 'otros países de {x}', 'lugar.quaseToda': 'casi toda {x}', 'lugar.parte': 'parte de {x}',
     'lugar.América Latina': 'América Latina', 'lugar.América do Sul': 'América del Sur',
     'lugar.América Central': 'Centroamérica', 'lugar.América do Norte': 'América del Norte',
     'lugar.Andes': 'los Andes', 'lugar.Caribe': 'el Caribe', 'lugar.Canárias': 'Canarias',
@@ -989,6 +993,8 @@ window.TAIOE_TEXTOS = {
     'aviso.foraDaPergunta.construcao': 'The question is the <b>construction</b>. Try again.',
     'aviso.acento': 'watch the accent: <b>{x}</b>',
     'aviso.regiao': '🌎 {forma} is how people say it {onde}. This card uses {certa}.',
+    'aviso.irma': '🌎 {forma} is how people say it {onde}. This card asks for the form used {aqui}: {certa}.',
+    'card.regiao': 'Form used in: {x}',
 
     'nota.masculino': 'Masculine', 'nota.feminino': 'Feminine',
     'nota.outraForma': '🔁 {g}: “{x}” — {y}',
@@ -1258,7 +1264,7 @@ window.TAIOE_TEXTOS = {
     'sinc.cursoFechado': 'This course isn’t open on the server. Your answers stay saved here.',
     'sinc.limite': 'You’ve reached the daily answer limit. New answers stay saved here and upload tomorrow.',
 
-    'lugar.em': 'in', 'lugar.boaParte': 'much of {x}', 'lugar.outrosPaises': 'other countries in {x}',
+    'lugar.em': 'in', 'lugar.boaParte': 'much of {x}', 'lugar.outrosPaises': 'other countries in {x}', 'lugar.quaseToda': 'almost all of {x}', 'lugar.parte': 'parts of {x}',
     'lugar.América Latina': 'Latin America', 'lugar.América do Sul': 'South America',
     'lugar.América Central': 'Central America', 'lugar.América do Norte': 'North America',
     'lugar.Andes': 'the Andes', 'lugar.Caribe': 'the Caribbean', 'lugar.Canárias': 'the Canary Islands',

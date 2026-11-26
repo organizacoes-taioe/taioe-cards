@@ -35,6 +35,7 @@
   --erro-borda:rgba(240,121,111,.42);
   --quase-fraco:rgba(242,212,137,.09);
   --quase-borda:rgba(242,212,137,.34);
+  --regiao-vazio:rgba(139,163,157,.24);   /* o país do mapa onde a forma não se usa */
 
   --raio:15px;
   --sombra:0 1px 0 rgba(255,255,255,.05), 0 10px 26px -12px #000;
@@ -252,6 +253,14 @@ button{font:inherit}
   color:#fff;overflow-wrap:break-word;flex:1;
 }
 .termo.frase{font-size:23px;font-style:italic}
+/* a forma de um lugar só (manual §5.4): o mapa de quadradinhos dos países da língua, com os do
+   card pintados, e o nome da região embaixo. Um quadradinho por país, na posição aproximada:
+   os pequenos ficam do tamanho dos grandes, e por isso se veem */
+.regiao{flex:none;margin:4px 0 0;display:flex;flex-direction:column;align-items:center;gap:5px;max-width:104px}
+.regiao-mapa{display:grid;grid-template-columns:repeat(8,10px);grid-template-rows:repeat(7,10px);gap:2px}
+.regiao-mapa span{border-radius:2px;background:var(--regiao-vazio)}
+.regiao-mapa span.usa{background:var(--acento);border-color:var(--acento)}
+.regiao-nome{font-size:11.5px;line-height:1.25;color:var(--texto-2);text-align:center}
 /* o card de conceito do latim: a palavra perguntada, no exemplo */
 .termo mark.destaque{background:var(--acento-fraco);color:inherit;border-bottom:2px solid var(--acento);
   border-radius:3px;padding:0 2px;font-style:normal}

@@ -42,5 +42,7 @@ jobs:
         run: node fonte/testar-leitura.js
       - name: "O «deu quase»: um erro, ou até 20% das letras"
         run: node fonte/testar-quase.js
+      - name: "As variantes de cada lugar: a irmã é quase, o mapa tem região"
+        run: node fonte/testar-variantes.js
       - name: "O fluxo único das línguas: ciclo, proporção e posição"
         run: node fonte/testar-ciclo.js

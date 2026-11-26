@@ -610,8 +610,10 @@ window.Motor = (function () {
     const lingua = linguaDaResposta(direcao);
     const campo = CAMPOS[lingua];
     const certa = String(card[campo.certa] || '');
-    /* a variante regional vale como resposta certa (ver regionalDoCard) */
-    const extras = (card[campo.aceitas] || []).concat(Object.keys(card[campo.regionais] || {}));
+    /* a variante regional vale como resposta certa (ver regionalDoCard), menos a irmã, que tem
+       card próprio e aqui é o «deu quase» (ver irmaDoCard) */
+    const irmas = card.irmaos || [];
+    const extras = (card[campo.aceitas] || []).concat(Object.keys(card[campo.regionais] || {}).filter(f => !irmas.includes(f)));
     /* o gabarito é da língua de quem responde: na ida, nunca da língua ensinada */
     const gabarito = card.gabarito && lingua !== idiomaDoCard(card) ? expandirGabarito(card.gabarito) : [];
 
@@ -1011,6 +1013,31 @@ window.Motor = (function () {
     return null;
   }
 
+  /* ── a irmã de outro lugar ──
+     Desde 26/11/2026 a forma de cada lugar pode ter card próprio, com o mapa dos países
+     onde se usa («paises», manual §5.4): «el móvil» na Espanha e «el celular» na América
+     Latina. A volta pergunta «o celular» com o mapa pintado, e escrever a forma do outro
+     lugar não é a resposta pedida. O build grava as irmãs em «irmaos» (as formas de
+     «regionaisEs» que são o texto de outro card com países). A régua é a do funil, e o
+     erro de digitação na irmã também conta: «el celuar» no card da Espanha. */
+  function irmaDoCard(card, texto, direcao) {
+    const irmas = (card && card.irmaos) || [];
+    if (!irmas.length) return null;
+    const lingua = linguaDaResposta(direcao);
+    if (lingua !== idiomaDoCard(card)) return null;
+    const dado = semAcento(normalizar(texto, lingua));
+    if (!dado) return null;
+    const mapa = card[CAMPOS[lingua].regionais] || {};
+    const achou = forma => ({ forma: forma, onde: mapa[forma] || '', certa: String(card[CAMPOS[lingua].certa] || '').trim(), aqui: card.ondeRegiao || '' });
+    const exata = irmas.find(f => semAcento(normalizar(f, lingua)) === dado);
+    if (exata) return achou(exata);
+    /* o erro de digitação na irmã, se não for também perto da forma pedida */
+    const minhas = respostasAceitas(card, direcao).map(semAcento);
+    if (minhas.some(a => parecido(dado, a, lingua))) return null;
+    const perto = irmas.find(f => parecido(dado, semAcento(normalizar(f, lingua)), lingua));
+    return perto ? achou(perto) : null;
+  }
+
   /* ── certo, mas não é a palavra do card ──
      «currar» é trabalhar, na gíria da Espanha. Na volta, a pergunta é
      «trabalhar», e quem escreve «trabajar» acertou o espanhol — só não o
@@ -1289,6 +1316,11 @@ window.Motor = (function () {
     }
 
     if (aceitas.includes(dado)) return 'certo';
+
+    /* A forma irmã, de outro lugar, que tem card próprio: «el celular» no card que pede a da
+       Espanha. Não é erro, mas também não é a forma pedida: quem julga é a pessoa, com o aviso
+       de onde ela se usa (pedido do Gere, 26/11/2026). */
+    if (irmaDoCard(card, texto, direcao)) return 'quase';
 
     /* Faltou só o acento: conta como certo. Quem avisa é o app. */
     if (acentoRelevado(card, texto, direcao)) return 'certo';
@@ -3918,6 +3950,9 @@ window.Motor = (function () {
   let DO_VERSO = Object.create(null);     // id da compreensão sobre um trecho de texto → true
   let FLEXAO_DE_CASO = Object.create(null); // id → true: a flexão de nome, que pergunta o caso
   let FALSO_AMIGO = Object.create(null);  // id → true
+  /* a forma de um lugar com irmã de outro (manual §5.4): saber uma não diz que se sabe a outra, e
+     por isso nenhuma das duas nasce presumida pela divisa da lista */
+  let COM_IRMA = Object.create(null);     // id → true
   let DIVISA = 0;                         // nivelamento.divisa (0: sem nivelamento pela lista)
   let FORA_DA_DIVISA = Object.create(null); // nivelamento.fora: antes da divisa, mas não presumidos
   let UID = '';                           // para a data do presumido pela divisa
@@ -3932,6 +3967,7 @@ window.Motor = (function () {
     DO_VERSO = Object.create(null);
     FLEXAO_DE_CASO = Object.create(null);
     FALSO_AMIGO = Object.create(null);
+    COM_IRMA = Object.create(null);
     LEITURA = Object.create(null);
     ESCOLHER = Object.create(null);
     RESPOSTA_DA_FORMA = Object.create(null);
@@ -3963,6 +3999,7 @@ window.Motor = (function () {
       TIPO[c.id] = c.tipo;
       if (c.tipo === 'compreensao' && /^la-t/.test(c.de || '')) DO_VERSO[c.id] = true;
       if (temTag(c, ['falso-amigo'])) FALSO_AMIGO[c.id] = true;
+      if (Array.isArray(c.irmaos) && c.irmaos.length) COM_IRMA[c.id] = true;
     });
   }
 
@@ -4660,7 +4697,7 @@ window.Motor = (function () {
       if (!c || c.tipo !== 'palavra' || !POS[c.id]) return;
       const antes = POS[c.id] < divisa;
       if (!antes && !sim.has(c.id)) return;
-      const pode = !FALSO_AMIGO[c.id] && transparencia(c) !== 'total' &&
+      const pode = !FALSO_AMIGO[c.id] && !COM_IRMA[c.id] && transparencia(c) !== 'total' &&
         !(estados[c.id] && estados[c.id].vistas) && !arquivado(c.id, arquivados) && !nao.has(c.id);
       if (pode) presumidos[c.id] = dataDoPresumido(o.uid, c.id, agora);
       else if (antes) fora.push(c.id);
@@ -4850,7 +4887,7 @@ window.Motor = (function () {
      antes da divisa, nasce presumido sozinho — menos o falso amigo e o que
      o teste deixou de fora. */
   function pelaDivisa(id) {
-    return !!(DIVISA && POS[id] && POS[id] < DIVISA && !FORA_DA_DIVISA[id] && !FALSO_AMIGO[id] && TIPO[id] === 'palavra');
+    return !!(DIVISA && POS[id] && POS[id] < DIVISA && !FORA_DA_DIVISA[id] && !FALSO_AMIGO[id] && !COM_IRMA[id] && TIPO[id] === 'palavra');
   }
 
   const nivelamentoLista = {
@@ -4945,7 +4982,7 @@ window.Motor = (function () {
     ACERTOS_QUE_SOLTAM,
     DIA_DAS_TERMINACOES, ativoDaTerminacao, flexaoPuxada, adormecido, quemConta, exemploDaTerminacao,
     erroDeGenero, formasAceitas, LIMITES, cortar,
-    porExtenso, linguaTrocada, sinonimoDoCard, regionalDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
+    porExtenso, linguaTrocada, sinonimoDoCard, regionalDoCard, irmaDoCard, espanhoisDoCard, erroDeEne, acentoRelevado, acentoFaltando, diferencaDoQuase,
     indiceEspanhol, leituraEspanhola, erroDeFlexao,
     descontoDePassos, acertosParaVirar, ACERTOS_PARA_VIRAR,
     linguaDaPergunta, linguaDaResposta,

@@ -199,12 +199,115 @@ for (const b of baralhos) {
   b.textos.sort((x, y) => (typeof x.ordem === 'number' ? x.ordem : 1e9) - (typeof y.ordem === 'number' ? y.ordem : 1e9));
 }
 
+/* ── as variantes de cada lugar (manual §5.4, pedido do Gere de 26/11/2026) ──
+   O card de palavra que só se diz em parte do mundo da língua leva «paises»: os códigos dos
+   países onde aquela forma é a de todo dia. «AL» é a América Latina inteira, e «-AR» tira um
+   país da conta («["AL", "-AR", "-UY"]»). O app pinta esses países no mapa de quadradinhos
+   do card. O nome da região, que vai embaixo do mapa, sai daqui («Espanha», «América
+   Latina», «Argentina e Uruguai») ou vem escrito no card, em «regiao», quando a lista é
+   longa demais para nomear país por país.
+   Duas formas do mesmo sentido com card próprio («el móvil» na Espanha, «el celular» na
+   América Latina) são irmãs: cada uma cita a outra em «regionaisEs», e o build grava em
+   «irmaos» as formas irmãs de cada card. Escrever a irmã no card que pede a outra não é
+   acerto: é o «deu quase», com o aviso de onde ela se usa (Motor.irmaDoCard). */
+const PAISES = {
+  es: {
+    ES: ['Espanha', 'na'], MX: ['México', 'no'], GT: ['Guatemala', 'na'], HN: ['Honduras', 'em'],
+    SV: ['El Salvador', 'em'], NI: ['Nicarágua', 'na'], CR: ['Costa Rica', 'na'], PA: ['Panamá', 'no'],
+    CU: ['Cuba', 'em'], DO: ['República Dominicana', 'na'], PR: ['Porto Rico', 'em'],
+    VE: ['Venezuela', 'na'], CO: ['Colômbia', 'na'], EC: ['Equador', 'no'], PE: ['Peru', 'no'],
+    BO: ['Bolívia', 'na'], PY: ['Paraguai', 'no'], CL: ['Chile', 'no'], AR: ['Argentina', 'na'],
+    UY: ['Uruguai', 'no']
+  }
+};
+const AMERICA_LATINA = ['MX', 'GT', 'HN', 'SV', 'NI', 'CR', 'PA', 'CU', 'DO', 'PR', 'VE', 'CO', 'EC', 'PE', 'BO', 'PY', 'CL', 'AR', 'UY'];
+const ORDEM_DOS_NOMES = ['ES', 'MX', 'AR', 'UY', 'PY', 'CL', 'BO', 'PE', 'EC', 'CO', 'VE', 'GT', 'HN', 'SV', 'NI', 'CR', 'PA', 'CU', 'DO', 'PR'];
+const errosDosPaises = [];
+function expandirPaises(lista, idioma, onde) {
+  const nomes = PAISES[idioma];
+  if (!nomes) { errosDosPaises.push('«paises» só existe no espanhol por enquanto: ' + onde); return null; }
+  if (!Array.isArray(lista) || !lista.length) { errosDosPaises.push('«paises» tem de ser uma lista de códigos: ' + onde); return null; }
+  const saida = new Set();
+  for (const x of lista) {
+    const tira = typeof x === 'string' && x[0] === '-';
+    const cod = tira ? x.slice(1) : x;
+    const grupo = cod === 'AL' ? AMERICA_LATINA : nomes[cod] ? [cod] : null;
+    if (!grupo) { errosDosPaises.push('código de país desconhecido em «paises»: ' + onde + ' → ' + x); continue; }
+    grupo.forEach(p => tira ? saida.delete(p) : saida.add(p));
+  }
+  /* na ordem do mapa, para o card sair igual em toda máquina */
+  return Object.keys(nomes).filter(p => saida.has(p));
+}
+function nomeDaRegiao(paises, idioma) {
+  const nomes = PAISES[idioma];
+  const al = AMERICA_LATINA.filter(p => paises.includes(p));
+  const temEs = paises.includes('ES');
+  if (al.length === AMERICA_LATINA.length) return temEs ? 'Espanha e América Latina' : 'América Latina';
+  if (paises.length > 3) return null;
+  /* na ordem de dizer, e não na do mapa: «Argentina, Uruguai e Paraguai» */
+  const n = paises.slice().sort((a, b) => ORDEM_DOS_NOMES.indexOf(a) - ORDEM_DOS_NOMES.indexOf(b)).map(p => nomes[p][0]);
+  return n.length < 2 ? n[0] : n.slice(0, -1).join(', ') + ' e ' + n[n.length - 1];
+}
+/* o nome com a preposição, para caber na frase do aviso: «na Espanha», «no México», «na
+   Argentina e no Uruguai», «em boa parte da América Latina» */
+function ondeDaRegiao(nome, idioma) {
+  const porNome = new Map(Object.values(PAISES[idioma] || {}).map(([n, p]) => [n, p]));
+  const partes = nome.split(/, | e /);
+  const saida = [];
+  for (const parte of partes) {
+    if (porNome.has(parte)) saida.push(porNome.get(parte) + ' ' + parte);
+    else if (/^América /.test(parte)) saida.push('na ' + parte);
+    else if (/^(boa parte|quase toda|parte) /.test(parte)) saida.push('em ' + parte);
+    else if (parte === 'Caribe') saida.push('no ' + parte);
+    else return null;
+  }
+  return saida.length < 2 ? saida[0] : saida.slice(0, -1).join(', ') + ' e ' + saida[saida.length - 1];
+}
+for (const b of baralhos) {
+  const L = CAMPOS_DA_LINGUA[b.idioma];
+  const campoReg = b.idioma === 'pt' ? 'regionais' : 'regionais' + b.idioma[0].toUpperCase() + b.idioma[1];
+  for (const c of b.cards) {
+    if (c.paises === undefined) continue;
+    const onde = c.id + ' (' + c[L.texto] + ')';
+    if (c.tipo !== 'palavra') { errosDosPaises.push('«paises» só em card de palavra: ' + onde); continue; }
+    const p = expandirPaises(c.paises, b.idioma, onde);
+    if (!p) continue;
+    if (!p.length) { errosDosPaises.push('«paises» sem nenhum país: ' + onde); continue; }
+    c.paises = p;
+    const nome = c.regiao || nomeDaRegiao(p, b.idioma);
+    if (!nome) { errosDosPaises.push('«paises» com mais de três países pede o nome da região em «regiao»: ' + onde); continue; }
+    c.regiao = nome;
+    const comPrep = ondeDaRegiao(nome, b.idioma);
+    if (!comPrep) errosDosPaises.push('região sem preposição conhecida: ' + onde + ' → «' + nome + '» (use nomes de país, «América …», «boa parte da …»)');
+    else c.ondeRegiao = comPrep;
+  }
+  /* as irmãs: a forma regional de um card que é o texto de outro card com «paises» */
+  const comPaises = new Map();
+  for (const c of b.cards) if (Array.isArray(c.paises)) comPaises.set(Motor.normalizar(c[L.texto], b.idioma), c);
+  for (const c of b.cards) {
+    if (!Array.isArray(c.paises) || !c[campoReg]) continue;
+    const irmas = Object.keys(c[campoReg]).filter(f => {
+      const outro = comPaises.get(Motor.normalizar(f, b.idioma));
+      return outro && outro !== c;
+    });
+    if (irmas.length) c.irmaos = irmas;
+  }
+  /* e a irmã tem de citar de volta: senão um card avisa e o outro não */
+  for (const c of b.cards) {
+    for (const f of c.irmaos || []) {
+      const outro = comPaises.get(Motor.normalizar(f, b.idioma));
+      const volta = Object.keys(outro[campoReg] || {}).some(g => Motor.normalizar(g, b.idioma) === Motor.normalizar(c[L.texto], b.idioma));
+      if (!volta) errosDosPaises.push('variante irmã que não cita de volta: ' + outro.id + ' (' + outro[L.texto] + ') não tem «' + c[L.texto] + '» em ' + campoReg);
+    }
+  }
+}
+
 /* ── validação ──
    Duas passagens iguais: uma sobre a resposta portuguesa, outra sobre a
    inglesa. O inglês é opcional enquanto a tradução avança leva a leva —
    card sem nenhum campo inglês passa batido; card com alguns e não todos
    é erro, porque aí é tradução pela metade. */
-const erros = [];
+const erros = errosDosPaises;
 const avisos = [];
 const ids = new Set();
 
@@ -753,7 +856,16 @@ for (const { idioma, cards } of baralhos) {
   /* no latim, a palavra das primeiras frases (que não prendem nada) também está em uso */
   if (idioma === 'la') cards.forEach(c => (c.palavras || []).forEach(p => { if (p.c) comFrase.add(p.c); }));
   /* o card de leitura (PLANO.md, 9.2) não tem frase de uso, de propósito */
-  const soltas = cards.filter(c => c.tipo === 'palavra' && !c.leitura && !comFrase.has(c.id));
+  /* a forma de um lugar (manual §5.4) usa as frases das outras formas do mesmo sentido, que já a
+     aceitam: a irmã, ou a forma de todo lugar que o card põe entre os sinônimos («el billete» no
+     card de «el boleto») */
+  const porTexto = new Map(cards.map(c => [Motor.normalizar(c[L.texto] || '', idioma), c]));
+  const campoSinF = idioma === 'pt' ? 'sinonimos' : 'sinonimos' + idioma[0].toUpperCase() + idioma[1];
+  const temIrmaComFrase = c => Array.isArray(c.paises) && (c.irmaos || []).concat(c[campoSinF] || []).some(f => {
+    const o = porTexto.get(Motor.normalizar(f, idioma));
+    return o && comFrase.has(o.id);
+  });
+  const soltas = cards.filter(c => c.tipo === 'palavra' && !c.leitura && !comFrase.has(c.id) && !temIrmaComFrase(c));
   if (soltas.length) {
     avisos.push('[' + idioma + '] ' + soltas.length + ' palavra(s) que nenhuma frase usa: ' +
       soltas.map(c => c.id + ' (' + c[L.texto] + ')').join(', '));
