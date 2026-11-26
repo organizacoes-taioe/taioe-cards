@@ -1921,7 +1921,7 @@ window.TaioeCardsApp = function (ctx) {
     /* o destaque de várias palavras seguidas («he comido», «voy a llamar»: os cards de
        gramática do espanhol, 03/11/2026); no italiano o apóstrofo também separa («L'asino»,
        «C'è»), e o do imperativo curto entra no destaque («Fa'», 08/11/2026) */
-    const partes = String(palavra).trim().split(/[\s'’]+/).filter(Boolean);
+    const partes = String(palavra).trim().split(/[\s'’-]+/).filter(Boolean);
     const alvo = chave(partes[0] || palavra);
     if (partes.length > 1) {
       const toks = [];
