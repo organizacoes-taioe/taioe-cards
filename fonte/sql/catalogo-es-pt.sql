@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva 133f8956, 2646 cards.
+-- Catálogo do curso es-pt, leva f3323e1c, 2646 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', '133f8956', '2646 cards')
+values ('es-pt', 'f3323e1c', '2646 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -2246,7 +2246,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'g006', 'conceito', 'A1', array['gramática']::text[], null, 'b9a76f82', array['estar + gerúndio: ação em andamento', 'estar: estado ou condição do momento', 'estar: onde algo ou alguém está', 'ser: hora, data ou onde acontece um evento', 'ser: o que a coisa é (identidade, origem, característica)']::text[]),
   ('es-pt', 'g007', 'conceito', 'A1', array['gramática']::text[], null, '32e5565d', array['encurta antes de qualquer substantivo singular, como gran', 'encurta: vem antes de substantivo masculino singular', 'fica inteira: vem antes de substantivo feminino ou plural', 'fica inteira: vem depois do substantivo ou sem ele', 'é advérbio (como bien), por isso não muda']::text[]),
   ('es-pt', 'g008', 'conceito', 'A1', array['gramática']::text[], null, 'e306da92', array['encurta antes de qualquer substantivo singular, como gran', 'encurta: vem antes de substantivo masculino singular', 'fica inteira: vem antes de substantivo feminino ou plural', 'fica inteira: vem depois do substantivo ou sem ele', 'é advérbio (como bien), por isso não muda']::text[]),
-  ('es-pt', 'g009', 'conceito', 'A2', array['gramática']::text[], null, 'fefec6e6', array['mais-que-perfeito', 'presente do indicativo', 'pretérito imperfeito', 'pretérito indefinido', 'pretérito perfeito composto']::text[]),
+  ('es-pt', 'g009', 'conceito', 'A2', array['gramática']::text[], null, '42a3fcfd', array['mais-que-perfeito', 'presente do indicativo', 'pretérito imperfeito', 'pretérito indefinido', 'pretérito perfeito composto']::text[]),
   ('es-pt', 'g010', 'conceito', 'A2', array['gramática']::text[], null, '30b57521', array['imperativo afirmativo', 'imperativo negativo', 'presente do indicativo', 'presente do subjuntivo', 'pretérito indefinido']::text[]),
   ('es-pt', 'g011', 'conceito', 'A2', array['gramática']::text[], null, 'fe6999dc', array['le, les: objeto indireto', 'lo, la: objeto direto', 'se impessoal', 'se no lugar de le (antes de lo, la)', 'se reflexivo']::text[]),
   ('es-pt', 'g012', 'conceito', 'A2', array['gramática']::text[], null, 'fc237d18', array['le, les: objeto indireto', 'lo, la: objeto direto', 'se do acidente (se me cayó)', 'se no lugar de le (antes de lo, la)', 'se reflexivo']::text[]),
