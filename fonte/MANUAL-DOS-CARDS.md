@@ -72,6 +72,10 @@ ela não é do card: é do motor ou da leva inteira.
   corrente de outro lugar — «la computadora», «el carro», «el sartén» — vale
   como resposta certa, e o app diz onde ela se usa (seção 5.2). Palavra ou
   gíria só da Espanha leva a etiqueta `Espanha`.
+- **Cada lugar com a sua palavra** (pedido do Gere, 26/11/2026: «não quero mais
+  me ater à Espanha»). Quando a palavra de todo dia muda de um lugar para outro
+  («el móvil» na Espanha, «el celular» na América Latina), cada forma
+  principal ganha card próprio, com o mapa dos países onde se usa (seção 5.4).
 - **O mais universal primeiro** (decisão do Gere, 07/10/2026). Entre duas
   formas, o card ensina a que é entendida em todo o mundo da língua, e as
   outras entram nas aceitas com o lugar (seção 5.2). Palavra que só se usa
@@ -152,6 +156,7 @@ for, e leva nova é arquivo novo.
 | `aceitasEs` | variantes espanholas igualmente certas (opcional) |
 | `sinonimosEs` | espanhol certo que o card **não** ensina (opcional, seção 5.1) |
 | `regionaisEs` | variante de outro lugar, que vale com aviso: `{ variante: lugar }` (opcional, seção 5.2) |
+| `paises`, `regiao` | os países onde a forma do card se usa, para o mapa (opcional, seção 5.4) |
 | `distratores` | exatamente quatro (seção 6) |
 | `nivel` | `A1` a `C2` |
 | `tags` | temas, todos presentes em `fonte/tags.json` (seção 8) |
@@ -377,6 +382,54 @@ corrente da América vale (pedido do Gere, 07/10/2026), em `regionaisEs`:
 - **«vosotros» nunca é a resposta do card**: o plural é «ustedes», que vale em
   toda parte. «Vosotros» pode entrar nas aceitas, como forma da Espanha.
 
+
+### 5.4 `paises`: a forma de cada lugar, com card próprio
+
+Desde 26/11/2026 (pedido do Gere, contraproposta aprovada com as recomendações)
+a palavra que muda de lugar para lugar tem um card para cada forma principal:
+a da Espanha e a da maior parte da América Latina, e uma terceira só quando o
+México ou a Argentina e o Uruguai têm forma própria e muito usada («la
+cajuela», «la heladera»). A forma de um país só (Peru, Chile, Colômbia)
+continua só aceita, em `regionaisEs`. Leva `50-variantes` (p1446–p1514, 69
+cards, 54 grupos); a tabela que a gerou está em `~/.cache/var-es/` (só neste
+PC).
+
+```json
+"paises": ["AL", "-AR", "-UY"], "regiao": "quase toda a América Latina"
+```
+
+- **`paises`**: os códigos dos países onde aquela forma é a de todo dia. `AL`
+  é a América Latina inteira; `-XX` tira um país. O build expande a lista e
+  grava `regiao` (o nome que vai embaixo do mapa: «Espanha», «América
+  Latina», «Argentina, Uruguai e Paraguai») e `ondeRegiao` (com a
+  preposição, para o aviso). Com mais de três países fora da América Latina
+  inteira, o card escreve `regiao` («boa parte da América do Sul», «México,
+  América Central e parte da América do Sul»): países pelo nome, «América …»,
+  «Caribe», «boa parte da», «quase toda a», «parte da».
+- **O mapa** é de quadradinhos, um por país, na posição aproximada; os do
+  card vêm pintados, e o nome da região embaixo. Aparece nas duas direções:
+  na ida diz onde a palavra se usa; na volta, qual forma o card pede. A forma
+  que não é da Espanha troca a bandeira 🇪🇸 por 🌎.
+- **As irmãs**: cada forma com card cita as outras em `regionaisEs`, com o
+  lugar delas, e o build grava em `irmaos` as que têm card (e barra a irmã que
+  não cita de volta). Na volta, escrever a irmã é o **«deu quase»**, com o
+  aviso «🌎 «el celular» é como se diz na América Latina. Este card pede a
+  forma usada na Espanha: «el móvil».», e quem julga é a pessoa
+  (`Motor.irmaDoCard`). As frases não mudam: continuam aceitando a variante
+  como antes (5.2), e o card de forma de todo lugar («el bolígrafo») também.
+- **A forma de todo lugar** («el bolígrafo», «el billete», «añorar») não
+  ganha `paises`; no card da forma regional ela vai em `sinonimosEs`
+  («certo, mas não é a palavra do card»).
+- **Sem frase própria**: a forma regional usa as frases da irmã ou da forma
+  de todo lugar (o build não avisa); **sem presunção pela divisa da lista**:
+  saber uma forma não diz que se sabe a outra (`COM_IRMA` no motor).
+- **A outra leitura da palavra não vale e não é distrator**: «el foco» (a
+  lâmpada no México) não aceita «o foco»; «la vereda» não aceita «a trilha»,
+  e nenhuma das duas pode estar entre as erradas. A nota conta o outro
+  sentido.
+- **Na lista de frequência**, a forma nova liga à linha que já existe com o
+  mesmo sentido («el celular») ou ganha linha logo depois da irmã.
+- `node fonte/testar-variantes.js` (no CI) confere a irmã, o aviso e a ficha.
 
 ## 6. Distratores
 
@@ -767,6 +820,7 @@ sem ele o navegador serve o baralho velho.
 | Contestação recusada entra na nota do card | `p201` «participar» para `asistir`: quem assiste está presente e pode ficar calado |
 | `sinonimosEs`: certo, mas não é a palavra do card | `p042` currar: «se eu respondesse trabajar, o que aconteceria?» |
 | A variante de outro lugar vale, com aviso | «não vejo motivo para dar tanta exclusividade para a Espanha»: 180 variantes em 138 cards |
+| Cada lugar com a sua palavra, com mapa; a irmã é «deu quase» | 26/11/2026, «não quero mais me ater à Espanha»: `p423` el móvil e `p1509` el celular, leva 50 (69 cards) |
 | A nota mostra a outra forma só quando o `pt` é o mesmo | `f225` «não precisa mostrar o feminino»; `u006` «nesse caso vale» |
 | A forma que tropeça um brasileiro ganha uma linha na nota | `f083` «por que não tem s?»; `f021` «explique esse ponte»; `u014` imperativo de tú |
 | Regra de gramática conferida forma a forma | `v067` «reír perde o e»: o e vira í, e reímos e reís o guardam |

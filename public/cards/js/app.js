@@ -174,7 +174,7 @@ window.TaioeCardsApp = function (ctx) {
     'bandeira-pergunta', 'bandeira-resposta', 'rotulo-resposta-txt', 'bandeira-feedback',
     'area-multipla', 'area-escrita', 'entrada', 'captura', 'btn-responder', 'btn-nao-sei',
     'area-nao-sei-multipla', 'btn-nao-sei-multipla',
-    'aviso-lingua', 'aviso-acento', 'aviso-regiao',
+    'aviso-lingua', 'aviso-acento', 'aviso-regiao', 'regiao-card', 'regiao-mapa', 'regiao-nome',
     'meta-origem',
     'area-feedback', 'veredito', 'conquista', 'resposta-certa', 'caixa-resposta', 'nota', 'medidas',
     'area-julgamento', 'resposta-dada', 'texto-dado',
@@ -1664,6 +1664,39 @@ window.TaioeCardsApp = function (ctx) {
     statusSync(t('sinc.vistoNoOutro'), 'ok');
   }
 
+  /* ── o mapa da forma de um lugar só (manual §5.4, pedido do Gere de 26/11/2026) ──
+     Um quadradinho por país da língua, na posição aproximada do mapa, e pintados os do card
+     («paises», que o build expande). Nas duas direções: na ida diz onde a palavra se usa; na
+     volta, qual das formas o card pede. O nome da região vai embaixo, para o país pequeno que
+     ninguém reconhece pelo quadradinho. */
+  const MAPA_DOS_PAISES = {
+    es: { MX: [0, 0], CU: [2, 0], DO: [3, 0], PR: [4, 0], ES: [7, 0], GT: [0, 1], HN: [1, 1], SV: [0, 2], NI: [1, 2],
+      CR: [1, 3], PA: [2, 3], VE: [3, 3], EC: [1, 4], CO: [2, 4], PE: [1, 5], BO: [2, 5], PY: [3, 5], CL: [1, 6],
+      AR: [2, 6], UY: [3, 6] }
+  };
+  function mostrarRegiao(card) {
+    const mapa = MAPA_DOS_PAISES[L];
+    const paises = card && Array.isArray(card.paises) ? card.paises : null;
+    el['regiao-card'].classList.toggle('oculto', !(mapa && paises));
+    if (!mapa || !paises) return;
+    if (!el['regiao-mapa'].childElementCount) {
+      Object.entries(mapa).forEach(([p, [x, y]]) => {
+        const q = document.createElement('span');
+        q.dataset.p = p;
+        q.style.gridColumn = String(x + 1);
+        q.style.gridRow = String(y + 1);
+        el['regiao-mapa'].appendChild(q);
+      });
+    }
+    el['regiao-mapa'].querySelectorAll('span').forEach(q => q.classList.toggle('usa', paises.includes(q.dataset.p)));
+    const nome = lugarSemPreposicao(card.regiao || '');
+    el['regiao-nome'].textContent = nome;
+    el['regiao-card'].setAttribute('aria-label', t('card.regiao', { x: nome }));
+  }
+  /* o nome da região vem do card em português, sem preposição («América Latina»): a tradução
+     dos lugares (I18N.lugar) trabalha com ela, e aqui ela sai de novo */
+  const lugarSemPreposicao = nome => A === 'pt' ? nome : String(lugar('na ' + nome)).replace(/^\S+\s+/, '');
+
   function proximoCard() {
     if (trocandoDeLingua) return;
     /* o verso que acabou de se abrir aparece antes de a vez passar à outra língua */
@@ -1776,9 +1809,12 @@ window.TaioeCardsApp = function (ctx) {
       : t(cardAtual.tipo === 'palavra' ? 'card.enunciado.idaPalavra'
         : cardAtual.tipo === 'flexao' ? 'card.enunciado.idaFlexao' : 'card.enunciado.idaFrase');
 
-    el['bandeira-pergunta'].textContent = inversa ? BANDEIRA_A : BANDEIRA_L;
-    el['bandeira-resposta'].textContent = inversa ? BANDEIRA_L : BANDEIRA_A;
-    el['bandeira-feedback'].textContent = inversa ? BANDEIRA_L : BANDEIRA_A;
+    /* a forma que não é da Espanha (manual §5.4) troca a bandeira da língua pelo globo: o mapa diz
+       de onde ela é, e a bandeira espanhola ao lado de «la regadera» o contradiria */
+    const bandeiraL = Array.isArray(cardAtual.paises) && MAPA_DOS_PAISES[L] && !cardAtual.paises.includes('ES') ? '🌎' : BANDEIRA_L;
+    el['bandeira-pergunta'].textContent = inversa ? BANDEIRA_A : bandeiraL;
+    el['bandeira-resposta'].textContent = inversa ? bandeiraL : BANDEIRA_A;
+    el['bandeira-feedback'].textContent = inversa ? bandeiraL : BANDEIRA_A;
     /* na múltipla escolha a bandeira já diz tudo; o texto só ajuda quando
        é você quem tem que produzir a resposta */
     /* O card de conceito pergunta com um exemplo real e a palavra em destaque; a palavra do
@@ -1817,6 +1853,7 @@ window.TaioeCardsApp = function (ctx) {
     el.termo.classList.toggle('frase', ['frase', 'forma', 'contraste', 'compreensao'].includes(cardAtual.tipo) || (RARAS && !!cardAtual.frase) ||
       (cardAtual.tipo === 'analise' && cardAtual.familia !== 'regencia') || !!exemploAtual);
 
+    mostrarRegiao(cardAtual);
     el['aviso-lingua'].classList.add('oculto');
     el['aviso-acento'].classList.add('oculto');
     el['aviso-regiao'].classList.add('oculto');
@@ -2180,6 +2217,16 @@ window.TaioeCardsApp = function (ctx) {
       el['resposta-dada'].classList.remove('conjugacao');
     }
 
+    /* Escreveu a forma de outro lugar, que tem card próprio (manual §5.4): é o «deu quase», e a
+       linha diz de onde ela é e qual forma este card pede. */
+    const irma = escrevendo && r.quase ? Motor.irmaDoCard(cardAtual, r.resposta, r.direcao) : null;
+    if (irma) {
+      const citar = x => aspas('<b>' + escapar(String(x).replace(/\.$/, '')) + '</b>');
+      el['aviso-regiao'].innerHTML = t('aviso.irma', {
+        forma: citar(irma.forma), onde: escapar(lugar(irma.onde)), aqui: escapar(lugar(irma.aqui)), certa: citar(irma.certa) });
+      el['aviso-regiao'].classList.remove('oculto');
+    }
+
     if (r.quase) {
       // chegou perto: mostra o que você escreveu e devolve a decisão
       el.veredito.className = 'veredito quase';
@@ -2187,7 +2234,8 @@ window.TaioeCardsApp = function (ctx) {
       el['texto-dado'].textContent = r.resposta;
       /* a diferença pintada dos dois lados, como no acento: achar uma letra
          numa frase inteira, a olho, custa mais do que devia */
-      const dif = Motor.diferencaDoQuase(cardAtual, r.resposta, r.direcao);
+      /* na irmã a diferença é a palavra inteira, e pintar não ensina: o aviso já diz qual é */
+      const dif = irma ? null : Motor.diferencaDoQuase(cardAtual, r.resposta, r.direcao);
       if (dif) pintarDiferenca(dif);
       el['resposta-dada'].classList.remove('oculto');
       el['area-julgamento'].classList.remove('oculto');

@@ -126,6 +126,8 @@
       var molde = null, m;
       if ((m = /^boa parte d[aoe]s? (.+)$/.exec(resto))) { molde = 'lugar.boaParte'; resto = m[1]; }
       else if ((m = /^outros países d[aoe]s? (.+)$/.exec(resto))) { molde = 'lugar.outrosPaises'; resto = m[1]; }
+      else if ((m = /^quase tod[ao]s? [ao]s? (.+)$/.exec(resto))) { molde = 'lugar.quaseToda'; resto = m[1]; }
+      else if ((m = /^parte d[aoe]s? (.+)$/.exec(resto))) { molde = 'lugar.parte'; resto = m[1]; }
       var nome = d['lugar.' + resto];
       if (nome == null || (molde && d[molde] == null)) {
         if (DEV) console.warn('[i18n] lugar sem tradução em ' + l + ': «' + s + '»');
