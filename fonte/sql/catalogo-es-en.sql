@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-en, leva da5d4801, 2643 cards.
+-- Catálogo do curso es-en, leva 85659ffd, 2643 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-en', 'da5d4801', '2643 cards')
+values ('es-en', '85659ffd', '2643 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -1621,7 +1621,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'p989', 'palavra', 'C1', array['verbo']::text[], null, '473db2a1', array['to fortify', 'to mobilise', 'to modify', 'to mortify', 'to notify']::text[]),
   ('es-en', 'p990', 'palavra', 'B1', array['substantivo', 'social']::text[], null, '84efc6e1', array['the ally', 'the ritual', 'the rival', 'the river', 'the vital']::text[]),
   ('es-en', 'p991', 'palavra', 'A2', array['substantivo', 'família']::text[], null, 'd91a6820', array['the cloud / the mist', 'the daughter-in-law / the son''s wife', 'the girlfriend / the bride', 'the newcomer / the rookie', 'the novel / the plot']::text[]),
-  ('es-en', 'p992', 'palavra', 'C1', array['substantivo', 'objetos']::text[], null, '1293c269', array['the artichoke', 'the carpet', 'the drawer', 'the piggy bank', 'the wallet']::text[]),
+  ('es-en', 'p992', 'palavra', 'C1', array['substantivo', 'objetos']::text[], null, '0d436ef3', array['the artichoke', 'the carpet', 'the cushion', 'the piggy bank', 'the pocket']::text[]),
   ('es-en', 'p993', 'palavra', 'B1', array['substantivo', 'economia']::text[], null, '6b50b261', array['the annoyance', 'the find', 'the horror', 'the rice', 'the saving']::text[]),
   ('es-en', 'p994', 'palavra', 'B1', array['substantivo']::text[], null, 'ed2805d1', array['the edge', 'the hatred', 'the milking', 'the order', 'the schedule']::text[]),
   ('es-en', 'p995', 'palavra', 'B1', array['adjetivo']::text[], null, 'b12c969c', array['unanimous', 'unilateral', 'universal', 'university', 'usual']::text[]),
@@ -2087,7 +2087,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'p1188', 'palavra', 'C1', array['substantivo', 'corpo']::text[], null, '167b3f2d', array['the cartilage', 'the marrow', 'the medal', 'the rib', 'the skin']::text[]),
   ('es-en', 'p1189', 'palavra', 'C1', array['advérbio', 'filosofia']::text[], null, '05988b16', array['furiously', 'gloriously', 'idly', 'shamefully', 'silently']::text[]),
   ('es-en', 'p1190', 'palavra', 'C2', array['substantivo', 'natureza']::text[], null, '4e7ca66b', array['the carnation', 'the daisy', 'the rose', 'the violet', 'the white lily']::text[]),
-  ('es-en', 'p1191', 'palavra', 'C2', array['adjetivo', 'cotidiano']::text[], null, '3a2eff88', array['certain', 'heavy', 'imprisoned', 'quick', 'slow']::text[]),
+  ('es-en', 'p1191', 'palavra', 'C2', array['adjetivo', 'cotidiano']::text[], null, '74ae814f', array['certain', 'heavy', 'imprisoned', 'quick', 'slow']::text[]),
   ('es-en', 'p1192', 'palavra', 'C2', array['adjetivo', 'corpo']::text[], null, 'e1282503', array['adorned', 'bent', 'slender', 'tilted', 'upright']::text[]),
   ('es-en', 'p1193', 'palavra', 'C1', array['verbo', 'cotidiano']::text[], null, '5e0917d4', array['to hide', 'to pile up', 'to scatter', 'to squeeze', 'to tighten']::text[]),
   ('es-en', 'p1194', 'palavra', 'C1', array['verbo', 'cotidiano']::text[], null, 'aaccc886', array['to drop', 'to gather', 'to hide', 'to plant', 'to water']::text[]),
@@ -2252,7 +2252,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-en', 'u689', 'frase', 'A1', array['cotidiano']::text[], 'p1240', '9884536a', array['My brother lives here.', 'My brother lives there.', 'My brother used to live there.', 'My brother works there.', 'My sister lives there.']::text[]),
   ('es-en', 'u690', 'frase', 'A2', array['cotidiano']::text[], 'p1241', '4a252e05', array['It''s expensive; because of that, I bought it.', 'It''s expensive; besides, I bought it.', 'It''s expensive; however, I bought it.', 'It''s expensive; so I bought it.', 'It''s expensive; therefore, I bought it.']::text[]),
   ('es-en', 'u691', 'frase', 'A1', array['comida']::text[], 'p1242', 'c461b5f1', array['Chop the carrot very fine.', 'Chop the garlic very fine.', 'Chop the onion very fine.', 'Chop the pepper very fine.', 'Chop the tomato very fine.']::text[]),
-  ('es-en', 'u692', 'frase', 'A2', array['cotidiano']::text[], 'p1243', 'c48d67dc', array['The adults drink a lot of soda.', 'The children drink a lot of juice.', 'The children drink a lot of soda.', 'The children drink a lot of water.', 'The children eat a lot of candy.']::text[]),
+  ('es-en', 'u692', 'frase', 'A2', array['cotidiano']::text[], 'p1243', '27a5af54', array['The adults drink a lot of soda.', 'The children drink a lot of juice.', 'The children drink a lot of soda.', 'The children drink a lot of water.', 'The children eat a lot of candy.']::text[]),
   ('es-en', 'u693', 'frase', 'A2', array['cotidiano']::text[], 'p1244', 'b56bffc6', array['Enjoy your vacation.', 'Enjoy your work.', 'Forget your vacation.', 'Plan your vacation.', 'Postpone your vacation.']::text[]),
   ('es-en', 'u694', 'frase', 'A1', array['cotidiano']::text[], 'p1245', '540f0780', array['How old are you?', 'What''s your address?', 'What''s your name?', 'What''s your phone number?', 'Where is your house?']::text[]),
   ('es-en', 'u695', 'frase', 'A1', array['cotidiano']::text[], 'p1246', '26461695', array['I had a very strange dream.', 'I''m in a big hurry.', 'I''m very cold.', 'I''m very hungry.', 'I''m very sleepy.']::text[]),

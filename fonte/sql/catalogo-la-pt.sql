@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso la-pt, leva 3efe2c9e, 10248 cards.
+-- Catálogo do curso la-pt, leva 535c94bf, 10248 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('la-pt', '3efe2c9e', '10248 cards')
+values ('la-pt', '535c94bf', '10248 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -3937,7 +3937,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('la-pt', 'la-v051', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, 'ece16e09', array['singular: acusativo', 'singular: dativo', 'singular: genitivo', 'singular: nominativo', 'singular: vocativo']::text[]),
   ('la-pt', 'la-v052', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, '4d5024d7', array['singular: ablativo; plural: dativo ou ablativo', 'singular: acusativo; plural: genitivo ou acusativo', 'singular: genitivo ou dativo; plural: nominativo', 'singular: nominativo ou acusativo; plural: genitivo', 'singular: nominativo; plural: dativo ou ablativo']::text[]),
   ('la-pt', 'la-v053', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, '44315f33', array['singular: ablativo', 'singular: acusativo', 'singular: genitivo', 'singular: nominativo', 'singular: vocativo']::text[]),
-  ('la-pt', 'la-v054', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, 'ba6606b9', array['plural: dativo ou ablativo', 'singular: acusativo; plural: genitivo', 'singular: dativo ou ablativo', 'singular: genitivo; plural: nominativo', 'singular: nominativo; plural: acusativo']::text[]),
+  ('la-pt', 'la-v054', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, 'e8a9d2f9', array['plural: dativo ou ablativo', 'singular: acusativo; plural: genitivo', 'singular: dativo ou ablativo', 'singular: genitivo; plural: nominativo', 'singular: nominativo; plural: acusativo']::text[]),
   ('la-pt', 'la-v055', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, 'd360b192', array['plural: dativo ou ablativo', 'singular: dativo ou ablativo', 'singular: genitivo; plural: nominativo', 'singular: nominativo ou acusativo', 'singular: vocativo']::text[]),
   ('la-pt', 'la-v056', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, '7a9e64e1', array['singular: ablativo', 'singular: acusativo', 'singular: dativo', 'singular: genitivo', 'singular: vocativo']::text[]),
   ('la-pt', 'la-v057', 'flexao', 'A1', array['gramática', 'flexão']::text[], null, '75cfa05f', array['singular: acusativo; plural: genitivo ou dativo', 'singular: acusativo; plural: genitivo, dativo ou ablativo', 'singular: dativo ou acusativo; plural: genitivo', 'singular: genitivo; plural: dativo ou ablativo', 'singular: nominativo ou ablativo; plural: nominativo ou acusativo']::text[]),

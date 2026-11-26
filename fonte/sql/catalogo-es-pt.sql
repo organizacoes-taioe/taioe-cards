@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso es-pt, leva 7860d280, 2715 cards.
+-- Catálogo do curso es-pt, leva 577ab49a, 2715 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('es-pt', '7860d280', '2715 cards')
+values ('es-pt', '577ab49a', '2715 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -1621,7 +1621,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p989', 'palavra', 'C1', array['verbo']::text[], null, '473db2a1', array['fortificar', 'mobilizar', 'modificar', 'mortificar', 'notificar']::text[]),
   ('es-pt', 'p990', 'palavra', 'B1', array['substantivo', 'social']::text[], null, '84efc6e1', array['o aliado', 'o rio', 'o ritual', 'o rival', 'o vital']::text[]),
   ('es-pt', 'p991', 'palavra', 'A2', array['substantivo', 'família']::text[], null, 'd91a6820', array['a namorada', 'a nora', 'a novata', 'a novela', 'a nuvem']::text[]),
-  ('es-pt', 'p992', 'palavra', 'C1', array['substantivo', 'objetos']::text[], null, '1293c269', array['a alcachofra', 'a alcatifa', 'a carteira', 'a gaveta', 'o cofrinho']::text[]),
+  ('es-pt', 'p992', 'palavra', 'C1', array['substantivo', 'objetos']::text[], null, '0d436ef3', array['a alcachofra', 'a alcatifa', 'a algibeira', 'a almofada', 'o cofrinho']::text[]),
   ('es-pt', 'p993', 'palavra', 'B1', array['substantivo', 'economia']::text[], null, '6b50b261', array['a poupança', 'o aborrecimento', 'o achado', 'o arroz', 'o horror']::text[]),
   ('es-pt', 'p994', 'palavra', 'B1', array['substantivo']::text[], null, 'ed2805d1', array['a ordem (arrumação)', 'a ordenha (do leite)', 'a orla (da praia)', 'o horário (da aula)', 'o ódio (a raiva)']::text[]),
   ('es-pt', 'p995', 'palavra', 'B1', array['adjetivo']::text[], null, 'b12c969c', array['unilateral', 'universal', 'universitário', 'unânime', 'usual']::text[]),
@@ -2119,7 +2119,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'p1188', 'palavra', 'C1', array['substantivo', 'corpo']::text[], null, '167b3f2d', array['a cartilagem', 'a costela', 'a medalha', 'a medula', 'a pele']::text[]),
   ('es-pt', 'p1189', 'palavra', 'C1', array['advérbio', 'filosofia']::text[], null, '05988b16', array['furiosamente', 'gloriosamente', 'ociosamente', 'silenciosamente', 'vergonhosamente']::text[]),
   ('es-pt', 'p1190', 'palavra', 'C2', array['substantivo', 'natureza']::text[], null, '4e7ca66b', array['a açucena', 'a margarida', 'a rosa', 'a violeta', 'o cravo']::text[]),
-  ('es-pt', 'p1191', 'palavra', 'C2', array['adjetivo', 'cotidiano']::text[], null, '3a2eff88', array['certo', 'lento', 'pesado', 'preso', 'presto']::text[]),
+  ('es-pt', 'p1191', 'palavra', 'C2', array['adjetivo', 'cotidiano']::text[], null, '74ae814f', array['certo', 'lento', 'ligeiro', 'pesado', 'preso']::text[]),
   ('es-pt', 'p1192', 'palavra', 'C2', array['adjetivo', 'corpo']::text[], null, 'e1282503', array['curvado', 'enfeitado', 'erguido', 'esguio', 'inclinado']::text[]),
   ('es-pt', 'p1193', 'palavra', 'C1', array['verbo', 'cotidiano']::text[], null, '5e0917d4', array['amontoar', 'apertar', 'esconder', 'espalhar', 'espremer']::text[]),
   ('es-pt', 'p1194', 'palavra', 'C1', array['verbo', 'cotidiano']::text[], null, 'aaccc886', array['apanhar', 'esconder', 'largar', 'plantar', 'regar']::text[]),
@@ -2246,7 +2246,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'g006', 'conceito', 'A1', array['gramática']::text[], null, 'b9a76f82', array['estar + gerúndio: ação em andamento', 'estar: estado ou condição do momento', 'estar: onde algo ou alguém está', 'ser: hora, data ou onde acontece um evento', 'ser: o que a coisa é (identidade, origem, característica)']::text[]),
   ('es-pt', 'g007', 'conceito', 'A1', array['gramática']::text[], null, '32e5565d', array['encurta antes de qualquer substantivo singular, como gran', 'encurta: vem antes de substantivo masculino singular', 'fica inteira: vem antes de substantivo feminino ou plural', 'fica inteira: vem depois do substantivo ou sem ele', 'é advérbio (como bien), por isso não muda']::text[]),
   ('es-pt', 'g008', 'conceito', 'A1', array['gramática']::text[], null, 'e306da92', array['encurta antes de qualquer substantivo singular, como gran', 'encurta: vem antes de substantivo masculino singular', 'fica inteira: vem antes de substantivo feminino ou plural', 'fica inteira: vem depois do substantivo ou sem ele', 'é advérbio (como bien), por isso não muda']::text[]),
-  ('es-pt', 'g009', 'conceito', 'A2', array['gramática']::text[], null, 'fefec6e6', array['mais-que-perfeito', 'presente do indicativo', 'pretérito imperfeito', 'pretérito indefinido', 'pretérito perfeito composto']::text[]),
+  ('es-pt', 'g009', 'conceito', 'A2', array['gramática']::text[], null, '42a3fcfd', array['mais-que-perfeito', 'presente do indicativo', 'pretérito imperfeito', 'pretérito indefinido', 'pretérito perfeito composto']::text[]),
   ('es-pt', 'g010', 'conceito', 'A2', array['gramática']::text[], null, '30b57521', array['imperativo afirmativo', 'imperativo negativo', 'presente do indicativo', 'presente do subjuntivo', 'pretérito indefinido']::text[]),
   ('es-pt', 'g011', 'conceito', 'A2', array['gramática']::text[], null, 'fe6999dc', array['le, les: objeto indireto', 'lo, la: objeto direto', 'se impessoal', 'se no lugar de le (antes de lo, la)', 'se reflexivo']::text[]),
   ('es-pt', 'g012', 'conceito', 'A2', array['gramática']::text[], null, 'fc237d18', array['le, les: objeto indireto', 'lo, la: objeto direto', 'se do acidente (se me cayó)', 'se no lugar de le (antes de lo, la)', 'se reflexivo']::text[]),
@@ -2324,7 +2324,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('es-pt', 'u689', 'frase', 'A1', array['cotidiano']::text[], 'p1240', '9884536a', array['Meu irmão mora aqui.', 'Meu irmão mora lá.', 'Meu irmão morava lá.', 'Meu irmão trabalha lá.', 'Minha irmã mora lá.']::text[]),
   ('es-pt', 'u690', 'frase', 'A2', array['cotidiano']::text[], 'p1241', '4a252e05', array['É caro; além disso, comprei.', 'É caro; então, comprei.', 'É caro; no entanto, comprei.', 'É caro; por isso, comprei.', 'É caro; portanto, comprei.']::text[]),
   ('es-pt', 'u691', 'frase', 'A1', array['comida']::text[], 'p1242', 'c461b5f1', array['Corte a cebola bem fino.', 'Corte a cenoura bem fino.', 'Corte o alho bem fino.', 'Corte o pimentão bem fino.', 'Corte o tomate bem fino.']::text[]),
-  ('es-pt', 'u692', 'frase', 'A2', array['cotidiano']::text[], 'p1243', 'c48d67dc', array['As crianças comem muito doce.', 'As crianças tomam muita água.', 'As crianças tomam muito refrigerante.', 'As crianças tomam muito suco.', 'Os adultos tomam muito refrigerante.']::text[]),
+  ('es-pt', 'u692', 'frase', 'A2', array['cotidiano']::text[], 'p1243', '27a5af54', array['As crianças comem muito doce.', 'As crianças tomam muita água.', 'As crianças tomam muito refrigerante.', 'As crianças tomam muito suco.', 'Os adultos tomam muito refrigerante.']::text[]),
   ('es-pt', 'u693', 'frase', 'A2', array['cotidiano']::text[], 'p1244', 'b56bffc6', array['Adie as suas férias.', 'Aproveite as suas férias.', 'Aproveite o seu trabalho.', 'Esqueça as suas férias.', 'Planeje as suas férias.']::text[]),
   ('es-pt', 'u694', 'frase', 'A1', array['cotidiano']::text[], 'p1245', '540f0780', array['Onde é a sua casa?', 'Qual é a sua idade?', 'Qual é o seu endereço?', 'Qual é o seu nome?', 'Qual é o seu telefone?']::text[]),
   ('es-pt', 'u695', 'frase', 'A1', array['cotidiano']::text[], 'p1246', '26461695', array['Estou com muita fome.', 'Estou com muita pressa.', 'Estou com muito frio.', 'Estou com muito sono.', 'Tive um sonho muito estranho.']::text[]),

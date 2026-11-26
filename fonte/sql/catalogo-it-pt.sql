@@ -1,9 +1,9 @@
 -- GERADO POR fonte/build.js — não edite à mão.
--- Catálogo do curso it-pt, leva b6407c2c, 1939 cards.
+-- Catálogo do curso it-pt, leva 98e27696, 1939 cards.
 -- Aplicar pelo workflow Catálogo do taioe-infra (teste, depois produção), antes do push da leva.
 
 insert into cards.versoes (curso, versao, notas)
-values ('it-pt', 'b6407c2c', '1939 cards')
+values ('it-pt', '98e27696', '1939 cards')
 on conflict (curso, versao) do nothing;
 
 insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, alternativas) values
@@ -20,7 +20,7 @@ insert into cards.catalogo (curso, card_id, tipo, nivel, tags, requer, versao, a
   ('it-pt', 'it-b011', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, 'cbdb0100', array['Com quem você está?', 'Como você está?', 'Como você se chama?', 'De onde você é?', 'Onde você está?']::text[]),
   ('it-pt', 'it-b012', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, 'a63843c6', array['Bem, e agora?', 'Bem, e depois?', 'Bem, e você?', 'Mais ou menos, e você?', 'Mal, e você?']::text[]),
   ('it-pt', 'it-b013', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, '06b403de', array['Já vai?', 'Onde está?', 'Quem é?', 'Tudo bem?', 'Tudo pronto?']::text[]),
-  ('it-pt', 'it-b014', 'frase', 'A1', array['primeiros passos', 'social', 'formal']::text[], null, '13af1822', array['Aonde o senhor vai?', 'Como o senhor está?', 'Como o senhor se chama?', 'De onde o senhor é?', 'Onde o senhor está?']::text[]),
+  ('it-pt', 'it-b014', 'frase', 'A1', array['primeiros passos', 'social', 'formal']::text[], null, '0ac5cf47', array['Aonde o senhor vai?', 'Como o senhor está?', 'Como o senhor se chama?', 'De onde o senhor é?', 'Onde o senhor está?']::text[]),
   ('it-pt', 'it-b015', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, '0b3705de', array['A Ana me chamou.', 'Eu chamo a Ana.', 'Meu nome é Ana.', 'Moro com a Ana.', 'Sou amigo da Ana.']::text[]),
   ('it-pt', 'it-b016', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, '0fdecfe4', array['Como você está?', 'Como você se chama?', 'De onde você é?', 'Onde você mora?', 'Quantos anos você tem?']::text[]),
   ('it-pt', 'it-b017', 'frase', 'A1', array['primeiros passos', 'social']::text[], null, 'b80bfab1', array['Bem-vindo!', 'Boa sorte!', 'Com licença!', 'Muito bem!', 'Muito prazer!']::text[]),
