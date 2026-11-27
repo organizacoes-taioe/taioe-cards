@@ -579,8 +579,8 @@ secao('a escada das línguas mortas');
     const curtos = M.parteDosDominados(100), mistos = M.parteDosDominados(83 + 29 * 0.25);
     ok(mistos < M.parteDosDominados(112) && Math.abs(curtos - M.parteDosDominados(100)) < 1e-9, 'longos vencidos pesam menos na parte das revisões');
     const longo = venc(3), curto = venc(2);
-    longo.voltaEm = new Date(Date.now() - 20 * 864e5).toISOString();
-    ok(M.urgenciaDoDominado(curto, agora()) > M.urgenciaDoDominado(longo, agora()), 'o de 2 semanas atrasado 1 dia vem antes do de 1 mês atrasado 20');
+    longo.voltaEm = new Date(Date.now() - 3 * 864e5).toISOString();
+    ok(M.urgenciaDoDominado(curto, agora()) > M.urgenciaDoDominado(longo, agora()), 'o de 2 semanas atrasado 1 dia vem antes do de 1 mês atrasado 3 (antes, o contrário)');
   }
   ok(acerta(dominadoEm(0, 0)).revisoes === 2 && acerta(dominadoEm(0, 1)).revisoes === 1 && acerta(dominadoEm(4, 0)).revisoes === 5 && acerta(dominadoEm(5, 0)).revisoes === 5,
     'vivas: sem erro sobe dois desde o primeiro degrau; com erro um; teto 5');
