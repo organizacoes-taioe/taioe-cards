@@ -285,6 +285,262 @@
   "nota": "Costuma vir com traços de roupa e adorno: palio, gravata, joia."
  },
  {
+  "id": "pc-u508",
+  "tipo": "frase",
+  "pc": "Então, houve um supremo instante, Em que, cravando o olhar no ___ africano Asdrúbal, ordenou Cipião Emiliano: — Deixa-me executar as ordens do Senado!",
+  "pt": "intrépido",
+  "aceitas": [
+   "intrépido"
+  ],
+  "distratores": [
+   "intrincado",
+   "intempestivo",
+   "intestino",
+   "interino"
+  ],
+  "escolher": true,
+  "requer": "pc-p508",
+  "requerTodas": [
+   "pc-p508"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Olavo Bilac, Poesias (1902)",
+  "nota": "Aqui o adjetivo vem antes do nome, como é comum no registro literário."
+ },
+ {
+  "id": "pc-u509",
+  "tipo": "frase",
+  "pc": "Um hóspede ___ a ideia de que se pedisse o registro do hotel para saber-se o nome do recém-chegado.",
+  "pt": "aventou",
+  "aceitas": [
+   "aventou"
+  ],
+  "distratores": [
+   "avistou",
+   "avizinhou",
+   "avantajou",
+   "avençou"
+  ],
+  "escolher": true,
+  "requer": "pc-p509",
+  "requerTodas": [
+   "pc-p509"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Alberto Pimentel, Noites de Cintra; grafia atualizada",
+  "nota": "Aventa-se uma ideia, sem afirmá-la: «aventou a ideia de que…»."
+ },
+ {
+  "id": "pc-u510",
+  "tipo": "frase",
+  "pc": "A vida, ___ nos velhos, é um ofício cansativo.",
+  "pt": "mormente",
+  "aceitas": [
+   "mormente"
+  ],
+  "distratores": [
+   "ultimamente",
+   "brevemente",
+   "fortemente",
+   "docemente"
+  ],
+  "escolher": true,
+  "requer": "pc-p510",
+  "requerTodas": [
+   "pc-p510"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Machado de Assis, Memorial de Aires (1908)",
+  "nota": "Destaca um caso: «mormente nos velhos», «mormente se»."
+ },
+ {
+  "id": "pc-u511",
+  "tipo": "frase",
+  "pc": "Preocupado com essa ___ dei-me ao estudo do caso e convenci-me que o primeiro dono fora um desgraçado que tinha mania do suicídio.",
+  "pt": "contumácia",
+  "aceitas": [
+   "contumácia"
+  ],
+  "distratores": [
+   "contrição",
+   "continência",
+   "contiguidade",
+   "convalescença"
+  ],
+  "escolher": true,
+  "requer": "pc-p511",
+  "requerTodas": [
+   "pc-p511"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Coelho Neto, A Conquista",
+  "nota": "Aparece em «por contumácia» e «com contumácia»; o adjetivo é «contumaz»."
+ },
+ {
+  "id": "pc-u512",
+  "tipo": "frase",
+  "pc": "… O mísero, medindo o parricídio e o incesto, Quer da vista apagar a lembrança ___:",
+  "pt": "nefasta",
+  "aceitas": [
+   "nefasta"
+  ],
+  "distratores": [
+   "fastosa",
+   "nefelibata",
+   "ascética",
+   "ubérrima"
+  ],
+  "escolher": true,
+  "requer": "pc-p512",
+  "requerTodas": [
+   "pc-p512"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Olavo Bilac, Jocasta",
+  "nota": "Costuma qualificar o que causa dano: «influência nefasta», «lembrança nefasta»."
+ },
+ {
+  "id": "pc-u513",
+  "tipo": "frase",
+  "pc": "Azevedo Gondim apagou o sorriso, engoliu em seco, apanhou os cacos da sua pequenina vaidade e replicou ___ que um artista não pode escrever como fala.",
+  "pt": "amuado",
+  "aceitas": [
+   "amuado"
+  ],
+  "distratores": [
+   "amassado",
+   "amainado",
+   "amansado",
+   "amordaçado"
+  ],
+  "escolher": true,
+  "requer": "pc-p513",
+  "requerTodas": [
+   "pc-p513"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Graciliano Ramos, São Bernardo (1934)",
+  "nota": "O particípio descreve o modo de falar ou de ficar: «replicou amuado», «ficou amuado»."
+ },
+ {
+  "id": "pc-u514",
+  "tipo": "frase",
+  "pc": "Berço de uma ___ de varões ilustres Pádua Fleury, Corumbá, Bernardo Lobo.",
+  "pt": "plêiade",
+  "aceitas": [
+   "plêiade"
+  ],
+  "distratores": [
+   "caterva",
+   "cáfila",
+   "súcia",
+   "horda"
+  ],
+  "escolher": true,
+  "requer": "pc-p514",
+  "requerTodas": [
+   "pc-p514"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Hino do município de Santa Cruz de Goiás",
+  "nota": "Pede um complemento elogioso: «plêiade de varões ilustres», «de heróis»."
+ },
+ {
+  "id": "pc-u515",
+  "tipo": "frase",
+  "pc": "Úteis à medicina não há só muitas árvores, como raízes de plantas; direi, porém, alguma coisa, ___ das que são proveitosas como purgantes.",
+  "pt": "máxime",
+  "aceitas": [
+   "máxime"
+  ],
+  "distratores": [
+   "jamais",
+   "tampouco",
+   "ontem",
+   "sequer"
+  ],
+  "escolher": true,
+  "requer": "pc-p515",
+  "requerTodas": [
+   "pc-p515"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "São José de Anchieta, Cartas, informações e sermão (1594)",
+  "nota": "Realça uma parte do todo, como «sobretudo»: vem antes do termo em destaque."
+ },
+ {
+  "id": "pc-u516",
+  "tipo": "frase",
+  "pc": "Sobre este período de impropriedade feminina vem o período pombalino com a ___ e a alta indústria triunfantes.",
+  "pt": "plutocracia",
+  "aceitas": [
+   "plutocracia"
+  ],
+  "distratores": [
+   "teocracia",
+   "gerontocracia",
+   "meritocracia",
+   "tecnocracia"
+  ],
+  "escolher": true,
+  "requer": "pc-p516",
+  "requerTodas": [
+   "pc-p516"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Eduardo Shwalbach Lucci, A Mulher Portuguesa; grafia atualizada",
+  "nota": "Vem ao lado de outras forças do poder: «a plutocracia e a alta indústria»."
+ },
+ {
   "id": "pc-u358",
   "tipo": "frase",
   "pc": "E por que forma?--balbuciou Jorge, fazendo uns olhos de piedade, com uma ___ expressão de enfado.",
@@ -310,7 +566,7 @@
    "palavras difíceis",
    "adjetivo"
   ],
-  "fonte": "Abel Acácio de Almeida Botelho, Amor Crioulo",
+  "fonte": "Abel Botelho, Amor Crioulo",
   "nota": "Concorda com o substantivo: «expressão cáustica», «humor cáustico»."
  },
  {
@@ -343,6 +599,62 @@
   "nota": "O particípio funciona como adjetivo: «ficou aturdido», «olhar aturdido»."
  },
  {
+  "id": "pc-u517",
+  "tipo": "frase",
+  "pc": "Afirmando-se com ___ de vista, levou a mão ao punhal que tinha no bolso rugindo:",
+  "pt": "acuidade",
+  "aceitas": [
+   "acuidade"
+  ],
+  "distratores": [
+   "acidez",
+   "assiduidade",
+   "acrimônia",
+   "acústica"
+  ],
+  "escolher": true,
+  "requer": "pc-p517",
+  "requerTodas": [
+   "pc-p517"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Teixeira de Queiroz, A nossa Gente; grafia atualizada",
+  "nota": "Combina com «de vista», «de visão», «de ouvido»: «acuidade de vista»."
+ },
+ {
+  "id": "pc-u518",
+  "tipo": "frase",
+  "pc": "IV - levantamentos estatísticos, estudos e pesquisas visando ___ ao aprimoramento da qualidade e à expansão do ensino;",
+  "pt": "precipuamente",
+  "aceitas": [
+   "precipuamente"
+  ],
+  "distratores": [
+   "precariamente",
+   "precipitadamente",
+   "prematuramente",
+   "perpetuamente"
+  ],
+  "escolher": true,
+  "requer": "pc-p518",
+  "requerTodas": [
+   "pc-p518"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Lei Federal do Brasil 9394 de 1996",
+  "nota": "Vem depois de «visando» e antes de «a», indicando o fim principal."
+ },
+ {
   "id": "pc-u360",
   "tipo": "frase",
   "pc": "Das leis ___ apenas conservou as que eram dirigidas contra os assassinos.",
@@ -368,7 +680,7 @@
    "palavras difíceis",
    "adjetivo"
   ],
-  "fonte": "Unknown, História Antiga",
+  "fonte": "História Antiga",
   "nota": "Qualifica leis, regras e castigos de severidade extrema."
  },
  {
@@ -397,8 +709,64 @@
    "palavras difíceis",
    "verbo"
   ],
-  "fonte": "conde de Affonso Celso de Assis Figueiredo Affonso Celso, Lupe; grafia atualizada",
+  "fonte": "Afonso Celso, Lupe; grafia atualizada",
   "nota": "O sujeito é um mal que se espalha: «a febre grassa», «grassam boatos»."
+ },
+ {
+  "id": "pc-u519",
+  "tipo": "frase",
+  "pc": "… O mundo fique imaterializado — Alavanca desviada do seu ___ —",
+  "pt": "fulcro",
+  "aceitas": [
+   "fulcro"
+  ],
+  "distratores": [
+   "fuste",
+   "fulgor",
+   "fórceps",
+   "fuselagem"
+  ],
+  "escolher": true,
+  "requer": "pc-p519",
+  "requerTodas": [
+   "pc-p519"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Augusto dos Anjos, Idealismo",
+  "nota": "Vem naturalmente com «alavanca»: o ponto sobre o qual ela gira."
+ },
+ {
+  "id": "pc-u520",
+  "tipo": "frase",
+  "pc": "As reformações da alma operam-se mais ___ que as do corpo.",
+  "pt": "de afogadilho",
+  "aceitas": [
+   "de afogadilho"
+  ],
+  "distratores": [
+   "de soslaio",
+   "de esguelha",
+   "de empreitada",
+   "de rojo"
+  ],
+  "escolher": true,
+  "requer": "pc-p520",
+  "requerTodas": [
+   "pc-p520"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Camilo Castelo Branco, Noites de Insônia",
+  "nota": "Fica depois do verbo ou de «mais»: «operam-se mais de afogadilho»."
  },
  {
   "id": "pc-u362",
@@ -629,6 +997,121 @@
   "nota": "Fecha a frase como modo da ação: fazer algo à socapa, sem que os outros vejam."
  },
  {
+  "id": "pc-u523",
+  "tipo": "frase",
+  "pc": "Que importa ao edifício que cintila, De roaz fogo tomado, Ser por um raio abrasado Ou por ___ favila?",
+  "pt": "ignóbil",
+  "aceitas": [
+   "ignóbil"
+  ],
+  "distratores": [
+   "incólume",
+   "inóspita",
+   "ignara",
+   "intacta"
+  ],
+  "escolher": true,
+  "requer": "pc-p523",
+  "requerTodas": [
+   "pc-p523"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Gonçalves Dias, O Ciúme",
+  "nota": "O adjetivo ignóbil não muda no feminino: «ignóbil favila»."
+ },
+ {
+  "id": "pc-u524",
+  "tipo": "frase",
+  "pc": "Para a ___ não bastavam combinações diplomáticas e a revisão de fronteiras; nascida de certas tendências de espírito, só por tendências opostas poderia ser vencida.",
+  "pt": "debelar",
+  "aceitas": [
+   "debelar"
+  ],
+  "distratores": [
+   "deflagrar",
+   "debruçar",
+   "deprimir",
+   "debulhar"
+  ],
+  "escolher": true,
+  "requer": "pc-p524",
+  "requerTodas": [
+   "pc-p524"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Jaime de Magalhães Lima, A Guerra",
+  "nota": "O pronome «a» (a guerra) vem antes do verbo: «para a debelar»."
+ },
+ {
+  "id": "pc-u527",
+  "tipo": "frase",
+  "pc": "Não era o meu cuspo, com certeza Era a expectoração ___ e crassa Dos brônquios pulmonares de uma raça Que violou as leis da Natureza!",
+  "pt": "pútrida",
+  "aceitas": [
+   "pútrida"
+  ],
+  "distratores": [
+   "pudica",
+   "prolixa",
+   "pródiga",
+   "putativa"
+  ],
+  "escolher": true,
+  "requer": "pc-p527",
+  "requerTodas": [
+   "pc-p527"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Augusto dos Anjos, As Cismas do Destino",
+  "nota": "Qualifica o que apodrece ou exala mau cheiro, em geral na linguagem literária."
+ },
+ {
+  "id": "pc-u528",
+  "tipo": "frase",
+  "pc": "O fanatismo gloriava-se de poder contar com a firmeza do braço dos próprios ___, quando julgasse conveniente empregar na execução dos seus desígnios o ferro do assassino.",
+  "pt": "sicários",
+  "aceitas": [
+   "sicários"
+  ],
+  "distratores": [
+   "relicários",
+   "ossuários",
+   "notários",
+   "sacrários"
+  ],
+  "escolher": true,
+  "requer": "pc-p528",
+  "requerTodas": [
+   "pc-p528"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Alexandre Herculano, História da Origem e Estabelecimento da Inquisição em Portugal; grafia atualizada",
+  "nota": "Mostra o sicário como o braço armado a serviço de quem manda."
+ },
+ {
   "id": "pc-u370",
   "tipo": "frase",
   "pc": "Camacho batia com um canivete na beira da escrivaninha, calado, olhando ___ para o outro.",
@@ -829,6 +1312,34 @@
   "nota": "Vem com «com»: algo «se coaduna com» o temperamento, o caráter, as condições."
  },
  {
+  "id": "pc-u529",
+  "tipo": "frase",
+  "pc": "f) Não proporcionar a outrem o gozo total ou parcial da coisa por meio de cessão onerosa ou gratuita da sua posição jurídica, sublocação ou ___…",
+  "pt": "comodato",
+  "aceitas": [
+   "comodato"
+  ],
+  "distratores": [
+   "inventário",
+   "testamento",
+   "embargo",
+   "usucapião"
+  ],
+  "escolher": true,
+  "requer": "pc-p529",
+  "requerTodas": [
+   "pc-p529"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Código Civil Português; grafia atualizada",
+  "nota": "Contrato em que se empresta de graça, sem cobrar nada do comodatário."
+ },
+ {
   "id": "pc-u378",
   "tipo": "frase",
   "pc": "Mas isto não me limparia, as manchas eram ___.",
@@ -885,6 +1396,34 @@
   ],
   "fonte": "Camilo Castelo Branco, Estrelas Funestas; grafia atualizada",
   "nota": "Objetos típicos: questão, mistério, enredo, meada."
+ },
+ {
+  "id": "pc-u530",
+  "tipo": "frase",
+  "pc": "Que outras crassas banalidades tinha ainda a soltar, em ___, e de perna traçada?",
+  "pt": "calão",
+  "aceitas": [
+   "calão"
+  ],
+  "distratores": [
+   "calo",
+   "calha",
+   "calmaria",
+   "calda"
+  ],
+  "escolher": true,
+  "requer": "pc-p530",
+  "requerTodas": [
+   "pc-p530"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Eça de Queirós, Os Maias (1888)",
+  "nota": "Fala-se «em calão» ou «de baixo calão», quase sempre de modo crítico."
  },
  {
   "id": "pc-u380",
@@ -945,6 +1484,92 @@
   "nota": "Rege objeto direto: o que se aufere é lucro, tença, vantagem."
  },
  {
+  "id": "pc-u531",
+  "tipo": "frase",
+  "pc": "Assim o Prédio ao abandono, sob a enxurrada, parecia cismar, como um ___ coberto de cinzas.",
+  "pt": "rescaldo",
+  "aceitas": [
+   "rescaldo"
+  ],
+  "distratores": [
+   "resgate",
+   "retalho",
+   "rescisão",
+   "remanso"
+  ],
+  "escolher": true,
+  "requer": "pc-p531",
+  "requerTodas": [
+   "pc-p531"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Raul Brandão, Os Pobres; grafia atualizada",
+  "nota": "Combina com cinzas e brasas: «rescaldo coberto de cinzas»."
+ },
+ {
+  "id": "pc-u533",
+  "tipo": "frase",
+  "pc": "Luís, depois rei, descreve-o como um rapaz alegre e ___, propenso a expansões de bom humor.",
+  "pt": "ladino",
+  "aceitas": [
+   "ladino"
+  ],
+  "distratores": [
+   "lasso",
+   "ladeiro",
+   "soturno",
+   "impassível"
+  ],
+  "escolher": true,
+  "requer": "pc-p533",
+  "requerTodas": [
+   "pc-p533"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Alberto Pimentel, Histórias de Reis e Príncipes; grafia atualizada",
+  "nota": "Aparece em pares de qualidades: «alegre e ladino»."
+ },
+ {
+  "id": "pc-u534",
+  "tipo": "frase",
+  "pc": "No quinto dia o vento ___ rondando para nordeste e o mar, por força das circunstâncias, também acalmou-se.",
+  "pt": "amainou",
+  "aceitas": [
+   "amainou"
+  ],
+  "distratores": [
+   "amarrou",
+   "amealhou",
+   "amanheceu",
+   "amolou"
+  ],
+  "escolher": true,
+  "requer": "pc-p534",
+  "requerTodas": [
+   "pc-p534"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Adolfo Caminha, No País dos Yankees; grafia atualizada",
+  "nota": "Sem objeto, o sujeito é o que se acalma: «o vento amainou», «a chuva amainou»."
+ },
+ {
   "id": "pc-u382",
   "tipo": "frase",
   "pc": "«A Corinto Não vai quem quer,» lá diz aquele velho ___.",
@@ -999,6 +1624,64 @@
   ],
   "fonte": "Camilo Castelo Branco, A Filha do Arcediago; grafia atualizada",
   "nota": "Vem junto de «canonicatos», «benefícios», «sinecuras»: o ganho dos cargos da Igreja."
+ },
+ {
+  "id": "pc-u535",
+  "tipo": "frase",
+  "pc": "Talvez os gatos são menos ___, e, com certeza, as magnólias são menos inquietas do que eu era na minha infância.",
+  "pt": "matreiros",
+  "aceitas": [
+   "matreiros"
+  ],
+  "distratores": [
+   "maltrapilhos",
+   "mareiros",
+   "mateiros",
+   "matilheiros"
+  ],
+  "escolher": true,
+  "requer": "pc-p535",
+  "requerTodas": [
+   "pc-p535"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "nota": "Usa-se em comparações sobre esperteza: «menos matreiros» que os gatos."
+ },
+ {
+  "id": "pc-u536",
+  "tipo": "frase",
+  "pc": "Voltando à livraria, os sucessores de Padre Vicente enriqueceram-na, empregando nela quanto dinheiro podiam ___, sem prejuízo dos pobres.",
+  "pt": "amealhar",
+  "aceitas": [
+   "amealhar"
+  ],
+  "distratores": [
+   "penhorar",
+   "extraviar",
+   "remunerar",
+   "hipotecar"
+  ],
+  "escolher": true,
+  "requer": "pc-p536",
+  "requerTodas": [
+   "pc-p536"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Camilo Castelo Branco, O Bem e o Mal; grafia atualizada",
+  "nota": "Combina com dinheiro, haveres e economias: «quanto dinheiro podiam amealhar»."
  },
  {
   "id": "pc-u384",
@@ -1058,6 +1741,35 @@
   "nota": "Em gramática, o «pretérito» é também o tempo verbal do passado."
  },
  {
+  "id": "pc-u537",
+  "tipo": "frase",
+  "pc": "2) Não se ___ nos assuntos internos da China;",
+  "pt": "imiscuir",
+  "aceitas": [
+   "imiscuir"
+  ],
+  "distratores": [
+   "imbuir",
+   "imolar",
+   "imergir",
+   "imprimir"
+  ],
+  "escolher": true,
+  "requer": "pc-p537",
+  "requerTodas": [
+   "pc-p537"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Regulamento da República Popular da China relativo a Privilégios e Imunidades Diplomáticos",
+  "nota": "Em textos jurídicos e diplomáticos, é o verbo da não ingerência: «não se imiscuir nos assuntos internos»."
+ },
+ {
   "id": "pc-u386",
   "tipo": "frase",
   "pc": "Notável como trabalho de ___ fina e delicadíssima a caricatura que foi oferecida ao Dr.",
@@ -1111,7 +1823,7 @@
    "palavras difíceis",
    "adjetivo"
   ],
-  "fonte": "conde de Affonso Celso de Assis Figueiredo Affonso Celso, Lupe; grafia atualizada",
+  "fonte": "Afonso Celso, Lupe; grafia atualizada",
   "nota": "Aplica-se a maneira de falar ou escrever, a discurso, a estilo."
  },
  {
@@ -1141,6 +1853,34 @@
   ],
   "fonte": "António José da Costa Couto Sá de Albergaria, Os Filhos do Padre Anselmo; grafia atualizada",
   "nota": "Fórmula fixa: sob a égide de alguém ou de algo que protege."
+ },
+ {
+  "id": "pc-u538",
+  "tipo": "frase",
+  "pc": "§ 4º É vedada aos Municípios a constituição de ___ ou subenfiteuses, subordinando-se as existentes, até sua extinção, às disposições do Código Civil e leis posteriores adotadas em sua conformidade.",
+  "pt": "enfiteuses",
+  "aceitas": [
+   "enfiteuses"
+  ],
+  "distratores": [
+   "usufrutos",
+   "comodatos",
+   "hipotecas",
+   "servidões"
+  ],
+  "escolher": true,
+  "requer": "pc-p538",
+  "requerTodas": [
+   "pc-p538"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Lei Complementar Estadual do Rio de Janeiro 1 de 1975",
+  "nota": "Aparece em textos legais, no plural, com «subenfiteuse»."
  },
  {
   "id": "pc-u389",
@@ -1201,6 +1941,34 @@
   "nota": "Aplica-se a coisa que cresce e floresce: planta, virtude, negócio."
  },
  {
+  "id": "pc-u539",
+  "tipo": "frase",
+  "pc": "D’além, dos confins da freguesia, irrompeu medonha ___ de brados, e estrondear de tiros.",
+  "pt": "celeuma",
+  "aceitas": [
+   "celeuma"
+  ],
+  "distratores": [
+   "celeridade",
+   "celebração",
+   "cerimônia",
+   "cerração"
+  ],
+  "escolher": true,
+  "requer": "pc-p539",
+  "requerTodas": [
+   "pc-p539"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Camilo Castelo Branco, O Esqueleto; grafia atualizada",
+  "nota": "Vem com «de» e o que faz barulho: «celeuma de brados», «celeuma de vozes»."
+ },
+ {
   "id": "pc-u391",
   "tipo": "frase",
   "pc": "Vegetam louros — na caveira ___ E a sepultura se reveste em flores.",
@@ -1257,6 +2025,63 @@
   ],
   "fonte": "Camilo Castelo Branco, O Carrasco de Victor Hugo José Alves; grafia atualizada",
   "nota": "Sujeitos típicos: dor, violência, crise, epidemia."
+ },
+ {
+  "id": "pc-u540",
+  "tipo": "frase",
+  "pc": "Servo da ___, escravo das charruas Foste, ou soldado errante na sangueira, Ou mendigo de rojo pelas ruas, Ou mártir na tortura e na fogueira... …",
+  "pt": "gleba",
+  "aceitas": [
+   "gleba"
+  ],
+  "distratores": [
+   "gruta",
+   "gávea",
+   "gesta",
+   "grelha"
+  ],
+  "escolher": true,
+  "requer": "pc-p540",
+  "requerTodas": [
+   "pc-p540"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Olavo Bilac, A um triste",
+  "nota": "Na expressão «servo da gleba», a palavra é a terra à qual o servo pertencia."
+ },
+ {
+  "id": "pc-u541",
+  "tipo": "frase",
+  "pc": "Honesto e ___ como era, a única esperança que lhe restava, repousava nas economias sobre os seus ordenados.",
+  "pt": "probo",
+  "aceitas": [
+   "probo"
+  ],
+  "distratores": [
+   "pródigo",
+   "prolixo",
+   "pérfido",
+   "pretensioso"
+  ],
+  "escolher": true,
+  "requer": "pc-p541",
+  "requerTodas": [
+   "pc-p541"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Lima Barreto, Triste Fim de Policarpo Quaresma (1915)",
+  "nota": "Aqui vem ao lado de «honesto»; fala de caráter, não de aparência."
  },
  {
   "id": "pc-u393",
@@ -1316,6 +2141,64 @@
   "nota": "Combina com «agir com», «ter», «faltar à»: «falta de probidade»."
  },
  {
+  "id": "pc-u542",
+  "tipo": "frase",
+  "pc": "… uma acirrada disputa com a Grécia moderna para a conquista do troféu do país mais corrupto e mais ___ com a impunidade, entre todos os povos do Ocidente.",
+  "pt": "leniente",
+  "aceitas": [
+   "leniente"
+  ],
+  "distratores": [
+   "rigoroso",
+   "severo",
+   "intolerante",
+   "implacável"
+  ],
+  "escolher": true,
+  "requer": "pc-p542",
+  "requerTodas": [
+   "pc-p542"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Salvatore D’ Onofrio, Pensar é preciso",
+  "nota": "Constrói-se com «com»: ser leniente com algo ou alguém."
+ },
+ {
+  "id": "pc-u543",
+  "tipo": "frase",
+  "pc": "E, com isto, olha se isso lá acaba depressa, que eu ando por cá triste e ___ de saudades.",
+  "pt": "acabrunhada",
+  "aceitas": [
+   "acabrunhada"
+  ],
+  "distratores": [
+   "acalentada",
+   "acanhada",
+   "acarinhada",
+   "acarretada"
+  ],
+  "escolher": true,
+  "requer": "pc-p543",
+  "requerTodas": [
+   "pc-p543"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Camilo Castelo Branco, A Queda dum Anjo",
+  "nota": "Em geral com «de» e a causa: «acabrunhado de saudades», «acabrunhado pela dor»."
+ },
+ {
   "id": "pc-u395",
   "tipo": "frase",
   "pc": "Antes curvar o colo envilecido Ao jugo vil da escravidão nefanda; Beijar humilde a mão que nos ofende, Que nos cobre de ___!",
@@ -1342,6 +2225,64 @@
   ],
   "fonte": "Gonçalves Dias, Palinódia",
   "nota": "Costuma vir com «cobrir de», «lançar», «cair em»: a desonra que se abate sobre alguém."
+ },
+ {
+  "id": "pc-u544",
+  "tipo": "frase",
+  "pc": "As duas calaram-se, entristecidas e como que suspensas, ouvindo uns gritos ___ que vinham da outra extremidade do corredor.",
+  "pt": "lancinantes",
+  "aceitas": [
+   "lancinantes"
+  ],
+  "distratores": [
+   "laicos",
+   "lânguidos",
+   "lacônicos",
+   "lenitivos"
+  ],
+  "escolher": true,
+  "requer": "pc-p544",
+  "requerTodas": [
+   "pc-p544"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Ana de Castro Osório, Quatro Novelas",
+  "nota": "Combina com gritos, dores e gemidos, sempre no sentido de agudo e penetrante."
+ },
+ {
+  "id": "pc-u545",
+  "tipo": "frase",
+  "pc": "Direito que se exercita tanto sobre propostas do governo como sobre as que ___ da iniciativa individual dos membros do parlamento.",
+  "pt": "dimanam",
+  "aceitas": [
+   "dimanam"
+  ],
+  "distratores": [
+   "dirimem",
+   "dissipam",
+   "dilatam",
+   "dimensionam"
+  ],
+  "escolher": true,
+  "requer": "pc-p545",
+  "requerTodas": [
+   "pc-p545"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Cláudio José Nunes, Verdades Amargas",
+  "nota": "Constrói-se com «de»: o que dimana, dimana de uma fonte."
  },
  {
   "id": "pc-u396",
@@ -1516,6 +2457,34 @@
   "nota": "Aparece em «não se agaste», «agastado com»: a ira moderada de quem se zanga."
  },
  {
+  "id": "pc-u548",
+  "tipo": "frase",
+  "pc": "Sempre entro nós haja Rei Natural de nossa terra, Que na paz conduza a ___, E que a defenda na guerra, Qual o primeiro real Afonso de Portugal.",
+  "pt": "grei",
+  "aceitas": [
+   "grei"
+  ],
+  "distratores": [
+   "greta",
+   "grelha",
+   "greda",
+   "gruta"
+  ],
+  "escolher": true,
+  "requer": "pc-p548",
+  "requerTodas": [
+   "pc-p548"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Luís da Silva Mousinho de Albuquerque, Rui, o Escudeiro; grafia atualizada",
+  "nota": "Com sentido de «povo» ou «os seus»: «a grei», «da sua grei»."
+ },
+ {
   "id": "pc-u402",
   "tipo": "frase",
   "pc": "Sentia subir das ___ intimidades do seu ser um ciúme horrível pelo amigo, que fruía uma indizível ventura com a posse da mulher esplêndida…",
@@ -1572,6 +2541,34 @@
   ],
   "fonte": "Lima Barreto, Recordações do Escrivão Isaías Caminha (1909)",
   "nota": "No figurado, rege «em» ou «na»: «claudicar na ortografia»."
+ },
+ {
+  "id": "pc-u549",
+  "tipo": "frase",
+  "pc": "Eu sentia referver-me no peito a indignação, que ia lavrando pouco a pouco, e estava quase chegando ao seu ___.",
+  "pt": "paroxismo",
+  "aceitas": [
+   "paroxismo"
+  ],
+  "distratores": [
+   "paradoxo",
+   "paralelismo",
+   "parênese",
+   "paroxítono"
+  ],
+  "escolher": true,
+  "requer": "pc-p549",
+  "requerTodas": [
+   "pc-p549"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Manuel Pinheiro Chagas, A Flor Seca; grafia atualizada",
+  "nota": "Usa-se com «chegar ao» e com a emoção: «chegar ao paroxismo», «paroxismo da ira»."
  },
  {
   "id": "pc-u404",
@@ -1660,6 +2657,64 @@
   "nota": "Costuma vir no plural, ao lado de «dificuldades», «entraves»."
  },
  {
+  "id": "pc-u550",
+  "tipo": "frase",
+  "pc": "As circunstâncias atrocíssimas deste ___ escândalo não estão bem explicadas nem eram bem conhecidas dos contemporâneos.",
+  "pt": "inaudito",
+  "aceitas": [
+   "inaudito"
+  ],
+  "distratores": [
+   "inato",
+   "inóspito",
+   "inócuo",
+   "inábil"
+  ],
+  "escolher": true,
+  "requer": "pc-p550",
+  "requerTodas": [
+   "pc-p550"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Camilo Castelo Branco, Noites de Insônia; grafia atualizada",
+  "nota": "Vem antes do nome, de algo grave e sem precedentes: «inaudito escândalo»."
+ },
+ {
+  "id": "pc-u551",
+  "tipo": "frase",
+  "pc": "Fabiano percorreu o alpendre, olhando a baraúna e as porteiras, ___ um cão invisível contra animais invisíveis:",
+  "pt": "açulando",
+  "aceitas": [
+   "açulando"
+  ],
+  "distratores": [
+   "adulando",
+   "acuando",
+   "açoitando",
+   "acusando"
+  ],
+  "escolher": true,
+  "requer": "pc-p551",
+  "requerTodas": [
+   "pc-p551"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Graciliano Ramos, Vidas Secas (1938)",
+  "nota": "Açula-se um animal contra alguém: «açular o cão contra o ladrão»."
+ },
+ {
   "id": "pc-u407",
   "tipo": "frase",
   "pc": "E se se disser isto, não sentirá v. exc.ª remorsos por ter dado ___ a uma calúnia?",
@@ -1686,6 +2741,35 @@
   ],
   "fonte": "Júlio Dinis, Os fidalgos da Casa Mourisca; grafia atualizada",
   "nota": "Fixou-se na expressão «dar azo a»: dar ocasião ou pretexto para algo."
+ },
+ {
+  "id": "pc-u552",
+  "tipo": "frase",
+  "pc": "… vieram as pessoas, os caracteres, dois ou três picos de malícia, mas tão ___, que não fez mal a ninguém.",
+  "pt": "anódina",
+  "aceitas": [
+   "anódina"
+  ],
+  "distratores": [
+   "anômala",
+   "anódica",
+   "anêmica",
+   "anfibológica"
+  ],
+  "escolher": true,
+  "requer": "pc-p552",
+  "requerTodas": [
+   "pc-p552"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Machado de Assis, Capítulo dos Chapéus (1884)",
+  "nota": "Qualifica o que não tem peso nem efeito: notícia anódina, malícia anódina."
  },
  {
   "id": "pc-u408",
@@ -1802,6 +2886,34 @@
   "nota": "Dito do corpo ou da pessoa: «corpo alquebrado», «velho alquebrado»."
  },
  {
+  "id": "pc-u553",
+  "tipo": "frase",
+  "pc": "Saímos juntos, e tive de ouvir três ___, um dos pais, outro dos padrinhos, e o terceiro (aliás vigésimo) da própria dama dos seus pensamentos.",
+  "pt": "panegíricos",
+  "aceitas": [
+   "panegíricos"
+  ],
+  "distratores": [
+   "panfletos",
+   "parágrafos",
+   "paródias",
+   "pastorais"
+  ],
+  "escolher": true,
+  "requer": "pc-p553",
+  "requerTodas": [
+   "pc-p553"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Machado de Assis, Memorial de Aires (1908)",
+  "nota": "Costuma vir com «fazer», «ouvir» ou «ler»: «ouvir um panegírico»."
+ },
+ {
   "id": "pc-u412",
   "tipo": "frase",
   "pc": "Fora ele acadêmico, duas vezes riscado por ___ na desordem e outros efeitos da vinolência.",
@@ -1888,6 +3000,35 @@
   "nota": "Costuma vir com «inteligência», «espírito», «mente»: «uma rara argúcia»."
  },
  {
+  "id": "pc-u555",
+  "tipo": "frase",
+  "pc": "É um voluntário ___, um patriota rebelde.",
+  "pt": "recalcitrante",
+  "aceitas": [
+   "recalcitrante"
+  ],
+  "distratores": [
+   "recalcado",
+   "reincidente",
+   "recatado",
+   "reverente"
+  ],
+  "escolher": true,
+  "requer": "pc-p555",
+  "requerTodas": [
+   "pc-p555"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Lima Barreto, Triste Fim de Policarpo Quaresma (1915)",
+  "nota": "Vem depois do nome («voluntário recalcitrante»); o verbo é «recalcitrar» (resistir)."
+ },
+ {
   "id": "pc-u415",
   "tipo": "frase",
   "pc": "O Alferes coxo, no ensaboado pátio da antiga estalagem, continuava na sua ___ de instrutor dos novos recrutas.",
@@ -1914,6 +3055,35 @@
   ],
   "fonte": "Lima Barreto, Triste Fim de Policarpo Quaresma (1915)",
   "nota": "Costuma vir com «de» + a função: a faina de instrutor, de subir, de colher."
+ },
+ {
+  "id": "pc-u556",
+  "tipo": "frase",
+  "pc": "Que me importa? se as tardes purpurinas E as auroras dali Não deram luz às ___ cortinas Do leito onde eu nasci?",
+  "pt": "diáfanas",
+  "aceitas": [
+   "diáfanas"
+  ],
+  "distratores": [
+   "diagonais",
+   "diacrônicas",
+   "diatônicas",
+   "diabéticas"
+  ],
+  "escolher": true,
+  "requer": "pc-p556",
+  "requerTodas": [
+   "pc-p556"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Álvares de Azevedo, Lira dos Vinte Anos (1853)",
+  "nota": "Qualifica tecidos finos, luz e véus; é palavra de tom poético."
  },
  {
   "id": "pc-u416",
@@ -1944,6 +3114,35 @@
   "nota": "Aparece com «com» e «de»: «com fastio», «fastio de»."
  },
  {
+  "id": "pc-u557",
+  "tipo": "frase",
+  "pc": "Helena sentiu-lhes a polidez fria e ___.",
+  "pt": "parcimoniosa",
+  "aceitas": [
+   "parcimoniosa"
+  ],
+  "distratores": [
+   "calorosa",
+   "ruidosa",
+   "copiosa",
+   "vitoriosa"
+  ],
+  "escolher": true,
+  "requer": "pc-p557",
+  "requerTodas": [
+   "pc-p557"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Machado de Assis, Helena",
+  "nota": "Aqui qualifica a polidez contida, sem excesso de gestos."
+ },
+ {
   "id": "pc-u417",
   "tipo": "frase",
   "pc": "Ele a todos dava uma boa palavra, pedindo opiniões em separado sobre a peça; o que esperava era franqueza, visto não arder nos orgulhos balofos de certas ___.",
@@ -1970,6 +3169,34 @@
   ],
   "fonte": "Fialho de Almeida, Aves Migradoras; grafia atualizada",
   "nota": "Em geral vem no plural e em tom de ironia: «certas sumidades»."
+ },
+ {
+  "id": "pc-u559",
+  "tipo": "frase",
+  "pc": "Afonso V teve ___ de voltar a Honfleur, e portanto embarcou na angra de Hogue, com destino a Portugal.",
+  "pt": "pejo",
+  "aceitas": [
+   "pejo"
+  ],
+  "distratores": [
+   "peso",
+   "pego",
+   "pecúlio",
+   "pelo"
+  ],
+  "escolher": true,
+  "requer": "pc-p559",
+  "requerTodas": [
+   "pc-p559"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Alberto Pimentel, Rainha sem Reino; grafia atualizada",
+  "nota": "Regência: «ter pejo de» fazer algo; «sem pejo» é «sem vergonha»."
  },
  {
   "id": "pc-u418",
@@ -1999,6 +3226,34 @@
   ],
   "fonte": "Machado de Assis, A Mão e a Luva",
   "nota": "Elogia leitor, observador, crítico: quem enxerga além do óbvio."
+ },
+ {
+  "id": "pc-u560",
+  "tipo": "frase",
+  "pc": "Os liberais pediam o cumprimento da lei com desabrida virulência, provocada pelos murmúrios de alguns deputados ___ das conspirações de Queluz.",
+  "pt": "sequazes",
+  "aceitas": [
+   "sequazes"
+  ],
+  "distratores": [
+   "sequestradores",
+   "sicários",
+   "senescais",
+   "sucessores"
+  ],
+  "escolher": true,
+  "requer": "pc-p560",
+  "requerTodas": [
+   "pc-p560"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Camilo Castelo Branco, Livro de Consolação; grafia atualizada",
+  "nota": "Vem com «de»: sequaz de um chefe, de uma ideia, de uma conspiração."
  },
  {
   "id": "pc-u419",
@@ -2058,6 +3313,35 @@
   "nota": "Aparece em «viver na pasmaceira», «morrer de pasmaceira»."
  },
  {
+  "id": "pc-u561",
+  "tipo": "frase",
+  "pc": "Teu passado de lutas e penas É penhor de ___ grandeza Afagamos-te no íntimo, acenas Para o eterno, em mil sonhos acesa.",
+  "pt": "inconteste",
+  "aceitas": [
+   "inconteste"
+  ],
+  "distratores": [
+   "inconsútil",
+   "inconsequente",
+   "incontinente",
+   "inconstante"
+  ],
+  "escolher": true,
+  "requer": "pc-p561",
+  "requerTodas": [
+   "pc-p561"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Hino do município de Lavras da Mangabeira",
+  "nota": "Vem antes do substantivo («inconteste grandeza») ou depois («grandeza inconteste»); não varia em gênero."
+ },
+ {
   "id": "pc-u421",
   "tipo": "frase",
   "pc": "Pouco a pouco, as ___ de resistência foram cedendo à noção da possibilidade, da probabilidade e da certeza.",
@@ -2111,7 +3395,7 @@
    "palavras difíceis",
    "adjetivo"
   ],
-  "fonte": "Abílio Manuel Guerra Junqueiro, Pátria",
+  "fonte": "Guerra Junqueiro, Pátria",
   "nota": "Vem depois de substantivos como «influência», «efeito», «gás» e «hábito»."
  },
  {
@@ -2139,8 +3423,65 @@
   "tags": [
    "palavras difíceis"
   ],
-  "fonte": "Antônio Gonçalves Dias, Cantos",
+  "fonte": "Gonçalves Dias, Cantos",
   "nota": "Vem com «do poente», «da manhã», «do crepúsculo»."
+ },
+ {
+  "id": "pc-u562",
+  "tipo": "frase",
+  "pc": "… ele se limitou sempre a ditos ___ que, mais me aumentaram as velhas suspeitas.",
+  "pt": "sibilinos",
+  "aceitas": [
+   "sibilinos"
+  ],
+  "distratores": [
+   "sinceros",
+   "singelos",
+   "sensatos",
+   "sibilantes"
+  ],
+  "escolher": true,
+  "requer": "pc-p562",
+  "requerTodas": [
+   "pc-p562"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Lima Barreto, Recordações do Escrivão Isaías Caminha (1909)",
+  "nota": "Ditos sibilinos deixam o ouvinte desconfiado, sem entender bem o que se quis dizer."
+ },
+ {
+  "id": "pc-u563",
+  "tipo": "frase",
+  "pc": "… à lírica elaborada e convencional, existiu também na Alemanha, como em outros países ocidentais, uma corrente de poesia ___, de raízes populares e de formas e temas livres e simples.",
+  "pt": "autóctone",
+  "aceitas": [
+   "autóctone"
+  ],
+  "distratores": [
+   "erudita",
+   "alienígena",
+   "hermética",
+   "palaciana"
+  ],
+  "escolher": true,
+  "requer": "pc-p563",
+  "requerTodas": [
+   "pc-p563"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Salvatore D’ Onofrio, Dicionário de Cultura Básica",
+  "nota": "Aplica-se ao que nasceu no lugar, como tradição, poesia, flora, povo."
  },
  {
   "id": "pc-u424",
@@ -2200,6 +3541,148 @@
   "nota": "Qualifica o que existe em abundância: ramo, luz, publicidade."
  },
  {
+  "id": "pc-u564",
+  "tipo": "frase",
+  "pc": "… pois se gloria De mais idoso e muito mais potente, Bem que a ___ tenhas de igualar-te A quem aterra e enfreia as mais deidades.",
+  "pt": "bazófia",
+  "aceitas": [
+   "bazófia"
+  ],
+  "distratores": [
+   "bagagem",
+   "baderna",
+   "bonomia",
+   "balbúrdia"
+  ],
+  "escolher": true,
+  "requer": "pc-p564",
+  "requerTodas": [
+   "pc-p564"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Homero, Ilíada",
+  "nota": "Aqui é a pretensão vaidosa de se igualar a quem é muito superior."
+ },
+ {
+  "id": "pc-u565",
+  "tipo": "frase",
+  "pc": "Mas o da ideia insistiu, ___:--havia ali suas coisas que o faziam lembrar, certas facécias, como a de chamar _Frei Asneira_ ao Reitor e _Cabeça de Comarca_ ao Felisberto.",
+  "pt": "renitente",
+  "aceitas": [
+   "renitente"
+  ],
+  "distratores": [
+   "reticente",
+   "reluzente",
+   "remisso",
+   "reincidente"
+  ],
+  "escolher": true,
+  "requer": "pc-p565",
+  "requerTodas": [
+   "pc-p565"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Trindade Coelho, Os Meus Amores",
+  "nota": "Vem depois do verbo, como aposto: «insistiu, renitente»."
+ },
+ {
+  "id": "pc-u566",
+  "tipo": "frase",
+  "pc": "… o Hino Municipal será executado por ocasião da alvorada e em todas as solenidades previstas para a comemoração da ___.",
+  "pt": "efeméride",
+  "aceitas": [
+   "efeméride"
+  ],
+  "distratores": [
+   "epígrafe",
+   "epístola",
+   "efusão",
+   "epiderme"
+  ],
+  "escolher": true,
+  "requer": "pc-p566",
+  "requerTodas": [
+   "pc-p566"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Lei Municipal de Ponto Belo 171 de 2005",
+  "nota": "Aqui é o fato, ou a data, que se comemora no calendário da cidade."
+ },
+ {
+  "id": "pc-u567",
+  "tipo": "frase",
+  "pc": "… Menor pasmo Fora, se ao gladiador, em pleno circo, A pantera africana os pés lambesse, Ou se, à cauda de ___ cavalo, Ovantes hostes arrastassem César.",
+  "pt": "indômito",
+  "aceitas": [
+   "indômito"
+  ],
+  "distratores": [
+   "indolente",
+   "indigente",
+   "indelével",
+   "indigesto"
+  ],
+  "escolher": true,
+  "requer": "pc-p567",
+  "requerTodas": [
+   "pc-p567"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Machado de Assis, Poesias Completas (1901)",
+  "nota": "Aparece com animais e com forças que não se deixam conter: «indômito cavalo»."
+ },
+ {
+  "id": "pc-u568",
+  "tipo": "frase",
+  "pc": "Na opinião de Lardizabal (em cujo tempo era desconhecido o texto do ___ de Corbie)…",
+  "pt": "palimpsesto",
+  "aceitas": [
+   "palimpsesto"
+  ],
+  "distratores": [
+   "palíndromo",
+   "paradigma",
+   "panteão",
+   "paralelo"
+  ],
+  "escolher": true,
+  "requer": "pc-p568",
+  "requerTodas": [
+   "pc-p568"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Alexandre Herculano, Opúsculos",
+  "nota": "Costuma vir com o nome do lugar ou do dono: «palimpsesto de Corbie»."
+ },
+ {
   "id": "pc-u426",
   "tipo": "frase",
   "pc": "Numa vida anterior, fui um cheik ___ E pobre...",
@@ -2227,6 +3710,34 @@
   ],
   "fonte": "Olavo Bilac, Avatara",
   "nota": "Quase sempre qualifica rosto, corpo ou figura humana."
+ },
+ {
+  "id": "pc-u569",
+  "tipo": "frase",
+  "pc": "… e sem dúvida mui para breve recebereis a grata nova de que hemos reavido o talismã; e por ela vos pediremos ___.",
+  "pt": "alvíssaras",
+  "aceitas": [
+   "alvíssaras"
+  ],
+  "distratores": [
+   "pêsames",
+   "perdões",
+   "desculpas",
+   "licenças"
+  ],
+  "escolher": true,
+  "requer": "pc-p569",
+  "requerTodas": [
+   "pc-p569"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Mário de Andrade, Macunaíma (1928)",
+  "nota": "Pede-se, dá-se ou oferece-se alvíssaras: «pedir alvíssaras», «dar alvíssaras»."
  },
  {
   "id": "pc-u427",
@@ -2258,6 +3769,63 @@
   "nota": "Vem depois do verbo ou do substantivo: «cair exangue», «um corpo exangue»."
  },
  {
+  "id": "pc-u570",
+  "tipo": "frase",
+  "pc": "… antes que o ditador iniciasse a sua aplicação feroz, outra força, e extraordinária força, com que ele nunca sonhara, impediu a ___ dos seus desígnios.",
+  "pt": "consecução",
+  "aceitas": [
+   "consecução"
+  ],
+  "distratores": [
+   "consequência",
+   "concessão",
+   "conservação",
+   "consagração"
+  ],
+  "escolher": true,
+  "requer": "pc-p570",
+  "requerTodas": [
+   "pc-p570"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Francisco Jorge de Abreu, A Revolução Portuguesa; grafia atualizada",
+  "nota": "Pede complemento com «de» ou possessivo: «a consecução dos seus desígnios»."
+ },
+ {
+  "id": "pc-u571",
+  "tipo": "frase",
+  "pc": "E no entanto nada de mais ___, de mais oportuno, de mais simples, de mais a propósito.",
+  "pt": "exequível",
+  "aceitas": [
+   "exequível"
+  ],
+  "distratores": [
+   "execrável",
+   "exorbitante",
+   "oneroso",
+   "exíguo"
+  ],
+  "escolher": true,
+  "requer": "pc-p571",
+  "requerTodas": [
+   "pc-p571"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Abel Botelho, Amor Crioulo",
+  "nota": "Aplica-se a planos, projetos e ordens: o que se pode de fato executar."
+ },
+ {
   "id": "pc-u428",
   "tipo": "frase",
   "pc": "Os mercadores abastados, vendo o caminho em que enveredava a conversa, entreolharam-se receiosos, não fossem os ___ denunciá-los.",
@@ -2282,7 +3850,7 @@
   "tags": [
    "palavras difíceis"
   ],
-  "fonte": "conde de António Maria José de Melo César e Meneses Sabugosa, Neves de Antanho; grafia atualizada",
+  "fonte": "Conde de Sabugosa, Neves de Antanho; grafia atualizada",
   "nota": "Fala-se dos esbirros de um tirano, de um ministro, da Inquisição."
  },
  {
@@ -2313,6 +3881,34 @@
   ],
   "fonte": "Mário de Andrade, Lovaina; grafia atualizada",
   "nota": "Companhia típica: «crime nefando», «vício nefando»."
+ },
+ {
+  "id": "pc-u572",
+  "tipo": "frase",
+  "pc": "No meio desta ___ que lhe inspirava a sociedade, não perdera porém Aurélia de todo a crença na nobreza d’alma, sabia respeitá-la onde quer que a descobria.",
+  "pt": "acrimônia",
+  "aceitas": [
+   "acrimônia"
+  ],
+  "distratores": [
+   "acuidade",
+   "acrobacia",
+   "acomodação",
+   "acareação"
+  ],
+  "escolher": true,
+  "requer": "pc-p572",
+  "requerTodas": [
+   "pc-p572"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "José de Alencar, Senhora",
+  "nota": "Pode ser do tom de voz ou do estado de ânimo de quem guarda amargura."
  },
  {
   "id": "pc-u430",
@@ -2372,6 +3968,35 @@
   "nota": "Vem com «de» + o tipo da gente: súcia de vagabundos, de parasitas."
  },
  {
+  "id": "pc-u573",
+  "tipo": "frase",
+  "pc": "Nada pouparam o ___ Dom João de Lencastre nem o opulento Dom João Soares para se mostrarem com a magnificência que competia ao seu estado e à sua posição.",
+  "pt": "faustoso",
+  "aceitas": [
+   "faustoso"
+  ],
+  "distratores": [
+   "funesto",
+   "fastidioso",
+   "frugal",
+   "fúnebre"
+  ],
+  "escolher": true,
+  "requer": "pc-p573",
+  "requerTodas": [
+   "pc-p573"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Diogo de Macedo, O Cristão Novo; grafia atualizada",
+  "nota": "Vem junto de «opulento» e «magnificência»: «o faustoso Dom João»."
+ },
+ {
   "id": "pc-u432",
   "tipo": "frase",
   "pc": "A imaginação e a sensibilidade elaboram produtos psíquicos que têm a sua origem na inteligência, os quais vêm a ser condições de ___.",
@@ -2400,6 +4025,35 @@
   "nota": "Aparece ao lado de «inteligência» e «sensibilidade»."
  },
  {
+  "id": "pc-u574",
+  "tipo": "frase",
+  "pc": "todos acham nos elementos um património comum, livre, e ___; todos respiram o ar; a todos sustenta a terra…",
+  "pt": "indefectível",
+  "aceitas": [
+   "indefectível"
+  ],
+  "distratores": [
+   "indefeso",
+   "indecoroso",
+   "indisposto",
+   "indolente"
+  ],
+  "escolher": true,
+  "requer": "pc-p574",
+  "requerTodas": [
+   "pc-p574"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Matias Aires, Reflexões sobre a Vaidade dos Homens",
+  "nota": "Aqui diz que o que a natureza oferece nunca falta a ninguém."
+ },
+ {
   "id": "pc-u433",
   "tipo": "frase",
   "pc": "Lançado o assunto, apanhava-o no ar, senhoreava-o, frechava-o de ___ em que a imaginação refervia torrencial.",
@@ -2426,6 +4080,35 @@
   ],
   "fonte": "Alberto Pimentel, Noites de Cintra; grafia atualizada",
   "nota": "Vem no plural para falar de comentários ou desenvolvimentos de um assunto."
+ },
+ {
+  "id": "pc-u575",
+  "tipo": "frase",
+  "pc": "À elegância doente e vaporosa Eu prefiro, contudo, a forma ___ Do seu corpo gentil de mulher sã;",
+  "pt": "airosa",
+  "aceitas": [
+   "airosa"
+  ],
+  "distratores": [
+   "arisca",
+   "afoita",
+   "ávida",
+   "aflita"
+  ],
+  "escolher": true,
+  "requer": "pc-p575",
+  "requerTodas": [
+   "pc-p575"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Augusto Gil, Musa Cérula; grafia atualizada",
+  "nota": "Qualifica forma, corpo ou gesto: «forma airosa», «porte airoso»."
  },
  {
   "id": "pc-u434",
@@ -2457,6 +4140,91 @@
   "nota": "Combina com «massa», «labirinto», «rede», «confusão»."
  },
  {
+  "id": "pc-u576",
+  "tipo": "frase",
+  "pc": "Ela tinha esperado achar respostas enérgicas às suas ___, e neste pressuposto concertara mil planos de ataques, de defesa, de gritaria, de pancadas, de prisões, etc.",
+  "pt": "invectivas",
+  "aceitas": [
+   "invectivas"
+  ],
+  "distratores": [
+   "invocações",
+   "inventivas",
+   "invencionices",
+   "invernadas"
+  ],
+  "escolher": true,
+  "requer": "pc-p576",
+  "requerTodas": [
+   "pc-p576"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Manuel Antônio de Almeida, Memórias de um Sargento de Milícias (1854)",
+  "nota": "Combina com «contra» e com «às» ou «das»: «as invectivas da vizinha»."
+ },
+ {
+  "id": "pc-u577",
+  "tipo": "frase",
+  "pc": "Ninguém é mais do que eu, ___ dos inúmeros defeitos que tem.",
+  "pt": "cônscio",
+  "aceitas": [
+   "cônscio"
+  ],
+  "distratores": [
+   "isento",
+   "ávido",
+   "cioso",
+   "carente"
+  ],
+  "escolher": true,
+  "requer": "pc-p577",
+  "requerTodas": [
+   "pc-p577"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Casimiro de Abreu, Camões e o Jaú",
+  "nota": "Constrói-se com «de» + o objeto da consciência: «cônscio dos defeitos», «cônscio do dever»."
+ },
+ {
+  "id": "pc-u578",
+  "tipo": "frase",
+  "pc": "Tinha intenção de casá-la bem; nem ela era moça de dar lérias a ___, nem se deixava ir por fantasias tolas; era ajuizada, merecia um bom esposo, pessoa séria.",
+  "pt": "pelintras",
+  "aceitas": [
+   "pelintras"
+  ],
+  "distratores": [
+   "pelicanos",
+   "pelegos",
+   "pelotões",
+   "penitentes"
+  ],
+  "escolher": true,
+  "requer": "pc-p578",
+  "requerTodas": [
+   "pc-p578"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "nota": "Aplica-se a gente vaidosa sem recursos: «dar lérias a pelintras»."
+ },
+ {
   "id": "pc-u435",
   "tipo": "frase",
   "pc": "Briolanja era senhora de elevadas qualidades morais, de ___ virtudes e ânimo levantado.",
@@ -2484,6 +4252,64 @@
   ],
   "fonte": "Décio Carneiro, Sá de Miranda e a sua Obra; grafia atualizada",
   "nota": "Elogia virtudes, feitos, nomes e pessoas de renome."
+ },
+ {
+  "id": "pc-u580",
+  "tipo": "frase",
+  "pc": "Não convidei o caiporismo, é claro; mas na igreja, entre as barbas rapadas e as suíças lustrosas, pareceu-me ver o carão ___ e o olhar oblíquo do meu cruel adversário.",
+  "pt": "sardônico",
+  "aceitas": [
+   "sardônico"
+  ],
+  "distratores": [
+   "bondoso",
+   "afável",
+   "paternal",
+   "sereno"
+  ],
+  "escolher": true,
+  "requer": "pc-p580",
+  "requerTodas": [
+   "pc-p580"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Machado de Assis, Último Capítulo (1884)",
+  "nota": "Qualifica o rosto, o riso ou o olhar de quem zomba com amargura."
+ },
+ {
+  "id": "pc-u581",
+  "tipo": "frase",
+  "pc": "… arcados sob os sacos cheios de areia ou arrastando-os, arrumando-os, superpostos, como grandes adobes de um muramento ___, bracejavam durante o dia todo...",
+  "pt": "ciclópico",
+  "aceitas": [
+   "ciclópico"
+  ],
+  "distratores": [
+   "cíclico",
+   "ciclônico",
+   "cínico",
+   "bucólico"
+  ],
+  "escolher": true,
+  "requer": "pc-p581",
+  "requerTodas": [
+   "pc-p581"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Euclides da Cunha, Contrastes e Confrontos",
+  "nota": "Aqui o adjetivo dá ao muro a escala de uma obra de gigantes."
  },
  {
   "id": "pc-u436",
@@ -2542,6 +4368,64 @@
   ],
   "fonte": "Camilo Castelo Branco, Noites de Insônia; grafia atualizada",
   "nota": "Aqui qualifica as vaias, como feitas por gente que não entende."
+ },
+ {
+  "id": "pc-u582",
+  "tipo": "frase",
+  "pc": "Apenas, um pouco afastados, coqueiros ___, perfilados, como se esperassem ordens.",
+  "pt": "macambúzios",
+  "aceitas": [
+   "macambúzios"
+  ],
+  "distratores": [
+   "maquinais",
+   "malcriados",
+   "maçantes",
+   "macios"
+  ],
+  "escolher": true,
+  "requer": "pc-p582",
+  "requerTodas": [
+   "pc-p582"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Graciliano Ramos, Angústia (1936)",
+  "nota": "Aqui o adjetivo qualifica coisas, como se tivessem humor: «coqueiros macambúzios»."
+ },
+ {
+  "id": "pc-u583",
+  "tipo": "frase",
+  "pc": "… as abas do fraque um tanto ___ para as atitudes largas e arrojadas.",
+  "pt": "canhestras",
+  "aceitas": [
+   "canhestras"
+  ],
+  "distratores": [
+   "cansadas",
+   "canônicas",
+   "cadavéricas",
+   "calejadas"
+  ],
+  "escolher": true,
+  "requer": "pc-p583",
+  "requerTodas": [
+   "pc-p583"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Camilo Castelo Branco, O Carrasco de Victor Hugo José Alves; grafia atualizada",
+  "nota": "Descreve o que se move ou veste mal, sem graça: «um tanto canhestras para os gestos largos»."
  },
  {
   "id": "pc-u438",
@@ -2631,6 +4515,35 @@
   "nota": "Aplica-se a discursos e escritos: «estilo verboso», «declamações verbosas»."
  },
  {
+  "id": "pc-u584",
+  "tipo": "frase",
+  "pc": "Pobre flor, que se ___ Na vertente da montanha, Ninguém aqui te consola Fria sombra te acompanha.",
+  "pt": "estiola",
+  "aceitas": [
+   "estiola"
+  ],
+  "distratores": [
+   "estimula",
+   "estiliza",
+   "estaciona",
+   "estufa"
+  ],
+  "escolher": true,
+  "requer": "pc-p584",
+  "requerTodas": [
+   "pc-p584"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Joaquim de Melo Freitas, Garatujas; grafia atualizada",
+  "nota": "Com «se», a planta ou a pessoa que definha: «flor que se estiola»."
+ },
+ {
   "id": "pc-u441",
   "tipo": "frase",
   "pc": "… Tudo o que há de mais ___, de mais fofo, Tudo o que há de mais rijo e resistente!",
@@ -2717,6 +4630,35 @@
   "nota": "Aparece em «com menos dispêndio de», «sem dispêndio de»."
  },
  {
+  "id": "pc-u586",
+  "tipo": "frase",
+  "pc": "Toda a luta nestas condições era uma temeridade ___, um inútil sacrifício.",
+  "pt": "estulta",
+  "aceitas": [
+   "estulta"
+  ],
+  "distratores": [
+   "estuante",
+   "estival",
+   "estelar",
+   "estatal"
+  ],
+  "escolher": true,
+  "requer": "pc-p586",
+  "requerTodas": [
+   "pc-p586"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Teófilo Braga, Viriato; grafia atualizada",
+  "nota": "Qualifica atos e ideias («temeridade estulta»), além de pessoas."
+ },
+ {
   "id": "pc-u444",
   "tipo": "frase",
   "pc": "Nada ___ a que sejas objeto de uma tal distinção, principalmente se a sagacidade dos amigos não achar em ti repugnância.",
@@ -2774,6 +4716,35 @@
   "nota": "Combina com «ardente», «grande», «poético»: a veia criadora de quem compõe."
  },
  {
+  "id": "pc-u587",
+  "tipo": "frase",
+  "pc": "Quer a criasse, com o universo, uma vontade alheia, quer ela seja ___ ao universo infinito, é, nos dois casos, uma lei monstruosa …",
+  "pt": "imanente",
+  "aceitas": [
+   "imanente"
+  ],
+  "distratores": [
+   "iminente",
+   "eminente",
+   "permanente",
+   "emergente"
+  ],
+  "escolher": true,
+  "requer": "pc-p587",
+  "requerTodas": [
+   "pc-p587"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Raul Brandão, Os Pobres; grafia atualizada",
+  "nota": "Rege a preposição «a»: «imanente ao universo», em oposição ao que o transcende."
+ },
+ {
   "id": "pc-u446",
   "tipo": "frase",
   "pc": "Jorge esteve algum tempo sem ___, absorvido pelo exame de um papel que encontrara no maço.",
@@ -2801,6 +4772,34 @@
   ],
   "fonte": "Júlio Dinis, Os Fidalgos da Casa Mourisca; grafia atualizada",
   "nota": "Aparece muito em «sem retorquir» e depois da fala do personagem."
+ },
+ {
+  "id": "pc-u588",
+  "tipo": "frase",
+  "pc": "… ainda que dos frequentes olhares que dirigia para o sítio, donde todos os dias costumava vê-lo aparecer, alguém tiraria talvez esta ___.",
+  "pt": "ilação",
+  "aceitas": [
+   "ilação"
+  ],
+  "distratores": [
+   "alusão",
+   "ilustração",
+   "elisão",
+   "ilicitude"
+  ],
+  "escolher": true,
+  "requer": "pc-p588",
+  "requerTodas": [
+   "pc-p588"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Júlio Dinis, As Pupilas do Senhor Reitor; grafia atualizada",
+  "nota": "Combina com o verbo «tirar»: tirar uma ilação."
  },
  {
   "id": "pc-u447",
@@ -2890,6 +4889,35 @@
   "nota": "Qualifica edifícios, árvores, ritos e instituições de muita idade."
  },
  {
+  "id": "pc-u589",
+  "tipo": "frase",
+  "pc": "O leitor decerto se ___; e a leitora se lhe dissessem, em menos de uma linha, a história daqueles dezoito anos, choraria!",
+  "pt": "compungia",
+  "aceitas": [
+   "compungia"
+  ],
+  "distratores": [
+   "comprimia",
+   "compelia",
+   "compilava",
+   "compartia"
+  ],
+  "escolher": true,
+  "requer": "pc-p589",
+  "requerTodas": [
+   "pc-p589"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Camilo Castelo Branco, Amor de Perdição (1862)",
+  "nota": "Pode ser pronominal: «compungir-se» é sentir pesar e comoção."
+ },
+ {
   "id": "pc-u450",
   "tipo": "frase",
   "pc": "…palpitavam duma mobilidade inquieta, mantinham ainda essa fácil emotividade que é o ___ das crianças.",
@@ -2914,7 +4942,7 @@
   "tags": [
    "palavras difíceis"
   ],
-  "fonte": "Abel Acácio de Almeida Botelho, Amor Crioulo",
+  "fonte": "Abel Botelho, Amor Crioulo",
   "nota": "Estrutura típica: «ser o apanágio de»."
  },
  {
@@ -3005,6 +5033,63 @@
   "nota": "Objeto: pessoa ou coisa que se trata com escárnio."
  },
  {
+  "id": "pc-u590",
+  "tipo": "frase",
+  "pc": "Este era o ___ mais elevado da seita.",
+  "pt": "apotegma",
+  "aceitas": [
+   "apotegma"
+  ],
+  "distratores": [
+   "aparato",
+   "apêndice",
+   "apóstata",
+   "apostema"
+  ],
+  "escolher": true,
+  "requer": "pc-p590",
+  "requerTodas": [
+   "pc-p590"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Euclides da Cunha, Os Sertões",
+  "nota": "Aqui é a máxima que resume a doutrina da seita."
+ },
+ {
+  "id": "pc-u591",
+  "tipo": "frase",
+  "pc": "João IV, dando assim o pulso ao exame do poderoso inimigo, revelava quão ___ lhe girava o sangue nas veias.",
+  "pt": "depauperado",
+  "aceitas": [
+   "depauperado"
+  ],
+  "distratores": [
+   "despovoado",
+   "depravado",
+   "desapaixonado",
+   "desafinado"
+  ],
+  "escolher": true,
+  "requer": "pc-p591",
+  "requerTodas": [
+   "pc-p591"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Camilo Castelo Branco, O Regicida",
+  "nota": "Vem junto de «organismo», «sangue», «corpo»; costuma indicar fraqueza por doença."
+ },
+ {
   "id": "pc-u454",
   "tipo": "frase",
   "pc": "Suponha-se que, em vez de estar lançando os alicerces de uma invenção farmacêutica, tratava de ___ os elementos de uma instituição política, ou de uma reforma religiosa.",
@@ -3034,6 +5119,63 @@
   "nota": "Pede coisas a juntar: documentos, notas, trovas, elementos."
  },
  {
+  "id": "pc-u592",
+  "tipo": "frase",
+  "pc": "Mas os atributos morais, pondere, os atributos morais são de facto dignos de ___.",
+  "pt": "encômio",
+  "aceitas": [
+   "encômio"
+  ],
+  "distratores": [
+   "encomenda",
+   "comício",
+   "enclave",
+   "enquête"
+  ],
+  "escolher": true,
+  "requer": "pc-p592",
+  "requerTodas": [
+   "pc-p592"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Graciliano Ramos, Caetés (1933)",
+  "nota": "Usa-se «digno de encômio», «tecer encômios»."
+ },
+ {
+  "id": "pc-u593",
+  "tipo": "frase",
+  "pc": "Pois Yung consegue distinguir entre o intrínseco e o ___, entre a honra e a vergonha — e tais homens são raros na sua geração.",
+  "pt": "extrínseco",
+  "aceitas": [
+   "extrínseco"
+  ],
+  "distratores": [
+   "extremo",
+   "intrincado",
+   "extravagante",
+   "exíguo"
+  ],
+  "escolher": true,
+  "requer": "pc-p593",
+  "requerTodas": [
+   "pc-p593"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Chuang Tzŭ",
+  "nota": "Costuma vir em par com «intrínseco»: o que é da própria coisa e o que lhe vem de fora."
+ },
+ {
   "id": "pc-u455",
   "tipo": "frase",
   "pc": "Certo não era jocundo Afrontar de rosto a rosto As ___ de João segundo.",
@@ -3060,6 +5202,35 @@
   ],
   "fonte": "Gonçalves Dias, Solau do Senhor Rei Dom João",
   "nota": "No plural, dá ideia de arroubos de fúria."
+ },
+ {
+  "id": "pc-u594",
+  "tipo": "frase",
+  "pc": "Subjugada pelo impossível evidente, ___, a moça estraçalhou com as unhas pontudas a carta fatal.",
+  "pt": "inelutável",
+  "aceitas": [
+   "inelutável"
+  ],
+  "distratores": [
+   "inefável",
+   "indelével",
+   "inelegível",
+   "inexperto"
+  ],
+  "escolher": true,
+  "requer": "pc-p594",
+  "requerTodas": [
+   "pc-p594"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Domingos Olímpio, Luzia-Homem",
+  "nota": "Descreve o impossível diante do qual não há o que fazer."
  },
  {
   "id": "pc-u456",
@@ -3091,6 +5262,63 @@
   "nota": "Pede objeto e «com»: «cotejar A com B»."
  },
  {
+  "id": "pc-u595",
+  "tipo": "frase",
+  "pc": "Tive, durante uma semana, o cuidado de procurar afinar a minha sintaxe pela dela, mas não consegui evitar numerosos ___.",
+  "pt": "solecismos",
+  "aceitas": [
+   "solecismos"
+  ],
+  "distratores": [
+   "silogismos",
+   "sofismas",
+   "solfejos",
+   "sarcasmos"
+  ],
+  "escolher": true,
+  "requer": "pc-p595",
+  "requerTodas": [
+   "pc-p595"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Graciliano Ramos, São Bernardo (1934)",
+  "nota": "Combina com «cometer» ou «evitar»: «cometer solecismos»."
+ },
+ {
+  "id": "pc-u596",
+  "tipo": "frase",
+  "pc": "Seja pois o esforço coletivo, cumprido como um dever, a base da nossa luta contra a miséria, e alguma coisa boa e ___, estou certa, se conseguirá.",
+  "pt": "profícua",
+  "aceitas": [
+   "profícua"
+  ],
+  "distratores": [
+   "proficiente",
+   "proeminente",
+   "prolixa",
+   "pródiga"
+  ],
+  "escolher": true,
+  "requer": "pc-p596",
+  "requerTodas": [
+   "pc-p596"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Ana de Castro Osório, Às Mulheres Portuguesas; grafia atualizada",
+  "nota": "Qualifica trabalho, estudo ou esforço que rende bons frutos."
+ },
+ {
   "id": "pc-u457",
   "tipo": "frase",
   "pc": "Examinemos essa barbaridade, que nem a diplomacia portuguesa, nem alguns legisladores mais notáveis do Brasil têm podido ___, para benefício dos colonos e da própria agricultura…",
@@ -3120,6 +5348,34 @@
   "nota": "Objeto: lei, norma, costume. Em sentido estrito revoga só em parte."
  },
  {
+  "id": "pc-u597",
+  "tipo": "frase",
+  "pc": "Usavam-se então umas mordaças, que fechavam os respiráculos dos corações rebeldes ao ___ paternal: era o convento.",
+  "pt": "alvedrio",
+  "aceitas": [
+   "alvedrio"
+  ],
+  "distratores": [
+   "alvará",
+   "albergue",
+   "alcaide",
+   "alvoroço"
+  ],
+  "escolher": true,
+  "requer": "pc-p597",
+  "requerTodas": [
+   "pc-p597"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Camilo Castelo Branco, Livro de Consolação; grafia atualizada",
+  "nota": "Vem com possessivo ou adjetivo: «alvedrio paternal», «meu alvedrio»."
+ },
+ {
   "id": "pc-u458",
   "tipo": "frase",
   "pc": "Tomando o seu exemplo, os tribunais são quase sempre ___, quando julgam o português delinquente.",
@@ -3147,6 +5403,63 @@
   ],
   "fonte": "D. A. Gomes Pércheiro, Portugal e Brasil; grafia atualizada",
   "nota": "Descreve juiz, imprensa, discurso, quem se move por partido."
+ },
+ {
+  "id": "pc-u598",
+  "tipo": "frase",
+  "pc": "Admoesto-te a que me compres o meu ouro de fino quilate para te ___.",
+  "pt": "locupletares",
+  "aceitas": [
+   "locupletares"
+  ],
+  "distratores": [
+   "locomoveres",
+   "lambuzares",
+   "lamuriares",
+   "lucubrares"
+  ],
+  "escolher": true,
+  "requer": "pc-p598",
+  "requerTodas": [
+   "pc-p598"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Camilo Castelo Branco, O Romance de um Homem Rico",
+  "nota": "Aqui aparece sem o «-se» ligado: «para te locupletares»."
+ },
+ {
+  "id": "pc-u599",
+  "tipo": "frase",
+  "pc": "Sujeitando ainda por cima ao seu ___ ou autorização a aplicação da pena e mesmo sua qualidade…",
+  "pt": "beneplácito",
+  "aceitas": [
+   "beneplácito"
+  ],
+  "distratores": [
+   "benefício",
+   "beneficiário",
+   "benemérito",
+   "benzimento"
+  ],
+  "escolher": true,
+  "requer": "pc-p599",
+  "requerTodas": [
+   "pc-p599"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Oliveira Lima, O Movimento da Independência",
+  "nota": "Vem com «dar», «conceder», «negar» e «com o beneplácito de»."
  },
  {
   "id": "pc-u459",
@@ -3231,7 +5544,7 @@
    "palavras difíceis",
    "verbo"
   ],
-  "fonte": "Raul Pompéia, O Ateneu; grafia atualizada",
+  "fonte": "Raul Pompeia, O Ateneu; grafia atualizada",
   "nota": "Objeto típico: perigo, dificuldade, crítica, tempestade."
  },
  {
@@ -3407,6 +5720,35 @@
   "nota": "Rege «de» e o título que a pessoa ostenta: «blasonar de valente»."
  },
  {
+  "id": "pc-u605",
+  "tipo": "frase",
+  "pc": "Era um meio honesto de ___ de seus direitos a desditosa filha de Henrique IV, pois tal consórcio nunca se realizaria.",
+  "pt": "esbulhar",
+  "aceitas": [
+   "esbulhar"
+  ],
+  "distratores": [
+   "esbanjar",
+   "esbofetear",
+   "esburacar",
+   "esmolar"
+  ],
+  "escolher": true,
+  "requer": "pc-p605",
+  "requerTodas": [
+   "pc-p605"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Zephyrino Brandão, Pero da Covilhã; grafia atualizada",
+  "nota": "Regência: esbulhar alguém «de» seus direitos, de seus bens."
+ },
+ {
   "id": "pc-u469",
   "tipo": "frase",
   "pc": "Nesta vida lenta sinto-me coagido entre duas situações contraditórias — uma longa noite, um dia imenso e enervante, favorável à ___.",
@@ -3433,6 +5775,92 @@
   ],
   "fonte": "Graciliano Ramos, Infância (1945)",
   "nota": "Costuma vir com «favorável a», «cair em», «entregar-se à»."
+ },
+ {
+  "id": "pc-u607",
+  "tipo": "frase",
+  "pc": "Seria um nunca acabar se fossemos a ___ aqui todas as preciosíssimas joias desta coroa opulenta que veio enriquecer a nossa literatura.",
+  "pt": "exarar",
+  "aceitas": [
+   "exarar"
+  ],
+  "distratores": [
+   "exumar",
+   "exalar",
+   "exorcizar",
+   "extirpar"
+  ],
+  "escolher": true,
+  "requer": "pc-p607",
+  "requerTodas": [
+   "pc-p607"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "João de Deus, Ramo de Flores; grafia atualizada",
+  "nota": "Vem com o que se registra: «exarar aqui», «exarar uma decisão»."
+ },
+ {
+  "id": "pc-u608",
+  "tipo": "frase",
+  "pc": "O livro é um ___ de 130 páginas além de 2 de índices.",
+  "pt": "opúsculo",
+  "aceitas": [
+   "opúsculo"
+  ],
+  "distratores": [
+   "opérculo",
+   "óbolo",
+   "oratório",
+   "obelisco"
+  ],
+  "escolher": true,
+  "requer": "pc-p608",
+  "requerTodas": [
+   "pc-p608"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "António Nunes Ribeiro Sanches, Cartas sobre a educação da mocidade",
+  "nota": "Vem com o número de páginas: «um opúsculo de 130 páginas»."
+ },
+ {
+  "id": "pc-u609",
+  "tipo": "frase",
+  "pc": "E pelas pérolas, pelos Rubins de fogo e diamantes, Faiscando nos seus cabelos Como estrelas ___,",
+  "pt": "coruscantes",
+  "aceitas": [
+   "coruscantes"
+  ],
+  "distratores": [
+   "corrosivas",
+   "coriáceas",
+   "corpulentas",
+   "cortantes"
+  ],
+  "escolher": true,
+  "requer": "pc-p609",
+  "requerTodas": [
+   "pc-p609"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Olavo Bilac, Poesias (1902)",
+  "nota": "Comum em poesia, junto de «estrelas», «raios», «espada»."
  },
  {
   "id": "pc-u470",
@@ -3464,6 +5892,35 @@
   "nota": "Objeto típico: tese, prova, testemunho, acusação."
  },
  {
+  "id": "pc-u611",
+  "tipo": "frase",
+  "pc": "Desde a remota idade à idade ___ Descrença e Fé por esse mundo fora vão em perpétua luta caminhando.",
+  "pt": "hodierna",
+  "aceitas": [
+   "hodierna"
+  ],
+  "distratores": [
+   "diurna",
+   "diária",
+   "inicial",
+   "momentânea"
+  ],
+  "escolher": true,
+  "requer": "pc-p611",
+  "requerTodas": [
+   "pc-p611"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Francisco Palha, Musa Velha; grafia atualizada",
+  "nota": "Aparece em contraste com o passado: «da idade remota à idade hodierna»."
+ },
+ {
   "id": "pc-u471",
   "tipo": "frase",
   "pc": "…proclamando a justiça do Conde e ___ asperamente o procedimento do atrevido pretendente.",
@@ -3489,8 +5946,36 @@
    "palavras difíceis",
    "verbo"
   ],
-  "fonte": "conde de António Maria José de Melo César e Meneses Sabugosa, Neves de Antanho",
+  "fonte": "Conde de Sabugosa, Neves de Antanho",
   "nota": "Rege objeto direto: verberar um procedimento, um vício, um autor."
+ },
+ {
+  "id": "pc-u612",
+  "tipo": "frase",
+  "pc": "Clarimundo era um desses ___ e, durante a comoção, não se sabia bem por quê, o seu prestígio cresceu e já se falava nele para substituir o Marechal.",
+  "pt": "próceres",
+  "aceitas": [
+   "próceres"
+  ],
+  "distratores": [
+   "procônsules",
+   "pródigos",
+   "prelúdios",
+   "prisioneiros"
+  ],
+  "escolher": true,
+  "requer": "pc-p612",
+  "requerTodas": [
+   "pc-p612"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Lima Barreto, Triste Fim de Policarpo Quaresma (1915)",
+  "nota": "Vem com o grupo que lideram: próceres da república, da independência."
  },
  {
   "id": "pc-u472",
@@ -3522,6 +6007,34 @@
   "nota": "Combina com esforço, tarefa, obra, força."
  },
  {
+  "id": "pc-u613",
+  "tipo": "frase",
+  "pc": "Graças à sua pouca habilidade, Manduca convenceu-se de que não arranjaria um ___ capaz nem em quinze dias; e, pois, começou ex-abrupto, dizendo:",
+  "pt": "exórdio",
+  "aceitas": [
+   "exórdio"
+  ],
+  "distratores": [
+   "epílogo",
+   "epitáfio",
+   "silogismo",
+   "anacoluto"
+  ],
+  "escolher": true,
+  "requer": "pc-p613",
+  "requerTodas": [
+   "pc-p613"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Joaquim Manuel de Macedo, O moço loiro",
+  "nota": "Fica no começo: «preparar o exórdio», «exórdio do discurso»."
+ },
+ {
   "id": "pc-u474",
   "tipo": "frase",
   "pc": "Volvendo ao céu o olhar torvo e ___, solta ainda uma vez seu grito de guerra.",
@@ -3547,7 +6060,7 @@
    "palavras difíceis",
    "adjetivo"
   ],
-  "fonte": "José Martiniano de Alencar, Ubirajara",
+  "fonte": "José de Alencar, Ubirajara",
   "nota": "Aplica-se a pessoa, olhar, voz ou gesto marcados pela raiva."
  },
  {
@@ -3608,6 +6121,64 @@
   "nota": "Aparece com «lançar», «cobrir de», «livrar-se do labéu»."
  },
  {
+  "id": "pc-u614",
+  "tipo": "frase",
+  "pc": "… dando alma às ruínas, evocando-lhes o passado ___ de vida dos tempos do poderio da família dos seus possuidores.",
+  "pt": "pletórico",
+  "aceitas": [
+   "pletórico"
+  ],
+  "distratores": [
+   "plúmbeo",
+   "plácido",
+   "patético",
+   "pusilânime"
+  ],
+  "escolher": true,
+  "requer": "pc-p614",
+  "requerTodas": [
+   "pc-p614"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "José do Patrocínio, Os Retirantes",
+  "nota": "Com «de», indica aquilo de que se está cheio: «pletórico de vida»."
+ },
+ {
+  "id": "pc-u615",
+  "tipo": "frase",
+  "pc": "Queria ser frade, o frade desprezado e ___ do século dezenove.",
+  "pt": "apupado",
+  "aceitas": [
+   "apupado"
+  ],
+  "distratores": [
+   "apurado",
+   "apoiado",
+   "aplaudido",
+   "aprumado"
+  ],
+  "escolher": true,
+  "requer": "pc-p615",
+  "requerTodas": [
+   "pc-p615"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Almeida Garrett, Viagens na Minha Terra; grafia atualizada",
+  "nota": "O particípio «apupado» vem muitas vezes ao lado de «desprezado», «escarnecido»."
+ },
+ {
   "id": "pc-u477",
   "tipo": "frase",
   "pc": "Mas, não, as ideias não morrem; elas são o ___ da justiça.",
@@ -3634,6 +6205,64 @@
   ],
   "fonte": "Machado de Assis, Quincas Borba (1891)",
   "nota": "Costuma vir com «da justiça», «da paz», «sagrado»: a bandeira de um ideal."
+ },
+ {
+  "id": "pc-u616",
+  "tipo": "frase",
+  "pc": "À popa ainda se armava, e ledo encontra Ao ___ Menelau, que assim lhe fala: “Armas-te, augusto irmão?",
+  "pt": "pugnaz",
+  "aceitas": [
+   "pugnaz"
+  ],
+  "distratores": [
+   "pusilânime",
+   "tíbio",
+   "pacato",
+   "indolente"
+  ],
+  "escolher": true,
+  "requer": "pc-p616",
+  "requerTodas": [
+   "pc-p616"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Homero, Ilíada",
+  "nota": "Epíteto de guerreiros e de quem não foge ao confronto."
+ },
+ {
+  "id": "pc-u617",
+  "tipo": "frase",
+  "pc": "Mais tarde, algum crítico da escola do autor ___ as suas páginas para restituir costumes extintos.",
+  "pt": "compulsará",
+  "aceitas": [
+   "compulsará"
+  ],
+  "distratores": [
+   "compelirá",
+   "computará",
+   "complicará",
+   "compensará"
+  ],
+  "escolher": true,
+  "requer": "pc-p617",
+  "requerTodas": [
+   "pc-p617"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Machado de Assis, Relíquias de Casa Velha; grafia atualizada",
+  "nota": "Tem como objeto o que se consulta: páginas, documentos, fontes."
  },
  {
   "id": "pc-u479",
@@ -3665,6 +6294,35 @@
   "nota": "Qualifica pessoa, ar, expressão ou ambiente: «solenidade sorumbática», «ar sorumbático»."
  },
  {
+  "id": "pc-u618",
+  "tipo": "frase",
+  "pc": "O velho, para ___ o crime, certo de que o desconhecido não podia mais evadir-se, desamarrou-o, e chamou para a saleta toda a família.",
+  "pt": "coonestar",
+  "aceitas": [
+   "coonestar"
+  ],
+  "distratores": [
+   "cooptar",
+   "coagir",
+   "coarctar",
+   "coabitar"
+  ],
+  "escolher": true,
+  "requer": "pc-p618",
+  "requerTodas": [
+   "pc-p618"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "José do Patrocínio, Os Retirantes",
+  "nota": "Em geral vem com um objeto que precisa de verniz: o crime, o recuo, a derrota, o erro."
+ },
+ {
   "id": "pc-u480",
   "tipo": "frase",
   "pc": "E aos homens de bom ___ Na terra paz e ventura; Paz e ventura constante, Senão na vida que passa, Na vida que sempre dura.",
@@ -3691,6 +6349,35 @@
   ],
   "fonte": "Gonçalves Dias, Gulnare e Mustafá",
   "nota": "Em «de bom talante», significa de boa vontade."
+ },
+ {
+  "id": "pc-u619",
+  "tipo": "frase",
+  "pc": "Com Pereira se dava um fato natural e ___ nas singularidades do mundo moral.",
+  "pt": "comezinho",
+  "aceitas": [
+   "comezinho"
+  ],
+  "distratores": [
+   "cominatório",
+   "comunal",
+   "comestível",
+   "comunitário"
+  ],
+  "escolher": true,
+  "requer": "pc-p619",
+  "requerTodas": [
+   "pc-p619"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Visconde de Taunay, Inocência; grafia atualizada",
+  "nota": "Aqui vem junto de «natural», com o sentido de corriqueiro, sem novidade."
  },
  {
   "id": "pc-u482",
@@ -3722,6 +6409,63 @@
   "nota": "Objeto: mérito, honra, prudência, crédito de alguém."
  },
  {
+  "id": "pc-u620",
+  "tipo": "frase",
+  "pc": "Encostada ao cavalo, penteando-lhe as crinas com os dedos, ouviria Rubião louvar-lhe a ___ e o garbo...",
+  "pt": "afoiteza",
+  "aceitas": [
+   "afoiteza"
+  ],
+  "distratores": [
+   "aflição",
+   "afobação",
+   "afronta",
+   "afasia"
+  ],
+  "escolher": true,
+  "requer": "pc-p620",
+  "requerTodas": [
+   "pc-p620"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "nota": "Aparece em pares de qualidades: «a afoiteza e o garbo»."
+ },
+ {
+  "id": "pc-u621",
+  "tipo": "frase",
+  "pc": "A seu parecer ela se impõe feito um corolário inflexível e ___ de princípios e tradições políticas que a grande República não poderá negar ou iludir…",
+  "pt": "insofismável",
+  "aceitas": [
+   "insofismável"
+  ],
+  "distratores": [
+   "insofrível",
+   "insolúvel",
+   "insondável",
+   "insulso"
+  ],
+  "escolher": true,
+  "requer": "pc-p621",
+  "requerTodas": [
+   "pc-p621"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Euclides da Cunha, Contrastes e Confrontos",
+  "nota": "Anda com palavras de prova e raciocínio: prova, verdade, lógica, evidência."
+ },
+ {
   "id": "pc-u483",
   "tipo": "frase",
   "pc": "…que ataque as leis fundamentais do Estado, que injurie o rei, que ___ a instituição da família!",
@@ -3749,6 +6493,63 @@
   ],
   "fonte": "Eça de Queirós, O Crime do Padre Amaro; grafia atualizada",
   "nota": "Fica ao lado de verbos de ofensa: injuriar, achincalhar, vituperar."
+ },
+ {
+  "id": "pc-u622",
+  "tipo": "frase",
+  "pc": "Um ___ fedorento, Coisa de pregador, talvez... cheira a convento...",
+  "pt": "alfarrábio",
+  "aceitas": [
+   "alfarrábio"
+  ],
+  "distratores": [
+   "alfaiate",
+   "alfarroba",
+   "alvará",
+   "alicerce"
+  ],
+  "escolher": true,
+  "requer": "pc-p622",
+  "requerTodas": [
+   "pc-p622"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Guerra Junqueiro, Pátria; grafia atualizada",
+  "nota": "Costuma vir com ar de coisa empoeirada: «alfarrábio fedorento»."
+ },
+ {
+  "id": "pc-u623",
+  "tipo": "frase",
+  "pc": "Primogênito dos três filhos dos Silveiras Lobo, de Mosteirô, o pequeno João fora criado com todas as mimadas preferências e toda a ___ despreocupação dos antigos morgados.",
+  "pt": "jactanciosa",
+  "aceitas": [
+   "jactanciosa"
+  ],
+  "distratores": [
+   "jaculatória",
+   "jacobina",
+   "jejuna",
+   "janota"
+  ],
+  "escolher": true,
+  "requer": "pc-p623",
+  "requerTodas": [
+   "pc-p623"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Abel Botelho, Amor Crioulo; grafia atualizada",
+  "nota": "Qualifica atitude, tom ou despreocupação de quem se exibe."
  },
  {
   "id": "pc-u484",
@@ -3865,6 +6666,64 @@
   "nota": "Vem com «entre» + os termos opostos: antinomia entre dois princípios."
  },
  {
+  "id": "pc-u624",
+  "tipo": "frase",
+  "pc": "… enquanto que esta usa do português mais correto, mais ___, e não desconhece a linguagem rústica.",
+  "pt": "lídimo",
+  "aceitas": [
+   "lídimo"
+  ],
+  "distratores": [
+   "lívido",
+   "lépido",
+   "lasso",
+   "tépido"
+  ],
+  "escolher": true,
+  "requer": "pc-p624",
+  "requerTodas": [
+   "pc-p624"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Geraldo Lapenda, Os Dialetos da Itália",
+  "nota": "Qualifica a língua tida por pura, sem as marcas de fora."
+ },
+ {
+  "id": "pc-u625",
+  "tipo": "frase",
+  "pc": "Na família, durante a ausência do moço soldado, houve mortes de pessoas queridas, que não lhe participaram para o não ___, pobre rapaz.",
+  "pt": "contristar",
+  "aceitas": [
+   "contristar"
+  ],
+  "distratores": [
+   "contratar",
+   "contrair",
+   "contestar",
+   "contrapor"
+  ],
+  "escolher": true,
+  "requer": "pc-p625",
+  "requerTodas": [
+   "pc-p625"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Gabriel Pereira, Pelos Subúrbios e Vizinhanças de Lisboa; grafia atualizada",
+  "nota": "Aqui o verbo é transitivo: contristar alguém é causar-lhe tristeza."
+ },
+ {
   "id": "pc-u488",
   "tipo": "frase",
   "pc": "Era o quadro da Samaritana, ___ o tranquilo Nazareno, junto do poço bíblico, na velha Palestina.",
@@ -3921,6 +6780,35 @@
   ],
   "fonte": "Teófilo Braga, Viriato; grafia atualizada",
   "nota": "Combina com «idade», «ancião», «mestre»: aponta a idade avançada."
+ },
+ {
+  "id": "pc-u627",
+  "tipo": "frase",
+  "pc": "Domingos não se deixavam ___ por tretas nem sancadilhas à sua credulidade, quando queimavam hereges da laia de Gouveia.",
+  "pt": "embair",
+  "aceitas": [
+   "embair"
+  ],
+  "distratores": [
+   "embeber",
+   "embarcar",
+   "embargar",
+   "embutir"
+  ],
+  "escolher": true,
+  "requer": "pc-p627",
+  "requerTodas": [
+   "pc-p627"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Camilo Castelo Branco, Noites de Insônia; grafia atualizada",
+  "nota": "Quase sempre com «deixar-se embair por» algo ou alguém."
  },
  {
   "id": "pc-u490",
@@ -3980,6 +6868,63 @@
   "nota": "Fala de luz, de metal e de astros: «sol rutilante»."
  },
  {
+  "id": "pc-u628",
+  "tipo": "frase",
+  "pc": "Se a consciência lhe não ___ esta infâmia, teve razão ao dizer-me que me enganei procurando-o.",
+  "pt": "exprobra",
+  "aceitas": [
+   "exprobra"
+  ],
+  "distratores": [
+   "expropria",
+   "exuma",
+   "exulta",
+   "exala"
+  ],
+  "escolher": true,
+  "requer": "pc-p628",
+  "requerTodas": [
+   "pc-p628"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Júlio Dinis, A Morgadinha dos Canaviais; grafia atualizada",
+  "nota": "O sujeito pode ser a própria consciência: «a consciência exprobra»."
+ },
+ {
+  "id": "pc-u629",
+  "tipo": "frase",
+  "pc": "… não possui recursos poderosos que importem a realização do seu ___, e considera as hecatombes o prêmio daqueles que protestam contra a egoística política da metrópole.",
+  "pt": "desiderato",
+  "aceitas": [
+   "desiderato"
+  ],
+  "distratores": [
+   "desengano",
+   "desalento",
+   "desterro",
+   "desacato"
+  ],
+  "escolher": true,
+  "requer": "pc-p629",
+  "requerTodas": [
+   "pc-p629"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "S. A. Sisson, Galeria dos Brasileiros Ilustres",
+  "nota": "Combina com «realização», «alcançar» e «atingir»: é o fim que se persegue."
+ },
+ {
   "id": "pc-u493",
   "tipo": "frase",
   "pc": "O padre José Pitança, de alva e estola, no meio do adro, estendeu com vigor os braços, ___ no vago com os punhos apontados ao céu:",
@@ -4033,8 +6978,37 @@
   "tags": [
    "palavras difíceis"
   ],
-  "fonte": "conde de António Maria José de Melo César e Meneses Sabugosa, Neves de antanho",
+  "fonte": "Conde de Sabugosa, Neves de antanho",
   "nota": "Costuma vir com «de» depois de verbos como salpicar, cobrir, encher."
+ },
+ {
+  "id": "pc-u630",
+  "tipo": "frase",
+  "pc": "Ernestina, no momento de abraçar Margarida Cândida, segredara-lhe com ___ disfarce: «Pode contar comigo.»",
+  "pt": "solerte",
+  "aceitas": [
+   "solerte"
+  ],
+  "distratores": [
+   "solitário",
+   "soluçante",
+   "soturno",
+   "sôfrego"
+  ],
+  "escolher": true,
+  "requer": "pc-p630",
+  "requerTodas": [
+   "pc-p630"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Alberto Pimentel, A guerrilha de Frei Simão: romance historico; grafia atualizada",
+  "nota": "Pode vir antes ou depois do nome: «solerte disfarce», «diplomata solerte»."
  },
  {
   "id": "pc-u495",
@@ -4066,6 +7040,35 @@
   "nota": "O objeto é uma ofensa, culpa ou pena, e o alvo vem com «a»."
  },
  {
+  "id": "pc-u631",
+  "tipo": "frase",
+  "pc": "Pelo espiralado intervalo entre duas línguas de lume apercebia-se uma caveira oblonga, na rubra ardência do braseiro luzindo a sua ___ alvura, macabramente.",
+  "pt": "álgida",
+  "aceitas": [
+   "álgida"
+  ],
+  "distratores": [
+   "álgica",
+   "ágil",
+   "áspera",
+   "ávida"
+  ],
+  "escolher": true,
+  "requer": "pc-p631",
+  "requerTodas": [
+   "pc-p631"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Abel Botelho, Amor Crioulo",
+  "nota": "Qualifica o que tem frio de gelo: transpiração álgida, alvura álgida."
+ },
+ {
   "id": "pc-u496",
   "tipo": "frase",
   "pc": "Galba não queria perder o ensejo que se lhe apresentava; era o meio de voltar à Espanha e de reconstituir a sua riqueza ___ ou perdida.",
@@ -4093,6 +7096,34 @@
   ],
   "fonte": "Teófilo Braga, Viriato; grafia atualizada",
   "nota": "Também no particípio: «fortuna malbaratada», «tempo malbaratado»."
+ },
+ {
+  "id": "pc-u632",
+  "tipo": "frase",
+  "pc": "… a relação das repartições oficiais e entidades de classe credenciadas a expedir a certificação a que se refere o Artigo anterior, com o registro e ___ das assinaturas autorizadas.",
+  "pt": "fac-símile",
+  "aceitas": [
+   "fac-símile"
+  ],
+  "distratores": [
+   "glossário",
+   "compêndio",
+   "manual",
+   "epítome"
+  ],
+  "escolher": true,
+  "requer": "pc-p632",
+  "requerTodas": [
+   "pc-p632"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Tratado de Assunção",
+  "nota": "Aqui é a reprodução exata das assinaturas, para conferir a firma."
  },
  {
   "id": "pc-u497",
@@ -4124,6 +7155,34 @@
   "nota": "Introduz a fala de um personagem, depois do travessão."
  },
  {
+  "id": "pc-u633",
+  "tipo": "frase",
+  "pc": "Às viandas se deitam; e saciados, Príamo admira o talhe do Pelides E a divina beleza, admira Aquiles A ___ e presença do Dardânio.",
+  "pt": "facúndia",
+  "aceitas": [
+   "facúndia"
+  ],
+  "distratores": [
+   "faina",
+   "fadiga",
+   "falácia",
+   "fanfarra"
+  ],
+  "escolher": true,
+  "requer": "pc-p633",
+  "requerTodas": [
+   "pc-p633"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Homero, Ilíada",
+  "nota": "Qualidade de orador: soltura e abundância de palavras."
+ },
+ {
   "id": "pc-u498",
   "tipo": "frase",
   "pc": "Saiu ___ ao armazém dos mais elegantes estofos, e comprou alfaias magníficas.",
@@ -4153,6 +7212,35 @@
   "nota": "Costuma vir como predicativo: «chegou açodado», «saiu açodado»."
  },
  {
+  "id": "pc-u634",
+  "tipo": "frase",
+  "pc": "— Nas ocasiões é que se conhecem os homens — ___ o ferrador. — Ora vamos... não há tempo para falatório.",
+  "pt": "redarguiu",
+  "aceitas": [
+   "redarguiu"
+  ],
+  "distratores": [
+   "redigiu",
+   "reduziu",
+   "reergueu",
+   "recuou"
+  ],
+  "escolher": true,
+  "requer": "pc-p634",
+  "requerTodas": [
+   "pc-p634"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "fonte": "Camilo Castelo Branco, Amor de Perdição (1862)",
+  "nota": "Em narrativas, vem depois da fala, no pretérito: «redarguiu o ferrador»."
+ },
+ {
   "id": "pc-u499",
   "tipo": "frase",
   "pc": "Nenhum livro de prosa ou verso, nenhuma publicação ___ no-lo diz, exceto o livro obscuro ou escarnecido do Olho de Vidro.",
@@ -4180,6 +7268,149 @@
   ],
   "fonte": "Camilo Castelo Branco, O Olho de Vidro; grafia atualizada",
   "nota": "Qualifica fonte, testemunha, autor ou documento do mesmo tempo dos fatos."
+ },
+ {
+  "id": "pc-u638",
+  "tipo": "frase",
+  "pc": "Além dos fatos citados nesses lugares, temos documento direto e ___ de que o assassínio era um meio ordinário de governo…",
+  "pt": "irrefragável",
+  "aceitas": [
+   "irrefragável"
+  ],
+  "distratores": [
+   "inexorável",
+   "inexpugnável",
+   "inalienável",
+   "inefável"
+  ],
+  "escolher": true,
+  "requer": "pc-p638",
+  "requerTodas": [
+   "pc-p638"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Alexandre Herculano, História da Origem e Estabelecimento da Inquisição em Portugal",
+  "nota": "Vem junto de «prova», «testemunho», «documento»."
+ },
+ {
+  "id": "pc-u639",
+  "tipo": "frase",
+  "pc": "Os quiniquinaus têm seus ___ especiais: palavras próprias.",
+  "pt": "idiotismos",
+  "aceitas": [
+   "idiotismos"
+  ],
+  "distratores": [
+   "silogismos",
+   "sofismas",
+   "ostracismos",
+   "catecismos"
+  ],
+  "escolher": true,
+  "requer": "pc-p639",
+  "requerTodas": [
+   "pc-p639"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Visconde de Taunay, Cenas de Viagem; grafia atualizada",
+  "nota": "Fala-se dos idiotismos de uma língua, de uma região ou de um povo."
+ },
+ {
+  "id": "pc-u640",
+  "tipo": "frase",
+  "pc": "… dispôs-se o arcebispo a vir ao Rio de Janeiro beijar a ___ mão que incessante se tem mostrado em beneficiá-lo.",
+  "pt": "munificente",
+  "aceitas": [
+   "munificente"
+  ],
+  "distratores": [
+   "mesquinha",
+   "implacável",
+   "ardilosa",
+   "inclemente"
+  ],
+  "escolher": true,
+  "requer": "pc-p640",
+  "requerTodas": [
+   "pc-p640"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "S. A. Sisson, Galeria dos Brasileiros Ilustres",
+  "nota": "Qualifica quem dá e protege, como o rei, o mecenas, o benfeitor."
+ },
+ {
+  "id": "pc-u641",
+  "tipo": "frase",
+  "pc": "… embutem-se, em tauxias De um correto ___, nas armas luzidias Dos generais.",
+  "pt": "lavor",
+  "aceitas": [
+   "lavor"
+  ],
+  "distratores": [
+   "lavabo",
+   "lavatório",
+   "labirinto",
+   "lacre"
+  ],
+  "escolher": true,
+  "requer": "pc-p641",
+  "requerTodas": [
+   "pc-p641"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Olavo Bilac, Poesias (1902); grafia atualizada",
+  "nota": "Vem com «de»: «um lavor correto», «lavor do verso»."
+ },
+ {
+  "id": "pc-u642",
+  "tipo": "frase",
+  "pc": "… os mosteiros, como o de Alcobaça e outros, regorgitam de quanto a abundância tem de mais ___, e a ciência da vida de mais requintado e cómodo...",
+  "pt": "pantagruélico",
+  "aceitas": [
+   "pantagruélico"
+  ],
+  "distratores": [
+   "pantanoso",
+   "paquidérmico",
+   "patriarcal",
+   "patriótico"
+  ],
+  "escolher": true,
+  "requer": "pc-p642",
+  "requerTodas": [
+   "pc-p642"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Maria Amalia Vaz de Carvalho, Cenas do Século XVIII em Portugal; grafia atualizada",
+  "nota": "Fala da fartura da mesa dos conventos."
  },
  {
   "id": "pc-u500",
@@ -4322,5 +7553,147 @@
   ],
   "fonte": "Joaquim Nabuco, Minha Formação (1900)",
   "nota": "Muito usado em «cair no lugar-comum»."
+ },
+ {
+  "id": "pc-u645",
+  "tipo": "frase",
+  "pc": "Nem tu, Castro fortíssimo, escolheste O descanso da pátria: o campo, e as armas Fizeram renovar no ___ peito Todo o heroico valor dos teus passados.",
+  "pt": "ínclito",
+  "aceitas": [
+   "ínclito"
+  ],
+  "distratores": [
+   "iníquo",
+   "incólume",
+   "inócuo",
+   "ínfimo"
+  ],
+  "escolher": true,
+  "requer": "pc-p645",
+  "requerTodas": [
+   "pc-p645"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Basílio da Gama, O Uraguai (1769)",
+  "nota": "Vem antes do nome, em tom de elogio solene: «ínclito peito», «ínclitos varões»."
+ },
+ {
+  "id": "pc-u646",
+  "tipo": "frase",
+  "pc": "Tenho saudade das cidades vastas, Dos ___ cerros, do ambiente azul...",
+  "pt": "ínvios",
+  "aceitas": [
+   "ínvios"
+  ],
+  "distratores": [
+   "inválidos",
+   "inviáveis",
+   "invertidos",
+   "inócuos"
+  ],
+  "escolher": true,
+  "requer": "pc-p646",
+  "requerTodas": [
+   "pc-p646"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "fonte": "Castro Alves, Versos de um viajante",
+  "nota": "Qualifica lugares sem passagem: cerros, matas, sertões ínvios."
+ },
+ {
+  "id": "pc-u648",
+  "tipo": "frase",
+  "pc": "Fazia-lhe requerimentos, cartas de amor, ensinava-lhe os ___ de alguns preparatórios; mas a sua pobreza intelectual e a sua malandragem resistiam…",
+  "pt": "prolegômenos",
+  "aceitas": [
+   "prolegômenos"
+  ],
+  "distratores": [
+   "protocolos",
+   "prospectos",
+   "prolóquios",
+   "pródromos"
+  ],
+  "escolher": true,
+  "requer": "pc-p648",
+  "requerTodas": [
+   "pc-p648"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Lima Barreto, Recordações do Escrivão Isaías Caminha (1909)",
+  "nota": "Aqui são as noções básicas de uma matéria, com que se começa a estudá-la."
+ },
+ {
+  "id": "pc-u649",
+  "tipo": "frase",
+  "pc": "E muito azafamado, sem ___ de maioral nem jeitos de soberba, as mangas arregaçadas pelos cotovelos, o Tomé ia e vinha, dando ordens…",
+  "pt": "prosápias",
+  "aceitas": [
+   "prosápias"
+  ],
+  "distratores": [
+   "prosopopeias",
+   "prosélitos",
+   "prosódias",
+   "prosas"
+  ],
+  "escolher": true,
+  "requer": "pc-p649",
+  "requerTodas": [
+   "pc-p649"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Trindade Coelho, Os Meus Amores",
+  "nota": "No plural: «cheio de prosápias», «sem prosápias»."
+ },
+ {
+  "id": "pc-u650",
+  "tipo": "frase",
+  "pc": "… E açulando odientos ___, Desvaira, cega, os corações leais E faz os adultérios!",
+  "pt": "vitupérios",
+  "aceitas": [
+   "vitupérios"
+  ],
+  "distratores": [
+   "vitualhas",
+   "vitrais",
+   "vitelos",
+   "viáticos"
+  ],
+  "escolher": true,
+  "requer": "pc-p650",
+  "requerTodas": [
+   "pc-p650"
+  ],
+  "pergunta": "Que palavra completa a frase?",
+  "selo": "uso",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "fonte": "Acúrcio Correia da Silva, Dor e Luz; grafia atualizada",
+  "nota": "Costuma aparecer no plural, com verbos como «lançar», «açular»."
  }
 ]

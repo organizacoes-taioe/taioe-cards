@@ -1,4 +1,7 @@
-# Palavras raras: o português culto para quem fala português (`pc-pt`)
+# Português: as palavras difíceis, para quem fala português (`pc-pt`)
+
+Até 27/11/2026 o curso se chamava «Palavras raras» e só tinha as palavras dos livros (§1–§5, o
+piloto). Desde então: §6.
 
 Pedido do Gere (20/11/2026): cards para aprender as palavras incomuns do português, para quem já
 fala português, «como no latim», focados no significado e no modo de uso, com um card que compare
@@ -75,3 +78,37 @@ Tudo em `fonte/raras/` (no repositório), um script por passo:
 - Próximo: o Gere estuda uma semana e aponta. Depois, as outras obras em português da
   Biblioteca (128 arquivos de vocabulário) e a trilha das palavras cultas de hoje (D2), sempre
   com frases reais.
+
+## 6. O «Português» (27/11/2026)
+
+Pedido do Gere: «não estou gostando de ver apenas palavras muito raras. Tem muitas palavras
+difíceis do português que eu não conheço ou não domino, que seriam mais importantes»; «O usuario
+não vai precisar selecionar nenhum texto»; «Nos comentarios do card, sempre diga de qual texto
+veio a frase de referência». Contraproposta aprovada com as recomendações.
+
+- **Nome**: «Português» (o baralho segue `pc`).
+- **Sem textos**: só a ida (modo `trilhas`), mas sem escolher obra; toda palavra pode estrear, na
+  ordem do baralho (`app.js`: `RARAS`, `COM_TEXTOS`, `ORDEM_NO_BARALHO`); as frases de escrever e de
+  uso vêm depois da palavra, como antes. As partes dos livros não vão mais ao app.
+- **A fonte**: todo card com frase tem o campo `fonte`, que o app mostra no fim da nota
+  («📖 Frase de …»).
+- **A lista dele**: 946 palavras difíceis em 8 grupos (`../anexos/portugues-lista/`, fora do git),
+  num link particular em que ele marcou as que quer aprender. Leva 1 = as 195 marcadas + o fim das
+  listas de adjetivos, verbos e substantivos, onde ele parou «quando já estava clicando em tudo»
+  (347). Expressões latinas, parônimos e sentidos esquecidos ficaram para outra rodada.
+  Calibragem: ele conhece a faixa comum (kafkiano, lacônico, tergiversar, idôneo); as próximas
+  levas podem trazer as que ele pulou, mas a 1ª foca nas que ele conhece pior.
+- **Ordem da fila**: as marcadas antes, com os grupos em rodízio; depois o resto da leva; depois
+  as dos livros.
+- **Frases reais**: `lista.py` (Biblioteca, originais em português; depois o Gutenberg em
+  português, `/mnt/arquivos/gutenberg/_Portuguese`, só no desktop) e `wikisource.py` (pt.wikisource,
+  leis incluídas) para as que têm menos de 3. Ortografia antiga vai atualizada (só a ortografia),
+  com «grafia atualizada» na fonte. Tradução só quando não há outra frase. Palavra sem frase real
+  fica de fora (38 na leva 1: os termos de retórica, como zeugma e hipálage, quase todos).
+- **Como se faz**: `lista.py` → `wikisource.py` → lotes de ~40 → agentes Sonnet
+  (`briefs/LISTA.md`) → `verificar_lista.py` → revisão por outros agentes (`briefs/REVISAO-LISTA.md`,
+  que gravam `revisada-N.jsonl`) → `montar.py`. Dados em `trabalho/lista/` (`leva-N.json`, os
+  lotes e as revisadas, `ids.json` com os números fixos de cada palavra). Correção de card: na
+  linha da palavra em `trabalho/lista/lotes/revisada-N.jsonl`, e montar de novo.
+- **Leva 1** (27/11): 309 palavras, 304 cards de escrever e 269 de uso (`pc-p342` em diante),
+  em `fonte/cards/pc/00-lista-*.json`.

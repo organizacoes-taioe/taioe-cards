@@ -322,6 +322,32 @@
   ]
  },
  {
+  "id": "pc-e506",
+  "tipo": "frase",
+  "pc": "ponto do céu situado exatamente sob os pés do observador, oposto ao zênite",
+  "pt": "nadir",
+  "aceitas": [
+   "nadir"
+  ],
+  "distratores": [
+   "zênite",
+   "azimute",
+   "apogeu",
+   "perigeu"
+  ],
+  "requer": "pc-p506",
+  "requerTodas": [
+   "pc-p506"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo de astronomia, oposto de «zênite». Em sentido figurado, o ponto mais baixo de uma trajetória: «o nadir da carreira»."
+ },
+ {
   "id": "pc-e352",
   "tipo": "frase",
   "pc": "conjunção culta que introduz uma concessão, no lugar de «embora»",
@@ -479,6 +505,100 @@
   ]
  },
  {
+  "id": "pc-e507",
+  "tipo": "frase",
+  "pc": "compra e venda de coisas sagradas ou de cargos eclesiásticos",
+  "pt": "simonia",
+  "aceitas": [
+   "simonias"
+  ],
+  "distratores": [
+   "sacrilégio",
+   "nepotismo",
+   "idolatria",
+   "apostasia"
+  ],
+  "requer": "pc-p507",
+  "requerTodas": [
+   "pc-p507"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, do vocabulário religioso e histórico; o nome vem de Simão, o Mago, que quis comprar o dom de Deus. No figurado, é o comércio de cargos e favores."
+ },
+ {
+  "id": "pc-e508",
+  "tipo": "frase",
+  "pc": "que enfrenta o perigo sem medo",
+  "pt": "intrépido",
+  "aceitas": [
+   "intrépida",
+   "intrépidas",
+   "intrépidos"
+  ],
+  "distratores": [
+   "intrincado",
+   "intransigente",
+   "impertinente",
+   "intempestivo"
+  ],
+  "requer": "pc-p508",
+  "requerTodas": [
+   "pc-p508"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de tom elevado; combina com «guerreiro», «soldado», «viajante». Também se usa como substantivo.",
+  "sinonimos": [
+   "corajoso",
+   "destemido",
+   "valente",
+   "audaz"
+  ]
+ },
+ {
+  "id": "pc-e509",
+  "tipo": "frase",
+  "pc": "lançar uma ideia ou hipótese para ser considerada",
+  "pt": "aventar",
+  "aceitas": [
+   "aventar"
+  ],
+  "distratores": [
+   "aventurar",
+   "avantajar",
+   "avistar",
+   "avençar"
+  ],
+  "requer": "pc-p509",
+  "requerTodas": [
+   "pc-p509"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto neste sentido, comum com «ideia», «hipótese», «possibilidade». Não confundir com «aventurar-se». Também significa expor ao vento.",
+  "sinonimos": [
+   "sugerir",
+   "propor",
+   "lançar",
+   "cogitar"
+  ]
+ },
+ {
   "id": "pc-e357",
   "tipo": "frase",
   "pc": "pessoa sem caráter, digna de desprezo; canalha",
@@ -507,6 +627,223 @@
    "canalha",
    "patife"
   ]
+ },
+ {
+  "id": "pc-e510",
+  "tipo": "frase",
+  "pc": "principalmente, sobretudo, de modo especial",
+  "pt": "mormente",
+  "aceitas": [
+   "mormente"
+  ],
+  "distratores": [
+   "normalmente",
+   "unicamente",
+   "fortemente",
+   "geralmente"
+  ],
+  "requer": "pc-p510",
+  "requerTodas": [
+   "pc-p510"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Advérbio culto, que destaca um caso dentro de um conjunto: «mormente quando», «mormente se». Equivale a «sobretudo».",
+  "sinonimos": [
+   "principalmente",
+   "sobretudo",
+   "especialmente",
+   "particularmente"
+  ]
+ },
+ {
+  "id": "pc-e511",
+  "tipo": "frase",
+  "pc": "obstinação em manter uma conduta ou opinião, sem ceder",
+  "pt": "contumácia",
+  "aceitas": [
+   "contumácias"
+  ],
+  "distratores": [
+   "contumélia",
+   "contingência",
+   "contiguidade",
+   "contrição"
+  ],
+  "requer": "pc-p511",
+  "requerTodas": [
+   "pc-p511"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; no direito, também a falta de quem não comparece a juízo. Adjetivo: «contumaz». Não confundir com «contumélia» (injúria).",
+  "sinonimos": [
+   "teimosia",
+   "obstinação",
+   "pertinácia"
+  ]
+ },
+ {
+  "id": "pc-e512",
+  "tipo": "frase",
+  "pc": "que traz desgraça ou grande prejuízo",
+  "pt": "nefasto",
+  "aceitas": [
+   "nefasta",
+   "nefastas",
+   "nefastos"
+  ],
+  "distratores": [
+   "fastoso",
+   "nefelibata",
+   "nevrálgico",
+   "néscio"
+  ],
+  "requer": "pc-p512",
+  "requerTodas": [
+   "pc-p512"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de sentido forte: «influência nefasta», «dia nefasto». Não confundir com «nefando», que é abominável.",
+  "sinonimos": [
+   "funesto",
+   "prejudicial",
+   "ruim"
+  ]
+ },
+ {
+  "id": "pc-e513",
+  "tipo": "frase",
+  "pc": "ficar de cara fechada, calado e ressentido por contrariedade",
+  "pt": "amuar",
+  "aceitas": [
+   "amuar"
+  ],
+  "distratores": [
+   "amainar",
+   "amansar",
+   "amolar",
+   "amordaçar"
+  ],
+  "requer": "pc-p513",
+  "requerTodas": [
+   "pc-p513"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo coloquial-literário; o particípio «amuado» e o substantivo «amuo» são os mais comuns.",
+  "sinonimos": [
+   "emburrar"
+  ]
+ },
+ {
+  "id": "pc-e514",
+  "tipo": "frase",
+  "pc": "grupo de pessoas ilustres de uma mesma época ou área",
+  "pt": "plêiade",
+  "aceitas": [
+   "pléiade",
+   "pléiades",
+   "plêiades"
+  ],
+  "distratores": [
+   "pletora",
+   "plebe",
+   "falange",
+   "coorte"
+  ],
+  "requer": "pc-p514",
+  "requerTodas": [
+   "pc-p514"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, com «de» e o plural das pessoas («uma plêiade de escritores»). Também é o nome de um aglomerado de estrelas, as Plêiades.",
+  "sinonimos": [
+   "grupo",
+   "galeria"
+  ]
+ },
+ {
+  "id": "pc-e515",
+  "tipo": "frase",
+  "pc": "advérbio culto que significa principalmente, em especial",
+  "pt": "máxime",
+  "aceitas": [
+   "máxime"
+  ],
+  "distratores": [
+   "ademais",
+   "outrossim",
+   "jamais",
+   "tampouco"
+  ],
+  "requer": "pc-p515",
+  "requerTodas": [
+   "pc-p515"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Advérbio culto, mais de texto escrito, que destaca um termo: «máxime quando», «máxime nas províncias». Equivale a «mormente».",
+  "sinonimos": [
+   "sobretudo",
+   "principalmente",
+   "especialmente",
+   "mormente"
+  ]
+ },
+ {
+  "id": "pc-e516",
+  "tipo": "frase",
+  "pc": "regime em que o poder político é exercido pelos mais ricos",
+  "pt": "plutocracia",
+  "aceitas": [
+   "plutocracia"
+  ],
+  "distratores": [
+   "aristocracia",
+   "teocracia",
+   "gerontocracia",
+   "burocracia"
+  ],
+  "requer": "pc-p516",
+  "requerTodas": [
+   "pc-p516"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Do grego «ploûtos» (riqueza). Também se usa para o poder da riqueza sobre o Estado, mesmo sem a forma de governo."
  },
  {
   "id": "pc-e358",
@@ -575,6 +912,69 @@
   ]
  },
  {
+  "id": "pc-e517",
+  "tipo": "frase",
+  "pc": "agudeza, finura de percepção, dos sentidos ou da inteligência",
+  "pt": "acuidade",
+  "aceitas": [
+   "acuidade"
+  ],
+  "distratores": [
+   "acidez",
+   "acrimônia",
+   "assiduidade",
+   "acústica"
+  ],
+  "requer": "pc-p517",
+  "requerTodas": [
+   "pc-p517"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto: «acuidade visual», «acuidade auditiva», «acuidade de espírito». Também pode dizer intensidade (de dor, de tormento).",
+  "sinonimos": [
+   "agudeza",
+   "perspicácia",
+   "sensibilidade",
+   "finura"
+  ]
+ },
+ {
+  "id": "pc-e518",
+  "tipo": "frase",
+  "pc": "em primeiro lugar e acima de tudo, de modo principal",
+  "pt": "precipuamente",
+  "aceitas": [
+   "precipuamente"
+  ],
+  "distratores": [
+   "precisamente",
+   "precariamente",
+   "precipitadamente",
+   "prematuramente"
+  ],
+  "requer": "pc-p518",
+  "requerTodas": [
+   "pc-p518"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Advérbio culto, típico de textos jurídicos e oficiais; vem entre vírgulas ou depois do verbo. Do adjetivo «precípuo».",
+  "sinonimos": [
+   "principalmente",
+   "sobretudo",
+   "especialmente"
+  ]
+ },
+ {
   "id": "pc-e360",
   "tipo": "frase",
   "pc": "que é excessivamente severo e rigoroso (diz-se de lei, medida ou regra)",
@@ -639,6 +1039,98 @@
    "espalhar-se",
    "alastrar-se",
    "propagar-se"
+  ]
+ },
+ {
+  "id": "pc-e519",
+  "tipo": "frase",
+  "pc": "ponto de apoio da alavanca, e por extensão o que sustenta algo",
+  "pt": "fulcro",
+  "aceitas": [
+   "fulcros"
+  ],
+  "distratores": [
+   "fuste",
+   "fulgor",
+   "fórceps",
+   "fuselagem"
+  ],
+  "requer": "pc-p519",
+  "requerTodas": [
+   "pc-p519"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo da física (apoio da alavanca) usado em sentido figurado: o fulcro de um argumento, de um grupo.",
+  "sinonimos": [
+   "apoio",
+   "base",
+   "suporte"
+  ]
+ },
+ {
+  "id": "pc-e520",
+  "tipo": "frase",
+  "pc": "às pressas, de modo atabalhoado e sem preparo",
+  "pt": "de afogadilho",
+  "aceitas": [
+   "de afogadilho"
+  ],
+  "distratores": [
+   "de soslaio",
+   "de esguelha",
+   "de empreitada",
+   "de rojo"
+  ],
+  "requer": "pc-p520",
+  "requerTodas": [
+   "pc-p520"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Locução adverbial; vem de «afogar», pelo aperto da pressa. Pode qualificar o que se faz sem preparo: «de afogadilho».",
+  "sinonimos": [
+   "às pressas",
+   "depressa",
+   "apressadamente"
+  ]
+ },
+ {
+  "id": "pc-e521",
+  "tipo": "frase",
+  "pc": "ideia de que só o próprio eu existe de verdade, ou fechamento em si mesmo",
+  "pt": "solipsismo",
+  "aceitas": [
+   "solipsismos"
+  ],
+  "distratores": [
+   "solilóquio",
+   "solecismo",
+   "solstício",
+   "solidarismo"
+  ],
+  "requer": "pc-p521",
+  "requerTodas": [
+   "pc-p521"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo de filosofia; no uso corrente, fechamento em si mesmo, como na frase. Não é «solilóquio».",
+  "sinonimos": [
+   "egocentrismo",
+   "egoísmo"
   ]
  },
  {
@@ -769,6 +1261,34 @@
   ]
  },
  {
+  "id": "pc-e522",
+  "tipo": "frase",
+  "pc": "figura que toma a parte pelo todo, ou o todo pela parte",
+  "pt": "sinédoque",
+  "aceitas": [
+   "sinécdoque",
+   "sinécdoques",
+   "sinédoques"
+  ],
+  "distratores": [
+   "catacrese",
+   "prosopopeia",
+   "antonomásia",
+   "perífrase"
+  ],
+  "requer": "pc-p522",
+  "requerTodas": [
+   "pc-p522"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo da retórica; variante «sinécdoque». É um tropo, como a metáfora e a metonímia; exemplo de sinédoque: «cem cabeças de gado»."
+ },
+ {
   "id": "pc-e366",
   "tipo": "frase",
   "pc": "de formas arredondadas e cheias; roliço",
@@ -892,6 +1412,201 @@
    "às escondidas",
    "disfarçadamente",
    "em segredo"
+  ]
+ },
+ {
+  "id": "pc-e523",
+  "tipo": "frase",
+  "pc": "moralmente baixo, indigno, desprezível",
+  "pt": "ignóbil",
+  "aceitas": [
+   "ignóbeis"
+  ],
+  "distratores": [
+   "ignaro",
+   "ignoto",
+   "inóspito",
+   "incólume"
+  ],
+  "requer": "pc-p523",
+  "requerTodas": [
+   "pc-p523"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto e depreciativo, uniforme (não muda no feminino). Não confundir com «ignaro» (ignorante) nem «ignoto» (desconhecido).",
+  "sinonimos": [
+   "vil",
+   "baixo",
+   "torpe",
+   "indigno",
+   "desprezível"
+  ]
+ },
+ {
+  "id": "pc-e524",
+  "tipo": "frase",
+  "pc": "vencer e eliminar um mal, uma crise ou uma revolta",
+  "pt": "debelar",
+  "aceitas": [
+   "debelar"
+  ],
+  "distratores": [
+   "deflagrar",
+   "debilitar",
+   "debruçar",
+   "deprimir"
+  ],
+  "requer": "pc-p524",
+  "requerTodas": [
+   "pc-p524"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo transitivo direto, culto; o objeto é sempre um mal: «debelar uma epidemia», «debelar o incêndio».",
+  "sinonimos": [
+   "vencer",
+   "eliminar",
+   "sufocar",
+   "dominar"
+  ]
+ },
+ {
+  "id": "pc-e525",
+  "tipo": "frase",
+  "pc": "pessoa perversa e cruel que comete crimes violentos",
+  "pt": "facínora",
+  "aceitas": [
+   "facínoras"
+  ],
+  "distratores": [
+   "faccioso",
+   "fâmulo",
+   "fariseu",
+   "fidalgo"
+  ],
+  "requer": "pc-p525",
+  "requerTodas": [
+   "pc-p525"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo de dois gêneros («o facínora», «a facínora»), de registro culto. Não se confunde com «faccioso».",
+  "sinonimos": [
+   "criminoso",
+   "bandido",
+   "malfeitor"
+  ]
+ },
+ {
+  "id": "pc-e526",
+  "tipo": "frase",
+  "pc": "às escondidas, sem que ninguém perceba",
+  "pt": "à sorrelfa",
+  "aceitas": [
+   "à sorrelfa"
+  ],
+  "distratores": [
+   "à revelia",
+   "à queima-roupa",
+   "às turras",
+   "de chofre"
+  ],
+  "requer": "pc-p526",
+  "requerTodas": [
+   "pc-p526"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Locução adverbial de registro culto e antigo; o mesmo que «à socapa», «à surdina»: «entrar à sorrelfa».",
+  "sinonimos": [
+   "às escondidas",
+   "furtivamente",
+   "discretamente"
+  ]
+ },
+ {
+  "id": "pc-e527",
+  "tipo": "frase",
+  "pc": "em decomposição e de cheiro repugnante",
+  "pt": "pútrido",
+  "aceitas": [
+   "pútrida",
+   "pútridas",
+   "pútridos"
+  ],
+  "distratores": [
+   "putativo",
+   "pusilânime",
+   "pudico",
+   "pustulento"
+  ],
+  "requer": "pc-p527",
+  "requerTodas": [
+   "pc-p527"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, mais forte que «podre»: «cadáver pútrido», «águas pútridas».",
+  "sinonimos": [
+   "podre",
+   "fétido"
+  ]
+ },
+ {
+  "id": "pc-e528",
+  "tipo": "frase",
+  "pc": "assassino que mata por dinheiro, a mando de outra pessoa",
+  "pt": "sicário",
+  "aceitas": [
+   "sicária",
+   "sicárias",
+   "sicários"
+  ],
+  "distratores": [
+   "sicofanta",
+   "salteador",
+   "sectário",
+   "sacristão"
+  ],
+  "requer": "pc-p528",
+  "requerTodas": [
+   "pc-p528"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de uso literário e jornalístico; «sicários» designa o bando de capangas de alguém.",
+  "sinonimos": [
+   "assassino",
+   "matador",
+   "pistoleiro"
   ]
  },
  {
@@ -1118,6 +1833,35 @@
   ]
  },
  {
+  "id": "pc-e529",
+  "tipo": "frase",
+  "pc": "empréstimo gratuito de uma coisa que o tomador deve devolver depois",
+  "pt": "comodato",
+  "aceitas": [
+   "comodatos"
+  ],
+  "distratores": [
+   "usufruto",
+   "penhor",
+   "depósito",
+   "aluguel"
+  ],
+  "requer": "pc-p529",
+  "requerTodas": [
+   "pc-p529"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo do direito civil: o comodante empresta, o comodatário recebe e devolve. Distingue-se do «mútuo», empréstimo de coisas que se consomem, como dinheiro.",
+  "sinonimos": [
+   "empréstimo"
+  ]
+ },
+ {
   "id": "pc-e378",
   "tipo": "frase",
   "pc": "que não se pode apagar nem tirar; que fica para sempre",
@@ -1181,6 +1925,35 @@
   ]
  },
  {
+  "id": "pc-e530",
+  "tipo": "frase",
+  "pc": "linguagem vulgar, cheia de gírias e palavras grosseiras",
+  "pt": "calão",
+  "aceitas": [
+   "calões"
+  ],
+  "distratores": [
+   "calo",
+   "caldo",
+   "calha",
+   "calmaria"
+  ],
+  "requer": "pc-p530",
+  "requerTodas": [
+   "pc-p530"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo; «baixo calão» é a linguagem grosseira, de palavrões. Também designa a gíria própria de um grupo: «calão da boêmia».",
+  "sinonimos": [
+   "gíria"
+  ]
+ },
+ {
   "id": "pc-e380",
   "tipo": "frase",
   "pc": "tão conhecido de todos que passou a servir de exemplo; notório",
@@ -1240,6 +2013,132 @@
   "sinonimos": [
    "obter",
    "receber"
+  ]
+ },
+ {
+  "id": "pc-e531",
+  "tipo": "frase",
+  "pc": "cinzas e brasas que sobram depois de um incêndio",
+  "pt": "rescaldo",
+  "aceitas": [
+   "rescaldos"
+  ],
+  "distratores": [
+   "resgate",
+   "restolho",
+   "rescisão",
+   "retalho"
+  ],
+  "requer": "pc-p531",
+  "requerTodas": [
+   "pc-p531"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Também figurado: o rescaldo de uma crise, o que resta e pesa depois dela. «Operação de rescaldo» é apagar as últimas brasas.",
+  "sinonimos": [
+   "brasas",
+   "cinzas",
+   "restos"
+  ]
+ },
+ {
+  "id": "pc-e532",
+  "tipo": "frase",
+  "pc": "figura que troca o nome de uma coisa pelo de outra ligada a ela, como em «ler Camões»",
+  "pt": "metonímia",
+  "aceitas": [
+   "metonímias"
+  ],
+  "distratores": [
+   "metáfora",
+   "prosopopeia",
+   "antonomásia",
+   "catacrese"
+  ],
+  "requer": "pc-p532",
+  "requerTodas": [
+   "pc-p532"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo da retórica; é um tropo fundado na contiguidade, ao contrário da metáfora, fundada na semelhança. Exemplo: «ler Machado», por ler a obra dele."
+ },
+ {
+  "id": "pc-e533",
+  "tipo": "frase",
+  "pc": "esperto, astuto, que age com malícia e habilidade",
+  "pt": "ladino",
+  "aceitas": [
+   "ladina",
+   "ladinas",
+   "ladinos"
+  ],
+  "distratores": [
+   "lépido",
+   "lesto",
+   "ladeiro",
+   "laxo"
+  ],
+  "requer": "pc-p533",
+  "requerTodas": [
+   "pc-p533"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo e substantivo, de tom às vezes depreciativo. Vem de «latino», mas hoje o sentido comum é o de esperteza.",
+  "sinonimos": [
+   "esperto",
+   "astuto",
+   "sabido",
+   "malandro",
+   "vivo"
+  ]
+ },
+ {
+  "id": "pc-e534",
+  "tipo": "frase",
+  "pc": "perder a força e abrandar, como o vento, a chuva ou a tempestade",
+  "pt": "amainar",
+  "aceitas": [
+   "amainar"
+  ],
+  "distratores": [
+   "amarrar",
+   "amealhar",
+   "amanhecer",
+   "amolar"
+  ],
+  "requer": "pc-p534",
+  "requerTodas": [
+   "pc-p534"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, de origem náutica (recolher as velas); passou a dizer que vento, chuva ou ânimos se acalmam.",
+  "sinonimos": [
+   "abrandar",
+   "acalmar",
+   "serenar",
+   "diminuir"
   ]
  },
  {
@@ -1306,6 +2205,72 @@
   ]
  },
  {
+  "id": "pc-e535",
+  "tipo": "frase",
+  "pc": "que age com astúcia e manha, esperto em enganar",
+  "pt": "matreiro",
+  "aceitas": [
+   "matreira",
+   "matreiras",
+   "matreiros"
+  ],
+  "distratores": [
+   "mateiro",
+   "matinal",
+   "maltrapilho",
+   "mareiro"
+  ],
+  "requer": "pc-p535",
+  "requerTodas": [
+   "pc-p535"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo coloquial-literário; aplica-se a quem engana com esperteza, e também a animais («raposa matreira»).",
+  "sinonimos": [
+   "esperto",
+   "astuto",
+   "malandro",
+   "sabido"
+  ]
+ },
+ {
+  "id": "pc-e536",
+  "tipo": "frase",
+  "pc": "juntar dinheiro aos poucos, economizando",
+  "pt": "amealhar",
+  "aceitas": [
+   "amealhar"
+  ],
+  "distratores": [
+   "amarelar",
+   "amaldiçoar",
+   "amortizar",
+   "amalgamar"
+  ],
+  "requer": "pc-p536",
+  "requerTodas": [
+   "pc-p536"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, de tom meio irônico: juntar vintém por vintém. Rege «dinheiro», «economias», «fortuna».",
+  "sinonimos": [
+   "poupar",
+   "economizar"
+  ]
+ },
+ {
   "id": "pc-e384",
   "tipo": "frase",
   "pc": "sinal ou previsão do que vai acontecer, bom ou mau",
@@ -1364,6 +2329,38 @@
   "nota": "Substantivo culto («o pretérito») e adjetivo («tempos pretéritos»). Não confundir com «pretexto» nem com «preterição».",
   "sinonimos": [
    "passado"
+  ]
+ },
+ {
+  "id": "pc-e537",
+  "tipo": "frase",
+  "pc": "meter-se em assunto alheio sem ter sido chamado",
+  "pt": "imiscuir-se",
+  "aceitas": [
+   "imiscuir"
+  ],
+  "distratores": [
+   "imbuir-se",
+   "imolar-se",
+   "imergir-se",
+   "incumbir-se"
+  ],
+  "requer": "pc-p537",
+  "requerTodas": [
+   "pc-p537"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo pronominal culto, regido por «em»: «imiscuir-se na vida alheia». Costuma ter tom de reprovação.",
+  "sinonimos": [
+   "intrometer-se",
+   "entrometer-se",
+   "meter-se"
   ]
  },
  {
@@ -1462,6 +2459,35 @@
   ]
  },
  {
+  "id": "pc-e538",
+  "tipo": "frase",
+  "pc": "direito de usar imóvel alheio mediante pagamento de um foro anual",
+  "pt": "enfiteuse",
+  "aceitas": [
+   "enfiteuses"
+  ],
+  "distratores": [
+   "usufruto",
+   "comodato",
+   "superfície",
+   "hipoteca"
+  ],
+  "requer": "pc-p538",
+  "requerTodas": [
+   "pc-p538"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo do direito civil, ainda presente nos terrenos de marinha; o titular é o enfiteuta, e o dono, o senhorio direto. Também chamada «aforamento».",
+  "sinonimos": [
+   "aforamento"
+  ]
+ },
+ {
   "id": "pc-e389",
   "tipo": "frase",
   "pc": "que ataca e quer destruir as tradições e os valores consagrados",
@@ -1522,6 +2548,38 @@
    "crescer",
    "prosperar",
    "vingar"
+  ]
+ },
+ {
+  "id": "pc-e539",
+  "tipo": "frase",
+  "pc": "gritaria, alvoroço e barulho de muita gente protestando",
+  "pt": "celeuma",
+  "aceitas": [
+   "celeumas"
+  ],
+  "distratores": [
+   "celebração",
+   "celeridade",
+   "cerimônia",
+   "celibato"
+  ],
+  "requer": "pc-p539",
+  "requerTodas": [
+   "pc-p539"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo feminino, culto e literário; hoje também se diz de grande discussão ou polêmica: «a celeuma em torno da lei». Antigamente era o brado dos marinheiros.",
+  "sinonimos": [
+   "barulho",
+   "alvoroço",
+   "gritaria",
+   "tumulto"
   ]
  },
  {
@@ -1590,6 +2648,74 @@
   ]
  },
  {
+  "id": "pc-e540",
+  "tipo": "frase",
+  "pc": "porção de terra, torrão própria para o cultivo",
+  "pt": "gleba",
+  "aceitas": [
+   "glebas"
+  ],
+  "distratores": [
+   "gávea",
+   "galera",
+   "gesta",
+   "grelha"
+  ],
+  "requer": "pc-p540",
+  "requerTodas": [
+   "pc-p540"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo literário. «Servo da gleba» era o camponês preso à terra onde nascia, na Idade Média.",
+  "sinonimos": [
+   "terra",
+   "terreno",
+   "torrão",
+   "campo"
+  ]
+ },
+ {
+  "id": "pc-e541",
+  "tipo": "frase",
+  "pc": "honesto, de conduta reta e incorruptível",
+  "pt": "probo",
+  "aceitas": [
+   "proba",
+   "probas",
+   "probos"
+  ],
+  "distratores": [
+   "pródigo",
+   "pio",
+   "prolixo",
+   "pérfido"
+  ],
+  "requer": "pc-p541",
+  "requerTodas": [
+   "pc-p541"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, usado de pessoas («homem probo», «funcionário probo»). O substantivo é «probidade».",
+  "sinonimos": [
+   "honesto",
+   "íntegro",
+   "reto",
+   "honrado",
+   "incorruptível"
+  ]
+ },
+ {
   "id": "pc-e393",
   "tipo": "frase",
   "pc": "furtar, geralmente coisa pequena, às escondidas",
@@ -1652,6 +2778,73 @@
   ]
  },
  {
+  "id": "pc-e542",
+  "tipo": "frase",
+  "pc": "que é pouco rigoroso e perdoa com facilidade, ao punir ou exigir",
+  "pt": "leniente",
+  "aceitas": [
+   "lenientes"
+  ],
+  "distratores": [
+   "reticente",
+   "displicente",
+   "indolente",
+   "eloquente"
+  ],
+  "requer": "pc-p542",
+  "requerTodas": [
+   "pc-p542"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; rege «com»: «leniente com a impunidade». Parente de «lenitivo», mas não se confunde com ele.",
+  "sinonimos": [
+   "brando",
+   "indulgente",
+   "tolerante",
+   "condescendente"
+  ]
+ },
+ {
+  "id": "pc-e543",
+  "tipo": "frase",
+  "pc": "deixar muito abatido, triste e desanimado",
+  "pt": "acabrunhar",
+  "aceitas": [
+   "acabrunhar"
+  ],
+  "distratores": [
+   "acalentar",
+   "acanhar",
+   "acarinhar",
+   "acarretar"
+  ],
+  "requer": "pc-p543",
+  "requerTodas": [
+   "pc-p543"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, muito usado no particípio: «acabrunhado», «ar acabrunhado». Não confundir com «acanhar».",
+  "sinonimos": [
+   "abater",
+   "desanimar",
+   "deprimir",
+   "entristecer",
+   "oprimir"
+  ]
+ },
+ {
   "id": "pc-e395",
   "tipo": "frase",
   "pc": "desonra, vergonha pública que humilha; infâmia",
@@ -1680,6 +2873,70 @@
    "vergonha",
    "desonra",
    "infâmia"
+  ]
+ },
+ {
+  "id": "pc-e544",
+  "tipo": "frase",
+  "pc": "que fere ou dói de forma aguda, como uma pontada",
+  "pt": "lancinante",
+  "aceitas": [
+   "lancinantes"
+  ],
+  "distratores": [
+   "lacrimoso",
+   "lânguido",
+   "lacônico",
+   "lúgubre"
+  ],
+  "requer": "pc-p544",
+  "requerTodas": [
+   "pc-p544"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; qualifica dor, grito ou sofrimento: «dor lancinante», «gritos lancinantes».",
+  "sinonimos": [
+   "agudo",
+   "pungente",
+   "doloroso"
+  ]
+ },
+ {
+  "id": "pc-e545",
+  "tipo": "frase",
+  "pc": "ter origem em algo, provir de algum princípio",
+  "pt": "dimanar",
+  "aceitas": [
+   "dimanar"
+  ],
+  "distratores": [
+   "dirimir",
+   "dissipar",
+   "dilatar",
+   "dimensionar"
+  ],
+  "requer": "pc-p545",
+  "requerTodas": [
+   "pc-p545"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto; rege a preposição «de»: «dimanar de». Não confundir com «dirimir».",
+  "sinonimos": [
+   "provir",
+   "derivar",
+   "originar-se"
   ]
  },
  {
@@ -1712,6 +2969,32 @@
    "pressa",
    "agitação"
   ]
+ },
+ {
+  "id": "pc-e546",
+  "tipo": "frase",
+  "pc": "doutrina ou estudo que explica as coisas pelos fins a que se destinam",
+  "pt": "teleologia",
+  "aceitas": [
+   "teleologias"
+  ],
+  "distratores": [
+   "teologia",
+   "etiologia",
+   "tecnologia",
+   "teodiceia"
+  ],
+  "requer": "pc-p546",
+  "requerTodas": [
+   "pc-p546"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo de filosofia; adjetivo «teleológico». Não confundir com «teologia»."
  },
  {
   "id": "pc-e397",
@@ -1810,6 +3093,35 @@
   ]
  },
  {
+  "id": "pc-e547",
+  "tipo": "frase",
+  "pc": "erro de raciocínio em que se dá por provado justamente o que se quer provar",
+  "pt": "petição de princípio",
+  "aceitas": [
+   "petições de princípio"
+  ],
+  "distratores": [
+   "falso dilema",
+   "argumento ad hominem",
+   "apelo à autoridade",
+   "pergunta complexa"
+  ],
+  "requer": "pc-p547",
+  "requerTodas": [
+   "pc-p547"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Locução de lógica e retórica; é a falácia do raciocínio circular. Usa-se com «incorrer em» e «conter».",
+  "sinonimos": [
+   "círculo vicioso"
+  ]
+ },
+ {
   "id": "pc-e400",
   "tipo": "frase",
   "pc": "que é eloquente, de fala fácil, fluente e graciosa",
@@ -1873,6 +3185,38 @@
    "irritar",
    "zangar",
    "aborrecer"
+  ]
+ },
+ {
+  "id": "pc-e548",
+  "tipo": "frase",
+  "pc": "conjunto de pessoas unidas pela mesma fé, origem ou ideias; comunidade",
+  "pt": "grei",
+  "aceitas": [
+   "greis"
+  ],
+  "distratores": [
+   "gleba",
+   "greta",
+   "grelha",
+   "greda"
+  ],
+  "requer": "pc-p548",
+  "requerTodas": [
+   "pc-p548"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo literário; vem do rebanho e dos fiéis de um pastor, e por extensão do povo, do partido ou do grupo. Não confundir com «greta» nem «gleba».",
+  "sinonimos": [
+   "povo",
+   "comunidade",
+   "rebanho",
+   "partido"
   ]
  },
  {
@@ -1940,6 +3284,37 @@
    "mancar",
    "coxear",
    "falhar"
+  ]
+ },
+ {
+  "id": "pc-e549",
+  "tipo": "frase",
+  "pc": "ponto máximo de intensidade de um sentimento ou de uma crise",
+  "pt": "paroxismo",
+  "aceitas": [
+   "paroxismos"
+  ],
+  "distratores": [
+   "paradoxo",
+   "paralelismo",
+   "parênese",
+   "paroxítono"
+  ],
+  "requer": "pc-p549",
+  "requerTodas": [
+   "pc-p549"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Do grego, via medicina: o auge de uma crise. Hoje fala-se de emoção: «paroxismo de raiva», «de dor».",
+  "sinonimos": [
+   "auge",
+   "clímax",
+   "ápice"
   ]
  },
  {
@@ -2039,6 +3414,74 @@
   ]
  },
  {
+  "id": "pc-e550",
+  "tipo": "frase",
+  "pc": "nunca visto nem ouvido antes; extraordinário, sem precedentes",
+  "pt": "inaudito",
+  "aceitas": [
+   "inaudita",
+   "inauditas",
+   "inauditos"
+  ],
+  "distratores": [
+   "inato",
+   "inócuo",
+   "inábil",
+   "inóspito"
+  ],
+  "requer": "pc-p550",
+  "requerTodas": [
+   "pc-p550"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; «inaudito» é o que nunca se ouviu nem viu antes, em geral de algo grave ou espantoso. Não confundir com «inaudível».",
+  "sinonimos": [
+   "extraordinário",
+   "inédito",
+   "incrível",
+   "espantoso"
+  ]
+ },
+ {
+  "id": "pc-e551",
+  "tipo": "frase",
+  "pc": "incitar, atiçar um animal ou uma pessoa contra alguém, ou avivar uma paixão",
+  "pt": "açular",
+  "aceitas": [
+   "açular"
+  ],
+  "distratores": [
+   "adular",
+   "acuar",
+   "açoitar",
+   "acumular"
+  ],
+  "requer": "pc-p551",
+  "requerTodas": [
+   "pc-p551"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, que vem da caça: açular cães contra a presa. Por extensão, atiçar ânimos, ciúmes e paixões.",
+  "sinonimos": [
+   "atiçar",
+   "incitar",
+   "instigar",
+   "provocar"
+  ]
+ },
+ {
   "id": "pc-e407",
   "tipo": "frase",
   "pc": "ocasião favorável; ensejo, oportunidade (aparece em «dar azo a»)",
@@ -2067,6 +3510,41 @@
    "ensejo",
    "ocasião",
    "oportunidade"
+  ]
+ },
+ {
+  "id": "pc-e552",
+  "tipo": "frase",
+  "pc": "sem relevo nem força, insípido, que não chama a atenção",
+  "pt": "anódino",
+  "aceitas": [
+   "anódina",
+   "anódinas",
+   "anódinos"
+  ],
+  "distratores": [
+   "anônimo",
+   "anômalo",
+   "anódico",
+   "anêmico"
+  ],
+  "requer": "pc-p552",
+  "requerTodas": [
+   "pc-p552"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto. Não confundir com «anônimo» (sem nome) nem com «anômalo» (irregular).",
+  "sinonimos": [
+   "insípido",
+   "insosso",
+   "insignificante",
+   "banal"
   ]
  },
  {
@@ -2199,6 +3677,36 @@
   ]
  },
  {
+  "id": "pc-e553",
+  "tipo": "frase",
+  "pc": "discurso ou texto de elogio solene a uma pessoa",
+  "pt": "panegírico",
+  "aceitas": [
+   "panegíricos"
+  ],
+  "distratores": [
+   "panfleto",
+   "palinódia",
+   "paródia",
+   "pastoral"
+  ],
+  "requer": "pc-p553",
+  "requerTodas": [
+   "pc-p553"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; muitas vezes irônico, para elogio exagerado: «fazer o panegírico de alguém». Vem do grego, «discurso de assembleia».",
+  "sinonimos": [
+   "elogio",
+   "louvor"
+  ]
+ },
+ {
   "id": "pc-e412",
   "tipo": "frase",
   "pc": "que persiste obstinadamente no mesmo erro, defeito ou atitude, sem ceder",
@@ -2296,6 +3804,39 @@
   ]
  },
  {
+  "id": "pc-e555",
+  "tipo": "frase",
+  "pc": "que resiste com teimosia à autoridade e se recusa a obedecer",
+  "pt": "recalcitrante",
+  "aceitas": [
+   "recalcitrantes"
+  ],
+  "distratores": [
+   "recalcado",
+   "reincidente",
+   "recatado",
+   "reticente"
+  ],
+  "requer": "pc-p555",
+  "requerTodas": [
+   "pc-p555"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, também usado como substantivo («os recalcitrantes»). Não confundir com «recalcado» nem «reincidente».",
+  "sinonimos": [
+   "teimoso",
+   "rebelde",
+   "insubmisso",
+   "indisciplinado"
+  ]
+ },
+ {
   "id": "pc-e415",
   "tipo": "frase",
   "pc": "trabalho intenso e apressado, com muito movimento e esforço, como o de bordo",
@@ -2324,6 +3865,40 @@
    "trabalho",
    "labuta",
    "tarefa"
+  ]
+ },
+ {
+  "id": "pc-e556",
+  "tipo": "frase",
+  "pc": "translúcido, que deixa passar a luz",
+  "pt": "diáfano",
+  "aceitas": [
+   "diáfana",
+   "diáfanas",
+   "diáfanos"
+  ],
+  "distratores": [
+   "diacrônico",
+   "diatônico",
+   "diabético",
+   "diagonal"
+  ],
+  "requer": "pc-p556",
+  "requerTodas": [
+   "pc-p556"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, também usado para o que é leve e quase imaterial: «véu diáfano», «azul diáfano».",
+  "sinonimos": [
+   "transparente",
+   "translúcido",
+   "tênue"
   ]
  },
  {
@@ -2358,6 +3933,40 @@
   ]
  },
  {
+  "id": "pc-e557",
+  "tipo": "frase",
+  "pc": "que usa com moderação e economia o que tem, sem excessos",
+  "pt": "parcimonioso",
+  "aceitas": [
+   "parcimoniosa",
+   "parcimoniosas",
+   "parcimoniosos"
+  ],
+  "distratores": [
+   "pernicioso",
+   "prolixo",
+   "pretensioso",
+   "perdulário"
+  ],
+  "requer": "pc-p557",
+  "requerTodas": [
+   "pc-p557"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, com «de» ou «em»: «parcimonioso em elogios». Não confundir com «pernicioso».",
+  "sinonimos": [
+   "econômico",
+   "moderado",
+   "comedido"
+  ]
+ },
+ {
   "id": "pc-e417",
   "tipo": "frase",
   "pc": "pessoa de grande autoridade ou saber em sua área; figura de destaque",
@@ -2385,6 +3994,68 @@
   "sinonimos": [
    "autoridade",
    "especialista"
+  ]
+ },
+ {
+  "id": "pc-e558",
+  "tipo": "frase",
+  "pc": "que está presente em toda parte ao mesmo tempo",
+  "pt": "ubíquo",
+  "aceitas": [
+   "ubíquo"
+  ],
+  "distratores": [
+   "iníquo",
+   "ínvio",
+   "ubérrimo",
+   "inócuo"
+  ],
+  "requer": "pc-p558",
+  "requerTodas": [
+   "pc-p558"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de registro literário; «ubiquidade» é o substantivo. Mais comum no uso figurado, para quem parece estar em vários lugares.",
+  "sinonimos": [
+   "onipresente"
+  ]
+ },
+ {
+  "id": "pc-e559",
+  "tipo": "frase",
+  "pc": "vergonha, pudor, constrangimento diante de algo que se faz",
+  "pt": "pejo",
+  "aceitas": [
+   "pejo"
+  ],
+  "distratores": [
+   "peso",
+   "pego",
+   "pecúlio",
+   "petulância"
+  ],
+  "requer": "pc-p559",
+  "requerTodas": [
+   "pc-p559"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto e literário; muito usado em «ter pejo de» e «sem pejo» (com descaramento).",
+  "sinonimos": [
+   "vergonha",
+   "pudor",
+   "timidez",
+   "constrangimento"
   ]
  },
  {
@@ -2419,6 +4090,37 @@
    "perspicaz",
    "sutil",
    "esperto"
+  ]
+ },
+ {
+  "id": "pc-e560",
+  "tipo": "frase",
+  "pc": "partidário que segue alguém ou uma causa de modo servil",
+  "pt": "sequaz",
+  "aceitas": [
+   "sequazes"
+  ],
+  "distratores": [
+   "sequestrador",
+   "sicário",
+   "senescal",
+   "sucessor"
+  ],
+  "requer": "pc-p560",
+  "requerTodas": [
+   "pc-p560"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, quase sempre depreciativo: seguidor que não pensa por conta própria. Não confundir com «sequestrador».",
+  "sinonimos": [
+   "seguidor",
+   "partidário",
+   "discípulo"
   ]
  },
  {
@@ -2484,6 +4186,38 @@
    "marasmo",
    "monotonia",
    "modorra"
+  ]
+ },
+ {
+  "id": "pc-e561",
+  "tipo": "frase",
+  "pc": "que não pode ser contestado nem posto em dúvida",
+  "pt": "inconteste",
+  "aceitas": [
+   "incontestes"
+  ],
+  "distratores": [
+   "incólume",
+   "inconfesso",
+   "inconcluso",
+   "incontido"
+  ],
+  "requer": "pc-p561",
+  "requerTodas": [
+   "pc-p561"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, comum em textos jurídicos e jornalísticos: «verdade inconteste», «líder inconteste». Mesmo sentido de «incontestável».",
+  "sinonimos": [
+   "indiscutível",
+   "incontestável",
+   "evidente"
   ]
  },
  {
@@ -2578,6 +4312,71 @@
   "nota": "Substantivo poético, muito usado para a hora vermelha do poente ou da aurora; pode vir no plural."
  },
  {
+  "id": "pc-e562",
+  "tipo": "frase",
+  "pc": "de sentido obscuro e misterioso, difícil de decifrar, como as palavras de uma profecia",
+  "pt": "sibilino",
+  "aceitas": [
+   "sibilina",
+   "sibilinas",
+   "sibilinos"
+  ],
+  "distratores": [
+   "sibilante",
+   "sinuoso",
+   "silente",
+   "sinistro"
+  ],
+  "requer": "pc-p562",
+  "requerTodas": [
+   "pc-p562"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, vindo das Sibilas, profetisas da Antiguidade. Costuma qualificar «frase», «palavras», «ditos» e «sorriso». Não é «sibilante».",
+  "sinonimos": [
+   "enigmático",
+   "misterioso",
+   "obscuro"
+  ]
+ },
+ {
+  "id": "pc-e563",
+  "tipo": "frase",
+  "pc": "originário do próprio lugar onde vive ou surgiu",
+  "pt": "autóctone",
+  "aceitas": [
+   "autóctones"
+  ],
+  "distratores": [
+   "autônomo",
+   "autárquico",
+   "anódino",
+   "alóctone"
+  ],
+  "requer": "pc-p563",
+  "requerTodas": [
+   "pc-p563"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Adjetivo e substantivo culto; o contrário é «alóctone». Diz-se de povo, planta, animal, cultura, tradição.",
+  "sinonimos": [
+   "nativo",
+   "indígena",
+   "natural"
+  ]
+ },
+ {
   "id": "pc-e424",
   "tipo": "frase",
   "pc": "desordem, mistura confusa e desorganizada de coisas",
@@ -2642,6 +4441,161 @@
   ]
  },
  {
+  "id": "pc-e564",
+  "tipo": "frase",
+  "pc": "ostentação de quem se gaba de qualidades ou feitos que não tem",
+  "pt": "bazófia",
+  "aceitas": [
+   "bazófias"
+  ],
+  "distratores": [
+   "balela",
+   "bajulação",
+   "baboseira",
+   "blasfêmia"
+  ],
+  "requer": "pc-p564",
+  "requerTodas": [
+   "pc-p564"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; o adjetivo é «bazofiador» e o verbo, «bazofiar». Vem sempre com ideia de vaidade vazia.",
+  "sinonimos": [
+   "gabolice",
+   "jactância",
+   "fanfarronice"
+  ]
+ },
+ {
+  "id": "pc-e565",
+  "tipo": "frase",
+  "pc": "que insiste com teimosia e não cede",
+  "pt": "renitente",
+  "aceitas": [
+   "renitentes"
+  ],
+  "distratores": [
+   "reticente",
+   "reincidente",
+   "reluzente",
+   "remisso"
+  ],
+  "requer": "pc-p565",
+  "requerTodas": [
+   "pc-p565"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto. Também se aplica a coisas que persistem: «tosse renitente», «chuva renitente». Não confundir com «reticente».",
+  "sinonimos": [
+   "teimoso",
+   "obstinado",
+   "insistente",
+   "persistente"
+  ]
+ },
+ {
+  "id": "pc-e566",
+  "tipo": "frase",
+  "pc": "fato marcante lembrado e comemorado numa data do calendário",
+  "pt": "efeméride",
+  "aceitas": [
+   "efemérides"
+  ],
+  "distratores": [
+   "epopeia",
+   "epígrafe",
+   "epiderme",
+   "efusão"
+  ],
+  "requer": "pc-p566",
+  "requerTodas": [
+   "pc-p566"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, usado no plural ou no singular. Vem de «efêmero», mas o sentido é o de data a lembrar.",
+  "sinonimos": [
+   "data",
+   "aniversário",
+   "comemoração"
+  ]
+ },
+ {
+  "id": "pc-e567",
+  "tipo": "frase",
+  "pc": "que não se deixa domar nem submeter",
+  "pt": "indômito",
+  "aceitas": [
+   "indômita",
+   "indômitas",
+   "indômitos"
+  ],
+  "distratores": [
+   "indolente",
+   "indigente",
+   "indelével",
+   "indigesto"
+  ],
+  "requer": "pc-p567",
+  "requerTodas": [
+   "pc-p567"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, ligado a cavalos, povos e ao espírito: «cavalo indômito», «vontade indômita».",
+  "sinonimos": [
+   "rebelde",
+   "selvagem",
+   "bravio"
+  ]
+ },
+ {
+  "id": "pc-e568",
+  "tipo": "frase",
+  "pc": "manuscrito antigo cujo texto original foi raspado para se escrever outro por cima",
+  "pt": "palimpsesto",
+  "aceitas": [
+   "palimpsestos"
+  ],
+  "distratores": [
+   "códice",
+   "papiro",
+   "epitáfio",
+   "epítome"
+  ],
+  "requer": "pc-p568",
+  "requerTodas": [
+   "pc-p568"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, da paleografia; usa-se também no figurado, para algo escrito por cima de outra coisa («palimpsesto da memória»)."
+ },
+ {
   "id": "pc-e426",
   "tipo": "frase",
   "pc": "magro, pálido e de aspecto doentio",
@@ -2676,6 +4630,36 @@
   ]
  },
  {
+  "id": "pc-e569",
+  "tipo": "frase",
+  "pc": "prêmio dado a quem traz uma boa notícia ou devolve algo perdido",
+  "pt": "alvíssaras",
+  "aceitas": [
+   "alvíçaras"
+  ],
+  "distratores": [
+   "aleivosias",
+   "alvarás",
+   "alvitres",
+   "alvoroços"
+  ],
+  "requer": "pc-p569",
+  "requerTodas": [
+   "pc-p569"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo feminino plural, antigo mas ainda conhecido; também se grita «alvíssaras!» ao dar notícia feliz. Grafia variante: alvíçaras.",
+  "sinonimos": [
+   "recompensa",
+   "gratificação"
+  ]
+ },
+ {
   "id": "pc-e427",
   "tipo": "frase",
   "pc": "sem sangue; sem forças, esgotado, quase sem vida",
@@ -2705,6 +4689,69 @@
    "fraco",
    "pálido",
    "esgotado"
+  ]
+ },
+ {
+  "id": "pc-e570",
+  "tipo": "frase",
+  "pc": "ato de alcançar ou obter aquilo que se pretendia",
+  "pt": "consecução",
+  "aceitas": [
+   "consecuções"
+  ],
+  "distratores": [
+   "consequência",
+   "concessão",
+   "conservação",
+   "consolação"
+  ],
+  "requer": "pc-p570",
+  "requerTodas": [
+   "pc-p570"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo formal, ligado a «conseguir»: «consecução de um objetivo». Não confundir com «consequência».",
+  "sinonimos": [
+   "obtenção",
+   "realização",
+   "alcance"
+  ]
+ },
+ {
+  "id": "pc-e571",
+  "tipo": "frase",
+  "pc": "que se pode realizar ou pôr em prática",
+  "pt": "exequível",
+  "aceitas": [
+   "exequíveis"
+  ],
+  "distratores": [
+   "exímio",
+   "exorável",
+   "exigível",
+   "exíguo"
+  ],
+  "requer": "pc-p571",
+  "requerTodas": [
+   "pc-p571"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, da família de «executar»: «plano exequível», «sentença exequível». O oposto é «inexequível».",
+  "sinonimos": [
+   "viável",
+   "possível",
+   "realizável"
   ]
  },
  {
@@ -2773,6 +4820,39 @@
   ]
  },
  {
+  "id": "pc-e572",
+  "tipo": "frase",
+  "pc": "aspereza amarga no tratar, de quem está ressentido ou irritado",
+  "pt": "acrimônia",
+  "aceitas": [
+   "acrimónia",
+   "acrimônias"
+  ],
+  "distratores": [
+   "acídia",
+   "acuidade",
+   "acrobacia",
+   "acareação"
+  ],
+  "requer": "pc-p572",
+  "requerTodas": [
+   "pc-p572"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; em Portugal, «acrimónia». Aparece em expressões como «falar com acrimônia».",
+  "sinonimos": [
+   "aspereza",
+   "amargura",
+   "azedume",
+   "rispidez"
+  ]
+ },
+ {
   "id": "pc-e430",
   "tipo": "frase",
   "pc": "duro, áspero e cruel, que fere e magoa",
@@ -2837,6 +4917,42 @@
   ]
  },
  {
+  "id": "pc-e573",
+  "tipo": "frase",
+  "pc": "cheio de luxo, pompa e ostentação",
+  "pt": "faustoso",
+  "aceitas": [
+   "faustosa",
+   "faustosas",
+   "faustosos"
+  ],
+  "distratores": [
+   "funesto",
+   "fastidioso",
+   "frugal",
+   "fúnebre"
+  ],
+  "requer": "pc-p573",
+  "requerTodas": [
+   "pc-p573"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de tom literário («corte faustosa», «vida faustosa»). Não confundir com «funesto» (que traz desgraça).",
+  "sinonimos": [
+   "luxuoso",
+   "pomposo",
+   "suntuoso",
+   "ostentoso",
+   "rico"
+  ]
+ },
+ {
   "id": "pc-e432",
   "tipo": "frase",
   "pc": "ato pelo qual a vontade se decide a fazer algo; ato de querer",
@@ -2867,6 +4983,38 @@
   ]
  },
  {
+  "id": "pc-e574",
+  "tipo": "frase",
+  "pc": "que não falha nem deixa de ocorrer, que é infalível e certo",
+  "pt": "indefectível",
+  "aceitas": [
+   "indefectível"
+  ],
+  "distratores": [
+   "indefeso",
+   "indelével",
+   "indecoroso",
+   "indiscreto"
+  ],
+  "requer": "pc-p574",
+  "requerTodas": [
+   "pc-p574"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto. Qualifica o que não falta, não falha ou vem sempre: «vitória indefectível», «o indefectível cafezinho». Não é «indefeso».",
+  "sinonimos": [
+   "infalível",
+   "certo",
+   "seguro"
+  ]
+ },
+ {
   "id": "pc-e433",
   "tipo": "frase",
   "pc": "comentário ou nota que explica ou desenvolve um texto",
@@ -2894,6 +5042,41 @@
   "sinonimos": [
    "comentário",
    "nota"
+  ]
+ },
+ {
+  "id": "pc-e575",
+  "tipo": "frase",
+  "pc": "de porte elegante e movimentos leves e graciosos",
+  "pt": "airoso",
+  "aceitas": [
+   "airosa",
+   "airosas",
+   "airosos"
+  ],
+  "distratores": [
+   "arisco",
+   "afoito",
+   "ávido",
+   "aflito"
+  ],
+  "requer": "pc-p575",
+  "requerTodas": [
+   "pc-p575"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo de tom literário; vem de «ar» e fala do jeito de se mover ou de se apresentar.",
+  "sinonimos": [
+   "elegante",
+   "gracioso",
+   "garboso",
+   "esbelto"
   ]
  },
  {
@@ -2929,6 +5112,95 @@
   ]
  },
  {
+  "id": "pc-e576",
+  "tipo": "frase",
+  "pc": "ataque verbal violento e injurioso contra alguém ou algo",
+  "pt": "invectiva",
+  "aceitas": [
+   "invectivas"
+  ],
+  "distratores": [
+   "invocação",
+   "invasão",
+   "inventiva",
+   "invencionice"
+  ],
+  "requer": "pc-p576",
+  "requerTodas": [
+   "pc-p576"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; usa-se muito no plural, com «lançar» ou «proferir»: «invectivas contra o governo». O verbo é «invectivar».",
+  "sinonimos": [
+   "insulto",
+   "ofensa"
+  ]
+ },
+ {
+  "id": "pc-e577",
+  "tipo": "frase",
+  "pc": "que tem plena noção de algo, sem ignorá-lo",
+  "pt": "cônscio",
+  "aceitas": [
+   "cônscia",
+   "cônscias",
+   "cônscios"
+  ],
+  "distratores": [
+   "contumaz",
+   "cônsono",
+   "consentâneo",
+   "concludente"
+  ],
+  "requer": "pc-p577",
+  "requerTodas": [
+   "pc-p577"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; leva «de» ou «que» («cônscio dos seus deveres», «cônscio de que…»). Substantivo: «consciência».",
+  "sinonimos": [
+   "consciente",
+   "ciente"
+  ]
+ },
+ {
+  "id": "pc-e578",
+  "tipo": "frase",
+  "pc": "pessoa pobre que se veste e se comporta como se fosse rica",
+  "pt": "pelintra",
+  "aceitas": [
+   "pelintras"
+  ],
+  "distratores": [
+   "pelego",
+   "pedante",
+   "pivete",
+   "parvo"
+  ],
+  "requer": "pc-p578",
+  "requerTodas": [
+   "pc-p578"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo (e adjetivo) coloquial, depreciativo; aponta a pose de quem não tem com que sustentá-la."
+ },
+ {
   "id": "pc-e435",
   "tipo": "frase",
   "pc": "ilustre, famoso, de grande glória e distinção",
@@ -2960,6 +5232,106 @@
    "ilustre",
    "famoso",
    "notável"
+  ]
+ },
+ {
+  "id": "pc-e579",
+  "tipo": "frase",
+  "pc": "engano em que uma pessoa ou coisa é confundida com outra",
+  "pt": "quiproquó",
+  "aceitas": [
+   "quiproquós"
+  ],
+  "distratores": [
+   "pastiche",
+   "pasquim",
+   "paliativo",
+   "plebiscito"
+  ],
+  "requer": "pc-p579",
+  "requerTodas": [
+   "pc-p579"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo masculino, vindo do latim «quid pro quo» («uma coisa por outra»); comum no teatro e na comédia de enganos.",
+  "sinonimos": [
+   "mal-entendido",
+   "equívoco",
+   "confusão"
+  ]
+ },
+ {
+  "id": "pc-e580",
+  "tipo": "frase",
+  "pc": "que exprime zombaria amarga e maldosa, como o riso de quem desdenha",
+  "pt": "sardônico",
+  "aceitas": [
+   "sardônica",
+   "sardônicas",
+   "sardônicos"
+  ],
+  "distratores": [
+   "estoico",
+   "soturno",
+   "sórdido",
+   "sibilino"
+  ],
+  "requer": "pc-p580",
+  "requerTodas": [
+   "pc-p580"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, quase sempre ligado a «riso» ou «sorriso». Não é o mesmo que «sardento», nem vem de «sardinha».",
+  "sinonimos": [
+   "sarcástico",
+   "zombeteiro",
+   "irônico"
+  ]
+ },
+ {
+  "id": "pc-e581",
+  "tipo": "frase",
+  "pc": "de tamanho colossal, como se fosse obra de gigantes",
+  "pt": "ciclópico",
+  "aceitas": [
+   "ciclópica",
+   "ciclópicas",
+   "ciclópicos"
+  ],
+  "distratores": [
+   "cíclico",
+   "ciclônico",
+   "cínico",
+   "bucólico"
+  ],
+  "requer": "pc-p581",
+  "requerTodas": [
+   "pc-p581"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, de Ciclope, o gigante da mitologia. Costuma qualificar obra, muro, esforço ou tarefa.",
+  "sinonimos": [
+   "gigantesco",
+   "colossal",
+   "enorme",
+   "imenso"
   ]
  },
  {
@@ -3026,6 +5398,75 @@
   "sinonimos": [
    "ignorante",
    "leigo"
+  ]
+ },
+ {
+  "id": "pc-e582",
+  "tipo": "frase",
+  "pc": "de cara fechada, triste e calado, mal-humorado",
+  "pt": "macambúzio",
+  "aceitas": [
+   "macambúzia",
+   "macambúzias",
+   "macambúzios"
+  ],
+  "distratores": [
+   "macilento",
+   "macabro",
+   "malcriado",
+   "maquinal"
+  ],
+  "requer": "pc-p582",
+  "requerTodas": [
+   "pc-p582"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo expressivo, comum na prosa brasileira. Diz-se de pessoas e, por extensão, de coisas («coqueiros macambúzios»).",
+  "sinonimos": [
+   "carrancudo",
+   "tristonho",
+   "emburrado",
+   "taciturno"
+  ]
+ },
+ {
+  "id": "pc-e583",
+  "tipo": "frase",
+  "pc": "desajeitado, sem jeito nem habilidade",
+  "pt": "canhestro",
+  "aceitas": [
+   "canhestra",
+   "canhestras",
+   "canhestros"
+  ],
+  "distratores": [
+   "canoro",
+   "canônico",
+   "candente",
+   "cansativo"
+  ],
+  "requer": "pc-p583",
+  "requerTodas": [
+   "pc-p583"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo comum no registro culto; fala de gestos, de modos ou de obra mal feita: «gesto canhestro».",
+  "sinonimos": [
+   "desajeitado",
+   "atrapalhado",
+   "sem jeito"
   ]
  },
  {
@@ -3131,6 +5572,64 @@
   ]
  },
  {
+  "id": "pc-e584",
+  "tipo": "frase",
+  "pc": "enfraquecer e perder o vigor, definhar aos poucos",
+  "pt": "estiolar",
+  "aceitas": [
+   "estiolar"
+  ],
+  "distratores": [
+   "estimular",
+   "estilizar",
+   "estancar",
+   "estipular"
+  ],
+  "requer": "pc-p584",
+  "requerTodas": [
+   "pc-p584"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Termo da botânica (planta sem luz) também usado para pessoas e talentos. Mais comum no particípio: «estiolado».",
+  "sinonimos": [
+   "definhar",
+   "murchar",
+   "enfraquecer"
+  ]
+ },
+ {
+  "id": "pc-e585",
+  "tipo": "frase",
+  "pc": "palavra ou expressão antiga que caiu em desuso",
+  "pt": "arcaísmo",
+  "aceitas": [
+   "arcaísmos"
+  ],
+  "distratores": [
+   "neologismo",
+   "solecismo",
+   "galicismo",
+   "pleonasmo"
+  ],
+  "requer": "pc-p585",
+  "requerTodas": [
+   "pc-p585"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo de gramática e de estilística; o adjetivo é «arcaico». O oposto é «neologismo»."
+ },
+ {
   "id": "pc-e441",
   "tipo": "frase",
   "pc": "que se adapta ou molda com facilidade; flexível, maleável",
@@ -3225,6 +5724,41 @@
   ]
  },
  {
+  "id": "pc-e586",
+  "tipo": "frase",
+  "pc": "que age com insensatez, sem juízo nem prudência",
+  "pt": "estulto",
+  "aceitas": [
+   "estulta",
+   "estultas",
+   "estultos"
+  ],
+  "distratores": [
+   "estoico",
+   "estuante",
+   "estéril",
+   "estival"
+  ],
+  "requer": "pc-p586",
+  "requerTodas": [
+   "pc-p586"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto e literário. Também é substantivo: «os estultos». Não confundir com «estoico» nem «estuante».",
+  "sinonimos": [
+   "tolo",
+   "insensato",
+   "imprudente",
+   "bobo"
+  ]
+ },
+ {
   "id": "pc-e444",
   "tipo": "frase",
   "pc": "ser obstáculo; opor-se a algo, impedindo que aconteça",
@@ -3288,6 +5822,37 @@
   ]
  },
  {
+  "id": "pc-e587",
+  "tipo": "frase",
+  "pc": "que existe no interior da própria coisa, sem vir de fora",
+  "pt": "imanente",
+  "aceitas": [
+   "imanentes"
+  ],
+  "distratores": [
+   "iminente",
+   "eminente",
+   "permanente",
+   "emergente"
+  ],
+  "requer": "pc-p587",
+  "requerTodas": [
+   "pc-p587"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Termo filosófico e teológico, oposto a «transcendente». Não confundir com «iminente» nem com «eminente».",
+  "sinonimos": [
+   "inerente",
+   "intrínseco"
+  ]
+ },
+ {
   "id": "pc-e446",
   "tipo": "frase",
   "pc": "responder a uma fala rebatendo-a, com um argumento ou uma observação",
@@ -3319,6 +5884,37 @@
    "responder",
    "replicar",
    "rebater"
+  ]
+ },
+ {
+  "id": "pc-e588",
+  "tipo": "frase",
+  "pc": "conclusão que se tira de fatos ou de outras ideias",
+  "pt": "ilação",
+  "aceitas": [
+   "ilações"
+  ],
+  "distratores": [
+   "alusão",
+   "ilusão",
+   "elisão",
+   "ilicitude"
+  ],
+  "requer": "pc-p588",
+  "requerTodas": [
+   "pc-p588"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto: «tirar uma ilação», «ilação precipitada». Não é «alusão», «ilusão» nem «elisão».",
+  "sinonimos": [
+   "conclusão",
+   "dedução",
+   "inferência"
   ]
  },
  {
@@ -3418,6 +6014,39 @@
    "antigo",
    "velho",
    "ancestral"
+  ]
+ },
+ {
+  "id": "pc-e589",
+  "tipo": "frase",
+  "pc": "comover profundamente, causando dor, pesar ou remorso",
+  "pt": "compungir",
+  "aceitas": [
+   "compungir"
+  ],
+  "distratores": [
+   "compelir",
+   "compilar",
+   "comprimir",
+   "compartir"
+  ],
+  "requer": "pc-p589",
+  "requerTodas": [
+   "pc-p589"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, hoje mais visto no particípio «compungido» (pesaroso, comovido). Não confundir com «compelir».",
+  "sinonimos": [
+   "comover",
+   "penalizar",
+   "contristar",
+   "entristecer"
   ]
  },
  {
@@ -3552,6 +6181,73 @@
   ]
  },
  {
+  "id": "pc-e590",
+  "tipo": "frase",
+  "pc": "frase breve e sentenciosa que resume um princípio ou uma regra de conduta",
+  "pt": "apotegma",
+  "aceitas": [
+   "apotegmas"
+  ],
+  "distratores": [
+   "apólogo",
+   "apóstrofe",
+   "apostema",
+   "apêndice"
+  ],
+  "requer": "pc-p590",
+  "requerTodas": [
+   "pc-p590"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de grafia «apotegma» (com «g» pronunciado). Parente de «máxima» e «aforismo».",
+  "sinonimos": [
+   "máxima",
+   "provérbio",
+   "sentença",
+   "aforismo"
+  ]
+ },
+ {
+  "id": "pc-e591",
+  "tipo": "frase",
+  "pc": "empobrecido ou enfraquecido, esgotado nas forças",
+  "pt": "depauperado",
+  "aceitas": [
+   "depauperada",
+   "depauperadas",
+   "depauperados"
+  ],
+  "distratores": [
+   "depurado",
+   "despovoado",
+   "depravado",
+   "desapaixonado"
+  ],
+  "requer": "pc-p591",
+  "requerTodas": [
+   "pc-p591"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Particípio de «depauperar», usado como adjetivo culto: «organismo depauperado», «sangue depauperado». Não confundir com «depurado».",
+  "sinonimos": [
+   "fraco",
+   "debilitado",
+   "enfraquecido",
+   "esgotado"
+  ]
+ },
+ {
   "id": "pc-e454",
   "tipo": "frase",
   "pc": "reunir o que estava disperso; juntar documentos, dados, textos",
@@ -3584,6 +6280,72 @@
   ]
  },
  {
+  "id": "pc-e592",
+  "tipo": "frase",
+  "pc": "elogio caloroso e solene dirigido a alguém",
+  "pt": "encômio",
+  "aceitas": [
+   "encómio",
+   "encômios"
+  ],
+  "distratores": [
+   "epitáfio",
+   "epitalâmio",
+   "encomenda",
+   "comício"
+  ],
+  "requer": "pc-p592",
+  "requerTodas": [
+   "pc-p592"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; verbo: «encomiar». Não confundir com «encomenda».",
+  "sinonimos": [
+   "elogio",
+   "louvor",
+   "panegírico"
+  ]
+ },
+ {
+  "id": "pc-e593",
+  "tipo": "frase",
+  "pc": "que vem de fora e não faz parte da essência de algo",
+  "pt": "extrínseco",
+  "aceitas": [
+   "extrínseca",
+   "extrínsecas",
+   "extrínsecos"
+  ],
+  "distratores": [
+   "intrínseco",
+   "intrincado",
+   "extremo",
+   "extravagante"
+  ],
+  "requer": "pc-p593",
+  "requerTodas": [
+   "pc-p593"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, antônimo de «intrínseco»: «fatores extrínsecos». Aparece muito em filosofia, direito e crítica literária.",
+  "sinonimos": [
+   "externo",
+   "exterior",
+   "estranho"
+  ]
+ },
+ {
   "id": "pc-e455",
   "tipo": "frase",
   "pc": "raiva violenta e rancorosa; fúria de quem quer ferir",
@@ -3612,6 +6374,38 @@
    "fúria",
    "raiva",
    "ódio"
+  ]
+ },
+ {
+  "id": "pc-e594",
+  "tipo": "frase",
+  "pc": "que não se pode evitar nem vencer, contra o que não adianta lutar",
+  "pt": "inelutável",
+  "aceitas": [
+   "inelutáveis"
+  ],
+  "distratores": [
+   "inefável",
+   "indelével",
+   "inelegível",
+   "inegável"
+  ],
+  "requer": "pc-p594",
+  "requerTodas": [
+   "pc-p594"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, próximo de «inevitável» e «fatal»: «destino inelutável», «a morte inelutável». Não é «inefável» nem «inelegível».",
+  "sinonimos": [
+   "inevitável",
+   "fatal",
+   "irremediável"
   ]
  },
  {
@@ -3648,6 +6442,66 @@
   ]
  },
  {
+  "id": "pc-e595",
+  "tipo": "frase",
+  "pc": "erro de sintaxe: concordância, regência ou colocação contrária à gramática",
+  "pt": "solecismo",
+  "aceitas": [
+   "solecismos"
+  ],
+  "distratores": [
+   "barbarismo",
+   "pleonasmo",
+   "anfibologia",
+   "neologismo"
+  ],
+  "requer": "pc-p595",
+  "requerTodas": [
+   "pc-p595"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo da gramática: erro de concordância, regência ou colocação. Não confundir com «barbarismo» (erro numa palavra isolada)."
+ },
+ {
+  "id": "pc-e596",
+  "tipo": "frase",
+  "pc": "que dá bom resultado, que traz proveito",
+  "pt": "profícuo",
+  "aceitas": [
+   "profícua",
+   "profícuas",
+   "profícuos"
+  ],
+  "distratores": [
+   "proficiente",
+   "proeminente",
+   "prolixo",
+   "pródigo"
+  ],
+  "requer": "pc-p596",
+  "requerTodas": [
+   "pc-p596"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto: «trabalho profícuo», «estudo profícuo». Não confundir com «proficiente» (competente).",
+  "sinonimos": [
+   "proveitoso",
+   "útil",
+   "vantajoso"
+  ]
+ },
+ {
   "id": "pc-e457",
   "tipo": "frase",
   "pc": "revogar em parte uma lei ou norma, tornando-a parcialmente sem efeito",
@@ -3676,6 +6530,37 @@
   "sinonimos": [
    "revogar",
    "anular"
+  ]
+ },
+ {
+  "id": "pc-e597",
+  "tipo": "frase",
+  "pc": "vontade própria, liberdade de escolher e decidir",
+  "pt": "alvedrio",
+  "aceitas": [
+   "alvedrios"
+  ],
+  "distratores": [
+   "alvitre",
+   "alvará",
+   "alvoroço",
+   "albergue"
+  ],
+  "requer": "pc-p597",
+  "requerTodas": [
+   "pc-p597"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, quase só em «livre alvedrio» (o livre-arbítrio). Em textos antigos, a vontade que cada um tem sobre si.",
+  "sinonimos": [
+   "vontade",
+   "arbítrio",
+   "escolha"
   ]
  },
  {
@@ -3710,6 +6595,69 @@
    "parcial",
    "sectário",
    "partidário"
+  ]
+ },
+ {
+  "id": "pc-e598",
+  "tipo": "frase",
+  "pc": "enriquecer, lucrar muito, às vezes de modo ilícito",
+  "pt": "locupletar-se",
+  "aceitas": [
+   "locupletar-se"
+  ],
+  "distratores": [
+   "lucubrar",
+   "locomover-se",
+   "lamuriar-se",
+   "lambuzar-se"
+  ],
+  "requer": "pc-p598",
+  "requerTodas": [
+   "pc-p598"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto e de tom crítico; o lucro vem em geral de saque ou abuso: «locupletar-se com o dinheiro público». Também aparece sem «-se».",
+  "sinonimos": [
+   "enriquecer",
+   "lucrar"
+  ]
+ },
+ {
+  "id": "pc-e599",
+  "tipo": "frase",
+  "pc": "aprovação ou consentimento dado por quem tem autoridade",
+  "pt": "beneplácito",
+  "aceitas": [
+   "beneplácitos"
+  ],
+  "distratores": [
+   "benesse",
+   "beneficência",
+   "placebo",
+   "bênção"
+  ],
+  "requer": "pc-p599",
+  "requerTodas": [
+   "pc-p599"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de uso político, jurídico e eclesiástico: «com o beneplácito de», «dar o beneplácito».",
+  "sinonimos": [
+   "aprovação",
+   "consentimento",
+   "autorização",
+   "anuência"
   ]
  },
  {
@@ -3779,6 +6727,38 @@
   ]
  },
  {
+  "id": "pc-e600",
+  "tipo": "frase",
+  "pc": "de tom elevado, grandioso e sonoro",
+  "pt": "altissonante",
+  "aceitas": [
+   "altissonantes"
+  ],
+  "distratores": [
+   "dissonante",
+   "estridente",
+   "detonante",
+   "fulgurante"
+  ],
+  "requer": "pc-p600",
+  "requerTodas": [
+   "pc-p600"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto e literário, muitas vezes de tom irônico: diz-se de discurso, estilo ou tema pomposo.",
+  "sinonimos": [
+   "pomposo",
+   "retumbante",
+   "grandioso"
+  ]
+ },
+ {
   "id": "pc-e461",
   "tipo": "frase",
   "pc": "enfrentar sem medo um perigo ou dificuldade",
@@ -3808,6 +6788,37 @@
    "enfrentar",
    "encarar",
    "afrontar"
+  ]
+ },
+ {
+  "id": "pc-e601",
+  "tipo": "frase",
+  "pc": "convivência íntima com alguém ou algo de má reputação, quase um conluio",
+  "pt": "contubérnio",
+  "aceitas": [
+   "contubérnios"
+  ],
+  "distratores": [
+   "cubículo",
+   "cortejo",
+   "contrabando",
+   "condomínio"
+  ],
+  "requer": "pc-p601",
+  "requerTodas": [
+   "pc-p601"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo literário, de tom pejorativo: «viver em contubérnio com».",
+  "sinonimos": [
+   "convivência",
+   "convívio",
+   "promiscuidade"
   ]
  },
  {
@@ -3941,6 +6952,40 @@
   ]
  },
  {
+  "id": "pc-e602",
+  "tipo": "frase",
+  "pc": "que é o mais importante, o principal",
+  "pt": "precípuo",
+  "aceitas": [
+   "precípua",
+   "precípuas",
+   "precípuos"
+  ],
+  "distratores": [
+   "precipitado",
+   "preceptivo",
+   "precário",
+   "prescindível"
+  ],
+  "requer": "pc-p602",
+  "requerTodas": [
+   "pc-p602"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, típico de textos jurídicos e oficiais: «objetivo precípuo», «finalidade precípua». Não se confunde com «precipitado».",
+  "sinonimos": [
+   "principal",
+   "essencial",
+   "fundamental"
+  ]
+ },
+ {
   "id": "pc-e466",
   "tipo": "frase",
   "pc": "atribuir a alguém, injusta ou falsamente, uma culpa, uma calúnia ou um defeito",
@@ -4005,6 +7050,38 @@
   ]
  },
  {
+  "id": "pc-e603",
+  "tipo": "frase",
+  "pc": "de voz muito alta e retumbante, como a de um trovão",
+  "pt": "tonitruante",
+  "aceitas": [
+   "tonitruantes"
+  ],
+  "distratores": [
+   "titubeante",
+   "tonificante",
+   "triunfante",
+   "trepidante"
+  ],
+  "requer": "pc-p603",
+  "requerTodas": [
+   "pc-p603"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, de «tonitruar», trovejar. Qualifica voz, orador e discurso.",
+  "sinonimos": [
+   "estrondoso",
+   "retumbante",
+   "trovejante"
+  ]
+ },
+ {
   "id": "pc-e468",
   "tipo": "frase",
   "pc": "gabar-se com orgulho dos próprios feitos ou méritos",
@@ -4036,6 +7113,72 @@
   ]
  },
  {
+  "id": "pc-e604",
+  "tipo": "frase",
+  "pc": "que procura vingar-se de quem o ofendeu",
+  "pt": "vindicativo",
+  "aceitas": [
+   "vindicativa",
+   "vindicativas",
+   "vindicativos"
+  ],
+  "distratores": [
+   "vindouro",
+   "indicativo",
+   "indutivo",
+   "indulgente"
+  ],
+  "requer": "pc-p604",
+  "requerTodas": [
+   "pc-p604"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto. Não confundir com «indicativo» nem com «vindicar» (reclamar como seu).",
+  "sinonimos": [
+   "vingativo",
+   "rancoroso"
+  ]
+ },
+ {
+  "id": "pc-e605",
+  "tipo": "frase",
+  "pc": "tirar de alguém um bem ou um direito, à força ou por fraude",
+  "pt": "esbulhar",
+  "aceitas": [
+   "esbulhar"
+  ],
+  "distratores": [
+   "esbanjar",
+   "esbofetear",
+   "esburacar",
+   "esmolar"
+  ],
+  "requer": "pc-p605",
+  "requerTodas": [
+   "pc-p605"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto e jurídico; o substantivo é «esbulho» (tomada ilegal da posse). Esbulha-se alguém «de» algo.",
+  "sinonimos": [
+   "despojar",
+   "roubar",
+   "usurpar",
+   "tirar"
+  ]
+ },
+ {
   "id": "pc-e469",
   "tipo": "frase",
   "pc": "sonolência pesada, vinda do cansaço ou do calor",
@@ -4063,6 +7206,136 @@
   "sinonimos": [
    "sonolência",
    "moleza"
+  ]
+ },
+ {
+  "id": "pc-e606",
+  "tipo": "frase",
+  "pc": "que não tem vontade própria nem energia para decidir ou agir",
+  "pt": "abúlico",
+  "aceitas": [
+   "abúlica",
+   "abúlicas",
+   "abúlicos"
+  ],
+  "distratores": [
+   "afásico",
+   "amnésico",
+   "abusivo",
+   "abstêmio"
+  ],
+  "requer": "pc-p606",
+  "requerTodas": [
+   "pc-p606"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo e substantivo do vocabulário da psicologia, usado também em sentido literário. Da família de «abulia», a falta de vontade.",
+  "sinonimos": [
+   "apático",
+   "indeciso"
+  ]
+ },
+ {
+  "id": "pc-e607",
+  "tipo": "frase",
+  "pc": "deixar registrado por escrito num texto ou documento",
+  "pt": "exarar",
+  "aceitas": [
+   "exarar"
+  ],
+  "distratores": [
+   "examinar",
+   "exaltar",
+   "exortar",
+   "exacerbar"
+  ],
+  "requer": "pc-p607",
+  "requerTodas": [
+   "pc-p607"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo formal, de uso jurídico e de ata: «exarar um parecer». Não confundir com «examinar» nem «exortar».",
+  "sinonimos": [
+   "escrever",
+   "registrar",
+   "lavrar"
+  ]
+ },
+ {
+  "id": "pc-e608",
+  "tipo": "frase",
+  "pc": "obra escrita curta, de poucas páginas, sobre um só assunto",
+  "pt": "opúsculo",
+  "aceitas": [
+   "opúsculos"
+  ],
+  "distratores": [
+   "opérculo",
+   "óbolo",
+   "epítome",
+   "oratório"
+  ],
+  "requer": "pc-p608",
+  "requerTodas": [
+   "pc-p608"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; folheto ou livro pequeno, em geral de tema científico, político ou polêmico. Não confundir com «opérculo».",
+  "sinonimos": [
+   "folheto",
+   "livreto",
+   "brochura"
+  ]
+ },
+ {
+  "id": "pc-e609",
+  "tipo": "frase",
+  "pc": "que emite brilho vivo e intenso",
+  "pt": "coruscante",
+  "aceitas": [
+   "coruscantes"
+  ],
+  "distratores": [
+   "corrosivo",
+   "coriáceo",
+   "cortante",
+   "corpulento"
+  ],
+  "requer": "pc-p609",
+  "requerTodas": [
+   "pc-p609"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, de tom elevado; vem do verbo «coruscar» (brilhar, cintilar). Aplica-se a astros, armas, joias e até a ideias.",
+  "sinonimos": [
+   "brilhante",
+   "cintilante",
+   "reluzente",
+   "luminoso",
+   "fulgurante"
   ]
  },
  {
@@ -4098,6 +7371,74 @@
   ]
  },
  {
+  "id": "pc-e610",
+  "tipo": "frase",
+  "pc": "parte inicial de um discurso ou de uma obra, que apresenta o assunto",
+  "pt": "proêmio",
+  "aceitas": [
+   "proémio",
+   "proémios",
+   "proêmios"
+  ],
+  "distratores": [
+   "epílogo",
+   "epígrafe",
+   "epitáfio",
+   "apêndice"
+  ],
+  "requer": "pc-p610",
+  "requerTodas": [
+   "pc-p610"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto e literário; também se escreve «proémio». Sinônimos: «prefácio», «preâmbulo».",
+  "sinonimos": [
+   "prefácio",
+   "introdução",
+   "prólogo",
+   "preâmbulo"
+  ]
+ },
+ {
+  "id": "pc-e611",
+  "tipo": "frase",
+  "pc": "do tempo atual, dos nossos dias",
+  "pt": "hodierno",
+  "aceitas": [
+   "hodierna",
+   "hodiernas",
+   "hodiernos"
+  ],
+  "distratores": [
+   "diurno",
+   "diário",
+   "vindouro",
+   "hebdomadário"
+  ],
+  "requer": "pc-p611",
+  "requerTodas": [
+   "pc-p611"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, formal: «a vida hodierna», «as preocupações hodiernas». Vem de «hodie» (hoje).",
+  "sinonimos": [
+   "atual",
+   "moderno",
+   "de hoje"
+  ]
+ },
+ {
   "id": "pc-e471",
   "tipo": "frase",
   "pc": "censurar com dureza e indignação; criticar severamente",
@@ -4127,6 +7468,37 @@
    "criticar",
    "censurar",
    "condenar"
+  ]
+ },
+ {
+  "id": "pc-e612",
+  "tipo": "frase",
+  "pc": "as figuras de maior destaque e prestígio de um grupo ou causa",
+  "pt": "próceres",
+  "aceitas": [
+   "prócer"
+  ],
+  "distratores": [
+   "procuradores",
+   "precursores",
+   "preceptores",
+   "procônsules"
+  ],
+  "requer": "pc-p612",
+  "requerTodas": [
+   "pc-p612"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, usado quase só no plural («os próceres da independência»); o singular é «prócer».",
+  "sinonimos": [
+   "líderes",
+   "chefes",
+   "vultos"
   ]
  },
  {
@@ -4195,6 +7567,37 @@
    "irritar-se",
    "zangar-se",
    "ofender-se"
+  ]
+ },
+ {
+  "id": "pc-e613",
+  "tipo": "frase",
+  "pc": "parte inicial de um discurso, que introduz o assunto",
+  "pt": "exórdio",
+  "aceitas": [
+   "exórdios"
+  ],
+  "distratores": [
+   "epílogo",
+   "êxodo",
+   "exegese",
+   "excurso"
+  ],
+  "requer": "pc-p613",
+  "requerTodas": [
+   "pc-p613"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, da retórica; é a primeira das partes do discurso. Também se usa para o começo de poemas e obras.",
+  "sinonimos": [
+   "introdução",
+   "começo",
+   "preâmbulo"
   ]
  },
  {
@@ -4296,6 +7699,72 @@
   ]
  },
  {
+  "id": "pc-e614",
+  "tipo": "frase",
+  "pc": "cheio ao extremo, transbordante de vigor ou de vida",
+  "pt": "pletórico",
+  "aceitas": [
+   "pletórica",
+   "pletóricas",
+   "pletóricos"
+  ],
+  "distratores": [
+   "plúmbeo",
+   "patético",
+   "pálido",
+   "plácido"
+  ],
+  "requer": "pc-p614",
+  "requerTodas": [
+   "pc-p614"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, em geral com «de»: «pletórico de saúde», «pletórico de ideias».",
+  "sinonimos": [
+   "cheio",
+   "transbordante",
+   "exuberante"
+  ]
+ },
+ {
+  "id": "pc-e615",
+  "tipo": "frase",
+  "pc": "manifestar desaprovação a alguém em público, com gritos e assobios",
+  "pt": "apupar",
+  "aceitas": [
+   "apupar"
+  ],
+  "distratores": [
+   "apunhalar",
+   "apurar",
+   "apoiar",
+   "apaziguar"
+  ],
+  "requer": "pc-p615",
+  "requerTodas": [
+   "pc-p615"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto; o substantivo é «apupo» (vaia). Costuma ter como objeto um orador, artista ou autoridade.",
+  "sinonimos": [
+   "vaiar",
+   "assobiar",
+   "ridicularizar"
+  ]
+ },
+ {
   "id": "pc-e477",
   "tipo": "frase",
   "pc": "estandarte, bandeira que simboliza uma causa, uma fé ou um ideal",
@@ -4324,6 +7793,70 @@
    "estandarte",
    "bandeira",
    "insígnia"
+  ]
+ },
+ {
+  "id": "pc-e616",
+  "tipo": "frase",
+  "pc": "que gosta de brigar e luta com ardor",
+  "pt": "pugnaz",
+  "aceitas": [
+   "pugnazes"
+  ],
+  "distratores": [
+   "pertinaz",
+   "sagaz",
+   "falaz",
+   "mordaz"
+  ],
+  "requer": "pc-p616",
+  "requerTodas": [
+   "pc-p616"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de sabor literário; «pugnar» é lutar e «pugna», a luta. Não confundir com «pugilista».",
+  "sinonimos": [
+   "combativo",
+   "aguerrido",
+   "belicoso"
+  ]
+ },
+ {
+  "id": "pc-e617",
+  "tipo": "frase",
+  "pc": "consultar e folhear livros ou documentos, examinando-os",
+  "pt": "compulsar",
+  "aceitas": [
+   "compulsar"
+  ],
+  "distratores": [
+   "compelir",
+   "compilar",
+   "computar",
+   "compartilhar"
+  ],
+  "requer": "pc-p617",
+  "requerTodas": [
+   "pc-p617"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, próprio de pesquisa em arquivos. Não confundir com «compelir» (obrigar).",
+  "sinonimos": [
+   "consultar",
+   "folhear",
+   "examinar"
   ]
  },
  {
@@ -4361,6 +7894,38 @@
   ]
  },
  {
+  "id": "pc-e618",
+  "tipo": "frase",
+  "pc": "dar aparência de honesto ou legítimo a algo que não o é",
+  "pt": "coonestar",
+  "aceitas": [
+   "coonestar-se"
+  ],
+  "distratores": [
+   "cooptar",
+   "coarctar",
+   "contestar",
+   "coabitar"
+  ],
+  "requer": "pc-p618",
+  "requerTodas": [
+   "pc-p618"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto e raro, que se constrói com objeto direto: «coonestar um erro». Lê-se «co-o-nes-tar», com os dois «o» separados.",
+  "sinonimos": [
+   "justificar",
+   "disfarçar",
+   "legitimar"
+  ]
+ },
+ {
   "id": "pc-e480",
   "tipo": "frase",
   "pc": "vontade própria, gosto ou arbítrio de cada um, como em «a seu ___»",
@@ -4389,6 +7954,42 @@
    "vontade",
    "arbítrio",
    "gosto"
+  ]
+ },
+ {
+  "id": "pc-e619",
+  "tipo": "frase",
+  "pc": "simples, elementar, que faz parte do dia a dia",
+  "pt": "comezinho",
+  "aceitas": [
+   "comezinha",
+   "comezinhas",
+   "comezinhos"
+  ],
+  "distratores": [
+   "comedido",
+   "comovente",
+   "cominatório",
+   "comunal"
+  ],
+  "requer": "pc-p619",
+  "requerTodas": [
+   "pc-p619"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de tom neutro a ligeiramente irônico: «conhecimentos comezinhos», «verdades comezinhas».",
+  "sinonimos": [
+   "simples",
+   "corriqueiro",
+   "básico",
+   "elementar",
+   "trivial"
   ]
  },
  {
@@ -4424,6 +8025,70 @@
   ]
  },
  {
+  "id": "pc-e620",
+  "tipo": "frase",
+  "pc": "coragem atrevida, ousadia de quem age sem medo",
+  "pt": "afoiteza",
+  "aceitas": [
+   "afoitezas"
+  ],
+  "distratores": [
+   "afobação",
+   "afeição",
+   "aflição",
+   "afetação"
+  ],
+  "requer": "pc-p620",
+  "requerTodas": [
+   "pc-p620"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; de «afoito» (ousado). Não confundir com «afobação» (pressa nervosa).",
+  "sinonimos": [
+   "ousadia",
+   "audácia",
+   "atrevimento",
+   "valentia"
+  ]
+ },
+ {
+  "id": "pc-e621",
+  "tipo": "frase",
+  "pc": "que não se pode refutar nem pôr em dúvida com sofismas",
+  "pt": "insofismável",
+  "aceitas": [
+   "insofismáveis"
+  ],
+  "distratores": [
+   "insofrível",
+   "insolúvel",
+   "insondável",
+   "insulso"
+  ],
+  "requer": "pc-p621",
+  "requerTodas": [
+   "pc-p621"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto: «prova insofismável», «verdade insofismável». Vem de «sofisma»; não se confunde com «insofrível».",
+  "sinonimos": [
+   "indiscutível",
+   "incontestável",
+   "irrefutável"
+  ]
+ },
+ {
   "id": "pc-e483",
   "tipo": "frase",
   "pc": "insultar, ofender com palavras duras, cobrindo de desonra",
@@ -4453,6 +8118,67 @@
    "insultar",
    "ofender",
    "difamar"
+  ]
+ },
+ {
+  "id": "pc-e622",
+  "tipo": "frase",
+  "pc": "livro velho, antigo, geralmente raro ou de pouco uso",
+  "pt": "alfarrábio",
+  "aceitas": [
+   "alfarrábios"
+  ],
+  "distratores": [
+   "alfarroba",
+   "almanaque",
+   "alvará",
+   "alforje"
+  ],
+  "requer": "pc-p622",
+  "requerTodas": [
+   "pc-p622"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de tom meio irônico: o livro velho que se compra em sebo. Também designa livros raros."
+ },
+ {
+  "id": "pc-e623",
+  "tipo": "frase",
+  "pc": "que se gaba dos próprios méritos, cheio de vanglória",
+  "pt": "jactancioso",
+  "aceitas": [
+   "jactanciosa",
+   "jactanciosas",
+   "jactanciosos"
+  ],
+  "distratores": [
+   "jubiloso",
+   "jocoso",
+   "janota",
+   "jaculatório"
+  ],
+  "requer": "pc-p623",
+  "requerTodas": [
+   "pc-p623"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto: «tom jactancioso», «ar jactancioso». O substantivo é «jactância».",
+  "sinonimos": [
+   "vaidoso",
+   "presunçoso",
+   "orgulhoso",
+   "convencido"
   ]
  },
  {
@@ -4587,6 +8313,107 @@
   ]
  },
  {
+  "id": "pc-e624",
+  "tipo": "frase",
+  "pc": "autêntico, genuíno, sem mistura nem falsificação",
+  "pt": "lídimo",
+  "aceitas": [
+   "lídima",
+   "lídimas",
+   "lídimos"
+  ],
+  "distratores": [
+   "límpido",
+   "lívido",
+   "lépido",
+   "lasso"
+  ],
+  "requer": "pc-p624",
+  "requerTodas": [
+   "pc-p624"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto: «lídimo representante», «lídima expressão». Não confundir com «límpido», «lépido» e «lívido».",
+  "sinonimos": [
+   "autêntico",
+   "genuíno",
+   "legítimo",
+   "puro"
+  ]
+ },
+ {
+  "id": "pc-e625",
+  "tipo": "frase",
+  "pc": "causar ou sentir grande tristeza e aflição",
+  "pt": "contristar",
+  "aceitas": [
+   "contristar-se"
+  ],
+  "distratores": [
+   "contrair",
+   "contrariar",
+   "contestar",
+   "contrapor"
+  ],
+  "requer": "pc-p625",
+  "requerTodas": [
+   "pc-p625"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto e literário, também pronominal: «contristar-se». Da família de «contrito» e «contrição».",
+  "sinonimos": [
+   "entristecer",
+   "afligir",
+   "magoar"
+  ]
+ },
+ {
+  "id": "pc-e626",
+  "tipo": "frase",
+  "pc": "de luxo e ostentação exagerados",
+  "pt": "nababesco",
+  "aceitas": [
+   "nababesca",
+   "nababescas",
+   "nababescos"
+  ],
+  "distratores": [
+   "babélico",
+   "bizantino",
+   "espartano",
+   "frugal"
+  ],
+  "requer": "pc-p626",
+  "requerTodas": [
+   "pc-p626"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de «nababo», o homem riquíssimo; usa-se com «vida», «luxo», «trem de vida».",
+  "sinonimos": [
+   "luxuoso",
+   "suntuoso",
+   "faustoso"
+  ]
+ },
+ {
   "id": "pc-e488",
   "tipo": "frase",
   "pc": "matar a sede, bebendo água ou outro líquido",
@@ -4652,6 +8479,39 @@
   ]
  },
  {
+  "id": "pc-e627",
+  "tipo": "frase",
+  "pc": "enganar com lábia e artifícios, iludindo alguém",
+  "pt": "embair",
+  "aceitas": [
+   "embair"
+  ],
+  "distratores": [
+   "embasbacar",
+   "embalar",
+   "embeber",
+   "embargar"
+  ],
+  "requer": "pc-p627",
+  "requerTodas": [
+   "pc-p627"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, de tom antigo; a pessoa «se deixa embair» por promessas ou lábia. Existe também o pronominal «embair-se».",
+  "sinonimos": [
+   "enganar",
+   "iludir",
+   "ludibriar",
+   "lograr"
+  ]
+ },
+ {
   "id": "pc-e490",
   "tipo": "frase",
   "pc": "valentia, coragem decidida e ardorosa diante do perigo ou da dificuldade",
@@ -4712,6 +8572,72 @@
    "brilhante",
    "reluzente",
    "luminoso"
+  ]
+ },
+ {
+  "id": "pc-e628",
+  "tipo": "frase",
+  "pc": "censurar com dureza, lançando em rosto uma falta",
+  "pt": "exprobrar",
+  "aceitas": [
+   "exprobrar"
+  ],
+  "distratores": [
+   "exprimir",
+   "expropriar",
+   "exumar",
+   "explorar"
+  ],
+  "requer": "pc-p628",
+  "requerTodas": [
+   "pc-p628"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto: «exprobrar uma falta» é lançá-la em rosto. O substantivo é «exprobração».",
+  "sinonimos": [
+   "censurar",
+   "recriminar",
+   "repreender",
+   "criticar"
+  ]
+ },
+ {
+  "id": "pc-e629",
+  "tipo": "frase",
+  "pc": "aquilo que se deseja muito alcançar, o objetivo almejado",
+  "pt": "desiderato",
+  "aceitas": [
+   "desiderata",
+   "desideratos"
+  ],
+  "distratores": [
+   "desídia",
+   "desdém",
+   "desalento",
+   "desatino"
+  ],
+  "requer": "pc-p629",
+  "requerTodas": [
+   "pc-p629"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de uso formal: «alcançar o desiderato», «para esse desiderato». Vem do verbo latino «desiderare», desejar.",
+  "sinonimos": [
+   "objetivo",
+   "meta",
+   "aspiração",
+   "anseio"
   ]
  },
  {
@@ -4813,6 +8739,39 @@
   ]
  },
  {
+  "id": "pc-e630",
+  "tipo": "frase",
+  "pc": "que age com astúcia e habilidade, sabendo enganar",
+  "pt": "solerte",
+  "aceitas": [
+   "solertes"
+  ],
+  "distratores": [
+   "solitário",
+   "solene",
+   "solícito",
+   "soturno"
+  ],
+  "requer": "pc-p630",
+  "requerTodas": [
+   "pc-p630"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de tom literário e às vezes irônico: «solerte diplomata», «solerte disfarce». Também se diz de quem é diligente.",
+  "sinonimos": [
+   "astuto",
+   "esperto",
+   "sagaz",
+   "matreiro"
+  ]
+ },
+ {
   "id": "pc-e495",
   "tipo": "frase",
   "pc": "atribuir ou imputar a alguém uma culpa, uma ofensa, uma censura",
@@ -4842,6 +8801,40 @@
    "atribuir",
    "imputar",
    "lançar"
+  ]
+ },
+ {
+  "id": "pc-e631",
+  "tipo": "frase",
+  "pc": "extremamente frio, gelado",
+  "pt": "álgido",
+  "aceitas": [
+   "álgida",
+   "álgidas",
+   "álgidos"
+  ],
+  "distratores": [
+   "álgico",
+   "ágil",
+   "ávido",
+   "alcalino"
+  ],
+  "requer": "pc-p631",
+  "requerTodas": [
+   "pc-p631"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário. Em «ponto álgido» ganhou o sentido figurado de ponto culminante, mas o sentido de origem é o de frio intenso.",
+  "sinonimos": [
+   "gelado",
+   "glacial",
+   "frio"
   ]
  },
  {
@@ -4879,6 +8872,39 @@
   ]
  },
  {
+  "id": "pc-e632",
+  "tipo": "frase",
+  "pc": "reprodução exata de um escrito, desenho ou assinatura",
+  "pt": "fac-símile",
+  "aceitas": [
+   "fac-símiles",
+   "facsímile",
+   "facsímiles"
+  ],
+  "distratores": [
+   "autógrafo",
+   "palimpsesto",
+   "manuscrito",
+   "códice"
+  ],
+  "requer": "pc-p632",
+  "requerTodas": [
+   "pc-p632"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo masculino de origem latina («faça igual»); também grafado «facsímile». No uso moderno, também o fax.",
+  "sinonimos": [
+   "cópia",
+   "reprodução",
+   "réplica"
+  ]
+ },
+ {
   "id": "pc-e497",
   "tipo": "frase",
   "pc": "observar ou objetar em resposta, com moderação; responder",
@@ -4907,6 +8933,37 @@
   "sinonimos": [
    "objetar",
    "retrucar"
+  ]
+ },
+ {
+  "id": "pc-e633",
+  "tipo": "frase",
+  "pc": "dom de falar com fluência, abundância e vigor",
+  "pt": "facúndia",
+  "aceitas": [
+   "facúndias"
+  ],
+  "distratores": [
+   "fecundidade",
+   "falácia",
+   "faceirice",
+   "fartura"
+  ],
+  "requer": "pc-p633",
+  "requerTodas": [
+   "pc-p633"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto e um tanto literário; o adjetivo é «facundo»: «orador facundo». Não se confunde com «fecundidade».",
+  "sinonimos": [
+   "eloquência",
+   "oratória",
+   "lábia"
   ]
  },
  {
@@ -4944,6 +9001,69 @@
   ]
  },
  {
+  "id": "pc-e634",
+  "tipo": "frase",
+  "pc": "responder rebatendo ou contestando o que outro disse",
+  "pt": "redarguir",
+  "aceitas": [
+   "redarguir"
+  ],
+  "distratores": [
+   "redigir",
+   "arguir",
+   "reduzir",
+   "reerguer"
+  ],
+  "requer": "pc-p634",
+  "requerTodas": [
+   "pc-p634"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, muito usado depois da fala de um personagem: «— Não, redarguiu ele». Conjuga-se como «arguir».",
+  "sinonimos": [
+   "replicar",
+   "retrucar",
+   "responder",
+   "contestar"
+  ]
+ },
+ {
+  "id": "pc-e635",
+  "tipo": "frase",
+  "pc": "discurso violento e inflamado contra alguém ou contra algo",
+  "pt": "filípica",
+  "aceitas": [
+   "filípicas"
+  ],
+  "distratores": [
+   "filigrana",
+   "fileira",
+   "filáucia",
+   "filactéria"
+  ],
+  "requer": "pc-p635",
+  "requerTodas": [
+   "pc-p635"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, do nome dos discursos de Demóstenes contra Filipe da Macedônia. Em geral no plural no uso literário.",
+  "sinonimos": [
+   "bronca",
+   "sermão"
+  ]
+ },
+ {
   "id": "pc-e499",
   "tipo": "frase",
   "pc": "que é da mesma época; contemporâneo de outra pessoa ou de um fato",
@@ -4975,6 +9095,222 @@
    "contemporâneo",
    "coetâneo",
    "da época"
+  ]
+ },
+ {
+  "id": "pc-e636",
+  "tipo": "frase",
+  "pc": "coletânea de trechos escolhidos de obras literárias",
+  "pt": "florilégio",
+  "aceitas": [
+   "florilégios"
+  ],
+  "distratores": [
+   "folhetim",
+   "florão",
+   "formulário",
+   "epigrama"
+  ],
+  "requer": "pc-p636",
+  "requerTodas": [
+   "pc-p636"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de ideia literária: «florilégio de poemas», «de contos». Vem do latim, «colher flores».",
+  "sinonimos": [
+   "antologia",
+   "coletânea",
+   "seleta"
+  ]
+ },
+ {
+  "id": "pc-e637",
+  "tipo": "frase",
+  "pc": "região interior de um país, longe do litoral e das cidades grandes",
+  "pt": "hinterlândia",
+  "aceitas": [
+   "hinterlândias"
+  ],
+  "distratores": [
+   "periferia",
+   "fronteira",
+   "orla",
+   "enclave"
+  ],
+  "requer": "pc-p637",
+  "requerTodas": [
+   "pc-p637"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, adaptação do alemão «Hinterland»; usado em geografia, política e economia. O oposto é o litoral.",
+  "sinonimos": [
+   "interior"
+  ]
+ },
+ {
+  "id": "pc-e638",
+  "tipo": "frase",
+  "pc": "que não se pode contestar, como uma prova ou um testemunho",
+  "pt": "irrefragável",
+  "aceitas": [
+   "irrefragáveis"
+  ],
+  "distratores": [
+   "irreprimível",
+   "irrefreável",
+   "inexpugnável",
+   "irremissível"
+  ],
+  "requer": "pc-p638",
+  "requerTodas": [
+   "pc-p638"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; qualifica prova, testemunho, documento ou argumento. «Irrefutável» é o sinônimo mais comum.",
+  "sinonimos": [
+   "irrefutável",
+   "incontestável",
+   "indiscutível"
+  ]
+ },
+ {
+  "id": "pc-e639",
+  "tipo": "frase",
+  "pc": "expressão ou construção própria de uma língua, que foge às regras gerais da gramática",
+  "pt": "idiotismo",
+  "aceitas": [
+   "idiotismos"
+  ],
+  "distratores": [
+   "barbarismo",
+   "neologismo",
+   "estrangeirismo",
+   "arcaísmo"
+  ],
+  "requer": "pc-p639",
+  "requerTodas": [
+   "pc-p639"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo da gramática, sem relação com «idiotice» neste sentido (o outro, de estupidez, é raro). Equivale a «construção idiomática»."
+ },
+ {
+  "id": "pc-e640",
+  "tipo": "frase",
+  "pc": "que dá ou concede com grande generosidade e largueza",
+  "pt": "munificente",
+  "aceitas": [
+   "munificentes",
+   "munífica",
+   "munífico"
+  ],
+  "distratores": [
+   "eminente",
+   "iminente",
+   "imune",
+   "unânime"
+  ],
+  "requer": "pc-p640",
+  "requerTodas": [
+   "pc-p640"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto e solene, usado para reis, mecenas e benfeitores; existe a variante «munífico». O substantivo é «munificência».",
+  "sinonimos": [
+   "generoso",
+   "liberal",
+   "pródigo"
+  ]
+ },
+ {
+  "id": "pc-e641",
+  "tipo": "frase",
+  "pc": "trabalho manual ou artístico de ornamento, feito num objeto",
+  "pt": "lavor",
+  "aceitas": [
+   "lavores"
+  ],
+  "distratores": [
+   "lavabo",
+   "lavanda",
+   "labareda",
+   "lavatório"
+  ],
+  "requer": "pc-p641",
+  "requerTodas": [
+   "pc-p641"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo literário, ligado a ourivesaria, bordado e entalhe; no sentido figurado, também o lavor do verso.",
+  "sinonimos": [
+   "ornato",
+   "adorno"
+  ]
+ },
+ {
+  "id": "pc-e642",
+  "tipo": "frase",
+  "pc": "muito farto e abundante, próprio de quem come em enorme quantidade",
+  "pt": "pantagruélico",
+  "aceitas": [
+   "pantagruélica",
+   "pantagruélicas",
+   "pantagruélicos"
+  ],
+  "distratores": [
+   "paquidérmico",
+   "pantanoso",
+   "patriarcal",
+   "paradisíaco"
+  ],
+  "requer": "pc-p642",
+  "requerTodas": [
+   "pc-p642"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, de Pantagruel, o gigante comilão de Rabelais. Qualifica refeição, apetite ou prazer da mesa.",
+  "sinonimos": [
+   "farto",
+   "abundante",
+   "enorme"
   ]
  },
  {
@@ -5038,6 +9374,36 @@
    "triste",
    "lamentoso",
    "choroso"
+  ]
+ },
+ {
+  "id": "pc-e643",
+  "tipo": "frase",
+  "pc": "discussão que se prende às palavras, sem tocar no sentido das ideias",
+  "pt": "logomaquia",
+  "aceitas": [
+   "logomaquias"
+  ],
+  "distratores": [
+   "logística",
+   "logomarca",
+   "logorreia",
+   "lógica"
+  ],
+  "requer": "pc-p643",
+  "requerTodas": [
+   "pc-p643"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, do grego: «luta de palavras». Não é «logomarca».",
+  "sinonimos": [
+   "discussão",
+   "disputa"
   ]
  },
  {
@@ -5105,6 +9471,39 @@
   ]
  },
  {
+  "id": "pc-e644",
+  "tipo": "frase",
+  "pc": "sem honestidade, de conduta corrupta",
+  "pt": "ímprobo",
+  "aceitas": [
+   "ímproba",
+   "ímprobas",
+   "ímprobos"
+  ],
+  "distratores": [
+   "impoluto",
+   "ímpio",
+   "imbele",
+   "imberbe"
+  ],
+  "requer": "pc-p644",
+  "requerTodas": [
+   "pc-p644"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, oposto de «probo». Também se diz do trabalho árduo («ímprobo esforço»), sentido que o texto de agora não usa.",
+  "sinonimos": [
+   "desonesto",
+   "corrupto"
+  ]
+ },
+ {
   "id": "pc-e504",
   "tipo": "frase",
   "pc": "ideia ou frase muito repetida e sem originalidade; banalidade",
@@ -5138,6 +9537,42 @@
   ]
  },
  {
+  "id": "pc-e645",
+  "tipo": "frase",
+  "pc": "de grande fama e glória, ilustre",
+  "pt": "ínclito",
+  "aceitas": [
+   "ínclita",
+   "ínclitas",
+   "ínclitos"
+  ],
+  "distratores": [
+   "iníquo",
+   "incólume",
+   "inócuo",
+   "ínfimo"
+  ],
+  "requer": "pc-p645",
+  "requerTodas": [
+   "pc-p645"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo muito literário e solene, quase só de poesia e discurso. Não confundir com «iníquo» nem «incólume».",
+  "sinonimos": [
+   "ilustre",
+   "famoso",
+   "célebre",
+   "glorioso",
+   "insigne"
+  ]
+ },
+ {
   "id": "pc-e505",
   "tipo": "frase",
   "pc": "luz fraca do fim da tarde, quando começa a escurecer",
@@ -5165,6 +9600,135 @@
   "sinonimos": [
    "crepúsculo",
    "anoitecer"
+  ]
+ },
+ {
+  "id": "pc-e646",
+  "tipo": "frase",
+  "pc": "sem caminho, por onde não se consegue passar",
+  "pt": "ínvio",
+  "aceitas": [
+   "ínvia",
+   "ínvias",
+   "ínvios"
+  ],
+  "distratores": [
+   "invicto",
+   "invisível",
+   "inviolável",
+   "inóspito"
+  ],
+  "requer": "pc-p646",
+  "requerTodas": [
+   "pc-p646"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, comum na poesia romântica: «ínvio sertão», «matas ínvias». Vem de «in-» + «via».",
+  "sinonimos": [
+   "intransitável",
+   "impenetrável"
+  ]
+ },
+ {
+  "id": "pc-e648",
+  "tipo": "frase",
+  "pc": "noções preliminares que abrem um estudo, introdução, preâmbulo",
+  "pt": "prolegômenos",
+  "aceitas": [
+   "prolegômeno"
+  ],
+  "distratores": [
+   "pródromos",
+   "prolóquios",
+   "protocolos",
+   "prontuários"
+  ],
+  "requer": "pc-p648",
+  "requerTodas": [
+   "pc-p648"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo plural, culto: «prolegômenos de uma obra, de uma teoria». Existe o singular «prolegômeno», menos comum.",
+  "sinonimos": [
+   "introdução",
+   "preâmbulo",
+   "preliminares"
+  ]
+ },
+ {
+  "id": "pc-e649",
+  "tipo": "frase",
+  "pc": "presunção, vaidade de quem se julga superior aos outros por sua origem ou posição",
+  "pt": "prosápia",
+  "aceitas": [
+   "prosápias"
+  ],
+  "distratores": [
+   "prosopopeia",
+   "proeza",
+   "prosódia",
+   "prosa"
+  ],
+  "requer": "pc-p649",
+  "requerTodas": [
+   "pc-p649"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de tom crítico: «cheio de prosápia». Também designa a linhagem ou nobre origem de uma família.",
+  "sinonimos": [
+   "arrogância",
+   "vaidade",
+   "soberba",
+   "presunção",
+   "orgulho"
+  ]
+ },
+ {
+  "id": "pc-e650",
+  "tipo": "frase",
+  "pc": "ofensa grave que atinge a honra de alguém, insulto",
+  "pt": "vitupério",
+  "aceitas": [
+   "vitupérios"
+  ],
+  "distratores": [
+   "vitríolo",
+   "vitral",
+   "vitelo",
+   "viático"
+  ],
+  "requer": "pc-p650",
+  "requerTodas": [
+   "pc-p650"
+  ],
+  "pergunta": "Que palavra quer dizer isto?",
+  "selo": "escrever",
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto e forte, comum em textos antigos: «cobrir de vitupérios». Verbo: «vituperar».",
+  "sinonimos": [
+   "insulto",
+   "ofensa",
+   "injúria",
+   "afronta"
   ]
  }
 ]

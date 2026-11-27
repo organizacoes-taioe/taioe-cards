@@ -89,7 +89,21 @@ def romano(n):
     return s
 
 
+# os nomes do cabeçalho do Gutenberg, pelo nome com que o autor é conhecido
+AUTORES = {
+    'Visconde de João Batista da Silva Leitão de Almeida Garrett Almeida Garrett': 'Almeida Garrett',
+    'conde de Affonso Celso de Assis Figueiredo Affonso Celso': 'Afonso Celso',
+    'conde de António Maria José de Melo César e Meneses Sabugosa': 'Conde de Sabugosa',
+    'José Martiniano de Alencar': 'José de Alencar', 'Henrique Coelho Netto': 'Coelho Neto',
+    'Ruy Barbosa': 'Rui Barbosa', 'Abílio Manuel Guerra Junqueiro': 'Guerra Junqueiro',
+    'Abel Acácio de Almeida Botelho': 'Abel Botelho', 'Adolfo Ferreira Caminha': 'Adolfo Caminha',
+    'Antônio Gonçalves Dias': 'Gonçalves Dias', 'António Joaquim de Castro Feijó': 'António Feijó',
+    'Raul Pompéia': 'Raul Pompeia', 'Unknown': '', 'Various': '',
+}
+
+
 def fonte_de(autor, titulo, ano, atualizada=False):
+    autor = AUTORES.get(autor, autor)
     s = (autor or '') + (', ' if autor and titulo else '') + (titulo or '') + (' (' + str(ano) + ')' if ano else '')
     return s + ('; grafia atualizada' if atualizada else '')
 

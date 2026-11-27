@@ -1382,5 +1382,10 @@ window.TAGS_RAW = {
   "en": "numeral",
   "es": "numeral",
   "cards": 0
+ },
+ "palavras difíceis": {
+  "en": "hard words",
+  "es": "palabras difíciles",
+  "cards": 0
  }
 };

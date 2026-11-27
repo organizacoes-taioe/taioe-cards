@@ -48,7 +48,7 @@
    "verbo"
   ],
   "nota": "Verbo culto, comum no direito e na burocracia: «sustar uma ordem», «sustar o protesto». Não confundir com «sustentar» nem «assustar».",
-  "fonte": "Abel Acácio de Almeida Botelho, Amor Crioulo",
+  "fonte": "Abel Botelho, Amor Crioulo",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
@@ -76,7 +76,7 @@
    "palavras difíceis"
   ],
   "nota": "Advérbio culto, de tom literário; muito usado com verbos de leitura e de dito: «li algures», «disse algures».",
-  "fonte": "Abel Acácio de Almeida Botelho, Amor Crioulo",
+  "fonte": "Abel Botelho, Amor Crioulo",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
@@ -286,6 +286,34 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p506",
+  "tipo": "palavra",
+  "pc": "nadir",
+  "pt": "o ponto do céu que fica sob os pés do observador",
+  "aceitas": [
+   "o ponto do céu que fica sob os pés do observador"
+  ],
+  "distratores": [
+   "o ponto do céu que fica sobre a cabeça do observador",
+   "a linha onde o céu parece encontrar a terra ou o mar",
+   "o ponto mais alto do caminho que o sol faz no céu",
+   "o ponto do horizonte onde o sol surge todas as manhãs"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo de astronomia, oposto de «zênite». Em sentido figurado, o ponto mais baixo de uma trajetória: «o nadir da carreira».",
+  "fonte": "Hino do município de Mariana",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "De estrelas o céu sobre mim recama; Há luz no zênite e clarões no nadir...",
+  "w": "nadir",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p352",
   "tipo": "palavra",
   "pc": "conquanto",
@@ -429,6 +457,92 @@
   "lista": "adv"
  },
  {
+  "id": "pc-p507",
+  "tipo": "palavra",
+  "pc": "simonia",
+  "pt": "compra e venda de coisas sagradas ou de cargos da Igreja",
+  "aceitas": [
+   "compra e venda de coisas sagradas ou de cargos da igreja"
+  ],
+  "distratores": [
+   "profanação de um lugar ou de um objeto sagrado por irreverência",
+   "culto prestado a imagens, tratadas como se fossem deuses",
+   "favorecimento de parentes na distribuição de cargos da Igreja",
+   "abandono da fé cristã por quem a tinha recebido"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, do vocabulário religioso e histórico; o nome vem de Simão, o Mago, que quis comprar o dom de Deus. No figurado, é o comércio de cargos e favores.",
+  "fonte": "J. P. Oliveira Martins, História de Portugal; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Não era de crer; porque o jesuitismo tinha descoberto que a simonia não era pecado, sempre que se seguissem umas certas regras.",
+  "w": "simonia",
+  "classe": "substantivo",
+  "lista": "conc"
+ },
+ {
+  "id": "pc-p508",
+  "tipo": "palavra",
+  "pc": "intrépido",
+  "pt": "que enfrenta o perigo sem medo",
+  "aceitas": [
+   "que enfrenta o perigo sem medo"
+  ],
+  "distratores": [
+   "que age sem refletir nas consequências",
+   "que não se deixa abater pela dor",
+   "que nunca se cansa de caminhar",
+   "que luta com astúcia e malícia"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de tom elevado; combina com «guerreiro», «soldado», «viajante». Também se usa como substantivo.",
+  "fonte": "Alberto Pimentel, Uma Visita ao Primeiro Romancista Português em S. Miguel de Seide",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Não obstante, o Bernardo acompanhava a garrana com o seu passo largo e firme, de caminheiro intrépido e experimentado.",
+  "w": "intrépido",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p509",
+  "tipo": "palavra",
+  "pc": "aventar",
+  "pt": "lançar uma ideia ou hipótese para discussão",
+  "aceitas": [
+   "lançar uma ideia ou hipótese para discussão"
+  ],
+  "distratores": [
+   "arriscar a vida numa empresa perigosa",
+   "afirmar com certeza o que se sabe",
+   "rejeitar com desprezo a opinião de outro",
+   "anunciar a todos, aos gritos, uma novidade"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto neste sentido, comum com «ideia», «hipótese», «possibilidade». Não confundir com «aventurar-se». Também significa expor ao vento.",
+  "fonte": "Lima Barreto, Triste Fim de Policarpo Quaresma (1915)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Coração dos Outros aventou que talvez fosse bom, seria uma novidade e não fazia mal experimentar.",
+  "w": "aventou",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
   "id": "pc-p357",
   "tipo": "palavra",
   "pc": "pulha",
@@ -455,6 +569,204 @@
   "w": "pulha",
   "classe": "substantivo",
   "lista": "subst"
+ },
+ {
+  "id": "pc-p510",
+  "tipo": "palavra",
+  "pc": "mormente",
+  "pt": "principalmente, de modo especial",
+  "aceitas": [
+   "principalmente de modo especial"
+  ],
+  "distratores": [
+   "somente, de modo exclusivo",
+   "geralmente, na maioria das vezes",
+   "certamente, com toda a certeza",
+   "naturalmente, como é de esperar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Advérbio culto, que destaca um caso dentro de um conjunto: «mormente quando», «mormente se». Equivale a «sobretudo».",
+  "fonte": "Machado de Assis, Esaú e Jacó (1904)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "— As viagens fazem bem, mormente na idade deles.",
+  "w": "mormente",
+  "classe": "locução",
+  "lista": "adv"
+ },
+ {
+  "id": "pc-p511",
+  "tipo": "palavra",
+  "pc": "contumácia",
+  "pt": "obstinação em manter uma conduta, sem ceder a ninguém",
+  "aceitas": [
+   "obstinação em manter uma conduta sem ceder a ninguém"
+  ],
+  "distratores": [
+   "ofensa grave feita em público contra uma pessoa",
+   "hábito de adiar as obrigações por pura preguiça",
+   "dissimulação para esconder de todos as próprias intenções",
+   "calma para suportar sem reclamar as dificuldades da vida"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; no direito, também a falta de quem não comparece a juízo. Adjetivo: «contumaz». Não confundir com «contumélia» (injúria).",
+  "fonte": "Alexandre Herculano, História da Origem e Estabelecimento da Inquisição em Portugal",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Às alusões pungentes que saíam da boca do embaixador respondia o papa com a contumácia que era própria do seu carácter…",
+  "w": "contumácia",
+  "classe": "substantivo",
+  "lista": "conc"
+ },
+ {
+  "id": "pc-p512",
+  "tipo": "palavra",
+  "pc": "nefasto",
+  "pt": "que traz desgraça e prejuízo",
+  "aceitas": [
+   "que traz desgraça e prejuízo"
+  ],
+  "distratores": [
+   "que causa tédio e cansaço",
+   "que provoca nojo e repulsa",
+   "que anuncia o fim de algo",
+   "que vem do destino e não tem remédio"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de sentido forte: «influência nefasta», «dia nefasto». Não confundir com «nefando», que é abominável.",
+  "fonte": "Oswald de Andrade, Pau Brasil (1925)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Libertemo-nos das influências nefastas das velhas civilizações em decadência.",
+  "w": "nefastas",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p513",
+  "tipo": "palavra",
+  "pc": "amuar",
+  "pt": "ficar de cara fechada, calado e ressentido",
+  "aceitas": [
+   "ficar de cara fechada calado e ressentido"
+  ],
+  "distratores": [
+   "perder a calma e gritar de raiva",
+   "diminuir de força, acalmar-se",
+   "mostrar-se envergonhado e corar",
+   "ficar quieto e pensativo, distraído"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo coloquial-literário; o particípio «amuado» e o substantivo «amuo» são os mais comuns.",
+  "fonte": "Machado de Assis, Dom Casmurro (1899)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Vi-lhe fazer um gesto para tirá-los outra vez do bolso, mas não passou do gesto; estava amuado.",
+  "w": "amuado",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p514",
+  "tipo": "palavra",
+  "pc": "plêiade",
+  "pt": "grupo de pessoas notáveis num mesmo campo",
+  "aceitas": [
+   "grupo de pessoas notáveis num mesmo campo"
+  ],
+  "distratores": [
+   "conjunto de obras reunidas de um mesmo autor",
+   "grupo de pessoas reunidas para um debate",
+   "sequência de fatos que marcam uma época",
+   "associação de artistas em oposição ao governo"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, com «de» e o plural das pessoas («uma plêiade de escritores»). Também é o nome de um aglomerado de estrelas, as Plêiades.",
+  "fonte": "Trindade Coelho, Os Meus Amores",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "De entre a plêiade de prosadores, que por aí mourejam no mundo das letras, a individualidade de Trindade Coelho destaca-se distintamente, e impõe-se…",
+  "w": "plêiade",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p515",
+  "tipo": "palavra",
+  "pc": "máxime",
+  "pt": "principalmente, em especial, acima de tudo",
+  "aceitas": [
+   "principalmente em especial acima de tudo"
+  ],
+  "distratores": [
+   "no máximo, quando muito, e não mais",
+   "ao mesmo tempo, de modo simultâneo",
+   "de uma vez, de modo definitivo",
+   "em último lugar, no fim de tudo"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Advérbio culto, mais de texto escrito, que destaca um termo: «máxime quando», «máxime nas províncias». Equivale a «mormente».",
+  "fonte": "Sílvio Romero, Cantos populares do Brasil",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "No tempo da Regência o bacamarte fez proezas em quase todas as províncias, máxime nas de Pernambuco, Ceará, Maranhão, Piauí e Bahia…",
+  "w": "máxime",
+  "classe": "locução",
+  "lista": "adv"
+ },
+ {
+  "id": "pc-p516",
+  "tipo": "palavra",
+  "pc": "plutocracia",
+  "pt": "governo exercido pelos mais ricos",
+  "aceitas": [
+   "governo exercido pelos mais ricos"
+  ],
+  "distratores": [
+   "governo exercido pelos nobres",
+   "governo exercido pelos sacerdotes",
+   "governo exercido pelos mais velhos",
+   "governo exercido por um só homem"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Do grego «ploûtos» (riqueza). Também se usa para o poder da riqueza sobre o Estado, mesmo sem a forma de governo.",
+  "fonte": "Joaquim Nabuco, Minha Formação (1900)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "«Sabe Vossa Majestade quanto sofri da oligarquia politicante e da plutocracia escravocrata nesses afanosos tempos...",
+  "w": "plutocracia",
+  "classe": "substantivo",
+  "lista": "conc"
  },
  {
   "id": "pc-p358",
@@ -515,6 +827,62 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p517",
+  "tipo": "palavra",
+  "pc": "acuidade",
+  "pt": "agudeza e finura de percepção dos sentidos",
+  "aceitas": [
+   "agudeza e finura de percepção dos sentidos"
+  ],
+  "distratores": [
+   "zelo e cuidado no trato com as pessoas",
+   "leveza e rapidez nos movimentos do corpo",
+   "doçura e brandura no modo de falar",
+   "dureza e rigor no julgamento dos outros"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto: «acuidade visual», «acuidade auditiva», «acuidade de espírito». Também pode dizer intensidade (de dor, de tormento).",
+  "fonte": "António Patrício, Serão Inquieto",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Apercebia com uma acuidade visionária a orquestração da noite, dita em surdina nas janelas, nas folhagens, e decompunha essa penumbra de ruídos…",
+  "w": "acuidade",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p518",
+  "tipo": "palavra",
+  "pc": "precipuamente",
+  "pt": "em primeiro lugar e acima de tudo",
+  "aceitas": [
+   "em primeiro lugar e acima de tudo"
+  ],
+  "distratores": [
+   "com exatidão e rigor, sem nenhum erro",
+   "às pressas, de modo precipitado e irrefletido",
+   "de modo precário e sem segurança alguma",
+   "pouco a pouco e de maneira bem gradual"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Advérbio culto, típico de textos jurídicos e oficiais; vem entre vírgulas ou depois do verbo. Do adjetivo «precípuo».",
+  "fonte": "Constituição do Brasil de 1988",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe:",
+  "w": "precipuamente",
+  "classe": "locução",
+  "lista": "adv"
+ },
+ {
   "id": "pc-p360",
   "tipo": "palavra",
   "pc": "draconiano",
@@ -571,6 +939,90 @@
   "w": "grassou",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p519",
+  "tipo": "palavra",
+  "pc": "fulcro",
+  "pt": "ponto central em que algo se apoia",
+  "aceitas": [
+   "ponto central em que algo se apoia"
+  ],
+  "distratores": [
+   "ponto mais alto, em que algo culmina",
+   "ponto fraco, em que algo se rompe",
+   "ponto de encontro, em que algo se cruza",
+   "ponto de partida, em que algo nasce"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo da física (apoio da alavanca) usado em sentido figurado: o fulcro de um argumento, de um grupo.",
+  "fonte": "Conde de Sabugosa, Neves de Antanho",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Maria, que em Lisboa era o fulcro brilhante da culta Academia.",
+  "w": "fulcro",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p520",
+  "tipo": "palavra",
+  "pc": "de afogadilho",
+  "pt": "às pressas, de modo atrapalhado",
+  "aceitas": [
+   "às pressas de modo atrapalhado"
+  ],
+  "distratores": [
+   "às escondidas, sem que ninguém veja",
+   "a contragosto, sem vontade nenhuma",
+   "à toa, sem objetivo nem rumo",
+   "em voz baixa, sem chamar atenção"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Locução adverbial; vem de «afogar», pelo aperto da pressa. Pode qualificar o que se faz sem preparo: «de afogadilho».",
+  "fonte": "Alberto Leal Barradas Monteiro Braga, Contos d'Aldeia",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "--Vem cá--chamou de afogadilho o mestre--já aqui, seu atrevido.",
+  "w": "de afogadilho",
+  "classe": "locução",
+  "lista": "adv"
+ },
+ {
+  "id": "pc-p521",
+  "tipo": "palavra",
+  "pc": "solipsismo",
+  "pt": "convicção de que só o próprio eu existe de verdade",
+  "aceitas": [
+   "convicção de que só o próprio eu existe de verdade"
+  ],
+  "distratores": [
+   "doutrina para a qual só a matéria existe de verdade",
+   "dúvida permanente sobre tudo o que se pode conhecer",
+   "busca do prazer como único fim de toda a vida",
+   "hábito de falar sozinho, em voz alta, sem público"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo de filosofia; no uso corrente, fechamento em si mesmo, como na frase. Não é «solilóquio».",
+  "fonte": "Aluísio Azevedo, O Coruja",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Leonília, porém, no solipsismo da sua paixão, não se contentou com isso e quis amor, amor tão bom e tão ardente como o que ela lhe dava.",
+  "w": "solipsismo",
+  "classe": "substantivo",
+  "lista": "conc"
  },
  {
   "id": "pc-p362",
@@ -687,6 +1139,34 @@
   "lista": "adv"
  },
  {
+  "id": "pc-p522",
+  "tipo": "palavra",
+  "pc": "sinédoque",
+  "pt": "figura que toma a parte pelo todo ou vice-versa",
+  "aceitas": [
+   "figura que toma a parte pelo todo ou vice-versa"
+  ],
+  "distratores": [
+   "figura que repete a mesma palavra no começo de frases seguidas",
+   "figura que atribui sentimentos e falas humanas a seres inanimados",
+   "figura que diz o contrário do que quer dar a entender",
+   "figura que opõe duas ideias de sentidos contrários num só trecho"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo da retórica; variante «sinécdoque». É um tropo, como a metáfora e a metonímia; exemplo de sinédoque: «cem cabeças de gado».",
+  "fonte": "Padre Antônio Vieira, História do Futuro",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O título desta História não fala por hipérboles nem sinédoques, não chama a um pigmeu gigante nem a um braço homem.",
+  "w": "sinédoques",
+  "classe": "substantivo",
+  "lista": "conc"
+ },
+ {
   "id": "pc-p366",
   "tipo": "palavra",
   "pc": "rotundo",
@@ -799,6 +1279,177 @@
   "w": "à socapa",
   "classe": "locução",
   "lista": "adv"
+ },
+ {
+  "id": "pc-p523",
+  "tipo": "palavra",
+  "pc": "ignóbil",
+  "pt": "de natureza baixa e moralmente desprezível",
+  "aceitas": [
+   "de natureza baixa e moralmente desprezível"
+  ],
+  "distratores": [
+   "que desconhece o assunto de que fala",
+   "que está fora de qualquer conhecimento",
+   "que não ofende ninguém, inofensivo",
+   "de natureza fraca e fácil de corromper"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto e depreciativo, uniforme (não muda no feminino). Não confundir com «ignaro» (ignorante) nem «ignoto» (desconhecido).",
+  "fonte": "Camilo Castelo Branco, Amor de Perdição (1862)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "No romance todas as crises se explicam, menos a crise ignóbil da falta de dinheiro.",
+  "w": "ignóbil",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p524",
+  "tipo": "palavra",
+  "pc": "debelar",
+  "pt": "vencer e eliminar um mal, uma crise ou uma revolta",
+  "aceitas": [
+   "vencer e eliminar um mal uma crise ou uma revolta"
+  ],
+  "distratores": [
+   "dar início a uma crise, a uma guerra ou a uma revolta",
+   "esconder de todos um mal, uma crise ou um problema",
+   "adiar a solução de um mal ou de uma crise",
+   "enfraquecer aos poucos um mal, uma crise ou uma revolta"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo transitivo direto, culto; o objeto é sempre um mal: «debelar uma epidemia», «debelar o incêndio».",
+  "fonte": "Ladislau Patrício, Aquela Família",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Helena, debelada a crise inicial, com a cabeça entre as mãos, chorava, arrepelava-se.",
+  "w": "debelada",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p525",
+  "tipo": "palavra",
+  "pc": "facínora",
+  "pt": "pessoa perversa que pratica crimes violentos",
+  "aceitas": [
+   "pessoa perversa que pratica crimes violentos"
+  ],
+  "distratores": [
+   "pessoa que vive de enganar os outros",
+   "pessoa que se revolta contra a autoridade",
+   "pessoa que acusa os outros sem provas",
+   "pessoa que se isola do convívio social"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo de dois gêneros («o facínora», «a facínora»), de registro culto. Não se confunde com «faccioso».",
+  "fonte": "Eça de Queirós, Uma Campanha Alegre",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… o juiz - por lhe parecer insuficiente o degredo perpétuo - rompesse no excesso arbitrário de entregar aquele facínora ao suplício imenso de limpar as ruas da sua vila!",
+  "w": "facínora",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p526",
+  "tipo": "palavra",
+  "pc": "à sorrelfa",
+  "pt": "às escondidas, sem ser percebido",
+  "aceitas": [
+   "às escondidas sem ser percebido"
+  ],
+  "distratores": [
+   "às pressas, sem parar",
+   "à força, sem pedir licença",
+   "às cegas, sem saber onde",
+   "às claras, sem medo de ninguém"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Locução adverbial de registro culto e antigo; o mesmo que «à socapa», «à surdina»: «entrar à sorrelfa».",
+  "fonte": "Goethe, Fausto",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… confesso, por sinal que o padreca lhe lançara o te absolvo dos pecados todos, o que eu sei de raiz, porque à sorrelfa pelo confessionário ia passando.",
+  "w": "à sorrelfa",
+  "classe": "locução",
+  "lista": "adv"
+ },
+ {
+  "id": "pc-p527",
+  "tipo": "palavra",
+  "pc": "pútrido",
+  "pt": "em decomposição e de cheiro repugnante",
+  "aceitas": [
+   "em decomposição e de cheiro repugnante"
+  ],
+  "distratores": [
+   "coberto de lodo e de limo",
+   "sujo de sangue seco e de poeira",
+   "corroído por ferrugem e pelo tempo",
+   "infectado por doença contagiosa e grave"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, mais forte que «podre»: «cadáver pútrido», «águas pútridas».",
+  "fonte": "Castro Alves, A mãe do cativo",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Trabalho que pagam com pútrido pão.",
+  "w": "pútrido",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p528",
+  "tipo": "palavra",
+  "pc": "sicário",
+  "pt": "assassino que mata por dinheiro, a mando de outro",
+  "aceitas": [
+   "assassino que mata por dinheiro a mando de outro"
+  ],
+  "distratores": [
+   "bandoleiro que assalta viajantes nas estradas, de emboscada",
+   "mensageiro que leva ordens secretas de um chefe",
+   "cúmplice que acoberta um crime sem tomar parte nele",
+   "cobrador que age à força, a mando de um credor"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de uso literário e jornalístico; «sicários» designa o bando de capangas de alguém.",
+  "fonte": "Joaquim Manuel de Macedo, Os Dois Amores",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Suponhamos agora que nenhum de nós tem pejo, e falemos claramente um ao outro como dois sicários que tratam de um crime.",
+  "w": "sicários",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p370",
@@ -933,7 +1584,7 @@
    "palavras difíceis"
   ],
   "nota": "Substantivo, com tom irônico ou crítico: o cargo que rende sem dar trabalho. Aparece em «mera sinecura».",
-  "fonte": "António Joaquim de Castro Feijó, Sol de Inverno; grafia atualizada",
+  "fonte": "António Feijó, Sol de Inverno; grafia atualizada",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
@@ -991,7 +1642,7 @@
    "verbo"
   ],
   "nota": "Verbo culto, quase sempre pronominal: «coadunar-se com». Não confundir com «coagir» nem com «coligar-se».",
-  "fonte": "José Martiniano de Alencar, Ubirajara: Lenda Tupi",
+  "fonte": "José de Alencar, Ubirajara: Lenda Tupi",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
@@ -1028,6 +1679,34 @@
   "classe": "substantivo",
   "lista": "subst",
   "leitura": true
+ },
+ {
+  "id": "pc-p529",
+  "tipo": "palavra",
+  "pc": "comodato",
+  "pt": "empréstimo gratuito de coisa que será devolvida",
+  "aceitas": [
+   "empréstimo gratuito de coisa que será devolvida"
+  ],
+  "distratores": [
+   "locação de coisa mediante pagamento periódico",
+   "guarda de coisa alheia até o dono pedir",
+   "direito de usar e fruir de coisa alheia",
+   "entrega de coisa em garantia de uma dívida"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo do direito civil: o comodante empresta, o comodatário recebe e devolve. Distingue-se do «mútuo», empréstimo de coisas que se consomem, como dinheiro.",
+  "fonte": "Decreto-Lei de Macau 43 de 1999",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "b) A distribuição ao público de originais ou cópias, incluindo o aluguer comercial, mas excluindo o comodato;",
+  "w": "comodato",
+  "classe": "substantivo",
+  "lista": "conc"
  },
  {
   "id": "pc-p378",
@@ -1089,6 +1768,34 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p530",
+  "tipo": "palavra",
+  "pc": "calão",
+  "pt": "linguagem vulgar, cheia de gírias, de certos grupos",
+  "aceitas": [
+   "linguagem vulgar cheia de gírias de certos grupos"
+  ],
+  "distratores": [
+   "dureza da pele formada pelo atrito constante",
+   "silêncio profundo que antecede a tempestade",
+   "linguagem elevada e solene, própria de discursos",
+   "língua morta, falada só em cerimônias religiosas"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo; «baixo calão» é a linguagem grosseira, de palavrões. Também designa a gíria própria de um grupo: «calão da boêmia».",
+  "fonte": "Lima Barreto, Recordações do Escrivão Isaías Caminha (1909)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Deu-me relações, ensinou-me as maneiras, o calão da boêmia, levou-me aos lugares curiosos e consagrados.",
+  "w": "calão",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p380",
   "tipo": "palavra",
   "pc": "proverbial",
@@ -1143,6 +1850,120 @@
   "selo": "sentido",
   "frase": "Vinha da casa do Lessa, que auferira lucros extraordinários de uma especulação de café.",
   "w": "auferira",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p531",
+  "tipo": "palavra",
+  "pc": "rescaldo",
+  "pt": "cinzas e brasas que restam de um incêndio",
+  "aceitas": [
+   "cinzas e brasas que restam de um incêndio"
+  ],
+  "distratores": [
+   "faíscas que voam de uma fogueira acesa",
+   "fumaça espessa que sai de um incêndio",
+   "labaredas que sobem de um fogo forte",
+   "cheiro forte de queimado que fica no ar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Também figurado: o rescaldo de uma crise, o que resta e pesa depois dela. «Operação de rescaldo» é apagar as últimas brasas.",
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "No terreiro, diante do rescaldo, homens e mulheres choravam, lamentavam-se, gesticulavam.",
+  "w": "rescaldo",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p532",
+  "tipo": "palavra",
+  "pc": "metonímia",
+  "pt": "figura que nomeia uma coisa pelo nome de outra ligada a ela",
+  "aceitas": [
+   "figura que nomeia uma coisa pelo nome de outra ligada a ela"
+  ],
+  "distratores": [
+   "figura que compara duas coisas sem usar palavra de comparação",
+   "figura que atribui sentimentos e falas humanas a seres inanimados",
+   "figura que diz o contrário do que quer dar a entender",
+   "figura que exagera a ideia para lhe dar mais ênfase"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo da retórica; é um tropo fundado na contiguidade, ao contrário da metáfora, fundada na semelhança. Exemplo: «ler Machado», por ler a obra dele.",
+  "fonte": "Salvatore D’ Onofrio, Pesquisando",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Segundo releva Roman Jakobson (34), enquanto a poesia faz largo uso da capacidade metafórica, operando no campo associativo ou da seleção, a prosa dá preferência à metonímia…",
+  "w": "metonímia",
+  "classe": "substantivo",
+  "lista": "conc"
+ },
+ {
+  "id": "pc-p533",
+  "tipo": "palavra",
+  "pc": "ladino",
+  "pt": "esperto, astuto e dado à malícia",
+  "aceitas": [
+   "esperto astuto e dado à malícia"
+  ],
+  "distratores": [
+   "que desconfia de todos e fala pouco",
+   "que tem modos finos e delicados",
+   "de gênio violento e arrogante",
+   "que age sempre com calma e paciência"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo e substantivo, de tom às vezes depreciativo. Vem de «latino», mas hoje o sentido comum é o de esperteza.",
+  "fonte": "Almachio Diniz, Mundanismos; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "--Como eu, tão ladina para outras, compreendendo tão bem o mal alheio, deixei-me cegar por tanto tempo?!",
+  "w": "ladina",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p534",
+  "tipo": "palavra",
+  "pc": "amainar",
+  "pt": "perder a força e abrandar aos poucos",
+  "aceitas": [
+   "perder a força e abrandar aos poucos"
+  ],
+  "distratores": [
+   "começar a clarear ao raiar do dia",
+   "juntar dinheiro aos poucos, poupando",
+   "soltar-se das amarras e ir à deriva",
+   "pôr as velas ao vento para partir"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, de origem náutica (recolher as velas); passou a dizer que vento, chuva ou ânimos se acalmam.",
+  "fonte": "Luiz Augusto Rebello da Silva, A Casa dos Fantasmas",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Entretanto amaina mais a chuva... mas nadar por estas horas com mouros na costa, nada!...",
+  "w": "amaina",
   "classe": "verbo",
   "lista": "verbo"
  },
@@ -1203,6 +2024,64 @@
   "lista": "conc"
  },
  {
+  "id": "pc-p535",
+  "tipo": "palavra",
+  "pc": "matreiro",
+  "pt": "astuto e manhoso, hábil em enganar",
+  "aceitas": [
+   "astuto e manhoso hábil em enganar"
+  ],
+  "distratores": [
+   "teimoso e rabugento, difícil de convencer",
+   "tímido e desconfiado, avesso a estranhos",
+   "vaidoso e presunçoso, cheio de si",
+   "briguento e violento, pronto a ofender"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo coloquial-literário; aplica-se a quem engana com esperteza, e também a animais («raposa matreira»).",
+  "fonte": "Lima Barreto, Triste Fim de Policarpo Quaresma (1915)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Aquilo devia ser um ambicioso matreiro; era preciso cortar as asas daquele estrangeiro, que vinha não se sabe donde!",
+  "w": "matreiro",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p536",
+  "tipo": "palavra",
+  "pc": "amealhar",
+  "pt": "juntar dinheiro aos poucos, economizando",
+  "aceitas": [
+   "juntar dinheiro aos poucos economizando"
+  ],
+  "distratores": [
+   "emprestar dinheiro cobrando juros altos",
+   "perder dinheiro em negócios arriscados",
+   "pedir dinheiro emprestado aos conhecidos",
+   "repartir dinheiro com os mais pobres"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, de tom meio irônico: juntar vintém por vintém. Rege «dinheiro», «economias», «fortuna».",
+  "fonte": "Alberto Pimentel, Vinte Anos de Vida Literária; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Harpagão das esquinas, trabalha para amealhar, com os olhos postos no seu ideal galego de repatriar-se remediado.",
+  "w": "amealhar",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
   "id": "pc-p384",
   "tipo": "palavra",
   "pc": "augúrio",
@@ -1258,6 +2137,35 @@
   "w": "pretérito",
   "classe": "adjetivo",
   "lista": "adj"
+ },
+ {
+  "id": "pc-p537",
+  "tipo": "palavra",
+  "pc": "imiscuir-se",
+  "pt": "intrometer-se em assuntos alheios sem ser chamado",
+  "aceitas": [
+   "intrometer-se em assuntos alheios sem ser chamado"
+  ],
+  "distratores": [
+   "abster-se de qualquer assunto por prudência",
+   "insinuar-se em casa alheia para obter favores",
+   "submeter-se à vontade de outra pessoa",
+   "responsabilizar-se pelos erros de outra pessoa"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo pronominal culto, regido por «em»: «imiscuir-se na vida alheia». Costuma ter tom de reprovação.",
+  "fonte": "Decreto-Lei do Brasil 383 de 1938; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… no território nacional e os que nele se acham em caráter temporário não podem exercer qualquer atividade de natureza política nem imiscuir-se …",
+  "w": "imiscuir-se",
+  "classe": "verbo",
+  "lista": "verbo"
  },
  {
   "id": "pc-p386",
@@ -1345,6 +2253,34 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p538",
+  "tipo": "palavra",
+  "pc": "enfiteuse",
+  "pt": "direito de usar imóvel alheio, pagando ao dono um foro anual",
+  "aceitas": [
+   "direito de usar imóvel alheio pagando ao dono um foro anual"
+  ],
+  "distratores": [
+   "direito de usar um bem alheio e colher seus frutos",
+   "contrato em que se aluga um imóvel por prazo fixo",
+   "direito de atravessar o terreno vizinho para chegar à rua",
+   "bem imóvel dado em garantia de uma dívida contraída"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo do direito civil, ainda presente nos terrenos de marinha; o titular é o enfiteuta, e o dono, o senhorio direto. Também chamada «aforamento».",
+  "fonte": "Constituição do Brasil de 1988",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "§ 3º A enfiteuse continuará sendo aplicada aos terrenos de marinha e seus acrescidos, situados na faixa de segurança, a partir da orla marítima.",
+  "w": "enfiteuse",
+  "classe": "substantivo",
+  "lista": "conc"
+ },
+ {
   "id": "pc-p389",
   "tipo": "palavra",
   "pc": "iconoclasta",
@@ -1393,7 +2329,7 @@
    "verbo"
   ],
   "nota": "Verbo literário e popular, dito de plantas, animais, negócios e pessoas. A negação («não medra») é frequente.",
-  "fonte": "Adolfo Ferreira Caminha, No País dos Yankees; grafia atualizada",
+  "fonte": "Adolfo Caminha, No País dos Yankees; grafia atualizada",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
@@ -1401,6 +2337,34 @@
   "w": "medra",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p539",
+  "tipo": "palavra",
+  "pc": "celeuma",
+  "pt": "gritaria e alvoroço de muita gente junta",
+  "aceitas": [
+   "gritaria e alvoroço de muita gente junta"
+  ],
+  "distratores": [
+   "briga violenta, corpo a corpo, entre duas pessoas",
+   "reunião solene para homenagear alguém com festa",
+   "silêncio pesado que precede um grande acontecimento",
+   "discurso longo, cheio de rodeios e enfeites"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo feminino, culto e literário; hoje também se diz de grande discussão ou polêmica: «a celeuma em torno da lei». Antigamente era o brado dos marinheiros.",
+  "fonte": "Alberto Pimentel, A Triste Canção do Sul; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O povo levantou celeuma contra os dois pimpões, mas não ousava afrontá-los, porque algum saloio que investia, recuava ganindo, deslombado.",
+  "w": "celeuma",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p391",
@@ -1461,6 +2425,63 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p540",
+  "tipo": "palavra",
+  "pc": "gleba",
+  "pt": "porção de terra própria para cultivo",
+  "aceitas": [
+   "porção de terra própria para cultivo"
+  ],
+  "distratores": [
+   "área de mata fechada, sem cultivo",
+   "terreno alagado e lamacento, de brejo",
+   "terra árida e deserta, onde nada cresce",
+   "faixa de terra cercada de água"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo literário. «Servo da gleba» era o camponês preso à terra onde nascia, na Idade Média.",
+  "fonte": "Gonçalves Dias, Cumprimento de um Voto",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Na gleba virente, do sol bafejada, Recende perfumes a flor matutina, Que à luz da alvorada Ao sopro da brisa de leve s'inclina.",
+  "w": "gleba",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p541",
+  "tipo": "palavra",
+  "pc": "probo",
+  "pt": "de conduta reta e inteiramente honesta",
+  "aceitas": [
+   "de conduta reta e inteiramente honesta"
+  ],
+  "distratores": [
+   "de índole generosa e sempre pronta a ajudar",
+   "de comportamento discreto, modesto e simples",
+   "de fé viva e fiel ao dever religioso",
+   "que se mostra sempre cauteloso e comedido"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, usado de pessoas («homem probo», «funcionário probo»). O substantivo é «probidade».",
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Digo apenas que o homem mais probo que conheci em minha vida foi um certo Jacó Medeiros ou Jacó Valadares, não me recorda bem o nome.",
+  "w": "probo",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p393",
   "tipo": "palavra",
   "pc": "surripiar",
@@ -1518,6 +2539,64 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p542",
+  "tipo": "palavra",
+  "pc": "leniente",
+  "pt": "pouco rigoroso, indulgente ao punir",
+  "aceitas": [
+   "pouco rigoroso indulgente ao punir"
+  ],
+  "distratores": [
+   "demorado ao decidir, lento em punir",
+   "justo, que pune sem favorecer ninguém",
+   "rigoroso, que pune com exagero",
+   "cauteloso, que evita punir sem provas"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; rege «com»: «leniente com a impunidade». Parente de «lenitivo», mas não se confunde com ele.",
+  "fonte": "Lanling Xiaoxiaosheng, Jin Ping Mei",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Mas serei leniente com estes poucos golpes.",
+  "w": "leniente",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p543",
+  "tipo": "palavra",
+  "pc": "acabrunhar",
+  "pt": "deixar muito abatido e desanimado",
+  "aceitas": [
+   "deixar muito abatido e desanimado"
+  ],
+  "distratores": [
+   "deixar sem jeito e envergonhado",
+   "embalar com carinho para dormir",
+   "deixar muito irritado e furioso",
+   "livrar de um peso e aliviar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, muito usado no particípio: «acabrunhado», «ar acabrunhado». Não confundir com «acanhar».",
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "No fim de algum tempo arredei os olhos; se a figura repelia, a comparação acabrunhava.",
+  "w": "acabrunhava",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
   "id": "pc-p395",
   "tipo": "palavra",
   "pc": "opróbrio",
@@ -1546,6 +2625,64 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p544",
+  "tipo": "palavra",
+  "pc": "lancinante",
+  "pt": "que causa dor aguda, em pontadas",
+  "aceitas": [
+   "que causa dor aguda em pontadas"
+  ],
+  "distratores": [
+   "que causa dor surda e constante",
+   "que causa tristeza branda e saudosa",
+   "que causa susto e paralisia",
+   "que causa raiva e revolta"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; qualifica dor, grito ou sofrimento: «dor lancinante», «gritos lancinantes».",
+  "fonte": "Eça de Queirós, Os Maias (1888)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Então Afonso da Maia, que se não movera aos uivos lancinantes do Silveirinha, disse de dentro, da mesa do voltarete, com severidade:",
+  "w": "lancinantes",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p545",
+  "tipo": "palavra",
+  "pc": "dimanar",
+  "pt": "ter origem em algo, derivar dele",
+  "aceitas": [
+   "ter origem em algo derivar dele"
+  ],
+  "distratores": [
+   "dirigir-se a um ponto comum, convergir",
+   "dividir-se em partes, ramificar-se aos poucos",
+   "perder a força, esmorecer aos poucos",
+   "unir-se a outra coisa, fundir-se"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto; rege a preposição «de»: «dimanar de». Não confundir com «dirimir».",
+  "fonte": "S. de Magalhães Lima, O Congresso de Roma",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "A liberdade de pensamento, a liberdade de consciencia, é a primeira de todas as liberdades, da qual todas as outras dimanam.",
+  "w": "dimanam",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
   "id": "pc-p396",
   "tipo": "palavra",
   "pc": "azáfama",
@@ -1572,6 +2709,34 @@
   "w": "azáfama",
   "classe": "substantivo",
   "lista": "subst"
+ },
+ {
+  "id": "pc-p546",
+  "tipo": "palavra",
+  "pc": "teleologia",
+  "pt": "doutrina que explica as coisas pelos fins a que tendem",
+  "aceitas": [
+   "doutrina que explica as coisas pelos fins a que tendem"
+  ],
+  "distratores": [
+   "estudo das causas e da origem das doenças",
+   "doutrina que explica tudo só por causas mecânicas",
+   "estudo de Deus, da sua natureza e dos seus atributos",
+   "ciência que estuda a classificação e os nomes dos seres"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo de filosofia; adjetivo «teleológico». Não confundir com «teologia».",
+  "fonte": "Augusto dos Anjos, As Cismas do Destino",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "De todo aquele mundo Restava um mecanismo moribundo E uma teleologia sem princípios.",
+  "w": "teleologia",
+  "classe": "substantivo",
+  "lista": "conc"
  },
  {
   "id": "pc-p397",
@@ -1660,6 +2825,34 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p547",
+  "tipo": "palavra",
+  "pc": "petição de princípio",
+  "pt": "erro de raciocínio que dá como provado o que se quer provar",
+  "aceitas": [
+   "erro de raciocínio que dá como provado o que se quer provar"
+  ],
+  "distratores": [
+   "erro de raciocínio que ataca a pessoa e não o argumento",
+   "erro de raciocínio que generaliza a partir de um só caso",
+   "erro de raciocínio que apela à autoridade de quem fala",
+   "erro de raciocínio que oferece só duas saídas ao problema"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Locução de lógica e retórica; é a falácia do raciocínio circular. Usa-se com «incorrer em» e «conter».",
+  "fonte": "Rui Barbosa, A resistência individual",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… antes de mais nada, logicamente encarado, uma petição de princípio …",
+  "w": "petição de princípio",
+  "classe": "substantivo",
+  "lista": "conc"
+ },
+ {
   "id": "pc-p400",
   "tipo": "palavra",
   "pc": "facundo",
@@ -1718,6 +2911,34 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p548",
+  "tipo": "palavra",
+  "pc": "grei",
+  "pt": "conjunto de pessoas ligadas por fé, origem ou ideias",
+  "aceitas": [
+   "conjunto de pessoas ligadas por fé origem ou ideias"
+  ],
+  "distratores": [
+   "campo de terra lavrada, pronto para o plantio",
+   "abertura estreita e longa numa superfície seca",
+   "armação de ferro onde se assa carne",
+   "pessoa muito rica e de grande influência"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo literário; vem do rebanho e dos fiéis de um pastor, e por extensão do povo, do partido ou do grupo. Não confundir com «greta» nem «gleba».",
+  "fonte": "Rodrigo Paganino, Os Contos do Tio Joaquim",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O padre, esse, ia seu caminho, combatendo como sabia a falta de educação, e de conhecimento da sua grei.",
+  "w": "grei",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p402",
   "tipo": "palavra",
   "pc": "recôndito",
@@ -1774,6 +2995,34 @@
   "w": "claudicando",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p549",
+  "tipo": "palavra",
+  "pc": "paroxismo",
+  "pt": "momento de maior intensidade de um sentimento",
+  "aceitas": [
+   "momento de maior intensidade de um sentimento"
+  ],
+  "distratores": [
+   "esgotamento total depois de um grande esforço",
+   "alívio repentino depois de uma dor longa",
+   "mudança brusca de humor sem motivo",
+   "lembrança forte que volta de repente"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Do grego, via medicina: o auge de uma crise. Hoje fala-se de emoção: «paroxismo de raiva», «de dor».",
+  "fonte": "Trindade Coelho, Os Meus Amores",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Feridos de morte, no último paroxismo da sua enorme dor desesperada, os dois irmãozitos abraçados sumiram-se também com ele!...",
+  "w": "paroxismo",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p404",
@@ -1862,6 +3111,64 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p550",
+  "tipo": "palavra",
+  "pc": "inaudito",
+  "pt": "tão extraordinário que nunca se viu igual",
+  "aceitas": [
+   "tão extraordinário que nunca se viu igual"
+  ],
+  "distratores": [
+   "tão ruidoso que ensurdece quem o ouve",
+   "tão antigo que ninguém mais se lembra dele",
+   "tão perigoso que ninguém ousa tocar nele",
+   "tão delicado que quase não se percebe"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; «inaudito» é o que nunca se ouviu nem viu antes, em geral de algo grave ou espantoso. Não confundir com «inaudível».",
+  "fonte": "Manuel Antônio de Almeida, Memórias de um Sargento de Milícias (1854); grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Esse homem ensinara-lhe o ofício, e por inaudito milagre também a ler e a escrever.",
+  "w": "inaudito",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p551",
+  "tipo": "palavra",
+  "pc": "açular",
+  "pt": "incitar e atiçar, avivando o ímpeto ou a paixão",
+  "aceitas": [
+   "incitar e atiçar avivando o ímpeto ou a paixão"
+  ],
+  "distratores": [
+   "golpear com açoite ou vara, castigando sem dó",
+   "encurralar um animal num canto sem saída",
+   "acusar alguém em público de um erro grave",
+   "elogiar alguém em excesso para obter vantagem"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, que vem da caça: açular cães contra a presa. Por extensão, atiçar ânimos, ciúmes e paixões.",
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "E porque tinha notícia dos meus zelos tardios, parece que gostava de os açular mais.",
+  "w": "açular",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
   "id": "pc-p407",
   "tipo": "palavra",
   "pc": "azo",
@@ -1888,6 +3195,35 @@
   "w": "azo",
   "classe": "substantivo",
   "lista": "subst"
+ },
+ {
+  "id": "pc-p552",
+  "tipo": "palavra",
+  "pc": "anódino",
+  "pt": "sem relevo nem força, que passa despercebido",
+  "aceitas": [
+   "sem relevo nem força que passa despercebido"
+  ],
+  "distratores": [
+   "sem nome nem autoria conhecida",
+   "fora da regra, que foge ao padrão",
+   "sem sinceridade, que disfarça o que sente",
+   "sem custo, que se obtém de graça"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto. Não confundir com «anônimo» (sem nome) nem com «anômalo» (irregular).",
+  "fonte": "Lima Barreto, Recordações do Escrivão Isaías Caminha (1909)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Com os nomes novos não havia hesitações; calava-se, ou dava-se uma notícia anódina, recebemos, etc. quando não se descompunha.",
+  "w": "anódina",
+  "classe": "adjetivo",
+  "lista": "adj"
  },
  {
   "id": "pc-p408",
@@ -2004,6 +3340,34 @@
   "lista": "adj"
  },
  {
+  "id": "pc-p553",
+  "tipo": "palavra",
+  "pc": "panegírico",
+  "pt": "discurso ou texto de elogio solene a alguém",
+  "aceitas": [
+   "discurso ou texto de elogio solene a alguém"
+  ],
+  "distratores": [
+   "discurso proferido à beira do túmulo, na despedida",
+   "texto de crítica dura e ataque a alguém",
+   "poema longo que narra os feitos de um herói",
+   "resumo da vida de alguém, escrito após a morte"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; muitas vezes irônico, para elogio exagerado: «fazer o panegírico de alguém». Vem do grego, «discurso de assembleia».",
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "E logo me apresentou à mulher, — uma estimável senhora, — e à filha, que não desmentiu em nada o panegírico de meu pai.",
+  "w": "panegírico",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p412",
   "tipo": "palavra",
   "pc": "contumaz",
@@ -2031,6 +3395,35 @@
   "w": "contumaz",
   "classe": "adjetivo",
   "lista": "adj"
+ },
+ {
+  "id": "pc-p554",
+  "tipo": "palavra",
+  "pc": "plaga",
+  "pt": "região ou terra, em geral distante",
+  "aceitas": [
+   "região ou terra em geral distante"
+  ],
+  "distratores": [
+   "faixa de areia à beira-mar",
+   "ferida aberta e dolorosa na pele",
+   "cadeia de montanhas muito altas",
+   "pedra grande e lisa, rochedo"
+  ],
+  "nivel": "C2",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo poético, quase só no plural: «plagas distantes». Não confundir com «praga».",
+  "fonte": "Cruz e Sousa, Esquecimento",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Solidão de uma plaga extrema e nua, Onde trágica e densa Chora seus lírios virginais a lua Lividamente imensa.",
+  "w": "plaga",
+  "classe": "substantivo",
+  "lista": "subst",
+  "leitura": true
  },
  {
   "id": "pc-p413",
@@ -2090,6 +3483,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p555",
+  "tipo": "palavra",
+  "pc": "recalcitrante",
+  "pt": "que se recusa a obedecer e resiste com teimosia",
+  "aceitas": [
+   "que se recusa a obedecer e resiste com teimosia"
+  ],
+  "distratores": [
+   "que reprime os sentimentos e guarda mágoa em silêncio",
+   "que volta a cometer o mesmo erro sem se corrigir",
+   "que se queixa de tudo e protesta sem motivo",
+   "que reage com violência sempre que é contrariado"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, também usado como substantivo («os recalcitrantes»). Não confundir com «recalcado» nem «reincidente».",
+  "fonte": "J. P. Oliveira Martins, História de Portugal; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Sancho I vai a Coimbra, faz de bispo, obriga os padres, à força, a celebrarem os ofícios divinos, mandando arrancar os olhos aos recalcitrantes.",
+  "w": "recalcitrantes",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p415",
   "tipo": "palavra",
   "pc": "faina",
@@ -2116,6 +3538,35 @@
   "w": "faina",
   "classe": "substantivo",
   "lista": "subst"
+ },
+ {
+  "id": "pc-p556",
+  "tipo": "palavra",
+  "pc": "diáfano",
+  "pt": "translúcido, que deixa passar a luz",
+  "aceitas": [
+   "translúcido que deixa passar a luz"
+  ],
+  "distratores": [
+   "brilhante, que reflete a luz com força",
+   "pálido, de cor fraca e desbotada",
+   "opaco, que não deixa passar a luz",
+   "frio, de aspecto duro e gelado"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, também usado para o que é leve e quase imaterial: «véu diáfano», «azul diáfano».",
+  "fonte": "José de Alencar, Iracema (1865)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Com os olhos engolfados na imensidade do horizonte, buscava, mas embalde, descobrir no azul diáfano a alvura de uma vela perdida nos mares.",
+  "w": "diáfano",
+  "classe": "adjetivo",
+  "lista": "adj"
  },
  {
   "id": "pc-p416",
@@ -2146,6 +3597,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p557",
+  "tipo": "palavra",
+  "pc": "parcimonioso",
+  "pt": "que usa com economia e moderação o que tem",
+  "aceitas": [
+   "que usa com economia e moderação o que tem"
+  ],
+  "distratores": [
+   "que causa dano aos poucos e sem se notar",
+   "que gasta além da conta sem pensar no amanhã",
+   "que faz tudo com pressa e com pouco cuidado",
+   "que mostra muita presunção e gosto pela vaidade"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, com «de» ou «em»: «parcimonioso em elogios». Não confundir com «pernicioso».",
+  "fonte": "Eça de Queirós, Uma Campanha Alegre",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "E o fisco, que deve ser parcimonioso do seu tempo e dos seus recursos, tem um meio mais singelo e mais expedito…",
+  "w": "parcimonioso",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p417",
   "tipo": "palavra",
   "pc": "sumidade",
@@ -2170,6 +3650,63 @@
   "selo": "sentido",
   "frase": "Convidados de primeira ordem, generais, diplomatas, senadores, um ou dois ministros, muitas sumidades do comércio; e as damas, as grandes damas?",
   "w": "sumidades",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p558",
+  "tipo": "palavra",
+  "pc": "ubíquo",
+  "pt": "que está presente em toda parte ao mesmo tempo",
+  "aceitas": [
+   "que está presente em toda parte ao mesmo tempo"
+  ],
+  "distratores": [
+   "que tem poder sobre todas as coisas",
+   "que sabe tudo o que ocorre ao redor",
+   "que se mostra a todos com muita vaidade",
+   "que se mantém afastado de todas as pessoas"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de registro literário; «ubiquidade» é o substantivo. Mais comum no uso figurado, para quem parece estar em vários lugares.",
+  "fonte": "Manuel de Oliveira Paiva, Dona Guidinha do Poço",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Era preciso o vaqueiro da Guidinha tornar-se ubíquo, para o que ocupava os seus filhos e alguns escravos do amo.",
+  "w": "ubíquo",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p559",
+  "tipo": "palavra",
+  "pc": "pejo",
+  "pt": "vergonha e pudor diante dos olhos dos outros",
+  "aceitas": [
+   "vergonha e pudor diante dos olhos dos outros"
+  ],
+  "distratores": [
+   "medo que faz tremer diante de um perigo",
+   "pena e compaixão que se sente por alguém",
+   "raiva contida contra quem nos ofendeu",
+   "carga pesada que se leva sobre as costas"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto e literário; muito usado em «ter pejo de» e «sem pejo» (com descaramento).",
+  "fonte": "Castro Alves, A mãe do cativo",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Nem core de pejo, nem trema de raiva Se a face lhe cortam com o látego vil.",
+  "w": "pejo",
   "classe": "substantivo",
   "lista": "subst"
  },
@@ -2201,6 +3738,34 @@
   "w": "arguto",
   "classe": "adjetivo",
   "lista": "adj"
+ },
+ {
+  "id": "pc-p560",
+  "tipo": "palavra",
+  "pc": "sequaz",
+  "pt": "partidário que segue alguém de modo servil",
+  "aceitas": [
+   "partidário que segue alguém de modo servil"
+  ],
+  "distratores": [
+   "chefe que comanda um grupo de revoltosos",
+   "pessoa que prende alguém e pede resgate",
+   "inimigo declarado de uma pessoa ou causa",
+   "pessoa que sucede a outra num cargo"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, quase sempre depreciativo: seguidor que não pensa por conta própria. Não confundir com «sequestrador».",
+  "fonte": "Machado de Assis, O Alienista (1882)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Infelizmente, a resposta do alienista diminuíra o furor dos sequazes.",
+  "w": "sequazes",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p419",
@@ -2258,6 +3823,35 @@
   "w": "pasmaceira",
   "classe": "substantivo",
   "lista": "subst"
+ },
+ {
+  "id": "pc-p561",
+  "tipo": "palavra",
+  "pc": "inconteste",
+  "pt": "que não se pode discutir nem negar",
+  "aceitas": [
+   "que não se pode discutir nem negar"
+  ],
+  "distratores": [
+   "que é feito de uma só peça",
+   "que não consegue conter os impulsos",
+   "que muda de ideia a toda hora",
+   "que não pensa nas consequências de agir"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, comum em textos jurídicos e jornalísticos: «verdade inconteste», «líder inconteste». Mesmo sentido de «incontestável».",
+  "fonte": "Marcelo Lapenda, Art. 128, da Lei nº 8.213",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "No tocante ao primeiro ponto, inconteste a declaração de inconstitucionalidade do dispositivo constante na parte final do art. 128, da Lei nº 8.213/91…",
+  "w": "inconteste",
+  "classe": "adjetivo",
+  "lista": "adj"
  },
  {
   "id": "pc-p421",
@@ -2335,12 +3929,69 @@
    "palavras difíceis"
   ],
   "nota": "Substantivo poético, muito usado para a hora vermelha do poente ou da aurora; pode vir no plural.",
-  "fonte": "José Martiniano de Alencar, O Guarani; grafia atualizada",
+  "fonte": "José de Alencar, O Guarani; grafia atualizada",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
   "frase": "Pouco a pouco o dia foi rompendo; o arrebol da manhã desenhou-se no horizonte, tingindo as nuvens com todas as cores do prisma.",
   "w": "arrebol",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p562",
+  "tipo": "palavra",
+  "pc": "sibilino",
+  "pt": "de sentido obscuro e misterioso, difícil de decifrar",
+  "aceitas": [
+   "de sentido obscuro e misterioso difícil de decifrar"
+  ],
+  "distratores": [
+   "de som agudo, como o de um assobio",
+   "de tom ofensivo, que fere quem ouve",
+   "de caráter solene, digno de muito respeito",
+   "de voz doce e suave, que acalma quem ouve"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, vindo das Sibilas, profetisas da Antiguidade. Costuma qualificar «frase», «palavras», «ditos» e «sorriso». Não é «sibilante».",
+  "fonte": "Eça de Queirós, Os Maias (1888)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O maestro esboçou um gesto de desdém, teve uma das suas frases sibilinas:",
+  "w": "sibilinas",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p563",
+  "tipo": "palavra",
+  "pc": "autóctone",
+  "pt": "originário do próprio lugar em que existe",
+  "aceitas": [
+   "originário do próprio lugar em que existe"
+  ],
+  "distratores": [
+   "vindo de fora e adaptado ao lugar",
+   "isolado do resto do mundo",
+   "antigo e conservado sem alterações",
+   "ligado às crenças de um povo"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Adjetivo e substantivo culto; o contrário é «alóctone». Diz-se de povo, planta, animal, cultura, tradição.",
+  "fonte": "Salvatore D’ Onofrio, Pensar é preciso",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Mas os estudiosos do folclore brasileiro acham que a lenda do boto não é de origem autóctone, pois foi levada para Amazônia pelos colonizadores portugueses.",
+  "w": "autóctone",
   "classe": "substantivo",
   "lista": "subst"
  },
@@ -2402,6 +4053,148 @@
   "lista": "adj"
  },
  {
+  "id": "pc-p564",
+  "tipo": "palavra",
+  "pc": "bazófia",
+  "pt": "ostentação de quem se gaba sem ter mérito",
+  "aceitas": [
+   "ostentação de quem se gaba sem ter mérito"
+  ],
+  "distratores": [
+   "elogio exagerado de quem quer agradar a alguém",
+   "conversa tola de quem fala sem pensar",
+   "boato falso que corre de boca em boca",
+   "ofensa grosseira de quem ataca o sagrado"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; o adjetivo é «bazofiador» e o verbo, «bazofiar». Vem sempre com ideia de vaidade vazia.",
+  "fonte": "Euclides da Cunha, Os Sertões",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Partira-se o prestígio do soldado, e a bazófia dos broncos cabecilhas repastava-se das mínimas peripécias dos acontecimentos.",
+  "w": "bazófia",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p565",
+  "tipo": "palavra",
+  "pc": "renitente",
+  "pt": "que não cede e insiste com teimosia",
+  "aceitas": [
+   "que não cede e insiste com teimosia"
+  ],
+  "distratores": [
+   "que evita dizer com franqueza o que pensa",
+   "que brilha com muita intensidade e chama atenção",
+   "que se arrepende e desfaz o que fez",
+   "que se renova sempre e nunca envelhece"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto. Também se aplica a coisas que persistem: «tosse renitente», «chuva renitente». Não confundir com «reticente».",
+  "fonte": "Trindade Coelho, Os meus amores: contos e balladas",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "--Que não e que não! insistia renitente;--que tivessem paciência, que se divertissem muito, ela ficava.",
+  "w": "renitente",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p566",
+  "tipo": "palavra",
+  "pc": "efeméride",
+  "pt": "fato marcante lembrado numa data do calendário",
+  "aceitas": [
+   "fato marcante lembrado numa data do calendário"
+  ],
+  "distratores": [
+   "doença leve que passa em poucos dias",
+   "inseto de vida breve, que morre em horas",
+   "festa popular que se repete todo ano",
+   "pessoa de vida breve, logo esquecida"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, usado no plural ou no singular. Vem de «efêmero», mas o sentido é o de data a lembrar.",
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Em falta disso, agarrava-me a jornais e almanaques, decifrava as efemérides e anedotas das folhinhas.",
+  "w": "efemérides",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p567",
+  "tipo": "palavra",
+  "pc": "indômito",
+  "pt": "que não se deixa domar nem submeter",
+  "aceitas": [
+   "que não se deixa domar nem submeter"
+  ],
+  "distratores": [
+   "que não se cansa nem esmorece",
+   "que não sente medo nem dor",
+   "que não se vê nem se ouve",
+   "que não envelhece nem morre"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, ligado a cavalos, povos e ao espírito: «cavalo indômito», «vontade indômita».",
+  "fonte": "Castro Alves, Sub tegmine fagi",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O pensamento indômito, arrojado Galopa no sertão.",
+  "w": "indômito",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p568",
+  "tipo": "palavra",
+  "pc": "palimpsesto",
+  "pt": "manuscrito antigo cujo texto foi raspado para receber outro por cima",
+  "aceitas": [
+   "manuscrito antigo cujo texto foi raspado para receber outro por cima"
+  ],
+  "distratores": [
+   "livro antigo copiado à mão e enfeitado com letras douradas e miniaturas",
+   "inscrição gravada em pedra para lembrar uma pessoa ou um fato",
+   "rolo de papiro encontrado em túmulos e guardado em bibliotecas antigas",
+   "cópia de um manuscrito feita por outro escriba, com pequenas variações"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, da paleografia; usa-se também no figurado, para algo escrito por cima de outra coisa («palimpsesto da memória»).",
+  "fonte": "Ramalho Ortigão, O Culto da Arte em Portugal; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "…as cartas lapidares da idade média e os palimpsestos de Plauto, de Cícero, de Marco Aurélio, de Tito Lívio…",
+  "w": "palimpsestos",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p426",
   "tipo": "palavra",
   "pc": "macilento",
@@ -2431,6 +4224,34 @@
   "lista": "adj"
  },
  {
+  "id": "pc-p569",
+  "tipo": "palavra",
+  "pc": "alvíssaras",
+  "pt": "prêmio por boa notícia ou por achar algo perdido",
+  "aceitas": [
+   "prêmio por boa notícia ou por achar algo perdido"
+  ],
+  "distratores": [
+   "imposto cobrado de quem recebe uma herança",
+   "multa aplicada a quem perde um objeto alheio",
+   "festa dada para celebrar uma boa colheita",
+   "oferenda feita aos santos por uma graça"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo feminino plural, antigo mas ainda conhecido; também se grita «alvíssaras!» ao dar notícia feliz. Grafia variante: alvíçaras.",
+  "fonte": "Desconhecido, Boa sentença",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Anunciou que daria cem mil réis de alvíssaras a quem lha trouxesse.",
+  "w": "alvíssaras",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p427",
   "tipo": "palavra",
   "pc": "exangue",
@@ -2456,6 +4277,63 @@
   "selo": "sentido",
   "frase": "…No ardor da sesta debruçada exangue À margem da corrente.",
   "w": "exangue",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p570",
+  "tipo": "palavra",
+  "pc": "consecução",
+  "pt": "ato de alcançar aquilo que se pretendia",
+  "aceitas": [
+   "ato de alcançar aquilo que se pretendia"
+  ],
+  "distratores": [
+   "efeito que decorre de um ato anterior",
+   "série de fatos que se seguem em ordem",
+   "ato de conceder algo a quem pede",
+   "ato de guardar algo em bom estado"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo formal, ligado a «conseguir»: «consecução de um objetivo». Não confundir com «consequência».",
+  "fonte": "Manuel Antonio Ferreira-Deusdado, Estudos sobre Criminalidade e Educação; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Na consecução deste fim múltiplo a humanidade desviada da sua linha natural de aperfeiçoamento entra no domínio da patologia.",
+  "w": "consecução",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p571",
+  "tipo": "palavra",
+  "pc": "exequível",
+  "pt": "que se pode realizar na prática",
+  "aceitas": [
+   "que se pode realizar na prática"
+  ],
+  "distratores": [
+   "que deve ser feito com urgência",
+   "que serve de exemplo a ser seguido",
+   "que cobra judicialmente o devedor",
+   "que pode ser explicado com facilidade"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, da família de «executar»: «plano exequível», «sentença exequível». O oposto é «inexequível».",
+  "fonte": "António Patrício, Serão Inquieto; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… e era forçoso, p'ra admitir como exequível esse plano, que ele fosse um arquitecto extraordinário, um músico revelador de novos meios e um engenheiro único, de génio.",
+  "w": "exequível",
   "classe": "adjetivo",
   "lista": "adj"
  },
@@ -2517,6 +4395,34 @@
   "lista": "adj"
  },
  {
+  "id": "pc-p572",
+  "tipo": "palavra",
+  "pc": "acrimônia",
+  "pt": "aspereza amarga de quem está ressentido",
+  "aceitas": [
+   "aspereza amarga de quem está ressentido"
+  ],
+  "distratores": [
+   "agitação e pressa de quem está ansioso",
+   "tristeza calada de quem perdeu alguém",
+   "vergonha silenciosa de quem foi humilhado",
+   "ambição ardente de quem quer subir na vida"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; em Portugal, «acrimónia». Aparece em expressões como «falar com acrimônia».",
+  "fonte": "Graciliano Ramos, Caetés (1933)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "— Mas como é que o povo aprende, se os senhores não ensinam? perguntou o reverendo com acrimônia.",
+  "w": "acrimônia",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p430",
   "tipo": "palavra",
   "pc": "acerbo",
@@ -2574,6 +4480,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p573",
+  "tipo": "palavra",
+  "pc": "faustoso",
+  "pt": "de muito luxo, pompa e ostentação",
+  "aceitas": [
+   "de muito luxo pompa e ostentação"
+  ],
+  "distratores": [
+   "de ar sombrio, que lembra a morte",
+   "de efeito nocivo, que traz desgraça",
+   "de linhas simples, sóbrio e sem enfeite",
+   "de gosto antigo e fora de moda"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de tom literário («corte faustosa», «vida faustosa»). Não confundir com «funesto» (que traz desgraça).",
+  "fonte": "Machado de Assis, Poesias Completas (1901)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Amo aquela formosa e terna moça Que, à janela encostada, arfa e suspira; Não porque tem do largo rio à margem Casa faustosa e bela.",
+  "w": "faustosa",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p432",
   "tipo": "palavra",
   "pc": "volição",
@@ -2602,6 +4537,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p574",
+  "tipo": "palavra",
+  "pc": "indefectível",
+  "pt": "que não pode falhar nem deixar de acontecer",
+  "aceitas": [
+   "que não pode falhar nem deixar de acontecer"
+  ],
+  "distratores": [
+   "que dura muito pouco e passa depressa",
+   "que fica sem defesa nem proteção alguma",
+   "que não admite explicação nem justificativa alguma",
+   "que ocorre sem esforço nem preparo prévio"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto. Qualifica o que não falta, não falha ou vem sempre: «vitória indefectível», «o indefectível cafezinho». Não é «indefeso».",
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Os vendilhões serão expulsos do templo; ficarão os crentes e os puros, os que põem acima dos interesses mesquinhos, locais e passageiros a vitória indefectível dos princípios.",
+  "w": "indefectível",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p433",
   "tipo": "palavra",
   "pc": "glosa",
@@ -2628,6 +4592,35 @@
   "w": "glosa",
   "classe": "substantivo",
   "lista": "subst"
+ },
+ {
+  "id": "pc-p575",
+  "tipo": "palavra",
+  "pc": "airoso",
+  "pt": "de porte elegante e movimentos leves",
+  "aceitas": [
+   "de porte elegante e movimentos leves"
+  ],
+  "distratores": [
+   "de aspecto sério e porte altivo",
+   "de voz suave e melodiosa",
+   "de ar tímido e retraído",
+   "de pele clara e delicada"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo de tom literário; vem de «ar» e fala do jeito de se mover ou de se apresentar.",
+  "fonte": "Machado de Assis, Poesias Completas (1901)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Deixa os inúteis restos E, atravessando airosa os leves ares, Vai buscar noutra parte outra guarida.",
+  "w": "airosa",
+  "classe": "adjetivo",
+  "lista": "adj"
  },
  {
   "id": "pc-p434",
@@ -2659,6 +4652,91 @@
   "lista": "adj"
  },
  {
+  "id": "pc-p576",
+  "tipo": "palavra",
+  "pc": "invectiva",
+  "pt": "ataque verbal violento e injurioso contra alguém",
+  "aceitas": [
+   "ataque verbal violento e injurioso contra alguém"
+  ],
+  "distratores": [
+   "defesa apaixonada de uma causa ou de alguém",
+   "chamamento a um ser divino para pedir ajuda",
+   "queixa chorosa de quem sofreu uma grande perda",
+   "elogio exagerado, cheio de bajulação e interesse"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; usa-se muito no plural, com «lançar» ou «proferir»: «invectivas contra o governo». O verbo é «invectivar».",
+  "fonte": "Lima Barreto, Triste Fim de Policarpo Quaresma (1915)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… o genro cada vez mais se fazia florianista e jacobino, de cuja boca muita vez ouvia duras invectivas aos estrangeiros.",
+  "w": "invectivas",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p577",
+  "tipo": "palavra",
+  "pc": "cônscio",
+  "pt": "que tem plena noção de algo, sem ignorá-lo",
+  "aceitas": [
+   "que tem plena noção de algo sem ignorá-lo"
+  ],
+  "distratores": [
+   "que se sente culpado por algo que fez",
+   "que se orgulha em excesso do que possui",
+   "que age sempre de acordo com a própria vontade",
+   "que se mostra tranquilo diante do perigo"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; leva «de» ou «que» («cônscio dos seus deveres», «cônscio de que…»). Substantivo: «consciência».",
+  "fonte": "Almeida Garrett, Viagens na Minha Terra",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Nenhum me deu mais atenção nem pareceu cônscio da minha estada ali.",
+  "w": "cônscio",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p578",
+  "tipo": "palavra",
+  "pc": "pelintra",
+  "pt": "pobre que se veste e se comporta como rico",
+  "aceitas": [
+   "pobre que se veste e se comporta como rico"
+  ],
+  "distratores": [
+   "pessoa que vive de favores alheios",
+   "rico avarento que finge ser pobre",
+   "homem de maneiras refinadas e cultas",
+   "pessoa que só fala de si e se gaba"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo (e adjetivo) coloquial, depreciativo; aponta a pose de quem não tem com que sustentá-la.",
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Um dos maiores desgostos de nossa vida foi o aparecimento de certo pelintra de legação, — da legação da Dalmácia, suponhamos, — o conde B.",
+  "w": "pelintra",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p435",
   "tipo": "palavra",
   "pc": "preclaro",
@@ -2684,6 +4762,92 @@
   "selo": "sentido",
   "frase": "E o povo não se enganou pensando que esse preclaro estadista trabalhara para o povo.",
   "w": "preclaro",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p579",
+  "tipo": "palavra",
+  "pc": "quiproquó",
+  "pt": "engano em que uma coisa é tomada por outra",
+  "aceitas": [
+   "engano em que uma coisa é tomada por outra"
+  ],
+  "distratores": [
+   "discussão acalorada entre duas pessoas por motivo banal",
+   "troca de elogios exagerados entre duas pessoas",
+   "mentira inventada para enganar alguém de propósito",
+   "golpe aplicado para tirar proveito de outro"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo masculino, vindo do latim «quid pro quo» («uma coisa por outra»); comum no teatro e na comédia de enganos.",
+  "fonte": "Graciliano Ramos, Infância (1945)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Veio terceiro alfabeto, veio quarto, e a confusão se estabeleceu, um horror de quiproquós.",
+  "w": "quiproquós",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p580",
+  "tipo": "palavra",
+  "pc": "sardônico",
+  "pt": "de zombaria amarga e maldosa",
+  "aceitas": [
+   "de zombaria amarga e maldosa"
+  ],
+  "distratores": [
+   "de alegria discreta e contida",
+   "de ternura sincera e comovida",
+   "de tristeza resignada e muda",
+   "de pudor fingido e recatado"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, quase sempre ligado a «riso» ou «sorriso». Não é o mesmo que «sardento», nem vem de «sardinha».",
+  "fonte": "José de Alencar, Senhora",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "A reticência desfez-se nos lábios da moça em um sorriso sardônico.",
+  "w": "sardônico",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p581",
+  "tipo": "palavra",
+  "pc": "ciclópico",
+  "pt": "de tamanho colossal, que parece obra de gigantes",
+  "aceitas": [
+   "de tamanho colossal que parece obra de gigantes"
+  ],
+  "distratores": [
+   "de aspecto circular, com formato de roda",
+   "de aspecto antigo, que vem de tempos remotos",
+   "de aparência rude, bruta e sem acabamento",
+   "de natureza violenta, que impõe medo a todos"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, de Ciclope, o gigante da mitologia. Costuma qualificar obra, muro, esforço ou tarefa.",
+  "fonte": "Abel Botelho, Amor Crioulo; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Pela ventanilha, mesmo da cama, olhou ao largo e viu que barrava cerca o horizonte uma espécie de ciclópico muro negro.",
+  "w": "ciclópico",
   "classe": "adjetivo",
   "lista": "adj"
  },
@@ -2746,6 +4910,64 @@
   "lista": "adj"
  },
  {
+  "id": "pc-p582",
+  "tipo": "palavra",
+  "pc": "macambúzio",
+  "pt": "de cara fechada, triste e calado",
+  "aceitas": [
+   "de cara fechada triste e calado"
+  ],
+  "distratores": [
+   "de ar sonolento, sem vontade de nada",
+   "de olhar desconfiado, que teme ser enganado",
+   "de modos tímidos, que foge de gente",
+   "de gosto exigente e difícil de agradar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo expressivo, comum na prosa brasileira. Diz-se de pessoas e, por extensão, de coisas («coqueiros macambúzios»).",
+  "fonte": "Lima Barreto, Triste Fim de Policarpo Quaresma (1915)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Ricardo Coração dos Outros, desde o dia da proibição de tocar violão, andava macambúzio.",
+  "w": "macambúzio",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p583",
+  "tipo": "palavra",
+  "pc": "canhestro",
+  "pt": "desajeitado, sem jeito nem habilidade",
+  "aceitas": [
+   "desajeitado sem jeito nem habilidade"
+  ],
+  "distratores": [
+   "tímido e retraído, de poucas palavras",
+   "teimoso e atrevido, que insiste em tudo",
+   "lento e preguiçoso, que adia tudo",
+   "ingênuo e crédulo, fácil de enganar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo comum no registro culto; fala de gestos, de modos ou de obra mal feita: «gesto canhestro».",
+  "fonte": "Camilo Castelo Branco, O Condenado; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Sempre espirituosa, sempre admirável de crítica, e inexorável com o seu bom senso em castigar os espíritos canhestros...",
+  "w": "canhestros",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p438",
   "tipo": "palavra",
   "pc": "estrepitoso",
@@ -2765,7 +4987,7 @@
    "adjetivo"
   ],
   "nota": "Adjetivo; vale também para o que chama grande atenção: «sucesso estrepitoso», «fracasso estrepitoso». Substantivo: «estrépito».",
-  "fonte": "Henrique Coelho Netto, A Capital Federal",
+  "fonte": "Coelho Neto, A Capital Federal",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
@@ -2831,6 +5053,63 @@
   "w": "verboso",
   "classe": "adjetivo",
   "lista": "adj"
+ },
+ {
+  "id": "pc-p584",
+  "tipo": "palavra",
+  "pc": "estiolar",
+  "pt": "enfraquecer e perder o vigor, definhar",
+  "aceitas": [
+   "enfraquecer e perder o vigor definhar"
+  ],
+  "distratores": [
+   "apodrecer por excesso de umidade",
+   "queimar-se por excesso de calor",
+   "florescer fora de época, antecipar-se",
+   "crescer torto, retorcer-se"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Termo da botânica (planta sem luz) também usado para pessoas e talentos. Mais comum no particípio: «estiolado».",
+  "fonte": "Teixeira de Queiroz, A Nossa Gente; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Era igualmente indispensável a luz direta do sol para se não estiolar e morrer a mimosa e tenra planta.",
+  "w": "estiolar",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p585",
+  "tipo": "palavra",
+  "pc": "arcaísmo",
+  "pt": "palavra ou expressão antiga, que caiu em desuso",
+  "aceitas": [
+   "palavra ou expressão antiga que caiu em desuso"
+  ],
+  "distratores": [
+   "palavra ou expressão nova, criada há pouco tempo",
+   "palavra ou expressão de língua estrangeira",
+   "palavra ou construção que foge à regra",
+   "expressão que repete sem necessidade uma ideia"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Termo de gramática e de estilística; o adjetivo é «arcaico». O oposto é «neologismo».",
+  "fonte": "José de Alencar, Iracema (1865); grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Será isto acaso um neologismo, ou ao contrário um arcaísmo?",
+  "w": "arcaísmo",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p441",
@@ -2919,6 +5198,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p586",
+  "tipo": "palavra",
+  "pc": "estulto",
+  "pt": "que age com insensatez e falta de juízo",
+  "aceitas": [
+   "que age com insensatez e falta de juízo"
+  ],
+  "distratores": [
+   "que mostra grande calor e agitação interior",
+   "que suporta a dor sem se queixar nem reclamar",
+   "que ostenta saber que na verdade não tem",
+   "que se dá a prazeres e excessos sem medida"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto e literário. Também é substantivo: «os estultos». Não confundir com «estoico» nem «estuante».",
+  "fonte": "Lima Barreto, Recordações do Escrivão Isaías Caminha (1909)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Havia nisso uma grande questão de amor-próprio nacional e um estulto desejo de não permitir que os estrangeiros, ao voltarem, enchessem de críticas a nossa cidade…",
+  "w": "estulto",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p444",
   "tipo": "palavra",
   "pc": "obstar",
@@ -2976,6 +5284,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p587",
+  "tipo": "palavra",
+  "pc": "imanente",
+  "pt": "que existe no interior da própria coisa",
+  "aceitas": [
+   "que existe no interior da própria coisa"
+  ],
+  "distratores": [
+   "que está prestes a acontecer, próximo",
+   "que se destaca por sua posição elevada",
+   "que está acima e fora do mundo criado",
+   "que dura para sempre, sem mudar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Termo filosófico e teológico, oposto a «transcendente». Não confundir com «iminente» nem com «eminente».",
+  "fonte": "Eça de Queirós, Contos; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Todos vivemos da ação dessa vontade imanente.",
+  "w": "imanente",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p446",
   "tipo": "palavra",
   "pc": "retorquir",
@@ -3003,6 +5340,34 @@
   "w": "retorquiu",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p588",
+  "tipo": "palavra",
+  "pc": "ilação",
+  "pt": "conclusão tirada de fatos ou de outras ideias",
+  "aceitas": [
+   "conclusão tirada de fatos ou de outras ideias"
+  ],
+  "distratores": [
+   "menção indireta a um fato ou a alguém",
+   "crença falsa que se toma como verdadeira",
+   "supressão de uma vogal no fim de uma palavra",
+   "assunto ensinado a uma turma numa aula"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto: «tirar uma ilação», «ilação precipitada». Não é «alusão», «ilusão» nem «elisão».",
+  "fonte": "Amadeu Amaral, Modéstia",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Dessa e de outras afirmações se tirou apressadamente a ilação de que o cristianismo nascente votava um ódio entranhando à vida.",
+  "w": "ilação",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p447",
@@ -3090,6 +5455,35 @@
   "w": "vetusta",
   "classe": "adjetivo",
   "lista": "adj"
+ },
+ {
+  "id": "pc-p589",
+  "tipo": "palavra",
+  "pc": "compungir",
+  "pt": "comover profundamente, causando dor e pesar",
+  "aceitas": [
+   "comover profundamente causando dor e pesar"
+  ],
+  "distratores": [
+   "obrigar alguém a agir, forçando a vontade",
+   "reunir textos e organizá-los numa só obra",
+   "reduzir a um volume menor, apertando",
+   "repreender com dureza, pondo na vergonha"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, hoje mais visto no particípio «compungido» (pesaroso, comovido). Não confundir com «compelir».",
+  "fonte": "Monteiro Lobato, Reinações de Narizinho (1931)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "— Que horrível desgraça! exclamou o príncipe seriamente compungido.",
+  "w": "compungido",
+  "classe": "verbo",
+  "lista": "verbo"
  },
  {
   "id": "pc-p450",
@@ -3207,6 +5601,63 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p590",
+  "tipo": "palavra",
+  "pc": "apotegma",
+  "pt": "frase breve e sentenciosa que resume um princípio",
+  "aceitas": [
+   "frase breve e sentenciosa que resume um princípio"
+  ],
+  "distratores": [
+   "dito engraçado e malicioso, que provoca o riso",
+   "nome dado ao discípulo que traiu a sua fé",
+   "parte final de uma obra, com notas e anexos",
+   "pergunta breve e enigmática que desafia o ouvinte"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de grafia «apotegma» (com «g» pronunciado). Parente de «máxima» e «aforismo».",
+  "fonte": "Euclides da Cunha, Impressões gerais",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… na definição da sua psicologia coletiva, o mesmo doloroso apotegma — ultra aequiotialem non peccavi — que Barleaus engenhou para explicar os desmandos da época colonial.",
+  "w": "apotegma",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p591",
+  "tipo": "palavra",
+  "pc": "depauperado",
+  "pt": "enfraquecido, sem forças e sem vigor",
+  "aceitas": [
+   "enfraquecido sem forças e sem vigor"
+  ],
+  "distratores": [
+   "purificado, livre de impurezas e de vícios",
+   "abandonado e sem ninguém que o proteja",
+   "envelhecido antes do tempo e curvado",
+   "ferido gravemente em combate ou em briga"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Particípio de «depauperar», usado como adjetivo culto: «organismo depauperado», «sangue depauperado». Não confundir com «depurado».",
+  "fonte": "Caetano Alberto da Silva, Descobrimento das Filipinas pelo Navegador Português Fernão de Magalhães",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Os válidos eram poucos, e esses mesmos meio depauperados.",
+  "w": "depauperados",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p454",
   "tipo": "palavra",
   "pc": "coligir",
@@ -3236,6 +5687,63 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p592",
+  "tipo": "palavra",
+  "pc": "encômio",
+  "pt": "elogio caloroso e solene dirigido a alguém",
+  "aceitas": [
+   "elogio caloroso e solene dirigido a alguém"
+  ],
+  "distratores": [
+   "pedido de mercadoria ou serviço a alguém",
+   "presente oferecido em sinal de gratidão",
+   "discurso feito diante de um grande público",
+   "festa de comemoração de uma vitória"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; verbo: «encomiar». Não confundir com «encomenda».",
+  "fonte": "Raul Pompeia, O Ateneu",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "É preciso às vezes tanta bravura para arrostar o encômio face a face, como as agressões.",
+  "w": "encômio",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p593",
+  "tipo": "palavra",
+  "pc": "extrínseco",
+  "pt": "que vem de fora, alheio à coisa",
+  "aceitas": [
+   "que vem de fora alheio à coisa"
+  ],
+  "distratores": [
+   "que faz parte da essência da coisa",
+   "que foge do comum, estranho e exagerado",
+   "que é complexo, difícil de desembaraçar",
+   "que está no limite, no ponto máximo"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, antônimo de «intrínseco»: «fatores extrínsecos». Aparece muito em filosofia, direito e crítica literária.",
+  "fonte": "Lima Barreto, O destino da literatura",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Não é um caráter extrínseco da obra, mas intrínseco, perante o qual aquele pouco vale.",
+  "w": "extrínseco",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p455",
   "tipo": "palavra",
   "pc": "sanha",
@@ -3262,6 +5770,35 @@
   "w": "sanha",
   "classe": "substantivo",
   "lista": "subst"
+ },
+ {
+  "id": "pc-p594",
+  "tipo": "palavra",
+  "pc": "inelutável",
+  "pt": "que não se pode evitar nem vencer",
+  "aceitas": [
+   "que não se pode evitar nem vencer"
+  ],
+  "distratores": [
+   "que não se pode descrever em palavras",
+   "que não se pode apagar nem esquecer",
+   "que não se pode eleger nem escolher",
+   "que não se pode medir nem contar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, próximo de «inevitável» e «fatal»: «destino inelutável», «a morte inelutável». Não é «inefável» nem «inelegível».",
+  "fonte": "Machado de Assis, A Sereníssima República (1882)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "A assembleia, diante de um fenômeno psicológico inelutável, como é a distração, não pôde castigar o oficial…",
+  "w": "inelutável",
+  "classe": "adjetivo",
+  "lista": "adj"
  },
  {
   "id": "pc-p456",
@@ -3293,6 +5830,63 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p595",
+  "tipo": "palavra",
+  "pc": "solecismo",
+  "pt": "erro de sintaxe contra as regras da gramática",
+  "aceitas": [
+   "erro de sintaxe contra as regras da gramática"
+  ],
+  "distratores": [
+   "erro de pronúncia ou de grafia numa palavra",
+   "palavra estrangeira usada no meio da frase",
+   "repetição inútil da mesma ideia em outras palavras",
+   "frase ambígua, que permite duas leituras diferentes"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo da gramática: erro de concordância, regência ou colocação. Não confundir com «barbarismo» (erro numa palavra isolada).",
+  "fonte": "Machado de Assis, Esaú e Jacó (1904)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "A linguagem dessas profecias era liberal, sem sombra de solecismo.",
+  "w": "solecismo",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p596",
+  "tipo": "palavra",
+  "pc": "profícuo",
+  "pt": "que traz proveito e bons resultados",
+  "aceitas": [
+   "que traz proveito e bons resultados"
+  ],
+  "distratores": [
+   "que domina bem uma técnica, competente",
+   "que age com cuidado e economia",
+   "que se faz com pouco esforço, fácil",
+   "que aparece com frequência, comum"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto: «trabalho profícuo», «estudo profícuo». Não confundir com «proficiente» (competente).",
+  "fonte": "Machado de Assis, Verba Testamentária (1882)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Homem de estado, e provavelmente filósofo, engendrou um expediente não menos suave que profícuo: distribuir, a troco de donativos pecuniários, postos de capitão, tenente e alferes.",
+  "w": "profícuo",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p457",
   "tipo": "palavra",
   "pc": "derrogar",
@@ -3322,6 +5916,34 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p597",
+  "tipo": "palavra",
+  "pc": "alvedrio",
+  "pt": "vontade própria, livre escolha",
+  "aceitas": [
+   "vontade própria livre escolha"
+  ],
+  "distratores": [
+   "ordem de um superior que se cumpre",
+   "decisão tomada por um juiz",
+   "conselho dado por quem sabe",
+   "temor de um castigo divino"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, quase só em «livre alvedrio» (o livre-arbítrio). Em textos antigos, a vontade que cada um tem sobre si.",
+  "fonte": "Alexandre Herculano, Opúsculos por Alexandre Herculano - Tomo 04; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Vai ter com o Estado, e dize-lhe que me ofereça vantagens, não tocando no meu alvedrio.",
+  "w": "alvedrio",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p458",
   "tipo": "palavra",
   "pc": "faccioso",
@@ -3349,6 +5971,63 @@
   "w": "facciosos",
   "classe": "adjetivo",
   "lista": "adj"
+ },
+ {
+  "id": "pc-p598",
+  "tipo": "palavra",
+  "pc": "locupletar-se",
+  "pt": "enriquecer, lucrando muito, às vezes de modo ilícito",
+  "aceitas": [
+   "enriquecer lucrando muito às vezes de modo ilícito"
+  ],
+  "distratores": [
+   "esconder-se dos credores, fugindo de cobranças",
+   "juntar dinheiro aos poucos, poupando cada centavo",
+   "entregar-se a prazeres, sem medida nem pudor",
+   "livrar-se de dívidas, pagando tudo de uma vez"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto e de tom crítico; o lucro vem em geral de saque ou abuso: «locupletar-se com o dinheiro público». Também aparece sem «-se».",
+  "fonte": "Alberto Pimentel, O Anel Misterioso; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Os habitantes fugiram deixando abertas as portas, de modo que, à hora em que começou o saque, os franceses se locupletaram tranquilamente.",
+  "w": "locupletaram",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p599",
+  "tipo": "palavra",
+  "pc": "beneplácito",
+  "pt": "aprovação ou consentimento dado por quem tem autoridade",
+  "aceitas": [
+   "aprovação ou consentimento dado por quem tem autoridade"
+  ],
+  "distratores": [
+   "ajuda dada aos necessitados, sem esperar retribuição",
+   "pedido da proteção divina sobre uma pessoa",
+   "remédio sem efeito dado para tranquilizar o doente",
+   "vantagem ou lucro obtido sem esforço nem mérito"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de uso político, jurídico e eclesiástico: «com o beneplácito de», «dar o beneplácito».",
+  "fonte": "Machado de Assis, Questão de vaidade",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Maria Luiza entregou-se toda àquele amor que a procurava na viuvez e achou da parte de sua velha mãe o beneplácito necessário.",
+  "w": "beneplácito",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p459",
@@ -3408,6 +6087,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p600",
+  "tipo": "palavra",
+  "pc": "altissonante",
+  "pt": "de tom elevado, grandioso e sonoro",
+  "aceitas": [
+   "de tom elevado grandioso e sonoro"
+  ],
+  "distratores": [
+   "de sentido confuso e difícil de entender",
+   "de tom triste e lamentoso",
+   "de aparência simples e discreta",
+   "de voz baixa e contida"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto e literário, muitas vezes de tom irônico: diz-se de discurso, estilo ou tema pomposo.",
+  "fonte": "Sebastião Lima, Hino do município de Congonhinhas",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "É tão belo este templo altissonante, És dos teus filhos o mais puro e santo amor.",
+  "w": "altissonante",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p461",
   "tipo": "palavra",
   "pc": "arrostar",
@@ -3427,7 +6135,7 @@
    "verbo"
   ],
   "nota": "Verbo culto, regido por «com» ou direto: «arrostar o perigo», «arrostar com as críticas». Não confundir com «arrastar».",
-  "fonte": "José Martiniano de Alencar, A Pata da Gazela; grafia atualizada",
+  "fonte": "José de Alencar, A Pata da Gazela; grafia atualizada",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
@@ -3435,6 +6143,34 @@
   "w": "arrostar",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p601",
+  "tipo": "palavra",
+  "pc": "contubérnio",
+  "pt": "convivência íntima com alguém ou algo de má reputação",
+  "aceitas": [
+   "convivência íntima com alguém ou algo de má reputação"
+  ],
+  "distratores": [
+   "grande confusão de vozes e de ruídos desordenados",
+   "vala escura onde se acumulam lixo e esgoto",
+   "pátio interno cercado, onde se guarda o gado",
+   "obrigação de pagar uma dívida com anos de trabalho"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo literário, de tom pejorativo: «viver em contubérnio com».",
+  "fonte": "Augusto dos Anjos, O Deus-Verme",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Jamais emprega o acérrimo exorcismo Em sua diária ocupação funérea, E vive em contubérnio com a bactéria, Livre das roupas do antropomorfismo.",
+  "w": "contubérnio",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p462",
@@ -3552,6 +6288,35 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p602",
+  "tipo": "palavra",
+  "pc": "precípuo",
+  "pt": "que é o principal, de maior importância",
+  "aceitas": [
+   "que é o principal de maior importância"
+  ],
+  "distratores": [
+   "que se faz com pressa e sem reflexão",
+   "que serve de regra, que se deve cumprir",
+   "que vem antes de tudo, no tempo",
+   "que fica à beira do abismo, perigoso"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, típico de textos jurídicos e oficiais: «objetivo precípuo», «finalidade precípua». Não se confunde com «precipitado».",
+  "fonte": "Lei Complementar Municipal de Nova Iguaçu 6 de 1997",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Artigo 4º - É objetivo precípuo do presente Plano:",
+  "w": "precípuo",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p466",
   "tipo": "palavra",
   "pc": "assacar",
@@ -3609,6 +6374,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p603",
+  "tipo": "palavra",
+  "pc": "tonitruante",
+  "pt": "de voz muito alta e retumbante, como o trovão",
+  "aceitas": [
+   "de voz muito alta e retumbante como o trovão"
+  ],
+  "distratores": [
+   "de gestos exagerados e teatrais, como os de um ator",
+   "de linguagem difícil e rebuscada, cheia de pedantismo",
+   "de modos duros e rudes, que assustam os outros",
+   "de fala lenta e arrastada, que cansa quem ouve"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, de «tonitruar», trovejar. Qualifica voz, orador e discurso.",
+  "fonte": "Lima Barreto, Casos do júri",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O promotor tonitruante, o juiz amolado e o solerte escrivão de óculos não são só as figuras que merecem apreço.",
+  "w": "tonitruante",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p468",
   "tipo": "palavra",
   "pc": "blasonar",
@@ -3634,6 +6428,64 @@
   "selo": "sentido",
   "frase": "Este que sabe bem a língua espanhola, começou logo a blasonar que era fidalgo e letrado …",
   "w": "blasonar",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p604",
+  "tipo": "palavra",
+  "pc": "vindicativo",
+  "pt": "que procura vingar-se das ofensas recebidas",
+  "aceitas": [
+   "que procura vingar-se das ofensas recebidas"
+  ],
+  "distratores": [
+   "que acusa os outros sem apresentar provas",
+   "que defende com ardor os mais fracos",
+   "que castiga com rigor qualquer erro alheio",
+   "que se queixa com insistência dos outros"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto. Não confundir com «indicativo» nem com «vindicar» (reclamar como seu).",
+  "fonte": "Camilo Castelo Branco, Estrelas Funestas; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Maria reanimou-se, que eram para dar muita alma as promessas da enérgica e vindicativa senhora.",
+  "w": "vindicativa",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p605",
+  "tipo": "palavra",
+  "pc": "esbulhar",
+  "pt": "tirar de alguém um bem ou direito, à força",
+  "aceitas": [
+   "tirar de alguém um bem ou direito à força"
+  ],
+  "distratores": [
+   "gastar tudo o que se tem, sem medida nem juízo",
+   "bater no rosto de alguém com a mão aberta, de repente",
+   "entregar a alguém um bem, em troca de favores",
+   "guardar dinheiro para si, pondo-o no bolso, às escondidas"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto e jurídico; o substantivo é «esbulho» (tomada ilegal da posse). Esbulha-se alguém «de» algo.",
+  "fonte": "Camilo Castelo Branco, Carlota Ângela; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Piamente cremos que os santos da patriarcal de Lisboa, esbulhados de seus adornos, lhe urdiram este afrontoso traspasse.",
+  "w": "esbulhados",
   "classe": "verbo",
   "lista": "verbo"
  },
@@ -3666,6 +6518,121 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p606",
+  "tipo": "palavra",
+  "pc": "abúlico",
+  "pt": "sem força de vontade, incapaz de decidir",
+  "aceitas": [
+   "sem força de vontade incapaz de decidir"
+  ],
+  "distratores": [
+   "sem memória, incapaz de se lembrar",
+   "sem fala, incapaz de se expressar",
+   "de vontade firme, incapaz de ceder",
+   "sem medo, incapaz de se assustar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo e substantivo do vocabulário da psicologia, usado também em sentido literário. Da família de «abulia», a falta de vontade.",
+  "fonte": "Mário de Andrade, Jorobabel",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Job abúlico baba o fel que o devora...",
+  "w": "abúlico",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p607",
+  "tipo": "palavra",
+  "pc": "exarar",
+  "pt": "registrar por escrito, deixar escrito",
+  "aceitas": [
+   "registrar por escrito deixar escrito"
+  ],
+  "distratores": [
+   "examinar com cuidado, investigar",
+   "exaltar com elogios, louvar",
+   "exortar alguém, aconselhar com firmeza",
+   "apagar o que estava escrito, riscar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo formal, de uso jurídico e de ata: «exarar um parecer». Não confundir com «examinar» nem «exortar».",
+  "fonte": "João José de Sousa Telles, Ensino Intuitivo; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Referimo-nos ao primeiro diálogo, que atrás fica exarado.",
+  "w": "exarado",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p608",
+  "tipo": "palavra",
+  "pc": "opúsculo",
+  "pt": "obra escrita curta, de poucas páginas, sobre um só tema",
+  "aceitas": [
+   "obra escrita curta de poucas páginas sobre um só tema"
+  ],
+  "distratores": [
+   "tampa que fecha a abertura da concha de certos moluscos",
+   "pequena moeda dada como esmola a quem precisa",
+   "resumo de uma obra maior, feito por outra pessoa",
+   "texto curto, afixado em muros, para avisar o público"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; folheto ou livro pequeno, em geral de tema científico, político ou polêmico. Não confundir com «opérculo».",
+  "fonte": "Machado de Assis, Dom Casmurro (1899)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Tudo me ia repetindo o diabo do opúsculo, com as suas letras velhas e citações latinas.",
+  "w": "opúsculo",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p609",
+  "tipo": "palavra",
+  "pc": "coruscante",
+  "pt": "que emite brilho vivo e intenso",
+  "aceitas": [
+   "que emite brilho vivo e intenso"
+  ],
+  "distratores": [
+   "que faz estrondo e ressoa ao longe",
+   "que corrói e desgasta aos poucos",
+   "que tem cores vivas e variadas",
+   "que se move depressa, sem parar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, de tom elevado; vem do verbo «coruscar» (brilhar, cintilar). Aplica-se a astros, armas, joias e até a ideias.",
+  "fonte": "Antero de Quental, Mors liberatrix",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "—«Se esta espada que empunho é coruscante, (Responde o negro cavaleiro-andante) É porque esta é a espada da Verdade.",
+  "w": "coruscante",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p470",
   "tipo": "palavra",
   "pc": "infirmar",
@@ -3695,6 +6662,63 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p610",
+  "tipo": "palavra",
+  "pc": "proêmio",
+  "pt": "parte inicial de um discurso ou de uma obra",
+  "aceitas": [
+   "parte inicial de um discurso ou de uma obra"
+  ],
+  "distratores": [
+   "parte final de um discurso, que o resume",
+   "frase curta posta no início de um livro, como lema",
+   "texto curto que explica uma imagem ou gravura",
+   "resumo de uma obra posto na capa ou contracapa"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto e literário; também se escreve «proémio». Sinônimos: «prefácio», «preâmbulo».",
+  "fonte": "Padre Antônio Vieira, História do Futuro",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "E não carece de mistério e grande mistério, o proêmio com que David introduziu tudo o que até aqui temos dito…",
+  "w": "proêmio",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p611",
+  "tipo": "palavra",
+  "pc": "hodierno",
+  "pt": "do tempo atual, dos nossos dias",
+  "aceitas": [
+   "do tempo atual dos nossos dias"
+  ],
+  "distratores": [
+   "do tempo passado, dos nossos avós",
+   "que ocorre durante o dia, diurno",
+   "que se repete todos os dias, diário",
+   "que está prestes a chegar, futuro"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, formal: «a vida hodierna», «as preocupações hodiernas». Vem de «hodie» (hoje).",
+  "fonte": "Camilo Castelo Branco, Noites de Insônia",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Com toda a certeza, o meu amigo Joaquim Martins de Carvalho conhece as cousas antigas e hodiernas de Coimbra mais de fundamento …",
+  "w": "hodiernas",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p471",
   "tipo": "palavra",
   "pc": "verberar",
@@ -3722,6 +6746,34 @@
   "w": "verbere",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p612",
+  "tipo": "palavra",
+  "pc": "próceres",
+  "pt": "chefes de grande prestígio num grupo",
+  "aceitas": [
+   "chefes de grande prestígio num grupo"
+  ],
+  "distratores": [
+   "seguidores sem importância num grupo",
+   "inimigos declarados de um governo",
+   "estudiosos de assuntos políticos antigos",
+   "representantes eleitos por um grupo de cidadãos"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, usado quase só no plural («os próceres da independência»); o singular é «prócer».",
+  "fonte": "Lima Barreto, Triste Fim de Policarpo Quaresma (1915)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Há nos próceres republicanos uma necessidade extraordinária de serem gloriosos e não esquecidos pelo futuro, a que eles se recomendam com teimoso interesse.",
+  "w": "próceres",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p472",
@@ -3780,6 +6832,34 @@
   "w": "abespinhado",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p613",
+  "tipo": "palavra",
+  "pc": "exórdio",
+  "pt": "parte inicial de um discurso, que introduz o assunto",
+  "aceitas": [
+   "parte inicial de um discurso que introduz o assunto"
+  ],
+  "distratores": [
+   "parte final de um discurso, que reforça a conclusão",
+   "parte de um discurso em que se refutam objeções",
+   "parte central de um discurso, que expõe os fatos",
+   "recurso de um discurso que apela à emoção"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, da retórica; é a primeira das partes do discurso. Também se usa para o começo de poemas e obras.",
+  "fonte": "Humberto de Campos, O Brasil Anedótico",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Falcão Filho, professor da Faculdade de Direito, exclamou, no exórdio de uma acusação, no Júri:",
+  "w": "exórdio",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p474",
@@ -3868,6 +6948,64 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p614",
+  "tipo": "palavra",
+  "pc": "pletórico",
+  "pt": "muito cheio, transbordante de vigor e de vida",
+  "aceitas": [
+   "muito cheio transbordante de vigor e de vida"
+  ],
+  "distratores": [
+   "muito pálido, sem cor e sem brilho algum",
+   "de grande beleza, delicado e cheio de graça",
+   "muito triste, tomado pela dor e pelo luto",
+   "muito agitado, sempre às pressas e sem descanso"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, em geral com «de»: «pletórico de saúde», «pletórico de ideias».",
+  "fonte": "Cesário Verde, Nós",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Porém, lá fora, à solta, exageradamente, Enquanto acontecia essa calamidade, Toda a vegetação, pletórica, potente, Ganhava imenso com a enorme mortandade!",
+  "w": "pletórica",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p615",
+  "tipo": "palavra",
+  "pc": "apupar",
+  "pt": "vaiar alguém em público, gritando e zombando",
+  "aceitas": [
+   "vaiar alguém em público gritando e zombando"
+  ],
+  "distratores": [
+   "ferir alguém com punhal, golpeando de surpresa",
+   "tornar mais puro, livrando de impurezas",
+   "apoiar com palavras, defendendo alguém em público",
+   "acusar alguém em voz alta de um erro"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto; o substantivo é «apupo» (vaia). Costuma ter como objeto um orador, artista ou autoridade.",
+  "fonte": "J. P. Oliveira Martins, História de Portugal; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Era rainha, mas apupada: o plano da vingança acordava-lhe no ânimo, e também o desdém por esse pobre rei, perdido e fraco.",
+  "w": "apupada",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
   "id": "pc-p477",
   "tipo": "palavra",
   "pc": "lábaro",
@@ -3896,6 +7034,64 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p616",
+  "tipo": "palavra",
+  "pc": "pugnaz",
+  "pt": "que gosta de lutar e enfrentar adversários",
+  "aceitas": [
+   "que gosta de lutar e enfrentar adversários"
+  ],
+  "distratores": [
+   "que age com astúcia e dissimulação",
+   "que ataca de surpresa os desprevenidos",
+   "que suporta qualquer dor sem queixa",
+   "que fala muito e com insolência"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de sabor literário; «pugnar» é lutar e «pugna», a luta. Não confundir com «pugilista».",
+  "fonte": "Camilo Castelo Branco, Estrelas Propícias; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Gastão preparou-se para mais pugnaz arremetida.",
+  "w": "pugnaz",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p617",
+  "tipo": "palavra",
+  "pc": "compulsar",
+  "pt": "consultar e folhear livros ou documentos para estudo",
+  "aceitas": [
+   "consultar e folhear livros ou documentos para estudo"
+  ],
+  "distratores": [
+   "copiar à mão livros ou documentos antigos",
+   "obrigar alguém a fazer algo à força",
+   "guardar e catalogar livros ou documentos em arquivo",
+   "traduzir livros ou documentos de língua estrangeira"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, próprio de pesquisa em arquivos. Não confundir com «compelir» (obrigar).",
+  "fonte": "Moniz Barreto, Oliveira Martins; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Oliveira Martins não tem o hábito de enumerar os documentos compulsados e discutir as fontes exploradas.",
+  "w": "compulsados",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
   "id": "pc-p478",
   "tipo": "palavra",
   "pc": "sesmaria",
@@ -3914,7 +7110,7 @@
    "palavras difíceis"
   ],
   "nota": "Termo histórico do Brasil colonial e de Portugal. Hoje só se lê em obras de história e romances.",
-  "fonte": "José Martiniano de Alencar, O Guarani; grafia atualizada",
+  "fonte": "José de Alencar, O Guarani; grafia atualizada",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
@@ -3952,6 +7148,35 @@
   "w": "sorumbático",
   "classe": "adjetivo",
   "lista": "adj"
+ },
+ {
+  "id": "pc-p618",
+  "tipo": "palavra",
+  "pc": "coonestar",
+  "pt": "dar ar de legítimo a algo reprovável",
+  "aceitas": [
+   "dar ar de legítimo a algo reprovável"
+  ],
+  "distratores": [
+   "admitir alguém num grupo por escolha dos membros",
+   "negar ou pôr em dúvida uma afirmação",
+   "limitar ou restringir a liberdade de alguém",
+   "trabalhar em conjunto com outra pessoa"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto e raro, que se constrói com objeto direto: «coonestar um erro». Lê-se «co-o-nes-tar», com os dois «o» separados.",
+  "fonte": "Visconde de Taunay, A Retirada da Laguna",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Acreditavam precisar de algumas vítimas para coonestar uma retirada por demais precipitada e que não podia deixar de atrair a cólera dos chefes…",
+  "w": "coonestar",
+  "classe": "verbo",
+  "lista": "verbo"
  },
  {
   "id": "pc-p480",
@@ -4012,6 +7237,35 @@
   "leitura": true
  },
  {
+  "id": "pc-p619",
+  "tipo": "palavra",
+  "pc": "comezinho",
+  "pt": "corriqueiro, simples e do conhecimento de todos",
+  "aceitas": [
+   "corriqueiro simples e do conhecimento de todos"
+  ],
+  "distratores": [
+   "que causa coceira e irritação na pele",
+   "repetido tantas vezes que chega a cansar",
+   "de grande importância e de efeito decisivo",
+   "de saber difícil, só dos especialistas"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de tom neutro a ligeiramente irônico: «conhecimentos comezinhos», «verdades comezinhas».",
+  "fonte": "Alfredo Pimenta, A Situação Política",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… porque, em Portugal, nunca se têm tão garantidas as liberdades mais comezinhas como quando há suspensão de liberdades...",
+  "w": "comezinhas",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p482",
   "tipo": "palavra",
   "pc": "menoscabar",
@@ -4041,6 +7295,63 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p620",
+  "tipo": "palavra",
+  "pc": "afoiteza",
+  "pt": "coragem atrevida, ousadia em agir sem medo",
+  "aceitas": [
+   "coragem atrevida ousadia em agir sem medo"
+  ],
+  "distratores": [
+   "pressa nervosa de quem se atrapalha todo",
+   "carinho e ternura que se sente por alguém",
+   "angústia pesada diante de um mal próximo",
+   "vontade de agradar e servir a todos"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto; de «afoito» (ousado). Não confundir com «afobação» (pressa nervosa).",
+  "fonte": "Camilo Castelo Branco, Amor de Perdição (1862)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Teve minha mãe a afoiteza de se lhe apresentar um dia, pedindo licença para ir a Viseu.",
+  "w": "afoiteza",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p621",
+  "tipo": "palavra",
+  "pc": "insofismável",
+  "pt": "que não se pode refutar com falsos argumentos",
+  "aceitas": [
+   "que não se pode refutar com falsos argumentos"
+  ],
+  "distratores": [
+   "que não se pode suportar, intolerável",
+   "que não se pode resolver ou explicar",
+   "que não se pode abalar nem demover",
+   "que não se pode perceber com os sentidos"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto: «prova insofismável», «verdade insofismável». Vem de «sofisma»; não se confunde com «insofrível».",
+  "fonte": "Nelson Valente, História das Psicoterapias e da Psicanálise",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Foi somente em 1913 que veio a primeira prova insofismável de uma causa fisiológica como geradora de uma doença mental.",
+  "w": "insofismável",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p483",
   "tipo": "palavra",
   "pc": "vituperar",
@@ -4068,6 +7379,63 @@
   "w": "vituperados",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p622",
+  "tipo": "palavra",
+  "pc": "alfarrábio",
+  "pt": "livro velho, antigo e muito manuseado",
+  "aceitas": [
+   "livro velho antigo e muito manuseado"
+  ],
+  "distratores": [
+   "caderno em que se anotam gastos diários",
+   "folheto curto, distribuído de graça",
+   "livro de capa dura, enfeitado com ouro",
+   "dicionário usado para consultas rápidas"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de tom meio irônico: o livro velho que se compra em sebo. Também designa livros raros.",
+  "fonte": "Eça de Queirós, Os Maias (1888)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Quase desde o berço este notável menino revelara um edificante amor por alfarrábios e por todas as coisas do saber.",
+  "w": "alfarrábios",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p623",
+  "tipo": "palavra",
+  "pc": "jactancioso",
+  "pt": "que se vangloria, cheio de si",
+  "aceitas": [
+   "que se vangloria cheio de si"
+  ],
+  "distratores": [
+   "que se irrita à toa, impaciente",
+   "que fala sem parar, tagarela",
+   "que desconfia de tudo, receoso",
+   "que tem pouca fé, cético"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto: «tom jactancioso», «ar jactancioso». O substantivo é «jactância».",
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "A restituição do relógio excluía toda a ideia de burla; a lucidez, a serenidade, a convicção, — um pouco jactanciosa, é certo, — pareciam excluir a suspeita de insensatez.",
+  "w": "jactanciosa",
+  "classe": "adjetivo",
+  "lista": "adj"
  },
  {
   "id": "pc-p484",
@@ -4184,6 +7552,93 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p624",
+  "tipo": "palavra",
+  "pc": "lídimo",
+  "pt": "autêntico, genuíno, sem mistura nem falsificação",
+  "aceitas": [
+   "autêntico genuíno sem mistura nem falsificação"
+  ],
+  "distratores": [
+   "claro, limpo, sem mancha nem turvação",
+   "ágil, ligeiro, de movimentos leves",
+   "pálido, sem cor, de aspecto doentio",
+   "restrito, limitado, de alcance muito pequeno"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto: «lídimo representante», «lídima expressão». Não confundir com «límpido», «lépido» e «lívido».",
+  "fonte": "Lima Barreto, O morcego",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O mais espontâneo, o mais desinteressado, o mais lídimo é certamente o Morcego.",
+  "w": "lídimo",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p625",
+  "tipo": "palavra",
+  "pc": "contristar",
+  "pt": "sentir ou causar grande tristeza e aflição",
+  "aceitas": [
+   "sentir ou causar grande tristeza e aflição"
+  ],
+  "distratores": [
+   "sentir sincero arrependimento pelos pecados",
+   "ir contra a vontade de alguém",
+   "consolar alguém na dor ou na perda",
+   "assumir uma dívida ou adquirir uma doença"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto e literário, também pronominal: «contristar-se». Da família de «contrito» e «contrição».",
+  "fonte": "Alexandre Herculano, Opúsculos",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O que tem ouvidos para ouvir ouça: o que tem olhos para ver veja: o que tem coração para se contristar, contriste-se.",
+  "w": "contristar",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p626",
+  "tipo": "palavra",
+  "pc": "nababesco",
+  "pt": "de luxo e ostentação exagerados",
+  "aceitas": [
+   "de luxo e ostentação exagerados"
+  ],
+  "distratores": [
+   "de ritmo acelerado e cansativo",
+   "de gastos controlados e prudentes",
+   "de aparência elegante e discreta",
+   "de hábitos reservados e solitários"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de «nababo», o homem riquíssimo; usa-se com «vida», «luxo», «trem de vida».",
+  "fonte": "Lima Barreto, Os nossos jornais",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "E não se diga que eles não ganham dinheiro e, tanto ganham que os seus diretores vivem na Europa ou levam no Rio trem de vida nababesco.",
+  "w": "nababesco",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p488",
   "tipo": "palavra",
   "pc": "dessedentar",
@@ -4242,6 +7697,35 @@
   "lista": "adj"
  },
  {
+  "id": "pc-p627",
+  "tipo": "palavra",
+  "pc": "embair",
+  "pt": "enganar com lábia e artifícios, iludindo",
+  "aceitas": [
+   "enganar com lábia e artifícios iludindo"
+  ],
+  "distratores": [
+   "deixar boquiaberto de espanto e admiração",
+   "pôr a bordo de um navio, para partir",
+   "embalar um bebê com carinho até adormecer",
+   "encharcar um objeto, deixando-o ensopado"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, de tom antigo; a pessoa «se deixa embair» por promessas ou lábia. Existe também o pronominal «embair-se».",
+  "fonte": "Machado de Assis, Quincas Borba (1891)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Disse-lhe logo que este título era enfático, um modo de embair a gente, e dar emprego a sujeitos necessitados.",
+  "w": "embair",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
   "id": "pc-p490",
   "tipo": "palavra",
   "pc": "denodo",
@@ -4297,6 +7781,63 @@
   "w": "rutilante",
   "classe": "adjetivo",
   "lista": "adj"
+ },
+ {
+  "id": "pc-p628",
+  "tipo": "palavra",
+  "pc": "exprobrar",
+  "pt": "censurar com dureza, recriminar",
+  "aceitas": [
+   "censurar com dureza recriminar"
+  ],
+  "distratores": [
+   "elogiar com exagero, bajular",
+   "ameaçar com castigo, intimidar",
+   "comprovar com provas, demonstrar",
+   "perdoar com bondade, absolver"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto: «exprobrar uma falta» é lançá-la em rosto. O substantivo é «exprobração».",
+  "fonte": "Lima Barreto, Recordações do Escrivão Isaías Caminha (1909)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Houve ocasião em que ele exprobrou essa nossa mania de empregos e doutorado, citando os ingleses e os americanos. — Todo o mundo quer ser doutor...",
+  "w": "exprobrou",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p629",
+  "tipo": "palavra",
+  "pc": "desiderato",
+  "pt": "aquilo que se deseja muito alcançar",
+  "aceitas": [
+   "aquilo que se deseja muito alcançar"
+  ],
+  "distratores": [
+   "falta de zelo no cumprimento do dever",
+   "desprezo altivo por algo ou por alguém",
+   "perda do ânimo e da esperança",
+   "convite a uma disputa ou a uma prova"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de uso formal: «alcançar o desiderato», «para esse desiderato». Vem do verbo latino «desiderare», desejar.",
+  "fonte": "Alfredo Pimenta, A Situação Política",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Para esse desiderato, devemos reservar todas as nossas energias.",
+  "w": "desiderato",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p492",
@@ -4385,6 +7926,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p630",
+  "tipo": "palavra",
+  "pc": "solerte",
+  "pt": "que age com astúcia e grande habilidade",
+  "aceitas": [
+   "que age com astúcia e grande habilidade"
+  ],
+  "distratores": [
+   "que vive afastado e foge da companhia",
+   "que age com gravidade e ar de cerimônia",
+   "que cede com facilidade e sem resistência",
+   "que trata a todos com doçura e bondade"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, de tom literário e às vezes irônico: «solerte diplomata», «solerte disfarce». Também se diz de quem é diligente.",
+  "fonte": "Camilo Castelo Branco, Noites de insomnia, offerecidas a quem não póde dormir. Nº 12 (de 12); grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O que ele tinha sobre tudo era o talento dos solertes velhacos.",
+  "w": "solertes",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p495",
   "tipo": "palavra",
   "pc": "irrogar",
@@ -4412,6 +7982,35 @@
   "w": "irrogar",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p631",
+  "tipo": "palavra",
+  "pc": "álgido",
+  "pt": "extremamente frio, que gela",
+  "aceitas": [
+   "extremamente frio que gela"
+  ],
+  "distratores": [
+   "muito doloroso, que faz sofrer",
+   "muito úmido, que molha tudo",
+   "muito pálido, sem cor nem brilho",
+   "muito silencioso, sem som algum"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário. Em «ponto álgido» ganhou o sentido figurado de ponto culminante, mas o sentido de origem é o de frio intenso.",
+  "fonte": "Trindade Coelho, Os Meus Amores",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Mais álgida fazia a noite, e mais pesada de melancolias, essa torva aparência da atmosfera e do céu.",
+  "w": "álgida",
+  "classe": "adjetivo",
+  "lista": "adj"
  },
  {
   "id": "pc-p496",
@@ -4444,6 +8043,34 @@
   "lista": "verbo"
  },
  {
+  "id": "pc-p632",
+  "tipo": "palavra",
+  "pc": "fac-símile",
+  "pt": "reprodução exata de um escrito ou desenho original",
+  "aceitas": [
+   "reprodução exata de um escrito ou desenho original"
+  ],
+  "distratores": [
+   "tradução fiel de um texto antigo",
+   "cópia resumida de um documento oficial",
+   "catálogo de obras raras de uma biblioteca",
+   "registro de inscrições feito por especialista"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo masculino de origem latina («faça igual»); também grafado «facsímile». No uso moderno, também o fax.",
+  "fonte": "Adolfo Caminha, Tentação",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Encontrei na biblioteca de Sua Majestade um fac-símile de inscrições fenícias descobertas numa pedra da Paraíba.",
+  "w": "fac-símile",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p497",
   "tipo": "palavra",
   "pc": "obtemperar",
@@ -4471,6 +8098,34 @@
   "w": "obtemperou",
   "classe": "verbo",
   "lista": "verbo"
+ },
+ {
+  "id": "pc-p633",
+  "tipo": "palavra",
+  "pc": "facúndia",
+  "pt": "dom da palavra fácil e abundante",
+  "aceitas": [
+   "dom da palavra fácil e abundante"
+  ],
+  "distratores": [
+   "capacidade de gerar muitos frutos ou filhos",
+   "raciocínio falso com ar de verdadeiro",
+   "vaidade de quem gosta de se enfeitar",
+   "abundância de bens e de alimentos"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto e um tanto literário; o adjetivo é «facundo»: «orador facundo». Não se confunde com «fecundidade».",
+  "fonte": "Coelho Neto, A Conquista",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "O romancista ouvia a facúndia do patrício, fumando com a impassibilidade de um turíbulo, os olhos altos como se seguisse um sonho.",
+  "w": "facúndia",
+  "classe": "substantivo",
+  "lista": "subst"
  },
  {
   "id": "pc-p498",
@@ -4502,6 +8157,63 @@
   "lista": "adj"
  },
  {
+  "id": "pc-p634",
+  "tipo": "palavra",
+  "pc": "redarguir",
+  "pt": "responder rebatendo o que outro acabou de dizer",
+  "aceitas": [
+   "responder rebatendo o que outro acabou de dizer"
+  ],
+  "distratores": [
+   "escrever um texto, dando-lhe a forma final",
+   "acusar alguém de uma falta ou de um erro",
+   "repetir em voz baixa o que se ouviu",
+   "pedir perdão por uma falta, justificando-se"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "verbo"
+  ],
+  "nota": "Verbo culto, muito usado depois da fala de um personagem: «— Não, redarguiu ele». Conjuga-se como «arguir».",
+  "fonte": "Machado de Assis, Esaú e Jacó (1904)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "— Há de perdoar, mas é que esta outra gravura custou-me mais caro, redarguiu o velho lojista.",
+  "w": "redarguiu",
+  "classe": "verbo",
+  "lista": "verbo"
+ },
+ {
+  "id": "pc-p635",
+  "tipo": "palavra",
+  "pc": "filípica",
+  "pt": "discurso violento e inflamado contra alguém",
+  "aceitas": [
+   "discurso violento e inflamado contra alguém"
+  ],
+  "distratores": [
+   "canto de louvor a um herói",
+   "elogio exagerado e cheio de bajulação",
+   "conversa leve entre amigos, sem compromisso",
+   "discurso de homenagem a quem morreu"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, do nome dos discursos de Demóstenes contra Filipe da Macedônia. Em geral no plural no uso literário.",
+  "fonte": "Augusto dos Anjos, Os Doentes",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Hereditariedades politípicas Punham na minha boca putrescível Interjeições de abracadabra horrível E os verbos indignados das Filípicas.",
+  "w": "Filípicas",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p499",
   "tipo": "palavra",
   "pc": "coevo",
@@ -4527,6 +8239,205 @@
   "selo": "sentido",
   "frase": "…Vou condensando estas notícias colhidas em um livro do coronel Francisco de Figueiredo, escritor coevo dos sucessos.",
   "w": "coevo",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p636",
+  "tipo": "palavra",
+  "pc": "florilégio",
+  "pt": "coletânea de trechos escolhidos de uma ou várias obras",
+  "aceitas": [
+   "coletânea de trechos escolhidos de uma ou várias obras"
+  ],
+  "distratores": [
+   "conjunto de obras completas de um autor",
+   "estudo crítico sobre a obra de um escritor",
+   "texto que apresenta um livro ao leitor",
+   "índice remissivo dos temas de uma obra"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de ideia literária: «florilégio de poemas», «de contos». Vem do latim, «colher flores».",
+  "fonte": "Lima Barreto, Limites entre estados e municípios",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Faço um florilégio dela, para os leitores avaliarem o azedume da missiva.",
+  "w": "florilégio",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p637",
+  "tipo": "palavra",
+  "pc": "hinterlândia",
+  "pt": "região interior de um país, distante do litoral",
+  "aceitas": [
+   "região interior de um país distante do litoral"
+  ],
+  "distratores": [
+   "região de fronteira entre dois países vizinhos",
+   "faixa de terra banhada pelo oceano",
+   "região plana e fértil, própria para lavoura",
+   "território mantido por um país em terra distante"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, adaptação do alemão «Hinterland»; usado em geografia, política e economia. O oposto é o litoral.",
+  "fonte": "Ernesto Geisel, Discurso do General Ernesto Geisel ao tomar posse no cargo da Presidência da República (1974)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… afirmou-se definitivamente através de milhares de quilômetros de estradas que rasgaram a hinterlândia quase deserta e demandaram, afoitas, os confins mais longínquos desta pátria imensa.",
+  "w": "hinterlândia",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p638",
+  "tipo": "palavra",
+  "pc": "irrefragável",
+  "pt": "que não se pode contestar nem refutar",
+  "aceitas": [
+   "que não se pode contestar nem refutar"
+  ],
+  "distratores": [
+   "que ninguém consegue entender ou explicar",
+   "que não se pode quebrar nem danificar",
+   "que não admite perdão nem reparação",
+   "que se contradiz em seus próprios termos"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto; qualifica prova, testemunho, documento ou argumento. «Irrefutável» é o sinônimo mais comum.",
+  "fonte": "Franklin Távora, O Sacrifício",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Nesse documento, viu não só a prova de um crime dela, mas, também, o testemunho irrefragável da desgraça dele.",
+  "w": "irrefragável",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p639",
+  "tipo": "palavra",
+  "pc": "idiotismo",
+  "pt": "expressão própria de uma língua, que foge às regras gerais",
+  "aceitas": [
+   "expressão própria de uma língua que foge às regras gerais"
+  ],
+  "distratores": [
+   "palavra tomada de língua estrangeira e usada sem nenhuma adaptação",
+   "palavra criada há pouco tempo e ainda ausente dos dicionários",
+   "repetição do mesmo som no início de palavras seguidas, num verso",
+   "erro de pronúncia ou de escrita de uma palavra isolada"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo da gramática, sem relação com «idiotice» neste sentido (o outro, de estupidez, é raro). Equivale a «construção idiomática».",
+  "fonte": "Almeida Garrett, O Retrato de Vênus e Estudos de História Literária; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… mas é este um idiotismo bem notável da nossa língua, usar de tais verbos com força ativa, como o fazem os nossos clássicos a cada passo.",
+  "w": "idiotismo",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p640",
+  "tipo": "palavra",
+  "pc": "munificente",
+  "pt": "que dá com generosidade e largueza",
+  "aceitas": [
+   "que dá com generosidade e largueza"
+  ],
+  "distratores": [
+   "de posição muito elevada e ilustre",
+   "que castiga com severidade e firmeza",
+   "que perdoa ofensas com grandeza de alma",
+   "que se mostra livre de qualquer obrigação"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto e solene, usado para reis, mecenas e benfeitores; existe a variante «munífico». O substantivo é «munificência».",
+  "fonte": "S. A. Sisson, Galeria dos Brasileiros Ilustres",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… o munificente Monarca, em remuneração dos serviços do finado, mandou assentar praça de cadetes de artilharia a seus filhos, vencendo desde logo tempo de serviço e soldo.",
+  "w": "munificente",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p641",
+  "tipo": "palavra",
+  "pc": "lavor",
+  "pt": "trabalho manual de ornamentação, feito com arte",
+  "aceitas": [
+   "trabalho manual de ornamentação feito com arte"
+  ],
+  "distratores": [
+   "ferramenta usada para esculpir pedra",
+   "oficina onde trabalham os artesãos",
+   "material precioso usado em joias",
+   "modelo que serve de guia ao artista"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo literário, ligado a ourivesaria, bordado e entalhe; no sentido figurado, também o lavor do verso.",
+  "fonte": "Machado de Assis, Memórias Póstumas de Brás Cubas (1881)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "É taça que pode ter lavores de igual escola, mas leva outro vinho.",
+  "w": "lavores",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p642",
+  "tipo": "palavra",
+  "pc": "pantagruélico",
+  "pt": "muito farto e abundante, digno de um grande comilão",
+  "aceitas": [
+   "muito farto e abundante digno de um grande comilão"
+  ],
+  "distratores": [
+   "muito pesado e indigesto, que faz mal ao estômago",
+   "muito raro e requintado, digno de um grande rei",
+   "muito simples e rústico, próprio de gente do campo",
+   "muito saboroso e temperado, digno de um bom cozinheiro"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, de Pantagruel, o gigante comilão de Rabelais. Qualifica refeição, apetite ou prazer da mesa.",
+  "fonte": "Abel Botelho, Amor Crioulo",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… uma pantagruélica montanha, cebácea e sangrante, de carnes laceradas em bruto, de gorduras, ossos, tendões, coirama chamuscada e encorreadas fêveras.",
+  "w": "pantagruélica",
   "classe": "adjetivo",
   "lista": "adj"
  },
@@ -4588,6 +8499,34 @@
   "lista": "adj"
  },
  {
+  "id": "pc-p643",
+  "tipo": "palavra",
+  "pc": "logomaquia",
+  "pt": "discussão que se prende a palavras e não a ideias",
+  "aceitas": [
+   "discussão que se prende a palavras e não a ideias"
+  ],
+  "distratores": [
+   "estudo da origem e da formação das palavras",
+   "discurso longo e solene, feito diante de uma assembleia",
+   "ciência que estuda as regras do raciocínio correto",
+   "luta de dois adversários que se enfrentam em duelo"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, do grego: «luta de palavras». Não é «logomarca».",
+  "fonte": "Rui Barbosa, Rol de atentados",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Será o melhor meio de responder à logomaquia do jornalismo oficial.",
+  "w": "logomaquia",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
   "id": "pc-p502",
   "tipo": "palavra",
   "pc": "sobranceiro",
@@ -4635,7 +8574,7 @@
    "palavras difíceis"
   ],
   "nota": "Substantivo coloquial, em geral feminino; a locução «à lufa-lufa» é «às pressas, atabalhoadamente».",
-  "fonte": "conde de Affonso Celso de Assis Figueiredo Affonso Celso, Lupe; grafia atualizada",
+  "fonte": "Afonso Celso, Lupe; grafia atualizada",
   "escolher": true,
   "pergunta": "O que quer dizer a palavra destacada?",
   "selo": "sentido",
@@ -4643,6 +8582,35 @@
   "w": "lufa-lufa",
   "classe": "substantivo",
   "lista": "subst"
+ },
+ {
+  "id": "pc-p644",
+  "tipo": "palavra",
+  "pc": "ímprobo",
+  "pt": "sem honestidade, de conduta corrupta",
+  "aceitas": [
+   "sem honestidade de conduta corrupta"
+  ],
+  "distratores": [
+   "sem coragem, de conduta covarde",
+   "sem modéstia, de conduta arrogante",
+   "sem prudência, de conduta temerária",
+   "sem instrução, de conduta grosseira"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo culto, oposto de «probo». Também se diz do trabalho árduo («ímprobo esforço»), sentido que o texto de agora não usa.",
+  "fonte": "César Zama, Libelo republicano",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Nas épocas de decadência moral o homem probo tem por dever afrontar os ímprobos.",
+  "w": "ímprobos",
+  "classe": "adjetivo",
+  "lista": "adj"
  },
  {
   "id": "pc-p504",
@@ -4673,6 +8641,35 @@
   "lista": "subst"
  },
  {
+  "id": "pc-p645",
+  "tipo": "palavra",
+  "pc": "ínclito",
+  "pt": "de grande fama, ilustre e glorioso",
+  "aceitas": [
+   "de grande fama ilustre e glorioso"
+  ],
+  "distratores": [
+   "de caráter injusto, contrário à justiça",
+   "de grande força, temido por todos",
+   "de ânimo dobrado, que se curva a todos",
+   "de boa saúde, livre de qualquer dano"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo muito literário e solene, quase só de poesia e discurso. Não confundir com «iníquo» nem «incólume».",
+  "fonte": "Machado de Assis, Memorial de Aires (1908)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… onde o mar, indo e vindo, era como se os convidasse a meterem-se nele até desembarcar «no porto da ínclita Ulisseia,» como diz o poeta.",
+  "w": "ínclita",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
   "id": "pc-p505",
   "tipo": "palavra",
   "pc": "lusco-fusco",
@@ -4697,6 +8694,148 @@
   "selo": "sentido",
   "frase": "Debatemos a transação até o lusco-fusco.",
   "w": "lusco-fusco",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p646",
+  "tipo": "palavra",
+  "pc": "ínvio",
+  "pt": "sem trilha, de passagem impossível",
+  "aceitas": [
+   "sem trilha de passagem impossível"
+  ],
+  "distratores": [
+   "coberto de mata cerrada e escura",
+   "deserto, sem gente nem sinal de vida",
+   "íngreme, muito inclinado e perigoso",
+   "escuro, sem luz alguma"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis",
+   "adjetivo"
+  ],
+  "nota": "Adjetivo literário, comum na poesia romântica: «ínvio sertão», «matas ínvias». Vem de «in-» + «via».",
+  "fonte": "Junqueira Freire, O jesuíta",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "E por amor da Cruz vaguei sozinho Nas ínvias matas desse novo mundo.",
+  "w": "ínvias",
+  "classe": "adjetivo",
+  "lista": "adj"
+ },
+ {
+  "id": "pc-p647",
+  "tipo": "palavra",
+  "pc": "patuleia",
+  "pt": "gente do povo miúdo, vista com desprezo pelos poderosos",
+  "aceitas": [
+   "gente do povo miúdo vista com desprezo pelos poderosos"
+  ],
+  "distratores": [
+   "grupo de soldados armados a serviço de um nobre",
+   "conjunto de bandidos que assaltam viajantes nas estradas",
+   "reunião de pessoas que se juntam para uma festa",
+   "assembleia de nobres convocada pelo rei para decidir"
+  ],
+  "nivel": "C2",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo antigo, mais lido em Camilo; também nomeia a guerra civil portuguesa de 1846-47, a Patuleia.",
+  "fonte": "Camilo Castelo Branco, A Brasileira de Prazins",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "… um que o tinha avisado, quando a malta da patuleia tencionava agarrá-lo.",
+  "w": "patuleia",
+  "classe": "substantivo",
+  "lista": "subst",
+  "leitura": true
+ },
+ {
+  "id": "pc-p648",
+  "tipo": "palavra",
+  "pc": "prolegômenos",
+  "pt": "noções preliminares que abrem um estudo ou obra",
+  "aceitas": [
+   "noções preliminares que abrem um estudo ou obra"
+  ],
+  "distratores": [
+   "sinais que anunciam o começo de uma doença",
+   "regras de cerimonial e de conduta diplomática",
+   "ditados e máximas que resumem uma verdade",
+   "resumos finais que fecham um estudo ou obra"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo plural, culto: «prolegômenos de uma obra, de uma teoria». Existe o singular «prolegômeno», menos comum.",
+  "fonte": "José de Alencar, Sonhos D'ouro",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Fazendo aplicação destes prolegômenos da crítica a nossas personagens, não será difícil discernir o que pertence ao caráter e o que ao tipo, em cada uma delas.",
+  "w": "prolegômenos",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p649",
+  "tipo": "palavra",
+  "pc": "prosápia",
+  "pt": "presunção de quem se julga superior aos outros",
+  "aceitas": [
+   "presunção de quem se julga superior aos outros"
+  ],
+  "distratores": [
+   "façanha heroica, ato de enorme coragem e valor",
+   "figura que dá vida e fala a seres inanimados",
+   "modo correto de pronunciar as palavras de uma língua",
+   "texto corrido, escrito sem verso nem rima"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto, de tom crítico: «cheio de prosápia». Também designa a linhagem ou nobre origem de uma família.",
+  "fonte": "Ladislau Patrício, Aquela Família; grafia atualizada",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "Digo isto sem a menor sombra de prosápia e sem querer censurar ninguém,--apenas para estabelecer a verdade.",
+  "w": "prosápia",
+  "classe": "substantivo",
+  "lista": "subst"
+ },
+ {
+  "id": "pc-p650",
+  "tipo": "palavra",
+  "pc": "vitupério",
+  "pt": "ofensa grave que atinge a honra",
+  "aceitas": [
+   "ofensa grave que atinge a honra"
+  ],
+  "distratores": [
+   "castigo duro dado a quem errou",
+   "reclamação feita contra uma injustiça",
+   "elogio exagerado para agradar a alguém",
+   "dívida de honra que se deve pagar"
+  ],
+  "nivel": "C1",
+  "tags": [
+   "palavras difíceis"
+  ],
+  "nota": "Substantivo culto e forte, comum em textos antigos: «cobrir de vitupérios». Verbo: «vituperar».",
+  "fonte": "Luís de Camões, Os Lusíadas (1572)",
+  "escolher": true,
+  "pergunta": "O que quer dizer a palavra destacada?",
+  "selo": "sentido",
+  "frase": "As cidades guardando justiçoso De todos os soberbos vitupérios, Mais ladrões castigando à morte deu, Que o vagabundo Alcides ou Teseu.",
+  "w": "vitupérios",
   "classe": "substantivo",
   "lista": "subst"
  }
