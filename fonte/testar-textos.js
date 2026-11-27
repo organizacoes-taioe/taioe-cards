@@ -171,5 +171,18 @@ ok(ids(soltam({ textos: ['p1'], em: 'z', propria: true }, TEXTOS, p1Visto)) === 
 ok(M.palavrasDosTextos(soltam(autoP1, TEXTOS, p1Visto), p1Visto, {}).join() === 'e,f', 'as palavras de adiante entram na fila');
 ok(ids(M.textosAtivos(autoP1, TEXTOS, {})) === 'p1', 'mas o texto ativo, que mostra os versos, continua o mesmo');
 
+/* ═══════════ a palavra que segura o verso (27/11/2026) ═══════════ */
+secao('a palavra que segura o verso');
+{
+  const T = { id: 'ps', blocos: [[{ t: '1', requer: ['a', 'b'] }, { t: '2', requer: ['c'] }, { t: '3', requer: ['d', 'e'] }]] };
+  const naIdaS = id => ({ id, etapa: 'escrita', vistas: 2, acertos: 2, erros: 0 });
+  ok(M.palavraQueSeguraVerso(T, { a: naIdaS('a') }, {}, 0) === null, 'faltam duas no verso: nenhuma segura');
+  ok(M.palavraQueSeguraVerso(T, { a: dominado('a'), b: naIdaS('b') }, {}, 0) === 'b', 'falta uma: é ela');
+  ok(M.palavraQueSeguraVerso(T, { a: dominado('a'), b: dominado('b'), c: naIdaS('c') }, {}, 1) === 'c', 'conta a partir dos versos lidos');
+  ok(M.palavraQueSeguraVerso(T, { c: dominado('c'), d: dominado('d') }, {}, 1) === 'e', 'pula o verso pronto e acha a do seguinte');
+  ok(M.palavraQueSeguraVerso({ id: 'pz', blocos: [[{ t: '1', requer: ['+x'] }]] }, {}, {}, 0) === null, 'palavra sem card: nada a trazer');
+  ok(M.palavraQueSeguraVerso(T, { a: dominado('a'), b: dominado('b'), c: dominado('c'), d: dominado('d'), e: dominado('e') }, {}, 0) === null, 'tudo pronto: nada');
+}
+
 console.log('\n  ' + feitas + ' conferências' + (falhas ? ', ' + falhas + ' falharam' : ', todas passaram') + '\n');
 process.exit(falhas ? 1 : 0);

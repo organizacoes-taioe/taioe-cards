@@ -568,9 +568,12 @@ window.TaioeCardsApp = function (ctx) {
     if (c.tipo === 'analise') return [c.lema].concat(FRASES_DA_PALAVRA.get(c.lema) || []).some(x => p.cards[x] && p.cards[x].vistas);
     /* a flexão espera o card do lema: o dicionário primeiro, depois cada forma; e não estreia a
        que repete uma terminação já estudada, nem a variante (LATIM.md §13, Motor.adormecido) */
+    /* o lema transparente (deus, mulier) nunca estreia, e conta como visto: sem isso a forma dele
+       nunca estreava, e o verso que a pede parava de vez (relato do Gere, 27/11/2026: a Regina
+       caeli esperava «deum» desde 14/11) */
     if (c.tipo === 'flexao') {
-      return (!!(p.cards[c.lema] && p.cards[c.lema].vistas) || Motor.arquivado(c.lema, p.arquivados || {})) &&
-        !Motor.adormecido(id, p.cards);
+      return (!!(p.cards[c.lema] && p.cards[c.lema].vistas) || Motor.arquivado(c.lema, p.arquivados || {}) ||
+        Motor.transparenteTotal(c.lema)) && !Motor.adormecido(id, p.cards);
     }
     if (c.texto) return ativosIds.has(c.texto);
     return true;
@@ -1326,13 +1329,36 @@ window.TaioeCardsApp = function (ctx) {
       livres: { esPt: progresso.filaEsPt.filter(livre), ptEs: progresso.filaPtEs.filter(livre) },
       vencidos: progresso.dominados.filter(id =>
         estadoParaFila(id) && !Motor.esperando(estadoParaFila(id), agora)).length,
+      acumulo: Motor.acumuloDosVencidos(progresso.dominados, estadoParaFila, agora),
       pesoDosVencidos: Motor.pesoDosVencidos(progresso.dominados, estadoParaFila, agora),
       desdeDominado: desdeDominado
     };
   }
 
+  /* A palavra que é a única que falta no próximo verso de um texto ativo passa à frente de tudo,
+     depois de esperar o intervalo mínimo (pedido do Gere, 27/11/2026: os versos paravam dias numa
+     palavra que voltava a cada 4 ou 5 dias). Se ela ainda não estreou, estreia agora. Tira da
+     fila e devolve o id, ou null. */
+  function palavraDoVerso(c) {
+    const lidos = progresso.textos.lidos;
+    for (const txt of textosAtivosAgora()) {
+      const id = Motor.palavraQueSeguraVerso(txt, progresso.cards, progresso.arquivados || {}, Motor.versosVistos(txt, lidos));
+      if (!id) continue;
+      for (const k of ['esPt', 'ptEs']) {
+        if (c.livres[k].indexOf(id) < 0) continue;
+        const fila = k === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs;
+        return fila.splice(fila.indexOf(id), 1)[0];
+      }
+      const i = progresso.ineditos.indexOf(id);
+      if (i >= 0) return progresso.ineditos.splice(i, 1)[0];
+    }
+    return null;
+  }
+
   function escolherProximoId() {
     const c = contextoDaEscolha();
+    const doVerso = palavraDoVerso(c);
+    if (doVerso) return doVerso;
     const filaDe = k => (k === 'esPt' ? progresso.filaEsPt : progresso.filaPtEs);
     const tirar = (k, id) => filaDe(k).splice(filaDe(k).indexOf(id), 1)[0];
     const e = Motor.escolherProximo(c);

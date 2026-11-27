@@ -537,7 +537,8 @@ secao('a escada das línguas mortas');
   ok(M.escada() === 'mortas' && M.degraus() === 7, 'usarEscada(mortas): 7 degraus');
   ok(M.DIAS_DOMINADO.join() === '3,4,7,14,30,90,180' && M.DIAS_NOMINAIS.join() === '3,4,7,14,30,90,180',
     'mortas: espera de fato = nome (3, 4, 1 semana, 2 semanas, 1 mês, 3 meses, 6 meses)');
-  ok(M.PESO_DO_DEGRAU.join() === '1,2,2,1,1,1,1' && M.PESO_NA_VEZ.join() === '2,2,2,1,1,1,1', 'mortas: pesos da urgência e da vez');
+  ok(M.PESO_DO_DEGRAU.join() === '1,2,2,0.25,0.25,0.25,0.25' && M.PESO_NA_VEZ.join() === '2,2,2,0.25,0.25,0.25,0.25' &&
+    M.PESO_NA_PARTE.join() === '1,1,1,0.25,0.25,0.25,0.25', 'mortas: pesos da urgência, da vez e da parte (¼ de 2 semanas para cima, 27/11)');
   /* abaixo do índice 3, um degrau por acerto, mesmo para quem nunca errou */
   [0, 1, 2].forEach(i => ok(acerta(dominadoEm(i, 0)).revisoes === i + 1, 'sem nunca errar, índice ' + i + ' sobe um (' + (i + 1) + ')'));
   /* do índice 3 para cima vale a regra das vivas: sem erro sobe 2, com erro sobe 1; o teto é o 6 */
@@ -568,7 +569,19 @@ secao('a escada das línguas mortas');
   M.usarEscada('vivas');
   ok(M.escada() === 'vivas' && M.degraus() === 6, 'usarEscada(vivas): 6 degraus');
   ok(M.DIAS_DOMINADO.join() === '3,5,14,30,90,180' && M.DIAS_NOMINAIS.join() === '3,7,14,30,90,180', 'vivas: 3, 5 (de fato), 14, 30, 90, 180; nomes 3, 7…');
-  ok(M.PESO_DO_DEGRAU.join() === '1,2,1,1,1,1' && M.PESO_NA_VEZ.join() === '2,2,1,1,1,1', 'vivas: pesos como eram');
+  ok(M.PESO_DO_DEGRAU.join() === '1,2,1,0.25,0.25,0.25' && M.PESO_NA_VEZ.join() === '2,2,1,0.25,0.25,0.25' &&
+    M.PESO_NA_PARTE.join() === '1,1,1,0.25,0.25,0.25', 'vivas: os três primeiros degraus como eram; de 1 mês para cima, ¼ (27/11)');
+  {
+    /* o acúmulo da parte: os curtos contam 1, os longos ¼; sem «acumulo» no contexto, vale a conta simples */
+    const venc = i => { const e = dominadoEm(i, 0); e.voltaEm = new Date(Date.now() - 864e5).toISOString(); return e; };
+    const E = { a: venc(0), b: venc(2), c: venc(3), d: venc(5) };
+    ok(M.acumuloDosVencidos(Object.keys(E), id => E[id], agora()) === 2.5, 'acúmulo: 1 + 1 + ¼ + ¼');
+    const curtos = M.parteDosDominados(100), mistos = M.parteDosDominados(83 + 29 * 0.25);
+    ok(mistos < M.parteDosDominados(112) && Math.abs(curtos - M.parteDosDominados(100)) < 1e-9, 'longos vencidos pesam menos na parte das revisões');
+    const longo = venc(3), curto = venc(2);
+    longo.voltaEm = new Date(Date.now() - 3 * 864e5).toISOString();
+    ok(M.urgenciaDoDominado(curto, agora()) > M.urgenciaDoDominado(longo, agora()), 'o de 2 semanas atrasado 1 dia vem antes do de 1 mês atrasado 3 (antes, o contrário)');
+  }
   ok(acerta(dominadoEm(0, 0)).revisoes === 2 && acerta(dominadoEm(0, 1)).revisoes === 1 && acerta(dominadoEm(4, 0)).revisoes === 5 && acerta(dominadoEm(5, 0)).revisoes === 5,
     'vivas: sem erro sobe dois desde o primeiro degrau; com erro um; teto 5');
   ok(erra(dominadoEm(3, 0)).revisoes === 2, 'vivas: o erro desce um');

@@ -469,20 +469,29 @@ window.Motor = (function () {
     vivas: {
       dias: [3, 5, 14, 30, 90, 180],
       nominais: [3, 7, 14, 30, 90, 180],
-      pesoDoDegrau: [1, 2, 1, 1, 1, 1],
-      pesoNaVez: [2, 2, 1, 1, 1, 1],
+      pesoDoDegrau: [1, 2, 1, 0.25, 0.25, 0.25],
+      pesoNaVez: [2, 2, 1, 0.25, 0.25, 0.25],
+      pesoNaParte: [1, 1, 1, 0.25, 0.25, 0.25],
       umPorVezAte: 0,          // sem erro na vida, sobe 2 desde o primeiro degrau
       presumido: 90            // o nivelamento só existe nas vivas
     },
     mortas: {
       dias: [3, 4, 7, 14, 30, 90, 180],
       nominais: [3, 4, 7, 14, 30, 90, 180],
-      pesoDoDegrau: [1, 2, 2, 1, 1, 1, 1],
-      pesoNaVez: [2, 2, 2, 1, 1, 1, 1],
+      pesoDoDegrau: [1, 2, 2, 0.25, 0.25, 0.25, 0.25],
+      pesoNaVez: [2, 2, 2, 0.25, 0.25, 0.25, 0.25],
+      pesoNaParte: [1, 1, 1, 0.25, 0.25, 0.25, 0.25],
       umPorVezAte: 3,          // abaixo do índice 3 (2 semanas) sobe um por acerto
       presumido: null
     }
   };
+  /* Os três primeiros degraus (vivas: 3 dias, «1 semana», 2 semanas; mortas: 3, 4 e 7 dias) têm a
+     prioridade de sempre; os outros, um quarto dela (pedido do Gere, 27/11/2026: «os outros
+     apareçam menos, e os cards na ida e na volta apareçam mais»). O vencido de 1 mês para cima
+     vale ¼ na urgência (pesoDoDegrau: vem depois dos curtos), na vez (pesoNaVez) e na parte das
+     revisões que os dominados levam quando se acumulam (pesoNaParte, ver parteDosDominados).
+     Antes valiam 1, e no espanhol dele 112 vencidos levavam ~63% das revisões; a ida voltava a
+     cada 4 ou 5 dias. */
   let ESCADA = 'vivas';
   function usarEscada(nome) { ESCADA = ESCADAS[nome] ? nome : 'vivas'; }
   function escada() { return ESCADA; }
@@ -1874,7 +1883,7 @@ window.Motor = (function () {
   function gruposProntos(c) {
     const outros = ((c.livres && c.livres.esPt) || []).length + ((c.livres && c.livres.ptEs) || []).length;
     const dominado = (c.vencidos || 0) > 0 && (c.desdeDominado === undefined || c.desdeDominado >= ESPACO_DOMINADO ||
-      parteDosDominados(c.vencidos) !== null);
+      parteDosDominados(acumuloDe(c)) !== null);
     return { novo: !!c.temIneditos, outros: outros, dominado: dominado, revisao: outros > 0 || dominado };
   }
 
@@ -1992,6 +2001,22 @@ window.Motor = (function () {
     }
     while (k > de && k < vs.length && !((vs[k - 1] && vs[k - 1].requer) || []).length) k--;
     return k;
+  }
+
+  /* A palavra que segura o próximo verso, quando é a única que falta nele (ou null): o card dela
+     passa à frente das revisões (pedido do Gere, 27/11/2026: os versos paravam dias numa palavra
+     que voltava a cada 4 ou 5 dias). Devolve o id que está na fila: o da própria palavra, ou o
+     card que conta por ela (a flexão que dorme, a variante). */
+  function palavraQueSeguraVerso(texto, estados, arquivados, vistos) {
+    const vs = versosDoTexto(texto);
+    for (const l of vs.slice(Math.max(0, vistos || 0))) {
+      const req = (l && l.requer) || [];
+      const faltam = req.filter(id => String(id)[0] === '+' || !idaFechada(id, estados || {}, arquivados));
+      if (!faltam.length) continue;
+      if (faltam.length > 1 || String(faltam[0])[0] === '+') return null;
+      return quemConta(faltam[0], estados || {});
+    }
+    return null;
   }
 
   /* As palavras que ainda faltam reconhecer nos versos não lidos (a partir de «vistos»), sem
@@ -2331,7 +2356,9 @@ window.Motor = (function () {
      para 12,0 cards novos por dia nos dias 61 a 90. */
   const ACUMULO = { folga: 30, aperto: 150, base: 0.25, teto: 0.8 };
 
-  /* A parte dos dominados nas revisões, ou null abaixo da folga (vale o espaço). */
+  /* A parte dos dominados nas revisões, ou null abaixo da folga (vale o espaço). Desde 27/11/2026
+     o acúmulo é a soma dos pesos de pesoNaParte (o vencido de 1 mês para cima conta ¼): o app o
+     manda em «acumulo»; sem ele, vale a conta simples. */
   function parteDosDominados(vencidos) {
     const a = ACUMULO;
     if (!(vencidos > a.folga)) return null;
@@ -2378,6 +2405,20 @@ window.Motor = (function () {
     return melhor >= 0 ? melhor : null;
   }
 
+  function acumuloDe(c) {
+    return c.acumulo === undefined ? c.vencidos : c.acumulo;
+  }
+
+  /* O acúmulo da parte (parteDosDominados): cada vencido pelo peso do degrau dele. */
+  function acumuloDosVencidos(ids, estadoDe, agora) {
+    let soma = 0;
+    ids.forEach(id => {
+      const e = estadoDe(id);
+      if (e && !esperando(e, agora)) soma += ESCADAS[ESCADA].pesoNaParte[degrauDoDominado(e)];
+    });
+    return soma;
+  }
+
   /* O acúmulo que chama a vez do dominado, com os curtos contando por dois. */
   function pesoDosVencidos(ids, estadoDe, agora) {
     let soma = 0;
@@ -2393,7 +2434,8 @@ window.Motor = (function () {
        estados, arquivados, alvo (alvoDaFila), respostas (o relógio de respostas);
        temIneditos;
        livres = { esPt: [ids], ptEs: [ids] }, os que já podem voltar (podeVoltar);
-       vencidos, quantos dominados passaram da data; pesoDosVencidos, o mesmo
+       vencidos, quantos dominados passaram da data; acumulo, a mesma conta pelos pesos de
+       pesoNaParte (acumuloDosVencidos); pesoDosVencidos, pelos de pesoNaVez;
        acúmulo com os curtos contando por dois; e desdeDominado, quantos
        cards vieram desde o último dominado.
      Devolve { grupo: 'novo' }, { grupo: 'revisao', fila: 'dominados' } (o app
@@ -2404,7 +2446,7 @@ window.Motor = (function () {
     if (Math.random() < chanceDoProximoNovo(c)) return { grupo: 'novo' };
     if (!g.revisao) return null;
     const acumulo = c.pesoDosVencidos === undefined ? c.vencidos : c.pesoDosVencidos;
-    const parte = parteDosDominados(c.vencidos);
+    const parte = parteDosDominados(acumuloDe(c));
     const vez = parte === null ? vezDoDominado(acumulo, c.desdeDominado) : Math.random() < parte;
     if (g.dominado && (!g.outros || vez)) {
       return { grupo: 'revisao', fila: 'dominados' };
@@ -4988,13 +5030,14 @@ window.Motor = (function () {
     linguaDaPergunta, linguaDaResposta,
     temVariante, formaDoCard, formasDoCard, sortearForma, idiomaDoCard,
     distanciaNaFila, esperando, proximaVolta, ajustarVoltaAoDegrau, VARIACAO_DA_VOLTA,
-    urgenciaDoDominado, dominadoDaVez, pesoDosVencidos, ACUMULO, parteDosDominados,
+    urgenciaDoDominado, dominadoDaVez, pesoDosVencidos, acumuloDosVencidos, ACUMULO, parteDosDominados,
     /* a escada da família do curso (usarEscada); os getters devolvem a lista da escada em uso */
     usarEscada, escada, degraus, degrauDoNome, ESCADAS,
     get DIAS_DOMINADO() { return ESCADAS[ESCADA].dias; },
     get DIAS_NOMINAIS() { return ESCADAS[ESCADA].nominais; },
     get PESO_DO_DEGRAU() { return ESCADAS[ESCADA].pesoDoDegrau; },
     get PESO_NA_VEZ() { return ESCADAS[ESCADA].pesoNaVez; },
+    get PESO_NA_PARTE() { return ESCADAS[ESCADA].pesoNaParte; },
     get UM_POR_VEZ_ATE() { return ESCADAS[ESCADA].umPorVezAte; },
     tempoConfiavel, MS_ABANDONO,
     contarDirecoes,
@@ -5003,7 +5046,7 @@ window.Motor = (function () {
     urgencia, cumpriu, escolherNaFila, podeVoltar, INTERVALO_MINIMO, vezDoDominado, ESPACO_DOMINADO,
     ALVO_IDA_MIN, ALVO_IDA_MAX, alvoDaFila, acertoRecente, atrasadoQueFura,
     MAX_TEXTOS, TEXTO_A_CADA, vezDoTexto, idaFechada, dominadosNoTotal, versosDoTexto, versosProntos, faltamNoTexto, versosVistos, textoTerminado,
-    andamentoDoTexto, acordada, textosAutomaticos, escolhaDosTextos, textosAtivos, textosQueSoltamPalavras, palavrasDosTextos, ehLeitura,
+    andamentoDoTexto, palavraQueSeguraVerso, acordada, textosAutomaticos, escolhaDosTextos, textosAtivos, textosQueSoltamPalavras, palavrasDosTextos, ehLeitura,
     partesDaObra, parteDaVez, parteSeguinte, textoEscolhivel,
     liberado, liberadaEm, venceuEm, requeridas, arquivado, sabidaEm,
     situacaoDaFrase, atualizarEmVista, palavrasEmVista, FRASES_EM_VISTA,
