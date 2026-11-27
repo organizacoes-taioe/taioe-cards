@@ -9,7 +9,7 @@ window.TAIOE_TEXTOS = {
   pt: {
     'lingua.es': 'espanhol', 'lingua.en': 'inglês', 'lingua.pt': 'português', 'lingua.fr': 'francês',
     'lingua.la': 'latim', 'curso.la': 'Latim', 'lingua.it': 'italiano', 'curso.it': 'Italiano',
-    'lingua.pc': 'palavras raras', 'curso.pc': 'Palavras raras', 'card.escrevaPalavra': 'escreva a palavra…',
+    'lingua.pc': 'português', 'curso.pc': 'Português', 'card.escrevaPalavra': 'escreva a palavra…',
     'curso.es': 'Espanhol', 'curso.en': 'Inglês', 'curso.pt': 'Português', 'curso.fr': 'Francês',
     'aspas': '«{x}»',
     'lista.e': ' e ',
@@ -147,6 +147,7 @@ window.TAIOE_TEXTOS = {
     'nota.outraForma': '🔁 {g}: «{x}» — {y}',
     'nota.tambemVale': '🌎 Também vale: {lista}.',
     'nota.fonte': '📖 Fonte: {x}',
+    'nota.fraseDe': '📖 Frase de {x}',
     'nota.sentido': '{x}: {y}',
 
     'feedback.genero': 'gênero errado — era {x}',
@@ -253,7 +254,6 @@ window.TAIOE_TEXTOS = {
     'texto.fonteNota': 'Definição: <a href="{u}">Wiktionary</a> (CC BY-SA).',
     'texto.nenhum': 'Ainda não há textos neste curso.',
     'texto.explica': 'Escolha até {n} textos para aprender a ler. Duas de cada cinco palavras novas vêm deles, e cada verso aparece assim que você reconhecer as palavras dele. Sem nenhum marcado, você estuda só cards soltos.',
-    'texto.explicaRaras': 'Escolha de 1 a {n} livros. As palavras raras vêm deles, na ordem do livro, e cada trecho aparece assim que você conhecer as palavras raras dele.',
     'texto.explicaTrilhas': 'Escolha de 1 a {n} textos para aprender a ler. As palavras novas vêm deles, e cada linha vira um card assim que você dominar as palavras dela. As primeiras frases, de textos reais, vêm para todos.',
     'texto.comecarTrilha': 'Começar',
     'texto.escolhaUm': 'Marque pelo menos um texto para começar.',
@@ -437,7 +437,7 @@ window.TAIOE_TEXTOS = {
   es: {
     'lingua.es': 'español', 'lingua.en': 'inglés', 'lingua.pt': 'portugués', 'lingua.fr': 'francés',
     'lingua.la': 'latín', 'curso.la': 'Latín', 'lingua.it': 'italiano', 'curso.it': 'Italiano',
-    'lingua.pc': 'palabras raras del portugués', 'curso.pc': 'Palabras raras del portugués', 'card.escrevaPalavra': 'escribe la palabra…',
+    'lingua.pc': 'portugués (palabras difíciles)', 'curso.pc': 'Portugués: palabras difíciles', 'card.escrevaPalavra': 'escribe la palabra…',
     'curso.es': 'Español', 'curso.en': 'Inglés', 'curso.pt': 'Portugués', 'curso.fr': 'Francés',
     'aspas': '«{x}»',
     'lista.e': ' y ',
@@ -575,6 +575,7 @@ window.TAIOE_TEXTOS = {
     'nota.outraForma': '🔁 {g}: «{x}» — {y}',
     'nota.tambemVale': '🌎 También vale: {lista}.',
     'nota.fonte': '📖 Fuente: {x}',
+    'nota.fraseDe': '📖 Frase de {x}',
     'nota.sentido': '{x}: {y}',
 
     'feedback.genero': 'género equivocado: era {x}',
@@ -681,7 +682,6 @@ window.TAIOE_TEXTOS = {
     'texto.fonteNota': 'Definición: <a href="{u}">Wiktionary</a> (CC BY-SA).',
     'texto.nenhum': 'Todavía no hay textos en este curso.',
     'texto.explica': 'Elige hasta {n} textos para aprender a leer. Dos de cada cinco palabras nuevas vienen de ellos, y cada verso aparece en cuanto reconozcas sus palabras. Sin ninguno marcado, estudias solo tarjetas sueltas.',
-    'texto.explicaRaras': 'Elige de 1 a {n} libros. Las palabras raras vienen de ellos, en el orden del libro, y cada fragmento aparece en cuanto conozcas sus palabras raras.',
     'texto.explicaTrilhas': 'Elige de 1 a {n} textos para aprender a leer. Las palabras nuevas vienen de ellos, y cada línea se vuelve una tarjeta en cuanto domines sus palabras. Las primeras frases, de textos reales, son para todos.',
     'texto.comecarTrilha': 'Empezar',
     'texto.escolhaUm': 'Marca al menos un texto para empezar.',
@@ -862,7 +862,7 @@ window.TAIOE_TEXTOS = {
   en: {
     'lingua.es': 'Spanish', 'lingua.en': 'English', 'lingua.pt': 'Portuguese', 'lingua.fr': 'French',
     'lingua.la': 'Latin', 'curso.la': 'Latin', 'lingua.it': 'Italian', 'curso.it': 'Italian',
-    'lingua.pc': 'rare Portuguese words', 'curso.pc': 'Rare Portuguese words', 'card.escrevaPalavra': 'write the word…',
+    'lingua.pc': 'Portuguese (hard words)', 'curso.pc': 'Portuguese: hard words', 'card.escrevaPalavra': 'write the word…',
     'curso.es': 'Spanish', 'curso.en': 'English', 'curso.pt': 'Portuguese', 'curso.fr': 'French',
     'aspas': '“{x}”',
     'lista.e': ' and ',
@@ -1000,6 +1000,7 @@ window.TAIOE_TEXTOS = {
     'nota.outraForma': '🔁 {g}: “{x}” — {y}',
     'nota.tambemVale': '🌎 Also accepted: {lista}.',
     'nota.fonte': '📖 Source: {x}',
+    'nota.fraseDe': '📖 Sentence from {x}',
     'nota.sentido': '{x}: {y}',
 
     'feedback.genero': 'wrong gender — it was {x}',
@@ -1106,7 +1107,6 @@ window.TAIOE_TEXTOS = {
     'texto.fonteNota': 'Definition: <a href="{u}">Wiktionary</a> (CC BY-SA).',
     'texto.nenhum': 'No texts in this course yet.',
     'texto.explica': 'Choose up to {n} texts to learn to read. Two in five new words come from them, and each line shows up as soon as you recognize its words. With none ticked, you study single cards only.',
-    'texto.explicaRaras': 'Choose 1 to {n} books. The rare words come from them, in the order of the book, and each passage appears as soon as you know its rare words.',
     'texto.explicaTrilhas': 'Choose 1 to {n} texts to learn to read. New words come from them, and each line becomes a card as soon as you master its words. The first sentences, from real texts, are for everyone.',
     'texto.comecarTrilha': 'Start',
     'texto.escolhaUm': 'Tick at least one text to start.',

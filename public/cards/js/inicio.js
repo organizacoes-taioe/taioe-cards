@@ -33,8 +33,8 @@
        'vivas' (padrão) ou 'mortas', de 7 degraus; o servidor tem o mesmo em cards.cursos.escada */
     /* o italiano (08/11/2026) só para quem fala português, no modo de sempre */
     'it-pt': { lingua: 'it', audiencia: 'pt', bandeira: '🇮🇹' },
-    /* as palavras raras do português (20/11/2026, cards/RARAS.md): para quem fala português, só
-       pelas obras da Biblioteca e só a ida, como o latim, mas na escada das vivas */
+    /* o «Português» (até 27/11/2026, «palavras raras»; cards/RARAS.md): as palavras difíceis, para
+       quem fala português; só a ida, como o latim, mas sem textos e na escada das vivas */
     'pc-pt': { lingua: 'pc', audiencia: 'pt', bandeira: '📖', modo: 'trilhas' }
   };
   /* Os que aparecem na escolha e nas configurações: desde 09/11/2026, só os

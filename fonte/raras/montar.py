@@ -7,6 +7,13 @@ linha da palavra em trabalho/lotes/revisada-N.jsonl, ou em trabalho/sinonimos.js
 novo; o que se muda à mão em fonte/cards/pc/ se perde):
   python3 -I fonte/raras/montar.py fonte/raras/trabalho ../biblioteca vidas-secas dom-casmurro
 
+O «Português» sem textos (27/11/2026, RARAS.md §6): as obras não gravam mais textos, e as palavras
+da lista do Gere (fora dos livros) vêm de trabalho/lista/: leva-N.json (a ordem da leva) e
+lotes/revisada-*.jsonl (ou saida-*.jsonl) dos agentes (briefs/LISTA.md). Os ids delas ficam em
+trabalho/lista/ids.json (palavra → número), para não mudarem quando uma palavra sai. Gravam
+00-lista-1-sentido.json, 00-lista-2-escrever.json e 00-lista-3-uso.json, que o build lê antes das
+obras: a fila do curso começa por elas. Todo card com frase traz na nota de onde ela veio.
+
 Na pasta de trabalho: dados/palavras-<obra>.json (de palavras.py), lotes/saida-*.jsonl (os agentes:
 a marca, as erradas, a nota, o card de escrever e o de uso) e, se houver, sinonimos.json (os
 conjuntos de sinônimos). Grava fonte/cards/pc/01-sentido.json, 02-escrever.json, 03-uso.json,
@@ -82,8 +89,18 @@ def romano(n):
     return s
 
 
+def fonte_de(autor, titulo, ano, atualizada=False):
+    s = (autor or '') + (', ' if autor and titulo else '') + (titulo or '') + (' (' + str(ano) + ')' if ano else '')
+    return s + ('; grafia atualizada' if atualizada else '')
+
+
+def com_fonte(nota, fonte):
+    # a fonte vai no campo «fonte», que o app mostra no fim da nota («📖 Frase de …»)
+    return nota
+
+
 def tags_da(classe):
-    t = ['raras']
+    t = ['palavras difíceis']
     if 'verbo' in classe:
         t.append('verbo')
     if 'adjetivo' in classe:
@@ -126,10 +143,11 @@ def main():
             pid = 'pc-p%03d' % n
             id_da[x['lema']] = pid
             viva = a.get('marca') == 'viva'
+            fonte_livro = fonte_de(autor, d['titulo'], d.get('ano'))
             c = {'id': pid, 'tipo': 'palavra', 'pc': x['lema'], 'pt': a['pt'],
                  'aceitas': sorted({re.sub(r"[^\w\s-]", '', t.lower()).strip() for t in (a['pt'], re.sub(r"\s*\([^)]*\)", '', a['pt']))}),
                  'distratores': a['distratores'], 'nivel': 'C1' if viva else 'C2', 'tags': tags_da(x['classe']),
-                 'nota': a.get('nota', ''), 'escolher': True, 'pergunta': PERGUNTA['sentido'], 'selo': 'sentido',
+                 'nota': com_fonte(a.get('nota', ''), fonte_livro), 'fonte': fonte_livro, 'escolher': True, 'pergunta': PERGUNTA['sentido'], 'selo': 'sentido',
                  'frase': recorte(x['frase'], x['w']), 'w': x['w'], 'classe': x['classe'], 'obra': obra}
             if not viva:
                 c['leitura'] = True
@@ -154,12 +172,12 @@ def main():
                     escrever[-1]['sinonimos'] = e['sinonimos']
             u = a.get('uso') if viva and not repetida else None
             if u:
-                fonte = nomes.get(u.get('autor'), u.get('autor') or '') + ', ' + (u.get('titulo') or '') + (' (' + str(u['ano']) + ')' if u.get('ano') else '')
+                fonte = fonte_de(nomes.get(u.get('autor'), u.get('autor') or ''), u.get('titulo'), u.get('ano'))
                 uso.append({'id': 'pc-u%03d' % n, 'tipo': 'frase', 'pc': u['frase'], 'pt': u['resposta'],
                             'aceitas': [u['resposta'].lower()], 'distratores': u['distratores'], 'escolher': True,
                             'requer': pid, 'requerTodas': [pid], 'pergunta': PERGUNTA['uso'], 'selo': 'uso', 'nivel': 'C1',
                             'tags': tags_da(x['classe']), 'fonte': fonte,
-                            'nota': (u.get('nota', '') + '\n' if u.get('nota') else '') + '— ' + fonte})
+                            'nota': com_fonte(u.get('nota', ''), fonte)})
         # os textos: uma parte por grupo de capítulos, só os parágrafos das palavras dela
         forma_de = {}
         for x in d['palavras']:
@@ -224,20 +242,102 @@ def main():
             req = [ja[l] for l in cj.get('palavras_do_curso', []) if l in ja]
             for c in cj['cards']:
                 k += 1
-                fonte = nomes.get(c.get('autor'), c.get('autor') or '') + ', ' + (c.get('titulo') or '') + (' (' + str(c['ano']) + ')' if c.get('ano') else '')
+                fonte = fonte_de(nomes.get(c.get('autor'), c.get('autor') or ''), c.get('titulo'), c.get('ano'))
                 sin.append({'id': 'pc-k%03d' % k, 'tipo': 'contraste', 'conjunto': cj['conjunto'], 'pc': c['resposta'],
                             'pt': c['frase'], 'distratoresPc': [w for w in cj['alternativas'] if w != c['resposta']],
                             'aceitas': [], 'distratores': [], 'pergunta': PERGUNTA['sinonimo'], 'selo': 'sinônimos',
-                            'nota': cj['nota'] + '\n— ' + fonte, 'nivel': 'C1', 'tags': ['raras', 'sinônimos'],
+                            'nota': com_fonte(cj['nota'], fonte), 'nivel': 'C1', 'tags': ['palavras difíceis', 'sinônimos'],
                             'requerTodas': req, 'fonte': fonte})
     json.dump(sin, open(os.path.join(pasta, '04-sinonimos.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     ptx = os.path.join(RAIZ, 'fonte', 'textos', 'pc')
     os.makedirs(ptx, exist_ok=True)
+    # desde 27/11/2026 o curso não tem textos: as partes se calculam (a conferência das formas), mas
+    # não se gravam, e as antigas saem
     for f in glob.glob(os.path.join(ptx, '*.json')):
         os.remove(f)
-    for nome, t in textos:
-        json.dump(t, open(os.path.join(ptx, nome), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    print(len(sentido), 'de sentido,', len(escrever), 'de escrever,', len(uso), 'de uso,', len(textos), 'partes')
+    print(len(sentido), 'de sentido,', len(escrever), 'de escrever,', len(uso), 'de uso (obras)')
+    montar_lista(os.path.join(trab, 'lista'), pasta, n, nomes)
+
+
+def montar_lista(dir_lista, pasta, n_obras, nomes):
+    """As palavras da lista do Gere (RARAS.md §6): ids estáveis em ids.json, a partir do último das
+    obras; na fila, primeiro as que ele marcou, os grupos alternados (adjetivo, verbo, substantivo…)."""
+    if not os.path.isdir(dir_lista):
+        return
+    leva = []
+    for f in sorted(glob.glob(os.path.join(dir_lista, 'leva-*.json')), key=lambda f: int(re.findall(r'\d+', os.path.basename(f))[0])):
+        leva += json.load(open(f, encoding='utf-8'))
+    agentes = {}
+    rev = sorted(glob.glob(os.path.join(dir_lista, 'lotes', 'revisada-*.jsonl')))
+    sai = [f for f in sorted(glob.glob(os.path.join(dir_lista, 'lotes', 'saida-*.jsonl'))) if not os.path.exists(f.replace('saida-', 'revisada-'))]
+    for f in rev + sai:
+        for linha in open(f, encoding='utf-8'):
+            if linha.strip():
+                x = json.loads(linha)
+                agentes[x['p']] = x
+    f_ids = os.path.join(dir_lista, 'ids.json')
+    ids = json.load(open(f_ids, encoding='utf-8')) if os.path.exists(f_ids) else {}
+    prox = max([n_obras] + list(ids.values())) + 1
+    # a ordem da fila: as marcadas antes; dentro de cada origem, os grupos em rodízio
+    grupos = ['adj', 'verbo', 'subst', 'adv', 'conc', 'lat', 'par', 'sent']
+    ordem = []
+    for origem in ('marcada', 'fim da lista'):
+        filas = {g: [x for x in leva if x.get('origem', 'marcada') == origem and x['grupo'] == g] for g in grupos}
+        while any(filas.values()):
+            for g in grupos:
+                if filas[g]:
+                    ordem.append(filas[g].pop(0))
+    sentido, escrever, uso, faltam, sem = [], [], [], [], []
+    classe_do = {'adj': 'adjetivo', 'verbo': 'verbo', 'subst': 'substantivo', 'adv': 'locução', 'conc': 'substantivo'}
+    for x in ordem:
+        a = agentes.get(x['p'])
+        if not a:
+            faltam.append(x['p'])
+            continue
+        if a.get('sem_frase') or a.get('excluir'):
+            sem.append(x['p'])
+            continue
+        if x['p'] not in ids:
+            ids[x['p']] = prox
+            prox += 1
+        k = ids[x['p']]
+        pid = 'pc-p%03d' % k
+        viva = a.get('marca') == 'viva'
+        s = a['sentido']
+        fonte = fonte_de(nomes.get(s.get('autor'), s.get('autor')), s.get('titulo'), s.get('ano'), s.get('grafia_atualizada'))
+        frase = recorte(s['frase'], s['forma'], 30)
+        c = {'id': pid, 'tipo': 'palavra', 'pc': x['p'], 'pt': a['pt'],
+             'aceitas': sorted({re.sub(r"[^\w\s-]", '', t.lower()).strip() for t in (a['pt'], re.sub(r"\s*\([^)]*\)", '', a['pt']))}),
+             'distratores': a['distratores'], 'nivel': 'C1' if viva else 'C2', 'tags': tags_da(classe_do.get(x['grupo'], '')),
+             'nota': com_fonte(a.get('nota', ''), fonte), 'fonte': fonte, 'escolher': True,
+             'pergunta': PERGUNTA['sentido'], 'selo': 'sentido', 'frase': frase, 'w': s['forma'],
+             'classe': classe_do.get(x['grupo'], ''), 'lista': x['grupo']}
+        if not viva:
+            c['leitura'] = True
+        sentido.append(c)
+        e = a.get('escrever') if viva else None
+        if e:
+            escrever.append({'id': 'pc-e%03d' % k, 'tipo': 'frase', 'pc': e['pergunta'], 'pt': x['p'],
+                             'aceitas': sorted({w.lower() for w in e.get('aceitas', [])} - {x['p'].lower()}) or [x['p'].lower()],
+                             'distratores': e['distratores'], 'requer': pid, 'requerTodas': [pid],
+                             'pergunta': PERGUNTA['escrever'], 'selo': 'escrever', 'nivel': 'C1',
+                             'tags': tags_da(classe_do.get(x['grupo'], '')), 'nota': a.get('nota', '')})
+            if e.get('sinonimos'):
+                escrever[-1]['sinonimos'] = e['sinonimos']
+        u = a.get('uso') if viva else None
+        if u:
+            fu = fonte_de(nomes.get(u.get('autor'), u.get('autor')), u.get('titulo'), u.get('ano'), u.get('grafia_atualizada'))
+            uso.append({'id': 'pc-u%03d' % k, 'tipo': 'frase', 'pc': u['frase'], 'pt': u['resposta'],
+                        'aceitas': [u['resposta'].lower()], 'distratores': u['distratores'], 'escolher': True,
+                        'requer': pid, 'requerTodas': [pid], 'pergunta': PERGUNTA['uso'], 'selo': 'uso', 'nivel': 'C1',
+                        'tags': tags_da(classe_do.get(x['grupo'], '')), 'fonte': fu,
+                        'nota': com_fonte(u.get('nota', ''), fu)})
+    for nome, lista in (('00-lista-1-sentido.json', sentido), ('00-lista-2-escrever.json', escrever), ('00-lista-3-uso.json', uso)):
+        json.dump(lista, open(os.path.join(pasta, nome), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    json.dump(ids, open(f_ids, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    if faltam:
+        print('lista, sem o lote dos agentes:', len(faltam), ', '.join(faltam[:12]), file=sys.stderr)
+    print(len(sentido), 'de sentido,', len(escrever), 'de escrever,', len(uso), 'de uso (lista);', len(sem), 'sem frase:', ', '.join(sem))
 
 
 if __name__ == '__main__':
