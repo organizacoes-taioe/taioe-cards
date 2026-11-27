@@ -54,7 +54,7 @@ const Transp = require('./transparencia');
 /* O italiano (08/11/2026, só para quem fala português) vem depois do latim, pelo mesmo motivo. */
 /* As palavras raras do português (20/11/2026, cards/RARAS.md), para quem fala português, por último. */
 const IDIOMAS = ['es', 'en', 'pt', 'fr', 'la', 'it', 'pc'];
-const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português', fr: 'francês', la: 'latim', it: 'italiano', pc: 'palavras raras' };
+const NOME_DO_IDIOMA = { es: 'espanhol', en: 'inglês', pt: 'português', fr: 'francês', la: 'latim', it: 'italiano', pc: 'português (pc)' };
 
 /* Cada língua tem o seu quarteto de campos. A do baralho é a que se cobra; as
    outras duas são as respostas, e cada uma leva os seus distratores e a sua
