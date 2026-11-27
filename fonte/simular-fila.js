@@ -97,6 +97,7 @@ function escolher() {
     estados: p.cards, arquivados: p.arquivados, alvo: M.alvoDaFila(p.diario), respostas: p.respostas,
     temIneditos: true, livres: { esPt: p.filaEsPt.filter(livre), ptEs: p.filaPtEs.filter(livre) },
     vencidos: p.dominados.filter(id => !M.esperando(p.cards[id], agora)).length,
+    acumulo: ANTIGO || !M.acumuloDosVencidos ? undefined : M.acumuloDosVencidos(p.dominados, id => p.cards[id], agora),
     pesoDosVencidos: ANTIGO ? undefined : M.pesoDosVencidos(p.dominados, id => p.cards[id], agora), desdeDominado
   };
   ultimaChance = M.chanceDoProximoNovo(c);
